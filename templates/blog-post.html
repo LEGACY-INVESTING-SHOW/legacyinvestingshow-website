@@ -115,18 +115,18 @@
         gtag('config', 'GA_MEASUREMENT_ID');
     </script>
 </head>
-<body class="bg-brand-dark text-white">
+<body class="bg-white text-gray-900">
     <!-- Skip to main content for accessibility -->
     <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-brand-primary text-white px-4 py-2 rounded-lg z-50">
         Skip to main content
     </a>
 
     <!-- Header / Navigation -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-brand-dark/95 backdrop-blur-sm border-b border-brand-border">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-brand-border">
         <nav class="container-custom" aria-label="Main navigation">
             <div class="flex items-center justify-between h-16 md:h-20">
                 <!-- Logo -->
-                <a href="/" class="flex items-center gap-2 text-white font-bold text-lg hover:text-brand-primary transition-colors">
+                <a href="/" class="flex items-center gap-2 text-gray-900 font-bold text-lg hover:text-brand-primary transition-colors">
                     <img src="/assets/images/logo.png" alt="Legacy Investing Show Logo" width="32" height="32" class="w-8 h-8">
                     <span>Preston Seo</span>
                 </a>
@@ -141,7 +141,7 @@
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden p-2 text-white" aria-label="Open menu" aria-expanded="false">
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-900" aria-label="Open menu" aria-expanded="false">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                     </svg>
@@ -167,7 +167,7 @@
             <div class="container-custom">
                 <ol class="flex items-center gap-2 text-sm text-brand-text-muted">
                     <li>
-                        <a href="/" class="hover:text-white transition-colors">Home</a>
+                        <a href="/" class="hover:text-gray-900 transition-colors">Home</a>
                     </li>
                     <li>
                         <svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -175,14 +175,14 @@
                         </svg>
                     </li>
                     <li>
-                        <a href="/blog/" class="hover:text-white transition-colors">Blog</a>
+                        <a href="/blog/" class="hover:text-gray-900 transition-colors">Blog</a>
                     </li>
                     <li>
                         <svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                         </svg>
                     </li>
-                    <li class="text-white" aria-current="page">{{title}}</li>
+                    <li class="text-gray-900" aria-current="page">{{title}}</li>
                 </ol>
             </div>
         </nav>
@@ -205,7 +205,7 @@
                     <div class="flex flex-wrap items-center gap-4 text-brand-text-muted mb-8">
                         <div class="flex items-center gap-2">
                             <img src="/assets/images/preston-avatar.jpg" alt="{{author}}" width="40" height="40" class="w-10 h-10 rounded-full object-cover" onerror="this.src='/assets/images/logo.png'">
-                            <span class="font-medium text-white">{{author}}</span>
+                            <span class="font-medium text-gray-900">{{author}}</span>
                         </div>
                         <span class="hidden sm:inline">|</span>
                         <time datetime="{{isoDate}}">{{date}}</time>
@@ -222,33 +222,33 @@
 
             <!-- Article Content -->
             <div class="container-custom max-w-4xl">
-                <div class="prose prose-invert prose-lg max-w-none
-                    prose-headings:text-white prose-headings:font-bold
+                <div class="prose prose-lg max-w-none
+                    prose-headings:text-gray-900 prose-headings:font-bold
                     prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:mt-12 prose-h2:mb-6
                     prose-h3:text-xl prose-h3:md:text-2xl prose-h3:mt-8 prose-h3:mb-4
-                    prose-p:text-brand-text-muted prose-p:leading-relaxed prose-p:mb-6
+                    prose-p:text-gray-600 prose-p:leading-relaxed prose-p:mb-6
                     prose-a:text-brand-primary prose-a:no-underline hover:prose-a:underline
-                    prose-strong:text-white
-                    prose-ul:text-brand-text-muted prose-ul:my-6 prose-ul:pl-6
-                    prose-ol:text-brand-text-muted prose-ol:my-6 prose-ol:pl-6
+                    prose-strong:text-gray-900
+                    prose-ul:text-gray-600 prose-ul:my-6 prose-ul:pl-6
+                    prose-ol:text-gray-600 prose-ol:my-6 prose-ol:pl-6
                     prose-li:mb-2
-                    prose-blockquote:border-l-4 prose-blockquote:border-brand-primary prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-brand-text-muted
+                    prose-blockquote:border-l-4 prose-blockquote:border-brand-primary prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-gray-600
                     prose-img:rounded-xl prose-img:my-8
-                    prose-code:bg-brand-card prose-code:px-2 prose-code:py-1 prose-code:rounded prose-code:text-brand-primary
-                    prose-pre:bg-brand-card prose-pre:rounded-xl prose-pre:p-6">
+                    prose-code:bg-gray-100 prose-code:px-2 prose-code:py-1 prose-code:rounded prose-code:text-brand-primary
+                    prose-pre:bg-gray-100 prose-pre:rounded-xl prose-pre:p-6">
                     {{content}}
                 </div>
 
                 <!-- Social Sharing -->
                 <div class="border-t border-b border-brand-border py-8 my-12">
                     <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
-                        <p class="text-lg font-semibold">Share this article:</p>
+                        <p class="text-lg font-semibold text-gray-900">Share this article:</p>
                         <div class="flex items-center gap-4">
                             <!-- Twitter/X Share -->
                             <a href="https://twitter.com/intent/tweet?url=https://legacyinvestingshow.com/blog/{{slug}}.html&text={{title}}"
                                target="_blank"
                                rel="noopener noreferrer"
-                               class="flex items-center justify-center w-10 h-10 rounded-full bg-brand-card hover:bg-brand-primary transition-colors"
+                               class="flex items-center justify-center w-10 h-10 rounded-full bg-gray-100 hover:bg-brand-primary transition-colors"
                                aria-label="Share on Twitter">
                                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
@@ -259,7 +259,7 @@
                             <a href="https://www.facebook.com/sharer/sharer.php?u=https://legacyinvestingshow.com/blog/{{slug}}.html"
                                target="_blank"
                                rel="noopener noreferrer"
-                               class="flex items-center justify-center w-10 h-10 rounded-full bg-brand-card hover:bg-brand-primary transition-colors"
+                               class="flex items-center justify-center w-10 h-10 rounded-full bg-gray-100 hover:bg-brand-primary transition-colors"
                                aria-label="Share on Facebook">
                                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
@@ -270,7 +270,7 @@
                             <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://legacyinvestingshow.com/blog/{{slug}}.html&title={{title}}"
                                target="_blank"
                                rel="noopener noreferrer"
-                               class="flex items-center justify-center w-10 h-10 rounded-full bg-brand-card hover:bg-brand-primary transition-colors"
+                               class="flex items-center justify-center w-10 h-10 rounded-full bg-gray-100 hover:bg-brand-primary transition-colors"
                                aria-label="Share on LinkedIn">
                                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
@@ -279,7 +279,7 @@
 
                             <!-- Copy Link -->
                             <button onclick="copyToClipboard('https://legacyinvestingshow.com/blog/{{slug}}.html')"
-                                    class="flex items-center justify-center w-10 h-10 rounded-full bg-brand-card hover:bg-brand-primary transition-colors"
+                                    class="flex items-center justify-center w-10 h-10 rounded-full bg-gray-100 hover:bg-brand-primary transition-colors"
                                     aria-label="Copy link">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
@@ -290,7 +290,7 @@
                 </div>
 
                 <!-- Author Bio Section -->
-                <section class="bg-brand-card rounded-2xl p-6 md:p-8 mb-12">
+                <section class="bg-gray-50 rounded-2xl p-6 md:p-8 mb-12">
                     <div class="flex flex-col sm:flex-row gap-6 items-start">
                         <img src="/assets/images/preston-main.jpg"
                              alt="{{author}}"
@@ -300,7 +300,7 @@
                              onerror="this.src='/assets/images/logo.png'">
                         <div>
                             <p class="text-brand-text-muted text-sm mb-1">Written by</p>
-                            <h3 class="text-xl font-bold mb-2">{{author}}</h3>
+                            <h3 class="text-xl font-bold mb-2 text-gray-900">{{author}}</h3>
                             <p class="text-brand-text-muted mb-4">
                                 Preston Seo is a real estate investor and financial educator who went from corporate employee to building a $20M+ real estate portfolio. He teaches wealth-building strategies including tax optimization, debt elimination, and Airbnb arbitrage through the Legacy Investing Show.
                             </p>
@@ -322,7 +322,7 @@
 
                 <!-- Related Posts Section -->
                 <section class="mb-12">
-                    <h2 class="text-2xl font-bold mb-6">Related Articles</h2>
+                    <h2 class="text-2xl font-bold mb-6 text-gray-900">Related Articles</h2>
                     <div id="related-posts" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <!-- Related posts will be populated by JavaScript or during build -->
                         {{relatedPosts}}
@@ -330,8 +330,8 @@
                 </section>
 
                 <!-- Comments Section Placeholder -->
-                <section id="comments" class="bg-brand-card rounded-2xl p-6 md:p-8">
-                    <h2 class="text-2xl font-bold mb-4">Comments</h2>
+                <section id="comments" class="bg-gray-50 rounded-2xl p-6 md:p-8">
+                    <h2 class="text-2xl font-bold mb-4 text-gray-900">Comments</h2>
                     <p class="text-brand-text-muted mb-6">
                         Join the conversation! Share your thoughts and questions below.
                     </p>
@@ -350,9 +350,9 @@
         </article>
 
         <!-- CTA Section -->
-        <section class="section bg-brand-darker">
+        <section class="section bg-emerald-50">
             <div class="container-custom text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6 max-w-3xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 max-w-3xl mx-auto text-gray-900">
                     Ready to Start Building Your Wealth?
                 </h2>
                 <p class="text-xl text-brand-text-muted mb-8 max-w-2xl mx-auto">
@@ -366,49 +366,49 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-brand-darker border-t border-brand-border py-12" role="contentinfo">
+    <footer class="bg-gray-50 border-t border-brand-border py-12" role="contentinfo">
         <div class="container-custom">
             <div class="grid md:grid-cols-3 gap-8 mb-8">
                 <!-- Brand -->
                 <div>
-                    <h4 class="text-xl font-bold mb-4">Preston Seo</h4>
+                    <h4 class="text-xl font-bold mb-4 text-gray-900">Preston Seo</h4>
                     <p class="text-brand-text-muted text-sm">Building generational wealth through smart investing strategies.</p>
                 </div>
 
                 <!-- Navigation -->
                 <div>
-                    <h5 class="font-semibold mb-4">Information</h5>
+                    <h5 class="font-semibold mb-4 text-gray-900">Information</h5>
                     <nav aria-label="Footer navigation">
                         <ul class="space-y-2 text-brand-text-muted">
-                            <li><a href="/programs.html" class="hover:text-white transition-colors">Programs</a></li>
-                            <li><a href="/success-stories.html" class="hover:text-white transition-colors">Student Results</a></li>
-                            <li><a href="/#faq" class="hover:text-white transition-colors">FAQ's</a></li>
-                            <li><a href="/blog/" class="hover:text-white transition-colors">Blog</a></li>
+                            <li><a href="/programs.html" class="hover:text-gray-900 transition-colors">Programs</a></li>
+                            <li><a href="/success-stories.html" class="hover:text-gray-900 transition-colors">Student Results</a></li>
+                            <li><a href="/#faq" class="hover:text-gray-900 transition-colors">FAQ's</a></li>
+                            <li><a href="/blog/" class="hover:text-gray-900 transition-colors">Blog</a></li>
                         </ul>
                     </nav>
                 </div>
 
                 <!-- Social -->
                 <div>
-                    <h5 class="font-semibold mb-4">Socials</h5>
+                    <h5 class="font-semibold mb-4 text-gray-900">Socials</h5>
                     <ul class="space-y-2 text-brand-text-muted">
                         <li>
-                            <a href="https://www.instagram.com/thelegacyinvestingshow/" target="_blank" rel="noopener" class="hover:text-white transition-colors">
+                            <a href="https://www.instagram.com/thelegacyinvestingshow/" target="_blank" rel="noopener" class="hover:text-gray-900 transition-colors">
                                 Instagram - 1.5M Followers
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/@LegacyInvestingShow" target="_blank" rel="noopener" class="hover:text-white transition-colors">
+                            <a href="https://www.youtube.com/@LegacyInvestingShow" target="_blank" rel="noopener" class="hover:text-gray-900 transition-colors">
                                 YouTube - 542k Subscribers
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.tiktok.com/@thelegacyinvestingshow" target="_blank" rel="noopener" class="hover:text-white transition-colors">
+                            <a href="https://www.tiktok.com/@thelegacyinvestingshow" target="_blank" rel="noopener" class="hover:text-gray-900 transition-colors">
                                 TikTok - 2.6M Followers
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/share/19LQhE6gmh/" target="_blank" rel="noopener" class="hover:text-white transition-colors">
+                            <a href="https://www.facebook.com/share/19LQhE6gmh/" target="_blank" rel="noopener" class="hover:text-gray-900 transition-colors">
                                 Facebook - 2.4M Followers
                             </a>
                         </li>

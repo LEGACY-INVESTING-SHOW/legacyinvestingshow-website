@@ -313,18 +313,18 @@ function generateBlogIndex(posts) {
         gtag('config', 'GA_MEASUREMENT_ID');
     </script>
 </head>
-<body class="bg-brand-dark text-white">
+<body class="bg-white text-gray-900">
     <!-- Skip to main content for accessibility -->
     <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-brand-primary text-white px-4 py-2 rounded-lg z-50">
         Skip to main content
     </a>
 
     <!-- Header / Navigation -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-brand-dark/95 backdrop-blur-sm border-b border-brand-border">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-brand-border">
         <nav class="container-custom" aria-label="Main navigation">
             <div class="flex items-center justify-between h-16 md:h-20">
                 <!-- Logo -->
-                <a href="/" class="flex items-center gap-2 text-white font-bold text-lg hover:text-brand-primary transition-colors">
+                <a href="/" class="flex items-center gap-2 text-gray-900 font-bold text-lg hover:text-brand-primary transition-colors">
                     <img src="/assets/images/logo.png" alt="Legacy Investing Show Logo" width="32" height="32" class="w-8 h-8">
                     <span>Preston Seo</span>
                 </a>
@@ -339,7 +339,7 @@ function generateBlogIndex(posts) {
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden p-2 text-white" aria-label="Open menu" aria-expanded="false">
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-900" aria-label="Open menu" aria-expanded="false">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                     </svg>
@@ -364,7 +364,7 @@ function generateBlogIndex(posts) {
         <section class="pt-28 md:pt-36 pb-12 md:pb-16">
             <div class="container-custom">
                 <div class="text-center max-w-3xl mx-auto">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900">
                         Wealth Building <span class="text-brand-primary">Insights</span>
                     </h1>
                     <p class="text-xl text-brand-text-muted">
@@ -403,9 +403,9 @@ function generateBlogIndex(posts) {
         </section>
 
         <!-- CTA Section -->
-        <section class="section bg-brand-darker">
+        <section class="section bg-emerald-50">
             <div class="container-custom text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6 max-w-3xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 max-w-3xl mx-auto text-gray-900">
                     Want to Learn More?
                 </h2>
                 <p class="text-xl text-brand-text-muted mb-8 max-w-2xl mx-auto">
@@ -419,49 +419,49 @@ function generateBlogIndex(posts) {
     </main>
 
     <!-- Footer -->
-    <footer class="bg-brand-darker border-t border-brand-border py-12" role="contentinfo">
+    <footer class="bg-gray-50 border-t border-brand-border py-12" role="contentinfo">
         <div class="container-custom">
             <div class="grid md:grid-cols-3 gap-8 mb-8">
                 <!-- Brand -->
                 <div>
-                    <h4 class="text-xl font-bold mb-4">Preston Seo</h4>
+                    <h4 class="text-xl font-bold mb-4 text-gray-900">Preston Seo</h4>
                     <p class="text-brand-text-muted text-sm">Building generational wealth through smart investing strategies.</p>
                 </div>
 
                 <!-- Navigation -->
                 <div>
-                    <h5 class="font-semibold mb-4">Information</h5>
+                    <h5 class="font-semibold mb-4 text-gray-900">Information</h5>
                     <nav aria-label="Footer navigation">
                         <ul class="space-y-2 text-brand-text-muted">
-                            <li><a href="/programs.html" class="hover:text-white transition-colors">Programs</a></li>
-                            <li><a href="/success-stories.html" class="hover:text-white transition-colors">Student Results</a></li>
-                            <li><a href="/#faq" class="hover:text-white transition-colors">FAQ's</a></li>
-                            <li><a href="/blog/" class="hover:text-white transition-colors">Blog</a></li>
+                            <li><a href="/programs.html" class="hover:text-gray-900 transition-colors">Programs</a></li>
+                            <li><a href="/success-stories.html" class="hover:text-gray-900 transition-colors">Student Results</a></li>
+                            <li><a href="/#faq" class="hover:text-gray-900 transition-colors">FAQ's</a></li>
+                            <li><a href="/blog/" class="hover:text-gray-900 transition-colors">Blog</a></li>
                         </ul>
                     </nav>
                 </div>
 
                 <!-- Social -->
                 <div>
-                    <h5 class="font-semibold mb-4">Socials</h5>
+                    <h5 class="font-semibold mb-4 text-gray-900">Socials</h5>
                     <ul class="space-y-2 text-brand-text-muted">
                         <li>
-                            <a href="https://www.instagram.com/thelegacyinvestingshow/" target="_blank" rel="noopener" class="hover:text-white transition-colors">
+                            <a href="https://www.instagram.com/thelegacyinvestingshow/" target="_blank" rel="noopener" class="hover:text-gray-900 transition-colors">
                                 Instagram - 1.5M Followers
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/@LegacyInvestingShow" target="_blank" rel="noopener" class="hover:text-white transition-colors">
+                            <a href="https://www.youtube.com/@LegacyInvestingShow" target="_blank" rel="noopener" class="hover:text-gray-900 transition-colors">
                                 YouTube - 542k Subscribers
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.tiktok.com/@thelegacyinvestingshow" target="_blank" rel="noopener" class="hover:text-white transition-colors">
+                            <a href="https://www.tiktok.com/@thelegacyinvestingshow" target="_blank" rel="noopener" class="hover:text-gray-900 transition-colors">
                                 TikTok - 2.6M Followers
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/share/19LQhE6gmh/" target="_blank" rel="noopener" class="hover:text-white transition-colors">
+                            <a href="https://www.facebook.com/share/19LQhE6gmh/" target="_blank" rel="noopener" class="hover:text-gray-900 transition-colors">
                                 Facebook - 2.4M Followers
                             </a>
                         </li>
