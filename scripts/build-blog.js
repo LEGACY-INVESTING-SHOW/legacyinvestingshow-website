@@ -326,7 +326,7 @@ function generateBlogIndex(posts) {
                 <!-- Logo -->
                 <a href="/" class="flex items-center gap-2 text-gray-900 font-bold text-lg hover:text-brand-primary transition-colors">
                     <img src="/assets/images/logo.png" alt="Legacy Investing Show Logo" width="32" height="32" class="w-8 h-8">
-                    <span>Preston Seo</span>
+                    <span>Preston Seo | Legacy Investing Show</span>
                 </a>
 
                 <!-- Desktop Navigation -->
@@ -424,7 +424,7 @@ function generateBlogIndex(posts) {
             <div class="grid md:grid-cols-3 gap-8 mb-8">
                 <!-- Brand -->
                 <div>
-                    <h4 class="text-xl font-bold mb-4 text-gray-900">Preston Seo</h4>
+                    <h4 class="text-xl font-bold mb-4 text-gray-900">Preston Seo | Legacy Investing Show</h4>
                     <p class="text-brand-text-muted text-sm">Building generational wealth through smart investing strategies.</p>
                 </div>
 
