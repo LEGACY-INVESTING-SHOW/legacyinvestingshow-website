@@ -1,0 +1,301 @@
+<!--
+  Picture Element Template for Legacy Investing Show
+
+  This template shows how to use the <picture> element with optimized images
+  for responsive loading. The browser will automatically choose the best format:
+  - AVIF for browsers that support it (best compression)
+  - WebP for browsers that don't support AVIF (good compression)
+  - Original JPG/PNG as fallback for older browsers
+
+  Usage:
+  1. Run the image optimization script: npm run build:images
+  2. Copy the appropriate template below and replace the paths/attributes
+  3. The manifest.json file can be used to automate this in build scripts
+-->
+
+<!-- ============================================ -->
+<!-- BASIC USAGE - Single Image                   -->
+<!-- ============================================ -->
+
+<picture>
+  <source srcset="/assets/images/optimized/example.avif" type="image/avif">
+  <source srcset="/assets/images/optimized/example.webp" type="image/webp">
+  <img src="/assets/images/example.jpg" alt="Description" loading="lazy">
+</picture>
+
+
+<!-- ============================================ -->
+<!-- WITH LAZY LOADING AND DIMENSIONS             -->
+<!-- Recommended for better Core Web Vitals       -->
+<!-- ============================================ -->
+
+<picture>
+  <source srcset="/assets/images/optimized/example.avif" type="image/avif">
+  <source srcset="/assets/images/optimized/example.webp" type="image/webp">
+  <img
+    src="/assets/images/example.jpg"
+    alt="Descriptive alt text for accessibility"
+    loading="lazy"
+    decoding="async"
+    width="1920"
+    height="1080"
+  >
+</picture>
+
+
+<!-- ============================================ -->
+<!-- HERO IMAGE - Eager Loading (Above the Fold) -->
+<!-- Use for critical images visible on page load -->
+<!-- ============================================ -->
+
+<picture>
+  <source srcset="/assets/images/optimized/hero-image.avif" type="image/avif">
+  <source srcset="/assets/images/optimized/hero-image.webp" type="image/webp">
+  <img
+    src="/assets/images/hero-image.png"
+    alt="Legacy Investing Show - Build Wealth That Lasts"
+    loading="eager"
+    fetchpriority="high"
+    width="1920"
+    height="1080"
+    class="w-full h-auto"
+  >
+</picture>
+
+
+<!-- ============================================ -->
+<!-- RESPONSIVE IMAGES WITH MULTIPLE SIZES        -->
+<!-- For different viewport widths                -->
+<!-- ============================================ -->
+
+<picture>
+  <!-- AVIF sources for different sizes -->
+  <source
+    media="(min-width: 1024px)"
+    srcset="/assets/images/optimized/example-large.avif"
+    type="image/avif"
+  >
+  <source
+    media="(min-width: 640px)"
+    srcset="/assets/images/optimized/example-medium.avif"
+    type="image/avif"
+  >
+  <source
+    srcset="/assets/images/optimized/example-small.avif"
+    type="image/avif"
+  >
+
+  <!-- WebP sources for different sizes -->
+  <source
+    media="(min-width: 1024px)"
+    srcset="/assets/images/optimized/example-large.webp"
+    type="image/webp"
+  >
+  <source
+    media="(min-width: 640px)"
+    srcset="/assets/images/optimized/example-medium.webp"
+    type="image/webp"
+  >
+  <source
+    srcset="/assets/images/optimized/example-small.webp"
+    type="image/webp"
+  >
+
+  <!-- Fallback -->
+  <img
+    src="/assets/images/example.jpg"
+    alt="Description"
+    loading="lazy"
+    decoding="async"
+  >
+</picture>
+
+
+<!-- ============================================ -->
+<!-- TESTIMONIAL/CASE STUDY IMAGE                 -->
+<!-- Common pattern for the Legacy Investing site -->
+<!-- ============================================ -->
+
+<picture class="block rounded-lg overflow-hidden shadow-lg">
+  <source srcset="/assets/images/optimized/case-study-dustin.avif" type="image/avif">
+  <source srcset="/assets/images/optimized/case-study-dustin.webp" type="image/webp">
+  <img
+    src="/assets/images/case-study-dustin.jpg"
+    alt="Dustin's Success Story - Legacy Investing Show"
+    loading="lazy"
+    decoding="async"
+    width="800"
+    height="600"
+    class="w-full h-auto object-cover"
+  >
+</picture>
+
+
+<!-- ============================================ -->
+<!-- LOGO IMAGE                                   -->
+<!-- Important for branding, eager load           -->
+<!-- ============================================ -->
+
+<picture>
+  <source srcset="/assets/images/optimized/logo.avif" type="image/avif">
+  <source srcset="/assets/images/optimized/logo.webp" type="image/webp">
+  <img
+    src="/assets/images/logo.png"
+    alt="Legacy Investing Show Logo"
+    loading="eager"
+    width="200"
+    height="50"
+    class="h-12 w-auto"
+  >
+</picture>
+
+
+<!-- ============================================ -->
+<!-- BACKGROUND IMAGE (CSS Alternative)           -->
+<!-- For background images, use CSS with fallback -->
+<!-- ============================================ -->
+
+<!--
+In your CSS/Tailwind:
+
+.hero-background {
+  background-image: url('/assets/images/hero-background.jpg');
+}
+
+@supports (background-image: url('/assets/images/optimized/hero-background.webp')) {
+  .hero-background {
+    background-image: url('/assets/images/optimized/hero-background.webp');
+  }
+}
+
+@supports (background-image: url('/assets/images/optimized/hero-background.avif')) {
+  .hero-background {
+    background-image: url('/assets/images/optimized/hero-background.avif');
+  }
+}
+-->
+
+
+<!-- ============================================ -->
+<!-- JAVASCRIPT HELPER (Optional)                 -->
+<!-- Auto-generate picture elements from manifest -->
+<!-- ============================================ -->
+
+<script>
+/**
+ * Creates a picture element with optimized image sources
+ * Uses the manifest.json generated by the optimization script
+ *
+ * @param {string} originalPath - Path to original image (e.g., 'preston-main.jpg')
+ * @param {string} alt - Alt text for the image
+ * @param {object} options - Additional options (loading, class, width, height)
+ * @returns {HTMLPictureElement}
+ */
+async function createOptimizedPicture(originalPath, alt, options = {}) {
+  const {
+    loading = 'lazy',
+    className = '',
+    width,
+    height,
+    eager = false
+  } = options;
+
+  const picture = document.createElement('picture');
+
+  // Try to load manifest for optimized paths
+  try {
+    const response = await fetch('/assets/images/manifest.json');
+    const manifest = await response.json();
+    const imageData = manifest.images[originalPath];
+
+    if (imageData && !imageData.error) {
+      // Add AVIF source
+      const avifSource = document.createElement('source');
+      avifSource.srcset = `/assets/images/${imageData.avif}`;
+      avifSource.type = 'image/avif';
+      picture.appendChild(avifSource);
+
+      // Add WebP source
+      const webpSource = document.createElement('source');
+      webpSource.srcset = `/assets/images/${imageData.webp}`;
+      webpSource.type = 'image/webp';
+      picture.appendChild(webpSource);
+    }
+  } catch (e) {
+    console.warn('Could not load image manifest, using original image');
+  }
+
+  // Add fallback img
+  const img = document.createElement('img');
+  img.src = `/assets/images/${originalPath}`;
+  img.alt = alt;
+  img.loading = eager ? 'eager' : loading;
+  img.decoding = 'async';
+  if (className) img.className = className;
+  if (width) img.width = width;
+  if (height) img.height = height;
+
+  picture.appendChild(img);
+  return picture;
+}
+
+// Usage example:
+// const picture = await createOptimizedPicture('hero-image.png', 'Hero Image', { eager: true });
+// document.querySelector('.hero-container').appendChild(picture);
+</script>
+
+
+<!-- ============================================ -->
+<!-- SPECIFIC EXAMPLES FOR LEGACY INVESTING SITE  -->
+<!-- ============================================ -->
+
+<!-- Preston Main Image -->
+<picture>
+  <source srcset="/assets/images/optimized/preston-main.avif" type="image/avif">
+  <source srcset="/assets/images/optimized/preston-main.webp" type="image/webp">
+  <img
+    src="/assets/images/preston-main.jpg"
+    alt="Preston - Legacy Investing Show Host"
+    loading="lazy"
+    decoding="async"
+    class="rounded-full shadow-xl"
+  >
+</picture>
+
+<!-- Tool Screenshot -->
+<picture>
+  <source srcset="/assets/images/optimized/tool-screenshot-1.avif" type="image/avif">
+  <source srcset="/assets/images/optimized/tool-screenshot-1.webp" type="image/webp">
+  <img
+    src="/assets/images/tool-screenshot-1.png"
+    alt="Deal Analysis Tool Screenshot"
+    loading="lazy"
+    decoding="async"
+    class="rounded-lg shadow-md border border-gray-200"
+  >
+</picture>
+
+<!-- About Page Header -->
+<picture>
+  <source srcset="/assets/images/optimized/about-header.avif" type="image/avif">
+  <source srcset="/assets/images/optimized/about-header.webp" type="image/webp">
+  <img
+    src="/assets/images/about-header.png"
+    alt="About Legacy Investing Show"
+    loading="eager"
+    fetchpriority="high"
+    class="w-full h-auto"
+  >
+</picture>
+
+<!-- Social Proof Image (already WebP, just add AVIF) -->
+<picture>
+  <source srcset="/assets/images/optimized/social-proof-1.avif" type="image/avif">
+  <source srcset="/assets/images/social-proof-1.webp" type="image/webp">
+  <img
+    src="/assets/images/social-proof-1.webp"
+    alt="Client Success Screenshot"
+    loading="lazy"
+    decoding="async"
+  >
+</picture>

@@ -1,0 +1,16 @@
+# Robots.txt for Legacy Investing Show
+# https://legacyinvestingshow.com
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Disallow admin and API paths
+Disallow: /api/
+Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://legacyinvestingshow.com/sitemap.xml
+
+# LLMs.txt for AI crawlers
+# See: https://legacyinvestingshow.com/llms.txt

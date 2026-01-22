@@ -1,0 +1,775 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Premium Typography - Playfair Display + DM Sans */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+/* ============================================
+   DESIGN SYSTEM: Modern Prosperity
+   - Rich dark backgrounds with warm gold accents
+   - Editorial typography with sophisticated serifs
+   - Subtle grain textures for depth
+   - Refined glass-morphism cards
+   - Elegant staggered animations
+   ============================================ */
+
+@layer base {
+  :root {
+    /* Color System */
+    --gold: #D4A853;
+    --gold-light: #E8C97A;
+    --gold-dark: #B8923D;
+    --gold-muted: rgba(212, 168, 83, 0.15);
+    --cream: #F5F0E6;
+    --dark: #0C0C0E;
+    --darker: #060608;
+    --card: #141416;
+    --card-elevated: #1A1A1D;
+    --border: #2A2A2E;
+    --border-light: #3A3A3E;
+    --text: #FFFFFF;
+    --text-muted: #A8A8B3;
+    --text-dim: #6B6B75;
+
+    /* Animation timing */
+    --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply font-sans;
+    background-color: var(--dark);
+    color: var(--text);
+    position: relative;
+  }
+
+  /* Subtle noise texture overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    z-index: 9999;
+  }
+
+  /* Headings - Playfair Display for elegance */
+  h1, h2, h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+
+  h4, h5, h6 {
+    @apply font-sans font-semibold tracking-tight;
+  }
+
+  /* Links */
+  a {
+    @apply transition-all duration-300;
+  }
+
+  /* Focus states */
+  :focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+  }
+
+  /* Selection */
+  ::selection {
+    background-color: rgba(212, 168, 83, 0.3);
+    color: var(--text);
+  }
+
+  /* Smooth scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--darker);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--border-light);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--gold-dark);
+  }
+}
+
+@layer components {
+  /* =====================================
+     PRIMARY CTA BUTTON - Premium Gold
+     ===================================== */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2
+           px-8 py-4 rounded-xl
+           font-sans font-semibold text-lg
+           transition-all duration-300;
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%);
+    background-size: 200% 200%;
+    color: #0C0C0E;
+    box-shadow:
+      0 4px 20px rgba(212, 168, 83, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn-primary::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, 0.1) 50%, transparent 100%);
+    transform: translateX(-100%);
+    transition: transform 0.6s var(--ease-smooth);
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    background-position: 100% 100%;
+    box-shadow:
+      0 8px 30px rgba(212, 168, 83, 0.4),
+      0 4px 10px rgba(212, 168, 83, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  }
+
+  .btn-primary:hover::before {
+    transform: translateX(100%);
+  }
+
+  .btn-primary:active {
+    transform: translateY(0);
+  }
+
+  /* =====================================
+     SECONDARY BUTTON - Outlined Gold
+     ===================================== */
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2
+           px-6 py-3 rounded-xl
+           font-sans font-semibold
+           transition-all duration-300;
+    background: transparent;
+    border: 2px solid var(--gold);
+    color: var(--gold);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn-secondary::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--gold);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s var(--ease-smooth);
+    z-index: -1;
+  }
+
+  .btn-secondary:hover {
+    color: var(--dark);
+    border-color: var(--gold-light);
+  }
+
+  .btn-secondary:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  /* =====================================
+     PREMIUM CARD - Glass Morphism
+     ===================================== */
+  .card {
+    @apply rounded-2xl overflow-hidden transition-all duration-500;
+    background: linear-gradient(135deg,
+      rgba(20, 20, 22, 0.9) 0%,
+      rgba(26, 26, 29, 0.8) 100%);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(10px);
+    position: relative;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg,
+      rgba(212, 168, 83, 0) 0%,
+      rgba(212, 168, 83, 0.1) 50%,
+      rgba(212, 168, 83, 0) 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.5s var(--ease-smooth);
+    pointer-events: none;
+  }
+
+  .card:hover {
+    border-color: rgba(212, 168, 83, 0.3);
+    transform: translateY(-4px);
+    box-shadow:
+      0 20px 40px rgba(0, 0, 0, 0.4),
+      0 0 60px rgba(212, 168, 83, 0.08);
+  }
+
+  .card:hover::before {
+    opacity: 1;
+  }
+
+  /* =====================================
+     SECTION & CONTAINER
+     ===================================== */
+  .section {
+    @apply py-24 md:py-32 relative;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-5 sm:px-8 lg:px-10;
+  }
+
+  /* =====================================
+     STATS - Elegant Number Display
+     ===================================== */
+  .stat-number {
+    font-family: 'Playfair Display', Georgia, serif;
+    @apply text-5xl md:text-6xl font-semibold;
+    color: var(--gold);
+    letter-spacing: -0.02em;
+    position: relative;
+    display: inline-block;
+  }
+
+  .stat-number::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--gold), transparent);
+  }
+
+  .stat-label {
+    @apply text-base md:text-lg mt-3 font-sans font-medium;
+    color: var(--text-muted);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+  }
+
+  /* =====================================
+     NAVIGATION
+     ===================================== */
+  .nav-link {
+    @apply font-sans font-medium transition-all duration-300 relative;
+    color: var(--text-muted);
+    padding: 0.5rem 0;
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--gold);
+    transition: width 0.3s var(--ease-smooth);
+  }
+
+  .nav-link:hover {
+    color: var(--text);
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+  }
+
+  .nav-link-active {
+    color: var(--text);
+  }
+
+  .nav-link-active::after {
+    width: 100%;
+    background: var(--gold);
+  }
+
+  /* =====================================
+     FAQ ACCORDION - Refined
+     ===================================== */
+  .faq-item {
+    border-bottom: 1px solid var(--border);
+    overflow: hidden;
+  }
+
+  .faq-question {
+    @apply w-full flex items-center justify-between py-6 text-left
+           font-sans text-lg font-semibold
+           transition-all duration-300;
+    color: var(--text);
+  }
+
+  .faq-question:hover {
+    color: var(--gold);
+  }
+
+  .faq-question span {
+    @apply pr-4;
+  }
+
+  .faq-question svg {
+    color: var(--gold);
+    flex-shrink: 0;
+    transition: transform 0.4s var(--ease-smooth);
+  }
+
+  .faq-question[aria-expanded="true"] svg {
+    transform: rotate(180deg);
+  }
+
+  .faq-answer {
+    @apply pb-6 leading-relaxed;
+    color: var(--text-muted);
+  }
+
+  /* =====================================
+     TESTIMONIAL CARD
+     ===================================== */
+  .testimonial-card {
+    @apply rounded-2xl p-6 transition-all duration-300;
+    background: var(--card);
+    border: 1px solid var(--border);
+    position: relative;
+  }
+
+  .testimonial-card::before {
+    content: '"';
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    line-height: 1;
+    color: var(--gold);
+    opacity: 0.2;
+  }
+
+  .testimonial-card:hover {
+    border-color: rgba(212, 168, 83, 0.2);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  /* =====================================
+     BADGE - Premium
+     ===================================== */
+  .badge {
+    @apply inline-flex items-center px-4 py-1.5 rounded-full
+           font-sans text-xs font-semibold uppercase tracking-wider;
+    background: rgba(212, 168, 83, 0.1);
+    color: var(--gold);
+    border: 1px solid rgba(212, 168, 83, 0.2);
+  }
+
+  /* =====================================
+     BLOG/CASE STUDY CARD
+     ===================================== */
+  .blog-card {
+    @apply rounded-2xl overflow-hidden cursor-pointer;
+    background: linear-gradient(135deg,
+      rgba(20, 20, 22, 0.9) 0%,
+      rgba(26, 26, 29, 0.8) 100%);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(10px);
+    transition: all 0.5s var(--ease-smooth);
+  }
+
+  .blog-card:hover {
+    border-color: rgba(212, 168, 83, 0.3);
+    transform: translateY(-4px);
+    box-shadow:
+      0 20px 40px rgba(0, 0, 0, 0.4),
+      0 0 60px rgba(212, 168, 83, 0.08);
+  }
+
+  .blog-card-image {
+    @apply w-full aspect-video object-cover
+           transition-all duration-700;
+    filter: brightness(0.95);
+  }
+
+  .blog-card:hover .blog-card-image {
+    transform: scale(1.05);
+    filter: brightness(1);
+  }
+
+  .blog-card h3 {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    @apply font-semibold;
+    transition: color 0.3s ease;
+  }
+
+  .blog-card:hover h3 {
+    color: var(--gold);
+  }
+
+  /* =====================================
+     TIMELINE (About page)
+     ===================================== */
+  .timeline-item {
+    @apply relative pl-10 pb-14 last:pb-0;
+    border-left: 2px solid var(--border);
+  }
+
+  .timeline-item:last-child {
+    border-left-color: transparent;
+  }
+
+  .timeline-dot {
+    @apply absolute left-0 top-0 w-4 h-4 -ml-2 rounded-full;
+    background: var(--gold);
+    border: 4px solid var(--dark);
+    box-shadow: 0 0 20px rgba(212, 168, 83, 0.3);
+  }
+
+  .timeline-year {
+    @apply inline-block px-4 py-1.5 mb-4 rounded-full
+           font-sans text-sm font-semibold;
+    background: rgba(212, 168, 83, 0.1);
+    color: var(--gold);
+  }
+
+  /* =====================================
+     HEADER - Elegant Glass
+     ===================================== */
+  .header-glass {
+    background: rgba(12, 12, 14, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(42, 42, 46, 0.5);
+  }
+
+  /* =====================================
+     SECTION LABEL - Premium Typography
+     ===================================== */
+  .section-label {
+    @apply inline-flex items-center gap-2 mb-4
+           font-sans text-sm font-semibold uppercase tracking-widest;
+    color: var(--gold);
+  }
+
+  .section-label::before {
+    content: '';
+    width: 24px;
+    height: 1px;
+    background: var(--gold);
+  }
+
+  /* =====================================
+     HERO SPECIFIC STYLES
+     ===================================== */
+  .hero-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+
+  .hero-title .gold {
+    color: var(--gold);
+    position: relative;
+  }
+
+  .hero-title .gold::after {
+    content: '';
+    position: absolute;
+    bottom: 0.1em;
+    left: 0;
+    right: 0;
+    height: 0.1em;
+    background: linear-gradient(90deg, var(--gold), rgba(212, 168, 83, 0.3));
+    border-radius: 0.05em;
+  }
+
+  /* =====================================
+     DIVIDER
+     ===================================== */
+  .divider {
+    height: 1px;
+    background: linear-gradient(90deg,
+      transparent,
+      var(--border) 20%,
+      var(--border) 80%,
+      transparent);
+  }
+
+  .divider-gold {
+    height: 2px;
+    background: linear-gradient(90deg,
+      transparent,
+      var(--gold) 30%,
+      var(--gold) 70%,
+      transparent);
+    opacity: 0.5;
+  }
+}
+
+@layer utilities {
+  /* =====================================
+     TEXT UTILITIES
+     ===================================== */
+  .text-gradient-gold {
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .text-gold {
+    color: var(--gold);
+  }
+
+  .text-cream {
+    color: var(--cream);
+  }
+
+  /* =====================================
+     BACKGROUND UTILITIES
+     ===================================== */
+  .bg-dark {
+    background-color: var(--dark);
+  }
+
+  .bg-darker {
+    background-color: var(--darker);
+  }
+
+  .bg-card {
+    background-color: var(--card);
+  }
+
+  .bg-gradient-radial {
+    background: radial-gradient(ellipse at center, var(--card) 0%, var(--dark) 70%);
+  }
+
+  .bg-gradient-hero {
+    background:
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(212, 168, 83, 0.12) 0%, transparent 50%),
+      radial-gradient(ellipse 60% 40% at 80% 60%, rgba(212, 168, 83, 0.06) 0%, transparent 50%),
+      linear-gradient(180deg, var(--dark) 0%, var(--darker) 100%);
+  }
+
+  .bg-gradient-section {
+    background: linear-gradient(180deg, var(--darker) 0%, var(--dark) 50%, var(--darker) 100%);
+  }
+
+  /* Geometric accent pattern */
+  .bg-pattern {
+    background-image:
+      linear-gradient(rgba(212, 168, 83, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(212, 168, 83, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  /* =====================================
+     BORDER UTILITIES
+     ===================================== */
+  .border-gold {
+    border-color: var(--gold);
+  }
+
+  .border-gold-muted {
+    border-color: rgba(212, 168, 83, 0.2);
+  }
+
+  /* =====================================
+     GLOW EFFECTS
+     ===================================== */
+  .glow-gold {
+    box-shadow: 0 0 60px rgba(212, 168, 83, 0.15);
+  }
+
+  .glow-gold-sm {
+    box-shadow: 0 0 30px rgba(212, 168, 83, 0.1);
+  }
+
+  .glow-gold-lg {
+    box-shadow: 0 0 100px rgba(212, 168, 83, 0.2);
+  }
+
+  /* Image glow on hover */
+  .img-glow {
+    transition: all 0.5s var(--ease-smooth);
+  }
+
+  .img-glow:hover {
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4), 0 0 40px rgba(212, 168, 83, 0.1);
+  }
+
+  /* =====================================
+     ANIMATION UTILITIES
+     ===================================== */
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+    opacity: 0;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.7s var(--ease-smooth) forwards;
+    opacity: 0;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.5s var(--ease-smooth) forwards;
+    opacity: 0;
+  }
+
+  /* Staggered animation delays */
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+  .delay-400 { animation-delay: 400ms; }
+  .delay-500 { animation-delay: 500ms; }
+  .delay-600 { animation-delay: 600ms; }
+  .delay-700 { animation-delay: 700ms; }
+  .delay-800 { animation-delay: 800ms; }
+
+  /* Hover lift effect */
+  .hover-lift {
+    transition: transform 0.4s var(--ease-smooth), box-shadow 0.4s var(--ease-smooth);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-8px);
+  }
+
+  /* =====================================
+     SCROLL ANIMATIONS (via JS)
+     ===================================== */
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s var(--ease-smooth), transform 0.8s var(--ease-smooth);
+  }
+
+  .scroll-reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* =====================================
+     MISC UTILITIES
+     ===================================== */
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Aspect ratios */
+  .aspect-video-custom {
+    aspect-ratio: 16 / 9;
+  }
+
+  .aspect-portrait {
+    aspect-ratio: 3 / 4;
+  }
+
+  /* Image treatment */
+  .img-premium {
+    border-radius: 1rem;
+    border: 1px solid var(--border);
+  }
+}
+
+/* =====================================
+   KEYFRAME ANIMATIONS
+   ===================================== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* =====================================
+   RESPONSIVE ADJUSTMENTS
+   ===================================== */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+  }
+
+  .stat-number::after {
+    width: 30px;
+  }
+
+  .section {
+    @apply py-16;
+  }
+}
+
+/* =====================================
+   PRINT STYLES
+   ===================================== */
+@media print {
+  body::before {
+    display: none;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    border: 2px solid #000;
+    background: none;
+    color: #000;
+  }
+}

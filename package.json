@@ -1,0 +1,35 @@
+{
+  "name": "legacy-investing-show",
+  "version": "1.0.0",
+  "description": "Legacy Investing Show - Build Wealth That Lasts Beyond A Paycheck",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/styles.css --watch",
+    "build:css": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/styles.css --minify",
+    "build:blog": "node scripts/build-blog.js",
+    "build:sitemap": "node scripts/generate-sitemap.js",
+    "build:rss": "node scripts/generate-rss.js",
+    "build:images": "node scripts/optimize-images.js",
+    "build": "npm run build:css && npm run build:blog && npm run build:sitemap && npm run build:rss",
+    "start": "npx serve ."
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "marked": "^12.0.0",
+    "sharp": "^0.33.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6",
+    "serve": "^14.2.0",
+    "tailwindcss": "^3.4.19"
+  },
+  "keywords": [
+    "investing",
+    "wealth-building",
+    "airbnb-arbitrage",
+    "financial-education"
+  ],
+  "author": "Legacy Investing Show",
+  "license": "UNLICENSED",
+  "private": true
+}
