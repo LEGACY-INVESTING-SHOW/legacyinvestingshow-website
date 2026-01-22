@@ -9,37 +9,56 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Legacy Investing Show - Modern Prosperity palette
+        // Legacy Investing Show - Premium Finance Light Theme
         'brand': {
-          'gold': '#D4A853',           // Primary gold accent
-          'gold-light': '#E8C97A',     // Light gold for hover
-          'gold-dark': '#B8923D',      // Darker gold
-          'gold-muted': 'rgba(212, 168, 83, 0.15)', // Subtle gold overlay
-          'cream': '#F5F0E6',          // Warm cream for contrast text
-          'dark': '#0C0C0E',           // Rich black background
-          'darker': '#060608',         // Darkest sections
-          'card': '#141416',           // Card backgrounds
-          'card-elevated': '#1A1A1D',  // Elevated cards
-          'border': '#2A2A2E',         // Subtle borders
-          'border-light': '#3A3A3E',   // Lighter borders
-          'text': '#FFFFFF',           // Primary text
-          'text-muted': '#A8A8B3',     // Secondary text
-          'text-dim': '#6B6B75',       // Dimmed text
-          // Keep green as secondary
-          'success': '#10B981',
-          'success-dark': '#059669',
+          // Primary Green (Finance/Growth)
+          'primary': '#059669',           // Emerald 600 - main brand color
+          'primary-light': '#10B981',     // Emerald 500 - lighter accent
+          'primary-dark': '#047857',      // Emerald 700 - darker shade
+          'primary-muted': 'rgba(5, 150, 105, 0.08)', // Subtle green overlay
+
+          // Accent Gold (Premium/Success)
+          'accent': '#CA8A04',            // Yellow 600 - premium accent
+          'accent-light': '#EAB308',      // Yellow 500
+
+          // Light Theme Backgrounds
+          'white': '#FFFFFF',             // Pure white
+          'light': '#FAFAFA',             // Off-white sections
+          'cream': '#F5F5F4',             // Warm gray for contrast
+          'muted': '#F3F4F6',             // Gray 100 - subtle sections
+
+          // Card & Surface Colors
+          'card': '#FFFFFF',              // Card backgrounds
+          'card-hover': '#F9FAFB',        // Card hover state
+
+          // Borders
+          'border': '#E5E7EB',            // Gray 200 - standard borders
+          'border-light': '#F3F4F6',      // Gray 100 - subtle borders
+          'border-dark': '#D1D5DB',       // Gray 300 - emphasis borders
+
+          // Text Colors
+          'text': '#111827',              // Gray 900 - primary text
+          'text-secondary': '#374151',    // Gray 700 - secondary text
+          'text-muted': '#6B7280',        // Gray 500 - muted text
+          'text-dim': '#9CA3AF',          // Gray 400 - very light text
+
+          // Semantic Colors
+          'success': '#059669',
+          'success-light': '#D1FAE5',
+          'error': '#DC2626',
+          'warning': '#F59E0B',
         }
       },
       fontFamily: {
-        'display': ['"Playfair Display"', 'Georgia', 'serif'],
-        'sans': ['"DM Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+        'display': ['"Inter"', 'system-ui', '-apple-system', 'sans-serif'],
+        'sans': ['"Inter"', 'system-ui', '-apple-system', 'sans-serif'],
         'mono': ['"JetBrains Mono"', 'monospace'],
       },
       fontSize: {
-        'display-xl': ['5rem', { lineHeight: '1.05', fontWeight: '600', letterSpacing: '-0.02em' }],
-        'display-lg': ['4rem', { lineHeight: '1.1', fontWeight: '600', letterSpacing: '-0.02em' }],
-        'display': ['3rem', { lineHeight: '1.15', fontWeight: '600', letterSpacing: '-0.01em' }],
-        'display-sm': ['2.25rem', { lineHeight: '1.2', fontWeight: '600' }],
+        'display-xl': ['4.5rem', { lineHeight: '1.1', fontWeight: '700', letterSpacing: '-0.02em' }],
+        'display-lg': ['3.5rem', { lineHeight: '1.15', fontWeight: '700', letterSpacing: '-0.02em' }],
+        'display': ['2.75rem', { lineHeight: '1.2', fontWeight: '700', letterSpacing: '-0.01em' }],
+        'display-sm': ['2rem', { lineHeight: '1.25', fontWeight: '600' }],
       },
       spacing: {
         '18': '4.5rem',
@@ -55,28 +74,32 @@ module.exports = {
         '5xl': '2.5rem',
       },
       boxShadow: {
-        'glow': '0 0 60px rgba(212, 168, 83, 0.15)',
-        'glow-sm': '0 0 30px rgba(212, 168, 83, 0.1)',
-        'card': '0 4px 24px rgba(0, 0, 0, 0.4)',
-        'card-hover': '0 8px 40px rgba(0, 0, 0, 0.5)',
-        'inner-glow': 'inset 0 1px 0 rgba(255, 255, 255, 0.05)',
+        'soft': '0 2px 8px rgba(0, 0, 0, 0.04)',
+        'medium': '0 4px 16px rgba(0, 0, 0, 0.06)',
+        'large': '0 8px 32px rgba(0, 0, 0, 0.08)',
+        'xl': '0 16px 48px rgba(0, 0, 0, 0.1)',
+        'glow': '0 0 40px rgba(5, 150, 105, 0.15)',
+        'glow-sm': '0 0 20px rgba(5, 150, 105, 0.1)',
+        'card': '0 1px 3px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.03)',
+        'card-hover': '0 4px 20px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(5, 150, 105, 0.1)',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-gold': 'linear-gradient(135deg, #D4A853 0%, #E8C97A 50%, #D4A853 100%)',
-        'gradient-dark': 'linear-gradient(180deg, #0C0C0E 0%, #060608 100%)',
-        'noise': "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E\")",
+        'gradient-primary': 'linear-gradient(135deg, #059669 0%, #10B981 100%)',
+        'gradient-light': 'linear-gradient(180deg, #FFFFFF 0%, #FAFAFA 100%)',
+        'gradient-hero': 'radial-gradient(ellipse 80% 50% at 50% -20%, rgba(5, 150, 105, 0.08) 0%, transparent 60%)',
       },
       animation: {
-        'fade-in': 'fadeIn 0.6s ease-out forwards',
-        'fade-in-up': 'fadeInUp 0.7s ease-out forwards',
-        'fade-in-down': 'fadeInDown 0.7s ease-out forwards',
-        'scale-in': 'scaleIn 0.5s ease-out forwards',
-        'slide-up': 'slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards',
-        'slide-down': 'slideDown 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards',
-        'shimmer': 'shimmer 2s infinite linear',
+        'fade-in': 'fadeIn 0.5s ease-out forwards',
+        'fade-in-up': 'fadeInUp 0.6s ease-out forwards',
+        'fade-in-down': 'fadeInDown 0.6s ease-out forwards',
+        'scale-in': 'scaleIn 0.4s ease-out forwards',
+        'slide-up': 'slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+        'slide-down': 'slideDown 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards',
         'float': 'float 6s ease-in-out infinite',
         'pulse-soft': 'pulseSoft 3s ease-in-out infinite',
+        'shimmer': 'shimmer 2s infinite linear',
+        'bounce-subtle': 'bounceSubtle 2s infinite',
       },
       keyframes: {
         fadeIn: {
@@ -84,7 +107,7 @@ module.exports = {
           '100%': { opacity: '1' },
         },
         fadeInUp: {
-          '0%': { opacity: '0', transform: 'translateY(30px)' },
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
         fadeInDown: {
@@ -92,28 +115,32 @@ module.exports = {
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
         scaleIn: {
-          '0%': { opacity: '0', transform: 'scale(0.95)' },
+          '0%': { opacity: '0', transform: 'scale(0.96)' },
           '100%': { opacity: '1', transform: 'scale(1)' },
         },
         slideUp: {
-          '0%': { opacity: '0', transform: 'translateY(40px)' },
+          '0%': { opacity: '0', transform: 'translateY(30px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
         slideDown: {
-          '0%': { opacity: '0', transform: 'translateY(-40px)' },
+          '0%': { opacity: '0', transform: 'translateY(-30px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-8px)' },
+        },
+        pulseSoft: {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.8' },
         },
         shimmer: {
           '0%': { backgroundPosition: '-200% 0' },
           '100%': { backgroundPosition: '200% 0' },
         },
-        float: {
+        bounceSubtle: {
           '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-10px)' },
-        },
-        pulseSoft: {
-          '0%, 100%': { opacity: '1' },
-          '50%': { opacity: '0.7' },
+          '50%': { transform: 'translateY(-4px)' },
         },
       },
       transitionTimingFunction: {
