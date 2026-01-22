@@ -173,30 +173,24 @@ function generateBlogIndex(posts) {
         const date = formatDate(post.frontmatter.date);
 
         return `
-                    <a href="/blog/${post.slug}.html" class="blog-card group">
-                        <div class="overflow-hidden rounded-t-xl">
+                    <a href="/blog/${post.slug}.html" class="blog-card-minimal">
+                        <div class="overflow-hidden">
                             <img src="${image}"
                                  alt="${post.frontmatter.title}"
-                                 width="640"
-                                 height="360"
-                                 class="blog-card-image w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-300"
+                                 class="blog-card-minimal-image"
                                  loading="lazy">
                         </div>
-                        <div class="p-6">
-                            <div class="flex items-center gap-3 mb-3">
-                                <span class="text-xs text-brand-primary font-medium uppercase tracking-wide">${category}</span>
-                                <span class="text-brand-text-muted text-xs">${readTime} min read</span>
+                        <div class="p-5">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="category-label">${category}</span>
                             </div>
-                            <h2 class="text-xl font-semibold mb-2 group-hover:text-brand-primary transition-colors">
+                            <h2 class="text-base font-semibold mb-2 text-gray-900 group-hover:text-brand-primary transition-colors">
                                 ${post.frontmatter.title}
                             </h2>
-                            <p class="text-brand-text-muted text-sm mb-4 line-clamp-2">
-                                ${post.frontmatter.description || ''}
-                            </p>
-                            <div class="flex items-center gap-2 text-sm text-brand-text-muted">
-                                <span>${post.frontmatter.author || 'Preston Seo'}</span>
-                                <span>|</span>
+                            <div class="meta-simple">
                                 <time datetime="${formatISODate(post.frontmatter.date)}">${date}</time>
+                                <span class="mx-1">·</span>
+                                <span>${readTime} min read</span>
                             </div>
                         </div>
                     </a>`;
@@ -212,29 +206,24 @@ function generateBlogIndex(posts) {
 
         return `
                     <a href="/blog/${post.slug}.html" class="block group">
-                        <div class="relative overflow-hidden rounded-2xl">
+                        <div class="relative overflow-hidden rounded-sm">
                             <img src="${image}"
                                  alt="${post.frontmatter.title}"
-                                 class="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-300"
+                                 class="w-full aspect-[4/3] object-cover"
                                  loading="eager">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                            <div class="absolute bottom-0 left-0 right-0 p-6 md:p-8">
-                                <span class="inline-block bg-brand-primary/90 text-white text-xs font-medium px-3 py-1 rounded-full mb-3">
-                                    Featured
-                                </span>
-                                <h2 class="text-2xl md:text-3xl font-bold text-white mb-2 group-hover:text-brand-primary transition-colors">
-                                    ${post.frontmatter.title}
-                                </h2>
-                                <p class="text-white/80 mb-3 line-clamp-2">
-                                    ${post.frontmatter.description || ''}
-                                </p>
-                                <div class="flex items-center gap-3 text-white/70 text-sm">
-                                    <span>${post.frontmatter.author || 'Preston Seo'}</span>
-                                    <span>|</span>
-                                    <span>${formatDate(post.frontmatter.date)}</span>
-                                    <span>|</span>
-                                    <span>${readTime} min read</span>
-                                </div>
+                        </div>
+                        <div class="pt-4">
+                            <span class="category-label mb-2 block">Featured</span>
+                            <h2 class="text-xl md:text-2xl font-semibold mb-2 text-gray-900 group-hover:text-brand-primary transition-colors">
+                                ${post.frontmatter.title}
+                            </h2>
+                            <p class="text-sm text-brand-text-muted mb-3 line-clamp-2 max-w-2xl">
+                                ${post.frontmatter.description || ''}
+                            </p>
+                            <div class="meta-simple">
+                                <time datetime="${formatISODate(post.frontmatter.date)}">${formatDate(post.frontmatter.date)}</time>
+                                <span class="mx-2">·</span>
+                                <span>${readTime} min read</span>
                             </div>
                         </div>
                     </a>`;
@@ -360,15 +349,15 @@ function generateBlogIndex(posts) {
     </header>
 
     <main id="main" role="main">
-        <!-- Hero Section -->
-        <section class="pt-28 md:pt-36 pb-12 md:pb-16">
+        <!-- Hero Section - Minimal -->
+        <section class="pt-28 md:pt-32 pb-12 md:pb-16">
             <div class="container-custom">
-                <div class="text-center max-w-3xl mx-auto">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900">
-                        Wealth Building <span class="text-brand-primary">Insights</span>
+                <div class="text-center max-w-2xl mx-auto">
+                    <h1 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+                        Blog
                     </h1>
-                    <p class="text-xl text-brand-text-muted">
-                        Practical strategies for building passive income, optimizing taxes, and achieving financial freedom through real estate investing.
+                    <p class="text-base text-brand-text-muted">
+                        Wealth building strategies, Airbnb arbitrage tips, and real estate investing insights.
                     </p>
                 </div>
             </div>
@@ -386,9 +375,9 @@ function generateBlogIndex(posts) {
         <!-- All Posts -->
         <section class="section">
             <div class="container-custom">
-                <h2 class="text-2xl md:text-3xl font-bold mb-8">Latest Articles</h2>
+                <h2 class="text-lg font-semibold mb-8 text-gray-900">Latest Articles</h2>
 
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     ${postCardsHTML}
                 </div>
 
@@ -402,17 +391,17 @@ function generateBlogIndex(posts) {
             </div>
         </section>
 
-        <!-- CTA Section -->
-        <section class="section bg-emerald-50">
-            <div class="container-custom text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6 max-w-3xl mx-auto text-gray-900">
-                    Want to Learn More?
+        <!-- CTA Section - Minimal -->
+        <section class="cta-minimal">
+            <div class="container-custom">
+                <h2 class="text-lg font-semibold mb-2 text-gray-900">
+                    Want to learn more?
                 </h2>
-                <p class="text-xl text-brand-text-muted mb-8 max-w-2xl mx-auto">
-                    Join my 3-Day Challenge and learn the strategies that helped me build a $20M+ portfolio.
+                <p class="text-sm text-brand-text-muted mb-4 max-w-xl mx-auto">
+                    Join my 3-Day Challenge and learn strategies that helped me build a $20M+ portfolio.
                 </p>
-                <a href="https://www.managemoney101.com/challengeoptin" class="btn-primary text-lg">
-                    Join My 3 Day Wealth Challenge
+                <a href="https://www.managemoney101.com/challengeoptin" class="btn-outline-minimal">
+                    Join 3-Day Challenge
                 </a>
             </div>
         </section>
