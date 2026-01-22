@@ -24,13 +24,16 @@ const CONFIG = {
   outputDir: path.join(__dirname, '..', 'assets', 'images', 'optimized'),
   manifestPath: path.join(__dirname, '..', 'assets', 'images', 'manifest.json'),
   supportedExtensions: ['.jpg', '.jpeg', '.png'],
+  // Responsive image sizes for srcset
+  responsiveSizes: [400, 800, 1200],
   maxWidth: {
     regular: 1920,
     thumbnail: 800
   },
   quality: {
     webp: 80,
-    avif: 65
+    avif: 60,
+    jpg: 80
   }
 };
 
@@ -122,7 +125,7 @@ async function getImageFiles(dir, baseDir = dir) {
 }
 
 /**
- * Process a single image file
+ * Process a single image file - generates multiple sizes in WebP, AVIF, and JPG formats
  */
 async function processImage(imageInfo, manifest) {
   const { absolutePath, relativePath, filename } = imageInfo;
@@ -136,43 +139,16 @@ async function processImage(imageInfo, manifest) {
 
   await ensureDirectoryExists(outputSubDir);
 
-  const outputPaths = {
-    webp: path.join(outputSubDir, `${baseName}.webp`),
-    avif: path.join(outputSubDir, `${baseName}.avif`)
-  };
-
-  // Check if files already exist and skip if not forcing
-  if (!options.force) {
-    const webpExists = await fileExists(outputPaths.webp);
-    const avifExists = await fileExists(outputPaths.avif);
-
-    if (webpExists && avifExists) {
-      console.log(`  Skipping ${filename} (already optimized, use --force to regenerate)`);
-
-      // Still add to manifest
-      const originalSize = await getFileSize(absolutePath);
-      const webpSize = await getFileSize(outputPaths.webp);
-      const avifSize = await getFileSize(outputPaths.avif);
-
-      manifest[relativePath] = {
-        original: relativePath,
-        webp: path.relative(CONFIG.inputDir, outputPaths.webp),
-        avif: path.relative(CONFIG.inputDir, outputPaths.avif),
-        sizes: {
-          original: originalSize,
-          webp: webpSize,
-          avif: avifSize
-        }
-      };
-
-      return { skipped: true };
-    }
-  }
+  // Check if we should generate responsive sizes
+  const generateResponsive = args.includes('--responsive');
 
   if (options.dryRun) {
     console.log(`  [DRY RUN] Would process: ${filename}`);
-    console.log(`    -> WebP: ${outputPaths.webp}`);
-    console.log(`    -> AVIF: ${outputPaths.avif}`);
+    if (generateResponsive) {
+      CONFIG.responsiveSizes.forEach(size => {
+        console.log(`    -> ${baseName}-${size}.webp, .avif, .jpg`);
+      });
+    }
     return { dryRun: true };
   }
 
@@ -187,67 +163,163 @@ async function processImage(imageInfo, manifest) {
     const image = sharp(absolutePath);
     const metadata = await image.metadata();
 
-    // Determine if resizing is needed
-    const needsResize = metadata.width > maxWidth;
-    const resizeOptions = needsResize ? { width: maxWidth, withoutEnlargement: true } : null;
+    let totalWebpSize = 0;
+    let totalAvifSize = 0;
+    const generatedFiles = {};
 
-    if (needsResize) {
-      console.log(`    Resizing from ${metadata.width}px to ${maxWidth}px width`);
-    }
+    if (generateResponsive) {
+      // Generate responsive sizes
+      for (const width of CONFIG.responsiveSizes) {
+        // Skip sizes larger than the original image
+        if (width > metadata.width) continue;
 
-    // Create WebP version
-    let webpPipeline = sharp(absolutePath);
-    if (resizeOptions) {
-      webpPipeline = webpPipeline.resize(resizeOptions);
-    }
-    await webpPipeline
-      .webp({ quality: CONFIG.quality.webp })
-      .toFile(outputPaths.webp);
+        const resizeOptions = { width, withoutEnlargement: true };
 
-    const webpSize = await getFileSize(outputPaths.webp);
-    const webpSavings = calculateSavings(originalSize, webpSize);
-    console.log(`    WebP: ${formatBytes(webpSize)} (${webpSavings.percentage}% savings)`);
+        // WebP
+        const webpPath = path.join(outputSubDir, `${baseName}-${width}.webp`);
+        await sharp(absolutePath)
+          .resize(resizeOptions)
+          .webp({ quality: CONFIG.quality.webp })
+          .toFile(webpPath);
+        const webpSize = await getFileSize(webpPath);
+        totalWebpSize += webpSize;
 
-    // Create AVIF version
-    let avifPipeline = sharp(absolutePath);
-    if (resizeOptions) {
-      avifPipeline = avifPipeline.resize(resizeOptions);
-    }
-    await avifPipeline
-      .avif({ quality: CONFIG.quality.avif })
-      .toFile(outputPaths.avif);
+        // AVIF
+        const avifPath = path.join(outputSubDir, `${baseName}-${width}.avif`);
+        await sharp(absolutePath)
+          .resize(resizeOptions)
+          .avif({ quality: CONFIG.quality.avif })
+          .toFile(avifPath);
+        const avifSize = await getFileSize(avifPath);
+        totalAvifSize += avifSize;
 
-    const avifSize = await getFileSize(outputPaths.avif);
-    const avifSavings = calculateSavings(originalSize, avifSize);
-    console.log(`    AVIF: ${formatBytes(avifSize)} (${avifSavings.percentage}% savings)`);
+        // JPG fallback
+        const jpgPath = path.join(outputSubDir, `${baseName}-${width}.jpg`);
+        await sharp(absolutePath)
+          .resize(resizeOptions)
+          .jpeg({ quality: CONFIG.quality.jpg })
+          .toFile(jpgPath);
 
-    // Add to manifest
-    manifest[relativePath] = {
-      original: relativePath,
-      webp: path.relative(CONFIG.inputDir, outputPaths.webp),
-      avif: path.relative(CONFIG.inputDir, outputPaths.avif),
-      dimensions: {
-        original: { width: metadata.width, height: metadata.height },
-        optimized: needsResize
-          ? { width: maxWidth, height: Math.round(metadata.height * (maxWidth / metadata.width)) }
-          : { width: metadata.width, height: metadata.height }
-      },
-      sizes: {
-        original: originalSize,
-        webp: webpSize,
-        avif: avifSize
-      },
-      savings: {
-        webp: { bytes: webpSavings.savings, percentage: webpSavings.percentage },
-        avif: { bytes: avifSavings.savings, percentage: avifSavings.percentage }
+        generatedFiles[width] = {
+          webp: path.relative(CONFIG.inputDir, webpPath),
+          avif: path.relative(CONFIG.inputDir, avifPath),
+          jpg: path.relative(CONFIG.inputDir, jpgPath)
+        };
+
+        console.log(`    ${width}px: WebP ${formatBytes(webpSize)}, AVIF ${formatBytes(avifSize)}`);
       }
-    };
+
+      // Add to manifest with responsive info
+      manifest[relativePath] = {
+        original: relativePath,
+        responsive: generatedFiles,
+        dimensions: {
+          original: { width: metadata.width, height: metadata.height }
+        },
+        sizes: {
+          original: originalSize,
+          totalWebp: totalWebpSize,
+          totalAvif: totalAvifSize
+        }
+      };
+
+    } else {
+      // Standard single-size optimization (original behavior)
+      const outputPaths = {
+        webp: path.join(outputSubDir, `${baseName}.webp`),
+        avif: path.join(outputSubDir, `${baseName}.avif`)
+      };
+
+      // Check if files already exist and skip if not forcing
+      if (!options.force) {
+        const webpExists = await fileExists(outputPaths.webp);
+        const avifExists = await fileExists(outputPaths.avif);
+
+        if (webpExists && avifExists) {
+          console.log(`  Skipping ${filename} (already optimized, use --force to regenerate)`);
+
+          const webpSize = await getFileSize(outputPaths.webp);
+          const avifSize = await getFileSize(outputPaths.avif);
+
+          manifest[relativePath] = {
+            original: relativePath,
+            webp: path.relative(CONFIG.inputDir, outputPaths.webp),
+            avif: path.relative(CONFIG.inputDir, outputPaths.avif),
+            sizes: {
+              original: originalSize,
+              webp: webpSize,
+              avif: avifSize
+            }
+          };
+
+          return { skipped: true };
+        }
+      }
+
+      const needsResize = metadata.width > maxWidth;
+      const resizeOptions = needsResize ? { width: maxWidth, withoutEnlargement: true } : null;
+
+      if (needsResize) {
+        console.log(`    Resizing from ${metadata.width}px to ${maxWidth}px width`);
+      }
+
+      // Create WebP version
+      let webpPipeline = sharp(absolutePath);
+      if (resizeOptions) {
+        webpPipeline = webpPipeline.resize(resizeOptions);
+      }
+      await webpPipeline
+        .webp({ quality: CONFIG.quality.webp })
+        .toFile(outputPaths.webp);
+
+      const webpSize = await getFileSize(outputPaths.webp);
+      const webpSavings = calculateSavings(originalSize, webpSize);
+      console.log(`    WebP: ${formatBytes(webpSize)} (${webpSavings.percentage}% savings)`);
+
+      // Create AVIF version
+      let avifPipeline = sharp(absolutePath);
+      if (resizeOptions) {
+        avifPipeline = avifPipeline.resize(resizeOptions);
+      }
+      await avifPipeline
+        .avif({ quality: CONFIG.quality.avif })
+        .toFile(outputPaths.avif);
+
+      const avifSize = await getFileSize(outputPaths.avif);
+      const avifSavings = calculateSavings(originalSize, avifSize);
+      console.log(`    AVIF: ${formatBytes(avifSize)} (${avifSavings.percentage}% savings)`);
+
+      totalWebpSize = webpSize;
+      totalAvifSize = avifSize;
+
+      // Add to manifest
+      manifest[relativePath] = {
+        original: relativePath,
+        webp: path.relative(CONFIG.inputDir, outputPaths.webp),
+        avif: path.relative(CONFIG.inputDir, outputPaths.avif),
+        dimensions: {
+          original: { width: metadata.width, height: metadata.height },
+          optimized: needsResize
+            ? { width: maxWidth, height: Math.round(metadata.height * (maxWidth / metadata.width)) }
+            : { width: metadata.width, height: metadata.height }
+        },
+        sizes: {
+          original: originalSize,
+          webp: webpSize,
+          avif: avifSize
+        },
+        savings: {
+          webp: { bytes: webpSavings.savings, percentage: webpSavings.percentage },
+          avif: { bytes: avifSavings.savings, percentage: avifSavings.percentage }
+        }
+      };
+    }
 
     return {
       success: true,
       originalSize,
-      webpSize,
-      avifSize
+      webpSize: totalWebpSize,
+      avifSize: totalAvifSize
     };
 
   } catch (error) {

@@ -119,6 +119,64 @@ function parseMarkdownFile(filename) {
 }
 
 /**
+ * Generate slug from heading text for anchor links
+ */
+function slugifyHeading(text) {
+    return text
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/(^-|-$)/g, '');
+}
+
+/**
+ * Generate Table of Contents from HTML content
+ * Only generates TOC for articles > 1500 words with at least 3 headings
+ */
+function generateTOC(htmlContent, wordCount) {
+    if (wordCount < 1500) return { toc: '', content: htmlContent };
+
+    const headingRegex = /<h([23])>([^<]+)<\/h[23]>/gi;
+    const headings = [];
+    let match;
+
+    while ((match = headingRegex.exec(htmlContent)) !== null) {
+        headings.push({
+            level: parseInt(match[1]),
+            text: match[2],
+            slug: slugifyHeading(match[2])
+        });
+    }
+
+    if (headings.length < 3) return { toc: '', content: htmlContent };
+
+    // Add IDs to headings in content
+    let modifiedContent = htmlContent;
+    headings.forEach(heading => {
+        const regex = new RegExp(`<h${heading.level}>${heading.text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}<\\/h${heading.level}>`, 'i');
+        modifiedContent = modifiedContent.replace(
+            regex,
+            `<h${heading.level} id="${heading.slug}">${heading.text}</h${heading.level}>`
+        );
+    });
+
+    // Generate TOC HTML
+    const tocItems = headings.map(h => {
+        const indent = h.level === 3 ? ' toc__item--h3' : '';
+        return `<li class="toc__item${indent}"><a href="#${h.slug}" class="toc__link">${h.text}</a></li>`;
+    }).join('\n                ');
+
+    const tocHtml = `
+        <nav class="toc" aria-label="Table of contents">
+            <p class="toc__title">Contents</p>
+            <ul class="toc__list">
+                ${tocItems}
+            </ul>
+        </nav>`;
+
+    return { toc: tocHtml, content: modifiedContent };
+}
+
+/**
  * Convert markdown content to HTML
  */
 function markdownToHTML(content) {
@@ -126,34 +184,128 @@ function markdownToHTML(content) {
 }
 
 /**
+ * Extract keywords from content (simple extraction based on category and common terms)
+ */
+function extractKeywords(content, category) {
+    const baseKeywords = ['investing', 'wealth building', 'financial freedom'];
+    const categoryKeywords = {
+        'Airbnb Arbitrage': ['airbnb', 'arbitrage', 'short-term rental', 'passive income', 'rental property'],
+        'Real Estate': ['real estate', 'property investment', 'rental income', 'property management'],
+        'Investing': ['investment strategy', 'portfolio', 'returns', 'cash flow']
+    };
+
+    const keywords = [...baseKeywords, ...(categoryKeywords[category] || [])];
+    return keywords.join(', ');
+}
+
+/**
  * Apply template to post data
  */
-function applyTemplate(template, post) {
-    const htmlContent = markdownToHTML(post.content);
+function applyTemplate(template, post, allPosts = []) {
+    const rawHtmlContent = markdownToHTML(post.content);
     const readTime = calculateReadTime(post.content);
     const wordCount = post.content.trim().split(/\s+/).length;
+
+    // Generate TOC for longer articles
+    const { toc, content: htmlContent } = generateTOC(rawHtmlContent, wordCount);
 
     // Set default values for optional fields
     const image = post.frontmatter.image || '/assets/images/blog-default.jpg';
     const author = post.frontmatter.author || 'Preston Seo';
     const category = post.frontmatter.category || 'Investing';
 
+    // Handle modified date (use frontmatter if provided, otherwise use published date)
+    const modifiedDate = post.frontmatter.modifiedDate
+        ? formatISODate(post.frontmatter.modifiedDate)
+        : formatISODate(post.frontmatter.date);
+
+    // Generate keywords
+    const keywords = post.frontmatter.keywords || extractKeywords(post.content, category);
+
+    // Generate related posts HTML
+    const relatedPostsHtml = generateRelatedPosts(post, allPosts);
+
     // Replace all placeholders
     let html = template
         .replace(/\{\{title\}\}/g, post.frontmatter.title || 'Untitled')
         .replace(/\{\{description\}\}/g, post.frontmatter.description || '')
+        .replace(/\{\{toc\}\}/g, toc)
         .replace(/\{\{content\}\}/g, htmlContent)
         .replace(/\{\{date\}\}/g, formatDate(post.frontmatter.date))
         .replace(/\{\{isoDate\}\}/g, formatISODate(post.frontmatter.date))
+        .replace(/\{\{modifiedDate\}\}/g, modifiedDate)
         .replace(/\{\{author\}\}/g, author)
         .replace(/\{\{category\}\}/g, category)
         .replace(/\{\{image\}\}/g, image)
         .replace(/\{\{readTime\}\}/g, readTime)
         .replace(/\{\{slug\}\}/g, post.slug)
         .replace(/\{\{wordCount\}\}/g, wordCount)
-        .replace(/\{\{relatedPosts\}\}/g, '<!-- Related posts will be added here -->');
+        .replace(/\{\{keywords\}\}/g, keywords)
+        .replace(/\{\{relatedPosts\}\}/g, relatedPostsHtml);
 
     return html;
+}
+
+/**
+ * Generate related posts HTML based on category matching
+ */
+function generateRelatedPosts(currentPost, allPosts, limit = 3) {
+    const relatedPosts = allPosts
+        .filter(post =>
+            post.slug !== currentPost.slug &&
+            post.frontmatter.category === currentPost.frontmatter.category
+        )
+        .slice(0, limit);
+
+    if (relatedPosts.length === 0) {
+        // Fallback to any other posts if no category match
+        const fallbackPosts = allPosts
+            .filter(post => post.slug !== currentPost.slug)
+            .slice(0, limit);
+
+        if (fallbackPosts.length === 0) return '';
+        return generateRelatedPostsMarkup(fallbackPosts);
+    }
+
+    return generateRelatedPostsMarkup(relatedPosts);
+}
+
+/**
+ * Generate the HTML markup for related posts
+ */
+function generateRelatedPostsMarkup(posts) {
+    if (posts.length === 0) return '';
+
+    const postsHtml = posts.map(post => {
+        const image = post.frontmatter.image || '/assets/images/blog-default.jpg';
+        const readTime = calculateReadTime(post.content);
+
+        return `
+            <a href="/blog/${post.slug}.html" class="related-post-item">
+                <div class="related-post-image">
+                    <img src="${image}" alt="${post.frontmatter.title}" loading="lazy">
+                </div>
+                <div class="related-post-content">
+                    <h4 class="related-post-title">${post.frontmatter.title}</h4>
+                    <span class="related-post-meta">${readTime} min read</span>
+                </div>
+            </a>`;
+    }).join('\n');
+
+    return `
+        <aside class="related-posts" aria-label="Related articles">
+            <h3 class="related-posts-title">Related Articles</h3>
+            <div class="related-posts-grid">
+                ${postsHtml}
+            </div>
+        </aside>`;
+}
+
+/**
+ * Convert category name to slug
+ */
+function slugifyCategory(category) {
+    return category.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
 }
 
 /**
@@ -165,14 +317,25 @@ function generateBlogIndex(posts) {
         return new Date(b.frontmatter.date) - new Date(a.frontmatter.date);
     });
 
+    // Extract unique categories
+    const categories = [...new Set(sortedPosts.map(p => p.frontmatter.category || 'Investing'))];
+
+    // Generate category filter HTML
+    const categoryFilterHTML = categories.length > 1 ? `
+                <nav class="category-filter" aria-label="Filter by category">
+                    <button class="category-filter__btn active" data-category="all">All</button>
+                    ${categories.map(cat => `<button class="category-filter__btn" data-category="${slugifyCategory(cat)}">${cat}</button>`).join('\n                    ')}
+                </nav>` : '';
+
     const postCardsHTML = sortedPosts.map(post => {
         const image = post.frontmatter.image || '/assets/images/blog-default.jpg';
         const readTime = calculateReadTime(post.content);
         const category = post.frontmatter.category || 'Investing';
+        const categorySlug = slugifyCategory(category);
         const date = formatDate(post.frontmatter.date);
 
         return `
-            <a href="/blog/${post.slug}.html" class="minimal-post-item">
+            <a href="/blog/${post.slug}.html" class="minimal-post-item" data-category="${categorySlug}">
                 <div class="minimal-post-image">
                     <img src="${image}" alt="${post.frontmatter.title}" loading="lazy">
                 </div>
@@ -348,6 +511,8 @@ function generateBlogIndex(posts) {
         <!-- Posts List -->
         <section class="minimal-posts-section">
             <div class="container-custom">
+                ${categoryFilterHTML}
+
                 <div class="minimal-posts-list">
                     ${postCardsHTML}
                 </div>
@@ -389,6 +554,35 @@ function generateBlogIndex(posts) {
     </footer>
 
     <script defer src="/assets/js/main.js"></script>
+    <script>
+        // Category filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('[data-category]');
+            const postItems = document.querySelectorAll('.minimal-post-item[data-category]');
+
+            filterButtons.forEach(btn => {
+                if (btn.classList.contains('category-filter__btn')) {
+                    btn.addEventListener('click', () => {
+                        const category = btn.dataset.category;
+
+                        // Update active state
+                        document.querySelectorAll('.category-filter__btn').forEach(b => b.classList.remove('active'));
+                        btn.classList.add('active');
+
+                        // Filter posts
+                        postItems.forEach(item => {
+                            const itemCategory = item.dataset.category;
+                            if (category === 'all' || itemCategory === category) {
+                                item.style.display = '';
+                            } else {
+                                item.style.display = 'none';
+                            }
+                        });
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>`;
 
@@ -435,7 +629,7 @@ function build() {
 
     for (const post of posts) {
         try {
-            const html = applyTemplate(template, post);
+            const html = applyTemplate(template, post, posts);
             const outputPath = path.join(OUTPUT_DIR, `${post.slug}.html`);
 
             fs.writeFileSync(outputPath, html);

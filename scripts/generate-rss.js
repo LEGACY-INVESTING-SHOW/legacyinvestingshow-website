@@ -21,7 +21,7 @@ const FEED_TITLE = 'Legacy Investing Show Blog';
 const FEED_DESCRIPTION = 'Learn Airbnb arbitrage, short-term rental investing, and passive income strategies from Legacy Investing Show.';
 const FEED_LANGUAGE = 'en-us';
 const FEED_CATEGORY = 'Business/Investing';
-const FEED_MANAGING_EDITOR = 'info@legacyinvestingshow.com (Preston Guzdar)';
+const FEED_MANAGING_EDITOR = 'info@legacyinvestingshow.com (Preston Seo)';
 const FEED_WEBMASTER = 'info@legacyinvestingshow.com (Legacy Investing Show)';
 
 /**
@@ -75,7 +75,7 @@ function extractPostMetadata(filePath, fileName) {
     }
 
     // Extract author
-    let author = 'Preston Guzdar';
+    let author = 'Preston Seo';
     const authorMatch = content.match(/<meta\s+name=["']author["']\s+content=["']([^"']+)["']/i);
     if (authorMatch) {
       author = authorMatch[1];

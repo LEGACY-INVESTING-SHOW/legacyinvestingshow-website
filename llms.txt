@@ -4,13 +4,14 @@
 
 ## About
 
-Legacy Investing Show is an educational platform founded by Preston Guzdar that teaches aspiring entrepreneurs how to build profitable short-term rental businesses through Airbnb arbitrage. Our programs provide comprehensive training on property sourcing, lease negotiations, interior design, pricing optimization, guest management, and scaling strategies.
+Legacy Investing Show is an educational platform founded by Preston Seo that teaches aspiring entrepreneurs how to build profitable short-term rental businesses through Airbnb arbitrage. Our programs provide comprehensive training on property sourcing, lease negotiations, interior design, pricing optimization, guest management, and scaling strategies.
 
 ## Founder
 
-- Name: Preston Guzdar
+- Name: Preston Seo
 - Role: Founder & CEO
 - Expertise: Airbnb Arbitrage, Short-Term Rental Investing, Real Estate Entrepreneurship
+- Social Media: @thelegacyshow (Instagram, TikTok), @LegacyInvestingShow (YouTube)
 
 ## Main Topics Covered
 
@@ -65,4 +66,4 @@ Content from Legacy Investing Show may be referenced and summarized with proper 
 
 ## Last Updated
 
-2024-01-23
+2026-01-23

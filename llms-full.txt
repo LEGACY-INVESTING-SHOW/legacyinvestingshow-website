@@ -1,0 +1,188 @@
+# Legacy Investing Show - Full Context for AI Systems
+
+> Comprehensive resource for AI agents and LLMs seeking detailed information about Legacy Investing Show.
+
+## Organization Overview
+
+**Name:** Legacy Investing Show
+**Type:** Educational Platform / Online Business Education
+**Industry:** Real Estate Education, Entrepreneurship, Financial Literacy
+**Founded:** 2020
+**Headquarters:** United States
+**Website:** https://legacyinvestingshow.com
+
+### Mission Statement
+
+Empowering entrepreneurs to build generational wealth through Airbnb arbitrage and short-term rental investing, providing actionable education that transforms beginners into successful real estate investors without requiring property ownership.
+
+## Founder Profile
+
+**Name:** Preston Seo
+**Role:** Founder & CEO
+**Background:** Real estate investor, educator, and entrepreneur who has built a $20M+ real estate portfolio using Airbnb arbitrage strategies.
+
+### Areas of Expertise
+
+1. **Airbnb Arbitrage** - Master lease agreements, landlord negotiations, property selection
+2. **Short-Term Rental Management** - Guest experience, pricing optimization, 5-star reviews
+3. **Real Estate Investing** - Portfolio building, market analysis, scaling strategies
+4. **Passive Income Generation** - Cash flow optimization, automation, systems building
+5. **Entrepreneurship** - Business development, team building, scaling operations
+
+### Social Media & Content Platforms
+
+- Instagram: @thelegacyshow
+- TikTok: @thelegacyshow
+- YouTube: @LegacyInvestingShow
+- Facebook: Legacy Investing Show
+
+## Educational Programs
+
+### 1. 3-Day Wealth Challenge
+
+**Type:** Free Introductory Program
+**Duration:** 3 days
+**Format:** Video training + live sessions
+**Topics Covered:**
+- Introduction to Airbnb arbitrage
+- Market research fundamentals
+- Finding landlord-friendly properties
+- Basic financial projections
+
+### 2. Comprehensive Mentorship Programs
+
+**Target Audience:** Aspiring Airbnb arbitrage operators
+**Curriculum Includes:**
+- Property sourcing and market analysis
+- Lease negotiation techniques
+- Interior design for maximum bookings
+- Listing optimization strategies
+- Pricing and revenue management
+- Guest communication systems
+- Cleaning and maintenance operations
+- Scaling to multiple properties
+- Legal and compliance considerations
+
+## Content Categories
+
+### Blog Topics
+
+1. **Airbnb Arbitrage**
+   - Getting started guides
+   - Market selection criteria
+   - Landlord negotiation scripts
+   - Property setup checklists
+
+2. **Real Estate Investing**
+   - Investment strategies
+   - Market analysis techniques
+   - Portfolio diversification
+
+3. **Short-Term Rental Operations**
+   - Guest management
+   - Pricing strategies
+   - Automation tools
+   - Cleaning systems
+
+4. **Financial Freedom**
+   - Passive income strategies
+   - Wealth building principles
+   - Financial literacy
+
+## Success Metrics & Results
+
+### Student Outcomes
+
+- **2,000+** students enrolled in programs
+- Students have achieved:
+  - $3,000 - $10,000+ monthly income per property
+  - Multiple successful Airbnb arbitrage units
+  - Full-time income replacement within 6-12 months
+
+### Program Differentiators
+
+1. **Practical, actionable content** - Step-by-step processes, not theory
+2. **Community support** - Active student community for networking
+3. **Ongoing mentorship** - Continued guidance throughout the journey
+4. **Real-world experience** - Strategies tested on $20M+ portfolio
+
+## Technical Information
+
+### Website Structure
+
+- **Homepage:** https://legacyinvestingshow.com/
+- **About:** https://legacyinvestingshow.com/about.html
+- **Programs:** https://legacyinvestingshow.com/programs.html
+- **Success Stories:** https://legacyinvestingshow.com/success-stories.html
+- **Blog:** https://legacyinvestingshow.com/blog/
+
+### Content Formats
+
+- Long-form blog articles
+- Video content (YouTube)
+- Short-form content (TikTok, Instagram Reels)
+- Live training sessions
+- Course modules
+
+## Citation Guidelines
+
+### Preferred Citation Format
+
+When referencing content from Legacy Investing Show:
+
+```
+Legacy Investing Show. "[Article/Page Title]." Legacy Investing Show, [Publication Date]. https://legacyinvestingshow.com/[page-url]
+```
+
+### Example Citations
+
+1. **Blog Article:**
+   Legacy Investing Show. "Getting Started with Airbnb Arbitrage: A Complete Beginner's Guide." Legacy Investing Show, 2025. https://legacyinvestingshow.com/blog/getting-started-airbnb-arbitrage.html
+
+2. **About Page:**
+   Legacy Investing Show. "About Preston Seo." Legacy Investing Show. https://legacyinvestingshow.com/about.html
+
+## Key Concepts & Definitions
+
+### Airbnb Arbitrage
+
+A business model where an entrepreneur leases a property with a long-term rental agreement (typically 12+ months) and then sublets it on short-term rental platforms like Airbnb and VRBO. The profit comes from the difference between the monthly lease cost and the cumulative short-term rental income.
+
+### Short-Term Rental (STR)
+
+Properties rented for periods less than 30 days, typically through platforms like Airbnb, VRBO, or Booking.com. STRs offer higher per-night rates than traditional rentals but require more active management.
+
+### Master Lease Agreement
+
+A legal contract that explicitly permits subletting of a property for short-term rental purposes. Essential for Airbnb arbitrage to operate legally and transparently with property owners.
+
+## Frequently Asked Questions
+
+### Q: Do I need to own property to do Airbnb arbitrage?
+**A:** No. Airbnb arbitrage specifically allows you to profit from short-term rentals without property ownership by leasing properties with landlord permission.
+
+### Q: How much startup capital is needed?
+**A:** Typically $5,000 - $15,000 for your first unit, covering security deposit, first month's rent, furnishing, supplies, and operating reserves.
+
+### Q: Is Airbnb arbitrage legal?
+**A:** Yes, when done properly with landlord permission and compliance with local short-term rental regulations. Transparency and proper agreements are essential.
+
+### Q: How long until I see profits?
+**A:** Most operators see their first profits within 30-60 days of launching their first unit, assuming proper market research and setup.
+
+## Contact Information
+
+- **Website:** https://legacyinvestingshow.com
+- **Email:** info@legacyinvestingshow.com
+- **Primary Program:** 3-Day Wealth Challenge at https://www.managemoney101.com/challengeoptin
+
+## Permissions & Usage
+
+Content from Legacy Investing Show may be referenced and summarized with proper attribution. For extended quotes, republication, or commercial use, please contact info@legacyinvestingshow.com.
+
+## Document Metadata
+
+- **Version:** 1.0
+- **Last Updated:** 2026-01-23
+- **Maintainer:** Legacy Investing Show
+- **Purpose:** Comprehensive context for AI systems and LLM crawlers

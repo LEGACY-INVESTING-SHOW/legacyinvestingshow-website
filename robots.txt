@@ -4,13 +4,45 @@
 # Allow all crawlers
 User-agent: *
 Allow: /
-
-# Disallow admin and API paths
 Disallow: /api/
 Disallow: /admin/
+
+# AI Crawlers - Explicit Allow
+User-agent: GPTBot
+Allow: /blog/
+Allow: /about.html
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+User-agent: ClaudeBot
+Allow: /blog/
+Allow: /about.html
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+User-agent: PerplexityBot
+Allow: /blog/
+Allow: /about.html
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+User-agent: Bytespider
+Allow: /blog/
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+User-agent: ChatGPT-User
+Allow: /blog/
+Allow: /about.html
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+User-agent: Google-Extended
+Allow: /
 
 # Sitemap location
 Sitemap: https://legacyinvestingshow.com/sitemap.xml
 
 # LLMs.txt for AI crawlers
-# See: https://legacyinvestingshow.com/llms.txt
+# AI agents: See /llms.txt for site context
+# Full context available at /llms-full.txt

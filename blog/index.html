@@ -123,9 +123,11 @@
         <!-- Posts List -->
         <section class="minimal-posts-section">
             <div class="container-custom">
+                
+
                 <div class="minimal-posts-list">
                     
-            <a href="/blog/getting-started-airbnb-arbitrage.html" class="minimal-post-item">
+            <a href="/blog/getting-started-airbnb-arbitrage.html" class="minimal-post-item" data-category="airbnb-arbitrage">
                 <div class="minimal-post-image">
                     <img src="/assets/images/blog/airbnb-arbitrage-guide.jpg" alt="Getting Started with Airbnb Arbitrage: A Complete Beginner's Guide" loading="lazy">
                 </div>
@@ -176,5 +178,34 @@
     </footer>
 
     <script defer src="/assets/js/main.js"></script>
+    <script>
+        // Category filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('[data-category]');
+            const postItems = document.querySelectorAll('.minimal-post-item[data-category]');
+
+            filterButtons.forEach(btn => {
+                if (btn.classList.contains('category-filter__btn')) {
+                    btn.addEventListener('click', () => {
+                        const category = btn.dataset.category;
+
+                        // Update active state
+                        document.querySelectorAll('.category-filter__btn').forEach(b => b.classList.remove('active'));
+                        btn.classList.add('active');
+
+                        // Filter posts
+                        postItems.forEach(item => {
+                            const itemCategory = item.dataset.category;
+                            if (category === 'all' || itemCategory === category) {
+                                item.style.display = '';
+                            } else {
+                                item.style.display = 'none';
+                            }
+                        });
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>

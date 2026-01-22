@@ -16,14 +16,13 @@ const ROOT_DIR = path.join(__dirname, '..');
 const OUTPUT_FILE = path.join(ROOT_DIR, 'sitemap.xml');
 
 // Static pages with their priorities and change frequencies
+// Note: Removed duplicate entries (/index.html and /blog/index.html) to prevent crawler confusion
 const staticPages = [
   { url: '/', priority: '1.0', changefreq: 'weekly' },
-  { url: '/index.html', priority: '1.0', changefreq: 'weekly' },
   { url: '/about.html', priority: '0.8', changefreq: 'monthly' },
   { url: '/programs.html', priority: '0.9', changefreq: 'weekly' },
   { url: '/success-stories.html', priority: '0.8', changefreq: 'weekly' },
   { url: '/blog/', priority: '0.8', changefreq: 'daily' },
-  { url: '/blog/index.html', priority: '0.8', changefreq: 'daily' },
 ];
 
 /**
@@ -75,6 +74,28 @@ function scanDirectory(dir, basePath = '') {
 }
 
 /**
+ * Extract image URL from HTML file
+ */
+function extractImageFromHtml(filePath) {
+  try {
+    const content = fs.readFileSync(filePath, 'utf8');
+    // Try to find og:image meta tag
+    const ogImageMatch = content.match(/<meta\s+property=["']og:image["']\s+content=["']([^"']+)["']/i);
+    if (ogImageMatch) {
+      let imageUrl = ogImageMatch[1];
+      // If it's a relative URL, make it absolute
+      if (imageUrl.startsWith('/')) {
+        imageUrl = `${SITE_URL}${imageUrl}`;
+      }
+      return imageUrl;
+    }
+    return null;
+  } catch {
+    return null;
+  }
+}
+
+/**
  * Scan blog directory for posts
  */
 function scanBlogPosts() {
@@ -92,11 +113,13 @@ function scanBlogPosts() {
     if (entry.isFile() && entry.name.endsWith('.html') && entry.name !== 'index.html') {
       const fullPath = path.join(blogDir, entry.name);
       const stats = fs.statSync(fullPath);
+      const imageUrl = extractImageFromHtml(fullPath);
       posts.push({
         url: `/blog/${entry.name}`,
         priority: '0.7',
         changefreq: 'monthly',
         lastmod: getW3CDate(stats.mtime),
+        image: imageUrl,
       });
     }
   }
@@ -134,12 +157,14 @@ function generateSitemap() {
       lastmod: post.lastmod,
       changefreq: post.changefreq,
       priority: post.priority,
+      image: post.image,
     });
   }
 
-  // Generate XML
+  // Generate XML with image namespace for enhanced SEO
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-  xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+  xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n';
+  xml += '        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n';
 
   for (const url of urls) {
     xml += '  <url>\n';
@@ -147,6 +172,12 @@ function generateSitemap() {
     xml += `    <lastmod>${url.lastmod}</lastmod>\n`;
     xml += `    <changefreq>${url.changefreq}</changefreq>\n`;
     xml += `    <priority>${url.priority}</priority>\n`;
+    // Add image element if available
+    if (url.image) {
+      xml += '    <image:image>\n';
+      xml += `      <image:loc>${url.image}</image:loc>\n`;
+      xml += '    </image:image>\n';
+    }
     xml += '  </url>\n';
   }
 
