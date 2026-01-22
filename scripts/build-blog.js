@@ -165,7 +165,6 @@ function generateBlogIndex(posts) {
         return new Date(b.frontmatter.date) - new Date(a.frontmatter.date);
     });
 
-    // Generate post cards HTML
     const postCardsHTML = sortedPosts.map(post => {
         const image = post.frontmatter.image || '/assets/images/blog-default.jpg';
         const readTime = calculateReadTime(post.content);
@@ -173,27 +172,22 @@ function generateBlogIndex(posts) {
         const date = formatDate(post.frontmatter.date);
 
         return `
-                    <a href="/blog/${post.slug}.html" class="blog-card-minimal">
-                        <div class="overflow-hidden">
-                            <img src="${image}"
-                                 alt="${post.frontmatter.title}"
-                                 class="blog-card-minimal-image"
-                                 loading="lazy">
-                        </div>
-                        <div class="p-5">
-                            <div class="flex items-center gap-2 mb-2">
-                                <span class="category-label">${category}</span>
-                            </div>
-                            <h2 class="text-base font-semibold mb-2 text-gray-900 group-hover:text-brand-primary transition-colors">
-                                ${post.frontmatter.title}
-                            </h2>
-                            <div class="meta-simple">
-                                <time datetime="${formatISODate(post.frontmatter.date)}">${date}</time>
-                                <span class="mx-1">·</span>
-                                <span>${readTime} min read</span>
-                            </div>
-                        </div>
-                    </a>`;
+            <a href="/blog/${post.slug}.html" class="minimal-post-item">
+                <div class="minimal-post-image">
+                    <img src="${image}" alt="${post.frontmatter.title}" loading="lazy">
+                </div>
+                <div class="minimal-post-content">
+                    <div class="minimal-post-meta">
+                        <span class="minimal-post-category">${category}</span>
+                        <span class="meta-sep">·</span>
+                        <time>${date}</time>
+                        <span class="meta-sep">·</span>
+                        <span>${readTime} min</span>
+                    </div>
+                    <h2 class="minimal-post-title">${post.frontmatter.title}</h2>
+                    <p class="minimal-post-desc">${post.frontmatter.description || ''}</p>
+                </div>
+            </a>`;
     }).join('\n');
 
     // Featured posts (first 3 or those marked as featured)
@@ -239,8 +233,8 @@ function generateBlogIndex(posts) {
     <!-- Primary Meta Tags -->
     <title>Blog | Legacy Investing Show</title>
     <meta name="title" content="Blog | Legacy Investing Show">
-    <meta name="description" content="Learn wealth-building strategies, Airbnb arbitrage tips, tax optimization, and real estate investing insights from Preston Seo and the Legacy Investing Show team.">
-    <meta name="keywords" content="wealth building blog, airbnb arbitrage tips, real estate investing, tax optimization, financial freedom, Preston Seo">
+    <meta name="description" content="Wealth-building strategies, investing insights, and financial freedom tips.">
+    <meta name="keywords" content="wealth building, investing, real estate, financial freedom">
     <meta name="author" content="Preston Seo">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://legacyinvestingshow.com/blog/">
@@ -249,7 +243,7 @@ function generateBlogIndex(posts) {
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://legacyinvestingshow.com/blog/">
     <meta property="og:title" content="Blog | Legacy Investing Show">
-    <meta property="og:description" content="Learn wealth-building strategies, Airbnb arbitrage tips, and real estate investing insights.">
+    <meta property="og:description" content="Wealth-building strategies, investing insights, and financial freedom tips.">
     <meta property="og:image" content="https://legacyinvestingshow.com/assets/images/og-blog.jpg">
     <meta property="og:site_name" content="Legacy Investing Show">
 
@@ -257,11 +251,11 @@ function generateBlogIndex(posts) {
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@thelegacyshow">
     <meta name="twitter:title" content="Blog | Legacy Investing Show">
-    <meta name="twitter:description" content="Learn wealth-building strategies, Airbnb arbitrage tips, and real estate investing insights.">
+    <meta name="twitter:description" content="Wealth-building strategies, investing insights, and financial freedom tips.">
     <meta name="twitter:image" content="https://legacyinvestingshow.com/assets/images/og-blog.jpg">
 
     <!-- Theme Color -->
-    <meta name="theme-color" content="#0a0a0a">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/assets/images/logo.png">
@@ -280,7 +274,7 @@ function generateBlogIndex(posts) {
         "@context": "https://schema.org",
         "@type": "Blog",
         "name": "Legacy Investing Show Blog",
-        "description": "Wealth-building strategies, Airbnb arbitrage tips, and real estate investing insights",
+        "description": "Wealth-building strategies and investing insights",
         "url": "https://legacyinvestingshow.com/blog/",
         "publisher": {
             "@type": "Organization",
@@ -303,168 +297,97 @@ function generateBlogIndex(posts) {
     </script>
 </head>
 <body class="bg-white text-gray-900">
-    <!-- Skip to main content for accessibility -->
-    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-brand-primary text-white px-4 py-2 rounded-lg z-50">
+    <!-- Skip to main content -->
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-gray-900 text-white px-4 py-2 z-50">
         Skip to main content
     </a>
 
-    <!-- Header / Navigation -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-brand-border">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
         <nav class="container-custom" aria-label="Main navigation">
-            <div class="flex items-center justify-between h-16 md:h-20">
-                <!-- Logo -->
-                <a href="/" class="flex items-center gap-2 text-gray-900 font-bold text-lg hover:text-brand-primary transition-colors">
-                    <img src="/assets/images/logo.png" alt="Legacy Investing Show Logo" width="32" height="32" class="w-8 h-8">
-                    <span>Preston Seo | Legacy Investing Show</span>
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="flex items-center gap-2 font-medium text-gray-900 hover:text-gray-700 transition-colors">
+                    <img src="/assets/images/logo.png" alt="Legacy Investing Show Logo" width="28" height="28" class="w-7 h-7">
+                    <span>Legacy Investing Show</span>
                 </a>
 
-                <!-- Desktop Navigation -->
-                <div class="hidden md:flex items-center gap-8">
+                <div class="hidden md:flex items-center gap-6">
                     <a href="/" class="nav-link">Home</a>
                     <a href="/about.html" class="nav-link">About</a>
                     <a href="/programs.html" class="nav-link">Programs</a>
-                    <a href="/success-stories.html" class="nav-link">Student Results</a>
+                    <a href="/success-stories.html" class="nav-link">Results</a>
                     <a href="/blog/" class="nav-link nav-link-active">Blog</a>
                 </div>
 
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-900" aria-label="Open menu" aria-expanded="false">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                     </svg>
                 </button>
             </div>
 
-            <!-- Mobile Navigation -->
             <div id="mobile-menu" class="hidden md:hidden pb-4">
-                <div class="flex flex-col gap-4">
+                <div class="flex flex-col gap-3">
                     <a href="/" class="nav-link">Home</a>
                     <a href="/about.html" class="nav-link">About</a>
                     <a href="/programs.html" class="nav-link">Programs</a>
-                    <a href="/success-stories.html" class="nav-link">Student Results</a>
+                    <a href="/success-stories.html" class="nav-link">Results</a>
                     <a href="/blog/" class="nav-link nav-link-active">Blog</a>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main id="main" role="main">
-        <!-- Hero Section - Minimal -->
-        <section class="pt-28 md:pt-32 pb-12 md:pb-16">
-            <div class="container-custom">
-                <div class="text-center max-w-2xl mx-auto">
-                    <h1 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
-                        Blog
-                    </h1>
-                    <p class="text-base text-brand-text-muted">
-                        Wealth building strategies, Airbnb arbitrage tips, and real estate investing insights.
-                    </p>
-                </div>
-            </div>
+    <main id="main">
+        <!-- Blog Header -->
+        <section class="minimal-blog-header">
+            <h1 class="minimal-blog-title">Blog</h1>
+            <p class="minimal-blog-subtitle">Thoughts on building wealth and financial freedom.</p>
         </section>
 
-        ${displayFeatured.length > 0 ? `
-        <!-- Featured Post -->
-        <section class="pb-12 md:pb-16">
+        <!-- Posts List -->
+        <section class="minimal-posts-section">
             <div class="container-custom">
-                ${featuredHTML}
-            </div>
-        </section>
-        ` : ''}
-
-        <!-- All Posts -->
-        <section class="section">
-            <div class="container-custom">
-                <h2 class="text-lg font-semibold mb-8 text-gray-900">Latest Articles</h2>
-
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="minimal-posts-list">
                     ${postCardsHTML}
                 </div>
 
                 ${sortedPosts.length === 0 ? `
-                <div class="text-center py-12">
-                    <p class="text-brand-text-muted text-lg">
-                        No blog posts yet. Check back soon for new content!
-                    </p>
+                <div class="minimal-empty">
+                    <p>No posts yet. Check back soon.</p>
                 </div>
                 ` : ''}
             </div>
         </section>
 
-        <!-- CTA Section - Minimal -->
-        <section class="cta-minimal">
-            <div class="container-custom">
-                <h2 class="text-lg font-semibold mb-2 text-gray-900">
-                    Want to learn more?
-                </h2>
-                <p class="text-sm text-brand-text-muted mb-4 max-w-xl mx-auto">
-                    Join my 3-Day Challenge and learn strategies that helped me build a $20M+ portfolio.
-                </p>
-                <a href="https://www.managemoney101.com/challengeoptin" class="btn-outline-minimal">
-                    Join 3-Day Challenge
-                </a>
+        <!-- CTA -->
+        <section class="minimal-cta">
+            <div class="minimal-cta-content">
+                <h2 class="minimal-cta-title">Join the 3-Day Wealth Challenge</h2>
+                <p class="minimal-cta-text">Learn strategies that helped build a $20M+ portfolio.</p>
+                <a href="https://www.managemoney101.com/challengeoptin" class="minimal-cta-button">Get Started</a>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-50 border-t border-brand-border py-12" role="contentinfo">
+    <footer class="minimal-footer">
         <div class="container-custom">
-            <div class="grid md:grid-cols-3 gap-8 mb-8">
-                <!-- Brand -->
-                <div>
-                    <h4 class="text-xl font-bold mb-4 text-gray-900">Preston Seo | Legacy Investing Show</h4>
-                    <p class="text-brand-text-muted text-sm">Building generational wealth through smart investing strategies.</p>
+            <div class="minimal-footer-content">
+                <div class="footer-brand">
+                    <img src="/assets/images/logo.png" alt="Legacy Investing Show" width="32" height="32">
+                    <span>Legacy Investing Show</span>
                 </div>
-
-                <!-- Navigation -->
-                <div>
-                    <h5 class="font-semibold mb-4 text-gray-900">Information</h5>
-                    <nav aria-label="Footer navigation">
-                        <ul class="space-y-2 text-brand-text-muted">
-                            <li><a href="/programs.html" class="hover:text-gray-900 transition-colors">Programs</a></li>
-                            <li><a href="/success-stories.html" class="hover:text-gray-900 transition-colors">Student Results</a></li>
-                            <li><a href="/#faq" class="hover:text-gray-900 transition-colors">FAQ's</a></li>
-                            <li><a href="/blog/" class="hover:text-gray-900 transition-colors">Blog</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <!-- Social -->
-                <div>
-                    <h5 class="font-semibold mb-4 text-gray-900">Socials</h5>
-                    <ul class="space-y-2 text-brand-text-muted">
-                        <li>
-                            <a href="https://www.instagram.com/thelegacyinvestingshow/" target="_blank" rel="noopener" class="hover:text-gray-900 transition-colors">
-                                Instagram - 1.5M Followers
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/@LegacyInvestingShow" target="_blank" rel="noopener" class="hover:text-gray-900 transition-colors">
-                                YouTube - 542k Subscribers
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.tiktok.com/@thelegacyinvestingshow" target="_blank" rel="noopener" class="hover:text-gray-900 transition-colors">
-                                TikTok - 2.6M Followers
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/share/19LQhE6gmh/" target="_blank" rel="noopener" class="hover:text-gray-900 transition-colors">
-                                Facebook - 2.4M Followers
-                            </a>
-                        </li>
-                    </ul>
+                <div class="footer-links">
+                    <a href="/programs.html">Programs</a>
+                    <a href="/success-stories.html">Results</a>
+                    <a href="/blog/">Blog</a>
                 </div>
             </div>
-
-            <div class="border-t border-brand-border pt-8 text-center text-brand-text-muted text-sm">
-                <p>Copyright &copy; 2025 - All Rights Reserved</p>
-            </div>
+            <div class="footer-copyright">Copyright 2025</div>
         </div>
     </footer>
 
-    <!-- Minimal JavaScript -->
     <script defer src="/assets/js/main.js"></script>
 </body>
 </html>`;
