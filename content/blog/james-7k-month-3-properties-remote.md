@@ -149,7 +149,7 @@ This case study reveals exactly how James built a multi-property portfolio acros
 
 ---
 
-## Quick Results: James' Airbnb Arbitrage Numbers {#quick-results}
+## Quick Results: James' Airbnb Arbitrage Numbers
 
 | Metric | Value | Context |
 |--------|-------|---------|
@@ -163,7 +163,7 @@ This case study reveals exactly how James built a multi-property portfolio acros
 
 ---
 
-## James' Background: 24 Years Old with Zero Experience {#background}
+## James' Background: 24 Years Old with Zero Experience
 
 **You don't need decades of experience to build a profitable Airbnb business.** James graduated college just two years before starting his arbitrage journey, with nothing but a consulting job and a dream of building something of his own.
 
@@ -181,7 +181,7 @@ His parents, like many entrepreneur parents, initially suggested the traditional
 
 ---
 
-## The 57-Day Journey: From Zero to Live Property {#journey}
+## The 57-Day Journey: From Zero to Live Property
 
 ### The Challenge: 90 Days or Bust
 
@@ -230,7 +230,7 @@ But here's what really accelerated his progress: once he proved it was possible,
 
 ---
 
-## The Cold Calling Strategy: 20-30 Calls to the First Yes {#cold-calling}
+## The Cold Calling Strategy: 20-30 Calls to the First Yes
 
 ### No Sales Background Required
 
@@ -276,7 +276,7 @@ After that first yes, everything changed. His second and third properties came f
 
 ---
 
-## Remote Property Management: 18-20 Hours Away {#remote}
+## Remote Property Management: 18-20 Hours Away
 
 ### The Challenge: Different State, No Local Presence
 
@@ -343,7 +343,7 @@ The property came partially furnished, which helped keep costs under $10,000. Ja
 
 ---
 
-## Design and Setup: Under $10,000 for a 2,900 Sq Ft Property {#setup}
+## Design and Setup: Under $10,000 for a 2,900 Sq Ft Property
 
 ### The Property: Cabin-Style on 5 Acres
 
@@ -400,7 +400,7 @@ The cabin property's photos highlight:
 
 ---
 
-## Financial Results: The Numbers {#results}
+## Financial Results: The Numbers
 
 ### Property-by-Property Breakdown
 
@@ -441,7 +441,7 @@ James is also considering purchasing properties outright. With arbitrage cash fl
 
 ---
 
-## Key Lessons: What James Learned {#lessons}
+## Key Lessons: What James Learned
 
 ### Lesson 1: Set Aggressive, Written Goals
 
@@ -515,7 +515,7 @@ James' first property took 57 days and 20-30 landlord calls. His second property
 
 ---
 
-## Tools & Systems: James' Tech Stack {#tools}
+## Tools & Systems: James' Tech Stack
 
 **Automation allows James to manage 3 properties on 5-6 hours per week.** Here's his complete toolkit.
 
@@ -587,7 +587,7 @@ This system prevents embarrassing duplicate calls and ensures promising leads do
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
 ### Can you really manage Airbnb properties you've never visited?
 

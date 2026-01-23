@@ -150,7 +150,7 @@ This case study breaks down exactly how Rob built a six-figure Airbnb arbitrage 
 
 ---
 
-## Quick Results: Rob's Airbnb Arbitrage Numbers {#quick-results}
+## Quick Results: Rob's Airbnb Arbitrage Numbers
 
 | Metric | Value | Context |
 |--------|-------|---------|
@@ -164,7 +164,7 @@ This case study breaks down exactly how Rob built a six-figure Airbnb arbitrage 
 
 ---
 
-## Rob's Background: MBA, Sales Experience, and No Time to Waste {#background}
+## Rob's Background: MBA, Sales Experience, and No Time to Waste
 
 **You don't need to quit your job or sacrifice family time to build a substantial Airbnb business.** Rob proved that strategic property selection and ruthless automation can produce six-figure results while maintaining career and family commitments.
 
@@ -182,7 +182,7 @@ His sales background proved invaluable for landlord conversations, but Rob empha
 
 ---
 
-## Market Selection: Year-Round Events vs. Seasonal Tourism {#markets}
+## Market Selection: Year-Round Events vs. Seasonal Tourism
 
 **The best Airbnb market depends on your goals and risk tolerance.** Rob operates in two distinct markets, each with different demand patterns.
 
@@ -229,7 +229,7 @@ This diversification means a slow month in one market doesn't tank his entire po
 
 ---
 
-## The Win-Win Landlord Pitch: Reframing Arbitrage {#cold-calling}
+## The Win-Win Landlord Pitch: Reframing Arbitrage
 
 **The question isn't "how do I convince landlords"—it's "how do I create genuine value for them."** Rob's sales background helped him develop a pitch that addresses landlord concerns before they're raised.
 
@@ -287,7 +287,7 @@ But Rob learned from it. Every objection that landlord raised became a talking p
 
 ---
 
-## Finding Turnkey Properties: Minimal Setup, Maximum Speed {#turnkey}
+## Finding Turnkey Properties: Minimal Setup, Maximum Speed
 
 **Not every property requires $15,000 in furniture and weeks of setup.** Rob found deals that were ready to list almost immediately.
 
@@ -358,7 +358,7 @@ The lesson: turnkey properties exist and dramatically accelerate your timeline. 
 
 ---
 
-## Remote Team Building: Cleaners Know Rockstars {#remote}
+## Remote Team Building: Cleaners Know Rockstars
 
 **Your first great hire unlocks an entire network.** Rob's approach to building remote teams starts with one person: the cleaner.
 
@@ -407,7 +407,7 @@ Rob trusts his team because he established these expectations upfront and select
 
 ---
 
-## Listing Optimization: Photos Are Make or Break {#listing}
+## Listing Optimization: Photos Are Make or Break
 
 **Guests decide on photos before reading a single word.** Rob invested in professional photography that sells the experience, not just the space.
 
@@ -464,7 +464,7 @@ For remote properties, Rob uses the same referral method as team building. Clean
 
 ---
 
-## Financial Results: Six Figures and Growing {#results}
+## Financial Results: Six Figures and Growing
 
 **Year one exceeded $100,000 in gross revenue.** Here's the complete financial picture.
 
@@ -530,7 +530,7 @@ For Rob, arbitrage was the right entry point. Future plans may include acquiring
 
 ---
 
-## Key Lessons: What Rob Learned Building to Six Figures {#lessons}
+## Key Lessons: What Rob Learned Building to Six Figures
 
 ### Lesson 1: Create Your Own Luck Through Action
 
@@ -616,7 +616,7 @@ Guests don't book square footage—they book experiences. Photos should answer: 
 
 ---
 
-## Tools & Systems: Rob's Operations Stack {#tools}
+## Tools & Systems: Rob's Operations Stack
 
 **Automation makes six figures manageable alongside a 9-to-5 and family.** Here's Rob's complete toolkit.
 
@@ -694,7 +694,7 @@ Rob never meets guests in person for check-in. The code is sent automatically, w
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
 ### Is $100K in Airbnb revenue realistic for a side business?
 

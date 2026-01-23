@@ -147,7 +147,7 @@ This case study breaks down exactly how Micah went from analysis paralysis to pr
 
 ---
 
-## Quick Results: Micah's Airbnb Arbitrage Numbers {#quick-results}
+## Quick Results: Micah's Airbnb Arbitrage Numbers
 
 | Metric | Value | Context |
 |--------|-------|---------|
@@ -161,7 +161,7 @@ This case study breaks down exactly how Micah went from analysis paralysis to pr
 
 ---
 
-## Micah's Background: The Introvert Who Couldn't Cold Call {#background}
+## Micah's Background: The Introvert Who Couldn't Cold Call
 
 **You don't need to be a natural salesperson to succeed in Airbnb arbitrage.** Micah Hydrick is proof: as a self-proclaimed introvert who gets nervous with new people, he built a profitable short-term rental business without making a single cold call.
 
@@ -185,7 +185,7 @@ Something about it felt different. The message aligned with what Micah had been 
 
 ---
 
-## The Airbnb Arbitrage Journey: Micah's Timeline {#journey}
+## The Airbnb Arbitrage Journey: Micah's Timeline
 
 ### September 2023: Taking the Leap
 **Situation**: Skeptical but curious after seeing Preston's Instagram video
@@ -241,7 +241,7 @@ Even more impressive: his average nightly rate was $250, but most bookings came 
 
 ---
 
-## The Facebook Marketplace Strategy: A Method for Introverts {#facebook-strategy}
+## The Facebook Marketplace Strategy: A Method for Introverts
 
 **Cold calling isn't the only way to find Airbnb arbitrage properties.** Micah's approach proves you can build this business without ever picking up the phone to call a stranger.
 
@@ -290,7 +290,7 @@ But here's the key insight: Micah put himself out there. He created his own luck
 
 ---
 
-## Setting Up the Property: $15,000 Budget Breakdown {#setup}
+## Setting Up the Property: $15,000 Budget Breakdown
 
 **Professional design doesn't require professional budgets.** Micah furnished his entire property—including outdoor amenities—for approximately $15,000 by leveraging relationships and focusing on impact.
 
@@ -349,7 +349,7 @@ Key photography decisions:
 
 ---
 
-## Results and Numbers: The First Month Breakdown {#results}
+## Results and Numbers: The First Month Breakdown
 
 **March 2024 delivered $5,000 in gross revenue—exceeding projections by over 10%.** Here's the complete financial picture from Micah's first full month operating.
 
@@ -398,7 +398,7 @@ His projection for stabilized operations: $1,500-$2,000 monthly net profit once 
 
 ---
 
-## Key Lessons: What Micah Learned the Hard Way {#lessons}
+## Key Lessons: What Micah Learned the Hard Way
 
 **Every deal teaches something—usually through pain.** Micah's first property came with learning experiences that will save you time and money.
 
@@ -480,7 +480,7 @@ The result? The property wasn't cleaned when Micah took possession. The landlord
 
 ---
 
-## Tools & Systems: Micah's Tech Stack {#tools}
+## Tools & Systems: Micah's Tech Stack
 
 **Automation makes Airbnb arbitrage manageable alongside a full-time job.** Here's what Micah uses to run his operation in under an hour per week.
 
@@ -552,7 +552,7 @@ When his current cleaners relocate, he plans to transition to Turno (formerly Tu
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
 ### Can you really find Airbnb properties without cold calling?
 

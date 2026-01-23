@@ -168,7 +168,7 @@ This case study breaks down exactly how Gary built this Airbnb business, includi
 
 ---
 
-## Quick Results: Gary's Airbnb Arbitrage Numbers {#quick-results}
+## Quick Results: Gary's Airbnb Arbitrage Numbers
 
 | Metric | Value | Context |
 |--------|-------|---------|
@@ -183,7 +183,7 @@ This case study breaks down exactly how Gary built this Airbnb business, includi
 
 ---
 
-## Gary's Background: From Tech Executive to Airbnb Entrepreneur {#background}
+## Gary's Background: From Tech Executive to Airbnb Entrepreneur
 
 **You don't need real estate experience to build a successful Airbnb business.** Gary spent over a decade in tech marketing before discovering that his corporate skills translated directly to short-term rental success.
 
@@ -209,7 +209,7 @@ That experience planted a seed. By 2020, Gary combined his marketing expertise, 
 
 ---
 
-## How to Choose a Market for Airbnb Arbitrage: Gary's Austin Strategy {#market}
+## How to Choose a Market for Airbnb Arbitrage: Gary's Austin Strategy
 
 **Austin is ideal for Airbnb arbitrage because it combines tech industry demand, tourism appeal, and year-round booking potential.** Gary analyzed multiple markets before choosing Austin, focusing on demand drivers, personal connection, and investment fundamentals.
 
@@ -247,7 +247,7 @@ Austin checked every box. The tech presence ensured business travelers, the ente
 
 ---
 
-## Airbnb Arbitrage Strategies That Actually Work: Gary's Playbook {#strategies}
+## Airbnb Arbitrage Strategies That Actually Work: Gary's Playbook
 
 **The difference between profitable and unprofitable Airbnb arbitrage comes down to strategy.** Gary attributes his $35,000/month success to five core strategies that most beginners overlook.
 
@@ -395,7 +395,7 @@ This approach sacrifices some potential revenue for dramatically better guest qu
 
 ---
 
-## Gary's Airbnb Arbitrage Results: The Numbers {#results}
+## Gary's Airbnb Arbitrage Results: The Numbers
 
 **Gary generates $35,000/month in net profit from 7 properties.** Here's the complete financial breakdown of his Airbnb arbitrage business.
 
@@ -449,7 +449,7 @@ Gary's newest listing demonstrates his strategy's effectiveness:
 
 ---
 
-## Airbnb Arbitrage Lessons: What Gary Learned {#lessons}
+## Airbnb Arbitrage Lessons: What Gary Learned
 
 **These five lessons took Gary from tech executive to $35,000/month Airbnb entrepreneur.** Each one came from real experience and could save you months of trial and error.
 
@@ -529,7 +529,7 @@ Gary's newest listing demonstrates his strategy's effectiveness:
 
 ---
 
-## Best Tools for Airbnb Arbitrage: Gary's Tech Stack {#tools}
+## Best Tools for Airbnb Arbitrage: Gary's Tech Stack
 
 **Gary manages 7 properties with minimal daily time using these tools.** Here's the complete tech stack that powers his $35,000/month business.
 
@@ -576,7 +576,7 @@ Gary's newest listing demonstrates his strategy's effectiveness:
 
 ---
 
-## Gary's Advice for Airbnb Arbitrage Beginners {#advice}
+## Gary's Advice for Airbnb Arbitrage Beginners
 
 > "Really just try to get in front of other people that are already in the business... everybody has different experiences and there's many different ways to attack this industry."
 
@@ -635,7 +635,7 @@ There's no single right approach. Gary buys properties with investor partners be
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
 ### How much money can you really make with Airbnb arbitrage?
 
