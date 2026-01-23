@@ -1663,3 +1663,361 @@
 .prose-minimal ul li strong {
   color: var(--text);
 }
+
+/* =====================================
+   READING PROGRESS BAR
+   Shows reading progress at top of blog posts
+   ===================================== */
+.reading-progress {
+  position: fixed;
+  top: 64px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--muted);
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.reading-progress.visible {
+  opacity: 1;
+}
+
+.reading-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary) 0%, var(--primary-light) 100%);
+  width: 0%;
+  transition: width 0.1s ease-out;
+}
+
+/* =====================================
+   PULL QUOTE STYLING
+   For key testimonials in blog posts
+   ===================================== */
+.pull-quote {
+  margin: 48px 0;
+  padding: 32px;
+  background: var(--light);
+  border-left: 4px solid var(--primary);
+  border-radius: 0 12px 12px 0;
+  position: relative;
+}
+
+.pull-quote::before {
+  content: '"';
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-size: 3rem;
+  font-family: Georgia, serif;
+  color: var(--primary);
+  opacity: 0.2;
+  line-height: 1;
+}
+
+.pull-quote p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  color: var(--text);
+  font-style: italic;
+}
+
+.pull-quote cite {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* =====================================
+   MONOSPACE FONT ACCENTS
+   For technical/data elements
+   ===================================== */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+.font-mono {
+  font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
+}
+
+/* Date stamps with monospace */
+.minimal-post-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--primary);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+/* =====================================
+   ENHANCED BLOG INDEX STYLING
+   Larger images, better hover effects
+   ===================================== */
+.minimal-post-item {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 32px;
+  padding: 40px 0;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.minimal-post-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 0;
+  background: var(--primary);
+  transition: height 0.3s ease;
+}
+
+.minimal-post-item:hover::before {
+  height: 100%;
+}
+
+.minimal-post-item:hover {
+  opacity: 1;
+}
+
+.minimal-post-item:hover .minimal-post-title {
+  color: var(--primary);
+}
+
+/* Larger featured image */
+.minimal-post-image {
+  width: 280px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.minimal-post-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.minimal-post-item:hover .minimal-post-image img {
+  transform: scale(1.05);
+}
+
+/* Stronger title hierarchy */
+.minimal-post-title {
+  font-size: 1.375rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  line-height: 1.25;
+  transition: color 0.2s ease;
+}
+
+/* Reading time badge */
+.reading-time-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--muted);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+/* =====================================
+   ENHANCED STATISTICS CARDS
+   With subtle animations
+   ===================================== */
+.stat-card {
+  background: var(--light);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px 20px;
+  text-align: center;
+  transition: all 0.3s var(--ease-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary) 0%, var(--primary-light) 100%);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 8px 24px rgba(5, 150, 105, 0.12);
+  transform: translateY(-4px);
+}
+
+.stat-card:hover::before {
+  transform: scaleX(1);
+}
+
+.stat-card .stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.2;
+  margin-bottom: 6px;
+  letter-spacing: -0.02em;
+}
+
+/* =====================================
+   STICKY TABLE OF CONTENTS (Sidebar)
+   For longer articles
+   ===================================== */
+.article-with-toc {
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  gap: 48px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.toc-sidebar {
+  position: sticky;
+  top: 100px;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+  align-self: start;
+}
+
+.toc-sidebar .toc {
+  padding: 20px;
+  background: var(--light);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.toc-sidebar .toc__title {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.toc-sidebar .toc__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toc-sidebar .toc__item {
+  margin-bottom: 8px;
+  padding: 0;
+  border-left: none;
+}
+
+.toc-sidebar .toc__link {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 4px 0 4px 12px;
+  display: block;
+  border-left: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.toc-sidebar .toc__link:hover,
+.toc-sidebar .toc__link.active {
+  color: var(--text);
+  border-left-color: var(--primary);
+}
+
+/* Mobile: hide sidebar TOC */
+@media (max-width: 900px) {
+  .article-with-toc {
+    grid-template-columns: 1fr;
+  }
+
+  .toc-sidebar {
+    display: none;
+  }
+}
+
+/* =====================================
+   DECORATIVE CORNER BRACKETS ON HOVER
+   Subtle tech aesthetic
+   ===================================== */
+.hover-brackets {
+  position: relative;
+}
+
+.hover-brackets::after {
+  content: '┐';
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-family: monospace;
+  font-size: 1.25rem;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  color: var(--primary);
+}
+
+.hover-brackets::before {
+  content: '└';
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  font-family: monospace;
+  font-size: 1.25rem;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  color: var(--primary);
+}
+
+.hover-brackets:hover::after,
+.hover-brackets:hover::before {
+  opacity: 1;
+}
+
+/* =====================================
+   MOBILE RESPONSIVE ADJUSTMENTS
+   ===================================== */
+@media (max-width: 768px) {
+  .minimal-post-item {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .minimal-post-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .minimal-post-title {
+    font-size: 1.125rem;
+  }
+
+  .pull-quote {
+    padding: 24px;
+    margin: 32px 0;
+  }
+
+  .pull-quote p {
+    font-size: 1.0625rem;
+  }
+
+  .reading-progress {
+    top: 56px;
+  }
+}

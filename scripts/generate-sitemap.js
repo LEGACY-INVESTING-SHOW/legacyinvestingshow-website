@@ -15,14 +15,15 @@ const SITE_URL = process.env.SITE_URL || 'https://legacyinvestingshow.com';
 const ROOT_DIR = path.join(__dirname, '..');
 const OUTPUT_FILE = path.join(ROOT_DIR, 'sitemap.xml');
 
-// Static pages with their priorities and change frequencies
+// Static pages
 // Note: Removed duplicate entries (/index.html and /blog/index.html) to prevent crawler confusion
+// Note: changefreq and priority are ignored by Google, so we only use lastmod
 const staticPages = [
-  { url: '/', priority: '1.0', changefreq: 'weekly' },
-  { url: '/about.html', priority: '0.8', changefreq: 'monthly' },
-  { url: '/programs.html', priority: '0.9', changefreq: 'weekly' },
-  { url: '/success-stories.html', priority: '0.8', changefreq: 'weekly' },
-  { url: '/blog/', priority: '0.8', changefreq: 'daily' },
+  { url: '/' },
+  { url: '/about.html' },
+  { url: '/programs.html' },
+  { url: '/success-stories.html' },
+  { url: '/blog/' },
 ];
 
 /**
@@ -116,8 +117,6 @@ function scanBlogPosts() {
       const imageUrl = extractImageFromHtml(fullPath);
       posts.push({
         url: `/blog/${entry.name}`,
-        priority: '0.7',
-        changefreq: 'monthly',
         lastmod: getW3CDate(stats.mtime),
         image: imageUrl,
       });
@@ -144,8 +143,6 @@ function generateSitemap() {
     urls.push({
       loc: `${SITE_URL}${page.url}`,
       lastmod: today,
-      changefreq: page.changefreq,
-      priority: page.priority,
     });
   }
 
@@ -155,8 +152,6 @@ function generateSitemap() {
     urls.push({
       loc: `${SITE_URL}${post.url}`,
       lastmod: post.lastmod,
-      changefreq: post.changefreq,
-      priority: post.priority,
       image: post.image,
     });
   }
@@ -170,8 +165,6 @@ function generateSitemap() {
     xml += '  <url>\n';
     xml += `    <loc>${url.loc}</loc>\n`;
     xml += `    <lastmod>${url.lastmod}</lastmod>\n`;
-    xml += `    <changefreq>${url.changefreq}</changefreq>\n`;
-    xml += `    <priority>${url.priority}</priority>\n`;
     // Add image element if available
     if (url.image) {
       xml += '    <image:image>\n';

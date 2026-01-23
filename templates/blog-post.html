@@ -212,6 +212,11 @@
         </nav>
     </header>
 
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress" aria-hidden="true">
+        <div class="reading-progress-bar"></div>
+    </div>
+
     <main id="main">
         <!-- Article Header -->
         <article class="minimal-article">
@@ -314,5 +319,39 @@
     </footer>
 
     <script defer src="/assets/js/main.js"></script>
+
+    <!-- Reading Progress Bar Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const progressBar = document.querySelector('.reading-progress-bar');
+            const progressContainer = document.querySelector('.reading-progress');
+            const article = document.querySelector('.minimal-article');
+
+            if (!progressBar || !article) return;
+
+            function updateProgress() {
+                const articleRect = article.getBoundingClientRect();
+                const articleTop = articleRect.top + window.scrollY;
+                const articleHeight = article.offsetHeight;
+                const windowHeight = window.innerHeight;
+                const scrolled = window.scrollY - articleTop + windowHeight * 0.3;
+                const total = articleHeight - windowHeight * 0.3;
+
+                // Show progress bar when scrolled into article
+                if (window.scrollY > articleTop - windowHeight) {
+                    progressContainer.classList.add('visible');
+                } else {
+                    progressContainer.classList.remove('visible');
+                }
+
+                // Calculate progress percentage
+                const progress = Math.min(Math.max((scrolled / total) * 100, 0), 100);
+                progressBar.style.width = progress + '%';
+            }
+
+            window.addEventListener('scroll', updateProgress, { passive: true });
+            updateProgress();
+        });
+    </script>
 </body>
 </html>

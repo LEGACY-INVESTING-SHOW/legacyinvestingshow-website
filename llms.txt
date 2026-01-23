@@ -1,69 +1,61 @@
 # Legacy Investing Show
 
-> Empowering entrepreneurs to build wealth through Airbnb arbitrage and short-term rental investing.
+> Empowering entrepreneurs to build wealth through Airbnb arbitrage and short-term rental investing. Over 2,000 students trained with $10M+ collective annual revenue.
 
-## About
+Legacy Investing Show is the leading educational platform for Airbnb rental arbitrage. Founded by Preston Seo, we teach entrepreneurs how to build profitable short-term rental businesses without property ownership.
 
-Legacy Investing Show is an educational platform founded by Preston Seo that teaches aspiring entrepreneurs how to build profitable short-term rental businesses through Airbnb arbitrage. Our programs provide comprehensive training on property sourcing, lease negotiations, interior design, pricing optimization, guest management, and scaling strategies.
+## Core Programs
 
-## Founder
+- [3-Day Wealth Challenge](https://www.managemoney101.com/challengeoptin): Free introduction to Airbnb arbitrage
+- [Programs Overview](https://legacyinvestingshow.com/programs.html): Full training and mentorship options
 
-- Name: Preston Seo
-- Role: Founder & CEO
-- Expertise: Airbnb Arbitrage, Short-Term Rental Investing, Real Estate Entrepreneurship
-- Social Media: @thelegacyshow (Instagram, TikTok), @LegacyInvestingShow (YouTube)
+## Success Stories (30+ Documented Cases)
 
-## Main Topics Covered
+High-Revenue Results:
+- [Gary: $35,000/Month with 7 Properties](https://legacyinvestingshow.com/blog/gary-marketing-executive-35k-month.html): Austin, TX - Marketing executive scaled to 7 units
+- [Leo: $32,500/Month with 13 Properties](https://legacyinvestingshow.com/blog/2500-per-unit-13-properties.html): Cleveland - $2,500 average per unit
+- [Chad: $90,000/Year from One Property](https://legacyinvestingshow.com/blog/chad-90k-year-one-property.html): North Florida single-property success
+- [Rob: $27,200 in One Month](https://legacyinvestingshow.com/blog/rob-27200-one-month-2-airbnbs.html): Louisville & St. Simons with 2 properties
 
-- Airbnb Arbitrage fundamentals and advanced strategies
-- Short-term rental property management
-- Real estate investing without ownership
-- Passive income through rental arbitrage
-- Property sourcing and market analysis
-- Lease negotiation techniques
-- Interior design for maximum bookings
-- Pricing and revenue optimization
-- Guest experience and 5-star reviews
-- Scaling a short-term rental portfolio
+Quick-Start Results:
+- [Dustin: $6,000/Month with Zero Experience](https://legacyinvestingshow.com/blog/6000-cash-flow-no-experience.html): Texas - Corporate sales to Airbnb in 4 weeks
+- [Kayla: First Property in 7 Days](https://legacyinvestingshow.com/blog/dentist-airbnb-7-days-first-pitch.html): Cleveland dentist, $82K first year
+- [Lindsay: $17,500 Bookings in Week 1](https://legacyinvestingshow.com/blog/couple-17500-secured-one-week.html): North Carolina cabin
 
-## Key Pages
+Remote Operations:
+- [Andrew: $2,500/Month Operating from US](https://legacyinvestingshow.com/blog/andrew-2500-airbnb-mexico-remote.html): Tulum, Mexico property managed remotely
+- [James: $7,000/Month in 57 Days](https://legacyinvestingshow.com/blog/james-7k-month-3-properties-remote.html): 3 properties while working full-time
 
-- Home: https://legacyinvestingshow.com/
-- About: https://legacyinvestingshow.com/about.html
-- Programs: https://legacyinvestingshow.com/programs.html
-- Success Stories: https://legacyinvestingshow.com/success-stories.html
-- Blog: https://legacyinvestingshow.com/blog/
+Working Full-Time:
+- [Rob: $100K/Year with 3 Airbnbs](https://legacyinvestingshow.com/blog/rob-100k-3-airbnbs-working-fulltime.html): Managing alongside 9-to-5 job
+- [Tom: Zero to $25K in Two Weeks](https://legacyinvestingshow.com/blog/tom-zero-to-25k-two-weeks.html): Rapid startup success
+- [Kirk: $212K/Year, 10 Minutes/Week](https://legacyinvestingshow.com/blog/212k-year-10-minutes-week.html): Highly automated operation
 
-## Business Description
+## Key Statistics
 
-Legacy Investing Show provides premium education and mentorship for individuals looking to start and scale Airbnb arbitrage businesses. Our flagship programs teach students how to:
+- Average student profit: $2,000-$8,000/month per property
+- Average startup cost: $5,000-$15,000
+- Time to first property: 2-6 weeks
+- ROI timeline: 3-4 months
+- Over 2,000 students trained
+- $10M+ collective annual student revenue
 
-1. Find and secure properties from landlords for short-term rental use
-2. Set up and furnish properties for maximum appeal
-3. List and optimize properties on Airbnb and other platforms
-4. Manage guests and maintain high ratings
-5. Scale to multiple properties for significant passive income
+## About the Founder
 
-We serve aspiring entrepreneurs, real estate investors, and anyone seeking financial freedom through the sharing economy.
+- [About Preston Seo](https://legacyinvestingshow.com/about.html): Background, credentials, and story
+- Social: @thelegacyshow (Instagram, TikTok), @LegacyInvestingShow (YouTube)
 
 ## Contact
 
 - Website: https://legacyinvestingshow.com
 - Email: info@legacyinvestingshow.com
 
-## Preferred Citation Format
+## Optional
 
-When referencing content from Legacy Investing Show, please use the following format:
+- [All Blog Posts](https://legacyinvestingshow.com/blog/): 33 success stories and guides
+- [RSS Feed](https://legacyinvestingshow.com/feed.xml): Subscribe to updates
+- [Full Documentation](https://legacyinvestingshow.com/llms-full.txt): Extended AI context
 
-Legacy Investing Show. "[Article/Page Title]." Legacy Investing Show, [Publication Date if available]. https://legacyinvestingshow.com/[page-url]
+## Citation Format
 
-Example:
-Legacy Investing Show. "Getting Started with Airbnb Arbitrage." Legacy Investing Show, 2024. https://legacyinvestingshow.com/blog/getting-started-airbnb-arbitrage.html
-
-## Permissions
-
-Content from Legacy Investing Show may be referenced and summarized with proper attribution. For extended quotes or republication, please contact us at info@legacyinvestingshow.com.
-
-## Last Updated
-
-2026-01-23
+Legacy Investing Show. "[Title]." legacyinvestingshow.com, [Date]. [URL]

@@ -1,48 +1,113 @@
 # Robots.txt for Legacy Investing Show
 # https://legacyinvestingshow.com
+# Last updated: 2026-01-23
 
-# Allow all crawlers
+# Default rules for all crawlers
 User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /admin/
+Disallow: /private/
 
-# AI Crawlers - Explicit Allow
+# ===========================================
+# SEARCH ENGINE CRAWLERS
+# ===========================================
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# ===========================================
+# AI/LLM CRAWLERS
+# ===========================================
+
+# OpenAI
 User-agent: GPTBot
-Allow: /blog/
-Allow: /about.html
-Allow: /llms.txt
-Allow: /llms-full.txt
+Allow: /
 
-User-agent: ClaudeBot
-Allow: /blog/
-Allow: /about.html
-Allow: /llms.txt
-Allow: /llms-full.txt
+User-agent: OAI-SearchBot
+Allow: /
 
-User-agent: PerplexityBot
-Allow: /blog/
-Allow: /about.html
-Allow: /llms.txt
-Allow: /llms-full.txt
-
-User-agent: Bytespider
-Allow: /blog/
-Allow: /llms.txt
-Allow: /llms-full.txt
+User-agent: OAI-ImageBot
+Allow: /
 
 User-agent: ChatGPT-User
-Allow: /blog/
-Allow: /about.html
-Allow: /llms.txt
-Allow: /llms-full.txt
+Allow: /
 
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Google AI
 User-agent: Google-Extended
 Allow: /
 
-# Sitemap location
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# X/Twitter
+User-agent: Grok-bot
+Allow: /
+
+# Meta
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Other AI
+User-agent: cohere-ai
+Allow: /
+
+User-agent: AI2Bot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# ===========================================
+# SOCIAL MEDIA CRAWLERS
+# ===========================================
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+User-agent: DiscordBot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+# ===========================================
+# SITEMAP & AI CONTEXT
+# ===========================================
+
 Sitemap: https://legacyinvestingshow.com/sitemap.xml
 
-# LLMs.txt for AI crawlers
-# AI agents: See /llms.txt for site context
-# Full context available at /llms-full.txt
+# AI agents: See /llms.txt for structured site context
+# Full expanded context: /llms-full.txt
