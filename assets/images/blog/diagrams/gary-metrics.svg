@@ -1,0 +1,40 @@
+<svg viewBox="0 0 800 180" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .metric-box { fill: #f8fafc; stroke: #e2e8f0; stroke-width: 1; }
+    .metric-value { font-family: system-ui, -apple-system, sans-serif; font-size: 28px; font-weight: bold; fill: #6366f1; }
+    .metric-label { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; fill: #6b7280; }
+    .metric-icon { fill: #6366f1; opacity: 0.2; }
+  </style>
+
+  <!-- Metric Card 1: Monthly Cash Flow -->
+  <g transform="translate(10, 10)">
+    <rect width="185" height="160" rx="12" class="metric-box"/>
+    <text x="92" y="75" text-anchor="middle" class="metric-value">$35K</text>
+    <text x="92" y="100" text-anchor="middle" class="metric-label">Monthly Cash Flow</text>
+    <text x="92" y="120" text-anchor="middle" class="metric-label" style="fill: #22c55e;">+$5K per property</text>
+  </g>
+
+  <!-- Metric Card 2: Properties -->
+  <g transform="translate(205, 10)">
+    <rect width="185" height="160" rx="12" class="metric-box"/>
+    <text x="92" y="75" text-anchor="middle" class="metric-value">7</text>
+    <text x="92" y="100" text-anchor="middle" class="metric-label">Properties Managed</text>
+    <text x="92" y="120" text-anchor="middle" class="metric-label" style="fill: #6366f1;">Austin, Texas</text>
+  </g>
+
+  <!-- Metric Card 3: Gross Per Property -->
+  <g transform="translate(400, 10)">
+    <rect width="185" height="160" rx="12" class="metric-box"/>
+    <text x="92" y="75" text-anchor="middle" class="metric-value">$10K</text>
+    <text x="92" y="100" text-anchor="middle" class="metric-label">Gross Per Property</text>
+    <text x="92" y="120" text-anchor="middle" class="metric-label" style="fill: #f59e0b;">Monthly Target</text>
+  </g>
+
+  <!-- Metric Card 4: Profit Margin -->
+  <g transform="translate(595, 10)">
+    <rect width="185" height="160" rx="12" class="metric-box"/>
+    <text x="92" y="75" text-anchor="middle" class="metric-value">50%</text>
+    <text x="92" y="100" text-anchor="middle" class="metric-label">Profit Margin</text>
+    <text x="92" y="120" text-anchor="middle" class="metric-label" style="fill: #22c55e;">After All Expenses</text>
+  </g>
+</svg>

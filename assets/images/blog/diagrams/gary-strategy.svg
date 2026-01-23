@@ -1,0 +1,69 @@
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .strategy-box { fill: white; stroke: #e2e8f0; stroke-width: 2; }
+    .strategy-title { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; font-weight: 600; fill: #1f2937; }
+    .strategy-text { font-family: system-ui, -apple-system, sans-serif; font-size: 11px; fill: #6b7280; }
+    .center-circle { fill: #6366f1; }
+    .center-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; font-weight: bold; fill: white; }
+    .connector { stroke: #cbd5e1; stroke-width: 2; fill: none; }
+    .icon { fill: #6366f1; }
+  </style>
+
+  <text x="350" y="30" text-anchor="middle" font-family="system-ui" font-size="18" font-weight="bold" fill="#1f2937">Gary's 5-Pillar Strategy Framework</text>
+
+  <!-- Central circle -->
+  <circle cx="350" cy="210" r="55" class="center-circle"/>
+  <text x="350" y="205" text-anchor="middle" class="center-text">Premium</text>
+  <text x="350" y="222" text-anchor="middle" class="center-text">Airbnb</text>
+
+  <!-- Connectors -->
+  <line x1="295" y1="210" x2="180" y2="120" class="connector"/>
+  <line x1="405" y1="210" x2="520" y2="120" class="connector"/>
+  <line x1="295" y1="210" x2="180" y2="300" class="connector"/>
+  <line x1="405" y1="210" x2="520" y2="300" class="connector"/>
+  <line x1="350" y1="265" x2="350" y2="340" class="connector"/>
+
+  <!-- Strategy 1: Market Selection (Top Left) -->
+  <g transform="translate(30, 60)">
+    <rect width="150" height="90" rx="10" class="strategy-box"/>
+    <text x="75" y="30" text-anchor="middle" class="strategy-title">Market Selection</text>
+    <text x="75" y="50" text-anchor="middle" class="strategy-text">Invest where you'd</text>
+    <text x="75" y="65" text-anchor="middle" class="strategy-text">vacation + tech hubs</text>
+    <text x="75" y="80" text-anchor="middle" class="strategy-text" style="fill: #6366f1;">Austin, TX</text>
+  </g>
+
+  <!-- Strategy 2: Demographics (Top Right) -->
+  <g transform="translate(520, 60)">
+    <rect width="150" height="90" rx="10" class="strategy-box"/>
+    <text x="75" y="30" text-anchor="middle" class="strategy-title">Target Demographics</text>
+    <text x="75" y="50" text-anchor="middle" class="strategy-text">Design for specific</text>
+    <text x="75" y="65" text-anchor="middle" class="strategy-text">guest types</text>
+    <text x="75" y="80" text-anchor="middle" class="strategy-text" style="fill: #6366f1;">Male vs Female focus</text>
+  </g>
+
+  <!-- Strategy 3: Rare Amenities (Bottom Left) -->
+  <g transform="translate(30, 260)">
+    <rect width="150" height="90" rx="10" class="strategy-box"/>
+    <text x="75" y="30" text-anchor="middle" class="strategy-title">Rare Amenities</text>
+    <text x="75" y="50" text-anchor="middle" class="strategy-text">Pool, sauna, jacuzzi</text>
+    <text x="75" y="65" text-anchor="middle" class="strategy-text">game rooms, 15+ guests</text>
+    <text x="75" y="80" text-anchor="middle" class="strategy-text" style="fill: #6366f1;">Reduce competition</text>
+  </g>
+
+  <!-- Strategy 4: Quality Pricing (Bottom Right) -->
+  <g transform="translate(520, 260)">
+    <rect width="150" height="90" rx="10" class="strategy-box"/>
+    <text x="75" y="30" text-anchor="middle" class="strategy-title">Quality Pricing</text>
+    <text x="75" y="50" text-anchor="middle" class="strategy-text">Lower early, book</text>
+    <text x="75" y="65" text-anchor="middle" class="strategy-text">advance planners</text>
+    <text x="75" y="80" text-anchor="middle" class="strategy-text" style="fill: #6366f1;">Better guests</text>
+  </g>
+
+  <!-- Strategy 5: No Monthly Rentals (Bottom Center) -->
+  <g transform="translate(275, 350)">
+    <rect width="150" height="65" rx="10" class="strategy-box"/>
+    <text x="75" y="25" text-anchor="middle" class="strategy-title">Avoid Long Stays</text>
+    <text x="75" y="45" text-anchor="middle" class="strategy-text">No monthly rentals</text>
+    <text x="75" y="58" text-anchor="middle" class="strategy-text" style="fill: #ef4444;">More turnover = less issues</text>
+  </g>
+</svg>

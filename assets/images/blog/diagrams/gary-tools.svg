@@ -1,0 +1,60 @@
+<svg viewBox="0 0 700 280" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .tool-card { fill: white; stroke: #e2e8f0; stroke-width: 2; }
+    .tool-name { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; font-weight: 600; fill: #1f2937; }
+    .tool-purpose { font-family: system-ui, -apple-system, sans-serif; font-size: 11px; fill: #6b7280; }
+    .category-label { font-family: system-ui, -apple-system, sans-serif; font-size: 10px; font-weight: 600; fill: white; }
+    .category-bg { rx: 4; }
+  </style>
+
+  <text x="350" y="30" text-anchor="middle" font-family="system-ui" font-size="18" font-weight="bold" fill="#1f2937">Gary's Tech Stack for 7 Properties</text>
+
+  <!-- Row 1: Pricing & Messaging -->
+  <g transform="translate(20, 55)">
+    <!-- Price Labs -->
+    <rect width="155" height="95" rx="10" class="tool-card"/>
+    <rect x="10" y="10" width="60" height="20" fill="#6366f1" class="category-bg"/>
+    <text x="40" y="24" text-anchor="middle" class="category-label">PRICING</text>
+    <text x="77" y="55" text-anchor="middle" class="tool-name">Price Labs</text>
+    <text x="77" y="72" text-anchor="middle" class="tool-purpose">Dynamic pricing</text>
+    <text x="77" y="85" text-anchor="middle" class="tool-purpose">optimization</text>
+  </g>
+
+  <g transform="translate(185, 55)">
+    <!-- Hospitable -->
+    <rect width="155" height="95" rx="10" class="tool-card"/>
+    <rect x="10" y="10" width="75" height="20" fill="#22c55e" class="category-bg"/>
+    <text x="47" y="24" text-anchor="middle" class="category-label">MESSAGING</text>
+    <text x="77" y="55" text-anchor="middle" class="tool-name">Hospitable</text>
+    <text x="77" y="72" text-anchor="middle" class="tool-purpose">Automated guest</text>
+    <text x="77" y="85" text-anchor="middle" class="tool-purpose">communication</text>
+  </g>
+
+  <g transform="translate(350, 55)">
+    <!-- Turno -->
+    <rect width="155" height="95" rx="10" class="tool-card"/>
+    <rect x="10" y="10" width="70" height="20" fill="#f59e0b" class="category-bg"/>
+    <text x="45" y="24" text-anchor="middle" class="category-label">CLEANING</text>
+    <text x="77" y="55" text-anchor="middle" class="tool-name">Turno</text>
+    <text x="77" y="72" text-anchor="middle" class="tool-purpose">Cleaning team</text>
+    <text x="77" y="85" text-anchor="middle" class="tool-purpose">coordination</text>
+  </g>
+
+  <g transform="translate(515, 55)">
+    <!-- Air DNA -->
+    <rect width="155" height="95" rx="10" class="tool-card"/>
+    <rect x="10" y="10" width="70" height="20" fill="#ef4444" class="category-bg"/>
+    <text x="45" y="24" text-anchor="middle" class="category-label">RESEARCH</text>
+    <text x="77" y="55" text-anchor="middle" class="tool-name">Air DNA</text>
+    <text x="77" y="72" text-anchor="middle" class="tool-purpose">Market data &amp;</text>
+    <text x="77" y="85" text-anchor="middle" class="tool-purpose">analysis</text>
+  </g>
+
+  <!-- Row 2: Automation benefit -->
+  <g transform="translate(100, 175)">
+    <rect width="500" height="80" rx="12" fill="#f0fdf4" stroke="#86efac" stroke-width="2"/>
+    <text x="250" y="35" text-anchor="middle" font-family="system-ui" font-size="14" font-weight="600" fill="#166534">Automation Benefit</text>
+    <text x="250" y="55" text-anchor="middle" font-family="system-ui" font-size="12" fill="#166534">With these tools, Gary manages 7+ properties without being consumed by daily operations.</text>
+    <text x="250" y="70" text-anchor="middle" font-family="system-ui" font-size="12" fill="#166534">Goal: Scale to 20-30 properties per market with minimal additional effort.</text>
+  </g>
+</svg>

@@ -1,0 +1,73 @@
+<svg viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .timeline-line { stroke: url(#timelineGradient); stroke-width: 4; stroke-linecap: round; }
+    .milestone { fill: #6366f1; }
+    .milestone-text { font-family: system-ui, -apple-system, sans-serif; font-size: 11px; fill: #374151; }
+    .milestone-label { font-family: system-ui, -apple-system, sans-serif; font-size: 10px; fill: #6b7280; }
+    .year-label { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; font-weight: 600; fill: #1f2937; }
+  </style>
+
+  <defs>
+    <linearGradient id="timelineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="50%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#22c55e"/>
+    </linearGradient>
+  </defs>
+
+  <text x="400" y="25" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="bold" fill="#1f2937">Gary's Journey to $35K/Month</text>
+
+  <!-- Timeline line -->
+  <line x1="50" y1="110" x2="750" y2="110" class="timeline-line"/>
+
+  <!-- Milestone 1: 2006 -->
+  <g transform="translate(50, 0)">
+    <circle cy="110" r="10" class="milestone"/>
+    <text y="75" text-anchor="middle" class="year-label">2006</text>
+    <text y="140" text-anchor="middle" class="milestone-text">First Home</text>
+    <text y="155" text-anchor="middle" class="milestone-label">Started Renovations</text>
+  </g>
+
+  <!-- Milestone 2: 2012 -->
+  <g transform="translate(190, 0)">
+    <circle cy="110" r="10" class="milestone" style="fill: #8b5cf6;"/>
+    <text y="75" text-anchor="middle" class="year-label">2012</text>
+    <text y="140" text-anchor="middle" class="milestone-text">First Airbnb Stay</text>
+    <text y="155" text-anchor="middle" class="milestone-label">As a Guest</text>
+  </g>
+
+  <!-- Milestone 3: 2017 -->
+  <g transform="translate(330, 0)">
+    <circle cy="110" r="10" class="milestone" style="fill: #a78bfa;"/>
+    <text y="75" text-anchor="middle" class="year-label">2017</text>
+    <text y="140" text-anchor="middle" class="milestone-text">Left Chegg</text>
+    <text y="155" text-anchor="middle" class="milestone-label">Marketing Consulting</text>
+  </g>
+
+  <!-- Milestone 4: 2020 -->
+  <g transform="translate(470, 0)">
+    <circle cy="110" r="10" class="milestone" style="fill: #c4b5fd;"/>
+    <text y="75" text-anchor="middle" class="year-label">2020</text>
+    <text y="140" text-anchor="middle" class="milestone-text">First Airbnb Listing</text>
+    <text y="155" text-anchor="middle" class="milestone-label">Austin Market Entry</text>
+  </g>
+
+  <!-- Milestone 5: 2023 -->
+  <g transform="translate(610, 0)">
+    <circle cy="110" r="10" class="milestone" style="fill: #4ade80;"/>
+    <text y="75" text-anchor="middle" class="year-label">2023</text>
+    <text y="140" text-anchor="middle" class="milestone-text">7 Properties</text>
+    <text y="155" text-anchor="middle" class="milestone-label">$35K/mo Cash Flow</text>
+  </g>
+
+  <!-- Milestone 6: Future -->
+  <g transform="translate(750, 0)">
+    <circle cy="110" r="10" class="milestone" style="fill: #22c55e;"/>
+    <text y="75" text-anchor="middle" class="year-label">Goal</text>
+    <text y="140" text-anchor="middle" class="milestone-text">10+ Properties</text>
+    <text y="155" text-anchor="middle" class="milestone-label">Per Market</text>
+  </g>
+
+  <!-- Arrow indicator -->
+  <polygon points="755,110 745,105 745,115" fill="#22c55e"/>
+</svg>
