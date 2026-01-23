@@ -83,3 +83,89 @@ document.querySelectorAll('a[href^="/"], a[href$=".html"]').forEach(link => {
         }
     }, { once: true });
 });
+
+// Animated number counters
+function animateCounter(element) {
+    const target = element.dataset.target;
+    if (!target) return;
+
+    const numericTarget = parseFloat(target.replace(/[^0-9.]/g, ''));
+    const suffix = target.replace(/[0-9.]/g, '');
+    const prefix = target.match(/^[^0-9]*/)?.[0] || '';
+    const duration = 2000;
+    const start = performance.now();
+
+    function update(currentTime) {
+        const elapsed = currentTime - start;
+        const progress = Math.min(elapsed / duration, 1);
+        const easeOut = 1 - Math.pow(1 - progress, 3);
+        const current = numericTarget * easeOut;
+
+        let display;
+        if (numericTarget >= 1) {
+            display = prefix + Math.floor(current).toLocaleString() + suffix;
+        } else {
+            display = prefix + current.toFixed(1) + suffix;
+        }
+
+        element.textContent = display;
+
+        if (progress < 1) {
+            requestAnimationFrame(update);
+        } else {
+            element.textContent = target;
+        }
+    }
+
+    requestAnimationFrame(update);
+}
+
+// Scroll fade-in animations using Intersection Observer
+const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+};
+
+const fadeInObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+
+            // Trigger counter animation if it's a stat number
+            if (entry.target.classList.contains('stat-number') && entry.target.dataset.target) {
+                animateCounter(entry.target);
+            }
+
+            fadeInObserver.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+// Observe all animate-on-scroll elements
+document.querySelectorAll('.animate-on-scroll, .stat-number[data-target]').forEach(el => {
+    fadeInObserver.observe(el);
+});
+
+// Handle elements already visible on page load (DOMContentLoaded ensures DOM is ready)
+document.addEventListener('DOMContentLoaded', () => {
+    // Trigger counters that are already visible
+    setTimeout(() => {
+        document.querySelectorAll('.stat-number[data-target]').forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+                animateCounter(el);
+            }
+        });
+    }, 100);
+});
+
+// Pillar card hover lift effect
+document.querySelectorAll('.pillar-card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+        card.style.transform = 'translateY(-8px)';
+    });
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = 'translateY(0)';
+    });
+});
