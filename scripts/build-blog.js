@@ -89,58 +89,10 @@ function getMarkdownFiles() {
 }
 
 /**
- * Get existing HTML files from blog directory (standalone posts not from markdown)
- * These are complete HTML files that shouldn't be overwritten
+ * NOTE: Previous version had logic to preserve existing HTML files.
+ * This has been removed since all posts now have markdown sources.
+ * The build script now always builds from markdown, overwriting HTML files.
  */
-function getExistingHtmlPosts() {
-    try {
-        const files = fs.readdirSync(OUTPUT_DIR);
-        const htmlFiles = files.filter(file =>
-            file.endsWith('.html') &&
-            file !== 'index.html'
-        );
-
-        const posts = [];
-        for (const file of htmlFiles) {
-            const filePath = path.join(OUTPUT_DIR, file);
-            const content = fs.readFileSync(filePath, 'utf-8');
-
-            // Extract metadata from HTML meta tags
-            const titleMatch = content.match(/<meta\s+name="title"\s+content="([^"]+)"/i) ||
-                               content.match(/<title>([^<|]+)/i);
-            const descMatch = content.match(/<meta\s+name="description"\s+content="([^"]+)"/i);
-            const dateMatch = content.match(/<meta\s+property="article:published_time"\s+content="([^T"]+)/i);
-            const categoryMatch = content.match(/<meta\s+property="article:section"\s+content="([^"]+)"/i);
-            const imageMatch = content.match(/<meta\s+property="og:image"\s+content="([^"]+)"/i);
-
-            if (titleMatch) {
-                // Estimate word count from content length
-                const textContent = content.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
-                const wordCount = textContent.split(' ').length;
-
-                posts.push({
-                    slug: file.replace('.html', ''),
-                    filename: file,
-                    isExistingHtml: true,
-                    content: textContent, // For read time calculation
-                    frontmatter: {
-                        title: (titleMatch[1] || '').replace(' | Legacy Investing Show', '').trim(),
-                        description: descMatch ? descMatch[1] : '',
-                        date: dateMatch ? dateMatch[1] : new Date().toISOString().split('T')[0],
-                        category: categoryMatch ? categoryMatch[1] : 'Success Story',
-                        image: imageMatch ? imageMatch[1] : '/assets/images/blog/success-stories/airbnb-success.jpg',
-                        author: 'Preston Seo'
-                    }
-                });
-            }
-        }
-
-        return posts;
-    } catch (error) {
-        console.error(`Error reading existing HTML posts: ${error.message}`);
-        return [];
-    }
-}
 
 /**
  * Parse a markdown file and extract frontmatter and content
@@ -807,27 +759,12 @@ function build() {
         .map(file => parseMarkdownFile(file))
         .filter(post => post !== null);
 
-    // Get existing HTML posts (standalone posts not from markdown)
-    const existingHtmlPosts = getExistingHtmlPosts();
-    console.log(`Found ${existingHtmlPosts.length} existing HTML post(s)\n`);
-
-    // Create a set of existing HTML slugs to avoid overwriting
-    const existingHtmlSlugs = new Set(existingHtmlPosts.map(p => p.slug));
-
-    // Build individual post pages from markdown (skip if HTML already exists)
+    // Build individual post pages from markdown
     let successCount = 0;
-    let skippedCount = 0;
     let errorCount = 0;
 
     for (const post of markdownPosts) {
         try {
-            // Skip if an HTML file already exists for this slug
-            if (existingHtmlSlugs.has(post.slug)) {
-                console.log(`Skipped: ${post.slug}.html (existing HTML file)`);
-                skippedCount++;
-                continue;
-            }
-
             const html = applyTemplate(template, post, markdownPosts);
             const outputPath = path.join(OUTPUT_DIR, `${post.slug}.html`);
 
@@ -840,19 +777,12 @@ function build() {
         }
     }
 
-    // Combine markdown posts and existing HTML posts for index generation
-    // Filter out markdown posts that have existing HTML versions
-    const markdownPostsWithoutHtml = markdownPosts.filter(p => !existingHtmlSlugs.has(p.slug));
-    const allPosts = [...markdownPostsWithoutHtml, ...existingHtmlPosts];
-
     // Generate blog index with all posts
     try {
-        const indexHTML = generateBlogIndex(allPosts);
+        const indexHTML = generateBlogIndex(markdownPosts);
         const indexPath = path.join(OUTPUT_DIR, 'index.html');
         fs.writeFileSync(indexPath, indexHTML);
-        console.log('\nBuilt: blog/index.html');
-        console.log(`  - ${markdownPostsWithoutHtml.length} from markdown`);
-        console.log(`  - ${existingHtmlPosts.length} from existing HTML`);
+        console.log(`\nBuilt: blog/index.html (${markdownPosts.length} posts)`);
     } catch (error) {
         console.error(`Error generating blog index: ${error.message}`);
         errorCount++;
@@ -861,15 +791,11 @@ function build() {
     // Summary
     console.log('\n-------------------');
     console.log('Build complete!');
-    console.log(`Successfully built: ${successCount} post(s) from markdown`);
-    console.log(`Existing HTML posts: ${existingHtmlPosts.length}`);
-    if (skippedCount > 0) {
-        console.log(`Skipped: ${skippedCount} (already have HTML)`);
-    }
+    console.log(`Successfully built: ${successCount} post(s)`);
     if (errorCount > 0) {
         console.log(`Errors: ${errorCount}`);
     }
-    console.log(`Total posts in index: ${allPosts.length}`);
+    console.log(`Total posts in index: ${markdownPosts.length}`);
     console.log('-------------------\n');
 }
 
