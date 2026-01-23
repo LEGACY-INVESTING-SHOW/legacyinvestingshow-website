@@ -148,7 +148,7 @@ This case study breaks down exactly how Rob built this Airbnb arbitrage business
 
 ---
 
-## Quick Results: Rob's Airbnb Arbitrage Numbers {#quick-results}
+## Quick Results: Rob's Airbnb Arbitrage Numbers
 
 | Metric | Value | Context |
 |------|------|------|
@@ -163,11 +163,11 @@ This case study breaks down exactly how Rob built this Airbnb arbitrage business
 
 ---
 
-## Rob's Background: From MBA Student to Airbnb Entrepreneur {#background}
+## Rob's Background: From MBA Student to Airbnb Entrepreneur
 
 **You don't need to quit your job to build a successful Airbnb business.** Rob is proof: he built a six-figure Airbnb arbitrage business while working full-time, finishing his MBA, and raising two kids. His background demonstrates that the right systems and strategies can make this business truly passive.
 
-### The Discovery of Airbnb Arbitrage {#the-discovery}
+### The Discovery of Airbnb Arbitrage
 
 In mid-2020, Rob was finishing up his MBA and looking for ways to deploy his savings into something meaningful. He had already started one business alongside his 9-to-5 and kept seeing Preston's videos on Instagram about what he calls "the bridge method" - Airbnb arbitrage.
 
@@ -175,7 +175,7 @@ The concept immediately appealed to Rob because it represented a relatively low-
 
 > "It's like anything that you jump into - you can sit on the sidelines and try to speculate how it's going to go, what you need to be prepared for. Just take that first step. We bumped our heads along the way but we figured it out."
 
-### Finding a Turnkey Airbnb Property {#first-property}
+### Finding a Turnkey Airbnb Property
 
 Rob's first property was a stroke of strategic luck. He initially researched several markets in Florida where he had family, found plenty of properties, and even got agreements from landlords. But ultimately, he pulled back to his home base of Louisville, Kentucky.
 
@@ -187,11 +187,11 @@ That first deal set a tone for Rob's approach: find opportunities where much of 
 
 ---
 
-## How to Choose Markets for Airbnb Arbitrage: Rob's Strategy {#market}
+## How to Choose Markets for Airbnb Arbitrage: Rob's Strategy
 
 **The best market for Airbnb arbitrage is one with year-round demand, not just seasonal spikes.** Rob analyzed multiple markets before settling on Louisville and St. Simons Island, focusing on diversification and consistent revenue potential.
 
-### Why Louisville Works for Short-Term Rentals {#louisville-market}
+### Why Louisville Works for Short-Term Rentals
 
 Louisville, Kentucky might not be the first market that comes to mind for Airbnb investing, but Rob discovered it has significant advantages that many overlook.
 
@@ -203,7 +203,7 @@ Louisville, Kentucky might not be the first market that comes to mind for Airbnb
 
 > "For my thing, I like markets that kind of have something going on throughout the year. You're going to have ebbs and flows, but if you can find something that's relatively consistent, you don't have to worry about - well if I didn't kill it in this month, is my season pretty much over?"
 
-### St. Simons Island: Seasonal Diversification {#st-simons-market}
+### St. Simons Island: Seasonal Diversification
 
 Rob's second market, St. Simons Island, Georgia, represents strategic diversification. The island has clear seasonality - the high season runs from April through September - but Rob chose it deliberately to balance his Louisville properties.
 
@@ -213,11 +213,11 @@ The opportunity came when he found a 4,000 square foot house on Zillow where the
 
 ---
 
-## Airbnb Arbitrage Strategies That Actually Work: Rob's Playbook {#strategies}
+## Airbnb Arbitrage Strategies That Actually Work: Rob's Playbook
 
 **The difference between getting landlords to say yes or no comes down to how you frame the conversation.** Rob's sales background gave him a significant advantage in closing deals, but his strategies can be learned and replicated by anyone.
 
-### Strategy 1: The Win-Win Landlord Pitch {#strategy-1}
+### Strategy 1: The Win-Win Landlord Pitch
 
 **What it is**: Rather than asking landlords to let you use their property as an Airbnb (which sounds like you're taking advantage), Rob frames the entire conversation around what the landlord gains.
 
@@ -247,7 +247,7 @@ The opportunity came when he found a 4,000 square foot house on Zillow where the
 
 ---
 
-### Strategy 2: Remote Property Setup {#strategy-2}
+### Strategy 2: Remote Property Setup
 
 **What it is**: Setting up and managing properties in markets you've never visited, using local teams and technology to handle everything.
 
@@ -281,7 +281,7 @@ The opportunity came when he found a 4,000 square foot house on Zillow where the
 
 ---
 
-### Strategy 3: Automation Through Guesty {#strategy-3}
+### Strategy 3: Automation Through Guesty
 
 **What it is**: Using Guesty for Hosts as a central management platform to automate messaging, calendar syncing, and operations across all properties and booking platforms.
 
@@ -311,7 +311,7 @@ The opportunity came when he found a 4,000 square foot house on Zillow where the
 
 ---
 
-### Strategy 4: Turnkey Property Hunting {#strategy-4}
+### Strategy 4: Turnkey Property Hunting
 
 **What it is**: Specifically seeking properties that are already set up for short-term rentals or require minimal work to go live.
 
@@ -337,11 +337,11 @@ The building's condo association wasn't initially favorable to short-term rental
 
 ---
 
-## Rob's Airbnb Arbitrage Results: The Numbers {#results}
+## Rob's Airbnb Arbitrage Results: The Numbers
 
 **Rob generates over $100,000 per year in gross revenue from 3 properties.** Here's the complete financial breakdown of his Airbnb arbitrage business.
 
-### Complete Financial Breakdown {#financial-breakdown}
+### Complete Financial Breakdown
 
 | Category | Value | Notes |
 |------|------|------|
@@ -352,7 +352,7 @@ The building's condo association wasn't initially favorable to short-term rental
 | **St. Simons Investment** | Significant | Paint, landscaping, full furnishing |
 | **Downtown Condo Investment** | Minimal | New TV, Roku sticks, kitchen items |
 
-### Portfolio Performance Summary {#portfolio-performance}
+### Portfolio Performance Summary
 
 **Property 1: Highland House (Louisville, KY)**
 
@@ -402,13 +402,13 @@ The building's condo association wasn't initially favorable to short-term rental
 
 ---
 
-## Airbnb Arbitrage Lessons: What Rob Learned {#lessons}
+## Airbnb Arbitrage Lessons: What Rob Learned
 
 **These five lessons took Rob from MBA student to $100K/year Airbnb entrepreneur.** Each one came from real experience and could save you months of trial and error.
 
 > "Anybody can do this guys. I'm nothing special. If I can do this, you can do this. All you got to do is just be willing to do it. It's not as hard as you think - it's all in here."
 
-### Lesson 1: Just Take the First Step {#lesson-1}
+### Lesson 1: Just Take the First Step
 
 **The Mistake**: Analyzing properties endlessly without ever making a single phone call.
 
@@ -428,7 +428,7 @@ The building's condo association wasn't initially favorable to short-term rental
 
 ---
 
-### Lesson 2: Frame Everything as Win-Win {#lesson-2}
+### Lesson 2: Frame Everything as Win-Win
 
 **The Mistake**: Approaching landlords defensively, expecting rejection, and focusing on what you want.
 
@@ -450,7 +450,7 @@ The first landlord Rob called literally "chewed him up and spit him out" about p
 
 ---
 
-### Lesson 3: Build Your Team Through Referrals {#lesson-3}
+### Lesson 3: Build Your Team Through Referrals
 
 **The Mistake**: Trying to find every service provider from scratch through cold outreach.
 
@@ -470,7 +470,7 @@ The first landlord Rob called literally "chewed him up and spit him out" about p
 
 ---
 
-### Lesson 4: Invest in Professional Photography {#lesson-4}
+### Lesson 4: Invest in Professional Photography
 
 **The Mistake**: Using iPhone photos or basic real estate listing images for Airbnb listings.
 
@@ -502,7 +502,7 @@ Rob found his photographer by Googling "Airbnb photographer Louisville Kentucky.
 
 ---
 
-### Lesson 5: Keep Your Eyes Open for Opportunity {#lesson-5}
+### Lesson 5: Keep Your Eyes Open for Opportunity
 
 **The Mistake**: Having rigid criteria that causes you to miss exceptional deals.
 
@@ -524,7 +524,7 @@ Sometimes the best deals aren't the ones you're hunting for - they're the ones t
 
 ---
 
-## Best Tools for Airbnb Arbitrage: Rob's Tech Stack {#tools}
+## Best Tools for Airbnb Arbitrage: Rob's Tech Stack
 
 **Rob manages 3 properties while working a 9-to-5 using these tools.** Here's the complete tech stack that powers his $100K/year business.
 
@@ -577,7 +577,7 @@ Sometimes the best deals aren't the ones you're hunting for - they're the ones t
 
 ---
 
-## Rob's Advice for Airbnb Arbitrage Beginners {#advice}
+## Rob's Advice for Airbnb Arbitrage Beginners
 
 > "If I can do this, you can do this. All you got to do is just be willing to do it. It's not as hard as you think - it's all in here."
 
@@ -613,7 +613,7 @@ The people who fail are the ones who never start, who analyze forever without ac
 
 ---
 
-## Watch Rob's Full Interview {#video}
+## Watch Rob's Full Interview
 
 **Video highlights:**
 
@@ -633,7 +633,7 @@ The people who fail are the ones who never start, who analyze forever without ac
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
 ### How much money can you really make with Airbnb arbitrage while working full-time?
 
@@ -655,7 +655,7 @@ Rob identifies several challenges he navigated:
 
 ---
 
-## Start Your Airbnb Arbitrage Journey {#start}
+## Start Your Airbnb Arbitrage Journey
 
 **Ready to build your own Airbnb arbitrage business like Rob?**
 
@@ -671,7 +671,7 @@ Rob identifies several challenges he navigated:
 
 ---
 
-## About Legacy Investing Show {#about}
+## About Legacy Investing Show
 
 **Legacy Investing Show** is Preston Seo's comprehensive Airbnb arbitrage training program. Since founding, the program has:
 

@@ -152,7 +152,7 @@ This case study breaks down exactly how Jeff built this Airbnb business, includi
 
 ---
 
-## Quick Results: Jeff's Airbnb Numbers {#quick-results}
+## Quick Results: Jeff's Airbnb Numbers
 
 | Metric | Value | Context |
 |------|------|------|
@@ -167,11 +167,11 @@ This case study breaks down exactly how Jeff built this Airbnb business, includi
 
 ---
 
-## Jeff's Background: From Banking Executive to Airbnb Investor {#background}
+## Jeff's Background: From Banking Executive to Airbnb Investor
 
 **You don't need to quit your job to build a successful Airbnb business.** Jeff spent 28 years in the banking and investment industry, earned an MBA in business, and brings a financial professional's analytical approach to every property decision.
 
-### The 2008 Crash: A Pivotal Lesson {#the-2008-crash-lesson}
+### The 2008 Crash: A Pivotal Lesson
 
 In 2008, Jeff was living in Phoenix as an active real estate investor. He watched as property values skyrocketed 46% in a single year—and he was taking full advantage of the appreciation. The problem was, like many investors at the time, he wasn't prepared for the fall.
 
@@ -179,13 +179,13 @@ When the market crashed, it hurt Jeff financially in ways that changed his entir
 
 But by his 52nd birthday, Jeff faced an uncomfortable realization: despite doing everything the conventional wisdom suggested, he was nowhere close to being able to retire. More importantly, he had no control over when that would change. His investments were all in the market's hands, not his own.
 
-### The Retirement Reality Check at 52 {#retirement-reality-check}
+### The Retirement Reality Check at 52
 
 Jeff's situation wasn't unique, but his awareness of it was sharp. He had spent nearly three decades building expertise in banking and investment, watching other people grow their wealth. Yet when he looked at his own trajectory, the math didn't add up. Traditional investing alone wasn't going to get him where he needed to be.
 
 This realization—that he was "in no place to retire and in no place to control that"—became the catalyst for exploring alternative income streams. Jeff needed something that would put him back in control of his financial future, something with better returns than the stock market and more hands-on involvement than passive index funds.
 
-### Discovering Airbnb Investing {#discovering-airbnb-investing}
+### Discovering Airbnb Investing
 
 Jeff isn't the type to scroll through Instagram or TikTok, but when he came across Preston's content, something clicked. The story resonated because their career trajectories were similar—both had been making good money but weren't controlling their futures.
 
@@ -195,9 +195,9 @@ What stood out to Jeff was the legitimacy of the approach. In a world of get-ric
 
 ---
 
-## The Airbnb Journey: Jeff's Timeline {#journey}
+## The Airbnb Journey: Jeff's Timeline
 
-### 2008: The Market Crash That Changed Everything {#2008-market-crash}
+### 2008: The Market Crash That Changed Everything
 
 **Situation**: Active investor in Phoenix during the housing bubble
 
@@ -205,7 +205,7 @@ Jeff experienced firsthand what happens when markets collapse. Living in Phoenix
 
 From that point forward, Jeff adopted a conservative approach. He focused on paying down his mortgage, living debt-free, and maximizing tax-advantaged retirement accounts. While these strategies provided security, they didn't provide the growth he needed for retirement.
 
-### Discovery and Decision {#discovery-decision}
+### Discovery and Decision
 
 **Situation**: 52 years old with no clear path to retirement
 
@@ -215,7 +215,7 @@ Jeff had some money set aside for investing, and short-term rentals offered some
 
 > "I signed up for your program just to listen, see what I can learn. I think we were on the phone for maybe two hours something like that. One of those things that I wanted to dive a little bit deeper on—obviously talked about your background, you've kind of been through the real estate cycle of the '08 crash."
 
-### First Property: The Galveston Opportunity {#first-property}
+### First Property: The Galveston Opportunity
 
 **Situation**: Found a property $80,000 below market value
 
@@ -243,11 +243,11 @@ Jeff closed on June 28th and had a guest staying the night of June 29th. It was 
 
 ---
 
-## How to Choose a Market for Airbnb Investing: Jeff's Galveston Strategy {#market}
+## How to Choose a Market for Airbnb Investing: Jeff's Galveston Strategy
 
 **Galveston is ideal for Airbnb investing because it combines multiple demand drivers: proximity to Houston's massive population, cruise ship departures, beach tourism, and year-round events.** Jeff analyzed the market carefully before purchasing, focusing on understanding who visits and why.
 
-### Why Galveston Works for Short-Term Rentals {#why-galveston-works}
+### Why Galveston Works for Short-Term Rentals
 
 Jeff's discovery of Galveston came from personal experience. A year before purchasing, his family took a cruise departing from Galveston. As they drove down, hitting coastal cities along the way, Jeff began thinking like an investor.
 
@@ -267,7 +267,7 @@ Jeff's discovery of Galveston came from personal experience. A year before purch
 | Off-season | Dec-January | Only 2 slow months |
 | Major events | Biker rally, spring break | Pricing power during peaks |
 
-### Jeff's Market Research Process {#market-research-process}
+### Jeff's Market Research Process
 
 Before purchasing, Jeff conducted thorough market research using the tools and techniques from Legacy Investing Show:
 
@@ -285,11 +285,11 @@ Before purchasing, Jeff conducted thorough market research using the tools and t
 
 ---
 
-## Airbnb Strategies That Actually Work: Jeff's Playbook {#strategies}
+## Airbnb Strategies That Actually Work: Jeff's Playbook
 
 **The difference between profitable and struggling Airbnb hosts comes down to one thing: guest experience.** Jeff attributes his perfect five-star rating and strong cash flow to focusing 100% on what guests feel when they walk through his door.
 
-### Strategy 1: Guest Experience Over Everything {#strategy-1-guest-experience}
+### Strategy 1: Guest Experience Over Everything
 
 **What it is**: Creating a memorable vacation experience through thoughtful amenities, welcome touches, and entertainment options.
 
@@ -347,7 +347,7 @@ Now, experience drives every decision. When guests walk in, they immediately see
 
 ---
 
-### Strategy 2: Buying Below Market Value {#strategy-2-buying-below-market}
+### Strategy 2: Buying Below Market Value
 
 **What it is**: Finding as-is properties that need work and purchasing them at a significant discount.
 
@@ -393,7 +393,7 @@ The key insight: even after paying for all the repairs and improvements, he woul
 
 ---
 
-### Strategy 3: Building Strong Team Relationships {#strategy-3-cleaning-team-relationship}
+### Strategy 3: Building Strong Team Relationships
 
 **What it is**: Treating your cleaning team as your most important business partner, not just a vendor.
 
@@ -439,7 +439,7 @@ Jeff inherited the cleaner who had worked the property before. She knew all the 
 
 ---
 
-### Strategy 4: Automated Communication Systems {#strategy-4-automated-communication}
+### Strategy 4: Automated Communication Systems
 
 **What it is**: Setting up automatic emails for every stage of the guest journey so communication happens without manual effort.
 
@@ -485,7 +485,7 @@ Jeff inherited the cleaner who had worked the property before. She knew all the 
 
 ---
 
-### Strategy 5: Conservative Investment Approach {#strategy-5-conservative-investment}
+### Strategy 5: Conservative Investment Approach
 
 **What it is**: Applying lessons from the 2008 crash to make safer, more sustainable investment decisions.
 
@@ -519,11 +519,11 @@ Jeff inherited the cleaner who had worked the property before. She knew all the 
 
 ---
 
-## Jeff's Airbnb Results: The Numbers {#results}
+## Jeff's Airbnb Results: The Numbers
 
 **Jeff generates $7,000-$8,000/month in net profit from one property in Galveston.** Here's the complete financial breakdown of his Airbnb business.
 
-### Complete Financial Breakdown {#financial-breakdown}
+### Complete Financial Breakdown
 
 | Category | Amount | Notes |
 |------|------|------|
@@ -536,7 +536,7 @@ Jeff inherited the cleaner who had worked the property before. She knew all the 
 | **Net Cash Flow (Slow)** | $3,000/month | $6K gross - $3K mortgage |
 | **Year 1 Projection** | Net positive every month | Even in slow season |
 
-### Monthly Performance Pattern {#monthly-performance}
+### Monthly Performance Pattern
 
 | Period | Expected Gross | Expected Net | Notes |
 |------|------|------|------|
@@ -544,7 +544,7 @@ Jeff inherited the cleaner who had worked the property before. She knew all the 
 | **Shoulder Season (Sep-Nov)** | $6,000-$8,000 | $3,000-$5,000 | Biker rally in November helps |
 | **Slow Season (Dec-Feb)** | $3,000-$5,000 | Break even to $2,000 | Holidays provide some bookings |
 
-### Key Milestones Achieved {#key-milestones}
+### Key Milestones Achieved
 
 - &#10003; **Closed on Property**: June 28th, as-is purchase $80K below market
 
@@ -564,13 +564,13 @@ Jeff inherited the cleaner who had worked the property before. She knew all the 
 
 ---
 
-## Airbnb Lessons: What Jeff Learned {#lessons}
+## Airbnb Lessons: What Jeff Learned
 
 **These five lessons helped Jeff go from traditional investing to $8,000/month Airbnb cash flow.** Each one came from real experience—and could save you months of trial and error.
 
 > "It's just fun to know that you're building something that you have complete control of and you're doing it for yourself—no one else. The benefit is going to be you and your family."
 
-### Lesson 1: Experience Sells, Not Just Property {#lesson-1-experience-sells}
+### Lesson 1: Experience Sells, Not Just Property
 
 **The Mistake**: Thinking a "nice property" is enough to generate bookings and five-star reviews.
 
@@ -596,7 +596,7 @@ Now he sees properties that look gorgeous but have 4.3-star ratings. The differe
 
 ---
 
-### Lesson 2: Get Educated Before You Start {#lesson-2-education-first}
+### Lesson 2: Get Educated Before You Start
 
 **The Mistake**: Jumping into short-term rentals without understanding market research, property criteria, or operational systems.
 
@@ -622,7 +622,7 @@ His assessment is straightforward: without the program, he wouldn't have achieve
 
 ---
 
-### Lesson 3: Build Your Team Before You Need Them {#lesson-3-build-your-team}
+### Lesson 3: Build Your Team Before You Need Them
 
 **The Mistake**: Managing remotely without reliable people on the ground.
 
@@ -648,7 +648,7 @@ The cleaner also connected him to handymen and other service providers. In short
 
 ---
 
-### Lesson 4: Learn from Market Cycles {#lesson-4-conservative-investing}
+### Lesson 4: Learn from Market Cycles
 
 **The Mistake**: Buying at the top of the market without considering what happens in a downturn.
 
@@ -674,7 +674,7 @@ His approach: look for properties with consistent appreciation over time, not su
 
 ---
 
-### Lesson 5: Take a Risk in Yourself {#lesson-5-take-the-risk}
+### Lesson 5: Take a Risk in Yourself
 
 **The Mistake**: Waiting for the perfect moment or perfect conditions before taking action.
 
@@ -700,11 +700,11 @@ The shift came from understanding that calculated risk in yourself is different 
 
 ---
 
-## Best Tools for Airbnb Success: Jeff's Tech Stack {#tools}
+## Best Tools for Airbnb Success: Jeff's Tech Stack
 
 **Jeff manages his Galveston property remotely from Dallas using these tools and systems.** Here's what powers his $8,000/month business.
 
-### Essential Tools Overview {#essential-tools-overview}
+### Essential Tools Overview
 
 | Category | Tool | Purpose | Why Jeff Uses It |
 |------|------|------|------|
@@ -714,7 +714,7 @@ The shift came from understanding that calculated risk in yourself is different 
 | **Furnishing** | IKEA, Target, Wayfair | Property setup | Following program recommendations for cost-effective furnishing |
 | **Beach Amenities** | Local pool pass | Added guest value | $400/year investment provides huge guest value |
 
-### AirDNA: Market Research Foundation {#airdna-detail}
+### AirDNA: Market Research Foundation
 
 **What it does**: Provides market data, property performance estimates, and competitive analysis for short-term rentals.
 
@@ -722,7 +722,7 @@ The shift came from understanding that calculated risk in yourself is different 
 
 **Pro tip**: Without AirDNA, you're "shooting in the dark" according to Jeff—especially if you don't live in the market you're investing in.
 
-### Automated Communication: The Secret to "Great Communication" {#automated-communication-detail}
+### Automated Communication: The Secret to "Great Communication"
 
 **What it does**: Sends pre-written emails at scheduled points throughout the guest journey.
 
@@ -730,7 +730,7 @@ The shift came from understanding that calculated risk in yourself is different 
 
 **Pro tip**: Guests can't tell the difference between automated and manual messages if you write them well. They just know they feel cared for.
 
-### Ring Doorbell: Remote Monitoring {#ring-doorbell-detail}
+### Ring Doorbell: Remote Monitoring
 
 **What it does**: Provides video and audio monitoring of the property entrance.
 
@@ -740,35 +740,35 @@ The shift came from understanding that calculated risk in yourself is different 
 
 ---
 
-## Jeff's Advice for Airbnb Beginners {#advice}
+## Jeff's Advice for Airbnb Beginners
 
 > "Just because you had a bad work day, they can't fire you—hopefully your wife doesn't fire you. At the end of the day, you want to build longevity of your wealth. I want to build this for my son."
 
 **If Jeff were starting over today, here's exactly what he would do:**
 
-### Step 1: Get Educated First {#step-1-get-educated}
+### Step 1: Get Educated First
 
 Jeff is emphatic: don't skip the education phase. Every dollar spent learning is a dollar saved on mistakes. The program taught him things he would have never figured out on his own—market research, property selection, automation systems, team building. His $10,000 first month wouldn't have happened without that foundation.
 
 Education is also a business expense. If you're setting up your Airbnb as a proper business (which you should), training costs can be written off.
 
-### Step 2: Understand Your Lending Options {#step-2-understand-lending}
+### Step 2: Understand Your Lending Options
 
 How will you pay for your property? Cash? Conventional mortgage? DSCR loan? Credit cards for furnishing? Each option has different requirements, rates, and implications.
 
 Jeff is particularly interested in DSCR (Debt Service Coverage Ratio) loans for future properties—these qualify based on the property's rental income rather than personal income, making it easier to scale.
 
-### Step 3: Build Your Network {#step-3-build-network}
+### Step 3: Build Your Network
 
 Airbnb success isn't a solo sport. You need cleaners, handymen, contractors, and local resources. You need other investors to learn from. You need a community that understands what you're building.
 
 Jeff emphasizes that even at 52 with 28 years of financial experience, he needed to learn from others who were already doing what he wanted to do.
 
-### Step 4: Commit Fully {#step-4-commit-fully}
+### Step 4: Commit Fully
 
 Jeff's advice: "Don't say you're going to do seven when you could do ten. Do ten. Do it all." Half-commitment produces half-results. Once you've educated yourself and found the right opportunity, go all in.
 
-### Mindset Advice from Jeff {#mindset-advice}
+### Mindset Advice from Jeff
 
 The entrepreneurial journey is about more than money—it's about control, legacy, and purpose. Jeff wants to build something he can pass to his son. The business is even named with his son's initials (J and E) because this isn't just about retirement—it's about teaching the next generation what's possible.
 
@@ -776,7 +776,7 @@ The entrepreneurial journey is about more than money—it's about control, legac
 
 ---
 
-## Watch Jeff's Full Interview {#video}
+## Watch Jeff's Full Interview
 
 **Video highlights:**
 
@@ -798,29 +798,29 @@ The entrepreneurial journey is about more than money—it's about control, legac
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
-### How much money can you really make with Airbnb property investing? {#how-much-money-can-you-really-make-with-airbnb-property-investing}
+### How much money can you really make with Airbnb property investing?
 
 Jeff generates $7,000-$8,000/month in net cash flow from one property in Galveston, Texas. His first two months each grossed over $10,000, with a $3,000 mortgage payment leaving $7,000+ in profit. Even in slower months, he stays net positive. Results vary based on market, property type, and operational execution, but Jeff's case demonstrates what's possible with proper education and strategy.
 
-### Is Airbnb investing still worth it in 2026? {#is-airbnb-investing-still-worth-it-in-2026}
+### Is Airbnb investing still worth it in 2026?
 
 Based on Jeff's results, absolutely. He started in June with an as-is property and immediately generated positive cash flow every single month. His strategy of focusing on guest experience, buying below market value, and targeting markets with multiple demand drivers produced consistent five-star reviews and strong bookings. The key is executing properly, not just listing a property.
 
-### What's the biggest risk with Airbnb investing? {#whats-the-biggest-risk-with-airbnb-investing}
+### What's the biggest risk with Airbnb investing?
 
 Jeff identifies market cycles as the primary risk—he learned this firsthand from the 2008 crash. His mitigation strategy: buy below market value for immediate equity, choose properties with consistent historical appreciation (not sudden spikes), and avoid being the most expensive house on the block. Also: not educating yourself before investing is a significant risk that costs money through preventable mistakes.
 
 ---
 
-## Start Your Airbnb Journey {#start-journey}
+## Start Your Airbnb Journey
 
 **Ready to build your own Airbnb business like Jeff?**
 
 [Learn more about Legacy Investing Show](/programs.html)
 
-### Related Success Stories {#related-success-stories}
+### Related Success Stories
 
 - [How Gary Built a $35,000/Month Airbnb Business in Austin](/blog/gary-marketing-executive-35k-month.html)
 
@@ -828,13 +828,13 @@ Jeff identifies market cycles as the primary risk—he learned this firsthand fr
 
 - [How Rob Made $100K from 3 Airbnbs While Raising Two Kids](/blog/rob-100k-3-airbnbs-working-fulltime.html)
 
-### Helpful Resources {#helpful-resources}
+### Helpful Resources
 
 - [Complete Guide to Getting Started with Airbnb Arbitrage](/blog/getting-started-airbnb-arbitrage.html)
 
 ---
 
-## About Legacy Investing Show {#about-lis}
+## About Legacy Investing Show
 
 **Legacy Investing Show** is Preston Seo's comprehensive Airbnb arbitrage training program. Since founding, the program has:
 

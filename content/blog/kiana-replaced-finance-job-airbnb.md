@@ -151,7 +151,7 @@ This case study breaks down exactly how Kiana built this Airbnb business while t
 
 ---
 
-## Quick Results: Kiana's Airbnb Arbitrage Numbers {#quick-results}
+## Quick Results: Kiana's Airbnb Arbitrage Numbers
 
 | Metric | Value | Context |
 |------|------|------|
@@ -166,23 +166,23 @@ This case study breaks down exactly how Kiana built this Airbnb business while t
 
 ---
 
-## Kiana's Background: From Finance to Financial Freedom {#background}
+## Kiana's Background: From Finance to Financial Freedom
 
 **You don't need to abandon your career skills to succeed in Airbnb arbitrage.** Kiana's decade in finance gave her the analytical mindset and financial acumen that accelerated her success in short-term rentals. Her story demonstrates how corporate experience translates directly to entrepreneurial success.
 
-### The 10-Year Finance Career {#the-finance-career}
+### The 10-Year Finance Career
 
 Kiana spent over a decade building her career in finance, developing skills in analysis, risk assessment, and financial projections. These skills would prove invaluable when evaluating Airbnb arbitrage opportunities. The ability to run numbers, understand cash flow projections, and assess risk gave her confidence in making investment decisions that many beginners struggle with.
 
 However, despite her successful career, Kiana always had financial freedom on the front of her mind. The corporate ladder felt limiting, and she recognized that trading time for money would never provide the lifestyle flexibility she desired. The entrepreneurship bug, inherited from her father's side of the family, kept calling.
 
-### Real Estate Foundation in Seattle {#real-estate-foundation}
+### Real Estate Foundation in Seattle
 
 Before discovering Airbnb arbitrage, Kiana had already dipped her toes into real estate with rental properties back in Seattle. This experience gave her foundational knowledge of how real estate works: tenant management, cash flow concepts, and property evaluation. However, she had never explored the short-term rental or arbitrage side of the business.
 
 The Seattle rental experience taught her the basics but didn't provide the financial freedom she sought. Traditional long-term rentals generate steady but modest returns, typically not enough to replace a finance salary. She needed something with higher cash flow potential and faster scaling possibilities.
 
-### The Mexico City Discovery {#mexico-city-discovery}
+### The Mexico City Discovery
 
 The turning point came during a vacation in Mexico City when a friend introduced Kiana to the concept of Airbnb arbitrage. The idea of generating substantial cash flow without owning properties, combined with the location-independent nature of the business, immediately resonated with her goals of financial freedom.
 
@@ -192,9 +192,9 @@ That conversation sparked a six-month research journey. Kiana consumed free work
 
 ---
 
-## The Airbnb Arbitrage Journey: Kiana's Timeline {#journey}
+## The Airbnb Arbitrage Journey: Kiana's Timeline
 
-### The Research Phase: 6 Months of Preparation {#research-phase}
+### The Research Phase: 6 Months of Preparation
 
 **Situation**: Working full-time in finance while exploring entrepreneurial options.
 
@@ -202,7 +202,7 @@ Kiana spent six months doing what her finance background trained her to do: thor
 
 During this time, she joined Facebook groups dedicated to Airbnb and short-term rentals, observing which locations were mentioned frequently and learning from others' experiences. The challenge was clear: there were many saturated markets, but also smaller markets with opportunity. The key was finding the right fit.
 
-### Taking the Leap: Quitting the Corporate Job {#taking-the-leap}
+### Taking the Leap: Quitting the Corporate Job
 
 **Situation**: Ready to transition from employee to entrepreneur.
 
@@ -212,7 +212,7 @@ This wasn't a reckless decision. Kiana had already done six months of research. 
 
 > "What do I have to lose and everything to gain? The overhead cost is not that much and the return is so high. The worst case scenario is if no one rents out the Airbnb I can just do another midterm long-term lease and I just don't have cash flow but we're in the process."
 
-### First Property Success {#first-property}
+### First Property Success
 
 **Situation**: First property secured in Scottsdale, Arizona.
 
@@ -232,7 +232,7 @@ The property came furnished, which reduced startup costs and time to launch. The
 
 - Theme: Luxury boho, family-friendly
 
-### Scaling to Two Properties {#scaling-to-two}
+### Scaling to Two Properties
 
 **Situation**: Rapid expansion with economies of scale.
 
@@ -242,11 +242,11 @@ The second property followed the same model: luxury-focused, family-oriented, an
 
 ---
 
-## How to Choose a Market for Airbnb Arbitrage: Kiana's Scottsdale Strategy {#market}
+## How to Choose a Market for Airbnb Arbitrage: Kiana's Scottsdale Strategy
 
 **Scottsdale was the last place Kiana thought she would invest because of its saturation, but strategic differentiation made it work.** Her approach to market selection prioritized personal connection, support networks, and the ability to stand out from competitors.
 
-### Why Scottsdale Works for Short-Term Rentals {#why-scottsdale}
+### Why Scottsdale Works for Short-Term Rentals
 
 Scottsdale is a well-known destination, which initially concerned Kiana due to saturation. However, she discovered that saturation only matters if you're competing directly with everyone else. By choosing a different target demographic and positioning, she carved out a niche in a crowded market.
 
@@ -264,7 +264,7 @@ Scottsdale is a well-known destination, which initially concerned Kiana due to s
 
 - Major events like PGA and Waste Management Open drive seasonal spikes
 
-### Kiana's Market Research Process {#market-research-process}
+### Kiana's Market Research Process
 
 Before committing to Scottsdale, Kiana followed a methodical research process:
 
@@ -284,11 +284,11 @@ Before committing to Scottsdale, Kiana followed a methodical research process:
 
 ---
 
-## Airbnb Arbitrage Strategies That Actually Work: Kiana's Playbook {#strategies}
+## Airbnb Arbitrage Strategies That Actually Work: Kiana's Playbook
 
 **The difference between profitable and unprofitable Airbnb arbitrage comes down to strategy.** Kiana attributes her success to three core strategies that allowed her to quit her finance job and build a location-independent business.
 
-### Strategy 1: Effective Delegation {#strategy-1}
+### Strategy 1: Effective Delegation
 
 **What it is**: Recognizing your weaknesses and hiring experts to handle them.
 
@@ -320,7 +320,7 @@ This delegation served two purposes: it got properties acquired faster, and it p
 
 ---
 
-### Strategy 2: Luxury Family Positioning {#strategy-2}
+### Strategy 2: Luxury Family Positioning
 
 **What it is**: Designing properties for luxury family travelers instead of the dominant bachelor/bachelorette market.
 
@@ -352,7 +352,7 @@ Kiana's first property was located right by a golf course, which naturally attra
 
 ---
 
-### Strategy 3: Hybrid Rental Model {#strategy-3}
+### Strategy 3: Hybrid Rental Model
 
 **What it is**: Maintaining flexibility between short-term, midterm, and long-term rentals based on market conditions.
 
@@ -384,11 +384,11 @@ If short-term rental demand drops, she pivots to midterm or long-term tenants. T
 
 ---
 
-## Kiana's Airbnb Arbitrage Results: The Numbers {#results}
+## Kiana's Airbnb Arbitrage Results: The Numbers
 
 **Kiana generates $3,200/month in cash flow from 2 properties.** Here's the complete financial breakdown of her Airbnb arbitrage business.
 
-### Before vs. After Airbnb {#before-after}
+### Before vs. After Airbnb
 
 | Metric | Before (Finance Career) | After (Airbnb Business) |
 |------|------|------|
@@ -399,7 +399,7 @@ If short-term rental demand drops, she pivots to midterm or long-term tenants. T
 | Time Flexibility | Corporate schedule | 4 hours/week management |
 | Creative Outlet | Limited | Writing a book about her experience |
 
-### Financial Breakdown {#financial-breakdown}
+### Financial Breakdown
 
 | Property | Status | Monthly Cash Flow | Notes |
 |------|------|------|------|
@@ -415,7 +415,7 @@ If short-term rental demand drops, she pivots to midterm or long-term tenants. T
 
 - **Improvement**: 60% reduction in time
 
-### Key Milestones Achieved {#milestones}
+### Key Milestones Achieved
 
 - Quit 10+ year finance career to pursue entrepreneurship
 
@@ -435,13 +435,13 @@ If short-term rental demand drops, she pivots to midterm or long-term tenants. T
 
 ---
 
-## Airbnb Arbitrage Lessons: What Kiana Learned {#lessons}
+## Airbnb Arbitrage Lessons: What Kiana Learned
 
 **These five lessons took Kiana from corporate finance employee to traveling entrepreneur with $3,200/month in passive income.** Each one came from real experience and could save you months of trial and error.
 
 > "Preparation is key of course diligence but also just to trust yourself and know that if you've already done the research then all you have to do is just kind of take that leap of faith."
 
-### Lesson 1: Delegate Your Weaknesses {#lesson-1}
+### Lesson 1: Delegate Your Weaknesses
 
 **The Mistake**: Trying to be good at everything yourself and getting stuck on tasks you're not suited for.
 
@@ -461,7 +461,7 @@ If short-term rental demand drops, she pivots to midterm or long-term tenants. T
 
 ---
 
-### Lesson 2: Overcome Analysis Paralysis {#lesson-2}
+### Lesson 2: Overcome Analysis Paralysis
 
 **The Mistake**: Researching endlessly without ever taking action.
 
@@ -483,7 +483,7 @@ If short-term rental demand drops, she pivots to midterm or long-term tenants. T
 
 ---
 
-### Lesson 3: Trust the Process and Your Team {#lesson-3}
+### Lesson 3: Trust the Process and Your Team
 
 **The Mistake**: Micromanaging every detail and burning out before scaling.
 
@@ -503,7 +503,7 @@ If short-term rental demand drops, she pivots to midterm or long-term tenants. T
 
 ---
 
-### Lesson 4: Always Have an Exit Strategy {#lesson-4}
+### Lesson 4: Always Have an Exit Strategy
 
 **The Mistake**: Being so focused on success that you don't plan for setbacks.
 
@@ -525,7 +525,7 @@ If short-term rental demand drops, she pivots to midterm or long-term tenants. T
 
 ---
 
-### Lesson 5: Differentiate from the Crowd {#lesson-5}
+### Lesson 5: Differentiate from the Crowd
 
 **The Mistake**: Following the herd into saturated niches because that's where the money appears to be.
 
@@ -545,7 +545,7 @@ If short-term rental demand drops, she pivots to midterm or long-term tenants. T
 
 ---
 
-## Best Tools for Airbnb Arbitrage: Kiana's Tech Stack {#tools}
+## Best Tools for Airbnb Arbitrage: Kiana's Tech Stack
 
 **Kiana manages 2 properties with minimal weekly time using these tools.** Here's the tech stack that enables her location-independent lifestyle.
 
@@ -585,13 +585,13 @@ If short-term rental demand drops, she pivots to midterm or long-term tenants. T
 
 ---
 
-## Kiana's Advice for Airbnb Arbitrage Beginners {#advice}
+## Kiana's Advice for Airbnb Arbitrage Beginners
 
 > "Preparation is key of course diligence but also just to trust yourself and know that if you've already done the research then all you have to do is just kind of take that leap of faith."
 
 **If Kiana were starting over today, here's exactly what she would do:**
 
-### Step 1: Getting Started (Week 1-2) {#getting-started}
+### Step 1: Getting Started (Week 1-2)
 
 Before jumping into any market, invest time in education and community. Kiana spent six months researching, but you can accelerate this by joining a program that provides consolidated resources and experienced guidance.
 
@@ -609,7 +609,7 @@ Before jumping into any market, invest time in education and community. Kiana sp
 
 The most important thing in this phase is confirming that Airbnb arbitrage aligns with your goals. Kiana wanted financial freedom and location independence; the arbitrage model delivered both.
 
-### Step 2: Finding Properties (Week 3-6) {#finding-properties}
+### Step 2: Finding Properties (Week 3-6)
 
 Market selection is the biggest challenge most beginners face. Kiana's approach combined personal connection with data analysis:
 
@@ -633,7 +633,7 @@ Market selection is the biggest challenge most beginners face. Kiana's approach 
 
 If landlord negotiation isn't your strength, consider delegating to specialists. The cost of delegation is often less than the cost of months spent struggling alone.
 
-### Step 3: Setting Up Your First Property (Week 7-10) {#setup}
+### Step 3: Setting Up Your First Property (Week 7-10)
 
 No matter how much you prepare, there will always be surprises during setup. The key is being adaptable and solving problems quickly.
 
@@ -651,7 +651,7 @@ No matter how much you prepare, there will always be surprises during setup. The
 
 > "I kind of created the Airbnb to be more of a place that I would want to stay at and then make it as comfortable for me."
 
-### Step 4: Building Systems (Month 3+) {#scaling}
+### Step 4: Building Systems (Month 3+)
 
 The difference between a job and a business is systems. Kiana reduced her weekly time from 10 hours to 4 hours by trusting her systems and team.
 
@@ -687,7 +687,7 @@ The entrepreneurship journey requires trust in yourself and your preparation. Ki
 
 ---
 
-## Watch Kiana's Full Interview {#video}
+## Watch Kiana's Full Interview
 
 **Video highlights:**
 
@@ -713,7 +713,7 @@ The entrepreneurship journey requires trust in yourself and your preparation. Ki
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
 ### How much money can you really make with Airbnb arbitrage?
 
@@ -749,7 +749,7 @@ Kiana identifies regulation changes as the highest-risk factor, which is why she
 
 ---
 
-## Start Your Airbnb Arbitrage Journey {#start-journey}
+## Start Your Airbnb Arbitrage Journey
 
 **Ready to build your own Airbnb arbitrage business like Kiana?**
 
@@ -769,7 +769,7 @@ Kiana identifies regulation changes as the highest-risk factor, which is why she
 
 ---
 
-## About Legacy Investing Show {#about}
+## About Legacy Investing Show
 
 **Legacy Investing Show** is Preston Seo's comprehensive Airbnb arbitrage training program. Since founding, the program has:
 

@@ -141,7 +141,7 @@ This case study breaks down exactly how Micah built this Airbnb arbitrage busine
 
 ---
 
-## Quick Results: Micah's Airbnb Arbitrage Numbers {#quick-results}
+## Quick Results: Micah's Airbnb Arbitrage Numbers
 
 | Metric | Value | Context |
 |------|------|------|
@@ -156,7 +156,7 @@ This case study breaks down exactly how Micah built this Airbnb arbitrage busine
 
 ---
 
-## Micah's Background: The Introvert Who Couldn't Cold Call {#background}
+## Micah's Background: The Introvert Who Couldn't Cold Call
 
 **You don't need to be a natural salesperson to succeed in Airbnb arbitrage.** Micah Hydrick is proof: as a self-proclaimed introvert who gets nervous with new people, he built a profitable short-term rental business without making a single cold call.
 
@@ -180,9 +180,9 @@ Something about it felt different. The message aligned with what Micah had been 
 
 ---
 
-## The Airbnb Arbitrage Journey: Micah's Timeline {#journey}
+## The Airbnb Arbitrage Journey: Micah's Timeline
 
-### September 2023: Taking the Leap {#september-2023}
+### September 2023: Taking the Leap
 
 **Situation**: Skeptical but curious after seeing Preston's Instagram video
 
@@ -190,13 +190,13 @@ After years of ignoring online business opportunities following two failed ventu
 
 What attracted him to this particular opportunity over others? The business model itself was introvert-friendly. Unlike sales businesses or customer-facing ventures, Airbnb arbitrage allowed him to communicate primarily through written messages and manage operations remotely.
 
-### November 2023: Going Deeper {#november-2023}
+### November 2023: Going Deeper
 
 **Situation**: Committed enough to upgrade programs
 
 Two months after joining the Launchpad, Micah upgraded to the Roadmap program. He was seeing results from other students and wanted the full system, scripts, and support to accelerate his progress. This investment in education would prove crucial when he faced his first major hurdle.
 
-### November-December 2023: The Analysis Paralysis Phase {#analysis-paralysis}
+### November-December 2023: The Analysis Paralysis Phase
 
 **Situation**: Stuck in research mode for six weeks
 
@@ -210,7 +210,7 @@ The breakthrough came when he made a conscious decision: trust the numbers and t
 
 > "I had to trust that if the numbers are there, you just do it. At the end of the day, the region, the neighborhood I picked—the numbers were there, the potential was there, it all worked out. I just had to make a conscious decision no matter how scary it was."
 
-### January 2024: The Facebook Message That Changed Everything {#facebook-message}
+### January 2024: The Facebook Message That Changed Everything
 
 **Situation**: Terrified of cold calling, found an alternative approach
 
@@ -236,7 +236,7 @@ Micah acknowledges this rapid response was unusual: "I think that was an outlier
 
 - Timeline: Facebook message to signed lease in weeks
 
-### February 2024: Going Live {#february-2024}
+### February 2024: Going Live
 
 **Situation**: Property launched, first guests booked
 
@@ -254,7 +254,7 @@ Even more impressive: his average nightly rate was $250, but most bookings came 
 
 ---
 
-## How to Choose a Market for Airbnb Arbitrage: Micah's Houston Strategy {#market}
+## How to Choose a Market for Airbnb Arbitrage: Micah's Houston Strategy
 
 **Houston is ideal for Airbnb arbitrage because of its diverse demand drivers and proximity to tourist destinations.** Micah analyzed multiple markets before choosing to stay local, focusing on understanding what he knew best.
 
@@ -316,11 +316,11 @@ Before committing, Micah used a systematic approach:
 
 ---
 
-## Airbnb Arbitrage Strategies That Actually Work: Micah's Playbook {#strategies}
+## Airbnb Arbitrage Strategies That Actually Work: Micah's Playbook
 
 **The difference between getting stuck and getting started often comes down to finding an approach that fits your personality.** Micah attributes his success to three core strategies that worked specifically for an introvert without sales experience.
 
-### Strategy 1: The Facebook Marketplace Approach {#facebook-strategy}
+### Strategy 1: The Facebook Marketplace Approach
 
 **What it is**: Finding and contacting landlords through Facebook Marketplace rental listings instead of cold calling.
 
@@ -354,7 +354,7 @@ For Micah specifically, this approach eliminated his biggest barrier: phone anxi
 
 ---
 
-### Strategy 2: Professional Design on a Budget {#design-strategy}
+### Strategy 2: Professional Design on a Budget
 
 **What it is**: Partnering with a designer friend to create a standout property using affordable furniture sources.
 
@@ -396,7 +396,7 @@ Micah hired a friend with a degree in interior design. Almost everything came fr
 
 ---
 
-### Strategy 3: Network-Based Team Building {#networking-strategy}
+### Strategy 3: Network-Based Team Building
 
 **What it is**: Building your operations team (cleaners, photographers, handymen) through personal network connections rather than hiring strangers.
 
@@ -426,7 +426,7 @@ Micah hired a friend with a degree in interior design. Almost everything came fr
 
 ---
 
-## Micah's Airbnb Arbitrage Results: The Numbers {#results}
+## Micah's Airbnb Arbitrage Results: The Numbers
 
 **March 2024 delivered $5,000 in gross revenue—exceeding projections by over 10%.** Here's the complete financial picture from Micah's first full month operating.
 
@@ -475,7 +475,7 @@ Micah plans to stay with his current employer for three years to capture valuabl
 
 ---
 
-## Airbnb Arbitrage Lessons: What Micah Learned the Hard Way {#lessons}
+## Airbnb Arbitrage Lessons: What Micah Learned the Hard Way
 
 **Every deal teaches something—usually through pain.** Micah's first property came with learning experiences that will save you time and money.
 
@@ -591,7 +591,7 @@ The result? The property wasn't cleaned when Micah took possession. The landlord
 
 ---
 
-## Best Tools for Airbnb Arbitrage: Micah's Tech Stack {#tools}
+## Best Tools for Airbnb Arbitrage: Micah's Tech Stack
 
 **Automation makes Airbnb arbitrage manageable alongside a full-time job.** Here's what Micah uses to run his operation in under an hour per week.
 
@@ -630,7 +630,7 @@ The result? The property wasn't cleaned when Micah took possession. The landlord
 
 ---
 
-## Micah's Advice for Airbnb Arbitrage Beginners {#advice}
+## Micah's Advice for Airbnb Arbitrage Beginners
 
 > "Make the decisions, give yourself timelines, don't get stuck, and then follow as perfectly as you can every single video, all the classroom teachings. Take the extra time—you're going to get more money out of it at the end of the day."
 
@@ -698,7 +698,7 @@ The cure? Trust the numbers. If the calculator shows profit, the potential is re
 
 ---
 
-## Watch Micah's Full Interview {#video}
+## Watch Micah's Full Interview
 
 **Video highlights:**
 
@@ -716,7 +716,7 @@ The cure? Trust the numbers. If the calculator shows profit, the potential is re
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
 ### How much money can you make with Airbnb arbitrage in your first month?
 

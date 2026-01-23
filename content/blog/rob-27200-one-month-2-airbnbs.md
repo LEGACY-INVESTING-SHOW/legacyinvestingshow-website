@@ -151,7 +151,7 @@ This case study breaks down exactly how Rob built this Airbnb arbitrage business
 
 ---
 
-## Quick Results: Rob's Airbnb Arbitrage Numbers {#quick-results}
+## Quick Results: Rob's Airbnb Arbitrage Numbers
 
 | Metric | Value | Context |
 |------|------|------|
@@ -166,17 +166,17 @@ This case study breaks down exactly how Rob built this Airbnb arbitrage business
 
 ---
 
-## Rob's Background: From Pandemic Boredom to Financial Freedom {#background}
+## Rob's Background: From Pandemic Boredom to Financial Freedom
 
 **You don't need any special background to succeed with Airbnb arbitrage.** Rob is proof: a 35-year-old who was stuck at home like everyone else during 2020, looking for a way to make his money work harder.
 
-### Discovering Airbnb Arbitrage {#discovering-airbnb-arbitrage}
+### Discovering Airbnb Arbitrage
 
 Rob had just started a new job when the pandemic hit. Like millions of others, he found himself working from home with extra time to think about his financial future. That's when the Legacy Investing Show kept appearing on his Instagram feed. Preston's content about Airbnb arbitrage caught his attention because it offered something different from traditional investing approaches.
 
 The concept resonated with Rob because he wasn't satisfied with where his career was heading. He had money he wanted to invest and put to work, but traditional options didn't excite him. The idea of building a business that could generate real cash flow while requiring minimal ongoing time investment appealed to his goals of financial freedom.
 
-### The Decision to Invest in Himself {#the-decision-to-invest}
+### The Decision to Invest in Himself
 
 After watching Preston's content repeatedly, Rob made the decision to join the Legacy Investing Show course. He went through all the modules, which he describes as "incredibly insightful." The comprehensive training covered everything from finding properties to negotiating with landlords to setting up and managing listings.
 
@@ -186,9 +186,9 @@ Rob's journey wasn't instant. After completing the modules, he took some time of
 
 ---
 
-## The Journey: From Course to Cash Flow {#journey}
+## The Journey: From Course to Cash Flow
 
-### 2020: The Starting Point {#2020-the-starting-point}
+### 2020: The Starting Point
 
 **Situation:** Stuck at home during the pandemic, working a new job, seeking ways to invest and build wealth.
 
@@ -196,7 +196,7 @@ The pandemic created a unique opportunity for people willing to take action. Whi
 
 Rob committed to the course and absorbed all the training materials. The modules covered the complete process from market research to property acquisition to operational systems. This foundation gave him the knowledge and confidence to eventually take action.
 
-### First Property: Louisville, Kentucky {#first-property-louisville}
+### First Property: Louisville, Kentucky
 
 **Situation:** First deal secured locally to test the business model and learn logistics.
 
@@ -214,7 +214,7 @@ He locked in the deal in October, waited for the tenant to move out in January, 
 
 - February: Immediately started getting bookings
 
-### Second Property: Going Remote {#second-property-remote}
+### Second Property: Going Remote
 
 **Situation:** Scaling to a second property several states away to prove the remote operation model.
 
@@ -228,11 +228,11 @@ The key to successful remote operation was building a reliable team through refe
 
 ---
 
-## Market Selection Strategy: Louisville and St. Simons {#market}
+## Market Selection Strategy: Louisville and St. Simons
 
 **Rob chose markets with strong, consistent demand drivers and premium amenity potential.** His two-market approach demonstrates how different types of properties can both succeed with the right positioning.
 
-### Why Louisville Works {#why-louisville-works}
+### Why Louisville Works
 
 Louisville, Kentucky offers several powerful demand drivers for short-term rentals:
 
@@ -260,7 +260,7 @@ Louisville, Kentucky offers several powerful demand drivers for short-term renta
 
 - Dining area and laundry facilities
 
-### Why St. Simons Works {#why-st-simons-works}
+### Why St. Simons Works
 
 St. Simons Island, Georgia serves as a vacation destination for a specific demographic that Rob identified and targeted:
 
@@ -284,11 +284,11 @@ St. Simons Island, Georgia serves as a vacation destination for a specific demog
 
 ---
 
-## Airbnb Arbitrage Strategies That Work {#strategies}
+## Airbnb Arbitrage Strategies That Work
 
 **The difference between struggling and thriving in Airbnb arbitrage comes down to execution.** Rob attributes his $27,200/month success to four core strategies that accelerated his results.
 
-### Strategy 1: The Numbers Game Approach {#strategy-1-numbers-game}
+### Strategy 1: The Numbers Game Approach
 
 **What it is:** Treating property acquisition like sales - the more landlords you contact, the higher your chance of success.
 
@@ -310,7 +310,7 @@ St. Simons Island, Georgia serves as a vacation destination for a specific demog
 
 ---
 
-### Strategy 2: Remote Property Operation {#strategy-2-remote-operation}
+### Strategy 2: Remote Property Operation
 
 **What it is:** Managing properties from a distance by building a reliable local team.
 
@@ -334,7 +334,7 @@ The critical success factor was building his team through referrals. Every clean
 
 ---
 
-### Strategy 3: Professional Photography Investment {#strategy-3-photography}
+### Strategy 3: Professional Photography Investment
 
 **What it is:** Hiring professional photographers and doing multiple shoots to capture the property at its best.
 
@@ -360,7 +360,7 @@ The twilight shots with string lights transformed how the pool area looked in th
 
 ---
 
-### Strategy 4: Premium Amenities Stack {#strategy-4-premium-amenities}
+### Strategy 4: Premium Amenities Stack
 
 **What it is:** Loading properties with amenities that guests specifically filter for when searching.
 
@@ -394,11 +394,11 @@ This combination means the property appears when guests filter for large groups,
 
 ---
 
-## Financial Results: The Numbers Behind Rob's Success {#results}
+## Financial Results: The Numbers Behind Rob's Success
 
 **Rob generates $20,000+ in monthly net cash flow from just 2 properties.** Here's the complete financial breakdown of his Airbnb arbitrage business.
 
-### Monthly Revenue Breakdown {#monthly-breakdown}
+### Monthly Revenue Breakdown
 
 **June Performance (Combined Properties):**
 
@@ -420,7 +420,7 @@ This combination means the property appears when guests filter for large groups,
 
 Rob's results show significant month-over-month growth. Revenue increased from $19,000 in June to $30,000 in July - a 58% jump. This demonstrates how Airbnb revenue can scale as properties gain reviews, optimize pricing, and build booking momentum.
 
-### Portfolio Performance Summary {#portfolio-summary}
+### Portfolio Performance Summary
 
 | Property | Location | Type | Status | Notes |
 |------|------|------|------|------|
@@ -443,13 +443,13 @@ Rob's results show significant month-over-month growth. Revenue increased from $
 
 ---
 
-## Key Lessons from Rob's Journey {#lessons}
+## Key Lessons from Rob's Journey
 
 **These five lessons took Rob from pandemic boredom to $20,000+/month in passive income.** Each one came from real experience and could save you months of trial and error.
 
 > "This forced me to grow in ways that I wouldn't have otherwise. It's forced me to get very familiar with a business that I would have never done otherwise."
 
-### Lesson 1: Avoid Analysis Paralysis {#lesson-1-avoid-analysis-paralysis}
+### Lesson 1: Avoid Analysis Paralysis
 
 **The Mistake:** Researching endlessly without taking action, waiting for the "perfect" opportunity.
 
@@ -469,7 +469,7 @@ Rob's results show significant month-over-month growth. Revenue increased from $
 
 ---
 
-### Lesson 2: It's a Numbers Game {#lesson-2-its-a-numbers-game}
+### Lesson 2: It's a Numbers Game
 
 **The Mistake:** Getting discouraged by initial rejections and giving up too soon.
 
@@ -491,7 +491,7 @@ Rob's results show significant month-over-month growth. Revenue increased from $
 
 ---
 
-### Lesson 3: Build and Trust Your Team {#lesson-3-trust-your-team}
+### Lesson 3: Build and Trust Your Team
 
 **The Mistake:** Trying to do everything yourself or hiring unvetted team members.
 
@@ -511,7 +511,7 @@ Rob's results show significant month-over-month growth. Revenue increased from $
 
 ---
 
-### Lesson 4: Leverage the Community {#lesson-4-leverage-community}
+### Lesson 4: Leverage the Community
 
 **The Mistake:** Trying to figure everything out alone instead of learning from others.
 
@@ -533,7 +533,7 @@ Rob's results show significant month-over-month growth. Revenue increased from $
 
 ---
 
-### Lesson 5: Learn to Handle Curveballs {#lesson-5-handle-curveballs}
+### Lesson 5: Learn to Handle Curveballs
 
 **The Mistake:** Expecting everything to go smoothly and panicking when issues arise.
 
@@ -555,7 +555,7 @@ Rob's results show significant month-over-month growth. Revenue increased from $
 
 ---
 
-## Best Tools for Airbnb Arbitrage: Rob's Tech Stack {#tools}
+## Best Tools for Airbnb Arbitrage: Rob's Tech Stack
 
 **Rob manages 2 properties with minimal weekly time using these essential tools.** Here's the tech stack that powers his $20,000+/month business.
 
@@ -564,7 +564,7 @@ Rob's results show significant month-over-month growth. Revenue increased from $
 | **Channel Management** | Guesty for Hosts | Booking and financial tracking | Compiles all expenses, income, and statistics in one place |
 | **Cleaning Coordination** | Turno | Automated cleaner scheduling | Integrates with Guesty; automates turnover coordination |
 
-### Guesty for Hosts: Channel Management Platform {#guesty-for-hosts}
+### Guesty for Hosts: Channel Management Platform
 
 **What it does:** Guesty for Hosts is a comprehensive channel management platform that handles booking management, financial tracking, and operational statistics across all your properties.
 
@@ -582,7 +582,7 @@ Rob's results show significant month-over-month growth. Revenue increased from $
 
 > "This is one of the best channel management platforms out there because you can compile all your expenses and income and statistics. It tracks everything which is great."
 
-### Turno: Automated Cleaning Coordination {#turno}
+### Turno: Automated Cleaning Coordination
 
 **What it does:** Turno is a cleaning service platform that automatically schedules cleaners based on your booking calendar, eliminating manual coordination for turnovers.
 
@@ -594,19 +594,19 @@ Rob's results show significant month-over-month growth. Revenue increased from $
 
 ---
 
-## Rob's Advice for Beginners {#advice}
+## Rob's Advice for Beginners
 
 > "If you're on the fence, I highly encourage you to just take the leap because looking back from where I am now, I'm so glad I did this."
 
 **If Rob were talking to someone considering Airbnb arbitrage today, here's what he'd say:**
 
-### Just Take the Leap {#take-the-leap}
+### Just Take the Leap
 
 Rob's primary message to people on the fence is simple: take action. A year from now, you don't want to look back wondering "what if." The opportunity is real, the system works, and the only thing separating you from results is the decision to start.
 
 The program provides everything you need - the training, the scripts, the community support. What you have to provide is the commitment to execute. Rob describes the Legacy Investing Show as "a fantastic program" and "a great opportunity" that he wouldn't change anything about.
 
-### Embrace Personal Growth {#growth-mindset}
+### Embrace Personal Growth
 
 Beyond the financial results, Rob emphasizes the personal development that comes with building this business. It forced him to grow in ways he wouldn't have otherwise - learning new skills, handling challenges, and becoming familiar with an industry he never would have explored on his own.
 
@@ -616,7 +616,7 @@ The business teaches you problem-solving, team management, customer service, rea
 
 ---
 
-## Watch Rob's Full Interview {#watch-interview}
+## Watch Rob's Full Interview
 
 **Video highlights:**
 
@@ -636,7 +636,7 @@ The business teaches you problem-solving, team management, customer service, rea
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
 ### How much money can you really make with Airbnb arbitrage?
 
@@ -664,7 +664,7 @@ The challenges of remote operation "really weren't that significant" according t
 
 ---
 
-## Start Your Airbnb Arbitrage Journey {#start-your-journey}
+## Start Your Airbnb Arbitrage Journey
 
 **Ready to build your own Airbnb arbitrage business like Rob?**
 
@@ -684,7 +684,7 @@ The challenges of remote operation "really weren't that significant" according t
 
 ---
 
-## About Legacy Investing Show {#about-legacy-investing-show}
+## About Legacy Investing Show
 
 **Legacy Investing Show** is Preston Seo's comprehensive Airbnb arbitrage training program. Since founding, the program has:
 

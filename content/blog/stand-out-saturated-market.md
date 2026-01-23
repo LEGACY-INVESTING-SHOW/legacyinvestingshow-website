@@ -147,7 +147,7 @@ This case study breaks down exactly how Marchia and Cash built their Airbnb busi
 
 ---
 
-## Quick Results: Marchia & Cash's Airbnb Arbitrage Numbers {#quick-results}
+## Quick Results: Marchia & Cash's Airbnb Arbitrage Numbers
 
 | Metric | Value | Context |
 |------|------|------|
@@ -163,11 +163,11 @@ This case study breaks down exactly how Marchia and Cash built their Airbnb busi
 
 ---
 
-## Background: Two Brothers, One Vision {#background}
+## Background: Two Brothers, One Vision
 
 **You don't need real estate experience to succeed in Airbnb arbitrage—you need the right mindset and work ethic.** Marchia and Cash are brothers from Atlanta who combined their unique backgrounds to build a growing short-term rental business while pursuing other passions.
 
-### Marchia's Journey from Sales to Real Estate {#marchia-background}
+### Marchia's Journey from Sales to Real Estate
 
 At 27, Marchia spent five years in a demanding sales career. The money was good, but the long hours and lack of fulfillment pushed him toward something different. He transitioned to becoming a youth minister at his church while building the Airbnb business on the side.
 
@@ -175,7 +175,7 @@ His sales background proved invaluable. Talking to landlords, negotiating deals,
 
 > "With the traditional nine to five that I had, I was working hard long hours with a lot of commitment to something that I wasn't visioning as what I wanted to do for the rest of my life."
 
-### Cash: From College Baseball to Airbnb {#cash-background}
+### Cash: From College Baseball to Airbnb
 
 Cash, at 23, had just finished playing college baseball. After years of dedication to athletics, he took time off to travel before discovering Airbnb arbitrage on Instagram. He brought the idea to his brother, and together they dove in.
 
@@ -183,7 +183,7 @@ Now, Airbnb is literally all Cash does besides giving baseball lessons on the si
 
 Cash also runs a hair cutting business, demonstrating the entrepreneurial mindset that drives their Airbnb success. Both brothers understand that multiple income streams and diverse skills create stability.
 
-### The Athletic Mindset Advantage {#athletic-mindset}
+### The Athletic Mindset Advantage
 
 The brothers credit their athletic backgrounds for their success in entrepreneurship. Whether it's Marchia watching his brothers compete at high levels or Cash's direct experience in college baseball, the lessons transfer directly.
 
@@ -205,9 +205,9 @@ The brothers credit their athletic backgrounds for their success in entrepreneur
 
 ---
 
-## The Airbnb Arbitrage Journey: Timeline {#journey}
+## The Airbnb Arbitrage Journey: Timeline
 
-### Late Summer 2022: Discovery and Decision {#discovering-airbnb}
+### Late Summer 2022: Discovery and Decision
 
 **Situation**: Cash discovered Airbnb arbitrage on Instagram and brought the idea to Marchia.
 
@@ -217,7 +217,7 @@ Their shared family history with real estate made the idea even more compelling.
 
 > "Real estate is something that I personally wanted to get my family involved in. I see what a piece of property can do for a family—it can create wealth but also create friendship and community and keep families together."
 
-### Early 2023: First Property Secured {#first-property}
+### Early 2023: First Property Secured
 
 **Situation**: After 2-3 weeks of rejections from Zillow landlords, they pivoted to Furnished Finder and closed their first deal.
 
@@ -239,7 +239,7 @@ Marchia handled most of the first deal negotiations. The landlord was motivated,
 
 - **Time from Signing to Live**: 2-3 weeks setup
 
-### Spring 2023: Scaling to Property Two {#scaling-second}
+### Spring 2023: Scaling to Property Two
 
 **Situation**: With Property 1 generating revenue and building reviews, the brothers secured a second property in a secondary Atlanta market.
 
@@ -255,7 +255,7 @@ At the time of their interview, both brothers were personally handling cleaning 
 
 ---
 
-## Why Atlanta: Market Selection Strategy {#market}
+## Why Atlanta: Market Selection Strategy
 
 **Atlanta is one of the most saturated Airbnb markets in the country, but saturation doesn't mean opportunity is dead—it means you need better strategies.** The brothers chose Atlanta deliberately, understanding both its challenges and advantages.
 
@@ -293,11 +293,11 @@ Rather than chasing exotic markets or high-risk opportunities, Marchia and Cash 
 
 ---
 
-## Strategies for Standing Out in a Saturated Market {#strategies}
+## Strategies for Standing Out in a Saturated Market
 
 **The difference between struggling and thriving in a competitive market comes down to differentiation.** Marchia and Cash developed five core strategies that transformed them from another listing in a sea of options to properties guests actively seek out.
 
-### Strategy 1: Study Top Performers Religiously {#strategy-1}
+### Strategy 1: Study Top Performers Religiously
 
 **What it is**: Systematically analyzing listings with perfect 5-star reviews to extract what guests actually value.
 
@@ -331,7 +331,7 @@ Marchia's approach is methodical: He searches Atlanta for listings with perfect 
 
 ---
 
-### Strategy 2: Theme Your Properties {#strategy-2}
+### Strategy 2: Theme Your Properties
 
 **What it is**: Creating distinct property themes that transform generic rentals into memorable experiences.
 
@@ -383,7 +383,7 @@ The brothers theme each property deliberately based on its characteristics:
 
 ---
 
-### Strategy 3: Dynamic Pricing Mastery {#strategy-3}
+### Strategy 3: Dynamic Pricing Mastery
 
 **What it is**: Using Price Labs with neighborhood competitor analysis to continuously optimize rates.
 
@@ -429,7 +429,7 @@ The brothers observed an interesting pattern when studying competitors: many suc
 
 ---
 
-### Strategy 4: Eye-Catching Cover Photos {#strategy-4}
+### Strategy 4: Eye-Catching Cover Photos
 
 **What it is**: Creating a first photo that stops scrollers and differs from every other listing in search results.
 
@@ -463,7 +463,7 @@ Marchia noticed that in-town stays typically use living room photos as their cov
 
 ---
 
-### Strategy 5: Optimize for Longer Stays {#strategy-5}
+### Strategy 5: Optimize for Longer Stays
 
 **What it is**: Pricing and positioning to attract week-long stays over multiple short turnovers.
 
@@ -495,7 +495,7 @@ The brothers tracked their booking patterns carefully. In March, they had 11 dif
 
 ---
 
-## Financial Results: The Numbers {#results}
+## Financial Results: The Numbers
 
 **Marchia and Cash demonstrate how consistent optimization creates exponential revenue growth.** Their trajectory from February through April shows what's possible with the right strategies.
 
@@ -541,11 +541,11 @@ The brothers tracked their booking patterns carefully. In March, they had 11 dif
 
 ---
 
-## Key Lessons for Beginners {#lessons}
+## Key Lessons for Beginners
 
 **These five lessons took Marchia and Cash from complete beginners to operators of two profitable properties.** Each lesson came from real experience and could save you months of frustration.
 
-### Lesson 1: Negotiate Below Asking Price {#lesson-1}
+### Lesson 1: Negotiate Below Asking Price
 
 **The Mistake:** Eagerness to close the first deal leads to accepting unfavorable terms.
 
@@ -569,7 +569,7 @@ That $200-$300/month difference represents $2,400-$3,600 per year in reduced pro
 
 ---
 
-### Lesson 2: Start Conservative, Scale Smart {#lesson-2}
+### Lesson 2: Start Conservative, Scale Smart
 
 **The Mistake:** Jumping into exotic markets or high-risk properties before understanding the fundamentals.
 
@@ -591,7 +591,7 @@ That $200-$300/month difference represents $2,400-$3,600 per year in reduced pro
 
 ---
 
-### Lesson 3: Know Your "Why" Before Starting {#lesson-3}
+### Lesson 3: Know Your "Why" Before Starting
 
 **The Mistake:** Starting a business without clarity on what you want it to become.
 
@@ -615,7 +615,7 @@ Currently, they're cleaning properties themselves to maximize early cash flow. B
 
 ---
 
-### Lesson 4: Outsource Cleaning ASAP {#lesson-4}
+### Lesson 4: Outsource Cleaning ASAP
 
 **The Mistake:** Treating cleaning as a way to save money rather than a time-consuming bottleneck.
 
@@ -639,7 +639,7 @@ Preston's advice during the interview was direct: find a cleaner now, even befor
 
 ---
 
-### Lesson 5: Customer Service is Everything {#lesson-5}
+### Lesson 5: Customer Service is Everything
 
 **The Mistake:** Focusing on amenities and pricing while neglecting guest communication and service.
 
@@ -663,7 +663,7 @@ Preston's advice during the interview was direct: find a cleaner now, even befor
 
 ---
 
-## Best Tools for Airbnb Arbitrage: Marchia & Cash's Stack {#tools}
+## Best Tools for Airbnb Arbitrage: Marchia & Cash's Stack
 
 **The right tools make standing out in a saturated market possible.** Here's what powers their Atlanta operation.
 
@@ -702,7 +702,7 @@ Preston's advice during the interview was direct: find a cleaner now, even befor
 
 ---
 
-## Advice for Airbnb Arbitrage Beginners {#advice}
+## Advice for Airbnb Arbitrage Beginners
 
 > "Before you even go to get your first one, you need to be asking yourself the questions of who is it that you want to serve. If you were going to go to this place, would you want to be there yourself?"
 
@@ -770,7 +770,7 @@ The brothers emphasize that mindset matters more than tactics:
 
 ---
 
-## Watch Marchia & Cash's Full Interview {#video}
+## Watch Marchia & Cash's Full Interview
 
 **Video highlights:**
 
@@ -792,7 +792,7 @@ The brothers emphasize that mindset matters more than tactics:
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
 ### How do you stand out in a saturated Airbnb market?
 

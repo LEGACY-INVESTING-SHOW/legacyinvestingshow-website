@@ -148,7 +148,7 @@ This case study breaks down exactly how Leo built this Airbnb arbitrage business
 
 ---
 
-## Quick Results: Leo's Airbnb Arbitrage Numbers {#quick-results}
+## Quick Results: Leo's Airbnb Arbitrage Numbers
 
 | Metric | Value | Context |
 |------|------|------|
@@ -165,17 +165,17 @@ This case study breaks down exactly how Leo built this Airbnb arbitrage business
 
 ---
 
-## Leo's Background: From eBay Seller to Serial Entrepreneur {#background}
+## Leo's Background: From eBay Seller to Serial Entrepreneur
 
 **Leo's entrepreneurial journey began at age 15 selling on eBay, giving him two decades of business-building experience before entering Airbnb arbitrage.** This extensive background in e-commerce, product development, and international business operations provided him with the systems-thinking mindset that enabled rapid scaling in short-term rentals.
 
-### Early Entrepreneurship at 15 {#early-entrepreneurship}
+### Early Entrepreneurship at 15
 
 Leo's first venture started as a teenager, buying Blu-rays, jerseys, jeans, and various items to resell on eBay. This early exposure to e-commerce taught him the fundamentals of buying low, selling high, and managing inventory and logistics. He and his cousin even started a small company called Snap that aimed to collect people's garage items and sell them on eBay for a commission.
 
 The garage sale venture didn't work out as planned, but the experience was formative. Leo learned early that not every business idea succeeds, but each failure teaches valuable lessons about customer acquisition, operations, and market demand. These lessons would prove invaluable when building his later ventures.
 
-### Building and Selling Lil World {#lil-world-success}
+### Building and Selling Lil World
 
 Leo's biggest business success before Airbnb came from Lil World, a children's nightlight company he built and sold. These silicone, rechargeable nightlights made from soft, rubbery materials became popular in the US. Parents and children loved the tap-activated, portable design.
 
@@ -185,7 +185,7 @@ Building Lil World taught Leo product development, supply chain management, and 
 
 > "Coming from the other company that I was running that just had so many moving parts—products and inventory and warehouses and then some like Disney approach and GameStop... there's so many moving parts that it was just, I was just overwhelmed all the time. With this business I feel like the model isn't as complicated."
 
-### A Thousand Hotels of Experience {#travel-experience}
+### A Thousand Hotels of Experience
 
 After selling Lil World, Leo moved to Europe for two years. Spain's relaxed lifestyle proved too slow for his entrepreneurial drive—he wanted to work and build things, and the culture there prioritized leisure over progress. He returned to the US ready for his next venture.
 
@@ -197,9 +197,9 @@ This hospitality perspective drives Leo's long-term vision. While he's currently
 
 ---
 
-## The Airbnb Arbitrage Journey: Leo's Timeline {#journey}
+## The Airbnb Arbitrage Journey: Leo's Timeline
 
-### Summer 2024: The Starting Point {#summer-2024}
+### Summer 2024: The Starting Point
 
 **Situation**: Leo had recently returned from two years in Europe, ready for his next business venture.
 
@@ -207,7 +207,7 @@ After the successful exit from Lil World and an unfulfilling stint living in Spa
 
 Leo's approach was characteristically thorough. He enrolled in multiple courses, including Legacy Investing Show, attended several seminars over the summer, and immersed himself in learning the business. His previous business experience taught him that proper preparation and education accelerate success.
 
-### The Conference Decision {#conference-decision}
+### The Conference Decision
 
 **Situation**: At a conference in Texas, an opportunity emerged that Leo couldn't pass up.
 
@@ -217,7 +217,7 @@ Leo made a decisive choice: he would fly directly to Cleveland from Texas to rec
 
 > "I'm sitting at a conference in Texas and this is before I get started and I'm feeling really good... one of the other attendees who are a little bit more experienced, they were telling me about these units that they have but they don't really want them. So I'm like okay I'll take the units."
 
-### First Trip to Cleveland {#first-cleveland-trip}
+### First Trip to Cleveland
 
 **Situation**: Reality differed significantly from expectations, requiring Leo to adapt on the fly.
 
@@ -227,7 +227,7 @@ Rather than becoming frustrated, Leo pivoted. He used those three weeks producti
 
 For subsequent units, the systems he built kicked in. His operational manager on the ground and his virtual assistant could repeat the established processes without Leo being present. The formula was now documented and scalable.
 
-### Scaling to 13 Units {#scaling-to-thirteen}
+### Scaling to 13 Units
 
 **Situation**: With four units live and systems proven, Leo negotiated for nine additional units in the same building.
 
@@ -237,11 +237,11 @@ His long-term vision extends beyond arbitrage. Leo is simultaneously building cu
 
 ---
 
-## How to Choose a Market for Airbnb Arbitrage: Leo's Cleveland Strategy {#market}
+## How to Choose a Market for Airbnb Arbitrage: Leo's Cleveland Strategy
 
 **Cleveland emerged as Leo's target market through networking at conferences, where experienced operators shared their knowledge and even offered to transfer units.** The market offered favorable operator limits, reasonable costs, and strong demand fundamentals.
 
-### Why Cleveland Works for Short-Term Rentals {#why-cleveland}
+### Why Cleveland Works for Short-Term Rentals
 
 Leo didn't choose Cleveland through extensive solo research. Instead, he leveraged his network. At the Texas conference, experienced operators recommended the market based on their own results. One was willing to transfer units because they were expanding elsewhere.
 
@@ -255,7 +255,7 @@ The building Leo operates in has specific rules that work in his favor once you'
 
 **The Numbers**: Based on Leo's first month of data (September), the market supports strong returns. One-bedrooms generate approximately $4,500/month revenue with $3,000 in expenses. Two-bedrooms bring in around $5,500/month with similar expense ratios. The property he's still setting up with dedicated parking should perform even better.
 
-### Building Relationships vs. Finding Units Solo {#building-relationships}
+### Building Relationships vs. Finding Units Solo
 
 Leo's approach differed from typical market research. He built relationships at conferences, learned from people already operating in markets, and leveraged those connections to get started quickly. While he acknowledges this approach has risks (and even advises against buying referrals), the network access accelerated his timeline significantly.
 
@@ -265,11 +265,11 @@ His key insight: the building management relationship matters enormously. By bei
 
 ---
 
-## Airbnb Arbitrage Strategies That Actually Work: Leo's Playbook {#strategies}
+## Airbnb Arbitrage Strategies That Actually Work: Leo's Playbook
 
 **Leo's success comes from applying his extensive business experience to create systems that scale.** His five core strategies enable him to manage 13 properties with minimal daily involvement.
 
-### Strategy 1: Systems-First Approach {#strategy-1}
+### Strategy 1: Systems-First Approach
 
 **What it is**: Before adding a single unit, Leo built the operational infrastructure to support 100+ properties.
 
@@ -299,7 +299,7 @@ During his three weeks in Cleveland, while others might have focused only on get
 
 ---
 
-### Strategy 2: Storage Unit Assembly Method {#strategy-2}
+### Strategy 2: Storage Unit Assembly Method
 
 **What it is**: Leo rents a storage unit where all furniture gets delivered, assembled, then transported to apartments fully built.
 
@@ -331,7 +331,7 @@ By routing all deliveries to a storage unit, Leo's team assembles furniture off-
 
 ---
 
-### Strategy 3: Cost-Effective VA Hiring {#strategy-3}
+### Strategy 3: Cost-Effective VA Hiring
 
 **What it is**: Leo found virtual assistants at $400/month instead of the $600-$800/month commonly offered through networks and groups.
 
@@ -359,7 +359,7 @@ His VAs handle guest communication, booking coordination, and administrative tas
 
 ---
 
-### Strategy 4: Local Operational Manager {#strategy-4}
+### Strategy 4: Local Operational Manager
 
 **What it is**: Leo hired someone on the ground in Cleveland to handle physical operations, quality control, and coordination.
 
@@ -389,7 +389,7 @@ Leo found his operational manager during his three-week Cleveland stay. Together
 
 ---
 
-### Strategy 5: Relationship-Based Cleaning {#strategy-5}
+### Strategy 5: Relationship-Based Cleaning
 
 **What it is**: Rather than using turnover apps like Turno, Leo built a direct relationship with a local cleaning company.
 
@@ -423,11 +423,11 @@ Leo met with the cleaning company owner directly, explained his standards, creat
 
 ---
 
-## Leo's Airbnb Arbitrage Results: The Numbers {#results}
+## Leo's Airbnb Arbitrage Results: The Numbers
 
 **Leo's 13 properties (4 live, 9 in negotiation) are projected to generate $32,500/month in net cash flow.** Here's the complete financial breakdown of his Airbnb arbitrage business.
 
-### Complete Financial Breakdown (Per Property Type) {#financial-breakdown}
+### Complete Financial Breakdown (Per Property Type)
 
 **One-Bedroom Units:**
 
@@ -447,7 +447,7 @@ Leo met with the cleaning company owner directly, explained his standards, creat
 
 *Note: Leo's last two-bedroom unit was still in setup at time of interview, so he noted parking hadn't been added yet, which he expects will increase performance.*
 
-### Portfolio Performance Summary {#portfolio-performance}
+### Portfolio Performance Summary
 
 | Metric | Current | Projected (13 units) |
 |------|------|------|
@@ -458,7 +458,7 @@ Leo met with the cleaning company owner directly, explained his standards, creat
 | **Weekly Management Time** | 1-2 hours | TBD with growth |
 | **Data Available** | September only | Full year TBD |
 
-### Key Milestones Achieved {#key-milestones}
+### Key Milestones Achieved
 
 - **Conference to Cleveland in 2 months**: From learning at seminars to having units live
 
@@ -474,13 +474,13 @@ Leo met with the cleaning company owner directly, explained his standards, creat
 
 ---
 
-## Airbnb Arbitrage Lessons: What Leo Learned the Hard Way {#lessons}
+## Airbnb Arbitrage Lessons: What Leo Learned the Hard Way
 
 **These five lessons come from Leo's entrepreneurial background and his rapid entry into Airbnb arbitrage.** His experience building and selling a product company gave him perspective that accelerated his short-term rental success.
 
 > "If people just follow exactly what you teach, obviously there's a little more to it when you start to get into it a little bit, but if they follow kind of exactly what you teach I believe they'll succeed."
 
-### Lesson 1: Build for Scale from Day One {#lesson-1}
+### Lesson 1: Build for Scale from Day One
 
 **The Mistake**: Creating systems reactively, scrambling to handle growth as it happens.
 
@@ -500,7 +500,7 @@ Leo met with the cleaning company owner directly, explained his standards, creat
 
 ---
 
-### Lesson 2: Don't Buy Referrals {#lesson-2}
+### Lesson 2: Don't Buy Referrals
 
 **The Mistake**: Paying other operators for unit transfers without fully understanding the terms.
 
@@ -522,7 +522,7 @@ Leo met with the cleaning company owner directly, explained his standards, creat
 
 ---
 
-### Lesson 3: Add Value to Buildings {#lesson-3}
+### Lesson 3: Add Value to Buildings
 
 **The Mistake**: Treating building relationships as transactional rather than partnerships.
 
@@ -542,7 +542,7 @@ Leo met with the cleaning company owner directly, explained his standards, creat
 
 ---
 
-### Lesson 4: Start Local When Possible {#lesson-4}
+### Lesson 4: Start Local When Possible
 
 **The Mistake**: Beginning with out-of-state operations that require extensive travel and setup time.
 
@@ -562,7 +562,7 @@ Leo met with the cleaning company owner directly, explained his standards, creat
 
 ---
 
-### Lesson 5: Avoid Analysis Paralysis {#lesson-5}
+### Lesson 5: Avoid Analysis Paralysis
 
 **The Mistake**: Over-researching and never taking action.
 
@@ -584,7 +584,7 @@ Leo met with the cleaning company owner directly, explained his standards, creat
 
 ---
 
-## Best Tools for Airbnb Arbitrage: Leo's Tech Stack {#tools}
+## Best Tools for Airbnb Arbitrage: Leo's Tech Stack
 
 **Leo manages 4 (soon 13) properties with minimal weekly time using these tools.** His systems-first approach relies on technology to automate and coordinate operations.
 
@@ -615,7 +615,7 @@ Leo met with the cleaning company owner directly, explained his standards, creat
 
 ---
 
-## Leo's Advice for Airbnb Arbitrage Beginners {#advice}
+## Leo's Advice for Airbnb Arbitrage Beginners
 
 > "If you've had a business before go for it. If you haven't had a business before still go for it."
 
@@ -645,7 +645,7 @@ Leo sees Airbnb arbitrage as a foundation, not a destination. His passion lies i
 
 ---
 
-## Watch Leo's Full Interview {#video}
+## Watch Leo's Full Interview
 
 **Video highlights:**
 
@@ -667,7 +667,7 @@ Leo sees Airbnb arbitrage as a foundation, not a destination. His passion lies i
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
 ### How much money can you really make with Airbnb arbitrage?
 
@@ -701,7 +701,7 @@ Leo's experience highlights several risks he managed:
 
 ---
 
-## Start Your Airbnb Arbitrage Journey {#start-journey}
+## Start Your Airbnb Arbitrage Journey
 
 **Ready to build your own Airbnb arbitrage business like Leo?**
 
@@ -721,7 +721,7 @@ Leo's experience highlights several risks he managed:
 
 ---
 
-## About Legacy Investing Show {#about-lis}
+## About Legacy Investing Show
 
 **Legacy Investing Show** is Preston Seo's comprehensive Airbnb arbitrage training program. Since founding, the program has:
 

@@ -152,7 +152,7 @@ This case study breaks down exactly how Sunny dominated a saturated market by fi
 
 ---
 
-## Quick Results: Sunny's Airbnb Arbitrage Numbers {#quick-results}
+## Quick Results: Sunny's Airbnb Arbitrage Numbers
 
 | Metric | Value | Context |
 |------|------|------|
@@ -169,11 +169,11 @@ This case study breaks down exactly how Sunny dominated a saturated market by fi
 
 ---
 
-## Sunny's Background: From Respiratory Therapist to Airbnb Entrepreneur {#background}
+## Sunny's Background: From Respiratory Therapist to Airbnb Entrepreneur
 
 **You don't need real estate experience to succeed with Airbnb arbitrage.** Sunny started with zero property investment knowledge but leveraged his medical field expertise to identify an underserved market that others overlooked.
 
-### The Desire to Provide {#the-desire-to-provide}
+### The Desire to Provide
 
 Sunny works as a respiratory therapist at Texas Medical Center in Houston, where he's been for almost three years. But his drive to build wealth goes deeper than career advancement. When his father passed away in 2015, Sunny was just 21 years old. He inherited not just a house, but a responsibility his father had prepared him for since childhood.
 
@@ -183,7 +183,7 @@ This responsibility drove Sunny to think beyond his day job. As the head of hous
 
 Coming from an Asian background, Sunny felt a cultural weight to provide for his family. But rather than seeing this as a burden, he channeled it into motivation. Every side hustle research session, every Zillow search, every late night learning about real estate was an investment in his family's future security.
 
-### Discovering Airbnb Arbitrage {#discovering-airbnb-arbitrage}
+### Discovering Airbnb Arbitrage
 
 Sunny knew he wanted to do real estate investing even before becoming a respiratory therapist, but he needed capital first. After building savings over several years of work, he was ready to take action but unsure where to start. The barrier wasn't money anymore. It was knowledge.
 
@@ -195,9 +195,9 @@ The decision to join Legacy Investing Show wasn't just about the content. It was
 
 ---
 
-## The Airbnb Arbitrage Journey: Sunny's Timeline {#journey}
+## The Airbnb Arbitrage Journey: Sunny's Timeline
 
-### 2022: Building Capital {#2022-building-capital}
+### 2022: Building Capital
 
 **Situation**: Working as a respiratory therapist, saving money, researching side hustle options.
 
@@ -205,7 +205,7 @@ Sunny spent his early career focused on building financial stability. As a respi
 
 The key during this phase was patience. Sunny didn't rush into anything without proper preparation. He built his savings, observed people who were already successful in real estate, and waited for the right opportunity to present itself.
 
-### Late 2022: Discovery and Decision {#late-2022-discovery}
+### Late 2022: Discovery and Decision
 
 **Situation**: Discovered Legacy Investing Show around Thanksgiving, began intensive research and property hunting.
 
@@ -215,7 +215,7 @@ The education phase covered everything from finding properties to pitching landl
 
 > "As I'm working I'm like, you know, there are families who are visiting the medical center who want to stay with the children or the relatives for extended periods of time or just some visitors from out of state coming in. They want to stay temporarily and they go back home."
 
-### March 2023: First Airbnb Launch {#march-2023-launch}
+### March 2023: First Airbnb Launch
 
 **Situation**: Launched first property, achieved immediate bookings, experienced viral demand during Taylor Swift concert.
 
@@ -241,11 +241,11 @@ The landlord had previously rented to families with children due to a nearby exc
 
 ---
 
-## How to Choose a Market for Airbnb Arbitrage: Sunny's Houston Strategy {#market}
+## How to Choose a Market for Airbnb Arbitrage: Sunny's Houston Strategy
 
 **Houston is one of America's most saturated Airbnb markets, but Sunny found success by identifying an underserved niche.** Rather than competing with thousands of generic listings, he targeted a specific demographic with specific needs.
 
-### Why Texas Medical Center Works {#why-texas-medical-center}
+### Why Texas Medical Center Works
 
 Texas Medical Center is the world's largest medical complex, spanning 2.1 square miles with 60+ institutions. Every day, thousands of families travel from across the country and world to visit loved ones receiving treatment. These families need somewhere to stay, often for extended periods.
 
@@ -255,7 +255,7 @@ Texas Medical Center is the world's largest medical complex, spanning 2.1 square
 
 > "If there's a property around here, instead of just going to a hotel you can book a house that has a sense of privacy and enough space for enough visitors."
 
-### Multiple Demand Drivers {#multiple-demand-drivers}
+### Multiple Demand Drivers
 
 While medical families were Sunny's primary target, his location near NRG Stadium opened up additional revenue streams:
 
@@ -289,11 +289,11 @@ This diversity of demand drivers provides income stability. When medical travel 
 
 ---
 
-## Airbnb Arbitrage Strategies That Actually Work: Sunny's Playbook {#strategies}
+## Airbnb Arbitrage Strategies That Actually Work: Sunny's Playbook
 
 **The difference between profitable and unprofitable Airbnb arbitrage in a saturated market comes down to differentiation.** Sunny's success stems from four core strategies that set him apart from generic listings.
 
-### Strategy 1: Medical Family Niche Targeting {#strategy-1-niche-targeting}
+### Strategy 1: Medical Family Niche Targeting
 
 **What it is**: Positioning the property specifically for families visiting loved ones at Texas Medical Center.
 
@@ -325,7 +325,7 @@ Medical families have specific needs that most Airbnb hosts don't consider. They
 
 ---
 
-### Strategy 2: The Empathetic Landlord Pitch {#strategy-2-empathetic-landlord-pitch}
+### Strategy 2: The Empathetic Landlord Pitch
 
 **What it is**: Pitching the arbitrage opportunity as a service to families rather than just a business proposition.
 
@@ -355,7 +355,7 @@ The landlord had previously rented the townhouse to families with children due t
 
 ---
 
-### Strategy 3: Home Away from Home Design {#strategy-3-home-away-from-home}
+### Strategy 3: Home Away from Home Design
 
 **What it is**: Furnishing and decorating the property to feel like a comfortable home rather than a hotel or generic rental.
 
@@ -397,7 +397,7 @@ Sunny invested in professional photography, recognizing that first impressions d
 
 ---
 
-### Strategy 4: Dynamic Pricing for Event Capture {#strategy-4-dynamic-pricing}
+### Strategy 4: Dynamic Pricing for Event Capture
 
 **What it is**: Using Price Labs to automatically adjust pricing based on local events and demand.
 
@@ -429,11 +429,11 @@ The Taylor Swift concert story illustrates this perfectly. Sunny noticed certain
 
 ---
 
-## Sunny's Airbnb Arbitrage Results: The Numbers {#results}
+## Sunny's Airbnb Arbitrage Results: The Numbers
 
 **Sunny generates $2,000-$5,000+ per month in net profit from 1 property.** Here's the complete financial breakdown of his Airbnb arbitrage business.
 
-### Before vs. After Airbnb {#before-after}
+### Before vs. After Airbnb
 
 | Metric | Before Airbnb | After Airbnb |
 |------|------|------|
@@ -443,7 +443,7 @@ The Taylor Swift concert story illustrates this perfectly. Sunny noticed certain
 | Financial Security | Single income dependent | Diversified income streams |
 | Future Outlook | Limited growth potential | 5 properties in 3 years |
 
-### Financial Breakdown {#financial-breakdown}
+### Financial Breakdown
 
 | Category | Details |
 |------|------|
@@ -453,7 +453,7 @@ The Taylor Swift concert story illustrates this perfectly. Sunny noticed certain
 | **Property Type** | 5BR, 2.5BA, 4-story townhouse |
 | **Location Value** | 6 minutes from Texas Medical Center |
 
-### Guest Type Breakdown {#guest-types}
+### Guest Type Breakdown
 
 Sunny's diverse guest mix provides income stability:
 
@@ -480,13 +480,13 @@ Sunny's diverse guest mix provides income stability:
 
 ---
 
-## Airbnb Arbitrage Lessons: What Sunny Learned {#lessons}
+## Airbnb Arbitrage Lessons: What Sunny Learned
 
 **These five lessons took Sunny from aspiring investor to $5,000/month Airbnb entrepreneur.** Each one came from real experience and could save you months of trial and error.
 
 > "My biggest takeaway is that I just wish I could start this much sooner. Like I was much more confident back then. There's so many opportunities to be had and it just like you said, you just have to start now."
 
-### Lesson 1: Start Before You're Ready {#lesson-1-start-now}
+### Lesson 1: Start Before You're Ready
 
 **The Mistake**: Waiting until you feel completely prepared before taking action.
 
@@ -510,7 +510,7 @@ The more success you have, the more you realize you should have started sooner. 
 
 ---
 
-### Lesson 2: Leverage Your Existing Knowledge {#lesson-2-leverage-knowledge}
+### Lesson 2: Leverage Your Existing Knowledge
 
 **The Mistake**: Thinking you need specialized real estate knowledge to succeed.
 
@@ -532,7 +532,7 @@ Every career teaches transferable skills. Customer service experience helps with
 
 ---
 
-### Lesson 3: Build Community First {#lesson-3-build-community}
+### Lesson 3: Build Community First
 
 **The Mistake**: Trying to figure everything out alone.
 
@@ -554,7 +554,7 @@ Every career teaches transferable skills. Customer service experience helps with
 
 ---
 
-### Lesson 4: Be Honest with Landlords {#lesson-4-be-honest}
+### Lesson 4: Be Honest with Landlords
 
 **The Mistake**: Trying to hide your Airbnb intentions or being vague about your plans.
 
@@ -578,7 +578,7 @@ The landlord will find out eventually. Starting the relationship on a lie ensure
 
 ---
 
-### Lesson 5: Quality Over Quantity {#lesson-5-quality-over-quantity}
+### Lesson 5: Quality Over Quantity
 
 **The Mistake**: Chasing maximum properties instead of maximum impact per property.
 
@@ -602,7 +602,7 @@ More importantly, quality properties create better guest experiences, leading to
 
 ---
 
-## Best Tools for Airbnb Arbitrage: Sunny's Tech Stack {#tools}
+## Best Tools for Airbnb Arbitrage: Sunny's Tech Stack
 
 **Sunny manages his property efficiently using strategic tools.** Here's what powers his $5,000/month business.
 
@@ -630,7 +630,7 @@ More importantly, quality properties create better guest experiences, leading to
 
 ---
 
-## Sunny's Advice for Airbnb Arbitrage Beginners {#advice}
+## Sunny's Advice for Airbnb Arbitrage Beginners
 
 > "This biggest takeaway is that I wish I could start this much sooner. There's so many opportunities that to be had and it just like you said, you just have to start now."
 
@@ -702,7 +702,7 @@ Making mistakes is expected and valuable. Don't let fear of failure prevent you 
 
 ---
 
-## Watch Sunny's Full Interview {#video}
+## Watch Sunny's Full Interview
 
 **Video highlights:**
 
@@ -722,7 +722,7 @@ Making mistakes is expected and valuable. Don't let fear of failure prevent you 
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
 ### How much money can you really make with Airbnb arbitrage near hospitals?
 
@@ -756,7 +756,7 @@ Sunny's approach actually minimizes several common risks:
 
 ---
 
-## Start Your Airbnb Arbitrage Journey {#start-journey}
+## Start Your Airbnb Arbitrage Journey
 
 **Ready to build your own Airbnb arbitrage business like Sunny?**
 
@@ -776,7 +776,7 @@ Sunny's approach actually minimizes several common risks:
 
 ---
 
-## About Legacy Investing Show {#about}
+## About Legacy Investing Show
 
 **Legacy Investing Show** is Preston Seo's comprehensive Airbnb arbitrage training program. Since founding, the program has:
 

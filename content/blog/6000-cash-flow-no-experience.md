@@ -151,7 +151,7 @@ This case study breaks down exactly how Dustin built this Airbnb arbitrage busin
 
 ---
 
-## Quick Results: Dustin's Airbnb Arbitrage Numbers {#quick-results}
+## Quick Results: Dustin's Airbnb Arbitrage Numbers
 
 | Metric | Value | Context |
 |------|------|------|
@@ -168,11 +168,11 @@ This case study breaks down exactly how Dustin built this Airbnb arbitrage busin
 
 ---
 
-## Dustin's Background: From Corporate Sales to Airbnb Entrepreneur {#background}
+## Dustin's Background: From Corporate Sales to Airbnb Entrepreneur
 
 **You don't need real estate experience to start Airbnb arbitrage.** Dustin Cotton is proof: he came from corporate sales with zero rental property experience and built a $6,000/month business within months of starting.
 
-### The Injury That Changed Everything {#the-injury-that-changed-everything}
+### The Injury That Changed Everything
 
 In early 2023, Dustin tore his Achilles tendon, leaving him immobile for an extended period. What could have been a setback became a turning point. During his recovery, he dove deep into business, entrepreneurship, and self-improvement content. He began following multiple social media influencers focused on building businesses and improving quality of life.
 
@@ -180,7 +180,7 @@ With over 12 years in corporate sales and management, Dustin had built a success
 
 > "I've found the success that I've wanted to but at the end of the day, a lot of that effort is shown back to the company. If I were to go off on my own, a lot of my effort could be shown back to my company."
 
-### Discovering Airbnb Arbitrage {#discovering-airbnb-arbitrage}
+### Discovering Airbnb Arbitrage
 
 Dustin first encountered Preston Seo's content around January 2023 and spent several months absorbing the educational material. By April, he was hooked - the content spoke directly to his entrepreneurial aspirations. When the Airbnb Arbitrage program launched, Dustin signed up halfway through the webinar. He didn't need to hear more - the opportunity aligned perfectly with his goals.
 
@@ -188,15 +188,15 @@ Interestingly, Airbnb wasn't even Dustin's first choice for a business. It was a
 
 > "The detail of your content and the sincerity that you put towards your program - I was like, this is it, let's go."
 
-### The Decision to Go All In {#the-decision-to-go-all-in}
+### The Decision to Go All In
 
 By August 2023, Dustin was fully committed. He joined the program, got involved in the community, and declared he was doing this - even while maintaining his demanding 9-to-5 job. His background in sales gave him confidence in one area: talking to people on the phone. What he didn't realize was that this advantage would be overshadowed by a common beginner trap - analysis paralysis.
 
 ---
 
-## The Airbnb Arbitrage Journey: Dustin's Timeline {#journey}
+## The Airbnb Arbitrage Journey: Dustin's Timeline
 
-### The Paralysis Phase: Weeks 1-3 {#the-paralysis-phase}
+### The Paralysis Phase: Weeks 1-3
 
 **Situation**: Three weeks of research with zero phone calls made.
 
@@ -206,7 +206,7 @@ The reality hit hard when he finally started calling. The areas he'd researched 
 
 > "I spent three weeks doing that without making a phone call. I started calling into these markets and I realized the particular areas in those markets I was calling into - they were not friendly. There's a lot of restrictions or tons of competition, and my pitch just was not landing with them."
 
-### The Breakthrough Weekend {#the-breakthrough-weekend}
+### The Breakthrough Weekend
 
 **Situation**: One hot Texas weekend changed everything.
 
@@ -226,7 +226,7 @@ On a sweltering 105-degree weekend with no plans, Dustin committed to action. He
 
 > "Saturday and Sunday I spent maybe eight to ten hours both days in combination calling and I lined up five properties that landlords were like, let's go."
 
-### First Property Closed: Week 4 {#first-property-closed}
+### First Property Closed: Week 4
 
 **Situation**: From zero to signed lease in 4 weeks total.
 
@@ -236,7 +236,7 @@ What Dustin didn't know at the time: this property had been a failed Airbnb for 
 
 Dustin signed a **3-year lease** - a testament to his negotiating skills and the landlord's confidence in the arrangement.
 
-### Scaling to Property Two {#scaling-to-property-two}
+### Scaling to Property Two
 
 **Situation**: Similar strategy, even better deal structure.
 
@@ -258,11 +258,11 @@ This deal came with a bonus: the landlords agreed to **split furniture costs** a
 
 ---
 
-## How to Choose a Market for Airbnb Arbitrage: Dustin's Lakefront Strategy {#market}
+## How to Choose a Market for Airbnb Arbitrage: Dustin's Lakefront Strategy
 
 **Dustin's properties succeed because they offer family experiences around water.** Rather than chasing trendy markets, he focused on recreating experiences from his own childhood - and that personal connection drives everything from property selection to guest experience.
 
-### Why Lakefront Properties Work {#why-lakefront-properties-work}
+### Why Lakefront Properties Work
 
 Growing up in the Dallas area, Dustin's family had an RV at a lake about two hours away. Those childhood experiences around water - fishing, water sports, quality family time - shaped his criteria for Airbnb properties. He wanted to recreate that experience for guests.
 
@@ -278,7 +278,7 @@ His property criteria centers on:
 
 > "I wanted to recreate that because that's something that is a passion to me and I felt like I could share that passion with the guests."
 
-### Dustin's Market Research Process {#dustins-market-research-process}
+### Dustin's Market Research Process
 
 After failing with glamorous distant markets, Dustin developed a more practical approach:
 
@@ -294,11 +294,11 @@ The key insight: landlords can tell when you genuinely understand their area ver
 
 ---
 
-## Airbnb Arbitrage Strategies That Actually Work: Dustin's Playbook {#strategies}
+## Airbnb Arbitrage Strategies That Actually Work: Dustin's Playbook
 
 **The difference between Dustin's $6,000/month success and the previous operator's $1,000/month failure came down to strategy.** These five approaches transformed struggling properties into thriving businesses.
 
-### Strategy 1: Finding Diamonds in the Rough {#strategy-1-diamonds-in-the-rough}
+### Strategy 1: Finding Diamonds in the Rough
 
 **What it is**: Targeting properties with bad photos that have been sitting on the market for 30+ days.
 
@@ -324,7 +324,7 @@ His second property followed the same pattern: 5-6 bad photos on Zillow, sitting
 
 ---
 
-### Strategy 2: Turning Failed Airbnbs Around {#strategy-2-turning-failed-airbnbs-around}
+### Strategy 2: Turning Failed Airbnbs Around
 
 **What it is**: Taking over properties where previous operators couldn't succeed and applying proven systems.
 
@@ -360,7 +360,7 @@ Using Legacy Investing Show strategies - proper furniture setup, professional ph
 
 ---
 
-### Strategy 3: Long-Term Landlord Partnerships {#strategy-3-long-term-landlord-partnerships}
+### Strategy 3: Long-Term Landlord Partnerships
 
 **What it is**: Negotiating multi-year leases and partnership structures that benefit both parties.
 
@@ -400,7 +400,7 @@ Using Legacy Investing Show strategies - proper furniture setup, professional ph
 
 ---
 
-### Strategy 4: Experience-Driven Design {#strategy-4-experience-driven-design}
+### Strategy 4: Experience-Driven Design
 
 **What it is**: Designing properties around specific experiences rather than generic accommodations.
 
@@ -434,7 +434,7 @@ The personal touch matters: because Dustin is passionate about these experiences
 
 ---
 
-### Strategy 5: Automation from Day One {#strategy-5-automation-from-day-one}
+### Strategy 5: Automation from Day One
 
 **What it is**: Building systems and bringing on help immediately, not waiting until you're overwhelmed.
 
@@ -466,11 +466,11 @@ Before his first property was even live, Dustin brought on a business partner - 
 
 ---
 
-## Dustin's Airbnb Arbitrage Results: The Numbers {#results}
+## Dustin's Airbnb Arbitrage Results: The Numbers
 
 **Dustin generates approximately $6,000/month in net profit from 2 properties.** Here's the complete financial breakdown of his Airbnb arbitrage business.
 
-### Before vs. After Airbnb {#before-vs-after}
+### Before vs. After Airbnb
 
 | Metric | Before (Corporate Sales) | After (Airbnb Business) |
 |------|------|------|
@@ -480,7 +480,7 @@ Before his first property was even live, Dustin brought on a business partner - 
 | Time Commitment | Full-time corporate + overtime | <1 hour/week for Airbnb operations |
 | Ownership | Building someone else's company | Building personal wealth and business |
 
-### Complete Financial Breakdown {#financial-breakdown}
+### Complete Financial Breakdown
 
 **Property 1 Performance**:
 
@@ -510,7 +510,7 @@ Before his first property was even live, Dustin brought on a business partner - 
 | Best Month Revenue | $1,000 | $7,500 |
 | Improvement | - | **650% increase** |
 
-### Key Milestones Achieved {#key-milestones}
+### Key Milestones Achieved
 
 - First property secured within 4 weeks of joining program
 
@@ -528,13 +528,13 @@ Before his first property was even live, Dustin brought on a business partner - 
 
 ---
 
-## Airbnb Arbitrage Lessons: What Dustin Learned the Hard Way {#lessons}
+## Airbnb Arbitrage Lessons: What Dustin Learned the Hard Way
 
 **These five lessons took Dustin from frustrated beginner to $6,000/month cash flow.** Each one came from real experience - and could save you weeks of wasted effort.
 
 > "You're never going to figure that out if you sit and try to just be an expert before you make a movement. You got to make a movement and then you're going to learn along the way."
 
-### Lesson 1: Avoid Analysis Paralysis {#lesson-1-avoid-analysis-paralysis}
+### Lesson 1: Avoid Analysis Paralysis
 
 **The Mistake**: Spending weeks researching without taking action.
 
@@ -558,7 +558,7 @@ The turning point came when he recalibrated. Instead of researching for another 
 
 ---
 
-### Lesson 2: Call Markets You Know {#lesson-2-call-markets-you-know}
+### Lesson 2: Call Markets You Know
 
 **The Mistake**: Targeting unfamiliar markets because they look profitable on paper.
 
@@ -580,7 +580,7 @@ When he switched to Southern US markets he'd actually vacationed in, everything 
 
 ---
 
-### Lesson 3: See Potential Others Miss {#lesson-3-see-potential-others-miss}
+### Lesson 3: See Potential Others Miss
 
 **The Mistake**: Only pursuing properties that already look perfect.
 
@@ -606,7 +606,7 @@ His first property looked like it was decorated by someone in their 90s. That's 
 
 ---
 
-### Lesson 4: Build Systems Early {#lesson-4-build-systems-early}
+### Lesson 4: Build Systems Early
 
 **The Mistake**: Trying to do everything yourself until you're overwhelmed.
 
@@ -630,7 +630,7 @@ Result: with 2 properties live, he spends less than 1 hour per week on operation
 
 ---
 
-### Lesson 5: Take Action, Learn Later {#lesson-5-take-action-learn-later}
+### Lesson 5: Take Action, Learn Later
 
 **The Mistake**: Waiting until you feel ready before taking the leap.
 
@@ -656,7 +656,7 @@ That property became a $35,000/year profit machine.
 
 ---
 
-## Best Tools for Airbnb Arbitrage: Dustin's Tech Stack {#tools}
+## Best Tools for Airbnb Arbitrage: Dustin's Tech Stack
 
 **Dustin manages 2 properties in under 1 hour per week using these tools and systems.** Here's the stack that powers his business while he maintains his corporate job.
 
@@ -690,7 +690,7 @@ That property became a $35,000/year profit machine.
 
 ---
 
-## Dustin's Advice for Airbnb Arbitrage Beginners {#advice}
+## Dustin's Advice for Airbnb Arbitrage Beginners
 
 > "If it's something that you think you would enjoy, do it. Just pull the trigger. Whatever that hurdle is that's keeping you from already being there - just cross it because you're going to learn stuff."
 
@@ -782,7 +782,7 @@ He emphasizes that Airbnb arbitrage can fit almost any lifestyle:
 
 ---
 
-## Watch Dustin's Full Interview {#video}
+## Watch Dustin's Full Interview
 
 **Video highlights:**
 
@@ -802,7 +802,7 @@ He emphasizes that Airbnb arbitrage can fit almost any lifestyle:
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
 ### How much money can you really make with Airbnb arbitrage with no experience?
 
@@ -836,7 +836,7 @@ Dustin addresses this directly: the biggest risk is often in your head. He almos
 
 ---
 
-## Start Your Airbnb Arbitrage Journey {#start-your-journey}
+## Start Your Airbnb Arbitrage Journey
 
 **Ready to build your own Airbnb arbitrage business like Dustin?**
 
@@ -856,7 +856,7 @@ Dustin addresses this directly: the biggest risk is often in your head. He almos
 
 ---
 
-## About Legacy Investing Show {#about}
+## About Legacy Investing Show
 
 **Legacy Investing Show** is Preston Seo's comprehensive Airbnb arbitrage training program. Since founding, the program has:
 

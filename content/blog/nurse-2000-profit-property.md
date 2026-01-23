@@ -146,7 +146,7 @@ This case study breaks down exactly how Kirk built this Airbnb arbitrage busines
 
 ---
 
-## Quick Results: Kirk's Airbnb Arbitrage Numbers {#quick-results}
+## Quick Results: Kirk's Airbnb Arbitrage Numbers
 
 | Metric | Value | Context |
 |------|------|------|
@@ -161,17 +161,17 @@ This case study breaks down exactly how Kirk built this Airbnb arbitrage busines
 
 ---
 
-## Kirk's Background: From Full-Time Nurse to Airbnb Entrepreneur {#background}
+## Kirk's Background: From Full-Time Nurse to Airbnb Entrepreneur
 
 **You don't need business experience to build a successful Airbnb arbitrage business.** Kirk is proof: he came from nursing with absolutely no entrepreneurial background and built a cash-flowing business that exceeded his projections by 175%.
 
-### The Nursing Reality {#the-nursing-reality}
+### The Nursing Reality
 
 Kirk works as a full-time nurse, a demanding profession that offers stable income but limited upside. Looking around at his colleagues, he saw a concerning pattern that many healthcare workers recognize: older nurses in their 50s and 60s still doing the exact same thing, years away from retirement with no clear path to financial freedom.
 
 This observation became a turning point. Kirk realized that if he didn't do anything differently from what his older colleagues were doing, he would most likely end up exactly where they were in 20-30 years. The same shifts. The same pay scale. The same lack of time freedom. This realization sparked his search for an alternative path.
 
-### The Family Why {#the-family-why}
+### The Family Why
 
 Kirk's motivation extends beyond personal ambition. He has a blended family that includes his wife, two stepchildren from her previous marriage, a one-year-old, and a two-month-old baby. That's four kids total depending on him to be present, to provide, and to model what's possible.
 
@@ -179,7 +179,7 @@ His why crystallized around time freedom. He wanted the ability to spend more ti
 
 > "My ultimate goal is to spend more time with my family. I want the time and freedom to actually be here for them, see them grow up. That's why I'm doing this."
 
-### Discovering Airbnb Arbitrage {#discovering-airbnb-arbitrage}
+### Discovering Airbnb Arbitrage
 
 Kirk had always harbored thoughts about making money while sleeping, achieving passive income, and building something beyond his nursing career. But like many aspiring entrepreneurs, he had lots of thoughts and not much action. Ideas would come and go, but nothing materialized into actual business execution.
 
@@ -189,9 +189,9 @@ He wanted to sign up immediately but knew he needed to discuss it with his wife 
 
 ---
 
-## The Airbnb Arbitrage Journey: Kirk's Timeline {#journey}
+## The Airbnb Arbitrage Journey: Kirk's Timeline
 
-### The Starting Point {#starting-point}
+### The Starting Point
 
 **Situation**: Full-time nurse, father of four, zero business experience, and zero knowledge about Airbnb hosting.
 
@@ -199,7 +199,7 @@ Kirk entered the Legacy Investing Show program starting from absolute scratch. H
 
 The program's structured approach helped him navigate the information overload. Rather than trying to learn everything at once, he worked through the video modules systematically, focusing on one step at a time.
 
-### The Biggest Challenges {#biggest-challenges}
+### The Biggest Challenges
 
 **Situation**: Research paralysis and fear of landlord conversations created early obstacles.
 
@@ -219,7 +219,7 @@ This fear held him back initially, but he eventually embraced it as a necessary 
 
 > "Initially I don't like talking on the phone. I try to prevent that as much as possible. But this really got my feet wet. In the beginning a lot of people were saying no, but I saw that as more of an incentive."
 
-### Getting the First Yes {#getting-the-first-yes}
+### Getting the First Yes
 
 **Situation**: After multiple rejections, Kirk secured his property through persistent in-person outreach.
 
@@ -231,7 +231,7 @@ The lesson was clear: showing up consistently, even when tired, creates opportun
 
 ---
 
-## How to Choose a Market for Airbnb Arbitrage: Kirk's California Strategy {#market}
+## How to Choose a Market for Airbnb Arbitrage: Kirk's California Strategy
 
 **California presents unique opportunities for Airbnb arbitrage despite higher rents.** Kirk focused on his local market, researching competitors and identifying gaps he could fill with a differentiated approach.
 
@@ -257,11 +257,11 @@ This research revealed the farmhouse saturation in his market, leading Kirk to c
 
 ---
 
-## Airbnb Arbitrage Strategies That Actually Work: Kirk's Playbook {#strategies}
+## Airbnb Arbitrage Strategies That Actually Work: Kirk's Playbook
 
 **The difference between profitable and unprofitable Airbnb arbitrage often comes down to execution details.** Kirk attributes his success to five core strategies that transformed him from nervous beginner to confident host.
 
-### Strategy 1: Face-to-Face Landlord Meetings {#strategy-1}
+### Strategy 1: Face-to-Face Landlord Meetings
 
 **What it is**: Instead of relying solely on phone calls and emails, Kirk physically visited properties and pitched landlords in person.
 
@@ -293,7 +293,7 @@ Kirk's breakthrough property came from an in-person visit he almost skipped due 
 
 ---
 
-### Strategy 2: Personalized Script Delivery {#strategy-2}
+### Strategy 2: Personalized Script Delivery
 
 **What it is**: Rather than reading scripts verbatim, Kirk internalized the key points and made them personal to his own situation.
 
@@ -323,7 +323,7 @@ Kirk would mention that he's a nurse, reference his family, and share genuine re
 
 ---
 
-### Strategy 3: Differentiated Design Theme {#strategy-3}
+### Strategy 3: Differentiated Design Theme
 
 **What it is**: Kirk chose a mid-century boho design theme with pops of color rather than following the neutral farmhouse trend dominating his market.
 
@@ -353,7 +353,7 @@ His research showed most competitors using low-key neutral colors with farmhouse
 
 ---
 
-### Strategy 4: Experience-First Listing Photos {#strategy-4}
+### Strategy 4: Experience-First Listing Photos
 
 **What it is**: Kirk's cover photo and first five images focus on the experience guests will have, not just the space itself.
 
@@ -383,7 +383,7 @@ He invested in professional photography rather than taking iPhone photos. The qu
 
 ---
 
-### Strategy 5: Strategic Pricing for New Listings {#strategy-5}
+### Strategy 5: Strategic Pricing for New Listings
 
 **What it is**: Kirk initially priced slightly below market to build reviews, then increased prices as his listing gained traction and social proof.
 
@@ -413,7 +413,7 @@ He uses Price Labs' competitor calendar feature to see exactly what similar prop
 
 ---
 
-## Kirk's Airbnb Arbitrage Results: The Numbers {#results}
+## Kirk's Airbnb Arbitrage Results: The Numbers
 
 **Kirk exceeded his $2,000/month projection by 175%, generating $5,500 cash flow in his best month.** Here's the complete financial breakdown of his first Airbnb arbitrage property.
 
@@ -452,13 +452,13 @@ He uses Price Labs' competitor calendar feature to see exactly what similar prop
 
 ---
 
-## Airbnb Arbitrage Lessons: What Kirk Learned {#lessons}
+## Airbnb Arbitrage Lessons: What Kirk Learned
 
 **These five lessons took Kirk from zero business experience to $5,500/month cash flow.** Each one came from real experience and could save you months of trial and error.
 
 > "In order to change something if you don't like where you're at, you need to change something now."
 
-### Lesson 1: Have a Strong Why {#lesson-1}
+### Lesson 1: Have a Strong Why
 
 **The Mistake**: Starting a business without clear motivation, then quitting when it gets hard.
 
@@ -482,7 +482,7 @@ When he was tired from a nursing shift, running on 3-4 hours of sleep, and wante
 
 ---
 
-### Lesson 2: Skip the Research Rabbit Hole {#lesson-2}
+### Lesson 2: Skip the Research Rabbit Hole
 
 **The Mistake**: Spending hours researching online instead of making direct contact with landlords and property managers.
 
@@ -506,7 +506,7 @@ His breakthrough came when he realized a single phone call could accomplish more
 
 ---
 
-### Lesson 3: View Rejection as Practice {#lesson-3}
+### Lesson 3: View Rejection as Practice
 
 **The Mistake**: Getting discouraged by landlord rejections and interpreting them as personal failure.
 
@@ -530,7 +530,7 @@ Each "no" developed his pitch delivery, helped him anticipate objections, and pr
 
 ---
 
-### Lesson 4: Get a Supportive Partner {#lesson-4}
+### Lesson 4: Get a Supportive Partner
 
 **The Mistake**: Trying to build a business alone without someone who believes in you and pushes you forward.
 
@@ -554,7 +554,7 @@ The pivotal moment came when Kirk was exhausted and ready to skip a property vie
 
 ---
 
-### Lesson 5: Respond Thoughtfully to Guests {#lesson-5}
+### Lesson 5: Respond Thoughtfully to Guests
 
 **The Mistake**: Firing off quick, frustrated responses to guest messages, especially repeat questions.
 
@@ -578,7 +578,7 @@ He recognizes that from the guest's first inquiry to checkout, they're constantl
 
 ---
 
-## Best Tools for Airbnb Arbitrage: Kirk's Tech Stack {#tools}
+## Best Tools for Airbnb Arbitrage: Kirk's Tech Stack
 
 **Kirk manages his property efficiently using two core tools that automate pricing and guest communication.** Here's the tech stack that powers his $5,500/month business.
 
@@ -631,7 +631,7 @@ Kirk discovered an underutilized Airbnb feature: promotions that trigger email n
 
 ---
 
-## Kirk's Advice for Airbnb Arbitrage Beginners {#advice}
+## Kirk's Advice for Airbnb Arbitrage Beginners
 
 > "Just do it. Take the leap. You need to get out of your comfort zone in order to transform yourself into something that you want to be."
 
@@ -669,7 +669,7 @@ Kirk didn't wait until he felt confident or had all the answers. He started with
 
 ---
 
-## Watch Kirk's Full Interview {#video}
+## Watch Kirk's Full Interview
 
 **Video highlights:**
 
@@ -689,7 +689,7 @@ Kirk didn't wait until he felt confident or had all the answers. He started with
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
 ### How much money can you really make with Airbnb arbitrage as a nurse?
 
@@ -711,7 +711,7 @@ Time management is another consideration for nurses. Kirk now spends about 3 hou
 
 ---
 
-## Start Your Airbnb Arbitrage Journey {#start-journey}
+## Start Your Airbnb Arbitrage Journey
 
 **Ready to build your own Airbnb arbitrage business like Kirk?**
 
@@ -731,7 +731,7 @@ Time management is another consideration for nurses. Kirk now spends about 3 hou
 
 ---
 
-## About Legacy Investing Show {#about}
+## About Legacy Investing Show
 
 **Legacy Investing Show** is Preston Seo's comprehensive Airbnb arbitrage training program. Since founding, the program has:
 

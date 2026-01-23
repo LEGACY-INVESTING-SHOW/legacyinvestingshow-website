@@ -147,7 +147,7 @@ This case study breaks down exactly how Pavi transformed a previously failed Air
 
 ---
 
-## Quick Results: Pavi's Airbnb Numbers {#quick-results}
+## Quick Results: Pavi's Airbnb Numbers
 
 | Metric | Value | Context |
 |------|------|------|
@@ -162,23 +162,23 @@ This case study breaks down exactly how Pavi transformed a previously failed Air
 
 ---
 
-## Pavi's Background: From Biomedical Engineer to Airbnb Host {#background}
+## Pavi's Background: From Biomedical Engineer to Airbnb Host
 
 **You don't need real estate experience to build a successful Airbnb business.** Pavi came from an engineering background with 15 years in the medical device industry, juggling a demanding career while raising two young children. Her journey proves that methodical professionals can translate their skills directly into short-term rental success.
 
-### The Medical Device Career {#the-medical-device-career}
+### The Medical Device Career
 
 Pavi moved to the United States from India in 2006 to pursue her master's degree in biomedical engineering. She later added an Executive MBA to her credentials, demonstrating her drive for continuous learning and advancement. For 15 years, she built her career at a medical device company, gaining experience in project management, problem-solving, and systematic thinking.
 
 This corporate background became an unexpected asset in real estate. The same skills that helped her succeed in the medical device industry—detailed planning, risk assessment, process optimization, and stakeholder management—transferred directly to building and managing a short-term rental business.
 
-### Discovering Real Estate {#discovering-real-estate}
+### Discovering Real Estate
 
 In 2022, after years of successful career building, Pavi began asking herself what comes next. The medical device industry had been rewarding, but she wanted to achieve financial freedom and create generational wealth for her family. Real estate investing emerged as the path forward.
 
 Rather than diving in blindly, Pavi took a methodical approach. She read books, studied the market, and eventually decided to get her real estate license. She studied at night after putting her kids (then ages 4 and 1) to bed, passing her exam in October 2022. This credential gave her deeper market knowledge and access to MLS data that would prove invaluable.
 
-### The Instagram Reel That Changed Everything {#the-instagram-reel}
+### The Instagram Reel That Changed Everything
 
 Pavi's introduction to Airbnb arbitrage came through an unexpected source—an Instagram reel. She describes finding content that resonated with her because of its genuine approach and step-by-step methodology.
 
@@ -188,9 +188,9 @@ That discovery led her to join Legacy Investing Show in March 2023 when the comm
 
 ---
 
-## The Airbnb Journey: From Cold Calls to Closing {#journey}
+## The Airbnb Journey: From Cold Calls to Closing
 
-### First Cold Calls: The Rude Landlord Lesson {#first-cold-calls}
+### First Cold Calls: The Rude Landlord Lesson
 
 Pavi's original plan was to start with arbitrage—renting properties and subletting them as short-term rentals. She began researching markets and making cold calls to landlords, starting in North Carolina.
 
@@ -200,7 +200,7 @@ Her first significant call became a crucial learning experience. A landlord who 
 
 That conversation taught her two things: she needed to practice her pitch more, and she needed to understand regulations deeply before spending time calling landlords. It was a wake-up call that ultimately made her more effective.
 
-### Exploring Multiple Markets {#market-exploration}
+### Exploring Multiple Markets
 
 Armed with new knowledge, Pavi explored several markets before finding her fit:
 
@@ -214,7 +214,7 @@ Through this process, Pavi learned to leverage the Legacy Investing Show brand i
 
 > "I leveraged your name—that helped me a lot. I don't have a brand, I'm starting out, but you have a brand. I would say, 'This is the mastermind group I'm part of—go check it out on Instagram, on Facebook.' And they did, and they were like, 'This looks actually very interesting.'"
 
-### Finding the Poconos Property {#finding-poconos}
+### Finding the Poconos Property
 
 After exploring distant markets, Pavi and her husband made a strategic decision: for their first short-term rental, they wanted somewhere accessible within a single flight or, better yet, a drive. They landed on the Poconos Mountains—just 2 hours from their home in New Jersey.
 
@@ -232,11 +232,11 @@ When they found the right property, they closed in August 2023 and spent the nex
 
 ---
 
-## How to Choose a Market for Airbnb: The Poconos Strategy {#market}
+## How to Choose a Market for Airbnb: The Poconos Strategy
 
 **The Poconos is ideal for short-term rentals because it offers year-round demand within driving distance of multiple major metropolitan areas.** Pavi's market selection process offers a blueprint for anyone considering vacation rental markets.
 
-### Why the Poconos Works {#why-poconos}
+### Why the Poconos Works
 
 **Proximity**: Just 2 hours from New Jersey, the Poconos allowed Pavi to be on-site quickly if emergencies arose. For a first-time STR owner learning the business, this accessibility was non-negotiable.
 
@@ -252,7 +252,7 @@ When they found the right property, they closed in August 2023 and spent the nex
 
 **Metropolitan Accessibility**: The Poconos draws visitors from multiple major cities within a few hours' drive, creating a large potential guest pool that doesn't require air travel.
 
-### Pavi's Market Research Process {#market-research}
+### Pavi's Market Research Process
 
 Before committing, Pavi evaluated several critical factors:
 
@@ -268,11 +268,11 @@ Before committing, Pavi evaluated several critical factors:
 
 ---
 
-## Airbnb Strategies That Actually Work: Pavi's Playbook {#strategies}
+## Airbnb Strategies That Actually Work: Pavi's Playbook
 
 **The difference between a struggling Airbnb and a thriving one often comes down to systems and relationships.** Pavi's approach combines strategic planning with community building to create a business that runs smoothly from 2 hours away.
 
-### Strategy 1: The Local Team Connection {#strategy-1}
+### Strategy 1: The Local Team Connection
 
 **What it is**: Spending extended time in the market during setup to build genuine relationships with locals who become your boots-on-the-ground team.
 
@@ -304,7 +304,7 @@ Before committing, Pavi evaluated several critical factors:
 
 ---
 
-### Strategy 2: Video Walk-Through System {#strategy-2}
+### Strategy 2: Video Walk-Through System
 
 **What it is**: Instead of relying on photos after cleaning, conducting live video walk-throughs with your cleaner before each guest arrives.
 
@@ -336,7 +336,7 @@ This system gives Pavi peace of mind despite managing from 2 hours away. She kno
 
 ---
 
-### Strategy 3: Strict House Rules and Guest Screening {#strategy-3}
+### Strategy 3: Strict House Rules and Guest Screening
 
 **What it is**: Implementing clear house rules, using noise monitoring sensors, and proactively communicating with larger groups.
 
@@ -366,7 +366,7 @@ Pavi also learned an important lesson about exceptions: when she made an excepti
 
 ---
 
-### Strategy 4: Neighbor Relationship Building {#strategy-4}
+### Strategy 4: Neighbor Relationship Building
 
 **What it is**: Proactively building relationships with neighbors during the setup phase to create a support network and prevent complaints.
 
@@ -396,7 +396,7 @@ Pavi also learned an important lesson about exceptions: when she made an excepti
 
 ---
 
-### Strategy 5: Local Business Partnerships {#strategy-5}
+### Strategy 5: Local Business Partnerships
 
 **What it is**: Creating partnerships with local businesses that add unique value for guests while driving business to the community.
 
@@ -416,11 +416,11 @@ Pavi also learned an important lesson about exceptions: when she made an excepti
 
 ---
 
-## Pavi's Airbnb Results: The Numbers {#results}
+## Pavi's Airbnb Results: The Numbers
 
 **Pavi's Poconos property generates consistent cash flow with seasonal variations, proving that even a single property can create meaningful income.** Here's the complete financial picture.
 
-### Complete Financial Breakdown {#financial-breakdown}
+### Complete Financial Breakdown
 
 | Month | Performance | Notes |
 |------|------|------|
@@ -453,7 +453,7 @@ Pavi emphasizes that cash flow is only part of the picture when you own the prop
 
 > "In addition to the revenue and cash flow, there's a whole piece about investing. Our property is getting appreciated over time—I was just looking and noticed my own property has appreciated in the last five months. And I was able to write off a lot of these expenses in upgrading the property from my taxes."
 
-### Key Milestones Achieved {#milestones}
+### Key Milestones Achieved
 
 - ✅ **Real Estate License**: Obtained in October 2022 while working full-time with two kids
 
@@ -473,11 +473,11 @@ Pavi emphasizes that cash flow is only part of the picture when you own the prop
 
 ---
 
-## Airbnb Lessons: What Pavi Learned {#lessons}
+## Airbnb Lessons: What Pavi Learned
 
 **These five lessons took Pavi from complete beginner to profitable Airbnb host.** Each comes from real experience and could save you months of trial and error.
 
-### Lesson 1: Start Before You're Ready {#lesson-1}
+### Lesson 1: Start Before You're Ready
 
 **The Mistake**: Waiting for perfect conditions, perfect knowledge, or perfect timing before taking action.
 
@@ -501,7 +501,7 @@ Her first cold call experience with the rude landlord who owned 180 Airbnbs coul
 
 ---
 
-### Lesson 2: Your Cleaners Are Everything {#lesson-2}
+### Lesson 2: Your Cleaners Are Everything
 
 **The Mistake**: Picking the first cleaning service you find on Google without thorough vetting.
 
@@ -525,7 +525,7 @@ Her first cold call experience with the rude landlord who owned 180 Airbnbs coul
 
 ---
 
-### Lesson 3: Stick to Your House Rules {#lesson-3}
+### Lesson 3: Stick to Your House Rules
 
 **The Mistake**: Making exceptions to your own rules when guests ask nicely or situations seem special.
 
@@ -545,7 +545,7 @@ Her first cold call experience with the rude landlord who owned 180 Airbnbs coul
 
 ---
 
-### Lesson 4: Transform a Failed Airbnb into Success {#lesson-4}
+### Lesson 4: Transform a Failed Airbnb into Success
 
 **The Mistake**: Assuming that a property with a bad STR history can't be turned around.
 
@@ -569,7 +569,7 @@ By taking the time to build neighbor relationships, implement strict rules, inst
 
 ---
 
-### Lesson 5: Ownership Has Hidden Benefits {#lesson-5}
+### Lesson 5: Ownership Has Hidden Benefits
 
 **The Mistake**: Only considering cash flow when comparing arbitrage to ownership.
 
@@ -591,7 +591,7 @@ She acknowledges that arbitrage is excellent for building cash flow with less ca
 
 ---
 
-## Best Tools for Airbnb Management: Pavi's Setup {#tools}
+## Best Tools for Airbnb Management: Pavi's Setup
 
 **Pavi manages her Poconos property from 2 hours away using a combination of technology and trusted relationships.** Here's her essential toolkit.
 
@@ -629,7 +629,7 @@ She acknowledges that arbitrage is excellent for building cash flow with less ca
 
 ---
 
-## Pavi's Advice for Working Parents {#advice}
+## Pavi's Advice for Working Parents
 
 > "There is no perfect time to do it. It's never easy, it's never meant to be easy. So just take actions and work hard and it will pay off."
 
@@ -665,7 +665,7 @@ Now that her Poconos property is operating successfully, Pavi is looking at arbi
 
 ---
 
-## Watch Pavi's Full Interview {#video}
+## Watch Pavi's Full Interview
 
 **Video highlights:**
 
@@ -687,7 +687,7 @@ Now that her Poconos property is operating successfully, Pavi is looking at arbi
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
 ### How much money can you make with Airbnb while working full-time?
 
@@ -709,7 +709,7 @@ The systems she built—video walk-throughs with cleaners, noise monitoring, pro
 
 ---
 
-## Start Your Airbnb Journey {#start-journey}
+## Start Your Airbnb Journey
 
 **Ready to build your own Airbnb business like Pavi?**
 
@@ -729,7 +729,7 @@ The systems she built—video walk-throughs with cleaners, noise monitoring, pro
 
 ---
 
-## About Legacy Investing Show {#about}
+## About Legacy Investing Show
 
 **Legacy Investing Show** is Preston Seo's comprehensive Airbnb arbitrage training program. Since founding, the program has:
 

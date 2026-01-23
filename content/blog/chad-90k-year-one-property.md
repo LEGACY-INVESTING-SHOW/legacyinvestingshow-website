@@ -152,7 +152,7 @@ This case study breaks down exactly how Chad built this short-term rental busine
 
 ---
 
-## Quick Results: Chad's Short-Term Rental Numbers {#quick-results}
+## Quick Results: Chad's Short-Term Rental Numbers
 
 | Metric | Value | Context |
 |------|------|------|
@@ -167,11 +167,11 @@ This case study breaks down exactly how Chad built this short-term rental busine
 
 ---
 
-## Chad's Background: From Long-Term Rentals to STR Success {#background}
+## Chad's Background: From Long-Term Rentals to STR Success
 
 **You don't need to quit your day job to build a successful short-term rental business.** Chad has worked at the same company for 16 years while his wife works as a full-time teacher. Together they're raising two kids and now two dogs. His story proves that regular people with regular jobs can achieve extraordinary results with real estate investing.
 
-### The COVID Catalyst {#the-covid-catalyst}
+### The COVID Catalyst
 
 Like many people, Chad found himself doing deep introspection during the pandemic. Stuck at home with time to think, he started asking himself fundamental questions about life, legacy, and what he wanted to leave for his kids.
 
@@ -179,13 +179,13 @@ The questions kept coming: Am I doing what I really want to do? Is this what I w
 
 > "I started thinking about legacy and what am I going to leave for my kids. Is this really what I want to do for the rest of my life? I want to make more money obviously, and that's when I started kind of looking at where else I could bring some more income in."
 
-### Entrepreneurial Roots {#entrepreneurial-roots}
+### Entrepreneurial Roots
 
 Chad has always had an entrepreneurial spirit. As a kid, he ran a window washing business. He's had an instinct for finding good properties and seeing value that others might overlook. This combination of entrepreneurial drive and property intuition made real estate a natural fit.
 
 Before Camp Manatee, Chad owned a waterfront condo that he purchased shortly after graduating from school. He lived there for a few years, then converted it to a long-term rental when he met his wife and needed more space. That condo became his first investment property and a stepping stone to bigger opportunities.
 
-### Why Short-Term Over Long-Term Rentals {#why-short-term-over-long-term}
+### Why Short-Term Over Long-Term Rentals
 
 Chad eventually sold the condo and discovered why short-term rentals are often superior to long-term rentals. The experience taught him several important lessons that shaped his current strategy:
 
@@ -199,9 +199,9 @@ Chad eventually sold the condo and discovered why short-term rentals are often s
 
 ---
 
-## The Journey: From Decision to $90K Property {#journey}
+## The Journey: From Decision to $90K Property
 
-### The Decision to Buy vs. Arbitrage {#the-decision-to-buy}
+### The Decision to Buy vs. Arbitrage
 
 Unlike many beginners who start with rental arbitrage, Chad went directly into purchasing. While he acknowledges that arbitrage is a great way to "dip your toe in the pool" with less risk and capital, his circumstances led him to buying.
 
@@ -211,7 +211,7 @@ His long-term plan is to use the same strategy that arbitrage investors use, jus
 
 > "The arbitrage method is beautiful for people that are looking to dip their toe in the pool, so to speak. You know, to look to get to taste it, to see it. And it's a very less risky method obviously when you're not putting out $150,000 down payment."
 
-### The Golf Cart Mindset {#the-golf-cart-mindset}
+### The Golf Cart Mindset
 
 Chad shares a powerful mindset story about a golf cart. He always wanted one but kept telling himself he couldn't afford it, coming up with excuse after excuse about why he couldn't do it. Eventually, he just did it. He bought the golf cart, discovered he could pay for it along with everything else he was worried about, and now it sits in his garage as daily inspiration.
 
@@ -219,7 +219,7 @@ Every time Chad goes to work and sees that golf cart, he's reminded that the exc
 
 > "What's the worst that could happen? You lose some money. Obviously, you don't want to take risks that are going to bankrupt you. You got to make conservative changes and things that are not going to destroy your lifestyle."
 
-### Finding Camp Manatee {#finding-camp-manatee}
+### Finding Camp Manatee
 
 Chad and his family visited the North Florida area a couple of years before purchasing and fell in love with it. The property hunting process revealed just how crucial having the right realtor is.
 
@@ -229,11 +229,11 @@ The realtor also connected Chad with local resources essential for out-of-market
 
 ---
 
-## Market Selection: Why North Florida Natural Springs {#market}
+## Market Selection: Why North Florida Natural Springs
 
 **North Florida near the natural springs is ideal for short-term rentals because it offers multiple demand drivers that most people overlook.** Chad chose this market strategically, recognizing that less competitive markets can deliver exceptional returns.
 
-### Multiple Demand Drivers {#demand-drivers}
+### Multiple Demand Drivers
 
 Chad's property benefits from several converging demand sources:
 
@@ -249,7 +249,7 @@ Chad's property benefits from several converging demand sources:
 
 > "Other than beaches and Disney World, they're the third most attraction that people come to Florida for. I've got the university within 40 minutes. I've got these springs within 5 to 10, 15 minutes. I'm on a river. The property is 3 plus acres."
 
-### The Realtor Advantage {#the-realtor-advantage}
+### The Realtor Advantage
 
 Chad emphasizes that especially when buying out of market, the realtor is your most important relationship. A good realtor provides:
 
@@ -265,11 +265,11 @@ Not all realtors are created equal. Chad stresses doing research upfront because
 
 ---
 
-## Strategies That Crushed a Less Competitive Market {#strategies}
+## Strategies That Crushed a Less Competitive Market
 
 **The difference between struggling and thriving in short-term rentals often comes down to strategy.** Chad's approach focuses on maximizing the unique benefits of property ownership while building toward a larger portfolio.
 
-### Strategy 1: The Four-Quadrant Investment Approach {#strategy-1}
+### Strategy 1: The Four-Quadrant Investment Approach
 
 **What it is**: Chad structures his investment around the four benefits of real estate ownership, viewing each property as a vehicle that pays him in multiple ways simultaneously.
 
@@ -297,7 +297,7 @@ Not all realtors are created equal. Chad stresses doing research upfront because
 
 ---
 
-### Strategy 2: Location Stacking for Multiple Demographics {#strategy-2}
+### Strategy 2: Location Stacking for Multiple Demographics
 
 **What it is**: Selecting properties that serve multiple guest types through strategic location rather than trying to appeal to everyone with generic amenities.
 
@@ -335,7 +335,7 @@ Each segment books during different periods, creating more consistent demand yea
 
 ---
 
-### Strategy 3: Continuous Property Investment {#strategy-3}
+### Strategy 3: Continuous Property Investment
 
 **What it is**: Rather than maximizing short-term cash extraction, Chad continuously invests back into his property to improve the guest experience and support premium pricing.
 
@@ -363,11 +363,11 @@ Each segment books during different periods, creating more consistent demand yea
 
 ---
 
-## Financial Results: The Numbers Behind $90K/Year {#results}
+## Financial Results: The Numbers Behind $90K/Year
 
 **Chad generates approximately $90,000 in gross revenue from a single property in his first year.** Here's the complete financial breakdown of his short-term rental business.
 
-### Before vs. After Short-Term Rentals {#before-after}
+### Before vs. After Short-Term Rentals
 
 | Metric | Before (Long-Term Rental) | After (Camp Manatee) |
 |------|------|------|
@@ -378,7 +378,7 @@ Each segment books during different periods, creating more consistent demand yea
 | Personal Use | None (tenant occupied) | 4 family trips per year |
 | Stress Level | Tenant issues, HOA conflicts | Manageable (addicting once bookings flow) |
 
-### Complete Financial Breakdown {#financial-breakdown}
+### Complete Financial Breakdown
 
 | Category | Amount | Notes |
 |------|------|------|
@@ -390,7 +390,7 @@ Each segment books during different periods, creating more consistent demand yea
 
 Note: Chad mentions he's putting a good amount back into the property for upgrades and improvements. The $2,500 monthly cash flow figure accounts for this reinvestment strategy.
 
-### Key Milestones Achieved {#key-milestones}
+### Key Milestones Achieved
 
 - **Exceeded Revenue Projections**: Beat initial $65K estimate by nearly $25,000 in year one
 
@@ -408,13 +408,13 @@ Note: Chad mentions he's putting a good amount back into the property for upgrad
 
 ---
 
-## Lessons Learned: What Chad Wishes He Knew Earlier {#lessons}
+## Lessons Learned: What Chad Wishes He Knew Earlier
 
 **These five lessons took Chad from aspiring investor to $90,000 in annual revenue.** Each one came from real experience and could save you months of trial and error.
 
 > "It is a journey. It's not a destination because every day is different."
 
-### Lesson 1: Stop Making Excuses and Just Do It {#lesson-1}
+### Lesson 1: Stop Making Excuses and Just Do It
 
 **The Mistake**: Waiting for perfect conditions, more knowledge, or more money before taking action.
 
@@ -438,7 +438,7 @@ The same applies to real estate investing. People wait for the perfect property,
 
 ---
 
-### Lesson 2: The Realtor Is Your Lynchpin {#lesson-2}
+### Lesson 2: The Realtor Is Your Lynchpin
 
 **The Mistake**: Working with any available realtor instead of finding one who understands short-term rental investing.
 
@@ -462,7 +462,7 @@ Beyond finding the property, the realtor connected Chad with cleaners, handymen,
 
 ---
 
-### Lesson 3: Invest in Yourself First {#lesson-3}
+### Lesson 3: Invest in Yourself First
 
 **The Mistake**: Trying to figure everything out alone instead of learning from those who've already succeeded.
 
@@ -486,7 +486,7 @@ The knowledge he gained helped him avoid costly mistakes, recognize opportunitie
 
 ---
 
-### Lesson 4: Get Hands-On Before Going Hands-Off {#lesson-4}
+### Lesson 4: Get Hands-On Before Going Hands-Off
 
 **The Mistake**: Immediately handing everything to a property management company without understanding the business yourself.
 
@@ -510,7 +510,7 @@ However, he's now transitioning away from the management company to become more 
 
 ---
 
-### Lesson 5: This Business Changes Your Whole Mindset {#lesson-5}
+### Lesson 5: This Business Changes Your Whole Mindset
 
 **The Mistake**: Viewing short-term rentals as just another income stream instead of recognizing their broader life impact.
 
@@ -534,7 +534,7 @@ This isn't just financial freedom - it's psychological freedom. The stress of de
 
 ---
 
-## Tools and Team: Building the Support System {#tools}
+## Tools and Team: Building the Support System
 
 **Chad manages Camp Manatee with a lean but essential team.** Here's how he structures his support system for a single-property operation.
 
@@ -569,13 +569,13 @@ Initially, Chad prioritized getting the property on the market and generating ca
 
 ---
 
-## Chad's Advice for Aspiring STR Investors {#advice}
+## Chad's Advice for Aspiring STR Investors
 
 > "Invest in yourself, learn, make sure you do the homework and take the jump. You'll be surprised. You'll be surprised of what you can do. You'll be surprised what you can accomplish. You just got to do it sometimes."
 
 **If Chad were starting over today, here's exactly what he would do:**
 
-### For Complete Beginners {#for-beginners}
+### For Complete Beginners
 
 **Start with Education**: Chad invested in courses and learning before making his purchase. This wasn't an expense - it was insurance against expensive mistakes. Find credible educators who have actually done what they're teaching.
 
@@ -585,7 +585,7 @@ Initially, Chad prioritized getting the property on the market and generating ca
 
 **Consider Your Path**: Arbitrage offers lower risk and capital requirements - great for testing the waters. Purchasing offers all four wealth-building quadrants but requires more capital. Choose based on your situation, not someone else's advice.
 
-### Building a Long-Term Vision {#long-term-vision}
+### Building a Long-Term Vision
 
 Chad's plan extends far beyond one property:
 
@@ -603,7 +603,7 @@ Chad's plan extends far beyond one property:
 
 ---
 
-## Watch Chad's Full Interview {#video}
+## Watch Chad's Full Interview
 
 **Video highlights:**
 
@@ -623,7 +623,7 @@ Chad's plan extends far beyond one property:
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
 ### How much money can you really make with one Airbnb property?
 
@@ -655,7 +655,7 @@ The key is taking calculated risks that won't destroy your lifestyle, not avoidi
 
 ---
 
-## Start Your Short-Term Rental Journey {#start-journey}
+## Start Your Short-Term Rental Journey
 
 **Ready to build your own short-term rental business like Chad?**
 
@@ -675,7 +675,7 @@ The key is taking calculated risks that won't destroy your lifestyle, not avoidi
 
 ---
 
-## About Legacy Investing Show {#about}
+## About Legacy Investing Show
 
 **Legacy Investing Show** is Preston Seo's comprehensive short-term rental training program. Since founding, the program has:
 

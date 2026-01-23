@@ -150,7 +150,7 @@ This case study breaks down exactly how Tom built this Airbnb arbitrage business
 
 ---
 
-## Quick Results: Tom's Airbnb Arbitrage Numbers {#quick-results}
+## Quick Results: Tom's Airbnb Arbitrage Numbers
 
 | Metric | Value | Context |
 |------|------|------|
@@ -165,11 +165,11 @@ This case study breaks down exactly how Tom built this Airbnb arbitrage business
 
 ---
 
-## Tom's Background: From Capital One Executive to Airbnb Entrepreneur {#background}
+## Tom's Background: From Capital One Executive to Airbnb Entrepreneur
 
 **You don't need real estate experience to build a successful Airbnb business.** Tom spent multiple decades in software engineering and corporate leadership before discovering that his management skills translated directly to short-term rental success.
 
-### The Capital One Years {#the-capital-one-years}
+### The Capital One Years
 
 Tom's career arc followed a classic tech trajectory: from hands-on coding to leading teams to organizational leadership. At Capital One's headquarters in Washington DC, he was in charge of all ATM Fleet operations, deploying software and managing approximately 120 people across 14 software development teams. His days were consumed with coordination, strategy, and the endless demands of corporate life.
 
@@ -177,7 +177,7 @@ The work was consuming. Tom had been following Preston on Instagram for at least
 
 > "These corporate gigs just suck the life out of you. I had to put this all on pause for a few months because we had a bunch of end of year activities that consumes everybody."
 
-### The Layoff That Changed Everything {#the-layoff-that-changed-everything}
+### The Layoff That Changed Everything
 
 In January, Capital One announced a major layoff affecting about 1,100 people, including Tom's leadership role. What could have been devastating became an opportunity. Capital One provided a generous severance package, giving Tom the runway he needed to pursue Airbnb arbitrage full-time.
 
@@ -185,7 +185,7 @@ Tom's wife was doing caretaking work for a disabled individual at the time. When
 
 The timing was perfect. Tom had already done the research, followed the training, and understood the model. He just needed the freedom to execute.
 
-### Treating It As An Adventure {#treating-it-as-an-adventure}
+### Treating It As An Adventure
 
 Tom's mindset approach sets him apart from many who face similar crossroads. Rather than viewing the layoff and career change as a crisis, he and his wife chose to see it as an adventure.
 
@@ -195,9 +195,9 @@ This positive framing became essential as they navigated the inevitable challeng
 
 ---
 
-## The Airbnb Arbitrage Journey: Tom's Timeline {#journey}
+## The Airbnb Arbitrage Journey: Tom's Timeline
 
-### Discovery: Finding Preston on Instagram {#discovery-phase}
+### Discovery: Finding Preston on Instagram
 
 **Situation**: Working intense corporate hours while researching side income options.
 
@@ -205,7 +205,7 @@ Tom discovered the Legacy Investing Show through Instagram, where he spent at le
 
 The combination of factors aligned perfectly: Tom had funding available, a genuine interest in real estate, and growing dissatisfaction with corporate life. When he says Preston's content was "a life changer," he means it literally, crediting the information and framework with enabling his entire transition.
 
-### The Annapolis Lesson: Check Regulations First {#the-annapolis-lesson}
+### The Annapolis Lesson: Check Regulations First
 
 **Situation**: Excited to start, Tom began calling landlords in Annapolis, Maryland.
 
@@ -217,7 +217,7 @@ Then reality hit. During a call with a landlord, the man asked how they would de
 
 This painful lesson became one of Tom's most important pieces of advice: verify BOTH county AND city regulations before investing any time in a market.
 
-### Finding the Perfect Property {#finding-the-property}
+### Finding the Perfect Property
 
 **Situation**: After the Annapolis setback, Tom's wife discovered a different opportunity.
 
@@ -231,11 +231,11 @@ The due diligence process took about three to four weeks as the landlord talked 
 
 ---
 
-## How to Choose a Market for Airbnb Arbitrage: Tom's Chesapeake Bay Strategy {#market}
+## How to Choose a Market for Airbnb Arbitrage: Tom's Chesapeake Bay Strategy
 
 **The Chesapeake Bay is ideal for Airbnb arbitrage because it combines waterfront appeal, beach access, and authentic Maryland cultural experiences that guests can't replicate elsewhere.** Tom analyzed multiple markets before landing on this property, learning valuable lessons about market research along the way.
 
-### Why Chesapeake Bay Works for Short-Term Rentals {#why-chesapeake-works}
+### Why Chesapeake Bay Works for Short-Term Rentals
 
 **Waterfront Premium**: Properties near water command higher rates and attract guests seeking experiences beyond standard accommodations. Tom's property includes views of the Chesapeake Bay and proximity to the water that photos can showcase beautifully.
 
@@ -247,7 +247,7 @@ The due diligence process took about three to four weeks as the landlord talked 
 
 **Seasonality Considerations**: Tom understands that post-Christmas months (January-February) represent the seasonal low point based on Air DNA data. His strategy for future properties includes targeting warmer climates to hedge against this seasonality.
 
-### Tom's Market Research Process {#market-research-process}
+### Tom's Market Research Process
 
 Tom's first step was subscribing to Air DNA for market data. He emphasizes this investment as crucial for data mining and understanding market fundamentals before committing to any property.
 
@@ -265,11 +265,11 @@ Tom's first step was subscribing to Air DNA for market data. He emphasizes this 
 
 ---
 
-## Airbnb Arbitrage Strategies That Actually Work: Tom's Playbook {#strategies}
+## Airbnb Arbitrage Strategies That Actually Work: Tom's Playbook
 
 **The difference between profitable and unprofitable Airbnb arbitrage comes down to execution and systems.** Tom attributes his rapid success to five core strategies developed from his corporate management background.
 
-### Strategy 1: The Hands-On Launch Approach {#strategy-1}
+### Strategy 1: The Hands-On Launch Approach
 
 **What it is**: Tom and his wife chose to set up their first property themselves rather than delegating everything from the start.
 
@@ -301,7 +301,7 @@ This approach was intentional for their first property. They wanted to understan
 
 ---
 
-### Strategy 2: Building Cleaner Redundancy {#strategy-2}
+### Strategy 2: Building Cleaner Redundancy
 
 **What it is**: Instead of relying on one cleaner, Tom built a team of three cleaners with cross-checking responsibilities.
 
@@ -333,7 +333,7 @@ His solution went beyond simple backup coverage. He asked each cleaner if they w
 
 ---
 
-### Strategy 3: The Hotel-Quality Standard {#strategy-3}
+### Strategy 3: The Hotel-Quality Standard
 
 **What it is**: Tom communicates a specific mindset shift to his cleaners: they're not cleaning a home, they're preparing a superior hotel room.
 
@@ -371,7 +371,7 @@ Tom breaks cleaning into three distinct stages that his team follows:
 
 ---
 
-### Strategy 4: Local Partnership Building {#strategy-4}
+### Strategy 4: Local Partnership Building
 
 **What it is**: Tom actively cultivates relationships with local service providers and businesses to create unique guest experiences.
 
@@ -403,7 +403,7 @@ This neighbor now supplies crabs directly to Tom's guests at a significant disco
 
 ---
 
-### Strategy 5: Modified Landlord Script {#strategy-5}
+### Strategy 5: Modified Landlord Script
 
 **What it is**: Tom adapted the Legacy Investing Show landlord script to include a comfort-building phase before pitching the arbitrage concept.
 
@@ -433,11 +433,11 @@ This neighbor now supplies crabs directly to Tom's guests at a significant disco
 
 ---
 
-## Tom's Airbnb Arbitrage Results: The Numbers {#results}
+## Tom's Airbnb Arbitrage Results: The Numbers
 
 **Tom generates $5,000-$6,000/month in net cash flow from one Chesapeake Bay property.** Here's the complete financial breakdown of his Airbnb arbitrage business.
 
-### Before vs. After Airbnb Arbitrage {#before-after}
+### Before vs. After Airbnb Arbitrage
 
 | Metric | Before (Capital One) | After (Airbnb Business) |
 |------|------|------|
@@ -448,7 +448,7 @@ This neighbor now supplies crabs directly to Tom's guests at a significant disco
 | Work Enjoyment | Burned out on corporate life | "We have been having so much fun" |
 | Location Freedom | Office-based at HQ | Remote management capability |
 
-### Booking Performance {#booking-performance}
+### Booking Performance
 
 | Metric | Value | Notes |
 |------|------|------|
@@ -458,7 +458,7 @@ This neighbor now supplies crabs directly to Tom's guests at a significant disco
 | **September Bookings** | Filling | Strong shoulder season |
 | **Booking Frequency** | Daily new bookings | Calendar filling consistently |
 
-### Key Milestones Achieved {#key-milestones}
+### Key Milestones Achieved
 
 - ✅ **Secured Waterfront Property**: Chesapeake Bay location with private beach access
 
@@ -476,13 +476,13 @@ This neighbor now supplies crabs directly to Tom's guests at a significant disco
 
 ---
 
-## Airbnb Arbitrage Lessons: What Tom Learned the Hard Way {#lessons}
+## Airbnb Arbitrage Lessons: What Tom Learned the Hard Way
 
 **These five lessons took Tom from corporate refugee to $25K in bookings within two weeks.** Each one came from real experience and could save you weeks of wasted effort.
 
 > "Every business has bumps and challenges in the road. Don't look at mistakes as a negative thing, look at them as a positive because you're gonna learn something."
 
-### Lesson 1: Check Regulations First {#lesson-1}
+### Lesson 1: Check Regulations First
 
 **The Mistake**: Spending time researching and calling landlords in a market before fully understanding STR regulations.
 
@@ -506,7 +506,7 @@ The entire effort was wasted because Tom had missed city-level regulations that 
 
 ---
 
-### Lesson 2: Treat Property Search as a Numbers Game {#lesson-2}
+### Lesson 2: Treat Property Search as a Numbers Game
 
 **The Mistake**: Spending hours analyzing properties in detail before getting landlord commitment.
 
@@ -528,7 +528,7 @@ The entire effort was wasted because Tom had missed city-level regulations that 
 
 ---
 
-### Lesson 3: Build Your Team Before You Need Them {#lesson-3}
+### Lesson 3: Build Your Team Before You Need Them
 
 **The Mistake**: Waiting until the property is ready to launch before recruiting boots-on-the-ground team members.
 
@@ -550,7 +550,7 @@ The entire effort was wasted because Tom had missed city-level regulations that 
 
 ---
 
-### Lesson 4: Create Systems for Cleaner Excellence {#lesson-4}
+### Lesson 4: Create Systems for Cleaner Excellence
 
 **The Mistake**: Writing cleaning guides and expecting cleaners to follow them automatically.
 
@@ -574,7 +574,7 @@ The solution: having cleaners quality-check each other. This creates accountabil
 
 ---
 
-### Lesson 5: Have Your Documents Ready {#lesson-5}
+### Lesson 5: Have Your Documents Ready
 
 **The Mistake**: Not having lease and sublease agreements prepared when landlords express interest.
 
@@ -596,11 +596,11 @@ The solution: having cleaners quality-check each other. This creates accountabil
 
 ---
 
-## Best Tools for Airbnb Arbitrage: Tom's Tech Stack {#tools}
+## Best Tools for Airbnb Arbitrage: Tom's Tech Stack
 
 **Tom manages his Chesapeake Bay property with minimal daily time using these tools.** Here's the tech stack that powers his $5,000-$6,000/month business.
 
-### Essential Tools Overview {#essential-tools}
+### Essential Tools Overview
 
 | Category | Tool | Purpose | Why Tom Chose It |
 |------|------|------|------|
@@ -609,7 +609,7 @@ The solution: having cleaners quality-check each other. This creates accountabil
 | **Guest Communication** | Airbnb Messaging | Scheduled messages and variables | Built-in automation for check-in instructions |
 | **Property Setup** | Legacy Investing Show Spreadsheets | Furniture and supplies lists | Proven templates to copy and refine |
 
-### Price Labs: Dynamic Pricing {#price-labs}
+### Price Labs: Dynamic Pricing
 
 **What it does**: Automatically adjusts nightly rates based on demand, seasonality, local events, and market conditions.
 
@@ -617,7 +617,7 @@ The solution: having cleaners quality-check each other. This creates accountabil
 
 **Pro tip**: Spend time on initial configuration. The learning investment speeds up dramatically for subsequent properties.
 
-### Air DNA: Market Research {#air-dna}
+### Air DNA: Market Research
 
 **What it does**: Provides comprehensive market data including average daily rates, occupancy rates, revenue potential, and competitive analysis.
 
@@ -627,13 +627,13 @@ The solution: having cleaners quality-check each other. This creates accountabil
 
 ---
 
-## Tom's Advice for Airbnb Arbitrage Beginners {#advice}
+## Tom's Advice for Airbnb Arbitrage Beginners
 
 > "Just don't get discouraged. Start small and build up from there."
 
 **If Tom were starting over today, here's exactly what he would do:**
 
-### Step 1: Getting Started (Week 1-2) {#getting-started}
+### Step 1: Getting Started (Week 1-2)
 
 Tom emphasizes that his rapid success might be exceptional, but the framework applies universally. His specific recommendations for beginners:
 
@@ -643,7 +643,7 @@ Tom emphasizes that his rapid success might be exceptional, but the framework ap
 
 **Consider Starting Small**: Tom mentions that even a one-bedroom unit can be a learning experience with lower upfront capital. The goal is building experience and cash flow, not starting with a portfolio.
 
-### Step 2: Finding Properties (Week 3-6) {#finding-properties}
+### Step 2: Finding Properties (Week 3-6)
 
 **Treat It As a Numbers Game**: Call many landlords with initial pitches before investing time in deep analysis. Get interest first, then run numbers.
 
@@ -651,7 +651,7 @@ Tom emphasizes that his rapid success might be exceptional, but the framework ap
 
 **Don't Get Attached**: Tom looked at backup properties even while his primary deal was in progress. Landlord due diligence can take weeks; keep your pipeline moving.
 
-### Step 3: Setting Up Your First Property (Week 7-10) {#setup-launch}
+### Step 3: Setting Up Your First Property (Week 7-10)
 
 **Be Hands-On for First Property**: Learn every aspect of setup so you understand operations deeply. This knowledge becomes essential for managing remote teams later.
 
@@ -659,7 +659,7 @@ Tom emphasizes that his rapid success might be exceptional, but the framework ap
 
 **Build Redundancy**: Hire multiple cleaners and create cross-checking systems for quality control.
 
-### Mindset Advice from Tom {#mindset}
+### Mindset Advice from Tom
 
 Tom's most powerful advice relates to perspective rather than tactics:
 
@@ -673,7 +673,7 @@ Tom's most powerful advice relates to perspective rather than tactics:
 
 ---
 
-## Watch Tom's Full Interview {#video}
+## Watch Tom's Full Interview
 
 **Video highlights:**
 
@@ -693,7 +693,7 @@ Tom's most powerful advice relates to perspective rather than tactics:
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
 ### How much money can you really make with Airbnb arbitrage?
 
@@ -727,7 +727,7 @@ Tom identifies several risks he actively manages:
 
 ---
 
-## Start Your Airbnb Arbitrage Journey {#start-journey}
+## Start Your Airbnb Arbitrage Journey
 
 **Ready to build your own Airbnb arbitrage business like Tom?**
 
@@ -747,7 +747,7 @@ Tom identifies several risks he actively manages:
 
 ---
 
-## About Legacy Investing Show {#about}
+## About Legacy Investing Show
 
 **Legacy Investing Show** is Preston Seo's comprehensive Airbnb arbitrage training program. Since founding, the program has:
 

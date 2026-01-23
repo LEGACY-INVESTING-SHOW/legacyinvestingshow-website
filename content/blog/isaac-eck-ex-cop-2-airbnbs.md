@@ -144,7 +144,7 @@ This case study breaks down exactly how Isaac found a landlord who already under
 
 ---
 
-## Quick Results: Isaac's Airbnb Arbitrage Numbers {#quick-results}
+## Quick Results: Isaac's Airbnb Arbitrage Numbers
 
 | Metric | Value | Context |
 |------|------|------|
@@ -159,7 +159,7 @@ This case study breaks down exactly how Isaac found a landlord who already under
 
 ---
 
-## Isaac's Background: From Cop to Airbnb Entrepreneur {#background}
+## Isaac's Background: From Cop to Airbnb Entrepreneur
 
 **You don't need to follow a traditional path to build an Airbnb business.** Isaac's journey proves that entrepreneurial spirit and a willingness to take action matter more than a linear career in real estate.
 
@@ -179,9 +179,9 @@ The catalyst came when Isaac got married. He and his wife shared something rare:
 
 ---
 
-## The Airbnb Arbitrage Journey: Isaac's Timeline {#journey}
+## The Airbnb Arbitrage Journey: Isaac's Timeline
 
-### 2023: Discovery and Decision {#discovery}
+### 2023: Discovery and Decision
 
 **Situation**: Married, working as a cop, watching YouTube videos about Airbnb arbitrage
 
@@ -189,7 +189,7 @@ Isaac discovered Preston's YouTube channel while researching ways to generate pa
 
 The timing aligned perfectly with a major life change: his wife received an opportunity for travel nursing. This higher-paying, mobile nursing role would fund their startup costs while Isaac devoted himself fully to building the business.
 
-### November 2023: Quitting the Police Force {#quitting-job}
+### November 2023: Quitting the Police Force
 
 **Situation**: Three months into the program, ready to go full-time
 
@@ -197,7 +197,7 @@ Isaac quit his police job in November—just three months after joining Legacy I
 
 > "It has nothing to do with the profession—people always ask me that, like 'did you hate it?' I say no, I loved it. It's a very rewarding profession. But I was very early on into it, so as far as a pension goes, I didn't really lose much by leaving."
 
-### January 2024: First Property Live in Birmingham {#first-property}
+### January 2024: First Property Live in Birmingham
 
 **Situation**: First Airbnb property furnished and accepting guests
 
@@ -217,7 +217,7 @@ The property had a unique advantage: the previous tenant had already been doing 
 
 - First full month: February 2024
 
-### Early 2024: Second Property in Arkansas {#second-property}
+### Early 2024: Second Property in Arkansas
 
 **Situation**: Expanding to a seasonal lake market
 
@@ -227,11 +227,11 @@ The hot tub wasn't working initially, which hurt bookings. Isaac is working with
 
 ---
 
-## How to Choose a Market for Airbnb Arbitrage: Isaac's Strategy {#market}
+## How to Choose a Market for Airbnb Arbitrage: Isaac's Strategy
 
 **Birmingham works for Airbnb arbitrage because Isaac knew it personally.** He analyzed multiple markets before choosing—including Okaloosa Beach, Florida (too expensive), Savannah (regulations), Scottsdale, Phoenix, and Grand Canyon areas—but kept coming back to familiarity.
 
-### The Market Research Process {#market-research}
+### The Market Research Process
 
 Isaac's approach combined data analysis with local knowledge:
 
@@ -251,7 +251,7 @@ For Birmingham specifically, Isaac discovered that 47% of listings were one-bedr
 
 Birmingham isn't Miami or Austin. It's not the market everyone talks about. But Isaac knew the area, had connections for his boots-on-the-ground team, and understood what makes the city special.
 
-### The Unfair Advantage of Local Knowledge {#unfair-advantage}
+### The Unfair Advantage of Local Knowledge
 
 When you know a market personally, your welcome book writes itself. Isaac can recommend restaurants that only locals know about. Guests feel like they're staying with someone who actually lives there.
 
@@ -261,11 +261,11 @@ When you know a market personally, your welcome book writes itself. Isaac can re
 
 ---
 
-## Airbnb Arbitrage Strategies That Actually Work: Isaac's Playbook {#strategies}
+## Airbnb Arbitrage Strategies That Actually Work: Isaac's Playbook
 
 **The difference between struggling and thriving in Airbnb arbitrage comes down to strategy.** Isaac's success stems from three core approaches that leverage market gaps, landlord psychology, and competitive positioning.
 
-### Strategy 1: Target Underserved Property Sizes {#strategy-1}
+### Strategy 1: Target Underserved Property Sizes
 
 **What it is**: Using AirDNA data to identify property sizes with low supply but high demand
 
@@ -295,7 +295,7 @@ Guests searching for large group accommodations filter by bedroom count. If you 
 
 ---
 
-### Strategy 2: Win Over Landlords Who've Done Arbitrage Before {#strategy-2}
+### Strategy 2: Win Over Landlords Who've Done Arbitrage Before
 
 **What it is**: Specifically targeting properties where previous tenants did Airbnb arbitrage
 
@@ -329,7 +329,7 @@ The previous tenant was leaving not because arbitrage failed, but because she wa
 
 ---
 
-### Strategy 3: Amenity Competition Analysis {#strategy-3}
+### Strategy 3: Amenity Competition Analysis
 
 **What it is**: Studying top-performing competitors and strategically matching or exceeding their amenities
 
@@ -359,11 +359,11 @@ The competitor had arcade games, a speakeasy, and could sleep 16 people. Isaac c
 
 ---
 
-## Isaac's Airbnb Arbitrage Results: The Numbers {#results}
+## Isaac's Airbnb Arbitrage Results: The Numbers
 
 **Isaac's Birmingham property is performing well; his Arkansas property is a work in progress.** Here's the honest breakdown of both properties' financials.
 
-### Birmingham Property Performance {#birmingham-numbers}
+### Birmingham Property Performance
 
 **February 2024 Results**:
 
@@ -391,7 +391,7 @@ The competitor had arcade games, a speakeasy, and could sleep 16 people. Isaac c
 
 - Neighbor's 6-bedroom revenue (ceiling): $125,000
 
-### Arkansas Property Performance {#arkansas-numbers}
+### Arkansas Property Performance
 
 The Arkansas lake property is highly seasonal. Here's the reality:
 
@@ -415,7 +415,7 @@ Similar properties in the area range from $62,000 to $110,000 in annual revenue�
 
 > "Even if we come in below $62K, let's say $55K, we're still in the green. Maybe not making our money back on initial investment, but at least the expenses to operate aren't losing money."
 
-### Combined Portfolio Goals {#combined-goals}
+### Combined Portfolio Goals
 
 | Goal | Target |
 |------|------|
@@ -426,13 +426,13 @@ Similar properties in the area range from $62,000 to $110,000 in annual revenue�
 
 ---
 
-## Airbnb Arbitrage Lessons: What Isaac Learned the Hard Way {#lessons}
+## Airbnb Arbitrage Lessons: What Isaac Learned the Hard Way
 
 **These five lessons transformed Isaac from someone watching YouTube videos to someone running two properties across two states.** Each one came from real experience—and could save you months of trial and error.
 
 > "Being a cop, they always tell you to have a strong why that you do something. I would say the same thing applies to business."
 
-### Lesson 1: Take Action Before You Feel Ready {#lesson-1}
+### Lesson 1: Take Action Before You Feel Ready
 
 **The Mistake**: Waiting until you know everything before making your first call
 
@@ -456,7 +456,7 @@ His first real calls after joining the program weren't polished either. He got y
 
 ---
 
-### Lesson 2: Communication Is Everything for Cleaners {#lesson-2}
+### Lesson 2: Communication Is Everything for Cleaners
 
 **The Mistake**: Hiring based on price or availability instead of responsiveness
 
@@ -478,7 +478,7 @@ His first real calls after joining the program weren't polished either. He got y
 
 ---
 
-### Lesson 3: Have a Strong Why {#lesson-3}
+### Lesson 3: Have a Strong Why
 
 **The Mistake**: Starting a business because it sounds good, not because you have a deep reason
 
@@ -502,7 +502,7 @@ His why: freedom to be present. He and his wife want flexibility—not just weal
 
 ---
 
-### Lesson 4: Leverage Your Partner's Strengths {#lesson-4}
+### Lesson 4: Leverage Your Partner's Strengths
 
 **The Mistake**: Trying to do everything yourself when you have a capable partner
 
@@ -526,7 +526,7 @@ Their division of labor: she designs, he executes. She buys, he builds. She hand
 
 ---
 
-### Lesson 5: Anticipate Seasonality (and Budget for It) {#lesson-5}
+### Lesson 5: Anticipate Seasonality (and Budget for It)
 
 **The Mistake**: Assuming monthly income will be consistent across all seasons
 
@@ -550,7 +550,7 @@ The key is anticipating this in your projections. If you know January-February w
 
 ---
 
-## Best Tools for Airbnb Arbitrage: Isaac's Tech Stack {#tools}
+## Best Tools for Airbnb Arbitrage: Isaac's Tech Stack
 
 **Isaac manages 2 properties across 2 states using automation tools that handle routine tasks automatically.** Here's his complete tech stack.
 
@@ -599,7 +599,7 @@ The key is anticipating this in your projections. If you know January-February w
 
 ---
 
-## Isaac's Advice for Airbnb Arbitrage Beginners {#advice}
+## Isaac's Advice for Airbnb Arbitrage Beginners
 
 > "Have a strong reason for why you're doing it. Not just 'I want to be rich'—follow the why until you get down to the deep meaning of what your motivation is."
 
@@ -647,7 +647,7 @@ His wife being fully aligned made the journey sustainable. They celebrate wins t
 
 ---
 
-## Watch Isaac's Full Interview {#video}
+## Watch Isaac's Full Interview
 
 **Video highlights:**
 
@@ -667,7 +667,7 @@ His wife being fully aligned made the journey sustainable. They celebrate wins t
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
 ### Can you really start Airbnb arbitrage as a couple?
 

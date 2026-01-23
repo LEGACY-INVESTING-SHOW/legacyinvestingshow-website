@@ -150,7 +150,7 @@ This case study breaks down exactly how Sarah and Nico built their Airbnb partne
 
 ---
 
-## Quick Results: Sarah and Nico's Airbnb Arbitrage Numbers {#quick-results}
+## Quick Results: Sarah and Nico's Airbnb Arbitrage Numbers
 
 | Metric | Value | Context |
 |------|------|------|
@@ -166,11 +166,11 @@ This case study breaks down exactly how Sarah and Nico built their Airbnb partne
 
 ---
 
-## Sarah and Nico's Background: High School Friends Reunited {#background}
+## Sarah and Nico's Background: High School Friends Reunited
 
 **You don't need a traditional business partner to start Airbnb arbitrage—but the right partner can accelerate everything.** Sarah and Nico's story proves that complementary strengths, aligned goals, and a foundation of trust can create a powerful business dynamic.
 
-### The Digital Marketing Connection {#the-digital-marketing-connection}
+### The Digital Marketing Connection
 
 Sarah and Nico first met in high school and were even in a relationship back then. After graduation, they went their separate ways, but their paths kept crossing in unexpected ways. Both ended up pursuing careers in sales, then found themselves in the same digital marketing mastermind—completely by coincidence.
 
@@ -180,7 +180,7 @@ When they realized they were both learning the same skills and interested in the
 
 The digital marketing experience taught them valuable lessons about entrepreneurship, but it also showed them what they didn't want to do. When Nico discovered Airbnb arbitrage and joined the Legacy Investing Show program, everything clicked into place.
 
-### Finding the Right Partner {#finding-the-right-partner}
+### Finding the Right Partner
 
 Two days after Nico bought the Legacy Investing Show program, he called Sarah. She had cash sitting in the bank not earning anything, and he had the drive to make things happen. The conversation was simple: "Let's do this."
 
@@ -192,9 +192,9 @@ This dynamic means they rarely make impulsive financial mistakes. When one partn
 
 ---
 
-## The Airbnb Arbitrage Journey: Sarah and Nico's Timeline {#journey}
+## The Airbnb Arbitrage Journey: Sarah and Nico's Timeline
 
-### 2024: Discovery and Decision {#2024-discovery-and-decision}
+### 2024: Discovery and Decision
 
 **Situation**: Two friends with sales backgrounds seeking passive income opportunities.
 
@@ -204,7 +204,7 @@ The combination of real estate and entrepreneurship felt like the perfect fit. N
 
 > "I called her two days later to talk about it. She's like, 'I've got all this cash from the bank, it's not making money. Let's do this.' And that's literally how it formed."
 
-### First Property Secured {#first-property-secured}
+### First Property Secured
 
 **Situation**: From referral to launch in 3.5 weeks.
 
@@ -232,11 +232,11 @@ The entire process from referral to live listing took just three and a half week
 
 ---
 
-## How to Choose a Market for Airbnb Arbitrage: Sarah and Nico's Salem Strategy {#market}
+## How to Choose a Market for Airbnb Arbitrage: Sarah and Nico's Salem Strategy
 
 **Salem, Oregon works for Airbnb arbitrage because it combines government traveler demand with affordable rent prices and landlord-friendly conditions.** Sarah and Nico chose Salem not because it was the "perfect" market, but because they stopped overanalyzing and started acting.
 
-### Overcoming Analysis Paralysis {#overcoming-analysis-paralysis}
+### Overcoming Analysis Paralysis
 
 Like many beginners, Sarah and Nico initially fell into the trap of searching for the perfect market. They spent time reviewing occupancy data, comparing different Oregon markets, and debating the optimal location. Even with Nico's cold calling experience, the analysis paralysis was real.
 
@@ -244,7 +244,7 @@ Like many beginners, Sarah and Nico initially fell into the trap of searching fo
 
 The breakthrough came when they stopped searching for perfection and started executing. As soon as Nico received a referral from his realtor network, they pursued it aggressively—regardless of whether Salem was the "ideal" market on paper.
 
-### The Network Strategy That Found Their First Deal {#the-network-strategy}
+### The Network Strategy That Found Their First Deal
 
 Instead of relying solely on cold calling, Nico leveraged his existing network. He reached out to every realtor he knew in the area with a simple pitch:
 
@@ -268,11 +268,11 @@ The lesson: sometimes the best market is the one where you can actually close a 
 
 ---
 
-## Airbnb Arbitrage Strategies That Actually Work: Sarah and Nico's Playbook {#strategies}
+## Airbnb Arbitrage Strategies That Actually Work: Sarah and Nico's Playbook
 
 **The difference between profitable and unprofitable Airbnb arbitrage often comes down to partnership dynamics, deal sourcing, and property presentation.** Sarah and Nico attribute their success to four core strategies that beginners often overlook.
 
-### Strategy 1: The Partnership Mindset {#strategy-1-partnership-mindset}
+### Strategy 1: The Partnership Mindset
 
 **What it is**: Approaching business decisions with the question "Do we want to be right or do we want to win?"
 
@@ -306,7 +306,7 @@ When they disagree—and they do disagree—they ask themselves whether the batt
 
 ---
 
-### Strategy 2: Networking Over Cold Calling {#strategy-2-networking-over-cold-calling}
+### Strategy 2: Networking Over Cold Calling
 
 **What it is**: Leveraging existing relationships to find deals before resorting to cold outreach.
 
@@ -338,7 +338,7 @@ Nico's approach was simple: reach out to every realtor, real estate professional
 
 ---
 
-### Strategy 3: Budget-Conscious Design {#strategy-3-budget-conscious-design}
+### Strategy 3: Budget-Conscious Design
 
 **What it is**: Working with existing furniture and design elements rather than starting from scratch.
 
@@ -374,7 +374,7 @@ The property had a red couch and black chairs when they arrived. Most designers 
 
 ---
 
-### Strategy 4: Wow Factor Amenities {#strategy-4-wow-factor-amenities}
+### Strategy 4: Wow Factor Amenities
 
 **What it is**: Creating standout features that differentiate your property from competitors and drive bookings.
 
@@ -412,11 +412,11 @@ Sarah and Nico prioritized their outdoor space because they recognized it as the
 
 ---
 
-## Sarah and Nico's Airbnb Arbitrage Results: The Numbers {#results}
+## Sarah and Nico's Airbnb Arbitrage Results: The Numbers
 
 **Sarah and Nico generate approximately $2,508/month in net profit from one property.** Here's the complete financial breakdown of their Airbnb arbitrage business.
 
-### Complete Financial Breakdown {#complete-financial-breakdown}
+### Complete Financial Breakdown
 
 | Category | Amount | Notes |
 |------|------|------|
@@ -426,7 +426,7 @@ Sarah and Nico prioritized their outdoor space because they recognized it as the
 | **Supplies** | ~$50-100 | Restocking essentials |
 | **Total Monthly Expenses** | ~$1,800-2,000 | Estimated |
 
-### Monthly Revenue Progression {#monthly-revenue-progression}
+### Monthly Revenue Progression
 
 | Month | Gross Revenue | Estimated Net | Occupancy |
 |------|------|------|------|
@@ -445,7 +445,7 @@ Sarah and Nico prioritized their outdoor space because they recognized it as the
 
 - ROI focus: They want to recoup their $7,600 investment as quickly as possible before scaling
 
-### Startup Investment Breakdown: $7,600 Total {#startup-investment-breakdown}
+### Startup Investment Breakdown: $7,600 Total
 
 | Expense | Amount | Notes |
 |------|------|------|
@@ -455,7 +455,7 @@ Sarah and Nico prioritized their outdoor space because they recognized it as the
 | Realtor referral fee (Kevin) | ~$500 | For finding the property |
 | **Total** | **$7,600** | All-in cost |
 
-### Key Milestones Achieved {#key-milestones}
+### Key Milestones Achieved
 
 - ✅ **Launched first property in 3.5 weeks**: From referral to live listing
 
@@ -473,13 +473,13 @@ Sarah and Nico prioritized their outdoor space because they recognized it as the
 
 ---
 
-## Airbnb Arbitrage Lessons: What Sarah and Nico Learned {#lessons}
+## Airbnb Arbitrage Lessons: What Sarah and Nico Learned
 
 **These five lessons helped Sarah and Nico go from zero to $2,508/month in under two months.** Each one came from real experience and could save you significant time and money.
 
 > "We didn't even think about it. Once we had a referral, we just jumped on it, and then three and a half weeks later we're making money."
 
-### Lesson 1: Do You Want to Be Right or Do You Want to Win? {#lesson-1-do-you-want-to-be-right-or-win}
+### Lesson 1: Do You Want to Be Right or Do You Want to Win?
 
 **The Mistake**: Letting ego drive business decisions and damaging partnerships over trivial disagreements.
 
@@ -501,7 +501,7 @@ This mindset preserved their 15-year friendship while building a business togeth
 
 ---
 
-### Lesson 2: Reach Out to Your Network First {#lesson-2-reach-out-to-your-network-first}
+### Lesson 2: Reach Out to Your Network First
 
 **The Mistake**: Spending weeks cold calling strangers when warm leads exist in your existing network.
 
@@ -525,7 +525,7 @@ This doesn't mean cold calling doesn't work—Nico has three deals in his pipeli
 
 ---
 
-### Lesson 3: Professional Photography Matters {#lesson-3-professional-photography-matters}
+### Lesson 3: Professional Photography Matters
 
 **The Mistake**: Using iPhone photos and wondering why bookings are slow.
 
@@ -547,7 +547,7 @@ This doesn't mean cold calling doesn't work—Nico has three deals in his pipeli
 
 ---
 
-### Lesson 4: Cold Calling Isn't as Scary as You Think {#lesson-4-cold-calling-isnt-as-scary-as-you-think}
+### Lesson 4: Cold Calling Isn't as Scary as You Think
 
 **The Mistake**: Avoiding cold outreach because of fear, even though it's one of the most effective ways to find deals.
 
@@ -571,7 +571,7 @@ Key mindset shift: You're not interrupting strangers. You're the owner of a comp
 
 ---
 
-### Lesson 5: Just Take Action {#lesson-5-just-take-action}
+### Lesson 5: Just Take Action
 
 **The Mistake**: Spending months researching the perfect market while opportunities pass by.
 
@@ -593,11 +593,11 @@ Key mindset shift: You're not interrupting strangers. You're the owner of a comp
 
 ---
 
-## Best Tools for Airbnb Arbitrage: Sarah and Nico's Approach {#tools}
+## Best Tools for Airbnb Arbitrage: Sarah and Nico's Approach
 
 **Sarah and Nico manage their property with minimal time investment using simple systems and templates.** Here's how they handle operations.
 
-### Operations Overview {#operations-overview}
+### Operations Overview
 
 | Category | Approach | Why It Works |
 |------|------|------|
@@ -608,7 +608,7 @@ Key mindset shift: You're not interrupting strangers. You're the owner of a comp
 | **Hot Tub Maintenance** | Nico handles personally | "My brainchild"—enjoys maintaining it |
 | **Budgeting** | Custom spreadsheet | Based on LIS template, modified for partially furnished property |
 
-### Guest Messaging System {#guest-messaging-system}
+### Guest Messaging System
 
 **What they do**: Use templates for every stage of the guest journey, but add a human touch by waiting before responding.
 
@@ -616,7 +616,7 @@ Key mindset shift: You're not interrupting strangers. You're the owner of a comp
 
 **Time investment**: Minimal. Even with a full-time job, the messaging takes almost no time because everything is templated.
 
-### Cleaning Coordination {#cleaning-coordination}
+### Cleaning Coordination
 
 **What they do**: Use a part-time cleaner for most turnovers, but Nico sometimes cleans himself to save money and ensure quality.
 
@@ -626,7 +626,7 @@ Key mindset shift: You're not interrupting strangers. You're the owner of a comp
 
 **Scaling plan**: When they acquire larger properties (4+ bedrooms), they'll transition to dedicated cleaners. The hands-on approach works for their first property but isn't scalable.
 
-### Finding Cleaners {#finding-cleaners}
+### Finding Cleaners
 
 **Recommended platforms**: Thumbtack and other sites recommended in the LIS training
 
@@ -636,37 +636,37 @@ Key mindset shift: You're not interrupting strangers. You're the owner of a comp
 
 ---
 
-## Sarah and Nico's Advice for Airbnb Arbitrage Beginners {#advice}
+## Sarah and Nico's Advice for Airbnb Arbitrage Beginners
 
 > "Stop making excuses for yourself. Invest in yourself. I've bought courses for like five grand that I've never even pursued. But you know what? I'm going to do it eventually, and I invested in myself. I took a shot on myself, which is more than some people have done in their entire lives."
 
 **If Sarah and Nico were starting over today, here's exactly what they would do:**
 
-### Step 1: Stop Making Excuses {#step-1-stop-making-excuses}
+### Step 1: Stop Making Excuses
 
 Nico's advice is blunt: most people never start because they're waiting for perfect conditions that don't exist. They research endlessly, find reasons why it won't work, and stay stuck in analysis paralysis.
 
 The solution? Commit to a deadline and take action regardless of whether you feel ready. Sarah and Nico weren't fully prepared when their referral came through—they just moved fast and figured it out.
 
-### Step 2: Invest in Yourself {#step-2-invest-in-yourself}
+### Step 2: Invest in Yourself
 
 Nico has spent over $50,000 on courses and masterminds. Some he never finished. But the Legacy Investing Show program delivered immediate ROI because he took action on what he learned.
 
 > "This is the best course I've ever done. You literally actually do things step by step, even like the ticky-tacky things which most people don't do. You literally go over like the tiniest little details, and it was the best course for the best value I have ever invested in."
 
-### Step 3: Stop Chasing Shiny Objects {#step-3-stop-chasing-shiny-objects}
+### Step 3: Stop Chasing Shiny Objects
 
 Sarah and Nico tried digital marketing before finding Airbnb arbitrage. The experience taught them that the "perfect" business opportunity doesn't exist—every business requires work, and success comes from commitment, not from finding an easy path.
 
 > "Stop having shiny object syndrome. 'Oh I want to get into affiliate marketing. Oh this is work, maybe I'll find that one thing that pays me 10 grand a month and I do nothing.' It doesn't exist. I promise you—Preston would be doing it, everybody would be doing it, we would be doing it."
 
-### Step 4: Surround Yourself with the Right People {#step-4-surround-yourself-with-the-right-people}
+### Step 4: Surround Yourself with the Right People
 
 If you're not naturally self-motivated, find a partner or join a community. Accountability accelerates action. Sarah and Nico push each other forward when one might otherwise hesitate.
 
 > "If you're not self-motivated, get a partner. Get into a community like this one. Surround yourself with people because proximity is power. You are a direct product of the people that you hang out with."
 
-### Step 5: Prioritize What Matters {#step-5-prioritize-what-matters}
+### Step 5: Prioritize What Matters
 
 Sarah's perspective adds depth to Nico's urgency. She emphasizes that the fear of not trying hurts more than the fear of failure.
 
@@ -674,7 +674,7 @@ Sarah's perspective adds depth to Nico's urgency. She emphasizes that the fear o
 
 ---
 
-## Watch Sarah and Nico's Full Interview {#video}
+## Watch Sarah and Nico's Full Interview
 
 **Video highlights:**
 
@@ -698,15 +698,15 @@ Sarah's perspective adds depth to Nico's urgency. She emphasizes that the fear o
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
-### How much money can you really make with Airbnb arbitrage as a beginner? {#faq-make-money}
+### How much money can you really make with Airbnb arbitrage as a beginner?
 
 Sarah and Nico generate approximately $2,508/month in net profit from their first property—a two-bedroom condo in Salem, Oregon. Their gross revenue ranges from $3,500-$4,000+ per month depending on seasonality, with expenses around $1,800-2,000 (primarily rent at $1,650 plus utilities and supplies).
 
 Their results are notable because they achieved 90% occupancy in their first two months with minimal experience. The key factors: professional photography, strategic amenities (hot tub, fire pit), and launching during spring (leading into peak summer season).
 
-### Should you partner with someone for Airbnb arbitrage? {#faq-partnership}
+### Should you partner with someone for Airbnb arbitrage?
 
 Sarah and Nico's partnership works because of several specific factors that may or may not apply to your situation:
 
@@ -720,7 +720,7 @@ Sarah and Nico's partnership works because of several specific factors that may 
 
 The benefits: split risk, split workload, accountability, and faster execution. The risks: potential friendship damage, disagreements over money, and profit sharing. Only pursue a partnership if you genuinely trust the other person and have aligned goals.
 
-### What's the biggest risk with Airbnb arbitrage partnerships? {#faq-biggest-risk}
+### What's the biggest risk with Airbnb arbitrage partnerships?
 
 Sarah and Nico address this directly: the biggest risk is letting ego damage both the business and the friendship. They mitigate this by:
 
@@ -736,13 +736,13 @@ Sarah and Nico address this directly: the biggest risk is letting ego damage bot
 
 ---
 
-## Start Your Airbnb Arbitrage Journey {#start-your-journey}
+## Start Your Airbnb Arbitrage Journey
 
 **Ready to build your own Airbnb arbitrage business like Sarah and Nico?**
 
 [Learn more about Legacy Investing Show →](/programs.html)
 
-### Related Success Stories {#related-success-stories}
+### Related Success Stories
 
 - [How Gary Built a $35,000/Month Airbnb Business in Austin](/blog/gary-marketing-executive-35k-month.html)
 
@@ -750,13 +750,13 @@ Sarah and Nico address this directly: the biggest risk is letting ego damage bot
 
 - [How Micah Made $5,000 His First Month with One Facebook Message](/blog/micah-facebook-message-5k-month-houston.html)
 
-### Helpful Resources {#helpful-resources}
+### Helpful Resources
 
 - [Complete Guide to Getting Started with Airbnb Arbitrage](/blog/getting-started-airbnb-arbitrage.html)
 
 ---
 
-## About Legacy Investing Show {#about-lis}
+## About Legacy Investing Show
 
 **Legacy Investing Show** is Preston Seo's comprehensive Airbnb arbitrage training program. Since founding, the program has:
 

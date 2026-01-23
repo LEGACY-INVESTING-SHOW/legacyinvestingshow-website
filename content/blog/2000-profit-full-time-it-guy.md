@@ -151,7 +151,7 @@ This case study breaks down exactly how Brian built this Airbnb arbitrage busine
 
 ---
 
-## Quick Results: Brian's Airbnb Arbitrage Numbers {#quick-results}
+## Quick Results: Brian's Airbnb Arbitrage Numbers
 
 | Metric | Value | Context |
 |------|------|------|
@@ -166,17 +166,17 @@ This case study breaks down exactly how Brian built this Airbnb arbitrage busine
 
 ---
 
-## Brian's Background: From IT Professional to Airbnb Entrepreneur {#background}
+## Brian's Background: From IT Professional to Airbnb Entrepreneur
 
 **You don't need to leave your full-time job to build a successful Airbnb business.** Brian O'Leary proves that the arbitrage model works perfectly as a side business for professionals seeking additional income streams.
 
-### Long-Term Rental Experience {#long-term-rental-experience}
+### Long-Term Rental Experience
 
 Brian works in information technology in Iowa and enjoys his job. But like many professionals, he was looking for additional sources of income beyond his salary. He had previous experience with a long-term rental property that he still owns today, but that property wasn't situated in a good location for short-term rentals.
 
 His long-term rental experience was positive overall, but he noticed a pattern: the longer a tenant stayed, the more work required when they eventually left. His longest tenant stayed for three years, and the turnover when they departed required significant effort to get the property rent-ready again. The accumulating wear and tear over extended tenancies created larger maintenance projects between tenants.
 
-### Why Short-Term Rentals Made Sense {#why-short-term-rentals}
+### Why Short-Term Rentals Made Sense
 
 Rather than purchasing additional properties to expand his real estate portfolio, Brian decided to explore the arbitrage model. The appeal was clear: higher cash flow potential without the large capital requirements of purchasing properties, the ability to test markets before committing to ownership, and generating income that could eventually fund property purchases.
 
@@ -188,15 +188,15 @@ Brian saw Airbnb arbitrage as a stepping stone. He wanted to use the arbitrage m
 
 ---
 
-## The Airbnb Arbitrage Journey: Brian's Timeline {#journey}
+## The Airbnb Arbitrage Journey: Brian's Timeline
 
-### January 2026: Joining Legacy Investing Show {#january-joining}
+### January 2026: Joining Legacy Investing Show
 
 **Situation**: Brian joined the program in early January with a clear goal and no short-term rental experience.
 
 Brian came into the program looking for a structured approach to starting an Airbnb business. He had researched the model and understood the basics, but wanted the confidence that comes from a proven roadmap and community support. He set an ambitious goal: one property per quarter, meaning four properties by year-end.
 
-### The Property Search Process {#property-search}
+### The Property Search Process
 
 **Situation**: Brian searched Zillow in his target market and found 4-5 properties of interest.
 
@@ -204,7 +204,7 @@ Brian's search strategy was methodical. He focused on his local Iowa market, sea
 
 Importantly, none of the landlords said "no" outright. Brian got them to a point where they were open to discussing the business model and scheduling property viewings. This intermediate step was crucial: getting landlords from "maybe" to "let's talk more" before pushing for a commitment.
 
-### Convincing Multiple Landlords {#landlord-negotiation}
+### Convincing Multiple Landlords
 
 **Situation**: Brian used Legacy Investing Show scripts and community credibility to close his preferred landlord.
 
@@ -216,7 +216,7 @@ The biggest hurdle was proving he could deliver on his promises as someone new t
 
 After visiting all three properties, one stood out dramatically. Brian and his wife didn't want to leave the property - they wanted to buy it and stay there themselves. That emotional response became his selection criteria: if he was excited about the property, it would be an easy sell on Airbnb.
 
-### February 2026: Going Live {#february-launch}
+### February 2026: Going Live
 
 **Situation**: Property closed in January, went live on Airbnb in February.
 
@@ -226,11 +226,11 @@ February didn't generate many bookings - expected for a new listing in winter. B
 
 ---
 
-## How to Choose a Market: Brian's Iowa Strategy {#market}
+## How to Choose a Market: Brian's Iowa Strategy
 
 **Iowa works for Airbnb arbitrage because of its historic properties, tourism appeal, and landlord-friendly environment.** Brian chose to start in his home market for hands-on experience before expanding to more competitive areas.
 
-### Why Iowa Works for Short-Term Rentals {#why-iowa}
+### Why Iowa Works for Short-Term Rentals
 
 Brian's target market is a part of Iowa along the Mississippi River with significant historical appeal. The area attracts visitors looking for unique experiences in historic properties, and the views are remarkable - Brian's property offers views of three states from the front porch.
 
@@ -254,7 +254,7 @@ Brian's approach was to start local for his first property. He wanted to be hand
 
 After establishing his local market presence, Brian plans to expand into more profitable cities using remote setup strategies. His goal is to leverage the local team he's built while also applying what he's learned to manage properties hundreds of miles away.
 
-### Brian's Property Selection Criteria {#property-criteria}
+### Brian's Property Selection Criteria
 
 Brian's property selection was specific to his market's appeal:
 
@@ -274,11 +274,11 @@ Brian's most important criteria: Would he and his wife want to stay there? When 
 
 ---
 
-## Airbnb Arbitrage Strategies That Work: Brian's Playbook {#strategies}
+## Airbnb Arbitrage Strategies That Work: Brian's Playbook
 
 **The difference between struggling and succeeding with Airbnb arbitrage often comes down to following a proven system.** Brian attributes his success to four core strategies that new hosts frequently overlook.
 
-### Strategy 1: Following the Roadmap Exactly {#strategy-1}
+### Strategy 1: Following the Roadmap Exactly
 
 **What it is**: Brian followed the Legacy Investing Show roadmap step-by-step without trying to reinvent the wheel or skip ahead.
 
@@ -310,7 +310,7 @@ The roadmap provided checklists for everything: getting the business bank accoun
 
 ---
 
-### Strategy 2: Community Credibility for Landlord Pitches {#strategy-2}
+### Strategy 2: Community Credibility for Landlord Pitches
 
 **What it is**: Using successful community members' listings as proof of what you can deliver, even when you're brand new.
 
@@ -350,7 +350,7 @@ This approach transforms the conversation from "trust me, a stranger" to "trust 
 
 ---
 
-### Strategy 3: Property That Excites You {#strategy-3}
+### Strategy 3: Property That Excites You
 
 **What it is**: Selecting properties based on your own excitement level, not just the numbers.
 
@@ -380,7 +380,7 @@ This approach transforms the conversation from "trust me, a stranger" to "trust 
 
 ---
 
-### Strategy 4: Listen to Guest Feedback {#strategy-4}
+### Strategy 4: Listen to Guest Feedback
 
 **What it is**: Actively responding to guest requests by adding amenities and features they ask for.
 
@@ -410,11 +410,11 @@ Brian's philosophy: when a guest requests something reasonable, say "yes" and bu
 
 ---
 
-## Brian's Airbnb Arbitrage Results: The Numbers {#results}
+## Brian's Airbnb Arbitrage Results: The Numbers
 
 **Brian generates $1,500-$2,000/month in net profit from one property.** Here's the complete breakdown of his Airbnb arbitrage business.
 
-### Financial Breakdown {#financial-breakdown}
+### Financial Breakdown
 
 | Metric | Before Airbnb | After (March 2026) |
 |------|------|------|
@@ -434,7 +434,7 @@ Brian's philosophy: when a guest requests something reasonable, say "yes" and bu
 | **Property Condition** | Issues accumulate over time | Maintained after every guest |
 | **Time Investment** | Low during tenancy, high at turnover | Consistent 1-2 hours weekly with automation |
 
-### Key Milestones Achieved {#milestones}
+### Key Milestones Achieved
 
 - Joined Legacy Investing Show in early January
 
@@ -472,13 +472,13 @@ Brian's philosophy: when a guest requests something reasonable, say "yes" and bu
 
 ---
 
-## Airbnb Arbitrage Lessons: What Brian Learned {#lessons}
+## Airbnb Arbitrage Lessons: What Brian Learned
 
 **These five lessons took Brian from IT professional with zero short-term rental experience to $2,000/month cash flow.** Each one came from real experience and could save you time and money.
 
 > "You need a community, and this roadmap from Preston - I can't tell you how many times early on I just needed someone to go to with a question."
 
-### Lesson 1: Don't Overcomplicate It {#lesson-1}
+### Lesson 1: Don't Overcomplicate It
 
 **The Mistake**: Overthinking the process, trying to reinvent strategies, or skipping proven steps.
 
@@ -496,7 +496,7 @@ Brian's philosophy: when a guest requests something reasonable, say "yes" and bu
 
 4. $1
 
-### Lesson 2: Community Support Is Essential {#lesson-2}
+### Lesson 2: Community Support Is Essential
 
 **The Mistake**: Trying to figure everything out alone or lying to landlords about experience.
 
@@ -516,7 +516,7 @@ Beyond decision support, Brian used the community as credibility for landlord pi
 
 4. $1
 
-### Lesson 3: Short-Term Rentals Can Be Better Than Long-Term {#lesson-3}
+### Lesson 3: Short-Term Rentals Can Be Better Than Long-Term
 
 **The Mistake**: Assuming short-term rentals are more work than they're worth compared to traditional rentals.
 
@@ -542,7 +542,7 @@ Beyond decision support, Brian used the community as credibility for landlord pi
 
 4. $1
 
-### Lesson 4: Start Local, Then Expand {#lesson-4}
+### Lesson 4: Start Local, Then Expand
 
 **The Mistake**: Trying to set up properties remotely before understanding the hands-on aspects of the business.
 
@@ -562,7 +562,7 @@ Starting local also let him build relationships with cleaners, handymen, and oth
 
 4. $1
 
-### Lesson 5: Automation Is Key {#lesson-5}
+### Lesson 5: Automation Is Key
 
 **The Mistake**: Managing everything manually and burning out on guest communication.
 
@@ -590,7 +590,7 @@ The automation Brian implemented:
 
 ---
 
-## Best Tools for Airbnb Arbitrage: Brian's Tech Stack {#tools}
+## Best Tools for Airbnb Arbitrage: Brian's Tech Stack
 
 **Brian manages his property with minimal time using automation and professional services.** Here's his approach to running the business efficiently.
 
@@ -622,7 +622,7 @@ This system is what makes 1-2 hours per week possible while working full-time.
 
 ---
 
-## Brian's Advice for Airbnb Arbitrage Beginners {#advice}
+## Brian's Advice for Airbnb Arbitrage Beginners
 
 > "You need a community. I can't tell you how many times early on I just needed someone to go to with a question, and it gave me that confidence to move forward when I was able to have someone respond directly to me with advice about the property I was thinking about leasing."
 
@@ -662,7 +662,7 @@ Once you understand the business thoroughly and have proven systems, you can exp
 
 ---
 
-## Watch Brian's Full Interview {#video}
+## Watch Brian's Full Interview
 
 **Video highlights:**
 
@@ -688,7 +688,7 @@ Once you understand the business thoroughly and have proven systems, you can exp
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
 ### How much money can you make with Airbnb arbitrage while working full-time?
 
@@ -728,7 +728,7 @@ Brian also notes that short-term rental guests, when properly vetted, often trea
 
 ---
 
-## Start Your Airbnb Arbitrage Journey {#start-journey}
+## Start Your Airbnb Arbitrage Journey
 
 **Ready to build your own Airbnb arbitrage business like Brian?**
 
@@ -748,7 +748,7 @@ Brian also notes that short-term rental guests, when properly vetted, often trea
 
 ---
 
-## About Legacy Investing Show {#about}
+## About Legacy Investing Show
 
 **Legacy Investing Show** is Preston Seo's comprehensive Airbnb arbitrage training program. Since founding, the program has:
 

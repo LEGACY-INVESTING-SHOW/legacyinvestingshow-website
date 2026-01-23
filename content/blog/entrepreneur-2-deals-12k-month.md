@@ -153,7 +153,7 @@ This case study breaks down exactly how Michael built his Airbnb arbitrage busin
 
 ---
 
-## Quick Results: Michael's Airbnb Arbitrage Numbers {#quick-results}
+## Quick Results: Michael's Airbnb Arbitrage Numbers
 
 | Metric | Value | Context |
 |------|------|------|
@@ -169,11 +169,11 @@ This case study breaks down exactly how Michael built his Airbnb arbitrage busin
 
 ---
 
-## Michael's Background: From Serial Entrepreneur to Airbnb Investor {#background}
+## Michael's Background: From Serial Entrepreneur to Airbnb Investor
 
 **You don't need to start from scratch to benefit from Airbnb arbitrage.** Michael is living proof that even wildly successful entrepreneurs can find value in learning new income strategies. With five companies sold and a construction business that employed 1,400 people, he brought decades of business acumen to his new venture.
 
-### Building and Selling Five Companies {#five-companies}
+### Building and Selling Five Companies
 
 Michael has never worked for somebody else in his entire career. When he semi-retired at 47 and briefly explored employment, interviewers told him he probably couldn't take orders from anyone. His response revealed a fundamental truth about entrepreneurship.
 
@@ -181,7 +181,7 @@ Michael has never worked for somebody else in his entire career. When he semi-re
 
 His portfolio spanned diverse industries, from construction with over a thousand employees to television stations. This breadth of experience taught him that the fundamentals of business success transfer across industries. The same principles that built construction empires would help him dominate short-term rentals.
 
-### Semi-Retirement and the Search for Passive Income {#semi-retirement}
+### Semi-Retirement and the Search for Passive Income
 
 After selling his companies, Michael and his wife moved to Florida's Space Coast in Merritt Island to be closer to their son, a rocket scientist working in Orlando. Their daughter lives in Manhattan, giving them family ties across the country. With substantial savings from decades of entrepreneurial success, Michael wasn't looking for a job. He was looking for the best use of his time.
 
@@ -189,7 +189,7 @@ His approach to investment is fundamentally time-based. Every decision filters t
 
 > "The only easy day was yesterday. They used to call me Mr. Half Day because I would really only work half days in my entire business career. I just had to decide what I wanted to work: the first 12 hours or the second 12 hours."
 
-### Discovering Legacy Investing Show {#discovering-legacy}
+### Discovering Legacy Investing Show
 
 Michael found Preston through social media, either TikTok or Instagram. What caught his attention wasn't aggressive sales tactics or promises of overnight riches. It was authenticity.
 
@@ -201,9 +201,9 @@ Even though Michael had substantial resources, he recognized that the program's 
 
 ---
 
-## The Airbnb Arbitrage Journey: Michael's Timeline {#journey}
+## The Airbnb Arbitrage Journey: Michael's Timeline
 
-### Joining the Program {#joining-program}
+### Joining the Program
 
 **Situation**: Semi-retired entrepreneur seeking passive income with control over outcomes.
 
@@ -211,7 +211,7 @@ When Michael joined Legacy Investing Show, he already had capital, business expe
 
 Within the first weeks, Michael identified that finding properties wasn't the challenge. His sales background made landlord negotiations easy. The harder part was the operational details: setting up properties, handling last-minute issues, and ensuring every element was in place before guests arrived.
 
-### First Property Goes Live {#first-property}
+### First Property Goes Live
 
 **Situation**: First unit operational in 6 weeks, booked in 5 minutes.
 
@@ -223,7 +223,7 @@ The property didn't even have professional photos yet. Michael had taken quick s
 
 On the day of our interview, Michael had to reschedule because an unexpected situation arose. His listing mentioned a grill that wasn't yet on-site. The guest was arriving an hour and a half early. Within that window, Michael purchased, transported, and set up the grill. This is the reality of property management: small details add up, but they're manageable if you're prepared to act.
 
-### Plans to Scale to 10+ Properties {#scaling-plans}
+### Plans to Scale to 10+ Properties
 
 **Situation**: Building toward 30-40 units with people running them.
 
@@ -235,11 +235,11 @@ His daughter's interest tells the story of generational entrepreneurship. She ca
 
 ---
 
-## How to Choose a Market for Airbnb Arbitrage: Michael's Space Coast Strategy {#market}
+## How to Choose a Market for Airbnb Arbitrage: Michael's Space Coast Strategy
 
 **The Space Coast of Florida combines ocean views, rocket launches, and beach access into an irresistible package for short-term rental guests.** Michael's market selection demonstrates how unique demand drivers can create sustainable competitive advantages.
 
-### Why the Space Coast Works for Short-Term Rentals {#why-space-coast}
+### Why the Space Coast Works for Short-Term Rentals
 
 Michael and his wife chose Merritt Island, Florida to be near their rocket scientist son working in Orlando. This personal connection became a business advantage as they discovered the market's unique characteristics.
 
@@ -264,7 +264,7 @@ Michael and his wife chose Merritt Island, Florida to be near their rocket scien
 | Beach proximity | 2 minutes | Premium positioning |
 | Healthcare facility proximity | Regional hospitals | Extended stay demand |
 
-### Michael's Market Research Process {#market-research}
+### Michael's Market Research Process
 
 Before committing to any property, Michael emphasizes thorough research. His approach identifies common mistakes that waste time and money.
 
@@ -284,11 +284,11 @@ Before committing to any property, Michael emphasizes thorough research. His app
 
 ---
 
-## Airbnb Arbitrage Strategies That Actually Work: Michael's Playbook {#strategies}
+## Airbnb Arbitrage Strategies That Actually Work: Michael's Playbook
 
 **The difference between profitable and unprofitable Airbnb arbitrage comes down to strategy.** Michael's 60% closing ratio on landlord pitches demonstrates what's possible when you combine preparation with proper positioning.
 
-### Strategy 1: The Traveling Healthcare Professional Pitch {#strategy-1}
+### Strategy 1: The Traveling Healthcare Professional Pitch
 
 **What it is**: Positioning your rental business as serving traveling nurses, doctors, and medical technicians who need quality housing for variable stays.
 
@@ -318,7 +318,7 @@ Before committing to any property, Michael emphasizes thorough research. His app
 
 ---
 
-### Strategy 2: Hunter Mentality and Persistence {#strategy-2}
+### Strategy 2: Hunter Mentality and Persistence
 
 **What it is**: Approaching property acquisition as a numbers game requiring consistent outreach rather than giving up after a few rejections.
 
@@ -348,7 +348,7 @@ Before committing to any property, Michael emphasizes thorough research. His app
 
 ---
 
-### Strategy 3: ROI-Based Investment Analysis {#strategy-3}
+### Strategy 3: ROI-Based Investment Analysis
 
 **What it is**: Treating every property decision as an investment equation, including imputing costs even when paying cash.
 
@@ -378,11 +378,11 @@ Before committing to any property, Michael emphasizes thorough research. His app
 
 ---
 
-## Michael's Airbnb Arbitrage Results: The Numbers {#results}
+## Michael's Airbnb Arbitrage Results: The Numbers
 
 **Michael projects $12,000+/month in cash flow from 2 properties with plans to scale to 30-40 units.** Here's the complete financial breakdown of his Airbnb business.
 
-### Complete Financial Breakdown {#financial-breakdown}
+### Complete Financial Breakdown
 
 | Category | Value | Notes |
 |------|------|------|
@@ -393,7 +393,7 @@ Before committing to any property, Michael emphasizes thorough research. His app
 | **Target Monthly ROI** | 10% | On initial property investment |
 | **Total Projected Cash Flow** | $12,000+/month | From 2 properties |
 
-### Key Milestones Achieved {#milestones}
+### Key Milestones Achieved
 
 - ✅ **First unit live in 6 weeks**: Rapid execution from program enrollment to operational listing
 
@@ -409,11 +409,11 @@ Before committing to any property, Michael emphasizes thorough research. His app
 
 ---
 
-## Airbnb Arbitrage Lessons: What Michael Learned {#lessons}
+## Airbnb Arbitrage Lessons: What Michael Learned
 
 **These five lessons come from a serial entrepreneur who sold five companies before turning to Airbnb.** Each one reflects decades of business experience applied to short-term rentals.
 
-### Lesson 1: The Value of Time Over Money {#lesson-1}
+### Lesson 1: The Value of Time Over Money
 
 **The Mistake**: Measuring investments only by dollar returns without considering time input.
 
@@ -435,7 +435,7 @@ Before committing to any property, Michael emphasizes thorough research. His app
 
 ---
 
-### Lesson 2: Be a Hunter, Not a Gatherer {#lesson-2}
+### Lesson 2: Be a Hunter, Not a Gatherer
 
 **The Mistake**: Making a few calls, facing rejection, and concluding the business doesn't work.
 
@@ -455,7 +455,7 @@ Before committing to any property, Michael emphasizes thorough research. His app
 
 ---
 
-### Lesson 3: Teaching Financial Literacy Early {#lesson-3}
+### Lesson 3: Teaching Financial Literacy Early
 
 **The Mistake**: Assuming children will learn money management naturally as adults.
 
@@ -479,7 +479,7 @@ How could children earn this? Through an invoice system where every activity had
 
 ---
 
-### Lesson 4: Don't Give Up After Three Calls {#lesson-4}
+### Lesson 4: Don't Give Up After Three Calls
 
 **The Mistake**: Interpreting early rejection as market feedback rather than skill deficiency.
 
@@ -501,7 +501,7 @@ Each call improves your pitch. Like AI that learns faster with more data, salesp
 
 ---
 
-### Lesson 5: Invest in Yourself First {#lesson-5}
+### Lesson 5: Invest in Yourself First
 
 **The Mistake**: Believing self-help means reading books alone rather than getting proper training.
 
@@ -523,7 +523,7 @@ Each call improves your pitch. Like AI that learns faster with more data, salesp
 
 ---
 
-## Best Tools for Airbnb Arbitrage: Michael's Tech Stack {#tools}
+## Best Tools for Airbnb Arbitrage: Michael's Tech Stack
 
 **Michael is building systems to manage multiple properties efficiently.** Here's his approach to tools and automation.
 
@@ -546,7 +546,7 @@ Each call improves your pitch. Like AI that learns faster with more data, salesp
 
 ---
 
-## Michael's Advice for Airbnb Arbitrage Beginners {#advice}
+## Michael's Advice for Airbnb Arbitrage Beginners
 
 > "There's no better self-help than helping yourself. And I think a lot of people miss that point."
 
@@ -576,7 +576,7 @@ The first property is always the hardest. The worries of "are we doing it right"
 
 ---
 
-## Watch Michael's Full Interview {#video}
+## Watch Michael's Full Interview
 
 **Video highlights:**
 
@@ -598,7 +598,7 @@ The first property is always the hardest. The worries of "are we doing it right"
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
 ### How much money can you really make with Airbnb arbitrage?
 
@@ -636,7 +636,7 @@ The arbitrage model allows testing markets with limited capital before committin
 
 ---
 
-## Start Your Airbnb Arbitrage Journey {#start-journey}
+## Start Your Airbnb Arbitrage Journey
 
 **Ready to build your own Airbnb arbitrage business like Michael?**
 
@@ -656,7 +656,7 @@ The arbitrage model allows testing markets with limited capital before committin
 
 ---
 
-## About Legacy Investing Show {#about}
+## About Legacy Investing Show
 
 **Legacy Investing Show** is Preston Seo's comprehensive Airbnb arbitrage training program. Since founding, the program has:
 

@@ -150,7 +150,7 @@ This case study breaks down exactly how Christopher overcame the obstacles that 
 
 ---
 
-## Quick Results: Christopher's Airbnb Arbitrage Numbers {#quick-results}
+## Quick Results: Christopher's Airbnb Arbitrage Numbers
 
 | Metric | Value | Context |
 |------|------|------|
@@ -165,17 +165,17 @@ This case study breaks down exactly how Christopher overcame the obstacles that 
 
 ---
 
-## Christopher's Background: From Oil and Gas to Airbnb Entrepreneur {#background}
+## Christopher's Background: From Oil and Gas to Airbnb Entrepreneur
 
 **You don't need a privileged background to build a successful Airbnb business.** Christopher didn't come from wealthy parents—everything he invested came from what he and his fiance saved themselves. His story demonstrates that persistence and proper education can overcome any starting point.
 
-### The Entrepreneurial Spirit {#the-entrepreneurial-spirit}
+### The Entrepreneurial Spirit
 
 Christopher has always had an entrepreneurial drive. Before Airbnb arbitrage, he started an eBay business with just $70, going to garage sales and flipping items for profit. This early hustle taught him the fundamentals of buying low, selling high, and building something from nothing.
 
 Eventually, Christopher entered the oil and gas industry in Louisiana, which provided stable income but left his eBay business on the back burner. The corporate world paid the bills, but he never lost the desire to build something of his own—something that could provide financial freedom beyond a paycheck.
 
-### Finding the Path to Real Estate {#finding-the-path}
+### Finding the Path to Real Estate
 
 Christopher had been interested in real estate for years but couldn't find his way in. The barriers seemed insurmountable: the capital requirements, the lack of guidance, not knowing where to start. Traditional real estate investing with down payments and mortgages felt out of reach.
 
@@ -187,9 +187,9 @@ Then he discovered Airbnb arbitrage through Preston's YouTube videos. The model 
 
 ---
 
-## The Airbnb Arbitrage Journey: Christopher's Timeline {#journey}
+## The Airbnb Arbitrage Journey: Christopher's Timeline
 
-### The Learning Phase: Months of Preparation {#the-learning-phase}
+### The Learning Phase: Months of Preparation
 
 **Situation**: Christopher spent months watching YouTube videos and discussing the opportunity with his fiance.
 
@@ -199,7 +199,7 @@ Christopher committed to the process completely. He watched videos over and over
 
 > "There was a lot of times that I was just going through market research and I'm not fully understanding—go back and watch the videos. Is it gonna get you—are you going to be able to understand, are you going to get it? And then it got to a point like all right now I've kind of got the market research down, it's time to start calling landlords."
 
-### The Calling Campaign: 50-70 Landlords {#the-calling-campaign}
+### The Calling Campaign: 50-70 Landlords
 
 **Situation**: Christopher made 50-70 landlord calls, experiencing rejection after rejection.
 
@@ -211,7 +211,7 @@ Rather than give up, Christopher called his father and practiced. For about an h
 
 > "I called my father and I started practicing with him. I was like hey look you're going to be a landlord, I'm gonna come in—and I probably sat on the phone with him for probably about an hour and a half and just went over the script, went over the script. Just repetition is what it is because it starts to become memory, you just start to be able to spit it out."
 
-### The Failed Deals That Built Character {#the-failed-deals}
+### The Failed Deals That Built Character
 
 **Situation**: Multiple deals fell through because the numbers didn't work.
 
@@ -225,7 +225,7 @@ Each failed deal was a learning opportunity. Christopher learned to separate emo
 
 > "You start getting excited and then the numbers just don't work and you gotta take your feelings out of it because that's what it comes down to—it comes down to the numbers and this is a business."
 
-### The Breakthrough: Finding the Right Landlord {#the-breakthrough}
+### The Breakthrough: Finding the Right Landlord
 
 **Situation**: After dozens of calls, Christopher found a landlord with 26 properties who took a chance on him.
 
@@ -255,17 +255,17 @@ The landlord's response changed everything. He shared that seven years ago, some
 
 ---
 
-## How to Choose a Market for Airbnb Arbitrage: Christopher's Louisiana Strategy {#market}
+## How to Choose a Market for Airbnb Arbitrage: Christopher's Louisiana Strategy
 
 **Starting in your local market reduces complexity for your first property.** Christopher focused on Louisiana, where he already lived, allowing him to set up and manage the property more easily while learning the business.
 
-### Why Louisiana Works {#why-louisiana}
+### Why Louisiana Works
 
 Christopher chose to start locally for practical reasons. He could visit the property, meet with potential landlords in person, and oversee the setup process directly. For a first-time operator, this hands-on involvement is invaluable for building confidence and learning the systems.
 
 Louisiana offers diverse short-term rental opportunities, from New Orleans tourism to suburban family travel. The market has less saturation than major metros like Austin or Nashville, creating opportunities for operators willing to put in the work.
 
-### Christopher's Property Criteria {#property-criteria}
+### Christopher's Property Criteria
 
 Christopher's successful property included several key features:
 
@@ -285,11 +285,11 @@ The property has a large backyard, room for outdoor activities, and space for gu
 
 ---
 
-## Airbnb Arbitrage Strategies That Actually Work: Christopher's Playbook {#strategies}
+## Airbnb Arbitrage Strategies That Actually Work: Christopher's Playbook
 
 **The difference between those who succeed and those who quit comes down to specific strategies applied consistently.** Christopher's success wasn't luck—it was the result of deliberate approaches that most beginners don't implement.
 
-### Strategy 1: The Volume Game {#strategy-1}
+### Strategy 1: The Volume Game
 
 **What it is**: Making massive numbers of landlord calls rather than expecting quick success.
 
@@ -319,7 +319,7 @@ Christopher emphasizes that this is truly a numbers game. Eventually, you will f
 
 ---
 
-### Strategy 2: Building Rapport Before the Pitch {#strategy-2}
+### Strategy 2: Building Rapport Before the Pitch
 
 **What it is**: Opening conversations by complimenting the property and building connection before presenting the arbitrage opportunity.
 
@@ -349,7 +349,7 @@ Christopher evolved from going straight into his pitch (which felt robotic) to l
 
 ---
 
-### Strategy 3: Removing Emotions from Numbers {#strategy-3}
+### Strategy 3: Removing Emotions from Numbers
 
 **What it is**: Making decisions based purely on financial analysis, regardless of how much you like a property.
 
@@ -379,7 +379,7 @@ When Christopher found properties he loved, the temptation was to fudge the numb
 
 ---
 
-### Strategy 4: Differentiating Through Rare Amenities {#strategy-4}
+### Strategy 4: Differentiating Through Rare Amenities
 
 **What it is**: Focusing on properties with amenities that only a small percentage of competitors offer.
 
@@ -409,7 +409,7 @@ Beyond the pool, Christopher invested in differentiation through decor (boho the
 
 ---
 
-### Strategy 5: Community Integration and Local Partnerships {#strategy-5}
+### Strategy 5: Community Integration and Local Partnerships
 
 **What it is**: Building relationships with neighbors and local businesses to enhance the guest experience and property protection.
 
@@ -441,11 +441,11 @@ He also hosted a grill-out for the neighbors. Some came over, met him and his fi
 
 ---
 
-## Christopher's Airbnb Arbitrage Results: The Numbers {#results}
+## Christopher's Airbnb Arbitrage Results: The Numbers
 
 **Christopher generates $1,700/month conservatively from his first property.** Here's the complete breakdown of his Airbnb arbitrage setup and projections.
 
-### Financial Breakdown {#financial-breakdown}
+### Financial Breakdown
 
 | Metric | Value | Notes |
 |------|------|------|
@@ -455,7 +455,7 @@ He also hosted a grill-out for the neighbors. Some came over, met him and his fi
 | **Original Ask** | 4-year lease | Negotiated down |
 | **Start Date** | February/March | Started month early at landlord's request |
 
-### Property Setup Details {#property-setup}
+### Property Setup Details
 
 Christopher and his fiance personally set up the entire property. The process included:
 
@@ -497,7 +497,7 @@ Christopher and his fiance personally set up the entire property. The process in
 
 > "It's an experience to get out there, put an entire house together literally. My fiance was there a couple weeks before me, and then I was able to get off work, go out there. It starts to become a home—you're sitting here in this beautiful home putting it all together, you're starting to see that vision, that light at the end of the tunnel."
 
-### Key Milestones Achieved {#milestones}
+### Key Milestones Achieved
 
 - ✅ **Made 50-70 landlord calls**: Persistence paid off despite early rejections
 
@@ -515,13 +515,13 @@ Christopher and his fiance personally set up the entire property. The process in
 
 ---
 
-## Airbnb Arbitrage Lessons: What Christopher Learned the Hard Way {#lessons}
+## Airbnb Arbitrage Lessons: What Christopher Learned the Hard Way
 
 **These five lessons took Christopher from complete beginner to property owner in months.** Each one came from real experience and could save you months of frustration.
 
 > "You never fail, you only learn. That's kind of how we've been looking at it—and here we are."
 
-### Lesson 1: Hard Work Beats Talent {#lesson-1}
+### Lesson 1: Hard Work Beats Talent
 
 **The Mistake**: Assuming you need natural sales ability or special skills to succeed.
 
@@ -543,7 +543,7 @@ But that hard work compounded. By call 50, he was significantly better than on c
 
 4. $1
 
-### Lesson 2: You Never Fail, You Only Learn {#lesson-2}
+### Lesson 2: You Never Fail, You Only Learn
 
 **The Mistake**: Viewing failed deals and rejections as personal failures.
 
@@ -563,7 +563,7 @@ Christopher reframed every setback as a lesson. Instead of getting discouraged b
 
 4. $1
 
-### Lesson 3: Make the Script Your Own {#lesson-3}
+### Lesson 3: Make the Script Your Own
 
 **The Mistake**: Reading a script word-for-word and sounding like a robot.
 
@@ -583,7 +583,7 @@ Christopher reframed every setback as a lesson. Instead of getting discouraged b
 
 4. $1
 
-### Lesson 4: The Numbers Don't Lie {#lesson-4}
+### Lesson 4: The Numbers Don't Lie
 
 **The Mistake**: Letting excitement about a property override financial analysis.
 
@@ -603,7 +603,7 @@ The discipline to walk away from attractive-looking deals is what separates succ
 
 4. $1
 
-### Lesson 5: A Supportive Partner Changes Everything {#lesson-5}
+### Lesson 5: A Supportive Partner Changes Everything
 
 **The Mistake**: Trying to build a business without support from the people closest to you.
 
@@ -627,7 +627,7 @@ For those without a supportive spouse, Christopher points to the Legacy Investin
 
 ---
 
-## Best Tools for Airbnb Arbitrage: Christopher's Setup {#tools}
+## Best Tools for Airbnb Arbitrage: Christopher's Setup
 
 **Christopher used a combination of training resources, operational tools, and local services to launch his property.** Here's the complete stack that powers his $1,700/month business.
 
@@ -670,13 +670,13 @@ For those without a supportive spouse, Christopher points to the Legacy Investin
 
 ---
 
-## Christopher's Advice for Airbnb Arbitrage Beginners {#advice}
+## Christopher's Advice for Airbnb Arbitrage Beginners
 
 > "There's a thousand reasons that you can tell yourself to not do it. Every year for the rest of your life there's going to be something out there that's going to tell you how you don't do that. You kind of push those away if you've got a proven plan and you see that it's working for people."
 
 **If Christopher were starting over today, here's exactly what he would do:**
 
-### Step 1: Getting the Right Mindset (Week 1) {#step-1-mindset}
+### Step 1: Getting the Right Mindset (Week 1)
 
 Christopher emphasizes that mindset comes before tactics. The same education system teaches most people the same limiting beliefs. Nobody teaches financial literacy, investing, or entrepreneurship in school.
 
@@ -694,7 +694,7 @@ Christopher didn't come from wealth. His parents weren't rich. Everything he and
 
 > "People thinking like ah I don't have rich parents that'll invest this kind of money—it doesn't matter. If you apply yourself, it might take you a little bit longer to save up the money, but once you do you'll get in there and that's your first step."
 
-### Step 2: Invest in Your Education (Week 1-2) {#step-2-education}
+### Step 2: Invest in Your Education (Week 1-2)
 
 Christopher strongly recommends buying a comprehensive course rather than piecing together free YouTube content. His reasoning:
 
@@ -714,7 +714,7 @@ Christopher tried watching various YouTube videos before joining Legacy Investin
 
 > "Getting a detailed plan is 100% what I recommend. Having people there to back you up when you're just stepping into this industry—I would 100% recommend getting a detailed plan and going with a course. You got to invest into your education, invest into yourself."
 
-### Step 3: Take Massive Action (Week 3-8) {#step-3-action}
+### Step 3: Take Massive Action (Week 3-8)
 
 Knowledge without action produces nothing. Christopher emphasizes that you have to make the calls, even when they're uncomfortable.
 
@@ -732,7 +732,7 @@ Knowledge without action produces nothing. Christopher emphasizes that you have 
 
 Christopher made at least 50-70 calls. Many people won't make 10. The ones who succeed are the ones who keep dialing.
 
-### Step 4: Make Sacrifices to Scale Faster (Ongoing) {#step-4-sacrifice}
+### Step 4: Make Sacrifices to Scale Faster (Ongoing)
 
 Christopher and his fiance changed their spending habits to fund the business. He sold both of his four-wheelers—toys he enjoyed—to put money toward scaling faster.
 
@@ -754,7 +754,7 @@ Most people want the results without the sacrifices. They want to keep their toy
 
 ---
 
-## Watch Christopher's Full Interview {#video}
+## Watch Christopher's Full Interview
 
 **Video highlights:**
 
@@ -776,7 +776,7 @@ Most people want the results without the sacrifices. They want to keep their toy
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
 ### How much money can you really make with Airbnb arbitrage?
 
@@ -798,7 +798,7 @@ The second challenge is removing emotions from decision-making. Christopher walk
 
 ---
 
-## Start Your Airbnb Arbitrage Journey {#start}
+## Start Your Airbnb Arbitrage Journey
 
 **Ready to build your own Airbnb arbitrage business like Christopher?**
 
@@ -818,7 +818,7 @@ The second challenge is removing emotions from decision-making. Christopher walk
 
 ---
 
-## About Legacy Investing Show {#about}
+## About Legacy Investing Show
 
 **Legacy Investing Show** is Preston Seo's comprehensive Airbnb arbitrage training program. Since founding, the program has:
 

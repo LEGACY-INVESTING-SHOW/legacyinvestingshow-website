@@ -151,7 +151,7 @@ This case study breaks down exactly how Lindsay and her husband built their Airb
 
 ---
 
-## Quick Results: Lindsay's Airbnb Arbitrage Numbers {#quick-results}
+## Quick Results: Lindsay's Airbnb Arbitrage Numbers
 
 | Metric | Value | Context |
 |------|------|------|
@@ -166,17 +166,17 @@ This case study breaks down exactly how Lindsay and her husband built their Airb
 
 ---
 
-## Lindsay's Background: From Nonprofit to Airbnb Entrepreneur {#background}
+## Lindsay's Background: From Nonprofit to Airbnb Entrepreneur
 
 **You don't need real estate experience to start Airbnb arbitrage.** Lindsay spent over a decade working for a Christian nonprofit overseas, returning to the United States just three weeks before the COVID shutdown. Her journey to short-term rental success proves that transferable skills—networking, communication, and a willingness to learn—matter more than industry background.
 
-### The Nonprofit Years Overseas {#the-nonprofit-years}
+### The Nonprofit Years Overseas
 
 Lindsay dedicated more than a decade of her life to mission work overseas with a Christian nonprofit organization. It was fulfilling work that aligned with her values, and when you're single, it's easy to let your job become your entire life. The mission gave her purpose, community, and a sense of contribution that kept her engaged for years.
 
 But when she returned to the United States in early 2020, just three weeks before COVID shut everything down, Lindsay found herself at a crossroads. She knew she wanted to pivot to something new in the job market, but she had no idea what that would be. The pandemic became an unexpected pause that would ultimately redirect her entire life.
 
-### Life Changes and New Priorities {#life-changes}
+### Life Changes and New Priorities
 
 During COVID, Lindsay met her husband. They got married a year and a half before their interview, making their Airbnb adventure a new chapter as a married couple. Marriage changed everything about how Lindsay thought about work and income.
 
@@ -186,7 +186,7 @@ Lindsay had just turned 40, and her husband had just turned 37. Both worked 9-to
 
 The problem was finding something significant enough to actually replace their incomes. They'd tried small passive income ventures here and there, but nothing moved the needle. Nothing until Airbnb arbitrage.
 
-### Discovering Airbnb Arbitrage {#discovering-airbnb}
+### Discovering Airbnb Arbitrage
 
 Lindsay discovered the world of Airbnb arbitrage through Instagram on July 2nd—a long weekend while she was chilling on her couch. She stumbled across Preston's free workshop and figured an hour wouldn't hurt. That hour turned into three, and by the time she got off, she was ready to convince her husband this was their path forward.
 
@@ -196,9 +196,9 @@ That same day, they ordered the program and started watching the modules togethe
 
 ---
 
-## The Airbnb Arbitrage Journey: Lindsay's Timeline {#journey}
+## The Airbnb Arbitrage Journey: Lindsay's Timeline
 
-### July 2023: Discovery Weekend {#july-discovery}
+### July 2023: Discovery Weekend
 
 **Situation**: Lindsay discovers Airbnb arbitrage on Instagram during a long weekend.
 
@@ -206,7 +206,7 @@ On July 2nd, while relaxing at home, Lindsay found Preston's free workshop and w
 
 They approached market research systematically, using AirDNA to analyze potential markets. Lindsay had grown up in North Carolina and went to college in the mountains—she'd always loved the area and wanted to find a way back without taking on a second mortgage. The data would guide their decision.
 
-### August 2023: First Property Secured {#august-property}
+### August 2023: First Property Secured
 
 **Situation**: Found and negotiated their first property in just four landlord calls.
 
@@ -218,7 +218,7 @@ They signed the contract on Lindsay's husband's birthday—August 11th. From fir
 
 > "We just knew we wanted to get on the market as soon as we could because the fall is peak season up here with the Western North Carolina mountains. So we were pressing them a little bit."
 
-### September 2023: Launch and Results {#september-launch}
+### September 2023: Launch and Results
 
 **Situation**: Went live September 7th and secured $17,500 in bookings within two weeks.
 
@@ -240,11 +240,11 @@ Within two weeks, they had 14 bookings totaling $17,500 stretching through New Y
 
 ---
 
-## How to Choose a Market for Airbnb Arbitrage: Lindsay's Western North Carolina Strategy {#market}
+## How to Choose a Market for Airbnb Arbitrage: Lindsay's Western North Carolina Strategy
 
 **Western North Carolina is ideal for Airbnb arbitrage because of fall tourism demand and the mountain escape appeal.** Lindsay analyzed multiple markets before choosing her area, and the data told a different story than her assumptions.
 
-### Why Western North Carolina Works for Short-Term Rentals {#why-western-nc}
+### Why Western North Carolina Works for Short-Term Rentals
 
 Lindsay grew up in North Carolina and attended college in the mountains. She'd always loved the area and wanted to figure out how to get back there one day—preferably without taking on a second mortgage since they'd just bought their primary residence a year earlier.
 
@@ -258,7 +258,7 @@ The Western NC market, particularly the areas around Asheville, attracts visitor
 
 **Personal Connection**: Lindsay introduced her husband to the mountains, and he fell in love with them too. Investing in a place you genuinely enjoy makes the work feel less like work and more like building toward a dream.
 
-### Lindsay's Market Research Process {#market-research}
+### Lindsay's Market Research Process
 
 Lindsay followed the program's modules closely, using AirDNA to evaluate potential markets. The results surprised her.
 
@@ -282,11 +282,11 @@ This is exactly why data matters. Gut feelings and assumptions can lead you astr
 
 ---
 
-## Airbnb Arbitrage Strategies That Actually Work: Lindsay's Playbook {#strategies}
+## Airbnb Arbitrage Strategies That Actually Work: Lindsay's Playbook
 
 **The difference between profitable and unprofitable Airbnb arbitrage comes down to strategy.** Lindsay attributes her $17,500 in first-week bookings to four core strategies that helped her stand out immediately.
 
-### Strategy 1: The Hot Tub Requirement {#strategy-1}
+### Strategy 1: The Hot Tub Requirement
 
 **What it is**: Lindsay made hot tubs a non-negotiable amenity after seeing the data.
 
@@ -314,7 +314,7 @@ This is exactly why data matters. Gut feelings and assumptions can lead you astr
 
 ---
 
-### Strategy 2: Target Audience Design (Family-Friendly Focus) {#strategy-2}
+### Strategy 2: Target Audience Design (Family-Friendly Focus)
 
 **What it is**: Lindsay designed the property with specific guest types in mind—families and groups celebrating special occasions.
 
@@ -348,7 +348,7 @@ Lindsay specifically noted that when she travels with kids, she looks for pack-a
 
 ---
 
-### Strategy 3: Built-in Marketing (Social Media Integration) {#strategy-3}
+### Strategy 3: Built-in Marketing (Social Media Integration)
 
 **What it is**: Lindsay incorporated marketing directly into the property design to generate word-of-mouth and repeat bookings.
 
@@ -380,7 +380,7 @@ Lindsay specifically noted that when she travels with kids, she looks for pack-a
 
 ---
 
-### Strategy 4: Influencer Marketing for Launch {#strategy-4}
+### Strategy 4: Influencer Marketing for Launch
 
 **What it is**: Lindsay comped a stay for influencers with 120,000 followers in exchange for social media posts.
 
@@ -408,11 +408,11 @@ Lindsay specifically noted that when she travels with kids, she looks for pack-a
 
 ---
 
-## Lindsay's Airbnb Arbitrage Results: The Numbers {#results}
+## Lindsay's Airbnb Arbitrage Results: The Numbers
 
 **Lindsay and her husband secured $17,500 in bookings within their first week live.** Here's the complete financial breakdown of their Airbnb arbitrage launch.
 
-### Before vs. After Airbnb Arbitrage {#before-after}
+### Before vs. After Airbnb Arbitrage
 
 | Metric | Before (9-to-5 Jobs) | After Airbnb Launch |
 |------|------|------|
@@ -422,7 +422,7 @@ Lindsay specifically noted that when she travels with kids, she looks for pack-a
 | Time Working Together | After-work hours only | Building a business as a team |
 | Path to Financial Freedom | Unclear | Defined strategy: property every 4-6 months |
 
-### Complete Financial Breakdown {#financial-breakdown}
+### Complete Financial Breakdown
 
 | Category | Details | Notes |
 |------|------|------|
@@ -432,7 +432,7 @@ Lindsay specifically noted that when she travels with kids, she looks for pack-a
 | **Hot Tub Financing** | 0% for 24 months | Used promotional credit offer |
 | **Professional Photography** | Paid investment | "Worth every penny" per Lindsay |
 
-### Property Improvements Made {#property-improvements}
+### Property Improvements Made
 
 Lindsay and her husband transformed the property strategically, maximizing impact while minimizing unnecessary spend:
 
@@ -446,7 +446,7 @@ Lindsay and her husband transformed the property strategically, maximizing impac
 
 - **Cozy touches**: Bookshelf, blanket basket, fall decor, greenery wall
 
-### Key Milestones Achieved {#milestones}
+### Key Milestones Achieved
 
 - ✅ **First property secured in 21 days**: From initial landlord contact to signed contract
 
@@ -464,13 +464,13 @@ Lindsay and her husband transformed the property strategically, maximizing impac
 
 ---
 
-## Airbnb Arbitrage Lessons: What Lindsay Learned {#lessons}
+## Airbnb Arbitrage Lessons: What Lindsay Learned
 
 **These five lessons took Lindsay from 9-to-5 worker to $17,500 in bookings within weeks.** Each one came from real experience—and could save you months of trial and error.
 
 > "It seems like a lot and it seems maybe terrifying to take that risk but we're only a month and a half in and we're already like—it is completely worth the risk."
 
-### Lesson 1: Follow the Data, Not Assumptions {#lesson-1}
+### Lesson 1: Follow the Data, Not Assumptions
 
 **The Mistake**: Assuming you know which markets will perform best without checking the data.
 
@@ -492,7 +492,7 @@ Had she gone with her gut, she might have selected a suboptimal market. Instead,
 
 ---
 
-### Lesson 2: Get Landlords on the Phone {#lesson-2}
+### Lesson 2: Get Landlords on the Phone
 
 **The Mistake**: Trying to explain Airbnb arbitrage through text messages or emails.
 
@@ -516,7 +516,7 @@ On the phone, Lindsay could explain the win-win arrangement, guarantee consisten
 
 ---
 
-### Lesson 3: Don't Get Stuck in Research Quicksand {#lesson-3}
+### Lesson 3: Don't Get Stuck in Research Quicksand
 
 **The Mistake**: Doing so much research that you never actually take action.
 
@@ -538,7 +538,7 @@ On their fourth call, they found their property. Had they spent weeks researchin
 
 ---
 
-### Lesson 4: Build a Reliable Local Team {#lesson-4}
+### Lesson 4: Build a Reliable Local Team
 
 **The Mistake**: Trying to manage everything yourself, especially when you're 2.5 hours from the property.
 
@@ -560,7 +560,7 @@ When guests message about how clean and well-decorated the property looks, Linds
 
 ---
 
-### Lesson 5: Count All the Costs (Especially Hot Tubs) {#lesson-5}
+### Lesson 5: Count All the Costs (Especially Hot Tubs)
 
 **The Mistake**: Underestimating the true cost of adding premium amenities.
 
@@ -584,7 +584,7 @@ She used 0% interest financing for 24 months to manage the cash flow impact. For
 
 ---
 
-## Best Tools for Airbnb Arbitrage: Lindsay's Tech Stack {#tools}
+## Best Tools for Airbnb Arbitrage: Lindsay's Tech Stack
 
 **Lindsay manages her property with minimal daily time using these tools.** Here's what powers her operation.
 
@@ -615,7 +615,7 @@ She used 0% interest financing for 24 months to manage the cash flow impact. For
 
 ---
 
-## Lindsay's Advice for Airbnb Arbitrage Beginners {#advice}
+## Lindsay's Advice for Airbnb Arbitrage Beginners
 
 > "It seems like a lot and it seems maybe terrifying to take that risk but you know we're only a month and a half in and we're already like—it is completely worth the risk."
 
@@ -655,7 +655,7 @@ Lindsay and her husband aren't stopping at one property. Their goal: add a new p
 
 ---
 
-## Watch Lindsay's Full Interview {#video}
+## Watch Lindsay's Full Interview
 
 **Video highlights:**
 
@@ -677,7 +677,7 @@ Lindsay and her husband aren't stopping at one property. Their goal: add a new p
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
 ### How much money can you really make with Airbnb arbitrage?
 
@@ -711,7 +711,7 @@ Lindsay identified several risks she actively manages:
 
 ---
 
-## Start Your Airbnb Arbitrage Journey {#start}
+## Start Your Airbnb Arbitrage Journey
 
 **Ready to build your own Airbnb arbitrage business like Lindsay?**
 
@@ -731,7 +731,7 @@ Lindsay identified several risks she actively manages:
 
 ---
 
-## About Legacy Investing Show {#about}
+## About Legacy Investing Show
 
 **Legacy Investing Show** is Preston Seo's comprehensive Airbnb arbitrage training program. Since founding, the program has:
 

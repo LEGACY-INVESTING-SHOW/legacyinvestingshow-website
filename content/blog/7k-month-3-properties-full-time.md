@@ -139,7 +139,7 @@ This case study breaks down exactly how James built his Airbnb arbitrage busines
 
 ---
 
-## Quick Results: James' Airbnb Arbitrage Numbers {#quick-results}
+## Quick Results: James' Airbnb Arbitrage Numbers
 
 | Metric | Value | Context |
 |------|------|------|
@@ -154,7 +154,7 @@ This case study breaks down exactly how James built his Airbnb arbitrage busines
 
 ---
 
-## James' Background: From Accounting Graduate to Airbnb Entrepreneur {#background}
+## James' Background: From Accounting Graduate to Airbnb Entrepreneur
 
 **You don't need years of real estate experience or a large nest egg to start an Airbnb arbitrage business.** James Saunders is proof: he graduated college just two years before starting his portfolio, worked full-time as a consultant, and had zero rental property experience. Within 5 months, he built a three-property portfolio generating $7,000 per month in profit.
 
@@ -184,9 +184,9 @@ He discovered Legacy Investing Show through an Instagram video, signed up for th
 
 ---
 
-## The 57-Day Journey: From Zero to Live Property {#journey}
+## The 57-Day Journey: From Zero to Live Property
 
-### The Power of Written, Aggressive Goals {#goal-setting}
+### The Power of Written, Aggressive Goals
 
 Legacy Investing Show's training mentions that students typically launch their first property within 90 days. When James heard that benchmark, his immediate thought was: *I can do better.*
 
@@ -196,7 +196,7 @@ This wasn't wishful thinking—it was strategic pressure. James understood his o
 
 > "I'm a more goal-driven person, so when I write it down like 'this is exactly what I'm going to do,' I tend to do it instead of just thinking about it."
 
-### Daily Execution Strategy {#execution}
+### Daily Execution Strategy
 
 James broke his 60-day goal into daily and weekly actions:
 
@@ -245,7 +245,7 @@ But the real acceleration came after that first success. Once James proved to hi
 
 ---
 
-## How to Choose a Market for Airbnb Arbitrage: James' Strategy {#market}
+## How to Choose a Market for Airbnb Arbitrage: James' Strategy
 
 **The best markets for Airbnb arbitrage are often near major cities but just outside their regulatory boundaries.** James discovered this through trial and error during his market research phase, turning what initially felt like analysis paralysis into a systematic approach.
 
@@ -299,11 +299,11 @@ The city-adjacent strategy sidesteps these issues. Properties 20-30 minutes from
 
 ---
 
-## Airbnb Arbitrage Strategies That Actually Work: James' Playbook {#strategies}
+## Airbnb Arbitrage Strategies That Actually Work: James' Playbook
 
 **The difference between struggling and succeeding with Airbnb arbitrage often comes down to three things: honest communication, systematic tracking, and building trust before asking for anything.** James' approach to landlord conversations breaks conventional sales wisdom—and gets better results.
 
-### Strategy 1: The Honest Pitch Method {#honest-pitch}
+### Strategy 1: The Honest Pitch Method
 
 **What it is**: Telling landlords the complete truth about your experience level, business model, and intentions from the first conversation.
 
@@ -333,7 +333,7 @@ Here's James' exact script when landlords asked about his experience:
 
 ---
 
-### Strategy 2: The CRM Tracking System {#crm-tracking}
+### Strategy 2: The CRM Tracking System
 
 **What it is**: Documenting every landlord interaction in a spreadsheet to prevent duplicate calls, track follow-ups, and record market intelligence.
 
@@ -389,7 +389,7 @@ Here's James' exact script when landlords asked about his experience:
 
 ---
 
-## James' Airbnb Arbitrage Results: The Complete Financial Breakdown {#results}
+## James' Airbnb Arbitrage Results: The Complete Financial Breakdown
 
 **James generates $6,000-$7,000 per month in net profit from 3 properties, with projections of $3,500+ per property during peak summer season.** Here's the complete financial picture of his Airbnb arbitrage business.
 
@@ -450,7 +450,7 @@ James is also exploring purchasing properties outright. With arbitrage cash flow
 
 ---
 
-## Remote Property Management: Running Properties 18-20 Hours Away {#remote}
+## Remote Property Management: Running Properties 18-20 Hours Away
 
 **One of James' properties is located 18-20 hours by car from his home—a completely different state—and he's never physically visited it.** Yet it operates smoothly, with guests booking and checking in without James ever being onsite.
 
@@ -504,7 +504,7 @@ The property came partially furnished (a significant cost saver), and James' wif
 
 ---
 
-## Airbnb Arbitrage Lessons: What James Learned Building to $7K/Month {#lessons}
+## Airbnb Arbitrage Lessons: What James Learned Building to $7K/Month
 
 **These five lessons took James from zero experience to $7,000/month in 5 months.** Each one came from real experience—and could save you months of trial and error.
 
@@ -604,7 +604,7 @@ James' first property took 57 days and 20-30 landlord calls. His second property
 
 ---
 
-## Best Tools for Airbnb Arbitrage: James' Tech Stack {#tools}
+## Best Tools for Airbnb Arbitrage: James' Tech Stack
 
 **James manages 3 properties on 5-6 hours per week using strategic automation.** Here's the complete tech stack that powers his $7,000/month business.
 
@@ -656,7 +656,7 @@ James' first property took 57 days and 20-30 landlord calls. His second property
 
 ---
 
-## James' Advice for Airbnb Arbitrage Beginners {#advice}
+## James' Advice for Airbnb Arbitrage Beginners
 
 > "Just jump into it. You're not going to lose anything. Just go for it."
 
@@ -716,7 +716,7 @@ The biggest barrier isn't knowledge or capital—it's inaction. People join prog
 
 ---
 
-## Watch James' Full Interview {#video}
+## Watch James' Full Interview
 
 **Video highlights:**
 
@@ -736,7 +736,7 @@ The biggest barrier isn't knowledge or capital—it's inaction. People join prog
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
 ### How much can you make with Airbnb arbitrage while working full-time?
 

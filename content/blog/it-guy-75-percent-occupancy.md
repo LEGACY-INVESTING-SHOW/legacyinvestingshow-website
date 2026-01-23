@@ -151,7 +151,7 @@ This case study breaks down exactly how Grayson built his first Airbnb business,
 
 ---
 
-## Quick Results: Grayson's Airbnb Arbitrage Numbers {#quick-results}
+## Quick Results: Grayson's Airbnb Arbitrage Numbers
 
 | Metric | Value | Context |
 |------|------|------|
@@ -168,17 +168,17 @@ This case study breaks down exactly how Grayson built his first Airbnb business,
 
 ---
 
-## Grayson's Background: From IT Worker to Airbnb Host {#background}
+## Grayson's Background: From IT Worker to Airbnb Host
 
 **You don't need to quit your day job to start Airbnb arbitrage.** Grayson Nichols is proof: he built a $3,500/month side business while working full-time in IT, using his remote work flexibility to study the business and manage his property without sacrificing his primary income.
 
-### The Remote Work Advantage {#the-remote-work-advantage}
+### The Remote Work Advantage
 
 Grayson works remotely in IT, a setup that gave him two key advantages for starting an Airbnb business. First, he could do his job from anywhere with a laptop, which meant he could study the Legacy Investing Show course modules during downtime without needing to take time off work. Second, being location-flexible allowed him to be more hands-on with his first property during the setup phase.
 
 This flexibility matters more than most people realize. Grayson spent about six months going through the course material at his own pace, absorbing the strategies, scripts, and spreadsheets without feeling rushed. He treated the learning phase as an investment rather than a race to the finish line.
 
-### Discovering Airbnb Arbitrage {#discovering-airbnb-arbitrage}
+### Discovering Airbnb Arbitrage
 
 At an early age, Grayson decided he wanted to start a side hustle. The appeal of short-term rentals was the combination of relatively low startup costs compared to buying property, the potential for meaningful monthly cash flow, and the ability to start while keeping his day job.
 
@@ -188,9 +188,9 @@ When he found Legacy Investing Show, he saw a structured path to making it work.
 
 ---
 
-## The Airbnb Arbitrage Journey: Grayson's Timeline {#journey}
+## The Airbnb Arbitrage Journey: Grayson's Timeline
 
-### October 2022: Joining the Program {#october-2022-joining-the-program}
+### October 2022: Joining the Program
 
 **Situation**: Remote IT worker looking to build a side income stream.
 
@@ -200,7 +200,7 @@ Over the next six months, he worked through the course modules during breaks and
 
 > "I did the course for about 6 months, just kind of hopped in and out, figured out the right time, looked for markets."
 
-### Spring 2023: Property Hunting {#spring-2023-property-hunting}
+### Spring 2023: Property Hunting
 
 **Situation**: Ready to find a property but facing market challenges.
 
@@ -210,7 +210,7 @@ He broadened his search radius to include smaller towns outside Austin while sta
 
 Using Zillow, he methodically filled out the Legacy Investing Show spreadsheet with metrics on potential properties. The first property he flagged as promising turned out to be the one he ultimately secured.
 
-### July 2023: Going Live {#july-2023-going-live}
+### July 2023: Going Live
 
 **Situation**: Property secured, improvements made, listing launched.
 
@@ -232,7 +232,7 @@ One notable challenge was arranging proper insurance. The landlord rightfully wa
 
 - Platforms: Both Airbnb and VRBO
 
-### October 2023: Hitting Stride {#october-2023-hitting-stride}
+### October 2023: Hitting Stride
 
 **Situation**: Listing gaining traction with strong occupancy.
 
@@ -244,11 +244,11 @@ Even more encouraging, bookings were already coming in for November, December, a
 
 ---
 
-## How to Choose a Market for Airbnb Arbitrage: Near Austin Strategy {#market}
+## How to Choose a Market for Airbnb Arbitrage: Near Austin Strategy
 
 **When your target market has challenging regulations, look to adjacent areas where demand spillover creates opportunity.** Grayson chose a smaller town outside Austin because it combined proximity to a major metro with more favorable operating conditions.
 
-### Why Near Austin Works for Short-Term Rentals {#why-near-austin}
+### Why Near Austin Works for Short-Term Rentals
 
 Austin is one of the most popular destinations in Texas, drawing visitors for its tech scene, entertainment, live music, outdoor activities, and events like SXSW. However, Austin's regulations around short-term rentals can make operating directly in the city challenging.
 
@@ -262,7 +262,7 @@ Grayson recognized that nearby smaller towns benefit from Austin's demand driver
 
 **Lower Operating Costs**: Rent and other expenses are typically lower outside major metros.
 
-### The Walkability Factor {#the-walkability-factor}
+### The Walkability Factor
 
 One of the most powerful differentiators for Grayson's property is its proximity to downtown. Guests can walk to coffee shops, restaurants, and entertainment without needing a car.
 
@@ -274,11 +274,11 @@ The property's 100-year-old character adds another layer of differentiation. Tha
 
 ---
 
-## Airbnb Arbitrage Strategies That Actually Work: Grayson's Playbook {#strategies}
+## Airbnb Arbitrage Strategies That Actually Work: Grayson's Playbook
 
 **The difference between a struggling first property and a profitable one often comes down to small strategic decisions.** Grayson's approach demonstrates how thoughtful execution beats rushing to launch.
 
-### Strategy 1: Security Deposit Negotiation {#strategy-1-security-deposit-negotiation}
+### Strategy 1: Security Deposit Negotiation
 
 **What it is**: Negotiating with the landlord to use the security deposit for property improvements that benefit both parties.
 
@@ -314,7 +314,7 @@ This approach came directly from the Legacy Investing Show course material. The 
 
 ---
 
-### Strategy 2: Landlord Trust Building {#strategy-2-landlord-trust-building}
+### Strategy 2: Landlord Trust Building
 
 **What it is**: Using transparent communication, in-person meetings, and specific benefits to earn landlord approval for short-term rental use.
 
@@ -354,7 +354,7 @@ Critically, he offered to meet the landlord in person at the property. This face
 
 ---
 
-### Strategy 3: Studying Top Performers {#strategy-3-studying-top-performers}
+### Strategy 3: Studying Top Performers
 
 **What it is**: Analyzing the highest-performing listings in your market to understand what amenities and features drive bookings.
 
@@ -390,7 +390,7 @@ He discovered that almost all high-performing houses in his area had some sort o
 
 ---
 
-### Strategy 4: Multi-Platform Listing {#strategy-4-multi-platform-listing}
+### Strategy 4: Multi-Platform Listing
 
 **What it is**: Listing your property on both Airbnb and VRBO to maximize visibility and booking opportunities.
 
@@ -414,11 +414,11 @@ This insight is particularly valuable for hosts who are frustrated with slow boo
 
 ---
 
-## Grayson's Airbnb Arbitrage Results: The Numbers {#results}
+## Grayson's Airbnb Arbitrage Results: The Numbers
 
 **Grayson's first property generated $3,500 in profit by month three with 75% occupancy.** Here's the complete financial progression of his Airbnb arbitrage business.
 
-### Monthly Progression {#monthly-progression}
+### Monthly Progression
 
 | Month | Status | Profit | Notes |
 |------|------|------|------|
@@ -428,7 +428,7 @@ This insight is particularly valuable for hosts who are frustrated with slow boo
 | **October 2023** | Strong | $3,500 | 75% occupancy, busiest month |
 | **November+** | Projected | Growing | Bookings already on calendar |
 
-### Startup Costs Breakdown {#startup-costs-breakdown}
+### Startup Costs Breakdown
 
 | Category | Cost | Notes |
 |------|------|------|
@@ -441,7 +441,7 @@ This insight is particularly valuable for hosts who are frustrated with slow boo
 
 Grayson employed a smart financing strategy for the startup phase. He opened a business credit card with 12 months of 0% interest and put the first two months of rent on the card. This gave him runway to get the property booked and generating revenue before any financing costs kicked in.
 
-### Key Milestones Achieved {#key-milestones}
+### Key Milestones Achieved
 
 - First property secured within one year of joining program
 
@@ -459,11 +459,11 @@ Grayson employed a smart financing strategy for the startup phase. He opened a b
 
 ---
 
-## Airbnb Arbitrage Lessons: What Grayson Learned {#lessons}
+## Airbnb Arbitrage Lessons: What Grayson Learned
 
 **These five lessons from Grayson's experience could save you months of trial and error on your first property.** Each one addresses common mistakes that trip up new hosts.
 
-### Lesson 1: Be Hands-On with Your First Property {#lesson-1-be-hands-on-with-first-property}
+### Lesson 1: Be Hands-On with Your First Property
 
 **The Mistake**: Starting with a remote property that you can't easily visit and manage.
 
@@ -487,7 +487,7 @@ This hands-on approach gave him direct experience with every aspect of the busin
 
 ---
 
-### Lesson 2: Leverage Unique Property Character {#lesson-2-leverage-unique-property-character}
+### Lesson 2: Leverage Unique Property Character
 
 **The Mistake**: Viewing property quirks as limitations rather than differentiators.
 
@@ -511,7 +511,7 @@ The property's unique appearance and character create a moat against competition
 
 ---
 
-### Lesson 3: Ask Guests for Improvement Ideas {#lesson-3-ask-guests-for-improvement-ideas}
+### Lesson 3: Ask Guests for Improvement Ideas
 
 **The Mistake**: Assuming you know what guests want without asking them directly.
 
@@ -535,7 +535,7 @@ One example: guests suggested adding grab bars in the shower because the tub was
 
 ---
 
-### Lesson 4: Take a Long-Term Approach {#lesson-4-take-a-long-term-approach}
+### Lesson 4: Take a Long-Term Approach
 
 **The Mistake**: Expecting immediate profitability and getting discouraged by slow initial months.
 
@@ -559,7 +559,7 @@ His approach to the first property isn't about maximizing short-term returns. It
 
 ---
 
-### Lesson 5: Run Numbers Thoroughly Before Signing {#lesson-5-run-numbers-thoroughly}
+### Lesson 5: Run Numbers Thoroughly Before Signing
 
 **The Mistake**: Signing a lease without understanding all operating costs.
 
@@ -585,11 +585,11 @@ For predictable expenses like internet and pest control, he got quotes before si
 
 ---
 
-## Best Tools for Airbnb Arbitrage: Grayson's Approach {#tools}
+## Best Tools for Airbnb Arbitrage: Grayson's Approach
 
 **Grayson keeps his tech stack simple for his first property while focusing on fundamentals.** Here are the key tools and strategies he uses.
 
-### Tools and Strategies Overview {#tools-overview}
+### Tools and Strategies Overview
 
 | Category | Tool/Strategy | Purpose | Why Grayson Uses It |
 |------|------|------|------|
@@ -600,7 +600,7 @@ For predictable expenses like internet and pest control, he got quotes before si
 | **Insurance** | Proper STR Coverage | Landlord requirement | Course-recommended provider for compliant coverage |
 | **Financing** | Business Credit Card | Startup costs | 12-month 0% APR provides runway |
 
-### Professional Photography {#professional-photography}
+### Professional Photography
 
 **What it does**: Creates high-quality listing images that attract clicks and bookings.
 
@@ -608,7 +608,7 @@ For predictable expenses like internet and pest control, he got quotes before si
 
 **Pro tip**: Update photos when you add new amenities. Grayson noted he still needs to add photos of the fire pit while active and the new griddle he installed.
 
-### Zillow for Property Search {#zillow-for-property-search}
+### Zillow for Property Search
 
 **What it does**: Lists rental properties with landlord contact information.
 
@@ -616,7 +616,7 @@ For predictable expenses like internet and pest control, he got quotes before si
 
 **Pro tip**: Look for owner-listed properties rather than property management companies, as owners are more likely to negotiate and approve arbitrage arrangements.
 
-### Business Credit Card Strategy {#business-credit-card-strategy}
+### Business Credit Card Strategy
 
 **What it does**: Provides interest-free financing for startup costs.
 
@@ -626,19 +626,19 @@ For predictable expenses like internet and pest control, he got quotes before si
 
 ---
 
-## Grayson's Advice for Airbnb Arbitrage Beginners {#advice}
+## Grayson's Advice for Airbnb Arbitrage Beginners
 
 > "I think it's really important to have a long-term goal in mind. When you're getting in, it's definitely doable within a couple of weeks, but we decided to take our time and not be discouraged by that."
 
 **If Grayson were starting over today, here's exactly what he would do:**
 
-### Have a Long-Term Goal {#have-a-long-term-goal}
+### Have a Long-Term Goal
 
 Before you sign your first lease, know what you're building toward. Grayson's first property isn't his end goal; it's a stepping stone. He plans to hold it for at least two years, use the cash flow to fund his next acquisition, and build toward a larger portfolio.
 
 This clarity about the long-term prevents short-term discouragement. When July and August were slow, Grayson didn't panic because he knew the first property was about learning, not immediate maximum returns.
 
-### Don't Be Discouraged by Timeline {#dont-be-discouraged-by-timeline}
+### Don't Be Discouraged by Timeline
 
 While the course teaches that getting a property is doable within weeks, Grayson deliberately took his time. Six months of study before actively searching, then two months of setup. This slower pace wasn't a failure; it was a strategic choice to do everything right.
 
@@ -646,13 +646,13 @@ Every challenge you address upfront is one you don't have to solve under pressur
 
 > "The more that you catch upfront, things like 'I should fix that' or 'I should add this,' the less you have to add on later and the more you'll learn."
 
-### Catch Issues Upfront {#catch-issues-upfront}
+### Catch Issues Upfront
 
 Grayson recommends using the setup period to identify and address potential problems before guests arrive. Walk through the property with fresh eyes. What might confuse guests? What safety concerns exist? What's missing that top-performing listings have?
 
 The extra time spent on setup translates directly to better reviews, fewer complaints, and smoother operations once you're live.
 
-### Set Checkpoints Along the Way {#set-checkpoints}
+### Set Checkpoints Along the Way
 
 Long-term goals need intermediate milestones to track progress. Grayson's checkpoints included completing the course, finding a property, signing the lease, going live, getting first reviews, and achieving positive cash flow.
 
@@ -662,7 +662,7 @@ These smaller wins maintain motivation during the months-long process of buildin
 
 ---
 
-## Watch Grayson's Full Interview {#video}
+## Watch Grayson's Full Interview
 
 **Video highlights:**
 
@@ -684,27 +684,27 @@ These smaller wins maintain motivation during the months-long process of buildin
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
-### How much money can you make with your first Airbnb property? {#how-much-money-first-property}
+### How much money can you make with your first Airbnb property?
 
 Grayson earned $1,000 profit in September and $3,500 profit in October with his first property near Austin, Texas. Results improved dramatically each month as the listing gained reviews and visibility. By month three, he achieved 75% occupancy with bookings extending six months into the future.
 
 First property results vary based on market, property type, amenities, and execution. Grayson's deliberate approach to setup, strategic amenity additions, and dual-platform listing contributed to his strong early performance.
 
-### How long does it take to get your first Airbnb arbitrage property? {#how-long-first-property}
+### How long does it take to get your first Airbnb arbitrage property?
 
 Grayson joined Legacy Investing Show in October 2022 and went live with his first property in July 2023 - approximately 9 months total. However, he intentionally took a slower approach, spending about 6 months on the course and 2 months on setup.
 
 Many students move faster when circumstances allow. The course teaches that getting a property is doable within weeks. Grayson chose to take his time to learn thoroughly and do everything right with his first property.
 
-### Can you do Airbnb arbitrage with a full-time job? {#airbnb-with-fulltime-job}
+### Can you do Airbnb arbitrage with a full-time job?
 
 Yes. Grayson works remotely in IT and completed the entire process while maintaining his day job. His remote work flexibility allowed him to study the course modules during downtime and be hands-on with his property during the setup phase.
 
 The key is treating the Airbnb business as a serious side project and making consistent progress over time, rather than trying to do everything at once. Grayson's 6-month study period demonstrates that you can learn at your own pace.
 
-### How do you convince a landlord to let you do Airbnb arbitrage? {#convince-landlord}
+### How do you convince a landlord to let you do Airbnb arbitrage?
 
 Grayson used the Legacy Investing Show script to present himself as a small business owner who turns properties into beautiful homes for traveling professionals and families. He met the landlord in person, was transparent about his intentions, and emphasized specific benefits:
 
@@ -716,13 +716,13 @@ Grayson used the Legacy Investing Show script to present himself as a small busi
 
 - He demonstrated he was a real, responsible person through the in-person meeting
 
-### What startup costs are needed for Airbnb arbitrage? {#startup-costs}
+### What startup costs are needed for Airbnb arbitrage?
 
 Grayson's main costs were the $2,300 security deposit (which he negotiated to reinvest into property improvements), first month's rent, furnishing costs, professional photography, and proper insurance. He strategically used a business credit card with 12 months of 0% interest to cover initial rent payments, giving the property time to generate revenue.
 
 His property came recently renovated by the landlord with new roof, floors, and HVAC, reducing the furnishing burden compared to properties that need more work.
 
-### Is it better to list on Airbnb or VRBO? {#airbnb-vs-vrbo}
+### Is it better to list on Airbnb or VRBO?
 
 List on both. Grayson discovered that the majority of his bookings came through VRBO, not Airbnb. If he had only listed on Airbnb, he would have missed most of his business.
 
@@ -730,13 +730,13 @@ Which platform performs better varies by market, property type, and guest demogr
 
 ---
 
-## Start Your Airbnb Arbitrage Journey {#start-your-journey}
+## Start Your Airbnb Arbitrage Journey
 
 **Ready to build your own Airbnb arbitrage business like Grayson?**
 
 [Learn more about Legacy Investing Show](/programs.html)
 
-### Related Success Stories {#related-success-stories}
+### Related Success Stories
 
 - [How Gary Built a $35,000/Month Airbnb Business in Austin](/blog/gary-marketing-executive-35k-month.html)
 
@@ -744,13 +744,13 @@ Which platform performs better varies by market, property type, and guest demogr
 
 - [How Micah Made $5,000 His First Month with One Facebook Message](/blog/micah-facebook-message-5k-month-houston.html)
 
-### Helpful Resources {#helpful-resources}
+### Helpful Resources
 
 - [Complete Guide to Getting Started with Airbnb Arbitrage](/blog/getting-started-airbnb-arbitrage.html)
 
 ---
 
-## About Legacy Investing Show {#about}
+## About Legacy Investing Show
 
 **Legacy Investing Show** is Preston Seo's comprehensive Airbnb arbitrage training program. Since founding, the program has:
 

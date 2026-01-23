@@ -152,7 +152,7 @@ This case study breaks down exactly how Kayla built this Airbnb arbitrage busine
 
 ---
 
-## Quick Results: Kayla's Airbnb Arbitrage Numbers {#quick-results}
+## Quick Results: Kayla's Airbnb Arbitrage Numbers
 
 | Metric | Value | Context |
 |------|------|------|
@@ -168,11 +168,11 @@ This case study breaks down exactly how Kayla built this Airbnb arbitrage busine
 
 ---
 
-## Kayla's Background: From Dentist to Airbnb Entrepreneur {#background}
+## Kayla's Background: From Dentist to Airbnb Entrepreneur
 
 **You don't need real estate experience to start Airbnb arbitrage.** Kayla Schwarz is proof: she came from dentistry with zero rental property experience and built an $82,000/year revenue stream in her first year while maintaining her full-time career.
 
-### The Dental Career and Practice Ownership {#the-dental-career}
+### The Dental Career and Practice Ownership
 
 Kayla is a full-time dentist in Cleveland, Ohio, and she owns her own dental practice. Contrary to what many people assume about medical professionals, the path to practice ownership requires significant business acumen and financial commitment. When Kayla bought her dental practice, she took on a substantial loan—potentially $500,000 to $1 million—knowing that profitability wouldn't come for many years.
 
@@ -180,7 +180,7 @@ This experience with delayed gratification and long-term investment thinking wou
 
 Kayla admits that dental school provided absolutely no business training. Everything she learned about running a business came from hands-on experience after graduation. This practical business education, gained through trial and error at her dental practice, would prove invaluable when launching her Airbnb business.
 
-### Discovering Airbnb Arbitrage on TikTok {#discovering-arbitrage}
+### Discovering Airbnb Arbitrage on TikTok
 
 Like many Legacy Investing Show students, Kayla discovered Airbnb arbitrage through social media. She was scrolling TikTok one day—it was a Wednesday—when she came across Preston's content. Something about the concept immediately resonated with her.
 
@@ -192,7 +192,7 @@ By Saturday or Sunday of that same week, Kayla had completed Preston's intro cou
 
 > "Every person who dropped off thought to themselves like either I'm scared or this is BS or whatever. It's not. I mean dive right in. My advice is dive right in, be confident, and you can do it 100%."
 
-### Why Arbitrage Made Sense for a Medical Professional {#why-arbitrage-made-sense}
+### Why Arbitrage Made Sense for a Medical Professional
 
 Kayla recognized something that many of her medical professional colleagues didn't: the speed advantage of short-term rentals over traditional real estate investing.
 
@@ -204,9 +204,9 @@ When Preston explained the arbitrage model in his intro class, it clicked immedi
 
 ---
 
-## The Airbnb Arbitrage Journey: Kayla's Timeline {#journey}
+## The Airbnb Arbitrage Journey: Kayla's Timeline
 
-### March 2023: Discovery and Decision {#march-2023}
+### March 2023: Discovery and Decision
 
 **Situation**: Full-time dentist seeking additional income stream after a tough week at work.
 
@@ -214,7 +214,7 @@ Kayla discovered Preston's content on TikTok on a Wednesday in March 2023. Withi
 
 She immediately began doing market research during her lunch hours at the dental office. Using Air DNA, she analyzed various markets and was surprised to discover that Cleveland—her own backyard—was actually an underserved market with strong demand for larger properties.
 
-### April 2023: First Property Secured {#april-2023}
+### April 2023: First Property Secured
 
 **Situation**: Property hunting while working full-time, secured lease by mid-April.
 
@@ -228,7 +228,7 @@ Within an hour of returning home from the viewing, Kayla received a call from th
 
 > "I actually went in with a portfolio kind of with all of the things that Preston had taught in his class... honestly he barely glanced at that. I think it was a combination of the renter wanting a quick turnover and I think he kind of assumed that some of these other people who were interested might be a little bit nitpicky."
 
-### May-June 2023: Setup and Launch {#may-june-2023}
+### May-June 2023: Setup and Launch
 
 **Situation**: Grinding through setup while maintaining dental practice schedule.
 
@@ -242,7 +242,7 @@ Professional photography was non-negotiable. She researched local photographers 
 
 By the end of June, the property was ready for its first guests.
 
-### July 2023 - Present: Operating and Scaling {#first-year}
+### July 2023 - Present: Operating and Scaling
 
 **Situation**: First full year of operations with seasonal learning curve.
 
@@ -258,11 +258,11 @@ By April of the following year, momentum had returned. She already had $40,000 i
 
 ---
 
-## How to Choose a Market for Airbnb Arbitrage: Kayla's Cleveland Strategy {#market}
+## How to Choose a Market for Airbnb Arbitrage: Kayla's Cleveland Strategy
 
 **Cleveland is an untapped market for Airbnb arbitrage because it offers strong demand for larger properties without the saturation of major tourist destinations.** Kayla analyzed multiple markets before realizing her own backyard was the best opportunity.
 
-### Why Cleveland Works for Short-Term Rentals {#why-cleveland}
+### Why Cleveland Works for Short-Term Rentals
 
 When most people think of Airbnb markets, they think of Nashville, Austin, Miami, or California beach towns. These markets are either saturated with competition or have restrictive HOA rules and regulations that make arbitrage difficult or impossible.
 
@@ -276,7 +276,7 @@ Cleveland offered something different. Using Air DNA, Kayla discovered that the 
 
 > "It's kind of shocking to me that Cleveland is actually a really really good market. I'm a really good micromanager so I decided to stay local."
 
-### Kayla's Market Research Process {#market-research}
+### Kayla's Market Research Process
 
 Kayla conducted her market research during lunch breaks at the dental office. Her process was methodical:
 
@@ -302,11 +302,11 @@ Kayla conducted her market research during lunch breaks at the dental office. He
 
 ---
 
-## Airbnb Arbitrage Strategies That Actually Work: Kayla's Playbook {#strategies}
+## Airbnb Arbitrage Strategies That Actually Work: Kayla's Playbook
 
 **The difference between landing a property and getting rejected comes down to presentation and perception.** Kayla attributes her rapid success to four core strategies that helped her secure a property on her second try.
 
-### Strategy 1: The Confident First Impression {#strategy-1}
+### Strategy 1: The Confident First Impression
 
 **What it is**: Present yourself as knowledgeable and easy to work with, even if you're a complete beginner.
 
@@ -338,7 +338,7 @@ She also dressed strategically. While one competitor showed up in pearls and a d
 
 ---
 
-### Strategy 2: Targeting Large Groups and Events {#strategy-2}
+### Strategy 2: Targeting Large Groups and Events
 
 **What it is**: Focus on properties that can accommodate bachelor/bachelorette parties, weddings, and large group gatherings.
 
@@ -370,7 +370,7 @@ The wedding market in Cleveland provides consistent demand. Groups booking for b
 
 ---
 
-### Strategy 3: Mid-Century Modern Design on a Budget {#strategy-3}
+### Strategy 3: Mid-Century Modern Design on a Budget
 
 **What it is**: Create a trendy, photogenic space using primarily Wayfair and Amazon, guided by reviews and local aesthetic preferences.
 
@@ -410,7 +410,7 @@ She also brought in a friend whose house always looked great to help with final 
 
 ---
 
-### Strategy 4: Dynamic Pricing with Price Labs {#strategy-4}
+### Strategy 4: Dynamic Pricing with Price Labs
 
 **What it is**: Use automated pricing software to optimize rates based on demand, seasonality, and market conditions.
 
@@ -440,11 +440,11 @@ Kayla uses Price Labs, which Preston recommends in his course. The tool automati
 
 ---
 
-## Kayla's Airbnb Arbitrage Results: The Numbers {#results}
+## Kayla's Airbnb Arbitrage Results: The Numbers
 
 **Kayla generated $82,000 in revenue in her first 12 months with one property.** Here's the complete financial breakdown of her Airbnb arbitrage business.
 
-### Complete Financial Breakdown {#financial-breakdown}
+### Complete Financial Breakdown
 
 | Category | Monthly Cost | Notes |
 |------|------|------|
@@ -465,7 +465,7 @@ Kayla uses Price Labs, which Preston recommends in his course. The tool automati
 
 **Important Note**: Kayla's cleaning costs are lower than average because her cleaners are also her dental patients, allowing for some bartering. Typical cleaning costs would be $750-$1,000 for this property size.
 
-### Seasonal Performance Analysis {#seasonal-performance}
+### Seasonal Performance Analysis
 
 | Period | Performance | Notes |
 |------|------|------|
@@ -482,7 +482,7 @@ Kayla uses Price Labs, which Preston recommends in his course. The tool automati
 
 **First 12 Months Total**: $82,000 gross revenue (July 2023 - end of year: $42,479.89)
 
-### Key Milestones Achieved {#milestones}
+### Key Milestones Achieved
 
 - ✅ **Property secured in 7 days**: Fastest path from first pitch to signed lease
 
@@ -502,13 +502,13 @@ Kayla uses Price Labs, which Preston recommends in his course. The tool automati
 
 ---
 
-## Airbnb Arbitrage Lessons: What Kayla Learned the Hard Way {#lessons}
+## Airbnb Arbitrage Lessons: What Kayla Learned the Hard Way
 
 **These five lessons took Kayla from complete beginner to profitable Airbnb host.** Each one came from real experience—and could save you months of trial and error.
 
 > "You just can't be scared. Dive right in, be confident, and you can do it 100%. I mean if I can—I work a ton at my office—if I can do it, you can do it for sure."
 
-### Lesson 1: Act Confident Even When You're Not {#lesson-1}
+### Lesson 1: Act Confident Even When You're Not
 
 **The Mistake**: Letting nervousness show during property viewings and landlord interactions.
 
@@ -532,7 +532,7 @@ She kept quiet while the other potential tenants nitpicked and complained. She l
 
 ---
 
-### Lesson 2: Landlords Want Easy, Not Impressed {#lesson-2}
+### Lesson 2: Landlords Want Easy, Not Impressed
 
 **The Mistake**: Trying to dazzle landlords with elaborate portfolios and presentations.
 
@@ -556,7 +556,7 @@ What actually sealed the deal was something simpler: she presented herself as an
 
 ---
 
-### Lesson 3: Interview Your Team Before Hiring {#lesson-3}
+### Lesson 3: Interview Your Team Before Hiring
 
 **The Mistake**: Assuming professional service providers will automatically deliver quality work.
 
@@ -580,7 +580,7 @@ The turnaround came when she discovered that one of her dental patients ran a cl
 
 ---
 
-### Lesson 4: Don't Slack During Slow Months {#lesson-4}
+### Lesson 4: Don't Slack During Slow Months
 
 **The Mistake**: Reducing attention to the Airbnb during busy periods at her primary job.
 
@@ -602,7 +602,7 @@ The result: December and January were her slowest months. While some of this was
 
 ---
 
-### Lesson 5: The Tech Is Learnable, The Execution Matters {#lesson-5}
+### Lesson 5: The Tech Is Learnable, The Execution Matters
 
 **The Mistake**: Letting fear of technology delay action.
 
@@ -626,7 +626,7 @@ The actual time spent managing guests, communicating with cleaners, and handling
 
 ---
 
-## Best Tools for Airbnb Arbitrage: Kayla's Tech Stack {#tools}
+## Best Tools for Airbnb Arbitrage: Kayla's Tech Stack
 
 **Kayla manages her property in 2-4 hours per week using these tools.** Here's the complete tech stack that powers her $82,000/year business.
 
@@ -666,7 +666,7 @@ The actual time spent managing guests, communicating with cleaners, and handling
 
 ---
 
-## Kayla's Advice for Airbnb Arbitrage Beginners {#advice}
+## Kayla's Advice for Airbnb Arbitrage Beginners
 
 > "Tons of people talk to me about it all the time and so many people express interest in it but I think the biggest thing is you can't be scared."
 
@@ -724,7 +724,7 @@ Her long-term goal: one property per year for the next 5-10 years, with the even
 
 ---
 
-## Watch Kayla's Full Interview {#video}
+## Watch Kayla's Full Interview
 
 **Video highlights:**
 
@@ -746,7 +746,7 @@ Her long-term goal: one property per year for the next 5-10 years, with the even
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
 ### How much money can you really make with Airbnb arbitrage?
 
@@ -782,7 +782,7 @@ Kayla identifies several risks she actively manages:
 
 ---
 
-## Start Your Airbnb Arbitrage Journey {#start}
+## Start Your Airbnb Arbitrage Journey
 
 **Ready to build your own Airbnb arbitrage business like Kayla?**
 
@@ -802,7 +802,7 @@ Kayla identifies several risks she actively manages:
 
 ---
 
-## About Legacy Investing Show {#about}
+## About Legacy Investing Show
 
 **Legacy Investing Show** is Preston Seo's comprehensive Airbnb arbitrage training program. Since founding, the program has:
 

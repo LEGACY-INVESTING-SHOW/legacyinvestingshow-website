@@ -152,7 +152,7 @@ This case study breaks down exactly how Andrew built an international Airbnb arb
 
 ---
 
-## Quick Results: Andrew's International Airbnb Numbers {#quick-results}
+## Quick Results: Andrew's International Airbnb Numbers
 
 | Metric | Value | Context |
 |------|------|------|
@@ -167,17 +167,17 @@ This case study breaks down exactly how Andrew built an international Airbnb arb
 
 ---
 
-## Andrew's Background: From Hotel Management to Airbnb Entrepreneur {#background}
+## Andrew's Background: From Hotel Management to Airbnb Entrepreneur
 
 **International Airbnb arbitrage is possible with the right industry knowledge and local partnerships.** Andrew's 15 years in hospitality gave him a unique advantage, but his success came from applying a proven system to an unfamiliar market.
 
-### The Hospitality Industry Roots {#hospitality-roots}
+### The Hospitality Industry Roots
 
 Andrew spent 15 years in hotel management, immersing himself in every aspect of hospitality operations. From front desk management to revenue optimization, he learned the fundamentals of guest experience, pricing strategy, and property operations at scale. This foundation proved invaluable when transitioning to short-term rental arbitrage.
 
 Today, Andrew works in a related field on the software side for a company that makes hotel management systems. This dual perspective gives him unique insight into both the operational and technological aspects of hospitality, allowing him to identify opportunities others might miss.
 
-### The Entrepreneurship Mindset Shift {#entrepreneurship-mindset}
+### The Entrepreneurship Mindset Shift
 
 Like many successful Airbnb operators, Andrew's entrepreneurial journey started with a mindset shift. Growing up, he was always encouraged to think outside the box about revenue streams and business opportunities. But the real catalyst came when he read Rich Dad Poor Dad by Robert Kiyosaki.
 
@@ -185,7 +185,7 @@ Like many successful Airbnb operators, Andrew's entrepreneurial journey started 
 
 The book challenged the traditional narrative of studying hard, getting a good job, and climbing the corporate ladder. It introduced Andrew to the concept of building assets that work for you rather than working endlessly for someone else. This perspective shift led him to explore various business opportunities over the years, with some working out and others serving as learning experiences.
 
-### Discovering Airbnb Arbitrage {#discovering-arbitrage}
+### Discovering Airbnb Arbitrage
 
 Andrew first encountered the concept of Airbnb arbitrage a couple of years before the pandemic. The idea was immediately appealing given his hospitality background. However, despite his industry experience, he faced a significant hurdle: he didn't know the step-by-step process to actually execute the business model.
 
@@ -195,9 +195,9 @@ Questions swirled in his mind. How do you approach landlords? What do you say to
 
 ---
 
-## The Airbnb Arbitrage Journey: Andrew's Timeline {#journey}
+## The Airbnb Arbitrage Journey: Andrew's Timeline
 
-### Pre-Pandemic: The Concept Takes Hold {#pre-pandemic}
+### Pre-Pandemic: The Concept Takes Hold
 
 **Situation**: Andrew discovered Airbnb arbitrage but lacked a clear execution path.
 
@@ -205,7 +205,7 @@ A couple of years before COVID-19, Andrew first learned about Airbnb arbitrage w
 
 The missing pieces were fundamental: How do you convince a landlord to let you sublease their property for short-term rentals? What scripts and approaches actually work? How do you analyze whether a property will be profitable? Without answers to these questions, Andrew remained interested but inactive.
 
-### Finding the Right Education {#finding-program}
+### Finding the Right Education
 
 **Situation**: Legacy Investing Show provided the missing framework for action.
 
@@ -215,7 +215,7 @@ The program provided what Andrew had been missing: a complete framework for the 
 
 > "Going through the modules of the program helped a lot on the negotiation stage. I knew what I needed for numbers to get out what I wanted to make it worth my time to even put any money down."
 
-### Securing the First International Property {#first-property}
+### Securing the First International Property
 
 **Situation**: Andrew secured a property in Tulum, Mexico while living in the United States.
 
@@ -239,11 +239,11 @@ The international aspect added complexity. Being a foreign citizen meant navigat
 
 ---
 
-## How to Choose a Market for International Airbnb Arbitrage: Andrew's Tulum Strategy {#market}
+## How to Choose a Market for International Airbnb Arbitrage: Andrew's Tulum Strategy
 
 **Tulum is positioned for significant growth due to infrastructure investments, though operators must account for seasonal revenue swings.** Andrew analyzed multiple markets before choosing Tulum, focusing on growth catalysts, partnership availability, and long-term potential.
 
-### Why Tulum Works for Short-Term Rentals {#why-tulum}
+### Why Tulum Works for Short-Term Rentals
 
 Tulum attracted Andrew for one primary reason: a brand new International Airport opening in December. This infrastructure investment signals government commitment to tourism growth and will allow direct international flights into the region for the first time. Currently, visitors fly into Cancun and drive 2+ hours south to Tulum. The new airport eliminates this friction entirely.
 
@@ -261,7 +261,7 @@ Tulum attracted Andrew for one primary reason: a brand new International Airport
 
 **The Growth Thesis**: Andrew's investment is positioned to benefit from this infrastructure catalyst. While year one returns are modest due to learning the seasonal patterns, year two should see significant improvement as the airport drives increased tourism and the property builds reviews and reputation.
 
-### Navigating International Market Challenges {#international-challenges}
+### Navigating International Market Challenges
 
 Operating in Mexico as a US citizen created unique challenges that domestic arbitrage doesn't present:
 
@@ -273,7 +273,7 @@ Operating in Mexico as a US citizen created unique challenges that domestic arbi
 
 **Communication and Trust**: Building relationships with partners you've never met in person requires additional vetting and reference checking.
 
-### Andrew's Market Research Process {#market-research}
+### Andrew's Market Research Process
 
 Despite the challenges, Andrew conducted thorough due diligence before committing:
 
@@ -291,11 +291,11 @@ Despite the challenges, Andrew conducted thorough due diligence before committin
 
 ---
 
-## International Airbnb Arbitrage Strategies That Actually Work: Andrew's Playbook {#strategies}
+## International Airbnb Arbitrage Strategies That Actually Work: Andrew's Playbook
 
 **The difference between successful and failed international arbitrage comes down to finding the right local partners.** Andrew attributes his remote operation success to four core strategies that made cross-border management possible.
 
-### Strategy 1: Finding International Partners Through Facebook Groups {#strategy-1}
+### Strategy 1: Finding International Partners Through Facebook Groups
 
 **What it is**: Using specialized Facebook groups to connect with landlords, property managers, and operators in target international markets.
 
@@ -323,7 +323,7 @@ Andrew's search started with Facebook groups focused on Airbnb arbitrage connect
 
 ---
 
-### Strategy 2: Building a Trusted Boots-on-the-Ground Team {#strategy-2}
+### Strategy 2: Building a Trusted Boots-on-the-Ground Team
 
 **What it is**: Assembling a local team of property managers, cleaners, and maintenance contacts who can execute your vision without physical presence.
 
@@ -353,7 +353,7 @@ Andrew's search started with Facebook groups focused on Airbnb arbitrage connect
 
 ---
 
-### Strategy 3: Leveraging Emerging Market Opportunities {#strategy-3}
+### Strategy 3: Leveraging Emerging Market Opportunities
 
 **What it is**: Identifying markets with clear growth catalysts that will increase demand and property values over time.
 
@@ -383,7 +383,7 @@ The strategy involves two phases: secure positive cash flow today (Andrew's $1,5
 
 ---
 
-### Strategy 4: Negotiating with Knowledge and Confidence {#strategy-4}
+### Strategy 4: Negotiating with Knowledge and Confidence
 
 **What it is**: Using program education to understand your numbers deeply and negotiate from a position of informed confidence.
 
@@ -411,11 +411,11 @@ The strategy involves two phases: secure positive cash flow today (Andrew's $1,5
 
 ---
 
-## Andrew's International Airbnb Results: The Numbers {#results}
+## Andrew's International Airbnb Results: The Numbers
 
 **Andrew generates $1,500/month average in year one with projections of $2,500/month in year two.** Here's the complete financial breakdown of his international Airbnb arbitrage business.
 
-### Seasonal Revenue Breakdown {#seasonal-breakdown}
+### Seasonal Revenue Breakdown
 
 Tulum's highly seasonal market creates significant revenue variation throughout the year:
 
@@ -428,7 +428,7 @@ Tulum's highly seasonal market creates significant revenue variation throughout 
 
 Understanding this seasonality was crucial for Andrew's planning. The summer off-season when other US markets peak is actually Tulum's slow period. This counter-cyclical pattern creates opportunities for investors who understand the dynamics.
 
-### Year One vs. Year Two Projections {#year-one-vs-two}
+### Year One vs. Year Two Projections
 
 | Metric | Year One | Year Two (Projected) |
 |------|------|------|
@@ -440,7 +440,7 @@ Understanding this seasonality was crucial for Andrew's planning. The summer off
 
 Andrew acknowledges that year one returns are softer than initially hoped, but attributes this to learning the market's seasonal patterns. The new airport opening represents a significant demand catalyst that should drive year two improvements.
 
-### Key Milestones Achieved {#key-milestones}
+### Key Milestones Achieved
 
 - Secured first international property while working full-time in US
 
@@ -456,13 +456,13 @@ Andrew acknowledges that year one returns are softer than initially hoped, but a
 
 ---
 
-## International Airbnb Arbitrage Lessons: What Andrew Learned {#lessons}
+## International Airbnb Arbitrage Lessons: What Andrew Learned
 
 **These five lessons took Andrew from interested observer to international Airbnb operator.** Each one came from real experience and could save you months of uncertainty.
 
 > "Having the understanding of what was required from going through the modules of the program went a long ways for renegotiating even lower management fees."
 
-### Lesson 1: Remote Doesn't Mean Alone {#lesson-1}
+### Lesson 1: Remote Doesn't Mean Alone
 
 **The Mistake**: Trying to operate a remote property without establishing trusted local partnerships first.
 
@@ -486,7 +486,7 @@ The property management team handles guest communication. The cleaning team main
 
 ---
 
-### Lesson 2: Education Builds Credibility and Confidence {#lesson-2}
+### Lesson 2: Education Builds Credibility and Confidence
 
 **The Mistake**: Approaching deals without deep understanding of required numbers and processes.
 
@@ -508,7 +508,7 @@ When he approached his Tulum property manager, Andrew demonstrated detailed unde
 
 ---
 
-### Lesson 3: Understand Seasonal Markets Before Committing {#lesson-3}
+### Lesson 3: Understand Seasonal Markets Before Committing
 
 **The Mistake**: Underestimating how dramatically revenue can vary between high and low seasons.
 
@@ -530,7 +530,7 @@ The seasonality also runs counter to US patterns. When American vacation destina
 
 ---
 
-### Lesson 4: Look for Market Catalysts {#lesson-4}
+### Lesson 4: Look for Market Catalysts
 
 **The Mistake**: Only considering current market conditions without evaluating growth trajectory.
 
@@ -550,7 +550,7 @@ The seasonality also runs counter to US patterns. When American vacation destina
 
 ---
 
-### Lesson 5: Match Your Strategy to Your Strengths {#lesson-5}
+### Lesson 5: Match Your Strategy to Your Strengths
 
 **The Mistake**: Following someone else's strategy without considering your unique background and circumstances.
 
@@ -572,7 +572,7 @@ The seasonality also runs counter to US patterns. When American vacation destina
 
 ---
 
-## Best Tools for International Airbnb Arbitrage: Andrew's Tech Stack {#tools}
+## Best Tools for International Airbnb Arbitrage: Andrew's Tech Stack
 
 **Andrew manages his Tulum property with minimal time using these tools and partnerships.** Here's the tech stack that enables remote international operation.
 
@@ -612,13 +612,13 @@ The seasonality also runs counter to US patterns. When American vacation destina
 
 ---
 
-## Andrew's Advice for Airbnb Arbitrage Beginners {#advice}
+## Andrew's Advice for Airbnb Arbitrage Beginners
 
 > "Really try to get it into a place where I enjoy living at or visiting. Look at those opportunities that might just fit your personality."
 
 **If Andrew were advising someone just starting, here's exactly what he would say:**
 
-### Step 1: Getting Started (Week 1-2) {#step-1-getting-started}
+### Step 1: Getting Started (Week 1-2)
 
 Andrew emphasizes starting with education. He had the concept for years before taking action, and the missing piece was a clear system for execution. His recommendations for beginners:
 
@@ -628,7 +628,7 @@ Andrew emphasizes starting with education. He had the concept for years before t
 
 **Start Where You're Comfortable**: While Andrew went international for his first property, most people should start closer to home. Build confidence with accessible markets before exploring more complex opportunities.
 
-### Step 2: Finding Properties (Week 3-6) {#step-2-finding-properties}
+### Step 2: Finding Properties (Week 3-6)
 
 Property hunting requires different strategies for different markets. Andrew's approach for international properties:
 
@@ -638,7 +638,7 @@ Property hunting requires different strategies for different markets. Andrew's a
 
 **Supplement Limited Data**: Air DNA and similar tools are less complete for international markets. Use local knowledge to fill gaps in the data.
 
-### Step 3: Building Your Team (Week 7-10) {#step-3-building-team}
+### Step 3: Building Your Team (Week 7-10)
 
 Remote operation requires a trusted local team. Andrew's process for building partnerships:
 
@@ -648,7 +648,7 @@ Remote operation requires a trusted local team. Andrew's process for building pa
 
 **Document Everything**: Clear expectations about responsibilities, communication, and performance prevent misunderstandings.
 
-### Mindset Advice from Andrew {#mindset-advice}
+### Mindset Advice from Andrew
 
 Andrew's entrepreneurial journey started with a mindset shift from Rich Dad Poor Dad. His advice on mental approach:
 
@@ -662,7 +662,7 @@ Andrew's entrepreneurial journey started with a mindset shift from Rich Dad Poor
 
 ---
 
-## Watch Andrew's Full Interview {#video}
+## Watch Andrew's Full Interview
 
 **Video highlights:**
 
@@ -682,7 +682,7 @@ Andrew's entrepreneurial journey started with a mindset shift from Rich Dad Poor
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
 ### Can you really do Airbnb arbitrage in another country?
 
@@ -716,7 +716,7 @@ Andrew identifies several challenges that require navigation:
 
 ---
 
-## Start Your Airbnb Arbitrage Journey {#start}
+## Start Your Airbnb Arbitrage Journey
 
 **Ready to build your own Airbnb arbitrage business like Andrew?**
 
@@ -736,7 +736,7 @@ Andrew identifies several challenges that require navigation:
 
 ---
 
-## About Legacy Investing Show {#about}
+## About Legacy Investing Show
 
 **Legacy Investing Show** is Preston Seo's comprehensive Airbnb arbitrage training program. Since founding, the program has:
 

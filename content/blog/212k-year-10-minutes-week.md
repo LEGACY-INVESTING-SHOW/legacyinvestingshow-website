@@ -151,7 +151,7 @@ This case study breaks down everything: the exact numbers, the management system
 
 ---
 
-## Quick Results: The Numbers Behind This Property {#quick-results}
+## Quick Results: The Numbers Behind This Property
 
 | Metric | Value | Context |
 |------|------|------|
@@ -167,7 +167,7 @@ This case study breaks down everything: the exact numbers, the management system
 
 ---
 
-## Background: Why I Built This System {#background}
+## Background: Why I Built This System
 
 **Most people think running an Airbnb requires 10-15 hours per week or more.** That belief stops countless would-be investors from getting started. I built this system specifically to prove that short-term rentals don't have to become a second job—they can be genuinely passive income when you set up the right processes from the beginning.
 
@@ -183,15 +183,15 @@ But here's the honest truth: if you do it incorrectly, it can turn into a living
 
 ---
 
-## The Journey: From Purchase to Passive Income {#journey}
+## The Journey: From Purchase to Passive Income
 
-### March 2023: Property Launch {#march-2023-property-launch}
+### March 2023: Property Launch
 
 **The property**: A 5-bedroom, 4-bathroom chalet located in Virginia. Newly built construction with modern design and excellent bones—exactly what I look for in a profitable short-term rental.
 
 The decision to purchase came after extensive market research. Virginia offered a specific profitable segment that competitors weren't targeting effectively. The property itself had characteristics that would be difficult to replicate, giving me a sustainable competitive advantage.
 
-### The Investment Breakdown {#the-investment-breakdown}
+### The Investment Breakdown
 
 **Purchase price**: $750,000
 
@@ -205,7 +205,7 @@ Here's exactly what I invested to acquire and set up this property:
 
 Yes, the interest rate was 9.25%—I know, it's high. But I negotiated for the seller to pay part of my closing costs, which offset some of that pain. More importantly, the returns have justified the financing cost many times over.
 
-### Remote Setup Process {#remote-setup-process}
+### Remote Setup Process
 
 The entire property was set up without me ever visiting in person. Here's how that worked:
 
@@ -221,11 +221,11 @@ The key insight: you don't need to be physically present to manage quality. With
 
 ---
 
-## Market Selection: Why Virginia {#market}
+## Market Selection: Why Virginia
 
 **The way I was able to make $212,700 with this property was by identifying a profitable segment within a market that competition doesn't target.** Rather than competing in oversaturated markets where everyone fights on price, I look for opportunities where differentiation creates sustainable advantage.
 
-### Identifying Profitable Segments {#identifying-profitable-segments}
+### Identifying Profitable Segments
 
 My approach to market selection focuses on finding niches where:
 
@@ -237,7 +237,7 @@ My approach to market selection focuses on finding niches where:
 
 This Virginia property checked all three boxes. The market had demand drivers that supported premium nightly rates, but most existing listings were generic and undifferentiated. By investing in design and amenities, I could command significantly higher prices than the competition.
 
-### Property Criteria That Matters {#property-criteria-that-matters}
+### Property Criteria That Matters
 
 I chose this specific property because of several key factors:
 
@@ -255,11 +255,11 @@ The money I spent on interior design and amenities was strategically chosen to p
 
 ---
 
-## The Strategies: Systems That Enable 10-Minute Management {#strategies}
+## The Strategies: Systems That Enable 10-Minute Management
 
 **The difference between running a short-term rental as a full-time job versus managing it in 10 minutes per week comes down to how you structure your operations.** Here are the exact systems that make passive income possible.
 
-### Strategy 1: The Dual VA System {#strategy-1-the-dual-va-system}
+### Strategy 1: The Dual VA System
 
 **What it is**: I employ two virtual assistants, each with distinct responsibilities, creating redundancy and specialization.
 
@@ -294,7 +294,7 @@ The money I spent on interior design and amenities was strategically chosen to p
 
 ---
 
-### Strategy 2: Boots-on-Ground Team {#strategy-2-boots-on-ground-team}
+### Strategy 2: Boots-on-Ground Team
 
 **What it is**: Local team members who handle physical tasks at the property.
 
@@ -322,7 +322,7 @@ The cleaning cost of $295 per turnover might seem high, but I pass this directly
 
 ---
 
-### Strategy 3: Differentiation Through Design {#strategy-3-differentiation-through-design}
+### Strategy 3: Differentiation Through Design
 
 **What it is**: Investing in design elements and amenities that competitors can't easily replicate.
 
@@ -354,7 +354,7 @@ This might seem like a lot, but consider the return: $710 average nightly rate a
 
 ---
 
-### Strategy 4: The Bridge Method Alternative {#strategy-4-the-bridge-method-alternative}
+### Strategy 4: The Bridge Method Alternative
 
 **What it is**: For those without $241,000 to invest, the bridge method allows you to start an Airbnb business for $10,000-$12,000.
 
@@ -387,11 +387,11 @@ With proper execution, bridge method properties can cash flow $2,500+ per month�
 
 ---
 
-## Financial Results: Complete Breakdown {#results}
+## Financial Results: Complete Breakdown
 
 **This property generated $212,700 in annual revenue with $120,000 in net cash flow.** Here's the complete financial picture.
 
-### Revenue Analysis {#revenue-analysis}
+### Revenue Analysis
 
 | Metric | Annual | Monthly Average |
 |------|------|------|
@@ -399,7 +399,7 @@ With proper execution, bridge method properties can cash flow $2,500+ per month�
 | **Total Expenses** | $92,400 | $7,670 |
 | **Net Cash Flow** | $120,000 | $10,000 |
 
-### Expense Breakdown {#expense-breakdown}
+### Expense Breakdown
 
 Monthly expenses total approximately $7,670, including:
 
@@ -416,7 +416,7 @@ Monthly expenses total approximately $7,670, including:
 
 Note: Cleaning costs ($295/turnover) are passed to guests via cleaning fee, so they're revenue-neutral.
 
-### Seasonal Performance {#seasonal-performance}
+### Seasonal Performance
 
 Revenue varies significantly by season:
 
@@ -428,7 +428,7 @@ Revenue varies significantly by season:
 
 Even in the slowest months, the property generates positive cash flow. Peak months deliver exceptional returns that pull up the annual average.
 
-### Return on Investment {#return-on-investment}
+### Return on Investment
 
 | ROI Metric | Value | Calculation |
 |------|------|------|
@@ -440,11 +440,11 @@ A 52% cash-on-cash return is exceptional by any real estate standard. Traditiona
 
 ---
 
-## Key Lessons: What Made This Work {#lessons}
+## Key Lessons: What Made This Work
 
 **Five critical lessons that transformed this property from a potential nightmare into truly passive income.**
 
-### Lesson 1: Automation from Day One {#lesson-1-automation-from-day-one}
+### Lesson 1: Automation from Day One
 
 **The Mistake**: Most hosts start managing everything themselves, planning to automate "later" once they're profitable.
 
@@ -466,7 +466,7 @@ A 52% cash-on-cash return is exceptional by any real estate standard. Traditiona
 
 ---
 
-### Lesson 2: Remote Setup is Possible {#lesson-2-remote-setup-is-possible}
+### Lesson 2: Remote Setup is Possible
 
 **The Mistake**: Believing you need to be physically present to set up a quality property.
 
@@ -486,7 +486,7 @@ A 52% cash-on-cash return is exceptional by any real estate standard. Traditiona
 
 ---
 
-### Lesson 3: Differentiation Beats Competition {#lesson-3-differentiation-beats-competition}
+### Lesson 3: Differentiation Beats Competition
 
 **The Mistake**: Competing on price with generic listings.
 
@@ -508,7 +508,7 @@ A 52% cash-on-cash return is exceptional by any real estate standard. Traditiona
 
 ---
 
-### Lesson 4: New Construction Reduces Headaches {#lesson-4-new-construction-reduces-headaches}
+### Lesson 4: New Construction Reduces Headaches
 
 **The Mistake**: Buying older properties to save money upfront.
 
@@ -528,7 +528,7 @@ A 52% cash-on-cash return is exceptional by any real estate standard. Traditiona
 
 ---
 
-### Lesson 5: Invest in Design {#lesson-5-invest-in-design}
+### Lesson 5: Invest in Design
 
 **The Mistake**: Furnishing properties cheaply with generic furniture.
 
@@ -548,11 +548,11 @@ A 52% cash-on-cash return is exceptional by any real estate standard. Traditiona
 
 ---
 
-## Tools and Systems Used {#tools}
+## Tools and Systems Used
 
 **Here's the complete tech stack and team structure that enables 10-minute weekly management.**
 
-### Team Overview {#team-overview}
+### Team Overview
 
 | Role | Platform/Source | Monthly Cost | Primary Responsibilities |
 |------|------|------|------|
@@ -562,7 +562,7 @@ A 52% cash-on-cash return is exceptional by any real estate standard. Traditiona
 | **Handyman** | Local | As needed | Repairs and maintenance |
 | **Hot Tub Service** | Local | As needed | Chemical balance, maintenance |
 
-### Hiring Virtual Assistants {#hiring-virtual-assistants}
+### Hiring Virtual Assistants
 
 **Where to find VAs**:
 
@@ -584,7 +584,7 @@ A 52% cash-on-cash return is exceptional by any real estate standard. Traditiona
 
 $600/month per VA is competitive for experienced property management assistants. This cost is easily justified—$1,200/month in VA costs supports $17,730/month in revenue.
 
-### My Weekly 10-Minute Check-In {#my-weekly-10-minute-check-in}
+### My Weekly 10-Minute Check-In
 
 What do I actually do in those 10 minutes?
 
@@ -600,13 +600,13 @@ That's it. The systems handle everything else.
 
 ---
 
-## Advice: Starting Without Big Capital {#advice}
+## Advice: Starting Without Big Capital
 
 > "What if I told you that you don't have to have that type of money to set up a property? In fact, you can set up a property without owning it, put no more than $10,000 to $12,000 into it depending on how big the property is, and it can still cash flow $2,500 per month."
 
 **The bridge method is how I started, and it still works today.**
 
-### The Landlord Pitch Script {#the-landlord-pitch-script}
+### The Landlord Pitch Script
 
 Here's the approach that works:
 
@@ -616,7 +616,7 @@ Here's the approach that works:
 
 There's more that goes into the full conversation, but that's the general framework. You're not asking for permission to "do Airbnb"—you're presenting yourself as a professional vacation rental operator who will take better care of their property than a traditional tenant.
 
-### Bridge Method Step-by-Step {#bridge-method-step-by-step}
+### Bridge Method Step-by-Step
 
 1. $1
 
@@ -634,7 +634,7 @@ There's more that goes into the full conversation, but that's the general framew
 
 8. $1
 
-### Common Roadblocks {#common-roadblocks}
+### Common Roadblocks
 
 At the end of the day, regardless of whether you do Airbnb or not and decide to do this on your own, there are going to be roadblocks—just like any other venture:
 
@@ -650,7 +650,7 @@ These roadblocks exist. If they didn't, everyone would do this and it wouldn't b
 
 ---
 
-## Watch the Full Video {#watch-video}
+## Watch the Full Video
 
 **Video highlights:**
 
@@ -668,27 +668,27 @@ These roadblocks exist. If they didn't, everyone would do this and it wouldn't b
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
-### How much can you make from one Airbnb property? {#how-much-can-you-make-from-one-airbnb-property}
+### How much can you make from one Airbnb property?
 
 This 5-bedroom Virginia chalet generated $212,700 in annual revenue with 82% occupancy, averaging $17,730/month gross and $10,000/month net cash flow after all expenses including the mortgage. That represents a 52% cash-on-cash return on the $241,100 total investment.
 
 Results vary significantly based on market, property type, amenities, and operational efficiency. This property performs at the higher end because of strategic differentiation and optimized systems.
 
-### How many hours per week does it take to manage an Airbnb? {#how-many-hours-per-week-does-it-take-to-manage-an-airbnb}
+### How many hours per week does it take to manage an Airbnb?
 
 With proper systems, just 10 minutes per week. This is achieved through two virtual assistants ($600/month each) who handle guest messages, cleaner coordination, pricing, and automations. The owner only checks in weekly to ensure everything runs smoothly.
 
 Without these systems, hosts typically spend 10-15+ hours per week managing a single property. The key difference is whether you build automation into your foundation or try to do everything yourself.
 
-### Can you manage an Airbnb completely remotely? {#can-you-manage-an-airbnb-completely-remotely}
+### Can you manage an Airbnb completely remotely?
 
 Yes, absolutely. This property was set up 100% remotely without the owner stepping foot inside before or after going live. Construction, furniture assembly, and ongoing management are all handled by virtual assistants and a boots-on-ground team of cleaners, handymen, and hot tub maintenance professionals.
 
 The key is building a reliable local team and establishing clear communication protocols with your VAs.
 
-### What's the biggest risk with Airbnb investing? {#what-s-the-biggest-risk-with-airbnb-investing}
+### What's the biggest risk with Airbnb investing?
 
 The biggest risk is setting up operations incorrectly and creating a second job instead of passive income. As mentioned in the video: "If you do it incorrectly, it can turn into a living nightmare."
 
@@ -696,7 +696,7 @@ Other risks include regulatory changes, market saturation, and economic downturn
 
 ---
 
-## Start Your Airbnb Journey {#start-journey}
+## Start Your Airbnb Journey
 
 **Ready to build your own automated Airbnb business?**
 
@@ -704,7 +704,7 @@ Other risks include regulatory changes, market saturation, and economic downturn
 
 Whether you have capital to purchase properties or want to start with the bridge method, the systems and strategies outlined here can help you build genuinely passive short-term rental income.
 
-### Related Success Stories {#related-success-stories}
+### Related Success Stories
 
 - [How Gary Built a $35,000/Month Airbnb Business in Austin](/blog/gary-marketing-executive-35k-month.html)
 
@@ -712,13 +712,13 @@ Whether you have capital to purchase properties or want to start with the bridge
 
 - [How James Built $7,000/Month in 57 Days While Working Full-Time](/blog/james-7k-month-3-properties-remote.html)
 
-### Helpful Resources {#helpful-resources}
+### Helpful Resources
 
 - [Complete Guide to Getting Started with Airbnb Arbitrage](/blog/getting-started-airbnb-arbitrage.html)
 
 ---
 
-## About Legacy Investing Show {#about}
+## About Legacy Investing Show
 
 **Legacy Investing Show** is Preston Seo's comprehensive Airbnb arbitrage training program. Since founding, the program has:
 

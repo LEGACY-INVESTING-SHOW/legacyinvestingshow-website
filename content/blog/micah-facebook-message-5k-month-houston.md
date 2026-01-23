@@ -142,7 +142,7 @@ This case study breaks down exactly how Micah went from analysis paralysis to pr
 
 ---
 
-## Quick Results: Micah's Airbnb Arbitrage Numbers {#quick-results-micah-39-s-airbnb-arbitrage-numbers}
+## Quick Results: Micah's Airbnb Arbitrage Numbers
 
 | Metric | Value | Context |
 |------|------|------|
@@ -156,7 +156,7 @@ This case study breaks down exactly how Micah went from analysis paralysis to pr
 
 ---
 
-## Micah's Background: The Introvert Who Couldn't Cold Call {#micah-39-s-background-the-introvert-who-couldn-39-t-cold-call}
+## Micah's Background: The Introvert Who Couldn't Cold Call
 
 **You don't need to be a natural salesperson to succeed in Airbnb arbitrage.** Micah Hydrick is proof: as a self-proclaimed introvert who gets nervous with new people, he built a profitable short-term rental business without making a single cold call.
 
@@ -180,21 +180,21 @@ Something about it felt different. The message aligned with what Micah had been 
 
 ---
 
-## The Airbnb Arbitrage Journey: Micah's Timeline {#the-airbnb-arbitrage-journey-micah-39-s-timeline}
+## The Airbnb Arbitrage Journey: Micah's Timeline
 
-### September 2023: Taking the Leap {#september-2023-taking-the-leap}
+### September 2023: Taking the Leap
 
 **Situation**: Skeptical but curious after seeing Preston's Instagram video
 
 After years of ignoring online business opportunities following two failed ventures, Micah took a chance on Legacy Investing Show's Launchpad program. The messaging about financial freedom and family time resonated with his core values—the same values that had driven him since that college research project about how Americans spend their time.
 
-### November 2023: Going Deeper {#november-2023-going-deeper}
+### November 2023: Going Deeper
 
 **Situation**: Committed enough to upgrade programs
 
 Two months after joining the Launchpad, Micah upgraded to the Roadmap program. He was seeing results from other students and wanted the full system, scripts, and support to accelerate his progress.
 
-### November-December 2023: The Analysis Paralysis Phase {#november-december-2023-the-analysis-paralysis-phase}
+### November-December 2023: The Analysis Paralysis Phase
 
 **Situation**: Stuck in research mode for six weeks
 
@@ -206,7 +206,7 @@ He looked at multiple markets around Houston. He considered Galveston for its to
 
 The breakthrough came when he made a conscious decision: trust the numbers and take action. The potential was there. The equations worked. The calculator showed profit. At some point, you have to stop researching and start doing.
 
-### January 2024: The Facebook Message That Changed Everything {#january-2024-the-facebook-message-that-changed-everything}
+### January 2024: The Facebook Message That Changed Everything
 
 **Situation**: Terrified of cold calling, found an alternative approach
 
@@ -230,13 +230,13 @@ That single message led to a conversation, then a meeting with families, then a 
 
 - Timeline: Facebook message to signed lease in weeks
 
-### February 2024: Going Live {#february-2024-going-live}
+### February 2024: Going Live
 
 **Situation**: Property launched, first guests booked
 
 Micah's property went live in February 2024. Despite it being a relatively slow month (not peak season in Houston), he immediately started getting bookings. The property's pool, updated interior, and compelling photos attracted guests looking for something special.
 
-### March 2024: First Full Month Results {#march-2024-first-full-month-results}
+### March 2024: First Full Month Results
 
 **Situation**: $5,000 in gross revenue, exceeding projections
 
@@ -246,11 +246,11 @@ Even more impressive: his average nightly rate was $250, but most bookings came 
 
 ---
 
-## The Facebook Marketplace Strategy: A Method for Introverts {#the-facebook-marketplace-strategy-a-method-for-introverts}
+## The Facebook Marketplace Strategy: A Method for Introverts
 
 **Cold calling isn't the only way to find Airbnb arbitrage properties.** Micah's approach proves you can build this business without ever picking up the phone to call a stranger.
 
-### Why Facebook Marketplace Works {#why-facebook-marketplace-works}
+### Why Facebook Marketplace Works
 
 Facebook Marketplace has become a legitimate platform for rental listings. Many landlords—especially individual property owners rather than property management companies—list their rentals there. These landlords tend to be:
 
@@ -262,7 +262,7 @@ Facebook Marketplace has become a legitimate platform for rental listings. Many 
 
 - Willing to meet and build rapport before signing agreements
 
-### Micah's Exact Approach {#micah-39-s-exact-approach}
+### Micah's Exact Approach
 
 **Step 1: Find Listings**Search Facebook Marketplace for rental properties in your target market. Filter by location, price range, and property type.
 
@@ -274,7 +274,7 @@ Facebook Marketplace has become a legitimate platform for rental listings. Many 
 
 **Step 5: Build the Relationship**Micah and the landlord hit it off. Their families even got along. This relationship foundation became crucial for navigating challenges that came later.
 
-### Why This Works for Introverts {#why-this-works-for-introverts}
+### Why This Works for Introverts
 
 Micah's nervousness with new people would have made traditional cold calling miserable. The Facebook Marketplace approach eliminated that barrier:
 
@@ -288,7 +288,7 @@ Micah's nervousness with new people would have made traditional cold calling mis
 
 > "Being like an introvert slash shy... this one was an easier thing to do because it's over call or like the listing I got was through Facebook, so I didn't even have to know talk to the person over the phone."
 
-### The Outlier Disclaimer {#the-outlier-disclaimer}
+### The Outlier Disclaimer
 
 Micah acknowledges his first-message success was unusual. A 5-minute response and eventual signed lease from one message isn't the typical experience. Most people will need to send multiple messages before finding a receptive landlord.
 
@@ -296,11 +296,11 @@ But here's the key insight: Micah put himself out there. He created his own luck
 
 ---
 
-## Setting Up the Property: $15,000 Budget Breakdown {#setting-up-the-property-15-000-budget-breakdown}
+## Setting Up the Property: $15,000 Budget Breakdown
 
 **Professional design doesn't require professional budgets.** Micah furnished his entire property—including outdoor amenities—for approximately $15,000 by leveraging relationships and focusing on impact.
 
-### The Interior Design Advantage {#the-interior-design-advantage}
+### The Interior Design Advantage
 
 Micah had a friend with a degree in interior design. This relationship proved invaluable. Instead of guessing at furniture choices or copying generic Airbnb setups, he had professional guidance on:
 
@@ -314,7 +314,7 @@ Micah had a friend with a degree in interior design. This relationship proved in
 
 Almost everything came from Amazon and IKEA, per the designer's recommendations. These aren't expensive boutique pieces—they're smart choices that look great without breaking the bank.
 
-### What the Budget Covered {#what-the-budget-covered}
+### What the Budget Covered
 
 **Living Areas**:
 
@@ -360,11 +360,11 @@ Almost everything came from Amazon and IKEA, per the designer's recommendations.
 
 - Deck furniture
 
-### The Pool Factor {#the-pool-factor}
+### The Pool Factor
 
 The property's pool was a major selling point. In Houston's climate—where summer temperatures can soar—a pool dramatically increases a property's appeal and booking rate. Micah made sure to highlight this in his listing photos with shots showing the pool, spa area, and outdoor entertaining space.
 
-### Photography Investment {#photography-investment}
+### Photography Investment
 
 Micah understood that great photos sell properties. He used his network to find a photographer—someone he worked with who did real estate photography on the side. The relationship got him a discounted rate, but the quality was professional-grade.
 
@@ -380,11 +380,11 @@ Key photography decisions:
 
 ---
 
-## Results and Numbers: The First Month Breakdown {#results-and-numbers-the-first-month-breakdown}
+## Results and Numbers: The First Month Breakdown
 
 **March 2024 delivered $5,000 in gross revenue—exceeding projections by over 10%.** Here's the complete financial picture from Micah's first full month operating.
 
-### Revenue Performance {#revenue-performance}
+### Revenue Performance
 
 | Metric | Projected | Actual |
 |------|------|------|
@@ -394,7 +394,7 @@ Key photography decisions:
 
 The property outperformed conservative estimates. Most importantly, Micah achieved premium nightly rates—often around $300—despite being a new listing without established reviews.
 
-### Understanding the Seasonality {#understanding-the-seasonality}
+### Understanding the Seasonality
 
 Micah studied his market to understand booking patterns:
 
@@ -416,13 +416,13 @@ Micah studied his market to understand booking patterns:
 
 > "Weddings—a ton of weddings happen like at the end of April and at the end of May, so I did get a booking for two nights that's like I think it's like a $1,200 booking just because they're having a wedding."
 
-### Profit Perspective {#profit-perspective}
+### Profit Perspective
 
 Micah's first month showed zero profit on paper—but context matters. He was covering February rent (before going live), dealing with unexpected landlord-related expenses, and investing in getting everything perfect. These are startup costs, not ongoing expenses.
 
 His projection for stabilized operations: $1,500-$2,000 monthly net profit once the business normalizes.
 
-### Year-End Goals {#year-end-goals}
+### Year-End Goals
 
 | Goal | Target |
 |------|------|
@@ -433,11 +433,11 @@ His projection for stabilized operations: $1,500-$2,000 monthly net profit once 
 
 ---
 
-## Key Lessons: What Micah Learned the Hard Way {#key-lessons-what-micah-learned-the-hard-way}
+## Key Lessons: What Micah Learned the Hard Way
 
 **Every deal teaches something—usually through pain.** Micah's first property came with learning experiences that will save you time and money.
 
-### Lesson 1: Get Everything in Writing {#lesson-1-get-everything-in-writing}
+### Lesson 1: Get Everything in Writing
 
 **The Mistake**: Trusting verbal agreements with the landlord
 
@@ -459,7 +459,7 @@ The result? The property wasn't cleaned when Micah took possession. The landlord
 
 4. $1
 
-### Lesson 2: Verify the Property Yourself {#lesson-2-verify-the-property-yourself}
+### Lesson 2: Verify the Property Yourself
 
 **The Mistake**: Taking the landlord's word about property condition
 
@@ -477,7 +477,7 @@ The result? The property wasn't cleaned when Micah took possession. The landlord
 
 4. $1
 
-### Lesson 3: Control Your Maintenance Team {#lesson-3-control-your-maintenance-team}
+### Lesson 3: Control Your Maintenance Team
 
 **The Mistake**: Using the landlord's contractors exclusively
 
@@ -495,7 +495,7 @@ The result? The property wasn't cleaned when Micah took possession. The landlord
 
 4. $1
 
-### Lesson 4: Invest in Design Help {#lesson-4-invest-in-design-help}
+### Lesson 4: Invest in Design Help
 
 **The Mistake**: This wasn't actually a mistake—Micah did it right
 
@@ -513,7 +513,7 @@ The result? The property wasn't cleaned when Micah took possession. The landlord
 
 4. $1
 
-### Lesson 5: Just Start {#lesson-5-just-start}
+### Lesson 5: Just Start
 
 **The Mistake**: Six weeks of analysis paralysis
 
@@ -535,11 +535,11 @@ The result? The property wasn't cleaned when Micah took possession. The landlord
 
 ---
 
-## Tools & Systems: Micah's Tech Stack {#tools-amp-systems-micah-39-s-tech-stack}
+## Tools & Systems: Micah's Tech Stack
 
 **Automation makes Airbnb arbitrage manageable alongside a full-time job.** Here's what Micah uses to run his operation in under an hour per week.
 
-### Essential Tools Overview {#essential-tools-overview}
+### Essential Tools Overview
 
 | Category | Tool | Why Micah Uses It |
 |------|------|------|
@@ -548,7 +548,7 @@ The result? The property wasn't cleaned when Micah took possession. The landlord
 | **Cleaning Coordination** | Turno (planned) | Will automate cleaner scheduling when current team moves |
 | **Smart Locks** | Connected via Guesty | Auto-generates unique codes for each guest |
 
-### Price Labs for Dynamic Pricing {#price-labs-for-dynamic-pricing}
+### Price Labs for Dynamic Pricing
 
 Micah relies on Price Labs to handle the complex task of pricing optimization. Instead of manually adjusting rates for weekends, holidays, and local events, the software does it automatically.
 
@@ -564,7 +564,7 @@ Micah relies on Price Labs to handle the complex task of pricing optimization. I
 
 **Why it matters**: Micah's $250 target nightly rate often exceeded $300 because Price Labs identified high-demand periods and adjusted accordingly.
 
-### Guesty for Automation {#guesty-for-automation}
+### Guesty for Automation
 
 Guest communication, booking management, and scheduling all flow through Guesty. This single platform eliminates the need to constantly monitor your phone for messages.
 
@@ -580,7 +580,7 @@ Guest communication, booking management, and scheduling all flow through Guesty.
 
 **Time savings**: Guests receive immediate responses to common questions, even when Micah is at his day job.
 
-### The Cleaning Setup {#the-cleaning-setup}
+### The Cleaning Setup
 
 Currently, Micah uses cleaners from his personal network—people he knows from his congregation. This relationship-based approach provides reliability and trust.
 
@@ -596,7 +596,7 @@ When his current cleaners relocate, he plans to transition to Turno (formerly Tu
 
 ---
 
-## Watch Micah's Full Interview {#watch-micah-39-s-full-interview}
+## Watch Micah's Full Interview
 
 **Video highlights:**
 
@@ -614,15 +614,15 @@ When his current cleaners relocate, he plans to transition to Turno (formerly Tu
 
 ---
 
-## Frequently Asked Questions {#frequently-asked-questions}
+## Frequently Asked Questions
 
-### Can you really find Airbnb properties without cold calling? {#can-you-really-find-airbnb-properties-without-cold-calling}
+### Can you really find Airbnb properties without cold calling?
 
 Absolutely. Micah's entire first deal came through Facebook Marketplace messaging. He never made a single cold call. While cold calling reaches more landlords faster, it's not the only path. Facebook Marketplace, Craigslist, and even driving-for-dollars to find FSBO (for sale by owner) signs can work for those who prefer written communication over phone calls.
 
 The key is volume. Micah got lucky with a 5-minute response on his first message—that's unusual. Expect to send many messages before finding a responsive landlord. But if cold calling feels impossible for your personality, know that alternatives exist.
 
-### How does Airbnb arbitrage work for introverts? {#how-does-airbnb-arbitrage-work-for-introverts}
+### How does Airbnb arbitrage work for introverts?
 
 Micah specifically chose this business model because it accommodates introverts. Here's why:
 
@@ -630,7 +630,7 @@ Micah specifically chose this business model because it accommodates introverts.
 
 You're rarely in high-pressure, face-to-face situations. Once you establish relationships, ongoing communication becomes comfortable because these people already know you.
 
-### What's the realistic timeline for a first Airbnb property? {#what-39-s-the-realistic-timeline-for-a-first-airbnb-property}
+### What's the realistic timeline for a first Airbnb property?
 
 Micah took 5 months from joining the program to going live, but he admits 6+ weeks of that was wasted in analysis paralysis. Here's a more realistic breakdown:
 
@@ -646,7 +646,7 @@ Most focused students secure their first property in 30-60 days. The biggest tim
 
 ---
 
-## Start Your Airbnb Arbitrage Journey {#start-your-airbnb-arbitrage-journey}
+## Start Your Airbnb Arbitrage Journey
 
 **Ready to build your own Airbnb arbitrage business—even if you hate cold calling?**
 
@@ -654,7 +654,7 @@ Micah proved that introverts can succeed in this business. His Facebook Marketpl
 
 [Learn more about Legacy Investing Show →](/programs.html)
 
-### Related Success Stories {#related-success-stories}
+### Related Success Stories
 
 - [How Gary Built a $35K/Month Airbnb Portfolio](/blog/gary-marketing-executive-35k-month)
 
@@ -662,7 +662,7 @@ Micah proved that introverts can succeed in this business. His Facebook Marketpl
 
 - [How Rob Made $100K from 3 Airbnbs with a 9-to-5](/blog/rob-100k-3-airbnbs-working-fulltime)
 
-### Helpful Resources {#helpful-resources}
+### Helpful Resources
 
 - [Complete Guide to Airbnb Arbitrage](/blog/getting-started-airbnb-arbitrage)
 
@@ -672,7 +672,7 @@ Micah proved that introverts can succeed in this business. His Facebook Marketpl
 
 ---
 
-## About Legacy Investing Show {#about-legacy-investing-show}
+## About Legacy Investing Show
 
 **Legacy Investing Show** is Preston Seo's comprehensive Airbnb arbitrage training program. Since its founding, the program has:
 

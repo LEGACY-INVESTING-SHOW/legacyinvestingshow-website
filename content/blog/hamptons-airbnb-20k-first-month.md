@@ -152,7 +152,7 @@ This case study breaks down exactly how Hampton built his Airbnb business, inclu
 
 ---
 
-## Quick Results: Hampton's Airbnb Numbers {#quick-results}
+## Quick Results: Hampton's Airbnb Numbers
 
 | Metric | Value | Context |
 |------|------|------|
@@ -167,17 +167,17 @@ This case study breaks down exactly how Hampton built his Airbnb business, inclu
 
 ---
 
-## Hampton's Background: From Engineer to Airbnb Entrepreneur {#background}
+## Hampton's Background: From Engineer to Airbnb Entrepreneur
 
 **You don't need real estate experience to build a successful Airbnb business.** Hampton is a process engineer at a consulting firm, and his wife works as a county lawyer. Together, they'd been discussing investment properties for years before finally taking the leap.
 
-### The Engineering Mindset {#the-engineering-mindset}
+### The Engineering Mindset
 
 Hampton's background as a process engineer gave him a unique advantage in approaching the Airbnb business. Engineers are trained to analyze systems, optimize processes, and solve problems methodically. These skills translated directly to evaluating properties, setting up automation, and managing operations efficiently.
 
 His consulting work also meant he understood the volatility of income. As he explained, there were periods when work slowed down, and if he didn't have work, he didn't get paid. This uncertainty was a major motivation for building additional income streams.
 
-### The Family Property Opportunity {#family-property-opportunity}
+### The Family Property Opportunity
 
 The breakthrough came when Hampton realized his parents owned a lakefront property in Lake Gaston that sat unused on many weekends. Rather than looking for properties to lease or buy, he saw an opportunity right in front of him: partner with family to monetize an existing asset.
 
@@ -187,9 +187,9 @@ This approach eliminated many of the barriers that stop would-be Airbnb entrepre
 
 ---
 
-## The Airbnb Journey: Hampton's Timeline {#journey}
+## The Airbnb Journey: Hampton's Timeline
 
-### Years of Consideration: Taking the Leap of Faith {#the-leap-of-faith}
+### Years of Consideration: Taking the Leap of Faith
 
 **Situation**: Hampton and his wife had discussed real estate investing for years but never took action.
 
@@ -201,7 +201,7 @@ The turning point came during a slow period at Hampton's consulting job. With re
 
 The appeal of short-term rentals was the automation potential. Unlike other side businesses that might require constant attention, Airbnb could be systematized. Hampton saw a path to income that wouldn't consume all his limited free time.
 
-### Mid-2023: First Property Goes Live {#first-property-live}
+### Mid-2023: First Property Goes Live
 
 **Situation**: The lakefront property went live on Airbnb in June and immediately started booking.
 
@@ -223,7 +223,7 @@ The results exceeded expectations. Within weeks, the property had secured $20,00
 
 - 4-Month Total: $30,000+
 
-### Fall 2023: Scaling to West Virginia {#scaling-to-west-virginia}
+### Fall 2023: Scaling to West Virginia
 
 **Situation**: Hampton purchased a property in West Virginia to diversify and scale his portfolio.
 
@@ -241,11 +241,11 @@ Hampton's vision was to create one of the largest properties in the area. Once c
 
 ---
 
-## How to Choose a Market for Vacation Rentals: Hampton's Strategy {#market}
+## How to Choose a Market for Vacation Rentals: Hampton's Strategy
 
 **The best market for Airbnb is one where you have familiarity, access, and can identify underserved guest needs.** Hampton didn't chase trendy markets or highest-projected returns. He started with what he knew and expanded strategically.
 
-### Why Lakefront Properties Work {#lakefront-appeal}
+### Why Lakefront Properties Work
 
 Lake Gaston was a natural choice for Hampton's first property because his family had been vacationing there for years. This familiarity provided several advantages:
 
@@ -257,7 +257,7 @@ Lake Gaston was a natural choice for Hampton's first property because his family
 
 However, Hampton also recognized the limitation: seasonality. The Lake Gaston property experiences slower winter months, requiring careful cash flow planning and filling the calendar during peak seasons to compensate for off-season dips.
 
-### The ATV Market Strategy: West Virginia {#atv-market-strategy}
+### The ATV Market Strategy: West Virginia
 
 For the second property, Hampton took a different approach. Rather than replicating the lakefront model, he identified an underserved niche: ATV enthusiasts in West Virginia.
 
@@ -279,11 +279,11 @@ By purchasing extra lots alongside the main property, Hampton ensured he could o
 
 ---
 
-## Airbnb Strategies That Actually Work: Hampton's Playbook {#strategies}
+## Airbnb Strategies That Actually Work: Hampton's Playbook
 
 **The difference between profitable and struggling Airbnb operators often comes down to strategy.** Hampton's success wasn't luck. He applied specific strategies that minimized risk and maximized returns.
 
-### Strategy 1: Family Property Partnership {#strategy-1}
+### Strategy 1: Family Property Partnership
 
 **What it is**: Partnering with family members who own underutilized properties to create a win-win Airbnb arrangement.
 
@@ -315,7 +315,7 @@ Hampton's approach was particularly effective because he came prepared with data
 
 ---
 
-### Strategy 2: Phased Property Development {#strategy-2}
+### Strategy 2: Phased Property Development
 
 **What it is**: Purchasing properties with multiple units or development potential, then bringing them online in phases to generate income while completing renovations.
 
@@ -345,7 +345,7 @@ Hampton's West Virginia purchase exemplifies this strategy. He bought a property
 
 ---
 
-### Strategy 3: Automation from Day One {#strategy-3}
+### Strategy 3: Automation from Day One
 
 **What it is**: Setting up systems and technology from the start that allow you to manage properties remotely with minimal daily time investment.
 
@@ -381,11 +381,11 @@ Hampton set up automated messaging for guests, automated notifications for clean
 
 ---
 
-## Hampton's Airbnb Results: The Numbers {#results}
+## Hampton's Airbnb Results: The Numbers
 
 **Hampton generates $30,000+ in bookings from his lakefront property and is scaling to $100,000+ annually.** Here's the complete financial breakdown of his Airbnb business.
 
-### Before vs. After Airbnb {#before-vs-after}
+### Before vs. After Airbnb
 
 | Metric | Before | After (4 Months) |
 |------|------|------|
@@ -395,7 +395,7 @@ Hampton set up automated messaging for guests, automated notifications for clean
 | Financial Security | Dependent on consulting work | Multiple income streams |
 | Time Investment | Full work hours | 1 hour/day for properties |
 
-### Complete Financial Breakdown {#financial-breakdown}
+### Complete Financial Breakdown
 
 **Lake Gaston Property (Lakefront)**:
 
@@ -433,13 +433,13 @@ Hampton set up automated messaging for guests, automated notifications for clean
 
 ---
 
-## Airbnb Lessons: What Hampton Learned the Hard Way {#lessons}
+## Airbnb Lessons: What Hampton Learned the Hard Way
 
 **These five lessons took Hampton from years of analysis paralysis to $30,000+ in bookings within months.** Each one came from real experience and could save you significant time and stress.
 
 > "Sometimes you just got to take a leap of faith and take the risk and it's definitely panning out."
 
-### Lesson 1: Take the Leap Despite Fear {#lesson-1}
+### Lesson 1: Take the Leap Despite Fear
 
 **The Mistake**: Waiting for perfect conditions or complete certainty before starting.
 
@@ -463,7 +463,7 @@ The slow period at his consulting job was actually the catalyst. With reduced in
 
 ---
 
-### Lesson 2: Be Methodical in Your Approach {#lesson-2}
+### Lesson 2: Be Methodical in Your Approach
 
 **The Mistake**: Rushing through setup to get listed faster, missing important details.
 
@@ -485,7 +485,7 @@ He made sure photos were excellent, descriptions were complete, pricing was rese
 
 ---
 
-### Lesson 3: Start with Familiar Markets {#lesson-3}
+### Lesson 3: Start with Familiar Markets
 
 **The Mistake**: Chasing the "best" market based on projections alone, without any personal connection.
 
@@ -507,7 +507,7 @@ For his second property, he still chose strategically but within a region he cou
 
 ---
 
-### Lesson 4: Use Data to Convince Stakeholders {#lesson-4}
+### Lesson 4: Use Data to Convince Stakeholders
 
 **The Mistake**: Trying to convince family or partners with enthusiasm alone, without concrete projections.
 
@@ -529,7 +529,7 @@ His parents went from not realizing what their property could earn to actively s
 
 ---
 
-### Lesson 5: Build Systems Before Scaling {#lesson-5}
+### Lesson 5: Build Systems Before Scaling
 
 **The Mistake**: Adding properties before you have the infrastructure to manage them efficiently.
 
@@ -551,7 +551,7 @@ Automated messaging handles guest communication. Cleaning crews receive automati
 
 ---
 
-## Best Tools for Airbnb: Hampton's Tech Stack {#tools}
+## Best Tools for Airbnb: Hampton's Tech Stack
 
 **Hampton manages two properties with minimal daily time using these tools.** Here's the complete tech stack that powers his growing Airbnb business.
 
@@ -598,7 +598,7 @@ Automated messaging handles guest communication. Cleaning crews receive automati
 
 ---
 
-## Hampton's Advice for Airbnb Beginners {#advice}
+## Hampton's Advice for Airbnb Beginners
 
 > "It's going to be scary it's going to be very intimidating because there's going to be a lot of things that you think you don't know but if you take the time you be patient do your research look at different things look several look just do your research."
 
@@ -638,7 +638,7 @@ After research and preparation, the time comes to act. Hampton's final advice is
 
 ---
 
-## Watch Hampton's Full Interview {#video}
+## Watch Hampton's Full Interview
 
 **Video highlights:**
 
@@ -660,7 +660,7 @@ After research and preparation, the time comes to act. Hampton's final advice is
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
 ### How much money can you really make with Airbnb arbitrage?
 
@@ -682,7 +682,7 @@ Other risks include property damage, difficult guests, and changing regulations.
 
 ---
 
-## Start Your Airbnb Journey {#start-your-journey}
+## Start Your Airbnb Journey
 
 **Ready to build your own Airbnb business like Hampton?**
 
@@ -702,7 +702,7 @@ Other risks include property damage, difficult guests, and changing regulations.
 
 ---
 
-## About Legacy Investing Show {#about-lis}
+## About Legacy Investing Show
 
 **Legacy Investing Show** is Preston Seo's comprehensive Airbnb arbitrage training program. Since founding, the program has:
 

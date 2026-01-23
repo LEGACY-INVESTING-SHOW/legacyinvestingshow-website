@@ -152,7 +152,7 @@ This case study breaks down exactly how Kamari created income-producing assets f
 
 ---
 
-## Quick Results: Kamari's Airbnb Numbers {#quick-results}
+## Quick Results: Kamari's Airbnb Numbers
 
 | Metric | Value | Context |
 |------|------|------|
@@ -167,17 +167,17 @@ This case study breaks down exactly how Kamari created income-producing assets f
 
 ---
 
-## Kamari's Background: From Entertainment to Real Estate {#background}
+## Kamari's Background: From Entertainment to Real Estate
 
 **You don't need a traditional business background to build a successful Airbnb portfolio.** Kamari's path from entertainment industry professional to full-time real estate investor demonstrates how diverse skills can translate into rental success.
 
-### The Entertainment Career {#entertainment-career}
+### The Entertainment Career
 
 Kamari studied entertainment business and law in college, adding recording arts to become an audio engineer. Her career path took her through internships at Warner Chapel Music before pursuing acting and singing professionally. This entertainment background gave her skills in presentation, negotiation, and understanding what creates memorable experiences—all directly applicable to creating standout Airbnb listings.
 
 Her education in entertainment business and law provided an unexpected foundation for real estate. Understanding contracts, negotiations, and business operations from the music industry translated directly to lease negotiations, property management agreements, and structuring deals with landlords.
 
-### Hurricane Maria's Impact {#hurricane-maria}
+### Hurricane Maria's Impact
 
 In 2017, Hurricane Maria devastated Puerto Rico. Kamari had opened a business that wasn't a basic necessity, and with the island without power for months—some areas for an entire year—the business couldn't survive. This forced a pivotal decision that would redirect her entire career.
 
@@ -185,7 +185,7 @@ After enduring a year post-hurricane, Kamari and her family relocated to Florida
 
 > "I started house hacking seven years ago while I lived in Puerto Rico, and that's pretty much what I've been doing ever since."
 
-### Seven Years of House Hacking {#house-hacking-journey}
+### Seven Years of House Hacking
 
 Kamari's real estate journey began when her mother found a business for sale in Puerto Rico that included both the business operations and the building itself. The building was completely destroyed—essentially a warehouse shell—but her mother saw potential and suggested they buy it together.
 
@@ -197,9 +197,9 @@ The pattern repeated with each property purchase. When she opened a second busin
 
 ---
 
-## The Airbnb Journey: From Puerto Rico to Florida {#journey}
+## The Airbnb Journey: From Puerto Rico to Florida
 
-### 2017: Transforming a Destroyed Warehouse {#warehouse-transformation}
+### 2017: Transforming a Destroyed Warehouse
 
 **Situation**: A destroyed warehouse with no floors and demolished walls became a $2,000/month Airbnb.
 
@@ -213,7 +213,7 @@ When Kamari moved to Florida after Hurricane Maria, the Puerto Rico property tra
 
 > "These walls were destroyed. There were no floors. It was basically like a warehouse. So we just turned it into this... and I didn't like to be closed up so we made all the rooms with glass walls."
 
-### 2024: The Backyard RV Innovation {#backyard-rv}
+### 2024: The Backyard RV Innovation
 
 **Situation**: New Florida home with spare land and no HOA becomes platform for luxury RV Airbnb.
 
@@ -239,7 +239,7 @@ The location drives the amenity selection. The secluded, wooded setting inspired
 
 ---
 
-## How to Choose Properties for House Hacking {#market}
+## How to Choose Properties for House Hacking
 
 **Kamari's property selection strategy focuses on identifying hidden rental potential in every purchase.** Her approach combines personal living needs with investment criteria, ensuring each property serves dual purposes.
 
@@ -273,11 +273,11 @@ Where others saw problems, Kamari saw income potential. This mindset shift is cr
 
 ---
 
-## Airbnb Strategies That Actually Work: Kamari's Playbook {#strategies}
+## Airbnb Strategies That Actually Work: Kamari's Playbook
 
 **The difference between maximizing and underutilizing a property comes down to creative thinking.** Kamari attributes her success to three core strategies that most hosts never consider.
 
-### Strategy 1: Multi-Platform Revenue Diversification {#strategy-1}
+### Strategy 1: Multi-Platform Revenue Diversification
 
 **What it is**: Listing properties on multiple platforms and using every available revenue stream, not just Airbnb.
 
@@ -301,7 +301,7 @@ The lesson applies broadly: don't limit yourself to one platform. Vrbo, booking.
 
 ---
 
-### Strategy 2: Event Space Monetization {#strategy-2}
+### Strategy 2: Event Space Monetization
 
 **What it is**: Renting properties for events, film productions, and other uses when not booked for overnight stays.
 
@@ -333,7 +333,7 @@ The Florida property is particularly suited for this because of the pool, great 
 
 ---
 
-### Strategy 3: Self-Management Excellence {#strategy-3}
+### Strategy 3: Self-Management Excellence
 
 **What it is**: Firing property management companies and implementing personal systems that deliver better results in less time.
 
@@ -357,7 +357,7 @@ The time investment is minimal once systems are in place. Kamari estimates appro
 
 ---
 
-## Kamari's Airbnb Results: The Numbers {#results}
+## Kamari's Airbnb Results: The Numbers
 
 **Kamari generates $5,000/month combined from two properties while working approximately 2 hours per week.** Here's the complete breakdown of her portfolio performance.
 
@@ -408,7 +408,7 @@ The time investment is minimal once systems are in place. Kamari estimates appro
 
 ---
 
-## Airbnb Lessons: What Kamari Learned {#lessons}
+## Airbnb Lessons: What Kamari Learned
 
 **These five lessons took Kamari from first-time house hacker to $5,000/month in passive income.** Each one came from real experience—including surviving Hurricane Maria—and could save you months of trial and error.
 
@@ -516,7 +516,7 @@ The time investment is minimal once systems are in place. Kamari estimates appro
 
 ---
 
-## Best Tools for Airbnb Management: Kamari's Tech Stack {#tools}
+## Best Tools for Airbnb Management: Kamari's Tech Stack
 
 **Kamari manages multiple properties in 2 hours per week using these tools.** Here's the technology that powers her efficient operation.
 
@@ -552,7 +552,7 @@ Despite having automation tools, Kamari maintains personal involvement in guest 
 
 ---
 
-## Kamari's Advice for Airbnb Beginners {#advice}
+## Kamari's Advice for Airbnb Beginners
 
 > "Go for it. You won't achieve anything just sitting on the sidelines."
 
@@ -602,7 +602,7 @@ Kamari has proposals to manage other people's properties and is open to consulti
 
 ---
 
-## Watch Kamari's Full Interview {#video}
+## Watch Kamari's Full Interview
 
 **Video highlights:**
 
@@ -624,7 +624,7 @@ Kamari has proposals to manage other people's properties and is open to consulti
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
 ### How much does it cost to start a backyard Airbnb?
 

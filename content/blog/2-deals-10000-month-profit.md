@@ -151,7 +151,7 @@ This case study breaks down exactly how Rob built this Airbnb arbitrage business
 
 ---
 
-## Quick Results: Rob's Airbnb Arbitrage Numbers {#quick-results}
+## Quick Results: Rob's Airbnb Arbitrage Numbers
 
 | Metric | Value | Context |
 |------|------|------|
@@ -166,11 +166,11 @@ This case study breaks down exactly how Rob built this Airbnb arbitrage business
 
 ---
 
-## Rob's Background: From Sales Professional to Airbnb Entrepreneur {#background}
+## Rob's Background: From Sales Professional to Airbnb Entrepreneur
 
 **You don't need real estate experience to build a successful Airbnb arbitrage business.** Rob came from a sales and marketing background with zero property management experience and built a $10,000/month business within months of actively pursuing deals.
 
-### Why Airbnb Arbitrage Over Traditional Real Estate {#why-airbnb-arbitrage}
+### Why Airbnb Arbitrage Over Traditional Real Estate
 
 Rob discovered Airbnb arbitrage during the COVID era while watching Instagram videos about financial freedom and investing. He was immediately attracted to the model because of its capital efficiency compared to traditional real estate investing.
 
@@ -180,7 +180,7 @@ The decision came down to a simple comparison: traditional real estate requires 
 
 Rob acknowledges there are tax trade-offs between arbitrage and ownership, but his philosophy is straightforward: generate cash flow faster, scale quicker, and use that income to eventually purchase properties for tax benefits. The arbitrage model is his vehicle for building capital rapidly.
 
-### Getting Started with Two Young Kids {#getting-started}
+### Getting Started with Two Young Kids
 
 Rob was one of the first members to join Legacy Investing Show, but life got in the way initially. He was in school, had two young kids at home, and was wearing a lot of hats. He ended up putting the program off for a while.
 
@@ -190,9 +190,9 @@ Within a short period of actively pursuing deals, Rob was submitting quality pro
 
 ---
 
-## The Airbnb Arbitrage Journey: Rob's Timeline {#journey}
+## The Airbnb Arbitrage Journey: Rob's Timeline
 
-### First Property: The Turnkey Louisville Deal {#first-property}
+### First Property: The Turnkey Louisville Deal
 
 **Situation**: Rob looked in his own backyard and found an already-permitted, already-furnished property in Louisville, Kentucky.
 
@@ -230,7 +230,7 @@ He called on a house in a great neighborhood near the University of Louisville c
 
 - Booking inquiries: 2-3 times per week minimum
 
-### Second Property: St. Simons Island Remote Setup {#second-property}
+### Second Property: St. Simons Island Remote Setup
 
 **Situation**: Rob expanded to Georgia with a remote-managed property that sleeps 15 guests with pool, hot tub, and playground.
 
@@ -260,9 +260,9 @@ Unlike Louisville, this property required full setup since the owners weren't fu
 
 ---
 
-## How to Choose Markets for Airbnb Arbitrage {#market}
+## How to Choose Markets for Airbnb Arbitrage
 
-### Louisville, Kentucky Market Analysis {#louisville-market}
+### Louisville, Kentucky Market Analysis
 
 **Louisville works for Airbnb arbitrage because of diverse demand drivers and year-round tourism.** Rob was initially surprised by the market's performance—he didn't think people would want to travel there besides for the Kentucky Derby.
 
@@ -290,7 +290,7 @@ Unlike Louisville, this property required full setup since the owners weren't fu
 
 Rob's key insight: look in your own backyard first. He knew the Louisville area, understood the neighborhoods, and could easily visit the property. The local knowledge helped him identify a great location near both the university and downtown attractions.
 
-### St. Simons Island, Georgia Market Analysis {#st-simons-market}
+### St. Simons Island, Georgia Market Analysis
 
 **St. Simons Island is ideal for Airbnb arbitrage because of strong vacation rental demand and favorable regulations.** Rob specifically chose this market after Jacksonville Beach numbers didn't work.
 
@@ -320,11 +320,11 @@ The St. Simons property stands out because nothing else on the island offers the
 
 ---
 
-## Airbnb Arbitrage Strategies That Actually Work {#strategies}
+## Airbnb Arbitrage Strategies That Actually Work
 
 **The difference between profitable and unprofitable Airbnb arbitrage comes down to execution.** Rob attributes his success to four core strategies that most beginners overlook.
 
-### Strategy 1: The Win-Win Landlord Pitch {#landlord-negotiation}
+### Strategy 1: The Win-Win Landlord Pitch
 
 **What it is**: Positioning yourself as a professional business partner, not a typical tenant seeking to sublease.
 
@@ -362,7 +362,7 @@ Rob's approach centers on one core message: this is a win-win for both parties. 
 
 ---
 
-### Strategy 2: The Volume Approach to Finding Deals {#volume-approach}
+### Strategy 2: The Volume Approach to Finding Deals
 
 **What it is**: Making as many calls as possible and treating rejections as learning opportunities rather than failures.
 
@@ -398,7 +398,7 @@ Rob's first call was a disaster. He was looking in Fort Lauderdale, and the land
 
 ---
 
-### Strategy 3: Building a Rockstar Remote Team {#remote-team}
+### Strategy 3: Building a Rockstar Remote Team
 
 **What it is**: Finding and vetting remote team members through referral networks rather than cold searching.
 
@@ -452,7 +452,7 @@ Rob interviewed three cleaners for St. Simons. The first two he led the conversa
 
 ---
 
-### Strategy 4: Listing Optimization for Maximum Bookings {#listing-optimization}
+### Strategy 4: Listing Optimization for Maximum Bookings
 
 **What it is**: Strategic photo sequencing and amenity highlighting to show your property's best features immediately.
 
@@ -498,7 +498,7 @@ Rob's Louisville listing demonstrates textbook optimization. The property is an 
 
 ---
 
-## Rob's Airbnb Arbitrage Results: The Numbers {#results}
+## Rob's Airbnb Arbitrage Results: The Numbers
 
 **Rob generates over $10,000/month in combined profit from 2 properties.** Here's the complete financial breakdown of his Airbnb arbitrage business.
 
@@ -544,7 +544,7 @@ Rob's target for the year: recoup all startup investments and generate $30,000-$
 
 ---
 
-## Airbnb Arbitrage Lessons: What Rob Learned {#lessons}
+## Airbnb Arbitrage Lessons: What Rob Learned
 
 **These five lessons took Rob from overwhelmed beginner to $10,000/month Airbnb entrepreneur.** Each one came from real experience and could save you months of trial and error.
 
@@ -650,7 +650,7 @@ Rob's target for the year: recoup all startup investments and generate $30,000-$
 
 ---
 
-## Best Tools for Airbnb Arbitrage: Rob's Tech Stack {#tools}
+## Best Tools for Airbnb Arbitrage: Rob's Tech Stack
 
 **Rob manages 2 properties with minimal weekly time using these tools.** Here's the complete tech stack that powers his $10,000/month business.
 
@@ -707,7 +707,7 @@ Rob's target for the year: recoup all startup investments and generate $30,000-$
 
 ---
 
-## Rob's Advice for Airbnb Arbitrage Beginners {#advice}
+## Rob's Advice for Airbnb Arbitrage Beginners
 
 > "Do your diligence obviously before starting anything, but you don't get anywhere by sitting on the sidelines."
 
@@ -745,7 +745,7 @@ Be confident about what you're offering because it's genuinely valuable. The lan
 
 ---
 
-## Watch Rob's Full Interview {#video}
+## Watch Rob's Full Interview
 
 **Video highlights:**
 
@@ -767,7 +767,7 @@ Be confident about what you're offering because it's genuinely valuable. The lan
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
 ### How much money can you really make with Airbnb arbitrage?
 

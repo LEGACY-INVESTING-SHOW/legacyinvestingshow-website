@@ -148,7 +148,7 @@ This case study breaks down exactly how Christopher overcame analysis paralysis,
 
 ---
 
-## Quick Results: Christopher's Airbnb Arbitrage Numbers {#quick-results}
+## Quick Results: Christopher's Airbnb Arbitrage Numbers
 
 | Metric | Value | Context |
 |------|------|------|
@@ -163,17 +163,17 @@ This case study breaks down exactly how Christopher overcame analysis paralysis,
 
 ---
 
-## Christopher's Background: From Analysis Paralysis to Action {#background}
+## Christopher's Background: From Analysis Paralysis to Action
 
 **You don't need years of preparation to start Airbnb arbitrage—but Christopher's story shows what happens when you finally commit after extensive research.** At 29 years old, living in Louisiana with his fiance and 3-year-old daughter, Christopher spent half a decade studying real estate before finally taking the leap.
 
-### The Entrepreneur Foundation {#the-entrepreneur-foundation}
+### The Entrepreneur Foundation
 
 Christopher's entrepreneurial journey started with just $70 at garage sales. He turned that small investment into an eBay reselling business, learning the fundamentals of buying low and selling high. This early experience taught him that business success comes from taking calculated risks and learning through action—a lesson that would prove valuable years later.
 
 After establishing his eBay business, Christopher entered the oil and gas industry for stable income. While the steady paycheck was nice, it put his entrepreneurial ambitions on the back burner. He never lost the drive to build something of his own, but finding the right vehicle for his capital and ambition proved challenging.
 
-### Five Years of Research {#five-years-of-research}
+### Five Years of Research
 
 For five years, Christopher and his fiance researched real estate investing. They consumed content, studied different strategies, and analyzed markets—but never pulled the trigger. The barriers seemed too high: capital requirements, lack of guidance, uncertainty about the right approach.
 
@@ -181,7 +181,7 @@ For five years, Christopher and his fiance researched real estate investing. The
 
 The problem wasn't lack of knowledge—it was lack of a clear path forward. Christopher understood real estate concepts but didn't have a step-by-step system to follow. YouTube videos from multiple sources provided fragmented information that never quite fit together into an actionable plan.
 
-### The Decision to Commit {#the-decision-to-commit}
+### The Decision to Commit
 
 The turning point came when Christopher discovered Preston's YouTube channel. He and his fiance began watching videos together, and something clicked. Rather than piecing together information from dozens of sources, they found a comprehensive system they could follow.
 
@@ -193,9 +193,9 @@ That observation hit home. Christopher made the decision right there in the lunc
 
 ---
 
-## The Airbnb Arbitrage Journey: Christopher's Timeline {#journey}
+## The Airbnb Arbitrage Journey: Christopher's Timeline
 
-### Phase 1: Learning the System {#learning-the-system}
+### Phase 1: Learning the System
 
 **Situation**: Christopher committed to learning the Legacy Investing Show system thoroughly before taking action.
 
@@ -205,7 +205,7 @@ The market research module proved particularly challenging. Christopher question
 
 > "I had to watch videos over and over and over again just to make sure that it set in, to retain everything, write it down and go step by step."
 
-### Phase 2: The Landlord Outreach Grind {#landlord-outreach}
+### Phase 2: The Landlord Outreach Grind
 
 **Situation**: Christopher entered the challenging phase of calling landlords—and discovered that persistence beats perfection.
 
@@ -229,7 +229,7 @@ Over the course of his outreach campaign, Christopher called 50-70 landlords. He
 
 - Landlords who wanted premiums that destroyed profitability
 
-### Phase 3: Finding the Right Landlord {#finding-the-right-landlord}
+### Phase 3: Finding the Right Landlord
 
 **Situation**: Christopher found a landlord who saw himself in the young entrepreneur's journey.
 
@@ -247,7 +247,7 @@ The landlord's response surprised him: "A guy took a chance on me seven years ag
 
 The landlord initially wanted only a 1-year lease—far too short for the numbers to work. Christopher negotiated for 4 years; they settled on 3 years with a renewal option. The landlord even offered to reduce certain costs to make the numbers work better.
 
-### Phase 4: Property Setup {#property-setup}
+### Phase 4: Property Setup
 
 **Situation**: Christopher and his fiance transformed a rental into a top-10% Airbnb experience.
 
@@ -263,11 +263,11 @@ One innovative move: Christopher visited local restaurants with his laptop and w
 
 ---
 
-## Why Texas Works for Airbnb Arbitrage {#market}
+## Why Texas Works for Airbnb Arbitrage
 
 **Texas offers strong fundamentals for Airbnb arbitrage, with landlords more open to the model than many other states.** Christopher chose his Texas market after careful analysis of demand drivers, competition levels, and landlord friendliness.
 
-### Christopher's Market Research Process {#market-research-process}
+### Christopher's Market Research Process
 
 Christopher followed the program's market research methodology systematically:
 
@@ -294,11 +294,11 @@ The analysis revealed that only 6% of properties in his market have swimming poo
 
 ---
 
-## Strategies for Building a Top 10% Airbnb {#strategies}
+## Strategies for Building a Top 10% Airbnb
 
 **The difference between an average listing and a top-10% performer comes down to intentional strategy.** Christopher implemented five core strategies that positioned his first property for success.
 
-### Strategy 1: The Volume Game with Landlord Calls {#strategy-1}
+### Strategy 1: The Volume Game with Landlord Calls
 
 **What it is**: Treating landlord outreach as a numbers game rather than expecting quick wins.
 
@@ -328,7 +328,7 @@ The analysis revealed that only 6% of properties in his market have swimming poo
 
 ---
 
-### Strategy 2: Building Rapport Before Pitching {#strategy-2}
+### Strategy 2: Building Rapport Before Pitching
 
 **What it is**: Starting landlord conversations with genuine interest in the property and person, not immediate business talk.
 
@@ -358,7 +358,7 @@ The analysis revealed that only 6% of properties in his market have swimming poo
 
 ---
 
-### Strategy 3: Practicing with Family Members {#strategy-3}
+### Strategy 3: Practicing with Family Members
 
 **What it is**: Role-playing landlord calls with family or friends before making real calls.
 
@@ -388,7 +388,7 @@ The analysis revealed that only 6% of properties in his market have swimming poo
 
 ---
 
-### Strategy 4: Rare Amenities That Filter Competition {#strategy-4}
+### Strategy 4: Rare Amenities That Filter Competition
 
 **What it is**: Targeting properties with amenities that only a small percentage of listings have.
 
@@ -418,7 +418,7 @@ The analysis revealed that only 6% of properties in his market have swimming poo
 
 ---
 
-### Strategy 5: Local Business Partnerships {#strategy-5}
+### Strategy 5: Local Business Partnerships
 
 **What it is**: Partnering with local restaurants and businesses to provide guest gift cards and enhance the welcome packet.
 
@@ -448,11 +448,11 @@ The analysis revealed that only 6% of properties in his market have swimming poo
 
 ---
 
-## Christopher's Airbnb Arbitrage Results: The Numbers {#results}
+## Christopher's Airbnb Arbitrage Results: The Numbers
 
 **Christopher conservatively projects $1,700/month cash flow from his first property, but expects to exceed this based on his differentiation strategy.**
 
-### Financial Breakdown {#financial-breakdown}
+### Financial Breakdown
 
 | Metric | Value | Notes |
 |------|------|------|
@@ -462,7 +462,7 @@ The analysis revealed that only 6% of properties in his market have swimming poo
 | **Hot Tub (Planned)** | Top 6% | Additional filter coming |
 | **Landlord Portfolio** | 26 properties | Future deal potential |
 
-### Property Features {#property-features}
+### Property Features
 
 Christopher's property includes:
 
@@ -484,7 +484,7 @@ Christopher's property includes:
 
 - Ice cream shop coupons
 
-### Key Milestones Achieved {#key-milestones}
+### Key Milestones Achieved
 
 - Overcame 5 years of analysis paralysis
 
@@ -506,13 +506,13 @@ Christopher's property includes:
 
 ---
 
-## Key Lessons for Airbnb Arbitrage Beginners {#lessons}
+## Key Lessons for Airbnb Arbitrage Beginners
 
 **These five lessons from Christopher's journey could save you months of frustration and accelerate your path to your first property.**
 
 > "You never fail, you only learn."
 
-### Lesson 1: Treat Landlord Outreach as a Numbers Game {#lesson-1}
+### Lesson 1: Treat Landlord Outreach as a Numbers Game
 
 **The Mistake**: Giving up after 5-10 rejections and assuming the market is too competitive.
 
@@ -534,7 +534,7 @@ Christopher's property includes:
 
 ---
 
-### Lesson 2: Remove Emotions from Property Decisions {#lesson-2}
+### Lesson 2: Remove Emotions from Property Decisions
 
 **The Mistake**: Falling in love with a property before running the numbers and trying to force unprofitable deals.
 
@@ -556,7 +556,7 @@ Christopher's property includes:
 
 ---
 
-### Lesson 3: Invest in Education Before Action {#lesson-3}
+### Lesson 3: Invest in Education Before Action
 
 **The Mistake**: Trying to piece together a strategy from random YouTube videos instead of following a proven system.
 
@@ -578,7 +578,7 @@ Christopher's property includes:
 
 ---
 
-### Lesson 4: Be Honest with Landlords About Experience {#lesson-4}
+### Lesson 4: Be Honest with Landlords About Experience
 
 **The Mistake**: Pretending to have more experience than you do, damaging trust when the truth emerges.
 
@@ -600,7 +600,7 @@ Christopher's property includes:
 
 ---
 
-### Lesson 5: Make the Script Your Own {#lesson-5}
+### Lesson 5: Make the Script Your Own
 
 **The Mistake**: Reading scripts robotically instead of adapting them to your natural communication style.
 
@@ -622,7 +622,7 @@ Christopher's property includes:
 
 ---
 
-## Tools and Systems Christopher Uses {#tools}
+## Tools and Systems Christopher Uses
 
 **Christopher built his first property using the Legacy Investing Show framework plus a few key systems for landlord outreach and property setup.**
 
@@ -636,7 +636,7 @@ Christopher's property includes:
 | **Maintenance** | Local handyman | Quick response to issues |
 | **Outdoor** | Lawn care service + pool guy | Property exterior maintenance |
 
-### Property Setup Checklist Highlights {#property-setup-checklist}
+### Property Setup Checklist Highlights
 
 Christopher found the room-by-room checklist invaluable for furnishing. Key categories included:
 
@@ -654,7 +654,7 @@ Christopher found the room-by-room checklist invaluable for furnishing. Key cate
 
 ---
 
-## Christopher's Advice for Airbnb Arbitrage Beginners {#advice}
+## Christopher's Advice for Airbnb Arbitrage Beginners
 
 > "There's a thousand reasons that you can tell yourself to not do it. Every year for the rest of your life there's going to be something out there that's going to tell you 'hey don't do that.' You kind of push those away if you got a proven plan and you see that it's working for people."
 
@@ -696,7 +696,7 @@ Christopher doesn't consider himself naturally talented at sales or real estate.
 
 ---
 
-## Watch Christopher's Full Interview {#video}
+## Watch Christopher's Full Interview
 
 **Video highlights:**
 
@@ -716,7 +716,7 @@ Christopher doesn't consider himself naturally talented at sales or real estate.
 
 ---
 
-## Frequently Asked Questions {#faq}
+## Frequently Asked Questions
 
 ### How much money can you make with your first Airbnb arbitrage property?
 
@@ -742,7 +742,7 @@ Christopher identifies several risks he manages:
 
 ---
 
-## Start Your Airbnb Arbitrage Journey {#start-your-journey}
+## Start Your Airbnb Arbitrage Journey
 
 **Ready to build your own Airbnb arbitrage business like Christopher?**
 
@@ -762,7 +762,7 @@ Christopher identifies several risks he manages:
 
 ---
 
-## About Legacy Investing Show {#about}
+## About Legacy Investing Show
 
 **Legacy Investing Show** is Preston Seo's comprehensive Airbnb arbitrage training program. Since founding, the program has:
 
