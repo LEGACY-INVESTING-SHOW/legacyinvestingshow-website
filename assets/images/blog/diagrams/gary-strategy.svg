@@ -1,69 +1,107 @@
-<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    .strategy-box { fill: white; stroke: #e2e8f0; stroke-width: 2; }
-    .strategy-title { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; font-weight: 600; fill: #1f2937; }
-    .strategy-text { font-family: system-ui, -apple-system, sans-serif; font-size: 11px; fill: #6b7280; }
-    .center-circle { fill: #6366f1; }
-    .center-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; font-weight: bold; fill: white; }
-    .connector { stroke: #cbd5e1; stroke-width: 2; fill: none; }
-    .icon { fill: #6366f1; }
-  </style>
+<svg viewBox="0 0 700 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.1"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#4f46e5"/>
+    </linearGradient>
+  </defs>
 
-  <text x="350" y="30" text-anchor="middle" font-family="system-ui" font-size="18" font-weight="bold" fill="#1f2937">Gary's 5-Pillar Strategy Framework</text>
+  <!-- Background -->
+  <rect width="700" height="480" fill="#fafafa" rx="16"/>
 
-  <!-- Central circle -->
-  <circle cx="350" cy="210" r="55" class="center-circle"/>
-  <text x="350" y="205" text-anchor="middle" class="center-text">Premium</text>
-  <text x="350" y="222" text-anchor="middle" class="center-text">Airbnb</text>
+  <!-- Title -->
+  <text x="350" y="35" text-anchor="middle" font-family="system-ui" font-size="20" font-weight="bold" fill="#1f2937">Gary's 5-Pillar Strategy Framework</text>
 
-  <!-- Connectors -->
-  <line x1="295" y1="210" x2="180" y2="120" class="connector"/>
-  <line x1="405" y1="210" x2="520" y2="120" class="connector"/>
-  <line x1="295" y1="210" x2="180" y2="300" class="connector"/>
-  <line x1="405" y1="210" x2="520" y2="300" class="connector"/>
-  <line x1="350" y1="265" x2="350" y2="340" class="connector"/>
+  <!-- Connector lines (draw first so they're behind) -->
+  <line x1="175" y1="150" x2="280" y2="220" stroke="#e5e7eb" stroke-width="3" stroke-dasharray="5,5"/>
+  <line x1="525" y1="150" x2="420" y2="220" stroke="#e5e7eb" stroke-width="3" stroke-dasharray="5,5"/>
+  <line x1="175" y1="360" x2="280" y2="290" stroke="#e5e7eb" stroke-width="3" stroke-dasharray="5,5"/>
+  <line x1="525" y1="360" x2="420" y2="290" stroke="#e5e7eb" stroke-width="3" stroke-dasharray="5,5"/>
+  <line x1="350" y1="320" x2="350" y2="380" stroke="#e5e7eb" stroke-width="3" stroke-dasharray="5,5"/>
 
-  <!-- Strategy 1: Market Selection (Top Left) -->
-  <g transform="translate(30, 60)">
-    <rect width="150" height="90" rx="10" class="strategy-box"/>
-    <text x="75" y="30" text-anchor="middle" class="strategy-title">Market Selection</text>
-    <text x="75" y="50" text-anchor="middle" class="strategy-text">Invest where you'd</text>
-    <text x="75" y="65" text-anchor="middle" class="strategy-text">vacation + tech hubs</text>
-    <text x="75" y="80" text-anchor="middle" class="strategy-text" style="fill: #6366f1;">Austin, TX</text>
+  <!-- Central Hub -->
+  <g transform="translate(350, 255)" filter="url(#glow)">
+    <circle r="65" fill="url(#centerGrad)"/>
+    <circle r="55" fill="none" stroke="white" stroke-width="2" stroke-opacity="0.3"/>
+    <text y="-8" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="bold" fill="white">Premium</text>
+    <text y="12" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="bold" fill="white">Airbnb</text>
+    <text y="32" text-anchor="middle" font-family="system-ui" font-size="11" fill="white" fill-opacity="0.8">Strategy</text>
   </g>
 
-  <!-- Strategy 2: Demographics (Top Right) -->
-  <g transform="translate(520, 60)">
-    <rect width="150" height="90" rx="10" class="strategy-box"/>
-    <text x="75" y="30" text-anchor="middle" class="strategy-title">Target Demographics</text>
-    <text x="75" y="50" text-anchor="middle" class="strategy-text">Design for specific</text>
-    <text x="75" y="65" text-anchor="middle" class="strategy-text">guest types</text>
-    <text x="75" y="80" text-anchor="middle" class="strategy-text" style="fill: #6366f1;">Male vs Female focus</text>
+  <!-- Strategy 1: Market Selection (Top Left) -->
+  <g transform="translate(95, 60)" filter="url(#shadow)">
+    <rect width="160" height="110" rx="12" fill="white"/>
+    <rect width="160" height="6" rx="3" fill="#6366f1"/>
+    <circle cx="25" cy="35" r="16" fill="#eef2ff"/>
+    <path d="M20 35 L25 30 L30 35 M25 30 L25 42" stroke="#6366f1" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <text x="50" y="32" font-family="system-ui" font-size="13" font-weight="700" fill="#1f2937">Market</text>
+    <text x="50" y="46" font-family="system-ui" font-size="13" font-weight="700" fill="#1f2937">Selection</text>
+    <text x="15" y="70" font-family="system-ui" font-size="10" fill="#6b7280">Invest where you'd</text>
+    <text x="15" y="83" font-family="system-ui" font-size="10" fill="#6b7280">vacation + tech hubs</text>
+    <rect x="15" y="92" width="70" height="18" rx="9" fill="#eef2ff"/>
+    <text x="50" y="104" text-anchor="middle" font-family="system-ui" font-size="10" font-weight="600" fill="#6366f1">Austin, TX</text>
+  </g>
+
+  <!-- Strategy 2: Target Demographics (Top Right) -->
+  <g transform="translate(445, 60)" filter="url(#shadow)">
+    <rect width="160" height="110" rx="12" fill="white"/>
+    <rect width="160" height="6" rx="3" fill="#8b5cf6"/>
+    <circle cx="25" cy="35" r="16" fill="#f3e8ff"/>
+    <circle cx="22" cy="33" r="6" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+    <circle cx="28" cy="37" r="6" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="50" y="32" font-family="system-ui" font-size="13" font-weight="700" fill="#1f2937">Target</text>
+    <text x="50" y="46" font-family="system-ui" font-size="13" font-weight="700" fill="#1f2937">Demographics</text>
+    <text x="15" y="70" font-family="system-ui" font-size="10" fill="#6b7280">Design for specific</text>
+    <text x="15" y="83" font-family="system-ui" font-size="10" fill="#6b7280">guest types</text>
+    <rect x="15" y="92" width="100" height="18" rx="9" fill="#f3e8ff"/>
+    <text x="65" y="104" text-anchor="middle" font-family="system-ui" font-size="10" font-weight="600" fill="#8b5cf6">Male vs Female</text>
   </g>
 
   <!-- Strategy 3: Rare Amenities (Bottom Left) -->
-  <g transform="translate(30, 260)">
-    <rect width="150" height="90" rx="10" class="strategy-box"/>
-    <text x="75" y="30" text-anchor="middle" class="strategy-title">Rare Amenities</text>
-    <text x="75" y="50" text-anchor="middle" class="strategy-text">Pool, sauna, jacuzzi</text>
-    <text x="75" y="65" text-anchor="middle" class="strategy-text">game rooms, 15+ guests</text>
-    <text x="75" y="80" text-anchor="middle" class="strategy-text" style="fill: #6366f1;">Reduce competition</text>
+  <g transform="translate(95, 310)" filter="url(#shadow)">
+    <rect width="160" height="110" rx="12" fill="white"/>
+    <rect width="160" height="6" rx="3" fill="#10b981"/>
+    <circle cx="25" cy="35" r="16" fill="#ecfdf5"/>
+    <text x="25" y="40" text-anchor="middle" font-family="system-ui" font-size="16" fill="#10b981">★</text>
+    <text x="50" y="32" font-family="system-ui" font-size="13" font-weight="700" fill="#1f2937">Rare</text>
+    <text x="50" y="46" font-family="system-ui" font-size="13" font-weight="700" fill="#1f2937">Amenities</text>
+    <text x="15" y="70" font-family="system-ui" font-size="10" fill="#6b7280">Pool, sauna, jacuzzi</text>
+    <text x="15" y="83" font-family="system-ui" font-size="10" fill="#6b7280">game rooms, 15+ guests</text>
+    <rect x="15" y="92" width="110" height="18" rx="9" fill="#ecfdf5"/>
+    <text x="70" y="104" text-anchor="middle" font-family="system-ui" font-size="10" font-weight="600" fill="#059669">Less Competition</text>
   </g>
 
   <!-- Strategy 4: Quality Pricing (Bottom Right) -->
-  <g transform="translate(520, 260)">
-    <rect width="150" height="90" rx="10" class="strategy-box"/>
-    <text x="75" y="30" text-anchor="middle" class="strategy-title">Quality Pricing</text>
-    <text x="75" y="50" text-anchor="middle" class="strategy-text">Lower early, book</text>
-    <text x="75" y="65" text-anchor="middle" class="strategy-text">advance planners</text>
-    <text x="75" y="80" text-anchor="middle" class="strategy-text" style="fill: #6366f1;">Better guests</text>
+  <g transform="translate(445, 310)" filter="url(#shadow)">
+    <rect width="160" height="110" rx="12" fill="white"/>
+    <rect width="160" height="6" rx="3" fill="#f59e0b"/>
+    <circle cx="25" cy="35" r="16" fill="#fef3c7"/>
+    <text x="25" y="40" text-anchor="middle" font-family="system-ui" font-size="14" font-weight="bold" fill="#f59e0b">$</text>
+    <text x="50" y="32" font-family="system-ui" font-size="13" font-weight="700" fill="#1f2937">Quality</text>
+    <text x="50" y="46" font-family="system-ui" font-size="13" font-weight="700" fill="#1f2937">Pricing</text>
+    <text x="15" y="70" font-family="system-ui" font-size="10" fill="#6b7280">Lower early, book</text>
+    <text x="15" y="83" font-family="system-ui" font-size="10" fill="#6b7280">advance planners</text>
+    <rect x="15" y="92" width="90" height="18" rx="9" fill="#fef3c7"/>
+    <text x="60" y="104" text-anchor="middle" font-family="system-ui" font-size="10" font-weight="600" fill="#d97706">Better Guests</text>
   </g>
 
-  <!-- Strategy 5: No Monthly Rentals (Bottom Center) -->
-  <g transform="translate(275, 350)">
-    <rect width="150" height="65" rx="10" class="strategy-box"/>
-    <text x="75" y="25" text-anchor="middle" class="strategy-title">Avoid Long Stays</text>
-    <text x="75" y="45" text-anchor="middle" class="strategy-text">No monthly rentals</text>
-    <text x="75" y="58" text-anchor="middle" class="strategy-text" style="fill: #ef4444;">More turnover = less issues</text>
+  <!-- Strategy 5: Avoid Long Stays (Bottom Center) -->
+  <g transform="translate(270, 420)" filter="url(#shadow)">
+    <rect width="160" height="55" rx="12" fill="white" stroke="#ef4444" stroke-width="2"/>
+    <circle cx="25" cy="27" r="14" fill="#fef2f2"/>
+    <text x="25" y="32" text-anchor="middle" font-family="system-ui" font-size="14" fill="#ef4444">✕</text>
+    <text x="50" y="24" font-family="system-ui" font-size="12" font-weight="700" fill="#1f2937">Avoid Long Stays</text>
+    <text x="50" y="40" font-family="system-ui" font-size="10" fill="#6b7280">No monthly rentals</text>
+    <text x="125" y="40" font-family="system-ui" font-size="9" font-weight="600" fill="#ef4444">= Less Issues</text>
   </g>
 </svg>
