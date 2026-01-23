@@ -212,12 +212,6 @@ The batching approach was critical for efficiency. Instead of the fragmented wor
 
 This method prevented three common mistakes:
 
-1. $1
-
-2. $1
-
-3. $1
-
 ### The Result: 57 Days
 
 James went live with his first property in 57 days—beating his aggressive 60-day goal by 3 days and crushing the standard 90-day timeline by over a month.
@@ -262,14 +256,6 @@ The key insight came when James noticed a pattern: cities with the best short-te
 But properties just outside city limits? Different story entirely.
 
 **James' Market Selection Criteria:**
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
 
 ### Using AirDNA for Market Research
 
@@ -321,17 +307,6 @@ Here's James' exact script when landlords asked about his experience:
 
 - Created relationships where landlords gave market insights even when declining
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 2: The CRM Tracking System
 
@@ -355,17 +330,6 @@ Here's James' exact script when landlords asked about his experience:
 
 > "I don't want to get in this position where I'm calling the same person twice because sometimes they get mad the second time."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 3: The Zoom Call Close
 
@@ -377,17 +341,6 @@ Here's James' exact script when landlords asked about his experience:
 
 > "I kind of like to talk to people face to face even if they're not directly in front of me. So I was like 'hey let's set up a Zoom call... so I can see what you look like, you see me, we can have that transparent conversation.'"
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## James' Airbnb Arbitrage Results: The Complete Financial Breakdown
 
@@ -490,16 +443,6 @@ Lazy, unreliable people take days or weeks to respond. They won't suddenly becom
 
 For the cabin property, James' team set everything up without him visiting:
 
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
 The property came partially furnished (a significant cost saver), and James' wife handled design decisions remotely. The result: under $10,000 in setup costs for a 2,900 square foot property with a hot tub.
 
 ---
@@ -518,17 +461,6 @@ The property came partially furnished (a significant cost saver), and James' wif
 
 > "If I didn't set those goals, I would have kind of just maybe like a lot of people, they come join, they get excited with the whole thing, but once they join they're like 'oh there's more work than I thought' and the motivation dies down."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 2: Don't Mistake Education for Action
 
@@ -540,17 +472,6 @@ The property came partially furnished (a significant cost saver), and James' wif
 
 > "You can learn all you want... you're never going to learn enough. But once you really jump into it, that's when everything happens."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 3: Be Completely Honest with Landlords
 
@@ -560,17 +481,6 @@ The property came partially furnished (a significant cost saver), and James' wif
 
 **Why This Matters**: Honesty builds immediate trust. Landlords aren't just evaluating your experience—they're evaluating your character. Someone honest about weaknesses will be honest about problems.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 4: Find Cleaners First, Build Team Through Referrals
 
@@ -580,17 +490,6 @@ The property came partially furnished (a significant cost saver), and James' wif
 
 **Why This Matters**: Good people know good people. Referrals come with built-in accountability—the referrer's reputation is on the line, so they only recommend quality.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 5: The Four-Minute Mile Effect
 

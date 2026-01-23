@@ -302,17 +302,6 @@ This is exactly why data matters. Gut feelings and assumptions can lead you astr
 
 > "We saw that on the AirDNA it showed that less than 20% of that area had the hot tub so we wanted to make sure we did that just to stand out."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 2: Target Audience Design (Family-Friendly Focus)
 
@@ -336,17 +325,6 @@ This is exactly why data matters. Gut feelings and assumptions can lead you astr
 
 Lindsay specifically noted that when she travels with kids, she looks for pack-and-plays, high chairs, and similar family amenities. If a property doesn't have them, she won't book it even if it looks great. By including these items, she removes booking friction for her target audience.
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 3: Built-in Marketing (Social Media Integration)
 
@@ -368,17 +346,6 @@ Lindsay specifically noted that when she travels with kids, she looks for pack-a
 
 > "We named it something that people could remember so they'll come back to and we'll have repeat guests. There's sometimes where cabins aren't named or properties are not named or they're harder to remember."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 4: Influencer Marketing for Launch
 
@@ -396,17 +363,6 @@ Lindsay specifically noted that when she travels with kids, she looks for pack-a
 
 - The influencers reported the place looked "incredible" and "really clean"
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Lindsay's Airbnb Arbitrage Results: The Numbers
 
@@ -480,17 +436,6 @@ Had she gone with her gut, she might have selected a suboptimal market. Instead,
 
 **Why This Matters**: Your assumptions about markets are often wrong. Areas that feel touristy might be oversaturated. Areas you've never considered might have untapped demand. Only data can tell you the truth.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 2: Get Landlords on the Phone
 
@@ -504,17 +449,6 @@ On the phone, Lindsay could explain the win-win arrangement, guarantee consisten
 
 **Why This Matters**: Airbnb arbitrage is an unfamiliar concept to most landlords. Text creates suspicion; conversation builds trust. Your personality, enthusiasm, and professionalism come through on calls in ways that text simply can't convey.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 3: Don't Get Stuck in Research Quicksand
 
@@ -526,17 +460,6 @@ On their fourth call, they found their property. Had they spent weeks researchin
 
 **Why This Matters**: Analysis paralysis kills more Airbnb businesses than bad decisions. You'll never have perfect information. The hosts who succeed are those who start, learn, and adapt—not those who research indefinitely.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 4: Build a Reliable Local Team
 
@@ -548,17 +471,6 @@ When guests message about how clean and well-decorated the property looks, Linds
 
 **Why This Matters**: Your local team is your eyes, ears, and hands when you can't be there. Finding reliable cleaners and maintenance people early prevents problems from becoming emergencies.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 5: Count All the Costs (Especially Hot Tubs)
 
@@ -572,17 +484,6 @@ She used 0% interest financing for 24 months to manage the cash flow impact. For
 
 **Why This Matters**: The purchase price of an amenity is rarely the total cost. Installation, electrical work, permits, and ongoing maintenance all add up. Budget for the complete picture, not just the sticker price.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Best Tools for Airbnb Arbitrage: Lindsay's Tech Stack
 

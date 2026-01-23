@@ -317,18 +317,6 @@ Marchia's approach is methodical: He searches Atlanta for listings with perfect 
 
 - Learned operational details that prevent complaints
 
-**How to Implement This Strategy:**
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
 ---
 
 ### Strategy 2: Theme Your Properties
@@ -369,18 +357,6 @@ The brothers theme each property deliberately based on its characteristics:
 
 - Reduced direct competition with generic listings
 
-**How to Implement This Strategy:**
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
 ---
 
 ### Strategy 3: Dynamic Pricing Mastery
@@ -415,18 +391,6 @@ The brothers observed an interesting pattern when studying competitors: many suc
 
 - Maximized weekend revenue during peak demand
 
-**How to Implement This Strategy:**
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
 ---
 
 ### Strategy 4: Eye-Catching Cover Photos
@@ -449,18 +413,6 @@ Marchia noticed that in-town stays typically use living room photos as their cov
 
 > "That initial cover picture being something different than everything else. Your eyes are being caught looking through the Airbnb pages and something shows up different."
 
-**How to Implement This Strategy:**
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
 ---
 
 ### Strategy 5: Optimize for Longer Stays
@@ -480,18 +432,6 @@ The brothers tracked their booking patterns carefully. In March, they had 11 dif
 - Same property, dramatically different efficiency
 
 > "The good thing about April is that we've only had six different people stay, whereas in March we had 11 different stays and just a lot less revenue. So we're working the pricing to make sure we're maximizing those stays."
-
-**How to Implement This Strategy:**
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
 
 ---
 
@@ -557,16 +497,6 @@ That $200-$300/month difference represents $2,400-$3,600 per year in reduced pro
 
 **Why This Matters:** Your rent is your largest fixed expense. Every dollar you save on rent goes directly to profit. A $200/month savings on rent is equivalent to generating an extra $200/month in revenue—but with zero additional work.
 
-**Your Action Steps:**
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 ---
 
 ### Lesson 2: Start Conservative, Scale Smart
@@ -578,16 +508,6 @@ That $200-$300/month difference represents $2,400-$3,600 per year in reduced pro
 > "We decided to start somewhere that was close, in a place that we knew. It was much more on the conservative side. We know there's always gonna be travelers in Atlanta."
 
 **Why This Matters:** Distance adds complexity. When you're new, you need to handle issues personally, see your property regularly, and learn from hands-on experience. Starting local removes variables so you can focus on mastering operations.
-
-**Your Action Steps:**
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
 
 ---
 
@@ -603,16 +523,6 @@ Currently, they're cleaning properties themselves to maximize early cash flow. B
 
 **Why This Matters:** Without a clear vision, you'll make decisions that optimize for today at the expense of tomorrow. Cleaning your own properties makes sense initially but becomes a trap if you never transition out of it.
 
-**Your Action Steps:**
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 ---
 
 ### Lesson 4: Outsource Cleaning ASAP
@@ -627,16 +537,6 @@ Preston's advice during the interview was direct: find a cleaner now, even befor
 
 **Why This Matters:** Your time has value. Every hour spent cleaning is an hour not spent finding new properties, optimizing listings, or building systems. Cleaning fees can be passed to guests, making it nearly cost-neutral while freeing your most valuable resource.
 
-**Your Action Steps:**
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 ---
 
 ### Lesson 5: Customer Service is Everything
@@ -648,18 +548,6 @@ Preston's advice during the interview was direct: find a cleaner now, even befor
 > "In order to be successful you got to stand out, whether it's through your customer service. We've read separate books from the Ritz Carlton owner and through that we've gotten really good reviews."
 
 **Why This Matters:** In a saturated market, customer service is often the differentiator. Two similar properties with similar prices will have dramatically different performance if one provides exceptional service and the other doesn't. Reviews compound—great service leads to great reviews, which leads to more bookings, which leads to more opportunities for great service.
-
-**Your Action Steps:**
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
 
 ---
 

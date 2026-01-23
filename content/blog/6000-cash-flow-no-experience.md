@@ -282,14 +282,6 @@ His property criteria centers on:
 
 After failing with glamorous distant markets, Dustin developed a more practical approach:
 
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 The key insight: landlords can tell when you genuinely understand their area versus when you're reading from a script about a place you've never visited.
 
 ---
@@ -310,19 +302,6 @@ His second property followed the same pattern: 5-6 bad photos on Zillow, sitting
 
 > "Some of the best opportunities are the ones that on whatever they're marketing the property have bad pictures. You've got to go to Google Earth and see where it's actually at, have a vision for it, because bad pictures is almost like a diamond in the rough."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ### Strategy 2: Turning Failed Airbnbs Around
 
@@ -346,19 +325,6 @@ Using Legacy Investing Show strategies - proper furniture setup, professional ph
 
 > "We did this for like nine months prior and our biggest month was like a thousand dollars in booking. I was doing at the time like six and seven thousand. They had done a thousand. It's an absolute testimony to like the way we do things that you teach us works."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ### Strategy 3: Long-Term Landlord Partnerships
 
@@ -386,19 +352,6 @@ Using Legacy Investing Show strategies - proper furniture setup, professional ph
 
 > "They have a vision of letting me do this for a couple years as arbitrage and then they want to reevaluate things after two years. They maybe become the owner operator and I might be the property manager, we might extend the lease."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ### Strategy 4: Experience-Driven Design
 
@@ -420,19 +373,6 @@ Dustin's properties aren't just rentals - they're family vacation experiences ce
 
 The personal touch matters: because Dustin is passionate about these experiences, that enthusiasm comes through in his listings and guest communications.
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ### Strategy 5: Automation from Day One
 
@@ -452,19 +392,6 @@ Before his first property was even live, Dustin brought on a business partner - 
 
 > "With two properties up, my time constraint with a business partner might be we do a one-on-one like once a week and that's probably 30 to 45 minutes. Other than that, I don't spend much time on it. She handles all that, the automated messaging handles most of it."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ## Dustin's Airbnb Arbitrage Results: The Numbers
 
@@ -546,17 +473,6 @@ The turning point came when he recalibrated. Instead of researching for another 
 
 > "I did paralysis by analysis. I spent three weeks researching all these markets and thinking that I was a genius focusing on Miami and Austin and Lake Tahoe... without making a phone call."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 2: Call Markets You Know
 
@@ -568,17 +484,6 @@ When he switched to Southern US markets he'd actually vacationed in, everything 
 
 **Why This Matters**: Landlords trust operators who genuinely understand their market. Personal connection also keeps you motivated through challenges - Dustin enjoys visiting his properties because he genuinely likes the areas.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 3: See Potential Others Miss
 
@@ -592,19 +497,6 @@ His first property looked like it was decorated by someone in their 90s. That's 
 
 > "If you can notice the diamonds in the rough, you're going to have way less competition, you're going to be able to negotiate a three-year deal."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ### Lesson 4: Build Systems Early
 
@@ -616,19 +508,6 @@ Result: with 2 properties live, he spends less than 1 hour per week on operation
 
 **Why This Matters**: Most people build systems reactively when they're already drowning. By that point, you're solving problems instead of preventing them. Proactive systems enable scaling without stress.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ### Lesson 5: Take Action, Learn Later
 
@@ -642,19 +521,6 @@ That property became a $35,000/year profit machine.
 
 > "It's that passion, it's that vision that you have - it's going to turn into care and purpose that you put into that property, it's going to make it great. Just listen to your intuition."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ## Best Tools for Airbnb Arbitrage: Dustin's Tech Stack
 

@@ -251,19 +251,6 @@ The due diligence process took about three to four weeks as the landlord talked 
 
 Tom's first step was subscribing to Air DNA for market data. He emphasizes this investment as crucial for data mining and understanding market fundamentals before committing to any property.
 
-**Key Research Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ## Airbnb Arbitrage Strategies That Actually Work: Tom's Playbook
 
@@ -289,17 +276,6 @@ This approach was intentional for their first property. They wanted to understan
 
 > "We really wanted to learn the business, learn all the ingredients, how do you make the sausage. We were very instructive, we really learned a ton by doing that."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 2: Building Cleaner Redundancy
 
@@ -321,17 +297,6 @@ His solution went beyond simple backup coverage. He asked each cleaner if they w
 
 > "We need redundancy here. If this person's out, they're not available, we're going to be messed up. So there was another one we interviewed, I said let's get her on, bring her on. And then finally a third one came on."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 3: The Hotel-Quality Standard
 
@@ -340,12 +305,6 @@ His solution went beyond simple backup coverage. He asked each cleaner if they w
 **Why it works**: The framing changes expectations and execution. Home cleaning means acceptable tidiness. Hotel preparation means precision staging, exact replication of listing photos, and crisp presentation that exceeds guest expectations.
 
 Tom breaks cleaning into three distinct stages that his team follows:
-
-1. $1
-
-2. $1
-
-3. $1
 
 > "Just make sure your mindset is not 'you're cleaning the Joneses' home.' You're not doing that. You're cleaning a hotel room, a superior high quality hotel room, and it has to be precise."
 
@@ -359,17 +318,6 @@ Tom breaks cleaning into three distinct stages that his team follows:
 
 - Reviews highlight hotel-quality experience
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 4: Local Partnership Building
 
@@ -391,17 +339,6 @@ This neighbor now supplies crabs directly to Tom's guests at a significant disco
 
 - Guest testimonials about memorable moments
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 5: Modified Landlord Script
 
@@ -411,27 +348,8 @@ This neighbor now supplies crabs directly to Tom's guests at a significant disco
 
 **Tom's Modified Approach**:
 
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 > "For example, I ask them, 'Can you walk me through the numbers again?' To make them a little bit more comfortable before I give the pitch. Once I get them a little bit more comfortable and trusting me, then I start talking about what we're trying to do here."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Tom's Airbnb Arbitrage Results: The Numbers
 
@@ -494,17 +412,6 @@ The entire effort was wasted because Tom had missed city-level regulations that 
 
 > "The very first thing I do now is check the laws. I went back and watched your videos Preston because you nailed it. The first thing you were saying was check the laws. I wish you would have hammered that in a little bit more."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 2: Treat Property Search as a Numbers Game
 
@@ -516,17 +423,6 @@ The entire effort was wasted because Tom had missed city-level regulations that 
 
 > "Find out what the laws are, then find a market, make sure you can do it, and then once you do it start calling landlords. Don't take a deep dive on the numbers until you get someone to agree that 'yeah okay I'm open to that.'"
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 3: Build Your Team Before You Need Them
 
@@ -538,17 +434,6 @@ The entire effort was wasted because Tom had missed city-level regulations that 
 
 > "The very first thing I would do is start calling the team, recruiting the handyman and the cleaners. Having them boots on the ground is extremely important. Getting them in early is critical because you also get to test them."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 4: Create Systems for Cleaner Excellence
 
@@ -562,17 +447,6 @@ The solution: having cleaners quality-check each other. This creates accountabil
 
 > "That's one thing writing it, but getting them to follow it is another thing. So what we did, I asked each one of them individually if they would be willing to do a quality check for the other cleaners."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 5: Have Your Documents Ready
 
@@ -584,17 +458,6 @@ The solution: having cleaners quality-check each other. This creates accountabil
 
 > "I would recommend having the leases ready. If your landlord doesn't have a lease and a sublease, have something that is local to the state you're in. As soon as all that's done, say 'Hey, I got a Maryland state lease, I have my sublease agreement, can I shoot it to you?'"
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Best Tools for Airbnb Arbitrage: Tom's Tech Stack
 

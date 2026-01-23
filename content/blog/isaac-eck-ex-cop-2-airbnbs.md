@@ -283,17 +283,6 @@ Guests searching for large group accommodations filter by bedroom count. If you 
 
 > "I knew very quickly that one-bedroom was not going to allow me to stand out. So I kind of went bigger, went home. I chose a five-bedroom—I saw that was 4% of the market."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 2: Win Over Landlords Who've Done Arbitrage Before
 
@@ -317,17 +306,6 @@ The previous tenant was leaving not because arbitrage failed, but because she wa
 
 - Property was actually a 5-bedroom (listed as 4), which he discovered from the previous listing
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 3: Amenity Competition Analysis
 
@@ -347,17 +325,6 @@ The competitor had arcade games, a speakeasy, and could sleep 16 people. Isaac c
 
 > "Our kind of goal was—if there's 12 of them, why would they spend $100 more to go stay at that place with the same amenities when they could stay at ours?"
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Isaac's Airbnb Arbitrage Results: The Numbers
 
@@ -444,17 +411,6 @@ His first real calls after joining the program weren't polished either. He got y
 
 > "I got a lot of yeses, but that was before my process would kind of hone down. I would get yeses and I would just kind of—analysis by paralysis—I didn't want to mess up."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 2: Communication Is Everything for Cleaners
 
@@ -466,17 +422,6 @@ His first real calls after joining the program weren't polished either. He got y
 
 > "If you bid on a job and you don't respond to me when I'm asking you for a phone interview—I'm not going to waste my time interviewing you, because you didn't respond to a job that you bid on."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 3: Have a Strong Why
 
@@ -490,17 +435,6 @@ His why: freedom to be present. He and his wife want flexibility—not just weal
 
 > "If you want to be financially free, ask yourself why. If the reason is to spend more time with your wife and kids, then ask yourself why. Follow the why until you really get down to the deep meaning of what your motivation is."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 4: Leverage Your Partner's Strengths
 
@@ -514,17 +448,6 @@ Their division of labor: she designs, he executes. She buys, he builds. She hand
 
 > "We always joke that she buys it and I build it. We work together to come up with color schemes and things. She did a great job—she loves doing that, she has a pretty good eye for it."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 5: Anticipate Seasonality (and Budget for It)
 
@@ -538,17 +461,6 @@ The key is anticipating this in your projections. If you know January-February w
 
 > "Last month we had to feed the business a little bit more than we anticipated. All in all, we've had a great time doing it. But you have to anticipate the seasonality."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Best Tools for Airbnb Arbitrage: Isaac's Tech Stack
 
@@ -681,25 +593,11 @@ Travel nursing allowed Isaac's wife to provide financial stability while he focu
 
 Isaac's Arkansas property is currently underperforming projections. His approach:
 
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 If after a full year the numbers still don't work, arbitrage offers an exit: furniture moves to your next property, and you're out of the lease without losing real estate equity.
 
 ### What if I don't have connections in any good markets?
 
 Isaac recommends starting where you have relationships, but it's not strictly required. His process for building a boots-on-the-ground team:
-
-1. $1
-
-2. $1
-
-3. $1
 
 The cleaner is your eyes on the ground. If you find someone responsive and reliable, they become your connection to the local market.
 

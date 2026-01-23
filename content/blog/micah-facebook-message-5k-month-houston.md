@@ -449,91 +449,23 @@ The result? The property wasn't cleaned when Micah took possession. The landlord
 
 > "My big thing is like if I could go back, I get everything, everything in writing, everything in the contract."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 ### Lesson 2: Verify the Property Yourself
-
 **The Mistake**: Taking the landlord's word about property condition
-
 **What Happened**: The landlords said they'd just renovated—replaced the heater, updated various systems. Micah trusted this. When he got the property, the pool heater had a leak, and there were other issues not mentioned.
-
 **Why This Matters**: Landlords aren't trying to deceive you, but they may not know about every issue. What seems "fine" to them might be a problem for a short-term rental operation.
-
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 ### Lesson 3: Control Your Maintenance Team
-
 **The Mistake**: Using the landlord's contractors exclusively
-
 **What Happened**: The landlord required Micah to use their contractors for repairs. The turnaround time was painfully slow, leading to guest complaints and operational headaches.
-
 **Why This Matters**: In short-term rentals, speed matters. A broken amenity affects every guest until it's fixed. Slow contractors cost you reviews and bookings.
-
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 ### Lesson 4: Invest in Design Help
-
 **The Mistake**: This wasn't actually a mistake—Micah did it right
-
 **What Happened**: By partnering with an interior designer friend, Micah created a property that stands out in photos and delivers a premium guest experience. The relatively small investment in professional design guidance multiplied his property's appeal.
-
 **Why This Matters**: Airbnb is a visual platform. Guests scroll through dozens of listings before clicking. Professional design—even on a budget—separates you from amateur-looking listings.
-
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 ### Lesson 5: Just Start
-
 **The Mistake**: Six weeks of analysis paralysis
-
 **What Happened**: Micah spent roughly six weeks researching the same markets, the same neighborhoods, running the same calculations. The numbers were good from the start—he just couldn't pull the trigger.
-
 **Why This Matters**: Perfect information doesn't exist. At some point, you have enough data to make a decision. Delaying costs you time, money, and momentum.
-
 > "I had to trust that if the numbers are there, you just do it... at the end of the day, I just had to make a conscious decision no matter how scary it was."
-
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Tools & Systems: Micah's Tech Stack
 

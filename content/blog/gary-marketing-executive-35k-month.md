@@ -266,13 +266,10 @@ Gary emphasizes that every city has different needs. In Silicon Valley, a dedica
 
 > "Having a pool is like a main necessity in a city like Austin. In that city, people go there looking for outdoor space, looking for a pool, looking for a place where they can relax in 110 degree heat."
 
-**How to Implement This Strategy**:
 1. **Research your market's must-have amenities**: What do guests in your city filter for?
 2. **Make that amenity non-negotiable**: Don't compromise—skip properties without it
 3. **Stack additional relevant amenities**: Pool + hot tub + outdoor kitchen = premium rates
 4. **Factor maintenance costs**: Pools require upkeep, so include this in your projections
-
----
 
 ### Strategy 2: Demographic Targeting (Male vs. Female Properties)
 
@@ -303,13 +300,10 @@ The reasoning is strategic: female groups tend to be less rowdy and less likely 
 - Social media exposure from shareable design elements
 - Reduced neighbor complaints by matching property type to location
 
-**How to Implement This Strategy**:
 1. **Assess your property's location**: Close neighbors? Target female groups. More space? Either works.
 2. **Choose your target demographic**: Design everything around their preferences
 3. **Invest in demographic-specific amenities**: Photo booths for women, game rooms for men
 4. **Set house rules accordingly**: Noise policies, party policies that filter for your target
-
----
 
 ### Strategy 3: The Rare Amenities Filter
 
@@ -334,13 +328,10 @@ The reasoning is strategic: female groups tend to be less rowdy and less likely 
 
 > "If I take away a pool, if I take away the jacuzzi, if I take away the 15 people capacity to only 10 people, now the filter basically puts me in competition with a lot more properties. So the property that has all these amenities becomes one of the few houses that has it."
 
-**How to Implement This Strategy**:
 1. **Research what's rare in your market**: Search Airbnb with various filters to see competition levels
 2. **Target properties with built-in rare amenities**: Pools, hot tubs, unique features
 3. **Add amenities that are hard to replicate**: Saunas, game rooms, custom installations
 4. **Stack multiple rare amenities**: Each filter narrows competition further
-
----
 
 ### Strategy 4: Quality-First Pricing Psychology
 
@@ -364,14 +355,11 @@ This approach sacrifices some potential revenue for dramatically better guest qu
 - "Rare Find" badge from Airbnb signals high demand
 - Reduced stress from not scrambling for last-minute bookings
 
-**How to Implement This Strategy**:
 1. **Set competitive initial prices**: Attract advance bookers
 2. **Don't panic with empty calendars**: Trust the strategy
 3. **Raise prices as demand fills in**: Let scarcity work for you
 4. **Never discount to fill last-minute gaps**: This attracts problematic guests
 5. **Use Price Labs, not Airbnb Smart Pricing**: Airbnb's tool just tries to get you booked at any price
-
----
 
 ### Strategy 5: Avoiding Monthly Rentals
 
@@ -387,13 +375,10 @@ This approach sacrifices some potential revenue for dramatically better guest qu
 
 > "When people stay in my house for a month, not only am I giving them a discount, but a lot of times if there's something wrong with the house I don't have time to fix it and they would really get upset. Someone staying three days might just tell you on the way out. But if they're staying 30 days they'll demand you fix it and might not want to pay you at all."
 
-**How to Implement This Strategy**:
 1. **Set minimal weekly discounts**: Under 10% discourages extended stays
 2. **Set minimal monthly discounts**: Low teens makes monthly stays unattractive
 3. **Target weekend stays**: Higher rates, lower risk, better guests
 4. **Let Airbnb's prompts go ignored**: They push discounts that hurt hosts
-
----
 
 ## Gary's Airbnb Arbitrage Results: The Numbers
 
@@ -463,71 +448,43 @@ Gary's newest listing demonstrates his strategy's effectiveness:
 
 **Why This Matters**: If you love a destination, you understand what makes it special, what guests want to experience, and how to create memorable stays. Gary's properties reflect his genuine appreciation for Austin's culture, outdoor spaces, and entertainment scene. This personal connection keeps him motivated during inevitable challenges.
 
-**Your Action Steps**:
 1. List cities you genuinely enjoy visiting
 2. Research STR fundamentals in those markets first
 3. Plan a trip specifically to evaluate the market as an investor
 4. Ask yourself: Would I want to visit this property monthly?
-
 ### Lesson 2: Design Properties for Specific Guest Types
-
 **The Mistake**: Creating generic spaces that appeal to everyone (and therefore no one specifically).
-
 **What Gary Learned**: Rather than making "Plain Jane" listings that compete with thousands of others on price alone, Gary tailors each property to a target demographic. Female-targeted properties get instagrammable elements and privacy fences. Male-targeted properties get game rooms and barbecue grills.
-
 **Why This Matters**: Targeted properties command premium prices because they're exactly what specific guest types are searching for. Generic properties compete on price, while specialized properties compete on experience and relevance.
-
 > "I really wanted this house to be more female because females tend to be less rowdy, they tend to play music not as loud, it's not going to bother my neighbors as much."
-
-**Your Action Steps**:
 1. Analyze your property's characteristics (neighbor proximity, noise tolerance, layout)
 2. Research what that demographic values (shareable moments vs. entertainment)
 3. Invest in demographic-specific amenities
 4. Set pricing and house rules that filter for the right guests
-
 ### Lesson 3: Use Pricing Strategy to Select Guest Quality
-
 **The Mistake**: Dropping prices to fill last-minute gaps and wondering why guest quality suffers.
-
 **What Gary Learned**: Your pricing strategy is also a guest quality strategy. By pricing to attract advance bookings rather than last-minute deals, Gary naturally selects for organized guests who plan ahead, have established itineraries (meaning they're out of the house more), invest time in planning (and are less likely to cancel), and value experience over finding the cheapest option.
-
 **Why This Matters**: Lower prices attract procrastinators and deal-seekers who often create more problems. Premium prices attract guests who respect your property and have their act together.
-
-**Your Action Steps**:
 1. Price competitively but don't undercut the market dramatically
 2. Let calendars fill with advance bookings before adjusting
 3. Raise prices for remaining dates rather than discount
 4. Never panic-price to fill last-minute gaps
-
 ### Lesson 4: Build Systems Before Scaling
-
 **The Mistake**: Adding properties before operations can handle the workload.
-
 **What Gary Learned**: With 7+ properties, Gary relies heavily on automation. Before adding each new property, he ensures his systems can handle it. His goal is to scale to 20-30 properties per market with minimal additional effort—impossible without automation.
-
 **Why This Matters**: Airbnb hosting without systems burns you out at 2-3 properties. With the right automation, you can manage dozens while working fewer hours than a traditional job.
-
-**Your Action Steps**:
 1. Implement messaging automation before adding properties (Hospitable)
 2. Set up dynamic pricing that adjusts without your input (Price Labs)
 3. Coordinate cleaning teams through technology (Turno)
 4. Document your processes so they're repeatable
-
 ### Lesson 5: Understand the Arbitrage vs. Ownership Trade-off
-
 **The Mistake**: Putting significant capital improvements into properties you don't own.
-
 **What Gary Learned**: Gary buys properties (often with investor partners) because he invests heavily in custom improvements—drop ceilings, custom staircases, neon signs, photo booths, saunas. These investments wouldn't make sense if a landlord could reclaim the property after a lease term.
-
 **Why This Matters**: Arbitrage has lower barrier to entry but limited upside for improvements. Ownership requires more capital but allows transformative investments that command premium rates for years.
-
-**Your Action Steps**:
 1. If doing arbitrage, keep improvements modest and removable
 2. If buying, invest in transforming properties into unique experiences
 3. Consider partnerships with investors who provide capital while you provide expertise
 4. Match your improvement strategy to your ownership model
-
----
 
 ## Best Tools for Airbnb Arbitrage: Gary's Tech Stack
 

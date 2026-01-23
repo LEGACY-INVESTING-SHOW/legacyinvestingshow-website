@@ -256,14 +256,6 @@ When they found the right property, they closed in August 2023 and spent the nex
 
 Before committing, Pavi evaluated several critical factors:
 
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 **Pro Tip**: Pavi emphasizes the importance of working with a local realtor who understands STR regulations. In areas like the Poconos, where rules change frequently and vary by municipality, this local knowledge can make or break a deal.
 
 ---
@@ -292,17 +284,6 @@ Before committing, Pavi evaluated several critical factors:
 
 > "I got to know a lot of locals. We would go on a Friday, spend the whole weekend there, I would attend the church on Sunday. I got to know people and that's where I found my awesome cleaning team—my HVAC person is a member of the same church. I just got to know so many people. Now I felt more part of the community."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 2: Video Walk-Through System
 
@@ -324,17 +305,6 @@ Before committing, Pavi evaluated several critical factors:
 
 This system gives Pavi peace of mind despite managing from 2 hours away. She knows exactly what the property looks like before each guest walks in.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 3: Strict House Rules and Guest Screening
 
@@ -354,17 +324,6 @@ This system gives Pavi peace of mind despite managing from 2 hours away. She kno
 
 Pavi also learned an important lesson about exceptions: when she made an exception to her own rules once, she had a bad guest experience. The takeaway was simple—stick to your rules consistently.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 4: Neighbor Relationship Building
 
@@ -384,17 +343,6 @@ Pavi also learned an important lesson about exceptions: when she made an excepti
 
 > "My neighbors are so amazing. Because we have built that relationship, if there's any package sitting outside, she would just give me a call and say, 'Hey, there's a package sitting outside, would you like me to put it inside?' Very supportive."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 5: Local Business Partnerships
 
@@ -404,17 +352,6 @@ Pavi also learned an important lesson about exceptions: when she made an excepti
 
 **Pavi's Example**: She contacted a local fishing company and negotiated a unique offering for her guests. Stay at her property, and you get a special experience with the local fishing business. This creates a win-win: guests get something unique, the local business gets customers, and Pavi's listing stands out from competitors.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Pavi's Airbnb Results: The Numbers
 
@@ -444,12 +381,6 @@ Pavi also learned an important lesson about exceptions: when she made an excepti
 **Beyond Cash Flow—The Ownership Benefits**:
 
 Pavi emphasizes that cash flow is only part of the picture when you own the property:
-
-1. $1
-
-2. $1
-
-3. $1
 
 > "In addition to the revenue and cash flow, there's a whole piece about investing. Our property is getting appreciated over time—I was just looking and noticed my own property has appreciated in the last five months. And I was able to write off a lot of these expenses in upgrading the property from my taxes."
 
@@ -489,17 +420,6 @@ Her first cold call experience with the rude landlord who owned 180 Airbnbs coul
 
 > "There is no perfect time to do it. It's never easy, it's never meant to be easy. So just take actions and work hard and it will pay off."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 2: Your Cleaners Are Everything
 
@@ -511,19 +431,6 @@ Her first cold call experience with the rude landlord who owned 180 Airbnbs coul
 
 > "My cleaner literally called and was like, 'Oh don't worry about it, I already called a roofing guy and there's somebody who's going to come in with the material—she sent him the pictures—he's going to come in and fix it up on Friday.' It's just the convenience piece. Once you establish that trust, it goes a long way."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ### Lesson 3: Stick to Your House Rules
 
@@ -533,17 +440,6 @@ Her first cold call experience with the rude landlord who owned 180 Airbnbs coul
 
 **Why This Matters**: Rules aren't arbitrary restrictions—they're systems that protect your property, your neighbors, and your business. When you make exceptions, you undermine the entire system.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 4: Transform a Failed Airbnb into Success
 
@@ -555,19 +451,6 @@ By taking the time to build neighbor relationships, implement strict rules, inst
 
 **Why This Matters**: Failed Airbnbs are often available at better prices and in established STR-friendly areas. The previous owner's failure is often a management problem, not a property problem.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ### Lesson 5: Ownership Has Hidden Benefits
 
@@ -579,17 +462,6 @@ She acknowledges that arbitrage is excellent for building cash flow with less ca
 
 > "There is one piece about cash flow which is good, but then there's another piece about investing and building that portfolio and holding it for a longer term to get the benefits of appreciations and write-offs."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Best Tools for Airbnb Management: Pavi's Setup
 

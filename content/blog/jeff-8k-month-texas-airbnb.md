@@ -271,16 +271,6 @@ Jeff's discovery of Galveston came from personal experience. A year before purch
 
 Before purchasing, Jeff conducted thorough market research using the tools and techniques from Legacy Investing Show:
 
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
 > "She was showing me the price points that I would be looking at which was in between 380 and 460 because I did your mapping and it was the two to three bedroom that was the best sweet spot in that area because the percentages were lower than 25%. But I didn't want to get too big because they were just so expensive when you got up in that higher rooms."
 
 ---
@@ -333,19 +323,6 @@ Now, experience drives every decision. When guests walk in, they immediately see
 
 - Guests specifically mention the experience in reviews
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ### Strategy 2: Buying Below Market Value
 
@@ -356,16 +333,6 @@ Now, experience drives every decision. When guests walk in, they immediately see
 The key insight: even after paying for all the repairs and improvements, he would still have built-in equity. The property's value would increase from the work, meaning he started in a positive position from day one.
 
 **The Process**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
 
 **Jeff's Results with This Strategy**:
 
@@ -379,19 +346,6 @@ The key insight: even after paying for all the repairs and improvements, he woul
 
 > "We found a property that was $80,000 below price because it was as-is—they needed work on it. I got an inspector to come in and tell me all the things that he saw from a repair standpoint. My numbers showed I was at half the price it would take me to upgrade it, so I was already getting equity in the property even by putting money into it."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ### Strategy 3: Building Strong Team Relationships
 
@@ -425,19 +379,6 @@ Jeff inherited the cleaner who had worked the property before. She knew all the 
 
 > "I make sure she has all the supplies she needs all the time—she's well stocked on supplies, sheets, blankets. It makes a huge difference if you got good mattresses, that nice duvet. She's engaged now. She gets excited. I'm sending her 'hey, we're only one five-star away from Superhost—thank you so much for everything you're doing for us.' She wants the place to be nice too."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ### Strategy 4: Automated Communication Systems
 
@@ -471,19 +412,6 @@ Jeff inherited the cleaner who had worked the property before. She knew all the 
 
 > "I have all of my emails set up—automatic emails that you talked about being a big thing. They love it. They absolutely love it. They're always like 'thank you for the great communication, thank you for the quick response.' It's all on point and all my responses are with my wife Stella. It just gives that comfort. It all works—everything you're saying, it works."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ### Strategy 5: Conservative Investment Approach
 
@@ -505,19 +433,6 @@ Jeff inherited the cleaner who had worked the property before. She knew all the 
 
 > "I want to be a conservative investor when it comes to the properties. I don't want to take the chance and go too high on the value of a property thinking that it's always going to pay off if there's another crash. Looking at the line of the value—if it's gone up consistently over the last few years then I feel safe that if a market happens and goes down, I should still be okay."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ## Jeff's Airbnb Results: The Numbers
 
@@ -582,19 +497,6 @@ Now he sees properties that look gorgeous but have 4.3-star ratings. The differe
 
 > "Even the nicer homes—there's some really nice three-story million-dollar properties that are near us and they're at 4.3 rating and these places are gorgeous. Obviously they're not getting the service that they're looking for."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ### Lesson 2: Get Educated Before You Start
 
@@ -608,19 +510,6 @@ His assessment is straightforward: without the program, he wouldn't have achieve
 
 > "Get educated as much as you can. If I were to have jumped into this without spending time with your program learning from it, I wouldn't have gotten even my second month of $10K if it wasn't for going in your program. It was a steal from what I learned."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ### Lesson 3: Build Your Team Before You Need Them
 
@@ -634,19 +523,6 @@ The cleaner also connected him to handymen and other service providers. In short
 
 > "I have to rely on people down there that care enough to help out. Building those connections all around gets things going in the right direction."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ### Lesson 4: Learn from Market Cycles
 
@@ -660,19 +536,6 @@ His approach: look for properties with consistent appreciation over time, not su
 
 > "I was taking advantage of that 46% appreciation but I wasn't prepared for the fall. When that happened it really hurt me financially. Since 2008, I've gone by the old mindset of debt-free, make sure you have a clean mortgage."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ### Lesson 5: Take a Risk in Yourself
 
@@ -686,19 +549,6 @@ The shift came from understanding that calculated risk in yourself is different 
 
 > "You have to take a risk in yourself. If you don't take a risk in yourself then you're not going to be able to move forward. I don't think anyone who's successful of all time didn't take a risk in themselves to make those things happen."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ## Best Tools for Airbnb Success: Jeff's Tech Stack
 

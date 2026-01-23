@@ -258,16 +258,6 @@ After establishing his local market presence, Brian plans to expand into more pr
 
 Brian's property selection was specific to his market's appeal:
 
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
 **The Excitement Test**:
 
 Brian's most important criteria: Would he and his wife want to stay there? When they visited the property and didn't want to leave, he knew guests would feel the same way. That emotional response became his decision-maker.
@@ -298,17 +288,6 @@ The roadmap provided checklists for everything: getting the business bank accoun
 
 - No major mistakes or setbacks
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 2: Community Credibility for Landlord Pitches
 
@@ -338,17 +317,6 @@ This approach transforms the conversation from "trust me, a stranger" to "trust 
 
 - Built landlord confidence that led to a signed lease
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 3: Property That Excites You
 
@@ -368,17 +336,6 @@ This approach transforms the conversation from "trust me, a stranger" to "trust 
 
 > "When I was able to get them to the point where we could look at these properties in person, out of the three, one just got me really excited. I didn't want to leave the property. My wife and I wanted to buy the property and stay there. I thought, okay, that's the type of place I want to put on the market as a short-term rental, because if I'm excited about it, it's going to be an easy sell on Airbnb."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 4: Listen to Guest Feedback
 
@@ -398,17 +355,6 @@ Brian's philosophy: when a guest requests something reasonable, say "yes" and bu
 
 > "We've had guests that asked if there was a crib or a child gate and we just said yes, went out and bought it. This is a four bedroom house catered to families, so it's going to be good to have those things and be able to say yes to future guests."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Brian's Airbnb Arbitrage Results: The Numbers
 
@@ -486,109 +432,32 @@ Brian's philosophy: when a guest requests something reasonable, say "yes" and bu
 
 **Why This Matters**: Many aspiring hosts spend months in analysis paralysis, researching endlessly, or trying to create their own approach. Brian went from joining the program to cash flow positive in under 90 days by trusting the process.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 ### Lesson 2: Community Support Is Essential
-
 **The Mistake**: Trying to figure everything out alone or lying to landlords about experience.
-
 **What Brian Learned**: When facing the moment of signing a lease - the biggest commitment in the arbitrage process - Brian needed someone to review his numbers and validate his decision. Having community members look at the market, assess the property, and give a "thumbs up" provided the confidence boost he needed.
-
 Beyond decision support, Brian used the community as credibility for landlord pitches. Instead of lying about his experience or making unsubstantiated promises, he could honestly say he was part of a team with proven results and show evidence.
-
 > "That was the big step - I had done all the research and made phone calls, not a big deal there. But then when you're about to sign a lease, you're like, 'Man, am I about to do the right thing?' Just having someone else there to look through your numbers, look at the market, do their own assessment, and then say 'thumbs up, I think this is a solid property, if it was me I'd go for it' - that just gave me the boost that I needed."
-
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 ### Lesson 3: Short-Term Rentals Can Be Better Than Long-Term
-
 **The Mistake**: Assuming short-term rentals are more work than they're worth compared to traditional rentals.
-
 **What Brian Learned**: Brian's long-term rental experience taught him that tenant turnover every 1-3 years creates significant work. With short-term rentals, professional cleaning after every guest actually prevents the accumulation of issues he dealt with in long-term properties.
-
 **Key differences Brian observed**:
-
 - **Payment timing**: Short-term guests pay before arriving; long-term tenants sometimes pay late
-
 - **Property condition**: Regular professional cleaning prevents long-term damage
-
 - **Guest quality**: Properly vetted short-term guests often treat properties better than long-term tenants
-
 - **Cash flow**: Higher potential with short-term rentals
-
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 ### Lesson 4: Start Local, Then Expand
-
 **The Mistake**: Trying to set up properties remotely before understanding the hands-on aspects of the business.
-
 **What Brian Learned**: Brian intentionally started with a property close to home so he could be hands-on with staging, photography, and the initial guest experience. This let him learn the business thoroughly before attempting remote management.
-
 Starting local also let him build relationships with cleaners, handymen, and other service providers. Now he can add more properties in the same market efficiently, leveraging the infrastructure he's already built.
-
 > "I really appreciate the advice and guidance you give on remote setup. For me personally, I just wanted to be really hands-on with my very first property. I wanted to be there, I wanted to stage it, I wanted to see what things were looking like from beginning to end."
-
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 ### Lesson 5: Automation Is Key
-
 **The Mistake**: Managing everything manually and burning out on guest communication.
-
 **What Brian Learned**: By following the automation strategies in the roadmap, Brian manages his property with just 1-2 hours per week. Automated messages handle most guest communication, and he only steps in for special questions or unique situations.
-
 The automation Brian implemented:
-
 - **Automated messaging**: Welcome messages, check-in instructions, and follow-ups
-
 - **Professional cleaning**: Scheduled automatically after each checkout
-
 - **Guest notifications**: New booking alerts that trigger automated workflows
-
 **Why This Matters**: Without automation, Brian couldn't run this business alongside his full-time IT job. The systems make it possible to host while working 40+ hours per week.
-
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Best Tools for Airbnb Arbitrage: Brian's Tech Stack
 

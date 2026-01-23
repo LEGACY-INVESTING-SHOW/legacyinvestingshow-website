@@ -298,16 +298,6 @@ St. Simons Island, Georgia serves as a vacation destination for a specific demog
 
 > "A lot of people were very actually open to it surprisingly. You think at first like the idea of subletting someone else's house is going to be a kind of hard pill to swallow. A lot of these people are just like look, as long as I'm getting guaranteed revenue from this, it's not that big of a deal."
 
-**How to Implement This Strategy:**
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 ---
 
 ### Strategy 2: Remote Property Operation
@@ -322,16 +312,6 @@ The critical success factor was building his team through referrals. Every clean
 
 > "Everybody I have on my team came from a referral from another operator or several operators actually. And that team is who I absolutely trust with my property because I'm not there, so I can't see it. If something goes wrong I need to have people I can rely on to get over there and handle it."
 
-**How to Implement This Strategy:**
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 ---
 
 ### Strategy 3: Professional Photography Investment
@@ -345,18 +325,6 @@ The critical success factor was building his team through referrals. Every clean
 > "After I posted those I got three bookings. Photography sells these things and so don't skip on your photos for sure."
 
 The twilight shots with string lights transformed how the pool area looked in the listing. This visual upgrade directly translated to bookings - three reservations came in shortly after posting the new photos.
-
-**How to Implement This Strategy:**
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
 
 ---
 
@@ -381,16 +349,6 @@ The twilight shots with string lights transformed how the pool area looked in th
 - Multiple other premium features
 
 This combination means the property appears when guests filter for large groups, pool properties, hot tub properties, or any combination. The higher the guest capacity and the more rare amenities, the more revenue potential and the less direct competition.
-
-**How to Implement This Strategy:**
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
 
 ---
 
@@ -457,16 +415,6 @@ Rob's results show significant month-over-month growth. Revenue increased from $
 
 **Why This Matters:** Information without action is worthless. The course provided Rob with everything he needed to know, but knowledge alone doesn't generate income. Only when he started making calls and pursuing properties did his business begin to take shape.
 
-**Your Action Steps:**
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 ---
 
 ### Lesson 2: It's a Numbers Game
@@ -479,16 +427,6 @@ Rob's results show significant month-over-month growth. Revenue increased from $
 
 > "If you've been in sales like Preston and myself, you know the more people you reach out to, eventually you're gonna get a yes. So I just kept calling until I refined my pitch and it finally just clicked."
 
-**Your Action Steps:**
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 ---
 
 ### Lesson 3: Build and Trust Your Team
@@ -498,16 +436,6 @@ Rob's results show significant month-over-month growth. Revenue increased from $
 **What Rob Learned:** Remote operation requires trusting other people. You can't be everywhere at once, so you need reliable team members who can handle issues when they arise. The key is hiring through referrals from other successful operators who have already vetted these service providers.
 
 **Why This Matters:** Your team makes or breaks remote operation. A bad cleaner can tank your reviews. A reliable handyman can save your guest experience when problems arise. Building your team through referrals from other hosts ensures you're hiring people who already understand short-term rental operations.
-
-**Your Action Steps:**
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
 
 ---
 
@@ -521,16 +449,6 @@ Rob's results show significant month-over-month growth. Revenue increased from $
 
 **Why This Matters:** You don't have to reinvent the wheel. Almost every challenge you'll face has been solved by someone else. Communities accelerate your learning curve and help you avoid costly mistakes.
 
-**Your Action Steps:**
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 ---
 
 ### Lesson 5: Learn to Handle Curveballs
@@ -542,16 +460,6 @@ Rob's results show significant month-over-month growth. Revenue increased from $
 > "You get curveballs thrown at you and they're really not that big of a deal. You eventually just find ways to work through them. So when it pops up again, it's oh hey, we've been there, done that."
 
 **Why This Matters:** The fear of problems often stops people from starting. But problems are manageable, especially once you've solved them before. Each curveball you handle builds your operational playbook for the future.
-
-**Your Action Steps:**
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
 
 ---
 

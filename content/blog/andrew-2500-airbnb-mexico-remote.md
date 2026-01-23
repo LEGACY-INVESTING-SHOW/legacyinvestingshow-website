@@ -277,16 +277,6 @@ Operating in Mexico as a US citizen created unique challenges that domestic arbi
 
 Despite the challenges, Andrew conducted thorough due diligence before committing:
 
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
 > "Air DNA was helpful although it's not as complete in some of those markets as it would be here in the US. But that was a big tool that helped me narrow down whether it was a profitable market to access."
 
 ---
@@ -311,17 +301,6 @@ Andrew's search started with Facebook groups focused on Airbnb arbitrage connect
 
 - Built network of local contacts for future expansion
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 2: Building a Trusted Boots-on-the-Ground Team
 
@@ -341,17 +320,6 @@ Andrew's search started with Facebook groups focused on Airbnb arbitrage connect
 
 - Operations run smoothly despite being in different country
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 3: Leveraging Emerging Market Opportunities
 
@@ -371,17 +339,6 @@ The strategy involves two phases: secure positive cash flow today (Andrew's $1,5
 
 > "The market is about to really pick up because they're adding this International Airport that will allow direct flights in there. That's where I'm looking at strong year two because of the things that market has, it's poised to really take off."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 4: Negotiating with Knowledge and Confidence
 
@@ -399,17 +356,6 @@ The strategy involves two phases: secure positive cash flow today (Andrew's $1,5
 
 - Established relationship as a serious operator, not a hobbyist
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Andrew's International Airbnb Results: The Numbers
 
@@ -474,17 +420,6 @@ The property management team handles guest communication. The cleaning team main
 
 > "Once you get through that and you find out there's a lot of things that maybe I was more worried about than I should have been. I've built a lot more confidence where I could do that without a property management company now."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 2: Education Builds Credibility and Confidence
 
@@ -496,17 +431,6 @@ When he approached his Tulum property manager, Andrew demonstrated detailed unde
 
 **Why This Matters**: Without education, there are too many bad actors who can take advantage of unprepared operators. Knowledge protects you and helps you build credibility with partners.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 3: Understand Seasonal Markets Before Committing
 
@@ -518,17 +442,6 @@ The seasonality also runs counter to US patterns. When American vacation destina
 
 **Why This Matters**: Seasonal markets can be highly profitable, but require understanding the patterns before committing. Year one returns might look modest if you're learning the rhythms.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 4: Look for Market Catalysts
 
@@ -538,17 +451,6 @@ The seasonality also runs counter to US patterns. When American vacation destina
 
 **Why This Matters**: The best investments combine positive cash flow today with growth potential tomorrow. Andrew locked in his property before airport-driven demand increases materialize.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 5: Match Your Strategy to Your Strengths
 
@@ -560,17 +462,6 @@ The seasonality also runs counter to US patterns. When American vacation destina
 
 **Why This Matters**: The best business opportunities align with your existing knowledge, skills, and interests. Andrew could have pursued many entrepreneurial paths, but hospitality-adjacent businesses let him leverage 15 years of accumulated expertise.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Best Tools for International Airbnb Arbitrage: Andrew's Tech Stack
 

@@ -233,19 +233,6 @@ The opportunity came when he found a 4,000 square foot house on Zillow where the
 
 > "If you only look at it through the lens of 'why would a landlord let me use their property as an Airbnb' as a negative aspect, you're never going to come out ahead. You have to go into it with - how do I create a win-win for me and the landlord?"
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ### Strategy 2: Remote Property Setup
 
@@ -267,19 +254,6 @@ The opportunity came when he found a 4,000 square foot house on Zillow where the
 
 > "Once you do it, it's like - I can do this anywhere. It might be a little jarring but you've got FedEx tracking, you know where stuff is. Set up the Ring cameras so you can make sure things are coming in accordingly. It's not hard."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ### Strategy 3: Automation Through Guesty
 
@@ -299,17 +273,6 @@ The opportunity came when he found a 4,000 square foot house on Zillow where the
 
 > "Could not possibly run this business without it. You don't have time to sit there and send a million messages to guests. The day they check in it turns the code on live so I'm not somewhere tied up where someone's knocking on the door."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 4: Turnkey Property Hunting
 
@@ -416,17 +379,6 @@ The building's condo association wasn't initially favorable to short-term rental
 
 **Why This Matters**: Many people in the Legacy Investing Show program analyze hundreds of properties but never pick up the phone. They're waiting for certainty that will never come. Meanwhile, people like Rob who take imperfect action build six-figure businesses.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 2: Frame Everything as Win-Win
 
@@ -438,17 +390,6 @@ The first landlord Rob called literally "chewed him up and spit him out" about p
 
 **Why This Matters**: Your sales approach determines your success rate. Rob can call five landlords and get at least one or two interested. That conversion rate compounds over time into a portfolio.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 3: Build Your Team Through Referrals
 
@@ -458,17 +399,6 @@ The first landlord Rob called literally "chewed him up and spit him out" about p
 
 **Why This Matters**: One good team member can unlock your entire local network. Instead of vetting dozens of providers, you get pre-vetted recommendations from someone already succeeding in that market.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 4: Invest in Professional Photography
 
@@ -490,17 +420,6 @@ Rob found his photographer by Googling "Airbnb photographer Louisville Kentucky.
 
 > "People are just going by the pictures, and if your pictures suck, they're not clicking it."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 5: Keep Your Eyes Open for Opportunity
 
@@ -512,17 +431,6 @@ Sometimes the best deals aren't the ones you're hunting for - they're the ones t
 
 **Why This Matters**: Rob's willingness to act on unexpected opportunities contributed to his rapid scaling. Within one year, he went from zero to three properties, building momentum that compounds over time.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Best Tools for Airbnb Arbitrage: Rob's Tech Stack
 

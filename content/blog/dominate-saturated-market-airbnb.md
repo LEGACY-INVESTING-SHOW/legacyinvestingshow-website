@@ -313,17 +313,6 @@ Medical families have specific needs that most Airbnb hosts don't consider. They
 
 > "That's one of the views that my guests told me, it feels home away from home. And I feel like that's what I want for my properties to feel like, it's not just like a place that I just bought so I can make money off of it, it's also my home that I'm willing to share."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 2: The Empathetic Landlord Pitch
 
@@ -343,17 +332,6 @@ The landlord had previously rented the townhouse to families with children due t
 
 - Foundation of trust for potential future properties
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 3: Home Away from Home Design
 
@@ -385,17 +363,6 @@ Sunny invested in professional photography, recognizing that first impressions d
 
 > "Main point one is yes, always get the photos professionally done. I furnished this way just by scrolling through all the websites, different websites, with the vision that this is a very homely vibe so that when people are visiting they're not overblown with a bunch of different designs."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 4: Dynamic Pricing for Event Capture
 
@@ -417,17 +384,6 @@ The Taylor Swift concert story illustrates this perfectly. Sunny noticed certain
 
 - Prevents underpricing during high-demand periods
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Sunny's Airbnb Arbitrage Results: The Numbers
 
@@ -498,17 +454,6 @@ The more success you have, the more you realize you should have started sooner. 
 
 **Why This Matters**: Analysis paralysis kills more real estate careers than bad deals. You'll never have perfect information. The people who succeed are those who start with imperfect knowledge and learn as they go.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 2: Leverage Your Existing Knowledge
 
@@ -520,17 +465,6 @@ Every career teaches transferable skills. Customer service experience helps with
 
 **Why This Matters**: Your unique background is a competitive advantage. Instead of trying to learn everything from scratch, leverage what you already know to identify opportunities others miss.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 3: Build Community First
 
@@ -542,17 +476,6 @@ Every career teaches transferable skills. Customer service experience helps with
 
 **Why This Matters**: Community provides accountability, knowledge sharing, and motivation. When challenges arise, having people who understand the journey makes all the difference.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 4: Be Honest with Landlords
 
@@ -566,17 +489,6 @@ The landlord will find out eventually. Starting the relationship on a lie ensure
 
 **Why This Matters**: Long-term success requires sustainable relationships. Landlords who trust you may become partners in future deals. Those who feel deceived will never work with you again.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 5: Quality Over Quantity
 
@@ -590,17 +502,6 @@ More importantly, quality properties create better guest experiences, leading to
 
 **Why This Matters**: Quality compounds. Great reviews attract more bookings. Premium experiences justify premium prices. Happy guests become repeat customers. This creates a virtuous cycle that's impossible with quantity-focused approaches.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Best Tools for Airbnb Arbitrage: Sunny's Tech Stack
 

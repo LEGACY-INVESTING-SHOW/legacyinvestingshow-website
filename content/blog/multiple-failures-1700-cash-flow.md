@@ -307,17 +307,6 @@ Christopher emphasizes that this is truly a numbers game. Eventually, you will f
 
 > "It's really a numbers game. Eventually you are going to get somebody that you can work with that is going to say yes. So it's kind of just getting over that hump."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 2: Building Rapport Before the Pitch
 
@@ -337,17 +326,6 @@ Christopher evolved from going straight into his pitch (which felt robotic) to l
 
 > "I didn't really go straight into like hey this is what I want to do—I was kind of starting to build rapport with these people. Hey the house is incredible, it looks incredible, the yard is great, beautiful home by the way, just kind of building a little bit of rapport."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 3: Removing Emotions from Numbers
 
@@ -367,17 +345,6 @@ When Christopher found properties he loved, the temptation was to fudge the numb
 
 > "You start getting excited and then the numbers just don't work and you gotta take your feelings out of it. That's what it comes down to—it comes down to the numbers and this is a business."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 4: Differentiating Through Rare Amenities
 
@@ -397,17 +364,6 @@ Beyond the pool, Christopher invested in differentiation through decor (boho the
 
 > "We definitely want to hone in on this one and lock this one down and make sure we know exactly what we're doing. We're looking at the competition—that's a big thing—see what's working for them, kind of go off of that, take bits of it, put it in yours."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 5: Community Integration and Local Partnerships
 
@@ -429,17 +385,6 @@ He also hosted a grill-out for the neighbors. Some came over, met him and his fi
 
 > "I was like the main thing is I want to give my guests a great experience. I want to improve the area, I want to be a part of the community. I want all of us to come together, work together. And when I explained it like that they were more than happy."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Christopher's Airbnb Arbitrage Results: The Numbers
 
@@ -533,99 +478,27 @@ But that hard work compounded. By call 50, he was significantly better than on c
 
 > "Hard work beats out talent most of the time. A lot of us people, we're just not necessarily skilled in talking to people. But repetition—doing it over and over and over—you're gonna develop the skill."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 ### Lesson 2: You Never Fail, You Only Learn
-
 **The Mistake**: Viewing failed deals and rejections as personal failures.
-
 **What Christopher Learned**: Every rejection taught him something. Hang-ups showed him his opening needed work. Deals that fell through on numbers taught him to analyze earlier. Landlords who wanted premiums taught him which types to avoid.
-
 Christopher reframed every setback as a lesson. Instead of getting discouraged by the couple who wanted to work with him but whose numbers didn't work, he learned to qualify deals earlier and not get emotionally attached before analysis.
-
 **Why This Matters**: The people who quit do so because they interpret failures as signs they shouldn't continue. The people who succeed interpret failures as steps in the process.
-
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 ### Lesson 3: Make the Script Your Own
-
 **The Mistake**: Reading a script word-for-word and sounding like a robot.
-
 **What Christopher Learned**: The provided scripts are starting points, not final products. Christopher's first call was robotic because he read the script verbatim. Through practice and real calls, he learned which parts resonated and which fell flat. He started building rapport first, leading with security benefits, and adapting his language to each conversation.
-
 **Why This Matters**: Landlords can tell when you're reading a script. Natural conversation builds trust; robotic pitches create suspicion. The script gives you the what to say; you develop the how.
-
 > "From my first call to within the middle to the end, I started realizing like what people like to hear. I never started out with just like hey this is what I'm gonna do—I would kind of give them some of the securities first."
-
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 ### Lesson 4: The Numbers Don't Lie
-
 **The Mistake**: Letting excitement about a property override financial analysis.
-
 **What Christopher Learned**: Christopher and his fiance got excited about several properties before the numbers killed the deals. A beautiful home with the wrong rent-to-revenue ratio will lose money no matter how much you like it. A landlord wanting premium rent will destroy your margins regardless of their friendliness.
-
 The discipline to walk away from attractive-looking deals is what separates successful arbitrage operators from those who lose money.
-
 **Why This Matters**: Airbnb arbitrage is a business, not a hobby. Businesses survive on margins, not aesthetics. Falling in love with properties before analyzing numbers is the fastest path to failure.
-
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 ### Lesson 5: A Supportive Partner Changes Everything
-
 **The Mistake**: Trying to build a business without support from the people closest to you.
-
 **What Christopher Learned**: Christopher's fiance was there from the beginning—watching videos together, discussing the opportunity, encouraging him through rejections, helping set up the property. When he came home after a day of nothing but nos, she was there to lift him up.
-
 For those without a supportive spouse, Christopher points to the Legacy Investing Show community as providing similar encouragement. Seeing others go through the same struggles and achieve success keeps you motivated when things get hard.
-
 **Why This Matters**: Entrepreneurship is lonely. Having someone who believes in you during the hard times—whether a spouse, friend, or community—can be the difference between quitting and breaking through.
-
 > "A support system is in my opinion the most important—to have those people, like-minded people. You're seeing what they're going through, they're seeing what you're going through, and you just pick and choose and benefit each other."
-
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Best Tools for Airbnb Arbitrage: Christopher's Setup
 
@@ -719,16 +592,6 @@ Christopher tried watching various YouTube videos before joining Legacy Investin
 Knowledge without action produces nothing. Christopher emphasizes that you have to make the calls, even when they're uncomfortable.
 
 **Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
 
 Christopher made at least 50-70 calls. Many people won't make 10. The ones who succeed are the ones who keep dialing.
 

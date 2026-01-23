@@ -268,16 +268,6 @@ Michael and his wife chose Merritt Island, Florida to be near their rocket scien
 
 Before committing to any property, Michael emphasizes thorough research. His approach identifies common mistakes that waste time and money.
 
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
 > "You could be calling all these places, the owner will say 'great', then you find out the town doesn't allow it or they have 30 day minimums. What are you going to do? You've already signed a lease with the landlord."
 
 **Pro Tip**: Michael recommends targeting standalone homes or townhomes in neighborhoods that explicitly allow short-term rentals. Condominiums frequently have HOA restrictions that make arbitrage impossible.
@@ -306,17 +296,6 @@ Before committing to any property, Michael emphasizes thorough research. His app
 
 - Landlords respond positively to serving healthcare workers
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 2: Hunter Mentality and Persistence
 
@@ -334,19 +313,6 @@ Before committing to any property, Michael emphasizes thorough research. His app
 
 - 60% closing ratio developed through repetition
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ### Strategy 3: ROI-Based Investment Analysis
 
@@ -366,17 +332,6 @@ Before committing to any property, Michael emphasizes thorough research. His app
 
 > "A lot of entrepreneurs and Airbnb people tend to leave that out. They say 'oh I own it so I don't pay a mortgage.' Yeah but you don't realize because you're not paying a mortgage that money should be making you some kind of money."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Michael's Airbnb Arbitrage Results: The Numbers
 
@@ -423,17 +378,6 @@ Before committing to any property, Michael emphasizes thorough research. His app
 
 > "Add up the hours. Who here sleeps eight hours? Not me, I'd be lucky to get six. But let's say I slept eight and then you work eight hours. That's 16 hours. What do you do with the other eight hours? Cut that screen time in half and dedicate it to going in Zillow."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 2: Be a Hunter, Not a Gatherer
 
@@ -443,17 +387,6 @@ Before committing to any property, Michael emphasizes thorough research. His app
 
 **Why This Matters**: Most people in the program who struggle aren't facing a broken business model. They're facing a volume problem. Three calls isn't enough data. Twenty calls starts revealing patterns and improving your pitch.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 3: Teaching Financial Literacy Early
 
@@ -467,17 +400,6 @@ How could children earn this? Through an invoice system where every activity had
 
 **Why This Matters**: Both children were hired 6-8 months before graduating college. They understand that nothing is perfect, that budgets require living on 40% of income so you have reserves if circumstances change. This wasn't accidental. It was designed through early, consistent teaching.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 4: Don't Give Up After Three Calls
 
@@ -489,17 +411,6 @@ Each call improves your pitch. Like AI that learns faster with more data, salesp
 
 **Why This Matters**: Airbnb arbitrage is fundamentally a sales business. You're selling landlords on a proposition. Sales requires volume, iteration, and resilience. Three rejections isn't evidence of a broken business. It's evidence of a normal sales process.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 5: Invest in Yourself First
 
@@ -511,17 +422,6 @@ Each call improves your pitch. Like AI that learns faster with more data, salesp
 
 **Why This Matters**: Even with substantial resources, Michael recognized that buying a blueprint beats building one from scratch. The program provides scripts, systems, and community support that accelerate results. For someone without Michael's resources, this shortcut is even more valuable.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Best Tools for Airbnb Arbitrage: Michael's Tech Stack
 

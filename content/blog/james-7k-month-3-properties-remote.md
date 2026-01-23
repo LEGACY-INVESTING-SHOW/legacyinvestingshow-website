@@ -453,67 +453,40 @@ James is also considering purchasing properties outright. With arbitrage cash fl
 
 > "The goal-setting was big... if I didn't set those goals, I would have kind of just maybe like a lot of people, they come join, they get excited with the whole thing, but once they join they're like 'oh there's more work than I thought' and the motivation dies down."
 
-**Your Action Steps**:
 1. Set a specific launch date (not "soon"—pick a calendar date)
 2. Break it into weekly milestones
 3. Write it down where you'll see it daily
 4. Track progress in a spreadsheet or CRM
-
 ### Lesson 2: Don't Mistake Education for Action
-
 **The Mistake Others Make**: Consuming content endlessly—videos, courses, podcasts—without implementing
-
 **What James Did**: Learned a little, then applied it. Called landlords before feeling "ready." Signed a lease while still learning.
-
 **Why This Matters**: You learn more from one real conversation than ten hours of video content. Action reveals what you actually need to know next.
-
 > "You can learn all you want... you're never going to learn enough. But once you really jump into it, that's when everything happens."
-
-**Your Action Steps**:
 1. Set a knowledge deadline: "After X hours of training, I start calling"
 2. Make your first calls before you feel ready
 3. Learn from rejections—they teach better than courses
 4. Ask yourself: "What action am I avoiding by 'learning more'?"
-
 ### Lesson 3: Be Completely Honest with Landlords
-
 **The Mistake Others Make**: Fabricating experience or credentials to seem more qualified
-
 **What James Did**: Admitted upfront he was a first-time operator, explained his support system, and promised reliable payment
-
 **Why This Matters**: Honesty builds trust. Landlords aren't just evaluating your experience—they're evaluating your character. Someone honest about weaknesses will be honest about problems.
-
-**Your Action Steps**:
 1. Never lie about experience—it backfires
 2. Explain your training, systems, and support network
 3. Emphasize what you CAN promise: on-time rent, communication, property care
 4. Let your character sell when credentials can't
-
 ### Lesson 4: Find Cleaners First, Build Team Through Referrals
-
 **The Mistake Others Make**: Trying to build an entire team from scratch, vetting each person separately
-
 **What James Did**: Found one reliable cleaner, then asked for referrals to handymen, contractors, and other service providers
-
 **Why This Matters**: Good people know good people. One strong connection unlocks an entire network. Plus, referrals come with built-in accountability—the referrer's reputation is on the line.
-
-**Your Action Steps**:
 1. Start team-building with cleaners (they're most critical)
 2. Use response speed as a reliability indicator
 3. Ask every good hire: "Who else do you recommend?"
 4. Build your team through relationships, not job boards
-
 ### Lesson 5: The Four-Minute Mile Effect
-
 **The Mindset Shift**: Once you prove something is possible, it becomes easier to replicate
-
 James' first property took 57 days and 20-30 landlord calls. His second property came almost immediately after—the confidence and skills transferred. His third property took just 30 days from search to launch.
-
 **Why This Matters**: Your first deal is always the hardest. Every deal after benefits from proven scripts, established confidence, and demonstrated success.
-
 > "Before no one thought it was possible, once someone did it everyone started doing it... once you know it's possible, once you get comfortable with the whole process, it just makes it so much easier."
-
----
 
 ## Tools & Systems: James' Tech Stack
 

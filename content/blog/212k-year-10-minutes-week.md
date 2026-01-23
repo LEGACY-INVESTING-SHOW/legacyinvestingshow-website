@@ -209,14 +209,6 @@ Yes, the interest rate was 9.25%—I know, it's high. But I negotiated for the s
 
 The entire property was set up without me ever visiting in person. Here's how that worked:
 
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 The key insight: you don't need to be physically present to manage quality. With the right team and clear communication systems, remote setup works perfectly.
 
 ---
@@ -284,14 +276,6 @@ The money I spent on interior design and amenities was strategically chosen to p
 
 **How to Implement**:
 
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 ---
 
 ### Strategy 2: Boots-on-Ground Team
@@ -311,14 +295,6 @@ The money I spent on interior design and amenities was strategically chosen to p
 The cleaning cost of $295 per turnover might seem high, but I pass this directly to guests through the cleaning fee. It's a neutral expense that ensures professional-quality cleans every time.
 
 **How to Build Your Team**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
 
 ---
 
@@ -361,18 +337,6 @@ This might seem like a lot, but consider the return: $710 average nightly rate a
 **Why it works**: Instead of buying properties, you lease them from landlords and operate them as short-term rentals. You become a "second landlord" without the mortgage debt or down payment requirements.
 
 **How the Bridge Method Works**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
-6. $1
 
 **Startup Costs (Bridge Method)**:
 
@@ -454,17 +418,6 @@ A 52% cash-on-cash return is exceptional by any real estate standard. Traditiona
 
 > "This is the power of creating automation and also delegation processes within a short-term rental so you can spend your time doing what you love and not create a second job for yourself."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 2: Remote Setup is Possible
 
@@ -474,17 +427,6 @@ A 52% cash-on-cash return is exceptional by any real estate standard. Traditiona
 
 **Why This Matters**: Geographic limitations disappear. You can invest in the most profitable markets regardless of where you live. Virginia made sense for this property—I don't live there, but the returns justified the investment.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 3: Differentiation Beats Competition
 
@@ -496,17 +438,6 @@ A 52% cash-on-cash return is exceptional by any real estate standard. Traditiona
 
 > "What I did additionally to differentiate myself was looking at nearby properties, seeing what they have and what they don't have, and seeing how I can improve that in a better way for my guests."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 4: New Construction Reduces Headaches
 
@@ -516,17 +447,6 @@ A 52% cash-on-cash return is exceptional by any real estate standard. Traditiona
 
 **Why This Matters**: Maintenance issues cause guest complaints, emergency calls, and endless headaches. New construction eliminates most of this friction, supporting the passive management model.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 5: Invest in Design
 
@@ -536,17 +456,6 @@ A 52% cash-on-cash return is exceptional by any real estate standard. Traditiona
 
 **Why This Matters**: In a visual marketplace like Airbnb, design is marketing. Your listing photos are your first impression. A $5,000 furniture budget looks like a $5,000 furniture budget. Guests can tell.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Tools and Systems Used
 
@@ -588,14 +497,6 @@ $600/month per VA is competitive for experienced property management assistants.
 
 What do I actually do in those 10 minutes?
 
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 That's it. The systems handle everything else.
 
 ---
@@ -617,22 +518,6 @@ Here's the approach that works:
 There's more that goes into the full conversation, but that's the general framework. You're not asking for permission to "do Airbnb"—you're presenting yourself as a professional vacation rental operator who will take better care of their property than a traditional tenant.
 
 ### Bridge Method Step-by-Step
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
-6. $1
-
-7. $1
-
-8. $1
 
 ### Common Roadblocks
 

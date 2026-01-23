@@ -302,16 +302,6 @@ Micah studied his market carefully to set realistic expectations:
 
 Before committing, Micah used a systematic approach:
 
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
 **Pro Tip**: Don't let perfect be the enemy of good. Micah spent 6 weeks in analysis paralysis, repeatedly researching the same areas. Once he committed to trusting the numbers, everything accelerated.
 
 ---
@@ -340,19 +330,6 @@ For Micah specifically, this approach eliminated his biggest barrier: phone anxi
 
 > "Being like an introvert slash shy and all that stuff, this one was an easier thing to do because it's over call or like the listing I got—that was through Facebook—so I didn't even have to know talk to the person over the phone."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ### Strategy 2: Professional Design on a Budget
 
@@ -382,19 +359,6 @@ Micah hired a friend with a degree in interior design. Almost everything came fr
 
 - **Outdoor space**: Fire pit, pool accessories, cornhole set, cafe lights, deck furniture
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ### Strategy 3: Network-Based Team Building
 
@@ -414,17 +378,6 @@ Micah hired a friend with a degree in interior design. Almost everything came fr
 
 > "I'm just a networker too, like when it comes to business stuff. Everyone I did for—handyman, cleaners, the photographer, interior designer—all those people were who I've networked with over the last year or two years."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Micah's Airbnb Arbitrage Results: The Numbers
 
@@ -493,17 +446,6 @@ The result? The property wasn't cleaned when Micah took possession. The landlord
 
 > "My big thing is like if I could go back, I get everything, everything in writing, everything in the contract."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 2: Verify the Property Yourself
 
@@ -515,17 +457,6 @@ The result? The property wasn't cleaned when Micah took possession. The landlord
 
 **Why This Matters**: Landlords aren't necessarily trying to deceive you, but they may not know about every issue. What seems "fine" to them might be a problem for a short-term rental operation with guests expecting everything to work perfectly.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 3: Control Your Maintenance Team
 
@@ -537,17 +468,6 @@ The result? The property wasn't cleaned when Micah took possession. The landlord
 
 **Why This Matters**: In short-term rentals, speed matters. A broken amenity affects every guest until it's fixed. Slow contractors cost you reviews and bookings.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 4: Invest in Design Help
 
@@ -557,17 +477,6 @@ The result? The property wasn't cleaned when Micah took possession. The landlord
 
 **Why This Matters**: Airbnb is a visual platform. Guests scroll through dozens of listings before clicking. Professional design—even on a budget—separates you from amateur-looking listings.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 5: Just Start
 
@@ -579,17 +488,6 @@ The result? The property wasn't cleaned when Micah took possession. The landlord
 
 > "I had to trust that if the numbers are there, you just do it... at the end of the day, I just had to make a conscious decision no matter how scary it was or risky I thought it was or whatever the other excuses or reasons were—I just had to go."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Best Tools for Airbnb Arbitrage: Micah's Tech Stack
 

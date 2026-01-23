@@ -289,17 +289,6 @@ The lesson applies broadly: don't limit yourself to one platform. Vrbo, booking.
 
 > "I think you need to use every platform available because there are good seasons, bad seasons, and so I just incorporate different platforms."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 2: Event Space Monetization
 
@@ -321,17 +310,6 @@ The Florida property is particularly suited for this because of the pool, great 
 
 - Ability to maintain personal use while still monetizing spaces
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 3: Self-Management Excellence
 
@@ -345,17 +323,6 @@ The time investment is minimal once systems are in place. Kamari estimates appro
 
 > "Unfortunately I had to dismiss them and go back to training my people with my system and then we went back to Superhost."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Kamari's Airbnb Results: The Numbers
 
@@ -422,17 +389,6 @@ The time investment is minimal once systems are in place. Kamari estimates appro
 
 **Why This Matters**: Most buyers see a home and evaluate it for living. House hackers see a home and evaluate it for living plus earning. This fundamental shift in perspective is what separates those who build portfolios from those who just buy houses.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 2: Don't Over-Rely on Property Management Companies
 
@@ -442,17 +398,6 @@ The time investment is minimal once systems are in place. Kamari estimates appro
 
 **Why This Matters**: Property managers handle many properties. Yours becomes one of many, losing the personal attention that earns five-star reviews. Self-management with good tools often delivers better results in less time than you'd expect.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 3: Diversify Your Income Streams
 
@@ -462,17 +407,6 @@ The time investment is minimal once systems are in place. Kamari estimates appro
 
 **Why This Matters**: Single-platform dependency is risky. Algorithm changes, policy updates, or seasonal shifts can devastate income overnight. Diversification provides stability.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 4: Leverage DIY Skills to Reduce Costs
 
@@ -482,17 +416,6 @@ The time investment is minimal once systems are in place. Kamari estimates appro
 
 **Why This Matters**: Renovation costs make or break investment returns. Properties that need work are often undervalued precisely because most buyers can't or won't do the work themselves. If you can, you access deals others avoid.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 5: Take Action Rather Than Waiting for Perfect Conditions
 
@@ -504,17 +427,6 @@ The time investment is minimal once systems are in place. Kamari estimates appro
 
 > "I would say to go for it. I mean, you won't achieve anything just sitting on the sidelines."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Best Tools for Airbnb Management: Kamari's Tech Stack
 
@@ -583,16 +495,6 @@ Questions to ask about your current situation:
 Kamari now manages properties in 2 hours per week, but that efficiency came from years of developing systems. Start with what you can handle personally, build systems as you learn what works, then scale.
 
 Her progression:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
 
 ### Step 4: Be Open to Helping Others
 

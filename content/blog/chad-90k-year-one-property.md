@@ -285,17 +285,6 @@ Not all realtors are created equal. Chad stresses doing research upfront because
 
 > "There's no other investment that you can make that can get you all of this return. There's really not. And it's tangible. It's something you can use. It's something that you can pass on."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 2: Location Stacking for Multiple Demographics
 
@@ -323,17 +312,6 @@ Each segment books during different periods, creating more consistent demand yea
 
 - Less competition than beach or Disney-adjacent properties
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 3: Continuous Property Investment
 
@@ -351,17 +329,6 @@ Each segment books during different periods, creating more consistent demand yea
 
 - Competitive differentiation in the market
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Financial Results: The Numbers Behind $90K/Year
 
@@ -426,17 +393,6 @@ The same applies to real estate investing. People wait for the perfect property,
 
 > "What's the worst that could happen? You know, you lose some money. Obviously, you don't want to take risks that are going to bankrupt you, right? You got to make conservative changes and things that are not going to destroy your lifestyle."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 2: The Realtor Is Your Lynchpin
 
@@ -450,17 +406,6 @@ Beyond finding the property, the realtor connected Chad with cleaners, handymen,
 
 > "The realtor is such a huge part of the equation. When you're looking at markets, if you link up with the right realtor, obviously, they know the market. They know what's going to sell. They know what's going to be adding value."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 3: Invest in Yourself First
 
@@ -474,17 +419,6 @@ The knowledge he gained helped him avoid costly mistakes, recognize opportunitie
 
 > "Invest in yourself, learn, you know, make sure you do the homework and take the jump, you know, take the leap, you know, because you'll be surprised. You'll be surprised of what you can do."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 4: Get Hands-On Before Going Hands-Off
 
@@ -498,17 +432,6 @@ However, he's now transitioning away from the management company to become more 
 
 > "The property managers, there are some good ones out there, but they do take a significant chunk of your income. Hire your virtual assistants, train them, and you can literally do the same thing if not better than what the property management companies can do at a fraction of the cost."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 5: This Business Changes Your Whole Mindset
 
@@ -522,17 +445,6 @@ This isn't just financial freedom - it's psychological freedom. The stress of de
 
 > "Now I'm not like going there thinking, oh my god, what if I lose this job? So I'm taking more chances. I'm taking more risk. I'm doing things more in line with what I wouldn't do in the past because I just feel like I have this other opportunity if things don't work out there. It's truly life-changing."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Tools and Team: Building the Support System
 

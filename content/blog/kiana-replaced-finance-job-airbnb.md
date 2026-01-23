@@ -268,16 +268,6 @@ Scottsdale is a well-known destination, which initially concerned Kiana due to s
 
 Before committing to Scottsdale, Kiana followed a methodical research process:
 
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
 > "I had probably spent six months kind of just going around the whole entire United States kind of researching understanding short-term laws. I think that is kind of the higher risk on the sides of things so that was my biggest challenge."
 
 **Pro Tip**: Don't let saturation scare you away from a market. Look for underserved niches within popular destinations. Kiana found that while Scottsdale is saturated with party-focused listings, luxury family properties were underrepresented.
@@ -308,17 +298,6 @@ This delegation served two purposes: it got properties acquired faster, and it p
 
 > "I tried it myself I was not as successful so I kind of delegated it off and I thought that was another good way for me to learn as well."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 2: Luxury Family Positioning
 
@@ -340,17 +319,6 @@ Kiana's first property was located right by a golf course, which naturally attra
 
 > "I noticed when I was going to just Airbnb there were a lot of bachelor and bachelorette themes and I wanted to steer away from that just because of the clientele and kind of those are more seasonal based."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 3: Hybrid Rental Model
 
@@ -372,17 +340,6 @@ If short-term rental demand drops, she pivots to midterm or long-term tenants. T
 
 > "We did the Airbnb for the first two months and then we actually were able to find a one-year tenant and so it still hit the same conservative Benchmark."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Kiana's Airbnb Arbitrage Results: The Numbers
 
@@ -449,17 +406,6 @@ If short-term rental demand drops, she pivots to midterm or long-term tenants. T
 
 **Why This Matters**: Many aspiring Airbnb arbitrage entrepreneurs get stuck because they struggle with one aspect of the business. They spend months trying to improve at landlord negotiations when they could hire someone who does it daily. Time is your most valuable resource, and delegating weaknesses preserves it.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 2: Overcome Analysis Paralysis
 
@@ -471,17 +417,6 @@ If short-term rental demand drops, she pivots to midterm or long-term tenants. T
 
 > "I think I started tracking different markets a little closer and looking at the trends and so once I saw like the three-month trend it kind of made me a little more comfortable either more confident or less confident within the market."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 3: Trust the Process and Your Team
 
@@ -491,17 +426,6 @@ If short-term rental demand drops, she pivots to midterm or long-term tenants. T
 
 **Why This Matters**: If you micromanage one property for 10 hours per week, you'll burn out at 2-3 properties. But if you build systems and trust them, you can scale to many properties while actually working less. The goal is passive income, not a new full-time job.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 4: Always Have an Exit Strategy
 
@@ -513,17 +437,6 @@ If short-term rental demand drops, she pivots to midterm or long-term tenants. T
 
 > "The worst case scenario is if no one rents out the Airbnb I can just do another midterm long-term lease and I just don't have cash flow but okay we're in the process. So I think that's the mentality I had that there's always an exit strategy."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 5: Differentiate from the Crowd
 
@@ -533,17 +446,6 @@ If short-term rental demand drops, she pivots to midterm or long-term tenants. T
 
 **Why This Matters**: The most obvious opportunity often has the most competition. By finding an underserved niche within a popular market, you can command premium prices with fewer problems. Families don't throw parties, neighbors don't complain, and properties stay in better condition.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Best Tools for Airbnb Arbitrage: Kiana's Tech Stack
 

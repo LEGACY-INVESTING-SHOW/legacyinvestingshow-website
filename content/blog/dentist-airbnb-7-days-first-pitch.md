@@ -280,14 +280,6 @@ Cleveland offered something different. Using Air DNA, Kayla discovered that the 
 
 Kayla conducted her market research during lunch breaks at the dental office. Her process was methodical:
 
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 **The Numbers Kayla Analyzed**:
 
 | Factor | What She Looked For |
@@ -326,17 +318,6 @@ She also dressed strategically. While one competitor showed up in pearls and a d
 
 - Secured lease on only her second property inquiry
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 2: Targeting Large Groups and Events
 
@@ -358,17 +339,6 @@ The wedding market in Cleveland provides consistent demand. Groups booking for b
 
 - Higher revenue per booking than smaller properties
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 3: Mid-Century Modern Design on a Budget
 
@@ -396,19 +366,6 @@ She also brought in a friend whose house always looked great to help with final 
 
 > "A lot of the style came from Wayfair and Amazon. My biggest thing is just don't skip out on the quality but also don't kill your budget. Read the reviews—I always focus on the worst reviews versus the good ones because the negative ones usually are pretty truthful."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ### Strategy 4: Dynamic Pricing with Price Labs
 
@@ -428,17 +385,6 @@ Kayla uses Price Labs, which Preston recommends in his course. The tool automati
 
 - Less time spent on pricing decisions
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Kayla's Airbnb Arbitrage Results: The Numbers
 
@@ -520,17 +466,6 @@ She kept quiet while the other potential tenants nitpicked and complained. She l
 
 > "I kind of went to the property and looked around and kind of acted like I knew what I was talking about. It must have worked because I acted confident—I got home and literally within an hour I had a phone call from the property manager."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 2: Landlords Want Easy, Not Impressed
 
@@ -544,17 +479,6 @@ What actually sealed the deal was something simpler: she presented herself as an
 
 > "I really think that's what sealed the deal. I don't think many people understand how people really want it easy. They don't want to come fix your shower, they don't want to come fix your dishwasher."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 3: Interview Your Team Before Hiring
 
@@ -568,17 +492,6 @@ The turnaround came when she discovered that one of her dental patients ran a cl
 
 > "I will say the biggest thing is interview your cleaning team. Do not hire someone you just think, oh they're professional cleaning team, they're going to follow my list and put out the welcome gift. Interview them, make sure they've done it before."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 4: Don't Slack During Slow Months
 
@@ -590,17 +503,6 @@ The result: December and January were her slowest months. While some of this was
 
 **Why This Matters**: Slow months are when extra effort matters most. The hosts who maintain momentum during seasonal dips are the ones who hit profitability faster.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 5: The Tech Is Learnable, The Execution Matters
 
@@ -614,17 +516,6 @@ The actual time spent managing guests, communicating with cleaners, and handling
 
 > "For me I'm not tech-savvy so learning the Airbnb and Guesty and Price Labs and all the integration tools that help you run your business was very difficult for me. The actual time spent speaking with guests, managing guests, talking to cleaners—that wasn't so much."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Best Tools for Airbnb Arbitrage: Kayla's Tech Stack
 

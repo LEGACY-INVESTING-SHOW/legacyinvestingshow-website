@@ -245,14 +245,6 @@ His market research revealed that most local competitors used neutral, farmhouse
 
 Kirk followed the program's research methodology:
 
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 This research revealed the farmhouse saturation in his market, leading Kirk to choose a mid-century boho theme with pops of color that would immediately stand out in search results.
 
 ---
@@ -279,19 +271,6 @@ Kirk's breakthrough property came from an in-person visit he almost skipped due 
 
 > "Instead of actually making the phone call, I would go see the property, talk to the owners, talk to the property manager, and pitch them in front of me."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ### Strategy 2: Personalized Script Delivery
 
@@ -311,17 +290,6 @@ Kirk would mention that he's a nurse, reference his family, and share genuine re
 
 > "If you make it more personal to you, adding little bits of information that pertains to you, I think you'll be more comfortable. Be yourself because honestly if you feel nervous inside it's going to flow out."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 3: Differentiated Design Theme
 
@@ -341,17 +309,6 @@ His research showed most competitors using low-key neutral colors with farmhouse
 
 > "Most of the people in my area have just the neutral color farmhouse type. So I tried to set us apart by putting a little bit more color, things to make it pop."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 4: Experience-First Listing Photos
 
@@ -371,17 +328,6 @@ He invested in professional photography rather than taking iPhone photos. The qu
 
 > "I wanted a sense where people can have an experience. Everybody can stay at any Airbnb, but what really makes yours set apart from everybody else? I try to put like a little gathering area where it looks nice, where people want to actually spend time there."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 5: Strategic Pricing for New Listings
 
@@ -401,17 +347,6 @@ He uses Price Labs' competitor calendar feature to see exactly what similar prop
 
 > "In the beginning it was really hard for us because we didn't have reviews. We had people threatening us like our listing is fake. Eventually once you get that review then that's when things start to pick up."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Kirk's Airbnb Arbitrage Results: The Numbers
 
@@ -470,17 +405,6 @@ When he was tired from a nursing shift, running on 3-4 hours of sleep, and wante
 
 > "You have to have a strong goal, that purpose, that why for what you're doing. If it's not a strong enough goal you're going to be like, 'Oh, never mind, I'm tired this day' or 'I don't feel like it.'"
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 2: Skip the Research Rabbit Hole
 
@@ -494,17 +418,6 @@ His breakthrough came when he realized a single phone call could accomplish more
 
 > "I'd rather just skip all that time, send either an email or a phone call, and just go straight to them because honestly it saves you a lot more time."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 3: View Rejection as Practice
 
@@ -518,17 +431,6 @@ Each "no" developed his pitch delivery, helped him anticipate objections, and pr
 
 > "I remember messaging you: 'Hey, this came up, I didn't get the property, but I'm slowly developing the skills to actually prepare me for the one that will say yes.'"
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 4: Get a Supportive Partner
 
@@ -542,17 +444,6 @@ The pivotal moment came when Kirk was exhausted and ready to skip a property vie
 
 > "I have a great partner, my wife. I was like, 'I'm tired from work, I only had three four hours of sleep,' and she's like, 'No, go out there, this might be the one.' Somebody actually pushing you, supporting you in what you guys want to do."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 5: Respond Thoughtfully to Guests
 
@@ -566,17 +457,6 @@ He recognizes that from the guest's first inquiry to checkout, they're constantl
 
 > "Sometimes when I actually try to respond, I don't respond right away because I want to think of what I'm saying in a more hospitable way so that it sounds nicer."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Best Tools for Airbnb Arbitrage: Kirk's Tech Stack
 

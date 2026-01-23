@@ -287,17 +287,6 @@ During his three weeks in Cleveland, while others might have focused only on get
 
 > "I was already facing before I even open the LLC, I want to make sure that I make this so that it's comfortable for me to scale to like 100 plus units."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 2: Storage Unit Assembly Method
 
@@ -317,19 +306,6 @@ By routing all deliveries to a storage unit, Leo's team assembles furniture off-
 
 - Ability to negotiate for additional units
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ### Strategy 3: Cost-Effective VA Hiring
 
@@ -347,17 +323,6 @@ His VAs handle guest communication, booking coordination, and administrative tas
 
 - Better understanding of his specific processes
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 4: Local Operational Manager
 
@@ -377,17 +342,6 @@ Leo found his operational manager during his three-week Cleveland stay. Together
 
 - Foundation for scaling to nine additional units
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 5: Relationship-Based Cleaning
 
@@ -409,19 +363,6 @@ Leo met with the cleaning company owner directly, explained his standards, creat
 
 - Team knows his specific standards and property layouts
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ## Leo's Airbnb Arbitrage Results: The Numbers
 
@@ -488,17 +429,6 @@ Leo met with the cleaning company owner directly, explained his standards, creat
 
 **Why This Matters**: Airbnb arbitrage is simpler than physical product businesses, but only if you build systems from the start. Most operators hit a wall at 3-5 properties because they're managing everything manually. Leo's systems-first approach means adding unit #13 requires the same effort as adding unit #4.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 2: Don't Buy Referrals
 
@@ -510,17 +440,6 @@ Leo met with the cleaning company owner directly, explained his standards, creat
 
 > "Don't buy the referrals, it's stupid. I only did it because I was so excited and I flew there and just did it. Don't do that. Find your own units. The research isn't complicated."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 3: Add Value to Buildings
 
@@ -530,17 +449,6 @@ Leo met with the cleaning company owner directly, explained his standards, creat
 
 **Why This Matters**: Good building relationships lead to expansion opportunities. Leo negotiated for nine additional units in the same building partly because management saw him as a professional operator who enhanced rather than complicated their operations.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 4: Start Local When Possible
 
@@ -550,17 +458,6 @@ Leo met with the cleaning company owner directly, explained his standards, creat
 
 **Why This Matters**: Local operations allow you to handle issues personally, learn the business hands-on, and iterate quickly without travel expenses and time away from home. Once you've mastered operations locally, expanding to other markets becomes much easier.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 5: Avoid Analysis Paralysis
 
@@ -572,17 +469,6 @@ Leo met with the cleaning company owner directly, explained his standards, creat
 
 > "Don't get into like analysis paralysis. If you find something good in your area just kind of just go for it."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Best Tools for Airbnb Arbitrage: Leo's Tech Stack
 

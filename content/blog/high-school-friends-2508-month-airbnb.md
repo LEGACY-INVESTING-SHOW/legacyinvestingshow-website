@@ -292,18 +292,6 @@ When they disagree—and they do disagree—they ask themselves whether the batt
 
 - Preserved friendship: Their 15-year relationship remains intact
 
-**How to Implement This Strategy:**
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
 ---
 
 ### Strategy 2: Networking Over Cold Calling
@@ -323,18 +311,6 @@ Nico's approach was simple: reach out to every realtor, real estate professional
 - Property management clients: Also from network outreach
 
 - Three deals in pipeline: Coast, Portland, and Mount Hood area (from both cold calling and networking)
-
-**How to Implement This Strategy:**
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
 
 ---
 
@@ -359,18 +335,6 @@ The property had a red couch and black chairs when they arrived. Most designers 
 - Bathroom touch: Hotel-style rolled towels for elevated experience
 
 - Coffee bar: Individual wrapped coffees, mugs, creamers for hotel feel
-
-**How to Implement This Strategy:**
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
 
 ---
 
@@ -397,18 +361,6 @@ Sarah and Nico prioritized their outdoor space because they recognized it as the
 - **Pac-Man machine**: Unique entertainment that photographs well
 
 - **Coffee bar**: Hotel-style amenity that elevates perceived value
-
-**How to Implement This Strategy:**
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
 
 ---
 
@@ -489,16 +441,6 @@ This mindset preserved their 15-year friendship while building a business togeth
 
 > "As long as you're just mature enough—think about a business partnership as also a relationship—and you're both just focusing on the bigger picture which is making money, getting an ROI so we can reinvest into another property, everything just works out."
 
-**Your Action Steps:**
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 ---
 
 ### Lesson 2: Reach Out to Your Network First
@@ -511,18 +453,6 @@ This doesn't mean cold calling doesn't work—Nico has three deals in his pipeli
 
 > "I really encourage everybody listening: reach out to your network. I reached out to all my buddies that were in real estate, all the realtors I know in the area. I said, 'Hey, I'm doing this.'"
 
-**Your Action Steps:**
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
 ---
 
 ### Lesson 3: Professional Photography Matters
@@ -532,18 +462,6 @@ This doesn't mean cold calling doesn't work—Nico has three deals in his pipeli
 **What Sarah and Nico Learned**: They received four bookings on their first day live. Professional photography was a key factor. While their competitors had comparable properties, most had terrible photos that failed to showcase their potential.
 
 > "I can't stress this enough: get photography. Listen to Preston, don't do it on your iPhone. The photography is what took it to the next level because all of our competitors with comparable properties had horrible photos."
-
-**Your Action Steps:**
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
 
 ---
 
@@ -557,18 +475,6 @@ This doesn't mean cold calling doesn't work—Nico has three deals in his pipeli
 
 Key mindset shift: You're not interrupting strangers. You're the owner of a company offering a valuable service to landlords who need help filling their property. That confidence changes everything.
 
-**Your Action Steps:**
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
 ---
 
 ### Lesson 5: Just Take Action
@@ -578,18 +484,6 @@ Key mindset shift: You're not interrupting strangers. You're the owner of a comp
 **What Sarah and Nico Learned**: They could have spent months analyzing occupancy rates and comparing markets. Instead, they made a decision: stop analyzing and start executing. Within 3.5 weeks of receiving a referral, they were live and making money.
 
 > "We just took action. That's why I tell everybody: just fail forward, just do it. We talked about this the other day—we were like, 'That just happened in 3.5 weeks.' We've got this whole place furnished, there's people coming in and out of here, and we didn't even think about it."
-
-**Your Action Steps:**
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
 
 ---
 

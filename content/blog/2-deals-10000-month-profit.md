@@ -306,16 +306,6 @@ Rob's key insight: look in your own backyard first. He knew the Louisville area,
 
 **Rob's Market Research Process**:
 
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
 The St. Simons property stands out because nothing else on the island offers the same combination: pool, hot tub, 15-person capacity, playground, and courtyard—without being on the beach. This differentiation is critical for commanding premium rates and maintaining occupancy.
 
 ---
@@ -348,19 +338,6 @@ Rob's approach centers on one core message: this is a win-win for both parties. 
 
 - 2-4 year stability without tenant turnover
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ### Strategy 2: The Volume Approach to Finding Deals
 
@@ -384,19 +361,6 @@ Rob's first call was a disaster. He was looking in Fort Lauderdale, and the land
 
 - Recording calls reveals problems you can't detect in the moment
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ### Strategy 3: Building a Rockstar Remote Team
 
@@ -407,16 +371,6 @@ Rob's first call was a disaster. He was looking in Fort Lauderdale, and the land
 For his St. Simons Island property, Rob couldn't rely on local presence. He developed a systematic approach to building a remote team from scratch.
 
 **Rob's Remote Team Building Process**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
 
 Rob interviewed three cleaners for St. Simons. The first two he led the conversation. The third said something that changed everything: "I'm not a cleaner, I'm a Hospitality Group."
 
@@ -438,19 +392,6 @@ Rob interviewed three cleaners for St. Simons. The first two he led the conversa
 
 - Coverage from Savannah to Jacksonville
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ### Strategy 4: Listing Optimization for Maximum Bookings
 
@@ -461,16 +402,6 @@ Rob interviewed three cleaners for St. Simons. The first two he led the conversa
 Rob's Louisville listing demonstrates textbook optimization. The property is an older house built in 1909, so the inside doesn't have a ton of common areas. Rather than trying to hide this, Rob maximized the outdoor space and made it the star of the listing.
 
 **Louisville Listing Photo Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
 
 > "The first five on a listing are super intentional. You want to show off what is the cool spot about this... The inside of the house doesn't have a ton of common areas so it's like what can we do with what we have."
 
@@ -484,19 +415,6 @@ Rob's Louisville listing demonstrates textbook optimization. The property is an 
 
 - **Guest communication**: Text updates during stays show responsiveness
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ## Rob's Airbnb Arbitrage Results: The Numbers
 
@@ -560,95 +478,23 @@ Rob's target for the year: recoup all startup investments and generate $30,000-$
 
 > "The funny thing is looking back on it the guy that the first guy I talked to all the objections he threw up were all things that are very easily overcome... had I not had that first conversation you know I wouldn't be able to have the wins that came after it."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 ### Lesson 2: Frame It as a Win-Win
-
 **The Mistake**: Approaching landlords as if you're asking for a favor or trying to sneak past their defenses.
-
 **What Rob Learned**: When you position Airbnb arbitrage as a massive value proposition for the landlord—free property management, better maintenance, aligned incentives—most say it's a no-brainer.
-
 **Why This Matters**: Landlords have been approached by sketchy tenants trying to secretly sublease. You're coming in as a professional operation that will treat their property better than anyone else because your income depends on it.
-
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 ### Lesson 3: Look in Your Own Backyard First
-
 **The Mistake**: Searching in unfamiliar markets without local knowledge or presence.
-
 **What Rob Learned**: Rob initially looked in South Florida because he used to live there. The deals didn't work—probably because he was searching during winter when landlords expect premiums. When he looked in Louisville, his hometown, he found a turnkey deal almost immediately.
-
 **Why This Matters**: Local knowledge helps you identify good neighborhoods, understand seasonal patterns, and visit properties easily. You can always expand to remote markets once you've built experience.
-
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 ### Lesson 4: Find One Rockstar and Get Their Network
-
 **The Mistake**: Trying to build a remote team through cold searching and random hires.
-
 **What Rob Learned**: When he found Gala (who calls herself a Hospitality Group rather than a cleaner), she provided her entire team: handyman, photographer, and connections to other remote operators who validated her quality. One great hire unlocked an entire network.
-
 **Why This Matters**: In vacation rental markets, the best service providers know each other and work together. Finding one rockstar gives you access to their entire ecosystem of reliable professionals.
-
 > "I specifically want you to give me people that do not live in the area that are doing this all remotely and both of them I talked to said we could not do what we do if it were not for her."
-
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
 ### Lesson 5: Build Systems That Run Without You
-
 **The Mistake**: Treating Airbnb hosting as a job that requires constant attention.
-
 **What Rob Learned**: After setting up systems, Rob spends only a couple hours per week on his Louisville property. Most time goes to tweaking automated messages in Guesty, checking Price Labs for pricing health, and occasional property visits. The St. Simons property will run the same way once fully launched.
-
 **Why This Matters**: If your Airbnb business requires constant attention, you've built a job, not a business. Proper automation makes scaling possible and keeps the work manageable.
-
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ## Best Tools for Airbnb Arbitrage: Rob's Tech Stack
 

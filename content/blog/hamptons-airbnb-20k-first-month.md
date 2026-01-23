@@ -233,10 +233,6 @@ This wasn't a simple purchase. Hampton found a property being sold by someone wh
 
 The purchase came in two phases:
 
-1. $1
-
-2. $1
-
 Hampton's vision was to create one of the largest properties in the area. Once complete, "The Lodge" would offer sleeping capacity and amenities that competitors couldn't match.
 
 ---
@@ -301,19 +297,6 @@ Hampton's approach was particularly effective because he came prepared with data
 
 - Family maintains use of property when desired
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ### Strategy 2: Phased Property Development
 
@@ -333,17 +316,6 @@ Hampton's West Virginia purchase exemplifies this strategy. He bought a property
 
 - Combined property expected to exceed $100,000 annual revenue
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 3: Automation from Day One
 
@@ -367,19 +339,6 @@ Hampton set up automated messaging for guests, automated notifications for clean
 
 > "Having a good team or having a good list of people to call in that general area that can help out and go address these issues, and all I have to do is send a message to somebody be like hey can you do you mind stepping over here I need you to check this out."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ## Hampton's Airbnb Results: The Numbers
 
@@ -451,17 +410,6 @@ The slow period at his consulting job was actually the catalyst. With reduced in
 
 > "Been extremely nervous about it but sometimes you just got to take a leap of faith and take the risk and it's definitely panning out."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 2: Be Methodical in Your Approach
 
@@ -473,17 +421,6 @@ He made sure photos were excellent, descriptions were complete, pricing was rese
 
 **Why This Matters**: First impressions matter on Airbnb. A rushed listing with poor photos, incomplete information, or incorrect pricing will struggle to get bookings. Taking time upfront saves time and frustration later.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 3: Start with Familiar Markets
 
@@ -495,17 +432,6 @@ For his second property, he still chose strategically but within a region he cou
 
 **Why This Matters**: Remote investing is possible, but it's harder for beginners. Starting in familiar territory builds confidence and skills that can later be applied to new markets.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 4: Use Data to Convince Stakeholders
 
@@ -517,17 +443,6 @@ His parents went from not realizing what their property could earn to actively s
 
 **Why This Matters**: Whether you're convincing family, partners, or landlords, numbers speak louder than promises. People need to see realistic projections based on actual market data, not just optimistic claims.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 5: Build Systems Before Scaling
 
@@ -539,17 +454,6 @@ Automated messaging handles guest communication. Cleaning crews receive automati
 
 **Why This Matters**: One property without systems is manageable. Two or three without systems becomes a second job. Build the infrastructure first, then scale.
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Best Tools for Airbnb: Hampton's Tech Stack
 

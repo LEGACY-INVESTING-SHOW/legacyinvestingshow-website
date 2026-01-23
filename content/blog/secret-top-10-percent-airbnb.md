@@ -271,14 +271,6 @@ One innovative move: Christopher visited local restaurants with his laptop and w
 
 Christopher followed the program's market research methodology systematically:
 
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 The analysis revealed that only 6% of properties in his market have swimming pools. Similarly, only 6% have hot tubs. By securing a property with a pool and planning to add a hot tub, Christopher positioned his listing to appear when guests filter for these high-demand amenities.
 
 **Competition Analysis**:
@@ -318,14 +310,6 @@ The analysis revealed that only 6% of properties in his market have swimming poo
 
 **How to Implement**:
 
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 ---
 
 ### Strategy 2: Building Rapport Before Pitching
@@ -347,14 +331,6 @@ The analysis revealed that only 6% of properties in his market have swimming poo
 > "The house is incredible, it looks incredible, the yard is great, beautiful home by the way. Just kind of building a little bit of rapport, talking about it. 'Oh yeah we bought it 8 years ago, we did a few renovations.' Hey man, incredible work, it looks good."
 
 **How to Implement**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
 
 ---
 
@@ -378,14 +354,6 @@ The analysis revealed that only 6% of properties in his market have swimming poo
 
 **How to Implement**:
 
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 ---
 
 ### Strategy 4: Rare Amenities That Filter Competition
@@ -408,14 +376,6 @@ The analysis revealed that only 6% of properties in his market have swimming poo
 
 **How to Implement**:
 
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
 ---
 
 ### Strategy 5: Local Business Partnerships
@@ -437,14 +397,6 @@ The analysis revealed that only 6% of properties in his market have swimming poo
 > "I took my laptop, we had the welcome packet with six local restaurants in our packet. The main thing is I want to give my guests a great experience, I want to improve Tyler, I want to be part of the community."
 
 **How to Implement**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
 
 ---
 
@@ -522,17 +474,6 @@ Christopher's property includes:
 
 > "There's people that I'll talk to saying 'hey I've been calling and no one's saying yes.' I'm like okay, how many landlords have you talked to? Like maybe five. It's like okay well there's your answer—you haven't called enough people."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 2: Remove Emotions from Property Decisions
 
@@ -544,17 +485,6 @@ Christopher's property includes:
 
 > "You got to take your feelings out of it because that's what it comes down to—it comes down to the numbers. This is a business and we fully understand like hey, we got to go in this as a business with a business mind."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 3: Invest in Education Before Action
 
@@ -566,17 +496,6 @@ Christopher's property includes:
 
 > "When I was looking to get into this course I was like 'you know what baby, I'm going to go on YouTube, I'm going to learn it myself.' And then I started doing that, watching videos from this person, this person, this person—they're all over the place. Not the way to go. You're going to miss steps."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 4: Be Honest with Landlords About Experience
 
@@ -588,17 +507,6 @@ Christopher's property includes:
 
 > "He asked me 'so how many of these do you have under your belt?' Honesty to me is the best key. I was like 'look, I've invested into my education, I've taken the time, I've done the research, all the way to the point I'm talking to you on the phone now.'"
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 5: Make the Script Your Own
 
@@ -610,17 +518,6 @@ Christopher's property includes:
 
 > "Until you find like your own words of how to give them the pitch and make it your own—see what's working, see what's not working. It really is making the script yours, your pitch, conforming it to you and making it your own."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Tools and Systems Christopher Uses
 

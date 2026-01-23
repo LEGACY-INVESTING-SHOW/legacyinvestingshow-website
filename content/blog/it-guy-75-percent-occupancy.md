@@ -302,17 +302,6 @@ This approach came directly from the Legacy Investing Show course material. The 
 
 > "One of the things you teach in your course is trying to use that security deposit as just money that you can reinvest into the house. I was actually able to get the landlord to agree to let me use that $2,300 to revamp the lawn."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 2: Landlord Trust Building
 
@@ -340,19 +329,6 @@ Critically, he offered to meet the landlord in person at the property. This face
 
 > "I think what really helped is I was willing to actually meet her here and kind of just walk through everything. She was able to see that I was a real person. I think I represented myself well and I was very complimentary of the house."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ### Strategy 3: Studying Top Performers
 
@@ -378,17 +354,6 @@ He discovered that almost all high-performing houses in his area had some sort o
 
 > "I was looking at all the top performers in the area and a lot of them had kind of social areas where everyone could gather. A fire pit was a really easy way to do that."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Strategy 4: Multi-Platform Listing
 
@@ -402,17 +367,6 @@ This insight is particularly valuable for hosts who are frustrated with slow boo
 
 > "Surprisingly, the majority of our bookings have actually been through VRBO. So that's a super good thing if you're not getting a lot of bookings and it's only listed on Airbnb."
 
-**How to Implement This Strategy**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ## Grayson's Airbnb Arbitrage Results: The Numbers
 
@@ -475,17 +429,6 @@ This hands-on approach gave him direct experience with every aspect of the busin
 
 > "I kind of wanted a property that was close to where I lived, within an hour, so I could go check on it and do everything on my own because it was my first one."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 2: Leverage Unique Property Character
 
@@ -499,17 +442,6 @@ The property's unique appearance and character create a moat against competition
 
 > "The house itself is beautiful. It's over 100 years old, it's got this cool old-fashioned vibe. People really appreciate that."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 3: Ask Guests for Improvement Ideas
 
@@ -523,17 +455,6 @@ One example: guests suggested adding grab bars in the shower because the tub was
 
 > "We've been asking our first 10 guests what they would add to the property. People have said you can add grab bars in the shower because it's kind of high off the ground. Guests have been very helpful recommending things to add value."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 4: Take a Long-Term Approach
 
@@ -547,17 +468,6 @@ His approach to the first property isn't about maximizing short-term returns. It
 
 > "I plan to have this for at least 2 years. I'm not expecting to be able to retire off of that. I'm definitely going to use this to funnel into hopefully whatever my next property looks like."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
----
 
 ### Lesson 5: Run Numbers Thoroughly Before Signing
 
@@ -571,19 +481,6 @@ For predictable expenses like internet and pest control, he got quotes before si
 
 > "I asked what the owner's bills had been for the past couple of months and kind of got an average. I estimated maybe 50% higher. Internet, pest control, those are all costs you can get upfront before you even sign anything."
 
-**Your Action Steps**:
-
-1. $1
-
-2. $1
-
-3. $1
-
-4. $1
-
-5. $1
-
----
 
 ## Best Tools for Airbnb Arbitrage: Grayson's Approach
 
