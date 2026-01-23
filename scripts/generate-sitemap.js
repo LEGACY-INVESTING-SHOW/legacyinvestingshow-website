@@ -26,6 +26,16 @@ const staticPages = [
   { url: '/blog/' },
 ];
 
+// Topic hub pages for SEO pillar content
+const topicPages = [
+  { url: '/topics/airbnb-arbitrage.html' },
+  { url: '/topics/tax-strategies.html' },
+  { url: '/topics/investing.html' },
+  { url: '/topics/business-structures.html' },
+  { url: '/topics/retirement.html' },
+  { url: '/topics/debt-management.html' },
+];
+
 /**
  * Get current date in W3C format (YYYY-MM-DD)
  */
@@ -140,6 +150,14 @@ function generateSitemap() {
     // Skip duplicate index entries
     if (page.url === '/index.html') continue;
 
+    urls.push({
+      loc: `${SITE_URL}${page.url}`,
+      lastmod: today,
+    });
+  }
+
+  // Add topic hub pages
+  for (const page of topicPages) {
     urls.push({
       loc: `${SITE_URL}${page.url}`,
       lastmod: today,

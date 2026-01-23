@@ -9,6 +9,48 @@
     <meta name="theme-color" content="#059669">
     <link rel="icon" type="image/png" href="/assets/images/logo.png">
     <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is the difference between a 401k and IRA?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A 401k is employer-sponsored with higher contribution limits ($23,500 in 2025). An IRA is individual with lower limits ($7,000 in 2025). 401ks often have employer matching—free money. IRAs offer more investment options. Most people should max employer match first, then contribute to IRAs."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Should I choose Traditional or Roth retirement accounts?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Traditional gives tax deductions now; pay taxes in retirement. Roth uses after-tax money now; tax-free in retirement. Choose Roth if you expect higher taxes in retirement (younger, lower income now). Choose Traditional if you're in a high tax bracket now. Many investors use both for tax diversification."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is a SEP IRA vs Solo 401k?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Both are for self-employed individuals. SEP IRAs are simpler with up to 25% of income (max $70,000 in 2025). Solo 401ks allow employee + employer contributions (max $70,000 + catch-up). Solo 401ks also allow Roth contributions and loans. Choose Solo 401k if you want more flexibility."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I use retirement accounts to invest in real estate?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, through a Self-Directed IRA or Solo 401k. You can buy rental properties, notes, private lending, and more. The account holds the property, not you personally. All income and expenses flow through the account. You can't use the property personally or provide services to it."
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body class="bg-white">
     <header class="fixed top-0 left-0 right-0 z-50 header-glass">
@@ -20,9 +62,9 @@
                 </a>
                 <div class="hidden md:flex items-center gap-6">
                     <a href="/" class="nav-link">Home</a>
-                    <a href="/about.html" class="nav-link">About</a>
-                    <a href="/programs.html" class="nav-link">Programs</a>
-                    <a href="/success-stories.html" class="nav-link">Student Results</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/programs" class="nav-link">Programs</a>
+                    <a href="/success-stories" class="nav-link">Student Results</a>
                     <a href="/blog/" class="nav-link">Blog</a>
                     <a href="https://www.managemoney101.com/2025workshop" class="btn-newsletter" target="_blank" rel="noopener">
                         <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
@@ -38,9 +80,9 @@
             <div id="mobile-menu" class="hidden md:hidden pb-6 border-t border-gray-200 mt-4 pt-4">
                 <div class="flex flex-col gap-4">
                     <a href="/" class="nav-link">Home</a>
-                    <a href="/about.html" class="nav-link">About</a>
-                    <a href="/programs.html" class="nav-link">Programs</a>
-                    <a href="/success-stories.html" class="nav-link">Student Results</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/programs" class="nav-link">Programs</a>
+                    <a href="/success-stories" class="nav-link">Student Results</a>
                     <a href="/blog/" class="nav-link">Blog</a>
                 </div>
             </div>
@@ -208,8 +250,8 @@
                 <div>
                     <h5 class="font-semibold mb-4 text-emerald-500 text-sm uppercase tracking-wider">Quick Links</h5>
                     <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="/programs.html" class="hover:text-emerald-400">Programs</a></li>
-                        <li><a href="/success-stories.html" class="hover:text-emerald-400">Student Results</a></li>
+                        <li><a href="/programs" class="hover:text-emerald-400">Programs</a></li>
+                        <li><a href="/success-stories" class="hover:text-emerald-400">Student Results</a></li>
                         <li><a href="/blog/" class="hover:text-emerald-400">Blog</a></li>
                     </ul>
                 </div>

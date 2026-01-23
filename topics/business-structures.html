@@ -9,6 +9,48 @@
     <meta name="theme-color" content="#059669">
     <link rel="icon" type="image/png" href="/assets/images/logo.png">
     <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Do I need an LLC for my rental properties?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "An LLC provides liability protection, separating personal assets from business liabilities. While not legally required, it's recommended for rental properties. Many investors create separate LLCs for each property or use a holding company structure for multiple properties."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the difference between an LLC and S-Corp?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "An LLC is a legal entity providing liability protection. An S-Corp is a tax election that can save self-employment taxes. Many business owners use both: an LLC for legal protection taxed as an S-Corp for tax benefits. S-Corps make sense when profits exceed $50,000-$100,000 annually."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I protect my assets from lawsuits?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Asset protection strategies include LLCs for business ventures, umbrella insurance, keeping adequate reserves, proper documentation, and separating personal and business finances. Some investors use trusts for additional protection. Start with an LLC and good insurance."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Where should I form my LLC?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Most people should form their LLC in the state where they live or operate their business. While Wyoming and Delaware are popular for privacy, forming there when you operate elsewhere creates extra complexity and costs. Form in your home state unless you have specific reasons not to."
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body class="bg-white">
     <header class="fixed top-0 left-0 right-0 z-50 header-glass">
@@ -20,9 +62,9 @@
                 </a>
                 <div class="hidden md:flex items-center gap-6">
                     <a href="/" class="nav-link">Home</a>
-                    <a href="/about.html" class="nav-link">About</a>
-                    <a href="/programs.html" class="nav-link">Programs</a>
-                    <a href="/success-stories.html" class="nav-link">Student Results</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/programs" class="nav-link">Programs</a>
+                    <a href="/success-stories" class="nav-link">Student Results</a>
                     <a href="/blog/" class="nav-link">Blog</a>
                     <a href="https://www.managemoney101.com/2025workshop" class="btn-newsletter" target="_blank" rel="noopener">
                         <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
@@ -38,9 +80,9 @@
             <div id="mobile-menu" class="hidden md:hidden pb-6 border-t border-gray-200 mt-4 pt-4">
                 <div class="flex flex-col gap-4">
                     <a href="/" class="nav-link">Home</a>
-                    <a href="/about.html" class="nav-link">About</a>
-                    <a href="/programs.html" class="nav-link">Programs</a>
-                    <a href="/success-stories.html" class="nav-link">Student Results</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/programs" class="nav-link">Programs</a>
+                    <a href="/success-stories" class="nav-link">Student Results</a>
                     <a href="/blog/" class="nav-link">Blog</a>
                 </div>
             </div>
@@ -208,8 +250,8 @@
                 <div>
                     <h5 class="font-semibold mb-4 text-emerald-500 text-sm uppercase tracking-wider">Quick Links</h5>
                     <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="/programs.html" class="hover:text-emerald-400">Programs</a></li>
-                        <li><a href="/success-stories.html" class="hover:text-emerald-400">Student Results</a></li>
+                        <li><a href="/programs" class="hover:text-emerald-400">Programs</a></li>
+                        <li><a href="/success-stories" class="hover:text-emerald-400">Student Results</a></li>
                         <li><a href="/blog/" class="hover:text-emerald-400">Blog</a></li>
                     </ul>
                 </div>

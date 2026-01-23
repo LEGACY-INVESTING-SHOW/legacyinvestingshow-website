@@ -9,6 +9,48 @@
     <meta name="theme-color" content="#059669">
     <link rel="icon" type="image/png" href="/assets/images/logo.png">
     <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is Airbnb arbitrage?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Airbnb arbitrage is a business model where you rent a property long-term, then list it on Airbnb for short-term rentals. The profit comes from the difference between your monthly rent and your Airbnb income. You can start without owning property or having large capital—typically $5,000-$15,000 to get started."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is Airbnb arbitrage legal?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, Airbnb arbitrage is legal when done correctly. You need landlord permission to sublet, compliance with local short-term rental regulations, proper business licenses, and appropriate insurance. We teach you how to set up your business legally and professionally."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How much can I make with Airbnb arbitrage?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Most students profit $2,000-$8,000 per month per property. Top performers make $10,000+ per unit. Results depend on location, property type, and management. Our students have generated over $10M in collective annual revenue."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do I need experience to start Airbnb arbitrage?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No prior experience is needed. Many successful students started with zero real estate or hospitality background. Our programs teach everything from finding properties to managing guests, with templates and scripts for every step."
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body class="bg-white">
     <header class="fixed top-0 left-0 right-0 z-50 header-glass">
@@ -20,9 +62,9 @@
                 </a>
                 <div class="hidden md:flex items-center gap-6">
                     <a href="/" class="nav-link">Home</a>
-                    <a href="/about.html" class="nav-link">About</a>
-                    <a href="/programs.html" class="nav-link">Programs</a>
-                    <a href="/success-stories.html" class="nav-link">Student Results</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/programs" class="nav-link">Programs</a>
+                    <a href="/success-stories" class="nav-link">Student Results</a>
                     <a href="/blog/" class="nav-link">Blog</a>
                     <a href="https://www.managemoney101.com/2025workshop" class="btn-newsletter" target="_blank" rel="noopener">
                         <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
@@ -38,9 +80,9 @@
             <div id="mobile-menu" class="hidden md:hidden pb-6 border-t border-gray-200 mt-4 pt-4">
                 <div class="flex flex-col gap-4">
                     <a href="/" class="nav-link">Home</a>
-                    <a href="/about.html" class="nav-link">About</a>
-                    <a href="/programs.html" class="nav-link">Programs</a>
-                    <a href="/success-stories.html" class="nav-link">Student Results</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/programs" class="nav-link">Programs</a>
+                    <a href="/success-stories" class="nav-link">Student Results</a>
                     <a href="/blog/" class="nav-link">Blog</a>
                 </div>
             </div>
@@ -154,7 +196,7 @@
                     </div>
                 </div>
                 <div class="text-center mt-8">
-                    <a href="/success-stories.html" class="btn-secondary">
+                    <a href="/success-stories" class="btn-secondary">
                         Read More Success Stories
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
@@ -181,7 +223,62 @@
             </div>
         </section>
 
+        <!-- FAQ Section -->
         <section class="section bg-white">
+            <div class="container-custom">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-8 text-gray-900">Frequently Asked Questions</h2>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="true">
+                                <span>What is Airbnb arbitrage?</span>
+                                <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"/>
+                                </svg>
+                            </button>
+                            <div class="faq-answer faq-answer--open">
+                                <p>Airbnb arbitrage is a business model where you rent a property long-term, then list it on Airbnb for short-term rentals. The profit comes from the difference between your monthly rent and your Airbnb income. You can start without owning property or having large capital—typically $5,000-$15,000 to get started.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>Is Airbnb arbitrage legal?</span>
+                                <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"/>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes, Airbnb arbitrage is legal when done correctly. You need landlord permission to sublet, compliance with local short-term rental regulations, proper business licenses, and appropriate insurance. We teach you how to set up your business legally and professionally.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>How much can I make with Airbnb arbitrage?</span>
+                                <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"/>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Most students profit $2,000-$8,000 per month per property. Top performers make $10,000+ per unit. Results depend on location, property type, and management. Our students have generated over $10M in collective annual revenue.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>Do I need experience to start Airbnb arbitrage?</span>
+                                <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"/>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>No prior experience is needed. Many successful students started with zero real estate or hospitality background. Our programs teach everything from finding properties to managing guests, with templates and scripts for every step.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light">
             <div class="container-custom">
                 <h2 class="text-2xl md:text-3xl font-bold mb-8 text-gray-900">Explore More Topics</h2>
                 <div class="grid md:grid-cols-3 gap-6">
@@ -242,8 +339,8 @@
                 <div>
                     <h5 class="font-semibold mb-4 text-emerald-500 text-sm uppercase tracking-wider">Quick Links</h5>
                     <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="/programs.html" class="hover:text-emerald-400">Programs</a></li>
-                        <li><a href="/success-stories.html" class="hover:text-emerald-400">Student Results</a></li>
+                        <li><a href="/programs" class="hover:text-emerald-400">Programs</a></li>
+                        <li><a href="/success-stories" class="hover:text-emerald-400">Student Results</a></li>
                         <li><a href="/blog/" class="hover:text-emerald-400">Blog</a></li>
                     </ul>
                 </div>

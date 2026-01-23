@@ -9,6 +9,48 @@
     <meta name="theme-color" content="#059669">
     <link rel="icon" type="image/png" href="/assets/images/logo.png">
     <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is the difference between good debt and bad debt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Good debt generates income or appreciates in value (mortgages, business loans, student loans for high-earning careers). Bad debt funds consumption and depreciates (credit cards, car loans, personal loans for non-essentials). Focus on eliminating bad debt while strategically using good debt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Should I use the debt snowball or avalanche method?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Avalanche (highest interest first) saves the most money mathematically. Snowball (smallest balance first) provides quick wins that motivate continued progress. Choose snowball if you need motivation, avalanche if you're disciplined. Both work—pick what you'll stick with."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Should I pay off debt or invest first?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "General rule: If debt interest rate exceeds expected investment returns (7-10%), pay debt first. Always get employer 401k match—it's free money. Pay off credit cards (15-25% interest) before investing beyond the match. Mortgages (3-7%) can wait while you invest."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How can I get out of debt faster?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Increase income through side hustles, negotiate raises, or start a business like Airbnb arbitrage. Cut expenses ruthlessly—housing, cars, and food are the big three. Use windfalls (tax returns, bonuses) for debt payoff. Consider balance transfers or debt consolidation for lower rates."
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body class="bg-white">
     <header class="fixed top-0 left-0 right-0 z-50 header-glass">
@@ -20,9 +62,9 @@
                 </a>
                 <div class="hidden md:flex items-center gap-6">
                     <a href="/" class="nav-link">Home</a>
-                    <a href="/about.html" class="nav-link">About</a>
-                    <a href="/programs.html" class="nav-link">Programs</a>
-                    <a href="/success-stories.html" class="nav-link">Student Results</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/programs" class="nav-link">Programs</a>
+                    <a href="/success-stories" class="nav-link">Student Results</a>
                     <a href="/blog/" class="nav-link">Blog</a>
                     <a href="https://www.managemoney101.com/2025workshop" class="btn-newsletter" target="_blank" rel="noopener">
                         <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
@@ -38,9 +80,9 @@
             <div id="mobile-menu" class="hidden md:hidden pb-6 border-t border-gray-200 mt-4 pt-4">
                 <div class="flex flex-col gap-4">
                     <a href="/" class="nav-link">Home</a>
-                    <a href="/about.html" class="nav-link">About</a>
-                    <a href="/programs.html" class="nav-link">Programs</a>
-                    <a href="/success-stories.html" class="nav-link">Student Results</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/programs" class="nav-link">Programs</a>
+                    <a href="/success-stories" class="nav-link">Student Results</a>
                     <a href="/blog/" class="nav-link">Blog</a>
                 </div>
             </div>
@@ -208,8 +250,8 @@
                 <div>
                     <h5 class="font-semibold mb-4 text-emerald-500 text-sm uppercase tracking-wider">Quick Links</h5>
                     <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="/programs.html" class="hover:text-emerald-400">Programs</a></li>
-                        <li><a href="/success-stories.html" class="hover:text-emerald-400">Student Results</a></li>
+                        <li><a href="/programs" class="hover:text-emerald-400">Programs</a></li>
+                        <li><a href="/success-stories" class="hover:text-emerald-400">Student Results</a></li>
                         <li><a href="/blog/" class="hover:text-emerald-400">Blog</a></li>
                     </ul>
                 </div>

@@ -337,6 +337,8 @@ function applyTemplate(template, post, allPosts = []) {
 
     // Set default values for optional fields
     const image = post.frontmatter.image || '/assets/images/blog-default.jpg';
+    // Generate WebP version path (replace extension with .webp)
+    const imageWebp = image.replace(/\.(jpg|jpeg|png)$/i, '.webp');
     const author = post.frontmatter.author || 'Preston Seo';
     const category = post.frontmatter.category || 'Investing';
 
@@ -370,6 +372,7 @@ function applyTemplate(template, post, allPosts = []) {
         .replace(/\{\{author\}\}/g, author)
         .replace(/\{\{category\}\}/g, category)
         .replace(/\{\{image\}\}/g, image)
+        .replace(/\{\{imageWebp\}\}/g, imageWebp)
         .replace(/\{\{readTime\}\}/g, readTime)
         .replace(/\{\{slug\}\}/g, post.slug)
         .replace(/\{\{wordCount\}\}/g, wordCount)

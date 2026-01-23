@@ -11,6 +11,48 @@
     <meta name="theme-color" content="#059669">
     <link rel="icon" type="image/png" href="/assets/images/logo.png">
     <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How should I start investing with no experience?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Start with low-cost index funds like the S&P 500 (VOO, SPY) or total market funds. Open a brokerage account (Fidelity, Vanguard, Schwab), set up automatic monthly contributions, and focus on long-term growth. Most beginners should start with 3-6 months of emergency savings before investing."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the best investment strategy for building wealth?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Dollar-cost averaging into diversified investments consistently over time. Combine tax-advantaged accounts (401k, IRA) with real estate and cash-flowing assets. The key is starting early, staying consistent, and reinvesting dividends. Avoid timing the market—time in market beats timing the market."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Should I invest in stocks or real estate?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Both have advantages. Stocks offer liquidity, diversification, and passive income through dividends. Real estate provides tax benefits, leverage, cash flow, and appreciation. Many wealthy investors use both: index funds for simplicity and real estate for tax advantages and higher potential returns."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How much money do I need to start investing?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You can start with as little as $1 using fractional shares. However, building meaningful wealth requires consistent contributions. Aim to invest 15-20% of your income. For real estate, you'll need $5,000-$15,000 for Airbnb arbitrage or $20,000+ for a rental property down payment."
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body class="bg-white">
     <header class="fixed top-0 left-0 right-0 z-50 header-glass">
@@ -22,9 +64,9 @@
                 </a>
                 <div class="hidden md:flex items-center gap-6">
                     <a href="/" class="nav-link">Home</a>
-                    <a href="/about.html" class="nav-link">About</a>
-                    <a href="/programs.html" class="nav-link">Programs</a>
-                    <a href="/success-stories.html" class="nav-link">Student Results</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/programs" class="nav-link">Programs</a>
+                    <a href="/success-stories" class="nav-link">Student Results</a>
                     <a href="/blog/" class="nav-link">Blog</a>
                     <a href="https://www.managemoney101.com/2025workshop" class="btn-newsletter" target="_blank" rel="noopener">
                         <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
@@ -40,9 +82,9 @@
             <div id="mobile-menu" class="hidden md:hidden pb-6 border-t border-gray-200 mt-4 pt-4">
                 <div class="flex flex-col gap-4">
                     <a href="/" class="nav-link">Home</a>
-                    <a href="/about.html" class="nav-link">About</a>
-                    <a href="/programs.html" class="nav-link">Programs</a>
-                    <a href="/success-stories.html" class="nav-link">Student Results</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/programs" class="nav-link">Programs</a>
+                    <a href="/success-stories" class="nav-link">Student Results</a>
                     <a href="/blog/" class="nav-link">Blog</a>
                 </div>
             </div>
@@ -210,8 +252,8 @@
                 <div>
                     <h5 class="font-semibold mb-4 text-emerald-500 text-sm uppercase tracking-wider">Quick Links</h5>
                     <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="/programs.html" class="hover:text-emerald-400">Programs</a></li>
-                        <li><a href="/success-stories.html" class="hover:text-emerald-400">Student Results</a></li>
+                        <li><a href="/programs" class="hover:text-emerald-400">Programs</a></li>
+                        <li><a href="/success-stories" class="hover:text-emerald-400">Student Results</a></li>
                         <li><a href="/blog/" class="hover:text-emerald-400">Blog</a></li>
                     </ul>
                 </div>

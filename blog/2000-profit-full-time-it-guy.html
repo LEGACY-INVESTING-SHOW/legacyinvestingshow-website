@@ -44,6 +44,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Preload hero image for LCP optimization -->
+    <link rel="preload" as="image" href="/assets/images/blog/success-stories/brian-it-guy-iowa.webp" type="image/webp" fetchpriority="high">
     <link rel="preload" as="image" href="/assets/images/blog/success-stories/brian-it-guy-iowa.jpg" fetchpriority="high">
 
     <!-- Stylesheet -->
@@ -274,9 +275,9 @@
 
                 <div class="hidden md:flex items-center gap-6">
                     <a href="/" class="nav-link">Home</a>
-                    <a href="/about.html" class="nav-link">About</a>
-                    <a href="/programs.html" class="nav-link">Programs</a>
-                    <a href="/success-stories.html" class="nav-link">Results</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/programs" class="nav-link">Programs</a>
+                    <a href="/success-stories" class="nav-link">Results</a>
                     <a href="/blog/" class="nav-link nav-link-active">Blog</a>
                 </div>
 
@@ -290,9 +291,9 @@
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <div class="flex flex-col gap-3">
                     <a href="/" class="nav-link">Home</a>
-                    <a href="/about.html" class="nav-link">About</a>
-                    <a href="/programs.html" class="nav-link">Programs</a>
-                    <a href="/success-stories.html" class="nav-link">Results</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/programs" class="nav-link">Programs</a>
+                    <a href="/success-stories" class="nav-link">Results</a>
                     <a href="/blog/" class="nav-link nav-link-active">Blog</a>
                 </div>
             </div>
@@ -339,13 +340,16 @@
 
             <!-- Featured Image -->
             <div class="minimal-featured-image">
-                <img src="/assets/images/blog/success-stories/brian-it-guy-iowa.jpg"
-                     alt="How Brian Makes $2,000/Month with Airbnb Arbitrage While Working Full-Time in IT (2026)"
-                     width="800"
-                     height="450"
-                     loading="eager"
-                     fetchpriority="high"
-                     decoding="async">
+                <picture>
+                    <source srcset="/assets/images/blog/success-stories/brian-it-guy-iowa.webp" type="image/webp">
+                    <img src="/assets/images/blog/success-stories/brian-it-guy-iowa.jpg"
+                         alt="How Brian Makes $2,000/Month with Airbnb Arbitrage While Working Full-Time in IT (2026)"
+                         width="800"
+                         height="450"
+                         loading="eager"
+                         fetchpriority="high"
+                         decoding="async">
+                </picture>
             </div>
 
             <!-- Key Statistics Cards (rendered from frontmatter) -->
@@ -1007,14 +1011,31 @@
 
                 </div>
 
-                <!-- Author Bio -->
-                <div class="minimal-author-bio">
-                    <img src="/assets/images/preston-main.jpg" alt="Preston Seo" width="64" height="64" class="bio-avatar" onerror="this.src='/assets/images/logo.png'">
-                    <div class="bio-content">
-                        <p class="bio-name">Preston Seo</p>
-                        <p class="bio-text">Real estate investor and financial educator helping people build generational wealth through smart investing strategies.</p>
+                <!-- Author Bio with E-E-A-T Signals -->
+                <aside class="author-bio bg-emerald-50 rounded-xl p-6 mt-8" itemscope itemtype="https://schema.org/Person">
+                    <div class="flex items-start gap-4">
+                        <picture>
+                            <source srcset="/assets/images/preston-main.webp" type="image/webp">
+                            <img src="/assets/images/preston-main.jpg"
+                                 alt="Preston Seo"
+                                 width="64"
+                                 height="64"
+                                 class="w-16 h-16 rounded-full object-cover"
+                                 itemprop="image"
+                                 onerror="this.src='/assets/images/logo.png'">
+                        </picture>
+                        <div>
+                            <p class="font-bold text-gray-900" itemprop="name">Preston Seo</p>
+                            <p class="text-sm text-gray-600" itemprop="jobTitle">Real Estate Investor & Financial Educator</p>
+                            <p class="text-sm text-gray-500 mt-2" itemprop="description">
+                                Preston has built a $20M+ real estate portfolio and helped 2,000+ students
+                                achieve financial freedom. He specializes in tax optimization, Airbnb arbitrage,
+                                and wealth building strategies.
+                            </p>
+                            <a href="/about" class="text-sm text-emerald-600 hover:text-emerald-700 mt-2 inline-block" itemprop="url">Learn more about Preston Seo →</a>
+                        </div>
                     </div>
-                </div>
+                </aside>
 
                 <!-- FAQ Section (rendered from frontmatter) -->
                 
@@ -1232,8 +1253,8 @@
                     <span>Legacy Investing Show</span>
                 </div>
                 <div class="footer-links">
-                    <a href="/programs.html">Programs</a>
-                    <a href="/success-stories.html">Results</a>
+                    <a href="/programs">Programs</a>
+                    <a href="/success-stories">Results</a>
                     <a href="/blog/">Blog</a>
                 </div>
             </div>
