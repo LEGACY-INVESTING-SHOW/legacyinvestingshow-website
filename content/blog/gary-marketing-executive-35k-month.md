@@ -36,18 +36,24 @@ faq:
 statistics:
   - value: "$35,000"
     label: "Monthly Cash Flow"
+    icon: "dollar"
+    context: "After all expenses"
     source: "Student Interview, June 2023"
   - value: "7"
     label: "Properties Managed"
+    icon: "home"
+    context: "Austin, Texas market"
   - value: "$10,000"
     label: "Gross Revenue Per Property"
+    icon: "chart"
+    context: "Per unit monthly"
   - value: "50%"
     label: "Profit Margin"
+    icon: "percent"
+    context: "$5-6K net per property"
 ---
 
 **Gary transformed his tech career skills into a thriving Airbnb portfolio generating $35,000/month in cash flow across 7 properties in Austin, Texas.** After years as a marketing executive at eBay and Chegg, he applied his data-driven approach to real estate investing and built a property management company that targets $5,000-$6,000 net profit per property monthly.
-
-![Key metrics showing Gary's results](/assets/images/blog/diagrams/gary-metrics.svg)
 
 ## The Background
 
@@ -74,8 +80,6 @@ In 2020, Gary and his construction partners identified Austin as the perfect mar
 **Market Fundamentals**: The numbers made sense. Air DNA data showed strong returns, and the combination of tourism, tech workers, SXSW, and other events created year-round demand. Unlike seasonal markets, Austin maintains consistent bookings throughout the year.
 
 > "One of my number one rules about Airbnb property management or investing is really trying to go into a place where I enjoy living at. Austin is one of those places I could totally see myself moving to."
-
-![Timeline of Gary's journey](/assets/images/blog/diagrams/gary-timeline.svg)
 
 ## The Strategy That Sets Gary Apart
 
@@ -138,8 +142,6 @@ Gary strongly advises against weekly and monthly discounts, even though Airbnb p
 
 His weekly discount is under 10%, and his monthly discount is in the low teensâ€”essentially making long-term stays unattractive compared to his nightly rate.
 
-![Strategy framework diagram](/assets/images/blog/diagrams/gary-strategy.svg)
-
 ## The Results
 
 ### By the Numbers
@@ -153,8 +155,6 @@ His weekly discount is under 10%, and his monthly discount is in the low teensâ€
 | Profit Margin | ~50% |
 | Market | Austin, Texas |
 | Guest Capacity | Up to 15 per property |
-
-![Results comparison](/assets/images/blog/diagrams/gary-results.svg)
 
 ### Booking Success Stories
 
@@ -219,8 +219,6 @@ Unlike pure arbitrage operators, Gary owns his properties (often with investor p
 His approach: if you're doing arbitrage, keep improvements modest and removable. If you're buying, invest in transforming the property into something unique that commands premium pricing for years to come.
 
 ## Tools & Systems Gary Uses
-
-![Tools and tech stack](/assets/images/blog/diagrams/gary-tools.svg)
 
 | Tool | Purpose | Why Gary Chose It |
 |------|---------|-------------------|

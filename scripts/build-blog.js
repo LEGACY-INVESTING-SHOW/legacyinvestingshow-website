@@ -199,6 +199,126 @@ function extractKeywords(content, category) {
 }
 
 /**
+ * Icon SVGs for statistics cards
+ */
+const STAT_ICONS = {
+    dollar: `<svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>`,
+    home: `<svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>`,
+    chart: `<svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>`,
+    clock: `<svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>`,
+    percent: `<svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="5" x2="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg>`,
+    location: `<svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>`,
+    users: `<svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
+    star: `<svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`,
+    default: `<svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>`
+};
+
+/**
+ * Generate statistics HTML cards from frontmatter
+ */
+function generateStatisticsHTML(statistics) {
+    if (!statistics || !Array.isArray(statistics) || statistics.length === 0) {
+        return '';
+    }
+
+    const statsCards = statistics.map((stat, index) => {
+        const icon = STAT_ICONS[stat.icon] || STAT_ICONS.default;
+        const context = stat.context ? `<span class="stat-context">${stat.context}</span>` : '';
+        const source = stat.source ? `<span class="stat-source">${stat.source}</span>` : '';
+
+        return `
+            <div class="stat-card" data-stat-index="${index}">
+                <div class="stat-icon-wrapper">
+                    ${icon}
+                </div>
+                <div class="stat-value">${stat.value}</div>
+                <div class="stat-label">${stat.label}</div>
+                ${context}
+                ${source}
+            </div>`;
+    }).join('\n');
+
+    return `
+        <section class="statistics-section" aria-label="Key statistics">
+            <div class="statistics-grid">
+                ${statsCards}
+            </div>
+        </section>`;
+}
+
+/**
+ * Generate FAQ HTML with expandable accordions
+ */
+function generateFAQHTML(faq) {
+    if (!faq || !Array.isArray(faq) || faq.length === 0) {
+        return '';
+    }
+
+    const faqItems = faq.map((item, index) => {
+        const isFirst = index === 0;
+        return `
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-question" aria-expanded="${isFirst ? 'true' : 'false'}" aria-controls="faq-answer-${index}">
+                    <span itemprop="name">${item.question}</span>
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                </button>
+                <div class="faq-answer ${isFirst ? 'faq-answer--open' : ''}" id="faq-answer-${index}" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>${item.answer}</p>
+                    </div>
+                </div>
+            </div>`;
+    }).join('\n');
+
+    return `
+        <section class="faq-section" aria-label="Frequently asked questions">
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+            <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
+                ${faqItems}
+            </div>
+        </section>
+        <script>
+            document.querySelectorAll('.faq-question').forEach(button => {
+                button.addEventListener('click', () => {
+                    const expanded = button.getAttribute('aria-expanded') === 'true';
+                    button.setAttribute('aria-expanded', !expanded);
+                    button.nextElementSibling.classList.toggle('faq-answer--open');
+                });
+            });
+        </script>`;
+}
+
+/**
+ * Generate FAQPage JSON-LD schema
+ */
+function generateFAQSchema(faq) {
+    if (!faq || !Array.isArray(faq) || faq.length === 0) {
+        return '';
+    }
+
+    const faqEntries = faq.map(item => ({
+        "@type": "Question",
+        "name": item.question,
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": item.answer
+        }
+    }));
+
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqEntries
+    };
+
+    return `<script type="application/ld+json">
+    ${JSON.stringify(schema, null, 4)}
+    </script>`;
+}
+
+/**
  * Apply template to post data
  */
 function applyTemplate(template, post, allPosts = []) {
@@ -225,6 +345,13 @@ function applyTemplate(template, post, allPosts = []) {
     // Generate related posts HTML
     const relatedPostsHtml = generateRelatedPosts(post, allPosts);
 
+    // Generate statistics cards HTML from frontmatter
+    const statisticsHtml = generateStatisticsHTML(post.frontmatter.statistics);
+
+    // Generate FAQ HTML and schema from frontmatter
+    const faqHtml = generateFAQHTML(post.frontmatter.faq);
+    const faqSchemaHtml = generateFAQSchema(post.frontmatter.faq);
+
     // Replace all placeholders
     let html = template
         .replace(/\{\{title\}\}/g, post.frontmatter.title || 'Untitled')
@@ -241,7 +368,10 @@ function applyTemplate(template, post, allPosts = []) {
         .replace(/\{\{slug\}\}/g, post.slug)
         .replace(/\{\{wordCount\}\}/g, wordCount)
         .replace(/\{\{keywords\}\}/g, keywords)
-        .replace(/\{\{relatedPosts\}\}/g, relatedPostsHtml);
+        .replace(/\{\{relatedPosts\}\}/g, relatedPostsHtml)
+        .replace(/\{\{statistics\}\}/g, statisticsHtml)
+        .replace(/\{\{faq\}\}/g, faqHtml)
+        .replace(/\{\{faqSchema\}\}/g, faqSchemaHtml);
 
     return html;
 }

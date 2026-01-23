@@ -1,15 +1,15 @@
 ---
 name: youtube-to-blog
-description: Convert a YouTube video into an SEO-optimized blog post with visuals. Use this skill when you need to turn a YouTube testimonial, interview, or educational video into a case study or blog article. Triggers on "convert video", "youtube to blog", "case study from video", "testimonial to blog".
+description: Convert a YouTube video into an SEO-optimized, Hampton-style blog post with structured data. Use this skill when you need to turn a YouTube testimonial, interview, or educational video into a case study or blog article. Triggers on "convert video", "youtube to blog", "case study from video", "testimonial to blog".
 argument-hint: <youtube-url> <student-name>
 disable-model-invocation: true
 user-invocable: true
 allowed-tools: Read, Write, Grep, Glob, Bash, WebFetch
 ---
 
-# YouTube to Blog Post Conversion
+# YouTube to Blog Post Conversion (Enhanced Hampton-Style)
 
-Convert a YouTube video into an SEO-optimized, GEO-compliant blog post with visual diagrams.
+Convert a YouTube video into an SEO-optimized, GEO-compliant blog post following Hampton blog patterns with structured data for AI crawlers.
 
 ## Arguments
 
@@ -51,151 +51,68 @@ If APIs fail, instruct the user:
 3. Select 'Open transcript'
 4. Copy all text and paste it here"
 
-## Step 2: Analyze Content
+## Step 2: Structured Data Extraction
+
+Extract information into this JSON template for consistent content generation:
+
+```json
+{
+  "subject": {
+    "name": "",
+    "background": "",
+    "location": "",
+    "previousExperience": ""
+  },
+  "metrics": {
+    "monthlyRevenue": "",
+    "monthlyCashFlow": "",
+    "properties": "",
+    "profitMargin": "",
+    "revenuePerProperty": "",
+    "netPerProperty": "",
+    "timeToFirstProperty": "",
+    "market": ""
+  },
+  "timeline": [
+    {"year": "", "event": "", "details": ""}
+  ],
+  "strategies": [
+    {"name": "", "description": "", "implementation": [], "quote": ""}
+  ],
+  "tools": [
+    {"name": "", "purpose": "", "whyChosen": ""}
+  ],
+  "lessons": [
+    {"title": "", "explanation": "", "actionSteps": []}
+  ],
+  "quotes": [
+    {"text": "", "context": ""}
+  ],
+  "faq": [
+    {"question": "", "answer": ""}
+  ]
+}
+```
 
 From the transcript, extract:
-- **Key metrics** (revenue, timeline, property count, ROI, profit margins)
-- **Story arc** (before → challenge → journey → results)
-- **Memorable quotes** (direct quotes from the speaker - at least 3-5)
+- **Key metrics** (revenue, timeline, property count, ROI, profit margins) - aim for 10+ specific numbers
+- **Story arc** (before -> challenge -> journey -> results)
+- **Memorable quotes** (direct quotes from the speaker - minimum 5)
 - **Lessons learned** (actionable advice shared - aim for 5+)
-- **Tools/Systems mentioned** (software, processes, strategies)
-- **Timeline events** (key milestones with dates/timeframes)
-- **Specific strategies** (unique approaches they used)
+- **Tools/Systems mentioned** (software, processes, strategies with "why chosen")
+- **Timeline events** (key milestones with dates/timeframes - minimum 4)
+- **Specific strategies** (unique approaches they used - minimum 3)
 
-## Step 3: Generate Visual Assets
+## Step 3: Generate Blog Post
 
-Create SVG diagrams to enhance the blog post. Save these in `/assets/images/blog/diagrams/`.
+Create a markdown file with enhanced structure following Hampton-style patterns.
 
-### 3.1 Journey Timeline Diagram
-
-Create an SVG timeline showing the subject's progression:
-
-```svg
-<!-- Save as: /assets/images/blog/diagrams/[slug]-timeline.svg -->
-<svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#6366f1"/>
-      <stop offset="100%" style="stop-color:#22c55e"/>
-    </linearGradient>
-  </defs>
-
-  <!-- Timeline line -->
-  <line x1="50" y1="100" x2="750" y2="100" stroke="url(#lineGradient)" stroke-width="4" stroke-linecap="round"/>
-
-  <!-- Milestone circles and labels -->
-  <circle cx="50" cy="100" r="12" fill="#6366f1"/>
-  <text x="50" y="140" text-anchor="middle" font-family="system-ui" font-size="12" fill="#374151">Starting Point</text>
-  <text x="50" y="70" text-anchor="middle" font-family="system-ui" font-size="11" font-weight="600" fill="#1f2937">[Date/Status]</text>
-
-  <!-- Add more milestones as needed -->
-</svg>
-```
-
-### 3.2 Results Comparison Chart
-
-Create a before/after comparison:
-
-```svg
-<!-- Save as: /assets/images/blog/diagrams/[slug]-results.svg -->
-<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    .title { font: bold 16px system-ui; fill: #1f2937; }
-    .label { font: 12px system-ui; fill: #6b7280; }
-    .value { font: bold 24px system-ui; fill: #1f2937; }
-    .bar-before { fill: #e5e7eb; }
-    .bar-after { fill: #22c55e; }
-  </style>
-
-  <text x="300" y="30" text-anchor="middle" class="title">Results Transformation</text>
-
-  <!-- Before/After bars for each metric -->
-  <g transform="translate(50, 60)">
-    <text x="0" y="15" class="label">Monthly Income</text>
-    <rect x="120" y="0" width="50" height="25" class="bar-before" rx="4"/>
-    <rect x="120" y="30" width="200" height="25" class="bar-after" rx="4"/>
-    <text x="180" y="17" class="label">Before: $0</text>
-    <text x="330" y="47" class="value">$35,000</text>
-  </g>
-</svg>
-```
-
-### 3.3 Strategy Framework Diagram
-
-Create a visual representation of their key strategies:
-
-```svg
-<!-- Save as: /assets/images/blog/diagrams/[slug]-strategy.svg -->
-<svg viewBox="0 0 700 400" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    .box { fill: #f8fafc; stroke: #e2e8f0; stroke-width: 2; rx: 8; }
-    .box-title { font: bold 14px system-ui; fill: #1f2937; }
-    .box-text { font: 12px system-ui; fill: #6b7280; }
-    .center-box { fill: #6366f1; rx: 50; }
-    .center-text { font: bold 16px system-ui; fill: white; }
-    .connector { stroke: #cbd5e1; stroke-width: 2; fill: none; }
-  </style>
-
-  <!-- Central concept -->
-  <ellipse cx="350" cy="200" rx="80" ry="40" class="center-box"/>
-  <text x="350" y="205" text-anchor="middle" class="center-text">Core Strategy</text>
-
-  <!-- Surrounding strategy boxes -->
-  <!-- Add boxes connected to center -->
-</svg>
-```
-
-### 3.4 Tools & Tech Stack Diagram
-
-```svg
-<!-- Save as: /assets/images/blog/diagrams/[slug]-tools.svg -->
-<svg viewBox="0 0 600 250" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    .tool-box { fill: white; stroke: #e5e7eb; stroke-width: 2; rx: 8; }
-    .tool-name { font: bold 13px system-ui; fill: #1f2937; }
-    .tool-purpose { font: 11px system-ui; fill: #6b7280; }
-    .category { font: bold 14px system-ui; fill: #6366f1; }
-  </style>
-
-  <text x="300" y="25" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937">Tech Stack & Tools</text>
-
-  <!-- Tool cards in grid -->
-</svg>
-```
-
-### 3.5 Key Metrics Infographic
-
-```svg
-<!-- Save as: /assets/images/blog/diagrams/[slug]-metrics.svg -->
-<svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    .metric-box { fill: #f8fafc; stroke: #e2e8f0; stroke-width: 1; rx: 12; }
-    .metric-value { font: bold 32px system-ui; fill: #6366f1; }
-    .metric-label { font: 13px system-ui; fill: #6b7280; }
-    .metric-icon { fill: #6366f1; }
-  </style>
-
-  <!-- Metric cards -->
-  <g transform="translate(20, 20)">
-    <rect width="180" height="160" class="metric-box"/>
-    <text x="90" y="80" text-anchor="middle" class="metric-value">$35K</text>
-    <text x="90" y="110" text-anchor="middle" class="metric-label">Monthly Cash Flow</text>
-  </g>
-
-  <!-- Add more metric cards -->
-</svg>
-```
-
-## Step 4: Generate Blog Post
-
-Create a markdown file with this structure:
-
-### Frontmatter (YAML)
+### Enhanced Frontmatter (YAML)
 
 ```yaml
 ---
-title: "How [Name] Made $[Amount]/Month with Airbnb Arbitrage"
-description: "[Name]'s journey from [starting point] to $[amount]/month passive income through Legacy Investing Show's Airbnb arbitrage program."
+title: "How [Name] Built a $[Amount]/Month Airbnb Business: [Key Strategy]"
+description: "[Name]'s journey from [starting point] to $[amount]/month passive income through Legacy Investing Show's Airbnb arbitrage program—including the exact strategies, tools, and lessons learned."
 date: [TODAY'S DATE - YYYY-MM-DD format]
 modifiedDate: [TODAY'S DATE]
 author: Preston Seo
@@ -206,157 +123,251 @@ tags:
   - passive income
   - case study
   - [student first name lowercase]
+  - [market lowercase]
 image: /assets/images/blog/success-stories/[student-slug].jpg
 imageAlt: "[Name]'s Airbnb arbitrage success story"
 featured: false
 youtubeId: "[VIDEO_ID from URL]"
 schema:
   type: Article
-faq:
-  - question: "Is Legacy Investing Show worth it?"
-    answer: "Based on [Name]'s experience, [he/she] achieved [specific result] within [timeframe], demonstrating a strong ROI on the program investment."
-  - question: "How long does it take to see results with Airbnb arbitrage?"
-    answer: "[Name] secured [his/her] first property within [X] days/weeks and achieved positive cash flow by [timeframe]."
-  - question: "Do you need experience to start Airbnb arbitrage?"
-    answer: "[Name] started with [background - e.g., 'no real estate experience'] and was able to build a successful business using the Legacy Investing Show system."
-  - question: "How much does [Name] make per property?"
-    answer: "[Name] targets $[X] gross per property, netting approximately $[Y] after expenses - a [Z]% profit margin."
+
+# Statistics rendered as cards at top of article (AI-crawler accessible)
 statistics:
   - value: "$[AMOUNT]"
-    label: "Monthly Revenue"
+    label: "Monthly Cash Flow"
+    icon: "dollar"
+    context: "After all expenses"
     source: "Student Interview, [Month Year]"
   - value: "[NUMBER]"
-    label: "Properties Managed"
+    label: "Properties"
+    icon: "home"
+    context: "[Market] market"
   - value: "[TIMEFRAME]"
-    label: "Time to First Property"
+    label: "Time to First Deal"
+    icon: "clock"
+    context: "From joining program"
   - value: "[PERCENTAGE]%"
     label: "Profit Margin"
+    icon: "percent"
+    context: "Net after expenses"
+
+# FAQ section rendered with accordion and FAQPage schema
+faq:
+  - question: "Is Legacy Investing Show worth the investment?"
+    answer: "Based on [Name]'s experience, [he/she] achieved $[amount]/month within [timeframe], demonstrating significant ROI on the program investment. The program provided [specific value: mentorship, community, systems, scripts]."
+  - question: "How long does it take to see results with Airbnb arbitrage?"
+    answer: "[Name] secured [his/her] first property within [X] days/weeks and achieved positive cash flow by [timeframe]. Results vary based on market and effort level."
+  - question: "Do you need real estate experience to start Airbnb arbitrage?"
+    answer: "[Name] started with [background description] and built a successful business using the Legacy Investing Show system. The program provides complete training from zero experience."
+  - question: "How much does [Name] make per property?"
+    answer: "[Name] targets $[X] gross per property, netting approximately $[Y] after expenses—a [Z]% profit margin on each unit."
+  - question: "What market is best for Airbnb arbitrage?"
+    answer: "[Name] chose [market] because of [specific reasons: demand drivers, cost arbitrage, demographics]. The best market depends on your location, capital, and target guests."
+  - question: "How much capital do you need to start?"
+    answer: "[Name] recommends having $[amount] for your first property, covering [breakdown: first month rent, security deposit, furniture, supplies]."
 ---
 ```
 
-### Content Structure (Enhanced)
+### Content Structure (Hampton-Style, 3,000+ words)
 
 ```markdown
-**[Name] went from [starting situation] to earning $[amount]/month in passive income through Airbnb arbitrage.** After joining Legacy Investing Show, [he/she] secured [his/her] first property in [timeframe] and has since scaled to [X] properties generating consistent monthly revenue.
+**[Name] went from [starting situation] to earning $[amount]/month in passive income through Airbnb arbitrage.** After joining Legacy Investing Show, [he/she] secured [his/her] first property in [timeframe] and has since scaled to [X] properties generating consistent monthly revenue in [market].
 
-![Key metrics showing [Name]'s results](/assets/images/blog/diagrams/[slug]-metrics.svg)
+## Quick Facts
+
+- **Monthly Cash Flow**: $[amount] after all expenses
+- **Properties**: [number] managed in [market]
+- **Profit Margin**: [percentage]% net
+- **Time to First Property**: [timeframe]
+- **Key Strategy**: [primary differentiator]
+- **Background**: [brief description]
 
 ## The Background
 
-[3-4 paragraphs about their situation before - be detailed]
+[4-5 paragraphs about their situation before joining, including:]
 - Professional background and career history
-- How they first discovered real estate/Airbnb
-- Initial experiences and experiments
-- What was missing or what they were looking for
+- Financial situation and goals
+- How they discovered real estate/Airbnb
+- Initial skepticism or concerns
+- What motivated them to take action
+
+> "[Direct quote about their starting point or motivation]"
+
+## The Journey Timeline
+
+### [Year]: [Starting Point]
+[2-3 paragraphs about where they began, their first exposure to the concept]
+
+### [Year]: Discovery Phase
+[2-3 paragraphs about research, finding Legacy Investing Show, decision to join]
+
+### [Year]: First Property
+[2-3 paragraphs about their first deal, challenges faced, lessons learned]
+
+### [Year]: Scaling Up
+[2-3 paragraphs about growth, systems developed, current state]
 
 ## Why [Market] Was the Perfect Choice
 
-[2-3 paragraphs about market selection with specific reasoning]
-- Data-driven reasons for choosing the market
+[3-4 paragraphs about market selection with specific data:]
 - Demand drivers (tourism, business travel, events, tech companies)
-- Cost arbitrage opportunities
+- Cost arbitrage opportunities (rent vs. nightly rates)
+- Competition analysis (how they differentiate)
 - Personal connection to the area
+- Specific neighborhoods or property types that work
 
-![Timeline of [Name]'s journey](/assets/images/blog/diagrams/[slug]-timeline.svg)
+> "[Quote about market selection or insight about their area]"
 
-## The Strategy That Sets [Name] Apart
+## The Strategies That Set [Name] Apart
 
-### [Strategy 1 Name]
+### Strategy 1: [Name - e.g., "Pool Requirement"]
 
-[Detailed explanation with specific examples - 2-3 paragraphs]
+[4-5 paragraphs explaining this strategy in depth:]
+- What the strategy is
+- Why it works in their market
+- Specific implementation details
+- Results/data from using this approach
+- How beginners can apply it
 
-### [Strategy 2 Name]
+**Key Insight**: "[Direct quote about this strategy]"
 
-[Detailed explanation with specific examples - 2-3 paragraphs]
+**Implementation Steps**:
+1. [Specific action item]
+2. [Specific action item]
+3. [Specific action item]
 
-### [Strategy 3 Name]
+### Strategy 2: [Name - e.g., "Demographic Targeting"]
 
-[Detailed explanation with specific examples - 2-3 paragraphs]
+[4-5 paragraphs with same structure as above]
 
-![Strategy framework diagram](/assets/images/blog/diagrams/[slug]-strategy.svg)
+**Key Insight**: "[Direct quote]"
+
+**Implementation Steps**:
+1. [Specific action item]
+2. [Specific action item]
+3. [Specific action item]
+
+### Strategy 3: [Name - e.g., "Premium Amenities"]
+
+[4-5 paragraphs with same structure as above]
+
+**Key Insight**: "[Direct quote]"
+
+**Implementation Steps**:
+1. [Specific action item]
+2. [Specific action item]
+3. [Specific action item]
 
 ## The Results
 
 ### By the Numbers
 
-| Metric | Result |
-|--------|--------|
-| Monthly Cash Flow | $[Amount] |
-| Gross Revenue Per Property | $[Amount] |
-| Net Profit Per Property | $[Amount] |
-| Properties Managed | [Number] |
-| Profit Margin | [Percentage]% |
-| Time to First Property | [Timeframe] |
-| Market | [Location] |
+| Metric | Before | After |
+|--------|--------|-------|
+| Monthly Income | $[amount] | $[amount] |
+| Properties | 0 | [number] |
+| Cash Flow Per Property | N/A | $[amount] |
+| Profit Margin | N/A | [percentage]% |
+| Time Freedom | [description] | [description] |
 
-![Results comparison](/assets/images/blog/diagrams/[slug]-results.svg)
+### Financial Breakdown
+
+| Property Type | Gross Revenue | Expenses | Net Profit |
+|---------------|---------------|----------|------------|
+| [Type 1] | $[amount] | $[amount] | $[amount] |
+| [Type 2] | $[amount] | $[amount] | $[amount] |
+| Average | $[amount] | $[amount] | $[amount] |
 
 ### Key Achievements
-- [Achievement 1 with specific detail and context]
-- [Achievement 2 with specific detail and context]
-- [Achievement 3 with specific detail and context]
-- [Achievement 4 with specific detail and context]
+- [Achievement 1 with specific numbers and context]
+- [Achievement 2 with specific numbers and context]
+- [Achievement 3 with specific numbers and context]
+- [Achievement 4 with specific numbers and context]
+- [Achievement 5 with specific numbers and context]
 
 ## Key Lessons from [Name]'s Journey
 
-> "[Direct quote from video about a key insight]"
+> "[Impactful quote about the overall experience]"
 
-### 1. [Lesson Title]
+### 1. [Lesson Title - e.g., "Start Before You're Ready"]
 
-[2-3 paragraphs explaining this lesson with specific examples from their story]
+[3-4 paragraphs explaining this lesson:]
+- What they learned
+- How they learned it (specific story/example)
+- Why it matters for beginners
+- How to apply it
+
+**Action Steps**:
+- [Specific thing readers can do]
+- [Specific thing readers can do]
 
 ### 2. [Lesson Title]
 
-[2-3 paragraphs explaining this lesson with specific examples]
+[3-4 paragraphs with same structure]
+
+**Action Steps**:
+- [Specific thing readers can do]
+- [Specific thing readers can do]
 
 ### 3. [Lesson Title]
 
-[2-3 paragraphs explaining this lesson with specific examples]
+[3-4 paragraphs with same structure]
+
+**Action Steps**:
+- [Specific thing readers can do]
+- [Specific thing readers can do]
 
 ### 4. [Lesson Title]
 
-[2-3 paragraphs explaining this lesson with specific examples]
+[3-4 paragraphs with same structure]
+
+**Action Steps**:
+- [Specific thing readers can do]
+- [Specific thing readers can do]
 
 ### 5. [Lesson Title]
 
-[2-3 paragraphs explaining this lesson with specific examples]
+[3-4 paragraphs with same structure]
+
+**Action Steps**:
+- [Specific thing readers can do]
+- [Specific thing readers can do]
 
 ## Tools & Systems [Name] Uses
 
-![Tools and tech stack](/assets/images/blog/diagrams/[slug]-tools.svg)
+| Tool | Purpose | Why Chosen |
+|------|---------|------------|
+| [Tool 1] | [What it does] | [Specific reason/benefit] |
+| [Tool 2] | [What it does] | [Specific reason/benefit] |
+| [Tool 3] | [What it does] | [Specific reason/benefit] |
+| [Tool 4] | [What it does] | [Specific reason/benefit] |
+| [Tool 5] | [What it does] | [Specific reason/benefit] |
 
-| Tool | Purpose |
-|------|---------|
-| [Tool 1] | [What it's used for] |
-| [Tool 2] | [What it's used for] |
-| [Tool 3] | [What it's used for] |
-| [Tool 4] | [What it's used for] |
+### Detailed Tool Breakdown
+
+**[Tool 1 Name]**: [2-3 sentences explaining how they use it, specific features they rely on, and any tips]
+
+**[Tool 2 Name]**: [2-3 sentences with same structure]
+
+**[Tool 3 Name]**: [2-3 sentences with same structure]
 
 ## [Name]'s Advice for Beginners
 
-> "[Inspirational quote from the video]"
+> "[Inspirational or practical quote from the video]"
 
-[3-4 paragraphs of detailed advice they shared, organized by theme]
+[4-5 paragraphs of actionable advice organized by theme:]
 
-## Frequently Asked Questions
+### Getting Started
+[Advice for people just beginning]
 
-### Is Legacy Investing Show worth the investment?
-Based on [Name]'s experience, [he/she] invested in the program and achieved $[amount]/month within [timeframe]. The program provided [specific value: mentorship, community, systems, etc.] that accelerated [his/her] success.
+### Finding Properties
+[Advice on property selection and negotiation]
 
-### How much money do you need to start Airbnb investing?
-[Name] recommends having $[amount] for your first property, covering [detailed breakdown of costs].
+### Building Systems
+[Advice on automation and scaling]
 
-### Can you do this while working a full-time job?
-[Detailed answer based on their experience]
-
-### What markets are best for Airbnb investing?
-[Name] chose [market] because of [specific reasons]. Key factors to consider include [list factors].
-
-### How do you find properties with pools and premium amenities?
-[Detailed answer if applicable]
-
-### What's the biggest mistake beginners make?
-[Answer based on their insights]
+### Mindset
+[Advice on mental approach and persistence]
 
 ## Watch [Name]'s Full Interview
 
@@ -366,65 +377,118 @@ Based on [Name]'s experience, [he/she] invested in the program and achieved $[am
 
 Legacy Investing Show is Preston Seo's comprehensive training program that has helped over 2,000 students build profitable Airbnb businesses. The program teaches the complete system for finding, analyzing, and managing short-term rental properties to generate passive income—whether through arbitrage, ownership, or co-hosting.
 
-[Learn more about the Legacy Investing Show program →](/programs)
+[Learn more about the Legacy Investing Show program →](/programs.html)
 
 ---
 
 *This case study is based on [Name]'s interview conducted in [Month Year]. Results may vary based on individual effort, market conditions, and investment capital.*
 ```
 
-## Step 5: Save Files
+## Step 4: Save Blog Post
 
-1. Save markdown to: `content/blog/[student-slug].md`
-   - Note: Save directly in content/blog/, NOT in a subdirectory (build script limitation)
+Save markdown to: `content/blog/[student-slug].md`
+- Note: Save directly in content/blog/, NOT in a subdirectory
 
-2. Save SVG diagrams to: `assets/images/blog/diagrams/`
-   - `[slug]-timeline.svg`
-   - `[slug]-results.svg`
-   - `[slug]-strategy.svg`
-   - `[slug]-tools.svg`
-   - `[slug]-metrics.svg`
-
-3. Ensure the diagrams directory exists:
-```bash
-mkdir -p assets/images/blog/diagrams
-```
-
-## Step 6: Verify Output
+## Step 5: Verify Output
 
 After generating, verify:
 - [ ] Frontmatter is valid YAML
-- [ ] All statistics have values (no placeholders like [AMOUNT])
-- [ ] FAQ section has 5-6 questions
+- [ ] All statistics have real values (no placeholders like [AMOUNT])
+- [ ] Statistics include icon field (dollar, home, clock, percent, chart, location)
+- [ ] Statistics include context field for meaning
+- [ ] FAQ section has 6+ questions with detailed answers
 - [ ] Answer-first format (first paragraph contains key result)
 - [ ] YouTube video ID is correct
-- [ ] Word count is 2,000+ words (enhanced requirement)
-- [ ] All SVG files are valid and saved
-- [ ] SVG paths in markdown match actual file locations
+- [ ] Word count is 3,000+ words (use `wc -w`)
+- [ ] At least 5 direct quotes from the video
+- [ ] At least 10 specific data points (numbers, percentages)
+- [ ] All 5 lessons have action steps
+- [ ] Tools table includes "Why Chosen" column
+- [ ] Timeline has at least 4 milestones
+- [ ] Tables are properly formatted markdown
+- [ ] No SVG image references (use tables and stat cards instead)
 
-## Step 7: Build and Deploy
+## Step 6: Build and Deploy
 
 ```bash
-# Build the blog
+# Build the blog (compiles markdown to HTML)
 npm run build:blog
+
+# Build CSS (if needed)
+npm run build:css
 
 # Preview locally
 npm run start
 # Preview at http://localhost:3000/blog/[student-slug]
 
+# Verify statistics render as cards
+# Verify FAQ section renders with accordions
+# Verify FAQPage schema in page source
+
 # Commit and push for Vercel deployment
-git add content/blog/[slug].md assets/images/blog/diagrams/[slug]-*.svg blog/
-git commit -m "Add [Name]'s success story with visual diagrams"
+git add content/blog/[slug].md blog/
+git commit -m "Add [Name]'s success story blog post"
 git push origin main
 ```
 
 ## Quality Standards
 
+### Content Requirements
+- **Minimum 3,000 words** for comprehensive coverage
+- **At least 6 major sections** with 2-3 subsections each
+- **5+ direct quotes** from the video with context
+- **10+ specific data points** (numbers, percentages, timeframes)
+- **Before/After comparison** in results section
+- **Implementation steps** for each strategy (actionable)
+- **Full tools breakdown** with "why chosen" rationale
+- **4+ timeline milestones** showing progression
+
+### SEO & AI Requirements
 - **E-E-A-T Compliance**: All facts must come from the video transcript
 - **GEO Optimization**: First paragraph must directly answer "what results did they achieve?"
-- **Statistics**: Include 5+ specific numbers with context
-- **Visual Content**: Include 3-5 custom SVG diagrams
-- **FAQ Schema**: Questions should be what users actually search for (6+ questions)
-- **No Fabrication**: Only include information from the actual video
-- **Word Count**: Minimum 2,000 words for comprehensive coverage
-- **Quotes**: Include at least 3 direct quotes from the interview
+- **Statistics in frontmatter**: Rendered as HTML cards (AI-crawler accessible)
+- **FAQ in frontmatter**: Rendered with FAQPage JSON-LD schema
+- **No SVG diagrams**: Use tables and structured HTML instead
+- **Mobile-responsive**: All content works on small screens
+
+### What NOT to Include
+- SVG diagram references (replaced by stat cards and tables)
+- Placeholder text like [AMOUNT] or [NAME]
+- Fabricated information not from the video
+- Generic advice not specific to this person's story
+- External links to competitor programs
+
+## Example Statistics Frontmatter
+
+```yaml
+statistics:
+  - value: "$35,000"
+    label: "Monthly Cash Flow"
+    icon: "dollar"
+    context: "After all expenses"
+    source: "Interview, January 2025"
+  - value: "7"
+    label: "Properties"
+    icon: "home"
+    context: "Austin, Texas market"
+  - value: "6 weeks"
+    label: "Time to First Deal"
+    icon: "clock"
+    context: "From joining program"
+  - value: "50%"
+    label: "Profit Margin"
+    icon: "percent"
+    context: "$5-6K net per property"
+```
+
+## Example FAQ Frontmatter
+
+```yaml
+faq:
+  - question: "How much does Gary make from Airbnb arbitrage?"
+    answer: "Gary generates approximately $35,000 per month in cash flow from 7 properties in Austin, Texas. Each property brings in $7,000-10,000 gross, with a 50% profit margin after all expenses."
+  - question: "What makes Gary's Airbnb strategy different?"
+    answer: "Gary requires every property to have a pool—non-negotiable in Austin's 110-degree summers. This single filter narrows competition from 8,000+ listings to under 500, commanding premium rates."
+  - question: "How long did it take Gary to reach $35K/month?"
+    answer: "Gary secured his first property within 6 weeks of joining Legacy Investing Show and scaled to 7 properties over 3 years. His systematic approach to market research and amenity requirements accelerated his growth."
+```
