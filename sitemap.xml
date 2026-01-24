@@ -3,47 +3,47 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://legacyinvestingshow.com/</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-01-24</lastmod>
   </url>
   <url>
     <loc>https://legacyinvestingshow.com/about.html</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-01-24</lastmod>
   </url>
   <url>
     <loc>https://legacyinvestingshow.com/programs.html</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-01-24</lastmod>
   </url>
   <url>
     <loc>https://legacyinvestingshow.com/success-stories.html</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-01-24</lastmod>
   </url>
   <url>
     <loc>https://legacyinvestingshow.com/blog/</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-01-24</lastmod>
   </url>
   <url>
     <loc>https://legacyinvestingshow.com/topics/airbnb-arbitrage.html</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-01-24</lastmod>
   </url>
   <url>
     <loc>https://legacyinvestingshow.com/topics/tax-strategies.html</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-01-24</lastmod>
   </url>
   <url>
     <loc>https://legacyinvestingshow.com/topics/investing.html</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-01-24</lastmod>
   </url>
   <url>
     <loc>https://legacyinvestingshow.com/topics/business-structures.html</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-01-24</lastmod>
   </url>
   <url>
     <loc>https://legacyinvestingshow.com/topics/retirement.html</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-01-24</lastmod>
   </url>
   <url>
     <loc>https://legacyinvestingshow.com/topics/debt-management.html</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-01-24</lastmod>
   </url>
   <url>
     <loc>https://legacyinvestingshow.com/blog/2-deals-10000-month-profit.html</loc>
@@ -275,5 +275,81 @@
     <image:image>
       <image:loc>https://legacyinvestingshow.com/assets/images/blog/success-stories/tom-chesapeake-bay.jpg</image:loc>
     </image:image>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow.com/tax-strategies/</loc>
+    <lastmod>2026-01-24</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow.com/tax-strategies/1031-exchange.html</loc>
+    <lastmod>2026-01-24</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow.com/tax-strategies/augusta-rule.html</loc>
+    <lastmod>2026-01-24</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow.com/tax-strategies/bonus-depreciation.html</loc>
+    <lastmod>2026-01-24</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow.com/tax-strategies/cost-segregation.html</loc>
+    <lastmod>2026-01-24</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow.com/tax-strategies/for/airbnb-hosts.html</loc>
+    <lastmod>2026-01-24</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow.com/tax-strategies/for/business-owners.html</loc>
+    <lastmod>2026-01-24</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow.com/tax-strategies/for/high-income-earners.html</loc>
+    <lastmod>2026-01-24</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow.com/tax-strategies/for/real-estate-investors.html</loc>
+    <lastmod>2026-01-24</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow.com/tax-strategies/for/self-employed.html</loc>
+    <lastmod>2026-01-24</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow.com/tax-strategies/for/w2-employees.html</loc>
+    <lastmod>2026-01-24</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow.com/tax-strategies/hsa-strategy.html</loc>
+    <lastmod>2026-01-24</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow.com/tax-strategies/opportunity-zones.html</loc>
+    <lastmod>2026-01-24</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow.com/tax-strategies/real-estate-professional-status.html</loc>
+    <lastmod>2026-01-24</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow.com/tax-strategies/s-corp-strategy.html</loc>
+    <lastmod>2026-01-24</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow.com/tax-strategies/section-179.html</loc>
+    <lastmod>2026-01-24</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow.com/tax-strategies/self-directed-ira.html</loc>
+    <lastmod>2026-01-24</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow.com/tax-strategies/short-term-rental-loophole.html</loc>
+    <lastmod>2026-01-24</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow.com/tax-strategies/solo-401k.html</loc>
+    <lastmod>2026-01-24</lastmod>
   </url>
 </urlset>

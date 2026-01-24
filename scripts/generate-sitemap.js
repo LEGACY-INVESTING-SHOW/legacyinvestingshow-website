@@ -36,6 +36,11 @@ const topicPages = [
   { url: '/topics/debt-management.html' },
 ];
 
+// Programmatic SEO directories to scan
+const programmaticDirs = [
+  'tax-strategies',
+];
+
 /**
  * Get current date in W3C format (YYYY-MM-DD)
  */
@@ -137,6 +142,61 @@ function scanBlogPosts() {
 }
 
 /**
+ * Scan programmatic SEO directories for pages
+ */
+function scanProgrammaticPages() {
+  const pages = [];
+
+  for (const dirName of programmaticDirs) {
+    const dir = path.join(ROOT_DIR, dirName);
+
+    if (!fs.existsSync(dir)) {
+      console.log(`Directory ${dirName} not found, skipping`);
+      continue;
+    }
+
+    // Add index page
+    const indexPath = path.join(dir, 'index.html');
+    if (fs.existsSync(indexPath)) {
+      const stats = fs.statSync(indexPath);
+      pages.push({
+        url: `/${dirName}/`,
+        lastmod: getW3CDate(stats.mtime),
+      });
+    }
+
+    // Scan for HTML files
+    const entries = fs.readdirSync(dir, { withFileTypes: true });
+    for (const entry of entries) {
+      if (entry.isFile() && entry.name.endsWith('.html') && entry.name !== 'index.html') {
+        const fullPath = path.join(dir, entry.name);
+        const stats = fs.statSync(fullPath);
+        pages.push({
+          url: `/${dirName}/${entry.name}`,
+          lastmod: getW3CDate(stats.mtime),
+        });
+      } else if (entry.isDirectory()) {
+        // Scan subdirectories (e.g., /tax-strategies/for/)
+        const subDir = path.join(dir, entry.name);
+        const subEntries = fs.readdirSync(subDir, { withFileTypes: true });
+        for (const subEntry of subEntries) {
+          if (subEntry.isFile() && subEntry.name.endsWith('.html')) {
+            const fullPath = path.join(subDir, subEntry.name);
+            const stats = fs.statSync(fullPath);
+            pages.push({
+              url: `/${dirName}/${entry.name}/${subEntry.name}`,
+              lastmod: getW3CDate(stats.mtime),
+            });
+          }
+        }
+      }
+    }
+  }
+
+  return pages;
+}
+
+/**
  * Generate XML sitemap
  */
 function generateSitemap() {
@@ -171,6 +231,15 @@ function generateSitemap() {
       loc: `${SITE_URL}${post.url}`,
       lastmod: post.lastmod,
       image: post.image,
+    });
+  }
+
+  // Add programmatic SEO pages (tax strategies, etc.)
+  const programmaticPages = scanProgrammaticPages();
+  for (const page of programmaticPages) {
+    urls.push({
+      loc: `${SITE_URL}${page.url}`,
+      lastmod: page.lastmod,
     });
   }
 

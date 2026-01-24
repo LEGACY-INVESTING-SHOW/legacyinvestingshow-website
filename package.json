@@ -9,7 +9,8 @@
     "build:sitemap": "node scripts/generate-sitemap.js",
     "build:rss": "node scripts/generate-rss.js",
     "build:images": "node scripts/optimize-images.js",
-    "build": "npm run build:css && npm run build:blog && npm run build:sitemap && npm run build:rss",
+    "build:tax-strategies": "node scripts/build-tax-strategies.js",
+    "build": "npm run build:css && npm run build:blog && npm run build:tax-strategies && npm run build:sitemap && npm run build:rss",
     "start": "npx serve ."
   },
   "dependencies": {

@@ -1,0 +1,402 @@
+{
+  "strategies": [
+    {
+      "slug": "cost-segregation",
+      "title": "Cost Segregation",
+      "shortDescription": "Accelerate depreciation on rental properties to reduce taxable income",
+      "fullDescription": "Cost segregation is a tax strategy that allows real estate investors to accelerate depreciation deductions by reclassifying components of a building into shorter depreciation periods. Instead of depreciating the entire property over 27.5 or 39 years, certain components like carpeting, appliances, and landscaping can be depreciated over 5, 7, or 15 years.",
+      "keywords": ["cost segregation", "cost segregation study", "accelerated depreciation", "real estate tax strategy"],
+      "benefitsFor": ["Real estate investors", "Airbnb hosts", "Commercial property owners", "High-income earners"],
+      "potentialSavings": "$20,000 - $100,000+ in year one",
+      "minimumPropertyValue": "$500,000",
+      "bestFor": "Properties worth $500K+ purchased or renovated recently",
+      "complexity": "Advanced",
+      "professionalRequired": true,
+      "typicalCost": "$5,000 - $15,000 for a study",
+      "irsReference": "IRC Section 168",
+      "relatedStrategies": ["bonus-depreciation", "1031-exchange", "real-estate-professional-status"],
+      "faqs": [
+        {
+          "question": "What is cost segregation?",
+          "answer": "Cost segregation is a tax planning strategy that identifies and reclassifies personal property assets to shorten depreciation time, resulting in substantial tax savings through accelerated depreciation deductions."
+        },
+        {
+          "question": "Who benefits most from cost segregation?",
+          "answer": "Real estate investors with properties worth $500,000 or more benefit most, especially those who purchased, constructed, or renovated properties in the last 10-15 years."
+        },
+        {
+          "question": "How much does a cost segregation study cost?",
+          "answer": "A typical cost segregation study costs between $5,000 and $15,000, depending on property size and complexity. The tax savings usually far exceed the study cost."
+        }
+      ]
+    },
+    {
+      "slug": "bonus-depreciation",
+      "title": "Bonus Depreciation",
+      "shortDescription": "Deduct 60% of qualifying property costs in the first year (2024)",
+      "fullDescription": "Bonus depreciation allows investors to immediately deduct a large percentage of the purchase price of eligible assets. For 2024, the bonus depreciation rate is 60%, stepping down to 40% in 2025 and 20% in 2026 before phasing out completely in 2027 unless Congress extends it.",
+      "keywords": ["bonus depreciation", "100 percent bonus depreciation", "accelerated depreciation 2024", "tax cuts and jobs act depreciation"],
+      "benefitsFor": ["Business owners", "Real estate investors", "Equipment purchasers", "Vehicle buyers"],
+      "potentialSavings": "60% of asset cost as immediate deduction",
+      "minimumPropertyValue": "No minimum",
+      "bestFor": "New equipment, vehicles, and property improvements",
+      "complexity": "Intermediate",
+      "professionalRequired": false,
+      "typicalCost": "Included in standard tax preparation",
+      "irsReference": "IRC Section 168(k)",
+      "relatedStrategies": ["cost-segregation", "section-179", "vehicle-deductions"],
+      "faqs": [
+        {
+          "question": "What qualifies for bonus depreciation?",
+          "answer": "Qualifying property includes new and used tangible property with a recovery period of 20 years or less, certain computer software, and qualified improvement property."
+        },
+        {
+          "question": "What is the bonus depreciation rate for 2024?",
+          "answer": "The bonus depreciation rate for 2024 is 60%. It will decrease to 40% in 2025, 20% in 2026, and phase out completely in 2027."
+        },
+        {
+          "question": "Can bonus depreciation create a loss?",
+          "answer": "Yes, bonus depreciation can create or increase a net operating loss (NOL), which can be carried forward to offset future income."
+        }
+      ]
+    },
+    {
+      "slug": "1031-exchange",
+      "title": "1031 Exchange",
+      "shortDescription": "Defer capital gains taxes by reinvesting proceeds into like-kind property",
+      "fullDescription": "A 1031 exchange, named after Section 1031 of the IRS code, allows real estate investors to defer paying capital gains taxes when they sell an investment property and reinvest the proceeds into another 'like-kind' property. This powerful strategy lets investors grow their portfolio tax-free as long as they continue exchanging properties.",
+      "keywords": ["1031 exchange", "like kind exchange", "tax deferred exchange", "starker exchange"],
+      "benefitsFor": ["Real estate investors", "Property flippers", "Landlords", "Commercial property owners"],
+      "potentialSavings": "15-20% capital gains tax deferral",
+      "minimumPropertyValue": "No minimum",
+      "bestFor": "Investors looking to upgrade or diversify their real estate portfolio",
+      "complexity": "Advanced",
+      "professionalRequired": true,
+      "typicalCost": "$1,000 - $3,000 for qualified intermediary",
+      "irsReference": "IRC Section 1031",
+      "relatedStrategies": ["cost-segregation", "opportunity-zones", "installment-sales"],
+      "faqs": [
+        {
+          "question": "What is the 45-day rule in a 1031 exchange?",
+          "answer": "You must identify potential replacement properties within 45 days of selling your original property. You can identify up to three properties regardless of value, or more properties if their total value doesn't exceed 200% of the sold property."
+        },
+        {
+          "question": "What is the 180-day rule in a 1031 exchange?",
+          "answer": "You must close on the replacement property within 180 days of selling the original property, or by your tax return due date (including extensions), whichever comes first."
+        },
+        {
+          "question": "Can you do a 1031 exchange on your primary residence?",
+          "answer": "No, 1031 exchanges only apply to investment or business property. However, you can convert a primary residence to a rental property and then do a 1031 exchange after holding it as an investment."
+        }
+      ]
+    },
+    {
+      "slug": "real-estate-professional-status",
+      "title": "Real Estate Professional Status (REPS)",
+      "shortDescription": "Unlock unlimited passive loss deductions against ordinary income",
+      "fullDescription": "Real Estate Professional Status is an IRS designation that allows qualifying taxpayers to deduct rental real estate losses against their ordinary income without passive activity loss limitations. This can result in significant tax savings for high-income earners who materially participate in their real estate activities.",
+      "keywords": ["real estate professional status", "REPS tax status", "passive loss limitations", "material participation"],
+      "benefitsFor": ["Full-time real estate investors", "Real estate agents", "Property managers", "High-income spouses"],
+      "potentialSavings": "Unlimited passive losses against W-2 income",
+      "minimumPropertyValue": "No minimum",
+      "bestFor": "Those who spend 750+ hours annually in real estate activities",
+      "complexity": "Advanced",
+      "professionalRequired": true,
+      "typicalCost": "Included in tax preparation, but requires detailed time tracking",
+      "irsReference": "IRC Section 469(c)(7)",
+      "relatedStrategies": ["cost-segregation", "bonus-depreciation", "short-term-rental-loophole"],
+      "faqs": [
+        {
+          "question": "What are the requirements for Real Estate Professional Status?",
+          "answer": "You must spend more than 750 hours in real estate activities AND more than half of your total working hours must be in real estate. You must also materially participate in each rental activity."
+        },
+        {
+          "question": "Can a spouse qualify for REPS?",
+          "answer": "Yes, if one spouse qualifies as a real estate professional, both spouses can benefit on a joint return, even if the other spouse has a full-time W-2 job."
+        },
+        {
+          "question": "How do I prove Real Estate Professional Status?",
+          "answer": "Keep detailed contemporaneous time logs documenting your real estate activities. The IRS may audit REPS claims, so thorough documentation is essential."
+        }
+      ]
+    },
+    {
+      "slug": "short-term-rental-loophole",
+      "title": "Short-Term Rental Loophole",
+      "shortDescription": "Deduct Airbnb losses against W-2 income without REPS",
+      "fullDescription": "The short-term rental loophole allows Airbnb and vacation rental owners to bypass passive activity loss rules without qualifying as a Real Estate Professional. If your average guest stay is 7 days or less AND you materially participate in the rental activity, the IRS treats it as a non-passive activity, allowing you to deduct losses against ordinary income.",
+      "keywords": ["short term rental loophole", "airbnb tax loophole", "STR tax strategy", "vacation rental tax benefits"],
+      "benefitsFor": ["Airbnb hosts", "Vacation rental owners", "W-2 employees with side rentals", "High-income earners"],
+      "potentialSavings": "$30,000 - $100,000+ in tax deductions",
+      "minimumPropertyValue": "No minimum",
+      "bestFor": "W-2 employees who want real estate tax benefits without REPS",
+      "complexity": "Intermediate",
+      "professionalRequired": true,
+      "typicalCost": "Included in tax preparation with STR experience",
+      "irsReference": "IRC Section 469 & Reg 1.469-1T(e)(3)",
+      "relatedStrategies": ["cost-segregation", "bonus-depreciation", "real-estate-professional-status"],
+      "faqs": [
+        {
+          "question": "What is the 7-day rule for short-term rentals?",
+          "answer": "If your average guest stay is 7 days or less, the rental is not considered a 'rental activity' under passive activity rules. This means you can deduct losses against active income if you materially participate."
+        },
+        {
+          "question": "What counts as material participation for STRs?",
+          "answer": "You must meet one of seven IRS tests, most commonly: spending 500+ hours on the rental activity, OR more hours than anyone else, OR 100+ hours if no one else spent more time."
+        },
+        {
+          "question": "Can I combine this with cost segregation?",
+          "answer": "Yes! Combining the STR loophole with cost segregation can create massive year-one deductions. Many investors show $50,000-$100,000+ in paper losses to offset W-2 income."
+        }
+      ]
+    },
+    {
+      "slug": "section-179",
+      "title": "Section 179 Deduction",
+      "shortDescription": "Immediately expense up to $1.16M in business equipment",
+      "fullDescription": "Section 179 allows businesses to deduct the full purchase price of qualifying equipment and software purchased during the tax year, rather than depreciating it over time. For 2024, the deduction limit is $1,160,000 with a phase-out threshold of $2,890,000.",
+      "keywords": ["section 179", "section 179 deduction", "equipment expensing", "business tax deduction"],
+      "benefitsFor": ["Small business owners", "Self-employed individuals", "Equipment-heavy businesses", "Vehicle purchasers"],
+      "potentialSavings": "Up to $1,160,000 immediate deduction",
+      "minimumPropertyValue": "No minimum",
+      "bestFor": "Businesses purchasing equipment, vehicles, or software",
+      "complexity": "Beginner",
+      "professionalRequired": false,
+      "typicalCost": "Included in standard tax preparation",
+      "irsReference": "IRC Section 179",
+      "relatedStrategies": ["bonus-depreciation", "vehicle-deductions", "home-office-deduction"],
+      "faqs": [
+        {
+          "question": "What is the Section 179 limit for 2024?",
+          "answer": "For 2024, the Section 179 deduction limit is $1,160,000. The deduction begins to phase out when total equipment purchases exceed $2,890,000."
+        },
+        {
+          "question": "What qualifies for Section 179?",
+          "answer": "Qualifying property includes tangible personal property, off-the-shelf software, qualified improvement property, and certain vehicles used for business."
+        },
+        {
+          "question": "Can Section 179 create a loss?",
+          "answer": "No, Section 179 cannot create or increase a net operating loss. The deduction is limited to your taxable business income. However, you can use bonus depreciation for amounts exceeding this limit."
+        }
+      ]
+    },
+    {
+      "slug": "self-directed-ira",
+      "title": "Self-Directed IRA",
+      "shortDescription": "Invest retirement funds in real estate, businesses, and alternative assets",
+      "fullDescription": "A Self-Directed IRA allows you to invest your retirement funds in a wider range of assets beyond stocks and bonds, including real estate, private businesses, precious metals, and more. All income and gains grow tax-deferred (Traditional) or tax-free (Roth).",
+      "keywords": ["self directed ira", "sdira real estate", "ira real estate investing", "alternative ira investments"],
+      "benefitsFor": ["Real estate investors", "Business owners", "Alternative asset investors", "Retirement savers"],
+      "potentialSavings": "Tax-deferred or tax-free growth on investments",
+      "minimumPropertyValue": "Varies by custodian",
+      "bestFor": "Investors who want to diversify retirement funds into real estate",
+      "complexity": "Advanced",
+      "professionalRequired": true,
+      "typicalCost": "$200 - $500/year custodian fees",
+      "irsReference": "IRC Section 408",
+      "relatedStrategies": ["solo-401k", "roth-conversion", "mega-backdoor-roth"],
+      "faqs": [
+        {
+          "question": "What can I invest in with a Self-Directed IRA?",
+          "answer": "You can invest in real estate, private equity, precious metals, tax liens, promissory notes, and more. Prohibited investments include life insurance, collectibles, and S-corp stock."
+        },
+        {
+          "question": "Can I buy rental property with my IRA?",
+          "answer": "Yes, but all expenses must be paid from the IRA, and all income must return to the IRA. You cannot personally use the property or perform your own repairs."
+        },
+        {
+          "question": "What are prohibited transactions in a Self-Directed IRA?",
+          "answer": "You cannot transact with disqualified persons (yourself, family members, or entities you control), use IRA assets for personal benefit, or receive compensation from IRA investments."
+        }
+      ]
+    },
+    {
+      "slug": "solo-401k",
+      "title": "Solo 401(k)",
+      "shortDescription": "Contribute up to $69,000 per year as a self-employed individual",
+      "fullDescription": "A Solo 401(k), also known as an Individual 401(k), is a retirement plan for self-employed individuals with no full-time employees. It allows significantly higher contribution limits than a traditional IRA, plus the ability to take loans from your account and invest in alternative assets.",
+      "keywords": ["solo 401k", "individual 401k", "self employed 401k", "one participant 401k"],
+      "benefitsFor": ["Self-employed individuals", "Freelancers", "Side business owners", "Consultants"],
+      "potentialSavings": "Up to $69,000 in annual contributions (2024)",
+      "minimumPropertyValue": "No minimum",
+      "bestFor": "Self-employed individuals with high income",
+      "complexity": "Intermediate",
+      "professionalRequired": false,
+      "typicalCost": "$0 - $300/year depending on provider",
+      "irsReference": "IRC Section 401(k)",
+      "relatedStrategies": ["self-directed-ira", "mega-backdoor-roth", "sep-ira"],
+      "faqs": [
+        {
+          "question": "What are the Solo 401(k) contribution limits for 2024?",
+          "answer": "For 2024, you can contribute up to $23,000 as an employee deferral plus up to 25% of net self-employment income as employer contributions, for a total maximum of $69,000 ($76,500 if 50+)."
+        },
+        {
+          "question": "Can I have a Solo 401(k) and a regular 401(k)?",
+          "answer": "Yes, but the employee contribution limit ($23,000 for 2024) is shared across all 401(k) plans. Employer contributions are calculated separately for each plan."
+        },
+        {
+          "question": "Can I take a loan from my Solo 401(k)?",
+          "answer": "Yes, you can borrow up to 50% of your account balance or $50,000, whichever is less. This is a key advantage over SEP IRAs which don't allow loans."
+        }
+      ]
+    },
+    {
+      "slug": "hsa-strategy",
+      "title": "HSA Triple Tax Advantage",
+      "shortDescription": "The only account with tax-free contributions, growth, AND withdrawals",
+      "fullDescription": "A Health Savings Account (HSA) offers a triple tax advantage: contributions are tax-deductible, growth is tax-free, and withdrawals for qualified medical expenses are tax-free. Many investors use HSAs as stealth retirement accounts by paying current medical expenses out-of-pocket and letting the HSA grow.",
+      "keywords": ["hsa strategy", "health savings account", "hsa investing", "hsa retirement strategy"],
+      "benefitsFor": ["High-deductible health plan holders", "Long-term savers", "Early retirees", "Tax-conscious investors"],
+      "potentialSavings": "Triple tax benefit on $4,150 individual / $8,300 family (2024)",
+      "minimumPropertyValue": "No minimum",
+      "bestFor": "Healthy individuals with high-deductible health plans",
+      "complexity": "Beginner",
+      "professionalRequired": false,
+      "typicalCost": "Free with most providers",
+      "irsReference": "IRC Section 223",
+      "relatedStrategies": ["solo-401k", "roth-conversion", "tax-loss-harvesting"],
+      "faqs": [
+        {
+          "question": "What is the triple tax advantage of an HSA?",
+          "answer": "HSAs offer: (1) tax-deductible contributions, (2) tax-free growth and investment earnings, and (3) tax-free withdrawals for qualified medical expenses. No other account offers all three."
+        },
+        {
+          "question": "Can I use my HSA for retirement?",
+          "answer": "Yes! After age 65, you can withdraw HSA funds for any purpose. Non-medical withdrawals are taxed as ordinary income (like a traditional IRA), but medical withdrawals remain tax-free."
+        },
+        {
+          "question": "What is the HSA investment strategy?",
+          "answer": "Pay current medical expenses out-of-pocket, save receipts, invest your HSA in index funds, and let it grow tax-free. You can reimburse yourself for those expenses at any time in the future."
+        }
+      ]
+    },
+    {
+      "slug": "augusta-rule",
+      "title": "Augusta Rule (Section 280A)",
+      "shortDescription": "Rent your home to your business tax-free for up to 14 days",
+      "fullDescription": "The Augusta Rule allows homeowners to rent their home for up to 14 days per year without reporting the rental income. Business owners can leverage this by having their business rent their personal residence for meetings, retreats, or events at fair market rates.",
+      "keywords": ["augusta rule", "section 280a", "rent home to business", "14 day rental rule"],
+      "benefitsFor": ["Business owners", "S-Corp owners", "LLC members", "Home-based businesses"],
+      "potentialSavings": "$5,000 - $30,000 tax-free income",
+      "minimumPropertyValue": "No minimum",
+      "bestFor": "Business owners who can legitimately use their home for business purposes",
+      "complexity": "Intermediate",
+      "professionalRequired": true,
+      "typicalCost": "May need appraisal for fair market rent ($200-500)",
+      "irsReference": "IRC Section 280A(g)",
+      "relatedStrategies": ["home-office-deduction", "s-corp-strategy", "reasonable-salary"],
+      "faqs": [
+        {
+          "question": "What is the Augusta Rule?",
+          "answer": "Section 280A(g) allows homeowners to rent their home for 14 days or fewer per year without reporting the income. Business owners use this by having their company rent their home for legitimate business events."
+        },
+        {
+          "question": "How much can I charge under the Augusta Rule?",
+          "answer": "You must charge fair market rent based on comparable event venues in your area. Document rates for similar venues to support your pricing."
+        },
+        {
+          "question": "What documentation do I need?",
+          "answer": "Keep minutes of meetings, attendee lists, agendas, photos, and comparable rental rates. The business purpose must be legitimate and documented."
+        }
+      ]
+    },
+    {
+      "slug": "s-corp-strategy",
+      "title": "S-Corp Tax Strategy",
+      "shortDescription": "Save 15.3% self-employment tax by splitting income into salary and distributions",
+      "fullDescription": "An S-Corporation election allows business owners to split their income between a reasonable salary (subject to payroll taxes) and distributions (not subject to self-employment tax). This can result in significant savings on the 15.3% self-employment tax.",
+      "keywords": ["s corp strategy", "s corporation tax savings", "reasonable salary s corp", "self employment tax savings"],
+      "benefitsFor": ["Self-employed individuals", "Freelancers", "Consultants", "Business owners"],
+      "potentialSavings": "10-15% of business income",
+      "minimumPropertyValue": "Generally profitable businesses over $50K",
+      "bestFor": "Self-employed individuals earning $50K+ in profit",
+      "complexity": "Intermediate",
+      "professionalRequired": true,
+      "typicalCost": "$500 - $2,000/year for payroll and additional tax prep",
+      "irsReference": "IRC Subchapter S",
+      "relatedStrategies": ["solo-401k", "augusta-rule", "reasonable-salary"],
+      "faqs": [
+        {
+          "question": "How much can I save with an S-Corp?",
+          "answer": "If your business profits $100,000 and you pay yourself $50,000 in salary, you save self-employment tax on the $50,000 distribution, approximately $7,650."
+        },
+        {
+          "question": "What is a reasonable salary for an S-Corp?",
+          "answer": "A reasonable salary is what you'd pay someone to do your job in the open market. Consider industry norms, your experience, location, and time spent. Too low invites IRS scrutiny."
+        },
+        {
+          "question": "When does an S-Corp make sense?",
+          "answer": "Generally when business profits exceed $50,000-$60,000 annually. Below this, the administrative costs may outweigh the tax savings."
+        }
+      ]
+    },
+    {
+      "slug": "opportunity-zones",
+      "title": "Opportunity Zone Investing",
+      "shortDescription": "Defer and reduce capital gains by investing in designated communities",
+      "fullDescription": "Qualified Opportunity Zones allow investors to defer capital gains taxes by reinvesting gains into designated low-income communities. Hold for 10+ years and pay zero tax on appreciation of the Opportunity Zone investment itself.",
+      "keywords": ["opportunity zones", "qualified opportunity zone", "qoz investing", "capital gains deferral"],
+      "benefitsFor": ["Investors with capital gains", "Real estate developers", "Business investors", "Stock sellers"],
+      "potentialSavings": "100% exclusion on OZ gains after 10 years",
+      "minimumPropertyValue": "No minimum",
+      "bestFor": "Long-term investors with significant capital gains to reinvest",
+      "complexity": "Advanced",
+      "professionalRequired": true,
+      "typicalCost": "Fund fees vary; direct investment requires significant capital",
+      "irsReference": "IRC Section 1400Z",
+      "relatedStrategies": ["1031-exchange", "installment-sales", "cost-segregation"],
+      "faqs": [
+        {
+          "question": "How do Opportunity Zones work?",
+          "answer": "Invest capital gains into a Qualified Opportunity Fund within 180 days. Defer the original gain until 2026 (or sale). If held 10+ years, pay zero tax on OZ investment appreciation."
+        },
+        {
+          "question": "What qualifies as an Opportunity Zone investment?",
+          "answer": "Must invest through a Qualified Opportunity Fund (QOF) that holds at least 90% of assets in qualified opportunity zone property, including real estate and operating businesses."
+        },
+        {
+          "question": "Is the original capital gain eliminated?",
+          "answer": "No, the original gain is deferred until December 31, 2026 (or earlier sale). However, appreciation on the OZ investment is tax-free if held 10+ years."
+        }
+      ]
+    }
+  ],
+  "personas": [
+    {
+      "slug": "w2-employees",
+      "title": "W-2 Employees",
+      "description": "Tax strategies for salaried workers looking to reduce their tax burden",
+      "topStrategies": ["short-term-rental-loophole", "hsa-strategy", "solo-401k", "cost-segregation"]
+    },
+    {
+      "slug": "self-employed",
+      "title": "Self-Employed & Freelancers",
+      "description": "Maximize deductions and retirement savings for independent workers",
+      "topStrategies": ["s-corp-strategy", "solo-401k", "section-179", "home-office-deduction"]
+    },
+    {
+      "slug": "real-estate-investors",
+      "title": "Real Estate Investors",
+      "description": "Advanced strategies for rental property owners and flippers",
+      "topStrategies": ["cost-segregation", "1031-exchange", "real-estate-professional-status", "bonus-depreciation"]
+    },
+    {
+      "slug": "airbnb-hosts",
+      "title": "Airbnb & STR Hosts",
+      "description": "Specific tax benefits for short-term rental operators",
+      "topStrategies": ["short-term-rental-loophole", "cost-segregation", "bonus-depreciation", "section-179"]
+    },
+    {
+      "slug": "high-income-earners",
+      "title": "High-Income Earners",
+      "description": "Strategies for those in the highest tax brackets",
+      "topStrategies": ["real-estate-professional-status", "opportunity-zones", "cost-segregation", "mega-backdoor-roth"]
+    },
+    {
+      "slug": "business-owners",
+      "title": "Business Owners",
+      "description": "Tax optimization for entrepreneurs and company owners",
+      "topStrategies": ["s-corp-strategy", "augusta-rule", "section-179", "solo-401k"]
+    }
+  ]
+}
