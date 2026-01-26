@@ -1,0 +1,886 @@
+{
+  "metadata": {
+    "generated": "2026-01-26",
+    "total_topics": 100,
+    "completed_topics": 30,
+    "pending_topics": 70,
+    "status": "partially_completed",
+    "last_updated": "2026-01-26",
+    "target_word_count": "3000-5000",
+    "model_for_generation": "claude-haiku-4.5"
+  },
+  "categories": {
+    "tax_strategies": {
+      "description": "Tax optimization and reduction strategies",
+      "count": 25,
+      "completed": 25,
+      "topics": [
+        {
+          "id": 1,
+          "slug": "qualified-business-income-deduction",
+          "title": "Qualified Business Income (QBI) Deduction: Complete 2026 Guide",
+          "primary_keyword": "QBI deduction",
+          "category_path": "tax-strategies",
+          "status": "completed",
+          "completed_date": "2026-01-26"
+        },
+        {
+          "id": 2,
+          "slug": "tax-loss-harvesting",
+          "title": "Tax Loss Harvesting: How to Save Thousands on Investment Taxes",
+          "primary_keyword": "tax loss harvesting",
+          "category_path": "tax-strategies",
+          "status": "completed",
+          "completed_date": "2026-01-26"
+        },
+        {
+          "id": 3,
+          "slug": "charitable-remainder-trust",
+          "title": "Charitable Remainder Trust (CRT): Tax-Smart Giving Strategy",
+          "primary_keyword": "charitable remainder trust",
+          "category_path": "tax-strategies",
+          "status": "completed",
+          "completed_date": "2026-01-26"
+        },
+        {
+          "id": 4,
+          "slug": "backdoor-roth-ira",
+          "title": "Backdoor Roth IRA: How High Earners Can Still Contribute",
+          "primary_keyword": "backdoor roth ira",
+          "category_path": "tax-strategies",
+          "status": "completed",
+          "completed_date": "2026-01-26"
+        },
+        {
+          "id": 5,
+          "slug": "mega-backdoor-roth",
+          "title": "Mega Backdoor Roth: The $69,000 Retirement Hack",
+          "primary_keyword": "mega backdoor roth",
+          "category_path": "tax-strategies",
+          "status": "completed",
+          "completed_date": "2026-01-26"
+        },
+        {
+          "id": 6,
+          "slug": "tax-gain-harvesting",
+          "title": "Tax Gain Harvesting: When to Sell Winners for Tax Benefits",
+          "primary_keyword": "tax gain harvesting",
+          "category_path": "tax-strategies",
+          "status": "completed",
+          "completed_date": "2026-01-26"
+        },
+        {
+          "id": 7,
+          "slug": "qualified-opportunity-zone-fund",
+          "title": "Qualified Opportunity Zone Funds: Defer & Reduce Capital Gains",
+          "primary_keyword": "opportunity zone fund",
+          "category_path": "tax-strategies",
+          "status": "completed",
+          "completed_date": "2026-01-26"
+        },
+        {
+          "id": 8,
+          "slug": "installment-sale",
+          "title": "Installment Sale Tax Strategy: Spread Capital Gains Over Time",
+          "primary_keyword": "installment sale",
+          "category_path": "tax-strategies",
+          "status": "completed",
+          "completed_date": "2026-01-26"
+        },
+        {
+          "id": 9,
+          "slug": "net-unrealized-appreciation",
+          "title": "Net Unrealized Appreciation (NUA): 401k Stock Tax Strategy",
+          "primary_keyword": "net unrealized appreciation",
+          "category_path": "tax-strategies",
+          "status": "completed",
+          "completed_date": "2026-01-26"
+        },
+        {
+          "id": 10,
+          "slug": "donor-advised-fund",
+          "title": "Donor Advised Fund (DAF): The Smart Way to Give to Charity",
+          "primary_keyword": "donor advised fund",
+          "category_path": "tax-strategies",
+          "status": "completed",
+          "completed_date": "2026-01-26"
+        },
+        {
+          "id": 11,
+          "slug": "home-office-deduction",
+          "title": "Home Office Deduction: Complete Guide for Remote Workers",
+          "primary_keyword": "home office deduction",
+          "category_path": "tax-strategies",
+          "status": "completed",
+          "completed_date": "2026-01-26"
+        },
+        {
+          "id": 12,
+          "slug": "business-vehicle-deduction",
+          "title": "Business Vehicle Deduction: Section 179 vs. Actual Expenses",
+          "primary_keyword": "business vehicle deduction",
+          "category_path": "tax-strategies",
+          "status": "completed",
+          "completed_date": "2026-01-26"
+        },
+        {
+          "id": 13,
+          "slug": "health-savings-account-strategy",
+          "title": "HSA Strategy: The Triple Tax Advantage for Healthcare Savings",
+          "primary_keyword": "HSA strategy",
+          "category_path": "tax-strategies",
+          "status": "completed",
+          "completed_date": "2026-01-26"
+        },
+        {
+          "id": 14,
+          "slug": "dependent-care-fsa",
+          "title": "Dependent Care FSA: Save $5,000+ on Childcare Costs",
+          "primary_keyword": "dependent care FSA",
+          "category_path": "tax-strategies",
+          "status": "completed",
+          "completed_date": "2026-01-26"
+        },
+        {
+          "id": 15,
+          "slug": "rental-property-depreciation",
+          "title": "Rental Property Depreciation: How to Deduct Your Investment",
+          "primary_keyword": "rental property depreciation",
+          "category_path": "tax-strategies",
+          "status": "completed",
+          "completed_date": "2026-01-26"
+        },
+        {
+          "id": 16,
+          "slug": "pass-through-entity-tax",
+          "title": "Pass-Through Entity Tax (PTET): State Tax Workaround Strategy",
+          "primary_keyword": "pass through entity tax",
+          "category_path": "tax-strategies",
+          "status": "completed",
+          "completed_date": "2026-01-26"
+        },
+        {
+          "id": 17,
+          "slug": "captive-insurance",
+          "title": "Captive Insurance Strategy: Advanced Business Tax Planning",
+          "primary_keyword": "captive insurance",
+          "category_path": "tax-strategies",
+          "status": "completed",
+          "completed_date": "2026-01-26"
+        },
+        {
+          "id": 18,
+          "slug": "income-shifting-strategies",
+          "title": "Income Shifting Strategies: Legal Ways to Lower Your Tax Bracket",
+          "primary_keyword": "income shifting",
+          "category_path": "tax-strategies",
+          "status": "completed",
+          "completed_date": "2026-01-26"
+        },
+        {
+          "id": 19,
+          "slug": "estimated-tax-payments",
+          "title": "Estimated Tax Payments: How to Calculate and Avoid Penalties",
+          "primary_keyword": "estimated tax payments",
+          "category_path": "tax-strategies",
+          "status": "completed",
+          "completed_date": "2026-01-26"
+        },
+        {
+          "id": 20,
+          "slug": "capital-gains-exclusion",
+          "title": "Primary Residence Capital Gains Exclusion: The $500K Tax Break",
+          "primary_keyword": "capital gains exclusion home sale",
+          "category_path": "tax-strategies",
+          "status": "completed",
+          "completed_date": "2026-01-26"
+        },
+        {
+          "id": 21,
+          "slug": "family-employment-tax-strategy",
+          "title": "Hiring Your Kids: Family Employment Tax Strategy",
+          "primary_keyword": "hiring family members tax",
+          "category_path": "tax-strategies",
+          "status": "completed",
+          "completed_date": "2026-01-26"
+        },
+        {
+          "id": 22,
+          "slug": "bunching-deductions",
+          "title": "Bunching Deductions Strategy: How to Beat the Standard Deduction",
+          "primary_keyword": "bunching deductions",
+          "category_path": "tax-strategies",
+          "status": "completed",
+          "completed_date": "2026-01-26"
+        },
+        {
+          "id": 23,
+          "slug": "qualified-small-business-stock",
+          "title": "Qualified Small Business Stock (QSBS): Zero Capital Gains Tax",
+          "primary_keyword": "QSBS",
+          "category_path": "tax-strategies",
+          "status": "completed",
+          "completed_date": "2026-01-26"
+        },
+        {
+          "id": 24,
+          "slug": "roth-conversion-ladder",
+          "title": "Roth Conversion Ladder: Early Retirement Tax Strategy",
+          "primary_keyword": "roth conversion ladder",
+          "category_path": "tax-strategies",
+          "status": "completed",
+          "completed_date": "2026-01-26"
+        },
+        {
+          "id": 25,
+          "slug": "state-tax-residency",
+          "title": "State Tax Residency: How to Legally Reduce State Income Tax",
+          "primary_keyword": "state tax residency",
+          "category_path": "tax-strategies",
+          "status": "completed",
+          "completed_date": "2026-01-26"
+        }
+      ]
+    },
+    "retirement_planning": {
+      "description": "Retirement accounts and strategies",
+      "count": 20,
+      "completed": 5,
+      "topics": [
+        {
+          "id": 26,
+          "slug": "401k-contribution-strategies",
+          "title": "401(k) Contribution Strategies: Maximize Your Employer Match",
+          "primary_keyword": "401k contribution strategy",
+          "category_path": "retirement",
+          "status": "completed",
+          "completed_date": "2026-01-26"
+        },
+        {
+          "id": 27,
+          "slug": "traditional-vs-roth-401k",
+          "title": "Traditional vs Roth 401(k): Which Should You Choose?",
+          "primary_keyword": "traditional vs roth 401k",
+          "category_path": "retirement",
+          "status": "completed",
+          "completed_date": "2026-01-26"
+        },
+        {
+          "id": 28,
+          "slug": "sep-ira-guide",
+          "title": "SEP IRA Complete Guide: Retirement Savings for Self-Employed",
+          "primary_keyword": "SEP IRA",
+          "category_path": "retirement",
+          "status": "completed",
+          "completed_date": "2026-01-26"
+        },
+        {
+          "id": 29,
+          "slug": "simple-ira-guide",
+          "title": "SIMPLE IRA Guide: Retirement Plans for Small Businesses",
+          "primary_keyword": "SIMPLE IRA",
+          "category_path": "retirement",
+          "status": "completed",
+          "completed_date": "2026-01-26"
+        },
+        {
+          "id": 30,
+          "slug": "defined-benefit-plan",
+          "title": "Defined Benefit Plan: How Business Owners Can Save $200K+ Annually",
+          "primary_keyword": "defined benefit plan",
+          "category_path": "retirement",
+          "status": "completed",
+          "completed_date": "2026-01-26"
+        },
+        {
+          "id": 31,
+          "slug": "457b-plan-guide",
+          "title": "457(b) Plan Guide: The Government Employee's Secret Weapon",
+          "primary_keyword": "457b plan",
+          "category_path": "retirement",
+          "status": "pending"
+        },
+        {
+          "id": 32,
+          "slug": "required-minimum-distributions",
+          "title": "Required Minimum Distributions (RMDs): Rules, Calculations & Strategies",
+          "primary_keyword": "required minimum distributions",
+          "category_path": "retirement",
+          "status": "pending"
+        },
+        {
+          "id": 33,
+          "slug": "early-retirement-withdrawal",
+          "title": "Early Retirement Withdrawal: How to Access Funds Before 59½",
+          "primary_keyword": "early retirement withdrawal",
+          "category_path": "retirement",
+          "status": "pending"
+        },
+        {
+          "id": 34,
+          "slug": "spousal-ira",
+          "title": "Spousal IRA: Retirement Savings for Non-Working Spouses",
+          "primary_keyword": "spousal IRA",
+          "category_path": "retirement",
+          "status": "pending"
+        },
+        {
+          "id": 35,
+          "slug": "inherited-ira-rules",
+          "title": "Inherited IRA Rules 2026: What Beneficiaries Need to Know",
+          "primary_keyword": "inherited IRA rules",
+          "category_path": "retirement",
+          "status": "pending"
+        },
+        {
+          "id": 36,
+          "slug": "401k-rollover-guide",
+          "title": "401(k) Rollover Guide: Move Your Retirement Funds the Right Way",
+          "primary_keyword": "401k rollover",
+          "category_path": "retirement",
+          "status": "pending"
+        },
+        {
+          "id": 37,
+          "slug": "retirement-income-strategies",
+          "title": "Retirement Income Strategies: How to Create Steady Cash Flow",
+          "primary_keyword": "retirement income strategy",
+          "category_path": "retirement",
+          "status": "pending"
+        },
+        {
+          "id": 38,
+          "slug": "social-security-optimization",
+          "title": "Social Security Optimization: When to Claim for Maximum Benefits",
+          "primary_keyword": "social security optimization",
+          "category_path": "retirement",
+          "status": "pending"
+        },
+        {
+          "id": 39,
+          "slug": "catch-up-contributions",
+          "title": "Catch-Up Contributions: Supercharge Retirement Savings After 50",
+          "primary_keyword": "catch up contributions",
+          "category_path": "retirement",
+          "status": "pending"
+        },
+        {
+          "id": 40,
+          "slug": "retirement-healthcare-planning",
+          "title": "Retirement Healthcare Planning: Medicare, HSA & Cost Strategies",
+          "primary_keyword": "retirement healthcare planning",
+          "category_path": "retirement",
+          "status": "pending"
+        },
+        {
+          "id": 41,
+          "slug": "4-percent-rule",
+          "title": "The 4% Rule: How Much Can You Safely Withdraw in Retirement?",
+          "primary_keyword": "4 percent rule retirement",
+          "category_path": "retirement",
+          "status": "pending"
+        },
+        {
+          "id": 42,
+          "slug": "sequence-of-returns-risk",
+          "title": "Sequence of Returns Risk: Protect Your Retirement from Market Crashes",
+          "primary_keyword": "sequence of returns risk",
+          "category_path": "retirement",
+          "status": "pending"
+        },
+        {
+          "id": 43,
+          "slug": "retirement-bucket-strategy",
+          "title": "Retirement Bucket Strategy: Organize Your Assets for Steady Income",
+          "primary_keyword": "retirement bucket strategy",
+          "category_path": "retirement",
+          "status": "pending"
+        },
+        {
+          "id": 44,
+          "slug": "pension-vs-lump-sum",
+          "title": "Pension vs Lump Sum: How to Decide at Retirement",
+          "primary_keyword": "pension vs lump sum",
+          "category_path": "retirement",
+          "status": "pending"
+        },
+        {
+          "id": 45,
+          "slug": "fire-movement-guide",
+          "title": "FIRE Movement Guide: Financial Independence, Retire Early",
+          "primary_keyword": "FIRE movement",
+          "category_path": "retirement",
+          "status": "pending"
+        }
+      ]
+    },
+    "business_structures": {
+      "description": "Business entity formation and management",
+      "count": 15,
+      "completed": 0,
+      "topics": [
+        {
+          "id": 46,
+          "slug": "llc-vs-s-corp",
+          "title": "LLC vs S-Corp: Which Business Structure Saves More Taxes?",
+          "primary_keyword": "LLC vs S Corp",
+          "category_path": "business-structures",
+          "status": "pending"
+        },
+        {
+          "id": 47,
+          "slug": "single-member-llc-guide",
+          "title": "Single Member LLC Guide: Protection & Tax Benefits",
+          "primary_keyword": "single member LLC",
+          "category_path": "business-structures",
+          "status": "pending"
+        },
+        {
+          "id": 48,
+          "slug": "series-llc",
+          "title": "Series LLC: Asset Protection for Multiple Properties",
+          "primary_keyword": "series LLC",
+          "category_path": "business-structures",
+          "status": "pending"
+        },
+        {
+          "id": 49,
+          "slug": "c-corp-benefits",
+          "title": "C Corporation Benefits: When a C-Corp Makes Sense",
+          "primary_keyword": "C corporation benefits",
+          "category_path": "business-structures",
+          "status": "pending"
+        },
+        {
+          "id": 50,
+          "slug": "professional-llc",
+          "title": "Professional LLC (PLLC): Entity Structure for Licensed Professionals",
+          "primary_keyword": "professional LLC PLLC",
+          "category_path": "business-structures",
+          "status": "pending"
+        },
+        {
+          "id": 51,
+          "slug": "holding-company-structure",
+          "title": "Holding Company Structure: Protect Assets & Reduce Taxes",
+          "primary_keyword": "holding company structure",
+          "category_path": "business-structures",
+          "status": "pending"
+        },
+        {
+          "id": 52,
+          "slug": "family-limited-partnership",
+          "title": "Family Limited Partnership (FLP): Estate Planning & Asset Protection",
+          "primary_keyword": "family limited partnership",
+          "category_path": "business-structures",
+          "status": "pending"
+        },
+        {
+          "id": 53,
+          "slug": "operating-agreement-guide",
+          "title": "LLC Operating Agreement: Complete Guide with Templates",
+          "primary_keyword": "LLC operating agreement",
+          "category_path": "business-structures",
+          "status": "pending"
+        },
+        {
+          "id": 54,
+          "slug": "business-credit-building",
+          "title": "Business Credit Building: Separate Your Personal & Business Finances",
+          "primary_keyword": "build business credit",
+          "category_path": "business-structures",
+          "status": "pending"
+        },
+        {
+          "id": 55,
+          "slug": "reasonable-salary-s-corp",
+          "title": "S-Corp Reasonable Salary: How to Set Your Pay & Avoid IRS Issues",
+          "primary_keyword": "S corp reasonable salary",
+          "category_path": "business-structures",
+          "status": "pending"
+        },
+        {
+          "id": 56,
+          "slug": "registered-agent-requirements",
+          "title": "Registered Agent Requirements: What Every LLC Owner Must Know",
+          "primary_keyword": "registered agent",
+          "category_path": "business-structures",
+          "status": "pending"
+        },
+        {
+          "id": 57,
+          "slug": "business-succession-planning",
+          "title": "Business Succession Planning: How to Transfer Ownership",
+          "primary_keyword": "business succession planning",
+          "category_path": "business-structures",
+          "status": "pending"
+        },
+        {
+          "id": 58,
+          "slug": "corporate-veil-protection",
+          "title": "Corporate Veil Protection: How to Keep Your Personal Assets Safe",
+          "primary_keyword": "piercing corporate veil",
+          "category_path": "business-structures",
+          "status": "pending"
+        },
+        {
+          "id": 59,
+          "slug": "multi-state-business",
+          "title": "Multi-State Business Formation: Compliance & Tax Considerations",
+          "primary_keyword": "multi state business formation",
+          "category_path": "business-structures",
+          "status": "pending"
+        },
+        {
+          "id": 60,
+          "slug": "anonymous-llc",
+          "title": "Anonymous LLC: How to Keep Your Business Ownership Private",
+          "primary_keyword": "anonymous LLC",
+          "category_path": "business-structures",
+          "status": "pending"
+        }
+      ]
+    },
+    "investing": {
+      "description": "Investment strategies and vehicles",
+      "count": 20,
+      "completed": 0,
+      "topics": [
+        {
+          "id": 61,
+          "slug": "index-fund-investing",
+          "title": "Index Fund Investing: The Simple Path to Building Wealth",
+          "primary_keyword": "index fund investing",
+          "category_path": "investing",
+          "status": "pending"
+        },
+        {
+          "id": 62,
+          "slug": "dividend-growth-investing",
+          "title": "Dividend Growth Investing: Build Passive Income That Grows",
+          "primary_keyword": "dividend growth investing",
+          "category_path": "investing",
+          "status": "pending"
+        },
+        {
+          "id": 63,
+          "slug": "real-estate-syndication",
+          "title": "Real Estate Syndication: Passive Investing in Large Properties",
+          "primary_keyword": "real estate syndication",
+          "category_path": "investing",
+          "status": "pending"
+        },
+        {
+          "id": 64,
+          "slug": "reits-guide",
+          "title": "REITs Complete Guide: Real Estate Investing Without Owning Property",
+          "primary_keyword": "REIT investing",
+          "category_path": "investing",
+          "status": "pending"
+        },
+        {
+          "id": 65,
+          "slug": "treasury-bonds-strategy",
+          "title": "Treasury Bonds Strategy: Safe Income in Any Market",
+          "primary_keyword": "treasury bonds",
+          "category_path": "investing",
+          "status": "pending"
+        },
+        {
+          "id": 66,
+          "slug": "i-bonds-guide",
+          "title": "I Bonds Complete Guide: Inflation-Protected Savings",
+          "primary_keyword": "I bonds",
+          "category_path": "investing",
+          "status": "pending"
+        },
+        {
+          "id": 67,
+          "slug": "dollar-cost-averaging",
+          "title": "Dollar Cost Averaging: The Strategy That Removes Emotion from Investing",
+          "primary_keyword": "dollar cost averaging",
+          "category_path": "investing",
+          "status": "pending"
+        },
+        {
+          "id": 68,
+          "slug": "asset-allocation-strategies",
+          "title": "Asset Allocation Strategies by Age: How to Balance Your Portfolio",
+          "primary_keyword": "asset allocation by age",
+          "category_path": "investing",
+          "status": "pending"
+        },
+        {
+          "id": 69,
+          "slug": "portfolio-rebalancing",
+          "title": "Portfolio Rebalancing: When and How to Adjust Your Investments",
+          "primary_keyword": "portfolio rebalancing",
+          "category_path": "investing",
+          "status": "pending"
+        },
+        {
+          "id": 70,
+          "slug": "private-equity-investing",
+          "title": "Private Equity Investing: Access Alternative Investments",
+          "primary_keyword": "private equity investing",
+          "category_path": "investing",
+          "status": "pending"
+        },
+        {
+          "id": 71,
+          "slug": "crowdfunded-real-estate",
+          "title": "Crowdfunded Real Estate: Invest in Property with $500",
+          "primary_keyword": "crowdfunded real estate",
+          "category_path": "investing",
+          "status": "pending"
+        },
+        {
+          "id": 72,
+          "slug": "municipal-bonds",
+          "title": "Municipal Bonds: Tax-Free Income for High Earners",
+          "primary_keyword": "municipal bonds",
+          "category_path": "investing",
+          "status": "pending"
+        },
+        {
+          "id": 73,
+          "slug": "etf-vs-mutual-fund",
+          "title": "ETF vs Mutual Fund: Which Is Better for Your Portfolio?",
+          "primary_keyword": "ETF vs mutual fund",
+          "category_path": "investing",
+          "status": "pending"
+        },
+        {
+          "id": 74,
+          "slug": "sector-etf-strategy",
+          "title": "Sector ETF Strategy: How to Invest in Market Segments",
+          "primary_keyword": "sector ETF",
+          "category_path": "investing",
+          "status": "pending"
+        },
+        {
+          "id": 75,
+          "slug": "international-investing",
+          "title": "International Investing: Diversify Beyond US Markets",
+          "primary_keyword": "international investing",
+          "category_path": "investing",
+          "status": "pending"
+        },
+        {
+          "id": 76,
+          "slug": "alternative-investments-guide",
+          "title": "Alternative Investments Guide: Beyond Stocks and Bonds",
+          "primary_keyword": "alternative investments",
+          "category_path": "investing",
+          "status": "pending"
+        },
+        {
+          "id": 77,
+          "slug": "value-investing-strategy",
+          "title": "Value Investing Strategy: Find Undervalued Stocks",
+          "primary_keyword": "value investing",
+          "category_path": "investing",
+          "status": "pending"
+        },
+        {
+          "id": 78,
+          "slug": "growth-investing-strategy",
+          "title": "Growth Investing Strategy: Invest in Tomorrow's Winners",
+          "primary_keyword": "growth investing",
+          "category_path": "investing",
+          "status": "pending"
+        },
+        {
+          "id": 79,
+          "slug": "investment-fees-guide",
+          "title": "Investment Fees Guide: How Costs Destroy Your Returns",
+          "primary_keyword": "investment fees",
+          "category_path": "investing",
+          "status": "pending"
+        },
+        {
+          "id": 80,
+          "slug": "robo-advisor-comparison",
+          "title": "Robo Advisor Comparison 2026: Best Automated Investing Platforms",
+          "primary_keyword": "robo advisor comparison",
+          "category_path": "investing",
+          "status": "pending"
+        }
+      ]
+    },
+    "debt_management": {
+      "description": "Debt strategies and credit optimization",
+      "count": 10,
+      "completed": 0,
+      "topics": [
+        {
+          "id": 81,
+          "slug": "debt-avalanche-method",
+          "title": "Debt Avalanche Method: The Fastest Way to Pay Off Debt",
+          "primary_keyword": "debt avalanche",
+          "category_path": "debt-management",
+          "status": "pending"
+        },
+        {
+          "id": 82,
+          "slug": "debt-snowball-method",
+          "title": "Debt Snowball Method: Build Momentum Paying Off Debt",
+          "primary_keyword": "debt snowball",
+          "category_path": "debt-management",
+          "status": "pending"
+        },
+        {
+          "id": 83,
+          "slug": "good-debt-vs-bad-debt",
+          "title": "Good Debt vs Bad Debt: Leverage That Builds Wealth",
+          "primary_keyword": "good debt vs bad debt",
+          "category_path": "debt-management",
+          "status": "pending"
+        },
+        {
+          "id": 84,
+          "slug": "credit-score-optimization",
+          "title": "Credit Score Optimization: Improve Your Score Fast",
+          "primary_keyword": "improve credit score",
+          "category_path": "debt-management",
+          "status": "pending"
+        },
+        {
+          "id": 85,
+          "slug": "mortgage-refinancing-guide",
+          "title": "Mortgage Refinancing Guide: When and How to Refinance",
+          "primary_keyword": "mortgage refinancing",
+          "category_path": "debt-management",
+          "status": "pending"
+        },
+        {
+          "id": 86,
+          "slug": "student-loan-strategies",
+          "title": "Student Loan Repayment Strategies: PSLF, IDR & Forgiveness",
+          "primary_keyword": "student loan repayment strategies",
+          "category_path": "debt-management",
+          "status": "pending"
+        },
+        {
+          "id": 87,
+          "slug": "debt-consolidation-guide",
+          "title": "Debt Consolidation Guide: Simplify Your Payments & Save",
+          "primary_keyword": "debt consolidation",
+          "category_path": "debt-management",
+          "status": "pending"
+        },
+        {
+          "id": 88,
+          "slug": "balance-transfer-strategy",
+          "title": "Balance Transfer Strategy: Use 0% APR to Crush Debt",
+          "primary_keyword": "balance transfer strategy",
+          "category_path": "debt-management",
+          "status": "pending"
+        },
+        {
+          "id": 89,
+          "slug": "heloc-strategy",
+          "title": "HELOC Strategy: How to Use Home Equity Wisely",
+          "primary_keyword": "HELOC strategy",
+          "category_path": "debt-management",
+          "status": "pending"
+        },
+        {
+          "id": 90,
+          "slug": "debt-to-income-ratio",
+          "title": "Debt-to-Income Ratio: What Lenders Look For & How to Improve",
+          "primary_keyword": "debt to income ratio",
+          "category_path": "debt-management",
+          "status": "pending"
+        }
+      ]
+    },
+    "passive_income": {
+      "description": "Passive income streams and strategies",
+      "count": 10,
+      "completed": 0,
+      "topics": [
+        {
+          "id": 91,
+          "slug": "rental-property-investing",
+          "title": "Rental Property Investing: Build Passive Income with Real Estate",
+          "primary_keyword": "rental property investing",
+          "category_path": "passive-income",
+          "status": "pending"
+        },
+        {
+          "id": 92,
+          "slug": "house-hacking-guide",
+          "title": "House Hacking Guide: Live for Free While Building Wealth",
+          "primary_keyword": "house hacking",
+          "category_path": "passive-income",
+          "status": "pending"
+        },
+        {
+          "id": 93,
+          "slug": "brrrr-method",
+          "title": "BRRRR Method: Buy, Rehab, Rent, Refinance, Repeat",
+          "primary_keyword": "BRRRR method",
+          "category_path": "passive-income",
+          "status": "pending"
+        },
+        {
+          "id": 94,
+          "slug": "short-term-rental-investing",
+          "title": "Short-Term Rental Investing: Airbnb & VRBO Property Guide",
+          "primary_keyword": "short term rental investing",
+          "category_path": "passive-income",
+          "status": "pending"
+        },
+        {
+          "id": 95,
+          "slug": "rental-arbitrage-guide",
+          "title": "Rental Arbitrage Complete Guide: Airbnb Without Buying Property",
+          "primary_keyword": "rental arbitrage",
+          "category_path": "passive-income",
+          "status": "pending"
+        },
+        {
+          "id": 96,
+          "slug": "self-storage-investing",
+          "title": "Self Storage Investing: High Cash Flow, Low Maintenance",
+          "primary_keyword": "self storage investing",
+          "category_path": "passive-income",
+          "status": "pending"
+        },
+        {
+          "id": 97,
+          "slug": "atm-business-guide",
+          "title": "ATM Business Guide: Passive Income from Cash Machines",
+          "primary_keyword": "ATM business",
+          "category_path": "passive-income",
+          "status": "pending"
+        },
+        {
+          "id": 98,
+          "slug": "laundromat-investing",
+          "title": "Laundromat Investing: Cash Flow Business with Low Competition",
+          "primary_keyword": "laundromat investing",
+          "category_path": "passive-income",
+          "status": "pending"
+        },
+        {
+          "id": 99,
+          "slug": "digital-product-income",
+          "title": "Digital Product Income: Create Once, Sell Forever",
+          "primary_keyword": "digital product passive income",
+          "category_path": "passive-income",
+          "status": "pending"
+        },
+        {
+          "id": 100,
+          "slug": "royalty-income-guide",
+          "title": "Royalty Income Guide: Earn from Intellectual Property",
+          "primary_keyword": "royalty income",
+          "category_path": "passive-income",
+          "status": "pending"
+        }
+      ]
+    }
+  }
+}
