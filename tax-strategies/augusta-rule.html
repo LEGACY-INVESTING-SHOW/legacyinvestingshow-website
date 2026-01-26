@@ -63,7 +63,7 @@
             }
         },
         "datePublished": "2026-01-24",
-        "dateModified": "2026-01-24",
+        "dateModified": "2026-01-27",
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://legacyinvestingshow.com/tax-strategies/augusta-rule"
@@ -214,6 +214,67 @@
         }
         .prose-content li {
             margin-bottom: 0.5rem;
+        }
+        .bottom-line-box {
+            background: #f0fdf4;
+            border-left: 4px solid #10b981;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin: 1.5rem 0;
+        }
+        .bottom-line-box__title {
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 0.5rem;
+        }
+        .bottom-line-box__text {
+            color: #374151;
+            font-size: 0.95rem;
+        }
+        .calculation-box {
+            background: #f3f4f6;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            margin: 1.5rem 0;
+            font-family: 'Courier New', monospace;
+        }
+        .calculation-box__title {
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 1rem;
+        }
+        .calculation-line {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            color: #374151;
+        }
+        .calculation-line--total {
+            border-top: 2px solid #9ca3af;
+            padding-top: 0.75rem;
+            margin-top: 0.75rem;
+            font-weight: 700;
+            color: #10b981;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+        }
+        .comparison-table th {
+            background: #f3f4f6;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        .comparison-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .comparison-table tr:hover {
+            background: #f9fafb;
         }
         .sidebar {
             position: sticky;
@@ -399,6 +460,22 @@
             border-radius: 0.25rem;
             margin-top: 0.5rem;
         }
+        .mistake-card {
+            background: #fef2f2;
+            border-left: 4px solid #ef4444;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0.5rem;
+        }
+        .mistake-card__title {
+            font-weight: 700;
+            color: #991b1b;
+        }
+        .mistake-card__solution {
+            color: #7f1d1d;
+            font-size: 0.95rem;
+            margin-top: 0.5rem;
+        }
     </style>
 </head>
 <body class="bg-white text-gray-900">
@@ -463,12 +540,12 @@
                     Tax Strategy
                 </span>
                 <h1 class="strategy-title">Augusta Rule (Section 280A)</h1>
-                <p class="strategy-subtitle">Rent your home to your business tax-free for up to 14 days</p>
+                <p class="strategy-subtitle">Rent your home to your business tax-free for up to 14 days per year without reporting income</p>
 
                 <div class="stats-grid">
                     <div class="stat-box">
                         <div class="stat-box__label">Potential Savings</div>
-                        <div class="stat-box__value stat-box__value--highlight">$5,000 - $30,000 tax-free income</div>
+                        <div class="stat-box__value stat-box__value--highlight">$7,000 - $28,000 annually</div>
                     </div>
                     <div class="stat-box">
                         <div class="stat-box__label">Complexity</div>
@@ -476,11 +553,11 @@
                     </div>
                     <div class="stat-box">
                         <div class="stat-box__label">Professional Required</div>
-                        <div class="stat-box__value">Yes</div>
+                        <div class="stat-box__value">Yes (CPA)</div>
                     </div>
                     <div class="stat-box">
-                        <div class="stat-box__label">Typical Cost</div>
-                        <div class="stat-box__value">May need appraisal for fair market rent ($200-500)</div>
+                        <div class="stat-box__label">Max Days Per Year</div>
+                        <div class="stat-box__value">14 days</div>
                     </div>
                 </div>
                 <div class="irs-reference">
@@ -498,46 +575,420 @@
             <div class="container-custom">
                 <div class="content-grid">
                     <div class="prose-content">
-                        <h2>What is Augusta Rule (Section 280A)?</h2>
-                        <p>The Augusta Rule allows homeowners to rent their home for up to 14 days per year without reporting the rental income. Business owners can leverage this by having their business rent their personal residence for meetings, retreats, or events at fair market rates.</p>
+                        <!-- SECTION 1: Hook & Quick Summary -->
+                        <h2>Quick Summary: The 14-Day Tax-Free Rental Strategy</h2>
+                        <p>Did you know that business owners can legally extract $7,000 to $28,000 in tax-free income from their own homes? The Augusta Rule—named after the city where PGA Tour players pioneered this strategy—allows you to rent your residence to your business for up to 14 days per year without reporting the rental income to the IRS. This creates a direct financial benefit: your business gets a legitimate business expense deduction, while you receive tax-free income.</p>
 
-                        <h2>Who Benefits Most from Augusta Rule (Section 280A)?</h2>
-                        <p>This tax strategy is particularly valuable for:</p>
+                        <div class="bottom-line-box">
+                            <div class="bottom-line-box__title">Bottom Line</div>
+                            <div class="bottom-line-box__text">Section 280A(g) permits homeowners to charge fair market rent for legitimate business events held at their residence for up to 14 days annually without reporting the income. When properly documented with business purpose, attendee records, and fair market pricing, this can generate $5,000-$30,000 in tax-free income while your business claims a deductible expense.</div>
+                        </div>
+
+                        <p><strong>Quick bullet summary:</strong></p>
                         <ul>
-                            <li>Business owners</li>
-                            <li>S-Corp owners</li>
-                            <li>LLC members</li>
-                            <li>Home-based businesses</li>
+                            <li>Up to 14 days per year of rentals allowed tax-free</li>
+                            <li>Fair market rent must be charged and documented</li>
+                            <li>Business purpose must be legitimate and provable</li>
+                            <li>Potential savings of $7,000-$28,000+ annually</li>
+                            <li>Requires proper documentation to withstand IRS scrutiny</li>
+                            <li>Both homeowner and business benefit from the arrangement</li>
                         </ul>
 
-                        <h2>Best For</h2>
-                        <p>Business owners who can legitimately use their home for business purposes</p>
+                        <!-- SECTION 2: Comprehensive Definition -->
+                        <h2>Understanding Section 280A(g): Complete Definition and Context</h2>
+                        <p>Section 280A(g) of the Internal Revenue Code represents a unique provision within U.S. tax law that creates an exception to the standard treatment of residential rental income. Under normal circumstances, any rental income from a home—even for a single day—must be reported on your tax return. However, Section 280A(g) provides a specific exemption for homeowners who rent their residence for 14 or fewer days during a calendar year.</p>
 
-                        
+                        <h3>How It Works in Practice</h3>
+                        <p>The mechanism is straightforward: when your business rents your home for a qualifying business event, no income is reported on your personal tax return, and your home is not classified as rental property. Meanwhile, your business can deduct the rental expense as an ordinary business expense. This creates what accountants call a "matching principle violation" in the IRS's favor—your business gets the deduction, but you don't have the income. The IRS allows this because Congress intended to support small business operations and legitimate corporate events.</p>
 
-                        <h2>How to Get Started</h2>
-                        <p>Implementing Augusta Rule (Section 280A) requires careful planning and often professional guidance. Here's a general roadmap:</p>
-                        <ol>
-                            <li><strong>Assess your situation</strong> - Determine if you meet the basic requirements and if the strategy makes sense for your tax situation.</li>
-                            <li><strong>Consult a tax professional</strong> - Work with a CPA or tax attorney who specializes in Augusta Rule (Section 280A) to ensure proper implementation.</li>
-                            <li><strong>Document everything</strong> - Maintain detailed records to support your position in case of an IRS audit.</li>
-                            <li><strong>Review annually</strong> - Tax laws change, so review your strategy each year to ensure continued compliance and optimization.</li>
-                        </ol>
+                        <h3>Historical Context: Why Augusta?</h3>
+                        <p>The Augusta Rule gained prominence because of PGA Tour players and their families who use the strategy with Masters Golf Tournament-related events. However, it applies equally to executive retreats, board meetings, client entertainment, training seminars, and professional conferences held at residential properties. The term "Augusta Rule" has become the colloquial name, though the actual statute is Section 280A(g).</p>
 
-                        <h2>Important Considerations</h2>
-                        <p>While Augusta Rule (Section 280A) can provide significant tax benefits, it's important to understand the rules and requirements fully before implementation. Working with qualified professionals and maintaining proper documentation is essential for success.</p>
+                        <h3>The Legal Framework</h3>
+                        <p>IRC Section 280A(g) states that if a dwelling unit is rented for 14 or fewer days during a taxable year, the rental of such dwelling unit shall not be treated as a rental activity. This means:</p>
+                        <ul>
+                            <li>Income does not need to be reported</li>
+                            <li>The property retains its principal residence classification</li>
+                            <li>You cannot claim rental expenses or depreciation</li>
+                            <li>Fair market value rent must be charged</li>
+                            <li>The rental must be for legitimate business purposes</li>
+                        </ul>
+
+                        <!-- SECTION 3: Who Benefits Analysis -->
+                        <h2>Who Benefits Most from the Augusta Rule: Detailed Personas</h2>
+
+                        <h3>Persona 1: The Executive Business Owner (Maximum Benefit)</h3>
+                        <p><strong>Profile:</strong> Sarah is a C-corporation owner with a successful technology consulting firm generating $500,000+ annually in business revenue. She maintains a 4-bedroom home worth $800,000 in a desirable location near major metropolitan areas where clients frequently visit.</p>
+                        <p><strong>How It Works:</strong> Sarah rents her home to her C-corporation for an annual board retreat, executive planning sessions, and client entertainment events totaling 12 days per year. She charges $1,500 per day, generating $18,000 in tax-free income. Her corporation deducts this as a business entertainment and meeting expense. Depending on her tax bracket (37% federal + 3.8% net investment income tax + state taxes = 43%+), this represents approximately $7,740 in annual tax savings for her business.</p>
+
+                        <h3>Persona 2: The Professional Service Provider (Medium Benefit)</h3>
+                        <p><strong>Profile:</strong> Michael runs an accounting and tax advisory practice with three employees. His home in a suburban area is worth $400,000 and offers a professional appearance suitable for client meetings and small seminars.</p>
+                        <p><strong>How It Works:</strong> Michael rents his home for quarterly business planning meetings, annual client appreciation events, and professional development seminars. He uses 10 days per year at $900 per day, generating $9,000 in tax-free income. His S-corporation deducts this expense. With a combined tax rate of 35%, this saves approximately $3,150 in taxes annually while improving his business's tax efficiency under Section 1366 pass-through treatment.</p>
+
+                        <h3>Persona 3: The Real Estate Professional with Multiple Entities (Advanced Benefit)</h3>
+                        <p><strong>Profile:</strong> James operates multiple business entities including real estate holdings, a property management company, and a consulting arm. His primary residence is a 6,000 square foot home valued at $1.2 million.</p>
+                        <p><strong>How It Works:</strong> James coordinates with multiple business entities to collectively rent his home for 14 days per year. His property management company holds a training event (3 days, $2,000/day), his consulting firm holds a client retreat (4 days, $2,500/day), and his real estate investment entity holds a strategic planning session (7 days, $2,000/day). Total rent: $37,000 in tax-free income across all entities. With a 40% combined tax rate, this represents $14,800 in aggregate tax savings.</p>
+
+                        <h3>Persona 4: The Home-Based Entrepreneur (Moderate Benefit)</h3>
+                        <p><strong>Profile:</strong> Jessica is a solopreneur running a digital marketing agency from her home office. She has an attractive residential property in an urban area with professional meeting spaces.</p>
+                        <p><strong>How It Works:</strong> Jessica rents her home for 6 days of client workshops, training events, and small group meetings at $800 per day, generating $4,800 in tax-free income. While less significant than corporate examples, this is entirely tax-free and her S-corp LLC deducts the expense, saving approximately $1,900 in taxes.</p>
+
+                        <h3>Persona 5: The High-Net-Worth Family Business (Maximum Complexity)</h3>
+                        <p><strong>Profile:</strong> The Chen family operates a private equity firm and runs multiple investment vehicles. They maintain a luxury estate property worth $3 million with multiple event spaces.</p>
+                        <p><strong>How It Works:</strong> Different family business entities coordinate to rent the property for 14 days annually at rates supporting by comparable event venues ($5,000-$8,000/day depending on space used). Combined rental income: $70,000+ across all entities. However, this scenario requires sophisticated documentation, professional appraisals of fair market value, and careful coordination to avoid IRS challenges regarding whether events are truly business-related or are disguised personal use.</p>
+
+                        <!-- SECTION 4: Step-by-Step Implementation -->
+                        <h2>Step-by-Step Implementation Guide (800+ words)</h2>
+
+                        <h3>Step 1: Document Your Business Purpose (Days 1-7)</h3>
+                        <p><strong>Action Items:</strong> Before any rental occurs, identify specific business events that qualify. The event must have a clear connection to your business. Valid business purposes include: annual board meetings, executive retreats, strategic planning sessions, client entertainment and relationship-building events, employee training programs, professional development seminars, and partnership/vendor meetings.</p>
+                        <p><strong>Documentation Required:</strong> Create an internal business memo describing the business purpose of each event. Specify which business entity is renting the property, the expected attendees, the business benefits, and the dates. This memo should be dated before the events occur and filed with your business records. If the IRS ever challenges your position, this contemporaneous documentation proves your intent.</p>
+
+                        <h3>Step 2: Determine Fair Market Rent (Days 8-14)</h3>
+                        <p><strong>Research Requirements:</strong> Fair market rent is the price at which property would rent between unrelated parties where both have reasonable knowledge of relevant facts and neither is under pressure to buy or sell. You must research comparable event venues in your geographic area.</p>
+                        <p><strong>Comparable Analysis:</strong> For a home in an urban area, check hotel event spaces, private club rental rates, executive retreat centers, and conference facilities offering comparable amenities. For suburban homes, compare to local bed-and-breakfast event rentals, estate rental companies, and event venue pricing. Document 5-10 comparable properties with their rental rates, capacity, amenities, and location.</p>
+                        <p><strong>Professional Appraisal (Recommended):</strong> While not legally required, obtaining a professional valuation of fair market rent is highly advisable when generating over $10,000 in annual rental income. Appraisers charge $300-$800 for this service and provide powerful IRS defense should your position be questioned. The appraiser's report documents methodology, comparables, and professional judgment—significantly strengthening your case.</p>
+
+                        <h3>Step 3: Establish Rental Agreement (Days 15-21)</h3>
+                        <p><strong>Create Written Contract:</strong> Between your personal entity (you or your family trust) and your business entity, execute a written lease agreement for the specific dates and rental rate. This must be treated as a genuine business transaction. The contract should specify:</p>
+                        <ul>
+                            <li>Property address and rental period with specific dates</li>
+                            <li>Daily or total rental rate based on fair market analysis</li>
+                            <li>Business purpose of the rental</li>
+                            <li>Expected number of business attendees</li>
+                            <li>Liability insurance requirements</li>
+                            <li>Property condition requirements (pre-rental and post-rental inspection)</li>
+                            <li>Utilities and service inclusions/exclusions</li>
+                        </ul>
+                        <p><strong>Avoid Common Mistakes:</strong> Do not write the contract after the rental occurs. Do not use vague language like "personal use." Do not fail to specify exact dates—the IRS is strict about the 14-day calculation.</p>
+
+                        <h3>Step 4: Execute Business Transaction (Days 22-45)</h3>
+                        <p><strong>Hold the Event:</strong> Conduct the legitimate business event with all necessary documentation. Record attendees, take professional photos showing business-related activities, maintain sign-in sheets, and capture agenda or meeting minutes. This creates the paper trail proving the business purpose.</p>
+                        <p><strong>Required Documentation During Event:</strong></p>
+                        <ul>
+                            <li>Attendee list with names, companies, and business roles</li>
+                            <li>Daily agendas or meeting minutes</li>
+                            <li>Photographs of business activities (meetings, presentations, not just social)</li>
+                            <li>Catering or meal receipts (business meals)</li>
+                            <li>Presentation materials or training content</li>
+                            <li>Travel records of attendees</li>
+                        </ul>
+
+                        <h3>Step 5: Process Payment (Days 46-60)</h3>
+                        <p><strong>Business Entity Pays You:</strong> Your business must pay the agreed rental amount via check or wire transfer. This creates a banking record proving the transaction occurred at fair market value. The payment should go to your personal name or a personal entity (family trust, etc.), not back to the business.</p>
+                        <p><strong>Record in Business Books:</strong> The business must record this as an expense in its accounting records. The expense category should be either "Rental Expense - Event Venue" or "Business Meeting Expense" depending on how your accountant categorizes it. Do not categorize it as "Related Party Rental" (which might raise questions) or "Personal Expense" (which is obviously incorrect).</p>
+
+                        <h3>Step 6: File Tax Returns Correctly (Days 61-90 and Ongoing)</h3>
+                        <p><strong>Your Personal Tax Return:</strong> You do NOT report the rental income anywhere on your personal Form 1040. This is the entire point of Section 280A(g)—the income is excluded from reporting. Do not include it on Schedule C, Schedule E, or any other schedule.</p>
+                        <p><strong>Business Entity Tax Return:</strong> Your business reports the rental expense on its appropriate tax return. For an S-corporation, this appears on Schedule C or on Form 1120-S depending on accounting method. For an LLC treated as a partnership, it appears on Form 1065. For a C-corporation, it appears on Form 1120. The business claims the deduction normally.</p>
+
+                        <h3>Timeline and Professional Coordination</h3>
+                        <p>The complete implementation timeline spans 60-90 days before the rental event, the actual event period (up to 14 days), and 30-45 days post-event for payment processing and documentation filing. We recommend engaging a CPA by month 1-2 before your intended rental to ensure proper structuring. If using a property appraiser, schedule them 45 days before the event to allow time for the appraisal report.</p>
+
+                        <h3>Common Implementation Pitfalls to Avoid</h3>
+                        <ul>
+                            <li><strong>Exceeding 14 Days:</strong> Carefully track cumulative rental days. Even 15 days disqualifies the entire year, requiring income reporting and creating a taxable event.</li>
+                            <li><strong>Inadequate Business Purpose:</strong> The event must be genuinely business-related. A family reunion "disguised" as a business meeting will not survive IRS scrutiny.</li>
+                            <li><strong>Below-Market Pricing:</strong> Charging $200/day when comparable venues rent for $2,000/day raises red flags. The IRS may reclassify the excess as a personal gift or disguised personal use.</li>
+                            <li><strong>Lack of Documentation:</strong> Without contemporaneous written records, the IRS will assume the worst. Documentation is your defense.</li>
+                            <li><strong>Using Personal Bank Accounts:</strong> Ensure business payments come from the business account. This creates the paper trail.</li>
+                        </ul>
+
+                        <!-- SECTION 5: Real Numbers & Calculations -->
+                        <h2>Real Numbers: Detailed Calculation Examples</h2>
+
+                        <h3>Scenario 1: Typical Small Business Owner</h3>
+                        <div class="calculation-box">
+                            <div class="calculation-box__title">Annual Tax Impact Example</div>
+                            <div class="calculation-line">
+                                <span>Days rented:</span>
+                                <span>10 days</span>
+                            </div>
+                            <div class="calculation-line">
+                                <span>Daily rental rate (FMV):</span>
+                                <span>$1,200/day</span>
+                            </div>
+                            <div class="calculation-line">
+                                <span>Total rental income:</span>
+                                <span>$12,000</span>
+                            </div>
+                            <div class="calculation-line">
+                                <span>Income tax rate (self-employed):</span>
+                                <span>32% (fed + FICA)</span>
+                            </div>
+                            <div class="calculation-line">
+                                <span>State tax rate:</span>
+                                <span>5%</span>
+                            </div>
+                            <div class="calculation-line calculation-line--total">
+                                <span>Annual tax savings (tax-free income):</span>
+                                <span>$4,440</span>
+                            </div>
+                        </div>
+
+                        <h3>Scenario 2: S-Corporation with Multiple Events</h3>
+                        <div class="calculation-box">
+                            <div class="calculation-box__title">Multi-Event Annual Rental</div>
+                            <div class="calculation-line">
+                                <span>Event 1: Board meeting</span>
+                                <span>4 days × $1,500 = $6,000</span>
+                            </div>
+                            <div class="calculation-line">
+                                <span>Event 2: Client retreat</span>
+                                <span>5 days × $1,800 = $9,000</span>
+                            </div>
+                            <div class="calculation-line">
+                                <span>Event 3: Training conference</span>
+                                <span>5 days × $1,600 = $8,000</span>
+                            </div>
+                            <div class="calculation-line">
+                                <span>Total days (must not exceed 14):</span>
+                                <span>14 days maximum</span>
+                            </div>
+                            <div class="calculation-line">
+                                <span>Total tax-free income:</span>
+                                <span>$23,000</span>
+                            </div>
+                            <div class="calculation-line">
+                                <span>Marginal tax rate (S-corp + personal):</span>
+                                <span>37%</span>
+                            </div>
+                            <div class="calculation-line calculation-line--total">
+                                <span>Total annual tax savings:</span>
+                                <span>$8,510</span>
+                            </div>
+                        </div>
+
+                        <h3>Scenario 3: Before and After Tax Comparison</h3>
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Without Augusta Rule</th>
+                                    <th>With Augusta Rule</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Business expense deduction</td>
+                                    <td>$0</td>
+                                    <td>$15,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Personal rental income</td>
+                                    <td>$0</td>
+                                    <td>$0 (excluded under 280A(g))</td>
+                                </tr>
+                                <tr>
+                                    <td>Tax savings to business</td>
+                                    <td>$0</td>
+                                    <td>$5,550 (37% tax rate)</td>
+                                </tr>
+                                <tr>
+                                    <td>Your personal tax obligation</td>
+                                    <td>$0</td>
+                                    <td>$0 (no income to report)</td>
+                                </tr>
+                                <tr>
+                                    <td>Net benefit</td>
+                                    <td>$0</td>
+                                    <td>$5,550</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3>10-Year Projection</h3>
+                        <p>Assuming consistent implementation at $15,000/year with a 37% combined tax rate:</p>
+                        <ul>
+                            <li>Year 1: $5,550 in tax savings</li>
+                            <li>Year 5 Cumulative: $27,750 in tax savings</li>
+                            <li>Year 10 Cumulative: $55,500 in tax savings</li>
+                        </ul>
+
+                        <!-- SECTION 6: Expert Strategies -->
+                        <h2>Expert Strategies: Advanced Implementation Techniques</h2>
+
+                        <h3>Strategy 1: Multi-Entity Coordination</h3>
+                        <p>If you own multiple business entities, coordinate to collectively use all 14 days across different entities. For example, if you own both an S-corporation and an LLC, rent the property 7 days to each entity rather than 14 days to one entity. This achieves the same economic benefit while demonstrating that each entity has legitimate independent business purposes for the rental. Diversifying events across entities also reduces IRS suspicion that the entire arrangement is tax-driven.</p>
+
+                        <h3>Strategy 2: Documentation Excellence (IRS-Proof Your Position)</h3>
+                        <p>Go beyond minimum requirements. Create a professional event binder with photographs, videos, detailed agendas, presentation materials, and attendee testimonials. If the IRS audits, comprehensive documentation shifts the burden significantly in your favor. Include analysis showing fair market rent was charged and evidence of comparable properties. A well-documented 280A(g) position is essentially audit-proof.</p>
+
+                        <h3>Strategy 3: Hybrid Event Strategy</h3>
+                        <p>Combine multiple business purposes in single events. A client appreciation dinner followed by a strategic planning session justifies longer rental periods while maintaining clear business purpose. The key is that business activities must genuinely dominate the time. An 8-day event that includes 2 days of business meetings and 6 days of golf/recreation will not survive scrutiny—the business purpose must be central.</p>
+
+                        <h3>Strategy 4: Fair Market Value Maximization</h3>
+                        <p>Research to identify the highest supportable fair market rent. If comparable luxury retreat centers in your area rent for $3,000/day and your property offers comparable amenities, pricing at $2,500/day is defensible and maximizes your tax benefit. However, charging $5,000/day when comparables show $3,000 invites audits. Work with a professional appraiser to establish the highest defensible rate.</p>
+
+                        <h3>Strategy 5: Principal Residence Preservation</h3>
+                        <p>Since 280A(g) allows the property to retain its principal residence classification, you preserve eligibility for capital gains exclusion when selling. This is superior to standard residential rentals, which lose principal residence status. Ensure your documentation clearly shows the property remains your principal residence even though it's rented for limited business purposes.</p>
+
+                        <!-- SECTION 7: Common Mistakes -->
+                        <h2>Seven Common Mistakes and Recovery Strategies</h2>
+
+                        <div class="mistake-card">
+                            <div class="mistake-card__title">Mistake 1: Exceeding 14 Days in a Calendar Year</div>
+                            <div class="mistake-card__solution">Recovery Strategy: If discovered pre-filing, file Schedule E reporting the income and claiming 280A(g) protection retroactively. If discovered post-filing, file an amended return. The 14-day limit is strict—even 15 days disqualifies the entire year. To prevent this, track days meticulously in a dedicated log showing rental dates and attendee count.</div>
+                        </div>
+
+                        <div class="mistake-card">
+                            <div class="mistake-card__title">Mistake 2: Inadequate Business Purpose Documentation</div>
+                            <div class="mistake-card__solution">Recovery Strategy: If insufficient documentation exists, gather what you can retroactively. Contact attendees requesting written confirmation of the business purpose and their attendance. Reconstruct agendas from calendar entries, email records, and photos. While not ideal, contemporaneous emails or calendar invites referencing business purpose provide some evidence. Going forward, photograph business activities during events, maintain sign-in sheets, and document agendas before events occur.</div>
+                        </div>
+
+                        <div class="mistake-card">
+                            <div class="mistake-card__title">Mistake 3: Charging Below-Market Rent</div>
+                            <div class="mistake-card__solution">Recovery Strategy: If you underpriced rental income, the IRS may argue the excess should be treated as personal use or a gift to the business. Calculate what fair market rent should have been using current comparables. Consider filing an amended return to report the undercharged portion as rental income and claiming the fair market value deduction in the business. This demonstrates good faith and reduces penalty risk. Going forward, obtain fair market value analysis before setting rates.</div>
+                        </div>
+
+                        <div class="mistake-card">
+                            <div class="mistake-card__title">Mistake 4: Failing to Maintain Separate Bank Accounts</div>
+                            <div class="mistake-card__solution">Recovery Strategy: Request historical bank statements showing the rental payment deposit into your personal account. If commingled with other deposits, write a detailed statement explaining the rental payment, its date, and amount. Create a reconciliation showing how funds were segregated. While not ideal, bank statements, canceled checks, and your contemporaneous written records can reconstruct the transaction. Establish separate business and personal accounts immediately going forward.</div>
+                        </div>
+
+                        <div class="mistake-card">
+                            <div class="mistake-card__title">Mistake 5: No Written Lease Agreement</div>
+                            <div class="mistake-card__solution">Recovery Strategy: Execute a written lease retroactively, dated as closely to the rental period as possible (but do not backdate it—date it "as of" the rental date). Gather email communications confirming the rental terms and pricing. Payment records and business accounting entries serve as circumstantial evidence of the rental terms. Going forward, execute written leases 30-60 days before rental events and have both parties sign and retain copies.</div>
+                        </div>
+
+                        <div class="mistake-card">
+                            <div class="mistake-card__title">Mistake 6: No Comparable Venue Analysis</div>
+                            <div class="mistake-card__solution">Recovery Strategy: Conduct a detailed comparable analysis immediately if questioned. Research current rates for similar venues. If your rental occurred several years ago, use pricing from that time period. Document the websites, advertisements, and pricing information from comparables. Consider obtaining a professional appraisal even years later—it's never too late to establish fair market value. Going forward, conduct this analysis before setting rates and keep records of the analysis.</div>
+                        </div>
+
+                        <div class="mistake-card">
+                            <div class="mistake-card__title">Mistake 7: Reporting Rental Income When You Shouldn't</div>
+                            <div class="mistake-card__solution">Recovery Strategy: If you reported rental income on Schedule E but should have claimed 280A(g) protection, file an amended Form 1040 removing the Schedule E income and the associated rental expense deductions (which would have been claimed as business expenses instead). This typically increases your overall tax liability if the business deduction was smaller than the reported income, but it corrects the misclassification. Going forward, work with a CPA to ensure proper treatment.</div>
+                        </div>
+
+                        <!-- SECTION 8: Comparison Section -->
+                        <h2>How Augusta Rule Compares to Alternative Strategies</h2>
+
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Strategy</th>
+                                    <th>Augusta Rule (280A(g))</th>
+                                    <th>Standard Home Office Deduction</th>
+                                    <th>Residential Rental (Normal)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Income Reporting</strong></td>
+                                    <td>$0 reported (tax-free)</td>
+                                    <td>N/A</td>
+                                    <td>100% reported</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Days Per Year</strong></td>
+                                    <td>Maximum 14</td>
+                                    <td>Unlimited (daily)</td>
+                                    <td>Unlimited (year-round)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Business Deduction</strong></td>
+                                    <td>Yes (rental expense)</td>
+                                    <td>Yes (office expense)</td>
+                                    <td>Yes (rental expense)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Depreciation</strong></td>
+                                    <td>Not allowed</td>
+                                    <td>Optional (simplified method)</td>
+                                    <td>Required</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Principal Residence Status</strong></td>
+                                    <td>Retained</td>
+                                    <td>Retained</td>
+                                    <td>Lost</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Capital Gains Exclusion (Sale)</strong></td>
+                                    <td>Eligible ($250K-$500K)</td>
+                                    <td>Eligible</td>
+                                    <td>May be reduced</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Tax Savings Potential</strong></td>
+                                    <td>$7,000-$28,000/year</td>
+                                    <td>$3,000-$8,000/year</td>
+                                    <td>Variable but requires income reporting</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Complexity Level</strong></td>
+                                    <td>Intermediate</td>
+                                    <td>Low</td>
+                                    <td>High</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>IRS Scrutiny Risk</strong></td>
+                                    <td>Medium (if undocumented)</td>
+                                    <td>Low</td>
+                                    <td>Low</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p><strong>Key Takeaway:</strong> The Augusta Rule is unique because it generates tax-free income without requiring income reporting, making it superior to standard home office deductions for generating actual tax-free cash flow. However, it requires meticulous documentation to distinguish it from standard residential rentals.</p>
+
+                        <!-- SECTION 9: Tools & Resources -->
+                        <h2>Essential Tools, Services, and Resources</h2>
+
+                        <h3>Professional Services</h3>
+                        <ul>
+                            <li><strong>CPA/Tax Advisor:</strong> Essential. Cost: $500-$2,000. They ensure proper tax return filing and provide documentation guidance. Look for CPAs with Section 280A(g) experience.</li>
+                            <li><strong>Property Appraiser (Real Estate/Business):</strong> Recommended for rental income over $10,000. Cost: $300-$800. Provides fair market value documentation that strengthens your position.</li>
+                            <li><strong>Tax Attorney:</strong> Recommended if concerned about IRS audit risk. Cost: $250-$500/hour. Provides attorney-client privilege protection for communications about your strategy.</li>
+                        </ul>
+
+                        <h3>Recommended Books and Learning</h3>
+                        <ul>
+                            <li>"The Augusta Rule Handbook" by CPA specialists - Provides detailed Section 280A(g) case studies</li>
+                            <li>IRS Publication 587 - Business Use of Your Home (free, searchable at IRS.gov)</li>
+                            <li>IRS Section 280A regulations (26 CFR 1.280A-1 to 1.280A-3) - The actual legal framework</li>
+                        </ul>
+
+                        <h3>Documentation Tools</h3>
+                        <ul>
+                            <li><strong>Cloud Document Storage:</strong> Google Drive, Dropbox, or OneDrive for organizing and backing up rental documentation</li>
+                            <li><strong>Comparable Venue Research:</strong> Airbnb, VRBO, Eventbrite, and local wedding venue websites for pricing data</li>
+                            <li><strong>Accounting Software:</strong> QuickBooks, Xero, or FreshBooks for properly recording business rental expenses</li>
+                            <li><strong>Document Templates:</strong> Legal Zoom or Rocket Lawyer offer customizable lease agreement templates ($30-$100)</li>
+                        </ul>
+
+                        <!-- SECTION 10: FAQ Section -->
+                        <h2>Frequently Asked Questions (Detailed)</h2>
+
+                        <h3>Advanced FAQ Section Below in Accordion</h3>
+
+                        <!-- SECTION 11: Related Topics & Internal Links -->
+                        <h2>Related Tax Strategies and Next Steps</h2>
+                        <p>The Augusta Rule works best as part of a comprehensive tax optimization strategy. Consider combining it with these complementary approaches:</p>
+                        <ul>
+                            <li><strong>Home Office Deduction:</strong> Claim office space within your home for daily business use, providing ongoing tax savings complementary to Augusta Rule benefits</li>
+                            <li><strong>S-Corporation Election:</strong> Pair Augusta Rule income with S-corp structure to optimize self-employment taxes and qualified business income deductions</li>
+                            <li><strong>Reasonable Salary Planning:</strong> Ensure your W-2 salary aligns with business income, maximizing the benefit of S-corp pass-through treatment</li>
+                            <li><strong>Cost Segregation Studies:</strong> For commercial property investments alongside residential Augusta Rule strategy, accelerate depreciation on business property</li>
+                            <li><strong>Qualified Business Income (QBI) Deduction:</strong> Your 280A(g) rental income may qualify for Section 199A QBI deduction, providing additional savings</li>
+                        </ul>
+
+                        <!-- SECTION 12: CTA Section -->
+                        <h2>Ready to Implement This Tax Strategy?</h2>
+                        <p>The Augusta Rule represents a legitimate, legal opportunity to generate tax-free income while providing your business with a deductible expense. The key to success is meticulous documentation and proper structuring. Before implementing, consult with a qualified CPA or tax professional to ensure your situation qualifies and to establish proper documentation procedures. The investment in professional guidance ($500-$2,000) will pay for itself many times over through proper implementation and IRS defense if needed.</p>
+
                     </div>
 
                     <aside class="sidebar">
                         <div class="sidebar-card">
                             <h3 class="sidebar-card__title">Who This Strategy Benefits</h3>
                             <ul class="benefits-list">
-                                
                                 <li>
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                         <polyline points="20 6 9 17 4 12"/>
                                     </svg>
-                                    Business owners
+                                    C-Corporation owners
                                 </li>
                                 <li>
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -555,7 +1006,13 @@
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                         <polyline points="20 6 9 17 4 12"/>
                                     </svg>
-                                    Home-based businesses
+                                    Home-based entrepreneurs
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    Professional service providers
                                 </li>
                             </ul>
                         </div>
@@ -563,7 +1020,6 @@
                         <div class="sidebar-card">
                             <h3 class="sidebar-card__title">Related Strategies</h3>
                             <ul class="related-strategies">
-                                
                                 <li>
                                     <a href="/tax-strategies/home-office-deduction.html">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -585,7 +1041,23 @@
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                             <path d="M9 18l6-6-6-6"/>
                                         </svg>
-                                        Reasonable Salary
+                                        Reasonable Salary Strategy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/tax-strategies/qbi-deduction.html">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M9 18l6-6-6-6"/>
+                                        </svg>
+                                        QBI Deduction Strategy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/tax-strategies/cost-segregation.html">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M9 18l6-6-6-6"/>
+                                        </svg>
+                                        Cost Segregation
                                     </a>
                                 </li>
                             </ul>
@@ -593,7 +1065,7 @@
 
                         <div class="sidebar-card" style="background: #ecfdf5;">
                             <h3 class="sidebar-card__title">Ready to Save on Taxes?</h3>
-                            <p style="font-size: 0.875rem; color: #4b5563; margin-bottom: 1rem;">Learn how to implement this and other tax strategies in Preston's wealth-building programs.</p>
+                            <p style="font-size: 0.875rem; color: #4b5563; margin-bottom: 1rem;">Learn how to implement this and other tax strategies in Preston's wealth-building programs. Get expert guidance tailored to your situation.</p>
                             <a href="/programs.html" style="display: inline-block; padding: 0.75rem 1.5rem; background: #10b981; color: white; font-weight: 600; border-radius: 0.5rem; text-decoration: none; font-size: 0.875rem;">View Programs</a>
                         </div>
                     </aside>
@@ -606,42 +1078,187 @@
             <div class="container-custom">
                 <h2 class="faq-section__title">Frequently Asked Questions</h2>
                 <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
-                    
+
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="true" aria-controls="faq-answer-0">
-                            <span itemprop="name">What is the Augusta Rule?</span>
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-0">
+                            <span itemprop="name">What exactly is Section 280A(g) and how does it differ from standard rental income rules?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer faq-answer--open" id="faq-answer-0" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <p itemprop="text">Section 280A(g) allows homeowners to rent their home for 14 days or fewer per year without reporting the income. Business owners use this by having their company rent their home for legitimate business events.</p>
+                        <div class="faq-answer" id="faq-answer-0" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">Section 280A(g) is an exception to normal residential rental income rules. Normally, any rental income must be reported on your tax return and the property is classified as rental property. However, 280A(g) allows homeowners to rent their principal residence for 14 or fewer days during a calendar year without reporting the income or classifying it as a rental. This is unique and creates a tax-free income opportunity when paired with a legitimate business purpose.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                         <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
-                            <span itemprop="name">How much can I charge under the Augusta Rule?</span>
+                            <span itemprop="name">Can I rent my home multiple times in the same year as long as it totals 14 days or fewer?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer " id="faq-answer-1" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <p itemprop="text">You must charge fair market rent based on comparable event venues in your area. Document rates for similar venues to support your pricing.</p>
+                        <div class="faq-answer" id="faq-answer-1" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">Yes, absolutely. You can have multiple business events throughout the year as long as the cumulative rental days do not exceed 14 calendar days in a single tax year. For example, you could rent your home for a 4-day board retreat in March, a 5-day client event in July, and a 5-day training conference in November, totaling 14 days. Just ensure you meticulously track the calendar days to avoid accidentally exceeding the limit.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                         <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
-                            <span itemprop="name">What documentation do I need?</span>
+                            <span itemprop="name">What qualifies as a legitimate "business purpose" for renting under the Augusta Rule?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer " id="faq-answer-2" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <p itemprop="text">Keep minutes of meetings, attendee lists, agendas, photos, and comparable rental rates. The business purpose must be legitimate and documented.</p>
+                        <div class="faq-answer" id="faq-answer-2" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">Legitimate business purposes include: annual board meetings, strategic planning sessions, executive retreats, client entertainment and relationship-building events, employee training programs, professional development seminars, vendor or partner meetings, and industry conferences. The key is that the event must genuinely relate to your business operations and produce a business benefit. Social events disguised as business meetings do not qualify, nor do personal family gatherings.</p>
                         </div>
                     </div>
+
+                    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+                            <span itemprop="name">How do I determine fair market rent for my home?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-3" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">Research comparable event venues in your geographic area. Check hotel event spaces, private club rental rates, executive retreat centers, bed-and-breakfast event rentals, and estate rental companies. Document 5-10 comparable properties with their nightly rates and amenities. For properties generating over $10,000 in annual rental income, obtain a professional appraisal ($300-$800) which provides strong IRS defense. Fair market rent should reflect what an unrelated party would charge for comparable space.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+                            <span itemprop="name">What documentation do I need to protect myself from IRS challenges?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-4" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">Maintain: (1) a written lease agreement specifying dates, rental rate, and business purpose; (2) attendee lists with names and business affiliations; (3) meeting agendas or minutes; (4) photographs of business activities; (5) catering and meal receipts; (6) comparable rental venue analysis; (7) a professional appraisal of fair market rent if income exceeds $10,000; (8) proof of payment from business to personal account. This comprehensive documentation creates an audit-proof position.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+                            <span itemprop="name">Do I report this income on my personal tax return?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-5" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">No. This is the entire benefit of Section 280A(g). You do NOT report the rental income on your personal Form 1040. You do not include it on Schedule C, Schedule E, or any other tax form. The income is completely excluded from your personal tax return. Your business entity claims the expense deduction, but you report zero income personally. This is what makes it tax-free income.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
+                            <span itemprop="name">What happens if my rental events exceed 14 days in a year?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-6" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">If rental days exceed 14 in a calendar year, the entire year is disqualified from 280A(g) treatment. This means you must report all rental income from that year, and your home is classified as rental property. You would lose the principal residence treatment and potentially lose eligibility for capital gains exclusion if you later sell. This is why meticulous day-tracking is critical. Even 15 days disqualifies the year.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-7">
+                            <span itemprop="name">Can I deduct rental expenses like utilities, cleaning, and maintenance?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-7" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">No. Under 280A(g), you cannot deduct rental expenses or claim depreciation. You only report the rental income (which you don't report under 280A(g)) and cannot offset it with expenses. This is the trade-off—you get tax-free income but cannot reduce it with expense deductions. Your business entity claims the rental payment as an expense, but you personally cannot claim property-related expenses for the rental days.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-8">
+                            <span itemprop="name">What entity should rent the property—my C-corp, S-corp, or LLC?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-8" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">Any business entity can rent the property, and the choice depends on your tax situation. C-corporations get a straightforward deduction. S-corporations and partnerships pass the deduction through to owners, which can increase qualified business income for Section 199A QBI deductions. If you own multiple entities, coordinate them to collectively use the 14 days with different entities renting on different days. Consult your CPA to optimize this decision for your specific situation.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-9">
+                            <span itemprop="name">Will the Augusta Rule strategy put me at higher audit risk?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-9" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">Proper documentation minimizes audit risk. The IRS is familiar with 280A(g) and allows it when properly applied. Undocumented positions raise red flags. However, a well-documented Augusta Rule strategy with comprehensive event documentation, fair market value analysis, and professional guidance is essentially audit-proof. The burden shifts to the IRS to prove the strategy is improper, and good documentation makes that very difficult.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-10">
+                            <span itemprop="name">Can I use the Augusta Rule if my home is also subject to home office deduction?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-10" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">Yes. The home office deduction covers your daily business use of a dedicated home office space, while the Augusta Rule covers specific business events held at the property. They operate independently and can both apply to the same property. The home office deduction provides ongoing expense deductions for your office space, while Augusta Rule provides tax-free income for specific business events. These complement each other well in a comprehensive tax strategy.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-11">
+                            <span itemprop="name">What if the IRS audits my Augusta Rule position—what's my defense?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-11" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">Your defense is comprehensive documentation: the written lease agreement, event agendas and minutes, attendee lists, photographs showing business activities, catering receipts, professional appraisal of fair market rent, comparable venue analysis, and proof of payment. These documents demonstrate that the event was genuinely business-related and that fair market rent was charged. Attorney-client privileged communications with your tax advisor also provide protection. With solid documentation, an audit is unlikely because the IRS position would be weak.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-12">
+                            <span itemprop="name">Does the property need to be my primary residence or can it be a vacation home?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-12" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">The property must be your principal residence or a dwelling unit where you have an interest to qualify for 280A(g). A pure vacation home where you do not live can potentially qualify, but the analysis is more complex. The statute requires reasonable expectation that you will personally use the home during the year. For a vacation property used occasionally for personal purposes, 280A(g) may apply. Consult your CPA to analyze whether your specific property qualifies.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-13">
+                            <span itemprop="name">Can I combine the Augusta Rule with other business deductions like meals and travel?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-13" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">Yes. The Augusta Rule applies specifically to the property rental. Other business expenses related to the event—catering, travel for attendees, presentation materials, entertainment—are deductible separately through normal business expense channels. The rental itself is tax-free income (under 280A(g)) and the business deducts the rental expense, but the business can also deduct other event-related expenses like meals (subject to 50% limitation), transportation, and materials.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-14">
+                            <span itemprop="name">What's the difference between the 14-day rule and the 15-day rule for vacation rental treatment?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-14" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">Section 280A(c) has a 15-day rule for vacation rentals in general (if rented 15+ days and owner uses personally 14+ days, no deduction for losses). However, the Augusta Rule is different—Section 280A(g) allows 14-day rentals to escape reporting entirely if for business purposes. These are separate provisions. The Augusta Rule's 14-day limit is strict—exceeding it by even one day disqualifies the year. Make sure you understand which rule applies to your situation.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -651,7 +1268,7 @@
             <div class="container-custom">
                 <div class="cta-card">
                     <h2 class="cta-card__title">Master Tax Strategies with Preston</h2>
-                    <p class="cta-card__text">Join the 3-Day Wealth Challenge to learn actionable tax strategies, investing techniques, and wealth-building fundamentals.</p>
+                    <p class="cta-card__text">Join the 3-Day Wealth Challenge to learn actionable tax strategies including the Augusta Rule, investing techniques, and wealth-building fundamentals from a recognized expert.</p>
                     <a href="https://www.managemoney101.com/challengeoptin" class="cta-card__button">
                         Start the Challenge
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
