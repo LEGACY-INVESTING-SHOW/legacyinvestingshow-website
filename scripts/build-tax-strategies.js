@@ -501,6 +501,37 @@ function generateIndexPage(strategies, personas) {
             </div>
         </section>
 
+        <section class="intro-section" style="padding: 4rem 0; background: white;">
+            <div class="container-custom">
+                <div style="max-width: 48rem; margin: 0 auto;">
+                    <h2 style="font-size: 1.875rem; font-weight: 700; color: #111827; margin-bottom: 1.5rem;">Why Tax Strategy Matters for Building Wealth</h2>
+                    <p style="color: #4b5563; line-height: 1.75; margin-bottom: 1.5rem;">The difference between wealthy investors and average earners often comes down to one thing: tax strategy. While most people focus on increasing income, the truly wealthy focus on keeping more of what they earn. According to IRS data, real estate investors who implement strategic tax planning can reduce their effective tax rate by 15-35% annually.</p>
+                    <p style="color: #4b5563; line-height: 1.75; margin-bottom: 1.5rem;">Whether you're a W-2 employee looking for your first deduction, a real estate investor with multiple properties, or a business owner trying to optimize your tax position, the strategies on this page can save you tens of thousands of dollars—potentially hundreds of thousands over a lifetime.</p>
+                    
+                    <h3 style="font-size: 1.25rem; font-weight: 600; color: #111827; margin: 2rem 0 1rem;">Key Categories of Tax Strategies</h3>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="font-weight: 600; color: #111827; margin-bottom: 0.5rem;">1. Real Estate Tax Strategies</h4>
+                        <p style="color: #4b5563; line-height: 1.75;">Real estate offers some of the most powerful tax advantages available. From <a href="/tax-strategies/cost-segregation.html" style="color: #059669; text-decoration: underline;">cost segregation</a> that accelerates depreciation to the <a href="/tax-strategies/short-term-rental-loophole.html" style="color: #059669; text-decoration: underline;">short-term rental loophole</a> that allows W-2 employees to deduct losses against ordinary income, these strategies can transform your tax bill. Real estate professional status (REPS) can unlock unlimited passive loss deductions, potentially eliminating your entire tax liability.</p>
+                    </div>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="font-weight: 600; color: #111827; margin-bottom: 0.5rem;">2. Business Tax Optimization</h4>
+                        <p style="color: #4b5563; line-height: 1.75;">Business owners have access to deductions that employees simply don't. <a href="/tax-strategies/section-179.html" style="color: #059669; text-decoration: underline;">Section 179</a> allows immediate expensing of up to $1.16 million in equipment. <a href="/tax-strategies/s-corp-strategy.html" style="color: #059669; text-decoration: underline;">S-Corp elections</a> can reduce self-employment tax by thousands. The Augusta Rule lets you rent your home to your business for up to 14 days tax-free. These strategies work together to minimize your business tax burden.</p>
+                    </div>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="font-weight: 600; color: #111827; margin-bottom: 0.5rem;">3. Retirement & Investment Accounts</h4>
+                        <p style="color: #4b5563; line-height: 1.75;">Self-directed IRAs and Solo 401(k)s allow you to invest retirement funds in real estate and alternative assets while enjoying tax-deferred or tax-free growth. <a href="/tax-strategies/hsa-strategy.html" style="color: #059669; text-decoration: underline;">Health Savings Accounts</a> offer triple tax advantages: deductible contributions, tax-free growth, and tax-free withdrawals for medical expenses. These accounts are powerful wealth-building tools when used strategically.</p>
+                    </div>
+                    
+                    <div style="background: #f0fdf4; border-left: 4px solid #10b981; padding: 1.5rem; margin: 2rem 0;">
+                        <p style="color: #065f46; font-weight: 500; margin: 0;"><strong>Key Insight:</strong> The average high-income earner who implements just 3-4 of these strategies saves $25,000-$50,000 annually in taxes. Over 10 years, that's $250,000-$500,000 kept in your pocket instead of sent to the IRS.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="personas-section">
             <div class="container-custom">
                 <h2 class="section-title">Find Strategies for Your Situation</h2>
@@ -515,6 +546,34 @@ function generateIndexPage(strategies, personas) {
                 <h2 class="section-title">All Tax Strategies</h2>
                 <div class="strategies-grid">
                     ${strategyCards}
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section" style="padding: 4rem 0; background: #f9fafb;">
+            <div class="container-custom">
+                <h2 style="font-size: 1.875rem; font-weight: 700; color: #111827; margin-bottom: 2rem; text-align: center;">Frequently Asked Questions About Tax Strategies</h2>
+                <div style="max-width: 48rem; margin: 0 auto;">
+                    <div class="faq-item" style="background: white; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 1rem; border: 1px solid #e5e7eb;">
+                        <h3 style="font-weight: 600; color: #111827; margin-bottom: 0.75rem;">Which tax strategy should I implement first?</h3>
+                        <p style="color: #4b5563; line-height: 1.75; margin: 0;">Start with the strategy that offers the highest return for your specific situation. For most investors with rental properties, cost segregation combined with bonus depreciation provides the biggest immediate impact—potentially $20,000-$100,000 in first-year deductions. For W-2 employees, the short-term rental loophole or HSA strategy are excellent starting points that don't require major lifestyle changes.</p>
+                    </div>
+                    <div class="faq-item" style="background: white; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 1rem; border: 1px solid #e5e7eb;">
+                        <h3 style="font-weight: 600; color: #111827; margin-bottom: 0.75rem;">Do I need a CPA to implement these strategies?</h3>
+                        <p style="color: #4b5563; line-height: 1.75; margin: 0;">While some strategies like basic HSA contributions can be done yourself, most advanced strategies require professional guidance. Cost segregation studies must be performed by qualified engineers or tax professionals. 1031 exchanges require a qualified intermediary. Real estate professional status requires careful documentation that a CPA can help establish. The cost of professional help is usually 1-5% of the tax savings generated.</p>
+                    </div>
+                    <div class="faq-item" style="background: white; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 1rem; border: 1px solid #e5e7eb;">
+                        <h3 style="font-weight: 600; color: #111827; margin-bottom: 0.75rem;">Can I use multiple tax strategies together?</h3>
+                        <p style="color: #4b5563; line-height: 1.75; margin: 0;">Absolutely—and you should. The most successful investors stack multiple strategies. For example, you might combine cost segregation with bonus depreciation on a rental property, contribute to a self-directed IRA, maximize your HSA, and implement an S-Corp strategy for your business income. The key is ensuring the strategies complement rather than conflict with each other. Always consult a tax professional when combining multiple advanced strategies.</p>
+                    </div>
+                    <div class="faq-item" style="background: white; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 1rem; border: 1px solid #e5e7eb;">
+                        <h3 style="font-weight: 600; color: #111827; margin-bottom: 0.75rem;">What's the difference between a tax deduction and a tax credit?</h3>
+                        <p style="color: #4b5563; line-height: 1.75; margin: 0;">A tax deduction reduces your taxable income, while a tax credit directly reduces your tax bill dollar-for-dollar. For someone in the 24% tax bracket, a $10,000 deduction saves $2,400 in taxes. A $10,000 credit saves the full $10,000. Most strategies on this page are deductions (like depreciation), but some credits exist—particularly for opportunity zone investments and certain energy-efficient improvements. Deductions are more common in real estate investing.</p>
+                    </div>
+                    <div class="faq-item" style="background: white; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 1rem; border: 1px solid #e5e7eb;">
+                        <h3 style="font-weight: 600; color: #111827; margin-bottom: 0.75rem;">How much can I realistically save with these strategies?</h3>
+                        <p style="color: #4b5563; line-height: 1.75; margin: 0;">Savings vary dramatically based on your income, investments, and which strategies you implement. A W-2 employee might save $5,000-$15,000 annually with HSA and basic deductions. A real estate investor with multiple properties using cost segregation, REPS, and the short-term rental loophole could save $50,000-$150,000+ per year. Business owners often fall in the middle, saving $15,000-$50,000 through entity structuring and expense optimization. The key is starting with the highest-impact strategies for your situation.</p>
+                    </div>
                 </div>
             </div>
         </section>
