@@ -3,7 +3,7 @@
 title: "How Kiana Replaced Her Finance Job with Airbnb Arbitrage in Scottsdale (2026 Case Study)"
 titleTemplate: "%s | Legacy Investing Show Success Stories"
 description: "Kiana quit her 10-year finance career and replaced her income with 2 Airbnb arbitrage properties generating $3,200/month cash flow in Scottsdale, Arizona. Learn her exact strategies for market research, landlord negotiations, and scaling while traveling the world."
-date: 2026-03-15
+date: 2025-10-15
 modifiedDate: 2026-01-23
 author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"

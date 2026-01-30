@@ -3,7 +3,7 @@
 title: "How Tom Built $25K in Bookings in 2 Weeks After Corporate Layoff (2026 Case Study)"
 titleTemplate: "%s | Legacy Investing Show Success Stories"
 description: "Tom went from Capital One layoff to $5,000-$6,000/month cash flow with his first Airbnb property on the Chesapeake Bay. Learn his exact strategies, landlord negotiation scripts, and team-building approach for Airbnb arbitrage success."
-date: 2026-03-21
+date: 2025-10-21
 modifiedDate: 2026-01-23
 author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"

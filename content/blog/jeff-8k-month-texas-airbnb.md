@@ -3,7 +3,7 @@
 title: "How Jeff Makes $8,000/Month with His Texas Airbnb After 28 Years in Banking (2026 Case Study)"
 titleTemplate: "%s | Legacy Investing Show Success Stories"
 description: "Jeff went from 28 years in banking to $8,000/month cash flow with his Galveston, Texas Airbnb property. Learn his exact strategies for guest experience, five-star reviews, and property investment success."
-date: 2026-03-03
+date: 2025-10-03
 modifiedDate: 2026-01-23
 author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"

@@ -3,7 +3,7 @@
 title: "How Dustin Built $6,000/Month Cash Flow with Zero Experience (2026 Case Study)"
 titleTemplate: "%s | Legacy Investing Show Success Stories"
 description: "Dustin went from corporate sales to $6,000/month Airbnb cash flow with 2 properties in Texas. Learn how he turned a failed Airbnb into a thriving business, got 5 landlords interested in one weekend, and now works less than 1 hour per week."
-date: 2026-04-20
+date: 2025-11-20
 modifiedDate: 2026-01-23
 author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"

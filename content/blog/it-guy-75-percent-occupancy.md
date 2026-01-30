@@ -1,9 +1,9 @@
 ---
 # Core SEO Fields
-title: "How An IT Worker"
+title: "How an IT Worker Built a $3,500/Month Airbnb with 75% Occupancy"
 titleTemplate: "%s | Legacy Investing Show Success Stories"
 description: "Grayson went from remote IT worker to $3,500/month profit with his first Airbnb property near Austin, Texas. Learn how he negotiated a security deposit for property improvements and achieved 75% occupancy within 3 months."
-date: 2026-03-06
+date: 2025-10-06
 modifiedDate: 2026-01-23
 author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"

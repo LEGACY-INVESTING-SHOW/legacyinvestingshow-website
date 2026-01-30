@@ -3,7 +3,7 @@
 title: "How This Nurse Locked Up a $2,000/Month Profit Property While Working Full-Time (2026)"
 titleTemplate: "%s | Legacy Investing Show Success Stories"
 description: "Kirk went from full-time nurse with no business experience to $5,500/month cash flow with Airbnb arbitrage in California. Learn how he overcame fear of landlord outreach and achieved 87% occupancy."
-date: 2026-04-11
+date: 2025-11-11
 modifiedDate: 2026-01-23
 author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"

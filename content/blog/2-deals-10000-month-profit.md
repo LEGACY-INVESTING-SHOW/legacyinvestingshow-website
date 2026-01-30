@@ -3,7 +3,7 @@
 title: "How Rob Built $10,000/Month with Just 2 Airbnb Properties (2026 Case Study)"
 titleTemplate: "%s | Legacy Investing Show Success Stories"
 description: "Rob went from sales professional with two young kids to $10,000/month profit with just 2 Airbnb arbitrage properties in Louisville, KY and St. Simons Island, GA. Learn his exact landlord negotiation scripts, remote team building strategy, and turnkey property secrets."
-date: 2026-04-17
+date: 2025-11-17
 modifiedDate: 2026-01-23
 author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"

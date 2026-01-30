@@ -3,7 +3,7 @@
 title: "How Christopher Went from Multiple Failures to $1,700/Month Airbnb Cash Flow in Louisiana (2026)"
 titleTemplate: "%s | Legacy Investing Show Success Stories"
 description: "Christopher Bamford overcame 50-70 rejected landlord calls and multiple failed deals to secure his first Airbnb arbitrage property generating $1,700/month cash flow in Louisiana. Learn his persistence strategy, landlord scripts, and setup process."
-date: 2026-04-08
+date: 2025-11-08
 modifiedDate: 2026-01-23
 author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"

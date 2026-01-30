@@ -3,7 +3,7 @@
 title: "How Andrew Operates a $2,500/Month Airbnb in Mexico From the US (2026 Case Study)"
 titleTemplate: "%s | Legacy Investing Show Success Stories"
 description: "Andrew went from hotel management professional to operating a $2,500/month Airbnb in Tulum, Mexico while living in the United States. Learn his exact strategies for international rental arbitrage, remote property management, and capitalizing on emerging markets."
-date: 2026-03-12
+date: 2025-10-12
 modifiedDate: 2026-01-23
 author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"

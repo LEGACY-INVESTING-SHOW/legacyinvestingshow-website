@@ -3,7 +3,7 @@
 title: "How Brian Makes $2,000/Month with Airbnb Arbitrage While Working Full-Time in IT (2026)"
 titleTemplate: "%s | Legacy Investing Show Success Stories"
 description: "Brian O"
-date: 2026-03-30
+date: 2025-10-30
 modifiedDate: 2026-01-23
 author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"

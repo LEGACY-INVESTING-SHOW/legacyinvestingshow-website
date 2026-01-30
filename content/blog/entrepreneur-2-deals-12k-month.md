@@ -3,7 +3,7 @@
 title: "How Michael Locked Up 2 Deals in One Week for $12K/Month Cash Flow (2025 Case Study)"
 titleTemplate: "%s | Legacy Investing Show Success Stories"
 description: "Michael, a serial entrepreneur who sold 5 companies, locked up 2 Airbnb deals in one week generating $12,000/month in the Space Coast, Florida. Learn his exact strategies, sales approach, and lessons for building passive income."
-date: 2026-04-14
+date: 2025-11-14
 modifiedDate: 2026-01-23
 author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"

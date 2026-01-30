@@ -3,7 +3,7 @@
 title: "How I Made $212,000/Year from One Airbnb in Just 10 Minutes Per Week (2025 Case Study)"
 titleTemplate: "%s | Legacy Investing Show Success Stories"
 description: "Behind the scenes of a 5-bedroom Virginia chalet generating $212,700/year with 82% occupancy. Learn the exact systems, team structure, and bridge method that makes 10-minute weekly management possible."
-date: 2026-03-09
+date: 2025-10-09
 modifiedDate: 2026-01-23
 author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"

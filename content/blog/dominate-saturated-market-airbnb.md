@@ -3,7 +3,7 @@
 title: "How Sunny Built a $5,000+/Month Airbnb Business Near Texas Medical Center (2026 Case Study)"
 titleTemplate: "%s | Legacy Investing Show Success Stories"
 description: "Sunny went from respiratory therapist to $5,000+/month Airbnb cash flow with 1 property near Texas Medical Center. Learn how Taylor Swift helped him make $5,000 profit in one month and his exact strategies for dominating a saturated market."
-date: 2026-03-24
+date: 2025-10-24
 modifiedDate: 2026-01-23
 author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"

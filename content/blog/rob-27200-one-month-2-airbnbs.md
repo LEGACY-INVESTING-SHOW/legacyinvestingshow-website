@@ -3,7 +3,7 @@
 title: "How Rob Generated $27,200 in One Month with Just 2 Airbnbs (2026 Case Study)"
 titleTemplate: "%s | Legacy Investing Show Success Stories"
 description: "Rob went from stuck at home during the pandemic to $27,200/month with 2 Airbnb arbitrage properties in Louisville and St. Simons. Learn his exact strategies for remote operation, professional photography, and building a reliable team."
-date: 2026-04-02
+date: 2025-11-02
 modifiedDate: 2026-01-23
 author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"

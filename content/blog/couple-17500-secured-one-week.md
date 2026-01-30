@@ -3,7 +3,7 @@
 title: "How Lindsay and Her Husband Secured $17,500 in Bookings in One Week (2025 Case Study)"
 titleTemplate: "%s | Legacy Investing Show Success Stories"
 description: "Lindsay and her husband went from 9-to-5 workers to $17,500 in Airbnb bookings within 7 days of going live. Learn their exact strategies for finding properties, negotiating with landlords, and creating a standout cabin rental in the Western North Carolina mountains."
-date: 2026-03-18
+date: 2025-10-18
 modifiedDate: 2026-01-23
 author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"
