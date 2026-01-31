@@ -201,6 +201,11 @@
       "source": "/blog/index.html",
       "destination": "/blog",
       "permanent": true
+    },
+    {
+      "source": "/stacking-principle.html",
+      "destination": "/stacking-principle",
+      "permanent": true
     }
   ]
 }
