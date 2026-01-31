@@ -442,35 +442,62 @@
     </a>
 
     <!-- Header -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+    <!-- Header / Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 header-glass">
         <nav class="container-custom" aria-label="Main navigation">
-            <div class="flex items-center justify-between h-16">
-                <a href="/" class="flex items-center gap-2 font-medium text-gray-900 hover:text-gray-700 transition-colors">
-                    <img src="/assets/images/logo.png" alt="Legacy Investing Show Logo" width="28" height="28" class="w-7 h-7">
-                    <span>Legacy Investing Show</span>
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <!-- Logo -->
+                <a href="/" class="flex items-center gap-3 font-semibold text-lg hover:opacity-80 transition-opacity">
+                    <img src="/assets/images/logo.png" alt="Legacy Investing Show Logo" width="36" height="36" class="w-9 h-9">
+                    <span class="hidden md:block">Preston Seo | Legacy Investing Show</span>
                 </a>
-
+                
+                <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center gap-6">
                     <a href="/" class="nav-link">Home</a>
                     <a href="/about.html" class="nav-link">About</a>
                     <a href="/programs.html" class="nav-link">Programs</a>
-                    <a href="/success-stories.html" class="nav-link">Results</a>
+                    
+                    <!-- Topics Dropdown -->
+                    <div class="relative group">
+                        <button class="nav-link flex items-center gap-1">
+                            Topics
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                            <a href="/topics/investing.html" class="block px-4 py-2 hover:bg-gray-50">Investing</a>
+                            <a href="/topics/tax-strategies.html" class="block px-4 py-2 hover:bg-gray-50">Tax Strategies</a>
+                            <a href="/topics/retirement.html" class="block px-4 py-2 hover:bg-gray-50">Retirement</a>
+                            <a href="/topics/business-structures.html" class="block px-4 py-2 hover:bg-gray-50">Business Structures</a>
+                            <a href="/topics/debt-management.html" class="block px-4 py-2 hover:bg-gray-50">Debt Management</a>
+                            <a href="/topics/airbnb-arbitrage.html" class="block px-4 py-2 hover:bg-gray-50">Airbnb Arbitrage</a>
+                        </div>
+                    </div>
+                    
+                    <a href="/tax-strategies/" class="nav-link">Tax Strategies</a>
                     <a href="/blog/" class="nav-link">Blog</a>
                 </div>
-
-                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700 hover:text-emerald-600 transition-colors" aria-label="Open menu" aria-expanded="false">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                     </svg>
                 </button>
             </div>
-
-            <div id="mobile-menu" class="hidden md:hidden pb-4">
-                <div class="flex flex-col gap-3">
+            
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="hidden md:hidden pb-6 border-t border-gray-200 mt-4 pt-4">
+                <div class="flex flex-col gap-4">
                     <a href="/" class="nav-link">Home</a>
                     <a href="/about.html" class="nav-link">About</a>
                     <a href="/programs.html" class="nav-link">Programs</a>
-                    <a href="/success-stories.html" class="nav-link">Results</a>
+                    <a href="/topics/investing.html" class="nav-link">Topics: Investing</a>
+                    <a href="/topics/tax-strategies.html" class="nav-link">Topics: Tax Strategies</a>
+                    <a href="/topics/retirement.html" class="nav-link">Topics: Retirement</a>
+                    <a href="/tax-strategies/" class="nav-link">Tax Strategies</a>
                     <a href="/blog/" class="nav-link">Blog</a>
                 </div>
             </div>
@@ -1324,21 +1351,55 @@
     </main>
 
     <!-- Footer -->
-    <footer class="minimal-footer">
+    <footer class="bg-gray-900 text-white py-12" role="contentinfo">
         <div class="container-custom">
-            <div class="minimal-footer-content">
-                <div class="footer-brand">
-                    <img src="/assets/images/logo.png" alt="Legacy Investing Show" width="32" height="32">
-                    <span>Legacy Investing Show</span>
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <img src="/assets/images/logo.png" alt="Legacy Investing Show" width="32" height="32">
+                        <span class="font-semibold">Legacy Investing Show</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Building generational wealth through real estate and tax strategies.</p>
                 </div>
-                <div class="footer-links">
-                    <a href="/programs.html">Programs</a>
-                    <a href="/success-stories.html">Results</a>
-                    <a href="/blog/">Blog</a>
-                    <a href="/tax-strategies/">Tax Strategies</a>
+                
+                <!-- Topics -->
+                <div>
+                    <h4 class="font-semibold mb-4">Topics</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="/topics/investing.html" class="hover:text-white">Investing</a></li>
+                        <li><a href="/topics/tax-strategies.html" class="hover:text-white">Tax Strategies</a></li>
+                        <li><a href="/topics/retirement.html" class="hover:text-white">Retirement</a></li>
+                        <li><a href="/topics/business-structures.html" class="hover:text-white">Business Structures</a></li>
+                        <li><a href="/topics/debt-management.html" class="hover:text-white">Debt Management</a></li>
+                        <li><a href="/topics/airbnb-arbitrage.html" class="hover:text-white">Airbnb Arbitrage</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Resources -->
+                <div>
+                    <h4 class="font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="/tax-strategies/" class="hover:text-white">Tax Strategies</a></li>
+                        <li><a href="/retirement/401k-contribution-strategies.html" class="hover:text-white">401(k) Strategies</a></li>
+                        <li><a href="/blog/" class="hover:text-white">Success Stories</a></li>
+                        <li><a href="/programs.html" class="hover:text-white">Programs</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Company -->
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="/about.html" class="hover:text-white">About</a></li>
+                        <li><a href="/success-stories.html" class="hover:text-white">Results</a></li>
+                        <li><a href="https://www.managemoney101.com/2025workshop" class="hover:text-white" target="_blank">Free Workshop</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer-copyright">Copyright 2025</div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-500">
+                Copyright 2025 Legacy Investing Show. All rights reserved.
+            </div>
         </div>
     </footer>
 
