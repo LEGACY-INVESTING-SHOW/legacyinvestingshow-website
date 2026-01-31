@@ -4,14 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>The Stacking Principle | Legacy Investing Show</title>
-    <meta name="description" content="Why becoming top 20% in 10 strategies beats grinding for top 1% in one. The skill-stacking approach to building serious wealth.">
+    <title>The Truth About 6-Figure Savings | Legacy Investing Show</title>
+    <meta name="description" content="Why saving $100K+ per year feels impossible—and the 3-5 big decisions that actually make it happen.">
     
     <link rel="canonical" href="https://legacyinvestingshow.com/stacking-principle">
-    <meta property="og:title" content="The Stacking Principle | Legacy Investing Show">
-    <meta property="og:description" content="Why becoming top 20% in 10 strategies beats grinding for top 1% in one.">
-    <meta name="twitter:card" content="summary_large_image">
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -47,10 +43,7 @@
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
-        html { 
-            scroll-behavior: smooth;
-            scroll-snap-type: y proximity;
-        }
+        html { scroll-behavior: smooth; }
         
         body {
             font-family: var(--font-body);
@@ -58,10 +51,8 @@
             color: var(--text-primary);
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
-            overflow-x: hidden;
         }
 
-        /* Gradient Background Animation */
         .bg-gradient {
             position: fixed;
             inset: 0;
@@ -73,7 +64,6 @@
             z-index: 0;
         }
 
-        /* Header */
         .header {
             position: fixed;
             top: 0;
@@ -103,89 +93,45 @@
         .logo img { height: 36px; width: auto; }
 
         .nav { display: flex; gap: 2.5rem; align-items: center; }
-        
-        .nav a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-        
+        .nav a { color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
         .nav a:hover { color: var(--text-primary); }
+        .nav-cta { background: linear-gradient(135deg, var(--accent-emerald), oklch(55% 0.12 155)); color: white !important; padding: 0.6rem 1.25rem; border-radius: var(--radius); font-weight: 600; transition: all 0.3s !important; }
+        .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 25px oklch(60% 0.14 155 / 0.35); }
 
-        .nav-cta {
-            background: linear-gradient(135deg, var(--accent-emerald), oklch(55% 0.12 155));
-            color: white !important;
-            padding: 0.6rem 1.25rem;
-            border-radius: var(--radius);
-            font-weight: 600;
-            transition: all 0.3s !important;
-        }
-
-        .nav-cta:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px oklch(60% 0.14 155 / 0.35);
-        }
-
-        /* Sections */
         .section {
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 7rem 1.5rem 4rem;
-            scroll-snap-align: start;
             position: relative;
             z-index: 1;
         }
 
-        .container {
-            max-width: 1000px;
-            width: 100%;
-        }
-
-        /* Typography */
-        .eyebrow {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-family: var(--font-display);
-            font-size: 0.8rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: var(--accent-cyan);
-            margin-bottom: 1.5rem;
-        }
-
-        .eyebrow::before {
-            content: '';
-            width: 24px;
-            height: 2px;
-            background: var(--accent-cyan);
-        }
+        .container { max-width: 1000px; width: 100%; }
 
         h1 {
             font-family: var(--font-display);
-            font-size: clamp(3rem, 7vw, 5.5rem);
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
             font-weight: 700;
-            line-height: 1;
-            letter-spacing: -0.03em;
+            line-height: 1.05;
+            letter-spacing: -0.02em;
             margin-bottom: 1.5rem;
-            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-gold) 50%, var(--accent-cyan) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
         }
 
         h2 {
             font-family: var(--font-display);
-            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-size: clamp(2rem, 4vw, 3rem);
             font-weight: 600;
-            line-height: 1.1;
-            letter-spacing: -0.02em;
+            line-height: 1.15;
             margin-bottom: 1.5rem;
+        }
+
+        h3 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
         }
 
         .lead {
@@ -195,147 +141,44 @@
             max-width: 65ch;
         }
 
-        p {
-            font-size: 1.0625rem;
-            color: var(--text-secondary);
-            line-height: 1.8;
-            max-width: 60ch;
-        }
-
+        p { font-size: 1.0625rem; color: var(--text-secondary); line-height: 1.8; max-width: 60ch; margin-bottom: 1.25rem; }
         .highlight { color: var(--accent-gold); font-weight: 600; }
         .highlight-cyan { color: var(--accent-cyan); font-weight: 600; }
 
         /* Hero Section */
         .hero { text-align: center; }
-        
-        .hero h1 { max-width: 900px; margin: 0 auto 1.5rem; }
-        
-        .hero .lead { max-width: 700px; margin: 0 auto 2.5rem; }
-
-        .hero-stats {
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            margin-top: 3rem;
-            padding-top: 2rem;
-            border-top: 1px solid var(--border);
+        .hero h1 { 
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-gold) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
-        .stat {
+        /* Problem Statement */
+        .problem-box {
+            background: linear-gradient(135deg, oklch(18% 0.05 25 / 0.3), var(--bg-secondary));
+            border: 1px solid oklch(30% 0.08 25 / 0.5);
+            border-radius: var(--radius-xl);
+            padding: 2.5rem;
+            margin: 2rem 0;
             text-align: center;
         }
 
-        .stat-number {
-            font-family: var(--font-display);
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--accent-gold);
-            line-height: 1;
-        }
+        .problem-box h2 { color: var(--accent-rose); margin-bottom: 1rem; }
+        .big-number { font-family: var(--font-display); font-size: 5rem; font-weight: 800; color: var(--accent-rose); line-height: 1; }
+        .problem-box .lead { margin: 1.5rem auto 0; }
 
-        .stat-label {
-            font-size: 0.875rem;
-            color: var(--text-muted);
-            margin-top: 0.5rem;
-        }
-
-        /* Visual: Stacked Blocks */
-        .stack-visual {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            margin: 3rem 0;
-            perspective: 1000px;
-        }
-
-        .stack-block {
-            display: flex;
-            align-items: center;
-            gap: 1.25rem;
-            padding: 1.5rem 2rem;
+        /* Quote Block */
+        .quote-block {
             background: var(--bg-secondary);
-            border: 1px solid var(--border);
-            border-radius: var(--radius-lg);
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            animation: stackIn 0.6s ease backwards;
-            position: relative;
-            overflow: hidden;
+            border-radius: var(--radius-xl);
+            padding: 2rem 2.5rem;
+            margin: 2rem 0;
+            border-left: 4px solid var(--accent-gold);
         }
-
-        .stack-block::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 4px;
-            background: var(--accent-cyan);
-            transform: scaleY(0);
-            transition: transform 0.3s;
-        }
-
-        .stack-block:hover::before {
-            transform: scaleY(1);
-        }
-
-        .stack-block:nth-child(1) { animation-delay: 0.1s; }
-        .stack-block:nth-child(2) { animation-delay: 0.2s; }
-        .stack-block:nth-child(3) { animation-delay: 0.3s; }
-        .stack-block:nth-child(4) { animation-delay: 0.4s; border-color: var(--accent-cyan); background: oklch(22% 0.05 195 / 0.15); }
-
-        @keyframes stackIn {
-            from {
-                opacity: 0;
-                transform: translateY(30px) rotateX(-10deg);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0) rotateX(0);
-            }
-        }
-
-        .stack-block:hover {
-            transform: translateX(8px);
-            border-color: var(--border-hover);
-            box-shadow: 0 10px 40px oklch(0% 0 0 / 0.2);
-        }
-
-        .stack-icon {
-            width: 48px;
-            height: 48px;
-            border-radius: var(--radius);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            background: var(--bg-tertiary);
-            flex-shrink: 0;
-        }
-
-        .stack-content h4 {
-            font-family: var(--font-display);
-            font-size: 1.125rem;
-            font-weight: 600;
-            color: var(--text-primary);
-            margin-bottom: 0.25rem;
-        }
-
-        .stack-content p {
-            font-size: 0.9375rem;
-            color: var(--text-muted);
-            margin: 0;
-        }
-
-        .stack-arrow {
-            text-align: center;
-            color: var(--accent-cyan);
-            font-size: 1.5rem;
-            margin: -0.5rem 0;
-            opacity: 0.5;
-        }
+        .quote-text { font-family: var(--font-display); font-size: 1.35rem; font-style: italic; color: var(--text-primary); line-height: 1.5; }
 
         /* Comparison Cards */
-        .comparison {
+        .comparison-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
@@ -346,329 +189,212 @@
             padding: 2rem;
             border-radius: var(--radius-lg);
             border: 1px solid var(--border);
-            position: relative;
-            overflow: hidden;
         }
 
-        .compare-card.trap {
-            background: linear-gradient(135deg, oklch(18% 0.05 25 / 0.3), var(--bg-secondary));
+        .compare-card.small-thinking {
+            background: oklch(16% 0.04 25 / 0.4);
+            border-color: oklch(30% 0.08 25 / 0.4);
         }
 
-        .compare-card.stack {
-            background: linear-gradient(135deg, oklch(18% 0.06 155 / 0.3), var(--bg-secondary));
+        .compare-card.big-moves {
+            background: oklch(16% 0.06 155 / 0.3);
             border-color: oklch(30% 0.08 155 / 0.5);
         }
 
-        .compare-badge {
-            display: inline-block;
-            padding: 0.375rem 0.875rem;
-            border-radius: 9999px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
+        .compare-card h3 { margin-bottom: 1rem; }
+        .compare-card.small-thinking h3 { color: var(--accent-rose); }
+        .compare-card.big-moves h3 { color: var(--accent-emerald); }
+
+        .coffee-example {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: oklch(20% 0.05 25 / 0.3);
+            border-radius: var(--radius);
+            margin-top: 1rem;
+        }
+
+        .coffee-icon { font-size: 2rem; }
+        .coffee-math { font-family: var(--font-display); font-size: 1.25rem; color: var(--accent-rose); }
+
+        /* 80/20 Section */
+        .principle-box {
+            background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+            border: 1px solid var(--border);
+            border-radius: var(--radius-xl);
+            padding: 3rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .principle-number {
+            font-family: var(--font-display);
+            font-size: 6rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--accent-gold), var(--accent-cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1;
             margin-bottom: 1rem;
         }
 
-        .trap .compare-badge {
-            background: oklch(25% 0.08 25 / 0.3);
-            color: var(--accent-rose);
-        }
+        /* The Stack Visualization */
+        .stack-section { text-align: center; }
 
-        .stack .compare-badge {
-            background: oklch(25% 0.08 155 / 0.3);
-            color: var(--accent-emerald);
-        }
-
-        .compare-card h3 {
-            font-family: var(--font-display);
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 0.75rem;
-        }
-
-        .trap h3 { color: var(--accent-rose); }
-        .stack h3 { color: var(--accent-emerald); }
-
-        .compare-amount {
-            font-family: var(--font-display);
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin: 1rem 0;
-        }
-
-        .compare-card p {
-            font-size: 0.9375rem;
-            color: var(--text-muted);
-            margin: 0;
-        }
-
-        .vs-divider {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            width: 40px;
-            height: 40px;
-            background: var(--bg-tertiary);
-            border: 2px solid var(--border);
-            border-radius: 50%;
+        .stack-container {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: var(--font-display);
-            font-size: 0.75rem;
-            font-weight: 700;
-            color: var(--text-muted);
-            z-index: 10;
-        }
-
-        /* Quote Block */
-        .quote-block {
-            background: var(--bg-secondary);
-            border-radius: var(--radius-xl);
-            padding: 2.5rem;
-            margin: 2rem 0;
+            flex-direction: column;
+            gap: 0;
+            margin: 3rem 0;
             position: relative;
-            border: 1px solid var(--border);
         }
 
-        .quote-block::before {
-            content: '"';
-            position: absolute;
-            top: 1rem;
-            left: 1.5rem;
-            font-family: Georgia, serif;
-            font-size: 6rem;
-            color: var(--accent-gold);
-            opacity: 0.2;
-            line-height: 1;
-        }
-
-        .quote-text {
-            font-family: var(--font-display);
-            font-size: clamp(1.25rem, 2.5vw, 1.75rem);
-            font-style: italic;
-            color: var(--text-primary);
-            line-height: 1.5;
-            position: relative;
-            z-index: 1;
-        }
-
-        .quote-author {
+        .stack-layer {
             display: flex;
             align-items: center;
-            gap: 1rem;
-            margin-top: 1.5rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid var(--border);
-        }
-
-        .author-avatar {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--accent-gold), var(--accent-cyan));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            color: var(--bg-primary);
-        }
-
-        .author-info h5 {
-            font-family: var(--font-display);
-            font-weight: 600;
-            color: var(--text-primary);
-        }
-
-        .author-info p {
-            font-size: 0.875rem;
-            color: var(--text-muted);
-            margin: 0;
-        }
-
-        /* Feature List */
-        .feature-list {
-            list-style: none;
-            margin: 1.5rem 0;
-        }
-
-        .feature-list li {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-            padding: 1rem 0;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .feature-list li:last-child { border-bottom: none; }
-
-        .feature-check {
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            background: oklch(25% 0.1 155 / 0.3);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--accent-emerald);
-            font-size: 0.75rem;
-            font-weight: 700;
-            flex-shrink: 0;
-            margin-top: 2px;
-        }
-
-        .feature-text {
-            font-size: 1.0625rem;
-            color: var(--text-secondary);
-        }
-
-        .feature-text strong {
-            color: var(--text-primary);
-            font-weight: 600;
-        }
-
-        /* Path Cards */
-        .paths-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .path-card {
+            padding: 1.75rem 2rem;
             background: var(--bg-secondary);
             border: 1px solid var(--border);
-            border-radius: var(--radius-xl);
-            padding: 2rem;
+            border-radius: var(--radius-lg);
+            margin-bottom: 1rem;
+            text-align: left;
             transition: all 0.3s;
         }
 
-        .path-card:hover {
-            border-color: var(--accent-gold);
-            transform: translateY(-4px);
-            box-shadow: 0 20px 50px oklch(0% 0 0 / 0.2);
+        .stack-layer:hover {
+            transform: translateX(10px);
+            border-color: var(--accent-cyan);
         }
 
-        .path-icon {
-            width: 56px;
-            height: 56px;
-            border-radius: var(--radius);
+        .layer-number {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--accent-cyan);
+            color: var(--bg-deep);
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.75rem;
-            margin-bottom: 1.25rem;
+            flex-shrink: 0;
         }
 
-        .path-card:nth-child(1) .path-icon {
-            background: oklch(25% 0.08 290 / 0.3);
-        }
-
-        .path-card:nth-child(2) .path-icon {
-            background: oklch(25% 0.08 155 / 0.3);
-        }
-
-        .path-card h4 {
+        .layer-content h4 {
             font-family: var(--font-display);
             font-size: 1.25rem;
             font-weight: 600;
-            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
         }
 
-        .path-card p {
-            font-size: 0.9375rem;
-            color: var(--text-muted);
-            margin-bottom: 1rem;
+        .layer-content p {
+            margin: 0;
+            font-size: 1rem;
         }
 
-        .path-features {
-            list-style: none;
+        .stack-arrow {
+            text-align: center;
+            color: var(--accent-cyan);
+            font-size: 2rem;
+            margin: -0.5rem 0;
+            opacity: 0.6;
         }
 
-        .path-features li {
-            padding: 0.375rem 0;
-            font-size: 0.9375rem;
-            color: var(--text-secondary);
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .path-features li::before {
-            content: '→';
-            color: var(--accent-gold);
-            font-weight: 700;
-        }
-
-        /* Flow Visualization */
-        .flow-container {
+        /* Exponential Cycle */
+        .cycle-container {
             background: var(--bg-secondary);
             border: 1px solid var(--border);
             border-radius: var(--radius-xl);
-            padding: 2rem;
+            padding: 2.5rem;
             margin: 2rem 0;
         }
 
-        .flow-chain {
+        .cycle-title {
+            text-align: center;
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--accent-gold);
+            margin-bottom: 2rem;
+        }
+
+        .cycle-flow {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
-            gap: 0.75rem;
+            gap: 0.5rem;
         }
 
-        .flow-node {
+        .cycle-node {
             padding: 0.75rem 1.25rem;
             background: var(--bg-tertiary);
             border: 1px solid var(--border);
             border-radius: var(--radius);
             font-family: var(--font-display);
-            font-size: 0.9375rem;
+            font-size: 0.95rem;
             font-weight: 500;
             color: var(--accent-cyan);
-            white-space: nowrap;
-            transition: all 0.3s;
         }
 
-        .flow-node:hover {
-            border-color: var(--accent-cyan);
-            box-shadow: 0 0 20px oklch(70% 0.12 195 / 0.2);
-        }
-
-        .flow-arrow {
+        .cycle-arrow {
             color: var(--text-muted);
             font-size: 1.25rem;
         }
 
-        /* Results Grid */
-        .results-section { text-align: center; }
+        /* Case Study */
+        .case-study {
+            background: linear-gradient(135deg, var(--bg-secondary), oklch(20% 0.05 85 / 0.15));
+            border: 1px solid oklch(30% 0.06 85 / 0.4);
+            border-radius: var(--radius-xl);
+            padding: 2.5rem;
+            margin: 2rem 0;
+        }
+
+        .case-study-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .case-avatar {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-gold), var(--accent-cyan));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--bg-deep);
+        }
+
+        .case-title h4 {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .case-title p { margin: 0; font-size: 0.95rem; }
 
         .results-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 1rem;
-            margin: 2.5rem 0;
+            margin: 1.5rem 0;
         }
 
-        .result-card {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
-            border-radius: var(--radius-lg);
-            padding: 1.5rem 1rem;
-            transition: all 0.3s;
-        }
-
-        .result-card:hover {
-            border-color: var(--accent-gold);
-            transform: translateY(-4px);
-        }
-
-        .result-icon {
-            font-size: 2rem;
-            margin-bottom: 0.75rem;
+        .result-item {
+            text-align: center;
+            padding: 1rem;
+            background: var(--bg-tertiary);
+            border-radius: var(--radius);
         }
 
         .result-value {
@@ -676,16 +402,40 @@
             font-size: 1.75rem;
             font-weight: 700;
             color: var(--accent-gold);
-            margin-bottom: 0.25rem;
         }
 
         .result-label {
-            font-size: 0.875rem;
+            font-size: 0.85rem;
             color: var(--text-muted);
+            margin-top: 0.25rem;
+        }
+
+        /* Total Impact Box */
+        .total-impact {
+            background: linear-gradient(135deg, oklch(20% 0.08 155 / 0.3), var(--bg-secondary));
+            border: 2px solid var(--accent-emerald);
+            border-radius: var(--radius-xl);
+            padding: 2rem;
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        .total-impact h4 {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .total-number {
+            font-family: var(--font-display);
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--accent-emerald);
         }
 
         /* CTA Section */
-        .cta-wrapper {
+        .cta-box {
             background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
             border: 1px solid var(--border);
             border-radius: var(--radius-xl);
@@ -695,7 +445,7 @@
             overflow: hidden;
         }
 
-        .cta-wrapper::before {
+        .cta-box::before {
             content: '';
             position: absolute;
             top: 0;
@@ -705,145 +455,18 @@
             background: linear-gradient(90deg, var(--accent-gold), var(--accent-cyan), var(--accent-emerald));
         }
 
-        .cta-wrapper h3 {
+        .cta-box h3 {
             font-family: var(--font-display);
             font-size: 1.75rem;
             font-weight: 600;
             margin-bottom: 0.75rem;
         }
 
-        .cta-wrapper > p {
-            max-width: 500px;
-            margin: 0 auto 1.5rem;
-        }
-
-        .btn-primary {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: linear-gradient(135deg, var(--accent-emerald), oklch(55% 0.12 155));
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: var(--radius);
-            font-family: var(--font-display);
-            font-size: 1rem;
-            font-weight: 600;
-            text-decoration: none;
-            border: none;
-            cursor: pointer;
-            transition: all 0.3s;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .btn-primary::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(135deg, transparent, rgba(255,255,255,0.2), transparent);
-            transform: translateX(-100%);
-            transition: transform 0.5s;
-        }
-
-        .btn-primary:hover::before {
-            transform: translateX(100%);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 35px oklch(60% 0.14 155 / 0.4);
-        }
-
-        /* Progress Dots */
-        .progress-nav {
-            position: fixed;
-            right: 2rem;
-            top: 50%;
-            transform: translateY(-50%);
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            z-index: 100;
-        }
-
-        .progress-dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: var(--border-hover);
-            cursor: pointer;
-            transition: all 0.3s;
-            position: relative;
-        }
-
-        .progress-dot::after {
-            content: '';
-            position: absolute;
-            inset: -4px;
-            border-radius: 50%;
-            border: 2px solid transparent;
-            transition: all 0.3s;
-        }
-
-        .progress-dot:hover,
-        .progress-dot.active {
-            background: var(--accent-cyan);
-            transform: scale(1.3);
-        }
-
-        .progress-dot.active::after {
-            border-color: oklch(70% 0.12 195 / 0.3);
-        }
-
-        /* Scroll Hint */
-        .scroll-hint {
-            position: absolute;
-            bottom: 2rem;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
-            color: var(--text-muted);
-            font-size: 0.75rem;
-            text-decoration: none;
-            animation: bounce 2s infinite;
-        }
-
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
-            40% { transform: translateX(-50%) translateY(-10px); }
-            60% { transform: translateX(-50%) translateY(-5px); }
-        }
-
-        /* Responsive */
         @media (max-width: 768px) {
-            .header { padding: 0 1rem; }
-            .nav a:not(.nav-cta) { display: none; }
-            .section { padding: 6rem 1rem 3rem; }
-            .progress-nav { display: none; }
-            
-            .comparison,
-            .paths-grid { grid-template-columns: 1fr; }
-            
-            .vs-divider {
-                position: relative;
-                left: auto;
-                top: auto;
-                transform: none;
-                margin: 1rem auto;
-            }
-            
+            .comparison-grid { grid-template-columns: 1fr; }
             .results-grid { grid-template-columns: repeat(2, 1fr); }
-            
-            .hero-stats {
-                flex-direction: column;
-                gap: 1.5rem;
-            }
-            
-            .quote-block { padding: 1.5rem; }
-            .quote-block::before { font-size: 4rem; }
+            .principle-number { font-size: 4rem; }
+            .big-number { font-size: 3.5rem; }
         }
     </style>
 </head>
@@ -864,375 +487,230 @@
         </nav>
     </header>
 
-    <div class="progress-nav">
-        <div class="progress-dot active" onclick="goTo(0)"></div>
-        <div class="progress-dot" onclick="goTo(1)"></div>
-        <div class="progress-dot" onclick="goTo(2)"></div>
-        <div class="progress-dot" onclick="goTo(3)"></div>
-        <div class="progress-dot" onclick="goTo(4)"></div>
-        <div class="progress-dot" onclick="goTo(5)"></div>
-        <div class="progress-dot" onclick="goTo(6)"></div>
-        <div class="progress-dot" onclick="goTo(7)"></div>
-        <div class="progress-dot" onclick="goTo(8)"></div>
-        <div class="progress-dot" onclick="goTo(9)"></div>
-    </div>
-
-    <!-- Hero -->
-    <section class="section" id="s0">
+    <!-- SECTION 1: The Problem -->
+    <section class="section" id="problem">
         <div class="container hero">
-            <div class="eyebrow">Wealth Building Framework</div>
-            <h1>Stop Grinding.<br>Start Stacking.</h1>
-            <p class="lead">The traditional path to wealth is broken. Top 1% mastery takes decades. But top 20% in 10 complementary skills? That's how you build serious wealth in years, not decades.</p>
+            <h1>Let's Be Honest About Something</h1>
             
-            <div class="hero-stats">
-                <div class="stat">
-                    <div class="stat-number">10x</div>
-                    <div class="stat-label">Faster Results</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">$200K+</div>
-                    <div class="stat-label">Annual Savings</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">80/20</div>
-                    <div class="stat-label">Effort to Results</div>
-                </div>
+            <div class="problem-box">
+                <h2>When I Say "Save $100K Per Year"</h2>
+                <div class="big-number">$100,000</div>
+                <p class="lead">Your brain immediately rejects it. "That's impossible." "Not for someone like me." "Maybe for rich people."</p>
             </div>
+
+            <p>And I get it. That number feels enormous. Overwhelming. Like something that requires extreme sacrifice, living like a monk, or already having a massive income.</p>
             
-            <a href="#s1" class="scroll-hint">
-                <span>Discover the framework</span>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M12 5v14M19 12l-7 7-7-7"/>
-                </svg>
-            </a>
+            <p>Here's the truth: <strong style="color: var(--text-primary);">You've been trained to think small</strong>.</p>
         </div>
     </section>
 
-    <!-- The Philosophy -->
-    <section class="section" id="s1">
+    <!-- SECTION 2: Root Cause -->
+    <section class="section" id="root-cause">
         <div class="container">
-            <div class="eyebrow">The Insight</div>
-            <h2>The Scott Adams<br>Skill Stack Philosophy</h2>
+            <h2>The Real Problem:<br>You're Playing the Wrong Game</h2>
             
+            <p>Since childhood, you've been fed a strategy that sounds logical but mathematically cannot work:</p>
+
+            <div class="comparison-grid">
+                <div class="compare-card small-thinking">
+                    <h3>❌ What You've Been Taught</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; color: var(--text-secondary);">• Skip the daily latte ($5/day)</li>
+                        <li style="padding: 0.5rem 0; color: var(--text-secondary);">• Clip more coupons</li>
+                        <li style="padding: 0.5rem 0; color: var(--text-secondary);">• Cancel Netflix</li>
+                        <li style="padding: 0.5rem 0; color: var(--text-secondary);">• Do whatever your basic CPA says</li>
+                        <li style="padding: 0.5rem 0; color: var(--text-secondary);">• Wait for a raise</li>
+                    </ul>
+                    <div class="coffee-example">
+                        <span class="coffee-icon">☕</span>
+                        <div>
+                            <div class="coffee-math">$5 × 365 = $1,825/year</div>
+                            <div style="font-size: 0.85rem; color: var(--text-muted);">Painful sacrifice. Minimal results.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="compare-card big-moves">
+                    <h3>✅ What Actually Works</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; color: var(--text-secondary);">• Restructure your taxes</li>
+                        <li style="padding: 0.5rem 0; color: var(--text-secondary);">• Optimize debt payoff order</li>
+                        <li style="padding: 0.5rem 0; color: var(--text-secondary);">• Use tax-advantaged accounts</li>
+                        <li style="padding: 0.5rem 0; color: var(--text-secondary);">• Build cash flow assets</li>
+                        <li style="padding: 0.5rem 0; color: var(--text-secondary);">• Stack the benefits</li>
+                    </ul>
+                    <div class="coffee-example" style="background: oklch(20% 0.08 155 / 0.3);">
+                        <span class="coffee-icon" style="font-size: 1.5rem;">🎯</span>
+                        <div>
+                            <div class="coffee-math" style="color: var(--accent-emerald);">3-5 big decisions</div>
+                            <div style="font-size: 0.85rem; color: var(--text-muted);">Enjoy your life. Maximize results.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="quote-block">
-                <p class="quote-text">The last 20% of mastery takes 80% of the effort. But the first 80%? That's where the juice is.</p>
-                <div class="quote-author">
-                    <div class="author-avatar">SA</div>
-                    <div class="author-info">
-                        <h5>Scott Adams</h5>
-                        <p>Creator of Dilbert, Author of "How to Fail at Almost Everything"</p>
-                    </div>
-                </div>
+                <p class="quote-text">"You don't need to sacrifice your life to build wealth. You need to make 3-5 smart decisions that most people never learn about."</p>
             </div>
-            
-            <p>Here's what nobody tells you: reaching the <span class="highlight">top 1%</span> in any single skill requires extraordinary talent, decades of grinding, and often pure luck.</p>
-            
-            <p>But reaching the <span class="highlight-cyan">top 20%</span> in multiple complementary skills? That's achievable. And when you stack those skills strategically, you don't just add — you <strong style="color: var(--text-primary);">multiply</strong>.</p>
         </div>
     </section>
 
-    <!-- The Trap -->
-    <section class="section" id="s2">
-        <div class="container">
-            <div class="eyebrow">The Problem</div>
-            <h2>The $5 Coffee Trap</h2>
-            <p class="lead" style="margin-bottom: 2rem;">Mainstream finance advice is designed to keep you small, stressed, and barely moving forward.</p>
+    <!-- SECTION 3: The 80/20 Rule -->
+    <section class="section" id="eighty-twenty">
+        <div class="container" style="text-align: center;">
+            <h2>The 80/20 Reality</h2>
             
-            <div class="comparison">
-                <div class="compare-card trap">
-                    <span class="compare-badge">The Old Way</span>
-                    <h3>Cut Your Lattes</h3>
-                    <div class="compare-amount">$1,825/yr</div>
-                    <p>Skip one coffee per day. Painful sacrifice. Minimal results. Keeps you focused on pennies while dollars fly out the window.</p>
-                </div>
-                
-                <div class="vs-divider">VS</div>
-                
-                <div class="compare-card stack">
-                    <span class="compare-badge">The Stack Way</span>
-                    <h3>Optimize Everything</h3>
-                    <div class="compare-amount">$50-200K+/yr</div>
-                    <p>Layer complementary tax, debt, and investment strategies. Sustainable system. Life-changing results that compound automatically.</p>
-                </div>
+            <div class="principle-box">
+                <div class="principle-number">80/20</div>
+                <h3 style="margin-bottom: 1rem;">80% of Your Results Come From 20% of Your Actions</h3>
+                <p class="lead" style="max-width: 700px; margin: 0 auto;">You can spend hours optimizing small expenses and get nowhere. Or you can focus on the big needle-movers and create six figures in annual savings.</p>
             </div>
+
+            <p>Here's the issue: <strong style="color: var(--text-primary);">Each strategy alone isn't enough</strong>.</p>
             
-            <p style="text-align: center; margin-top: 1.5rem;">The numbers sound impossible because <span class="highlight">the system wants you thinking small</span>.</p>
+            <p>Tax optimization is great—but if you just save on taxes and let that money sit, you're leaving most of the benefit on the table.</p>
+            
+            <p>The magic happens when you <span class="highlight">stack</span> them.</p>
         </div>
     </section>
 
-    <!-- What is Stacking -->
-    <section class="section" id="s3">
+    <!-- SECTION 4: The Stack -->
+    <section class="section stack-section" id="the-stack">
         <div class="container">
-            <div class="eyebrow">The Framework</div>
-            <h2>What is Financial Stacking?</h2>
-            <p class="lead">Instead of relying on one strategy, you layer complementary wealth-building systems. Each layer multiplies the others.</p>
-            
-            <div class="stack-visual">
-                <div class="stack-block">
-                    <div class="stack-icon">⚡</div>
-                    <div class="stack-content">
-                        <h4>Tax Optimization</h4>
-                        <p>Restructure your income to keep more of what you earn. The foundation of every stack.</p>
+            <h2 style="text-align: center;">The Stacking Cycle</h2>
+            <p class="lead" style="text-align: center; max-width: 700px; margin: 0 auto 2rem;">Each layer feeds the next. The result is exponential—not additive.</p>
+
+            <div class="stack-container">
+                <div class="stack-layer">
+                    <div class="layer-number">1</div>
+                    <div class="layer-content">
+                        <h4>Save on Taxes</h4>
+                        <p>Restructure your income and use every legal deduction. This isn't about loopholes—it's about not overpaying what you legally owe. <strong style="color: var(--text-primary);">Typical savings: $15K-40K/year</strong></p>
                     </div>
                 </div>
+
                 <div class="stack-arrow">↓</div>
-                <div class="stack-block">
-                    <div class="stack-icon">🎯</div>
-                    <div class="stack-content">
-                        <h4>Strategic Debt Elimination</h4>
-                        <p>Pay off debt in the mathematically optimal order. Save thousands in interest.</p>
+
+                <div class="stack-layer">
+                    <div class="layer-number">2</div>
+                    <div class="layer-content">
+                        <h4>Pay Off Debt (Optimized Order)</h4>
+                        <p>Use the tax savings to attack debt in the mathematically optimal sequence. Save thousands in interest payments. <strong style="color: var(--text-primary);">Typical savings: $5K-15K/year in interest</strong></p>
                     </div>
                 </div>
+
                 <div class="stack-arrow">↓</div>
-                <div class="stack-block">
-                    <div class="stack-icon">📈</div>
-                    <div class="stack-content">
+
+                <div class="stack-layer">
+                    <div class="layer-number">3</div>
+                    <div class="layer-content">
                         <h4>Tax-Advantaged Investing</h4>
-                        <p>Grow wealth in accounts the IRS can't touch. Let compound work its magic.</p>
+                        <p>Take all that freed-up capital and put it where it grows tax-free. The IRS can't touch your gains. <strong style="color: var(--text-primary);">Compound growth accelerates</strong></p>
                     </div>
                 </div>
+
                 <div class="stack-arrow">↓</div>
-                <div class="stack-block">
-                    <div class="stack-icon">🏘️</div>
-                    <div class="stack-content">
-                        <h4>Cash Flow Engine (Airbnb)</h4>
-                        <p>Generate tax-free income that funds the next layer. The accelerator.</p>
+
+                <div class="stack-layer">
+                    <div class="layer-number">4</div>
+                    <div class="layer-content">
+                        <h4>Build Tax-Free Cash Flow</h4>
+                        <p>Create income streams (like Airbnb) where your earnings get favorable tax treatment. The cash flow funds more investments. <strong style="color: var(--text-primary);">Typical income: $20K-50K/year</strong></p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Step 1 -->
-    <section class="section" id="s4">
-        <div class="container">
-            <div class="eyebrow">Phase 1</div>
-            <h2>Optimize What You Already Have</h2>
-            <p class="lead">Before chasing new income, stop the bleeding. Most high earners are hemorrhaging thousands through inefficiencies.</p>
-            
-            <ul class="feature-list">
-                <li>
-                    <span class="feature-check">✓</span>
-                    <span class="feature-text"><strong>Tax Restructuring</strong> — Stop overpaying. Legal strategies to reduce your effective tax rate by 10-30%.</span>
-                </li>
-                <li>
-                    <span class="feature-check">✓</span>
-                    <span class="feature-text"><strong>Portfolio Optimization</strong> — Reorganize investments for tax efficiency and better returns.</span>
-                </li>
-                <li>
-                    <span class="feature-check">✓</span>
-                    <span class="feature-text"><strong>Benefits Audit</strong> — Uncover hidden value in your current compensation package.</span>
-                </li>
-                <li>
-                    <span class="feature-check">✓</span>
-                    <span class="feature-text"><strong>Expense Analysis</strong> — Identify and eliminate wealth leaks you don't even know exist.</span>
-                </li>
-            </ul>
-            
-            <p style="margin-top: 1.5rem; padding: 1.25rem; background: oklch(20% 0.06 155 / 0.15); border-radius: var(--radius); border-left: 3px solid var(--accent-emerald);">
-                <strong style="color: var(--accent-emerald);">Result:</strong> Most people recover $15,000-$50,000+ annually without earning a single extra dollar.
-            </p>
-        </div>
-    </section>
-
-    <!-- Step 2 -->
-    <section class="section" id="s5">
-        <div class="container">
-            <div class="eyebrow">Phase 2</div>
-            <h2>Add the Cash Flow Engine</h2>
-            <p class="lead">Once your foundation is optimized, add Airbnb as a wealth accelerator. This isn't "side income" — it's a strategic cash flow layer.</p>
-            
-            <div class="quote-block" style="margin: 2rem 0;">
-                <p class="quote-text" style="font-size: 1.25rem;">Airbnb is uniquely powerful because it delivers two things simultaneously: immediate cash flow you can use today, and tax advantages that make the IRS work for you.</p>
-            </div>
-            
-            <ul class="feature-list">
-                <li>
-                    <span class="feature-check">✓</span>
-                    <span class="feature-text"><strong>Monthly Cash Flow</strong> — $2,000-$10,000+ per property in net income, deposited to your account.</span>
-                </li>
-                <li>
-                    <span class="feature-check">✓</span>
-                    <span class="feature-text"><strong>Depreciation</strong> — Write off the property value against your income. Massive tax savings.</span>
-                </li>
-                <li>
-                    <span class="feature-check">✓</span>
-                    <span class="feature-text"><strong>Expense Deductions</strong> — Everything from furniture to cleaning supplies reduces taxable income.</span>
-                </li>
-                <li>
-                    <span class="feature-check">✓</span>
-                    <span class="feature-text"><strong>1031 Exchanges</strong> — Defer capital gains indefinitely as you scale.</span>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Two Paths -->
-    <section class="section" id="s6">
-        <div class="container">
-            <div class="eyebrow">Choose Your Path</div>
-            <h2>Two Entry Points.<br>Same Destination.</h2>
-            <p class="lead">Your starting capital determines your first move. Both paths lead to the same outcome: significant wealth.</p>
-            
-            <div class="paths-grid">
-                <div class="path-card">
-                    <div class="path-icon">💡</div>
-                    <h4>Rental Arbitrage</h4>
-                    <p>Start with lower capital requirements. Lease properties and sublet on Airbnb.</p>
-                    <ul class="path-features">
-                        <li>$5K-$15K to start</li>
-                        <li>Cash flow focused</li>
-                        <li>Build capital for purchases</li>
-                        <li>Lower risk, faster start</li>
-                    </ul>
-                </div>
-                
-                <div class="path-card">
-                    <div class="path-icon">🏘️</div>
-                    <h4>Property Purchase</h4>
-                    <p>Buy properties outright. Maximize tax advantages from day one.</p>
-                    <ul class="path-features">
-                        <li>$50K+ for down payment</li>
-                        <li>Depreciation + equity building</li>
-                        <li>Long-term wealth creation</li>
-                        <li>1031 exchange eligible</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="flow-container">
-                <p style="text-align: center; margin-bottom: 1.5rem; font-weight: 500; color: var(--text-primary);">Both Paths Converge Here:</p>
-                <div class="flow-chain">
-                    <span class="flow-node">Tax Savings</span>
-                    <span class="flow-arrow">→</span>
-                    <span class="flow-node">Debt Freedom</span>
-                    <span class="flow-arrow">→</span>
-                    <span class="flow-node">Investment Capital</span>
-                    <span class="flow-arrow">→</span>
-                    <span class="flow-node">Cash Flow</span>
-                    <span class="flow-arrow">→</span>
-                    <span class="flow-node">More Investment</span>
-                    <span class="flow-arrow">→</span>
-                    <span class="flow-node">Wealth</span>
+            <!-- Exponential Cycle Visual -->
+            <div class="cycle-container">
+                <div class="cycle-title">🔄 The Exponential Loop</div>
+                <div class="cycle-flow">
+                    <span class="cycle-node">Tax Savings</span>
+                    <span class="cycle-arrow">→</span>
+                    <span class="cycle-node">Debt Freedom</span>
+                    <span class="cycle-arrow">→</span>
+                    <span class="cycle-node">Investment Capital</span>
+                    <span class="cycle-arrow">→</span>
+                    <span class="cycle-node">Cash Flow</span>
+                    <span class="cycle-arrow">→</span>
+                    <span class="cycle-node">More Tax Strategies</span>
+                    <span class="cycle-arrow">→</span>
+                    <span class="cycle-node">Compounding Wealth</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Multiplication Effect -->
-    <section class="section" id="s7">
+    <!-- SECTION 5: Case Study -->
+    <section class="section" id="example">
+        <div class="container">
+            <h2 style="text-align: center;">Real Numbers: How Stacking Works</h2>
+            
+            <div class="case-study">
+                <div class="case-study-header">
+                    <div class="case-avatar">S</div>
+                    <div class="case-title">
+                        <h4>Sarah, Marketing Director</h4>
+                        <p>Salary: $120K/year | Started: $45K in debt</p>
+                    </div>
+                </div>
+
+                <p><strong>Year 1 Individual Strategies:</strong></p>
+                <ul style="margin: 1rem 0; padding-left: 1.5rem; color: var(--text-secondary);">
+                    <li>Tax optimization alone: Saved $18K</li>
+                    <li>Debt payoff alone: Saved $3K interest</li>
+                    <li>Airbnb alone: Generated $18K cash flow</li>
+                </ul>
+
+                <p><strong>But here's what happened when she STACKED them:</strong></p>
+
+                <div class="results-grid">
+                    <div class="result-item">
+                        <div class="result-value">$28K</div>
+                        <div class="result-label">Tax Savings</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-value">$6K</div>
+                        <div class="result-label">Interest Saved</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-value">$22K</div>
+                        <div class="result-label">Cash Flow</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-value">$8K</div>
+                        <div class="result-label">Investment Growth</div>
+                    </div>
+                </div>
+
+                <div class="total-impact">
+                    <h4>Total Annual Impact</h4>
+                    <div class="total-number">$64,000</div>
+                    <p style="margin: 0.5rem 0 0; font-size: 0.95rem;">Not from sacrifice. From stacking.</p>
+                </div>
+            </div>
+
+            <p style="text-align: center; margin-top: 2rem;">Sarah didn't cut her lifestyle. She still buys her coffee. She travels. But she made <strong style="color: var(--text-primary);">4 strategic decisions</strong> that changed everything.</p>
+        </div>
+    </section>
+
+    <!-- SECTION 6: The Mindset Shift -->
+    <section class="section" id="mindset">
         <div class="container" style="text-align: center;">
-            <div class="eyebrow">The Magic</div>
-            <h2>The Multiplication Effect</h2>
-            <p class="lead" style="margin: 0 auto 2rem;">Stacking isn't additive — it's multiplicative. Each layer unlocks the next in a self-reinforcing cycle.</p>
+            <h2>The Mindset Shift</h2>
             
-            <div class="flow-container">
-                <div class="flow-chain">
-                    <span class="flow-node">Tax Savings</span>
-                    <span class="flow-arrow">→</span>
-                    <span class="flow-node">Extra Capital</span>
-                    <span class="flow-arrow">→</span>
-                    <span class="flow-node">Faster Debt Payoff</span>
-                    <span class="flow-arrow">→</span>
-                    <span class="flow-node">More Investment</span>
-                    <span class="flow-arrow">→</span>
-                    <span class="flow-node">Airbnb Income</span>
-                    <span class="flow-arrow">→</span>
-                    <span class="flow-node">More Tax Savings</span>
-                </div>
+            <div class="quote-block" style="max-width: 700px; margin: 2rem auto; text-align: left;">
+                <p class="quote-text">You don't need to become a different person. You don't need to live like a monk. You don't need to wait 30 years.</p>
             </div>
-            
-            <div class="quote-block" style="max-width: 700px; margin: 2rem auto 0; text-align: left;">
-                <p class="quote-text" style="font-size: 1.35rem;">You're not working harder. You're not grinding longer. You're simply stacking smarter — and the math does the rest.</p>
+
+            <p class="lead" style="max-width: 700px; margin: 0 auto 2rem;">You just need to see the game clearly. Stop optimizing pennies. Start stacking strategic moves.</p>
+
+            <div class="cta-box">
+                <h3>Ready to See Your Stack?</h3>
+                <p style="margin-bottom: 1.5rem;">Everyone's situation is different. The key is identifying YOUR 3-5 big moves—and executing them in the right order.</p>
+                <a href="/programs" class="nav-cta" style="display: inline-block; text-decoration: none;">Explore the Framework →</a>
             </div>
         </div>
     </section>
 
-    <!-- Results -->
-    <section class="section" id="s8">
-        <div class="container results-section">
-            <div class="eyebrow">The Outcome</div>
-            <h2>What Your Stack<br>Looks Like in Year 1</h2>
-            <p class="lead">A self-reinforcing wealth system that grows while you sleep.</p>
-            
-            <div class="results-grid">
-                <div class="result-card">
-                    <div class="result-icon">💰</div>
-                    <div class="result-value">$30-80K</div>
-                    <div class="result-label">Tax Savings</div>
-                </div>
-                <div class="result-card">
-                    <div class="result-icon">📈</div>
-                    <div class="result-value">$20-50K</div>
-                    <div class="result-label">Airbnb Cash Flow</div>
-                </div>
-                <div class="result-card">
-                    <div class="result-icon">🎯</div>
-                    <div class="result-value">$0</div>
-                    <div class="result-label">High-Interest Debt</div>
-                </div>
-                <div class="result-card">
-                    <div class="result-icon">🏆</div>
-                    <div class="result-value">Growing</div>
-                    <div class="result-label">Investment Portfolio</div>
-                </div>
-            </div>
-            
-            <p style="margin-top: 2rem; font-size: 1.125rem; color: var(--accent-cyan);">Total annual impact: <strong style="color: var(--accent-gold);">$50,000 - $130,000+</strong> in saved taxes and new cash flow.</p>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="section" id="s9">
-        <div class="container" style="text-align: center;">
-            <h1 style="font-size: clamp(2.5rem, 6vw, 4rem);">Ready to Build Your Stack?</h1>
-            <p class="lead" style="margin: 0 auto 1.5rem;">You don't need to be extraordinary at one thing. You need to be smart about combining the right things.</p>
-            
-            <div class="cta-wrapper">
-                <h3>Join the Legacy Investing Program</h3>
-                <p>Get the complete Stacking framework, step-by-step implementation guides, tools, templates, and direct coaching to build your personalized wealth system.</p>
-                <a href="/programs" class="btn-primary">
-                    Start Building Your Stack
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <script>
-        const sections = document.querySelectorAll('.section');
-        const dots = document.querySelectorAll('.progress-dot');
-        let current = 0;
-
-        function updateDots() {
-            const pos = window.scrollY + window.innerHeight / 2;
-            sections.forEach((s, i) => {
-                if (pos >= s.offsetTop && pos < s.offsetTop + s.offsetHeight) {
-                    dots.forEach(d => d.classList.remove('active'));
-                    dots[i]?.classList.add('active');
-                    current = i;
-                }
-            });
-        }
-
-        function goTo(i) {
-            document.getElementById(`s${i}`).scrollIntoView({ behavior: 'smooth' });
-        }
-
-        window.addEventListener('scroll', updateDots);
-        updateDots();
-
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'ArrowDown' || e.key === 'PageDown') {
-                e.preventDefault();
-                if (current < sections.length - 1) goTo(current + 1);
-            } else if (e.key === 'ArrowUp' || e.key === 'PageUp') {
-                e.preventDefault();
-                if (current > 0) goTo(current - 1);
-            }
-        });
-    </script>
 </body>
 </html>
