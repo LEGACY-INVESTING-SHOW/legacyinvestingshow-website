@@ -4,126 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Primary Meta Tags -->
     <title>The Stacking Principle | Legacy Investing Show</title>
-    <meta name="title" content="The Stacking Principle | Legacy Investing Show">
-    <meta name="description" content="Learn the Scott Adams skill-stacking approach applied to wealth building. Why becoming top 20% in multiple strategies beats grinding for 1% in one.">
-    <meta name="keywords" content="stacking principle, skill stacking, wealth building, tax optimization, airbnb arbitrage, scott adams, financial strategies">
-    <meta name="author" content="Preston Seo">
-    <meta name="robots" content="index, follow">
-
-    <!-- Canonical -->
+    <meta name="description" content="Why becoming top 20% in 10 strategies beats grinding for top 1% in one. The skill-stacking approach to building serious wealth.">
+    
     <link rel="canonical" href="https://legacyinvestingshow.com/stacking-principle">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://legacyinvestingshow.com/stacking-principle">
     <meta property="og:title" content="The Stacking Principle | Legacy Investing Show">
     <meta property="og:description" content="Why becoming top 20% in 10 strategies beats grinding for top 1% in one.">
-    <meta property="og:image" content="https://legacyinvestingshow.com/assets/images/og-stacking.jpg">
-    <meta property="og:site_name" content="Legacy Investing Show">
-
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@thelegacyshow">
-    <meta name="twitter:title" content="The Stacking Principle | Legacy Investing Show">
-    <meta name="twitter:description" content="Why becoming top 20% in 10 strategies beats grinding for top 1% in one.">
-
-    <!-- Theme Color -->
-    <meta name="theme-color" content="#059669">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/assets/images/logo.png">
-
-    <!-- Google Fonts -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "The Stacking Principle",
-        "description": "A framework for building wealth through complementary strategies",
-        "author": {"@type": "Person", "name": "Preston Seo"},
-        "publisher": {
-            "@type": "Organization",
-            "name": "Legacy Investing Show",
-            "logo": {"@type": "ImageObject", "url": "https://legacyinvestingshow.com/assets/images/logo.png"}
-        },
-        "datePublished": "2026-01-31"
-    }
-    </script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
     <style>
         :root {
-            /* Colors - Dark mode (Vercel/Linear style) */
+            --bg-deep: oklch(8% 0.02 280);
             --bg-primary: oklch(12% 0.02 280);
-            --bg-secondary: oklch(16% 0.03 280);
-            --bg-tertiary: oklch(20% 0.04 280);
-            --bg-elevated: oklch(24% 0.05 280);
+            --bg-secondary: oklch(18% 0.03 280);
+            --bg-tertiary: oklch(24% 0.04 280);
+            --bg-elevated: oklch(30% 0.05 280);
             
-            --accent-gold: oklch(75% 0.15 85);
+            --accent-gold: oklch(75% 0.14 85);
             --accent-cyan: oklch(70% 0.12 195);
-            --accent-emerald: oklch(60% 0.15 155);
-            --accent-rose: oklch(65% 0.18 25);
+            --accent-emerald: oklch(65% 0.14 155);
+            --accent-rose: oklch(65% 0.16 25);
+            --accent-violet: oklch(65% 0.15 290);
             
-            --text-primary: oklch(95% 0.01 280);
-            --text-secondary: oklch(70% 0.02 280);
+            --text-primary: oklch(96% 0.01 280);
+            --text-secondary: oklch(72% 0.02 280);
             --text-muted: oklch(55% 0.03 280);
             
-            --border: oklch(25% 0.04 280);
+            --border: oklch(22% 0.04 280);
             --border-hover: oklch(35% 0.05 280);
             
-            --radius-sm: 0.5rem;
-            --radius-md: 0.75rem;
+            --radius: 0.75rem;
             --radius-lg: 1rem;
             --radius-xl: 1.5rem;
             
-            --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-            --font-mono: 'JetBrains Mono', monospace;
-            
-            --shadow-sm: 0 1px 2px 0 oklch(0% 0 0 / 0.1);
-            --shadow-md: 0 4px 6px -1px oklch(0% 0 0 / 0.1), 0 2px 4px -2px oklch(0% 0 0 / 0.1);
-            --shadow-lg: 0 10px 15px -3px oklch(0% 0 0 / 0.1), 0 4px 6px -4px oklch(0% 0 0 / 0.1);
-            --shadow-glow: 0 0 40px -10px var(--accent-cyan);
+            --font-display: 'Space Grotesk', sans-serif;
+            --font-body: 'Inter', system-ui, sans-serif;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        html { 
             scroll-behavior: smooth;
             scroll-snap-type: y proximity;
         }
-
+        
         body {
-            font-family: var(--font-sans);
-            background: var(--bg-primary);
+            font-family: var(--font-body);
+            background: var(--bg-deep);
             color: var(--text-primary);
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        /* Gradient Background Animation */
+        .bg-gradient {
+            position: fixed;
+            inset: 0;
+            background: 
+                radial-gradient(ellipse 80% 50% at 50% -10%, oklch(25% 0.08 280 / 0.4), transparent),
+                radial-gradient(ellipse 60% 40% at 80% 50%, oklch(20% 0.06 195 / 0.2), transparent),
+                radial-gradient(ellipse 50% 30% at 20% 80%, oklch(18% 0.05 85 / 0.15), transparent);
+            pointer-events: none;
+            z-index: 0;
         }
 
         /* Header */
-        .site-header {
+        .header {
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
-            height: 64px;
-            background: oklch(12% 0.02 280 / 0.8);
-            backdrop-filter: blur(12px);
+            height: 70px;
+            background: oklch(8% 0.02 280 / 0.8);
+            backdrop-filter: blur(20px);
             border-bottom: 1px solid var(--border);
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 0 1.5rem;
+            padding: 0 2rem;
             z-index: 1000;
         }
 
@@ -134,49 +97,35 @@
             text-decoration: none;
             color: var(--text-primary);
             font-weight: 700;
-            font-size: 1rem;
-            transition: opacity 0.2s;
+            font-size: 1.1rem;
         }
 
-        .logo:hover {
-            opacity: 0.8;
-        }
+        .logo img { height: 36px; width: auto; }
 
-        .logo img {
-            height: 32px;
-            width: auto;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-
-        .nav-links a {
+        .nav { display: flex; gap: 2.5rem; align-items: center; }
+        
+        .nav a {
             color: var(--text-secondary);
             text-decoration: none;
-            font-size: 0.875rem;
+            font-size: 0.9rem;
             font-weight: 500;
             transition: color 0.2s;
         }
-
-        .nav-links a:hover {
-            color: var(--text-primary);
-        }
+        
+        .nav a:hover { color: var(--text-primary); }
 
         .nav-cta {
-            background: var(--accent-emerald);
+            background: linear-gradient(135deg, var(--accent-emerald), oklch(55% 0.12 155));
             color: white !important;
-            padding: 0.5rem 1rem;
-            border-radius: var(--radius-md);
+            padding: 0.6rem 1.25rem;
+            border-radius: var(--radius);
             font-weight: 600;
-            transition: transform 0.2s, box-shadow 0.2s !important;
+            transition: all 0.3s !important;
         }
 
         .nav-cta:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px oklch(60% 0.15 155 / 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px oklch(60% 0.14 155 / 0.35);
         }
 
         /* Sections */
@@ -185,312 +134,234 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 6rem 1.5rem 4rem;
+            padding: 7rem 1.5rem 4rem;
             scroll-snap-align: start;
-            position: relative;
-        }
-
-        .section::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: radial-gradient(ellipse 80% 50% at 50% -20%, oklch(25% 0.05 280 / 0.3), transparent);
-            pointer-events: none;
-        }
-
-        .section-content {
-            max-width: 900px;
-            width: 100%;
             position: relative;
             z-index: 1;
         }
 
+        .container {
+            max-width: 1000px;
+            width: 100%;
+        }
+
         /* Typography */
-        h1 {
-            font-size: clamp(2.5rem, 6vw, 4.5rem);
-            font-weight: 800;
-            line-height: 1.1;
-            letter-spacing: -0.02em;
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-family: var(--font-display);
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent-cyan);
             margin-bottom: 1.5rem;
-            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-gold) 100%);
+        }
+
+        .eyebrow::before {
+            content: '';
+            width: 24px;
+            height: 2px;
+            background: var(--accent-cyan);
+        }
+
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(3rem, 7vw, 5.5rem);
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: -0.03em;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-gold) 50%, var(--accent-cyan) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         h2 {
-            font-size: clamp(1.75rem, 4vw, 2.75rem);
-            font-weight: 700;
-            line-height: 1.2;
-            letter-spacing: -0.01em;
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 600;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
             margin-bottom: 1.5rem;
-            color: var(--accent-cyan);
         }
 
-        p {
-            font-size: clamp(1rem, 1.5vw, 1.25rem);
+        .lead {
+            font-size: clamp(1.125rem, 2vw, 1.5rem);
             color: var(--text-secondary);
             line-height: 1.7;
             max-width: 65ch;
         }
 
-        .highlight {
-            color: var(--accent-gold);
-            font-weight: 600;
+        p {
+            font-size: 1.0625rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            max-width: 60ch;
         }
 
+        .highlight { color: var(--accent-gold); font-weight: 600; }
+        .highlight-cyan { color: var(--accent-cyan); font-weight: 600; }
+
         /* Hero Section */
-        .hero {
+        .hero { text-align: center; }
+        
+        .hero h1 { max-width: 900px; margin: 0 auto 1.5rem; }
+        
+        .hero .lead { max-width: 700px; margin: 0 auto 2.5rem; }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .stat {
             text-align: center;
         }
 
-        .hero-subtitle {
-            font-size: clamp(1.125rem, 2vw, 1.5rem);
-            color: var(--text-secondary);
-            max-width: 600px;
-            margin: 0 auto 2rem;
-        }
-
-        .badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.5rem 1rem;
-            background: var(--bg-tertiary);
-            border: 1px solid var(--border);
-            border-radius: 9999px;
-            font-size: 0.875rem;
-            font-weight: 500;
-            color: var(--text-secondary);
-            margin-bottom: 1.5rem;
-        }
-
-        .badge-dot {
-            width: 8px;
-            height: 8px;
-            background: var(--accent-emerald);
-            border-radius: 50%;
-            animation: pulse 2s ease-in-out infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
-        }
-
-        /* Quote */
-        .quote {
-            position: relative;
-            padding: 2rem 2rem 2rem 3rem;
-            margin: 2rem 0;
-            background: var(--bg-secondary);
-            border-radius: var(--radius-lg);
-            border-left: 3px solid var(--accent-gold);
-        }
-
-        .quote::before {
-            content: '"';
-            position: absolute;
-            top: 0.5rem;
-            left: 1rem;
-            font-size: 4rem;
+        .stat-number {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 700;
             color: var(--accent-gold);
-            opacity: 0.3;
-            font-family: Georgia, serif;
             line-height: 1;
         }
 
-        .quote p {
-            font-size: clamp(1.125rem, 2vw, 1.5rem);
-            font-style: italic;
-            color: var(--text-primary);
-            margin: 0;
+        .stat-label {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            margin-top: 0.5rem;
         }
 
-        /* Comparison Cards */
-        .comparison {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin: 2.5rem 0;
+        /* Visual: Stacked Blocks */
+        .stack-visual {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 3rem 0;
+            perspective: 1000px;
         }
 
-        .card {
+        .stack-block {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            padding: 1.5rem 2rem;
             background: var(--bg-secondary);
             border: 1px solid var(--border);
             border-radius: var(--radius-lg);
-            padding: 1.75rem;
-            transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: stackIn 0.6s ease backwards;
+            position: relative;
+            overflow: hidden;
         }
 
-        .card:hover {
-            transform: translateY(-2px);
+        .stack-block::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: var(--accent-cyan);
+            transform: scaleY(0);
+            transition: transform 0.3s;
+        }
+
+        .stack-block:hover::before {
+            transform: scaleY(1);
+        }
+
+        .stack-block:nth-child(1) { animation-delay: 0.1s; }
+        .stack-block:nth-child(2) { animation-delay: 0.2s; }
+        .stack-block:nth-child(3) { animation-delay: 0.3s; }
+        .stack-block:nth-child(4) { animation-delay: 0.4s; border-color: var(--accent-cyan); background: oklch(22% 0.05 195 / 0.15); }
+
+        @keyframes stackIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px) rotateX(-10deg);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) rotateX(0);
+            }
+        }
+
+        .stack-block:hover {
+            transform: translateX(8px);
             border-color: var(--border-hover);
-            box-shadow: var(--shadow-lg);
+            box-shadow: 0 10px 40px oklch(0% 0 0 / 0.2);
         }
 
-        .card-header {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            margin-bottom: 1rem;
-        }
-
-        .card-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: var(--radius-md);
+        .stack-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: var(--radius);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.25rem;
+            font-size: 1.5rem;
+            background: var(--bg-tertiary);
+            flex-shrink: 0;
         }
 
-        .card-legacy .card-icon {
-            background: oklch(25% 0.05 25);
-        }
-
-        .card-stacking .card-icon {
-            background: oklch(25% 0.05 155);
-        }
-
-        .card h3 {
+        .stack-content h4 {
+            font-family: var(--font-display);
             font-size: 1.125rem;
             font-weight: 600;
-        }
-
-        .card-legacy h3 {
-            color: var(--accent-rose);
-        }
-
-        .card-stacking h3 {
-            color: var(--accent-emerald);
-        }
-
-        .card-amount {
-            font-size: 1.75rem;
-            font-weight: 700;
             color: var(--text-primary);
-            margin: 0.5rem 0;
+            margin-bottom: 0.25rem;
         }
 
-        .card p {
+        .stack-content p {
             font-size: 0.9375rem;
             color: var(--text-muted);
             margin: 0;
         }
 
-        /* Stack Visual */
-        .stack-container {
+        .stack-arrow {
+            text-align: center;
+            color: var(--accent-cyan);
+            font-size: 1.5rem;
+            margin: -0.5rem 0;
+            opacity: 0.5;
+        }
+
+        /* Comparison Cards */
+        .comparison {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
             margin: 2.5rem 0;
         }
 
-        .stack-item {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            padding: 1.25rem 1.5rem;
-            margin-bottom: 0.75rem;
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
-            border-radius: var(--radius-md);
-            transition: all 0.3s;
-            animation: slideIn 0.6s ease backwards;
-        }
-
-        .stack-item:nth-child(1) { animation-delay: 0.1s; }
-        .stack-item:nth-child(2) { animation-delay: 0.2s; }
-        .stack-item:nth-child(3) { animation-delay: 0.3s; }
-        .stack-item:nth-child(4) { animation-delay: 0.4s; border-color: var(--accent-cyan); background: oklch(20% 0.05 195 / 0.2); }
-
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateX(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        .stack-item:hover {
-            transform: translateX(4px);
-            border-color: var(--border-hover);
-        }
-
-        .stack-icon {
-            font-size: 1.5rem;
-            flex-shrink: 0;
-        }
-
-        .stack-text {
-            font-weight: 500;
-            color: var(--text-primary);
-        }
-
-        /* Feature List */
-        .feature-list {
-            list-style: none;
-            padding: 0;
-            margin: 1.5rem 0;
-        }
-
-        .feature-list li {
-            display: flex;
-            align-items: flex-start;
-            gap: 0.875rem;
-            padding: 0.875rem 0;
-            font-size: 1.0625rem;
-            color: var(--text-secondary);
-            border-bottom: 1px solid var(--border);
-        }
-
-        .feature-list li:last-child {
-            border-bottom: none;
-        }
-
-        .feature-list li::before {
-            content: '✓';
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 24px;
-            height: 24px;
-            background: oklch(25% 0.08 155 / 0.3);
-            color: var(--accent-emerald);
-            border-radius: 50%;
-            font-size: 0.75rem;
-            font-weight: 700;
-            flex-shrink: 0;
-            margin-top: 2px;
-        }
-
-        /* Two Paths */
-        .paths-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .path-card {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
+        .compare-card {
+            padding: 2rem;
             border-radius: var(--radius-lg);
-            padding: 1.75rem;
-            transition: all 0.3s;
+            border: 1px solid var(--border);
+            position: relative;
+            overflow: hidden;
         }
 
-        .path-card:hover {
-            border-color: var(--accent-gold);
-            box-shadow: 0 0 30px oklch(75% 0.15 85 / 0.1);
+        .compare-card.trap {
+            background: linear-gradient(135deg, oklch(18% 0.05 25 / 0.3), var(--bg-secondary));
         }
 
-        .path-tag {
+        .compare-card.stack {
+            background: linear-gradient(135deg, oklch(18% 0.06 155 / 0.3), var(--bg-secondary));
+            border-color: oklch(30% 0.08 155 / 0.5);
+        }
+
+        .compare-badge {
             display: inline-block;
             padding: 0.375rem 0.875rem;
-            background: oklch(25% 0.08 85 / 0.2);
-            color: var(--accent-gold);
             border-radius: 9999px;
             font-size: 0.75rem;
             font-weight: 600;
@@ -499,20 +370,226 @@
             margin-bottom: 1rem;
         }
 
-        .path-card h4 {
+        .trap .compare-badge {
+            background: oklch(25% 0.08 25 / 0.3);
+            color: var(--accent-rose);
+        }
+
+        .stack .compare-badge {
+            background: oklch(25% 0.08 155 / 0.3);
+            color: var(--accent-emerald);
+        }
+
+        .compare-card h3 {
+            font-family: var(--font-display);
             font-size: 1.25rem;
             font-weight: 600;
-            color: var(--text-primary);
             margin-bottom: 0.75rem;
+        }
+
+        .trap h3 { color: var(--accent-rose); }
+        .stack h3 { color: var(--accent-emerald); }
+
+        .compare-amount {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: 1rem 0;
+        }
+
+        .compare-card p {
+            font-size: 0.9375rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        .vs-divider {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 40px;
+            height: 40px;
+            background: var(--bg-tertiary);
+            border: 2px solid var(--border);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-display);
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            z-index: 10;
+        }
+
+        /* Quote Block */
+        .quote-block {
+            background: var(--bg-secondary);
+            border-radius: var(--radius-xl);
+            padding: 2.5rem;
+            margin: 2rem 0;
+            position: relative;
+            border: 1px solid var(--border);
+        }
+
+        .quote-block::before {
+            content: '"';
+            position: absolute;
+            top: 1rem;
+            left: 1.5rem;
+            font-family: Georgia, serif;
+            font-size: 6rem;
+            color: var(--accent-gold);
+            opacity: 0.2;
+            line-height: 1;
+        }
+
+        .quote-text {
+            font-family: var(--font-display);
+            font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+            font-style: italic;
+            color: var(--text-primary);
+            line-height: 1.5;
+            position: relative;
+            z-index: 1;
+        }
+
+        .quote-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .author-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-gold), var(--accent-cyan));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: var(--bg-primary);
+        }
+
+        .author-info h5 {
+            font-family: var(--font-display);
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .author-info p {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        /* Feature List */
+        .feature-list {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .feature-list li:last-child { border-bottom: none; }
+
+        .feature-check {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: oklch(25% 0.1 155 / 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-emerald);
+            font-size: 0.75rem;
+            font-weight: 700;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .feature-text {
+            font-size: 1.0625rem;
+            color: var(--text-secondary);
+        }
+
+        .feature-text strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        /* Path Cards */
+        .paths-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .path-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-xl);
+            padding: 2rem;
+            transition: all 0.3s;
+        }
+
+        .path-card:hover {
+            border-color: var(--accent-gold);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 50px oklch(0% 0 0 / 0.2);
+        }
+
+        .path-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .path-card:nth-child(1) .path-icon {
+            background: oklch(25% 0.08 290 / 0.3);
+        }
+
+        .path-card:nth-child(2) .path-icon {
+            background: oklch(25% 0.08 155 / 0.3);
+        }
+
+        .path-card h4 {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .path-card p {
+            font-size: 0.9375rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
         }
 
         .path-features {
             list-style: none;
-            padding: 0;
         }
 
         .path-features li {
-            padding: 0.5rem 0;
+            padding: 0.375rem 0;
             font-size: 0.9375rem;
             color: var(--text-secondary);
             display: flex;
@@ -523,58 +600,79 @@
         .path-features li::before {
             content: '→';
             color: var(--accent-gold);
+            font-weight: 700;
         }
 
         /* Flow Visualization */
-        .flow-diagram {
+        .flow-container {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-xl);
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .flow-chain {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
-            gap: 0.5rem;
-            padding: 1.5rem;
-            background: var(--bg-secondary);
-            border-radius: var(--radius-lg);
-            margin: 2rem 0;
-            font-family: var(--font-mono);
-            font-size: 0.875rem;
+            gap: 0.75rem;
         }
 
-        .flow-item {
-            padding: 0.5rem 1rem;
+        .flow-node {
+            padding: 0.75rem 1.25rem;
             background: var(--bg-tertiary);
-            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            font-family: var(--font-display);
+            font-size: 0.9375rem;
+            font-weight: 500;
             color: var(--accent-cyan);
             white-space: nowrap;
+            transition: all 0.3s;
+        }
+
+        .flow-node:hover {
+            border-color: var(--accent-cyan);
+            box-shadow: 0 0 20px oklch(70% 0.12 195 / 0.2);
         }
 
         .flow-arrow {
             color: var(--text-muted);
+            font-size: 1.25rem;
         }
 
         /* Results Grid */
+        .results-section { text-align: center; }
+
         .results-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             gap: 1rem;
-            margin: 2rem 0;
+            margin: 2.5rem 0;
         }
 
-        .result-item {
+        .result-card {
             background: var(--bg-secondary);
             border: 1px solid var(--border);
             border-radius: var(--radius-lg);
-            padding: 1.5rem;
-            text-align: center;
+            padding: 1.5rem 1rem;
             transition: all 0.3s;
         }
 
-        .result-item:hover {
-            border-color: var(--accent-emerald);
-            transform: translateY(-2px);
+        .result-card:hover {
+            border-color: var(--accent-gold);
+            transform: translateY(-4px);
         }
 
-        .result-amount {
+        .result-icon {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .result-value {
+            font-family: var(--font-display);
             font-size: 1.75rem;
             font-weight: 700;
             color: var(--accent-gold);
@@ -587,100 +685,117 @@
         }
 
         /* CTA Section */
-        .cta-section {
-            text-align: center;
-        }
-
-        .cta-box {
-            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+        .cta-wrapper {
+            background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
             border: 1px solid var(--border);
             border-radius: var(--radius-xl);
-            padding: 3rem 2rem;
-            margin-top: 2rem;
+            padding: 3rem;
+            text-align: center;
             position: relative;
             overflow: hidden;
         }
 
-        .cta-box::before {
+        .cta-wrapper::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, var(--accent-cyan), transparent);
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-gold), var(--accent-cyan), var(--accent-emerald));
         }
 
-        .cta-box h3 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 0.5rem;
+        .cta-wrapper h3 {
+            font-family: var(--font-display);
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
         }
 
-        .cta-box p {
-            color: var(--text-secondary);
-            margin-bottom: 1.5rem;
+        .cta-wrapper > p {
+            max-width: 500px;
+            margin: 0 auto 1.5rem;
         }
 
         .btn-primary {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            background: var(--accent-emerald);
+            background: linear-gradient(135deg, var(--accent-emerald), oklch(55% 0.12 155));
             color: white;
             padding: 1rem 2rem;
-            border-radius: var(--radius-md);
+            border-radius: var(--radius);
+            font-family: var(--font-display);
             font-size: 1rem;
             font-weight: 600;
             text-decoration: none;
             border: none;
             cursor: pointer;
-            transition: all 0.2s;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, transparent, rgba(255,255,255,0.2), transparent);
+            transform: translateX(-100%);
+            transition: transform 0.5s;
+        }
+
+        .btn-primary:hover::before {
+            transform: translateX(100%);
         }
 
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px oklch(60% 0.15 155 / 0.4);
-        }
-
-        .btn-primary svg {
-            transition: transform 0.2s;
-        }
-
-        .btn-primary:hover svg {
-            transform: translateX(4px);
+            box-shadow: 0 12px 35px oklch(60% 0.14 155 / 0.4);
         }
 
         /* Progress Dots */
-        .progress-dots {
+        .progress-nav {
             position: fixed;
-            right: 1.5rem;
+            right: 2rem;
             top: 50%;
             transform: translateY(-50%);
             display: flex;
             flex-direction: column;
-            gap: 0.75rem;
+            gap: 1rem;
             z-index: 100;
         }
 
         .progress-dot {
-            width: 8px;
-            height: 8px;
+            width: 10px;
+            height: 10px;
             border-radius: 50%;
             background: var(--border-hover);
-            transition: all 0.3s;
             cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .progress-dot::after {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: 50%;
+            border: 2px solid transparent;
+            transition: all 0.3s;
         }
 
         .progress-dot:hover,
         .progress-dot.active {
             background: var(--accent-cyan);
-            transform: scale(1.5);
-            box-shadow: 0 0 10px var(--accent-cyan);
+            transform: scale(1.3);
         }
 
-        /* Scroll Indicator */
+        .progress-dot.active::after {
+            border-color: oklch(70% 0.12 195 / 0.3);
+        }
+
+        /* Scroll Hint */
         .scroll-hint {
             position: absolute;
             bottom: 2rem;
@@ -702,48 +817,45 @@
             60% { transform: translateX(-50%) translateY(-5px); }
         }
 
-        .scroll-hint svg {
-            width: 20px;
-            height: 20px;
-        }
-
         /* Responsive */
         @media (max-width: 768px) {
-            .site-header {
-                padding: 0 1rem;
-            }
-            
-            .nav-links a:not(.nav-cta) {
-                display: none;
-            }
-            
-            .section {
-                padding: 5rem 1rem 3rem;
-            }
-            
-            .progress-dots {
-                display: none;
-            }
+            .header { padding: 0 1rem; }
+            .nav a:not(.nav-cta) { display: none; }
+            .section { padding: 6rem 1rem 3rem; }
+            .progress-nav { display: none; }
             
             .comparison,
-            .paths-grid {
-                grid-template-columns: 1fr;
+            .paths-grid { grid-template-columns: 1fr; }
+            
+            .vs-divider {
+                position: relative;
+                left: auto;
+                top: auto;
+                transform: none;
+                margin: 1rem auto;
             }
             
-            .flow-diagram {
-                font-size: 0.75rem;
+            .results-grid { grid-template-columns: repeat(2, 1fr); }
+            
+            .hero-stats {
+                flex-direction: column;
+                gap: 1.5rem;
             }
+            
+            .quote-block { padding: 1.5rem; }
+            .quote-block::before { font-size: 4rem; }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="site-header">
+    <div class="bg-gradient"></div>
+
+    <header class="header">
         <a href="/" class="logo">
             <img src="/assets/images/logo.png" alt="Legacy Investing Show">
             <span>Legacy Investing</span>
         </a>
-        <nav class="nav-links">
+        <nav class="nav">
             <a href="/about">About</a>
             <a href="/programs">Programs</a>
             <a href="/success-stories">Results</a>
@@ -752,223 +864,335 @@
         </nav>
     </header>
 
-    <!-- Progress Dots -->
-    <div class="progress-dots">
-        <div class="progress-dot active" onclick="scrollToSection(0)"></div>
-        <div class="progress-dot" onclick="scrollToSection(1)"></div>
-        <div class="progress-dot" onclick="scrollToSection(2)"></div>
-        <div class="progress-dot" onclick="scrollToSection(3)"></div>
-        <div class="progress-dot" onclick="scrollToSection(4)"></div>
-        <div class="progress-dot" onclick="scrollToSection(5)"></div>
-        <div class="progress-dot" onclick="scrollToSection(6)"></div>
-        <div class="progress-dot" onclick="scrollToSection(7)"></div>
-        <div class="progress-dot" onclick="scrollToSection(8)"></div>
-        <div class="progress-dot" onclick="scrollToSection(9)"></div>
+    <div class="progress-nav">
+        <div class="progress-dot active" onclick="goTo(0)"></div>
+        <div class="progress-dot" onclick="goTo(1)"></div>
+        <div class="progress-dot" onclick="goTo(2)"></div>
+        <div class="progress-dot" onclick="goTo(3)"></div>
+        <div class="progress-dot" onclick="goTo(4)"></div>
+        <div class="progress-dot" onclick="goTo(5)"></div>
+        <div class="progress-dot" onclick="goTo(6)"></div>
+        <div class="progress-dot" onclick="goTo(7)"></div>
+        <div class="progress-dot" onclick="goTo(8)"></div>
+        <div class="progress-dot" onclick="goTo(9)"></div>
     </div>
 
-    <!-- Section 1: Hero -->
-    <section class="section" id="section-0">
-        <div class="section-content hero">
-            <div class="badge">
-                <span class="badge-dot"></span>
-                Wealth Building Framework
+    <!-- Hero -->
+    <section class="section" id="s0">
+        <div class="container hero">
+            <div class="eyebrow">Wealth Building Framework</div>
+            <h1>Stop Grinding.<br>Start Stacking.</h1>
+            <p class="lead">The traditional path to wealth is broken. Top 1% mastery takes decades. But top 20% in 10 complementary skills? That's how you build serious wealth in years, not decades.</p>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">10x</div>
+                    <div class="stat-label">Faster Results</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">$200K+</div>
+                    <div class="stat-label">Annual Savings</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">80/20</div>
+                    <div class="stat-label">Effort to Results</div>
+                </div>
             </div>
-            <h1>The Stacking Principle</h1>
-            <p class="hero-subtitle">Why chasing top 1% in one skill is the slow path. The fast path? Become top 20% in 10 complementary strategies.</p>
-            <a href="#section-1" class="scroll-hint">
-                <span>Scroll to explore</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            
+            <a href="#s1" class="scroll-hint">
+                <span>Discover the framework</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M12 5v14M19 12l-7 7-7-7"/>
                 </svg>
             </a>
         </div>
     </section>
 
-    <!-- Section 2: Skill Stack -->
-    <section class="section" id="section-1">
-        <div class="section-content">
-            <h2>The Skill Stack Philosophy</h2>
-            <div class="quote">
-                <p>The last 20% of mastery takes 80% of the effort. But the first 80%? That's where the juice is.</p>
+    <!-- The Philosophy -->
+    <section class="section" id="s1">
+        <div class="container">
+            <div class="eyebrow">The Insight</div>
+            <h2>The Scott Adams<br>Skill Stack Philosophy</h2>
+            
+            <div class="quote-block">
+                <p class="quote-text">The last 20% of mastery takes 80% of the effort. But the first 80%? That's where the juice is.</p>
+                <div class="quote-author">
+                    <div class="author-avatar">SA</div>
+                    <div class="author-info">
+                        <h5>Scott Adams</h5>
+                        <p>Creator of Dilbert, Author of "How to Fail at Almost Everything"</p>
+                    </div>
+                </div>
             </div>
-            <p>Scott Adams discovered that reaching the <span class="highlight">top 1% in one thing</span> demands extraordinary talent and years of painful grinding.</p>
-            <p>But reaching the <span class="highlight">top 20% in multiple things</span>? That's achievable for anyone willing to learn. And when you combine those skills strategically, you become irreplaceable.</p>
+            
+            <p>Here's what nobody tells you: reaching the <span class="highlight">top 1%</span> in any single skill requires extraordinary talent, decades of grinding, and often pure luck.</p>
+            
+            <p>But reaching the <span class="highlight-cyan">top 20%</span> in multiple complementary skills? That's achievable. And when you stack those skills strategically, you don't just add — you <strong style="color: var(--text-primary);">multiply</strong>.</p>
         </div>
     </section>
 
-    <!-- Section 3: The Trap -->
-    <section class="section" id="section-2">
-        <div class="section-content">
+    <!-- The Trap -->
+    <section class="section" id="s2">
+        <div class="container">
+            <div class="eyebrow">The Problem</div>
             <h2>The $5 Coffee Trap</h2>
-            <p>Traditional finance advice keeps you small. Here's the brutal comparison:</p>
+            <p class="lead" style="margin-bottom: 2rem;">Mainstream finance advice is designed to keep you small, stressed, and barely moving forward.</p>
+            
             <div class="comparison">
-                <div class="card card-legacy">
-                    <div class="card-header">
-                        <div class="card-icon">☕</div>
-                        <h3>Old Advice</h3>
-                    </div>
-                    <div class="card-amount">$1,825/year</div>
-                    <p>"Skip the daily latte" — painful, unsustainable, and keeps you thinking small.</p>
+                <div class="compare-card trap">
+                    <span class="compare-badge">The Old Way</span>
+                    <h3>Cut Your Lattes</h3>
+                    <div class="compare-amount">$1,825/yr</div>
+                    <p>Skip one coffee per day. Painful sacrifice. Minimal results. Keeps you focused on pennies while dollars fly out the window.</p>
                 </div>
-                <div class="card card-stacking">
-                    <div class="card-header">
-                        <div class="card-icon">🚀</div>
-                        <h3>Stacking</h3>
-                    </div>
-                    <div class="card-amount">$50K-$200K+/year</div>
-                    <p>Optimize taxes, debt, and investments — efficient, scalable, life-changing.</p>
+                
+                <div class="vs-divider">VS</div>
+                
+                <div class="compare-card stack">
+                    <span class="compare-badge">The Stack Way</span>
+                    <h3>Optimize Everything</h3>
+                    <div class="compare-amount">$50-200K+/yr</div>
+                    <p>Layer complementary tax, debt, and investment strategies. Sustainable system. Life-changing results that compound automatically.</p>
                 </div>
             </div>
-            <p style="text-align: center;">The numbers sound too big because <span class="highlight">traditional advice is designed to keep you small</span>.</p>
+            
+            <p style="text-align: center; margin-top: 1.5rem;">The numbers sound impossible because <span class="highlight">the system wants you thinking small</span>.</p>
         </div>
     </section>
 
-    <!-- Section 4: What is Stacking -->
-    <section class="section" id="section-3">
-        <div class="section-content">
+    <!-- What is Stacking -->
+    <section class="section" id="s3">
+        <div class="container">
+            <div class="eyebrow">The Framework</div>
             <h2>What is Financial Stacking?</h2>
-            <p>Instead of relying on one strategy, you layer <span class="highlight">complementary strategies</span> on top of each other. Each layer doesn't just add — it <span class="highlight">multiplies</span> the impact of the others.</p>
-            <div class="stack-container">
-                <div class="stack-item">
-                    <span class="stack-icon">💰</span>
-                    <span class="stack-text">Optimize taxes on your current income</span>
+            <p class="lead">Instead of relying on one strategy, you layer complementary wealth-building systems. Each layer multiplies the others.</p>
+            
+            <div class="stack-visual">
+                <div class="stack-block">
+                    <div class="stack-icon">⚡</div>
+                    <div class="stack-content">
+                        <h4>Tax Optimization</h4>
+                        <p>Restructure your income to keep more of what you earn. The foundation of every stack.</p>
+                    </div>
                 </div>
-                <div class="stack-item">
-                    <span class="stack-icon">📉</span>
-                    <span class="stack-text">Pay off debt in the right order (save on interest)</span>
+                <div class="stack-arrow">↓</div>
+                <div class="stack-block">
+                    <div class="stack-icon">🎯</div>
+                    <div class="stack-content">
+                        <h4>Strategic Debt Elimination</h4>
+                        <p>Pay off debt in the mathematically optimal order. Save thousands in interest.</p>
+                    </div>
                 </div>
-                <div class="stack-item">
-                    <span class="stack-icon">📈</span>
-                    <span class="stack-text">Invest savings in tax-free growth accounts</span>
+                <div class="stack-arrow">↓</div>
+                <div class="stack-block">
+                    <div class="stack-icon">📈</div>
+                    <div class="stack-content">
+                        <h4>Tax-Advantaged Investing</h4>
+                        <p>Grow wealth in accounts the IRS can't touch. Let compound work its magic.</p>
+                    </div>
                 </div>
-                <div class="stack-item">
-                    <span class="stack-icon">🏠</span>
-                    <span class="stack-text">Generate tax-free cash flow with Airbnb</span>
+                <div class="stack-arrow">↓</div>
+                <div class="stack-block">
+                    <div class="stack-icon">🏘️</div>
+                    <div class="stack-content">
+                        <h4>Cash Flow Engine (Airbnb)</h4>
+                        <p>Generate tax-free income that funds the next layer. The accelerator.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section 5: Step 1 -->
-    <section class="section" id="section-4">
-        <div class="section-content">
-            <h2>Step 1: Optimize What You Have</h2>
-            <p>Before chasing new income, you must <span class="highlight">maximize what you're already earning</span>. Most people are leaking thousands without realizing it.</p>
+    <!-- Step 1 -->
+    <section class="section" id="s4">
+        <div class="container">
+            <div class="eyebrow">Phase 1</div>
+            <h2>Optimize What You Already Have</h2>
+            <p class="lead">Before chasing new income, stop the bleeding. Most high earners are hemorrhaging thousands through inefficiencies.</p>
+            
             <ul class="feature-list">
-                <li>Restructure your tax situation for maximum savings</li>
-                <li>Optimize your investment portfolio structure</li>
-                <li>Fix your wellness and benefits structure</li>
-                <li>Eliminate hidden inefficiencies draining your wealth</li>
+                <li>
+                    <span class="feature-check">✓</span>
+                    <span class="feature-text"><strong>Tax Restructuring</strong> — Stop overpaying. Legal strategies to reduce your effective tax rate by 10-30%.</span>
+                </li>
+                <li>
+                    <span class="feature-check">✓</span>
+                    <span class="feature-text"><strong>Portfolio Optimization</strong> — Reorganize investments for tax efficiency and better returns.</span>
+                </li>
+                <li>
+                    <span class="feature-check">✓</span>
+                    <span class="feature-text"><strong>Benefits Audit</strong> — Uncover hidden value in your current compensation package.</span>
+                </li>
+                <li>
+                    <span class="feature-check">✓</span>
+                    <span class="feature-text"><strong>Expense Analysis</strong> — Identify and eliminate wealth leaks you don't even know exist.</span>
+                </li>
             </ul>
-            <p style="margin-top: 1.5rem; font-size: 1.125rem; color: var(--accent-cyan);">This foundational step alone can save or create tens of thousands per year.</p>
+            
+            <p style="margin-top: 1.5rem; padding: 1.25rem; background: oklch(20% 0.06 155 / 0.15); border-radius: var(--radius); border-left: 3px solid var(--accent-emerald);">
+                <strong style="color: var(--accent-emerald);">Result:</strong> Most people recover $15,000-$50,000+ annually without earning a single extra dollar.
+            </p>
         </div>
     </section>
 
-    <!-- Section 6: Step 2 -->
-    <section class="section" id="section-5">
-        <div class="section-content">
-            <h2>Step 2: The Cash Flow Layer</h2>
-            <p>Once your foundation is optimized, add <span class="highlight">Airbnb</span> as a cash flow engine. This serves two strategic purposes simultaneously:</p>
+    <!-- Step 2 -->
+    <section class="section" id="s5">
+        <div class="container">
+            <div class="eyebrow">Phase 2</div>
+            <h2>Add the Cash Flow Engine</h2>
+            <p class="lead">Once your foundation is optimized, add Airbnb as a wealth accelerator. This isn't "side income" — it's a strategic cash flow layer.</p>
+            
+            <div class="quote-block" style="margin: 2rem 0;">
+                <p class="quote-text" style="font-size: 1.25rem;">Airbnb is uniquely powerful because it delivers two things simultaneously: immediate cash flow you can use today, and tax advantages that make the IRS work for you.</p>
+            </div>
+            
             <ul class="feature-list">
-                <li><strong style="color: var(--text-primary);">Immediate Income</strong> — Monthly cash flow from short-term rentals</li>
-                <li><strong style="color: var(--text-primary);">Tax Advantages</strong> — Depreciation, deductions, 1031 exchanges</li>
+                <li>
+                    <span class="feature-check">✓</span>
+                    <span class="feature-text"><strong>Monthly Cash Flow</strong> — $2,000-$10,000+ per property in net income, deposited to your account.</span>
+                </li>
+                <li>
+                    <span class="feature-check">✓</span>
+                    <span class="feature-text"><strong>Depreciation</strong> — Write off the property value against your income. Massive tax savings.</span>
+                </li>
+                <li>
+                    <span class="feature-check">✓</span>
+                    <span class="feature-text"><strong>Expense Deductions</strong> — Everything from furniture to cleaning supplies reduces taxable income.</span>
+                </li>
+                <li>
+                    <span class="feature-check">✓</span>
+                    <span class="feature-text"><strong>1031 Exchanges</strong> — Defer capital gains indefinitely as you scale.</span>
+                </li>
             </ul>
-            <p style="margin-top: 1.5rem;">This isn't just "extra money" — it's <span class="highlight">strategically structured money</span> that compounds your wealth building.</p>
         </div>
     </section>
 
-    <!-- Section 7: Two Paths -->
-    <section class="section" id="section-6">
-        <div class="section-content">
-            <h2>Two Paths, Same Destination</h2>
-            <p>Depending on your starting capital, choose the path that fits your situation:</p>
+    <!-- Two Paths -->
+    <section class="section" id="s6">
+        <div class="container">
+            <div class="eyebrow">Choose Your Path</div>
+            <h2>Two Entry Points.<br>Same Destination.</h2>
+            <p class="lead">Your starting capital determines your first move. Both paths lead to the same outcome: significant wealth.</p>
+            
             <div class="paths-grid">
                 <div class="path-card">
-                    <span class="path-tag">Lower Capital</span>
-                    <h4>💡 Rental Arbitrage</h4>
+                    <div class="path-icon">💡</div>
+                    <h4>Rental Arbitrage</h4>
+                    <p>Start with lower capital requirements. Lease properties and sublet on Airbnb.</p>
                     <ul class="path-features">
-                        <li>Lower upfront investment required</li>
-                        <li>Focus on cash flow first</li>
-                        <li>Build capital for future purchases</li>
-                        <li>Start generating income faster</li>
+                        <li>$5K-$15K to start</li>
+                        <li>Cash flow focused</li>
+                        <li>Build capital for purchases</li>
+                        <li>Lower risk, faster start</li>
                     </ul>
                 </div>
+                
                 <div class="path-card">
-                    <span class="path-tag">More Capital</span>
-                    <h4>🏘️ Property Purchase</h4>
+                    <div class="path-icon">🏘️</div>
+                    <h4>Property Purchase</h4>
+                    <p>Buy properties outright. Maximize tax advantages from day one.</p>
                     <ul class="path-features">
-                        <li>Massive tax deductions via depreciation</li>
-                        <li>Build long-term equity</li>
-                        <li>Wealth creation + cash flow</li>
-                        <li>1031 exchange opportunities</li>
+                        <li>$50K+ for down payment</li>
+                        <li>Depreciation + equity building</li>
+                        <li>Long-term wealth creation</li>
+                        <li>1031 exchange eligible</li>
                     </ul>
                 </div>
             </div>
-            <p style="text-align: center; margin-top: 1.5rem;">Both paths converge: <span class="highlight">Tax Savings → Cash Flow → Equity → Long-term Wealth</span></p>
-        </div>
-    </section>
-
-    <!-- Section 8: Multiplication Effect -->
-    <section class="section" id="section-7">
-        <div class="section-content" style="text-align: center;">
-            <h2>The Multiplication Effect</h2>
-            <p>Each layer doesn't just add value — it <span class="highlight">unlocks</span> the next layer in a self-reinforcing cycle.</p>
-            <div class="flow-diagram">
-                <span class="flow-item">Tax Savings</span>
-                <span class="flow-arrow">→</span>
-                <span class="flow-item">Debt Payoff</span>
-                <span class="flow-arrow">→</span>
-                <span class="flow-item">Investment Capital</span>
-                <span class="flow-arrow">→</span>
-                <span class="flow-item">Cash Flow</span>
-                <span class="flow-arrow">→</span>
-                <span class="flow-item">More Investment</span>
-                <span class="flow-arrow">→</span>
-                <span class="flow-item">More Tax Savings</span>
-            </div>
-            <div class="quote" style="border-left-color: var(--accent-cyan); margin-top: 2rem;">
-                <p>You're not working harder. You're just stacking smarter.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 9: Results -->
-    <section class="section" id="section-8">
-        <div class="section-content" style="text-align: center;">
-            <h2>The Stacking Result</h2>
-            <p>A self-reinforcing wealth system that grows itself:</p>
-            <div class="results-grid">
-                <div class="result-item">
-                    <div class="result-amount">$30K-80K</div>
-                    <div class="result-label">Annual Tax Savings</div>
+            
+            <div class="flow-container">
+                <p style="text-align: center; margin-bottom: 1.5rem; font-weight: 500; color: var(--text-primary);">Both Paths Converge Here:</p>
+                <div class="flow-chain">
+                    <span class="flow-node">Tax Savings</span>
+                    <span class="flow-arrow">→</span>
+                    <span class="flow-node">Debt Freedom</span>
+                    <span class="flow-arrow">→</span>
+                    <span class="flow-node">Investment Capital</span>
+                    <span class="flow-arrow">→</span>
+                    <span class="flow-node">Cash Flow</span>
+                    <span class="flow-arrow">→</span>
+                    <span class="flow-node">More Investment</span>
+                    <span class="flow-arrow">→</span>
+                    <span class="flow-node">Wealth</span>
                 </div>
-                <div class="result-item">
-                    <div class="result-amount">$20K-50K</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Multiplication Effect -->
+    <section class="section" id="s7">
+        <div class="container" style="text-align: center;">
+            <div class="eyebrow">The Magic</div>
+            <h2>The Multiplication Effect</h2>
+            <p class="lead" style="margin: 0 auto 2rem;">Stacking isn't additive — it's multiplicative. Each layer unlocks the next in a self-reinforcing cycle.</p>
+            
+            <div class="flow-container">
+                <div class="flow-chain">
+                    <span class="flow-node">Tax Savings</span>
+                    <span class="flow-arrow">→</span>
+                    <span class="flow-node">Extra Capital</span>
+                    <span class="flow-arrow">→</span>
+                    <span class="flow-node">Faster Debt Payoff</span>
+                    <span class="flow-arrow">→</span>
+                    <span class="flow-node">More Investment</span>
+                    <span class="flow-arrow">→</span>
+                    <span class="flow-node">Airbnb Income</span>
+                    <span class="flow-arrow">→</span>
+                    <span class="flow-node">More Tax Savings</span>
+                </div>
+            </div>
+            
+            <div class="quote-block" style="max-width: 700px; margin: 2rem auto 0; text-align: left;">
+                <p class="quote-text" style="font-size: 1.35rem;">You're not working harder. You're not grinding longer. You're simply stacking smarter — and the math does the rest.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results -->
+    <section class="section" id="s8">
+        <div class="container results-section">
+            <div class="eyebrow">The Outcome</div>
+            <h2>What Your Stack<br>Looks Like in Year 1</h2>
+            <p class="lead">A self-reinforcing wealth system that grows while you sleep.</p>
+            
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-icon">💰</div>
+                    <div class="result-value">$30-80K</div>
+                    <div class="result-label">Tax Savings</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon">📈</div>
+                    <div class="result-value">$20-50K</div>
                     <div class="result-label">Airbnb Cash Flow</div>
                 </div>
-                <div class="result-item">
-                    <div class="result-amount">$0</div>
+                <div class="result-card">
+                    <div class="result-icon">🎯</div>
+                    <div class="result-value">$0</div>
                     <div class="result-label">High-Interest Debt</div>
                 </div>
-                <div class="result-item">
-                    <div class="result-amount">Growing</div>
+                <div class="result-card">
+                    <div class="result-icon">🏆</div>
+                    <div class="result-value">Growing</div>
                     <div class="result-label">Investment Portfolio</div>
                 </div>
             </div>
-            <p style="margin-top: 1.5rem; font-size: 1.125rem; color: var(--accent-cyan);">All from optimizing what you have + adding strategic layers.</p>
+            
+            <p style="margin-top: 2rem; font-size: 1.125rem; color: var(--accent-cyan);">Total annual impact: <strong style="color: var(--accent-gold);">$50,000 - $130,000+</strong> in saved taxes and new cash flow.</p>
         </div>
     </section>
 
-    <!-- Section 10: CTA -->
-    <section class="section" id="section-9">
-        <div class="section-content cta-section">
-            <h1>Start Stacking Today</h1>
-            <p style="max-width: 500px; margin: 0 auto 1rem;">You don't need to be a genius at one thing. You need to be <span class="highlight">good at the right combination</span> of things.</p>
-            <div class="cta-box">
-                <h3>Ready to build your stack?</h3>
-                <p>Join the program and get the complete framework, step-by-step implementation, and direct coaching.</p>
+    <!-- CTA -->
+    <section class="section" id="s9">
+        <div class="container" style="text-align: center;">
+            <h1 style="font-size: clamp(2.5rem, 6vw, 4rem);">Ready to Build Your Stack?</h1>
+            <p class="lead" style="margin: 0 auto 1.5rem;">You don't need to be extraordinary at one thing. You need to be smart about combining the right things.</p>
+            
+            <div class="cta-wrapper">
+                <h3>Join the Legacy Investing Program</h3>
+                <p>Get the complete Stacking framework, step-by-step implementation guides, tools, templates, and direct coaching to build your personalized wealth system.</p>
                 <a href="/programs" class="btn-primary">
-                    Get Started
+                    Start Building Your Stack
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                     </svg>
@@ -978,57 +1202,36 @@
     </section>
 
     <script>
-        // Progress dots
         const sections = document.querySelectorAll('.section');
         const dots = document.querySelectorAll('.progress-dot');
+        let current = 0;
 
-        function updateProgress() {
-            const scrollPosition = window.scrollY + window.innerHeight / 2;
-            sections.forEach((section, index) => {
-                const sectionTop = section.offsetTop;
-                const sectionBottom = sectionTop + section.offsetHeight;
-                if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+        function updateDots() {
+            const pos = window.scrollY + window.innerHeight / 2;
+            sections.forEach((s, i) => {
+                if (pos >= s.offsetTop && pos < s.offsetTop + s.offsetHeight) {
                     dots.forEach(d => d.classList.remove('active'));
-                    dots[index]?.classList.add('active');
+                    dots[i]?.classList.add('active');
+                    current = i;
                 }
             });
         }
 
-        function scrollToSection(index) {
-            const section = document.getElementById(`section-${index}`);
-            if (section) section.scrollIntoView({ behavior: 'smooth' });
+        function goTo(i) {
+            document.getElementById(`s${i}`).scrollIntoView({ behavior: 'smooth' });
         }
 
-        window.addEventListener('scroll', updateProgress);
-        updateProgress();
+        window.addEventListener('scroll', updateDots);
+        updateDots();
 
-        // Keyboard nav
-        let currentSection = 0;
         document.addEventListener('keydown', (e) => {
             if (e.key === 'ArrowDown' || e.key === 'PageDown') {
                 e.preventDefault();
-                if (currentSection < sections.length - 1) {
-                    currentSection++;
-                    scrollToSection(currentSection);
-                }
+                if (current < sections.length - 1) goTo(current + 1);
             } else if (e.key === 'ArrowUp' || e.key === 'PageUp') {
                 e.preventDefault();
-                if (currentSection > 0) {
-                    currentSection--;
-                    scrollToSection(currentSection);
-                }
+                if (current > 0) goTo(current - 1);
             }
-        });
-
-        window.addEventListener('scroll', () => {
-            const scrollPosition = window.scrollY + window.innerHeight / 2;
-            sections.forEach((section, index) => {
-                const sectionTop = section.offsetTop;
-                const sectionBottom = sectionTop + section.offsetHeight;
-                if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-                    currentSection = index;
-                }
-            });
         });
     </script>
 </body>
