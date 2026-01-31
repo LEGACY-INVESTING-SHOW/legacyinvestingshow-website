@@ -80,12 +80,15 @@
             --text-secondary: #888899;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
             background: var(--bg-dark);
             color: var(--text-primary);
-            overflow: hidden;
-            height: 100vh;
+            line-height: 1.7;
         }
 
         /* Header */
@@ -146,54 +149,35 @@
             font-weight: 600;
         }
 
-        /* Slide Container */
-        .slide-container {
-            position: relative;
-            width: 100%;
-            height: 100vh;
+        /* Sections */
+        .section {
+            min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding-top: 60px;
+            padding: 100px 30px 60px;
+            position: relative;
         }
 
-        .slide {
-            position: absolute;
-            width: 90%;
-            max-width: 1000px;
-            height: calc(80vh - 60px);
-            background: linear-gradient(145deg, var(--bg-card) 0%, var(--bg-elevated) 100%);
-            border-radius: 24px;
-            padding: 50px 60px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            opacity: 0;
-            transform: translateX(100px) scale(0.95);
-            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-            pointer-events: none;
-            box-shadow: 
-                0 25px 50px -12px rgba(0,0,0,0.5),
-                0 0 0 1px rgba(255,255,255,0.05);
+        .section:nth-child(odd) {
+            background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-card) 100%);
         }
 
-        .slide.active {
-            opacity: 1;
-            transform: translateX(0) scale(1);
-            pointer-events: all;
+        .section:nth-child(even) {
+            background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-elevated) 100%);
         }
 
-        .slide.prev {
-            transform: translateX(-100px) scale(0.95);
-            opacity: 0;
+        .section-content {
+            max-width: 900px;
+            width: 100%;
         }
 
         /* Typography */
         h1 {
-            font-size: clamp(2.2rem, 4vw, 3.5rem);
+            font-size: clamp(2.5rem, 5vw, 4rem);
             font-weight: 800;
             line-height: 1.1;
-            margin-bottom: 24px;
+            margin-bottom: 30px;
             background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-gold) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -201,17 +185,16 @@
         }
 
         h2 {
-            font-size: clamp(1.6rem, 3vw, 2.4rem);
+            font-size: clamp(1.8rem, 3.5vw, 2.8rem);
             font-weight: 700;
-            margin-bottom: 20px;
+            margin-bottom: 24px;
             color: var(--accent-cyan);
         }
 
-        p, li {
-            font-size: clamp(1rem, 1.8vw, 1.25rem);
-            line-height: 1.7;
+        p {
+            font-size: clamp(1.1rem, 2vw, 1.3rem);
             color: var(--text-secondary);
-            margin-bottom: 14px;
+            margin-bottom: 20px;
         }
 
         .highlight {
@@ -219,36 +202,47 @@
             font-weight: 600;
         }
 
-        /* Layouts */
+        /* Centered sections */
         .centered {
             text-align: center;
         }
 
         .quote {
-            font-size: clamp(1.1rem, 2vw, 1.5rem);
+            font-size: clamp(1.2rem, 2.5vw, 1.6rem);
             font-style: italic;
             border-left: 4px solid var(--accent-gold);
-            padding-left: 24px;
-            margin: 24px 0;
+            padding-left: 30px;
+            margin: 30px 0;
             color: var(--text-primary);
+            text-align: left;
         }
 
+        .centered .quote {
+            text-align: center;
+            border-left: none;
+            border-top: 2px solid var(--accent-gold);
+            padding: 30px 0 0;
+            max-width: 700px;
+            margin: 30px auto;
+        }
+
+        /* Stack visual */
         .stack-visual {
             display: flex;
             flex-direction: column;
-            gap: 10px;
-            margin: 24px 0;
+            gap: 12px;
+            margin: 40px 0;
         }
 
         .stack-item {
-            padding: 16px 24px;
-            border-radius: 10px;
+            padding: 24px 30px;
+            border-radius: 12px;
             font-weight: 600;
-            font-size: 1rem;
+            font-size: 1.1rem;
             display: flex;
             align-items: center;
-            gap: 12px;
-            animation: slideInUp 0.5s ease forwards;
+            gap: 15px;
+            animation: slideInUp 0.6s ease forwards;
             opacity: 0;
         }
 
@@ -258,20 +252,21 @@
         .stack-item:nth-child(4) { animation-delay: 0.4s; background: linear-gradient(90deg, #5a5a6a 0%, var(--accent-cyan) 100%); color: var(--bg-dark); }
 
         @keyframes slideInUp {
-            from { opacity: 0; transform: translateY(20px); }
+            from { opacity: 0; transform: translateY(30px); }
             to { opacity: 1; transform: translateY(0); }
         }
 
+        /* Comparison */
         .comparison {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 24px;
-            margin: 24px 0;
+            gap: 30px;
+            margin: 40px 0;
         }
 
         .comparison-box {
-            padding: 24px;
-            border-radius: 14px;
+            padding: 35px;
+            border-radius: 16px;
             text-align: center;
         }
 
@@ -286,104 +281,57 @@
         }
 
         .comparison-box h3 {
-            font-size: 1.1rem;
-            margin-bottom: 12px;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
         }
 
         .comparison-box.old h3 { color: #ff6464; }
         .comparison-box.new h3 { color: var(--accent-cyan); }
 
         .comparison-box p {
-            font-size: 0.95rem;
-            margin-bottom: 8px;
+            font-size: 1.05rem;
+            margin-bottom: 10px;
         }
 
+        /* Two paths */
         .two-paths {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin-top: 24px;
+            gap: 25px;
+            margin-top: 30px;
         }
 
         .path-card {
-            padding: 24px;
-            border-radius: 14px;
+            padding: 30px;
+            border-radius: 16px;
             background: rgba(255,255,255,0.03);
             border: 1px solid rgba(255,255,255,0.1);
         }
 
         .path-card h4 {
             color: var(--accent-gold);
-            font-size: 1.1rem;
-            margin-bottom: 12px;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
         }
 
         .path-card p {
-            font-size: 0.95rem;
-            margin-bottom: 6px;
-        }
-
-        /* Navigation */
-        .nav-controls {
-            position: fixed;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 15px;
-            align-items: center;
-            z-index: 100;
-        }
-
-        .nav-btn {
-            background: rgba(255,255,255,0.1);
-            border: none;
-            color: var(--text-primary);
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 1.1rem;
-            transition: all 0.3s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .nav-btn:hover {
-            background: var(--accent-cyan);
-            color: var(--bg-dark);
-            transform: scale(1.1);
-        }
-
-        .slide-counter {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            min-width: 50px;
-            text-align: center;
-        }
-
-        /* Progress bar */
-        .progress-bar {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            height: 3px;
-            background: linear-gradient(90deg, var(--accent-gold), var(--accent-cyan));
-            transition: width 0.3s;
-            z-index: 100;
+            font-size: 1.05rem;
+            margin-bottom: 8px;
         }
 
         /* Bullet points */
         ul {
             list-style: none;
             padding: 0;
+            margin: 20px 0;
         }
 
         li {
             position: relative;
-            padding-left: 28px;
-            margin-bottom: 10px;
+            padding-left: 35px;
+            margin-bottom: 15px;
+            font-size: clamp(1.1rem, 2vw, 1.3rem);
+            color: var(--text-secondary);
         }
 
         li::before {
@@ -392,17 +340,27 @@
             left: 0;
             color: var(--accent-gold);
             font-weight: bold;
+            font-size: 1.2rem;
         }
 
-        /* CTA Button */
+        /* CTA Section */
+        .cta-box {
+            padding: 40px;
+            background: rgba(93, 211, 197, 0.1);
+            border-radius: 20px;
+            border: 1px solid var(--accent-cyan);
+            margin-top: 40px;
+        }
+
         .cta-button {
             display: inline-block;
             background: var(--accent-emerald);
             color: white;
-            padding: 14px 28px;
-            border-radius: 8px;
+            padding: 16px 32px;
+            border-radius: 10px;
             text-decoration: none;
             font-weight: 600;
+            font-size: 1.1rem;
             margin-top: 20px;
             transition: all 0.3s;
         }
@@ -410,6 +368,60 @@
         .cta-button:hover {
             background: #047857;
             transform: translateY(-2px);
+        }
+
+        /* Scroll indicator */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            animation: bounce 2s infinite;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .scroll-indicator svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+        }
+
+        /* Progress dots */
+        .progress-dots {
+            position: fixed;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            z-index: 100;
+        }
+
+        .progress-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.2);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .progress-dot.active {
+            background: var(--accent-cyan);
+            transform: scale(1.3);
         }
 
         /* Responsive */
@@ -423,13 +435,18 @@
             .nav-links a:not(.nav-cta) {
                 display: none;
             }
-            .slide { 
-                padding: 30px 25px; 
-                width: 95%;
+            .section {
+                padding: 90px 20px 40px;
             }
             .comparison, .two-paths { 
                 grid-template-columns: 1fr; 
-                gap: 15px;
+                gap: 20px;
+            }
+            .progress-dots {
+                display: none;
+            }
+            .quote {
+                padding-left: 20px;
             }
         }
     </style>
@@ -450,47 +467,70 @@
         </nav>
     </header>
 
-    <!-- Slide Deck -->
-    <div class="slide-container">
-        <!-- Slide 1: Title -->
-        <div class="slide active" data-slide="1">
-            <div class="centered">
-                <h1>The Stacking Principle</h1>
-                <p class="quote">Why chasing 1% in one thing is the slow path.<br>The fast path? Become top 20% in 10 things.</p>
-                <p style="margin-top: 30px; font-size: 1rem; color: var(--text-secondary);">A framework for building wealth through complementary strategies</p>
-            </div>
-        </div>
+    <!-- Progress Dots -->
+    <div class="progress-dots">
+        <div class="progress-dot active" onclick="scrollToSection(0)"></div>
+        <div class="progress-dot" onclick="scrollToSection(1)"></div>
+        <div class="progress-dot" onclick="scrollToSection(2)"></div>
+        <div class="progress-dot" onclick="scrollToSection(3)"></div>
+        <div class="progress-dot" onclick="scrollToSection(4)"></div>
+        <div class="progress-dot" onclick="scrollToSection(5)"></div>
+        <div class="progress-dot" onclick="scrollToSection(6)"></div>
+        <div class="progress-dot" onclick="scrollToSection(7)"></div>
+        <div class="progress-dot" onclick="scrollToSection(8)"></div>
+        <div class="progress-dot" onclick="scrollToSection(9)"></div>
+    </div>
 
-        <!-- Slide 2: The Scott Adams Insight -->
-        <div class="slide" data-slide="2">
+    <!-- Section 1: Title -->
+    <section class="section" id="section-0">
+        <div class="section-content centered">
+            <h1>The Stacking Principle</h1>
+            <p class="quote">Why chasing 1% in one thing is the slow path.<br>The fast path? Become top 20% in 10 things.</p>
+            <p style="margin-top: 30px; color: var(--text-secondary);">A framework for building wealth through complementary strategies</p>
+            <a href="#section-1" class="scroll-indicator">
+                <span>Scroll</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M19 12l-7 7-7-7"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Section 2: The Scott Adams Insight -->
+    <section class="section" id="section-1">
+        <div class="section-content">
             <h2>The Skill Stack</h2>
             <p class="quote">"The last 20% of mastery takes 80% of the effort.<br>But the first 80%? That's where the juice is."</p>
             <p>Scott Adams realized that being in the <span class="highlight">top 1% at one thing</span> requires extraordinary talent and years of grinding.</p>
             <p>But being in the <span class="highlight">top 20% at multiple things</span>? That's achievable. And when you combine those skills, you become irreplaceable.</p>
         </div>
+    </section>
 
-        <!-- Slide 3: The Problem with Finance Advice -->
-        <div class="slide" data-slide="3">
+    <!-- Section 3: The $5 Coffee Trap -->
+    <section class="section" id="section-2">
+        <div class="section-content">
             <h2>The $5 Coffee Trap</h2>
             <div class="comparison">
                 <div class="comparison-box old">
                     <h3>Old Advice</h3>
                     <p>"Skip the daily latte"</p>
                     <p>Save $5/day = $1,825/year</p>
-                    <p style="font-size: 0.85rem; margin-top: 12px; color: var(--text-secondary);">Painful. Unsustainable. Small results.</p>
+                    <p style="font-size: 0.95rem; margin-top: 15px; color: var(--text-secondary);">Painful. Unsustainable. Small results.</p>
                 </div>
                 <div class="comparison-box new">
                     <h3>Stacking</h3>
                     <p>Optimize taxes, debt, investments</p>
                     <p>Save $50K-$200K+/year</p>
-                    <p style="font-size: 0.85rem; margin-top: 12px; color: var(--text-secondary);">Efficient. Scalable. Life-changing.</p>
+                    <p style="font-size: 0.95rem; margin-top: 15px; color: var(--text-secondary);">Efficient. Scalable. Life-changing.</p>
                 </div>
             </div>
-            <p style="text-align: center; margin-top: 16px; font-size: 1rem;">The numbers sound too big because <span class="highlight">traditional advice keeps you small</span>.</p>
+            <p style="text-align: center; margin-top: 20px;">The numbers sound too big because <span class="highlight">traditional advice keeps you small</span>.</p>
         </div>
+    </section>
 
-        <!-- Slide 4: What is Stacking? -->
-        <div class="slide" data-slide="4">
+    <!-- Section 4: What is Stacking? -->
+    <section class="section" id="section-3">
+        <div class="section-content">
             <h2>What is Financial Stacking?</h2>
             <p>Instead of one strategy, you layer <span class="highlight">complementary strategies</span> on top of each other.</p>
             <p>Each layer doesn't just add — it <span class="highlight">multiplies</span> the impact of the others.</p>
@@ -501,9 +541,11 @@
                 <div class="stack-item">🏠 Generate tax-free cash flow (e.g., Airbnb)</div>
             </div>
         </div>
+    </section>
 
-        <!-- Slide 5: The First Stack -->
-        <div class="slide" data-slide="5">
+    <!-- Section 5: Step 1 -->
+    <section class="section" id="section-4">
+        <div class="section-content">
             <h2>Step 1: Optimize What You Have</h2>
             <p>Before chasing new income, <span class="highlight">maximize what you're already earning</span>.</p>
             <ul>
@@ -512,158 +554,149 @@
                 <li>Fix the wellness/benefits structure</li>
                 <li>Ensure you're not leaking money on inefficiencies</li>
             </ul>
-            <p style="margin-top: 24px; font-size: 1.1rem; color: var(--accent-cyan);">This alone can save or create tens of thousands per year.</p>
+            <p style="margin-top: 30px; font-size: 1.2rem; color: var(--accent-cyan);">This alone can save or create tens of thousands per year.</p>
         </div>
+    </section>
 
-        <!-- Slide 6: The Airbnb Layer -->
-        <div class="slide" data-slide="6">
+    <!-- Section 6: Step 2 -->
+    <section class="section" id="section-5">
+        <div class="section-content">
             <h2>Step 2: The Cash Flow Layer</h2>
             <p>Once your foundation is optimized, add <span class="highlight">Airbnb</span> as a cash flow engine.</p>
             <p>Two goals working together:</p>
             <ul>
-                <li><strong>More income</strong> — Monthly cash flow from short-term rentals</li>
-                <li><strong>Tax advantages</strong> — Real estate's biggest loophole: depreciation, deductions, 1031 exchanges</li>
+                <li><strong style="color: var(--text-primary);">More income</strong> — Monthly cash flow from short-term rentals</li>
+                <li><strong style="color: var(--text-primary);">Tax advantages</strong> — Real estate's biggest loophole: depreciation, deductions, 1031 exchanges</li>
             </ul>
-            <p style="margin-top: 16px;">This isn't just extra money — it's <span class="highlight">strategically structured</span> money.</p>
+            <p style="margin-top: 20px;">This isn't just extra money — it's <span class="highlight">strategically structured</span> money.</p>
         </div>
+    </section>
 
-        <!-- Slide 7: Two Paths -->
-        <div class="slide" data-slide="7">
+    <!-- Section 7: Two Paths -->
+    <section class="section" id="section-6">
+        <div class="section-content">
             <h2>Two Paths, Same Destination</h2>
             <div class="two-paths">
                 <div class="path-card">
                     <h4>💡 Lower Starting Capital</h4>
                     <p>Rental arbitrage strategy</p>
                     <p>Lower upfront investment</p>
-                    <p>Focus on <strong>cash flow over tax savings</strong></p>
+                    <p>Focus on <strong style="color: var(--text-primary);">cash flow over tax savings</strong></p>
                     <p>Build up capital for future purchases</p>
                 </div>
                 <div class="path-card">
                     <h4>🏘️ More Capital Available</h4>
                     <p>Property purchase strategy</p>
                     <p>Higher upfront investment</p>
-                    <p><strong>Massive tax deductions</strong> from depreciation</p>
+                    <p><strong style="color: var(--text-primary);">Massive tax deductions</strong> from depreciation</p>
                     <p>Build long-term equity + wealth</p>
                 </div>
             </div>
-            <p style="text-align: center; margin-top: 24px; font-size: 1rem;">Both paths lead to: <span class="highlight">Tax savings → Cash flow → Equity → Long-term wealth</span></p>
+            <p style="text-align: center; margin-top: 30px;">Both paths lead to: <span class="highlight">Tax savings → Cash flow → Equity → Long-term wealth</span></p>
         </div>
+    </section>
 
-        <!-- Slide 8: The Multiplication Effect -->
-        <div class="slide" data-slide="8">
+    <!-- Section 8: Multiplication Effect -->
+    <section class="section" id="section-7">
+        <div class="section-content centered">
             <h2>The Multiplication Effect</h2>
             <p>Each layer doesn't just add value — it <span class="highlight">unlocks</span> the next.</p>
-            <div style="text-align: center; margin: 32px 0;">
-                <p style="font-size: 1.3rem; color: var(--text-primary);">Tax savings → Debt payoff → Investment capital → Cash flow → More investment → More tax savings...</p>
+            <div style="margin: 40px 0; padding: 30px; background: rgba(255,255,255,0.03); border-radius: 16px;">
+                <p style="font-size: 1.4rem; color: var(--text-primary); margin: 0;">Tax savings → Debt payoff → Investment capital → Cash flow → More investment → More tax savings...</p>
             </div>
-            <p class="quote" style="text-align: center; border: none; padding: 0;">"You're not working harder.<br>You're just stacking smarter."</p>
+            <p class="quote" style="border: none; padding: 0;">"You're not working harder.<br>You're just stacking smarter."</p>
         </div>
+    </section>
 
-        <!-- Slide 9: The Result -->
-        <div class="slide" data-slide="9">
-            <div class="centered">
-                <h2>What This Looks Like</h2>
-                <p style="margin-bottom: 24px;">A self-reinforcing system that grows itself:</p>
-                <div style="display: inline-block; text-align: left;">
-                    <p>✅ <span class="highlight">$30K-80K</span> saved in taxes annually</p>
-                    <p>✅ <span class="highlight">$20K-50K</span> in cash flow from Airbnb</p>
-                    <p>✅ <span class="highlight">$0</span> in high-interest debt</p>
-                    <p>✅ <span class="highlight">Growing</span> investment portfolio</p>
-                    <p>✅ <span class="highlight">Compounding</span> tax-free returns</p>
-                </div>
-                <p style="margin-top: 32px; font-size: 1.1rem; color: var(--accent-cyan);">All from optimizing what you have + adding strategic layers.</p>
+    <!-- Section 9: Results -->
+    <section class="section" id="section-8">
+        <div class="section-content centered">
+            <h2>What This Looks Like</h2>
+            <p style="margin-bottom: 30px;">A self-reinforcing system that grows itself:</p>
+            <div style="display: inline-block; text-align: left; background: rgba(255,255,255,0.03); padding: 40px 50px; border-radius: 16px;">
+                <p style="margin-bottom: 15px;">✅ <span class="highlight">$30K-80K</span> saved in taxes annually</p>
+                <p style="margin-bottom: 15px;">✅ <span class="highlight">$20K-50K</span> in cash flow from Airbnb</p>
+                <p style="margin-bottom: 15px;">✅ <span class="highlight">$0</span> in high-interest debt</p>
+                <p style="margin-bottom: 15px;">✅ <span class="highlight">Growing</span> investment portfolio</p>
+                <p style="margin-bottom: 0;">✅ <span class="highlight">Compounding</span> tax-free returns</p>
+            </div>
+            <p style="margin-top: 30px; font-size: 1.2rem; color: var(--accent-cyan);">All from optimizing what you have + adding strategic layers.</p>
+        </div>
+    </section>
+
+    <!-- Section 10: CTA -->
+    <section class="section" id="section-9">
+        <div class="section-content centered">
+            <h1>Start Stacking</h1>
+            <p style="font-size: 1.3rem;">You don't need to be a genius at one thing.</p>
+            <p style="font-size: 1.3rem;">You need to be <span class="highlight">good at the right combination</span> of things.</p>
+            <div class="cta-box">
+                <p style="font-size: 1.2rem; color: var(--text-primary); margin-bottom: 10px;">Ready to build your stack?</p>
+                <p style="margin-bottom: 20px;">Join the program and get the full framework</p>
+                <a href="/programs" class="cta-button">Get Started →</a>
             </div>
         </div>
-
-        <!-- Slide 10: CTA -->
-        <div class="slide" data-slide="10">
-            <div class="centered">
-                <h1>Start Stacking</h1>
-                <p style="font-size: 1.2rem; margin-bottom: 24px;">You don't need to be a genius at one thing.</p>
-                <p style="font-size: 1.2rem; margin-bottom: 24px;">You need to be <span class="highlight">good at the right combination</span> of things.</p>
-                <div style="margin-top: 40px; padding: 24px; background: rgba(93, 211, 197, 0.1); border-radius: 16px; border: 1px solid var(--accent-cyan);">
-                    <p style="font-size: 1.1rem; color: var(--text-primary); margin: 0;">Ready to build your stack?</p>
-                    <p style="font-size: 0.95rem; margin: 8px 0 16px 0;">Join the program and get the full framework</p>
-                    <a href="/programs" class="cta-button">Get Started →</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Navigation -->
-    <div class="nav-controls">
-        <button class="nav-btn" onclick="prevSlide()">◀</button>
-        <span class="slide-counter"><span id="current">1</span> / <span id="total">10</span></span>
-        <button class="nav-btn" onclick="nextSlide()">▶</button>
-    </div>
-
-    <!-- Progress bar -->
-    <div class="progress-bar" id="progress"></div>
+    </section>
 
     <script>
-        let currentSlide = 1;
-        const totalSlides = 10;
+        // Progress dots update on scroll
+        const sections = document.querySelectorAll('.section');
+        const dots = document.querySelectorAll('.progress-dot');
 
-        function showSlide(n) {
-            const slides = document.querySelectorAll('.slide');
+        function updateProgress() {
+            const scrollPosition = window.scrollY + window.innerHeight / 2;
             
-            if (n > totalSlides) currentSlide = 1;
-            if (n < 1) currentSlide = totalSlides;
-
-            slides.forEach((slide, index) => {
-                slide.classList.remove('active', 'prev');
-                if (index + 1 === currentSlide) {
-                    slide.classList.add('active');
-                } else if (index + 1 < currentSlide) {
-                    slide.classList.add('prev');
+            sections.forEach((section, index) => {
+                const sectionTop = section.offsetTop;
+                const sectionBottom = sectionTop + section.offsetHeight;
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                    dots.forEach(dot => dot.classList.remove('active'));
+                    dots[index].classList.add('active');
                 }
             });
-
-            document.getElementById('current').textContent = currentSlide;
-            document.getElementById('progress').style.width = (currentSlide / totalSlides * 100) + '%';
         }
 
-        function nextSlide() {
-            currentSlide++;
-            showSlide(currentSlide);
+        function scrollToSection(index) {
+            const section = document.getElementById(`section-${index}`);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
         }
 
-        function prevSlide() {
-            currentSlide--;
-            showSlide(currentSlide);
-        }
+        window.addEventListener('scroll', updateProgress);
+        updateProgress();
 
         // Keyboard navigation
+        let currentSection = 0;
+        
         document.addEventListener('keydown', (e) => {
-            if (e.key === 'ArrowRight' || e.key === ' ') {
+            if (e.key === 'ArrowDown' || e.key === 'PageDown') {
                 e.preventDefault();
-                nextSlide();
-            } else if (e.key === 'ArrowLeft') {
+                if (currentSection < sections.length - 1) {
+                    currentSection++;
+                    scrollToSection(currentSection);
+                }
+            } else if (e.key === 'ArrowUp' || e.key === 'PageUp') {
                 e.preventDefault();
-                prevSlide();
+                if (currentSection > 0) {
+                    currentSection--;
+                    scrollToSection(currentSection);
+                }
             }
         });
 
-        // Touch/swipe support
-        let touchStartX = 0;
-        let touchEndX = 0;
-
-        document.addEventListener('touchstart', (e) => {
-            touchStartX = e.changedTouches[0].screenX;
+        // Track current section for keyboard nav
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY + window.innerHeight / 2;
+            sections.forEach((section, index) => {
+                const sectionTop = section.offsetTop;
+                const sectionBottom = sectionTop + section.offsetHeight;
+                if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                    currentSection = index;
+                }
+            });
         });
-
-        document.addEventListener('touchend', (e) => {
-            touchEndX = e.changedTouches[0].screenX;
-            handleSwipe();
-        });
-
-        function handleSwipe() {
-            if (touchEndX < touchStartX - 50) nextSlide();
-            if (touchEndX > touchStartX + 50) prevSlide();
-        }
-
-        // Initialize
-        showSlide(currentSlide);
     </script>
 </body>
 </html>
