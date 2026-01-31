@@ -44,7 +44,7 @@ youtubeId: "gwXTDLGzlAE"
 # Multiple Schema Types for Rich Results
 schema:
   - type: Article
-    headline: "How An IT Worker"
+    headline: "How an IT Worker Built a $3,500/Month Airbnb with 75% Occupancy"
     datePublished: "2026-03-06T00:00:00Z"
     dateModified: "2026-01-23T00:00:00Z"
   - type: VideoObject
