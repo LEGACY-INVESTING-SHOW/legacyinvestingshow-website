@@ -176,36 +176,5 @@
       ]
     }
   ],
-  "redirects": [
-    {
-      "source": "/index.html",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/about.html",
-      "destination": "/about",
-      "permanent": true
-    },
-    {
-      "source": "/programs.html",
-      "destination": "/programs",
-      "permanent": true
-    },
-    {
-      "source": "/success-stories.html",
-      "destination": "/success-stories",
-      "permanent": true
-    },
-    {
-      "source": "/blog/index.html",
-      "destination": "/blog",
-      "permanent": true
-    },
-    {
-      "source": "/stacking-principle.html",
-      "destination": "/stacking-principle",
-      "permanent": true
-    }
-  ]
+  "redirects": []
 }
