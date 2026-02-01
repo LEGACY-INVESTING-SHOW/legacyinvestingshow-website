@@ -531,3 +531,128 @@
     <lastmod>2026-02-01</lastmod>
   </url>
 </urlset>
+
+  <!-- Programmatic SEO: City Pages -->
+  <url>
+    <loc>https://legacyinvestingshow-website.vercel.app/programmatic-pages/cities/austin-tx.html</loc>
+    <lastmod>2026-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow-website.vercel.app/programmatic-pages/cities/nashville-tn.html</loc>
+    <lastmod>2026-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow-website.vercel.app/programmatic-pages/cities/miami-fl.html</loc>
+    <lastmod>2026-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow-website.vercel.app/programmatic-pages/cities/phoenix-az.html</loc>
+    <lastmod>2026-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow-website.vercel.app/programmatic-pages/cities/denver-co.html</loc>
+    <lastmod>2026-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow-website.vercel.app/programmatic-pages/cities/atlanta-ga.html</loc>
+    <lastmod>2026-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow-website.vercel.app/programmatic-pages/cities/san-diego-ca.html</loc>
+    <lastmod>2026-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow-website.vercel.app/programmatic-pages/cities/tampa-fl.html</loc>
+    <lastmod>2026-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow-website.vercel.app/programmatic-pages/cities/charlotte-nc.html</loc>
+    <lastmod>2026-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow-website.vercel.app/programmatic-pages/cities/las-vegas-nv.html</loc>
+    <lastmod>2026-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow-website.vercel.app/programmatic-pages/cities/orlando-fl.html</loc>
+    <lastmod>2026-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow-website.vercel.app/programmatic-pages/cities/dallas-tx.html</loc>
+    <lastmod>2026-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow-website.vercel.app/programmatic-pages/cities/houston-tx.html</loc>
+    <lastmod>2026-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow-website.vercel.app/programmatic-pages/cities/seattle-wa.html</loc>
+    <lastmod>2026-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow-website.vercel.app/programmatic-pages/cities/portland-or.html</loc>
+    <lastmod>2026-02-01</lastmod>
+  </url>
+
+  <!-- Programmatic SEO: Comparison Pages -->
+  <url>
+    <loc>https://legacyinvestingshow-website.vercel.app/programmatic-pages/comparisons/cost-segregation-vs-bonus-depreciation.html</loc>
+    <lastmod>2026-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow-website.vercel.app/programmatic-pages/comparisons/1031-exchange-vs-opportunity-zones.html</loc>
+    <lastmod>2026-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow-website.vercel.app/programmatic-pages/comparisons/sep-ira-vs-solo-401k.html</loc>
+    <lastmod>2026-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow-website.vercel.app/programmatic-pages/comparisons/traditional-vs-roth-401k.html</loc>
+    <lastmod>2026-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow-website.vercel.app/programmatic-pages/comparisons/real-estate-professional-status-vs-short-term-rental-loophole.html</loc>
+    <lastmod>2026-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow-website.vercel.app/programmatic-pages/comparisons/s-corp-strategy-vs-qualified-business-income-deduction.html</loc>
+    <lastmod>2026-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow-website.vercel.app/programmatic-pages/comparisons/donor-advised-fund-vs-charitable-remainder-trust.html</loc>
+    <lastmod>2026-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow-website.vercel.app/programmatic-pages/comparisons/hsa-strategy-vs-health-savings-account-strategy.html</loc>
+    <lastmod>2026-02-01</lastmod>
+  </url>
+
+  <!-- Programmatic SEO: Persona Pages -->
+  <url>
+    <loc>https://legacyinvestingshow-website.vercel.app/programmatic-pages/personas/real-estate-investors.html</loc>
+    <lastmod>2026-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow-website.vercel.app/programmatic-pages/personas/small-business-owners.html</loc>
+    <lastmod>2026-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow-website.vercel.app/programmatic-pages/personas/high-income-earners.html</loc>
+    <lastmod>2026-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow-website.vercel.app/programmatic-pages/personas/self-employed.html</loc>
+    <lastmod>2026-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow-website.vercel.app/programmatic-pages/personas/retirement-savers.html</loc>
+    <lastmod>2026-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://legacyinvestingshow-website.vercel.app/programmatic-pages/personas/airbnb-hosts.html</loc>
+    <lastmod>2026-02-01</lastmod>
+  </url>
+
+
+</urlset>
