@@ -1923,6 +1923,85 @@
 }
 
 /* =====================================
+   TABLE STYLES - Premium Editorial
+   ===================================== */
+.prose-minimal table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 32px 0;
+  font-size: 0.9375rem;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(15, 23, 42, 0.06);
+}
+
+.prose-minimal thead {
+  background: var(--navy);
+}
+
+.prose-minimal th {
+  padding: 16px 20px;
+  text-align: left;
+  font-weight: 600;
+  color: var(--white);
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-bottom: none;
+}
+
+.prose-minimal td {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-secondary);
+  vertical-align: top;
+}
+
+.prose-minimal tbody tr {
+  background: var(--white);
+  transition: background 0.2s ease;
+}
+
+.prose-minimal tbody tr:nth-child(even) {
+  background: var(--cream);
+}
+
+.prose-minimal tbody tr:hover {
+  background: var(--gold-muted);
+}
+
+.prose-minimal tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Table captions */
+.prose-minimal table caption {
+  caption-side: top;
+  text-align: left;
+  padding: 12px 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* Responsive tables */
+@media (max-width: 768px) {
+  .prose-minimal table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .prose-minimal th,
+  .prose-minimal td {
+    padding: 12px 16px;
+    font-size: 0.875rem;
+  }
+}
+
+/* =====================================
    PRINT STYLES
    ===================================== */
 @media print {
