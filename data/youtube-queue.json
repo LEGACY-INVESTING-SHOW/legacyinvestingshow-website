@@ -1,0 +1,18 @@
+{
+  "playlists": {
+    "successStories": "PLDe1awSN88zj_V-Y-cUuKDTw6N9KWLk7C",
+    "mainChannel": "@LegacyInvestingShow"
+  },
+  "videos": [
+    {
+      "id": "",
+      "url": "",
+      "title": "",
+      "studentName": "",
+      "status": "pending",
+      "notes": "Add videos from playlist here"
+    }
+  ],
+  "instructions": "To populate this file: 1) Go to the Success Stories playlist, 2) Copy video ID, title, and student name for each testimonial, 3) Add to the videos array above",
+  "statusOptions": ["pending", "processing", "review", "completed", "skipped"]
+}

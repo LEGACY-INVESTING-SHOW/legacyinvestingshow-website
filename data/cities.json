@@ -1,0 +1,124 @@
+{
+  "cities": [
+    {
+      "city": "Austin",
+      "state": "TX",
+      "region": "Southwest",
+      "priority": 1,
+      "status": "pending",
+      "notes": "Strong tech economy, major events (SXSW, ACL)"
+    },
+    {
+      "city": "Nashville",
+      "state": "TN",
+      "region": "Southeast",
+      "priority": 2,
+      "status": "pending",
+      "notes": "Music tourism, bachelorette parties, growing market"
+    },
+    {
+      "city": "Miami",
+      "state": "FL",
+      "region": "Southeast",
+      "priority": 3,
+      "status": "pending",
+      "notes": "Year-round tourism, beaches, nightlife"
+    },
+    {
+      "city": "Phoenix",
+      "state": "AZ",
+      "region": "Southwest",
+      "priority": 4,
+      "status": "pending",
+      "notes": "Snowbird destination, spring training, events"
+    },
+    {
+      "city": "Denver",
+      "state": "CO",
+      "region": "Mountain",
+      "priority": 5,
+      "status": "pending",
+      "notes": "Ski season, outdoor activities, convention tourism"
+    },
+    {
+      "city": "Atlanta",
+      "state": "GA",
+      "region": "Southeast",
+      "priority": 6,
+      "status": "pending",
+      "notes": "Business travel, airport hub, convention center"
+    },
+    {
+      "city": "San Diego",
+      "state": "CA",
+      "region": "West",
+      "priority": 7,
+      "status": "pending",
+      "notes": "Beach tourism, military, Comic-Con"
+    },
+    {
+      "city": "Tampa",
+      "state": "FL",
+      "region": "Southeast",
+      "priority": 8,
+      "status": "pending",
+      "notes": "Beaches, cruise port, affordable entry"
+    },
+    {
+      "city": "Charlotte",
+      "state": "NC",
+      "region": "Southeast",
+      "priority": 9,
+      "status": "pending",
+      "notes": "Banking hub, NASCAR, growing tech scene"
+    },
+    {
+      "city": "Las Vegas",
+      "state": "NV",
+      "region": "West",
+      "priority": 10,
+      "status": "pending",
+      "notes": "24/7 tourism, conventions, events (check regulations)"
+    },
+    {
+      "city": "Orlando",
+      "state": "FL",
+      "region": "Southeast",
+      "priority": 11,
+      "status": "pending",
+      "notes": "Theme parks, family travel, year-round demand"
+    },
+    {
+      "city": "Dallas",
+      "state": "TX",
+      "region": "Southwest",
+      "priority": 12,
+      "status": "pending",
+      "notes": "Business travel, conventions, sports"
+    },
+    {
+      "city": "Houston",
+      "state": "TX",
+      "region": "Southwest",
+      "priority": 13,
+      "status": "pending",
+      "notes": "Medical tourism, energy sector, NASA"
+    },
+    {
+      "city": "Seattle",
+      "state": "WA",
+      "region": "Pacific Northwest",
+      "priority": 14,
+      "status": "pending",
+      "notes": "Tech hub, cruise ships, outdoor tourism"
+    },
+    {
+      "city": "Portland",
+      "state": "OR",
+      "region": "Pacific Northwest",
+      "priority": 15,
+      "status": "pending",
+      "notes": "Foodie tourism, outdoor activities, events"
+    }
+  ]
+}

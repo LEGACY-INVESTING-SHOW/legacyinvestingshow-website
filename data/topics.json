@@ -1,0 +1,148 @@
+{
+  "guides": [
+    {
+      "topic": "Complete Guide to Airbnb Arbitrage in 2026",
+      "keywords": ["airbnb arbitrage", "airbnb arbitrage guide", "how to start airbnb arbitrage"],
+      "type": "pillar",
+      "priority": 1,
+      "status": "pending"
+    },
+    {
+      "topic": "How to Find Landlords Who Allow Airbnb Arbitrage",
+      "keywords": ["airbnb friendly landlords", "convince landlord airbnb", "landlord airbnb agreement"],
+      "type": "cluster",
+      "priority": 2,
+      "status": "pending"
+    },
+    {
+      "topic": "Airbnb Arbitrage Startup Costs: Complete 2026 Breakdown",
+      "keywords": ["airbnb arbitrage costs", "how much to start airbnb", "airbnb startup costs"],
+      "type": "cluster",
+      "priority": 3,
+      "status": "pending"
+    },
+    {
+      "topic": "How to Furnish an Airbnb on a Budget",
+      "keywords": ["airbnb furnishing", "furnish rental property cheap", "airbnb furniture budget"],
+      "type": "cluster",
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "topic": "Airbnb Pricing Strategy: Maximize Your Revenue",
+      "keywords": ["airbnb pricing", "dynamic pricing airbnb", "airbnb revenue optimization"],
+      "type": "cluster",
+      "priority": 5,
+      "status": "pending"
+    },
+    {
+      "topic": "How to Automate Your Airbnb Business",
+      "keywords": ["airbnb automation", "automate short term rental", "airbnb tools automation"],
+      "type": "cluster",
+      "priority": 6,
+      "status": "pending"
+    },
+    {
+      "topic": "Legal Considerations for Airbnb Arbitrage",
+      "keywords": ["airbnb arbitrage legal", "is airbnb arbitrage legal", "short term rental laws"],
+      "type": "cluster",
+      "priority": 7,
+      "status": "pending"
+    },
+    {
+      "topic": "How to Scale from 1 to 10 Airbnb Properties",
+      "keywords": ["scale airbnb business", "multiple airbnb properties", "grow airbnb portfolio"],
+      "type": "cluster",
+      "priority": 8,
+      "status": "pending"
+    },
+    {
+      "topic": "Tax Strategies for Airbnb Arbitrage Investors",
+      "keywords": ["airbnb taxes", "short term rental tax deductions", "airbnb arbitrage taxes"],
+      "type": "cluster",
+      "priority": 9,
+      "status": "pending"
+    },
+    {
+      "topic": "Airbnb Guest Communication: Templates and Tips",
+      "keywords": ["airbnb messages", "guest communication templates", "airbnb host tips"],
+      "type": "cluster",
+      "priority": 10,
+      "status": "pending"
+    }
+  ],
+  "comparisons": [
+    {
+      "topic": "Airbnb Arbitrage vs Buying Rental Property: Which is Better?",
+      "keywords": ["airbnb arbitrage vs buying", "rent vs buy investment property"],
+      "type": "comparison",
+      "priority": 1,
+      "status": "pending"
+    },
+    {
+      "topic": "Airbnb vs VRBO: Which Platform is Better for Hosts?",
+      "keywords": ["airbnb vs vrbo", "vrbo vs airbnb host", "best short term rental platform"],
+      "type": "comparison",
+      "priority": 2,
+      "status": "pending"
+    },
+    {
+      "topic": "Short-Term vs Long-Term Rentals: ROI Comparison",
+      "keywords": ["short term vs long term rental", "airbnb vs traditional rental roi"],
+      "type": "comparison",
+      "priority": 3,
+      "status": "pending"
+    },
+    {
+      "topic": "DIY Airbnb Management vs Hiring a Property Manager",
+      "keywords": ["airbnb property manager", "self manage airbnb", "airbnb management cost"],
+      "type": "comparison",
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "topic": "Urban vs Suburban Markets for Airbnb Arbitrage",
+      "keywords": ["best airbnb markets", "urban airbnb vs suburban", "airbnb market analysis"],
+      "type": "comparison",
+      "priority": 5,
+      "status": "pending"
+    }
+  ],
+  "listicles": [
+    {
+      "topic": "10 Best Cities for Airbnb Arbitrage in 2026",
+      "keywords": ["best airbnb markets 2026", "top cities airbnb arbitrage", "where to do airbnb arbitrage"],
+      "type": "listicle",
+      "priority": 1,
+      "status": "pending"
+    },
+    {
+      "topic": "7 Common Airbnb Arbitrage Mistakes to Avoid",
+      "keywords": ["airbnb mistakes", "airbnb arbitrage mistakes", "new host mistakes"],
+      "type": "listicle",
+      "priority": 2,
+      "status": "pending"
+    },
+    {
+      "topic": "5 Signs You're Ready to Start Airbnb Arbitrage",
+      "keywords": ["start airbnb arbitrage", "am i ready for airbnb", "airbnb business readiness"],
+      "type": "listicle",
+      "priority": 3,
+      "status": "pending"
+    },
+    {
+      "topic": "8 Essential Tools Every Airbnb Host Needs",
+      "keywords": ["airbnb tools", "best airbnb software", "airbnb host tools"],
+      "type": "listicle",
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "topic": "12 Ways to Increase Your Airbnb Revenue",
+      "keywords": ["increase airbnb income", "airbnb revenue tips", "make more money airbnb"],
+      "type": "listicle",
+      "priority": 5,
+      "status": "pending"
+    }
+  ]
+}

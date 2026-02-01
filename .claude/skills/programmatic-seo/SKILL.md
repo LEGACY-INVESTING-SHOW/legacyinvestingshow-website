@@ -1,626 +1,371 @@
 ---
 name: programmatic-seo
-description: When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions "programmatic SEO," "template pages," "pages at scale," "directory pages," "location pages," "[keyword] + [city] pages," "comparison pages," "integration pages," or "building many pages for SEO." For auditing existing SEO issues, see seo-audit.
+description: Generate deep, comprehensive, SEO-optimized programmatic pages for tax strategies, investment topics, and personal finance concepts. Creates 3,000-5,000 word pages that rank well and provide real value. Use this for batch generation of topic pages.
+argument-hint: <topic-slug> <topic-title>
+disable-model-invocation: true
+user-invocable: true
+allowed-tools: Read, Write, Grep, Glob, Bash, WebFetch, WebSearch
 ---
 
-# Programmatic SEO
-
-You are an expert in programmatic SEO—building SEO-optimized pages at scale using templates and data. Your goal is to create pages that rank, provide value, and avoid thin content penalties.
-
-## Initial Assessment
-
-Before designing a programmatic SEO strategy, understand:
-
-1. **Business Context**
-   - What's the product/service?
-   - Who is the target audience?
-   - What's the conversion goal for these pages?
-
-2. **Opportunity Assessment**
-   - What search patterns exist?
-   - How many potential pages?
-   - What's the search volume distribution?
-
-3. **Competitive Landscape**
-   - Who ranks for these terms now?
-   - What do their pages look like?
-   - What would it take to beat them?
-
----
-
-## Core Principles
-
-### 1. Unique Value Per Page
-Every page must provide value specific to that page:
-- Unique data, insights, or combinations
-- Not just swapped variables in a template
-- Maximize unique content—the more differentiated, the better
-- Avoid "thin content" penalties by adding real depth
-
-### 2. Proprietary Data Wins
-The best pSEO uses data competitors can't easily replicate:
-- **Proprietary data**: Data you own or generate
-- **Product-derived data**: Insights from your product usage
-- **User-generated content**: Reviews, comments, submissions
-- **Aggregated insights**: Unique analysis of public data
-
-Hierarchy of data defensibility:
-1. Proprietary (you created it)
-2. Product-derived (from your users)
-3. User-generated (your community)
-4. Licensed (exclusive access)
-5. Public (anyone can use—weakest)
-
-### 3. Clean URL Structure
-**Always use subfolders, not subdomains**:
-- Good: `yoursite.com/templates/resume/`
-- Bad: `templates.yoursite.com/resume/`
-
-Subfolders pass authority to your main domain. Subdomains are treated as separate sites by Google.
-
-**URL best practices**:
-- Short, descriptive, keyword-rich
-- Consistent pattern across page type
-- No unnecessary parameters
-- Human-readable slugs
-
-### 4. Genuine Search Intent Match
-Pages must actually answer what people are searching for:
-- Understand the intent behind each pattern
-- Provide the complete answer
-- Don't over-optimize for keywords at expense of usefulness
-
-### 5. Scalable Quality, Not Just Quantity
-- Quality standards must be maintained at scale
-- Better to have 100 great pages than 10,000 thin ones
-- Build quality checks into the process
-
-### 6. Avoid Google Penalties
-- No doorway pages (thin pages that just funnel to main site)
-- No keyword stuffing
-- No duplicate content across pages
-- Genuine utility for users
-
----
-
-## The 12 Programmatic SEO Playbooks
-
-Beyond mixing and matching data point permutations, these are the proven playbooks for programmatic SEO:
-
-### 1. Templates
-**Pattern**: "[Type] template" or "free [type] template"
-**Example searches**: "resume template", "invoice template", "pitch deck template"
-
-**What it is**: Downloadable or interactive templates users can use directly.
-
-**Why it works**:
-- High intent—people need it now
-- Shareable/linkable assets
-- Natural for product-led companies
-
-**Value requirements**:
-- Actually usable templates (not just previews)
-- Multiple variations per type
-- Quality comparable to paid options
-- Easy download/use flow
-
-**URL structure**: `/templates/[type]/` or `/templates/[category]/[type]/`
-
----
-
-### 2. Curation
-**Pattern**: "best [category]" or "top [number] [things]"
-**Example searches**: "best website builders", "top 10 crm software", "best free design tools"
-
-**What it is**: Curated lists ranking or recommending options in a category.
-
-**Why it works**:
-- Comparison shoppers searching for guidance
-- High commercial intent
-- Evergreen with updates
-
-**Value requirements**:
-- Genuine evaluation criteria
-- Real testing or expertise
-- Regular updates (date visible)
-- Not just affiliate-driven rankings
-
-**URL structure**: `/best/[category]/` or `/[category]/best/`
-
----
-
-### 3. Conversions
-**Pattern**: "[X] to [Y]" or "[amount] [unit] in [unit]"
-**Example searches**: "$10 USD to GBP", "100 kg to lbs", "pdf to word"
-
-**What it is**: Tools or pages that convert between formats, units, or currencies.
-
-**Why it works**:
-- Instant utility
-- Extremely high search volume
-- Repeat usage potential
-
-**Value requirements**:
-- Accurate, real-time data
-- Fast, functional tool
-- Related conversions suggested
-- Mobile-friendly interface
-
-**URL structure**: `/convert/[from]-to-[to]/` or `/[from]-to-[to]-converter/`
-
----
-
-### 4. Comparisons
-**Pattern**: "[X] vs [Y]" or "[X] alternative"
-**Example searches**: "webflow vs wordpress", "notion vs coda", "figma alternatives"
-
-**What it is**: Head-to-head comparisons between products, tools, or options.
-
-**Why it works**:
-- High purchase intent
-- Clear search pattern
-- Scales with number of competitors
-
-**Value requirements**:
-- Honest, balanced analysis
-- Actual feature comparison data
-- Clear recommendation by use case
-- Updated when products change
-
-**URL structure**: `/compare/[x]-vs-[y]/` or `/[x]-vs-[y]/`
-
-*See also: competitor-alternatives skill for detailed frameworks*
-
----
-
-### 5. Examples
-**Pattern**: "[type] examples" or "[category] inspiration"
-**Example searches**: "saas landing page examples", "email subject line examples", "portfolio website examples"
-
-**What it is**: Galleries or collections of real-world examples for inspiration.
-
-**Why it works**:
-- Research phase traffic
-- Highly shareable
-- Natural for design/creative tools
-
-**Value requirements**:
-- Real, high-quality examples
-- Screenshots or embeds
-- Categorization/filtering
-- Analysis of why they work
-
-**URL structure**: `/examples/[type]/` or `/[type]-examples/`
-
----
-
-### 6. Locations
-**Pattern**: "[service/thing] in [location]"
-**Example searches**: "coworking spaces in san diego", "dentists in austin", "best restaurants in brooklyn"
-
-**What it is**: Location-specific pages for services, businesses, or information.
-
-**Why it works**:
-- Local intent is massive
-- Scales with geography
-- Natural for marketplaces/directories
-
-**Value requirements**:
-- Actual local data (not just city name swapped)
-- Local providers/options listed
-- Location-specific insights (pricing, regulations)
-- Map integration helpful
-
-**URL structure**: `/[service]/[city]/` or `/locations/[city]/[service]/`
-
----
-
-### 7. Personas
-**Pattern**: "[product] for [audience]" or "[solution] for [role/industry]"
-**Example searches**: "payroll software for agencies", "crm for real estate", "project management for freelancers"
-
-**What it is**: Tailored landing pages addressing specific audience segments.
-
-**Why it works**:
-- Speaks directly to searcher's context
-- Higher conversion than generic pages
-- Scales with personas
-
-**Value requirements**:
-- Genuine persona-specific content
-- Relevant features highlighted
-- Testimonials from that segment
-- Use cases specific to audience
-
-**URL structure**: `/for/[persona]/` or `/solutions/[industry]/`
-
----
-
-### 8. Integrations
-**Pattern**: "[your product] [other product] integration" or "[product] + [product]"
-**Example searches**: "slack asana integration", "zapier airtable", "hubspot salesforce sync"
-
-**What it is**: Pages explaining how your product works with other tools.
-
-**Why it works**:
-- Captures users of other products
-- High intent (they want the solution)
-- Scales with integration ecosystem
-
-**Value requirements**:
-- Real integration details
-- Setup instructions
-- Use cases for the combination
-- Working integration (not vaporware)
-
-**URL structure**: `/integrations/[product]/` or `/connect/[product]/`
-
----
-
-### 9. Glossary
-**Pattern**: "what is [term]" or "[term] definition" or "[term] meaning"
-**Example searches**: "what is pSEO", "api definition", "what does crm stand for"
-
-**What it is**: Educational definitions of industry terms and concepts.
-
-**Why it works**:
-- Top-of-funnel awareness
-- Establishes expertise
-- Natural internal linking opportunities
-
-**Value requirements**:
-- Clear, accurate definitions
-- Examples and context
-- Related terms linked
-- More depth than a dictionary
-
-**URL structure**: `/glossary/[term]/` or `/learn/[term]/`
-
----
-
-### 10. Translations
-**Pattern**: Same content in multiple languages
-**Example searches**: "qué es pSEO", "was ist SEO", "マーケティングとは"
-
-**What it is**: Your content translated and localized for other language markets.
-
-**Why it works**:
-- Opens entirely new markets
-- Lower competition in many languages
-- Multiplies your content reach
-
-**Value requirements**:
-- Quality translation (not just Google Translate)
-- Cultural localization
-- hreflang tags properly implemented
-- Native speaker review
-
-**URL structure**: `/[lang]/[page]/` or `yoursite.com/es/`, `/de/`, etc.
-
----
-
-### 11. Directory
-**Pattern**: "[category] tools" or "[type] software" or "[category] companies"
-**Example searches**: "ai copywriting tools", "email marketing software", "crm companies"
-
-**What it is**: Comprehensive directories listing options in a category.
-
-**Why it works**:
-- Research phase capture
-- Link building magnet
-- Natural for aggregators/reviewers
-
-**Value requirements**:
-- Comprehensive coverage
-- Useful filtering/sorting
-- Details per listing (not just names)
-- Regular updates
-
-**URL structure**: `/directory/[category]/` or `/[category]-directory/`
-
----
-
-### 12. Profiles
-**Pattern**: "[person/company name]" or "[entity] + [attribute]"
-**Example searches**: "stripe ceo", "airbnb founding story", "elon musk companies"
-
-**What it is**: Profile pages about notable people, companies, or entities.
-
-**Why it works**:
-- Informational intent traffic
-- Builds topical authority
-- Natural for B2B, news, research
-
-**Value requirements**:
-- Accurate, sourced information
-- Regularly updated
-- Unique insights or aggregation
-- Not just Wikipedia rehash
-
-**URL structure**: `/people/[name]/` or `/companies/[name]/`
-
----
-
-## Choosing Your Playbook
-
-### Match to Your Assets
-
-| If you have... | Consider... |
-|----------------|-------------|
-| Proprietary data | Stats, Directories, Profiles |
-| Product with integrations | Integrations |
-| Design/creative product | Templates, Examples |
-| Multi-segment audience | Personas |
-| Local presence | Locations |
-| Tool or utility product | Conversions |
-| Content/expertise | Glossary, Curation |
-| International potential | Translations |
-| Competitor landscape | Comparisons |
-
-### Combine Playbooks
-
-You can layer multiple playbooks:
-- **Locations + Personas**: "Marketing agencies for startups in Austin"
-- **Curation + Locations**: "Best coworking spaces in San Diego"
-- **Integrations + Personas**: "Slack for sales teams"
-- **Glossary + Translations**: Multi-language educational content
-
----
-
-## Implementation Framework
-
-### 1. Keyword Pattern Research
-
-**Identify the pattern**:
-- What's the repeating structure?
-- What are the variables?
-- How many unique combinations exist?
-
-**Validate demand**:
-- Aggregate search volume for pattern
-- Volume distribution (head vs. long tail)
-- Seasonal patterns
-- Trend direction
-
-**Assess competition**:
-- Who ranks currently?
-- What's their content quality?
-- What's their domain authority?
-- Can you realistically compete?
-
-### 2. Data Requirements
-
-**Identify data sources**:
-- What data populates each page?
-- Where does that data come from?
-- Is it first-party, scraped, licensed, public?
-- How is it updated?
-
-**Data schema design**:
-```
-For "[Service] in [City]" pages:
-
-city:
-  - name
-  - population
-  - relevant_stats
-
-service:
-  - name
-  - description
-  - typical_pricing
-
-local_providers:
-  - name
-  - rating
-  - reviews_count
-  - specialty
-
-local_data:
-  - regulations
-  - average_prices
-  - market_size
+# Programmatic SEO Page Generator (Deep Content)
+
+Generate comprehensive, SEO-optimized pages that are 3,000-5,000 words with real depth and value. These are NOT thin content pages - they should be the definitive resource on each topic.
+
+## Philosophy
+
+**The Problem with Thin Programmatic SEO:**
+- Google penalizes thin, templated content
+- Users bounce quickly from surface-level pages
+- No featured snippets or PAA captures
+- Hurts overall site authority
+
+**Our Approach:**
+- Each page is a comprehensive guide (3,000-5,000 words)
+- Deep, actionable content with real examples
+- Structured for featured snippets
+- Internal linking strategy built-in
+- Unique insights, not just definitions
+
+## Content Depth Requirements
+
+Each page MUST include:
+
+### 1. Hook & Quick Summary (200 words)
+- Attention-grabbing statistic or scenario
+- Quick bullet summary of key takeaways
+- "Bottom line" box for skimmers
+
+### 2. Comprehensive Definition (300 words)
+- What it is (detailed explanation)
+- How it works (mechanism)
+- Historical context/origin
+- Legal/regulatory framework
+
+### 3. Who Benefits Analysis (400 words)
+- Detailed persona breakdowns (3-5 personas)
+- Income level considerations
+- Career stage relevance
+- Risk tolerance matching
+- Real scenarios for each persona
+
+### 4. Step-by-Step Implementation (800 words)
+- Numbered steps with sub-steps
+- Timeline expectations
+- Required documents/prerequisites
+- Common pitfalls at each step
+- Pro tips for each step
+
+### 5. Real Numbers & Calculations (500 words)
+- Example scenarios with actual numbers
+- Before/after comparisons
+- Tax savings calculations
+- ROI projections
+- Interactive elements (if possible)
+
+### 6. Expert Strategies (600 words)
+- 3-5 advanced strategies
+- Each with:
+  - Strategy name
+  - How it works
+  - Who it's best for
+  - Potential savings
+  - Implementation steps
+
+### 7. Common Mistakes & How to Avoid (400 words)
+- 5-7 common mistakes
+- Why people make them
+- How to avoid each
+- Recovery strategies if already made
+
+### 8. Comparison Section (300 words)
+- This strategy vs. alternatives
+- Comparison table
+- When to choose this vs. others
+- Combining strategies
+
+### 9. Tools & Resources (200 words)
+- Recommended tools
+- Professional services
+- Books/courses
+- Government resources
+
+### 10. FAQ Section (400 words)
+- 10-15 questions from "People Also Ask"
+- Detailed answers (not one-liners)
+- Schema markup for FAQ
+
+### 11. Related Topics & Internal Links (100 words)
+- 5-8 related strategy pages
+- Contextual internal links throughout
+
+### 12. CTA Section (100 words)
+- Clear next step
+- Consultation offer
+- Resource download
+
+## Target Metrics
+
+- **Word count:** 3,000-5,000 words
+- **Reading time:** 12-20 minutes
+- **H2 headings:** 10-15
+- **H3 headings:** 20-30
+- **Internal links:** 8-12
+- **External links:** 3-5 (authoritative sources)
+- **Images/diagrams:** 3-5 placeholder locations
+
+## SEO Requirements
+
+### On-Page SEO
+- Primary keyword in:
+  - Title (front-loaded)
+  - H1
+  - First 100 words
+  - URL slug
+  - Meta description
+  - 2-3 H2 headings
+- Secondary keywords naturally distributed
+- LSI keywords throughout
+
+### Schema Markup
+- Article schema
+- FAQ schema
+- HowTo schema (for implementation section)
+- BreadcrumbList schema
+
+### Featured Snippet Optimization
+- Definition paragraph (40-60 words) after H2
+- Numbered lists for "how to" queries
+- Tables for comparison queries
+- Bullet lists for "types of" queries
+
+## Template Structure
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{TITLE}} | Legacy Investing Show</title>
+    <meta name="description" content="{{META_DESCRIPTION}}">
+    <link rel="canonical" href="https://legacyinvestingshow.com/{{CATEGORY}}/{{SLUG}}">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "{{TITLE}}",
+        "description": "{{META_DESCRIPTION}}",
+        "author": {
+            "@type": "Person",
+            "name": "Preston Seo"
+        },
+        ...
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    
+    <!-- Breadcrumbs -->
+    
+    <!-- Hero/Header -->
+    <header class="page-hero">
+        <h1>{{TITLE}}</h1>
+        <p class="hero-subtitle">{{SUBTITLE}}</p>
+        <div class="quick-stats">
+            <!-- Key statistics -->
+        </div>
+    </header>
+    
+    <!-- Table of Contents -->
+    <nav class="toc">
+        <h2>Table of Contents</h2>
+        <!-- Auto-generated TOC -->
+    </nav>
+    
+    <!-- Main Content -->
+    <main class="content-wrapper">
+        <article class="main-content">
+            
+            <!-- Quick Summary Box -->
+            <div class="summary-box">
+                <h2>Key Takeaways</h2>
+                <ul>
+                    <!-- 5-7 bullet points -->
+                </ul>
+            </div>
+            
+            <!-- Section 1: What Is -->
+            <section id="what-is">
+                <h2>What is {{TOPIC}}?</h2>
+                <!-- 300 words, definition paragraph optimized for featured snippet -->
+            </section>
+            
+            <!-- Section 2: How It Works -->
+            <section id="how-it-works">
+                <h2>How {{TOPIC}} Works</h2>
+                <!-- Detailed mechanism explanation -->
+            </section>
+            
+            <!-- Section 3: Who Benefits -->
+            <section id="who-benefits">
+                <h2>Who Benefits Most from {{TOPIC}}</h2>
+                <!-- Persona breakdowns -->
+            </section>
+            
+            <!-- Section 4: Step by Step -->
+            <section id="how-to">
+                <h2>How to {{ACTION}}: Step-by-Step Guide</h2>
+                <!-- Numbered steps with HowTo schema -->
+            </section>
+            
+            <!-- Section 5: Real Numbers -->
+            <section id="calculations">
+                <h2>{{TOPIC}} Calculations & Examples</h2>
+                <!-- Real scenarios with numbers -->
+            </section>
+            
+            <!-- Section 6: Expert Strategies -->
+            <section id="strategies">
+                <h2>Advanced {{TOPIC}} Strategies</h2>
+                <!-- 3-5 detailed strategies -->
+            </section>
+            
+            <!-- Section 7: Common Mistakes -->
+            <section id="mistakes">
+                <h2>Common {{TOPIC}} Mistakes to Avoid</h2>
+                <!-- 5-7 mistakes with solutions -->
+            </section>
+            
+            <!-- Section 8: Comparison -->
+            <section id="comparison">
+                <h2>{{TOPIC}} vs. Other Options</h2>
+                <!-- Comparison table -->
+            </section>
+            
+            <!-- Section 9: Tools -->
+            <section id="tools">
+                <h2>Best Tools & Resources for {{TOPIC}}</h2>
+                <!-- Recommended resources -->
+            </section>
+            
+            <!-- Section 10: FAQ -->
+            <section id="faq">
+                <h2>Frequently Asked Questions</h2>
+                <!-- 10-15 FAQ items with schema -->
+            </section>
+            
+        </article>
+        
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <!-- Related strategies -->
+            <!-- CTA card -->
+            <!-- Newsletter signup -->
+        </aside>
+    </main>
+    
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <!-- Final CTA -->
+    </section>
+    
+    <!-- Footer -->
+</body>
+</html>
 ```
 
-### 3. Template Design
+## Generation Process
 
-**Page structure**:
-- Header with target keyword
-- Unique intro (not just variables swapped)
-- Data-driven sections
-- Related pages / internal links
-- CTAs appropriate to intent
+### Phase 1: Research (use Opus)
+1. WebSearch for "{{topic}}" to find:
+   - People Also Ask questions
+   - Top ranking content structure
+   - Key statistics
+   - Common questions
 
-**Ensuring uniqueness**:
-- Each page needs unique value
-- Conditional content based on data
-- User-generated content where possible
-- Original insights/analysis per page
+2. Identify:
+   - Primary keyword
+   - Secondary keywords (5-10)
+   - LSI keywords (10-15)
+   - Featured snippet opportunities
 
-**Template example**:
+### Phase 2: Outline Creation (use Opus)
+1. Create detailed outline with all sections
+2. Assign word counts to each section
+3. Identify internal linking opportunities
+4. Note statistics/examples needed
+
+### Phase 3: Content Generation (use Haiku 4.5)
+1. Generate each section following the outline
+2. Ensure depth and specificity
+3. Include real calculations/examples
+4. Add internal links contextually
+
+### Phase 4: Assembly & Polish (use Haiku)
+1. Combine sections into full HTML
+2. Add schema markup
+3. Verify word count (3,000-5,000)
+4. Check all links work
+5. Add image placeholders
+
+## Quality Checklist
+
+Before publishing, verify:
+- [ ] Word count: 3,000-5,000 words
+- [ ] All 12 required sections present
+- [ ] At least 10 H2 headings
+- [ ] At least 20 H3 headings
+- [ ] 10-15 FAQ questions
+- [ ] Real calculations/examples included
+- [ ] 8-12 internal links
+- [ ] Schema markup complete
+- [ ] Meta description optimized
+- [ ] Title tag optimized
+- [ ] Featured snippet paragraphs formatted
+- [ ] Mobile-friendly structure
+
+## Category-Specific Guidelines
+
+### Tax Strategies
+- Include IRS code references
+- Add tax bracket scenarios
+- Note state-specific variations
+- Include deadline reminders
+
+### Investment Topics
+- Include risk disclaimers
+- Add historical performance context
+- Note minimum investment amounts
+- Compare with similar investments
+
+### Business Structures
+- Include state filing requirements
+- Add cost comparisons
+- Note ongoing compliance
+- Include liability scenarios
+
+### Retirement Planning
+- Include contribution limits (current year)
+- Add catch-up contribution info
+- Note income phase-outs
+- Include RMD considerations
+
+## Execution Command
+
+To generate a page:
+
+```bash
+# Generate single page
+claude -m haiku "Generate a comprehensive programmatic SEO page for [TOPIC] following the programmatic-seo skill. Target 4,000 words."
+
+# Batch generate (use script)
+node scripts/generate-seo-pages.js --topics data/seo-topics.json --model haiku
 ```
-H1: [Service] in [City]: [Year] Guide
-
-Intro: [Dynamic paragraph using city stats + service context]
-
-Section 1: Why [City] for [Service]
-[City-specific data and insights]
-
-Section 2: Top [Service] Providers in [City]
-[Data-driven list with unique details]
-
-Section 3: Pricing for [Service] in [City]
-[Local pricing data if available]
-
-Section 4: FAQs about [Service] in [City]
-[Common questions with city-specific answers]
-
-Related: [Service] in [Nearby Cities]
-```
-
-### 4. Internal Linking Architecture
-
-**Hub and spoke model**:
-- Hub: Main category page
-- Spokes: Individual programmatic pages
-- Cross-links between related spokes
-
-**Avoid orphan pages**:
-- Every page reachable from main site
-- Logical category structure
-- XML sitemap for all pages
-
-**Breadcrumbs**:
-- Show hierarchy
-- Structured data markup
-- User navigation aid
-
-### 5. Indexation Strategy
-
-**Prioritize important pages**:
-- Not all pages need to be indexed
-- Index high-volume patterns
-- Noindex very thin variations
-
-**Crawl budget management**:
-- Paginate thoughtfully
-- Avoid infinite crawl traps
-- Use robots.txt wisely
-
-**Sitemap strategy**:
-- Separate sitemaps by page type
-- Monitor indexation rate
-- Prioritize by importance
-
----
-
-## Quality Checks
-
-### Pre-Launch Checklist
-
-**Content quality**:
-- [ ] Each page provides unique value
-- [ ] Not just variable substitution
-- [ ] Answers search intent
-- [ ] Readable and useful
-
-**Technical SEO**:
-- [ ] Unique titles and meta descriptions
-- [ ] Proper heading structure
-- [ ] Schema markup implemented
-- [ ] Canonical tags correct
-- [ ] Page speed acceptable
-
-**Internal linking**:
-- [ ] Connected to site architecture
-- [ ] Related pages linked
-- [ ] No orphan pages
-- [ ] Breadcrumbs implemented
-
-**Indexation**:
-- [ ] In XML sitemap
-- [ ] Crawlable
-- [ ] Not blocked by robots.txt
-- [ ] No conflicting noindex
-
-### Monitoring Post-Launch
-
-**Track**:
-- Indexation rate
-- Rankings by page pattern
-- Traffic by page pattern
-- Engagement metrics
-- Conversion rate
-
-**Watch for**:
-- Thin content warnings in Search Console
-- Ranking drops
-- Manual actions
-- Crawl errors
-
----
-
-## Common Mistakes to Avoid
-
-### Thin Content
-- Just swapping city names in identical content
-- No unique information per page
-- "Doorway pages" that just redirect
-
-### Keyword Cannibalization
-- Multiple pages targeting same keyword
-- No clear hierarchy
-- Competing with yourself
-
-### Over-Generation
-- Creating pages with no search demand
-- Too many low-quality pages dilute authority
-- Quantity over quality
-
-### Poor Data Quality
-- Outdated information
-- Incorrect data
-- Missing data showing as blank
-
-### Ignoring User Experience
-- Pages exist for Google, not users
-- No conversion path
-- Bouncy, unhelpful content
-
----
-
-## Output Format
-
-### Strategy Document
-
-**Opportunity Analysis**:
-- Keyword pattern identified
-- Search volume estimates
-- Competition assessment
-- Feasibility rating
-
-**Implementation Plan**:
-- Data requirements and sources
-- Template structure
-- Number of pages (phases)
-- Internal linking plan
-- Technical requirements
-
-**Content Guidelines**:
-- What makes each page unique
-- Quality standards
-- Update frequency
-
-### Page Template
-
-**URL structure**: `/category/variable/`
-**Title template**: [Variable] + [Static] + [Brand]
-**Meta description template**: [Pattern with variables]
-**H1 template**: [Pattern]
-**Content outline**: Section by section
-**Schema markup**: Type and required fields
-
-### Launch Checklist
-
-Specific pre-launch checks for this implementation
-
----
-
-## Questions to Ask
-
-If you need more context:
-1. What keyword patterns are you targeting?
-2. What data do you have (or can acquire)?
-3. How many pages are you planning to create?
-4. What does your site authority look like?
-5. Who currently ranks for these terms?
-6. What's your technical stack for generating pages?
-
----
 
 ## Related Skills
-
-- **seo-audit**: For auditing programmatic pages after launch
-- **schema-markup**: For adding structured data to templates
-- **copywriting**: For the non-templated copy portions
-- **analytics-tracking**: For measuring programmatic page performance
+- youtube-to-blog (for case study content)
+- seo-review (for auditing generated pages)
+- batch-content (for managing generation queue)
