@@ -11,7 +11,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Configuration
-const SITE_URL = process.env.SITE_URL || 'https://legacyinvestingshow.com';
+const SITE_URL = process.env.SITE_URL || 'https://legacyinvestingshow-website.vercel.app';
 const ROOT_DIR = path.join(__dirname, '..');
 const OUTPUT_FILE = path.join(ROOT_DIR, 'sitemap.xml');
 
@@ -24,6 +24,7 @@ const staticPages = [
   { url: '/programs.html' },
   { url: '/success-stories.html' },
   { url: '/blog/' },
+  { url: '/stacking-presentation/' },
 ];
 
 // Topic hub pages for SEO pillar content

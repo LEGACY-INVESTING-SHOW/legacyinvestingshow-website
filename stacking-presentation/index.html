@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Stacking Principle</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-dark: #0a0a0f;
+            --bg-card: #12121a;
+            --accent-gold: #f0c674;
+            --accent-cyan: #5dd3c5;
+            --accent-purple: #b4a7ff;
+            --text-primary: #f0f0f5;
+            --text-secondary: #888899;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        .slide-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slide {
+            position: absolute;
+            width: 90%;
+            max-width: 1000px;
+            height: 80vh;
+            background: linear-gradient(145deg, var(--bg-card) 0%, #1a1a25 100%);
+            border-radius: 24px;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            opacity: 0;
+            transform: translateX(100px) scale(0.95);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            pointer-events: none;
+            box-shadow: 
+                0 25px 50px -12px rgba(0,0,0,0.5),
+                0 0 0 1px rgba(255,255,255,0.05);
+        }
+
+        .slide.active {
+            opacity: 1;
+            transform: translateX(0) scale(1);
+            pointer-events: all;
+        }
+
+        .slide.prev {
+            transform: translateX(-100px) scale(0.95);
+            opacity: 0;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 30px;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-gold) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        h2 {
+            font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+            font-weight: 700;
+            margin-bottom: 24px;
+            color: var(--accent-cyan);
+        }
+
+        p, li {
+            font-size: clamp(1.1rem, 2vw, 1.4rem);
+            line-height: 1.7;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+
+        .highlight {
+            color: var(--accent-gold);
+            font-weight: 600;
+        }
+
+        .big-number {
+            font-size: clamp(3rem, 6vw, 5rem);
+            font-weight: 900;
+            color: var(--accent-gold);
+            display: block;
+            margin: 20px 0;
+        }
+
+        /* Special Layouts */
+        .centered {
+            text-align: center;
+        }
+
+        .quote {
+            font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+            font-style: italic;
+            border-left: 4px solid var(--accent-gold);
+            padding-left: 30px;
+            margin: 30px 0;
+            color: var(--text-primary);
+        }
+
+        .stack-visual {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin: 30px 0;
+        }
+
+        .stack-item {
+            padding: 20px 30px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            animation: slideInUp 0.5s ease forwards;
+            opacity: 0;
+        }
+
+        .stack-item:nth-child(1) { animation-delay: 0.1s; background: linear-gradient(90deg, #2d2d3a 0%, #3a3a4a 100%); }
+        .stack-item:nth-child(2) { animation-delay: 0.2s; background: linear-gradient(90deg, #3a3a4a 0%, #4a4a5a 100%); }
+        .stack-item:nth-child(3) { animation-delay: 0.3s; background: linear-gradient(90deg, #4a4a5a 0%, #5a5a6a 100%); }
+        .stack-item:nth-child(4) { animation-delay: 0.4s; background: linear-gradient(90deg, #5a5a6a 0%, var(--accent-cyan) 100%); color: var(--bg-dark); }
+
+        @keyframes slideInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        .comparison-box {
+            padding: 30px;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        .comparison-box.old {
+            background: rgba(255, 100, 100, 0.1);
+            border: 2px solid rgba(255, 100, 100, 0.3);
+        }
+
+        .comparison-box.new {
+            background: rgba(93, 211, 197, 0.1);
+            border: 2px solid var(--accent-cyan);
+        }
+
+        .comparison-box h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .comparison-box.old h3 { color: #ff6464; }
+        .comparison-box.new h3 { color: var(--accent-cyan); }
+
+        .two-paths {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .path-card {
+            padding: 30px;
+            border-radius: 16px;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .path-card h4 {
+            color: var(--accent-gold);
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        /* Navigation */
+        .nav-controls {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .nav-btn {
+            background: rgba(255,255,255,0.1);
+            border: none;
+            color: var(--text-primary);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-btn:hover {
+            background: var(--accent-cyan);
+            color: var(--bg-dark);
+            transform: scale(1.1);
+        }
+
+        .slide-counter {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            min-width: 60px;
+            text-align: center;
+        }
+
+        /* Progress bar */
+        .progress-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-gold), var(--accent-cyan));
+            transition: width 0.3s;
+            z-index: 100;
+        }
+
+        /* Bullet points */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 12px;
+        }
+
+        li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent-gold);
+            font-weight: bold;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .slide { padding: 30px; }
+            .comparison, .two-paths { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <!-- Slide 1: Title -->
+        <div class="slide active" data-slide="1">
+            <div class="centered">
+                <h1>The Stacking Principle</h1>
+                <p class="quote">Why chasing 1% in one thing is the slow path.<br>The fast path? Become top 20% in 10 things.</p>
+                <p style="margin-top: 40px; font-size: 1rem;">A framework for building wealth through complementary strategies</p>
+            </div>
+        </div>
+
+        <!-- Slide 2: The Scott Adams Insight -->
+        <div class="slide" data-slide="2">
+            <h2>The Skill Stack</h2>
+            <p class="quote">"The last 20% of mastery takes 80% of the effort.<br>But the first 80%? That's where the juice is."</p>
+            <p>Scott Adams realized that being in the <span class="highlight">top 1% at one thing</span> requires extraordinary talent and years of grinding.</p>
+            <p>But being in the <span class="highlight">top 20% at multiple things</span>? That's achievable. And when you combine those skills, you become irreplaceable.</p>
+        </div>
+
+        <!-- Slide 3: The Problem with Finance Advice -->
+        <div class="slide" data-slide="3">
+            <h2>The $5 Coffee Trap</h2>
+            <div class="comparison">
+                <div class="comparison-box old">
+                    <h3>Old Advice</h3>
+                    <p>"Skip the daily latte"</p>
+                    <p>Save $5/day = $1,825/year</p>
+                    <p style="font-size: 0.9rem; margin-top: 15px;">Painful. Unsustainable. Small results.</p>
+                </div>
+                <div class="comparison-box new">
+                    <h3>Stacking</h3>
+                    <p>Optimize taxes, debt, investments</p>
+                    <p>Save $50K-$200K+/year</p>
+                    <p style="font-size: 0.9rem; margin-top: 15px;">Efficient. Scalable. Life-changing.</p>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 20px;">The numbers sound too big because <span class="highlight">traditional advice keeps you small</span>.</p>
+        </div>
+
+        <!-- Slide 4: What is Stacking? -->
+        <div class="slide" data-slide="4">
+            <h2>What is Financial Stacking?</h2>
+            <p>Instead of one strategy, you layer <span class="highlight">complementary strategies</span> on top of each other.</p>
+            <p>Each layer doesn't just add — it <span class="highlight">multiplies</span> the impact of the others.</p>
+            <div class="stack-visual">
+                <div class="stack-item">💰 Optimize taxes on your current income</div>
+                <div class="stack-item">📉 Pay off debt in the right order (save on interest)</div>
+                <div class="stack-item">📈 Invest savings in tax-free growth accounts</div>
+                <div class="stack-item">🏠 Generate tax-free cash flow (e.g., Airbnb)</div>
+            </div>
+        </div>
+
+        <!-- Slide 5: The First Stack -->
+        <div class="slide" data-slide="5">
+            <h2>Step 1: Optimize What You Have</h2>
+            <p>Before chasing new income, <span class="highlight">maximize what you're already earning</span>.</p>
+            <ul>
+                <li>Restructure your tax situation</li>
+                <li>Optimize your investment portfolio structure</li>
+                <li>Fix the wellness/benefits structure</li>
+                <li>Ensure you're not leaking money on inefficiencies</li>
+            </ul>
+            <p style="margin-top: 30px; font-size: 1.2rem; color: var(--accent-cyan);">This alone can save or create tens of thousands per year.</p>
+        </div>
+
+        <!-- Slide 6: The Airbnb Layer -->
+        <div class="slide" data-slide="6">
+            <h2>Step 2: The Cash Flow Layer</h2>
+            <p>Once your foundation is optimized, add <span class="highlight">Airbnb</span> as a cash flow engine.</p>
+            <p>Two goals working together:</p>
+            <ul>
+                <li><strong>More income</strong> — Monthly cash flow from short-term rentals</li>
+                <li><strong>Tax advantages</strong> — Real estate's biggest loophole: depreciation, deductions, 1031 exchanges</li>
+            </ul>
+            <p style="margin-top: 20px;">This isn't just extra money — it's <span class="highlight">strategically structured</span> money.</p>
+        </div>
+
+        <!-- Slide 7: Two Paths -->
+        <div class="slide" data-slide="7">
+            <h2>Two Paths, Same Destination</h2>
+            <div class="two-paths">
+                <div class="path-card">
+                    <h4>💡 Lower Starting Capital</h4>
+                    <p>Rental arbitrage strategy</p>
+                    <p>Lower upfront investment</p>
+                    <p>Focus on <strong>cash flow over tax savings</strong></p>
+                    <p>Build up capital for future purchases</p>
+                </div>
+                <div class="path-card">
+                    <h4>🏘️ More Capital Available</h4>
+                    <p>Property purchase strategy</p>
+                    <p>Higher upfront investment</p>
+                    <p><strong>Massive tax deductions</strong> from depreciation</p>
+                    <p>Build long-term equity + wealth</p>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 30px;">Both paths lead to: <span class="highlight">Tax savings → Cash flow → Equity → Long-term wealth</span></p>
+        </div>
+
+        <!-- Slide 8: The Multiplication Effect -->
+        <div class="slide" data-slide="8">
+            <h2>The Multiplication Effect</h2>
+            <p>Each layer doesn't just add value — it <span class="highlight">unlocks</span> the next.</p>
+            <div style="text-align: center; margin: 40px 0;">
+                <p style="font-size: 1.5rem; color: var(--text-primary);">Tax savings → Debt payoff → Investment capital → Cash flow → More investment → More tax savings...</p>
+            </div>
+            <p class="quote" style="text-align: center; border: none; padding: 0;">"You're not working harder.<br>You're just stacking smarter."</p>
+        </div>
+
+        <!-- Slide 9: The Result -->
+        <div class="slide" data-slide="9">
+            <div class="centered">
+                <h2>What This Looks Like</h2>
+                <p style="margin-bottom: 30px;">A self-reinforcing system that grows itself:</p>
+                <div style="display: inline-block; text-align: left;">
+                    <p>✅ <span class="highlight">$30K-80K</span> saved in taxes annually</p>
+                    <p>✅ <span class="highlight">$20K-50K</span> in cash flow from Airbnb</p>
+                    <p>✅ <span class="highlight">$0</span> in high-interest debt</p>
+                    <p>✅ <span class="highlight">Growing</span> investment portfolio</p>
+                    <p>✅ <span class="highlight">Compounding</span> tax-free returns</p>
+                </div>
+                <p style="margin-top: 40px; font-size: 1.3rem; color: var(--accent-cyan);">All from optimizing what you have + adding strategic layers.</p>
+            </div>
+        </div>
+
+        <!-- Slide 10: CTA -->
+        <div class="slide" data-slide="10">
+            <div class="centered">
+                <h1>Start Stacking</h1>
+                <p style="font-size: 1.4rem; margin-bottom: 30px;">You don't need to be a genius at one thing.</p>
+                <p style="font-size: 1.4rem; margin-bottom: 30px;">You need to be <span class="highlight">good at the right combination</span> of things.</p>
+                <div style="margin-top: 50px; padding: 30px; background: rgba(93, 211, 197, 0.1); border-radius: 16px; border: 1px solid var(--accent-cyan);">
+                    <p style="font-size: 1.2rem; color: var(--text-primary); margin: 0;">Next: The Airbnb Deep Dive</p>
+                    <p style="font-size: 1rem; margin: 10px 0 0 0;">How to choose your path and execute the strategy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav-controls">
+        <button class="nav-btn" onclick="prevSlide()">◀</button>
+        <span class="slide-counter"><span id="current">1</span> / <span id="total">10</span></span>
+        <button class="nav-btn" onclick="nextSlide()">▶</button>
+    </div>
+
+    <!-- Progress bar -->
+    <div class="progress-bar" id="progress"></div>
+
+    <script>
+        let currentSlide = 1;
+        const totalSlides = 10;
+
+        function showSlide(n) {
+            const slides = document.querySelectorAll('.slide');
+            
+            if (n > totalSlides) currentSlide = 1;
+            if (n < 1) currentSlide = totalSlides;
+
+            slides.forEach((slide, index) => {
+                slide.classList.remove('active', 'prev');
+                if (index + 1 === currentSlide) {
+                    slide.classList.add('active');
+                } else if (index + 1 < currentSlide) {
+                    slide.classList.add('prev');
+                }
+            });
+
+            document.getElementById('current').textContent = currentSlide;
+            document.getElementById('progress').style.width = (currentSlide / totalSlides * 100) + '%';
+        }
+
+        function nextSlide() {
+            currentSlide++;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide--;
+            showSlide(currentSlide);
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                e.preventDefault();
+                nextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                prevSlide();
+            }
+        });
+
+        // Touch/swipe support
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        document.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+
+        document.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            if (touchEndX < touchStartX - 50) nextSlide();
+            if (touchEndX > touchStartX + 50) prevSlide();
+        }
+
+        // Initialize
+        showSlide(currentSlide);
+    </script>
+</body>
+</html>
