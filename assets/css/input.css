@@ -21,11 +21,11 @@
     --navy-light: #1E293B;
     --navy-muted: rgba(15, 23, 42, 0.06);
     
-    /* Gold/Amber Accent - Premium, Success */
-    --gold: #D4A853;
-    --gold-light: #E8C87A;
-    --gold-dark: #B8933F;
-    --gold-muted: rgba(212, 168, 83, 0.12);
+    /* Gold/Amber Accent - Subtle, Refined */
+    --gold: #C9A961;
+    --gold-light: #D9C48A;
+    --gold-dark: #A88B4A;
+    --gold-muted: rgba(201, 169, 97, 0.08);
     
     /* Warm Cream - Elegant backgrounds */
     --cream: #FAF7F2;
@@ -46,7 +46,7 @@
     /* Borders */
     --border: #E2E8F0;
     --border-light: #F1F5F9;
-    --border-gold: rgba(212, 168, 83, 0.3);
+    --border-gold: rgba(201, 169, 97, 0.15);
     
     /* Animation timing */
     --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
