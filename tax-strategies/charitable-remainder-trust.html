@@ -644,16 +644,25 @@
         </nav>
     </header>
 
-    <main id="main">
-        <!-- Breadcrumb -->
-        <div class="breadcrumb container-custom" style="padding-top: 5rem;">
-            <a href="/">Home</a>
-            <span>/</span>
-            <a href="/tax-strategies/">Tax Strategies</a>
-            <span>/</span>
-            <span class="text-gray-900">Charitable Remainder Trust</span>
-        </div>
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="Breadcrumb" class="container-custom pt-24 pb-4">
+        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="/" class="breadcrumb__link" itemprop="item"><span itemprop="name">Home</span></a>
+                <meta itemprop="position" content="1" />
+            </li>
+            <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="/tax-strategies/" class="breadcrumb__link" itemprop="item"><span itemprop="name">Tax Strategies</span></a>
+                <meta itemprop="position" content="2" />
+            </li>
+            <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <span class="breadcrumb__current" itemprop="name">Charitable Remainder Trust (CRT)</span>
+                <meta itemprop="position" content="3" />
+            </li>
+        </ol>
+    </nav>
 
+    <main id="main">
         <!-- Hero Section -->
         <section class="strategy-hero">
             <div class="container-custom">

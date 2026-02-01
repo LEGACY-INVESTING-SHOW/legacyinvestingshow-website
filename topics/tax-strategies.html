@@ -68,6 +68,27 @@
         ]
     }
     </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+        {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://legacyinvestingshow.com/"
+        },
+        {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Tax Strategies Guide 2025: Legally Minimize Your Tax Bill"
+        }
+]
+    }
+    </script>
 </head>
 <body class="bg-white">
     <!-- Header / Navigation -->
@@ -131,6 +152,20 @@
             </div>
         </nav>
     </header>
+
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="Breadcrumb" class="container-custom pt-24 pb-4">
+        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="/" class="breadcrumb__link" itemprop="item"><span itemprop="name">Home</span></a>
+                <meta itemprop="position" content="1" />
+            </li>
+            <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <span class="breadcrumb__current" itemprop="name">Tax Strategies Guide 2025: Legally Minimize Your Tax Bill</span>
+                <meta itemprop="position" content="2" />
+            </li>
+        </ol>
+    </nav>
 
     <main id="main" role="main">
         <!-- Hero Section -->

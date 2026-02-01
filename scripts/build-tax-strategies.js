@@ -273,6 +273,26 @@ function generateIndexPage(strategies, personas) {
     }
     </script>
 
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://legacyinvestingshow.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Tax Strategies"
+            }
+        ]
+    }
+    </script>
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -493,6 +513,20 @@ function generateIndexPage(strategies, personas) {
         </nav>
     </header>
 
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="Breadcrumb" class="container-custom pt-24 pb-4">
+        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="/" class="breadcrumb__link" itemprop="item"><span itemprop="name">Home</span></a>
+                <meta itemprop="position" content="1" />
+            </li>
+            <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <span class="breadcrumb__current" itemprop="name">Tax Strategies</span>
+                <meta itemprop="position" content="2" />
+            </li>
+        </ol>
+    </nav>
+
     <main id="main">
         <section class="tax-hero">
             <div class="container-custom">
@@ -623,6 +657,142 @@ function generateIndexPage(strategies, personas) {
 }
 
 /**
+ * Generate BreadcrumbList schema for persona pages
+ */
+function generatePersonaBreadcrumbSchema(persona) {
+    return {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://legacyinvestingshow.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Tax Strategies",
+                "item": "https://legacyinvestingshow.com/tax-strategies/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": persona.title,
+                "item": `https://legacyinvestingshow.com/tax-strategies/for/${persona.slug}`
+            }
+        ]
+    };
+}
+
+/**
+ * Generate CollectionPage schema for persona pages
+ */
+function generatePersonaCollectionSchema(persona) {
+    return {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": `Tax Strategies for ${persona.title}`,
+        "description": persona.description,
+        "url": `https://legacyinvestingshow.com/tax-strategies/for/${persona.slug}`,
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "Legacy Investing Show",
+            "url": "https://legacyinvestingshow.com"
+        },
+        "about": {
+            "@type": "Thing",
+            "name": persona.title,
+            "description": persona.description
+        }
+    };
+}
+
+/**
+ * Generate FAQ schema for persona pages
+ */
+function generatePersonaFaqSchema(persona) {
+    const faqs = {
+        'airbnb-hosts': [
+            {
+                question: "What are the best tax strategies for Airbnb hosts?",
+                answer: "The Short-Term Rental Loophole allows Airbnb hosts to deduct rental losses against W-2 income. The Augusta Rule lets you rent your home to your business for up to 14 days tax-free. Cost segregation accelerates depreciation on furnished rental properties."
+            },
+            {
+                question: "Can Airbnb hosts qualify for Real Estate Professional Status?",
+                answer: "Yes, if you spend more than 750 hours per year and over 50% of your working time in real property trades or businesses. This unlocks unlimited passive loss deductions against ordinary income."
+            }
+        ],
+        'business-owners': [
+            {
+                question: "What is the best business structure for tax savings?",
+                answer: "An S-Corporation election can save thousands in self-employment taxes by splitting income between salary and distributions. The optimal structure depends on your income level and business type."
+            },
+            {
+                question: "How can business owners deduct equipment purchases?",
+                answer: "Section 179 allows immediate expensing of up to $1.16 million in qualifying equipment. Bonus depreciation offers additional first-year deductions on new and used property."
+            }
+        ],
+        'high-income-earners': [
+            {
+                question: "How can high-income earners reduce their tax burden?",
+                answer: "Backdoor Roth IRAs allow tax-free growth regardless of income limits. Donor-Advised Funds provide immediate charitable deductions. Qualified Opportunity Zone investments defer and reduce capital gains taxes."
+            },
+            {
+                question: "What is the maximum tax rate for high earners?",
+                answer: "The top federal income tax rate is 37%, but with the 3.8% Net Investment Income Tax and state taxes, some taxpayers face rates exceeding 50% in high-tax states."
+            }
+        ],
+        'real-estate-investors': [
+            {
+                question: "What is cost segregation and how does it work?",
+                answer: "Cost segregation accelerates depreciation by reclassifying building components into shorter recovery periods (5, 7, or 15 years instead of 27.5 or 39 years), creating larger early-year deductions."
+            },
+            {
+                question: "Can I defer capital gains when selling investment property?",
+                answer: "Yes, a 1031 Exchange allows you to defer capital gains taxes by reinvesting proceeds into like-kind property. This strategy can be repeated indefinitely to build wealth tax-deferred."
+            }
+        ],
+        'self-employed': [
+            {
+                question: "What retirement accounts are available for the self-employed?",
+                answer: "Solo 401(k)s allow contributions up to $76,500 (2025). SEP IRAs offer up to $70,000. Both offer tax-deductible contributions and tax-deferred growth."
+            },
+            {
+                question: "Can self-employed individuals deduct health insurance premiums?",
+                answer: "Yes, self-employed health insurance premiums are 100% deductible as an adjustment to income. Health Savings Accounts (HSAs) offer additional triple tax advantages."
+            }
+        ],
+        'w2-employees': [
+            {
+                question: "What tax strategies are available for W-2 employees?",
+                answer: "W-2 employees can use Backdoor Roth IRAs, Health Savings Accounts, bunching deductions to exceed standard deduction thresholds, and the Short-Term Rental Loophole if they have Airbnb properties."
+            },
+            {
+                question: "How can W-2 employees deduct rental property losses?",
+                answer: "The Short-Term Rental Loophole allows W-2 employees to deduct rental losses if they average less than 7 days per stay and materially participate, bypassing passive activity loss limitations."
+            }
+        ]
+    };
+    
+    const personaFaqs = faqs[persona.slug] || faqs['high-income-earners'];
+    
+    return {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": personaFaqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+            }
+        }))
+    };
+}
+
+/**
  * Generate persona page
  */
 function generatePersonaPage(persona, strategies) {
@@ -639,6 +809,11 @@ function generatePersonaPage(persona, strategies) {
                         </div>
                     </a>`).join('\n');
 
+    // Generate schema markup
+    const breadcrumbSchema = generatePersonaBreadcrumbSchema(persona);
+    const collectionSchema = generatePersonaCollectionSchema(persona);
+    const faqSchema = generatePersonaFaqSchema(persona);
+
     return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -652,6 +827,19 @@ function generatePersonaPage(persona, strategies) {
     <meta name="author" content="Preston Seo">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://legacyinvestingshow.com/tax-strategies/for/${persona.slug}">
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    ${JSON.stringify(breadcrumbSchema, null, 4)}
+    </script>
+
+    <script type="application/ld+json">
+    ${JSON.stringify(collectionSchema, null, 4)}
+    </script>
+
+    <script type="application/ld+json">
+    ${JSON.stringify(faqSchema, null, 4)}
+    </script>
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://legacyinvestingshow.com/tax-strategies/for/${persona.slug}">
@@ -865,14 +1053,25 @@ function generatePersonaPage(persona, strategies) {
         </nav>
     </header>
 
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="Breadcrumb" class="container-custom pt-24 pb-4">
+        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="/" class="breadcrumb__link" itemprop="item"><span itemprop="name">Home</span></a>
+                <meta itemprop="position" content="1" />
+            </li>
+            <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="/tax-strategies/" class="breadcrumb__link" itemprop="item"><span itemprop="name">Tax Strategies</span></a>
+                <meta itemprop="position" content="2" />
+            </li>
+            <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <span class="breadcrumb__current" itemprop="name">For ${persona.title}</span>
+                <meta itemprop="position" content="3" />
+            </li>
+        </ol>
+    </nav>
+
     <main id="main">
-        <div class="breadcrumb container-custom" style="padding-top: 5rem;">
-            <a href="/">Home</a>
-            <span>/</span>
-            <a href="/tax-strategies/">Tax Strategies</a>
-            <span>/</span>
-            <span class="text-gray-900">${persona.title}</span>
-        </div>
 
         <section class="persona-hero">
             <div class="container-custom">
