@@ -4,11 +4,63 @@ module.exports = {
     "./*.html",
     "./blog/**/*.html",
     "./templates/**/*.html",
-    "./assets/js/**/*.js"
+    "./assets/js/**/*.js",
+    "./topics/**/*.html",
+    "./tax-strategies/**/*.html",
+    "./retirement/**/*.html",
+    "./programmatic-pages/**/*.html"
   ],
   theme: {
     extend: {
       colors: {
+        // Tailwind default colors
+        'emerald': {
+          100: '#D1FAE5',
+          600: '#059669',
+          800: '#065F46',
+        },
+        'gray': {
+          50: '#F9FAFB',
+          100: '#F3F4F6',
+          200: '#E5E7EB',
+          700: '#374151',
+        },
+        'slate': {
+          50: '#F8FAFC',
+          100: '#F1F5F9',
+          200: '#E2E8F0',
+          300: '#CBD5E1',
+          400: '#94A3B8',
+          500: '#64748B',
+          600: '#475569',
+          700: '#334155',
+          800: '#1E293B',
+          900: '#0F172A',
+        },
+        'cyan': {
+          50: '#ECFEFF',
+          100: '#CFFAFE',
+          200: '#A5F3FC',
+          300: '#67E8F9',
+          400: '#22D3EE',
+          500: '#06B6D4',
+          600: '#0891B2',
+          700: '#0E7490',
+          800: '#155E75',
+          900: '#164E63',
+        },
+        'green': {
+          50: '#F0FDF4',
+          100: '#DCFCE7',
+          200: '#BBF7D0',
+          300: '#86EFAC',
+          400: '#4ADE80',
+          500: '#22C55E',
+          600: '#16A34A',
+          700: '#15803D',
+          800: '#166534',
+          900: '#14532D',
+        },
         // Legacy Investing Show - Premium Editorial Theme
         'brand': {
           // Primary Navy - Sophisticated, Trustworthy
