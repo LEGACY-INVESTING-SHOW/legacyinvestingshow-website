@@ -10,6 +10,8 @@
     "build:rss": "node scripts/generate-rss.js",
     "build:images": "node scripts/optimize-images.js",
     "build:tax-strategies": "node scripts/build-tax-strategies.js",
+    "pipeline:legacy": "node scripts/pipeline/run-pipeline.js",
+    "pipeline": "node scripts/pipeline/run-skill-pipeline.js",
     "build": "npm run build:css && npm run build:blog && npm run build:tax-strategies && npm run build:sitemap && npm run build:rss",
     "start": "npx serve ."
   },

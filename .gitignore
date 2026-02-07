@@ -39,6 +39,8 @@ assets/images/backup/
 
 # Build artifacts
 .cache/
+pipeline/runs/*
+!pipeline/runs/.gitkeep
 
 # Package lock files (optional - uncomment if not using)
 # package-lock.json

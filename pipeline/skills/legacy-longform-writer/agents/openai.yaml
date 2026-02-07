@@ -1,0 +1,4 @@
+interface:
+  display_name: "Legacy Longform Writer"
+  short_description: "Draft long-form markdown from approved briefs."
+  default_prompt: "Write publish-ready markdown from an approved brief and evidence set."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Legacy Topic Researcher"
+  short_description: "Run deep web research for one content topic."
+  default_prompt: "Research one topic using current web evidence and output a structured dossier."

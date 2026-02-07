@@ -1,0 +1,4 @@
+interface:
+  display_name: "Legacy Brief Architect"
+  short_description: "Build production-ready SEO/AEO content briefs."
+  default_prompt: "Convert research into a complete brief with structure, evidence anchors, and checks."

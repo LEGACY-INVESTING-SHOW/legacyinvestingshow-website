@@ -1,0 +1,4 @@
+interface:
+  display_name: "Legacy SEO AEO Reviewer"
+  short_description: "Audit draft quality for SEO, AEO, and risk."
+  default_prompt: "Review a draft, score quality, and return pass/fail with exact fixes."

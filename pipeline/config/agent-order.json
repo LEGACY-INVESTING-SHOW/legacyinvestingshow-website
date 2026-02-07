@@ -1,0 +1,36 @@
+{
+    "pipelineName": "legacy-content-multi-agent",
+    "version": "1.0.0",
+    "agents": [
+        {
+            "id": "research",
+            "step": 1,
+            "input": ["topic"],
+            "output": ["research.json"]
+        },
+        {
+            "id": "brief-builder",
+            "step": 2,
+            "input": ["research.json"],
+            "output": ["brief.json"]
+        },
+        {
+            "id": "writer",
+            "step": 3,
+            "input": ["brief.json"],
+            "output": ["draft.md"]
+        },
+        {
+            "id": "reviewer",
+            "step": 4,
+            "input": ["draft.md", "brief.json"],
+            "output": ["review.json", "REVIEW_ME.md"]
+        },
+        {
+            "id": "publisher",
+            "step": 5,
+            "input": ["draft.md", "review.json"],
+            "output": ["content/blog/<slug>.md"]
+        }
+    ]
+}
