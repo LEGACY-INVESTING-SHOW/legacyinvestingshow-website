@@ -58,12 +58,15 @@ echo "Sample file: $sample_file"
 
 check_pattern "$sample_file" "<title>.+Legacy Investing Show</title>" "title tag"
 check_pattern "$sample_file" "<meta\\s+name=\"description\"\\s+content=\"[^\"]+\"" "meta description"
+check_pattern "$sample_file" "<meta\\s+name=\"keywords\"\\s+content=\"[^\"]+\"" "meta keywords non-empty"
 check_pattern "$sample_file" "<link\\s+rel=\"canonical\"\\s+href=\"https?://[^\"]+\"" "canonical url"
+check_pattern "$sample_file" "<meta\\s+property=\"article:published_time\"\\s+content=\"[0-9]{4}-[0-9]{2}-[0-9]{2}T" "article published time iso"
 check_pattern "$sample_file" "<meta\\s+property=\"og:title\"\\s+content=\"[^\"]+\"" "og:title"
 check_pattern "$sample_file" "<meta\\s+property=\"og:description\"\\s+content=\"[^\"]+\"" "og:description"
 check_pattern "$sample_file" "<meta\\s+property=\"og:image\"\\s+content=\"https?://[^\"]+\"" "og:image absolute url"
 check_pattern "$sample_file" "<meta\\s+name=\"twitter:card\"\\s+content=\"summary_large_image\"" "twitter card"
 check_pattern "$sample_file" "<script\\s+type=\"application/ld\\+json\">" "json-ld schema"
+check_pattern "$sample_file" "\"@type\"\\s*:\\s*\"Organization\"" "organization schema"
 
 h1_count=$(rg -o "<h1\\b" "$sample_file" | wc -l | tr -d ' ')
 echo "H1 count: $h1_count"
