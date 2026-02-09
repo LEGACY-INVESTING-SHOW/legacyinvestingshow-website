@@ -12,6 +12,11 @@
     "build:tax-strategies": "node scripts/build-tax-strategies.js",
     "pipeline:legacy": "node scripts/pipeline/run-pipeline.js",
     "pipeline": "node scripts/pipeline/run-skill-pipeline.js",
+    "cms:sync:blog": "./scripts/cms/sync-blog-content.sh",
+    "cms:check:parity": "./scripts/cms/check-parity.sh",
+    "cms:build": "zsh -lc 'cd \"/Users/deveshdhardubey/legacy-content-cms\" && npm run build'",
+    "cms:smoke": "./scripts/cms/smoke-check-eleventy.sh",
+    "cms:verify": "npm run cms:sync:blog && npm run cms:check:parity && npm run cms:build && npm run cms:smoke",
     "build": "npm run build:css && npm run build:blog && npm run build:tax-strategies && npm run build:sitemap && npm run build:rss",
     "start": "npx serve ."
   },

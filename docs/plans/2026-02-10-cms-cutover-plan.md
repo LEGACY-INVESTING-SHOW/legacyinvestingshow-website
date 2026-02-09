@@ -31,6 +31,16 @@ Acceptance criteria:
 2. Verify file-level parity.
 3. Build Eleventy and verify output count.
 
+Operational commands:
+
+```bash
+npm run cms:sync:blog
+npm run cms:check:parity
+npm run cms:build
+npm run cms:smoke
+npm run cms:verify
+```
+
 Acceptance criteria:
 
 - Slug parity is exact between repos.
