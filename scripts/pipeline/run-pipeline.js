@@ -3,6 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 const matter = require('gray-matter');
+const { spawnSync } = require('child_process');
 
 const ROOT_DIR = path.join(__dirname, '..', '..');
 const PIPELINE_DIR = path.join(ROOT_DIR, 'pipeline');
@@ -525,6 +526,22 @@ function writeReviewMarkdown(review) {
     return lines.join('\n');
 }
 
+function runBuild(cmd) {
+    const parts = cmd.split(' ');
+    const proc = spawnSync(parts[0], parts.slice(1), {
+        cwd: ROOT_DIR,
+        stdio: 'pipe',
+        encoding: 'utf8'
+    });
+
+    return {
+        command: cmd,
+        exitCode: proc.status,
+        stdout: proc.stdout || '',
+        stderr: proc.stderr || ''
+    };
+}
+
 function publishDraft(draftPath, slug, review) {
     const targetPath = path.join(CONTENT_BLOG_DIR, `${slug}.md`);
     const exists = fs.existsSync(targetPath);
@@ -533,7 +550,9 @@ function publishDraft(draftPath, slug, review) {
         return {
             published: false,
             reason: 'Review did not pass quality gates',
-            targetPath
+            targetPath,
+            build: [],
+            reverted: false
         };
     }
 
@@ -541,16 +560,41 @@ function publishDraft(draftPath, slug, review) {
         return {
             published: false,
             reason: 'Target file already exists. Manual merge required.',
-            targetPath
+            targetPath,
+            build: [],
+            reverted: false
         };
     }
 
     fs.copyFileSync(draftPath, targetPath);
 
+    const build = [
+        runBuild('npm run build:blog'),
+        runBuild('npm run build:sitemap'),
+        runBuild('npm run cms:verify')
+    ];
+    const failed = build.filter((step) => step.exitCode !== 0);
+
+    if (failed.length > 0) {
+        if (fs.existsSync(targetPath)) {
+            fs.unlinkSync(targetPath);
+        }
+
+        return {
+            published: false,
+            reason: `Publish gates failed: ${failed.map((step) => step.command).join(', ')}. Draft copy reverted.`,
+            targetPath,
+            build,
+            reverted: true
+        };
+    }
+
     return {
         published: true,
-        reason: 'Draft copied to content/blog/',
-        targetPath
+        reason: 'Draft copied and publish gates passed.',
+        targetPath,
+        build,
+        reverted: false
     };
 }
 
