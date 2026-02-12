@@ -10,6 +10,7 @@
     "build:rss": "node scripts/generate-rss.js",
     "build:images": "node scripts/optimize-images.js",
     "build:tax-strategies": "node scripts/build-tax-strategies.js",
+    "build:seo-titles": "node scripts/normalize-seo-titles.js",
     "pipeline:legacy": "node scripts/pipeline/run-pipeline.js",
     "pipeline": "node scripts/pipeline/run-skill-pipeline.js",
     "cms:sync:blog": "./scripts/cms/sync-blog-content.sh",
@@ -18,7 +19,7 @@
     "cms:smoke": "./scripts/cms/smoke-check-eleventy.sh",
     "cms:publish:posts": "./scripts/cms/publish-eleventy-posts.sh",
     "cms:verify": "npm run cms:sync:blog && npm run cms:check:parity && npm run cms:build && npm run cms:smoke",
-    "build": "npm run build:css && npm run build:blog && npm run cms:verify && npm run cms:publish:posts && npm run build:tax-strategies && npm run build:sitemap && npm run build:rss",
+    "build": "npm run build:css && npm run build:blog && npm run cms:verify && npm run cms:publish:posts && npm run build:tax-strategies && npm run build:seo-titles && npm run build:sitemap && npm run build:rss",
     "start": "npx serve ."
   },
   "dependencies": {
