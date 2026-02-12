@@ -136,7 +136,7 @@ function generateBlogPost(video, transcript) {
     <meta name="description" content="{{EXCERPT}}">
     <meta name="author" content="Preston Seo">
     <meta name="date" content="{{DATE}}">
-    <link rel="canonical" href="https://legacyinvestingshow-website.vercel.app/blog/{{FILENAME}}">
+    <link rel="canonical" href="https://www.legacyinvestingshow.com/blog/{{FILENAME}}">
 </head>
 <body>
     <article>
@@ -194,7 +194,7 @@ function processTranscript(transcript) {
 </div>
 
 <div class="cta">
-    <p>Want to learn more? <a href="/programs.html">Check out our programs</a> or <a href="/blog/">read more articles</a>.</p>
+    <p>Want to learn more? <a href="/programs">Check out our programs</a> or <a href="/blog/">read more articles</a>.</p>
 </div>
   `;
 }

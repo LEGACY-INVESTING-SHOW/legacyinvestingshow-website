@@ -6,7 +6,7 @@ modifiedDate: 2026-01-23
 author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"
 category: Success Story
-canonical: "https://legacyinvestingshow.com/blog/rob-100k-3-airbnbs-working-fulltime"
+canonical: "https://www.legacyinvestingshow.com/blog/rob-100k-3-airbnbs-working-fulltime"
 
 seo:
   primaryKeyword: "airbnb arbitrage six figures"
@@ -739,7 +739,7 @@ The lesson: "No" often means "not yet" or "convince me." Circumstances change. N
 
 Rob proved that strategic property selection, reliable automation, and consistent action can produce $100K+ results—even while working full-time and raising two kids.
 
-[Learn more about Legacy Investing Show →](/programs.html)
+[Learn more about Legacy Investing Show →](/programs)
 
 ### Related Success Stories
 - [How Gary Built a $35K/Month Airbnb Portfolio](/blog/gary-marketing-executive-35k-month)
@@ -764,7 +764,7 @@ Rob proved that strategic property selection, reliable automation, and consisten
 
 Preston Seo has personally built a $15 million real estate portfolio generating over $400,000 per year in net profit from short-term rentals. He created Legacy Investing Show to teach the exact systems that scaled his business.
 
-[Learn more about the program →](/programs.html) | [Watch free training →](/free-training)
+[Learn more about the program →](/programs) | [Watch free training →](/free-training)
 
 ---
 

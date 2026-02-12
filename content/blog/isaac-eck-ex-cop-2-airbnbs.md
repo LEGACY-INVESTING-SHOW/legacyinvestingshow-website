@@ -9,7 +9,7 @@ author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"
 authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
 category: Success Story
-canonical: "https://legacyinvestingshow.com/blog/isaac-eck-ex-cop-2-airbnbs"
+canonical: "https://www.legacyinvestingshow.com/blog/isaac-eck-ex-cop-2-airbnbs"
 
 # SEO Keyword Targeting
 seo:
@@ -609,23 +609,23 @@ The cleaner is your eyes on the ground. If you find someone responsive and relia
 
 Isaac proved that with the right partner, a willingness to take action, and strategic market selection, you can build a portfolio across multiple states—all while traveling the country.
 
-[Learn more about Legacy Investing Show →](/programs.html)
+[Learn more about Legacy Investing Show →](/programs)
 
 ### Related Success Stories
 
-- [How Gary Built a $35K/Month Airbnb Portfolio](/blog/gary-marketing-executive-35k-month.html)
+- [How Gary Built a $35K/Month Airbnb Portfolio](/blog/gary-marketing-executive-35k-month)
 
-- [How James Built $7K/Month in 57 Days While Working Full-Time](/blog/james-7k-month-3-properties-remote.html)
+- [How James Built $7K/Month in 57 Days While Working Full-Time](/blog/james-7k-month-3-properties-remote)
 
-- [How Rob Made $100K from 3 Airbnbs with a 9-to-5](/blog/rob-100k-3-airbnbs-working-fulltime.html)
+- [How Rob Made $100K from 3 Airbnbs with a 9-to-5](/blog/rob-100k-3-airbnbs-working-fulltime)
 
 ### Helpful Resources
 
-- [Complete Guide to Airbnb Arbitrage](/blog/getting-started-airbnb-arbitrage.html)
+- [Complete Guide to Airbnb Arbitrage](/blog/getting-started-airbnb-arbitrage)
 
-- [Cold Calling Scripts for Landlords](/blog/landlord-cold-calling-scripts.html)
+- [Cold Calling Scripts for Landlords](/blog/landlord-cold-calling-scripts)
 
-- [How to Furnish an Airbnb on a Budget](/blog/airbnb-furnishing-budget-guide.html)
+- [How to Furnish an Airbnb on a Budget](/blog/airbnb-furnishing-budget-guide)
 
 ---
 
@@ -643,7 +643,7 @@ Isaac proved that with the right partner, a willingness to take action, and stra
 
 Preston Seo has personally built a $15 million real estate portfolio generating over $400,000 per year in net profit from short-term rentals. He created Legacy Investing Show to teach the exact systems that scaled his business.
 
-[Learn more about the program →](/programs.html) | [Watch free training →](/free-training)
+[Learn more about the program →](/programs) | [Watch free training →](/free-training)
 
 ---
 

@@ -9,7 +9,7 @@ author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"
 authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
 category: Success Story
-canonical: "https://legacyinvestingshow.com/blog/micah-facebook-message-airbnb"
+canonical: "https://www.legacyinvestingshow.com/blog/micah-facebook-message-airbnb"
 
 # SEO Keyword Targeting
 seo:
@@ -664,19 +664,19 @@ Most focused students secure their first property in 30-60 days. The biggest tim
 
 Micah proved that introverts can succeed in this business. His Facebook Marketplace approach eliminated the phone anxiety that stops many beginners. Five months after joining Legacy Investing Show, he had a property generating $5,000/month.
 
-[Learn more about Legacy Investing Show →](/programs.html)
+[Learn more about Legacy Investing Show →](/programs)
 
 ### Related Success Stories
 
-- [How Gary Built a $35K/Month Airbnb Portfolio in Austin](/blog/gary-marketing-executive-35k-month.html)
+- [How Gary Built a $35K/Month Airbnb Portfolio in Austin](/blog/gary-marketing-executive-35k-month)
 
-- [How James Made $7K/Month from 3 Properties While Working Full-Time](/blog/james-7k-month-3-properties-remote.html)
+- [How James Made $7K/Month from 3 Properties While Working Full-Time](/blog/james-7k-month-3-properties-remote)
 
-- [How Rob Made $100K from 3 Airbnbs with a 9-to-5](/blog/rob-100k-3-airbnbs-working-fulltime.html)
+- [How Rob Made $100K from 3 Airbnbs with a 9-to-5](/blog/rob-100k-3-airbnbs-working-fulltime)
 
 ### Helpful Resources
 
-- [Complete Guide to Airbnb Arbitrage](/blog/getting-started-airbnb-arbitrage.html)
+- [Complete Guide to Airbnb Arbitrage](/blog/getting-started-airbnb-arbitrage)
 
 ---
 
@@ -694,7 +694,7 @@ Micah proved that introverts can succeed in this business. His Facebook Marketpl
 
 Preston Seo has personally built a $15 million real estate portfolio generating over $400,000 per year in net profit from short-term rentals. He created Legacy Investing Show to teach the exact systems that scaled his business.
 
-[Learn more about the program →](/programs.html) | [Watch free training →](/free-training)
+[Learn more about the program →](/programs) | [Watch free training →](/free-training)
 
 ---
 

@@ -9,7 +9,7 @@ author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"
 authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
 category: Success Story
-canonical: "https://legacyinvestingshow.com/blog/tom-zero-to-25k-two-weeks"
+canonical: "https://www.legacyinvestingshow.com/blog/tom-zero-to-25k-two-weeks"
 
 # SEO Keyword Targeting
 seo:
@@ -594,19 +594,19 @@ Tom identifies several risks he actively manages:
 
 **Ready to build your own Airbnb arbitrage business like Tom?**
 
-[Learn more about Legacy Investing Show](/programs.html)
+[Learn more about Legacy Investing Show](/programs)
 
 ### Related Success Stories
 
-- [How Gary Built a $35,000/Month Airbnb Business in Austin](/blog/gary-marketing-executive-35k-month.html)
+- [How Gary Built a $35,000/Month Airbnb Business in Austin](/blog/gary-marketing-executive-35k-month)
 
-- [How James Built a $7,000/Month Airbnb Business in 57 Days](/blog/james-7k-month-3-properties-remote.html)
+- [How James Built a $7,000/Month Airbnb Business in 57 Days](/blog/james-7k-month-3-properties-remote)
 
-- [How Rob Made $100K from 3 Airbnbs While Working Full-Time](/blog/rob-100k-3-airbnbs-working-fulltime.html)
+- [How Rob Made $100K from 3 Airbnbs While Working Full-Time](/blog/rob-100k-3-airbnbs-working-fulltime)
 
 ### Helpful Resources
 
-- [Complete Guide to Getting Started with Airbnb Arbitrage](/blog/getting-started-airbnb-arbitrage.html)
+- [Complete Guide to Getting Started with Airbnb Arbitrage](/blog/getting-started-airbnb-arbitrage)
 
 ---
 
@@ -624,7 +624,7 @@ Tom identifies several risks he actively manages:
 
 Preston Seo created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[Learn more about the program](/programs.html) | [Watch free training](/free-training)
+[Learn more about the program](/programs) | [Watch free training](/free-training)
 
 ---
 

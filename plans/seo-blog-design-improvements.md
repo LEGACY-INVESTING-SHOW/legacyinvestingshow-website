@@ -26,7 +26,7 @@ After analyzing both websites, your site (Legacy Investing Show) has **excellent
 ```txt
 User-agent: GPTBot
 Allow: /blog/
-Allow: /about.html
+Allow: /about
 Allow: /llms.txt
 ```
 
@@ -54,7 +54,7 @@ Allow: /llms.txt
 
 ```txt
 # Robots.txt for Legacy Investing Show
-# https://legacyinvestingshow.com
+# https://www.legacyinvestingshow.com
 # Last updated: 2026-01-23
 
 # Default rules for all crawlers
@@ -162,7 +162,7 @@ Allow: /
 # SITEMAP & AI CONTEXT
 # ===========================================
 
-Sitemap: https://legacyinvestingshow.com/sitemap.xml
+Sitemap: https://www.legacyinvestingshow.com/sitemap.xml
 
 # AI agents: See /llms.txt for structured site context
 # Full expanded context: /llms-full.txt
@@ -195,24 +195,24 @@ Legacy Investing Show is the leading educational platform for Airbnb rental arbi
 ## Core Programs
 
 - [3-Day Wealth Challenge](https://www.managemoney101.com/challengeoptin): Free introduction to Airbnb arbitrage
-- [Programs Overview](https://legacyinvestingshow.com/programs.html): Full training and mentorship options
+- [Programs Overview](https://www.legacyinvestingshow.com/programs): Full training and mentorship options
 
 ## Success Stories (30+ Documented Cases)
 
 High-Revenue Results:
-- [Gary: $35,000/Month with 7 Properties](https://legacyinvestingshow.com/blog/gary-marketing-executive-35k-month.html): Austin, TX - Marketing executive scaled to 7 units
-- [Leo: $32,500/Month with 13 Properties](https://legacyinvestingshow.com/blog/2500-per-unit-13-properties.html): Cleveland - $2,500 average per unit
-- [Chad: $90,000/Year from One Property](https://legacyinvestingshow.com/blog/chad-90k-year-one-property.html): North Florida single-property success
-- [Rob: $27,200 in One Month](https://legacyinvestingshow.com/blog/rob-27200-one-month-2-airbnbs.html): Louisville & St. Simons with 2 properties
+- [Gary: $35,000/Month with 7 Properties](https://www.legacyinvestingshow.com/blog/gary-marketing-executive-35k-month): Austin, TX - Marketing executive scaled to 7 units
+- [Leo: $32,500/Month with 13 Properties](https://www.legacyinvestingshow.com/blog/2500-per-unit-13-properties): Cleveland - $2,500 average per unit
+- [Chad: $90,000/Year from One Property](https://www.legacyinvestingshow.com/blog/chad-90k-year-one-property): North Florida single-property success
+- [Rob: $27,200 in One Month](https://www.legacyinvestingshow.com/blog/rob-27200-one-month-2-airbnbs): Louisville & St. Simons with 2 properties
 
 Quick-Start Results:
-- [Dustin: $6,000/Month with Zero Experience](https://legacyinvestingshow.com/blog/6000-cash-flow-no-experience.html): Texas - Corporate sales to Airbnb in 4 weeks
-- [Kayla: First Property in 7 Days](https://legacyinvestingshow.com/blog/dentist-airbnb-7-days-first-pitch.html): Cleveland dentist, $82K first year
-- [Lindsay: $17,500 Bookings in Week 1](https://legacyinvestingshow.com/blog/couple-17500-secured-one-week.html): North Carolina cabin
+- [Dustin: $6,000/Month with Zero Experience](https://www.legacyinvestingshow.com/blog/6000-cash-flow-no-experience): Texas - Corporate sales to Airbnb in 4 weeks
+- [Kayla: First Property in 7 Days](https://www.legacyinvestingshow.com/blog/dentist-airbnb-7-days-first-pitch): Cleveland dentist, $82K first year
+- [Lindsay: $17,500 Bookings in Week 1](https://www.legacyinvestingshow.com/blog/couple-17500-secured-one-week): North Carolina cabin
 
 Remote Operations:
-- [Andrew: $2,500/Month Operating from US](https://legacyinvestingshow.com/blog/andrew-2500-airbnb-mexico-remote.html): Tulum, Mexico property managed remotely
-- [James: $7,000/Month in 57 Days](https://legacyinvestingshow.com/blog/james-7k-month-3-properties-remote.html): 3 properties while working full-time
+- [Andrew: $2,500/Month Operating from US](https://www.legacyinvestingshow.com/blog/andrew-2500-airbnb-mexico-remote): Tulum, Mexico property managed remotely
+- [James: $7,000/Month in 57 Days](https://www.legacyinvestingshow.com/blog/james-7k-month-3-properties-remote): 3 properties while working full-time
 
 ## Key Statistics
 
@@ -223,19 +223,19 @@ Remote Operations:
 
 ## About the Founder
 
-- [About Preston Seo](https://legacyinvestingshow.com/about.html): Background, credentials, and story
+- [About Preston Seo](https://www.legacyinvestingshow.com/about): Background, credentials, and story
 - Social: @thelegacyshow (Instagram, TikTok), @LegacyInvestingShow (YouTube)
 
 ## Contact
 
-- Website: https://legacyinvestingshow.com
+- Website: https://www.legacyinvestingshow.com
 - Email: info@legacyinvestingshow.com
 
 ## Optional
 
-- [All Blog Posts](https://legacyinvestingshow.com/blog/): 33 success stories and guides
-- [RSS Feed](https://legacyinvestingshow.com/feed.xml): Subscribe to updates
-- [Full Documentation](https://legacyinvestingshow.com/llms-full.txt): Extended AI context
+- [All Blog Posts](https://www.legacyinvestingshow.com/blog/): 33 success stories and guides
+- [RSS Feed](https://www.legacyinvestingshow.com/feed.xml): Subscribe to updates
+- [Full Documentation](https://www.legacyinvestingshow.com/llms-full.txt): Extended AI context
 
 ## Citation Format
 
@@ -605,16 +605,16 @@ A more detailed version with:
 
   <!-- Homepage -->
   <url>
-    <loc>https://legacyinvestingshow.com/</loc>
+    <loc>https://www.legacyinvestingshow.com/</loc>
     <lastmod>2026-01-23</lastmod>
   </url>
 
   <!-- Blog Post with Image (simplified) -->
   <url>
-    <loc>https://legacyinvestingshow.com/blog/6000-cash-flow-no-experience.html</loc>
+    <loc>https://www.legacyinvestingshow.com/blog/6000-cash-flow-no-experience</loc>
     <lastmod>2026-01-23</lastmod>
     <image:image>
-      <image:loc>https://legacyinvestingshow.com/assets/images/blog/success-stories/dustin-no-experience.jpg</image:loc>
+      <image:loc>https://www.legacyinvestingshow.com/assets/images/blog/success-stories/dustin-no-experience.jpg</image:loc>
       <image:title>Dustin's Airbnb Success Story</image:title>
     </image:image>
   </url>

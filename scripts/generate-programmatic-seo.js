@@ -66,13 +66,13 @@ const generateCityPages = () => {
     <title>Tax Strategies in ${city}, ${state} | Legacy Investing Show</title>
     <meta name="description" content="Discover the best tax strategies for ${city}, ${state} residents. Learn how to minimize taxes on real estate, business income, and investments with location-specific advice.">
     <meta name="keywords" content="tax strategies ${city} ${state}, ${city} tax planning, ${state} tax optimization, real estate tax ${city}">
-    <link rel="canonical" href="https://legacyinvestingshow-website.vercel.app/programmatic-pages/cities/${slug}">
+    <link rel="canonical" href="https://www.legacyinvestingshow.com/programmatic-pages/cities/${slug}">
     
     <!-- Open Graph -->
     <meta property="og:title" content="Tax Strategies in ${city}, ${state}">
     <meta property="og:description" content="Maximize your tax savings in ${city} with proven strategies for real estate investors and business owners.">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://legacyinvestingshow-website.vercel.app/programmatic-pages/cities/${slug}">
+    <meta property="og:url" content="https://www.legacyinvestingshow.com/programmatic-pages/cities/${slug}">
     
     <link rel="stylesheet" href="/assets/css/styles.css">
     
@@ -260,7 +260,7 @@ const generateComparisonPages = () => {
     <title>${title} | Legacy Investing Show</title>
     <meta name="description" content="Compare ${strategy1.title} vs ${strategy2.title}. Learn which tax strategy is right for your situation with detailed pros, cons, and recommendations.">
     <meta name="keywords" content="${strategy1.title.toLowerCase()} vs ${strategy2.title.toLowerCase()}, compare tax strategies, which is better">
-    <link rel="canonical" href="https://legacyinvestingshow-website.vercel.app/programmatic-pages/comparisons/${slug}">
+    <link rel="canonical" href="https://www.legacyinvestingshow.com/programmatic-pages/comparisons/${slug}">
     
     <meta property="og:title" content="${title}">
     <meta property="og:description" content="Side-by-side comparison of ${strategy1.title} and ${strategy2.title}">
@@ -468,7 +468,7 @@ const generatePersonaPages = () => {
     <title>Tax Strategies for ${persona.title} | Legacy Investing Show</title>
     <meta name="description" content="${persona.description} Discover the best tax strategies specifically for ${persona.title.toLowerCase()}.">
     <meta name="keywords" content="tax strategies ${persona.slug.replace(/-/g, ' ')}, ${persona.title.toLowerCase()} tax tips, tax deductions ${persona.slug.replace(/-/g, ' ')}">
-    <link rel="canonical" href="https://legacyinvestingshow-website.vercel.app/programmatic-pages/personas/${persona.slug}">
+    <link rel="canonical" href="https://www.legacyinvestingshow.com/programmatic-pages/personas/${persona.slug}">
     
     <meta property="og:title" content="Tax Strategies for ${persona.title}">
     <meta property="og:description" content="${persona.description}">

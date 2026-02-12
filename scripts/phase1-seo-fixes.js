@@ -118,19 +118,19 @@ function generateBreadcrumbSchema(personaSlug, personaTitle) {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://legacyinvestingshow.com/"
+                "item": "https://www.legacyinvestingshow.com/"
             },
             {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Tax Strategies",
-                "item": "https://legacyinvestingshow.com/tax-strategies/"
+                "item": "https://www.legacyinvestingshow.com/tax-strategies/"
             },
             {
                 "@type": "ListItem",
                 "position": 3,
                 "name": personaTitle,
-                "item": `https://legacyinvestingshow.com/tax-strategies/for/${personaSlug}`
+                "item": `https://www.legacyinvestingshow.com/tax-strategies/for/${personaSlug}`
             }
         ]
     };
@@ -145,11 +145,11 @@ function generateCollectionPageSchema(personaSlug, personaTitle, personaDescript
         "@type": "CollectionPage",
         "name": `Tax Strategies for ${personaTitle}`,
         "description": personaDescription,
-        "url": `https://legacyinvestingshow.com/tax-strategies/for/${personaSlug}`,
+        "url": `https://www.legacyinvestingshow.com/tax-strategies/for/${personaSlug}`,
         "isPartOf": {
             "@type": "WebSite",
             "name": "Legacy Investing Show",
-            "url": "https://legacyinvestingshow.com"
+            "url": "https://www.legacyinvestingshow.com"
         },
         "about": {
             "@type": "Thing",

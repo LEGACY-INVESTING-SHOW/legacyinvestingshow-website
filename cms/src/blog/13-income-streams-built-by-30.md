@@ -9,7 +9,7 @@ author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"
 authorCredentials: "2,000+ students trained, $10M+ student revenue generated, 13 income streams"
 category: Wealth Building
-canonical: "https://legacyinvestingshow.com/blog/13-income-streams-built-by-30"
+canonical: "https://www.legacyinvestingshow.com/blog/13-income-streams-built-by-30"
 
 # SEO Keyword Targeting
 seo:
@@ -400,7 +400,7 @@ Even if you currently make a lot of money at your day job, the second you stop w
 
 **Getting started**: If you already own rental property, consider converting to short-term rental (check local regulations first). For beginners, rental arbitrage (leasing a property and subletting on Airbnb with landlord permission) is a low-capital entry point.
 
-[Learn more about Airbnb arbitrage strategies](/programs.html)
+[Learn more about Airbnb arbitrage strategies](/programs)
 
 ---
 
@@ -623,7 +623,7 @@ Absolutely. Most income streams can be built part-time. Index fund investing tak
 
 If you're interested in building income through real estate--specifically short-term rentals with 30%+ cash-on-cash returns--Legacy Investing Show can help you get started faster.
 
-[Learn more about our programs](/programs.html)
+[Learn more about our programs](/programs)
 
 ---
 
@@ -638,7 +638,7 @@ If you're interested in building income through real estate--specifically short-
 
 Preston Seo created Legacy Investing Show to teach the exact systems that built his 13 income streams, providing the mentorship, strategies, and community that accelerate wealth building.
 
-[Learn more about the program](/programs.html) | [Watch free training](/free-training)
+[Learn more about the program](/programs) | [Watch free training](/free-training)
 
 ---
 

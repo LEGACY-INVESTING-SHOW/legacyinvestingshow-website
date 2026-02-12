@@ -9,7 +9,7 @@ author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"
 authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
 category: Success Story
-canonical: "https://legacyinvestingshow.com/blog/jeff-8k-month-texas-airbnb"
+canonical: "https://www.legacyinvestingshow.com/blog/jeff-8k-month-texas-airbnb"
 
 # SEO Keyword Targeting
 seo:
@@ -668,19 +668,19 @@ Jeff identifies market cycles as the primary risk—he learned this firsthand fr
 
 **Ready to build your own Airbnb business like Jeff?**
 
-[Learn more about Legacy Investing Show](/programs.html)
+[Learn more about Legacy Investing Show](/programs)
 
 ### Related Success Stories
 
-- [How Gary Built a $35,000/Month Airbnb Business in Austin](/blog/gary-marketing-executive-35k-month.html)
+- [How Gary Built a $35,000/Month Airbnb Business in Austin](/blog/gary-marketing-executive-35k-month)
 
-- [How James Built $7,000/Month in 57 Days While Working Full-Time](/blog/james-7k-month-3-properties-remote.html)
+- [How James Built $7,000/Month in 57 Days While Working Full-Time](/blog/james-7k-month-3-properties-remote)
 
-- [How Rob Made $100K from 3 Airbnbs While Raising Two Kids](/blog/rob-100k-3-airbnbs-working-fulltime.html)
+- [How Rob Made $100K from 3 Airbnbs While Raising Two Kids](/blog/rob-100k-3-airbnbs-working-fulltime)
 
 ### Helpful Resources
 
-- [Complete Guide to Getting Started with Airbnb Arbitrage](/blog/getting-started-airbnb-arbitrage.html)
+- [Complete Guide to Getting Started with Airbnb Arbitrage](/blog/getting-started-airbnb-arbitrage)
 
 ---
 
@@ -698,7 +698,7 @@ Jeff identifies market cycles as the primary risk—he learned this firsthand fr
 
 Preston Seo created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[Learn more about the program](/programs.html) | [Watch free training](/free-training)
+[Learn more about the program](/programs) | [Watch free training](/free-training)
 
 ---
 

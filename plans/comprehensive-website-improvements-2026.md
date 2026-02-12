@@ -234,12 +234,12 @@ find . -name "*.html" -exec sed -i '' 's/GA_MEASUREMENT_ID/G-XXXXXXXXXX/g' {} \;
 ```javascript
 // Add topic pages to sitemap
 const topicPages = [
-  '/topics/airbnb-arbitrage.html',
-  '/topics/tax-strategies.html',
-  '/topics/investing.html',
-  '/topics/business-structures.html',
-  '/topics/retirement.html',
-  '/topics/debt-management.html'
+  '/topics/airbnb-arbitrage',
+  '/topics/tax-strategies',
+  '/topics/investing',
+  '/topics/business-structures',
+  '/topics/retirement',
+  '/topics/debt-management'
 ];
 ```
 
@@ -325,7 +325,7 @@ const topicPages = [
 **Action:** Update all internal links to use clean URLs:
 ```html
 <!-- Change from -->
-<a href="/about.html">About</a>
+<a href="/about">About</a>
 
 <!-- Change to -->
 <a href="/about">About</a>
@@ -451,7 +451,7 @@ const topicPages = [
 ## Contact & Programs
 - Free 3-Day Challenge: https://www.managemoney101.com/challengeoptin
 - Free Tax Masterclass: https://www.managemoney101.com/2025workshop
-- Website: https://legacyinvestingshow.com
+- Website: https://www.legacyinvestingshow.com
 ```
 
 ### 4.4 FAQ Optimization for AI

@@ -9,7 +9,7 @@ author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"
 authorCredentials: "2,000+ students trained, $10M+ student revenue generated, $34K/month personal portfolio"
 category: Strategy
-canonical: "https://legacyinvestingshow.com/blog/airbnb-arbitrage-dead-bridge-method-2025"
+canonical: "https://www.legacyinvestingshow.com/blog/airbnb-arbitrage-dead-bridge-method-2025"
 
 # SEO Keyword Targeting
 seo:
@@ -526,7 +526,7 @@ Most education focuses on volume—getting as many properties as possible. The B
 
 The operators who will thrive in 2025 and beyond aren't those chasing the latest "hack" or competing on price. They're those who commit to quality, invest in differentiation, and build systems that scale.
 
-[Learn the complete Bridge Method framework with Legacy Investing Show](/programs.html)
+[Learn the complete Bridge Method framework with Legacy Investing Show](/programs)
 
 ### More Resources
 
@@ -546,7 +546,7 @@ The operators who will thrive in 2025 and beyond aren't those chasing the latest
 
 I created Legacy Investing Show to teach the exact systems that scaled my business from $15K first-month bookings to $34K/month—providing the strategy, scripts, and community that accelerate success.
 
-[Learn more about the program](/programs.html) | [Watch free training](/free-training)
+[Learn more about the program](/programs) | [Watch free training](/free-training)
 
 ---
 

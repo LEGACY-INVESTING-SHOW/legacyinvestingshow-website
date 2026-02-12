@@ -194,7 +194,7 @@ const relatedContentTemplates = {
                 `).join('')}
             </div>
             <div class="mt-8 text-center">
-                <a href="/topics/retirement.html" class="btn-secondary">← Back to Retirement Topic</a>
+                <a href="/topics/retirement" class="btn-secondary">← Back to Retirement Topic</a>
             </div>
         </div>
     </section>`,
@@ -235,12 +235,12 @@ const relatedContentTemplates = {
 
 // Strategy data for related content
 const taxStrategies = [
-  { title: "Cost Segregation", url: "/tax-strategies/cost-segregation.html", description: "Accelerate depreciation deductions on rental properties" },
-  { title: "Bonus Depreciation", url: "/tax-strategies/bonus-depreciation.html", description: "Take immediate deductions on qualified property" },
-  { title: "1031 Exchange", url: "/tax-strategies/1031-exchange.html", description: "Defer capital gains when selling investment property" },
-  { title: "Solo 401(k)", url: "/tax-strategies/solo-401k.html", description: "Maximize retirement contributions for self-employed" },
-  { title: "HSA Strategy", url: "/tax-strategies/hsa-strategy.html", description: "Triple tax advantage health savings account" },
-  { title: "Backdoor Roth IRA", url: "/tax-strategies/backdoor-roth-ira.html", description: "Tax-free growth for high-income earners" }
+  { title: "Cost Segregation", url: "/tax-strategies/cost-segregation", description: "Accelerate depreciation deductions on rental properties" },
+  { title: "Bonus Depreciation", url: "/tax-strategies/bonus-depreciation", description: "Take immediate deductions on qualified property" },
+  { title: "1031 Exchange", url: "/tax-strategies/1031-exchange", description: "Defer capital gains when selling investment property" },
+  { title: "Solo 401(k)", url: "/tax-strategies/solo-401k", description: "Maximize retirement contributions for self-employed" },
+  { title: "HSA Strategy", url: "/tax-strategies/hsa-strategy", description: "Triple tax advantage health savings account" },
+  { title: "Backdoor Roth IRA", url: "/tax-strategies/backdoor-roth-ira", description: "Tax-free growth for high-income earners" }
 ];
 
 const retirementGuides = [
@@ -365,7 +365,7 @@ function processAllPages() {
     if (fs.existsSync(filePath)) {
       const result = processFile(filePath, 'main', {
         schema: [
-          { name: 'Home', url: 'https://legacyinvestingshow.com/' },
+          { name: 'Home', url: 'https://www.legacyinvestingshow.com/' },
           { name: page.name }
         ],
         breadcrumb: breadcrumbTemplates.main(page.name)
@@ -389,8 +389,8 @@ function processAllPages() {
     
     const result = processFile(filePath, 'taxStrategy', {
       schema: [
-        { name: 'Home', url: 'https://legacyinvestingshow.com/' },
-        { name: 'Tax Strategies', url: 'https://legacyinvestingshow.com/tax-strategies/' },
+        { name: 'Home', url: 'https://www.legacyinvestingshow.com/' },
+        { name: 'Tax Strategies', url: 'https://www.legacyinvestingshow.com/tax-strategies/' },
         { name: strategyName }
       ],
       breadcrumb: breadcrumbTemplates.taxStrategy(strategyName),
@@ -404,7 +404,7 @@ function processAllPages() {
   if (fs.existsSync(taxIndexPath)) {
     const result = processFile(taxIndexPath, 'index', {
       schema: [
-        { name: 'Home', url: 'https://legacyinvestingshow.com/' },
+        { name: 'Home', url: 'https://www.legacyinvestingshow.com/' },
         { name: 'Tax Strategies' }
       ],
       breadcrumb: breadcrumbTemplates.index('Tax Strategies', '/tax-strategies/')
@@ -432,8 +432,8 @@ function processAllPages() {
     
     const result = processFile(filePath, 'persona', {
       schema: [
-        { name: 'Home', url: 'https://legacyinvestingshow.com/' },
-        { name: 'Tax Strategies', url: 'https://legacyinvestingshow.com/tax-strategies/' },
+        { name: 'Home', url: 'https://www.legacyinvestingshow.com/' },
+        { name: 'Tax Strategies', url: 'https://www.legacyinvestingshow.com/tax-strategies/' },
         { name: personaName }
       ],
       breadcrumb: breadcrumbTemplates.persona(personaName),
@@ -456,8 +456,8 @@ function processAllPages() {
     
     const result = processFile(filePath, 'retirement', {
       schema: [
-        { name: 'Home', url: 'https://legacyinvestingshow.com/' },
-        { name: 'Retirement', url: 'https://legacyinvestingshow.com/retirement/' },
+        { name: 'Home', url: 'https://www.legacyinvestingshow.com/' },
+        { name: 'Retirement', url: 'https://www.legacyinvestingshow.com/retirement/' },
         { name: pageName }
       ],
       breadcrumb: breadcrumbTemplates.retirement(pageName),
@@ -480,7 +480,7 @@ function processAllPages() {
     
     const result = processFile(filePath, 'topic', {
       schema: [
-        { name: 'Home', url: 'https://legacyinvestingshow.com/' },
+        { name: 'Home', url: 'https://www.legacyinvestingshow.com/' },
         { name: topicName }
       ],
       breadcrumb: breadcrumbTemplates.topic(topicName),
@@ -494,7 +494,7 @@ function processAllPages() {
   if (fs.existsSync(blogIndexPath)) {
     const result = processFile(blogIndexPath, 'index', {
       schema: [
-        { name: 'Home', url: 'https://legacyinvestingshow.com/' },
+        { name: 'Home', url: 'https://www.legacyinvestingshow.com/' },
         { name: 'Blog' }
       ],
       breadcrumb: breadcrumbTemplates.index('Blog', '/blog/')

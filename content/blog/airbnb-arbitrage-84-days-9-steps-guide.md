@@ -9,7 +9,7 @@ author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"
 authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
 category: How-To Guide
-canonical: "https://legacyinvestingshow.com/blog/airbnb-arbitrage-84-days-9-steps-guide"
+canonical: "https://www.legacyinvestingshow.com/blog/airbnb-arbitrage-84-days-9-steps-guide"
 
 # SEO Keyword Targeting
 seo:
@@ -989,7 +989,7 @@ Expect "no" frequently—it's a numbers game. Contact 10-20 landlords to get 1-2
 
 The only thing separating you from your first profitable property is action.
 
-[Learn more about Legacy Investing Show](/programs.html)
+[Learn more about Legacy Investing Show](/programs)
 
 ### Related Resources
 
@@ -1010,7 +1010,7 @@ The only thing separating you from your first profitable property is action.
 
 Preston created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[Learn more about the program](/programs.html) | [Watch free training](/free-training)
+[Learn more about the program](/programs) | [Watch free training](/free-training)
 
 ---
 

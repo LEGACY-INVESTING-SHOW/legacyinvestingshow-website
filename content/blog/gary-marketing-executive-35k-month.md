@@ -9,7 +9,7 @@ author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"
 authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
 category: Success Story
-canonical: "https://legacyinvestingshow.com/blog/gary-marketing-executive-35k-month"
+canonical: "https://www.legacyinvestingshow.com/blog/gary-marketing-executive-35k-month"
 
 # SEO Keyword Targeting
 seo:
@@ -626,7 +626,7 @@ Gary identifies several risks he actively manages:
 
 **Ready to build your own Airbnb arbitrage business like Gary?**
 
-[Learn more about Legacy Investing Show →](/programs.html)
+[Learn more about Legacy Investing Show →](/programs)
 
 ### Helpful Resources
 
@@ -645,7 +645,7 @@ Gary identifies several risks he actively manages:
 
 Preston Seo created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[Learn more about the program →](/programs.html) | [Watch free training →](/free-training)
+[Learn more about the program →](/programs) | [Watch free training →](/free-training)
 
 ---
 

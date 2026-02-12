@@ -9,7 +9,7 @@ author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"
 authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
 category: Success Story
-canonical: "https://legacyinvestingshow.com/blog/6000-cash-flow-no-experience"
+canonical: "https://www.legacyinvestingshow.com/blog/6000-cash-flow-no-experience"
 
 # SEO Keyword Targeting
 seo:
@@ -706,19 +706,19 @@ Dustin addresses this directly: the biggest risk is often in your head. He almos
 
 **Ready to build your own Airbnb arbitrage business like Dustin?**
 
-[Learn more about Legacy Investing Show &rarr;](/programs.html)
+[Learn more about Legacy Investing Show &rarr;](/programs)
 
 ### Related Success Stories
 
-- [How Gary Built $35,000/Month with 7 Properties in Austin](/blog/gary-marketing-executive-35k-month.html)
+- [How Gary Built $35,000/Month with 7 Properties in Austin](/blog/gary-marketing-executive-35k-month)
 
-- [How James Made $7,000/Month in 57 Days Working Full-Time](/blog/james-7k-month-3-properties-remote.html)
+- [How James Made $7,000/Month in 57 Days Working Full-Time](/blog/james-7k-month-3-properties-remote)
 
-- [How Rob Made $100K from 3 Airbnbs While Working 9-to-5](/blog/rob-100k-3-airbnbs-working-fulltime.html)
+- [How Rob Made $100K from 3 Airbnbs While Working 9-to-5](/blog/rob-100k-3-airbnbs-working-fulltime)
 
 ### Helpful Resources
 
-- [Complete Guide to Getting Started with Airbnb Arbitrage](/blog/getting-started-airbnb-arbitrage.html)
+- [Complete Guide to Getting Started with Airbnb Arbitrage](/blog/getting-started-airbnb-arbitrage)
 
 ---
 
@@ -736,7 +736,7 @@ Dustin addresses this directly: the biggest risk is often in your head. He almos
 
 Preston Seo created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[Learn more about the program &rarr;](/programs.html) | [Watch free training &rarr;](/free-training)
+[Learn more about the program &rarr;](/programs) | [Watch free training &rarr;](/free-training)
 
 ---
 

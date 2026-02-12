@@ -571,7 +571,7 @@ legacyinvestingshow-website/
 Copy `.env.example` to `.env` and set:
 
 ```bash
-SITE_URL=https://legacyinvestingshow.com
+SITE_URL=https://www.legacyinvestingshow.com
 YOUTUBE_API_KEY=your_key_here  # For YouTube automation
 YT_CHANNEL_ID=your_channel_id  # For YouTube automation
 ```

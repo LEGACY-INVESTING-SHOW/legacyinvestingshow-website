@@ -9,7 +9,7 @@ author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"
 authorCredentials: "40+ rental properties, $1.5M portfolio, 2,000+ students trained"
 category: How-To Guide
-canonical: "https://legacyinvestingshow.com/blog/finding-2500-cashflow-airbnb-properties"
+canonical: "https://www.legacyinvestingshow.com/blog/finding-2500-cashflow-airbnb-properties"
 
 # SEO Keyword Targeting
 seo:
@@ -665,7 +665,7 @@ The process I've outlined works in markets across the country. The key is discip
 4. **Apply the 2.25x rule** to specific properties
 5. **Evaluate differentiation potential** using the 3 pillars
 
-[Learn the complete system in Legacy Investing Show →](/programs.html)
+[Learn the complete system in Legacy Investing Show →](/programs)
 
 ### Related Resources
 
@@ -686,7 +686,7 @@ The process I've outlined works in markets across the country. The key is discip
 
 Preston has personally bought over 40 rental properties worth $1.5 million and runs multiple Airbnbs across the country. Legacy Investing Show teaches the exact systems that built this portfolio.
 
-[Learn more about the program →](/programs.html) | [Watch free training →](/free-training)
+[Learn more about the program →](/programs) | [Watch free training →](/free-training)
 
 ---
 

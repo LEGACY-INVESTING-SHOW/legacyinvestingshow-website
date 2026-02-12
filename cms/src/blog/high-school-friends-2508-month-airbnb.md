@@ -9,7 +9,7 @@ author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"
 authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
 category: Success Story
-canonical: "https://legacyinvestingshow.com/blog/high-school-friends-2508-month-airbnb"
+canonical: "https://www.legacyinvestingshow.com/blog/high-school-friends-2508-month-airbnb"
 
 # SEO Keyword Targeting
 seo:
@@ -634,19 +634,19 @@ Sarah and Nico address this directly: the biggest risk is letting ego damage bot
 
 **Ready to build your own Airbnb arbitrage business like Sarah and Nico?**
 
-[Learn more about Legacy Investing Show →](/programs.html)
+[Learn more about Legacy Investing Show →](/programs)
 
 ### Related Success Stories
 
-- [How Gary Built a $35,000/Month Airbnb Business in Austin](/blog/gary-marketing-executive-35k-month.html)
+- [How Gary Built a $35,000/Month Airbnb Business in Austin](/blog/gary-marketing-executive-35k-month)
 
-- [How James Built $7,000/Month in 57 Days While Working Full-Time](/blog/james-7k-month-3-properties-remote.html)
+- [How James Built $7,000/Month in 57 Days While Working Full-Time](/blog/james-7k-month-3-properties-remote)
 
-- [How Micah Made $5,000 His First Month with One Facebook Message](/blog/micah-facebook-message-5k-month-houston.html)
+- [How Micah Made $5,000 His First Month with One Facebook Message](/blog/micah-facebook-message-5k-month-houston)
 
 ### Helpful Resources
 
-- [Complete Guide to Getting Started with Airbnb Arbitrage](/blog/getting-started-airbnb-arbitrage.html)
+- [Complete Guide to Getting Started with Airbnb Arbitrage](/blog/getting-started-airbnb-arbitrage)
 
 ---
 
@@ -664,7 +664,7 @@ Sarah and Nico address this directly: the biggest risk is letting ego damage bot
 
 Preston Seo created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[Learn more about the program →](/programs.html) | [Watch free training →](/free-training)
+[Learn more about the program →](/programs) | [Watch free training →](/free-training)
 
 ---
 

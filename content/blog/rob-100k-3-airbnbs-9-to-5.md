@@ -9,7 +9,7 @@ author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"
 authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
 category: Success Story
-canonical: "https://legacyinvestingshow.com/blog/rob-100k-3-airbnbs-9-to-5"
+canonical: "https://www.legacyinvestingshow.com/blog/rob-100k-3-airbnbs-9-to-5"
 
 # SEO Keyword Targeting
 seo:
@@ -567,15 +567,15 @@ Rob identifies several challenges he navigated:
 
 **Ready to build your own Airbnb arbitrage business like Rob?**
 
-[Learn more about Legacy Investing Show](/programs.html)
+[Learn more about Legacy Investing Show](/programs)
 
 ### Helpful Resources
 
 - [Complete Guide to Getting Started with Airbnb Arbitrage](/blog/getting-started-airbnb-arbitrage)
 
-- [How Gary Built a $35,000/Month Airbnb Business](/blog/gary-marketing-executive-35k-month.html)
+- [How Gary Built a $35,000/Month Airbnb Business](/blog/gary-marketing-executive-35k-month)
 
-- [How James Built $7K/Month in 57 Days](/blog/james-7k-month-3-properties-remote.html)
+- [How James Built $7K/Month in 57 Days](/blog/james-7k-month-3-properties-remote)
 
 ---
 
@@ -593,7 +593,7 @@ Rob identifies several challenges he navigated:
 
 Preston Seo built a $15 million real estate portfolio and generates $400,000 per year in net profit from his Airbnbs. He created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[Learn more about the program](/programs.html) | [Watch free training](/free-training)
+[Learn more about the program](/programs) | [Watch free training](/free-training)
 
 ---
 

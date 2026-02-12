@@ -9,7 +9,7 @@ author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"
 authorCredentials: "50+ rental units, assisted living facility owner, 2,000+ students trained"
 category: Side Hustles
-canonical: "https://legacyinvestingshow.com/blog/best-side-hustles-no-money-full-time-job"
+canonical: "https://www.legacyinvestingshow.com/blog/best-side-hustles-no-money-full-time-job"
 
 # SEO Keyword Targeting
 seo:
@@ -789,7 +789,7 @@ Plan for **10-15 hours weekly** to see meaningful results. This could be 2-3 hou
 
 The strategies in this guide work - we know because we're using them and our community members are using them to build wealth every day. The question isn't whether they work. The question is whether you'll take action.
 
-[Join Legacy Investing Show to accelerate your journey](/programs.html)
+[Join Legacy Investing Show to accelerate your journey](/programs)
 
 ### What You Get With Legacy Investing
 
@@ -813,7 +813,7 @@ The strategies in this guide work - we know because we're using them and our com
 
 We've been in your shoes. We know how overwhelming getting started can be. That's why we created this channel and these programs - to help you step by step get to where you want to be financially.
 
-[Learn more about our programs](/programs.html) | [Watch free training](/free-training)
+[Learn more about our programs](/programs) | [Watch free training](/free-training)
 
 ---
 

@@ -226,9 +226,9 @@ function buildBrief(research) {
         faqTargets: research.questions,
         internalLinks: [
             '/blog/',
-            '/topics/airbnb-arbitrage.html',
-            '/topics/tax-strategies.html',
-            '/programs.html'
+            '/topics/airbnb-arbitrage',
+            '/topics/tax-strategies',
+            '/programs'
         ],
         cta: 'Join the 3-Day Wealth Challenge and apply the framework with guided support.',
         sourceResearch: research

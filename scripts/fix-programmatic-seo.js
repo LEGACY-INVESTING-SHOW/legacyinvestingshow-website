@@ -44,10 +44,10 @@ const getHead = (title, description, slug, type = 'cities') => `
     <meta name="keywords" content="tax strategies, real estate investing, wealth building, Preston Seo">
     <meta name="author" content="Preston Seo">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://legacyinvestingshow-website.vercel.app/programmatic-pages/${type}/${slug}">
+    <link rel="canonical" href="https://www.legacyinvestingshow.com/programmatic-pages/${type}/${slug}">
     
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://legacyinvestingshow-website.vercel.app/programmatic-pages/${type}/${slug}">
+    <meta property="og:url" content="https://www.legacyinvestingshow.com/programmatic-pages/${type}/${slug}">
     <meta property="og:title" content="${title}">
     <meta property="og:description" content="${description}">
     <meta property="og:site_name" content="Legacy Investing Show">
@@ -84,9 +84,9 @@ const getHeader = () => `
             </a>
             <div class="hidden md:flex items-center gap-6">
                 <a href="/" class="nav-link">Home</a>
-                <a href="/about.html" class="nav-link">About</a>
-                <a href="/programs.html" class="nav-link">Programs</a>
-                <a href="/success-stories.html" class="nav-link">Results</a>
+                <a href="/about" class="nav-link">About</a>
+                <a href="/programs" class="nav-link">Programs</a>
+                <a href="/success-stories" class="nav-link">Results</a>
                 <a href="/tax-strategies/" class="nav-link nav-link-active">Tax Strategies</a>
                 <a href="/blog/" class="nav-link">Blog</a>
             </div>
@@ -111,9 +111,9 @@ const getFooter = () => `
             <div>
                 <h4 class="font-medium mb-4">Quick Links</h4>
                 <ul class="space-y-2 text-sm text-gray-400">
-                    <li><a href="/about.html" class="hover:text-white">About</a></li>
-                    <li><a href="/programs.html" class="hover:text-white">Programs</a></li>
-                    <li><a href="/success-stories.html" class="hover:text-white">Success Stories</a></li>
+                    <li><a href="/about" class="hover:text-white">About</a></li>
+                    <li><a href="/programs" class="hover:text-white">Programs</a></li>
+                    <li><a href="/success-stories" class="hover:text-white">Success Stories</a></li>
                 </ul>
             </div>
             <div>
@@ -121,7 +121,7 @@ const getFooter = () => `
                 <ul class="space-y-2 text-sm text-gray-400">
                     <li><a href="/tax-strategies/" class="hover:text-white">Tax Strategies</a></li>
                     <li><a href="/blog/" class="hover:text-white">Blog</a></li>
-                    <li><a href="/topics/airbnb-arbitrage.html" class="hover:text-white">Airbnb Arbitrage</a></li>
+                    <li><a href="/topics/airbnb-arbitrage" class="hover:text-white">Airbnb Arbitrage</a></li>
                 </ul>
             </div>
             <div>
@@ -191,7 +191,7 @@ ${getHead(title, description, `${slug}.html`, 'cities')}
                 
                 <div style="display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));">
                     ${relevantStrategies.map((strategy, index) => `
-                    <a href="/tax-strategies/${strategy.slug}.html" style="background: white; border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 1.5rem; text-decoration: none; transition: all 0.2s; display: block;" onmouseover="this.style.borderColor='#10b981';this.style.boxShadow='0 4px 12px rgba(16, 185, 129, 0.15)'" onmouseout="this.style.borderColor='#e5e7eb';this.style.boxShadow='none'">
+                    <a href="/tax-strategies/${strategy.slug}" style="background: white; border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 1.5rem; text-decoration: none; transition: all 0.2s; display: block;" onmouseover="this.style.borderColor='#10b981';this.style.boxShadow='0 4px 12px rgba(16, 185, 129, 0.15)'" onmouseout="this.style.borderColor='#e5e7eb';this.style.boxShadow='none'">
                         <div style="display: inline-block; font-size: 0.625rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.25rem 0.5rem; border-radius: 9999px; background: #d1fae5; color: #065f46; margin-bottom: 0.75rem;">Strategy ${index + 1}</div>
                         <h3 style="font-size: 1.125rem; font-weight: 600; color: #111827; margin-bottom: 0.5rem;">${strategy.title}</h3>
                         <p style="font-size: 0.875rem; color: #6b7280; line-height: 1.5;">Learn how ${strategy.title.toLowerCase()} can reduce your tax burden in ${city} and throughout ${state}.</p>
@@ -245,7 +245,7 @@ ${getHead(title, description, `${slug}.html`, 'cities')}
                 <div style="background: linear-gradient(135deg, #1f2937 0%, #111827 100%); border-radius: 1rem; padding: 3rem 2rem; color: white;">
                     <h2 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1rem;">Ready to Optimize Your Taxes in ${city}?</h2>
                     <p style="color: #d1d5db; margin-bottom: 1.5rem; max-width: 32rem; margin-left: auto; margin-right: auto;">Get personalized guidance and expert advice tailored to your specific situation in ${city}, ${state}.</p>
-                    <a href="/programs.html" style="display: inline-flex; align-items-center: center; gap: 0.5rem; padding: 1rem 2rem; background: #10b981; color: white; font-weight: 600; border-radius: 0.5rem; text-decoration: none; transition: background 0.2s;" onmouseover="this.style.background='#059669'" onmouseout="this.style.background='#10b981'">Get Personalized Tax Guidance</a>
+                    <a href="/programs" style="display: inline-flex; align-items-center: center; gap: 0.5rem; padding: 1rem 2rem; background: #10b981; color: white; font-weight: 600; border-radius: 0.5rem; text-decoration: none; transition: background 0.2s;" onmouseover="this.style.background='#059669'" onmouseout="this.style.background='#10b981'">Get Personalized Tax Guidance</a>
                 </div>
             </div>
         </section>
@@ -344,7 +344,7 @@ ${getHead(comp.title, description, `${comp.slug}.html`, 'comparisons')}
                         <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: #4b5563;"><span style="position: absolute; left: 0; color: #10b981; font-weight: bold;">✓</span> You want long-term depreciation benefits</li>
                         <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: #4b5563;"><span style="position: absolute; left: 0; color: #10b981; font-weight: bold;">✓</span> You have high taxable income to offset</li>
                     </ul>
-                    <a href="/tax-strategies/${strategy1.slug}.html" style="display: inline-block; padding: 0.75rem 1.5rem; background: transparent; color: #059669; border: 2px solid #059669; text-decoration: none; border-radius: 0.5rem; font-weight: 600;" onmouseover="this.style.background='#059669';this.style.color='white'" onmouseout="this.style.background='transparent';this.style.color='#059669'">Learn More About ${strategy1.title}</a>
+                    <a href="/tax-strategies/${strategy1.slug}" style="display: inline-block; padding: 0.75rem 1.5rem; background: transparent; color: #059669; border: 2px solid #059669; text-decoration: none; border-radius: 0.5rem; font-weight: 600;" onmouseover="this.style.background='#059669';this.style.color='white'" onmouseout="this.style.background='transparent';this.style.color='#059669'">Learn More About ${strategy1.title}</a>
                 </div>
             </div>
         </section>
@@ -359,7 +359,7 @@ ${getHead(comp.title, description, `${comp.slug}.html`, 'comparisons')}
                         <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: #4b5563;"><span style="position: absolute; left: 0; color: #10b981; font-weight: bold;">✓</span> You want simpler implementation</li>
                         <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: #4b5563;"><span style="position: absolute; left: 0; color: #10b981; font-weight: bold;">✓</span> You have qualifying property purchases</li>
                     </ul>
-                    <a href="/tax-strategies/${strategy2.slug}.html" style="display: inline-block; padding: 0.75rem 1.5rem; background: transparent; color: #059669; border: 2px solid #059669; text-decoration: none; border-radius: 0.5rem; font-weight: 600;" onmouseover="this.style.background='#059669';this.style.color='white'" onmouseout="this.style.background='transparent';this.style.color='#059669'">Learn More About ${strategy2.title}</a>
+                    <a href="/tax-strategies/${strategy2.slug}" style="display: inline-block; padding: 0.75rem 1.5rem; background: transparent; color: #059669; border: 2px solid #059669; text-decoration: none; border-radius: 0.5rem; font-weight: 600;" onmouseover="this.style.background='#059669';this.style.color='white'" onmouseout="this.style.background='transparent';this.style.color='#059669'">Learn More About ${strategy2.title}</a>
                 </div>
             </div>
         </section>
@@ -370,7 +370,7 @@ ${getHead(comp.title, description, `${comp.slug}.html`, 'comparisons')}
                 <div style="background: linear-gradient(135deg, #1f2937 0%, #111827 100%); border-radius: 1rem; padding: 3rem 2rem; color: white;">
                     <h2 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1rem;">Still Not Sure Which is Right for You?</h2>
                     <p style="color: #d1d5db; margin-bottom: 1.5rem;">Get personalized advice from tax experts who can analyze your specific situation.</p>
-                    <a href="/programs.html" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; background: #10b981; color: white; font-weight: 600; border-radius: 0.5rem; text-decoration: none;" onmouseover="this.style.background='#059669'" onmouseout="this.style.background='#10b981'">Get Expert Guidance</a>
+                    <a href="/programs" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; background: #10b981; color: white; font-weight: 600; border-radius: 0.5rem; text-decoration: none;" onmouseover="this.style.background='#059669'" onmouseout="this.style.background='#10b981'">Get Expert Guidance</a>
                 </div>
             </div>
         </section>
@@ -429,7 +429,7 @@ ${getHead(`Tax Strategies for ${persona.title}`, persona.desc, `${persona.slug}.
                 
                 <div style="display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));">
                     ${relevantStrategies.map((strategy, index) => `
-                    <a href="/tax-strategies/${strategy.slug}.html" style="background: white; border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 1.5rem; text-decoration: none; transition: all 0.2s; display: block;" onmouseover="this.style.borderColor='#10b981';this.style.boxShadow='0 4px 12px rgba(16, 185, 129, 0.15)'" onmouseout="this.style.borderColor='#e5e7eb';this.style.boxShadow='none'">
+                    <a href="/tax-strategies/${strategy.slug}" style="background: white; border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 1.5rem; text-decoration: none; transition: all 0.2s; display: block;" onmouseover="this.style.borderColor='#10b981';this.style.boxShadow='0 4px 12px rgba(16, 185, 129, 0.15)'" onmouseout="this.style.borderColor='#e5e7eb';this.style.boxShadow='none'">
                         <div style="display: inline-block; font-size: 0.625rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.25rem 0.5rem; border-radius: 9999px; background: #d1fae5; color: #065f46; margin-bottom: 0.75rem;">Top ${index + 1}</div>
                         <h3 style="font-size: 1.125rem; font-weight: 600; color: #111827; margin-bottom: 0.5rem;">${strategy.title}</h3>
                         <p style="font-size: 0.875rem; color: #6b7280; line-height: 1.5;">Essential strategy for ${persona.title.toLowerCase()} to minimize tax burden.</p>
@@ -445,7 +445,7 @@ ${getHead(`Tax Strategies for ${persona.title}`, persona.desc, `${persona.slug}.
                 <div style="background: linear-gradient(135deg, #1f2937 0%, #111827 100%); border-radius: 1rem; padding: 3rem 2rem; color: white;">
                     <h2 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1rem;">Get Expert Tax Guidance</h2>
                     <p style="color: #d1d5db; margin-bottom: 1.5rem;">Every ${persona.title.toLowerCase()} situation is unique. Get personalized strategies tailored to you.</p>
-                    <a href="/programs.html" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; background: #10b981; color: white; font-weight: 600; border-radius: 0.5rem; text-decoration: none;" onmouseover="this.style.background='#059669'" onmouseout="this.style.background='#10b981'">Start Optimizing Your Taxes</a>
+                    <a href="/programs" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; background: #10b981; color: white; font-weight: 600; border-radius: 0.5rem; text-decoration: none;" onmouseover="this.style.background='#059669'" onmouseout="this.style.background='#10b981'">Start Optimizing Your Taxes</a>
                 </div>
             </div>
         </section>

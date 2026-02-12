@@ -1,5 +1,5 @@
 # SEO Audit Report: Legacy Investing Show
-**URL:** https://legacyinvestingshow-website.vercel.app  
+**URL:** https://www.legacyinvestingshow.com  
 **Date:** February 1, 2026  
 **Auditor:** Marlowe (SEO Audit Skill)
 
@@ -171,9 +171,9 @@ The Legacy Investing Show website is well-structured for SEO with solid technica
 
 | Keyword | Page | Status |
 |---------|------|--------|
-| "cost segregation" | /tax-strategies/cost-segregation.html | ✅ Optimized |
-| "1031 exchange" | /tax-strategies/1031-exchange.html | ✅ Optimized |
-| "short term rental loophole" | /tax-strategies/short-term-rental-loophole.html | ✅ Optimized |
+| "cost segregation" | /tax-strategies/cost-segregation | ✅ Optimized |
+| "1031 exchange" | /tax-strategies/1031-exchange | ✅ Optimized |
+| "short term rental loophole" | /tax-strategies/short-term-rental-loophole | ✅ Optimized |
 
 ### ⚠️ Missing Keyword Opportunities
 

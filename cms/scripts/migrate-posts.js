@@ -209,7 +209,7 @@ function processFile(filename) {
     const section = $('meta[property="article:section"]').attr('content');
     
     // Get image path relative to site root
-    let image = ogImage.replace('https://legacyinvestingshow-website.vercel.app', '');
+    let image = ogImage.replace('https://www.legacyinvestingshow.com', '');
     if (!image) {
         // Try to find featured image
         const imgSrc = $('.minimal-featured-image img').attr('src');

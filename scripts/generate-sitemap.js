@@ -11,30 +11,30 @@ const fs = require('fs');
 const path = require('path');
 
 // Configuration
-const SITE_URL = process.env.SITE_URL || 'https://legacyinvestingshow.com';
+const SITE_URL = process.env.SITE_URL || 'https://www.legacyinvestingshow.com';
 const ROOT_DIR = path.join(__dirname, '..');
 const OUTPUT_FILE = path.join(ROOT_DIR, 'sitemap.xml');
 
 // Static pages
-// Note: Removed duplicate entries (/index.html and /blog/index.html) to prevent crawler confusion
+// Note: Removed duplicate entries (/index.html and /blog/index) to prevent crawler confusion
 // Note: changefreq and priority are ignored by Google, so we only use lastmod
 const staticPages = [
   { url: '/' },
-  { url: '/about.html' },
-  { url: '/programs.html' },
-  { url: '/success-stories.html' },
+  { url: '/about' },
+  { url: '/programs' },
+  { url: '/success-stories' },
   { url: '/blog/' },
   { url: '/stacking-presentation/' },
 ];
 
 // Topic hub pages for SEO pillar content
 const topicPages = [
-  { url: '/topics/airbnb-arbitrage.html' },
-  { url: '/topics/tax-strategies.html' },
-  { url: '/topics/investing.html' },
-  { url: '/topics/business-structures.html' },
-  { url: '/topics/retirement.html' },
-  { url: '/topics/debt-management.html' },
+  { url: '/topics/airbnb-arbitrage' },
+  { url: '/topics/tax-strategies' },
+  { url: '/topics/investing' },
+  { url: '/topics/business-structures' },
+  { url: '/topics/retirement' },
+  { url: '/topics/debt-management' },
 ];
 
 // Programmatic SEO directories to scan
@@ -47,6 +47,31 @@ const programmaticDirs = [
  */
 function getW3CDate(date = new Date()) {
   return date.toISOString().split('T')[0];
+}
+
+/**
+ * Normalize URL paths to final clean URL format used by Vercel:
+ * - keep root as "/"
+ * - strip trailing "/index.html"
+ * - strip ".html" extension
+ * - remove trailing slash (except root)
+ */
+function normalizePath(rawPath) {
+  if (!rawPath) return '/';
+  let normalized = rawPath.replace(/\\/g, '/');
+
+  if (!normalized.startsWith('/')) {
+    normalized = `/${normalized}`;
+  }
+
+  normalized = normalized.replace(/\/index\.html$/i, '/');
+  normalized = normalized.replace(/\.html$/i, '');
+
+  if (normalized.length > 1) {
+    normalized = normalized.replace(/\/+$/, '');
+  }
+
+  return normalized || '/';
 }
 
 /**
@@ -212,7 +237,7 @@ function generateSitemap() {
     if (page.url === '/index.html') continue;
 
     urls.push({
-      loc: `${SITE_URL}${page.url}`,
+      loc: `${SITE_URL}${normalizePath(page.url)}`,
       lastmod: today,
     });
   }
@@ -220,7 +245,7 @@ function generateSitemap() {
   // Add topic hub pages
   for (const page of topicPages) {
     urls.push({
-      loc: `${SITE_URL}${page.url}`,
+      loc: `${SITE_URL}${normalizePath(page.url)}`,
       lastmod: today,
     });
   }
@@ -229,7 +254,7 @@ function generateSitemap() {
   const blogPosts = scanBlogPosts();
   for (const post of blogPosts) {
     urls.push({
-      loc: `${SITE_URL}${post.url}`,
+      loc: `${SITE_URL}${normalizePath(post.url)}`,
       lastmod: post.lastmod,
       image: post.image,
     });
@@ -239,17 +264,22 @@ function generateSitemap() {
   const programmaticPages = scanProgrammaticPages();
   for (const page of programmaticPages) {
     urls.push({
-      loc: `${SITE_URL}${page.url}`,
+      loc: `${SITE_URL}${normalizePath(page.url)}`,
       lastmod: page.lastmod,
     });
   }
+
+  // De-duplicate entries in case multiple sources resolve to same clean URL.
+  const deduped = Array.from(
+    new Map(urls.map((entry) => [entry.loc, entry])).values()
+  );
 
   // Generate XML with image namespace for enhanced SEO
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n';
   xml += '        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n';
 
-  for (const url of urls) {
+  for (const url of deduped) {
     xml += '  <url>\n';
     xml += `    <loc>${url.loc}</loc>\n`;
     xml += `    <lastmod>${url.lastmod}</lastmod>\n`;

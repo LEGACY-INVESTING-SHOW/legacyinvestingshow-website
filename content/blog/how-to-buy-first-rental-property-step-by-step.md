@@ -9,7 +9,7 @@ author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"
 authorCredentials: "50+ rental units, assisted living facility owner, 2,000+ students trained"
 category: Real Estate Investing
-canonical: "https://legacyinvestingshow.com/blog/how-to-buy-first-rental-property-step-by-step"
+canonical: "https://www.legacyinvestingshow.com/blog/how-to-buy-first-rental-property-step-by-step"
 
 # SEO Keyword Targeting
 seo:
@@ -620,7 +620,7 @@ The steps are clear: prepare your finances, get pre-approved, find a property th
 
 Knowledge without action is worthless. Pick one step from this guide and complete it this week.
 
-[Learn more about building passive income through real estate →](/programs.html)
+[Learn more about building passive income through real estate →](/programs)
 
 ---
 
@@ -628,7 +628,7 @@ Knowledge without action is worthless. Pick one step from this guide and complet
 
 **Preston Seo** is the founder of Legacy Investing Show and a real estate investor with a portfolio of 50+ rental units, plus experience in flips, wholesales, and an assisted living facility. The Legacy Investing Show mission is to provide maximum value so others can achieve financial freedom through real estate and entrepreneurship.
 
-[Learn more about the program →](/programs.html) | [Watch free training →](/free-training)
+[Learn more about the program →](/programs) | [Watch free training →](/free-training)
 
 ---
 

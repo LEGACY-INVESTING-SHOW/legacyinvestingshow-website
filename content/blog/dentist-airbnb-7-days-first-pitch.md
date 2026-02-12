@@ -9,7 +9,7 @@ author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"
 authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
 category: Success Story
-canonical: "https://legacyinvestingshow.com/blog/dentist-airbnb-7-days-first-pitch"
+canonical: "https://www.legacyinvestingshow.com/blog/dentist-airbnb-7-days-first-pitch"
 
 # SEO Keyword Targeting
 seo:
@@ -677,19 +677,19 @@ Kayla identifies several risks she actively manages:
 
 **Ready to build your own Airbnb arbitrage business like Kayla?**
 
-[Learn more about Legacy Investing Show &rarr;](/programs.html)
+[Learn more about Legacy Investing Show &rarr;](/programs)
 
 ### Related Success Stories
 
-- [How Gary Built a $35,000/Month Airbnb Business in Austin](/blog/gary-marketing-executive-35k-month.html)
+- [How Gary Built a $35,000/Month Airbnb Business in Austin](/blog/gary-marketing-executive-35k-month)
 
-- [How James Built a $7,000/Month Airbnb Business in 57 Days While Working Full-Time](/blog/james-7k-month-3-properties-remote.html)
+- [How James Built a $7,000/Month Airbnb Business in 57 Days While Working Full-Time](/blog/james-7k-month-3-properties-remote)
 
-- [How Rob Made $100K from 3 Airbnbs While Working a 9-to-5](/blog/rob-100k-3-airbnbs-working-fulltime.html)
+- [How Rob Made $100K from 3 Airbnbs While Working a 9-to-5](/blog/rob-100k-3-airbnbs-working-fulltime)
 
 ### Helpful Resources
 
-- [Complete Guide to Getting Started with Airbnb Arbitrage](/blog/getting-started-airbnb-arbitrage.html)
+- [Complete Guide to Getting Started with Airbnb Arbitrage](/blog/getting-started-airbnb-arbitrage)
 
 ---
 
@@ -707,7 +707,7 @@ Kayla identifies several risks she actively manages:
 
 Preston Seo has personally managed multiple properties and generated over $400,000 per year in Airbnb profit. His portfolio is worth over $15 million after 7 years in real estate. He created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[Learn more about the program &rarr;](/programs.html) | [Watch free training &rarr;](/free-training)
+[Learn more about the program &rarr;](/programs) | [Watch free training &rarr;](/free-training)
 
 ---
 

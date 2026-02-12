@@ -1,7 +1,7 @@
 # Phase 1 Technical SEO - Completion Report
 
 **Website:** Legacy Investing Show  
-**Production URL:** https://legacyinvestingshow-website.vercel.app  
+**Production URL:** https://www.legacyinvestingshow.com  
 **Date Completed:** January 31, 2026  
 
 ---
@@ -118,7 +118,7 @@ Modified `/scripts/build-tax-strategies.js` to automatically generate schema mar
 ### URLs Verified on Production:
 
 1. **Persona Page with Schema:**
-   - https://legacyinvestingshow-website.vercel.app/tax-strategies/for/real-estate-investors
+   - https://www.legacyinvestingshow.com/tax-strategies/for/real-estate-investors
    - ✅ Meta description present
    - ✅ Canonical URL (no .html)
    - ✅ BreadcrumbList schema
@@ -126,21 +126,21 @@ Modified `/scripts/build-tax-strategies.js` to automatically generate schema mar
    - ✅ FAQPage schema
 
 2. **Tax Strategy Page:**
-   - https://legacyinvestingshow-website.vercel.app/tax-strategies/cost-segregation
+   - https://www.legacyinvestingshow.com/tax-strategies/cost-segregation
    - ✅ Meta description present
    - ✅ Canonical URL (no .html)
    - ✅ Article schema
    - ✅ FAQPage schema
 
 3. **Retirement Page:**
-   - https://legacyinvestingshow-website.vercel.app/retirement/sep-ira-guide
+   - https://www.legacyinvestingshow.com/retirement/sep-ira-guide
    - ✅ Meta description present
    - ✅ Canonical URL (no .html)
 
 4. **Additional Verified Pages:**
-   - https://legacyinvestingshow-website.vercel.app/tax-strategies/1031-exchange
-   - https://legacyinvestingshow-website.vercel.app/retirement/401k-contribution-strategies
-   - https://legacyinvestingshow-website.vercel.app/tax-strategies/for/high-income-earners
+   - https://www.legacyinvestingshow.com/tax-strategies/1031-exchange
+   - https://www.legacyinvestingshow.com/retirement/401k-contribution-strategies
+   - https://www.legacyinvestingshow.com/tax-strategies/for/high-income-earners
 
 ---
 
@@ -154,7 +154,7 @@ Modified `/scripts/build-tax-strategies.js` to automatically generate schema mar
 
 ### Deployment Details:
 - **Production URL:** https://legacyinvestingshow-website-8poh258zq-legacy-investing-show.vercel.app
-- **Aliased URL:** https://legacyinvestingshow-website.vercel.app
+- **Aliased URL:** https://www.legacyinvestingshow.com
 - **Build Time:** 19 seconds
 - **Total URLs in Sitemap:** 98
 

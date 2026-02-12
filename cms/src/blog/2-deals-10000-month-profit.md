@@ -9,7 +9,7 @@ author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"
 authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
 category: Success Story
-canonical: "https://legacyinvestingshow.com/blog/2-deals-10000-month-profit"
+canonical: "https://www.legacyinvestingshow.com/blog/2-deals-10000-month-profit"
 
 # SEO Keyword Targeting
 seo:
@@ -643,19 +643,19 @@ Rob identifies several risks he actively manages:
 
 **Ready to build your own Airbnb arbitrage business like Rob?**
 
-[Learn more about Legacy Investing Show](/programs.html)
+[Learn more about Legacy Investing Show](/programs)
 
 ### Related Success Stories
 
-- [How Gary Built $35,000/Month in Austin with 7 Properties](/blog/gary-marketing-executive-35k-month.html)
+- [How Gary Built $35,000/Month in Austin with 7 Properties](/blog/gary-marketing-executive-35k-month)
 
-- [How James Built $7,000/Month in 57 Days While Working Full-Time](/blog/james-7k-month-3-properties-remote.html)
+- [How James Built $7,000/Month in 57 Days While Working Full-Time](/blog/james-7k-month-3-properties-remote)
 
-- [How Micah Made $5,000 His First Month with One Facebook Message](/blog/micah-facebook-message-5k-month-houston.html)
+- [How Micah Made $5,000 His First Month with One Facebook Message](/blog/micah-facebook-message-5k-month-houston)
 
 ### Helpful Resources
 
-- [Complete Guide to Getting Started with Airbnb Arbitrage](/blog/getting-started-airbnb-arbitrage.html)
+- [Complete Guide to Getting Started with Airbnb Arbitrage](/blog/getting-started-airbnb-arbitrage)
 
 ---
 
@@ -673,7 +673,7 @@ Rob identifies several risks he actively manages:
 
 Preston Seo created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[Learn more about the program](/programs.html) | [Watch free training](/free-training)
+[Learn more about the program](/programs) | [Watch free training](/free-training)
 
 ---
 

@@ -9,7 +9,7 @@ author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"
 authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
 category: Investing Strategy
-canonical: "https://legacyinvestingshow.com/blog/start-from-zero-2025-wealth-building-plan"
+canonical: "https://www.legacyinvestingshow.com/blog/start-from-zero-2025-wealth-building-plan"
 
 # SEO Keyword Targeting
 seo:
@@ -525,7 +525,7 @@ Most brokerages let you automate purchases. Set VTI to automatically purchase on
 2. Learn landlord negotiation strategies
 3. Understand furnishing and setup costs
 4. Build systems for guest management
-5. [Learn the complete process through Legacy Investing Show →](/programs.html)
+5. [Learn the complete process through Legacy Investing Show →](/programs)
 
 ---
 
@@ -681,7 +681,7 @@ House hacking means buying a property, living in one unit, and renting out other
 
 The 50/25/25 allocation puts 25% into cash-flowing real estate—and Airbnb arbitrage is the fastest path from zero to monthly income.
 
-[Learn the Complete Airbnb Arbitrage System →](/programs.html)
+[Learn the Complete Airbnb Arbitrage System →](/programs)
 
 ### What You'll Learn
 
@@ -704,7 +704,7 @@ The 50/25/25 allocation puts 25% into cash-flowing real estate—and Airbnb arbi
 
 Preston Seo created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[Learn more about the program →](/programs.html) | [Watch free training →](/free-training)
+[Learn more about the program →](/programs) | [Watch free training →](/free-training)
 
 ---
 

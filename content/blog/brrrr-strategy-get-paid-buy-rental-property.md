@@ -9,7 +9,7 @@ author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"
 authorCredentials: "50+ rental units, assisted living facility owner, 2,000+ students trained"
 category: Real Estate Investing
-canonical: "https://legacyinvestingshow.com/blog/brrrr-strategy-get-paid-buy-rental-property"
+canonical: "https://www.legacyinvestingshow.com/blog/brrrr-strategy-get-paid-buy-rental-property"
 
 # SEO Keyword Targeting
 seo:
@@ -653,7 +653,7 @@ The BRRRR strategy is one of the most powerful wealth-building tools in real est
 
 The key is finding the right deals and executing the renovation and refinance correctly. Start networking with wholesalers, learn your market's ARV and rent numbers, and build relationships with hard money lenders.
 
-[Learn more about building wealth through real estate investing →](/programs.html)
+[Learn more about building wealth through real estate investing →](/programs)
 
 ---
 
@@ -668,7 +668,7 @@ The key is finding the right deals and executing the renovation and refinance co
 
 Preston Seo built a portfolio of 50+ rental units using strategies like BRRRR, along with flips, wholesales, and an assisted living facility. Legacy Investing Show teaches these exact systems so you can achieve financial freedom through real estate.
 
-[Learn more about the program →](/programs.html) | [Watch free training →](/free-training)
+[Learn more about the program →](/programs) | [Watch free training →](/free-training)
 
 ---
 

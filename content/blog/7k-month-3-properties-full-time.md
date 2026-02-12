@@ -9,7 +9,7 @@ author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"
 authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
 category: Success Story
-canonical: "https://legacyinvestingshow.com/blog/7k-month-3-properties-full-time"
+canonical: "https://www.legacyinvestingshow.com/blog/7k-month-3-properties-full-time"
 
 # SEO Keyword Targeting
 seo:
@@ -679,23 +679,23 @@ James proved that age, experience, and location don't determine success—action
 
 The difference between James and people who never start? Written goals and daily action.
 
-[Learn more about Legacy Investing Show](/programs.html)
+[Learn more about Legacy Investing Show](/programs)
 
 ### Related Success Stories
 
-- [How Gary Built a $35,000/Month Airbnb Business in Austin](/blog/gary-marketing-executive-35k-month.html)
+- [How Gary Built a $35,000/Month Airbnb Business in Austin](/blog/gary-marketing-executive-35k-month)
 
-- [How Micah Made $5,000 His First Month with One Facebook Message](/blog/micah-facebook-message-5k-month-houston.html)
+- [How Micah Made $5,000 His First Month with One Facebook Message](/blog/micah-facebook-message-5k-month-houston)
 
-- [How Rob Made $100K from 3 Airbnbs While Working a 9-to-5](/blog/rob-100k-3-airbnbs-working-fulltime.html)
+- [How Rob Made $100K from 3 Airbnbs While Working a 9-to-5](/blog/rob-100k-3-airbnbs-working-fulltime)
 
 ### Helpful Resources
 
-- [Complete Guide to Airbnb Arbitrage](/blog/getting-started-airbnb-arbitrage.html)
+- [Complete Guide to Airbnb Arbitrage](/blog/getting-started-airbnb-arbitrage)
 
-- [Cold Calling Scripts for Landlords](/blog/landlord-cold-calling-scripts.html)
+- [Cold Calling Scripts for Landlords](/blog/landlord-cold-calling-scripts)
 
-- [Remote Property Management Guide](/blog/remote-airbnb-management.html)
+- [Remote Property Management Guide](/blog/remote-airbnb-management)
 
 ---
 
@@ -713,7 +713,7 @@ The difference between James and people who never start? Written goals and daily
 
 Preston Seo has personally built a $15 million real estate portfolio generating over $400,000 per year in net profit from short-term rentals. He created Legacy Investing Show to teach the exact systems that scaled his business.
 
-[Learn more about the program](/programs.html) | [Watch free training](/free-training)
+[Learn more about the program](/programs) | [Watch free training](/free-training)
 
 ---
 

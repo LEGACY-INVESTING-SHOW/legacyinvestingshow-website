@@ -9,7 +9,7 @@ author: Preston Seo
 authorTitle: "Founder, Legacy Investing Show"
 authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
 category: Success Story
-canonical: "https://legacyinvestingshow.com/blog/secret-top-10-percent-airbnb"
+canonical: "https://www.legacyinvestingshow.com/blog/secret-top-10-percent-airbnb"
 
 # SEO Keyword Targeting
 seo:
@@ -643,19 +643,19 @@ Christopher identifies several risks he manages:
 
 **Ready to build your own Airbnb arbitrage business like Christopher?**
 
-[Learn more about Legacy Investing Show](/programs.html)
+[Learn more about Legacy Investing Show](/programs)
 
 ### Related Success Stories
 
-- [How Gary Built a $35,000/Month Airbnb Business in Austin](/blog/gary-marketing-executive-35k-month.html)
+- [How Gary Built a $35,000/Month Airbnb Business in Austin](/blog/gary-marketing-executive-35k-month)
 
-- [How Rob Made $100K from 3 Airbnbs While Working Full-Time](/blog/rob-100k-3-airbnbs-working-fulltime.html)
+- [How Rob Made $100K from 3 Airbnbs While Working Full-Time](/blog/rob-100k-3-airbnbs-working-fulltime)
 
-- [How James Built $7K/Month in 57 Days](/blog/james-7k-month-3-properties-remote.html)
+- [How James Built $7K/Month in 57 Days](/blog/james-7k-month-3-properties-remote)
 
 ### Helpful Resources
 
-- [Complete Guide to Getting Started with Airbnb Arbitrage](/blog/getting-started-airbnb-arbitrage.html)
+- [Complete Guide to Getting Started with Airbnb Arbitrage](/blog/getting-started-airbnb-arbitrage)
 
 ---
 
@@ -673,7 +673,7 @@ Christopher identifies several risks he manages:
 
 Preston Seo built a $15 million real estate portfolio generating over $400,000/year in net profit from short-term rentals. He created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[Learn more about the program](/programs.html) | [Watch free training](/free-training)
+[Learn more about the program](/programs) | [Watch free training](/free-training)
 
 ---
 
