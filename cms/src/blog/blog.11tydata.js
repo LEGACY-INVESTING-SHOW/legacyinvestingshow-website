@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 
 const DEFAULT_KEYWORDS = ['wealth building', 'investing', 'financial freedom'];
 const CATEGORY_KEYWORDS = {
@@ -88,12 +89,20 @@ function toKeywordString(data) {
     return [...new Set(combined)].join(', ');
 }
 
+const CMS_ROOT = path.resolve(__dirname, '..', '..');
+
 function toWebpPath(imagePath) {
     if (!imagePath || typeof imagePath !== 'string') {
         return '/assets/images/og-blog.webp';
     }
 
-    return imagePath.replace(/\.(jpg|jpeg|png)$/i, '.webp');
+    const webpPath = imagePath.replace(/\.(jpg|jpeg|png)$/i, '.webp');
+    const diskPath = path.join(CMS_ROOT, webpPath.replace(/^\//, ''));
+    if (fs.existsSync(diskPath)) {
+        return webpPath;
+    }
+
+    return imagePath;
 }
 
 function getRawContent(data) {
