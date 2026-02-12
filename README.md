@@ -70,6 +70,7 @@ npm run build:images   # Optimize images with Sharp
 | `npm run cms:check:parity` | Byte-compare canonical and CMS markdown |
 | `npm run cms:build` | Build Eleventy CMS site from `cms/` |
 | `npm run cms:smoke` | Run CMS smoke checks on built Eleventy output |
+| `npm run cms:publish:posts` | Publish CMS-rendered posts into `blog/*.html` |
 | `npm run cms:verify` | Run full CMS sync + parity + build + smoke chain |
 | `npm run start` | Start local development server |
 

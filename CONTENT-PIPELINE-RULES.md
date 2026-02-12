@@ -14,6 +14,7 @@
 5. Every content batch must run validation before publish:
    - build succeeds
    - `npm run cms:verify` succeeds
+   - `npm run cms:publish:posts` succeeds
    - no schema/json-ld parse errors
    - no broken internal links
 
