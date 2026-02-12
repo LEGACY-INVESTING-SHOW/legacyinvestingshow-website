@@ -45,7 +45,15 @@ DIFF_COUNT=0
 while IFS= read -r slug; do
   src_file="$SRC_DIR/$slug.md"
   dst_file="$DST_DIR/$slug.md"
-  if [[ -f "$dst_file" ]] && ! cmp -s "$src_file" "$dst_file"; then
+  if [[ -f "$dst_file" ]]; then
+    src_sum="$(cksum < "$src_file" | awk '{print $1 ":" $2}')"
+    dst_sum="$(cksum < "$dst_file" | awk '{print $1 ":" $2}')"
+  else
+    src_sum=""
+    dst_sum="missing"
+  fi
+
+  if [[ "$src_sum" != "$dst_sum" ]]; then
     if [[ "$DIFF_COUNT" -eq 0 ]]; then
       echo
       echo "content mismatches:"
