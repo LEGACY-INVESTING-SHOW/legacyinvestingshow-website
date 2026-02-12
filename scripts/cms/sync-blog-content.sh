@@ -24,6 +24,11 @@ echo "Syncing markdown from canonical -> CMS"
 echo "  source: $SRC_DIR"
 echo "  dest:   $DST_DIR"
 
-rsync -av --delete --exclude '.DS_Store' --include='*.md' --exclude='*' "$SRC_DIR/" "$DST_DIR/"
+# Vercel build environment does not provide rsync by default.
+# Keep this sync step POSIX-tooling only.
+find "$DST_DIR" -maxdepth 1 -type f -name '*.md' -delete
+while IFS= read -r -d '' src_file; do
+  cp "$src_file" "$DST_DIR/"
+done < <(find "$SRC_DIR" -maxdepth 1 -type f -name '*.md' -print0)
 
 echo "Sync complete."
