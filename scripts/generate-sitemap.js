@@ -129,6 +129,11 @@ function extractImageFromHtml(filePath) {
       if (imageUrl.startsWith('/')) {
         imageUrl = `${SITE_URL}${imageUrl}`;
       }
+      // Keep image URLs on the same canonical host.
+      imageUrl = imageUrl.replace(
+        'https://legacyinvestingshow.com',
+        'https://www.legacyinvestingshow.com'
+      );
       return imageUrl;
     }
     return null;
