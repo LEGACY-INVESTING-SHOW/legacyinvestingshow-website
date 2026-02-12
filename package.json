@@ -15,7 +15,7 @@
     "pipeline": "node scripts/pipeline/run-skill-pipeline.js",
     "cms:sync:blog": "./scripts/cms/sync-blog-content.sh",
     "cms:check:parity": "./scripts/cms/check-parity.sh",
-    "cms:build": "npm --prefix ./cms run build",
+    "cms:build": "rm -rf ./cms/_site/blog && npm --prefix ./cms run build",
     "cms:smoke": "./scripts/cms/smoke-check-eleventy.sh",
     "cms:publish:posts": "./scripts/cms/publish-eleventy-posts.sh",
     "cms:verify": "npm run cms:sync:blog && npm run cms:check:parity && npm run cms:build && npm run cms:smoke",

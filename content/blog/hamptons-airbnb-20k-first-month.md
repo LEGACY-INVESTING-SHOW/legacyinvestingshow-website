@@ -598,7 +598,7 @@ Other risks include property damage, difficult guests, and changing regulations.
 
 - [How James Built $7,000/Month in 57 Days While Working Full-Time](/blog/james-7k-month-3-properties-remote)
 
-- [How Rob Made $100K from 3 Airbnbs Working a 9-to-5](/blog/rob-100k-3-airbnbs-working-fulltime)
+- [How Rob Made $100K from 3 Airbnbs Working a 9-to-5](/blog/rob-100k-3-airbnbs-9-to-5)
 
 ### Helpful Resources
 

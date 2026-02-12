@@ -687,7 +687,7 @@ The difference between James and people who never start? Written goals and daily
 
 - [How Micah Made $5,000 His First Month with One Facebook Message](/blog/micah-facebook-message-5k-month-houston)
 
-- [How Rob Made $100K from 3 Airbnbs While Working a 9-to-5](/blog/rob-100k-3-airbnbs-working-fulltime)
+- [How Rob Made $100K from 3 Airbnbs While Working a 9-to-5](/blog/rob-100k-3-airbnbs-9-to-5)
 
 ### Helpful Resources
 

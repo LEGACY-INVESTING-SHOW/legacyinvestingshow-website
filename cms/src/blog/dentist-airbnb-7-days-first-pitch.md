@@ -685,7 +685,7 @@ Kayla identifies several risks she actively manages:
 
 - [How James Built a $7,000/Month Airbnb Business in 57 Days While Working Full-Time](/blog/james-7k-month-3-properties-remote)
 
-- [How Rob Made $100K from 3 Airbnbs While Working a 9-to-5](/blog/rob-100k-3-airbnbs-working-fulltime)
+- [How Rob Made $100K from 3 Airbnbs While Working a 9-to-5](/blog/rob-100k-3-airbnbs-9-to-5)
 
 ### Helpful Resources
 

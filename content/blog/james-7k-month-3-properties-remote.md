@@ -610,7 +610,7 @@ James proved that age and experience don't determine success—action does. At 2
 ### Related Success Stories
 - [How Gary Built a $35K/Month Airbnb Portfolio](/blog/gary-marketing-executive-35k-month)
 - [How Micah Found His First Property with One Facebook Message](/blog/micah-facebook-message-5k-month-houston)
-- [How Rob Made $100K from 3 Airbnbs with a 9-to-5](/blog/rob-100k-3-airbnbs-working-fulltime)
+- [How Rob Made $100K from 3 Airbnbs with a 9-to-5](/blog/rob-100k-3-airbnbs-9-to-5)
 
 ### Helpful Resources
 - [Complete Guide to Airbnb Arbitrage](/blog/getting-started-airbnb-arbitrage)

@@ -176,5 +176,21 @@
       ]
     }
   ],
-  "redirects": []
+  "redirects": [
+    {
+      "source": "/blog/rob-100k-3-airbnbs-working-fulltime",
+      "destination": "/blog/rob-100k-3-airbnbs-9-to-5",
+      "permanent": true
+    },
+    {
+      "source": "/blog/rob-100k-3-airbnbs-working-fulltime/",
+      "destination": "/blog/rob-100k-3-airbnbs-9-to-5",
+      "permanent": true
+    },
+    {
+      "source": "/blog/rob-100k-3-airbnbs-working-fulltime.html",
+      "destination": "/blog/rob-100k-3-airbnbs-9-to-5",
+      "permanent": true
+    }
+  ]
 }

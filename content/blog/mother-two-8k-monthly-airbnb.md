@@ -593,7 +593,7 @@ The systems she built—video walk-throughs with cleaners, noise monitoring, pro
 
 - [How James Built $7K/Month in 57 Days While Working Full-Time](/blog/james-7k-month-3-properties-remote)
 
-- [How Rob Made $100K from 3 Airbnbs While Working a 9-to-5](/blog/rob-100k-3-airbnbs-working-fulltime)
+- [How Rob Made $100K from 3 Airbnbs While Working a 9-to-5](/blog/rob-100k-3-airbnbs-9-to-5)
 
 ### Helpful Resources
 

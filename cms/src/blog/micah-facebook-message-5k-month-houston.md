@@ -592,7 +592,7 @@ Micah proved that introverts can succeed in this business. His Facebook Marketpl
 
 - [How James Made $7K/Month from 3 Properties](/blog/james-7k-month-3-properties-remote)
 
-- [How Rob Made $100K from 3 Airbnbs with a 9-to-5](/blog/rob-100k-3-airbnbs-working-fulltime)
+- [How Rob Made $100K from 3 Airbnbs with a 9-to-5](/blog/rob-100k-3-airbnbs-9-to-5)
 
 ### Helpful Resources
 

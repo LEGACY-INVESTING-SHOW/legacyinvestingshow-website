@@ -676,7 +676,7 @@ Jeff identifies market cycles as the primary risk—he learned this firsthand fr
 
 - [How James Built $7,000/Month in 57 Days While Working Full-Time](/blog/james-7k-month-3-properties-remote)
 
-- [How Rob Made $100K from 3 Airbnbs While Raising Two Kids](/blog/rob-100k-3-airbnbs-working-fulltime)
+- [How Rob Made $100K from 3 Airbnbs While Raising Two Kids](/blog/rob-100k-3-airbnbs-9-to-5)
 
 ### Helpful Resources
 
