@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-CANONICAL_REPO="${CANONICAL_REPO:-/Users/deveshdhardubey/legacyinvestingshow website}"
-CMS_REPO="${CMS_REPO:-/Users/deveshdhardubey/legacy-content-cms}"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+
+CANONICAL_REPO="${CANONICAL_REPO:-$REPO_ROOT}"
+CMS_REPO="${CMS_REPO:-$REPO_ROOT/cms}"
 
 SRC_DIR="${CANONICAL_REPO}/content/blog"
 DST_DIR="${CMS_REPO}/src/blog"

@@ -1,0 +1,136 @@
+{% set canonicalCurrent = canonicalUrl or (page.url | absoluteUrl) %}
+{% set publishedIso = date | isoDate %}
+{% set modifiedIso = (dateModified or date) | isoDate %}
+
+<!-- BreadcrumbList Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://legacyinvestingshow.com/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://legacyinvestingshow.com/blog/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": {{ title | json }}
+        }
+    ]
+}
+</script>
+
+<!-- Article Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": {{ title | json }},
+    "description": {{ description | json }},
+    "image": {
+        "@type": "ImageObject",
+        "url": {{ (heroImage | absoluteUrl) | json }},
+        "width": 1200,
+        "height": 630
+    },
+    "author": {
+        "@type": "Person",
+        "@id": "https://legacyinvestingshow.com/about.html#author",
+        "name": {{ author | json }},
+        "url": "https://legacyinvestingshow.com/about.html",
+        "jobTitle": "Real Estate Investor & Educator",
+        "knowsAbout": [
+            "Airbnb Arbitrage",
+            "Real Estate Investing",
+            "Short-Term Rentals",
+            "Passive Income Strategies",
+            "Property Management"
+        ],
+        "sameAs": [
+            "https://www.instagram.com/thelegacyshow",
+            "https://www.youtube.com/@thelegacyinvestingshow",
+            "https://www.tiktok.com/@thelegacyshow"
+        ]
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Legacy Investing Show",
+        "url": "https://legacyinvestingshow.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://legacyinvestingshow.com/assets/images/logo.png",
+            "width": 512,
+            "height": 512
+        },
+        "sameAs": [
+            "https://www.instagram.com/thelegacyshow",
+            "https://www.youtube.com/@thelegacyinvestingshow",
+            "https://www.tiktok.com/@thelegacyshow",
+            "https://www.facebook.com/share/19LQhE6gmh/"
+        ]
+    },
+    "datePublished": {{ publishedIso | json }},
+    "dateModified": {{ modifiedIso | json }},
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": {{ canonicalCurrent | json }}
+    },
+    "articleSection": {{ category | json }},
+    "wordCount": {{ wordCount | json }},
+    "keywords": {{ keywords | json }},
+    "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".minimal-article-title", ".minimal-content p:first-of-type"]
+    },
+    "isAccessibleForFree": true,
+    "inLanguage": "en-US"
+}
+</script>
+
+{% if faqs and (faqs | length) > 0 %}
+<!-- FAQPage Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {% for faq in faqs %}
+        {
+            "@type": "Question",
+            "name": {{ faq.question | json }},
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": {{ faq.answer | json }}
+            }
+        }{% if not loop.last %},{% endif %}
+        {% endfor %}
+    ]
+}
+</script>
+{% endif %}
+
+<!-- Organization Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Legacy Investing Show",
+    "url": "https://legacyinvestingshow.com",
+    "logo": "https://legacyinvestingshow.com/assets/images/logo.png",
+    "sameAs": [
+        "https://www.instagram.com/thelegacyinvestingshow/",
+        "https://www.youtube.com/@LegacyInvestingShow",
+        "https://www.tiktok.com/@thelegacyinvestingshow",
+        "https://www.facebook.com/share/19LQhE6gmh/"
+    ]
+}
+</script>

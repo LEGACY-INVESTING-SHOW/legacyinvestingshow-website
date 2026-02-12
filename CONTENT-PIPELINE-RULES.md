@@ -2,8 +2,8 @@
 
 ## Canonical Repositories
 
-- Production content authority: `/Users/deveshdhardubey/legacyinvestingshow website`
-- CMS migration workspace: `/Users/deveshdhardubey/legacy-content-cms`
+- Production + CMS authority: `legacyinvestingshow website`
+- CMS workspace path (inside repo): `cms/`
 
 ## Mandatory Rules
 
@@ -27,4 +27,4 @@
 ## Immediate Recovery State (2026-02-07)
 
 - Previous standalone-HTML batch workflow is deprecated.
-- Eleventy repo rebuilt from canonical markdown baseline.
+- Eleventy CMS now lives inside this repository at `cms/`.

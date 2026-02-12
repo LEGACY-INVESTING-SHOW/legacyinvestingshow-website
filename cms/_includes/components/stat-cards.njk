@@ -1,0 +1,29 @@
+<section class="statistics-section" aria-label="Key statistics">
+    <div class="statistics-grid">
+        {% for stat in stats %}
+        <div class="stat-card" data-stat-index="{{ loop.index0 }}">
+            <div class="stat-icon-wrapper">
+                {% if stat.icon == "dollar" %}
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                {% elif stat.icon == "home" %}
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                {% elif stat.icon == "percent" %}
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                {% elif stat.icon == "clock" %}
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                {% elif stat.icon == "map" %}
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                {% endif %}
+            </div>
+            <div class="stat-value">{{ stat.value }}</div>
+            <div class="stat-label">{{ stat.label }}</div>
+            {% if stat.context %}
+            <span class="stat-context">{{ stat.context }}</span>
+            {% endif %}
+            {% if stat.source %}
+            <span class="stat-source">{{ stat.source }}</span>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</section>

@@ -41,6 +41,10 @@ assets/images/backup/
 .cache/
 pipeline/runs/*
 !pipeline/runs/.gitkeep
+.checkpoints/
+.worktrees/
+cms/node_modules/
+cms/_site/
 
 # Package lock files (optional - uncomment if not using)
 # package-lock.json

@@ -10,7 +10,7 @@ Static website for Legacy Investing Show - financial education programs, Airbnb 
 
 - **Canonical source-of-truth repo:** `/Users/deveshdhardubey/legacyinvestingshow website`
 - **Canonical blog content source:** `content/blog/*.md`
-- **Eleventy migration workspace:** `/Users/deveshdhardubey/legacy-content-cms` (experimental until cutover)
+- **Eleventy CMS workspace:** `cms/` (inside this repository)
 - **Do not generate standalone production HTML with ad-hoc prompts/skills.** Generate markdown/data only, then render through templates/build pipeline.
 - If content is produced outside this repo, it must be imported as markdown into `content/blog/` (or synchronized into Eleventy `src/blog/`) before publishing.
 

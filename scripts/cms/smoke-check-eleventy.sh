@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-CMS_REPO="${CMS_REPO:-/Users/deveshdhardubey/legacy-content-cms}"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+
+CMS_REPO="${CMS_REPO:-$REPO_ROOT/cms}"
 SITE_DIR="${CMS_REPO}/_site"
 SRC_DIR="${CMS_REPO}/src/blog"
 BLOG_DIR="${SITE_DIR}/blog"

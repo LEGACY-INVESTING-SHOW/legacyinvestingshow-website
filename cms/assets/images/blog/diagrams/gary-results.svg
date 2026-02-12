@@ -1,0 +1,84 @@
+<svg viewBox="0 0 700 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.1"/>
+    </filter>
+    <linearGradient id="greenBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fafafa"/>
+      <stop offset="100%" style="stop-color:#f3f4f6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="400" fill="url(#bgGrad)" rx="16"/>
+
+  <!-- Title -->
+  <text x="350" y="35" text-anchor="middle" font-family="system-ui" font-size="20" font-weight="bold" fill="#1f2937">Gary's Transformation: Before vs After</text>
+
+  <!-- Legend -->
+  <g transform="translate(220, 55)">
+    <rect width="20" height="20" rx="4" fill="#e5e7eb"/>
+    <text x="28" y="15" font-family="system-ui" font-size="12" fill="#6b7280">Before (2017)</text>
+    <rect x="130" width="20" height="20" rx="4" fill="url(#greenBar)"/>
+    <text x="158" y="15" font-family="system-ui" font-size="12" fill="#6b7280">After (2023)</text>
+  </g>
+
+  <!-- Metric 1: Monthly Cash Flow -->
+  <g transform="translate(50, 100)" filter="url(#shadow)">
+    <rect width="600" height="85" rx="12" fill="white"/>
+    <text x="20" y="30" font-family="system-ui" font-size="14" font-weight="600" fill="#374151">Monthly Cash Flow</text>
+
+    <!-- Before bar -->
+    <rect x="180" y="12" width="40" height="26" rx="6" fill="#e5e7eb"/>
+    <text x="230" y="30" font-family="system-ui" font-size="13" fill="#9ca3af">$0</text>
+
+    <!-- After bar -->
+    <rect x="180" y="48" width="320" height="26" rx="6" fill="url(#greenBar)"/>
+    <text x="510" y="66" font-family="system-ui" font-size="15" font-weight="bold" fill="#059669">$35,000</text>
+
+    <!-- Growth indicator -->
+    <circle cx="570" cy="42" r="18" fill="#ecfdf5"/>
+    <text x="570" y="38" text-anchor="middle" font-family="system-ui" font-size="10" font-weight="bold" fill="#059669">+</text>
+    <text x="570" y="50" text-anchor="middle" font-family="system-ui" font-size="9" font-weight="bold" fill="#059669">∞%</text>
+  </g>
+
+  <!-- Metric 2: Properties -->
+  <g transform="translate(50, 195)" filter="url(#shadow)">
+    <rect width="600" height="85" rx="12" fill="white"/>
+    <text x="20" y="30" font-family="system-ui" font-size="14" font-weight="600" fill="#374151">Properties Owned</text>
+
+    <!-- Before bar -->
+    <rect x="180" y="12" width="60" height="26" rx="6" fill="#e5e7eb"/>
+    <text x="250" y="30" font-family="system-ui" font-size="13" fill="#9ca3af">1 (primary home)</text>
+
+    <!-- After bar -->
+    <rect x="180" y="48" width="180" height="26" rx="6" fill="url(#greenBar)"/>
+    <text x="370" y="66" font-family="system-ui" font-size="15" font-weight="bold" fill="#059669">7 investment properties</text>
+
+    <!-- Growth indicator -->
+    <circle cx="570" cy="42" r="18" fill="#ecfdf5"/>
+    <text x="570" y="47" text-anchor="middle" font-family="system-ui" font-size="12" font-weight="bold" fill="#059669">+7</text>
+  </g>
+
+  <!-- Metric 3: Income Sources -->
+  <g transform="translate(50, 290)" filter="url(#shadow)">
+    <rect width="600" height="85" rx="12" fill="white"/>
+    <text x="20" y="30" font-family="system-ui" font-size="14" font-weight="600" fill="#374151">Income Sources</text>
+
+    <!-- Before bar -->
+    <rect x="180" y="12" width="100" height="26" rx="6" fill="#e5e7eb"/>
+    <text x="290" y="30" font-family="system-ui" font-size="13" fill="#9ca3af">Consulting only</text>
+
+    <!-- After bar -->
+    <rect x="180" y="48" width="280" height="26" rx="6" fill="url(#greenBar)"/>
+    <text x="470" y="66" font-family="system-ui" font-size="15" font-weight="bold" fill="#059669">Consulting + $35K passive</text>
+
+    <!-- Growth indicator -->
+    <circle cx="570" cy="42" r="18" fill="#ecfdf5"/>
+    <text x="570" y="47" text-anchor="middle" font-family="system-ui" font-size="12" font-weight="bold" fill="#059669">2x</text>
+  </g>
+</svg>
