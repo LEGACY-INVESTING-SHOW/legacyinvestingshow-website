@@ -43,6 +43,7 @@ Run:
 
 - `npm run build:blog`
 - `npm run build:sitemap`
+- `npm run cms:verify`
 - optional full `npm run build`
 
 Collect warnings and failures.

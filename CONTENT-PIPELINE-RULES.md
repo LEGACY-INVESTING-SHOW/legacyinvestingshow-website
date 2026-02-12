@@ -13,6 +13,7 @@
 4. No direct hand-authored edits to generated HTML outputs.
 5. Every content batch must run validation before publish:
    - build succeeds
+   - `npm run cms:verify` succeeds
    - no schema/json-ld parse errors
    - no broken internal links
 

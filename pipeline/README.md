@@ -76,3 +76,9 @@ Publish if review passes:
 ```bash
 npm run pipeline -- --topic "short-term rental loophole" --publish
 ```
+
+Publisher gate commands now include:
+
+- `npm run build:blog`
+- `npm run build:sitemap`
+- `npm run cms:verify`

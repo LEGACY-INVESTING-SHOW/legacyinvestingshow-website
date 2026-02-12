@@ -39,3 +39,4 @@ npm run pipeline -- --topic "tax strategies for nurses" --publish
 ```
 
 Publishing only proceeds when reviewer verdict is PASS.
+Publishing now also requires `npm run cms:verify` to pass.

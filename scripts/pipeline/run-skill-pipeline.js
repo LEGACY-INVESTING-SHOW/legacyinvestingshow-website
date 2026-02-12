@@ -263,7 +263,8 @@ function publishDraft(runDir, draftPath, reviewVerdict, args) {
         published: false,
         reason: '',
         target: null,
-        build: []
+        build: [],
+        reverted: false
     };
 
     if (!args.publish) {
@@ -293,12 +294,28 @@ function publishDraft(runDir, draftPath, reviewVerdict, args) {
     }
 
     fs.copyFileSync(draftPath, target);
-    report.published = true;
-    report.reason = 'Draft copied to content/blog.';
+    report.reason = 'Draft copied to content/blog. Running publish gates.';
 
     const buildBlog = runBuild('npm run build:blog');
     const buildSitemap = runBuild('npm run build:sitemap');
-    report.build.push(buildBlog, buildSitemap);
+    const cmsVerify = runBuild('npm run cms:verify');
+    report.build.push(buildBlog, buildSitemap, cmsVerify);
+
+    const failed = report.build.filter((step) => step.exitCode !== 0);
+    if (failed.length > 0) {
+        if (fs.existsSync(target)) {
+            fs.unlinkSync(target);
+            report.reverted = true;
+        }
+
+        const failedCommands = failed.map((step) => step.command).join(', ');
+        report.reason = `Publish gates failed: ${failedCommands}. Draft copy reverted.`;
+        report.published = false;
+        return report;
+    }
+
+    report.published = true;
+    report.reason = 'Draft copied and publish gates passed.';
 
     return report;
 }
