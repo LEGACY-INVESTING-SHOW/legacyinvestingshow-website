@@ -75,6 +75,34 @@ function normalizePath(rawPath) {
 }
 
 /**
+ * Determine whether an HTML page should be included in sitemap.
+ * Excludes explicit noindex pages and meta-refresh redirect shims.
+ */
+function isIndexableHtml(filePath) {
+  try {
+    const content = fs.readFileSync(filePath, 'utf8');
+    const lowered = content.toLowerCase();
+
+    if (/name=["']robots["'][^>]*content=["'][^"']*noindex/i.test(content)) {
+      return false;
+    }
+
+    if (/<meta[^>]+http-equiv=["']refresh["']/i.test(content)) {
+      return false;
+    }
+
+    // Guard against accidental empty shell pages.
+    if (!lowered.includes('<title>')) {
+      return false;
+    }
+
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+/**
  * Scan directory for HTML files
  */
 function scanDirectory(dir, basePath = '') {
@@ -159,6 +187,7 @@ function scanBlogPosts() {
   for (const entry of entries) {
     if (entry.isFile() && entry.name.endsWith('.html') && entry.name !== 'index.html') {
       const fullPath = path.join(blogDir, entry.name);
+      if (!isIndexableHtml(fullPath)) continue;
       const stats = fs.statSync(fullPath);
       const imageUrl = extractImageFromHtml(fullPath);
       posts.push({
@@ -201,6 +230,7 @@ function scanProgrammaticPages() {
     for (const entry of entries) {
       if (entry.isFile() && entry.name.endsWith('.html') && entry.name !== 'index.html') {
         const fullPath = path.join(dir, entry.name);
+        if (!isIndexableHtml(fullPath)) continue;
         const stats = fs.statSync(fullPath);
         pages.push({
           url: `/${dirName}/${entry.name}`,
@@ -213,6 +243,7 @@ function scanProgrammaticPages() {
         for (const subEntry of subEntries) {
           if (subEntry.isFile() && subEntry.name.endsWith('.html')) {
             const fullPath = path.join(subDir, subEntry.name);
+            if (!isIndexableHtml(fullPath)) continue;
             const stats = fs.statSync(fullPath);
             pages.push({
               url: `/${dirName}/${entry.name}/${subEntry.name}`,

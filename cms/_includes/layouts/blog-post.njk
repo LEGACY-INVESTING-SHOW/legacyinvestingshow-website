@@ -12,11 +12,12 @@
     <meta name="keywords" content="{{ keywords }}">
     <meta name="author" content="{{ author }}">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="{{ canonicalUrl or (page.url | absoluteUrl) }}">
+    {% set canonicalCurrent = (canonicalUrl or (page.url | absoluteUrl)) | canonicalizeUrl %}
+    <link rel="canonical" href="{{ canonicalCurrent }}">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
-    <meta property="og:url" content="{{ page.url | absoluteUrl }}">
+    <meta property="og:url" content="{{ canonicalCurrent }}">
     <meta property="og:title" content="{{ title }} | Legacy Investing Show">
     <meta property="og:description" content="{{ description }}">
     <meta property="og:image" content="{{ heroImage | absoluteUrl }}">
