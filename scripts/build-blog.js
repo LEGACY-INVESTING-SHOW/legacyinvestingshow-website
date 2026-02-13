@@ -46,7 +46,7 @@ function calculateReadTime(content) {
  */
 function buildSEOTitle(rawTitle) {
     const title = (rawTitle || 'Legacy Investing Show').replace(/\s+/g, ' ').trim();
-    const suffix = ' | Legacy Investing Show';
+    const suffix = ' | Legacy Investing';
     const maxLen = 60;
 
     if ((title + suffix).length <= maxLen) {
@@ -54,7 +54,7 @@ function buildSEOTitle(rawTitle) {
     }
 
     const budgetWithSuffix = maxLen - suffix.length - 1; // reserve ellipsis
-    if (budgetWithSuffix >= 28) {
+    if (budgetWithSuffix >= 25) {
         return `${title.slice(0, budgetWithSuffix).trimEnd()}…${suffix}`;
     }
 
@@ -356,10 +356,21 @@ function applyTemplate(template, post, allPosts = []) {
     const { toc, content: htmlContent } = generateTOC(rawHtmlContent, wordCount);
 
     // Set default values for optional fields
-    const image = post.frontmatter.image || '/assets/images/blog-default.jpg';
-    // Generate WebP version path (replace extension with .webp)
-    const imageWebp = image.replace(/\.(jpg|jpeg|png)$/i, '.webp');
+    const rawImage = post.frontmatter.image || '/assets/images/blog-default.jpg';
+    // For local images, prepend domain for OG/twitter; for external URLs, use as-is
+    const SITE_DOMAIN = 'https://www.legacyinvestingshow.com';
+    const ogImage = rawImage.startsWith('http') 
+        ? rawImage 
+        : SITE_DOMAIN + rawImage;
+    // Use rawImage for content display (relative paths work fine)
+    const image = rawImage;
+    // Generate WebP version path
+    const imageWebp = rawImage.startsWith('http') 
+        ? rawImage.replace(/\.(jpg|jpeg|png)$/i, '.webp') 
+        : rawImage.replace(/\.(jpg|jpeg|png)$/i, '.webp');
     const author = post.frontmatter.author || 'Preston Seo';
+    const authorTitle = post.frontmatter.authorTitle || 'Real Estate Investor & Educator';
+    const authorCredentials = post.frontmatter.authorCredentials || '';
     const category = post.frontmatter.category || 'Investing';
 
     // Handle modified date (use frontmatter if provided, otherwise use published date)
@@ -391,8 +402,11 @@ function applyTemplate(template, post, allPosts = []) {
         .replace(/\{\{isoDate\}\}/g, formatISODate(post.frontmatter.date))
         .replace(/\{\{modifiedDate\}\}/g, modifiedDate)
         .replace(/\{\{author\}\}/g, author)
+        .replace(/\{\{authorTitle\}\}/g, authorTitle)
+        .replace(/\{\{authorCredentials\}\}/g, authorCredentials)
         .replace(/\{\{category\}\}/g, category)
         .replace(/\{\{image\}\}/g, image)
+        .replace(/\{\{ogImage\}\}/g, ogImage)
         .replace(/\{\{imageWebp\}\}/g, imageWebp)
         .replace(/\{\{readTime\}\}/g, readTime)
         .replace(/\{\{slug\}\}/g, post.slug)
