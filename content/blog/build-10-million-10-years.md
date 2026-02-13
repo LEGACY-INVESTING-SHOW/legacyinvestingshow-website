@@ -56,7 +56,7 @@ tags:
   - "high income careers"
   - "asset building"
 
-image: "/assets/images/blog/build-10-million-10-years.jpg"
+image: "https://i.ytimg.com/vi/rxw1o04ys-4/maxresdefault.jpg"
 imageAlt: "4-phase wealth building framework for building $10 million in 10 years"
 imageWidth: 1200
 imageHeight: 630
@@ -373,4 +373,4 @@ The only question now is: **Are you willing to execute?**
 
 ---
 
-*Ready to accelerate your wealth building journey? Join our free live master class where we go deep on advanced tax strategies that can add over $100,000 to your net worth over time. Link in description.*
+*Ready to accelerate your wealth building journey? Join our free live master class where we go deep on advanced tax strategies that can add over $100,000 to your net worth over time. [Register for free at legacyinvestingshow.com/masterclass](/programs).*
