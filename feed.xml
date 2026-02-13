@@ -8,7 +8,7 @@
     <category>Business/Investing</category>
     <managingEditor>info@legacyinvestingshow.com (Preston Seo)</managingEditor>
     <webMaster>info@legacyinvestingshow.com (Legacy Investing Show)</webMaster>
-    <lastBuildDate>Fri, 13 Feb 2026 19:16:13 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Feb 2026 19:26:46 GMT</lastBuildDate>
     <generator>Legacy Investing Show RSS Generator</generator>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <atom:link href="https://www.legacyinvestingshow.com/feed.xml" rel="self" type="application/rss+xml"/>
@@ -64,6 +64,14 @@
       <author>Preston Seo</author>
       <pubDate>Sat, 14 Feb 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/build-10-million-10-years.html</guid>
+    </item>
+    <item>
+      <title>Why $150K/Year Feels Broke: The Tax…</title>
+      <link>https://www.legacyinvestingshow.com/blog/why-150k-year-feels-broke.html</link>
+      <description>If you make $150,000/year and still feel broke, it</description>
+      <author>Preston Seo</author>
+      <pubDate>Sat, 14 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/why-150k-year-feels-broke.html</guid>
     </item>
     <item>
       <title>How 2 High School Friends Make $2,5…</title>
