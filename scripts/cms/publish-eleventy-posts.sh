@@ -25,6 +25,21 @@ while IFS= read -r -d '' src_file; do
   slug="$(basename "$(dirname "$src_file")")"
   dst_file="$ROOT_BLOG_DIR/$slug.html"
   cp "$src_file" "$dst_file"
+
+  # Local file opens (file://) cannot resolve absolute /assets/... paths.
+  # Rewrite to ../assets/... which works both on file:// and on https://.../blog/<slug>.
+  node - "$dst_file" <<'EOF'
+const fs = require('fs');
+
+const filePath = process.argv[2];
+let html = fs.readFileSync(filePath, 'utf8');
+
+html = html.replace(/(href|src|srcset)="\/assets\//g, '$1="../assets/');
+html = html.replace(/url\(\s*\/assets\//g, 'url(../assets/');
+
+fs.writeFileSync(filePath, html, 'utf8');
+EOF
+
   published=$((published + 1))
 done < <(find "$CMS_BLOG_DIR" -mindepth 2 -maxdepth 2 -name 'index.html' -print0)
 

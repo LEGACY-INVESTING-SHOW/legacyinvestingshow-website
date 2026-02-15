@@ -1,0 +1,79 @@
+# Programmatic SEO Phase 2 Generation Report
+
+Date: 2026-02-15
+
+- Created (CMS markdown): 0
+- Marked covered (already exists): 0
+- Remaining pending: 0
+
+## Topic-by-topic results
+
+- REFRESHED  457b-plan-guide
+- REFRESHED  required-minimum-distributions
+- REFRESHED  early-retirement-withdrawal
+- REFRESHED  spousal-ira
+- REFRESHED  inherited-ira-rules
+- REFRESHED  401k-rollover-guide
+- REFRESHED  retirement-income-strategies
+- REFRESHED  social-security-optimization
+- REFRESHED  catch-up-contributions
+- REFRESHED  retirement-healthcare-planning
+- REFRESHED  4-percent-rule
+- REFRESHED  sequence-of-returns-risk
+- REFRESHED  retirement-bucket-strategy
+- REFRESHED  pension-vs-lump-sum
+- REFRESHED  fire-movement-guide
+- REFRESHED  llc-vs-s-corp
+- REFRESHED  single-member-llc-guide
+- REFRESHED  series-llc
+- REFRESHED  c-corp-benefits
+- REFRESHED  professional-llc
+- REFRESHED  holding-company-structure
+- REFRESHED  family-limited-partnership
+- REFRESHED  operating-agreement-guide
+- REFRESHED  business-credit-building
+- REFRESHED  reasonable-salary-s-corp
+- REFRESHED  registered-agent-requirements
+- REFRESHED  business-succession-planning
+- REFRESHED  corporate-veil-protection
+- REFRESHED  multi-state-business
+- REFRESHED  anonymous-llc
+- REFRESHED  index-fund-investing
+- REFRESHED  dividend-growth-investing
+- REFRESHED  real-estate-syndication
+- REFRESHED  reits-guide
+- REFRESHED  treasury-bonds-strategy
+- REFRESHED  i-bonds-guide
+- REFRESHED  dollar-cost-averaging
+- REFRESHED  asset-allocation-strategies
+- REFRESHED  portfolio-rebalancing
+- REFRESHED  private-equity-investing
+- REFRESHED  crowdfunded-real-estate
+- REFRESHED  municipal-bonds
+- REFRESHED  etf-vs-mutual-fund
+- REFRESHED  sector-etf-strategy
+- REFRESHED  international-investing
+- REFRESHED  alternative-investments-guide
+- REFRESHED  value-investing-strategy
+- REFRESHED  growth-investing-strategy
+- REFRESHED  investment-fees-guide
+- REFRESHED  robo-advisor-comparison
+- REFRESHED  debt-avalanche-method
+- REFRESHED  debt-snowball-method
+- REFRESHED  good-debt-vs-bad-debt
+- REFRESHED  credit-score-optimization
+- REFRESHED  mortgage-refinancing-guide
+- REFRESHED  student-loan-strategies
+- REFRESHED  debt-consolidation-guide
+- REFRESHED  balance-transfer-strategy
+- REFRESHED  heloc-strategy
+- REFRESHED  debt-to-income-ratio
+- REFRESHED  rental-property-investing
+- REFRESHED  house-hacking-guide
+- REFRESHED  brrrr-method
+- REFRESHED  short-term-rental-investing
+- REFRESHED  self-storage-investing
+- REFRESHED  atm-business-guide
+- REFRESHED  laundromat-investing
+- REFRESHED  digital-product-income
+- REFRESHED  royalty-income-guide

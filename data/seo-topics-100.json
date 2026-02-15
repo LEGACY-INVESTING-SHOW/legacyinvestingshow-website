@@ -2,12 +2,13 @@
   "metadata": {
     "generated": "2026-01-26",
     "total_topics": 100,
-    "completed_topics": 30,
-    "pending_topics": 70,
-    "status": "partially_completed",
-    "last_updated": "2026-01-26",
+    "completed_topics": 99,
+    "pending_topics": 0,
+    "status": "complete",
+    "last_updated": "2026-02-15",
     "target_word_count": "3000-5000",
-    "model_for_generation": "claude-haiku-4.5"
+    "model_for_generation": "claude-haiku-4.5",
+    "covered_topics": 1
   },
   "categories": {
     "tax_strategies": {
@@ -298,7 +299,9 @@
           "title": "457(b) Plan Guide: The Government Employee's Secret Weapon",
           "primary_keyword": "457b plan",
           "category_path": "retirement",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 32,
@@ -306,7 +309,9 @@
           "title": "Required Minimum Distributions (RMDs): Rules, Calculations & Strategies",
           "primary_keyword": "required minimum distributions",
           "category_path": "retirement",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 33,
@@ -314,7 +319,9 @@
           "title": "Early Retirement Withdrawal: How to Access Funds Before 59½",
           "primary_keyword": "early retirement withdrawal",
           "category_path": "retirement",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 34,
@@ -322,7 +329,9 @@
           "title": "Spousal IRA: Retirement Savings for Non-Working Spouses",
           "primary_keyword": "spousal IRA",
           "category_path": "retirement",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 35,
@@ -330,7 +339,9 @@
           "title": "Inherited IRA Rules 2026: What Beneficiaries Need to Know",
           "primary_keyword": "inherited IRA rules",
           "category_path": "retirement",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 36,
@@ -338,7 +349,9 @@
           "title": "401(k) Rollover Guide: Move Your Retirement Funds the Right Way",
           "primary_keyword": "401k rollover",
           "category_path": "retirement",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 37,
@@ -346,7 +359,9 @@
           "title": "Retirement Income Strategies: How to Create Steady Cash Flow",
           "primary_keyword": "retirement income strategy",
           "category_path": "retirement",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 38,
@@ -354,7 +369,9 @@
           "title": "Social Security Optimization: When to Claim for Maximum Benefits",
           "primary_keyword": "social security optimization",
           "category_path": "retirement",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 39,
@@ -362,7 +379,9 @@
           "title": "Catch-Up Contributions: Supercharge Retirement Savings After 50",
           "primary_keyword": "catch up contributions",
           "category_path": "retirement",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 40,
@@ -370,7 +389,9 @@
           "title": "Retirement Healthcare Planning: Medicare, HSA & Cost Strategies",
           "primary_keyword": "retirement healthcare planning",
           "category_path": "retirement",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 41,
@@ -378,7 +399,9 @@
           "title": "The 4% Rule: How Much Can You Safely Withdraw in Retirement?",
           "primary_keyword": "4 percent rule retirement",
           "category_path": "retirement",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 42,
@@ -386,7 +409,9 @@
           "title": "Sequence of Returns Risk: Protect Your Retirement from Market Crashes",
           "primary_keyword": "sequence of returns risk",
           "category_path": "retirement",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 43,
@@ -394,7 +419,9 @@
           "title": "Retirement Bucket Strategy: Organize Your Assets for Steady Income",
           "primary_keyword": "retirement bucket strategy",
           "category_path": "retirement",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 44,
@@ -402,7 +429,9 @@
           "title": "Pension vs Lump Sum: How to Decide at Retirement",
           "primary_keyword": "pension vs lump sum",
           "category_path": "retirement",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 45,
@@ -410,7 +439,9 @@
           "title": "FIRE Movement Guide: Financial Independence, Retire Early",
           "primary_keyword": "FIRE movement",
           "category_path": "retirement",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         }
       ]
     },
@@ -425,7 +456,9 @@
           "title": "LLC vs S-Corp: Which Business Structure Saves More Taxes?",
           "primary_keyword": "LLC vs S Corp",
           "category_path": "business-structures",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 47,
@@ -433,7 +466,9 @@
           "title": "Single Member LLC Guide: Protection & Tax Benefits",
           "primary_keyword": "single member LLC",
           "category_path": "business-structures",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 48,
@@ -441,7 +476,9 @@
           "title": "Series LLC: Asset Protection for Multiple Properties",
           "primary_keyword": "series LLC",
           "category_path": "business-structures",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 49,
@@ -449,7 +486,9 @@
           "title": "C Corporation Benefits: When a C-Corp Makes Sense",
           "primary_keyword": "C corporation benefits",
           "category_path": "business-structures",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 50,
@@ -457,7 +496,9 @@
           "title": "Professional LLC (PLLC): Entity Structure for Licensed Professionals",
           "primary_keyword": "professional LLC PLLC",
           "category_path": "business-structures",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 51,
@@ -465,7 +506,9 @@
           "title": "Holding Company Structure: Protect Assets & Reduce Taxes",
           "primary_keyword": "holding company structure",
           "category_path": "business-structures",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 52,
@@ -473,7 +516,9 @@
           "title": "Family Limited Partnership (FLP): Estate Planning & Asset Protection",
           "primary_keyword": "family limited partnership",
           "category_path": "business-structures",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 53,
@@ -481,7 +526,9 @@
           "title": "LLC Operating Agreement: Complete Guide with Templates",
           "primary_keyword": "LLC operating agreement",
           "category_path": "business-structures",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 54,
@@ -489,7 +536,9 @@
           "title": "Business Credit Building: Separate Your Personal & Business Finances",
           "primary_keyword": "build business credit",
           "category_path": "business-structures",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 55,
@@ -497,7 +546,9 @@
           "title": "S-Corp Reasonable Salary: How to Set Your Pay & Avoid IRS Issues",
           "primary_keyword": "S corp reasonable salary",
           "category_path": "business-structures",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 56,
@@ -505,7 +556,9 @@
           "title": "Registered Agent Requirements: What Every LLC Owner Must Know",
           "primary_keyword": "registered agent",
           "category_path": "business-structures",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 57,
@@ -513,7 +566,9 @@
           "title": "Business Succession Planning: How to Transfer Ownership",
           "primary_keyword": "business succession planning",
           "category_path": "business-structures",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 58,
@@ -521,7 +576,9 @@
           "title": "Corporate Veil Protection: How to Keep Your Personal Assets Safe",
           "primary_keyword": "piercing corporate veil",
           "category_path": "business-structures",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 59,
@@ -529,7 +586,9 @@
           "title": "Multi-State Business Formation: Compliance & Tax Considerations",
           "primary_keyword": "multi state business formation",
           "category_path": "business-structures",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 60,
@@ -537,7 +596,9 @@
           "title": "Anonymous LLC: How to Keep Your Business Ownership Private",
           "primary_keyword": "anonymous LLC",
           "category_path": "business-structures",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         }
       ]
     },
@@ -552,7 +613,9 @@
           "title": "Index Fund Investing: The Simple Path to Building Wealth",
           "primary_keyword": "index fund investing",
           "category_path": "investing",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 62,
@@ -560,7 +623,9 @@
           "title": "Dividend Growth Investing: Build Passive Income That Grows",
           "primary_keyword": "dividend growth investing",
           "category_path": "investing",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 63,
@@ -568,7 +633,9 @@
           "title": "Real Estate Syndication: Passive Investing in Large Properties",
           "primary_keyword": "real estate syndication",
           "category_path": "investing",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 64,
@@ -576,7 +643,9 @@
           "title": "REITs Complete Guide: Real Estate Investing Without Owning Property",
           "primary_keyword": "REIT investing",
           "category_path": "investing",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 65,
@@ -584,7 +653,9 @@
           "title": "Treasury Bonds Strategy: Safe Income in Any Market",
           "primary_keyword": "treasury bonds",
           "category_path": "investing",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 66,
@@ -592,7 +663,9 @@
           "title": "I Bonds Complete Guide: Inflation-Protected Savings",
           "primary_keyword": "I bonds",
           "category_path": "investing",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 67,
@@ -600,7 +673,9 @@
           "title": "Dollar Cost Averaging: The Strategy That Removes Emotion from Investing",
           "primary_keyword": "dollar cost averaging",
           "category_path": "investing",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 68,
@@ -608,7 +683,9 @@
           "title": "Asset Allocation Strategies by Age: How to Balance Your Portfolio",
           "primary_keyword": "asset allocation by age",
           "category_path": "investing",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 69,
@@ -616,7 +693,9 @@
           "title": "Portfolio Rebalancing: When and How to Adjust Your Investments",
           "primary_keyword": "portfolio rebalancing",
           "category_path": "investing",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 70,
@@ -624,7 +703,9 @@
           "title": "Private Equity Investing: Access Alternative Investments",
           "primary_keyword": "private equity investing",
           "category_path": "investing",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 71,
@@ -632,7 +713,9 @@
           "title": "Crowdfunded Real Estate: Invest in Property with $500",
           "primary_keyword": "crowdfunded real estate",
           "category_path": "investing",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 72,
@@ -640,7 +723,9 @@
           "title": "Municipal Bonds: Tax-Free Income for High Earners",
           "primary_keyword": "municipal bonds",
           "category_path": "investing",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 73,
@@ -648,7 +733,9 @@
           "title": "ETF vs Mutual Fund: Which Is Better for Your Portfolio?",
           "primary_keyword": "ETF vs mutual fund",
           "category_path": "investing",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 74,
@@ -656,7 +743,9 @@
           "title": "Sector ETF Strategy: How to Invest in Market Segments",
           "primary_keyword": "sector ETF",
           "category_path": "investing",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 75,
@@ -664,7 +753,9 @@
           "title": "International Investing: Diversify Beyond US Markets",
           "primary_keyword": "international investing",
           "category_path": "investing",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 76,
@@ -672,7 +763,9 @@
           "title": "Alternative Investments Guide: Beyond Stocks and Bonds",
           "primary_keyword": "alternative investments",
           "category_path": "investing",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 77,
@@ -680,7 +773,9 @@
           "title": "Value Investing Strategy: Find Undervalued Stocks",
           "primary_keyword": "value investing",
           "category_path": "investing",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 78,
@@ -688,7 +783,9 @@
           "title": "Growth Investing Strategy: Invest in Tomorrow's Winners",
           "primary_keyword": "growth investing",
           "category_path": "investing",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 79,
@@ -696,7 +793,9 @@
           "title": "Investment Fees Guide: How Costs Destroy Your Returns",
           "primary_keyword": "investment fees",
           "category_path": "investing",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 80,
@@ -704,7 +803,9 @@
           "title": "Robo Advisor Comparison 2026: Best Automated Investing Platforms",
           "primary_keyword": "robo advisor comparison",
           "category_path": "investing",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         }
       ]
     },
@@ -719,7 +820,9 @@
           "title": "Debt Avalanche Method: The Fastest Way to Pay Off Debt",
           "primary_keyword": "debt avalanche",
           "category_path": "debt-management",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 82,
@@ -727,7 +830,9 @@
           "title": "Debt Snowball Method: Build Momentum Paying Off Debt",
           "primary_keyword": "debt snowball",
           "category_path": "debt-management",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 83,
@@ -735,7 +840,9 @@
           "title": "Good Debt vs Bad Debt: Leverage That Builds Wealth",
           "primary_keyword": "good debt vs bad debt",
           "category_path": "debt-management",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 84,
@@ -743,7 +850,9 @@
           "title": "Credit Score Optimization: Improve Your Score Fast",
           "primary_keyword": "improve credit score",
           "category_path": "debt-management",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 85,
@@ -751,7 +860,9 @@
           "title": "Mortgage Refinancing Guide: When and How to Refinance",
           "primary_keyword": "mortgage refinancing",
           "category_path": "debt-management",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 86,
@@ -759,7 +870,9 @@
           "title": "Student Loan Repayment Strategies: PSLF, IDR & Forgiveness",
           "primary_keyword": "student loan repayment strategies",
           "category_path": "debt-management",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 87,
@@ -767,7 +880,9 @@
           "title": "Debt Consolidation Guide: Simplify Your Payments & Save",
           "primary_keyword": "debt consolidation",
           "category_path": "debt-management",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 88,
@@ -775,7 +890,9 @@
           "title": "Balance Transfer Strategy: Use 0% APR to Crush Debt",
           "primary_keyword": "balance transfer strategy",
           "category_path": "debt-management",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 89,
@@ -783,7 +900,9 @@
           "title": "HELOC Strategy: How to Use Home Equity Wisely",
           "primary_keyword": "HELOC strategy",
           "category_path": "debt-management",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 90,
@@ -791,7 +910,9 @@
           "title": "Debt-to-Income Ratio: What Lenders Look For & How to Improve",
           "primary_keyword": "debt to income ratio",
           "category_path": "debt-management",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         }
       ]
     },
@@ -806,7 +927,9 @@
           "title": "Rental Property Investing: Build Passive Income with Real Estate",
           "primary_keyword": "rental property investing",
           "category_path": "passive-income",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 92,
@@ -814,7 +937,9 @@
           "title": "House Hacking Guide: Live for Free While Building Wealth",
           "primary_keyword": "house hacking",
           "category_path": "passive-income",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 93,
@@ -822,7 +947,9 @@
           "title": "BRRRR Method: Buy, Rehab, Rent, Refinance, Repeat",
           "primary_keyword": "BRRRR method",
           "category_path": "passive-income",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 94,
@@ -830,7 +957,9 @@
           "title": "Short-Term Rental Investing: Airbnb & VRBO Property Guide",
           "primary_keyword": "short term rental investing",
           "category_path": "passive-income",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 95,
@@ -838,7 +967,10 @@
           "title": "Rental Arbitrage Complete Guide: Airbnb Without Buying Property",
           "primary_keyword": "rental arbitrage",
           "category_path": "passive-income",
-          "status": "pending"
+          "status": "covered",
+          "completed_date": "2026-02-15",
+          "completion_type": "existing_coverage",
+          "completion_note": "overlap:getting-started-airbnb-arbitrage"
         },
         {
           "id": 96,
@@ -846,7 +978,9 @@
           "title": "Self Storage Investing: High Cash Flow, Low Maintenance",
           "primary_keyword": "self storage investing",
           "category_path": "passive-income",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 97,
@@ -854,7 +988,9 @@
           "title": "ATM Business Guide: Passive Income from Cash Machines",
           "primary_keyword": "ATM business",
           "category_path": "passive-income",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 98,
@@ -862,7 +998,9 @@
           "title": "Laundromat Investing: Cash Flow Business with Low Competition",
           "primary_keyword": "laundromat investing",
           "category_path": "passive-income",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 99,
@@ -870,7 +1008,9 @@
           "title": "Digital Product Income: Create Once, Sell Forever",
           "primary_keyword": "digital product passive income",
           "category_path": "passive-income",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         },
         {
           "id": 100,
@@ -878,7 +1018,9 @@
           "title": "Royalty Income Guide: Earn from Intellectual Property",
           "primary_keyword": "royalty income",
           "category_path": "passive-income",
-          "status": "pending"
+          "status": "completed",
+          "completed_date": "2026-02-15",
+          "completion_type": "cms_generated"
         }
       ]
     }
