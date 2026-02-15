@@ -17,11 +17,11 @@ const { execSync } = require('child_process');
 
 // Configuration
 const CONFIG = {
-  channelId: process.env.YT_CHANNEL_ID || 'UC_x5XG1OV2P6uZZ5FSM9Ttw', // Default: Google Developers channel - update this!
+  channelId: process.env.YT_CHANNEL_ID || 'UCJbOZAqwsdna6kjBZ0UcJmw', // Legacy Investing Show
   youtubeApiKey: process.env.YOUTUBE_API_KEY,
   stateFile: path.join(__dirname, '..', '.youtube-state.json'),
+  contentDir: path.join(__dirname, '..', 'content', 'blog'),
   blogDir: path.join(__dirname, '..', 'blog'),
-  templateFile: path.join(__dirname, '..', 'templates', 'blog-post.html'),
   maxVideosPerRun: 3, // Limit to prevent spam
 };
 
@@ -112,7 +112,7 @@ function generateBlogPost(video, transcript) {
     .replace(/^-|-$/g, '')
     .substring(0, 60);
   
-  const filename = `${slug}.html`;
+  const filename = `${slug}.md`;
   
   // Create excerpt from transcript
   const excerpt = transcript.transcript
@@ -121,98 +121,61 @@ function generateBlogPost(video, transcript) {
     .join(' ')
     .substring(0, 200) + '...';
   
-  // Read template
-  let template = '';
-  try {
-    template = fs.readFileSync(CONFIG.templateFile, 'utf8');
-  } catch {
-    // Default template if file doesn't exist
-    template = `<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{TITLE}} | Legacy Investing Show</title>
-    <meta name="description" content="{{EXCERPT}}">
-    <meta name="author" content="Preston Seo">
-    <meta name="date" content="{{DATE}}">
-    <link rel="canonical" href="https://legacyinvestingshow-website.vercel.app/blog/{{FILENAME}}">
-</head>
-<body>
-    <article>
-        <h1>{{TITLE}}</h1>
-        <time datetime="{{DATE}}">{{DATE}}</time>
-        <div class="video-embed">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{VIDEO_ID}}" 
-                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen></iframe>
-        </div>
-        <div class="content">
-            {{CONTENT}}
-        </div>
-    </article>
-</body>
-</html>`;
-  }
+  // Create markdown frontmatter and content
+  const markdown = `---
+title: "${video.title.replace(/"/g, '\\"')}"
+description: "${excerpt.replace(/"/g, '\\"')}"
+date: "${dateStr}"
+author: "Preston Seo"
+category: "YouTube"
+videoId: "${video.id}"
+youtubeUrl: "${video.url}"
+image: "/assets/images/blog/default.jpg"
+---
+
+# ${video.title}
+
+<div class="video-embed">
+  <iframe width="100%" height="400" src="https://www.youtube.com/embed/${video.id}" 
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>
+</div>
+
+*[Watch on YouTube](${video.url})*
+
+## Transcript
+
+${transcript.transcript}
+
+---
+
+*This post was automatically generated from a YouTube video. The transcript may contain errors or need editing.*
+`;
   
-  // Process transcript into readable format
-  const processedContent = processTranscript(transcript);
-  
-  // Replace placeholders
-  const html = template
-    .replace(/\{\{TITLE\}\}/g, video.title)
-    .replace(/\{\{EXCERPT\}\}/g, excerpt)
-    .replace(/\{\{DATE\}\}/g, dateStr)
-    .replace(/\{\{FILENAME\}\}/g, filename)
-    .replace(/\{\{VIDEO_ID\}\}/g, video.id)
-    .replace(/\{\{CONTENT\}\}/g, processedContent)
-    .replace(/\{\{URL\}\}/g, video.url);
-  
-  return { filename, html, title: video.title };
+  return { filename, content: markdown, title: video.title };
 }
 
-// Process transcript into HTML content
+// Process transcript into markdown content
 function processTranscript(transcript) {
-  // Convert transcript to readable HTML
-  // Add headers, sections, etc.
-  
+  // Convert transcript to readable markdown
   const paragraphs = transcript.transcript
     .split(/\n\n+/)
     .map(p => p.trim())
     .filter(p => p.length > 0)
-    .map(p => `<p>${p.replace(/\n/g, ' ')}</p>`)
-    .join('\n');
+    .join('\n\n');
   
-  return `
-<div class="video-info">
-    <p><strong>Watch the full video:</strong> <a href="{{URL}}" target="_blank" rel="noopener">View on YouTube</a></p>
-</div>
-
-<div class="transcript">
-    <h2>Video Transcript</h2>
-    ${paragraphs}
-</div>
-
-<div class="cta">
-    <p>Want to learn more? <a href="/programs.html">Check out our programs</a> or <a href="/blog/">read more articles</a>.</p>
-</div>
-  `;
+  return paragraphs;
 }
 
 // Save blog post
 function saveBlogPost(post) {
-  const filepath = path.join(CONFIG.blogDir, post.filename);
-  fs.writeFileSync(filepath, post.html);
+  // Ensure content directory exists
+  if (!fs.existsSync(CONFIG.contentDir)) {
+    fs.mkdirSync(CONFIG.contentDir, { recursive: true });
+  }
+  const filepath = path.join(CONFIG.contentDir, post.filename);
+  fs.writeFileSync(filepath, post.content);
   return filepath;
-}
-
-// Update blog index
-function updateBlogIndex(newPost) {
-  const indexPath = path.join(CONFIG.blogDir, 'index.html');
-  
-  // Simple append to index - enhance as needed
-  console.log(`New blog post created: ${newPost.title}`);
-  console.log(`File: ${newPost.filename}`);
 }
 
 // Main function
@@ -271,9 +234,6 @@ async function main() {
       // Save blog post
       const filepath = saveBlogPost(post);
       console.log(`✅ Created: ${filepath}`);
-      
-      // Update index
-      updateBlogIndex(post);
       
       processed.push(video.id);
       
