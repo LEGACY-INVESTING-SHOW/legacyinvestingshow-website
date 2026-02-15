@@ -192,5 +192,17 @@
       "destination": "/blog/rob-100k-3-airbnbs-9-to-5",
       "permanent": true
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "legacyinvesting-show.vercel.app"
+        }
+      ],
+      "destination": "https://www.legacyinvestingshow.com/:path*"
+    }
   ]
 }
