@@ -44,13 +44,13 @@ function getSchemaJson(postTitle, postUrl) {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://legacyinvestingshow.com/"
+                "item": "https://www.legacyinvestingshow.com/"
             },
             {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Blog",
-                "item": "https://legacyinvestingshow.com/blog/"
+                "item": "https://www.legacyinvestingshow.com/blog/"
             },
             {
                 "@type": "ListItem",

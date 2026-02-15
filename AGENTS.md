@@ -6,6 +6,14 @@
 
 Static website for Legacy Investing Show - financial education programs, Airbnb arbitrage success stories, and wealth-building resources. Built with HTML5, Tailwind CSS v3, and Node.js build scripts. The site features a sophisticated multi-layered SEO architecture with blogs, tax strategies, retirement guides, programmatic city pages, and persona-based content.
 
+## Recovery Workflow Lock (2026-02-07)
+
+- **Canonical source-of-truth repo:** `/Users/deveshdhardubey/legacyinvestingshow website`
+- **Canonical blog content source:** `content/blog/*.md`
+- **Eleventy CMS workspace:** `cms/` (inside this repository)
+- **Do not generate standalone production HTML with ad-hoc prompts/skills.** Generate markdown/data only, then render through templates/build pipeline.
+- If content is produced outside this repo, it must be imported as markdown into `content/blog/` (or synchronized into Eleventy `src/blog/`) before publishing.
+
 ## Build & Development Commands
 
 ```bash
@@ -563,7 +571,7 @@ legacyinvestingshow-website/
 Copy `.env.example` to `.env` and set:
 
 ```bash
-SITE_URL=https://legacyinvestingshow.com
+SITE_URL=https://www.legacyinvestingshow.com
 YOUTUBE_API_KEY=your_key_here  # For YouTube automation
 YT_CHANNEL_ID=your_channel_id  # For YouTube automation
 ```

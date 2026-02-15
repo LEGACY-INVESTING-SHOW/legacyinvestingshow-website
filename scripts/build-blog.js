@@ -42,6 +42,26 @@ function calculateReadTime(content) {
 }
 
 /**
+ * Build a SERP-friendly <title> string capped near 60 chars.
+ */
+function buildSEOTitle(rawTitle) {
+    const title = (rawTitle || 'Legacy Investing Show').replace(/\s+/g, ' ').trim();
+    const suffix = ' | Legacy Investing';
+    const maxLen = 60;
+
+    if ((title + suffix).length <= maxLen) {
+        return `${title}${suffix}`;
+    }
+
+    const budgetWithSuffix = maxLen - suffix.length - 1; // reserve ellipsis
+    if (budgetWithSuffix >= 25) {
+        return `${title.slice(0, budgetWithSuffix).trimEnd()}…${suffix}`;
+    }
+
+    return `${title.slice(0, maxLen - 1).trimEnd()}…`;
+}
+
+/**
  * Generate slug from filename
  */
 function generateSlug(filename) {
@@ -336,10 +356,21 @@ function applyTemplate(template, post, allPosts = []) {
     const { toc, content: htmlContent } = generateTOC(rawHtmlContent, wordCount);
 
     // Set default values for optional fields
-    const image = post.frontmatter.image || '/assets/images/blog-default.jpg';
-    // Generate WebP version path (replace extension with .webp)
-    const imageWebp = image.replace(/\.(jpg|jpeg|png)$/i, '.webp');
+    const rawImage = post.frontmatter.image || '/assets/images/blog-default.jpg';
+    // For local images, prepend domain for OG/twitter; for external URLs, use as-is
+    const SITE_DOMAIN = 'https://www.legacyinvestingshow.com';
+    const ogImage = rawImage.startsWith('http') 
+        ? rawImage 
+        : SITE_DOMAIN + rawImage;
+    // Use rawImage for content display (relative paths work fine)
+    const image = rawImage;
+    // Generate WebP version path
+    const imageWebp = rawImage.startsWith('http') 
+        ? rawImage.replace(/\.(jpg|jpeg|png)$/i, '.webp') 
+        : rawImage.replace(/\.(jpg|jpeg|png)$/i, '.webp');
     const author = post.frontmatter.author || 'Preston Seo';
+    const authorTitle = post.frontmatter.authorTitle || 'Real Estate Investor & Educator';
+    const authorCredentials = post.frontmatter.authorCredentials || '';
     const category = post.frontmatter.category || 'Investing';
 
     // Handle modified date (use frontmatter if provided, otherwise use published date)
@@ -363,6 +394,7 @@ function applyTemplate(template, post, allPosts = []) {
     // Replace all placeholders
     let html = template
         .replace(/\{\{title\}\}/g, post.frontmatter.title || 'Untitled')
+        .replace(/\{\{seoTitle\}\}/g, buildSEOTitle(post.frontmatter.title))
         .replace(/\{\{description\}\}/g, post.frontmatter.description || '')
         .replace(/\{\{toc\}\}/g, toc)
         .replace(/\{\{content\}\}/g, htmlContent)
@@ -370,8 +402,11 @@ function applyTemplate(template, post, allPosts = []) {
         .replace(/\{\{isoDate\}\}/g, formatISODate(post.frontmatter.date))
         .replace(/\{\{modifiedDate\}\}/g, modifiedDate)
         .replace(/\{\{author\}\}/g, author)
+        .replace(/\{\{authorTitle\}\}/g, authorTitle)
+        .replace(/\{\{authorCredentials\}\}/g, authorCredentials)
         .replace(/\{\{category\}\}/g, category)
         .replace(/\{\{image\}\}/g, image)
+        .replace(/\{\{ogImage\}\}/g, ogImage)
         .replace(/\{\{imageWebp\}\}/g, imageWebp)
         .replace(/\{\{readTime\}\}/g, readTime)
         .replace(/\{\{slug\}\}/g, post.slug)
@@ -420,7 +455,7 @@ function generateRelatedPostsMarkup(posts) {
         const readTime = calculateReadTime(post.content);
 
         return `
-            <a href="/blog/${post.slug}.html" class="related-post-item">
+            <a href="/blog/${post.slug}" class="related-post-item">
                 <div class="related-post-image">
                     <img src="${image}" alt="${post.frontmatter.title}" loading="lazy">
                 </div>
@@ -474,7 +509,7 @@ function generateBlogIndex(posts) {
         const date = formatDate(post.frontmatter.date);
 
         return `
-            <a href="/blog/${post.slug}.html" class="minimal-post-item" data-category="${categorySlug}">
+            <a href="/blog/${post.slug}" class="minimal-post-item" data-category="${categorySlug}">
                 <div class="minimal-post-image">
                     <img src="${image}" alt="${post.frontmatter.title}" loading="lazy">
                 </div>
@@ -501,7 +536,7 @@ function generateBlogIndex(posts) {
         const readTime = calculateReadTime(post.content);
 
         return `
-                    <a href="/blog/${post.slug}.html" class="block group">
+                    <a href="/blog/${post.slug}" class="block group">
                         <div class="relative overflow-hidden rounded-sm">
                             <img src="${image}"
                                  alt="${post.frontmatter.title}"
@@ -539,14 +574,14 @@ function generateBlogIndex(posts) {
     <meta name="keywords" content="wealth building, investing, real estate, financial freedom">
     <meta name="author" content="Preston Seo">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://legacyinvestingshow.com/blog/">
+    <link rel="canonical" href="https://www.legacyinvestingshow.com/blog/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://legacyinvestingshow.com/blog/">
+    <meta property="og:url" content="https://www.legacyinvestingshow.com/blog/">
     <meta property="og:title" content="Blog | Legacy Investing Show">
     <meta property="og:description" content="Wealth-building strategies, investing insights, and financial freedom tips.">
-    <meta property="og:image" content="https://legacyinvestingshow.com/assets/images/og-blog.jpg">
+    <meta property="og:image" content="https://www.legacyinvestingshow.com/assets/images/og-blog.jpg">
     <meta property="og:site_name" content="Legacy Investing Show">
 
     <!-- Twitter Card -->
@@ -554,7 +589,7 @@ function generateBlogIndex(posts) {
     <meta name="twitter:site" content="@thelegacyshow">
     <meta name="twitter:title" content="Blog | Legacy Investing Show">
     <meta name="twitter:description" content="Wealth-building strategies, investing insights, and financial freedom tips.">
-    <meta name="twitter:image" content="https://legacyinvestingshow.com/assets/images/og-blog.jpg">
+    <meta name="twitter:image" content="https://www.legacyinvestingshow.com/assets/images/og-blog.jpg">
 
     <!-- Theme Color -->
     <meta name="theme-color" content="#ffffff">
@@ -577,13 +612,13 @@ function generateBlogIndex(posts) {
         "@type": "Blog",
         "name": "Legacy Investing Show Blog",
         "description": "Wealth-building strategies and investing insights",
-        "url": "https://legacyinvestingshow.com/blog/",
+        "url": "https://www.legacyinvestingshow.com/blog/",
         "publisher": {
             "@type": "Organization",
             "name": "Legacy Investing Show",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://legacyinvestingshow.com/assets/images/logo.png"
+                "url": "https://www.legacyinvestingshow.com/assets/images/logo.png"
             }
         }
     }
@@ -615,9 +650,9 @@ function generateBlogIndex(posts) {
 
                 <div class="hidden md:flex items-center gap-6">
                     <a href="/" class="nav-link">Home</a>
-                    <a href="/about.html" class="nav-link">About</a>
-                    <a href="/programs.html" class="nav-link">Programs</a>
-                    <a href="/success-stories.html" class="nav-link">Results</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/programs" class="nav-link">Programs</a>
+                    <a href="/success-stories" class="nav-link">Results</a>
                     <a href="/blog/" class="nav-link nav-link-active">Blog</a>
                 </div>
 
@@ -631,9 +666,9 @@ function generateBlogIndex(posts) {
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <div class="flex flex-col gap-3">
                     <a href="/" class="nav-link">Home</a>
-                    <a href="/about.html" class="nav-link">About</a>
-                    <a href="/programs.html" class="nav-link">Programs</a>
-                    <a href="/success-stories.html" class="nav-link">Results</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/programs" class="nav-link">Programs</a>
+                    <a href="/success-stories" class="nav-link">Results</a>
                     <a href="/blog/" class="nav-link nav-link-active">Blog</a>
                 </div>
             </div>
@@ -683,8 +718,8 @@ function generateBlogIndex(posts) {
                     <span>Legacy Investing Show</span>
                 </div>
                 <div class="footer-links">
-                    <a href="/programs.html">Programs</a>
-                    <a href="/success-stories.html">Results</a>
+                    <a href="/programs">Programs</a>
+                    <a href="/success-stories">Results</a>
                     <a href="/blog/">Blog</a>
                 </div>
             </div>

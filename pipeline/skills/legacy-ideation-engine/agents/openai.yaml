@@ -1,0 +1,4 @@
+interface:
+  display_name: "Legacy Ideation Engine"
+  short_description: "Generate trend-backed topic opportunities."
+  default_prompt: "Discover and prioritize SEO/AEO topic opportunities from live web evidence."

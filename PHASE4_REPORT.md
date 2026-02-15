@@ -1,7 +1,7 @@
 # PHASE 4: User Experience - Report
 
 **Date:** January 31, 2026  
-**Website:** https://legacyinvestingshow-website.vercel.app
+**Website:** https://www.legacyinvestingshow.com
 
 ## Executive Summary
 
@@ -19,11 +19,11 @@ This phase focused on improving user experience through breadcrumb navigation an
 
 | Page Type | Count | Status | Example URL |
 |-----------|-------|--------|-------------|
-| Tax Strategy Pages | 37/37 | ✓ Has breadcrumbs | `/tax-strategies/cost-segregation.html` |
+| Tax Strategy Pages | 37/37 | ✓ Has breadcrumbs | `/tax-strategies/cost-segregation` |
 | Retirement Pages | 5/5 | ✓ Has breadcrumbs | `/retirement/sep-ira-guide.html` |
-| Persona Pages | 6/6 | ✓ Has breadcrumbs | `/tax-strategies/for/real-estate-investors.html` |
-| Blog Posts | 43/43 | ✓ Has breadcrumbs | `/blog/airbnb-arbitrage-84-days-9-steps-guide.html` |
-| Topic Pages | 6/6 | ✓ Has breadcrumbs | `/topics/investing.html` |
+| Persona Pages | 6/6 | ✓ Has breadcrumbs | `/tax-strategies/for/real-estate-investors` |
+| Blog Posts | 43/43 | ✓ Has breadcrumbs | `/blog/airbnb-arbitrage-84-days-9-steps-guide` |
+| Topic Pages | 6/6 | ✓ Has breadcrumbs | `/topics/investing` |
 
 ### Breadcrumb Structure Verified:
 
@@ -112,7 +112,7 @@ npm run build
 ```
 
 ### Deployment Status: ✓ LIVE
-- **Production URL:** https://legacyinvestingshow-website.vercel.app
+- **Production URL:** https://www.legacyinvestingshow.com
 - **Deployment Time:** 18 seconds
 - **Status:** Successfully aliased to production domain
 
@@ -120,12 +120,12 @@ npm run build
 
 | URL | Status | Breadcrumb Visible |
 |-----|--------|-------------------|
-| `/tax-strategies/cost-segregation.html` | ✓ 200 | Yes |
+| `/tax-strategies/cost-segregation` | ✓ 200 | Yes |
 | `/retirement/sep-ira-guide.html` | ✓ 200 | Yes |
-| `/blog/airbnb-arbitrage-84-days-9-steps-guide.html` | ✓ 200 | Yes |
-| `/topics/investing.html` | ✓ 200 | Yes |
-| `/tax-strategies/for/real-estate-investors.html` | ✓ 200 | Yes |
-| `/tax-strategies/capital-gains-exclusion.html` | ✓ 200 | Yes (with new Related Strategies) |
+| `/blog/airbnb-arbitrage-84-days-9-steps-guide` | ✓ 200 | Yes |
+| `/topics/investing` | ✓ 200 | Yes |
+| `/tax-strategies/for/real-estate-investors` | ✓ 200 | Yes |
+| `/tax-strategies/capital-gains-exclusion` | ✓ 200 | Yes (with new Related Strategies) |
 
 ---
 

@@ -89,7 +89,7 @@ Audience-targeted pages for specific user types.
 - All pages with current lastmod dates
 
 ### Internal Linking
-- Updated /tax-strategies/index.html with:
+- Updated /tax-strategies/index with:
   - Persona navigation cards
   - Comparison strategy links
   - City-specific page links

@@ -27,7 +27,7 @@ The blog currently has a solid foundation but several issues prevent optimal SEO
 2. **Technical SEO Gaps:**
    - Missing BreadcrumbList structured data
    - No image sitemap extension
-   - Sitemap has duplicate entries (`/blog/` and `/blog/index.html`)
+   - Sitemap has duplicate entries (`/blog/` and `/blog/index`)
    - Google Analytics placeholder not configured
    - No FAQ schema for FAQ-style content
 
@@ -69,7 +69,7 @@ Fix critical data inconsistencies and establish baseline technical SEO.
 
 #### 1.2 Sitemap Cleanup
 - **File:** `scripts/generate-sitemap.js`
-  - Remove duplicate `/blog/index.html` entry (keep only `/blog/`)
+  - Remove duplicate `/blog/index` entry (keep only `/blog/`)
   - Add image sitemap extension (`xmlns:image`)
   - Implement automatic `lastmod` from file modification dates
 
@@ -90,17 +90,17 @@ const generateSitemap = () => {
 # AI Crawlers - Explicit Allow
 User-agent: GPTBot
 Allow: /blog/
-Allow: /about.html
+Allow: /about
 Allow: /llms.txt
 
 User-agent: ClaudeBot
 Allow: /blog/
-Allow: /about.html
+Allow: /about
 Allow: /llms.txt
 
 User-agent: PerplexityBot
 Allow: /blog/
-Allow: /about.html
+Allow: /about
 Allow: /llms.txt
 
 User-agent: Bytespider
@@ -135,13 +135,13 @@ Implement complete schema markup for rich snippets and AI understanding.
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://legacyinvestingshow.com/"
+      "item": "https://www.legacyinvestingshow.com/"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Blog",
-      "item": "https://legacyinvestingshow.com/blog/"
+      "item": "https://www.legacyinvestingshow.com/blog/"
     },
     {
       "@type": "ListItem",
@@ -158,9 +158,9 @@ Implement complete schema markup for rich snippets and AI understanding.
 ```json
 {
   "@type": "Person",
-  "@id": "https://legacyinvestingshow.com/about.html#author",
+  "@id": "https://www.legacyinvestingshow.com/about#author",
   "name": "Preston Seo",
-  "url": "https://legacyinvestingshow.com/about.html",
+  "url": "https://www.legacyinvestingshow.com/about",
   "jobTitle": "Real Estate Investor & Educator",
   "knowsAbout": [
     "Airbnb Arbitrage",

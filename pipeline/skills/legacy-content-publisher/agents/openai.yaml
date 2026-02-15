@@ -1,0 +1,4 @@
+interface:
+  display_name: "Legacy Content Publisher"
+  short_description: "Publish approved drafts with final checks."
+  default_prompt: "Publish approved markdown into content/blog and run pre-release checks."

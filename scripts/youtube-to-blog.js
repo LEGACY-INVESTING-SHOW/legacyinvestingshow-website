@@ -22,6 +22,7 @@ const CONFIG = {
   stateFile: path.join(__dirname, '..', '.youtube-state.json'),
   contentDir: path.join(__dirname, '..', 'content', 'blog'),
   blogDir: path.join(__dirname, '..', 'blog'),
+  templateFile: path.join(__dirname, '..', 'templates', 'blog-post.html'),
   maxVideosPerRun: 3, // Limit to prevent spam
 };
 
@@ -102,6 +103,31 @@ async function getTranscript(videoId) {
   };
 }
 
+// Process transcript into markdown content
+function processTranscript(transcript, videoUrl) {
+  // Convert transcript to readable markdown
+  const paragraphs = transcript.transcript
+    .split(/\n\n+/)
+    .map(p => p.trim())
+    .filter(p => p.length > 0)
+    .join('\n\n');
+  
+  return `
+<div class="video-info">
+    <p><strong>Watch the full video:</strong> <a href="${videoUrl}" target="_blank" rel="noopener">View on YouTube</a></p>
+</div>
+
+<div class="transcript">
+    <h2>Video Transcript</h2>
+    ${paragraphs}
+</div>
+
+<div class="cta">
+    <p>Want to learn more? <a href="/programs">Check out our programs</a> or <a href="/blog/">read more articles</a>.</p>
+</div>
+  `;
+}
+
 // Generate blog post from video data
 function generateBlogPost(video, transcript) {
   const date = new Date();
@@ -120,6 +146,53 @@ function generateBlogPost(video, transcript) {
     .slice(0, 3)
     .join(' ')
     .substring(0, 200) + '...';
+  
+  // Read template
+  let template = '';
+  try {
+    template = fs.readFileSync(CONFIG.templateFile, 'utf8');
+  } catch {
+    // Default template if file doesn't exist
+    template = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{TITLE}} | Legacy Investing Show</title>
+    <meta name="description" content="{{EXCERPT}}">
+    <meta name="author" content="Preston Seo">
+    <meta name="date" content="{{DATE}}">
+    <link rel="canonical" href="https://www.legacyinvestingshow.com/blog/{{FILENAME}}">
+</head>
+<body>
+    <article>
+        <h1>{{TITLE}}</h1>
+        <time datetime="{{DATE}}">{{DATE}}</time>
+        <div class="video-embed">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{VIDEO_ID}}" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+        </div>
+        <div class="content">
+            {{CONTENT}}
+        </div>
+    </article>
+</body>
+</html>`;
+  }
+
+  // Process transcript content
+  const content = processTranscript(transcript, video.url);
+  
+  // Replace template variables
+  let html = template
+    .replace(/\{\{TITLE\}\}/g, video.title.replace(/"/g, '&quot;'))
+    .replace(/\{\{EXCERPT\}\}/g, excerpt.replace(/"/g, '&quot;'))
+    .replace(/\{\{DATE\}\}/g, dateStr)
+    .replace(/\{\{VIDEO_ID\}\}/g, video.id)
+    .replace(/\{\{FILENAME\}\}/g, filename.replace('.md', '.html'))
+    .replace(/\{\{CONTENT\}\}/g, content)
+    .replace(/\{\{URL\}\}/g, video.url);
   
   // Create markdown frontmatter and content
   const markdown = `---
@@ -152,19 +225,7 @@ ${transcript.transcript}
 *This post was automatically generated from a YouTube video. The transcript may contain errors or need editing.*
 `;
   
-  return { filename, content: markdown, title: video.title };
-}
-
-// Process transcript into markdown content
-function processTranscript(transcript) {
-  // Convert transcript to readable markdown
-  const paragraphs = transcript.transcript
-    .split(/\n\n+/)
-    .map(p => p.trim())
-    .filter(p => p.length > 0)
-    .join('\n\n');
-  
-  return paragraphs;
+  return { filename, content: markdown, htmlContent: html, title: video.title };
 }
 
 // Save blog post

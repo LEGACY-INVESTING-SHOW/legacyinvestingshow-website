@@ -30,11 +30,11 @@ The XML sitemap (`sitemap.xml`) only includes 1 out of 34 blog posts, leaving **
 **Currently Indexed (6 URLs):**
 ```xml
 ✓ / (homepage)
-✓ /about.html
-✓ /programs.html
-✓ /success-stories.html
+✓ /about
+✓ /programs
+✓ /success-stories
 ✓ /blog/ (index)
-✓ /blog/getting-started-airbnb-arbitrage.html ← ONLY 1 blog post
+✓ /blog/getting-started-airbnb-arbitrage ← ONLY 1 blog post
 ```
 
 **Missing from Sitemap (32 blog posts):**
@@ -106,12 +106,12 @@ const sitemapUrls = blogPosts.map(file => {
   const stats = fs.statSync(path.join(blogDir, file));
   return `
   <url>
-    <loc>https://legacyinvestingshow.com/blog/${file}</loc>
+    <loc>https://www.legacyinvestingshow.com/blog/${file}</loc>
     <lastmod>${stats.mtime.toISOString().split('T')[0]}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://legacyinvestingshow.com/assets/images/blog/${file.replace('.html', '.jpg')}</image:loc>
+      <image:loc>https://www.legacyinvestingshow.com/assets/images/blog/${file.replace('.html', '.jpg')}</image:loc>
     </image:image>
   </url>`;
 });
@@ -167,12 +167,12 @@ Manually add top 10 most important blog posts to sitemap today to start indexati
 **Sitemap Structure for Each Blog Post:**
 ```xml
 <url>
-  <loc>https://legacyinvestingshow.com/blog/6000-cash-flow-no-experience.html</loc>
+  <loc>https://www.legacyinvestingshow.com/blog/6000-cash-flow-no-experience</loc>
   <lastmod>2026-04-20</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.7</priority>
   <image:image>
-    <image:loc>https://legacyinvestingshow.com/assets/images/blog/success-stories/dustin-no-experience.jpg</image:loc>
+    <image:loc>https://www.legacyinvestingshow.com/assets/images/blog/success-stories/dustin-no-experience.jpg</image:loc>
   </image:image>
 </url>
 ```

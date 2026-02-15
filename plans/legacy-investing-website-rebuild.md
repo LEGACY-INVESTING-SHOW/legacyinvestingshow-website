@@ -134,14 +134,14 @@ Each page will follow this structure:
     <meta name="description" content="[Page-specific description]">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://legacyinvestingshow.com/[path]">
+    <link rel="canonical" href="https://www.legacyinvestingshow.com/[path]">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://legacyinvestingshow.com/[path]">
+    <meta property="og:url" content="https://www.legacyinvestingshow.com/[path]">
     <meta property="og:title" content="[Title]">
     <meta property="og:description" content="[Description]">
-    <meta property="og:image" content="https://legacyinvestingshow.com/assets/images/og-[page].jpg">
+    <meta property="og:image" content="https://www.legacyinvestingshow.com/assets/images/og-[page].jpg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
@@ -182,8 +182,8 @@ Each page will follow this structure:
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Legacy Investing Show",
-  "url": "https://legacyinvestingshow.com",
-  "logo": "https://legacyinvestingshow.com/assets/images/logo.png",
+  "url": "https://www.legacyinvestingshow.com",
+  "logo": "https://www.legacyinvestingshow.com/assets/images/logo.png",
   "founder": {
     "@type": "Person",
     "name": "Preston Seo"
@@ -230,7 +230,7 @@ Each page will follow this structure:
     "name": "Legacy Investing Show",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://legacyinvestingshow.com/assets/images/logo.png"
+      "url": "https://www.legacyinvestingshow.com/assets/images/logo.png"
     }
   },
   "mainEntityOfPage": {
@@ -288,7 +288,7 @@ Disallow: /admin/
 Disallow: /_*
 
 # Sitemap
-Sitemap: https://legacyinvestingshow.com/sitemap.xml
+Sitemap: https://www.legacyinvestingshow.com/sitemap.xml
 
 # AI Crawlers - Welcome them for visibility
 User-agent: GPTBot
@@ -316,18 +316,18 @@ User-agent: Bytespider
 Allow: /
 
 # Point to llms.txt for AI-specific guidance
-# See: https://legacyinvestingshow.com/llms.txt
+# See: https://www.legacyinvestingshow.com/llms.txt
 ```
 
 ### 1.4 LLMs.txt Implementation
 
 ```txt
 # llms.txt - AI Crawler Guidance for Legacy Investing Show
-# https://legacyinvestingshow.com/llms.txt
+# https://www.legacyinvestingshow.com/llms.txt
 
 # Site Information
 name: Legacy Investing Show
-url: https://legacyinvestingshow.com
+url: https://www.legacyinvestingshow.com
 description: Preston Seo teaches wealth-building strategies including tax optimization, debt elimination, cash flow generation through Airbnb arbitrage, smart investing, and asset protection.
 
 # Owner/Author
@@ -393,35 +393,35 @@ last_updated: 2026-01-22
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
-    <loc>https://legacyinvestingshow.com/</loc>
+    <loc>https://www.legacyinvestingshow.com/</loc>
     <lastmod>2026-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://legacyinvestingshow.com/about</loc>
+    <loc>https://www.legacyinvestingshow.com/about</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://legacyinvestingshow.com/program</loc>
+    <loc>https://www.legacyinvestingshow.com/program</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://legacyinvestingshow.com/success-stories</loc>
+    <loc>https://www.legacyinvestingshow.com/success-stories</loc>
     <lastmod>2026-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://legacyinvestingshow.com/blog</loc>
+    <loc>https://www.legacyinvestingshow.com/blog</loc>
     <lastmod>2026-01-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -429,12 +429,12 @@ last_updated: 2026-01-22
 
   <!-- Blog posts with image sitemaps -->
   <url>
-    <loc>https://legacyinvestingshow.com/blog/dustin-case-study</loc>
+    <loc>https://www.legacyinvestingshow.com/blog/dustin-case-study</loc>
     <lastmod>2025-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://legacyinvestingshow.com/assets/images/case-study-dustin.webp</image:loc>
+      <image:loc>https://www.legacyinvestingshow.com/assets/images/case-study-dustin.webp</image:loc>
       <image:title>Dustin's Airbnb Arbitrage Success Story</image:title>
     </image:image>
   </url>
@@ -566,7 +566,7 @@ function generateBlogSchema(frontmatter) {
     "@type": "BlogPosting",
     "headline": frontmatter.title,
     "description": frontmatter.excerpt,
-    "image": `https://legacyinvestingshow.com${frontmatter.featuredImage}`,
+    "image": `https://www.legacyinvestingshow.com${frontmatter.featuredImage}`,
     "datePublished": frontmatter.date,
     "dateModified": frontmatter.lastModified || frontmatter.date,
     "author": {
@@ -578,7 +578,7 @@ function generateBlogSchema(frontmatter) {
       "name": "Legacy Investing Show",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://legacyinvestingshow.com/assets/images/logo.png"
+        "url": "https://www.legacyinvestingshow.com/assets/images/logo.png"
       }
     }
   };
@@ -979,7 +979,7 @@ function validatePost(frontmatter) {
 
 ## References
 
-- Current site: https://legacyinvestingshow.com
+- Current site: https://www.legacyinvestingshow.com
 - Screenshots saved: `./analysis/`
 - Images downloaded: `./assets/images/`
 - Schema.org documentation: https://schema.org

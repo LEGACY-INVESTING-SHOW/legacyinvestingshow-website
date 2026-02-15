@@ -11,7 +11,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Configuration
-const SITE_URL = process.env.SITE_URL || 'https://legacyinvestingshow-website.vercel.app';
+const SITE_URL = process.env.SITE_URL || 'https://www.legacyinvestingshow.com';
 const ROOT_DIR = path.join(__dirname, '..');
 const BLOG_DIR = path.join(ROOT_DIR, 'blog');
 const OUTPUT_FILE = path.join(ROOT_DIR, 'feed.xml');

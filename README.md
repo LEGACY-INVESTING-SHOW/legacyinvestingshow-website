@@ -66,6 +66,12 @@ npm run build:images   # Optimize images with Sharp
 | `npm run build:sitemap` | Generate sitemap.xml |
 | `npm run build:rss` | Generate RSS feed |
 | `npm run build:images` | Optimize images |
+| `npm run cms:sync:blog` | Sync canonical markdown into CMS `cms/src/blog` |
+| `npm run cms:check:parity` | Byte-compare canonical and CMS markdown |
+| `npm run cms:build` | Build Eleventy CMS site from `cms/` |
+| `npm run cms:smoke` | Run CMS smoke checks on built Eleventy output |
+| `npm run cms:publish:posts` | Publish CMS-rendered posts into `blog/*.html` |
+| `npm run cms:verify` | Run full CMS sync + parity + build + smoke chain |
 | `npm run start` | Start local development server |
 
 ## Deployment
@@ -129,6 +135,7 @@ legacyinvestingshow-website/
 │   ├── build-blog.js       # Blog generator
 │   ├── generate-sitemap.js # Sitemap generator
 │   └── generate-rss.js     # RSS feed generator
+├── cms/                    # Eleventy CMS workspace (templates + src + build)
 ├── sitemap.xml             # Generated sitemap
 ├── feed.xml                # RSS feed
 ├── robots.txt              # Crawler directives

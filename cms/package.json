@@ -1,0 +1,21 @@
+{
+  "name": "legacy-content-cms",
+  "version": "1.0.0",
+  "description": "Eleventy CMS for Legacy Investing Show content",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve",
+    "debug": "DEBUG=* npx @11ty/eleventy"
+  },
+  "keywords": [
+    "eleventy",
+    "cms",
+    "static-site"
+  ],
+  "author": "Legacy Investing Show",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "cheerio": "^1.2.0"
+  }
+}

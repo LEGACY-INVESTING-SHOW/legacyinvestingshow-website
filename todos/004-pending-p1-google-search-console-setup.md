@@ -82,7 +82,7 @@ Google Search Console (GSC) is not set up for the website, preventing monitoring
 - Faster verification
 
 **Cons:**
-- Only covers exact URL (https://legacyinvestingshow.com)
+- Only covers exact URL (https://www.legacyinvestingshow.com)
 - Need separate properties for www vs non-www
 - Less comprehensive
 
@@ -93,7 +93,7 @@ Google Search Console (GSC) is not set up for the website, preventing monitoring
 **Implementation:**
 1. Go to GSC
 2. Choose "URL prefix" property
-3. Enter: `https://legacyinvestingshow.com`
+3. Enter: `https://www.legacyinvestingshow.com`
 4. Select "HTML tag" verification method
 5. Copy meta tag: `<meta name="google-site-verification" content="...">`
 6. Add to `<head>` of all pages (or just homepage)
@@ -129,7 +129,7 @@ Google Search Console (GSC) is not set up for the website, preventing monitoring
 
 4. **Submit Sitemap**
    - Once verified, go to "Sitemaps" section
-   - Add sitemap URL: `https://legacyinvestingshow.com/sitemap.xml`
+   - Add sitemap URL: `https://www.legacyinvestingshow.com/sitemap.xml`
    - Click "Submit"
    - Wait 24-48 hours for indexation
 
@@ -168,7 +168,7 @@ TTL: 3600 (or default)
 
 **Sitemap URL to Submit:**
 ```
-https://legacyinvestingshow.com/sitemap.xml
+https://www.legacyinvestingshow.com/sitemap.xml
 ```
 
 **Initial Data Expectations:**

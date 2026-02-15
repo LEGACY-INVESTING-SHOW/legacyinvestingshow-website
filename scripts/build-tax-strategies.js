@@ -6,7 +6,7 @@
  * This script generates SEO-optimized tax strategy pages from data:
  * 1. Individual strategy pages (/tax-strategies/[slug].html)
  * 2. Persona-based pages (/tax-strategies/for/[persona].html)
- * 3. Main index page (/tax-strategies/index.html)
+ * 3. Main index page (/tax-strategies/index)
  */
 
 const fs = require('fs');
@@ -61,6 +61,26 @@ function formatTitle(slug) {
         .split('-')
         .map(word => word.charAt(0).toUpperCase() + word.slice(1))
         .join(' ');
+}
+
+/**
+ * Build a SERP-friendly <title> string capped near 60 chars.
+ */
+function buildSEOTitle(rawTitle) {
+    const title = (rawTitle || 'Tax Strategy').replace(/\s+/g, ' ').trim();
+    const suffix = ' | Legacy Investing Show';
+    const maxLen = 60;
+
+    if ((title + suffix).length <= maxLen) {
+        return `${title}${suffix}`;
+    }
+
+    const budgetWithSuffix = maxLen - suffix.length - 1; // reserve ellipsis
+    if (budgetWithSuffix >= 28) {
+        return `${title.slice(0, budgetWithSuffix).trimEnd()}…${suffix}`;
+    }
+
+    return `${title.slice(0, maxLen - 1).trimEnd()}…`;
 }
 
 /**
@@ -138,7 +158,7 @@ function generateRelatedStrategiesList(relatedSlugs, allStrategies) {
         const title = strategy ? strategy.title : formatTitle(slug);
         return `
                                 <li>
-                                    <a href="/tax-strategies/${slug}.html">
+                                    <a href="/tax-strategies/${slug}">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                             <path d="M9 18l6-6-6-6"/>
                                         </svg>
@@ -176,6 +196,7 @@ function buildStrategyPage(strategy, template, allStrategies) {
 
     let html = template
         .replace(/\{\{title\}\}/g, strategy.title)
+        .replace(/\{\{seoTitle\}\}/g, buildSEOTitle(strategy.title))
         .replace(/\{\{slug\}\}/g, strategy.slug)
         .replace(/\{\{shortDescription\}\}/g, strategy.shortDescription)
         .replace(/\{\{fullDescription\}\}/g, strategy.fullDescription)
@@ -211,7 +232,7 @@ function buildStrategyPage(strategy, template, allStrategies) {
  */
 function generateIndexPage(strategies, personas) {
     const strategyCards = strategies.map(s => `
-                    <a href="/tax-strategies/${s.slug}.html" class="strategy-card">
+                    <a href="/tax-strategies/${s.slug}" class="strategy-card">
                         <div class="strategy-card__complexity strategy-card__complexity--${s.complexity.toLowerCase()}">${s.complexity}</div>
                         <h3 class="strategy-card__title">${s.title}</h3>
                         <p class="strategy-card__desc">${s.shortDescription}</p>
@@ -240,10 +261,10 @@ function generateIndexPage(strategies, personas) {
     <meta name="keywords" content="tax strategies, real estate tax benefits, cost segregation, 1031 exchange, tax deductions, wealth building">
     <meta name="author" content="Preston Seo">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://legacyinvestingshow.com/tax-strategies/">
+    <link rel="canonical" href="https://www.legacyinvestingshow.com/tax-strategies/">
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://legacyinvestingshow.com/tax-strategies/">
+    <meta property="og:url" content="https://www.legacyinvestingshow.com/tax-strategies/">
     <meta property="og:title" content="Tax Strategies for Investors | Legacy Investing Show">
     <meta property="og:description" content="Discover powerful tax strategies for real estate investors, business owners, and high-income earners.">
     <meta property="og:site_name" content="Legacy Investing Show">
@@ -265,7 +286,7 @@ function generateIndexPage(strategies, personas) {
         "@type": "CollectionPage",
         "name": "Tax Strategies for Investors",
         "description": "Comprehensive guide to tax strategies for real estate investors, business owners, and high-income earners",
-        "url": "https://legacyinvestingshow.com/tax-strategies/",
+        "url": "https://www.legacyinvestingshow.com/tax-strategies/",
         "publisher": {
             "@type": "Organization",
             "name": "Legacy Investing Show"
@@ -282,7 +303,7 @@ function generateIndexPage(strategies, personas) {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://legacyinvestingshow.com/"
+                "item": "https://www.legacyinvestingshow.com/"
             },
             {
                 "@type": "ListItem",
@@ -490,9 +511,9 @@ function generateIndexPage(strategies, personas) {
                 </a>
                 <div class="hidden md:flex items-center gap-6">
                     <a href="/" class="nav-link">Home</a>
-                    <a href="/about.html" class="nav-link">About</a>
-                    <a href="/programs.html" class="nav-link">Programs</a>
-                    <a href="/success-stories.html" class="nav-link">Results</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/programs" class="nav-link">Programs</a>
+                    <a href="/success-stories" class="nav-link">Results</a>
                     <a href="/blog/" class="nav-link">Blog</a>
                 </div>
                 <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
@@ -504,9 +525,9 @@ function generateIndexPage(strategies, personas) {
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <div class="flex flex-col gap-3">
                     <a href="/" class="nav-link">Home</a>
-                    <a href="/about.html" class="nav-link">About</a>
-                    <a href="/programs.html" class="nav-link">Programs</a>
-                    <a href="/success-stories.html" class="nav-link">Results</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/programs" class="nav-link">Programs</a>
+                    <a href="/success-stories" class="nav-link">Results</a>
                     <a href="/blog/" class="nav-link">Blog</a>
                 </div>
             </div>
@@ -546,17 +567,17 @@ function generateIndexPage(strategies, personas) {
                     
                     <div style="margin-bottom: 1.5rem;">
                         <h4 style="font-weight: 600; color: #111827; margin-bottom: 0.5rem;">1. Real Estate Tax Strategies</h4>
-                        <p style="color: #4b5563; line-height: 1.75;">Real estate offers some of the most powerful tax advantages available. From <a href="/tax-strategies/cost-segregation.html" style="color: #059669; text-decoration: underline;">cost segregation</a> that accelerates depreciation to the <a href="/tax-strategies/short-term-rental-loophole.html" style="color: #059669; text-decoration: underline;">short-term rental loophole</a> that allows W-2 employees to deduct losses against ordinary income, these strategies can transform your tax bill. Real estate professional status (REPS) can unlock unlimited passive loss deductions, potentially eliminating your entire tax liability.</p>
+                        <p style="color: #4b5563; line-height: 1.75;">Real estate offers some of the most powerful tax advantages available. From <a href="/tax-strategies/cost-segregation" style="color: #059669; text-decoration: underline;">cost segregation</a> that accelerates depreciation to the <a href="/tax-strategies/short-term-rental-loophole" style="color: #059669; text-decoration: underline;">short-term rental loophole</a> that allows W-2 employees to deduct losses against ordinary income, these strategies can transform your tax bill. Real estate professional status (REPS) can unlock unlimited passive loss deductions, potentially eliminating your entire tax liability.</p>
                     </div>
                     
                     <div style="margin-bottom: 1.5rem;">
                         <h4 style="font-weight: 600; color: #111827; margin-bottom: 0.5rem;">2. Business Tax Optimization</h4>
-                        <p style="color: #4b5563; line-height: 1.75;">Business owners have access to deductions that employees simply don't. <a href="/tax-strategies/section-179.html" style="color: #059669; text-decoration: underline;">Section 179</a> allows immediate expensing of up to $1.16 million in equipment. <a href="/tax-strategies/s-corp-strategy.html" style="color: #059669; text-decoration: underline;">S-Corp elections</a> can reduce self-employment tax by thousands. The Augusta Rule lets you rent your home to your business for up to 14 days tax-free. These strategies work together to minimize your business tax burden.</p>
+                        <p style="color: #4b5563; line-height: 1.75;">Business owners have access to deductions that employees simply don't. <a href="/tax-strategies/section-179" style="color: #059669; text-decoration: underline;">Section 179</a> allows immediate expensing of up to $1.16 million in equipment. <a href="/tax-strategies/s-corp-strategy" style="color: #059669; text-decoration: underline;">S-Corp elections</a> can reduce self-employment tax by thousands. The Augusta Rule lets you rent your home to your business for up to 14 days tax-free. These strategies work together to minimize your business tax burden.</p>
                     </div>
                     
                     <div style="margin-bottom: 1.5rem;">
                         <h4 style="font-weight: 600; color: #111827; margin-bottom: 0.5rem;">3. Retirement & Investment Accounts</h4>
-                        <p style="color: #4b5563; line-height: 1.75;">Self-directed IRAs and Solo 401(k)s allow you to invest retirement funds in real estate and alternative assets while enjoying tax-deferred or tax-free growth. <a href="/tax-strategies/hsa-strategy.html" style="color: #059669; text-decoration: underline;">Health Savings Accounts</a> offer triple tax advantages: deductible contributions, tax-free growth, and tax-free withdrawals for medical expenses. These accounts are powerful wealth-building tools when used strategically.</p>
+                        <p style="color: #4b5563; line-height: 1.75;">Self-directed IRAs and Solo 401(k)s allow you to invest retirement funds in real estate and alternative assets while enjoying tax-deferred or tax-free growth. <a href="/tax-strategies/hsa-strategy" style="color: #059669; text-decoration: underline;">Health Savings Accounts</a> offer triple tax advantages: deductible contributions, tax-free growth, and tax-free withdrawals for medical expenses. These accounts are powerful wealth-building tools when used strategically.</p>
                     </div>
                     
                     <div style="background: #f0fdf4; border-left: 4px solid #10b981; padding: 1.5rem; margin: 2rem 0;">
@@ -636,8 +657,8 @@ function generateIndexPage(strategies, personas) {
                     <span>Legacy Investing Show</span>
                 </div>
                 <div class="footer-links">
-                    <a href="/programs.html">Programs</a>
-                    <a href="/success-stories.html">Results</a>
+                    <a href="/programs">Programs</a>
+                    <a href="/success-stories">Results</a>
                     <a href="/blog/">Blog</a>
                     <a href="/tax-strategies/">Tax Strategies</a>
                 </div>
@@ -668,19 +689,19 @@ function generatePersonaBreadcrumbSchema(persona) {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://legacyinvestingshow.com/"
+                "item": "https://www.legacyinvestingshow.com/"
             },
             {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Tax Strategies",
-                "item": "https://legacyinvestingshow.com/tax-strategies/"
+                "item": "https://www.legacyinvestingshow.com/tax-strategies/"
             },
             {
                 "@type": "ListItem",
                 "position": 3,
                 "name": persona.title,
-                "item": `https://legacyinvestingshow.com/tax-strategies/for/${persona.slug}`
+                "item": `https://www.legacyinvestingshow.com/tax-strategies/for/${persona.slug}`
             }
         ]
     };
@@ -695,11 +716,11 @@ function generatePersonaCollectionSchema(persona) {
         "@type": "CollectionPage",
         "name": `Tax Strategies for ${persona.title}`,
         "description": persona.description,
-        "url": `https://legacyinvestingshow.com/tax-strategies/for/${persona.slug}`,
+        "url": `https://www.legacyinvestingshow.com/tax-strategies/for/${persona.slug}`,
         "isPartOf": {
             "@type": "WebSite",
             "name": "Legacy Investing Show",
-            "url": "https://legacyinvestingshow.com"
+            "url": "https://www.legacyinvestingshow.com"
         },
         "about": {
             "@type": "Thing",
@@ -799,7 +820,7 @@ function generatePersonaPage(persona, strategies) {
     const relevantStrategies = strategies.filter(s => persona.topStrategies.includes(s.slug));
 
     const strategyCards = relevantStrategies.map(s => `
-                    <a href="/tax-strategies/${s.slug}.html" class="strategy-card">
+                    <a href="/tax-strategies/${s.slug}" class="strategy-card">
                         <div class="strategy-card__complexity strategy-card__complexity--${s.complexity.toLowerCase()}">${s.complexity}</div>
                         <h3 class="strategy-card__title">${s.title}</h3>
                         <p class="strategy-card__desc">${s.shortDescription}</p>
@@ -826,7 +847,7 @@ function generatePersonaPage(persona, strategies) {
     <meta name="keywords" content="tax strategies ${persona.title.toLowerCase()}, ${persona.topStrategies.join(', ')}">
     <meta name="author" content="Preston Seo">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://legacyinvestingshow.com/tax-strategies/for/${persona.slug}">
+    <link rel="canonical" href="https://www.legacyinvestingshow.com/tax-strategies/for/${persona.slug}">
 
     <!-- Schema Markup -->
     <script type="application/ld+json">
@@ -842,7 +863,7 @@ function generatePersonaPage(persona, strategies) {
     </script>
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://legacyinvestingshow.com/tax-strategies/for/${persona.slug}">
+    <meta property="og:url" content="https://www.legacyinvestingshow.com/tax-strategies/for/${persona.slug}">
     <meta property="og:title" content="Tax Strategies for ${persona.title}">
     <meta property="og:description" content="${persona.description}">
     <meta property="og:site_name" content="Legacy Investing Show">
@@ -1030,9 +1051,9 @@ function generatePersonaPage(persona, strategies) {
                 </a>
                 <div class="hidden md:flex items-center gap-6">
                     <a href="/" class="nav-link">Home</a>
-                    <a href="/about.html" class="nav-link">About</a>
-                    <a href="/programs.html" class="nav-link">Programs</a>
-                    <a href="/success-stories.html" class="nav-link">Results</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/programs" class="nav-link">Programs</a>
+                    <a href="/success-stories" class="nav-link">Results</a>
                     <a href="/blog/" class="nav-link">Blog</a>
                 </div>
                 <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
@@ -1044,9 +1065,9 @@ function generatePersonaPage(persona, strategies) {
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <div class="flex flex-col gap-3">
                     <a href="/" class="nav-link">Home</a>
-                    <a href="/about.html" class="nav-link">About</a>
-                    <a href="/programs.html" class="nav-link">Programs</a>
-                    <a href="/success-stories.html" class="nav-link">Results</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/programs" class="nav-link">Programs</a>
+                    <a href="/success-stories" class="nav-link">Results</a>
                     <a href="/blog/" class="nav-link">Blog</a>
                 </div>
             </div>
@@ -1114,8 +1135,8 @@ function generatePersonaPage(persona, strategies) {
                     <span>Legacy Investing Show</span>
                 </div>
                 <div class="footer-links">
-                    <a href="/programs.html">Programs</a>
-                    <a href="/success-stories.html">Results</a>
+                    <a href="/programs">Programs</a>
+                    <a href="/success-stories">Results</a>
                     <a href="/blog/">Blog</a>
                     <a href="/tax-strategies/">Tax Strategies</a>
                 </div>

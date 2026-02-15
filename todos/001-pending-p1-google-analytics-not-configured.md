@@ -111,10 +111,10 @@ Google Analytics is completely non-functional across the entire website. All pag
 
 **Files Affected:**
 - `/index.html` (lines 136-143)
-- `/about.html` (lines 136-143)
-- `/programs.html` (lines 136-143)
-- `/success-stories.html` (lines 136-143)
-- `/blog/index.html` (lines 65-72)
+- `/about` (lines 136-143)
+- `/programs` (lines 136-143)
+- `/success-stories` (lines 136-143)
+- `/blog/index` (lines 65-72)
 - All blog post HTML files (~33 files)
 
 **Additional Configuration Needed:**

@@ -163,9 +163,9 @@ cwebp -q 85 hero-image.jpg -o hero-image.webp
 
 **Files Affected:**
 - `/index.html` - hero image (lines 218-226)
-- `/about.html` - Preston image (lines 257-262)
-- `/programs.html` - feature images
-- `/success-stories.html` - testimonial images
+- `/about` - Preston image (lines 257-262)
+- `/programs` - feature images
+- `/success-stories` - testimonial images
 - All blog post HTML files - featured images
 - Total: ~50-60 image tags to update
 

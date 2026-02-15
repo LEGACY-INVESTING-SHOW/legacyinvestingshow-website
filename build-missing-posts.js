@@ -97,7 +97,7 @@ function generateHtml(filename, markdown) {
   const author = fm.author || 'Preston Seo';
   const category = fm.category || 'Real Estate';
   const image = fm.image || '/assets/images/blog/default.webp';
-  const canonical = fm.canonical || `https://legacyinvestingshow.com/blog/${filename}.html`;
+  const canonical = fm.canonical || `https://www.legacyinvestingshow.com/blog/${filename}.html`;
   
   // Generate schema
   const schema = {
@@ -118,7 +118,7 @@ function generateHtml(filename, markdown) {
       "name": "Legacy Investing Show",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://legacyinvestingshow.com/assets/images/logo.webp"
+        "url": "https://www.legacyinvestingshow.com/assets/images/logo.webp"
       }
     },
     "mainEntityOfPage": {

@@ -378,7 +378,7 @@ function generateFrontmatter(data) {
     yaml.push('authorTitle: "Founder, Legacy Investing Show"');
     yaml.push('authorCredentials: "2,000+ students trained, $10M+ student revenue generated"');
     yaml.push(`category: ${data.category}`);
-    yaml.push(`canonical: "https://legacyinvestingshow.com/blog/${data.slug}"`);
+    yaml.push(`canonical: "https://www.legacyinvestingshow.com/blog/${data.slug}"`);
     yaml.push('');
 
     // SEO keyword targeting
@@ -512,7 +512,7 @@ function convertFile(filename) {
     const date = dateStr.split('T')[0];
     const category = extractMeta(html, 'article:section', true) || 'Success Story';
     const image = extractMeta(html, 'og:image', true) || '/assets/images/blog/success-stories/airbnb-success.jpg';
-    const imagePath = image.replace('https://legacyinvestingshow.com', '');
+    const imagePath = image.replace('https://www.legacyinvestingshow.com', '');
 
     // Generate slug from filename
     const slug = filename.replace('.html', '').replace(/^\d+-/, '');

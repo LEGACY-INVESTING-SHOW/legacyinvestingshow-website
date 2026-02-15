@@ -176,9 +176,9 @@ Replace: G-XXXXXXXXXX (your real GA4 property ID)
 ### 9. Canonical URL Inconsistencies
 **Issue:** Inconsistent trailing slashes and .html extensions
 **Examples:**
-- `https://legacyinvestingshow.com/` (has trailing slash)
-- `https://legacyinvestingshow.com/about` (no .html, no slash)
-- `/blog/post.html` (has .html)
+- `https://www.legacyinvestingshow.com/` (has trailing slash)
+- `https://www.legacyinvestingshow.com/about` (no .html, no slash)
+- `/blog/post` (has .html)
 
 **Fix:** Standardize URL structure
 **Effort:** 2-3 hours (includes 301 redirect setup)
