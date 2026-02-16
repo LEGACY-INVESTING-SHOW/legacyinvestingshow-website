@@ -1,5 +1,5 @@
 # Robots.txt for Legacy Investing Show
-# https://www.legacyinvestingshow.com
+# https://legacyinvestingshow-website.vercel.app
 # Last updated: 2026-01-23
 
 # Default rules for all crawlers
@@ -107,7 +107,7 @@ Allow: /
 # SITEMAP & AI CONTEXT
 # ===========================================
 
-Sitemap: https://www.legacyinvestingshow.com/sitemap.xml
+Sitemap: https://legacyinvestingshow-website.vercel.app/sitemap.xml
 
 # AI agents: See /llms.txt for structured site context
 # Full expanded context: /llms-full.txt
