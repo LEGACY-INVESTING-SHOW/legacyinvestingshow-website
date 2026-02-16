@@ -3,8 +3,8 @@
     "generated": "2026-02-15",
     "total_topics": 1000,
     "completed_topics": 202,
-    "covered_topics": 116,
-    "pending_topics": 682,
+    "covered_topics": 122,
+    "pending_topics": 676,
     "status": "partially_completed",
     "strategy": "80-20 high-intent keyword prioritization",
     "source_mix": [
@@ -16865,7 +16865,10 @@
             "/blog",
             "/programs"
           ],
-          "status": "pending"
+          "status": "covered",
+          "completed_date": "2026-02-16",
+          "completion_type": "existing_coverage",
+          "completion_note": "semantic_keyword_overlap:student-loan-payoff-calculator"
         },
         {
           "id": 320,
@@ -16887,7 +16890,10 @@
             "/blog",
             "/programs"
           ],
-          "status": "pending"
+          "status": "covered",
+          "completed_date": "2026-02-16",
+          "completion_type": "existing_coverage",
+          "completion_note": "existing_slug"
         },
         {
           "id": 321,
@@ -16909,7 +16915,10 @@
             "/blog",
             "/programs"
           ],
-          "status": "pending"
+          "status": "covered",
+          "completed_date": "2026-02-16",
+          "completion_type": "existing_coverage",
+          "completion_note": "semantic_keyword_overlap:student-loan-payoff-strategy"
         },
         {
           "id": 322,
@@ -16931,7 +16940,10 @@
             "/blog",
             "/programs"
           ],
-          "status": "pending"
+          "status": "covered",
+          "completed_date": "2026-02-16",
+          "completion_type": "existing_coverage",
+          "completion_note": "existing_slug"
         },
         {
           "id": 323,
@@ -16953,7 +16965,10 @@
             "/blog",
             "/programs"
           ],
-          "status": "pending"
+          "status": "covered",
+          "completed_date": "2026-02-16",
+          "completion_type": "existing_coverage",
+          "completion_note": "semantic_keyword_overlap:personal-loan-vs-credit-card-calculator"
         },
         {
           "id": 324,
@@ -16975,7 +16990,10 @@
             "/blog",
             "/programs"
           ],
-          "status": "pending"
+          "status": "covered",
+          "completed_date": "2026-02-16",
+          "completion_type": "existing_coverage",
+          "completion_note": "existing_slug"
         },
         {
           "id": 325,
