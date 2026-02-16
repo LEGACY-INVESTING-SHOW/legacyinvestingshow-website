@@ -33,7 +33,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-tax-planning-software-for-cpas.jpg
 imageAlt: 'Best tax planning software for cpas: Complete 2026 Guide for Firm Owners guide'
 imageWidth: 1200
 imageHeight: 630

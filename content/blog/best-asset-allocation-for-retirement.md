@@ -35,7 +35,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-asset-allocation-for-retirement.jpg
 imageAlt: >-
   Best Asset Allocation for Retirement: Complete 2026 Decision Guide for US
   Investors guide

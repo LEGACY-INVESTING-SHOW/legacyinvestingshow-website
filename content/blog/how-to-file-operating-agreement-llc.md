@@ -33,7 +33,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-to-file-operating-agreement-llc.jpg
 imageAlt: 'How to File Operating Agreement LLC: Complete 2026 Guide for US Owners guide'
 imageWidth: 1200
 imageHeight: 630

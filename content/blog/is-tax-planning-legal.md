@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/is-tax-planning-legal.jpg
 imageAlt: >-
   Is Tax Planning Legal? Complete 2026 Guide to Lowering Taxes Without Crossing
   the Line guide

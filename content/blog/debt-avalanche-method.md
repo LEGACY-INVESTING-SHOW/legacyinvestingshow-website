@@ -28,7 +28,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/debt-avalanche-method.jpg
 imageAlt: 'Debt Avalanche Method: The Fastest Way to Pay Off Debt guide'
 imageWidth: 1200
 imageHeight: 630

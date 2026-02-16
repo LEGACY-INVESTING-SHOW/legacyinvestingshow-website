@@ -33,7 +33,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-loss-harvesting-vs-robo-advisors.jpg
 imageAlt: >-
   Tax Loss Harvesting vs Robo Advisors: Which Strategy Works Better in 2026?
   guide

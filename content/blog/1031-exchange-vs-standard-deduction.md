@@ -33,7 +33,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/1031-exchange-vs-standard-deduction.jpg
 imageAlt: >-
   1031 exchange vs standard deduction: Which Strategy Works Better in 2026?
   guide

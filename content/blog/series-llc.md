@@ -28,7 +28,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/series-llc.jpg
 imageAlt: 'Series LLC: Asset Protection for Multiple Properties guide'
 imageWidth: 1200
 imageHeight: 630

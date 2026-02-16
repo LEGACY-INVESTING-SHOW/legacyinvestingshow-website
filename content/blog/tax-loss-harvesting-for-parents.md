@@ -34,7 +34,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-loss-harvesting-for-parents.jpg
 imageAlt: >-
   Tax Loss Harvesting for Parents: Complete 2026 Guide to Lower Taxes Without
   Derailing Family Goals guide

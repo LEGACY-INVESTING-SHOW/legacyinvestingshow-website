@@ -33,7 +33,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-asset-allocation-for-roth-ira.jpg
 imageAlt: >-
   Best Asset Allocation for Roth IRA: Complete 2026 Guide for U.S. Investors
   guide

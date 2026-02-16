@@ -37,7 +37,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-tax-deductions-are-compared-to-tax-exemptions.jpg
 imageAlt: >-
   How Tax Deductions Are Compared To Tax Exemptions: Complete 2026 Guide for
   U.S. Filers guide

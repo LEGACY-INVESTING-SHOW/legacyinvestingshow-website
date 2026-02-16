@@ -33,7 +33,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/multi-state-llc-template.jpg
 imageAlt: 'Multi State LLC Template: Practical Guide + Examples for US Owners guide'
 imageWidth: 1200
 imageHeight: 630

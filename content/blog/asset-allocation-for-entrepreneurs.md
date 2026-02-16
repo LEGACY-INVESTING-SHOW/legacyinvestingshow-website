@@ -37,7 +37,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/asset-allocation-for-entrepreneurs.jpg
 imageAlt: >-
   Asset Allocation for Entrepreneurs: Complete 2026 Guide to Balancing Business
   Risk and Personal Wealth guide

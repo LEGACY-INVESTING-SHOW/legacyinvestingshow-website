@@ -28,7 +28,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/brrrr-method.jpg
 imageAlt: 'BRRRR Method: Buy, Rehab, Rent, Refinance, Repeat guide'
 imageWidth: 1200
 imageHeight: 630

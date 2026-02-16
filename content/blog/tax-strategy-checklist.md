@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-strategy-checklist.jpg
 imageAlt: >-
   Tax Strategy Checklist: Practical Guide + Examples for Better Year-Round
   Decisions guide

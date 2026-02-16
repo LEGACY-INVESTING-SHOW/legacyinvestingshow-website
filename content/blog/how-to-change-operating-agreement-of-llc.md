@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-to-change-operating-agreement-of-llc.jpg
 imageAlt: 'How to Change Operating Agreement of LLC: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630

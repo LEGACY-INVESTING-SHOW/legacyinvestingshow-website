@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/s-corp-election-vs-partnership.jpg
 imageAlt: 's corp election vs partnership: Which Strategy Works Better in 2026? guide'
 imageWidth: 1200
 imageHeight: 630

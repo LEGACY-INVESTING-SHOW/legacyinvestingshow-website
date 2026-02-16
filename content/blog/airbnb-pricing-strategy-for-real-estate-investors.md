@@ -36,7 +36,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-pricing-strategy-for-real-estate-investors.jpg
 imageAlt: >-
   Airbnb Pricing Strategy for Real Estate Investors: Complete 2026 Guide to
   Occupancy, Cash Flow, and Tax-Aware Growth guide

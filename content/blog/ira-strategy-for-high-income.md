@@ -36,7 +36,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/ira-strategy-for-high-income.jpg
 imageAlt: >-
   IRA Strategy for High Income: Complete 2026 Guide to Backdoor Roth and Smarter
   Retirement Tax Planning guide

@@ -33,7 +33,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-etf-or-mutual-fund-for-ai.jpg
 imageAlt: 'best etf or mutual fund for ai: Complete 2026 Guide for U.S. Investors guide'
 imageWidth: 1200
 imageHeight: 630

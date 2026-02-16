@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/s-corp-election-vs-sole-proprietorship.jpg
 imageAlt: >-
   S Corp Election vs Sole Proprietorship: Which Strategy Works Better in 2026?
   guide

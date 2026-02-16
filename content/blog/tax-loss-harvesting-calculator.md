@@ -35,7 +35,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-loss-harvesting-calculator.jpg
 imageAlt: >-
   Tax Loss Harvesting Calculator: Practical Guide, Decision Frameworks, and
   Worked Examples guide

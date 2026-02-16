@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-to-pierce-corporate-veil-llc.jpg
 imageAlt: >-
   How to Pierce Corporate Veil LLC: Complete 2026 Guide for Owners, Investors,
   and Plaintiffs guide

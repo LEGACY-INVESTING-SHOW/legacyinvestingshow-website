@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-to-determine-reasonable-salary-for-s-corp.jpg
 imageAlt: >-
   How to determine reasonable salary for s corp: Complete 2026 Guide for Owners
   guide

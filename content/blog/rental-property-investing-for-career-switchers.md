@@ -33,7 +33,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/rental-property-investing-for-career-switchers.jpg
 imageAlt: 'Rental Property Investing for Career Switchers: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630

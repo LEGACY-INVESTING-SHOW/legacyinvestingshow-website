@@ -37,7 +37,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-taxes-for-real-estate-investors.jpg
 imageAlt: >-
   Airbnb Taxes for Real Estate Investors: Complete 2026 Guide to Filing Paths,
   Deductions, and Decision Frameworks guide

@@ -28,7 +28,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/sector-etf-strategy.jpg
 imageAlt: 'Sector ETF Strategy: How to Invest in Market Segments guide'
 imageWidth: 1200
 imageHeight: 630

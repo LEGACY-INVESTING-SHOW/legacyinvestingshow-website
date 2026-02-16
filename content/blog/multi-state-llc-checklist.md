@@ -32,7 +32,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/multi-state-llc-checklist.jpg
 imageAlt: >-
   Multi State LLC Checklist: Practical Guide + Examples for Real-World Expansion
   guide

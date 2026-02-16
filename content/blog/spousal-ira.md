@@ -28,7 +28,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/spousal-ira.jpg
 imageAlt: 'Spousal IRA: Retirement Savings for Non-Working Spouses guide'
 imageWidth: 1200
 imageHeight: 630

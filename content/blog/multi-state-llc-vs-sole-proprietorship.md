@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/multi-state-llc-vs-sole-proprietorship.jpg
 imageAlt: >-
   multi state llc vs sole proprietorship: Which Strategy Works Better in 2026?
   guide

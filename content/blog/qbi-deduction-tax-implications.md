@@ -36,7 +36,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/qbi-deduction-tax-implications.jpg
 imageAlt: >-
   QBI Deduction Tax Implications: Complete 2026 Guide for Owners and High-Income
   Households guide

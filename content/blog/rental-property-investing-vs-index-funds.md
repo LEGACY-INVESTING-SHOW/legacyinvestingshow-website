@@ -33,7 +33,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/rental-property-investing-vs-index-funds.jpg
 imageAlt: >-
   Rental Property Investing vs Index Funds: Which Strategy Works Better in 2026?
   guide

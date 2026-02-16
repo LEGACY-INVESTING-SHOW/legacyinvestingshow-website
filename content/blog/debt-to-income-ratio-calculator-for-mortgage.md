@@ -35,7 +35,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/debt-to-income-ratio-calculator-for-mortgage.jpg
 imageAlt: >-
   Debt to Income Ratio Calculator for Mortgage: Practical Guide + Real Approval
   Examples guide

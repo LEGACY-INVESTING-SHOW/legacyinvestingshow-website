@@ -35,7 +35,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/s-corp-election-checklist.jpg
 imageAlt: >-
   S Corp Election Checklist: Practical Guide + Examples for Real-World Tax
   Decisions guide

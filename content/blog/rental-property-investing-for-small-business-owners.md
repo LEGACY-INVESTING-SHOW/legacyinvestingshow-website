@@ -34,7 +34,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/rental-property-investing-for-small-business-owners.jpg
 imageAlt: 'Rental Property Investing for Small Business Owners: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630

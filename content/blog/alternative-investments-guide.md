@@ -28,7 +28,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/alternative-investments-guide.jpg
 imageAlt: 'Alternative Investments Guide: Beyond Stocks and Bonds guide'
 imageWidth: 1200
 imageHeight: 630

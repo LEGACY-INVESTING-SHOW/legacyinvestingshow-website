@@ -37,7 +37,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/retirement-withdrawal-strategy-guardrails.jpg
 imageAlt: >-
   Retirement Withdrawal Strategy Guardrails: Complete 2026 Guide for Tax-Smart,
   Flexible Income guide

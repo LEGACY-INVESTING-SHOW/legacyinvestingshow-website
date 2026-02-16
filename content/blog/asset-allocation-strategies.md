@@ -28,7 +28,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/asset-allocation-strategies.jpg
 imageAlt: 'Asset Allocation Strategies by Age: How to Balance Your Portfolio guide'
 imageWidth: 1200
 imageHeight: 630

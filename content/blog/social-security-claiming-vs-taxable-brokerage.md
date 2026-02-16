@@ -36,7 +36,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/social-security-claiming-vs-taxable-brokerage.jpg
 imageAlt: >-
   Social Security Claiming vs Taxable Brokerage: Which Strategy Works Better in
   2026? guide

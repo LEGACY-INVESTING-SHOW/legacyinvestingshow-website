@@ -35,7 +35,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-taxes-for-operators.jpg
 imageAlt: >-
   Airbnb Taxes for Operators: Complete 2026 Guide to Deductions, Entities, and
   Cash-Flow Planning guide

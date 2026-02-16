@@ -33,7 +33,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-is-corporate-veil-pierced.jpg
 imageAlt: >-
   How Is Corporate Veil Pierced: Complete 2026 Guide for Owners and Investors
   guide

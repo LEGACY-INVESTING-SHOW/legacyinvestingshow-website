@@ -28,7 +28,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/real-estate-syndication.jpg
 imageAlt: 'Real Estate Syndication: Passive Investing in Large Properties guide'
 imageWidth: 1200
 imageHeight: 630

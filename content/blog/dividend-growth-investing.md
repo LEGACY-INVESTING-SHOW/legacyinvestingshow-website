@@ -28,7 +28,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/dividend-growth-investing.jpg
 imageAlt: 'Dividend Growth Investing: Build Passive Income That Grows guide'
 imageWidth: 1200
 imageHeight: 630

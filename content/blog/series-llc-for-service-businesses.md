@@ -32,7 +32,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/series-llc-for-service-businesses.jpg
 imageAlt: 'Series LLC for Service Businesses: Complete 2026 Guide for U.S. Owners guide'
 imageWidth: 1200
 imageHeight: 630

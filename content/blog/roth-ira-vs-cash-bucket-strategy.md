@@ -33,7 +33,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/roth-ira-vs-cash-bucket-strategy.jpg
 imageAlt: 'Roth Ira vs Cash Bucket Strategy: Which Strategy Works Better in 2026? guide'
 imageWidth: 1200
 imageHeight: 630

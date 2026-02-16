@@ -32,7 +32,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/rental-property-investing-vs-reits.jpg
 imageAlt: 'Rental Property Investing vs REITs: Which Strategy Works Better in 2026? guide'
 imageWidth: 1200
 imageHeight: 630

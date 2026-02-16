@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-tax-planning-software-for-accountants.jpg
 imageAlt: 'Best Tax Planning Software for Accountants: Complete 2026 Decision Guide guide'
 imageWidth: 1200
 imageHeight: 630

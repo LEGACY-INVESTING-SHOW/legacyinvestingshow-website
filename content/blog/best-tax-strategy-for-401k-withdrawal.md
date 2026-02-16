@@ -36,7 +36,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-tax-strategy-for-401k-withdrawal.jpg
 imageAlt: >-
   Best Tax Strategy for 401k Withdrawal: Complete 2026 Guide for Lower Lifetime
   Taxes guide

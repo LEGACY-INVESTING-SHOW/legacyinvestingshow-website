@@ -35,7 +35,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/s-corp-election-for-freelancers.jpg
 imageAlt: >-
   S Corp Election for Freelancers: Complete 2026 Guide to Tax Savings,
   Compliance, and Tradeoffs guide

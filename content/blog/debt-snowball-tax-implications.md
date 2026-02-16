@@ -33,7 +33,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/debt-snowball-tax-implications.jpg
 imageAlt: 'Debt Snowball Tax Implications: Complete 2026 Guide for U.S. Households guide'
 imageWidth: 1200
 imageHeight: 630

@@ -35,7 +35,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/hsa-strategy-for-consultants.jpg
 imageAlt: >-
   hsa strategy for consultants: Complete 2026 Guide to Tax Savings, Investing,
   and Cash-Flow Planning guide

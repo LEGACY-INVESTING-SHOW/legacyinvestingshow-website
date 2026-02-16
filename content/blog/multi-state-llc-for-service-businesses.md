@@ -36,7 +36,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/multi-state-llc-for-service-businesses.jpg
 imageAlt: >-
   Multi State LLC for Service Businesses: Complete 2026 Guide to Compliance,
   Costs, and Structure guide

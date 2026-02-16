@@ -35,7 +35,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-are-series-llc-taxed.jpg
 imageAlt: >-
   How Are Series LLC Taxed: Complete 2026 Guide for Investors and Business
   Owners guide

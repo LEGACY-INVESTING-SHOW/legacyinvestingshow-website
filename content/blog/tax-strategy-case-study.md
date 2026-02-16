@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-strategy-case-study.jpg
 imageAlt: >-
   Tax Strategy Case Study: Complete 2026 Guide for Business Owners and
   High-Income Households guide

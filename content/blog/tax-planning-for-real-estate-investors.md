@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-planning-for-real-estate-investors.jpg
 imageAlt: 'Tax Planning for Real Estate Investors: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630

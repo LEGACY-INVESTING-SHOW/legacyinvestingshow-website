@@ -37,7 +37,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-does-qbi-deduction-work-with-a-loss.jpg
 imageAlt: >-
   How Does QBI Deduction Work With a Loss? Complete 2026 Guide for Owners and
   Investors guide

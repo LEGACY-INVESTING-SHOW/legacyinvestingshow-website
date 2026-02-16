@@ -32,7 +32,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-strategy-mistakes-to-avoid.jpg
 imageAlt: 'Tax Strategy Mistakes to Avoid: Complete 2026 Guide for U.S. Filers guide'
 imageWidth: 1200
 imageHeight: 630

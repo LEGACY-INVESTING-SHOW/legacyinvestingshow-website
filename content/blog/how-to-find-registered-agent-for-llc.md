@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-to-find-registered-agent-for-llc.jpg
 imageAlt: >-
   How to Find Registered Agent for LLC: Complete 2026 Guide for Cost,
   Compliance, and Privacy guide

@@ -28,7 +28,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/index-fund-investing.jpg
 imageAlt: 'Index Fund Investing: The Simple Path to Building Wealth guide'
 imageWidth: 1200
 imageHeight: 630

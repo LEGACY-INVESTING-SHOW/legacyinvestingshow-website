@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/s-corp-election-deadline.jpg
 imageAlt: 'S Corp Election Deadline: Complete 2026 Guide for US Business Owners guide'
 imageWidth: 1200
 imageHeight: 630

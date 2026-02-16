@@ -33,7 +33,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/multi-state-llc-calculator.jpg
 imageAlt: >-
   Multi State LLC Calculator: Practical Guide + Examples for Real Decisions
   guide

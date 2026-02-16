@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/capital-gains-tax-rate-2026.jpg
 imageAlt: >-
   Capital Gains Tax Rate 2026: Complete 2026 Guide to Brackets, NIIT, and Smart
   Sale Timing guide

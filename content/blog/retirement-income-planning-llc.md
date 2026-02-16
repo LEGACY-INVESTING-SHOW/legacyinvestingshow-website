@@ -35,7 +35,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/retirement-income-planning-llc.jpg
 imageAlt: >-
   Retirement Income Planning LLC: Complete 2026 Guide to Tax-Efficient
   Retirement Cash Flow guide

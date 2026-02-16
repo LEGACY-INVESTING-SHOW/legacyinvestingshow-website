@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-much-is-reasonable-salary-for-s-corp.jpg
 imageAlt: 'How much is reasonable salary for s corp: Complete 2026 Decision Guide guide'
 imageWidth: 1200
 imageHeight: 630

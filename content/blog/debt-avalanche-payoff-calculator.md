@@ -35,7 +35,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/debt-avalanche-payoff-calculator.jpg
 imageAlt: >-
   Debt Avalanche Payoff Calculator: Practical Guide + Examples for Faster
   Interest Savings guide

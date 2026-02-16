@@ -32,7 +32,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-taxes-vs-long-term-rentals.jpg
 imageAlt: 'Airbnb Taxes vs Long Term Rentals: Which Strategy Works Better in 2026? guide'
 imageWidth: 1200
 imageHeight: 630

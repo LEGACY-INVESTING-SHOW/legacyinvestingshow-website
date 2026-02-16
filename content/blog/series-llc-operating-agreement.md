@@ -35,7 +35,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/series-llc-operating-agreement.jpg
 imageAlt: >-
   Series LLC Operating Agreement: Complete 2026 Guide for Asset Protection and
   Scalable Operations guide

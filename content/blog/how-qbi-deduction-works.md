@@ -32,7 +32,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-qbi-deduction-works.jpg
 imageAlt: 'How QBI Deduction Works: Complete 2026 Guide for Pass-Through Owners guide'
 imageWidth: 1200
 imageHeight: 630

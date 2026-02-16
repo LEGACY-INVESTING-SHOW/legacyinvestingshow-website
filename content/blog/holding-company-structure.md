@@ -28,7 +28,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/holding-company-structure.jpg
 imageAlt: 'Holding Company Structure: Protect Assets & Reduce Taxes guide'
 imageWidth: 1200
 imageHeight: 630

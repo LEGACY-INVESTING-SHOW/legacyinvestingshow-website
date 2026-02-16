@@ -36,7 +36,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/hsa-strategy-for-high-earners.jpg
 imageAlt: >-
   HSA Strategy for High Earners: Complete 2026 Guide to Tax Savings, Investing,
   and Retirement Healthcare guide

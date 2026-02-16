@@ -28,7 +28,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/portfolio-rebalancing.jpg
 imageAlt: 'Portfolio Rebalancing: When and How to Adjust Your Investments guide'
 imageWidth: 1200
 imageHeight: 630

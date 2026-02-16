@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-roth-conversions-are-taxed.jpg
 imageAlt: >-
   How Roth Conversions Are Taxed: Complete 2026 Guide for Smarter Bracket
   Planning guide

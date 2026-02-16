@@ -36,7 +36,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-taxes-for-beginners.jpg
 imageAlt: >-
   Airbnb Taxes for Beginners: Complete 2026 Guide to Deductions, Lodging Taxes,
   and Smart Filing guide

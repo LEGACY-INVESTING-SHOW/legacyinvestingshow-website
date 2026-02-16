@@ -35,7 +35,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/student-loan-payoff-vs-refinance.jpg
 imageAlt: 'Student Loan Payoff vs Refinance: Which Strategy Works Better in 2026? guide'
 imageWidth: 1200
 imageHeight: 630

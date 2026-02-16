@@ -35,7 +35,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/asset-allocation-tax-implications.jpg
 imageAlt: >-
   Asset Allocation Tax Implications: Complete 2026 Guide for After-Tax Portfolio
   Returns guide

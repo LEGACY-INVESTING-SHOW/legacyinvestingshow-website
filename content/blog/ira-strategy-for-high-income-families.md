@@ -33,7 +33,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/ira-strategy-for-high-income-families.jpg
 imageAlt: 'IRA Strategy for High Income Families: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630

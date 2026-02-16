@@ -28,7 +28,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/mortgage-refinancing-guide.jpg
 imageAlt: 'Mortgage Refinancing Guide: When and How to Refinance guide'
 imageWidth: 1200
 imageHeight: 630

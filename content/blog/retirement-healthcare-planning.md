@@ -28,7 +28,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/retirement-healthcare-planning.jpg
 imageAlt: 'Retirement Healthcare Planning: Medicare, HSA & Cost Strategies guide'
 imageWidth: 1200
 imageHeight: 630

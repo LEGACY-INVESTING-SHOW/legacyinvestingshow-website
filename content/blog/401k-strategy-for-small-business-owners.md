@@ -37,7 +37,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/401k-strategy-for-small-business-owners.jpg
 imageAlt: >-
   401k Strategy for Small Business Owners: Complete 2026 Guide to Contributions,
   Taxes, and Plan Design guide

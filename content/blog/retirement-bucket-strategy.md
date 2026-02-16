@@ -28,7 +28,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/retirement-bucket-strategy.jpg
 imageAlt: 'Retirement Bucket Strategy: Organize Your Assets for Steady Income guide'
 imageWidth: 1200
 imageHeight: 630

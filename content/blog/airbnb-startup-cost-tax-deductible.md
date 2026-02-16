@@ -34,7 +34,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-startup-cost-tax-deductible.jpg
 imageAlt: 'airbnb startup cost tax deductible: Complete 2026 Guide for US Hosts guide'
 imageWidth: 1200
 imageHeight: 630

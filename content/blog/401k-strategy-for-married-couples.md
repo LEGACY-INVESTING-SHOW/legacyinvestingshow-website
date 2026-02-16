@@ -38,7 +38,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/401k-strategy-for-married-couples.jpg
 imageAlt: >-
   401k Strategy for Married Couples: Complete 2026 Guide to Coordinating Taxes,
   Contributions, and Retirement Timing guide

@@ -36,7 +36,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-planning-for-self-employed-professionals.jpg
 imageAlt: >-
   Tax Planning for Self Employed Professionals: Complete 2026 Guide to Lowering
   Taxes and Building Wealth guide

@@ -28,7 +28,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/atm-business-guide.jpg
 imageAlt: 'ATM Business Guide: Passive Income from Cash Machines guide'
 imageWidth: 1200
 imageHeight: 630

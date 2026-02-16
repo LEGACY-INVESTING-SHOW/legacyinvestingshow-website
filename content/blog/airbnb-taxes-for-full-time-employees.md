@@ -35,7 +35,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-taxes-for-full-time-employees.jpg
 imageAlt: >-
   Airbnb Taxes for Full Time Employees: Complete 2026 Guide to Reporting,
   Deductions, and Strategy guide

@@ -35,7 +35,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/multi-state-llc-search.jpg
 imageAlt: >-
   Multi State LLC Search: Complete 2026 Guide to Registration, Taxes, and Risk
   Control guide

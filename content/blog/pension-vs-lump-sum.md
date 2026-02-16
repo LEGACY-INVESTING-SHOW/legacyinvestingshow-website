@@ -28,7 +28,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/pension-vs-lump-sum.jpg
 imageAlt: 'Pension vs Lump Sum: How to Decide at Retirement guide'
 imageWidth: 1200
 imageHeight: 630

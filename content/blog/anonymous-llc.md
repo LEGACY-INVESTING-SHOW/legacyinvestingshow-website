@@ -28,7 +28,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/anonymous-llc.jpg
 imageAlt: 'Anonymous LLC: How to Keep Your Business Ownership Private guide'
 imageWidth: 1200
 imageHeight: 630

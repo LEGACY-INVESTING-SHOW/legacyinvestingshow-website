@@ -32,7 +32,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/reasonable-salary-tax-implications.jpg
 imageAlt: >-
   Reasonable Salary Tax Implications: Complete 2026 Guide for S Corp Owners
   guide

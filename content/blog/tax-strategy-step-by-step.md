@@ -33,7 +33,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-strategy-step-by-step.jpg
 imageAlt: >-
   Tax Strategy Step By Step: Complete 2026 Guide for Smarter Money Decisions
   guide

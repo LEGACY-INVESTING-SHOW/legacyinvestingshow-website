@@ -33,7 +33,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/s-corp-election-template.jpg
 imageAlt: 's corp election template: Practical Guide + Examples for Owner-Operators guide'
 imageWidth: 1200
 imageHeight: 630

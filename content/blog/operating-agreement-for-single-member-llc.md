@@ -40,7 +40,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/operating-agreement-for-single-member-llc.jpg
 imageAlt: >-
   operating agreement for single member llc: Complete 2026 Guide to Protection,
   Taxes, and Control guide

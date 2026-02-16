@@ -28,7 +28,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/etf-vs-mutual-fund.jpg
 imageAlt: 'ETF vs Mutual Fund: Which Is Better for Your Portfolio? guide'
 imageWidth: 1200
 imageHeight: 630

@@ -28,7 +28,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/debt-to-income-ratio.jpg
 imageAlt: 'Debt-to-Income Ratio: What Lenders Look For & How to Improve guide'
 imageWidth: 1200
 imageHeight: 630

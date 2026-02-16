@@ -35,7 +35,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/student-loan-payoff-calculator.jpg
 imageAlt: >-
   Student Loan Payoff Calculator: Practical Guide + Examples for Faster Debt
   Freedom guide

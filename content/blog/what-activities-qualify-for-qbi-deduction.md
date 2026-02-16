@@ -38,7 +38,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/what-activities-qualify-for-qbi-deduction.jpg
 imageAlt: >-
   What Activities Qualify for QBI Deduction: Complete 2026 Guide for US Business
   Owners guide

@@ -28,7 +28,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/social-security-optimization.jpg
 imageAlt: 'Social Security Optimization: When to Claim for Maximum Benefits guide'
 imageWidth: 1200
 imageHeight: 630

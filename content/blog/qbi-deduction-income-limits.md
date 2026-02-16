@@ -33,7 +33,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/qbi-deduction-income-limits.jpg
 imageAlt: 'qbi deduction income limits: Complete 2026 Guide for Pass-Through Owners guide'
 imageWidth: 1200
 imageHeight: 630

@@ -37,7 +37,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/business-succession-planning-vs-professional-llc.jpg
 imageAlt: >-
   Business Succession Planning vs Professional LLC: Which Strategy Works Better
   in 2026? guide

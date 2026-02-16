@@ -32,7 +32,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-state-for-series-llc.jpg
 imageAlt: 'Best State for Series LLC: Complete 2026 Guide for Real-World Investors guide'
 imageWidth: 1200
 imageHeight: 630

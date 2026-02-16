@@ -35,7 +35,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-planning-for-consultants.jpg
 imageAlt: >-
   Tax Planning for Consultants: Complete 2026 Guide to Reduce Taxes and Keep
   More Consulting Income guide

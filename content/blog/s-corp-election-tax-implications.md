@@ -33,7 +33,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/s-corp-election-tax-implications.jpg
 imageAlt: >-
   S Corp Election Tax Implications: Complete 2026 Guide for Owner-Operators
   guide

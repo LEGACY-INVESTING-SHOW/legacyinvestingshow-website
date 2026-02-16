@@ -36,7 +36,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/asset-allocation-for-late-starters.jpg
 imageAlt: >-
   Asset Allocation for Late Starters: Complete 2026 Guide to Catch Up Without
   Overreaching guide

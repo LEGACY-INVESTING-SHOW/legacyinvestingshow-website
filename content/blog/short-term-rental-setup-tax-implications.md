@@ -36,7 +36,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/short-term-rental-setup-tax-implications.jpg
 imageAlt: >-
   Short Term Rental Setup Tax Implications: Complete 2026 Guide for Airbnb
   Arbitrage Operators guide

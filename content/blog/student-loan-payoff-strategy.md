@@ -35,7 +35,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/student-loan-payoff-strategy.jpg
 imageAlt: >-
   Student Loan Payoff Strategy: Complete 2026 Guide for Faster, Lower-Risk
   Repayment guide

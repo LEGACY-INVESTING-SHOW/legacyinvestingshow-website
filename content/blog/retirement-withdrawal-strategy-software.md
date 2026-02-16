@@ -36,7 +36,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/retirement-withdrawal-strategy-software.jpg
 imageAlt: >-
   Retirement Withdrawal Strategy Software: Complete 2026 Guide for Tax-Smart
   Income Planning guide

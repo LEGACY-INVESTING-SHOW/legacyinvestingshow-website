@@ -33,7 +33,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/value-investing-tax-implications.jpg
 imageAlt: 'Value Investing Tax Implications: Complete 2026 Guide for US Investors guide'
 imageWidth: 1200
 imageHeight: 630

@@ -28,7 +28,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/fire-movement-guide.jpg
 imageAlt: 'FIRE Movement Guide: Financial Independence, Retire Early guide'
 imageWidth: 1200
 imageHeight: 630

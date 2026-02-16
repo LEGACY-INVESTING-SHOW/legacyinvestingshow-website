@@ -31,7 +31,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-tax-strategy-books.jpg
 imageAlt: >-
   Best Tax Strategy Books: Complete 2026 Guide for Smarter U.S. Tax Planning
   guide

@@ -35,7 +35,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/asset-allocation-for-high-earners.jpg
 imageAlt: >-
   Asset Allocation for High Earners: Complete 2026 Guide to Tax-Smart Portfolio
   Decisions guide

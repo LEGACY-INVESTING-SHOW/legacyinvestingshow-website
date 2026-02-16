@@ -37,7 +37,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/required-minimum-distributions-vs-taxable-brokerage.jpg
 imageAlt: >-
   required minimum distributions vs taxable brokerage: Which Strategy Works
   Better in 2026? guide

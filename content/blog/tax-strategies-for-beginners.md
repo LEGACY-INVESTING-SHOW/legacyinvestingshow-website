@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-strategies-for-beginners.jpg
 imageAlt: >-
   Tax Strategies for Beginners: Complete 2026 Guide to Lowering Your Tax Bill
   guide

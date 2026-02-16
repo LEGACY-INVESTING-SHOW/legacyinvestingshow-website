@@ -28,7 +28,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/value-investing-strategy.jpg
 imageAlt: 'Value Investing Strategy: Find Undervalued Stocks guide'
 imageWidth: 1200
 imageHeight: 630

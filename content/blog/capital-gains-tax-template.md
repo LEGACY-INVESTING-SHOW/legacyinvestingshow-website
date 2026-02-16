@@ -35,7 +35,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/capital-gains-tax-template.jpg
 imageAlt: >-
   Capital Gains Tax Template: Practical Guide + Examples for Better Sell
   Decisions guide

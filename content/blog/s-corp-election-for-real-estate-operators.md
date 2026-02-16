@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/s-corp-election-for-real-estate-operators.jpg
 imageAlt: 's corp election for real estate operators: Complete 2026 Decision Guide guide'
 imageWidth: 1200
 imageHeight: 630

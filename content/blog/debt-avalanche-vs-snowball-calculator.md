@@ -33,7 +33,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/debt-avalanche-vs-snowball-calculator.jpg
 imageAlt: >-
   Debt Avalanche vs Snowball Calculator: Which Strategy Works Better in 2026?
   guide

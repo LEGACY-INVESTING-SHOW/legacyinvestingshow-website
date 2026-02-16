@@ -37,7 +37,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/retirement-income-plan-tax-implications.jpg
 imageAlt: >-
   Retirement Income Plan Tax Implications: Complete 2026 Guide for Smarter
   Withdrawals guide

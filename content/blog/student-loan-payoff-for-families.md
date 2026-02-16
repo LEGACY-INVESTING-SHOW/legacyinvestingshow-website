@@ -36,7 +36,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/student-loan-payoff-for-families.jpg
 imageAlt: >-
   Student Loan Payoff for Families: Complete 2026 Guide to Lower Interest,
   Protect Cash Flow, and Build Wealth guide

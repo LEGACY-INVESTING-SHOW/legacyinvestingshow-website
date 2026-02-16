@@ -35,7 +35,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/401k-strategy-for-early-retirees.jpg
 imageAlt: >-
   401k Strategy for Early Retirees: Complete 2026 Guide to Taxes, Access, and
   Withdrawal Sequencing guide

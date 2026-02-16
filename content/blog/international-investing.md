@@ -28,7 +28,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/international-investing.jpg
 imageAlt: 'International Investing: Diversify Beyond US Markets guide'
 imageWidth: 1200
 imageHeight: 630

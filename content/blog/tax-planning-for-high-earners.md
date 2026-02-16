@@ -35,7 +35,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-planning-for-high-earners.jpg
 imageAlt: >-
   Tax Planning for High Earners: Complete 2026 Guide to Lower Taxes and Build
   After-Tax Wealth guide

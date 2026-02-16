@@ -33,7 +33,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/1031-exchange-vs-itemized-deductions.jpg
 imageAlt: >-
   1031 Exchange vs Itemized Deductions: Which Strategy Works Better in 2026?
   guide

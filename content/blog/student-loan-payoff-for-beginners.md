@@ -35,7 +35,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/student-loan-payoff-for-beginners.jpg
 imageAlt: >-
   Student Loan Payoff for Beginners: Complete 2026 Guide to Paying Less Interest
   and Becoming Debt-Free Faster guide

@@ -33,7 +33,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/brrrr-method-vs-franchise-investing.jpg
 imageAlt: >-
   BRRRR Method vs Franchise Investing: Which Strategy Works Better in 2026?
   guide

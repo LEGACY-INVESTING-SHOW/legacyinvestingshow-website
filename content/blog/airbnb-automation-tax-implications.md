@@ -35,7 +35,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-automation-tax-implications.jpg
 imageAlt: >-
   airbnb automation tax implications: Complete 2026 Guide for Hosts and
   Arbitrage Operators guide

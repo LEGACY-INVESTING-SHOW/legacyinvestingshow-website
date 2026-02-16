@@ -34,7 +34,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/401k-strategy-for-government-employees.jpg
 imageAlt: '401k strategy for government employees: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630

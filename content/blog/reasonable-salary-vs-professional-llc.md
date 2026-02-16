@@ -33,7 +33,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/reasonable-salary-vs-professional-llc.jpg
 imageAlt: >-
   Reasonable Salary vs Professional LLC: Which Strategy Works Better in 2026?
   guide

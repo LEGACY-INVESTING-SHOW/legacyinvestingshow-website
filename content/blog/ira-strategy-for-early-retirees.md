@@ -32,7 +32,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/ira-strategy-for-early-retirees.jpg
 imageAlt: >-
   IRA strategy for early retirees: Complete 2026 Guide to Tax-Efficient Income
   guide

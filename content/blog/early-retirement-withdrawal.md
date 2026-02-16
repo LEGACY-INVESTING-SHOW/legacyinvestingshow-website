@@ -28,7 +28,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/early-retirement-withdrawal.jpg
 imageAlt: 'Early Retirement Withdrawal: How to Access Funds Before 59½ guide'
 imageWidth: 1200
 imageHeight: 630

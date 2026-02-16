@@ -36,7 +36,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-occupancy-strategy-for-hosts.jpg
 imageAlt: >-
   Airbnb Occupancy Strategy for Hosts: Complete 2026 Guide to Higher Bookings
   and Better Margins guide

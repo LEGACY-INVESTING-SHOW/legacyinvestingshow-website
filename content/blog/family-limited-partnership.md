@@ -28,7 +28,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/family-limited-partnership.jpg
 imageAlt: 'Family Limited Partnership (FLP): Estate Planning & Asset Protection guide'
 imageWidth: 1200
 imageHeight: 630

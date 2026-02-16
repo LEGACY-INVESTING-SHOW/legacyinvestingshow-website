@@ -35,7 +35,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/capital-gains-tax-for-physicians.jpg
 imageAlt: >-
   Capital Gains Tax for Physicians: Complete 2026 Guide to Practice Sales, NIIT,
   and Exit Planning guide

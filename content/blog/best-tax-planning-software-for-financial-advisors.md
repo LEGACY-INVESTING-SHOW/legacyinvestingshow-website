@@ -37,7 +37,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-tax-planning-software-for-financial-advisors.jpg
 imageAlt: >-
   Best Tax Planning Software for Financial Advisors: Complete 2026 Buyer
   Framework guide

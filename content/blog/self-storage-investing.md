@@ -28,7 +28,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/self-storage-investing.jpg
 imageAlt: 'Self Storage Investing: High Cash Flow, Low Maintenance guide'
 imageWidth: 1200
 imageHeight: 630

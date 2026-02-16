@@ -35,7 +35,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/capital-gains-tax-checklist.jpg
 imageAlt: >-
   Capital Gains Tax Checklist: Practical Guide + Examples for Real-World
   Decisions guide

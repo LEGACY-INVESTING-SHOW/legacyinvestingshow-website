@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/qbi-deduction-for-real-estate-investors.jpg
 imageAlt: >-
   QBI Deduction for Real Estate Investors: Complete 2026 Guide to Section 199A
   guide

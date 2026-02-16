@@ -35,7 +35,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/brrrr-method-vs-notes-investing.jpg
 imageAlt: >-
   brrrr method vs notes investing: Which Passive Income Strategy Works Better in
   2026? guide

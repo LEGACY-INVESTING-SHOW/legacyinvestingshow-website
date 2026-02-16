@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/hsa-strategy-tax-implications.jpg
 imageAlt: >-
   Hsa Strategy Tax Implications: Complete 2026 Guide for Smarter Tax, Cash-Flow,
   and Retirement Decisions guide

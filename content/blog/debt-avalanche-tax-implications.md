@@ -33,7 +33,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/debt-avalanche-tax-implications.jpg
 imageAlt: >-
   Debt Avalanche Tax Implications: Complete 2026 Guide to Smarter Payoff Order
   guide

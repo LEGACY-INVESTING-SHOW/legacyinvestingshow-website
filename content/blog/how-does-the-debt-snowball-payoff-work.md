@@ -36,7 +36,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-does-the-debt-snowball-payoff-work.jpg
 imageAlt: >-
   How Does the Debt Snowball Payoff Work? Complete 2026 Guide for U.S.
   Households guide

@@ -33,7 +33,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/value-investing-for-dummies.jpg
 imageAlt: >-
   Value Investing for Dummies: Complete 2026 Guide to Building Long-Term Wealth
   guide

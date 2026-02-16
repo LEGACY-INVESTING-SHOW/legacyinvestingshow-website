@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-deductions-for-seniors-2025.jpg
 imageAlt: >-
   Tax Deductions for Seniors 2025: Complete 2026 Guide to the Enhanced Standard
   Deduction and Filing Strategy guide

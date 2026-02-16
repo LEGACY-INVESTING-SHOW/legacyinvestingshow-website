@@ -33,7 +33,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/s-corp-election-for-service-businesses.jpg
 imageAlt: 'S Corp Election for Service Businesses: Complete 2026 Guide for Owners guide'
 imageWidth: 1200
 imageHeight: 630

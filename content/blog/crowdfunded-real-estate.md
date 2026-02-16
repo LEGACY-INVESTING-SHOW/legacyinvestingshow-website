@@ -28,7 +28,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/crowdfunded-real-estate.jpg
 imageAlt: 'Crowdfunded Real Estate: Invest in Property with $500 guide'
 imageWidth: 1200
 imageHeight: 630

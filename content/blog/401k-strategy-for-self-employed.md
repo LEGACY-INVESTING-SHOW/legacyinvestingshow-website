@@ -36,7 +36,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/401k-strategy-for-self-employed.jpg
 imageAlt: >-
   401k strategy for self employed: Complete 2026 Guide to Tax Savings,
   Contribution Math, and Plan Selection guide

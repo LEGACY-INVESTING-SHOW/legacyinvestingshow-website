@@ -36,7 +36,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-pricing-strategy-for-hosts.jpg
 imageAlt: >-
   Airbnb Pricing Strategy for Hosts: Complete 2026 Guide to Occupancy, ADR, and
   Profit guide

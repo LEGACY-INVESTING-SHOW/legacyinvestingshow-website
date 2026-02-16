@@ -35,7 +35,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/retirement-withdrawal-strategy-2026.jpg
 imageAlt: >-
   Retirement Withdrawal Strategy 2026: Complete Guide to Tax-Efficient Income,
   Guardrails, and Portfolio Longevity guide

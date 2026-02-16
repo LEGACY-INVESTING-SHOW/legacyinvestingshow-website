@@ -33,7 +33,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-pricing-strategy-for-side-hustlers.jpg
 imageAlt: 'Airbnb Pricing Strategy for Side Hustlers: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630

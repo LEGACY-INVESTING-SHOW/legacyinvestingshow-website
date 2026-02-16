@@ -35,7 +35,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/401k-strategy-tax-implications.jpg
 imageAlt: >-
   401k Strategy Tax Implications: Complete 2026 Guide to Contributions,
   Withdrawals, and Bracket Control guide

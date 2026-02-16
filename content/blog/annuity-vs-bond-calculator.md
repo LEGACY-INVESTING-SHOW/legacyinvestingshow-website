@@ -34,7 +34,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/annuity-vs-bond-calculator.jpg
 imageAlt: 'Annuity vs Bond Calculator: Which Strategy Works Better in 2026? guide'
 imageWidth: 1200
 imageHeight: 630

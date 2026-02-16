@@ -37,7 +37,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/hsa-strategy-for-self-employed-professionals.jpg
 imageAlt: >-
   Hsa Strategy for Self Employed Professionals: Complete 2026 Guide to Taxes,
   Cash Flow, and Retirement guide

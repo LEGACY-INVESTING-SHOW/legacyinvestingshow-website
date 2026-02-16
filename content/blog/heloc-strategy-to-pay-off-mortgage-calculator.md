@@ -33,7 +33,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/heloc-strategy-to-pay-off-mortgage-calculator.jpg
 imageAlt: >-
   HELOC Strategy to Pay Off Mortgage Calculator: Practical Guide + Examples
   guide

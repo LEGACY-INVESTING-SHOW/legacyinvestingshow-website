@@ -28,7 +28,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/municipal-bonds.jpg
 imageAlt: 'Municipal Bonds: Tax-Free Income for High Earners guide'
 imageWidth: 1200
 imageHeight: 630

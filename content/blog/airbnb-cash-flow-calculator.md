@@ -34,7 +34,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-cash-flow-calculator.jpg
 imageAlt: >-
   Airbnb Cash Flow Calculator: Practical Guide + Examples for Real-World
   Decisions guide

@@ -33,7 +33,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-planning-for-physicians.jpg
 imageAlt: >-
   Tax Planning for Physicians: Complete 2026 Guide to Smarter Tax Decisions
   guide

@@ -35,7 +35,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-loss-harvesting-for-high-earners.jpg
 imageAlt: >-
   Tax Loss Harvesting for High Earners: Complete 2026 Guide to Smarter After-Tax
   Returns guide

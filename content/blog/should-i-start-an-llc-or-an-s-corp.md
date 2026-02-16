@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/should-i-start-an-llc-or-an-s-corp.jpg
 imageAlt: >-
   Should I Start an LLC or an S Corp: Complete 2026 Decision Guide for U.S.
   Owners guide

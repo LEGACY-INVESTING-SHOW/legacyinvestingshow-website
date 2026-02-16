@@ -33,7 +33,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-loss-harvesting-template.jpg
 imageAlt: >-
   tax loss harvesting template: Practical Guide + Examples for US Investors
   guide

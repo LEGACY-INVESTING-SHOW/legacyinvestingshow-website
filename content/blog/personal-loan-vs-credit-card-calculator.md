@@ -34,7 +34,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/personal-loan-vs-credit-card-calculator.jpg
 imageAlt: >-
   Personal Loan vs Credit Card Calculator: Which Strategy Works Better in 2026?
   guide

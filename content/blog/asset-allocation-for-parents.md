@@ -34,7 +34,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/asset-allocation-for-parents.jpg
 imageAlt: >-
   Asset Allocation for Parents: Complete 2026 Guide to Balancing Growth, Taxes,
   and Family Cash Needs guide

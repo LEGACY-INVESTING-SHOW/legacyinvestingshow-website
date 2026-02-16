@@ -28,7 +28,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/credit-score-optimization.jpg
 imageAlt: 'Credit Score Optimization: Improve Your Score Fast guide'
 imageWidth: 1200
 imageHeight: 630

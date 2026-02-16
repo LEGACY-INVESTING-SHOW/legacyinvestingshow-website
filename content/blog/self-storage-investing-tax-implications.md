@@ -36,7 +36,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/self-storage-investing-tax-implications.jpg
 imageAlt: >-
   Self Storage Investing Tax Implications: Complete 2026 Guide to Depreciation,
   Cost Segregation, and Exit Taxes guide

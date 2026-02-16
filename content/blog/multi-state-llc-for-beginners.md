@@ -35,7 +35,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/multi-state-llc-for-beginners.jpg
 imageAlt: >-
   Multi State LLC for Beginners: Complete 2026 Guide to Filing, Costs, and
   Compliance guide

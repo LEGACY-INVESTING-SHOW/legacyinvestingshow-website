@@ -28,7 +28,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/treasury-bonds-strategy.jpg
 imageAlt: 'Treasury Bonds Strategy: Safe Income in Any Market guide'
 imageWidth: 1200
 imageHeight: 630

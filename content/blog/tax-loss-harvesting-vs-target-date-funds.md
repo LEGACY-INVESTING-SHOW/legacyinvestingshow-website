@@ -34,7 +34,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-loss-harvesting-vs-target-date-funds.jpg
 imageAlt: >-
   Tax Loss Harvesting vs Target Date Funds: Which Strategy Works Better in 2026?
   guide

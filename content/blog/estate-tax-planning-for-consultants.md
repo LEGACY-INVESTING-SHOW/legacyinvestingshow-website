@@ -33,7 +33,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/estate-tax-planning-for-consultants.jpg
 imageAlt: 'Estate Tax Planning for Consultants: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630

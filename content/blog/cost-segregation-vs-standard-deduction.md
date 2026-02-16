@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/cost-segregation-vs-standard-deduction.jpg
 imageAlt: >-
   Cost Segregation vs Standard Deduction: Which Strategy Works Better in 2026?
   guide

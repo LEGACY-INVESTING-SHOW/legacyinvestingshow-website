@@ -35,7 +35,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/house-hacking-real-estate-investing-for-beginners.jpg
 imageAlt: >-
   House Hacking Real Estate Investing for Beginners: Complete 2026 Guide to Cash
   Flow, Financing, and Risk Control guide

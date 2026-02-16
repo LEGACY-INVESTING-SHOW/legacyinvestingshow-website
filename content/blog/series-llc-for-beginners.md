@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/series-llc-for-beginners.jpg
 imageAlt: >-
   Series LLC for Beginners: Complete 2026 Guide to Liability Segmentation, Tax
   Planning, and Setup guide

@@ -35,7 +35,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/registered-agent-for-llc-in-texas.jpg
 imageAlt: >-
   Registered Agent for LLC in Texas: Complete 2026 Guide to Cost, Privacy, and
   Compliance guide

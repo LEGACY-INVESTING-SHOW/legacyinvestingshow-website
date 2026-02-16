@@ -36,7 +36,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/qbi-deduction-for-physicians.jpg
 imageAlt: >-
   QBI Deduction for Physicians: Complete 2026 Guide to Eligibility, Math, and
   Tax Planning guide

@@ -35,7 +35,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-to-report-royalty-income-on-tax-return.jpg
 imageAlt: 'How to Report Royalty Income on Tax Return: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630

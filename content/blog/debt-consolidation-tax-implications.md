@@ -32,7 +32,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/debt-consolidation-tax-implications.jpg
 imageAlt: >-
   Debt Consolidation Tax Implications: Complete 2026 Guide for U.S. Households
   guide

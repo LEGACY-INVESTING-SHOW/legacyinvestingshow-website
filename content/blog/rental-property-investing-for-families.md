@@ -36,7 +36,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/rental-property-investing-for-families.jpg
 imageAlt: >-
   Rental Property Investing for Families: Complete 2026 Guide to Cash Flow,
   Taxes, and Risk Control guide

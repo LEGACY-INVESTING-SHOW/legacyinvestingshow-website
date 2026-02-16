@@ -35,7 +35,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/student-loan-payoff-tax-implications.jpg
 imageAlt: >-
   Student Loan Payoff Tax Implications: Complete 2026 Guide for Smarter
   Repayment Decisions guide

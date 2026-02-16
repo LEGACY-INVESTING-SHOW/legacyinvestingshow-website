@@ -38,7 +38,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-tax-planning-software-for-roth-conversions.jpg
 imageAlt: 'best tax planning software for roth conversions: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630

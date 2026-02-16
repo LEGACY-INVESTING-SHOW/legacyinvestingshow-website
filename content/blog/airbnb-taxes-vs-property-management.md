@@ -33,7 +33,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-taxes-vs-property-management.jpg
 imageAlt: >-
   airbnb taxes vs property management: Which Strategy Works Better in 2026?
   guide

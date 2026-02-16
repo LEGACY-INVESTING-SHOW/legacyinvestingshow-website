@@ -36,7 +36,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/rental-property-investing-vs-small-business-acquisition.jpg
 imageAlt: >-
   Rental Property Investing vs Small Business Acquisition: Which Strategy Works
   Better in 2026? guide

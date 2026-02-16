@@ -36,7 +36,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/royalty-income-tax-treatment.jpg
 imageAlt: >-
   Royalty Income Tax Treatment: Complete 2026 Guide for U.S. Creators and
   Investors guide

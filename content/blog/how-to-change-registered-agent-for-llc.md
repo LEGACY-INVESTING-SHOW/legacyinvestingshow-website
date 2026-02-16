@@ -35,7 +35,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-to-change-registered-agent-for-llc.jpg
 imageAlt: >-
   How to Change Registered Agent for LLC: Complete 2026 Guide With Costs,
   Timelines, and Decision Frameworks guide

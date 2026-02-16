@@ -34,7 +34,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-ira-withdrawal-strategy.jpg
 imageAlt: >-
   Best IRA Withdrawal Strategy: Complete 2026 Guide for Lower Lifetime Taxes
   guide

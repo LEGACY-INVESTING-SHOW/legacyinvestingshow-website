@@ -33,7 +33,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/is-an-s-corp-better-than-an-llc.jpg
 imageAlt: >-
   Is an S Corp Better Than an LLC: Complete 2026 Guide for Tax-Smart Owners
   guide

@@ -35,7 +35,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/multi-state-towing-llc.jpg
 imageAlt: >-
   Multi State Towing LLC: Complete 2026 Guide to Tax, Compliance, and Risk
   Controls guide

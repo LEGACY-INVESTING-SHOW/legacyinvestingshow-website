@@ -34,7 +34,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-pricing-strategy-for-operators.jpg
 imageAlt: >-
   Airbnb Pricing Strategy for Operators: Complete 2026 Guide to Occupancy,
   Margin, and Cash Flow guide

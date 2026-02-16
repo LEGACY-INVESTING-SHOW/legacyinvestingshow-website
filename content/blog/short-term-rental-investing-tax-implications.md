@@ -37,7 +37,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/short-term-rental-investing-tax-implications.jpg
 imageAlt: >-
   Short Term Rental Investing Tax Implications: Complete 2026 Guide for U.S.
   Investors guide

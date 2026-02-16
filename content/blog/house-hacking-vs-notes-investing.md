@@ -33,7 +33,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/house-hacking-vs-notes-investing.jpg
 imageAlt: 'House Hacking vs Notes Investing: Which Strategy Works Better in 2026? guide'
 imageWidth: 1200
 imageHeight: 630

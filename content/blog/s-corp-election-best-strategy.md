@@ -35,7 +35,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/s-corp-election-best-strategy.jpg
 imageAlt: >-
   S Corp Election Best Strategy: Complete 2026 Guide for Profitable
   Owner-Operators guide

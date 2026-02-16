@@ -34,7 +34,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-pricing-strategy-tax-implications.jpg
 imageAlt: >-
   airbnb pricing strategy tax implications: Complete 2026 Guide for U.S. Hosts
   guide

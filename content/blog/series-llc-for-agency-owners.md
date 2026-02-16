@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/series-llc-for-agency-owners.jpg
 imageAlt: >-
   Series LLC for Agency Owners: Complete 2026 Guide to Liability, Taxes, and
   Scaling guide

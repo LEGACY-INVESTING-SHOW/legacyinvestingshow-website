@@ -34,7 +34,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/debt-to-income-ratio-tax-implications.jpg
 imageAlt: >-
   Debt to Income Ratio Tax Implications: Complete 2026 Guide for US Households
   guide

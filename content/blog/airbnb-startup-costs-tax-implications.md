@@ -34,7 +34,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-startup-costs-tax-implications.jpg
 imageAlt: >-
   Airbnb Startup Costs Tax Implications: Complete 2026 Guide for U.S. Hosts
   guide

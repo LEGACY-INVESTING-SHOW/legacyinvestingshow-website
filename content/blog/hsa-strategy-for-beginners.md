@@ -35,7 +35,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/hsa-strategy-for-beginners.jpg
 imageAlt: >-
   HSA Strategy for Beginners: Complete 2026 Guide to Lower Taxes and Build
   Long-Term Health Wealth guide

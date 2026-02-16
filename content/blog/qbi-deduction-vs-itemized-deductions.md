@@ -33,7 +33,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/qbi-deduction-vs-itemized-deductions.jpg
 imageAlt: >-
   QBI Deduction vs Itemized Deductions: Which Strategy Works Better in 2026?
   guide

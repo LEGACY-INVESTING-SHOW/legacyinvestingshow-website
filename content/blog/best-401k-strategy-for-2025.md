@@ -36,7 +36,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-401k-strategy-for-2025.jpg
 imageAlt: >-
   The best 401k strategy for 2025: Complete 2026 Guide to Contribution, Tax, and
   Allocation Decisions guide

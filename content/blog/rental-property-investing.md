@@ -28,7 +28,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/rental-property-investing.jpg
 imageAlt: 'Rental Property Investing: Build Passive Income with Real Estate guide'
 imageWidth: 1200
 imageHeight: 630

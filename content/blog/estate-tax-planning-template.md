@@ -36,7 +36,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/estate-tax-planning-template.jpg
 imageAlt: >-
   Estate Tax Planning Template: Practical Guide, Numbers, and a 30-Day Action
   Plan guide

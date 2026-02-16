@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/operating-agreement-vs-professional-llc.jpg
 imageAlt: >-
   Operating Agreement vs Professional LLC: Which Strategy Works Better in 2026?
   guide

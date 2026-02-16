@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/estate-tax-planning-calculator.jpg
 imageAlt: >-
   Estate Tax Planning Calculator: Practical Guide, Decision Framework, and
   Worked Examples guide

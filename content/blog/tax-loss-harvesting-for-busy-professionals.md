@@ -34,7 +34,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-loss-harvesting-for-busy-professionals.jpg
 imageAlt: 'Tax Loss Harvesting for Busy Professionals: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630

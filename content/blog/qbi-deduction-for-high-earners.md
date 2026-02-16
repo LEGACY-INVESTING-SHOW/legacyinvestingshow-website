@@ -33,7 +33,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/qbi-deduction-for-high-earners.jpg
 imageAlt: >-
   QBI Deduction for High Earners: Complete 2026 Guide to Maximizing Section 199A
   guide

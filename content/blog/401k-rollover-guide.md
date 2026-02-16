@@ -28,7 +28,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/401k-rollover-guide.jpg
 imageAlt: '401(k) Rollover Guide: Move Your Retirement Funds the Right Way guide'
 imageWidth: 1200
 imageHeight: 630

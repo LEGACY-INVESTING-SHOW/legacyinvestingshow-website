@@ -35,7 +35,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-pricing-strategy-vs-mid-term-rentals.jpg
 imageAlt: >-
   airbnb pricing strategy vs mid term rentals: Which Strategy Works Better in
   2026? guide

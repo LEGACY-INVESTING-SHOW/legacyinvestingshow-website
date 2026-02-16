@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/qbi-deduction-for-dummies.jpg
 imageAlt: >-
   QBI Deduction for Dummies: Complete 2026 Guide for Small-Business Owners and
   Side Hustlers guide

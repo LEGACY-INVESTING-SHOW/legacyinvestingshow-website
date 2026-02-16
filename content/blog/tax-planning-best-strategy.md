@@ -35,7 +35,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-planning-best-strategy.jpg
 imageAlt: >-
   Tax Planning Best Strategy: Complete 2026 Decision Framework for Smarter
   After-Tax Wealth guide

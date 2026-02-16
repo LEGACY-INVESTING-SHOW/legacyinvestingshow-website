@@ -33,7 +33,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/hsa-strategy-vs-entity-restructuring.jpg
 imageAlt: >-
   HSA Strategy vs Entity Restructuring: Which Strategy Works Better in 2026?
   guide

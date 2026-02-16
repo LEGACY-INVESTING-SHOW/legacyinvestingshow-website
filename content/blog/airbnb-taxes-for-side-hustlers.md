@@ -34,7 +34,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-taxes-for-side-hustlers.jpg
 imageAlt: >-
   Airbnb Taxes for Side Hustlers: Complete 2026 Guide to Smarter Filing and
   Bigger Keep-Rate guide

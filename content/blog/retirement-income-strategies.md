@@ -28,7 +28,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/retirement-income-strategies.jpg
 imageAlt: 'Retirement Income Strategies: How to Create Steady Cash Flow guide'
 imageWidth: 1200
 imageHeight: 630

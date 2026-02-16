@@ -38,7 +38,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/student-loan-payoff-calculator-with-extra-payments.jpg
 imageAlt: >-
   Student Loan Payoff Calculator With Extra Payments: Practical Guide,
   Scenarios, and a 30-Day Action Plan guide

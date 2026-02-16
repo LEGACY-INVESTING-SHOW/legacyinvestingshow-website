@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/multi-state-llc-for-freelancers.jpg
 imageAlt: >-
   Multi State LLC for Freelancers: Complete 2026 Guide to Registration, Taxes,
   and Compliance guide

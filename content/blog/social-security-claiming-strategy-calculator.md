@@ -40,7 +40,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/social-security-claiming-strategy-calculator.jpg
 imageAlt: >-
   Social Security Claiming Strategy Calculator: Practical Guide + Real-World
   Examples for Ages 62, FRA, and 70 guide

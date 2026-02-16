@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-to-get-operating-agreement-for-llc.jpg
 imageAlt: 'How to Get Operating Agreement for LLC: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630

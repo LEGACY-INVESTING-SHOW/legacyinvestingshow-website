@@ -33,7 +33,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-cash-flow-vs-notes-investing.jpg
 imageAlt: >-
   Airbnb Cash Flow vs Notes Investing: Which Strategy Works Better in 2026?
   guide

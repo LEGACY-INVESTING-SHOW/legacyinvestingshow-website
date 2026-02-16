@@ -35,7 +35,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/asset-allocation-for-beginners.jpg
 imageAlt: >-
   Asset Allocation for Beginners: Complete 2026 Guide to Building a Portfolio
   You Can Stick With guide

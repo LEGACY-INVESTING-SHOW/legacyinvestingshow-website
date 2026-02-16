@@ -33,7 +33,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-planning-for-dummies.jpg
 imageAlt: 'Tax Planning for Dummies: Complete 2026 Guide for U.S. Households guide'
 imageWidth: 1200
 imageHeight: 630

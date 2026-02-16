@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/corporate-veil-vs-professional-llc.jpg
 imageAlt: 'Corporate Veil vs Professional LLC: Which Strategy Works Better in 2026? guide'
 imageWidth: 1200
 imageHeight: 630

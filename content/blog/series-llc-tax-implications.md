@@ -35,7 +35,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/series-llc-tax-implications.jpg
 imageAlt: >-
   Series LLC Tax Implications: Complete 2026 Guide for Investors and Business
   Owners guide

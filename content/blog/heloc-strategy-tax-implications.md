@@ -35,7 +35,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/heloc-strategy-tax-implications.jpg
 imageAlt: >-
   HELOC Strategy Tax Implications: Complete 2026 Guide for Debt, Deductions, and
   Risk guide

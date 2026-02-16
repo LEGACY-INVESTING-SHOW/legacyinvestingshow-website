@@ -35,7 +35,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-much-are-airbnb-taxes-for-guests.jpg
 imageAlt: >-
   How Much Are Airbnb Taxes for Guests: Complete 2026 Guide for US Travelers and
   Hosts guide

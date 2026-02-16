@@ -32,7 +32,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/multi-state-lottery-llc.jpg
 imageAlt: >-
   Multi State Lottery LLC: Complete 2026 Guide for Privacy, Taxes, and Control
   guide

@@ -28,7 +28,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/reits-guide.jpg
 imageAlt: 'REITs Complete Guide: Real Estate Investing Without Owning Property guide'
 imageWidth: 1200
 imageHeight: 630

@@ -35,7 +35,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/laundromat-investing-tax-implications.jpg
 imageAlt: >-
   laundromat investing tax implications: Complete 2026 Guide for US Cash-Flow
   Investors guide

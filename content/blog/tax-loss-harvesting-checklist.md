@@ -34,7 +34,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-loss-harvesting-checklist.jpg
 imageAlt: >-
   Tax Loss Harvesting Checklist: Practical Guide, Numbers, and a 30-Day Action
   Plan guide

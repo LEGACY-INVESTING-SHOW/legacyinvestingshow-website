@@ -35,7 +35,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-taxes-for-guests.jpg
 imageAlt: >-
   Airbnb Taxes for Guests: Complete 2026 Guide to Costs, Tradeoffs, and Smarter
   Booking Decisions guide

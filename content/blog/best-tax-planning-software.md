@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-tax-planning-software.jpg
 imageAlt: 'Best Tax Planning Software: Complete 2026 Guide for Real-World Decisions guide'
 imageWidth: 1200
 imageHeight: 630

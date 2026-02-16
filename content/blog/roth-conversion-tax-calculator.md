@@ -35,7 +35,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/roth-conversion-tax-calculator.jpg
 imageAlt: >-
   roth conversion tax calculator: Practical Guide + Examples for Smarter IRA
   Decisions guide

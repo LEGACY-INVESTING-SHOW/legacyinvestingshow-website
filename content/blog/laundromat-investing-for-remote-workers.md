@@ -37,7 +37,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/laundromat-investing-for-remote-workers.jpg
 imageAlt: >-
   Laundromat investing for remote workers: Complete 2026 guide to cash flow, tax
   planning, and risk control guide

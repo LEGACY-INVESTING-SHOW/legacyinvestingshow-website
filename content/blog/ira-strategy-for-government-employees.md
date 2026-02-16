@@ -33,7 +33,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/ira-strategy-for-government-employees.jpg
 imageAlt: 'IRA Strategy for Government Employees: Complete 2026 Decision Guide guide'
 imageWidth: 1200
 imageHeight: 630

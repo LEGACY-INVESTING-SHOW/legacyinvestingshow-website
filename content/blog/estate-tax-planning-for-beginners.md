@@ -35,7 +35,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/estate-tax-planning-for-beginners.jpg
 imageAlt: >-
   Estate Tax Planning for Beginners: Complete 2026 Guide to Protecting Family
   Wealth guide

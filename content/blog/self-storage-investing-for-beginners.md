@@ -34,7 +34,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/self-storage-investing-for-beginners.jpg
 imageAlt: >-
   Self Storage Investing for Beginners: Complete 2026 Guide to Cash Flow, Risk,
   and Smart Deal Selection guide

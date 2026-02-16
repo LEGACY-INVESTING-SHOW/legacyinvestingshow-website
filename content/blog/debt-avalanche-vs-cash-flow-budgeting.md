@@ -32,7 +32,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/debt-avalanche-vs-cash-flow-budgeting.jpg
 imageAlt: >-
   Debt Avalanche vs Cash Flow Budgeting: Which Strategy Works Better in 2026?
   guide

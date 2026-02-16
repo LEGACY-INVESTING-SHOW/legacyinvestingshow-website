@@ -35,7 +35,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/estate-tax-planning-checklist.jpg
 imageAlt: >-
   Estate Tax Planning Checklist: Practical Guide + Examples for Families and
   Business Owners guide

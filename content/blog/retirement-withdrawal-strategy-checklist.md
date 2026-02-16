@@ -36,7 +36,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/retirement-withdrawal-strategy-checklist.jpg
 imageAlt: >-
   Retirement Withdrawal Strategy Checklist: Practical Guide, Scenario Table, and
   Tax-Aware Examples guide

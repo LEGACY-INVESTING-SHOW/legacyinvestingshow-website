@@ -28,7 +28,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/royalty-income-guide.jpg
 imageAlt: 'Royalty Income Guide: Earn from Intellectual Property guide'
 imageWidth: 1200
 imageHeight: 630

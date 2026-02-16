@@ -28,7 +28,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/debt-consolidation-guide.jpg
 imageAlt: 'Debt Consolidation Guide: Simplify Your Payments & Save guide'
 imageWidth: 1200
 imageHeight: 630

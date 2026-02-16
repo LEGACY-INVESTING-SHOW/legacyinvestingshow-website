@@ -36,7 +36,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-to-update-operating-agreement-llc.jpg
 imageAlt: >-
   how to update operating agreement llc: Complete 2026 Guide for Owners and
   Managers guide

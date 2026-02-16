@@ -28,7 +28,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/i-bonds-guide.jpg
 imageAlt: 'I Bonds Complete Guide: Inflation-Protected Savings guide'
 imageWidth: 1200
 imageHeight: 630

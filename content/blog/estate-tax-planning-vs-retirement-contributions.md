@@ -37,7 +37,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/estate-tax-planning-vs-retirement-contributions.jpg
 imageAlt: >-
   Estate Tax Planning vs Retirement Contributions: Which Strategy Works Better
   in 2026? guide

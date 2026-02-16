@@ -32,7 +32,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/student-loan-payoff-for-new-graduates.jpg
 imageAlt: 'Student Loan Payoff for New Graduates: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630

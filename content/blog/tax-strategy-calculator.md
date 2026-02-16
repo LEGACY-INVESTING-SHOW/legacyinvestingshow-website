@@ -32,7 +32,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-strategy-calculator.jpg
 imageAlt: >-
   Tax Strategy Calculator: Practical Guide + Examples for Smarter 2026 Decisions
   guide

@@ -32,7 +32,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-tax-deductions-2025.jpg
 imageAlt: 'Best Tax Deductions 2025: Complete 2026 Guide to Lower Your Tax Bill guide'
 imageWidth: 1200
 imageHeight: 630

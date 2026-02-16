@@ -36,7 +36,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/rental-property-investing-for-operators.jpg
 imageAlt: >-
   Rental Property Investing for Operators: Complete 2026 Guide to Cash Flow,
   Risk, and Tax-Aware Scaling guide

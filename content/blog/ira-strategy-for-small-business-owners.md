@@ -36,7 +36,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/ira-strategy-for-small-business-owners.jpg
 imageAlt: >-
   IRA Strategy for Small Business Owners: Complete 2026 Guide to Taxes,
   Contributions, and Retirement Growth guide

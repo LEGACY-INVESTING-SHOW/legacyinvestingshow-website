@@ -28,7 +28,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/growth-investing-strategy.jpg
 imageAlt: 'Growth Investing Strategy: Invest in Tomorrow''s Winners guide'
 imageWidth: 1200
 imageHeight: 630

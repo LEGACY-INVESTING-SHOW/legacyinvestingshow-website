@@ -36,7 +36,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-pricing-strategy-for-full-time-employees.jpg
 imageAlt: >-
   Airbnb Pricing Strategy for Full Time Employees: Complete 2026 Guide for
   Occupancy, Cash Flow, and Tax-Aware Hosting guide

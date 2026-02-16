@@ -28,7 +28,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/llc-vs-s-corp.jpg
 imageAlt: 'LLC vs S-Corp: Which Business Structure Saves More Taxes? guide'
 imageWidth: 1200
 imageHeight: 630

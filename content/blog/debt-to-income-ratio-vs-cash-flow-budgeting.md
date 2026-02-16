@@ -35,7 +35,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/debt-to-income-ratio-vs-cash-flow-budgeting.jpg
 imageAlt: >-
   Debt To Income Ratio vs Cash Flow Budgeting: Which Strategy Works Better in
   2026? guide

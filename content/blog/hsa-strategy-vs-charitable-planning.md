@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/hsa-strategy-vs-charitable-planning.jpg
 imageAlt: >-
   HSA Strategy vs Charitable Planning: Which Strategy Works Better in 2026?
   guide

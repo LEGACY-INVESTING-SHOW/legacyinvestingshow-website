@@ -36,7 +36,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/social-security-claiming-strategies-for-married-couples-calculator.jpg
 imageAlt: >-
   Social Security Claiming Strategies for Married Couples Calculator: Practical
   Guide + Examples guide

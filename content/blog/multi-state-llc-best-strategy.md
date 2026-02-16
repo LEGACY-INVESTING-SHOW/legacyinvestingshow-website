@@ -35,7 +35,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/multi-state-llc-best-strategy.jpg
 imageAlt: >-
   Multi State LLC Best Strategy: Complete 2026 Guide for Tax, Risk, and
   Compliance Decisions guide

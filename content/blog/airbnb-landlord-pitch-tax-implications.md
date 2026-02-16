@@ -36,7 +36,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-landlord-pitch-tax-implications.jpg
 imageAlt: >-
   Airbnb Landlord Pitch Tax Implications: Complete 2026 Decision Guide for US
   Operators guide

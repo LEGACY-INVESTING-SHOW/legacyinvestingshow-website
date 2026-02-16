@@ -32,7 +32,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/asset-allocation-for-dummies.jpg
 imageAlt: 'Asset Allocation for Dummies: Complete 2026 Guide for US Investors guide'
 imageWidth: 1200
 imageHeight: 630

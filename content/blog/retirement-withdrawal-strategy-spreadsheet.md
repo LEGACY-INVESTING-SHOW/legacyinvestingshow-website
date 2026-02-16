@@ -36,7 +36,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/retirement-withdrawal-strategy-spreadsheet.jpg
 imageAlt: >-
   Retirement Withdrawal Strategy Spreadsheet: Complete 2026 Guide to Sustainable
   Income guide

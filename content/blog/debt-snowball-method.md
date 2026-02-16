@@ -28,7 +28,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/debt-snowball-method.jpg
 imageAlt: 'Debt Snowball Method: Build Momentum Paying Off Debt guide'
 imageWidth: 1200
 imageHeight: 630

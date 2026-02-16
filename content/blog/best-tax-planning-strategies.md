@@ -36,7 +36,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-tax-planning-strategies.jpg
 imageAlt: >-
   Best Tax Planning Strategies: Complete 2026 Guide for US Households and
   Business Owners guide

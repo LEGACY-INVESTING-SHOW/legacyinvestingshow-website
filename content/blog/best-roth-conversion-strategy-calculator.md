@@ -36,7 +36,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-roth-conversion-strategy-calculator.jpg
 imageAlt: >-
   Best Roth Conversion Strategy Calculator: Practical Guide, Break-Even Math,
   and Real Tax Examples guide

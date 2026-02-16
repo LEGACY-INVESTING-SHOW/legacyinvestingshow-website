@@ -35,7 +35,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/series-llc-for-small-business-owners.jpg
 imageAlt: >-
   Series LLC for Small Business Owners: Complete 2026 Guide to Risk, Taxes, and
   Implementation guide

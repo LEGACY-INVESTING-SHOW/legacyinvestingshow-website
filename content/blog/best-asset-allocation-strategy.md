@@ -33,7 +33,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-asset-allocation-strategy.jpg
 imageAlt: 'Best Asset Allocation Strategy: Complete 2026 Guide for US Investors guide'
 imageWidth: 1200
 imageHeight: 630

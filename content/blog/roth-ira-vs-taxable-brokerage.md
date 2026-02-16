@@ -32,7 +32,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/roth-ira-vs-taxable-brokerage.jpg
 imageAlt: 'Roth IRA vs Taxable Brokerage: Which Strategy Works Better in 2026? guide'
 imageWidth: 1200
 imageHeight: 630

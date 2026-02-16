@@ -28,7 +28,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/operating-agreement-guide.jpg
 imageAlt: 'LLC Operating Agreement: Complete Guide with Templates guide'
 imageWidth: 1200
 imageHeight: 630

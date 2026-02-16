@@ -36,7 +36,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/student-loan-payoff-vs-cash-flow-budgeting.jpg
 imageAlt: >-
   Student Loan Payoff vs Cash Flow Budgeting: Which Strategy Works Better in
   2026? guide

@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/s-corp-election-for-beginners.jpg
 imageAlt: >-
   S Corp Election for Beginners: Complete 2026 Guide to Taxes, Salary, and
   Compliance guide

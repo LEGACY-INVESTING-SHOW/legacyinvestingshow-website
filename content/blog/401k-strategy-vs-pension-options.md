@@ -33,7 +33,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/401k-strategy-vs-pension-options.jpg
 imageAlt: '401k strategy vs pension options: Which Strategy Works Better in 2026? guide'
 imageWidth: 1200
 imageHeight: 630

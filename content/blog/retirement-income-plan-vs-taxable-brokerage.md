@@ -36,7 +36,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/retirement-income-plan-vs-taxable-brokerage.jpg
 imageAlt: >-
   Retirement Income Plan vs Taxable Brokerage: Which Strategy Works Better in
   2026? guide

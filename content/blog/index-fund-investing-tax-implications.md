@@ -33,7 +33,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/index-fund-investing-tax-implications.jpg
 imageAlt: >-
   Index Fund Investing Tax Implications: Complete 2026 Guide for US Investors
   guide

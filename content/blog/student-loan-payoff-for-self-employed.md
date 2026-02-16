@@ -34,7 +34,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/student-loan-payoff-for-self-employed.jpg
 imageAlt: >-
   Student Loan Payoff for Self Employed: Complete 2026 Guide to Reduce Interest
   and Protect Cash Flow guide

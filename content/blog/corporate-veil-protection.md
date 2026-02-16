@@ -28,7 +28,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/corporate-veil-protection.jpg
 imageAlt: 'Corporate Veil Protection: How to Keep Your Personal Assets Safe guide'
 imageWidth: 1200
 imageHeight: 630

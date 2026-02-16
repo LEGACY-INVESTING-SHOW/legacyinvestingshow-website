@@ -33,7 +33,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/multi-state-llc-for-real-estate-operators.jpg
 imageAlt: 'Multi State LLC for Real Estate Operators: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630

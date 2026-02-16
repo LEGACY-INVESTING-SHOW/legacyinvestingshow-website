@@ -34,7 +34,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-loss-harvesting-best-strategy.jpg
 imageAlt: >-
   Tax Loss Harvesting Best Strategy: Complete 2026 Guide for Lower Taxes and
   Better Portfolio Decisions guide

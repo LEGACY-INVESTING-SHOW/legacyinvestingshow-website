@@ -33,7 +33,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/multi-state-llc-for-agency-owners.jpg
 imageAlt: >-
   multi state llc for agency owners: Complete 2026 Guide to Compliance, Taxes,
   and Profit guide

@@ -35,7 +35,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/retirement-withdrawal-strategy-template.jpg
 imageAlt: >-
   Retirement Withdrawal Strategy Template: Practical Guide, Tax Sequencing, and
   Worked Examples guide

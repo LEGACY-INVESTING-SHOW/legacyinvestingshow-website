@@ -36,7 +36,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/capital-gains-tax-for-real-estate-investors.jpg
 imageAlt: >-
   Capital Gains Tax for Real Estate Investors: Complete 2026 Guide to Reducing,
   Deferring, and Planning Your Exit guide

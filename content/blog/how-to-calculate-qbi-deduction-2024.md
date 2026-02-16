@@ -35,7 +35,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-to-calculate-qbi-deduction-2024.jpg
 imageAlt: >-
   How to Calculate QBI Deduction 2024: Complete 2026 Guide for Pass-Through
   Owners guide

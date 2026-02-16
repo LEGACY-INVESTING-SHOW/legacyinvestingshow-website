@@ -33,7 +33,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/registered-agent-vs-professional-llc.jpg
 imageAlt: >-
   Registered Agent vs Professional LLC: Which Strategy Works Better in 2026?
   guide

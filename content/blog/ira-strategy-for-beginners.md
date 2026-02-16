@@ -36,7 +36,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/ira-strategy-for-beginners.jpg
 imageAlt: >-
   ira strategy for beginners: Complete 2026 Guide to Build Your First Tax-Smart
   Retirement Plan guide

@@ -34,7 +34,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/debt-consolidation-for-bad-credit.jpg
 imageAlt: >-
   Debt Consolidation for Bad Credit: Complete 2026 Guide to Lower Payments and
   Rebuild Momentum guide

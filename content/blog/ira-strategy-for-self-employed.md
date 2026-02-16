@@ -35,7 +35,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/ira-strategy-for-self-employed.jpg
 imageAlt: >-
   Ira Strategy For Self Employed: Complete 2026 Guide to Smarter Retirement Plan
   Decisions guide

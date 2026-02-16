@@ -33,7 +33,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/operating-agreement-llc-template.jpg
 imageAlt: >-
   Operating Agreement LLC Template: Practical Guide + Examples for US Owners
   guide

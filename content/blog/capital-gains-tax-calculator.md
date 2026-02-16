@@ -35,7 +35,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/capital-gains-tax-calculator.jpg
 imageAlt: >-
   Capital Gains Tax Calculator: Practical Guide + Real-World Examples for Better
   Sell Decisions guide

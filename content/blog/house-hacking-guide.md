@@ -28,7 +28,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/house-hacking-guide.jpg
 imageAlt: 'House Hacking Guide: Live for Free While Building Wealth guide'
 imageWidth: 1200
 imageHeight: 630

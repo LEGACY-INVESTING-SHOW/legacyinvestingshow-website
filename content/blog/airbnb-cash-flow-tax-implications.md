@@ -34,7 +34,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-cash-flow-tax-implications.jpg
 imageAlt: >-
   Airbnb Cash Flow Tax Implications: Complete 2026 Guide for Hosts and Investors
   guide

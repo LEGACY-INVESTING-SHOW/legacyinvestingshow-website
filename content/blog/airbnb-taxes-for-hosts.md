@@ -35,7 +35,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-taxes-for-hosts.jpg
 imageAlt: >-
   Airbnb Taxes for Hosts: Complete 2026 Guide to Deductions, Compliance, and
   Profit Planning guide

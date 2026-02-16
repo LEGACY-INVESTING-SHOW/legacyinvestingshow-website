@@ -33,7 +33,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/house-hacking-tax-implications.jpg
 imageAlt: 'House Hacking Tax Implications: Complete 2026 Guide for US Homeowners guide'
 imageWidth: 1200
 imageHeight: 630

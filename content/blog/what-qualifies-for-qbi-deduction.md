@@ -33,7 +33,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/what-qualifies-for-qbi-deduction.jpg
 imageAlt: >-
   What Qualifies for QBI Deduction: Complete 2026 Guide for Pass-Through Owners
   guide
