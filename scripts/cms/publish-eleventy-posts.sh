@@ -24,6 +24,10 @@ published=0
 while IFS= read -r -d '' src_file; do
   slug="$(basename "$(dirname "$src_file")")"
   dst_file="$ROOT_BLOG_DIR/$slug.html"
+  if [[ ! -f "$src_file" ]]; then
+    echo "Warning: source file not found, skipping: $src_file" >&2
+    continue
+  fi
   cp "$src_file" "$dst_file"
 
   # Local file opens (file://) cannot resolve absolute /assets/... paths.

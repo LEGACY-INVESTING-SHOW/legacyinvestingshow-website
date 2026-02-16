@@ -497,7 +497,7 @@ function runCodex(prompt, options) {
   const args = [
     'exec',
     '-c',
-    'mcp_servers.exa.enabled=false',
+    'mcp_servers={}',
     '-c',
     'model_reasoning_effort="high"',
     '-C',
