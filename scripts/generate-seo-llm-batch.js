@@ -464,13 +464,17 @@ function buildPrompt(row, context, targetWords, researchSources) {
     'Hard requirements:',
     `- Primary keyword: "${primaryKeyword}" must appear naturally in title, intro, and at least one H2.`,
     `- Minimum body length: ${targetWords} words (excluding frontmatter/JSON).`,
-    '- Include at least 10 H2/H3 sections with substantial content.',
+    '- Include at least 8 H2/H3 sections with substantial content.',
     '- Include at least one scenario table and one step-by-step implementation plan.',
     '- Include at least one fully worked numeric example with explicit assumptions and tradeoffs.',
     '- Include at least one 30-day checklist and one mistakes section.',
     '- Include a section: \"How This Compares To Alternatives\" with explicit pros/cons.',
     '- Include a section: \"When Not To Use This Strategy\".',
     '- Include a section: \"Questions To Ask Your CPA/Advisor\".',
+    '- Header examples (use these or very close variants):',
+    '  - ## How This Compares to Alternatives',
+    '  - ## When Not to Use This Strategy',
+    '  - ## Questions to Ask Your CPA/Advisor',
     '- Include at least 3 markdown internal links using ONLY the allowed URLs below.',
     '- Use the research context for concrete details and mention source organizations naturally in the article where useful.',
     '- Keep claims practical and educational. Avoid legal/tax certainty language.',
@@ -529,7 +533,59 @@ function runCodex(prompt, options) {
           { question: 'What should I track?', answer: 'Track outcome, risk, and execution metrics.' },
           { question: 'Can beginners apply this?', answer: 'Yes, with a simplified plan first.' }
         ],
-        body_markdown: '# Dry Run\n\n' + Array.from({ length: 300 }, (_, i) => `Paragraph ${i + 1} for dry run output.`).join('\n\n')
+        body_markdown: [
+          '# Dry Run',
+          '',
+          '## Overview',
+          'This dry-run article validates structure, formatting, and publishing flow with practical content blocks.',
+          '',
+          '## Decision Framework',
+          'Use goals, timeline, cash flow constraints, and risk tolerance to decide if the strategy is a fit.',
+          '',
+          '## Scenario Comparison Table',
+          '| Scenario | Starting Capital | Time Commitment | Risk Level |',
+          '| --- | --- | --- | --- |',
+          '| Conservative | $5,000 | 3 hours/week | Low |',
+          '| Balanced | $15,000 | 6 hours/week | Medium |',
+          '| Aggressive | $30,000 | 10 hours/week | Higher |',
+          '',
+          '## Step-by-Step Implementation Plan',
+          '1. Define baseline metrics and constraints.',
+          '2. Select one strategy variant and test for 30 days.',
+          '3. Review outcomes weekly and adjust assumptions.',
+          '',
+          '## Worked Numeric Example',
+          'Assume $10,000 is deployed with an expected monthly return band of 1.0% to 2.0% before taxes and fees.',
+          '',
+          '## 30-Day Checklist',
+          '- Week 1: Setup accounts, tracking sheets, and guardrails.',
+          '- Week 2: Execute first cycle and record results.',
+          '- Week 3: Compare actuals vs assumptions.',
+          '- Week 4: Make one targeted improvement.',
+          '',
+          '## Common Mistakes',
+          '- Taking oversized positions too early.',
+          '- Ignoring downside scenarios.',
+          '- Skipping monthly reviews.',
+          '',
+          '## How This Compares to Alternatives',
+          'Compared with passive alternatives, this approach can offer more control but requires higher effort and tighter process discipline.',
+          '',
+          '## When Not to Use This Strategy',
+          'Avoid this strategy when liquidity is unstable, risk controls are undefined, or you cannot maintain a regular review cadence.',
+          '',
+          '## Questions to Ask Your CPA/Advisor',
+          '- What tax treatment applies to these outcomes?',
+          '- Which records should be retained for compliance?',
+          '- Are there entity or election considerations before scaling?',
+          '',
+          '## Continue Reading',
+          '- [Related guide](/blog)',
+          '- [Related guide](/programs)',
+          '- [Related guide](/topics/investing)',
+          '',
+          Array.from({ length: 260 }, (_, i) => `Additional dry-run paragraph ${i + 1} for word-count validation.`).join('\n\n')
+        ].join('\n')
       })
     };
   }
@@ -662,13 +718,39 @@ function validateBodyQuality(body, minWords) {
   const h2 = (body.match(/^##\s+/gm) || []).length;
   const h3 = (body.match(/^###\s+/gm) || []).length;
   const hasTable = /^\|.*\|$/m.test(body) && /^\|\s*---/m.test(body);
+  const headings = (String(body || '').match(/^#{2,3}\s+.+$/gmi) || [])
+    .map((line) =>
+      line
+        .replace(/^#{2,3}\s+/, '')
+        .toLowerCase()
+        .replace(/[^a-z0-9\s]/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim()
+    );
+
+  const hasComparisonSection = headings.some(
+    (heading) =>
+      heading.includes('compare') &&
+      (heading.includes('alternative') || heading.includes('option') || heading.includes('versus') || heading.includes('vs'))
+  );
+  const hasWhenNotSection = headings.some(
+    (heading) =>
+      heading.includes('when not to use') ||
+      heading.includes('not to use') ||
+      (heading.includes('avoid') && heading.includes('strategy'))
+  );
+  const hasAdvisorQuestionsSection = headings.some(
+    (heading) =>
+      heading.includes('questions to ask') &&
+      (heading.includes('cpa') || heading.includes('advisor') || heading.includes('accountant') || heading.includes('tax pro'))
+  );
 
   if (words < minWords) issues.push(`word_count_below_min:${words}`);
-  if (h2 + h3 < 10) issues.push(`insufficient_headings:${h2 + h3}`);
+  if (h2 + h3 < 8) issues.push(`insufficient_headings:${h2 + h3}`);
   if (!hasTable) issues.push('missing_table');
-  if (!/^##\s+How This Compares To Alternatives/m.test(body)) issues.push('missing_comparison_section');
-  if (!/^##\s+When Not To Use This Strategy/m.test(body)) issues.push('missing_when_not_section');
-  if (!/^##\s+Questions To Ask Your CPA\/Advisor/m.test(body)) issues.push('missing_advisor_questions');
+  if (!hasComparisonSection) issues.push('missing_comparison_section');
+  if (!hasWhenNotSection) issues.push('missing_when_not_section');
+  if (!hasAdvisorQuestionsSection) issues.push('missing_advisor_questions');
 
   return { words, issues };
 }
