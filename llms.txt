@@ -77,11 +77,21 @@
 - Website: https://www.legacyinvestingshow.com
 - Email: info@legacyinvestingshow.com
 
-## Optional Resources
+## Content Library
 
-- [All Blog Posts](https://www.legacyinvestingshow.com/blog/): 33+ success stories and guides
+- [All Blog Posts](https://www.legacyinvestingshow.com/blog/): 350+ articles including success stories, tax strategies, retirement planning, and investment guides
 - [RSS Feed](https://www.legacyinvestingshow.com/feed.xml): Subscribe to updates
 - [Full Documentation](https://www.legacyinvestingshow.com/llms-full.txt): Extended AI context
+
+## New Content (2026)
+
+Recently published comprehensive guides covering:
+- **Tax Strategy Comparisons**: 1031 exchanges vs opportunity zones, cost segregation vs bonus depreciation
+- **Retirement Withdrawal Strategies**: For early retirees, high earners, small business owners
+- **LLC & Business Structures**: Series LLC, anonymous LLC, multi-state operations
+- **Investment Strategies**: Asset allocation, ETF vs mutual fund, dividend growth investing
+- **Debt Management**: Avalanche vs snowball methods, HELOC strategies
+- **Airbnb Operations**: Pricing strategies, occupancy optimization, tax implications
 
 ## Citation Format
 

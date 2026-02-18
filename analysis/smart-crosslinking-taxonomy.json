@@ -1,0 +1,1407 @@
+{
+  "generatedAt": "2026-02-18T15:17:25.573Z",
+  "taxStrategyCount": 38,
+  "blogPostCount": 543,
+  "sampledBlogCount": 50,
+  "themeSummary": [
+    {
+      "theme": "airbnb-short-term-rentals",
+      "keywords": [
+        "airbnb",
+        "short-term rental",
+        "str",
+        "vacation rental",
+        "vrbo",
+        "booking",
+        "dynamic pricing",
+        "occupancy"
+      ],
+      "taxStrategies": [
+        "short-term-rental-loophole",
+        "cost-segregation",
+        "bonus-depreciation",
+        "real-estate-professional-status"
+      ]
+    },
+    {
+      "theme": "real-estate-investing",
+      "keywords": [
+        "real estate",
+        "rental property",
+        "multifamily",
+        "syndication",
+        "landlord",
+        "property",
+        "depreciation",
+        "cash flow"
+      ],
+      "taxStrategies": [
+        "1031-exchange",
+        "cost-segregation",
+        "bonus-depreciation",
+        "rental-property-depreciation",
+        "real-estate-professional-status"
+      ]
+    },
+    {
+      "theme": "business-entities",
+      "keywords": [
+        "llc",
+        "s-corp",
+        "s corp",
+        "sole proprietor",
+        "entity",
+        "incorporation",
+        "payroll",
+        "business owner"
+      ],
+      "taxStrategies": [
+        "s-corp-strategy",
+        "qualified-business-income-deduction",
+        "business-vehicle-deduction",
+        "home-office-deduction"
+      ]
+    },
+    {
+      "theme": "retirement-planning",
+      "keywords": [
+        "retirement",
+        "401k",
+        "ira",
+        "roth",
+        "rollover",
+        "pre-retire",
+        "early retire",
+        "nest egg",
+        "pension"
+      ],
+      "taxStrategies": [
+        "backdoor-roth-ira",
+        "mega-backdoor-roth",
+        "solo-401k",
+        "self-directed-ira",
+        "roth-conversion-ladder",
+        "net-unrealized-appreciation"
+      ]
+    },
+    {
+      "theme": "healthcare-benefits",
+      "keywords": [
+        "hsa",
+        "health savings account",
+        "healthcare",
+        "medical expense",
+        "fsa",
+        "dependent care"
+      ],
+      "taxStrategies": [
+        "hsa-strategy",
+        "health-savings-account-strategy",
+        "dependent-care-fsa"
+      ]
+    },
+    {
+      "theme": "capital-gains-investments",
+      "keywords": [
+        "capital gains",
+        "stock sale",
+        "exit",
+        "liquidity event",
+        "tax gain",
+        "tax loss",
+        "harvesting"
+      ],
+      "taxStrategies": [
+        "capital-gains-exclusion",
+        "tax-gain-harvesting",
+        "tax-loss-harvesting",
+        "installment-sale",
+        "qualified-small-business-stock"
+      ]
+    },
+    {
+      "theme": "charitable-estate-planning",
+      "keywords": [
+        "charitable",
+        "donation",
+        "donor advised",
+        "trust",
+        "estate",
+        "legacy planning",
+        "philanthropy"
+      ],
+      "taxStrategies": [
+        "donor-advised-fund",
+        "charitable-remainder-trust",
+        "bunching-deductions"
+      ]
+    },
+    {
+      "theme": "state-local-tax",
+      "keywords": [
+        "state tax",
+        "residency",
+        "salt",
+        "pass-through entity tax",
+        "state filing",
+        "move states"
+      ],
+      "taxStrategies": [
+        "state-tax-residency",
+        "pass-through-entity-tax"
+      ]
+    },
+    {
+      "theme": "opportunity-zones-1031",
+      "keywords": [
+        "opportunity zone",
+        "oz fund",
+        "1031",
+        "like-kind exchange",
+        "defer gains"
+      ],
+      "taxStrategies": [
+        "1031-exchange",
+        "opportunity-zones",
+        "qualified-opportunity-zone-fund",
+        "1031-exchange-vs-opportunity-zones"
+      ]
+    }
+  ],
+  "taxStrategies": [
+    {
+      "slug": "1031-exchange-vs-opportunity-zones",
+      "title": "1031 Exchange vs Opportunity Zones",
+      "keywords": [
+        "1031",
+        "exchange",
+        "opportunity",
+        "zones",
+        "compare",
+        "exchanges",
+        "side-by-side",
+        "learn",
+        "tax",
+        "deferral",
+        "saves",
+        "money",
+        "offers",
+        "better",
+        "flexibility",
+        "fits",
+        "investment",
+        "goals",
+        "vs",
+        "rental"
+      ]
+    },
+    {
+      "slug": "1031-exchange",
+      "title": "1031 Exchange",
+      "keywords": [
+        "1031",
+        "exchange",
+        "defer",
+        "100",
+        "capital",
+        "gains",
+        "taxes",
+        "learn",
+        "swap",
+        "investment",
+        "properties",
+        "tax-free",
+        "compound",
+        "wealth",
+        "faster",
+        "get",
+        "step-by-step",
+        "process",
+        "inside",
+        "airbnb"
+      ]
+    },
+    {
+      "slug": "augusta-rule",
+      "title": "Augusta Rule (Section 280A)",
+      "keywords": [
+        "augusta",
+        "rule",
+        "section",
+        "280a",
+        "rent",
+        "home",
+        "business",
+        "tax-free",
+        "days",
+        "learn",
+        "works",
+        "who",
+        "qualifies",
+        "potential",
+        "savings",
+        "step-by-step",
+        "implementation",
+        "airbnb",
+        "rental",
+        "depreciation"
+      ]
+    },
+    {
+      "slug": "backdoor-roth-ira",
+      "title": "Backdoor Roth IRA",
+      "keywords": [
+        "backdoor",
+        "roth",
+        "ira",
+        "complete",
+        "high",
+        "earners",
+        "learn",
+        "legally",
+        "contribute",
+        "regardless",
+        "income",
+        "limits",
+        "avoid",
+        "pro-rata",
+        "tax",
+        "complications",
+        "build",
+        "tax-free",
+        "retirement",
+        "wealth"
+      ]
+    },
+    {
+      "slug": "bonus-depreciation",
+      "title": "Bonus Depreciation",
+      "keywords": [
+        "bonus",
+        "depreciation",
+        "claim",
+        "immediate",
+        "tax",
+        "deductions",
+        "learn",
+        "write",
+        "off",
+        "property",
+        "improvements",
+        "year",
+        "one",
+        "save",
+        "thousands",
+        "taxes",
+        "airbnb",
+        "rental",
+        "retirement",
+        "business"
+      ]
+    },
+    {
+      "slug": "bunching-deductions",
+      "title": "Bunching Deductions",
+      "keywords": [
+        "bunching",
+        "deductions",
+        "master",
+        "maximize",
+        "itemized",
+        "exceed",
+        "standard",
+        "deduction",
+        "learn",
+        "implementation",
+        "real",
+        "numbers",
+        "expert",
+        "techniques",
+        "airbnb",
+        "depreciation",
+        "retirement",
+        "business",
+        "charitable",
+        "estate"
+      ]
+    },
+    {
+      "slug": "business-vehicle-deduction",
+      "title": "Business Vehicle Deduction",
+      "keywords": [
+        "business",
+        "vehicle",
+        "deduction",
+        "master",
+        "deductions",
+        "section",
+        "179",
+        "expensing",
+        "actual",
+        "expense",
+        "method",
+        "learn",
+        "saves",
+        "irs",
+        "requirements",
+        "documentation",
+        "rules",
+        "real-world",
+        "examples",
+        "airbnb"
+      ]
+    },
+    {
+      "slug": "capital-gains-exclusion",
+      "title": "Primary Residence Capital Gains Exclusion: The $500K Tax Break",
+      "keywords": [
+        "primary",
+        "residence",
+        "capital",
+        "gains",
+        "exclusion",
+        "500k",
+        "tax",
+        "break",
+        "master",
+        "home",
+        "sales",
+        "irc",
+        "section",
+        "121",
+        "learn",
+        "who",
+        "qualifies",
+        "claim",
+        "tax-free",
+        "common"
+      ]
+    },
+    {
+      "slug": "captive-insurance",
+      "title": "Captive Insurance Strategy",
+      "keywords": [
+        "captive",
+        "insurance",
+        "master",
+        "deductions",
+        "reduce",
+        "taxable",
+        "income",
+        "30-50",
+        "learn",
+        "works",
+        "who",
+        "benefits",
+        "implementation",
+        "steps",
+        "maximize",
+        "business",
+        "tax",
+        "advantages",
+        "irs-compliant",
+        "high-income"
+      ]
+    },
+    {
+      "slug": "charitable-remainder-trust",
+      "title": "Charitable Remainder Trust",
+      "keywords": [
+        "charitable",
+        "remainder",
+        "trust",
+        "learn",
+        "crt",
+        "provides",
+        "income",
+        "life",
+        "while",
+        "supporting",
+        "favorite",
+        "charities",
+        "discover",
+        "tax",
+        "deductions",
+        "planning",
+        "implementation",
+        "steps",
+        "high-net-worth",
+        "donors"
+      ]
+    },
+    {
+      "slug": "cost-segregation",
+      "title": "Cost Segregation",
+      "keywords": [
+        "cost",
+        "segregation",
+        "save",
+        "50k-",
+        "150k",
+        "taxes",
+        "learn",
+        "accelerate",
+        "depreciation",
+        "rental",
+        "properties",
+        "keep",
+        "hard-earned",
+        "money",
+        "get",
+        "complete",
+        "now",
+        "works",
+        "who",
+        "qualifies"
+      ]
+    },
+    {
+      "slug": "dependent-care-fsa",
+      "title": "Dependent Care FSA",
+      "keywords": [
+        "dependent",
+        "care",
+        "fsa",
+        "complete",
+        "save",
+        "000",
+        "annually",
+        "childcare",
+        "costs",
+        "pre-tax",
+        "dollars",
+        "learn",
+        "implementation",
+        "tax",
+        "savings",
+        "calculations",
+        "avoid",
+        "common",
+        "mistakes",
+        "airbnb"
+      ]
+    },
+    {
+      "slug": "donor-advised-fund",
+      "title": "Donor Advised Fund",
+      "keywords": [
+        "donor",
+        "advised",
+        "fund",
+        "maximize",
+        "charitable",
+        "tax",
+        "deductions",
+        "while",
+        "maintaining",
+        "control",
+        "grants",
+        "learn",
+        "funds",
+        "work",
+        "potential",
+        "savings",
+        "implementation",
+        "steps",
+        "expert",
+        "tax-efficient"
+      ]
+    },
+    {
+      "slug": "estimated-tax-payments",
+      "title": "Estimated Tax Payments",
+      "keywords": [
+        "estimated",
+        "tax",
+        "payments",
+        "complete",
+        "learn",
+        "quarterly",
+        "payment",
+        "requirements",
+        "calculation",
+        "methods",
+        "safe",
+        "harbor",
+        "rules",
+        "penalties",
+        "includes",
+        "irs",
+        "deadlines",
+        "step-by-step",
+        "implementation",
+        "self-employed"
+      ]
+    },
+    {
+      "slug": "family-employment-tax-strategy",
+      "title": "Hiring Your Kids: Family Employment Tax Strategy",
+      "keywords": [
+        "hiring",
+        "kids",
+        "family",
+        "employment",
+        "tax",
+        "learn",
+        "legally",
+        "hire",
+        "children",
+        "save",
+        "thousands",
+        "taxes",
+        "complete",
+        "income",
+        "splitting",
+        "legitimate",
+        "deductions",
+        "irc",
+        "section",
+        "152"
+      ]
+    },
+    {
+      "slug": "health-savings-account-strategy",
+      "title": "HSA Tax Strategy Redirect",
+      "keywords": [
+        "hsa",
+        "tax",
+        "redirect",
+        "page",
+        "moved",
+        "redirecting",
+        "triple",
+        "advantage",
+        "health",
+        "savings",
+        "account",
+        "strategy",
+        "retirement",
+        "roth"
+      ]
+    },
+    {
+      "slug": "home-office-deduction",
+      "title": "Home Office Deduction",
+      "keywords": [
+        "home",
+        "office",
+        "deduction",
+        "master",
+        "save",
+        "thousands",
+        "taxes",
+        "learn",
+        "who",
+        "qualifies",
+        "calculation",
+        "methods",
+        "simplified",
+        "regular",
+        "documentation",
+        "requirements",
+        "real-world",
+        "examples",
+        "irs",
+        "code"
+      ]
+    },
+    {
+      "slug": "hsa-strategy",
+      "title": "HSA Triple Tax Advantage",
+      "keywords": [
+        "hsa",
+        "triple",
+        "tax",
+        "advantage",
+        "only",
+        "account",
+        "tax-free",
+        "contributions",
+        "growth",
+        "withdrawals",
+        "learn",
+        "works",
+        "who",
+        "qualifies",
+        "potential",
+        "savings",
+        "step-by-step",
+        "implementation",
+        "strategy",
+        "airbnb"
+      ]
+    },
+    {
+      "slug": "income-shifting-strategies",
+      "title": "Income Shifting Strategies",
+      "keywords": [
+        "income",
+        "shifting",
+        "master",
+        "legally",
+        "reduce",
+        "taxable",
+        "lower",
+        "tax",
+        "bracket",
+        "learn",
+        "irs-approved",
+        "methods",
+        "including",
+        "business",
+        "expense",
+        "retirement",
+        "planning",
+        "deferral",
+        "techniques",
+        "strategies"
+      ]
+    },
+    {
+      "slug": "installment-sale",
+      "title": "Installment Sale",
+      "keywords": [
+        "installment",
+        "sale",
+        "spread",
+        "capital",
+        "gains",
+        "taxes",
+        "multiple",
+        "years",
+        "sales",
+        "learn",
+        "tax",
+        "deferral",
+        "implementation",
+        "steps",
+        "real-world",
+        "examples",
+        "structure",
+        "deals",
+        "correctly",
+        "irc"
+      ]
+    },
+    {
+      "slug": "mega-backdoor-roth",
+      "title": "Mega Backdoor Roth",
+      "keywords": [
+        "mega",
+        "backdoor",
+        "roth",
+        "learn",
+        "ira",
+        "save",
+        "000",
+        "tax-free",
+        "annually",
+        "step-by-step",
+        "implementation",
+        "examples",
+        "common",
+        "mistakes",
+        "expert",
+        "maximizing",
+        "retirement",
+        "savings",
+        "airbnb",
+        "business"
+      ]
+    },
+    {
+      "slug": "net-unrealized-appreciation",
+      "title": "Net Unrealized Appreciation (NUA)",
+      "keywords": [
+        "net",
+        "unrealized",
+        "appreciation",
+        "nua",
+        "learn",
+        "lets",
+        "transfer",
+        "401k",
+        "company",
+        "stock",
+        "deferred",
+        "capital",
+        "gains",
+        "taxes",
+        "understand",
+        "who",
+        "benefits",
+        "step-by-step",
+        "implementation",
+        "tax"
+      ]
+    },
+    {
+      "slug": "opportunity-zones",
+      "title": "Opportunity Zone Investing",
+      "keywords": [
+        "opportunity",
+        "zone",
+        "defer",
+        "reduce",
+        "eliminate",
+        "capital",
+        "gains",
+        "taxes",
+        "zones",
+        "learn",
+        "invest",
+        "designated",
+        "areas",
+        "massive",
+        "tax",
+        "benefits",
+        "start",
+        "building",
+        "tax-free",
+        "wealth"
+      ]
+    },
+    {
+      "slug": "pass-through-entity-tax",
+      "title": "Pass-Through Entity Tax (PTET)",
+      "keywords": [
+        "pass-through",
+        "entity",
+        "tax",
+        "ptet",
+        "master",
+        "reduce",
+        "state",
+        "income",
+        "taxes",
+        "learn",
+        "compliance",
+        "implementation",
+        "steps",
+        "real",
+        "numbers",
+        "expert",
+        "business",
+        "owners",
+        "pass",
+        "through"
+      ]
+    },
+    {
+      "slug": "qualified-business-income-deduction",
+      "title": "Qualified Business Income (QBI) Deduction",
+      "keywords": [
+        "qualified",
+        "business",
+        "income",
+        "qbi",
+        "deduction",
+        "master",
+        "complete",
+        "2026",
+        "learn",
+        "who",
+        "qualifies",
+        "claim",
+        "calculation",
+        "methods",
+        "advanced",
+        "airbnb",
+        "rental",
+        "depreciation",
+        "retirement",
+        "llc"
+      ]
+    },
+    {
+      "slug": "qualified-opportunity-zone-fund",
+      "title": "Qualified Opportunity Zone Funds",
+      "keywords": [
+        "qualified",
+        "opportunity",
+        "zone",
+        "funds",
+        "master",
+        "qoz",
+        "defer",
+        "capital",
+        "gains",
+        "invest",
+        "distressed",
+        "areas",
+        "potentially",
+        "reduce",
+        "tax",
+        "liability",
+        "complete",
+        "calculations",
+        "expert",
+        "insights"
+      ]
+    },
+    {
+      "slug": "qualified-small-business-stock",
+      "title": "Qualified Small Business Stock (QSBS)",
+      "keywords": [
+        "qualified",
+        "small",
+        "business",
+        "stock",
+        "qsbs",
+        "discover",
+        "eliminate",
+        "capital",
+        "gains",
+        "taxes",
+        "investments",
+        "learn",
+        "requirements",
+        "implementation",
+        "tax",
+        "savings",
+        "100",
+        "expert",
+        "optimization",
+        "techniques"
+      ]
+    },
+    {
+      "slug": "real-estate-professional-status",
+      "title": "Real Estate Professional Status (REPS)",
+      "keywords": [
+        "real",
+        "estate",
+        "professional",
+        "status",
+        "reps",
+        "become",
+        "deduct",
+        "unlimited",
+        "rental",
+        "losses",
+        "learn",
+        "750-hour",
+        "rule",
+        "material",
+        "participation",
+        "tests",
+        "tax",
+        "reduce",
+        "taxable",
+        "income"
+      ]
+    },
+    {
+      "slug": "rental-property-depreciation",
+      "title": "Rental Property Depreciation",
+      "keywords": [
+        "rental",
+        "property",
+        "depreciation",
+        "master",
+        "reduce",
+        "taxes",
+        "legally",
+        "learn",
+        "deduct",
+        "building",
+        "improvements",
+        "personal",
+        "costs",
+        "time",
+        "irs",
+        "guidelines",
+        "airbnb",
+        "retirement",
+        "business",
+        "estate"
+      ]
+    },
+    {
+      "slug": "roth-conversion-ladder",
+      "title": "Roth Conversion Ladder",
+      "keywords": [
+        "roth",
+        "conversion",
+        "ladder",
+        "master",
+        "tax-free",
+        "early",
+        "retirement",
+        "learn",
+        "access",
+        "funds",
+        "penalty-free",
+        "before",
+        "minimize",
+        "taxes",
+        "build",
+        "substantial",
+        "income",
+        "streams",
+        "complete",
+        "implementation"
+      ]
+    },
+    {
+      "slug": "s-corp-strategy",
+      "title": "S-Corp Tax Strategy",
+      "keywords": [
+        "s-corp",
+        "tax",
+        "save",
+        "self-employment",
+        "splitting",
+        "income",
+        "salary",
+        "distributions",
+        "learn",
+        "works",
+        "who",
+        "qualifies",
+        "potential",
+        "savings",
+        "step-by-step",
+        "implementation",
+        "s",
+        "corp",
+        "strategy",
+        "airbnb"
+      ]
+    },
+    {
+      "slug": "section-179",
+      "title": "Section 179 Deduction",
+      "keywords": [
+        "section",
+        "179",
+        "deduction",
+        "allows",
+        "immediate",
+        "expensing",
+        "22m",
+        "business",
+        "equipment",
+        "2026",
+        "limits",
+        "complete",
+        "implementation",
+        "steps",
+        "real",
+        "calculations",
+        "tax",
+        "savings",
+        "airbnb",
+        "rental"
+      ]
+    },
+    {
+      "slug": "self-directed-ira",
+      "title": "Self-Directed IRA",
+      "keywords": [
+        "self-directed",
+        "ira",
+        "invest",
+        "retirement",
+        "funds",
+        "real",
+        "estate",
+        "businesses",
+        "alternative",
+        "assets",
+        "learn",
+        "works",
+        "who",
+        "qualifies",
+        "potential",
+        "savings",
+        "step-by-step",
+        "implementation",
+        "self",
+        "directed"
+      ]
+    },
+    {
+      "slug": "short-term-rental-loophole",
+      "title": "Short-Term Rental Loophole",
+      "keywords": [
+        "short-term",
+        "rental",
+        "loophole",
+        "deduct",
+        "unlimited",
+        "losses",
+        "against",
+        "w-2",
+        "income",
+        "learn",
+        "material",
+        "participation",
+        "rules",
+        "start",
+        "reducing",
+        "taxes",
+        "today",
+        "short",
+        "term",
+        "airbnb"
+      ]
+    },
+    {
+      "slug": "solo-401k",
+      "title": "Solo 401(k)",
+      "keywords": [
+        "solo",
+        "401",
+        "complete",
+        "self-employed",
+        "2026",
+        "limits",
+        "000",
+        "implementation",
+        "steps",
+        "tax",
+        "calculations",
+        "expert",
+        "comparison",
+        "sep-ira",
+        "simple",
+        "ira",
+        "401k",
+        "airbnb",
+        "rental",
+        "retirement"
+      ]
+    },
+    {
+      "slug": "state-tax-residency",
+      "title": "State Tax Residency",
+      "keywords": [
+        "state",
+        "tax",
+        "residency",
+        "master",
+        "reduce",
+        "income",
+        "liability",
+        "learn",
+        "domicile",
+        "implementation",
+        "steps",
+        "savings",
+        "potential",
+        "legal",
+        "requirements",
+        "establishing",
+        "low-tax",
+        "states",
+        "airbnb",
+        "retirement"
+      ]
+    },
+    {
+      "slug": "tax-gain-harvesting",
+      "title": "Tax Gain Harvesting",
+      "keywords": [
+        "tax",
+        "gain",
+        "harvesting",
+        "master",
+        "optimize",
+        "investment",
+        "portfolio",
+        "manage",
+        "capital",
+        "gains",
+        "taxes",
+        "learn",
+        "sell",
+        "winners",
+        "calculations",
+        "advanced",
+        "airbnb",
+        "rental",
+        "retirement",
+        "roth"
+      ]
+    },
+    {
+      "slug": "tax-loss-harvesting",
+      "title": "Tax Loss Harvesting",
+      "keywords": [
+        "tax",
+        "loss",
+        "harvesting",
+        "learn",
+        "reduce",
+        "capital",
+        "gains",
+        "taxes",
+        "offsetting",
+        "losses",
+        "against",
+        "complete",
+        "step-by-step",
+        "implementation",
+        "real",
+        "numbers",
+        "expert",
+        "airbnb",
+        "rental",
+        "retirement"
+      ]
+    }
+  ],
+  "sampledBlogTitles": [
+    {
+      "slug": "1031-exchange-vs-itemized-deductions",
+      "title": "1031 Exchange vs Itemized Deductions: Which Strategy Works Better in 2026?",
+      "section": "Tax Strategies"
+    },
+    {
+      "slug": "401k-strategy-for-early-retirees",
+      "title": "401k Strategy for Early Retirees: Complete 2026 Guide to Taxes, Access, and Withdrawal Sequencing",
+      "section": "Retirement"
+    },
+    {
+      "slug": "401k-strategy-vs-bond-ladders",
+      "title": "401k strategy vs bond ladders: Which Strategy Works Better in 2026?",
+      "section": "Retirement"
+    },
+    {
+      "slug": "airbnb-automation-tax-implications",
+      "title": "airbnb automation tax implications: Complete 2026 Guide for Hosts and Arbitrage Operators",
+      "section": "Airbnb Arbitrage"
+    },
+    {
+      "slug": "airbnb-occupancy-strategy-tax-implications",
+      "title": "Airbnb Occupancy Strategy Tax Implications: Complete 2026 Guide for U.S. Hosts and Arbitrage Operators",
+      "section": "Airbnb Arbitrage"
+    },
+    {
+      "slug": "airbnb-startup-cost-tax-deductible",
+      "title": "airbnb startup cost tax deductible: Complete 2026 Guide for US Hosts",
+      "section": "Airbnb Arbitrage"
+    },
+    {
+      "slug": "airbnb-taxes-vs-co-hosting",
+      "title": "Airbnb Taxes vs Co Hosting: Which Strategy Works Better in 2026?",
+      "section": "Airbnb Arbitrage"
+    },
+    {
+      "slug": "asset-allocation-for-busy-professionals",
+      "title": "Asset Allocation for Busy Professionals: Complete 2026 Guide",
+      "section": "Investing"
+    },
+    {
+      "slug": "balance-transfer-strategy",
+      "title": "Balance Transfer Strategy: Use 0% APR to Crush Debt",
+      "section": "Debt Management"
+    },
+    {
+      "slug": "best-registered-agent-for-llc",
+      "title": "Best Registered Agent for LLC: Complete 2026 Guide to Cost, Privacy, and Compliance",
+      "section": "Business Structures"
+    },
+    {
+      "slug": "best-tax-deductions-for-w2-employees",
+      "title": "Best tax deductions for W2 employees: Complete 2026 guide for cash-flow-minded earners",
+      "section": "Tax Strategies"
+    },
+    {
+      "slug": "best-tax-strategy-books",
+      "title": "Best Tax Strategy Books: Complete 2026 Guide for Smarter U.S. Tax Planning",
+      "section": "Tax Strategies"
+    },
+    {
+      "slug": "brrrr-strategy-get-paid-buy-rental-property",
+      "title": "BRRRR Strategy: How We Got PAID $7,500 to Buy a Rental Property (2025 Deal Breakdown)",
+      "section": "Real Estate Investing"
+    },
+    {
+      "slug": "capital-gains-tax-for-consultants",
+      "title": "Capital Gains Tax for Consultants: Complete 2026 Guide to Lowering Your Tax Bill",
+      "section": "Tax Strategies"
+    },
+    {
+      "slug": "catch-up-contributions",
+      "title": "Catch-Up Contributions: Supercharge Retirement Savings After 50",
+      "section": "Retirement"
+    },
+    {
+      "slug": "debt-avalanche-payoff-calculator",
+      "title": "Debt Avalanche Payoff Calculator: Practical Guide + Examples for Faster Interest Savings",
+      "section": "Debt Management"
+    },
+    {
+      "slug": "debt-to-income-ratio-calculator-for-mortgage",
+      "title": "Debt to Income Ratio Calculator for Mortgage: Practical Guide + Real Approval Examples",
+      "section": "Debt Management"
+    },
+    {
+      "slug": "dominate-saturated-market-airbnb",
+      "title": "How Sunny Built a $5,000+/Month Airbnb Business Near Texas Medical Center (2026 Case Study)",
+      "section": "Success Story"
+    },
+    {
+      "slug": "estate-tax-planning-template",
+      "title": "Estate Tax Planning Template: Practical Guide, Numbers, and a 30-Day Action Plan",
+      "section": "Tax Strategies"
+    },
+    {
+      "slug": "gary-marketing-executive-35k-month",
+      "title": "How Gary Built a $35,000/Month Airbnb Business in Austin (2025 Case Study)",
+      "section": "Success Story"
+    },
+    {
+      "slug": "high-school-friends-2508-month-airbnb",
+      "title": "How 2 High School Friends Make $2,508/Month From 1 Airbnb in Salem, Oregon (2026)",
+      "section": "Success Story"
+    },
+    {
+      "slug": "how-does-the-debt-snowball-payoff-work",
+      "title": "How Does the Debt Snowball Payoff Work? Complete 2026 Guide for U.S. Households",
+      "section": "Debt Management"
+    },
+    {
+      "slug": "how-tax-deduction-calculated",
+      "title": "How Tax Deduction Calculated: Complete 2026 Guide for U.S. Filers",
+      "section": "Tax Strategies"
+    },
+    {
+      "slug": "how-to-do-tax-planning-for-individual",
+      "title": "How to Do Tax Planning for Individual Finances: Complete 2026 Guide",
+      "section": "Tax Strategies"
+    },
+    {
+      "slug": "hsa-strategy-for-beginners",
+      "title": "HSA Strategy for Beginners: Complete 2026 Guide to Lower Taxes and Build Long-Term Health Wealth",
+      "section": "Tax Strategies"
+    },
+    {
+      "slug": "hsa-strategy-vs-retirement-contributions",
+      "title": "HSA Strategy vs Retirement Contributions: Which Strategy Works Better in 2026?",
+      "section": "Tax Strategies"
+    },
+    {
+      "slug": "ira-strategy-for-government-employees",
+      "title": "IRA Strategy for Government Employees: Complete 2026 Decision Guide",
+      "section": "Retirement"
+    },
+    {
+      "slug": "is-tax-planning-legal",
+      "title": "Is Tax Planning Legal? Complete 2026 Guide to Lowering Taxes Without Crossing the Line",
+      "section": "Tax Strategies"
+    },
+    {
+      "slug": "llc-vs-s-corp-taxes",
+      "title": "LLC vs S Corp Taxes: Which Strategy Works Better in 2026?",
+      "section": "Business Structures"
+    },
+    {
+      "slug": "multi-state-llc-calculator",
+      "title": "Multi State LLC Calculator: Practical Guide + Examples for Real Decisions",
+      "section": "Business Structures"
+    },
+    {
+      "slug": "multi-state-llc-for-small-business-owners",
+      "title": "Multi State LLC for Small Business Owners: Complete 2026 Guide",
+      "section": "Business Structures"
+    },
+    {
+      "slug": "municipal-bonds",
+      "title": "Municipal Bonds: Tax-Free Income for High Earners",
+      "section": "Investing"
+    },
+    {
+      "slug": "personal-loan-vs-credit-card-tax-implications",
+      "title": "Personal Loan vs Credit Card Tax Implications: Which Strategy Works Better in 2026?",
+      "section": "Debt Management"
+    },
+    {
+      "slug": "qbi-deduction-for-real-estate-investors",
+      "title": "QBI Deduction for Real Estate Investors: Complete 2026 Guide to Section 199A",
+      "section": "Tax Strategies"
+    },
+    {
+      "slug": "reasonable-salary-vs-professional-llc",
+      "title": "Reasonable Salary vs Professional LLC: Which Strategy Works Better in 2026?",
+      "section": "Business Structures"
+    },
+    {
+      "slug": "rental-property-investing-for-new-investors",
+      "title": "Rental Property Investing for New Investors: Complete 2026 Guide to Buying Cash-Flowing Rentals",
+      "section": "Passive Income"
+    },
+    {
+      "slug": "required-minimum-distributions-vs-taxable-brokerage",
+      "title": "required minimum distributions vs taxable brokerage: Which Strategy Works Better in 2026?",
+      "section": "Retirement"
+    },
+    {
+      "slug": "retirement-withdrawal-strategy-2026",
+      "title": "Retirement Withdrawal Strategy 2026: Complete Guide to Tax-Efficient Income, Guardrails, and Portfolio Longevity",
+      "section": "Retirement"
+    },
+    {
+      "slug": "retirement-withdrawal-strategy-for-self-employed",
+      "title": "Retirement Withdrawal Strategy for Self Employed: Complete 2026 Guide",
+      "section": "Retirement"
+    },
+    {
+      "slug": "retirement-withdrawal-strategy-vs-pension-options",
+      "title": "Retirement Withdrawal Strategy vs Pension Options: Which Strategy Works Better in 2026?",
+      "section": "Retirement"
+    },
+    {
+      "slug": "royalty-income-guide",
+      "title": "Royalty Income Guide: Earn from Intellectual Property",
+      "section": "Passive Income"
+    },
+    {
+      "slug": "s-corp-election-for-ecommerce-founders",
+      "title": "S Corp Election for Ecommerce Founders: Complete 2026 Guide to Tax Savings, Payroll, and Compliance",
+      "section": "Business Structures"
+    },
+    {
+      "slug": "s-corp-election-vs-partnership",
+      "title": "s corp election vs partnership: Which Strategy Works Better in 2026?",
+      "section": "Business Structures"
+    },
+    {
+      "slug": "series-llc-for-beginners",
+      "title": "Series LLC for Beginners: Complete 2026 Guide to Liability Segmentation, Tax Planning, and Setup",
+      "section": "Business Structures"
+    },
+    {
+      "slug": "series-llc-vs-c-corp",
+      "title": "Series LLC vs C Corp: Which Strategy Works Better in 2026?",
+      "section": "Business Structures"
+    },
+    {
+      "slug": "single-member-llc-guide",
+      "title": "Single Member LLC Guide: Protection & Tax Benefits",
+      "section": "Business Structures"
+    },
+    {
+      "slug": "student-loan-payoff-calculator-with-extra-payments",
+      "title": "Student Loan Payoff Calculator With Extra Payments: Practical Guide, Scenarios, and a 30-Day Action Plan",
+      "section": "Debt Management"
+    },
+    {
+      "slug": "student-loan-payoff-tax-implications",
+      "title": "Student Loan Payoff Tax Implications: Complete 2026 Guide for Smarter Repayment Decisions",
+      "section": "Debt Management"
+    },
+    {
+      "slug": "tax-deduction-for-physicians",
+      "title": "Tax Deduction for Physicians: Complete 2026 Guide to Strategic Tax Savings",
+      "section": "Tax Strategies"
+    },
+    {
+      "slug": "tax-loss-harvesting-calculator",
+      "title": "Tax Loss Harvesting Calculator: Practical Guide, Decision Frameworks, and Worked Examples",
+      "section": "Investing"
+    }
+  ]
+}
