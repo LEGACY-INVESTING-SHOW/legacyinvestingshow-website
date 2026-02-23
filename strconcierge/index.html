@@ -134,20 +134,22 @@
 
     .inclusions {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0,1fr));
-      gap: 16px;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      max-width: 860px;
+      margin: 0 auto;
     }
 
     .inclusion {
       border: 1px solid var(--line);
       border-radius: 12px;
-      padding: 18px;
+      padding: 20px 22px;
       background: rgba(255,255,255,.03);
     }
 
-    .inclusion h4 { font-size: 22px; font-family: 'Cormorant Garamond', serif; margin-bottom: 10px; }
-    .inclusion ul { list-style: none; display: grid; gap: 8px; }
-    .inclusion li { color: var(--ink-muted); font-size: 14px; padding-left: 18px; position: relative; }
+    .inclusion h4 { font-size: 28px; font-family: 'Cormorant Garamond', serif; margin-bottom: 10px; }
+    .inclusion ul { list-style: none; display: grid; gap: 10px; }
+    .inclusion li { color: var(--ink-muted); font-size: 17px; line-height: 1.45; padding-left: 18px; position: relative; }
     .inclusion li::before { content: "✓"; color: var(--good); position: absolute; left: 0; }
 
     .fit-columns {
@@ -268,34 +270,34 @@
     <div class="wrap">
       <article class="offer">
         <h3>What You Get Inside <span>STR Concierge</span></h3>
-        <p>Here is exactly what we handle for you inside the program.</p>
+        <p>Simple and direct. This is exactly what we do for you.</p>
 
         <div class="inclusions">
           <div class="inclusion">
-            <h4>Dedicated Advisor</h4>
+            <h4>1) Deal Strategy and Deal Selection</h4>
             <ul>
-              <li>A lead advisor assigned to your deal from day one</li>
-              <li>Direct feedback on every buy-box decision</li>
-              <li>Unlimited strategic reviews during active acquisition</li>
-              <li>Weekly accountability and next-step planning</li>
+              <li>You get a dedicated advisor from day one.</li>
+              <li>We define your buy box with you.</li>
+              <li>We review each deal and tell you pass or pursue.</li>
+              <li>You always know your next step.</li>
             </ul>
           </div>
           <div class="inclusion">
-            <h4>Specialist Team Access</h4>
+            <h4>2) Property Setup Done for You</h4>
             <ul>
-              <li>Market research tailored to your target outcomes</li>
-              <li>Deal sourcing and underwriting support</li>
-              <li>Operations, pricing, and launch SOP recommendations</li>
-              <li>Tax and structure coordination with your professionals</li>
+              <li>We build your launch checklist and manage the setup sequence.</li>
+              <li>We guide furnishing, listing, and pricing setup.</li>
+              <li>We help you put the right vendor stack in place.</li>
+              <li>We make sure the property is guest-ready.</li>
             </ul>
           </div>
           <div class="inclusion">
-            <h4>Execution Infrastructure</h4>
+            <h4>3) Ongoing Support Until Stabilized</h4>
             <ul>
-              <li>Launch checklist from contract to first guest</li>
-              <li>Vendor stack guidance for cleaning and maintenance</li>
-              <li>Messaging, listing, and calendar workflow setup</li>
-              <li>Private communication channel for rapid questions</li>
+              <li>You get direct support during acquisition and launch.</li>
+              <li>We troubleshoot issues fast as they come up.</li>
+              <li>You get clear weekly priorities and accountability.</li>
+              <li>We stay with you through early operations.</li>
             </ul>
           </div>
         </div>
