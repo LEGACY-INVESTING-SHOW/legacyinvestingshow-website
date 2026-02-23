@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STR Concierge — Legacy Investing Show</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-deep: #072820;
+      --bg-mid: #0a3d2f;
+      --bg-soft: #0f4c3a;
+      --ink: #eef5f6;
+      --ink-muted: #c9d5d8;
+      --tan: #d4af37;
+      --gold-note: #e8c959;
+      --line: rgba(255, 255, 255, 0.18);
+      --line-soft: rgba(255, 255, 255, 0.1);
+      --danger: #f07167;
+      --good: #3dd9a0;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Raleway', sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 700px at 50% -220px, var(--bg-soft) 0%, transparent 65%),
+        linear-gradient(180deg, var(--bg-mid) 0%, var(--bg-deep) 48%, #031710 100%);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    h1, h2, h3 { font-family: 'Cormorant Garamond', serif; line-height: 1.08; }
+    .wrap { width: min(1140px, 100% - 32px); margin: 0 auto; }
+
+    .hero { min-height: 100vh; display: flex; align-items: center; border-bottom: 1px solid var(--line-soft); }
+    .hero-content { width: 100%; padding: 64px 0 84px; text-align: center; }
+
+    .eyebrow {
+      display: inline-block; text-transform: uppercase; letter-spacing: .2em;
+      font-size: 12px; font-weight: 700; color: var(--tan);
+      border: 1px solid rgba(209,190,169,.5); border-radius: 999px;
+      padding: 8px 16px; margin-bottom: 24px;
+    }
+
+    .hero h1 { font-size: clamp(44px, 7.2vw, 80px); max-width: 900px; margin: 0 auto 14px; }
+    .hero h1 span { color: var(--tan); }
+    .hero-subhead { max-width: 760px; margin: 0 auto 32px; color: var(--ink-muted); font-size: clamp(16px, 2.3vw, 21px); }
+
+    .video-shell {
+      width: min(940px, 100%); margin: 0 auto 24px; padding: 14px;
+      border: 1px solid var(--line); border-radius: 18px;
+      background: linear-gradient(170deg, rgba(255,255,255,.08), rgba(255,255,255,.02));
+      box-shadow: 0 22px 55px rgba(0,0,0,.45);
+    }
+
+    .video { background: #000; border-radius: 10px; overflow: hidden; aspect-ratio: 16 / 9; border: 1px solid rgba(255,255,255,.16); }
+    .video iframe { width: 100%; height: 100%; border: 0; }
+
+    .cta-primary {
+      display: inline-flex; justify-content: center; align-items: center;
+      min-width: min(560px, 100%); padding: 18px 24px;
+      border-radius: 8px; border: 1px solid rgba(255,255,255,.72);
+      background: transparent; color: #fff; text-decoration: none;
+      text-transform: uppercase; letter-spacing: .08em; font-size: 15px; font-weight: 800;
+      transition: all .25s ease;
+    }
+
+    .cta-primary:hover { background: var(--tan); border-color: var(--tan); color: #072820; transform: translateY(-2px); }
+    .cta-note { color: var(--gold-note); font-size: 13px; letter-spacing: .03em; font-style: italic; margin-top: 12px; }
+
+    .section { padding: 84px 0; border-top: 1px solid var(--line-soft); }
+    .section-header { text-align: center; margin-bottom: 34px; }
+    .section-header h2 { font-size: clamp(36px, 5vw, 56px); margin-bottom: 10px; }
+    .section-header h2 span { color: var(--tan); }
+    .section-header p { max-width: 780px; margin: 0 auto; color: var(--ink-muted); font-size: 18px; }
+
+    .pain-grid, .audience-grid, .process-grid, .faq-grid {
+      display: grid; gap: 18px;
+    }
+
+    .pain-grid { grid-template-columns: repeat(3, minmax(0,1fr)); }
+    .audience-grid { grid-template-columns: repeat(3, minmax(0,1fr)); }
+    .process-grid { grid-template-columns: repeat(3, minmax(0,1fr)); }
+    .faq-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 24px;
+      background: linear-gradient(170deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+    }
+
+    .stat { font-family: 'Cormorant Garamond', serif; color: var(--danger); font-size: 42px; line-height: 1; margin-bottom: 10px; }
+    .card h3 { font-size: 30px; margin-bottom: 8px; }
+    .card p { color: var(--ink-muted); font-size: 15px; }
+
+    /* Simpler typography for the problem cards */
+    .pain-grid .card { padding: 22px; }
+    .pain-grid .stat {
+      font-family: 'Raleway', sans-serif;
+      font-size: 34px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+    }
+    .pain-grid .card h3 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 10px;
+    }
+    .pain-grid .card p {
+      font-size: 14.5px;
+      line-height: 1.65;
+      max-width: 40ch;
+    }
+
+    .offer {
+      border: 1px solid var(--line); border-radius: 18px; padding: 34px;
+      background: linear-gradient(140deg, rgba(15,76,58,.72), rgba(7,40,32,.96));
+    }
+
+    .offer h3 { text-align: center; font-size: clamp(34px, 5vw, 46px); margin-bottom: 10px; }
+    .offer h3 span { color: var(--tan); }
+    .offer > p { text-align: center; max-width: 760px; margin: 0 auto 28px; color: var(--ink-muted); font-size: 18px; }
+
+    .inclusions {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap: 16px;
+    }
+
+    .inclusion {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 18px;
+      background: rgba(255,255,255,.03);
+    }
+
+    .inclusion h4 { font-size: 22px; font-family: 'Cormorant Garamond', serif; margin-bottom: 10px; }
+    .inclusion ul { list-style: none; display: grid; gap: 8px; }
+    .inclusion li { color: var(--ink-muted); font-size: 14px; padding-left: 18px; position: relative; }
+    .inclusion li::before { content: "✓"; color: var(--good); position: absolute; left: 0; }
+
+    .fit-columns {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .fit-box { border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
+    .fit-box h3 { font-size: 30px; margin-bottom: 10px; }
+    .fit-box ul { list-style: none; display: grid; gap: 9px; }
+    .fit-box li { color: var(--ink-muted); font-size: 15px; padding-left: 18px; position: relative; }
+    .fit-box.yes li::before { content: "+"; color: var(--good); position: absolute; left: 0; font-weight: 700; }
+    .fit-box.no li::before { content: "-"; color: var(--danger); position: absolute; left: 0; font-weight: 700; }
+
+    .process-step .step-number {
+      width: 34px; height: 34px; border-radius: 999px; display: grid; place-items: center;
+      border: 1px solid var(--line); margin-bottom: 10px; color: var(--tan); font-weight: 700;
+    }
+
+    .process-step h3 { font-size: 28px; margin-bottom: 8px; }
+    .process-step p { color: var(--ink-muted); font-size: 15px; }
+
+    .faq-item h3 { font-size: 27px; margin-bottom: 8px; }
+    .faq-item p { color: var(--ink-muted); font-size: 15px; }
+
+    .schedule {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 24px;
+      margin-top: 20px;
+      background: rgba(255,255,255,.03);
+    }
+
+    .schedule h3 { text-align: center; font-size: 34px; margin-bottom: 10px; }
+    .schedule p { text-align: center; color: var(--ink-muted); margin-bottom: 16px; }
+
+    .final-cta { text-align: center; }
+    .final-cta p { color: var(--ink-muted); font-size: 18px; max-width: 700px; margin: 0 auto 22px; }
+
+    footer {
+      padding: 30px 0 42px;
+      text-align: center;
+      border-top: 1px solid var(--line-soft);
+      color: rgba(255,255,255,.56);
+      font-size: 13px;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 980px) {
+      .pain-grid, .audience-grid, .process-grid, .faq-grid, .inclusions, .fit-columns { grid-template-columns: 1fr; }
+      .hero-content { padding-top: 56px; }
+      .cta-primary { min-width: 100%; }
+    }
+
+    @media (max-width: 620px) {
+      .section { padding: 66px 0; }
+      .offer { padding: 22px; }
+      .section-header p, .offer > p, .final-cta p { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="wrap hero-content">
+      <div class="eyebrow">Legacy Investing Show</div>
+      <h1>You Asked Me For This.<br><span>I Finally Made It Happen.</span></h1>
+      <p class="hero-subhead">
+        STR Concierge is our done-for-you STR acquisition and launch service where we handle market research, property sourcing,
+        underwriting, and complete property setup so you can invest without building the machine alone.
+      </p>
+
+      <div class="video-shell">
+        <div class="video">
+          <iframe
+            src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=0&rel=0"
+            title="STR Concierge"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+      <a href="#book-call" class="cta-primary">Schedule Your 1-on-1 Session</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-header">
+        <h2>The Problems You Faced <span>Doing This Alone</span></h2>
+        <p>The same patterns show up repeatedly for high-income earners trying to enter STRs.</p>
+      </div>
+      <div class="pain-grid">
+        <article class="card">
+          <div class="stat">6-12 Months</div>
+          <h3>Research Spiral to Analysis Paralysis</h3>
+          <p>You spend 100+ hours in Zillow, AirDNA, and YouTube rabbit holes, and 6-12 months later you are still second-guessing market, deal quality, and execution sequence.</p>
+        </article>
+        <article class="card">
+          <div class="stat">$50K+</div>
+          <h3>Tax Opportunity Lost</h3>
+          <p>Every delayed year can mean meaningful deduction and wealth-building opportunity lost.</p>
+        </article>
+        <article class="card">
+          <div class="stat">50+ Decisions</div>
+          <h3>Execution Overload</h3>
+          <p>Even after picking a market, setup decisions on furnishing, pricing, vendors, and systems create costly delays.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <article class="offer">
+        <h3>What You Get Inside <span>STR Concierge</span></h3>
+        <p>Here is exactly what we handle for you inside the program.</p>
+
+        <div class="inclusions">
+          <div class="inclusion">
+            <h4>Dedicated Advisor</h4>
+            <ul>
+              <li>A lead advisor assigned to your deal from day one</li>
+              <li>Direct feedback on every buy-box decision</li>
+              <li>Unlimited strategic reviews during active acquisition</li>
+              <li>Weekly accountability and next-step planning</li>
+            </ul>
+          </div>
+          <div class="inclusion">
+            <h4>Specialist Team Access</h4>
+            <ul>
+              <li>Market research tailored to your target outcomes</li>
+              <li>Deal sourcing and underwriting support</li>
+              <li>Operations, pricing, and launch SOP recommendations</li>
+              <li>Tax and structure coordination with your professionals</li>
+            </ul>
+          </div>
+          <div class="inclusion">
+            <h4>Execution Infrastructure</h4>
+            <ul>
+              <li>Launch checklist from contract to first guest</li>
+              <li>Vendor stack guidance for cleaning and maintenance</li>
+              <li>Messaging, listing, and calendar workflow setup</li>
+              <li>Private communication channel for rapid questions</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-header">
+        <h2>Who This Is For <span>And Who It Is Not For</span></h2>
+      </div>
+
+      <div class="fit-columns">
+        <article class="fit-box yes">
+          <h3>This Is For You If...</h3>
+          <ul>
+            <li>You have $120K+ available for capital + setup</li>
+            <li>You want STR exposure but lack time to build systems</li>
+            <li>You prefer expert-guided execution over guesswork</li>
+            <li>You can move quickly once fit is confirmed</li>
+          </ul>
+        </article>
+
+        <article class="fit-box no">
+          <h3>This Is Not For You If...</h3>
+          <ul>
+            <li>You want a low-effort, no-capital path</li>
+            <li>You need guaranteed returns or fixed outcomes</li>
+            <li>You are unwilling to follow a defined process</li>
+            <li>You are not ready to make acquisition decisions</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-header">
+        <h2>Common <span>Questions</span></h2>
+      </div>
+
+      <div class="faq-grid">
+        <article class="card faq-item">
+          <h3>How much time do I need weekly?</h3>
+          <p>Most clients spend 2-4 focused hours per week during acquisition and launch windows.</p>
+        </article>
+        <article class="card faq-item">
+          <h3>Do you guarantee I get a property?</h3>
+          <p>No guarantees. We provide advisory, sourcing, and decision support; final decisions are yours.</p>
+        </article>
+        <article class="card faq-item">
+          <h3>Can I use my CPA and lender?</h3>
+          <p>Yes. We coordinate strategy with your existing professionals or share vetted referrals.</p>
+        </article>
+        <article class="card faq-item">
+          <h3>Is this for beginners?</h3>
+          <p>It is designed for busy professionals with capital who want guided execution, not DIY education alone.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section final-cta" id="book-call">
+    <div class="wrap">
+      <div class="section-header">
+        <h2>Schedule Your <span>1-on-1 Call</span></h2>
+        <p>We’ll walk through your situation, confirm fit, and map next steps if aligned.</p>
+      </div>
+
+      <div class="schedule">
+        <!-- ScheduleOnce embed START -->
+        <div id="SOIDIV_AARprogramreview" data-so-page="AARprogramreview" data-height="550" data-style="border: 1px solid #d8d8d8; min-width: 290px; max-width: 900px;" data-psz="00"></div>
+        <script type="text/javascript" src="https://cdn.oncehub.com/mergedjs/so.js"></script>
+        <!-- ScheduleOnce embed END -->
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">© 2026 Legacy Investing Show. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>
