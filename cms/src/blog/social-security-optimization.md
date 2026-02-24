@@ -28,7 +28,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/social-security-optimization.jpg
 imageAlt: 'Social Security Optimization: When to Claim for Maximum Benefits guide'
 imageWidth: 1200
 imageHeight: 630
@@ -405,7 +405,7 @@ If you review social security optimization with a CPA/attorney/advisor, bring:
 
 ## Internal Links To Continue
 - [Browse related guides](/blog/category/retirement)
-- [Programs and implementation support](/programs)
+- [blog resources](/blog/)
 - [Latest blog posts](/blog)
 
 ## Final Word

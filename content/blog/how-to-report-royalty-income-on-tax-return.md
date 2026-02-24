@@ -357,7 +357,7 @@ The strategy in this guide is classification-first reporting with scenario model
 | File through software only with no scenario model | Fast and low direct cost | Higher risk of hidden tax and form errors | Very simple single-payer situations |
 | Year-end CPA cleanup without in-year planning | Professional filing quality | Missed quarterly planning and cash-flow control | Taxpayers with stable income and minimal complexity |
 
-If royalties are becoming a key wealth-building stream, pair tax reporting with broader capital planning. You can use the [blog library](/blog) for adjacent strategies and evaluate implementation support through [programs](/programs).
+If royalties are becoming a key wealth-building stream, pair tax reporting with broader capital planning. You can use the [blog library](/blog) for adjacent strategies and evaluate implementation support through [blog resources](/blog/).
 
 ## When Not to Use This Strategy
 

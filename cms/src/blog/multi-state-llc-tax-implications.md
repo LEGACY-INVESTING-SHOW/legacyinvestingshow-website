@@ -33,7 +33,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/multi-state-llc-tax-implications.jpg
 imageAlt: >-
   Multi State LLC Tax Implications: Complete 2026 Decision Guide for US Owners
   guide

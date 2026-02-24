@@ -33,7 +33,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/capital-gains-tax-best-strategy.jpg
 imageAlt: 'Capital Gains Tax Best Strategy: Complete 2026 Guide for U.S. Investors guide'
 imageWidth: 1200
 imageHeight: 630
@@ -293,7 +293,7 @@ In these cases, a simpler sell discipline can be better than a complex tax plan 
 | Days 24-27 | Transfer tax reserve cash, update quarterly estimated tax plan | Tax reserve funding complete |
 | Days 28-30 | Document lessons learned and set next review date | Ongoing tax calendar and checklist |
 
-If you want implementation support on broader wealth planning, review [Programs](/programs).
+If you want implementation support on broader wealth planning, review [blog resources](/blog/).
 
 ## Common Mistakes That Destroy Tax Alpha
 

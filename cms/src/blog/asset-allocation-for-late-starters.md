@@ -36,7 +36,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/asset-allocation-for-late-starters.jpg
 imageAlt: >-
   Asset Allocation for Late Starters: Complete 2026 Guide to Catch Up Without
   Overreaching guide
@@ -339,4 +339,4 @@ Late starters do best with simple, repeatable rules:
 4. Coordinate allocation with taxes and account type.
 5. Recalculate your income gap every year and adjust one lever at a time.
 
-If you want additional implementation examples, browse [blog articles](/blog) and compare with your plan before making major changes. For hands-on support, review [programs](/programs). This article is educational and should be paired with personalized tax and investment advice.
+If you want additional implementation examples, browse [blog articles](/blog) and compare with your plan before making major changes. For hands-on support, review [blog resources](/blog/). This article is educational and should be paired with personalized tax and investment advice.

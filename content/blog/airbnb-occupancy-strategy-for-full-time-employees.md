@@ -409,7 +409,7 @@ Bring these questions to your CPA or advisor before scaling:
 6. Which thresholds or behavior patterns should trigger a structure review?
 7. What tax-calendar deadlines should I lock now to avoid penalties?
 
-If business structure is still unclear, start by documenting your current operations and reviewing educational resources in the [Legacy Investing Show blog](/blog) or the [programs page](/programs) before your advisor meeting.
+If business structure is still unclear, start by documenting your current operations and reviewing educational resources in the [Legacy Investing Show blog](/blog) or the [blog resources](/blog/) before your advisor meeting.
 
 ## Final Decision Framework for the Next 90 Days
 

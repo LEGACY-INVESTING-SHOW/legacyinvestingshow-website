@@ -35,7 +35,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-is-royalty-income-taxed.jpg
 imageAlt: >-
   How Is Royalty Income Taxed in 2026? Complete U.S. Guide for Creators,
   Investors, and Mineral Rights Owners guide
@@ -361,7 +361,7 @@ A common mistake is chasing a tax label instead of building a durable income eng
 - [Digital product income guide](/blog/digital-product-income)
 - [Airbnb cash flow tax implications](/blog/airbnb-cash-flow-tax-implications)
 - [House hacking guide](/blog/house-hacking-guide)
-- [Programs](/programs)
+- [blog resources](/blog/)
 - [More articles](/blog)
 
 ## Bottom Line

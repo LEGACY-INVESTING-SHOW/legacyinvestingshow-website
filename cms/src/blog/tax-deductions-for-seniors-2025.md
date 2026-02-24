@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-deductions-for-seniors-2025.jpg
 imageAlt: >-
   Tax Deductions for Seniors 2025: Complete 2026 Guide to the Enhanced Standard
   Deduction and Filing Strategy guide
@@ -343,5 +343,5 @@ In these cases, choose itemization or a broader year-over-year coordination plan
 
 ## Related internal navigation for broader tax planning
 - Browse the high-level page set at [Tax Strategies](/topics/tax-strategies).
-- Review practical examples in [Programs](/programs).
+- Review practical examples in [blog resources](/blog/).
 - Check the [blog index](/blog) for recent strategy updates before finalizing your filing memo.

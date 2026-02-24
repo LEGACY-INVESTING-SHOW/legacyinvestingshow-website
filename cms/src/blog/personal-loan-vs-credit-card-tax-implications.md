@@ -35,7 +35,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/personal-loan-vs-credit-card-tax-implications.jpg
 imageAlt: >-
   Personal Loan vs Credit Card Tax Implications: Which Strategy Works Better in
   2026? guide

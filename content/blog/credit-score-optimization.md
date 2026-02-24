@@ -402,7 +402,7 @@ If you review improve credit score with a CPA/attorney/advisor, bring:
 
 ## Internal Links To Continue
 - [Browse related guides](/blog/category/debt-management)
-- [Programs and implementation support](/programs)
+- [blog resources](/blog/)
 - [Latest blog posts](/blog)
 
 ## Final Word

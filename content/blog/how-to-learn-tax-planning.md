@@ -387,7 +387,7 @@ Use these resources in sequence so you build from broad concepts to targeted tac
 - Review practical article examples in the [Legacy Investing Show blog](/blog).
 - Benchmark deduction opportunities with [best tax deductions 2025](/blog/best-tax-deductions-2025) and [best tax deductions for high-income earners](/blog/best-tax-deductions-for-high-income-earners).
 - If retirement distribution strategy is part of your plan, study [best Roth conversion strategy calculator](/blog/best-roth-conversion-strategy-calculator).
-- For implementation support and accountability, evaluate [programs](/programs).
+- For implementation support and accountability, evaluate [blog resources](/blog/).
 
 You can also compare planning edge cases through related pieces like [1031 exchange vs standard deduction](/blog/1031-exchange-vs-standard-deduction) and [1031 exchange vs itemized deductions](/blog/1031-exchange-vs-itemized-deductions).
 

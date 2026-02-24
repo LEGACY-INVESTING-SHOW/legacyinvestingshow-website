@@ -145,7 +145,7 @@ If you are comparing series llc vs sole proprietorship in 2026, the best choice 
 
 Investopedia and NerdWallet both emphasize the same core tradeoff: simplicity versus protection. TaxAct and SoFi also highlight that LLC structures can open additional tax-planning paths as profits increase, especially if entity elections become practical. IRS and SBA guidance reinforces the baseline: sole proprietors generally carry unlimited personal liability, while LLCs are state-created entities with potential liability separation if operated correctly.
 
-If you want context before deciding, start with the [business structures hub](/topics/business-structures), review examples on the [blog](/blog), and study execution support on [programs](/programs).
+If you want context before deciding, start with the [business structures hub](/topics/business-structures), review examples on the [blog](/blog), and study execution support on [blog resources](/blog/).
 
 ## Series LLC vs Sole Proprietorship: Core Differences That Matter
 

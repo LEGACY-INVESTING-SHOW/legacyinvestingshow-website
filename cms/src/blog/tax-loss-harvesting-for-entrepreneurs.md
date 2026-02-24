@@ -34,7 +34,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-loss-harvesting-for-entrepreneurs.jpg
 imageAlt: >-
   Tax Loss Harvesting for Entrepreneurs: Complete 2026 Guide to Lower Investment
   Taxes guide

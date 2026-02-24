@@ -389,7 +389,7 @@ In these cases, a simpler plan may outperform a theoretically better but poorly 
 9. What healthcare premium or surtax thresholds should we monitor when setting conversion size?
 10. Which assumptions should we stress test every year: inflation, returns, spending, and longevity?
 
-If you want implementation support, map these questions into your advisor meetings or structured education programs at [Legacy Investing Show programs](/programs).
+If you want implementation support, map these questions into your advisor meetings or structured education programs at [blog resources](/blog/).
 
 ## Practical Decision Rules You Can Use This Week
 

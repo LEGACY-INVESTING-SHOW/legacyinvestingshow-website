@@ -33,7 +33,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/s-corp-election-template.jpg
 imageAlt: 's corp election template: Practical Guide + Examples for Owner-Operators guide'
 imageWidth: 1200
 imageHeight: 630
@@ -307,7 +307,7 @@ Stress-test salary and tax deposits against revenue variability.
 10. Reassess annually
 Revisit salary reasonableness, net tax benefit, retirement contribution strategy, and entity fit.
 
-If you want tactical implementation help, review the training options on [programs](/programs) and use ongoing education in the [blog](/blog) to keep systems current.
+If you want tactical implementation help, review the training options on [blog resources](/blog/) and use ongoing education in the [blog](/blog) to keep systems current.
 
 ## 30-day checklist for first-time filers
 

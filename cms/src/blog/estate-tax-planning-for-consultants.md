@@ -33,7 +33,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/estate-tax-planning-for-consultants.jpg
 imageAlt: 'Estate Tax Planning for Consultants: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -370,7 +370,7 @@ Estate strategy should not be isolated from your operating financial plan.
 - Retirement planning: continue systematic retirement contributions to maintain protected account growth and diversification.
 - Business structure: align entity documents with transfer goals before executing gifts.
 
-If you want support implementing this in sequence, review the available [programs](/programs) and bring a draft cash-flow and balance-sheet model to your advisor meeting.
+If you want support implementing this in sequence, review the available [blog resources](/blog/) and bring a draft cash-flow and balance-sheet model to your advisor meeting.
 
 ## Practical Next Move
 

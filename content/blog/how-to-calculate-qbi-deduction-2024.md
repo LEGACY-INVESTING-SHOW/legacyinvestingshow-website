@@ -432,7 +432,7 @@ Bring these questions to your next tax meeting:
 - If I amend, what documents should I retain to support the calculation?
 - How should I plan for possible law changes after 2025?
 
-If you want deeper implementation support, review the [programs](/programs) page and coordinate decisions with your CPA so tax strategy and business operations stay aligned.
+If you want deeper implementation support, review the [blog resources](/blog/) page and coordinate decisions with your CPA so tax strategy and business operations stay aligned.
 
 ## Final Action Checklist Before Filing
 

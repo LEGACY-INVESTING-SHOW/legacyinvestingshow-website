@@ -28,7 +28,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/short-term-rental-investing.jpg
 imageAlt: 'Short-Term Rental Investing: Airbnb & VRBO Property Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -405,7 +405,7 @@ If you review short term rental investing with a CPA/attorney/advisor, bring:
 
 ## Internal Links To Continue
 - [Browse related guides](/blog/category/passive-income)
-- [Programs and implementation support](/programs)
+- [blog resources](/blog/)
 - [Latest blog posts](/blog)
 
 ## Final Word

@@ -34,7 +34,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/self-storage-investing-for-beginners.jpg
 imageAlt: >-
   Self Storage Investing for Beginners: Complete 2026 Guide to Cash Flow, Risk,
   and Smart Deal Selection guide
@@ -480,4 +480,4 @@ Before closing your first deal, require all three:
 - Financial resilience: downside case still protects DSCR and reserves.
 - Execution readiness: you have a real operating plan and accountability rhythm.
 
-If one is weak, pause. If all three are strong, self storage can be a practical, scalable path within a diversified strategy. For broader strategy context and adjacent playbooks, review [programs](/programs) and the full [blog](/blog).
+If one is weak, pause. If all three are strong, self storage can be a practical, scalable path within a diversified strategy. For broader strategy context and adjacent playbooks, review [blog resources](/blog/) and the full [blog](/blog).

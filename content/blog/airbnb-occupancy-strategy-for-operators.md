@@ -315,7 +315,7 @@ Week 4: Financial review and scale decision
 | Medium-term furnished (30+ days) | Stable occupancy and lower turnover | Potentially lower peak upside, tenant risk concentration | Operators prioritizing predictability over peak revenue |
 | Long-term lease conversion | Lowest operational load | Lowest upside and less flexibility | Owners reducing risk or exiting active operations |
 
-If you are still deciding between approaches, compare strategy fit with your goals in [programs](/programs) and your operating profile in [real-estate investor occupancy strategy](/blog/airbnb-occupancy-strategy-for-real-estate-investors).
+If you are still deciding between approaches, compare strategy fit with your goals in [blog resources](/blog/) and your operating profile in [real-estate investor occupancy strategy](/blog/airbnb-occupancy-strategy-for-real-estate-investors).
 
 ## When Not to Use This Strategy
 

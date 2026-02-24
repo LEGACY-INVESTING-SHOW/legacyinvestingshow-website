@@ -664,7 +664,7 @@ Most focused students secure their first property in 30-60 days. The biggest tim
 
 Micah proved that introverts can succeed in this business. His Facebook Marketplace approach eliminated the phone anxiety that stops many beginners. Five months after joining Legacy Investing Show, he had a property generating $5,000/month.
 
-[Learn more about Legacy Investing Show →](/programs)
+[Learn more about Legacy Investing Show →](/blog/)
 
 ### Related Success Stories
 
@@ -694,7 +694,7 @@ Micah proved that introverts can succeed in this business. His Facebook Marketpl
 
 Preston Seo has personally built a $15 million real estate portfolio generating over $400,000 per year in net profit from short-term rentals. He created Legacy Investing Show to teach the exact systems that scaled his business.
 
-[Learn more about the program →](/programs) | [Watch free training →](/free-training)
+[blog resources](/blog/) | [Watch free training →](/free-training)
 
 ---
 

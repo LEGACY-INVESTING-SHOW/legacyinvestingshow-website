@@ -36,7 +36,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/social-security-claiming-strategies-for-married-couples-calculator.jpg
 imageAlt: >-
   Social Security Claiming Strategies for Married Couples Calculator: Practical
   Guide + Examples guide
@@ -298,7 +298,7 @@ Use this as an operational sprint so the decision actually gets implemented.
 - Day 25-27: Prepare filing timeline, beneficiary review, and bank routing details.
 - Day 28-30: Final review meeting and implementation calendar lock.
 
-If you need support building this into a full household plan, review the available [programs](/programs).
+If you need support building this into a full household plan, review the available [blog resources](/blog/).
 
 ## Common Mistakes Married Couples Make
 

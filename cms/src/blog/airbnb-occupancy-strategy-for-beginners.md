@@ -37,7 +37,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-occupancy-strategy-for-beginners.jpg
 imageAlt: >-
   Airbnb Occupancy Strategy for Beginners: Complete 2026 Guide to More Bookings
   and Better Cash Flow guide
@@ -390,6 +390,6 @@ A useful monthly cash-flow waterfall after operating expenses:
 - 30% to high-interest debt reduction or unit stabilization spending
 - 20% to long-term investing and retirement contributions
 
-Adjust percentages to your risk profile and obligations, but keep the rule explicit. Occupancy improvements only matter if they strengthen your overall financial position across taxes, debt, and investing. If you want implementation support, compare options on [programs](/programs).
+Adjust percentages to your risk profile and obligations, but keep the rule explicit. Occupancy improvements only matter if they strengthen your overall financial position across taxes, debt, and investing. If you want implementation support, compare options on [blog resources](/blog/).
 
 A strong airbnb occupancy strategy for beginners is simple: set realistic occupancy targets, protect ADR floors, run weekly adjustments from rules, and evaluate success using net cash flow instead of calendar fullness.

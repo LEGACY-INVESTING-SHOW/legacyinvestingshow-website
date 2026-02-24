@@ -33,7 +33,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/value-investing-tax-implications.jpg
 imageAlt: 'Value Investing Tax Implications: Complete 2026 Guide for US Investors guide'
 imageWidth: 1200
 imageHeight: 630
@@ -355,4 +355,4 @@ Treat these as planning questions, not one-time questions. Tax-aware investing i
 
 Start with process, not prediction. Write your tax-aware rules, run the 30-day checklist, and review results quarterly. The objective is simple: keep more of what your portfolio already earns.
 
-If you want help turning this into a full wealth plan that also includes debt, retirement, and business-structure decisions, review available [programs](/programs).
+If you want help turning this into a full wealth plan that also includes debt, retirement, and business-structure decisions, review available [blog resources](/blog/).

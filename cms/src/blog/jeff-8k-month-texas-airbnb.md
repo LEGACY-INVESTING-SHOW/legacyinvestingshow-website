@@ -668,7 +668,7 @@ Jeff identifies market cycles as the primary risk—he learned this firsthand fr
 
 **Ready to build your own Airbnb business like Jeff?**
 
-[Learn more about Legacy Investing Show](/programs)
+[Learn more about Legacy Investing Show](/blog/)
 
 ### Related Success Stories
 
@@ -698,7 +698,7 @@ Jeff identifies market cycles as the primary risk—he learned this firsthand fr
 
 Preston Seo created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[Learn more about the program](/programs) | [Watch free training](/free-training)
+[blog resources](/blog/) | [Watch free training](/free-training)
 
 ---
 

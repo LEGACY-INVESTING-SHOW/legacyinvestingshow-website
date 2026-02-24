@@ -37,7 +37,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-tax-planning-software-for-financial-advisors.jpg
 imageAlt: >-
   Best Tax Planning Software for Financial Advisors: Complete 2026 Buyer
   Framework guide
@@ -384,7 +384,7 @@ Internal resources you can use immediately:
 - [Legacy Investing Show Blog](/blog)
 - [Best Tax Deductions for High Income Earners](/blog/best-tax-deductions-for-high-income-earners)
 - [Best Tax Deductions for Self-Employed](/blog/best-tax-deductions-for-self-employed)
-- [Programs](/programs)
+- [blog resources](/blog/)
 
 ## Final Decision Rules
 If two tools look similar, choose the one that wins on integration reliability and advisor workflow speed. Those two factors usually determine adoption and client impact more than any advanced feature list.

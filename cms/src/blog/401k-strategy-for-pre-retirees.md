@@ -33,7 +33,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/401k-strategy-for-pre-retirees.jpg
 imageAlt: '401k strategy for pre retirees: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -347,7 +347,7 @@ Use this checklist as your execution sprint.
 - Confirm which account funds first 3 retirement years.
 - Book advisor and CPA review appointments.
 
-If you want implementation support beyond DIY, evaluate [program options](/programs).
+If you want implementation support beyond DIY, evaluate [blog resources](/blog/).
 
 ## Mistakes That Cost Pre-Retirees the Most
 

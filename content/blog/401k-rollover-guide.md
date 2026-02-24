@@ -402,7 +402,7 @@ If you review 401k rollover with a CPA/attorney/advisor, bring:
 
 ## Internal Links To Continue
 - [Browse related guides](/blog/category/retirement)
-- [Programs and implementation support](/programs)
+- [blog resources](/blog/)
 - [Latest blog posts](/blog)
 
 ## Final Word

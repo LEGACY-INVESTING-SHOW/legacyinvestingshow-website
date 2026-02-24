@@ -354,7 +354,7 @@ Cons:
 - **S corp election path**: can reduce certain payroll tax exposure for some domestic owner structures, but shareholder and class-of-stock rules add constraints.
 - **Hybrid timeline approach**: start LLC, convert when investor readiness or retained-profit profile justifies it.
 
-For founders evaluating support and execution help, see [program options](/programs).
+For founders evaluating support and execution help, see [blog resources](/blog/).
 
 ## When Not to Use This Strategy
 

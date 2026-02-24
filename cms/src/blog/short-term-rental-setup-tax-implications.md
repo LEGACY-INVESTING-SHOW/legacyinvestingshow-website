@@ -36,7 +36,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/short-term-rental-setup-tax-implications.jpg
 imageAlt: >-
   Short Term Rental Setup Tax Implications: Complete 2026 Guide for Airbnb
   Arbitrage Operators guide
@@ -455,4 +455,4 @@ Document your advisor answers in a one-page operating memo and revisit quarterly
 
 ## Practical Next Move
 
-Start with a 60-minute classification and documentation session before your next booking cycle. Then align occupancy strategy, bookkeeping, and tax planning in one system. If you want education on scaling systems and execution, review [program options](/programs) after you complete the 30-day checklist above.
+Start with a 60-minute classification and documentation session before your next booking cycle. Then align occupancy strategy, bookkeeping, and tax planning in one system. If you want education on scaling systems and execution, review [blog resources](/blog/) after you complete the 30-day checklist above.

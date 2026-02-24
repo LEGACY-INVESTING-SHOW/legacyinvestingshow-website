@@ -36,7 +36,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/rental-property-investing-for-families.jpg
 imageAlt: >-
   Rental Property Investing for Families: Complete 2026 Guide to Cash Flow,
   Taxes, and Risk Control guide
@@ -434,4 +434,4 @@ Treat year one as an operating discipline year, not a scaling year.
 - Track tenant retention metrics and turnover costs
 - Revisit expansion only after consistent positive cash flow and stable operations
 
-If you want implementation help, review [program options](/programs) and compare this strategy with other cash-flow paths such as [Airbnb cash flow vs notes investing](/blog/airbnb-cash-flow-vs-notes-investing). The best plan is the one your family can sustain through both good and bad market conditions.
+If you want implementation help, review [blog resources](/blog/) and compare this strategy with other cash-flow paths such as [Airbnb cash flow vs notes investing](/blog/airbnb-cash-flow-vs-notes-investing). The best plan is the one your family can sustain through both good and bad market conditions.

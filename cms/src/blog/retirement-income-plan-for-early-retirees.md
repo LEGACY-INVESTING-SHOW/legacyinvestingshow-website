@@ -34,7 +34,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/retirement-income-plan-for-early-retirees.jpg
 imageAlt: 'Retirement Income Plan for Early Retirees: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -429,4 +429,4 @@ Before you retire early, test your plan against three pass-fail gates:
 - Tax gate: withdrawal order is projected, not improvised.
 - Behavior gate: both partners agree on trigger-based spending cuts.
 
-If all three gates pass, your retirement income plan for early retirees is likely robust enough to implement and refine over time. If one fails, improve the system before you lock in a retirement date. For hands-on support, review available [programs](/programs) and compare your assumptions with your advisor team.
+If all three gates pass, your retirement income plan for early retirees is likely robust enough to implement and refine over time. If one fails, improve the system before you lock in a retirement date. For hands-on support, review available [blog resources](/blog/) and compare your assumptions with your advisor team.

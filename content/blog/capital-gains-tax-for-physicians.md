@@ -350,6 +350,6 @@ Use this guide as a planning workbook, then build your broader stack with relate
 - [Best tax deductions for high-income earners](/blog/best-tax-deductions-for-high-income-earners)
 - [Best tax deductions 2025](/blog/best-tax-deductions-2025)
 - [Blog library](/blog)
-- [Programs](/programs)
+- [blog resources](/blog/)
 
 Educational note: tax outcomes depend on facts, deal terms, and jurisdiction. Use this framework to ask better questions and make clearer decisions with your licensed tax and legal advisors.

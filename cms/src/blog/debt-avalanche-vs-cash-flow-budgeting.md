@@ -32,7 +32,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/debt-avalanche-vs-cash-flow-budgeting.jpg
 imageAlt: >-
   Debt Avalanche vs Cash Flow Budgeting: Which Strategy Works Better in 2026?
   guide
@@ -425,4 +425,4 @@ Ask for scenario-based answers, not generic advice. A useful advisor should help
 
 Use debt avalanche when you have stable income, at least a modest reserve, and high confidence in execution. Use cash flow budgeting when your bigger risk is missing payments or adding new debt during an income dip. Then transition to avalanche as your reserve and consistency improve.
 
-For implementation support, review the [blog](/blog), run numbers in the [debt avalanche payoff calculator](/blog/debt-avalanche-payoff-calculator), and explore practical education paths in [programs](/programs). The best strategy is the one you will still be following 6 months from now.
+For implementation support, review the [blog](/blog), run numbers in the [debt avalanche payoff calculator](/blog/debt-avalanche-payoff-calculator), and explore practical education paths in [blog resources](/blog/). The best strategy is the one you will still be following 6 months from now.

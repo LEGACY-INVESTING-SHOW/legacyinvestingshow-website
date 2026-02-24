@@ -374,6 +374,6 @@ Start simple this week:
 - Run your numbers using the payoff calculators linked above.
 - Add one behavior guardrail so the plan survives stress.
 
-For related tactics, see [credit score optimization](/blog/credit-score-optimization), [debt consolidation guide](/blog/debt-consolidation-guide), and the full [blog](/blog). If you want structured support, review [programs](/programs).
+For related tactics, see [credit score optimization](/blog/credit-score-optimization), [debt consolidation guide](/blog/debt-consolidation-guide), and the full [blog](/blog). If you want structured support, review [blog resources](/blog/).
 
 This content is educational and is not individualized tax, legal, or investment advice.

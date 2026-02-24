@@ -33,7 +33,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/multi-state-llc-for-real-estate-operators.jpg
 imageAlt: 'Multi State LLC for Real Estate Operators: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -429,7 +429,7 @@ Bring these to your next planning call:
 9. What triggers should prompt a structure upgrade next year?
 10. What documentation package should I maintain for audit and litigation readiness?
 
-For related planning, review [anonymous LLC guide](/blog/anonymous-llc), [best registered agent service for LLC](/blog/best-registered-agent-service-for-llc), and [programs](/programs).
+For related planning, review [anonymous LLC guide](/blog/anonymous-llc), [best registered agent service for LLC](/blog/best-registered-agent-service-for-llc), and [blog resources](/blog/).
 
 ## Bottom Line
 

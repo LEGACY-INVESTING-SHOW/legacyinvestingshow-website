@@ -364,11 +364,11 @@ In those cases, use a low-friction distribution contract and professional superv
 ## Final implementation note
 The model is not about predicting exact returns. It is about minimizing avoidable behavior risk. Build a clear framework, test it against bad markets, and execute on triggers. Early retirement is mostly process discipline.
 
-If you want a broader education ladder, review related resources in the [retirement topic hub](/topics/retirement), [457b plan guide](/blog/457b-plan-guide), and [program guidance](/programs).
+If you want a broader education ladder, review related resources in the [retirement topic hub](/topics/retirement), [457b plan guide](/blog/457b-plan-guide), and [blog resources](/blog/).
 
 ## Related Resources
 - [Retirement Hub](/topics/retirement)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: strategy for retirement withdrawals](/blog/strategy-for-retirement-withdrawals)
 - [Related Guide: retirement withdrawal strategy tax implications](/blog/retirement-withdrawal-strategy-tax-implications)

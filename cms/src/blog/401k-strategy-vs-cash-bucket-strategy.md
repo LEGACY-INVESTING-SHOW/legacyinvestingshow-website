@@ -35,7 +35,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/401k-strategy-vs-cash-bucket-strategy.jpg
 imageAlt: >-
   401k Strategy vs Cash Bucket Strategy: Which Strategy Works Better in 2026?
   guide

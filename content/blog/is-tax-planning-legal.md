@@ -387,4 +387,4 @@ If retirement conversion timing is part of your plan, review [Best Roth Conversi
 
 The question is tax planning legal is best answered this way: legal tax planning is typically the disciplined use of options the code intentionally provides, supported by truthful facts and strong records. The objective is not to be aggressive for its own sake; it is to improve after-tax outcomes with a defensible process.
 
-Start simple, quantify everything, document as you go, and review quarterly. If you want hands-on implementation support after you map your plan, explore the training options in [Programs](/programs).
+Start simple, quantify everything, document as you go, and review quarterly. If you want hands-on implementation support after you map your plan, explore the training options in [blog resources](/blog/).

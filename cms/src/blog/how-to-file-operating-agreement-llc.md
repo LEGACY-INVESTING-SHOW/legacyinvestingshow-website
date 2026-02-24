@@ -33,7 +33,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-to-file-operating-agreement-llc.jpg
 imageAlt: 'How to File Operating Agreement LLC: Complete 2026 Guide for US Owners guide'
 imageWidth: 1200
 imageHeight: 630
@@ -394,6 +394,6 @@ Use these internal resources as you implement your plan:
 - Review privacy considerations in the [anonymous LLC guide](/blog/anonymous-llc).
 - Improve compliance setup with [best registered agent for LLC](/blog/best-registered-agent-for-llc).
 - Strengthen financing discipline through [business credit building](/blog/business-credit-building).
-- Explore implementation support on the [programs page](/programs).
+- Explore implementation support on the [blog resources](/blog/).
 
 A strong operating agreement is not paperwork theater. It is a decision framework for ownership, cash flow, and conflict resolution. Build it with real numbers, sign it properly, and revisit it before major business changes.

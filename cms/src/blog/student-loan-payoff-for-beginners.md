@@ -35,7 +35,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/student-loan-payoff-for-beginners.jpg
 imageAlt: >-
   Student Loan Payoff for Beginners: Complete 2026 Guide to Paying Less Interest
   and Becoming Debt-Free Faster guide
@@ -464,6 +464,6 @@ Keep your system simple and repeatable:
 - Automate base payments and extra transfers.
 - Review monthly results and adjust only when your income or goals change materially.
 - If you want debt simplification options, use the [debt consolidation guide](/blog/debt-consolidation-guide).
-- If you want accountability and implementation support, review [programs](/programs).
+- If you want accountability and implementation support, review [blog resources](/blog/).
 
 Student loan payoff for beginners becomes manageable when decisions are rule-based instead of emotional. Build the system once, then let consistency do the work.

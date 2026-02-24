@@ -33,7 +33,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/debt-avalanche-tax-implications.jpg
 imageAlt: >-
   Debt Avalanche Tax Implications: Complete 2026 Guide to Smarter Payoff Order
   guide
@@ -395,4 +395,4 @@ Use a three-layer filter each month:
 - Risk layer: bump up debts with penalty, legal, or collateral risk.
 - Behavior layer: make sure the plan is executable with your cash flow and psychology.
 
-Then automate and review quarterly. If you do that, debt avalanche tax implications become an advantage instead of a surprise. For deeper strategy context, review the [Debt Management hub](/topics/debt-management), browse additional case studies on the [blog](/blog), and compare implementation support in [programs](/programs).
+Then automate and review quarterly. If you do that, debt avalanche tax implications become an advantage instead of a surprise. For deeper strategy context, review the [Debt Management hub](/topics/debt-management), browse additional case studies on the [blog](/blog), and compare implementation support in [blog resources](/blog/).

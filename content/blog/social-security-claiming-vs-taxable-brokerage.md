@@ -421,4 +421,4 @@ Use this short framework:
 - If spouses have different earnings records, test a split strategy before choosing all-or-nothing.
 - If taxes are close between paths, favor the option that better protects downside scenarios.
 
-Social security claiming vs taxable brokerage is not about finding one universal answer. It is about choosing the path that keeps your household solvent, tax-aware, and flexible across good and bad markets. If you want structured implementation support, review available planning [programs](/programs).
+Social security claiming vs taxable brokerage is not about finding one universal answer. It is about choosing the path that keeps your household solvent, tax-aware, and flexible across good and bad markets. If you want structured implementation support, review available planning [blog resources](/blog/).

@@ -294,7 +294,7 @@ Use this as an execution sprint.
 - [ ] Meet CPA and counsel to validate cleanup actions
 - [ ] Assign one person accountable for ongoing compliance
 
-If you need implementation support, map this checklist to team execution resources on the [Programs page](/programs).
+If you need implementation support, map this checklist to team execution resources on the [blog resources](/blog/).
 
 ## Common Mistakes That Lead to Veil-Piercing Risk
 1. Treating LLC accounts as personal checking.

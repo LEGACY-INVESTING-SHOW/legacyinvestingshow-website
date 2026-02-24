@@ -408,4 +408,4 @@ Before you click sell, answer five questions:
 - What operational steps are needed for clean reporting and payments?
 - Do I need advisor review based on complexity and dollars at risk?
 
-A capital gains tax calculator works best when used as part of a repeatable process: estimate, compare, decide, execute, and document. If you want deeper implementation support, review the [programs page](/programs) and continue building your planning stack through [blog](/blog).
+A capital gains tax calculator works best when used as part of a repeatable process: estimate, compare, decide, execute, and document. If you want deeper implementation support, review the [blog resources](/blog/) and continue building your planning stack through [blog](/blog).

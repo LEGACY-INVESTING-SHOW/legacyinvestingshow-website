@@ -609,7 +609,7 @@ The cleaner is your eyes on the ground. If you find someone responsive and relia
 
 Isaac proved that with the right partner, a willingness to take action, and strategic market selection, you can build a portfolio across multiple states—all while traveling the country.
 
-[Learn more about Legacy Investing Show →](/programs)
+[Learn more about Legacy Investing Show →](/blog/)
 
 ### Related Success Stories
 
@@ -643,7 +643,7 @@ Isaac proved that with the right partner, a willingness to take action, and stra
 
 Preston Seo has personally built a $15 million real estate portfolio generating over $400,000 per year in net profit from short-term rentals. He created Legacy Investing Show to teach the exact systems that scaled his business.
 
-[Learn more about the program →](/programs) | [Watch free training →](/free-training)
+[blog resources](/blog/) | [Watch free training →](/free-training)
 
 ---
 

@@ -397,11 +397,11 @@ Use this checklist as your pre-sign-off meeting template with your tax team.
 
 Review this process quarterly, not only annually. Tax decisions around deductions, withdrawals, and retirement sequencing must stay aligned. Use these related resources as your implementation follow-up: [401k withdrawal planning](/blog/best-tax-strategy-for-401k-withdrawal), [IRA withdrawal planning](/blog/best-tax-strategy-for-ira-withdrawals), and [retirement strategy guide](/blog/best-tax-strategy-for-retirement).
 
-For broader strategic support and coaching structure, compare available education at the [programs](/programs) page and keep up with current case-style content in the [blog](/blog).
+For broader strategic support and coaching structure, compare available education at the [blog resources](/blog/) page and keep up with current case-style content in the [blog](/blog).
 
 ## Related Resources
 - [Tax Strategies Hub](/topics/tax-strategies)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: best tax strategy for retirement](/blog/best-tax-strategy-for-retirement)
 - [Related Guide: best tax strategy for ira withdrawals](/blog/best-tax-strategy-for-ira-withdrawals)

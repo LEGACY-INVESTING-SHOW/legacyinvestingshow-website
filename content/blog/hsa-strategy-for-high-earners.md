@@ -423,4 +423,4 @@ Use this short framework each year:
 - Liquidity: Can I pay current medical costs from cash to preserve compounding?
 - Execution: Do I have payroll setup, investment rules, and documentation discipline?
 
-If most answers are yes, the hsa strategy for high earners is often one of the cleanest tax moves available. If several answers are no, adjust the strategy or skip it for now and revisit during next enrollment. For hands-on implementation help, review [programs](/programs).
+If most answers are yes, the hsa strategy for high earners is often one of the cleanest tax moves available. If several answers are no, adjust the strategy or skip it for now and revisit during next enrollment. For hands-on implementation help, review [blog resources](/blog/).

@@ -275,7 +275,7 @@ Decision from this example:
 9. Set a reserve for any estimated tax payments.
 10. Re-run projections in late Q4 and adjust final amount before year-end.
 
-If you want more educational walkthroughs on taxes and retirement cash-flow strategy, browse the [blog](/blog) and program structure details at [programs](/programs).
+If you want more educational walkthroughs on taxes and retirement cash-flow strategy, browse the [blog](/blog) and program structure details at [blog resources](/blog/).
 
 ## 30-Day Checklist
 

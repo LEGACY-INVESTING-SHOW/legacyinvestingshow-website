@@ -362,4 +362,4 @@ Your operational approach should be:
 - Use advisor-reviewed scenario modeling for strategy choices.
 - Re-check assumptions once current-year IRS updates are released.
 
-If you want help building a broader tax and wealth workflow around this, start with the [blog](/blog) or review available [programs](/programs).
+If you want help building a broader tax and wealth workflow around this, start with the [blog](/blog) or review available [blog resources](/blog/).

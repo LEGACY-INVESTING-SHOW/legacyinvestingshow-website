@@ -31,7 +31,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-tax-strategy-books.jpg
 imageAlt: >-
   Best Tax Strategy Books: Complete 2026 Guide for Smarter U.S. Tax Planning
   guide
@@ -396,7 +396,7 @@ Bring these questions to your next meeting:
 11. What should be revisited at mid-year and again before year-end?
 12. What is the simplest dashboard we can review monthly?
 
-If you want deeper implementation support beyond reading, compare available resources on [our programs page](/programs).
+If you want deeper implementation support beyond reading, compare available resources on [blog resources](/blog/).
 
 ## Final Decision Rule for 2026
 

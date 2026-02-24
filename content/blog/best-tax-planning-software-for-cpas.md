@@ -389,6 +389,6 @@ Use these questions before signing and before full rollout.
 
 ## Practical next move for 2026 buyers
 
-If you want the best tax planning software for cpas, start with economics, then prove fit in a controlled pilot. Use one scorecard, one owner, one 30-day plan, and one weekly KPI review rhythm. For related planning context, review [best tax deductions for individuals](/blog/best-tax-deductions-for-individuals), [best tax deductions for self-employed](/blog/best-tax-deductions-for-self-employed), and implementation support options on [programs](/programs).
+If you want the best tax planning software for cpas, start with economics, then prove fit in a controlled pilot. Use one scorecard, one owner, one 30-day plan, and one weekly KPI review rhythm. For related planning context, review [best tax deductions for individuals](/blog/best-tax-deductions-for-individuals), [best tax deductions for self-employed](/blog/best-tax-deductions-for-self-employed), and implementation support options on [blog resources](/blog/).
 
 A disciplined selection and rollout process generally beats brand chasing. The winning platform is the one your team can adopt quickly, apply consistently, and monetize through better advisory outcomes.

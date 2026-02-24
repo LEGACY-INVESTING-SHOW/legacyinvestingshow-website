@@ -410,4 +410,4 @@ This avoids false confidence from one good weekend or one bad week.
 
 ## Final Action Plan
 
-A strong airbnb pricing strategy for operators is a repeatable operating system: floor protection, demand-state rules, controlled testing, and weekly review. If you want implementation support, use the same framework when evaluating coaching or tooling options from [programs](/programs). Focus on stable contribution margin first, then scale nights and ADR from a position of control.
+A strong airbnb pricing strategy for operators is a repeatable operating system: floor protection, demand-state rules, controlled testing, and weekly review. If you want implementation support, use the same framework when evaluating coaching or tooling options from [blog resources](/blog/). Focus on stable contribution margin first, then scale nights and ADR from a position of control.

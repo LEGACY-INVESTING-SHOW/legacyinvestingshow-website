@@ -416,7 +416,7 @@ function buildInternalLinkTargets(relatedPosts, categoryKey) {
   const links = [
     hubs[categoryKey] || '/blog',
     '/blog',
-    '/programs',
+    '/blog/',
     ...relatedPosts.slice(0, 6).map((p) => `/blog/${p.slug}`)
   ];
 
@@ -581,7 +581,7 @@ function runCodex(prompt, options) {
           '',
           '## Continue Reading',
           '- [Related guide](/blog)',
-          '- [Related guide](/programs)',
+          '- [Related guide](/blog/)',
           '- [Related guide](/topics/investing)',
           '',
           Array.from({ length: 260 }, (_, i) => `Additional dry-run paragraph ${i + 1} for word-count validation.`).join('\n\n')

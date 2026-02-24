@@ -526,7 +526,7 @@ Most education focuses on volume—getting as many properties as possible. The B
 
 The operators who will thrive in 2025 and beyond aren't those chasing the latest "hack" or competing on price. They're those who commit to quality, invest in differentiation, and build systems that scale.
 
-[Learn the complete Bridge Method framework with Legacy Investing Show](/programs)
+[Learn the complete Bridge Method framework with Legacy Investing Show](/blog/)
 
 ### More Resources
 
@@ -546,7 +546,7 @@ The operators who will thrive in 2025 and beyond aren't those chasing the latest
 
 I created Legacy Investing Show to teach the exact systems that scaled my business from $15K first-month bookings to $34K/month—providing the strategy, scripts, and community that accelerate success.
 
-[Learn more about the program](/programs) | [Watch free training](/free-training)
+[blog resources](/blog/) | [Watch free training](/free-training)
 
 ---
 

@@ -34,7 +34,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/heloc-strategy-for-high-earners-with-lifestyle-debt.jpg
 imageAlt: 'heloc strategy for high earners with lifestyle debt: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -411,4 +411,4 @@ If this article describes your situation, do three things this week:
 - Run base and stress-case math before applying.
 - Install behavior controls before any HELOC draw.
 
-Then compare your plan against resources in [Debt Management](/topics/debt-management), review the [debt consolidation guide](/blog/debt-consolidation-guide), and only proceed if the numbers and behavior both support execution. If you need more structured help, explore [program options](/programs).
+Then compare your plan against resources in [Debt Management](/topics/debt-management), review the [debt consolidation guide](/blog/debt-consolidation-guide), and only proceed if the numbers and behavior both support execution. If you need more structured help, explore [blog resources](/blog/).

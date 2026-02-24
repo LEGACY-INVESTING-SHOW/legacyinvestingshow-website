@@ -36,7 +36,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/self-storage-investing-tax-implications.jpg
 imageAlt: >-
   Self Storage Investing Tax Implications: Complete 2026 Guide to Depreciation,
   Cost Segregation, and Exit Taxes guide
@@ -373,7 +373,7 @@ Cons:
 - Recapture and exit planning matter more than many beginners expect.
 - Financing conditions and local supply shifts can affect performance quickly.
 
-If you want implementation help across tax, debt, and portfolio sequencing, start with the [programs](/programs) page and compare fit to your current stage.
+If you want implementation help across tax, debt, and portfolio sequencing, start with the [blog resources](/blog/) page and compare fit to your current stage.
 
 ## When Not to Use This Strategy
 

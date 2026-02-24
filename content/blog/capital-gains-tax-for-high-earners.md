@@ -386,4 +386,4 @@ Good advisors should answer with numbers, not only concepts.
 ## Final Action Plan for 2026
 Start with a written base case, then test two to three alternatives before you sell. Use IRS Topic 409 for mechanics, and use practical rate summaries from sources like Fidelity and NerdWallet to frame assumptions. Then have your CPA and advisor validate the final execution order.
 
-If you want to build broader tax efficiency around this sale, continue with [best tax deductions for self-employed](/blog/best-tax-deductions-for-self-employed), explore training options on [programs](/programs), or map adjacent strategies in the [tax strategy hub](/topics/tax-strategies).
+If you want to build broader tax efficiency around this sale, continue with [best tax deductions for self-employed](/blog/best-tax-deductions-for-self-employed), explore training options on [blog resources](/blog/), or map adjacent strategies in the [tax strategy hub](/topics/tax-strategies).

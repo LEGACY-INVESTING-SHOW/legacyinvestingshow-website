@@ -390,6 +390,6 @@ If your advisor cannot answer these clearly, pause implementation and get a seco
 - Run the scoring framework in this guide with real numbers from last 12 months.
 - Build your 90-day implementation plan with named owners and deadlines.
 - Review structure, tax, and insurance together in one meeting, not as separate projects.
-- If you are building at scale, compare DIY effort against supported implementation options at [/programs](/programs) and use [/blog](/blog) for deeper tactical guides.
+- If you are building at scale, compare DIY effort against supported implementation options at [blog resources](/blog/) and use [/blog](/blog) for deeper tactical guides.
 
 Research context integrated in this guide includes practical observations from IRS resources, Texas Secretary of State materials, Delaware statutory rules, California Franchise Tax Board guidance, and implementation commentary from Acciyo, LegalClarity, LegalGPS, and Long Gilbert.

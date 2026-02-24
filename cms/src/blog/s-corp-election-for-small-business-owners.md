@@ -35,7 +35,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/s-corp-election-for-small-business-owners.jpg
 imageAlt: 'S Corp Election for Small Business Owners: Complete 2026 Decision Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -406,4 +406,4 @@ In short, do not elect for social-media style tax hype. Elect when the math and 
 
 If your business has steady profit and you can commit to payroll discipline, run a formal side-by-side model this week. Use this guide as your worksheet, then validate assumptions with your advisor before filing.
 
-For deeper planning, continue with the [full blog library](/blog), explore implementation support in [programs](/programs), and keep your structure decisions tied to your broader operating plan from the [Business Structures hub](/topics/business-structures).
+For deeper planning, continue with the [full blog library](/blog), explore implementation support in [blog resources](/blog/), and keep your structure decisions tied to your broader operating plan from the [Business Structures hub](/topics/business-structures).

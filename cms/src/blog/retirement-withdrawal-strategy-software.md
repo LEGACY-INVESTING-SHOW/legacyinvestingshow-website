@@ -36,7 +36,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/retirement-withdrawal-strategy-software.jpg
 imageAlt: >-
   Retirement Withdrawal Strategy Software: Complete 2026 Guide for Tax-Smart
   Income Planning guide
@@ -399,7 +399,7 @@ Use these internal guides to tighten assumptions and compare frameworks:
 - [457b plan guide](/blog/457b-plan-guide)
 - [Early retirement withdrawal guide](/blog/early-retirement-withdrawal)
 - [Legacy Investing Show blog library](/blog)
-- [Programs overview](/programs)
+- [blog resources](/blog/)
 
 Read one tactical guide, adjust one assumption, rerun one scenario. Repeat monthly.
 

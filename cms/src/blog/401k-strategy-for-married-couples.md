@@ -38,7 +38,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/401k-strategy-for-married-couples.jpg
 imageAlt: >-
   401k Strategy for Married Couples: Complete 2026 Guide to Coordinating Taxes,
   Contributions, and Retirement Timing guide
@@ -444,4 +444,4 @@ Investopedia also discusses staggered retirement timing as a practical approach 
 
 A practical 401k strategy for married couples is a repeatable operating system: capture both matches, choose tax treatment deliberately, manage both plans as one household portfolio, and update annually. Keep the process simple and measurable.
 
-Next, review related planning guides on the [blog](/blog), compare advanced options in [401k strategy vs taxable brokerage](/blog/401k-strategy-vs-taxable-brokerage), and evaluate implementation support through [programs](/programs).
+Next, review related planning guides on the [blog](/blog), compare advanced options in [401k strategy vs taxable brokerage](/blog/401k-strategy-vs-taxable-brokerage), and evaluate implementation support through [blog resources](/blog/).

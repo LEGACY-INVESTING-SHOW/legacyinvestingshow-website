@@ -35,7 +35,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/capital-gains-tax-vs-retirement-contributions.jpg
 imageAlt: >-
   Capital Gains Tax vs Retirement Contributions: Which Strategy Works Better in
   2026? guide
@@ -155,7 +155,7 @@ If you are deciding between **capital gains tax vs retirement contributions**, y
 
 In 2026, this comparison matters even more for households juggling multiple goals: investing, reducing taxes, managing debt, and preparing for retirement. IRS Topic 409, updated February 15, 2026, remains a key reference for federal capital gains treatment. At the same time, retirement plan tax rules continue to create one of the biggest legal levers for reducing long-term tax drag.
 
-If you want related planning frameworks, review the [Tax Strategies hub](/topics/tax-strategies), browse the full [blog](/blog), and compare deduction playbooks like [best tax deductions for high-income earners](/blog/best-tax-deductions-for-high-income-earners). If you want guided implementation, see [programs](/programs).
+If you want related planning frameworks, review the [Tax Strategies hub](/topics/tax-strategies), browse the full [blog](/blog), and compare deduction playbooks like [best tax deductions for high-income earners](/blog/best-tax-deductions-for-high-income-earners). If you want guided implementation, see [blog resources](/blog/).
 
 ## Capital gains tax vs retirement contributions: The core decision in 2026
 

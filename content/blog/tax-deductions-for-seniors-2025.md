@@ -343,5 +343,5 @@ In these cases, choose itemization or a broader year-over-year coordination plan
 
 ## Related internal navigation for broader tax planning
 - Browse the high-level page set at [Tax Strategies](/topics/tax-strategies).
-- Review practical examples in [Programs](/programs).
+- Review practical examples in [blog resources](/blog/).
 - Check the [blog index](/blog) for recent strategy updates before finalizing your filing memo.

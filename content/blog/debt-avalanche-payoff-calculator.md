@@ -380,4 +380,4 @@ Use this quick framework:
 
 If you can answer yes to most of these, a debt avalanche payoff calculator is likely a strong fit. Keep the plan simple, recalculate monthly, and focus on execution quality over perfect forecasts.
 
-For more implementation help, browse the latest guides on the [blog](/blog) or review support options on [programs](/programs).
+For more implementation help, browse the latest guides on the [blog](/blog) or review support options on [blog resources](/blog/).

@@ -343,7 +343,7 @@ Pros:
 Cons:
 - May leave tax efficiency on the table once profits scale
 
-If privacy structure and entity layering are also on your radar, compare this decision with your broader planning through the [anonymous LLC guide](/blog/anonymous-llc). For implementation help, see available [programs](/programs).
+If privacy structure and entity layering are also on your radar, compare this decision with your broader planning through the [anonymous LLC guide](/blog/anonymous-llc). For implementation help, see available [blog resources](/blog/).
 
 ## When Not to Use This Strategy
 

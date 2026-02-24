@@ -563,7 +563,7 @@ Airbnb arbitrage works in most markets with tourism or business travel demand. U
 
 The numbers are clear: $10,000 startup cost, 6-month ROI timeline, and the potential to scale to $20,000/month or more using the compounding strategy.
 
-[Learn the complete system with Legacy Investing Show](/programs)
+[Learn the complete system with Legacy Investing Show](/blog/)
 
 ### Helpful Resources
 
@@ -583,7 +583,7 @@ The numbers are clear: $10,000 startup cost, 6-month ROI timeline, and the poten
 
 Preston created Legacy Investing Show to teach the exact systems that scaled his business from $6,000 to $20,000/month in just three months.
 
-[Learn more about the program](/programs) | [Watch free training](/free-training)
+[blog resources](/blog/) | [Watch free training](/free-training)
 
 ---
 

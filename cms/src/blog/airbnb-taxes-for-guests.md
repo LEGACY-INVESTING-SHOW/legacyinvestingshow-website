@@ -35,7 +35,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-taxes-for-guests.jpg
 imageAlt: >-
   Airbnb Taxes for Guests: Complete 2026 Guide to Costs, Tradeoffs, and Smarter
   Booking Decisions guide
@@ -274,7 +274,7 @@ Example: only book listings where all-in nightly equivalent is below your target
 8. Save documentation immediately.  
 Keep screenshots or PDFs of checkout lines, plus final receipts, in a dedicated folder.
 
-If you want coaching on building repeatable acquisition and underwriting habits, review the [programs](/programs) page.
+If you want coaching on building repeatable acquisition and underwriting habits, review the [blog resources](/blog/) page.
 
 ## 30-Day Checklist for Frequent Travelers and Airbnb Arbitrage Operators
 

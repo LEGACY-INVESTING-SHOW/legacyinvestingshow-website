@@ -373,4 +373,4 @@ The quality of these answers is more predictive than any filing shortcut.
 
 If your model shows clear savings and your advisors confirm state and lender alignment, a Series LLC can be a durable operating structure. If the model is close, choose the structure your team can execute flawlessly every month.
 
-For additional implementation examples, review the [blog](/blog), compare state considerations at [best state for series LLC](/blog/best-state-for-series-llc), and use the training resources in [programs](/programs) to build repeatable operating systems.
+For additional implementation examples, review the [blog](/blog), compare state considerations at [best state for series LLC](/blog/best-state-for-series-llc), and use the training resources in [blog resources](/blog/) to build repeatable operating systems.

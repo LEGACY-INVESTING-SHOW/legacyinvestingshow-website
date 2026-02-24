@@ -164,7 +164,7 @@ Avoid this strategy when liquidity is unstable, risk controls are undefined, or 
 
 ## Continue Reading
 - [Related guide](/blog)
-- [Related guide](/programs)
+- [Related guide](/blog/)
 - [Related guide](/topics/investing)
 
 Additional dry-run paragraph 1 for word-count validation.

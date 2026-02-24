@@ -33,7 +33,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-planning-for-physicians.jpg
 imageAlt: >-
   Tax Planning for Physicians: Complete 2026 Guide to Smarter Tax Decisions
   guide
@@ -359,4 +359,4 @@ Good tax planning is personalized risk management, not template copying.
 Require written answers with numbers. That is how planning becomes executable.
 
 ## Practical Next Moves
-Start one operating system, not ten disconnected tactics. Map income, project taxes, automate reserves, and review quarterly. For implementation support, use the [blog](/blog), the [W-2 deduction guide](/blog/best-tax-deductions-for-w2-employees), and [programs](/programs) if you want structured accountability.
+Start one operating system, not ten disconnected tactics. Map income, project taxes, automate reserves, and review quarterly. For implementation support, use the [blog](/blog), the [W-2 deduction guide](/blog/best-tax-deductions-for-w2-employees), and [blog resources](/blog/) if you want structured accountability.

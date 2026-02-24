@@ -437,13 +437,13 @@ Use this simple decision hierarchy:
 - Fourth: preserve flexibility in Roth and spending choices.
 - Fifth: re-test annually.
 
-For deeper implementation support, review our [401k rollover guide](/blog/401k-rollover-guide), compare account choices in [401k strategy vs taxable brokerage](/blog/401k-strategy-vs-taxable-brokerage), and browse additional planning resources on [the blog](/blog) and [programs](/programs).
+For deeper implementation support, review our [401k rollover guide](/blog/401k-rollover-guide), compare account choices in [401k strategy vs taxable brokerage](/blog/401k-strategy-vs-taxable-brokerage), and browse additional planning resources on [the blog](/blog) and [blog resources](/blog/).
 
 Educational note: tax rules and thresholds can change, and state taxes differ. Use this framework as a planning system, then finalize numbers with your licensed tax professional.
 
 ## Related Resources
 - [Retirement Hub](/topics/retirement)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: strategy for retirement withdrawals](/blog/strategy-for-retirement-withdrawals)
 - [Related Guide: retirement withdrawal strategy tax implications](/blog/retirement-withdrawal-strategy-tax-implications)

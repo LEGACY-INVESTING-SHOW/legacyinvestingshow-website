@@ -28,7 +28,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/student-loan-strategies.jpg
 imageAlt: 'Student Loan Repayment Strategies: PSLF, IDR & Forgiveness guide'
 imageWidth: 1200
 imageHeight: 630
@@ -407,7 +407,7 @@ If you review student loan repayment strategies with a CPA/attorney/advisor, bri
 
 ## Internal Links To Continue
 - [Browse related guides](/blog/category/debt-management)
-- [Programs and implementation support](/programs)
+- [blog resources](/blog/)
 - [Latest blog posts](/blog)
 
 ## Final Word

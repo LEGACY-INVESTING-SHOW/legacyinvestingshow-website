@@ -631,7 +631,7 @@ Which platform performs better varies by market, property type, and guest demogr
 
 **Ready to build your own Airbnb arbitrage business like Grayson?**
 
-[Learn more about Legacy Investing Show](/programs)
+[Learn more about Legacy Investing Show](/blog/)
 
 ### Related Success Stories
 
@@ -661,7 +661,7 @@ Which platform performs better varies by market, property type, and guest demogr
 
 Preston Seo created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, spreadsheets, and community that accelerate success.
 
-[Learn more about the program](/programs) | [Watch free training](/free-training)
+[blog resources](/blog/) | [Watch free training](/free-training)
 
 ---
 

@@ -28,7 +28,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/retirement-healthcare-planning.jpg
 imageAlt: 'Retirement Healthcare Planning: Medicare, HSA & Cost Strategies guide'
 imageWidth: 1200
 imageHeight: 630
@@ -405,7 +405,7 @@ If you review retirement healthcare planning with a CPA/attorney/advisor, bring:
 
 ## Internal Links To Continue
 - [Browse related guides](/blog/category/retirement)
-- [Programs and implementation support](/programs)
+- [blog resources](/blog/)
 - [Latest blog posts](/blog)
 
 ## Final Word

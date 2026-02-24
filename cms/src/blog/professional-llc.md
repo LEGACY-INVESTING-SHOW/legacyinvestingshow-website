@@ -28,7 +28,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/professional-llc.jpg
 imageAlt: 'Professional LLC (PLLC): Entity Structure for Licensed Professionals guide'
 imageWidth: 1200
 imageHeight: 630
@@ -402,7 +402,7 @@ If you review professional LLC PLLC with a CPA/attorney/advisor, bring:
 
 ## Internal Links To Continue
 - [Browse related guides](/blog/category/business-structures)
-- [Programs and implementation support](/programs)
+- [blog resources](/blog/)
 - [Latest blog posts](/blog)
 
 ## Final Word

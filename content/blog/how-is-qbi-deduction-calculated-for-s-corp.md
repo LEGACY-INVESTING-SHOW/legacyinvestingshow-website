@@ -380,7 +380,7 @@ Ask these before implementing any wage or asset change:
 - What is the fallback if revenue timing changes in Q4?
 - What documentation package will satisfy audit defensibility?
 
-If you want a wider strategy map, also review [individual tax deductions](/blog/best-tax-deductions-for-individuals), [w2-related planning](/blog/best-tax-deductions-for-w2-employees), and [program participation options](/programs).
+If you want a wider strategy map, also review [individual tax deductions](/blog/best-tax-deductions-for-individuals), [w2-related planning](/blog/best-tax-deductions-for-w2-employees), and [blog resources](/blog/).
 
 ## Final action framework
 
@@ -389,6 +389,6 @@ For most 2026 owners, the best sequence is: verify eligibility and status, model
 ## Related Resources
 - [Tax Strategies Hub](/topics/tax-strategies)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: best tax strategy for retirement](/blog/best-tax-strategy-for-retirement)
 - [Related Guide: best tax strategy for ira withdrawals](/blog/best-tax-strategy-for-ira-withdrawals)

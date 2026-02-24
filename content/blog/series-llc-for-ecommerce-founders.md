@@ -340,7 +340,7 @@ Use this sequence to reduce expensive rework.
 - [ ] Run a mock dispute scenario to test document and payment separation.
 - [ ] Create an owner dashboard with revenue, margin, and risk KPIs by series.
 
-For additional operating templates, review the main [blog](/blog) and training paths in [programs](/programs).
+For additional operating templates, review the main [blog](/blog) and training paths in [blog resources](/blog/).
 
 ## How This Compares to Alternatives
 

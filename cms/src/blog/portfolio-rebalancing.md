@@ -28,7 +28,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/portfolio-rebalancing.jpg
 imageAlt: 'Portfolio Rebalancing: When and How to Adjust Your Investments guide'
 imageWidth: 1200
 imageHeight: 630
@@ -402,7 +402,7 @@ If you review portfolio rebalancing with a CPA/attorney/advisor, bring:
 
 ## Internal Links To Continue
 - [Browse related guides](/blog/category/investing)
-- [Programs and implementation support](/programs)
+- [blog resources](/blog/)
 - [Latest blog posts](/blog)
 
 ## Final Word

@@ -36,7 +36,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/capital-gains-tax-for-small-business-owners.jpg
 imageAlt: >-
   Capital Gains Tax for Small Business Owners: Complete 2026 Guide to
   Structuring Your Exit guide
@@ -150,7 +150,7 @@ wordCount: '1827'
 ---
 If you are preparing for an exit, capital gains tax for small business owners is not a minor line item. It is often the biggest variable between a solid sale and a truly wealth-changing one. The practical goal is not to chase a single low tax rate. The goal is to maximize after-tax proceeds while still getting a deal closed with acceptable risk and timing.
 
-This guide is educational and planning-focused. Use it with your CPA, transaction attorney, and wealth advisor. For broader context, start with the [Tax Strategies hub](/topics/tax-strategies), review current planning content on the [blog](/blog), and evaluate support options in [programs](/programs).
+This guide is educational and planning-focused. Use it with your CPA, transaction attorney, and wealth advisor. For broader context, start with the [Tax Strategies hub](/topics/tax-strategies), review current planning content on the [blog](/blog), and evaluate support options in [blog resources](/blog/).
 
 ## Capital gains tax for small business owners: the 3 decisions that drive your outcome
 

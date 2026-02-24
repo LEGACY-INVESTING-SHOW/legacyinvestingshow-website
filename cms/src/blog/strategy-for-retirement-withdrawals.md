@@ -364,5 +364,5 @@ In those cases, a simpler withdrawal approach or guaranteed income blend may out
 ## Related Resources
 - [Retirement Hub](/topics/retirement)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: retirement withdrawal strategy tax implications](/blog/retirement-withdrawal-strategy-tax-implications)

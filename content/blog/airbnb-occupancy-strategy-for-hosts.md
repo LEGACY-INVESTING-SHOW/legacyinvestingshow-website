@@ -294,7 +294,7 @@ Recompute net RevPAR and contribution margin by booking channel and stay length.
 8. **Week 8: Scale decision**
 If targets are hit, standardize SOPs and replicate on the next unit. If not, adjust occupancy lane and retest.
 
-This structure works especially well for hosts balancing jobs and operations. If you want structured support, compare implementation help options under [programs](/programs).
+This structure works especially well for hosts balancing jobs and operations. If you want structured support, compare implementation help options under [blog resources](/blog/).
 
 ## 30-Day Checklist to Improve Occupancy Without Crushing Margin
 - [ ] Day 1: Export last 90 days of bookings and calculate occupancy, ADR, net RevPAR.

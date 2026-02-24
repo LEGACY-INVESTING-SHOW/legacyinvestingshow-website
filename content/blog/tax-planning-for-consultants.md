@@ -337,4 +337,4 @@ Use these in your next planning meeting:
 ## Practical Next Move for 2026
 Start with architecture, not hacks. Install your reserve system, evaluate entity economics with explicit assumptions, and review your forecast monthly. That is the core of durable tax planning for consultants.
 
-For implementation support, compare educational resources in [programs](/programs), then pair them with your own CPA guidance so each decision is grounded in your numbers and your risk tolerance.
+For implementation support, compare educational resources in [blog resources](/blog/), then pair them with your own CPA guidance so each decision is grounded in your numbers and your risk tolerance.

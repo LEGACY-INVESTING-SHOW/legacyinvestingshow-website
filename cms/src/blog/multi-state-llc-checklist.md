@@ -32,7 +32,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/multi-state-llc-checklist.jpg
 imageAlt: >-
   Multi State LLC Checklist: Practical Guide + Examples for Real-World Expansion
   guide
@@ -405,7 +405,7 @@ Use these guides while implementing your checklist:
 - Registered agent selection: [Best Registered Agent for LLC](/blog/best-registered-agent-for-llc)
 - Service comparison options: [Best Registered Agent Service for LLC](/blog/best-registered-agent-service-for-llc)
 - Financing and banking readiness: [Business Credit Building](/blog/business-credit-building)
-- Broader education and implementation support: [Programs](/programs)
+- Broader education and implementation support: [blog resources](/blog/)
 - More case studies and tactical posts: [Blog](/blog)
 
 ## Final decision framework

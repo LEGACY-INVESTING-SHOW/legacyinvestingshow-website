@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-planning-for-real-estate-investors.jpg
 imageAlt: 'Tax Planning for Real Estate Investors: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -341,7 +341,7 @@ Use this as an execution sprint.
 - Validate that state filings, local licensing, and entity renewals are current.
 - Confirm your personal cash reserve can cover taxes even if income lags.
 
-If you need more examples to adapt, browse the [Legacy blog](/blog) and related implementation resources in [Programs](/programs).
+If you need more examples to adapt, browse the [Legacy blog](/blog) and related implementation resources in [blog resources](/blog/).
 
 ## Common Mistakes That Cost Investors Thousands
 

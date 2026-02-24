@@ -337,6 +337,6 @@ Final practical move: start with the retirement structure on [the retirement top
 ## Related Resources
 - [Retirement Hub](/topics/retirement)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: strategy for retirement withdrawals](/blog/strategy-for-retirement-withdrawals)
 - [Related Guide: retirement withdrawal strategy tax implications](/blog/retirement-withdrawal-strategy-tax-implications)

@@ -28,7 +28,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/business-credit-building.jpg
 imageAlt: 'Business Credit Building: Separate Your Personal & Business Finances guide'
 imageWidth: 1200
 imageHeight: 630
@@ -402,7 +402,7 @@ If you review build business credit with a CPA/attorney/advisor, bring:
 
 ## Internal Links To Continue
 - [Browse related guides](/blog/category/business-structures)
-- [Programs and implementation support](/programs)
+- [blog resources](/blog/)
 - [Latest blog posts](/blog)
 
 ## Final Word

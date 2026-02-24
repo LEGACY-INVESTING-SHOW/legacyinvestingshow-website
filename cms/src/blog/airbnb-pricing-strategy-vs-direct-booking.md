@@ -36,7 +36,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-pricing-strategy-vs-direct-booking.jpg
 imageAlt: >-
   Airbnb Pricing Strategy vs Direct Booking: Which Strategy Works Better in
   2026? guide
@@ -312,7 +312,7 @@ Document refund policy, chargeback process, and guest screening criteria. Do not
 10. Day 90 review: Decide next quarter mix.
 Keep Airbnb as demand hedge unless direct conversion and repeat metrics stay stable for two consecutive months.
 
-If you need tactical walkthroughs, use [all pricing strategy posts](/blog) and evaluate training fit at [Programs](/programs).
+If you need tactical walkthroughs, use [all pricing strategy posts](/blog) and evaluate training fit at [blog resources](/blog/).
 
 ## 30-Day Execution Checklist
 

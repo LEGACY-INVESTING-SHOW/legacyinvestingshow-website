@@ -33,7 +33,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/ira-strategy-for-high-earners.jpg
 imageAlt: >-
   IRA Strategy for High Earners: Complete 2026 Guide to Backdoor Roth Decisions
   guide

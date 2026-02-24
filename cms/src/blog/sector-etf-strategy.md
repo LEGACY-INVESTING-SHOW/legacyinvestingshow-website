@@ -28,7 +28,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/sector-etf-strategy.jpg
 imageAlt: 'Sector ETF Strategy: How to Invest in Market Segments guide'
 imageWidth: 1200
 imageHeight: 630
@@ -402,7 +402,7 @@ If you review sector ETF with a CPA/attorney/advisor, bring:
 
 ## Internal Links To Continue
 - [Browse related guides](/blog/category/investing)
-- [Programs and implementation support](/programs)
+- [blog resources](/blog/)
 - [Latest blog posts](/blog)
 
 ## Final Word

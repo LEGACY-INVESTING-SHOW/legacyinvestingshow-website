@@ -33,7 +33,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-planning-for-beginners.jpg
 imageAlt: >-
   Tax Planning for Beginners: Complete 2026 Guide to Reducing Your Tax Bill
   guide
@@ -395,4 +395,4 @@ Bring a one-page summary before the meeting: expected income range, current with
 
 First, implement one payroll change and one account change this week. Second, lock in your documentation workflow so deductions are supportable. Third, run one conservative projection before quarter-end and review it with a professional if complexity is rising.
 
-If you want to go deeper after this beginner framework, review [Tax Strategies hub](/topics/tax-strategies) and advanced deduction guides in [our programs page](/programs). Consistent execution beats perfect theory, especially in your first year of tax planning.
+If you want to go deeper after this beginner framework, review [Tax Strategies hub](/topics/tax-strategies) and advanced deduction guides in [blog resources](/blog/). Consistent execution beats perfect theory, especially in your first year of tax planning.

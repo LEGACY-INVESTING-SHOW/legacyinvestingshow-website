@@ -387,6 +387,6 @@ If you want to implement this carefully, start with your broader tax strategy fi
 - [Best tax deductions for high-income earners](/blog/best-tax-deductions-for-high-income-earners)
 - [Best tax deductions for W-2 employees](/blog/best-tax-deductions-for-w2-employees)
 - [All articles on the blog](/blog)
-- [Legacy Investing Show programs](/programs)
+- [blog resources](/blog/)
 
 The most reliable process is simple: model, stress test, execute in controlled size, and review annually with your CPA. That turns a roth conversion tax calculator from a generic estimator into a repeatable tax-planning system.

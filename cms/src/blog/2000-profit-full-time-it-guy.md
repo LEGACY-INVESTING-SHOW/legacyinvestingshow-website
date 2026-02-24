@@ -601,7 +601,7 @@ Brian also notes that short-term rental guests, when properly vetted, often trea
 
 **Ready to build your own Airbnb arbitrage business like Brian?**
 
-[Learn more about Legacy Investing Show](/programs)
+[Learn more about Legacy Investing Show](/blog/)
 
 ### Related Success Stories
 
@@ -631,7 +631,7 @@ Brian also notes that short-term rental guests, when properly vetted, often trea
 
 Preston Seo created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[Learn more about the program](/programs) | [Watch free training](/free-training)
+[blog resources](/blog/) | [Watch free training](/free-training)
 
 ---
 

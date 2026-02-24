@@ -32,7 +32,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/series-llc-for-service-businesses.jpg
 imageAlt: 'Series LLC for Service Businesses: Complete 2026 Guide for U.S. Owners guide'
 imageWidth: 1200
 imageHeight: 630
@@ -385,4 +385,4 @@ In these cases, a single LLC with stronger insurance and contract controls, or m
 
 A Series LLC can be excellent for service businesses with real risk segmentation and strong operational discipline. It can also become an expensive headache if you treat it like a filing shortcut. Use the scorecard, run the numeric model, and validate state-by-state treatment before you commit. Then build the structure operationally, not just legally.
 
-For deeper implementation resources, review the [blog](/blog), compare options at [programs](/programs), and use this guide alongside your CPA and attorney.
+For deeper implementation resources, review the [blog](/blog), compare options at [blog resources](/blog/), and use this guide alongside your CPA and attorney.

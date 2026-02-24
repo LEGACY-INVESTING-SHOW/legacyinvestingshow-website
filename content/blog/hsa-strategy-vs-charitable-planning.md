@@ -409,4 +409,4 @@ In these cases, focus first on liquidity, debt cost, and baseline tax filing sta
 
 For many eligible households, HSA-first is the stronger default for personal after-tax wealth. For households with high philanthropic intent, itemizing capacity, and appreciated assets, charitable planning can produce major tax efficiency and larger grant impact. The practical winner is often a coordinated sequence, not a single tactic.
 
-Use this framework, run numbers with your advisor, and then pressure-test against your full plan on [blog](/blog) and [programs](/programs).
+Use this framework, run numbers with your advisor, and then pressure-test against your full plan on [blog](/blog) and [blog resources](/blog/).

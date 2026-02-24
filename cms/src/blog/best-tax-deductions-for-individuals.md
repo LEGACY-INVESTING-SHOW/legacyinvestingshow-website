@@ -341,13 +341,13 @@ If your goal is commercial actionability, every mistake here has a predictable d
 - How do these choices interact with planned [401(k) withdrawal strategy](/blog/best-tax-strategy-for-401k-withdrawal)?
 - Should we model a comparison between deductions and retirement withdrawal timing under [tax deduction vs retirement contribution planning](/blog/tax-deduction-vs-retirement-contributions)?
 - Could we automate a simpler tracking flow through the education and business tools you already use?
-- Are any of these choices easier if done through a dedicated plan under [programmatic tax strategy programs](/programs)?
+- Are any of these choices easier if done through a dedicated plan under [blog resources](/blog/)?
 
 This structure makes the best tax deductions for individuals a repeatable operating system: evaluate, compare, document, and then execute with intent.
 
 ## Related Resources
 - [Tax Strategies Hub](/topics/tax-strategies)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: best tax strategy for retirement](/blog/best-tax-strategy-for-retirement)
 - [Related Guide: best tax strategy for ira withdrawals](/blog/best-tax-strategy-for-ira-withdrawals)

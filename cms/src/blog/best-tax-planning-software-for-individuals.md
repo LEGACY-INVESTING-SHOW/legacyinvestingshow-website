@@ -33,7 +33,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-tax-planning-software-for-individuals.jpg
 imageAlt: 'Best Tax Planning Software for Individuals: Complete 2026 Decision Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -274,7 +274,7 @@ Use this as an execution checklist, not a reading list.
 - [ ] Document three planning moves for next tax year.
 - [ ] Schedule a mid-year tax check-in date on your calendar.
 
-If you want additional examples and implementation support, review [all tax and investing articles](/blog) and the training overview at [/programs](/programs).
+If you want additional examples and implementation support, review [all tax and investing articles](/blog) and the training overview at [blog resources](/blog/).
 
 ## How This Compares to Alternatives
 

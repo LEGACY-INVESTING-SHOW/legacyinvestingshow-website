@@ -375,6 +375,6 @@ If you want a fast path:
 2. Run the 3-year expected-cost model with your own numbers.
 3. Execute the 30-day checklist after onboarding.
 
-Then review your entity plan quarterly as your business changes. For broader strategy, browse our [blog](/blog) or see implementation support in our [programs](/programs).
+Then review your entity plan quarterly as your business changes. For broader strategy, browse our [blog](/blog) or see implementation support in our [blog resources](/blog/).
 
 Educational note: rules and enforcement vary by state and facts. Use this framework to improve decisions, then validate details with licensed legal and tax professionals.

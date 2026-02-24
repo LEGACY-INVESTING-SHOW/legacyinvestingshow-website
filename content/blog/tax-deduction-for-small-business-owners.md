@@ -428,13 +428,13 @@ The best question is always: “What is the pre-tax and after-tax outcome under 
 ## What to do this week
 - Read the IRS guidance on business errors and run your payroll calendar immediately.
 - Apply the five filters above to your top 20 expenses.
-- Choose one internal links to support your education path, then follow through on execution: [/topics/tax-strategies](/topics/tax-strategies), [/blog](/blog), and [/programs](/programs).
+- Choose one internal links to support your education path, then follow through on execution: [/topics/tax-strategies](/topics/tax-strategies), [/blog](/blog), and [blog resources](/blog/).
 
 You will increase your outcome not by finding one big write-off, but by building a system where deductions are predictable, defensible, and repeatedly harvested.
 
 ## Related Resources
 - [Tax Strategies Hub](/topics/tax-strategies)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: best tax strategy for retirement](/blog/best-tax-strategy-for-retirement)
 - [Related Guide: best tax strategy for ira withdrawals](/blog/best-tax-strategy-for-ira-withdrawals)

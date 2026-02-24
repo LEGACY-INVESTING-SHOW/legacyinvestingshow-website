@@ -406,4 +406,4 @@ Bring these questions to your next planning meeting:
 
 ## Practical Next Moves
 
-If you want to keep improving margin, connect tax decisions to pricing and operations, not just filing. Review [airbnb pricing strategy and tax implications](/blog/airbnb-pricing-strategy-tax-implications), browse more tactical breakdowns in the [blog](/blog), and map your scale plan to training in [programs](/programs). If you are still choosing your model, use the [Airbnb arbitrage topic hub](/topics/airbnb-arbitrage) to compare paths before committing capital.
+If you want to keep improving margin, connect tax decisions to pricing and operations, not just filing. Review [airbnb pricing strategy and tax implications](/blog/airbnb-pricing-strategy-tax-implications), browse more tactical breakdowns in the [blog](/blog), and map your scale plan to training in [blog resources](/blog/). If you are still choosing your model, use the [Airbnb arbitrage topic hub](/topics/airbnb-arbitrage) to compare paths before committing capital.

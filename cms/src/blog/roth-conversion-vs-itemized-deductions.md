@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/roth-conversion-vs-itemized-deductions.jpg
 imageAlt: >-
   Roth Conversion vs Itemized Deductions: Which Strategy Works Better in 2026?
   guide
@@ -412,6 +412,6 @@ If you want to keep building your tax playbook before meeting your CPA, review t
 - Compare deduction ideas in [best tax deductions for high-income earners](/blog/best-tax-deductions-for-high-income-earners).
 - If you are salaried, review [best tax deductions for W-2 employees](/blog/best-tax-deductions-for-w2-employees).
 - If you have side income or a business, read [best tax deductions for self-employed](/blog/best-tax-deductions-for-self-employed).
-- Browse broader planning examples on the [Legacy Investing Show blog](/blog) and implementation guidance under [programs](/programs).
+- Browse broader planning examples on the [Legacy Investing Show blog](/blog) and implementation guidance under [blog resources](/blog/).
 
 The best 2026 answer is usually not all conversion or all deductions. It is a bracket-aware, threshold-aware blend executed with clean math and disciplined timing.

@@ -35,7 +35,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/s-corp-election-best-strategy.jpg
 imageAlt: >-
   S Corp Election Best Strategy: Complete 2026 Guide for Profitable
   Owner-Operators guide
@@ -373,4 +373,4 @@ Ask for written assumptions, not only verbal guidance. A written model is easier
 
 If your projected annual net benefit is below roughly $3,000, many owners choose simplicity and revisit later. If projected benefit lands in the $5,000-$15,000 band with strong controls, election planning often deserves serious consideration. Above that level, disciplined execution usually determines results more than additional optimization.
 
-Use this as an educational framework, then connect tax classification to broader business strategy, lender readiness, and entity operations through [business credit building](/blog/business-credit-building), the full [blog library](/blog), and practical support paths in [Legacy Investing Show programs](/programs).
+Use this as an educational framework, then connect tax classification to broader business strategy, lender readiness, and entity operations through [business credit building](/blog/business-credit-building), the full [blog library](/blog), and practical support paths in [blog resources](/blog/).

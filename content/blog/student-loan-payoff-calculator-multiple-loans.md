@@ -441,7 +441,7 @@ Continue learning with:
 - [Debt avalanche method](/blog/debt-avalanche-method)
 - [Debt snowball method](/blog/debt-snowball-method)
 - [Credit score optimization](/blog/credit-score-optimization)
-- [Legacy Investing Show programs](/programs)
+- [blog resources](/blog/)
 - [All blog resources](/blog)
 
 If you execute the 30-day checklist and review monthly, you will usually make better decisions than borrowers who chase random hacks.

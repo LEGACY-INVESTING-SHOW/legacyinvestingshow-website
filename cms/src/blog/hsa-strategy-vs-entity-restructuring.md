@@ -33,7 +33,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/hsa-strategy-vs-entity-restructuring.jpg
 imageAlt: >-
   HSA Strategy vs Entity Restructuring: Which Strategy Works Better in 2026?
   guide
@@ -380,7 +380,7 @@ Then apply this rule:
 - If restructuring scores much higher on magnitude and your compliance score is strong, phase restructuring second.
 - If both scores are weak, postpone and focus on bookkeeping quality, debt cleanup, and baseline deduction hygiene.
 
-For ongoing updates and adjacent examples, use the [blog](/blog) and implementation support options in [programs](/programs).
+For ongoing updates and adjacent examples, use the [blog](/blog) and implementation support options in [blog resources](/blog/).
 
 ## Final Takeaway
 

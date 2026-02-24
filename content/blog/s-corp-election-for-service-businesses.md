@@ -362,6 +362,6 @@ If two or more metrics are consistently off plan, the strategy may still be righ
 
 If you are still choosing entity strategy, start with the [Business Structures hub](/topics/business-structures). For deeper implementation examples, review the [full blog library](/blog) and the [business credit building guide](/blog/business-credit-building).
 
-If privacy and entity setup are part of your plan, see the [anonymous LLC guide](/blog/anonymous-llc). If you want done-with-you execution support, evaluate the [programs page](/programs).
+If privacy and entity setup are part of your plan, see the [anonymous LLC guide](/blog/anonymous-llc). If you want done-with-you execution support, evaluate the [blog resources](/blog/).
 
 The highest-value move this week is simple: run your own break-even model with conservative assumptions, then validate it with your CPA before filing.

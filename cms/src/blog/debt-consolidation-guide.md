@@ -28,7 +28,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/debt-consolidation-guide.jpg
 imageAlt: 'Debt Consolidation Guide: Simplify Your Payments & Save guide'
 imageWidth: 1200
 imageHeight: 630
@@ -402,7 +402,7 @@ If you review debt consolidation with a CPA/attorney/advisor, bring:
 
 ## Internal Links To Continue
 - [Browse related guides](/blog/category/debt-management)
-- [Programs and implementation support](/programs)
+- [blog resources](/blog/)
 - [Latest blog posts](/blog)
 
 ## Final Word

@@ -395,4 +395,4 @@ At minimum, track these every year in one dashboard:
 - Healthcare premium impact from actual MAGI.
 - Next-year liquidity runway in taxable and cash accounts.
 
-If you want implementation support and accountability, map your plan against the resources in [Programs](/programs). Educational examples like this can help structure decisions, but your actual strategy should be validated against current IRS figures, your state rules, and your full household balance sheet.
+If you want implementation support and accountability, map your plan against the resources in [blog resources](/blog/). Educational examples like this can help structure decisions, but your actual strategy should be validated against current IRS figures, your state rules, and your full household balance sheet.

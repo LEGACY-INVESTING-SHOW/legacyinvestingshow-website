@@ -594,7 +594,7 @@ Tom identifies several risks he actively manages:
 
 **Ready to build your own Airbnb arbitrage business like Tom?**
 
-[Learn more about Legacy Investing Show](/programs)
+[Learn more about Legacy Investing Show](/blog/)
 
 ### Related Success Stories
 
@@ -624,7 +624,7 @@ Tom identifies several risks he actively manages:
 
 Preston Seo created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[Learn more about the program](/programs) | [Watch free training](/free-training)
+[blog resources](/blog/) | [Watch free training](/free-training)
 
 ---
 

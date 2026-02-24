@@ -36,7 +36,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-tax-planning-strategies.jpg
 imageAlt: >-
   Best Tax Planning Strategies: Complete 2026 Guide for US Households and
   Business Owners guide
@@ -310,7 +310,7 @@ Decision framework:
 - Compare admin cost versus annual savings over a three-year horizon.
 - Ensure payroll, bookkeeping, and documentation are stable before adding complexity.
 
-If you are still building your system, start with [Blog](/blog) and then evaluate fit for implementation support through [Programs](/programs).
+If you are still building your system, start with [Blog](/blog) and then evaluate fit for implementation support through [blog resources](/blog/).
 
 ### 5) Estimated tax and safe-harbor control
 

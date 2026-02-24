@@ -36,7 +36,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-tax-planning-software-for-retirees.jpg
 imageAlt: >-
   Best Tax Planning Software for Retirees: Complete 2026 Guide to Choosing the
   Right Tool guide
@@ -383,4 +383,4 @@ Use this quick rule:
 - If your plan has no conversion and RMD testing, it is incomplete.
 - If your plan has no advisor review for edge cases, it is risky.
 
-For deeper implementation, use [our full blog library](/blog), the [Tax Strategies hub](/topics/tax-strategies), and our execution-focused [programs](/programs). For current-year deduction planning, review [best tax deductions 2025](/blog/best-tax-deductions-2025).
+For deeper implementation, use [our full blog library](/blog), the [Tax Strategies hub](/topics/tax-strategies), and our execution-focused [blog resources](/blog/). For current-year deduction planning, review [best tax deductions 2025](/blog/best-tax-deductions-2025).

@@ -363,7 +363,7 @@ State departments of revenue and local tax authorities usually care more about t
 | Long-term rental | Simpler operations; lower turnover intensity | Lower gross revenue potential; slower optimization cycles | Investors prioritizing stability over optimization |
 | Co-host/management model | Minimal lease risk and lower capital needs | Lower share of upside; dependent on owner relationships | Operators strong in hospitality systems but lower risk appetite |
 
-Compared with ownership, arbitrage can be a valid speed-to-market strategy, but only if your underwriting and compliance execution are strong. For broader education and case studies, use the [blog library](/blog) and review [program options](/programs) if you want structured implementation support.
+Compared with ownership, arbitrage can be a valid speed-to-market strategy, but only if your underwriting and compliance execution are strong. For broader education and case studies, use the [blog library](/blog) and review [blog resources](/blog/) if you want structured implementation support.
 
 ## When Not to Use This Strategy
 

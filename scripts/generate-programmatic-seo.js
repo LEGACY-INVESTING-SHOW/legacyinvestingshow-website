@@ -98,7 +98,7 @@ const generateCityPages = () => {
                 <a href="/tax-strategies">Tax Strategies</a>
                 <a href="/about">About</a>
                 <a href="/blog">Blog</a>
-                <a href="/programs" class="btn-primary">Get Started</a>
+                <a href="/blog/" class="btn-primary">Get Started</a>
             </div>
         </div>
     </nav>
@@ -184,7 +184,7 @@ const generateCityPages = () => {
             <div class="container">
                 <h2>Ready to Optimize Your Taxes in ${city}?</h2>
                 <p>${cityContentTemplates.cta()}</p>
-                <a href="/programs" class="btn-primary btn-large">Get Personalized Tax Guidance</a>
+                <a href="/blog/" class="btn-primary btn-large">Get Personalized Tax Guidance</a>
             </div>
         </section>
     </main>
@@ -286,7 +286,7 @@ const generateComparisonPages = () => {
                 <a href="/tax-strategies">Tax Strategies</a>
                 <a href="/about">About</a>
                 <a href="/blog">Blog</a>
-                <a href="/programs" class="btn-primary">Get Started</a>
+                <a href="/blog/" class="btn-primary">Get Started</a>
             </div>
         </div>
     </nav>
@@ -372,7 +372,7 @@ const generateComparisonPages = () => {
             <div class="container">
                 <h2>Still Not Sure Which Strategy is Right for You?</h2>
                 <p>Get personalized advice from tax experts who can analyze your specific situation.</p>
-                <a href="/programs" class="btn-primary btn-large">Get Expert Guidance</a>
+                <a href="/blog/" class="btn-primary btn-large">Get Expert Guidance</a>
             </div>
         </section>
     </main>
@@ -494,7 +494,7 @@ const generatePersonaPages = () => {
                 <a href="/tax-strategies">Tax Strategies</a>
                 <a href="/about">About</a>
                 <a href="/blog">Blog</a>
-                <a href="/programs" class="btn-primary">Get Started</a>
+                <a href="/blog/" class="btn-primary">Get Started</a>
             </div>
         </div>
     </nav>
@@ -567,7 +567,7 @@ const generatePersonaPages = () => {
                 <div class="resource-links">
                     <a href="/tax-strategies" class="resource-card">All Tax Strategies →</a>
                     <a href="/blog" class="resource-card">Success Stories →</a>
-                    <a href="/programs" class="resource-card">Get Personalized Help →</a>
+                    <a href="/blog/" class="resource-card">Get Personalized Help →</a>
                 </div>
             </div>
         </section>
@@ -576,7 +576,7 @@ const generatePersonaPages = () => {
             <div class="container">
                 <h2>Get Expert Tax Guidance for Your Situation</h2>
                 <p>Every ${persona.title.toLowerCase()} situation is unique. Get personalized strategies tailored to your specific circumstances.</p>
-                <a href="/programs" class="btn-primary btn-large">Start Optimizing Your Taxes</a>
+                <a href="/blog/" class="btn-primary btn-large">Start Optimizing Your Taxes</a>
             </div>
         </section>
     </main>

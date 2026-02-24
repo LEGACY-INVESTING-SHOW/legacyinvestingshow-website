@@ -37,7 +37,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-does-qbi-deduction-work-with-a-loss.jpg
 imageAlt: >-
   How Does QBI Deduction Work With a Loss? Complete 2026 Guide for Owners and
   Investors guide
@@ -325,7 +325,7 @@ In these cases, focus first on broader tax and balance-sheet planning before spe
 
 ## Coordinating QBI With Broader Tax Decisions
 
-QBI loss planning works best when tied to your full system. Start with the [Tax Strategies topic hub](/topics/tax-strategies), then pressure-test deduction ideas with [Best Tax Deductions 2025](/blog/best-tax-deductions-2025) and [Best Tax Deductions for High-Income Earners](/blog/best-tax-deductions-for-high-income-earners). If real estate is central to your plan, compare tradeoffs in [1031 Exchange vs Standard Deduction](/blog/1031-exchange-vs-standard-deduction). If you want structured implementation support, review [Programs](/programs).
+QBI loss planning works best when tied to your full system. Start with the [Tax Strategies topic hub](/topics/tax-strategies), then pressure-test deduction ideas with [Best Tax Deductions 2025](/blog/best-tax-deductions-2025) and [Best Tax Deductions for High-Income Earners](/blog/best-tax-deductions-for-high-income-earners). If real estate is central to your plan, compare tradeoffs in [1031 Exchange vs Standard Deduction](/blog/1031-exchange-vs-standard-deduction). If you want structured implementation support, review [blog resources](/blog/).
 
 ## Quick Decision Framework for This Tax Year
 

@@ -414,4 +414,4 @@ Use this five-part filter before you sign your next lease:
 - Cash resilience: you can absorb at least two weak months.
 - Advisor alignment: your CPA supports your classification and estimate model.
 
-If you pass all five, scale in controlled steps. If you fail two or more, redesign first. For structured execution support, review available training on the [programs page](/programs).
+If you pass all five, scale in controlled steps. If you fail two or more, redesign first. For structured execution support, review available training on the [blog resources](/blog/).

@@ -33,7 +33,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/multi-state-llc-for-small-business-owners.jpg
 imageAlt: 'Multi State LLC for Small Business Owners: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -385,4 +385,4 @@ Annually:
 - Revisit structure economics versus risk profile.
 - Decide whether to keep, merge, or add entities.
 
-A disciplined rhythm usually beats a complex structure. Keep the model simple until your numbers and risk profile clearly justify additional entities. If you want hands-on implementation help, review [programs](/programs) after you complete advisor review.
+A disciplined rhythm usually beats a complex structure. Keep the model simple until your numbers and risk profile clearly justify additional entities. If you want hands-on implementation help, review [blog resources](/blog/) after you complete advisor review.

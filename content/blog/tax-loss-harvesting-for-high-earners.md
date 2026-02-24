@@ -338,4 +338,4 @@ Strong advisors answer with account-level numbers and clear operational steps.
 
 Tax loss harvesting for high earners works best as an operating system: clear thresholds, controlled replacements, wash-sale safeguards, and periodic review. Build it into your annual process, and you can improve after-tax outcomes while keeping your portfolio aligned with your goals.
 
-Use the broader [investing hub](/topics/investing), scan current ideas on the [blog](/blog), and compare cash-flow-focused approaches like [dividend growth investing](/blog/dividend-growth-investing). If you want help implementing a workflow, review available [programs](/programs) and bring your gain-loss report to the first planning meeting.
+Use the broader [investing hub](/topics/investing), scan current ideas on the [blog](/blog), and compare cash-flow-focused approaches like [dividend growth investing](/blog/dividend-growth-investing). If you want help implementing a workflow, review available [blog resources](/blog/) and bring your gain-loss report to the first planning meeting.

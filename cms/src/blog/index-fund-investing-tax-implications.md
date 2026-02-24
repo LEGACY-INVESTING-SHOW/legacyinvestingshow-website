@@ -33,7 +33,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/index-fund-investing-tax-implications.jpg
 imageAlt: >-
   Index Fund Investing Tax Implications: Complete 2026 Guide for US Investors
   guide
@@ -374,7 +374,7 @@ IRS guidance (for example, Publication 550 concepts) and SEC investor education 
 | Direct indexing | Personalized tax-loss harvesting at scale | Complexity, platform minimums, tracking differences | Higher-balance taxable investors |
 | Alternative assets focus | May diversify return drivers | Liquidity, fee, and tax complexity can rise | Investors with clear risk budget and long horizon |
 
-For deeper allocation tradeoffs, see [dividend growth investing](/blog/dividend-growth-investing) and [alternative investments guide](/blog/alternative-investments-guide). If you want broader education paths, browse [the blog](/blog) and [programs](/programs).
+For deeper allocation tradeoffs, see [dividend growth investing](/blog/dividend-growth-investing) and [alternative investments guide](/blog/alternative-investments-guide). If you want broader education paths, browse [the blog](/blog) and [blog resources](/blog/).
 
 ## When Not to Use This Strategy
 

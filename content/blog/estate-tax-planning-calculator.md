@@ -369,6 +369,6 @@ If you want a practical order of operations, use this:
 4. Execute simple wins first.
 5. Implement advanced structures only after legal, valuation, and governance alignment.
 
-For broader tax context, review the [Tax Strategies hub](/topics/tax-strategies). For related tax levers that can improve near-term cash flow while long-term estate work is underway, see [Best Tax Deductions for High Income Earners](/blog/best-tax-deductions-for-high-income-earners) and the full [blog](/blog). If you want hands-on implementation support, compare available [programs](/programs).
+For broader tax context, review the [Tax Strategies hub](/topics/tax-strategies). For related tax levers that can improve near-term cash flow while long-term estate work is underway, see [Best Tax Deductions for High Income Earners](/blog/best-tax-deductions-for-high-income-earners) and the full [blog](/blog). If you want hands-on implementation support, compare available [blog resources](/blog/).
 
 Educational note: estate and gift tax planning is technical and fact-specific. Use this framework to improve decisions, then confirm execution details with qualified CPA and legal advisors.

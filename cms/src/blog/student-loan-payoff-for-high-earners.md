@@ -33,7 +33,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/student-loan-payoff-for-high-earners.jpg
 imageAlt: 'Student Loan Payoff for High Earners: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -394,7 +394,7 @@ In these cases, stabilize first, then accelerate.
 - What is the break-even APR where investing likely dominates extra debt payoff for my risk profile?
 - What cadence should we use for plan reviews: monthly, quarterly, or event-driven?
 
-If you want guided implementation, review available [programs](/programs) and pick a structure that includes accountability and periodic plan updates.
+If you want guided implementation, review available [blog resources](/blog/) and pick a structure that includes accountability and periodic plan updates.
 
 ## Monthly KPI dashboard and decision rules
 

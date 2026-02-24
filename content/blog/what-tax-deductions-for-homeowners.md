@@ -279,7 +279,7 @@ A practical sequence that you can use as a task list:
 11. Validate against lender letters and filing forms.
 12. Prepare supporting docs in a folder order that mirrors your return software and CPA handoff.
 
-You can keep this process tight by reusing a single folder for each year. If you want a broader system view, compare with your broader filing strategy in the [blog](/blog) education stream and [Programs](/programs) framework for recurring financial architecture.
+You can keep this process tight by reusing a single folder for each year. If you want a broader system view, compare with your broader filing strategy in the [blog](/blog) education stream and [blog resources](/blog/) framework for recurring financial architecture.
 
 ## Fully worked numeric example and tradeoffs
 
@@ -400,6 +400,6 @@ This topic is annual but not static. Your deduction stack changes when rates cha
 ## Related Resources
 - [Tax Strategies Hub](/topics/tax-strategies)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: best tax strategy for retirement](/blog/best-tax-strategy-for-retirement)
 - [Related Guide: best tax strategy for ira withdrawals](/blog/best-tax-strategy-for-ira-withdrawals)

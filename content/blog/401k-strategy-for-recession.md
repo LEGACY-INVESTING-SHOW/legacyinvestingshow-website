@@ -372,7 +372,7 @@ Use this checklist to implement quickly.
 - [ ] Run a two-year stress test with drawdown and rebound assumptions.
 - [ ] Identify one accountability partner or advisor check-in date.
 
-If you want additional implementation support, review available [programs](/programs) and compare your policy with your current account settings.
+If you want additional implementation support, review available [blog resources](/blog/) and compare your policy with your current account settings.
 
 ## Final Decision Framework
 

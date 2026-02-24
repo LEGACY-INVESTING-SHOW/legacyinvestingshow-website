@@ -381,6 +381,6 @@ Use this guide with your own numbers, then review related planning resources on 
 - Start with the [Tax Strategies topic hub](/topics/tax-strategies).
 - Read current planning ideas on the [blog](/blog).
 - Pair conversion planning with deduction strategy in [Best Tax Deductions for High-Income Earners](/blog/best-tax-deductions-for-high-income-earners).
-- If you want structured implementation support, review [programs](/programs).
+- If you want structured implementation support, review [blog resources](/blog/).
 
 Roth conversions can be powerful when they are sized with discipline. The best result usually comes from a repeatable annual process, conservative assumptions, and advisor-reviewed execution.

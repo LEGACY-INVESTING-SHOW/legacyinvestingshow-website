@@ -33,7 +33,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/ira-strategy-for-high-income-families.jpg
 imageAlt: 'IRA Strategy for High Income Families: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -367,4 +367,4 @@ If you want a concise rule set for an **ira strategy for high income families**,
 4. Add partial Roth conversions only when bracket math supports it.
 5. Document everything and review yearly as IRS limits and your income change.
 
-This process keeps decisions practical, numbers-driven, and adaptable. If you want implementation help beyond reading, compare your baseline with coaching options at [Legacy Investing Show programs](/programs).
+This process keeps decisions practical, numbers-driven, and adaptable. If you want implementation help beyond reading, compare your baseline with coaching options at [blog resources](/blog/).

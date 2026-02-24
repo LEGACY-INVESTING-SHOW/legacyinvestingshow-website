@@ -634,7 +634,7 @@ Sarah and Nico address this directly: the biggest risk is letting ego damage bot
 
 **Ready to build your own Airbnb arbitrage business like Sarah and Nico?**
 
-[Learn more about Legacy Investing Show →](/programs)
+[Learn more about Legacy Investing Show →](/blog/)
 
 ### Related Success Stories
 
@@ -664,7 +664,7 @@ Sarah and Nico address this directly: the biggest risk is letting ego damage bot
 
 Preston Seo created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[Learn more about the program →](/programs) | [Watch free training →](/free-training)
+[blog resources](/blog/) | [Watch free training →](/free-training)
 
 ---
 

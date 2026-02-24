@@ -33,7 +33,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/1031-exchange-vs-standard-deduction.jpg
 imageAlt: >-
   1031 exchange vs standard deduction: Which Strategy Works Better in 2026?
   guide
@@ -141,7 +141,7 @@ wordCount: '2121'
 ---
 If you are comparing **1031 exchange vs standard deduction** in 2026, start with one key truth: these tools usually solve different tax problems. A 1031 exchange is generally a transaction-level deferral strategy for investment real estate. The standard deduction is an annual return-level deduction that can reduce ordinary taxable income.
 
-That difference matters because many households accidentally frame this as an either-or decision. In real planning, the better question is often: how much tax can I defer on a property sale, and what baseline deduction am I claiming on my return anyway? For broader planning context, review the [Tax Strategies hub](/topics/tax-strategies), compare deduction tactics in [Best Tax Deductions 2025](/blog/best-tax-deductions-2025), and use [Programs](/programs) if you need implementation support.
+That difference matters because many households accidentally frame this as an either-or decision. In real planning, the better question is often: how much tax can I defer on a property sale, and what baseline deduction am I claiming on my return anyway? For broader planning context, review the [Tax Strategies hub](/topics/tax-strategies), compare deduction tactics in [Best Tax Deductions 2025](/blog/best-tax-deductions-2025), and use [blog resources](/blog/) if you need implementation support.
 
 ## 1031 exchange vs standard deduction: what are you actually choosing?
 

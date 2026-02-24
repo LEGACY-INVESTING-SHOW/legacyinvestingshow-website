@@ -321,7 +321,7 @@ Deliverable: compliant payroll calendar.
 Owner task: annual report calendar, franchise and income filing reminders, registered agent monitoring.
 Deliverable: 12-month compliance operating rhythm.
 
-If you want operational support while implementing, review [programs](/programs) and cross-check execution details in [blog](/blog).
+If you want operational support while implementing, review [blog resources](/blog/) and cross-check execution details in [blog](/blog).
 
 ## 30-Day Checklist
 

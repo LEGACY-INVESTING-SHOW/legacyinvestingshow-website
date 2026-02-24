@@ -34,7 +34,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/student-loan-payoff-for-self-employed.jpg
 imageAlt: >-
   Student Loan Payoff for Self Employed: Complete 2026 Guide to Reduce Interest
   and Protect Cash Flow guide
@@ -400,7 +400,7 @@ Use these resources to implement your plan:
 - [Debt avalanche payoff calculator](/blog/debt-avalanche-payoff-calculator)
 - [Credit score optimization](/blog/credit-score-optimization)
 - [Debt strategy library](/blog)
-- [Programs and coaching options](/programs)
+- [blog resources](/blog/)
 
 ## Final Decision Rule
 

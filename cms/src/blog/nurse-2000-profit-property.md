@@ -595,7 +595,7 @@ Time management is another consideration for nurses. Kirk now spends about 3 hou
 
 **Ready to build your own Airbnb arbitrage business like Kirk?**
 
-[Learn more about Legacy Investing Show →](/programs)
+[Learn more about Legacy Investing Show →](/blog/)
 
 ### Related Success Stories
 
@@ -625,7 +625,7 @@ Time management is another consideration for nurses. Kirk now spends about 3 hou
 
 Preston Seo created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[Learn more about the program →](/programs) | [Watch free training →](/free-training)
+[blog resources](/blog/) | [Watch free training →](/free-training)
 
 ---
 

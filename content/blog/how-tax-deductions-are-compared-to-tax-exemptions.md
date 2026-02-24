@@ -415,4 +415,4 @@ In these cases, a broader planning engagement may produce better results than de
 
 Treat this as a decision system, not a tax trivia question. The most reliable process is to model both deduction paths, test exemption treatment under current law, then validate outcomes after credits. If you want additional implementation guides, use [Best tax deductions for high-income earners](/blog/best-tax-deductions-for-high-income-earners), [Best tax deductions for W-2 employees](/blog/best-tax-deductions-for-w2-employees), and the full [blog library](/blog).
 
-For taxpayers who want hands-on help executing a broader tax and investing plan, review available [programs](/programs).
+For taxpayers who want hands-on help executing a broader tax and investing plan, review available [blog resources](/blog/).

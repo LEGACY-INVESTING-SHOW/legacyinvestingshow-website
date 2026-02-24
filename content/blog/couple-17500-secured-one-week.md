@@ -616,7 +616,7 @@ Lindsay identified several risks she actively manages:
 
 **Ready to build your own Airbnb arbitrage business like Lindsay?**
 
-[Learn more about Legacy Investing Show →](/programs)
+[Learn more about Legacy Investing Show →](/blog/)
 
 ### Related Success Stories
 
@@ -646,7 +646,7 @@ Lindsay identified several risks she actively manages:
 
 Preston Seo created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[Learn more about the program →](/programs) | [Watch free training →](/free-training)
+[blog resources](/blog/) | [Watch free training →](/free-training)
 
 ---
 

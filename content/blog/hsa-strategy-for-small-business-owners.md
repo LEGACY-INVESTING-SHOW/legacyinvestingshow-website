@@ -350,4 +350,4 @@ Use a pass/fail filter:
 4. Do you have a clear reimburse-now vs reimburse-later policy?
 5. Will this complement, not replace, your broader plan?
 
-If most answers are yes, an **hsa strategy for small business owners** is often high-value. If several are no, fix those constraints first. For broader planning context, review [Legacy Investing Show programs](/programs) and the latest tax content in the [blog](/blog). This guide is educational and best paired with personalized tax and legal advice.
+If most answers are yes, an **hsa strategy for small business owners** is often high-value. If several are no, fix those constraints first. For broader planning context, review [blog resources](/blog/) and the latest tax content in the [blog](/blog). This guide is educational and best paired with personalized tax and legal advice.

@@ -331,6 +331,6 @@ Bring these to your next meeting:
 
 ## Final action path for 2026
 
-Start with a baseline projection, then test two to three targeted adjustments before year-end. That workflow is usually better than chasing one aggressive move late. For additional planning context, see [best tax deductions 2025](/blog/best-tax-deductions-2025), the [Tax Strategies hub](/topics/tax-strategies), and [programs](/programs) if you want structured implementation help.
+Start with a baseline projection, then test two to three targeted adjustments before year-end. That workflow is usually better than chasing one aggressive move late. For additional planning context, see [best tax deductions 2025](/blog/best-tax-deductions-2025), the [Tax Strategies hub](/topics/tax-strategies), and [blog resources](/blog/) if you want structured implementation help.
 
 Tax rules change and facts matter. Treat this as a decision framework and confirm final numbers with current IRS guidance and your advisor.

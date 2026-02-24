@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-to-create-operating-agreement-for-llc.jpg
 imageAlt: >-
   How to create operating agreement for llc: Complete 2026 Guide for US Owners
   guide

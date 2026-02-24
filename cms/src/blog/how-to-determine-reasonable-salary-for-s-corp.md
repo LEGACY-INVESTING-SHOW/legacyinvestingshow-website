@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-to-determine-reasonable-salary-for-s-corp.jpg
 imageAlt: >-
   How to determine reasonable salary for s corp: Complete 2026 Guide for Owners
   guide
@@ -154,7 +154,7 @@ If you are trying to decide how to determine reasonable salary for s corp compen
 
 A practical way to use this guide: build a repeatable process, not a one-time guess. If your process is documented and tied to market data, your salary decision is easier to defend, easier to update, and less likely to break when your business changes.
 
-If you are still evaluating entity strategy, review the [Business Structures hub](/topics/business-structures), compare with [C-corp benefits](/blog/c-corp-benefits), and keep your liability foundation solid with [corporate veil protection](/blog/corporate-veil-protection). For related implementation tactics, see the [full blog library](/blog) and [program details](/programs).
+If you are still evaluating entity strategy, review the [Business Structures hub](/topics/business-structures), compare with [C-corp benefits](/blog/c-corp-benefits), and keep your liability foundation solid with [corporate veil protection](/blog/corporate-veil-protection). For related implementation tactics, see the [full blog library](/blog) and [blog resources](/blog/).
 
 ## How to determine reasonable salary for s corp with an IRS-ready framework
 

@@ -32,7 +32,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/reasonable-salary-tax-implications.jpg
 imageAlt: >-
   Reasonable Salary Tax Implications: Complete 2026 Guide for S Corp Owners
   guide
@@ -142,7 +142,7 @@ wordCount: '2185'
 ---
 Reasonable salary tax implications are one of the highest-leverage tax planning issues for owners using an S corporation or an LLC taxed as an S corporation. If you underpay yourself, you might reduce payroll tax in the short term but increase IRS reclassification risk. If you overpay yourself, you may reduce distribution flexibility, retirement planning efficiency, and operating cash.
 
-In 2026, the IRS Paying Yourself guidance continues to stress that compensation depends on entity type and facts, not a single formula. National Association of Tax Professionals commentary makes the same point: there is no magic percentage that automatically passes. Use this guide as an educational planning framework to run your numbers and create documentation before filing season. For related planning, visit the [Business Structures hub](/topics/business-structures), explore the [Legacy Investing Show blog](/blog), and review [programs](/programs).
+In 2026, the IRS Paying Yourself guidance continues to stress that compensation depends on entity type and facts, not a single formula. National Association of Tax Professionals commentary makes the same point: there is no magic percentage that automatically passes. Use this guide as an educational planning framework to run your numbers and create documentation before filing season. For related planning, visit the [Business Structures hub](/topics/business-structures), explore the [Legacy Investing Show blog](/blog), and review [blog resources](/blog/).
 
 ## Reasonable Salary Tax Implications: What Actually Moves Your Tax Bill
 

@@ -396,4 +396,4 @@ Do not use either strategy when:
 
 If you want higher upside and can run operations like a part-time business, house hacking can be the better fit. If you want lower operational intensity and can underwrite credit risk with discipline, notes may fit better. Start with one strategy, size conservatively, and review monthly.
 
-Use these resources while you execute: [blog library](/blog), [programs overview](/programs), and [airbnb cash flow tax implications](/blog/airbnb-cash-flow-tax-implications). This is educational content and should be paired with licensed tax and legal advice for your situation.
+Use these resources while you execute: [blog library](/blog), [blog resources](/blog/), and [airbnb cash flow tax implications](/blog/airbnb-cash-flow-tax-implications). This is educational content and should be paired with licensed tax and legal advice for your situation.

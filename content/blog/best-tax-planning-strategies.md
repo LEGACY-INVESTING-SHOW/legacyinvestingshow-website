@@ -310,7 +310,7 @@ Decision framework:
 - Compare admin cost versus annual savings over a three-year horizon.
 - Ensure payroll, bookkeeping, and documentation are stable before adding complexity.
 
-If you are still building your system, start with [Blog](/blog) and then evaluate fit for implementation support through [Programs](/programs).
+If you are still building your system, start with [Blog](/blog) and then evaluate fit for implementation support through [blog resources](/blog/).
 
 ### 5) Estimated tax and safe-harbor control
 

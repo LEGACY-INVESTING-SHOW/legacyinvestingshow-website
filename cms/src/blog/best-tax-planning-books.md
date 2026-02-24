@@ -32,7 +32,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-tax-planning-books.jpg
 imageAlt: >-
   Best Tax Planning Books: Complete 2026 Guide for Real-World Tax Decisions
   guide
@@ -377,7 +377,7 @@ Cons:
 - Reading without execution gives near-zero return
 - Some strategies are too complex for self-implementation
 
-If you want structured support beyond books, compare options on the [Programs](/programs) page before committing time or money.
+If you want structured support beyond books, compare options on the [blog resources](/blog/) page before committing time or money.
 
 ## When Not to Use This Strategy
 

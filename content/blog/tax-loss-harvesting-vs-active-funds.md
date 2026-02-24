@@ -343,7 +343,7 @@ Pros and cons summary:
 - If you have proven active-manager edge, keep it but demand tax awareness.
 - For many households, blended implementation is the practical winner.
 
-If you want help integrating this into a broader plan, the [Legacy Investing Show programs](/programs) and the main [blog](/blog) include related deep dives.
+If you want help integrating this into a broader plan, the [blog resources](/blog/) and the main [blog](/blog) include related deep dives.
 
 ## When Not to Use This Strategy
 

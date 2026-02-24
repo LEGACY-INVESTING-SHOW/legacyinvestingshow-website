@@ -410,6 +410,6 @@ Start by selecting one decision rule you will actually follow this year, then au
 - [Early retirement withdrawal guide](/blog/early-retirement-withdrawal)
 - [4% rule explainer](/blog/4-percent-rule)
 - [All blog resources](/blog)
-- [Programs and implementation support](/programs)
+- [blog resources](/blog/)
 
 A strong 401(k) plan is less about predicting tax law perfectly and more about building flexible options: pre-tax, Roth, and taxable. That flexibility is what lets you adapt as income, markets, and tax rules evolve.

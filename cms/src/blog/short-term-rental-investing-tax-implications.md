@@ -37,7 +37,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/short-term-rental-investing-tax-implications.jpg
 imageAlt: >-
   Short Term Rental Investing Tax Implications: Complete 2026 Guide for U.S.
   Investors guide
@@ -435,6 +435,6 @@ Aggressive first-year deductions without exit planning can create unpleasant sur
 
 ## Next Actions for This Quarter
 
-Start with one property-level model and one tax meeting. Build conservative assumptions first, then add upside only where facts and documentation support it. For deeper implementation ideas, review [house hacking fundamentals](/blog/house-hacking-guide), compare rehab-heavy approaches in [BRRRR method breakdown](/blog/brrrr-method), and explore training support options on our [programs page](/programs).
+Start with one property-level model and one tax meeting. Build conservative assumptions first, then add upside only where facts and documentation support it. For deeper implementation ideas, review [house hacking fundamentals](/blog/house-hacking-guide), compare rehab-heavy approaches in [BRRRR method breakdown](/blog/brrrr-method), and explore training support options on our [blog resources](/blog/).
 
 Educational note: this guide is for planning and discussion. Your final treatment depends on your full tax profile, state rules, and advisor judgment.

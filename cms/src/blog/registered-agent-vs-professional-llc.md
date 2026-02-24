@@ -33,7 +33,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/registered-agent-vs-professional-llc.jpg
 imageAlt: >-
   Registered Agent vs Professional LLC: Which Strategy Works Better in 2026?
   guide
@@ -391,4 +391,4 @@ Use this simple rule:
 - Choose DIY only if your availability is truly reliable, your privacy concerns are low, and your modeled time cost stays below your professional-service break-even.
 - Choose professional service if you value continuity, privacy, and scaling flexibility, especially if you are home-based or expanding across states.
 
-Then execute quickly. Decision delay often costs more than either option. For more implementation examples and related entity content, browse the [main blog](/blog) and the [programs page](/programs) for deeper operating playbooks.
+Then execute quickly. Decision delay often costs more than either option. For more implementation examples and related entity content, browse the [main blog](/blog) and the [blog resources](/blog/) for deeper operating playbooks.

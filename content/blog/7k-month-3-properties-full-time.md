@@ -679,7 +679,7 @@ James proved that age, experience, and location don't determine success—action
 
 The difference between James and people who never start? Written goals and daily action.
 
-[Learn more about Legacy Investing Show](/programs)
+[Learn more about Legacy Investing Show](/blog/)
 
 ### Related Success Stories
 
@@ -713,7 +713,7 @@ The difference between James and people who never start? Written goals and daily
 
 Preston Seo has personally built a $15 million real estate portfolio generating over $400,000 per year in net profit from short-term rentals. He created Legacy Investing Show to teach the exact systems that scaled his business.
 
-[Learn more about the program](/programs) | [Watch free training](/free-training)
+[blog resources](/blog/) | [Watch free training](/free-training)
 
 ---
 

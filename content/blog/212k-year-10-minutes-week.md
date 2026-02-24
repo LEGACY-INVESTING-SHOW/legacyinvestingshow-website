@@ -585,7 +585,7 @@ Other risks include regulatory changes, market saturation, and economic downturn
 
 **Ready to build your own automated Airbnb business?**
 
-[Learn more about Legacy Investing Show programs](/programs)
+[blog resources](/blog/)
 
 Whether you have capital to purchase properties or want to start with the bridge method, the systems and strategies outlined here can help you build genuinely passive short-term rental income.
 
@@ -617,7 +617,7 @@ Whether you have capital to purchase properties or want to start with the bridge
 
 Preston Seo created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[Learn more about the program](/programs) | [Watch free training](/free-training)
+[blog resources](/blog/) | [Watch free training](/free-training)
 
 ---
 

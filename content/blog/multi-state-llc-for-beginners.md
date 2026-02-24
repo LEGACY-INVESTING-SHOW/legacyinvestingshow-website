@@ -387,7 +387,7 @@ If your advisor cannot answer these with a state-by-state plan, you do not yet h
 ## Practical Next Steps
 
 - Read the broader [Blog](/blog) for operational case studies.
-- Use [Programs](/programs) if you want structured implementation support.
+- Use [blog resources](/blog/) if you want structured implementation support.
 - Revisit your 24-month model quarterly, not annually.
 - Treat entity structure as a living system tied to operations, not a one-time filing event.
 

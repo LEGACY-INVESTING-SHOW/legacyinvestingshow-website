@@ -291,7 +291,7 @@ The point is not to optimize one metric. The point is to improve after-tax compo
 9. Coordinate with CPA on capital gains budget and estimated taxes.
 10. Review quarterly and update annually or after major life changes.
 
-If you want hands-on execution support, compare your current process with resources in [our programs](/programs) and relevant posts in the [blog](/blog).
+If you want hands-on execution support, compare your current process with resources in [blog resources](/blog/) and relevant posts in the [blog](/blog).
 
 ## 30-Day Checklist
 

@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-planning-for-small-business-owners.jpg
 imageAlt: 'Tax Planning for Small Business Owners: Complete 2026 Decision Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -361,4 +361,4 @@ Bring these to your next meeting and require written assumptions.
 ## Build Your 2026 Tax Dashboard
 For tax planning for small business owners, execution beats theory. Track a small set of metrics monthly: net income, tax reserve balance, estimated tax paid vs projected, payroll compliance status, and documentation completion rate. Then run one strategic decision per quarter with your advisor.
 
-If you need deeper support, review [program options](/programs) and align your tax strategy with broader investing and wealth goals. The highest-value tax plan is the one you can run consistently for years, not the one that looks smartest on paper.
+If you need deeper support, review [blog resources](/blog/) and align your tax strategy with broader investing and wealth goals. The highest-value tax plan is the one you can run consistently for years, not the one that looks smartest on paper.

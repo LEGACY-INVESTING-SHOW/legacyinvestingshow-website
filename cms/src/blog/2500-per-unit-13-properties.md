@@ -591,7 +591,7 @@ Leo's experience highlights several risks he managed:
 
 **Ready to build your own Airbnb arbitrage business like Leo?**
 
-[Learn more about Legacy Investing Show &rarr;](/programs)
+[Learn more about Legacy Investing Show &rarr;](/blog/)
 
 ### Related Success Stories
 
@@ -621,7 +621,7 @@ Leo's experience highlights several risks he managed:
 
 Preston Seo created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[Learn more about the program &rarr;](/programs) | [Watch free training &rarr;](/free-training)
+[blog resources](/blog/) | [Watch free training &rarr;](/free-training)
 
 ---
 

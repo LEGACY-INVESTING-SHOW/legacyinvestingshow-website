@@ -467,4 +467,4 @@ Bring this list to your next meeting:
 
 Start with decision quality, then execution quality. If your choice this month is between speed and clean setup, choose clean setup. It is usually cheaper than repairing a bad structure during a dispute.
 
-For deeper implementation support and templates, review [programs](/programs). Then build your own comparison worksheet from this article and validate assumptions with your attorney and CPA before filing or electing tax status.
+For deeper implementation support and templates, review [blog resources](/blog/). Then build your own comparison worksheet from this article and validate assumptions with your attorney and CPA before filing or electing tax status.

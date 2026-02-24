@@ -407,4 +407,4 @@ Use objective triggers:
 ## Final Action Plan
 A high-quality airbnb cash flow calculator is not about optimism. It is about survivability, repeatability, and disciplined scaling. Build three scenarios, protect downside with reserves, and only scale from real operating data.
 
-If you want implementation support, compare your model against experienced operators through [programs](/programs), then refine assumptions with your CPA before committing additional capital.
+If you want implementation support, compare your model against experienced operators through [blog resources](/blog/), then refine assumptions with your CPA before committing additional capital.

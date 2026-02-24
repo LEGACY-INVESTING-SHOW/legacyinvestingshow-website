@@ -374,6 +374,6 @@ Fidelity’s tax guidance repeatedly points to avoidable errors and missed oppor
 
 Start with one clean pass through your taxable accounts, not your whole financial life at once. Build a repeatable process, coordinate household trading behavior, and then scale only if the net benefit is meaningful.
 
-For related planning, use the [Legacy Investing Show blog](/blog), the [investing topic hub](/topics/investing), and deeper allocation resources such as [asset allocation strategies](/blog/asset-allocation-strategies). If you want hands-on implementation help, review [programs](/programs).
+For related planning, use the [Legacy Investing Show blog](/blog), the [investing topic hub](/topics/investing), and deeper allocation resources such as [asset allocation strategies](/blog/asset-allocation-strategies). If you want hands-on implementation help, review [blog resources](/blog/).
 
 Educational note: tax rules can change and personal circumstances vary, so use this guide as planning education and validate execution details with a qualified tax professional.

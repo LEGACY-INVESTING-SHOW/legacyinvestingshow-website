@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/capital-gains-tax-rate-2026.jpg
 imageAlt: >-
   Capital Gains Tax Rate 2026: Complete 2026 Guide to Brackets, NIIT, and Smart
   Sale Timing guide
@@ -454,4 +454,4 @@ Bring these questions before executing large sales:
 A useful planning workflow is to run one base case and two stress cases. Use your base case for execution, keep one upside-income case and one downside-income case for contingency decisions.
 
 Next step:
-If you want a broader tax reduction map beyond capital gains, review [Tax Strategies](/topics/tax-strategies), explore [programs](/programs), and build a personalized plan from your current portfolio and income trajectory.
+If you want a broader tax reduction map beyond capital gains, review [Tax Strategies](/topics/tax-strategies), explore [blog resources](/blog/), and build a personalized plan from your current portfolio and income trajectory.

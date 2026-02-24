@@ -33,7 +33,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/series-llc-for-real-estate-operators.jpg
 imageAlt: 'Series LLC for Real Estate Operators: Complete 2026 Decision Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -373,4 +373,4 @@ The quality of these answers is more predictive than any filing shortcut.
 
 If your model shows clear savings and your advisors confirm state and lender alignment, a Series LLC can be a durable operating structure. If the model is close, choose the structure your team can execute flawlessly every month.
 
-For additional implementation examples, review the [blog](/blog), compare state considerations at [best state for series LLC](/blog/best-state-for-series-llc), and use the training resources in [programs](/programs) to build repeatable operating systems.
+For additional implementation examples, review the [blog](/blog), compare state considerations at [best state for series LLC](/blog/best-state-for-series-llc), and use the training resources in [blog resources](/blog/) to build repeatable operating systems.

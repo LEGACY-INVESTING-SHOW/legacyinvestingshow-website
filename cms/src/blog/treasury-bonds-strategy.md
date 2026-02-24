@@ -28,7 +28,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/treasury-bonds-strategy.jpg
 imageAlt: 'Treasury Bonds Strategy: Safe Income in Any Market guide'
 imageWidth: 1200
 imageHeight: 630
@@ -402,7 +402,7 @@ If you review treasury bonds with a CPA/attorney/advisor, bring:
 
 ## Internal Links To Continue
 - [Browse related guides](/blog/category/investing)
-- [Programs and implementation support](/programs)
+- [blog resources](/blog/)
 - [Latest blog posts](/blog)
 
 ## Final Word

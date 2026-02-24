@@ -32,7 +32,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-strategy-calculator.jpg
 imageAlt: >-
   Tax Strategy Calculator: Practical Guide + Examples for Smarter 2026 Decisions
   guide
@@ -419,6 +419,6 @@ These questions reduce vague advice and force practical, decision-ready guidance
 If you want to keep building, use this sequence:
 - Read additional examples in the [blog library](/blog).
 - Compare tactic-specific articles like [best tax deductions for individuals](/blog/best-tax-deductions-for-individuals).
-- If you want implementation support, review available [programs](/programs).
+- If you want implementation support, review available [blog resources](/blog/).
 
 A useful tax strategy calculator does not need to be complicated. It needs clean inputs, realistic assumptions, explicit tradeoffs, and consistent updates. Do that, and your tax decisions become measurable, repeatable, and easier to improve each year.

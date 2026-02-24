@@ -32,7 +32,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/student-loan-payoff-for-new-graduates.jpg
 imageAlt: 'Student Loan Payoff for New Graduates: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -375,4 +375,4 @@ In these cases, use a stabilization phase first, then return to acceleration.
 
 ## Final action path for this week
 
-Start with one-page loan mapping, objective selection, and automation setup. Then run two scenarios and choose one for the next 90 days. For deeper strategy support, explore more debt playbooks in the [blog](/blog) and implementation resources in [programs](/programs).
+Start with one-page loan mapping, objective selection, and automation setup. Then run two scenarios and choose one for the next 90 days. For deeper strategy support, explore more debt playbooks in the [blog](/blog) and implementation resources in [blog resources](/blog/).

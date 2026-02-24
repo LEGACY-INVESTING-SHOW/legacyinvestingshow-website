@@ -404,4 +404,4 @@ Roth conversion software-driven planning is powerful, but not always the top pri
 
 The best tax planning software for Roth conversions is the tool that helps you make better yearly decisions under uncertainty, then execute those decisions with CPA validation. Start with a scorecard, run multi-year bracket-fill scenarios, and avoid one-click recommendations.
 
-Use the [blog](/blog) for deeper tax strategy examples, and review implementation options in [programs](/programs). This content is educational and should be paired with professional tax advice for your specific facts.
+Use the [blog](/blog) for deeper tax strategy examples, and review implementation options in [blog resources](/blog/). This content is educational and should be paired with professional tax advice for your specific facts.

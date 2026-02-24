@@ -434,4 +434,4 @@ This creates a measurable system instead of a static plan.
 
 ## Bottom Line
 
-Estate tax planning vs entity restructuring is not either-or for most families in 2026. If tax exposure is high and liquidity is thin, hybrid planning is often more durable than pure strategies. Build the plan around measurable constraints, model tradeoffs with conservative assumptions, and review on a recurring cycle. For more implementation ideas, review the [blog](/blog) and education pathways in [programs](/programs).
+Estate tax planning vs entity restructuring is not either-or for most families in 2026. If tax exposure is high and liquidity is thin, hybrid planning is often more durable than pure strategies. Build the plan around measurable constraints, model tradeoffs with conservative assumptions, and review on a recurring cycle. For more implementation ideas, review the [blog](/blog) and education pathways in [blog resources](/blog/).

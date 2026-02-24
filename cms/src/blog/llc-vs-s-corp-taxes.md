@@ -444,12 +444,12 @@ Use this scorecard before finalizing:
 
 If most categories are strong and your modeled benefit remains meaningful even in conservative scenarios, S election may be worth implementing. If not, default LLC taxation may be the better near-term move while you improve systems.
 
-For additional planning context, explore the broader [Blog](/blog), compare structures in the [Business Structures hub](/topics/business-structures), and review implementation-focused support via [Programs](/programs).
+For additional planning context, explore the broader [Blog](/blog), compare structures in the [Business Structures hub](/topics/business-structures), and review implementation-focused support via [blog resources](/blog/).
 
 Educational note: this guide is for planning and discussion purposes. Final tax treatment depends on your facts, location, and current-year rules.
 
 ## Related Resources
 - [Business Structures Hub](/topics/business-structures)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: how to make s corp election for llc](/blog/how-to-make-s-corp-election-for-llc)

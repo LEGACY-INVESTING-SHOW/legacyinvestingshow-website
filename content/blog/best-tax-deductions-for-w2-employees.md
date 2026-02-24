@@ -380,11 +380,11 @@ In those cases, keep the strategy at a conservative minimum and defer complex op
 
 If you want this to be an annual repeatable system, treat tax planning as a payroll operations process, not a software-only filing exercise. The highest-value moves for most W-2 households are usually a combination of payroll-deferral optimization, HSA deployment, and threshold-aware credit sequencing.
 
-If you need a broader tax strategy map, start with [Tax Strategies](/topics/tax-strategies), then map your retirement sequencing through [Best tax strategy for retirement](/blog/best-tax-strategy-for-retirement) and [Best tax strategy for 401k withdrawal](/blog/best-tax-strategy-for-401k-withdrawal). Then, if you want a broader read-through of how your filing choices connect with long-horizon finance decisions, compare the broader framework at [the Legacy blog](/blog) and review what is available in [Legacy programs](/programs).
+If you need a broader tax strategy map, start with [Tax Strategies](/topics/tax-strategies), then map your retirement sequencing through [Best tax strategy for retirement](/blog/best-tax-strategy-for-retirement) and [Best tax strategy for 401k withdrawal](/blog/best-tax-strategy-for-401k-withdrawal). Then, if you want a broader read-through of how your filing choices connect with long-horizon finance decisions, compare the broader framework at [the Legacy blog](/blog) and review what is available in [blog resources](/blog/).
 
 ## Related Resources
 - [Tax Strategies Hub](/topics/tax-strategies)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: best tax strategy for retirement](/blog/best-tax-strategy-for-retirement)
 - [Related Guide: best tax strategy for ira withdrawals](/blog/best-tax-strategy-for-ira-withdrawals)

@@ -434,4 +434,4 @@ Ask for written assumptions and numeric outputs, not general commentary. Better 
 
 Use an annuity vs bond calculator as a decision framework, not a marketing pitch. Model the same dollars with the same assumptions, compare after-tax spendable income, and select the mix that fits your real risks: longevity, liquidity, inflation, and behavior.
 
-If you are still building your broader retirement architecture, continue with [401(k) strategy tax implications](/blog/401k-strategy-tax-implications), the [457(b) plan guide](/blog/457b-plan-guide), and implementation support through [programs](/programs). This article is educational and should be paired with personalized tax and investment advice.
+If you are still building your broader retirement architecture, continue with [401(k) strategy tax implications](/blog/401k-strategy-tax-implications), the [457(b) plan guide](/blog/457b-plan-guide), and implementation support through [blog resources](/blog/). This article is educational and should be paired with personalized tax and investment advice.

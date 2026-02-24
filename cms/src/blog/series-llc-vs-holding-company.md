@@ -32,7 +32,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/series-llc-vs-holding-company.jpg
 imageAlt: 'Series LLC vs Holding Company: Which Strategy Works Better in 2026? guide'
 imageWidth: 1200
 imageHeight: 630
@@ -395,4 +395,4 @@ For many multi-state owners, a holding company with separate subsidiaries is the
 
 For concentrated in-state portfolios with disciplined bookkeeping, series can be efficient and scalable.
 
-The right answer in series llc vs holding company is the structure you can run correctly every month, not the one that sounds sophisticated on formation day. If you are still deciding, compare your numbers against your expansion plan and review your implementation capacity before filing. You can also explore strategy fit through [Legacy Investing Show programs](/programs) and the broader [blog](/blog).
+The right answer in series llc vs holding company is the structure you can run correctly every month, not the one that sounds sophisticated on formation day. If you are still deciding, compare your numbers against your expansion plan and review your implementation capacity before filing. You can also explore strategy fit through [blog resources](/blog/) and the broader [blog](/blog).

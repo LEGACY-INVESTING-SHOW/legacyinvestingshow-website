@@ -35,7 +35,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/estate-tax-planning-best-strategy.jpg
 imageAlt: >-
   Estate Tax Planning Best Strategy: Complete 2026 Guide for High-Net-Worth
   Families guide
@@ -388,6 +388,6 @@ Estate planning works better when your income-tax, entity, and investment decisi
 - Compare additional deduction frameworks in [best tax deductions for high-income earners](/blog/best-tax-deductions-for-high-income-earners).
 - Review personal deduction ideas in [best tax deductions for individuals](/blog/best-tax-deductions-for-individuals).
 - Track new planning ideas from the full [blog](/blog).
-- If you want implementation support, review available [programs](/programs).
+- If you want implementation support, review available [blog resources](/blog/).
 
 Educational note: this framework is for planning and discussion. Your final structure should be designed with a qualified estate attorney and tax professional who can evaluate your state law, filing deadlines, and family objectives.

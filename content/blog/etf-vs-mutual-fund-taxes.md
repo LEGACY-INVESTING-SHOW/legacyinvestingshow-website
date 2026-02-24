@@ -392,6 +392,6 @@ If you need a quick rule set:
 - For active exposure, demand evidence using after-tax returns, not marketing narratives.
 - Review annually and after major income or life changes.
 
-For deeper implementation ideas, browse the main [blog](/blog) and connect this with your total plan, not just one fund decision. If your goal is execution support and accountability, compare planning options on [programs](/programs).
+For deeper implementation ideas, browse the main [blog](/blog) and connect this with your total plan, not just one fund decision. If your goal is execution support and accountability, compare planning options on [blog resources](/blog/).
 
 This article is educational and practical by design. Tax outcomes depend on your facts, account mix, and changing rules, so validate major decisions with a qualified tax professional.

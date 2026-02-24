@@ -342,7 +342,7 @@ A practical threshold many advisors test is whether expected residual profit aft
 9. What are the first three compliance deadlines after election approval?
 10. How should I handle prior owner draws if payroll starts mid-year?
 11. What audit risk factors are highest in my fact pattern?
-12. Should I coordinate this with broader planning through [programs](/programs) or stay with annual tax-only review?
+12. Should I coordinate this with broader planning through [blog resources](/blog/) or stay with annual tax-only review?
 
 ## Decision framework for 2026 action
 

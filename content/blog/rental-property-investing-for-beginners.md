@@ -431,6 +431,6 @@ Use this quick gate before you submit an offer:
 - If tax benefits are the only thing making the deal work, pass.
 - If you can hold for 7 to 10 years with solid reserves, your odds improve materially.
 
-For next steps, study comparable deal breakdowns in the [blog](/blog), review strategy primers in [investing topics](/topics/investing), and evaluate implementation support in [programs](/programs).
+For next steps, study comparable deal breakdowns in the [blog](/blog), review strategy primers in [investing topics](/topics/investing), and evaluate implementation support in [blog resources](/blog/).
 
 Rental property investing for beginners works best when you combine conservative underwriting, strong reserves, tenant-quality discipline, and long-term time horizon. The winners are usually not the most aggressive buyers. They are the most consistent operators.

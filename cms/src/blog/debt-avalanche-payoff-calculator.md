@@ -35,7 +35,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/debt-avalanche-payoff-calculator.jpg
 imageAlt: >-
   Debt Avalanche Payoff Calculator: Practical Guide + Examples for Faster
   Interest Savings guide
@@ -380,4 +380,4 @@ Use this quick framework:
 
 If you can answer yes to most of these, a debt avalanche payoff calculator is likely a strong fit. Keep the plan simple, recalculate monthly, and focus on execution quality over perfect forecasts.
 
-For more implementation help, browse the latest guides on the [blog](/blog) or review support options on [programs](/programs).
+For more implementation help, browse the latest guides on the [blog](/blog) or review support options on [blog resources](/blog/).

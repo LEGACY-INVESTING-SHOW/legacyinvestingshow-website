@@ -403,4 +403,4 @@ By day 90:
 - Updated payoff date estimate.
 - Strategy check: stay snowball, or switch to hybrid if interest tradeoff is now too large.
 
-For more templates and payoff walkthroughs, browse the [blog](/blog) and training options in [programs](/programs).
+For more templates and payoff walkthroughs, browse the [blog](/blog) and training options in [blog resources](/blog/).

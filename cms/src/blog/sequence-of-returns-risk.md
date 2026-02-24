@@ -28,7 +28,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/sequence-of-returns-risk.jpg
 imageAlt: 'Sequence of Returns Risk: Protect Your Retirement from Market Crashes guide'
 imageWidth: 1200
 imageHeight: 630
@@ -404,7 +404,7 @@ If you review sequence of returns risk with a CPA/attorney/advisor, bring:
 
 ## Internal Links To Continue
 - [Browse related guides](/blog/category/retirement)
-- [Programs and implementation support](/programs)
+- [blog resources](/blog/)
 - [Latest blog posts](/blog)
 
 ## Final Word

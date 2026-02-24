@@ -422,6 +422,6 @@ Use these questions to improve decision quality:
 
 Start with a two-tab worksheet this week: Schedule A break-even on one tab, property depreciation timing on the other. That keeps the cost segregation vs itemized deductions choice grounded in numbers, not tax buzzwords.
 
-If you want broader context before deciding, use the [Tax Strategies hub](/topics/tax-strategies), browse the latest posts on [the blog](/blog), and review implementation options on [programs](/programs).
+If you want broader context before deciding, use the [Tax Strategies hub](/topics/tax-strategies), browse the latest posts on [the blog](/blog), and review implementation options on [blog resources](/blog/).
 
 This content is educational and planning-focused. Tax outcomes depend on your facts, filing status, state rules, and current law.

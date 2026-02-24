@@ -288,7 +288,7 @@ Day 27-30
 - Finalize annual review dates and threshold alerts.
 - Save your investment policy statement and share it with spouse/partner.
 
-If you want structured support implementing this process, review [Legacy Investing Show programs](/programs) and compare to your DIY approach.
+If you want structured support implementing this process, review [blog resources](/blog/) and compare to your DIY approach.
 
 ## Mistakes That Hurt Retirement Allocation Results
 

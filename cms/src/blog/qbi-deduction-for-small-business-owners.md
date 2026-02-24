@@ -33,7 +33,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/qbi-deduction-for-small-business-owners.jpg
 imageAlt: 'QBI Deduction for Small Business Owners: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -395,4 +395,4 @@ Use this simple order:
 - Third, run at least three scenarios before changing salary or entity assumptions.
 - Fourth, implement only moves that improve total after-tax cash flow, not just one deduction line.
 
-If you want help integrating QBI with entity, retirement, and long-term wealth planning, start with the [blog](/blog) resources and map actions against your business timeline in [programs](/programs).
+If you want help integrating QBI with entity, retirement, and long-term wealth planning, start with the [blog](/blog) resources and map actions against your business timeline in [blog resources](/blog/).

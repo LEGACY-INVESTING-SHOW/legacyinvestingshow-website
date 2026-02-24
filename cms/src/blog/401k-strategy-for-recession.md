@@ -36,7 +36,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/401k-strategy-for-recession.jpg
 imageAlt: >-
   401k Strategy for Recession: Complete 2026 Guide to Protecting Retirement
   Without Panic Selling guide
@@ -372,7 +372,7 @@ Use this checklist to implement quickly.
 - [ ] Run a two-year stress test with drawdown and rebound assumptions.
 - [ ] Identify one accountability partner or advisor check-in date.
 
-If you want additional implementation support, review available [programs](/programs) and compare your policy with your current account settings.
+If you want additional implementation support, review available [blog resources](/blog/) and compare your policy with your current account settings.
 
 ## Final Decision Framework
 

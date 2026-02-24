@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-strategy-tax-implications.jpg
 imageAlt: >-
   Tax Strategy Tax Implications: Complete 2026 Guide for Smarter Investing,
   Deductions, and Retirement Decisions guide

@@ -408,7 +408,7 @@ For deeper implementation details, use these internal reads:
 - Review practical deduction ideas in [Best Tax Deductions for W-2 Employees](/blog/best-tax-deductions-for-w2-employees).
 - If you have business income, read [Best Tax Deductions for Self-Employed](/blog/best-tax-deductions-for-self-employed) and [Best Tax Deductions for Small Business](/blog/best-tax-deductions-for-small-business).
 - Browse more planning guides in the [Legacy blog](/blog).
-- If you want hands-on implementation support, see available [programs](/programs).
+- If you want hands-on implementation support, see available [blog resources](/blog/).
 
 ## Final takeaways
 

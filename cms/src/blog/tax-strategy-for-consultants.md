@@ -417,11 +417,11 @@ This list tends to reveal blind spots fast and can reduce expensive assumptions.
 
 A tax strategy for consultants should evolve with your real operating data, not your ideal forecast. The highest-performing approach in 2026 is not just selecting a structure, but maintaining a repeatable rhythm: clean baseline numbers, monthly reconciliation, documented decisions, and quarterly review.
 
-If you need a broader education roadmap, check the broader [site blog index](/blog) and the [programs page](/programs), then execute this 30-day checklist first. It is the difference between reactive compliance and planned after-tax growth.
+If you need a broader education roadmap, check the broader [site blog index](/blog) and the [blog resources](/blog/), then execute this 30-day checklist first. It is the difference between reactive compliance and planned after-tax growth.
 
 ## Related Resources
 - [Tax Strategies Hub](/topics/tax-strategies)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: best tax strategy for retirement](/blog/best-tax-strategy-for-retirement)
 - [Related Guide: best tax strategy for ira withdrawals](/blog/best-tax-strategy-for-ira-withdrawals)

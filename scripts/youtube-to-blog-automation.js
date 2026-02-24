@@ -657,7 +657,7 @@ function generateSection(number, keyword, transcriptPart, video, analysis) {
 
 // Generate conclusion
 function generateConclusion(video, keywords, analysis) {
-    return `${keywords.primaryKeyword} is a powerful strategy for building wealth and achieving financial freedom. As demonstrated in this guide, success comes from understanding the fundamentals, implementing proven strategies, and staying consistent over time.\n\nReady to take the next step? [Explore our programs](/programs) to get personalized guidance and accelerate your ${analysis.category.toLowerCase()} journey.\n\nRemember, every expert was once a beginner. Start with the basics outlined in this article, apply what you've learned, and watch your results compound over time.`;
+    return `${keywords.primaryKeyword} is a powerful strategy for building wealth and achieving financial freedom. As demonstrated in this guide, success comes from understanding the fundamentals, implementing proven strategies, and staying consistent over time.\n\nReady to take the next step? [Explore our blog resources](/blog/) to accelerate your ${analysis.category.toLowerCase()} journey.\n\nRemember, every expert was once a beginner. Start with the basics outlined in this article, apply what you've learned, and watch your results compound over time.`;
 }
 
 // Save blog post

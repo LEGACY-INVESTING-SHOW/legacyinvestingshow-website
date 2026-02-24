@@ -34,7 +34,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-startup-cost-tax-deductible.jpg
 imageAlt: 'airbnb startup cost tax deductible: Complete 2026 Guide for US Hosts guide'
 imageWidth: 1200
 imageHeight: 630
@@ -414,4 +414,4 @@ Use this five-part filter before you sign your next lease:
 - Cash resilience: you can absorb at least two weak months.
 - Advisor alignment: your CPA supports your classification and estimate model.
 
-If you pass all five, scale in controlled steps. If you fail two or more, redesign first. For structured execution support, review available training on the [programs page](/programs).
+If you pass all five, scale in controlled steps. If you fail two or more, redesign first. For structured execution support, review available training on the [blog resources](/blog/).

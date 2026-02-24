@@ -35,7 +35,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/s-corp-election-for-freelancers.jpg
 imageAlt: >-
   S Corp Election for Freelancers: Complete 2026 Guide to Tax Savings,
   Compliance, and Tradeoffs guide
@@ -468,4 +468,4 @@ A practical s corp election for freelancers is usually strongest when all three 
 2. Profit above salary is meaningful even after compliance costs.
 3. You can run payroll and books with zero shortcuts.
 
-If that describes your business, the strategy may be a strong fit. If not, postpone and focus on profit stability first. For deeper operating guidance, review more tactical articles in the [blog](/blog) and implementation support options in [programs](/programs).
+If that describes your business, the strategy may be a strong fit. If not, postpone and focus on profit stability first. For deeper operating guidance, review more tactical articles in the [blog](/blog) and implementation support options in [blog resources](/blog/).

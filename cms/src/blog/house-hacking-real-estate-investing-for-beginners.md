@@ -35,7 +35,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/house-hacking-real-estate-investing-for-beginners.jpg
 imageAlt: >-
   House Hacking Real Estate Investing for Beginners: Complete 2026 Guide to Cash
   Flow, Financing, and Risk Control guide
@@ -377,7 +377,7 @@ REI Prime’s rent reduction examples are motivating, but your actual outcome de
 | BRRRR strategy | Potentially scalable portfolio growth | Rehab and refinance execution risk | Moderate to high | High | Better after first operating reps |
 | Airbnb arbitrage | Lower property ownership barrier in some setups | Regulatory and occupancy volatility | Low to moderate | High | Better with hospitality systems experience |
 
-If you are comparing paths, review the [BRRRR method](/blog/brrrr-method), [airbnb cash flow and tax implications](/blog/airbnb-cash-flow-tax-implications), and [program details](/programs) for execution support.
+If you are comparing paths, review the [BRRRR method](/blog/brrrr-method), [airbnb cash flow and tax implications](/blog/airbnb-cash-flow-tax-implications), and [blog resources](/blog/) for execution support.
 
 Pros of house hacking:
 - Can reduce your largest monthly expense.

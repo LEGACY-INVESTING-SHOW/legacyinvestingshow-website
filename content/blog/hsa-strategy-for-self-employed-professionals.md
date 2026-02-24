@@ -399,7 +399,7 @@ A practical annual sequence for many owners:
 3. Fund Solo 401(k) and IRA strategy.
 4. Evaluate Roth conversion windows with bracket awareness.
 
-For additional planning depth, pair this guide with [best tax deductions for high income earners](/blog/best-tax-deductions-for-high-income-earners), [best tax deductions for individuals](/blog/best-tax-deductions-for-individuals), and the [Roth conversion strategy calculator guide](/blog/best-roth-conversion-strategy-calculator). If you want implementation support, review the resources on [programs](/programs).
+For additional planning depth, pair this guide with [best tax deductions for high income earners](/blog/best-tax-deductions-for-high-income-earners), [best tax deductions for individuals](/blog/best-tax-deductions-for-individuals), and the [Roth conversion strategy calculator guide](/blog/best-roth-conversion-strategy-calculator). If you want implementation support, review the resources on [blog resources](/blog/).
 
 ## Final Decision Framework
 

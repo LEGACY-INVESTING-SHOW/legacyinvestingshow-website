@@ -356,7 +356,7 @@ function applyTemplate(template, post, allPosts = []) {
     const { toc, content: htmlContent } = generateTOC(rawHtmlContent, wordCount);
 
     // Set default values for optional fields
-    const rawImage = post.frontmatter.image || '/assets/images/blog-default.jpg';
+    const rawImage = post.frontmatter.image || '/assets/images/og-blog.jpg';
     // For local images, prepend domain for OG/twitter; for external URLs, use as-is
     const SITE_DOMAIN = 'https://www.legacyinvestingshow.com';
     const ogImage = rawImage.startsWith('http') 
@@ -451,13 +451,13 @@ function generateRelatedPostsMarkup(posts) {
     if (posts.length === 0) return '';
 
     const postsHtml = posts.map(post => {
-        const image = post.frontmatter.image || '/assets/images/blog-default.jpg';
+        const image = post.frontmatter.image || '/assets/images/og-blog.jpg';
         const readTime = calculateReadTime(post.content);
 
         return `
             <a href="/blog/${post.slug}" class="related-post-item">
                 <div class="related-post-image">
-                    <img src="${image}" alt="${post.frontmatter.title}" loading="lazy">
+                    <img src="${image}" alt="${post.frontmatter.title}" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/og-blog.jpg';">
                 </div>
                 <div class="related-post-content">
                     <h4 class="related-post-title">${post.frontmatter.title}</h4>
@@ -502,7 +502,7 @@ function generateBlogIndex(posts) {
                 </nav>` : '';
 
     const postCardsHTML = sortedPosts.map(post => {
-        const image = post.frontmatter.image || '/assets/images/blog-default.jpg';
+        const image = post.frontmatter.image || '/assets/images/og-blog.jpg';
         const readTime = calculateReadTime(post.content);
         const category = post.frontmatter.category || 'Investing';
         const categorySlug = slugifyCategory(category);
@@ -511,7 +511,7 @@ function generateBlogIndex(posts) {
         return `
             <a href="/blog/${post.slug}" class="minimal-post-item" data-category="${categorySlug}">
                 <div class="minimal-post-image">
-                    <img src="${image}" alt="${post.frontmatter.title}" loading="lazy">
+                    <img src="${image}" alt="${post.frontmatter.title}" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/og-blog.jpg';">
                 </div>
                 <div class="minimal-post-content">
                     <div class="minimal-post-meta">
@@ -532,7 +532,7 @@ function generateBlogIndex(posts) {
     const displayFeatured = featuredPosts.length > 0 ? featuredPosts : sortedPosts.slice(0, 1);
 
     const featuredHTML = displayFeatured.map(post => {
-        const image = post.frontmatter.image || '/assets/images/blog-default.jpg';
+        const image = post.frontmatter.image || '/assets/images/og-blog.jpg';
         const readTime = calculateReadTime(post.content);
 
         return `
@@ -541,7 +541,8 @@ function generateBlogIndex(posts) {
                             <img src="${image}"
                                  alt="${post.frontmatter.title}"
                                  class="w-full aspect-[4/3] object-cover"
-                                 loading="eager">
+                                 loading="eager"
+                                 onerror="this.onerror=null;this.src='/assets/images/og-blog.jpg';">
                         </div>
                         <div class="pt-4">
                             <span class="category-label mb-2 block">Featured</span>
@@ -651,7 +652,6 @@ function generateBlogIndex(posts) {
                 <div class="hidden md:flex items-center gap-6">
                     <a href="/" class="nav-link">Home</a>
                     <a href="/about" class="nav-link">About</a>
-                    <a href="/programs" class="nav-link">Programs</a>
                     <a href="/success-stories" class="nav-link">Results</a>
                     <a href="/blog/" class="nav-link nav-link-active">Blog</a>
                 </div>
@@ -667,7 +667,6 @@ function generateBlogIndex(posts) {
                 <div class="flex flex-col gap-3">
                     <a href="/" class="nav-link">Home</a>
                     <a href="/about" class="nav-link">About</a>
-                    <a href="/programs" class="nav-link">Programs</a>
                     <a href="/success-stories" class="nav-link">Results</a>
                     <a href="/blog/" class="nav-link nav-link-active">Blog</a>
                 </div>
@@ -718,7 +717,6 @@ function generateBlogIndex(posts) {
                     <span>Legacy Investing Show</span>
                 </div>
                 <div class="footer-links">
-                    <a href="/programs">Programs</a>
                     <a href="/success-stories">Results</a>
                     <a href="/blog/">Blog</a>
                 </div>

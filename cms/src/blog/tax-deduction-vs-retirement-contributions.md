@@ -363,11 +363,11 @@ Use this simple sequence for the next dollar of surplus cash:
 3. In a high marginal tax year with deduction eligibility? Increase traditional contributions.
 4. Need flexibility or lower future tax uncertainty? Add Roth or taxable in a controlled split.
 
-That is the practical heart of tax deduction vs retirement contributions in 2026: order matters more than ideology. Keep the plan mechanical, review quarterly, and adjust with real numbers. For more implementation guides, browse the [blog](/blog) and training pathways in [programs](/programs).
+That is the practical heart of tax deduction vs retirement contributions in 2026: order matters more than ideology. Keep the plan mechanical, review quarterly, and adjust with real numbers. For more implementation guides, browse the [blog](/blog) and training pathways in [blog resources](/blog/).
 
 ## Related Resources
 - [Tax Strategies Hub](/topics/tax-strategies)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: best tax strategy for retirement](/blog/best-tax-strategy-for-retirement)
 - [Related Guide: best tax strategy for ira withdrawals](/blog/best-tax-strategy-for-ira-withdrawals)

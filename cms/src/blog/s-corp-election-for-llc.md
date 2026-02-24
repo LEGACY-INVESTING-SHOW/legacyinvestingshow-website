@@ -357,11 +357,11 @@ The election is the beginning, not the end.
 
 This is the pattern that keeps the election useful for years, not just the year you file.
 
-If you need a structured path with check-ins and implementation cadence, the [programs](/programs) workflow style can be more important than the tax rate itself.
+If you need a structured path with check-ins and implementation cadence, the [blog resources](/blog/) workflow style can be more important than the tax rate itself.
 
 ## Related Resources
 - [Business Structures Hub](/topics/business-structures)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: llc vs s corp taxes](/blog/llc-vs-s-corp-taxes)
 - [Related Guide: how to make s corp election for llc](/blog/how-to-make-s-corp-election-for-llc)

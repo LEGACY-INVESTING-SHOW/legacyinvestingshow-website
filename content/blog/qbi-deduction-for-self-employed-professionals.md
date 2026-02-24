@@ -379,6 +379,6 @@ Use this fast framework:
 - Day 6: Approve implementation moves.
 - Day 7: Document final plan and calendar follow-ups.
 
-For broader planning context, review the [Tax Strategies hub](/topics/tax-strategies), [best tax deductions for w2 employees](/blog/best-tax-deductions-for-w2-employees), and [programs](/programs).
+For broader planning context, review the [Tax Strategies hub](/topics/tax-strategies), [best tax deductions for w2 employees](/blog/best-tax-deductions-for-w2-employees), and [blog resources](/blog/).
 
 A disciplined QBI process is less about chasing a headline deduction and more about integrating tax math with cash flow, entity design, and long-term wealth strategy.

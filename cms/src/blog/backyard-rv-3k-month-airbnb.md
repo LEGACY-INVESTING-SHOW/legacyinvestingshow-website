@@ -564,7 +564,7 @@ The primary risks Kamari has navigated include:
 
 **Ready to build your own Airbnb business like Kamari?**
 
-[Learn more about Legacy Investing Show](/programs)
+[Learn more about Legacy Investing Show](/blog/)
 
 ### Related Success Stories
 
@@ -594,7 +594,7 @@ The primary risks Kamari has navigated include:
 
 Preston Seo built a $15 million real estate portfolio generating over $400,000 yearly in net profit from his Airbnbs. He created Legacy Investing Show to teach the exact systems that scaled his business.
 
-[Learn more about the program](/programs) | [Watch free training](/free-training)
+[blog resources](/blog/) | [Watch free training](/free-training)
 
 ---
 

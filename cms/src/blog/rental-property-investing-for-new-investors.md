@@ -36,7 +36,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/rental-property-investing-for-new-investors.jpg
 imageAlt: >-
   Rental Property Investing for New Investors: Complete 2026 Guide to Buying
   Cash-Flowing Rentals guide
@@ -452,4 +452,4 @@ Use this quick decision test:
 
 If any item fails, delay and improve your process. If all pass, you are not guaranteed success, but you are operating with the discipline most beginners skip.
 
-For more examples and implementation ideas, review the main [blog](/blog) and the available [programs](/programs).
+For more examples and implementation ideas, review the main [blog](/blog) and the available [blog resources](/blog/).

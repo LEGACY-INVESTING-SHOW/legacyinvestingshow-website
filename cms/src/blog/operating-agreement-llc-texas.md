@@ -35,7 +35,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/operating-agreement-llc-texas.jpg
 imageAlt: >-
   Operating Agreement LLC Texas: Complete 2026 Guide for Ownership, Taxes, and
   Control guide

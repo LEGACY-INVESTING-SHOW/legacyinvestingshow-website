@@ -308,7 +308,7 @@ Week 4: Execution and feedback loop
 - [ ] Schedule quarterly review dates on calendar.
 - [ ] Write a one-page postmortem on your first month process.
 
-Optional acceleration: if you want guided structure and accountability, review available [programs](/programs).
+Optional acceleration: if you want guided structure and accountability, review available [blog resources](/blog/).
 
 ## Common Mistakes That Destroy Returns
 

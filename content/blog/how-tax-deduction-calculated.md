@@ -399,7 +399,7 @@ Bring these to your next meeting so you can get decision-grade guidance:
 6. If I bunch deductions, what is the expected two-year net benefit after cash flow impact?
 7. What changes should I implement now so next filing season is simpler and more accurate?
 
-If you want implementation support beyond articles, review [programs](/programs).
+If you want implementation support beyond articles, review [blog resources](/blog/).
 
 ## Final decision framework you can use today
 

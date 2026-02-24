@@ -33,7 +33,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-asset-allocation-strategy.jpg
 imageAlt: 'Best Asset Allocation Strategy: Complete 2026 Guide for US Investors guide'
 imageWidth: 1200
 imageHeight: 630
@@ -372,4 +372,4 @@ Bring this list to your next planning meeting:
 
 ## Final Decision Rule
 
-The **best asset allocation strategy** is the highest-growth mix you can hold through a bad market while staying consistent with your tax and cash-flow reality. Pick a target, write rules, automate funding, and review annually. If you want implementation support, start with our [blog](/blog) resources and then evaluate [programs](/programs) for guided execution.
+The **best asset allocation strategy** is the highest-growth mix you can hold through a bad market while staying consistent with your tax and cash-flow reality. Pick a target, write rules, automate funding, and review annually. If you want implementation support, start with our [blog](/blog) resources and then evaluate [blog resources](/blog/) for guided execution.

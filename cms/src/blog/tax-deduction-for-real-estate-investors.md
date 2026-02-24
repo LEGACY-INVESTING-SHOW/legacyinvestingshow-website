@@ -381,11 +381,11 @@ In those scenarios, focus first on underwriting quality, tenant stability, and d
 9. What documentation format does your team need for a clean filing?
 10. Which items should be treated as non-deductible by design next year?
 
-Use this article with the broader planning material in [tax strategy hub](/topics/tax-strategies), then compare deduction patterns with broader filing strategy in [our tax-focused blog page](/blog), and review related ideas in the [high-income deduction guide](/blog/best-tax-deductions-for-high-income-earners). If implementation is the real gap, pair this with relevant education in [programs](/programs).
+Use this article with the broader planning material in [tax strategy hub](/topics/tax-strategies), then compare deduction patterns with broader filing strategy in [our tax-focused blog page](/blog), and review related ideas in the [high-income deduction guide](/blog/best-tax-deductions-for-high-income-earners). If implementation is the real gap, pair this with relevant education in [blog resources](/blog/).
 
 ## Related Resources
 - [Tax Strategies Hub](/topics/tax-strategies)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: best tax strategy for retirement](/blog/best-tax-strategy-for-retirement)
 - [Related Guide: best tax strategy for ira withdrawals](/blog/best-tax-strategy-for-ira-withdrawals)

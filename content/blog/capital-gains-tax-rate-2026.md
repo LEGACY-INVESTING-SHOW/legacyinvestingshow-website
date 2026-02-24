@@ -454,4 +454,4 @@ Bring these questions before executing large sales:
 A useful planning workflow is to run one base case and two stress cases. Use your base case for execution, keep one upside-income case and one downside-income case for contingency decisions.
 
 Next step:
-If you want a broader tax reduction map beyond capital gains, review [Tax Strategies](/topics/tax-strategies), explore [programs](/programs), and build a personalized plan from your current portfolio and income trajectory.
+If you want a broader tax reduction map beyond capital gains, review [Tax Strategies](/topics/tax-strategies), explore [blog resources](/blog/), and build a personalized plan from your current portfolio and income trajectory.

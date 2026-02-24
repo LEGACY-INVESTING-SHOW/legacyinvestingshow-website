@@ -35,7 +35,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/retirement-withdrawal-strategy-template.jpg
 imageAlt: >-
   Retirement Withdrawal Strategy Template: Practical Guide, Tax Sequencing, and
   Worked Examples guide
@@ -416,4 +416,4 @@ A strong template is a living system. Use three review layers:
 - Quarterly: drawdown status, conversion progress, and bracket tracking.
 - Annually: full tax projection, SSA timing check, and beneficiary review.
 
-Tie each review to an action list, not just meeting notes. Keep the plan practical and easy for both spouses to run. For ongoing implementation ideas, browse the [blog](/blog) or review [programs](/programs) for hands-on support.
+Tie each review to an action list, not just meeting notes. Keep the plan practical and easy for both spouses to run. For ongoing implementation ideas, browse the [blog](/blog) or review [blog resources](/blog/) for hands-on support.

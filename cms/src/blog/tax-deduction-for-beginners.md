@@ -252,7 +252,7 @@ Use this sequence:
 
 For investors, this means avoiding one-year tax gaming that hurts compounding. For business owners and freelancers, this means disciplined categorization: personal mileage, mixed-use software, and home costs require strict separation or they create correction work later.
 
-If you are learning this from scratch, [programs](/programs) content may help you build habits, but this framework still works on its own.
+If you are learning this from scratch, [blog resources](/blog/) content may help you build habits, but this framework still works on its own.
 
 ## Fully worked numeric example: one person, two filing options
 
@@ -381,6 +381,6 @@ A beginner method that produces stable results is better than a complex method t
 ## Related Resources
 - [Tax Strategies Hub](/topics/tax-strategies)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: best tax strategy for retirement](/blog/best-tax-strategy-for-retirement)
 - [Related Guide: best tax strategy for ira withdrawals](/blog/best-tax-strategy-for-ira-withdrawals)

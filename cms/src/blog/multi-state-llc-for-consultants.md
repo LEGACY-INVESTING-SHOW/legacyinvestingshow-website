@@ -33,7 +33,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/multi-state-llc-for-consultants.jpg
 imageAlt: 'Multi State LLC for Consultants: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -366,7 +366,7 @@ In these cases, keep the structure lean, document facts, and reassess each quart
 - How should I adjust quarterly estimates when project mix changes midyear?
 - Which tasks should be internal versus outsourced to keep total cost reasonable?
 
-For implementation support and operating templates, review current resources on [the blog](/blog) and training paths on [programs](/programs).
+For implementation support and operating templates, review current resources on [the blog](/blog) and training paths on [blog resources](/blog/).
 
 Final decision rule:
 If a state has recurring on-site work, meaningful revenue, or people on the ground, default to proactive registration and tax setup. If it does not, monitor with documentation and re-evaluate quarterly. That approach usually protects both margin and compliance posture.

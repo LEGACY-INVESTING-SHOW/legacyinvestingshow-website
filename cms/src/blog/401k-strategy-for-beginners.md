@@ -35,7 +35,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/401k-strategy-for-beginners.jpg
 imageAlt: >-
   401k Strategy for Beginners: Complete 2026 Guide to Matching, Taxes, and
   Contribution Decisions guide

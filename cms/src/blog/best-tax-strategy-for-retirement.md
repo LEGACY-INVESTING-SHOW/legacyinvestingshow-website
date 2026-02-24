@@ -390,10 +390,10 @@ If you want a complete baseline and a review rhythm, start with the [tax deducti
 
 The best outcome is not maximum complexity. It is repeatable execution.
 
-If you are ready to move from theory to implementation, use this as your starting operating model and align with a structured support path. The [blog index](/blog) has companion articles, and the [programs](/programs) section can help you build the exact setup with clearer timelines.
+If you are ready to move from theory to implementation, use this as your starting operating model and align with a structured support path. The [blog index](/blog) has companion articles, and the [blog resources](/blog/) section can help you build the exact setup with clearer timelines.
 
 ## Related Resources
 - [Tax Strategies Hub](/topics/tax-strategies)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: best tax strategy for ira withdrawals](/blog/best-tax-strategy-for-ira-withdrawals)

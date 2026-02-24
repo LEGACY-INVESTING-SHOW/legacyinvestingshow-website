@@ -392,4 +392,4 @@ Interpretation:
 - 60-79: Hybrid is often safer than going all-in on either side.
 - Below 60: Standard LLC approach is usually the more robust near-term path.
 
-If you want additional examples, see current comparisons on the [blog](/blog). If you want hands-on implementation support for your portfolio design and operating system, review available [programs](/programs).
+If you want additional examples, see current comparisons on the [blog](/blog). If you want hands-on implementation support for your portfolio design and operating system, review available [blog resources](/blog/).

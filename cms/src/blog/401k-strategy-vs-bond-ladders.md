@@ -33,7 +33,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/401k-strategy-vs-bond-ladders.jpg
 imageAlt: '401k strategy vs bond ladders: Which Strategy Works Better in 2026? guide'
 imageWidth: 1200
 imageHeight: 630
@@ -302,7 +302,7 @@ Practical ordering rules that often help:
 4. Keep the rest in diversified growth assets aligned with risk tolerance.
 5. Revisit Traditional vs Roth split annually with your CPA based on bracket, deductions, and expected retirement income sources.
 
-If you are approaching required distributions, coordinate ladder and withdrawal planning with expected RMD timing and Social Security claiming strategy. Also check related planning articles in [our blog](/blog) and the [programs page](/programs) for implementation support.
+If you are approaching required distributions, coordinate ladder and withdrawal planning with expected RMD timing and Social Security claiming strategy. Also check related planning articles in [our blog](/blog) and the [blog resources](/blog/) for implementation support.
 
 ## Step-by-Step Implementation Plan
 

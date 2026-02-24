@@ -338,7 +338,7 @@ At this stage, most traders should build Step 1–3 first, then test entity desi
 
 ## How this connects to broader strategy areas
 
-Day trading tax planning does not live in a vacuum. It should be reviewed with broader deduction strategy and retirement planning choices. Use the [general tax strategy archive](/topics/tax-strategies), compare category-level ideas in the [blog](/blog), and review the [best tax strategy for 401k withdrawal planning](/blog/best-tax-strategy-for-401k-withdrawal) before moving to aggressive capital deployment. If your goal is total wealth planning, visit [program guidance](/programs) as part of your annual review.
+Day trading tax planning does not live in a vacuum. It should be reviewed with broader deduction strategy and retirement planning choices. Use the [general tax strategy archive](/topics/tax-strategies), compare category-level ideas in the [blog](/blog), and review the [best tax strategy for 401k withdrawal planning](/blog/best-tax-strategy-for-401k-withdrawal) before moving to aggressive capital deployment. If your goal is total wealth planning, visit [blog resources](/blog/) as part of your annual review.
 
 ## 30-Day Checklist
 
@@ -428,6 +428,6 @@ At the end of each quarter, rerun this same framework. If your trading volume, c
 ## Related Resources
 - [Tax Strategies Hub](/topics/tax-strategies)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: best tax strategy for retirement](/blog/best-tax-strategy-for-retirement)
 - [Related Guide: best tax strategy for ira withdrawals](/blog/best-tax-strategy-for-ira-withdrawals)

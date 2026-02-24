@@ -400,7 +400,7 @@ Use these resources to implement your plan:
 - [Debt avalanche payoff calculator](/blog/debt-avalanche-payoff-calculator)
 - [Credit score optimization](/blog/credit-score-optimization)
 - [Debt strategy library](/blog)
-- [Programs and coaching options](/programs)
+- [blog resources](/blog/)
 
 ## Final Decision Rule
 

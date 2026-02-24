@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-to-calculate-reasonable-salary-for-s-corp.jpg
 imageAlt: 'How to calculate reasonable salary for s corp: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -450,4 +450,4 @@ This documentation discipline is where many owners fail. Advisory content in the
 
 Start with a realistic salary band, not a target tax number. Validate it with market data, pressure-test it against cash flow, and run clean payroll every cycle. Then revisit quarterly as business reality changes.
 
-For adjacent decisions, review [business credit building](/blog/business-credit-building), compare structures in [Business Structures hub](/topics/business-structures), and explore implementation support in [programs](/programs).
+For adjacent decisions, review [business credit building](/blog/business-credit-building), compare structures in [Business Structures hub](/topics/business-structures), and explore implementation support in [blog resources](/blog/).

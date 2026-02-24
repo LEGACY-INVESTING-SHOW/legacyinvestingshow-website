@@ -286,7 +286,7 @@ Quarterly quick check and annual deep review. Use the annual review to revisit r
 10. Connect to broader planning
 Integrate debt strategy, insurance coverage, and estate documents so asset allocation is not carrying risks it cannot solve.
 
-For additional education modules and implementation walkthroughs, you can also explore [program resources](/programs) and the [investing topic hub](/topics/investing).
+For additional education modules and implementation walkthroughs, you can also explore [blog resources](/blog/) and the [investing topic hub](/topics/investing).
 
 ## Tax-Aware Asset Location and Rebalancing Rules
 

@@ -344,7 +344,7 @@ Use this exact list before signing a plan:
 - What questions should trigger a mid-year reset?
 - How does this connect to my retirement distribution strategy for future years?
 
-If you want coaching support for execution, review the full program path at /programs.
+If you want coaching support for execution, review the full resource path at /blog/.
 
 ## Ongoing optimization: connect tax deduction for high earners with debt and investing
 Tax plans are strongest when debt and investing are integrated.
@@ -358,6 +358,6 @@ The key is a quarterly loop. If nothing else, keep this single principle: optimi
 ## Related Resources
 - [Tax Strategies Hub](/topics/tax-strategies)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: best tax strategy for retirement](/blog/best-tax-strategy-for-retirement)
 - [Related Guide: best tax strategy for ira withdrawals](/blog/best-tax-strategy-for-ira-withdrawals)

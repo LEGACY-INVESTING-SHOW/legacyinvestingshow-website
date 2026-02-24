@@ -323,7 +323,7 @@ If one of these applies, the strategy is still useful as a benchmark but should 
 - Days 25-27: Update next 2-year projections and contingency triggers.
 - Days 28-30: Finalize year-2 plan and file reminders for annual review.
 
-If you want broader sequencing support, compare this framework with retirement and deduction planning in the [401k withdrawal guide](/blog/best-tax-strategy-for-401k-withdrawal) and [small-business deduction planning](/blog/best-tax-deductions-for-small-business). For implementation support, review available structures at [programs](/programs).
+If you want broader sequencing support, compare this framework with retirement and deduction planning in the [401k withdrawal guide](/blog/best-tax-strategy-for-401k-withdrawal) and [small-business deduction planning](/blog/best-tax-deductions-for-small-business). For implementation support, review available structures at [blog resources](/blog/).
 
 ## Questions To Ask Your CPA/Advisor
 1. What exact rule class applies to my beneficiary status and account type?
@@ -359,6 +359,6 @@ Quickly enough to prevent missed deadlines, but never before running scenario ca
 ## Related Resources
 - [Tax Strategies Hub](/topics/tax-strategies)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: best tax strategy for retirement](/blog/best-tax-strategy-for-retirement)
 - [Related Guide: best tax strategy for ira withdrawals](/blog/best-tax-strategy-for-ira-withdrawals)

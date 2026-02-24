@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-to-pierce-corporate-veil-llc.jpg
 imageAlt: >-
   How to Pierce Corporate Veil LLC: Complete 2026 Guide for Owners, Investors,
   and Plaintiffs guide
@@ -316,7 +316,7 @@ In these cases, compliance steps still help, but they are not the lead solution.
 7. What records should be retained to defend entity separation if a claim appears.
 8. What changes should happen before year-end to avoid cleanup under pressure.
 
-If you want structured implementation support, compare options under [programs](/programs) and then map execution steps to your own advisor team.
+If you want structured implementation support, compare options under [blog resources](/blog/) and then map execution steps to your own advisor team.
 
 ## Action Framework: Red-Yellow-Green Veil Risk Score
 

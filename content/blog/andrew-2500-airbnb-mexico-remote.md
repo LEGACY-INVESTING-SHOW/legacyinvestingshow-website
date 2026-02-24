@@ -611,7 +611,7 @@ Andrew identifies several challenges that require navigation:
 
 **Ready to build your own Airbnb arbitrage business like Andrew?**
 
-[Learn more about Legacy Investing Show](/programs)
+[Learn more about Legacy Investing Show](/blog/)
 
 ### Related Success Stories
 
@@ -641,7 +641,7 @@ Andrew identifies several challenges that require navigation:
 
 Preston Seo created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[Learn more about the program](/programs) | [Watch free training](/free-training)
+[blog resources](/blog/) | [Watch free training](/free-training)
 
 ---
 

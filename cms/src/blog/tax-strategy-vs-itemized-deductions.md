@@ -391,7 +391,7 @@ Your deduction method should serve your full financial plan:
 - Retirement: Traditional 401(k), HSA, and business retirement contributions may drive larger tax benefits than Schedule A tweaks.
 - Structure: For self-employed households, entity and compensation design can matter more than personal itemizing.
 
-For additional planning ideas and implementation support pathways, browse [our blog library](/blog) and [program options](/programs).
+For additional planning ideas and implementation support pathways, browse [our blog library](/blog) and [blog resources](/blog/).
 
 ## Final decision rule for 2026
 
@@ -406,6 +406,6 @@ If one option wins mathematically but fails cash flow or compliance, it is not t
 ## Related Resources
 - [Tax Strategies Hub](/topics/tax-strategies)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: best tax strategy for retirement](/blog/best-tax-strategy-for-retirement)
 - [Related Guide: best tax strategy for ira withdrawals](/blog/best-tax-strategy-for-ira-withdrawals)

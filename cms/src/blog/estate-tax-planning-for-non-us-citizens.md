@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/estate-tax-planning-for-non-us-citizens.jpg
 imageAlt: 'Estate Tax Planning for Non US Citizens: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -334,7 +334,7 @@ A practical decision rule:
 3. If spousal transfer is central, test QDOT path.
 4. Implement only what still makes sense after including annual admin and tax drag.
 
-If you want related planning context, see our [best tax deductions for self-employed readers](/blog/best-tax-deductions-for-self-employed) and the [Legacy Investing Show programs](/programs).
+If you want related planning context, see our [best tax deductions for self-employed readers](/blog/best-tax-deductions-for-self-employed) and the [blog resources](/blog/).
 
 ## Mistakes That Destroy Otherwise Good Plans
 

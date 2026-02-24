@@ -401,12 +401,12 @@ You now have a pre-retiree model that is concrete: a bridge-first sequence, a nu
 ## Continue Reading
 - [Related guide](/topics/retirement)
 - [Related guide](/blog)
-- [Related guide](/programs)
+- [Related guide](/blog/)
 - [Related guide](/blog/4-percent-rule)
 
 ## Related Resources
 - [Retirement Hub](/topics/retirement)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: strategy for retirement withdrawals](/blog/strategy-for-retirement-withdrawals)
 - [Related Guide: retirement withdrawal strategy tax implications](/blog/retirement-withdrawal-strategy-tax-implications)

@@ -414,7 +414,7 @@ Bring these questions to your next meeting so you get decisions, not generic adv
 11. How should I adjust if I add a second unit mid-year?
 12. What would trigger a mid-year estimate recalculation immediately?
 
-You can also review program-level education paths on [Legacy Investing Show programs](/programs) if you want implementation support beyond tax setup.
+You can also review program-level education paths on [blog resources](/blog/) if you want implementation support beyond tax setup.
 
 ## Final Decision Framework for 2026
 

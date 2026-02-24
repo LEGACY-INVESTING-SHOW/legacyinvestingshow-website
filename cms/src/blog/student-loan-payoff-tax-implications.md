@@ -35,7 +35,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/student-loan-payoff-tax-implications.jpg
 imageAlt: >-
   Student Loan Payoff Tax Implications: Complete 2026 Guide for Smarter
   Repayment Decisions guide
@@ -338,7 +338,7 @@ Your strategy should be compared on four dimensions: total cost, monthly burden,
 
 If your goal is strictly behavior simplicity, avalanche or snowball may be enough. If your goal is minimizing multi-year surprises, especially around forgiveness, tax-optimized planning usually beats a one-dimensional method.
 
-More context: [blog home](/blog), [debt management topic page](/topics/debt-management), and [programs](/programs).
+More context: [blog home](/blog), [debt management topic page](/topics/debt-management), and [blog resources](/blog/).
 
 ## When Not to Use This Strategy
 

@@ -716,7 +716,7 @@ The primary risks the brothers actively manage include:
 
 **Ready to build your own Airbnb arbitrage business like Marchia and Cash?**
 
-[Learn more about Legacy Investing Show](/programs)
+[Learn more about Legacy Investing Show](/blog/)
 
 ### Related Success Stories
 
@@ -746,7 +746,7 @@ The primary risks the brothers actively manage include:
 
 Marchia and Cash are among the program's top students, demonstrating what's possible even in saturated markets with the right strategies and mindset.
 
-[Learn more about the program](/programs) | [Watch free training](/free-training)
+[blog resources](/blog/) | [Watch free training](/free-training)
 
 ---
 

@@ -352,7 +352,7 @@ Bring these to your meeting and require numbers, not general opinions:
 - What election timing risks exist if I switch mid-cycle?
 - Which filings, deadlines, and penalties are most commonly missed?
 
-You can build a broader knowledge base from the [blog archive](/blog) and implementation support details in [program details](/programs).
+You can build a broader knowledge base from the [blog archive](/blog) and implementation support details in [blog resources](/blog/).
 
 ## Practical decision framework you can run in 15 minutes
 
@@ -390,6 +390,6 @@ The best llc vs s corp tax calculator result is the one that survives realistic 
 ## Related Resources
 - [Business Structures Hub](/topics/business-structures)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: llc vs s corp taxes](/blog/llc-vs-s-corp-taxes)
 - [Related Guide: how to make s corp election for llc](/blog/how-to-make-s-corp-election-for-llc)

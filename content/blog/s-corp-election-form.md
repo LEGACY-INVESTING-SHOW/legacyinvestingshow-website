@@ -151,7 +151,7 @@ wordCount: '2268'
 ---
 If you run a profitable business, the s corp election form can materially change how your income is taxed, how you pay yourself, and how tightly you need to manage compliance. For many US owners, this is one of the highest-impact tax structure decisions they make after forming an LLC or corporation.
 
-This guide is written for decision quality, not hype. You will see where Form 2553 can help, where it can backfire, and how to pressure-test the economics before filing. If you want broader entity planning context, start with the [Business Structures hub](/topics/business-structures), then compare implementation tactics in the [Legacy Investing Show blog](/blog) and execution support options on [Programs](/programs).
+This guide is written for decision quality, not hype. You will see where Form 2553 can help, where it can backfire, and how to pressure-test the economics before filing. If you want broader entity planning context, start with the [Business Structures hub](/topics/business-structures), then compare implementation tactics in the [Legacy Investing Show blog](/blog) and execution support options on [blog resources](/blog/).
 
 ## The s corp election form in plain English
 

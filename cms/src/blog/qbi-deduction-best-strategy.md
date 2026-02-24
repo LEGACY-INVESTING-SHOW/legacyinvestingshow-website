@@ -32,7 +32,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/qbi-deduction-best-strategy.jpg
 imageAlt: 'qbi deduction best strategy: Complete 2026 Guide for Pass-Through Owners guide'
 imageWidth: 1200
 imageHeight: 630
@@ -312,7 +312,7 @@ This is why the qbi deduction best strategy is often a contribution mix decision
 7. Re-run projection after major revenue changes, large expenses, or spouse income updates.
 8. Document assumptions so you can explain the strategy and adjust quickly next quarter.
 
-If you need broader business tax planning support alongside education, compare implementation options through [programs](/programs).
+If you need broader business tax planning support alongside education, compare implementation options through [blog resources](/blog/).
 
 ## 30-day checklist to improve execution
 

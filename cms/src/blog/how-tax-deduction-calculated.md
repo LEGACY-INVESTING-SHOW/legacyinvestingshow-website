@@ -32,7 +32,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-tax-deduction-calculated.jpg
 imageAlt: 'How Tax Deduction Calculated: Complete 2026 Guide for U.S. Filers guide'
 imageWidth: 1200
 imageHeight: 630
@@ -399,7 +399,7 @@ Bring these to your next meeting so you can get decision-grade guidance:
 6. If I bunch deductions, what is the expected two-year net benefit after cash flow impact?
 7. What changes should I implement now so next filing season is simpler and more accurate?
 
-If you want implementation support beyond articles, review [programs](/programs).
+If you want implementation support beyond articles, review [blog resources](/blog/).
 
 ## Final decision framework you can use today
 

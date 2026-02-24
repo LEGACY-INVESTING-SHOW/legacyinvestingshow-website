@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-registered-agent-service-for-llc.jpg
 imageAlt: 'Best Registered Agent Service for LLC: Complete 2026 Decision Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -392,6 +392,6 @@ Use a three-step decision path:
 2. **Model expected annual cost.** Include fee, risk, and your time value.
 3. **Execute a 30-day rollout.** Verify delivery, reminders, and ownership of filings.
 
-For next steps, use the full [blog library](/blog), review [business credit building](/blog/business-credit-building) after formation, and evaluate execution support through [programs](/programs) if you want hands-on implementation help.
+For next steps, use the full [blog library](/blog), review [business credit building](/blog/business-credit-building) after formation, and evaluate execution support through [blog resources](/blog/) if you want hands-on implementation help.
 
 Educational note: state-level rules and filing processes can change. Confirm current requirements with your Secretary of State and licensed advisors before acting.

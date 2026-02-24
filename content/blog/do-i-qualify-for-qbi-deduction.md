@@ -380,4 +380,4 @@ Bring these questions to your next planning meeting:
 
 ## Practical Next Steps
 
-If your goal is to answer do i qualify for qbi deduction with confidence, take action in this order: estimate taxable income, classify activities, run wage and property limits, then review with a CPA before filing. For related reading, use the [full blog library](/blog), [best deductions for individuals](/blog/best-tax-deductions-for-individuals), and [Legacy Investing Show programs](/programs) if you want structured implementation support.
+If your goal is to answer do i qualify for qbi deduction with confidence, take action in this order: estimate taxable income, classify activities, run wage and property limits, then review with a CPA before filing. For related reading, use the [full blog library](/blog), [best deductions for individuals](/blog/best-tax-deductions-for-individuals), and [blog resources](/blog/) if you want structured implementation support.

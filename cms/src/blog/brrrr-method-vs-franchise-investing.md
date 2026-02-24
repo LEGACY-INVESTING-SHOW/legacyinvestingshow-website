@@ -33,7 +33,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/brrrr-method-vs-franchise-investing.jpg
 imageAlt: >-
   BRRRR Method vs Franchise Investing: Which Strategy Works Better in 2026?
   guide
@@ -401,4 +401,4 @@ A practical rule:
 - Choose franchise when unit economics are validated in your market, staffing pipeline is credible, and downside still works after debt service.
 - Choose neither when your liquidity and time are not ready.
 
-For strategy context beyond this comparison, review [programs](/programs) and continue building your playbook before scaling.
+For strategy context beyond this comparison, review [blog resources](/blog/) and continue building your playbook before scaling.

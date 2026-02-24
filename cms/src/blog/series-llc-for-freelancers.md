@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/series-llc-for-freelancers.jpg
 imageAlt: >-
   Series LLC for Freelancers: Complete 2026 Guide to Liability, Taxes, and Setup
   guide

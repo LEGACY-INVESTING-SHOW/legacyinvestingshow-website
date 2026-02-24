@@ -297,7 +297,7 @@ Use this one-month sprint to operationalize the strategy.
 - Day 25-27: Re-estimate quarterly tax payments if realized gains changed materially.
 - Day 28-30: Debrief with your CPA or advisor and set next-month trigger rules.
 
-If you want guided support on portfolio-level execution discipline, review [Programs](/programs) and recent breakdowns on [the blog](/blog).
+If you want guided support on portfolio-level execution discipline, review [blog resources](/blog/) and recent breakdowns on [the blog](/blog).
 
 ## Common Mistakes That Kill Returns
 - Treating gross harvested loss as net benefit. Only after-tax, after-cost benefit matters.

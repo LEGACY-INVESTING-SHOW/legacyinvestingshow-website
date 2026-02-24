@@ -458,6 +458,6 @@ Bring these questions to your planning meeting:
 - Start with the broader [Tax Strategies hub](/topics/tax-strategies) to map your options.
 - Review deduction coordination before selling with [best tax deductions for high-income earners](/blog/best-tax-deductions-for-high-income-earners).
 - Browse more case studies in the [blog](/blog) to compare implementation patterns.
-- If you want structured execution help, review available [programs](/programs).
+- If you want structured execution help, review available [blog resources](/blog/).
 
 The goal is not to avoid every tax dollar. The goal is to make a deliberate, documented decision that improves your long-term after-tax wealth with acceptable risk.

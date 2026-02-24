@@ -33,7 +33,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/rental-property-investing-for-remote-workers.jpg
 imageAlt: 'Rental Property Investing for Remote Workers: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -425,4 +425,4 @@ If you want to execute rental property investing for remote workers with discipl
 3. Close only deals that survive conservative assumptions.
 4. Track monthly actuals against underwriting and refine quickly.
 
-This strategy can produce durable income and long-term equity, but only when you treat it like a business. For more implementation ideas, browse the [full blog library](/blog) or review structured coaching options on [programs](/programs).
+This strategy can produce durable income and long-term equity, but only when you treat it like a business. For more implementation ideas, browse the [full blog library](/blog) or review structured coaching options on [blog resources](/blog/).

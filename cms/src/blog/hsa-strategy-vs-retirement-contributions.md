@@ -35,7 +35,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/hsa-strategy-vs-retirement-contributions.jpg
 imageAlt: >-
   HSA Strategy vs Retirement Contributions: Which Strategy Works Better in 2026?
   guide
@@ -392,4 +392,4 @@ In these cases, a simpler and more liquid plan can be more resilient than a theo
 
 Use a rules-based process, not headlines. Start with match capture, then evaluate HSA based on eligibility and cash-flow strength, then optimize traditional vs Roth for tax timing. Re-check annually and after major life changes.
 
-For deeper planning, review the [Tax Strategies hub](/topics/tax-strategies), browse related examples in the [blog library](/blog), and compare deduction opportunities in [Best Tax Deductions 2025](/blog/best-tax-deductions-2025), [Best Tax Deductions for High-Income Earners](/blog/best-tax-deductions-for-high-income-earners), and [Best Tax Deductions for Self-Employed](/blog/best-tax-deductions-for-self-employed). If you want implementation help, review available [programs](/programs).
+For deeper planning, review the [Tax Strategies hub](/topics/tax-strategies), browse related examples in the [blog library](/blog), and compare deduction opportunities in [Best Tax Deductions 2025](/blog/best-tax-deductions-2025), [Best Tax Deductions for High-Income Earners](/blog/best-tax-deductions-for-high-income-earners), and [Best Tax Deductions for Self-Employed](/blog/best-tax-deductions-for-self-employed). If you want implementation help, review available [blog resources](/blog/).

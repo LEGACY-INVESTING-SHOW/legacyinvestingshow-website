@@ -374,7 +374,7 @@ A simple fix: run a monthly close with bank reconciliation, receipts, and varian
 
 If you are choosing at portfolio level, this is often not either-or. Many investors run a blended strategy: one stable managed unit plus one higher-yield STR unit. That can smooth income while preserving upside.
 
-For broader strategy context, see [Airbnb arbitrage resources](/topics/airbnb-arbitrage) and your implementation options in [programs](/programs).
+For broader strategy context, see [Airbnb arbitrage resources](/topics/airbnb-arbitrage) and your implementation options in [blog resources](/blog/).
 
 ## When Not to Use This Strategy
 

@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/series-llc-vs-standard-llc.jpg
 imageAlt: 'Series LLC vs Standard LLC: Which Strategy Works Better in 2026? guide'
 imageWidth: 1200
 imageHeight: 630
@@ -392,4 +392,4 @@ Interpretation:
 - 60-79: Hybrid is often safer than going all-in on either side.
 - Below 60: Standard LLC approach is usually the more robust near-term path.
 
-If you want additional examples, see current comparisons on the [blog](/blog). If you want hands-on implementation support for your portfolio design and operating system, review available [programs](/programs).
+If you want additional examples, see current comparisons on the [blog](/blog). If you want hands-on implementation support for your portfolio design and operating system, review available [blog resources](/blog/).

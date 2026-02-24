@@ -643,7 +643,7 @@ Christopher identifies several risks he manages:
 
 **Ready to build your own Airbnb arbitrage business like Christopher?**
 
-[Learn more about Legacy Investing Show](/programs)
+[Learn more about Legacy Investing Show](/blog/)
 
 ### Related Success Stories
 
@@ -673,7 +673,7 @@ Christopher identifies several risks he manages:
 
 Preston Seo built a $15 million real estate portfolio generating over $400,000/year in net profit from short-term rentals. He created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[Learn more about the program](/programs) | [Watch free training](/free-training)
+[blog resources](/blog/) | [Watch free training](/free-training)
 
 ---
 

@@ -337,6 +337,6 @@ Bring these questions to your next planning meeting:
 8. What documentation should I keep so Schedule D and Form 8949 reporting is clean?
 
 ## Build Your Next 12-Month Plan
-Start with your portfolio policy and tax return, then add harvesting as a repeatable process, not a seasonal reaction. If you want a broader framework for integrating taxes with diversification, review [asset allocation and tax implications](/blog/asset-allocation-tax-implications), [asset allocation strategies](/blog/asset-allocation-strategies), and the [Investing topic hub](/topics/investing). For ongoing education, browse the [blog](/blog), study [dividend growth investing](/blog/dividend-growth-investing), or review [programs](/programs) if you want guided implementation support.
+Start with your portfolio policy and tax return, then add harvesting as a repeatable process, not a seasonal reaction. If you want a broader framework for integrating taxes with diversification, review [asset allocation and tax implications](/blog/asset-allocation-tax-implications), [asset allocation strategies](/blog/asset-allocation-strategies), and the [Investing topic hub](/topics/investing). For ongoing education, browse the [blog](/blog), study [dividend growth investing](/blog/dividend-growth-investing), or review [blog resources](/blog/) if you want guided implementation support.
 
 This article is educational and intended to help you ask better planning questions; your exact tax treatment can vary based on filing status, account type, state rules, and transaction timing.

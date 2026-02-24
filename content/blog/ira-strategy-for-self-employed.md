@@ -404,4 +404,4 @@ An effective ira strategy for self employed owners has three layers:
 2. Tax optimization: pre-tax versus Roth mix aligned to current and expected future tax rates.
 3. Annual re-underwriting: revisit plan choice each year as profit, employees, and goals change.
 
-If you want implementation support after reading this guide, review [program options](/programs) and keep your written plan tied to measurable quarterly actions.
+If you want implementation support after reading this guide, review [blog resources](/blog/) and keep your written plan tied to measurable quarterly actions.

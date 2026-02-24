@@ -35,7 +35,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/debt-to-income-ratio-vs-cash-flow-budgeting.jpg
 imageAlt: >-
   Debt To Income Ratio vs Cash Flow Budgeting: Which Strategy Works Better in
   2026? guide
@@ -411,7 +411,7 @@ In those cases, start with cash preservation, creditor communication, and minimu
 9. If I use a balance transfer, what is the break-even timeline after fees?
 10. Which metric should trigger a plan change: DTI increase, cash flow drop, or both?
 
-If you want implementation support, review available [programs](/programs) and choose one aligned with your timeline and accountability needs.
+If you want implementation support, review available [blog resources](/blog/) and choose one aligned with your timeline and accountability needs.
 
 ## Bottom line
 

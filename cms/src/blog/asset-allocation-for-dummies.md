@@ -32,7 +32,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/asset-allocation-for-dummies.jpg
 imageAlt: 'Asset Allocation for Dummies: Complete 2026 Guide for US Investors guide'
 imageWidth: 1200
 imageHeight: 630
@@ -295,7 +295,7 @@ This is why allocation is a behavior-design problem, not only a math problem.
    - Confirm you would keep contributions running.
    - If not, lower stock weight before the market forces the lesson.
 
-At this point you should have a repeatable system. If you want guided help, compare this plan with Legacy resources on [asset allocation strategies](/blog/asset-allocation-strategies) and training options in [programs](/programs).
+At this point you should have a repeatable system. If you want guided help, compare this plan with Legacy resources on [asset allocation strategies](/blog/asset-allocation-strategies) and training options in [blog resources](/blog/).
 
 ## Rebalancing Rules That Keep Risk in Check
 

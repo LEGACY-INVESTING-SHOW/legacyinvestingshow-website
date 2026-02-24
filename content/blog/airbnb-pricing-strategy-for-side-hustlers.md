@@ -278,7 +278,7 @@ How to use this table:
 14. Lock in a weekly pricing review slot on your calendar.
 15. Document what changed and what happened so future decisions are faster.
 
-If you want additional tactical ideas, browse related case studies on the [blog](/blog) and implementation support via [programs](/programs).
+If you want additional tactical ideas, browse related case studies on the [blog](/blog) and implementation support via [blog resources](/blog/).
 
 ## 30-Day Checklist for Side Hustlers
 

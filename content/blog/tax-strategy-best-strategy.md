@@ -387,4 +387,4 @@ In these situations, start with a simpler base plan: stabilize cash flow, improv
 
 A strong tax plan is a system, not a tactic. If you execute this framework with realistic assumptions, clear tradeoff rules, and quarterly check-ins, you may reduce avoidable tax drag while improving financial stability.
 
-For implementation ideas by profile, see [best tax deductions for high-income earners](/blog/best-tax-deductions-for-high-income-earners), [best tax deductions for small business](/blog/best-tax-deductions-for-small-business), and the full [programs](/programs) page for guided support. This content is educational and should be adapted with qualified tax advice for your specific facts.
+For implementation ideas by profile, see [best tax deductions for high-income earners](/blog/best-tax-deductions-for-high-income-earners), [best tax deductions for small business](/blog/best-tax-deductions-for-small-business), and the full [blog resources](/blog/) page for guided support. This content is educational and should be adapted with qualified tax advice for your specific facts.

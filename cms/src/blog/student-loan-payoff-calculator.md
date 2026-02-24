@@ -35,7 +35,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/student-loan-payoff-calculator.jpg
 imageAlt: >-
   Student Loan Payoff Calculator: Practical Guide + Examples for Faster Debt
   Freedom guide
@@ -375,4 +375,4 @@ A strong advisor conversation should produce numbers, decision rules, and a revi
 
 A student loan payoff calculator is most useful when it drives behavior every month. Keep your system simple: one model, three scenarios, and one clear next action. Revisit it quarterly, especially after income or expense changes.
 
-For broader debt strategy context, review the [Debt Management Topic Hub](/topics/debt-management), explore additional guides on the [Blog](/blog), and if you want hands-on support, review available [Programs](/programs). The best plan is the one you can sustain through real life, not perfect conditions.
+For broader debt strategy context, review the [Debt Management Topic Hub](/topics/debt-management), explore additional guides on the [Blog](/blog), and if you want hands-on support, review available [blog resources](/blog/). The best plan is the one you can sustain through real life, not perfect conditions.

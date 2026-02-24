@@ -387,11 +387,11 @@ In those cases, use a smaller minimum-tax checklist, then revisit this framework
 ## Final takeaways
 A tax strategy for high earners is not complexity for its own sake. It is a structure that protects tax drag, keeps liquidity intact, and improves decision quality over multiple years.
 
-For households with W-2 + business income, this method is usually stronger than tactical action because it is testable, repeatable, and defensible. You can extend this approach with resources in the [Tax Strategies category](/topics/tax-strategies), related posts in [the legacy blog](/blog), and implementation support from the [Legacy Investing Show programs](/programs).
+For households with W-2 + business income, this method is usually stronger than tactical action because it is testable, repeatable, and defensible. You can extend this approach with resources in the [Tax Strategies category](/topics/tax-strategies), related posts in [the legacy blog](/blog), and implementation support from the [blog resources](/blog/).
 
 ## Related Resources
 - [Tax Strategies Hub](/topics/tax-strategies)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: best tax strategy for retirement](/blog/best-tax-strategy-for-retirement)
 - [Related Guide: best tax strategy for ira withdrawals](/blog/best-tax-strategy-for-ira-withdrawals)

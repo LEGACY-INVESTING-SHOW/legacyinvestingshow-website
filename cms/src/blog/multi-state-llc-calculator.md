@@ -33,7 +33,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/multi-state-llc-calculator.jpg
 imageAlt: >-
   Multi State LLC Calculator: Practical Guide + Examples for Real Decisions
   guide
@@ -323,7 +323,7 @@ Use this as a practical sprint.
 - [ ] Day 29: Hold CPA/attorney review call on edge cases.
 - [ ] Day 30: Approve final operating checklist and quarterly review cadence.
 
-If you want implementation support, review available resources at [programs](/programs).
+If you want implementation support, review available resources at [blog resources](/blog/).
 
 ## Common Mistakes with Multi-State LLC Planning
 

@@ -34,7 +34,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/annuities-vs-bonds-vs-taxable-brokerage.jpg
 imageAlt: >-
   annuities vs bonds vs taxable brokerage: Which Strategy Works Better in 2026?
   guide
@@ -460,4 +460,4 @@ Bring written assumptions into the meeting. Good advice depends on concrete inpu
 
 The strongest plans usually combine tools. Use annuities for baseline confidence, bonds for near-term spending certainty, and taxable brokerage for flexibility, tax control, and legacy options. Keep the process rules-based: define your floor gap, model after-tax cash flow, and review annually.
 
-For deeper planning, use the [retirement hub](/topics/retirement), compare sequencing ideas in [401(k) strategy vs taxable brokerage](/blog/401k-strategy-vs-taxable-brokerage), and review [catch-up contributions](/blog/catch-up-contributions) if you are still in late-stage accumulation. If you want hands-on implementation support, review [programs](/programs) and related resources on the [blog](/blog).
+For deeper planning, use the [retirement hub](/topics/retirement), compare sequencing ideas in [401(k) strategy vs taxable brokerage](/blog/401k-strategy-vs-taxable-brokerage), and review [catch-up contributions](/blog/catch-up-contributions) if you are still in late-stage accumulation. If you want hands-on implementation support, review [blog resources](/blog/) and related resources on the [blog](/blog).

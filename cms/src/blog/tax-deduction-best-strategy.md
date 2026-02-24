@@ -394,13 +394,13 @@ Use these internal resources for quick orientation:
 - [Best deductions for self-employed](/blog/best-tax-deductions-for-self-employed)
 - [Best deductions for high-income earners](/blog/best-tax-deductions-for-high-income-earners)
 - [401(k) withdrawal planning](/blog/best-tax-strategy-for-401k-withdrawal)
-- [Legacy Investing Show programs](/programs)
+- [blog resources](/blog/)
 
 For U.S. readers, the real outcome of a tax deduction best strategy is not a larger list. It is a cleaner, defendable path that improves after-tax wealth while supporting investing, debt repayment, retirement sequencing, and business growth.
 
 ## Related Resources
 - [Tax Strategies Hub](/topics/tax-strategies)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: best tax strategy for retirement](/blog/best-tax-strategy-for-retirement)
 - [Related Guide: best tax strategy for ira withdrawals](/blog/best-tax-strategy-for-ira-withdrawals)

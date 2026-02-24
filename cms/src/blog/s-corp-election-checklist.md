@@ -35,7 +35,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/s-corp-election-checklist.jpg
 imageAlt: >-
   S Corp Election Checklist: Practical Guide + Examples for Real-World Tax
   Decisions guide
@@ -360,7 +360,7 @@ Practical takeaway:
 - If profits are stable and owner labor is substantial, S election can be strong.
 - If you plan to retain most earnings long-term, compare against C corporation scenarios before deciding.
 
-For deeper structure comparisons, browse the [full blog library](/blog) and practical implementation options on the [programs page](/programs).
+For deeper structure comparisons, browse the [full blog library](/blog) and practical implementation options on the [blog resources](/blog/).
 
 ## When Not to Use This Strategy
 

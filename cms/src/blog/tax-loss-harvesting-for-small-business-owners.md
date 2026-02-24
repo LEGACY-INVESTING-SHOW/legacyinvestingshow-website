@@ -33,7 +33,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-loss-harvesting-for-small-business-owners.jpg
 imageAlt: 'Tax Loss Harvesting for Small Business Owners: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -419,6 +419,6 @@ Use this quick scorecard before you execute:
 
 If you score strong on all four, proceed with a rules-based, year-round process. If one score is weak, fix that bottleneck first. If two or more are weak, delay execution and focus on system setup.
 
-Next, deepen your playbook with [asset allocation tax implications](/blog/asset-allocation-tax-implications), browse additional implementation cases in the [blog](/blog), and review education options in [programs](/programs) if you want structured support.
+Next, deepen your playbook with [asset allocation tax implications](/blog/asset-allocation-tax-implications), browse additional implementation cases in the [blog](/blog), and review education options in [blog resources](/blog/) if you want structured support.
 
 This content is educational and practical, not individualized tax advice. Your exact outcome depends on return details, account structure, basis records, and state treatment.

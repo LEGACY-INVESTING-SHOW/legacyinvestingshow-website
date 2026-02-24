@@ -405,4 +405,4 @@ If this article matches your situation, do three things this week:
 2. Schedule a joint attorney/CPA review call with your current agreement and cap table.
 3. Align governance updates with growth systems like entity privacy planning in this [anonymous LLC guide](/blog/anonymous-llc) and financing readiness in this [business credit building guide](/blog/business-credit-building).
 
-If you want implementation support, review available [programs](/programs) and then execute the 30-day checklist above.
+If you want implementation support, review available [blog resources](/blog/) and then execute the 30-day checklist above.

@@ -407,4 +407,4 @@ Take these into your next meeting and require numeric answers:
 
 Start with a one-page model using your real trailing 12-month numbers and run the decision framework above. If the projected net benefit is small or fragile, improve systems first. If the benefit remains strong after conservative assumptions, execute the 30-day checklist with discipline.
 
-For more implementation context, browse the [Legacy Investing Show blog](/blog) and evaluate hands-on support options in [programs](/programs). This guide is educational and should be paired with individualized tax and legal advice for your facts.
+For more implementation context, browse the [Legacy Investing Show blog](/blog) and evaluate hands-on support options in [blog resources](/blog/). This guide is educational and should be paired with individualized tax and legal advice for your facts.

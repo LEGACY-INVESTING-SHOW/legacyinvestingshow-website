@@ -428,4 +428,4 @@ In those cases, simplify first: protect liquidity, reduce high-cost debt, and de
 
 ## Final Action Plan for 2026
 
-Treat your business as part of your portfolio, not separate from it. Build liquidity first, diversify intentionally, and rebalance by rule instead of emotion. If you want additional practical examples, browse the [blog](/blog) or review implementation support options on the [programs page](/programs). A durable plan is the one you can execute through both strong years and stressful ones.
+Treat your business as part of your portfolio, not separate from it. Build liquidity first, diversify intentionally, and rebalance by rule instead of emotion. If you want additional practical examples, browse the [blog](/blog) or review implementation support options on the [blog resources](/blog/). A durable plan is the one you can execute through both strong years and stressful ones.

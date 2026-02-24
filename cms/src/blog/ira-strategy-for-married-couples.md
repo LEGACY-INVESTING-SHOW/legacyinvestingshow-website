@@ -32,7 +32,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/ira-strategy-for-married-couples.jpg
 imageAlt: 'ira strategy for married couples: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630

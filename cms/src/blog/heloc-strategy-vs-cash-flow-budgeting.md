@@ -33,7 +33,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/heloc-strategy-vs-cash-flow-budgeting.jpg
 imageAlt: >-
   HELOC Strategy vs Cash Flow Budgeting: Which Strategy Works Better in 2026?
   guide

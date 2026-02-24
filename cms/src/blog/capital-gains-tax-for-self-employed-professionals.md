@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/capital-gains-tax-for-self-employed-professionals.jpg
 imageAlt: 'Capital Gains Tax for Self Employed Professionals: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630

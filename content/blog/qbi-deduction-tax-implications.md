@@ -408,4 +408,4 @@ In these cases, focus first on margin improvement, debt cost reduction, and cash
 
 ## Final Action Focus
 
-Use qbi deduction tax implications as a decision framework, not a headline deduction percentage. Model your numbers, document your assumptions, and coordinate entity, compensation, and retirement moves as one plan. If you want implementation support, compare options on our [programs](/programs) page and then use the full [blog](/blog) library to build your next tax playbook.
+Use qbi deduction tax implications as a decision framework, not a headline deduction percentage. Model your numbers, document your assumptions, and coordinate entity, compensation, and retirement moves as one plan. If you want implementation support, compare options on our [blog resources](/blog/) page and then use the full [blog](/blog) library to build your next tax playbook.

@@ -37,7 +37,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-planning-certified-professional.jpg
 imageAlt: >-
   Tax Planning Certified Professional: Complete 2026 Guide for Smarter Tax
   Decisions guide

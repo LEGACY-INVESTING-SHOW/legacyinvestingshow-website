@@ -39,7 +39,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-loss-harvesting-vs-real-estate-syndication.jpg
 imageAlt: >-
   Tax Loss Harvesting vs Real Estate Syndication: Which Strategy Works Better in
   2026? guide

@@ -400,4 +400,4 @@ A strong advisor conversation is about scenarios, not generic advice. Bring your
 
 Pick one outcome goal: lower total paid, lower monthly payment, or fastest payoff with acceptable risk. Then run your options against that goal using the same assumptions across every quote. If you do that consistently, debt consolidation for bad credit becomes a measurable strategy instead of a marketing decision.
 
-For additional tactical reading, review the [blog](/blog) and implementation resources in [programs](/programs).
+For additional tactical reading, review the [blog](/blog) and implementation resources in [blog resources](/blog/).

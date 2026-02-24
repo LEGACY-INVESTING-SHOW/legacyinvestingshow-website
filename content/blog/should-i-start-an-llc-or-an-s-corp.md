@@ -398,4 +398,4 @@ Use this decision sequence:
 3. Execute only what your operations can maintain.
 4. Revisit annually as profit and goals change.
 
-For deeper implementation support, review [programs](/programs) and continue learning from the [blog](/blog).
+For deeper implementation support, review [blog resources](/blog/) and continue learning from the [blog](/blog).

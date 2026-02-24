@@ -366,4 +366,4 @@ Use a one-page memo for each settlement candidate:
 - Credit impact and cash timing.
 - Recommended action and backup action.
 
-Then execute one debt at a time. If you want more tactical walkthroughs, use the [blog](/blog) library or review coaching options in [programs](/programs). The best plan is the one that protects cash flow, avoids preventable tax shocks, and stays realistic for your household.
+Then execute one debt at a time. If you want more tactical walkthroughs, use the [blog](/blog) library or review coaching options in [blog resources](/blog/). The best plan is the one that protects cash flow, avoids preventable tax shocks, and stays realistic for your household.

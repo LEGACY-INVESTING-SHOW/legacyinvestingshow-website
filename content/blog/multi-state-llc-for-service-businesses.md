@@ -430,6 +430,6 @@ Build your plan in this order:
 1. Entity strategy baseline from [Business Structures hub](/topics/business-structures)
 2. Privacy-oriented structure comparison via [anonymous LLC setup](/blog/anonymous-llc)
 3. Banking and financing readiness from [business credit building](/blog/business-credit-building)
-4. If you want implementation help, review available [programs](/programs)
+4. If you want implementation help, review available [blog resources](/blog/)
 
 The goal is not picking the cheapest filing state. The goal is aligning your legal structure with how revenue is actually produced, where risk is created, and how tax and payroll obligations are administered.

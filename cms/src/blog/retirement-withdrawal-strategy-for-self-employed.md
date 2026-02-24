@@ -383,13 +383,13 @@ A self-employed plan is not a PDF document. It is a recurring system:
 - Rebalance bucket order when market and income change
 - Verify that withdrawals still map to real life, not spreadsheet life
 
-If your next step is systems and education, also check the [retirement topic hub](/topics/retirement) and relevant [programs](/programs) pathways before moving to implementation.
+If your next step is systems and education, also check the [retirement topic hub](/topics/retirement) and relevant [blog resources](/blog/) pathways before moving to implementation.
 
 If you are still unsure about sequence timing, review this framework yearly with your tax and financial team, then run a fresh scenario cycle before each cash withdrawal batch.
 
 ## Related Resources
 - [Retirement Hub](/topics/retirement)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: strategy for retirement withdrawals](/blog/strategy-for-retirement-withdrawals)
 - [Related Guide: retirement withdrawal strategy tax implications](/blog/retirement-withdrawal-strategy-tax-implications)

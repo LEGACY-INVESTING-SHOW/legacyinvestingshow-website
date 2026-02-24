@@ -33,7 +33,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-loss-harvesting-vs-robo-advisors.jpg
 imageAlt: >-
   Tax Loss Harvesting vs Robo Advisors: Which Strategy Works Better in 2026?
   guide
@@ -275,7 +275,7 @@ Turn off conflicting auto-invest in related tickers during 30-day windows when n
 Monthly check for implementation errors, quarterly check for net benefit versus expectations.
 
 10. Tie decisions to broader goals.
-Integrate with your retirement and cash-flow plan, and revisit yearly. For broader examples, use the [Legacy blog](/blog) and compare with your long-term roadmap or coaching resources in [programs](/programs).
+Integrate with your retirement and cash-flow plan, and revisit yearly. For broader examples, use the [Legacy blog](/blog) and compare with your long-term roadmap or coaching resources in [blog resources](/blog/).
 
 ## 30-day checklist
 

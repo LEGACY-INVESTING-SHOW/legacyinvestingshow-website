@@ -394,7 +394,7 @@ In these cases, start with a basic estate planning foundation, clean beneficiary
 11. Which fiduciary roles should be updated now?
 12. What specific trigger events should force an immediate plan review?
 
-If you want implementation support, review [Legacy Investing Show programs](/programs) and use them with your legal and tax advisors.
+If you want implementation support, review [blog resources](/blog/) and use them with your legal and tax advisors.
 
 ## Annual Review Cadence and Trigger Events
 

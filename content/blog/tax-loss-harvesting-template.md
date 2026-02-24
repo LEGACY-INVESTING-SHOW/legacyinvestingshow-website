@@ -356,4 +356,4 @@ Use this quick scorecard:
 - Liquidity score: no near-term cash need conflicts.
 - Complexity score: documentation burden is manageable.
 
-If you score strong on at least four of five, harvesting is usually worth executing. If not, improve process first, then revisit. For deeper implementation support, compare related guides like [dividend growth investing](/blog/dividend-growth-investing), [alternative investments](/blog/alternative-investments-guide), and practical coaching options in [programs](/programs).
+If you score strong on at least four of five, harvesting is usually worth executing. If not, improve process first, then revisit. For deeper implementation support, compare related guides like [dividend growth investing](/blog/dividend-growth-investing), [alternative investments](/blog/alternative-investments-guide), and practical coaching options in [blog resources](/blog/).

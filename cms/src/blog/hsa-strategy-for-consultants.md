@@ -35,7 +35,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/hsa-strategy-for-consultants.jpg
 imageAlt: >-
   hsa strategy for consultants: Complete 2026 Guide to Tax Savings, Investing,
   and Cash-Flow Planning guide
@@ -368,4 +368,4 @@ Use this yes-no filter before implementing:
 - Partial yes if you are eligible but cash flow is uneven: fund gradually and keep a larger cash floor.
 - No for now if eligibility is uncertain or liquidity is fragile; fix those first.
 
-If you want a full build-out of tax strategy sequencing for your consulting business, review [our programs](/programs) and map HSA decisions alongside entity structure, retirement contributions, and quarterly tax planning.
+If you want a full build-out of tax strategy sequencing for your consulting business, review [blog resources](/blog/) and map HSA decisions alongside entity structure, retirement contributions, and quarterly tax planning.

@@ -34,7 +34,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-loss-harvesting-checklist.jpg
 imageAlt: >-
   Tax Loss Harvesting Checklist: Practical Guide, Numbers, and a 30-Day Action
   Plan guide
@@ -411,4 +411,4 @@ Use this sequence:
 3. Review results after 31 days.
 4. Repeat only if tax value remains meaningful and portfolio drift is controlled.
 
-If you want more implementation-focused investing content, browse the [blog](/blog) or see structured guidance options on [programs](/programs).
+If you want more implementation-focused investing content, browse the [blog](/blog) or see structured guidance options on [blog resources](/blog/).

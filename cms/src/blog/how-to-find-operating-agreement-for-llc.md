@@ -36,7 +36,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-to-find-operating-agreement-for-llc.jpg
 imageAlt: >-
   How to Find Operating Agreement for LLC: Complete 2026 Guide for Owners,
   Lenders, and Partners guide
@@ -377,6 +377,6 @@ If you are tightening governance and financing readiness, start with these resou
 - [Anonymous LLC considerations](/blog/anonymous-llc)
 - [Corporate veil protection checklist](/blog/corporate-veil-protection)
 - [Business credit building fundamentals](/blog/business-credit-building)
-- [Program options for implementation support](/programs)
+- [blog resources](/blog/)
 
 A pragmatic next move is to execute the 7-day plan now, then complete the 30-day checklist so your LLC is lender-ready, audit-ready, and partner-ready.

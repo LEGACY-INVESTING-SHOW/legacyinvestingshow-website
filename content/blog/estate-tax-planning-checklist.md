@@ -373,6 +373,6 @@ Bring these to your next meeting and require clear numeric answers.
 
 A strong estate tax planning checklist is not about complexity for its own sake. It is about sequencing high-impact actions: quantify exposure, protect liquidity, coordinate documents and beneficiaries, then implement transfer tools where math supports them.
 
-If you want to continue building your planning stack, review [best tax deductions for individuals](/blog/best-tax-deductions-for-individuals), compare strategy tradeoffs in [1031 exchange vs standard deduction](/blog/1031-exchange-vs-standard-deduction), and explore implementation support through [programs](/programs).
+If you want to continue building your planning stack, review [best tax deductions for individuals](/blog/best-tax-deductions-for-individuals), compare strategy tradeoffs in [1031 exchange vs standard deduction](/blog/1031-exchange-vs-standard-deduction), and explore implementation support through [blog resources](/blog/).
 
 Use this guide as an educational framework, then validate assumptions with a qualified estate attorney and CPA before executing.

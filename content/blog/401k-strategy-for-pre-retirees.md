@@ -347,7 +347,7 @@ Use this checklist as your execution sprint.
 - Confirm which account funds first 3 retirement years.
 - Book advisor and CPA review appointments.
 
-If you want implementation support beyond DIY, evaluate [program options](/programs).
+If you want implementation support beyond DIY, evaluate [blog resources](/blog/).
 
 ## Mistakes That Cost Pre-Retirees the Most
 

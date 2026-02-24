@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/s-corp-election-for-real-estate-operators.jpg
 imageAlt: 's corp election for real estate operators: Complete 2026 Decision Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -186,7 +186,7 @@ If you are evaluating a s corp election for real estate operators, start with on
 
 IRS guidance describes S corporations as pass-through entities where income, losses, deductions, and credits flow to shareholders. The planning opportunity for operators is that wages paid to owner-employees are subject to payroll taxes, while many S corporation pass-through distributions are not subject to self-employment tax. That can produce savings, but only when compensation is reasonable and compliance is tight.
 
-Use this guide with your own CPA and payroll provider. It is educational, not legal or tax advice. If you are still deciding on your broader entity map, start with the [Business Structures hub](/topics/business-structures), then review related implementation topics like [anonymous LLC setup](/blog/anonymous-llc), [business credit building](/blog/business-credit-building), and the broader [Legacy Investing Show programs](/programs).
+Use this guide with your own CPA and payroll provider. It is educational, not legal or tax advice. If you are still deciding on your broader entity map, start with the [Business Structures hub](/topics/business-structures), then review related implementation topics like [anonymous LLC setup](/blog/anonymous-llc), [business credit building](/blog/business-credit-building), and the broader [blog resources](/blog/).
 
 ## Start with the right income type: active business income vs rental income
 

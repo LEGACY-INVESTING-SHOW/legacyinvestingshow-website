@@ -36,7 +36,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/estate-tax-planning-for-physicians.jpg
 imageAlt: >-
   Estate Tax Planning for Physicians: Complete 2026 Guide to Protecting Family
   Wealth and Practice Equity guide

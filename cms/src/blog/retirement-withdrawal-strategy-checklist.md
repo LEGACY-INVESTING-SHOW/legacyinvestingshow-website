@@ -36,7 +36,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/retirement-withdrawal-strategy-checklist.jpg
 imageAlt: >-
   Retirement Withdrawal Strategy Checklist: Practical Guide, Scenario Table, and
   Tax-Aware Examples guide
@@ -380,4 +380,4 @@ These questions shift meetings from vague reassurance to measurable decisions.
 - Keep a cash and short-duration reserve so market declines do not force bad sales.
 - Review annually, adjust quarterly, and document every rule.
 
-If you want more implementation detail, use the [retirement section](/topics/retirement), explore practical examples in the [blog](/blog), and review execution support options in [programs](/programs).
+If you want more implementation detail, use the [retirement section](/topics/retirement), explore practical examples in the [blog](/blog), and review execution support options in [blog resources](/blog/).

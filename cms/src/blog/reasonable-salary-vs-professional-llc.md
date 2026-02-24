@@ -33,7 +33,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/reasonable-salary-vs-professional-llc.jpg
 imageAlt: >-
   Reasonable Salary vs Professional LLC: Which Strategy Works Better in 2026?
   guide
@@ -375,6 +375,6 @@ If you want the shortest path to a decision, do this:
 
 - Read one foundational overview, then shortlist your entity options on the [Business Structures hub](/topics/business-structures).
 - Review practical implementation examples on the [blog](/blog) to see how owners sequence tax, debt, and cash flow decisions.
-- If you want guided support building the operating system behind the tax strategy, review [programs](/programs).
+- If you want guided support building the operating system behind the tax strategy, review [blog resources](/blog/).
 
 The winning approach in 2026 is usually not the most aggressive one. It is the structure you can document, operate consistently, and defend with evidence year after year.

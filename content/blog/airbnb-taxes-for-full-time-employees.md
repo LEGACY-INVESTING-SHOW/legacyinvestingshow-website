@@ -404,4 +404,4 @@ Good advisors do not just file returns. They help you choose a repeatable operat
 
 For most professionals, the right sequence is: classify correctly, document monthly, project taxes quarterly, and review strategy mid-year. That sequence creates better outcomes than last-minute deduction hunting.
 
-If you want more implementation detail, review [all blog resources](/blog), compare operating models in [airbnb arbitrage fundamentals](/topics/airbnb-arbitrage), and evaluate coaching support options in [programs](/programs).
+If you want more implementation detail, review [all blog resources](/blog), compare operating models in [airbnb arbitrage fundamentals](/topics/airbnb-arbitrage), and evaluate coaching support options in [blog resources](/blog/).

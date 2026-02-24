@@ -361,7 +361,7 @@ A common mistake is chasing a tax label instead of building a durable income eng
 - [Digital product income guide](/blog/digital-product-income)
 - [Airbnb cash flow tax implications](/blog/airbnb-cash-flow-tax-implications)
 - [House hacking guide](/blog/house-hacking-guide)
-- [Programs](/programs)
+- [blog resources](/blog/)
 - [More articles](/blog)
 
 ## Bottom Line

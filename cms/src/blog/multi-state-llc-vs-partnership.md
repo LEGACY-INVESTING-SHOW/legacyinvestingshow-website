@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/multi-state-llc-vs-partnership.jpg
 imageAlt: 'multi state llc vs partnership: Which Strategy Works Better in 2026? guide'
 imageWidth: 1200
 imageHeight: 630
@@ -409,4 +409,4 @@ Use a simple weighted score before deciding **multi state llc vs partnership**:
 
 Score each option from 1 to 5 for each category. Multiply by weights. If LLC wins by more than one full point, it is usually worth the extra admin burden. If the scores are close, default to the simpler structure you can execute cleanly, then schedule a formal 12-month review.
 
-For founders implementing this now, align your entity decision with your broader operating plan, capital strategy, and support system. If you need implementation support after choosing structure, review [program options](/programs) and browse more case-based breakdowns in the [blog](/blog).
+For founders implementing this now, align your entity decision with your broader operating plan, capital strategy, and support system. If you need implementation support after choosing structure, review [blog resources](/blog/) and browse more case-based breakdowns in the [blog](/blog).

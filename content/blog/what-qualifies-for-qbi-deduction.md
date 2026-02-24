@@ -313,7 +313,7 @@ Day 22 to Day 30:
 - [ ] Confirm correct form attachments and statements.
 - [ ] Save a repeatable worksheet for next filing season.
 - [ ] Note unresolved legislative uncertainty for 2026 tax-year income.
-- [ ] Convert insights into a broader tax plan using [the blog library](/blog) and [program resources](/programs).
+- [ ] Convert insights into a broader tax plan using [the blog library](/blog) and [blog resources](/blog/).
 
 ## Mistakes That Commonly Reduce or Eliminate QBI
 

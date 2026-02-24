@@ -32,7 +32,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-taxes-vs-co-hosting.jpg
 imageAlt: 'Airbnb Taxes vs Co Hosting: Which Strategy Works Better in 2026? guide'
 imageWidth: 1200
 imageHeight: 630
@@ -413,6 +413,6 @@ Bring these to your next meeting:
 12. What would an IRS-ready audit trail look like for my specific workflow?
 
 ## Practical Next Move for 2026
-Use a 90-day pilot with hard metrics. Pick one model, set a reserve policy, run monthly closes, and compare after-tax cash retained, not just gross revenue. If you need deeper operator playbooks, review the broader [blog](/blog) library and the [programs](/programs) page for implementation support.
+Use a 90-day pilot with hard metrics. Pick one model, set a reserve policy, run monthly closes, and compare after-tax cash retained, not just gross revenue. If you need deeper operator playbooks, review the broader [blog](/blog) library and the [blog resources](/blog/) page for implementation support.
 
 This article is educational and practical, not legal or tax advice. Use it to structure better decisions and better advisor conversations.

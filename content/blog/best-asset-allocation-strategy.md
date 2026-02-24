@@ -372,4 +372,4 @@ Bring this list to your next planning meeting:
 
 ## Final Decision Rule
 
-The **best asset allocation strategy** is the highest-growth mix you can hold through a bad market while staying consistent with your tax and cash-flow reality. Pick a target, write rules, automate funding, and review annually. If you want implementation support, start with our [blog](/blog) resources and then evaluate [programs](/programs) for guided execution.
+The **best asset allocation strategy** is the highest-growth mix you can hold through a bad market while staying consistent with your tax and cash-flow reality. Pick a target, write rules, automate funding, and review annually. If you want implementation support, start with our [blog](/blog) resources and then evaluate [blog resources](/blog/) for guided execution.

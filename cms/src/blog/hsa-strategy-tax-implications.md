@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/hsa-strategy-tax-implications.jpg
 imageAlt: >-
   Hsa Strategy Tax Implications: Complete 2026 Guide for Smarter Tax, Cash-Flow,
   and Retirement Decisions guide
@@ -450,6 +450,6 @@ Use this list in your next planning call:
 
 The strongest hsa strategy tax implications usually come from disciplined sequencing, not blind maximization. Start with eligibility, run the tax math, protect liquidity, and build a repeatable documentation system. Then scale contributions as your cash flow and confidence improve.
 
-For next-step planning, review related pieces on the [blog](/blog), compare adjacent tax choices in [1031 exchange vs standard deduction](/blog/1031-exchange-vs-standard-deduction), and if you want implementation support, see [programs](/programs).
+For next-step planning, review related pieces on the [blog](/blog), compare adjacent tax choices in [1031 exchange vs standard deduction](/blog/1031-exchange-vs-standard-deduction), and if you want implementation support, see [blog resources](/blog/).
 
 Educational note: tax rules and thresholds can change, and individual facts matter. Use this framework to prepare decisions, then confirm specifics with a qualified tax professional.

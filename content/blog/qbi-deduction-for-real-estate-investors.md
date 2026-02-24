@@ -368,6 +368,6 @@ Use this scorecard:
 - **Durability:** Can you support this position for multiple years?
 - **Complexity cost:** CPA fees, payroll burden, entity/admin overhead
 
-If your score is strong on all four, the QBI strategy is usually worth deliberate execution. For related planning, review the [Tax Strategies hub](/topics/tax-strategies), compare with [Best Tax Deductions 2025](/blog/best-tax-deductions-2025), and audit your broader profile with [Best Tax Deductions for High-Income Earners](/blog/best-tax-deductions-for-high-income-earners). You can also browse the full [blog library](/blog) or review training options on [programs](/programs).
+If your score is strong on all four, the QBI strategy is usually worth deliberate execution. For related planning, review the [Tax Strategies hub](/topics/tax-strategies), compare with [Best Tax Deductions 2025](/blog/best-tax-deductions-2025), and audit your broader profile with [Best Tax Deductions for High-Income Earners](/blog/best-tax-deductions-for-high-income-earners). You can also browse the full [blog library](/blog) or review training options on [blog resources](/blog/).
 
 Educational note: this guide is for planning education, not legal or tax advice. Final treatment depends on your facts, current IRS instructions, and professional judgment.

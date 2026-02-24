@@ -376,7 +376,7 @@ Bottom line comparison:
 - Single LLC is usually an early-stage convenience choice, not a long-term risk architecture.
 - HoldCo stacks fit scaling teams with operational maturity.
 
-If you are still mapping options, browse [blog articles](/blog) and then evaluate implementation support options at [/programs](/programs).
+If you are still mapping options, browse [blog articles](/blog) and then evaluate implementation support options at [blog resources](/blog/).
 
 ## Common Mistakes That Break the Liability Shield
 

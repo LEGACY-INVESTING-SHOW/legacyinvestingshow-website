@@ -32,7 +32,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/ira-strategy-for-early-retirees.jpg
 imageAlt: >-
   IRA strategy for early retirees: Complete 2026 Guide to Tax-Efficient Income
   guide
@@ -395,4 +395,4 @@ At minimum, track these every year in one dashboard:
 - Healthcare premium impact from actual MAGI.
 - Next-year liquidity runway in taxable and cash accounts.
 
-If you want implementation support and accountability, map your plan against the resources in [Programs](/programs). Educational examples like this can help structure decisions, but your actual strategy should be validated against current IRS figures, your state rules, and your full household balance sheet.
+If you want implementation support and accountability, map your plan against the resources in [blog resources](/blog/). Educational examples like this can help structure decisions, but your actual strategy should be validated against current IRS figures, your state rules, and your full household balance sheet.

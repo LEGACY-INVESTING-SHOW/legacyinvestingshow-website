@@ -35,7 +35,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/registered-agent-for-llc-in-texas.jpg
 imageAlt: >-
   Registered Agent for LLC in Texas: Complete 2026 Guide to Cost, Privacy, and
   Compliance guide
@@ -413,7 +413,7 @@ Then deepen your structure and execution stack with:
 
 - [Business Structures hub](/topics/business-structures)
 - [Legacy Investing Show blog](/blog)
-- [Programs and implementation support](/programs)
+- [blog resources](/blog/)
 - [C-corp benefits overview](/blog/c-corp-benefits)
 
 A registered-agent decision seems small, but in real operations it often separates reactive businesses from resilient ones.

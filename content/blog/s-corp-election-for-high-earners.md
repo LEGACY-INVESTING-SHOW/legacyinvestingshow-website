@@ -382,4 +382,4 @@ Make the election only if you pass all three gates:
 2. Compliance gate: you can run payroll, books, and filings accurately every month.
 3. Consistency gate: profit and owner role are stable enough to support reasonable salary year-round.
 
-If all three pass, an s corp election for high earners can be a practical, repeatable lever in a larger wealth plan. If one gate fails, defer, strengthen operations, and revisit later. For implementation support after your model is complete, review [program options](/programs) and compare your plan against peers before filing.
+If all three pass, an s corp election for high earners can be a practical, repeatable lever in a larger wealth plan. If one gate fails, defer, strengthen operations, and revisit later. For implementation support after your model is complete, review [blog resources](/blog/) and compare your plan against peers before filing.

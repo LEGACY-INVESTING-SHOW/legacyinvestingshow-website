@@ -376,4 +376,4 @@ Before acquiring or leasing the next unit, score each deal on:
 
 If a deal only works under optimistic tax assumptions, it is fragile. If it works under conservative assumptions, it is investable.
 
-For next steps, review operating fundamentals at [Getting started with Airbnb arbitrage](/blog/getting-started-airbnb-arbitrage), then align execution support through [Programs](/programs).
+For next steps, review operating fundamentals at [Getting started with Airbnb arbitrage](/blog/getting-started-airbnb-arbitrage), then align execution support through [blog resources](/blog/).

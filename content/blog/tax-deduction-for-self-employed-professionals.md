@@ -374,11 +374,11 @@ In those cases, stabilize bookkeeping and reserves before expanding deduction sc
 - Should we compare this to an entity-level alternative before next year?
 
 ## Learn faster by connecting to broader resources
-The framework here pairs well with our practical category references and broader strategy planning. Compare category-level ideas in [best tax deduction for self employed](/blog/best-tax-deductions-for-self-employed), then explore related examples in [best tax deductions for small business](/blog/best-tax-deductions-for-small-business) and the [Tax Strategies hub](/topics/tax-strategies). For ongoing case-based examples, review [our blog](/blog), and for deeper implementation support review the roadmap in [programs](/programs).
+The framework here pairs well with our practical category references and broader strategy planning. Compare category-level ideas in [best tax deduction for self employed](/blog/best-tax-deductions-for-self-employed), then explore related examples in [best tax deductions for small business](/blog/best-tax-deductions-for-small-business) and the [Tax Strategies hub](/topics/tax-strategies). For ongoing case-based examples, review [our blog](/blog), and for deeper implementation support review the roadmap in [blog resources](/blog/).
 
 ## Related Resources
 - [Tax Strategies Hub](/topics/tax-strategies)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: best tax strategy for retirement](/blog/best-tax-strategy-for-retirement)
 - [Related Guide: best tax strategy for ira withdrawals](/blog/best-tax-strategy-for-ira-withdrawals)

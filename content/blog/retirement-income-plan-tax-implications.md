@@ -393,6 +393,6 @@ Run this mini-audit annually, ideally in Q3 and again before year-end:
 - Re-check Medicare premium exposure for the lookback period.
 - Review beneficiary designations and distribution sequencing for surviving spouse resilience.
 
-For broader implementation ideas and related strategy articles, browse the [Legacy blog](/blog) and review execution support options on [programs](/programs).
+For broader implementation ideas and related strategy articles, browse the [Legacy blog](/blog) and review execution support options on [blog resources](/blog/).
 
 A practical retirement income plan tax implications process is iterative. You do not need perfect forecasts. You need a repeatable system that makes each year slightly more tax-aware than the last.

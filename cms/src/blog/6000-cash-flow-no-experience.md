@@ -706,7 +706,7 @@ Dustin addresses this directly: the biggest risk is often in your head. He almos
 
 **Ready to build your own Airbnb arbitrage business like Dustin?**
 
-[Learn more about Legacy Investing Show &rarr;](/programs)
+[Learn more about Legacy Investing Show &rarr;](/blog/)
 
 ### Related Success Stories
 
@@ -736,7 +736,7 @@ Dustin addresses this directly: the biggest risk is often in your head. He almos
 
 Preston Seo created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[Learn more about the program &rarr;](/programs) | [Watch free training &rarr;](/free-training)
+[blog resources](/blog/) | [Watch free training &rarr;](/free-training)
 
 ---
 

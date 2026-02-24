@@ -35,7 +35,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-occupancy-strategy-for-full-time-employees.jpg
 imageAlt: 'Airbnb Occupancy Strategy for Full Time Employees: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -409,7 +409,7 @@ Bring these questions to your CPA or advisor before scaling:
 6. Which thresholds or behavior patterns should trigger a structure review?
 7. What tax-calendar deadlines should I lock now to avoid penalties?
 
-If business structure is still unclear, start by documenting your current operations and reviewing educational resources in the [Legacy Investing Show blog](/blog) or the [programs page](/programs) before your advisor meeting.
+If business structure is still unclear, start by documenting your current operations and reviewing educational resources in the [Legacy Investing Show blog](/blog) or the [blog resources](/blog/) before your advisor meeting.
 
 ## Final Decision Framework for the Next 90 Days
 

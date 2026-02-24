@@ -323,7 +323,7 @@ Use this as a practical sprint.
 - [ ] Day 29: Hold CPA/attorney review call on edge cases.
 - [ ] Day 30: Approve final operating checklist and quarterly review cadence.
 
-If you want implementation support, review available resources at [programs](/programs).
+If you want implementation support, review available resources at [blog resources](/blog/).
 
 ## Common Mistakes with Multi-State LLC Planning
 

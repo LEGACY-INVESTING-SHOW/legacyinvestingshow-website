@@ -314,7 +314,7 @@ Option A is often better if health is uncertain, liquidity is thin, or you canno
 9. Hold a joint review with CPA and advisor before year-end to avoid disconnected decisions.
 10. Schedule annual review dates now, including Medicare and RMD checkpoints.
 
-If you are considering paid support, compare this process against advisor deliverables and against training options on [/programs](/programs).
+If you are considering paid support, compare this process against advisor deliverables and against training options on [blog resources](/blog/).
 
 ## 30-Day Checklist You Can Execute Now
 

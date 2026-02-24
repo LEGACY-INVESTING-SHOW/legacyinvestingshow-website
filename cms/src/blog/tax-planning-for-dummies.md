@@ -33,7 +33,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-planning-for-dummies.jpg
 imageAlt: 'Tax Planning for Dummies: Complete 2026 Guide for U.S. Households guide'
 imageWidth: 1200
 imageHeight: 630
@@ -420,4 +420,4 @@ If you are starting from scratch, do this in order:
 - Set contribution targets tied to cash-flow guardrails.
 - Review progress quarterly.
 
-Then keep learning from relevant resources in the [blog library](/blog) or get implementation help through [programs](/programs). The objective is not perfection. It is consistent, compounding tax decisions that improve net worth over time.
+Then keep learning from relevant resources in the [blog library](/blog) or get implementation help through [blog resources](/blog/). The objective is not perfection. It is consistent, compounding tax decisions that improve net worth over time.

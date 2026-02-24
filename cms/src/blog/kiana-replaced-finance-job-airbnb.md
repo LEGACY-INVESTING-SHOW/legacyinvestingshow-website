@@ -655,7 +655,7 @@ Kiana identifies regulation changes as the highest-risk factor, which is why she
 
 **Ready to build your own Airbnb arbitrage business like Kiana?**
 
-[Learn more about Legacy Investing Show &rarr;](/programs)
+[Learn more about Legacy Investing Show &rarr;](/blog/)
 
 ### Related Success Stories
 
@@ -685,7 +685,7 @@ Kiana identifies regulation changes as the highest-risk factor, which is why she
 
 Preston Seo created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[Learn more about the program &rarr;](/programs) | [Watch free training &rarr;](/free-training)
+[blog resources](/blog/) | [Watch free training &rarr;](/free-training)
 
 ---
 

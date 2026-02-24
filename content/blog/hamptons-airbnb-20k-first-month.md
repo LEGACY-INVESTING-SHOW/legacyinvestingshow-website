@@ -590,7 +590,7 @@ Other risks include property damage, difficult guests, and changing regulations.
 
 **Ready to build your own Airbnb business like Hampton?**
 
-[Learn more about Legacy Investing Show](/programs)
+[Learn more about Legacy Investing Show](/blog/)
 
 ### Related Success Stories
 
@@ -620,7 +620,7 @@ Other risks include property damage, difficult guests, and changing regulations.
 
 Preston Seo created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[Learn more about the program](/programs) | [Watch free training](/free-training)
+[blog resources](/blog/) | [Watch free training](/free-training)
 
 ---
 

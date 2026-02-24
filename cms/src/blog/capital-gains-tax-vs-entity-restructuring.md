@@ -37,7 +37,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/capital-gains-tax-vs-entity-restructuring.jpg
 imageAlt: >-
   Capital Gains Tax vs Entity Restructuring: Which Strategy Works Better in
   2026? guide
@@ -360,4 +360,4 @@ A practical guardrail is to require a one-page decision memo that lists assumpti
 
 Run a side-by-side model with your CPA using three cases: base, downside, and delay. If the restructuring path still wins after implementation cost and timeline risk, pursue it with disciplined documentation. If not, optimize the simpler path and focus on certainty.
 
-For adjacent planning, review [best deductions for high-income earners](/blog/best-tax-deductions-for-high-income-earners), [best deductions for self-employed owners](/blog/best-tax-deductions-for-self-employed), and available [programs](/programs) if you want help turning strategy into an execution plan.
+For adjacent planning, review [best deductions for high-income earners](/blog/best-tax-deductions-for-high-income-earners), [best deductions for self-employed owners](/blog/best-tax-deductions-for-self-employed), and available [blog resources](/blog/) if you want help turning strategy into an execution plan.

@@ -367,4 +367,4 @@ If you want a concise rule set for an **ira strategy for high income families**,
 4. Add partial Roth conversions only when bracket math supports it.
 5. Document everything and review yearly as IRS limits and your income change.
 
-This process keeps decisions practical, numbers-driven, and adaptable. If you want implementation help beyond reading, compare your baseline with coaching options at [Legacy Investing Show programs](/programs).
+This process keeps decisions practical, numbers-driven, and adaptable. If you want implementation help beyond reading, compare your baseline with coaching options at [blog resources](/blog/).

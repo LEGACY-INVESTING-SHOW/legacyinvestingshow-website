@@ -396,7 +396,7 @@ In those cases, start with baseline estate documents, beneficiary alignment, and
 For deeper education and implementation support:
 - Start with the full [blog](/blog) for practical tax and planning breakdowns.
 - Explore focused tax strategy content in [Tax Strategies Hub](/topics/tax-strategies).
-- If you want structured execution help, review available [programs](/programs).
+- If you want structured execution help, review available [blog resources](/blog/).
 
 ## Final decision framework
 Use a simple rule: quantify first, structure second, execute in phases. If projected tax and liquidity risk are low, keep it simple and review regularly. If risk is moderate or high, implement a staged plan that combines document alignment, gifting policy, and carefully designed trust strategy with ongoing CPA-attorney coordination.

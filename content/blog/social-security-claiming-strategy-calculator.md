@@ -495,6 +495,6 @@ In those cases, simplify first: stabilize cash flow, reduce debt costs, and buil
 - Which assumptions in my calculator model are most fragile?
 - What specific trigger would make us switch from delay to earlier claim?
 
-If you want help translating this into a full retirement-income blueprint, combine your claiming model with your account strategy and implementation support through [Legacy Investing Show programs](/programs) and the broader [blog](/blog).
+If you want help translating this into a full retirement-income blueprint, combine your claiming model with your account strategy and implementation support through [blog resources](/blog/) and the broader [blog](/blog).
 
 Educational note: rules and thresholds can change, and personal outcomes vary. Use SSA and IRS primary guidance plus your licensed advisor for final decisions.

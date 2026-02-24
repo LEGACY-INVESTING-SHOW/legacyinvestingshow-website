@@ -369,4 +369,4 @@ For role-specific deduction ideas before your meeting, review [Best Tax Deductio
 
 Start with one implementation sprint: 30 days, one baseline projection, two scenario models, and one advisor review. That alone can eliminate most preventable errors and improve decision quality. Then repeat quarterly.
 
-If you want structured support beyond self-guided execution, compare resources on [Programs](/programs) and continue building your planning stack through the [blog](/blog).
+If you want structured support beyond self-guided execution, compare resources on [blog resources](/blog/) and continue building your planning stack through the [blog](/blog).

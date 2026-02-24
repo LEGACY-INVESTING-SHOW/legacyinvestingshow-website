@@ -33,7 +33,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/debt-avalanche-vs-snowball-calculator.jpg
 imageAlt: >-
   Debt Avalanche vs Snowball Calculator: Which Strategy Works Better in 2026?
   guide
@@ -259,7 +259,7 @@ Use this 90-day plan to move from analysis to execution.
 9. Redirect each paid-off minimum to the next target immediately so your total payment never drops.
 10. At day 90, review adherence, not just totals. If adherence is weak, simplify and reduce friction.
 
-If you want implementation templates and coaching structure, browse [programs](/programs) after you finish this plan.
+If you want implementation templates and coaching structure, browse [blog resources](/blog/) after you finish this plan.
 
 ## 30-Day Checklist You Can Execute This Month
 

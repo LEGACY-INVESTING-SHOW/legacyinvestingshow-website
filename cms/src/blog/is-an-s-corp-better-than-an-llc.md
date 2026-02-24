@@ -33,7 +33,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/is-an-s-corp-better-than-an-llc.jpg
 imageAlt: >-
   Is an S Corp Better Than an LLC: Complete 2026 Guide for Tax-Smart Owners
   guide
@@ -351,6 +351,6 @@ A practical decision rule for most owner-operators:
 - Consider LLC with S corp election if profit is stable, salary is supportable, and your conservative model still shows meaningful savings after all costs.
 - Reassess annually, because the right answer changes as margin, payroll, hiring, and financing goals evolve.
 
-If you want to compare more entity and tax strategy topics before deciding, browse the [Legacy Investing Show blog](/blog) or review implementation support options in [programs](/programs).
+If you want to compare more entity and tax strategy topics before deciding, browse the [Legacy Investing Show blog](/blog) or review implementation support options in [blog resources](/blog/).
 
 Educational note: this guide is for planning and discussion. Entity and tax choices are fact-specific, so use your CPA or tax attorney for final filings and legal conclusions.

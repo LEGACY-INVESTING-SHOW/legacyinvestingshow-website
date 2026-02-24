@@ -407,5 +407,5 @@ A tax-status decision is strongest when you test it with numbers, run payroll di
 ## Related Resources
 - [Business Structures Hub](/topics/business-structures)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: llc vs s corp taxes](/blog/llc-vs-s-corp-taxes)

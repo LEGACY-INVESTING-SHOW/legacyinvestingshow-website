@@ -33,7 +33,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/operating-agreement-llc-template.jpg
 imageAlt: >-
   Operating Agreement LLC Template: Practical Guide + Examples for US Owners
   guide
@@ -412,7 +412,7 @@ Use these in your review meeting so feedback is specific and decision-focused:
 
 ## Implementation Notes for Banking, Credit, and Growth
 
-After signing, translate the agreement into operations. Update bank signers, approval workflows, and bookkeeping controls so practice matches paper. For growth planning, pair governance cleanup with your [business credit building guide](/blog/business-credit-building) and banking strategy from [best bank for series LLC](/blog/best-bank-for-series-llc). Keep leadership aligned by reviewing relevant material in the [blog](/blog) and implementation support pathways in [programs](/programs).
+After signing, translate the agreement into operations. Update bank signers, approval workflows, and bookkeeping controls so practice matches paper. For growth planning, pair governance cleanup with your [business credit building guide](/blog/business-credit-building) and banking strategy from [best bank for series LLC](/blog/best-bank-for-series-llc). Keep leadership aligned by reviewing relevant material in the [blog](/blog) and implementation support pathways in [blog resources](/blog/).
 
 ## Final Decision Framework
 

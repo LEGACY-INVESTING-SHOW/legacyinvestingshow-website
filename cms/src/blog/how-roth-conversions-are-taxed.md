@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-roth-conversions-are-taxed.jpg
 imageAlt: >-
   How Roth Conversions Are Taxed: Complete 2026 Guide for Smarter Bracket
   Planning guide
@@ -317,7 +317,7 @@ Roth conversion is one tool, not the only tool. Compare it directly to alternati
 | Backdoor Roth contribution only | Adds Roth exposure with smaller annual tax impact | Contribution limits are relatively small, pro-rata issues may apply | High earners building Roth balance gradually |
 | Taxable brokerage focus | Flexible access and potential basis advantages in some estate plans | Ongoing tax drag from dividends and gains | Investors needing liquidity before retirement age |
 
-Use conversion strategy alongside deduction planning, not in isolation. These pieces fit together with your broader plan from [our blog library](/blog) and implementation support in [programs](/programs).
+Use conversion strategy alongside deduction planning, not in isolation. These pieces fit together with your broader plan from [our blog library](/blog) and implementation support in [blog resources](/blog/).
 
 ## When Not to Use This Strategy
 Roth conversion is often a poor fit when:

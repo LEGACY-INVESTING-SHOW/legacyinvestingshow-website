@@ -36,7 +36,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/rental-property-investing-for-w2-professionals.jpg
 imageAlt: >-
   Rental Property Investing for W2 Professionals: Complete 2026 Guide to Cash
   Flow, Taxes, and Risk guide
@@ -384,4 +384,4 @@ Use a three-part screen before moving forward:
 - Balance-sheet safety: reserves stay intact and household finances remain stable.
 - Tax realism: upside exists, but the deal still works if benefits are delayed.
 
-If all three pass, rental property investing for w2 professionals can be a durable wealth-building strategy. If one fails, keep learning and refine your plan with educational resources, the [blog](/blog), and structured support on the [programs page](/programs).
+If all three pass, rental property investing for w2 professionals can be a durable wealth-building strategy. If one fails, keep learning and refine your plan with educational resources, the [blog](/blog), and structured support on the [blog resources](/blog/).

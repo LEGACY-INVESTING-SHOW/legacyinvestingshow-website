@@ -36,7 +36,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/rental-property-investing-for-high-earners.jpg
 imageAlt: >-
   Rental Property Investing for High Earners: Complete 2026 Guide to Cash Flow,
   Taxes, and Risk guide

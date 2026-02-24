@@ -429,7 +429,7 @@ Bring these to your next planning call:
 9. What triggers should prompt a structure upgrade next year?
 10. What documentation package should I maintain for audit and litigation readiness?
 
-For related planning, review [anonymous LLC guide](/blog/anonymous-llc), [best registered agent service for LLC](/blog/best-registered-agent-service-for-llc), and [programs](/programs).
+For related planning, review [anonymous LLC guide](/blog/anonymous-llc), [best registered agent service for LLC](/blog/best-registered-agent-service-for-llc), and [blog resources](/blog/).
 
 ## Bottom Line
 

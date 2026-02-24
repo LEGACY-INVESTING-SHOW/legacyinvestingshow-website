@@ -28,7 +28,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/business-succession-planning.jpg
 imageAlt: 'Business Succession Planning: How to Transfer Ownership guide'
 imageWidth: 1200
 imageHeight: 630
@@ -405,7 +405,7 @@ If you review business succession planning with a CPA/attorney/advisor, bring:
 
 ## Internal Links To Continue
 - [Browse related guides](/blog/category/business-structures)
-- [Programs and implementation support](/programs)
+- [blog resources](/blog/)
 - [Latest blog posts](/blog)
 
 ## Final Word

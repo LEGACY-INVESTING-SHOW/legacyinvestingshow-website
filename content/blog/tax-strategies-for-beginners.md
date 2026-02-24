@@ -387,4 +387,4 @@ Use this sequence:
 3. Capture deductions monthly.
 4. Review quarterly with clear assumptions.
 
-For deeper implementation ideas, continue with the [Tax Strategies topic page](/topics/tax-strategies), browse the [blog](/blog), and review programs at [Legacy Investing Show Programs](/programs).
+For deeper implementation ideas, continue with the [Tax Strategies topic page](/topics/tax-strategies), browse the [blog](/blog), and review programs at [blog resources](/blog/).

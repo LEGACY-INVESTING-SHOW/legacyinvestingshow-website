@@ -384,4 +384,4 @@ In these situations, a simpler plan focused on cash flow, debt reduction, and op
 
 Start with a baseline model, identify your tier, and choose one primary lever you can execute cleanly this quarter. Then add one secondary lever only if cash flow supports it. Keep your plan practical, documented, and reviewed quarterly.
 
-For broader implementation ideas, keep a running list from the main [blog](/blog) and evaluate whether hands-on support from [programs](/programs) fits your situation. This article is educational and should be paired with professional tax advice tailored to your facts.
+For broader implementation ideas, keep a running list from the main [blog](/blog) and evaluate whether hands-on support from [blog resources](/blog/) fits your situation. This article is educational and should be paired with professional tax advice tailored to your facts.

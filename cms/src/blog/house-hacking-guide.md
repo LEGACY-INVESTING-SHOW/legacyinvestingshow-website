@@ -28,7 +28,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/house-hacking-guide.jpg
 imageAlt: 'House Hacking Guide: Live for Free While Building Wealth guide'
 imageWidth: 1200
 imageHeight: 630
@@ -402,7 +402,7 @@ If you review house hacking with a CPA/attorney/advisor, bring:
 
 ## Internal Links To Continue
 - [Browse related guides](/blog/category/passive-income)
-- [Programs and implementation support](/programs)
+- [blog resources](/blog/)
 - [Latest blog posts](/blog)
 
 ## Final Word

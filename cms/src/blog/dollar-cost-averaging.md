@@ -28,7 +28,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/dollar-cost-averaging.jpg
 imageAlt: 'Dollar Cost Averaging: The Strategy That Removes Emotion from Investing guide'
 imageWidth: 1200
 imageHeight: 630
@@ -402,7 +402,7 @@ If you review dollar cost averaging with a CPA/attorney/advisor, bring:
 
 ## Internal Links To Continue
 - [Browse related guides](/blog/category/investing)
-- [Programs and implementation support](/programs)
+- [blog resources](/blog/)
 - [Latest blog posts](/blog)
 
 ## Final Word

@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-strategy-365-reviews.jpg
 imageAlt: >-
   Tax Strategy 365 Reviews: Complete 2026 Guide for High-Income Tax Planning
   Decisions guide
@@ -388,4 +388,4 @@ Good advisors answer these directly and in writing. If answers stay vague, the r
 
 ## Final Decision Rule for 2026
 
-Use this simple rule: buy strategy support only when your conservative net value is clearly positive, your implementation capacity is real, and your documentation plan is credible. If any of those three is weak, start smaller and build capability first. If all three are strong, a structured service may become a high-ROI move for tax efficiency and planning confidence. For deeper tactical reading, review [best deductions for small-business owners](/blog/best-tax-deductions-for-small-business) and [program options](/programs) before you commit.
+Use this simple rule: buy strategy support only when your conservative net value is clearly positive, your implementation capacity is real, and your documentation plan is credible. If any of those three is weak, start smaller and build capability first. If all three are strong, a structured service may become a high-ROI move for tax efficiency and planning confidence. For deeper tactical reading, review [best deductions for small-business owners](/blog/best-tax-deductions-for-small-business) and [blog resources](/blog/) before you commit.

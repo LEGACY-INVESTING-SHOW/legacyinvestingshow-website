@@ -37,7 +37,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-occupancy-strategy-tax-implications.jpg
 imageAlt: >-
   Airbnb Occupancy Strategy Tax Implications: Complete 2026 Guide for U.S. Hosts
   and Arbitrage Operators guide

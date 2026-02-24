@@ -33,7 +33,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/multi-state-llc-for-high-earners.jpg
 imageAlt: 'Multi State LLC for High Earners: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -324,7 +324,7 @@ Use this model to pressure-test your own assumptions with your CPA rather than c
 9. Document governance: operating agreement updates, intercompany agreements, and authority matrix.
 10. Run quarterly compliance reviews: reconcile state notices, apportionment, and filing status.
 
-If you want advisory-level execution support, compare implementation options on [programs](/programs) and keep an audit trail of every state registration and deadline.
+If you want advisory-level execution support, compare implementation options on [blog resources](/blog/) and keep an audit trail of every state registration and deadline.
 
 ## 30-Day Checklist
 

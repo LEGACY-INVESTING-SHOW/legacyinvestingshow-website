@@ -33,7 +33,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-arbitrage-tax-implications.jpg
 imageAlt: 'Airbnb Arbitrage Tax Implications: Complete 2026 Guide for US Hosts guide'
 imageWidth: 1200
 imageHeight: 630
@@ -380,6 +380,6 @@ A good advisor should answer with numbers, assumptions, and tradeoffs, not only 
 
 Start with one clean operating system, not multiple messy units. Build accurate books, file every required return on time, and model after-tax profit before growth. Then decide whether arbitrage still beats your alternatives.
 
-If you want implementation detail, use [airbnb occupancy strategy for beginners](/blog/airbnb-occupancy-strategy-for-beginners), review [airbnb occupancy strategy for real estate investors](/blog/airbnb-occupancy-strategy-for-real-estate-investors), and compare against your scale goals through [Legacy Investing Show programs](/programs).
+If you want implementation detail, use [airbnb occupancy strategy for beginners](/blog/airbnb-occupancy-strategy-for-beginners), review [airbnb occupancy strategy for real estate investors](/blog/airbnb-occupancy-strategy-for-real-estate-investors), and compare against your scale goals through [blog resources](/blog/).
 
 The operators who last are usually not the most aggressive. They are the most disciplined with compliance, underwriting, and monthly decision cycles.

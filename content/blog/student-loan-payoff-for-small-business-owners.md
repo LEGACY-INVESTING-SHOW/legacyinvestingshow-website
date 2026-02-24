@@ -385,4 +385,4 @@ Track these five numbers every month:
 
 If three straight months show stable or improving cash flow, increase extra debt payments. If volatility rises, preserve liquidity first. The objective is not only faster payoff, but a payoff plan that survives real business conditions.
 
-For tactical support, review [debt avalanche method](/blog/debt-avalanche-method), test scenarios with [debt-avalanche-payoff-calculator](/blog/debt-avalanche-payoff-calculator), and explore coaching options on [programs](/programs).
+For tactical support, review [debt avalanche method](/blog/debt-avalanche-method), test scenarios with [debt-avalanche-payoff-calculator](/blog/debt-avalanche-payoff-calculator), and explore coaching options on [blog resources](/blog/).

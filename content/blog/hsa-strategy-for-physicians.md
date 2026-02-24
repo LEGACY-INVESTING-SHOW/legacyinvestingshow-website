@@ -366,6 +366,6 @@ These questions usually improve advisor meetings from generic to actionable.
 
 ## Integrating this with your broader tax strategy
 
-The hsa strategy for physicians works best as one piece of a coordinated system, not a standalone trick. Pair it with deductions, retirement sequencing, and entity-level decisions where relevant. Keep your education pipeline active through the [blog](/blog), the [programs](/programs), and related deduction frameworks like [best tax deductions for individuals](/blog/best-tax-deductions-for-individuals).
+The hsa strategy for physicians works best as one piece of a coordinated system, not a standalone trick. Pair it with deductions, retirement sequencing, and entity-level decisions where relevant. Keep your education pipeline active through the [blog](/blog), the [blog resources](/blog/), and related deduction frameworks like [best tax deductions for individuals](/blog/best-tax-deductions-for-individuals).
 
 Final practical takeaway: if you are HSA-eligible, automate contributions, invest deliberately above a cash floor, keep receipts like audit files, and review annually with your CPA. That combination usually captures most of the available upside while keeping risk manageable.

@@ -420,4 +420,4 @@ A productive advisor meeting is numerical, specific, and timeline-based, not gen
 
 Capital gains tax for beginners becomes manageable when you treat it as a repeatable workflow: gather lot-level data, model scenarios, execute in stages when needed, and reserve tax cash immediately. Start with one position this week, then expand to a full household plan.
 
-If you want broader implementation support, explore [Legacy Investing Show programs](/programs) and continue with adjacent strategy content on the [blog](/blog). Educational note: tax rules and thresholds can change, and personal facts drive outcomes, so confirm final implementation details with a qualified tax professional.
+If you want broader implementation support, explore [blog resources](/blog/) and continue with adjacent strategy content on the [blog](/blog). Educational note: tax rules and thresholds can change, and personal facts drive outcomes, so confirm final implementation details with a qualified tax professional.

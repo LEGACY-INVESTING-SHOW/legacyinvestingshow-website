@@ -34,7 +34,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-pricing-strategy-tax-implications.jpg
 imageAlt: >-
   airbnb pricing strategy tax implications: Complete 2026 Guide for U.S. Hosts
   guide
@@ -420,7 +420,7 @@ Use this quick scorecard before changing rates:
 
 If you cannot answer yes to at least 4 of 5, do not deploy the change yet.
 
-For deeper operating playbooks, review [our programs](/programs) and keep a regular review loop with resources from the [blog](/blog).
+For deeper operating playbooks, review [blog resources](/blog/) and keep a regular review loop with resources from the [blog](/blog).
 
 Source organizations referenced in this guide: IRS (Topic 414, Publication 925, Publication 527, estimated-tax FAQs), Airbnb Help Center host tax articles, and Airbnb Community host education discussion on income tax vs lodging tax distinctions.
 

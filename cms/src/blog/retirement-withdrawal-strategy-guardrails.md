@@ -37,7 +37,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/retirement-withdrawal-strategy-guardrails.jpg
 imageAlt: >-
   Retirement Withdrawal Strategy Guardrails: Complete 2026 Guide for Tax-Smart,
   Flexible Income guide
@@ -316,7 +316,7 @@ Use this 90-day rollout if your household is starting from scratch.
    - Apply current numbers to your trigger rules.
    - Confirm both spouses understand exact actions if a trigger breaches.
 
-If you want ongoing education before implementing, use the latest retirement and tax content on the [blog](/blog) and structured coaching resources in [programs](/programs).
+If you want ongoing education before implementing, use the latest retirement and tax content on the [blog](/blog) and structured coaching resources in [blog resources](/blog/).
 
 ## 30-day checklist
 

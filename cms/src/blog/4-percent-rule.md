@@ -28,7 +28,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/4-percent-rule.jpg
 imageAlt: 'The 4% Rule: How Much Can You Safely Withdraw in Retirement? guide'
 imageWidth: 1200
 imageHeight: 630
@@ -404,7 +404,7 @@ If you review 4 percent rule retirement with a CPA/attorney/advisor, bring:
 
 ## Internal Links To Continue
 - [Browse related guides](/blog/category/retirement)
-- [Programs and implementation support](/programs)
+- [blog resources](/blog/)
 - [Latest blog posts](/blog)
 
 ## Final Word

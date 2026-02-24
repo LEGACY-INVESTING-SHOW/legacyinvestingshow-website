@@ -376,4 +376,4 @@ In these cases, a partial strategy can still work: contribute enough to capture 
 7. If my spouse has FSA access, what plan design keeps my HSA eligibility intact?
 8. What is the cleanest process to correct excess contributions if they occur?
 
-A strong hsa strategy for beginners is less about finding a perfect account and more about running a repeatable annual process: compare plan economics, automate tax-efficient contributions, protect liquidity, and document everything. For more implementation ideas, review the [blog](/blog) and evaluate hands-on planning options in [programs](/programs).
+A strong hsa strategy for beginners is less about finding a perfect account and more about running a repeatable annual process: compare plan economics, automate tax-efficient contributions, protect liquidity, and document everything. For more implementation ideas, review the [blog](/blog) and evaluate hands-on planning options in [blog resources](/blog/).

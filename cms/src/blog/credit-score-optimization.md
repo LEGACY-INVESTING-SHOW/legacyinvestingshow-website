@@ -28,7 +28,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/credit-score-optimization.jpg
 imageAlt: 'Credit Score Optimization: Improve Your Score Fast guide'
 imageWidth: 1200
 imageHeight: 630
@@ -402,7 +402,7 @@ If you review improve credit score with a CPA/attorney/advisor, bring:
 
 ## Internal Links To Continue
 - [Browse related guides](/blog/category/debt-management)
-- [Programs and implementation support](/programs)
+- [blog resources](/blog/)
 - [Latest blog posts](/blog)
 
 ## Final Word

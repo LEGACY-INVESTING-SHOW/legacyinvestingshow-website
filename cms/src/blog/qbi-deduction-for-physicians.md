@@ -36,7 +36,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/qbi-deduction-for-physicians.jpg
 imageAlt: >-
   QBI Deduction for Physicians: Complete 2026 Guide to Eligibility, Math, and
   Tax Planning guide
@@ -437,4 +437,4 @@ Use this quick filter:
 - If you are far above phaseout, shift focus to alternative tax and wealth strategies.
 - If complexity outweighs savings, simplify and preserve optionality for next year.
 
-For related planning ideas, review [best tax deductions for individuals](/blog/best-tax-deductions-for-individuals), [best tax deductions for W-2 employees](/blog/best-tax-deductions-for-w2-employees), and available [programs](/programs). The best outcome is usually a coordinated plan where QBI is one part of a broader physician wealth strategy, not the entire strategy.
+For related planning ideas, review [best tax deductions for individuals](/blog/best-tax-deductions-for-individuals), [best tax deductions for W-2 employees](/blog/best-tax-deductions-for-w2-employees), and available [blog resources](/blog/). The best outcome is usually a coordinated plan where QBI is one part of a broader physician wealth strategy, not the entire strategy.

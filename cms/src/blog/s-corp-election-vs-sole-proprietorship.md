@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/s-corp-election-vs-sole-proprietorship.jpg
 imageAlt: >-
   S Corp Election vs Sole Proprietorship: Which Strategy Works Better in 2026?
   guide
@@ -148,7 +148,7 @@ wordCount: '2515'
 ---
 If you are deciding between s corp election vs sole proprietorship in 2026, treat it as a break-even analysis, not a branding choice. The wrong structure can quietly cost five figures per year through avoidable payroll taxes, avoidable compliance costs, or missed deductions. The right structure usually matches three things: stable profit, defendable owner compensation, and clean bookkeeping discipline.
 
-Use this guide with your own numbers, then take your model to a CPA. For related planning context, review the [Business Structures hub](/topics/business-structures), browse practical case studies in the [blog](/blog), and compare implementation support options in [programs](/programs).
+Use this guide with your own numbers, then take your model to a CPA. For related planning context, review the [Business Structures hub](/topics/business-structures), browse practical case studies in the [blog](/blog), and compare implementation support options in [blog resources](/blog/).
 
 ## s corp election vs sole proprietorship: how the tax mechanics actually differ
 

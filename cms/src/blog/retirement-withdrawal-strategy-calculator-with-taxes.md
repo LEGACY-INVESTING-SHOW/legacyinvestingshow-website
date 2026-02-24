@@ -390,7 +390,7 @@ Cons:
 - Ongoing fee burden may be meaningful.
 - Quality varies widely by advisor process and tax depth.
 
-Bottom line: a retirement withdrawal strategy calculator with taxes is often the highest-leverage middle ground between simplistic rules and full outsourced planning. If you want done-with-you implementation support, review [program options](/programs).
+Bottom line: a retirement withdrawal strategy calculator with taxes is often the highest-leverage middle ground between simplistic rules and full outsourced planning. If you want done-with-you implementation support, review [blog resources](/blog/).
 
 ## When Not To Use This Strategy
 
@@ -434,6 +434,6 @@ For additional implementation ideas, browse the full [blog library](/blog) and c
 ## Related Resources
 - [Retirement Hub](/topics/retirement)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: strategy for retirement withdrawals](/blog/strategy-for-retirement-withdrawals)
 - [Related Guide: retirement withdrawal strategy tax implications](/blog/retirement-withdrawal-strategy-tax-implications)

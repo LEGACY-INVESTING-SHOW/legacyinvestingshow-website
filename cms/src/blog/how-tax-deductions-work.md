@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-tax-deductions-work.jpg
 imageAlt: >-
   How Tax Deductions Work: Complete 2026 Guide for Smarter Filing Decisions
   guide

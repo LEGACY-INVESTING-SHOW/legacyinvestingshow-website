@@ -661,7 +661,7 @@ Sunny's approach actually minimizes several common risks:
 
 **Ready to build your own Airbnb arbitrage business like Sunny?**
 
-[Learn more about Legacy Investing Show](/programs)
+[Learn more about Legacy Investing Show](/blog/)
 
 ### Related Success Stories
 
@@ -691,7 +691,7 @@ Sunny's approach actually minimizes several common risks:
 
 Preston Seo created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[Learn more about the program](/programs) | [Watch free training](/free-training)
+[blog resources](/blog/) | [Watch free training](/free-training)
 
 ---
 

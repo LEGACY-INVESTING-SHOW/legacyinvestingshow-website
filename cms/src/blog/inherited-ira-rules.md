@@ -28,7 +28,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/inherited-ira-rules.jpg
 imageAlt: 'Inherited IRA Rules 2026: What Beneficiaries Need to Know guide'
 imageWidth: 1200
 imageHeight: 630
@@ -402,7 +402,7 @@ If you review inherited IRA rules with a CPA/attorney/advisor, bring:
 
 ## Internal Links To Continue
 - [Browse related guides](/blog/category/retirement)
-- [Programs and implementation support](/programs)
+- [blog resources](/blog/)
 - [Latest blog posts](/blog)
 
 ## Final Word

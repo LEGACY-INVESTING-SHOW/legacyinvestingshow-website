@@ -35,7 +35,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/asset-allocation-tax-implications.jpg
 imageAlt: >-
   Asset Allocation Tax Implications: Complete 2026 Guide for After-Tax Portfolio
   Returns guide
@@ -376,7 +376,7 @@ Bring these to your next planning call:
 9. How does my business structure or variable income change estimated-tax and withdrawal planning?
 10. What documentation should I keep so year-end tax prep is accurate and audit-resilient?
 
-If you want hands-on support, compare your self-managed plan against the decision process used in our [Programs](/programs).
+If you want hands-on support, compare your self-managed plan against the decision process used in our [blog resources](/blog/).
 
 ## Resources for Next Moves
 

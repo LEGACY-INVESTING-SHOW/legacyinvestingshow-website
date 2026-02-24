@@ -36,7 +36,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-pricing-strategy-for-real-estate-investors.jpg
 imageAlt: >-
   Airbnb Pricing Strategy for Real Estate Investors: Complete 2026 Guide to
   Occupancy, Cash Flow, and Tax-Aware Growth guide
@@ -466,4 +466,4 @@ Use this simple monthly scorecard:
 
 If three or more answers are negative, act quickly: tighten pricing rules, cut operating friction, and test repositioning within 30 days. If performance still misses your risk-adjusted threshold, evaluate a format switch or exit.
 
-For more implementation examples, use the [Legacy Investing Show blog](/blog), the [airbnb occupancy strategy tax implications guide](/blog/airbnb-occupancy-strategy-tax-implications), and [programs](/programs) resources to translate strategy into repeatable execution.
+For more implementation examples, use the [Legacy Investing Show blog](/blog), the [airbnb occupancy strategy tax implications guide](/blog/airbnb-occupancy-strategy-tax-implications), and [blog resources](/blog/) resources to translate strategy into repeatable execution.

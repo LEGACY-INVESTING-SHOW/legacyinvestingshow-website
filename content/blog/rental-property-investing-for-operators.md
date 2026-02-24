@@ -408,7 +408,7 @@ Bring specific scenarios, not generic questions. Ask:
 - Under what conditions would a cost segregation study be worth the cost for this property size?
 - If I plan to scale, what entity structure avoids expensive restructuring later?
 
-For implementation support and strategy coaching context, see [programs](/programs).
+For implementation support and strategy coaching context, see [blog resources](/blog/).
 
 ## Final Operator Takeaway
 

@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/cost-segregation-vs-standard-deduction.jpg
 imageAlt: >-
   Cost Segregation vs Standard Deduction: Which Strategy Works Better in 2026?
   guide
@@ -421,6 +421,6 @@ If you are actively comparing deductions this quarter, use this sequence:
 - Start with the [Tax Strategies hub](/topics/tax-strategies) for broader planning context.
 - Review related deduction frameworks at [Best Tax Deductions for High-Income Earners](/blog/best-tax-deductions-for-high-income-earners) and [Best Tax Deductions for Self-Employed](/blog/best-tax-deductions-for-self-employed).
 - Use the full [Blog](/blog) for additional case-based tax planning content.
-- If you want implementation support, review [Programs](/programs).
+- If you want implementation support, review [blog resources](/blog/).
 
 The practical rule for 2026 is simple: choose the path with the highest expected **usable** after-tax cash flow, not the largest headline deduction.

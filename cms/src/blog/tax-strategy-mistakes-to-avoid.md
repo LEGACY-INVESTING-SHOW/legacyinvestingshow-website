@@ -32,7 +32,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-strategy-mistakes-to-avoid.jpg
 imageAlt: 'Tax Strategy Mistakes to Avoid: Complete 2026 Guide for U.S. Filers guide'
 imageWidth: 1200
 imageHeight: 630
@@ -369,4 +369,4 @@ For role-specific deduction ideas before your meeting, review [Best Tax Deductio
 
 Start with one implementation sprint: 30 days, one baseline projection, two scenario models, and one advisor review. That alone can eliminate most preventable errors and improve decision quality. Then repeat quarterly.
 
-If you want structured support beyond self-guided execution, compare resources on [Programs](/programs) and continue building your planning stack through the [blog](/blog).
+If you want structured support beyond self-guided execution, compare resources on [blog resources](/blog/) and continue building your planning stack through the [blog](/blog).

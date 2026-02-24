@@ -123,7 +123,7 @@ function processTranscript(transcript, videoUrl) {
 </div>
 
 <div class="cta">
-    <p>Want to learn more? <a href="/programs">Check out our programs</a> or <a href="/blog/">read more articles</a>.</p>
+    <p>Want to learn more? <a href="/blog/">Explore our blog resources</a> and read more articles.</p>
 </div>
   `;
 }

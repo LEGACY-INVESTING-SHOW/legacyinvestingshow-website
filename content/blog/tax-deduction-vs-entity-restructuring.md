@@ -380,11 +380,11 @@ Madonia discussions on corporate reorganization emphasize that structure should 
 ## Conclusion: decide with a scorecard, not fear
 In 2026, most owners should follow one order: first deductions, then modeling, then restructuring only if the net outcome remains stronger.
 
-This keeps you on a path where tax savings are real, compliance is manageable, and your setup can be defended. For ongoing context and next-step education, see [all posts](/blog) and the [programs page](/programs).
+This keeps you on a path where tax savings are real, compliance is manageable, and your setup can be defended. For ongoing context and next-step education, see [all posts](/blog) and the [blog resources](/blog/).
 
 ## Related Resources
 - [Tax Strategies Hub](/topics/tax-strategies)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: best tax strategy for retirement](/blog/best-tax-strategy-for-retirement)
 - [Related Guide: best tax strategy for ira withdrawals](/blog/best-tax-strategy-for-ira-withdrawals)

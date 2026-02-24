@@ -336,7 +336,7 @@ Use these to turn strategy into execution:
 - [Best Tax Deductions for W-2 Employees](/blog/best-tax-deductions-for-w2-employees)
 - [Best Tax Deductions for Self-Employed](/blog/best-tax-deductions-for-self-employed)
 - [Legacy Investing Show Blog](/blog)
-- [Programs](/programs)
+- [blog resources](/blog/)
 
 ## Reference Points Used in This Guide
 

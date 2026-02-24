@@ -394,7 +394,7 @@ In these cases, stabilize first, then accelerate.
 - What is the break-even APR where investing likely dominates extra debt payoff for my risk profile?
 - What cadence should we use for plan reviews: monthly, quarterly, or event-driven?
 
-If you want guided implementation, review available [programs](/programs) and pick a structure that includes accountability and periodic plan updates.
+If you want guided implementation, review available [blog resources](/blog/) and pick a structure that includes accountability and periodic plan updates.
 
 ## Monthly KPI dashboard and decision rules
 

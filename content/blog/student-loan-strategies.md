@@ -407,7 +407,7 @@ If you review student loan repayment strategies with a CPA/attorney/advisor, bri
 
 ## Internal Links To Continue
 - [Browse related guides](/blog/category/debt-management)
-- [Programs and implementation support](/programs)
+- [blog resources](/blog/)
 - [Latest blog posts](/blog)
 
 ## Final Word

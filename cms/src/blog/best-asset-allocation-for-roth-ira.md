@@ -33,7 +33,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-asset-allocation-for-roth-ira.jpg
 imageAlt: >-
   Best Asset Allocation for Roth IRA: Complete 2026 Guide for U.S. Investors
   guide
@@ -378,6 +378,6 @@ Bring these questions to your next planning meeting:
 
 The best asset allocation for roth ira is the one that is mathematically strong and behaviorally sustainable. Start with total portfolio targets, then place assets intentionally across account types, automate contributions, and rebalance on schedule.
 
-If you want to go deeper, review the [Investing topic hub](/topics/investing), browse the latest insights on the [blog](/blog), and evaluate whether guided implementation through [programs](/programs) fits your situation.
+If you want to go deeper, review the [Investing topic hub](/topics/investing), browse the latest insights on the [blog](/blog), and evaluate whether guided implementation through [blog resources](/blog/) fits your situation.
 
 Educational note: This article is for general education and planning ideas, not individualized tax, legal, or investment advice.

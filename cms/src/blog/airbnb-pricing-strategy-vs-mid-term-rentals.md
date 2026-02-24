@@ -35,7 +35,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-pricing-strategy-vs-mid-term-rentals.jpg
 imageAlt: >-
   airbnb pricing strategy vs mid term rentals: Which Strategy Works Better in
   2026? guide
@@ -438,4 +438,4 @@ Quick framework:
 - Stress test both models with weaker demand assumptions.
 - Select the strategy that protects downside while meeting your workload limits.
 
-Then execute one controlled pilot, review outcomes, and scale only after consistency. For more tactical playbooks, review [all Legacy Investing Show articles](/blog) and implementation support options in [programs](/programs).
+Then execute one controlled pilot, review outcomes, and scale only after consistency. For more tactical playbooks, review [all Legacy Investing Show articles](/blog) and implementation support options in [blog resources](/blog/).

@@ -35,7 +35,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/capital-gains-tax-for-consultants.jpg
 imageAlt: >-
   Capital Gains Tax for Consultants: Complete 2026 Guide to Lowering Your Tax
   Bill guide
@@ -399,7 +399,7 @@ Capital gains planning works best when coordinated with your broader tax stack. 
 
 Then layer capital gains timing decisions on top of that base plan. Consultants often miss this sequencing and optimize one bucket while overpaying in another.
 
-If you want additional case studies, check the [blog](/blog). If you want guided implementation, review available [programs](/programs).
+If you want additional case studies, check the [blog](/blog). If you want guided implementation, review available [blog resources](/blog/).
 
 ## Final action framework
 

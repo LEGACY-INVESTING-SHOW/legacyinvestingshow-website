@@ -28,7 +28,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/balance-transfer-strategy.jpg
 imageAlt: 'Balance Transfer Strategy: Use 0% APR to Crush Debt guide'
 imageWidth: 1200
 imageHeight: 630
@@ -404,7 +404,7 @@ If you review balance transfer strategy with a CPA/attorney/advisor, bring:
 
 ## Internal Links To Continue
 - [Browse related guides](/blog/category/debt-management)
-- [Programs and implementation support](/programs)
+- [blog resources](/blog/)
 - [Latest blog posts](/blog)
 
 ## Final Word

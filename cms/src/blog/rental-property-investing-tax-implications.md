@@ -35,7 +35,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/rental-property-investing-tax-implications.jpg
 imageAlt: >-
   Rental Property Investing Tax Implications: Complete 2026 Guide for U.S.
   Investors guide
@@ -407,7 +407,7 @@ Bring these to your next meeting:
 - Should I change entity structure for liability or administrative reasons, and what are the tax side effects?
 - What quarterly tax payments should I plan for under base, downside, and upside scenarios?
 
-If you are building a portfolio and want implementation support, review current [programs](/programs) and compare against your operating capacity.
+If you are building a portfolio and want implementation support, review current [blog resources](/blog/) and compare against your operating capacity.
 
 ## Final execution plan for this tax year
 

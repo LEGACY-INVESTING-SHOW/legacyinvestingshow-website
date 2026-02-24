@@ -36,7 +36,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/ira-strategy-for-small-business-owners.jpg
 imageAlt: >-
   IRA Strategy for Small Business Owners: Complete 2026 Guide to Taxes,
   Contributions, and Retirement Growth guide
@@ -417,4 +417,4 @@ In these cases, run a staged approach: protect liquidity, clean up accounting, r
 
 Pick one decision window this month and finish it. Run the scenario math, choose your minimum and target contribution levels, and execute automated funding. Then review quarterly, not annually.
 
-If you want a broader retirement system around this IRA strategy, use the [retirement hub](/topics/retirement) for adjacent topics and review implementation pathways in [programs](/programs). Keep this educational, decision-focused process anchored to current IRS guidance and your advisor team before executing final tax elections.
+If you want a broader retirement system around this IRA strategy, use the [retirement hub](/topics/retirement) for adjacent topics and review implementation pathways in [blog resources](/blog/). Keep this educational, decision-focused process anchored to current IRS guidance and your advisor team before executing final tax elections.

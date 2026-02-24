@@ -33,7 +33,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-asset-allocation-for-60-year-old.jpg
 imageAlt: 'Best Asset Allocation for 60 Year Old: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -359,4 +359,4 @@ In these cases, solve the structural constraint first, then revisit allocation.
 
 ## Final Decision Framework
 
-Start with a base allocation you can hold in a bad year, not the one that only looks good in a bull market. Then add tax-aware placement, withdrawal guardrails, and a review cadence. For additional implementation ideas, see [best asset allocation for retirement](/blog/best-asset-allocation-for-retirement), explore more examples in [the blog](/blog), and review hands-on support through [programs](/programs). The objective is not a perfect forecast. It is a durable plan you can execute consistently.
+Start with a base allocation you can hold in a bad year, not the one that only looks good in a bull market. Then add tax-aware placement, withdrawal guardrails, and a review cadence. For additional implementation ideas, see [best asset allocation for retirement](/blog/best-asset-allocation-for-retirement), explore more examples in [the blog](/blog), and review hands-on support through [blog resources](/blog/). The objective is not a perfect forecast. It is a durable plan you can execute consistently.

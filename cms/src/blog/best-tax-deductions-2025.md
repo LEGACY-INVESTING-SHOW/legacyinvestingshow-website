@@ -32,7 +32,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-tax-deductions-2025.jpg
 imageAlt: 'Best Tax Deductions 2025: Complete 2026 Guide to Lower Your Tax Bill guide'
 imageWidth: 1200
 imageHeight: 630
@@ -314,4 +314,4 @@ This strategy is less effective or may need modification when:
 
 ## Final Action Path
 
-If you want implementation support, map your profile in [the blog library](/blog) and then evaluate execution support in [Legacy Investing Show programs](/programs). The best tax deductions 2025 strategy is the one you can document, execute on time, and repeat every year with better precision.
+If you want implementation support, map your profile in [the blog library](/blog) and then evaluate execution support in [blog resources](/blog/). The best tax deductions 2025 strategy is the one you can document, execute on time, and repeat every year with better precision.

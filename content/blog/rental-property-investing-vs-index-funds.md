@@ -429,6 +429,6 @@ Do not rely on index funds alone for near-term spending goals if you may need to
 
 - Start broad with the [Investing Topic Hub](/topics/investing)
 - Build your own assumptions at [Blog Index](/blog)
-- If you want implementation support, review [Programs](/programs)
+- If you want implementation support, review [blog resources](/blog/)
 
 Final takeaway: rental property investing vs index funds is a portfolio design decision, not an identity decision. Build a repeatable process, underwrite conservatively, automate what you can, and let your numbers - not your bias - pick the mix.

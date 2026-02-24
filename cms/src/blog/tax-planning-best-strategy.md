@@ -35,7 +35,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-planning-best-strategy.jpg
 imageAlt: >-
   Tax Planning Best Strategy: Complete 2026 Decision Framework for Smarter
   After-Tax Wealth guide
@@ -303,7 +303,7 @@ The point is not the exact number. The point is using explicit assumptions, then
 9. Recalculate before year-end with actual numbers and execute remaining moves.
 10. Debrief after filing season and improve next year’s plan.
 
-If you want deeper implementation support, use [programs](/programs) alongside your licensed tax professional.
+If you want deeper implementation support, use [blog resources](/blog/) alongside your licensed tax professional.
 
 ## 30-Day Checklist
 

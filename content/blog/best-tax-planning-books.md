@@ -377,7 +377,7 @@ Cons:
 - Reading without execution gives near-zero return
 - Some strategies are too complex for self-implementation
 
-If you want structured support beyond books, compare options on the [Programs](/programs) page before committing time or money.
+If you want structured support beyond books, compare options on the [blog resources](/blog/) page before committing time or money.
 
 ## When Not to Use This Strategy
 

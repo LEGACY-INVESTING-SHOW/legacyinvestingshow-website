@@ -33,7 +33,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-cash-flow-vs-notes-investing.jpg
 imageAlt: >-
   Airbnb Cash Flow vs Notes Investing: Which Strategy Works Better in 2026?
   guide
@@ -337,7 +337,7 @@ You should compare both strategies to simpler options before committing.
 | Long-term rentals | Simpler operations than STR, financing familiarity | Lower gross yield, slower income growth | Investors wanting real estate exposure with moderate activity |
 | REIT index exposure | Highly liquid, easy diversification | Market beta and price volatility, less control | Passive investors needing liquidity |
 
-If you want other practical alternatives, compare with [house hacking](/blog/house-hacking-guide), [digital product income](/blog/digital-product-income), and the broader set of execution playbooks in [our programs](/programs).
+If you want other practical alternatives, compare with [house hacking](/blog/house-hacking-guide), [digital product income](/blog/digital-product-income), and the broader set of execution playbooks in [blog resources](/blog/).
 
 ## When Not to Use This Strategy
 Do not choose Airbnb-heavy exposure if:

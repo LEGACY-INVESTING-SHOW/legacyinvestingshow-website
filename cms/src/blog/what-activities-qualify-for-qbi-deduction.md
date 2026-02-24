@@ -38,7 +38,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/what-activities-qualify-for-qbi-deduction.jpg
 imageAlt: >-
   What Activities Qualify for QBI Deduction: Complete 2026 Guide for US Business
   Owners guide
@@ -367,7 +367,7 @@ Cons:
 - Hard to optimize correctly without advisor modeling
 - Some owners in high-income SSTB situations may see limited benefit
 
-If you are evaluating implementation support, the educational [programs](/programs) page can help you structure execution and accountability.
+If you are evaluating implementation support, the educational [blog resources](/blog/) page can help you structure execution and accountability.
 
 ## When Not to Use This Strategy
 

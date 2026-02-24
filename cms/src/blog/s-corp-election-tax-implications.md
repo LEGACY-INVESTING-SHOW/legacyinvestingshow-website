@@ -33,7 +33,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/s-corp-election-tax-implications.jpg
 imageAlt: >-
   S Corp Election Tax Implications: Complete 2026 Guide for Owner-Operators
   guide
@@ -253,7 +253,7 @@ Use this checklist to move from decision to stable operations in one month.
 - [ ] Issue first distribution only after payroll and tax reserves are funded.
 - [ ] Schedule quarterly advisor review dates now, not later.
 - [ ] Document who owns each compliance task and due date.
-- [ ] Review longer-term entity strategy against your growth plan in [Programs](/programs).
+- [ ] Review longer-term entity strategy against your growth plan in [blog resources](/blog/).
 
 ## Mistakes that cost owners real money
 Most bad outcomes are avoidable. The same issues show up repeatedly in IRS disputes and practitioner case studies.

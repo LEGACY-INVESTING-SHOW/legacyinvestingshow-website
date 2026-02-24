@@ -377,4 +377,4 @@ In these situations, stabilize cash flow first, then revisit retirement election
 
 If your essentials are not fully covered, prioritize guaranteed income first. If essentials are covered, optimize flexibility and tax control with disciplined 401(k) execution. If you are uncertain, a blended design is often the most robust default.
 
-Keep your next steps practical: review your broader [retirement guides](/topics/retirement), check implementation details in the [blog library](/blog), and compare support options on the [programs page](/programs).
+Keep your next steps practical: review your broader [retirement guides](/topics/retirement), check implementation details in the [blog library](/blog), and compare support options on the [blog resources](/blog/).

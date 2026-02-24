@@ -430,7 +430,7 @@ Bring these to your next meeting to get a concrete plan instead of generic advic
 9. Are there state-specific elections or taxes that materially change my plan?
 10. What monthly reports should I send you so we can adjust before quarter-end?
 
-If you want implementation support beyond content, review available [programs](/programs) and use the strategy articles as prep before your advisor call.
+If you want implementation support beyond content, review available [blog resources](/blog/) and use the strategy articles as prep before your advisor call.
 
 ## Final Takeaway
 

@@ -27,7 +27,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/retirement-withdrawal-strategy-for-small-business-owners.jpg
 imageAlt: >-
   Retirement Withdrawal Strategy For Small Business Owners: Complete 2026 Guide
   guide
@@ -164,7 +164,7 @@ Avoid this strategy when liquidity is unstable, risk controls are undefined, or 
 
 ## Continue Reading
 - [Related guide](/blog)
-- [Related guide](/programs)
+- [Related guide](/blog/)
 - [Related guide](/topics/investing)
 
 Additional dry-run paragraph 1 for word-count validation.

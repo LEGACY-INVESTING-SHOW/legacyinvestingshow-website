@@ -653,7 +653,7 @@ The BRRRR strategy is one of the most powerful wealth-building tools in real est
 
 The key is finding the right deals and executing the renovation and refinance correctly. Start networking with wholesalers, learn your market's ARV and rent numbers, and build relationships with hard money lenders.
 
-[Learn more about building wealth through real estate investing →](/programs)
+[Learn more about building wealth through real estate investing →](/blog/)
 
 ---
 
@@ -668,7 +668,7 @@ The key is finding the right deals and executing the renovation and refinance co
 
 Preston Seo built a portfolio of 50+ rental units using strategies like BRRRR, along with flips, wholesales, and an assisted living facility. Legacy Investing Show teaches these exact systems so you can achieve financial freedom through real estate.
 
-[Learn more about the program →](/programs) | [Watch free training →](/free-training)
+[blog resources](/blog/) | [Watch free training →](/free-training)
 
 ---
 

@@ -333,6 +333,6 @@ In these cases, a cash-flow reset, expense reduction sprint, or guided plan may 
 
 ## Build the System After the Decision
 
-After you choose a winner in your personal loan vs credit card calculator, execution matters more than optimization. Pair your choice with a written payoff method, weekly scorecards, and zero-based cash-flow tracking. Use the [Legacy Investing Show blog](/blog) for tactical guides and review [programs](/programs) if you want accountability and implementation support.
+After you choose a winner in your personal loan vs credit card calculator, execution matters more than optimization. Pair your choice with a written payoff method, weekly scorecards, and zero-based cash-flow tracking. Use the [Legacy Investing Show blog](/blog) for tactical guides and review [blog resources](/blog/) if you want accountability and implementation support.
 
 A calculator chooses the lane. Your monthly behavior determines the outcome.

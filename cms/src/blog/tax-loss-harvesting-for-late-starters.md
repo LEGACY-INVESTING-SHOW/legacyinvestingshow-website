@@ -34,7 +34,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-loss-harvesting-for-late-starters.jpg
 imageAlt: >-
   Tax Loss Harvesting for Late Starters: Complete 2026 Guide for Smarter
   After-Tax Investing guide

@@ -375,7 +375,7 @@ Cons:
 29. Share final package with CPA.
 30. Confirm no filing or form entry gaps before filing season.
 
-If you need implementation support, check the [programs](/programs) page for deeper workflow coverage.
+If you need implementation support, check the [blog resources](/blog/) page for deeper workflow coverage.
 
 ## Common mistakes to avoid
 
@@ -432,6 +432,6 @@ No. It is a decision framework. Use it with an advisor for filing accuracy and p
 ## Related Resources
 - [Tax Strategies Hub](/topics/tax-strategies)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: best tax strategy for retirement](/blog/best-tax-strategy-for-retirement)
 - [Related Guide: best tax strategy for ira withdrawals](/blog/best-tax-strategy-for-ira-withdrawals)

@@ -376,6 +376,6 @@ Finally, revisit the comparison every year and treat this as a strategy, not a s
 ## Related Resources
 - [Business Structures Hub](/topics/business-structures)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: llc vs s corp taxes](/blog/llc-vs-s-corp-taxes)
 - [Related Guide: how to make s corp election for llc](/blog/how-to-make-s-corp-election-for-llc)

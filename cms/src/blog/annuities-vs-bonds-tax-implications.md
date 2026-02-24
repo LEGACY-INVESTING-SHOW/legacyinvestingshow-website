@@ -32,7 +32,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/annuities-vs-bonds-tax-implications.jpg
 imageAlt: >-
   Annuities vs Bonds Tax Implications: Which Strategy Works Better in 2026?
   guide

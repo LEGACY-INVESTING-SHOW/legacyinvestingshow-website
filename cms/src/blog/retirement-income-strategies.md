@@ -28,7 +28,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/retirement-income-strategies.jpg
 imageAlt: 'Retirement Income Strategies: How to Create Steady Cash Flow guide'
 imageWidth: 1200
 imageHeight: 630
@@ -404,7 +404,7 @@ If you review retirement income strategy with a CPA/attorney/advisor, bring:
 
 ## Internal Links To Continue
 - [Browse related guides](/blog/category/retirement)
-- [Programs and implementation support](/programs)
+- [blog resources](/blog/)
 - [Latest blog posts](/blog)
 
 ## Final Word

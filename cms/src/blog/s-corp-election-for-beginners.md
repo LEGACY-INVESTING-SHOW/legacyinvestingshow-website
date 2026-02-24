@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/s-corp-election-for-beginners.jpg
 imageAlt: >-
   S Corp Election for Beginners: Complete 2026 Guide to Taxes, Salary, and
   Compliance guide
@@ -376,4 +376,4 @@ Fix: review salary and tax estimates at least twice per year.
 
 For many owner-operators, an S election is a math-and-discipline decision, not a branding decision. If your profits are stable, your salary can be supported, and your systems are strong, the election can produce real annual tax efficiency. If not, it can become an administrative drag.
 
-Use this framework, run the numbers with your CPA, and make a one-year decision you can actually operate. For deeper implementation ideas and related strategy guides, review the [blog](/blog) and evaluate whether hands-on help from [programs](/programs) fits your stage.
+Use this framework, run the numbers with your CPA, and make a one-year decision you can actually operate. For deeper implementation ideas and related strategy guides, review the [blog](/blog) and evaluate whether hands-on help from [blog resources](/blog/) fits your stage.

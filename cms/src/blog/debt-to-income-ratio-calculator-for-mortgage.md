@@ -35,7 +35,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/debt-to-income-ratio-calculator-for-mortgage.jpg
 imageAlt: >-
   Debt to Income Ratio Calculator for Mortgage: Practical Guide + Real Approval
   Examples guide
@@ -357,7 +357,7 @@ Tools from Bankrate, NerdWallet, and MoneyGeek are excellent for planning, but l
 Practical recommendation:
 - If you are close to qualifying, DTI-first optimization is often the highest return action.
 - If your ratio is deeply outside target, a longer rebuild with debt restructuring may be safer.
-- For supporting tools, review additional resources in the [blog](/blog) and compare execution support options in [programs](/programs).
+- For supporting tools, review additional resources in the [blog](/blog) and compare execution support options in [blog resources](/blog/).
 
 ## When Not to Use This Strategy
 

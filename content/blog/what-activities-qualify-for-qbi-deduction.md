@@ -367,7 +367,7 @@ Cons:
 - Hard to optimize correctly without advisor modeling
 - Some owners in high-income SSTB situations may see limited benefit
 
-If you are evaluating implementation support, the educational [programs](/programs) page can help you structure execution and accountability.
+If you are evaluating implementation support, the educational [blog resources](/blog/) page can help you structure execution and accountability.
 
 ## When Not to Use This Strategy
 

@@ -386,4 +386,4 @@ Use their answers to turn this from a content idea into an operating plan.
 
 Rental property can be a high-quality wealth-building tool for owners who buy disciplined deals and manage risk like operators. The best approach is not chasing the biggest projected return; it is buying properties that remain acceptable under conservative assumptions.
 
-If you want to go deeper, map this guide against your own numbers, then review implementation resources in [programs](/programs). The goal is simple: one durable, well-underwritten property is better than three fragile ones.
+If you want to go deeper, map this guide against your own numbers, then review implementation resources in [blog resources](/blog/). The goal is simple: one durable, well-underwritten property is better than three fragile ones.

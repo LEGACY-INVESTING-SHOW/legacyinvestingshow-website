@@ -405,6 +405,6 @@ Use a simple scoring model before you switch. Score each item from 1 to 5:
 
 If your total score is 18 or more, a structured agent transition is usually worth doing now. If your score is lower, improve your current workflow first and reassess in 90 days.
 
-For additional implementation playbooks, browse the [full blog library](/blog) or review advanced entity strategy options through [programs](/programs).
+For additional implementation playbooks, browse the [full blog library](/blog) or review advanced entity strategy options through [blog resources](/blog/).
 
 Educational note: state requirements differ, and outcomes depend on your facts. Use this guide to prepare decisions and discuss execution details with qualified legal and tax professionals.

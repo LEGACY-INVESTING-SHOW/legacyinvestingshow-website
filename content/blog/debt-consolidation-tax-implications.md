@@ -374,4 +374,4 @@ Use this quick rule set:
 - If insolvency may apply, document it before cancellation events occur.
 - If cash flow cannot support a realistic plan, evaluate legal options early.
 
-For additional education, browse the [blog](/blog) and review available [programs](/programs) after you have your numbers organized. Debt plans fail when decisions are made from payment anxiety instead of full-cost math.
+For additional education, browse the [blog](/blog) and review available [blog resources](/blog/) after you have your numbers organized. Debt plans fail when decisions are made from payment anxiety instead of full-cost math.

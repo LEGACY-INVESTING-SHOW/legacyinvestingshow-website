@@ -396,7 +396,7 @@ Cons:
 - Requires data hygiene and regular review.
 - Can become complex without clear SOPs.
 
-If you are scaling, pair this with your broader [Airbnb arbitrage strategy hub](/topics/airbnb-arbitrage), monitor new playbooks on the [blog](/blog), and use the operational support options in [programs](/programs).
+If you are scaling, pair this with your broader [Airbnb arbitrage strategy hub](/topics/airbnb-arbitrage), monitor new playbooks on the [blog](/blog), and use the operational support options in [blog resources](/blog/).
 
 ## Common mistakes that destroy cash flow
 

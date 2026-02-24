@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/s-corp-election-calculator.jpg
 imageAlt: >-
   S Corp Election Calculator: Practical Guide + Real-World Examples for LLC
   Owners guide
@@ -384,4 +384,4 @@ Use these in your next meeting:
 
 Use this rule: elect only if your conservative model stays clearly positive after salary, QBI, state impact, and full admin costs. If the margin is thin, optimize bookkeeping, pricing, and cash-flow discipline first, then re-test in 6-12 months.
 
-For deeper entity planning, review the [Business Structures hub](/topics/business-structures), compare related guides like [anonymous LLC](/blog/anonymous-llc) and [business credit building](/blog/business-credit-building), and use the full content library at [/blog](/blog). If you want implementation support, review [/programs](/programs).
+For deeper entity planning, review the [Business Structures hub](/topics/business-structures), compare related guides like [anonymous LLC](/blog/anonymous-llc) and [business credit building](/blog/business-credit-building), and use the full content library at [/blog](/blog). If you want implementation support, review [blog resources](/blog/).

@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-tax-planning-software-for-accountants.jpg
 imageAlt: 'Best Tax Planning Software for Accountants: Complete 2026 Decision Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -422,7 +422,7 @@ Optional:
 - Advanced customization that only one staff member understands.
 - Niche features with no measurable impact on your current client mix.
 
-If you are also refining your overall offer structure, review how educational positioning and client journey design connect to monetization in your [programs overview](/programs).
+If you are also refining your overall offer structure, review how educational positioning and client journey design connect to monetization in your [blog resources](/blog/).
 
 ## Final Recommendation
 

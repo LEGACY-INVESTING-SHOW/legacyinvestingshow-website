@@ -35,7 +35,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-are-series-llc-taxed.jpg
 imageAlt: >-
   How Are Series LLC Taxed: Complete 2026 Guide for Investors and Business
   Owners guide
@@ -323,7 +323,7 @@ A written implementation memo is worth it. It keeps legal counsel, tax preparer,
 - [ ] Validate that legal docs, books, and tax assumptions tell the same story
 - [ ] Meet CPA/advisor for final adjustments and filing calendar lock
 
-If you want implementation examples from other operators, review the broader [blog library](/blog) and practical execution resources in [programs](/programs).
+If you want implementation examples from other operators, review the broader [blog library](/blog) and practical execution resources in [blog resources](/blog/).
 
 ## Common Mistakes to Avoid
 

@@ -347,4 +347,4 @@ Use this 90-day goal: build a repeatable withdrawal system, not a one-time sprea
 - Run your first year with a documented AGI target.
 - Schedule quarterly updates.
 
-For broader context, review the [4% rule article](/blog/4-percent-rule), browse recent planning content on the [blog](/blog), and evaluate coaching support at [programs](/programs).
+For broader context, review the [4% rule article](/blog/4-percent-rule), browse recent planning content on the [blog](/blog), and evaluate coaching support at [blog resources](/blog/).

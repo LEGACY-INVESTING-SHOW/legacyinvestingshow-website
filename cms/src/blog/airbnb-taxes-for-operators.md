@@ -35,7 +35,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-taxes-for-operators.jpg
 imageAlt: >-
   Airbnb Taxes for Operators: Complete 2026 Guide to Deductions, Entities, and
   Cash-Flow Planning guide
@@ -387,7 +387,7 @@ Below is a practical comparison of common approaches.
 
 For many readers, the right move is not a dramatic entity switch. It is improving records, classification clarity, and quarterly tax planning first. Then reassess structure when net profit is consistent for at least two to three quarters.
 
-If you want deeper context on adjacent tax angles, review [airbnb taxes for hosts](/blog/airbnb-taxes-for-hosts), [airbnb taxes for full-time employees](/blog/airbnb-taxes-for-full-time-employees), and broader operating resources in [programs](/programs).
+If you want deeper context on adjacent tax angles, review [airbnb taxes for hosts](/blog/airbnb-taxes-for-hosts), [airbnb taxes for full-time employees](/blog/airbnb-taxes-for-full-time-employees), and broader operating resources in [blog resources](/blog/).
 
 ## When Not to Use This Strategy
 

@@ -37,7 +37,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/estate-tax-planning-vs-retirement-contributions.jpg
 imageAlt: >-
   Estate Tax Planning vs Retirement Contributions: Which Strategy Works Better
   in 2026? guide
@@ -290,7 +290,7 @@ Model 10-year distribution impacts and marginal tax effects for beneficiaries.
 8. Set review cadence and owners.
 Assign who updates assumptions yearly: you, CPA, estate attorney, and advisor.
 
-For households wanting more tactical execution support, compare this with program frameworks at [programs](/programs).
+For households wanting more tactical execution support, compare this with program frameworks at [blog resources](/blog/).
 
 ## 30-day checklist
 

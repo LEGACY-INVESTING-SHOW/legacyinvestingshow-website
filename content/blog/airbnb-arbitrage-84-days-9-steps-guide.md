@@ -989,7 +989,7 @@ Expect "no" frequently—it's a numbers game. Contact 10-20 landlords to get 1-2
 
 The only thing separating you from your first profitable property is action.
 
-[Learn more about Legacy Investing Show](/programs)
+[Learn more about Legacy Investing Show](/blog/)
 
 ### Related Resources
 
@@ -1010,7 +1010,7 @@ The only thing separating you from your first profitable property is action.
 
 Preston created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[Learn more about the program](/programs) | [Watch free training](/free-training)
+[blog resources](/blog/) | [Watch free training](/free-training)
 
 ---
 

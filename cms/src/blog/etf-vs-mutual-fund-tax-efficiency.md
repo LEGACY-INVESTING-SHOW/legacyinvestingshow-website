@@ -32,7 +32,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/etf-vs-mutual-fund-tax-efficiency.jpg
 imageAlt: 'etf vs mutual fund tax efficiency: Which Strategy Works Better in 2026? guide'
 imageWidth: 1200
 imageHeight: 630

@@ -420,4 +420,4 @@ If you are starting from scratch, do this in order:
 - Set contribution targets tied to cash-flow guardrails.
 - Review progress quarterly.
 
-Then keep learning from relevant resources in the [blog library](/blog) or get implementation help through [programs](/programs). The objective is not perfection. It is consistent, compounding tax decisions that improve net worth over time.
+Then keep learning from relevant resources in the [blog library](/blog) or get implementation help through [blog resources](/blog/). The objective is not perfection. It is consistent, compounding tax decisions that improve net worth over time.

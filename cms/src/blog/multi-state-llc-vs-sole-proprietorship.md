@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/multi-state-llc-vs-sole-proprietorship.jpg
 imageAlt: >-
   multi state llc vs sole proprietorship: Which Strategy Works Better in 2026?
   guide
@@ -433,4 +433,4 @@ Bring these to your next planning call:
 
 ## Bottom Line for 2026
 
-For most small owners, this is the practical summary: sole proprietorship usually wins on simplicity early, while multi-state LLC often wins when risk, contract size, and multi-state operations become material. Run the numbers with explicit assumptions, not slogans. If you want implementation support after deciding, review available [programs](/programs).
+For most small owners, this is the practical summary: sole proprietorship usually wins on simplicity early, while multi-state LLC often wins when risk, contract size, and multi-state operations become material. Run the numbers with explicit assumptions, not slogans. If you want implementation support after deciding, review available [blog resources](/blog/).

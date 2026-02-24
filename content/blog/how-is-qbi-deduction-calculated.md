@@ -360,6 +360,6 @@ In these cases, start with bookkeeping quality, entity hygiene, and cash-flow co
 Bring a one-page scenario sheet to this meeting. Decision quality improves when you compare at least three modeled outcomes instead of discussing one estimate.
 
 ## Practical Next Moves
-If this topic is part of a bigger tax optimization plan, pair this with [Best Tax Deductions for Individuals](/blog/best-tax-deductions-for-individuals), [Best Roth Conversion Strategy Calculator](/blog/best-roth-conversion-strategy-calculator), and our [Programs](/programs) page for implementation support.
+If this topic is part of a bigger tax optimization plan, pair this with [Best Tax Deductions for Individuals](/blog/best-tax-deductions-for-individuals), [Best Roth Conversion Strategy Calculator](/blog/best-roth-conversion-strategy-calculator), and our [blog resources](/blog/) page for implementation support.
 
 Use this guide as an educational planning framework, then validate the numbers with current IRS forms and your tax professional before filing.

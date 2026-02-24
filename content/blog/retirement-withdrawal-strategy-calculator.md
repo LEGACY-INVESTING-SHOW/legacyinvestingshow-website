@@ -365,7 +365,7 @@ In those cases, pair this with guaranteed income blocks and conservative liquidi
 6. How should we handle taxable gains when rates change?
 7. What contingency funds should be locked and non-negotiable?
 
-If you want deeper tax specifics, also read the [catch-up contributions](/blog/catch-up-contributions), [457b plan guide](/blog/457b-plan-guide), and [early retirement withdrawal](/blog/early-retirement-withdrawal) topics. For a structured path forward, compare this with existing [Legacy Investing Show programs](/programs).
+If you want deeper tax specifics, also read the [catch-up contributions](/blog/catch-up-contributions), [457b plan guide](/blog/457b-plan-guide), and [early retirement withdrawal](/blog/early-retirement-withdrawal) topics. For a structured path forward, compare this with existing [blog resources](/blog/).
 
 Research context is useful but imperfect. External tools such as ZVV, Sage Calculator, Omnicalculator, and TimeandMoneyTree are helpful for benchmarking logic, stress cases, and comparison workflows. Treat them as inputs to your planning process, not final authority.
 
@@ -374,6 +374,6 @@ At the end of the process, your output should be a documented withdrawal policy 
 ## Related Resources
 - [Retirement Hub](/topics/retirement)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: strategy for retirement withdrawals](/blog/strategy-for-retirement-withdrawals)
 - [Related Guide: retirement withdrawal strategy tax implications](/blog/retirement-withdrawal-strategy-tax-implications)

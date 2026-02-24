@@ -376,6 +376,6 @@ These questions shift the conversation from abstract tax theory to concrete deci
 
 ## Practical Next Moves for 2026
 
-If you want to go deeper, review the broader [blog](/blog) library, then compare adjacent deduction strategies like [best tax deductions for high-income earners](/blog/best-tax-deductions-for-high-income-earners) and foundational planning in [best tax deductions for individuals](/blog/best-tax-deductions-for-individuals). If you want implementation support and accountability, explore structured help through [programs](/programs).
+If you want to go deeper, review the broader [blog](/blog) library, then compare adjacent deduction strategies like [best tax deductions for high-income earners](/blog/best-tax-deductions-for-high-income-earners) and foundational planning in [best tax deductions for individuals](/blog/best-tax-deductions-for-individuals). If you want implementation support and accountability, explore structured help through [blog resources](/blog/).
 
 The bottom line: qbi deduction for dummies does not mean simplistic math. It means disciplined inputs, scenario planning, and clear tradeoff decisions made before year-end.

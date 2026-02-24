@@ -36,7 +36,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-tax-strategy-for-401k-withdrawal.jpg
 imageAlt: >-
   Best Tax Strategy for 401k Withdrawal: Complete 2026 Guide for Lower Lifetime
   Taxes guide
@@ -422,6 +422,6 @@ In these cases, simplify first, then optimize.
 
 ## Next move: build your written policy and execute
 
-If you want a stronger foundation before modeling your exact numbers, start with the [tax strategies hub](/topics/tax-strategies), then review [tax deduction vs retirement contributions](/blog/tax-deduction-vs-retirement-contributions) and [tax strategy vs standard deduction](/blog/tax-strategy-vs-standard-deduction). For additional case-based education, browse the [Legacy blog library](/blog), and if you want implementation support, review [programs](/programs).
+If you want a stronger foundation before modeling your exact numbers, start with the [tax strategies hub](/topics/tax-strategies), then review [tax deduction vs retirement contributions](/blog/tax-deduction-vs-retirement-contributions) and [tax strategy vs standard deduction](/blog/tax-strategy-vs-standard-deduction). For additional case-based education, browse the [Legacy blog library](/blog), and if you want implementation support, review [blog resources](/blog/).
 
 A one-page written withdrawal policy you revisit twice per year is usually the difference between a theoretical strategy and real after-tax results.

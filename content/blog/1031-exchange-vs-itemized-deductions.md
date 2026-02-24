@@ -279,7 +279,7 @@ Week 1
 - [ ] Confirm whether the sold property is investment or business-use property.
 - [ ] Request CPA estimate of gain, recapture exposure, and state tax if no exchange.
 - [ ] Generate preliminary Schedule A estimate from current-year expenses.
-- [ ] Review your broader plan using [Legacy Investing Show programs](/programs) if you need execution support.
+- [ ] Review your broader plan using [blog resources](/blog/) if you need execution support.
 
 Week 2
 - [ ] Select qualified intermediary and confirm process steps in writing.

@@ -33,7 +33,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/debt-snowball-tax-implications.jpg
 imageAlt: 'Debt Snowball Tax Implications: Complete 2026 Guide for U.S. Households guide'
 imageWidth: 1200
 imageHeight: 630
@@ -366,4 +366,4 @@ Use a one-page memo for each settlement candidate:
 - Credit impact and cash timing.
 - Recommended action and backup action.
 
-Then execute one debt at a time. If you want more tactical walkthroughs, use the [blog](/blog) library or review coaching options in [programs](/programs). The best plan is the one that protects cash flow, avoids preventable tax shocks, and stays realistic for your household.
+Then execute one debt at a time. If you want more tactical walkthroughs, use the [blog](/blog) library or review coaching options in [blog resources](/blog/). The best plan is the one that protects cash flow, avoids preventable tax shocks, and stays realistic for your household.

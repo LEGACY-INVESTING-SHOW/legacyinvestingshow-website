@@ -148,7 +148,7 @@ wordCount: '2172'
 ---
 Tax planning for high earners is not about finding one magical deduction. It is about controlling when income is recognized, how that income is characterized, and which legal structures report it. If your household is in upper tax brackets, every unplanned dollar can trigger a larger federal bill, higher state taxes, and avoidable surtaxes. The goal is not to avoid taxes at all costs. The goal is to keep more after-tax capital working for your long-term plan.
 
-This guide is for US readers making real decisions around compensation, investments, retirement, debt payoff, and business entities in 2026. Use it as an educational framework and pressure-test it with your own CPA and advisor before acting. For related reading, see [Tax Strategies Hub](/topics/tax-strategies), [Best Tax Deductions for High-Income Earners](/blog/best-tax-deductions-for-high-income-earners), and [Legacy Investing Show Programs](/programs).
+This guide is for US readers making real decisions around compensation, investments, retirement, debt payoff, and business entities in 2026. Use it as an educational framework and pressure-test it with your own CPA and advisor before acting. For related reading, see [Tax Strategies Hub](/topics/tax-strategies), [Best Tax Deductions for High-Income Earners](/blog/best-tax-deductions-for-high-income-earners), and [blog resources](/blog/).
 
 ## Tax planning for high earners: Start with bracket control, then optimize deductions
 

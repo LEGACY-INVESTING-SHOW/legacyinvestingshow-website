@@ -306,7 +306,7 @@ Treat property one as a systems test, not a trophy purchase.
 10. Review quarterly and rebalance annually.
 If operations are working, expand. If execution quality is weak, pause growth and improve systems first.
 
-If you want related tactical playbooks, review the [BRRRR method guide](/blog/brrrr-method), browse additional examples in the [blog](/blog), and evaluate whether structured coaching in [programs](/programs) fits your timeline.
+If you want related tactical playbooks, review the [BRRRR method guide](/blog/brrrr-method), browse additional examples in the [blog](/blog), and evaluate whether structured coaching in [blog resources](/blog/) fits your timeline.
 
 ## 30-Day Checklist
 

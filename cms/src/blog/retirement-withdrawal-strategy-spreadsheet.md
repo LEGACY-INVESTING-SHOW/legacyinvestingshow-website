@@ -36,7 +36,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/retirement-withdrawal-strategy-spreadsheet.jpg
 imageAlt: >-
   Retirement Withdrawal Strategy Spreadsheet: Complete 2026 Guide to Sustainable
   Income guide
@@ -338,7 +338,7 @@ Day 22 to 30:
 - [ ] Adjust bracket targets and conversion assumptions.
 - [ ] Set monthly transfer amount and annual review calendar date.
 - [ ] Save version 1.0 and lock formulas to reduce accidental edits.
-- [ ] Recheck assumptions against your retirement learning plan at [blog](/blog) and [programs](/programs).
+- [ ] Recheck assumptions against your retirement learning plan at [blog](/blog) and [blog resources](/blog/).
 
 ## Common Mistakes That Break Retirement Withdrawal Plans
 

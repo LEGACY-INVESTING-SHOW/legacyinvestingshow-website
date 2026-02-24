@@ -384,6 +384,6 @@ Take this list into your next meeting:
 - Month 4-6: Evaluate whether to optimize rent strategy, refinance timing, or hold path.
 - Month 7-12: Re-run return model with updated assumptions and exit-year projections.
 
-If you want deeper practical examples, browse the full [blog](/blog) and strategy explainers. If you want structured implementation support, review available [programs](/programs).
+If you want deeper practical examples, browse the full [blog](/blog) and strategy explainers. If you want structured implementation support, review available [blog resources](/blog/).
 
 House hacking can be a strong wealth-building bridge, but only when house hacking tax implications are planned early, documented monthly, and reviewed with professional advice before major decisions.

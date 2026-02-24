@@ -33,7 +33,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/multi-state-llc-template.jpg
 imageAlt: 'Multi State LLC Template: Practical Guide + Examples for US Owners guide'
 imageWidth: 1200
 imageHeight: 630
@@ -425,6 +425,6 @@ For related implementation support, review:
 - [Best registered agent service for LLC](/blog/best-registered-agent-service-for-llc)
 - [Anonymous LLC guide](/blog/anonymous-llc)
 - [Business credit building](/blog/business-credit-building)
-- [Programs](/programs)
+- [blog resources](/blog/)
 
 A multi state llc template works best when it reflects real operations, measured risk, and disciplined maintenance. The document is not the strategy. It is the operating system for the strategy you choose.

@@ -334,7 +334,7 @@ Tax-loss harvesting should sit inside a full investing system that covers alloca
 - [Legacy Investing Show Blog](/blog)
 - [Alternative Investments Guide](/blog/alternative-investments-guide)
 - [Dividend Growth Investing](/blog/dividend-growth-investing)
-- [Programs](/programs)
+- [blog resources](/blog/)
 
 If you are consistent, the payoff is usually not one perfect trade. It is a cleaner after-tax process repeated year after year.
 

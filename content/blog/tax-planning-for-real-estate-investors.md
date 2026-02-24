@@ -341,7 +341,7 @@ Use this as an execution sprint.
 - Validate that state filings, local licensing, and entity renewals are current.
 - Confirm your personal cash reserve can cover taxes even if income lags.
 
-If you need more examples to adapt, browse the [Legacy blog](/blog) and related implementation resources in [Programs](/programs).
+If you need more examples to adapt, browse the [Legacy blog](/blog) and related implementation resources in [blog resources](/blog/).
 
 ## Common Mistakes That Cost Investors Thousands
 

@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-much-is-reasonable-salary-for-s-corp.jpg
 imageAlt: 'How much is reasonable salary for s corp: Complete 2026 Decision Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -369,6 +369,6 @@ Use this sequence now:
 2. Pick a risk-adjusted salary target with your CPA.
 3. Implement payroll and review quarterly.
 
-For broader planning around entity and credit strategy, read [Business Credit Building](/blog/business-credit-building), [Anonymous LLC](/blog/anonymous-llc), and [Business Succession Planning](/blog/business-succession-planning). You can also explore current articles on the [Legacy Investing Show Blog](/blog) and training options on [Programs](/programs).
+For broader planning around entity and credit strategy, read [Business Credit Building](/blog/business-credit-building), [Anonymous LLC](/blog/anonymous-llc), and [Business Succession Planning](/blog/business-succession-planning). You can also explore current articles on the [Legacy Investing Show Blog](/blog) and training options on [blog resources](/blog/).
 
 This article is educational and intended to support better questions and better documentation, not to replace individualized tax or legal advice.

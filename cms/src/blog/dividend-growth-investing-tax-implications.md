@@ -36,7 +36,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/dividend-growth-investing-tax-implications.jpg
 imageAlt: >-
   Dividend Growth Investing Tax Implications: Complete 2026 Guide for U.S.
   Investors guide

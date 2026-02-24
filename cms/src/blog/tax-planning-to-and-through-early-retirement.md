@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-planning-to-and-through-early-retirement.jpg
 imageAlt: 'Tax Planning to and Through Early Retirement: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -386,7 +386,7 @@ In those cases, start with a simpler withdrawal plan and add complexity only whe
 - Which assumptions in my projection need quarterly validation?
 - What policy changes should we monitor in 2026 and 2027?
 
-For additional execution resources, review [programs](/programs), [best tax deductions for high-income earners](/blog/best-tax-deductions-for-high-income-earners), and [best tax deductions for self-employed](/blog/best-tax-deductions-for-self-employed).
+For additional execution resources, review [blog resources](/blog/), [best tax deductions for high-income earners](/blog/best-tax-deductions-for-high-income-earners), and [best tax deductions for self-employed](/blog/best-tax-deductions-for-self-employed).
 
 ## Final Takeaway
 

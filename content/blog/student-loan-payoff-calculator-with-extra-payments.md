@@ -391,6 +391,6 @@ Use these in your next planning call:
 
 Use one calculator to set your baseline, then a second calculator to cross-check your results. Build only one plan you can execute automatically for at least 90 days. The strategy that wins on paper but fails in month two is not your best strategy.
 
-If you want a broader system instead of one-off calculations, review the full [blog](/blog) library and compare your plan against the debt sequencing frameworks in this guide. If you want implementation support, see [programs](/programs).
+If you want a broader system instead of one-off calculations, review the full [blog](/blog) library and compare your plan against the debt sequencing frameworks in this guide. If you want implementation support, see [blog resources](/blog/).
 
 Educational note: this article is general education, not individualized tax, legal, or investment advice. Use your own numbers and review major decisions with qualified professionals.

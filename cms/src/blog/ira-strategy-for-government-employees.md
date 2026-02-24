@@ -33,7 +33,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/ira-strategy-for-government-employees.jpg
 imageAlt: 'IRA Strategy for Government Employees: Complete 2026 Decision Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -447,4 +447,4 @@ IRS Retirement Plans guidance remains the primary source for official limits and
 
 A durable ira strategy for government employees is not just Roth vs Traditional. It is a coordinated system: match capture, pension-aware tax planning, eligibility checks, documented execution, and yearly updates. Build the system once, review it annually, and adapt as income and retirement timing change.
 
-If you want help integrating this with your broader plan, review more case studies on the [blog](/blog) or compare implementation support options on [programs](/programs).
+If you want help integrating this with your broader plan, review more case studies on the [blog](/blog) or compare implementation support options on [blog resources](/blog/).

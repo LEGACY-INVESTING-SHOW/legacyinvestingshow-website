@@ -414,4 +414,4 @@ Before you commit capital, run this five-part filter:
 4. Balance sheet safety: Do you still have liquidity after down payment, repairs, and reserve funding?
 5. Exit readiness: Would your documentation support a clean sale and defensible recapture analysis later?
 
-If you can answer yes to all five, laundromat investing can be a durable cash-flow business with thoughtful tax efficiency. If not, improve the operating design first, then revisit the acquisition decision or compare alternatives through [the Legacy Investing Show programs](/programs) and strategy library in [the blog](/blog).
+If you can answer yes to all five, laundromat investing can be a durable cash-flow business with thoughtful tax efficiency. If not, improve the operating design first, then revisit the acquisition decision or compare alternatives through [blog resources](/blog/) and strategy library in [the blog](/blog).

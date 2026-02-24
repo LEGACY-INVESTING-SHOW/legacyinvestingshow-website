@@ -32,7 +32,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-qbi-deduction-works.jpg
 imageAlt: 'How QBI Deduction Works: Complete 2026 Guide for Pass-Through Owners guide'
 imageWidth: 1200
 imageHeight: 630
@@ -398,4 +398,4 @@ Use this quick decision sequence:
 
 Then choose one implementation owner, one deadline, and one version-controlled calculation file. That alone prevents most missed savings.
 
-If you want implementation support after strategy design, review [Legacy Investing Show programs](/programs). This article is educational and should be paired with personalized tax advice before filing or restructuring decisions.
+If you want implementation support after strategy design, review [blog resources](/blog/). This article is educational and should be paired with personalized tax advice before filing or restructuring decisions.

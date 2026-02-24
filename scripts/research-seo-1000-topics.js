@@ -248,7 +248,7 @@ function pickPriority(score) {
 
 function buildInternalLinks(categoryKey) {
   const hub = HUBS[categoryKey] || '/blog';
-  return [hub, '/blog', '/programs'];
+  return [hub, '/blog', '/blog/'];
 }
 
 function hasBannedPattern(keyword) {

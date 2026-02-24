@@ -32,7 +32,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/roth-ira-vs-taxable-brokerage.jpg
 imageAlt: 'Roth IRA vs Taxable Brokerage: Which Strategy Works Better in 2026? guide'
 imageWidth: 1200
 imageHeight: 630
@@ -443,4 +443,4 @@ Bring this list to your next meeting:
 
 ## Bottom Line for 2026
 
-For most households, the strongest answer to roth ira vs taxable brokerage is a rules-based sequence: secure match, fund Roth space when it fits, and use taxable brokerage for additional savings and flexibility. Use real tax math, not labels. Revisit annually as income, tax law, and goals change. If you want deeper implementation support, review the [programs page](/programs) and keep learning through the [blog library](/blog).
+For most households, the strongest answer to roth ira vs taxable brokerage is a rules-based sequence: secure match, fund Roth space when it fits, and use taxable brokerage for additional savings and flexibility. Use real tax math, not labels. Revisit annually as income, tax law, and goals change. If you want deeper implementation support, review the [blog resources](/blog/) and keep learning through the [blog library](/blog).

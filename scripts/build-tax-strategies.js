@@ -512,7 +512,7 @@ function generateIndexPage(strategies, personas) {
                 <div class="hidden md:flex items-center gap-6">
                     <a href="/" class="nav-link">Home</a>
                     <a href="/about" class="nav-link">About</a>
-                    <a href="/programs" class="nav-link">Programs</a>
+                    <a href="/blog/" class="nav-link">Resources</a>
                     <a href="/success-stories" class="nav-link">Results</a>
                     <a href="/blog/" class="nav-link">Blog</a>
                 </div>
@@ -526,7 +526,7 @@ function generateIndexPage(strategies, personas) {
                 <div class="flex flex-col gap-3">
                     <a href="/" class="nav-link">Home</a>
                     <a href="/about" class="nav-link">About</a>
-                    <a href="/programs" class="nav-link">Programs</a>
+                    <a href="/blog/" class="nav-link">Resources</a>
                     <a href="/success-stories" class="nav-link">Results</a>
                     <a href="/blog/" class="nav-link">Blog</a>
                 </div>
@@ -657,7 +657,7 @@ function generateIndexPage(strategies, personas) {
                     <span>Legacy Investing Show</span>
                 </div>
                 <div class="footer-links">
-                    <a href="/programs">Programs</a>
+                    <a href="/blog/">Resources</a>
                     <a href="/success-stories">Results</a>
                     <a href="/blog/">Blog</a>
                     <a href="/tax-strategies/">Tax Strategies</a>
@@ -1052,7 +1052,7 @@ function generatePersonaPage(persona, strategies) {
                 <div class="hidden md:flex items-center gap-6">
                     <a href="/" class="nav-link">Home</a>
                     <a href="/about" class="nav-link">About</a>
-                    <a href="/programs" class="nav-link">Programs</a>
+                    <a href="/blog/" class="nav-link">Resources</a>
                     <a href="/success-stories" class="nav-link">Results</a>
                     <a href="/blog/" class="nav-link">Blog</a>
                 </div>
@@ -1066,7 +1066,7 @@ function generatePersonaPage(persona, strategies) {
                 <div class="flex flex-col gap-3">
                     <a href="/" class="nav-link">Home</a>
                     <a href="/about" class="nav-link">About</a>
-                    <a href="/programs" class="nav-link">Programs</a>
+                    <a href="/blog/" class="nav-link">Resources</a>
                     <a href="/success-stories" class="nav-link">Results</a>
                     <a href="/blog/" class="nav-link">Blog</a>
                 </div>
@@ -1135,7 +1135,7 @@ function generatePersonaPage(persona, strategies) {
                     <span>Legacy Investing Show</span>
                 </div>
                 <div class="footer-links">
-                    <a href="/programs">Programs</a>
+                    <a href="/blog/">Resources</a>
                     <a href="/success-stories">Results</a>
                     <a href="/blog/">Blog</a>
                     <a href="/tax-strategies/">Tax Strategies</a>

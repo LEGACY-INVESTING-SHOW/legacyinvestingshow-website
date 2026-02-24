@@ -33,7 +33,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/ira-strategy-for-pre-retirees.jpg
 imageAlt: 'IRA Strategy for Pre Retirees: Complete 2026 Decision Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -402,4 +402,4 @@ Bring these questions to your next review so the conversation is decision-focuse
 9. Are beneficiary designations and estate mechanics aligned with my goals?
 10. What planning triggers should force an off-cycle review during the year?
 
-A final note: this article is educational, not personalized tax or legal advice. If you want more implementation resources, browse the [blog](/blog) or review available [programs](/programs) for guided support.
+A final note: this article is educational, not personalized tax or legal advice. If you want more implementation resources, browse the [blog](/blog) or review available [blog resources](/blog/) for guided support.

@@ -301,7 +301,7 @@ Do not wait until year-end. Run projection scenarios and decide whether accelera
 10. Prepare exit and refinance notes now.
 Track decisions that can affect recapture, gain characterization, and basis adjustments later.
 
-If you want implementation help beyond content, see [programs](/programs).
+If you want implementation help beyond content, see [blog resources](/blog/).
 
 ## 30-day checklist to set up correctly
 

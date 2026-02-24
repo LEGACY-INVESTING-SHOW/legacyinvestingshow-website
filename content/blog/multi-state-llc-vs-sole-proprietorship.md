@@ -433,4 +433,4 @@ Bring these to your next planning call:
 
 ## Bottom Line for 2026
 
-For most small owners, this is the practical summary: sole proprietorship usually wins on simplicity early, while multi-state LLC often wins when risk, contract size, and multi-state operations become material. Run the numbers with explicit assumptions, not slogans. If you want implementation support after deciding, review available [programs](/programs).
+For most small owners, this is the practical summary: sole proprietorship usually wins on simplicity early, while multi-state LLC often wins when risk, contract size, and multi-state operations become material. Run the numbers with explicit assumptions, not slogans. If you want implementation support after deciding, review available [blog resources](/blog/).

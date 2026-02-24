@@ -36,7 +36,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/401k-strategy-for-self-employed.jpg
 imageAlt: >-
   401k strategy for self employed: Complete 2026 Guide to Tax Savings,
   Contribution Math, and Plan Selection guide
@@ -354,7 +354,7 @@ A practical rule: if funding the plan creates operational stress, reduce the tar
 - [ ] Document contribution assumptions in one planning sheet.
 - [ ] Prepare year-end reconciliation checklist with CPA.
 
-If you want help sequencing this into your broader wealth plan, use the retirement planning resources on our [programs page](/programs).
+If you want help sequencing this into your broader wealth plan, use the retirement planning resources on our [blog resources](/blog/).
 
 ## Common Mistakes That Cost Real Money
 

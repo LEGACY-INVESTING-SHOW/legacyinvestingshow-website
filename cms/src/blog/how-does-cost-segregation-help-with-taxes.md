@@ -33,7 +33,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-does-cost-segregation-help-with-taxes.jpg
 imageAlt: 'How Does Cost Segregation Help With Taxes: Complete 2026 Decision Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -366,7 +366,7 @@ Some states do not fully conform to federal depreciation treatment, changing rea
 If you never model recapture and sale timing, you may overstate long-term net benefit.
 
 7. Missing the broader plan.
-Cost segregation should sit inside a full strategy including retirement, debt, and entity planning. Build that stack through [blog resources](/blog) and implementation support at [/programs](/programs).
+Cost segregation should sit inside a full strategy including retirement, debt, and entity planning. Build that stack through [blog resources](/blog) and implementation support at [blog resources](/blog/).
 
 ## Questions to Ask Your CPA/Advisor
 Bring these to your next meeting and ask for numeric answers:

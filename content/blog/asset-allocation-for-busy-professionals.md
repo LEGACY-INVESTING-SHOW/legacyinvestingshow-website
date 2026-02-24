@@ -342,4 +342,4 @@ Bring these to your next planning meeting:
 Document answers and convert them into policy rules, not one-off opinions.
 
 ## Practical Next Steps
-Start simple and automate: pick a target mix, place assets tax-efficiently, and rebalance by rule. If you want more implementation detail, use [the blog library](/blog), review [alternative investments guide](/blog/alternative-investments-guide), and compare self-directed versus guided support on [programs](/programs). This article is educational and intended to help you ask better questions and make clearer decisions.
+Start simple and automate: pick a target mix, place assets tax-efficiently, and rebalance by rule. If you want more implementation detail, use [the blog library](/blog), review [alternative investments guide](/blog/alternative-investments-guide), and compare self-directed versus guided support on [blog resources](/blog/). This article is educational and intended to help you ask better questions and make clearer decisions.

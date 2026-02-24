@@ -36,7 +36,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-taxes-for-beginners.jpg
 imageAlt: >-
   Airbnb Taxes for Beginners: Complete 2026 Guide to Deductions, Lodging Taxes,
   and Smart Filing guide
@@ -414,7 +414,7 @@ Bring these questions to your next meeting so you get decisions, not generic adv
 11. How should I adjust if I add a second unit mid-year?
 12. What would trigger a mid-year estimate recalculation immediately?
 
-You can also review program-level education paths on [Legacy Investing Show programs](/programs) if you want implementation support beyond tax setup.
+You can also review program-level education paths on [blog resources](/blog/) if you want implementation support beyond tax setup.
 
 ## Final Decision Framework for 2026
 

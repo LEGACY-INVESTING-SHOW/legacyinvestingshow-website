@@ -369,7 +369,7 @@ Use this exact list during your next planning call:
 9. Are my owner and manager addresses exposed in ways I can reduce legally?
 10. Which assumptions in my cost model are weakest and need real data?
 
-If you want a broader strategy path after this administrative setup, review current education options at [/programs](/programs) and keep an eye on new implementation guides in [/blog](/blog).
+If you want a broader strategy path after this administrative setup, review current education options at [blog resources](/blog/) and keep an eye on new implementation guides in [/blog](/blog).
 
 ## Final Takeaway
 

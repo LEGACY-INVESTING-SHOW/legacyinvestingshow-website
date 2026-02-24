@@ -380,7 +380,7 @@ Then apply this rule:
 - If restructuring scores much higher on magnitude and your compliance score is strong, phase restructuring second.
 - If both scores are weak, postpone and focus on bookkeeping quality, debt cleanup, and baseline deduction hygiene.
 
-For ongoing updates and adjacent examples, use the [blog](/blog) and implementation support options in [programs](/programs).
+For ongoing updates and adjacent examples, use the [blog](/blog) and implementation support options in [blog resources](/blog/).
 
 ## Final Takeaway
 

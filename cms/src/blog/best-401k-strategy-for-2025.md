@@ -36,7 +36,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-401k-strategy-for-2025.jpg
 imageAlt: >-
   The best 401k strategy for 2025: Complete 2026 Guide to Contribution, Tax, and
   Allocation Decisions guide
@@ -394,6 +394,6 @@ Use a simple annual review loop:
 2. Re-test Traditional vs Roth assumptions with current tax data.
 3. Keep investing process low-cost, diversified, and automated.
 
-For ongoing planning, use the [retirement hub](/topics/retirement), browse the full [blog](/blog), and evaluate implementation support through [programs](/programs). If your withdrawal planning is the next question, the [4 percent rule guide](/blog/4-percent-rule) is a useful companion.
+For ongoing planning, use the [retirement hub](/topics/retirement), browse the full [blog](/blog), and evaluate implementation support through [blog resources](/blog/). If your withdrawal planning is the next question, the [4 percent rule guide](/blog/4-percent-rule) is a useful companion.
 
 The core principle stays the same: the best 401k strategy for 2025 is the one you can execute consistently, tax-efficiently, and with clear risk controls.

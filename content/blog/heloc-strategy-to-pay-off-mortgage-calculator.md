@@ -434,4 +434,4 @@ Interpretation:
 
 A heloc strategy to pay off mortgage calculator is most valuable when it helps you reject bad plans quickly. If savings depend on perfect rates, perfect behavior, and zero surprises, the strategy is too fragile. If savings remain positive under conservative assumptions and you can execute consistently, HELOC chunking can be a useful debt-management tool.
 
-Keep your baseline plan, stress test everything, and re-qualify each cycle. For more tactical payoff education, browse the [blog](/blog). If you want guided implementation support, review [programs](/programs).
+Keep your baseline plan, stress test everything, and re-qualify each cycle. For more tactical payoff education, browse the [blog](/blog). If you want guided implementation support, review [blog resources](/blog/).

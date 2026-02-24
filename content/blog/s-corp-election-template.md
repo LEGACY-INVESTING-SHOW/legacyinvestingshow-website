@@ -307,7 +307,7 @@ Stress-test salary and tax deposits against revenue variability.
 10. Reassess annually
 Revisit salary reasonableness, net tax benefit, retirement contribution strategy, and entity fit.
 
-If you want tactical implementation help, review the training options on [programs](/programs) and use ongoing education in the [blog](/blog) to keep systems current.
+If you want tactical implementation help, review the training options on [blog resources](/blog/) and use ongoing education in the [blog](/blog) to keep systems current.
 
 ## 30-day checklist for first-time filers
 

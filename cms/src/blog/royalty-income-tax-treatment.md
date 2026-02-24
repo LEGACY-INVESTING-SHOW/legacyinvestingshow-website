@@ -36,7 +36,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/royalty-income-tax-treatment.jpg
 imageAlt: >-
   Royalty Income Tax Treatment: Complete 2026 Guide for U.S. Creators and
   Investors guide
@@ -403,4 +403,4 @@ Use a simple score from 1 to 5 on each factor:
 
 If your total score is under 15, simplify structure and tighten contracts first. If above 20, you likely have enough process maturity to optimize royalty income tax treatment aggressively and safely.
 
-If you want help implementing these steps in an operating business context, review available [programs](/programs).
+If you want help implementing these steps in an operating business context, review available [blog resources](/blog/).

@@ -36,7 +36,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-does-the-debt-snowball-payoff-work.jpg
 imageAlt: >-
   How Does the Debt Snowball Payoff Work? Complete 2026 Guide for U.S.
   Households guide
@@ -403,4 +403,4 @@ By day 90:
 - Updated payoff date estimate.
 - Strategy check: stay snowball, or switch to hybrid if interest tradeoff is now too large.
 
-For more templates and payoff walkthroughs, browse the [blog](/blog) and training options in [programs](/programs).
+For more templates and payoff walkthroughs, browse the [blog](/blog) and training options in [blog resources](/blog/).

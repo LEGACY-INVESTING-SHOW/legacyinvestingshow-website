@@ -36,7 +36,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/sequence-of-returns-risk-vs-taxable-brokerage.jpg
 imageAlt: >-
   Sequence of Returns Risk vs Taxable Brokerage: Which Strategy Works Better in
   2026? guide

@@ -605,7 +605,7 @@ Most landlords aren't looking for experts—they're looking for reliable tenants
 
 James proved that age and experience don't determine success—action does. At 24, with an accounting background and zero real estate knowledge, he built a three-property portfolio in months.
 
-[Learn more about Legacy Investing Show →](/programs)
+[Learn more about Legacy Investing Show →](/blog/)
 
 ### Related Success Stories
 - [How Gary Built a $35K/Month Airbnb Portfolio](/blog/gary-marketing-executive-35k-month)
@@ -630,7 +630,7 @@ James proved that age and experience don't determine success—action does. At 2
 
 Preston Seo has personally built a $15 million real estate portfolio generating over $400,000 per year in net profit from short-term rentals. He created Legacy Investing Show to teach the exact systems that scaled his business.
 
-[Learn more about the program →](/programs) | [Watch free training →](/free-training)
+[blog resources](/blog/) | [Watch free training →](/free-training)
 
 ---
 

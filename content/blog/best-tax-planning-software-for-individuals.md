@@ -274,7 +274,7 @@ Use this as an execution checklist, not a reading list.
 - [ ] Document three planning moves for next tax year.
 - [ ] Schedule a mid-year tax check-in date on your calendar.
 
-If you want additional examples and implementation support, review [all tax and investing articles](/blog) and the training overview at [/programs](/programs).
+If you want additional examples and implementation support, review [all tax and investing articles](/blog) and the training overview at [blog resources](/blog/).
 
 ## How This Compares to Alternatives
 

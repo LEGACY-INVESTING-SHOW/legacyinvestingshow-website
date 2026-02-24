@@ -34,7 +34,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/qbi-deduction-for-dummies.jpg
 imageAlt: >-
   QBI Deduction for Dummies: Complete 2026 Guide for Small-Business Owners and
   Side Hustlers guide
@@ -376,6 +376,6 @@ These questions shift the conversation from abstract tax theory to concrete deci
 
 ## Practical Next Moves for 2026
 
-If you want to go deeper, review the broader [blog](/blog) library, then compare adjacent deduction strategies like [best tax deductions for high-income earners](/blog/best-tax-deductions-for-high-income-earners) and foundational planning in [best tax deductions for individuals](/blog/best-tax-deductions-for-individuals). If you want implementation support and accountability, explore structured help through [programs](/programs).
+If you want to go deeper, review the broader [blog](/blog) library, then compare adjacent deduction strategies like [best tax deductions for high-income earners](/blog/best-tax-deductions-for-high-income-earners) and foundational planning in [best tax deductions for individuals](/blog/best-tax-deductions-for-individuals). If you want implementation support and accountability, explore structured help through [blog resources](/blog/).
 
 The bottom line: qbi deduction for dummies does not mean simplistic math. It means disciplined inputs, scenario planning, and clear tradeoff decisions made before year-end.

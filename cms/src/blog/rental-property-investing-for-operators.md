@@ -36,7 +36,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/rental-property-investing-for-operators.jpg
 imageAlt: >-
   Rental Property Investing for Operators: Complete 2026 Guide to Cash Flow,
   Risk, and Tax-Aware Scaling guide
@@ -408,7 +408,7 @@ Bring specific scenarios, not generic questions. Ask:
 - Under what conditions would a cost segregation study be worth the cost for this property size?
 - If I plan to scale, what entity structure avoids expensive restructuring later?
 
-For implementation support and strategy coaching context, see [programs](/programs).
+For implementation support and strategy coaching context, see [blog resources](/blog/).
 
 ## Final Operator Takeaway
 

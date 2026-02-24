@@ -283,7 +283,7 @@ Use this plan to move from shopping to execution without overcomplicating it.
 9. Create a tax decision dashboard with estimated payments, deduction opportunities, and entity checkpoints.
 10. Reassess after 90 days based on actual income variance and update assumptions.
 
-If you want more comparison content before deciding, review additional case-based articles in the [Legacy Investing Show blog](/blog) and practical implementation options on [programs](/programs).
+If you want more comparison content before deciding, review additional case-based articles in the [Legacy Investing Show blog](/blog) and practical implementation options on [blog resources](/blog/).
 
 ## 30-Day Checklist
 

@@ -34,7 +34,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/debt-to-income-ratio-tax-implications.jpg
 imageAlt: >-
   Debt to Income Ratio Tax Implications: Complete 2026 Guide for US Households
   guide
@@ -441,6 +441,6 @@ Use this quick filter before acting:
 - Stress-test every option against a temporary income drop.
 - Recheck assumptions every 30 days and adjust fast.
 
-If you want implementation support, evaluate whether coaching or structured execution support on [programs](/programs) fits your situation. Education helps, but consistent execution is what usually changes outcomes.
+If you want implementation support, evaluate whether coaching or structured execution support on [blog resources](/blog/) fits your situation. Education helps, but consistent execution is what usually changes outcomes.
 
 Educational note: tax treatment and underwriting rules depend on your facts, lender overlays, and state rules. Use this guide as a planning framework and confirm final decisions with qualified professionals.

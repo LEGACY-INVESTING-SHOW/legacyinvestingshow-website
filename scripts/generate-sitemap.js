@@ -21,7 +21,6 @@ const OUTPUT_FILE = path.join(ROOT_DIR, 'sitemap.xml');
 const staticPages = [
   { url: '/' },
   { url: '/about' },
-  { url: '/programs' },
   { url: '/success-stories' },
   { url: '/blog/' },
   { url: '/stacking-presentation/' },

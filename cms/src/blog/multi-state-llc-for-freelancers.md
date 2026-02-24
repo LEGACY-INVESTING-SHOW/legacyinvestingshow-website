@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/multi-state-llc-for-freelancers.jpg
 imageAlt: >-
   Multi State LLC for Freelancers: Complete 2026 Guide to Registration, Taxes,
   and Compliance guide
@@ -387,4 +387,4 @@ Use this three-step framework:
 2. Run a risk-adjusted cost model, not just filing fee math.
 3. Execute with a 30-day plan and quarterly review cycle.
 
-If all three are in place, a multi state llc for freelancers can move from vague compliance stress to a controlled growth system. If one part is missing, pause, document assumptions, and tighten your foundation before expanding further. If you want implementation help, review available [programs](/programs) for deeper execution support.
+If all three are in place, a multi state llc for freelancers can move from vague compliance stress to a controlled growth system. If one part is missing, pause, document assumptions, and tighten your foundation before expanding further. If you want implementation help, review available [blog resources](/blog/) for deeper execution support.

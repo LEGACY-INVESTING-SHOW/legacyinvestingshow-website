@@ -383,4 +383,4 @@ For most U.S. investors in 2026, the best etf or mutual fund for ai is the one t
 - ETF preference in taxable accounts unless there is a strong active-management case.
 - Written rebalance and risk limits.
 
-This structure lets you participate in AI upside while reducing the chance one theme derails long-term goals. Continue your planning through [all blog resources](/blog) and, if needed, implementation support through [Legacy Investing Show Programs](/programs). Educational only, and major tax or investment choices should be reviewed with qualified professionals.
+This structure lets you participate in AI upside while reducing the chance one theme derails long-term goals. Continue your planning through [all blog resources](/blog) and, if needed, implementation support through [blog resources](/blog/). Educational only, and major tax or investment choices should be reviewed with qualified professionals.

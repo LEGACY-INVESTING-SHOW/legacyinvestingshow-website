@@ -35,7 +35,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/401k-strategy-for-early-retirees.jpg
 imageAlt: >-
   401k Strategy for Early Retirees: Complete 2026 Guide to Taxes, Access, and
   Withdrawal Sequencing guide
@@ -347,4 +347,4 @@ Use this 90-day goal: build a repeatable withdrawal system, not a one-time sprea
 - Run your first year with a documented AGI target.
 - Schedule quarterly updates.
 
-For broader context, review the [4% rule article](/blog/4-percent-rule), browse recent planning content on the [blog](/blog), and evaluate coaching support at [programs](/programs).
+For broader context, review the [4% rule article](/blog/4-percent-rule), browse recent planning content on the [blog](/blog), and evaluate coaching support at [blog resources](/blog/).

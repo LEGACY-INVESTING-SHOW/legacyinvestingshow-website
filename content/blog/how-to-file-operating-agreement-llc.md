@@ -394,6 +394,6 @@ Use these internal resources as you implement your plan:
 - Review privacy considerations in the [anonymous LLC guide](/blog/anonymous-llc).
 - Improve compliance setup with [best registered agent for LLC](/blog/best-registered-agent-for-llc).
 - Strengthen financing discipline through [business credit building](/blog/business-credit-building).
-- Explore implementation support on the [programs page](/programs).
+- Explore implementation support on the [blog resources](/blog/).
 
 A strong operating agreement is not paperwork theater. It is a decision framework for ownership, cash flow, and conflict resolution. Build it with real numbers, sign it properly, and revisit it before major business changes.

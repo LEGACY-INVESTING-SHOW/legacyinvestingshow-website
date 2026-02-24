@@ -28,7 +28,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/robo-advisor-comparison.jpg
 imageAlt: 'Robo Advisor Comparison 2026: Best Automated Investing Platforms guide'
 imageWidth: 1200
 imageHeight: 630
@@ -404,7 +404,7 @@ If you review robo advisor comparison with a CPA/attorney/advisor, bring:
 
 ## Internal Links To Continue
 - [Browse related guides](/blog/category/investing)
-- [Programs and implementation support](/programs)
+- [blog resources](/blog/)
 - [Latest blog posts](/blog)
 
 ## Final Word

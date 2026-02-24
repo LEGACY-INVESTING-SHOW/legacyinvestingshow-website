@@ -33,7 +33,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-to-do-tax-planning-for-individual.jpg
 imageAlt: 'How to Do Tax Planning for Individual Finances: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -336,7 +336,7 @@ Use these to turn strategy into execution:
 - [Best Tax Deductions for W-2 Employees](/blog/best-tax-deductions-for-w2-employees)
 - [Best Tax Deductions for Self-Employed](/blog/best-tax-deductions-for-self-employed)
 - [Legacy Investing Show Blog](/blog)
-- [Programs](/programs)
+- [blog resources](/blog/)
 
 ## Reference Points Used in This Guide
 

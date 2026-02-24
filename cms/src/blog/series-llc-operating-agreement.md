@@ -35,7 +35,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/series-llc-operating-agreement.jpg
 imageAlt: >-
   Series LLC Operating Agreement: Complete 2026 Guide for Asset Protection and
   Scalable Operations guide
@@ -415,4 +415,4 @@ Bring these to your next planning call and get written answers where possible.
 2. Build your advisor team and pressure-test the assumptions in this guide.
 3. Draft a custom agreement and launch with operational controls, not just paperwork.
 
-For more deal-level case studies and implementation breakdowns, browse the [blog](/blog) and review applied training options at [programs](/programs).
+For more deal-level case studies and implementation breakdowns, browse the [blog](/blog) and review applied training options at [blog resources](/blog/).

@@ -34,7 +34,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/best-ira-withdrawal-strategy.jpg
 imageAlt: >-
   Best IRA Withdrawal Strategy: Complete 2026 Guide for Lower Lifetime Taxes
   guide
@@ -297,7 +297,7 @@ This is why the best ira withdrawal strategy often means accepting some tax now 
 11. Document the logic in a one-page investment policy addendum so future decisions stay consistent.
 12. Repeat each January with updated rules, including RMD factors and Medicare thresholds.
 
-If you want implementation support, compare education options in [programs](/programs) and use the broader article library in [the blog](/blog).
+If you want implementation support, compare education options in [blog resources](/blog/) and use the broader article library in [the blog](/blog).
 
 ## 30-day checklist to build your withdrawal system
 

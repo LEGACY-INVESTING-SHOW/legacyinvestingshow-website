@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/how-to-change-operating-agreement-of-llc.jpg
 imageAlt: 'How to Change Operating Agreement of LLC: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -408,7 +408,7 @@ Use these questions before final signatures:
 - Are there payroll or reasonable-compensation implications if we also change tax elections?
 - What governance items should be scheduled for annual review?
 
-If you want implementation help after drafting, the [programs page](/programs) can help you pressure-test execution and accountability.
+If you want implementation help after drafting, the [blog resources](/blog/) can help you pressure-test execution and accountability.
 
 ## Practical Next-Move Framework
 

@@ -364,7 +364,7 @@ In those cases, a simpler annuitized core or a higher cash + equity income mix m
 - What triggers should force a spending or rebalance decision?
 - What documentation would satisfy audit and estate clarity for heirs?
 
-Also review related planning context at [/programs](/programs) and compare with the [early retirement withdrawal](/blog/early-retirement-withdrawal) framework.
+Also review related planning context at [blog resources](/blog/) and compare with the [early retirement withdrawal](/blog/early-retirement-withdrawal) framework.
 
 ## 30-Day Checklist
 
@@ -406,6 +406,6 @@ Revisit every quarter for process and every year for tax and beneficiary structu
 ## Related Resources
 - [Retirement Hub](/topics/retirement)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: strategy for retirement withdrawals](/blog/strategy-for-retirement-withdrawals)
 - [Related Guide: retirement withdrawal strategy tax implications](/blog/retirement-withdrawal-strategy-tax-implications)

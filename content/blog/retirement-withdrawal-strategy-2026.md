@@ -450,6 +450,6 @@ If you want a practical default, use this order:
 4. Apply written guardrails so bad years do not become panic years.
 5. Re-run the plan every year with updated tax and market assumptions.
 
-For related planning, review the [Retirement topic hub](/topics/retirement), compare account decisions in [401(k) strategy vs taxable brokerage](/blog/401k-strategy-vs-taxable-brokerage), and explore deeper implementation support in [Programs](/programs).
+For related planning, review the [Retirement topic hub](/topics/retirement), compare account decisions in [401(k) strategy vs taxable brokerage](/blog/401k-strategy-vs-taxable-brokerage), and explore deeper implementation support in [blog resources](/blog/).
 
 Educational use only. Tax rules and personal outcomes vary, so confirm decisions with a qualified CPA or fiduciary advisor before acting.

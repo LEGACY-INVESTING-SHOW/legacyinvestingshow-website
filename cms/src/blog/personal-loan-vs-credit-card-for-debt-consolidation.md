@@ -40,7 +40,7 @@ tags:
   - debt management
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/personal-loan-vs-credit-card-for-debt-consolidation.jpg
 imageAlt: >-
   Personal Loan vs Credit Card for Debt Consolidation: Which Strategy Works
   Better in 2026? guide
@@ -369,4 +369,4 @@ Use this fast filter:
 - Choose a personal loan when you need predictable monthly payments and a clear multi-year payoff schedule.
 - Choose a hybrid when transfer limits are partial but you still want to capture some 0% savings.
 
-Then execute with discipline, track monthly, and adjust early. For deeper walkthroughs, use the [Debt Management topic hub](/topics/debt-management), browse additional case studies on the [blog](/blog), and compare coaching support in [programs](/programs).
+Then execute with discipline, track monthly, and adjust early. For deeper walkthroughs, use the [Debt Management topic hub](/topics/debt-management), browse additional case studies on the [blog](/blog), and compare coaching support in [blog resources](/blog/).

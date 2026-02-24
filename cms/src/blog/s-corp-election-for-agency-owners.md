@@ -33,7 +33,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/s-corp-election-for-agency-owners.jpg
 imageAlt: 'S Corp Election for Agency Owners: Complete 2026 Guide guide'
 imageWidth: 1200
 imageHeight: 630
@@ -380,7 +380,7 @@ This creates messy reimbursements and weak substantiation.
 8. Never re-testing after year one.
 A great decision at $250,000 profit can become weak at $120,000 profit.
 
-For implementation support and more resources, review [all blog guides](/blog) and training options at [Legacy Investing Show programs](/programs).
+For implementation support and more resources, review [all blog guides](/blog) and training options at [blog resources](/blog/).
 
 ## Questions to Ask Your CPA/Advisor
 

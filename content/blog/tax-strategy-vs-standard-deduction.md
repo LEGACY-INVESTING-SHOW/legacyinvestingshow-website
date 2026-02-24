@@ -307,7 +307,7 @@ Federal itemization and state returns can diverge. Some states allow deductions 
 9. Store receipts and acknowledgment letters in one folder to reduce filing friction.
 10. Review in November with your CPA/advisor and finalize before year-end deadlines.
 
-If you want to build planning discipline beyond one tax season, review available educational [programs](/programs) and treat this as an annual operating process, not a one-time project.
+If you want to build planning discipline beyond one tax season, review available educational [blog resources](/blog/) and treat this as an annual operating process, not a one-time project.
 
 ## 30-day checklist
 
@@ -395,6 +395,6 @@ Use this article as an educational planning framework, then validate assumptions
 ## Related Resources
 - [Tax Strategies Hub](/topics/tax-strategies)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: best tax strategy for retirement](/blog/best-tax-strategy-for-retirement)
 - [Related Guide: best tax strategy for ira withdrawals](/blog/best-tax-strategy-for-ira-withdrawals)

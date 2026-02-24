@@ -585,7 +585,7 @@ The systems she built—video walk-throughs with cleaners, noise monitoring, pro
 
 **Ready to build your own Airbnb business like Pavi?**
 
-[Learn more about Legacy Investing Show →](/programs)
+[Learn more about Legacy Investing Show →](/blog/)
 
 ### Related Success Stories
 
@@ -615,7 +615,7 @@ The systems she built—video walk-throughs with cleaners, noise monitoring, pro
 
 Preston Seo has personally managed 40+ properties and generated over $400,000 in net profit from his Airbnbs. He created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[Learn more about the program →](/programs) | [Watch free training →](/free-training)
+[blog resources](/blog/) | [Watch free training →](/free-training)
 
 ---
 

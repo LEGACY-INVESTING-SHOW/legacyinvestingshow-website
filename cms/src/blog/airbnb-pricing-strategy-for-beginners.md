@@ -35,7 +35,7 @@ tags:
   - airbnb arbitrage
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/airbnb-pricing-strategy-for-beginners.jpg
 imageAlt: >-
   airbnb pricing strategy for beginners: Complete 2026 Guide to Occupancy, ADR,
   and Profit guide
@@ -436,4 +436,4 @@ Use this three-part decision loop each week:
 - Adjust: one KPI is off-target, so change one lever such as weekend spread or booking-window rule.
 - Rebuild: two or more KPIs are off-target for two consecutive weeks, so reset floor, comp set, and rate bands.
 
-That is the core of a practical airbnb pricing strategy for beginners: protect downside, test upside, and make small evidence-based changes consistently. If you want more implementation examples, browse the [blog](/blog) or review training options on [programs](/programs).
+That is the core of a practical airbnb pricing strategy for beginners: protect downside, test upside, and make small evidence-based changes consistently. If you want more implementation examples, browse the [blog](/blog) or review training options on [blog resources](/blog/).

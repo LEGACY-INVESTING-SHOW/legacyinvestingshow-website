@@ -35,7 +35,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/tax-loss-harvesting-for-beginners.jpg
 imageAlt: >-
   Tax Loss Harvesting for Beginners: Complete 2026 Guide to Lowering Investment
   Taxes guide

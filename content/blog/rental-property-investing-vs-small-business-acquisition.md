@@ -399,4 +399,4 @@ Bring these questions before you sign an offer, not after:
 
 Choose rental property if you want steadier, asset-backed compounding and can accept slower cash flow ramp. Choose small business acquisition if you can actively operate, improve systems, and tolerate higher volatility for higher cash yield potential.
 
-If you want more real-world deal breakdowns before deciding, review additional case studies on the [blog](/blog) or go deeper into execution support through [programs](/programs).
+If you want more real-world deal breakdowns before deciding, review additional case studies on the [blog](/blog) or go deeper into execution support through [blog resources](/blog/).

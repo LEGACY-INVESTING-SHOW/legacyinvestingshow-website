@@ -35,7 +35,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/capital-gains-tax-template.jpg
 imageAlt: >-
   Capital Gains Tax Template: Practical Guide + Examples for Better Sell
   Decisions guide
@@ -466,4 +466,4 @@ Score each option from 1 to 5 on:
 
 Choose the option with the best total score, not the lowest nominal tax line. The best outcome is usually the plan that preserves flexibility, controls downside, and keeps documentation audit-ready.
 
-If you want implementation support beyond DIY planning, review [program resources](/programs) and keep your template as the central planning document.
+If you want implementation support beyond DIY planning, review [blog resources](/blog/) and keep your template as the central planning document.

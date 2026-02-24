@@ -36,7 +36,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/ira-strategy-tax-implications.jpg
 imageAlt: >-
   IRA Strategy Tax Implications: Complete 2026 Guide for Traditional, Roth, and
   Conversion Decisions guide

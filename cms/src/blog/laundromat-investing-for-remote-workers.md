@@ -37,7 +37,7 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/laundromat-investing-for-remote-workers.jpg
 imageAlt: >-
   Laundromat investing for remote workers: Complete 2026 guide to cash flow, tax
   planning, and risk control guide
@@ -429,6 +429,6 @@ Use a simple scoring model out of 100 points:
 
 If your score is under 75, keep looking. If it is 75 to 85, renegotiate terms or strengthen reserves. Above 85 with verified records can justify moving forward.
 
-For ongoing education and deal pattern recognition, monitor new case studies in the [blog](/blog) and training pathways in [programs](/programs).
+For ongoing education and deal pattern recognition, monitor new case studies in the [blog](/blog) and training pathways in [blog resources](/blog/).
 
 Educational note: this guide is for general education and planning, not individualized tax, legal, or investment advice.

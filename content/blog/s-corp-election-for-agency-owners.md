@@ -380,7 +380,7 @@ This creates messy reimbursements and weak substantiation.
 8. Never re-testing after year one.
 A great decision at $250,000 profit can become weak at $120,000 profit.
 
-For implementation support and more resources, review [all blog guides](/blog) and training options at [Legacy Investing Show programs](/programs).
+For implementation support and more resources, review [all blog guides](/blog) and training options at [blog resources](/blog/).
 
 ## Questions to Ask Your CPA/Advisor
 

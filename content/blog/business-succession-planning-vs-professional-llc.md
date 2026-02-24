@@ -410,4 +410,4 @@ Execution discipline:
 
 For most licensed owners, business succession planning vs professional llc is a sequencing question, not a binary choice. Get legal structure and ownership eligibility correct, then engineer transfer economics and continuity so value survives your exit.
 
-If your goal is to protect family wealth, staff stability, and client trust, execute this as a managed project with legal, tax, and operating workstreams. For deeper implementation support, map your next actions against [programs](/programs) and continue benchmarking tactics in the [blog](/blog).
+If your goal is to protect family wealth, staff stability, and client trust, execute this as a managed project with legal, tax, and operating workstreams. For deeper implementation support, map your next actions against [blog resources](/blog/) and continue benchmarking tactics in the [blog](/blog).

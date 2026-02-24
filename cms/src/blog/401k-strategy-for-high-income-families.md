@@ -39,7 +39,7 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/401k-strategy-for-high-income-families.jpg
 imageAlt: >-
   401k strategy for high income families: Complete 2026 Guide to Lower Lifetime
   Taxes guide
@@ -389,4 +389,4 @@ The strategy can still be part of your system, but sequencing may need to change
 
 ## Next actions and internal resources
 
-If you want to pressure-test this plan with related retirement topics, start with the [retirement topic hub](/topics/retirement), then review [401(k) strategy for married couples](/blog/401k-strategy-for-married-couples), [401(k) strategy for pre-retirees](/blog/401k-strategy-for-pre-retirees), and the [401(k) rollover guide](/blog/401k-rollover-guide). For withdrawal planning context, pair this with the [4% rule article](/blog/4-percent-rule). You can also browse more implementation guides in the main [blog](/blog) and compare training options on the [programs page](/programs).
+If you want to pressure-test this plan with related retirement topics, start with the [retirement topic hub](/topics/retirement), then review [401(k) strategy for married couples](/blog/401k-strategy-for-married-couples), [401(k) strategy for pre-retirees](/blog/401k-strategy-for-pre-retirees), and the [401(k) rollover guide](/blog/401k-rollover-guide). For withdrawal planning context, pair this with the [4% rule article](/blog/4-percent-rule). You can also browse more implementation guides in the main [blog](/blog) and compare training options on the [blog resources](/blog/).

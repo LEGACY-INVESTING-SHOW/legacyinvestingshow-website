@@ -363,7 +363,7 @@ You can compress this if needed, but do not skip the final two steps.
 - compare actual outcome to projected outcome,
 - review whether complexity still earns net benefit.
 
-For practical references on core deduction topics, use [W-2 deductions](/blog/best-tax-deductions-for-w2-employees) and [self-employed deduction categories](/blog/best-tax-deductions-for-self-employed). For a programmatic support path, see [Programs](/programs).
+For practical references on core deduction topics, use [W-2 deductions](/blog/best-tax-deductions-for-w2-employees) and [self-employed deduction categories](/blog/best-tax-deductions-for-self-employed). For a programmatic support path, see [blog resources](/blog/).
 
 ## How This Compares To Alternatives
 
@@ -429,6 +429,6 @@ For withdrawal sequencing context, review [best 401k withdrawal strategy](/blog/
 ## Related Resources
 - [Tax Strategies Hub](/topics/tax-strategies)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: best tax strategy for retirement](/blog/best-tax-strategy-for-retirement)
 - [Related Guide: best tax strategy for ira withdrawals](/blog/best-tax-strategy-for-ira-withdrawals)

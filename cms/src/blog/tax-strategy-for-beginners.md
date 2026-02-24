@@ -268,7 +268,7 @@ This is long only because missing steps are where most people lose money.
 | High debt load and low liquidity | Cash flow constrained | 1) keep liquidity buffer, 2) use smaller pre-tax shifts, 3) prioritize high-confidence deductions | Liquidity beats aggressive contributions for most beginners |
 | Retiring soon, high income today | Current bracket likely high, uncertain retirement bracket | 1) model pre-tax vs Roth split, 2) map RMD and withdrawal sequencing later, 3) run state planning | Future tax rate uncertainty becomes the core variable |
 
-Useful follow-up resources on this site include [Tax Strategies overview](/topics/tax-strategies), the [self-employed deductions guide](/blog/best-tax-deductions-for-self-employed), [individual deductions breakdown](/blog/best-tax-deductions-for-individuals), and [the program index](/programs).
+Useful follow-up resources on this site include [Tax Strategies overview](/topics/tax-strategies), the [self-employed deductions guide](/blog/best-tax-deductions-for-self-employed), [individual deductions breakdown](/blog/best-tax-deductions-for-individuals), and [blog resources](/blog/).
 
 ## Fully worked numeric example with explicit assumptions and tradeoffs
 
@@ -406,13 +406,13 @@ This is not a one-year tactic. It is a system. Revisit your scores every quarter
 - [Best deductions for high-income earners](/blog/best-tax-deductions-for-high-income-earners)
 - [Small business deductions](/blog/best-tax-deductions-for-small-business)
 - [Blog index](/blog)
-- [Programs](/programs)
+- [blog resources](/blog/)
 
 This guide is educational and practical, not legal or tax advice. Use it to build better decisions, then validate final filings with a qualified professional.
 
 ## Related Resources
 - [Tax Strategies Hub](/topics/tax-strategies)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: best tax strategy for retirement](/blog/best-tax-strategy-for-retirement)
 - [Related Guide: best tax strategy for ira withdrawals](/blog/best-tax-strategy-for-ira-withdrawals)

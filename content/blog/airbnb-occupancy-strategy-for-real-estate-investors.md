@@ -424,4 +424,4 @@ Interpretation:
 - 5 to 7: run a 90-day test before committing more capital
 - 0 to 4: pivot to lower-complexity rental strategy first
 
-For additional case studies and tactical playbooks, use [the blog](/blog) and compare implementation support on [programs](/programs). This article is educational and should be applied with legal, tax, and financial advice specific to your situation.
+For additional case studies and tactical playbooks, use [the blog](/blog) and compare implementation support on [blog resources](/blog/). This article is educational and should be applied with legal, tax, and financial advice specific to your situation.

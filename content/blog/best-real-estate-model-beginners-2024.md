@@ -506,7 +506,7 @@ Traditional rentals require massive capital ($40K+ down payment), mortgage quali
 
 The Bridge Method has helped thousands of beginners generate income from real estate without the traditional barriers of down payments, interest rates, and income requirements.
 
-[Learn the Bridge Method at Legacy Investing Show](/programs)
+[Learn the Bridge Method at Legacy Investing Show](/blog/)
 
 ### Why Legacy Investing Show?
 
@@ -518,7 +518,7 @@ The Bridge Method has helped thousands of beginners generate income from real es
 
 The market conditions that make traditional real estate difficult also create unprecedented opportunity for those willing to think differently. Don't let high interest rates and impossible income requirements keep you on the sidelines.
 
-[Start Your Journey Today](/programs)
+[Start Your Journey Today](/blog/)
 
 ---
 

@@ -414,4 +414,4 @@ Use this sequence:
 4. Improve pricing and margin
 5. Scale only after process stability
 
-If your goal is building a durable, compliant side-income engine, keep your focus on repeatable execution. Start with your current numbers, tighten your process in 30 days, and then improve from there. If you want structured support, review available [programs](/programs).
+If your goal is building a durable, compliant side-income engine, keep your focus on repeatable execution. Start with your current numbers, tighten your process in 30 days, and then improve from there. If you want structured support, review available [blog resources](/blog/).

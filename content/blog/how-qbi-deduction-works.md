@@ -398,4 +398,4 @@ Use this quick decision sequence:
 
 Then choose one implementation owner, one deadline, and one version-controlled calculation file. That alone prevents most missed savings.
 
-If you want implementation support after strategy design, review [Legacy Investing Show programs](/programs). This article is educational and should be paired with personalized tax advice before filing or restructuring decisions.
+If you want implementation support after strategy design, review [blog resources](/blog/). This article is educational and should be paired with personalized tax advice before filing or restructuring decisions.

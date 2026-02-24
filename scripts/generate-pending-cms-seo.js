@@ -429,7 +429,7 @@ function sectionList(topic) {
     ``,
     `## Internal Links To Continue`,
     `- [Browse related guides](${relatedHub})`,
-    `- [Programs and implementation support](/programs)`,
+    `- [Blog resources and implementation support](/blog/)`,
     `- [Latest blog posts](/blog)`,
     ``,
     `## Final Word`,

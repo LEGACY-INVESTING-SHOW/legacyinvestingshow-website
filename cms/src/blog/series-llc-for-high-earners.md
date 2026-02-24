@@ -34,7 +34,7 @@ tags:
   - business structures
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/series-llc-for-high-earners.jpg
 imageAlt: >-
   Series LLC for High Earners: Complete 2026 Guide to Risk Segmentation, Tax
   Elections, and Execution guide

@@ -346,6 +346,6 @@ Bring these to your next planning call:
 12. What changes must be completed before year-end versus at filing time?
 
 ## Build your broader tax playbook
-QBI works best as part of a system. Pair this guide with the [Tax Strategies hub](/topics/tax-strategies), then review [best tax deductions for self-employed](/blog/best-tax-deductions-for-self-employed), [best tax deductions for small business](/blog/best-tax-deductions-for-small-business), and the broader [blog library](/blog). If you want help implementing a full framework, review available [programs](/programs).
+QBI works best as part of a system. Pair this guide with the [Tax Strategies hub](/topics/tax-strategies), then review [best tax deductions for self-employed](/blog/best-tax-deductions-for-self-employed), [best tax deductions for small business](/blog/best-tax-deductions-for-small-business), and the broader [blog library](/blog). If you want help implementing a full framework, review available [blog resources](/blog/).
 
 Tax rules and thresholds can change. Use this guide for planning and discussion, then confirm final filing positions with a qualified tax professional.

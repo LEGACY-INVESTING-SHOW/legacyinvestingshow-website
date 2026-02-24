@@ -35,7 +35,7 @@ tags:
   - tax strategies
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/capital-gains-tax-checklist.jpg
 imageAlt: >-
   Capital Gains Tax Checklist: Practical Guide + Examples for Real-World
   Decisions guide
@@ -398,6 +398,6 @@ IRS Topic 409 generally points taxpayers to Form 8949 and Schedule D for most ca
 
 For payment timing, IRS estimated-tax guidance and Publication 505 are useful guardrails. If gains are large, monitor payment windows and safe harbor math early, not after year-end.
 
-For broader planning context, these internal resources can help you connect gains strategy with full-year tax planning: [Blog](/blog), [Best Tax Deductions for High-Income Earners](/blog/best-tax-deductions-for-high-income-earners), and [Programs](/programs).
+For broader planning context, these internal resources can help you connect gains strategy with full-year tax planning: [Blog](/blog), [Best Tax Deductions for High-Income Earners](/blog/best-tax-deductions-for-high-income-earners), and [blog resources](/blog/).
 
 A capital gains tax checklist is most valuable when it becomes a repeatable system: classify, project, compare, execute, document, and review.

@@ -354,11 +354,11 @@ In those cases, a basic deduction-focused approach is typically safer.
 
 ## Final action step
 
-Don’t leave this as a one-night filing-year fix. Build a standing annual process that includes your [program planning context](/programs), the [Tax Strategies index](/topics/tax-strategies), and your [blog knowledge stack](/blog). When done right, **tax deduction vs charitable planning** is about preserving capital, supporting values, and avoiding avoidable tax friction while still keeping your decisions intentional and documented.
+Don’t leave this as a one-night filing-year fix. Build a standing annual process that includes your [blog resources](/blog/), the [Tax Strategies index](/topics/tax-strategies), and your [blog knowledge stack](/blog). When done right, **tax deduction vs charitable planning** is about preserving capital, supporting values, and avoiding avoidable tax friction while still keeping your decisions intentional and documented.
 
 ## Related Resources
 - [Tax Strategies Hub](/topics/tax-strategies)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: best tax strategy for retirement](/blog/best-tax-strategy-for-retirement)
 - [Related Guide: best tax strategy for ira withdrawals](/blog/best-tax-strategy-for-ira-withdrawals)

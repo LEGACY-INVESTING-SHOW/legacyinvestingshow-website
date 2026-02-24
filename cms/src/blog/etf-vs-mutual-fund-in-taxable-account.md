@@ -33,7 +33,7 @@ tags:
   - investing
   - wealth strategy
   - financial planning
-image: /assets/images/og-blog.jpg
+image: /assets/images/blog/etf-vs-mutual-fund-in-taxable-account.jpg
 imageAlt: >-
   etf vs mutual fund in taxable account: Which Strategy Works Better in 2026?
   guide

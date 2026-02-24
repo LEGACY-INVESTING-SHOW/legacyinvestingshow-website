@@ -411,4 +411,4 @@ Use this sequence:
 3. Review results after 31 days.
 4. Repeat only if tax value remains meaningful and portfolio drift is controlled.
 
-If you want more implementation-focused investing content, browse the [blog](/blog) or see structured guidance options on [programs](/programs).
+If you want more implementation-focused investing content, browse the [blog](/blog) or see structured guidance options on [blog resources](/blog/).

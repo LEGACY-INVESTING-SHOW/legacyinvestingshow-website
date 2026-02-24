@@ -434,11 +434,11 @@ Common thread across mistakes: each one compounds over years because weak record
 - Should any business expense be reclassified to protect my net SE tax position?
 - Can we run a simple before/after simulation before final filing?
 
-If you want to go deeper into the full tax strategy ecosystem and compare categories by intent, review the [Tax Strategies hub](/topics/tax-strategies) and the [program-level options](/programs).
+If you want to go deeper into the full tax strategy ecosystem and compare categories by intent, review the [Tax Strategies hub](/topics/tax-strategies) and the [blog resources](/blog/).
 
 ## Related Resources
 - [Tax Strategies Hub](/topics/tax-strategies)
 - [Latest Blog Posts](/blog)
-- [Programs and Implementation Support](/programs)
+- [blog resources](/blog/)
 - [Related Guide: best tax strategy for retirement](/blog/best-tax-strategy-for-retirement)
 - [Related Guide: best tax strategy for ira withdrawals](/blog/best-tax-strategy-for-ira-withdrawals)
