@@ -5,7 +5,6 @@ module.exports = {
     "./blog/**/*.html",
     "./templates/**/*.html",
     "./assets/js/**/*.js",
-    "./topics/**/*.html",
     "./tax-strategies/**/*.html",
     "./retirement/**/*.html",
     "./programmatic-pages/**/*.html"

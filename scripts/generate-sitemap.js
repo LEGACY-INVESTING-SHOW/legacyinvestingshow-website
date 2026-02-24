@@ -26,16 +26,6 @@ const staticPages = [
   { url: '/stacking-presentation/' },
 ];
 
-// Topic hub pages for SEO pillar content
-const topicPages = [
-  { url: '/topics/airbnb-arbitrage' },
-  { url: '/topics/tax-strategies' },
-  { url: '/topics/investing' },
-  { url: '/topics/business-structures' },
-  { url: '/topics/retirement' },
-  { url: '/topics/debt-management' },
-];
-
 // Programmatic SEO directories to scan
 const programmaticDirs = [
   'tax-strategies',
@@ -271,14 +261,6 @@ function generateSitemap() {
     // Skip duplicate index entries
     if (page.url === '/index.html') continue;
 
-    urls.push({
-      loc: `${SITE_URL}${normalizePath(page.url)}`,
-      lastmod: today,
-    });
-  }
-
-  // Add topic hub pages
-  for (const page of topicPages) {
     urls.push({
       loc: `${SITE_URL}${normalizePath(page.url)}`,
       lastmod: today,
