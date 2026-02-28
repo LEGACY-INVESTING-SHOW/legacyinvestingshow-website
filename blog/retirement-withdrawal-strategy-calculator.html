@@ -6,13 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Primary Meta Tags -->
-    <title>Retirement Withdrawal Strategy Calc… | Legacy Investing Show</title>
-    <meta name="title" content="Retirement Withdrawal Strategy Calc… | Legacy Investing Show">
+    <title>Retirement Withdrawal Strategy Calculato… | Legacy Investing</title>
+    <meta name="title" content="Retirement Withdrawal Strategy Calculato… | Legacy Investing">
     <meta name="description" content="Build a tax-aware retirement withdrawal strategy calculator workflow for US retirees. Learn the framework, numeric examples, mistakes, implementation plan, and advisor questions to keep your portfolio sustainable through market volatility.">
-    <meta name="keywords" content="retirement withdrawal strategy calculator, retirement withdrawal strategy, safe withdrawal rate, tax-efficient withdrawal order, retirement withdrawal strategy calculator for couples, how to withdraw from Roth and 401k in retirement, retirement calculator to include taxes social security and inflation">
+    <meta name="keywords" content="Retirement, wealth building, investing, financial freedom">
     <meta name="author" content="Preston Seo">
     <meta name="robots" content="index, follow">
-    
     <link rel="canonical" href="https://www.legacyinvestingshow.com/blog/retirement-withdrawal-strategy-calculator">
 
     <!-- Open Graph / Facebook -->
@@ -37,362 +36,236 @@
     <meta name="theme-color" content="#FAF7F2">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="../assets/images/logo.png">
-    <link rel="apple-touch-icon" href="../assets/images/logo.png">
+    <link rel="icon" type="image/png" href="/assets/images/logo.png">
+    <link rel="apple-touch-icon" href="/assets/images/logo.png">
 
-    <!-- Preconnect -->
+    <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Preload hero image for LCP -->
-    <link rel="preload" as="image" href="../assets/images/blog/retirement-withdrawal-strategy-calculator.jpg" type="image/webp" fetchpriority="high">
-    <link rel="preload" as="image" href="../assets/images/blog/retirement-withdrawal-strategy-calculator.jpg" fetchpriority="high">
+    <!-- Preload hero image for LCP optimization -->
+    <link rel="preload" as="image" href="/assets/images/blog/retirement-withdrawal-strategy-calculator.webp" type="image/webp" fetchpriority="high">
+    <link rel="preload" as="image" href="/assets/images/blog/retirement-withdrawal-strategy-calculator.jpg" fetchpriority="high">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    
-    <!-- Content Styling Fixes -->
-    <style>
-        /* Base typography */
-        .minimal-content {
-            font-size: 1.125rem;
-            line-height: 1.8;
-            color: #374151;
-        }
-        
-        /* Paragraphs */
-        .minimal-content p {
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
-        }
-        
-        /* Headings */
-        .minimal-content h2 {
-            margin-top: 3.5rem;
-            margin-bottom: 1.5rem;
-            font-size: 2.25rem;
-            font-weight: 700;
-            color: #111827;
-            line-height: 1.2;
-        }
-        
-        .minimal-content h3 {
-            margin-top: 2.5rem;
-            margin-bottom: 1.25rem;
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #1f2937;
-        }
-        
-        /* Tables */
-        .minimal-content table {
-            width: 100%;
-            margin: 2.5rem 0;
-            border-collapse: collapse;
-            font-size: 1rem;
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-        
-        .minimal-content thead {
-            background: #0F172A;
-            color: white;
-        }
-        
-        .minimal-content th {
-            padding: 1rem 1.25rem;
-            text-align: left;
-            font-weight: 600;
-            font-size: 0.95rem;
-        }
-        
-        .minimal-content td {
-            padding: 1rem 1.25rem;
-            border-bottom: 1px solid #e5e7eb;
-        }
-        
-        .minimal-content tbody tr:last-child td {
-            border-bottom: none;
-        }
-        
-        .minimal-content tbody tr:nth-child(even) {
-            background: #FAF7F2;
-        }
-        
-        .minimal-content tbody tr:hover {
-            background: rgba(212, 168, 83, 0.08);
-        }
-        
-        /* Blockquotes */
-        .minimal-content blockquote {
-            margin: 2.5rem 0;
-            padding: 1.5rem 2rem;
-            background: rgba(212, 168, 83, 0.12);
-            border-left: 4px solid #D4A853;
-            font-style: italic;
-            font-size: 1.125rem;
-            line-height: 1.7;
-        }
-        
-        .minimal-content blockquote p {
-            margin-bottom: 0;
-        }
-        
-        /* Lists */
-        .minimal-content ul, .minimal-content ol {
-            margin-bottom: 1.5rem;
-            padding-left: 2rem;
-        }
-        
-        .minimal-content li {
-            margin-bottom: 0.75rem;
-            line-height: 1.7;
-        }
-        
-        /* Strong/Bold */
-        .minimal-content strong {
-            font-weight: 700;
-            color: #111827;
-        }
-        
-        /* Links */
-        .minimal-content a {
-            color: #D4A853;
-            text-decoration: underline;
-        }
-        
-        .minimal-content a:hover {
-            color: #B8933F;
-        }
-        
-        /* Emphasis */
-        .minimal-content em {
-            font-style: italic;
-        }
-    </style>
+    <link rel="stylesheet" href="/assets/css/styles.css">
 
-    <!-- Schema Markup -->
-    
-
-
-
-<!-- BreadcrumbList Schema -->
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-        {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://www.legacyinvestingshow.com/"
-        },
-        {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Blog",
-            "item": "https://www.legacyinvestingshow.com/blog/"
-        },
-        {
-            "@type": "ListItem",
-            "position": 3,
-            "name": &quot;Retirement Withdrawal Strategy Calculator: Practical Guide, Tradeoffs, and a 90-Day Execution Plan&quot;
-        }
-    ]
-}
-</script>
-
-<!-- Article Schema -->
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": &quot;Retirement Withdrawal Strategy Calculator: Practical Guide, Tradeoffs, and a 90-Day Execution Plan&quot;,
-    "description": &quot;Build a tax-aware retirement withdrawal strategy calculator workflow for US retirees. Learn the framework, numeric examples, mistakes, implementation plan, and advisor questions to keep your portfolio sustainable through market volatility.&quot;,
-    "image": {
-        "@type": "ImageObject",
-        "url": &quot;https://www.legacyinvestingshow.com/assets/images/blog/retirement-withdrawal-strategy-calculator.jpg&quot;,
-        "width": 1200,
-        "height": 630
-    },
-    "author": {
-        "@type": "Person",
-        "@id": "https://www.legacyinvestingshow.com/about#author",
-        "name": &quot;Preston Seo&quot;,
-        "url": "https://www.legacyinvestingshow.com/about",
-        "jobTitle": "Real Estate Investor & Educator",
-        "knowsAbout": [
-            "Airbnb Arbitrage",
-            "Real Estate Investing",
-            "Short-Term Rentals",
-            "Passive Income Strategies",
-            "Property Management"
-        ],
-        "sameAs": [
-            "https://www.instagram.com/thelegacyshow",
-            "https://www.youtube.com/@thelegacyinvestingshow",
-            "https://www.tiktok.com/@thelegacyshow"
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.legacyinvestingshow.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://www.legacyinvestingshow.com/blog/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Retirement Withdrawal Strategy Calculator: Practical Guide, Tradeoffs, and a 90-Day Execution Plan"
+            }
         ]
-    },
-    "publisher": {
-        "@type": "Organization",
-        "name": "Legacy Investing Show",
-        "url": "https://www.legacyinvestingshow.com",
-        "logo": {
+    }
+    </script>
+
+    <!-- Article Schema Markup with Enhanced E-E-A-T -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Retirement Withdrawal Strategy Calculator: Practical Guide, Tradeoffs, and a 90-Day Execution Plan",
+        "description": "Build a tax-aware retirement withdrawal strategy calculator workflow for US retirees. Learn the framework, numeric examples, mistakes, implementation plan, and advisor questions to keep your portfolio sustainable through market volatility.",
+        "image": {
             "@type": "ImageObject",
-            "url": "https://www.legacyinvestingshow.com/assets/images/logo.png",
-            "width": 512,
-            "height": 512
+            "url": "https://www.legacyinvestingshow.com/assets/images/blog/retirement-withdrawal-strategy-calculator.jpg",
+            "width": 1200,
+            "height": 630
         },
-        "sameAs": [
-            "https://www.instagram.com/thelegacyshow",
-            "https://www.youtube.com/@thelegacyinvestingshow",
-            "https://www.tiktok.com/@thelegacyshow",
-            "https://www.facebook.com/share/19LQhE6gmh/"
-        ]
-    },
-    "datePublished": &quot;2026-02-15T00:00:00.000Z&quot;,
-    "dateModified": &quot;2026-02-15T00:00:00.000Z&quot;,
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": &quot;https://www.legacyinvestingshow.com/blog/retirement-withdrawal-strategy-calculator&quot;
-    },
-    "articleSection": &quot;Retirement&quot;,
-    "wordCount": 1885,
-    "keywords": &quot;retirement withdrawal strategy calculator, retirement withdrawal strategy, safe withdrawal rate, tax-efficient withdrawal order, retirement withdrawal strategy calculator for couples, how to withdraw from Roth and 401k in retirement, retirement calculator to include taxes social security and inflation&quot;,
-    "speakable": {
-        "@type": "SpeakableSpecification",
-        "cssSelector": [".minimal-article-title", ".minimal-content p:first-of-type"]
-    },
-    "isAccessibleForFree": true,
-    "inLanguage": "en-US"
-}
-</script>
+        "author": {
+            "@type": "Person",
+            "@id": "https://www.legacyinvestingshow.com/about#author",
+            "name": "Preston Seo",
+            "url": "https://www.legacyinvestingshow.com/about",
+            "jobTitle": "Founder, Legacy Investing Show",
+            "description": "Personal finance educator and strategy coach",
+            "knowsAbout": [
+                "Airbnb Arbitrage",
+                "Real Estate Investing",
+                "Short-Term Rentals",
+                "Passive Income Strategies",
+                "Property Management"
+            ],
+            "sameAs": [
+                "https://www.instagram.com/thelegacyshow",
+                "https://www.youtube.com/@thelegacyinvestingshow",
+                "https://www.tiktok.com/@thelegacyshow"
+            ]
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Legacy Investing Show",
+            "url": "https://www.legacyinvestingshow.com",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.legacyinvestingshow.com/assets/images/logo.png",
+                "width": 512,
+                "height": 512
+            },
+            "sameAs": [
+                "https://www.instagram.com/thelegacyshow",
+                "https://www.youtube.com/@thelegacyinvestingshow",
+                "https://www.tiktok.com/@thelegacyshow",
+                "https://www.facebook.com/share/19LQhE6gmh/"
+            ]
+        },
+        "datePublished": "2026-02-15T00:00:00.000Z",
+        "dateModified": "2026-02-15T00:00:00.000Z",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.legacyinvestingshow.com/blog/retirement-withdrawal-strategy-calculator"
+        },
+        "articleSection": "Retirement",
+        "wordCount": "2012",
+        "keywords": "investing, wealth building, financial freedom",
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [".minimal-article-title", ".minimal-content p:first-of-type"]
+        },
+        "isAccessibleForFree": true,
+        "inLanguage": "en-US"
+    }
+    </script>
 
-
-<!-- FAQPage Schema -->
-<script type="application/ld+json">
-{
+    <!-- FAQPage Schema (if FAQs exist) -->
+    <script type="application/ld+json">
+    {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-        
         {
             "@type": "Question",
-            "name": &quot;How much annual income can retirement withdrawal strategy calculator support?&quot;,
+            "name": "How much annual income can retirement withdrawal strategy calculator support?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;A common planning band is 3.5%-4.5% of investable assets. For a $1,200,000 portfolio, that is roughly $42,000-$54,000 per year before tax adjustments and guaranteed-income offsets.&quot;
+                "text": "A common planning band is 3.5%-4.5% of investable assets. For a $1,200,000 portfolio, that is roughly $42,000-$54,000 per year before tax adjustments and guaranteed-income offsets."
             }
         },
-        
         {
             "@type": "Question",
-            "name": &quot;What withdrawal mix is commonly used with retirement withdrawal strategy calculator?&quot;,
+            "name": "What withdrawal mix is commonly used with retirement withdrawal strategy calculator?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;A practical starter split is 55%-70% tax-deferred, 20%-35% taxable, and 10%-20% Roth over the first five years, then adjusted annually using bracket and healthcare-premium thresholds.&quot;
+                "text": "A practical starter split is 55%-70% tax-deferred, 20%-35% taxable, and 10%-20% Roth over the first five years, then adjusted annually using bracket and healthcare-premium thresholds."
             }
         },
-        
         {
             "@type": "Question",
-            "name": &quot;How quickly can I build a reliable retirement withdrawal strategy calculator plan?&quot;,
+            "name": "How quickly can I build a reliable retirement withdrawal strategy calculator plan?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;You can usually draft a workable plan in 2-4 weeks, then pressure-test it with a 30-year projection using three return paths: conservative, base, and stress scenarios.&quot;
+                "text": "You can usually draft a workable plan in 2-4 weeks, then pressure-test it with a 30-year projection using three return paths: conservative, base, and stress scenarios."
             }
         },
-        
         {
             "@type": "Question",
-            "name": &quot;What sequence risk guardrails should be included in retirement withdrawal strategy calculator?&quot;,
+            "name": "What sequence risk guardrails should be included in retirement withdrawal strategy calculator?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Set at least three rules: cut discretionary spending by 8%-12% after a 15% portfolio drawdown, pause inflation raises after a 20% drawdown, and review allocation at every 10% decline.&quot;
+                "text": "Set at least three rules: cut discretionary spending by 8%-12% after a 15% portfolio drawdown, pause inflation raises after a 20% drawdown, and review allocation at every 10% decline."
             }
         },
-        
         {
             "@type": "Question",
-            "name": &quot;What tax target should I monitor while using retirement withdrawal strategy calculator?&quot;,
+            "name": "What tax target should I monitor while using retirement withdrawal strategy calculator?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Track your effective tax rate and bracket headroom each year. Many retirees aim to stay within a predefined band, often 12%-22%, before deciding on larger traditional-account withdrawals.&quot;
+                "text": "Track your effective tax rate and bracket headroom each year. Many retirees aim to stay within a predefined band, often 12%-22%, before deciding on larger traditional-account withdrawals."
             }
         },
-        
         {
             "@type": "Question",
-            "name": &quot;How often should retirement withdrawal strategy calculator be updated?&quot;,
+            "name": "How often should retirement withdrawal strategy calculator be updated?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Run an annual full reset plus a mid-year check. Update sooner when spending shifts by more than 10%, market values move by 15%+, or Social Security/pension timing changes.&quot;
+                "text": "Run an annual full reset plus a mid-year check. Update sooner when spending shifts by more than 10%, market values move by 15%+, or Social Security/pension timing changes."
             }
         }
-        
     ]
 }
-</script>
+    </script>
 
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Legacy Investing Show",
+        "url": "https://www.legacyinvestingshow.com",
+        "logo": "https://www.legacyinvestingshow.com/assets/images/logo.png",
+        "sameAs": [
+            "https://www.instagram.com/thelegacyinvestingshow/",
+            "https://www.youtube.com/@LegacyInvestingShow",
+            "https://www.tiktok.com/@thelegacyinvestingshow",
+            "https://www.facebook.com/share/19LQhE6gmh/"
+        ]
+    }
+    </script>
 
-<!-- Organization Schema -->
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Legacy Investing Show",
-    "url": "https://www.legacyinvestingshow.com",
-    "logo": "https://www.legacyinvestingshow.com/assets/images/logo.png",
-    "sameAs": [
-        "https://www.instagram.com/thelegacyinvestingshow/",
-        "https://www.youtube.com/@LegacyInvestingShow",
-        "https://www.tiktok.com/@thelegacyinvestingshow",
-        "https://www.facebook.com/share/19LQhE6gmh/"
-    ]
-}
-</script>
-
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
 </head>
 <body class="bg-cream text-navy">
+    <!-- Skip to main content (accessibility) -->
     <a href="#main" class="skip-link">Skip to main content</a>
 
+    <!-- Header -->
     <header class="header-glass fixed top-0 left-0 right-0 z-50">
-    <nav class="container-custom" aria-label="Main navigation">
-        <div class="flex items-center justify-between h-16">
-            <a href="/" class="flex items-center gap-2 font-medium text-gray-900 hover:text-gray-700 transition-colors">
-                <img src="../assets/images/logo.png" alt="Legacy Investing Show Logo" width="28" height="28" class="w-7 h-7">
-                <span>Legacy Investing Show</span>
-            </a>
+        <nav class="container-custom" aria-label="Main navigation">
+            <div class="flex items-center justify-between h-20">
+                <a href="/" class="flex items-center gap-3 font-semibold text-navy">
+                    <img src="/assets/images/logo.png" alt="Legacy Investing Show Logo" width="36" height="36" class="w-9 h-9">
+                    <span class="text-lg hidden sm:inline">Legacy Investing Show</span>
+                </a>
 
-            <div class="hidden md:flex items-center gap-8">
-                <a href="/" class="nav-link">Home</a>
-                <a href="/about" class="nav-link">About</a>
-                <a href="/success-stories" class="nav-link">Results</a>
-                <a href="/blog/" class="nav-link nav-link-active">Blog</a>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/success-stories" class="nav-link">Results</a>
+                    <a href="/blog/" class="nav-link nav-link-active">Blog</a>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-navy" aria-label="Open menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
             </div>
 
-            <button id="mobile-menu-btn" class="md:hidden p-2 text-navy" aria-label="Open menu">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                </svg>
-            </button>
-        </div>
-
-        <div id="mobile-menu" class="hidden md:hidden pb-4">
-            <div class="flex flex-col gap-3">
-                <a href="/" class="nav-link">Home</a>
-                <a href="/about" class="nav-link">About</a>
-                <a href="/success-stories" class="nav-link">Results</a>
-                <a href="/blog/" class="nav-link">Blog</a>
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col gap-3">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/success-stories" class="nav-link">Results</a>
+                    <a href="/blog/" class="nav-link nav-link-active">Blog</a>
+                </div>
             </div>
-        </div>
-    </nav>
-</header>
-
+        </nav>
+    </header>
 
     <!-- Reading Progress Bar -->
     <div class="reading-progress" aria-hidden="true">
@@ -400,21 +273,22 @@
     </div>
 
     <main id="main">
+        <!-- Article Header -->
         <article class="minimal-article">
+            <!-- Visual Breadcrumb Navigation -->
             <nav aria-label="Breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb__item">
-            <a href="/" class="breadcrumb__link">Home</a>
-        </li>
-        <li class="breadcrumb__item">
-            <a href="/blog/" class="breadcrumb__link">Blog</a>
-        </li>
-        <li class="breadcrumb__item">
-            <span class="breadcrumb__current">Retirement Withdrawal Strategy Calculator: Practical Guide, Tradeoffs, and a 90-Day Execution Plan</span>
-        </li>
-    </ol>
-</nav>
-
+                <ol class="breadcrumb">
+                    <li class="breadcrumb__item">
+                        <a href="/" class="breadcrumb__link">Home</a>
+                    </li>
+                    <li class="breadcrumb__item">
+                        <a href="/blog/" class="breadcrumb__link">Blog</a>
+                    </li>
+                    <li class="breadcrumb__item">
+                        <span class="breadcrumb__current">Retirement Withdrawal Strategy Calculator: Practical Guide, Tradeoffs, and a 90-Day Execution Plan</span>
+                    </li>
+                </ol>
+            </nav>
 
             <header class="minimal-article-header">
                 <div class="minimal-article-meta">
@@ -422,11 +296,11 @@
                     <span class="meta-dot"></span>
                     <time datetime="2026-02-15T00:00:00.000Z">February 15, 2026</time>
                     <span class="meta-dot"></span>
-                    <span>8 min min read</span>
+                    <span>11 min read</span>
                 </div>
                 <h1 class="minimal-article-title">Retirement Withdrawal Strategy Calculator: Practical Guide, Tradeoffs, and a 90-Day Execution Plan</h1>
                 <div class="minimal-article-author">
-                    <img src="../assets/images/preston-main.jpg" alt="Preston Seo" width="36" height="36" class="author-avatar">
+                    <img src="/assets/images/preston-avatar.jpg" alt="Preston Seo" width="36" height="36" class="author-avatar" onerror="this.src='/assets/images/logo.png'">
                     <span>Preston Seo</span>
                 </div>
             </header>
@@ -434,76 +308,103 @@
             <!-- Featured Image -->
             <div class="minimal-featured-image">
                 <picture>
-                    <source srcset="../assets/images/blog/retirement-withdrawal-strategy-calculator.jpg" type="image/webp">
-                    <img src="../assets/images/blog/retirement-withdrawal-strategy-calculator.jpg" alt="Retirement Withdrawal Strategy Calculator: Practical Guide, Tradeoffs, and a 90-Day Execution Plan" width="800" height="450" loading="eager" fetchpriority="high" decoding="async">
+                    <source srcset="/assets/images/blog/retirement-withdrawal-strategy-calculator.webp" type="image/webp">
+                    <img src="/assets/images/blog/retirement-withdrawal-strategy-calculator.jpg"
+                         alt="Retirement Withdrawal Strategy Calculator: Practical Guide, Tradeoffs, and a 90-Day Execution Plan"
+                         width="800"
+                         height="450"
+                         loading="eager"
+                         fetchpriority="high"
+                         decoding="async"
+                         onerror="this.onerror=null;this.src='/assets/images/og-blog.jpg';">
                 </picture>
             </div>
 
-            <!-- Statistics Cards -->
+            <!-- Key Statistics Cards (rendered from frontmatter) -->
             
-                <section class="statistics-section" aria-label="Key statistics">
-    <div class="statistics-grid">
-        
-        <div class="stat-card" data-stat-index="0">
-            <div class="stat-icon-wrapper">
+        <section class="statistics-section" aria-label="Key statistics">
+            <div class="statistics-grid">
+                
+            <div class="stat-card" data-stat-index="0">
+                <div class="stat-icon-wrapper">
+                    <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                </div>
+                <div class="stat-value">4%</div>
+                <div class="stat-label">Common starting withdrawal anchor</div>
+                <span class="stat-context">Use 4% as a baseline, then stress-test taxes, inflation, and market sequence before locking a spend amount.</span>
                 
             </div>
-            <div class="stat-value">4%</div>
-            <div class="stat-label">Common starting withdrawal anchor</div>
-            
-            <span class="stat-context">Use 4% as a baseline, then stress-test taxes, inflation, and market sequence before locking a spend amount.</span>
-            
-            
-        </div>
-        
-        <div class="stat-card" data-stat-index="1">
-            <div class="stat-icon-wrapper">
-                
-            </div>
-            <div class="stat-value">30 days</div>
-            <div class="stat-label">Typical setup window</div>
-            
-            <span class="stat-context">A focused 30-day checklist from budget lock to advisor questions gives you repeatable execution confidence.</span>
-            
-            
-        </div>
-        
-        <div class="stat-card" data-stat-index="2">
-            <div class="stat-icon-wrapper">
-                
-            </div>
-            <div class="stat-value">3 account buckets</div>
-            <div class="stat-label">Tax layer minimum</div>
-            
-            <span class="stat-context">Tax-deferred, tax-free, and taxable buckets need explicit sequencing to prevent avoidable tax drag on spending.</span>
-            
-            
-        </div>
-        
-        <div class="stat-card" data-stat-index="3">
-            <div class="stat-icon-wrapper">
-                
-            </div>
-            <div class="stat-value">6 methods</div>
-            <div class="stat-label">Method comparison baseline</div>
-            
-            <span class="stat-context">Some tools compare multiple methods, which is useful for avoiding overreliance on a single withdrawal rate.</span>
-            
-            
-        </div>
-        
-    </div>
-</section>
 
+            <div class="stat-card" data-stat-index="1">
+                <div class="stat-icon-wrapper">
+                    <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                </div>
+                <div class="stat-value">30 days</div>
+                <div class="stat-label">Typical setup window</div>
+                <span class="stat-context">A focused 30-day checklist from budget lock to advisor questions gives you repeatable execution confidence.</span>
+                
+            </div>
+
+            <div class="stat-card" data-stat-index="2">
+                <div class="stat-icon-wrapper">
+                    <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                </div>
+                <div class="stat-value">3 account buckets</div>
+                <div class="stat-label">Tax layer minimum</div>
+                <span class="stat-context">Tax-deferred, tax-free, and taxable buckets need explicit sequencing to prevent avoidable tax drag on spending.</span>
+                
+            </div>
+
+            <div class="stat-card" data-stat-index="3">
+                <div class="stat-icon-wrapper">
+                    <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                </div>
+                <div class="stat-value">6 methods</div>
+                <div class="stat-label">Method comparison baseline</div>
+                <span class="stat-context">Some tools compare multiple methods, which is useful for avoiding overreliance on a single withdrawal rate.</span>
+                
+            </div>
+            </div>
+        </section>
+
+            <!-- Table of Contents (auto-generated for long articles) -->
             
+        <nav class="toc" aria-label="Table of contents">
+            <p class="toc__title">Contents</p>
+            <ul class="toc__list">
+                <li class="toc__item"><a href="#why-a-retirement-withdrawal-strategy-calculator-should-be-your-operating-system" class="toc__link">Why a retirement withdrawal strategy calculator should be your operating system</a></li>
+                <li class="toc__item"><a href="#the-retirement-withdrawal-strategy-calculator-framework-you-should-run" class="toc__link">The retirement withdrawal strategy calculator framework you should run</a></li>
+                <li class="toc__item toc__item--h3"><a href="#1-spend-first-then-choose-growth-assumptions" class="toc__link">1) Spend first, then choose growth assumptions</a></li>
+                <li class="toc__item toc__item--h3"><a href="#2-set-a-realistic-retirement-horizon" class="toc__link">2) Set a realistic retirement horizon</a></li>
+                <li class="toc__item toc__item--h3"><a href="#3-model-return-paths-and-inflation-assumptions-explicitly" class="toc__link">3) Model return paths and inflation assumptions explicitly</a></li>
+                <li class="toc__item toc__item--h3"><a href="#4-put-taxes-and-benefit-timing-into-one-model" class="toc__link">4) Put taxes and benefit timing into one model</a></li>
+                <li class="toc__item toc__item--h3"><a href="#5-define-failure-and-action-rules-in-advance" class="toc__link">5) Define failure and action rules in advance</a></li>
+                <li class="toc__item"><a href="#build-your-inputs-in-a-way-professional-tools-can-compare" class="toc__link">Build your inputs in a way professional tools can compare</a></li>
+                <li class="toc__item"><a href="#scenario-table-what-changes-when-assumptions-move" class="toc__link">Scenario table: what changes when assumptions move</a></li>
+                <li class="toc__item"><a href="#fully-worked-numeric-example-a-2-25m-household" class="toc__link">Fully worked numeric example: a $2.25M household</a></li>
+                <li class="toc__item"><a href="#step-by-step-implementation-plan" class="toc__link">Step-by-step implementation plan</a></li>
+                <li class="toc__item"><a href="#30-day-checklist" class="toc__link">30-Day Checklist</a></li>
+                <li class="toc__item toc__item--h3"><a href="#days-1-5" class="toc__link">Days 1-5</a></li>
+                <li class="toc__item toc__item--h3"><a href="#days-6-10" class="toc__link">Days 6-10</a></li>
+                <li class="toc__item toc__item--h3"><a href="#days-11-17" class="toc__link">Days 11-17</a></li>
+                <li class="toc__item toc__item--h3"><a href="#days-18-23" class="toc__link">Days 18-23</a></li>
+                <li class="toc__item toc__item--h3"><a href="#days-24-30" class="toc__link">Days 24-30</a></li>
+                <li class="toc__item"><a href="#how-this-compares-to-alternatives" class="toc__link">How This Compares To Alternatives</a></li>
+                <li class="toc__item"><a href="#common-mistakes-that-silently-break-plans" class="toc__link">Common mistakes that silently break plans</a></li>
+                <li class="toc__item"><a href="#when-not-to-use-this-strategy" class="toc__link">When Not To Use This Strategy</a></li>
+                <li class="toc__item"><a href="#questions-to-ask-your-cpa-advisor" class="toc__link">Questions To Ask Your CPA/Advisor</a></li>
+                <li class="toc__item"><a href="#related-resources" class="toc__link">Related Resources</a></li>
+            </ul>
+        </nav>
 
             <!-- Article Content -->
             <div class="minimal-content">
-                <p>A retirement withdrawal strategy calculator is the first real control for US retirement math when you are converting savings into a spending plan.</p>
+                <div class="prose-minimal">
+                    <p>A retirement withdrawal strategy calculator is the first real control for US retirement math when you are converting savings into a spending plan.</p>
 <p>If you are deciding how much to withdraw from IRAs, 401(k)s, Roth accounts, and taxable investments, this needs to be more than a single percentage. It must include taxes, Social Security timing, sequence risk, and your exact life plan.</p>
 <p>A lot of people use a calculator once, get one number, then force their budget to fit that number. That is where plans go wrong. If you read only one section of this article, start here: build assumptions first, then pull the number.</p>
 <p>If you want a baseline context, review the <a href="/blog/4-percent-rule">4 percent rule</a>, but use it as a starting checkpoint, not a final answer. For a broad retirement framework, combine this with the <a href="/topics/retirement">retirement hub</a> and tax sequencing notes in the <a href="/blog/401k-rollover-guide">401(k) rollover guide</a>.</p>
-<h2>Why a retirement withdrawal strategy calculator should be your operating system</h2>
+<h2 id="why-a-retirement-withdrawal-strategy-calculator-should-be-your-operating-system">Why a retirement withdrawal strategy calculator should be your operating system</h2>
 <p>A retirement withdrawal strategy calculator works only when you treat it as a decision system. A reliable process has three characteristics:</p>
 <ul>
 <li>Inputs are explicit and repeatable.</li>
@@ -511,22 +412,22 @@
 <li>Actions are pre-written when markets fall or taxes rise.</li>
 </ul>
 <p>This matters because the U.S. system adds moving parts. Distribution order affects taxes, taxes affect net spending, and spending decisions affect future taxes. A simple 4% output from a model is useful, but only after it has been layered through taxes and your withdrawal sequence.</p>
-<h2>The retirement withdrawal strategy calculator framework you should run</h2>
+<h2 id="the-retirement-withdrawal-strategy-calculator-framework-you-should-run">The retirement withdrawal strategy calculator framework you should run</h2>
 <p>Use a fixed workflow so results stay comparable over time.</p>
-<h3>1) Spend first, then choose growth assumptions</h3>
+<h3 id="1-spend-first-then-choose-growth-assumptions">1) Spend first, then choose growth assumptions</h3>
 <p>Your first input should be annual spending in today dollars, not desired portfolio growth. If spend is unclear, every calculation is fiction. Split spending into essentials, healthcare, and flexible spending.</p>
 <p>Use this practical formula:</p>
 <p>Desired gross from assets = (Target annual spending - guaranteed pre-tax income) / (1 - estimated effective tax rate).</p>
 <p>If target spend is 84,000, guaranteed income is 12,000, and effective tax rate is 24%, required gross from accounts is 94,737.</p>
-<h3>2) Set a realistic retirement horizon</h3>
+<h3 id="2-set-a-realistic-retirement-horizon">2) Set a realistic retirement horizon</h3>
 <p>If you are 62 and expect a 28 to 30 year retirement period, test 30 years even if you feel healthy. A 20-year plan can look comfortable while a 30-year plan breaks during a long life event sequence.</p>
-<h3>3) Model return paths and inflation assumptions explicitly</h3>
+<h3 id="3-model-return-paths-and-inflation-assumptions-explicitly">3) Model return paths and inflation assumptions explicitly</h3>
 <p>Use at least three assumptions: base, downside sequence, and high inflation. Avoid using one flat return number forever. The key risk is sequence of returns, especially in the first several years after stopping work.</p>
-<h3>4) Put taxes and benefit timing into one model</h3>
+<h3 id="4-put-taxes-and-benefit-timing-into-one-model">4) Put taxes and benefit timing into one model</h3>
 <p>Include pre-tax withdrawals, Roth withdrawals, taxable gains, state taxes, and Social Security start age before finalizing a yearly withdrawal amount. A 2 to 4 percentage point tax-rate shift can change monthly spend by thousands.</p>
-<h3>5) Define failure and action rules in advance</h3>
+<h3 id="5-define-failure-and-action-rules-in-advance">5) Define failure and action rules in advance</h3>
 <p>Your strategy should include what you will do before the market does. Example rule: if two bad years occur and portfolio value drops below your threshold, you cap discretionary spending, not panic-liquidate growth assets.</p>
-<h2>Build your inputs in a way professional tools can compare</h2>
+<h2 id="build-your-inputs-in-a-way-professional-tools-can-compare">Build your inputs in a way professional tools can compare</h2>
 <p>Different retirement calculators can be powerful if your definitions match. This is where many people create false confidence.</p>
 <p>Use one standardized sheet:</p>
 <ul>
@@ -544,44 +445,42 @@
 <li>guardrail method with caps and floors.</li>
 </ol>
 <p>Compare gross withdrawal, net withdrawal, and portfolio floor by year 5, 10, 15, and 30.</p>
-<h2>Scenario table: what changes when assumptions move</h2>
+<h2 id="scenario-table-what-changes-when-assumptions-move">Scenario table: what changes when assumptions move</h2>
 <p>Use a table like this in your own model, then stress each row:</p>
 <table>
 <thead>
 <tr>
 <th>Scenario</th>
 <th>Core rule</th>
-<th style="text-align:right">Year 1 withdrawal</th>
+<th align="right">Year 1 withdrawal</th>
 <th>Stress outcome assumptions</th>
 <th>Practical reading</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>A. Baseline 4% inflation-adjusted</td>
 <td>Start 4% of total portfolio and inflate each year</td>
-<td style="text-align:right">4% of 2.25M = 90,000</td>
+<td align="right">4% of 2.25M = 90,000</td>
 <td>In a 50-scenario stress set, 11 scenarios fail before year 30</td>
 <td>Clean benchmark, weaker in poor early market years</td>
 </tr>
 <tr>
 <td>B. Guardrail method</td>
 <td>Start 4%, cut or increase within rule bands</td>
-<td style="text-align:right">90,000 first year, then banded adjustments</td>
+<td align="right">90,000 first year, then banded adjustments</td>
 <td>Same stress set, 7 scenarios fail before year 30</td>
 <td>More resilient to sequence risk than plain 4%</td>
 </tr>
 <tr>
 <td>C. Tax-aware floor/ceiling</td>
 <td>Start 90,000 with spending floor 73,000 and upper cap 110,000</td>
-<td style="text-align:right">90,000 first year, lower in bad years, higher only with tail room</td>
+<td align="right">90,000 first year, lower in bad years, higher only with tail room</td>
 <td>Same stress set, 5 scenarios fail before year 30</td>
 <td>Stronger lifestyle stability and better behavioral compliance</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p>Even if returns are similar, these outcomes shift mostly because of spending rule design and tax timing.</p>
-<h2>Fully worked numeric example: a $2.25M household</h2>
+<h2 id="fully-worked-numeric-example-a-2-25m-household">Fully worked numeric example: a $2.25M household</h2>
 <p>Assume:</p>
 <ul>
 <li>Portfolio: 1,450,000 in traditional IRA/401k, 390,000 in Roth, 410,000 in taxable.</li>
@@ -609,14 +508,13 @@
 <p>Step 4. Evaluate the first five years with a stress test.</p>
 <p>If year one is down and year two is worse, portfolio value declines while your spending need remains sticky. Under that scenario, a fixed 4% increase to spending can force abrupt cuts later. This is why your withdrawal model needs a predefined cut rule.</p>
 <p>Step 5. Evaluate at Social Security start.</p>
-<p>Once Social Security begins, gross needed from portfolio falls:
-(84,000 - 31,200) / (1 - 0.20) = 66,000.</p>
+<p>Once Social Security begins, gross needed from portfolio falls:<br>(84,000 - 31,200) / (1 - 0.20) = 66,000.</p>
 <p>At that point, 4% withdrawal provides buffer headroom. In practical terms, your biggest vulnerability is usually years 1 to 7, not year 20.</p>
 <p>Step 6. Tradeoff choice.</p>
 <p>Option A: stay with 4% and use guardrails. This usually preserves stability, especially with spouse-dependent expenses.</p>
 <p>Option B: raise year one to 4.2% and plan a forced drawdown cut if two early-year stress signals trigger. This increases early lifestyle comfort but raises the failure risk in deep stress cases.</p>
 <p>Option A is often better for households with predictable medical and living costs; Option B can work if your non-market cash flow is strong and you can tolerate a future spending haircut.</p>
-<h2>Step-by-step implementation plan</h2>
+<h2 id="step-by-step-implementation-plan">Step-by-step implementation plan</h2>
 <ol>
 <li>Define your annual spend and split essentials from flexible spending.</li>
 <li>Pull 3 years of tax returns and account snapshots.</li>
@@ -629,36 +527,36 @@
 <li>Record legal constraints, including RMD timing and filing status changes.</li>
 <li>Re-run the model every six months.</li>
 </ol>
-<h2>30-Day Checklist</h2>
-<h3>Days 1-5</h3>
+<h2 id="30-day-checklist">30-Day Checklist</h2>
+<h3 id="days-1-5">Days 1-5</h3>
 <ul>
 <li>Gather account balances and beneficiary records.</li>
 <li>Confirm debt, debt rates, and fixed obligations.</li>
 <li>Select your expected tax filing status and state tax assumptions.</li>
 <li>Identify exact Social Security start dates.</li>
 </ul>
-<h3>Days 6-10</h3>
+<h3 id="days-6-10">Days 6-10</h3>
 <ul>
 <li>Set essential and flexible spending buckets.</li>
 <li>Build a base-case budget and a 10-15% stress budget.</li>
 <li>Enter inputs into your primary retirement withdrawal strategy calculator.</li>
 <li>Save the input file with a date stamp.</li>
 </ul>
-<h3>Days 11-17</h3>
+<h3 id="days-11-17">Days 11-17</h3>
 <ul>
 <li>Run at least three scenarios.</li>
 <li>Track year 1, year 10, and year 20 remaining balances.</li>
 <li>Confirm the spending floor remains intact.</li>
 <li>Check Medicare IRMAA exposure in high-income years.</li>
 </ul>
-<h3>Days 18-23</h3>
+<h3 id="days-18-23">Days 18-23</h3>
 <ul>
 <li>Confirm tax-order logic under both rising and falling markets.</li>
 <li>Build a pre-written response if drawdowns are two years in a row.</li>
 <li>Test bridge asset sufficiency for 12 months of expenses.</li>
 <li>Run a separate pass for spouse survivor scenario.</li>
 </ul>
-<h3>Days 24-30</h3>
+<h3 id="days-24-30">Days 24-30</h3>
 <ul>
 <li>Compare outputs with a second calculator and resolve assumption drift.</li>
 <li>Finalize withdrawal policy and communication rules with family.</li>
@@ -666,7 +564,7 @@
 <li>Schedule a 6-month model review and document what changed.</li>
 </ul>
 <p>This checklist is practical because it turns spreadsheet work into executable policy.</p>
-<h2>How This Compares To Alternatives</h2>
+<h2 id="how-this-compares-to-alternatives">How This Compares To Alternatives</h2>
 <table>
 <thead>
 <tr>
@@ -675,8 +573,7 @@
 <th>Cons</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>Single 4% rule output</td>
 <td>Fast and easy to explain</td>
 <td>Ignores tax sequencing and drawdown stress unless you add extra logic</td>
@@ -696,10 +593,9 @@
 <td>Strong base spending floor</td>
 <td>Reduced flexibility and potential opportunity cost</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p>For most real U.S. households, the best path is a base withdrawal rule with guardrails and a tax-aware sequence, not a single ratio.</p>
-<h2>Common mistakes that silently break plans</h2>
+<h2 id="common-mistakes-that-silently-break-plans">Common mistakes that silently break plans</h2>
 <ul>
 <li>Treating calculators as financial certainty.</li>
 <li>Using only gross withdrawal targets and ignoring taxes.</li>
@@ -710,7 +606,7 @@
 <li>Assuming Social Security and pension dates are fixed when policy or timing may change.</li>
 <li>Delaying model updates to the point where your plan drifts.</li>
 </ul>
-<h2>When Not To Use This Strategy</h2>
+<h2 id="when-not-to-use-this-strategy">When Not To Use This Strategy</h2>
 <p>Do not use this framework as your only strategy if:</p>
 <ul>
 <li>You need guaranteed payment for debt obligations regardless of markets.</li>
@@ -719,7 +615,7 @@
 <li>You are unwilling or unable to cut spending in weak markets.</li>
 </ul>
 <p>In those cases, pair this with guaranteed income blocks and conservative liquidity reserves.</p>
-<h2>Questions To Ask Your CPA/Advisor</h2>
+<h2 id="questions-to-ask-your-cpa-advisor">Questions To Ask Your CPA/Advisor</h2>
 <ol>
 <li>How will different withdrawal orders affect AGI, Medicare IRMAA, and state taxes?</li>
 <li>What is the best account sequence for our tax profile over the first 10 years?</li>
@@ -732,7 +628,7 @@
 <p>If you want deeper tax specifics, also read the <a href="/blog/catch-up-contributions">catch-up contributions</a>, <a href="/blog/457b-plan-guide">457b plan guide</a>, and <a href="/blog/early-retirement-withdrawal">early retirement withdrawal</a> topics. For a structured path forward, compare this with existing <a href="/blog/">blog resources</a>.</p>
 <p>Research context is useful but imperfect. External tools such as ZVV, Sage Calculator, Omnicalculator, and TimeandMoneyTree are helpful for benchmarking logic, stress cases, and comparison workflows. Treat them as inputs to your planning process, not final authority.</p>
 <p>At the end of the process, your output should be a documented withdrawal policy with a trigger list and quarterly recalibration steps. If your policy can survive a bad 24-month market sequence, you are managing risk, not just percentages.</p>
-<h2>Related Resources</h2>
+<h2 id="related-resources">Related Resources</h2>
 <ul>
 <li><a href="/topics/retirement">Retirement Hub</a></li>
 <li><a href="/blog">Latest Blog Posts</a></li>
@@ -741,88 +637,236 @@
 <li><a href="/blog/retirement-withdrawal-strategy-tax-implications">Related Guide: retirement withdrawal strategy tax implications</a></li>
 </ul>
 
+                </div>
+
+                <!-- Author Bio with E-E-A-T Signals -->
+                <aside class="author-bio" itemscope itemtype="https://schema.org/Person">
+                    <div class="flex items-start gap-4">
+                        <picture>
+                            <source srcset="/assets/images/preston-main.webp" type="image/webp">
+                            <img src="/assets/images/preston-main.jpg"
+                                 alt="Preston Seo"
+                                 width="64"
+                                 height="64"
+                                 class="w-16 h-16 rounded-full object-cover"
+                                 itemprop="image"
+                                 onerror="this.src='/assets/images/logo.png'">
+                        </picture>
+                        <div>
+                            <p class="font-bold text-navy" itemprop="name">Preston Seo</p>
+                            <p class="text-sm text-gold" itemprop="jobTitle">Real Estate Investor & Financial Educator</p>
+                            <p class="text-sm text-secondary mt-2" itemprop="description">
+                                Preston has built a $15M+ real estate portfolio and helped 2,000+ students
+                                achieve financial freedom. He specializes in tax optimization, Airbnb arbitrage,
+                                and wealth building strategies.
+                            </p>
+                            <a href="/about" class="text-sm text-gold hover:text-navy mt-2 inline-block" itemprop="url">Learn more about Preston Seo →</a>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- FAQ Section (rendered from frontmatter) -->
+                
+        <section class="faq-section" aria-label="Frequently asked questions">
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+            <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
+                
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-question" aria-expanded="true" aria-controls="faq-answer-0">
+                    <span itemprop="name">How much annual income can retirement withdrawal strategy calculator support?</span>
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                </button>
+                <div class="faq-answer faq-answer--open" id="faq-answer-0" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>A common planning band is 3.5%-4.5% of investable assets. For a $1,200,000 portfolio, that is roughly $42,000-$54,000 per year before tax adjustments and guaranteed-income offsets.</p>
+                    </div>
+                </div>
             </div>
 
-            <!-- FAQ Section -->
-            
-                <section class="mt-16 bg-white rounded-xl shadow-lg p-8">
-    <h2 class="text-3xl font-bold text-navy mb-8">Frequently Asked Questions</h2>
-    <div class="space-y-6">
-        
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">How much annual income can retirement withdrawal strategy calculator support?</h3>
-            <p class="text-gray-600">A common planning band is 3.5%-4.5% of investable assets. For a $1,200,000 portfolio, that is roughly $42,000-$54,000 per year before tax adjustments and guaranteed-income offsets.</p>
-        </div>
-        
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">What withdrawal mix is commonly used with retirement withdrawal strategy calculator?</h3>
-            <p class="text-gray-600">A practical starter split is 55%-70% tax-deferred, 20%-35% taxable, and 10%-20% Roth over the first five years, then adjusted annually using bracket and healthcare-premium thresholds.</p>
-        </div>
-        
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">How quickly can I build a reliable retirement withdrawal strategy calculator plan?</h3>
-            <p class="text-gray-600">You can usually draft a workable plan in 2-4 weeks, then pressure-test it with a 30-year projection using three return paths: conservative, base, and stress scenarios.</p>
-        </div>
-        
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">What sequence risk guardrails should be included in retirement withdrawal strategy calculator?</h3>
-            <p class="text-gray-600">Set at least three rules: cut discretionary spending by 8%-12% after a 15% portfolio drawdown, pause inflation raises after a 20% drawdown, and review allocation at every 10% decline.</p>
-        </div>
-        
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">What tax target should I monitor while using retirement withdrawal strategy calculator?</h3>
-            <p class="text-gray-600">Track your effective tax rate and bracket headroom each year. Many retirees aim to stay within a predefined band, often 12%-22%, before deciding on larger traditional-account withdrawals.</p>
-        </div>
-        
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">How often should retirement withdrawal strategy calculator be updated?</h3>
-            <p class="text-gray-600">Run an annual full reset plus a mid-year check. Update sooner when spending shifts by more than 10%, market values move by 15%+, or Social Security/pension timing changes.</p>
-        </div>
-        
-    </div>
-</section>
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+                    <span itemprop="name">What withdrawal mix is commonly used with retirement withdrawal strategy calculator?</span>
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                </button>
+                <div class="faq-answer " id="faq-answer-1" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>A practical starter split is 55%-70% tax-deferred, 20%-35% taxable, and 10%-20% Roth over the first five years, then adjusted annually using bracket and healthcare-premium thresholds.</p>
+                    </div>
+                </div>
+            </div>
 
-            
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+                    <span itemprop="name">How quickly can I build a reliable retirement withdrawal strategy calculator plan?</span>
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                </button>
+                <div class="faq-answer " id="faq-answer-2" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>You can usually draft a workable plan in 2-4 weeks, then pressure-test it with a 30-year projection using three return paths: conservative, base, and stress scenarios.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+                    <span itemprop="name">What sequence risk guardrails should be included in retirement withdrawal strategy calculator?</span>
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                </button>
+                <div class="faq-answer " id="faq-answer-3" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Set at least three rules: cut discretionary spending by 8%-12% after a 15% portfolio drawdown, pause inflation raises after a 20% drawdown, and review allocation at every 10% decline.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+                    <span itemprop="name">What tax target should I monitor while using retirement withdrawal strategy calculator?</span>
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                </button>
+                <div class="faq-answer " id="faq-answer-4" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Track your effective tax rate and bracket headroom each year. Many retirees aim to stay within a predefined band, often 12%-22%, before deciding on larger traditional-account withdrawals.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+                    <span itemprop="name">How often should retirement withdrawal strategy calculator be updated?</span>
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                </button>
+                <div class="faq-answer " id="faq-answer-5" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Run an annual full reset plus a mid-year check. Update sooner when spending shifts by more than 10%, market values move by 15%+, or Social Security/pension timing changes.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <script>
+            document.querySelectorAll('.faq-question').forEach(button => {
+                button.addEventListener('click', () => {
+                    const expanded = button.getAttribute('aria-expanded') === 'true';
+                    button.setAttribute('aria-expanded', !expanded);
+                    button.nextElementSibling.classList.toggle('faq-answer--open');
+                });
+            });
+        </script>
+
+                <!-- Related Posts -->
+                
+        <aside class="related-posts" aria-label="Related articles">
+            <h3 class="related-posts-title">Related Articles</h3>
+            <div class="related-posts-grid">
+                
+            <a href="/blog/4-percent-rule" class="related-post-item">
+                <div class="related-post-image">
+                    <img src="/assets/images/blog/4-percent-rule.jpg" alt="The 4% Rule: How Much Can You Safely Withdraw in Retirement?" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/og-blog.jpg';">
+                </div>
+                <div class="related-post-content">
+                    <h4 class="related-post-title">The 4% Rule: How Much Can You Safely Withdraw in Retirement?</h4>
+                    <span class="related-post-meta">8 min read</span>
+                </div>
+            </a>
+
+            <a href="/blog/401k-rollover-guide" class="related-post-item">
+                <div class="related-post-image">
+                    <img src="/assets/images/blog/401k-rollover-guide.jpg" alt="401(k) Rollover Guide: Move Your Retirement Funds the Right Way" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/og-blog.jpg';">
+                </div>
+                <div class="related-post-content">
+                    <h4 class="related-post-title">401(k) Rollover Guide: Move Your Retirement Funds the Right Way</h4>
+                    <span class="related-post-meta">8 min read</span>
+                </div>
+            </a>
+
+            <a href="/blog/401k-strategy-for-beginners" class="related-post-item">
+                <div class="related-post-image">
+                    <img src="/assets/images/blog/401k-strategy-for-beginners.jpg" alt="401k Strategy for Beginners: Complete 2026 Guide to Matching, Taxes, and Contribution Decisions" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/og-blog.jpg';">
+                </div>
+                <div class="related-post-content">
+                    <h4 class="related-post-title">401k Strategy for Beginners: Complete 2026 Guide to Matching, Taxes, and Contribution Decisions</h4>
+                    <span class="related-post-meta">12 min read</span>
+                </div>
+            </a>
+            </div>
+        </aside>
+            </div>
         </article>
+
+        <!-- CTA -->
+        <section class="minimal-cta">
+            <div class="minimal-cta-content">
+                <h2 class="minimal-cta-title">Join the 3-Day Wealth Challenge</h2>
+                <p class="minimal-cta-text">Learn strategies that helped build a $15M+ portfolio.</p>
+                <a href="https://www.managemoney101.com/challengeoptin" class="minimal-cta-button">Get Started</a>
+            </div>
+        </section>
     </main>
 
-    <footer class="bg-navy text-white py-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid md:grid-cols-4 gap-8">
-            <div>
-                <h3 class="text-xl font-bold text-gold mb-4">Legacy Investing Show</h3>
-                <p class="text-gray-400">Helping professionals build wealth through real estate investing and tax optimization strategies.</p>
+    <!-- Footer -->
+    <footer class="minimal-footer">
+        <div class="container-custom">
+            <div class="minimal-footer-content">
+                <div class="footer-brand">
+                    <img src="/assets/images/logo.png" alt="Legacy Investing Show" width="32" height="32">
+                    <span>Legacy Investing Show</span>
+                </div>
+                <div class="footer-links">
+                    <a href="/success-stories">Results</a>
+                    <a href="/blog/">Blog</a>
+                </div>
             </div>
-            <div>
-                <h4 class="font-semibold mb-4">Resources</h4>
-                <ul class="space-y-2 text-gray-400">
-                    <li><a href="/blog/" class="hover:text-gold transition">Blog</a></li>
-                    <li><a href="/tax-strategies/" class="hover:text-gold transition">Tax Strategies</a></li>
-                    <li><a href="/blog/" class="hover:text-gold transition">Resources</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-semibold mb-4">Legal</h4>
-                <ul class="space-y-2 text-gray-400">
-                    <li><a href="/privacy" class="hover:text-gold transition">Privacy Policy</a></li>
-                    <li><a href="/terms" class="hover:text-gold transition">Terms of Service</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-semibold mb-4">Connect</h4>
-                <ul class="space-y-2 text-gray-400">
-                    <li><a href="/about" class="hover:text-gold transition">About</a></li>
-                    <li><a href="/success-stories" class="hover:text-gold transition">Results</a></li>
-                </ul>
-            </div>
+            <div class="footer-copyright">Copyright 2025</div>
         </div>
-        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2026 Legacy Investing Show. All rights reserved.</p>
-        </div>
-    </div>
-</footer>
+    </footer>
 
+    <script defer src="/assets/js/main.js"></script>
 
-    <script src="../assets/js/main.js"></script>
+    <!-- Reading Progress Bar Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const progressBar = document.querySelector('.reading-progress-bar');
+            const progressContainer = document.querySelector('.reading-progress');
+            const article = document.querySelector('.minimal-article');
+
+            if (!progressBar || !article) return;
+
+            function updateProgress() {
+                const articleRect = article.getBoundingClientRect();
+                const articleTop = articleRect.top + window.scrollY;
+                const articleHeight = article.offsetHeight;
+                const windowHeight = window.innerHeight;
+                const scrolled = window.scrollY - articleTop + windowHeight * 0.3;
+                const total = articleHeight - windowHeight * 0.3;
+
+                // Show progress bar when scrolled into article
+                if (window.scrollY > articleTop - windowHeight) {
+                    progressContainer.classList.add('visible');
+                } else {
+                    progressContainer.classList.remove('visible');
+                }
+
+                // Calculate progress percentage
+                const progress = Math.min(Math.max((scrolled / total) * 100, 0), 100);
+                progressBar.style.width = progress + '%';
+            }
+
+            window.addEventListener('scroll', updateProgress, { passive: true });
+            updateProgress();
+        });
+    </script>
 </body>
 </html>
