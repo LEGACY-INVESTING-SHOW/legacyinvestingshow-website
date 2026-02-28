@@ -1193,6 +1193,14 @@
     color: var(--text-secondary);
   }
 
+  .prose-minimal ul {
+    list-style-type: disc;
+  }
+
+  .prose-minimal ol {
+    list-style-type: decimal;
+  }
+
   .prose-minimal li {
     margin-bottom: 10px;
   }
