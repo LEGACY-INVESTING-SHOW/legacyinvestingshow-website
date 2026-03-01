@@ -209,12 +209,12 @@ Current `vercel.json` caching is well-configured:
 
 #### Fix 1: Google Analytics Configuration
 **Location:** All HTML files, line ~139
-**Current:** `GA_MEASUREMENT_ID` (placeholder)
+**Current:** `G-2578PT1WSS` (placeholder)
 **Required:** Replace with real GA4 property ID
 
 ```bash
 # Find and replace across all files
-find . -name "*.html" -exec sed -i '' 's/GA_MEASUREMENT_ID/G-XXXXXXXXXX/g' {} \;
+find . -name "*.html" -exec sed -i '' 's/G-2578PT1WSS/G-XXXXXXXXXX/g' {} \;
 ```
 
 #### Fix 2: Google Search Console Setup
@@ -496,7 +496,7 @@ Example for `/topics/airbnb-arbitrage`:
 
 | Task | Owner | Est. Time |
 |------|-------|-----------|
-| Replace GA_MEASUREMENT_ID with real ID | Dev | 15 min |
+| Replace G-2578PT1WSS with real ID | Dev | 15 min |
 | Set up Google Search Console | Marketing | 30 min |
 | Add topic pages to sitemap | Dev | 1 hr |
 | Fix blog post future dates | Content | 1 hr |

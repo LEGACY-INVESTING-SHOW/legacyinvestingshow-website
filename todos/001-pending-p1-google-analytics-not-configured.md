@@ -11,7 +11,7 @@
 
 ## Problem Statement
 
-Google Analytics is completely non-functional across the entire website. All pages contain placeholder `GA_MEASUREMENT_ID` instead of an actual Google Analytics 4 property ID, resulting in **zero analytics data collection**. This prevents tracking traffic, user behavior, conversions, and all performance metrics.
+Google Analytics is completely non-functional across the entire website. All pages contain placeholder `G-2578PT1WSS` instead of an actual Google Analytics 4 property ID, resulting in **zero analytics data collection**. This prevents tracking traffic, user behavior, conversions, and all performance metrics.
 
 **Why This Matters:**
 - Cannot measure website traffic or user engagement
@@ -29,12 +29,12 @@ Google Analytics is completely non-functional across the entire website. All pag
 
 ```html
 <!-- PLACEHOLDER - NOT WORKING -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'GA_MEASUREMENT_ID');
+    gtag('config', 'G-2578PT1WSS');
 </script>
 ```
 
@@ -66,7 +66,7 @@ Google Analytics is completely non-functional across the entire website. All pag
 **Implementation:**
 1. Create GA4 property in Google Analytics
 2. Get measurement ID (format: G-XXXXXXXXXX)
-3. Find/replace all instances of `GA_MEASUREMENT_ID` with real ID
+3. Find/replace all instances of `G-2578PT1WSS` with real ID
 4. Verify tracking in GA4 DebugView
 5. Set up basic conversion events (CTA clicks)
 
@@ -95,7 +95,7 @@ Google Analytics is completely non-functional across the entire website. All pag
 1. Create GA4 property at https://analytics.google.com
 2. Copy measurement ID (G-XXXXXXXXXX)
 3. Run find/replace across all HTML files:
-   - Find: `GA_MEASUREMENT_ID`
+   - Find: `G-2578PT1WSS`
    - Replace: `G-[your-actual-id]`
 4. Deploy updated files
 5. Verify tracking:
@@ -148,7 +148,7 @@ After basic tracking works, add event tracking for:
 
 - [GA4 Setup Guide](https://support.google.com/analytics/answer/9304153)
 - [GA4 Event Tracking](https://developers.google.com/analytics/devguides/collection/ga4/events)
-- Current code location: Search for "GA_MEASUREMENT_ID" in all HTML files
+- Current code location: Search for "G-2578PT1WSS" in all HTML files
 - Related issue: #002 (Google Search Console not configured)
 
 ---

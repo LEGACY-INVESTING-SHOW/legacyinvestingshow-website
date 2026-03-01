@@ -40,7 +40,7 @@ The Legacy Investing Show website has **excellent foundational SEO infrastructur
 ## 🔴 P1 CRITICAL ISSUES (Must Fix Immediately)
 
 ### 1. Google Analytics Not Configured ⚠️
-**Issue:** Placeholder `GA_MEASUREMENT_ID` instead of real tracking ID
+**Issue:** Placeholder `G-2578PT1WSS` instead of real tracking ID
 **Impact:** **ZERO analytics data collection** - cannot measure anything
 **Location:** All HTML files (lines ~136-143)
 **Fix Time:** 15-30 minutes
@@ -49,7 +49,7 @@ The Legacy Investing Show website has **excellent foundational SEO infrastructur
 **Action Required:**
 ```bash
 # Find and replace in all HTML files
-Find: GA_MEASUREMENT_ID
+Find: G-2578PT1WSS
 Replace: G-XXXXXXXXXX (your real GA4 property ID)
 ```
 
@@ -259,7 +259,7 @@ Replace: G-XXXXXXXXXX (your real GA4 property ID)
 
 1. **Day 1:** Fix Google Analytics (30 min)
    - Create GA4 property
-   - Replace GA_MEASUREMENT_ID with real ID
+   - Replace G-2578PT1WSS with real ID
    - Verify tracking works
 
 2. **Day 1-2:** Set up Google Search Console (45 min)

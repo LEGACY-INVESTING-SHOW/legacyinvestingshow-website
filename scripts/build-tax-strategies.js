@@ -314,12 +314,12 @@ function generateIndexPage(strategies, personas) {
     }
     </script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'GA_MEASUREMENT_ID');
+        gtag('config', 'G-2578PT1WSS');
     </script>
 
     <style>
@@ -877,12 +877,12 @@ function generatePersonaPage(persona, strategies) {
     <link rel="apple-touch-icon" href="/assets/images/logo.png">
     <link rel="stylesheet" href="/assets/css/styles.css">
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'GA_MEASUREMENT_ID');
+        gtag('config', 'G-2578PT1WSS');
     </script>
 
     <style>
