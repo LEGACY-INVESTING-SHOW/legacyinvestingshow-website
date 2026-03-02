@@ -20,43 +20,12 @@
     <meta name="twitter:title" content="Augusta Rule vs Home Office Deduction for S-Corp Owners">
     <meta name="twitter:description" content="A scenario-driven comparison for S-corp owners deciding between Augusta Rule rent treatment and accountable-plan home office reimbursement.">
 
-    <meta name="theme-color" content="#FAF7F2">
+    <meta name="theme-color" content="#ffffff">
     <link rel="icon" type="image/png" href="/assets/images/logo.png">
-    <link rel="apple-touch-icon" href="/assets/images/logo.png">
     <link rel="stylesheet" href="/assets/css/styles.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Augusta Rule vs Home Office Deduction for S-Corp Owners","description":"A scenario-driven comparison for S-corp owners deciding between Augusta Rule rent treatment and accountable-plan home office reimbursement.","author":{"@type":"Person","name":"Preston Seo"},"publisher":{"@type":"Organization","name":"Legacy Investing Show"},"datePublished":"2026-03-02","dateModified":"2026-03-02","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.legacyinvestingshow.com/compare/augusta-rule-vs-home-office-deduction-s-corp"}}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I use both approaches in the same year?","acceptedAnswer":{"@type":"Answer","text":"Sometimes yes, if facts are distinct and expenses are not duplicated. Your CPA should map boundaries clearly before year-end."}},{"@type":"Question","name":"Is Augusta Rule always bigger?","acceptedAnswer":{"@type":"Answer","text":"No. It can be larger in some cases but fails quickly when valuation and meeting records are weak."}},{"@type":"Question","name":"What breaks home office deductions most often?","acceptedAnswer":{"@type":"Answer","text":"Mixed-use space and weak accountable-plan execution are common failure points."}}]}</script>
-
-    <!-- BreadcrumbList Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-        {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://www.legacyinvestingshow.com/"
-        },
-        {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Comparison Guides",
-                "item": "https://www.legacyinvestingshow.com/compare/"
-        },
-        {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "Augusta Rule vs Home Office Deduction"
-        }
-]
-    }
-    </script>
 
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
@@ -378,102 +347,130 @@
             margin: 0 0.5rem;
             color: #9ca3af;
         }
-        .related-strategies {
-            list-style: none;
-            padding: 0;
-            margin: 0;
+        @media (max-width: 767px) {
+            .compare-hero {
+                padding: 6.75rem 0 2.4rem;
+            }
+            .compare-title {
+                font-size: 1.65rem;
+            }
+            .compare-subtitle {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+            .compare-kpis {
+                grid-template-columns: 1fr;
+                gap: 0.75rem;
+            }
+            .compare-kpi {
+                padding: 0.8rem;
+            }
+            .content-section {
+                padding: 2.2rem 0;
+            }
+            .prose-content h2 {
+                font-size: 1.35rem;
+            }
+            .prose-content h3 {
+                font-size: 1.05rem;
+            }
+            .table-wrap {
+                margin-left: -0.25rem;
+                margin-right: -0.25rem;
+            }
+            .compare-table {
+                min-width: 0;
+            }
+            .compare-table thead {
+                display: none;
+            }
+            .compare-table,
+            .compare-table tbody,
+            .compare-table tr,
+            .compare-table td {
+                display: block;
+                width: 100%;
+            }
+            .compare-table tr {
+                border-bottom: 1px solid #e5e7eb;
+                padding: 0.45rem 0.1rem;
+            }
+            .compare-table td {
+                border-bottom: none;
+                padding: 0.45rem 0.6rem;
+            }
+            .compare-table td::before {
+                content: attr(data-label);
+                display: block;
+                font-size: 0.73rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.04em;
+                color: #6b7280;
+                margin-bottom: 0.2rem;
+            }
+            .split-panels {
+                grid-template-columns: 1fr;
+            }
+            .panel {
+                padding: 0.85rem;
+            }
+            .cta-card {
+                padding: 2rem 1rem;
+            }
+            .cta-card__title {
+                font-size: 1.45rem;
+            }
         }
-        .related-strategies li {
-            margin-bottom: 0.75rem;
-        }
-        .related-strategies a {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: #374151;
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: color 0.2s;
-        }
-        .related-strategies a:hover {
-            color: #059669;
-        }
-        .related-strategies svg {
-            width: 16px !important;
-            height: 16px !important;
-            flex-shrink: 0 !important;
-            color: #9ca3af;
-            display: inline-block;
-        }
-        .related-strategies a:hover svg {
-            color: #059669;
-        }
-
     </style>
 </head>
-<body class="bg-cream">
+<body class="bg-white text-gray-900">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-white px-4 py-2 rounded-lg z-50">
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-gray-900 text-white px-4 py-2 z-50">
         Skip to main content
     </a>
 
-    <!-- Header / Navigation -->
-    <header class="fixed top-0 left-0 right-0 z-50 header-glass">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
         <nav class="container-custom" aria-label="Main navigation">
-            <div class="flex items-center justify-between h-16 md:h-20">
-                <!-- Logo -->
-                <a href="/" class="flex items-center gap-3 font-semibold text-lg hover:opacity-80 transition-opacity">
-                    <img src="/assets/images/logo.png" alt="Legacy Investing Show Logo" width="36" height="36" class="w-9 h-9">
-                    <span class="hidden md:block">Preston Seo | Legacy Investing Show</span>
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="flex items-center gap-2 font-medium text-gray-900 hover:text-gray-700 transition-colors">
+                    <img src="/assets/images/logo.png" alt="Legacy Investing Show Logo" width="28" height="28" class="w-7 h-7">
+                    <span>Legacy Investing Show</span>
                 </a>
-                
-                <!-- Desktop Navigation -->
+
                 <div class="hidden md:flex items-center gap-6">
                     <a href="/" class="nav-link">Home</a>
                     <a href="/about" class="nav-link">About</a>
-                    <a href="/tax-strategies/" class="nav-link">Tax Strategies</a>
+                    <a href="/success-stories" class="nav-link">Results</a>
                     <a href="/blog/" class="nav-link">Blog</a>
                 </div>
-                
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700 hover:text-emerald-600 transition-colors" aria-label="Open menu" aria-expanded="false">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                     </svg>
                 </button>
             </div>
-            
-            <!-- Mobile Navigation -->
-            <div id="mobile-menu" class="hidden md:hidden pb-6 border-t border-gray-200 mt-4 pt-4">
-                <div class="flex flex-col gap-4">
+
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col gap-3">
                     <a href="/" class="nav-link">Home</a>
                     <a href="/about" class="nav-link">About</a>
-                    <a href="/tax-strategies/" class="nav-link">Tax Strategies</a>
+                    <a href="/success-stories" class="nav-link">Results</a>
                     <a href="/blog/" class="nav-link">Blog</a>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!-- Breadcrumb Navigation -->
-    <nav aria-label="Breadcrumb" class="container-custom pt-24 pb-4">
-        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-            <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a href="/" class="breadcrumb__link" itemprop="item"><span itemprop="name">Home</span></a>
-                <meta itemprop="position" content="1" />
-            </li>
-            <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a href="/compare/" class="breadcrumb__link" itemprop="item"><span itemprop="name">Comparison Guides</span></a>
-                <meta itemprop="position" content="2" />
-            </li>
-            <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <span class="breadcrumb__current" itemprop="name">Augusta Rule vs Home Office Deduction</span>
-                <meta itemprop="position" content="3" />
-            </li>
-        </ol>
-    </nav>
-
-    <main id="main" role="main">
+    <main id="main">
+        <div class="container-custom breadcrumb" style="padding-top: 5rem;">
+            <a href="/">Home</a>
+            <span class="sep">/</span>
+            <a href="/compare/">Compare</a>
+            <span class="sep">/</span>
+            <span class="text-gray-900">Augusta Rule vs Home Office Deduction for S-Corp Owners</span>
+        </div>
 
         <section class="compare-hero">
             <div class="container-custom">
@@ -532,51 +529,52 @@
                             </thead>
                             <tbody>
                                 <tr>
-          <td><strong>Primary requirement</strong></td>
-          <td>Fair-market rent and documented business-use days</td>
-          <td>Exclusive and regular business-use area</td>
-          <td>B for recurring use</td>
-          <td>0</td>
-          <td>2</td>
+          <td data-label="Decision Factor"><strong>Primary requirement</strong></td>
+          <td data-label="Augusta Rule">Fair-market rent and documented business-use days</td>
+          <td data-label="Home Office via Accountable Plan">Exclusive and regular business-use area</td>
+          <td data-label="Edge-Case Read">B for recurring use</td>
+          <td data-label="A Score">0</td>
+          <td data-label="B Score">2</td>
         </tr>
 <tr class="alt">
-          <td><strong>Admin complexity</strong></td>
-          <td>Medium (rental comps + meeting records)</td>
-          <td>Medium-High (plan setup + reimbursement workflow)</td>
-          <td>A for simplicity</td>
-          <td>2</td>
-          <td>0</td>
+          <td data-label="Decision Factor"><strong>Admin complexity</strong></td>
+          <td data-label="Augusta Rule">Medium (rental comps + meeting records)</td>
+          <td data-label="Home Office via Accountable Plan">Medium-High (plan setup + reimbursement workflow)</td>
+          <td data-label="Edge-Case Read">A for simplicity</td>
+          <td data-label="A Score">2</td>
+          <td data-label="B Score">0</td>
         </tr>
 <tr>
-          <td><strong>Audit defensibility</strong></td>
-          <td>Strong if rent comps are credible</td>
-          <td>Strong if exclusive-use test is clearly met</td>
-          <td>Tie</td>
-          <td>1</td>
-          <td>1</td>
+          <td data-label="Decision Factor"><strong>Audit defensibility</strong></td>
+          <td data-label="Augusta Rule">Strong if rent comps are credible</td>
+          <td data-label="Home Office via Accountable Plan">Strong if exclusive-use test is clearly met</td>
+          <td data-label="Edge-Case Read">Tie</td>
+          <td data-label="A Score">1</td>
+          <td data-label="B Score">1</td>
         </tr>
 <tr class="alt">
-          <td><strong>Cash-flow predictability</strong></td>
-          <td>Lumpy and event-driven</td>
-          <td>Steady monthly/quarterly reimbursements</td>
-          <td>B</td>
-          <td>0</td>
-          <td>2</td>
+          <td data-label="Decision Factor"><strong>Cash-flow predictability</strong></td>
+          <td data-label="Augusta Rule">Lumpy and event-driven</td>
+          <td data-label="Home Office via Accountable Plan">Steady monthly/quarterly reimbursements</td>
+          <td data-label="Edge-Case Read">B</td>
+          <td data-label="A Score">0</td>
+          <td data-label="B Score">2</td>
         </tr>
 <tr>
-          <td><strong>Failure risk</strong></td>
-          <td>Inflated rent or weak meeting substantiation</td>
-          <td>Mixed-use space or weak accountable plan records</td>
-          <td>Depends on habits</td>
-          <td>1</td>
-          <td>1</td>
+          <td data-label="Decision Factor"><strong>Failure risk</strong></td>
+          <td data-label="Augusta Rule">Inflated rent or weak meeting substantiation</td>
+          <td data-label="Home Office via Accountable Plan">Mixed-use space or weak accountable plan records</td>
+          <td data-label="Edge-Case Read">Depends on habits</td>
+          <td data-label="A Score">1</td>
+          <td data-label="B Score">1</td>
         </tr>
                                 <tr>
-                                    <td><strong>Total Weighted Signal</strong></td>
-                                    <td colspan="2">Directional score based on matrix interpretation</td>
-                                    <td>Use this only after qualification checks and stress testing.</td>
-                                    <td><strong>4</strong></td>
-                                    <td><strong>6</strong></td>
+                                    <td data-label="Decision Factor"><strong>Total Weighted Signal</strong></td>
+                                    <td data-label="Augusta Rule">Directional score from matrix interpretation.</td>
+                                    <td data-label="Home Office via Accountable Plan">Directional score from matrix interpretation.</td>
+                                    <td data-label="Edge-Case Read">Use this only after qualification checks and stress testing.</td>
+                                    <td data-label="A Score"><strong>4</strong></td>
+                                    <td data-label="B Score"><strong>6</strong></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -620,29 +618,29 @@
                             </thead>
                             <tbody>
                                 <tr>
-          <td><strong>Eligibility and qualification proof</strong></td>
-          <td>Draft or update written accountable plan policy.</td>
-          <td>Owner claims Augusta Rule days but has no calendar invites, agenda, or minutes.</td>
+          <td data-label="Evidence Requirement"><strong>Eligibility and qualification proof</strong></td>
+          <td data-label="What Good Looks Like">Draft or update written accountable plan policy.</td>
+          <td data-label="Common Failure Mode">Owner claims Augusta Rule days but has no calendar invites, agenda, or minutes.</td>
         </tr>
 <tr class="alt">
-          <td><strong>Economic substantiation</strong></td>
-          <td>Capture square-footage and room-use evidence with date stamps.</td>
-          <td>Rent rate is copied from luxury short-term listings rather than comparable meeting rent.</td>
+          <td data-label="Evidence Requirement"><strong>Economic substantiation</strong></td>
+          <td data-label="What Good Looks Like">Capture square-footage and room-use evidence with date stamps.</td>
+          <td data-label="Common Failure Mode">Rent rate is copied from luxury short-term listings rather than comparable meeting rent.</td>
         </tr>
 <tr>
-          <td><strong>Contemporaneous logs and operating records</strong></td>
-          <td>Create meeting-log template with attendees, purpose, and outcomes.</td>
-          <td>Home office includes guest bedroom use, weakening exclusive-use support.</td>
+          <td data-label="Evidence Requirement"><strong>Contemporaneous logs and operating records</strong></td>
+          <td data-label="What Good Looks Like">Create meeting-log template with attendees, purpose, and outcomes.</td>
+          <td data-label="Common Failure Mode">Home office includes guest bedroom use, weakening exclusive-use support.</td>
         </tr>
 <tr class="alt">
-          <td><strong>Governance artifacts and approvals</strong></td>
-          <td>Save local rental comps supporting any Augusta Rule day rate.</td>
-          <td>S-corp reimburses without a written accountable plan or timely substantiation.</td>
+          <td data-label="Evidence Requirement"><strong>Governance artifacts and approvals</strong></td>
+          <td data-label="What Good Looks Like">Save local rental comps supporting any Augusta Rule day rate.</td>
+          <td data-label="Common Failure Mode">S-corp reimburses without a written accountable plan or timely substantiation.</td>
         </tr>
 <tr>
-          <td><strong>Annual review archive</strong></td>
-          <td>Run quarterly documentation audit before reimbursement/payment.</td>
-          <td>Without annual review data, the same mistakes are repeated in later filing years.</td>
+          <td data-label="Evidence Requirement"><strong>Annual review archive</strong></td>
+          <td data-label="What Good Looks Like">Run quarterly documentation audit before reimbursement/payment.</td>
+          <td data-label="Common Failure Mode">Without annual review data, the same mistakes are repeated in later filing years.</td>
         </tr>
                             </tbody>
                         </table>
@@ -660,20 +658,20 @@
                             </thead>
                             <tbody>
                                 <tr>
-          <td>Owner claims Augusta Rule days but has no calendar invites, agenda, or minutes.</td>
-          <td>Augusta Rule and Home Office via Accountable Plan should only be implemented after an explicit documentation standard is agreed with your advisor.</td>
+          <td data-label="Failure Mode">Owner claims Augusta Rule days but has no calendar invites, agenda, or minutes.</td>
+          <td data-label="Mitigation Control">Augusta Rule and Home Office via Accountable Plan should only be implemented after an explicit documentation standard is agreed with your advisor.</td>
         </tr>
 <tr class="alt">
-          <td>Rent rate is copied from luxury short-term listings rather than comparable meeting rent.</td>
-          <td>Replace assumptions with verifiable evidence (contracts, logs, policy docs, or third-party support).</td>
+          <td data-label="Failure Mode">Rent rate is copied from luxury short-term listings rather than comparable meeting rent.</td>
+          <td data-label="Mitigation Control">Replace assumptions with verifiable evidence (contracts, logs, policy docs, or third-party support).</td>
         </tr>
 <tr>
-          <td>Augusta Rule misuse: You cannot support fair-market rental comps.</td>
-          <td>Use Augusta Rule only when the qualification gate is clearly met and documented before filing.</td>
+          <td data-label="Failure Mode">Augusta Rule misuse: You cannot support fair-market rental comps.</td>
+          <td data-label="Mitigation Control">Use Augusta Rule only when the qualification gate is clearly met and documented before filing.</td>
         </tr>
 <tr class="alt">
-          <td>Home Office via Accountable Plan misuse: Your office space is not exclusively used for business.</td>
-          <td>Use Home Office via Accountable Plan only when the execution process can be maintained consistently during the year.</td>
+          <td data-label="Failure Mode">Home Office via Accountable Plan misuse: Your office space is not exclusively used for business.</td>
+          <td data-label="Mitigation Control">Use Home Office via Accountable Plan only when the execution process can be maintained consistently during the year.</td>
         </tr>
                             </tbody>
                         </table>
@@ -764,15 +762,12 @@
                         </ul>
                     </div>
 
-                    <div class="sidebar-card" style="border-left:3px solid #059669;">
+                    <div class="sidebar-card">
                         <h3 class="sidebar-card__title">Related Resources</h3>
-                        <ul class="related-strategies">
-                            <li style="margin-bottom:0.5rem;"><a href="/blog/s-corp-election-tax-implications" style="display:flex;align-items:center;gap:0.5rem;color:#374151;text-decoration:none;font-size:0.9rem;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px!important;height:16px!important;max-width:16px!important;max-height:16px!important;flex-shrink:0!important;display:inline-block!important;"><path d="M9 18l6-6-6-6"/></svg>S-Corp Election Tax Implications
-                </a></li>
-<li style="margin-bottom:0.5rem;"><a href="/blog/tax-strategy-checklist" style="display:flex;align-items:center;gap:0.5rem;color:#374151;text-decoration:none;font-size:0.9rem;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px!important;height:16px!important;max-width:16px!important;max-height:16px!important;flex-shrink:0!important;display:inline-block!important;"><path d="M9 18l6-6-6-6"/></svg>Tax Strategy Checklist
-                </a></li>
-<li style="margin-bottom:0.5rem;"><a href="/tax-strategies/" style="display:flex;align-items:center;gap:0.5rem;color:#374151;text-decoration:none;font-size:0.9rem;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px!important;height:16px!important;max-width:16px!important;max-height:16px!important;flex-shrink:0!important;display:inline-block!important;"><path d="M9 18l6-6-6-6"/></svg>All Tax Strategies
-                </a></li>
+                        <ul class="sidebar-list">
+                            <li><a href="/blog/s-corp-election-tax-implications">S-Corp Election Tax Implications</a></li>
+<li><a href="/blog/tax-strategy-checklist">Tax Strategy Checklist</a></li>
+<li><a href="/tax-strategies/">All Tax Strategies</a></li>
                         </ul>
                     </div>
                 </aside>
@@ -836,49 +831,25 @@
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-navy text-white py-12" role="contentinfo">
+    <footer class="minimal-footer">
         <div class="container-custom">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
-                <!-- Brand -->
-                <div>
-                    <div class="flex items-center gap-2 mb-4">
-                        <img src="/assets/images/logo.png" alt="Legacy Investing Show" width="32" height="32">
-                        <span class="font-semibold">Legacy Investing Show</span>
-                    </div>
-                    <p class="text-cream-dark text-sm">Building generational wealth through real estate and tax strategies.</p>
+            <div class="minimal-footer-content">
+                <div class="footer-brand">
+                    <img src="/assets/images/logo.png" alt="Legacy Investing Show" width="32" height="32">
+                    <span>Legacy Investing Show</span>
                 </div>
-                
-                <!-- Resources -->
-                <div>
-                    <h4 class="font-semibold mb-4">Resources</h4>
-                    <ul class="space-y-2 text-sm text-cream-dark">
-                        <li><a href="/tax-strategies/" class="hover:text-gold">Tax Strategies</a></li>
-                        <li><a href="/retirement/401k-contribution-strategies.html" class="hover:text-gold">401(k) Strategies</a></li>
-                        <li><a href="/blog/" class="hover:text-gold">Success Stories</a></li>
-                        <li><a href="/compare/" class="hover:text-gold">Comparison Guides</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Company -->
-                <div>
-                    <h4 class="font-semibold mb-4">Company</h4>
-                    <ul class="space-y-2 text-sm text-cream-dark">
-                        <li><a href="/about" class="hover:text-gold">About</a></li>
-                        <li><a href="/success-stories" class="hover:text-gold">Results</a></li>
-                        <li><a href="https://www.managemoney101.com/2025workshop" class="hover:text-gold" target="_blank">Free Workshop</a></li>
-                    </ul>
+                <div class="footer-links">
+                    <a href="/success-stories">Results</a>
+                    <a href="/blog/">Blog</a>
+                    <a href="/tax-strategies/">Tax Strategies</a>
                 </div>
             </div>
-            <div class="border-t border-gray-800 pt-8 text-center text-sm text-muted">
-                Copyright 2025 Legacy Investing Show. All rights reserved.
-            </div>
+            <div class="footer-copyright">Copyright 2025</div>
         </div>
     </footer>
 
     <script defer src="/assets/js/main.js"></script>
     <script>
-        // FAQ accordion
         document.querySelectorAll('.faq-question').forEach((button) => {
             button.addEventListener('click', () => {
                 const expanded = button.getAttribute('aria-expanded') === 'true';
@@ -887,12 +858,8 @@
             });
         });
 
-        // Mobile menu
         document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
-            const menu = document.getElementById('mobile-menu');
-            const expanded = this.getAttribute('aria-expanded') === 'true';
-            this.setAttribute('aria-expanded', !expanded);
-            menu.classList.toggle('hidden');
+            document.getElementById('mobile-menu').classList.toggle('hidden');
         });
     </script>
 </body>

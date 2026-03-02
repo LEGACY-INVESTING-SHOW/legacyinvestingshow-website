@@ -64,6 +64,8 @@ function scoreSideFromBetter(betterText, side) {
 
 function buildDecisionRows(page) {
   const rows = page.decisionMatrix || [];
+  const aLabel = page.optionAName || 'Option A';
+  const bLabel = page.optionBName || 'Option B';
 
   return rows
     .map((row, idx) => {
@@ -71,12 +73,12 @@ function buildDecisionRows(page) {
       const bScore = scoreSideFromBetter(row.better, 'b');
       const className = idx % 2 ? ' class="alt"' : '';
       return `<tr${className}>
-          <td><strong>${esc(row.factor)}</strong></td>
-          <td>${esc(row.a)}</td>
-          <td>${esc(row.b)}</td>
-          <td>${esc(row.better)}</td>
-          <td>${aScore}</td>
-          <td>${bScore}</td>
+          <td data-label="Decision Factor"><strong>${esc(row.factor)}</strong></td>
+          <td data-label="${esc(aLabel)}">${esc(row.a)}</td>
+          <td data-label="${esc(bLabel)}">${esc(row.b)}</td>
+          <td data-label="Edge-Case Read">${esc(row.better)}</td>
+          <td data-label="A Score">${aScore}</td>
+          <td data-label="B Score">${bScore}</td>
         </tr>`;
     })
     .join('\n');
@@ -120,14 +122,7 @@ function renderFaqItems(items = []) {
 function renderRelated(items = []) {
   return items
     .map(
-      (item) => `<li>
-                <a href="${esc(item.href)}">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M9 18l6-6-6-6"/>
-                    </svg>
-                    ${esc(item.label)}
-                </a>
-            </li>`
+      (item) => `<li><a href="${esc(item.href)}">${esc(item.label)}</a></li>`
     )
     .join('\n');
 }
@@ -206,8 +201,8 @@ function buildFailureModes(page) {
 function renderFailureRows(page) {
   return buildFailureModes(page)
     .map((mode, idx) => `<tr${idx % 2 ? ' class="alt"' : ''}>
-          <td>${esc(mode.risk)}</td>
-          <td>${esc(mode.mitigation)}</td>
+          <td data-label="Failure Mode">${esc(mode.risk)}</td>
+          <td data-label="Mitigation Control">${esc(mode.mitigation)}</td>
         </tr>`)
     .join('\n');
 }
@@ -246,9 +241,9 @@ function renderEvidenceRows(page) {
 
   return standards
     .map((item, idx) => `<tr${idx % 2 ? ' class="alt"' : ''}>
-          <td><strong>${esc(item.requirement)}</strong></td>
-          <td>${esc(item.example)}</td>
-          <td>${esc(item.failure)}</td>
+          <td data-label="Evidence Requirement"><strong>${esc(item.requirement)}</strong></td>
+          <td data-label="What Good Looks Like">${esc(item.example)}</td>
+          <td data-label="Common Failure Mode">${esc(item.failure)}</td>
         </tr>`)
     .join('\n');
 }
@@ -665,6 +660,81 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
             margin: 0 0.5rem;
             color: #9ca3af;
         }
+        @media (max-width: 767px) {
+            .compare-hero {
+                padding: 6.75rem 0 2.4rem;
+            }
+            .compare-title {
+                font-size: 1.65rem;
+            }
+            .compare-subtitle {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+            .compare-kpis {
+                grid-template-columns: 1fr;
+                gap: 0.75rem;
+            }
+            .compare-kpi {
+                padding: 0.8rem;
+            }
+            .content-section {
+                padding: 2.2rem 0;
+            }
+            .prose-content h2 {
+                font-size: 1.35rem;
+            }
+            .prose-content h3 {
+                font-size: 1.05rem;
+            }
+            .table-wrap {
+                margin-left: -0.25rem;
+                margin-right: -0.25rem;
+            }
+            .compare-table {
+                min-width: 0;
+            }
+            .compare-table thead {
+                display: none;
+            }
+            .compare-table,
+            .compare-table tbody,
+            .compare-table tr,
+            .compare-table td {
+                display: block;
+                width: 100%;
+            }
+            .compare-table tr {
+                border-bottom: 1px solid #e5e7eb;
+                padding: 0.45rem 0.1rem;
+            }
+            .compare-table td {
+                border-bottom: none;
+                padding: 0.45rem 0.6rem;
+            }
+            .compare-table td::before {
+                content: attr(data-label);
+                display: block;
+                font-size: 0.73rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.04em;
+                color: #6b7280;
+                margin-bottom: 0.2rem;
+            }
+            .split-panels {
+                grid-template-columns: 1fr;
+            }
+            .panel {
+                padding: 0.85rem;
+            }
+            .cta-card {
+                padding: 2rem 1rem;
+            }
+            .cta-card__title {
+                font-size: 1.45rem;
+            }
+        }
     </style>
 </head>
 <body class="bg-white text-gray-900">
@@ -773,11 +843,12 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
                             <tbody>
                                 ${buildDecisionRows(page)}
                                 <tr>
-                                    <td><strong>Total Weighted Signal</strong></td>
-                                    <td colspan="2">Directional score based on matrix interpretation</td>
-                                    <td>Use this only after qualification checks and stress testing.</td>
-                                    <td><strong>${aTotal}</strong></td>
-                                    <td><strong>${bTotal}</strong></td>
+                                    <td data-label="Decision Factor"><strong>Total Weighted Signal</strong></td>
+                                    <td data-label="${esc(page.optionAName)}">Directional score from matrix interpretation.</td>
+                                    <td data-label="${esc(page.optionBName)}">Directional score from matrix interpretation.</td>
+                                    <td data-label="Edge-Case Read">Use this only after qualification checks and stress testing.</td>
+                                    <td data-label="A Score"><strong>${aTotal}</strong></td>
+                                    <td data-label="B Score"><strong>${bTotal}</strong></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -905,7 +976,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
 
                     <div class="sidebar-card">
                         <h3 class="sidebar-card__title">Related Resources</h3>
-                        <ul class="related-strategies">
+                        <ul class="sidebar-list">
                             ${renderRelated(page.related)}
                         </ul>
                     </div>
