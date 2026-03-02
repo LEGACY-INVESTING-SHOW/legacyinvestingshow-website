@@ -31,6 +31,7 @@ const staticPages = [
 // Programmatic SEO directories to scan
 const programmaticDirs = [
   'tax-strategies',
+  'compare',
 ];
 
 /**

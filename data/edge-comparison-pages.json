@@ -1,0 +1,682 @@
+[
+  {
+    "slug": "augusta-rule-vs-home-office-deduction-s-corp",
+    "title": "Augusta Rule vs Home Office Deduction for S-Corp Owners",
+    "description": "A scenario-driven comparison for S-corp owners deciding between Augusta Rule rent treatment and accountable-plan home office reimbursement.",
+    "intro": "Most S-corp owners do not need an either/or answer. The real decision is whether your facts support one method cleanly, both methods in different contexts, or neither because documentation and usage patterns are weak. This page focuses on audit-defensible execution, not headline write-off numbers.",
+    "optionAName": "Augusta Rule",
+    "optionBName": "Home Office via Accountable Plan",
+    "winnerLabel": "Context-dependent",
+    "whenA": "Best for owners with legitimate periodic business meetings hosted at home and strong documentation discipline.",
+    "whenB": "Best for owners with consistent exclusive business-use space and recurring reimbursable home-office expenses.",
+    "decisionMatrix": [
+      { "factor": "Primary requirement", "a": "Fair-market rent and documented business-use days", "b": "Exclusive and regular business-use area", "better": "B for recurring use" },
+      { "factor": "Admin complexity", "a": "Medium (rental comps + meeting records)", "b": "Medium-High (plan setup + reimbursement workflow)", "better": "A for simplicity" },
+      { "factor": "Audit defensibility", "a": "Strong if rent comps are credible", "b": "Strong if exclusive-use test is clearly met", "better": "Tie" },
+      { "factor": "Cash-flow predictability", "a": "Lumpy and event-driven", "b": "Steady monthly/quarterly reimbursements", "better": "B" },
+      { "factor": "Failure risk", "a": "Inflated rent or weak meeting substantiation", "b": "Mixed-use space or weak accountable plan records", "better": "Depends on habits" }
+    ],
+    "workedExample": {
+      "profile": "S-corp consultant, $220k owner comp, 1,500 sq ft home, 180 sq ft office.",
+      "assumptions": [
+        "12 valid internal strategy meetings hosted at home",
+        "$750 fair-market daily rent from local comps",
+        "$14,400 annual eligible home office costs under accountable plan"
+      ],
+      "aOutcome": "Augusta Rule yields $9,000 annual rent treatment if documentation is clean.",
+      "bOutcome": "Accountable plan yields roughly $1,728 annual reimbursement (12% of eligible costs).",
+      "takeaway": "Augusta can produce higher nominal value in this case, but only if valuation and meeting substantiation are robust. Accountable plan is usually lower-dollar but easier to sustain annually."
+    },
+    "edgeCases": [
+      "Owner claims Augusta Rule days but has no calendar invites, agenda, or minutes.",
+      "Rent rate is copied from luxury short-term listings rather than comparable meeting rent.",
+      "Home office includes guest bedroom use, weakening exclusive-use support.",
+      "S-corp reimburses without a written accountable plan or timely substantiation."
+    ],
+    "avoidA": [
+      "You cannot support fair-market rental comps.",
+      "You do not host real business meetings at home.",
+      "You are using Augusta Rule as a pure year-end tax plug."
+    ],
+    "avoidB": [
+      "Your office space is not exclusively used for business.",
+      "You cannot maintain recurring reimbursement documentation.",
+      "You are unwilling to run accountable-plan processes consistently."
+    ],
+    "checklist": [
+      "Draft or update written accountable plan policy.",
+      "Capture square-footage and room-use evidence with date stamps.",
+      "Create meeting-log template with attendees, purpose, and outcomes.",
+      "Save local rental comps supporting any Augusta Rule day rate.",
+      "Run quarterly documentation audit before reimbursement/payment."
+    ],
+    "advisorQuestions": [
+      "How should we benchmark fair-market rent for my specific home and meeting profile?",
+      "What documentation standard do you want before booking Augusta Rule payments?",
+      "Can we operate both methods in non-overlapping fact patterns without double counting?",
+      "What are the top audit triggers for this setup in my income bracket?"
+    ],
+    "faq": [
+      { "q": "Can I use both approaches in the same year?", "a": "Sometimes yes, if facts are distinct and expenses are not duplicated. Your CPA should map boundaries clearly before year-end." },
+      { "q": "Is Augusta Rule always bigger?", "a": "No. It can be larger in some cases but fails quickly when valuation and meeting records are weak." },
+      { "q": "What breaks home office deductions most often?", "a": "Mixed-use space and weak accountable-plan execution are common failure points." }
+    ],
+    "related": [
+      { "href": "/blog/s-corp-election-tax-implications", "label": "S-Corp Election Tax Implications" },
+      { "href": "/blog/tax-strategy-checklist", "label": "Tax Strategy Checklist" },
+      { "href": "/tax-strategies/", "label": "All Tax Strategies" }
+    ]
+  },
+  {
+    "slug": "mfj-vs-mfs-high-income-student-loans",
+    "title": "MFJ vs MFS for High-Income Couples with Student Loans",
+    "description": "A cash-flow first comparison of Married Filing Jointly vs Married Filing Separately when IDR payments and tax optimization conflict.",
+    "intro": "Couples often optimize taxes in isolation and miss the larger objective: total household outflow. In student-loan cases, lower tax owed can still produce a worse combined outcome if loan payments rise materially.",
+    "optionAName": "Married Filing Jointly (MFJ)",
+    "optionBName": "Married Filing Separately (MFS)",
+    "winnerLabel": "Depends on loan payment formula and income split",
+    "whenA": "Best when tax benefits and credit eligibility materially outweigh IDR payment increases.",
+    "whenB": "Best when MFS significantly reduces required payments and tax penalties are manageable.",
+    "decisionMatrix": [
+      { "factor": "Tax rates and brackets", "a": "Generally more favorable", "b": "Often less favorable", "better": "A" },
+      { "factor": "Loan payment impact", "a": "Can increase household payment", "b": "Can lower payment for borrower spouse", "better": "B" },
+      { "factor": "Credit/benefit eligibility", "a": "Broader access", "b": "More phaseouts and restrictions", "better": "A" },
+      { "factor": "Administrative complexity", "a": "Simpler", "b": "Higher coordination burden", "better": "A" },
+      { "factor": "Total cash-flow optimization", "a": "Strong in some high-deduction cases", "b": "Strong in high-debt uneven-income cases", "better": "Case-specific" }
+    ],
+    "workedExample": {
+      "profile": "Couple income: spouse A $290k W-2, spouse B $95k W-2 with large federal student loan balance.",
+      "assumptions": [
+        "IDR payment uses AGI-sensitive formula",
+        "MFJ tax lower by $6,400 vs MFS",
+        "MFJ increases annual loan payments by $9,600"
+      ],
+      "aOutcome": "MFJ saves tax but raises annual loan cash outflow enough to produce net -$3,200 household disadvantage.",
+      "bOutcome": "MFS costs more in tax but lowers required loan payments and improves annual cash flow by comparison.",
+      "takeaway": "Model total outflow, not just tax. The wrong filing status can look optimal on return preparation but fail household cash-flow objectives."
+    },
+    "edgeCases": [
+      "Aggressive retirement contributions can alter both tax and IDR outcomes materially.",
+      "State filing rules can reduce expected MFS advantage.",
+      "Bonus income year can temporarily flip preferred filing status.",
+      "Loan servicer timing and recertification windows can distort one-year comparisons."
+    ],
+    "avoidA": [
+      "Loan payment increase overwhelms tax savings.",
+      "Borrower spouse has repayment forgiveness strategy tied to lower AGI." ,
+      "Cash-flow fragility makes higher required payment risky."
+    ],
+    "avoidB": [
+      "MFS tax penalties erase payment benefits.",
+      "Loss of credits materially harms long-term plan.",
+      "Administrative burden increases filing error risk."
+    ],
+    "checklist": [
+      "Model 1-year and 3-year total outflow under both statuses.",
+      "Include expected bonus/RSU/variable income scenarios.",
+      "Check state-level filing differences and deductions.",
+      "Align filing-status decision with recertification timing.",
+      "Document final decision assumptions for annual review."
+    ],
+    "advisorQuestions": [
+      "Can we optimize filing status and retirement contributions together for better loan outcomes?",
+      "What is our break-even point where MFJ becomes superior again?",
+      "How does state tax treatment change this calculation?",
+      "What triggers an annual filing-status re-evaluation?"
+    ],
+    "faq": [
+      { "q": "Is MFS always better for student loans?", "a": "No. It can help in specific profiles but often carries real tax penalties." },
+      { "q": "Should we decide based on this year only?", "a": "Usually no. A 3-year model is safer when income and loan formulas can change." },
+      { "q": "Can we switch statuses year to year?", "a": "Often yes, but evaluate recertification timing and implementation complexity each year." }
+    ],
+    "related": [
+      { "href": "/blog/student-loan-payoff-vs-refinance", "label": "Student Loan Payoff vs Refinance" },
+      { "href": "/blog/tax-strategy-for-high-earners", "label": "Tax Strategy for High Earners" },
+      { "href": "/blog/", "label": "More Strategy Guides" }
+    ]
+  },
+  {
+    "slug": "safe-harbor-vs-annualized-income-1099",
+    "title": "Safe Harbor vs Annualized Income Method for Uneven 1099 Income",
+    "description": "A practical comparison for freelancers and consultants with lumpy quarter-by-quarter income.",
+    "intro": "If your income is highly uneven, annualized estimated tax calculations can reduce penalties, but only if your records and timing discipline are strong. Safe harbor is often less optimal in pure math terms but can be more execution-proof.",
+    "optionAName": "Safe Harbor Method",
+    "optionBName": "Annualized Income Method",
+    "winnerLabel": "Execution quality decides",
+    "whenA": "Best when predictability and operational simplicity matter more than precision.",
+    "whenB": "Best when income is truly lumpy and recordkeeping is tight enough to defend annualized calculations.",
+    "decisionMatrix": [
+      { "factor": "Penalty minimization potential", "a": "Good baseline", "b": "Higher potential in lumpy years", "better": "B" },
+      { "factor": "Documentation burden", "a": "Lower", "b": "Higher", "better": "A" },
+      { "factor": "Forecast dependence", "a": "Moderate", "b": "High", "better": "A" },
+      { "factor": "Error tolerance", "a": "More forgiving", "b": "Less forgiving", "better": "A" },
+      { "factor": "Best fit profile", "a": "Steady or uncertain operators", "b": "Disciplined operators with uneven income", "better": "Case-specific" }
+    ],
+    "workedExample": {
+      "profile": "Consultant earns 65% of annual income in Q4 due to enterprise contracts.",
+      "assumptions": [
+        "Safe harbor payments made evenly through year",
+        "Actual income ramps late in year",
+        "Books close monthly with strong quarter cutoffs"
+      ],
+      "aOutcome": "Safe harbor avoids major surprises but may overpay early and under-optimize cash usage.",
+      "bOutcome": "Annualized method better aligns required payments to timing, reducing penalty risk and preserving in-year cash.",
+      "takeaway": "Annualized can be superior for uneven income, but only when bookkeeping cadence supports it."
+    },
+    "edgeCases": [
+      "Large year-end contract signed but partially paid next year.",
+      "K-1 estimates revised late and materially change taxable income.",
+      "Quarterly books are incomplete at filing deadlines.",
+      "Owner mixes personal and business accounts, reducing evidence quality."
+    ],
+    "avoidA": [
+      "You consistently overpay due to highly back-loaded income.",
+      "Cash preservation is critical and overpayment creates strain.",
+      "You have reliable books that support annualization."
+    ],
+    "avoidB": [
+      "You cannot close books accurately each quarter.",
+      "You want minimal administrative complexity.",
+      "You routinely adjust records after quarter close."
+    ],
+    "checklist": [
+      "Define quarterly close process with cutoff dates.",
+      "Create income-timing dashboard by quarter.",
+      "Reconcile estimated payments to method chosen.",
+      "Track documentation for each quarter’s tax position.",
+      "Run post-year review for method choice improvement."
+    ],
+    "advisorQuestions": [
+      "What evidence package do you require for annualized filings?",
+      "At what income variability threshold should we switch methods?",
+      "How do we treat uncertain K-1 estimates during the year?",
+      "What recurring bookkeeping controls reduce penalty risk most?"
+    ],
+    "faq": [
+      { "q": "Does annualized always reduce penalties?", "a": "No. It helps most when income is uneven and records are accurate and timely." },
+      { "q": "Can I switch methods annually?", "a": "Often yes, but decisions should align with recordkeeping capability each year." },
+      { "q": "What is the top failure point?", "a": "Weak quarter-close discipline is the most common reason annualized filings underperform." }
+    ],
+    "related": [
+      { "href": "/blog/tax-strategy-checklist", "label": "Tax Strategy Checklist" },
+      { "href": "/blog/debt-to-income-ratio-tax-implications", "label": "Cash Flow and Tax Coordination" },
+      { "href": "/tax-strategies/", "label": "Tax Strategy Library" }
+    ]
+  },
+  {
+    "slug": "cost-segregation-vs-str-loophole-w2-passive-loss",
+    "title": "Cost Segregation vs STR Loophole for W-2 Professionals with Passive Loss Limits",
+    "description": "A comparison focused on usable loss, not headline paper deductions.",
+    "intro": "In high-income W-2 profiles, the key question is not how large the paper deduction is. The key question is how much of that deduction you can use this year without creating a carryforward trap.",
+    "optionAName": "Cost Segregation",
+    "optionBName": "STR Loophole Approach",
+    "winnerLabel": "Depends on usable-loss probability",
+    "whenA": "Best when long-term hold strategy and depreciation acceleration align with your tax horizon.",
+    "whenB": "Best when participation thresholds are truly met and current-year loss usability is credible.",
+    "decisionMatrix": [
+      { "factor": "Paper deduction size", "a": "Can be very large", "b": "Can be large", "better": "A" },
+      { "factor": "Current-year usability", "a": "Often constrained by passive limits", "b": "Potentially higher if participation qualifies", "better": "B in qualifying cases" },
+      { "factor": "Audit sensitivity", "a": "Engineering and allocation quality", "b": "Participation logs and activity characterization", "better": "Tie" },
+      { "factor": "Operational burden", "a": "Front-loaded study burden", "b": "Ongoing participation/logging burden", "better": "A for passive owners" },
+      { "factor": "Best fit", "a": "Long-hold investors", "b": "Operators with actual active involvement", "better": "Case-specific" }
+    ],
+    "workedExample": {
+      "profile": "W-2 physician, $430k income, acquires STR property with significant furnishing and improvements.",
+      "assumptions": [
+        "Cost segregation study identifies accelerated components",
+        "Owner’s passive loss limits constrain direct offset",
+        "Owner tracks active participation hours under STR model"
+      ],
+      "aOutcome": "Large depreciation generated but meaningful portion carries forward due to passive limits.",
+      "bOutcome": "Lower gross deduction but higher same-year usability when participation facts hold up.",
+      "takeaway": "Usable-loss analysis should drive strategy choice, not marketing-sized deduction numbers."
+    },
+    "edgeCases": [
+      "Owner delegates all operations but still assumes active participation benefits.",
+      "Short-term rental days and personal-use days are poorly tracked.",
+      "Study quality is weak and class-life allocations are aggressive.",
+      "Owner exits property early and recapture dynamics are ignored."
+    ],
+    "avoidA": [
+      "You need immediate, usable loss but cannot offset passive constraints.",
+      "You are likely to sell soon, reducing acceleration advantage.",
+      "You do not have budget for a credible engineering study."
+    ],
+    "avoidB": [
+      "Your actual participation cannot meet supportable thresholds.",
+      "You rely heavily on third-party managers and no logs.",
+      "You cannot maintain ongoing documentation discipline."
+    ],
+    "checklist": [
+      "Run usable-loss model before choosing strategy.",
+      "Define participation logging process before tax year starts.",
+      "Validate cost-seg study provider methodology and assumptions.",
+      "Model 3-year hold and exit effects including recapture.",
+      "Document why selected approach is defensible for your facts."
+    ],
+    "advisorQuestions": [
+      "What portion of this depreciation is realistically usable this year?",
+      "What level of activity documentation do you require for STR positioning?",
+      "How should we model recapture risk under likely hold periods?",
+      "What audit points are most relevant to my profile?"
+    ],
+    "faq": [
+      { "q": "Is the STR approach automatically better for W-2 earners?", "a": "No. It can be better only when participation and documentation are real and defensible." },
+      { "q": "Is cost seg wasted if losses carry forward?", "a": "Not necessarily, but carryforward timing should be intentional and modeled." },
+      { "q": "Can both be used together?", "a": "In some structures yes, but only with clean treatment and clear factual support." }
+    ],
+    "related": [
+      { "href": "/blog/cost-segregation-vs-itemized-deductions", "label": "Cost Segregation Strategy Guide" },
+      { "href": "/blog/airbnb-occupancy-strategy-tax-implications", "label": "STR Tax Implications" },
+      { "href": "/blog/", "label": "More Real Estate Tax Content" }
+    ]
+  },
+  {
+    "slug": "721-upreit-vs-dst-aging-landlords",
+    "title": "721 UPREIT vs DST for Aging Landlords Exiting Active Management",
+    "description": "A comparison of tax deferral options for owners shifting from active property management to passive income.",
+    "intro": "For aging landlords, this choice is usually about control, liquidity, and concentration risk as much as taxes. The right structure is often determined by your required flexibility over the next 5 to 10 years.",
+    "optionAName": "721 UPREIT Exchange",
+    "optionBName": "Delaware Statutory Trust (DST)",
+    "winnerLabel": "Depends on liquidity and control priorities",
+    "whenA": "Best when equity-market participation and long-term tax deferral are priorities and lockup constraints are acceptable.",
+    "whenB": "Best when predictable passive real-estate exposure and simpler transition are priorities.",
+    "decisionMatrix": [
+      { "factor": "Liquidity path", "a": "Can involve lockup then market liquidity", "b": "Limited liquidity windows", "better": "A after lockup" },
+      { "factor": "Control over assets", "a": "Low direct property control", "b": "Low direct property control", "better": "Tie" },
+      { "factor": "Concentration risk", "a": "Shift to REIT/security exposure", "b": "Property/program-specific concentration", "better": "Case-specific" },
+      { "factor": "Income stability", "a": "Market-linked distributions", "b": "Program-dependent distributions", "better": "Case-specific" },
+      { "factor": "Implementation complexity", "a": "Higher structuring complexity", "b": "Moderate with sponsor diligence", "better": "B" }
+    ],
+    "workedExample": {
+      "profile": "Landlord age 67, $6.2M appreciated portfolio, wants reduced management burden and retirement cash flow.",
+      "assumptions": [
+        "Goal is tax deferral plus lower day-to-day operations",
+        "No desire for active renovations/development",
+        "Moderate need for medium-term liquidity"
+      ],
+      "aOutcome": "721 path offers potential broader liquidity over time but introduces market sensitivity and lockup considerations.",
+      "bOutcome": "DST path offers simpler property-income framing but can limit liquidity and flexibility depending on sponsor terms.",
+      "takeaway": "Retirement spending horizon and liquidity timing should be ranked before choosing structure."
+    },
+    "edgeCases": [
+      "Owner underestimates liquidity timing constraints.",
+      "Estate planning goals conflict with chosen structure’s transfer mechanics.",
+      "Distribution expectations are modeled too optimistically.",
+      "Sponsor due diligence is treated as a formality."
+    ],
+    "avoidA": [
+      "You need near-term liquidity certainty.",
+      "You are uncomfortable with market-linked valuation volatility.",
+      "You cannot tolerate potential lockup constraints."
+    ],
+    "avoidB": [
+      "You need flexible exit windows.",
+      "You are highly sensitive to sponsor/program concentration risk.",
+      "You want broader diversification controls over time."
+    ],
+    "checklist": [
+      "Map liquidity needs by year for at least 10 years.",
+      "Create concentration-risk limits before selecting sponsor or vehicle.",
+      "Validate estate and beneficiary planning interactions.",
+      "Stress-test distribution assumptions under downside scenarios.",
+      "Document due diligence findings and decision rationale."
+    ],
+    "advisorQuestions": [
+      "How do liquidity timelines compare under realistic stress scenarios?",
+      "What concentration limits should we impose for this transition?",
+      "How does each option affect estate transfer goals?",
+      "Which assumptions are least robust in our current model?"
+    ],
+    "faq": [
+      { "q": "Is DST always safer?", "a": "Not automatically. Safety depends on sponsor quality, structure terms, and your liquidity requirements." },
+      { "q": "Does 721 always mean better upside?", "a": "Not guaranteed. It can provide different risk-return exposure, not guaranteed superior performance." },
+      { "q": "Can this be decided purely on taxes?", "a": "Usually no. Liquidity and concentration risk are often more decisive in retirement transitions." }
+    ],
+    "related": [
+      { "href": "/blog/estate-tax-planning-template", "label": "Estate Planning Template" },
+      { "href": "/blog/retirement-income-strategies", "label": "Retirement Income Strategies" },
+      { "href": "/success-stories", "label": "Case Studies and Outcomes" }
+    ]
+  },
+  {
+    "slug": "pricelabs-vs-pms-native-pricing-multi-property",
+    "title": "PriceLabs Rule-Based Pricing vs PMS Native Auto-Pricing for Multi-Property STR Operators",
+    "description": "An operations-focused comparison for STR operators managing multiple properties with dynamic pricing dependencies.",
+    "intro": "The key decision is not just which engine has better algorithms. It is whether your team can sustain the operational complexity required to realize the algorithmic upside.",
+    "optionAName": "PriceLabs (Dedicated Pricing Engine)",
+    "optionBName": "PMS Native Auto-Pricing",
+    "winnerLabel": "Depends on operational maturity",
+    "whenA": "Best for operators with pricing ownership, process discipline, and multi-market complexity.",
+    "whenB": "Best for lean teams that prioritize operational simplicity and acceptable baseline automation.",
+    "decisionMatrix": [
+      { "factor": "Rule customization depth", "a": "High", "b": "Moderate", "better": "A" },
+      { "factor": "Team training burden", "a": "Higher", "b": "Lower", "better": "B" },
+      { "factor": "Portfolio-level controls", "a": "More robust", "b": "Varies by PMS", "better": "A" },
+      { "factor": "Operational failure points", "a": "Sync/override complexity", "b": "Less granular but simpler", "better": "B" },
+      { "factor": "Best fit", "a": "Scaling operators", "b": "Owner-operator and small team", "better": "Case-specific" }
+    ],
+    "workedExample": {
+      "profile": "12-unit operator across two seasonal markets with one revenue manager and one VA.",
+      "assumptions": [
+        "External pricing engine requires rule maintenance",
+        "PMS native tool has fewer controls but lower maintenance",
+        "Target is RevPAR lift without increasing exception workload"
+      ],
+      "aOutcome": "Higher upside potential, but realized gains drop if overrides and sync issues consume team capacity.",
+      "bOutcome": "Lower upside ceiling, but more consistent execution and fewer operational breaks.",
+      "takeaway": "Choose the stack your team can execute every week, not the stack with best brochure metrics."
+    },
+    "edgeCases": [
+      "Rate sync delay causes stale prices during event demand spikes.",
+      "Overly aggressive minimum-night rules hurt occupancy shoulder periods.",
+      "Team lacks owner for rule hygiene and exception management.",
+      "PMS updates change default pricing behavior without full QA."
+    ],
+    "avoidA": [
+      "No dedicated owner for pricing operations.",
+      "Team already overloaded with manual exceptions.",
+      "Property count too small to justify complexity overhead."
+    ],
+    "avoidB": [
+      "You need nuanced controls across diverse markets.",
+      "Current baseline pricing is materially underperforming.",
+      "You can support a pricing ops workflow and QA cadence."
+    ],
+    "checklist": [
+      "Define pricing ownership and weekly review cadence.",
+      "Set explicit override governance and escalation rules.",
+      "Track RevPAR, occupancy, and exception volume together.",
+      "Run 90-day A/B test by market or unit subset.",
+      "Document trigger thresholds for stack switch decision."
+    ],
+    "advisorQuestions": [
+      "What RevPAR lift threshold justifies higher tooling complexity?",
+      "How should we design an A/B rollout without harming core inventory?",
+      "What sync-failure safeguards should be mandatory?",
+      "Which KPIs should trigger rule redesign vs tool switch?"
+    ],
+    "faq": [
+      { "q": "Is dedicated pricing software always better?", "a": "No. It can outperform only when team operations can support rule quality and monitoring." },
+      { "q": "Should small operators use PMS pricing only?", "a": "Often yes initially, then revisit as portfolio size and complexity increase." },
+      { "q": "What causes most pricing underperformance?", "a": "Weak execution discipline usually hurts more than tool selection alone." }
+    ],
+    "related": [
+      { "href": "/blog/airbnb-pricing-strategy-for-operators", "label": "Airbnb Pricing for Operators" },
+      { "href": "/blog/airbnb-pricing-strategy-vs-direct-booking", "label": "Pricing vs Direct Booking" },
+      { "href": "/blog/airbnb-occupancy-strategy-for-hosts", "label": "Occupancy Strategy for Hosts" }
+    ]
+  },
+  {
+    "slug": "solo-401k-loan-vs-heloc-down-payment",
+    "title": "Solo 401(k) Loan vs HELOC for Down Payment (Tax + Liquidity Edge Cases)",
+    "description": "A practical financing comparison for self-employed buyers funding down payments under liquidity pressure.",
+    "intro": "This is a capital-stack decision, not a rate-shopping exercise. You need to model repayment risk, business volatility, and opportunity cost together before selecting a funding source.",
+    "optionAName": "Solo 401(k) Loan",
+    "optionBName": "HELOC",
+    "winnerLabel": "Depends on income volatility and collateral flexibility",
+    "whenA": "Best when retirement plan rules permit loan terms and business cash flow supports repayment certainty.",
+    "whenB": "Best when collateral capacity exists and loan flexibility is more valuable than retirement-plan borrowing constraints.",
+    "decisionMatrix": [
+      { "factor": "Approval dependency", "a": "Plan rules and account balance", "b": "Property equity + lender underwriting", "better": "Case-specific" },
+      { "factor": "Repayment rigidity", "a": "Higher schedule rigidity", "b": "Variable by lender/product", "better": "B" },
+      { "factor": "Default consequence", "a": "Potential tax and penalty implications", "b": "Collateral and payment risk", "better": "Depends on risk tolerance" },
+      { "factor": "Opportunity cost", "a": "Retirement assets temporarily removed", "b": "Debt cost on property-backed credit", "better": "Case-specific" },
+      { "factor": "Best fit", "a": "Stable-income operators", "b": "Owners needing flexible draw/repayment", "better": "Case-specific" }
+    ],
+    "workedExample": {
+      "profile": "Self-employed owner needs $110k down payment with variable quarterly business income.",
+      "assumptions": [
+        "Solo 401(k) loan available under plan terms",
+        "HELOC has variable rate sensitivity",
+        "Business cash flow can dip 30% in weak quarter"
+      ],
+      "aOutcome": "Solo 401(k) loan offers predictable structure but creates tighter repayment stress under income dip scenario.",
+      "bOutcome": "HELOC offers draw flexibility but rate variability can increase carrying cost materially.",
+      "takeaway": "Stress tests, not nominal rates, should decide this choice."
+    },
+    "edgeCases": [
+      "Business income shock makes plan-loan repayment cadence difficult.",
+      "Rate spikes turn HELOC from tactical bridge into long-term cost drag.",
+      "Borrower underestimates closing and reserve liquidity needs.",
+      "Down payment strategy ignores post-close capex requirements."
+    ],
+    "avoidA": [
+      "Income is highly unstable quarter to quarter.",
+      "You cannot sustain strict repayment cadence.",
+      "You are near retirement and cannot absorb sequence risk."
+    ],
+    "avoidB": [
+      "You cannot tolerate variable-rate uncertainty.",
+      "Collateral position is fragile.",
+      "You need fixed repayment predictability."
+    ],
+    "checklist": [
+      "Run downside-case 12-month repayment stress test.",
+      "Model opportunity cost and debt cost under multiple rate paths.",
+      "Set minimum post-close liquidity reserve threshold.",
+      "Define exit/refinance trigger criteria before borrowing.",
+      "Document funding choice with risk controls and contingency steps."
+    ],
+    "advisorQuestions": [
+      "What repayment stress threshold makes this financing unsafe?",
+      "How should we size liquidity reserves post-closing?",
+      "What rate scenario breaks HELOC viability for my deal?",
+      "What contingency plan should we pre-approve if income drops?"
+    ],
+    "faq": [
+      { "q": "Is borrowing from a Solo 401(k) always cheaper?", "a": "Not necessarily. Cost and risk depend on repayment reliability and opportunity cost tradeoffs." },
+      { "q": "Is HELOC always too risky in variable-rate environments?", "a": "Not always. It can work with defined rate guardrails and strong liquidity buffers." },
+      { "q": "Can I combine both?", "a": "Sometimes, but complexity and risk rise quickly and require disciplined planning." }
+    ],
+    "related": [
+      { "href": "/blog/heloc-strategy-tax-implications", "label": "HELOC Tax Implications" },
+      { "href": "/blog/401k-strategy-for-self-employed", "label": "401(k) Strategy for Self-Employed" },
+      { "href": "/blog/rental-property-investing-for-small-business-owners", "label": "Rental Strategy for Owners" }
+    ]
+  },
+  {
+    "slug": "mark-to-market-vs-capital-gains-active-traders",
+    "title": "Mark-to-Market Election vs Capital Gains Treatment for Active Traders with W-2 Income",
+    "description": "A trader-tax comparison focused on downside containment and election-timing risk.",
+    "intro": "For part-time active traders with primary W-2 income, this is mainly a loss-character and process decision. The wrong election timing can lock you into a treatment that does not match your actual trading profile.",
+    "optionAName": "Mark-to-Market Election",
+    "optionBName": "Capital Gains Treatment",
+    "winnerLabel": "Depends on drawdown and holding-pattern profile",
+    "whenA": "Best when strategy and records support trader status and downside-loss flexibility is a core goal.",
+    "whenB": "Best when trading activity is moderate and long-term capital treatment remains valuable.",
+    "decisionMatrix": [
+      { "factor": "Loss flexibility", "a": "Potentially broader ordinary loss treatment", "b": "Capital-loss constraints apply", "better": "A" },
+      { "factor": "Election timing risk", "a": "High", "b": "Lower", "better": "B" },
+      { "factor": "Recordkeeping burden", "a": "Higher", "b": "Moderate", "better": "B" },
+      { "factor": "Fit for high-turnover strategies", "a": "Often better", "b": "Can be suboptimal", "better": "A" },
+      { "factor": "Fit for mixed holding periods", "a": "Can reduce tax-character optionality", "b": "More flexible", "better": "B" }
+    ],
+    "workedExample": {
+      "profile": "W-2 tech employee trading actively in taxable account with occasional large drawdowns.",
+      "assumptions": [
+        "High turnover in volatile sectors",
+        "Significant losing year possible every 3-4 years",
+        "Election deadline managed proactively"
+      ],
+      "aOutcome": "Mark-to-market may improve downside-year tax handling if status and timing requirements are met.",
+      "bOutcome": "Capital gains treatment may preserve preferred character in profitable years with lower administrative burden.",
+      "takeaway": "Election choice should be driven by strategy profile and downside risk tolerance, not one-year tax anecdotes."
+    },
+    "edgeCases": [
+      "Election deadline missed due to planning delay.",
+      "Trader status assumptions do not match actual activity pattern.",
+      "Wash-sale and basis tracking errors compound reporting risk.",
+      "Strategy shifts mid-year, making prior election less suitable."
+    ],
+    "avoidA": [
+      "Your trading volume and frequency are inconsistent.",
+      "You cannot sustain strong recordkeeping discipline.",
+      "You value long-term gains character optionality over loss flexibility."
+    ],
+    "avoidB": [
+      "You face repeated large drawdown years with constrained loss usability.",
+      "Your strategy is high-frequency and short-hold by design.",
+      "You need stronger downside-year tax relief options."
+    ],
+    "checklist": [
+      "Define strategy profile and expected turnover before election window.",
+      "Document election deadlines and filing requirements.",
+      "Set trade-record hygiene standards and monthly audits.",
+      "Model best-case and drawdown-year tax impact for both paths.",
+      "Reassess annually against actual trading behavior."
+    ],
+    "advisorQuestions": [
+      "Does my real activity support trader-status assumptions?",
+      "What election timing controls should we implement now?",
+      "How does this choice interact with my W-2 income profile?",
+      "What reporting controls are essential to avoid errors?"
+    ],
+    "faq": [
+      { "q": "Is mark-to-market only for full-time traders?", "a": "Not strictly, but suitability depends on activity profile and defensible process, not labels." },
+      { "q": "Can this be reversed easily later?", "a": "Election changes can be constrained and should be planned intentionally with your advisor." },
+      { "q": "Is capital gains always safer?", "a": "Operationally simpler in many cases, but not always optimal for downside-loss objectives." }
+    ],
+    "related": [
+      { "href": "/blog/capital-gains-tax-best-strategy", "label": "Capital Gains Tax Strategy" },
+      { "href": "/blog/best-tax-strategy-for-day-traders", "label": "Day Trader Tax Strategy" },
+      { "href": "/blog/tax-loss-harvesting-best-strategy", "label": "Tax-Loss Harvesting Strategy" }
+    ]
+  },
+  {
+    "slug": "qcd-first-vs-roth-conversion-first-irmaa",
+    "title": "QCD First vs Roth Conversion First for Retirees Near IRMAA Cliffs",
+    "description": "A sequence-aware retirement tax comparison focused on Medicare surcharge thresholds and giving goals.",
+    "intro": "For retirees near IRMAA thresholds, sequence can matter more than strategy selection itself. The same two actions can produce different Medicare premium outcomes depending on order and timing.",
+    "optionAName": "QCD First",
+    "optionBName": "Roth Conversion First",
+    "winnerLabel": "Depends on bracket room and IRMAA headroom",
+    "whenA": "Best when managing MAGI exposure is primary and charitable intent is already committed.",
+    "whenB": "Best when conversion window is narrow and long-term tax-rate risk is primary concern.",
+    "decisionMatrix": [
+      { "factor": "IRMAA cliff management", "a": "Often stronger", "b": "Can increase cliff-crossing risk", "better": "A" },
+      { "factor": "Bracket-filling efficiency", "a": "Can reduce available space", "b": "Can maximize conversion window", "better": "B" },
+      { "factor": "Charitable objective integration", "a": "Direct and early", "b": "Can be delayed", "better": "A" },
+      { "factor": "Future RMD reduction potential", "a": "Moderate", "b": "Potentially higher via larger conversions", "better": "B" },
+      { "factor": "Best fit", "a": "IRMAA-sensitive retirees", "b": "Rate-hedging focused retirees with headroom", "better": "Case-specific" }
+    ],
+    "workedExample": {
+      "profile": "Retired couple near IRMAA threshold with planned annual charitable giving and IRA assets.",
+      "assumptions": [
+        "Charitable intent is fixed regardless of sequence",
+        "Conversion amount can be staged",
+        "IRMAA threshold proximity is within narrow range"
+      ],
+      "aOutcome": "QCD-first sequence preserves MAGI headroom and avoids surcharge in base scenario.",
+      "bOutcome": "Conversion-first sequence increases long-term Roth assets but can trigger higher Medicare premiums in near-threshold year.",
+      "takeaway": "Sequence should be tested with 2-3 year horizon models, not a single-year tax view."
+    },
+    "edgeCases": [
+      "Unexpected capital gains push MAGI above cliff after conversion.",
+      "Giving schedule changes late year and breaks planning assumptions.",
+      "RMD timing and custodian processing create sequencing errors.",
+      "One-time income event invalidates planned bracket room."
+    ],
+    "avoidA": [
+      "Charitable giving is uncertain and may not occur.",
+      "Conversion window is unusually temporary and should be captured first.",
+      "Your MAGI headroom is already large and IRMAA risk is low."
+    ],
+    "avoidB": [
+      "You are near a surcharge threshold with little buffer.",
+      "Medicare premium increase would materially strain cash flow.",
+      "You lack a sequence monitoring process during the year."
+    ],
+    "checklist": [
+      "Map current MAGI headroom to next IRMAA tier.",
+      "Set conversion range with cliff guardrails.",
+      "Lock charitable timing and custodian workflow early.",
+      "Run mid-year and Q4 sequence recalculations.",
+      "Document final sequence rationale and assumptions."
+    ],
+    "advisorQuestions": [
+      "What conversion range keeps us below the next IRMAA tier?",
+      "How should QCD timing integrate with our RMD workflow?",
+      "What non-IRA income risks could break our sequence plan?",
+      "How should we adjust sequence if markets decline sharply?"
+    ],
+    "faq": [
+      { "q": "Should retirees always do QCD first?", "a": "Not always. It is often compelling near IRMAA cliffs, but sequence depends on conversion goals and MAGI headroom." },
+      { "q": "Can conversion-first still be right near a cliff?", "a": "Yes, if long-term strategy warrants it and you can absorb potential premium impact." },
+      { "q": "Is one-year optimization enough?", "a": "Usually no. A multi-year sequence view is more reliable." }
+    ],
+    "related": [
+      { "href": "/blog/retirement-withdrawal-strategy-tax-implications", "label": "Retirement Withdrawal Tax Implications" },
+      { "href": "/blog/roth-conversion-tax-calculator", "label": "Roth Conversion Calculator" },
+      { "href": "/blog/retirement-income-plan-vs-taxable-brokerage", "label": "Retirement Income Planning" }
+    ]
+  },
+  {
+    "slug": "installment-sale-vs-deferred-sales-trust-small-business-exit",
+    "title": "Installment Sale vs Deferred Sales Trust for Small Business Exit (Sub $10M Deals)",
+    "description": "A tax-timing and risk comparison for owners planning lower-middle-market business exits.",
+    "intro": "In sub-$10M exits, complexity costs and counterparty risk can overwhelm theoretical tax benefits. The practical question is whether structure complexity improves your after-tax certainty, not just your modeled deferral.",
+    "optionAName": "Installment Sale",
+    "optionBName": "Deferred Sales Trust Structure",
+    "winnerLabel": "Depends on certainty vs complexity preference",
+    "whenA": "Best when simpler legal structure and transparent payment terms are priorities.",
+    "whenB": "Best when deferral objectives justify higher structural complexity and diligence burden.",
+    "decisionMatrix": [
+      { "factor": "Structural simplicity", "a": "Higher", "b": "Lower", "better": "A" },
+      { "factor": "Deferral design flexibility", "a": "Moderate", "b": "Potentially higher", "better": "B" },
+      { "factor": "Counterparty and execution risk", "a": "More direct and visible", "b": "Can involve layered risk", "better": "A" },
+      { "factor": "Professional fee burden", "a": "Generally lower", "b": "Generally higher", "better": "A" },
+      { "factor": "Best fit", "a": "Owners prioritizing clarity", "b": "Owners prioritizing bespoke deferral design", "better": "Case-specific" }
+    ],
+    "workedExample": {
+      "profile": "Owner selling service business for $7.4M, wants tax smoothing and retirement cash-flow certainty.",
+      "assumptions": [
+        "Buyer quality is strong but payout timing spans multiple years",
+        "Owner needs predictable annual income",
+        "Professional fees materially affect net proceeds"
+      ],
+      "aOutcome": "Installment approach gives clearer payment visibility with lower complexity but potentially less customization.",
+      "bOutcome": "Deferred trust structure may increase design flexibility but adds diligence and fee complexity that can erode net benefit.",
+      "takeaway": "For smaller exits, implementation risk and cost control often decide more than headline deferral potential."
+    },
+    "edgeCases": [
+      "Buyer payment reliability assumptions are optimistic.",
+      "Fee stack materially reduces expected net benefit.",
+      "Owner lacks clear diligence process for complex trust structures.",
+      "Retirement cash-flow needs are incompatible with structure timing."
+    ],
+    "avoidA": [
+      "You need a highly customized deferral framework beyond standard terms.",
+      "Buyer terms do not support reliable installment pacing.",
+      "Your broader plan requires more structural flexibility."
+    ],
+    "avoidB": [
+      "You prioritize transparency and straightforward execution.",
+      "Deal size cannot absorb high complexity costs efficiently.",
+      "You cannot perform deep diligence on layered structures."
+    ],
+    "checklist": [
+      "Build after-tax proceeds timeline for both structures.",
+      "Model fee and professional-cost sensitivity ranges.",
+      "Stress-test buyer payment reliability assumptions.",
+      "Define retirement income floor required post-exit.",
+      "Complete red-flag diligence checklist before final structure decision."
+    ],
+    "advisorQuestions": [
+      "What assumptions drive the largest variance in net after-tax outcome?",
+      "How much complexity premium are we actually paying here?",
+      "What specific diligence questions should we require in writing?",
+      "What happens to plan viability under delayed or reduced payments?"
+    ],
+    "faq": [
+      { "q": "Is deferred sales trust always better for tax deferral?", "a": "No. Additional flexibility can come with added complexity, fee drag, and execution risk." },
+      { "q": "Is installment sale too basic for strategic exits?", "a": "Not necessarily. Simplicity can improve certainty and reduce implementation failure risk." },
+      { "q": "Can smaller deals support complex structures efficiently?", "a": "Sometimes, but complexity costs must be weighed carefully against expected benefit." }
+    ],
+    "related": [
+      { "href": "/blog/business-succession-planning", "label": "Business Succession Planning" },
+      { "href": "/blog/capital-gains-tax-for-small-business-owners", "label": "Capital Gains for Owners" },
+      { "href": "/blog/tax-strategy-for-consultants", "label": "Tax Strategy for Consultants" }
+    ]
+  }
+]
