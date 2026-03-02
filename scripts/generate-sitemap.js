@@ -9,11 +9,13 @@
 
 const fs = require('fs');
 const path = require('path');
+const matter = require('gray-matter');
 
 // Configuration
 const SITE_URL = process.env.SITE_URL || 'https://www.legacyinvestingshow.com';
 const ROOT_DIR = path.join(__dirname, '..');
 const OUTPUT_FILE = path.join(ROOT_DIR, 'sitemap.xml');
+const BLOG_CONTENT_DIR = path.join(ROOT_DIR, 'content', 'blog');
 
 // Static pages
 // Note: Removed duplicate entries (/index.html and /blog/index) to prevent crawler confusion
@@ -165,6 +167,7 @@ function extractImageFromHtml(filePath) {
 function scanBlogPosts() {
   const blogDir = path.join(ROOT_DIR, 'blog');
   const posts = [];
+  const blogLastmodMap = getBlogLastmodMap();
 
   if (!fs.existsSync(blogDir)) {
     console.log('Blog directory not found, creating empty blog sitemap entries');
@@ -179,15 +182,55 @@ function scanBlogPosts() {
       if (!isIndexableHtml(fullPath)) continue;
       const stats = fs.statSync(fullPath);
       const imageUrl = extractImageFromHtml(fullPath);
+      const slug = entry.name.replace(/\.html$/i, '');
       posts.push({
         url: `/blog/${entry.name}`,
-        lastmod: getW3CDate(stats.mtime),
+        lastmod: blogLastmodMap.get(slug) || getW3CDate(stats.mtime),
         image: imageUrl,
       });
     }
   }
 
   return posts;
+}
+
+/**
+ * Parse a date-like value from frontmatter into YYYY-MM-DD.
+ */
+function parseFrontmatterDate(value) {
+  if (!value) return null;
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return null;
+  return getW3CDate(date);
+}
+
+/**
+ * Build a lookup map of blog slug -> lastmod from markdown frontmatter.
+ * Prefers `modifiedDate`, then falls back to `date`.
+ */
+function getBlogLastmodMap() {
+  const lastmodMap = new Map();
+  if (!fs.existsSync(BLOG_CONTENT_DIR)) return lastmodMap;
+
+  const entries = fs.readdirSync(BLOG_CONTENT_DIR, { withFileTypes: true });
+  for (const entry of entries) {
+    if (!entry.isFile() || !entry.name.endsWith('.md')) continue;
+    const slug = entry.name.replace(/\.md$/i, '');
+    const fullPath = path.join(BLOG_CONTENT_DIR, entry.name);
+
+    try {
+      const raw = fs.readFileSync(fullPath, 'utf8');
+      const { data } = matter(raw);
+      const lastmod = parseFrontmatterDate(data.modifiedDate) || parseFrontmatterDate(data.date);
+      if (lastmod) {
+        lastmodMap.set(slug, lastmod);
+      }
+    } catch (error) {
+      console.warn(`Could not parse frontmatter for ${entry.name}: ${error.message}`);
+    }
+  }
+
+  return lastmodMap;
 }
 
 /**

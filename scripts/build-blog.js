@@ -30,6 +30,12 @@ const ROOT_DIR = path.join(__dirname, '..');
 const CONTENT_DIR = path.join(ROOT_DIR, 'content', 'blog');
 const OUTPUT_DIR = path.join(ROOT_DIR, 'blog');
 const TEMPLATE_PATH = path.join(ROOT_DIR, 'templates', 'blog-post.html');
+const GA_TRACKING_ID = process.env.GA_TRACKING_ID || 'G-2578PT1WSS';
+const GTM_CONTAINER_ID = process.env.GTM_CONTAINER_ID || 'GTM-KQ4R2LKP';
+const GOOGLE_SITE_VERIFICATIONS = [
+    'Kec6RfGhFL-qG_8zKxCqt7yxjgy65WeDAftCBm90G2s',
+    '92MoCnkdQOj_ey1lEafT5Mz-znCcCQ3UABZlI-JG_nM'
+];
 
 /**
  * Calculate read time based on word count
@@ -575,6 +581,8 @@ function generateBlogIndex(posts) {
     <meta name="keywords" content="wealth building, investing, real estate, financial freedom">
     <meta name="author" content="Preston Seo">
     <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="${GOOGLE_SITE_VERIFICATIONS[0]}">
+    <meta name="google-site-verification" content="${GOOGLE_SITE_VERIFICATIONS[1]}">
     <link rel="canonical" href="https://www.legacyinvestingshow.com/blog/">
 
     <!-- Open Graph / Facebook -->
@@ -625,16 +633,20 @@ function generateBlogIndex(posts) {
     }
     </script>
 
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_CONTAINER_ID}');</script>
+
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-2578PT1WSS');
+        gtag('config', '${GA_TRACKING_ID}');
     </script>
 </head>
 <body class="bg-white text-gray-900">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=${GTM_CONTAINER_ID}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- Skip to main content -->
     <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-gray-900 text-white px-4 py-2 z-50">
         Skip to main content

@@ -17,6 +17,12 @@ const ROOT_DIR = path.join(__dirname, '..');
 const DATA_PATH = path.join(ROOT_DIR, 'data', 'tax-strategies.json');
 const TEMPLATE_PATH = path.join(ROOT_DIR, 'templates', 'tax-strategy.html');
 const OUTPUT_DIR = path.join(ROOT_DIR, 'tax-strategies');
+const GA_TRACKING_ID = process.env.GA_TRACKING_ID || 'G-2578PT1WSS';
+const GTM_CONTAINER_ID = process.env.GTM_CONTAINER_ID || 'GTM-KQ4R2LKP';
+const GOOGLE_SITE_VERIFICATIONS = [
+    'Kec6RfGhFL-qG_8zKxCqt7yxjgy65WeDAftCBm90G2s',
+    '92MoCnkdQOj_ey1lEafT5Mz-znCcCQ3UABZlI-JG_nM'
+];
 
 /**
  * Ensure directory exists
@@ -261,6 +267,8 @@ function generateIndexPage(strategies, personas) {
     <meta name="keywords" content="tax strategies, real estate tax benefits, cost segregation, 1031 exchange, tax deductions, wealth building">
     <meta name="author" content="Preston Seo">
     <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="${GOOGLE_SITE_VERIFICATIONS[0]}">
+    <meta name="google-site-verification" content="${GOOGLE_SITE_VERIFICATIONS[1]}">
     <link rel="canonical" href="https://www.legacyinvestingshow.com/tax-strategies/">
 
     <meta property="og:type" content="website">
@@ -314,12 +322,13 @@ function generateIndexPage(strategies, personas) {
     }
     </script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_CONTAINER_ID}');</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-2578PT1WSS');
+        gtag('config', '${GA_TRACKING_ID}');
     </script>
 
     <style>
@@ -498,6 +507,7 @@ function generateIndexPage(strategies, personas) {
     </style>
 </head>
 <body class="bg-white text-gray-900">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=${GTM_CONTAINER_ID}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-gray-900 text-white px-4 py-2 z-50">
         Skip to main content
     </a>
@@ -847,6 +857,8 @@ function generatePersonaPage(persona, strategies) {
     <meta name="keywords" content="tax strategies ${persona.title.toLowerCase()}, ${persona.topStrategies.join(', ')}">
     <meta name="author" content="Preston Seo">
     <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="${GOOGLE_SITE_VERIFICATIONS[0]}">
+    <meta name="google-site-verification" content="${GOOGLE_SITE_VERIFICATIONS[1]}">
     <link rel="canonical" href="https://www.legacyinvestingshow.com/tax-strategies/for/${persona.slug}">
 
     <!-- Schema Markup -->
@@ -877,12 +889,13 @@ function generatePersonaPage(persona, strategies) {
     <link rel="apple-touch-icon" href="/assets/images/logo.png">
     <link rel="stylesheet" href="/assets/css/styles.css">
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_CONTAINER_ID}');</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-2578PT1WSS');
+        gtag('config', '${GA_TRACKING_ID}');
     </script>
 
     <style>
@@ -1038,6 +1051,7 @@ function generatePersonaPage(persona, strategies) {
     </style>
 </head>
 <body class="bg-white text-gray-900">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=${GTM_CONTAINER_ID}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-gray-900 text-white px-4 py-2 z-50">
         Skip to main content
     </a>
