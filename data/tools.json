@@ -1,0 +1,196 @@
+{
+  "tools": [
+    {
+      "id": "T01",
+      "slug": "estimated-tax-safe-harbor-planner",
+      "title": "Estimated Tax Safe Harbor Planner",
+      "description": "Use last year's total tax to estimate a safe-harbor baseline, then build a catch-up plan based on withholding and payments you've already made.",
+      "badge": "Estimated Tax",
+      "opening": [
+        "If you have a W-2 plus 1099 income, or your income is lumpy, estimated taxes are rarely a math problem. They are a process problem.",
+        "This planner helps you build a conservative safe-harbor baseline from last year's return, then turn it into a clean catch-up plan you can actually execute (with an audit folder that makes sense)."
+      ],
+      "sections": [
+        {
+          "id": "how-it-works",
+          "title": "How The Planner Works",
+          "paragraphs": [
+            "Step 1 is a baseline: last year's total tax times a safe-harbor percentage (usually 100%, sometimes 110% for higher income).",
+            "Step 2 is reality: you subtract withholding and payments already made.",
+            "Step 3 is execution: you spread what is left across the number of payments you still plan to make this year.",
+            "This does not replace a tax projection. It gives you a defensible floor so you can stop guessing and start tracking."
+          ]
+        },
+        {
+          "id": "when-to-use",
+          "title": "When Safe Harbor Is The Right Move",
+          "paragraphs": [
+            "Use a safe-harbor plan when your income is volatile, your deductions are uncertain, or you are mid-year changing your structure (new S corp, new rental, new business).",
+            "The safe-harbor mindset is simple: keep penalties off the table, then do the higher-leverage work (income shaping, documentation, and advisor packet quality)."
+          ]
+        },
+        {
+          "id": "common-mistakes",
+          "title": "Common Mistakes That Blow Up Estimated Tax",
+          "paragraphs": [
+            "Counting planned deductions that are not executed yet.",
+            "Assuming year-end cleanup will fix underpayments when cash flow is already tight.",
+            "Treating estimated taxes like a one-time event instead of a system you run every month."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is safe harbor always 100% of last year's tax?",
+          "a": "Often, yes. Higher-income filers may be subject to a higher safe-harbor percentage. This tool lets you model both so you can pick the more conservative floor."
+        },
+        {
+          "q": "Do I have to make four equal payments?",
+          "a": "Many people do. If you are behind, the practical move is a catch-up plan over your remaining payments. This tool focuses on execution simplicity."
+        },
+        {
+          "q": "What if my withholding is changing mid-year?",
+          "a": "Re-run the tool whenever your paycheck changes, you add a side income stream, or you shift profits between entities. Treat it like a monthly check-in."
+        }
+      ],
+      "related": [
+        {
+          "href": "/compare/safe-harbor-vs-annualized-income-1099",
+          "label": "Safe Harbor vs Annualized Income (1099 edge cases)"
+        },
+        {
+          "href": "/tax-strategies/",
+          "label": "Tax Strategies Library"
+        }
+      ]
+    },
+    {
+      "id": "T02",
+      "slug": "accountable-plan-home-office-reimbursement-calculator",
+      "title": "Home Office Reimbursement Calculator",
+      "description": "Calculate a home office reimbursement amount under an accountable plan using a simple square-foot allocation and a clean documentation checklist.",
+      "badge": "S Corp Process",
+      "opening": [
+        "A home office reimbursement done the right way is not about squeezing every dollar. It is about building a repeatable process your CPA can defend.",
+        "This calculator estimates a conservative reimbursement amount using a square-foot allocation, then gives you a documentation checklist so the math actually survives real-world execution."
+      ],
+      "sections": [
+        {
+          "id": "how-it-works",
+          "title": "What This Calculator Is Actually Doing",
+          "paragraphs": [
+            "You enter your home's total square footage and your dedicated office square footage to compute a business-use percentage.",
+            "Then you add the home expenses you want to reimburse (utilities, internet, rent, insurance, repairs, HOA, and similar).",
+            "The calculator allocates each expense by the business-use percentage, then suggests a monthly reimbursement cadence so you can stop doing year-end reconstructions."
+          ]
+        },
+        {
+          "id": "execution-notes",
+          "title": "Execution Notes (Where People Get Burned)",
+          "paragraphs": [
+            "If the space is not exclusive and regular, the math does not matter. The qualification gate matters first.",
+            "If you cannot show a simple policy, a reimbursement request, and contemporaneous receipts, your accountant ends up cleaning up a mess at tax time.",
+            "Keep it boring: monthly reimbursement, one folder per year, and the same worksheet every month."
+          ]
+        },
+        {
+          "id": "advisor-packet",
+          "title": "What To Hand Your CPA",
+          "paragraphs": [
+            "A one-page accountable plan policy (effective date, what is reimbursable, and how reimbursements are requested).",
+            "Your square-foot calculation (floor plan or measurement notes, plus photos).",
+            "Expense proof (bills, receipts, statements) and a monthly reimbursement log."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is this the same as the home office deduction?",
+          "a": "No. This is a reimbursement workflow under an accountable plan. The point is a clean, repeatable process and documentation, not a one-off deduction."
+        },
+        {
+          "q": "Do I need an S corp for this to matter?",
+          "a": "It often shows up in S corp conversations because reimbursements and documentation matter a lot there. The process quality is the real win."
+        },
+        {
+          "q": "Should I reimburse yearly or monthly?",
+          "a": "Monthly is usually cleaner because it avoids reconstructing a story after the year ends. This tool shows both so you can pick a cadence you will actually follow."
+        }
+      ],
+      "related": [
+        {
+          "href": "/compare/augusta-rule-vs-home-office-deduction-s-corp",
+          "label": "Augusta Rule vs Home Office Deduction (S corp edge cases)"
+        },
+        {
+          "href": "/compare/solo-401k-loan-vs-heloc-down-payment",
+          "label": "Solo 401(k) Loan vs HELOC (liquidity + documentation)"
+        }
+      ]
+    },
+    {
+      "id": "T03",
+      "slug": "augusta-rule-meeting-log-and-rent-calculator",
+      "title": "Augusta Rule Rent Calculator + Log",
+      "description": "Build a clean meeting log, estimate a defensible rent amount, and generate a simple CSV you can put in your audit folder.",
+      "badge": "Documentation",
+      "opening": [
+        "Most Augusta Rule problems are not math problems. They are documentation problems.",
+        "This tool is built for execution: estimate rent, stay inside the 14-day guardrail, and leave with a meeting log you can hand to your advisor without a long explanation."
+      ],
+      "sections": [
+        {
+          "id": "how-it-works",
+          "title": "How To Use This Tool",
+          "paragraphs": [
+            "Add your meeting dates, purpose, and attendees. The tool counts days and builds a simple log.",
+            "Enter a daily rate that is defensible for your area (based on comparable rentals or venue costs).",
+            "The calculator estimates total rent and flags when you are over 14 days so you do not accidentally convert a clean strategy into a mess."
+          ]
+        },
+        {
+          "id": "defensible-rate",
+          "title": "What Makes A Daily Rate Defensible",
+          "paragraphs": [
+            "The rate is not whatever you want. It needs evidence.",
+            "Think like an auditor: could you show comps, invoices, or venue pricing that supports the number you used?",
+            "If you cannot defend it on paper, lower it and keep the process clean."
+          ]
+        },
+        {
+          "id": "audit-folder",
+          "title": "What Goes In The Audit Folder",
+          "paragraphs": [
+            "Meeting log (dates, attendees, agenda, minutes).",
+            "Comparable rate evidence (screenshots, quotes, or listings).",
+            "Payment record and entity approval notes (board minutes or consent)."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "What happens if I use more than 14 days?",
+          "a": "The strategy changes materially once you exceed the guardrail. This tool flags it early so you can adjust before you create downstream problems."
+        },
+        {
+          "q": "Do I need a formal meeting agenda and minutes?",
+          "a": "If you want the strategy to hold up in the real world, yes. The log, agenda, and minutes are the difference between a clean file and a sloppy story."
+        },
+        {
+          "q": "Can I export this log?",
+          "a": "Yes. The tool generates a simple CSV so you can store it with your receipts and supporting evidence."
+        }
+      ],
+      "related": [
+        {
+          "href": "/compare/augusta-rule-vs-home-office-deduction-s-corp",
+          "label": "Augusta Rule vs Home Office Deduction (S corp edge cases)"
+        },
+        {
+          "href": "/compare/pricelabs-vs-pms-native-pricing-multi-property",
+          "label": "PriceLabs vs PMS native pricing (operator process discipline)"
+        }
+      ]
+    }
+  ]
+}

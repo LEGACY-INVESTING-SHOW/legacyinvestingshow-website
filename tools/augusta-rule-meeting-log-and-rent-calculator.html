@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Augusta Rule Rent Calculator + Log | Legacy Investing Show</title>
+    <meta name="description" content="Build a clean meeting log, estimate a defensible rent amount, and generate a simple CSV you can put in your audit folder.">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="Kec6RfGhFL-qG_8zKxCqt7yxjgy65WeDAftCBm90G2s">
+    <meta name="google-site-verification" content="92MoCnkdQOj_ey1lEafT5Mz-znCcCQ3UABZlI-JG_nM">
+    <link rel="canonical" href="https://www.legacyinvestingshow.com/tools/augusta-rule-meeting-log-and-rent-calculator">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.legacyinvestingshow.com/tools/augusta-rule-meeting-log-and-rent-calculator">
+    <meta property="og:title" content="Augusta Rule Rent Calculator + Log">
+    <meta property="og:description" content="Build a clean meeting log, estimate a defensible rent amount, and generate a simple CSV you can put in your audit folder.">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Augusta Rule Rent Calculator + Log">
+    <meta name="twitter:description" content="Build a clean meeting log, estimate a defensible rent amount, and generate a simple CSV you can put in your audit folder.">
+
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" href="/assets/images/logo.png">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Augusta Rule Rent Calculator + Log","description":"Build a clean meeting log, estimate a defensible rent amount, and generate a simple CSV you can put in your audit folder.","applicationCategory":"FinanceApplication","operatingSystem":"Web","isAccessibleForFree":true,"datePublished":"2026-03-02","dateModified":"2026-03-02","url":"https://www.legacyinvestingshow.com/tools/augusta-rule-meeting-log-and-rent-calculator","publisher":{"@type":"Organization","name":"Legacy Investing Show"},"author":{"@type":"Person","name":"Preston Seo"}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What happens if I use more than 14 days?","acceptedAnswer":{"@type":"Answer","text":"The strategy changes materially once you exceed the guardrail. This tool flags it early so you can adjust before you create downstream problems."}},{"@type":"Question","name":"Do I need a formal meeting agenda and minutes?","acceptedAnswer":{"@type":"Answer","text":"If you want the strategy to hold up in the real world, yes. The log, agenda, and minutes are the difference between a clean file and a sloppy story."}},{"@type":"Question","name":"Can I export this log?","acceptedAnswer":{"@type":"Answer","text":"Yes. The tool generates a simple CSV so you can store it with your receipts and supporting evidence."}}]}</script>
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-2578PT1WSS');
+    </script>
+
+    <style>
+        .tools-hero {
+            padding: 8rem 0 3.5rem;
+            background: linear-gradient(135deg, #f8fafc 0%, #e5e7eb 100%);
+        }
+        .tools-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: #111827;
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            border-radius: 999px;
+            margin-bottom: 1rem;
+        }
+        .tools-title {
+            font-size: 2.125rem;
+            font-weight: 700;
+            line-height: 1.15;
+            color: #111827;
+            margin-bottom: 1rem;
+        }
+        @media (min-width: 768px) {
+            .tools-title { font-size: 2.6rem; }
+        }
+        .tools-subtitle {
+            max-width: 52rem;
+            color: #4b5563;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .content-section { padding: 3.25rem 0; }
+        .content-section--alt { background: #f9fafb; }
+        .content-grid { display: grid; gap: 2rem; }
+        @media (min-width: 1024px) {
+            .content-grid { grid-template-columns: minmax(0, 2.2fr) minmax(280px, 1fr); }
+        }
+        .prose-content { color: #374151; line-height: 1.75; }
+        .prose-content h2 { color: #111827; font-size: 1.6rem; line-height: 1.3; margin-bottom: 1rem; }
+        .prose-content p { margin-bottom: 1rem; }
+        .prose-content ul { padding-left: 1.2rem; margin: 0.5rem 0 1rem; }
+        .prose-content li { margin-bottom: 0.55rem; }
+
+        .tool-card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 1rem;
+            overflow: hidden;
+            margin: 1.25rem 0 2rem;
+        }
+        .tool-card__header {
+            padding: 1.25rem 1.25rem 0.75rem;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        .tool-card__title {
+            margin: 0;
+            color: #111827;
+            font-weight: 800;
+            font-size: 1.25rem;
+            line-height: 1.25;
+        }
+        .tool-card__subtitle {
+            margin: 0.45rem 0 0;
+            color: #6b7280;
+            font-size: 0.95rem;
+            line-height: 1.55;
+        }
+        .tool-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            gap: 1rem;
+            padding: 1.25rem;
+        }
+        @media (min-width: 1024px) {
+            .tool-grid { grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: 1.25rem; }
+        }
+
+        .tool-form {
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.9rem;
+            padding: 1rem;
+        }
+        .field { margin-bottom: 0.9rem; }
+        .field-row { display: grid; gap: 0.85rem; }
+        @media (min-width: 768px) { .field-row { grid-template-columns: 1fr 1fr; } }
+        .field label {
+            display: block;
+            font-weight: 700;
+            color: #111827;
+            font-size: 0.9rem;
+            margin-bottom: 0.35rem;
+        }
+        .field input,
+        .field select {
+            width: 100%;
+            border: 1px solid #d1d5db;
+            border-radius: 0.6rem;
+            padding: 0.65rem 0.75rem;
+            font-size: 0.95rem;
+            background: white;
+            color: #111827;
+        }
+        .hint { margin-top: 0.35rem; color: #6b7280; font-size: 0.82rem; line-height: 1.5; }
+        .tool-button {
+            width: 100%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.85rem 1.1rem;
+            background: #111827;
+            color: white;
+            border: none;
+            border-radius: 0.65rem;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        .tool-button:hover { background: #0b1220; }
+        .tool-button--ghost {
+            background: transparent;
+            border: 1px solid #d1d5db;
+            color: #111827;
+            width: auto;
+            padding: 0.6rem 0.9rem;
+            font-weight: 700;
+        }
+        .tool-button--ghost:hover { background: #f3f4f6; }
+
+        .tool-results { padding: 0.2rem 0; }
+        .results-kpis { display: grid; gap: 0.85rem; }
+        @media (min-width: 768px) { .results-kpis { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+        .kpi {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.9rem;
+            padding: 0.9rem 0.95rem;
+        }
+        .kpi__label {
+            font-size: 0.72rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: #6b7280;
+            margin-bottom: 0.35rem;
+        }
+        .kpi__value { color: #111827; font-weight: 800; font-size: 1.1rem; }
+        .kpi__value--good { color: #047857; }
+        .kpi__meta { color: #6b7280; font-size: 0.82rem; margin-top: 0.35rem; line-height: 1.4; }
+
+        .results-table-wrap {
+            margin-top: 1rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.9rem;
+            overflow-x: auto;
+            background: white;
+        }
+        .results-table { width: 100%; border-collapse: collapse; min-width: 620px; }
+        .results-table th {
+            background: #111827;
+            color: white;
+            text-align: left;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            padding: 0.8rem;
+            vertical-align: top;
+        }
+        .results-table td {
+            border-bottom: 1px solid #e5e7eb;
+            padding: 0.78rem;
+            vertical-align: top;
+            color: #374151;
+            font-size: 0.94rem;
+        }
+
+        .results-note {
+            margin-top: 1rem;
+            background: #ecfdf5;
+            border-left: 4px solid #10b981;
+            padding: 0.9rem 0.95rem;
+            border-radius: 0.6rem;
+            color: #065f46;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        .results-note--alt {
+            background: #eff6ff;
+            border-left-color: #3b82f6;
+            color: #1e3a8a;
+        }
+
+        .sidebar { position: sticky; top: 6rem; align-self: start; }
+        .sidebar-card {
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.75rem;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        .sidebar-card__title { font-size: 0.95rem; font-weight: 800; color: #111827; margin-bottom: 0.8rem; }
+        .sidebar-list { list-style: none; padding: 0; margin: 0; }
+        .sidebar-list li { margin-bottom: 0.55rem; }
+        .sidebar-list a { color: #374151; text-decoration: none; font-size: 0.9rem; }
+        .sidebar-list a:hover { color: #111827; text-decoration: underline; }
+
+        .faq-section { background: #f9fafb; padding: 3.5rem 0; }
+        .faq-section__title { font-size: 1.7rem; font-weight: 800; color: #111827; margin-bottom: 1.75rem; text-align: center; }
+        .faq-list { max-width: 52rem; margin: 0 auto; }
+        .faq-item { background: white; border-radius: 0.75rem; margin-bottom: 0.9rem; overflow: hidden; border: 1px solid #e5e7eb; }
+        .faq-question {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.1rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            text-align: left;
+            color: #111827;
+            font-size: 0.98rem;
+            font-weight: 700;
+        }
+        .faq-question:hover { background: #f9fafb; }
+        .faq-chevron { width: 1.2rem; height: 1.2rem; color: #9ca3af; transition: transform 0.2s; }
+        .faq-question[aria-expanded="true"] .faq-chevron { transform: rotate(180deg); }
+        .faq-answer { display: none; padding: 0 1.1rem 1.1rem; color: #4b5563; line-height: 1.65; }
+        .faq-answer--open { display: block; }
+
+        .cta-section { padding: 3.5rem 0; text-align: center; }
+        .cta-card {
+            background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+            border-radius: 1rem;
+            padding: 2.5rem 1.5rem;
+            color: white;
+        }
+        .cta-card__title { font-size: 1.7rem; font-weight: 800; color: #ffffff; margin-bottom: 0.85rem; }
+        .cta-card__text { color: #d1d5db; max-width: 46rem; margin: 0 auto 1.4rem; }
+        .cta-card__button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.85rem 1.6rem;
+            background: #10b981;
+            color: white;
+            border-radius: 0.5rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .cta-card__button:hover { background: #059669; }
+
+        .breadcrumb { padding: 1rem 0; font-size: 0.875rem; color: #6b7280; }
+        .breadcrumb a { color: #6b7280; text-decoration: none; }
+        .breadcrumb a:hover { color: #111827; }
+        .breadcrumb span.sep { margin: 0 0.5rem; color: #9ca3af; }
+
+        .log-table-wrap {
+            border: 1px solid #e5e7eb;
+            border-radius: 0.75rem;
+            background: white;
+            overflow-x: auto;
+            margin-top: 0.6rem;
+        }
+        .log-table { width: 100%; border-collapse: collapse; min-width: 640px; }
+        .log-table th {
+            background: #111827;
+            color: white;
+            text-align: left;
+            font-size: 0.85rem;
+            font-weight: 700;
+            padding: 0.75rem;
+        }
+        .log-table td { border-bottom: 1px solid #e5e7eb; padding: 0.65rem 0.75rem; }
+        .log-table input {
+            width: 100%;
+            border: 1px solid #d1d5db;
+            border-radius: 0.55rem;
+            padding: 0.55rem 0.65rem;
+            font-size: 0.92rem;
+        }
+        .log-actions { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-top: 0.75rem; }
+        .linklike {
+            background: none;
+            border: none;
+            padding: 0;
+            color: #374151;
+            text-decoration: underline;
+            cursor: pointer;
+            font-weight: 700;
+        }
+        .log-remove { white-space: nowrap; }
+
+        @media (max-width: 767px) {
+            .tools-hero { padding: 6.75rem 0 2.4rem; }
+            .tools-title { font-size: 1.65rem; }
+            .tools-subtitle { font-size: 1rem; line-height: 1.6; }
+            .content-section { padding: 2.2rem 0; }
+            .prose-content h2 { font-size: 1.35rem; }
+            .tool-grid { padding: 1rem; }
+            .tool-form { padding: 0.85rem; }
+            .results-table { min-width: 0; }
+            .results-table thead { display: none; }
+            .results-table, .results-table tbody, .results-table tr, .results-table td { display: block; width: 100%; }
+            .results-table tr { border-bottom: 1px solid #e5e7eb; padding: 0.45rem 0.1rem; }
+            .results-table td { border-bottom: none; padding: 0.45rem 0.6rem; }
+            .results-table td::before {
+                content: attr(data-label);
+                display: block;
+                font-size: 0.73rem;
+                font-weight: 800;
+                text-transform: uppercase;
+                letter-spacing: 0.04em;
+                color: #6b7280;
+                margin-bottom: 0.2rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-gray-900 text-white px-4 py-2 z-50">
+        Skip to main content
+    </a>
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <nav class="container-custom" aria-label="Main navigation">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="flex items-center gap-2 font-medium text-gray-900 hover:text-gray-700 transition-colors">
+                    <img src="/assets/images/logo.png" alt="Legacy Investing Show Logo" width="28" height="28" class="w-7 h-7">
+                    <span>Legacy Investing Show</span>
+                </a>
+
+                <div class="hidden md:flex items-center gap-6">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/success-stories" class="nav-link">Results</a>
+                    <a href="/blog/" class="nav-link">Blog</a>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col gap-3">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/success-stories" class="nav-link">Results</a>
+                    <a href="/blog/" class="nav-link">Blog</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <div class="container-custom breadcrumb" style="padding-top: 5rem;">
+            <a href="/">Home</a>
+            <span class="sep">/</span>
+            <a href="/tools/">Tools</a>
+            <span class="sep">/</span>
+            <span class="text-gray-900">Augusta Rule Rent Calculator + Log</span>
+        </div>
+
+        <section class="tools-hero">
+            <div class="container-custom">
+                <span class="tools-badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 6v6l4 2"/>
+                        <path d="M21 12a9 9 0 1 1-9-9 9 9 0 0 1 9 9z"/>
+                    </svg>
+                    Documentation
+                </span>
+                <h1 class="tools-title">Augusta Rule Rent Calculator + Log</h1>
+                <p class="tools-subtitle">Build a clean meeting log, estimate a defensible rent amount, and generate a simple CSV you can put in your audit folder.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container-custom content-grid">
+                <article class="prose-content">
+                    <h2>Why This Tool Exists</h2>
+                    <p>Most Augusta Rule problems are not math problems. They are documentation problems.</p>
+<p>This tool is built for execution: estimate rent, stay inside the 14-day guardrail, and leave with a meeting log you can hand to your advisor without a long explanation.</p>
+
+                    <section class="tool-card" id="calculator" aria-label="Augusta Rule meeting log builder and rent calculator">
+            <div class="tool-card__header">
+              <h2 class="tool-card__title">Meeting Log + Rent Calculator</h2>
+              <p class="tool-card__subtitle">Build the log first. Then run the rent math with 14-day guardrails.</p>
+            </div>
+
+            <div class="tool-grid">
+              <form class="tool-form" id="t03-form">
+                <div class="field">
+                  <label>Meeting log</label>
+                  <div class="hint">Add meeting rows. The tool counts unique dates as days.</div>
+                  <div class="log-table-wrap" role="region" aria-label="Meeting log table">
+                    <table class="log-table" id="t03-log">
+                      <thead>
+                        <tr>
+                          <th>Date</th>
+                          <th>Purpose</th>
+                          <th>Attendees</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody></tbody>
+                    </table>
+                  </div>
+                  <div class="log-actions">
+                    <button type="button" class="tool-button tool-button--ghost" id="t03-add">Add meeting</button>
+                    <button type="button" class="tool-button tool-button--ghost" id="t03-csv">Download CSV</button>
+                  </div>
+                </div>
+
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t03-rate">Daily rate (defensible)</label>
+                    <input id="t03-rate" inputmode="decimal" type="text" placeholder="e.g. 450">
+                    <div class="hint">Base this on comps or venue pricing you can show on paper.</div>
+                  </div>
+                  <div class="field">
+                    <label for="t03-daysOverride">Days override (optional)</label>
+                    <input id="t03-daysOverride" inputmode="decimal" type="text" placeholder="leave blank to use log count">
+                    <div class="hint">If you group multiple meetings into one rental day, override here.</div>
+                  </div>
+                </div>
+
+                <button type="button" class="tool-button" id="t03-calc">Calculate rent + guardrails</button>
+              </form>
+
+              <div class="tool-results" aria-live="polite">
+                <div class="results-kpis">
+                  <div class="kpi">
+                    <div class="kpi__label">Rental days used</div>
+                    <div class="kpi__value" id="t03-kpi-days">0</div>
+                    <div class="kpi__meta" id="t03-kpi-guard">Guardrail: 14</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">Daily rate</div>
+                    <div class="kpi__value" id="t03-kpi-rate">$0</div>
+                    <div class="kpi__meta">Evidence matters</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">Estimated total rent</div>
+                    <div class="kpi__value kpi__value--good" id="t03-kpi-total">$0</div>
+                    <div class="kpi__meta">Educational estimate</div>
+                  </div>
+                </div>
+
+                <div class="results-note" id="t03-warning" style="display:none;"></div>
+                <div class="results-note results-note--alt">
+                  If your log is clean, your story is clean. If your log is sloppy, your CPA inherits your risk.
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <script>
+          (function() {
+            function parseMoney(raw) {
+              if (raw == null) return 0;
+              const cleaned = String(raw).replace(/[^0-9.\-]/g, '');
+              const num = Number(cleaned);
+              return Number.isFinite(num) ? num : 0;
+            }
+            function fmtUSD(n) {
+              const v = Number.isFinite(n) ? n : 0;
+              return v.toLocaleString(undefined, { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+            }
+            function uniqDates(rows) {
+              const set = new Set();
+              rows.forEach((r) => { if (r.date) set.add(r.date); });
+              return Array.from(set);
+            }
+            function getRows() {
+              const tbody = document.querySelector('#t03-log tbody');
+              return Array.from(tbody.querySelectorAll('tr')).map((tr) => {
+                const date = tr.querySelector('input[type="date"]').value;
+                const purpose = tr.querySelector('input[data-col="purpose"]').value;
+                const attendees = tr.querySelector('input[data-col="attendees"]').value;
+                return { date, purpose, attendees };
+              });
+            }
+            function addRow(defaults) {
+              const tbody = document.querySelector('#t03-log tbody');
+              const tr = document.createElement('tr');
+              tr.innerHTML =
+                '<td><input type="date" value="' + (defaults && defaults.date ? defaults.date : '') + '" aria-label="Meeting date"></td>' +
+                '<td><input type="text" data-col="purpose" value="' + (defaults && defaults.purpose ? defaults.purpose.replace(/"/g,'&quot;') : '') + '" placeholder="Quarterly planning" aria-label="Meeting purpose"></td>' +
+                '<td><input type="text" data-col="attendees" value="' + (defaults && defaults.attendees ? defaults.attendees.replace(/"/g,'&quot;') : '') + '" placeholder="You, spouse, bookkeeper" aria-label="Attendees"></td>' +
+                '<td class="log-remove"><button type="button" class="linklike">Remove</button></td>';
+              tr.querySelector('button').addEventListener('click', function() { tr.remove(); });
+              tbody.appendChild(tr);
+            }
+
+            function calculate() {
+              const rows = getRows();
+              const overrideDays = parseMoney(document.getElementById('t03-daysOverride').value);
+              const days = overrideDays > 0 ? Math.round(overrideDays) : uniqDates(rows).length;
+              const rate = parseMoney(document.getElementById('t03-rate').value);
+              const total = Math.max(0, days * rate);
+
+              document.getElementById('t03-kpi-days').textContent = String(days);
+              document.getElementById('t03-kpi-rate').textContent = fmtUSD(rate);
+              document.getElementById('t03-kpi-total').textContent = fmtUSD(total);
+
+              const warn = document.getElementById('t03-warning');
+              const msgs = [];
+              if (days === 0) msgs.push('Add meeting dates (or set a days override) to compute the day count.');
+              if (rate <= 0) msgs.push('Enter a daily rate to compute rent.');
+              if (days > 14) msgs.push('You are over 14 days. Stop and talk to your CPA before you execute more days.');
+              if (days > 0 && rows.length === 0 && overrideDays > 0) msgs.push('You are using the days override without a meeting log. Logs are the point of this tool.');
+              warn.style.display = msgs.length ? 'block' : 'none';
+              warn.textContent = msgs.join(' ');
+            }
+
+            function downloadCsv() {
+              const rows = getRows();
+              const header = ['date','purpose','attendees'];
+              const lines = [header.join(',')].concat(rows.map((r) => {
+                function q(v) {
+                  const s = String(v || '');
+                  const escaped = s.replace(/"/g, '""');
+                  return '"' + escaped + '"';
+                }
+                return [q(r.date), q(r.purpose), q(r.attendees)].join(',');
+              }));
+              const blob = new Blob([lines.join('\n')], { type: 'text/csv;charset=utf-8' });
+              const url = URL.createObjectURL(blob);
+              const a = document.createElement('a');
+              a.href = url;
+              a.download = 'augusta-rule-meeting-log.csv';
+              document.body.appendChild(a);
+              a.click();
+              a.remove();
+              setTimeout(() => URL.revokeObjectURL(url), 500);
+            }
+
+            document.getElementById('t03-add').addEventListener('click', function() { addRow(); });
+            document.getElementById('t03-csv').addEventListener('click', downloadCsv);
+            document.getElementById('t03-calc').addEventListener('click', calculate);
+
+            // Start with two rows so the tool is not empty.
+            addRow();
+            addRow();
+          })();
+        </script>
+
+                    <h2 id="how-it-works">How To Use This Tool</h2><p>Add your meeting dates, purpose, and attendees. The tool counts days and builds a simple log.</p>
+<p>Enter a daily rate that is defensible for your area (based on comparable rentals or venue costs).</p>
+<p>The calculator estimates total rent and flags when you are over 14 days so you do not accidentally convert a clean strategy into a mess.</p>
+<h2 id="defensible-rate">What Makes A Daily Rate Defensible</h2><p>The rate is not whatever you want. It needs evidence.</p>
+<p>Think like an auditor: could you show comps, invoices, or venue pricing that supports the number you used?</p>
+<p>If you cannot defend it on paper, lower it and keep the process clean.</p>
+<h2 id="audit-folder">What Goes In The Audit Folder</h2><p>Meeting log (dates, attendees, agenda, minutes).</p>
+<p>Comparable rate evidence (screenshots, quotes, or listings).</p>
+<p>Payment record and entity approval notes (board minutes or consent).</p>
+
+                    <h2 id="doc-checklist">Documentation Checklist (Keep It Defensible)</h2>
+                    <ul>
+                      <li>Create a one-page objective memo before you execute (what outcome you are trying to buy).</li>
+<li>Store your assumptions and calculations in a dated PDF (no year-end reconstructions).</li>
+<li>Keep evidence in the same folder structure every month (receipts, logs, approvals).</li>
+<li>Ask your CPA what would make this easy to sign off on, then build that packet.</li>
+                    </ul>
+                </article>
+
+                <aside class="sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-card__title">On This Page</div>
+                <ul class="sidebar-list">
+                    <li><a href="#calculator">Calculator</a></li>
+<li><a href="#how-it-works">How To Use This Tool</a></li>
+<li><a href="#defensible-rate">What Makes A Daily Rate Defensible</a></li>
+<li><a href="#audit-folder">What Goes In The Audit Folder</a></li>
+<li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-card">
+                <div class="sidebar-card__title">Related Guides</div>
+                <ul class="sidebar-list">
+                    <li><a href="/compare/augusta-rule-vs-home-office-deduction-s-corp">Augusta Rule vs Home Office Deduction (S corp edge cases)</a></li>
+<li><a href="/compare/pricelabs-vs-pms-native-pricing-multi-property">PriceLabs vs PMS native pricing (operator process discipline)</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-card">
+                <div class="sidebar-card__title">Reminder</div>
+                <p style="color:#4b5563; font-size:0.92rem; line-height:1.6; margin:0;">
+                  These tools are educational. Your facts decide what is defensible. If you are implementing a tax strategy, involve a qualified professional early.
+                </p>
+            </div>
+        </aside>
+            </div>
+        </section>
+
+        <section class="faq-section" id="faq">
+            <div class="container-custom">
+                <h2 class="faq-section__title">Frequently Asked Questions</h2>
+                <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
+                    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="faq-question" aria-expanded="true" aria-controls="faq-answer-0">
+                            <span itemprop="name">What happens if I use more than 14 days?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer faq-answer--open" id="faq-answer-0" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">The strategy changes materially once you exceed the guardrail. This tool flags it early so you can adjust before you create downstream problems.</p>
+                        </div>
+                    </div>
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+                            <span itemprop="name">Do I need a formal meeting agenda and minutes?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer " id="faq-answer-1" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">If you want the strategy to hold up in the real world, yes. The log, agenda, and minutes are the difference between a clean file and a sloppy story.</p>
+                        </div>
+                    </div>
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+                            <span itemprop="name">Can I export this log?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer " id="faq-answer-2" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">Yes. The tool generates a simple CSV so you can store it with your receipts and supporting evidence.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container-custom">
+                <div class="cta-card">
+                    <h2 class="cta-card__title">Turn The Tool Into An Execution Plan</h2>
+                    <p class="cta-card__text">The people who win are not the ones who find a strategy. They are the ones who build a monthly system, keep receipts and logs, and hand their CPA a clean packet.</p>
+                    <a href="https://www.managemoney101.com/challengeoptin" class="cta-card__button">
+                        Join the 3-Day Wealth Challenge
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <p style="margin: 1.25rem 0 0; color: #9ca3af; font-size: 0.85rem; line-height: 1.6;">Educational content only. Results vary based on your facts. Always consult a qualified tax professional before making decisions.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="minimal-footer">
+        <div class="container-custom">
+            <div class="minimal-footer-content">
+                <div class="footer-brand">
+                    <img src="/assets/images/logo.png" alt="Legacy Investing Show" width="32" height="32">
+                    <span>Legacy Investing Show</span>
+                </div>
+                <div class="footer-links">
+                    <a href="/success-stories">Results</a>
+                    <a href="/blog/">Blog</a>
+                    <a href="/tax-strategies/">Tax Strategies</a>
+                </div>
+            </div>
+            <div class="footer-copyright">Copyright 2025</div>
+        </div>
+    </footer>
+
+    <script defer src="/assets/js/main.js"></script>
+    <script>
+        document.querySelectorAll('.faq-question').forEach((button) => {
+            button.addEventListener('click', () => {
+                const expanded = button.getAttribute('aria-expanded') === 'true';
+                button.setAttribute('aria-expanded', String(!expanded));
+                button.nextElementSibling.classList.toggle('faq-answer--open');
+            });
+        });
+
+        document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

@@ -32,6 +32,7 @@ const staticPages = [
 const programmaticDirs = [
   'tax-strategies',
   'compare',
+  'tools',
 ];
 
 /**
