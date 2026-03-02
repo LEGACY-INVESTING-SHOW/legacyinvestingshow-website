@@ -82,7 +82,7 @@ Copy requirements:
 - Explain why safe harbor is a floor, not a projection.
 - Show common execution failures and how to avoid them.
 
-### T02: Accountable Plan Home Office Reimbursement Calculator
+### T02: Home Office Reimbursement Calculator (Accountable Plan)
 
 Primary intent:
 - Build a boring, repeatable reimbursement workflow with clean documentation (especially S corp owners).
@@ -105,7 +105,7 @@ Copy requirements:
 - Qualification gate before math.
 - Monthly workflow + advisor packet list.
 
-### T03: Augusta Rule Meeting Log Builder + Rent Calculator
+### T03: Augusta Rule Rent Calculator + Meeting Log
 
 Primary intent:
 - Execution-first log builder plus a simple rent estimate with the 14-day guardrail front and center.
@@ -135,4 +135,3 @@ Copy requirements:
 - Links: breadcrumbs correct; related links go to real pages.
 - Accessibility: labels associated to inputs; `aria-live` for results.
 - Disclaimer present near CTA.
-
