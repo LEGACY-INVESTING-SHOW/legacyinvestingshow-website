@@ -125,6 +125,54 @@ Copy requirements:
 - Rate defensibility: comps and evidence.
 - Audit-folder checklist: log, minutes, approvals, payment record.
 
+### T04: Annualized Income Estimated Tax Calculator
+
+Primary intent:
+- 1099 / lumpy-income filers who want payment timing to match reality, without inventing numbers in Q4.
+
+Inputs:
+- Months of income so far
+- Year-to-date net income
+- Planning effective tax rate (user-supplied)
+- Withholding + payments already made (YTD)
+- Remaining payments (1-4) and optional buffer
+
+Outputs:
+- Annualized income projection
+- Projected tax (planning)
+- Estimated catch-up needed by this point in the year
+- Simple catch-up plan over remaining payments
+
+### T05: REP Status + STR Hours Tracker (Log + CSV)
+
+Primary intent:
+- Execution-first hours logging with categories, totals, and a CSV export that fits into an audit folder.
+
+Inputs:
+- Other job hours (estimate) for a pressure test
+- Target hours (planning)
+- Log rows: date, category, property (optional), hours, short note
+
+Outputs:
+- Total logged hours and number of dates
+- Category breakdown + concentration signal
+- Pressure-test prompt vs target and other-job hours
+- CSV export for advisor packet
+
+### T06: Cost Segregation Payback Calculator (Sensitivity)
+
+Primary intent:
+- First-year acceleration signal plus a sensitivity view so small assumption changes do not fool you.
+
+Inputs:
+- Purchase price, land %, reclass %, bonus %, marginal tax rate, fee
+
+Outputs:
+- Estimated depreciable basis
+- Estimated first-year accelerated deduction and tax savings
+- Net first-year benefit after fee and fee-multiple
+- Sensitivity table (conservative/base/aggressive)
+
 ## QA Checklist (Applies to Every Tool Page)
 
 - Mobile-first: calculators usable on 360px wide screens.

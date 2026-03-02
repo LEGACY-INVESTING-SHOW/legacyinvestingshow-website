@@ -191,6 +191,196 @@
           "label": "PriceLabs vs PMS native pricing (operator process discipline)"
         }
       ]
+    },
+    {
+      "id": "T04",
+      "slug": "annualized-income-estimated-tax-calculator",
+      "title": "Annualized Income Estimated Tax Calculator",
+      "description": "Turn year-to-date income into an annualized projection, estimate how much you should have paid by now, and build a catch-up plan that matches lumpy 1099 income.",
+      "badge": "1099 Planning",
+      "opening": [
+        "Safe harbor is the simple play. Annualized income is the precision play when your income shows up in waves.",
+        "This calculator does not try to be your CPA. It helps you translate year-to-date reality into a payment plan you can execute without panic in Q4."
+      ],
+      "sections": [
+        {
+          "id": "how-it-works",
+          "title": "How Annualized Income Works (Plain English)",
+          "paragraphs": [
+            "You tell the tool how many months of income you have so far and what your year-to-date net income looks like.",
+            "The tool annualizes that income (projects a full-year number) and applies an estimated effective tax rate.",
+            "Then it estimates how much tax should be paid by this point in the year and shows a catch-up plan for the remaining payments."
+          ]
+        },
+        {
+          "id": "when-to-use",
+          "title": "When Annualized Beats Safe Harbor",
+          "paragraphs": [
+            "When you had a slow Q1 and a huge Q3, equal quarterly payments can feel wrong because they are wrong for your cash flow.",
+            "Annualized planning matches payments to the timing of income. The tradeoff is complexity and the need to re-run the math when the year changes."
+          ]
+        },
+        {
+          "id": "execution-guardrails",
+          "title": "Execution Guardrails (So You Do Not Create A Mess)",
+          "paragraphs": [
+            "Run this monthly if you are a 1099 earner. Treat the output like a plan, not a promise.",
+            "If you are behind, consider increasing withholding (withholding is treated more favorably for timing) and use estimates only for the remainder.",
+            "Keep your calculation printout, assumptions, and profit-and-loss snapshot in an evidence folder for the year."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is this the official IRS annualized installment method?",
+          "a": "No. It is an execution-first approximation that helps you build a payment plan. For filings, your CPA can apply the official method if it is beneficial."
+        },
+        {
+          "q": "What tax rate should I use?",
+          "a": "Use a conservative effective rate based on your last return, or ask your CPA for a planning rate. If you pick a rate that is too low, the plan will underfund."
+        },
+        {
+          "q": "Should I just use safe harbor instead?",
+          "a": "If you want simplicity, yes. If your income is truly lumpy and you want payments to match reality, annualized planning can help."
+        }
+      ],
+      "related": [
+        {
+          "href": "/tools/estimated-tax-safe-harbor-planner",
+          "label": "Estimated Tax Safe Harbor Planner"
+        },
+        {
+          "href": "/compare/safe-harbor-vs-annualized-income-1099",
+          "label": "Safe Harbor vs Annualized Income (1099 edge cases)"
+        }
+      ]
+    },
+    {
+      "id": "T05",
+      "slug": "real-estate-professional-status-hours-tracker",
+      "title": "REP Status + STR Hours Tracker (Log + CSV)",
+      "description": "Track hours with categories, produce a clean CSV for your audit folder, and pressure-test whether your documentation is strong enough before you file.",
+      "badge": "Hours Log",
+      "opening": [
+        "If you want a real estate tax strategy to hold up, you cannot backfill the story in March. You need contemporaneous logs.",
+        "This tracker is built like an operator tool: simple categories, fast entry, totals that make sense, and an export you can give your advisor."
+      ],
+      "sections": [
+        {
+          "id": "how-to-use",
+          "title": "How To Use The Tracker",
+          "paragraphs": [
+            "Log your date, property (optional), category, and hours. Add a short note that makes the work legible later.",
+            "The tool totals your hours, shows category breakdown, and flags missing context (like lots of hours with no notes).",
+            "Export the CSV and store it with receipts, calendars, and supporting documents."
+          ]
+        },
+        {
+          "id": "what-counts",
+          "title": "What Counts As Strong Documentation",
+          "paragraphs": [
+            "A strong log is specific: what you did, where you did it, and why it mattered to operations.",
+            "A weak log is vague: a pile of hours with no trail. If your log is weak, your CPA inherits your risk.",
+            "Treat this like a monthly system, not a year-end event."
+          ]
+        },
+        {
+          "id": "common-failures",
+          "title": "Common Failure Modes",
+          "paragraphs": [
+            "Logging big batches of hours on one day without context.",
+            "No category mix (everything is just 'management').",
+            "No supporting artifacts (emails, invoices, vendor notes, calendar blocks)."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Does this tool determine whether I qualify?",
+          "a": "No. It helps you build and export a defensible log and pressure-test the quality of your documentation. Qualification is fact-specific and should be reviewed with your advisor."
+        },
+        {
+          "q": "Should I log travel time?",
+          "a": "Ask your CPA for your exact rules. The practical standard is: if it is hard to substantiate, do not rely on it."
+        },
+        {
+          "q": "What else should be in the audit folder?",
+          "a": "Receipts, vendor invoices, calendar entries, property management records, and any contemporaneous communications that support the work described in the log."
+        }
+      ],
+      "related": [
+        {
+          "href": "/compare/cost-segregation-vs-str-loophole-w2-passive-loss",
+          "label": "Cost Segregation vs STR Loophole (W-2 passive loss edge cases)"
+        },
+        {
+          "href": "/tax-strategies/real-estate-professional-status",
+          "label": "Real Estate Professional Status (strategy overview)"
+        }
+      ]
+    },
+    {
+      "id": "T06",
+      "slug": "cost-segregation-payback-calculator",
+      "title": "Cost Segregation Payback Calculator (Sensitivity)",
+      "description": "Estimate first-year accelerated depreciation tax savings, subtract fees, and see how the result changes under different tax rates and bonus depreciation assumptions.",
+      "badge": "Depreciation",
+      "opening": [
+        "Cost segregation is not a magic trick. It is an acceleration strategy with execution costs: study fees, documentation standards, and recapture awareness.",
+        "This calculator helps you estimate the first-year acceleration signal, then stress test the result under different assumptions so you do not talk yourself into a fantasy."
+      ],
+      "sections": [
+        {
+          "id": "what-this-is",
+          "title": "What This Tool Is (And Is Not)",
+          "paragraphs": [
+            "This is a planning model, not tax advice. It estimates a directional first-year benefit based on inputs you control.",
+            "The value comes from clarity: if small assumption changes flip the result, you should slow down and get a proper study and CPA review."
+          ]
+        },
+        {
+          "id": "inputs-that-matter",
+          "title": "Inputs That Actually Move The Outcome",
+          "paragraphs": [
+            "Your marginal tax rate (federal plus state) is the lever that converts depreciation into dollars.",
+            "The bonus depreciation percentage and the portion of basis reclassified into shorter-lived property are the acceleration engine.",
+            "Fees and process quality are the friction. If the packet is sloppy, you pay for a study and still cannot use it cleanly."
+          ]
+        },
+        {
+          "id": "execution-notes",
+          "title": "Execution Notes (Avoid The Obvious Mistakes)",
+          "paragraphs": [
+            "Do not model a benefit you cannot actually use (limitations and passive rules matter).",
+            "Keep the study, allocation, and support in one folder and get advisor sign-off before filing.",
+            "If you are using this for STR decisions, pair the model with documentation and hours logs. Execution decides the outcome."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why do you ask for my tax rate instead of calculating brackets?",
+          "a": "Because this is a planning tool. Your real marginal rate depends on your full return. Using a conservative effective rate keeps the model honest."
+        },
+        {
+          "q": "Is this the same as a full cost segregation study?",
+          "a": "No. A study creates the documentation and the allocations. This tool helps you decide whether the study is even worth pricing out."
+        },
+        {
+          "q": "Does this include recapture?",
+          "a": "No. Recapture and holding period can matter. Treat this as a first-year acceleration view, not a lifetime optimization model."
+        }
+      ],
+      "related": [
+        {
+          "href": "/tax-strategies/cost-segregation",
+          "label": "Cost Segregation (strategy overview)"
+        },
+        {
+          "href": "/compare/cost-segregation-vs-str-loophole-w2-passive-loss",
+          "label": "Cost Segregation vs STR Loophole (when each matters)"
+        }
+      ]
     }
   ]
 }

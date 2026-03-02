@@ -167,6 +167,9 @@ function toolWidget(tool) {
   if (tool.id === 'T01') return widgetSafeHarbor();
   if (tool.id === 'T02') return widgetAccountablePlan();
   if (tool.id === 'T03') return widgetAugustaRule();
+  if (tool.id === 'T04') return widgetAnnualizedIncome();
+  if (tool.id === 'T05') return widgetHoursTracker();
+  if (tool.id === 'T06') return widgetCostSegPayback();
   return `<div class="tool-card"><p>Tool widget not implemented.</p></div>`;
 }
 
@@ -714,6 +717,600 @@ function widgetAugustaRule() {
             // Start with two rows so the tool is not empty.
             addRow();
             addRow();
+          })();
+        </script>`;
+}
+
+function widgetAnnualizedIncome() {
+  return `<section class="tool-card" id="calculator" aria-label="Annualized income estimated tax calculator">
+            <div class="tool-card__header">
+              <h2 class="tool-card__title">Annualized Payment Planner</h2>
+              <p class="tool-card__subtitle">Project a full-year number from YTD reality, then build a clean catch-up plan.</p>
+            </div>
+
+            <div class="tool-grid">
+              <form class="tool-form" id="t04-form">
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t04-months">Months of income so far</label>
+                    <select id="t04-months">
+                      <option value="2">2</option>
+                      <option value="3" selected>3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                    </select>
+                    <div class="hint">Use whole months. Re-run this monthly if your income is lumpy.</div>
+                  </div>
+                  <div class="field">
+                    <label for="t04-ytdNet">Year-to-date net income (1099/business)</label>
+                    <input id="t04-ytdNet" inputmode="decimal" type="text" placeholder="e.g. 85000">
+                    <div class="hint">Net after direct business expenses (a planning approximation).</div>
+                  </div>
+                </div>
+
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t04-rate">Estimated effective tax rate (%)</label>
+                    <input id="t04-rate" inputmode="decimal" type="text" placeholder="e.g. 28">
+                    <div class="hint">Use a conservative planning rate from last year or from your CPA.</div>
+                  </div>
+                  <div class="field">
+                    <label for="t04-withheldPaid">Withholding + estimated payments already made (YTD)</label>
+                    <input id="t04-withheldPaid" inputmode="decimal" type="text" placeholder="e.g. 19000">
+                    <div class="hint">Include W-2 withholding if applicable.</div>
+                  </div>
+                </div>
+
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t04-remaining">Payments remaining this year</label>
+                    <select id="t04-remaining">
+                      <option value="4">4 (start of year)</option>
+                      <option value="3" selected>3</option>
+                      <option value="2">2</option>
+                      <option value="1">1</option>
+                    </select>
+                    <div class="hint">Pick what you will actually do. Execution beats theory.</div>
+                  </div>
+                  <div class="field">
+                    <label for="t04-buffer">Conservatism buffer</label>
+                    <select id="t04-buffer">
+                      <option value="0">0%</option>
+                      <option value="0.05">+5%</option>
+                      <option value="0.10">+10%</option>
+                    </select>
+                    <div class="hint">If income is volatile, a small buffer reduces surprise.</div>
+                  </div>
+                </div>
+
+                <button type="button" class="tool-button" id="t04-calc">Calculate annualized plan</button>
+              </form>
+
+              <div class="tool-results" aria-live="polite">
+                <div class="results-kpis">
+                  <div class="kpi">
+                    <div class="kpi__label">Annualized income (projection)</div>
+                    <div class="kpi__value" id="t04-kpi-income">$0</div>
+                    <div class="kpi__meta" id="t04-kpi-months">From 3 months</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">Projected tax (planning)</div>
+                    <div class="kpi__value" id="t04-kpi-tax">$0</div>
+                    <div class="kpi__meta" id="t04-kpi-rate">At 0%</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">Catch-up needed</div>
+                    <div class="kpi__value kpi__value--good" id="t04-kpi-catchup">$0</div>
+                    <div class="kpi__meta" id="t04-kpi-note">Spread across remaining payments</div>
+                  </div>
+                </div>
+
+                <div class="results-table-wrap" role="region" aria-label="Catch-up plan table">
+                  <table class="results-table">
+                    <thead>
+                      <tr>
+                        <th>Payment #</th>
+                        <th>Recommended amount</th>
+                        <th>Execution note</th>
+                      </tr>
+                    </thead>
+                    <tbody id="t04-plan-rows"></tbody>
+                  </table>
+                </div>
+
+                <div class="results-note" id="t04-warning" style="display:none;"></div>
+                <div class="results-note results-note--alt">
+                  Annualized planning is only useful if you re-run it when the year changes. Save your assumptions and a dated P&amp;L snapshot.
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <script>
+          (function() {
+            function parseMoney(raw) {
+              if (raw == null) return 0;
+              const cleaned = String(raw).replace(/[^0-9.\\-]/g, '');
+              const num = Number(cleaned);
+              return Number.isFinite(num) ? num : 0;
+            }
+            function parsePct(raw) {
+              const cleaned = String(raw || '').replace(/[^0-9.\\-]/g, '');
+              const num = Number(cleaned);
+              if (!Number.isFinite(num)) return 0;
+              return Math.max(0, num) / 100;
+            }
+            function fmtUSD(n) {
+              const v = Number.isFinite(n) ? n : 0;
+              return v.toLocaleString(undefined, { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+            }
+
+            function buildPlanRows(count, perPayment) {
+              const rows = [];
+              for (let i = 1; i <= count; i++) {
+                const note = (i === 1)
+                  ? 'If you are behind, pay early. Then keep the cadence.'
+                  : 'Treat this like a recurring bill, not a guess.';
+                rows.push({ idx: i, amount: perPayment, note });
+              }
+              return rows;
+            }
+
+            function calculate() {
+              const months = Number(document.getElementById('t04-months').value) || 3;
+              const ytdNet = parseMoney(document.getElementById('t04-ytdNet').value);
+              const rate = parsePct(document.getElementById('t04-rate').value);
+              const paid = parseMoney(document.getElementById('t04-withheldPaid').value);
+              const remainingCount = Number(document.getElementById('t04-remaining').value) || 3;
+              const bufferPct = Number(document.getElementById('t04-buffer').value) || 0;
+
+              const annualizedIncome = months > 0 ? (ytdNet * 12 / months) : 0;
+              const projectedTax = annualizedIncome * rate;
+              const bufferedTax = projectedTax * (1 + bufferPct);
+              const shouldHavePaidByNow = bufferedTax * (months / 12);
+              const catchUp = Math.max(0, shouldHavePaidByNow - Math.max(0, paid));
+              const perPayment = remainingCount > 0 ? (catchUp / remainingCount) : catchUp;
+
+              document.getElementById('t04-kpi-income').textContent = fmtUSD(annualizedIncome);
+              document.getElementById('t04-kpi-tax').textContent = fmtUSD(bufferedTax);
+              document.getElementById('t04-kpi-catchup').textContent = fmtUSD(catchUp);
+              document.getElementById('t04-kpi-months').textContent = 'From ' + months + ' months';
+              document.getElementById('t04-kpi-rate').textContent = 'At ' + Math.round(rate * 100) + '% (plus buffer)';
+              document.getElementById('t04-kpi-note').textContent = 'Spread across ' + remainingCount + ' payment' + (remainingCount === 1 ? '' : 's');
+
+              const tbody = document.getElementById('t04-plan-rows');
+              tbody.innerHTML = '';
+              buildPlanRows(remainingCount, perPayment).forEach((row) => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = '<td data-label=\"Payment #\"><strong>' + row.idx + '</strong></td>' +
+                               '<td data-label=\"Recommended amount\">' + fmtUSD(row.amount) + '</td>' +
+                               '<td data-label=\"Execution note\">' + row.note + '</td>';
+                tbody.appendChild(tr);
+              });
+
+              const warn = document.getElementById('t04-warning');
+              const msgs = [];
+              if (ytdNet <= 0) msgs.push('Enter year-to-date net income to compute an annualized projection.');
+              if (rate <= 0) msgs.push('Enter a planning tax rate (effective %) to estimate projected tax.');
+              if (catchUp === 0 && ytdNet > 0 && rate > 0) msgs.push('Based on these inputs, you appear caught up through this point in the year.');
+              warn.style.display = msgs.length ? 'block' : 'none';
+              warn.textContent = msgs.join(' ');
+            }
+
+            document.getElementById('t04-calc').addEventListener('click', calculate);
+          })();
+        </script>`;
+}
+
+function widgetHoursTracker() {
+  return `<section class="tool-card" id="calculator" aria-label="Real estate hours tracker log">
+            <div class="tool-card__header">
+              <h2 class="tool-card__title">Hours Tracker (REP + STR)</h2>
+              <p class="tool-card__subtitle">Fast entry, clean categories, totals that make sense, and a CSV export for your audit folder.</p>
+            </div>
+
+            <div class="tool-grid tool-grid--stack">
+              <form class="tool-form" id="t05-form">
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t05-otherHours">Other job hours this year (estimate)</label>
+                    <input id="t05-otherHours" inputmode="decimal" type="text" placeholder="e.g. 1800">
+                    <div class="hint">Used only to pressure-test the \"more than half\" concept. Your facts decide.</div>
+                  </div>
+                  <div class="field">
+                    <label for="t05-target">Target hours (planning)</label>
+                    <select id="t05-target">
+                      <option value="750" selected>750 hours (REP benchmark)</option>
+                      <option value="500">500 hours (STR planning)</option>
+                      <option value="250">250 hours (light ops)</option>
+                    </select>
+                    <div class="hint">This is a planning prompt, not a legal conclusion.</div>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label>Log entries</label>
+                  <div class="hint">Be specific. Date + category + short note. Backfilled logs are the #1 failure mode.</div>
+                  <div class="log-table-wrap" role="region" aria-label="Hours log table">
+                    <table class="log-table" id="t05-log">
+                      <thead>
+                        <tr>
+                          <th style="min-width:150px;">Date</th>
+                          <th style="min-width:160px;">Category</th>
+                          <th style="min-width:160px;">Property (optional)</th>
+                          <th style="min-width:120px;">Hours</th>
+                          <th style="min-width:240px;">Note (short)</th>
+                          <th style="min-width:90px;"></th>
+                        </tr>
+                      </thead>
+                      <tbody></tbody>
+                    </table>
+                  </div>
+                  <div class="log-actions">
+                    <button type="button" class="tool-button tool-button--ghost" id="t05-add">Add entry</button>
+                    <button type="button" class="tool-button tool-button--ghost" id="t05-csv">Download CSV</button>
+                    <button type="button" class="tool-button" id="t05-calc">Update totals</button>
+                  </div>
+                </div>
+              </form>
+
+              <div class="tool-results" aria-live="polite">
+                <div class="results-kpis">
+                  <div class="kpi">
+                    <div class="kpi__label">Logged hours</div>
+                    <div class="kpi__value kpi__value--good" id="t05-kpi-hours">0</div>
+                    <div class="kpi__meta" id="t05-kpi-days">0 dates logged</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">Top category</div>
+                    <div class="kpi__value" id="t05-kpi-top">N/A</div>
+                    <div class="kpi__meta" id="t05-kpi-topmeta">0 hours</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">Pressure test</div>
+                    <div class="kpi__value" id="t05-kpi-test">N/A</div>
+                    <div class="kpi__meta" id="t05-kpi-testmeta">Planning prompt</div>
+                  </div>
+                </div>
+
+                <div class="results-table-wrap" role="region" aria-label="Category breakdown table">
+                  <table class="results-table">
+                    <thead>
+                      <tr>
+                        <th>Category</th>
+                        <th>Hours</th>
+                        <th>Signal</th>
+                      </tr>
+                    </thead>
+                    <tbody id="t05-breakdown"></tbody>
+                  </table>
+                </div>
+
+                <div class="results-note" id="t05-warning" style="display:none;"></div>
+                <div class="results-note results-note--alt">
+                  Strong logs are contemporaneous and specific. Pair this CSV with calendars, invoices, vendor notes, and communications.
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <script>
+          (function() {
+            function parseMoney(raw) {
+              if (raw == null) return 0;
+              const cleaned = String(raw).replace(/[^0-9.\\-]/g, '');
+              const num = Number(cleaned);
+              return Number.isFinite(num) ? num : 0;
+            }
+            function uniqDates(rows) {
+              const set = new Set();
+              rows.forEach((r) => { if (r.date) set.add(r.date); });
+              return Array.from(set);
+            }
+
+            const categories = [
+              'Acquisition / underwriting',
+              'Operations / turnovers',
+              'Guest communication',
+              'Maintenance / repairs',
+              'Vendor management',
+              'Pricing / revenue management',
+              'Bookkeeping / admin',
+              'Travel / on-site work',
+              'Education / planning',
+            ];
+
+            function addRow(defaults) {
+              const tbody = document.querySelector('#t05-log tbody');
+              const tr = document.createElement('tr');
+              const catOptions = categories.map((c) => '<option value=\"' + c.replace(/\"/g,'&quot;') + '\">' + c + '</option>').join('');
+              tr.innerHTML =
+                '<td><input type=\"date\" value=\"' + (defaults && defaults.date ? defaults.date : '') + '\" aria-label=\"Entry date\"></td>' +
+                '<td><select data-col=\"category\" aria-label=\"Category\">' + catOptions + '</select></td>' +
+                '<td><input type=\"text\" data-col=\"property\" value=\"' + (defaults && defaults.property ? defaults.property.replace(/\"/g,'&quot;') : '') + '\" placeholder=\"Lake House\" aria-label=\"Property\"></td>' +
+                '<td><input type=\"text\" inputmode=\"decimal\" data-col=\"hours\" value=\"' + (defaults && defaults.hours ? String(defaults.hours).replace(/\"/g,'&quot;') : '') + '\" placeholder=\"1.5\" aria-label=\"Hours\"></td>' +
+                '<td><input type=\"text\" data-col=\"note\" value=\"' + (defaults && defaults.note ? defaults.note.replace(/\"/g,'&quot;') : '') + '\" placeholder=\"Replaced lockbox, coordinated cleaner\" aria-label=\"Note\"></td>' +
+                '<td class=\"log-remove\"><button type=\"button\" class=\"linklike\">Remove</button></td>';
+              if (defaults && defaults.category) {
+                tr.querySelector('select').value = defaults.category;
+              }
+              tr.querySelector('button').addEventListener('click', function() { tr.remove(); });
+              tbody.appendChild(tr);
+            }
+
+            function getRows() {
+              const tbody = document.querySelector('#t05-log tbody');
+              return Array.from(tbody.querySelectorAll('tr')).map((tr) => {
+                const date = tr.querySelector('input[type=\"date\"]').value;
+                const category = tr.querySelector('select[data-col=\"category\"]').value;
+                const property = tr.querySelector('input[data-col=\"property\"]').value;
+                const hours = parseMoney(tr.querySelector('input[data-col=\"hours\"]').value);
+                const note = tr.querySelector('input[data-col=\"note\"]').value;
+                return { date, category, property, hours, note };
+              });
+            }
+
+            function compute() {
+              const rows = getRows();
+              const totalHours = rows.reduce((sum, r) => sum + (Number.isFinite(r.hours) ? r.hours : 0), 0);
+              const dates = uniqDates(rows);
+              const byCat = new Map();
+              let notesMissing = 0;
+
+              rows.forEach((r) => {
+                if (!r.note || String(r.note).trim().length < 8) notesMissing += 1;
+                const prev = byCat.get(r.category) || 0;
+                byCat.set(r.category, prev + (Number.isFinite(r.hours) ? r.hours : 0));
+              });
+
+              const sorted = Array.from(byCat.entries()).sort((a, b) => b[1] - a[1]);
+              const top = sorted[0] ? sorted[0][0] : 'N/A';
+              const topHours = sorted[0] ? sorted[0][1] : 0;
+
+              document.getElementById('t05-kpi-hours').textContent = String(Math.round(totalHours * 10) / 10);
+              document.getElementById('t05-kpi-days').textContent = dates.length + ' dates logged';
+              document.getElementById('t05-kpi-top').textContent = top;
+              document.getElementById('t05-kpi-topmeta').textContent = (Math.round(topHours * 10) / 10) + ' hours';
+
+              const otherHours = parseMoney(document.getElementById('t05-otherHours').value);
+              const target = Number(document.getElementById('t05-target').value) || 750;
+              const passTarget = totalHours >= target;
+              const halfTest = otherHours > 0 ? (totalHours > otherHours) : null;
+
+              let test = passTarget ? 'On track' : 'Behind';
+              let testMeta = 'Target: ' + target + ' hours';
+              if (halfTest === true) testMeta += '. Logged hours exceed other-job estimate.';
+              if (halfTest === false) testMeta += '. Logged hours do NOT exceed other-job estimate.';
+              if (halfTest === null) testMeta += '. Add other-job hours for a pressure test.';
+              document.getElementById('t05-kpi-test').textContent = test;
+              document.getElementById('t05-kpi-testmeta').textContent = testMeta;
+
+              const tbody = document.getElementById('t05-breakdown');
+              tbody.innerHTML = '';
+              sorted.forEach(([cat, hrs]) => {
+                const pct = totalHours > 0 ? (hrs / totalHours) : 0;
+                const signal = pct > 0.6 ? 'Heavy concentration, add detail' : (pct < 0.05 ? 'Low signal' : 'Balanced');
+                const tr = document.createElement('tr');
+                tr.innerHTML = '<td data-label=\"Category\"><strong>' + cat + '</strong></td>' +
+                               '<td data-label=\"Hours\">' + (Math.round(hrs * 10) / 10) + '</td>' +
+                               '<td data-label=\"Signal\">' + signal + '</td>';
+                tbody.appendChild(tr);
+              });
+
+              const warn = document.getElementById('t05-warning');
+              const msgs = [];
+              if (rows.length === 0) msgs.push('Add entries to build a usable log.');
+              if (notesMissing > 0) msgs.push('Some entries have short or empty notes. Specificity is what makes a log defensible.');
+              if (dates.length < Math.min(6, rows.length)) msgs.push('If many hours sit on very few dates, your log may look backfilled. Spread entries across real workdays.');
+              warn.style.display = msgs.length ? 'block' : 'none';
+              warn.textContent = msgs.join(' ');
+            }
+
+            function downloadCsv() {
+              const rows = getRows();
+              const header = ['date','category','property','hours','note'];
+              const lines = [header.join(',')].concat(rows.map((r) => {
+                function q(v) {
+                  const s = String(v == null ? '' : v);
+                  const escaped = s.replace(/\"/g, '\"\"');
+                  return '\"' + escaped + '\"';
+                }
+                return [q(r.date), q(r.category), q(r.property), q(r.hours), q(r.note)].join(',');
+              }));
+              const blob = new Blob([lines.join('\\n')], { type: 'text/csv;charset=utf-8' });
+              const url = URL.createObjectURL(blob);
+              const a = document.createElement('a');
+              a.href = url;
+              a.download = 'real-estate-hours-log.csv';
+              document.body.appendChild(a);
+              a.click();
+              a.remove();
+              setTimeout(() => URL.revokeObjectURL(url), 500);
+            }
+
+            document.getElementById('t05-add').addEventListener('click', function() { addRow(); });
+            document.getElementById('t05-csv').addEventListener('click', downloadCsv);
+            document.getElementById('t05-calc').addEventListener('click', compute);
+
+            addRow({ category: categories[1] });
+            addRow({ category: categories[2] });
+            compute();
+          })();
+        </script>`;
+}
+
+function widgetCostSegPayback() {
+  return `<section class="tool-card" id="calculator" aria-label="Cost segregation payback calculator">
+            <div class="tool-card__header">
+              <h2 class="tool-card__title">Cost Seg Payback (First-Year Signal)</h2>
+              <p class="tool-card__subtitle">Estimate first-year accelerated depreciation tax savings and stress test the assumptions.</p>
+            </div>
+
+            <div class="tool-grid">
+              <form class="tool-form" id="t06-form">
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t06-price">Purchase price</label>
+                    <input id="t06-price" inputmode="decimal" type="text" placeholder="e.g. 650000">
+                  </div>
+                  <div class="field">
+                    <label for="t06-landPct">Land percentage (%)</label>
+                    <input id="t06-landPct" inputmode="decimal" type="text" placeholder="e.g. 20">
+                    <div class="hint">Land is not depreciable. If unsure, start conservative (higher land %).</div>
+                  </div>
+                </div>
+
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t06-reclassPct">Reclassified short-life (%)</label>
+                    <input id="t06-reclassPct" inputmode="decimal" type="text" placeholder="e.g. 25">
+                    <div class="hint">Portion of building basis moved into shorter-lived buckets (planning input).</div>
+                  </div>
+                  <div class="field">
+                    <label for="t06-bonusPct">Bonus depreciation (%)</label>
+                    <input id="t06-bonusPct" inputmode="decimal" type="text" placeholder="e.g. 60">
+                    <div class="hint">Use the assumption you are planning for. This can change by year and asset type.</div>
+                  </div>
+                </div>
+
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t06-taxPct">Marginal tax rate (federal + state) (%)</label>
+                    <input id="t06-taxPct" inputmode="decimal" type="text" placeholder="e.g. 35">
+                    <div class="hint">Planning rate. If you understate it, you understate savings.</div>
+                  </div>
+                  <div class="field">
+                    <label for="t06-fee">Estimated study + admin cost (fee)</label>
+                    <input id="t06-fee" inputmode="decimal" type="text" placeholder="e.g. 4500">
+                  </div>
+                </div>
+
+                <button type="button" class="tool-button" id="t06-calc">Calculate signal + sensitivity</button>
+              </form>
+
+              <div class="tool-results" aria-live="polite">
+                <div class="results-kpis">
+                  <div class="kpi">
+                    <div class="kpi__label">Depreciable basis (est.)</div>
+                    <div class="kpi__value" id="t06-kpi-basis">$0</div>
+                    <div class="kpi__meta">Purchase minus land</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">First-year acceleration (est.)</div>
+                    <div class="kpi__value" id="t06-kpi-accel">$0</div>
+                    <div class="kpi__meta">Short-life x bonus</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">Net first-year benefit (after fee)</div>
+                    <div class="kpi__value kpi__value--good" id="t06-kpi-net">$0</div>
+                    <div class="kpi__meta" id="t06-kpi-multiple">Fee multiple</div>
+                  </div>
+                </div>
+
+                <div class="results-table-wrap" role="region" aria-label="Sensitivity table">
+                  <table class="results-table">
+                    <thead>
+                      <tr>
+                        <th>Scenario</th>
+                        <th>Tax rate</th>
+                        <th>Bonus</th>
+                        <th>Est. tax savings</th>
+                        <th>Net after fee</th>
+                      </tr>
+                    </thead>
+                    <tbody id="t06-sens"></tbody>
+                  </table>
+                </div>
+
+                <div class="results-note" id="t06-warning" style="display:none;"></div>
+                <div class="results-note results-note--alt">
+                  This is a first-year acceleration view. Passive limits, use-ability, and recapture can matter. Treat this as a go/no-go signal, not a full optimization.
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <script>
+          (function() {
+            function parseMoney(raw) {
+              if (raw == null) return 0;
+              const cleaned = String(raw).replace(/[^0-9.\\-]/g, '');
+              const num = Number(cleaned);
+              return Number.isFinite(num) ? num : 0;
+            }
+            function parsePct(raw) {
+              const cleaned = String(raw || '').replace(/[^0-9.\\-]/g, '');
+              const num = Number(cleaned);
+              if (!Number.isFinite(num)) return 0;
+              return Math.max(0, num) / 100;
+            }
+            function fmtUSD(n) {
+              const v = Number.isFinite(n) ? n : 0;
+              return v.toLocaleString(undefined, { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+            }
+
+            function computeSavings(basis, reclassPct, bonusPct, taxPct) {
+              const accelDeduction = basis * reclassPct * bonusPct;
+              const taxSavings = accelDeduction * taxPct;
+              return { accelDeduction, taxSavings };
+            }
+
+            function calculate() {
+              const price = parseMoney(document.getElementById('t06-price').value);
+              const landPct = parsePct(document.getElementById('t06-landPct').value);
+              const reclassPct = parsePct(document.getElementById('t06-reclassPct').value);
+              const bonusPct = parsePct(document.getElementById('t06-bonusPct').value);
+              const taxPct = parsePct(document.getElementById('t06-taxPct').value);
+              const fee = parseMoney(document.getElementById('t06-fee').value);
+
+              const basis = Math.max(0, price * (1 - landPct));
+              const base = computeSavings(basis, reclassPct, bonusPct, taxPct);
+              const net = base.taxSavings - fee;
+              const multiple = fee > 0 ? (base.taxSavings / fee) : 0;
+
+              document.getElementById('t06-kpi-basis').textContent = fmtUSD(basis);
+              document.getElementById('t06-kpi-accel').textContent = fmtUSD(base.accelDeduction);
+              document.getElementById('t06-kpi-net').textContent = fmtUSD(net);
+              document.getElementById('t06-kpi-multiple').textContent = fee > 0 ? ('~' + (Math.round(multiple * 10) / 10) + 'x fee (savings/fee)') : 'No fee entered';
+
+              const scenarios = [
+                { name: 'Conservative', tax: Math.max(0, taxPct - 0.05), bonus: Math.max(0, bonusPct - 0.20) },
+                { name: 'Base', tax: taxPct, bonus: bonusPct },
+                { name: 'Aggressive', tax: Math.min(0.60, taxPct + 0.05), bonus: Math.min(1, bonusPct + 0.20) },
+              ];
+
+              const tbody = document.getElementById('t06-sens');
+              tbody.innerHTML = '';
+              scenarios.forEach((s) => {
+                const r = computeSavings(basis, reclassPct, s.bonus, s.tax);
+                const n = r.taxSavings - fee;
+                const tr = document.createElement('tr');
+                tr.innerHTML =
+                  '<td data-label=\"Scenario\"><strong>' + s.name + '</strong></td>' +
+                  '<td data-label=\"Tax rate\">' + Math.round(s.tax * 100) + '%</td>' +
+                  '<td data-label=\"Bonus\">' + Math.round(s.bonus * 100) + '%</td>' +
+                  '<td data-label=\"Est. tax savings\">' + fmtUSD(r.taxSavings) + '</td>' +
+                  '<td data-label=\"Net after fee\">' + fmtUSD(n) + '</td>';
+                tbody.appendChild(tr);
+              });
+
+              const warn = document.getElementById('t06-warning');
+              const msgs = [];
+              if (price <= 0) msgs.push('Enter a purchase price to compute basis and savings.');
+              if (reclassPct <= 0) msgs.push('Enter a reclass % (short-life). If you are unsure, start conservative (10% to 20%).');
+              if (bonusPct <= 0) msgs.push('Enter a bonus % assumption to estimate first-year acceleration.');
+              if (taxPct <= 0) msgs.push('Enter a planning tax rate to translate deductions into dollars.');
+              warn.style.display = msgs.length ? 'block' : 'none';
+              warn.textContent = msgs.join(' ');
+            }
+
+            document.getElementById('t06-calc').addEventListener('click', calculate);
           })();
         </script>`;
 }
