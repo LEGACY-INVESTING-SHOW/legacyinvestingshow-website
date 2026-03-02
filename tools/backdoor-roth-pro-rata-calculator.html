@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Backdoor Roth Pro-Rata Calculator (… | Legacy Investing Show</title>
+    <meta name="description" content="Estimate taxable vs nontaxable Roth conversion amounts using the pro-rata rule, and see how year-end IRA balances change the outcome.">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="Kec6RfGhFL-qG_8zKxCqt7yxjgy65WeDAftCBm90G2s">
+    <meta name="google-site-verification" content="92MoCnkdQOj_ey1lEafT5Mz-znCcCQ3UABZlI-JG_nM">
+    <link rel="canonical" href="https://www.legacyinvestingshow.com/tools/backdoor-roth-pro-rata-calculator">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.legacyinvestingshow.com/tools/backdoor-roth-pro-rata-calculator">
+    <meta property="og:title" content="Backdoor Roth Pro-Rata Calculator (Form 8606)">
+    <meta property="og:description" content="Estimate taxable vs nontaxable Roth conversion amounts using the pro-rata rule, and see how year-end IRA balances change the outcome.">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Backdoor Roth Pro-Rata Calculator (Form 8606)">
+    <meta name="twitter:description" content="Estimate taxable vs nontaxable Roth conversion amounts using the pro-rata rule, and see how year-end IRA balances change the outcome.">
+
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" href="/assets/images/logo.png">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Backdoor Roth Pro-Rata Calculator (Form 8606)","description":"Estimate taxable vs nontaxable Roth conversion amounts using the pro-rata rule, and see how year-end IRA balances change the outcome.","applicationCategory":"FinanceApplication","operatingSystem":"Web","isAccessibleForFree":true,"datePublished":"2026-03-02","dateModified":"2026-03-02","url":"https://www.legacyinvestingshow.com/tools/backdoor-roth-pro-rata-calculator","publisher":{"@type":"Organization","name":"Legacy Investing Show"},"author":{"@type":"Person","name":"Preston Seo"}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does this include SEP and SIMPLE IRAs?","acceptedAnswer":{"@type":"Answer","text":"Yes. The pro-rata rule looks at Traditional, SEP, and SIMPLE IRA balances together for this calculation."}},{"@type":"Question","name":"Why does the year-end balance matter?","acceptedAnswer":{"@type":"Answer","text":"Because the denominator of the pro-rata ratio is based on year-end IRA value plus conversions and distributions. That is why December planning matters."}},{"@type":"Question","name":"Is this the exact Form 8606 calculation?","acceptedAnswer":{"@type":"Answer","text":"It follows the core structure, but it is still a planning model. Your CPA will finalize based on your actual balances and filed forms."}}]}</script>
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-2578PT1WSS');
+    </script>
+
+    <style>
+        .tools-hero {
+            padding: 8rem 0 3.5rem;
+            background: linear-gradient(135deg, #f8fafc 0%, #e5e7eb 100%);
+        }
+        .tools-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: #111827;
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            border-radius: 999px;
+            margin-bottom: 1rem;
+        }
+        .tools-title {
+            font-size: 2.125rem;
+            font-weight: 700;
+            line-height: 1.15;
+            color: #111827;
+            margin-bottom: 1rem;
+        }
+        @media (min-width: 768px) {
+            .tools-title { font-size: 2.6rem; }
+        }
+        .tools-subtitle {
+            max-width: 52rem;
+            color: #4b5563;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .content-section { padding: 3.25rem 0; }
+        .content-section--alt { background: #f9fafb; }
+        .prose-content { color: #374151; line-height: 1.75; }
+        .prose-content h2 { color: #111827; font-size: 1.6rem; line-height: 1.3; margin-bottom: 1rem; }
+        .prose-content p { margin-bottom: 1rem; }
+        .prose-content ul { padding-left: 1.2rem; margin: 0.5rem 0 1rem; }
+        .prose-content li { margin-bottom: 0.55rem; }
+        .prose-content h2,
+        #calculator {
+          scroll-margin-top: 7.75rem;
+        }
+
+        .operator-note {
+          margin: 1.25rem 0 1.6rem;
+          background: linear-gradient(180deg, rgba(236, 253, 245, 0.85), rgba(236, 253, 245, 0.55));
+          border: 1px solid rgba(16, 185, 129, 0.35);
+          border-left: 4px solid #10b981;
+          padding: 0.95rem 1rem;
+          border-radius: 0.75rem;
+          color: #065f46;
+          line-height: 1.65;
+        }
+        .operator-note strong { color: #064e3b; }
+
+        .jumpbar-wrap {
+          position: sticky;
+          top: 4.15rem;
+          z-index: 20;
+          margin: 1.25rem 0 1.6rem;
+        }
+        .jumpbar {
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+          padding: 0.7rem 0.85rem;
+          background: rgba(255, 255, 255, 0.92);
+          border: 1px solid rgba(17, 24, 39, 0.12);
+          border-radius: 0.85rem;
+          box-shadow: 0 12px 30px rgba(17, 24, 39, 0.06);
+          backdrop-filter: blur(10px);
+        }
+        .jumpbar__label {
+          font-size: 0.72rem;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          font-weight: 900;
+          color: #111827;
+          white-space: nowrap;
+        }
+        .jumpbar__links {
+          display: flex;
+          gap: 0.5rem;
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+          scrollbar-width: none;
+          flex: 1;
+        }
+        .jumpbar__links::-webkit-scrollbar { display: none; }
+        .jumpbar__link {
+          display: inline-flex;
+          align-items: center;
+          padding: 0.38rem 0.7rem;
+          border-radius: 999px;
+          border: 1px solid rgba(17, 24, 39, 0.16);
+          color: #111827;
+          text-decoration: none;
+          font-weight: 800;
+          font-size: 0.85rem;
+          white-space: nowrap;
+          background: linear-gradient(180deg, rgba(255,255,255,1), rgba(249,250,251,1));
+        }
+        .jumpbar__link:hover {
+          border-color: rgba(17, 24, 39, 0.28);
+          box-shadow: 0 10px 22px rgba(17, 24, 39, 0.06);
+          transform: translateY(-1px);
+        }
+
+        .tool-card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 1rem;
+            overflow: hidden;
+            margin: 1.25rem 0 2rem;
+        }
+        .tool-card__header {
+            padding: 1.25rem 1.25rem 0.75rem;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        .tool-card__title {
+            margin: 0;
+            color: #111827;
+            font-weight: 800;
+            font-size: 1.25rem;
+            line-height: 1.25;
+        }
+        .tool-card__subtitle {
+            margin: 0.45rem 0 0;
+            color: #6b7280;
+            font-size: 0.95rem;
+            line-height: 1.55;
+        }
+        .tool-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            gap: 1rem;
+            padding: 1.25rem;
+        }
+        @media (min-width: 1024px) {
+            .tool-grid { grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr); gap: 1.25rem; }
+        }
+        @media (min-width: 1024px) {
+            .tool-grid--stack { grid-template-columns: minmax(0, 1fr); }
+        }
+
+        .tool-form {
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.9rem;
+            padding: 1rem;
+        }
+        .field { margin-bottom: 0.9rem; }
+        .field-row { display: grid; gap: 0.85rem; }
+        @media (min-width: 768px) { .field-row { grid-template-columns: 1fr 1fr; } }
+        .field label {
+            display: block;
+            font-weight: 700;
+            color: #111827;
+            font-size: 0.9rem;
+            margin-bottom: 0.35rem;
+        }
+        .field input,
+        .field select {
+            width: 100%;
+            border: 1px solid #d1d5db;
+            border-radius: 0.6rem;
+            padding: 0.65rem 0.75rem;
+            font-size: 0.95rem;
+            background: white;
+            color: #111827;
+        }
+        .hint { margin-top: 0.35rem; color: #6b7280; font-size: 0.82rem; line-height: 1.5; }
+        .tool-button {
+            width: 100%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.85rem 1.1rem;
+            background: #111827;
+            color: white;
+            border: none;
+            border-radius: 0.65rem;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        .tool-button:hover { background: #0b1220; }
+        .tool-button--ghost {
+            background: transparent;
+            border: 1px solid #d1d5db;
+            color: #111827;
+            width: auto;
+            padding: 0.6rem 0.9rem;
+            font-weight: 700;
+        }
+        .tool-button--ghost:hover { background: #f3f4f6; }
+
+        .tool-results { padding: 0.2rem 0; }
+        .results-kpis { display: grid; gap: 0.85rem; }
+        @media (min-width: 768px) { .results-kpis { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+        .kpi {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.9rem;
+            padding: 0.9rem 0.95rem;
+        }
+        .kpi__label {
+            font-size: 0.72rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: #6b7280;
+            margin-bottom: 0.35rem;
+        }
+        .kpi__value { color: #111827; font-weight: 800; font-size: 1.1rem; }
+        .kpi__value--good { color: #047857; }
+        .kpi__meta { color: #6b7280; font-size: 0.82rem; margin-top: 0.35rem; line-height: 1.4; }
+
+        .results-table-wrap {
+            margin-top: 1rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.9rem;
+            overflow-x: auto;
+            background: white;
+        }
+        .results-table { width: 100%; border-collapse: collapse; min-width: 620px; }
+        .results-table th {
+            background: #111827;
+            color: white;
+            text-align: left;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            padding: 0.8rem;
+            vertical-align: top;
+        }
+        .results-table td {
+            border-bottom: 1px solid #e5e7eb;
+            padding: 0.78rem;
+            vertical-align: top;
+            color: #374151;
+            font-size: 0.94rem;
+        }
+
+        .results-note {
+            margin-top: 1rem;
+            background: #ecfdf5;
+            border-left: 4px solid #10b981;
+            padding: 0.9rem 0.95rem;
+            border-radius: 0.6rem;
+            color: #065f46;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        .results-note--alt {
+            background: #eff6ff;
+            border-left-color: #3b82f6;
+            color: #1e3a8a;
+        }
+
+        .related-section {
+          margin-top: 2.25rem;
+          padding-top: 1.25rem;
+          border-top: 1px solid #e5e7eb;
+        }
+        .related-section__title {
+          font-size: 1.2rem;
+          font-weight: 900;
+          color: #111827;
+          margin: 0 0 0.85rem;
+        }
+        .related-grid {
+          display: grid;
+          gap: 0.85rem;
+          grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        }
+        .related-card {
+          background: linear-gradient(180deg, #ffffff, #f9fafb);
+          border: 1px solid rgba(17, 24, 39, 0.12);
+          border-radius: 0.9rem;
+          padding: 1rem 1rem 0.95rem;
+        }
+        .related-card__title {
+          margin: 0 0 0.7rem;
+          font-weight: 900;
+          color: #111827;
+          font-size: 0.98rem;
+          line-height: 1.35;
+        }
+        .related-card__cta {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0.62rem 0.9rem;
+          background: #111827;
+          color: #ffffff;
+          border-radius: 0.7rem;
+          text-decoration: none;
+          font-weight: 900;
+        }
+        .related-card__cta:hover { background: #0b1220; }
+
+        .faq-section { background: #f9fafb; padding: 3.5rem 0; }
+        .faq-section__title { font-size: 1.7rem; font-weight: 800; color: #111827; margin-bottom: 1.75rem; text-align: center; }
+        .faq-list { max-width: 52rem; margin: 0 auto; }
+        .faq-item { background: white; border-radius: 0.75rem; margin-bottom: 0.9rem; overflow: hidden; border: 1px solid #e5e7eb; }
+        .faq-question {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.1rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            text-align: left;
+            color: #111827;
+            font-size: 0.98rem;
+            font-weight: 700;
+        }
+        .faq-question:hover { background: #f9fafb; }
+        .faq-chevron { width: 1.2rem; height: 1.2rem; color: #9ca3af; transition: transform 0.2s; }
+        .faq-question[aria-expanded="true"] .faq-chevron { transform: rotate(180deg); }
+        .faq-answer { display: none; padding: 0 1.1rem 1.1rem; color: #4b5563; line-height: 1.65; }
+        .faq-answer--open { display: block; }
+
+        .cta-section { padding: 3.5rem 0; text-align: center; }
+        .cta-card {
+            background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+            border-radius: 1rem;
+            padding: 2.5rem 1.5rem;
+            color: white;
+        }
+        .cta-card__title { font-size: 1.7rem; font-weight: 800; color: #ffffff; margin-bottom: 0.85rem; }
+        .cta-card__text { color: #d1d5db; max-width: 46rem; margin: 0 auto 1.4rem; }
+        .cta-card__button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.85rem 1.6rem;
+            background: #10b981;
+            color: white;
+            border-radius: 0.5rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .cta-card__button:hover { background: #059669; }
+
+        .breadcrumb { padding: 1rem 0; font-size: 0.875rem; color: #6b7280; }
+        .breadcrumb a { color: #6b7280; text-decoration: none; }
+        .breadcrumb a:hover { color: #111827; }
+        .breadcrumb span.sep { margin: 0 0.5rem; color: #9ca3af; }
+
+        .log-table-wrap {
+            border: 1px solid #e5e7eb;
+            border-radius: 0.75rem;
+            background: white;
+            overflow-x: auto;
+            margin-top: 0.6rem;
+        }
+        .log-table { width: 100%; border-collapse: collapse; min-width: 640px; }
+        .log-table th {
+            background: #111827;
+            color: white;
+            text-align: left;
+            font-size: 0.85rem;
+            font-weight: 700;
+            padding: 0.75rem;
+        }
+        .log-table td { border-bottom: 1px solid #e5e7eb; padding: 0.65rem 0.75rem; }
+        .log-table input {
+            width: 100%;
+            border: 1px solid #d1d5db;
+            border-radius: 0.55rem;
+            padding: 0.55rem 0.65rem;
+            font-size: 0.92rem;
+        }
+        .log-actions { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-top: 0.75rem; }
+        .linklike {
+            background: none;
+            border: none;
+            padding: 0;
+            color: #374151;
+            text-decoration: underline;
+            cursor: pointer;
+            font-weight: 700;
+        }
+        .log-remove { white-space: nowrap; }
+
+        @media (max-width: 767px) {
+            .tools-hero { padding: 6.75rem 0 2.4rem; }
+            .tools-title { font-size: 1.65rem; }
+            .tools-subtitle { font-size: 1rem; line-height: 1.6; }
+            .content-section { padding: 2.2rem 0; }
+            .prose-content h2 { font-size: 1.35rem; }
+            .jumpbar-wrap { top: 4.05rem; margin: 1rem 0 1.25rem; }
+            .jumpbar { padding: 0.62rem 0.7rem; }
+            .tool-grid { padding: 1rem; }
+            .tool-form { padding: 0.85rem; }
+            .results-table { min-width: 0; }
+            .results-table thead { display: none; }
+            .results-table, .results-table tbody, .results-table tr, .results-table td { display: block; width: 100%; }
+            .results-table tr { border-bottom: 1px solid #e5e7eb; padding: 0.45rem 0.1rem; }
+            .results-table td { border-bottom: none; padding: 0.45rem 0.6rem; }
+            .results-table td::before {
+                content: attr(data-label);
+                display: block;
+                font-size: 0.73rem;
+                font-weight: 800;
+                text-transform: uppercase;
+                letter-spacing: 0.04em;
+                color: #6b7280;
+                margin-bottom: 0.2rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-gray-900 text-white px-4 py-2 z-50">
+        Skip to main content
+    </a>
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <nav class="container-custom" aria-label="Main navigation">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="flex items-center gap-2 font-medium text-gray-900 hover:text-gray-700 transition-colors">
+                    <img src="/assets/images/logo.png" alt="Legacy Investing Show Logo" width="28" height="28" class="w-7 h-7">
+                    <span>Legacy Investing Show</span>
+                </a>
+
+                <div class="hidden md:flex items-center gap-6">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/success-stories" class="nav-link">Results</a>
+                    <a href="/blog/" class="nav-link">Blog</a>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col gap-3">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/success-stories" class="nav-link">Results</a>
+                    <a href="/blog/" class="nav-link">Blog</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <div class="container-custom breadcrumb" style="padding-top: 5rem;">
+            <a href="/">Home</a>
+            <span class="sep">/</span>
+            <a href="/tools/">Tools</a>
+            <span class="sep">/</span>
+            <span class="text-gray-900">Backdoor Roth Pro-Rata Calculator (Form 8606)</span>
+        </div>
+
+        <section class="tools-hero">
+            <div class="container-custom">
+                <span class="tools-badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 6v6l4 2"/>
+                        <path d="M21 12a9 9 0 1 1-9-9 9 9 0 0 1 9 9z"/>
+                    </svg>
+                    Roth
+                </span>
+                <h1 class="tools-title">Backdoor Roth Pro-Rata Calculator (Form 8606)</h1>
+                <p class="tools-subtitle">Estimate taxable vs nontaxable Roth conversion amounts using the pro-rata rule, and see how year-end IRA balances change the outcome.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container-custom">
+                <article class="prose-content">
+                    <h2>Why This Tool Exists</h2>
+                    <p>Backdoor Roth works cleanly when your IRA balances are clean. When they are not, the pro-rata rule decides what is taxable.</p>
+<p>This tool is built to make the rule legible: plug in your year-end IRA balance, your nondeductible basis, and your conversion amount. Then you get a directional taxable estimate and a checklist to keep your paperwork clean.</p>
+
+                    <div class="operator-note"><strong>Execution note:</strong> Run the tool, then write down your assumptions and keep the receipts and logs as you go. The strategy that wins on paper only matters if your process holds up in the real world.</div>
+
+                    <div class="jumpbar-wrap" aria-label="Page navigation">
+            <div class="jumpbar">
+              <span class="jumpbar__label">Jump:</span>
+              <div class="jumpbar__links">
+                <a class="jumpbar__link" href="#calculator">Calculator</a>
+<a class="jumpbar__link" href="#how-it-works">How Pro-Rata Works (Execution-First)</a>
+<a class="jumpbar__link" href="#common-mistakes">Common Mistakes</a>
+<a class="jumpbar__link" href="#execution-notes">Execution Notes</a>
+<a class="jumpbar__link" href="#faq">FAQ</a>
+              </div>
+            </div>
+        </div>
+
+                    <section class="tool-card" id="calculator" aria-label="Backdoor Roth pro-rata calculator">
+            <div class="tool-card__header">
+              <h2 class="tool-card__title">Pro-Rata Calculator (Planning)</h2>
+              <p class="tool-card__subtitle">Estimate taxable vs nontaxable conversion amounts using year-end IRA balances and basis.</p>
+            </div>
+
+            <div class="tool-grid">
+              <form class="tool-form" id="t11-form">
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t11-ira">Year-end IRA balance (12/31, Trad+SEP+SIMPLE)</label>
+                    <input id="t11-ira" inputmode="decimal" type="text" placeholder="e.g. 85000">
+                    <div class="hint">Exclude Roth. Include all Traditional, SEP, and SIMPLE IRAs.</div>
+                  </div>
+                  <div class="field">
+                    <label for="t11-basis">Existing nondeductible basis (Form 8606 carryforward)</label>
+                    <input id="t11-basis" inputmode="decimal" type="text" placeholder="e.g. 12000">
+                    <div class="hint">Use your last filed Form 8606 carryforward basis.</div>
+                  </div>
+                </div>
+
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t11-newBasis">Current-year nondeductible contribution (optional)</label>
+                    <input id="t11-newBasis" inputmode="decimal" type="text" placeholder="e.g. 7000">
+                    <div class="hint">If you made a nondeductible contribution this year, include it here.</div>
+                  </div>
+                  <div class="field">
+                    <label for="t11-conv">Planned Roth conversion amount</label>
+                    <input id="t11-conv" inputmode="decimal" type="text" placeholder="e.g. 7000">
+                  </div>
+                </div>
+
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t11-dist">Other IRA distributions (optional)</label>
+                    <input id="t11-dist" inputmode="decimal" type="text" placeholder="e.g. 0">
+                    <div class="hint">If you took distributions from IRAs this year, include them for a closer denominator.</div>
+                  </div>
+                  <div class="field">
+                    <label for="t11-buffer">Conservatism buffer (basis haircut)</label>
+                    <select id="t11-buffer">
+                      <option value="0">0%</option>
+                      <option value="0.05">-5%</option>
+                      <option value="0.10">-10%</option>
+                    </select>
+                    <div class="hint">If you are unsure about basis accuracy, haircut it and stay conservative.</div>
+                  </div>
+                </div>
+
+                <button type="button" class="tool-button" id="t11-calc">Estimate taxable portion</button>
+              </form>
+
+              <div class="tool-results" aria-live="polite">
+                <div class="results-kpis">
+                  <div class="kpi">
+                    <div class="kpi__label">Nontaxable portion (est.)</div>
+                    <div class="kpi__value kpi__value--good" id="t11-kpi-non">$0</div>
+                    <div class="kpi__meta">Based on basis ratio</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">Taxable portion (est.)</div>
+                    <div class="kpi__value" id="t11-kpi-tax">$0</div>
+                    <div class="kpi__meta">This is the part you plan for</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">Remaining basis (est.)</div>
+                    <div class="kpi__value" id="t11-kpi-rem">$0</div>
+                    <div class="kpi__meta">Carryforward estimate</div>
+                  </div>
+                </div>
+
+                <div class="results-table-wrap" role="region" aria-label="Pro-rata breakdown table">
+                  <table class="results-table">
+                    <thead>
+                      <tr>
+                        <th>Line item</th>
+                        <th>Amount</th>
+                        <th>Execution note</th>
+                      </tr>
+                    </thead>
+                    <tbody id="t11-rows"></tbody>
+                  </table>
+                </div>
+
+                <div class="results-note" id="t11-warning" style="display:none;"></div>
+                <div class="results-note results-note--alt">
+                  If you want clean backdoor Roth execution, plan around 12/31 IRA balances. That is the lever most people ignore until it is too late.
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <script>
+          (function() {
+            function parseMoney(raw) {
+              if (raw == null) return 0;
+              const cleaned = String(raw).replace(/[^0-9.\-]/g, '');
+              const num = Number(cleaned);
+              return Number.isFinite(num) ? num : 0;
+            }
+            function fmtUSD(n) {
+              const v = Number.isFinite(n) ? n : 0;
+              return v.toLocaleString(undefined, { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+            }
+            function clamp(n, min, max) { return Math.min(max, Math.max(min, n)); }
+
+            function calculate() {
+              const ira = parseMoney(document.getElementById('t11-ira').value);
+              const basis0 = parseMoney(document.getElementById('t11-basis').value);
+              const newBasis = parseMoney(document.getElementById('t11-newBasis').value);
+              const conv = parseMoney(document.getElementById('t11-conv').value);
+              const dist = parseMoney(document.getElementById('t11-dist').value);
+              const haircut = Number(document.getElementById('t11-buffer').value) || 0;
+
+              const basis = Math.max(0, (basis0 + newBasis) * (1 - haircut));
+              const denom = Math.max(0, ira + Math.max(0, dist) + Math.max(0, conv));
+              const ratio = denom > 0 ? clamp(basis / denom, 0, 1) : 0;
+              const nonTaxable = Math.min(conv, conv * ratio);
+              const taxable = Math.max(0, conv - nonTaxable);
+              const remainingBasis = Math.max(0, basis - nonTaxable);
+
+              document.getElementById('t11-kpi-non').textContent = fmtUSD(nonTaxable);
+              document.getElementById('t11-kpi-tax').textContent = fmtUSD(taxable);
+              document.getElementById('t11-kpi-rem').textContent = fmtUSD(remainingBasis);
+
+              const tbody = document.getElementById('t11-rows');
+              tbody.innerHTML = '';
+              function addRow(label, amount, note) {
+                const tr = document.createElement('tr');
+                tr.innerHTML =
+                  '<td data-label="Line item"><strong>' + label + '</strong></td>' +
+                  '<td data-label="Amount">' + amount + '</td>' +
+                  '<td data-label="Execution note">' + note + '</td>';
+                tbody.appendChild(tr);
+              }
+
+              addRow('Basis used (after haircut)', fmtUSD(basis), 'If basis is uncertain, conservatism protects you from surprises.');
+              addRow('Denominator (IRA + distributions + conversion)', fmtUSD(denom), 'Year-end IRA balance is the lever that changes the ratio.');
+              addRow('Basis ratio', (Math.round(ratio * 1000) / 10) + '%', 'Higher ratio means more nontaxable conversion.');
+              addRow('Estimated taxable conversion', fmtUSD(taxable), 'Plan cash for this amount (plus state if applicable).');
+
+              const warn = document.getElementById('t11-warning');
+              const msgs = [];
+              if (conv <= 0) msgs.push('Enter a conversion amount to estimate taxable portion.');
+              if (denom <= 0 && conv > 0) msgs.push('Enter year-end IRA balance (and any distributions) to compute pro-rata ratio.');
+              if (ira > 0 && basis > 0 && ratio < 0.2) msgs.push('Your basis is small relative to IRA balances. Most of the conversion will likely be taxable.');
+              if (ira === 0 && dist === 0 && basis >= conv && conv > 0) msgs.push('Clean case: no year-end IRA balance and basis covers conversion. This often looks like a clean backdoor execution.');
+              warn.style.display = msgs.length ? 'block' : 'none';
+              warn.textContent = msgs.join(' ');
+            }
+
+            document.getElementById('t11-calc').addEventListener('click', calculate);
+          })();
+        </script>
+
+                    <h2 id="how-it-works">How Pro-Rata Works (Execution-First)</h2><p>The IRS looks at all Traditional, SEP, and SIMPLE IRA balances as one combined bucket for this calculation.</p>
+<p>Your basis is spread across the whole bucket. That means the conversion is partly taxable and partly nontaxable based on the ratio of basis to total IRA value.</p>
+<p>The year-end balance matters. You cannot fix a pro-rata surprise after the year ends without changing facts.</p>
+<h2 id="common-mistakes">Common Mistakes</h2><p>Forgetting a SEP or SIMPLE IRA balance that triggers pro-rata taxation.</p>
+<p>Not tracking basis cleanly from year to year (Form 8606 matters).</p>
+<p>Assuming the conversion is tax-free because the contribution was nondeductible.</p>
+<h2 id="execution-notes">Execution Notes</h2><p>If you want clean backdoor Roth execution, discuss your IRA balance strategy with your advisor before December.</p>
+<p>Save your inputs, year-end statements, and Form 8606 history in one folder.</p>
+<p>Treat this as a planning estimate. Final numbers depend on your actual 12/31 balances and your filed forms.</p>
+
+                    <h2 id="doc-checklist">Documentation Checklist (Keep It Defensible)</h2>
+                    <ul>
+                      <li>Create a one-page objective memo before you execute (what outcome you are trying to buy).</li>
+<li>Store your assumptions and calculations in a dated PDF (no year-end reconstructions).</li>
+<li>Keep evidence in the same folder structure every month (receipts, logs, approvals).</li>
+<li>Ask your CPA what would make this easy to sign off on, then build that packet.</li>
+                    </ul>
+
+                    <section class="related-section" aria-label="Related guides">
+            <h2 class="related-section__title">Related Guides</h2>
+            <div class="related-grid">
+              <article class="related-card">
+                  <h3 class="related-card__title">IRMAA Headroom + Roth Conversion Room Planner</h3>
+                  <a class="related-card__cta" href="/tools/irmaa-headroom-roth-conversion-planner">Open guide</a>
+                </article>
+            </div>
+          </section>
+                </article>
+            </div>
+        </section>
+
+        <section class="faq-section" id="faq">
+            <div class="container-custom">
+                <h2 class="faq-section__title">Frequently Asked Questions</h2>
+                <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
+                    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="faq-question" aria-expanded="true" aria-controls="faq-answer-0">
+                            <span itemprop="name">Does this include SEP and SIMPLE IRAs?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer faq-answer--open" id="faq-answer-0" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">Yes. The pro-rata rule looks at Traditional, SEP, and SIMPLE IRA balances together for this calculation.</p>
+                        </div>
+                    </div>
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+                            <span itemprop="name">Why does the year-end balance matter?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer " id="faq-answer-1" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">Because the denominator of the pro-rata ratio is based on year-end IRA value plus conversions and distributions. That is why December planning matters.</p>
+                        </div>
+                    </div>
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+                            <span itemprop="name">Is this the exact Form 8606 calculation?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer " id="faq-answer-2" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">It follows the core structure, but it is still a planning model. Your CPA will finalize based on your actual balances and filed forms.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container-custom">
+                <div class="cta-card">
+                    <h2 class="cta-card__title">Turn The Tool Into An Execution Plan</h2>
+                    <p class="cta-card__text">The people who win are not the ones who find a strategy. They are the ones who build a monthly system, keep receipts and logs, and hand their CPA a clean packet.</p>
+                    <a href="https://www.managemoney101.com/challengeoptin" class="cta-card__button">
+                        Join the 3-Day Wealth Challenge
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <p style="margin: 1.25rem 0 0; color: #9ca3af; font-size: 0.85rem; line-height: 1.6;">Educational content only. Results vary based on your facts. Always consult a qualified tax professional before making decisions.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="minimal-footer">
+        <div class="container-custom">
+            <div class="minimal-footer-content">
+                <div class="footer-brand">
+                    <img src="/assets/images/logo.png" alt="Legacy Investing Show" width="32" height="32">
+                    <span>Legacy Investing Show</span>
+                </div>
+                <div class="footer-links">
+                    <a href="/success-stories">Results</a>
+                    <a href="/blog/">Blog</a>
+                    <a href="/tax-strategies/">Tax Strategies</a>
+                </div>
+            </div>
+            <div class="footer-copyright">Copyright 2025</div>
+        </div>
+    </footer>
+
+    <script defer src="/assets/js/main.js"></script>
+    <script>
+        document.querySelectorAll('.faq-question').forEach((button) => {
+            button.addEventListener('click', () => {
+                const expanded = button.getAttribute('aria-expanded') === 'true';
+                button.setAttribute('aria-expanded', String(!expanded));
+                button.nextElementSibling.classList.toggle('faq-answer--open');
+            });
+        });
+
+        document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

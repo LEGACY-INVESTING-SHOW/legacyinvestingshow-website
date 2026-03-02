@@ -12,12 +12,12 @@ Non-negotiables:
 
 Completed:
 - C01 to C10 comparison pages (live under `/compare/*`)
+- Tools T01 to T10 (live under `/tools/*`)
 
 In Progress:
-- Tools: T01 to T03 (this sprint)
+- Tools T11+
 
 Next:
-- Tools T04+
 - Worksheets W01+
 - Remaining comparisons C11+
 
@@ -43,7 +43,7 @@ Implementation notes:
 - Build script: `scripts/build-compare-pages.js` outputs `compare/index.html` and `compare/<slug>.html`
 - Sitemap includes `/compare/*`
 
-## Tools (T01 to T03) This Sprint
+## Tools (T01+) Implementation Notes
 
 High-level approach:
 - Add `data/tools.json` with tool metadata + copy + FAQs.
@@ -233,6 +233,57 @@ Inputs:
 Outputs:
 - Annual schedule with principal, interest, taxable gain portion, estimated tax, and net cash
 - Advisor packet checklist for execution
+
+### T11: Backdoor Roth Pro-Rata Calculator (Form 8606)
+
+Primary intent:
+- High-income earners using backdoor Roth who need to understand how year-end IRA balances change what is taxable.
+
+Inputs:
+- Year-end total Traditional/SEP/SIMPLE IRA balance (12/31)
+- Existing nondeductible basis (Form 8606 carryforward)
+- Current-year nondeductible contribution (optional)
+- Planned Roth conversion amount
+- Other IRA distributions (optional)
+
+Outputs:
+- Estimated taxable vs nontaxable conversion portion (pro-rata)
+- Remaining basis estimate after conversion
+- Warnings for common failure modes (large pre-tax IRA balances, missing basis tracking)
+
+### T12: W-2 Withholding Catch-Up Planner (Late-Year Fix)
+
+Primary intent:
+- W-2 + side income filers who want a clean catch-up plan, with the option to use withholding to simplify timing.
+
+Inputs:
+- Target total to cover (your additional tax or buffer goal)
+- Year-to-date withholding
+- Year-to-date estimated payments
+- Remaining paychecks
+- Remaining estimated payments (optional)
+
+Outputs:
+- Additional withholding needed and per-paycheck increase
+- Equivalent per-quarter estimated payment option
+- Execution reminders (update W-4, save the plan, re-run monthly)
+
+### T13: Capital Gains Headroom Calculator (User-Entered Guardrails)
+
+Primary intent:
+- Taxable-brokerage investors who want to harvest gains intentionally without accidentally spilling into a higher cap gains tier.
+
+Inputs:
+- Baseline taxable income (before LTCG)
+- Cap gains threshold guardrail (user-entered)
+- Buffer (optional)
+- Planned long-term capital gains
+- Optional tax rates for estimate (lower and higher)
+
+Outputs:
+- Headroom amount at the lower tier
+- Split of planned gains: inside vs above guardrail
+- Optional estimated tax at each tier
 
 ## QA Checklist (Applies to Every Tool Page)
 

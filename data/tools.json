@@ -620,6 +620,171 @@
           "label": "Installment Sale vs Deferred Sales Trust (exit edge cases)"
         }
       ]
+    },
+    {
+      "id": "T11",
+      "slug": "backdoor-roth-pro-rata-calculator",
+      "title": "Backdoor Roth Pro-Rata Calculator (Form 8606)",
+      "description": "Estimate taxable vs nontaxable Roth conversion amounts using the pro-rata rule, and see how year-end IRA balances change the outcome.",
+      "badge": "Roth",
+      "opening": [
+        "Backdoor Roth works cleanly when your IRA balances are clean. When they are not, the pro-rata rule decides what is taxable.",
+        "This tool is built to make the rule legible: plug in your year-end IRA balance, your nondeductible basis, and your conversion amount. Then you get a directional taxable estimate and a checklist to keep your paperwork clean."
+      ],
+      "sections": [
+        {
+          "id": "how-it-works",
+          "title": "How Pro-Rata Works (Execution-First)",
+          "paragraphs": [
+            "The IRS looks at all Traditional, SEP, and SIMPLE IRA balances as one combined bucket for this calculation.",
+            "Your basis is spread across the whole bucket. That means the conversion is partly taxable and partly nontaxable based on the ratio of basis to total IRA value.",
+            "The year-end balance matters. You cannot fix a pro-rata surprise after the year ends without changing facts."
+          ]
+        },
+        {
+          "id": "common-mistakes",
+          "title": "Common Mistakes",
+          "paragraphs": [
+            "Forgetting a SEP or SIMPLE IRA balance that triggers pro-rata taxation.",
+            "Not tracking basis cleanly from year to year (Form 8606 matters).",
+            "Assuming the conversion is tax-free because the contribution was nondeductible."
+          ]
+        },
+        {
+          "id": "execution-notes",
+          "title": "Execution Notes",
+          "paragraphs": [
+            "If you want clean backdoor Roth execution, discuss your IRA balance strategy with your advisor before December.",
+            "Save your inputs, year-end statements, and Form 8606 history in one folder.",
+            "Treat this as a planning estimate. Final numbers depend on your actual 12/31 balances and your filed forms."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Does this include SEP and SIMPLE IRAs?",
+          "a": "Yes. The pro-rata rule looks at Traditional, SEP, and SIMPLE IRA balances together for this calculation."
+        },
+        {
+          "q": "Why does the year-end balance matter?",
+          "a": "Because the denominator of the pro-rata ratio is based on year-end IRA value plus conversions and distributions. That is why December planning matters."
+        },
+        {
+          "q": "Is this the exact Form 8606 calculation?",
+          "a": "It follows the core structure, but it is still a planning model. Your CPA will finalize based on your actual balances and filed forms."
+        }
+      ],
+      "related": [
+        {
+          "href": "/tools/irmaa-headroom-roth-conversion-planner",
+          "label": "IRMAA Headroom + Roth Conversion Room Planner"
+        }
+      ]
+    },
+    {
+      "id": "T12",
+      "slug": "w2-withholding-catch-up-planner",
+      "title": "W-2 Withholding Catch-Up Planner (Late-Year Fix)",
+      "description": "Calculate how much extra withholding you need per paycheck to hit a year-end target, and compare it to making estimated payments.",
+      "badge": "Withholding",
+      "opening": [
+        "When people get behind on taxes, they usually try to fix it with a giant Q4 payment. That can work, but it is not always the cleanest execution path.",
+        "This planner helps you build a simple catch-up number and split it into per-paycheck withholding. You can also compare the equivalent quarterly payment plan."
+      ],
+      "sections": [
+        {
+          "id": "what-this-is",
+          "title": "What This Tool Is",
+          "paragraphs": [
+            "This is a cash-flow execution tool. You choose a target dollar amount you want covered by year-end, then you spread the remaining gap across paychecks.",
+            "It does not replace a tax projection. It gives you a clean plan you can execute with fewer surprises."
+          ]
+        },
+        {
+          "id": "execution-notes",
+          "title": "Execution Notes",
+          "paragraphs": [
+            "If you use this, update your W-4 or payroll withholding settings and confirm the change shows up on the next pay stub.",
+            "Re-run the tool when income changes or you add a new income stream.",
+            "Keep the output in your year folder so you can explain why you chose a catch-up plan."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Should I do withholding or estimated payments?",
+          "a": "It depends on your income mix and how predictable your cash flow is. This tool helps you compare the execution paths."
+        },
+        {
+          "q": "What should my target be?",
+          "a": "Many people use a safe-harbor floor, a projection from their CPA, or a conservative buffer. Pick a target you will actually execute."
+        },
+        {
+          "q": "Does this include state taxes?",
+          "a": "Yes, if your target includes state. The tool is dollars-in, dollars-out."
+        }
+      ],
+      "related": [
+        {
+          "href": "/tools/estimated-tax-safe-harbor-planner",
+          "label": "Estimated Tax Safe Harbor Planner"
+        },
+        {
+          "href": "/tools/annualized-income-estimated-tax-calculator",
+          "label": "Annualized Income Estimated Tax Calculator"
+        }
+      ]
+    },
+    {
+      "id": "T13",
+      "slug": "capital-gains-headroom-calculator",
+      "title": "Capital Gains Headroom Calculator (User-Entered Guardrails)",
+      "description": "Estimate how much long-term capital gain you can realize inside a user-entered threshold, and see how much of a planned sale spills into the next tier.",
+      "badge": "Capital Gains",
+      "opening": [
+        "Capital gains harvesting is not a vibe. It is a guardrails problem.",
+        "This tool helps you translate your baseline taxable income and your chosen threshold into a headroom number, then shows how a planned sale splits across tiers."
+      ],
+      "sections": [
+        {
+          "id": "how-to-use",
+          "title": "How To Use This Tool",
+          "paragraphs": [
+            "Enter your baseline taxable income before long-term capital gains.",
+            "Enter the guardrail threshold you want to stay under (thresholds vary by year and filing status, so you control the input).",
+            "Enter your planned long-term capital gain and a buffer. The tool shows how much is inside vs above the guardrail."
+          ]
+        },
+        {
+          "id": "execution-notes",
+          "title": "Execution Notes",
+          "paragraphs": [
+            "If you are near the line, use a buffer. Small surprises happen: dividends, interest, bonuses, and business income shifts.",
+            "Save a dated projection snapshot with the tool output so you can explain your decision later.",
+            "Use conservative numbers. Optimism is how people accidentally spill into the next tier."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why do I have to enter the threshold?",
+          "a": "Thresholds change by year and filing status. Entering your guardrail keeps the tool evergreen and makes you decide intentionally."
+        },
+        {
+          "q": "Does this include NIIT or state tax?",
+          "a": "Only if you model it via your rates. This tool focuses on headroom and tier splitting; final tax depends on your full return."
+        },
+        {
+          "q": "What if part of my gain is short-term?",
+          "a": "Short-term gains are taxed differently. Use this for long-term gain planning only, and ask your CPA if the mix matters."
+        }
+      ],
+      "related": [
+        {
+          "href": "/tools/irmaa-headroom-roth-conversion-planner",
+          "label": "IRMAA Headroom + Roth Conversion Room Planner (guardrails mindset)"
+        }
+      ]
     }
   ]
 }

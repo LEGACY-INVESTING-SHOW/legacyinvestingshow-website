@@ -174,6 +174,9 @@ function toolWidget(tool) {
   if (tool.id === 'T08') return widgetQcdRothPlanner();
   if (tool.id === 'T09') return widgetLoanComparator();
   if (tool.id === 'T10') return widgetInstallmentSalePlanner();
+  if (tool.id === 'T11') return widgetBackdoorRothProrata();
+  if (tool.id === 'T12') return widgetWithholdingCatchUp();
+  if (tool.id === 'T13') return widgetCapitalGainsHeadroom();
   return `<div class="tool-card"><p>Tool widget not implemented.</p></div>`;
 }
 
@@ -2026,6 +2029,492 @@ function widgetInstallmentSalePlanner() {
             }
 
             document.getElementById('t10-calc').addEventListener('click', calculate);
+          })();
+        </script>`;
+}
+
+function widgetBackdoorRothProrata() {
+  return `<section class="tool-card" id="calculator" aria-label="Backdoor Roth pro-rata calculator">
+            <div class="tool-card__header">
+              <h2 class="tool-card__title">Pro-Rata Calculator (Planning)</h2>
+              <p class="tool-card__subtitle">Estimate taxable vs nontaxable conversion amounts using year-end IRA balances and basis.</p>
+            </div>
+
+            <div class="tool-grid">
+              <form class="tool-form" id="t11-form">
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t11-ira">Year-end IRA balance (12/31, Trad+SEP+SIMPLE)</label>
+                    <input id="t11-ira" inputmode="decimal" type="text" placeholder="e.g. 85000">
+                    <div class="hint">Exclude Roth. Include all Traditional, SEP, and SIMPLE IRAs.</div>
+                  </div>
+                  <div class="field">
+                    <label for="t11-basis">Existing nondeductible basis (Form 8606 carryforward)</label>
+                    <input id="t11-basis" inputmode="decimal" type="text" placeholder="e.g. 12000">
+                    <div class="hint">Use your last filed Form 8606 carryforward basis.</div>
+                  </div>
+                </div>
+
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t11-newBasis">Current-year nondeductible contribution (optional)</label>
+                    <input id="t11-newBasis" inputmode="decimal" type="text" placeholder="e.g. 7000">
+                    <div class="hint">If you made a nondeductible contribution this year, include it here.</div>
+                  </div>
+                  <div class="field">
+                    <label for="t11-conv">Planned Roth conversion amount</label>
+                    <input id="t11-conv" inputmode="decimal" type="text" placeholder="e.g. 7000">
+                  </div>
+                </div>
+
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t11-dist">Other IRA distributions (optional)</label>
+                    <input id="t11-dist" inputmode="decimal" type="text" placeholder="e.g. 0">
+                    <div class="hint">If you took distributions from IRAs this year, include them for a closer denominator.</div>
+                  </div>
+                  <div class="field">
+                    <label for="t11-buffer">Conservatism buffer (basis haircut)</label>
+                    <select id="t11-buffer">
+                      <option value="0">0%</option>
+                      <option value="0.05">-5%</option>
+                      <option value="0.10">-10%</option>
+                    </select>
+                    <div class="hint">If you are unsure about basis accuracy, haircut it and stay conservative.</div>
+                  </div>
+                </div>
+
+                <button type="button" class="tool-button" id="t11-calc">Estimate taxable portion</button>
+              </form>
+
+              <div class="tool-results" aria-live="polite">
+                <div class="results-kpis">
+                  <div class="kpi">
+                    <div class="kpi__label">Nontaxable portion (est.)</div>
+                    <div class="kpi__value kpi__value--good" id="t11-kpi-non">$0</div>
+                    <div class="kpi__meta">Based on basis ratio</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">Taxable portion (est.)</div>
+                    <div class="kpi__value" id="t11-kpi-tax">$0</div>
+                    <div class="kpi__meta">This is the part you plan for</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">Remaining basis (est.)</div>
+                    <div class="kpi__value" id="t11-kpi-rem">$0</div>
+                    <div class="kpi__meta">Carryforward estimate</div>
+                  </div>
+                </div>
+
+                <div class="results-table-wrap" role="region" aria-label="Pro-rata breakdown table">
+                  <table class="results-table">
+                    <thead>
+                      <tr>
+                        <th>Line item</th>
+                        <th>Amount</th>
+                        <th>Execution note</th>
+                      </tr>
+                    </thead>
+                    <tbody id="t11-rows"></tbody>
+                  </table>
+                </div>
+
+                <div class="results-note" id="t11-warning" style="display:none;"></div>
+                <div class="results-note results-note--alt">
+                  If you want clean backdoor Roth execution, plan around 12/31 IRA balances. That is the lever most people ignore until it is too late.
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <script>
+          (function() {
+            function parseMoney(raw) {
+              if (raw == null) return 0;
+              const cleaned = String(raw).replace(/[^0-9.\\-]/g, '');
+              const num = Number(cleaned);
+              return Number.isFinite(num) ? num : 0;
+            }
+            function fmtUSD(n) {
+              const v = Number.isFinite(n) ? n : 0;
+              return v.toLocaleString(undefined, { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+            }
+            function clamp(n, min, max) { return Math.min(max, Math.max(min, n)); }
+
+            function calculate() {
+              const ira = parseMoney(document.getElementById('t11-ira').value);
+              const basis0 = parseMoney(document.getElementById('t11-basis').value);
+              const newBasis = parseMoney(document.getElementById('t11-newBasis').value);
+              const conv = parseMoney(document.getElementById('t11-conv').value);
+              const dist = parseMoney(document.getElementById('t11-dist').value);
+              const haircut = Number(document.getElementById('t11-buffer').value) || 0;
+
+              const basis = Math.max(0, (basis0 + newBasis) * (1 - haircut));
+              const denom = Math.max(0, ira + Math.max(0, dist) + Math.max(0, conv));
+              const ratio = denom > 0 ? clamp(basis / denom, 0, 1) : 0;
+              const nonTaxable = Math.min(conv, conv * ratio);
+              const taxable = Math.max(0, conv - nonTaxable);
+              const remainingBasis = Math.max(0, basis - nonTaxable);
+
+              document.getElementById('t11-kpi-non').textContent = fmtUSD(nonTaxable);
+              document.getElementById('t11-kpi-tax').textContent = fmtUSD(taxable);
+              document.getElementById('t11-kpi-rem').textContent = fmtUSD(remainingBasis);
+
+              const tbody = document.getElementById('t11-rows');
+              tbody.innerHTML = '';
+              function addRow(label, amount, note) {
+                const tr = document.createElement('tr');
+                tr.innerHTML =
+                  '<td data-label=\"Line item\"><strong>' + label + '</strong></td>' +
+                  '<td data-label=\"Amount\">' + amount + '</td>' +
+                  '<td data-label=\"Execution note\">' + note + '</td>';
+                tbody.appendChild(tr);
+              }
+
+              addRow('Basis used (after haircut)', fmtUSD(basis), 'If basis is uncertain, conservatism protects you from surprises.');
+              addRow('Denominator (IRA + distributions + conversion)', fmtUSD(denom), 'Year-end IRA balance is the lever that changes the ratio.');
+              addRow('Basis ratio', (Math.round(ratio * 1000) / 10) + '%', 'Higher ratio means more nontaxable conversion.');
+              addRow('Estimated taxable conversion', fmtUSD(taxable), 'Plan cash for this amount (plus state if applicable).');
+
+              const warn = document.getElementById('t11-warning');
+              const msgs = [];
+              if (conv <= 0) msgs.push('Enter a conversion amount to estimate taxable portion.');
+              if (denom <= 0 && conv > 0) msgs.push('Enter year-end IRA balance (and any distributions) to compute pro-rata ratio.');
+              if (ira > 0 && basis > 0 && ratio < 0.2) msgs.push('Your basis is small relative to IRA balances. Most of the conversion will likely be taxable.');
+              if (ira === 0 && dist === 0 && basis >= conv && conv > 0) msgs.push('Clean case: no year-end IRA balance and basis covers conversion. This often looks like a clean backdoor execution.');
+              warn.style.display = msgs.length ? 'block' : 'none';
+              warn.textContent = msgs.join(' ');
+            }
+
+            document.getElementById('t11-calc').addEventListener('click', calculate);
+          })();
+        </script>`;
+}
+
+function widgetWithholdingCatchUp() {
+  return `<section class="tool-card" id="calculator" aria-label="W-2 withholding catch-up planner">
+            <div class="tool-card__header">
+              <h2 class="tool-card__title">Withholding Catch-Up Planner</h2>
+              <p class="tool-card__subtitle">Pick a target amount to cover by year-end, then split the gap across paychecks or quarterly payments.</p>
+            </div>
+
+            <div class="tool-grid">
+              <form class="tool-form" id="t12-form">
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t12-target">Target to cover by year-end (your goal)</label>
+                    <input id="t12-target" inputmode="decimal" type="text" placeholder="e.g. 24000">
+                    <div class="hint">This can be a safe-harbor gap, a CPA projection gap, or a conservative buffer goal.</div>
+                  </div>
+                  <div class="field">
+                    <label for="t12-ytdW">Year-to-date withholding</label>
+                    <input id="t12-ytdW" inputmode="decimal" type="text" placeholder="e.g. 14500">
+                  </div>
+                </div>
+
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t12-ytdE">Year-to-date estimated payments</label>
+                    <input id="t12-ytdE" inputmode="decimal" type="text" placeholder="e.g. 2000">
+                  </div>
+                  <div class="field">
+                    <label for="t12-paychecks">Remaining paychecks</label>
+                    <select id="t12-paychecks">
+                      <option value="2">2</option>
+                      <option value="4">4</option>
+                      <option value="6" selected>6</option>
+                      <option value="8">8</option>
+                      <option value="10">10</option>
+                      <option value="12">12</option>
+                      <option value="18">18</option>
+                      <option value="24">24</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t12-quarters">Remaining estimated payments (quarters)</label>
+                    <select id="t12-quarters">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2" selected>2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                    <div class="hint">If you are not making estimates, leave this at 0 and just use withholding.</div>
+                  </div>
+                  <div class="field">
+                    <label for="t12-buffer">Conservatism buffer</label>
+                    <select id="t12-buffer">
+                      <option value="0">0%</option>
+                      <option value="0.05">+5%</option>
+                      <option value="0.10">+10%</option>
+                    </select>
+                    <div class="hint">If your income is volatile, a small buffer reduces surprises.</div>
+                  </div>
+                </div>
+
+                <button type="button" class="tool-button" id="t12-calc">Build catch-up plan</button>
+              </form>
+
+              <div class="tool-results" aria-live="polite">
+                <div class="results-kpis">
+                  <div class="kpi">
+                    <div class="kpi__label">Remaining gap</div>
+                    <div class="kpi__value kpi__value--good" id="t12-kpi-gap">$0</div>
+                    <div class="kpi__meta">Target minus paid to date</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">Per paycheck (extra withholding)</div>
+                    <div class="kpi__value" id="t12-kpi-perpay">$0</div>
+                    <div class="kpi__meta" id="t12-kpi-paymeta">Across remaining paychecks</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">Per quarter (estimated payment)</div>
+                    <div class="kpi__value" id="t12-kpi-perq">$0</div>
+                    <div class="kpi__meta" id="t12-kpi-qmeta">Across remaining quarters</div>
+                  </div>
+                </div>
+
+                <div class="results-table-wrap" role="region" aria-label="Execution options table">
+                  <table class="results-table">
+                    <thead>
+                      <tr>
+                        <th>Execution path</th>
+                        <th>What you do</th>
+                        <th>Why it works</th>
+                      </tr>
+                    </thead>
+                    <tbody id="t12-rows"></tbody>
+                  </table>
+                </div>
+
+                <div class="results-note" id="t12-warning" style="display:none;"></div>
+                <div class="results-note results-note--alt">
+                  Execution standard: update payroll, confirm it shows on the next pay stub, and re-run the plan monthly. Do not wait until December to discover the gap.
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <script>
+          (function() {
+            function parseMoney(raw) {
+              if (raw == null) return 0;
+              const cleaned = String(raw).replace(/[^0-9.\\-]/g, '');
+              const num = Number(cleaned);
+              return Number.isFinite(num) ? num : 0;
+            }
+            function fmtUSD(n) {
+              const v = Number.isFinite(n) ? n : 0;
+              return v.toLocaleString(undefined, { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+            }
+
+            function calculate() {
+              const target0 = parseMoney(document.getElementById('t12-target').value);
+              const ytdW = parseMoney(document.getElementById('t12-ytdW').value);
+              const ytdE = parseMoney(document.getElementById('t12-ytdE').value);
+              const paychecks = Number(document.getElementById('t12-paychecks').value) || 1;
+              const quarters = Number(document.getElementById('t12-quarters').value) || 0;
+              const bufferPct = Number(document.getElementById('t12-buffer').value) || 0;
+
+              const target = Math.max(0, target0 * (1 + bufferPct));
+              const paid = Math.max(0, ytdW + ytdE);
+              const gap = Math.max(0, target - paid);
+              const perPay = paychecks > 0 ? (gap / paychecks) : gap;
+              const perQ = quarters > 0 ? (gap / quarters) : gap;
+
+              document.getElementById('t12-kpi-gap').textContent = fmtUSD(gap);
+              document.getElementById('t12-kpi-perpay').textContent = fmtUSD(perPay);
+              document.getElementById('t12-kpi-perq').textContent = quarters > 0 ? fmtUSD(perQ) : 'N/A';
+              document.getElementById('t12-kpi-paymeta').textContent = 'Across ' + paychecks + ' paycheck' + (paychecks === 1 ? '' : 's');
+              document.getElementById('t12-kpi-qmeta').textContent = quarters > 0 ? ('Across ' + quarters + ' quarter' + (quarters === 1 ? '' : 's')) : 'Set quarters to compare';
+
+              const tbody = document.getElementById('t12-rows');
+              tbody.innerHTML = '';
+              function addRow(path, what, why) {
+                const tr = document.createElement('tr');
+                tr.innerHTML =
+                  '<td data-label=\"Execution path\"><strong>' + path + '</strong></td>' +
+                  '<td data-label=\"What you do\">' + what + '</td>' +
+                  '<td data-label=\"Why it works\">' + why + '</td>';
+                tbody.appendChild(tr);
+              }
+              addRow('Withholding catch-up', 'Increase withholding by ' + fmtUSD(perPay) + ' per paycheck.', 'Simple execution: automatic, consistent, and easy to track.');
+              addRow('Estimated payments', quarters > 0 ? ('Pay ' + fmtUSD(perQ) + ' per quarter.') : 'Set remaining quarters to see an estimate-payment option.', 'Useful when you do not have steady W-2 withholding control.');
+              addRow('Hybrid', 'Split the gap between withholding and estimates.', 'Often the most stable path when cash flow is uneven.');
+
+              const warn = document.getElementById('t12-warning');
+              const msgs = [];
+              if (target0 <= 0) msgs.push('Enter a target amount you want covered by year-end.');
+              if (gap === 0 && target0 > 0) msgs.push('Based on these inputs, you are already at or above your target.');
+              if (perPay > 0 && perPay > 3000) msgs.push('Large per-paycheck changes can be hard to execute. Consider a hybrid plan or re-check your target.');
+              warn.style.display = msgs.length ? 'block' : 'none';
+              warn.textContent = msgs.join(' ');
+            }
+
+            document.getElementById('t12-calc').addEventListener('click', calculate);
+          })();
+        </script>`;
+}
+
+function widgetCapitalGainsHeadroom() {
+  return `<section class="tool-card" id="calculator" aria-label="Capital gains headroom calculator">
+            <div class="tool-card__header">
+              <h2 class="tool-card__title">Capital Gains Headroom</h2>
+              <p class="tool-card__subtitle">Enter your baseline taxable income and a guardrail threshold to see how planned gains split across tiers.</p>
+            </div>
+
+            <div class="tool-grid">
+              <form class="tool-form" id="t13-form">
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t13-base">Baseline taxable income (before LTCG)</label>
+                    <input id="t13-base" inputmode="decimal" type="text" placeholder="e.g. 76000">
+                    <div class="hint">Use a conservative estimate from a projection or last year. This is taxable income, not gross.</div>
+                  </div>
+                  <div class="field">
+                    <label for="t13-thresh">Guardrail threshold (user-entered)</label>
+                    <input id="t13-thresh" inputmode="decimal" type="text" placeholder="e.g. 94000">
+                    <div class="hint">Enter the boundary you care about (thresholds vary by year and filing status).</div>
+                  </div>
+                </div>
+
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t13-buffer">Buffer under threshold</label>
+                    <input id="t13-buffer" inputmode="decimal" type="text" placeholder="e.g. 1500">
+                    <div class="hint">Dividends and income surprises happen. Buffer keeps the plan stable.</div>
+                  </div>
+                  <div class="field">
+                    <label for="t13-gain">Planned long-term capital gain</label>
+                    <input id="t13-gain" inputmode="decimal" type="text" placeholder="e.g. 22000">
+                  </div>
+                </div>
+
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t13-lowRate">Optional: lower-tier tax rate (%)</label>
+                    <input id="t13-lowRate" inputmode="decimal" type="text" placeholder="e.g. 0">
+                    <div class="hint">If you want a dollar estimate, enter the rate you expect to apply inside the guardrail.</div>
+                  </div>
+                  <div class="field">
+                    <label for="t13-highRate">Optional: higher-tier tax rate (%)</label>
+                    <input id="t13-highRate" inputmode="decimal" type="text" placeholder="e.g. 15">
+                    <div class="hint">Enter the rate you expect to apply above the guardrail. Include state if desired.</div>
+                  </div>
+                </div>
+
+                <button type="button" class="tool-button" id="t13-calc">Calculate headroom</button>
+              </form>
+
+              <div class="tool-results" aria-live="polite">
+                <div class="results-kpis">
+                  <div class="kpi">
+                    <div class="kpi__label">Headroom (after buffer)</div>
+                    <div class="kpi__value kpi__value--good" id="t13-kpi-room">$0</div>
+                    <div class="kpi__meta">Threshold minus baseline minus buffer</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">Planned inside guardrail</div>
+                    <div class="kpi__value" id="t13-kpi-in">$0</div>
+                    <div class="kpi__meta">Lower tier portion</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">Planned above guardrail</div>
+                    <div class="kpi__value" id="t13-kpi-over">$0</div>
+                    <div class="kpi__meta">Higher tier portion</div>
+                  </div>
+                </div>
+
+                <div class="results-table-wrap" role="region" aria-label="Tier split table">
+                  <table class="results-table">
+                    <thead>
+                      <tr>
+                        <th>Component</th>
+                        <th>Amount</th>
+                        <th>Tax estimate</th>
+                      </tr>
+                    </thead>
+                    <tbody id="t13-rows"></tbody>
+                  </table>
+                </div>
+
+                <div class="results-note" id="t13-warning" style="display:none;"></div>
+                <div class="results-note results-note--alt">
+                  Headroom is only useful if your baseline is honest. If you are near the line, buffer aggressively and re-run the tool before you execute the sale.
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <script>
+          (function() {
+            function parseMoney(raw) {
+              if (raw == null) return 0;
+              const cleaned = String(raw).replace(/[^0-9.\\-]/g, '');
+              const num = Number(cleaned);
+              return Number.isFinite(num) ? num : 0;
+            }
+            function parsePct(raw) {
+              const cleaned = String(raw || '').replace(/[^0-9.\\-]/g, '');
+              const num = Number(cleaned);
+              if (!Number.isFinite(num)) return 0;
+              return Math.max(0, num) / 100;
+            }
+            function fmtUSD(n) {
+              const v = Number.isFinite(n) ? n : 0;
+              return v.toLocaleString(undefined, { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+            }
+            function clamp(n, min, max) { return Math.min(max, Math.max(min, n)); }
+
+            function calculate() {
+              const base = parseMoney(document.getElementById('t13-base').value);
+              const thresh0 = parseMoney(document.getElementById('t13-thresh').value);
+              const buffer = parseMoney(document.getElementById('t13-buffer').value);
+              const gain = parseMoney(document.getElementById('t13-gain').value);
+              const lowRate = parsePct(document.getElementById('t13-lowRate').value);
+              const highRate = parsePct(document.getElementById('t13-highRate').value);
+
+              const thresh = Math.max(0, thresh0 - Math.max(0, buffer));
+              const room = Math.max(0, thresh - Math.max(0, base));
+              const inside = clamp(gain, 0, room);
+              const over = Math.max(0, gain - inside);
+
+              document.getElementById('t13-kpi-room').textContent = fmtUSD(room);
+              document.getElementById('t13-kpi-in').textContent = fmtUSD(inside);
+              document.getElementById('t13-kpi-over').textContent = fmtUSD(over);
+
+              const taxIn = inside * lowRate;
+              const taxOver = over * highRate;
+              const totalTax = taxIn + taxOver;
+
+              const tbody = document.getElementById('t13-rows');
+              tbody.innerHTML = '';
+              function addRow(label, amount, tax) {
+                const tr = document.createElement('tr');
+                tr.innerHTML =
+                  '<td data-label=\"Component\"><strong>' + label + '</strong></td>' +
+                  '<td data-label=\"Amount\">' + fmtUSD(amount) + '</td>' +
+                  '<td data-label=\"Tax estimate\">' + (tax === null ? 'N/A' : fmtUSD(tax)) + '</td>';
+                tbody.appendChild(tr);
+              }
+              addRow('Inside guardrail', inside, (lowRate > 0 ? taxIn : (lowRate === 0 ? taxIn : null)));
+              addRow('Above guardrail', over, (highRate > 0 ? taxOver : (highRate === 0 ? taxOver : null)));
+              addRow('Total (planned)', gain, (lowRate > 0 || highRate > 0 || lowRate === 0 || highRate === 0) ? totalTax : null);
+
+              const warn = document.getElementById('t13-warning');
+              const msgs = [];
+              if (thresh0 <= 0) msgs.push('Enter a guardrail threshold.');
+              if (gain <= 0) msgs.push('Enter a planned long-term capital gain to see the tier split.');
+              if (base > thresh && thresh > 0) msgs.push('Your baseline is already above the guardrail after buffer. Any gain will be above in this model.');
+              if (over > 0 && room > 0) msgs.push('Part of your planned gain spills above the guardrail. Consider sizing the sale or using a bigger buffer.');
+              warn.style.display = msgs.length ? 'block' : 'none';
+              warn.textContent = msgs.join(' ');
+            }
+
+            document.getElementById('t13-calc').addEventListener('click', calculate);
           })();
         </script>`;
 }
