@@ -381,6 +381,245 @@
           "label": "Cost Segregation vs STR Loophole (when each matters)"
         }
       ]
+    },
+    {
+      "id": "T07",
+      "slug": "irmaa-headroom-roth-conversion-planner",
+      "title": "IRMAA Headroom + Roth Conversion Room Planner",
+      "description": "Estimate how much conversion room you have before you cross a Medicare IRMAA threshold (using thresholds you enter), then map a conversion plan you can execute.",
+      "badge": "Retirement",
+      "opening": [
+        "Most Roth conversion mistakes are not about the Roth. They are about the hidden cliffs around it.",
+        "This planner is built for execution: enter your projected MAGI and the next IRMAA threshold you care about, then get a simple conversion headroom number and a plan."
+      ],
+      "sections": [
+        {
+          "id": "how-it-works",
+          "title": "How This Planner Works",
+          "paragraphs": [
+            "You enter a projected baseline MAGI for the year (before conversions).",
+            "You enter the next IRMAA threshold you want to avoid (thresholds vary by year and filing status).",
+            "The tool calculates headroom and shows a conversion plan that stays inside the guardrail."
+          ]
+        },
+        {
+          "id": "what-to-enter",
+          "title": "What To Enter So The Output Is Actually Useful",
+          "paragraphs": [
+            "Use a baseline MAGI that is realistic, not optimistic. Underestimating MAGI is how people fall into brackets by accident.",
+            "If you are doing QCDs, large capital gains, or one-time income events, model those into baseline MAGI first.",
+            "Treat the output as a ceiling, not a goal. You still need a tax projection for full optimization."
+          ]
+        },
+        {
+          "id": "execution-notes",
+          "title": "Execution Notes",
+          "paragraphs": [
+            "Pick a cadence you will follow (monthly or quarterly). A plan that is too complex usually becomes a Q4 scramble.",
+            "Save your inputs and a dated projection snapshot in the same folder each year.",
+            "If you are close to a threshold, leave buffer room. Small surprises happen."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why do I have to enter the threshold?",
+          "a": "IRMAA thresholds change by year and filing status. This tool stays evergreen by letting you input the guardrail that applies to you."
+        },
+        {
+          "q": "Does IRMAA use MAGI or taxable income?",
+          "a": "IRMAA is based on modified AGI concepts. Use a projected MAGI number from your advisor or a conservative planning estimate."
+        },
+        {
+          "q": "Should I always avoid the threshold?",
+          "a": "Not always. Sometimes the conversion is still worth it. This tool helps you see the headroom and make that decision intentionally."
+        }
+      ],
+      "related": [
+        {
+          "href": "/compare/qcd-first-vs-roth-conversion-first-irmaa",
+          "label": "QCD First vs Roth Conversion First (IRMAA edge cases)"
+        },
+        {
+          "href": "/tools/qcd-vs-roth-conversion-planner",
+          "label": "QCD vs Roth Conversion Planner (RMD + IRMAA)"
+        }
+      ]
+    },
+    {
+      "id": "T08",
+      "slug": "qcd-vs-roth-conversion-planner",
+      "title": "QCD vs Roth Conversion Planner (RMD + IRMAA)",
+      "description": "Model baseline MAGI, RMD, QCD, and Roth conversions to estimate conversion room before an IRMAA threshold and build a sequencing playbook.",
+      "badge": "Charitable",
+      "opening": [
+        "In retirement planning, sequence is often the strategy. Not because sequence changes the math, but because it changes what is possible.",
+        "This planner helps you map QCD and Roth conversion decisions against an IRMAA guardrail using numbers you can actually estimate."
+      ],
+      "sections": [
+        {
+          "id": "sequence-playbook",
+          "title": "Sequencing Playbook (What You Are Really Deciding)",
+          "paragraphs": [
+            "QCDs can reduce income from required distributions and create more room for conversions.",
+            "Roth conversions can raise MAGI and push you into IRMAA brackets if you do not watch headroom.",
+            "The point is to build a plan that fits your reality: RMD needs, donation intent, and bracket control."
+          ]
+        },
+        {
+          "id": "inputs",
+          "title": "Inputs That Matter Most",
+          "paragraphs": [
+            "Baseline MAGI (before RMD/QCD/conversions).",
+            "RMD amount and planned QCD amount (QCD is limited by RMD mechanics).",
+            "The IRMAA threshold you want to treat as a guardrail, plus your buffer."
+          ]
+        },
+        {
+          "id": "execution-notes",
+          "title": "Execution Notes",
+          "paragraphs": [
+            "Do not wait until December to discover you have no headroom.",
+            "If you are close to the line, build a buffer and consider using withholding to smooth surprises.",
+            "Store the output as part of your year folder so you can explain decisions later."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Does the sequence change my tax bill?",
+          "a": "Often the core math is similar, but sequence changes constraints and guardrails. The practical win is executing a plan without accidental bracket crossings."
+        },
+        {
+          "q": "Can QCD increase my conversion room?",
+          "a": "It can, depending on your facts. This tool estimates conversion room by subtracting taxable RMD (after QCD) from your IRMAA headroom."
+        },
+        {
+          "q": "Do I need my exact IRMAA brackets for the year?",
+          "a": "You only need the guardrail you care about. Enter the next threshold and a buffer so the plan stays conservative."
+        }
+      ],
+      "related": [
+        {
+          "href": "/tools/irmaa-headroom-roth-conversion-planner",
+          "label": "IRMAA Headroom + Roth Conversion Room Planner"
+        },
+        {
+          "href": "/compare/qcd-first-vs-roth-conversion-first-irmaa",
+          "label": "QCD First vs Roth Conversion First (IRMAA edge cases)"
+        }
+      ]
+    },
+    {
+      "id": "T09",
+      "slug": "solo-401k-loan-vs-heloc-calculator",
+      "title": "Solo 401(k) Loan vs HELOC Calculator",
+      "description": "Compare payments, interest, and opportunity cost when funding a down payment with a Solo 401(k) loan versus a HELOC (using your inputs).",
+      "badge": "Liquidity",
+      "opening": [
+        "People argue about which is cheaper. The real question is which is less fragile when reality happens: timeline slips, rates change, or cash flow tightens.",
+        "This calculator helps you compare the cash flow and the hidden cost (opportunity cost) so you can pick the tool that matches your risk tolerance."
+      ],
+      "sections": [
+        {
+          "id": "what-to-model",
+          "title": "What To Model (So You Do Not Fool Yourself)",
+          "paragraphs": [
+            "The payment you can actually afford matters more than the interest rate you prefer.",
+            "Opportunity cost is the hidden lever on retirement-account loans. If markets go up while your money is out, that is a cost.",
+            "For HELOCs, rate risk is the hidden lever. Model a higher rate scenario to stress test."
+          ]
+        },
+        {
+          "id": "execution-notes",
+          "title": "Execution Notes",
+          "paragraphs": [
+            "Pick a conservative expected return for opportunity cost. Optimism is how you rationalize bad leverage.",
+            "If you are using leverage for a down payment, pair it with a written downside plan and liquidity reserves.",
+            "Keep your documentation clean. Lenders and advisors care about the paper trail."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is 401(k) loan interest a real cost?",
+          "a": "The interest is paid back into the account, but the opportunity cost (missed market returns) can be real. This tool models both."
+        },
+        {
+          "q": "Is HELOC interest deductible?",
+          "a": "It depends on facts and use. This tool is a cash flow model. Ask your CPA for deductibility rules in your situation."
+        },
+        {
+          "q": "Which is safer?",
+          "a": "Safety depends on rate volatility, repayment flexibility, and your liquidity buffer. Use the stress inputs to see how fragile each option is for you."
+        }
+      ],
+      "related": [
+        {
+          "href": "/compare/solo-401k-loan-vs-heloc-down-payment",
+          "label": "Solo 401(k) Loan vs HELOC (down payment edge cases)"
+        }
+      ]
+    },
+    {
+      "id": "T10",
+      "slug": "installment-sale-tax-cashflow-planner",
+      "title": "Installment Sale Tax + Cashflow Planner",
+      "description": "Estimate annual payments, interest, taxable gain portion, and after-tax cash flow for an installment sale using a simple schedule you can share with your advisor.",
+      "badge": "Business Exit",
+      "opening": [
+        "Installment sales are not just tax strategies. They are cash flow strategies with tax consequences.",
+        "This planner helps you map a schedule: what you receive each year, what is taxed as gain, what is taxed as interest, and what net cash flow looks like after estimated taxes."
+      ],
+      "sections": [
+        {
+          "id": "how-to-read",
+          "title": "How To Read The Schedule",
+          "paragraphs": [
+            "Each year includes principal and interest. Principal contains a gain portion based on your gross profit percentage.",
+            "The gain portion is modeled at a capital gains rate. Interest is modeled at an ordinary income rate.",
+            "The schedule is an execution tool: it helps you plan cash and estimated taxes rather than guessing."
+          ]
+        },
+        {
+          "id": "failure-modes",
+          "title": "Common Failure Modes",
+          "paragraphs": [
+            "Modeling the tax but forgetting the buyer risk and collection risk.",
+            "No buffer for estimated taxes, then scrambling when cash arrives.",
+            "Ignoring how the sale interacts with other income in the same year."
+          ]
+        },
+        {
+          "id": "advisor-packet",
+          "title": "What To Hand Your CPA",
+          "paragraphs": [
+            "Sale price, basis, and the proposed payment schedule.",
+            "Your assumed tax rates and whether you expect other major income events.",
+            "A plan for how you will handle estimated taxes each year of the note."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is this the exact IRS installment sale calculation?",
+          "a": "It is a simplified planning model. Your CPA will apply the official forms and allocate items based on the final contract details."
+        },
+        {
+          "q": "Does this include state taxes?",
+          "a": "Yes, if you include state in the rates you enter. This tool uses the rates you provide."
+        },
+        {
+          "q": "Does this replace legal advice on contract terms?",
+          "a": "No. Buyer risk, security, and enforcement matter. Treat the schedule as the cash and tax layer of a broader exit plan."
+        }
+      ],
+      "related": [
+        {
+          "href": "/compare/installment-sale-vs-deferred-sales-trust-small-business-exit",
+          "label": "Installment Sale vs Deferred Sales Trust (exit edge cases)"
+        }
+      ]
     }
   ]
 }

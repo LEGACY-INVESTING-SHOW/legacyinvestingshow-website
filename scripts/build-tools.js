@@ -170,6 +170,10 @@ function toolWidget(tool) {
   if (tool.id === 'T04') return widgetAnnualizedIncome();
   if (tool.id === 'T05') return widgetHoursTracker();
   if (tool.id === 'T06') return widgetCostSegPayback();
+  if (tool.id === 'T07') return widgetIrmaaHeadroom();
+  if (tool.id === 'T08') return widgetQcdRothPlanner();
+  if (tool.id === 'T09') return widgetLoanComparator();
+  if (tool.id === 'T10') return widgetInstallmentSalePlanner();
   return `<div class="tool-card"><p>Tool widget not implemented.</p></div>`;
 }
 
@@ -1311,6 +1315,717 @@ function widgetCostSegPayback() {
             }
 
             document.getElementById('t06-calc').addEventListener('click', calculate);
+          })();
+        </script>`;
+}
+
+function widgetIrmaaHeadroom() {
+  return `<section class="tool-card" id="calculator" aria-label="IRMAA headroom and Roth conversion room planner">
+            <div class="tool-card__header">
+              <h2 class="tool-card__title">IRMAA Headroom Planner</h2>
+              <p class="tool-card__subtitle">Enter your baseline MAGI and the next IRMAA guardrail, then get conversion room with buffer.</p>
+            </div>
+
+            <div class="tool-grid">
+              <form class="tool-form" id="t07-form">
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t07-base">Projected baseline MAGI (before conversions)</label>
+                    <input id="t07-base" inputmode="decimal" type="text" placeholder="e.g. 168000">
+                    <div class="hint">Include pension, interest, dividends, capital gains, etc. Use conservative estimates.</div>
+                  </div>
+                  <div class="field">
+                    <label for="t07-thresh">Next IRMAA threshold (guardrail)</label>
+                    <input id="t07-thresh" inputmode="decimal" type="text" placeholder="e.g. 194000">
+                    <div class="hint">Thresholds vary by year and filing status. Enter the guardrail you care about.</div>
+                  </div>
+                </div>
+
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t07-buffer">Buffer under threshold</label>
+                    <input id="t07-buffer" inputmode="decimal" type="text" placeholder="e.g. 2000">
+                    <div class="hint">If you are close to the line, buffer reduces accidental crossings.</div>
+                  </div>
+                  <div class="field">
+                    <label for="t07-planned">Planned conversion (optional)</label>
+                    <input id="t07-planned" inputmode="decimal" type="text" placeholder="e.g. 15000">
+                    <div class="hint">Used to show whether your planned conversion crosses the guardrail.</div>
+                  </div>
+                </div>
+
+                <button type="button" class="tool-button" id="t07-calc">Calculate headroom</button>
+              </form>
+
+              <div class="tool-results" aria-live="polite">
+                <div class="results-kpis">
+                  <div class="kpi">
+                    <div class="kpi__label">Headroom (after buffer)</div>
+                    <div class="kpi__value kpi__value--good" id="t07-kpi-headroom">$0</div>
+                    <div class="kpi__meta">Threshold minus baseline minus buffer</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">Max conversion (guardrail)</div>
+                    <div class="kpi__value" id="t07-kpi-max">$0</div>
+                    <div class="kpi__meta">Directional ceiling</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">Planned conversion status</div>
+                    <div class="kpi__value" id="t07-kpi-status">N/A</div>
+                    <div class="kpi__meta" id="t07-kpi-statusmeta">Enter a planned conversion to test it.</div>
+                  </div>
+                </div>
+
+                <div class="results-table-wrap" role="region" aria-label="Scenario table">
+                  <table class="results-table">
+                    <thead>
+                      <tr>
+                        <th>Scenario</th>
+                        <th>Conversion</th>
+                        <th>Projected MAGI</th>
+                        <th>Guardrail</th>
+                        <th>Result</th>
+                      </tr>
+                    </thead>
+                    <tbody id="t07-rows"></tbody>
+                  </table>
+                </div>
+
+                <div class="results-note" id="t07-warning" style="display:none;"></div>
+                <div class="results-note results-note--alt">
+                  If avoiding the threshold costs you a valuable conversion, that can still be the right trade. This tool helps you see the ceiling so you decide intentionally.
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <script>
+          (function() {
+            function parseMoney(raw) {
+              if (raw == null) return 0;
+              const cleaned = String(raw).replace(/[^0-9.\\-]/g, '');
+              const num = Number(cleaned);
+              return Number.isFinite(num) ? num : 0;
+            }
+            function fmtUSD(n) {
+              const v = Number.isFinite(n) ? n : 0;
+              return v.toLocaleString(undefined, { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+            }
+
+            function rowHtml(name, conversion, magi, guardrail) {
+              const ok = magi <= guardrail;
+              return '<tr>' +
+                '<td data-label=\"Scenario\"><strong>' + name + '</strong></td>' +
+                '<td data-label=\"Conversion\">' + fmtUSD(conversion) + '</td>' +
+                '<td data-label=\"Projected MAGI\">' + fmtUSD(magi) + '</td>' +
+                '<td data-label=\"Guardrail\">' + fmtUSD(guardrail) + '</td>' +
+                '<td data-label=\"Result\">' + (ok ? 'Inside' : 'Over') + '</td>' +
+              '</tr>';
+            }
+
+            function calculate() {
+              const base = parseMoney(document.getElementById('t07-base').value);
+              const thresh = parseMoney(document.getElementById('t07-thresh').value);
+              const buffer = parseMoney(document.getElementById('t07-buffer').value);
+              const planned = parseMoney(document.getElementById('t07-planned').value);
+
+              const guardrail = Math.max(0, thresh - Math.max(0, buffer));
+              const headroom = Math.max(0, guardrail - Math.max(0, base));
+              const maxConv = headroom;
+
+              document.getElementById('t07-kpi-headroom').textContent = fmtUSD(headroom);
+              document.getElementById('t07-kpi-max').textContent = fmtUSD(maxConv);
+
+              const status = planned > 0 ? ((base + planned) <= guardrail ? 'Inside' : 'Over') : 'N/A';
+              const statusMeta = planned > 0 ? ('Projected MAGI: ' + fmtUSD(base + planned)) : 'Enter a planned conversion to test it.';
+              document.getElementById('t07-kpi-status').textContent = status;
+              document.getElementById('t07-kpi-statusmeta').textContent = statusMeta;
+
+              const tbody = document.getElementById('t07-rows');
+              tbody.innerHTML = '';
+              const half = headroom * 0.5;
+              const rows = [
+                { name: 'No conversion', conv: 0 },
+                { name: 'Half headroom', conv: half },
+                { name: 'Max inside guardrail', conv: headroom },
+                { name: 'Aggressive (over)', conv: headroom + Math.max(0, buffer) + 1 },
+              ];
+              rows.forEach((r) => {
+                tbody.insertAdjacentHTML('beforeend', rowHtml(r.name, r.conv, base + r.conv, guardrail));
+              });
+
+              const warn = document.getElementById('t07-warning');
+              const msgs = [];
+              if (thresh <= 0) msgs.push('Enter the IRMAA threshold you want to treat as a guardrail.');
+              if (base <= 0) msgs.push('Enter a projected baseline MAGI to compute headroom.');
+              if (base > guardrail && guardrail > 0) msgs.push('Your baseline is already over the guardrail. Conversions may still be beneficial, but the goal changes.');
+              warn.style.display = msgs.length ? 'block' : 'none';
+              warn.textContent = msgs.join(' ');
+            }
+
+            document.getElementById('t07-calc').addEventListener('click', calculate);
+          })();
+        </script>`;
+}
+
+function widgetQcdRothPlanner() {
+  return `<section class="tool-card" id="calculator" aria-label="QCD versus Roth conversion planner">
+            <div class="tool-card__header">
+              <h2 class="tool-card__title">QCD + Conversion Room Planner</h2>
+              <p class="tool-card__subtitle">Estimate taxable RMD after QCD and conversion room inside an IRMAA guardrail you enter.</p>
+            </div>
+
+            <div class="tool-grid">
+              <form class="tool-form" id="t08-form">
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t08-base">Baseline MAGI (before RMD/QCD/conversions)</label>
+                    <input id="t08-base" inputmode="decimal" type="text" placeholder="e.g. 98000">
+                  </div>
+                  <div class="field">
+                    <label for="t08-irmaa">IRMAA threshold guardrail</label>
+                    <input id="t08-irmaa" inputmode="decimal" type="text" placeholder="e.g. 103000">
+                    <div class="hint">Enter the next threshold you want to avoid (year + filing status dependent).</div>
+                  </div>
+                </div>
+
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t08-rmd">RMD amount</label>
+                    <input id="t08-rmd" inputmode="decimal" type="text" placeholder="e.g. 42000">
+                  </div>
+                  <div class="field">
+                    <label for="t08-qcd">Planned QCD amount</label>
+                    <input id="t08-qcd" inputmode="decimal" type="text" placeholder="e.g. 15000">
+                    <div class="hint">QCD can reduce taxable distribution income depending on mechanics.</div>
+                  </div>
+                </div>
+
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t08-buffer">Buffer under threshold</label>
+                    <input id="t08-buffer" inputmode="decimal" type="text" placeholder="e.g. 1500">
+                  </div>
+                  <div class="field">
+                    <label for="t08-conv">Planned Roth conversion</label>
+                    <input id="t08-conv" inputmode="decimal" type="text" placeholder="e.g. 8000">
+                  </div>
+                </div>
+
+                <button type="button" class="tool-button" id="t08-calc">Calculate conversion room</button>
+              </form>
+
+              <div class="tool-results" aria-live="polite">
+                <div class="results-kpis">
+                  <div class="kpi">
+                    <div class="kpi__label">Taxable RMD (after QCD)</div>
+                    <div class="kpi__value" id="t08-kpi-rmd">$0</div>
+                    <div class="kpi__meta">Planning estimate</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">Conversion room (guardrail)</div>
+                    <div class="kpi__value kpi__value--good" id="t08-kpi-room">$0</div>
+                    <div class="kpi__meta">After buffer</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">Projected MAGI (with conversion)</div>
+                    <div class="kpi__value" id="t08-kpi-magi">$0</div>
+                    <div class="kpi__meta" id="t08-kpi-status">Inside</div>
+                  </div>
+                </div>
+
+                <div class="results-table-wrap" role="region" aria-label="Scenarios table">
+                  <table class="results-table">
+                    <thead>
+                      <tr>
+                        <th>Scenario</th>
+                        <th>QCD</th>
+                        <th>Conversion</th>
+                        <th>Projected MAGI</th>
+                        <th>Result</th>
+                      </tr>
+                    </thead>
+                    <tbody id="t08-rows"></tbody>
+                  </table>
+                </div>
+
+                <div class="results-note" id="t08-warning" style="display:none;"></div>
+                <div class="results-note results-note--alt">
+                  Practical rule: decide your guardrail early, then execute monthly. The \"right\" sequence is the one you can actually follow without surprises.
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <script>
+          (function() {
+            function parseMoney(raw) {
+              if (raw == null) return 0;
+              const cleaned = String(raw).replace(/[^0-9.\\-]/g, '');
+              const num = Number(cleaned);
+              return Number.isFinite(num) ? num : 0;
+            }
+            function fmtUSD(n) {
+              const v = Number.isFinite(n) ? n : 0;
+              return v.toLocaleString(undefined, { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+            }
+
+            function rowHtml(name, qcd, conv, magi, guardrail) {
+              const ok = magi <= guardrail;
+              return '<tr>' +
+                '<td data-label=\"Scenario\"><strong>' + name + '</strong></td>' +
+                '<td data-label=\"QCD\">' + fmtUSD(qcd) + '</td>' +
+                '<td data-label=\"Conversion\">' + fmtUSD(conv) + '</td>' +
+                '<td data-label=\"Projected MAGI\">' + fmtUSD(magi) + '</td>' +
+                '<td data-label=\"Result\">' + (ok ? 'Inside' : 'Over') + '</td>' +
+              '</tr>';
+            }
+
+            function calculate() {
+              const base = parseMoney(document.getElementById('t08-base').value);
+              const irmaa = parseMoney(document.getElementById('t08-irmaa').value);
+              const rmd = parseMoney(document.getElementById('t08-rmd').value);
+              const qcd = parseMoney(document.getElementById('t08-qcd').value);
+              const buffer = parseMoney(document.getElementById('t08-buffer').value);
+              const conv = parseMoney(document.getElementById('t08-conv').value);
+
+              const taxableRmd = Math.max(0, rmd - qcd);
+              const guardrail = Math.max(0, irmaa - Math.max(0, buffer));
+              const room = Math.max(0, guardrail - (Math.max(0, base) + taxableRmd));
+              const projectedMagi = Math.max(0, base) + taxableRmd + Math.max(0, conv);
+
+              document.getElementById('t08-kpi-rmd').textContent = fmtUSD(taxableRmd);
+              document.getElementById('t08-kpi-room').textContent = fmtUSD(room);
+              document.getElementById('t08-kpi-magi').textContent = fmtUSD(projectedMagi);
+              document.getElementById('t08-kpi-status').textContent = (guardrail > 0 && projectedMagi <= guardrail) ? 'Inside guardrail' : 'Over guardrail';
+
+              const tbody = document.getElementById('t08-rows');
+              tbody.innerHTML = '';
+              const maxConv = room;
+              const rows = [
+                { name: 'No QCD', qcd: 0, conv: conv },
+                { name: 'Your plan', qcd: qcd, conv: conv },
+                { name: 'Max conversion inside guardrail', qcd: qcd, conv: maxConv },
+              ];
+              rows.forEach((r) => {
+                const trRmd = Math.max(0, rmd - r.qcd);
+                const magi = Math.max(0, base) + trRmd + Math.max(0, r.conv);
+                tbody.insertAdjacentHTML('beforeend', rowHtml(r.name, r.qcd, r.conv, magi, guardrail));
+              });
+
+              const warn = document.getElementById('t08-warning');
+              const msgs = [];
+              if (irmaa <= 0) msgs.push('Enter an IRMAA guardrail threshold (next bracket you care about).');
+              if (rmd <= 0) msgs.push('Enter your RMD amount to model taxable RMD after QCD.');
+              if (qcd > rmd && rmd > 0) msgs.push('QCD exceeds RMD in this model. Confirm mechanics with your CPA.');
+              if (base + taxableRmd > guardrail && guardrail > 0) msgs.push('Baseline + taxable RMD already exceeds the guardrail. The decision shifts to whether conversion is still worth it.');
+              warn.style.display = msgs.length ? 'block' : 'none';
+              warn.textContent = msgs.join(' ');
+            }
+
+            document.getElementById('t08-calc').addEventListener('click', calculate);
+          })();
+        </script>`;
+}
+
+function widgetLoanComparator() {
+  return `<section class="tool-card" id="calculator" aria-label="Solo 401k loan vs HELOC calculator">
+            <div class="tool-card__header">
+              <h2 class="tool-card__title">Loan Comparator (HELOC vs 401k Loan)</h2>
+              <p class="tool-card__subtitle">Compare payment, interest cost, and opportunity cost using conservative assumptions.</p>
+            </div>
+
+            <div class="tool-grid">
+              <form class="tool-form" id="t09-form">
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t09-amt">Amount borrowed</label>
+                    <input id="t09-amt" inputmode="decimal" type="text" placeholder="e.g. 60000">
+                  </div>
+                  <div class="field">
+                    <label for="t09-term">Term (years)</label>
+                    <select id="t09-term">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5" selected>5</option>
+                      <option value="7">7</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t09-helocRate">HELOC rate (APR %)</label>
+                    <input id="t09-helocRate" inputmode="decimal" type="text" placeholder="e.g. 9.5">
+                  </div>
+                  <div class="field">
+                    <label for="t09-401kRate">401(k) loan rate (% paid to self)</label>
+                    <input id="t09-401kRate" inputmode="decimal" type="text" placeholder="e.g. 9.0">
+                  </div>
+                </div>
+
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t09-return">Expected market return (annual %)</label>
+                    <input id="t09-return" inputmode="decimal" type="text" placeholder="e.g. 7">
+                    <div class="hint">Use a conservative number. Over-optimism hides leverage risk.</div>
+                  </div>
+                  <div class="field">
+                    <label for="t09-stressRate">Stress test: HELOC rate bump</label>
+                    <select id="t09-stressRate">
+                      <option value="0">+0%</option>
+                      <option value="0.02">+2%</option>
+                      <option value="0.04">+4%</option>
+                    </select>
+                    <div class="hint">Variable rates are a fragility lever. Stress test it.</div>
+                  </div>
+                </div>
+
+                <button type="button" class="tool-button" id="t09-calc">Compare costs</button>
+              </form>
+
+              <div class="tool-results" aria-live="polite">
+                <div class="results-kpis">
+                  <div class="kpi">
+                    <div class="kpi__label">HELOC payment (est.)</div>
+                    <div class="kpi__value" id="t09-kpi-helocPay">$0</div>
+                    <div class="kpi__meta" id="t09-kpi-helocInt">Total interest: $0</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">401(k) loan payment (est.)</div>
+                    <div class="kpi__value" id="t09-kpi-401kPay">$0</div>
+                    <div class="kpi__meta" id="t09-kpi-401kInt">Interest credited: $0</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">Opportunity cost (est.)</div>
+                    <div class="kpi__value kpi__value--good" id="t09-kpi-opp">$0</div>
+                    <div class="kpi__meta" id="t09-kpi-net">Net drag estimate</div>
+                  </div>
+                </div>
+
+                <div class="results-table-wrap" role="region" aria-label="Stress scenarios table">
+                  <table class="results-table">
+                    <thead>
+                      <tr>
+                        <th>Scenario</th>
+                        <th>HELOC rate</th>
+                        <th>HELOC interest</th>
+                        <th>Opp. cost</th>
+                        <th>Quick read</th>
+                      </tr>
+                    </thead>
+                    <tbody id="t09-rows"></tbody>
+                  </table>
+                </div>
+
+                <div class="results-note" id="t09-warning" style="display:none;"></div>
+                <div class="results-note results-note--alt">
+                  This is a planning model. Taxes, deductibility, and plan rules can matter. The win is choosing the option that stays stable when the timeline slips.
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <script>
+          (function() {
+            function parseMoney(raw) {
+              if (raw == null) return 0;
+              const cleaned = String(raw).replace(/[^0-9.\\-]/g, '');
+              const num = Number(cleaned);
+              return Number.isFinite(num) ? num : 0;
+            }
+            function parsePct(raw) {
+              const cleaned = String(raw || '').replace(/[^0-9.\\-]/g, '');
+              const num = Number(cleaned);
+              if (!Number.isFinite(num)) return 0;
+              return Math.max(0, num) / 100;
+            }
+            function fmtUSD(n) {
+              const v = Number.isFinite(n) ? n : 0;
+              return v.toLocaleString(undefined, { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+            }
+
+            function payment(principal, annualRate, years) {
+              const n = Math.max(1, Math.round(years * 12));
+              const r = annualRate / 12;
+              if (r === 0) return principal / n;
+              return principal * r / (1 - Math.pow(1 + r, -n));
+            }
+
+            function totals(principal, annualRate, years) {
+              const n = Math.max(1, Math.round(years * 12));
+              const pmt = payment(principal, annualRate, years);
+              const totalPaid = pmt * n;
+              const interest = Math.max(0, totalPaid - principal);
+              return { pmt, interest };
+            }
+
+            function futureValue(principal, annualReturn, years) {
+              const r = annualReturn;
+              return principal * Math.pow(1 + r, years);
+            }
+
+            function calculate() {
+              const amt = parseMoney(document.getElementById('t09-amt').value);
+              const years = Number(document.getElementById('t09-term').value) || 5;
+              const helocRate = parsePct(document.getElementById('t09-helocRate').value);
+              const kRate = parsePct(document.getElementById('t09-401kRate').value);
+              const ret = parsePct(document.getElementById('t09-return').value);
+              const stressBump = Number(document.getElementById('t09-stressRate').value) || 0;
+
+              const heloc = totals(amt, helocRate, years);
+              const kloan = totals(amt, kRate, years);
+
+              const fv = futureValue(amt, ret, years);
+              const missedGrowth = Math.max(0, fv - amt);
+              const netDrag = Math.max(0, missedGrowth - kloan.interest);
+
+              document.getElementById('t09-kpi-helocPay').textContent = fmtUSD(heloc.pmt);
+              document.getElementById('t09-kpi-helocInt').textContent = 'Total interest: ' + fmtUSD(heloc.interest);
+              document.getElementById('t09-kpi-401kPay').textContent = fmtUSD(kloan.pmt);
+              document.getElementById('t09-kpi-401kInt').textContent = 'Interest credited: ' + fmtUSD(kloan.interest);
+              document.getElementById('t09-kpi-opp').textContent = fmtUSD(missedGrowth);
+              document.getElementById('t09-kpi-net').textContent = 'Net drag est.: ' + fmtUSD(netDrag);
+
+              const tbody = document.getElementById('t09-rows');
+              tbody.innerHTML = '';
+              const baseRow = { name: 'Base', rate: helocRate };
+              const stressRow = { name: 'Stress', rate: Math.max(0, helocRate + stressBump) };
+              [baseRow, stressRow].forEach((s) => {
+                const t = totals(amt, s.rate, years);
+                const quick = (t.interest > netDrag && netDrag > 0) ? '401(k) loan looks cheaper (econ)' : 'HELOC may be cheaper (cash)';
+                const tr = document.createElement('tr');
+                tr.innerHTML =
+                  '<td data-label=\"Scenario\"><strong>' + s.name + '</strong></td>' +
+                  '<td data-label=\"HELOC rate\">' + Math.round(s.rate * 1000) / 10 + '%</td>' +
+                  '<td data-label=\"HELOC interest\">' + fmtUSD(t.interest) + '</td>' +
+                  '<td data-label=\"Opp. cost\">' + fmtUSD(missedGrowth) + '</td>' +
+                  '<td data-label=\"Quick read\">' + quick + '</td>';
+                tbody.appendChild(tr);
+              });
+
+              const warn = document.getElementById('t09-warning');
+              const msgs = [];
+              if (amt <= 0) msgs.push('Enter an amount borrowed.');
+              if (helocRate <= 0) msgs.push('Enter a HELOC rate to model cash interest cost.');
+              if (kRate <= 0) msgs.push('Enter a 401(k) loan rate to model interest credited.');
+              if (ret <= 0) msgs.push('Enter an expected market return to model opportunity cost.');
+              warn.style.display = msgs.length ? 'block' : 'none';
+              warn.textContent = msgs.join(' ');
+            }
+
+            document.getElementById('t09-calc').addEventListener('click', calculate);
+          })();
+        </script>`;
+}
+
+function widgetInstallmentSalePlanner() {
+  return `<section class="tool-card" id="calculator" aria-label="Installment sale tax and cashflow planner">
+            <div class="tool-card__header">
+              <h2 class="tool-card__title">Installment Sale Schedule (Planning)</h2>
+              <p class="tool-card__subtitle">Build a simple annual schedule: principal, interest, taxable gain, estimated tax, net cash.</p>
+            </div>
+
+            <div class="tool-grid tool-grid--stack">
+              <form class="tool-form" id="t10-form">
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t10-price">Sale price</label>
+                    <input id="t10-price" inputmode="decimal" type="text" placeholder="e.g. 1200000">
+                  </div>
+                  <div class="field">
+                    <label for="t10-basis">Tax basis</label>
+                    <input id="t10-basis" inputmode="decimal" type="text" placeholder="e.g. 350000">
+                  </div>
+                </div>
+
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t10-down">Down payment (year 0)</label>
+                    <input id="t10-down" inputmode="decimal" type="text" placeholder="e.g. 200000">
+                  </div>
+                  <div class="field">
+                    <label for="t10-years">Note term (years)</label>
+                    <select id="t10-years">
+                      <option value="3">3</option>
+                      <option value="5" selected>5</option>
+                      <option value="7">7</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t10-rate">Note interest rate (annual %)</label>
+                    <input id="t10-rate" inputmode="decimal" type="text" placeholder="e.g. 7.0">
+                  </div>
+                  <div class="field">
+                    <label for="t10-cap">Capital gains rate (%)</label>
+                    <input id="t10-cap" inputmode="decimal" type="text" placeholder="e.g. 20">
+                  </div>
+                </div>
+
+                <div class="field-row">
+                  <div class="field">
+                    <label for="t10-intTax">Interest tax rate (%)</label>
+                    <input id="t10-intTax" inputmode="decimal" type="text" placeholder="e.g. 32">
+                    <div class="hint">Enter your planning rate for interest income (ordinary). Include state if desired.</div>
+                  </div>
+                  <div class="field">
+                    <label for="t10-state">Optional: add state to both rates (%)</label>
+                    <input id="t10-state" inputmode="decimal" type="text" placeholder="e.g. 5">
+                    <div class="hint">Simple additive planning assumption.</div>
+                  </div>
+                </div>
+
+                <button type="button" class="tool-button" id="t10-calc">Build schedule</button>
+              </form>
+
+              <div class="tool-results" aria-live="polite">
+                <div class="results-kpis">
+                  <div class="kpi">
+                    <div class="kpi__label">Gross profit %</div>
+                    <div class="kpi__value" id="t10-kpi-gpp">0%</div>
+                    <div class="kpi__meta">Gain / sale price</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">Annual payment (note)</div>
+                    <div class="kpi__value" id="t10-kpi-pay">$0</div>
+                    <div class="kpi__meta">Excludes down payment</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">Total tax (est.)</div>
+                    <div class="kpi__value kpi__value--good" id="t10-kpi-tax">$0</div>
+                    <div class="kpi__meta" id="t10-kpi-net">Net cash estimate</div>
+                  </div>
+                </div>
+
+                <div class="results-table-wrap" role="region" aria-label="Installment schedule table">
+                  <table class="results-table">
+                    <thead>
+                      <tr>
+                        <th>Year</th>
+                        <th>Payment</th>
+                        <th>Principal</th>
+                        <th>Interest</th>
+                        <th>Tax (est.)</th>
+                        <th>Net cash</th>
+                      </tr>
+                    </thead>
+                    <tbody id="t10-rows"></tbody>
+                  </table>
+                </div>
+
+                <div class="results-note" id="t10-warning" style="display:none;"></div>
+                <div class="results-note results-note--alt">
+                  This is a planning schedule. Buyer risk, contract terms, and IRS forms matter. Use this to plan cash and estimated taxes, then validate with your CPA.
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <script>
+          (function() {
+            function parseMoney(raw) {
+              if (raw == null) return 0;
+              const cleaned = String(raw).replace(/[^0-9.\\-]/g, '');
+              const num = Number(cleaned);
+              return Number.isFinite(num) ? num : 0;
+            }
+            function parsePct(raw) {
+              const cleaned = String(raw || '').replace(/[^0-9.\\-]/g, '');
+              const num = Number(cleaned);
+              if (!Number.isFinite(num)) return 0;
+              return Math.max(0, num) / 100;
+            }
+            function fmtUSD(n) {
+              const v = Number.isFinite(n) ? n : 0;
+              return v.toLocaleString(undefined, { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+            }
+
+            function annualPayment(principal, annualRate, years) {
+              const n = Math.max(1, Math.round(years));
+              const r = annualRate;
+              if (r === 0) return principal / n;
+              return principal * r / (1 - Math.pow(1 + r, -n));
+            }
+
+            function calculate() {
+              const price = parseMoney(document.getElementById('t10-price').value);
+              const basis = parseMoney(document.getElementById('t10-basis').value);
+              const down = parseMoney(document.getElementById('t10-down').value);
+              const years = Number(document.getElementById('t10-years').value) || 5;
+              const rate = parsePct(document.getElementById('t10-rate').value);
+              const cap = parsePct(document.getElementById('t10-cap').value);
+              const intTax = parsePct(document.getElementById('t10-intTax').value);
+              const state = parsePct(document.getElementById('t10-state').value);
+
+              const totalGain = Math.max(0, price - basis);
+              const gpp = price > 0 ? Math.min(1, Math.max(0, totalGain / price)) : 0;
+              const notePrincipal = Math.max(0, price - down);
+              const pay = annualPayment(notePrincipal, rate, years);
+
+              const capRate = Math.min(0.9, cap + state);
+              const intRate = Math.min(0.9, intTax + state);
+
+              document.getElementById('t10-kpi-gpp').textContent = Math.round(gpp * 1000) / 10 + '%';
+              document.getElementById('t10-kpi-pay').textContent = fmtUSD(pay);
+
+              const tbody = document.getElementById('t10-rows');
+              tbody.innerHTML = '';
+
+              let balance = notePrincipal;
+              let totalTax = 0;
+              let totalNet = 0;
+
+              function addRow(yearLabel, payment, principal, interest) {
+                const gainPart = principal * gpp;
+                const tax = gainPart * capRate + interest * intRate;
+                const net = payment - tax;
+                totalTax += tax;
+                totalNet += net;
+                const tr = document.createElement('tr');
+                tr.innerHTML =
+                  '<td data-label=\"Year\"><strong>' + yearLabel + '</strong></td>' +
+                  '<td data-label=\"Payment\">' + fmtUSD(payment) + '</td>' +
+                  '<td data-label=\"Principal\">' + fmtUSD(principal) + '</td>' +
+                  '<td data-label=\"Interest\">' + fmtUSD(interest) + '</td>' +
+                  '<td data-label=\"Tax (est.)\">' + fmtUSD(tax) + '</td>' +
+                  '<td data-label=\"Net cash\">' + fmtUSD(net) + '</td>';
+                tbody.appendChild(tr);
+              }
+
+              // Year 0 down payment treated as principal payment.
+              if (down > 0) {
+                addRow('0 (down)', down, down, 0);
+              }
+
+              for (let y = 1; y <= years; y++) {
+                const interest = balance * rate;
+                const principal = Math.min(balance, Math.max(0, pay - interest));
+                const payment = principal + interest;
+                addRow(String(y), payment, principal, interest);
+                balance = Math.max(0, balance - principal);
+              }
+
+              document.getElementById('t10-kpi-tax').textContent = fmtUSD(totalTax);
+              document.getElementById('t10-kpi-net').textContent = 'Net cash est.: ' + fmtUSD(totalNet);
+
+              const warn = document.getElementById('t10-warning');
+              const msgs = [];
+              if (price <= 0) msgs.push('Enter a sale price.');
+              if (basis <= 0) msgs.push('Enter a basis to compute gross profit percentage.');
+              if (basis > price && price > 0) msgs.push('Basis exceeds sale price in this model. Confirm inputs.');
+              if (notePrincipal === 0) msgs.push('Down payment equals sale price. No note schedule to build.');
+              warn.style.display = msgs.length ? 'block' : 'none';
+              warn.textContent = msgs.join(' ');
+            }
+
+            document.getElementById('t10-calc').addEventListener('click', calculate);
           })();
         </script>`;
 }

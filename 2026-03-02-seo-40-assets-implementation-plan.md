@@ -173,6 +173,67 @@ Outputs:
 - Net first-year benefit after fee and fee-multiple
 - Sensitivity table (conservative/base/aggressive)
 
+### T07: IRMAA Headroom + Roth Conversion Room Planner
+
+Primary intent:
+- Retirees who need an execution ceiling for conversions using an IRMAA guardrail that changes by year and filing status.
+
+Inputs:
+- Baseline projected MAGI (before conversions)
+- IRMAA threshold guardrail (user-entered)
+- Buffer (optional)
+- Planned conversion cadence / remaining conversions this year
+
+Outputs:
+- Headroom and max conversion that stays inside the guardrail
+- Scenario table (0%, 50%, 100% of headroom, plus buffer)
+
+### T08: QCD vs Roth Conversion Planner (RMD + IRMAA)
+
+Primary intent:
+- Retirees balancing RMDs, QCD intent, and Roth conversion goals without accidental IRMAA bracket crossings.
+
+Inputs:
+- Baseline MAGI (before RMD/QCD/conversions)
+- RMD amount
+- Planned QCD amount
+- IRMAA threshold guardrail (user-entered) + buffer
+
+Outputs:
+- Taxable RMD after QCD (planning)
+- Conversion room inside the IRMAA guardrail
+- Sequencing playbook notes
+
+### T09: Solo 401(k) Loan vs HELOC Calculator
+
+Primary intent:
+- Down payment funding decisions that require cash flow and risk visibility (not vibes).
+
+Inputs:
+- Amount borrowed / down payment funding need
+- HELOC rate and term assumptions
+- Solo 401(k) loan rate and term assumptions
+- Expected market return (opportunity cost)
+
+Outputs:
+- Payment and total-interest comparison
+- Estimated opportunity cost (planning)
+- Stress test view (higher HELOC rate, lower market return)
+
+### T10: Installment Sale Tax + Cashflow Planner
+
+Primary intent:
+- Small business exits where the schedule matters: annual payment, interest, taxable gain, and after-tax cash flow.
+
+Inputs:
+- Sale price, basis, down payment
+- Term years, note rate
+- Capital gains rate, ordinary rate (and state if included)
+
+Outputs:
+- Annual schedule with principal, interest, taxable gain portion, estimated tax, and net cash
+- Advisor packet checklist for execution
+
 ## QA Checklist (Applies to Every Tool Page)
 
 - Mobile-first: calculators usable on 360px wide screens.
