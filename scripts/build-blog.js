@@ -575,8 +575,8 @@ function generateBlogIndex(posts) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Primary Meta Tags -->
-    <title>Blog | Legacy Investing Show</title>
-    <meta name="title" content="Blog | Legacy Investing Show">
+    <title>Investing Blog & Case Studies | Legacy Investing Show</title>
+    <meta name="title" content="Investing Blog & Case Studies | Legacy Investing Show">
     <meta name="description" content="Wealth-building strategies, investing insights, and financial freedom tips.">
     <meta name="keywords" content="wealth building, investing, real estate, financial freedom">
     <meta name="author" content="Preston Seo">
@@ -588,7 +588,7 @@ function generateBlogIndex(posts) {
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.legacyinvestingshow.com/blog/">
-    <meta property="og:title" content="Blog | Legacy Investing Show">
+    <meta property="og:title" content="Investing Blog & Case Studies | Legacy Investing Show">
     <meta property="og:description" content="Wealth-building strategies, investing insights, and financial freedom tips.">
     <meta property="og:image" content="https://www.legacyinvestingshow.com/assets/images/og-blog.jpg">
     <meta property="og:site_name" content="Legacy Investing Show">
@@ -596,7 +596,7 @@ function generateBlogIndex(posts) {
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@thelegacyshow">
-    <meta name="twitter:title" content="Blog | Legacy Investing Show">
+    <meta name="twitter:title" content="Investing Blog & Case Studies | Legacy Investing Show">
     <meta name="twitter:description" content="Wealth-building strategies, investing insights, and financial freedom tips.">
     <meta name="twitter:image" content="https://www.legacyinvestingshow.com/assets/images/og-blog.jpg">
 
