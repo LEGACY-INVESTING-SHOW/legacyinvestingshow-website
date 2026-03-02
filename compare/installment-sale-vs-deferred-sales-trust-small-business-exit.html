@@ -378,6 +378,36 @@
             margin: 0 0.5rem;
             color: #9ca3af;
         }
+        .related-strategies {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .related-strategies li {
+            margin-bottom: 0.75rem;
+        }
+        .related-strategies a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #374151;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+        .related-strategies a:hover {
+            color: #059669;
+        }
+        .related-strategies svg {
+            width: 1rem;
+            height: 1rem;
+            flex-shrink: 0;
+            color: #9ca3af;
+        }
+        .related-strategies a:hover svg {
+            color: #059669;
+        }
+
     </style>
 </head>
 <body class="bg-cream">
@@ -733,30 +763,24 @@
                         </ul>
                     </div>
 
-                    <div class="sidebar-card">
+                    <div class="sidebar-card" style="border-left:3px solid #059669;">
                         <h3 class="sidebar-card__title">Related Resources</h3>
                         <ul class="related-strategies">
                             <li>
                 <a href="/blog/business-succession-planning">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M9 18l6-6-6-6"/>
-                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0;"><path d="M9 18l6-6-6-6"/></svg>
                     Business Succession Planning
                 </a>
             </li>
 <li>
                 <a href="/blog/capital-gains-tax-for-small-business-owners">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M9 18l6-6-6-6"/>
-                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0;"><path d="M9 18l6-6-6-6"/></svg>
                     Capital Gains for Owners
                 </a>
             </li>
 <li>
                 <a href="/blog/tax-strategy-for-consultants">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M9 18l6-6-6-6"/>
-                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0;"><path d="M9 18l6-6-6-6"/></svg>
                     Tax Strategy for Consultants
                 </a>
             </li>
