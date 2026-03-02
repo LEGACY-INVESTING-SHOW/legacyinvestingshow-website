@@ -47,7 +47,19 @@ function buildSEOTitle(rawTitle) {
 }
 
 function bestText(page) {
+  if (page && page.quickVerdict) return String(page.quickVerdict).trim();
   return page.winnerLabel ? `${page.winnerLabel}.` : 'Scenario-dependent.';
+}
+
+function renderParagraphs(paragraphs = []) {
+  if (!Array.isArray(paragraphs) || paragraphs.length === 0) return '';
+  return paragraphs.map((p) => `<p>${esc(p)}</p>`).join('\n');
+}
+
+function decisionStepsFor(page) {
+  const steps = page && Array.isArray(page.preDecisionSteps) ? page.preDecisionSteps : [];
+  if (steps.length > 0) return steps;
+  return decisionPlaybookItems(page);
 }
 
 function scoreSideFromBetter(betterText, side) {
@@ -260,11 +272,11 @@ function advisorPacketItems(page) {
 
 function decisionPlaybookItems(page) {
   return [
-    `Step 1: Define your primary objective first (cash flow, tax liability, liquidity, audit defensibility, or admin simplicity).`,
-    `Step 2: Validate qualification gates for both ${page.optionAName} and ${page.optionBName} before comparing dollar outcomes.`,
-    'Step 3: Build a baseline model and at least two stress scenarios (conservative and adverse).',
-    'Step 4: Score each option across decision factors, then pressure-test the top option against edge cases.',
-    'Step 5: Select execution path and documentation standard before year-end, not during filing season.',
+    `Define your primary objective (cash flow, tax liability, liquidity, risk control, or simplicity).`,
+    `Confirm you actually qualify for ${page.optionAName} and ${page.optionBName} before you compare dollars.`,
+    'Build a baseline model and at least two stress scenarios.',
+    'Score tradeoffs, then pressure-test the likely winner against edge cases and failure modes.',
+    'Commit to the execution process before year end and keep records as you go.',
   ];
 }
 
@@ -311,6 +323,8 @@ function renderPage(page) {
   const canonical = `https://www.legacyinvestingshow.com/compare/${page.slug}`;
   const { aTotal, bTotal } = computeTotals(page);
   const ninetyDay = normalizeChecklist(page.checklist || []);
+  const openingHtml = renderParagraphs(page.opening || []);
+  const steps = decisionStepsFor(page);
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -821,13 +835,15 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
             <div class="container-custom content-grid">
                 <article class="prose-content">
                     <h2 id="executive-summary">Executive Summary</h2>
+                    ${openingHtml}
                     <div class="compare-note"><strong>Bottom line:</strong> ${esc(page.intro)}</div>
                     <p><strong>${esc(page.optionAName)}</strong> tends to win when ${esc(page.whenA)}</p>
                     <p><strong>${esc(page.optionBName)}</strong> tends to win when ${esc(page.whenB)}</p>
-                    <p>This guide is intentionally built for edge-case implementation decisions, not generic "best strategy" takes. The objective is to help you choose the option that survives real execution constraints and advisor review, then document that choice in an audit-defensible way.</p>
+                    <div class="compare-note" style="margin-top: 1rem;"><strong>Common mistake:</strong> ${esc(page.commonMistake || 'Forcing the facts to match the strategy after the year is over.')}</div>
+                    <p>This page is written like a playbook. Use it to make the decision early, set guardrails, and keep your documentation clean while you execute.</p>
 
                     <h2 id="comparison-matrix">How This Compares to Alternatives</h2>
-                    <p>The table below scores each decision factor and adds point values to force tradeoff clarity. Scores are directional only; your facts still control final implementation.</p>
+                    <p>The table below forces tradeoffs. The score is directional, not a guarantee. Your facts and your documentation decide what is actually defensible.</p>
                     <div class="table-wrap">
                         <table class="compare-table">
                             <thead>
@@ -855,9 +871,9 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
                     </div>
 
                     <h2 id="decision-framework">Decision Framework (Execution-First)</h2>
-                    <p>Most failures happen because teams jump directly from idea to filing and skip method design. Run this sequence before implementation:</p>
+                    <p>${esc(page.decisionFrameworkLead || 'This only works when execution is clean. Run this sequence before you commit.')}</p>
                     <ol>
-                        ${decisionPlaybookItems(page).map((item) => `<li>${esc(item)}</li>`).join('')}
+                        ${steps.map((item) => `<li>${esc(item)}</li>`).join('')}
                     </ol>
 
                     <h2 id="worked-example">Worked Example (Scenario Model)</h2>
@@ -1004,6 +1020,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
                             <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                     </a>
+                    <p style="margin: 1.25rem 0 0; color: #9ca3af; font-size: 0.85rem; line-height: 1.6;">Educational content only. Results vary based on your facts. Always consult a qualified tax professional before making decisions.</p>
                 </div>
             </div>
         </section>
@@ -1240,7 +1257,8 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
         <section class="library-hero">
             <div class="container-custom">
                 <h1>Edge-Case Comparison Playbooks</h1>
-                <p>This library is built for decisions where generic "X is better than Y" content fails. Every page includes a scored decision matrix, scenario modeling, documentation standards, failure controls, and an execution plan you can use with your CPA/advisor.</p>
+                <p>If you make good money but still feel like you are getting crushed, it is usually because the big decisions are being made on half the math. Taxes, cash flow, and execution all hit at once. These pages help you run the full model.</p>
+                <p>Each comparison includes a scored tradeoff table, a worked scenario, the documentation standard, the failure modes, and a 90-day plan you can hand to your CPA or advisor.</p>
             </div>
         </section>
 
@@ -1251,22 +1269,22 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
                     <article class="how-step">
                         <span class="how-step__num">1</span>
                         <h3 style="font-size:1rem; color:#111827; margin:0 0 0.4rem;">Clarify the objective</h3>
-                        <p style="margin:0; color:#4b5563; font-size:0.93rem;">Define whether your priority is tax reduction, cash flow, liquidity, operational simplicity, or risk control.</p>
+                        <p style="margin:0; color:#4b5563; font-size:0.93rem;">Pick one primary objective first: lower tax, better cash flow, more liquidity, or simpler execution.</p>
                     </article>
                     <article class="how-step">
                         <span class="how-step__num">2</span>
                         <h3 style="font-size:1rem; color:#111827; margin:0 0 0.4rem;">Model both paths</h3>
-                        <p style="margin:0; color:#4b5563; font-size:0.93rem;">Use the comparison matrix and worked examples to identify practical winners under your assumptions.</p>
+                        <p style="margin:0; color:#4b5563; font-size:0.93rem;">Run the matrix and the scenario model. Use conservative assumptions. No fantasy numbers.</p>
                     </article>
                     <article class="how-step">
                         <span class="how-step__num">3</span>
                         <h3 style="font-size:1rem; color:#111827; margin:0 0 0.4rem;">Build controls</h3>
-                        <p style="margin:0; color:#4b5563; font-size:0.93rem;">Adopt the documentation and failure-mitigation sections before implementation, not after filing issues appear.</p>
+                        <p style="margin:0; color:#4b5563; font-size:0.93rem;">Set the documentation standard and guardrails before you execute. Year-end scrambling is where people get hurt.</p>
                     </article>
                     <article class="how-step">
                         <span class="how-step__num">4</span>
                         <h3 style="font-size:1rem; color:#111827; margin:0 0 0.4rem;">Review annually</h3>
-                        <p style="margin:0; color:#4b5563; font-size:0.93rem;">Re-score annually as income, laws, liquidity needs, and advisor recommendations change.</p>
+                        <p style="margin:0; color:#4b5563; font-size:0.93rem;">Re-score every year. Income, laws, and life change. The plan should change too.</p>
                     </article>
                 </div>
             </div>
@@ -1278,6 +1296,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
                 <div class="library-grid">
                     ${cards}
                 </div>
+                <p style="margin:1.5rem 0 0; color:#6b7280; font-size:0.95rem; line-height:1.65; max-width:60rem;">Educational content only. Results vary based on your facts. Always consult a qualified tax professional before making decisions.</p>
             </div>
         </section>
     </main>
