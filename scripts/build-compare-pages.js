@@ -636,6 +636,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
         .cta-card__title {
             font-size: 1.7rem;
             font-weight: 700;
+            color: #ffffff;
             margin-bottom: 0.85rem;
         }
         .cta-card__text {
