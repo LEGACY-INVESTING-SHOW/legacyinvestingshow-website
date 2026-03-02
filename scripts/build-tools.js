@@ -127,30 +127,40 @@ function toolAnchors(tool) {
   return anchors;
 }
 
-function renderSidebar(tool) {
+function renderJumpBar(tool) {
   const anchors = toolAnchors(tool);
-  const related = tool.related || [];
+  return `<div class="jumpbar-wrap" aria-label="Page navigation">
+            <div class="jumpbar">
+              <span class="jumpbar__label">Jump:</span>
+              <div class="jumpbar__links">
+                ${anchors
+                  .map((a) => `<a class="jumpbar__link" href="${esc(a.href)}">${esc(a.label)}</a>`)
+                  .join('\n')}
+              </div>
+            </div>
+        </div>`;
+}
 
-  return `<aside class="sidebar">
-            <div class="sidebar-card">
-                <div class="sidebar-card__title">On This Page</div>
-                <ul class="sidebar-list">
-                    ${anchors.map((a) => `<li><a href="${esc(a.href)}">${esc(a.label)}</a></li>`).join('\n')}
-                </ul>
+function renderRelatedSection(tool) {
+  const related = Array.isArray(tool.related) ? tool.related : [];
+  if (!related.length) return '';
+
+  const cards = related
+    .slice(0, 6)
+    .map(
+      (item) => `<article class="related-card">
+                  <h3 class="related-card__title">${esc(item.label)}</h3>
+                  <a class="related-card__cta" href="${esc(item.href)}">Open guide</a>
+                </article>`
+    )
+    .join('\n');
+
+  return `<section class="related-section" aria-label="Related guides">
+            <h2 class="related-section__title">Related Guides</h2>
+            <div class="related-grid">
+              ${cards}
             </div>
-            ${related.length ? `<div class="sidebar-card">
-                <div class="sidebar-card__title">Related Guides</div>
-                <ul class="sidebar-list">
-                    ${renderRelated(related)}
-                </ul>
-            </div>` : ''}
-            <div class="sidebar-card">
-                <div class="sidebar-card__title">Reminder</div>
-                <p style="color:#4b5563; font-size:0.92rem; line-height:1.6; margin:0;">
-                  These tools are educational. Your facts decide what is defensible. If you are implementing a tax strategy, involve a qualified professional early.
-                </p>
-            </div>
-        </aside>`;
+          </section>`;
 }
 
 function toolWidget(tool) {
@@ -549,7 +559,7 @@ function widgetAugustaRule() {
               <p class="tool-card__subtitle">Build the log first. Then run the rent math with 14-day guardrails.</p>
             </div>
 
-            <div class="tool-grid">
+            <div class="tool-grid tool-grid--stack">
               <form class="tool-form" id="t03-form">
                 <div class="field">
                   <label>Meeting log</label>
@@ -791,15 +801,80 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
 
         .content-section { padding: 3.25rem 0; }
         .content-section--alt { background: #f9fafb; }
-        .content-grid { display: grid; gap: 2rem; }
-        @media (min-width: 1024px) {
-            .content-grid { grid-template-columns: minmax(0, 2.2fr) minmax(280px, 1fr); }
-        }
         .prose-content { color: #374151; line-height: 1.75; }
         .prose-content h2 { color: #111827; font-size: 1.6rem; line-height: 1.3; margin-bottom: 1rem; }
         .prose-content p { margin-bottom: 1rem; }
         .prose-content ul { padding-left: 1.2rem; margin: 0.5rem 0 1rem; }
         .prose-content li { margin-bottom: 0.55rem; }
+        .prose-content h2,
+        #calculator {
+          scroll-margin-top: 7.75rem;
+        }
+
+        .operator-note {
+          margin: 1.25rem 0 1.6rem;
+          background: linear-gradient(180deg, rgba(236, 253, 245, 0.85), rgba(236, 253, 245, 0.55));
+          border: 1px solid rgba(16, 185, 129, 0.35);
+          border-left: 4px solid #10b981;
+          padding: 0.95rem 1rem;
+          border-radius: 0.75rem;
+          color: #065f46;
+          line-height: 1.65;
+        }
+        .operator-note strong { color: #064e3b; }
+
+        .jumpbar-wrap {
+          position: sticky;
+          top: 4.15rem;
+          z-index: 20;
+          margin: 1.25rem 0 1.6rem;
+        }
+        .jumpbar {
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+          padding: 0.7rem 0.85rem;
+          background: rgba(255, 255, 255, 0.92);
+          border: 1px solid rgba(17, 24, 39, 0.12);
+          border-radius: 0.85rem;
+          box-shadow: 0 12px 30px rgba(17, 24, 39, 0.06);
+          backdrop-filter: blur(10px);
+        }
+        .jumpbar__label {
+          font-size: 0.72rem;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          font-weight: 900;
+          color: #111827;
+          white-space: nowrap;
+        }
+        .jumpbar__links {
+          display: flex;
+          gap: 0.5rem;
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+          scrollbar-width: none;
+          flex: 1;
+        }
+        .jumpbar__links::-webkit-scrollbar { display: none; }
+        .jumpbar__link {
+          display: inline-flex;
+          align-items: center;
+          padding: 0.38rem 0.7rem;
+          border-radius: 999px;
+          border: 1px solid rgba(17, 24, 39, 0.16);
+          color: #111827;
+          text-decoration: none;
+          font-weight: 800;
+          font-size: 0.85rem;
+          white-space: nowrap;
+          background: linear-gradient(180deg, rgba(255,255,255,1), rgba(249,250,251,1));
+        }
+        .jumpbar__link:hover {
+          border-color: rgba(17, 24, 39, 0.28);
+          box-shadow: 0 10px 22px rgba(17, 24, 39, 0.06);
+          transform: translateY(-1px);
+        }
 
         .tool-card {
             background: white;
@@ -832,7 +907,10 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
             padding: 1.25rem;
         }
         @media (min-width: 1024px) {
-            .tool-grid { grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: 1.25rem; }
+            .tool-grid { grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr); gap: 1.25rem; }
+        }
+        @media (min-width: 1024px) {
+            .tool-grid--stack { grid-template-columns: minmax(0, 1fr); }
         }
 
         .tool-form {
@@ -948,19 +1026,47 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
             color: #1e3a8a;
         }
 
-        .sidebar { position: sticky; top: 6rem; align-self: start; }
-        .sidebar-card {
-            background: #f9fafb;
-            border: 1px solid #e5e7eb;
-            border-radius: 0.75rem;
-            padding: 1rem;
-            margin-bottom: 1rem;
+        .related-section {
+          margin-top: 2.25rem;
+          padding-top: 1.25rem;
+          border-top: 1px solid #e5e7eb;
         }
-        .sidebar-card__title { font-size: 0.95rem; font-weight: 800; color: #111827; margin-bottom: 0.8rem; }
-        .sidebar-list { list-style: none; padding: 0; margin: 0; }
-        .sidebar-list li { margin-bottom: 0.55rem; }
-        .sidebar-list a { color: #374151; text-decoration: none; font-size: 0.9rem; }
-        .sidebar-list a:hover { color: #111827; text-decoration: underline; }
+        .related-section__title {
+          font-size: 1.2rem;
+          font-weight: 900;
+          color: #111827;
+          margin: 0 0 0.85rem;
+        }
+        .related-grid {
+          display: grid;
+          gap: 0.85rem;
+          grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        }
+        .related-card {
+          background: linear-gradient(180deg, #ffffff, #f9fafb);
+          border: 1px solid rgba(17, 24, 39, 0.12);
+          border-radius: 0.9rem;
+          padding: 1rem 1rem 0.95rem;
+        }
+        .related-card__title {
+          margin: 0 0 0.7rem;
+          font-weight: 900;
+          color: #111827;
+          font-size: 0.98rem;
+          line-height: 1.35;
+        }
+        .related-card__cta {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0.62rem 0.9rem;
+          background: #111827;
+          color: #ffffff;
+          border-radius: 0.7rem;
+          text-decoration: none;
+          font-weight: 900;
+        }
+        .related-card__cta:hover { background: #0b1220; }
 
         .faq-section { background: #f9fafb; padding: 3.5rem 0; }
         .faq-section__title { font-size: 1.7rem; font-weight: 800; color: #111827; margin-bottom: 1.75rem; text-align: center; }
@@ -1055,6 +1161,8 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
             .tools-subtitle { font-size: 1rem; line-height: 1.6; }
             .content-section { padding: 2.2rem 0; }
             .prose-content h2 { font-size: 1.35rem; }
+            .jumpbar-wrap { top: 4.05rem; margin: 1rem 0 1.25rem; }
+            .jumpbar { padding: 0.62rem 0.7rem; }
             .tool-grid { padding: 1rem; }
             .tool-form { padding: 0.85rem; }
             .results-table { min-width: 0; }
@@ -1138,10 +1246,14 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
         </section>
 
         <section class="content-section">
-            <div class="container-custom content-grid">
+            <div class="container-custom">
                 <article class="prose-content">
                     <h2>Why This Tool Exists</h2>
                     ${openingHtml}
+
+                    <div class="operator-note"><strong>Execution note:</strong> Run the tool, then write down your assumptions and keep the receipts and logs as you go. The strategy that wins on paper only matters if your process holds up in the real world.</div>
+
+                    ${renderJumpBar(tool)}
 
                     ${toolWidget(tool)}
 
@@ -1156,9 +1268,9 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
                         'Ask your CPA what would make this easy to sign off on, then build that packet.'
                       ])}
                     </ul>
-                </article>
 
-                ${renderSidebar(tool)}
+                    ${renderRelatedSection(tool)}
+                </article>
             </div>
         </section>
 
@@ -1461,4 +1573,3 @@ function main() {
 }
 
 main();
-
