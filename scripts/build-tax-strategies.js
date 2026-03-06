@@ -11,6 +11,15 @@
 
 const fs = require('fs');
 const path = require('path');
+const {
+    CURRENT_YEAR,
+    renderAnalyticsBody,
+    renderAnalyticsHead,
+    renderFooterLinks,
+    renderPageCtaSection,
+    renderPrimaryNavLinks,
+    renderSourceBlock,
+} = require('./lib/site-shell');
 
 // Paths
 const ROOT_DIR = path.join(__dirname, '..');
@@ -204,6 +213,11 @@ function buildStrategyPage(strategy, template, allStrategies) {
         .replace(/\{\{bestFor\}\}/g, strategy.bestFor)
         .replace(/\{\{datePublished\}\}/g, today)
         .replace(/\{\{dateModified\}\}/g, today)
+        .replace(/\{\{analyticsHead\}\}/g, renderAnalyticsHead({ gaTrackingId: GA_TRACKING_ID, gtmContainerId: GTM_CONTAINER_ID }))
+        .replace(/\{\{tagManagerBody\}\}/g, renderAnalyticsBody({ gtmContainerId: GTM_CONTAINER_ID }))
+        .replace(/\{\{primaryNavLinks\}\}/g, renderPrimaryNavLinks('/tax-strategies/'))
+        .replace(/\{\{footerLinks\}\}/g, renderFooterLinks())
+        .replace(/\{\{footerYear\}\}/g, String(CURRENT_YEAR))
         .replace(/\{\{benefitsForList\}\}/g, generateBenefitsList(strategy.benefitsFor))
         .replace(/\{\{benefitsForListWithIcons\}\}/g, generateBenefitsListWithIcons(strategy.benefitsFor))
         .replace(/\{\{relatedStrategiesList\}\}/g, generateRelatedStrategiesList(strategy.relatedStrategies, allStrategies))
@@ -311,14 +325,7 @@ function generateIndexPage(strategies, personas) {
     }
     </script>
 
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_CONTAINER_ID}');</script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '${GA_TRACKING_ID}');
-    </script>
+    ${renderAnalyticsHead({ gaTrackingId: GA_TRACKING_ID, gtmContainerId: GTM_CONTAINER_ID })}
 
     <style>
         .tax-hero {
@@ -495,8 +502,8 @@ function generateIndexPage(strategies, personas) {
         }
     </style>
 </head>
-<body class="bg-white text-gray-900">
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=${GTM_CONTAINER_ID}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<body class="bg-white text-gray-900" data-page-type="tax_strategies_hub" data-page-title="Tax Strategies">
+    ${renderAnalyticsBody({ gtmContainerId: GTM_CONTAINER_ID })}
     <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-gray-900 text-white px-4 py-2 z-50">
         Skip to main content
     </a>
@@ -508,12 +515,8 @@ function generateIndexPage(strategies, personas) {
                     <img src="/assets/images/logo.png" alt="Legacy Investing Show Logo" width="28" height="28" class="w-7 h-7">
                     <span>Legacy Investing Show</span>
                 </a>
-                <div class="hidden md:flex items-center gap-6">
-                    <a href="/" class="nav-link">Home</a>
-                    <a href="/about" class="nav-link">About</a>
-                    <a href="/blog/" class="nav-link">Resources</a>
-                    <a href="/success-stories" class="nav-link">Results</a>
-                    <a href="/blog/" class="nav-link">Blog</a>
+                <div class="hidden md:flex items-center gap-4">
+                    ${renderPrimaryNavLinks('/tax-strategies/')}
                 </div>
                 <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -523,11 +526,7 @@ function generateIndexPage(strategies, personas) {
             </div>
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <div class="flex flex-col gap-3">
-                    <a href="/" class="nav-link">Home</a>
-                    <a href="/about" class="nav-link">About</a>
-                    <a href="/blog/" class="nav-link">Resources</a>
-                    <a href="/success-stories" class="nav-link">Results</a>
-                    <a href="/blog/" class="nav-link">Blog</a>
+                    ${renderPrimaryNavLinks('/tax-strategies/')}
                 </div>
             </div>
         </nav>
@@ -632,18 +631,20 @@ function generateIndexPage(strategies, personas) {
             </div>
         </section>
 
+        <section style="padding: 0 0 4rem;">
+            <div class="container-custom" style="max-width: 56rem;">
+                ${renderSourceBlock({ title: 'Tax Strategies Hub', slug: 'tax-strategies', type: 'tax_hub' })}
+            </div>
+        </section>
+
         <section class="cta-section">
             <div class="container-custom">
-                <div class="cta-card">
-                    <h2 class="cta-card__title">Master These Tax Strategies</h2>
-                    <p class="cta-card__text">Join the 3-Day Wealth Challenge to learn how to implement these strategies and build lasting wealth.</p>
-                    <a href="https://www.joinlwb.com/intensive" class="cta-card__button">
-                        Start the Challenge
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-                </div>
+                ${renderPageCtaSection({
+                    variant: 'tax_masterclass',
+                    title: 'Get The Full Tax Strategy System',
+                    text: 'The biggest wins usually come from combining multiple legal moves in the right order. Use the free masterclass to see how they work together.',
+                    trackLocation: 'tax_hub_cta',
+                })}
             </div>
         </section>
     </main>
@@ -656,13 +657,10 @@ function generateIndexPage(strategies, personas) {
                     <span>Legacy Investing Show</span>
                 </div>
                 <div class="footer-links">
-                    <a href="/blog/">Resources</a>
-                    <a href="/success-stories">Results</a>
-                    <a href="/blog/">Blog</a>
-                    <a href="/tax-strategies/">Tax Strategies</a>
+                    ${renderFooterLinks()}
                 </div>
             </div>
-            <div class="footer-copyright">Copyright 2025</div>
+            <div class="footer-copyright">Copyright ${CURRENT_YEAR}</div>
         </div>
     </footer>
 
@@ -777,7 +775,7 @@ function generatePersonaFaqSchema(persona) {
         'self-employed': [
             {
                 question: "What retirement accounts are available for the self-employed?",
-                answer: "Solo 401(k)s allow contributions up to $76,500 (2025). SEP IRAs offer up to $70,000. Both offer tax-deductible contributions and tax-deferred growth."
+                answer: "Solo 401(k)s and SEP IRAs both offer high annual contribution ceilings that are updated by the IRS. Check the current-year limits before you implement the strategy."
             },
             {
                 question: "Can self-employed individuals deduct health insurance premiums?",
@@ -878,14 +876,7 @@ function generatePersonaPage(persona, strategies) {
     <link rel="apple-touch-icon" href="/assets/images/logo.png">
     <link rel="stylesheet" href="/assets/css/styles.css">
 
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_CONTAINER_ID}');</script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '${GA_TRACKING_ID}');
-    </script>
+    ${renderAnalyticsHead({ gaTrackingId: GA_TRACKING_ID, gtmContainerId: GTM_CONTAINER_ID })}
 
     <style>
         .persona-hero {
@@ -1039,8 +1030,8 @@ function generatePersonaPage(persona, strategies) {
         }
     </style>
 </head>
-<body class="bg-white text-gray-900">
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=${GTM_CONTAINER_ID}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<body class="bg-white text-gray-900" data-page-type="tax_persona" data-page-slug="${persona.slug}" data-page-title="${persona.title}">
+    ${renderAnalyticsBody({ gtmContainerId: GTM_CONTAINER_ID })}
     <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-gray-900 text-white px-4 py-2 z-50">
         Skip to main content
     </a>
@@ -1052,12 +1043,8 @@ function generatePersonaPage(persona, strategies) {
                     <img src="/assets/images/logo.png" alt="Legacy Investing Show Logo" width="28" height="28" class="w-7 h-7">
                     <span>Legacy Investing Show</span>
                 </a>
-                <div class="hidden md:flex items-center gap-6">
-                    <a href="/" class="nav-link">Home</a>
-                    <a href="/about" class="nav-link">About</a>
-                    <a href="/blog/" class="nav-link">Resources</a>
-                    <a href="/success-stories" class="nav-link">Results</a>
-                    <a href="/blog/" class="nav-link">Blog</a>
+                <div class="hidden md:flex items-center gap-4">
+                    ${renderPrimaryNavLinks('/tax-strategies/')}
                 </div>
                 <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1067,11 +1054,7 @@ function generatePersonaPage(persona, strategies) {
             </div>
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <div class="flex flex-col gap-3">
-                    <a href="/" class="nav-link">Home</a>
-                    <a href="/about" class="nav-link">About</a>
-                    <a href="/blog/" class="nav-link">Resources</a>
-                    <a href="/success-stories" class="nav-link">Results</a>
-                    <a href="/blog/" class="nav-link">Blog</a>
+                    ${renderPrimaryNavLinks('/tax-strategies/')}
                 </div>
             </div>
         </nav>
@@ -1114,18 +1097,20 @@ function generatePersonaPage(persona, strategies) {
             </div>
         </section>
 
+        <section style="padding: 0 0 3rem;">
+            <div class="container-custom" style="max-width: 56rem;">
+                ${renderSourceBlock({ title: persona.title, slug: persona.slug, type: 'persona' })}
+            </div>
+        </section>
+
         <section class="cta-section">
             <div class="container-custom">
-                <div class="cta-card">
-                    <h2 class="cta-card__title">Learn More Tax Strategies</h2>
-                    <p class="cta-card__text">Join the 3-Day Wealth Challenge to learn how to implement these strategies for your specific situation.</p>
-                    <a href="https://www.joinlwb.com/intensive" class="cta-card__button">
-                        Start the Challenge
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-                </div>
+                ${renderPageCtaSection({
+                    variant: 'tax_masterclass',
+                    title: `Map The Best Moves For ${persona.title}`,
+                    text: 'The right strategy stack depends on income, entity structure, and execution discipline. Use the free masterclass to see how Preston sequences the decisions.',
+                    trackLocation: 'tax_persona_cta',
+                })}
             </div>
         </section>
     </main>
@@ -1138,13 +1123,10 @@ function generatePersonaPage(persona, strategies) {
                     <span>Legacy Investing Show</span>
                 </div>
                 <div class="footer-links">
-                    <a href="/blog/">Resources</a>
-                    <a href="/success-stories">Results</a>
-                    <a href="/blog/">Blog</a>
-                    <a href="/tax-strategies/">Tax Strategies</a>
+                    ${renderFooterLinks()}
                 </div>
             </div>
-            <div class="footer-copyright">Copyright 2025</div>
+            <div class="footer-copyright">Copyright ${CURRENT_YEAR}</div>
         </div>
     </footer>
 

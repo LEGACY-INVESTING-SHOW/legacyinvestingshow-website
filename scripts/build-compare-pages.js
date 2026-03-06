@@ -2,6 +2,15 @@
 
 const fs = require('fs');
 const path = require('path');
+const {
+  CURRENT_YEAR,
+  renderAnalyticsBody,
+  renderAnalyticsHead,
+  renderFooterLinks,
+  renderPageCtaSection,
+  renderPrimaryNavLinks,
+  renderSourceBlock,
+} = require('./lib/site-shell');
 
 const ROOT_DIR = path.join(__dirname, '..');
 const DATA_PATH = path.join(ROOT_DIR, 'data', 'edge-comparison-pages.json');
@@ -347,14 +356,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
     <script type="application/ld+json">${JSON.stringify(articleSchema(page, isoDate))}</script>
     <script type="application/ld+json">${JSON.stringify(faqSchema(page))}</script>
 
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_CONTAINER_ID}');</script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '${GA_TRACKING_ID}');
-    </script>
+    ${renderAnalyticsHead({ gaTrackingId: GA_TRACKING_ID, gtmContainerId: GTM_CONTAINER_ID })}
 
     <style>
         .compare-hero {
@@ -902,8 +904,8 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
         }
     </style>
 </head>
-<body class="bg-white text-gray-900">
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=${GTM_CONTAINER_ID}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<body class="bg-white text-gray-900" data-page-type="compare" data-page-slug="${esc(page.slug)}" data-page-title="${esc(page.title)}">
+    ${renderAnalyticsBody({ gtmContainerId: GTM_CONTAINER_ID })}
     <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-gray-900 text-white px-4 py-2 z-50">
         Skip to main content
     </a>
@@ -916,11 +918,8 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
                     <span>Legacy Investing Show</span>
                 </a>
 
-                <div class="hidden md:flex items-center gap-6">
-                    <a href="/" class="nav-link">Home</a>
-                    <a href="/about" class="nav-link">About</a>
-                    <a href="/success-stories" class="nav-link">Results</a>
-                    <a href="/blog/" class="nav-link">Blog</a>
+                <div class="hidden md:flex items-center gap-4">
+                    ${renderPrimaryNavLinks('/compare/')}
                 </div>
 
                 <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
@@ -932,10 +931,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
 
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <div class="flex flex-col gap-3">
-                    <a href="/" class="nav-link">Home</a>
-                    <a href="/about" class="nav-link">About</a>
-                    <a href="/success-stories" class="nav-link">Results</a>
-                    <a href="/blog/" class="nav-link">Blog</a>
+                    ${renderPrimaryNavLinks('/compare/')}
                 </div>
             </div>
         </nav>
@@ -1155,6 +1151,8 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
                     <ul>
                         ${renderBullets(advisorPacketItems(page))}
                     </ul>
+
+                    ${renderSourceBlock({ title: page.title, slug: page.slug, type: 'compare' })}
                 </article>
 
                 <aside class="sidebar">
@@ -1218,17 +1216,12 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
 
         <section class="cta-section">
             <div class="container-custom">
-                <div class="cta-card">
-                    <h2 class="cta-card__title">Turn Comparison Into an Execution Plan</h2>
-                    <p class="cta-card__text">If you want the strategy to hold up in the real world, your documentation system and advisor packet matter as much as your math model.</p>
-                    <a href="https://www.joinlwb.com/intensive" class="cta-card__button">
-                        Join the 3-Day Wealth Challenge
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-                    <p style="margin: 1.25rem 0 0; color: #9ca3af; font-size: 0.85rem; line-height: 1.6;">Educational content only. Results vary based on your facts. Always consult a qualified tax professional before making decisions.</p>
-                </div>
+                ${renderPageCtaSection({
+                  variant: 'tax_masterclass',
+                  title: 'Turn The Comparison Into A Full Tax Plan',
+                  text: 'The right answer is rarely one isolated move. Use the free masterclass to see how tax strategy, entity structure, retirement planning, and documentation fit together.',
+                  trackLocation: 'compare_page_cta',
+                })}
             </div>
         </section>
     </main>
@@ -1241,12 +1234,10 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
                     <span>Legacy Investing Show</span>
                 </div>
                 <div class="footer-links">
-                    <a href="/success-stories">Results</a>
-                    <a href="/blog/">Blog</a>
-                    <a href="/tax-strategies/">Tax Strategies</a>
+                    ${renderFooterLinks()}
                 </div>
             </div>
-            <div class="footer-copyright">Copyright 2025</div>
+            <div class="footer-copyright">Copyright ${CURRENT_YEAR}</div>
         </div>
     </footer>
 
@@ -1317,14 +1308,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
       datePublished: isoDate,
     })}</script>
 
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_CONTAINER_ID}');</script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '${GA_TRACKING_ID}');
-    </script>
+    ${renderAnalyticsHead({ gaTrackingId: GA_TRACKING_ID, gtmContainerId: GTM_CONTAINER_ID })}
 
     <style>
         .library-hero {
@@ -1499,8 +1483,8 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
         }
     </style>
 </head>
-<body class="bg-white text-gray-900">
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=${GTM_CONTAINER_ID}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<body class="bg-white text-gray-900" data-page-type="compare_hub" data-page-title="Edge-Case Comparison Guides">
+    ${renderAnalyticsBody({ gtmContainerId: GTM_CONTAINER_ID })}
     <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-gray-900 text-white px-4 py-2 z-50">
         Skip to main content
     </a>
@@ -1513,11 +1497,8 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
                     <span>Legacy Investing Show</span>
                 </a>
 
-                <div class="hidden md:flex items-center gap-6">
-                    <a href="/" class="nav-link">Home</a>
-                    <a href="/about" class="nav-link">About</a>
-                    <a href="/success-stories" class="nav-link">Results</a>
-                    <a href="/blog/" class="nav-link">Blog</a>
+                <div class="hidden md:flex items-center gap-4">
+                    ${renderPrimaryNavLinks('/compare/')}
                 </div>
 
                 <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
@@ -1529,10 +1510,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
 
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <div class="flex flex-col gap-3">
-                    <a href="/" class="nav-link">Home</a>
-                    <a href="/about" class="nav-link">About</a>
-                    <a href="/success-stories" class="nav-link">Results</a>
-                    <a href="/blog/" class="nav-link">Blog</a>
+                    ${renderPrimaryNavLinks('/compare/')}
                 </div>
             </div>
         </nav>
@@ -1613,12 +1591,10 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
                     <span>Legacy Investing Show</span>
                 </div>
                 <div class="footer-links">
-                    <a href="/success-stories">Results</a>
-                    <a href="/blog/">Blog</a>
-                    <a href="/tax-strategies/">Tax Strategies</a>
+                    ${renderFooterLinks()}
                 </div>
             </div>
-            <div class="footer-copyright">Copyright 2025</div>
+            <div class="footer-copyright">Copyright ${CURRENT_YEAR}</div>
         </div>
     </footer>
 

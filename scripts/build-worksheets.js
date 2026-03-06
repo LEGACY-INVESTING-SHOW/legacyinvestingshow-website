@@ -2,6 +2,15 @@
 
 const fs = require('fs');
 const path = require('path');
+const {
+  CURRENT_YEAR,
+  renderAnalyticsBody,
+  renderAnalyticsHead,
+  renderFooterLinks,
+  renderPageCtaSection,
+  renderPrimaryNavLinks,
+  renderSourceBlock,
+} = require('./lib/site-shell');
 
 const ROOT_DIR = path.join(__dirname, '..');
 const DATA_PATH = path.join(ROOT_DIR, 'data', 'worksheets.json');
@@ -236,14 +245,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
     <script type="application/ld+json">${JSON.stringify(breadcrumbSchema(worksheet))}</script>
     <script type="application/ld+json">${JSON.stringify(faqSchema(worksheet))}</script>
 
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_CONTAINER_ID}');</script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '${GA_TRACKING_ID}');
-    </script>
+    ${renderAnalyticsHead({ gaTrackingId: GA_TRACKING_ID, gtmContainerId: GTM_CONTAINER_ID })}
 
     <style>
       .worksheet-hero {
@@ -576,8 +578,8 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
       }
     </style>
 </head>
-<body class="bg-white text-gray-900">
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=${GTM_CONTAINER_ID}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<body class="bg-white text-gray-900" data-page-type="worksheet" data-page-slug="${esc(worksheet.slug)}" data-page-title="${esc(worksheet.title)}">
+    ${renderAnalyticsBody({ gtmContainerId: GTM_CONTAINER_ID })}
     <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-gray-900 text-white px-4 py-2 z-50">
         Skip to main content
     </a>
@@ -590,11 +592,8 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
                     <span>Legacy Investing Show</span>
                 </a>
 
-                <div class="hidden md:flex items-center gap-6">
-                    <a href="/" class="nav-link">Home</a>
-                    <a href="/about" class="nav-link">About</a>
-                    <a href="/success-stories" class="nav-link">Results</a>
-                    <a href="/blog/" class="nav-link">Blog</a>
+                <div class="hidden md:flex items-center gap-4">
+                    ${renderPrimaryNavLinks('/worksheets/')}
                 </div>
 
                 <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
@@ -606,10 +605,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
 
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <div class="flex flex-col gap-3">
-                    <a href="/" class="nav-link">Home</a>
-                    <a href="/about" class="nav-link">About</a>
-                    <a href="/success-stories" class="nav-link">Results</a>
-                    <a href="/blog/" class="nav-link">Blog</a>
+                    ${renderPrimaryNavLinks('/worksheets/')}
                 </div>
             </div>
         </nav>
@@ -693,6 +689,8 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
                 ${renderRelated(worksheet.related || [])}
               </div>
             </section>
+
+            ${renderSourceBlock({ title: worksheet.title, slug: worksheet.slug, type: 'worksheet' })}
           </article>
         </div>
       </section>
@@ -708,12 +706,12 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
 
       <section class="cta-section">
         <div class="container-custom">
-          <div class="cta-card">
-            <h2 class="cta-card__title">Use The Worksheet Before You Touch The Strategy</h2>
-            <p class="cta-card__text">The expensive version of planning is doing the move first and writing the story later. Keep this worksheet with the supporting files and use it as part of your packet.</p>
-            <a href="https://www.managemoney101.com/challengeoptin" class="cta-card__button">Join the 3-Day Wealth Challenge</a>
-            <p style="margin: 1.25rem 0 0; color: #9ca3af; font-size: 0.85rem; line-height: 1.6;">Educational content only. Results vary based on your facts. Always consult a qualified professional before making decisions.</p>
-          </div>
+          ${renderPageCtaSection({
+            variant: 'tax_masterclass',
+            title: 'Use The Worksheet As Part Of The Advisor Packet',
+            text: 'A worksheet is the starting point. The real leverage comes when your assumptions, supporting files, and next actions are clean enough for your CPA to review quickly.',
+            trackLocation: 'worksheet_page_cta',
+          })}
         </div>
       </section>
     </main>
@@ -726,12 +724,10 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
                     <span>Legacy Investing Show</span>
                 </div>
                 <div class="footer-links">
-                    <a href="/success-stories">Results</a>
-                    <a href="/blog/">Blog</a>
-                    <a href="/tax-strategies/">Tax Strategies</a>
+                    ${renderFooterLinks()}
                 </div>
             </div>
-            <div class="footer-copyright">Copyright 2025</div>
+            <div class="footer-copyright">Copyright ${CURRENT_YEAR}</div>
         </div>
     </footer>
 
@@ -922,14 +918,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
       ]
     })}</script>
 
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_CONTAINER_ID}');</script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '${GA_TRACKING_ID}');
-    </script>
+    ${renderAnalyticsHead({ gaTrackingId: GA_TRACKING_ID, gtmContainerId: GTM_CONTAINER_ID })}
 
     <style>
       .hero {
@@ -1061,8 +1050,8 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
       }
     </style>
 </head>
-<body class="bg-white text-gray-900">
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=${GTM_CONTAINER_ID}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<body class="bg-white text-gray-900" data-page-type="worksheet_hub" data-page-title="Execution Worksheets">
+    ${renderAnalyticsBody({ gtmContainerId: GTM_CONTAINER_ID })}
     <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-gray-900 text-white px-4 py-2 z-50">
         Skip to main content
     </a>
@@ -1075,11 +1064,8 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
                     <span>Legacy Investing Show</span>
                 </a>
 
-                <div class="hidden md:flex items-center gap-6">
-                    <a href="/" class="nav-link">Home</a>
-                    <a href="/about" class="nav-link">About</a>
-                    <a href="/success-stories" class="nav-link">Results</a>
-                    <a href="/blog/" class="nav-link">Blog</a>
+                <div class="hidden md:flex items-center gap-4">
+                    ${renderPrimaryNavLinks('/worksheets/')}
                 </div>
 
                 <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
@@ -1091,10 +1077,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
 
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <div class="flex flex-col gap-3">
-                    <a href="/" class="nav-link">Home</a>
-                    <a href="/about" class="nav-link">About</a>
-                    <a href="/success-stories" class="nav-link">Results</a>
-                    <a href="/blog/" class="nav-link">Blog</a>
+                    ${renderPrimaryNavLinks('/worksheets/')}
                 </div>
             </div>
         </nav>
@@ -1150,12 +1133,10 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
                     <span>Legacy Investing Show</span>
                 </div>
                 <div class="footer-links">
-                    <a href="/success-stories">Results</a>
-                    <a href="/blog/">Blog</a>
-                    <a href="/tax-strategies/">Tax Strategies</a>
+                    ${renderFooterLinks()}
                 </div>
             </div>
-            <div class="footer-copyright">Copyright 2025</div>
+            <div class="footer-copyright">Copyright ${CURRENT_YEAR}</div>
         </div>
     </footer>
 

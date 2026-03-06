@@ -16,6 +16,13 @@ const fs = require('fs');
 const path = require('path');
 const matter = require('gray-matter');
 const { marked } = require('marked');
+const {
+    CURRENT_YEAR,
+    renderAnalyticsBody,
+    renderAnalyticsHead,
+    renderFooterLinks,
+    renderPrimaryNavLinks,
+} = require('./lib/site-shell');
 
 // Configure marked for better output
 marked.setOptions({
@@ -633,20 +640,10 @@ function generateBlogIndex(posts) {
     }
     </script>
 
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_CONTAINER_ID}');</script>
-
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '${GA_TRACKING_ID}');
-    </script>
+    ${renderAnalyticsHead({ gaTrackingId: GA_TRACKING_ID, gtmContainerId: GTM_CONTAINER_ID })}
 </head>
-<body class="bg-white text-gray-900">
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=${GTM_CONTAINER_ID}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<body class="bg-white text-gray-900" data-page-type="blog_index" data-page-title="Blog">
+    ${renderAnalyticsBody({ gtmContainerId: GTM_CONTAINER_ID })}
     <!-- Skip to main content -->
     <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-gray-900 text-white px-4 py-2 z-50">
         Skip to main content
@@ -661,11 +658,8 @@ function generateBlogIndex(posts) {
                     <span>Legacy Investing Show</span>
                 </a>
 
-                <div class="hidden md:flex items-center gap-6">
-                    <a href="/" class="nav-link">Home</a>
-                    <a href="/about" class="nav-link">About</a>
-                    <a href="/success-stories" class="nav-link">Results</a>
-                    <a href="/blog/" class="nav-link nav-link-active">Blog</a>
+                <div class="hidden md:flex items-center gap-4">
+                    ${renderPrimaryNavLinks('/blog/')}
                 </div>
 
                 <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
@@ -677,10 +671,7 @@ function generateBlogIndex(posts) {
 
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <div class="flex flex-col gap-3">
-                    <a href="/" class="nav-link">Home</a>
-                    <a href="/about" class="nav-link">About</a>
-                    <a href="/success-stories" class="nav-link">Results</a>
-                    <a href="/blog/" class="nav-link nav-link-active">Blog</a>
+                    ${renderPrimaryNavLinks('/blog/')}
                 </div>
             </div>
         </nav>
@@ -713,9 +704,9 @@ function generateBlogIndex(posts) {
         <!-- CTA -->
         <section class="minimal-cta">
             <div class="minimal-cta-content">
-                <h2 class="minimal-cta-title">Join the 3-Day Wealth Challenge</h2>
-                <p class="minimal-cta-text">Learn strategies that helped build a $20M+ portfolio.</p>
-                <a href="https://www.joinlwb.com/intensive" class="minimal-cta-button">Get Started</a>
+                <h2 class="minimal-cta-title">Turn Reading Into A Real Wealth Plan</h2>
+                <p class="minimal-cta-text">Use the free tax strategy masterclass to connect the articles, calculators, and decision guides into one practical next-step plan.</p>
+                <a href="https://www.managemoney101.com/2025workshop" class="minimal-cta-button" data-track-event="cta_clicked" data-track-label="Reserve Your Free Tax Strategy Seat" data-track-location="blog_index_cta" data-track-destination="https://www.managemoney101.com/2025workshop">Reserve Your Free Tax Strategy Seat</a>
             </div>
         </section>
     </main>
@@ -729,11 +720,10 @@ function generateBlogIndex(posts) {
                     <span>Legacy Investing Show</span>
                 </div>
                 <div class="footer-links">
-                    <a href="/success-stories">Results</a>
-                    <a href="/blog/">Blog</a>
+                    ${renderFooterLinks()}
                 </div>
             </div>
-            <div class="footer-copyright">Copyright 2025</div>
+            <div class="footer-copyright">Copyright ${CURRENT_YEAR}</div>
         </div>
     </footer>
 

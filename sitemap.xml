@@ -3,23 +3,23 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.legacyinvestingshow.com/</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/about</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/success-stories</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/blog</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/stacking-presentation</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/blog/1031-exchange-vs-itemized-deductions</loc>
@@ -239,6 +239,13 @@
     </image:image>
   </url>
   <url>
+    <loc>https://www.legacyinvestingshow.com/blog/airbnb-arbitrage-mistakes-that-kill-profit</loc>
+    <lastmod>2026-03-06</lastmod>
+    <image:image>
+      <image:loc>https://www.legacyinvestingshow.com/assets/images/blog/airbnb-arbitrage-guide.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.legacyinvestingshow.com/blog/airbnb-arbitrage-tax-implications</loc>
     <lastmod>2026-02-16</lastmod>
     <image:image>
@@ -271,6 +278,20 @@
     <lastmod>2026-02-16</lastmod>
     <image:image>
       <image:loc>https://www.legacyinvestingshow.com/assets/images/blog/airbnb-cash-flow-vs-notes-investing.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.legacyinvestingshow.com/blog/airbnb-furniture-budget-checklist</loc>
+    <lastmod>2026-03-06</lastmod>
+    <image:image>
+      <image:loc>https://www.legacyinvestingshow.com/assets/images/blog/airbnb-arbitrage-guide.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.legacyinvestingshow.com/blog/airbnb-guest-message-templates-that-reduce-friction</loc>
+    <lastmod>2026-03-06</lastmod>
+    <image:image>
+      <image:loc>https://www.legacyinvestingshow.com/assets/images/blog/airbnb-arbitrage-guide.jpg</image:loc>
     </image:image>
   </url>
   <url>
@@ -477,6 +498,13 @@
     </image:image>
   </url>
   <url>
+    <loc>https://www.legacyinvestingshow.com/blog/airbnb-vs-vrbo-for-hosts-which-platform-fits-your-strategy</loc>
+    <lastmod>2026-03-06</lastmod>
+    <image:image>
+      <image:loc>https://www.legacyinvestingshow.com/assets/images/blog/airbnb-arbitrage-guide.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.legacyinvestingshow.com/blog/alternative-investments-guide</loc>
     <lastmod>2026-02-15</lastmod>
     <image:image>
@@ -614,6 +642,20 @@
     <lastmod>2026-02-16</lastmod>
     <image:image>
       <image:loc>https://www.legacyinvestingshow.com/assets/images/blog/best-401k-strategy-for-2025.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.legacyinvestingshow.com/blog/best-airbnb-automation-tools-for-small-operators</loc>
+    <lastmod>2026-03-06</lastmod>
+    <image:image>
+      <image:loc>https://www.legacyinvestingshow.com/assets/images/blog/airbnb-arbitrage-guide.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.legacyinvestingshow.com/blog/best-airbnb-markets-2026-how-to-evaluate-a-city</loc>
+    <lastmod>2026-03-06</lastmod>
+    <image:image>
+      <image:loc>https://www.legacyinvestingshow.com/assets/images/blog/airbnb-arbitrage-guide.jpg</image:loc>
     </image:image>
   </url>
   <url>
@@ -1646,6 +1688,13 @@
     </image:image>
   </url>
   <url>
+    <loc>https://www.legacyinvestingshow.com/blog/how-to-convince-landlords-for-airbnb-arbitrage</loc>
+    <lastmod>2026-03-06</lastmod>
+    <image:image>
+      <image:loc>https://www.legacyinvestingshow.com/assets/images/blog/airbnb-arbitrage-guide.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.legacyinvestingshow.com/blog/how-to-create-operating-agreement-for-llc</loc>
     <lastmod>2026-02-16</lastmod>
     <image:image>
@@ -1720,6 +1769,13 @@
     <lastmod>2026-02-16</lastmod>
     <image:image>
       <image:loc>https://www.legacyinvestingshow.com/assets/images/blog/how-to-report-royalty-income-on-tax-return.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.legacyinvestingshow.com/blog/how-to-scale-an-airbnb-arbitrage-business</loc>
+    <lastmod>2026-03-06</lastmod>
+    <image:image>
+      <image:loc>https://www.legacyinvestingshow.com/assets/images/blog/airbnb-arbitrage-guide.jpg</image:loc>
     </image:image>
   </url>
   <url>
@@ -1923,6 +1979,13 @@
     <lastmod>2026-02-16</lastmod>
     <image:image>
       <image:loc>https://www.legacyinvestingshow.com/assets/images/blog/ira-strategy-tax-implications.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.legacyinvestingshow.com/blog/is-airbnb-arbitrage-legal-what-hosts-need-to-check</loc>
+    <lastmod>2026-03-06</lastmod>
+    <image:image>
+      <image:loc>https://www.legacyinvestingshow.com/assets/images/blog/airbnb-arbitrage-guide.jpg</image:loc>
     </image:image>
   </url>
   <url>
@@ -3214,6 +3277,13 @@
     </image:image>
   </url>
   <url>
+    <loc>https://www.legacyinvestingshow.com/blog/short-term-vs-long-term-rental-roi-for-new-investors</loc>
+    <lastmod>2026-03-06</lastmod>
+    <image:image>
+      <image:loc>https://www.legacyinvestingshow.com/assets/images/blog/airbnb-arbitrage-guide.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.legacyinvestingshow.com/blog/should-i-start-an-llc-or-an-s-corp</loc>
     <lastmod>2026-02-16</lastmod>
     <image:image>
@@ -3887,306 +3957,306 @@
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/1031-exchange-vs-opportunity-zones</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/1031-exchange</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/augusta-rule</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/backdoor-roth-ira</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/bonus-depreciation</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/bunching-deductions</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/business-vehicle-deduction</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/capital-gains-exclusion</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/captive-insurance</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/charitable-remainder-trust</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/cost-segregation</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/dependent-care-fsa</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/donor-advised-fund</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/estimated-tax-payments</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/family-employment-tax-strategy</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/for/airbnb-hosts</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/for/business-owners</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/for/high-income-earners</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/for/real-estate-investors</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/for/self-employed</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/for/w2-employees</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/home-office-deduction</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/hsa-strategy</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/income-shifting-strategies</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/installment-sale</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/mega-backdoor-roth</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/net-unrealized-appreciation</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/opportunity-zones</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/pass-through-entity-tax</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/qualified-business-income-deduction</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/qualified-opportunity-zone-fund</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/qualified-small-business-stock</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/real-estate-professional-status</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/rental-property-depreciation</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/roth-conversion-ladder</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/s-corp-strategy</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/section-179</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/self-directed-ira</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/short-term-rental-loophole</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/solo-401k</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/state-tax-residency</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/tax-gain-harvesting</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tax-strategies/tax-loss-harvesting</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/compare</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/compare/721-upreit-vs-dst-aging-landlords</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/compare/augusta-rule-vs-home-office-deduction-s-corp</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/compare/backdoor-roth-vs-taxable-brokerage-high-income-earners</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/compare/capital-gains-harvesting-vs-roth-conversion-early-retirees</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/compare/cost-segregation-vs-str-loophole-w2-passive-loss</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/compare/installment-sale-vs-deferred-sales-trust-small-business-exit</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/compare/mark-to-market-vs-capital-gains-active-traders</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/compare/mfj-vs-mfs-high-income-student-loans</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/compare/pricelabs-vs-pms-native-pricing-multi-property</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/compare/qcd-first-vs-roth-conversion-first-irmaa</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/compare/s-corp-election-vs-sole-proprietorship-high-income-consultants</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/compare/safe-harbor-vs-annualized-income-1099</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/compare/solo-401k-loan-vs-heloc-down-payment</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tools</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tools/accountable-plan-home-office-reimbursement-calculator</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tools/annualized-income-estimated-tax-calculator</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tools/augusta-rule-meeting-log-and-rent-calculator</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tools/backdoor-roth-pro-rata-calculator</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tools/capital-gains-headroom-calculator</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tools/cost-segregation-payback-calculator</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tools/estimated-tax-safe-harbor-planner</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tools/installment-sale-tax-cashflow-planner</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tools/irmaa-headroom-roth-conversion-planner</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tools/qcd-vs-roth-conversion-planner</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tools/real-estate-professional-status-hours-tracker</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tools/solo-401k-loan-vs-heloc-calculator</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tools/w2-withholding-catch-up-planner</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/worksheets</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/worksheets/qbi-deduction-worksheet</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/worksheets/s-corp-election-decision-worksheet</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/worksheets/tax-loss-harvesting-worksheet</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
   </url>
 </urlset>

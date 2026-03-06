@@ -75,17 +75,7 @@
 
     {{faqSchema}}
 
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
-
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-2578PT1WSS');
-    </script>
+    {{analyticsHead}}
 
     <style>
         .strategy-hero {
@@ -374,9 +364,22 @@
             margin-top: 0.5rem;
         }
     </style>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-2578PT1WSS');
+    </script>
+
 </head>
-<body class="bg-white text-gray-900">
+<body class="bg-white text-gray-900" data-page-type="tax_strategy" data-page-slug="{{slug}}" data-page-title="{{title}}">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    {{tagManagerBody}}
     <!-- Skip to main content -->
     <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-gray-900 text-white px-4 py-2 z-50">
         Skip to main content
@@ -391,11 +394,8 @@
                     <span>Legacy Investing Show</span>
                 </a>
 
-                <div class="hidden md:flex items-center gap-6">
-                    <a href="/" class="nav-link">Home</a>
-                    <a href="/about" class="nav-link">About</a>
-                    <a href="/success-stories" class="nav-link">Results</a>
-                    <a href="/blog/" class="nav-link">Blog</a>
+                <div class="hidden md:flex items-center gap-4">
+                    {{primaryNavLinks}}
                 </div>
 
                 <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
@@ -407,10 +407,7 @@
 
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <div class="flex flex-col gap-3">
-                    <a href="/" class="nav-link">Home</a>
-                    <a href="/about" class="nav-link">About</a>
-                    <a href="/success-stories" class="nav-link">Results</a>
-                    <a href="/blog/" class="nav-link">Blog</a>
+                    {{primaryNavLinks}}
                 </div>
             </div>
         </nav>
@@ -515,8 +512,8 @@
 
                         <div class="sidebar-card" style="background: #ecfdf5;">
                             <h3 class="sidebar-card__title">Ready to Save on Taxes?</h3>
-                            <p style="font-size: 0.875rem; color: #4b5563; margin-bottom: 1rem;">Learn how to implement this and other tax strategies in Preston's wealth-building programs.</p>
-                            <a href="/blog/" style="display: inline-block; padding: 0.75rem 1.5rem; background: #10b981; color: white; font-weight: 600; border-radius: 0.5rem; text-decoration: none; font-size: 0.875rem;">View Resources</a>
+                            <p style="font-size: 0.875rem; color: #4b5563; margin-bottom: 1rem;">Use the tax strategy library, compare guides, and tools to turn this concept into an actual plan.</p>
+                            <a href="/tax-strategies/" style="display: inline-block; padding: 0.75rem 1.5rem; background: #10b981; color: white; font-weight: 600; border-radius: 0.5rem; text-decoration: none; font-size: 0.875rem;">Explore Tax Strategies</a>
                         </div>
                     </aside>
                 </div>
@@ -538,9 +535,9 @@
             <div class="container-custom">
                 <div class="cta-card">
                     <h2 class="cta-card__title">Master Tax Strategies with Preston</h2>
-                    <p class="cta-card__text">Join the 3-Day Wealth Challenge to learn actionable tax strategies, investing techniques, and wealth-building fundamentals.</p>
-                    <a href="https://www.joinlwb.com/intensive" class="cta-card__button">
-                        Start the Challenge
+                    <p class="cta-card__text">Use the free tax strategy masterclass to see how this move fits into a broader wealth and decision system.</p>
+                    <a href="https://www.managemoney101.com/2025workshop" class="cta-card__button">
+                        Reserve Your Free Tax Strategy Seat
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
@@ -559,12 +556,10 @@
                     <span>Legacy Investing Show</span>
                 </div>
                 <div class="footer-links">
-                    <a href="/success-stories">Results</a>
-                    <a href="/blog/">Blog</a>
-                    <a href="/tax-strategies/">Tax Strategies</a>
+                    {{footerLinks}}
                 </div>
             </div>
-            <div class="footer-copyright">Copyright 2025</div>
+            <div class="footer-copyright">Copyright {{footerYear}}</div>
         </div>
     </footer>
 

@@ -185,6 +185,11 @@ function expandDescriptionFromOg(content) {
   return content.replace(descriptionMatch[0], replacement);
 }
 
+function hasConfiguredGaTracking() {
+  const value = String(GA_TRACKING_ID || '').trim();
+  return value && value !== 'G-XXXXXXXXXX' && !value.includes('XXXX');
+}
+
 function injectVerificationMeta(content) {
   if (content.includes('google-site-verification')) return content;
   const snippet =
@@ -221,6 +226,7 @@ function injectGtmScript(content) {
 }
 
 function injectGaScript(content) {
+  if (!hasConfiguredGaTracking()) return content;
   if (content.includes('googletagmanager.com/gtag/js?id=')) return content;
 
   const gaSnippet =
@@ -238,6 +244,18 @@ function injectGaScript(content) {
   }
 
   return content;
+}
+
+function stripPlaceholderGaScript(content) {
+  return content
+    .replace(
+      /\s*<!-- Google Analytics -->\s*<script async src="https:\/\/www\.googletagmanager\.com\/gtag\/js\?id=G-XXXXXXXXXX"><\/script>\s*<script>[\s\S]*?gtag\('config', 'G-XXXXXXXXXX'\);[\s\S]*?<\/script>\s*/gi,
+      '\n'
+    )
+    .replace(
+      /\s*<script async src="https:\/\/www\.googletagmanager\.com\/gtag\/js\?id=G-XXXXXXXXXX"><\/script>\s*<script>[\s\S]*?gtag\('config', 'G-XXXXXXXXXX'\);[\s\S]*?<\/script>\s*/gi,
+      '\n'
+    );
 }
 
 function injectGtmNoScript(content) {
@@ -263,6 +281,7 @@ function processFile(filePath) {
   next = ensureTitleLength(next);
   next = expandTitleFromOg(next);
   next = normalizeExtraH1(next);
+  next = stripPlaceholderGaScript(next);
   next = injectGtmScript(next);
   next = injectGaScript(next);
   next = injectGtmNoScript(next);

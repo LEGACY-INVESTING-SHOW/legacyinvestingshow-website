@@ -1,7 +1,36 @@
 /**
  * Legacy Investing Show - Main JavaScript
- * Minimal JS for mobile menu and FAQ accordion
+ * Shared UI behavior and lightweight analytics hooks
  */
+
+function pushAnalyticsEvent(eventName, properties = {}) {
+    if (!eventName) return;
+
+    const payload = {
+        event: eventName,
+        ...properties
+    };
+
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push(payload);
+
+    if (typeof window.gtag === 'function') {
+        window.gtag('event', eventName, properties);
+    }
+}
+
+function buildTrackingPayload(element) {
+    const body = document.body || {};
+
+    return {
+        label: element?.dataset?.trackLabel || '',
+        location: element?.dataset?.trackLocation || '',
+        destination: element?.dataset?.trackDestination || element?.getAttribute?.('href') || '',
+        page_type: body.dataset?.pageType || '',
+        page_slug: body.dataset?.pageSlug || '',
+        page_title: body.dataset?.pageTitle || document.title
+    };
+}
 
 // Mobile Menu Toggle
 const mobileMenuBtn = document.getElementById('mobile-menu-btn');
@@ -52,6 +81,33 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             });
         }
     });
+});
+
+// Declarative CTA/event tracking
+document.querySelectorAll('[data-track-event]').forEach(element => {
+    element.addEventListener('click', () => {
+        pushAnalyticsEvent(element.dataset.trackEvent, buildTrackingPayload(element));
+    });
+});
+
+// Track first meaningful interaction on tool and worksheet pages
+let hasTrackedPageStart = false;
+document.addEventListener('input', (event) => {
+    if (hasTrackedPageStart) return;
+
+    const pageType = document.body?.dataset?.pageType || '';
+    if (!['tool', 'worksheet'].includes(pageType)) return;
+    if (!(event.target instanceof HTMLInputElement) &&
+        !(event.target instanceof HTMLTextAreaElement) &&
+        !(event.target instanceof HTMLSelectElement)) {
+        return;
+    }
+
+    hasTrackedPageStart = true;
+    pushAnalyticsEvent(
+        pageType === 'tool' ? 'tool_started' : 'worksheet_started',
+        buildTrackingPayload(event.target)
+    );
 });
 
 // Close mobile menu when clicking outside

@@ -33,9 +33,9 @@
     {
       "slug": "bonus-depreciation",
       "title": "Bonus Depreciation",
-      "shortDescription": "Deduct 60% of qualifying property costs in the first year (2024)",
-      "fullDescription": "Bonus depreciation allows investors to immediately deduct a large percentage of the purchase price of eligible assets. For 2024, the bonus depreciation rate is 60%, stepping down to 40% in 2025 and 20% in 2026 before phasing out completely in 2027 unless Congress extends it.",
-      "keywords": ["bonus depreciation", "100 percent bonus depreciation", "accelerated depreciation 2024", "tax cuts and jobs act depreciation"],
+      "shortDescription": "Deduct a large share of qualifying property costs in the first year",
+      "fullDescription": "Bonus depreciation allows investors to immediately deduct a large percentage of the purchase price of eligible assets. The percentage changes by tax year, so verify the current-year rate before you file or model savings.",
+      "keywords": ["bonus depreciation", "accelerated depreciation", "first-year depreciation", "tax cuts and jobs act depreciation"],
       "benefitsFor": ["Business owners", "Real estate investors", "Equipment purchasers", "Vehicle buyers"],
       "potentialSavings": "60% of asset cost as immediate deduction",
       "minimumPropertyValue": "No minimum",
@@ -51,8 +51,8 @@
           "answer": "Qualifying property includes new and used tangible property with a recovery period of 20 years or less, certain computer software, and qualified improvement property."
         },
         {
-          "question": "What is the bonus depreciation rate for 2024?",
-          "answer": "The bonus depreciation rate for 2024 is 60%. It will decrease to 40% in 2025, 20% in 2026, and phase out completely in 2027."
+          "question": "What is the current bonus depreciation rate?",
+          "answer": "The bonus depreciation percentage changes by tax year. Always confirm the current-year rate before you model savings or file a return."
         },
         {
           "question": "Can bonus depreciation create a loss?",
@@ -154,7 +154,7 @@
       "slug": "section-179",
       "title": "Section 179 Deduction",
       "shortDescription": "Immediately expense up to $1.16M in business equipment",
-      "fullDescription": "Section 179 allows businesses to deduct the full purchase price of qualifying equipment and software purchased during the tax year, rather than depreciating it over time. For 2024, the deduction limit is $1,160,000 with a phase-out threshold of $2,890,000.",
+      "fullDescription": "Section 179 allows businesses to deduct the full purchase price of qualifying equipment and software purchased during the tax year, rather than depreciating it over time. The deduction limit and phase-out threshold are updated by the IRS each year.",
       "keywords": ["section 179", "section 179 deduction", "equipment expensing", "business tax deduction"],
       "benefitsFor": ["Small business owners", "Self-employed individuals", "Equipment-heavy businesses", "Vehicle purchasers"],
       "potentialSavings": "Up to $1,160,000 immediate deduction",
@@ -167,8 +167,8 @@
       "relatedStrategies": ["bonus-depreciation", "vehicle-deductions", "home-office-deduction"],
       "faqs": [
         {
-          "question": "What is the Section 179 limit for 2024?",
-          "answer": "For 2024, the Section 179 deduction limit is $1,160,000. The deduction begins to phase out when total equipment purchases exceed $2,890,000."
+          "question": "What is the current Section 179 limit?",
+          "answer": "Section 179 limits and phase-out thresholds change by tax year. Check the current IRS numbers before you rely on any model or equipment plan."
         },
         {
           "question": "What qualifies for Section 179?",
@@ -217,7 +217,7 @@
       "fullDescription": "A Solo 401(k), also known as an Individual 401(k), is a retirement plan for self-employed individuals with no full-time employees. It allows significantly higher contribution limits than a traditional IRA, plus the ability to take loans from your account and invest in alternative assets.",
       "keywords": ["solo 401k", "individual 401k", "self employed 401k", "one participant 401k"],
       "benefitsFor": ["Self-employed individuals", "Freelancers", "Side business owners", "Consultants"],
-      "potentialSavings": "Up to $69,000 in annual contributions (2024)",
+      "potentialSavings": "High annual contribution ceiling with catch-up options",
       "minimumPropertyValue": "No minimum",
       "bestFor": "Self-employed individuals with high income",
       "complexity": "Intermediate",
@@ -227,12 +227,12 @@
       "relatedStrategies": ["self-directed-ira", "mega-backdoor-roth", "sep-ira"],
       "faqs": [
         {
-          "question": "What are the Solo 401(k) contribution limits for 2024?",
-          "answer": "For 2024, you can contribute up to $23,000 as an employee deferral plus up to 25% of net self-employment income as employer contributions, for a total maximum of $69,000 ($76,500 if 50+)."
+          "question": "What are the current Solo 401(k) contribution limits?",
+          "answer": "Solo 401(k) employee and employer contribution limits are updated by the IRS each year. Confirm the current-year limits before you finalize your contribution plan."
         },
         {
           "question": "Can I have a Solo 401(k) and a regular 401(k)?",
-          "answer": "Yes, but the employee contribution limit ($23,000 for 2024) is shared across all 401(k) plans. Employer contributions are calculated separately for each plan."
+          "answer": "Yes, but the employee deferral limit is shared across all 401(k) plans. Employer contribution rules are calculated separately for each plan."
         },
         {
           "question": "Can I take a loan from my Solo 401(k)?",
@@ -247,7 +247,7 @@
       "fullDescription": "A Health Savings Account (HSA) offers a triple tax advantage: contributions are tax-deductible, growth is tax-free, and withdrawals for qualified medical expenses are tax-free. Many investors use HSAs as stealth retirement accounts by paying current medical expenses out-of-pocket and letting the HSA grow.",
       "keywords": ["hsa strategy", "health savings account", "hsa investing", "hsa retirement strategy"],
       "benefitsFor": ["High-deductible health plan holders", "Long-term savers", "Early retirees", "Tax-conscious investors"],
-      "potentialSavings": "Triple tax benefit on $4,150 individual / $8,300 family (2024)",
+      "potentialSavings": "Triple tax benefit with annual contribution limits",
       "minimumPropertyValue": "No minimum",
       "bestFor": "Healthy individuals with high-deductible health plans",
       "complexity": "Beginner",
