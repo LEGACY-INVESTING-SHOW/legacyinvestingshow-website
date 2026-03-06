@@ -708,3 +708,45 @@ npm run start
 - Terms of service for programs
 - Cookie consent if using analytics
 - Proper attribution for images
+
+## Repo & Deployment Context
+
+- **Local repo path:** `/Users/deveshdhardubey/legacyinvestingshow-website`
+- **Canonical GitHub repo:** `https://github.com/LEGACY-INVESTING-SHOW/legacyinvestingshow-website`
+- **Git remote name:** `origin`
+- **Default branch:** `main`
+- **GitHub profile:** `https://github.com/Deveshwy`
+- **Correct Vercel project dashboard:** `https://vercel.com/legacy-investing-show/legacyinvestingshow`
+- **Correct production domain:** `https://www.legacyinvestingshow.com`
+- **Current linked Vercel project in this repo:** `.vercel/project.json`
+
+### Deployment Rules
+
+- **Do not create a new Vercel project for this repo.**
+- Always deploy to the existing Vercel project: `legacyinvestingshow`
+- Do not relink this repo to a different Vercel project unless the user explicitly asks.
+- Do not run `vercel project add` for this repo.
+- If a manual deploy is needed, make sure `.vercel/project.json` still points to the existing `legacyinvestingshow` project before deploying.
+
+### Correct Publish Workflow
+
+1. Make changes in source files, especially `content/blog/*.md` for blog posts.
+2. Run the required build steps locally. For full-site changes, use `npm run build`.
+3. Verify locally with `npm run start`.
+4. Commit only the intended files.
+5. Push to `origin main`.
+6. Let the existing GitHub-connected Vercel project deploy from `main`, or run a manual production deploy only against the existing `legacyinvestingshow` project.
+
+### Manual Deploy Notes
+
+- Safe manual production deploy command:
+  `vercel --prod`
+- Run manual deploys only from this repo when `.vercel/project.json` is present and correct.
+- After deploy, verify the production URL on `https://www.legacyinvestingshow.com`, not just a preview URL.
+
+### Blog URL Pattern
+
+- Blog source lives in `content/blog/<slug>.md`
+- Generated page URL is:
+  `https://www.legacyinvestingshow.com/blog/<slug>`
+- The site uses clean URLs. Do not hand out `.html` blog URLs unless specifically needed for filesystem debugging.
