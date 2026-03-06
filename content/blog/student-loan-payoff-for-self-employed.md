@@ -139,8 +139,8 @@ relatedPosts:
     title: 'Credit Score Optimization: Improve Your Score Fast'
   - slug: debt-avalanche-method
     title: 'Debt Avalanche Method: The Fastest Way to Pay Off Debt'
-readingTime: 9 min read
-wordCount: '2041'
+readingTime: 11 min read
+wordCount: '2180'
 ---
 A smart student loan payoff for self employed borrowers starts with system design, not motivation. When your income can jump from a strong month to a weak month, fixed repayment advice built for salaried workers often fails. You need a plan that can absorb volatility, protect your business, and still reduce interest over time.
 

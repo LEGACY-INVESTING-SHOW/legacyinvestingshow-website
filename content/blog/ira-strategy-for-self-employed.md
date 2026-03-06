@@ -145,8 +145,8 @@ relatedPosts:
     title: >-
       401k Strategy for Beginners: Complete 2026 Guide to Matching, Taxes, and
       Contribution Decisions
-readingTime: 9 min read
-wordCount: '2045'
+readingTime: 11 min read
+wordCount: '2109'
 ---
 If you run a one-person business, an ira strategy for self employed owners is not just an account choice. It is a tax-timing decision, a cash-flow decision, and a future withdrawal decision.
 

@@ -142,8 +142,8 @@ relatedPosts:
     title: 'Airbnb Cash Flow vs Notes Investing: Which Strategy Works Better in 2026?'
   - slug: atm-business-guide
     title: 'ATM Business Guide: Passive Income from Cash Machines'
-readingTime: 9 min read
-wordCount: '1910'
+readingTime: 11 min read
+wordCount: '2067'
 ---
 If you have ever asked **how is royalty income taxed**, you are asking the right first question before signing a licensing deal, publishing a digital product, or inheriting mineral rights. Royalty income can look simple on a 1099, but the tax result changes based on your role, contract language, and whether the IRS sees your activity as passive ownership or an active business.
 

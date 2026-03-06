@@ -3,6 +3,8 @@
     "slug": "augusta-rule-vs-home-office-deduction-s-corp",
     "title": "Augusta Rule vs Home Office Deduction for S-Corp Owners",
     "description": "A real-world comparison for S-corp owners choosing between Augusta Rule payments and accountable-plan home office reimbursements, with documentation standards and a worked scenario.",
+    "quickVerdict": "Bigger write-off is not the whole game.",
+    "bestFor": "S-corp owners working from home who need a defensible reimbursement strategy.",
     "intro": "This is not an either-or decision in most real businesses. The real question is which method you can support with clean facts, clean records, and a process you will actually follow all year.",
     "opening": [
       "If you run an S-corp and you work from home, you have heard two things. Someone told you the Augusta Rule is tax-free money. Someone else told you to do a home office deduction.",
@@ -128,6 +130,8 @@
     "slug": "mfj-vs-mfs-high-income-student-loans",
     "title": "MFJ vs MFS for High-Income Couples with Student Loans",
     "description": "A cash-flow-first comparison of MFJ vs MFS when income-driven repayment and high income collide, with a worked example and annual review checklist.",
+    "quickVerdict": "Model tax and loan payments together.",
+    "bestFor": "High-income couples with student loan payments tied to AGI or filing status.",
     "intro": "Couples get burned here because they optimize taxes in isolation and ignore the other half of the equation: the student loan payment formula. The right answer is the one that lowers total household outflow, not the one that looks prettiest on a tax return.",
     "opening": [
       "A lot of couples make $150k, $250k, $350k and still say the same thing. They make good money but they do not feel wealthy.",
@@ -253,6 +257,8 @@
     "slug": "safe-harbor-vs-annualized-income-1099",
     "title": "Safe Harbor vs Annualized Income Method for Uneven 1099 Income",
     "description": "A practical comparison for freelancers with lumpy income: safe harbor vs annualized estimated taxes, with decision matrix and execution controls.",
+    "quickVerdict": "Simplicity and precision rarely peak together.",
+    "bestFor": "1099 earners with uneven quarterly income and real bookkeeping discipline.",
     "intro": "If your income is back-loaded or unpredictable, the annualized method can reduce penalties and preserve cash. It only works if your books are tight. Safe harbor is less precise but more execution-proof.",
     "opening": [
       "Uneven income is normal for consultants and freelancers. One quarter is quiet, the next quarter is a monster.",
@@ -378,6 +384,8 @@
     "slug": "cost-segregation-vs-str-loophole-w2-passive-loss",
     "title": "Cost Segregation vs STR Loophole for W-2 Professionals with Passive Loss Limits",
     "description": "A usable-loss comparison for W-2 professionals: cost segregation vs STR participation, with recapture and documentation notes.",
+    "quickVerdict": "Usable loss matters more than a headline deduction.",
+    "bestFor": "W-2 professionals comparing passive-loss strategies on real estate holdings.",
     "intro": "In high-income W-2 profiles, the question is not how big the paper deduction is. The question is how much of it you can use this year without creating a carryforward trap.",
     "opening": [
       "I have seen a lot of W-2 earners buy a property, run a cost seg study, and celebrate a huge loss on paper.",
@@ -503,6 +511,8 @@
     "slug": "721-upreit-vs-dst-aging-landlords",
     "title": "721 UPREIT vs DST for Aging Landlords Exiting Active Management",
     "description": "A comparison for landlords shifting from active management to passive income: 721 UPREIT exchange vs DST, focused on liquidity, control, and concentration risk.",
+    "quickVerdict": "Control, liquidity, and concentration decide it.",
+    "bestFor": "Aging landlords who want out of day-to-day management without rushing the exit.",
     "intro": "For aging landlords, this decision is usually about control, liquidity, and concentration risk as much as taxes. The best option is the one that matches your next 5 to 10 years, not just this year tax bill.",
     "opening": [
       "A lot of landlords hit the same wall. The properties are doing fine, but the phone never stops. Tenants, repairs, insurance, taxes, and the feeling that you are always on call.",
@@ -628,6 +638,8 @@
     "slug": "pricelabs-vs-pms-native-pricing-multi-property",
     "title": "PriceLabs Rule-Based Pricing vs PMS Native Pricing for Multi-Property Operators",
     "description": "A practical comparison for STR operators running multiple listings: PriceLabs rule sets vs PMS native pricing, with guardrails, failure modes, and an execution plan.",
+    "quickVerdict": "Portfolio complexity decides the winner.",
+    "bestFor": "Multi-property STR operators choosing the pricing system they will actually maintain.",
     "intro": "Pricing is not a one-time setting. It is a system. The right tool is the one that matches your inventory, your seasonality, and your ability to manage overrides without creating chaos.",
     "opening": [
       "Once you have more than a couple listings, pricing becomes its own job. Events, weekday dips, minimum stay changes, last-minute gaps, and the calendar gets weird fast.",
@@ -753,6 +765,8 @@
     "slug": "solo-401k-loan-vs-heloc-down-payment",
     "title": "Solo 401(k) Loan vs HELOC for Down Payment Funding",
     "description": "A comparison for business owners and high earners funding a down payment: Solo 401(k) loan vs HELOC, focused on risk, flexibility, and real cost.",
+    "quickVerdict": "Funding speed can hide long-term drag.",
+    "bestFor": "Business owners funding a down payment without blowing up liquidity or retirement momentum.",
     "intro": "Both options can work. Both can also create a mess if you ignore job risk, liquidity needs, and the true cost of pulling leverage from the wrong place.",
     "opening": [
       "When a good deal shows up, the down payment is usually the bottleneck.",
@@ -878,6 +892,8 @@
     "slug": "mark-to-market-vs-capital-gains-active-traders",
     "title": "Mark-to-Market Election vs Capital Gains for Active Traders",
     "description": "A comparison for active traders: mark-to-market election vs capital gains treatment, focused on qualification, wash-sale exposure, and long-term flexibility.",
+    "quickVerdict": "Trader status decides everything.",
+    "bestFor": "High-frequency traders choosing between tax simplicity and long-term flexibility.",
     "intro": "This is a high-impact choice. It can simplify some tax pain points for true active traders, but it can also create long-term constraints if your trading profile changes.",
     "opening": [
       "Trading taxes are one of the fastest ways to feel like the system is rigged.",
@@ -1003,6 +1019,8 @@
     "slug": "qcd-first-vs-roth-conversion-first-irmaa",
     "title": "QCD First vs Roth Conversion First to Manage IRMAA",
     "description": "A retirement planning comparison: QCD-first vs Roth-conversion-first, focused on IRMAA, RMD timing, and charitable intent.",
+    "quickVerdict": "Income timing can move Medicare costs.",
+    "bestFor": "Retirees balancing charitable intent, Roth planning, and IRMAA exposure.",
     "intro": "A clean retirement plan is not just about taxes. It is about Medicare premiums, RMD timing, and avoiding avoidable income spikes. Ordering matters.",
     "opening": [
       "I have watched retirees do a big Roth conversion and feel good about it.",
@@ -1128,6 +1146,8 @@
     "slug": "installment-sale-vs-deferred-sales-trust-small-business-exit",
     "title": "Installment Sale vs Deferred Sales Trust for a Small Business Exit",
     "description": "A business-exit comparison: installment sale vs deferred sales trust concepts, focused on timing, risk, fees, and realistic execution.",
+    "quickVerdict": "Simple deferral and layered complexity are not the same thing.",
+    "bestFor": "Small-business owners pressure-testing sale timing, fees, and execution risk before exit.",
     "intro": "The biggest tax planning mistake in a business sale is waiting until the LOI is signed. Deal structure, timing, and risk controls decide outcomes more than clever ideas at the end.",
     "opening": [
       "For most owners, selling the business is the biggest check of their life.",
@@ -1246,6 +1266,387 @@
       {
         "href": "/blog/",
         "label": "More Exit and Wealth Strategy Guides"
+      }
+    ]
+  },
+  {
+    "slug": "s-corp-election-vs-sole-proprietorship-high-income-consultants",
+    "title": "S-Corp Election vs Sole Proprietorship for High-Income Consultants",
+    "description": "A consultant-focused comparison of S-corp election vs staying a sole proprietor, focused on payroll friction, QBI interaction, and realistic tax savings.",
+    "quickVerdict": "Savings only count if payroll reality holds.",
+    "bestFor": "High-income consultants weighing S-corp tax savings against payroll and compliance burden.",
+    "intro": "This decision goes wrong when people model only the upside. The right answer depends on reasonable salary, admin discipline, and whether the cash-flow profile can support payroll all year.",
+    "opening": [
+      "A lot of consultants hear one sentence and stop thinking. File the S-corp election, save on self-employment tax, move on.",
+      "That is how people walk into payroll, quarterly compliance, and salary support issues they never priced in.",
+      "The real question is not whether an S-corp can save money. The real question is whether the savings survive the way you actually run the business."
+    ],
+    "commonMistake": "Using an aggressive reasonable salary assumption to force projected savings, then acting surprised when payroll and compliance get messy.",
+    "decisionFrameworkLead": "Start with role, profit stability, and payroll reality before you chase savings.",
+    "preDecisionSteps": [
+      "Write down actual annual profit, not a best-case growth story.",
+      "Document the owner role and what an arms-length replacement would be paid.",
+      "List the payroll, bookkeeping, and filing tasks that become mandatory after the election.",
+      "Run a savings model and a friction model, including payroll vendor cost and compliance time.",
+      "Stress test weak months so the election still works when revenue is uneven."
+    ],
+    "optionAName": "S-Corp Election",
+    "optionBName": "Remain Sole Proprietor",
+    "winnerLabel": "Depends on profit stability and payroll readiness",
+    "whenA": "S-corp election tends to win when profit is high enough, salary support is real, and the owner can run clean payroll and books without chaos.",
+    "whenB": "Remaining a sole proprietor tends to win when admin simplicity, volatile cash flow, or weak salary support make the election fragile.",
+    "decisionMatrix": [
+      {
+        "factor": "Tax savings potential",
+        "a": "Can reduce self-employment tax if salary is supportable",
+        "b": "No entity-level payroll tax optimization",
+        "better": "A"
+      },
+      {
+        "factor": "Admin burden",
+        "a": "Payroll, filings, reasonable salary support, cleaner bookkeeping required",
+        "b": "Simpler operating model",
+        "better": "B"
+      },
+      {
+        "factor": "Cash-flow flexibility",
+        "a": "Less forgiving because payroll cadence matters",
+        "b": "More flexible in uneven income months",
+        "better": "B"
+      },
+      {
+        "factor": "Audit defensibility",
+        "a": "Strong if salary support and books are clean",
+        "b": "Strong if Schedule C reporting is clean",
+        "better": "Tie"
+      },
+      {
+        "factor": "Scalability for higher income",
+        "a": "Often stronger when profits are stable and growing",
+        "b": "Often weaker as profits rise and SE tax drag grows",
+        "better": "A"
+      }
+    ],
+    "workedExample": {
+      "profile": "Consultant with projected net income of $260k, no employees, and uneven but generally strong monthly cash flow.",
+      "assumptions": [
+        "Reasonable salary modeled at $110k with payroll provider cost and bookkeeping upgrades included",
+        "Sole proprietor path keeps current admin costs but leaves full self-employment tax exposure in place",
+        "Owner expects at least two weaker revenue months each year"
+      ],
+      "aOutcome": "S-corp election produces estimated tax savings, but only if payroll runs cleanly and salary support is defensible.",
+      "bOutcome": "Sole proprietor path costs more in tax but preserves flexibility and removes payroll/compliance friction.",
+      "takeaway": "If you need a heroic salary assumption to make the election look good, it is not really good. Durable savings beat theoretical savings."
+    },
+    "edgeCases": [
+      "Income drops midyear and payroll becomes the wrong shape for the business.",
+      "The owner role is broad enough that an aggressive salary assumption becomes hard to defend.",
+      "Bookkeeping is sloppy, so the admin burden compounds instead of staying manageable.",
+      "State payroll and entity filing obligations are more expensive than the model assumed."
+    ],
+    "avoidA": [
+      "You cannot defend the reasonable salary with facts.",
+      "Your cash flow is too uneven to handle payroll comfortably.",
+      "You do not have a clean plan for payroll, deposits, and filings."
+    ],
+    "avoidB": [
+      "Profits are consistently high enough that self-employment tax drag is too expensive to ignore.",
+      "You want cleaner owner comp separation and can support payroll discipline.",
+      "Your current admin simplicity is costing too much tax leakage."
+    ],
+    "checklist": [
+      "Write the salary rationale before filing the election.",
+      "Map payroll, bookkeeping, and filing ownership by person or vendor.",
+      "Stress test two weak months and one strong bonus month.",
+      "Update estimated tax assumptions after the entity choice is final.",
+      "Save the decision memo with the salary support packet."
+    ],
+    "advisorQuestions": [
+      "What salary range would you defend based on this owner role?",
+      "At what profit level does the election become clearly worth it in my case?",
+      "What state-level payroll and filing costs should I add to the model?",
+      "How should QBI and retirement contributions change the decision?"
+    ],
+    "faq": [
+      {
+        "q": "Does an S-corp always save money for consultants?",
+        "a": "No. It can save money, but the savings only matter if the salary is supportable and the compliance process is real."
+      },
+      {
+        "q": "What breaks the model most often?",
+        "a": "Aggressive salary assumptions and messy payroll execution are the two biggest problems."
+      },
+      {
+        "q": "Should I decide based on tax alone?",
+        "a": "No. This is a tax and operating-system decision. If the operating system breaks, the tax benefit is not worth much."
+      }
+    ],
+    "related": [
+      {
+        "href": "/blog/s-corp-election-calculator",
+        "label": "S-Corp Election Calculator"
+      },
+      {
+        "href": "/blog/s-corp-election-checklist",
+        "label": "S-Corp Election Checklist"
+      },
+      {
+        "href": "/tax-strategies/s-corp-strategy",
+        "label": "S-Corp Strategy"
+      }
+    ]
+  },
+  {
+    "slug": "backdoor-roth-vs-taxable-brokerage-high-income-earners",
+    "title": "Backdoor Roth vs Taxable Brokerage for High-Income Earners",
+    "description": "A high-income comparison of backdoor Roth contributions vs taxable brokerage funding, focused on pro-rata friction, liquidity, and after-tax flexibility.",
+    "quickVerdict": "Tax-free space is great until pro-rata ruins the story.",
+    "bestFor": "High-income earners deciding where the next investable dollars should go.",
+    "intro": "This is not just an account-choice question. It is a flexibility question, a pro-rata question, and a tax-friction question at the same time.",
+    "opening": [
+      "People love the words Roth. They hear tax-free growth and stop reading.",
+      "That works fine until the backdoor route collides with big pre-tax IRA balances, sloppy basis tracking, or a short time horizon that makes the extra friction not worth it.",
+      "The goal here is not to crown one account forever. The goal is to decide where the next dollars should go based on your real constraints."
+    ],
+    "commonMistake": "Assuming the backdoor Roth is automatically superior without checking pro-rata exposure, liquidity needs, and basis tracking discipline.",
+    "decisionFrameworkLead": "Start with IRA structure, time horizon, and liquidity before you obsess over tax-free growth language.",
+    "preDecisionSteps": [
+      "List all Traditional, SEP, and SIMPLE IRA balances that create pro-rata exposure.",
+      "Write down whether current-year liquidity matters more than long-term tax shelter.",
+      "Estimate contribution amount and time horizon for the money being invested.",
+      "Check whether basis tracking is clean enough to keep the backdoor route simple.",
+      "Model what happens if taxable flexibility matters sooner than expected."
+    ],
+    "optionAName": "Backdoor Roth",
+    "optionBName": "Taxable Brokerage",
+    "winnerLabel": "Depends on pro-rata exposure and liquidity needs",
+    "whenA": "Backdoor Roth tends to win when IRA structure is clean, the time horizon is long, and the investor values protected Roth space more than near-term flexibility.",
+    "whenB": "Taxable brokerage tends to win when pro-rata exposure is ugly, liquidity matters, or the investor wants simpler execution and easier access.",
+    "decisionMatrix": [
+      {
+        "factor": "Tax shelter quality",
+        "a": "High if conversion is mostly clean and basis is tracked",
+        "b": "Lower, but still flexible for gain management",
+        "better": "A"
+      },
+      {
+        "factor": "Liquidity and access",
+        "a": "Contribution path is more rigid",
+        "b": "Higher liquidity and easier access",
+        "better": "B"
+      },
+      {
+        "factor": "Execution complexity",
+        "a": "Higher if pro-rata or basis tracking is messy",
+        "b": "Simpler ongoing execution",
+        "better": "B"
+      },
+      {
+        "factor": "Long-term tax efficiency",
+        "a": "Often stronger with long holding periods",
+        "b": "Depends on gain management and asset location discipline",
+        "better": "A"
+      },
+      {
+        "factor": "Failure risk",
+        "a": "Missing basis or ignoring pre-tax IRA balances",
+        "b": "Behavioral overtrading or poor tax management",
+        "better": "Depends on habits"
+      }
+    ],
+    "workedExample": {
+      "profile": "High-income household earning $360k, investing an additional $14k per year, with existing pre-tax IRA balances of $180k.",
+      "assumptions": [
+        "Household wants long-term growth but also values flexibility for future house or business decisions",
+        "Backdoor route is possible mechanically but pro-rata makes a portion of the conversion taxable",
+        "Taxable brokerage path uses broad-market ETFs and low-turnover discipline"
+      ],
+      "aOutcome": "Backdoor Roth creates valuable tax-free space, but only after pro-rata tax friction and basis tracking are dealt with honestly.",
+      "bOutcome": "Taxable brokerage preserves flexibility and can still be tax-efficient if asset choice and holding behavior stay disciplined.",
+      "takeaway": "If the backdoor route is messy enough to create drag and confusion, taxable brokerage can be the better next-dollar answer."
+    },
+    "edgeCases": [
+      "Large pre-tax IRA balances make a meaningful part of the backdoor conversion taxable.",
+      "Short or uncertain time horizon lowers the value of Roth shelter relative to flexibility.",
+      "The investor needs access to the capital sooner than expected.",
+      "Basis tracking is sloppy, creating avoidable tax confusion later."
+    ],
+    "avoidA": [
+      "You have meaningful pro-rata exposure and no plan to clean it up.",
+      "You do not have confidence in basis tracking or execution discipline.",
+      "Liquidity or optionality is more important than protected Roth space right now."
+    ],
+    "avoidB": [
+      "You have clean access to backdoor Roth space and a long time horizon.",
+      "You are likely to overtrade or lose discipline in a taxable account.",
+      "You value tax-protected compounding more than short-term flexibility."
+    ],
+    "checklist": [
+      "List every IRA balance that matters for pro-rata treatment.",
+      "Write down the actual goal for the next dollars being invested.",
+      "Choose the simpler path if execution discipline is weak.",
+      "Keep basis notes and contribution records with the decision memo.",
+      "Re-evaluate if liquidity needs or IRA balances change."
+    ],
+    "advisorQuestions": [
+      "What is my actual pro-rata exposure today?",
+      "Does the backdoor route still win after friction and basis tracking cost?",
+      "How should asset location change the decision between these two accounts?",
+      "Would future Roth conversion planning change where the next dollars should go?"
+    ],
+    "faq": [
+      {
+        "q": "Is the backdoor Roth always the better answer for high earners?",
+        "a": "No. It is often attractive, but not if pro-rata exposure, weak basis tracking, or near-term liquidity needs make the path messy."
+      },
+      {
+        "q": "When does taxable brokerage win?",
+        "a": "It wins when flexibility, simplicity, or ugly pro-rata math matter more than the protected Roth space."
+      },
+      {
+        "q": "Can both be right?",
+        "a": "Yes. The question is usually where the next marginal dollar should go first, not which account should exist forever."
+      }
+    ],
+    "related": [
+      {
+        "href": "/tools/backdoor-roth-pro-rata-calculator",
+        "label": "Backdoor Roth Pro-Rata Calculator"
+      },
+      {
+        "href": "/blog/roth-ira-vs-taxable-brokerage",
+        "label": "Roth IRA vs Taxable Brokerage"
+      },
+      {
+        "href": "/blog/best-roth-conversion-strategy-calculator",
+        "label": "Best Roth Conversion Strategy Calculator"
+      }
+    ]
+  },
+  {
+    "slug": "capital-gains-harvesting-vs-roth-conversion-early-retirees",
+    "title": "Capital Gains Harvesting vs Roth Conversion for Early Retirees",
+    "description": "A tax-bracket comparison for early retirees choosing between capital gains harvesting and Roth conversions, focused on bracket management, IRMAA, and long-term account sequencing.",
+    "quickVerdict": "The cheaper move this year may cost more later.",
+    "bestFor": "Early retirees with taxable assets and pre-tax retirement balances deciding which tax bucket to optimize first.",
+    "intro": "Early retirement creates a window. The question is how to use it: harvest gains, convert pre-tax dollars, or split the room between both without crossing the wrong line.",
+    "opening": [
+      "Early retirees often do one of two things wrong. They either convert too fast because ordinary brackets look low, or they harvest gains because the capital-gains rate looks cheap and never ask what that does to the bigger plan.",
+      "This is a sequencing decision. The move that feels best this year can easily create the wrong tax shape five years from now.",
+      "The right answer depends on bracket room, IRMAA sensitivity, future RMD pressure, and what tax bucket needs attention first."
+    ],
+    "commonMistake": "Using the whole low-income window for the cheapest-looking tax line item this year without checking future RMDs, basis needs, or IRMAA pressure.",
+    "decisionFrameworkLead": "Start with future account-shape risk and Medicare cliffs before you spend low-income years on the wrong tax bucket.",
+    "preDecisionSteps": [
+      "Write down baseline ordinary income and realized gains before any move.",
+      "Estimate how much future RMD or pre-tax withdrawal pressure exists if you do nothing.",
+      "Write the capital-gains basis problem you are trying to solve, if any.",
+      "Check current and future IRMAA sensitivity and the years that matter.",
+      "Decide whether ordinary-income reduction or basis step-up is the more urgent job."
+    ],
+    "optionAName": "Capital Gains Harvesting",
+    "optionBName": "Roth Conversion",
+    "winnerLabel": "Depends on future account shape and IRMAA sensitivity",
+    "whenA": "Capital gains harvesting tends to win when basis management is the immediate problem, taxable assets are large, and ordinary-income room should be preserved.",
+    "whenB": "Roth conversion tends to win when future pre-tax balance pressure is the bigger threat and current ordinary brackets are unusually favorable.",
+    "decisionMatrix": [
+      {
+        "factor": "Future RMD pressure relief",
+        "a": "Indirect or minimal",
+        "b": "Directly reduces future pre-tax balance",
+        "better": "B"
+      },
+      {
+        "factor": "Taxable account basis improvement",
+        "a": "Directly improves basis position",
+        "b": "Does not solve basis issues",
+        "better": "A"
+      },
+      {
+        "factor": "IRMAA sensitivity",
+        "a": "Can still matter depending on total income mix",
+        "b": "Often more dangerous if conversions are oversized",
+        "better": "Depends on guardrail"
+      },
+      {
+        "factor": "Long-term tax diversification",
+        "a": "More limited",
+        "b": "Often stronger if conversion sizing is disciplined",
+        "better": "B"
+      },
+      {
+        "factor": "Execution simplicity",
+        "a": "Can be simpler if portfolio lot data is clean",
+        "b": "Requires stronger bracket and withholding discipline",
+        "better": "A for simplicity"
+      }
+    ],
+    "workedExample": {
+      "profile": "Early retiree couple, ages 60 and 58, baseline ordinary income of $42k, large taxable brokerage, and $1.1M in pre-tax accounts.",
+      "assumptions": [
+        "Couple has room for either LTCG harvesting or Roth conversions, but not both at full size",
+        "Future RMD pressure is meaningful if pre-tax balances stay untouched",
+        "Taxable portfolio also has concentrated low-basis positions"
+      ],
+      "aOutcome": "Capital gains harvesting improves basis and may reduce future gain pain, but leaves future pre-tax pressure mostly intact.",
+      "bOutcome": "Roth conversion reduces future ordinary-income pressure, but can be the wrong use of the window if basis management is the bigger immediate job.",
+      "takeaway": "Low-income years are valuable. Spend them on the bucket that creates the bigger long-term problem if ignored."
+    },
+    "edgeCases": [
+      "Upcoming Medicare years make even modest income overshoots more expensive.",
+      "Large low-basis holdings make basis cleanup unusually valuable.",
+      "Future inheritance or business sale changes the long-term tax picture.",
+      "State-tax moves or residence changes alter which strategy is actually cheaper."
+    ],
+    "avoidA": [
+      "Future pre-tax balance pressure is already too large to ignore.",
+      "You are harvesting gains without a clear basis-management reason.",
+      "The move crowds out a rare low ordinary-income conversion window."
+    ],
+    "avoidB": [
+      "IRMAA sensitivity is severe and conversion room is tight.",
+      "Taxable account basis is the bigger problem right now.",
+      "You cannot pay conversion tax cleanly without damaging liquidity."
+    ],
+    "checklist": [
+      "Write down both ordinary and LTCG room before acting.",
+      "Map the future RMD problem and the taxable basis problem side by side.",
+      "Stress test Medicare premium sensitivity before final sizing.",
+      "Set withholding or estimated tax handling before the move.",
+      "Save the chosen sequence and why it won."
+    ],
+    "advisorQuestions": [
+      "Which bucket is the bigger long-term problem if we do nothing?",
+      "How much Roth conversion room do we really have after IRMAA guardrails?",
+      "How valuable is basis step-up for our taxable holdings in this case?",
+      "Should we split the low-income window instead of choosing only one path?"
+    ],
+    "faq": [
+      {
+        "q": "Should early retirees default to Roth conversions?",
+        "a": "Not automatically. The answer depends on whether future pre-tax pressure or current taxable-account basis is the more expensive problem."
+      },
+      {
+        "q": "When does gains harvesting win?",
+        "a": "It wins when basis cleanup is urgent, taxable assets are large, and conversion room should be saved for later or smaller moves."
+      },
+      {
+        "q": "Can both strategies fit in the same year?",
+        "a": "Yes, but only if you explicitly size the room instead of letting one strategy consume the whole window by default."
+      }
+    ],
+    "related": [
+      {
+        "href": "/tools/capital-gains-headroom-calculator",
+        "label": "Capital Gains Headroom Calculator"
+      },
+      {
+        "href": "/tools/irmaa-headroom-roth-conversion-planner",
+        "label": "IRMAA Headroom + Roth Conversion Planner"
+      },
+      {
+        "href": "/blog/retirement-withdrawal-strategy-calculator-with-taxes",
+        "label": "Retirement Withdrawal Strategy Calculator With Taxes"
       }
     ]
   }

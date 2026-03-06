@@ -143,8 +143,8 @@ relatedPosts:
     title: 'Credit Score Optimization: Improve Your Score Fast'
   - slug: debt-avalanche-method
     title: 'Debt Avalanche Method: The Fastest Way to Pay Off Debt'
-readingTime: 10 min read
-wordCount: '2203'
+readingTime: 12 min read
+wordCount: '2278'
 ---
 If you are researching heloc strategy tax implications, the most important thing to know is this: a HELOC is first a debt tool, and only sometimes a tax tool. The IRS can allow a deduction, but only when the money use, loan structure, debt limits, and filing method all line up. If one piece is off, you may still like the HELOC rate, but your expected tax benefit can disappear.
 

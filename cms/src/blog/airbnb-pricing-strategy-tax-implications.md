@@ -149,8 +149,8 @@ relatedPosts:
     title: >-
       How Much Are Airbnb Taxes for Guests: Complete 2026 Guide for US Travelers
       and Hosts
-readingTime: 9 min read
-wordCount: '2006'
+readingTime: 11 min read
+wordCount: '2125'
 ---
 If you are building a short-term rental portfolio, **airbnb pricing strategy tax implications** should be treated as a core profit system, not an afterthought. Many hosts focus on occupancy and ADR, then discover at filing time that lodging-tax handling, expense classification, and weak reserves crushed real cash flow. This guide gives you a practical framework to price with taxes in mind from day one.
 

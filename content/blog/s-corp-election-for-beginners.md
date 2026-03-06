@@ -143,8 +143,8 @@ relatedPosts:
     title: >-
       Best Registered Agent for LLC: Complete 2026 Guide to Cost, Privacy, and
       Compliance
-readingTime: 9 min read
-wordCount: '1995'
+readingTime: 11 min read
+wordCount: '2142'
 ---
 If you are a profitable solo owner, this s corp election for beginners guide is built to answer one question: will the tax savings still be meaningful after payroll, admin, and compliance work? The IRS describes S corporations as pass-through entities for federal tax purposes, which means income and losses generally flow to your personal return. In practice, the election can change how you pay yourself, not whether you owe income tax at all. You may still pay ordinary income tax on business profit, but the split between W-2 wages and distributions can change self-employment tax exposure.
 

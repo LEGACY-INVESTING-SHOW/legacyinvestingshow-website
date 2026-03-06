@@ -26,6 +26,16 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("json", (obj) => {
     return JSON.stringify(obj);
   });
+
+  // JSON-LD filter for script-safe embedding without HTML entity escaping
+  eleventyConfig.addFilter("jsonLd", (obj) => {
+    return JSON.stringify(obj === undefined ? null : obj)
+      .replace(/</g, "\\u003c")
+      .replace(/>/g, "\\u003e")
+      .replace(/&/g, "\\u0026")
+      .replace(/\u2028/g, "\\u2028")
+      .replace(/\u2029/g, "\\u2029");
+  });
   
   // Absolute URL filter
   eleventyConfig.addFilter("absoluteUrl", (path) => {

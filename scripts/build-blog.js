@@ -715,7 +715,7 @@ function generateBlogIndex(posts) {
             <div class="minimal-cta-content">
                 <h2 class="minimal-cta-title">Join the 3-Day Wealth Challenge</h2>
                 <p class="minimal-cta-text">Learn strategies that helped build a $20M+ portfolio.</p>
-                <a href="https://www.managemoney101.com/challengeoptin" class="minimal-cta-button">Get Started</a>
+                <a href="https://www.joinlwb.com/intensive" class="minimal-cta-button">Get Started</a>
             </div>
         </section>
     </main>

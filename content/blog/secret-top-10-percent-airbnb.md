@@ -1,28 +1,28 @@
 ---
-# Core SEO Fields
-title: "How Christopher Built a Top 10% Airbnb in Texas After 5 Years of Study (2026 Case Study)"
-titleTemplate: "%s | Legacy Investing Show Success Stories"
-description: "Christopher went from 5 years of analysis paralysis to $1,700/month cash flow with his first Texas Airbnb property. Learn his exact strategies for landlord negotiation, property setup, and achieving top 10% status in his market."
-date: 2026-02-07
-modifiedDate: 2026-01-23
+title: >-
+  How Christopher Built a Top 10% Airbnb in Texas After 5 Years of Study (2026
+  Case Study)
+titleTemplate: '%s | Legacy Investing Show Success Stories'
+description: >-
+  Christopher went from 5 years of analysis paralysis to $1,700/month cash flow
+  with his first Texas Airbnb property. Learn his exact strategies for landlord
+  negotiation, property setup, and achieving top 10% status in his market.
+date: 2026-02-07T00:00:00.000Z
+modifiedDate: 2026-01-23T00:00:00.000Z
 author: Preston Seo
-authorTitle: "Founder, Legacy Investing Show"
-authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
+authorTitle: 'Founder, Legacy Investing Show'
+authorCredentials: '2,000+ students trained, $10M+ student revenue generated'
 category: Success Story
-canonical: "https://www.legacyinvestingshow.com/blog/secret-top-10-percent-airbnb"
-
-# SEO Keyword Targeting
+canonical: 'https://www.legacyinvestingshow.com/blog/secret-top-10-percent-airbnb'
 seo:
-  primaryKeyword: "airbnb success story"
+  primaryKeyword: airbnb success story
   secondaryKeywords:
-    - "short-term rental business"
-    - "texas airbnb"
+    - short-term rental business
+    - texas airbnb
   longTailKeywords:
-    - "how much can you make with airbnb"
-    - "is airbnb arbitrage worth it"
-  searchIntent: "informational"
-
-# Tags
+    - how much can you make with airbnb
+    - is airbnb arbitrage worth it
+  searchIntent: informational
 tags:
   - airbnb arbitrage
   - rental arbitrage
@@ -30,96 +30,119 @@ tags:
   - case study
   - success story
   - short-term rental
-
-# Open Graph & Social
 image: /assets/images/blog/success-stories/christopher-top-10-percent-texas.jpg
-imageAlt: "How Christopher Built a Top 10% Airbnb in Texas After 5 Years of Study (2026 Case Study) - Legacy Investing Show"
+imageAlt: >-
+  How Christopher Built a Top 10% Airbnb in Texas After 5 Years of Study (2026
+  Case Study) - Legacy Investing Show
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
 featured: false
-
-# Video Integration
-youtubeId: "KsNJiJkTipM"
-
-# Multiple Schema Types for Rich Results
+youtubeId: KsNJiJkTipM
 schema:
   - type: Article
-    headline: "How Christopher Built a Top 10% Airbnb in Texas After 5 Years of Study (2026 Case Study)"
-    datePublished: "2026-02-07T00:00:00Z"
-    dateModified: "2026-01-23T00:00:00Z"
+    headline: >-
+      How Christopher Built a Top 10% Airbnb in Texas After 5 Years of Study
+      (2026 Case Study)
+    datePublished: '2026-02-07T00:00:00Z'
+    dateModified: '2026-01-23T00:00:00Z'
   - type: VideoObject
-    name: "How Christopher Built a Top 10% Airbnb in Texas After 5 Years of Study (2026 Case Study) - Full Interview"
-    thumbnailUrl: "https://img.youtube.com/vi/KsNJiJkTipM/maxresdefault.jpg"
-    embedUrl: "https://www.youtube.com/embed/KsNJiJkTipM"
+    name: >-
+      How Christopher Built a Top 10% Airbnb in Texas After 5 Years of Study
+      (2026 Case Study) - Full Interview
+    thumbnailUrl: 'https://img.youtube.com/vi/KsNJiJkTipM/maxresdefault.jpg'
+    embedUrl: 'https://www.youtube.com/embed/KsNJiJkTipM'
   - type: HowTo
-    name: "How to Build an Airbnb Business Like This Success Story"
-
-# Breadcrumbs
+    name: How to Build an Airbnb Business Like This Success Story
 breadcrumbs:
-  - name: "Home"
-    url: "/"
-  - name: "Blog"
-    url: "/blog"
-  - name: "Success Stories"
-    url: "/blog/category/success-stories"
-
-# Statistics (AI-crawler accessible, renders as stat cards)
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog
+  - name: Success Stories
+    url: /blog/category/success-stories
 statistics:
-  - value: "$1,700+"
-    label: "Monthly Cash Flow"
-    icon: "dollar"
-    context: "Conservative estimate"
-    source: "Student Interview, 2025"
-  - value: "1"
-    label: "Property"
-    icon: "home"
-    context: "Texas market, scaling planned"
-  - value: "5 Years"
-    label: "Research Before Action"
-    icon: "clock"
-    context: "Then executed in months"
-  - value: "50-70"
-    label: "Landlord Calls"
-    icon: "check"
-    context: "Before first deal"
-  - value: "3 Years"
-    label: "Lease Term"
-    icon: "star"
-    context: "Negotiated from 1 year"
-  - value: "Top 10%"
-    label: "Market Position"
-    icon: "star"
-    context: "Pool + premium amenities"
-
-# FAQ (FAQPage schema + accordion rendering)
+  - value: '$1,700+'
+    label: Monthly Cash Flow
+    icon: dollar
+    context: Conservative estimate
+    source: 'Student Interview, 2025'
+  - value: '1'
+    label: Property
+    icon: home
+    context: 'Texas market, scaling planned'
+  - value: 5 Years
+    label: Research Before Action
+    icon: clock
+    context: Then executed in months
+  - value: 50-70
+    label: Landlord Calls
+    icon: check
+    context: Before first deal
+  - value: 3 Years
+    label: Lease Term
+    icon: star
+    context: Negotiated from 1 year
+  - value: Top 10%
+    label: Market Position
+    icon: star
+    context: Pool + premium amenities
 faq:
-  - question: "How much money can you make with your first Airbnb arbitrage property?"
-    answer: "Christopher conservatively projects $1,700/month cash flow from his first Texas Airbnb property. He expects to exceed this estimate due to having a pool (only 6% of properties have pools), premium amenities, and plans to add a hot tub for additional differentiation."
-  - question: "How many landlords do you need to call for Airbnb arbitrage?"
-    answer: "Christopher called 50-70 landlords before securing his first property. He experienced multiple failed deals where numbers didn't work, landlords wanted premiums, or the risk was too high. Success requires volume—treating landlord outreach as a numbers game."
-  - question: "How long does it take to get your first Airbnb arbitrage property?"
-    answer: "Christopher spent 5 years studying real estate before taking action, then secured his first property within months of joining Legacy Investing Show. Most successful students get their first property in 30-60 days once they commit to consistent action."
-  - question: "What lease length should you negotiate for Airbnb arbitrage?"
-    answer: "Christopher initially asked for a 4-year lease. The landlord wanted only 1 year. They negotiated to 3 years with a possible renewal option. Longer leases reduce risk but require building trust with landlords first."
-  - question: "Do you need experience to start Airbnb arbitrage?"
-    answer: "No. Christopher had zero real estate experience—his background was in oil and gas plus a small eBay business. He credits the Legacy Investing Show course, coaching, and community for providing the step-by-step guidance needed to succeed."
-  - question: "How do you pitch landlords for Airbnb arbitrage?"
-    answer: "Christopher learned to build rapport first by complimenting the property and asking about its history. Then he emphasizes security: better property care than traditional tenants, regular maintenance, and professional management. Practicing with family members before calling landlords improved his confidence dramatically."
-  - question: "Is Legacy Investing Show worth it?"
-    answer: "Christopher strongly recommends getting a structured course over trying to learn from scattered YouTube videos. He credits the step-by-step process, coaching from Dustin and Sam, verification from mentors, and the supportive community for making his first property possible. The motivation from seeing others succeed kept him going through rejection."
-  - question: "What amenities help an Airbnb rank in the top 10%?"
-    answer: "Christopher's property has a pool (only 6% of listings have pools), plans for a hot tub (also only 6%), fire pit, outdoor furniture, grill, game room for kids, and giant Jenga. He also secured gift cards from local restaurants to enhance the guest experience and stand out from competition."
-
-# Table of Contents
+  - question: How much money can you make with your first Airbnb arbitrage property?
+    answer: >-
+      Christopher conservatively projects $1,700/month cash flow from his first
+      Texas Airbnb property. He expects to exceed this estimate due to having a
+      pool (only 6% of properties have pools), premium amenities, and plans to
+      add a hot tub for additional differentiation.
+  - question: How many landlords do you need to call for Airbnb arbitrage?
+    answer: >-
+      Christopher called 50-70 landlords before securing his first property. He
+      experienced multiple failed deals where numbers didn't work, landlords
+      wanted premiums, or the risk was too high. Success requires
+      volume—treating landlord outreach as a numbers game.
+  - question: How long does it take to get your first Airbnb arbitrage property?
+    answer: >-
+      Christopher spent 5 years studying real estate before taking action, then
+      secured his first property within months of joining Legacy Investing Show.
+      Most successful students get their first property in 30-60 days once they
+      commit to consistent action.
+  - question: What lease length should you negotiate for Airbnb arbitrage?
+    answer: >-
+      Christopher initially asked for a 4-year lease. The landlord wanted only 1
+      year. They negotiated to 3 years with a possible renewal option. Longer
+      leases reduce risk but require building trust with landlords first.
+  - question: Do you need experience to start Airbnb arbitrage?
+    answer: >-
+      No. Christopher had zero real estate experience—his background was in oil
+      and gas plus a small eBay business. He credits the Legacy Investing Show
+      course, coaching, and community for providing the step-by-step guidance
+      needed to succeed.
+  - question: How do you pitch landlords for Airbnb arbitrage?
+    answer: >-
+      Christopher learned to build rapport first by complimenting the property
+      and asking about its history. Then he emphasizes security: better property
+      care than traditional tenants, regular maintenance, and professional
+      management. Practicing with family members before calling landlords
+      improved his confidence dramatically.
+  - question: Is Legacy Investing Show worth it?
+    answer: >-
+      Christopher strongly recommends getting a structured course over trying to
+      learn from scattered YouTube videos. He credits the step-by-step process,
+      coaching from Dustin and Sam, verification from mentors, and the
+      supportive community for making his first property possible. The
+      motivation from seeing others succeed kept him going through rejection.
+  - question: What amenities help an Airbnb rank in the top 10%?
+    answer: >-
+      Christopher's property has a pool (only 6% of listings have pools), plans
+      for a hot tub (also only 6%), fire pit, outdoor furniture, grill, game
+      room for kids, and giant Jenga. He also secured gift cards from local
+      restaurants to enhance the guest experience and stand out from
+      competition.
 toc: true
 tocDepth: 3
-
-# Reading Time
-readingTime: "25 min read"
-wordCount: "4844"
+readingTime: 24 min read
+wordCount: '4698'
 ---
-
 **Christopher Bamford projects $1,700+ per month in cash flow from his first Airbnb property in Texas—and expects to exceed that estimate.** After spending 5 years researching real estate without taking action, Christopher and his fiance finally committed to the Legacy Investing Show program and secured their first property within months. His property features a swimming pool (only 6% of listings have pools), a boho-themed interior, outdoor games including giant Jenga, and partnerships with local restaurants for guest gift cards.
 
 This case study breaks down exactly how Christopher overcame analysis paralysis, made 50-70 landlord calls, negotiated a 3-year lease, and positioned his property in the top 10% of his Texas market—all while working in the oil and gas industry and raising a 3-year-old daughter.

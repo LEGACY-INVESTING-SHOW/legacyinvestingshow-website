@@ -1,26 +1,26 @@
 ---
-# Core SEO Fields
-title: "How This Nurse Locked Up a $2,000/Month Profit Property While Working Full-Time (2026)"
-titleTemplate: "%s | Legacy Investing Show Success Stories"
-description: "Kirk went from full-time nurse with no business experience to $5,500/month cash flow with Airbnb arbitrage in California. Learn how he overcame fear of landlord outreach and achieved 87% occupancy."
-date: 2025-11-11
-modifiedDate: 2026-01-23
+title: >-
+  How This Nurse Locked Up a $2,000/Month Profit Property While Working
+  Full-Time (2026)
+titleTemplate: '%s | Legacy Investing Show Success Stories'
+description: >-
+  Kirk went from full-time nurse with no business experience to $5,500/month
+  cash flow with Airbnb arbitrage in California. Learn how he overcame fear of
+  landlord outreach and achieved 87% occupancy.
+date: 2025-11-11T00:00:00.000Z
+modifiedDate: 2026-01-23T00:00:00.000Z
 author: Preston Seo
-authorTitle: "Founder, Legacy Investing Show"
-authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
+authorTitle: 'Founder, Legacy Investing Show'
+authorCredentials: '2,000+ students trained, $10M+ student revenue generated'
 category: Success Story
-canonical: "https://www.legacyinvestingshow.com/blog/nurse-2000-profit-property"
-
-# SEO Keyword Targeting
+canonical: 'https://www.legacyinvestingshow.com/blog/nurse-2000-profit-property'
 seo:
-  primaryKeyword: "airbnb success story"
+  primaryKeyword: airbnb success story
   secondaryKeywords:
-    - "california airbnb"
+    - california airbnb
   longTailKeywords:
-    - "how to start airbnb while working full time"
-  searchIntent: "informational"
-
-# Tags
+    - how to start airbnb while working full time
+  searchIntent: informational
 tags:
   - airbnb arbitrage
   - rental arbitrage
@@ -28,96 +28,124 @@ tags:
   - case study
   - success story
   - short-term rental
-
-# Open Graph & Social
 image: /assets/images/blog/success-stories/kirk-nurse-airbnb.jpg
-imageAlt: "How This Nurse Locked Up a $2,000/Month Profit Property While Working Full-Time (2026) - Legacy Investing Show"
+imageAlt: >-
+  How This Nurse Locked Up a $2,000/Month Profit Property While Working
+  Full-Time (2026) - Legacy Investing Show
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
 featured: false
-
-# Video Integration
-youtubeId: "DvTfbzphZjo"
-
-# Multiple Schema Types for Rich Results
+youtubeId: DvTfbzphZjo
 schema:
   - type: Article
-    headline: "How This Nurse Locked Up a $2,000/Month Profit Property While Working Full-Time (2026)"
-    datePublished: "2026-04-11T00:00:00Z"
-    dateModified: "2026-01-23T00:00:00Z"
+    headline: >-
+      How This Nurse Locked Up a $2,000/Month Profit Property While Working
+      Full-Time (2026)
+    datePublished: '2026-04-11T00:00:00Z'
+    dateModified: '2026-01-23T00:00:00Z'
   - type: VideoObject
-    name: "How This Nurse Locked Up a $2,000/Month Profit Property While Working Full-Time (2026) - Full Interview"
-    thumbnailUrl: "https://img.youtube.com/vi/DvTfbzphZjo/maxresdefault.jpg"
-    embedUrl: "https://www.youtube.com/embed/DvTfbzphZjo"
+    name: >-
+      How This Nurse Locked Up a $2,000/Month Profit Property While Working
+      Full-Time (2026) - Full Interview
+    thumbnailUrl: 'https://img.youtube.com/vi/DvTfbzphZjo/maxresdefault.jpg'
+    embedUrl: 'https://www.youtube.com/embed/DvTfbzphZjo'
   - type: HowTo
-    name: "How to Build an Airbnb Business Like This Success Story"
-
-# Breadcrumbs
+    name: How to Build an Airbnb Business Like This Success Story
 breadcrumbs:
-  - name: "Home"
-    url: "/"
-  - name: "Blog"
-    url: "/blog"
-  - name: "Success Stories"
-    url: "/blog/category/success-stories"
-
-# Statistics (AI-crawler accessible, renders as stat cards)
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog
+  - name: Success Stories
+    url: /blog/category/success-stories
 statistics:
-  - value: "$5,500"
-    label: "Monthly Cash Flow"
-    icon: "dollar"
-    context: "March peak performance"
-    source: "Student Interview, 2023"
-  - value: "1"
-    label: "Property"
-    icon: "home"
-    context: "California market"
-  - value: "87%"
-    label: "Peak Occupancy"
-    icon: "star"
-    context: "March performance"
-  - value: "3 hrs/week"
-    label: "Time Investment"
-    icon: "clock"
-    context: "After initial setup"
-  - value: "4"
-    label: "Kids at Home"
-    icon: "users"
-    context: "Family motivation"
-  - value: "$2,000"
-    label: "Initial Projection"
-    icon: "chart"
-    context: "Exceeded by 175%"
-
-# FAQ (FAQPage schema + accordion rendering)
+  - value: '$5,500'
+    label: Monthly Cash Flow
+    icon: dollar
+    context: March peak performance
+    source: 'Student Interview, 2023'
+  - value: '1'
+    label: Property
+    icon: home
+    context: California market
+  - value: 87%
+    label: Peak Occupancy
+    icon: star
+    context: March performance
+  - value: 3 hrs/week
+    label: Time Investment
+    icon: clock
+    context: After initial setup
+  - value: '4'
+    label: Kids at Home
+    icon: users
+    context: Family motivation
+  - value: '$2,000'
+    label: Initial Projection
+    icon: chart
+    context: Exceeded by 175%
 faq:
-  - question: "How much money can you make with Airbnb arbitrage as a nurse?"
-    answer: "Kirk generates $5,500/month cash flow from his first Airbnb arbitrage property in California while working full-time as a nurse. He initially projected $2,000/month but exceeded expectations with 87% occupancy in March and $4,400+ cash flow in April at 70% occupancy."
-  - question: "Can you start Airbnb arbitrage with no business experience?"
-    answer: "Yes. Kirk had zero business experience and never started a business before. He learned everything from scratch through Legacy Investing Show's program, including landlord outreach scripts, market research, and property setup. His nursing career actually helped with time management and customer service skills."
-  - question: "How do you overcome fear of talking to landlords?"
-    answer: "Kirk overcame landlord outreach fear by: 1) Having a strong 'why' - spending time with his wife and four kids, 2) Going in person instead of just calling, 3) Recording himself practicing pitches to improve, 4) Making the script personal rather than reading verbatim, and 5) Having his wife push him to keep going even when tired."
-  - question: "Is Airbnb arbitrage profitable in 2026?"
-    answer: "Yes. Kirk achieved 87% occupancy in March 2026 and 70% in April while his listing was still new. His success demonstrates that the cream rises to the top - hosts who treat this like a business with professional photos, strategic design, and proper pricing tools outperform casual hosts who complain about an 'Airbnb bust.'"
-  - question: "What tools does Kirk use to manage his Airbnb?"
-    answer: "Kirk uses Guesty for property management and automated messaging, and Price Labs for dynamic pricing. He specifically mentioned Price Labs' competitor calendar feature that shows up to 10 competitors' pricing - this helps him price strategically, especially as a new listing building reviews."
-  - question: "How long does it take to get your first Airbnb arbitrage property?"
-    answer: "Timeline varies, but Kirk faced multiple rejections before getting his first yes. The key was persistence and improving his pitch with each attempt. He viewed rejections as practice that prepared him for the landlord who would say yes. Most Legacy Investing Show students secure their first property within 30-60 days."
-  - question: "What design theme works best for Airbnb arbitrage?"
-    answer: "Kirk chose a mid-century boho theme with pops of color because most competitors in his California market used neutral, farmhouse-style designs. Standing out visually helps attract bookings. He focused on creating experiences, not just places to stay - including a gathering area with string lights and a jacuzzi."
-  - question: "Is Legacy Investing Show worth it for nurses?"
-    answer: "Based on Kirk's results, absolutely. As a full-time nurse with four kids and no business experience, he built a $5,500/month cash flow business. The program's structured videos, community support, and actionable scripts gave him everything he needed to start from scratch and exceed his income projections."
-
-# Table of Contents
+  - question: How much money can you make with Airbnb arbitrage as a nurse?
+    answer: >-
+      Kirk generates $5,500/month cash flow from his first Airbnb arbitrage
+      property in California while working full-time as a nurse. He initially
+      projected $2,000/month but exceeded expectations with 87% occupancy in
+      March and $4,400+ cash flow in April at 70% occupancy.
+  - question: Can you start Airbnb arbitrage with no business experience?
+    answer: >-
+      Yes. Kirk had zero business experience and never started a business
+      before. He learned everything from scratch through Legacy Investing Show's
+      program, including landlord outreach scripts, market research, and
+      property setup. His nursing career actually helped with time management
+      and customer service skills.
+  - question: How do you overcome fear of talking to landlords?
+    answer: >-
+      Kirk overcame landlord outreach fear by: 1) Having a strong 'why' -
+      spending time with his wife and four kids, 2) Going in person instead of
+      just calling, 3) Recording himself practicing pitches to improve, 4)
+      Making the script personal rather than reading verbatim, and 5) Having his
+      wife push him to keep going even when tired.
+  - question: Is Airbnb arbitrage profitable in 2026?
+    answer: >-
+      Yes. Kirk achieved 87% occupancy in March 2026 and 70% in April while his
+      listing was still new. His success demonstrates that the cream rises to
+      the top - hosts who treat this like a business with professional photos,
+      strategic design, and proper pricing tools outperform casual hosts who
+      complain about an 'Airbnb bust.'
+  - question: What tools does Kirk use to manage his Airbnb?
+    answer: >-
+      Kirk uses Guesty for property management and automated messaging, and
+      Price Labs for dynamic pricing. He specifically mentioned Price Labs'
+      competitor calendar feature that shows up to 10 competitors' pricing -
+      this helps him price strategically, especially as a new listing building
+      reviews.
+  - question: How long does it take to get your first Airbnb arbitrage property?
+    answer: >-
+      Timeline varies, but Kirk faced multiple rejections before getting his
+      first yes. The key was persistence and improving his pitch with each
+      attempt. He viewed rejections as practice that prepared him for the
+      landlord who would say yes. Most Legacy Investing Show students secure
+      their first property within 30-60 days.
+  - question: What design theme works best for Airbnb arbitrage?
+    answer: >-
+      Kirk chose a mid-century boho theme with pops of color because most
+      competitors in his California market used neutral, farmhouse-style
+      designs. Standing out visually helps attract bookings. He focused on
+      creating experiences, not just places to stay - including a gathering area
+      with string lights and a jacuzzi.
+  - question: Is Legacy Investing Show worth it for nurses?
+    answer: >-
+      Based on Kirk's results, absolutely. As a full-time nurse with four kids
+      and no business experience, he built a $5,500/month cash flow business.
+      The program's structured videos, community support, and actionable scripts
+      gave him everything he needed to start from scratch and exceed his income
+      projections.
 toc: true
 tocDepth: 3
-
-# Reading Time
-readingTime: "25 min read"
-wordCount: "4966"
+readingTime: 24 min read
+wordCount: '4793'
 ---
-
 **Kirk earns $5,500 per month in cash flow from his first Airbnb arbitrage property in California.** As a full-time nurse with four kids and no prior business experience, he joined Legacy Investing Show and secured his first property by overcoming his fear of landlord outreach through face-to-face meetings. Today, Kirk's property achieves 87% occupancy with a mid-century boho design theme that sets it apart from competitors.
 
 This case study breaks down exactly how Kirk built this Airbnb arbitrage business while working demanding nursing shifts, including his specific strategies for landlord negotiation, listing optimization, and the mindset shifts that made success possible.

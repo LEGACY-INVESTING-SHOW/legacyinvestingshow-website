@@ -142,8 +142,8 @@ relatedPosts:
     title: '401(k) Rollover Guide: Move Your Retirement Funds the Right Way'
   - slug: 401k-strategy-vs-taxable-brokerage
     title: '401k strategy vs taxable brokerage: Which Strategy Works Better in 2026?'
-readingTime: 10 min read
-wordCount: '2254'
+readingTime: 12 min read
+wordCount: '2376'
 ---
 A **retirement withdrawal strategy 2026** is not just picking a withdrawal percentage. It is a year-by-year decision system that balances four moving parts: spending needs, market returns, taxes, and longevity risk.
 

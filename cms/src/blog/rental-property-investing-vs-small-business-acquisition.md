@@ -36,7 +36,8 @@ tags:
   - passive income
   - wealth strategy
   - financial planning
-image: /assets/images/blog/rental-property-investing-vs-small-business-acquisition.jpg
+image: >-
+  /assets/images/blog/rental-property-investing-vs-small-business-acquisition.jpg
 imageAlt: >-
   Rental Property Investing vs Small Business Acquisition: Which Strategy Works
   Better in 2026? guide
@@ -157,8 +158,8 @@ relatedPosts:
       Investors
   - slug: airbnb-cash-flow-vs-notes-investing
     title: 'Airbnb Cash Flow vs Notes Investing: Which Strategy Works Better in 2026?'
-readingTime: 8 min read
-wordCount: '1855'
+readingTime: 11 min read
+wordCount: '2001'
 ---
 Most people comparing rental property investing vs small business acquisition ask the wrong first question. They ask, Which has the bigger upside? The better first question is, Which downside can I survive without forcing a bad decision later?
 

@@ -144,8 +144,8 @@ relatedPosts:
     title: >-
       401k Strategy for Recession: Complete 2026 Guide to Protecting Retirement
       Without Panic Selling
-readingTime: 8 min read
-wordCount: '1737'
+readingTime: 10 min read
+wordCount: '1840'
 ---
 Early retirement is not just an investing problem. It is a cash-flow engineering problem with tax constraints and timing risk. A strong 401k strategy for early retirees helps you answer one practical question: how do I fund life between my retirement date and age 59.5 without paying avoidable penalties or creating unnecessary tax spikes?
 

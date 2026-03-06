@@ -142,8 +142,8 @@ relatedPosts:
     title: >-
       Airbnb Taxes for Guests: Complete 2026 Guide to Costs, Tradeoffs, and
       Smarter Booking Decisions
-readingTime: 10 min read
-wordCount: '2205'
+readingTime: 12 min read
+wordCount: '2338'
 ---
 If you are trying to answer how much are airbnb taxes for guests before you book, start with a range and then verify the exact checkout breakdown. In many US markets, combined lodging taxes often land around 4% to 17% of taxable charges, but some urban and resort zones can run higher. The practical move is not guessing one universal rate. It is building a simple model that includes nightly rate, cleaning fee, platform fee, and local tax treatment. This guide gives you a decision framework, a fully worked example, and a 30-day checklist so you can budget with fewer surprises. If you are also evaluating hosting economics, review [Airbnb arbitrage resources](/topics/airbnb-arbitrage), the broader [Legacy blog](/blog), and the [starter playbook](/blog/getting-started-airbnb-arbitrage).
 

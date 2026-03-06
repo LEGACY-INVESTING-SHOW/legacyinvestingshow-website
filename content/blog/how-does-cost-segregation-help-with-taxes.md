@@ -177,8 +177,8 @@ relatedPosts:
     title: >-
       Best Roth Conversion Strategy Calculator: Practical Guide, Break-Even
       Math, and Real Tax Examples
-readingTime: 10 min read
-wordCount: '2270'
+readingTime: 12 min read
+wordCount: '2348'
 ---
 Most real estate investors hear about cost segregation after they already filed returns and left deductions on the table. If you are asking how does cost segregation help with taxes, the short answer is timing: it accelerates depreciation into earlier years so taxable income can drop now instead of slowly over decades. That cash-flow difference can fund reserves, debt paydown, or new acquisitions.
 

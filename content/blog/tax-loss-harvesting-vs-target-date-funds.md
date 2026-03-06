@@ -145,8 +145,8 @@ relatedPosts:
     title: >-
       Asset Allocation Tax Implications: Complete 2026 Guide for After-Tax
       Portfolio Returns
-readingTime: 10 min read
-wordCount: '2170'
+readingTime: 12 min read
+wordCount: '2255'
 ---
 If you are choosing between tax loss harvesting vs target date funds, start with one truth: this is usually an account-location decision, not a winner-take-all decision. In 2026, many US households can improve outcomes by using target date funds for retirement accounts and tax-loss harvesting for taxable brokerage assets.
 

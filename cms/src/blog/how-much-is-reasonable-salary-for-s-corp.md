@@ -137,8 +137,8 @@ relatedPosts:
     title: 'Business Credit Building: Separate Your Personal & Business Finances'
   - slug: business-succession-planning
     title: 'Business Succession Planning: How to Transfer Ownership'
-readingTime: 9 min read
-wordCount: '1920'
+readingTime: 11 min read
+wordCount: '2021'
 ---
 Most owners search how much is reasonable salary for s corp after electing S status, because this one decision drives both tax savings and audit risk. Set it too low and you may invite IRS reclassification of distributions into wages. Set it too high and you may erase much of the payroll-tax advantage that made the S election attractive.
 

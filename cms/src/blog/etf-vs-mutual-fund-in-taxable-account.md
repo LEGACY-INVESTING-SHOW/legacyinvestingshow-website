@@ -140,8 +140,8 @@ relatedPosts:
     title: 'Asset Allocation Strategies by Age: How to Balance Your Portfolio'
   - slug: crowdfunded-real-estate
     title: 'Crowdfunded Real Estate: Invest in Property with $500'
-readingTime: 10 min read
-wordCount: '2157'
+readingTime: 12 min read
+wordCount: '2241'
 ---
 If you are deciding **etf vs mutual fund in taxable account**, the real question is simple: which structure gives you the highest after-tax return for the behavior you can actually stick with. In 2026, that difference can be meaningful once balances get large, your state tax rate is non-trivial, and you hold for multiple years.
 

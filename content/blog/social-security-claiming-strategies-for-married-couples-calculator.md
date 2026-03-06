@@ -36,7 +36,8 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/blog/social-security-claiming-strategies-for-married-couples-calculator.jpg
+image: >-
+  /assets/images/blog/social-security-claiming-strategies-for-married-couples-calculator.jpg
 imageAlt: >-
   Social Security Claiming Strategies for Married Couples Calculator: Practical
   Guide + Examples guide
@@ -163,8 +164,8 @@ relatedPosts:
     title: >-
       401k Strategy for Recession: Complete 2026 Guide to Protecting Retirement
       Without Panic Selling
-readingTime: 9 min read
-wordCount: '1939'
+readingTime: 11 min read
+wordCount: '2020'
 ---
 If you and your spouse are deciding when to file, a social security claiming strategies for married couples calculator should be part of your core retirement process. The difference between an average filing decision and a coordinated one can mean thousands of dollars per year, especially after one spouse passes away.
 

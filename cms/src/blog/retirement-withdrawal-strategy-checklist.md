@@ -143,8 +143,8 @@ relatedPosts:
     title: '401(k) Rollover Guide: Move Your Retirement Funds the Right Way'
   - slug: 401k-strategy-vs-taxable-brokerage
     title: '401k strategy vs taxable brokerage: Which Strategy Works Better in 2026?'
-readingTime: 10 min read
-wordCount: '2117'
+readingTime: 11 min read
+wordCount: '2196'
 ---
 If you are turning savings into income, this retirement withdrawal strategy checklist can help you make better decisions each year instead of guessing each month. The goal is simple: cover spending, control taxes, and keep flexibility if markets or tax rules change.
 

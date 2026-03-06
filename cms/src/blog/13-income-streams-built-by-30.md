@@ -1,33 +1,32 @@
 ---
-# Core SEO Fields
-title: "How I Built 13 Income Streams by Age 30 (Complete Breakdown with Real Numbers)"
-titleTemplate: "%s | Legacy Investing Show"
-description: "Learn exactly how Preston built 13 income streams from age 26 to 30, including $7.5M in real estate, YouTube revenue, crypto staking, and more. Complete guide with startup costs, income potential, and step-by-step strategies for each stream."
-date: 2026-01-24
-modifiedDate: 2026-01-24
+title: How I Built 13 Income Streams by Age 30 (Complete Breakdown with Real Numbers)
+titleTemplate: '%s | Legacy Investing Show'
+description: >-
+  Learn exactly how Preston built 13 income streams from age 26 to 30, including
+  $7.5M in real estate, YouTube revenue, crypto staking, and more. Complete
+  guide with startup costs, income potential, and step-by-step strategies for
+  each stream.
+date: 2026-01-24T00:00:00.000Z
+modifiedDate: 2026-01-24T00:00:00.000Z
 author: Preston Seo
-authorTitle: "Founder, Legacy Investing Show"
-authorCredentials: "2,000+ students trained, $10M+ student revenue generated, 13 income streams"
+authorTitle: 'Founder, Legacy Investing Show'
+authorCredentials: '2,000+ students trained, $10M+ student revenue generated, 13 income streams'
 category: Wealth Building
-canonical: "https://www.legacyinvestingshow.com/blog/13-income-streams-built-by-30"
-
-# SEO Keyword Targeting
+canonical: 'https://www.legacyinvestingshow.com/blog/13-income-streams-built-by-30'
 seo:
-  primaryKeyword: "multiple income streams"
+  primaryKeyword: multiple income streams
   secondaryKeywords:
-    - "passive income streams"
-    - "how to build wealth"
-    - "income streams by 30"
-    - "millionaire income sources"
+    - passive income streams
+    - how to build wealth
+    - income streams by 30
+    - millionaire income sources
   longTailKeywords:
-    - "how many income streams should I have"
-    - "best passive income streams for beginners"
-    - "how to create multiple income streams"
-    - "13 income streams breakdown"
-  searchIntent: "informational"
-  targetSnippet: "how many income streams do millionaires have"
-
-# Tags (exact match keywords)
+    - how many income streams should I have
+    - best passive income streams for beginners
+    - how to create multiple income streams
+    - 13 income streams breakdown
+  searchIntent: informational
+  targetSnippet: how many income streams do millionaires have
 tags:
   - multiple income streams
   - passive income
@@ -43,122 +42,155 @@ tags:
   - house hacking
   - dollar cost averaging
   - financial freedom
-
-# Open Graph & Social
 image: /assets/images/blog/13-income-streams-guide.jpg
-imageAlt: "13 income streams breakdown showing real estate, stocks, YouTube, and passive income sources"
+imageAlt: >-
+  13 income streams breakdown showing real estate, stocks, YouTube, and passive
+  income sources
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
 featured: true
-
-# Video Integration
-youtubeId: "ki3Xe90nLDw"
-videoDuration: "PT25M30S"
-
-# Multiple Schema Types for Rich Results
+youtubeId: ki3Xe90nLDw
+videoDuration: PT25M30S
 schema:
   - type: Article
-    headline: "How I Built 13 Income Streams by Age 30 (Complete Breakdown)"
-    datePublished: "2026-01-24T00:00:00Z"
-    dateModified: "2026-01-24T00:00:00Z"
+    headline: How I Built 13 Income Streams by Age 30 (Complete Breakdown)
+    datePublished: '2026-01-24T00:00:00Z'
+    dateModified: '2026-01-24T00:00:00Z'
   - type: VideoObject
-    name: "How I Built 13 Income Streams (from age 26 to 30)"
-    description: "Complete breakdown of 13 income streams including real estate, stocks, YouTube, crypto, and more with actual numbers and strategies"
-    thumbnailUrl: "https://img.youtube.com/vi/ki3Xe90nLDw/maxresdefault.jpg"
-    uploadDate: "2023-01-15"
-    duration: "PT25M30S"
-    embedUrl: "https://www.youtube.com/embed/ki3Xe90nLDw"
+    name: How I Built 13 Income Streams (from age 26 to 30)
+    description: >-
+      Complete breakdown of 13 income streams including real estate, stocks,
+      YouTube, crypto, and more with actual numbers and strategies
+    thumbnailUrl: 'https://img.youtube.com/vi/ki3Xe90nLDw/maxresdefault.jpg'
+    uploadDate: '2023-01-15'
+    duration: PT25M30S
+    embedUrl: 'https://www.youtube.com/embed/ki3Xe90nLDw'
   - type: HowTo
-    name: "How to Build Multiple Income Streams Like a Millionaire"
-    estimatedCost: "Varies from $0 to $385,000+ depending on stream"
-    totalTime: "4-6 years to build comprehensive portfolio"
+    name: How to Build Multiple Income Streams Like a Millionaire
+    estimatedCost: 'Varies from $0 to $385,000+ depending on stream'
+    totalTime: 4-6 years to build comprehensive portfolio
   - type: Person
-    name: "Preston Seo"
-    jobTitle: "Real Estate Investor & Educator"
-    knowsAbout: ["Multiple income streams", "Real estate investing", "Airbnb arbitrage", "Passive income", "Wealth building"]
-
-# Breadcrumbs for Navigation Schema
+    name: Preston Seo
+    jobTitle: Real Estate Investor & Educator
+    knowsAbout:
+      - Multiple income streams
+      - Real estate investing
+      - Airbnb arbitrage
+      - Passive income
+      - Wealth building
 breadcrumbs:
-  - name: "Home"
-    url: "/"
-  - name: "Blog"
-    url: "/blog"
-  - name: "Wealth Building"
-    url: "/blog/category/wealth-building"
-  - name: "13 Income Streams by 30"
-    url: "/blog/13-income-streams-built-by-30"
-
-# Statistics (AI-crawler accessible, renders as stat cards)
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog
+  - name: Wealth Building
+    url: /blog/category/wealth-building
+  - name: 13 Income Streams by 30
+    url: /blog/13-income-streams-built-by-30
 statistics:
-  - value: "13"
-    label: "Income Streams"
-    icon: "streams"
-    context: "Built from age 26 to 30"
-    source: "Preston Seo, Personal Experience"
+  - value: '13'
+    label: Income Streams
+    icon: streams
+    context: Built from age 26 to 30
+    source: 'Preston Seo, Personal Experience'
     highlighted: true
-  - value: "$7.5M"
-    label: "Real Estate Portfolio"
-    icon: "building"
-    context: "Started with $385K fourplex"
-  - value: "7"
-    label: "Average Millionaire Streams"
-    icon: "chart"
-    context: "Industry research"
-  - value: "30%+"
-    label: "Airbnb Cash-on-Cash"
-    icon: "percent"
-    context: "Short-term rental returns"
-  - value: "22.99%"
-    label: "REIT Returns"
-    icon: "dollar"
-    context: "Fundrise 2021 performance"
-  - value: "4 Years"
-    label: "Time to Build"
-    icon: "clock"
-    context: "Age 26 to 30"
-
-# FAQ (FAQPage schema + accordion rendering)
+  - value: $7.5M
+    label: Real Estate Portfolio
+    icon: building
+    context: Started with $385K fourplex
+  - value: '7'
+    label: Average Millionaire Streams
+    icon: chart
+    context: Industry research
+  - value: 30%+
+    label: Airbnb Cash-on-Cash
+    icon: percent
+    context: Short-term rental returns
+  - value: 22.99%
+    label: REIT Returns
+    icon: dollar
+    context: Fundrise 2021 performance
+  - value: 4 Years
+    label: Time to Build
+    icon: clock
+    context: Age 26 to 30
 faq:
-  - question: "How many income streams should I have?"
-    answer: "Millionaires have on average 7 streams of income. However, this doesn't mean you need 7 streams immediately. Start with 1-2 and gradually build from there. The key is diversification to protect against job loss and build wealth on autopilot."
-  - question: "What are the best passive income streams for beginners?"
-    answer: "The best starting points are: 1) Index fund investing through dollar cost averaging (start with as little as $100/month), 2) REITs like Fundrise ($10 minimum), and 3) House hacking if you can qualify for a loan. These require minimal expertise and can be started while working full-time."
-  - question: "How much money do I need to start building income streams?"
-    answer: "You can start with as little as $10 for REITs through Fundrise, or $100/month for stock investing. House hacking a fourplex can require as little as 3.5% down with an FHA loan. Digital products like spreadsheets can be created for free. Not all income streams require large capital."
-  - question: "What's the difference between active and passive income streams?"
-    answer: "Active income requires your time to generate money (consulting, YouTube content creation, property management). Passive income generates returns with minimal ongoing effort (stocks, REITs, rental income from managed properties). Most income streams start active and become more passive over time with systems."
-  - question: "Is real estate the best way to build multiple income streams?"
-    answer: "Real estate is powerful because one property can generate multiple streams: rental income, appreciation, tax benefits, and equity buildup. Preston's $7.5M portfolio grew from a single $385K fourplex. However, real estate requires more capital and expertise than stocks or digital products."
-  - question: "How do I start investing in cryptocurrency safely?"
-    answer: "Start small with established coins like Bitcoin. Use reputable exchanges like Gemini that offer staking rewards (earning interest on your holdings). Never invest more than you can afford to lose. Crypto should be a small percentage of your overall portfolio due to volatility."
-  - question: "Can I build multiple income streams while working full-time?"
-    answer: "Yes. Most income streams can be built part-time: dollar cost averaging into stocks takes minutes per month, REITs are completely passive, digital products can be created on weekends, and rental properties can be managed by property managers. Start with low-time-commitment streams first."
-  - question: "What is house hacking and how does it work?"
-    answer: "House hacking means buying a multi-unit property (duplex, triplex, fourplex), living in one unit, and renting out the others. The rental income covers your mortgage, and you can qualify for owner-occupied financing with as little as 3.5% down. Preston started with a $385K fourplex using this strategy."
-  - question: "How long does it take to build significant passive income?"
-    answer: "Preston built 13 income streams over 4 years (age 26-30). However, some streams like stock investing compound over decades. Expect 1-2 years before most streams generate meaningful income. The key is starting early and being consistent."
-  - question: "Should I focus on one income stream or diversify immediately?"
-    answer: "Focus on mastering 1-2 streams first before diversifying. Trying to build 13 streams simultaneously leads to mediocre results everywhere. Preston built his real estate foundation first, then expanded into complementary streams like property management and content creation."
-
-# Table of Contents
+  - question: How many income streams should I have?
+    answer: >-
+      Millionaires have on average 7 streams of income. However, this doesn't
+      mean you need 7 streams immediately. Start with 1-2 and gradually build
+      from there. The key is diversification to protect against job loss and
+      build wealth on autopilot.
+  - question: What are the best passive income streams for beginners?
+    answer: >-
+      The best starting points are: 1) Index fund investing through dollar cost
+      averaging (start with as little as $100/month), 2) REITs like Fundrise
+      ($10 minimum), and 3) House hacking if you can qualify for a loan. These
+      require minimal expertise and can be started while working full-time.
+  - question: How much money do I need to start building income streams?
+    answer: >-
+      You can start with as little as $10 for REITs through Fundrise, or
+      $100/month for stock investing. House hacking a fourplex can require as
+      little as 3.5% down with an FHA loan. Digital products like spreadsheets
+      can be created for free. Not all income streams require large capital.
+  - question: What's the difference between active and passive income streams?
+    answer: >-
+      Active income requires your time to generate money (consulting, YouTube
+      content creation, property management). Passive income generates returns
+      with minimal ongoing effort (stocks, REITs, rental income from managed
+      properties). Most income streams start active and become more passive over
+      time with systems.
+  - question: Is real estate the best way to build multiple income streams?
+    answer: >-
+      Real estate is powerful because one property can generate multiple
+      streams: rental income, appreciation, tax benefits, and equity buildup.
+      Preston's $7.5M portfolio grew from a single $385K fourplex. However, real
+      estate requires more capital and expertise than stocks or digital
+      products.
+  - question: How do I start investing in cryptocurrency safely?
+    answer: >-
+      Start small with established coins like Bitcoin. Use reputable exchanges
+      like Gemini that offer staking rewards (earning interest on your
+      holdings). Never invest more than you can afford to lose. Crypto should be
+      a small percentage of your overall portfolio due to volatility.
+  - question: Can I build multiple income streams while working full-time?
+    answer: >-
+      Yes. Most income streams can be built part-time: dollar cost averaging
+      into stocks takes minutes per month, REITs are completely passive, digital
+      products can be created on weekends, and rental properties can be managed
+      by property managers. Start with low-time-commitment streams first.
+  - question: What is house hacking and how does it work?
+    answer: >-
+      House hacking means buying a multi-unit property (duplex, triplex,
+      fourplex), living in one unit, and renting out the others. The rental
+      income covers your mortgage, and you can qualify for owner-occupied
+      financing with as little as 3.5% down. Preston started with a $385K
+      fourplex using this strategy.
+  - question: How long does it take to build significant passive income?
+    answer: >-
+      Preston built 13 income streams over 4 years (age 26-30). However, some
+      streams like stock investing compound over decades. Expect 1-2 years
+      before most streams generate meaningful income. The key is starting early
+      and being consistent.
+  - question: Should I focus on one income stream or diversify immediately?
+    answer: >-
+      Focus on mastering 1-2 streams first before diversifying. Trying to build
+      13 streams simultaneously leads to mediocre results everywhere. Preston
+      built his real estate foundation first, then expanded into complementary
+      streams like property management and content creation.
 toc: true
 tocDepth: 3
-
-# Internal Linking Suggestions
 relatedPosts:
-  - slug: "getting-started-airbnb-arbitrage"
-    title: "Complete Guide to Airbnb Arbitrage"
-  - slug: "how-to-buy-first-rental-property-step-by-step"
-    title: "How to Buy Your First Rental Property"
-  - slug: "best-real-estate-model-beginners-2024"
-    title: "Best Real Estate Model for Beginners"
-
-# Reading Time
-readingTime: "22 min read"
-wordCount: "5200"
+  - slug: getting-started-airbnb-arbitrage
+    title: Complete Guide to Airbnb Arbitrage
+  - slug: how-to-buy-first-rental-property-step-by-step
+    title: How to Buy Your First Rental Property
+  - slug: best-real-estate-model-beginners-2024
+    title: Best Real Estate Model for Beginners
+readingTime: 20 min read
+wordCount: '3863'
 ---
-
 **Millionaires have on average 7 streams of income.** But what does that actually look like in practice? In this comprehensive guide, I'm breaking down the exact 13 income streams I built from age 26 to 30, including the real numbers, startup costs, and step-by-step strategies for each one.
 
 Even if you currently make a lot of money at your day job, the second you stop working, that income stream shuts off. Not only will having multiple income streams give you security if you lose your job, but it will also help you build your wealth on autopilot if you do it right.

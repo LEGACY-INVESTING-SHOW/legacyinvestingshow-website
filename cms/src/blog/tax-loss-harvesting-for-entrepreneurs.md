@@ -143,8 +143,8 @@ relatedPosts:
     title: >-
       Asset Allocation Tax Implications: Complete 2026 Guide for After-Tax
       Portfolio Returns
-readingTime: 10 min read
-wordCount: '2189'
+readingTime: 12 min read
+wordCount: '2279'
 ---
 Entrepreneurs often focus on revenue growth, hiring, and cash runway, then treat portfolio taxes as an afterthought. That is expensive. A disciplined approach to tax loss harvesting for entrepreneurs can improve after-tax returns, reduce tax friction during volatile years, and build carryforwards that may help when a large exit or liquidity event hits.
 

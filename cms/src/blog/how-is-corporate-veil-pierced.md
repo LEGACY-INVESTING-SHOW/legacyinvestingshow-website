@@ -142,8 +142,8 @@ relatedPosts:
     title: >-
       Best Registered Agent for LLC: Complete 2026 Guide to Cost, Privacy, and
       Compliance
-readingTime: 11 min read
-wordCount: '2458'
+readingTime: 13 min read
+wordCount: '2579'
 ---
 If you are asking how is corporate veil pierced, you are asking the right question before a crisis, not after one. Limited liability is powerful, but it is not automatic forever. Courts can ignore entity separation when owners treat an LLC or corporation like a personal wallet, ignore basic governance, or use the entity in a way that causes unfair harm.
 

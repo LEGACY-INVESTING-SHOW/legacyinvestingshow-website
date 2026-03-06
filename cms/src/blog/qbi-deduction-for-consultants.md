@@ -133,8 +133,8 @@ relatedPosts:
     title: 'Best Tax Deductions for High Income Earners: Complete 2026 Guide'
   - slug: best-tax-deductions-for-individuals
     title: 'Best Tax Deductions for Individuals: Complete 2026 Guide'
-readingTime: 8 min read
-wordCount: '1819'
+readingTime: 10 min read
+wordCount: '1919'
 ---
 The **qbi deduction for consultants** is one of the most valuable tax levers available to independent professionals, but it is also one of the easiest to misunderstand. Many consultants hear up to 20 percent deduction and assume they will get 20 percent of business profit every year. In practice, consulting is usually classified as a specified service trade or business, and your taxable income level is the switch that determines full benefit, partial benefit, or no SSTB deduction.
 

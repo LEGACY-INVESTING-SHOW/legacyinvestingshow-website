@@ -1,27 +1,26 @@
 ---
-# Core SEO Fields
-title: "How Rob Built $10,000/Month with Just 2 Airbnb Properties (2026 Case Study)"
-titleTemplate: "%s | Legacy Investing Show Success Stories"
-description: "Rob went from sales professional with two young kids to $10,000/month profit with just 2 Airbnb arbitrage properties in Louisville, KY and St. Simons Island, GA. Learn his exact landlord negotiation scripts, remote team building strategy, and turnkey property secrets."
-date: 2025-11-17
-modifiedDate: 2026-01-23
+title: 'How Rob Built $10,000/Month with Just 2 Airbnb Properties (2026 Case Study)'
+titleTemplate: '%s | Legacy Investing Show Success Stories'
+description: >-
+  Rob went from sales professional with two young kids to $10,000/month profit
+  with just 2 Airbnb arbitrage properties in Louisville, KY and St. Simons
+  Island, GA. Learn his exact landlord negotiation scripts, remote team building
+  strategy, and turnkey property secrets.
+date: 2025-11-17T00:00:00.000Z
+modifiedDate: 2026-01-23T00:00:00.000Z
 author: Preston Seo
-authorTitle: "Founder, Legacy Investing Show"
-authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
+authorTitle: 'Founder, Legacy Investing Show'
+authorCredentials: '2,000+ students trained, $10M+ student revenue generated'
 category: Success Story
-canonical: "https://www.legacyinvestingshow.com/blog/2-deals-10000-month-profit"
-
-# SEO Keyword Targeting
+canonical: 'https://www.legacyinvestingshow.com/blog/2-deals-10000-month-profit'
 seo:
-  primaryKeyword: "airbnb success story"
+  primaryKeyword: airbnb success story
   secondaryKeywords:
-    - "short-term rental business"
+    - short-term rental business
   longTailKeywords:
-    - "how much can you make with airbnb"
-    - "is airbnb arbitrage worth it"
-  searchIntent: "informational"
-
-# Tags
+    - how much can you make with airbnb
+    - is airbnb arbitrage worth it
+  searchIntent: informational
 tags:
   - airbnb arbitrage
   - rental arbitrage
@@ -29,100 +28,139 @@ tags:
   - case study
   - success story
   - short-term rental
-
-# Open Graph & Social
 image: /assets/images/blog/success-stories/rob-2-deals-10000-month.jpg
-imageAlt: "How Rob Built $10,000/Month with Just 2 Airbnb Properties (2026 Case Study) - Legacy Investing Show"
+imageAlt: >-
+  How Rob Built $10,000/Month with Just 2 Airbnb Properties (2026 Case Study) -
+  Legacy Investing Show
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
 featured: false
-
-# Video Integration
-youtubeId: "5h9iwMgZxjk"
-
-# Multiple Schema Types for Rich Results
+youtubeId: 5h9iwMgZxjk
 schema:
   - type: Article
-    headline: "How Rob Built $10,000/Month with Just 2 Airbnb Properties (2026 Case Study)"
-    datePublished: "2026-04-17T00:00:00Z"
-    dateModified: "2026-01-23T00:00:00Z"
+    headline: >-
+      How Rob Built $10,000/Month with Just 2 Airbnb Properties (2026 Case
+      Study)
+    datePublished: '2026-04-17T00:00:00Z'
+    dateModified: '2026-01-23T00:00:00Z'
   - type: VideoObject
-    name: "How Rob Built $10,000/Month with Just 2 Airbnb Properties (2026 Case Study) - Full Interview"
-    thumbnailUrl: "https://img.youtube.com/vi/5h9iwMgZxjk/maxresdefault.jpg"
-    embedUrl: "https://www.youtube.com/embed/5h9iwMgZxjk"
+    name: >-
+      How Rob Built $10,000/Month with Just 2 Airbnb Properties (2026 Case
+      Study) - Full Interview
+    thumbnailUrl: 'https://img.youtube.com/vi/5h9iwMgZxjk/maxresdefault.jpg'
+    embedUrl: 'https://www.youtube.com/embed/5h9iwMgZxjk'
   - type: HowTo
-    name: "How to Build an Airbnb Business Like This Success Story"
-
-# Breadcrumbs
+    name: How to Build an Airbnb Business Like This Success Story
 breadcrumbs:
-  - name: "Home"
-    url: "/"
-  - name: "Blog"
-    url: "/blog"
-  - name: "Success Stories"
-    url: "/blog/category/success-stories"
-
-# Statistics (AI-crawler accessible, renders as stat cards)
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog
+  - name: Success Stories
+    url: /blog/category/success-stories
 statistics:
-  - value: "$10,000+"
-    label: "Monthly Profit"
-    icon: "dollar"
-    context: "Combined from 2 properties"
-    source: "Student Interview, April 2023"
-  - value: "2"
-    label: "Properties"
-    icon: "home"
-    context: "Louisville, KY & St. Simons Island, GA"
-  - value: "~2 hrs"
-    label: "Weekly Time"
-    icon: "clock"
-    context: "After systems are set up"
-  - value: "$5,000"
-    label: "Peak Month Profit"
-    icon: "star"
-    context: "Louisville during Derby"
-  - value: "15"
-    label: "Max Guest Capacity"
-    icon: "users"
-    context: "St. Simons Island property"
-  - value: "$3,600"
-    label: "All-In Monthly Expenses"
-    icon: "star"
-    context: "Louisville (utilities included)"
-
-# FAQ (FAQPage schema + accordion rendering)
+  - value: '$10,000+'
+    label: Monthly Profit
+    icon: dollar
+    context: Combined from 2 properties
+    source: 'Student Interview, April 2023'
+  - value: '2'
+    label: Properties
+    icon: home
+    context: 'Louisville, KY & St. Simons Island, GA'
+  - value: ~2 hrs
+    label: Weekly Time
+    icon: clock
+    context: After systems are set up
+  - value: '$5,000'
+    label: Peak Month Profit
+    icon: star
+    context: Louisville during Derby
+  - value: '15'
+    label: Max Guest Capacity
+    icon: users
+    context: St. Simons Island property
+  - value: '$3,600'
+    label: All-In Monthly Expenses
+    icon: star
+    context: Louisville (utilities included)
 faq:
-  - question: "How much money can you make with Airbnb arbitrage?"
-    answer: "Rob generates $10,000/month in profit from just 2 properties. His Louisville property nets approximately $5,000 in peak months like Derby, while his St. Simons Island property (sleeping 15 guests with pool and hot tub) generates significant cash flow. Combined monthly profit averages over $10,000."
-  - question: "Is Airbnb arbitrage still profitable in 2026?"
-    answer: "Yes. Rob started in early 2023 and quickly scaled to $10,000/month with just 2 properties. His Louisville property launched during the slowest season (February) and still achieved positive cash flow within the first month. Success depends on market selection, landlord negotiation, and operational efficiency."
-  - question: "How do you convince landlords to allow Airbnb arbitrage?"
-    answer: "Rob's approach focuses on creating win-win scenarios. He positions himself as a professional business owner, not a typical tenant. Key talking points: free property management, maintaining the property better than when found, having LLC protection, and aligning incentives (if property isn't maintained, nobody gets paid). Most landlords say it's a 'no-brainer' when framed this way."
-  - question: "How much does it cost to start Airbnb arbitrage?"
-    answer: "Rob's Louisville property was turnkey (already furnished by owners who previously ran it as an Airbnb), requiring minimal upfront investment. He negotiated utilities included in rent for all-in expenses of $3,600/month. For St. Simons, he invested in furnishing but leveraged Wayfair Pro accounts and referral networks to minimize costs."
-  - question: "What is the best market for Airbnb arbitrage?"
-    answer: "Rob operates in Louisville, Kentucky (bourbon tourism, Kentucky Derby, University of Louisville) and St. Simons Island, Georgia (vacation destination with strong RevPAR above 140-150). He recommends looking in your own backyard first, then expanding to high-RevPAR markets with year-round demand."
-  - question: "Do you need experience to start Airbnb arbitrage?"
-    answer: "No. Rob came from a sales and marketing background with no real estate experience. His sales skills helped with landlord negotiations, but he emphasizes that anyone can learn through practice. His advice: get as many nos as quickly as possible to refine your pitch."
-  - question: "How do you build a team for remote Airbnb management?"
-    answer: "Rob found his St. Simons team by identifying top cleaners in the area, then asking for their referrals. One cleaner (who calls herself a 'hospitality group' not just a cleaner) provided her entire team: handyman, photographer, and connections. She offered linen service, problem-solving, and even stages properties."
-  - question: "Is Legacy Investing Show worth it?"
-    answer: "Based on Rob's results, absolutely. He credits the program's scripts for landlord negotiation, the community for deal analysis (other members talked him out of bad deals), and the system for building confidence. He achieved $10,000/month profit within months of actively pursuing properties."
-  - question: "How much time does Airbnb arbitrage require weekly?"
-    answer: "Rob spends only a couple hours per week on his Louisville property once systems are set up. Time goes to monitoring in Guesty, checking Ring cameras, visiting the property occasionally, and tweaking automated messages. The St. Simons property requires more setup time initially but will be similarly passive once running."
-  - question: "What's the difference between Airbnb arbitrage and buying property?"
-    answer: "Rob chose arbitrage to scale faster without tying up capital in down payments. While owning provides tax benefits, arbitrage allows quicker cash flow generation. Rob's goal is to generate enough cash flow from arbitrage to eventually purchase multi-family properties for tax advantages while keeping his STR portfolio for income."
-
-# Table of Contents
+  - question: How much money can you make with Airbnb arbitrage?
+    answer: >-
+      Rob generates $10,000/month in profit from just 2 properties. His
+      Louisville property nets approximately $5,000 in peak months like Derby,
+      while his St. Simons Island property (sleeping 15 guests with pool and hot
+      tub) generates significant cash flow. Combined monthly profit averages
+      over $10,000.
+  - question: Is Airbnb arbitrage still profitable in 2026?
+    answer: >-
+      Yes. Rob started in early 2023 and quickly scaled to $10,000/month with
+      just 2 properties. His Louisville property launched during the slowest
+      season (February) and still achieved positive cash flow within the first
+      month. Success depends on market selection, landlord negotiation, and
+      operational efficiency.
+  - question: How do you convince landlords to allow Airbnb arbitrage?
+    answer: >-
+      Rob's approach focuses on creating win-win scenarios. He positions himself
+      as a professional business owner, not a typical tenant. Key talking
+      points: free property management, maintaining the property better than
+      when found, having LLC protection, and aligning incentives (if property
+      isn't maintained, nobody gets paid). Most landlords say it's a
+      'no-brainer' when framed this way.
+  - question: How much does it cost to start Airbnb arbitrage?
+    answer: >-
+      Rob's Louisville property was turnkey (already furnished by owners who
+      previously ran it as an Airbnb), requiring minimal upfront investment. He
+      negotiated utilities included in rent for all-in expenses of $3,600/month.
+      For St. Simons, he invested in furnishing but leveraged Wayfair Pro
+      accounts and referral networks to minimize costs.
+  - question: What is the best market for Airbnb arbitrage?
+    answer: >-
+      Rob operates in Louisville, Kentucky (bourbon tourism, Kentucky Derby,
+      University of Louisville) and St. Simons Island, Georgia (vacation
+      destination with strong RevPAR above 140-150). He recommends looking in
+      your own backyard first, then expanding to high-RevPAR markets with
+      year-round demand.
+  - question: Do you need experience to start Airbnb arbitrage?
+    answer: >-
+      No. Rob came from a sales and marketing background with no real estate
+      experience. His sales skills helped with landlord negotiations, but he
+      emphasizes that anyone can learn through practice. His advice: get as many
+      nos as quickly as possible to refine your pitch.
+  - question: How do you build a team for remote Airbnb management?
+    answer: >-
+      Rob found his St. Simons team by identifying top cleaners in the area,
+      then asking for their referrals. One cleaner (who calls herself a
+      'hospitality group' not just a cleaner) provided her entire team:
+      handyman, photographer, and connections. She offered linen service,
+      problem-solving, and even stages properties.
+  - question: Is Legacy Investing Show worth it?
+    answer: >-
+      Based on Rob's results, absolutely. He credits the program's scripts for
+      landlord negotiation, the community for deal analysis (other members
+      talked him out of bad deals), and the system for building confidence. He
+      achieved $10,000/month profit within months of actively pursuing
+      properties.
+  - question: How much time does Airbnb arbitrage require weekly?
+    answer: >-
+      Rob spends only a couple hours per week on his Louisville property once
+      systems are set up. Time goes to monitoring in Guesty, checking Ring
+      cameras, visiting the property occasionally, and tweaking automated
+      messages. The St. Simons property requires more setup time initially but
+      will be similarly passive once running.
+  - question: What's the difference between Airbnb arbitrage and buying property?
+    answer: >-
+      Rob chose arbitrage to scale faster without tying up capital in down
+      payments. While owning provides tax benefits, arbitrage allows quicker
+      cash flow generation. Rob's goal is to generate enough cash flow from
+      arbitrage to eventually purchase multi-family properties for tax
+      advantages while keeping his STR portfolio for income.
 toc: true
 tocDepth: 3
-
-# Reading Time
-readingTime: "25 min read"
-wordCount: "4950"
+readingTime: 24 min read
+wordCount: '4772'
 ---
-
 **Rob earns over $10,000 per month in profit from just 2 Airbnb arbitrage properties.** Starting as a sales professional with two young kids at home, he joined Legacy Investing Show and quickly locked up two properties that became cash cows—one in his hometown of Louisville, Kentucky, and another in St. Simons Island, Georgia. Today, Rob's short-term rental business generates consistent five-figure monthly income while requiring only a couple hours per week of his time.
 
 This case study breaks down exactly how Rob built this Airbnb arbitrage business, including his exact landlord negotiation scripts, how he found a turnkey property that was already permitted and furnished, and his strategy for building a rockstar remote team without ever visiting the property.

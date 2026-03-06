@@ -144,8 +144,8 @@ relatedPosts:
     title: >-
       Asset Allocation Tax Implications: Complete 2026 Guide for After-Tax
       Portfolio Returns
-readingTime: 8 min read
-wordCount: '1851'
+readingTime: 10 min read
+wordCount: '1896'
 ---
 Tax loss harvesting for high earners is one of the few levers that can improve after-tax returns without increasing portfolio risk. You realize losses in taxable accounts, use those losses to offset gains, and reinvest into similar exposure so your allocation stays intact. For high-income households, that can mean meaningful current-year cash-flow relief and better control over when gains are recognized.
 

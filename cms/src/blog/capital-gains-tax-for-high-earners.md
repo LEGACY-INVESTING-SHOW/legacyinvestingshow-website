@@ -133,8 +133,8 @@ relatedPosts:
     title: '1031 exchange vs standard deduction: Which Strategy Works Better in 2026?'
   - slug: best-tax-deductions-2025
     title: 'Best Tax Deductions 2025: Complete 2026 Guide to Lower Your Tax Bill'
-readingTime: 10 min read
-wordCount: '2187'
+readingTime: 12 min read
+wordCount: '2308'
 ---
 If you are selling appreciated stock, real estate, or a business interest in 2026, capital gains tax for high earners can become one of your biggest controllable costs. For many high-income households, the real issue is not just the federal long-term capital gains rate. It is the stack of taxes: long-term or short-term treatment, the 3.8 percent net investment income tax, state tax, and avoidable planning errors like bad lot selection or missed loss harvesting windows.
 

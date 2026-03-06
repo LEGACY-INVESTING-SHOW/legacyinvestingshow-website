@@ -179,8 +179,8 @@ relatedPosts:
     title: >-
       Best Registered Agent for LLC: Complete 2026 Guide to Cost, Privacy, and
       Compliance
-readingTime: 12 min read
-wordCount: '2560'
+readingTime: 14 min read
+wordCount: '2662'
 ---
 If you are evaluating a s corp election for real estate operators, start with one question: are you earning active business income that is currently exposed to self-employment tax, or mostly passive rental income on Schedule E? The IRS treats those buckets differently, and that difference determines whether this strategy can create durable savings or just extra paperwork.
 

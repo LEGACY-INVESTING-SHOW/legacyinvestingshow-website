@@ -1,33 +1,35 @@
 ---
-# Core SEO Fields
-title: "BRRRR Strategy: How We Got PAID $7,500 to Buy a Rental Property (2025 Deal Breakdown)"
-titleTemplate: "%s | Legacy Investing Show"
-description: "Learn the BRRRR method step by step with a real deal breakdown. See how we invested $172,500, refinanced at $180,000, and got paid $7,500 to buy a rental property generating $500/month cash flow. Complete guide to Buy, Renovate, Rent, Refinance, Repeat."
-date: 2026-01-24
-modifiedDate: 2026-01-24
+title: >-
+  BRRRR Strategy: How We Got PAID $7,500 to Buy a Rental Property (2025 Deal
+  Breakdown)
+titleTemplate: '%s | Legacy Investing Show'
+description: >-
+  Learn the BRRRR method step by step with a real deal breakdown. See how we
+  invested $172,500, refinanced at $180,000, and got paid $7,500 to buy a rental
+  property generating $500/month cash flow. Complete guide to Buy, Renovate,
+  Rent, Refinance, Repeat.
+date: 2026-01-24T00:00:00.000Z
+modifiedDate: 2026-01-24T00:00:00.000Z
 author: Preston Seo
-authorTitle: "Founder, Legacy Investing Show"
-authorCredentials: "50+ rental units, assisted living facility owner, 2,000+ students trained"
+authorTitle: 'Founder, Legacy Investing Show'
+authorCredentials: '50+ rental units, assisted living facility owner, 2,000+ students trained'
 category: Real Estate Investing
-canonical: "https://www.legacyinvestingshow.com/blog/brrrr-strategy-get-paid-buy-rental-property"
-
-# SEO Keyword Targeting
+canonical: >-
+  https://www.legacyinvestingshow.com/blog/brrrr-strategy-get-paid-buy-rental-property
 seo:
-  primaryKeyword: "BRRRR strategy"
+  primaryKeyword: BRRRR strategy
   secondaryKeywords:
-    - "BRRRR method real estate"
-    - "buy renovate rent refinance repeat"
-    - "how to BRRRR a property"
-    - "get paid to buy rental property"
+    - BRRRR method real estate
+    - buy renovate rent refinance repeat
+    - how to BRRRR a property
+    - get paid to buy rental property
   longTailKeywords:
-    - "how to use BRRRR strategy for real estate investing"
-    - "BRRRR strategy example with numbers"
-    - "how to get 100 percent financing on rental property"
-    - "hard money loan for BRRRR investing"
-  searchIntent: "informational"
-  targetSnippet: "what is the BRRRR strategy in real estate"
-
-# Tags (exact match keywords)
+    - how to use BRRRR strategy for real estate investing
+    - BRRRR strategy example with numbers
+    - how to get 100 percent financing on rental property
+    - hard money loan for BRRRR investing
+  searchIntent: informational
+  targetSnippet: what is the BRRRR strategy in real estate
 tags:
   - BRRRR strategy
   - real estate investing
@@ -41,120 +43,157 @@ tags:
   - buy and hold
   - real estate deal analysis
   - 100 percent financing
-
-# Open Graph & Social
 image: /assets/images/blog/brrrr-strategy-guide.jpg
-imageAlt: "BRRRR Strategy explained - Buy Renovate Rent Refinance Repeat with real deal numbers showing $7,500 profit at closing"
+imageAlt: >-
+  BRRRR Strategy explained - Buy Renovate Rent Refinance Repeat with real deal
+  numbers showing $7,500 profit at closing
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
 featured: true
-
-# Video Integration
-youtubeId: "gvAvNv1gewI"
-videoDuration: "PT15M30S"
-
-# Multiple Schema Types for Rich Results
+youtubeId: gvAvNv1gewI
+videoDuration: PT15M30S
 schema:
   - type: Article
-    headline: "BRRRR Strategy: How We Got PAID $7,500 to Buy a Rental Property"
-    datePublished: "2026-01-24T00:00:00Z"
-    dateModified: "2026-01-24T00:00:00Z"
+    headline: 'BRRRR Strategy: How We Got PAID $7,500 to Buy a Rental Property'
+    datePublished: '2026-01-24T00:00:00Z'
+    dateModified: '2026-01-24T00:00:00Z'
   - type: VideoObject
-    name: "Here's How You Can Get PAID To Buy A Rental Property | BRRRR Strategy"
-    description: "Complete BRRRR strategy walkthrough with real deal numbers showing how to get paid at closing while building a rental property portfolio"
-    thumbnailUrl: "https://img.youtube.com/vi/gvAvNv1gewI/maxresdefault.jpg"
-    uploadDate: "2023-01-15"
-    duration: "PT15M30S"
-    embedUrl: "https://www.youtube.com/embed/gvAvNv1gewI"
+    name: Here's How You Can Get PAID To Buy A Rental Property | BRRRR Strategy
+    description: >-
+      Complete BRRRR strategy walkthrough with real deal numbers showing how to
+      get paid at closing while building a rental property portfolio
+    thumbnailUrl: 'https://img.youtube.com/vi/gvAvNv1gewI/maxresdefault.jpg'
+    uploadDate: '2023-01-15'
+    duration: PT15M30S
+    embedUrl: 'https://www.youtube.com/embed/gvAvNv1gewI'
   - type: HowTo
-    name: "How to Execute the BRRRR Strategy"
-    estimatedCost: "$150,000-$200,000 total project cost (100% financed)"
-    totalTime: "4-6 months from purchase to refinance"
+    name: How to Execute the BRRRR Strategy
+    estimatedCost: '$150,000-$200,000 total project cost (100% financed)'
+    totalTime: 4-6 months from purchase to refinance
   - type: Person
-    name: "Preston Seo"
-    jobTitle: "Real Estate Investor & Educator"
-    knowsAbout: ["BRRRR strategy", "rental properties", "hard money lending", "real estate investing", "wholesaling"]
-
-# Breadcrumbs for Navigation Schema
+    name: Preston Seo
+    jobTitle: Real Estate Investor & Educator
+    knowsAbout:
+      - BRRRR strategy
+      - rental properties
+      - hard money lending
+      - real estate investing
+      - wholesaling
 breadcrumbs:
-  - name: "Home"
-    url: "/"
-  - name: "Blog"
-    url: "/blog"
-  - name: "Real Estate Investing"
-    url: "/blog/category/real-estate-investing"
-  - name: "BRRRR Strategy Guide"
-    url: "/blog/brrrr-strategy-get-paid-buy-rental-property"
-
-# Statistics (AI-crawler accessible, renders as stat cards)
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog
+  - name: Real Estate Investing
+    url: /blog/category/real-estate-investing
+  - name: BRRRR Strategy Guide
+    url: /blog/brrrr-strategy-get-paid-buy-rental-property
 statistics:
-  - value: "$7,500"
-    label: "Cash Back at Refinance"
-    icon: "dollar"
-    context: "Got PAID to buy this property"
-    source: "Real Deal Breakdown"
+  - value: '$7,500'
+    label: Cash Back at Refinance
+    icon: dollar
+    context: Got PAID to buy this property
+    source: Real Deal Breakdown
     highlighted: true
-  - value: "$500"
-    label: "Monthly Cash Flow"
-    icon: "chart"
-    context: "Net profit after all expenses"
-  - value: "100%"
-    label: "Financing"
-    icon: "percent"
-    context: "Hard money covered entire purchase"
-  - value: "$225,000"
-    label: "After Repair Value"
-    icon: "home"
-    context: "Property value post-renovation"
-  - value: "80%"
-    label: "LTV Refinance"
-    icon: "bank"
-    context: "$180,000 new loan amount"
-  - value: "$30,000"
-    label: "Rehab Budget"
-    icon: "tools"
-    context: "Total renovation cost"
-
-# FAQ (FAQPage schema + accordion rendering)
+  - value: $500
+    label: Monthly Cash Flow
+    icon: chart
+    context: Net profit after all expenses
+  - value: 100%
+    label: Financing
+    icon: percent
+    context: Hard money covered entire purchase
+  - value: '$225,000'
+    label: After Repair Value
+    icon: home
+    context: Property value post-renovation
+  - value: 80%
+    label: LTV Refinance
+    icon: bank
+    context: '$180,000 new loan amount'
+  - value: '$30,000'
+    label: Rehab Budget
+    icon: tools
+    context: Total renovation cost
 faq:
-  - question: "What is the BRRRR strategy in real estate?"
-    answer: "BRRRR stands for Buy, Renovate, Rent, Refinance, Repeat. It's a real estate investment strategy where you purchase an undervalued property, renovate it to increase value, rent it out to tenants, refinance to pull out your invested capital (or more), and repeat the process with a new property. Done correctly, you can get paid to buy rental properties."
-  - question: "How do you get paid to buy a rental property?"
-    answer: "You get paid when your After Repair Value (ARV) exceeds your total investment. In our example: $172,500 total invested (purchase + rehab + holding + closing costs), ARV of $225,000, refinanced at 80% LTV ($180,000 new loan), resulting in $7,500 cash back at closing while keeping the cash-flowing property."
-  - question: "What is a hard money loan and how does it work for BRRRR?"
-    answer: "A hard money loan is short-term financing from private lenders based on the property's value rather than your credit. For BRRRR, hard money lenders can fund 100% of the purchase and renovation if the deal is strong enough. Interest rates are higher (typically 10-14%), but you can refinance into a conventional loan once the property is stabilized."
-  - question: "How do I find deals for the BRRRR strategy?"
-    answer: "The best sources are wholesalers (who find distressed properties and assign contracts), investor-friendly real estate agents, and direct marketing. Building relationships with wholesalers is essential because they bring you pre-negotiated deals below market value that are perfect for BRRRR."
-  - question: "What return should I expect from a BRRRR property?"
-    answer: "A successful BRRRR should generate $300-500+ monthly cash flow, return 100% of your invested capital at refinance (or more), and build equity through forced appreciation from renovations. Our example generated $500/month cash flow plus $7,500 cash back at closing."
-  - question: "How long does the BRRRR process take?"
-    answer: "Typically 4-6 months from purchase to refinance. The renovation phase takes 1-3 months depending on scope. You'll need the property rented for at least 30-60 days before most lenders will refinance. Some investors run multiple BRRRR projects simultaneously."
-  - question: "What are the risks of the BRRRR strategy?"
-    answer: "Main risks include: renovation costs exceeding budget, ARV coming in lower than expected, difficulty finding tenants at projected rent, hard money loan costs eating into returns if project takes too long, and refinance appraisal not meeting expectations. Always build contingency into your numbers."
-  - question: "Can I do BRRRR with no money down?"
-    answer: "Yes, if you find a deal good enough. Hard money lenders will fund 100% of purchase and rehab when the numbers are strong (typically when total investment is 70-75% of ARV or less). You may need to bring cash for holding costs and closing, or find lenders who roll these in."
-  - question: "What's the difference between BRRRR and house flipping?"
-    answer: "House flipping involves buying, renovating, and selling for profit. BRRRR involves buying, renovating, and keeping as a rental. With BRRRR, you build long-term wealth through rental income and appreciation while recycling your capital. Flipping generates one-time profit but no ongoing income."
-  - question: "How do I vet a property management company for my BRRRR rentals?"
-    answer: "Check reviews and references from other investors, understand their fee structure (typically 8-10% of rent), ask about their tenant screening process, verify their maintenance protocols, and ensure they provide detailed monthly statements. Good property management is essential for passive income."
-
-# Table of Contents
+  - question: What is the BRRRR strategy in real estate?
+    answer: >-
+      BRRRR stands for Buy, Renovate, Rent, Refinance, Repeat. It's a real
+      estate investment strategy where you purchase an undervalued property,
+      renovate it to increase value, rent it out to tenants, refinance to pull
+      out your invested capital (or more), and repeat the process with a new
+      property. Done correctly, you can get paid to buy rental properties.
+  - question: How do you get paid to buy a rental property?
+    answer: >-
+      You get paid when your After Repair Value (ARV) exceeds your total
+      investment. In our example: $172,500 total invested (purchase + rehab +
+      holding + closing costs), ARV of $225,000, refinanced at 80% LTV ($180,000
+      new loan), resulting in $7,500 cash back at closing while keeping the
+      cash-flowing property.
+  - question: What is a hard money loan and how does it work for BRRRR?
+    answer: >-
+      A hard money loan is short-term financing from private lenders based on
+      the property's value rather than your credit. For BRRRR, hard money
+      lenders can fund 100% of the purchase and renovation if the deal is strong
+      enough. Interest rates are higher (typically 10-14%), but you can
+      refinance into a conventional loan once the property is stabilized.
+  - question: How do I find deals for the BRRRR strategy?
+    answer: >-
+      The best sources are wholesalers (who find distressed properties and
+      assign contracts), investor-friendly real estate agents, and direct
+      marketing. Building relationships with wholesalers is essential because
+      they bring you pre-negotiated deals below market value that are perfect
+      for BRRRR.
+  - question: What return should I expect from a BRRRR property?
+    answer: >-
+      A successful BRRRR should generate $300-500+ monthly cash flow, return
+      100% of your invested capital at refinance (or more), and build equity
+      through forced appreciation from renovations. Our example generated
+      $500/month cash flow plus $7,500 cash back at closing.
+  - question: How long does the BRRRR process take?
+    answer: >-
+      Typically 4-6 months from purchase to refinance. The renovation phase
+      takes 1-3 months depending on scope. You'll need the property rented for
+      at least 30-60 days before most lenders will refinance. Some investors run
+      multiple BRRRR projects simultaneously.
+  - question: What are the risks of the BRRRR strategy?
+    answer: >-
+      Main risks include: renovation costs exceeding budget, ARV coming in lower
+      than expected, difficulty finding tenants at projected rent, hard money
+      loan costs eating into returns if project takes too long, and refinance
+      appraisal not meeting expectations. Always build contingency into your
+      numbers.
+  - question: Can I do BRRRR with no money down?
+    answer: >-
+      Yes, if you find a deal good enough. Hard money lenders will fund 100% of
+      purchase and rehab when the numbers are strong (typically when total
+      investment is 70-75% of ARV or less). You may need to bring cash for
+      holding costs and closing, or find lenders who roll these in.
+  - question: What's the difference between BRRRR and house flipping?
+    answer: >-
+      House flipping involves buying, renovating, and selling for profit. BRRRR
+      involves buying, renovating, and keeping as a rental. With BRRRR, you
+      build long-term wealth through rental income and appreciation while
+      recycling your capital. Flipping generates one-time profit but no ongoing
+      income.
+  - question: How do I vet a property management company for my BRRRR rentals?
+    answer: >-
+      Check reviews and references from other investors, understand their fee
+      structure (typically 8-10% of rent), ask about their tenant screening
+      process, verify their maintenance protocols, and ensure they provide
+      detailed monthly statements. Good property management is essential for
+      passive income.
 toc: true
 tocDepth: 3
-
-# Internal Linking Suggestions
 relatedPosts:
-  - slug: "how-to-buy-first-rental-property-step-by-step"
-    title: "How to Buy Your First Rental Property"
-  - slug: "best-real-estate-model-beginners-2024"
-    title: "Best Real Estate Model for Beginners"
-
-# Reading Time
-readingTime: "16 min read"
-wordCount: "4000"
+  - slug: how-to-buy-first-rental-property-step-by-step
+    title: How to Buy Your First Rental Property
+  - slug: best-real-estate-model-beginners-2024
+    title: Best Real Estate Model for Beginners
+readingTime: 16 min read
+wordCount: '3148'
 ---
-
 **We got paid $7,500 to buy a rental property that generates $500 per month in cash flow.** That's not a typo. Using the BRRRR strategy, we walked away from the closing table with more money than we started with while adding a cash-flowing rental to our portfolio.
 
 This guide breaks down exactly how we did it, including the complete deal numbers, how to find these opportunities, and how you can replicate this strategy even if you don't have money for a down payment.

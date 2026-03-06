@@ -1,28 +1,29 @@
 ---
-# Core SEO Fields
-title: "How Andrew Operates a $2,500/Month Airbnb in Mexico From the US (2026 Case Study)"
-titleTemplate: "%s | Legacy Investing Show Success Stories"
-description: "Andrew went from hotel management professional to operating a $2,500/month Airbnb in Tulum, Mexico while living in the United States. Learn his exact strategies for international rental arbitrage, remote property management, and capitalizing on emerging markets."
-date: 2025-10-12
-modifiedDate: 2026-01-23
+title: >-
+  How Andrew Operates a $2,500/Month Airbnb in Mexico From the US (2026 Case
+  Study)
+titleTemplate: '%s | Legacy Investing Show Success Stories'
+description: >-
+  Andrew went from hotel management professional to operating a $2,500/month
+  Airbnb in Tulum, Mexico while living in the United States. Learn his exact
+  strategies for international rental arbitrage, remote property management, and
+  capitalizing on emerging markets.
+date: 2025-10-12T00:00:00.000Z
+modifiedDate: 2026-01-23T00:00:00.000Z
 author: Preston Seo
-authorTitle: "Founder, Legacy Investing Show"
-authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
+authorTitle: 'Founder, Legacy Investing Show'
+authorCredentials: '2,000+ students trained, $10M+ student revenue generated'
 category: Success Story
-canonical: "https://www.legacyinvestingshow.com/blog/andrew-2500-airbnb-mexico-remote"
-
-# SEO Keyword Targeting
+canonical: 'https://www.legacyinvestingshow.com/blog/andrew-2500-airbnb-mexico-remote'
 seo:
-  primaryKeyword: "airbnb success story"
+  primaryKeyword: airbnb success story
   secondaryKeywords:
-    - "short-term rental business"
-    - "mexico airbnb"
+    - short-term rental business
+    - mexico airbnb
   longTailKeywords:
-    - "how much can you make with airbnb"
-    - "is airbnb arbitrage worth it"
-  searchIntent: "informational"
-
-# Tags
+    - how much can you make with airbnb
+    - is airbnb arbitrage worth it
+  searchIntent: informational
 tags:
   - airbnb arbitrage
   - rental arbitrage
@@ -30,100 +31,130 @@ tags:
   - case study
   - success story
   - short-term rental
-
-# Open Graph & Social
 image: /assets/images/blog/success-stories/andrew-mexico-airbnb.jpg
-imageAlt: "How Andrew Operates a $2,500/Month Airbnb in Mexico From the US (2026 Case Study) - Legacy Investing Show"
+imageAlt: >-
+  How Andrew Operates a $2,500/Month Airbnb in Mexico From the US (2026 Case
+  Study) - Legacy Investing Show
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
 featured: false
-
-# Video Integration
-youtubeId: "9ruvPrKYmnI"
-
-# Multiple Schema Types for Rich Results
+youtubeId: 9ruvPrKYmnI
 schema:
   - type: Article
-    headline: "How Andrew Operates a $2,500/Month Airbnb in Mexico From the US (2026 Case Study)"
-    datePublished: "2026-03-12T00:00:00Z"
-    dateModified: "2026-01-23T00:00:00Z"
+    headline: >-
+      How Andrew Operates a $2,500/Month Airbnb in Mexico From the US (2026 Case
+      Study)
+    datePublished: '2026-03-12T00:00:00Z'
+    dateModified: '2026-01-23T00:00:00Z'
   - type: VideoObject
-    name: "How Andrew Operates a $2,500/Month Airbnb in Mexico From the US (2026 Case Study) - Full Interview"
-    thumbnailUrl: "https://img.youtube.com/vi/9ruvPrKYmnI/maxresdefault.jpg"
-    embedUrl: "https://www.youtube.com/embed/9ruvPrKYmnI"
+    name: >-
+      How Andrew Operates a $2,500/Month Airbnb in Mexico From the US (2026 Case
+      Study) - Full Interview
+    thumbnailUrl: 'https://img.youtube.com/vi/9ruvPrKYmnI/maxresdefault.jpg'
+    embedUrl: 'https://www.youtube.com/embed/9ruvPrKYmnI'
   - type: HowTo
-    name: "How to Build an Airbnb Business Like This Success Story"
-
-# Breadcrumbs
+    name: How to Build an Airbnb Business Like This Success Story
 breadcrumbs:
-  - name: "Home"
-    url: "/"
-  - name: "Blog"
-    url: "/blog"
-  - name: "Success Stories"
-    url: "/blog/category/success-stories"
-
-# Statistics (AI-crawler accessible, renders as stat cards)
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog
+  - name: Success Stories
+    url: /blog/category/success-stories
 statistics:
-  - value: "$2,500"
-    label: "Projected Monthly Cash Flow"
-    icon: "dollar"
-    context: "Year 2 average target"
-    source: "Student Interview, 2024"
-  - value: "1"
-    label: "Property"
-    icon: "home"
-    context: "Tulum, Mexico market"
-  - value: "$400"
-    label: "High Season ADR"
-    icon: "star"
-    context: "Peak tourist months"
-  - value: "5 hrs"
-    label: "Weekly Time Investment"
-    icon: "clock"
-    context: "After property setup"
-  - value: "15 yrs"
-    label: "Industry Experience"
-    icon: "chart"
-    context: "Hotel management background"
-  - value: "100%"
-    label: "Remote Operation"
-    icon: "star"
-    context: "US-based, Mexico property"
-
-# FAQ (FAQPage schema + accordion rendering)
+  - value: '$2,500'
+    label: Projected Monthly Cash Flow
+    icon: dollar
+    context: Year 2 average target
+    source: 'Student Interview, 2024'
+  - value: '1'
+    label: Property
+    icon: home
+    context: 'Tulum, Mexico market'
+  - value: $400
+    label: High Season ADR
+    icon: star
+    context: Peak tourist months
+  - value: 5 hrs
+    label: Weekly Time Investment
+    icon: clock
+    context: After property setup
+  - value: 15 yrs
+    label: Industry Experience
+    icon: chart
+    context: Hotel management background
+  - value: 100%
+    label: Remote Operation
+    icon: star
+    context: 'US-based, Mexico property'
 faq:
-  - question: "Can you do Airbnb arbitrage in another country?"
-    answer: "Yes. Andrew operates a profitable Airbnb in Tulum, Mexico while living in the United States. The key is finding trusted local partners including property managers, cleaning teams, and maintenance contacts who understand the arbitrage model and can handle day-to-day operations."
-  - question: "How much can you make with Airbnb in Mexico?"
-    answer: "Andrew averages $1,500/month in his first year with a seasonal property in Tulum. High season brings $400/night ADR while off-season drops to around $100. He projects $2,500/month average in year two as the new Tulum International Airport drives increased tourism demand."
-  - question: "Is Airbnb arbitrage still profitable in 2026?"
-    answer: "Yes. Andrew started his Mexico property while working full-time in hotel software. Success depends on market selection, trusted local partnerships, and understanding seasonal patterns. Andrew expects to recover his initial investment within 7-8 months."
-  - question: "How do you find properties for Airbnb arbitrage internationally?"
-    answer: "Andrew found his Tulum property through Facebook groups connecting landlords with Airbnb arbitrage operators. He then connected with a local property management company and brokers who understood fair market pricing since resources like Zillow aren't available in Mexico."
-  - question: "How much time does it take to manage a remote Airbnb?"
-    answer: "Andrew spends approximately 5 hours per week managing his Tulum property remotely. His property management team handles guest communication and day-to-day operations. He focuses on numbers, market analysis, and rate adjustments."
-  - question: "What are the challenges of international Airbnb arbitrage?"
-    answer: "Key challenges include: being a foreign citizen creates legal and banking complexities, limited market research tools (Air DNA is less complete internationally), finding fair rental pricing without Zillow, and managing seasonal revenue swings. Trusted local partners help overcome these obstacles."
-  - question: "Do you need experience to start Airbnb arbitrage?"
-    answer: "No formal real estate experience is required. Andrew's 15 years in hotel management and hospitality gave him industry familiarity, but he credits Legacy Investing Show for providing the step-by-step process, landlord scripts, and confidence to execute his first property."
-  - question: "Is Legacy Investing Show worth it for international arbitrage?"
-    answer: "Andrew says the program gave him the understanding to negotiate management fees, approach landlords confidently, and understand what numbers he needed to make the deal profitable. His property managers were impressed by his preparation and due diligence knowledge."
-  - question: "What makes Tulum a good market for Airbnb?"
-    answer: "Tulum is positioned for growth with a new International Airport opening in December that allows direct international flights. This infrastructure investment signals strong future demand, though the market is highly seasonal with significant high/low season rate differences."
-  - question: "How do you build a team for remote Airbnb management?"
-    answer: "Andrew found partners through Facebook groups focused on Airbnb arbitrage. He vetted property management companies, cleaning teams, and maintenance contacts by talking to multiple vendors and getting references. The right local partners who understand arbitrage are essential for remote success."
-
-# Table of Contents
+  - question: Can you do Airbnb arbitrage in another country?
+    answer: >-
+      Yes. Andrew operates a profitable Airbnb in Tulum, Mexico while living in
+      the United States. The key is finding trusted local partners including
+      property managers, cleaning teams, and maintenance contacts who understand
+      the arbitrage model and can handle day-to-day operations.
+  - question: How much can you make with Airbnb in Mexico?
+    answer: >-
+      Andrew averages $1,500/month in his first year with a seasonal property in
+      Tulum. High season brings $400/night ADR while off-season drops to around
+      $100. He projects $2,500/month average in year two as the new Tulum
+      International Airport drives increased tourism demand.
+  - question: Is Airbnb arbitrage still profitable in 2026?
+    answer: >-
+      Yes. Andrew started his Mexico property while working full-time in hotel
+      software. Success depends on market selection, trusted local partnerships,
+      and understanding seasonal patterns. Andrew expects to recover his initial
+      investment within 7-8 months.
+  - question: How do you find properties for Airbnb arbitrage internationally?
+    answer: >-
+      Andrew found his Tulum property through Facebook groups connecting
+      landlords with Airbnb arbitrage operators. He then connected with a local
+      property management company and brokers who understood fair market pricing
+      since resources like Zillow aren't available in Mexico.
+  - question: How much time does it take to manage a remote Airbnb?
+    answer: >-
+      Andrew spends approximately 5 hours per week managing his Tulum property
+      remotely. His property management team handles guest communication and
+      day-to-day operations. He focuses on numbers, market analysis, and rate
+      adjustments.
+  - question: What are the challenges of international Airbnb arbitrage?
+    answer: >-
+      Key challenges include: being a foreign citizen creates legal and banking
+      complexities, limited market research tools (Air DNA is less complete
+      internationally), finding fair rental pricing without Zillow, and managing
+      seasonal revenue swings. Trusted local partners help overcome these
+      obstacles.
+  - question: Do you need experience to start Airbnb arbitrage?
+    answer: >-
+      No formal real estate experience is required. Andrew's 15 years in hotel
+      management and hospitality gave him industry familiarity, but he credits
+      Legacy Investing Show for providing the step-by-step process, landlord
+      scripts, and confidence to execute his first property.
+  - question: Is Legacy Investing Show worth it for international arbitrage?
+    answer: >-
+      Andrew says the program gave him the understanding to negotiate management
+      fees, approach landlords confidently, and understand what numbers he
+      needed to make the deal profitable. His property managers were impressed
+      by his preparation and due diligence knowledge.
+  - question: What makes Tulum a good market for Airbnb?
+    answer: >-
+      Tulum is positioned for growth with a new International Airport opening in
+      December that allows direct international flights. This infrastructure
+      investment signals strong future demand, though the market is highly
+      seasonal with significant high/low season rate differences.
+  - question: How do you build a team for remote Airbnb management?
+    answer: >-
+      Andrew found partners through Facebook groups focused on Airbnb arbitrage.
+      He vetted property management companies, cleaning teams, and maintenance
+      contacts by talking to multiple vendors and getting references. The right
+      local partners who understand arbitrage are essential for remote success.
 toc: true
 tocDepth: 3
-
-# Reading Time
-readingTime: "24 min read"
-wordCount: "4753"
+readingTime: 23 min read
+wordCount: '4586'
 ---
-
 **Andrew Wolf earns $2,500 per month operating an Airbnb in Tulum, Mexico while living in the United States.** After 15 years in hotel management and hospitality, he combined his industry knowledge with Legacy Investing Show's proven system to secure his first international rental arbitrage property. Today, Andrew manages his Tulum property remotely, spending just 5 hours per week on operations while planning expansion into both Mexican and US markets.
 
 This case study breaks down exactly how Andrew built an international Airbnb arbitrage business, including his specific strategies for finding partners in foreign countries, navigating the challenges of cross-border property management, and capitalizing on emerging market opportunities that most investors overlook.

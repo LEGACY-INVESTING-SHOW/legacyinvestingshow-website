@@ -143,8 +143,8 @@ relatedPosts:
     title: 'BRRRR Method: Buy, Rehab, Rent, Refinance, Repeat'
   - slug: digital-product-income
     title: 'Digital Product Income: Create Once, Sell Forever'
-readingTime: 11 min read
-wordCount: '2474'
+readingTime: 14 min read
+wordCount: '2617'
 ---
 self storage investing tax implications are often the difference between a deal that merely looks profitable and one that builds durable after-tax wealth. Many buyers focus on occupancy, rent growth, and cap rate, then discover too late that depreciation timing, passive-loss limits, and exit recapture changed returns by tens of thousands of dollars. This guide is built for US investors making real decisions in 2026. You will get a practical framework, a worked numeric example, and a 30-day execution plan you can use before closing. For broader context, see our [investing hub](/topics/investing), plus related breakdowns on [rental property investing](/blog/rental-property-investing) and [laundromat investing](/blog/laundromat-investing).
 

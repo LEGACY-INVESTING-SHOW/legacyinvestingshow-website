@@ -145,8 +145,8 @@ relatedPosts:
     title: '401(k) Rollover Guide: Move Your Retirement Funds the Right Way'
   - slug: 401k-strategy-vs-taxable-brokerage
     title: '401k strategy vs taxable brokerage: Which Strategy Works Better in 2026?'
-readingTime: 10 min read
-wordCount: '2171'
+readingTime: 12 min read
+wordCount: '2373'
 ---
 Retirement income planning in 2026 is not about finding one magic percentage. It is about building a repeatable decision process you can run every year. A retirement withdrawal strategy spreadsheet gives you that process because it combines spending, taxes, market returns, and account sequencing in one place.
 

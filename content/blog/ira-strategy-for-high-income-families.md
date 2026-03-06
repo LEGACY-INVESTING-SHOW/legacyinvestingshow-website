@@ -136,8 +136,8 @@ relatedPosts:
     title: >-
       401k Strategy for Beginners: Complete 2026 Guide to Matching, Taxes, and
       Contribution Decisions
-readingTime: 9 min read
-wordCount: '2070'
+readingTime: 11 min read
+wordCount: '2120'
 ---
 If you need an **ira strategy for high income families** in 2026, the goal is not just to save more. The goal is to save in the right account, in the right order, with the lowest lifetime tax drag.
 

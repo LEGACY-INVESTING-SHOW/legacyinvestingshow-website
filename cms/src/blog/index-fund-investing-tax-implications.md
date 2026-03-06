@@ -142,8 +142,8 @@ relatedPosts:
     title: >-
       Asset Allocation Tax Implications: Complete 2026 Guide for After-Tax
       Portfolio Returns
-readingTime: 9 min read
-wordCount: '2078'
+readingTime: 11 min read
+wordCount: '2154'
 ---
 If you are building wealth with low-cost funds, **index fund investing tax implications** deserve the same attention as expense ratios and returns. Two portfolios can hold similar index exposure and still produce very different after-tax outcomes. The difference usually comes from where assets are held, how distributions are taxed, and whether the investor follows a repeatable tax process.
 

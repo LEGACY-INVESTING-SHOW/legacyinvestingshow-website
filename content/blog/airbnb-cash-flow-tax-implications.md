@@ -141,8 +141,8 @@ relatedPosts:
     title: 'ATM Business Guide: Passive Income from Cash Machines'
   - slug: brrrr-method
     title: 'BRRRR Method: Buy, Rehab, Rent, Refinance, Repeat'
-readingTime: 10 min read
-wordCount: '2225'
+readingTime: 12 min read
+wordCount: '2336'
 ---
 If you are evaluating a short-term rental, **airbnb cash flow tax implications** can matter more than your occupancy rate. Two properties can show similar gross revenue, but produce very different personal outcomes once you account for classification, depreciation, local lodging rules, and whether losses are currently usable.
 

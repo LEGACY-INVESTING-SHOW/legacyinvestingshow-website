@@ -151,8 +151,8 @@ relatedPosts:
     title: >-
       401k Strategy Tax Implications: Complete 2026 Guide to Contributions,
       Withdrawals, and Bracket Control
-readingTime: 9 min read
-wordCount: '2068'
+readingTime: 11 min read
+wordCount: '2151'
 ---
 In 2026, social security claiming vs taxable brokerage is one of the highest-leverage decisions retirees can make. You are not just deciding where income comes from. You are deciding how much guaranteed lifetime income you lock in, how much market risk you carry in your 60s and 70s, and how much tax drag you create each year.
 

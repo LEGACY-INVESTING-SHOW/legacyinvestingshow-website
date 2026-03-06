@@ -136,8 +136,8 @@ relatedPosts:
     title: >-
       Asset Allocation Tax Implications: Complete 2026 Guide for After-Tax
       Portfolio Returns
-readingTime: 9 min read
-wordCount: '1893'
+readingTime: 10 min read
+wordCount: '1914'
 ---
 If you are building a long-term stock portfolio, value investing tax implications can matter as much as valuation ratios and business quality. Two portfolios can post similar pre-tax returns, yet the investor who manages taxes deliberately may keep materially more wealth over time.
 

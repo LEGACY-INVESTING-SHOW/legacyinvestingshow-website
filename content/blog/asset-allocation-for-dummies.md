@@ -135,8 +135,8 @@ relatedPosts:
       Portfolio You Can Stick With
   - slug: asset-allocation-strategies
     title: 'Asset Allocation Strategies by Age: How to Balance Your Portfolio'
-readingTime: 11 min read
-wordCount: '2341'
+readingTime: 13 min read
+wordCount: '2471'
 ---
 Most people who search asset allocation for dummies are not asking for theory. They want a portfolio they can understand, manage, and stick with when markets get ugly. This guide is built for that exact problem: you will get a practical framework, specific percentages, and a clear implementation plan you can execute in weeks, not months.
 

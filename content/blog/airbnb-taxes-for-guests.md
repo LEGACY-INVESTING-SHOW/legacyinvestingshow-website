@@ -138,8 +138,8 @@ tocDepth: 3
 relatedPosts:
   - slug: getting-started-airbnb-arbitrage
     title: 'Getting Started with Airbnb Arbitrage: A Complete Beginner''s Guide'
-readingTime: 9 min read
-wordCount: '2032'
+readingTime: 11 min read
+wordCount: '2145'
 ---
 Airbnb taxes for guests can turn a trip that looks affordable at search time into a materially different checkout total. If you travel often, evaluate short-term rentals for investing, or run an Airbnb arbitrage business, the tax line items can affect your cash flow more than many people expect.
 

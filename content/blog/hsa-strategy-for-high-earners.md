@@ -137,8 +137,8 @@ relatedPosts:
     title: '1031 exchange vs standard deduction: Which Strategy Works Better in 2026?'
   - slug: best-tax-deductions-2025
     title: 'Best Tax Deductions 2025: Complete 2026 Guide to Lower Your Tax Bill'
-readingTime: 11 min read
-wordCount: '2350'
+readingTime: 13 min read
+wordCount: '2413'
 ---
 For many US households in the 32% to 37% federal bracket, an HSA is the most underused tax account in the plan. A disciplined hsa strategy for high earners is not just about paying doctor bills this year. It is a decision framework for reducing taxable income now, compounding assets tax-free, and creating a flexible pool for healthcare costs in retirement.
 

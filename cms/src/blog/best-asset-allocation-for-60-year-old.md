@@ -136,8 +136,8 @@ relatedPosts:
     title: >-
       Asset Allocation Tax Implications: Complete 2026 Guide for After-Tax
       Portfolio Returns
-readingTime: 10 min read
-wordCount: '2164'
+readingTime: 12 min read
+wordCount: '2239'
 ---
 If you are searching for the best asset allocation for 60 year old investors, treat it as a retirement paycheck design problem, not a performance contest. At age 60, many investors still have a 25-35 year horizon, but they also have a shorter runway before withdrawals begin. That creates a dual mandate: keep enough growth to outpace inflation while limiting drawdowns that could force bad decisions.
 

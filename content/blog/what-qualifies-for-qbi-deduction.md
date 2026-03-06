@@ -140,8 +140,8 @@ relatedPosts:
     title: 'Best Tax Deductions for High Income Earners: Complete 2026 Guide'
   - slug: best-tax-deductions-for-individuals
     title: 'Best Tax Deductions for Individuals: Complete 2026 Guide'
-readingTime: 11 min read
-wordCount: '2364'
+readingTime: 13 min read
+wordCount: '2456'
 ---
 If you are asking what qualifies for qbi deduction in 2026, start with timing: as of February 16, 2026, IRS guidance says Section 199A generally applies to tax years beginning after December 31, 2017 and ending on or before December 31, 2025. In practice, many households filing in 2026 for 2025 income may still claim it, while treatment for 2026 tax-year income depends on future legislation. So the right move is to optimize what is claimable now and keep flexibility for law changes.
 

@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QBI Deduction Worksheet | Legacy Investing Show</title>
+    <meta name="description" content="Organize business income, wage/property limits, SSTB risk, and phaseout assumptions before you estimate or defend a QBI deduction.">
+    <meta name="keywords" content="QBI Deduction Worksheet, Tax Strategy, Organize business income, wage/property limits, SSTB risk, and phaseout assumptions before you estimate or defend a QBI deduction., QBI Deduction for High Earners, How Is QBI Deduction Calculated for S Corp?, QBI Deduction Phaseout 2025, Business and Filing Context, Income and Limitation Inputs, Decision and Advisor Review">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="Kec6RfGhFL-qG_8zKxCqt7yxjgy65WeDAftCBm90G2s">
+    <meta name="google-site-verification" content="92MoCnkdQOj_ey1lEafT5Mz-znCcCQ3UABZlI-JG_nM">
+    <link rel="canonical" href="https://www.legacyinvestingshow.com/worksheets/qbi-deduction-worksheet">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.legacyinvestingshow.com/worksheets/qbi-deduction-worksheet">
+    <meta property="og:title" content="QBI Deduction Worksheet">
+    <meta property="og:description" content="Organize business income, wage/property limits, SSTB risk, and phaseout assumptions before you estimate or defend a QBI deduction.">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="QBI Deduction Worksheet">
+    <meta name="twitter:description" content="Organize business income, wage/property limits, SSTB risk, and phaseout assumptions before you estimate or defend a QBI deduction.">
+
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" href="/assets/images/logo.png">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"CreativeWork","name":"QBI Deduction Worksheet","description":"Organize business income, wage/property limits, SSTB risk, and phaseout assumptions before you estimate or defend a QBI deduction.","learningResourceType":"Worksheet","isAccessibleForFree":true,"datePublished":"2026-03-05","dateModified":"2026-03-05","url":"https://www.legacyinvestingshow.com/worksheets/qbi-deduction-worksheet","keywords":"QBI Deduction Worksheet, Tax Strategy, Organize business income, wage/property limits, SSTB risk, and phaseout assumptions before you estimate or defend a QBI deduction., QBI Deduction for High Earners, How Is QBI Deduction Calculated for S Corp?, QBI Deduction Phaseout 2025, Business and Filing Context, Income and Limitation Inputs, Decision and Advisor Review","publisher":{"@type":"Organization","name":"Legacy Investing Show"},"author":{"@type":"Person","name":"Preston Seo"}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.legacyinvestingshow.com/"},{"@type":"ListItem","position":2,"name":"Worksheets","item":"https://www.legacyinvestingshow.com/worksheets/"},{"@type":"ListItem","position":3,"name":"QBI Deduction Worksheet","item":"https://www.legacyinvestingshow.com/worksheets/qbi-deduction-worksheet"}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why use a worksheet if my software already estimates QBI?","acceptedAnswer":{"@type":"Answer","text":"Because software can still produce a number from bad assumptions. The worksheet makes the controlling facts visible before you trust the output."}},{"@type":"Question","name":"What usually breaks a QBI estimate?","acceptedAnswer":{"@type":"Answer","text":"SSTB ambiguity, owner-level taxable income changes, and wage or property limits that were never documented clearly."}},{"@type":"Question","name":"When should I fill this out?","acceptedAnswer":{"@type":"Answer","text":"At midyear for planning and again before filing, especially if income moved or the entity structure changed."}}]}</script>
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-2578PT1WSS');
+    </script>
+
+    <style>
+      .worksheet-hero {
+        padding: 8rem 0 3rem;
+        background:
+          radial-gradient(circle at top right, rgba(201, 169, 97, 0.18), transparent 36%),
+          linear-gradient(180deg, #faf7f2 0%, #ffffff 100%);
+      }
+      .worksheet-hero__grid {
+        display: grid;
+        gap: 1.25rem;
+        align-items: start;
+      }
+      @media (min-width: 1024px) {
+        .worksheet-hero__grid {
+          grid-template-columns: minmax(0, 1.45fr) minmax(300px, 0.8fr);
+        }
+      }
+      .worksheet-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        background: #111827;
+        color: white;
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        border-radius: 999px;
+        margin-bottom: 1rem;
+      }
+      .worksheet-title {
+        font-size: clamp(2.25rem, 5vw, 4.2rem);
+        font-weight: 700;
+        line-height: 0.98;
+        letter-spacing: -0.04em;
+        color: #111827;
+        margin-bottom: 0.95rem;
+        max-width: 12ch;
+      }
+      .worksheet-subtitle {
+        max-width: 46rem;
+        color: #475569;
+        font-size: 1.08rem;
+        line-height: 1.78;
+      }
+      .worksheet-hero__panel {
+        padding: 1.25rem;
+        border-radius: 1.25rem;
+        background: linear-gradient(160deg, #182234, #0f172a);
+        color: white;
+        box-shadow: 0 22px 54px rgba(15, 23, 42, 0.18);
+      }
+      .worksheet-hero__panel h2 {
+        color: white;
+        font-size: 1.45rem;
+        line-height: 1.1;
+        margin: 0 0 0.75rem;
+      }
+      .worksheet-hero__panel p {
+        margin: 0;
+        color: #cbd5e1;
+        line-height: 1.72;
+      }
+      .worksheet-summary-grid {
+        display: grid;
+        gap: 0.95rem;
+        margin-top: 1.35rem;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+      .worksheet-summary-card {
+        padding: 1rem 1.05rem;
+        border-radius: 1rem;
+        background: rgba(255, 255, 255, 0.92);
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        box-shadow: 0 16px 36px rgba(15, 23, 42, 0.05);
+      }
+      .worksheet-summary-card__eyebrow {
+        margin: 0 0 0.45rem;
+        color: #b8933f;
+        font-size: 0.74rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+      .worksheet-summary-card p {
+        margin: 0;
+        color: #334155;
+        font-size: 0.95rem;
+        line-height: 1.68;
+      }
+      .worksheet-section {
+        padding: 0 0 3.25rem;
+      }
+      .worksheet-shell {
+        padding: 1.45rem;
+        border-radius: 1.5rem;
+        background: rgba(255, 255, 255, 0.96);
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+      }
+      .worksheet-copy h2 {
+        color: #111827;
+        font-size: 1.5rem;
+        line-height: 1.12;
+        margin-bottom: 0.85rem;
+      }
+      .worksheet-copy p,
+      .worksheet-copy li {
+        color: #475569;
+        line-height: 1.72;
+      }
+      .worksheet-copy ul {
+        padding-left: 1.2rem;
+      }
+      .worksheet-stack {
+        display: grid;
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+      .worksheet-panel {
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        border-radius: 1.1rem;
+        background: linear-gradient(180deg, rgba(250, 247, 242, 0.7), rgba(255, 255, 255, 0.94));
+        padding: 1rem;
+      }
+      .worksheet-panel__title {
+        margin: 0 0 0.35rem;
+        font-size: 1.15rem;
+        color: #111827;
+      }
+      .worksheet-panel__hint {
+        margin: 0 0 0.85rem;
+        color: #64748b;
+        font-size: 0.9rem;
+        line-height: 1.6;
+      }
+      .worksheet-fields {
+        display: grid;
+        gap: 0.85rem;
+      }
+      .worksheet-field label {
+        display: block;
+        margin-bottom: 0.35rem;
+        color: #111827;
+        font-weight: 700;
+        font-size: 0.92rem;
+      }
+      .worksheet-field input,
+      .worksheet-field textarea {
+        width: 100%;
+        border: 1px solid #d1d5db;
+        border-radius: 0.75rem;
+        padding: 0.75rem 0.85rem;
+        background: white;
+        color: #111827;
+        font-size: 0.95rem;
+      }
+      .worksheet-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.7rem;
+        margin-top: 1rem;
+      }
+      .worksheet-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.78rem 1rem;
+        border-radius: 0.75rem;
+        border: none;
+        font-weight: 700;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      .worksheet-button--primary {
+        background: #111827;
+        color: white;
+      }
+      .worksheet-button--ghost {
+        background: white;
+        border: 1px solid #d1d5db;
+        color: #111827;
+      }
+      .worksheet-status {
+        margin-top: 0.9rem;
+        padding: 0.85rem 0.95rem;
+        border-radius: 0.75rem;
+        background: #eff6ff;
+        color: #1e3a8a;
+        font-size: 0.92rem;
+        line-height: 1.6;
+      }
+      .worksheet-grid {
+        display: grid;
+        gap: 1rem;
+        margin-top: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      }
+      .worksheet-mini-card {
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        border-radius: 1rem;
+        background: white;
+        padding: 1rem;
+      }
+      .worksheet-mini-card h3 {
+        margin: 0 0 0.65rem;
+        color: #111827;
+        font-size: 1.05rem;
+      }
+      .related-section {
+        margin-top: 1.75rem;
+        padding-top: 1.25rem;
+        border-top: 1px solid #e5e7eb;
+      }
+      .related-grid {
+        display: grid;
+        gap: 0.85rem;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+      .related-card {
+        background: white;
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        border-radius: 1rem;
+        padding: 1rem;
+      }
+      .related-card__title {
+        margin: 0 0 0.7rem;
+        color: #111827;
+        font-size: 0.98rem;
+        line-height: 1.35;
+      }
+      .related-card__cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.62rem 0.9rem;
+        background: #111827;
+        color: white;
+        border-radius: 0.7rem;
+        text-decoration: none;
+        font-weight: 800;
+      }
+      .faq-section {
+        background: #f9fafb;
+        padding: 3.5rem 0;
+      }
+      .faq-section__title {
+        font-size: 1.7rem;
+        font-weight: 800;
+        color: #111827;
+        margin-bottom: 1.75rem;
+        text-align: center;
+      }
+      .faq-list {
+        max-width: 52rem;
+        margin: 0 auto;
+      }
+      .faq-item {
+        background: white;
+        border-radius: 0.75rem;
+        margin-bottom: 0.9rem;
+        overflow: hidden;
+        border: 1px solid #e5e7eb;
+      }
+      .faq-question {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.1rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        text-align: left;
+        color: #111827;
+        font-size: 0.98rem;
+        font-weight: 700;
+      }
+      .faq-chevron { width: 1.2rem; height: 1.2rem; color: #9ca3af; transition: transform 0.2s; }
+      .faq-question[aria-expanded="true"] .faq-chevron { transform: rotate(180deg); }
+      .faq-answer { display: none; padding: 0 1.1rem 1.1rem; color: #4b5563; line-height: 1.65; }
+      .faq-answer--open { display: block; }
+      .cta-section {
+        padding: 3.5rem 0;
+        text-align: center;
+      }
+      .cta-card {
+        background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+        border-radius: 1rem;
+        padding: 2.5rem 1.5rem;
+        color: white;
+      }
+      .cta-card__title {
+        font-size: 1.7rem;
+        font-weight: 800;
+        color: #ffffff;
+        margin-bottom: 0.85rem;
+      }
+      .cta-card__text {
+        color: #d1d5db;
+        max-width: 46rem;
+        margin: 0 auto 1.4rem;
+      }
+      .cta-card__button {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.85rem 1.6rem;
+        background: #10b981;
+        color: white;
+        border-radius: 0.5rem;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .breadcrumb { padding: 1rem 0; font-size: 0.875rem; color: #6b7280; }
+      .breadcrumb a { color: #6b7280; text-decoration: none; }
+      .breadcrumb a:hover { color: #111827; }
+      .breadcrumb span.sep { margin: 0 0.5rem; color: #9ca3af; }
+      @media (max-width: 767px) {
+        .worksheet-hero { padding: 6.75rem 0 2.35rem; }
+        .worksheet-title { font-size: 1.75rem; max-width: none; }
+        .worksheet-subtitle { font-size: 1rem; line-height: 1.6; }
+        .worksheet-section { padding-bottom: 2.4rem; }
+        .worksheet-shell { padding: 1.15rem; }
+        .worksheet-summary-grid,
+        .worksheet-grid,
+        .related-grid { grid-template-columns: 1fr; }
+      }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-gray-900 text-white px-4 py-2 z-50">
+        Skip to main content
+    </a>
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <nav class="container-custom" aria-label="Main navigation">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="flex items-center gap-2 font-medium text-gray-900 hover:text-gray-700 transition-colors">
+                    <img src="/assets/images/logo.png" alt="Legacy Investing Show Logo" width="28" height="28" class="w-7 h-7">
+                    <span>Legacy Investing Show</span>
+                </a>
+
+                <div class="hidden md:flex items-center gap-6">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/success-stories" class="nav-link">Results</a>
+                    <a href="/blog/" class="nav-link">Blog</a>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col gap-3">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/success-stories" class="nav-link">Results</a>
+                    <a href="/blog/" class="nav-link">Blog</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+      <div class="container-custom breadcrumb" style="padding-top: 5rem;">
+          <a href="/">Home</a>
+          <span class="sep">/</span>
+          <a href="/worksheets/">Worksheets</a>
+          <span class="sep">/</span>
+          <span class="text-gray-900">QBI Deduction Worksheet</span>
+      </div>
+
+      <section class="worksheet-hero">
+        <div class="container-custom">
+          <div class="worksheet-hero__grid">
+            <div>
+              <span class="worksheet-badge">Tax Strategy</span>
+              <h1 class="worksheet-title">QBI Deduction Worksheet</h1>
+              <p class="worksheet-subtitle">Organize business income, wage/property limits, SSTB risk, and phaseout assumptions before you estimate or defend a QBI deduction.</p>
+            </div>
+            <aside class="worksheet-hero__panel">
+              <h2>Write the decision down before you act.</h2>
+              <p>Use the worksheet to organize the facts, the weak points, and the advisor questions before this turns into a cleanup project.</p>
+            </aside>
+          </div>
+
+          <div class="worksheet-summary-grid">
+            <article class="worksheet-summary-card">
+              <p class="worksheet-summary-card__eyebrow">Fillable</p>
+              <p>Works in the browser with local save, export, and print so you can keep the worksheet alive during execution.</p>
+            </article>
+            <article class="worksheet-summary-card">
+              <p class="worksheet-summary-card__eyebrow">Advisor Ready</p>
+              <p>Built to help you hand your CPA or advisor a cleaner packet instead of a rambling explanation.</p>
+            </article>
+            <article class="worksheet-summary-card">
+              <p class="worksheet-summary-card__eyebrow">SEO Surface</p>
+              <p>This creates another high-intent landing page around the core decision, not just another generic blog post.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="worksheet-section">
+        <div class="container-custom">
+          <article class="worksheet-shell">
+            <div class="worksheet-copy">
+              <h2>Why This Worksheet Exists</h2>
+              <p>Most QBI mistakes happen because people skip the worksheet and jump straight to the answer they want.</p>
+<p>This worksheet forces the ugly parts into the open: what counts as qualified income, where the phaseout risk shows up, and what support your CPA will need.</p>
+              <p>Use this before you start arguing about the deduction amount. The job is to get the facts, thresholds, and weak assumptions in one place.</p>
+<p>If the worksheet exposes SSTB risk, wage-limit friction, or messy entity splits, treat that as the point of the exercise, not a reason to keep guessing.</p>
+            </div>
+
+            <div class="worksheet-stack">
+              <section class="worksheet-panel">
+        <div class="worksheet-panel__header">
+          <h2 class="worksheet-panel__title">Business and Filing Context</h2>
+          <p class="worksheet-panel__hint">Start with the facts that control whether QBI is even on the table.</p>
+        </div>
+        <div class="worksheet-fields">
+          <div class="worksheet-field">
+                      <label for="filing_status">Filing status</label>
+                      <input id="filing_status" data-field-key="filing_status" type="text" placeholder="Single, MFJ, MFS, or HOH">
+                    </div>
+<div class="worksheet-field">
+                      <label for="entity_type">Entity type and structure</label>
+                      <input id="entity_type" data-field-key="entity_type" type="text" placeholder="Schedule C, partnership, S corp, multiple entities">
+                    </div>
+<div class="worksheet-field">
+                      <label for="sstb_status">Is this an SSTB or partly SSTB?</label>
+                      <textarea id="sstb_status" data-field-key="sstb_status" rows="4" placeholder="Write the service-business exposure and why"></textarea>
+                    </div>
+        </div>
+      </section>
+<section class="worksheet-panel">
+        <div class="worksheet-panel__header">
+          <h2 class="worksheet-panel__title">Income and Limitation Inputs</h2>
+          <p class="worksheet-panel__hint">Write down the numbers that change the deduction, not just the result.</p>
+        </div>
+        <div class="worksheet-fields">
+          <div class="worksheet-field">
+                      <label for="qualified_business_income">Estimated qualified business income</label>
+                      <input id="qualified_business_income" data-field-key="qualified_business_income" type="text" placeholder="Rough planning number is fine">
+                    </div>
+<div class="worksheet-field">
+                      <label for="taxable_income_before_qbi">Taxable income before QBI deduction</label>
+                      <input id="taxable_income_before_qbi" data-field-key="taxable_income_before_qbi" type="text" placeholder="Include spouse income if joint">
+                    </div>
+<div class="worksheet-field">
+                      <label for="w2_wages">W-2 wages relevant to the limitation</label>
+                      <input id="w2_wages" data-field-key="w2_wages" type="text" placeholder="If applicable">
+                    </div>
+<div class="worksheet-field">
+                      <label for="ubia_property">Qualified property / UBIA note</label>
+                      <textarea id="ubia_property" data-field-key="ubia_property" rows="4" placeholder="List the property basis or why it may matter"></textarea>
+                    </div>
+        </div>
+      </section>
+<section class="worksheet-panel">
+        <div class="worksheet-panel__header">
+          <h2 class="worksheet-panel__title">Decision and Advisor Review</h2>
+          <p class="worksheet-panel__hint">Write down the real pressure points before filing season.</p>
+        </div>
+        <div class="worksheet-fields">
+          <div class="worksheet-field">
+                      <label for="phaseout_risk">Phaseout or threshold risk</label>
+                      <textarea id="phaseout_risk" data-field-key="phaseout_risk" rows="4" placeholder="What income band are you close to crossing?"></textarea>
+                    </div>
+<div class="worksheet-field">
+                      <label for="documentation_gaps">Documentation gaps</label>
+                      <textarea id="documentation_gaps" data-field-key="documentation_gaps" rows="4" placeholder="What would be hard to support today?"></textarea>
+                    </div>
+<div class="worksheet-field">
+                      <label for="advisor_questions">Questions for CPA or advisor</label>
+                      <textarea id="advisor_questions" data-field-key="advisor_questions" rows="4" placeholder="List the things that need a real answer before you rely on the deduction"></textarea>
+                    </div>
+        </div>
+      </section>
+            </div>
+
+            <div class="worksheet-actions">
+              <button type="button" class="worksheet-button worksheet-button--primary" id="worksheet-save">Save locally</button>
+              <button type="button" class="worksheet-button worksheet-button--ghost" id="worksheet-export">Export notes</button>
+              <button type="button" class="worksheet-button worksheet-button--ghost" id="worksheet-print">Print / PDF</button>
+              <button type="button" class="worksheet-button worksheet-button--ghost" id="worksheet-clear">Clear</button>
+            </div>
+            <div class="worksheet-status" id="worksheet-status" aria-live="polite">Nothing saved yet on this device.</div>
+
+            <div class="worksheet-grid">
+              <section class="worksheet-mini-card">
+                <h3>Documentation Checklist</h3>
+                <ul><li>Tie the worksheet back to the actual entity return and owner-level taxable income.</li>
+<li>Write down whether SSTB treatment is clear or contested.</li>
+<li>Keep the wage/property limitation support in the same folder as the worksheet.</li></ul>
+              </section>
+              <section class="worksheet-mini-card">
+                <h3>Advisor Packet</h3>
+                <ul><li>Estimated QBI and taxable income inputs</li>
+<li>SSTB determination notes</li>
+<li>W-2 wages and qualified property support</li>
+<li>Phaseout and limitation questions to resolve</li></ul>
+              </section>
+            </div>
+
+            <section class="related-section" aria-label="Related resources">
+              <h2>Related Resources</h2>
+              <div class="related-grid">
+                <article class="related-card">
+                      <h3 class="related-card__title">QBI Deduction for High Earners</h3>
+                      <a class="related-card__cta" href="/blog/qbi-deduction-for-high-earners">Open resource</a>
+                    </article>
+<article class="related-card">
+                      <h3 class="related-card__title">How Is QBI Deduction Calculated for S Corp?</h3>
+                      <a class="related-card__cta" href="/blog/how-is-qbi-deduction-calculated-for-s-corp">Open resource</a>
+                    </article>
+<article class="related-card">
+                      <h3 class="related-card__title">QBI Deduction Phaseout 2025</h3>
+                      <a class="related-card__cta" href="/blog/qbi-deduction-phase-out-2025">Open resource</a>
+                    </article>
+              </div>
+            </section>
+          </article>
+        </div>
+      </section>
+
+      <section class="faq-section" id="faq">
+        <div class="container-custom">
+          <h2 class="faq-section__title">Frequently Asked Questions</h2>
+          <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="faq-question" aria-expanded="true" aria-controls="faq-answer-0">
+                            <span itemprop="name">Why use a worksheet if my software already estimates QBI?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer faq-answer--open" id="faq-answer-0" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">Because software can still produce a number from bad assumptions. The worksheet makes the controlling facts visible before you trust the output.</p>
+                        </div>
+                    </div>
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+                            <span itemprop="name">What usually breaks a QBI estimate?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer " id="faq-answer-1" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">SSTB ambiguity, owner-level taxable income changes, and wage or property limits that were never documented clearly.</p>
+                        </div>
+                    </div>
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+                            <span itemprop="name">When should I fill this out?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer " id="faq-answer-2" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">At midyear for planning and again before filing, especially if income moved or the entity structure changed.</p>
+                        </div>
+                    </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container-custom">
+          <div class="cta-card">
+            <h2 class="cta-card__title">Use The Worksheet Before You Touch The Strategy</h2>
+            <p class="cta-card__text">The expensive version of planning is doing the move first and writing the story later. Keep this worksheet with the supporting files and use it as part of your packet.</p>
+            <a href="https://www.managemoney101.com/challengeoptin" class="cta-card__button">Join the 3-Day Wealth Challenge</a>
+            <p style="margin: 1.25rem 0 0; color: #9ca3af; font-size: 0.85rem; line-height: 1.6;">Educational content only. Results vary based on your facts. Always consult a qualified professional before making decisions.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="minimal-footer">
+        <div class="container-custom">
+            <div class="minimal-footer-content">
+                <div class="footer-brand">
+                    <img src="/assets/images/logo.png" alt="Legacy Investing Show" width="32" height="32">
+                    <span>Legacy Investing Show</span>
+                </div>
+                <div class="footer-links">
+                    <a href="/success-stories">Results</a>
+                    <a href="/blog/">Blog</a>
+                    <a href="/tax-strategies/">Tax Strategies</a>
+                </div>
+            </div>
+            <div class="footer-copyright">Copyright 2025</div>
+        </div>
+    </footer>
+
+    <script defer src="/assets/js/main.js"></script>
+    <script>
+      const worksheetMeta = {
+        id: "W01",
+        slug: "qbi-deduction-worksheet",
+        title: "QBI Deduction Worksheet"
+      };
+      const WORKSHEET_STORAGE_KEY = 'worksheet_' + worksheetMeta.slug;
+
+      function emitWorksheetEvent(action, detail = {}) {
+        const payload = {
+          worksheet_id: worksheetMeta.id,
+          worksheet_slug: worksheetMeta.slug,
+          worksheet_title: worksheetMeta.title,
+          worksheet_action: action,
+          page_type: 'worksheet',
+          ...detail
+        };
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: 'worksheet_interaction', ...payload });
+        if (typeof gtag === 'function') {
+          gtag('event', action, payload);
+        }
+      }
+
+      function collectWorksheetData() {
+        const data = {};
+        document.querySelectorAll('[data-field-key]').forEach((field) => {
+          data[field.dataset.fieldKey] = field.value;
+        });
+        return data;
+      }
+
+      function populateWorksheetData(data) {
+        document.querySelectorAll('[data-field-key]').forEach((field) => {
+          field.value = data[field.dataset.fieldKey] || '';
+        });
+      }
+
+      function setWorksheetStatus(message) {
+        document.getElementById('worksheet-status').textContent = message;
+      }
+
+      function saveWorksheet(quiet = false) {
+        const data = collectWorksheetData();
+        localStorage.setItem(WORKSHEET_STORAGE_KEY, JSON.stringify(data));
+        if (!quiet) {
+          setWorksheetStatus('Saved locally on this device.');
+          emitWorksheetEvent('worksheet_save_local');
+        }
+      }
+
+      function exportWorksheet() {
+        const lines = [worksheetMeta.title, ''];
+        document.querySelectorAll('[data-field-key]').forEach((field) => {
+          const label = document.querySelector('label[for="' + field.id + '"]')?.textContent?.trim() || field.dataset.fieldKey;
+          lines.push(label + ':');
+          lines.push(field.value || '(blank)');
+          lines.push('');
+        });
+        const blob = new Blob([lines.join('\n')], { type: 'text/plain;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = worksheetMeta.slug + '.txt';
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        setTimeout(() => URL.revokeObjectURL(url), 500);
+        setWorksheetStatus('Exported notes file.');
+        emitWorksheetEvent('worksheet_export_text');
+      }
+
+      function clearWorksheet() {
+        document.querySelectorAll('[data-field-key]').forEach((field) => {
+          field.value = '';
+        });
+        localStorage.removeItem(WORKSHEET_STORAGE_KEY);
+        setWorksheetStatus('Cleared local worksheet data from this device.');
+        emitWorksheetEvent('worksheet_clear');
+      }
+
+      document.querySelectorAll('.faq-question').forEach((button) => {
+        button.addEventListener('click', () => {
+          const expanded = button.getAttribute('aria-expanded') === 'true';
+          button.setAttribute('aria-expanded', String(!expanded));
+          button.nextElementSibling.classList.toggle('faq-answer--open');
+          if (!expanded) {
+            emitWorksheetEvent('worksheet_faq_open', {
+              faq_question: button.textContent.trim().slice(0, 120)
+            });
+          }
+        });
+      });
+
+      document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+      });
+
+      document.getElementById('worksheet-save').addEventListener('click', () => saveWorksheet(false));
+      document.getElementById('worksheet-export').addEventListener('click', exportWorksheet);
+      document.getElementById('worksheet-print').addEventListener('click', () => {
+        emitWorksheetEvent('worksheet_print');
+        window.print();
+      });
+      document.getElementById('worksheet-clear').addEventListener('click', clearWorksheet);
+
+      let autoSaveTimer = null;
+      document.querySelectorAll('[data-field-key]').forEach((field) => {
+        field.addEventListener('input', () => {
+          window.clearTimeout(autoSaveTimer);
+          autoSaveTimer = window.setTimeout(() => saveWorksheet(true), 350);
+        });
+      });
+
+      document.querySelectorAll('.related-card__cta').forEach((link) => {
+        link.addEventListener('click', () => {
+          emitWorksheetEvent('worksheet_related_click', {
+            destination: link.getAttribute('href') || ''
+          });
+        });
+      });
+
+      const saved = localStorage.getItem(WORKSHEET_STORAGE_KEY);
+      if (saved) {
+        try {
+          populateWorksheetData(JSON.parse(saved));
+          setWorksheetStatus('Loaded saved worksheet data from this device.');
+        } catch (error) {
+          setWorksheetStatus('Worksheet is ready. Save locally when you want to keep your notes.');
+        }
+      }
+
+      emitWorksheetEvent('worksheet_page_view');
+    </script>
+</body>
+</html>

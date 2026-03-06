@@ -24,7 +24,7 @@
     <link rel="icon" type="image/png" href="/assets/images/logo.png">
     <link rel="stylesheet" href="/assets/css/styles.css">
 
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Edge-Case Comparison Guides","description":"Scenario-specific comparison pages for complex tax and wealth implementation decisions.","datePublished":"2026-03-02"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Edge-Case Comparison Guides","description":"Scenario-specific comparison pages for complex tax and wealth implementation decisions.","datePublished":"2026-03-05"}</script>
 
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
@@ -38,22 +38,84 @@
     <style>
         .library-hero {
             padding: 8rem 0 3.25rem;
-            background: linear-gradient(135deg, #f8fafc 0%, #e5e7eb 100%);
+            background:
+                radial-gradient(circle at top right, rgba(201, 169, 97, 0.18), transparent 38%),
+                linear-gradient(180deg, #faf7f2 0%, #ffffff 100%);
+        }
+        .library-hero__grid {
+            display: grid;
+            gap: 1.25rem;
+            align-items: start;
+        }
+        @media (min-width: 1024px) {
+            .library-hero__grid {
+                grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.85fr);
+            }
+        }
+        .library-hero__eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.55rem;
+            padding: 0.45rem 0.85rem;
+            border-radius: 999px;
+            background: rgba(15, 23, 42, 0.04);
+            border: 1px solid rgba(201, 169, 97, 0.18);
+            color: #a88b4a;
+            font-size: 0.74rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-bottom: 0.95rem;
+        }
+        .library-hero__eyebrow::before {
+            content: "";
+            width: 0.45rem;
+            height: 0.45rem;
+            border-radius: 999px;
+            background: #c9a961;
         }
         .library-hero h1 {
-            font-size: 2.25rem;
+            font-size: clamp(2.35rem, 5vw, 4.2rem);
             color: #111827;
-            margin-bottom: 0.8rem;
-            line-height: 1.15;
-        }
-        @media (min-width: 768px) {
-            .library-hero h1 { font-size: 2.8rem; }
+            margin-bottom: 0.9rem;
+            line-height: 0.98;
+            letter-spacing: -0.04em;
+            max-width: 12ch;
         }
         .library-hero p {
-            max-width: 54rem;
-            color: #4b5563;
-            line-height: 1.7;
-            font-size: 1.05rem;
+            max-width: 48rem;
+            color: #475569;
+            line-height: 1.78;
+            font-size: 1.06rem;
+            margin-bottom: 0.9rem;
+        }
+        .library-hero__panel {
+            padding: 1.25rem;
+            border-radius: 1.25rem;
+            background: linear-gradient(160deg, #182234, #0f172a);
+            color: white;
+            box-shadow: 0 22px 54px rgba(15, 23, 42, 0.18);
+        }
+        .library-hero__stat {
+            padding: 0.85rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .library-hero__stat:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .library-hero__stat strong {
+            display: block;
+            font-size: 1.7rem;
+            line-height: 1;
+            color: white;
+        }
+        .library-hero__stat span {
+            display: block;
+            margin-top: 0.35rem;
+            color: #cbd5e1;
+            font-size: 0.92rem;
+            line-height: 1.6;
         }
         .library-section {
             padding: 3rem 0;
@@ -64,15 +126,26 @@
             grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
         }
         .library-card {
-            background: white;
-            border: 1px solid #e5e7eb;
-            border-radius: 0.9rem;
-            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            border-radius: 1.15rem;
+            padding: 1.1rem;
+            box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+        }
+        .library-card__eyebrow {
+            color: #b8933f;
+            font-size: 0.74rem;
+            font-weight: 700;
+            letter-spacing: 0.11em;
+            text-transform: uppercase;
         }
         .library-card h3 {
-            font-size: 1.08rem;
-            line-height: 1.4;
-            margin-bottom: 0.45rem;
+            font-size: 1.12rem;
+            line-height: 1.38;
+            margin-bottom: 0;
         }
         .library-card h3 a {
             text-decoration: none;
@@ -84,26 +157,30 @@
         .library-card p {
             color: #4b5563;
             font-size: 0.94rem;
-            line-height: 1.6;
-            margin-bottom: 0.6rem;
+            line-height: 1.68;
+            margin-bottom: 0;
         }
         .library-card__meta {
-            margin-bottom: 0.75rem;
-            font-size: 0.86rem;
+            font-size: 0.88rem;
             color: #065f46;
+            line-height: 1.6;
         }
         .library-card__cta {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            align-self: flex-start;
             background: #111827;
             color: white;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 700;
             font-size: 0.85rem;
-            border-radius: 0.5rem;
-            padding: 0.45rem 0.8rem;
+            border-radius: 999px;
+            padding: 0.55rem 0.9rem;
         }
         .library-card__cta:hover {
             background: #1f2937;
+            transform: translateY(-1px);
         }
         .how-it-works {
             display: grid;
@@ -173,9 +250,28 @@
     <main id="main">
         <section class="library-hero">
             <div class="container-custom">
-                <h1>Edge-Case Comparison Playbooks</h1>
-                <p>If you make good money but still feel like you are getting crushed, it is usually because the big decisions are being made on half the math. Taxes, cash flow, and execution all hit at once. These pages help you run the full model.</p>
-                <p>Each comparison includes a scored tradeoff table, a worked scenario, the documentation standard, the failure modes, and a 90-day plan you can hand to your CPA or advisor.</p>
+                <div class="library-hero__grid">
+                    <div>
+                        <span class="library-hero__eyebrow">Decision Library</span>
+                        <h1>Comparison Playbooks for Expensive Money Decisions</h1>
+                        <p>If you make good money but still feel like one wrong move can set you back, this library is for you. These are not vague "it depends" articles. They show where the math works, where execution usually breaks, and what to bring to your CPA before you move money.</p>
+                        <p>Each guide includes a scorecard, worked example, documentation standard, failure modes, and a 90-day action plan built for real life.</p>
+                    </div>
+                    <aside class="library-hero__panel">
+                        <div class="library-hero__stat">
+                            <strong>13</strong>
+                            <span>Scenario-specific playbooks for tax, retirement, real-estate, and operating decisions.</span>
+                        </div>
+                        <div class="library-hero__stat">
+                            <strong>1</strong>
+                            <span>Question that matters: what still works when the facts are less perfect than the plan.</span>
+                        </div>
+                        <div class="library-hero__stat">
+                            <strong>90</strong>
+                            <span>Day implementation path included in every guide so the decision survives contact with real life.</span>
+                        </div>
+                    </aside>
+                </div>
             </div>
         </section>
 
@@ -209,87 +305,124 @@
 
         <section class="library-section" style="background:#f9fafb;">
             <div class="container-custom">
-                <h2 style="font-size:1.7rem; color:#111827; margin-bottom:1rem;">C01-C10 Comparison Pages</h2>
+                <h2 style="font-size:1.7rem; color:#111827; margin-bottom:1rem;">Featured Comparison Guides</h2>
                 <div class="library-grid">
                     <article class="library-card">
+                    <div class="library-card__eyebrow">S-corp owners working from home who need a defensible reimbursement strategy.</div>
                     <h3><a href="/compare/augusta-rule-vs-home-office-deduction-s-corp">Augusta Rule vs Home Office Deduction for S-Corp Owners</a></h3>
                     <p>A real-world comparison for S-corp owners choosing between Augusta Rule payments and accountable-plan home office reimbursements, with documentation standards and a worked scenario.</p>
                     <div class="library-card__meta">
-                        <span><strong>Quick signal:</strong> Context-dependent.</span>
+                        <span><strong>Quick signal:</strong> Bigger write-off is not the whole game.</span>
                     </div>
-                    <a class="library-card__cta" href="/compare/augusta-rule-vs-home-office-deduction-s-corp">Open guide</a>
+                    <a class="library-card__cta" href="/compare/augusta-rule-vs-home-office-deduction-s-corp">Open playbook</a>
                 </article>
 <article class="library-card">
+                    <div class="library-card__eyebrow">High-income couples with student loan payments tied to AGI or filing status.</div>
                     <h3><a href="/compare/mfj-vs-mfs-high-income-student-loans">MFJ vs MFS for High-Income Couples with Student Loans</a></h3>
                     <p>A cash-flow-first comparison of MFJ vs MFS when income-driven repayment and high income collide, with a worked example and annual review checklist.</p>
                     <div class="library-card__meta">
-                        <span><strong>Quick signal:</strong> Depends on payment formula and income split.</span>
+                        <span><strong>Quick signal:</strong> Model tax and loan payments together.</span>
                     </div>
-                    <a class="library-card__cta" href="/compare/mfj-vs-mfs-high-income-student-loans">Open guide</a>
+                    <a class="library-card__cta" href="/compare/mfj-vs-mfs-high-income-student-loans">Open playbook</a>
                 </article>
 <article class="library-card">
+                    <div class="library-card__eyebrow">1099 earners with uneven quarterly income and real bookkeeping discipline.</div>
                     <h3><a href="/compare/safe-harbor-vs-annualized-income-1099">Safe Harbor vs Annualized Income Method for Uneven 1099 Income</a></h3>
                     <p>A practical comparison for freelancers with lumpy income: safe harbor vs annualized estimated taxes, with decision matrix and execution controls.</p>
                     <div class="library-card__meta">
-                        <span><strong>Quick signal:</strong> Execution quality decides.</span>
+                        <span><strong>Quick signal:</strong> Simplicity and precision rarely peak together.</span>
                     </div>
-                    <a class="library-card__cta" href="/compare/safe-harbor-vs-annualized-income-1099">Open guide</a>
+                    <a class="library-card__cta" href="/compare/safe-harbor-vs-annualized-income-1099">Open playbook</a>
                 </article>
 <article class="library-card">
+                    <div class="library-card__eyebrow">W-2 professionals comparing passive-loss strategies on real estate holdings.</div>
                     <h3><a href="/compare/cost-segregation-vs-str-loophole-w2-passive-loss">Cost Segregation vs STR Loophole for W-2 Professionals with Passive Loss Limits</a></h3>
                     <p>A usable-loss comparison for W-2 professionals: cost segregation vs STR participation, with recapture and documentation notes.</p>
                     <div class="library-card__meta">
-                        <span><strong>Quick signal:</strong> Depends on usable-loss probability.</span>
+                        <span><strong>Quick signal:</strong> Usable loss matters more than a headline deduction.</span>
                     </div>
-                    <a class="library-card__cta" href="/compare/cost-segregation-vs-str-loophole-w2-passive-loss">Open guide</a>
+                    <a class="library-card__cta" href="/compare/cost-segregation-vs-str-loophole-w2-passive-loss">Open playbook</a>
                 </article>
 <article class="library-card">
+                    <div class="library-card__eyebrow">Aging landlords who want out of day-to-day management without rushing the exit.</div>
                     <h3><a href="/compare/721-upreit-vs-dst-aging-landlords">721 UPREIT vs DST for Aging Landlords Exiting Active Management</a></h3>
                     <p>A comparison for landlords shifting from active management to passive income: 721 UPREIT exchange vs DST, focused on liquidity, control, and concentration risk.</p>
                     <div class="library-card__meta">
-                        <span><strong>Quick signal:</strong> Depends on liquidity and control priorities.</span>
+                        <span><strong>Quick signal:</strong> Control, liquidity, and concentration decide it.</span>
                     </div>
-                    <a class="library-card__cta" href="/compare/721-upreit-vs-dst-aging-landlords">Open guide</a>
+                    <a class="library-card__cta" href="/compare/721-upreit-vs-dst-aging-landlords">Open playbook</a>
                 </article>
 <article class="library-card">
+                    <div class="library-card__eyebrow">Multi-property STR operators choosing the pricing system they will actually maintain.</div>
                     <h3><a href="/compare/pricelabs-vs-pms-native-pricing-multi-property">PriceLabs Rule-Based Pricing vs PMS Native Pricing for Multi-Property Operators</a></h3>
                     <p>A practical comparison for STR operators running multiple listings: PriceLabs rule sets vs PMS native pricing, with guardrails, failure modes, and an execution plan.</p>
                     <div class="library-card__meta">
-                        <span><strong>Quick signal:</strong> Depends on how much control you need.</span>
+                        <span><strong>Quick signal:</strong> Portfolio complexity decides the winner.</span>
                     </div>
-                    <a class="library-card__cta" href="/compare/pricelabs-vs-pms-native-pricing-multi-property">Open guide</a>
+                    <a class="library-card__cta" href="/compare/pricelabs-vs-pms-native-pricing-multi-property">Open playbook</a>
                 </article>
 <article class="library-card">
+                    <div class="library-card__eyebrow">Business owners funding a down payment without blowing up liquidity or retirement momentum.</div>
                     <h3><a href="/compare/solo-401k-loan-vs-heloc-down-payment">Solo 401(k) Loan vs HELOC for Down Payment Funding</a></h3>
                     <p>A comparison for business owners and high earners funding a down payment: Solo 401(k) loan vs HELOC, focused on risk, flexibility, and real cost.</p>
                     <div class="library-card__meta">
-                        <span><strong>Quick signal:</strong> Depends on risk tolerance and liquidity.</span>
+                        <span><strong>Quick signal:</strong> Funding speed can hide long-term drag.</span>
                     </div>
-                    <a class="library-card__cta" href="/compare/solo-401k-loan-vs-heloc-down-payment">Open guide</a>
+                    <a class="library-card__cta" href="/compare/solo-401k-loan-vs-heloc-down-payment">Open playbook</a>
                 </article>
 <article class="library-card">
+                    <div class="library-card__eyebrow">High-frequency traders choosing between tax simplicity and long-term flexibility.</div>
                     <h3><a href="/compare/mark-to-market-vs-capital-gains-active-traders">Mark-to-Market Election vs Capital Gains for Active Traders</a></h3>
                     <p>A comparison for active traders: mark-to-market election vs capital gains treatment, focused on qualification, wash-sale exposure, and long-term flexibility.</p>
                     <div class="library-card__meta">
-                        <span><strong>Quick signal:</strong> Depends on trader profile and future flexibility.</span>
+                        <span><strong>Quick signal:</strong> Trader status decides everything.</span>
                     </div>
-                    <a class="library-card__cta" href="/compare/mark-to-market-vs-capital-gains-active-traders">Open guide</a>
+                    <a class="library-card__cta" href="/compare/mark-to-market-vs-capital-gains-active-traders">Open playbook</a>
                 </article>
 <article class="library-card">
+                    <div class="library-card__eyebrow">Retirees balancing charitable intent, Roth planning, and IRMAA exposure.</div>
                     <h3><a href="/compare/qcd-first-vs-roth-conversion-first-irmaa">QCD First vs Roth Conversion First to Manage IRMAA</a></h3>
                     <p>A retirement planning comparison: QCD-first vs Roth-conversion-first, focused on IRMAA, RMD timing, and charitable intent.</p>
                     <div class="library-card__meta">
-                        <span><strong>Quick signal:</strong> Depends on IRMAA sensitivity and charitable intent.</span>
+                        <span><strong>Quick signal:</strong> Income timing can move Medicare costs.</span>
                     </div>
-                    <a class="library-card__cta" href="/compare/qcd-first-vs-roth-conversion-first-irmaa">Open guide</a>
+                    <a class="library-card__cta" href="/compare/qcd-first-vs-roth-conversion-first-irmaa">Open playbook</a>
                 </article>
 <article class="library-card">
+                    <div class="library-card__eyebrow">Small-business owners pressure-testing sale timing, fees, and execution risk before exit.</div>
                     <h3><a href="/compare/installment-sale-vs-deferred-sales-trust-small-business-exit">Installment Sale vs Deferred Sales Trust for a Small Business Exit</a></h3>
                     <p>A business-exit comparison: installment sale vs deferred sales trust concepts, focused on timing, risk, fees, and realistic execution.</p>
                     <div class="library-card__meta">
-                        <span><strong>Quick signal:</strong> Depends on timing, risk, and fees.</span>
+                        <span><strong>Quick signal:</strong> Simple deferral and layered complexity are not the same thing.</span>
                     </div>
-                    <a class="library-card__cta" href="/compare/installment-sale-vs-deferred-sales-trust-small-business-exit">Open guide</a>
+                    <a class="library-card__cta" href="/compare/installment-sale-vs-deferred-sales-trust-small-business-exit">Open playbook</a>
+                </article>
+<article class="library-card">
+                    <div class="library-card__eyebrow">High-income consultants weighing S-corp tax savings against payroll and compliance burden.</div>
+                    <h3><a href="/compare/s-corp-election-vs-sole-proprietorship-high-income-consultants">S-Corp Election vs Sole Proprietorship for High-Income Consultants</a></h3>
+                    <p>A consultant-focused comparison of S-corp election vs staying a sole proprietor, focused on payroll friction, QBI interaction, and realistic tax savings.</p>
+                    <div class="library-card__meta">
+                        <span><strong>Quick signal:</strong> Savings only count if payroll reality holds.</span>
+                    </div>
+                    <a class="library-card__cta" href="/compare/s-corp-election-vs-sole-proprietorship-high-income-consultants">Open playbook</a>
+                </article>
+<article class="library-card">
+                    <div class="library-card__eyebrow">High-income earners deciding where the next investable dollars should go.</div>
+                    <h3><a href="/compare/backdoor-roth-vs-taxable-brokerage-high-income-earners">Backdoor Roth vs Taxable Brokerage for High-Income Earners</a></h3>
+                    <p>A high-income comparison of backdoor Roth contributions vs taxable brokerage funding, focused on pro-rata friction, liquidity, and after-tax flexibility.</p>
+                    <div class="library-card__meta">
+                        <span><strong>Quick signal:</strong> Tax-free space is great until pro-rata ruins the story.</span>
+                    </div>
+                    <a class="library-card__cta" href="/compare/backdoor-roth-vs-taxable-brokerage-high-income-earners">Open playbook</a>
+                </article>
+<article class="library-card">
+                    <div class="library-card__eyebrow">Early retirees with taxable assets and pre-tax retirement balances deciding which tax bucket to optimize first.</div>
+                    <h3><a href="/compare/capital-gains-harvesting-vs-roth-conversion-early-retirees">Capital Gains Harvesting vs Roth Conversion for Early Retirees</a></h3>
+                    <p>A tax-bracket comparison for early retirees choosing between capital gains harvesting and Roth conversions, focused on bracket management, IRMAA, and long-term account sequencing.</p>
+                    <div class="library-card__meta">
+                        <span><strong>Quick signal:</strong> The cheaper move this year may cost more later.</span>
+                    </div>
+                    <a class="library-card__cta" href="/compare/capital-gains-harvesting-vs-roth-conversion-early-retirees">Open playbook</a>
                 </article>
                 </div>
                 <p style="margin:1.5rem 0 0; color:#6b7280; font-size:0.95rem; line-height:1.65; max-width:60rem;">Educational content only. Results vary based on your facts. Always consult a qualified tax professional before making decisions.</p>

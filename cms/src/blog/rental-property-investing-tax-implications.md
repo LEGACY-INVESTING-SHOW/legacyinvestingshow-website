@@ -144,8 +144,8 @@ relatedPosts:
     title: 'BRRRR Method: Buy, Rehab, Rent, Refinance, Repeat'
   - slug: digital-product-income
     title: 'Digital Product Income: Create Once, Sell Forever'
-readingTime: 10 min read
-wordCount: '2130'
+readingTime: 12 min read
+wordCount: '2268'
 ---
 Understanding rental property investing tax implications is often the difference between a property that looks strong on paper and one that actually builds long-term wealth. Many investors focus on rent and appreciation, but tax mechanics can reshape your real return by thousands of dollars per year. The Internal Revenue Service (IRS) guidance on rental real estate emphasizes three basics: report all rental income, deduct eligible expenses, and maintain solid records. That sounds simple, but in practice, most mistakes happen in classification, timing, and documentation.
 

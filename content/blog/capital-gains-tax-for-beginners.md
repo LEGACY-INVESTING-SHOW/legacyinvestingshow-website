@@ -180,8 +180,8 @@ relatedPosts:
     title: '1031 exchange vs standard deduction: Which Strategy Works Better in 2026?'
   - slug: best-tax-deductions-2025
     title: 'Best Tax Deductions 2025: Complete 2026 Guide to Lower Your Tax Bill'
-readingTime: 9 min read
-wordCount: '1980'
+readingTime: 11 min read
+wordCount: '2080'
 ---
 Capital gains tax for beginners can feel confusing because taxes, market moves, and personal cash needs collide at the same time. But most strong decisions come from one principle: optimize after-tax outcomes, not just pre-tax returns.
 

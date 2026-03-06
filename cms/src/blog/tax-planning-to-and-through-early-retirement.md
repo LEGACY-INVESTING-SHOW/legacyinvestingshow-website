@@ -139,8 +139,8 @@ relatedPosts:
     title: '1031 exchange vs standard deduction: Which Strategy Works Better in 2026?'
   - slug: best-tax-deductions-2025
     title: 'Best Tax Deductions 2025: Complete 2026 Guide to Lower Your Tax Bill'
-readingTime: 9 min read
-wordCount: '1950'
+readingTime: 11 min read
+wordCount: '2059'
 ---
 Tax planning to and through early retirement is less about finding one loophole and more about controlling which dollars appear on your tax return each year. If you retire before age 59 1/2, you are managing a bridge period where spending still needs to happen but account rules, health insurance subsidies, and future RMDs can collide. The highest-value move is usually lifetime tax planning, not lowest-tax-this-year planning.
 

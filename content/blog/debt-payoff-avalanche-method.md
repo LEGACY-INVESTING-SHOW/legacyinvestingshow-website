@@ -132,8 +132,8 @@ relatedPosts:
     title: 'Credit Score Optimization: Improve Your Score Fast'
   - slug: debt-avalanche-method
     title: 'Debt Avalanche Method: The Fastest Way to Pay Off Debt'
-readingTime: 8 min read
-wordCount: '1652'
+readingTime: 10 min read
+wordCount: '1813'
 ---
 The **debt payoff avalanche method** is a simple rule with a big financial impact: pay minimums on every debt, then direct all extra cash to the highest interest rate balance first. For U.S. households carrying credit card APRs in the high teens or 20s, this approach can lower total interest and shorten payoff time.
 

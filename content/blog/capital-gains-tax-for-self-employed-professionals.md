@@ -143,8 +143,8 @@ relatedPosts:
     title: '1031 exchange vs standard deduction: Which Strategy Works Better in 2026?'
   - slug: best-tax-deductions-2025
     title: 'Best Tax Deductions 2025: Complete 2026 Guide to Lower Your Tax Bill'
-readingTime: 9 min read
-wordCount: '1999'
+readingTime: 11 min read
+wordCount: '2114'
 ---
 Capital gains tax for self employed professionals can turn a strong income year into a painful surprise if you focus only on Schedule C profit and ignore sale timing. The practical levers are still the same in 2026: asset classification, holding period, your taxable-income bracket, and NIIT exposure.
 

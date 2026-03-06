@@ -143,8 +143,8 @@ relatedPosts:
     title: >-
       Asset Allocation Tax Implications: Complete 2026 Guide for After-Tax
       Portfolio Returns
-readingTime: 8 min read
-wordCount: '1764'
+readingTime: 10 min read
+wordCount: '1825'
 ---
 If you are behind on year-round tax planning, **tax loss harvesting for late starters** can still create meaningful value. You are not trying to predict markets. You are turning declines you already have into a tax asset while keeping your long-term allocation intact. For investors in their 40s, 50s, and early 60s, that matters because each after-tax dollar has fewer compounding years left.
 

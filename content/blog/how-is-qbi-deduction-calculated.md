@@ -136,8 +136,8 @@ relatedPosts:
     title: >-
       Best Roth Conversion Strategy Calculator: Practical Guide, Break-Even
       Math, and Real Tax Examples
-readingTime: 9 min read
-wordCount: '1911'
+readingTime: 10 min read
+wordCount: '1997'
 ---
 If you are a business owner asking how is qbi deduction calculated, you are asking the right question before year-end tax moves. The Section 199A qualified business income deduction can be valuable, but it is not a flat 20% for everyone. Your result depends on taxable income, business type, wages, depreciable property, and whether you are in a specified service trade or business. The IRS defines QBI as the net amount of qualified income, gain, deduction, and loss from a qualified trade or business. Practically, that means clean books, accurate entity treatment, and income planning matter as much as gross revenue. For broader planning context, see our [Tax Strategies hub](/topics/tax-strategies).
 

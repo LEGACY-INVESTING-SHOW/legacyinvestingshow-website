@@ -146,8 +146,8 @@ relatedPosts:
     title: 'Credit Score Optimization: Improve Your Score Fast'
   - slug: debt-avalanche-method
     title: 'Debt Avalanche Method: The Fastest Way to Pay Off Debt'
-readingTime: 9 min read
-wordCount: '1916'
+readingTime: 11 min read
+wordCount: '2015'
 ---
 If you are weighing personal loan vs credit card tax implications this year, the biggest mistake is assuming loan type decides your tax result. In most cases, it does not. For US filers, the primary driver is how the borrowed money is used and whether you can document that use.
 

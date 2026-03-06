@@ -1,26 +1,27 @@
 ---
-# Core SEO Fields
-title: "How Tom Built $25K in Bookings in 2 Weeks After Corporate Layoff (2026 Case Study)"
-titleTemplate: "%s | Legacy Investing Show Success Stories"
-description: "Tom went from Capital One layoff to $5,000-$6,000/month cash flow with his first Airbnb property on the Chesapeake Bay. Learn his exact strategies, landlord negotiation scripts, and team-building approach for Airbnb arbitrage success."
-date: 2025-10-21
-modifiedDate: 2026-01-23
+title: >-
+  How Tom Built $25K in Bookings in 2 Weeks After Corporate Layoff (2026 Case
+  Study)
+titleTemplate: '%s | Legacy Investing Show Success Stories'
+description: >-
+  Tom went from Capital One layoff to $5,000-$6,000/month cash flow with his
+  first Airbnb property on the Chesapeake Bay. Learn his exact strategies,
+  landlord negotiation scripts, and team-building approach for Airbnb arbitrage
+  success.
+date: 2025-10-21T00:00:00.000Z
+modifiedDate: 2026-01-23T00:00:00.000Z
 author: Preston Seo
-authorTitle: "Founder, Legacy Investing Show"
-authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
+authorTitle: 'Founder, Legacy Investing Show'
+authorCredentials: '2,000+ students trained, $10M+ student revenue generated'
 category: Success Story
-canonical: "https://www.legacyinvestingshow.com/blog/tom-zero-to-25k-two-weeks"
-
-# SEO Keyword Targeting
+canonical: 'https://www.legacyinvestingshow.com/blog/tom-zero-to-25k-two-weeks'
 seo:
-  primaryKeyword: "airbnb success story"
+  primaryKeyword: airbnb success story
   secondaryKeywords:
-    - "short-term rental business"
+    - short-term rental business
   longTailKeywords:
-    - "first airbnb property tips"
-  searchIntent: "informational"
-
-# Tags
+    - first airbnb property tips
+  searchIntent: informational
 tags:
   - airbnb arbitrage
   - rental arbitrage
@@ -28,100 +29,129 @@ tags:
   - case study
   - success story
   - short-term rental
-
-# Open Graph & Social
 image: /assets/images/blog/success-stories/tom-chesapeake-bay.jpg
-imageAlt: "How Tom Built $25K in Bookings in 2 Weeks After Corporate Layoff (2026 Case Study) - Legacy Investing Show"
+imageAlt: >-
+  How Tom Built $25K in Bookings in 2 Weeks After Corporate Layoff (2026 Case
+  Study) - Legacy Investing Show
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
 featured: false
-
-# Video Integration
-youtubeId: "fNpdiiyr1JU"
-
-# Multiple Schema Types for Rich Results
+youtubeId: fNpdiiyr1JU
 schema:
   - type: Article
-    headline: "How Tom Built $25K in Bookings in 2 Weeks After Corporate Layoff (2026 Case Study)"
-    datePublished: "2026-03-21T00:00:00Z"
-    dateModified: "2026-01-23T00:00:00Z"
+    headline: >-
+      How Tom Built $25K in Bookings in 2 Weeks After Corporate Layoff (2026
+      Case Study)
+    datePublished: '2026-03-21T00:00:00Z'
+    dateModified: '2026-01-23T00:00:00Z'
   - type: VideoObject
-    name: "How Tom Built $25K in Bookings in 2 Weeks After Corporate Layoff (2026 Case Study) - Full Interview"
-    thumbnailUrl: "https://img.youtube.com/vi/fNpdiiyr1JU/maxresdefault.jpg"
-    embedUrl: "https://www.youtube.com/embed/fNpdiiyr1JU"
+    name: >-
+      How Tom Built $25K in Bookings in 2 Weeks After Corporate Layoff (2026
+      Case Study) - Full Interview
+    thumbnailUrl: 'https://img.youtube.com/vi/fNpdiiyr1JU/maxresdefault.jpg'
+    embedUrl: 'https://www.youtube.com/embed/fNpdiiyr1JU'
   - type: HowTo
-    name: "How to Build an Airbnb Business Like This Success Story"
-
-# Breadcrumbs
+    name: How to Build an Airbnb Business Like This Success Story
 breadcrumbs:
-  - name: "Home"
-    url: "/"
-  - name: "Blog"
-    url: "/blog"
-  - name: "Success Stories"
-    url: "/blog/category/success-stories"
-
-# Statistics (AI-crawler accessible, renders as stat cards)
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog
+  - name: Success Stories
+    url: /blog/category/success-stories
 statistics:
-  - value: "$5,000-$6,000"
-    label: "Monthly Cash Flow"
-    icon: "dollar"
-    context: "After all expenses"
-    source: "Student Interview, 2023"
-  - value: "$25,000"
-    label: "Bookings in 2 Weeks"
-    icon: "home"
-    context: "Chesapeake Bay market"
-  - value: "2 Weeks"
-    label: "Time to $25K Bookings"
-    icon: "clock"
-    context: "From going live"
-  - value: "120+"
-    label: "People Managed Previously"
-    icon: "users"
-    context: "At Capital One"
-  - value: "14"
-    label: "Teams Led at Capital One"
-    icon: "chart"
-    context: "Software development teams"
-  - value: "20-30 min"
-    label: "Daily Time Investment"
-    icon: "star"
-    context: "After systems in place"
-
-# FAQ (FAQPage schema + accordion rendering)
+  - value: '$5,000-$6,000'
+    label: Monthly Cash Flow
+    icon: dollar
+    context: After all expenses
+    source: 'Student Interview, 2023'
+  - value: '$25,000'
+    label: Bookings in 2 Weeks
+    icon: home
+    context: Chesapeake Bay market
+  - value: 2 Weeks
+    label: Time to $25K Bookings
+    icon: clock
+    context: From going live
+  - value: 120+
+    label: People Managed Previously
+    icon: users
+    context: At Capital One
+  - value: '14'
+    label: Teams Led at Capital One
+    icon: chart
+    context: Software development teams
+  - value: 20-30 min
+    label: Daily Time Investment
+    icon: star
+    context: After systems in place
 faq:
-  - question: "How much money can you make with Airbnb arbitrage?"
-    answer: "Tom generates $5,000-$6,000/month in cash flow from his first Airbnb property on the Chesapeake Bay. He secured $25,000 in bookings within the first two weeks of launching, with the property booked solid through August and filling into September."
-  - question: "Is Airbnb arbitrage still profitable in 2026?"
-    answer: "Yes. Tom started his Airbnb arbitrage business after a corporate layoff and achieved profitability within weeks. Success depends on market selection, property amenities like waterfront access and hot tubs, and building a reliable local team for cleaning and maintenance."
-  - question: "How long does it take to make money with Airbnb arbitrage?"
-    answer: "Tom received his first Airbnb deposits within weeks of launching. He earned over $5,000 from his first three Airbnb payouts. Most Legacy Investing Show students get their first property in 30-60 days with proper execution of the system."
-  - question: "Do you need experience to start Airbnb arbitrage?"
-    answer: "No. Tom came from software engineering and project management at Capital One with no rental property experience. His corporate skills in managing teams, creating processes, and analyzing data transferred directly to building a successful Airbnb business."
-  - question: "How do you negotiate with landlords for Airbnb arbitrage?"
-    answer: "Tom modified the Legacy Investing Show script by first asking landlords about the property details and monthly costs to make them comfortable before pitching the arbitrage concept. He positions it as a win-win partnership rather than a traditional rental arrangement."
-  - question: "What is the best market for Airbnb arbitrage?"
-    answer: "Tom chose the Chesapeake Bay area of Maryland for its waterfront appeal, beach access, and tourist demand. The property's unique location near water with a private beach creates experiences guests cannot replicate elsewhere."
-  - question: "Is Legacy Investing Show worth it?"
-    answer: "Based on Tom's results, the ROI speaks for itself: $25,000 in bookings within two weeks and $5,000-$6,000/month ongoing cash flow. Tom credits the mentorship, scripts, community forum, and step-by-step framework for accelerating his success after his layoff."
-  - question: "How do you build a reliable cleaning team for Airbnb?"
-    answer: "Tom built redundancy by hiring three cleaners instead of one. He has each cleaner quality-check the others' work, which reinforces standards while providing backup coverage. He treats cleaning as three stages: cleaning, staging (matching photos exactly), and quality checking."
-  - question: "What's the difference between Airbnb arbitrage and buying property?"
-    answer: "Arbitrage requires less capital (first month's rent, deposit, and furnishing) and offers faster scaling with lower risk since you can exit leases. Tom chose arbitrage to build cash flow after his layoff without needing a large down payment for property purchase."
-  - question: "How do you check Airbnb regulations before starting?"
-    answer: "Tom learned the hard way that checking regulations first is critical. He lost about a week researching Annapolis before discovering city-specific STR restrictions. Always verify both county AND city regulations before investing time in a market."
-
-# Table of Contents
+  - question: How much money can you make with Airbnb arbitrage?
+    answer: >-
+      Tom generates $5,000-$6,000/month in cash flow from his first Airbnb
+      property on the Chesapeake Bay. He secured $25,000 in bookings within the
+      first two weeks of launching, with the property booked solid through
+      August and filling into September.
+  - question: Is Airbnb arbitrage still profitable in 2026?
+    answer: >-
+      Yes. Tom started his Airbnb arbitrage business after a corporate layoff
+      and achieved profitability within weeks. Success depends on market
+      selection, property amenities like waterfront access and hot tubs, and
+      building a reliable local team for cleaning and maintenance.
+  - question: How long does it take to make money with Airbnb arbitrage?
+    answer: >-
+      Tom received his first Airbnb deposits within weeks of launching. He
+      earned over $5,000 from his first three Airbnb payouts. Most Legacy
+      Investing Show students get their first property in 30-60 days with proper
+      execution of the system.
+  - question: Do you need experience to start Airbnb arbitrage?
+    answer: >-
+      No. Tom came from software engineering and project management at Capital
+      One with no rental property experience. His corporate skills in managing
+      teams, creating processes, and analyzing data transferred directly to
+      building a successful Airbnb business.
+  - question: How do you negotiate with landlords for Airbnb arbitrage?
+    answer: >-
+      Tom modified the Legacy Investing Show script by first asking landlords
+      about the property details and monthly costs to make them comfortable
+      before pitching the arbitrage concept. He positions it as a win-win
+      partnership rather than a traditional rental arrangement.
+  - question: What is the best market for Airbnb arbitrage?
+    answer: >-
+      Tom chose the Chesapeake Bay area of Maryland for its waterfront appeal,
+      beach access, and tourist demand. The property's unique location near
+      water with a private beach creates experiences guests cannot replicate
+      elsewhere.
+  - question: Is Legacy Investing Show worth it?
+    answer: >-
+      Based on Tom's results, the ROI speaks for itself: $25,000 in bookings
+      within two weeks and $5,000-$6,000/month ongoing cash flow. Tom credits
+      the mentorship, scripts, community forum, and step-by-step framework for
+      accelerating his success after his layoff.
+  - question: How do you build a reliable cleaning team for Airbnb?
+    answer: >-
+      Tom built redundancy by hiring three cleaners instead of one. He has each
+      cleaner quality-check the others' work, which reinforces standards while
+      providing backup coverage. He treats cleaning as three stages: cleaning,
+      staging (matching photos exactly), and quality checking.
+  - question: What's the difference between Airbnb arbitrage and buying property?
+    answer: >-
+      Arbitrage requires less capital (first month's rent, deposit, and
+      furnishing) and offers faster scaling with lower risk since you can exit
+      leases. Tom chose arbitrage to build cash flow after his layoff without
+      needing a large down payment for property purchase.
+  - question: How do you check Airbnb regulations before starting?
+    answer: >-
+      Tom learned the hard way that checking regulations first is critical. He
+      lost about a week researching Annapolis before discovering city-specific
+      STR restrictions. Always verify both county AND city regulations before
+      investing time in a market.
 toc: true
 tocDepth: 3
-
-# Reading Time
-readingTime: "25 min read"
-wordCount: "4809"
+readingTime: 24 min read
+wordCount: '4607'
 ---
-
 **Tom earns $5,000 to $6,000 per month in cash flow from his first Airbnb property on the Chesapeake Bay in Maryland.** After being laid off from Capital One where he led 14 software development teams managing 120+ people, Tom and his wife went all-in on Airbnb arbitrage. Within just two weeks of going live, they secured $25,000 in bookings and built a property that guests now describe as "way better than a hotel."
 
 This case study breaks down exactly how Tom built this Airbnb arbitrage business, including his hands-on launch approach, team-building strategies, and the landlord negotiation modifications that helped him secure a prime waterfront property.

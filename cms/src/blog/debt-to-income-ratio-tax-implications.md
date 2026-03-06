@@ -141,8 +141,8 @@ relatedPosts:
     title: 'Credit Score Optimization: Improve Your Score Fast'
   - slug: debt-avalanche-method
     title: 'Debt Avalanche Method: The Fastest Way to Pay Off Debt'
-readingTime: 12 min read
-wordCount: '2545'
+readingTime: 14 min read
+wordCount: '2683'
 ---
 Most people treat debt and taxes as separate problems. In practice, debt to income ratio tax implications drive whether a debt move improves your life or just shifts pain to a later date. If you are trying to qualify for a mortgage, refinance high-interest balances, or stabilize monthly cash flow, you need one plan that works for underwriting and tax season. The Consumer Financial Protection Bureau describes DTI as monthly debt payments divided by gross monthly income, while IRS rules can make some debt-related outcomes taxable. That means a strategy that lowers your payment today can still backfire if it creates an unexpected tax bill.
 

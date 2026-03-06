@@ -135,8 +135,8 @@ relatedPosts:
     title: 'Business Credit Building: Separate Your Personal & Business Finances'
   - slug: business-succession-planning
     title: 'Business Succession Planning: How to Transfer Ownership'
-readingTime: 9 min read
-wordCount: '2033'
+readingTime: 11 min read
+wordCount: '2104'
 ---
 If you are searching for the **best bank for series llc** entities, do not start with ads or rankings. Start with your legal and accounting architecture, then pick the bank that can support it at scale.
 

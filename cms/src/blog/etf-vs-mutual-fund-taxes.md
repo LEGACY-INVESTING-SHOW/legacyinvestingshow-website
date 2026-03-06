@@ -133,8 +133,8 @@ relatedPosts:
     title: 'Asset Allocation Strategies by Age: How to Balance Your Portfolio'
   - slug: crowdfunded-real-estate
     title: 'Crowdfunded Real Estate: Invest in Property with $500'
-readingTime: 10 min read
-wordCount: '2204'
+readingTime: 12 min read
+wordCount: '2282'
 ---
 If you are deciding between funds in 2026, etf vs mutual fund taxes is not a minor detail. For many households, tax drag is one of the few controllable drivers of long-term net returns, especially in taxable brokerage accounts.
 

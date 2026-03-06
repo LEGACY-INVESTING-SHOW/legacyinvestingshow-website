@@ -33,6 +33,7 @@ const programmaticDirs = [
   'tax-strategies',
   'compare',
   'tools',
+  'worksheets',
 ];
 
 /**

@@ -147,8 +147,8 @@ relatedPosts:
     title: >-
       Asset Allocation Tax Implications: Complete 2026 Guide for After-Tax
       Portfolio Returns
-readingTime: 10 min read
-wordCount: '2179'
+readingTime: 12 min read
+wordCount: '2202'
 ---
 Dividend growth investing tax implications are the difference between a portfolio that looks strong on paper and one that actually builds usable wealth. Many U.S. investors focus on yield, payout growth, and company quality, but underestimate tax drag from dividend classification, account location, and poor basis records. If you want better after-tax outcomes, treat taxes as part of portfolio design, not an April cleanup task.
 

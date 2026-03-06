@@ -149,8 +149,8 @@ relatedPosts:
       Investors
   - slug: airbnb-cash-flow-vs-notes-investing
     title: 'Airbnb Cash Flow vs Notes Investing: Which Strategy Works Better in 2026?'
-readingTime: 10 min read
-wordCount: '2270'
+readingTime: 13 min read
+wordCount: '2413'
 ---
 rental property investing for high earners can look simple on social media, but the real outcome is driven by underwriting discipline, tax coordination, and execution. High-income households can benefit from leverage, depreciation, and long-term appreciation, but only if the deal survives bad months, repairs, and financing pressure. This guide gives you a practical 2026 framework to evaluate opportunities, quantify tradeoffs, and avoid expensive mistakes. For related frameworks, review our [investing hub](/topics/investing), [Airbnb cash flow calculator walkthrough](/blog/airbnb-cash-flow-calculator), and [cash-flow tax implications guide](/blog/airbnb-cash-flow-tax-implications).
 

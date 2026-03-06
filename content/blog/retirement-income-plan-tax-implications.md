@@ -146,8 +146,8 @@ relatedPosts:
     title: >-
       401k Strategy Tax Implications: Complete 2026 Guide to Contributions,
       Withdrawals, and Bracket Control
-readingTime: 9 min read
-wordCount: '2007'
+readingTime: 11 min read
+wordCount: '2125'
 ---
 Most retirees do not overpay taxes because they earned too much. They overpay because distributions happen in the wrong order, in the wrong year, or without a bracket target. A good retirement income plan tax implications review is less about predicting future tax law and more about controlling which dollars you spend first.
 

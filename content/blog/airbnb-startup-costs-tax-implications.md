@@ -139,8 +139,8 @@ relatedPosts:
     title: >-
       Airbnb Landlord Pitch Tax Implications: Complete 2026 Decision Guide for
       US Operators
-readingTime: 10 min read
-wordCount: '2133'
+readingTime: 12 min read
+wordCount: '2214'
 ---
 If you're evaluating **airbnb startup costs tax implications**, do not start with furniture mood boards or revenue screenshots. Start with decision math: regulatory risk, cash runway, unit economics, and tax treatment. A unit that looks great on Instagram can still fail if you underestimate cleaning volatility, local permit rules, and how the IRS may classify your activity.
 

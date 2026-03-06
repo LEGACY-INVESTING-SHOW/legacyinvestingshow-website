@@ -143,8 +143,8 @@ relatedPosts:
     title: >-
       Asset Allocation Tax Implications: Complete 2026 Guide for After-Tax
       Portfolio Returns
-readingTime: 9 min read
-wordCount: '2049'
+readingTime: 11 min read
+wordCount: '2143'
 ---
 A tax loss harvesting checklist helps you turn market volatility into a disciplined tax decision instead of emotional selling. For US investors using taxable brokerage accounts, this can reduce current taxes, create future flexibility, and improve after-tax returns when executed carefully.
 

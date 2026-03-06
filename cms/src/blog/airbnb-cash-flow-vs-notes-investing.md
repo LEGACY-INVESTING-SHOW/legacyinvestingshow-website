@@ -136,8 +136,8 @@ relatedPosts:
     title: 'BRRRR Method: Buy, Rehab, Rent, Refinance, Repeat'
   - slug: digital-product-income
     title: 'Digital Product Income: Create Once, Sell Forever'
-readingTime: 9 min read
-wordCount: '1928'
+readingTime: 11 min read
+wordCount: '2056'
 ---
 In 2026, the choice is not just about yield headlines. The real decision is operating intensity versus payment-stream predictability. The phrase airbnb cash flow vs notes investing sounds like a simple side-by-side, but you are actually choosing between running a hospitality business and owning debt cash flows backed by collateral.
 

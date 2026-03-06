@@ -143,8 +143,8 @@ relatedPosts:
     title: '1031 exchange vs standard deduction: Which Strategy Works Better in 2026?'
   - slug: best-tax-deductions-2025
     title: 'Best Tax Deductions 2025: Complete 2026 Guide to Lower Your Tax Bill'
-readingTime: 11 min read
-wordCount: '2331'
+readingTime: 13 min read
+wordCount: '2436'
 ---
 Estate tax planning for physicians is not just about federal estate tax. It is about controlling who gets what, when they get it, how much is lost to taxes and legal friction, and whether your family can keep lifestyle and practice options after a health event or death. Physicians often have high income, concentrated assets, late starts on planning, and complex liability exposure. That combination makes delays expensive.
 

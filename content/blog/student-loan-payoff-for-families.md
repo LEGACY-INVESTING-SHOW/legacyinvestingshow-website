@@ -141,8 +141,8 @@ relatedPosts:
     title: 'Credit Score Optimization: Improve Your Score Fast'
   - slug: debt-avalanche-method
     title: 'Debt Avalanche Method: The Fastest Way to Pay Off Debt'
-readingTime: 10 min read
-wordCount: '2098'
+readingTime: 12 min read
+wordCount: '2201'
 ---
 This student loan payoff for families guide is built for households making real tradeoffs between debt freedom, retirement, childcare, taxes, and business goals. The fastest payoff is not always the best outcome if it leaves you one emergency away from new debt.
 

@@ -136,8 +136,8 @@ relatedPosts:
     title: 'Business Credit Building: Separate Your Personal & Business Finances'
   - slug: business-succession-planning
     title: 'Business Succession Planning: How to Transfer Ownership'
-readingTime: 10 min read
-wordCount: '2241'
+readingTime: 12 min read
+wordCount: '2338'
 ---
 If you are evaluating s corp election tax implications, start with math and operations, not hype. The IRS describes S corporations as pass-through entities, so income, losses, deductions, and credits generally flow to shareholder tax returns. That can reduce certain employment taxes versus default sole proprietorship treatment, but only when payroll, salary documentation, and filings are done correctly. This guide gives you a practical framework to decide, implement, and maintain the strategy without turning a tax idea into a compliance headache. For broader context, review the [Business Structures hub](/topics/business-structures) and keep legal hygiene aligned with tax planning using this [corporate veil protection guide](/blog/corporate-veil-protection).
 

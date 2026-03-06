@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Primary Meta Tags -->
-    <title>How an IT Worker Built a $3,500/Mon… | Legacy Investing Show</title>
-    <meta name="title" content="How an IT Worker Built a $3,500/Mon… | Legacy Investing Show">
-    <meta name="description" content="Grayson went from remote IT worker to $3,500/month profit with his first Airbnb property near Austin, Texas. Learn how he negotiated a security deposit for…">
+    <title>How an IT Worker Built a $3,500/Month Airbnb with 75% Occupancy | Legacy Investing Show</title>
+    <meta name="title" content="How an IT Worker Built a $3,500/Month Airbnb with 75% Occupancy | Legacy Investing Show">
+    <meta name="description" content="Grayson went from remote IT worker to $3,500/month profit with his first Airbnb property near Austin, Texas. Learn how he negotiated a security deposit for property improvements and achieved 75% occupancy within 3 months.">
     <meta name="keywords" content="airbnb success story, austin airbnb, texas airbnb, first airbnb property tips">
     <meta name="author" content="Preston Seo">
     <meta name="robots" content="index, follow">
@@ -46,137 +46,572 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    
+
     <!-- Preload hero image for LCP -->
-    <link rel="preload" as="image" href="../assets/images/blog/success-stories/grayson-it-worker-airbnb.jpg" type="image/webp" fetchpriority="high">
+    
     <link rel="preload" as="image" href="../assets/images/blog/success-stories/grayson-it-worker-airbnb.jpg" fetchpriority="high">
+    
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../assets/css/styles.css">
     
-    <!-- Content Styling Fixes -->
     <style>
-        /* Base typography */
-        .minimal-content {
-            font-size: 1.125rem;
-            line-height: 1.8;
-            color: #374151;
+        .minimal-article {
+            margin: 0 auto;
+            max-width: 1280px;
+            padding: 124px 24px 88px;
         }
-        
-        /* Paragraphs */
-        .minimal-content p {
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
+
+        .article-shell {
+            display: grid;
+            gap: 2rem;
+            align-items: start;
         }
-        
-        /* Headings */
-        .minimal-content h2 {
-            margin-top: 3.5rem;
-            margin-bottom: 1.5rem;
-            font-size: 2.25rem;
+
+        .article-main {
+            min-width: 0;
+        }
+
+        .article-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.55rem;
+            margin-bottom: 1rem;
+            padding: 0.45rem 0.85rem;
+            border-radius: 999px;
+            background: rgba(15, 23, 42, 0.04);
+            border: 1px solid rgba(201, 169, 97, 0.18);
+            color: var(--gold-dark);
+            font-size: 0.75rem;
             font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .article-eyebrow::before {
+            content: "";
+            width: 0.45rem;
+            height: 0.45rem;
+            border-radius: 999px;
+            background: var(--gold);
+            box-shadow: 0 0 0 6px rgba(201, 169, 97, 0.12);
+        }
+
+        .minimal-article-header {
+            margin-bottom: 1.8rem;
+            text-align: left;
+        }
+
+        .minimal-article-meta {
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .minimal-article-title {
+            max-width: 14ch;
+            margin-bottom: 1rem;
+            font-size: clamp(2.4rem, 5vw, 4.5rem);
+            line-height: 0.98;
+            letter-spacing: -0.04em;
+        }
+
+        .minimal-article-description {
+            max-width: 46rem;
+            margin: 0 0 1.15rem;
+            color: var(--text-secondary);
+            font-size: 1.08rem;
+            line-height: 1.8;
+        }
+
+        .minimal-article-author {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.85rem;
+            padding: 0.55rem 0.8rem 0.55rem 0.55rem;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 14px 34px rgba(15, 23, 42, 0.06);
+        }
+
+        .author-avatar {
+            width: 2.6rem;
+            height: 2.6rem;
+            border-radius: 999px;
+            object-fit: cover;
+            border: 2px solid rgba(201, 169, 97, 0.24);
+        }
+
+        .minimal-featured-image {
+            margin-bottom: 1.8rem;
+            border-radius: 28px;
+            overflow: hidden;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 28px 80px rgba(15, 23, 42, 0.12);
+        }
+
+        .article-intro-card {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+            margin-bottom: 1.8rem;
+            padding: 1.6rem 1.75rem;
+            border-radius: 28px;
+            background:
+                radial-gradient(circle at top right, rgba(201, 169, 97, 0.18), transparent 38%),
+                linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(250, 247, 242, 0.92));
+            border: 1px solid rgba(201, 169, 97, 0.22);
+            box-shadow: 0 20px 48px rgba(15, 23, 42, 0.08);
+        }
+
+        .article-intro-card__eyebrow {
+            margin: 0 0 0.6rem;
+            color: var(--gold-dark);
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .article-intro-card__title {
+            margin: 0;
+            color: var(--navy);
+            font-size: clamp(1.55rem, 2.5vw, 2.15rem);
+            line-height: 1.08;
+        }
+
+        .article-intro-card__copy {
+            margin: 0;
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.78;
+        }
+
+        .article-intro-card__list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 0.8rem;
+        }
+
+        .article-intro-card__list li {
+            position: relative;
+            margin: 0;
+            padding-left: 1.35rem;
+            color: var(--text-primary);
+            font-size: 0.96rem;
+            line-height: 1.65;
+        }
+
+        .article-intro-card__list li::before {
+            content: "";
+            position: absolute;
+            top: 0.58rem;
+            left: 0;
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 999px;
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+        }
+
+        .article-rail {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .statistics-section {
+            margin: 0;
+        }
+
+        .statistics-grid {
+            display: grid;
+            gap: 0.9rem;
+            grid-template-columns: 1fr;
+        }
+
+        .stat-card {
+            padding: 1.15rem 1.2rem;
+            border-radius: 24px;
+            background: rgba(255, 255, 255, 0.92);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+            text-align: left;
+        }
+
+        .stat-icon-wrapper {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.7rem;
+            height: 2.7rem;
+            margin-bottom: 0.95rem;
+            border-radius: 0.95rem;
+            background: rgba(201, 169, 97, 0.12);
+            color: var(--gold-dark);
+        }
+
+        .stat-icon {
+            width: 1.3rem;
+            height: 1.3rem;
+        }
+
+        .stat-value {
+            color: var(--navy);
+            font-family: "DM Serif Display", Georgia, serif;
+            font-size: 2rem;
+            line-height: 1;
+            letter-spacing: -0.04em;
+        }
+
+        .stat-label {
+            margin-top: 0.45rem;
+            color: var(--text-primary);
+            font-size: 0.9rem;
+            font-weight: 700;
+            line-height: 1.4;
+            text-transform: none;
+        }
+
+        .stat-context,
+        .stat-source {
+            display: block;
+            margin-top: 0.65rem;
+            color: var(--text-muted);
+            font-size: 0.84rem;
+            line-height: 1.6;
+        }
+
+        .article-rail-card {
+            padding: 1.25rem 1.25rem 1.3rem;
+            border-radius: 24px;
+            background: linear-gradient(160deg, #182234, #0f172a);
+            color: white;
+            box-shadow: 0 22px 55px rgba(15, 23, 42, 0.18);
+        }
+
+        .article-rail-card--muted {
+            background: rgba(255, 255, 255, 0.9);
+            color: var(--text-secondary);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+        }
+
+        .article-rail-card__eyebrow {
+            margin: 0 0 0.55rem;
+            color: rgba(217, 196, 138, 0.92);
+            font-size: 0.74rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .article-rail-card--muted .article-rail-card__eyebrow {
+            color: var(--gold-dark);
+        }
+
+        .article-rail-card__title {
+            margin: 0 0 0.75rem;
+            color: inherit;
+            font-size: 1.35rem;
+            line-height: 1.12;
+        }
+
+        .article-rail-card__body {
+            margin: 0;
+            color: inherit;
+            font-size: 0.95rem;
+            line-height: 1.72;
+        }
+
+        .minimal-content {
+            padding: clamp(1.35rem, 2vw, 2.6rem);
+            border-radius: 32px;
+            background: rgba(255, 255, 255, 0.96);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 28px 72px rgba(15, 23, 42, 0.08);
+            color: #374151;
+            font-size: 1.07rem;
+            line-height: 1.8;
+        }
+
+        .minimal-content p {
+            margin-bottom: 1.45rem;
+            line-height: 1.82;
+        }
+
+        .minimal-content h2 {
+            margin-top: 3rem;
+            margin-bottom: 1.2rem;
             color: #111827;
-            line-height: 1.2;
+            font-size: clamp(1.9rem, 2.8vw, 2.6rem);
+            font-weight: 400;
+            line-height: 1.08;
         }
-        
+
         .minimal-content h3 {
-            margin-top: 2.5rem;
-            margin-bottom: 1.25rem;
-            font-size: 1.5rem;
-            font-weight: 600;
+            margin-top: 2.2rem;
+            margin-bottom: 0.95rem;
+            font-size: 1.35rem;
+            font-weight: 700;
             color: #1f2937;
+            line-height: 1.3;
         }
-        
-        /* Tables */
+
         .minimal-content table {
             width: 100%;
-            margin: 2.5rem 0;
-            border-collapse: collapse;
-            font-size: 1rem;
+            margin: 2.2rem 0;
+            border-collapse: separate;
+            border-spacing: 0;
+            font-size: 0.97rem;
             background: white;
-            border-radius: 8px;
+            border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
         }
-        
+
         .minimal-content thead {
-            background: #0F172A;
+            background: #0f172a;
             color: white;
         }
-        
+
         .minimal-content th {
-            padding: 1rem 1.25rem;
+            padding: 1rem 1.1rem;
             text-align: left;
-            font-weight: 600;
-            font-size: 0.95rem;
+            font-weight: 700;
+            font-size: 0.77rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
         }
-        
+
         .minimal-content td {
-            padding: 1rem 1.25rem;
+            padding: 0.95rem 1.1rem;
             border-bottom: 1px solid #e5e7eb;
+            vertical-align: top;
         }
-        
+
         .minimal-content tbody tr:last-child td {
             border-bottom: none;
         }
-        
+
         .minimal-content tbody tr:nth-child(even) {
-            background: #FAF7F2;
+            background: #faf7f2;
         }
-        
+
         .minimal-content tbody tr:hover {
-            background: rgba(212, 168, 83, 0.08);
+            background: rgba(201, 169, 97, 0.09);
         }
-        
-        /* Blockquotes */
+
         .minimal-content blockquote {
-            margin: 2.5rem 0;
-            padding: 1.5rem 2rem;
-            background: rgba(212, 168, 83, 0.12);
-            border-left: 4px solid #D4A853;
-            font-style: italic;
-            font-size: 1.125rem;
-            line-height: 1.7;
+            margin: 2.3rem 0;
+            padding: 1.4rem 1.6rem;
+            border-radius: 24px;
+            background: rgba(201, 169, 97, 0.11);
+            border-left: 4px solid #d4a853;
+            font-size: 1.12rem;
+            line-height: 1.72;
         }
-        
+
         .minimal-content blockquote p {
             margin-bottom: 0;
         }
-        
-        /* Lists */
-        .minimal-content ul, .minimal-content ol {
-            margin-bottom: 1.5rem;
-            padding-left: 2rem;
+
+        .minimal-content ul,
+        .minimal-content ol {
+            margin-bottom: 1.45rem;
+            padding-left: 1.35rem;
         }
-        
+
         .minimal-content li {
-            margin-bottom: 0.75rem;
-            line-height: 1.7;
+            margin-bottom: 0.7rem;
+            line-height: 1.72;
         }
-        
-        /* Strong/Bold */
+
         .minimal-content strong {
             font-weight: 700;
             color: #111827;
         }
-        
-        /* Links */
+
         .minimal-content a {
-            color: #D4A853;
+            color: #b8933f;
             text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 0.16em;
         }
-        
+
         .minimal-content a:hover {
-            color: #B8933F;
+            color: #8e6d2d;
         }
-        
-        /* Emphasis */
-        .minimal-content em {
-            font-style: italic;
+
+        .article-faq {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            border-radius: 28px;
+            background: rgba(255, 255, 255, 0.96);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 22px 55px rgba(15, 23, 42, 0.08);
+        }
+
+        .article-faq__header {
+            margin-bottom: 1rem;
+        }
+
+        .article-faq__eyebrow {
+            margin: 0 0 0.45rem;
+            color: var(--gold-dark);
+            font-size: 0.76rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .article-faq__title {
+            margin: 0;
+            color: var(--navy);
+            font-size: clamp(1.7rem, 2.2vw, 2.25rem);
+        }
+
+        .article-faq__list {
+            display: grid;
+            gap: 0.85rem;
+        }
+
+        .article-faq__item {
+            border-radius: 20px;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            background: rgba(250, 247, 242, 0.65);
+            overflow: hidden;
+        }
+
+        .article-faq__question {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 1.1rem 1.15rem;
+            border: none;
+            background: transparent;
+            color: var(--navy);
+            font-size: 0.98rem;
+            font-weight: 700;
+            text-align: left;
+        }
+
+        .article-faq__chevron {
+            width: 1.15rem;
+            height: 1.15rem;
+            color: var(--text-muted);
+            transition: transform 0.2s ease;
+            flex: 0 0 auto;
+        }
+
+        .article-faq__question[aria-expanded="true"] .article-faq__chevron {
+            transform: rotate(180deg);
+        }
+
+        .article-faq__answer {
+            display: none;
+            padding: 0 1.15rem 1.15rem;
+        }
+
+        .article-faq__answer--open {
+            display: block;
+        }
+
+        .article-faq__answer p {
+            margin: 0;
+            color: var(--text-secondary);
+            font-size: 0.97rem;
+            line-height: 1.72;
+        }
+
+        @media (min-width: 1024px) {
+            .article-shell {
+                grid-template-columns: minmax(0, 1.55fr) minmax(320px, 0.78fr);
+                gap: 2.25rem;
+            }
+
+            .article-rail {
+                position: sticky;
+                top: 6.5rem;
+            }
+        }
+
+        @media (max-width: 1023px) {
+            .article-shell {
+                gap: 1.5rem;
+            }
+
+            .statistics-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 767px) {
+            .minimal-article {
+                padding: 106px 18px 64px;
+            }
+
+            .minimal-article-title {
+                max-width: none;
+                font-size: clamp(2rem, 10vw, 3rem);
+            }
+
+            .minimal-article-description {
+                font-size: 1rem;
+            }
+
+            .article-intro-card {
+                grid-template-columns: 1fr;
+                padding: 1.25rem;
+                border-radius: 24px;
+            }
+
+            .minimal-featured-image,
+            .minimal-content,
+            .article-faq {
+                border-radius: 24px;
+            }
+
+            .minimal-content {
+                padding: 1.15rem;
+            }
+
+            .minimal-content h2 {
+                margin-top: 2.35rem;
+            }
+
+            .minimal-content table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+            }
+        }
+
+        @media (max-width: 479px) {
+            .statistics-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .article-rail-card,
+            .stat-card {
+                padding: 1rem;
+            }
         }
     </style>
 
     <!-- Schema Markup -->
     
+
+
+
+
+
+
 
 
 
@@ -196,12 +631,12 @@
             "@type": "ListItem",
             "position": 2,
             "name": "Blog",
-            "item": "https://www.legacyinvestingshow.com/blog/"
+            "item": "https://www.legacyinvestingshow.com/blog"
         },
         {
             "@type": "ListItem",
             "position": 3,
-            "name": &quot;How an IT Worker Built a $3,500/Month Airbnb with 75% Occupancy&quot;
+            "name": "How an IT Worker Built a $3,500/Month Airbnb with 75% Occupancy"
         }
     ]
 }
@@ -212,18 +647,18 @@
 {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": &quot;How an IT Worker Built a $3,500/Month Airbnb with 75% Occupancy&quot;,
-    "description": &quot;Grayson went from remote IT worker to $3,500/month profit with his first Airbnb property near Austin, Texas. Learn how he negotiated a security deposit for property improvements and achieved 75% occupancy within 3 months.&quot;,
+    "headline": "How an IT Worker Built a $3,500/Month Airbnb with 75% Occupancy",
+    "description": "Grayson went from remote IT worker to $3,500/month profit with his first Airbnb property near Austin, Texas. Learn how he negotiated a security deposit for property improvements and achieved 75% occupancy within 3 months.",
     "image": {
         "@type": "ImageObject",
-        "url": &quot;https://www.legacyinvestingshow.com/assets/images/blog/success-stories/grayson-it-worker-airbnb.jpg&quot;,
+        "url": "https://www.legacyinvestingshow.com/assets/images/blog/success-stories/grayson-it-worker-airbnb.jpg",
         "width": 1200,
         "height": 630
     },
     "author": {
         "@type": "Person",
         "@id": "https://www.legacyinvestingshow.com/about#author",
-        "name": &quot;Preston Seo&quot;,
+        "name": "Preston Seo",
         "url": "https://www.legacyinvestingshow.com/about",
         "jobTitle": "Real Estate Investor & Educator",
         "knowsAbout": [
@@ -242,7 +677,7 @@
     "publisher": {
         "@type": "Organization",
         "name": "Legacy Investing Show",
-        "url": "https://www.legacyinvestingshow.com",
+        "url": "https://www.legacyinvestingshow.com/",
         "logo": {
             "@type": "ImageObject",
             "url": "https://www.legacyinvestingshow.com/assets/images/logo.png",
@@ -256,15 +691,15 @@
             "https://www.facebook.com/share/19LQhE6gmh/"
         ]
     },
-    "datePublished": &quot;2025-10-06T00:00:00.000Z&quot;,
-    "dateModified": &quot;2026-01-23T00:00:00.000Z&quot;,
+    "datePublished": "2025-10-06T00:00:00.000Z",
+    "dateModified": "2026-01-23T00:00:00.000Z",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": &quot;https://www.legacyinvestingshow.com/blog/it-guy-75-percent-occupancy&quot;
+        "@id": "https://www.legacyinvestingshow.com/blog/it-guy-75-percent-occupancy"
     },
-    "articleSection": &quot;Success Story&quot;,
-    "wordCount": &quot;5205&quot;,
-    "keywords": &quot;airbnb success story, austin airbnb, texas airbnb, first airbnb property tips&quot;,
+    "articleSection": "Success Story",
+    "wordCount": "5033",
+    "keywords": "airbnb success story, austin airbnb, texas airbnb, first airbnb property tips",
     "speakable": {
         "@type": "SpeakableSpecification",
         "cssSelector": [".minimal-article-title", ".minimal-content p:first-of-type"]
@@ -284,91 +719,91 @@
         
         {
             "@type": "Question",
-            "name": &quot;How much money can you make with your first Airbnb property?&quot;,
+            "name": "How much money can you make with your first Airbnb property?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Grayson earned $1,000 profit in September and $3,500 profit in October with his first property near Austin, Texas. Results improved each month as the listing gained reviews and visibility, with 75% occupancy by the third month.&quot;
+                "text": "Grayson earned $1,000 profit in September and $3,500 profit in October with his first property near Austin, Texas. Results improved each month as the listing gained reviews and visibility, with 75% occupancy by the third month."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;How long does it take to get your first Airbnb arbitrage property?&quot;,
+            "name": "How long does it take to get your first Airbnb arbitrage property?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Grayson joined Legacy Investing Show in October 2022 and went live with his first property in July 2023. He took a deliberate approach, spending about 6 months on the course and 2 months on setup. Most students can move faster if desired.&quot;
+                "text": "Grayson joined Legacy Investing Show in October 2022 and went live with his first property in July 2023. He took a deliberate approach, spending about 6 months on the course and 2 months on setup. Most students can move faster if desired."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;Can you do Airbnb arbitrage with a full-time job?&quot;,
+            "name": "Can you do Airbnb arbitrage with a full-time job?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Yes. Grayson works remotely in IT and studied the course modules during downtime. His remote work flexibility allowed him to learn at his own pace and be hands-on with his first property while maintaining his day job.&quot;
+                "text": "Yes. Grayson works remotely in IT and studied the course modules during downtime. His remote work flexibility allowed him to learn at his own pace and be hands-on with his first property while maintaining his day job."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;How do you convince a landlord to let you do Airbnb arbitrage?&quot;,
+            "name": "How do you convince a landlord to let you do Airbnb arbitrage?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Grayson presented himself as a small business owner who turns properties into beautiful homes for traveling professionals. He met the landlord in person, was transparent about his intentions, offered frequent cleaning as a benefit, and gave the landlord freedom to check on the property anytime.&quot;
+                "text": "Grayson presented himself as a small business owner who turns properties into beautiful homes for traveling professionals. He met the landlord in person, was transparent about his intentions, offered frequent cleaning as a benefit, and gave the landlord freedom to check on the property anytime."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;What startup costs are needed for Airbnb arbitrage?&quot;,
+            "name": "What startup costs are needed for Airbnb arbitrage?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Grayson&#39;s main costs were the $2,300 security deposit (which he negotiated to reinvest into the property), first month&#39;s rent, furnishing costs, professional photography, and proper insurance. He also used a business credit card with 12 months no interest to cover initial rent payments.&quot;
+                "text": "Grayson's main costs were the $2,300 security deposit (which he negotiated to reinvest into the property), first month's rent, furnishing costs, professional photography, and proper insurance. He also used a business credit card with 12 months no interest to cover initial rent payments."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;Is it better to list on Airbnb or VRBO?&quot;,
+            "name": "Is it better to list on Airbnb or VRBO?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Grayson found that the majority of his bookings came through VRBO, not Airbnb. He recommends listing on both platforms to maximize visibility and bookings, as different guests prefer different platforms.&quot;
+                "text": "Grayson found that the majority of his bookings came through VRBO, not Airbnb. He recommends listing on both platforms to maximize visibility and bookings, as different guests prefer different platforms."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;How do you run numbers on an Airbnb arbitrage property?&quot;,
+            "name": "How do you run numbers on an Airbnb arbitrage property?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Grayson asked the owner about past utility bills to estimate costs, then added about 50% buffer for higher usage. He researched internet, pest control, and other recurring costs upfront before signing. He also checked what cut Airbnb and VRBO take from bookings.&quot;
+                "text": "Grayson asked the owner about past utility bills to estimate costs, then added about 50% buffer for higher usage. He researched internet, pest control, and other recurring costs upfront before signing. He also checked what cut Airbnb and VRBO take from bookings."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;What makes a property stand out on Airbnb?&quot;,
+            "name": "What makes a property stand out on Airbnb?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Grayson studied top performers in his area and noticed most had social gathering spaces like fire pits. He installed a gravel area with a fire pit and string lights, creating an outdoor space where guests could gather since he didn&#39;t have a pool or waterfront.&quot;
+                "text": "Grayson studied top performers in his area and noticed most had social gathering spaces like fire pits. He installed a gravel area with a fire pit and string lights, creating an outdoor space where guests could gather since he didn't have a pool or waterfront."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;How important is proximity to downtown for Airbnb?&quot;,
+            "name": "How important is proximity to downtown for Airbnb?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Very important. Grayson&#39;s property is within walking distance of downtown, and multiple guests have commented they didn&#39;t even need a car. The walkability to coffee shops, restaurants, and entertainment is a major differentiator.&quot;
+                "text": "Very important. Grayson's property is within walking distance of downtown, and multiple guests have commented they didn't even need a car. The walkability to coffee shops, restaurants, and entertainment is a major differentiator."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;Is Legacy Investing Show worth it for beginners?&quot;,
+            "name": "Is Legacy Investing Show worth it for beginners?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Based on Grayson&#39;s results, the program provided valuable scripts for landlord negotiations, spreadsheets for analyzing deals, insurance recommendations, and team support for validating numbers. He achieved $3,500/month profit on his first property within 3 months of launching.&quot;
+                "text": "Based on Grayson's results, the program provided valuable scripts for landlord negotiations, spreadsheets for analyzing deals, insurance recommendations, and team support for validating numbers. He achieved $3,500/month profit on his first property within 3 months of launching."
             }
         }
         
@@ -383,7 +818,7 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Legacy Investing Show",
-    "url": "https://www.legacyinvestingshow.com",
+    "url": "https://www.legacyinvestingshow.com/",
     "logo": "https://www.legacyinvestingshow.com/assets/images/logo.png",
     "sameAs": [
         "https://www.instagram.com/thelegacyinvestingshow/",
@@ -396,16 +831,16 @@
 
 
     <!-- Google Analytics 4 -->
-        <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-2578PT1WSS');
     </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
+
 </head>
 <body class="bg-cream text-navy">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -467,122 +902,59 @@
 </nav>
 
 
-            <header class="minimal-article-header">
-                <div class="minimal-article-meta">
-                    <span>Success Story</span>
-                    <span class="meta-dot"></span>
-                    <time datetime="2025-10-06T00:00:00.000Z">October 6, 2025</time>
-                    <span class="meta-dot"></span>
-                    <span>27 min read min read</span>
-                </div>
-                <h1 class="minimal-article-title">How an IT Worker Built a $3,500/Month Airbnb with 75% Occupancy</h1>
-                <div class="minimal-article-author">
-                    <img src="../assets/images/preston-main.jpg" alt="Preston Seo" width="36" height="36" class="author-avatar">
-                    <span>Preston Seo</span>
-                </div>
-            </header>
+            <div class="article-shell">
+                <div class="article-main">
+                    <header class="minimal-article-header">
+                        <span class="article-eyebrow">Success Story Guide</span>
+                        <div class="minimal-article-meta">
+                            <span>Success Story</span>
+                            <span class="meta-dot"></span>
+                            <time datetime="2025-10-06T00:00:00.000Z">October 6, 2025</time>
+                            <span class="meta-dot"></span>
+                            <span>26 min read min read</span>
+                        </div>
+                        <h1 class="minimal-article-title">How an IT Worker Built a $3,500/Month Airbnb with 75% Occupancy</h1>
+                        <p class="minimal-article-description">Grayson went from remote IT worker to $3,500/month profit with his first Airbnb property near Austin, Texas. Learn how he negotiated a security deposit for property improvements and achieved 75% occupancy within 3 months.</p>
+                        <div class="minimal-article-author">
+                            <picture>
+                                <source srcset="../assets/images/preston-main.webp" type="image/webp">
+                                <img src="../assets/images/preston-main.jpg"
+                                     alt="Preston Seo"
+                                     width="36"
+                                     height="36"
+                                     class="author-avatar"
+                                     fetchpriority="low"
+                                     decoding="async">
+                            </picture>
+                            <span>Preston Seo</span>
+                        </div>
+                    </header>
 
-            <!-- Featured Image -->
-            <div class="minimal-featured-image">
-                <picture>
-                    <source srcset="../assets/images/blog/success-stories/grayson-it-worker-airbnb.jpg" type="image/webp">
-                    <img src="../assets/images/blog/success-stories/grayson-it-worker-airbnb.jpg" alt="How an IT Worker Built a $3,500/Month Airbnb with 75% Occupancy" width="800" height="450" loading="eager" fetchpriority="high" decoding="async">
-                </picture>
-            </div>
+                    <div class="minimal-featured-image">
+                        <picture>
+                            
+                            <img src="../assets/images/blog/success-stories/grayson-it-worker-airbnb.jpg" alt="How an IT Worker Built a $3,500/Month Airbnb with 75% Occupancy" width="800" height="450" loading="eager" fetchpriority="high" decoding="async">
+                        </picture>
+                    </div>
 
-            <!-- Statistics Cards -->
-            
-                <section class="statistics-section" aria-label="Key statistics">
-    <div class="statistics-grid">
-        
-        <div class="stat-card" data-stat-index="0">
-            <div class="stat-icon-wrapper">
-                
-                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-                
-            </div>
-            <div class="stat-value">$3,500</div>
-            <div class="stat-label">Monthly Profit</div>
-            
-            <span class="stat-context">October peak month</span>
-            
-            
-            <span class="stat-source">Student Interview, October 2023</span>
-            
-        </div>
-        
-        <div class="stat-card" data-stat-index="1">
-            <div class="stat-icon-wrapper">
-                
-            </div>
-            <div class="stat-value">75%</div>
-            <div class="stat-label">Occupancy Rate</div>
-            
-            <span class="stat-context">By month 3 (October)</span>
-            
-            
-        </div>
-        
-        <div class="stat-card" data-stat-index="2">
-            <div class="stat-icon-wrapper">
-                
-                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-                
-            </div>
-            <div class="stat-value">1</div>
-            <div class="stat-label">Property</div>
-            
-            <span class="stat-context">100-year-old renovated house</span>
-            
-            
-        </div>
-        
-        <div class="stat-card" data-stat-index="3">
-            <div class="stat-icon-wrapper">
-                
-                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                
-            </div>
-            <div class="stat-value">6 months</div>
-            <div class="stat-label">Course to Launch</div>
-            
-            <span class="stat-context">Joined October, live July</span>
-            
-            
-        </div>
-        
-        <div class="stat-card" data-stat-index="4">
-            <div class="stat-icon-wrapper">
-                
-            </div>
-            <div class="stat-value">$2,300</div>
-            <div class="stat-label">Security Deposit</div>
-            
-            <span class="stat-context">Reinvested into property</span>
-            
-            
-        </div>
-        
-        <div class="stat-card" data-stat-index="5">
-            <div class="stat-icon-wrapper">
-                
-            </div>
-            <div class="stat-value">250%</div>
-            <div class="stat-label">Profit Growth</div>
-            
-            <span class="stat-context">$1K Sept to $3.5K Oct</span>
-            
-            
-        </div>
-        
-    </div>
-</section>
+                    <section class="article-intro-card" aria-label="How to use this guide">
+                        <div>
+                            <p class="article-intro-card__eyebrow">Use This Like a Tool</p>
+                            <h2 class="article-intro-card__title">The point of this page is not more information. The point is better judgment before you act.</h2>
+                        </div>
+                        <ul class="article-intro-card__list">
+                            
+                            <li>Pull the real numbers first.</li>
+                            
+                            <li>Run a base case and a stress case.</li>
+                            
+                            <li>Use the result to make a cleaner decision, not a faster emotional one.</li>
+                            
+                        </ul>
+                    </section>
 
-            
-
-            <!-- Article Content -->
-            <div class="minimal-content">
-                <p><strong>Grayson Nichols earns $3,500 per month in profit from his first Airbnb arbitrage property near Austin, Texas.</strong> Working remotely as an IT professional, he joined Legacy Investing Show in October 2022 and went live with his property by July 2023. By October, his century-old renovated house achieved 75% occupancy with bookings extending as far out as April of the following year.</p>
+                    <div class="minimal-content">
+                        <p><strong>Grayson Nichols earns $3,500 per month in profit from his first Airbnb arbitrage property near Austin, Texas.</strong> Working remotely as an IT professional, he joined Legacy Investing Show in October 2022 and went live with his property by July 2023. By October, his century-old renovated house achieved 75% occupancy with bookings extending as far out as April of the following year.</p>
 <p>This case study breaks down exactly how Grayson built his first Airbnb business, including his unique approach to landlord negotiation, the security deposit strategy that funded property improvements, and the amenity decisions that helped his listing compete without a pool or waterfront location.</p>
 <p><strong>In this article:</strong></p>
 <ul>
@@ -1194,68 +1566,327 @@
 <p>Preston Seo</p>
 <p>Real estate investor and financial educator helping people build generational wealth through smart investing strategies.</p>
 
-            </div>
+                    </div>
 
-            <!-- FAQ Section -->
+                    
+                        <section class="article-faq" aria-label="Frequently asked questions">
+    <div class="article-faq__header">
+        <p class="article-faq__eyebrow">Questions that matter before you act</p>
+        <h2 class="article-faq__title">Frequently Asked Questions</h2>
+    </div>
+    <div class="article-faq__list">
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="true"
+                aria-controls="faq-answer-0"
+            >
+                <span>How much money can you make with your first Airbnb property?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-0"
+                class="article-faq__answer article-faq__answer--open"
+            >
+                <p>Grayson earned $1,000 profit in September and $3,500 profit in October with his first property near Austin, Texas. Results improved each month as the listing gained reviews and visibility, with 75% occupancy by the third month.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-1"
+            >
+                <span>How long does it take to get your first Airbnb arbitrage property?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-1"
+                class="article-faq__answer "
+            >
+                <p>Grayson joined Legacy Investing Show in October 2022 and went live with his first property in July 2023. He took a deliberate approach, spending about 6 months on the course and 2 months on setup. Most students can move faster if desired.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-2"
+            >
+                <span>Can you do Airbnb arbitrage with a full-time job?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-2"
+                class="article-faq__answer "
+            >
+                <p>Yes. Grayson works remotely in IT and studied the course modules during downtime. His remote work flexibility allowed him to learn at his own pace and be hands-on with his first property while maintaining his day job.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-3"
+            >
+                <span>How do you convince a landlord to let you do Airbnb arbitrage?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-3"
+                class="article-faq__answer "
+            >
+                <p>Grayson presented himself as a small business owner who turns properties into beautiful homes for traveling professionals. He met the landlord in person, was transparent about his intentions, offered frequent cleaning as a benefit, and gave the landlord freedom to check on the property anytime.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-4"
+            >
+                <span>What startup costs are needed for Airbnb arbitrage?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-4"
+                class="article-faq__answer "
+            >
+                <p>Grayson&#39;s main costs were the $2,300 security deposit (which he negotiated to reinvest into the property), first month&#39;s rent, furnishing costs, professional photography, and proper insurance. He also used a business credit card with 12 months no interest to cover initial rent payments.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-5"
+            >
+                <span>Is it better to list on Airbnb or VRBO?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-5"
+                class="article-faq__answer "
+            >
+                <p>Grayson found that the majority of his bookings came through VRBO, not Airbnb. He recommends listing on both platforms to maximize visibility and bookings, as different guests prefer different platforms.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-6"
+            >
+                <span>How do you run numbers on an Airbnb arbitrage property?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-6"
+                class="article-faq__answer "
+            >
+                <p>Grayson asked the owner about past utility bills to estimate costs, then added about 50% buffer for higher usage. He researched internet, pest control, and other recurring costs upfront before signing. He also checked what cut Airbnb and VRBO take from bookings.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-7"
+            >
+                <span>What makes a property stand out on Airbnb?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-7"
+                class="article-faq__answer "
+            >
+                <p>Grayson studied top performers in his area and noticed most had social gathering spaces like fire pits. He installed a gravel area with a fire pit and string lights, creating an outdoor space where guests could gather since he didn&#39;t have a pool or waterfront.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-8"
+            >
+                <span>How important is proximity to downtown for Airbnb?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-8"
+                class="article-faq__answer "
+            >
+                <p>Very important. Grayson&#39;s property is within walking distance of downtown, and multiple guests have commented they didn&#39;t even need a car. The walkability to coffee shops, restaurants, and entertainment is a major differentiator.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-9"
+            >
+                <span>Is Legacy Investing Show worth it for beginners?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-9"
+                class="article-faq__answer "
+            >
+                <p>Based on Grayson&#39;s results, the program provided valuable scripts for landlord negotiations, spreadsheets for analyzing deals, insurance recommendations, and team support for validating numbers. He achieved $3,500/month profit on his first property within 3 months of launching.</p>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<script>
+    document.querySelectorAll('.article-faq__question').forEach((button) => {
+        button.addEventListener('click', () => {
+            const expanded = button.getAttribute('aria-expanded') === 'true';
+            button.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+            button.nextElementSibling.classList.toggle('article-faq__answer--open');
+        });
+    });
+</script>
+
+                    
+                </div>
+
+                <aside class="article-rail">
+                    
+                        <section class="statistics-section" aria-label="Key statistics">
+    <div class="statistics-grid">
+        
+        <div class="stat-card" data-stat-index="0">
+            <div class="stat-icon-wrapper">
+                
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                
+            </div>
+            <div class="stat-value">$3,500</div>
+            <div class="stat-label">Monthly Profit</div>
             
-                <section class="mt-16 bg-white rounded-xl shadow-lg p-8">
-    <h2 class="text-3xl font-bold text-navy mb-8">Frequently Asked Questions</h2>
-    <div class="space-y-6">
-        
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">How much money can you make with your first Airbnb property?</h3>
-            <p class="text-gray-600">Grayson earned $1,000 profit in September and $3,500 profit in October with his first property near Austin, Texas. Results improved each month as the listing gained reviews and visibility, with 75% occupancy by the third month.</p>
+            <span class="stat-context">October peak month</span>
+            
+            
+            <span class="stat-source">Student Interview, October 2023</span>
+            
         </div>
         
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">How long does it take to get your first Airbnb arbitrage property?</h3>
-            <p class="text-gray-600">Grayson joined Legacy Investing Show in October 2022 and went live with his first property in July 2023. He took a deliberate approach, spending about 6 months on the course and 2 months on setup. Most students can move faster if desired.</p>
+        <div class="stat-card" data-stat-index="1">
+            <div class="stat-icon-wrapper">
+                
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                
+            </div>
+            <div class="stat-value">75%</div>
+            <div class="stat-label">Occupancy Rate</div>
+            
+            <span class="stat-context">By month 3 (October)</span>
+            
+            
         </div>
         
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">Can you do Airbnb arbitrage with a full-time job?</h3>
-            <p class="text-gray-600">Yes. Grayson works remotely in IT and studied the course modules during downtime. His remote work flexibility allowed him to learn at his own pace and be hands-on with his first property while maintaining his day job.</p>
+        <div class="stat-card" data-stat-index="2">
+            <div class="stat-icon-wrapper">
+                
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                
+            </div>
+            <div class="stat-value">1</div>
+            <div class="stat-label">Property</div>
+            
+            <span class="stat-context">100-year-old renovated house</span>
+            
+            
         </div>
         
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">How do you convince a landlord to let you do Airbnb arbitrage?</h3>
-            <p class="text-gray-600">Grayson presented himself as a small business owner who turns properties into beautiful homes for traveling professionals. He met the landlord in person, was transparent about his intentions, offered frequent cleaning as a benefit, and gave the landlord freedom to check on the property anytime.</p>
+        <div class="stat-card" data-stat-index="3">
+            <div class="stat-icon-wrapper">
+                
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                
+            </div>
+            <div class="stat-value">6 months</div>
+            <div class="stat-label">Course to Launch</div>
+            
+            <span class="stat-context">Joined October, live July</span>
+            
+            
         </div>
         
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">What startup costs are needed for Airbnb arbitrage?</h3>
-            <p class="text-gray-600">Grayson&#39;s main costs were the $2,300 security deposit (which he negotiated to reinvest into the property), first month&#39;s rent, furnishing costs, professional photography, and proper insurance. He also used a business credit card with 12 months no interest to cover initial rent payments.</p>
+        <div class="stat-card" data-stat-index="4">
+            <div class="stat-icon-wrapper">
+                
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                
+            </div>
+            <div class="stat-value">$2,300</div>
+            <div class="stat-label">Security Deposit</div>
+            
+            <span class="stat-context">Reinvested into property</span>
+            
+            
         </div>
         
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">Is it better to list on Airbnb or VRBO?</h3>
-            <p class="text-gray-600">Grayson found that the majority of his bookings came through VRBO, not Airbnb. He recommends listing on both platforms to maximize visibility and bookings, as different guests prefer different platforms.</p>
-        </div>
-        
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">How do you run numbers on an Airbnb arbitrage property?</h3>
-            <p class="text-gray-600">Grayson asked the owner about past utility bills to estimate costs, then added about 50% buffer for higher usage. He researched internet, pest control, and other recurring costs upfront before signing. He also checked what cut Airbnb and VRBO take from bookings.</p>
-        </div>
-        
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">What makes a property stand out on Airbnb?</h3>
-            <p class="text-gray-600">Grayson studied top performers in his area and noticed most had social gathering spaces like fire pits. He installed a gravel area with a fire pit and string lights, creating an outdoor space where guests could gather since he didn&#39;t have a pool or waterfront.</p>
-        </div>
-        
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">How important is proximity to downtown for Airbnb?</h3>
-            <p class="text-gray-600">Very important. Grayson&#39;s property is within walking distance of downtown, and multiple guests have commented they didn&#39;t even need a car. The walkability to coffee shops, restaurants, and entertainment is a major differentiator.</p>
-        </div>
-        
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">Is Legacy Investing Show worth it for beginners?</h3>
-            <p class="text-gray-600">Based on Grayson&#39;s results, the program provided valuable scripts for landlord negotiations, spreadsheets for analyzing deals, insurance recommendations, and team support for validating numbers. He achieved $3,500/month profit on his first property within 3 months of launching.</p>
+        <div class="stat-card" data-stat-index="5">
+            <div class="stat-icon-wrapper">
+                
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                
+            </div>
+            <div class="stat-value">250%</div>
+            <div class="stat-label">Profit Growth</div>
+            
+            <span class="stat-context">$1K Sept to $3.5K Oct</span>
+            
+            
         </div>
         
     </div>
 </section>
 
-            
+                    
+                    <div class="article-rail-card">
+                        <p class="article-rail-card__eyebrow">Before You Act</p>
+                        <h2 class="article-rail-card__title">Good planning is mostly good sequencing.</h2>
+                        <p class="article-rail-card__body">Use this page to slow the decision down just enough to avoid the expensive version of “I thought I understood it.”</p>
+                    </div>
+                    <div class="article-rail-card article-rail-card--muted">
+                        <p class="article-rail-card__eyebrow">Important</p>
+                        <p class="article-rail-card__body">Educational only. Results vary. Tax, legal, and investment decisions should be reviewed with a qualified professional who can see your full situation.</p>
+                    </div>
+                </aside>
+            </div>
         </article>
     </main>
 

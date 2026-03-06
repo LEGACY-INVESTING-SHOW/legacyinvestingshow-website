@@ -143,8 +143,8 @@ relatedPosts:
     title: 'BRRRR Method: Buy, Rehab, Rent, Refinance, Repeat'
   - slug: digital-product-income
     title: 'Digital Product Income: Create Once, Sell Forever'
-readingTime: 11 min read
-wordCount: '2479'
+readingTime: 13 min read
+wordCount: '2530'
 ---
 If you are underwriting a coin laundry or card-based store, do not stop at headline cash flow. The phrase laundromat investing tax implications sounds narrow, but it often decides whether your real annual return is mediocre or excellent. Two stores with similar gross revenue can produce very different owner outcomes once you include depreciation timing, payroll setup, sales-tax treatment, and exit tax planning.
 

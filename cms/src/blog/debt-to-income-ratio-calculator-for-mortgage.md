@@ -146,8 +146,8 @@ relatedPosts:
     title: 'Credit Score Optimization: Improve Your Score Fast'
   - slug: debt-avalanche-method
     title: 'Debt Avalanche Method: The Fastest Way to Pay Off Debt'
-readingTime: 10 min read
-wordCount: '2166'
+readingTime: 12 min read
+wordCount: '2346'
 ---
 A debt to income ratio calculator for mortgage planning is one of the highest-leverage tools you can use before speaking with a lender. It translates your income, recurring debt payments, and proposed housing cost into a single risk metric underwriters care about. If you run this number early, you can decide whether to apply now, reduce debt first, or adjust your home budget before pulling credit and paying application fees.
 

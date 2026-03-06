@@ -190,8 +190,8 @@ relatedPosts:
     title: 'Credit Score Optimization: Improve Your Score Fast'
   - slug: debt-avalanche-method
     title: 'Debt Avalanche Method: The Fastest Way to Pay Off Debt'
-readingTime: 10 min read
-wordCount: '2220'
+readingTime: 12 min read
+wordCount: '2373'
 ---
 Student debt can feel like a moving target. If you are searching for student loan payoff for beginners, start here: the fastest payoff plan is not always the best financial plan. A good plan lowers interest without forcing missed bills, credit card balances, or zero emergency savings.
 

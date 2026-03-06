@@ -185,8 +185,8 @@ relatedPosts:
     title: '1031 exchange vs standard deduction: Which Strategy Works Better in 2026?'
   - slug: best-tax-deductions-2025
     title: 'Best Tax Deductions 2025: Complete 2026 Guide to Lower Your Tax Bill'
-readingTime: 9 min read
-wordCount: '2054'
+readingTime: 11 min read
+wordCount: '2144'
 ---
 Estate tax planning for beginners is less about fancy documents and more about making a few high-impact decisions early: what your taxable estate could be, which assets you can transfer strategically, and how heirs will pay costs without fire-selling property. The IRS describes estate tax as a tax on the right to transfer property at death and starts from the fair market value of includable assets. Fidelity and Vanguard both emphasize that core legal documents and coordinated advisor support matter before advanced tactics. This article is educational, not legal or tax advice, and is built to help you make better decisions with your CPA and estate attorney.
 

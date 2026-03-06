@@ -1,26 +1,26 @@
 ---
-# Core SEO Fields
-title: "How James Makes $7,000/Month from 3 Airbnb Properties While Working Full-Time (2026 Case Study)"
-titleTemplate: "%s | Legacy Investing Show Success Stories"
-description: "James Saunders built a $7,000/month Airbnb arbitrage business with 3 properties in just 5 months while keeping his consulting job. Learn his 57-day launch strategy, cold calling scripts, and remote management system."
-date: 2026-01-29
-modifiedDate: 2026-01-23
+title: >-
+  How James Makes $7,000/Month from 3 Airbnb Properties While Working Full-Time
+  (2026 Case Study)
+titleTemplate: '%s | Legacy Investing Show Success Stories'
+description: >-
+  James Saunders built a $7,000/month Airbnb arbitrage business with 3
+  properties in just 5 months while keeping his consulting job. Learn his 57-day
+  launch strategy, cold calling scripts, and remote management system.
+date: 2026-01-29T00:00:00.000Z
+modifiedDate: 2026-01-23T00:00:00.000Z
 author: Preston Seo
-authorTitle: "Founder, Legacy Investing Show"
-authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
+authorTitle: 'Founder, Legacy Investing Show'
+authorCredentials: '2,000+ students trained, $10M+ student revenue generated'
 category: Success Story
-canonical: "https://www.legacyinvestingshow.com/blog/7k-month-3-properties-full-time"
-
-# SEO Keyword Targeting
+canonical: 'https://www.legacyinvestingshow.com/blog/7k-month-3-properties-full-time'
 seo:
-  primaryKeyword: "airbnb success story"
+  primaryKeyword: airbnb success story
   secondaryKeywords:
-    - "short-term rental business"
+    - short-term rental business
   longTailKeywords:
-    - "how to start airbnb while working full time"
-  searchIntent: "informational"
-
-# Tags
+    - how to start airbnb while working full time
+  searchIntent: informational
 tags:
   - airbnb arbitrage
   - rental arbitrage
@@ -28,91 +28,105 @@ tags:
   - case study
   - success story
   - short-term rental
-
-# Open Graph & Social
 image: /assets/images/blog/success-stories/james-7k-full-time.jpg
-imageAlt: "How James Makes $7,000/Month from 3 Airbnb Properties While Working Full-Time (2026 Case Study) - Legacy Investing Show"
+imageAlt: >-
+  How James Makes $7,000/Month from 3 Airbnb Properties While Working Full-Time
+  (2026 Case Study) - Legacy Investing Show
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
 featured: false
-
-# Video Integration
-youtubeId: "8jlPlCb4WgM"
-
-# Multiple Schema Types for Rich Results
+youtubeId: 8jlPlCb4WgM
 schema:
   - type: Article
-    headline: "How James Makes $7,000/Month from 3 Airbnb Properties While Working Full-Time (2026 Case Study)"
-    datePublished: "2026-01-29T00:00:00Z"
-    dateModified: "2026-01-23T00:00:00Z"
+    headline: >-
+      How James Makes $7,000/Month from 3 Airbnb Properties While Working
+      Full-Time (2026 Case Study)
+    datePublished: '2026-01-29T00:00:00Z'
+    dateModified: '2026-01-23T00:00:00Z'
   - type: VideoObject
-    name: "How James Makes $7,000/Month from 3 Airbnb Properties While Working Full-Time (2026 Case Study) - Full Interview"
-    thumbnailUrl: "https://img.youtube.com/vi/8jlPlCb4WgM/maxresdefault.jpg"
-    embedUrl: "https://www.youtube.com/embed/8jlPlCb4WgM"
+    name: >-
+      How James Makes $7,000/Month from 3 Airbnb Properties While Working
+      Full-Time (2026 Case Study) - Full Interview
+    thumbnailUrl: 'https://img.youtube.com/vi/8jlPlCb4WgM/maxresdefault.jpg'
+    embedUrl: 'https://www.youtube.com/embed/8jlPlCb4WgM'
   - type: HowTo
-    name: "How to Build an Airbnb Business Like This Success Story"
-
-# Breadcrumbs
+    name: How to Build an Airbnb Business Like This Success Story
 breadcrumbs:
-  - name: "Home"
-    url: "/"
-  - name: "Blog"
-    url: "/blog"
-  - name: "Success Stories"
-    url: "/blog/category/success-stories"
-
-# Statistics (AI-crawler accessible, renders as stat cards)
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog
+  - name: Success Stories
+    url: /blog/category/success-stories
 statistics:
-  - value: "3"
-    label: "Properties"
-    icon: "home"
-    context: "Multiple markets across states"
-  - value: "57 days"
-    label: "Time to First Property"
-    icon: "clock"
-    context: "Beat 90-day goal by 33 days"
-  - value: "20-30"
-    label: "Calls to First Yes"
-    icon: "star"
-    context: "Then 3-4 calls per property after"
-  - value: "5-6 hrs"
-    label: "Weekly Management"
-    icon: "clock"
-    context: "With full-time consulting job"
-  - value: "&lt;$10K"
-    label: "Setup Cost"
-    icon: "star"
-    context: "2,900 sq ft property with hot tub"
-
-# FAQ (FAQPage schema + accordion rendering)
+  - value: '3'
+    label: Properties
+    icon: home
+    context: Multiple markets across states
+  - value: 57 days
+    label: Time to First Property
+    icon: clock
+    context: Beat 90-day goal by 33 days
+  - value: 20-30
+    label: Calls to First Yes
+    icon: star
+    context: Then 3-4 calls per property after
+  - value: 5-6 hrs
+    label: Weekly Management
+    icon: clock
+    context: With full-time consulting job
+  - value: '&lt;$10K'
+    label: Setup Cost
+    icon: star
+    context: '2,900 sq ft property with hot tub'
 faq:
-  - question: "How much can you make with Airbnb arbitrage while working full-time?"
-    answer: "James generates $7,000/month in profit from 3 Airbnb arbitrage properties while working as a full-time consultant. He spends only 5-6 hours per week on management using automation tools like Guesty and Price Labs."
-  - question: "How long does it take to get your first Airbnb arbitrage property?"
-    answer: "James secured his first property and went live within 57 days of starting. Most Legacy Investing Show students get their first property in 30-90 days depending on their market and dedication level."
-  - question: "How many landlords do you need to call before getting a yes?"
-    answer: "James called 20-30 landlords before getting his first yes. After gaining confidence, he secured his second and third properties with only 3-4 calls each."
-  - question: "Can you manage Airbnb properties remotely in another state?"
-    answer: "Yes. One of James' properties is 18-20 hours away by car in a completely different state. He manages it entirely remotely through his cleaning team, handyman referrals, and automation software."
-  - question: "How much does it cost to start an Airbnb arbitrage business?"
-    answer: "James furnished a 4-bed, 2-bath property (2,900 sq ft with hot tub) for under $10,000. Costs include security deposit, first month rent, furnishing, and supplies."
-  - question: "Do you need real estate experience to start Airbnb arbitrage?"
-    answer: "No. James came from an accounting/consulting background with zero real estate experience. He learned through Legacy Investing Show's training and was honest with landlords about being a first-time operator."
-  - question: "What's the best way to approach landlords with no experience?"
-    answer: "Be completely honest. James told landlords: \"This will be my first property. I've never done it, but I'm in a mastermind group and feel comfortable. I promise I'll always pay on time.\" Landlords appreciated the honesty."
-  - question: "How do you find reliable cleaners for remote properties?"
-    answer: "James finds cleaners through Thumbtack, vets them for communication speed (fast responders are more reliable), then asks for referrals to build his full team including handymen and contractors."
-
-# Table of Contents
+  - question: How much can you make with Airbnb arbitrage while working full-time?
+    answer: >-
+      James generates $7,000/month in profit from 3 Airbnb arbitrage properties
+      while working as a full-time consultant. He spends only 5-6 hours per week
+      on management using automation tools like Guesty and Price Labs.
+  - question: How long does it take to get your first Airbnb arbitrage property?
+    answer: >-
+      James secured his first property and went live within 57 days of starting.
+      Most Legacy Investing Show students get their first property in 30-90 days
+      depending on their market and dedication level.
+  - question: How many landlords do you need to call before getting a yes?
+    answer: >-
+      James called 20-30 landlords before getting his first yes. After gaining
+      confidence, he secured his second and third properties with only 3-4 calls
+      each.
+  - question: Can you manage Airbnb properties remotely in another state?
+    answer: >-
+      Yes. One of James' properties is 18-20 hours away by car in a completely
+      different state. He manages it entirely remotely through his cleaning
+      team, handyman referrals, and automation software.
+  - question: How much does it cost to start an Airbnb arbitrage business?
+    answer: >-
+      James furnished a 4-bed, 2-bath property (2,900 sq ft with hot tub) for
+      under $10,000. Costs include security deposit, first month rent,
+      furnishing, and supplies.
+  - question: Do you need real estate experience to start Airbnb arbitrage?
+    answer: >-
+      No. James came from an accounting/consulting background with zero real
+      estate experience. He learned through Legacy Investing Show's training and
+      was honest with landlords about being a first-time operator.
+  - question: What's the best way to approach landlords with no experience?
+    answer: >-
+      Be completely honest. James told landlords: "This will be my first
+      property. I've never done it, but I'm in a mastermind group and feel
+      comfortable. I promise I'll always pay on time." Landlords appreciated the
+      honesty.
+  - question: How do you find reliable cleaners for remote properties?
+    answer: >-
+      James finds cleaners through Thumbtack, vets them for communication speed
+      (fast responders are more reliable), then asks for referrals to build his
+      full team including handymen and contractors.
 toc: true
 tocDepth: 3
-
-# Reading Time
-readingTime: "25 min read"
-wordCount: "4986"
+readingTime: 25 min read
+wordCount: '4853'
 ---
-
 **James Saunders earns $7,000 per month from 3 Airbnb arbitrage properties while working full-time as a consultant.** Starting at just 24 years old with zero real estate experience, James joined Legacy Investing Show and secured his first property within 57 days. Today, his short-term rental portfolio generates consistent monthly cash flow with only 5-6 hours of management per week—all without owning a single property.
 
 This case study breaks down exactly how James built his Airbnb arbitrage business in just 5 months, including his goal-setting system that beat the standard 90-day timeline by over a month, the cold calling strategy that converts landlords with complete honesty, and the remote management system that lets him run properties 18-20 hours away without ever visiting.

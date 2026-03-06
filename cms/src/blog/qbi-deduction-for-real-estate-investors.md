@@ -141,8 +141,8 @@ relatedPosts:
     title: 'Best Tax Deductions for High Income Earners: Complete 2026 Guide'
   - slug: best-tax-deductions-for-individuals
     title: 'Best Tax Deductions for Individuals: Complete 2026 Guide'
-readingTime: 10 min read
-wordCount: '2108'
+readingTime: 12 min read
+wordCount: '2209'
 ---
 If you own rentals, syndication interests, or a real estate operating company, the **qbi deduction for real estate investors** can be one of the biggest recurring tax levers on your return. The challenge is that many investors hear the headline number, up to 20%, but miss the filters that actually control the outcome.
 

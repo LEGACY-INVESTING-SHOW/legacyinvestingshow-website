@@ -1,27 +1,25 @@
 ---
-# Core SEO Fields
-title: "How an IT Worker Built a $3,500/Month Airbnb with 75% Occupancy"
-titleTemplate: "%s | Legacy Investing Show Success Stories"
-description: "Grayson went from remote IT worker to $3,500/month profit with his first Airbnb property near Austin, Texas. Learn how he negotiated a security deposit for property improvements and achieved 75% occupancy within 3 months."
-date: 2025-10-06
-modifiedDate: 2026-01-23
+title: 'How an IT Worker Built a $3,500/Month Airbnb with 75% Occupancy'
+titleTemplate: '%s | Legacy Investing Show Success Stories'
+description: >-
+  Grayson went from remote IT worker to $3,500/month profit with his first
+  Airbnb property near Austin, Texas. Learn how he negotiated a security deposit
+  for property improvements and achieved 75% occupancy within 3 months.
+date: 2025-10-06T00:00:00.000Z
+modifiedDate: 2026-01-23T00:00:00.000Z
 author: Preston Seo
-authorTitle: "Founder, Legacy Investing Show"
-authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
+authorTitle: 'Founder, Legacy Investing Show'
+authorCredentials: '2,000+ students trained, $10M+ student revenue generated'
 category: Success Story
-canonical: "https://www.legacyinvestingshow.com/blog/it-guy-75-percent-occupancy"
-
-# SEO Keyword Targeting
+canonical: 'https://www.legacyinvestingshow.com/blog/it-guy-75-percent-occupancy'
 seo:
-  primaryKeyword: "airbnb success story"
+  primaryKeyword: airbnb success story
   secondaryKeywords:
-    - "austin airbnb"
-    - "texas airbnb"
+    - austin airbnb
+    - texas airbnb
   longTailKeywords:
-    - "first airbnb property tips"
-  searchIntent: "informational"
-
-# Tags
+    - first airbnb property tips
+  searchIntent: informational
 tags:
   - airbnb arbitrage
   - rental arbitrage
@@ -29,100 +27,121 @@ tags:
   - case study
   - success story
   - short-term rental
-
-# Open Graph & Social
 image: /assets/images/blog/success-stories/grayson-it-worker-airbnb.jpg
-imageAlt: "How An IT Worker - Legacy Investing Show"
+imageAlt: How An IT Worker - Legacy Investing Show
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
 featured: false
-
-# Video Integration
-youtubeId: "gwXTDLGzlAE"
-
-# Multiple Schema Types for Rich Results
+youtubeId: gwXTDLGzlAE
 schema:
   - type: Article
-    headline: "How an IT Worker Built a $3,500/Month Airbnb with 75% Occupancy"
-    datePublished: "2026-03-06T00:00:00Z"
-    dateModified: "2026-01-23T00:00:00Z"
+    headline: 'How an IT Worker Built a $3,500/Month Airbnb with 75% Occupancy'
+    datePublished: '2026-03-06T00:00:00Z'
+    dateModified: '2026-01-23T00:00:00Z'
   - type: VideoObject
-    name: "How An IT Worker - Full Interview"
-    thumbnailUrl: "https://img.youtube.com/vi/gwXTDLGzlAE/maxresdefault.jpg"
-    embedUrl: "https://www.youtube.com/embed/gwXTDLGzlAE"
+    name: How An IT Worker - Full Interview
+    thumbnailUrl: 'https://img.youtube.com/vi/gwXTDLGzlAE/maxresdefault.jpg'
+    embedUrl: 'https://www.youtube.com/embed/gwXTDLGzlAE'
   - type: HowTo
-    name: "How to Build an Airbnb Business Like This Success Story"
-
-# Breadcrumbs
+    name: How to Build an Airbnb Business Like This Success Story
 breadcrumbs:
-  - name: "Home"
-    url: "/"
-  - name: "Blog"
-    url: "/blog"
-  - name: "Success Stories"
-    url: "/blog/category/success-stories"
-
-# Statistics (AI-crawler accessible, renders as stat cards)
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog
+  - name: Success Stories
+    url: /blog/category/success-stories
 statistics:
-  - value: "$3,500"
-    label: "Monthly Profit"
-    icon: "dollar"
-    context: "October peak month"
-    source: "Student Interview, October 2023"
-  - value: "75%"
-    label: "Occupancy Rate"
-    icon: "star"
-    context: "By month 3 (October)"
-  - value: "1"
-    label: "Property"
-    icon: "home"
-    context: "100-year-old renovated house"
-  - value: "6 months"
-    label: "Course to Launch"
-    icon: "clock"
-    context: "Joined October, live July"
-  - value: "$2,300"
-    label: "Security Deposit"
-    icon: "users"
-    context: "Reinvested into property"
-  - value: "250%"
-    label: "Profit Growth"
-    icon: "chart"
-    context: "$1K Sept to $3.5K Oct"
-
-# FAQ (FAQPage schema + accordion rendering)
+  - value: '$3,500'
+    label: Monthly Profit
+    icon: dollar
+    context: October peak month
+    source: 'Student Interview, October 2023'
+  - value: 75%
+    label: Occupancy Rate
+    icon: star
+    context: By month 3 (October)
+  - value: '1'
+    label: Property
+    icon: home
+    context: 100-year-old renovated house
+  - value: 6 months
+    label: Course to Launch
+    icon: clock
+    context: 'Joined October, live July'
+  - value: '$2,300'
+    label: Security Deposit
+    icon: users
+    context: Reinvested into property
+  - value: 250%
+    label: Profit Growth
+    icon: chart
+    context: $1K Sept to $3.5K Oct
 faq:
-  - question: "How much money can you make with your first Airbnb property?"
-    answer: "Grayson earned $1,000 profit in September and $3,500 profit in October with his first property near Austin, Texas. Results improved each month as the listing gained reviews and visibility, with 75% occupancy by the third month."
-  - question: "How long does it take to get your first Airbnb arbitrage property?"
-    answer: "Grayson joined Legacy Investing Show in October 2022 and went live with his first property in July 2023. He took a deliberate approach, spending about 6 months on the course and 2 months on setup. Most students can move faster if desired."
-  - question: "Can you do Airbnb arbitrage with a full-time job?"
-    answer: "Yes. Grayson works remotely in IT and studied the course modules during downtime. His remote work flexibility allowed him to learn at his own pace and be hands-on with his first property while maintaining his day job."
-  - question: "How do you convince a landlord to let you do Airbnb arbitrage?"
-    answer: "Grayson presented himself as a small business owner who turns properties into beautiful homes for traveling professionals. He met the landlord in person, was transparent about his intentions, offered frequent cleaning as a benefit, and gave the landlord freedom to check on the property anytime."
-  - question: "What startup costs are needed for Airbnb arbitrage?"
-    answer: "Grayson's main costs were the $2,300 security deposit (which he negotiated to reinvest into the property), first month's rent, furnishing costs, professional photography, and proper insurance. He also used a business credit card with 12 months no interest to cover initial rent payments."
-  - question: "Is it better to list on Airbnb or VRBO?"
-    answer: "Grayson found that the majority of his bookings came through VRBO, not Airbnb. He recommends listing on both platforms to maximize visibility and bookings, as different guests prefer different platforms."
-  - question: "How do you run numbers on an Airbnb arbitrage property?"
-    answer: "Grayson asked the owner about past utility bills to estimate costs, then added about 50% buffer for higher usage. He researched internet, pest control, and other recurring costs upfront before signing. He also checked what cut Airbnb and VRBO take from bookings."
-  - question: "What makes a property stand out on Airbnb?"
-    answer: "Grayson studied top performers in his area and noticed most had social gathering spaces like fire pits. He installed a gravel area with a fire pit and string lights, creating an outdoor space where guests could gather since he didn't have a pool or waterfront."
-  - question: "How important is proximity to downtown for Airbnb?"
-    answer: "Very important. Grayson's property is within walking distance of downtown, and multiple guests have commented they didn't even need a car. The walkability to coffee shops, restaurants, and entertainment is a major differentiator."
-  - question: "Is Legacy Investing Show worth it for beginners?"
-    answer: "Based on Grayson's results, the program provided valuable scripts for landlord negotiations, spreadsheets for analyzing deals, insurance recommendations, and team support for validating numbers. He achieved $3,500/month profit on his first property within 3 months of launching."
-
-# Table of Contents
+  - question: How much money can you make with your first Airbnb property?
+    answer: >-
+      Grayson earned $1,000 profit in September and $3,500 profit in October
+      with his first property near Austin, Texas. Results improved each month as
+      the listing gained reviews and visibility, with 75% occupancy by the third
+      month.
+  - question: How long does it take to get your first Airbnb arbitrage property?
+    answer: >-
+      Grayson joined Legacy Investing Show in October 2022 and went live with
+      his first property in July 2023. He took a deliberate approach, spending
+      about 6 months on the course and 2 months on setup. Most students can move
+      faster if desired.
+  - question: Can you do Airbnb arbitrage with a full-time job?
+    answer: >-
+      Yes. Grayson works remotely in IT and studied the course modules during
+      downtime. His remote work flexibility allowed him to learn at his own pace
+      and be hands-on with his first property while maintaining his day job.
+  - question: How do you convince a landlord to let you do Airbnb arbitrage?
+    answer: >-
+      Grayson presented himself as a small business owner who turns properties
+      into beautiful homes for traveling professionals. He met the landlord in
+      person, was transparent about his intentions, offered frequent cleaning as
+      a benefit, and gave the landlord freedom to check on the property anytime.
+  - question: What startup costs are needed for Airbnb arbitrage?
+    answer: >-
+      Grayson's main costs were the $2,300 security deposit (which he negotiated
+      to reinvest into the property), first month's rent, furnishing costs,
+      professional photography, and proper insurance. He also used a business
+      credit card with 12 months no interest to cover initial rent payments.
+  - question: Is it better to list on Airbnb or VRBO?
+    answer: >-
+      Grayson found that the majority of his bookings came through VRBO, not
+      Airbnb. He recommends listing on both platforms to maximize visibility and
+      bookings, as different guests prefer different platforms.
+  - question: How do you run numbers on an Airbnb arbitrage property?
+    answer: >-
+      Grayson asked the owner about past utility bills to estimate costs, then
+      added about 50% buffer for higher usage. He researched internet, pest
+      control, and other recurring costs upfront before signing. He also checked
+      what cut Airbnb and VRBO take from bookings.
+  - question: What makes a property stand out on Airbnb?
+    answer: >-
+      Grayson studied top performers in his area and noticed most had social
+      gathering spaces like fire pits. He installed a gravel area with a fire
+      pit and string lights, creating an outdoor space where guests could gather
+      since he didn't have a pool or waterfront.
+  - question: How important is proximity to downtown for Airbnb?
+    answer: >-
+      Very important. Grayson's property is within walking distance of downtown,
+      and multiple guests have commented they didn't even need a car. The
+      walkability to coffee shops, restaurants, and entertainment is a major
+      differentiator.
+  - question: Is Legacy Investing Show worth it for beginners?
+    answer: >-
+      Based on Grayson's results, the program provided valuable scripts for
+      landlord negotiations, spreadsheets for analyzing deals, insurance
+      recommendations, and team support for validating numbers. He achieved
+      $3,500/month profit on his first property within 3 months of launching.
 toc: true
 tocDepth: 3
-
-# Reading Time
-readingTime: "27 min read"
-wordCount: "5205"
+readingTime: 26 min read
+wordCount: '5033'
 ---
-
 **Grayson Nichols earns $3,500 per month in profit from his first Airbnb arbitrage property near Austin, Texas.** Working remotely as an IT professional, he joined Legacy Investing Show in October 2022 and went live with his property by July 2023. By October, his century-old renovated house achieved 75% occupancy with bookings extending as far out as April of the following year.
 
 This case study breaks down exactly how Grayson built his first Airbnb business, including his unique approach to landlord negotiation, the security deposit strategy that funded property improvements, and the amenity decisions that helped his listing compete without a pool or waterfront location.

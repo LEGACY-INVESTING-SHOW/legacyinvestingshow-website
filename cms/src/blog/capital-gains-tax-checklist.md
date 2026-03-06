@@ -142,8 +142,8 @@ relatedPosts:
     title: '1031 exchange vs standard deduction: Which Strategy Works Better in 2026?'
   - slug: best-tax-deductions-2025
     title: 'Best Tax Deductions 2025: Complete 2026 Guide to Lower Your Tax Bill'
-readingTime: 10 min read
-wordCount: '2172'
+readingTime: 12 min read
+wordCount: '2267'
 ---
 If you are planning to sell stock, crypto, business interests, or investment real estate, a capital gains tax checklist can prevent expensive surprises. Most tax pain comes from avoidable issues: wrong holding-period assumptions, missing cost basis support, no estimate for extra federal or state tax, and no plan for estimated payments.
 

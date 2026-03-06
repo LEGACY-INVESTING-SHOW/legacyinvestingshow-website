@@ -1,0 +1,394 @@
+{
+  "worksheets": [
+    {
+      "id": "W01",
+      "slug": "qbi-deduction-worksheet",
+      "title": "QBI Deduction Worksheet",
+      "badge": "Tax Strategy",
+      "description": "Organize business income, wage/property limits, SSTB risk, and phaseout assumptions before you estimate or defend a QBI deduction.",
+      "opening": [
+        "Most QBI mistakes happen because people skip the worksheet and jump straight to the answer they want.",
+        "This worksheet forces the ugly parts into the open: what counts as qualified income, where the phaseout risk shows up, and what support your CPA will need."
+      ],
+      "howTo": [
+        "Use this before you start arguing about the deduction amount. The job is to get the facts, thresholds, and weak assumptions in one place.",
+        "If the worksheet exposes SSTB risk, wage-limit friction, or messy entity splits, treat that as the point of the exercise, not a reason to keep guessing."
+      ],
+      "fieldGroups": [
+        {
+          "title": "Business and Filing Context",
+          "hint": "Start with the facts that control whether QBI is even on the table.",
+          "fields": [
+            {
+              "key": "filing_status",
+              "label": "Filing status",
+              "type": "text",
+              "placeholder": "Single, MFJ, MFS, or HOH"
+            },
+            {
+              "key": "entity_type",
+              "label": "Entity type and structure",
+              "type": "text",
+              "placeholder": "Schedule C, partnership, S corp, multiple entities"
+            },
+            {
+              "key": "sstb_status",
+              "label": "Is this an SSTB or partly SSTB?",
+              "type": "textarea",
+              "placeholder": "Write the service-business exposure and why"
+            }
+          ]
+        },
+        {
+          "title": "Income and Limitation Inputs",
+          "hint": "Write down the numbers that change the deduction, not just the result.",
+          "fields": [
+            {
+              "key": "qualified_business_income",
+              "label": "Estimated qualified business income",
+              "type": "text",
+              "placeholder": "Rough planning number is fine"
+            },
+            {
+              "key": "taxable_income_before_qbi",
+              "label": "Taxable income before QBI deduction",
+              "type": "text",
+              "placeholder": "Include spouse income if joint"
+            },
+            {
+              "key": "w2_wages",
+              "label": "W-2 wages relevant to the limitation",
+              "type": "text",
+              "placeholder": "If applicable"
+            },
+            {
+              "key": "ubia_property",
+              "label": "Qualified property / UBIA note",
+              "type": "textarea",
+              "placeholder": "List the property basis or why it may matter"
+            }
+          ]
+        },
+        {
+          "title": "Decision and Advisor Review",
+          "hint": "Write down the real pressure points before filing season.",
+          "fields": [
+            {
+              "key": "phaseout_risk",
+              "label": "Phaseout or threshold risk",
+              "type": "textarea",
+              "placeholder": "What income band are you close to crossing?"
+            },
+            {
+              "key": "documentation_gaps",
+              "label": "Documentation gaps",
+              "type": "textarea",
+              "placeholder": "What would be hard to support today?"
+            },
+            {
+              "key": "advisor_questions",
+              "label": "Questions for CPA or advisor",
+              "type": "textarea",
+              "placeholder": "List the things that need a real answer before you rely on the deduction"
+            }
+          ]
+        }
+      ],
+      "checklist": [
+        "Tie the worksheet back to the actual entity return and owner-level taxable income.",
+        "Write down whether SSTB treatment is clear or contested.",
+        "Keep the wage/property limitation support in the same folder as the worksheet."
+      ],
+      "advisorPacket": [
+        "Estimated QBI and taxable income inputs",
+        "SSTB determination notes",
+        "W-2 wages and qualified property support",
+        "Phaseout and limitation questions to resolve"
+      ],
+      "faq": [
+        {
+          "q": "Why use a worksheet if my software already estimates QBI?",
+          "a": "Because software can still produce a number from bad assumptions. The worksheet makes the controlling facts visible before you trust the output."
+        },
+        {
+          "q": "What usually breaks a QBI estimate?",
+          "a": "SSTB ambiguity, owner-level taxable income changes, and wage or property limits that were never documented clearly."
+        },
+        {
+          "q": "When should I fill this out?",
+          "a": "At midyear for planning and again before filing, especially if income moved or the entity structure changed."
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/qbi-deduction-for-high-earners",
+          "label": "QBI Deduction for High Earners"
+        },
+        {
+          "href": "/blog/how-is-qbi-deduction-calculated-for-s-corp",
+          "label": "How Is QBI Deduction Calculated for S Corp?"
+        },
+        {
+          "href": "/blog/qbi-deduction-phase-out-2025",
+          "label": "QBI Deduction Phaseout 2025"
+        }
+      ]
+    },
+    {
+      "id": "W02",
+      "slug": "s-corp-election-decision-worksheet",
+      "title": "S-Corp Election Decision Worksheet",
+      "badge": "Entity Strategy",
+      "description": "Write down tax savings, payroll reality, admin burden, and reasonable-salary assumptions before you elect S-corp treatment.",
+      "opening": [
+        "S-corp election conversations usually start with tax savings and end with admin pain. That is backward.",
+        "This worksheet is for deciding whether the election still makes sense after you account for payroll, reasonable salary, compliance work, and cash-flow reality."
+      ],
+      "howTo": [
+        "Use this before filing the election. The worksheet is supposed to surface the friction early, not after payroll is already live.",
+        "If the savings only work when the salary assumption is aggressive or the admin burden is ignored, write that down plainly."
+      ],
+      "fieldGroups": [
+        {
+          "title": "Current Business Snapshot",
+          "hint": "Start with what the business actually looks like now.",
+          "fields": [
+            {
+              "key": "current_entity",
+              "label": "Current entity / filing setup",
+              "type": "text",
+              "placeholder": "Single-member LLC, partnership, sole prop, etc."
+            },
+            {
+              "key": "net_income",
+              "label": "Expected annual net income",
+              "type": "text",
+              "placeholder": "Planning number"
+            },
+            {
+              "key": "owner_role",
+              "label": "What work does the owner actually perform?",
+              "type": "textarea",
+              "placeholder": "Sales, operations, delivery, management, etc."
+            }
+          ]
+        },
+        {
+          "title": "Tax and Payroll Assumptions",
+          "hint": "These assumptions decide whether the election is durable or fake.",
+          "fields": [
+            {
+              "key": "reasonable_salary",
+              "label": "Reasonable salary assumption",
+              "type": "text",
+              "placeholder": "What number are you using and why?"
+            },
+            {
+              "key": "projected_tax_savings",
+              "label": "Projected payroll/self-employment tax savings",
+              "type": "text",
+              "placeholder": "Estimate"
+            },
+            {
+              "key": "payroll_setup",
+              "label": "Payroll, filings, and bookkeeping readiness",
+              "type": "textarea",
+              "placeholder": "Who will run payroll, handle deposits, file forms, and keep the books clean?"
+            }
+          ]
+        },
+        {
+          "title": "Decision Pressure Test",
+          "hint": "Write the parts that would make you hesitate.",
+          "fields": [
+            {
+              "key": "admin_burden",
+              "label": "Admin burden or compliance friction",
+              "type": "textarea",
+              "placeholder": "What extra work or cost comes with the election?"
+            },
+            {
+              "key": "cashflow_risk",
+              "label": "Cash-flow risk or payroll risk",
+              "type": "textarea",
+              "placeholder": "What happens in a weak month?"
+            },
+            {
+              "key": "advisor_questions",
+              "label": "Questions for CPA or payroll advisor",
+              "type": "textarea",
+              "placeholder": "List the issues that need a real answer before filing"
+            }
+          ]
+        }
+      ],
+      "checklist": [
+        "Do not rely on tax savings without writing down the salary assumption that creates them.",
+        "Write down who owns payroll and compliance before the election is filed.",
+        "Keep the worksheet with any reasonable-salary support and payroll setup notes."
+      ],
+      "advisorPacket": [
+        "Current entity and income snapshot",
+        "Reasonable salary rationale",
+        "Projected savings and admin costs",
+        "Payroll/compliance readiness questions"
+      ],
+      "faq": [
+        {
+          "q": "What is the point of this worksheet if I already have an S-corp calculator?",
+          "a": "The calculator estimates savings. The worksheet tells you whether the election still makes sense after payroll, compliance, and cash-flow reality."
+        },
+        {
+          "q": "What makes this decision go bad most often?",
+          "a": "Aggressive salary assumptions, sloppy payroll execution, and treating the election like a tax trick instead of an operating change."
+        },
+        {
+          "q": "When should I use this?",
+          "a": "Before you file the election and again before payroll goes live if income or role assumptions changed."
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/s-corp-election-calculator",
+          "label": "S-Corp Election Calculator"
+        },
+        {
+          "href": "/blog/s-corp-election-checklist",
+          "label": "S-Corp Election Checklist"
+        },
+        {
+          "href": "/blog/s-corp-election-for-high-earners",
+          "label": "S-Corp Election for High Earners"
+        }
+      ]
+    },
+    {
+      "id": "W03",
+      "slug": "tax-loss-harvesting-worksheet",
+      "title": "Tax-Loss Harvesting Worksheet",
+      "badge": "Investing Tax",
+      "description": "Track positions, replacement trades, wash-sale risk, and gain-offset goals before you start harvesting losses in a taxable portfolio.",
+      "opening": [
+        "Tax-loss harvesting sounds simple until the wash-sale rule and the replacement trade start fighting each other.",
+        "This worksheet helps you write down the trade, the replacement, the expected tax use, and the parts of the plan most likely to blow up in execution."
+      ],
+      "howTo": [
+        "Use this before you place the trade, not after. The point is to decide what you are replacing and what tax effect you are actually targeting.",
+        "If the worksheet shows a wash-sale problem, unclear holding periods, or no real gain-offset use, stop and clean that up first."
+      ],
+      "fieldGroups": [
+        {
+          "title": "Position and Goal",
+          "hint": "Start with the trade you are considering and why.",
+          "fields": [
+            {
+              "key": "position_name",
+              "label": "Position or fund you may sell",
+              "type": "text",
+              "placeholder": "Ticker or holding name"
+            },
+            {
+              "key": "unrealized_loss",
+              "label": "Estimated unrealized loss",
+              "type": "text",
+              "placeholder": "Rough amount"
+            },
+            {
+              "key": "tax_goal",
+              "label": "Tax goal for this harvest",
+              "type": "textarea",
+              "placeholder": "Offset gains, build carryforward, rebalance, reduce concentration, etc."
+            }
+          ]
+        },
+        {
+          "title": "Replacement and Wash-Sale Review",
+          "hint": "Write down the part most people skip.",
+          "fields": [
+            {
+              "key": "replacement_security",
+              "label": "Replacement security or strategy",
+              "type": "text",
+              "placeholder": "What will you own instead?"
+            },
+            {
+              "key": "wash_sale_risk",
+              "label": "Wash-sale risk note",
+              "type": "textarea",
+              "placeholder": "Any automatic buys, spouse accounts, DRIPs, or recent purchases?"
+            },
+            {
+              "key": "holding_period_note",
+              "label": "Holding-period or timing note",
+              "type": "textarea",
+              "placeholder": "Anything about the trade timing that matters?"
+            }
+          ]
+        },
+        {
+          "title": "Expected Tax Use and Review",
+          "hint": "Write down what the harvested loss is actually for.",
+          "fields": [
+            {
+              "key": "offset_plan",
+              "label": "What gain or income will this loss offset?",
+              "type": "textarea",
+              "placeholder": "Expected gains this year, carryforward use, etc."
+            },
+            {
+              "key": "documentation_gaps",
+              "label": "Documentation gaps or trade-confirm issues",
+              "type": "textarea",
+              "placeholder": "What would make this hard to support later?"
+            },
+            {
+              "key": "advisor_questions",
+              "label": "Questions for advisor or tax planner",
+              "type": "textarea",
+              "placeholder": "List the things that need review before the trade executes"
+            }
+          ]
+        }
+      ],
+      "checklist": [
+        "Write down the replacement trade before you sell the loss position.",
+        "Check for wash-sale risk across automatic buys, spouse accounts, and related accounts.",
+        "Keep confirms, lot data, and the worksheet in the same folder."
+      ],
+      "advisorPacket": [
+        "Position and unrealized-loss summary",
+        "Replacement-trade plan",
+        "Wash-sale risk note",
+        "Expected gain-offset or carryforward use"
+      ],
+      "faq": [
+        {
+          "q": "Why use a worksheet if my brokerage already shows unrealized losses?",
+          "a": "Because the brokerage does not explain the replacement trade, the wash-sale exposure, or what tax purpose the harvest is actually serving."
+        },
+        {
+          "q": "What goes wrong most often?",
+          "a": "People chase the loss, forget the replacement, and create a wash-sale or a portfolio move they did not really want."
+        },
+        {
+          "q": "When should I use this worksheet?",
+          "a": "Before harvesting any loss that matters. If the trade is meaningful enough to celebrate, it is meaningful enough to document."
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/tax-loss-harvesting-calculator",
+          "label": "Tax-Loss Harvesting Calculator"
+        },
+        {
+          "href": "/tools/capital-gains-headroom-calculator",
+          "label": "Capital Gains Headroom Calculator"
+        },
+        {
+          "href": "/blog/tax-loss-harvesting-checklist",
+          "label": "Tax-Loss Harvesting Checklist"
+        }
+      ]
+    }
+  ]
+}

@@ -151,8 +151,8 @@ relatedPosts:
     title: >-
       401k Strategy Tax Implications: Complete 2026 Guide to Contributions,
       Withdrawals, and Bracket Control
-readingTime: 10 min read
-wordCount: '2182'
+readingTime: 12 min read
+wordCount: '2279'
 ---
 The sequence of returns risk vs taxable brokerage decision is one of the highest-impact retirement income choices you can make. It affects whether your plan survives bad markets in the first years after leaving work, and it affects how much tax drag you create while funding spending.
 

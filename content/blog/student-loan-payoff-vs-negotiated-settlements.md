@@ -149,8 +149,8 @@ relatedPosts:
     title: 'Credit Score Optimization: Improve Your Score Fast'
   - slug: debt-avalanche-method
     title: 'Debt Avalanche Method: The Fastest Way to Pay Off Debt'
-readingTime: 9 min read
-wordCount: '2088'
+readingTime: 11 min read
+wordCount: '2165'
 ---
 Most borrowers evaluating student loan payoff vs negotiated settlements are trying to solve three problems at once: reduce financial stress, minimize lifetime cost, and protect future options like a mortgage or business credit. This is a constrained decision, not a moral one. Bankrate has noted that settlement is difficult and usually requires strong hardship documentation plus persistence. LendEDU-style guidance emphasizes document prep, contact strategy, and fee comparison before you negotiate. Student Loan Borrower Assistance explains that federal compromise pathways are often most realistic after default and when you can offer meaningful cash.
 

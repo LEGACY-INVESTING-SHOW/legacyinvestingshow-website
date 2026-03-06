@@ -133,8 +133,8 @@ relatedPosts:
     title: 'Asset Allocation Strategies by Age: How to Balance Your Portfolio'
   - slug: crowdfunded-real-estate
     title: 'Crowdfunded Real Estate: Invest in Property with $500'
-readingTime: 10 min read
-wordCount: '2143'
+readingTime: 12 min read
+wordCount: '2231'
 ---
 If you are deciding between funds in a taxable brokerage account, **etf vs mutual fund tax efficiency** is not a small technical detail. It can quietly affect your net return every year through dividend taxes, capital gains distributions, and timing of taxable events.
 

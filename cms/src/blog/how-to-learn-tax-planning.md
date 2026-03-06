@@ -135,8 +135,8 @@ relatedPosts:
     title: >-
       Best Roth Conversion Strategy Calculator: Practical Guide, Break-Even
       Math, and Real Tax Examples
-readingTime: 10 min read
-wordCount: '2099'
+readingTime: 11 min read
+wordCount: '2189'
 ---
 Tax planning is not about hunting random deductions in March. It is a year-round system for deciding where income lands, when expenses are recognized, and which accounts hold which assets. If you are asking how to learn tax planning, treat it like learning cash-flow management: you need a repeatable process, a few high-impact levers, and a calendar.
 

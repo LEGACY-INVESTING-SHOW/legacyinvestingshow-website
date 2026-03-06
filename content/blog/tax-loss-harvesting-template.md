@@ -138,8 +138,8 @@ relatedPosts:
     title: >-
       Asset Allocation Tax Implications: Complete 2026 Guide for After-Tax
       Portfolio Returns
-readingTime: 9 min read
-wordCount: '2001'
+readingTime: 11 min read
+wordCount: '2100'
 ---
 If you want a repeatable way to lower taxes in a taxable brokerage account, this **tax loss harvesting template** turns a vague concept into a decision system. Instead of randomly selling losers in December, you define thresholds, replacement rules, and documentation steps you can execute in minutes.
 

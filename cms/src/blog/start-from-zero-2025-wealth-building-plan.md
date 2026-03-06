@@ -1,33 +1,32 @@
 ---
-# Core SEO Fields
-title: "If I Started From Zero in 2025: My Simple Plan to Build Wealth"
-titleTemplate: "%s | Legacy Investing Show"
-description: "A practical 2025 wealth-building blueprint: why savings accounts fail, the 3 assets to buy immediately (S&P 500, Bitcoin, cash flow real estate), compound growth projections, and the exact steps to start investing today."
-date: 2026-01-24
-modifiedDate: 2026-01-24
+title: 'If I Started From Zero in 2025: My Simple Plan to Build Wealth'
+titleTemplate: '%s | Legacy Investing Show'
+description: >-
+  A practical 2025 wealth-building blueprint: why savings accounts fail, the 3
+  assets to buy immediately (S&P 500, Bitcoin, cash flow real estate), compound
+  growth projections, and the exact steps to start investing today.
+date: 2026-01-24T00:00:00.000Z
+modifiedDate: 2026-01-24T00:00:00.000Z
 author: Preston Seo
-authorTitle: "Founder, Legacy Investing Show"
-authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
+authorTitle: 'Founder, Legacy Investing Show'
+authorCredentials: '2,000+ students trained, $10M+ student revenue generated'
 category: Investing Strategy
-canonical: "https://www.legacyinvestingshow.com/blog/start-from-zero-2025-wealth-building-plan"
-
-# SEO Keyword Targeting
+canonical: >-
+  https://www.legacyinvestingshow.com/blog/start-from-zero-2025-wealth-building-plan
 seo:
-  primaryKeyword: "how to build wealth from zero"
+  primaryKeyword: how to build wealth from zero
   secondaryKeywords:
-    - "wealth building 2025"
-    - "best investments 2025"
-    - "compound growth investing"
-    - "passive income strategy"
+    - wealth building 2025
+    - best investments 2025
+    - compound growth investing
+    - passive income strategy
   longTailKeywords:
-    - "how to start investing with no money"
-    - "best way to build wealth in your 20s 30s"
-    - "should I invest in bitcoin or index funds"
-    - "how to build passive income from scratch"
-  searchIntent: "informational"
-  targetSnippet: "how to build wealth from nothing"
-
-# Tags (exact match keywords)
+    - how to start investing with no money
+    - best way to build wealth in your 20s 30s
+    - should I invest in bitcoin or index funds
+    - how to build passive income from scratch
+  searchIntent: informational
+  targetSnippet: how to build wealth from nothing
 tags:
   - wealth building
   - investing strategy
@@ -39,120 +38,147 @@ tags:
   - passive income
   - financial freedom
   - beginner investing
-
-# Open Graph & Social
 image: /assets/images/blog/wealth-building-2025-plan.jpg
-imageAlt: "Wealth building strategy showing compound growth from zero to financial freedom in 2025"
+imageAlt: >-
+  Wealth building strategy showing compound growth from zero to financial
+  freedom in 2025
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
 featured: true
-
-# Video Integration
-youtubeId: "n-ByJmt065M"
-videoDuration: "PT18M45S"
-
-# Multiple Schema Types for Rich Results
+youtubeId: n-ByJmt065M
+videoDuration: PT18M45S
 schema:
   - type: Article
-    headline: "If I Started From Zero in 2025: My Simple Plan to Build Wealth"
-    datePublished: "2026-01-24T00:00:00Z"
-    dateModified: "2026-01-24T00:00:00Z"
+    headline: 'If I Started From Zero in 2025: My Simple Plan to Build Wealth'
+    datePublished: '2026-01-24T00:00:00Z'
+    dateModified: '2026-01-24T00:00:00Z'
   - type: VideoObject
-    name: "If I Started From Zero in 2025: My Simple Plan to Build Wealth"
-    description: "A complete wealth-building blueprint covering index funds, Bitcoin, and real estate cash flow strategies"
-    thumbnailUrl: "https://img.youtube.com/vi/n-ByJmt065M/maxresdefault.jpg"
-    uploadDate: "2025-01-15"
-    duration: "PT18M45S"
-    embedUrl: "https://www.youtube.com/embed/n-ByJmt065M"
+    name: 'If I Started From Zero in 2025: My Simple Plan to Build Wealth'
+    description: >-
+      A complete wealth-building blueprint covering index funds, Bitcoin, and
+      real estate cash flow strategies
+    thumbnailUrl: 'https://img.youtube.com/vi/n-ByJmt065M/maxresdefault.jpg'
+    uploadDate: '2025-01-15'
+    duration: PT18M45S
+    embedUrl: 'https://www.youtube.com/embed/n-ByJmt065M'
   - type: HowTo
-    name: "How to Build Wealth Starting From Zero in 2025"
-    estimatedCost: "$1,000 minimum to start"
-    totalTime: "20 years for significant wealth"
+    name: How to Build Wealth Starting From Zero in 2025
+    estimatedCost: '$1,000 minimum to start'
+    totalTime: 20 years for significant wealth
   - type: FAQPage
     mainEntity:
-      - question: "What is the best investment to start with in 2025?"
-        answer: "Start with a low-cost S&P 500 index fund like VTI or SPY. These provide instant diversification across 500+ companies with historical returns averaging 10% annually."
-
-# Breadcrumbs for Navigation Schema
+      - question: What is the best investment to start with in 2025?
+        answer: >-
+          Start with a low-cost S&P 500 index fund like VTI or SPY. These
+          provide instant diversification across 500+ companies with historical
+          returns averaging 10% annually.
 breadcrumbs:
-  - name: "Home"
-    url: "/"
-  - name: "Blog"
-    url: "/blog"
-  - name: "Investing Strategy"
-    url: "/blog/category/investing-strategy"
-  - name: "Start From Zero 2025"
-    url: "/blog/start-from-zero-2025-wealth-building-plan"
-
-# Statistics (AI-crawler accessible, renders as stat cards)
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog
+  - name: Investing Strategy
+    url: /blog/category/investing-strategy
+  - name: Start From Zero 2025
+    url: /blog/start-from-zero-2025-wealth-building-plan
 statistics:
-  - value: "$760,000"
-    label: "20-Year Compound Growth"
-    icon: "chart"
-    context: "$1,000/month at 10% returns"
-    source: "Compound interest calculation"
+  - value: '$760,000'
+    label: 20-Year Compound Growth
+    icon: chart
+    context: '$1,000/month at 10% returns'
+    source: Compound interest calculation
     highlighted: true
-  - value: "10%"
-    label: "S&P 500 Historical Return"
-    icon: "percent"
-    context: "Average annual return since 1926"
-  - value: "21 Million"
-    label: "Bitcoin Supply Cap"
-    icon: "bitcoin"
-    context: "Maximum coins ever created"
-  - value: "3-9%"
-    label: "Real Inflation Rate"
-    icon: "warning"
-    context: "vs 0.1% savings account"
-  - value: "$56,000"
-    label: "Dustin's Monthly Revenue"
-    icon: "dollar"
-    context: "Student success story"
-  - value: "50/25/25"
-    label: "Recommended Allocation"
-    icon: "pie"
-    context: "Index/Bitcoin/Real Estate"
-
-# FAQ (FAQPage schema + accordion rendering)
+  - value: 10%
+    label: S&P 500 Historical Return
+    icon: percent
+    context: Average annual return since 1926
+  - value: 21 Million
+    label: Bitcoin Supply Cap
+    icon: bitcoin
+    context: Maximum coins ever created
+  - value: 3-9%
+    label: Real Inflation Rate
+    icon: warning
+    context: vs 0.1% savings account
+  - value: '$56,000'
+    label: Dustin's Monthly Revenue
+    icon: dollar
+    context: Student success story
+  - value: 50/25/25
+    label: Recommended Allocation
+    icon: pie
+    context: Index/Bitcoin/Real Estate
 faq:
-  - question: "What is the best investment to build wealth from zero in 2025?"
-    answer: "Start with low-cost S&P 500 index funds like VTI or SPY. They provide instant diversification across 500+ companies with historical 10% annual returns. Once you have an emergency fund and no high-interest debt, add Bitcoin (25%) and real estate cash flow (25%) to your portfolio."
-  - question: "How much can $1,000 per month grow with compound interest?"
-    answer: "Investing $1,000 monthly at 10% annual returns grows to approximately $76,000 after 5 years, $200,000 after 10 years, $400,000 after 15 years, and $760,000 after 20 years. The power of compound growth accelerates dramatically over time."
-  - question: "Why do savings accounts lose money to inflation?"
-    answer: "Most savings accounts offer 0.1% interest while real inflation runs 3-9% annually. This means your purchasing power decreases every year. Money sitting in a savings account is actually losing value, making investing essential for wealth preservation."
-  - question: "Should I pay off debt before investing?"
-    answer: "Yes, prioritize paying off high-interest debt (especially credit cards at 15-24% APR) before investing. The guaranteed 'return' from eliminating debt often exceeds investment returns. However, you can invest while paying off low-interest debt like mortgages."
-  - question: "What is the recommended investment allocation for beginners?"
-    answer: "A balanced approach for 2025: 50% in S&P 500 index funds (stable foundation), 25% in Bitcoin (growth potential with higher risk), and 25% in cash-flowing real estate (passive income). Adjust based on your risk tolerance and age."
-  - question: "Is Bitcoin a good investment in 2025?"
-    answer: "Bitcoin offers significant growth potential due to its fixed 21 million supply cap (digital scarcity) and increasing institutional adoption. Treat it as a long-term hold (5-10+ years) and never invest more than you can afford to lose. Use cold storage for security."
-  - question: "How do I start investing with no experience?"
-    answer: "Step 1: Open a brokerage account (Fidelity, Schwab, or Vanguard). Step 2: Set up automatic monthly transfers. Step 3: Buy a total market index fund like VTI. Step 4: Don't check daily. Step 5: Increase contributions over time. The key is starting, not perfecting."
-  - question: "What is house hacking for real estate investing?"
-    answer: "House hacking means buying a property, living in one unit, and renting out others to cover your mortgage. It's the most accessible way to start real estate investing because you can use owner-occupied financing with lower down payments (3-5% instead of 20-25%)."
-  - question: "How much emergency fund should I have before investing?"
-    answer: "Build 3-6 months of living expenses in a high-yield savings account before investing aggressively. This emergency fund protects you from selling investments during market downturns to cover unexpected expenses."
-  - question: "What are the biggest mistakes new investors make?"
-    answer: "The three biggest mistakes: 1) Checking investments daily and panic selling during dips, 2) Trying to time the market instead of consistently investing, 3) Not automating contributions and relying on willpower. Set it and forget it for best results."
-
-# Table of Contents
+  - question: What is the best investment to build wealth from zero in 2025?
+    answer: >-
+      Start with low-cost S&P 500 index funds like VTI or SPY. They provide
+      instant diversification across 500+ companies with historical 10% annual
+      returns. Once you have an emergency fund and no high-interest debt, add
+      Bitcoin (25%) and real estate cash flow (25%) to your portfolio.
+  - question: 'How much can $1,000 per month grow with compound interest?'
+    answer: >-
+      Investing $1,000 monthly at 10% annual returns grows to approximately
+      $76,000 after 5 years, $200,000 after 10 years, $400,000 after 15 years,
+      and $760,000 after 20 years. The power of compound growth accelerates
+      dramatically over time.
+  - question: Why do savings accounts lose money to inflation?
+    answer: >-
+      Most savings accounts offer 0.1% interest while real inflation runs 3-9%
+      annually. This means your purchasing power decreases every year. Money
+      sitting in a savings account is actually losing value, making investing
+      essential for wealth preservation.
+  - question: Should I pay off debt before investing?
+    answer: >-
+      Yes, prioritize paying off high-interest debt (especially credit cards at
+      15-24% APR) before investing. The guaranteed 'return' from eliminating
+      debt often exceeds investment returns. However, you can invest while
+      paying off low-interest debt like mortgages.
+  - question: What is the recommended investment allocation for beginners?
+    answer: >-
+      A balanced approach for 2025: 50% in S&P 500 index funds (stable
+      foundation), 25% in Bitcoin (growth potential with higher risk), and 25%
+      in cash-flowing real estate (passive income). Adjust based on your risk
+      tolerance and age.
+  - question: Is Bitcoin a good investment in 2025?
+    answer: >-
+      Bitcoin offers significant growth potential due to its fixed 21 million
+      supply cap (digital scarcity) and increasing institutional adoption. Treat
+      it as a long-term hold (5-10+ years) and never invest more than you can
+      afford to lose. Use cold storage for security.
+  - question: How do I start investing with no experience?
+    answer: >-
+      Step 1: Open a brokerage account (Fidelity, Schwab, or Vanguard). Step 2:
+      Set up automatic monthly transfers. Step 3: Buy a total market index fund
+      like VTI. Step 4: Don't check daily. Step 5: Increase contributions over
+      time. The key is starting, not perfecting.
+  - question: What is house hacking for real estate investing?
+    answer: >-
+      House hacking means buying a property, living in one unit, and renting out
+      others to cover your mortgage. It's the most accessible way to start real
+      estate investing because you can use owner-occupied financing with lower
+      down payments (3-5% instead of 20-25%).
+  - question: How much emergency fund should I have before investing?
+    answer: >-
+      Build 3-6 months of living expenses in a high-yield savings account before
+      investing aggressively. This emergency fund protects you from selling
+      investments during market downturns to cover unexpected expenses.
+  - question: What are the biggest mistakes new investors make?
+    answer: >-
+      The three biggest mistakes: 1) Checking investments daily and panic
+      selling during dips, 2) Trying to time the market instead of consistently
+      investing, 3) Not automating contributions and relying on willpower. Set
+      it and forget it for best results.
 toc: true
 tocDepth: 3
-
-# Internal Linking Suggestions
 relatedPosts:
-  - slug: "getting-started-airbnb-arbitrage"
-    title: "Complete Guide to Airbnb Arbitrage"
-  - slug: "gary-marketing-executive-35k-month"
-    title: "How Gary Built $35K/Month Airbnb Business"
-
-# Reading Time
-readingTime: "15 min read"
-wordCount: "3500"
+  - slug: getting-started-airbnb-arbitrage
+    title: Complete Guide to Airbnb Arbitrage
+  - slug: gary-marketing-executive-35k-month
+    title: How Gary Built $35K/Month Airbnb Business
+readingTime: 20 min read
+wordCount: '3898'
 ---
-
 **If you lost everything tomorrow and had to rebuild from scratch, what would you actually do?** Not theoretical advice from 1982 finance books, but what works right now in 2025. This blueprint covers exactly how to build wealth from zero using three proven asset classes, the compound growth math that makes it possible, and the prerequisites you need before investing a single dollar.
 
 This isn't about getting rich quick. It's about the boring, proven strategies that actually work when you commit to them for 10-20 years. Students following similar principles have built $10,000/month to $56,000/month cash flow businesses. Here's the complete playbook.

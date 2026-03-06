@@ -143,8 +143,8 @@ relatedPosts:
     title: 'Business Credit Building: Separate Your Personal & Business Finances'
   - slug: business-succession-planning
     title: 'Business Succession Planning: How to Transfer Ownership'
-readingTime: 9 min read
-wordCount: '2007'
+readingTime: 11 min read
+wordCount: '2139'
 ---
 If you're searching **how to find operating agreement for llc**, you usually have one of three urgent problems: a bank asked for it, a partner dispute exposed gaps, or you are preparing tax and legal diligence for financing, sale, or succession. The operating agreement is the LLC's internal rulebook for ownership, voting, distributions, manager authority, and transfer rights. Even when your state does not require public filing, lenders, CPAs, attorneys, and buyers often treat it as a core control document.
 

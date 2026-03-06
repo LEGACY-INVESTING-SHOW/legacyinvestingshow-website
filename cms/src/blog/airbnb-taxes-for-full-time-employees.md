@@ -146,8 +146,8 @@ relatedPosts:
     title: >-
       How Much Are Airbnb Taxes for Guests: Complete 2026 Guide for US Travelers
       and Hosts
-readingTime: 10 min read
-wordCount: '2243'
+readingTime: 12 min read
+wordCount: '2347'
 ---
 If you have a W-2 job and run a short-term rental on the side, airbnb taxes for full time employees can get complicated quickly. Your paycheck is handled through payroll withholding, but hosting income usually is not. That mismatch is where penalties, missed deductions, and cash-flow stress start.
 

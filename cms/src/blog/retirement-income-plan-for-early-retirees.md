@@ -139,8 +139,8 @@ relatedPosts:
     title: >-
       401k Strategy for Beginners: Complete 2026 Guide to Matching, Taxes, and
       Contribution Decisions
-readingTime: 9 min read
-wordCount: '1925'
+readingTime: 11 min read
+wordCount: '2050'
 ---
 A retirement income plan for early retirees has to do more than generate monthly cash. It has to survive market drawdowns, inflation, healthcare cost shocks, and tax law changes over a 35 to 45 year timeline. If you retire at 50 or 55, you are not just replacing a paycheck. You are designing a flexible financial system.
 

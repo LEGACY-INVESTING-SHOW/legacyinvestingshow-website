@@ -146,8 +146,8 @@ relatedPosts:
       Portfolio You Can Stick With
   - slug: asset-allocation-for-busy-professionals
     title: 'Asset Allocation for Busy Professionals: Complete 2026 Guide'
-readingTime: 8 min read
-wordCount: '1810'
+readingTime: 10 min read
+wordCount: '1926'
 ---
 Asset allocation for entrepreneurs is different from standard retirement advice because your business is already a large, concentrated risk position. If your company slows down in a recession, your salary, equity value, and future cash flow can all decline at the same time. That is why your portfolio cannot be designed in isolation.
 

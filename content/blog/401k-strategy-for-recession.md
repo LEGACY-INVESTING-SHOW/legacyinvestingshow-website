@@ -145,8 +145,8 @@ relatedPosts:
     title: >-
       401k Strategy Tax Implications: Complete 2026 Guide to Contributions,
       Withdrawals, and Bracket Control
-readingTime: 10 min read
-wordCount: '2167'
+readingTime: 12 min read
+wordCount: '2270'
 ---
 A practical 401k strategy for recession planning is not about predicting the next GDP print. It is about setting rules you can follow when markets are red, headlines are loud, and your account balance is temporarily lower. In 2026, many US savers are balancing inflation uncertainty, rate-cycle shifts, and job-market variability. That mix can lead to expensive decisions: stopping contributions, selling after losses, or taking plan loans without understanding the downside.
 

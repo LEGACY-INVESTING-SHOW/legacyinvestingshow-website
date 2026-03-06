@@ -1,28 +1,28 @@
 ---
-# Core SEO Fields
-title: "How Kamari Turned a Backyard RV into $3,000/Month Airbnb Profit (2026 Case Study)"
-titleTemplate: "%s | Legacy Investing Show Success Stories"
-description: "Kamari spent $50,000 to place a luxury RV in her Florida backyard and now earns $3,000/month. Plus, she transformed a destroyed Puerto Rico warehouse into a $2,000/month Airbnb for just $25,000. Learn her house hacking secrets."
-date: 2026-02-10
-modifiedDate: 2026-01-23
+title: >-
+  How Kamari Turned a Backyard RV into $3,000/Month Airbnb Profit (2026 Case
+  Study)
+titleTemplate: '%s | Legacy Investing Show Success Stories'
+description: >-
+  Kamari spent $50,000 to place a luxury RV in her Florida backyard and now
+  earns $3,000/month. Plus, she transformed a destroyed Puerto Rico warehouse
+  into a $2,000/month Airbnb for just $25,000. Learn her house hacking secrets.
+date: 2026-02-10T00:00:00.000Z
+modifiedDate: 2026-01-23T00:00:00.000Z
 author: Preston Seo
-authorTitle: "Founder, Legacy Investing Show"
-authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
+authorTitle: 'Founder, Legacy Investing Show'
+authorCredentials: '2,000+ students trained, $10M+ student revenue generated'
 category: Success Story
-canonical: "https://www.legacyinvestingshow.com/blog/backyard-rv-3k-month-airbnb"
-
-# SEO Keyword Targeting
+canonical: 'https://www.legacyinvestingshow.com/blog/backyard-rv-3k-month-airbnb'
 seo:
-  primaryKeyword: "airbnb success story"
+  primaryKeyword: airbnb success story
   secondaryKeywords:
-    - "short-term rental business"
-    - "florida airbnb"
+    - short-term rental business
+    - florida airbnb
   longTailKeywords:
-    - "how much can you make with airbnb"
-    - "is airbnb arbitrage worth it"
-  searchIntent: "informational"
-
-# Tags
+    - how much can you make with airbnb
+    - is airbnb arbitrage worth it
+  searchIntent: informational
 tags:
   - airbnb arbitrage
   - rental arbitrage
@@ -30,100 +30,129 @@ tags:
   - case study
   - success story
   - short-term rental
-
-# Open Graph & Social
 image: /assets/images/blog/success-stories/kamari-backyard-rv.jpg
-imageAlt: "How Kamari Turned a Backyard RV into $3,000/Month Airbnb Profit (2026 Case Study) - Legacy Investing Show"
+imageAlt: >-
+  How Kamari Turned a Backyard RV into $3,000/Month Airbnb Profit (2026 Case
+  Study) - Legacy Investing Show
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
 featured: false
-
-# Video Integration
-youtubeId: "txiaDbHk2D8"
-
-# Multiple Schema Types for Rich Results
+youtubeId: txiaDbHk2D8
 schema:
   - type: Article
-    headline: "How Kamari Turned a Backyard RV into $3,000/Month Airbnb Profit (2026 Case Study)"
-    datePublished: "2026-02-10T00:00:00Z"
-    dateModified: "2026-01-23T00:00:00Z"
+    headline: >-
+      How Kamari Turned a Backyard RV into $3,000/Month Airbnb Profit (2026 Case
+      Study)
+    datePublished: '2026-02-10T00:00:00Z'
+    dateModified: '2026-01-23T00:00:00Z'
   - type: VideoObject
-    name: "How Kamari Turned a Backyard RV into $3,000/Month Airbnb Profit (2026 Case Study) - Full Interview"
-    thumbnailUrl: "https://img.youtube.com/vi/txiaDbHk2D8/maxresdefault.jpg"
-    embedUrl: "https://www.youtube.com/embed/txiaDbHk2D8"
+    name: >-
+      How Kamari Turned a Backyard RV into $3,000/Month Airbnb Profit (2026 Case
+      Study) - Full Interview
+    thumbnailUrl: 'https://img.youtube.com/vi/txiaDbHk2D8/maxresdefault.jpg'
+    embedUrl: 'https://www.youtube.com/embed/txiaDbHk2D8'
   - type: HowTo
-    name: "How to Build an Airbnb Business Like This Success Story"
-
-# Breadcrumbs
+    name: How to Build an Airbnb Business Like This Success Story
 breadcrumbs:
-  - name: "Home"
-    url: "/"
-  - name: "Blog"
-    url: "/blog"
-  - name: "Success Stories"
-    url: "/blog/category/success-stories"
-
-# Statistics (AI-crawler accessible, renders as stat cards)
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog
+  - name: Success Stories
+    url: /blog/category/success-stories
 statistics:
-  - value: "$5,000"
-    label: "Monthly Cash Flow"
-    icon: "dollar"
-    context: "Combined from 2 properties"
-    source: "Student Interview, 2024"
-  - value: "4"
-    label: "Total Units"
-    icon: "home"
-    context: "2 short-term rentals active"
-  - value: "7 Years"
-    label: "Experience"
-    icon: "clock"
-    context: "House hacking since 2017"
-  - value: "2 hrs"
-    label: "Weekly Management"
-    icon: "users"
-    context: "After firing PM company"
-  - value: "$50,000"
-    label: "RV Setup Cost"
-    icon: "star"
-    context: "RV + site preparation"
-  - value: "$25,000"
-    label: "Warehouse Renovation"
-    icon: "star"
-    context: "Puerto Rico property"
-
-# FAQ (FAQPage schema + accordion rendering)
+  - value: '$5,000'
+    label: Monthly Cash Flow
+    icon: dollar
+    context: Combined from 2 properties
+    source: 'Student Interview, 2024'
+  - value: '4'
+    label: Total Units
+    icon: home
+    context: 2 short-term rentals active
+  - value: 7 Years
+    label: Experience
+    icon: clock
+    context: House hacking since 2017
+  - value: 2 hrs
+    label: Weekly Management
+    icon: users
+    context: After firing PM company
+  - value: '$50,000'
+    label: RV Setup Cost
+    icon: star
+    context: RV + site preparation
+  - value: '$25,000'
+    label: Warehouse Renovation
+    icon: star
+    context: Puerto Rico property
 faq:
-  - question: "How much does it cost to start a backyard Airbnb?"
-    answer: "Kamari invested approximately $50,000 total to set up her backyard RV Airbnb in Florida, which includes buying the RV and preparing the space. This investment generates $2,000-$3,000 per month in profit, providing an ROI within 18-25 months."
-  - question: "Can you put an RV in your backyard and rent it on Airbnb?"
-    answer: "Yes, but you need land with no HOA restrictions. Kamari purchased a home with spare land and no HOA, allowing her to place a luxury RV in a wooded section of her backyard. The secluded, wooded setting makes it feel like a private retreat while being centrally located."
-  - question: "Is a tiny home Airbnb profitable?"
-    answer: "Yes. Kamari's RV generates $2,000-$3,000/month in profit. Tiny homes and RVs tap into the growing demand for unique, affordable accommodations. The key advantages are lower setup costs compared to traditional properties and the ability to add them to existing land you own."
-  - question: "How can you make money from your backyard?"
-    answer: "Kamari uses multiple strategies: placing a luxury RV for short-term rental ($3,000/month), renting her pool and backyard for events when she doesn't have Airbnb guests, and using the space for film productions. She maximizes every asset available to generate income."
-  - question: "How long does it take to manage Airbnb properties?"
-    answer: "Kamari manages multiple properties in approximately 2 hours per week using automation tools like Price Labs for dynamic pricing. She fired her property management company and now achieves better results with less time investment by training her own cleaning team."
-  - question: "Can you turn a destroyed building into an Airbnb?"
-    answer: "Yes. Kamari transformed a completely destroyed warehouse in Puerto Rico into a two-story Airbnb apartment for approximately $25,000 in renovation costs. The property now generates $2,000/month in profit. Her husband's construction skills helped reduce costs significantly."
-  - question: "What is house hacking with Airbnb?"
-    answer: "House hacking means living in a property while renting out part of it to offset your mortgage. Kamari has been house hacking for 7 years, purchasing homes with mother-in-law suites or layouts that allow her to add rental units while living on the property."
-  - question: "What amenities should a backyard Airbnb have?"
-    answer: "Kamari's backyard RV includes a hot tub (doubles as a pool in warm weather), bikes for nearby trails at a former golf course, and a grill. She chose amenities that match the secluded, wooded location and encourage outdoor activities."
-  - question: "Is Legacy Investing Show worth it for beginners?"
-    answer: "Kamari followed Preston's content for a while before joining, noting that he provided so much valuable information for free that she knew the paid program would deliver even more value. She advises not sitting on the sidelines and postponing your new life."
-  - question: "How do you make money during Airbnb slow seasons?"
-    answer: "Kamari uses her properties for events and film productions when she doesn't have Airbnb guests. She also lists on multiple platforms including event rental sites. Her friends constantly asked to use her pool and backyard for free, so she monetized that demand."
-
-# Table of Contents
+  - question: How much does it cost to start a backyard Airbnb?
+    answer: >-
+      Kamari invested approximately $50,000 total to set up her backyard RV
+      Airbnb in Florida, which includes buying the RV and preparing the space.
+      This investment generates $2,000-$3,000 per month in profit, providing an
+      ROI within 18-25 months.
+  - question: Can you put an RV in your backyard and rent it on Airbnb?
+    answer: >-
+      Yes, but you need land with no HOA restrictions. Kamari purchased a home
+      with spare land and no HOA, allowing her to place a luxury RV in a wooded
+      section of her backyard. The secluded, wooded setting makes it feel like a
+      private retreat while being centrally located.
+  - question: Is a tiny home Airbnb profitable?
+    answer: >-
+      Yes. Kamari's RV generates $2,000-$3,000/month in profit. Tiny homes and
+      RVs tap into the growing demand for unique, affordable accommodations. The
+      key advantages are lower setup costs compared to traditional properties
+      and the ability to add them to existing land you own.
+  - question: How can you make money from your backyard?
+    answer: >-
+      Kamari uses multiple strategies: placing a luxury RV for short-term rental
+      ($3,000/month), renting her pool and backyard for events when she doesn't
+      have Airbnb guests, and using the space for film productions. She
+      maximizes every asset available to generate income.
+  - question: How long does it take to manage Airbnb properties?
+    answer: >-
+      Kamari manages multiple properties in approximately 2 hours per week using
+      automation tools like Price Labs for dynamic pricing. She fired her
+      property management company and now achieves better results with less time
+      investment by training her own cleaning team.
+  - question: Can you turn a destroyed building into an Airbnb?
+    answer: >-
+      Yes. Kamari transformed a completely destroyed warehouse in Puerto Rico
+      into a two-story Airbnb apartment for approximately $25,000 in renovation
+      costs. The property now generates $2,000/month in profit. Her husband's
+      construction skills helped reduce costs significantly.
+  - question: What is house hacking with Airbnb?
+    answer: >-
+      House hacking means living in a property while renting out part of it to
+      offset your mortgage. Kamari has been house hacking for 7 years,
+      purchasing homes with mother-in-law suites or layouts that allow her to
+      add rental units while living on the property.
+  - question: What amenities should a backyard Airbnb have?
+    answer: >-
+      Kamari's backyard RV includes a hot tub (doubles as a pool in warm
+      weather), bikes for nearby trails at a former golf course, and a grill.
+      She chose amenities that match the secluded, wooded location and encourage
+      outdoor activities.
+  - question: Is Legacy Investing Show worth it for beginners?
+    answer: >-
+      Kamari followed Preston's content for a while before joining, noting that
+      he provided so much valuable information for free that she knew the paid
+      program would deliver even more value. She advises not sitting on the
+      sidelines and postponing your new life.
+  - question: How do you make money during Airbnb slow seasons?
+    answer: >-
+      Kamari uses her properties for events and film productions when she
+      doesn't have Airbnb guests. She also lists on multiple platforms including
+      event rental sites. Her friends constantly asked to use her pool and
+      backyard for free, so she monetized that demand.
 toc: true
 tocDepth: 3
-
-# Reading Time
-readingTime: "21 min read"
-wordCount: "4106"
+readingTime: 20 min read
+wordCount: '3972'
 ---
-
 **Kamari earns $5,000 per month from two Airbnb properties: a $3,000/month luxury RV in her Florida backyard and a $2,000/month converted warehouse in Puerto Rico.** Starting with house hacking seven years ago in Puerto Rico, she built a real estate portfolio of four units while surviving Hurricane Maria, relocating to Florida, and transitioning to full-time real estate. Today, Kamari manages everything in just 2 hours per week after firing her property management company.
 
 This case study breaks down exactly how Kamari created income-producing assets from unconventional sources, including her specific strategies for backyard Airbnbs, warehouse conversions, and maximizing revenue through events and film productions during slow seasons.

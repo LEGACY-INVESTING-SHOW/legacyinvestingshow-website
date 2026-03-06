@@ -137,8 +137,8 @@ relatedPosts:
     title: >-
       Best Registered Agent for LLC: Complete 2026 Guide to Cost, Privacy, and
       Compliance
-readingTime: 10 min read
-wordCount: '2185'
+readingTime: 12 min read
+wordCount: '2268'
 ---
 Reasonable salary tax implications are one of the highest-leverage tax planning issues for owners using an S corporation or an LLC taxed as an S corporation. If you underpay yourself, you might reduce payroll tax in the short term but increase IRS reclassification risk. If you overpay yourself, you may reduce distribution flexibility, retirement planning efficiency, and operating cash.
 

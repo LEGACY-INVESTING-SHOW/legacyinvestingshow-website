@@ -135,8 +135,8 @@ relatedPosts:
     title: 'Best Tax Deductions for High Income Earners: Complete 2026 Guide'
   - slug: best-tax-deductions-for-individuals
     title: 'Best Tax Deductions for Individuals: Complete 2026 Guide'
-readingTime: 10 min read
-wordCount: '2296'
+readingTime: 12 min read
+wordCount: '2373'
 ---
 If you are researching estate tax planning for non us citizens, the biggest risk is assuming U.S. estate tax works like U.S. income tax. It does not. For many nonresident noncitizens, the federal estate tax can apply to U.S.-situs assets at death with a much smaller exemption than most people expect.
 

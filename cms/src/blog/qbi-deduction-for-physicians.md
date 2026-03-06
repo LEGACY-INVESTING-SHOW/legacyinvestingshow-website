@@ -143,8 +143,8 @@ relatedPosts:
     title: 'Best Tax Deductions for High Income Earners: Complete 2026 Guide'
   - slug: best-tax-deductions-for-individuals
     title: 'Best Tax Deductions for Individuals: Complete 2026 Guide'
-readingTime: 10 min read
-wordCount: '2153'
+readingTime: 12 min read
+wordCount: '2282'
 ---
 The qbi deduction for physicians can be a five-figure tax lever, but only if you plan around thresholds and timing before filing. Many doctors assume Section 199A is simple: either a full 20% deduction or nothing. In practice, results depend on taxable income, filing status, Specified Service Trade or Business rules, retirement contributions, owner compensation, and capital gains. If you are a 1099 physician, S corp owner, or partner, a small planning move can change your deduction by thousands.
 

@@ -135,8 +135,8 @@ relatedPosts:
     title: 'Credit Score Optimization: Improve Your Score Fast'
   - slug: debt-avalanche-method
     title: 'Debt Avalanche Method: The Fastest Way to Pay Off Debt'
-readingTime: 10 min read
-wordCount: '2204'
+readingTime: 12 min read
+wordCount: '2361'
 ---
 If you earn a strong salary and still feel stuck, student loan payoff for high earners is usually a systems problem, not an effort problem. The biggest mistakes are paying without a model, refinancing without understanding federal protections, and ignoring how loan decisions compete with investing, taxes, and career risk.
 

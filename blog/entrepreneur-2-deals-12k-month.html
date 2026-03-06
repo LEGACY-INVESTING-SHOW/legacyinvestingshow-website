@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Primary Meta Tags -->
-    <title>How Michael Locked Up 2 Deals in On… | Legacy Investing Show</title>
-    <meta name="title" content="How Michael Locked Up 2 Deals in On… | Legacy Investing Show">
-    <meta name="description" content="Michael, a serial entrepreneur who sold 5 companies, locked up 2 Airbnb deals in one week generating $12,000/month in the Space Coast, Florida. Learn his…">
+    <title>How Michael Locked Up 2 Deals in One Week for $12K/Month Cash Flow (2025 Case Study) | Legacy Investing Show</title>
+    <meta name="title" content="How Michael Locked Up 2 Deals in One Week for $12K/Month Cash Flow (2025 Case Study) | Legacy Investing Show">
+    <meta name="description" content="Michael, a serial entrepreneur who sold 5 companies, locked up 2 Airbnb deals in one week generating $12,000/month in the Space Coast, Florida. Learn his exact strategies, sales approach, and lessons for building passive income.">
     <meta name="keywords" content="airbnb success story, passive income real estate, short-term rental business, florida airbnb, how much can you make with airbnb, is airbnb arbitrage worth it">
     <meta name="author" content="Preston Seo">
     <meta name="robots" content="index, follow">
@@ -46,137 +46,572 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    
+
     <!-- Preload hero image for LCP -->
-    <link rel="preload" as="image" href="../assets/images/blog/success-stories/michael-entrepreneur-2-deals.jpg" type="image/webp" fetchpriority="high">
+    
     <link rel="preload" as="image" href="../assets/images/blog/success-stories/michael-entrepreneur-2-deals.jpg" fetchpriority="high">
+    
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../assets/css/styles.css">
     
-    <!-- Content Styling Fixes -->
     <style>
-        /* Base typography */
-        .minimal-content {
-            font-size: 1.125rem;
-            line-height: 1.8;
-            color: #374151;
+        .minimal-article {
+            margin: 0 auto;
+            max-width: 1280px;
+            padding: 124px 24px 88px;
         }
-        
-        /* Paragraphs */
-        .minimal-content p {
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
+
+        .article-shell {
+            display: grid;
+            gap: 2rem;
+            align-items: start;
         }
-        
-        /* Headings */
-        .minimal-content h2 {
-            margin-top: 3.5rem;
-            margin-bottom: 1.5rem;
-            font-size: 2.25rem;
+
+        .article-main {
+            min-width: 0;
+        }
+
+        .article-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.55rem;
+            margin-bottom: 1rem;
+            padding: 0.45rem 0.85rem;
+            border-radius: 999px;
+            background: rgba(15, 23, 42, 0.04);
+            border: 1px solid rgba(201, 169, 97, 0.18);
+            color: var(--gold-dark);
+            font-size: 0.75rem;
             font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .article-eyebrow::before {
+            content: "";
+            width: 0.45rem;
+            height: 0.45rem;
+            border-radius: 999px;
+            background: var(--gold);
+            box-shadow: 0 0 0 6px rgba(201, 169, 97, 0.12);
+        }
+
+        .minimal-article-header {
+            margin-bottom: 1.8rem;
+            text-align: left;
+        }
+
+        .minimal-article-meta {
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .minimal-article-title {
+            max-width: 14ch;
+            margin-bottom: 1rem;
+            font-size: clamp(2.4rem, 5vw, 4.5rem);
+            line-height: 0.98;
+            letter-spacing: -0.04em;
+        }
+
+        .minimal-article-description {
+            max-width: 46rem;
+            margin: 0 0 1.15rem;
+            color: var(--text-secondary);
+            font-size: 1.08rem;
+            line-height: 1.8;
+        }
+
+        .minimal-article-author {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.85rem;
+            padding: 0.55rem 0.8rem 0.55rem 0.55rem;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 14px 34px rgba(15, 23, 42, 0.06);
+        }
+
+        .author-avatar {
+            width: 2.6rem;
+            height: 2.6rem;
+            border-radius: 999px;
+            object-fit: cover;
+            border: 2px solid rgba(201, 169, 97, 0.24);
+        }
+
+        .minimal-featured-image {
+            margin-bottom: 1.8rem;
+            border-radius: 28px;
+            overflow: hidden;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 28px 80px rgba(15, 23, 42, 0.12);
+        }
+
+        .article-intro-card {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+            margin-bottom: 1.8rem;
+            padding: 1.6rem 1.75rem;
+            border-radius: 28px;
+            background:
+                radial-gradient(circle at top right, rgba(201, 169, 97, 0.18), transparent 38%),
+                linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(250, 247, 242, 0.92));
+            border: 1px solid rgba(201, 169, 97, 0.22);
+            box-shadow: 0 20px 48px rgba(15, 23, 42, 0.08);
+        }
+
+        .article-intro-card__eyebrow {
+            margin: 0 0 0.6rem;
+            color: var(--gold-dark);
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .article-intro-card__title {
+            margin: 0;
+            color: var(--navy);
+            font-size: clamp(1.55rem, 2.5vw, 2.15rem);
+            line-height: 1.08;
+        }
+
+        .article-intro-card__copy {
+            margin: 0;
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.78;
+        }
+
+        .article-intro-card__list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 0.8rem;
+        }
+
+        .article-intro-card__list li {
+            position: relative;
+            margin: 0;
+            padding-left: 1.35rem;
+            color: var(--text-primary);
+            font-size: 0.96rem;
+            line-height: 1.65;
+        }
+
+        .article-intro-card__list li::before {
+            content: "";
+            position: absolute;
+            top: 0.58rem;
+            left: 0;
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 999px;
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+        }
+
+        .article-rail {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .statistics-section {
+            margin: 0;
+        }
+
+        .statistics-grid {
+            display: grid;
+            gap: 0.9rem;
+            grid-template-columns: 1fr;
+        }
+
+        .stat-card {
+            padding: 1.15rem 1.2rem;
+            border-radius: 24px;
+            background: rgba(255, 255, 255, 0.92);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+            text-align: left;
+        }
+
+        .stat-icon-wrapper {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.7rem;
+            height: 2.7rem;
+            margin-bottom: 0.95rem;
+            border-radius: 0.95rem;
+            background: rgba(201, 169, 97, 0.12);
+            color: var(--gold-dark);
+        }
+
+        .stat-icon {
+            width: 1.3rem;
+            height: 1.3rem;
+        }
+
+        .stat-value {
+            color: var(--navy);
+            font-family: "DM Serif Display", Georgia, serif;
+            font-size: 2rem;
+            line-height: 1;
+            letter-spacing: -0.04em;
+        }
+
+        .stat-label {
+            margin-top: 0.45rem;
+            color: var(--text-primary);
+            font-size: 0.9rem;
+            font-weight: 700;
+            line-height: 1.4;
+            text-transform: none;
+        }
+
+        .stat-context,
+        .stat-source {
+            display: block;
+            margin-top: 0.65rem;
+            color: var(--text-muted);
+            font-size: 0.84rem;
+            line-height: 1.6;
+        }
+
+        .article-rail-card {
+            padding: 1.25rem 1.25rem 1.3rem;
+            border-radius: 24px;
+            background: linear-gradient(160deg, #182234, #0f172a);
+            color: white;
+            box-shadow: 0 22px 55px rgba(15, 23, 42, 0.18);
+        }
+
+        .article-rail-card--muted {
+            background: rgba(255, 255, 255, 0.9);
+            color: var(--text-secondary);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+        }
+
+        .article-rail-card__eyebrow {
+            margin: 0 0 0.55rem;
+            color: rgba(217, 196, 138, 0.92);
+            font-size: 0.74rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .article-rail-card--muted .article-rail-card__eyebrow {
+            color: var(--gold-dark);
+        }
+
+        .article-rail-card__title {
+            margin: 0 0 0.75rem;
+            color: inherit;
+            font-size: 1.35rem;
+            line-height: 1.12;
+        }
+
+        .article-rail-card__body {
+            margin: 0;
+            color: inherit;
+            font-size: 0.95rem;
+            line-height: 1.72;
+        }
+
+        .minimal-content {
+            padding: clamp(1.35rem, 2vw, 2.6rem);
+            border-radius: 32px;
+            background: rgba(255, 255, 255, 0.96);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 28px 72px rgba(15, 23, 42, 0.08);
+            color: #374151;
+            font-size: 1.07rem;
+            line-height: 1.8;
+        }
+
+        .minimal-content p {
+            margin-bottom: 1.45rem;
+            line-height: 1.82;
+        }
+
+        .minimal-content h2 {
+            margin-top: 3rem;
+            margin-bottom: 1.2rem;
             color: #111827;
-            line-height: 1.2;
+            font-size: clamp(1.9rem, 2.8vw, 2.6rem);
+            font-weight: 400;
+            line-height: 1.08;
         }
-        
+
         .minimal-content h3 {
-            margin-top: 2.5rem;
-            margin-bottom: 1.25rem;
-            font-size: 1.5rem;
-            font-weight: 600;
+            margin-top: 2.2rem;
+            margin-bottom: 0.95rem;
+            font-size: 1.35rem;
+            font-weight: 700;
             color: #1f2937;
+            line-height: 1.3;
         }
-        
-        /* Tables */
+
         .minimal-content table {
             width: 100%;
-            margin: 2.5rem 0;
-            border-collapse: collapse;
-            font-size: 1rem;
+            margin: 2.2rem 0;
+            border-collapse: separate;
+            border-spacing: 0;
+            font-size: 0.97rem;
             background: white;
-            border-radius: 8px;
+            border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
         }
-        
+
         .minimal-content thead {
-            background: #0F172A;
+            background: #0f172a;
             color: white;
         }
-        
+
         .minimal-content th {
-            padding: 1rem 1.25rem;
+            padding: 1rem 1.1rem;
             text-align: left;
-            font-weight: 600;
-            font-size: 0.95rem;
+            font-weight: 700;
+            font-size: 0.77rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
         }
-        
+
         .minimal-content td {
-            padding: 1rem 1.25rem;
+            padding: 0.95rem 1.1rem;
             border-bottom: 1px solid #e5e7eb;
+            vertical-align: top;
         }
-        
+
         .minimal-content tbody tr:last-child td {
             border-bottom: none;
         }
-        
+
         .minimal-content tbody tr:nth-child(even) {
-            background: #FAF7F2;
+            background: #faf7f2;
         }
-        
+
         .minimal-content tbody tr:hover {
-            background: rgba(212, 168, 83, 0.08);
+            background: rgba(201, 169, 97, 0.09);
         }
-        
-        /* Blockquotes */
+
         .minimal-content blockquote {
-            margin: 2.5rem 0;
-            padding: 1.5rem 2rem;
-            background: rgba(212, 168, 83, 0.12);
-            border-left: 4px solid #D4A853;
-            font-style: italic;
-            font-size: 1.125rem;
-            line-height: 1.7;
+            margin: 2.3rem 0;
+            padding: 1.4rem 1.6rem;
+            border-radius: 24px;
+            background: rgba(201, 169, 97, 0.11);
+            border-left: 4px solid #d4a853;
+            font-size: 1.12rem;
+            line-height: 1.72;
         }
-        
+
         .minimal-content blockquote p {
             margin-bottom: 0;
         }
-        
-        /* Lists */
-        .minimal-content ul, .minimal-content ol {
-            margin-bottom: 1.5rem;
-            padding-left: 2rem;
+
+        .minimal-content ul,
+        .minimal-content ol {
+            margin-bottom: 1.45rem;
+            padding-left: 1.35rem;
         }
-        
+
         .minimal-content li {
-            margin-bottom: 0.75rem;
-            line-height: 1.7;
+            margin-bottom: 0.7rem;
+            line-height: 1.72;
         }
-        
-        /* Strong/Bold */
+
         .minimal-content strong {
             font-weight: 700;
             color: #111827;
         }
-        
-        /* Links */
+
         .minimal-content a {
-            color: #D4A853;
+            color: #b8933f;
             text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 0.16em;
         }
-        
+
         .minimal-content a:hover {
-            color: #B8933F;
+            color: #8e6d2d;
         }
-        
-        /* Emphasis */
-        .minimal-content em {
-            font-style: italic;
+
+        .article-faq {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            border-radius: 28px;
+            background: rgba(255, 255, 255, 0.96);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 22px 55px rgba(15, 23, 42, 0.08);
+        }
+
+        .article-faq__header {
+            margin-bottom: 1rem;
+        }
+
+        .article-faq__eyebrow {
+            margin: 0 0 0.45rem;
+            color: var(--gold-dark);
+            font-size: 0.76rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .article-faq__title {
+            margin: 0;
+            color: var(--navy);
+            font-size: clamp(1.7rem, 2.2vw, 2.25rem);
+        }
+
+        .article-faq__list {
+            display: grid;
+            gap: 0.85rem;
+        }
+
+        .article-faq__item {
+            border-radius: 20px;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            background: rgba(250, 247, 242, 0.65);
+            overflow: hidden;
+        }
+
+        .article-faq__question {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 1.1rem 1.15rem;
+            border: none;
+            background: transparent;
+            color: var(--navy);
+            font-size: 0.98rem;
+            font-weight: 700;
+            text-align: left;
+        }
+
+        .article-faq__chevron {
+            width: 1.15rem;
+            height: 1.15rem;
+            color: var(--text-muted);
+            transition: transform 0.2s ease;
+            flex: 0 0 auto;
+        }
+
+        .article-faq__question[aria-expanded="true"] .article-faq__chevron {
+            transform: rotate(180deg);
+        }
+
+        .article-faq__answer {
+            display: none;
+            padding: 0 1.15rem 1.15rem;
+        }
+
+        .article-faq__answer--open {
+            display: block;
+        }
+
+        .article-faq__answer p {
+            margin: 0;
+            color: var(--text-secondary);
+            font-size: 0.97rem;
+            line-height: 1.72;
+        }
+
+        @media (min-width: 1024px) {
+            .article-shell {
+                grid-template-columns: minmax(0, 1.55fr) minmax(320px, 0.78fr);
+                gap: 2.25rem;
+            }
+
+            .article-rail {
+                position: sticky;
+                top: 6.5rem;
+            }
+        }
+
+        @media (max-width: 1023px) {
+            .article-shell {
+                gap: 1.5rem;
+            }
+
+            .statistics-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 767px) {
+            .minimal-article {
+                padding: 106px 18px 64px;
+            }
+
+            .minimal-article-title {
+                max-width: none;
+                font-size: clamp(2rem, 10vw, 3rem);
+            }
+
+            .minimal-article-description {
+                font-size: 1rem;
+            }
+
+            .article-intro-card {
+                grid-template-columns: 1fr;
+                padding: 1.25rem;
+                border-radius: 24px;
+            }
+
+            .minimal-featured-image,
+            .minimal-content,
+            .article-faq {
+                border-radius: 24px;
+            }
+
+            .minimal-content {
+                padding: 1.15rem;
+            }
+
+            .minimal-content h2 {
+                margin-top: 2.35rem;
+            }
+
+            .minimal-content table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+            }
+        }
+
+        @media (max-width: 479px) {
+            .statistics-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .article-rail-card,
+            .stat-card {
+                padding: 1rem;
+            }
         }
     </style>
 
     <!-- Schema Markup -->
     
+
+
+
+
+
+
 
 
 
@@ -196,12 +631,12 @@
             "@type": "ListItem",
             "position": 2,
             "name": "Blog",
-            "item": "https://www.legacyinvestingshow.com/blog/"
+            "item": "https://www.legacyinvestingshow.com/blog"
         },
         {
             "@type": "ListItem",
             "position": 3,
-            "name": &quot;How Michael Locked Up 2 Deals in One Week for $12K/Month Cash Flow (2025 Case Study)&quot;
+            "name": "How Michael Locked Up 2 Deals in One Week for $12K/Month Cash Flow (2025 Case Study)"
         }
     ]
 }
@@ -212,18 +647,18 @@
 {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": &quot;How Michael Locked Up 2 Deals in One Week for $12K/Month Cash Flow (2025 Case Study)&quot;,
-    "description": &quot;Michael, a serial entrepreneur who sold 5 companies, locked up 2 Airbnb deals in one week generating $12,000/month in the Space Coast, Florida. Learn his exact strategies, sales approach, and lessons for building passive income.&quot;,
+    "headline": "How Michael Locked Up 2 Deals in One Week for $12K/Month Cash Flow (2025 Case Study)",
+    "description": "Michael, a serial entrepreneur who sold 5 companies, locked up 2 Airbnb deals in one week generating $12,000/month in the Space Coast, Florida. Learn his exact strategies, sales approach, and lessons for building passive income.",
     "image": {
         "@type": "ImageObject",
-        "url": &quot;https://www.legacyinvestingshow.com/assets/images/blog/success-stories/michael-entrepreneur-2-deals.jpg&quot;,
+        "url": "https://www.legacyinvestingshow.com/assets/images/blog/success-stories/michael-entrepreneur-2-deals.jpg",
         "width": 1200,
         "height": 630
     },
     "author": {
         "@type": "Person",
         "@id": "https://www.legacyinvestingshow.com/about#author",
-        "name": &quot;Preston Seo&quot;,
+        "name": "Preston Seo",
         "url": "https://www.legacyinvestingshow.com/about",
         "jobTitle": "Real Estate Investor & Educator",
         "knowsAbout": [
@@ -242,7 +677,7 @@
     "publisher": {
         "@type": "Organization",
         "name": "Legacy Investing Show",
-        "url": "https://www.legacyinvestingshow.com",
+        "url": "https://www.legacyinvestingshow.com/",
         "logo": {
             "@type": "ImageObject",
             "url": "https://www.legacyinvestingshow.com/assets/images/logo.png",
@@ -256,15 +691,15 @@
             "https://www.facebook.com/share/19LQhE6gmh/"
         ]
     },
-    "datePublished": &quot;2025-11-14T00:00:00.000Z&quot;,
-    "dateModified": &quot;2026-01-23T00:00:00.000Z&quot;,
+    "datePublished": "2025-11-14T00:00:00.000Z",
+    "dateModified": "2026-01-23T00:00:00.000Z",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": &quot;https://www.legacyinvestingshow.com/blog/entrepreneur-2-deals-12k-month&quot;
+        "@id": "https://www.legacyinvestingshow.com/blog/entrepreneur-2-deals-12k-month"
     },
-    "articleSection": &quot;Success Story&quot;,
-    "wordCount": &quot;4460&quot;,
-    "keywords": &quot;airbnb success story, passive income real estate, short-term rental business, florida airbnb, how much can you make with airbnb, is airbnb arbitrage worth it&quot;,
+    "articleSection": "Success Story",
+    "wordCount": "4312",
+    "keywords": "airbnb success story, passive income real estate, short-term rental business, florida airbnb, how much can you make with airbnb, is airbnb arbitrage worth it",
     "speakable": {
         "@type": "SpeakableSpecification",
         "cssSelector": [".minimal-article-title", ".minimal-content p:first-of-type"]
@@ -284,91 +719,91 @@
         
         {
             "@type": "Question",
-            "name": &quot;How much money can you make with Airbnb arbitrage?&quot;,
+            "name": "How much money can you make with Airbnb arbitrage?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Michael locked up 2 deals in one week projecting $12,000/month in cash flow from the Space Coast, Florida. He targets 10% monthly return on his initial investment per property, with each property requiring $10,000-$20,000 to set up.&quot;
+                "text": "Michael locked up 2 deals in one week projecting $12,000/month in cash flow from the Space Coast, Florida. He targets 10% monthly return on his initial investment per property, with each property requiring $10,000-$20,000 to set up."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;Is Airbnb arbitrage still profitable in 2025?&quot;,
+            "name": "Is Airbnb arbitrage still profitable in 2025?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Yes. Michael got his first unit listed within 6 weeks of joining Legacy Investing Show, and it booked within 5 minutes of going live. His oceanview property near Cape Canaveral rocket launches proved immediate demand exists for well-positioned listings.&quot;
+                "text": "Yes. Michael got his first unit listed within 6 weeks of joining Legacy Investing Show, and it booked within 5 minutes of going live. His oceanview property near Cape Canaveral rocket launches proved immediate demand exists for well-positioned listings."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;How long does it take to start making money with Airbnb arbitrage?&quot;,
+            "name": "How long does it take to start making money with Airbnb arbitrage?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Michael went from joining the program to having his first unit live and booked in 6 weeks. His property got its first booking within 5 minutes of being listed, demonstrating how quickly returns can begin with proper market selection.&quot;
+                "text": "Michael went from joining the program to having his first unit live and booked in 6 weeks. His property got its first booking within 5 minutes of being listed, demonstrating how quickly returns can begin with proper market selection."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;Do you need experience to start Airbnb arbitrage?&quot;,
+            "name": "Do you need experience to start Airbnb arbitrage?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;No real estate experience is required. Michael&#39;s background was in construction and TV stations, not hospitality. However, his sales skills gave him an edge when negotiating with landlords. The program provides scripts and systems for those without sales experience.&quot;
+                "text": "No real estate experience is required. Michael's background was in construction and TV stations, not hospitality. However, his sales skills gave him an edge when negotiating with landlords. The program provides scripts and systems for those without sales experience."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;How much does it cost to start Airbnb arbitrage?&quot;,
+            "name": "How much does it cost to start Airbnb arbitrage?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Michael invested $10,000-$20,000 per property for arbitrage deals and $465,000 cash for a property he purchased. Pure arbitrage typically requires first month&#39;s rent, deposit, and furnishing costs. Michael views the risk as very low compared to traditional real estate investing.&quot;
+                "text": "Michael invested $10,000-$20,000 per property for arbitrage deals and $465,000 cash for a property he purchased. Pure arbitrage typically requires first month's rent, deposit, and furnishing costs. Michael views the risk as very low compared to traditional real estate investing."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;What is the best market for Airbnb arbitrage?&quot;,
+            "name": "What is the best market for Airbnb arbitrage?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Michael chose the Space Coast of Florida (Merritt Island, Cape Canaveral, Cocoa Beach) for its unique combination of ocean views, rocket launches, and beach access. He recommends researching demand drivers like tourism, tech workers, and local events before selecting a market.&quot;
+                "text": "Michael chose the Space Coast of Florida (Merritt Island, Cape Canaveral, Cocoa Beach) for its unique combination of ocean views, rocket launches, and beach access. He recommends researching demand drivers like tourism, tech workers, and local events before selecting a market."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;Is Legacy Investing Show worth it?&quot;,
+            "name": "Is Legacy Investing Show worth it?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Michael, a successful entrepreneur who sold 5 companies, said he would have paid $25,000 for the program because the blueprint saved him hundreds of thousands in trial-and-error costs. He praised Preston&#39;s authenticity and the ability to re-watch training videos to catch details.&quot;
+                "text": "Michael, a successful entrepreneur who sold 5 companies, said he would have paid $25,000 for the program because the blueprint saved him hundreds of thousands in trial-and-error costs. He praised Preston's authenticity and the ability to re-watch training videos to catch details."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;What&#39;s the difference between Airbnb arbitrage and buying property?&quot;,
+            "name": "What's the difference between Airbnb arbitrage and buying property?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Arbitrage requires less capital ($10,000-$20,000 vs $465,000+ for purchase) and carries lower risk since you can exit leases. Michael does both - he bought one property with cash while pursuing arbitrage deals to scale faster with less capital at risk.&quot;
+                "text": "Arbitrage requires less capital ($10,000-$20,000 vs $465,000+ for purchase) and carries lower risk since you can exit leases. Michael does both - he bought one property with cash while pursuing arbitrage deals to scale faster with less capital at risk."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;How do you convince landlords to allow Airbnb arbitrage?&quot;,
+            "name": "How do you convince landlords to allow Airbnb arbitrage?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Michael&#39;s pitch focuses on serving traveling nurses, RAs, and doctors who need quality housing for 3 days to 3 weeks. He emphasizes million-dollar insurance coverage, furnishing at his expense, and advance rent payments. His 60% closing ratio comes from strong research and sales skills.&quot;
+                "text": "Michael's pitch focuses on serving traveling nurses, RAs, and doctors who need quality housing for 3 days to 3 weeks. He emphasizes million-dollar insurance coverage, furnishing at his expense, and advance rent payments. His 60% closing ratio comes from strong research and sales skills."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;Can you teach your kids about money and entrepreneurship?&quot;,
+            "name": "Can you teach your kids about money and entrepreneurship?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Michael taught his children financial literacy at ages 6 and 9 by requiring them to &#39;pay&#39; $1,000/month room and board through an invoice system. Every task had a value - brushing teeth, making beds, doing homework. Both children grew up to manage budgets meticulously and went off his payroll immediately after college.&quot;
+                "text": "Michael taught his children financial literacy at ages 6 and 9 by requiring them to 'pay' $1,000/month room and board through an invoice system. Every task had a value - brushing teeth, making beds, doing homework. Both children grew up to manage budgets meticulously and went off his payroll immediately after college."
             }
         }
         
@@ -383,7 +818,7 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Legacy Investing Show",
-    "url": "https://www.legacyinvestingshow.com",
+    "url": "https://www.legacyinvestingshow.com/",
     "logo": "https://www.legacyinvestingshow.com/assets/images/logo.png",
     "sameAs": [
         "https://www.instagram.com/thelegacyinvestingshow/",
@@ -396,16 +831,16 @@
 
 
     <!-- Google Analytics 4 -->
-        <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-2578PT1WSS');
     </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
+
 </head>
 <body class="bg-cream text-navy">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -467,124 +902,59 @@
 </nav>
 
 
-            <header class="minimal-article-header">
-                <div class="minimal-article-meta">
-                    <span>Success Story</span>
-                    <span class="meta-dot"></span>
-                    <time datetime="2025-11-14T00:00:00.000Z">November 14, 2025</time>
-                    <span class="meta-dot"></span>
-                    <span>23 min read min read</span>
-                </div>
-                <h1 class="minimal-article-title">How Michael Locked Up 2 Deals in One Week for $12K/Month Cash Flow (2025 Case Study)</h1>
-                <div class="minimal-article-author">
-                    <img src="../assets/images/preston-main.jpg" alt="Preston Seo" width="36" height="36" class="author-avatar">
-                    <span>Preston Seo</span>
-                </div>
-            </header>
+            <div class="article-shell">
+                <div class="article-main">
+                    <header class="minimal-article-header">
+                        <span class="article-eyebrow">Success Story Guide</span>
+                        <div class="minimal-article-meta">
+                            <span>Success Story</span>
+                            <span class="meta-dot"></span>
+                            <time datetime="2025-11-14T00:00:00.000Z">November 14, 2025</time>
+                            <span class="meta-dot"></span>
+                            <span>22 min read min read</span>
+                        </div>
+                        <h1 class="minimal-article-title">How Michael Locked Up 2 Deals in One Week for $12K/Month Cash Flow (2025 Case Study)</h1>
+                        <p class="minimal-article-description">Michael, a serial entrepreneur who sold 5 companies, locked up 2 Airbnb deals in one week generating $12,000/month in the Space Coast, Florida. Learn his exact strategies, sales approach, and lessons for building passive income.</p>
+                        <div class="minimal-article-author">
+                            <picture>
+                                <source srcset="../assets/images/preston-main.webp" type="image/webp">
+                                <img src="../assets/images/preston-main.jpg"
+                                     alt="Preston Seo"
+                                     width="36"
+                                     height="36"
+                                     class="author-avatar"
+                                     fetchpriority="low"
+                                     decoding="async">
+                            </picture>
+                            <span>Preston Seo</span>
+                        </div>
+                    </header>
 
-            <!-- Featured Image -->
-            <div class="minimal-featured-image">
-                <picture>
-                    <source srcset="../assets/images/blog/success-stories/michael-entrepreneur-2-deals.jpg" type="image/webp">
-                    <img src="../assets/images/blog/success-stories/michael-entrepreneur-2-deals.jpg" alt="How Michael Locked Up 2 Deals in One Week for $12K/Month Cash Flow (2025 Case Study)" width="800" height="450" loading="eager" fetchpriority="high" decoding="async">
-                </picture>
-            </div>
+                    <div class="minimal-featured-image">
+                        <picture>
+                            
+                            <img src="../assets/images/blog/success-stories/michael-entrepreneur-2-deals.jpg" alt="How Michael Locked Up 2 Deals in One Week for $12K/Month Cash Flow (2025 Case Study)" width="800" height="450" loading="eager" fetchpriority="high" decoding="async">
+                        </picture>
+                    </div>
 
-            <!-- Statistics Cards -->
-            
-                <section class="statistics-section" aria-label="Key statistics">
-    <div class="statistics-grid">
-        
-        <div class="stat-card" data-stat-index="0">
-            <div class="stat-icon-wrapper">
-                
-                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-                
-            </div>
-            <div class="stat-value">$12,000+</div>
-            <div class="stat-label">Monthly Cash Flow</div>
-            
-            <span class="stat-context">Projected from 2 deals</span>
-            
-            
-            <span class="stat-source">Student Interview, 2023</span>
-            
-        </div>
-        
-        <div class="stat-card" data-stat-index="1">
-            <div class="stat-icon-wrapper">
-                
-                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-                
-            </div>
-            <div class="stat-value">2</div>
-            <div class="stat-label">Deals in One Week</div>
-            
-            <span class="stat-context">Space Coast, Florida</span>
-            
-            
-        </div>
-        
-        <div class="stat-card" data-stat-index="2">
-            <div class="stat-icon-wrapper">
-                
-                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                
-            </div>
-            <div class="stat-value">6 Weeks</div>
-            <div class="stat-label">Time to First Unit</div>
-            
-            <span class="stat-context">From joining program</span>
-            
-            
-        </div>
-        
-        <div class="stat-card" data-stat-index="3">
-            <div class="stat-icon-wrapper">
-                
-                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                
-            </div>
-            <div class="stat-value">5 Minutes</div>
-            <div class="stat-label">Time to First Booking</div>
-            
-            <span class="stat-context">After listing went live</span>
-            
-            
-        </div>
-        
-        <div class="stat-card" data-stat-index="4">
-            <div class="stat-icon-wrapper">
-                
-            </div>
-            <div class="stat-value">60%</div>
-            <div class="stat-label">Closing Ratio</div>
-            
-            <span class="stat-context">On landlord pitches</span>
-            
-            
-        </div>
-        
-        <div class="stat-card" data-stat-index="5">
-            <div class="stat-icon-wrapper">
-                
-            </div>
-            <div class="stat-value">5</div>
-            <div class="stat-label">Companies Sold</div>
-            
-            <span class="stat-context">Prior entrepreneurial success</span>
-            
-            
-        </div>
-        
-    </div>
-</section>
+                    <section class="article-intro-card" aria-label="How to use this guide">
+                        <div>
+                            <p class="article-intro-card__eyebrow">Use This Like a Tool</p>
+                            <h2 class="article-intro-card__title">The point of this page is not more information. The point is better judgment before you act.</h2>
+                        </div>
+                        <ul class="article-intro-card__list">
+                            
+                            <li>Pull the real numbers first.</li>
+                            
+                            <li>Run a base case and a stress case.</li>
+                            
+                            <li>Use the result to make a cleaner decision, not a faster emotional one.</li>
+                            
+                        </ul>
+                    </section>
 
-            
-
-            <!-- Article Content -->
-            <div class="minimal-content">
-                <p><strong>Michael earns $12,000 per month in projected cash flow from 2 Airbnb deals he locked up in just one week in Florida's Space Coast.</strong> After selling five companies and semi-retiring at 47, this serial entrepreneur found Legacy Investing Show through social media and had his first unit live and booked within 6 weeks. His first property received a booking within 5 minutes of going live, featuring ocean views and proximity to rocket launches.</p>
+                    <div class="minimal-content">
+                        <p><strong>Michael earns $12,000 per month in projected cash flow from 2 Airbnb deals he locked up in just one week in Florida's Space Coast.</strong> After selling five companies and semi-retiring at 47, this serial entrepreneur found Legacy Investing Show through social media and had his first unit live and booked within 6 weeks. His first property received a booking within 5 minutes of going live, featuring ocean views and proximity to rocket launches.</p>
 <p>This case study breaks down exactly how Michael built his Airbnb arbitrage business, including his 60% closing ratio landlord pitch, the parenting philosophy that raised financially literate children, and why a man who's friends with Gary Vee chose this program to learn passive income strategies.</p>
 <p><strong>In this article:</strong></p>
 <ul>
@@ -1114,68 +1484,327 @@
 <p>Preston Seo</p>
 <p>Real estate investor and financial educator helping people build generational wealth through smart investing strategies.</p>
 
-            </div>
+                    </div>
 
-            <!-- FAQ Section -->
+                    
+                        <section class="article-faq" aria-label="Frequently asked questions">
+    <div class="article-faq__header">
+        <p class="article-faq__eyebrow">Questions that matter before you act</p>
+        <h2 class="article-faq__title">Frequently Asked Questions</h2>
+    </div>
+    <div class="article-faq__list">
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="true"
+                aria-controls="faq-answer-0"
+            >
+                <span>How much money can you make with Airbnb arbitrage?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-0"
+                class="article-faq__answer article-faq__answer--open"
+            >
+                <p>Michael locked up 2 deals in one week projecting $12,000/month in cash flow from the Space Coast, Florida. He targets 10% monthly return on his initial investment per property, with each property requiring $10,000-$20,000 to set up.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-1"
+            >
+                <span>Is Airbnb arbitrage still profitable in 2025?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-1"
+                class="article-faq__answer "
+            >
+                <p>Yes. Michael got his first unit listed within 6 weeks of joining Legacy Investing Show, and it booked within 5 minutes of going live. His oceanview property near Cape Canaveral rocket launches proved immediate demand exists for well-positioned listings.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-2"
+            >
+                <span>How long does it take to start making money with Airbnb arbitrage?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-2"
+                class="article-faq__answer "
+            >
+                <p>Michael went from joining the program to having his first unit live and booked in 6 weeks. His property got its first booking within 5 minutes of being listed, demonstrating how quickly returns can begin with proper market selection.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-3"
+            >
+                <span>Do you need experience to start Airbnb arbitrage?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-3"
+                class="article-faq__answer "
+            >
+                <p>No real estate experience is required. Michael&#39;s background was in construction and TV stations, not hospitality. However, his sales skills gave him an edge when negotiating with landlords. The program provides scripts and systems for those without sales experience.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-4"
+            >
+                <span>How much does it cost to start Airbnb arbitrage?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-4"
+                class="article-faq__answer "
+            >
+                <p>Michael invested $10,000-$20,000 per property for arbitrage deals and $465,000 cash for a property he purchased. Pure arbitrage typically requires first month&#39;s rent, deposit, and furnishing costs. Michael views the risk as very low compared to traditional real estate investing.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-5"
+            >
+                <span>What is the best market for Airbnb arbitrage?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-5"
+                class="article-faq__answer "
+            >
+                <p>Michael chose the Space Coast of Florida (Merritt Island, Cape Canaveral, Cocoa Beach) for its unique combination of ocean views, rocket launches, and beach access. He recommends researching demand drivers like tourism, tech workers, and local events before selecting a market.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-6"
+            >
+                <span>Is Legacy Investing Show worth it?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-6"
+                class="article-faq__answer "
+            >
+                <p>Michael, a successful entrepreneur who sold 5 companies, said he would have paid $25,000 for the program because the blueprint saved him hundreds of thousands in trial-and-error costs. He praised Preston&#39;s authenticity and the ability to re-watch training videos to catch details.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-7"
+            >
+                <span>What&#39;s the difference between Airbnb arbitrage and buying property?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-7"
+                class="article-faq__answer "
+            >
+                <p>Arbitrage requires less capital ($10,000-$20,000 vs $465,000+ for purchase) and carries lower risk since you can exit leases. Michael does both - he bought one property with cash while pursuing arbitrage deals to scale faster with less capital at risk.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-8"
+            >
+                <span>How do you convince landlords to allow Airbnb arbitrage?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-8"
+                class="article-faq__answer "
+            >
+                <p>Michael&#39;s pitch focuses on serving traveling nurses, RAs, and doctors who need quality housing for 3 days to 3 weeks. He emphasizes million-dollar insurance coverage, furnishing at his expense, and advance rent payments. His 60% closing ratio comes from strong research and sales skills.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-9"
+            >
+                <span>Can you teach your kids about money and entrepreneurship?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-9"
+                class="article-faq__answer "
+            >
+                <p>Michael taught his children financial literacy at ages 6 and 9 by requiring them to &#39;pay&#39; $1,000/month room and board through an invoice system. Every task had a value - brushing teeth, making beds, doing homework. Both children grew up to manage budgets meticulously and went off his payroll immediately after college.</p>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<script>
+    document.querySelectorAll('.article-faq__question').forEach((button) => {
+        button.addEventListener('click', () => {
+            const expanded = button.getAttribute('aria-expanded') === 'true';
+            button.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+            button.nextElementSibling.classList.toggle('article-faq__answer--open');
+        });
+    });
+</script>
+
+                    
+                </div>
+
+                <aside class="article-rail">
+                    
+                        <section class="statistics-section" aria-label="Key statistics">
+    <div class="statistics-grid">
+        
+        <div class="stat-card" data-stat-index="0">
+            <div class="stat-icon-wrapper">
+                
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                
+            </div>
+            <div class="stat-value">$12,000+</div>
+            <div class="stat-label">Monthly Cash Flow</div>
             
-                <section class="mt-16 bg-white rounded-xl shadow-lg p-8">
-    <h2 class="text-3xl font-bold text-navy mb-8">Frequently Asked Questions</h2>
-    <div class="space-y-6">
-        
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">How much money can you make with Airbnb arbitrage?</h3>
-            <p class="text-gray-600">Michael locked up 2 deals in one week projecting $12,000/month in cash flow from the Space Coast, Florida. He targets 10% monthly return on his initial investment per property, with each property requiring $10,000-$20,000 to set up.</p>
+            <span class="stat-context">Projected from 2 deals</span>
+            
+            
+            <span class="stat-source">Student Interview, 2023</span>
+            
         </div>
         
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">Is Airbnb arbitrage still profitable in 2025?</h3>
-            <p class="text-gray-600">Yes. Michael got his first unit listed within 6 weeks of joining Legacy Investing Show, and it booked within 5 minutes of going live. His oceanview property near Cape Canaveral rocket launches proved immediate demand exists for well-positioned listings.</p>
+        <div class="stat-card" data-stat-index="1">
+            <div class="stat-icon-wrapper">
+                
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                
+            </div>
+            <div class="stat-value">2</div>
+            <div class="stat-label">Deals in One Week</div>
+            
+            <span class="stat-context">Space Coast, Florida</span>
+            
+            
         </div>
         
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">How long does it take to start making money with Airbnb arbitrage?</h3>
-            <p class="text-gray-600">Michael went from joining the program to having his first unit live and booked in 6 weeks. His property got its first booking within 5 minutes of being listed, demonstrating how quickly returns can begin with proper market selection.</p>
+        <div class="stat-card" data-stat-index="2">
+            <div class="stat-icon-wrapper">
+                
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                
+            </div>
+            <div class="stat-value">6 Weeks</div>
+            <div class="stat-label">Time to First Unit</div>
+            
+            <span class="stat-context">From joining program</span>
+            
+            
         </div>
         
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">Do you need experience to start Airbnb arbitrage?</h3>
-            <p class="text-gray-600">No real estate experience is required. Michael&#39;s background was in construction and TV stations, not hospitality. However, his sales skills gave him an edge when negotiating with landlords. The program provides scripts and systems for those without sales experience.</p>
+        <div class="stat-card" data-stat-index="3">
+            <div class="stat-icon-wrapper">
+                
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                
+            </div>
+            <div class="stat-value">5 Minutes</div>
+            <div class="stat-label">Time to First Booking</div>
+            
+            <span class="stat-context">After listing went live</span>
+            
+            
         </div>
         
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">How much does it cost to start Airbnb arbitrage?</h3>
-            <p class="text-gray-600">Michael invested $10,000-$20,000 per property for arbitrage deals and $465,000 cash for a property he purchased. Pure arbitrage typically requires first month&#39;s rent, deposit, and furnishing costs. Michael views the risk as very low compared to traditional real estate investing.</p>
+        <div class="stat-card" data-stat-index="4">
+            <div class="stat-icon-wrapper">
+                
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                
+            </div>
+            <div class="stat-value">60%</div>
+            <div class="stat-label">Closing Ratio</div>
+            
+            <span class="stat-context">On landlord pitches</span>
+            
+            
         </div>
         
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">What is the best market for Airbnb arbitrage?</h3>
-            <p class="text-gray-600">Michael chose the Space Coast of Florida (Merritt Island, Cape Canaveral, Cocoa Beach) for its unique combination of ocean views, rocket launches, and beach access. He recommends researching demand drivers like tourism, tech workers, and local events before selecting a market.</p>
-        </div>
-        
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">Is Legacy Investing Show worth it?</h3>
-            <p class="text-gray-600">Michael, a successful entrepreneur who sold 5 companies, said he would have paid $25,000 for the program because the blueprint saved him hundreds of thousands in trial-and-error costs. He praised Preston&#39;s authenticity and the ability to re-watch training videos to catch details.</p>
-        </div>
-        
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">What&#39;s the difference between Airbnb arbitrage and buying property?</h3>
-            <p class="text-gray-600">Arbitrage requires less capital ($10,000-$20,000 vs $465,000+ for purchase) and carries lower risk since you can exit leases. Michael does both - he bought one property with cash while pursuing arbitrage deals to scale faster with less capital at risk.</p>
-        </div>
-        
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">How do you convince landlords to allow Airbnb arbitrage?</h3>
-            <p class="text-gray-600">Michael&#39;s pitch focuses on serving traveling nurses, RAs, and doctors who need quality housing for 3 days to 3 weeks. He emphasizes million-dollar insurance coverage, furnishing at his expense, and advance rent payments. His 60% closing ratio comes from strong research and sales skills.</p>
-        </div>
-        
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">Can you teach your kids about money and entrepreneurship?</h3>
-            <p class="text-gray-600">Michael taught his children financial literacy at ages 6 and 9 by requiring them to &#39;pay&#39; $1,000/month room and board through an invoice system. Every task had a value - brushing teeth, making beds, doing homework. Both children grew up to manage budgets meticulously and went off his payroll immediately after college.</p>
+        <div class="stat-card" data-stat-index="5">
+            <div class="stat-icon-wrapper">
+                
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                
+            </div>
+            <div class="stat-value">5</div>
+            <div class="stat-label">Companies Sold</div>
+            
+            <span class="stat-context">Prior entrepreneurial success</span>
+            
+            
         </div>
         
     </div>
 </section>
 
-            
+                    
+                    <div class="article-rail-card">
+                        <p class="article-rail-card__eyebrow">Before You Act</p>
+                        <h2 class="article-rail-card__title">Good planning is mostly good sequencing.</h2>
+                        <p class="article-rail-card__body">Use this page to slow the decision down just enough to avoid the expensive version of “I thought I understood it.”</p>
+                    </div>
+                    <div class="article-rail-card article-rail-card--muted">
+                        <p class="article-rail-card__eyebrow">Important</p>
+                        <p class="article-rail-card__body">Educational only. Results vary. Tax, legal, and investment decisions should be reviewed with a qualified professional who can see your full situation.</p>
+                    </div>
+                </aside>
+            </div>
         </article>
     </main>
 

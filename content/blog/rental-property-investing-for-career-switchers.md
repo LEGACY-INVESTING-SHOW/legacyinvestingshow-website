@@ -144,8 +144,8 @@ relatedPosts:
       Investors
   - slug: airbnb-cash-flow-vs-notes-investing
     title: 'Airbnb Cash Flow vs Notes Investing: Which Strategy Works Better in 2026?'
-readingTime: 10 min read
-wordCount: '2139'
+readingTime: 12 min read
+wordCount: '2250'
 ---
 Rental property investing for career switchers can be a strong path from paycheck dependence to asset-based income, but it is rarely passive at the beginning. If you are moving from a salaried role into consulting, entrepreneurship, commission work, or a lower-paying transition role, rentals can stabilize your finances only when your underwriting is conservative and your reserves are real.
 

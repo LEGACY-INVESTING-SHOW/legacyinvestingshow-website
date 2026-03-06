@@ -134,8 +134,8 @@ relatedPosts:
     title: 'Credit Score Optimization: Improve Your Score Fast'
   - slug: debt-avalanche-method
     title: 'Debt Avalanche Method: The Fastest Way to Pay Off Debt'
-readingTime: 9 min read
-wordCount: '1945'
+readingTime: 11 min read
+wordCount: '2052'
 ---
 The **debt snowball tax implications** are often misunderstood. Paying debt down is generally not taxable by itself. The real tax risk appears when a lender forgives part of what you owe, sends a `Form 1099-C`, and the canceled amount is treated as ordinary income unless an exclusion applies.
 

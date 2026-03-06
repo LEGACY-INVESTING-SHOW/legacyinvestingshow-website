@@ -1,14 +1,18 @@
 ---
-title: "Marriage Brings A $10,000/yr Tax Return 💍"
-description: "Transcript for video MytFVONDnqM. This is a placeholder - integrate with a transcript service like youtube-transcript-api or AssemblyAI to get real transcripts...."
-date: "2026-02-06"
-author: "Preston Seo"
-category: "YouTube"
-videoId: "MytFVONDnqM"
-youtubeUrl: "https://youtube.com/watch?v=MytFVONDnqM"
-image: "/assets/images/blog/default.jpg"
+title: "Marriage Brings A $10,000/yr Tax Return \U0001F48D"
+description: >-
+  Transcript for video MytFVONDnqM. This is a placeholder - integrate with a
+  transcript service like youtube-transcript-api or AssemblyAI to get real
+  transcripts....
+date: '2026-02-06'
+author: Preston Seo
+category: YouTube
+videoId: MytFVONDnqM
+youtubeUrl: 'https://youtube.com/watch?v=MytFVONDnqM'
+image: /assets/images/blog/default.jpg
+wordCount: '68'
+readingTime: 1 min read
 ---
-
 # Marriage Brings A $10,000/yr Tax Return 💍
 
 <div class="video-embed">

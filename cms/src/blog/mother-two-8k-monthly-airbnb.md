@@ -1,27 +1,28 @@
 ---
-# Core SEO Fields
-title: "How a Mother of Two Makes $8K Monthly With Airbnb in the Poconos (2026 Case Study)"
-titleTemplate: "%s | Legacy Investing Show Success Stories"
-description: "Pavi went from zero real estate experience to $8,000/month cash flow with her Poconos short-term rental while working full-time and raising two kids. Learn her exact strategies for market selection, local team building, and property optimization."
-date: 2026-02-04
-modifiedDate: 2026-01-23
+title: >-
+  How a Mother of Two Makes $8K Monthly With Airbnb in the Poconos (2026 Case
+  Study)
+titleTemplate: '%s | Legacy Investing Show Success Stories'
+description: >-
+  Pavi went from zero real estate experience to $8,000/month cash flow with her
+  Poconos short-term rental while working full-time and raising two kids. Learn
+  her exact strategies for market selection, local team building, and property
+  optimization.
+date: 2026-02-04T00:00:00.000Z
+modifiedDate: 2026-01-23T00:00:00.000Z
 author: Preston Seo
-authorTitle: "Founder, Legacy Investing Show"
-authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
+authorTitle: 'Founder, Legacy Investing Show'
+authorCredentials: '2,000+ students trained, $10M+ student revenue generated'
 category: Success Story
-canonical: "https://www.legacyinvestingshow.com/blog/mother-two-8k-monthly-airbnb"
-
-# SEO Keyword Targeting
+canonical: 'https://www.legacyinvestingshow.com/blog/mother-two-8k-monthly-airbnb'
 seo:
-  primaryKeyword: "airbnb success story"
+  primaryKeyword: airbnb success story
   secondaryKeywords:
-    - "short-term rental business"
-    - "poconos airbnb"
+    - short-term rental business
+    - poconos airbnb
   longTailKeywords:
-    - "how to start airbnb while working full time"
-  searchIntent: "informational"
-
-# Tags
+    - how to start airbnb while working full time
+  searchIntent: informational
 tags:
   - airbnb arbitrage
   - rental arbitrage
@@ -29,96 +30,123 @@ tags:
   - case study
   - success story
   - short-term rental
-
-# Open Graph & Social
 image: /assets/images/blog/success-stories/pavi-poconos-airbnb.jpg
-imageAlt: "How a Mother of Two Makes $8K Monthly With Airbnb in the Poconos (2026 Case Study) - Legacy Investing Show"
+imageAlt: >-
+  How a Mother of Two Makes $8K Monthly With Airbnb in the Poconos (2026 Case
+  Study) - Legacy Investing Show
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
 featured: false
-
-# Video Integration
-youtubeId: "oU-ynuaGPQQ"
-
-# Multiple Schema Types for Rich Results
+youtubeId: oU-ynuaGPQQ
 schema:
   - type: Article
-    headline: "How a Mother of Two Makes $8K Monthly With Airbnb in the Poconos (2026 Case Study)"
-    datePublished: "2026-02-04T00:00:00Z"
-    dateModified: "2026-01-23T00:00:00Z"
+    headline: >-
+      How a Mother of Two Makes $8K Monthly With Airbnb in the Poconos (2026
+      Case Study)
+    datePublished: '2026-02-04T00:00:00Z'
+    dateModified: '2026-01-23T00:00:00Z'
   - type: VideoObject
-    name: "How a Mother of Two Makes $8K Monthly With Airbnb in the Poconos (2026 Case Study) - Full Interview"
-    thumbnailUrl: "https://img.youtube.com/vi/oU-ynuaGPQQ/maxresdefault.jpg"
-    embedUrl: "https://www.youtube.com/embed/oU-ynuaGPQQ"
+    name: >-
+      How a Mother of Two Makes $8K Monthly With Airbnb in the Poconos (2026
+      Case Study) - Full Interview
+    thumbnailUrl: 'https://img.youtube.com/vi/oU-ynuaGPQQ/maxresdefault.jpg'
+    embedUrl: 'https://www.youtube.com/embed/oU-ynuaGPQQ'
   - type: HowTo
-    name: "How to Build an Airbnb Business Like This Success Story"
-
-# Breadcrumbs
+    name: How to Build an Airbnb Business Like This Success Story
 breadcrumbs:
-  - name: "Home"
-    url: "/"
-  - name: "Blog"
-    url: "/blog"
-  - name: "Success Stories"
-    url: "/blog/category/success-stories"
-
-# Statistics (AI-crawler accessible, renders as stat cards)
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog
+  - name: Success Stories
+    url: /blog/category/success-stories
 statistics:
-  - value: "$8,000+"
-    label: "Monthly Cash Flow"
-    icon: "dollar"
-    context: "Summer peak season"
-    source: "Student Interview, April 2024"
-  - value: "1"
-    label: "Property"
-    icon: "home"
-    context: "Poconos Mountains, PA"
-  - value: "6 months"
-    label: "Time to First Property"
-    icon: "clock"
-    context: "From joining program"
-  - value: "$500"
-    label: "Nightly Rate"
-    icon: "chart"
-    context: "Slow season average"
-  - value: "Superhost"
-    label: "Status Achieved"
-    icon: "check"
-    context: "All 5-star reviews"
-  - value: "2"
-    label: "Kids at Home"
-    icon: "users"
-    context: "Ages 5 and 2"
-
-# FAQ (FAQPage schema + accordion rendering)
+  - value: '$8,000+'
+    label: Monthly Cash Flow
+    icon: dollar
+    context: Summer peak season
+    source: 'Student Interview, April 2024'
+  - value: '1'
+    label: Property
+    icon: home
+    context: 'Poconos Mountains, PA'
+  - value: 6 months
+    label: Time to First Property
+    icon: clock
+    context: From joining program
+  - value: $500
+    label: Nightly Rate
+    icon: chart
+    context: Slow season average
+  - value: Superhost
+    label: Status Achieved
+    icon: check
+    context: All 5-star reviews
+  - value: '2'
+    label: Kids at Home
+    icon: users
+    context: Ages 5 and 2
 faq:
-  - question: "How much money can you make with Airbnb while working full-time?"
-    answer: "Pavi generates $8,000-$10,000/month from her Poconos short-term rental during peak summer months while working full-time in the medical device industry and raising two young children. Even during slower months like January and February (skiing season), she remained cash flow positive with $500/night rates."
-  - question: "Is it possible to start Airbnb investing with no real estate experience?"
-    answer: "Yes. Pavi had zero real estate experience when she started in 2022. She came from a biomedical engineering background with 15 years in the medical device industry. She got her real estate license while studying at night after putting her kids to bed, then purchased her first property within months of joining Legacy Investing Show."
-  - question: "What is the best market for Airbnb near New Jersey?"
-    answer: "Pavi chose the Poconos Mountains because it's only 2 hours from her home in New Jersey, has year-round demand (skiing in winter, lake activities in summer), and has strong vacation rental fundamentals. The location near lakes and outdoor activities drives consistent bookings."
-  - question: "How long does it take to set up an Airbnb property?"
-    answer: "Pavi took approximately 2-3 months to set up her property after closing in August 2023. She spent every weekend at the property working on setup, which allowed her to build relationships with locals, find her cleaning team, and establish connections with neighbors."
-  - question: "How do you manage an Airbnb property from 2 hours away?"
-    answer: "Pavi manages her Poconos property remotely through a trusted local team. Her cleaner does video walk-throughs via WhatsApp before each guest arrival, handles minor issues, and coordinates with local contractors. Building these relationships during the setup phase made remote management possible."
-  - question: "Can you turn a failed Airbnb into a successful one?"
-    answer: "Yes. Pavi's property was a failed short-term rental under the previous owner who had issues with teenage parties and neighbor complaints. She transformed it by establishing neighbor relationships, implementing strict house rules, installing noise sensors, and screening guests more carefully."
-  - question: "Is Legacy Investing Show worth it for beginners?"
-    answer: "Based on Pavi's experience, yes. She joined when the community was very small, followed the step-by-step checklist provided in the course, and credits the organized content with helping her navigate everything from LLC setup to property acquisition. She went from zero experience to owning a profitable STR within about a year."
-  - question: "What are the benefits of owning vs arbitraging an Airbnb?"
-    answer: "Pavi notes three key benefits of ownership: 1) Property appreciation - her property increased in value within 5 months; 2) Tax write-offs - she deducted upgrade expenses from her taxes; 3) Higher returns long-term compared to arbitrage. However, arbitrage requires less upfront capital, which is why she recommends it for beginners."
-
-# Table of Contents
+  - question: How much money can you make with Airbnb while working full-time?
+    answer: >-
+      Pavi generates $8,000-$10,000/month from her Poconos short-term rental
+      during peak summer months while working full-time in the medical device
+      industry and raising two young children. Even during slower months like
+      January and February (skiing season), she remained cash flow positive with
+      $500/night rates.
+  - question: Is it possible to start Airbnb investing with no real estate experience?
+    answer: >-
+      Yes. Pavi had zero real estate experience when she started in 2022. She
+      came from a biomedical engineering background with 15 years in the medical
+      device industry. She got her real estate license while studying at night
+      after putting her kids to bed, then purchased her first property within
+      months of joining Legacy Investing Show.
+  - question: What is the best market for Airbnb near New Jersey?
+    answer: >-
+      Pavi chose the Poconos Mountains because it's only 2 hours from her home
+      in New Jersey, has year-round demand (skiing in winter, lake activities in
+      summer), and has strong vacation rental fundamentals. The location near
+      lakes and outdoor activities drives consistent bookings.
+  - question: How long does it take to set up an Airbnb property?
+    answer: >-
+      Pavi took approximately 2-3 months to set up her property after closing in
+      August 2023. She spent every weekend at the property working on setup,
+      which allowed her to build relationships with locals, find her cleaning
+      team, and establish connections with neighbors.
+  - question: How do you manage an Airbnb property from 2 hours away?
+    answer: >-
+      Pavi manages her Poconos property remotely through a trusted local team.
+      Her cleaner does video walk-throughs via WhatsApp before each guest
+      arrival, handles minor issues, and coordinates with local contractors.
+      Building these relationships during the setup phase made remote management
+      possible.
+  - question: Can you turn a failed Airbnb into a successful one?
+    answer: >-
+      Yes. Pavi's property was a failed short-term rental under the previous
+      owner who had issues with teenage parties and neighbor complaints. She
+      transformed it by establishing neighbor relationships, implementing strict
+      house rules, installing noise sensors, and screening guests more
+      carefully.
+  - question: Is Legacy Investing Show worth it for beginners?
+    answer: >-
+      Based on Pavi's experience, yes. She joined when the community was very
+      small, followed the step-by-step checklist provided in the course, and
+      credits the organized content with helping her navigate everything from
+      LLC setup to property acquisition. She went from zero experience to owning
+      a profitable STR within about a year.
+  - question: What are the benefits of owning vs arbitraging an Airbnb?
+    answer: >-
+      Pavi notes three key benefits of ownership: 1) Property appreciation - her
+      property increased in value within 5 months; 2) Tax write-offs - she
+      deducted upgrade expenses from her taxes; 3) Higher returns long-term
+      compared to arbitrage. However, arbitrage requires less upfront capital,
+      which is why she recommends it for beginners.
 toc: true
 tocDepth: 3
-
-# Reading Time
-readingTime: "24 min read"
-wordCount: "4645"
+readingTime: 23 min read
+wordCount: '4470'
 ---
-
 **Pavi earns $8,000+ per month from her Poconos short-term rental while working full-time and raising two kids under five.** Starting with zero real estate experience in 2022, this biomedical engineer built a vacation rental business that generates consistent cash flow year-round. Her Poconos property commands $500/night rates even in slower months and achieved Superhost status with all five-star reviews within her first few months of operation.
 
 This case study breaks down exactly how Pavi transformed a previously failed Airbnb into one of the most booked spots in the Poconos, including her specific strategies for market selection, local team building, and the systems that make remote management possible for a busy working mom.

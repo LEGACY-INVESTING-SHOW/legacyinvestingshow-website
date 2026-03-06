@@ -144,8 +144,8 @@ relatedPosts:
       Portfolio You Can Stick With
   - slug: asset-allocation-strategies
     title: 'Asset Allocation Strategies by Age: How to Balance Your Portfolio'
-readingTime: 10 min read
-wordCount: '2230'
+readingTime: 12 min read
+wordCount: '2313'
 ---
 High income creates opportunity, but it also magnifies costly mistakes. The right asset allocation for high earners is not only about picking a stock and bond percentage. It is about building an after-tax system that fits your career risk, liquidity needs, and long-term goals.
 

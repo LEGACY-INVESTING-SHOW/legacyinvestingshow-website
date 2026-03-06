@@ -145,8 +145,8 @@ relatedPosts:
     title: '1031 exchange vs standard deduction: Which Strategy Works Better in 2026?'
   - slug: best-tax-deductions-2025
     title: 'Best Tax Deductions 2025: Complete 2026 Guide to Lower Your Tax Bill'
-readingTime: 11 min read
-wordCount: '2329'
+readingTime: 13 min read
+wordCount: '2494'
 ---
 Most owners focus on equity and sale price, then get surprised by taxes after closing. In practice, capital gains tax for real estate investors is a stack of taxes that can materially change your net proceeds and your next move.
 

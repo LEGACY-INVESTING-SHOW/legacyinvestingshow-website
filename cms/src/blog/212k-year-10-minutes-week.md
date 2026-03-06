@@ -1,27 +1,27 @@
 ---
-# Core SEO Fields
-title: "How I Made $212,000/Year from One Airbnb in Just 10 Minutes Per Week (2025 Case Study)"
-titleTemplate: "%s | Legacy Investing Show Success Stories"
-description: "Behind the scenes of a 5-bedroom Virginia chalet generating $212,700/year with 82% occupancy. Learn the exact systems, team structure, and bridge method that makes 10-minute weekly management possible."
-date: 2025-10-09
-modifiedDate: 2026-01-23
+title: >-
+  How I Made $212,000/Year from One Airbnb in Just 10 Minutes Per Week (2025
+  Case Study)
+titleTemplate: '%s | Legacy Investing Show Success Stories'
+description: >-
+  Behind the scenes of a 5-bedroom Virginia chalet generating $212,700/year with
+  82% occupancy. Learn the exact systems, team structure, and bridge method that
+  makes 10-minute weekly management possible.
+date: 2025-10-09T00:00:00.000Z
+modifiedDate: 2026-01-23T00:00:00.000Z
 author: Preston Seo
-authorTitle: "Founder, Legacy Investing Show"
-authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
+authorTitle: 'Founder, Legacy Investing Show'
+authorCredentials: '2,000+ students trained, $10M+ student revenue generated'
 category: Case Study
-canonical: "https://www.legacyinvestingshow.com/blog/212k-year-10-minutes-week"
-
-# SEO Keyword Targeting
+canonical: 'https://www.legacyinvestingshow.com/blog/212k-year-10-minutes-week'
 seo:
-  primaryKeyword: "airbnb success story"
+  primaryKeyword: airbnb success story
   secondaryKeywords:
-    - "short-term rental business"
+    - short-term rental business
   longTailKeywords:
-    - "how much can you make with airbnb"
-    - "is airbnb arbitrage worth it"
-  searchIntent: "informational"
-
-# Tags
+    - how much can you make with airbnb
+    - is airbnb arbitrage worth it
+  searchIntent: informational
 tags:
   - airbnb arbitrage
   - rental arbitrage
@@ -29,100 +29,132 @@ tags:
   - case study
   - success story
   - short-term rental
-
-# Open Graph & Social
 image: /assets/images/blog/success-stories/212k-virginia-chalet.jpg
-imageAlt: "How I Made $212,000/Year from One Airbnb in Just 10 Minutes Per Week (2025 Case Study) - Legacy Investing Show"
+imageAlt: >-
+  How I Made $212,000/Year from One Airbnb in Just 10 Minutes Per Week (2025
+  Case Study) - Legacy Investing Show
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
 featured: false
-
-# Video Integration
-youtubeId: "4yCM4Q-P45U"
-
-# Multiple Schema Types for Rich Results
+youtubeId: 4yCM4Q-P45U
 schema:
   - type: Article
-    headline: "How I Made $212,000/Year from One Airbnb in Just 10 Minutes Per Week (2025 Case Study)"
-    datePublished: "2026-03-09T00:00:00Z"
-    dateModified: "2026-01-23T00:00:00Z"
+    headline: >-
+      How I Made $212,000/Year from One Airbnb in Just 10 Minutes Per Week (2025
+      Case Study)
+    datePublished: '2026-03-09T00:00:00Z'
+    dateModified: '2026-01-23T00:00:00Z'
   - type: VideoObject
-    name: "How I Made $212,000/Year from One Airbnb in Just 10 Minutes Per Week (2025 Case Study) - Full Interview"
-    thumbnailUrl: "https://img.youtube.com/vi/4yCM4Q-P45U/maxresdefault.jpg"
-    embedUrl: "https://www.youtube.com/embed/4yCM4Q-P45U"
+    name: >-
+      How I Made $212,000/Year from One Airbnb in Just 10 Minutes Per Week (2025
+      Case Study) - Full Interview
+    thumbnailUrl: 'https://img.youtube.com/vi/4yCM4Q-P45U/maxresdefault.jpg'
+    embedUrl: 'https://www.youtube.com/embed/4yCM4Q-P45U'
   - type: HowTo
-    name: "How to Build an Airbnb Business Like This Success Story"
-
-# Breadcrumbs
+    name: How to Build an Airbnb Business Like This Success Story
 breadcrumbs:
-  - name: "Home"
-    url: "/"
-  - name: "Blog"
-    url: "/blog"
-  - name: "Success Stories"
-    url: "/blog/category/success-stories"
-
-# Statistics (AI-crawler accessible, renders as stat cards)
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog
+  - name: Success Stories
+    url: /blog/category/success-stories
 statistics:
-  - value: "$10,000"
-    label: "Monthly Cash Flow"
-    icon: "dollar"
-    context: "After all expenses including mortgage"
-    source: "Property Performance, March 2023-2024"
-  - value: "$212,700"
-    label: "Annual Revenue"
-    icon: "home"
-    context: "12-month period"
-  - value: "52%"
-    label: "Cash-on-Cash Return"
-    icon: "star"
-    context: "On $241,100 total investment"
-  - value: "10 min"
-    label: "Weekly Management"
-    icon: "clock"
-    context: "With VA team handling operations"
-  - value: "82%"
-    label: "Occupancy Rate"
-    icon: "chart"
-    context: "Consistent throughout 12 months"
-  - value: "$710"
-    label: "Average Nightly Rate"
-    icon: "star"
-    context: "5-bedroom chalet"
-
-# FAQ (FAQPage schema + accordion rendering)
+  - value: '$10,000'
+    label: Monthly Cash Flow
+    icon: dollar
+    context: After all expenses including mortgage
+    source: 'Property Performance, March 2023-2024'
+  - value: '$212,700'
+    label: Annual Revenue
+    icon: home
+    context: 12-month period
+  - value: 52%
+    label: Cash-on-Cash Return
+    icon: star
+    context: 'On $241,100 total investment'
+  - value: 10 min
+    label: Weekly Management
+    icon: clock
+    context: With VA team handling operations
+  - value: 82%
+    label: Occupancy Rate
+    icon: chart
+    context: Consistent throughout 12 months
+  - value: $710
+    label: Average Nightly Rate
+    icon: star
+    context: 5-bedroom chalet
 faq:
-  - question: "How much can you make from one Airbnb property?"
-    answer: "This 5-bedroom Virginia chalet generated $212,700 in annual revenue with 82% occupancy, averaging $17,730/month gross and $10,000/month net cash flow after all expenses including mortgage. That's a 52% cash-on-cash return on the $241,100 total investment."
-  - question: "How many hours per week does it take to manage an Airbnb?"
-    answer: "With proper systems, just 10 minutes per week. This is achieved through two virtual assistants ($600/month each) who handle guest messages, cleaner coordination, pricing, and automations. The owner only checks in weekly to ensure everything runs smoothly."
-  - question: "Can you manage an Airbnb completely remotely?"
-    answer: "Yes. This property was set up 100% remotely without the owner stepping foot inside before or after going live. Construction, furniture assembly, and ongoing management are handled by virtual assistants and a boots-on-ground team of cleaners, handymen, and hot tub maintenance."
-  - question: "How much does it cost to start Airbnb arbitrage?"
-    answer: "Using the bridge method (subleasing from landlords), you can start with $10,000-$12,000 covering security deposit, first month's rent, furniture, and supplies. This can generate $2,500+/month profit without buying property or taking on mortgage debt."
-  - question: "What is the bridge method for Airbnb?"
-    answer: "The bridge method means renting properties from landlords and subletting them as short-term rentals. You pitch landlords on your vacation rental company, guarantee professional cleaning and maintenance, and sign 1-3 year sub-contracts. This allows starting without purchasing real estate."
-  - question: "What expenses does an Airbnb have monthly?"
-    answer: "Monthly expenses include: mortgage/rent, property taxes, insurance, HOA fees, utilities, cable/internet, virtual assistant fees ($1,200 total), cleaning coordination, repairs/maintenance budget (3% for new properties), and hot tub maintenance. Total expenses for this property: $7,670/month."
-  - question: "What makes a profitable Airbnb property?"
-    answer: "Key differentiators that competitors can't easily copy: newly built properties (less maintenance for 7-10 years), unique design elements like cabin vibes, structural features like vaulted ceilings and big windows, and amenities competitors lack like hot tubs, game rooms, and theater rooms."
-  - question: "Is Airbnb arbitrage still profitable in 2025?"
-    answer: "Yes. This property achieved 52% cash-on-cash return in 2023-2024. Summer and winter months generated $27,000-$29,000/month in revenue, with slower months at $13,000-$15,000. Success depends on market research, property differentiation, and efficient operations."
-  - question: "How do you find landlords willing to allow Airbnb?"
-    answer: "Search for rental listings in your target market and call landlords directly. Explain you operate a vacation rental company serving corporate workers, traveling nurses, and families. Emphasize professional cleaning after every stay and that you handle all management. Offer 1-3 year contracts based on your confidence level."
-  - question: "What team do you need to run an Airbnb remotely?"
-    answer: "Essential team members: 2 virtual assistants from Upwork or Remote Hub ($600/month each) - one for guest messaging and coordination, one for listings, pricing, and automations. Boots-on-ground: cleaners ($295/turnover passed to guests), handyman (as needed), and specialized maintenance like hot tub service."
-
-# Table of Contents
+  - question: How much can you make from one Airbnb property?
+    answer: >-
+      This 5-bedroom Virginia chalet generated $212,700 in annual revenue with
+      82% occupancy, averaging $17,730/month gross and $10,000/month net cash
+      flow after all expenses including mortgage. That's a 52% cash-on-cash
+      return on the $241,100 total investment.
+  - question: How many hours per week does it take to manage an Airbnb?
+    answer: >-
+      With proper systems, just 10 minutes per week. This is achieved through
+      two virtual assistants ($600/month each) who handle guest messages,
+      cleaner coordination, pricing, and automations. The owner only checks in
+      weekly to ensure everything runs smoothly.
+  - question: Can you manage an Airbnb completely remotely?
+    answer: >-
+      Yes. This property was set up 100% remotely without the owner stepping
+      foot inside before or after going live. Construction, furniture assembly,
+      and ongoing management are handled by virtual assistants and a
+      boots-on-ground team of cleaners, handymen, and hot tub maintenance.
+  - question: How much does it cost to start Airbnb arbitrage?
+    answer: >-
+      Using the bridge method (subleasing from landlords), you can start with
+      $10,000-$12,000 covering security deposit, first month's rent, furniture,
+      and supplies. This can generate $2,500+/month profit without buying
+      property or taking on mortgage debt.
+  - question: What is the bridge method for Airbnb?
+    answer: >-
+      The bridge method means renting properties from landlords and subletting
+      them as short-term rentals. You pitch landlords on your vacation rental
+      company, guarantee professional cleaning and maintenance, and sign 1-3
+      year sub-contracts. This allows starting without purchasing real estate.
+  - question: What expenses does an Airbnb have monthly?
+    answer: >-
+      Monthly expenses include: mortgage/rent, property taxes, insurance, HOA
+      fees, utilities, cable/internet, virtual assistant fees ($1,200 total),
+      cleaning coordination, repairs/maintenance budget (3% for new properties),
+      and hot tub maintenance. Total expenses for this property: $7,670/month.
+  - question: What makes a profitable Airbnb property?
+    answer: >-
+      Key differentiators that competitors can't easily copy: newly built
+      properties (less maintenance for 7-10 years), unique design elements like
+      cabin vibes, structural features like vaulted ceilings and big windows,
+      and amenities competitors lack like hot tubs, game rooms, and theater
+      rooms.
+  - question: Is Airbnb arbitrage still profitable in 2025?
+    answer: >-
+      Yes. This property achieved 52% cash-on-cash return in 2023-2024. Summer
+      and winter months generated $27,000-$29,000/month in revenue, with slower
+      months at $13,000-$15,000. Success depends on market research, property
+      differentiation, and efficient operations.
+  - question: How do you find landlords willing to allow Airbnb?
+    answer: >-
+      Search for rental listings in your target market and call landlords
+      directly. Explain you operate a vacation rental company serving corporate
+      workers, traveling nurses, and families. Emphasize professional cleaning
+      after every stay and that you handle all management. Offer 1-3 year
+      contracts based on your confidence level.
+  - question: What team do you need to run an Airbnb remotely?
+    answer: >-
+      Essential team members: 2 virtual assistants from Upwork or Remote Hub
+      ($600/month each) - one for guest messaging and coordination, one for
+      listings, pricing, and automations. Boots-on-ground: cleaners
+      ($295/turnover passed to guests), handyman (as needed), and specialized
+      maintenance like hot tub service.
 toc: true
 tocDepth: 3
-
-# Reading Time
-readingTime: "20 min read"
-wordCount: "3891"
+readingTime: 19 min read
+wordCount: '3720'
 ---
-
 **One of my short-term rentals made $212,700 in a single year, and I spend just 10 minutes per week managing it.** This 5-bedroom, 4-bathroom chalet in Virginia launched in March 2023 and has consistently delivered $10,000 per month in net cash flow with an 82% occupancy rate. What surprises most people isn't the revenue—it's how little time I spend running it.
 
 This case study breaks down everything: the exact numbers, the management systems that make passive income possible, the market research that identified this opportunity, and how you can replicate this with significantly less capital using the bridge method.

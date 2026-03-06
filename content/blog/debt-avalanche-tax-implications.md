@@ -140,8 +140,8 @@ relatedPosts:
     title: 'Credit Score Optimization: Improve Your Score Fast'
   - slug: debt-avalanche-method
     title: 'Debt Avalanche Method: The Fastest Way to Pay Off Debt'
-readingTime: 11 min read
-wordCount: '2406'
+readingTime: 13 min read
+wordCount: '2524'
 ---
 If you are using the debt avalanche method, the **debt avalanche tax implications** can materially change which balance you should attack first. Most people rank debts by headline APR alone, but tax treatment, deduction limits, and canceled-debt rules can change your true after-tax borrowing cost. If your goal is to keep more cash and avoid filing-season surprises, your payoff strategy should be math-first and tax-aware.
 

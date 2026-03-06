@@ -140,8 +140,8 @@ relatedPosts:
       Portfolio You Can Stick With
   - slug: asset-allocation-for-busy-professionals
     title: 'Asset Allocation for Busy Professionals: Complete 2026 Guide'
-readingTime: 10 min read
-wordCount: '2118'
+readingTime: 12 min read
+wordCount: '2289'
 ---
 If you searched for value investing for dummies, you are likely trying to invest without guessing, chasing hype, or reacting to every headline. Value investing is the practice of buying businesses for less than they are reasonably worth and letting time do the work. It is not fast-money trading. It is a decision system built on cash flow, discipline, and patience.
 

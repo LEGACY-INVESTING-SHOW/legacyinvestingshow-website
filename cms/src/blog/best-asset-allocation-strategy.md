@@ -134,8 +134,8 @@ relatedPosts:
     title: >-
       Asset Allocation Tax Implications: Complete 2026 Guide for After-Tax
       Portfolio Returns
-readingTime: 9 min read
-wordCount: '1934'
+readingTime: 11 min read
+wordCount: '2035'
 ---
 If you are searching for the **best asset allocation strategy**, you are solving two real problems at once: how to grow wealth and how to avoid panic decisions when markets get ugly. In 2026, most US investors are balancing high living costs, uncertain rate expectations, and tax drag in taxable accounts. A strong allocation is less about predicting next quarter and more about building a mix you can hold for 10 to 30 years.
 

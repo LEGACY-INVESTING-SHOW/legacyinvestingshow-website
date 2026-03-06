@@ -144,8 +144,8 @@ relatedPosts:
     title: '1031 exchange vs standard deduction: Which Strategy Works Better in 2026?'
   - slug: best-tax-deductions-2025
     title: 'Best Tax Deductions 2025: Complete 2026 Guide to Lower Your Tax Bill'
-readingTime: 10 min read
-wordCount: '2184'
+readingTime: 12 min read
+wordCount: '2303'
 ---
 Choosing between estate tax planning vs entity restructuring is a capital allocation decision, not just a legal decision. For US families with businesses, rentals, concentrated stock, or multigenerational wealth goals, the wrong sequence can create a tax bill, cash-flow stress, and family conflict at the same time. The right sequence can lower transfer tax, improve successor control, and avoid forced asset sales.
 

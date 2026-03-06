@@ -1,27 +1,26 @@
 ---
-# Core SEO Fields
-title: "How Dustin Built $6,000/Month Cash Flow with Zero Experience (2026 Case Study)"
-titleTemplate: "%s | Legacy Investing Show Success Stories"
-description: "Dustin went from corporate sales to $6,000/month Airbnb cash flow with 2 properties in Texas. Learn how he turned a failed Airbnb into a thriving business, got 5 landlords interested in one weekend, and now works less than 1 hour per week."
-date: 2025-11-20
-modifiedDate: 2026-01-23
+title: 'How Dustin Built $6,000/Month Cash Flow with Zero Experience (2026 Case Study)'
+titleTemplate: '%s | Legacy Investing Show Success Stories'
+description: >-
+  Dustin went from corporate sales to $6,000/month Airbnb cash flow with 2
+  properties in Texas. Learn how he turned a failed Airbnb into a thriving
+  business, got 5 landlords interested in one weekend, and now works less than 1
+  hour per week.
+date: 2025-11-20T00:00:00.000Z
+modifiedDate: 2026-01-23T00:00:00.000Z
 author: Preston Seo
-authorTitle: "Founder, Legacy Investing Show"
-authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
+authorTitle: 'Founder, Legacy Investing Show'
+authorCredentials: '2,000+ students trained, $10M+ student revenue generated'
 category: Success Story
-canonical: "https://www.legacyinvestingshow.com/blog/6000-cash-flow-no-experience"
-
-# SEO Keyword Targeting
+canonical: 'https://www.legacyinvestingshow.com/blog/6000-cash-flow-no-experience'
 seo:
-  primaryKeyword: "airbnb success story"
+  primaryKeyword: airbnb success story
   secondaryKeywords:
-    - "texas airbnb"
+    - texas airbnb
   longTailKeywords:
-    - "how much can you make with airbnb"
-    - "is airbnb arbitrage worth it"
-  searchIntent: "informational"
-
-# Tags
+    - how much can you make with airbnb
+    - is airbnb arbitrage worth it
+  searchIntent: informational
 tags:
   - airbnb arbitrage
   - rental arbitrage
@@ -29,100 +28,129 @@ tags:
   - case study
   - success story
   - short-term rental
-
-# Open Graph & Social
 image: /assets/images/blog/success-stories/dustin-no-experience.jpg
-imageAlt: "How Dustin Built $6,000/Month Cash Flow with Zero Experience (2026 Case Study) - Legacy Investing Show"
+imageAlt: >-
+  How Dustin Built $6,000/Month Cash Flow with Zero Experience (2026 Case Study)
+  - Legacy Investing Show
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
 featured: false
-
-# Video Integration
-youtubeId: "RphvRaiELn4"
-
-# Multiple Schema Types for Rich Results
+youtubeId: RphvRaiELn4
 schema:
   - type: Article
-    headline: "How Dustin Built $6,000/Month Cash Flow with Zero Experience (2026 Case Study)"
-    datePublished: "2026-04-20T00:00:00Z"
-    dateModified: "2026-01-23T00:00:00Z"
+    headline: >-
+      How Dustin Built $6,000/Month Cash Flow with Zero Experience (2026 Case
+      Study)
+    datePublished: '2026-04-20T00:00:00Z'
+    dateModified: '2026-01-23T00:00:00Z'
   - type: VideoObject
-    name: "How Dustin Built $6,000/Month Cash Flow with Zero Experience (2026 Case Study) - Full Interview"
-    thumbnailUrl: "https://img.youtube.com/vi/RphvRaiELn4/maxresdefault.jpg"
-    embedUrl: "https://www.youtube.com/embed/RphvRaiELn4"
+    name: >-
+      How Dustin Built $6,000/Month Cash Flow with Zero Experience (2026 Case
+      Study) - Full Interview
+    thumbnailUrl: 'https://img.youtube.com/vi/RphvRaiELn4/maxresdefault.jpg'
+    embedUrl: 'https://www.youtube.com/embed/RphvRaiELn4'
   - type: HowTo
-    name: "How to Build an Airbnb Business Like This Success Story"
-
-# Breadcrumbs
+    name: How to Build an Airbnb Business Like This Success Story
 breadcrumbs:
-  - name: "Home"
-    url: "/"
-  - name: "Blog"
-    url: "/blog"
-  - name: "Success Stories"
-    url: "/blog/category/success-stories"
-
-# Statistics (AI-crawler accessible, renders as stat cards)
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog
+  - name: Success Stories
+    url: /blog/category/success-stories
 statistics:
-  - value: "$6,000"
-    label: "Monthly Cash Flow"
-    icon: "dollar"
-    context: "After all expenses"
-    source: "Student Interview, 2023"
-  - value: "2"
-    label: "Properties"
-    icon: "home"
-    context: "Texas lakefront market"
-  - value: "4 weeks"
-    label: "Time to First Deal"
-    icon: "clock"
-    context: "From joining program"
-  - value: "6-7x"
-    label: "Revenue Increase"
-    icon: "chart"
-    context: "vs. previous operator"
-  - value: "&lt;1 hr"
-    label: "Weekly Time"
-    icon: "star"
-    context: "With automation"
-  - value: "5"
-    label: "Landlords Interested"
-    icon: "users"
-    context: "In one weekend"
-
-# FAQ (FAQPage schema + accordion rendering)
+  - value: '$6,000'
+    label: Monthly Cash Flow
+    icon: dollar
+    context: After all expenses
+    source: 'Student Interview, 2023'
+  - value: '2'
+    label: Properties
+    icon: home
+    context: Texas lakefront market
+  - value: 4 weeks
+    label: Time to First Deal
+    icon: clock
+    context: From joining program
+  - value: 6-7x
+    label: Revenue Increase
+    icon: chart
+    context: vs. previous operator
+  - value: '&lt;1 hr'
+    label: Weekly Time
+    icon: star
+    context: With automation
+  - value: '5'
+    label: Landlords Interested
+    icon: users
+    context: In one weekend
 faq:
-  - question: "How much money can you make with Airbnb arbitrage with no experience?"
-    answer: "Dustin generates $6,000/month in cash flow from 2 properties in Texas with zero prior real estate experience. His first property alone nets $3,000-$3,500/month after $2,500 rent, and he projects $35,000/year profit from that single deal over his 3-year lease."
-  - question: "How long does it take to get your first Airbnb arbitrage property?"
-    answer: "Dustin secured his first property within 4 weeks of joining Legacy Investing Show. After 3 weeks of research (which he admits was too much analysis), he spent one weekend making 30-40 calls and got 5 landlords interested. He signed his first lease by Monday."
-  - question: "Can you turn a failed Airbnb into a profitable one?"
-    answer: "Yes. Dustin's first property was a failed Airbnb that made only $1,000/month for the previous operator over 9 months. Using Legacy Investing Show strategies, he transformed it to generate $6,000-$7,500/month in gross revenue - a 6-7x improvement."
-  - question: "How much does it cost to start Airbnb arbitrage?"
-    answer: "Dustin invested $15,000 for his first property (including deposit, first month rent, furniture, and exterior improvements). His second property cost $11,500 total because the landlord split furniture costs. ROI was achieved within 3-4 months on each property."
-  - question: "How much time does Airbnb arbitrage take per week?"
-    answer: "With 2 properties live and automated messaging in place, Dustin spends less than 1 hour per week on operations. He has a business partner who handles guest communication, and the automated systems handle most inquiries without human intervention."
-  - question: "What is the best strategy to find Airbnb arbitrage properties?"
-    answer: "Dustin's breakthrough came from calling properties with bad photos that had been sitting on the market for 30-50+ days. These 'diamonds in the rough' have less competition and landlords are more motivated. He found 5 interested landlords in one weekend of calling."
-  - question: "Do you need experience to start Airbnb arbitrage?"
-    answer: "No. Dustin had zero real estate or property management experience. His background was in corporate sales and management. He leveraged the Legacy Investing Show program, scripts, and community to learn as he went. His sales skills helped with landlord negotiations."
-  - question: "Is Legacy Investing Show worth it for beginners?"
-    answer: "Based on Dustin's results, he went from zero properties to $6,000/month cash flow within months of joining. He credits the program's blueprint, scripts, and community support for his success. The mentorship helped him avoid common mistakes and scale faster."
-  - question: "How do you automate an Airbnb business?"
-    answer: "Dustin built systems from day one: automated messaging handles most guest inquiries, a business partner manages coordination, and he documents every process as a checklist. This allows him to manage 2 properties in under 1 hour per week while working his 9-5."
-  - question: "What makes a good Airbnb arbitrage property?"
-    answer: "Dustin focuses on lakefront properties that offer outdoor experiences - water sports, fishing, and family activities. He looks for properties with bad photos (less competition), motivated landlords (30+ days on market), and potential for improvement through design and amenities."
-
-# Table of Contents
+  - question: How much money can you make with Airbnb arbitrage with no experience?
+    answer: >-
+      Dustin generates $6,000/month in cash flow from 2 properties in Texas with
+      zero prior real estate experience. His first property alone nets
+      $3,000-$3,500/month after $2,500 rent, and he projects $35,000/year profit
+      from that single deal over his 3-year lease.
+  - question: How long does it take to get your first Airbnb arbitrage property?
+    answer: >-
+      Dustin secured his first property within 4 weeks of joining Legacy
+      Investing Show. After 3 weeks of research (which he admits was too much
+      analysis), he spent one weekend making 30-40 calls and got 5 landlords
+      interested. He signed his first lease by Monday.
+  - question: Can you turn a failed Airbnb into a profitable one?
+    answer: >-
+      Yes. Dustin's first property was a failed Airbnb that made only
+      $1,000/month for the previous operator over 9 months. Using Legacy
+      Investing Show strategies, he transformed it to generate
+      $6,000-$7,500/month in gross revenue - a 6-7x improvement.
+  - question: How much does it cost to start Airbnb arbitrage?
+    answer: >-
+      Dustin invested $15,000 for his first property (including deposit, first
+      month rent, furniture, and exterior improvements). His second property
+      cost $11,500 total because the landlord split furniture costs. ROI was
+      achieved within 3-4 months on each property.
+  - question: How much time does Airbnb arbitrage take per week?
+    answer: >-
+      With 2 properties live and automated messaging in place, Dustin spends
+      less than 1 hour per week on operations. He has a business partner who
+      handles guest communication, and the automated systems handle most
+      inquiries without human intervention.
+  - question: What is the best strategy to find Airbnb arbitrage properties?
+    answer: >-
+      Dustin's breakthrough came from calling properties with bad photos that
+      had been sitting on the market for 30-50+ days. These 'diamonds in the
+      rough' have less competition and landlords are more motivated. He found 5
+      interested landlords in one weekend of calling.
+  - question: Do you need experience to start Airbnb arbitrage?
+    answer: >-
+      No. Dustin had zero real estate or property management experience. His
+      background was in corporate sales and management. He leveraged the Legacy
+      Investing Show program, scripts, and community to learn as he went. His
+      sales skills helped with landlord negotiations.
+  - question: Is Legacy Investing Show worth it for beginners?
+    answer: >-
+      Based on Dustin's results, he went from zero properties to $6,000/month
+      cash flow within months of joining. He credits the program's blueprint,
+      scripts, and community support for his success. The mentorship helped him
+      avoid common mistakes and scale faster.
+  - question: How do you automate an Airbnb business?
+    answer: >-
+      Dustin built systems from day one: automated messaging handles most guest
+      inquiries, a business partner manages coordination, and he documents every
+      process as a checklist. This allows him to manage 2 properties in under 1
+      hour per week while working his 9-5.
+  - question: What makes a good Airbnb arbitrage property?
+    answer: >-
+      Dustin focuses on lakefront properties that offer outdoor experiences -
+      water sports, fishing, and family activities. He looks for properties with
+      bad photos (less competition), motivated landlords (30+ days on market),
+      and potential for improvement through design and amenities.
 toc: true
 tocDepth: 3
-
-# Reading Time
-readingTime: "27 min read"
-wordCount: "5217"
+readingTime: 26 min read
+wordCount: '5024'
 ---
-
 **Dustin Cotton earns $6,000 per month in cash flow from 2 Airbnb arbitrage properties in Texas with zero prior real estate experience.** Starting as a corporate sales professional with a 12-year career, he joined Legacy Investing Show and secured his first property within 4 weeks. His first property was actually a failed Airbnb that the previous operator couldn't make work - Dustin transformed it from $1,000/month to $6,000-$7,500/month in gross revenue using the strategies he learned.
 
 This case study breaks down exactly how Dustin built this Airbnb arbitrage business, including his weekend calling blitz that got 5 landlords interested, how he turned a failed property into a thriving one, and the systems that let him manage everything in less than 1 hour per week while still working his 9-to-5.

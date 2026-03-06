@@ -144,8 +144,8 @@ relatedPosts:
       Investors
   - slug: airbnb-cash-flow-vs-notes-investing
     title: 'Airbnb Cash Flow vs Notes Investing: Which Strategy Works Better in 2026?'
-readingTime: 10 min read
-wordCount: '2272'
+readingTime: 13 min read
+wordCount: '2478'
 ---
 # Rental Property Investing vs Index Funds: Which Strategy Works Better in 2026?
 

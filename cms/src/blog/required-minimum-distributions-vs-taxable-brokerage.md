@@ -154,8 +154,8 @@ relatedPosts:
     title: >-
       401k Strategy Tax Implications: Complete 2026 Guide to Contributions,
       Withdrawals, and Bracket Control
-readingTime: 11 min read
-wordCount: '2329'
+readingTime: 13 min read
+wordCount: '2424'
 ---
 required minimum distributions vs taxable brokerage is one of the most important retirement withdrawal decisions in 2026 because the tax character is different: RMD dollars are usually taxed as ordinary income, while taxable brokerage withdrawals are partly return of basis and partly capital gain. If you ignore that difference, you can overpay taxes in your 70s, trigger Medicare premium surcharges sooner, or leave heirs a less tax-efficient asset mix.
 

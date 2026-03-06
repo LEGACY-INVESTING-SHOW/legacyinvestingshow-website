@@ -1,28 +1,28 @@
 ---
-# Core SEO Fields
-title: "How Kayla Landed Her First Airbnb in 7 Days with Her First-Ever Pitch (Dentist Case Study)"
-titleTemplate: "%s | Legacy Investing Show Success Stories"
-description: "Kayla Schwarz, a full-time dentist from Cleveland, landed her first Airbnb arbitrage property in just 7 days with her very first pitch. Learn how she generated $82,000 in her first 12 months while managing her dental practice."
-date: 2026-02-19
-modifiedDate: 2026-01-23
+title: >-
+  How Kayla Landed Her First Airbnb in 7 Days with Her First-Ever Pitch (Dentist
+  Case Study)
+titleTemplate: '%s | Legacy Investing Show Success Stories'
+description: >-
+  Kayla Schwarz, a full-time dentist from Cleveland, landed her first Airbnb
+  arbitrage property in just 7 days with her very first pitch. Learn how she
+  generated $82,000 in her first 12 months while managing her dental practice.
+date: 2026-02-19T00:00:00.000Z
+modifiedDate: 2026-01-23T00:00:00.000Z
 author: Preston Seo
-authorTitle: "Founder, Legacy Investing Show"
-authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
+authorTitle: 'Founder, Legacy Investing Show'
+authorCredentials: '2,000+ students trained, $10M+ student revenue generated'
 category: Success Story
-canonical: "https://www.legacyinvestingshow.com/blog/dentist-airbnb-7-days-first-pitch"
-
-# SEO Keyword Targeting
+canonical: 'https://www.legacyinvestingshow.com/blog/dentist-airbnb-7-days-first-pitch'
 seo:
-  primaryKeyword: "airbnb success story"
+  primaryKeyword: airbnb success story
   secondaryKeywords:
-    - "rental arbitrage"
-    - "short-term rental investing"
+    - rental arbitrage
+    - short-term rental investing
   longTailKeywords:
-    - "how to start airbnb while working full time"
-    - "first airbnb property tips"
-  searchIntent: "informational"
-
-# Tags
+    - how to start airbnb while working full time
+    - first airbnb property tips
+  searchIntent: informational
 tags:
   - airbnb arbitrage
   - rental arbitrage
@@ -30,100 +30,131 @@ tags:
   - case study
   - success story
   - short-term rental
-
-# Open Graph & Social
 image: /assets/images/blog/success-stories/kayla-dentist-cleveland.jpg
-imageAlt: "How Kayla Landed Her First Airbnb in 7 Days with Her First-Ever Pitch (Dentist Case Study) - Legacy Investing Show"
+imageAlt: >-
+  How Kayla Landed Her First Airbnb in 7 Days with Her First-Ever Pitch (Dentist
+  Case Study) - Legacy Investing Show
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
 featured: false
-
-# Video Integration
-youtubeId: "bnLAhmiwh4s"
-
-# Multiple Schema Types for Rich Results
+youtubeId: bnLAhmiwh4s
 schema:
   - type: Article
-    headline: "How Kayla Landed Her First Airbnb in 7 Days with Her First-Ever Pitch (Dentist Case Study)"
-    datePublished: "2026-02-19T00:00:00Z"
-    dateModified: "2026-01-23T00:00:00Z"
+    headline: >-
+      How Kayla Landed Her First Airbnb in 7 Days with Her First-Ever Pitch
+      (Dentist Case Study)
+    datePublished: '2026-02-19T00:00:00Z'
+    dateModified: '2026-01-23T00:00:00Z'
   - type: VideoObject
-    name: "How Kayla Landed Her First Airbnb in 7 Days with Her First-Ever Pitch (Dentist Case Study) - Full Interview"
-    thumbnailUrl: "https://img.youtube.com/vi/bnLAhmiwh4s/maxresdefault.jpg"
-    embedUrl: "https://www.youtube.com/embed/bnLAhmiwh4s"
+    name: >-
+      How Kayla Landed Her First Airbnb in 7 Days with Her First-Ever Pitch
+      (Dentist Case Study) - Full Interview
+    thumbnailUrl: 'https://img.youtube.com/vi/bnLAhmiwh4s/maxresdefault.jpg'
+    embedUrl: 'https://www.youtube.com/embed/bnLAhmiwh4s'
   - type: HowTo
-    name: "How to Build an Airbnb Business Like This Success Story"
-
-# Breadcrumbs
+    name: How to Build an Airbnb Business Like This Success Story
 breadcrumbs:
-  - name: "Home"
-    url: "/"
-  - name: "Blog"
-    url: "/blog"
-  - name: "Success Stories"
-    url: "/blog/category/success-stories"
-
-# Statistics (AI-crawler accessible, renders as stat cards)
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog
+  - name: Success Stories
+    url: /blog/category/success-stories
 statistics:
-  - value: "$82,000"
-    label: "First Year Revenue"
-    icon: "dollar"
-    context: "From one property"
-    source: "Student Interview, April 2024"
-  - value: "7 Days"
-    label: "Time to First Deal"
-    icon: "clock"
-    context: "With second pitch"
-  - value: "2,200 sq ft"
-    label: "Property Size"
-    icon: "home"
-    context: "Trendy townhome in Tremont"
-  - value: "8+"
-    label: "Guest Capacity"
-    icon: "users"
-    context: "Bachelor/bachelorette parties"
-  - value: "$4,000"
-    label: "Monthly Rent"
-    icon: "dollar"
-    context: "High-end property investment"
-  - value: "2-4 hrs/week"
-    label: "Time Investment"
-    icon: "clock"
-    context: "With virtual assistant"
-
-# FAQ (FAQPage schema + accordion rendering)
+  - value: '$82,000'
+    label: First Year Revenue
+    icon: dollar
+    context: From one property
+    source: 'Student Interview, April 2024'
+  - value: 7 Days
+    label: Time to First Deal
+    icon: clock
+    context: With second pitch
+  - value: '2,200 sq ft'
+    label: Property Size
+    icon: home
+    context: Trendy townhome in Tremont
+  - value: 8+
+    label: Guest Capacity
+    icon: users
+    context: Bachelor/bachelorette parties
+  - value: '$4,000'
+    label: Monthly Rent
+    icon: dollar
+    context: High-end property investment
+  - value: 2-4 hrs/week
+    label: Time Investment
+    icon: clock
+    context: With virtual assistant
 faq:
-  - question: "How much money can you make with Airbnb arbitrage?"
-    answer: "Kayla generated $82,000 in revenue in her first 12 months with just one property in Cleveland, Ohio. After expenses including $4,000/month rent, utilities, cleaning, and virtual assistant costs, she achieved profitability within the first year while working full-time as a dentist."
-  - question: "How long does it take to get your first Airbnb arbitrage property?"
-    answer: "Kayla secured her first property in just 7 days with her second pitch. She discovered Airbnb arbitrage on a Wednesday, took Preston's intro course on Saturday or Sunday, and had a signed lease by mid-April after starting market research in March."
-  - question: "Is Airbnb arbitrage still profitable in 2026?"
-    answer: "Yes. Kayla started in 2023 and by April had already booked $40,000 for April through July alone. Her property in Cleveland, an often-overlooked market, proves that profitability exists in unexpected locations with the right property and target guest demographic."
-  - question: "Can you do Airbnb arbitrage with a full-time job?"
-    answer: "Absolutely. Kayla manages her Airbnb while running her own dental practice. After initial setup and hiring a virtual assistant (her best friend from high school), she spends only 2-4 hours per week on the business. The key is building trusted systems and team members."
-  - question: "How much does it cost to start Airbnb arbitrage?"
-    answer: "Kayla invested $35,000-$40,000 for her 2,200 square foot property targeting bachelor/bachelorette parties and large groups. This included furniture, professional photography, decor, and setup costs. She used savings and money from her dental business to fund the initial investment."
-  - question: "Do you need real estate experience to start Airbnb arbitrage?"
-    answer: "No. Kayla had zero real estate experience. She was a dentist who had never heard of Airbnb arbitrage before discovering it on TikTok. Her business ownership skills from running a dental practice transferred well, but she learned everything about short-term rentals through Preston's course."
-  - question: "What is the best market for Airbnb arbitrage?"
-    answer: "Kayla chose Cleveland, Ohio because Air DNA data showed it was an untapped market with demand for larger properties hosting 8+ guests. Popular markets like Nashville, New York, and California are often saturated or have restrictive regulations, making overlooked markets more attractive."
-  - question: "Is Legacy Investing Show worth it?"
-    answer: "Based on Kayla's results, the program provided the exact framework she needed: scripts for landlord pitches, systems for running the business, and strategies for market research. She went from complete beginner to property owner in less than two months, generating $82,000 in her first year."
-  - question: "How do you convince a landlord to let you do Airbnb arbitrage?"
-    answer: "Kayla prepared a portfolio with safety measures, noise monitoring, and property maintenance promises. The key was presenting herself as an easy tenant who would maintain the property better than a traditional renter. She dressed casually, stayed quiet while viewing, and let the landlord see she wouldn't be high-maintenance."
-  - question: "What tools do you need for Airbnb arbitrage?"
-    answer: "Kayla uses Air DNA for market research, Price Labs for dynamic pricing, Guesty for property management, professional photography for listings, and a virtual assistant for day-to-day guest communication. These tools allow her to manage the business in just 2-4 hours per week."
-
-# Table of Contents
+  - question: How much money can you make with Airbnb arbitrage?
+    answer: >-
+      Kayla generated $82,000 in revenue in her first 12 months with just one
+      property in Cleveland, Ohio. After expenses including $4,000/month rent,
+      utilities, cleaning, and virtual assistant costs, she achieved
+      profitability within the first year while working full-time as a dentist.
+  - question: How long does it take to get your first Airbnb arbitrage property?
+    answer: >-
+      Kayla secured her first property in just 7 days with her second pitch. She
+      discovered Airbnb arbitrage on a Wednesday, took Preston's intro course on
+      Saturday or Sunday, and had a signed lease by mid-April after starting
+      market research in March.
+  - question: Is Airbnb arbitrage still profitable in 2026?
+    answer: >-
+      Yes. Kayla started in 2023 and by April had already booked $40,000 for
+      April through July alone. Her property in Cleveland, an often-overlooked
+      market, proves that profitability exists in unexpected locations with the
+      right property and target guest demographic.
+  - question: Can you do Airbnb arbitrage with a full-time job?
+    answer: >-
+      Absolutely. Kayla manages her Airbnb while running her own dental
+      practice. After initial setup and hiring a virtual assistant (her best
+      friend from high school), she spends only 2-4 hours per week on the
+      business. The key is building trusted systems and team members.
+  - question: How much does it cost to start Airbnb arbitrage?
+    answer: >-
+      Kayla invested $35,000-$40,000 for her 2,200 square foot property
+      targeting bachelor/bachelorette parties and large groups. This included
+      furniture, professional photography, decor, and setup costs. She used
+      savings and money from her dental business to fund the initial investment.
+  - question: Do you need real estate experience to start Airbnb arbitrage?
+    answer: >-
+      No. Kayla had zero real estate experience. She was a dentist who had never
+      heard of Airbnb arbitrage before discovering it on TikTok. Her business
+      ownership skills from running a dental practice transferred well, but she
+      learned everything about short-term rentals through Preston's course.
+  - question: What is the best market for Airbnb arbitrage?
+    answer: >-
+      Kayla chose Cleveland, Ohio because Air DNA data showed it was an untapped
+      market with demand for larger properties hosting 8+ guests. Popular
+      markets like Nashville, New York, and California are often saturated or
+      have restrictive regulations, making overlooked markets more attractive.
+  - question: Is Legacy Investing Show worth it?
+    answer: >-
+      Based on Kayla's results, the program provided the exact framework she
+      needed: scripts for landlord pitches, systems for running the business,
+      and strategies for market research. She went from complete beginner to
+      property owner in less than two months, generating $82,000 in her first
+      year.
+  - question: How do you convince a landlord to let you do Airbnb arbitrage?
+    answer: >-
+      Kayla prepared a portfolio with safety measures, noise monitoring, and
+      property maintenance promises. The key was presenting herself as an easy
+      tenant who would maintain the property better than a traditional renter.
+      She dressed casually, stayed quiet while viewing, and let the landlord see
+      she wouldn't be high-maintenance.
+  - question: What tools do you need for Airbnb arbitrage?
+    answer: >-
+      Kayla uses Air DNA for market research, Price Labs for dynamic pricing,
+      Guesty for property management, professional photography for listings, and
+      a virtual assistant for day-to-day guest communication. These tools allow
+      her to manage the business in just 2-4 hours per week.
 toc: true
 tocDepth: 3
-
-# Reading Time
-readingTime: "30 min read"
-wordCount: "5804"
+readingTime: 29 min read
+wordCount: '5640'
 ---
-
 **Kayla Schwarz generated $82,000 in her first 12 months from one Airbnb arbitrage property in Cleveland, Ohio.** A full-time dentist who owns her own practice, Kayla discovered Airbnb arbitrage on TikTok, took Preston's intro course the same weekend, and secured her first property within 7 days of her first landlord pitch. Today, she manages her 2,200 square foot trendy townhome in just 2-4 hours per week while running her dental practice full-time.
 
 This case study breaks down exactly how Kayla built this Airbnb arbitrage business, including her specific approach to landlord negotiations, market selection in an often-overlooked city, and the systems that allow her to manage everything with minimal time investment.

@@ -141,8 +141,8 @@ relatedPosts:
     title: 'Credit Score Optimization: Improve Your Score Fast'
   - slug: debt-avalanche-method
     title: 'Debt Avalanche Method: The Fastest Way to Pay Off Debt'
-readingTime: 8 min read
-wordCount: '1854'
+readingTime: 10 min read
+wordCount: '1988'
 ---
 Debt consolidation for bad credit can be a smart move, but only when the numbers beat your current path and the plan prevents re-borrowing. Many people focus on monthly payment alone and miss the real drivers: APR, fees, repayment term, tax side effects, and behavior risk.
 

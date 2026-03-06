@@ -148,8 +148,8 @@ relatedPosts:
     title: 'Best Tax Deductions for High Income Earners: Complete 2026 Guide'
   - slug: best-tax-deductions-for-individuals
     title: 'Best Tax Deductions for Individuals: Complete 2026 Guide'
-readingTime: 9 min read
-wordCount: '2078'
+readingTime: 11 min read
+wordCount: '2154'
 ---
 If you are deciding between **capital gains tax vs retirement contributions**, you are really deciding when and how you want to be taxed. That sounds simple, but the lifetime dollar difference can be large because timing interacts with compounding, brackets, and behavior.
 

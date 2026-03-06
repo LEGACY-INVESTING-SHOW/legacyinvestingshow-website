@@ -141,8 +141,8 @@ relatedPosts:
     title: '1031 exchange vs standard deduction: Which Strategy Works Better in 2026?'
   - slug: best-tax-deductions-2025
     title: 'Best Tax Deductions 2025: Complete 2026 Guide to Lower Your Tax Bill'
-readingTime: 10 min read
-wordCount: '2182'
+readingTime: 12 min read
+wordCount: '2267'
 ---
 An estate tax planning calculator is one of the highest-leverage tools you can use if your household has meaningful assets, concentrated business equity, or real estate in a state with its own estate tax. Used correctly, it is not just a number tool. It is a decision tool that helps you choose between gifting, trusts, insurance, charitable planning, and timing.
 

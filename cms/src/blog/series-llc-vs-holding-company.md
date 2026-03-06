@@ -133,8 +133,8 @@ relatedPosts:
     title: 'Business Credit Building: Separate Your Personal & Business Finances'
   - slug: business-succession-planning
     title: 'Business Succession Planning: How to Transfer Ownership'
-readingTime: 10 min read
-wordCount: '2219'
+readingTime: 12 min read
+wordCount: '2334'
 ---
 The series llc vs holding company decision is not mainly a legal theory debate. It is an execution problem: can you keep liability walls intact, satisfy lenders, keep filings clean, and avoid paying for complexity you do not need.
 

@@ -146,8 +146,8 @@ relatedPosts:
       Investors
   - slug: airbnb-cash-flow-vs-notes-investing
     title: 'Airbnb Cash Flow vs Notes Investing: Which Strategy Works Better in 2026?'
-readingTime: 9 min read
-wordCount: '2068'
+readingTime: 12 min read
+wordCount: '2277'
 ---
 If you are deciding between **brrrr method vs notes investing**, you are really choosing between two very different engines of wealth: an active, operations-heavy real estate model versus a more paper-based cash flow model. Both can work in 2026. Both can fail if underwritten casually.
 

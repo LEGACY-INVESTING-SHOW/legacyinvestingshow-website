@@ -140,8 +140,8 @@ relatedPosts:
     title: 'Business Credit Building: Separate Your Personal & Business Finances'
   - slug: business-succession-planning
     title: 'Business Succession Planning: How to Transfer Ownership'
-readingTime: 10 min read
-wordCount: '2109'
+readingTime: 11 min read
+wordCount: '2134'
 ---
 If you are expanding across state lines, **multi state llc tax implications** are less about one tax rate and more about a system of decisions. The IRS determines your federal baseline, but each state can impose its own income, franchise, sales, payroll, and filing rules. That is why growth can look profitable on paper and still create a cash crunch at tax time.
 

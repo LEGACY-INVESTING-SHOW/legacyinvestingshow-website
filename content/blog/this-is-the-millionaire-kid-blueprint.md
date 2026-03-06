@@ -1,14 +1,18 @@
 ---
-title: "This Is The Millionaire Kid Blueprint ✍🏼"
-description: "Transcript for video Xcbr4kEWLNs. This is a placeholder - integrate with a transcript service like youtube-transcript-api or AssemblyAI to get real transcripts...."
-date: "2026-02-06"
-author: "Preston Seo"
-category: "YouTube"
-videoId: "Xcbr4kEWLNs"
-youtubeUrl: "https://youtube.com/watch?v=Xcbr4kEWLNs"
-image: "/assets/images/blog/default.jpg"
+title: "This Is The Millionaire Kid Blueprint ✍\U0001F3FC"
+description: >-
+  Transcript for video Xcbr4kEWLNs. This is a placeholder - integrate with a
+  transcript service like youtube-transcript-api or AssemblyAI to get real
+  transcripts....
+date: '2026-02-06'
+author: Preston Seo
+category: YouTube
+videoId: Xcbr4kEWLNs
+youtubeUrl: 'https://youtube.com/watch?v=Xcbr4kEWLNs'
+image: /assets/images/blog/default.jpg
+wordCount: '68'
+readingTime: 1 min read
 ---
-
 # This Is The Millionaire Kid Blueprint ✍🏼
 
 <div class="video-embed">

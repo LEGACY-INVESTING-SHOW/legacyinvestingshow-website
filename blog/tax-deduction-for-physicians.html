@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Primary Meta Tags -->
-    <title>Tax Deduction for Physicians: Compl… | Legacy Investing Show</title>
-    <meta name="title" content="Tax Deduction for Physicians: Compl… | Legacy Investing Show">
-    <meta name="description" content="A practical, physician-specific blueprint for US doctors to optimize deductions in 2026 with frameworks, numeric examples, scenario planning, implementation…">
+    <title>Tax Deduction for Physicians: Complete 2026 Guide to Strategic Tax Savings | Legacy Investing Show</title>
+    <meta name="title" content="Tax Deduction for Physicians: Complete 2026 Guide to Strategic Tax Savings | Legacy Investing Show">
+    <meta name="description" content="A practical, physician-specific blueprint for US doctors to optimize deductions in 2026 with frameworks, numeric examples, scenario planning, implementation steps, and a 30-day checklist.">
     <meta name="keywords" content="tax deduction for physicians, tax deduction for physicians, physician tax deductions 2026, doctor tax strategy, how to track mileage deductions as a physician, best tax deductions for independent contractor physicians, tax strategy for physicians who are not sure about home office deductions">
     <meta name="author" content="Preston Seo">
     <meta name="robots" content="index, follow">
@@ -46,137 +46,572 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    
+
     <!-- Preload hero image for LCP -->
-    <link rel="preload" as="image" href="../assets/images/blog/tax-deduction-for-physicians.jpg" type="image/webp" fetchpriority="high">
+    
     <link rel="preload" as="image" href="../assets/images/blog/tax-deduction-for-physicians.jpg" fetchpriority="high">
+    
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../assets/css/styles.css">
     
-    <!-- Content Styling Fixes -->
     <style>
-        /* Base typography */
-        .minimal-content {
-            font-size: 1.125rem;
-            line-height: 1.8;
-            color: #374151;
+        .minimal-article {
+            margin: 0 auto;
+            max-width: 1280px;
+            padding: 124px 24px 88px;
         }
-        
-        /* Paragraphs */
-        .minimal-content p {
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
+
+        .article-shell {
+            display: grid;
+            gap: 2rem;
+            align-items: start;
         }
-        
-        /* Headings */
-        .minimal-content h2 {
-            margin-top: 3.5rem;
-            margin-bottom: 1.5rem;
-            font-size: 2.25rem;
+
+        .article-main {
+            min-width: 0;
+        }
+
+        .article-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.55rem;
+            margin-bottom: 1rem;
+            padding: 0.45rem 0.85rem;
+            border-radius: 999px;
+            background: rgba(15, 23, 42, 0.04);
+            border: 1px solid rgba(201, 169, 97, 0.18);
+            color: var(--gold-dark);
+            font-size: 0.75rem;
             font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .article-eyebrow::before {
+            content: "";
+            width: 0.45rem;
+            height: 0.45rem;
+            border-radius: 999px;
+            background: var(--gold);
+            box-shadow: 0 0 0 6px rgba(201, 169, 97, 0.12);
+        }
+
+        .minimal-article-header {
+            margin-bottom: 1.8rem;
+            text-align: left;
+        }
+
+        .minimal-article-meta {
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .minimal-article-title {
+            max-width: 14ch;
+            margin-bottom: 1rem;
+            font-size: clamp(2.4rem, 5vw, 4.5rem);
+            line-height: 0.98;
+            letter-spacing: -0.04em;
+        }
+
+        .minimal-article-description {
+            max-width: 46rem;
+            margin: 0 0 1.15rem;
+            color: var(--text-secondary);
+            font-size: 1.08rem;
+            line-height: 1.8;
+        }
+
+        .minimal-article-author {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.85rem;
+            padding: 0.55rem 0.8rem 0.55rem 0.55rem;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 14px 34px rgba(15, 23, 42, 0.06);
+        }
+
+        .author-avatar {
+            width: 2.6rem;
+            height: 2.6rem;
+            border-radius: 999px;
+            object-fit: cover;
+            border: 2px solid rgba(201, 169, 97, 0.24);
+        }
+
+        .minimal-featured-image {
+            margin-bottom: 1.8rem;
+            border-radius: 28px;
+            overflow: hidden;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 28px 80px rgba(15, 23, 42, 0.12);
+        }
+
+        .article-intro-card {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+            margin-bottom: 1.8rem;
+            padding: 1.6rem 1.75rem;
+            border-radius: 28px;
+            background:
+                radial-gradient(circle at top right, rgba(201, 169, 97, 0.18), transparent 38%),
+                linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(250, 247, 242, 0.92));
+            border: 1px solid rgba(201, 169, 97, 0.22);
+            box-shadow: 0 20px 48px rgba(15, 23, 42, 0.08);
+        }
+
+        .article-intro-card__eyebrow {
+            margin: 0 0 0.6rem;
+            color: var(--gold-dark);
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .article-intro-card__title {
+            margin: 0;
+            color: var(--navy);
+            font-size: clamp(1.55rem, 2.5vw, 2.15rem);
+            line-height: 1.08;
+        }
+
+        .article-intro-card__copy {
+            margin: 0;
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.78;
+        }
+
+        .article-intro-card__list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 0.8rem;
+        }
+
+        .article-intro-card__list li {
+            position: relative;
+            margin: 0;
+            padding-left: 1.35rem;
+            color: var(--text-primary);
+            font-size: 0.96rem;
+            line-height: 1.65;
+        }
+
+        .article-intro-card__list li::before {
+            content: "";
+            position: absolute;
+            top: 0.58rem;
+            left: 0;
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 999px;
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+        }
+
+        .article-rail {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .statistics-section {
+            margin: 0;
+        }
+
+        .statistics-grid {
+            display: grid;
+            gap: 0.9rem;
+            grid-template-columns: 1fr;
+        }
+
+        .stat-card {
+            padding: 1.15rem 1.2rem;
+            border-radius: 24px;
+            background: rgba(255, 255, 255, 0.92);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+            text-align: left;
+        }
+
+        .stat-icon-wrapper {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.7rem;
+            height: 2.7rem;
+            margin-bottom: 0.95rem;
+            border-radius: 0.95rem;
+            background: rgba(201, 169, 97, 0.12);
+            color: var(--gold-dark);
+        }
+
+        .stat-icon {
+            width: 1.3rem;
+            height: 1.3rem;
+        }
+
+        .stat-value {
+            color: var(--navy);
+            font-family: "DM Serif Display", Georgia, serif;
+            font-size: 2rem;
+            line-height: 1;
+            letter-spacing: -0.04em;
+        }
+
+        .stat-label {
+            margin-top: 0.45rem;
+            color: var(--text-primary);
+            font-size: 0.9rem;
+            font-weight: 700;
+            line-height: 1.4;
+            text-transform: none;
+        }
+
+        .stat-context,
+        .stat-source {
+            display: block;
+            margin-top: 0.65rem;
+            color: var(--text-muted);
+            font-size: 0.84rem;
+            line-height: 1.6;
+        }
+
+        .article-rail-card {
+            padding: 1.25rem 1.25rem 1.3rem;
+            border-radius: 24px;
+            background: linear-gradient(160deg, #182234, #0f172a);
+            color: white;
+            box-shadow: 0 22px 55px rgba(15, 23, 42, 0.18);
+        }
+
+        .article-rail-card--muted {
+            background: rgba(255, 255, 255, 0.9);
+            color: var(--text-secondary);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+        }
+
+        .article-rail-card__eyebrow {
+            margin: 0 0 0.55rem;
+            color: rgba(217, 196, 138, 0.92);
+            font-size: 0.74rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .article-rail-card--muted .article-rail-card__eyebrow {
+            color: var(--gold-dark);
+        }
+
+        .article-rail-card__title {
+            margin: 0 0 0.75rem;
+            color: inherit;
+            font-size: 1.35rem;
+            line-height: 1.12;
+        }
+
+        .article-rail-card__body {
+            margin: 0;
+            color: inherit;
+            font-size: 0.95rem;
+            line-height: 1.72;
+        }
+
+        .minimal-content {
+            padding: clamp(1.35rem, 2vw, 2.6rem);
+            border-radius: 32px;
+            background: rgba(255, 255, 255, 0.96);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 28px 72px rgba(15, 23, 42, 0.08);
+            color: #374151;
+            font-size: 1.07rem;
+            line-height: 1.8;
+        }
+
+        .minimal-content p {
+            margin-bottom: 1.45rem;
+            line-height: 1.82;
+        }
+
+        .minimal-content h2 {
+            margin-top: 3rem;
+            margin-bottom: 1.2rem;
             color: #111827;
-            line-height: 1.2;
+            font-size: clamp(1.9rem, 2.8vw, 2.6rem);
+            font-weight: 400;
+            line-height: 1.08;
         }
-        
+
         .minimal-content h3 {
-            margin-top: 2.5rem;
-            margin-bottom: 1.25rem;
-            font-size: 1.5rem;
-            font-weight: 600;
+            margin-top: 2.2rem;
+            margin-bottom: 0.95rem;
+            font-size: 1.35rem;
+            font-weight: 700;
             color: #1f2937;
+            line-height: 1.3;
         }
-        
-        /* Tables */
+
         .minimal-content table {
             width: 100%;
-            margin: 2.5rem 0;
-            border-collapse: collapse;
-            font-size: 1rem;
+            margin: 2.2rem 0;
+            border-collapse: separate;
+            border-spacing: 0;
+            font-size: 0.97rem;
             background: white;
-            border-radius: 8px;
+            border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
         }
-        
+
         .minimal-content thead {
-            background: #0F172A;
+            background: #0f172a;
             color: white;
         }
-        
+
         .minimal-content th {
-            padding: 1rem 1.25rem;
+            padding: 1rem 1.1rem;
             text-align: left;
-            font-weight: 600;
-            font-size: 0.95rem;
+            font-weight: 700;
+            font-size: 0.77rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
         }
-        
+
         .minimal-content td {
-            padding: 1rem 1.25rem;
+            padding: 0.95rem 1.1rem;
             border-bottom: 1px solid #e5e7eb;
+            vertical-align: top;
         }
-        
+
         .minimal-content tbody tr:last-child td {
             border-bottom: none;
         }
-        
+
         .minimal-content tbody tr:nth-child(even) {
-            background: #FAF7F2;
+            background: #faf7f2;
         }
-        
+
         .minimal-content tbody tr:hover {
-            background: rgba(212, 168, 83, 0.08);
+            background: rgba(201, 169, 97, 0.09);
         }
-        
-        /* Blockquotes */
+
         .minimal-content blockquote {
-            margin: 2.5rem 0;
-            padding: 1.5rem 2rem;
-            background: rgba(212, 168, 83, 0.12);
-            border-left: 4px solid #D4A853;
-            font-style: italic;
-            font-size: 1.125rem;
-            line-height: 1.7;
+            margin: 2.3rem 0;
+            padding: 1.4rem 1.6rem;
+            border-radius: 24px;
+            background: rgba(201, 169, 97, 0.11);
+            border-left: 4px solid #d4a853;
+            font-size: 1.12rem;
+            line-height: 1.72;
         }
-        
+
         .minimal-content blockquote p {
             margin-bottom: 0;
         }
-        
-        /* Lists */
-        .minimal-content ul, .minimal-content ol {
-            margin-bottom: 1.5rem;
-            padding-left: 2rem;
+
+        .minimal-content ul,
+        .minimal-content ol {
+            margin-bottom: 1.45rem;
+            padding-left: 1.35rem;
         }
-        
+
         .minimal-content li {
-            margin-bottom: 0.75rem;
-            line-height: 1.7;
+            margin-bottom: 0.7rem;
+            line-height: 1.72;
         }
-        
-        /* Strong/Bold */
+
         .minimal-content strong {
             font-weight: 700;
             color: #111827;
         }
-        
-        /* Links */
+
         .minimal-content a {
-            color: #D4A853;
+            color: #b8933f;
             text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 0.16em;
         }
-        
+
         .minimal-content a:hover {
-            color: #B8933F;
+            color: #8e6d2d;
         }
-        
-        /* Emphasis */
-        .minimal-content em {
-            font-style: italic;
+
+        .article-faq {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            border-radius: 28px;
+            background: rgba(255, 255, 255, 0.96);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 22px 55px rgba(15, 23, 42, 0.08);
+        }
+
+        .article-faq__header {
+            margin-bottom: 1rem;
+        }
+
+        .article-faq__eyebrow {
+            margin: 0 0 0.45rem;
+            color: var(--gold-dark);
+            font-size: 0.76rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .article-faq__title {
+            margin: 0;
+            color: var(--navy);
+            font-size: clamp(1.7rem, 2.2vw, 2.25rem);
+        }
+
+        .article-faq__list {
+            display: grid;
+            gap: 0.85rem;
+        }
+
+        .article-faq__item {
+            border-radius: 20px;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            background: rgba(250, 247, 242, 0.65);
+            overflow: hidden;
+        }
+
+        .article-faq__question {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 1.1rem 1.15rem;
+            border: none;
+            background: transparent;
+            color: var(--navy);
+            font-size: 0.98rem;
+            font-weight: 700;
+            text-align: left;
+        }
+
+        .article-faq__chevron {
+            width: 1.15rem;
+            height: 1.15rem;
+            color: var(--text-muted);
+            transition: transform 0.2s ease;
+            flex: 0 0 auto;
+        }
+
+        .article-faq__question[aria-expanded="true"] .article-faq__chevron {
+            transform: rotate(180deg);
+        }
+
+        .article-faq__answer {
+            display: none;
+            padding: 0 1.15rem 1.15rem;
+        }
+
+        .article-faq__answer--open {
+            display: block;
+        }
+
+        .article-faq__answer p {
+            margin: 0;
+            color: var(--text-secondary);
+            font-size: 0.97rem;
+            line-height: 1.72;
+        }
+
+        @media (min-width: 1024px) {
+            .article-shell {
+                grid-template-columns: minmax(0, 1.55fr) minmax(320px, 0.78fr);
+                gap: 2.25rem;
+            }
+
+            .article-rail {
+                position: sticky;
+                top: 6.5rem;
+            }
+        }
+
+        @media (max-width: 1023px) {
+            .article-shell {
+                gap: 1.5rem;
+            }
+
+            .statistics-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 767px) {
+            .minimal-article {
+                padding: 106px 18px 64px;
+            }
+
+            .minimal-article-title {
+                max-width: none;
+                font-size: clamp(2rem, 10vw, 3rem);
+            }
+
+            .minimal-article-description {
+                font-size: 1rem;
+            }
+
+            .article-intro-card {
+                grid-template-columns: 1fr;
+                padding: 1.25rem;
+                border-radius: 24px;
+            }
+
+            .minimal-featured-image,
+            .minimal-content,
+            .article-faq {
+                border-radius: 24px;
+            }
+
+            .minimal-content {
+                padding: 1.15rem;
+            }
+
+            .minimal-content h2 {
+                margin-top: 2.35rem;
+            }
+
+            .minimal-content table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+            }
+        }
+
+        @media (max-width: 479px) {
+            .statistics-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .article-rail-card,
+            .stat-card {
+                padding: 1rem;
+            }
         }
     </style>
 
     <!-- Schema Markup -->
     
+
+
+
+
+
+
 
 
 
@@ -196,12 +631,12 @@
             "@type": "ListItem",
             "position": 2,
             "name": "Blog",
-            "item": "https://www.legacyinvestingshow.com/blog/"
+            "item": "https://www.legacyinvestingshow.com/blog"
         },
         {
             "@type": "ListItem",
             "position": 3,
-            "name": &quot;Tax Deduction for Physicians: Complete 2026 Guide to Strategic Tax Savings&quot;
+            "name": "Tax Deduction for Physicians: Complete 2026 Guide to Strategic Tax Savings"
         }
     ]
 }
@@ -212,18 +647,18 @@
 {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": &quot;Tax Deduction for Physicians: Complete 2026 Guide to Strategic Tax Savings&quot;,
-    "description": &quot;A practical, physician-specific blueprint for US doctors to optimize deductions in 2026 with frameworks, numeric examples, scenario planning, implementation steps, and a 30-day checklist.&quot;,
+    "headline": "Tax Deduction for Physicians: Complete 2026 Guide to Strategic Tax Savings",
+    "description": "A practical, physician-specific blueprint for US doctors to optimize deductions in 2026 with frameworks, numeric examples, scenario planning, implementation steps, and a 30-day checklist.",
     "image": {
         "@type": "ImageObject",
-        "url": &quot;https://www.legacyinvestingshow.com/assets/images/blog/tax-deduction-for-physicians.jpg&quot;,
+        "url": "https://www.legacyinvestingshow.com/assets/images/blog/tax-deduction-for-physicians.jpg",
         "width": 1200,
         "height": 630
     },
     "author": {
         "@type": "Person",
         "@id": "https://www.legacyinvestingshow.com/about#author",
-        "name": &quot;Preston Seo&quot;,
+        "name": "Preston Seo",
         "url": "https://www.legacyinvestingshow.com/about",
         "jobTitle": "Real Estate Investor & Educator",
         "knowsAbout": [
@@ -242,7 +677,7 @@
     "publisher": {
         "@type": "Organization",
         "name": "Legacy Investing Show",
-        "url": "https://www.legacyinvestingshow.com",
+        "url": "https://www.legacyinvestingshow.com/",
         "logo": {
             "@type": "ImageObject",
             "url": "https://www.legacyinvestingshow.com/assets/images/logo.png",
@@ -256,15 +691,15 @@
             "https://www.facebook.com/share/19LQhE6gmh/"
         ]
     },
-    "datePublished": &quot;2026-02-15T00:00:00.000Z&quot;,
-    "dateModified": &quot;2026-02-15T00:00:00.000Z&quot;,
+    "datePublished": "2026-02-15T00:00:00.000Z",
+    "dateModified": "2026-02-15T00:00:00.000Z",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": &quot;https://www.legacyinvestingshow.com/blog/tax-deduction-for-physicians&quot;
+        "@id": "https://www.legacyinvestingshow.com/blog/tax-deduction-for-physicians"
     },
-    "articleSection": &quot;Tax Strategies&quot;,
-    "wordCount": 2044,
-    "keywords": &quot;tax deduction for physicians, tax deduction for physicians, physician tax deductions 2026, doctor tax strategy, how to track mileage deductions as a physician, best tax deductions for independent contractor physicians, tax strategy for physicians who are not sure about home office deductions&quot;,
+    "articleSection": "Tax Strategies",
+    "wordCount": "2149",
+    "keywords": "tax deduction for physicians, tax deduction for physicians, physician tax deductions 2026, doctor tax strategy, how to track mileage deductions as a physician, best tax deductions for independent contractor physicians, tax strategy for physicians who are not sure about home office deductions",
     "speakable": {
         "@type": "SpeakableSpecification",
         "cssSelector": [".minimal-article-title", ".minimal-content p:first-of-type"]
@@ -284,55 +719,55 @@
         
         {
             "@type": "Question",
-            "name": &quot;How much can tax deduction for physicians save in taxes each year?&quot;,
+            "name": "How much can tax deduction for physicians save in taxes each year?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Most households model three ranges: $2,000-$6,000 for basic optimization, $7,000-$20,000 for coordinated deduction and withdrawal planning, and $20,000+ for complex cases with entity, real-estate, or equity compensation layers.&quot;
+                "text": "Most households model three ranges: $2,000-$6,000 for basic optimization, $7,000-$20,000 for coordinated deduction and withdrawal planning, and $20,000+ for complex cases with entity, real-estate, or equity compensation layers."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;What income level usually makes tax deduction for physicians worth implementing?&quot;,
+            "name": "What income level usually makes tax deduction for physicians worth implementing?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;A practical threshold is around $90,000 of household taxable income. Above that level, bracket management and deduction timing usually create enough tax spread to justify quarterly planning.&quot;
+                "text": "A practical threshold is around $90,000 of household taxable income. Above that level, bracket management and deduction timing usually create enough tax spread to justify quarterly planning."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;How long does implementation take for tax deduction for physicians?&quot;,
+            "name": "How long does implementation take for tax deduction for physicians?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Most people can complete the first version in 14-30 days: week 1 data cleanup, week 2 scenario modeling, and weeks 3-4 filing-position decisions with advisor review.&quot;
+                "text": "Most people can complete the first version in 14-30 days: week 1 data cleanup, week 2 scenario modeling, and weeks 3-4 filing-position decisions with advisor review."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;What records should I keep for tax deduction for physicians?&quot;,
+            "name": "What records should I keep for tax deduction for physicians?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Keep 7 core records: prior return, year-to-date income report, deduction log, account statements, basis records, estimated-payment confirmations, and an annual strategy memo signed off before filing.&quot;
+                "text": "Keep 7 core records: prior return, year-to-date income report, deduction log, account statements, basis records, estimated-payment confirmations, and an annual strategy memo signed off before filing."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;What is the most common costly mistake with tax deduction for physicians?&quot;,
+            "name": "What is the most common costly mistake with tax deduction for physicians?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;The highest-cost error is making decisions in Q4 without modeling April cash taxes. In practice, that mistake can create a 10%-25% miss between expected and actual after-tax cash flow.&quot;
+                "text": "The highest-cost error is making decisions in Q4 without modeling April cash taxes. In practice, that mistake can create a 10%-25% miss between expected and actual after-tax cash flow."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;How often should tax deduction for physicians be reviewed?&quot;,
+            "name": "How often should tax deduction for physicians be reviewed?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Use a monthly 30-minute KPI check and a quarterly 90-minute planning review. If taxable income moves by more than 15%, rerun the tax model immediately.&quot;
+                "text": "Use a monthly 30-minute KPI check and a quarterly 90-minute planning review. If taxable income moves by more than 15%, rerun the tax model immediately."
             }
         }
         
@@ -347,7 +782,7 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Legacy Investing Show",
-    "url": "https://www.legacyinvestingshow.com",
+    "url": "https://www.legacyinvestingshow.com/",
     "logo": "https://www.legacyinvestingshow.com/assets/images/logo.png",
     "sameAs": [
         "https://www.instagram.com/thelegacyinvestingshow/",
@@ -360,16 +795,16 @@
 
 
     <!-- Google Analytics 4 -->
-        <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-2578PT1WSS');
     </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
+
 </head>
 <body class="bg-cream text-navy">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -431,92 +866,59 @@
 </nav>
 
 
-            <header class="minimal-article-header">
-                <div class="minimal-article-meta">
-                    <span>Tax Strategies</span>
-                    <span class="meta-dot"></span>
-                    <time datetime="2026-02-15T00:00:00.000Z">February 15, 2026</time>
-                    <span class="meta-dot"></span>
-                    <span>9 min min read</span>
-                </div>
-                <h1 class="minimal-article-title">Tax Deduction for Physicians: Complete 2026 Guide to Strategic Tax Savings</h1>
-                <div class="minimal-article-author">
-                    <img src="../assets/images/preston-main.jpg" alt="Preston Seo" width="36" height="36" class="author-avatar">
-                    <span>Preston Seo</span>
-                </div>
-            </header>
+            <div class="article-shell">
+                <div class="article-main">
+                    <header class="minimal-article-header">
+                        <span class="article-eyebrow">Tax Strategies Guide</span>
+                        <div class="minimal-article-meta">
+                            <span>Tax Strategies</span>
+                            <span class="meta-dot"></span>
+                            <time datetime="2026-02-15T00:00:00.000Z">February 15, 2026</time>
+                            <span class="meta-dot"></span>
+                            <span>11 min read min read</span>
+                        </div>
+                        <h1 class="minimal-article-title">Tax Deduction for Physicians: Complete 2026 Guide to Strategic Tax Savings</h1>
+                        <p class="minimal-article-description">A practical, physician-specific blueprint for US doctors to optimize deductions in 2026 with frameworks, numeric examples, scenario planning, implementation steps, and a 30-day checklist.</p>
+                        <div class="minimal-article-author">
+                            <picture>
+                                <source srcset="../assets/images/preston-main.webp" type="image/webp">
+                                <img src="../assets/images/preston-main.jpg"
+                                     alt="Preston Seo"
+                                     width="36"
+                                     height="36"
+                                     class="author-avatar"
+                                     fetchpriority="low"
+                                     decoding="async">
+                            </picture>
+                            <span>Preston Seo</span>
+                        </div>
+                    </header>
 
-            <!-- Featured Image -->
-            <div class="minimal-featured-image">
-                <picture>
-                    <source srcset="../assets/images/blog/tax-deduction-for-physicians.jpg" type="image/webp">
-                    <img src="../assets/images/blog/tax-deduction-for-physicians.jpg" alt="Tax Deduction for Physicians: Complete 2026 Guide to Strategic Tax Savings" width="800" height="450" loading="eager" fetchpriority="high" decoding="async">
-                </picture>
-            </div>
+                    <div class="minimal-featured-image">
+                        <picture>
+                            
+                            <img src="../assets/images/blog/tax-deduction-for-physicians.jpg" alt="Tax Deduction for Physicians: Complete 2026 Guide to Strategic Tax Savings" width="800" height="450" loading="eager" fetchpriority="high" decoding="async">
+                        </picture>
+                    </div>
 
-            <!-- Statistics Cards -->
-            
-                <section class="statistics-section" aria-label="Key statistics">
-    <div class="statistics-grid">
-        
-        <div class="stat-card" data-stat-index="0">
-            <div class="stat-icon-wrapper">
-                
-            </div>
-            <div class="stat-value">$0.67/mile</div>
-            <div class="stat-label">Reference IRS mileage rate often used in physician travel examples</div>
-            
-            <span class="stat-context">Verify the current-year rate before filing; the 2024 reference appears in professional medical tax guidance.</span>
-            
-            
-        </div>
-        
-        <div class="stat-card" data-stat-index="1">
-            <div class="stat-icon-wrapper">
-                
-                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-                
-            </div>
-            <div class="stat-value">$40,300</div>
-            <div class="stat-label">Illustrative incremental deduction from the worked physician example</div>
-            
-            <span class="stat-context">Assumes a 1099 physician with full documentation and controlled lifestyle alignment.</span>
-            
-            
-        </div>
-        
-        <div class="stat-card" data-stat-index="2">
-            <div class="stat-icon-wrapper">
-                
-            </div>
-            <div class="stat-value">3</div>
-            <div class="stat-label">Core compensation structures to map first for medical professionals</div>
-            
-            <span class="stat-context">W-2, 1099/locums, and practice-owner structures generate very different deduction opportunities.</span>
-            
-            
-        </div>
-        
-        <div class="stat-card" data-stat-index="3">
-            <div class="stat-icon-wrapper">
-                
-            </div>
-            <div class="stat-value">7</div>
-            <div class="stat-label">Common physician tax error themes seen repeatedly</div>
-            
-            <span class="stat-context">Drawn from practitioner-facing education that highlights recurring traps like logs, substantiation, and late categorization.</span>
-            
-            
-        </div>
-        
-    </div>
-</section>
+                    <section class="article-intro-card" aria-label="How to use this guide">
+                        <div>
+                            <p class="article-intro-card__eyebrow">Use This Like a Tool</p>
+                            <h2 class="article-intro-card__title">The point of this page is not more information. The point is better judgment before you act.</h2>
+                        </div>
+                        <ul class="article-intro-card__list">
+                            
+                            <li>Pull the real numbers first.</li>
+                            
+                            <li>Run a base case and a stress case.</li>
+                            
+                            <li>Use the result to make a cleaner decision, not a faster emotional one.</li>
+                            
+                        </ul>
+                    </section>
 
-            
-
-            <!-- Article Content -->
-            <div class="minimal-content">
-                <p>If you are a US physician, the phrase tax deduction for physicians is not about hunting for a single magic write-off. It is about aligning your documentation, legal structure, and spending priorities so your tax outcome reflects your real practice economics. This guide is written as a practical playbook for high-income, service-based professionals and avoids generic tax filler.</p>
+                    <div class="minimal-content">
+                        <p>If you are a US physician, the phrase tax deduction for physicians is not about hunting for a single magic write-off. It is about aligning your documentation, legal structure, and spending priorities so your tax outcome reflects your real practice economics. This guide is written as a practical playbook for high-income, service-based professionals and avoids generic tax filler.</p>
 <p>You can think of this as a decision framework: capture what you earn, map where the deduction rules differ by structure, then rank opportunities by certainty and impact before the filing crunch. If you are just starting, pair this with the site-level map on <a href="/topics/tax-strategies">Tax Strategies</a> and the physician-focused overview pages linked from the same section.</p>
 <h2>Why a generic tax checklist fails physicians</h2>
 <p>Most non-physician checklists undercount three realities:</p>
@@ -776,48 +1178,221 @@
 <li><a href="/blog/best-tax-strategy-for-ira-withdrawals">Related Guide: best tax strategy for ira withdrawals</a></li>
 </ul>
 
-            </div>
+                    </div>
 
-            <!-- FAQ Section -->
+                    
+                        <section class="article-faq" aria-label="Frequently asked questions">
+    <div class="article-faq__header">
+        <p class="article-faq__eyebrow">Questions that matter before you act</p>
+        <h2 class="article-faq__title">Frequently Asked Questions</h2>
+    </div>
+    <div class="article-faq__list">
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="true"
+                aria-controls="faq-answer-0"
+            >
+                <span>How much can tax deduction for physicians save in taxes each year?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-0"
+                class="article-faq__answer article-faq__answer--open"
+            >
+                <p>Most households model three ranges: $2,000-$6,000 for basic optimization, $7,000-$20,000 for coordinated deduction and withdrawal planning, and $20,000+ for complex cases with entity, real-estate, or equity compensation layers.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-1"
+            >
+                <span>What income level usually makes tax deduction for physicians worth implementing?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-1"
+                class="article-faq__answer "
+            >
+                <p>A practical threshold is around $90,000 of household taxable income. Above that level, bracket management and deduction timing usually create enough tax spread to justify quarterly planning.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-2"
+            >
+                <span>How long does implementation take for tax deduction for physicians?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-2"
+                class="article-faq__answer "
+            >
+                <p>Most people can complete the first version in 14-30 days: week 1 data cleanup, week 2 scenario modeling, and weeks 3-4 filing-position decisions with advisor review.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-3"
+            >
+                <span>What records should I keep for tax deduction for physicians?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-3"
+                class="article-faq__answer "
+            >
+                <p>Keep 7 core records: prior return, year-to-date income report, deduction log, account statements, basis records, estimated-payment confirmations, and an annual strategy memo signed off before filing.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-4"
+            >
+                <span>What is the most common costly mistake with tax deduction for physicians?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-4"
+                class="article-faq__answer "
+            >
+                <p>The highest-cost error is making decisions in Q4 without modeling April cash taxes. In practice, that mistake can create a 10%-25% miss between expected and actual after-tax cash flow.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-5"
+            >
+                <span>How often should tax deduction for physicians be reviewed?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-5"
+                class="article-faq__answer "
+            >
+                <p>Use a monthly 30-minute KPI check and a quarterly 90-minute planning review. If taxable income moves by more than 15%, rerun the tax model immediately.</p>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<script>
+    document.querySelectorAll('.article-faq__question').forEach((button) => {
+        button.addEventListener('click', () => {
+            const expanded = button.getAttribute('aria-expanded') === 'true';
+            button.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+            button.nextElementSibling.classList.toggle('article-faq__answer--open');
+        });
+    });
+</script>
+
+                    
+                </div>
+
+                <aside class="article-rail">
+                    
+                        <section class="statistics-section" aria-label="Key statistics">
+    <div class="statistics-grid">
+        
+        <div class="stat-card" data-stat-index="0">
+            <div class="stat-icon-wrapper">
+                
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                
+            </div>
+            <div class="stat-value">$0.67/mile</div>
+            <div class="stat-label">Reference IRS mileage rate often used in physician travel examples</div>
             
-                <section class="mt-16 bg-white rounded-xl shadow-lg p-8">
-    <h2 class="text-3xl font-bold text-navy mb-8">Frequently Asked Questions</h2>
-    <div class="space-y-6">
-        
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">How much can tax deduction for physicians save in taxes each year?</h3>
-            <p class="text-gray-600">Most households model three ranges: $2,000-$6,000 for basic optimization, $7,000-$20,000 for coordinated deduction and withdrawal planning, and $20,000+ for complex cases with entity, real-estate, or equity compensation layers.</p>
+            <span class="stat-context">Verify the current-year rate before filing; the 2024 reference appears in professional medical tax guidance.</span>
+            
+            
         </div>
         
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">What income level usually makes tax deduction for physicians worth implementing?</h3>
-            <p class="text-gray-600">A practical threshold is around $90,000 of household taxable income. Above that level, bracket management and deduction timing usually create enough tax spread to justify quarterly planning.</p>
+        <div class="stat-card" data-stat-index="1">
+            <div class="stat-icon-wrapper">
+                
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                
+            </div>
+            <div class="stat-value">$40,300</div>
+            <div class="stat-label">Illustrative incremental deduction from the worked physician example</div>
+            
+            <span class="stat-context">Assumes a 1099 physician with full documentation and controlled lifestyle alignment.</span>
+            
+            
         </div>
         
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">How long does implementation take for tax deduction for physicians?</h3>
-            <p class="text-gray-600">Most people can complete the first version in 14-30 days: week 1 data cleanup, week 2 scenario modeling, and weeks 3-4 filing-position decisions with advisor review.</p>
+        <div class="stat-card" data-stat-index="2">
+            <div class="stat-icon-wrapper">
+                
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="9" y1="6" x2="20" y2="6"/><line x1="9" y1="12" x2="20" y2="12"/><line x1="9" y1="18" x2="20" y2="18"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/></svg>
+                
+            </div>
+            <div class="stat-value">3</div>
+            <div class="stat-label">Core compensation structures to map first for medical professionals</div>
+            
+            <span class="stat-context">W-2, 1099/locums, and practice-owner structures generate very different deduction opportunities.</span>
+            
+            
         </div>
         
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">What records should I keep for tax deduction for physicians?</h3>
-            <p class="text-gray-600">Keep 7 core records: prior return, year-to-date income report, deduction log, account statements, basis records, estimated-payment confirmations, and an annual strategy memo signed off before filing.</p>
-        </div>
-        
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">What is the most common costly mistake with tax deduction for physicians?</h3>
-            <p class="text-gray-600">The highest-cost error is making decisions in Q4 without modeling April cash taxes. In practice, that mistake can create a 10%-25% miss between expected and actual after-tax cash flow.</p>
-        </div>
-        
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">How often should tax deduction for physicians be reviewed?</h3>
-            <p class="text-gray-600">Use a monthly 30-minute KPI check and a quarterly 90-minute planning review. If taxable income moves by more than 15%, rerun the tax model immediately.</p>
+        <div class="stat-card" data-stat-index="3">
+            <div class="stat-icon-wrapper">
+                
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="9" y1="6" x2="20" y2="6"/><line x1="9" y1="12" x2="20" y2="12"/><line x1="9" y1="18" x2="20" y2="18"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/></svg>
+                
+            </div>
+            <div class="stat-value">7</div>
+            <div class="stat-label">Common physician tax error themes seen repeatedly</div>
+            
+            <span class="stat-context">Drawn from practitioner-facing education that highlights recurring traps like logs, substantiation, and late categorization.</span>
+            
+            
         </div>
         
     </div>
 </section>
 
-            
+                    
+                    <div class="article-rail-card">
+                        <p class="article-rail-card__eyebrow">Before You Act</p>
+                        <h2 class="article-rail-card__title">Good planning is mostly good sequencing.</h2>
+                        <p class="article-rail-card__body">Run the numbers with conservative assumptions, then verify the filing path and documentation standard before you do anything irreversible.</p>
+                    </div>
+                    <div class="article-rail-card article-rail-card--muted">
+                        <p class="article-rail-card__eyebrow">Important</p>
+                        <p class="article-rail-card__body">Educational only. Results vary. Tax, legal, and investment decisions should be reviewed with a qualified professional who can see your full situation.</p>
+                    </div>
+                </aside>
+            </div>
         </article>
     </main>
 

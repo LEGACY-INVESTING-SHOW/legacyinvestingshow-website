@@ -142,8 +142,8 @@ relatedPosts:
     title: '1031 exchange vs standard deduction: Which Strategy Works Better in 2026?'
   - slug: best-tax-deductions-2025
     title: 'Best Tax Deductions 2025: Complete 2026 Guide to Lower Your Tax Bill'
-readingTime: 10 min read
-wordCount: '2119'
+readingTime: 12 min read
+wordCount: '2211'
 ---
 If you run a consulting practice, your tax picture is usually more volatile than a W-2 employee's. That is exactly why capital gains tax for consultants deserves its own strategy, not a generic investing rule. One large client project, one bonus quarter, and one asset sale can push you from manageable tax to painful tax.
 

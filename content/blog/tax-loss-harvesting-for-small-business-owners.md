@@ -143,8 +143,8 @@ relatedPosts:
     title: >-
       Asset Allocation Tax Implications: Complete 2026 Guide for After-Tax
       Portfolio Returns
-readingTime: 10 min read
-wordCount: '2220'
+readingTime: 12 min read
+wordCount: '2301'
 ---
 For founders and operators, tax planning is usually focused on payroll, deductions, and entity structure. But tax loss harvesting for small business owners is one of the few levers that can improve after-tax wealth without changing your core business operations. If you have a taxable investment account alongside your company cash flow, this strategy can help reduce tax drag from realized gains and create carryforward losses for future years.
 

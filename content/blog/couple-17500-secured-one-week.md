@@ -1,27 +1,28 @@
 ---
-# Core SEO Fields
-title: "How Lindsay and Her Husband Secured $17,500 in Bookings in One Week (2025 Case Study)"
-titleTemplate: "%s | Legacy Investing Show Success Stories"
-description: "Lindsay and her husband went from 9-to-5 workers to $17,500 in Airbnb bookings within 7 days of going live. Learn their exact strategies for finding properties, negotiating with landlords, and creating a standout cabin rental in the Western North Carolina mountains."
-date: 2025-10-18
-modifiedDate: 2026-01-23
+title: >-
+  How Lindsay and Her Husband Secured $17,500 in Bookings in One Week (2025 Case
+  Study)
+titleTemplate: '%s | Legacy Investing Show Success Stories'
+description: >-
+  Lindsay and her husband went from 9-to-5 workers to $17,500 in Airbnb bookings
+  within 7 days of going live. Learn their exact strategies for finding
+  properties, negotiating with landlords, and creating a standout cabin rental
+  in the Western North Carolina mountains.
+date: 2025-10-18T00:00:00.000Z
+modifiedDate: 2026-01-23T00:00:00.000Z
 author: Preston Seo
-authorTitle: "Founder, Legacy Investing Show"
-authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
+authorTitle: 'Founder, Legacy Investing Show'
+authorCredentials: '2,000+ students trained, $10M+ student revenue generated'
 category: Success Story
-canonical: "https://www.legacyinvestingshow.com/blog/couple-17500-secured-one-week"
-
-# SEO Keyword Targeting
+canonical: 'https://www.legacyinvestingshow.com/blog/couple-17500-secured-one-week'
 seo:
-  primaryKeyword: "airbnb success story"
+  primaryKeyword: airbnb success story
   secondaryKeywords:
-    - "short-term rental business"
+    - short-term rental business
   longTailKeywords:
-    - "how much can you make with airbnb"
-    - "is airbnb arbitrage worth it"
-  searchIntent: "informational"
-
-# Tags
+    - how much can you make with airbnb
+    - is airbnb arbitrage worth it
+  searchIntent: informational
 tags:
   - airbnb arbitrage
   - rental arbitrage
@@ -29,100 +30,128 @@ tags:
   - case study
   - success story
   - short-term rental
-
-# Open Graph & Social
 image: /assets/images/blog/success-stories/lindsay-couple-cabin.jpg
-imageAlt: "How Lindsay and Her Husband Secured $17,500 in Bookings in One Week (2025 Case Study) - Legacy Investing Show"
+imageAlt: >-
+  How Lindsay and Her Husband Secured $17,500 in Bookings in One Week (2025 Case
+  Study) - Legacy Investing Show
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
 featured: false
-
-# Video Integration
-youtubeId: "-A4Pe5M0iUU"
-
-# Multiple Schema Types for Rich Results
+youtubeId: '-A4Pe5M0iUU'
 schema:
   - type: Article
-    headline: "How Lindsay and Her Husband Secured $17,500 in Bookings in One Week (2025 Case Study)"
-    datePublished: "2026-03-18T00:00:00Z"
-    dateModified: "2026-01-23T00:00:00Z"
+    headline: >-
+      How Lindsay and Her Husband Secured $17,500 in Bookings in One Week (2025
+      Case Study)
+    datePublished: '2026-03-18T00:00:00Z'
+    dateModified: '2026-01-23T00:00:00Z'
   - type: VideoObject
-    name: "How Lindsay and Her Husband Secured $17,500 in Bookings in One Week (2025 Case Study) - Full Interview"
-    thumbnailUrl: "https://img.youtube.com/vi/-A4Pe5M0iUU/maxresdefault.jpg"
-    embedUrl: "https://www.youtube.com/embed/-A4Pe5M0iUU"
+    name: >-
+      How Lindsay and Her Husband Secured $17,500 in Bookings in One Week (2025
+      Case Study) - Full Interview
+    thumbnailUrl: 'https://img.youtube.com/vi/-A4Pe5M0iUU/maxresdefault.jpg'
+    embedUrl: 'https://www.youtube.com/embed/-A4Pe5M0iUU'
   - type: HowTo
-    name: "How to Build an Airbnb Business Like This Success Story"
-
-# Breadcrumbs
+    name: How to Build an Airbnb Business Like This Success Story
 breadcrumbs:
-  - name: "Home"
-    url: "/"
-  - name: "Blog"
-    url: "/blog"
-  - name: "Success Stories"
-    url: "/blog/category/success-stories"
-
-# Statistics (AI-crawler accessible, renders as stat cards)
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog
+  - name: Success Stories
+    url: /blog/category/success-stories
 statistics:
-  - value: "$17,500"
-    label: "Bookings in Week One"
-    icon: "dollar"
-    context: "14 reservations through New Year's Eve"
-    source: "Student Interview, September 2023"
-  - value: "21 Days"
-    label: "Contact to Contract"
-    icon: "clock"
-    context: "July 21st to August 11th"
-  - value: "4"
-    label: "Landlord Calls"
-    icon: "check"
-    context: "To secure first property"
-  - value: "$2,500-$3,000"
-    label: "Monthly Cash Flow"
-    icon: "dollar"
-    context: "Peak season projection"
-  - value: "3 Hours"
-    label: "Weekly Time Investment"
-    icon: "clock"
-    context: "Managing the property"
-  - value: "14"
-    label: "Bookings"
-    icon: "home"
-    context: "First two weeks live"
-
-# FAQ (FAQPage schema + accordion rendering)
+  - value: '$17,500'
+    label: Bookings in Week One
+    icon: dollar
+    context: 14 reservations through New Year's Eve
+    source: 'Student Interview, September 2023'
+  - value: 21 Days
+    label: Contact to Contract
+    icon: clock
+    context: July 21st to August 11th
+  - value: '4'
+    label: Landlord Calls
+    icon: check
+    context: To secure first property
+  - value: '$2,500-$3,000'
+    label: Monthly Cash Flow
+    icon: dollar
+    context: Peak season projection
+  - value: 3 Hours
+    label: Weekly Time Investment
+    icon: clock
+    context: Managing the property
+  - value: '14'
+    label: Bookings
+    icon: home
+    context: First two weeks live
 faq:
-  - question: "How much money can you make with Airbnb arbitrage?"
-    answer: "Lindsay and her husband secured $17,500 in bookings within just one week of going live. They project $2,500-$3,000 monthly cash flow during peak season (fall through January in Western NC) after all expenses including rent and utilities."
-  - question: "How long does it take to get your first Airbnb arbitrage property?"
-    answer: "Lindsay found her property on just her fourth landlord call. She first spoke with the landlord on July 21st and signed the contract on August 11th—only 21 days from initial contact to signed lease."
-  - question: "Do you need experience to start Airbnb arbitrage?"
-    answer: "No. Lindsay worked in nonprofit overseas for over a decade and now sells insurance. Her husband has a sales background. Neither had real estate experience, but both brought transferable skills like networking, communication, and attention to detail."
-  - question: "How much does it cost to start Airbnb arbitrage?"
-    answer: "Lindsay used 0% interest credit for 24 months to finance the hot tub and electrician costs. Their landlord left 75% of the furniture, significantly reducing startup costs. Main expenses included the hot tub installation, professional photography, and home decor items."
-  - question: "What amenities are most important for Airbnb cabins?"
-    answer: "In Western North Carolina, hot tubs are essential—AirDNA showed less than 20% of properties had them. Lindsay also added king beds (converted from twins/full), fire pit, outdoor dining, ping pong, darts, and cozy fall decor for the peak mountain season."
-  - question: "How do you find landlords willing to do Airbnb arbitrage?"
-    answer: "Lindsay used Zillow to find properties and messaged landlords asking \"Would you consider a 2-4 year lease?\" before explaining arbitrage. She made only four calls total before securing her property—getting landlords on the phone was key to building trust."
-  - question: "Is Airbnb arbitrage still profitable in 2025?"
-    answer: "Yes. Lindsay went live on September 7th and had 14 bookings totaling $17,500 within two weeks, with bookings extending through New Year's Eve. The Western NC mountain market thrives during fall leaf season, making timing strategic."
-  - question: "How much time does Airbnb arbitrage take to manage?"
-    answer: "Lindsay spends about 3 hours per week total—roughly 30 minutes daily on marketing and promotion through Instagram and Facebook groups. The house \"just does its thing\" with reliable cleaners and a handyman handling on-site needs."
-  - question: "Is Legacy Investing Show worth it?"
-    answer: "Lindsay found Preston's free workshop on Instagram and watched the full 3-hour session. Within a month and a half of joining, they had their first property secured with $17,500 in bookings. She credits the program's modules and landlord scripts for their quick success."
-  - question: "What's the best market for Airbnb arbitrage?"
-    answer: "Lindsay chose Western North Carolina near Asheville because of fall tourism demand. However, she notes her college town in the mountains didn't perform well on AirDNA—surrounding areas did. Always follow the data rather than assumptions."
-
-# Table of Contents
+  - question: How much money can you make with Airbnb arbitrage?
+    answer: >-
+      Lindsay and her husband secured $17,500 in bookings within just one week
+      of going live. They project $2,500-$3,000 monthly cash flow during peak
+      season (fall through January in Western NC) after all expenses including
+      rent and utilities.
+  - question: How long does it take to get your first Airbnb arbitrage property?
+    answer: >-
+      Lindsay found her property on just her fourth landlord call. She first
+      spoke with the landlord on July 21st and signed the contract on August
+      11th—only 21 days from initial contact to signed lease.
+  - question: Do you need experience to start Airbnb arbitrage?
+    answer: >-
+      No. Lindsay worked in nonprofit overseas for over a decade and now sells
+      insurance. Her husband has a sales background. Neither had real estate
+      experience, but both brought transferable skills like networking,
+      communication, and attention to detail.
+  - question: How much does it cost to start Airbnb arbitrage?
+    answer: >-
+      Lindsay used 0% interest credit for 24 months to finance the hot tub and
+      electrician costs. Their landlord left 75% of the furniture, significantly
+      reducing startup costs. Main expenses included the hot tub installation,
+      professional photography, and home decor items.
+  - question: What amenities are most important for Airbnb cabins?
+    answer: >-
+      In Western North Carolina, hot tubs are essential—AirDNA showed less than
+      20% of properties had them. Lindsay also added king beds (converted from
+      twins/full), fire pit, outdoor dining, ping pong, darts, and cozy fall
+      decor for the peak mountain season.
+  - question: How do you find landlords willing to do Airbnb arbitrage?
+    answer: >-
+      Lindsay used Zillow to find properties and messaged landlords asking
+      "Would you consider a 2-4 year lease?" before explaining arbitrage. She
+      made only four calls total before securing her property—getting landlords
+      on the phone was key to building trust.
+  - question: Is Airbnb arbitrage still profitable in 2025?
+    answer: >-
+      Yes. Lindsay went live on September 7th and had 14 bookings totaling
+      $17,500 within two weeks, with bookings extending through New Year's Eve.
+      The Western NC mountain market thrives during fall leaf season, making
+      timing strategic.
+  - question: How much time does Airbnb arbitrage take to manage?
+    answer: >-
+      Lindsay spends about 3 hours per week total—roughly 30 minutes daily on
+      marketing and promotion through Instagram and Facebook groups. The house
+      "just does its thing" with reliable cleaners and a handyman handling
+      on-site needs.
+  - question: Is Legacy Investing Show worth it?
+    answer: >-
+      Lindsay found Preston's free workshop on Instagram and watched the full
+      3-hour session. Within a month and a half of joining, they had their first
+      property secured with $17,500 in bookings. She credits the program's
+      modules and landlord scripts for their quick success.
+  - question: What's the best market for Airbnb arbitrage?
+    answer: >-
+      Lindsay chose Western North Carolina near Asheville because of fall
+      tourism demand. However, she notes her college town in the mountains
+      didn't perform well on AirDNA—surrounding areas did. Always follow the
+      data rather than assumptions.
 toc: true
 tocDepth: 3
-
-# Reading Time
-readingTime: "26 min read"
-wordCount: "5051"
+readingTime: 25 min read
+wordCount: '4897'
 ---
-
 **Lindsay and her husband secured $17,500 in Airbnb bookings within one week of going live.** Starting with no real estate experience—Lindsay from nonprofit work overseas and her husband from sales—they joined Legacy Investing Show and hit the ground running. Within a month and a half, they had their first property secured on just their fourth landlord call, and the bookings started flooding in immediately.
 
 This case study breaks down exactly how Lindsay and her husband built their Airbnb arbitrage business in the Western North Carolina mountains, including their strategies for finding properties, negotiating with landlords, and creating a standout cabin that guests can't resist booking.

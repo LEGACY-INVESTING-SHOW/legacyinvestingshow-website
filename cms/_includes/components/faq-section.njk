@@ -1,11 +1,37 @@
-<section class="mt-16 bg-white rounded-xl shadow-lg p-8">
-    <h2 class="text-3xl font-bold text-navy mb-8">Frequently Asked Questions</h2>
-    <div class="space-y-6">
+<section class="article-faq" aria-label="Frequently asked questions">
+    <div class="article-faq__header">
+        <p class="article-faq__eyebrow">Questions that matter before you act</p>
+        <h2 class="article-faq__title">Frequently Asked Questions</h2>
+    </div>
+    <div class="article-faq__list">
         {% for faq in faqs %}
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">{{ faq.question }}</h3>
-            <p class="text-gray-600">{{ faq.answer }}</p>
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="{% if loop.first %}true{% else %}false{% endif %}"
+                aria-controls="faq-answer-{{ loop.index0 }}"
+            >
+                <span>{{ faq.question }}</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-{{ loop.index0 }}"
+                class="article-faq__answer {% if loop.first %}article-faq__answer--open{% endif %}"
+            >
+                <p>{{ faq.answer }}</p>
+            </div>
         </div>
         {% endfor %}
     </div>
 </section>
+<script>
+    document.querySelectorAll('.article-faq__question').forEach((button) => {
+        button.addEventListener('click', () => {
+            const expanded = button.getAttribute('aria-expanded') === 'true';
+            button.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+            button.nextElementSibling.classList.toggle('article-faq__answer--open');
+        });
+    });
+</script>

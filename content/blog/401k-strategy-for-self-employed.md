@@ -145,8 +145,8 @@ relatedPosts:
     title: >-
       401k Strategy for Recession: Complete 2026 Guide to Protecting Retirement
       Without Panic Selling
-readingTime: 10 min read
-wordCount: '2099'
+readingTime: 11 min read
+wordCount: '2187'
 ---
 The right 401k strategy for self employed owners can reduce current taxes, increase long-term compounding, and give you flexibility between cash flow today and retirement funding tomorrow. But the best setup depends on your entity structure, income volatility, tax bracket, and hiring plans. This guide is built for real decisions, with formulas, examples, and action steps you can execute now.
 

@@ -171,8 +171,8 @@ relatedPosts:
     title: 'Business Credit Building: Separate Your Personal & Business Finances'
   - slug: business-succession-planning
     title: 'Business Succession Planning: How to Transfer Ownership'
-readingTime: 10 min read
-wordCount: '2183'
+readingTime: 12 min read
+wordCount: '2263'
 ---
 If you are trying to decide **how to calculate reasonable salary for s corp** owners, treat it as a compensation design decision, not a random percentage pick. The objective is to pay yourself like a real employee for the work you actually perform, then take additional profit as owner distributions when appropriate.
 

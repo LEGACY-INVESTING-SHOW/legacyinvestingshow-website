@@ -142,8 +142,8 @@ relatedPosts:
     title: '1031 exchange vs standard deduction: Which Strategy Works Better in 2026?'
   - slug: best-tax-deductions-2025
     title: 'Best Tax Deductions 2025: Complete 2026 Guide to Lower Your Tax Bill'
-readingTime: 9 min read
-wordCount: '1892'
+readingTime: 11 min read
+wordCount: '2033'
 ---
 A **capital gains tax template** is one of the few tools that can directly improve your after-tax outcome before a sale happens. Most people decide to sell first, then discover the tax bill later. That sequence is expensive.
 

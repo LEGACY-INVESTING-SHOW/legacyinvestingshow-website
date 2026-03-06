@@ -138,8 +138,8 @@ relatedPosts:
     title: 'Airbnb Cash Flow vs Notes Investing: Which Strategy Works Better in 2026?'
   - slug: atm-business-guide
     title: 'ATM Business Guide: Passive Income from Cash Machines'
-readingTime: 10 min read
-wordCount: '2307'
+readingTime: 13 min read
+wordCount: '2410'
 ---
 If you are searching for how to report royalty income on tax return, start with one core decision: are you receiving passive royalties from property rights, or are you actively running a royalty-generating business. That single classification often decides whether you file on Schedule E or Schedule C, whether self-employment tax applies, and how much you should send in estimated payments during the year.
 

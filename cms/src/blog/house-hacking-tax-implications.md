@@ -138,8 +138,8 @@ relatedPosts:
       Investors
   - slug: airbnb-cash-flow-vs-notes-investing
     title: 'Airbnb Cash Flow vs Notes Investing: Which Strategy Works Better in 2026?'
-readingTime: 9 min read
-wordCount: '2055'
+readingTime: 11 min read
+wordCount: '2162'
 ---
 Most people evaluate house hacking based on monthly payment relief, but house hacking tax implications often decide whether the strategy builds wealth or just adds complexity. When you live in part of a property and rent another part, you are operating in a hybrid zone: part homeowner, part landlord. That can unlock depreciation and expense deductions, but it also introduces allocation rules, passive-loss limits, and sale-time recapture issues.
 

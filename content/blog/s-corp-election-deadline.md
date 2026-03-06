@@ -137,8 +137,8 @@ relatedPosts:
     title: >-
       Best Registered Agent for LLC: Complete 2026 Guide to Cost, Privacy, and
       Compliance
-readingTime: 9 min read
-wordCount: '1991'
+readingTime: 11 min read
+wordCount: '2133'
 ---
 The s corp election deadline is one of the highest-leverage tax dates for a small business owner. If you file Form 2553 on time, your business can generally be taxed under Subchapter S for the year you planned. If you miss it, you may stay on default tax treatment for that year unless late-election relief applies.
 

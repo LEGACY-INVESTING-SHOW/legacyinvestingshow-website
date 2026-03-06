@@ -148,8 +148,8 @@ relatedPosts:
     title: 'BRRRR Method: Buy, Rehab, Rent, Refinance, Repeat'
   - slug: digital-product-income
     title: 'Digital Product Income: Create Once, Sell Forever'
-readingTime: 11 min read
-wordCount: '2458'
+readingTime: 13 min read
+wordCount: '2546'
 ---
 If you are evaluating your first Airbnb-style property, short term rental investing tax implications can affect your after-tax cash flow more than nightly rate optimization. Two hosts can run similar properties and keep very different amounts after taxes because they classify activity differently, track expenses differently, and plan depreciation differently.
 

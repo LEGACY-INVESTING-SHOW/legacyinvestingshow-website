@@ -137,8 +137,8 @@ relatedPosts:
     title: 'Credit Score Optimization: Improve Your Score Fast'
   - slug: debt-avalanche-method
     title: 'Debt Avalanche Method: The Fastest Way to Pay Off Debt'
-readingTime: 10 min read
-wordCount: '2269'
+readingTime: 13 min read
+wordCount: '2406'
 ---
 Debt decisions usually look simple at first: lower APR, smaller payment, done. But debt consolidation tax implications can change total cost by thousands if any lender forgives principal or reports canceled debt. In 2026, the core issue for U.S. households is not just interest savings, it is whether your plan creates taxable income and whether you can potentially exclude some or all of it under IRS rules.
 

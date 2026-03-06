@@ -143,8 +143,8 @@ relatedPosts:
     title: 'Best Tax Deductions for High Income Earners: Complete 2026 Guide'
   - slug: best-tax-deductions-for-individuals
     title: 'Best Tax Deductions for Individuals: Complete 2026 Guide'
-readingTime: 9 min read
-wordCount: '2059'
+readingTime: 11 min read
+wordCount: '2171'
 ---
 If you are planning to sell stock, crypto, fund shares, a business interest, or investment property, a capital gains tax calculator can prevent expensive surprises. Most people focus on market timing and ignore tax timing, even though tax drag can change the net result by tens of thousands of dollars.
 

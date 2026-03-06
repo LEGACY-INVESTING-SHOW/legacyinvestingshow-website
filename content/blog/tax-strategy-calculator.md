@@ -139,8 +139,8 @@ relatedPosts:
     title: '1031 exchange vs standard deduction: Which Strategy Works Better in 2026?'
   - slug: best-tax-deductions-2025
     title: 'Best Tax Deductions 2025: Complete 2026 Guide to Lower Your Tax Bill'
-readingTime: 9 min read
-wordCount: '2026'
+readingTime: 11 min read
+wordCount: '2166'
 ---
 If you are searching for a tax strategy calculator, you are usually asking a commercial decision question: which tax move gives me the most after-tax dollars for the least complexity and risk? That is a better question than simply asking how big your refund might be.
 

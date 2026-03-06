@@ -142,8 +142,8 @@ relatedPosts:
     title: '1031 exchange vs standard deduction: Which Strategy Works Better in 2026?'
   - slug: best-tax-deductions-2025
     title: 'Best Tax Deductions 2025: Complete 2026 Guide to Lower Your Tax Bill'
-readingTime: 9 min read
-wordCount: '1986'
+readingTime: 11 min read
+wordCount: '2070'
 ---
 Physicians often optimize salary deferrals and deductions but still overpay on exits and rebalancing. The capital gains tax for physicians is rarely one number. It is usually a stack of federal long-term rates, NIIT, state taxes, and deal-specific reclassification into ordinary income. If you are selling a practice, trimming concentrated stock, or disposing of appreciated real estate in 2026, the highest-value planning happens before the transaction documents are final.
 

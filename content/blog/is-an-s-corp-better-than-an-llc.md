@@ -136,8 +136,8 @@ relatedPosts:
     title: 'Business Credit Building: Separate Your Personal & Business Finances'
   - slug: business-succession-planning
     title: 'Business Succession Planning: How to Transfer Ownership'
-readingTime: 9 min read
-wordCount: '2039'
+readingTime: 11 min read
+wordCount: '2116'
 ---
 If you are asking **is an s corp better than an llc**, you are already asking a smart question, but the most useful answer is not universal. For most owners, the real answer depends on four variables: steady profit, what counts as reasonable salary, state-level costs, and your ability to run clean payroll and books.
 

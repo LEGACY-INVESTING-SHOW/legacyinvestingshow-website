@@ -145,8 +145,8 @@ relatedPosts:
     title: 'Tax Strategy vs Itemized Deductions: Which Strategy Works Better in 2026?'
   - slug: tax-strategy-vs-standard-deduction
     title: 'Tax Strategy vs Standard Deduction: Which Strategy Works Better in 2026?'
-readingTime: 11 min read
-wordCount: '2320'
+readingTime: 12 min read
+wordCount: '2387'
 ---
 Educational only: this guide is for planning and discussion, not individualized legal, tax, or accounting advice. Final implementation should be reviewed with a CPA, EA, or tax attorney using your full return, state rules, and plan documents.
 

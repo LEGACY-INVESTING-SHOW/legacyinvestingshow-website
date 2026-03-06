@@ -138,8 +138,8 @@ relatedPosts:
     title: >-
       401k Strategy for Recession: Complete 2026 Guide to Protecting Retirement
       Without Panic Selling
-readingTime: 10 min read
-wordCount: '2241'
+readingTime: 12 min read
+wordCount: '2310'
 ---
 A strong 401k strategy for government employees is not just about picking a fund and waiting 20 years. Government workers often have a pension component, a workplace defined-contribution plan (such as TSP), and sometimes access to a governmental 457(b). That structure creates more opportunity, but also more ways to make expensive mistakes.
 

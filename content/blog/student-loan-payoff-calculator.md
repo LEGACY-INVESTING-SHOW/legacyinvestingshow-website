@@ -140,8 +140,8 @@ relatedPosts:
     title: 'Credit Score Optimization: Improve Your Score Fast'
   - slug: debt-avalanche-method
     title: 'Debt Avalanche Method: The Fastest Way to Pay Off Debt'
-readingTime: 10 min read
-wordCount: '2092'
+readingTime: 12 min read
+wordCount: '2208'
 ---
 If you are searching for a student loan payoff calculator, you probably do not need another generic debt tip. You need a decision system that tells you what to do with your next dollar: extra payment, emergency fund, retirement contribution, or a refinance application. That choice has real consequences for total interest, monthly stress, tax outcomes, and even career flexibility.
 

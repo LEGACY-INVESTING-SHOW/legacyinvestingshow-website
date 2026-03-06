@@ -145,8 +145,8 @@ relatedPosts:
     title: >-
       Best Roth Conversion Strategy Calculator: Practical Guide, Break-Even
       Math, and Real Tax Examples
-readingTime: 9 min read
-wordCount: '1956'
+readingTime: 11 min read
+wordCount: '2047'
 ---
 # HSA Strategy for Small Business Owners: Complete 2026 Playbook
 

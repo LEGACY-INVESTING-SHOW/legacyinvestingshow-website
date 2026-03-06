@@ -1,29 +1,29 @@
 ---
-# Core SEO Fields
-title: "How Michael Locked Up 2 Deals in One Week for $12K/Month Cash Flow (2025 Case Study)"
-titleTemplate: "%s | Legacy Investing Show Success Stories"
-description: "Michael, a serial entrepreneur who sold 5 companies, locked up 2 Airbnb deals in one week generating $12,000/month in the Space Coast, Florida. Learn his exact strategies, sales approach, and lessons for building passive income."
-date: 2025-11-14
-modifiedDate: 2026-01-23
+title: >-
+  How Michael Locked Up 2 Deals in One Week for $12K/Month Cash Flow (2025 Case
+  Study)
+titleTemplate: '%s | Legacy Investing Show Success Stories'
+description: >-
+  Michael, a serial entrepreneur who sold 5 companies, locked up 2 Airbnb deals
+  in one week generating $12,000/month in the Space Coast, Florida. Learn his
+  exact strategies, sales approach, and lessons for building passive income.
+date: 2025-11-14T00:00:00.000Z
+modifiedDate: 2026-01-23T00:00:00.000Z
 author: Preston Seo
-authorTitle: "Founder, Legacy Investing Show"
-authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
+authorTitle: 'Founder, Legacy Investing Show'
+authorCredentials: '2,000+ students trained, $10M+ student revenue generated'
 category: Success Story
-canonical: "https://www.legacyinvestingshow.com/blog/entrepreneur-2-deals-12k-month"
-
-# SEO Keyword Targeting
+canonical: 'https://www.legacyinvestingshow.com/blog/entrepreneur-2-deals-12k-month'
 seo:
-  primaryKeyword: "airbnb success story"
+  primaryKeyword: airbnb success story
   secondaryKeywords:
-    - "passive income real estate"
-    - "short-term rental business"
-    - "florida airbnb"
+    - passive income real estate
+    - short-term rental business
+    - florida airbnb
   longTailKeywords:
-    - "how much can you make with airbnb"
-    - "is airbnb arbitrage worth it"
-  searchIntent: "informational"
-
-# Tags
+    - how much can you make with airbnb
+    - is airbnb arbitrage worth it
+  searchIntent: informational
 tags:
   - airbnb arbitrage
   - rental arbitrage
@@ -31,100 +31,130 @@ tags:
   - case study
   - success story
   - short-term rental
-
-# Open Graph & Social
 image: /assets/images/blog/success-stories/michael-entrepreneur-2-deals.jpg
-imageAlt: "How Michael Locked Up 2 Deals in One Week for $12K/Month Cash Flow (2025 Case Study) - Legacy Investing Show"
+imageAlt: >-
+  How Michael Locked Up 2 Deals in One Week for $12K/Month Cash Flow (2025 Case
+  Study) - Legacy Investing Show
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
 featured: false
-
-# Video Integration
-youtubeId: "VadGzJOkDjA"
-
-# Multiple Schema Types for Rich Results
+youtubeId: VadGzJOkDjA
 schema:
   - type: Article
-    headline: "How Michael Locked Up 2 Deals in One Week for $12K/Month Cash Flow (2025 Case Study)"
-    datePublished: "2026-04-14T00:00:00Z"
-    dateModified: "2026-01-23T00:00:00Z"
+    headline: >-
+      How Michael Locked Up 2 Deals in One Week for $12K/Month Cash Flow (2025
+      Case Study)
+    datePublished: '2026-04-14T00:00:00Z'
+    dateModified: '2026-01-23T00:00:00Z'
   - type: VideoObject
-    name: "How Michael Locked Up 2 Deals in One Week for $12K/Month Cash Flow (2025 Case Study) - Full Interview"
-    thumbnailUrl: "https://img.youtube.com/vi/VadGzJOkDjA/maxresdefault.jpg"
-    embedUrl: "https://www.youtube.com/embed/VadGzJOkDjA"
+    name: >-
+      How Michael Locked Up 2 Deals in One Week for $12K/Month Cash Flow (2025
+      Case Study) - Full Interview
+    thumbnailUrl: 'https://img.youtube.com/vi/VadGzJOkDjA/maxresdefault.jpg'
+    embedUrl: 'https://www.youtube.com/embed/VadGzJOkDjA'
   - type: HowTo
-    name: "How to Build an Airbnb Business Like This Success Story"
-
-# Breadcrumbs
+    name: How to Build an Airbnb Business Like This Success Story
 breadcrumbs:
-  - name: "Home"
-    url: "/"
-  - name: "Blog"
-    url: "/blog"
-  - name: "Success Stories"
-    url: "/blog/category/success-stories"
-
-# Statistics (AI-crawler accessible, renders as stat cards)
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog
+  - name: Success Stories
+    url: /blog/category/success-stories
 statistics:
-  - value: "$12,000+"
-    label: "Monthly Cash Flow"
-    icon: "dollar"
-    context: "Projected from 2 deals"
-    source: "Student Interview, 2023"
-  - value: "2"
-    label: "Deals in One Week"
-    icon: "home"
-    context: "Space Coast, Florida"
-  - value: "6 Weeks"
-    label: "Time to First Unit"
-    icon: "clock"
-    context: "From joining program"
-  - value: "5 Minutes"
-    label: "Time to First Booking"
-    icon: "clock"
-    context: "After listing went live"
-  - value: "60%"
-    label: "Closing Ratio"
-    icon: "star"
-    context: "On landlord pitches"
-  - value: "5"
-    label: "Companies Sold"
-    icon: "users"
-    context: "Prior entrepreneurial success"
-
-# FAQ (FAQPage schema + accordion rendering)
+  - value: '$12,000+'
+    label: Monthly Cash Flow
+    icon: dollar
+    context: Projected from 2 deals
+    source: 'Student Interview, 2023'
+  - value: '2'
+    label: Deals in One Week
+    icon: home
+    context: 'Space Coast, Florida'
+  - value: 6 Weeks
+    label: Time to First Unit
+    icon: clock
+    context: From joining program
+  - value: 5 Minutes
+    label: Time to First Booking
+    icon: clock
+    context: After listing went live
+  - value: 60%
+    label: Closing Ratio
+    icon: star
+    context: On landlord pitches
+  - value: '5'
+    label: Companies Sold
+    icon: users
+    context: Prior entrepreneurial success
 faq:
-  - question: "How much money can you make with Airbnb arbitrage?"
-    answer: "Michael locked up 2 deals in one week projecting $12,000/month in cash flow from the Space Coast, Florida. He targets 10% monthly return on his initial investment per property, with each property requiring $10,000-$20,000 to set up."
-  - question: "Is Airbnb arbitrage still profitable in 2025?"
-    answer: "Yes. Michael got his first unit listed within 6 weeks of joining Legacy Investing Show, and it booked within 5 minutes of going live. His oceanview property near Cape Canaveral rocket launches proved immediate demand exists for well-positioned listings."
-  - question: "How long does it take to start making money with Airbnb arbitrage?"
-    answer: "Michael went from joining the program to having his first unit live and booked in 6 weeks. His property got its first booking within 5 minutes of being listed, demonstrating how quickly returns can begin with proper market selection."
-  - question: "Do you need experience to start Airbnb arbitrage?"
-    answer: "No real estate experience is required. Michael's background was in construction and TV stations, not hospitality. However, his sales skills gave him an edge when negotiating with landlords. The program provides scripts and systems for those without sales experience."
-  - question: "How much does it cost to start Airbnb arbitrage?"
-    answer: "Michael invested $10,000-$20,000 per property for arbitrage deals and $465,000 cash for a property he purchased. Pure arbitrage typically requires first month's rent, deposit, and furnishing costs. Michael views the risk as very low compared to traditional real estate investing."
-  - question: "What is the best market for Airbnb arbitrage?"
-    answer: "Michael chose the Space Coast of Florida (Merritt Island, Cape Canaveral, Cocoa Beach) for its unique combination of ocean views, rocket launches, and beach access. He recommends researching demand drivers like tourism, tech workers, and local events before selecting a market."
-  - question: "Is Legacy Investing Show worth it?"
-    answer: "Michael, a successful entrepreneur who sold 5 companies, said he would have paid $25,000 for the program because the blueprint saved him hundreds of thousands in trial-and-error costs. He praised Preston's authenticity and the ability to re-watch training videos to catch details."
-  - question: "What's the difference between Airbnb arbitrage and buying property?"
-    answer: "Arbitrage requires less capital ($10,000-$20,000 vs $465,000+ for purchase) and carries lower risk since you can exit leases. Michael does both - he bought one property with cash while pursuing arbitrage deals to scale faster with less capital at risk."
-  - question: "How do you convince landlords to allow Airbnb arbitrage?"
-    answer: "Michael's pitch focuses on serving traveling nurses, RAs, and doctors who need quality housing for 3 days to 3 weeks. He emphasizes million-dollar insurance coverage, furnishing at his expense, and advance rent payments. His 60% closing ratio comes from strong research and sales skills."
-  - question: "Can you teach your kids about money and entrepreneurship?"
-    answer: "Michael taught his children financial literacy at ages 6 and 9 by requiring them to 'pay' $1,000/month room and board through an invoice system. Every task had a value - brushing teeth, making beds, doing homework. Both children grew up to manage budgets meticulously and went off his payroll immediately after college."
-
-# Table of Contents
+  - question: How much money can you make with Airbnb arbitrage?
+    answer: >-
+      Michael locked up 2 deals in one week projecting $12,000/month in cash
+      flow from the Space Coast, Florida. He targets 10% monthly return on his
+      initial investment per property, with each property requiring
+      $10,000-$20,000 to set up.
+  - question: Is Airbnb arbitrage still profitable in 2025?
+    answer: >-
+      Yes. Michael got his first unit listed within 6 weeks of joining Legacy
+      Investing Show, and it booked within 5 minutes of going live. His
+      oceanview property near Cape Canaveral rocket launches proved immediate
+      demand exists for well-positioned listings.
+  - question: How long does it take to start making money with Airbnb arbitrage?
+    answer: >-
+      Michael went from joining the program to having his first unit live and
+      booked in 6 weeks. His property got its first booking within 5 minutes of
+      being listed, demonstrating how quickly returns can begin with proper
+      market selection.
+  - question: Do you need experience to start Airbnb arbitrage?
+    answer: >-
+      No real estate experience is required. Michael's background was in
+      construction and TV stations, not hospitality. However, his sales skills
+      gave him an edge when negotiating with landlords. The program provides
+      scripts and systems for those without sales experience.
+  - question: How much does it cost to start Airbnb arbitrage?
+    answer: >-
+      Michael invested $10,000-$20,000 per property for arbitrage deals and
+      $465,000 cash for a property he purchased. Pure arbitrage typically
+      requires first month's rent, deposit, and furnishing costs. Michael views
+      the risk as very low compared to traditional real estate investing.
+  - question: What is the best market for Airbnb arbitrage?
+    answer: >-
+      Michael chose the Space Coast of Florida (Merritt Island, Cape Canaveral,
+      Cocoa Beach) for its unique combination of ocean views, rocket launches,
+      and beach access. He recommends researching demand drivers like tourism,
+      tech workers, and local events before selecting a market.
+  - question: Is Legacy Investing Show worth it?
+    answer: >-
+      Michael, a successful entrepreneur who sold 5 companies, said he would
+      have paid $25,000 for the program because the blueprint saved him hundreds
+      of thousands in trial-and-error costs. He praised Preston's authenticity
+      and the ability to re-watch training videos to catch details.
+  - question: What's the difference between Airbnb arbitrage and buying property?
+    answer: >-
+      Arbitrage requires less capital ($10,000-$20,000 vs $465,000+ for
+      purchase) and carries lower risk since you can exit leases. Michael does
+      both - he bought one property with cash while pursuing arbitrage deals to
+      scale faster with less capital at risk.
+  - question: How do you convince landlords to allow Airbnb arbitrage?
+    answer: >-
+      Michael's pitch focuses on serving traveling nurses, RAs, and doctors who
+      need quality housing for 3 days to 3 weeks. He emphasizes million-dollar
+      insurance coverage, furnishing at his expense, and advance rent payments.
+      His 60% closing ratio comes from strong research and sales skills.
+  - question: Can you teach your kids about money and entrepreneurship?
+    answer: >-
+      Michael taught his children financial literacy at ages 6 and 9 by
+      requiring them to 'pay' $1,000/month room and board through an invoice
+      system. Every task had a value - brushing teeth, making beds, doing
+      homework. Both children grew up to manage budgets meticulously and went
+      off his payroll immediately after college.
 toc: true
 tocDepth: 3
-
-# Reading Time
-readingTime: "23 min read"
-wordCount: "4460"
+readingTime: 22 min read
+wordCount: '4312'
 ---
-
 **Michael earns $12,000 per month in projected cash flow from 2 Airbnb deals he locked up in just one week in Florida's Space Coast.** After selling five companies and semi-retiring at 47, this serial entrepreneur found Legacy Investing Show through social media and had his first unit live and booked within 6 weeks. His first property received a booking within 5 minutes of going live, featuring ocean views and proximity to rocket launches.
 
 This case study breaks down exactly how Michael built his Airbnb arbitrage business, including his 60% closing ratio landlord pitch, the parenting philosophy that raised financially literate children, and why a man who's friends with Gary Vee chose this program to learn passive income strategies.

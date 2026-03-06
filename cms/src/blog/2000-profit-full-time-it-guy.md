@@ -1,27 +1,24 @@
 ---
-# Core SEO Fields
-title: "How Brian Makes $2,000/Month with Airbnb Arbitrage While Working Full-Time in IT (2026)"
-titleTemplate: "%s | Legacy Investing Show Success Stories"
-description: "Brian O"
-date: 2025-10-30
-modifiedDate: 2026-01-23
+title: >-
+  How Brian Makes $2,000/Month with Airbnb Arbitrage While Working Full-Time in
+  IT (2026)
+titleTemplate: '%s | Legacy Investing Show Success Stories'
+description: Brian O
+date: 2025-10-30T00:00:00.000Z
+modifiedDate: 2026-01-23T00:00:00.000Z
 author: Preston Seo
-authorTitle: "Founder, Legacy Investing Show"
-authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
+authorTitle: 'Founder, Legacy Investing Show'
+authorCredentials: '2,000+ students trained, $10M+ student revenue generated'
 category: Success Story
-canonical: "https://www.legacyinvestingshow.com/blog/2000-profit-full-time-it-guy"
-
-# SEO Keyword Targeting
+canonical: 'https://www.legacyinvestingshow.com/blog/2000-profit-full-time-it-guy'
 seo:
-  primaryKeyword: "airbnb success story"
+  primaryKeyword: airbnb success story
   secondaryKeywords:
-    - "rental arbitrage"
-    - "short-term rental investing"
+    - rental arbitrage
+    - short-term rental investing
   longTailKeywords:
-    - "how to start airbnb while working full time"
-  searchIntent: "informational"
-
-# Tags
+    - how to start airbnb while working full time
+  searchIntent: informational
 tags:
   - airbnb arbitrage
   - rental arbitrage
@@ -29,100 +26,129 @@ tags:
   - case study
   - success story
   - short-term rental
-
-# Open Graph & Social
 image: /assets/images/blog/success-stories/brian-it-guy-iowa.jpg
-imageAlt: "How Brian Makes $2,000/Month with Airbnb Arbitrage While Working Full-Time in IT (2026) - Legacy Investing Show"
+imageAlt: >-
+  How Brian Makes $2,000/Month with Airbnb Arbitrage While Working Full-Time in
+  IT (2026) - Legacy Investing Show
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
 featured: false
-
-# Video Integration
-youtubeId: "3F0fEK-Uavw"
-
-# Multiple Schema Types for Rich Results
+youtubeId: 3F0fEK-Uavw
 schema:
   - type: Article
-    headline: "How Brian Makes $2,000/Month with Airbnb Arbitrage While Working Full-Time in IT (2026)"
-    datePublished: "2026-03-30T00:00:00Z"
-    dateModified: "2026-01-23T00:00:00Z"
+    headline: >-
+      How Brian Makes $2,000/Month with Airbnb Arbitrage While Working Full-Time
+      in IT (2026)
+    datePublished: '2026-03-30T00:00:00Z'
+    dateModified: '2026-01-23T00:00:00Z'
   - type: VideoObject
-    name: "How Brian Makes $2,000/Month with Airbnb Arbitrage While Working Full-Time in IT (2026) - Full Interview"
-    thumbnailUrl: "https://img.youtube.com/vi/3F0fEK-Uavw/maxresdefault.jpg"
-    embedUrl: "https://www.youtube.com/embed/3F0fEK-Uavw"
+    name: >-
+      How Brian Makes $2,000/Month with Airbnb Arbitrage While Working Full-Time
+      in IT (2026) - Full Interview
+    thumbnailUrl: 'https://img.youtube.com/vi/3F0fEK-Uavw/maxresdefault.jpg'
+    embedUrl: 'https://www.youtube.com/embed/3F0fEK-Uavw'
   - type: HowTo
-    name: "How to Build an Airbnb Business Like This Success Story"
-
-# Breadcrumbs
+    name: How to Build an Airbnb Business Like This Success Story
 breadcrumbs:
-  - name: "Home"
-    url: "/"
-  - name: "Blog"
-    url: "/blog"
-  - name: "Success Stories"
-    url: "/blog/category/success-stories"
-
-# Statistics (AI-crawler accessible, renders as stat cards)
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog
+  - name: Success Stories
+    url: /blog/category/success-stories
 statistics:
-  - value: "$2,000"
-    label: "Monthly Cash Flow"
-    icon: "dollar"
-    context: "After all expenses"
-    source: "Student Interview, 2026"
-  - value: "1"
-    label: "Property"
-    icon: "home"
-    context: "Iowa market"
-  - value: "30 days"
-    label: "Time to First Deal"
-    icon: "clock"
-    context: "From joining program"
-  - value: "10"
-    label: "Guest Capacity"
-    icon: "users"
-    context: "4-bedroom historic home"
-  - value: "1-2 hrs"
-    label: "Weekly Time"
-    icon: "clock"
-    context: "To manage property"
-  - value: "4"
-    label: "2026 Goal"
-    icon: "chart"
-    context: "Properties by year end"
-
-# FAQ (FAQPage schema + accordion rendering)
+  - value: '$2,000'
+    label: Monthly Cash Flow
+    icon: dollar
+    context: After all expenses
+    source: 'Student Interview, 2026'
+  - value: '1'
+    label: Property
+    icon: home
+    context: Iowa market
+  - value: 30 days
+    label: Time to First Deal
+    icon: clock
+    context: From joining program
+  - value: '10'
+    label: Guest Capacity
+    icon: users
+    context: 4-bedroom historic home
+  - value: 1-2 hrs
+    label: Weekly Time
+    icon: clock
+    context: To manage property
+  - value: '4'
+    label: 2026 Goal
+    icon: chart
+    context: Properties by year end
 faq:
-  - question: "How much money can you make with Airbnb arbitrage while working full-time?"
-    answer: "Brian generates $1,500-$2,000/month in cash flow from one 4-bedroom property in Iowa while working full-time in IT. He spends just 1-2 hours per week managing the property thanks to automation systems and a professional cleaner."
-  - question: "How do you convince a landlord to allow Airbnb arbitrage?"
-    answer: "Brian contacted 4-5 landlords on Zillow, got 3 to agree to meetings, and used Legacy Investing Show's scripts tailored to his personality. The key was showing confidence in the business model and providing links to successful Superhost listings from the community as proof of quality."
-  - question: "Is Airbnb arbitrage still profitable in 2026?"
-    answer: "Yes. Brian started in January 2026 and was cash flow positive by March. His Iowa property targets family travelers and weekend getaways. Success depends on market selection, property appeal, and operational efficiency."
-  - question: "How long does it take to start an Airbnb arbitrage business?"
-    answer: "Brian joined Legacy Investing Show in early January, secured his property by end of January, and went live on Airbnb in February. Most students get their first property in 30-60 days following the roadmap."
-  - question: "Do you need real estate experience for Airbnb arbitrage?"
-    answer: "No. Brian had one long-term rental but no short-term rental experience. He followed Legacy Investing Show's roadmap step-by-step and relied on the community for guidance. His IT background helped with organization and automation."
-  - question: "What type of property works best for Airbnb arbitrage?"
-    answer: "Brian chose a historic 4-bedroom home with a front porch overlooking the Mississippi River. He selected it because he and his wife \"didn't want to leave\" - if you're excited about a property, guests will be too. The home sleeps 10 guests and targets families."
-  - question: "How much time does Airbnb arbitrage take per week?"
-    answer: "Brian spends 1-2 hours per week on his property. Automated messaging handles most guest communication, and a professional cleaner maintains the property. He only handles special questions and backend tasks like bookkeeping."
-  - question: "What's the difference between short-term and long-term rentals?"
-    answer: "Short-term rentals require more turnover but offer higher cash flow potential. Brian's long-term rental had issues with damage accumulating over 1-3 year tenancies. With short-term rentals, professional cleaning after every guest prevents long-term damage, and you get paid upfront before guests arrive."
-  - question: "Is Legacy Investing Show worth it for Airbnb arbitrage?"
-    answer: "Based on Brian's results, the program provided crucial landlord scripts, business setup checklists, and community support. He used the community to prove credibility to landlords and got direct feedback on his deal before signing. The structured roadmap helped him launch in under 60 days."
-  - question: "Can you do Airbnb arbitrage in small markets like Iowa?"
-    answer: "Yes. Brian chose Iowa specifically for its historic Mississippi River properties and tourism appeal. Smaller markets often have less competition, landlords more open to arbitrage, and unique properties that stand out on Airbnb. His property offers views of three states from the front porch."
-
-# Table of Contents
+  - question: How much money can you make with Airbnb arbitrage while working full-time?
+    answer: >-
+      Brian generates $1,500-$2,000/month in cash flow from one 4-bedroom
+      property in Iowa while working full-time in IT. He spends just 1-2 hours
+      per week managing the property thanks to automation systems and a
+      professional cleaner.
+  - question: How do you convince a landlord to allow Airbnb arbitrage?
+    answer: >-
+      Brian contacted 4-5 landlords on Zillow, got 3 to agree to meetings, and
+      used Legacy Investing Show's scripts tailored to his personality. The key
+      was showing confidence in the business model and providing links to
+      successful Superhost listings from the community as proof of quality.
+  - question: Is Airbnb arbitrage still profitable in 2026?
+    answer: >-
+      Yes. Brian started in January 2026 and was cash flow positive by March.
+      His Iowa property targets family travelers and weekend getaways. Success
+      depends on market selection, property appeal, and operational efficiency.
+  - question: How long does it take to start an Airbnb arbitrage business?
+    answer: >-
+      Brian joined Legacy Investing Show in early January, secured his property
+      by end of January, and went live on Airbnb in February. Most students get
+      their first property in 30-60 days following the roadmap.
+  - question: Do you need real estate experience for Airbnb arbitrage?
+    answer: >-
+      No. Brian had one long-term rental but no short-term rental experience. He
+      followed Legacy Investing Show's roadmap step-by-step and relied on the
+      community for guidance. His IT background helped with organization and
+      automation.
+  - question: What type of property works best for Airbnb arbitrage?
+    answer: >-
+      Brian chose a historic 4-bedroom home with a front porch overlooking the
+      Mississippi River. He selected it because he and his wife "didn't want to
+      leave" - if you're excited about a property, guests will be too. The home
+      sleeps 10 guests and targets families.
+  - question: How much time does Airbnb arbitrage take per week?
+    answer: >-
+      Brian spends 1-2 hours per week on his property. Automated messaging
+      handles most guest communication, and a professional cleaner maintains the
+      property. He only handles special questions and backend tasks like
+      bookkeeping.
+  - question: What's the difference between short-term and long-term rentals?
+    answer: >-
+      Short-term rentals require more turnover but offer higher cash flow
+      potential. Brian's long-term rental had issues with damage accumulating
+      over 1-3 year tenancies. With short-term rentals, professional cleaning
+      after every guest prevents long-term damage, and you get paid upfront
+      before guests arrive.
+  - question: Is Legacy Investing Show worth it for Airbnb arbitrage?
+    answer: >-
+      Based on Brian's results, the program provided crucial landlord scripts,
+      business setup checklists, and community support. He used the community to
+      prove credibility to landlords and got direct feedback on his deal before
+      signing. The structured roadmap helped him launch in under 60 days.
+  - question: Can you do Airbnb arbitrage in small markets like Iowa?
+    answer: >-
+      Yes. Brian chose Iowa specifically for its historic Mississippi River
+      properties and tourism appeal. Smaller markets often have less
+      competition, landlords more open to arbitrage, and unique properties that
+      stand out on Airbnb. His property offers views of three states from the
+      front porch.
 toc: true
 tocDepth: 3
-
-# Reading Time
-readingTime: "24 min read"
-wordCount: "4711"
+readingTime: 23 min read
+wordCount: '4554'
 ---
-
 **Brian O'Leary earns $1,500 to $2,000 per month in cash flow from one Airbnb property in Iowa while working full-time in IT.** Starting with zero short-term rental experience, he joined Legacy Investing Show in early January, secured a historic 4-bedroom home by month's end, and went live on Airbnb in February. Today, Brian manages his property with just 1-2 hours per week thanks to automation, while planning to scale to four properties by year-end.
 
 This case study breaks down exactly how Brian built this Airbnb arbitrage business, including his landlord negotiation strategy, property selection process, and the automation systems that make it possible to host while working full-time.

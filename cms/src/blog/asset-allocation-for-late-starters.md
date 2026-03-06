@@ -145,8 +145,8 @@ relatedPosts:
       Portfolio You Can Stick With
   - slug: asset-allocation-strategies
     title: 'Asset Allocation Strategies by Age: How to Balance Your Portfolio'
-readingTime: 9 min read
-wordCount: '1892'
+readingTime: 11 min read
+wordCount: '2003'
 ---
 Asset allocation for late starters is the highest-leverage portfolio decision for people who feel behind on retirement. If you started serious investing in your 40s or 50s, you do not have time for random bets, and you also cannot afford to be so conservative that inflation quietly erodes your future spending power.
 

@@ -144,8 +144,8 @@ relatedPosts:
     title: 'Credit Score Optimization: Improve Your Score Fast'
   - slug: debt-avalanche-method
     title: 'Debt Avalanche Method: The Fastest Way to Pay Off Debt'
-readingTime: 9 min read
-wordCount: '2068'
+readingTime: 11 min read
+wordCount: '2187'
 ---
 If you are deciding between debt to income ratio vs cash flow budgeting, do not treat this as an either-or choice. These tools solve different problems. Debt-to-income ratio helps you estimate whether lenders will approve new borrowing. Cash flow budgeting tells you whether your current plan is actually sustainable month to month.
 

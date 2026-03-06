@@ -144,8 +144,8 @@ relatedPosts:
     title: >-
       Asset Allocation Tax Implications: Complete 2026 Guide for After-Tax
       Portfolio Returns
-readingTime: 9 min read
-wordCount: '1947'
+readingTime: 11 min read
+wordCount: '2043'
 ---
 Asset allocation for beginners is not about finding the hottest ETF. It is about setting a durable mix of growth assets, stability assets, and near-cash so you can keep investing in both bull and bear markets. A strong plan reduces emotional mistakes and makes each new dollar easier to deploy.
 

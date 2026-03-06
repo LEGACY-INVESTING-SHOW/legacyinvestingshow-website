@@ -1,28 +1,27 @@
 ---
-# Core SEO Fields
-title: "How Hampton Generated $20,000 in Airbnb Bookings His First Month (2026 Case Study)"
-titleTemplate: "%s | Legacy Investing Show Success Stories"
-description: "Hampton, a process engineer, went from zero Airbnb experience to $20,000 in bookings within weeks using his parents"
-date: 2026-02-22
-modifiedDate: 2026-01-23
+title: >-
+  How Hampton Generated $20,000 in Airbnb Bookings His First Month (2026 Case
+  Study)
+titleTemplate: '%s | Legacy Investing Show Success Stories'
+description: >-
+  Hampton, a process engineer, went from zero Airbnb experience to $20,000 in
+  bookings within weeks using his parents
+date: 2026-02-22T00:00:00.000Z
+modifiedDate: 2026-01-23T00:00:00.000Z
 author: Preston Seo
-authorTitle: "Founder, Legacy Investing Show"
-authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
+authorTitle: 'Founder, Legacy Investing Show'
+authorCredentials: '2,000+ students trained, $10M+ student revenue generated'
 category: Success Story
-canonical: "https://www.legacyinvestingshow.com/blog/hamptons-airbnb-20k-first-month"
-
-# SEO Keyword Targeting
+canonical: 'https://www.legacyinvestingshow.com/blog/hamptons-airbnb-20k-first-month'
 seo:
-  primaryKeyword: "airbnb success story"
+  primaryKeyword: airbnb success story
   secondaryKeywords:
-    - "rental arbitrage"
-    - "short-term rental investing"
+    - rental arbitrage
+    - short-term rental investing
   longTailKeywords:
-    - "how much can you make with airbnb"
-    - "is airbnb arbitrage worth it"
-  searchIntent: "informational"
-
-# Tags
+    - how much can you make with airbnb
+    - is airbnb arbitrage worth it
+  searchIntent: informational
 tags:
   - airbnb arbitrage
   - rental arbitrage
@@ -30,100 +29,129 @@ tags:
   - case study
   - success story
   - short-term rental
-
-# Open Graph & Social
 image: /assets/images/blog/success-stories/hampton-lakefront-airbnb.jpg
-imageAlt: "How Hampton Generated $20,000 in Airbnb Bookings His First Month (2026 Case Study) - Legacy Investing Show"
+imageAlt: >-
+  How Hampton Generated $20,000 in Airbnb Bookings His First Month (2026 Case
+  Study) - Legacy Investing Show
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
 featured: false
-
-# Video Integration
-youtubeId: "aT4TQi04KZQ"
-
-# Multiple Schema Types for Rich Results
+youtubeId: aT4TQi04KZQ
 schema:
   - type: Article
-    headline: "How Hampton Generated $20,000 in Airbnb Bookings His First Month (2026 Case Study)"
-    datePublished: "2026-02-22T00:00:00Z"
-    dateModified: "2026-01-23T00:00:00Z"
+    headline: >-
+      How Hampton Generated $20,000 in Airbnb Bookings His First Month (2026
+      Case Study)
+    datePublished: '2026-02-22T00:00:00Z'
+    dateModified: '2026-01-23T00:00:00Z'
   - type: VideoObject
-    name: "How Hampton Generated $20,000 in Airbnb Bookings His First Month (2026 Case Study) - Full Interview"
-    thumbnailUrl: "https://img.youtube.com/vi/aT4TQi04KZQ/maxresdefault.jpg"
-    embedUrl: "https://www.youtube.com/embed/aT4TQi04KZQ"
+    name: >-
+      How Hampton Generated $20,000 in Airbnb Bookings His First Month (2026
+      Case Study) - Full Interview
+    thumbnailUrl: 'https://img.youtube.com/vi/aT4TQi04KZQ/maxresdefault.jpg'
+    embedUrl: 'https://www.youtube.com/embed/aT4TQi04KZQ'
   - type: HowTo
-    name: "How to Build an Airbnb Business Like This Success Story"
-
-# Breadcrumbs
+    name: How to Build an Airbnb Business Like This Success Story
 breadcrumbs:
-  - name: "Home"
-    url: "/"
-  - name: "Blog"
-    url: "/blog"
-  - name: "Success Stories"
-    url: "/blog/category/success-stories"
-
-# Statistics (AI-crawler accessible, renders as stat cards)
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog
+  - name: Success Stories
+    url: /blog/category/success-stories
 statistics:
-  - value: "$20,000"
-    label: "First Month Bookings"
-    icon: "dollar"
-    context: "Within weeks of going live"
-    source: "Student Interview, October 2023"
-  - value: "2"
-    label: "Properties"
-    icon: "home"
-    context: "Lakefront + West Virginia Lodge"
-  - value: "25-30%"
-    label: "Cash-on-Cash Return"
-    icon: "star"
-    context: "West Virginia property"
-  - value: "$30,000"
-    label: "Total Bookings (4 Months)"
-    icon: "chart"
-    context: "Lakefront property alone"
-  - value: "1 hour/day"
-    label: "Time to Manage"
-    icon: "clock"
-    context: "Both properties combined"
-  - value: "$100K+"
-    label: "Projected Annual Revenue"
-    icon: "users"
-    context: "Once lodge complete in 2024"
-
-# FAQ (FAQPage schema + accordion rendering)
+  - value: '$20,000'
+    label: First Month Bookings
+    icon: dollar
+    context: Within weeks of going live
+    source: 'Student Interview, October 2023'
+  - value: '2'
+    label: Properties
+    icon: home
+    context: Lakefront + West Virginia Lodge
+  - value: 25-30%
+    label: Cash-on-Cash Return
+    icon: star
+    context: West Virginia property
+  - value: '$30,000'
+    label: Total Bookings (4 Months)
+    icon: chart
+    context: Lakefront property alone
+  - value: 1 hour/day
+    label: Time to Manage
+    icon: clock
+    context: Both properties combined
+  - value: $100K+
+    label: Projected Annual Revenue
+    icon: users
+    context: Once lodge complete in 2024
 faq:
-  - question: "How much money can you make with Airbnb arbitrage?"
-    answer: "Hampton generated $20,000 in bookings within weeks of listing his first property and reached $30,000 in bookings within 4 months. His second property in West Virginia generated $2,500 in its first month. He projects $100,000+ annually once his full lodge property is complete."
-  - question: "Is Airbnb arbitrage still profitable in 2026?"
-    answer: "Yes. Hampton started mid-2023 and scaled to $30,000+ in bookings within 4 months from a single lakefront property. His success demonstrates that choosing the right market, property type, and automation tools can generate substantial income even for complete beginners."
-  - question: "Can you start Airbnb arbitrage with a family property?"
-    answer: "Yes. Hampton used his parents' lakefront property to start his Airbnb business. By presenting them with data on potential earnings using AirDNA and Legacy Investing Show tools, he convinced them to let him manage the property on weekends they weren't using it."
-  - question: "How long does it take to set up an Airbnb property?"
-    answer: "Hampton spent about 2 hours per day for the first week setting up his initial property on Airbnb. He was methodical about getting everything right, including photos, descriptions, and automated messaging. After the initial setup, he manages both properties in about 1 hour per day."
-  - question: "What is the best market for Airbnb vacation rentals?"
-    answer: "Hampton chose a lakefront property in Lake Gaston for its familiarity and tourist appeal. His second property targets the ATV/outdoor recreation market in West Virginia. The best market depends on your access, experience, and the property's unique features."
-  - question: "Do you need experience to start Airbnb arbitrage?"
-    answer: "No. Hampton is a process engineer with no prior real estate experience. His wife is a county lawyer. They started their Airbnb business using Legacy Investing Show's training and tools, generating $20,000 in their first month."
-  - question: "What is the cash-on-cash return for Airbnb arbitrage?"
-    answer: "Hampton's West Virginia property is projecting a 25-30% cash-on-cash return for the smaller apartment unit alone. The larger lodge, once complete, is expected to generate $75,000+ per year, with total property revenue exceeding $100,000 annually."
-  - question: "Is Legacy Investing Show worth it?"
-    answer: "Based on Hampton's results, the program provided the foundational knowledge, tools, and confidence to start. He credits the courses with teaching him the fundamentals and providing evaluation tools that helped him convince his parents to let him manage their property."
-  - question: "How do you manage Airbnb properties while working full-time?"
-    answer: "Hampton works as a process engineer while his wife is a county lawyer. They have two kids with busy schedules. He manages both Airbnb properties in about 1 hour per day using automation tools like Guesty, PriceLabs, and automated messaging for cleaning crews."
-  - question: "What tools does Hampton use to manage his Airbnb properties?"
-    answer: "Hampton uses Guesty for property management, PriceLabs for dynamic pricing, AirDNA for market research, and automated messaging systems to coordinate with cleaning crews. These tools allow him to manage multiple properties with minimal daily time investment."
-
-# Table of Contents
+  - question: How much money can you make with Airbnb arbitrage?
+    answer: >-
+      Hampton generated $20,000 in bookings within weeks of listing his first
+      property and reached $30,000 in bookings within 4 months. His second
+      property in West Virginia generated $2,500 in its first month. He projects
+      $100,000+ annually once his full lodge property is complete.
+  - question: Is Airbnb arbitrage still profitable in 2026?
+    answer: >-
+      Yes. Hampton started mid-2023 and scaled to $30,000+ in bookings within 4
+      months from a single lakefront property. His success demonstrates that
+      choosing the right market, property type, and automation tools can
+      generate substantial income even for complete beginners.
+  - question: Can you start Airbnb arbitrage with a family property?
+    answer: >-
+      Yes. Hampton used his parents' lakefront property to start his Airbnb
+      business. By presenting them with data on potential earnings using AirDNA
+      and Legacy Investing Show tools, he convinced them to let him manage the
+      property on weekends they weren't using it.
+  - question: How long does it take to set up an Airbnb property?
+    answer: >-
+      Hampton spent about 2 hours per day for the first week setting up his
+      initial property on Airbnb. He was methodical about getting everything
+      right, including photos, descriptions, and automated messaging. After the
+      initial setup, he manages both properties in about 1 hour per day.
+  - question: What is the best market for Airbnb vacation rentals?
+    answer: >-
+      Hampton chose a lakefront property in Lake Gaston for its familiarity and
+      tourist appeal. His second property targets the ATV/outdoor recreation
+      market in West Virginia. The best market depends on your access,
+      experience, and the property's unique features.
+  - question: Do you need experience to start Airbnb arbitrage?
+    answer: >-
+      No. Hampton is a process engineer with no prior real estate experience.
+      His wife is a county lawyer. They started their Airbnb business using
+      Legacy Investing Show's training and tools, generating $20,000 in their
+      first month.
+  - question: What is the cash-on-cash return for Airbnb arbitrage?
+    answer: >-
+      Hampton's West Virginia property is projecting a 25-30% cash-on-cash
+      return for the smaller apartment unit alone. The larger lodge, once
+      complete, is expected to generate $75,000+ per year, with total property
+      revenue exceeding $100,000 annually.
+  - question: Is Legacy Investing Show worth it?
+    answer: >-
+      Based on Hampton's results, the program provided the foundational
+      knowledge, tools, and confidence to start. He credits the courses with
+      teaching him the fundamentals and providing evaluation tools that helped
+      him convince his parents to let him manage their property.
+  - question: How do you manage Airbnb properties while working full-time?
+    answer: >-
+      Hampton works as a process engineer while his wife is a county lawyer.
+      They have two kids with busy schedules. He manages both Airbnb properties
+      in about 1 hour per day using automation tools like Guesty, PriceLabs, and
+      automated messaging for cleaning crews.
+  - question: What tools does Hampton use to manage his Airbnb properties?
+    answer: >-
+      Hampton uses Guesty for property management, PriceLabs for dynamic
+      pricing, AirDNA for market research, and automated messaging systems to
+      coordinate with cleaning crews. These tools allow him to manage multiple
+      properties with minimal daily time investment.
 toc: true
 tocDepth: 3
-
-# Reading Time
-readingTime: "23 min read"
-wordCount: "4485"
+readingTime: 22 min read
+wordCount: '4342'
 ---
-
 **Hampton earns $30,000+ in Airbnb bookings from a single lakefront property in just 4 months.** Starting as a process engineer with zero real estate experience, he convinced his parents to let him manage their vacation home on Airbnb and generated $20,000 in bookings within weeks of going live. Now he's scaling to a West Virginia lodge projected to generate $100,000+ annually, all while working a demanding full-time job and raising two kids.
 
 This case study breaks down exactly how Hampton built his Airbnb business, including his strategies for leveraging family properties, choosing the right markets, and automating operations to manage everything in just one hour per day.

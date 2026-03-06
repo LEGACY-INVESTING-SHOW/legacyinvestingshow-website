@@ -136,8 +136,8 @@ relatedPosts:
     title: >-
       Best Roth Conversion Strategy Calculator: Practical Guide, Break-Even
       Math, and Real Tax Examples
-readingTime: 10 min read
-wordCount: '2113'
+readingTime: 12 min read
+wordCount: '2202'
 ---
 Real estate investing can make your tax return more complex, but it also creates planning opportunities that most households miss. A disciplined hsa strategy for real estate investors can reduce current taxes, build a dedicated healthcare reserve, and create another long-term compounding bucket that sits outside your property portfolio.
 

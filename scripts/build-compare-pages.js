@@ -35,15 +35,8 @@ function esc(str = '') {
 
 function buildSEOTitle(rawTitle) {
   const suffix = ' | Legacy Investing Show';
-  const title = String(rawTitle || '').trim();
-  const maxLen = 60;
-
-  if ((title + suffix).length <= maxLen) return title + suffix;
-
-  const budget = maxLen - suffix.length - 1;
-  if (budget > 30) return `${title.slice(0, budget).trimEnd()}…${suffix}`;
-
-  return `${title.slice(0, maxLen - 1).trimEnd()}…`;
+  const title = String(rawTitle || 'Comparison Guide').replace(/\s+/g, ' ').trim() || 'Comparison Guide';
+  return title.endsWith(suffix) ? title : title + suffix;
 }
 
 function bestText(page) {
@@ -365,44 +358,77 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
 
     <style>
         .compare-hero {
-            padding: 8rem 0 3.5rem;
-            background: linear-gradient(135deg, #f8fafc 0%, #e5e7eb 100%);
+            padding: 8rem 0 3rem;
+            background:
+                radial-gradient(circle at top right, rgba(201, 169, 97, 0.18), transparent 36%),
+                linear-gradient(180deg, #faf7f2 0%, #ffffff 100%);
+        }
+        .compare-hero__grid {
+            display: grid;
+            gap: 1.5rem;
+            align-items: start;
+        }
+        @media (min-width: 1024px) {
+            .compare-hero__grid {
+                grid-template-columns: minmax(0, 1.55fr) minmax(300px, 0.8fr);
+            }
         }
         .compare-badge {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            padding: 0.5rem 1rem;
+            padding: 0.5rem 0.95rem;
             background: #111827;
             color: white;
-            font-size: 0.75rem;
-            font-weight: 600;
+            font-size: 0.74rem;
+            font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 0.06em;
+            letter-spacing: 0.08em;
             border-radius: 999px;
             margin-bottom: 1rem;
         }
         .compare-title {
-            font-size: 2.125rem;
-            font-weight: 700;
-            line-height: 1.15;
+            font-size: clamp(2.25rem, 5vw, 4.3rem);
+            line-height: 0.98;
+            letter-spacing: -0.04em;
             color: #111827;
-            margin-bottom: 1rem;
-        }
-        @media (min-width: 768px) {
-            .compare-title { font-size: 2.6rem; }
+            margin-bottom: 0.95rem;
+            max-width: 14ch;
         }
         .compare-subtitle {
-            max-width: 52rem;
-            color: #4b5563;
-            font-size: 1.1rem;
-            line-height: 1.7;
+            max-width: 46rem;
+            color: #475569;
+            font-size: 1.08rem;
+            line-height: 1.78;
+        }
+        .compare-anchor-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin-top: 1.3rem;
+        }
+        .compare-anchor-nav a {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.45rem 0.75rem;
+            border-radius: 999px;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            background: rgba(255, 255, 255, 0.85);
+            color: #334155;
+            text-decoration: none;
+            font-size: 0.84rem;
+            font-weight: 600;
+        }
+        .compare-anchor-nav a:hover {
+            color: #111827;
+            border-color: rgba(201, 169, 97, 0.45);
+            box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
         }
         .compare-kpis {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 1rem;
-            margin-top: 1.5rem;
+            gap: 0.95rem;
+            margin-top: 1.4rem;
         }
         @media (min-width: 768px) {
             .compare-kpis {
@@ -410,64 +436,146 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
             }
         }
         .compare-kpi {
-            background: white;
-            border: 1px solid #e5e7eb;
-            border-radius: 0.75rem;
+            background: rgba(255, 255, 255, 0.92);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            border-radius: 1rem;
             padding: 1rem;
+            box-shadow: 0 14px 32px rgba(15, 23, 42, 0.05);
         }
         .compare-kpi__label {
             font-size: 0.72rem;
-            letter-spacing: 0.06em;
+            letter-spacing: 0.08em;
             text-transform: uppercase;
             color: #6b7280;
             margin-bottom: 0.35rem;
+            font-weight: 700;
         }
         .compare-kpi__value {
             color: #111827;
             font-weight: 700;
-            font-size: 1.05rem;
+            font-size: 1.02rem;
+            line-height: 1.4;
         }
         .compare-kpi__value--good {
-            color: #047857;
+            color: #0f766e;
+        }
+        .compare-hero__panel {
+            padding: 1.35rem 1.35rem 1.45rem;
+            border-radius: 1.25rem;
+            background: linear-gradient(160deg, #182234, #0f172a);
+            color: white;
+            box-shadow: 0 24px 56px rgba(15, 23, 42, 0.18);
+        }
+        .compare-hero__panel-eyebrow {
+            margin: 0 0 0.55rem;
+            color: rgba(217, 196, 138, 0.9);
+            font-size: 0.74rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+        .compare-hero__panel-title {
+            margin: 0 0 0.85rem;
+            color: white;
+            font-size: 1.5rem;
+            line-height: 1.1;
+        }
+        .compare-hero__panel-text {
+            margin: 0;
+            color: #cbd5e1;
+            font-size: 0.96rem;
+            line-height: 1.72;
+        }
+        .compare-hero__panel-rule {
+            margin-top: 1rem;
+            padding: 0.95rem 1rem;
+            border-radius: 1rem;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .compare-hero__panel-rule span {
+            display: block;
+            font-size: 0.72rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #cbd5e1;
+            margin-bottom: 0.35rem;
+            font-weight: 700;
+        }
+        .compare-hero__panel-rule strong {
+            color: white;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        .snapshot-grid {
+            display: grid;
+            gap: 0.95rem;
+            margin-top: 1.35rem;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        }
+        .snapshot-card {
+            padding: 1rem 1.05rem;
+            border-radius: 1rem;
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 16px 36px rgba(15, 23, 42, 0.05);
+        }
+        .snapshot-card__eyebrow {
+            margin: 0 0 0.45rem;
+            color: #b8933f;
+            font-size: 0.74rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+        .snapshot-card p {
+            margin: 0;
+            color: #334155;
+            font-size: 0.95rem;
+            line-height: 1.68;
         }
 
         .content-section {
-            padding: 3.25rem 0;
-        }
-        .content-section--alt {
-            background: #f9fafb;
+            padding: 0 0 3.5rem;
         }
         .content-grid {
             display: grid;
-            gap: 2rem;
+            gap: 1.75rem;
+            align-items: start;
         }
         @media (min-width: 1024px) {
             .content-grid {
-                grid-template-columns: minmax(0, 2.2fr) minmax(280px, 1fr);
+                grid-template-columns: minmax(0, 1.8fr) minmax(290px, 0.8fr);
             }
         }
         .prose-content {
+            padding: 1.45rem;
+            border-radius: 1.5rem;
+            background: rgba(255, 255, 255, 0.96);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
             color: #374151;
-            line-height: 1.75;
+            line-height: 1.78;
         }
         .prose-content h2 {
             color: #111827;
-            font-size: 1.6rem;
-            line-height: 1.3;
-            margin-bottom: 1rem;
+            font-size: clamp(1.65rem, 2.5vw, 2.35rem);
+            line-height: 1.08;
+            margin-bottom: 0.95rem;
         }
         .prose-content h3 {
             color: #111827;
             font-size: 1.18rem;
-            margin: 1.6rem 0 0.65rem;
+            margin: 1.65rem 0 0.65rem;
+            line-height: 1.35;
         }
         .prose-content p {
             margin-bottom: 1rem;
         }
         .prose-content ul,
         .prose-content ol {
-            padding-left: 1.2rem;
-            margin: 0.5rem 0 1rem;
+            padding-left: 1.25rem;
+            margin: 0.6rem 0 1rem;
         }
         .prose-content li {
             margin-bottom: 0.55rem;
@@ -476,16 +584,23 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
             background: #ecfdf5;
             border-left: 4px solid #10b981;
             padding: 1rem 1rem;
-            border-radius: 0.5rem;
+            border-radius: 0.9rem;
             color: #065f46;
+        }
+        .compare-note--warning {
+            margin-top: 1rem;
+            background: #fff7ed;
+            border-left-color: #f59e0b;
+            color: #9a3412;
         }
 
         .table-wrap {
-            border: 1px solid #e5e7eb;
-            border-radius: 0.75rem;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            border-radius: 1rem;
             overflow-x: auto;
             background: white;
             margin-top: 1rem;
+            box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
         }
         .compare-table {
             width: 100%;
@@ -496,21 +611,23 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
             background: #111827;
             color: white;
             text-align: left;
-            font-size: 0.85rem;
-            font-weight: 600;
-            letter-spacing: 0.02em;
-            padding: 0.8rem;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 0.9rem 0.85rem;
             vertical-align: top;
         }
         .compare-table td {
             border-bottom: 1px solid #e5e7eb;
-            padding: 0.78rem;
+            padding: 0.88rem;
             vertical-align: top;
             color: #374151;
             font-size: 0.94rem;
+            line-height: 1.62;
         }
         .compare-table tr.alt td {
-            background: #f9fafb;
+            background: #f8fafc;
         }
 
         .split-panels {
@@ -520,9 +637,9 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
             margin-top: 1rem;
         }
         .panel {
-            border: 1px solid #e5e7eb;
-            border-radius: 0.75rem;
-            background: white;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            border-radius: 1rem;
+            background: rgba(250, 247, 242, 0.65);
             padding: 1rem;
         }
         .panel h3 {
@@ -530,22 +647,53 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
         }
 
         .sidebar {
-            position: sticky;
-            top: 6rem;
-            align-self: start;
+            display: grid;
+            gap: 1rem;
+        }
+        @media (min-width: 1024px) {
+            .sidebar {
+                position: sticky;
+                top: 6rem;
+            }
         }
         .sidebar-card {
-            background: #f9fafb;
-            border: 1px solid #e5e7eb;
-            border-radius: 0.75rem;
+            background: rgba(255, 255, 255, 0.92);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            border-radius: 1rem;
             padding: 1rem;
-            margin-bottom: 1rem;
+            box-shadow: 0 16px 36px rgba(15, 23, 42, 0.05);
+        }
+        .sidebar-card--dark {
+            background: linear-gradient(160deg, #182234, #0f172a);
+            color: white;
+            box-shadow: 0 22px 54px rgba(15, 23, 42, 0.18);
+        }
+        .sidebar-card__eyebrow {
+            margin: 0 0 0.45rem;
+            color: rgba(217, 196, 138, 0.92);
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+        .sidebar-card--dark .sidebar-card__title {
+            color: white;
         }
         .sidebar-card__title {
-            font-size: 0.95rem;
+            font-size: 1.05rem;
             font-weight: 700;
             color: #111827;
-            margin-bottom: 0.8rem;
+            margin-bottom: 0.75rem;
+            line-height: 1.35;
+        }
+        .sidebar-card__body {
+            margin: 0;
+            color: inherit;
+            font-size: 0.93rem;
+            line-height: 1.68;
+        }
+        .sidebar-card__body--muted {
+            color: #cbd5e1;
         }
         .sidebar-list {
             list-style: none;
@@ -582,10 +730,11 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
         }
         .faq-item {
             background: white;
-            border-radius: 0.75rem;
+            border-radius: 1rem;
             margin-bottom: 0.9rem;
             overflow: hidden;
-            border: 1px solid #e5e7eb;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 14px 30px rgba(15, 23, 42, 0.05);
         }
         .faq-question {
             width: 100%;
@@ -629,12 +778,13 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
         }
         .cta-card {
             background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
-            border-radius: 1rem;
-            padding: 2.5rem 1.5rem;
+            border-radius: 1.4rem;
+            padding: 2.75rem 1.5rem;
             color: white;
+            box-shadow: 0 28px 70px rgba(15, 23, 42, 0.2);
         }
         .cta-card__title {
-            font-size: 1.7rem;
+            font-size: 1.9rem;
             font-weight: 700;
             color: #ffffff;
             margin-bottom: 0.85rem;
@@ -643,24 +793,26 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
             color: #d1d5db;
             max-width: 46rem;
             margin: 0 auto 1.4rem;
+            line-height: 1.72;
         }
         .cta-card__button {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            padding: 0.85rem 1.6rem;
+            padding: 0.9rem 1.65rem;
             background: #10b981;
             color: white;
-            border-radius: 0.5rem;
-            font-weight: 600;
+            border-radius: 999px;
+            font-weight: 700;
             text-decoration: none;
         }
         .cta-card__button:hover {
             background: #059669;
+            transform: translateY(-1px);
         }
 
         .breadcrumb {
-            padding: 1rem 0;
+            padding: 1rem 0 1.2rem;
             font-size: 0.875rem;
             color: #6b7280;
         }
@@ -677,34 +829,34 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
         }
         @media (max-width: 767px) {
             .compare-hero {
-                padding: 6.75rem 0 2.4rem;
+                padding: 6.7rem 0 2.35rem;
             }
             .compare-title {
-                font-size: 1.65rem;
+                max-width: none;
             }
             .compare-subtitle {
                 font-size: 1rem;
-                line-height: 1.6;
+                line-height: 1.68;
             }
             .compare-kpis {
                 grid-template-columns: 1fr;
                 gap: 0.75rem;
             }
-            .compare-kpi {
-                padding: 0.8rem;
-            }
             .content-section {
-                padding: 2.2rem 0;
+                padding-bottom: 2.5rem;
+            }
+            .prose-content {
+                padding: 1.15rem;
             }
             .prose-content h2 {
-                font-size: 1.35rem;
+                font-size: 1.45rem;
             }
             .prose-content h3 {
-                font-size: 1.05rem;
+                font-size: 1.08rem;
             }
             .table-wrap {
-                margin-left: -0.25rem;
-                margin-right: -0.25rem;
+                margin-left: -0.15rem;
+                margin-right: -0.15rem;
             }
             .compare-table {
                 min-width: 0;
@@ -737,11 +889,9 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
                 color: #6b7280;
                 margin-bottom: 0.2rem;
             }
-            .split-panels {
+            .split-panels,
+            .snapshot-grid {
                 grid-template-columns: 1fr;
-            }
-            .panel {
-                padding: 0.85rem;
             }
             .cta-card {
                 padding: 2rem 1rem;
@@ -802,32 +952,69 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
 
         <section class="compare-hero">
             <div class="container-custom">
-                <span class="compare-badge">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M8 12h8M8 8h8M8 16h8M4 8h.01M4 12h.01M4 16h.01"/>
-                    </svg>
-                    Edge-Case Comparison
-                </span>
-                <h1 class="compare-title">${esc(page.title)}</h1>
-                <p class="compare-subtitle">${esc(page.description)}</p>
+                <div class="compare-hero__grid">
+                    <div>
+                        <span class="compare-badge">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M8 12h8M8 8h8M8 16h8M4 8h.01M4 12h.01M4 16h.01"/>
+                            </svg>
+                            Edge-Case Comparison
+                        </span>
+                        <h1 class="compare-title">${esc(page.title)}</h1>
+                        <p class="compare-subtitle">${esc(page.description)}</p>
 
-                <div class="compare-kpis">
-                    <div class="compare-kpi">
-                        <div class="compare-kpi__label">Quick Verdict</div>
-                        <div class="compare-kpi__value compare-kpi__value--good">${esc(bestText(page))}</div>
+                        <div class="compare-anchor-nav">
+                            <a href="#executive-summary">Executive Summary</a>
+                            <a href="#comparison-matrix">Decision Scorecard</a>
+                            <a href="#worked-example">Worked Example</a>
+                            <a href="#execution-plan">90-Day Plan</a>
+                            <a href="#advisor-packet">Advisor Packet</a>
+                        </div>
+
+                        <div class="compare-kpis">
+                            <div class="compare-kpi">
+                                <div class="compare-kpi__label">Quick Verdict</div>
+                                <div class="compare-kpi__value compare-kpi__value--good">${esc(page.quickVerdict || bestText(page))}</div>
+                            </div>
+                            <div class="compare-kpi">
+                                <div class="compare-kpi__label">Option A</div>
+                                <div class="compare-kpi__value">${esc(page.optionAName)}</div>
+                            </div>
+                            <div class="compare-kpi">
+                                <div class="compare-kpi__label">Option B</div>
+                                <div class="compare-kpi__value">${esc(page.optionBName)}</div>
+                            </div>
+                            <div class="compare-kpi">
+                                <div class="compare-kpi__label">Decision Factors</div>
+                                <div class="compare-kpi__value">${(page.decisionMatrix || []).length} scored criteria</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="compare-kpi">
-                        <div class="compare-kpi__label">Option A</div>
-                        <div class="compare-kpi__value">${esc(page.optionAName)}</div>
-                    </div>
-                    <div class="compare-kpi">
-                        <div class="compare-kpi__label">Option B</div>
-                        <div class="compare-kpi__value">${esc(page.optionBName)}</div>
-                    </div>
-                    <div class="compare-kpi">
-                        <div class="compare-kpi__label">Decision Factors</div>
-                        <div class="compare-kpi__value">${(page.decisionMatrix || []).length} scored criteria</div>
-                    </div>
+
+                    <aside class="compare-hero__panel">
+                        <p class="compare-hero__panel-eyebrow">Who this page is for</p>
+                        <h2 class="compare-hero__panel-title">${esc(page.bestFor || page.description)}</h2>
+                        <p class="compare-hero__panel-text">${esc(page.intro)}</p>
+                        <div class="compare-hero__panel-rule">
+                            <span>Read this before you decide</span>
+                            <strong>${esc(page.quickVerdict || bestText(page))}</strong>
+                        </div>
+                    </aside>
+                </div>
+
+                <div class="snapshot-grid">
+                    <article class="snapshot-card">
+                        <p class="snapshot-card__eyebrow">When ${esc(page.optionAName)} Wins</p>
+                        <p>${esc(page.whenA)}</p>
+                    </article>
+                    <article class="snapshot-card">
+                        <p class="snapshot-card__eyebrow">When ${esc(page.optionBName)} Wins</p>
+                        <p>${esc(page.whenB)}</p>
+                    </article>
+                    <article class="snapshot-card">
+                        <p class="snapshot-card__eyebrow">Where People Lose Money</p>
+                        <p>${esc(page.commonMistake || 'Forcing the facts to match the strategy after the year is over.')}</p>
+                    </article>
                 </div>
             </div>
         </section>
@@ -838,12 +1025,20 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
                     <h2 id="executive-summary">Executive Summary</h2>
                     ${openingHtml}
                     <div class="compare-note"><strong>Bottom line:</strong> ${esc(page.intro)}</div>
-                    <p><strong>${esc(page.optionAName)}</strong> tends to win when ${esc(page.whenA)}</p>
-                    <p><strong>${esc(page.optionBName)}</strong> tends to win when ${esc(page.whenB)}</p>
-                    <div class="compare-note" style="margin-top: 1rem;"><strong>Common mistake:</strong> ${esc(page.commonMistake || 'Forcing the facts to match the strategy after the year is over.')}</div>
+                    <div class="split-panels">
+                        <article class="panel">
+                            <h3>When ${esc(page.optionAName)} tends to win</h3>
+                            <p>${esc(page.whenA)}</p>
+                        </article>
+                        <article class="panel">
+                            <h3>When ${esc(page.optionBName)} tends to win</h3>
+                            <p>${esc(page.whenB)}</p>
+                        </article>
+                    </div>
+                    <div class="compare-note compare-note--warning"><strong>Where people lose money:</strong> ${esc(page.commonMistake || 'Forcing the facts to match the strategy after the year is over.')}</div>
                     <p>This page is written like a playbook. Use it to make the decision early, set guardrails, and keep your documentation clean while you execute.</p>
 
-                    <h2 id="comparison-matrix">How This Compares to Alternatives</h2>
+                    <h2 id="comparison-matrix">Decision Scorecard</h2>
                     <p>The table below forces tradeoffs. The score is directional, not a guarantee. Your facts and your documentation decide what is actually defensible.</p>
                     <div class="table-wrap">
                         <table class="compare-table">
@@ -963,11 +1158,17 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
                 </article>
 
                 <aside class="sidebar">
+                    <div class="sidebar-card sidebar-card--dark">
+                        <p class="sidebar-card__eyebrow">Decision Signal</p>
+                        <h3 class="sidebar-card__title">${esc(page.quickVerdict || bestText(page))}</h3>
+                        <p class="sidebar-card__body sidebar-card__body--muted">${esc(page.bestFor || page.description)}</p>
+                    </div>
+
                     <div class="sidebar-card">
                         <h3 class="sidebar-card__title">Page Outline</h3>
                         <ul class="sidebar-list">
                             <li><a href="#executive-summary">Executive Summary</a></li>
-                            <li><a href="#comparison-matrix">Comparison Matrix</a></li>
+                            <li><a href="#comparison-matrix">Decision Scorecard</a></li>
                             <li><a href="#decision-framework">Decision Framework</a></li>
                             <li><a href="#worked-example">Worked Example</a></li>
                             <li><a href="#evidence-standards">Evidence Standards</a></li>
@@ -997,6 +1198,11 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
                             ${renderRelated(page.related)}
                         </ul>
                     </div>
+
+                    <div class="sidebar-card">
+                        <h3 class="sidebar-card__title">Important</h3>
+                        <p class="sidebar-card__body">Use this as an educational decision brief, not personalized tax or legal advice. The right answer depends on your facts, your records, and your advisor review.</p>
+                    </div>
                 </aside>
             </div>
         </section>
@@ -1015,7 +1221,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
                 <div class="cta-card">
                     <h2 class="cta-card__title">Turn Comparison Into an Execution Plan</h2>
                     <p class="cta-card__text">If you want the strategy to hold up in the real world, your documentation system and advisor packet matter as much as your math model.</p>
-                    <a href="https://www.managemoney101.com/challengeoptin" class="cta-card__button">
+                    <a href="https://www.joinlwb.com/intensive" class="cta-card__button">
                         Join the 3-Day Wealth Challenge
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -1068,12 +1274,13 @@ function renderIndex(pages) {
 
   const cards = pages
     .map((page) => `<article class="library-card">
+                    <div class="library-card__eyebrow">${esc(page.bestFor || 'Decision playbook')}</div>
                     <h3><a href="/compare/${esc(page.slug)}">${esc(page.title)}</a></h3>
                     <p>${esc(page.description)}</p>
                     <div class="library-card__meta">
-                        <span><strong>Quick signal:</strong> ${esc(bestText(page))}</span>
+                        <span><strong>Quick signal:</strong> ${esc(page.quickVerdict || bestText(page))}</span>
                     </div>
-                    <a class="library-card__cta" href="/compare/${esc(page.slug)}">Open guide</a>
+                    <a class="library-card__cta" href="/compare/${esc(page.slug)}">Open playbook</a>
                 </article>`)
     .join('\n');
 
@@ -1122,22 +1329,84 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
     <style>
         .library-hero {
             padding: 8rem 0 3.25rem;
-            background: linear-gradient(135deg, #f8fafc 0%, #e5e7eb 100%);
+            background:
+                radial-gradient(circle at top right, rgba(201, 169, 97, 0.18), transparent 38%),
+                linear-gradient(180deg, #faf7f2 0%, #ffffff 100%);
+        }
+        .library-hero__grid {
+            display: grid;
+            gap: 1.25rem;
+            align-items: start;
+        }
+        @media (min-width: 1024px) {
+            .library-hero__grid {
+                grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.85fr);
+            }
+        }
+        .library-hero__eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.55rem;
+            padding: 0.45rem 0.85rem;
+            border-radius: 999px;
+            background: rgba(15, 23, 42, 0.04);
+            border: 1px solid rgba(201, 169, 97, 0.18);
+            color: #a88b4a;
+            font-size: 0.74rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-bottom: 0.95rem;
+        }
+        .library-hero__eyebrow::before {
+            content: "";
+            width: 0.45rem;
+            height: 0.45rem;
+            border-radius: 999px;
+            background: #c9a961;
         }
         .library-hero h1 {
-            font-size: 2.25rem;
+            font-size: clamp(2.35rem, 5vw, 4.2rem);
             color: #111827;
-            margin-bottom: 0.8rem;
-            line-height: 1.15;
-        }
-        @media (min-width: 768px) {
-            .library-hero h1 { font-size: 2.8rem; }
+            margin-bottom: 0.9rem;
+            line-height: 0.98;
+            letter-spacing: -0.04em;
+            max-width: 12ch;
         }
         .library-hero p {
-            max-width: 54rem;
-            color: #4b5563;
-            line-height: 1.7;
-            font-size: 1.05rem;
+            max-width: 48rem;
+            color: #475569;
+            line-height: 1.78;
+            font-size: 1.06rem;
+            margin-bottom: 0.9rem;
+        }
+        .library-hero__panel {
+            padding: 1.25rem;
+            border-radius: 1.25rem;
+            background: linear-gradient(160deg, #182234, #0f172a);
+            color: white;
+            box-shadow: 0 22px 54px rgba(15, 23, 42, 0.18);
+        }
+        .library-hero__stat {
+            padding: 0.85rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .library-hero__stat:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .library-hero__stat strong {
+            display: block;
+            font-size: 1.7rem;
+            line-height: 1;
+            color: white;
+        }
+        .library-hero__stat span {
+            display: block;
+            margin-top: 0.35rem;
+            color: #cbd5e1;
+            font-size: 0.92rem;
+            line-height: 1.6;
         }
         .library-section {
             padding: 3rem 0;
@@ -1148,15 +1417,26 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
             grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
         }
         .library-card {
-            background: white;
-            border: 1px solid #e5e7eb;
-            border-radius: 0.9rem;
-            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            border-radius: 1.15rem;
+            padding: 1.1rem;
+            box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+        }
+        .library-card__eyebrow {
+            color: #b8933f;
+            font-size: 0.74rem;
+            font-weight: 700;
+            letter-spacing: 0.11em;
+            text-transform: uppercase;
         }
         .library-card h3 {
-            font-size: 1.08rem;
-            line-height: 1.4;
-            margin-bottom: 0.45rem;
+            font-size: 1.12rem;
+            line-height: 1.38;
+            margin-bottom: 0;
         }
         .library-card h3 a {
             text-decoration: none;
@@ -1168,26 +1448,30 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
         .library-card p {
             color: #4b5563;
             font-size: 0.94rem;
-            line-height: 1.6;
-            margin-bottom: 0.6rem;
+            line-height: 1.68;
+            margin-bottom: 0;
         }
         .library-card__meta {
-            margin-bottom: 0.75rem;
-            font-size: 0.86rem;
+            font-size: 0.88rem;
             color: #065f46;
+            line-height: 1.6;
         }
         .library-card__cta {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            align-self: flex-start;
             background: #111827;
             color: white;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 700;
             font-size: 0.85rem;
-            border-radius: 0.5rem;
-            padding: 0.45rem 0.8rem;
+            border-radius: 999px;
+            padding: 0.55rem 0.9rem;
         }
         .library-card__cta:hover {
             background: #1f2937;
+            transform: translateY(-1px);
         }
         .how-it-works {
             display: grid;
@@ -1257,9 +1541,28 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
     <main id="main">
         <section class="library-hero">
             <div class="container-custom">
-                <h1>Edge-Case Comparison Playbooks</h1>
-                <p>If you make good money but still feel like you are getting crushed, it is usually because the big decisions are being made on half the math. Taxes, cash flow, and execution all hit at once. These pages help you run the full model.</p>
-                <p>Each comparison includes a scored tradeoff table, a worked scenario, the documentation standard, the failure modes, and a 90-day plan you can hand to your CPA or advisor.</p>
+                <div class="library-hero__grid">
+                    <div>
+                        <span class="library-hero__eyebrow">Decision Library</span>
+                        <h1>Comparison Playbooks for Expensive Money Decisions</h1>
+                        <p>If you make good money but still feel like one wrong move can set you back, this library is for you. These are not vague "it depends" articles. They show where the math works, where execution usually breaks, and what to bring to your CPA before you move money.</p>
+                        <p>Each guide includes a scorecard, worked example, documentation standard, failure modes, and a 90-day action plan built for real life.</p>
+                    </div>
+                    <aside class="library-hero__panel">
+                        <div class="library-hero__stat">
+                            <strong>${pages.length}</strong>
+                            <span>Scenario-specific playbooks for tax, retirement, real-estate, and operating decisions.</span>
+                        </div>
+                        <div class="library-hero__stat">
+                            <strong>1</strong>
+                            <span>Question that matters: what still works when the facts are less perfect than the plan.</span>
+                        </div>
+                        <div class="library-hero__stat">
+                            <strong>90</strong>
+                            <span>Day implementation path included in every guide so the decision survives contact with real life.</span>
+                        </div>
+                    </aside>
+                </div>
             </div>
         </section>
 
@@ -1293,7 +1596,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
 
         <section class="library-section" style="background:#f9fafb;">
             <div class="container-custom">
-                <h2 style="font-size:1.7rem; color:#111827; margin-bottom:1rem;">C01-C10 Comparison Pages</h2>
+                <h2 style="font-size:1.7rem; color:#111827; margin-bottom:1rem;">Featured Comparison Guides</h2>
                 <div class="library-grid">
                     ${cards}
                 </div>

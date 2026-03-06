@@ -147,8 +147,8 @@ relatedPosts:
     title: 'Credit Score Optimization: Improve Your Score Fast'
   - slug: debt-avalanche-method
     title: 'Debt Avalanche Method: The Fastest Way to Pay Off Debt'
-readingTime: 9 min read
-wordCount: '1902'
+readingTime: 11 min read
+wordCount: '2017'
 ---
 If you have student debt, a student loan payoff calculator with extra payments is one of the highest-leverage tools you can use this week. It turns a vague goal like pay loans faster into an objective decision with numbers: payoff date, total interest, and the monthly cash commitment required.
 

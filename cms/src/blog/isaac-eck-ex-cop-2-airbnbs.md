@@ -1,27 +1,26 @@
 ---
-# Core SEO Fields
-title: "How Isaac Eck Quit Being a Cop to Run 2 Airbnbs Across 2 States"
-titleTemplate: "%s | Legacy Investing Show Success Stories"
-description: "Isaac Eck went from police officer to Airbnb entrepreneur, managing 2 properties across Alabama and Arkansas with his wife. Learn how they furnished a 5-bedroom for $18,000 and their strategy for winning over skeptical landlords."
-date: 2026-02-16
-modifiedDate: 2026-01-23
+title: How Isaac Eck Quit Being a Cop to Run 2 Airbnbs Across 2 States
+titleTemplate: '%s | Legacy Investing Show Success Stories'
+description: >-
+  Isaac Eck went from police officer to Airbnb entrepreneur, managing 2
+  properties across Alabama and Arkansas with his wife. Learn how they furnished
+  a 5-bedroom for $18,000 and their strategy for winning over skeptical
+  landlords.
+date: 2026-02-16T00:00:00.000Z
+modifiedDate: 2026-01-23T00:00:00.000Z
 author: Preston Seo
-authorTitle: "Founder, Legacy Investing Show"
-authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
+authorTitle: 'Founder, Legacy Investing Show'
+authorCredentials: '2,000+ students trained, $10M+ student revenue generated'
 category: Success Story
-canonical: "https://www.legacyinvestingshow.com/blog/isaac-eck-ex-cop-2-airbnbs"
-
-# SEO Keyword Targeting
+canonical: 'https://www.legacyinvestingshow.com/blog/isaac-eck-ex-cop-2-airbnbs'
 seo:
-  primaryKeyword: "airbnb success story"
+  primaryKeyword: airbnb success story
   secondaryKeywords:
-    - "short-term rental business"
+    - short-term rental business
   longTailKeywords:
-    - "how much can you make with airbnb"
-    - "is airbnb arbitrage worth it"
-  searchIntent: "informational"
-
-# Tags
+    - how much can you make with airbnb
+    - is airbnb arbitrage worth it
+  searchIntent: informational
 tags:
   - airbnb arbitrage
   - rental arbitrage
@@ -29,95 +28,114 @@ tags:
   - case study
   - success story
   - short-term rental
-
-# Open Graph & Social
 image: /assets/images/blog/success-stories/isaac-eck-ex-cop-airbnb.jpg
-imageAlt: "How Isaac Eck Quit Being a Cop to Run 2 Airbnbs Across 2 States - Legacy Investing Show"
+imageAlt: >-
+  How Isaac Eck Quit Being a Cop to Run 2 Airbnbs Across 2 States - Legacy
+  Investing Show
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
 featured: false
-
-# Video Integration
-youtubeId: "g9hHANSjj30"
-
-# Multiple Schema Types for Rich Results
+youtubeId: g9hHANSjj30
 schema:
   - type: Article
-    headline: "How Isaac Eck Quit Being a Cop to Run 2 Airbnbs Across 2 States"
-    datePublished: "2026-02-16T00:00:00Z"
-    dateModified: "2026-01-23T00:00:00Z"
+    headline: How Isaac Eck Quit Being a Cop to Run 2 Airbnbs Across 2 States
+    datePublished: '2026-02-16T00:00:00Z'
+    dateModified: '2026-01-23T00:00:00Z'
   - type: VideoObject
-    name: "How Isaac Eck Quit Being a Cop to Run 2 Airbnbs Across 2 States - Full Interview"
-    thumbnailUrl: "https://img.youtube.com/vi/g9hHANSjj30/maxresdefault.jpg"
-    embedUrl: "https://www.youtube.com/embed/g9hHANSjj30"
+    name: >-
+      How Isaac Eck Quit Being a Cop to Run 2 Airbnbs Across 2 States - Full
+      Interview
+    thumbnailUrl: 'https://img.youtube.com/vi/g9hHANSjj30/maxresdefault.jpg'
+    embedUrl: 'https://www.youtube.com/embed/g9hHANSjj30'
   - type: HowTo
-    name: "How to Build an Airbnb Business Like This Success Story"
-
-# Breadcrumbs
+    name: How to Build an Airbnb Business Like This Success Story
 breadcrumbs:
-  - name: "Home"
-    url: "/"
-  - name: "Blog"
-    url: "/blog"
-  - name: "Success Stories"
-    url: "/blog/category/success-stories"
-
-# Statistics (AI-crawler accessible, renders as stat cards)
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog
+  - name: Success Stories
+    url: /blog/category/success-stories
 statistics:
-  - value: "2"
-    label: "Properties"
-    icon: "home"
-    context: "Birmingham, AL & Arkansas"
-  - value: "$18,000"
-    label: "Furnishing Budget"
-    icon: "dollar"
-    context: "5-bedroom Birmingham property"
-  - value: "3 months"
-    label: "Job to Launch"
-    icon: "clock"
-    context: "August to November"
-  - value: "Guest Favorite"
-    label: "Airbnb Status"
-    icon: "check"
-    context: "Birmingham property"
-  - value: "$140K"
-    label: "Revenue Goal"
-    icon: "dollar"
-    context: "Annual target both properties"
-  - value: "$850"
-    label: "Couch Cost"
-    icon: "star"
-    context: "Facebook Marketplace find"
-
-# FAQ (FAQPage schema + accordion rendering)
+  - value: '2'
+    label: Properties
+    icon: home
+    context: 'Birmingham, AL & Arkansas'
+  - value: '$18,000'
+    label: Furnishing Budget
+    icon: dollar
+    context: 5-bedroom Birmingham property
+  - value: 3 months
+    label: Job to Launch
+    icon: clock
+    context: August to November
+  - value: Guest Favorite
+    label: Airbnb Status
+    icon: check
+    context: Birmingham property
+  - value: $140K
+    label: Revenue Goal
+    icon: dollar
+    context: Annual target both properties
+  - value: $850
+    label: Couch Cost
+    icon: star
+    context: Facebook Marketplace find
 faq:
-  - question: "Can you start Airbnb arbitrage as a couple?"
-    answer: "Yes. Isaac and his wife run their Airbnb business as a team. She handles design and decor while he focuses on landlord outreach and operations. They joke that 'she buys it and I build it.' Having a partner who shares the same goals makes the journey more sustainable."
-  - question: "How much does it cost to furnish a 5-bedroom Airbnb?"
-    answer: "Isaac furnished his 5-bedroom, 3,000 sq ft property in Birmingham for approximately $18,000. They saved money by finding a sectional couch on Facebook Marketplace for $850 (retail value $2,000+) and shopping strategically at IKEA for accent pieces."
-  - question: "What if the landlord already had a bad experience with Airbnb?"
-    answer: "Isaac found a property where the previous tenant was doing arbitrage and leaving. He contacted the former host on Airbnb, learned there were no problems with the property (she just wanted to transition to owning), and used her revenue data from AirDNA as his baseline projections."
-  - question: "Is Airbnb arbitrage profitable in seasonal markets?"
-    answer: "It can be, but requires planning. Isaac's Arkansas lake property is highly seasonal with slow winter months (one booking in February) but strong summer performance. He anticipated coming out of pocket during slow months and already has profitable June/July bookings locked in."
-  - question: "How do you find a cleaner for your Airbnb property?"
-    answer: "Isaac uses Turno, a platform where cleaners bid on jobs. He interviews candidates by phone, prioritizing fast communicators. His top cleaner responds to messages almost immediately—slow responders are automatic disqualifications. Communication speed predicts reliability."
-  - question: "Can you quit your job to do Airbnb arbitrage?"
-    answer: "Isaac quit his police job in November after joining the program in August. His wife's travel nursing income provided financial stability during the transition. He recommends having a financial cushion or secondary income before quitting your 9-to-5."
-  - question: "What tools automate Airbnb property management?"
-    answer: "Isaac uses Price Labs for dynamic pricing and Hospitable for automated guest messaging and smart lock code generation. These tools handle routine tasks so he only needs to manage cleaner coordination and special guest requests."
-  - question: "How do you stand out in a competitive Airbnb market?"
-    answer: "Isaac analyzed Birmingham on AirDNA and found 47% of listings were one-bedrooms. He chose a 5-bedroom property (only 4% of market) to target large groups. He also added amenities like a convertible pool/ping pong table to compete with nearby 6-bedroom properties charging more."
-
-# Table of Contents
+  - question: Can you start Airbnb arbitrage as a couple?
+    answer: >-
+      Yes. Isaac and his wife run their Airbnb business as a team. She handles
+      design and decor while he focuses on landlord outreach and operations.
+      They joke that 'she buys it and I build it.' Having a partner who shares
+      the same goals makes the journey more sustainable.
+  - question: How much does it cost to furnish a 5-bedroom Airbnb?
+    answer: >-
+      Isaac furnished his 5-bedroom, 3,000 sq ft property in Birmingham for
+      approximately $18,000. They saved money by finding a sectional couch on
+      Facebook Marketplace for $850 (retail value $2,000+) and shopping
+      strategically at IKEA for accent pieces.
+  - question: What if the landlord already had a bad experience with Airbnb?
+    answer: >-
+      Isaac found a property where the previous tenant was doing arbitrage and
+      leaving. He contacted the former host on Airbnb, learned there were no
+      problems with the property (she just wanted to transition to owning), and
+      used her revenue data from AirDNA as his baseline projections.
+  - question: Is Airbnb arbitrage profitable in seasonal markets?
+    answer: >-
+      It can be, but requires planning. Isaac's Arkansas lake property is highly
+      seasonal with slow winter months (one booking in February) but strong
+      summer performance. He anticipated coming out of pocket during slow months
+      and already has profitable June/July bookings locked in.
+  - question: How do you find a cleaner for your Airbnb property?
+    answer: >-
+      Isaac uses Turno, a platform where cleaners bid on jobs. He interviews
+      candidates by phone, prioritizing fast communicators. His top cleaner
+      responds to messages almost immediately—slow responders are automatic
+      disqualifications. Communication speed predicts reliability.
+  - question: Can you quit your job to do Airbnb arbitrage?
+    answer: >-
+      Isaac quit his police job in November after joining the program in August.
+      His wife's travel nursing income provided financial stability during the
+      transition. He recommends having a financial cushion or secondary income
+      before quitting your 9-to-5.
+  - question: What tools automate Airbnb property management?
+    answer: >-
+      Isaac uses Price Labs for dynamic pricing and Hospitable for automated
+      guest messaging and smart lock code generation. These tools handle routine
+      tasks so he only needs to manage cleaner coordination and special guest
+      requests.
+  - question: How do you stand out in a competitive Airbnb market?
+    answer: >-
+      Isaac analyzed Birmingham on AirDNA and found 47% of listings were
+      one-bedrooms. He chose a 5-bedroom property (only 4% of market) to target
+      large groups. He also added amenities like a convertible pool/ping pong
+      table to compete with nearby 6-bedroom properties charging more.
 toc: true
 tocDepth: 3
-
-# Reading Time
-readingTime: "24 min read"
-wordCount: "4628"
+readingTime: 23 min read
+wordCount: '4480'
 ---
-
 **Isaac Eck went from police officer to Airbnb entrepreneur, quitting his job to run 2 properties across Alabama and Arkansas with his wife.** Starting with a business management degree and an entrepreneurial spirit that began at age 13 with gumball machines, Isaac and his wife built an Airbnb arbitrage business that allows them to travel the country while she works as a travel nurse.
 
 This case study breaks down exactly how Isaac found a landlord who already understood arbitrage, furnished a 5-bedroom property for $18,000, and navigates the challenges of running a seasonal lake property in Northwestern Arkansas. You'll learn his strategies for winning over skeptical landlords, finding rockstar cleaners through Turno, and automating operations with Price Labs and Hospitable.

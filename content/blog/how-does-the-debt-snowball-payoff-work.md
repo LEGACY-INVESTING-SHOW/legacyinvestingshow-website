@@ -143,8 +143,8 @@ relatedPosts:
     title: 'Credit Score Optimization: Improve Your Score Fast'
   - slug: debt-avalanche-method
     title: 'Debt Avalanche Method: The Fastest Way to Pay Off Debt'
-readingTime: 9 min read
-wordCount: '1888'
+readingTime: 11 min read
+wordCount: '2089'
 ---
 If you are asking **how does the debt snowball payoff work**, here is the short answer: you pay minimums on every debt, then throw every extra dollar at the smallest balance first. Once that balance is gone, you roll that payment into the next smallest debt. The payment amount grows like a snowball.
 

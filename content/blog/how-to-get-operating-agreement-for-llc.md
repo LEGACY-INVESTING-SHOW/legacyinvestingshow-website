@@ -135,8 +135,8 @@ relatedPosts:
     title: 'Business Credit Building: Separate Your Personal & Business Finances'
   - slug: business-succession-planning
     title: 'Business Succession Planning: How to Transfer Ownership'
-readingTime: 10 min read
-wordCount: '2137'
+readingTime: 12 min read
+wordCount: '2293'
 ---
 If you are trying to figure out **how to get operating agreement for llc**, the fastest useful answer is this: do not treat it like a formality. Treat it like your internal contract for money, control, risk, and exits. A weak agreement can create expensive disputes even when the business is profitable.
 

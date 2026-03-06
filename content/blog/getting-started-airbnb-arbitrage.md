@@ -1,13 +1,17 @@
 ---
-title: "Getting Started with Airbnb Arbitrage: A Complete Beginner's Guide"
-description: "Learn how to start an Airbnb arbitrage business with no property ownership required. Discover the step-by-step process to generate passive income through short-term rentals."
-date: 2025-01-20
+title: 'Getting Started with Airbnb Arbitrage: A Complete Beginner''s Guide'
+description: >-
+  Learn how to start an Airbnb arbitrage business with no property ownership
+  required. Discover the step-by-step process to generate passive income through
+  short-term rentals.
+date: 2025-01-20T00:00:00.000Z
 author: Preston Seo
 category: Airbnb Arbitrage
 image: /assets/images/blog/airbnb-arbitrage-guide.jpg
 featured: true
+wordCount: '780'
+readingTime: 4 min read
 ---
-
 Airbnb arbitrage has become one of the most accessible ways to build passive income without needing hundreds of thousands of dollars for a down payment. If you've been wondering how people are generating $3,000 to $10,000+ per month from properties they don't even own, you're in the right place.
 
 ## What Is Airbnb Arbitrage?

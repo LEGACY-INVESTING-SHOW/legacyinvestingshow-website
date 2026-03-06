@@ -147,8 +147,8 @@ relatedPosts:
     title: 'Credit Score Optimization: Improve Your Score Fast'
   - slug: debt-avalanche-method
     title: 'Debt Avalanche Method: The Fastest Way to Pay Off Debt'
-readingTime: 10 min read
-wordCount: '2113'
+readingTime: 12 min read
+wordCount: '2264'
 ---
 If your debt is spread across federal and private accounts, a student loan payoff calculator multiple loans workflow can turn a vague goal into a measurable plan. Instead of asking whether you should pay extra, you can answer higher-value questions: which loan gets the next dollar, what payoff date that creates, and what flexibility you lose if income drops.
 

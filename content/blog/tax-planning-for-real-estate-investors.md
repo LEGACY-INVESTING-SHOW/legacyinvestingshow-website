@@ -133,8 +133,8 @@ relatedPosts:
     title: 'Best Tax Deductions for High Income Earners: Complete 2026 Guide'
   - slug: best-tax-deductions-for-individuals
     title: 'Best Tax Deductions for Individuals: Complete 2026 Guide'
-readingTime: 11 min read
-wordCount: '2430'
+readingTime: 13 min read
+wordCount: '2549'
 ---
 Strong tax planning for real estate investors is not a once-a-year spreadsheet exercise. It is a system for deciding entity structure, timing income and expenses, documenting activities, and planning exits before the return is filed. In 2026, small changes in classification and timing can materially change after-tax cash flow, especially for investors balancing W-2 income, short-term rentals, and long-term buy-and-hold properties.
 

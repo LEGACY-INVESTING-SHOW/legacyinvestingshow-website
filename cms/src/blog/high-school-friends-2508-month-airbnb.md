@@ -1,26 +1,27 @@
 ---
-# Core SEO Fields
-title: "How 2 High School Friends Make $2,508/Month From 1 Airbnb in Salem, Oregon (2026)"
-titleTemplate: "%s | Legacy Investing Show Success Stories"
-description: "Sarah and Nico, high school friends turned business partners, generate $2,508/month from their first Airbnb arbitrage property in Salem, Oregon with just $7,600 startup investment. Learn their partnership strategies, cold calling tactics, and exact financial breakdown."
-date: 2026-02-13
-modifiedDate: 2026-01-23
+title: >-
+  How 2 High School Friends Make $2,508/Month From 1 Airbnb in Salem, Oregon
+  (2026)
+titleTemplate: '%s | Legacy Investing Show Success Stories'
+description: >-
+  Sarah and Nico, high school friends turned business partners, generate
+  $2,508/month from their first Airbnb arbitrage property in Salem, Oregon with
+  just $7,600 startup investment. Learn their partnership strategies, cold
+  calling tactics, and exact financial breakdown.
+date: 2026-02-13T00:00:00.000Z
+modifiedDate: 2026-01-23T00:00:00.000Z
 author: Preston Seo
-authorTitle: "Founder, Legacy Investing Show"
-authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
+authorTitle: 'Founder, Legacy Investing Show'
+authorCredentials: '2,000+ students trained, $10M+ student revenue generated'
 category: Success Story
-canonical: "https://www.legacyinvestingshow.com/blog/high-school-friends-2508-month-airbnb"
-
-# SEO Keyword Targeting
+canonical: 'https://www.legacyinvestingshow.com/blog/high-school-friends-2508-month-airbnb'
 seo:
-  primaryKeyword: "airbnb success story"
+  primaryKeyword: airbnb success story
   secondaryKeywords:
-    - "short-term rental business"
+    - short-term rental business
   longTailKeywords:
-    - "first airbnb property tips"
-  searchIntent: "informational"
-
-# Tags
+    - first airbnb property tips
+  searchIntent: informational
 tags:
   - airbnb arbitrage
   - rental arbitrage
@@ -28,100 +29,132 @@ tags:
   - case study
   - success story
   - short-term rental
-
-# Open Graph & Social
 image: /assets/images/blog/success-stories/sarah-nico-partnership.jpg
-imageAlt: "How 2 High School Friends Make $2,508/Month From 1 Airbnb in Salem, Oregon (2026) - Legacy Investing Show"
+imageAlt: >-
+  How 2 High School Friends Make $2,508/Month From 1 Airbnb in Salem, Oregon
+  (2026) - Legacy Investing Show
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
 featured: false
-
-# Video Integration
-youtubeId: "AmdDUL3c2hI"
-
-# Multiple Schema Types for Rich Results
+youtubeId: AmdDUL3c2hI
 schema:
   - type: Article
-    headline: "How 2 High School Friends Make $2,508/Month From 1 Airbnb in Salem, Oregon (2026)"
-    datePublished: "2026-02-13T00:00:00Z"
-    dateModified: "2026-01-23T00:00:00Z"
+    headline: >-
+      How 2 High School Friends Make $2,508/Month From 1 Airbnb in Salem, Oregon
+      (2026)
+    datePublished: '2026-02-13T00:00:00Z'
+    dateModified: '2026-01-23T00:00:00Z'
   - type: VideoObject
-    name: "How 2 High School Friends Make $2,508/Month From 1 Airbnb in Salem, Oregon (2026) - Full Interview"
-    thumbnailUrl: "https://img.youtube.com/vi/AmdDUL3c2hI/maxresdefault.jpg"
-    embedUrl: "https://www.youtube.com/embed/AmdDUL3c2hI"
+    name: >-
+      How 2 High School Friends Make $2,508/Month From 1 Airbnb in Salem, Oregon
+      (2026) - Full Interview
+    thumbnailUrl: 'https://img.youtube.com/vi/AmdDUL3c2hI/maxresdefault.jpg'
+    embedUrl: 'https://www.youtube.com/embed/AmdDUL3c2hI'
   - type: HowTo
-    name: "How to Build an Airbnb Business Like This Success Story"
-
-# Breadcrumbs
+    name: How to Build an Airbnb Business Like This Success Story
 breadcrumbs:
-  - name: "Home"
-    url: "/"
-  - name: "Blog"
-    url: "/blog"
-  - name: "Success Stories"
-    url: "/blog/category/success-stories"
-
-# Statistics (AI-crawler accessible, renders as stat cards)
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog
+  - name: Success Stories
+    url: /blog/category/success-stories
 statistics:
-  - value: "$2,508"
-    label: "Monthly Cash Flow"
-    icon: "dollar"
-    context: "Net after all expenses"
-    source: "Student Interview, 2024"
-  - value: "1"
-    label: "Property"
-    icon: "home"
-    context: "Salem, Oregon market"
-  - value: "3.5 weeks"
-    label: "Time to Launch"
-    icon: "clock"
-    context: "From referral to first booking"
-  - value: "90%"
-    label: "Occupancy Rate"
-    icon: "star"
-    context: "First two months"
-  - value: "$7,600"
-    label: "Startup Cost"
-    icon: "star"
-    context: "All-in first property"
-  - value: "$4,158"
-    label: "June Revenue"
-    icon: "chart"
-    context: "Peak season gross"
-
-# FAQ (FAQPage schema + accordion rendering)
+  - value: '$2,508'
+    label: Monthly Cash Flow
+    icon: dollar
+    context: Net after all expenses
+    source: 'Student Interview, 2024'
+  - value: '1'
+    label: Property
+    icon: home
+    context: 'Salem, Oregon market'
+  - value: 3.5 weeks
+    label: Time to Launch
+    icon: clock
+    context: From referral to first booking
+  - value: 90%
+    label: Occupancy Rate
+    icon: star
+    context: First two months
+  - value: '$7,600'
+    label: Startup Cost
+    icon: star
+    context: All-in first property
+  - value: '$4,158'
+    label: June Revenue
+    icon: chart
+    context: Peak season gross
 faq:
-  - question: "How much money can you make with Airbnb arbitrage as a beginner?"
-    answer: "Sarah and Nico generate $2,508/month net profit from their first property in Salem, Oregon. Their two-bedroom condo produces $3,500-$4,000+ in gross monthly revenue with 90% occupancy, netting approximately $1,500-$2,500 after rent ($1,650), utilities, and cleaning expenses."
-  - question: "Should you partner with someone for Airbnb arbitrage?"
-    answer: "Sarah and Nico's partnership works because they have complementary strengths (Sarah manages finances, Nico handles operations), prioritize their friendship over being right, focus on the bigger picture, and maintain open communication. They split both profits and risk, which accelerated their launch."
-  - question: "How much does it cost to start Airbnb arbitrage?"
-    answer: "Sarah and Nico started their first property with $7,600 total, including first month rent, security deposit, furniture, supplies, travel costs, and a realtor referral fee. Their property was partially furnished, reducing startup costs significantly."
-  - question: "Is cold calling landlords necessary for Airbnb arbitrage?"
-    answer: "No. Sarah and Nico found their first property through networking rather than cold calling. Nico reached out to realtor friends about expired listings, and a referral led to their first deal within 3.5 weeks. They also message landlords on Zillow asking about corporate leases as an alternative to calling."
-  - question: "How long does it take to get your first Airbnb arbitrage property?"
-    answer: "Sarah and Nico went from receiving a referral to having their property live on Airbnb in just 3.5 weeks. They received bookings immediately upon launch—four reservations on their first day—and achieved 90% occupancy in their first two months."
-  - question: "What makes a successful Airbnb arbitrage partnership?"
-    answer: "Sarah and Nico attribute their partnership success to asking \"Do we want to be right or do we want to win?\" They pick their battles, respect each other's strengths, maintain mature communication built over 15 years of friendship, and have aligned mindsets about their ultimate goals."
-  - question: "Is Salem, Oregon a good market for Airbnb arbitrage?"
-    answer: "Salem works well for Airbnb arbitrage because it's Oregon's capital with government buildings (attracting business travelers), has reasonable rent prices ($1,650 for a two-bedroom condo), and offers year-round demand. Sarah and Nico achieved 90% occupancy with rent already covered through August."
-  - question: "What amenities should an Airbnb have to get bookings?"
-    answer: "Sarah and Nico's property features a hot tub, fire pit, grill, outdoor deck, Pac-Man arcade machine, and hotel-style touches like rolled towels and a coffee bar. They invested in professional photography, which they credit for immediate bookings—four reservations on launch day."
-  - question: "How do you furnish an Airbnb on a budget?"
-    answer: "Work with what you have. Sarah and Nico's property was partially furnished, so they built their design around existing pieces like a red couch, adding complementary items like area rugs and a Pac-Man machine. They spent just $7,600 total including rent, deposit, and all furnishings."
-  - question: "Is Legacy Investing Show worth it for beginners?"
-    answer: "Nico calls it \"the best course I've ever done\" and \"the best value I've ever invested in\" after spending $50K+ on other courses and masterminds. He specifically praises the step-by-step detail and Coach Sam's guidance on analyzing their property deal."
-
-# Table of Contents
+  - question: How much money can you make with Airbnb arbitrage as a beginner?
+    answer: >-
+      Sarah and Nico generate $2,508/month net profit from their first property
+      in Salem, Oregon. Their two-bedroom condo produces $3,500-$4,000+ in gross
+      monthly revenue with 90% occupancy, netting approximately $1,500-$2,500
+      after rent ($1,650), utilities, and cleaning expenses.
+  - question: Should you partner with someone for Airbnb arbitrage?
+    answer: >-
+      Sarah and Nico's partnership works because they have complementary
+      strengths (Sarah manages finances, Nico handles operations), prioritize
+      their friendship over being right, focus on the bigger picture, and
+      maintain open communication. They split both profits and risk, which
+      accelerated their launch.
+  - question: How much does it cost to start Airbnb arbitrage?
+    answer: >-
+      Sarah and Nico started their first property with $7,600 total, including
+      first month rent, security deposit, furniture, supplies, travel costs, and
+      a realtor referral fee. Their property was partially furnished, reducing
+      startup costs significantly.
+  - question: Is cold calling landlords necessary for Airbnb arbitrage?
+    answer: >-
+      No. Sarah and Nico found their first property through networking rather
+      than cold calling. Nico reached out to realtor friends about expired
+      listings, and a referral led to their first deal within 3.5 weeks. They
+      also message landlords on Zillow asking about corporate leases as an
+      alternative to calling.
+  - question: How long does it take to get your first Airbnb arbitrage property?
+    answer: >-
+      Sarah and Nico went from receiving a referral to having their property
+      live on Airbnb in just 3.5 weeks. They received bookings immediately upon
+      launch—four reservations on their first day—and achieved 90% occupancy in
+      their first two months.
+  - question: What makes a successful Airbnb arbitrage partnership?
+    answer: >-
+      Sarah and Nico attribute their partnership success to asking "Do we want
+      to be right or do we want to win?" They pick their battles, respect each
+      other's strengths, maintain mature communication built over 15 years of
+      friendship, and have aligned mindsets about their ultimate goals.
+  - question: 'Is Salem, Oregon a good market for Airbnb arbitrage?'
+    answer: >-
+      Salem works well for Airbnb arbitrage because it's Oregon's capital with
+      government buildings (attracting business travelers), has reasonable rent
+      prices ($1,650 for a two-bedroom condo), and offers year-round demand.
+      Sarah and Nico achieved 90% occupancy with rent already covered through
+      August.
+  - question: What amenities should an Airbnb have to get bookings?
+    answer: >-
+      Sarah and Nico's property features a hot tub, fire pit, grill, outdoor
+      deck, Pac-Man arcade machine, and hotel-style touches like rolled towels
+      and a coffee bar. They invested in professional photography, which they
+      credit for immediate bookings—four reservations on launch day.
+  - question: How do you furnish an Airbnb on a budget?
+    answer: >-
+      Work with what you have. Sarah and Nico's property was partially
+      furnished, so they built their design around existing pieces like a red
+      couch, adding complementary items like area rugs and a Pac-Man machine.
+      They spent just $7,600 total including rent, deposit, and all furnishings.
+  - question: Is Legacy Investing Show worth it for beginners?
+    answer: >-
+      Nico calls it "the best course I've ever done" and "the best value I've
+      ever invested in" after spending $50K+ on other courses and masterminds.
+      He specifically praises the step-by-step detail and Coach Sam's guidance
+      on analyzing their property deal.
 toc: true
 tocDepth: 3
-
-# Reading Time
-readingTime: "26 min read"
-wordCount: "5051"
+readingTime: 25 min read
+wordCount: '4878'
 ---
-
 **Sarah and Nico earn $2,508 per month in net cash flow from their first Airbnb arbitrage property in Salem, Oregon.** These high school friends turned business partners invested just $7,600 to launch their two-bedroom condo and achieved 90% occupancy in their first two months. Today, they have rent covered through August and three additional deals in their pipeline.
 
 This case study breaks down exactly how Sarah and Nico built their Airbnb partnership business, including their approach to partnerships, how they found their first deal through networking (not cold calling), and the specific design strategies that helped them get four bookings on launch day.

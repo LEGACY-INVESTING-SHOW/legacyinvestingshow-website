@@ -143,8 +143,8 @@ relatedPosts:
       Portfolio You Can Stick With
   - slug: asset-allocation-strategies
     title: 'Asset Allocation Strategies by Age: How to Balance Your Portfolio'
-readingTime: 10 min read
-wordCount: '2148'
+readingTime: 11 min read
+wordCount: '2191'
 ---
 Most families do not fail because they picked the wrong ETF. They fail because money needed in the next few years is sitting in volatile assets when life happens. This guide focuses on asset allocation for parents who are juggling childcare, college planning, retirement contributions, and often support for aging relatives.
 

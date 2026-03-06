@@ -134,8 +134,8 @@ relatedPosts:
     title: '1031 exchange vs standard deduction: Which Strategy Works Better in 2026?'
   - slug: best-tax-deductions-2025
     title: 'Best Tax Deductions 2025: Complete 2026 Guide to Lower Your Tax Bill'
-readingTime: 9 min read
-wordCount: '2018'
+readingTime: 11 min read
+wordCount: '2123'
 ---
 Estate tax planning for consultants is now a practical planning issue, not just an ultra-high-net-worth topic. If your income is strong, your firm value is compounding, and you are also investing in taxable accounts or real estate, your household may face a meaningful transfer-tax problem later even if your current lifestyle feels manageable.
 

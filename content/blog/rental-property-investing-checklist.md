@@ -145,8 +145,8 @@ relatedPosts:
       Investors
   - slug: airbnb-cash-flow-vs-notes-investing
     title: 'Airbnb Cash Flow vs Notes Investing: Which Strategy Works Better in 2026?'
-readingTime: 9 min read
-wordCount: '2066'
+readingTime: 12 min read
+wordCount: '2312'
 ---
 The rental property investing checklist in this guide is designed for people making real money decisions, not just browsing listings. You will use it to decide whether a deal is investable, marginal, or a clear pass.
 

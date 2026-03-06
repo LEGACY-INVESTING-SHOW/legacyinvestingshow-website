@@ -144,8 +144,8 @@ relatedPosts:
     title: >-
       Best Roth Conversion Strategy Calculator: Practical Guide, Break-Even
       Math, and Real Tax Examples
-readingTime: 9 min read
-wordCount: '2046'
+readingTime: 11 min read
+wordCount: '2100'
 ---
 If you are a doctor trying to lower taxes without creating unnecessary complexity, the **hsa strategy for physicians** deserves serious attention. For many high-income households, an HSA is one of the few accounts that can offer a triple tax benefit: potentially pre-tax contributions, tax-free growth on qualified investments, and tax-free withdrawals for qualified medical expenses.
 

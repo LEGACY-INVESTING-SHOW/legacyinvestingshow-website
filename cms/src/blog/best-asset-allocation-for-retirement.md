@@ -142,8 +142,8 @@ relatedPosts:
     title: 'Asset Allocation Strategies by Age: How to Balance Your Portfolio'
   - slug: crowdfunded-real-estate
     title: 'Crowdfunded Real Estate: Invest in Property with $500'
-readingTime: 8 min read
-wordCount: '1745'
+readingTime: 10 min read
+wordCount: '1842'
 ---
 If you are searching for the best asset allocation for retirement, the right answer is not a single magic stock-bond split. It is a decision system that protects your ability to pay bills in bad markets while still growing enough to keep up with inflation and longevity. In practice, your allocation should match five facts: how much you spend, how much guaranteed income you have, your withdrawal rate, your flexibility to cut spending, and your time horizon.
 

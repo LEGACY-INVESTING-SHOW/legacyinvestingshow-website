@@ -141,8 +141,8 @@ relatedPosts:
     title: >-
       Asset Allocation Tax Implications: Complete 2026 Guide for After-Tax
       Portfolio Returns
-readingTime: 10 min read
-wordCount: '2152'
+readingTime: 12 min read
+wordCount: '2253'
 ---
 Most investors comparing tax loss harvesting vs active funds are not really choosing between taxes and returns. They are choosing where their edge should come from: manager skill, tax management, or a mix of both. In 2026, that choice matters more because market dispersion is high, rates moved sharply in 2025, and taxable-account tax drag can quietly erase a lot of performance.
 

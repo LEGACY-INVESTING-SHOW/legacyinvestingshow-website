@@ -145,8 +145,8 @@ relatedPosts:
     title: 'Best Tax Deductions for High Income Earners: Complete 2026 Guide'
   - slug: best-tax-deductions-for-individuals
     title: 'Best Tax Deductions for Individuals: Complete 2026 Guide'
-readingTime: 10 min read
-wordCount: '2216'
+readingTime: 12 min read
+wordCount: '2336'
 ---
 If you are asking what activities qualify for qbi deduction, you are really asking a bigger planning question: what income is treated as true business profit under Section 199A, and what income is filtered out before the 20 percent deduction is even calculated. For many owners, this is one of the highest-value tax decisions they make each year because the deduction can materially reduce federal taxable income.
 

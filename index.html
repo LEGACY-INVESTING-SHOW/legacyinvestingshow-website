@@ -12,14 +12,19 @@
     <link rel="prefetch" href="/about">
     <link rel="prefetch" href="/success-stories">
 
-    <!-- Preload critical hero image -->
-    <link rel="preload" as="image" href="/assets/images/hero-image.webp" type="image/webp">
-    <link rel="preload" as="image" href="/assets/images/hero-image.jpg">
+    <!-- Preload the actual LCP candidate without double-fetching the fallback -->
+    <link rel="preload"
+          as="image"
+          href="/assets/images/hero-image.webp"
+          type="image/webp"
+          fetchpriority="high"
+          imagesrcset="/assets/images/hero-image.webp 591w"
+          imagesizes="(min-width: 1024px) 512px, (min-width: 640px) calc(100vw - 4rem), calc(100vw - 3rem)">
 
     <!-- Primary Meta Tags -->
     <title>Build Wealth Beyond A Paycheck | Legacy Investing Show</title>
     <meta name="title" content="Build Wealth Beyond A Paycheck | Legacy Investing Show">
-    <meta name="description" content="Join 2,000+ students learning wealth-building from Preston Seo. Master tax optimization, Airbnb arbitrage & debt elimination. Start building financial freedom…">
+    <meta name="description" content="Join 2,000+ students learning wealth-building from Preston Seo. Master tax optimization, Airbnb arbitrage & debt elimination.">
     <meta name="keywords" content="wealth building, airbnb arbitrage, tax optimization, real estate investing, financial freedom, Preston Seo">
     <meta name="author" content="Preston Seo">
     <meta name="robots" content="index, follow">
@@ -213,7 +218,7 @@
                         </p>
 
                         <div class="animate-fade-in-up delay-300">
-                            <a href="https://www.managemoney101.com/challengeoptin" class="btn-primary text-base">
+                            <a href="https://www.joinlwb.com/intensive" class="btn-primary text-base">
                                 Join My 3 Day Wealth Challenge
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
@@ -227,14 +232,19 @@
                         <div class="blob-bg w-[120%] h-[120%] -top-[10%] -left-[10%]"></div>
                         <div class="relative">
                             <picture>
-                                <source srcset="/assets/images/hero-image.webp" type="image/webp">
+                                <source srcset="/assets/images/hero-image.webp 591w"
+                                        sizes="(min-width: 1024px) 512px, (min-width: 640px) calc(100vw - 4rem), calc(100vw - 3rem)"
+                                        type="image/webp">
                                 <img src="/assets/images/hero-image.jpg"
+                                     srcset="/assets/images/hero-image.jpg 591w"
+                                     sizes="(min-width: 1024px) 512px, (min-width: 640px) calc(100vw - 4rem), calc(100vw - 3rem)"
                                      alt="Preston Seo with his wife - Building generational wealth together"
-                                     width="617"
-                                     height="731"
+                                     width="591"
+                                     height="700"
                                      class="relative w-full max-w-lg mx-auto rounded-3xl shadow-xl border border-gray-200"
                                      loading="eager"
-                                     fetchpriority="high">
+                                     fetchpriority="high"
+                                     decoding="async">
                             </picture>
                         </div>
                     </div>
@@ -266,12 +276,21 @@
                 <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                     <div class="order-2 lg:order-1">
                         <div class="relative">
-                            <img src="/assets/images/preston-main.jpg"
-                                 alt="Preston Seo - Real Estate Investor and Financial Educator"
-                                 width="600"
-                                 height="800"
-                                 class="relative w-full max-w-md mx-auto rounded-3xl shadow-lg border border-gray-200"
-                                 loading="lazy">
+                            <picture>
+                                <source srcset="/assets/images/preston-main.webp 581w"
+                                        sizes="(min-width: 1024px) 448px, (min-width: 640px) calc(100vw - 4rem), calc(100vw - 3rem)"
+                                        type="image/webp">
+                                <img src="/assets/images/preston-main.jpg"
+                                     srcset="/assets/images/preston-main.jpg 581w"
+                                     sizes="(min-width: 1024px) 448px, (min-width: 640px) calc(100vw - 4rem), calc(100vw - 3rem)"
+                                     alt="Preston Seo - Real Estate Investor and Financial Educator"
+                                     width="581"
+                                     height="800"
+                                     class="relative w-full max-w-md mx-auto rounded-3xl shadow-lg border border-gray-200"
+                                     loading="lazy"
+                                     fetchpriority="low"
+                                     decoding="async">
+                            </picture>
                         </div>
                     </div>
                     <div class="order-1 lg:order-2">
@@ -385,7 +404,7 @@
                 <p class="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
                     Without Working Harder or Taking Big Risks
                 </p>
-                <a href="https://www.managemoney101.com/challengeoptin" class="btn-primary text-base">
+                <a href="https://www.joinlwb.com/intensive" class="btn-primary text-base">
                     Join My 3 Day Wealth Challenge
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
@@ -416,7 +435,9 @@
                                  width="640"
                                  height="360"
                                  class="blog-card-image"
-                                 loading="lazy">
+                                 loading="lazy"
+                                 fetchpriority="low"
+                                 decoding="async">
                         </div>
                         <div class="p-6 lg:p-8">
                             <span class="badge mb-4">Airbnb Success</span>
@@ -435,7 +456,9 @@
                                  width="640"
                                  height="360"
                                  class="blog-card-image"
-                                 loading="lazy">
+                                 loading="lazy"
+                                 fetchpriority="low"
+                                 decoding="async">
                         </div>
                         <div class="p-6 lg:p-8">
                             <span class="badge mb-4">Career Change</span>
@@ -454,7 +477,9 @@
                                  width="640"
                                  height="360"
                                  class="blog-card-image"
-                                 loading="lazy">
+                                 loading="lazy"
+                                 fetchpriority="low"
+                                 decoding="async">
                         </div>
                         <div class="p-6 lg:p-8">
                             <span class="badge mb-4">Quick Wins</span>
@@ -473,7 +498,9 @@
                                  width="640"
                                  height="360"
                                  class="blog-card-image"
-                                 loading="lazy">
+                                 loading="lazy"
+                                 fetchpriority="low"
+                                 decoding="async">
                         </div>
                         <div class="p-6 lg:p-8">
                             <span class="badge mb-4">Side Income</span>
@@ -724,7 +751,7 @@
                 </div>
 
                 <div class="text-center mt-12">
-                    <a href="https://www.managemoney101.com/challengeoptin" class="btn-primary">
+                    <a href="https://www.joinlwb.com/intensive" class="btn-primary">
                         Join the 3-Day Challenge
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>

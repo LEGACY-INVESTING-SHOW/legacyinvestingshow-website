@@ -152,8 +152,8 @@ relatedPosts:
     title: 'Airbnb Cash Flow vs Notes Investing: Which Strategy Works Better in 2026?'
   - slug: atm-business-guide
     title: 'ATM Business Guide: Passive Income from Cash Machines'
-readingTime: 9 min read
-wordCount: '2084'
+readingTime: 12 min read
+wordCount: '2228'
 ---
 house hacking real estate investing for beginners can be one of the fastest ways to reduce monthly housing costs while building equity and landlord skills at the same time. Instead of waiting until you can afford a separate rental portfolio, you buy a primary residence that has rentable space: an extra bedroom, basement unit, ADU, or additional units in a duplex, triplex, or fourplex.
 

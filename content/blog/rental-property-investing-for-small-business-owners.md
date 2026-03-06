@@ -147,8 +147,8 @@ relatedPosts:
       Investors
   - slug: airbnb-cash-flow-vs-notes-investing
     title: 'Airbnb Cash Flow vs Notes Investing: Which Strategy Works Better in 2026?'
-readingTime: 9 min read
-wordCount: '2075'
+readingTime: 11 min read
+wordCount: '2188'
 ---
 If you run a company and want income that is not tied to daily operations, rental property investing for small business owners can be a strong second engine. The key is to treat each deal like a business acquisition: underwrite downside first, protect liquidity, and only buy when the numbers still work under stress.
 

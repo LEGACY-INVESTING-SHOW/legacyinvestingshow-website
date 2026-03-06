@@ -147,8 +147,8 @@ relatedPosts:
     title: 'Business Credit Building: Separate Your Personal & Business Finances'
   - slug: business-succession-planning
     title: 'Business Succession Planning: How to Transfer Ownership'
-readingTime: 8 min read
-wordCount: '1837'
+readingTime: 10 min read
+wordCount: '1922'
 ---
 If you are trying to decide how to determine reasonable salary for s corp compensation, treat this as a risk-management decision first and a tax-optimization decision second. The IRS expects shareholder-employees who provide meaningful services to receive W-2 wages before taking profits as distributions. That principle appears consistently in IRS guidance and in court outcomes.
 

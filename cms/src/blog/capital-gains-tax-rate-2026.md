@@ -181,8 +181,8 @@ relatedPosts:
     title: '1031 exchange vs standard deduction: Which Strategy Works Better in 2026?'
   - slug: best-tax-deductions-2025
     title: 'Best Tax Deductions 2025: Complete 2026 Guide to Lower Your Tax Bill'
-readingTime: 10 min read
-wordCount: '2211'
+readingTime: 12 min read
+wordCount: '2393'
 ---
 Capital gains decisions are where planning beats guessing. The capital gains tax rate 2026 framework is straightforward on paper, but your real bill depends on timing, filing status, taxable income, holding period, and whether NIIT applies. A one-week delay or an extra loss harvest can move thousands of dollars.
 

@@ -1,28 +1,29 @@
 ---
-# Core SEO Fields
-title: "How Sunny Built a $5,000+/Month Airbnb Business Near Texas Medical Center (2026 Case Study)"
-titleTemplate: "%s | Legacy Investing Show Success Stories"
-description: "Sunny went from respiratory therapist to $5,000+/month Airbnb cash flow with 1 property near Texas Medical Center. Learn how Taylor Swift helped him make $5,000 profit in one month and his exact strategies for dominating a saturated market."
-date: 2025-10-24
-modifiedDate: 2026-01-23
+title: >-
+  How Sunny Built a $5,000+/Month Airbnb Business Near Texas Medical Center
+  (2026 Case Study)
+titleTemplate: '%s | Legacy Investing Show Success Stories'
+description: >-
+  Sunny went from respiratory therapist to $5,000+/month Airbnb cash flow with 1
+  property near Texas Medical Center. Learn how Taylor Swift helped him make
+  $5,000 profit in one month and his exact strategies for dominating a saturated
+  market.
+date: 2025-10-24T00:00:00.000Z
+modifiedDate: 2026-01-23T00:00:00.000Z
 author: Preston Seo
-authorTitle: "Founder, Legacy Investing Show"
-authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
+authorTitle: 'Founder, Legacy Investing Show'
+authorCredentials: '2,000+ students trained, $10M+ student revenue generated'
 category: Success Story
-canonical: "https://www.legacyinvestingshow.com/blog/dominate-saturated-market-airbnb"
-
-# SEO Keyword Targeting
+canonical: 'https://www.legacyinvestingshow.com/blog/dominate-saturated-market-airbnb'
 seo:
-  primaryKeyword: "airbnb success story"
+  primaryKeyword: airbnb success story
   secondaryKeywords:
-    - "short-term rental business"
-    - "texas airbnb"
+    - short-term rental business
+    - texas airbnb
   longTailKeywords:
-    - "how much can you make with airbnb"
-    - "is airbnb arbitrage worth it"
-  searchIntent: "informational"
-
-# Tags
+    - how much can you make with airbnb
+    - is airbnb arbitrage worth it
+  searchIntent: informational
 tags:
   - airbnb arbitrage
   - rental arbitrage
@@ -30,100 +31,131 @@ tags:
   - case study
   - success story
   - short-term rental
-
-# Open Graph & Social
 image: /assets/images/blog/success-stories/sunny-respiratory-therapist.jpg
-imageAlt: "How Sunny Built a $5,000+/Month Airbnb Business Near Texas Medical Center (2026 Case Study) - Legacy Investing Show"
+imageAlt: >-
+  How Sunny Built a $5,000+/Month Airbnb Business Near Texas Medical Center
+  (2026 Case Study) - Legacy Investing Show
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
 featured: false
-
-# Video Integration
-youtubeId: "aIR4MtZ3Lms"
-
-# Multiple Schema Types for Rich Results
+youtubeId: aIR4MtZ3Lms
 schema:
   - type: Article
-    headline: "How Sunny Built a $5,000+/Month Airbnb Business Near Texas Medical Center (2026 Case Study)"
-    datePublished: "2026-03-24T00:00:00Z"
-    dateModified: "2026-01-23T00:00:00Z"
+    headline: >-
+      How Sunny Built a $5,000+/Month Airbnb Business Near Texas Medical Center
+      (2026 Case Study)
+    datePublished: '2026-03-24T00:00:00Z'
+    dateModified: '2026-01-23T00:00:00Z'
   - type: VideoObject
-    name: "How Sunny Built a $5,000+/Month Airbnb Business Near Texas Medical Center (2026 Case Study) - Full Interview"
-    thumbnailUrl: "https://img.youtube.com/vi/aIR4MtZ3Lms/maxresdefault.jpg"
-    embedUrl: "https://www.youtube.com/embed/aIR4MtZ3Lms"
+    name: >-
+      How Sunny Built a $5,000+/Month Airbnb Business Near Texas Medical Center
+      (2026 Case Study) - Full Interview
+    thumbnailUrl: 'https://img.youtube.com/vi/aIR4MtZ3Lms/maxresdefault.jpg'
+    embedUrl: 'https://www.youtube.com/embed/aIR4MtZ3Lms'
   - type: HowTo
-    name: "How to Build an Airbnb Business Like This Success Story"
-
-# Breadcrumbs
+    name: How to Build an Airbnb Business Like This Success Story
 breadcrumbs:
-  - name: "Home"
-    url: "/"
-  - name: "Blog"
-    url: "/blog"
-  - name: "Success Stories"
-    url: "/blog/category/success-stories"
-
-# Statistics (AI-crawler accessible, renders as stat cards)
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog
+  - name: Success Stories
+    url: /blog/category/success-stories
 statistics:
-  - value: "$5,216"
-    label: "Peak Monthly Profit"
-    icon: "dollar"
-    context: "Taylor Swift concert month"
-    source: "Student Interview, 2023"
-  - value: "1"
-    label: "Property"
-    icon: "home"
-    context: "5BR townhouse near Texas Medical Center"
-  - value: "4 months"
-    label: "Time to Launch"
-    icon: "clock"
-    context: "Thanksgiving to March"
-  - value: "10"
-    label: "Max Guests"
-    icon: "users"
-    context: "Taylor Swift weekend capacity"
-  - value: "$2,000+"
-    label: "Minimum Monthly Profit"
-    icon: "chart"
-    context: "Consistent baseline"
-  - value: "1 hour/day"
-    label: "Daily Management"
-    icon: "star"
-    context: "After launch"
-
-# FAQ (FAQPage schema + accordion rendering)
+  - value: '$5,216'
+    label: Peak Monthly Profit
+    icon: dollar
+    context: Taylor Swift concert month
+    source: 'Student Interview, 2023'
+  - value: '1'
+    label: Property
+    icon: home
+    context: 5BR townhouse near Texas Medical Center
+  - value: 4 months
+    label: Time to Launch
+    icon: clock
+    context: Thanksgiving to March
+  - value: '10'
+    label: Max Guests
+    icon: users
+    context: Taylor Swift weekend capacity
+  - value: '$2,000+'
+    label: Minimum Monthly Profit
+    icon: chart
+    context: Consistent baseline
+  - value: 1 hour/day
+    label: Daily Management
+    icon: star
+    context: After launch
 faq:
-  - question: "How much money can you make with Airbnb arbitrage near hospitals?"
-    answer: "Sunny generates $2,000-$5,000+ per month in cash flow from 1 property near Texas Medical Center. During events like the Taylor Swift concert, he made over $5,000 profit in a single month from 10 guests paying premium rates for just two nights."
-  - question: "Is Airbnb arbitrage still profitable in saturated markets like Houston?"
-    answer: "Yes. Sunny proves that finding the right niche within a saturated market is the key. By targeting medical families visiting Texas Medical Center and event travelers near NRG Stadium, he achieved consistent bookings despite Houston's competitive market."
-  - question: "How do you convince a landlord to allow Airbnb subleasing?"
-    answer: "Sunny pitched his landlord by explaining his purpose: serving medical families visiting loved ones at Texas Medical Center. The empathetic angle resonated with the landlord, who appreciated the idea of helping families during difficult times rather than just making money."
-  - question: "How long does it take to start an Airbnb arbitrage business?"
-    answer: "Sunny spent about 3-4 months from research to launch. He joined the Legacy Investing Show around Thanksgiving, spent 12 hours per week researching and setting up through February, and launched his Airbnb in March. Setup time decreases significantly for additional properties."
-  - question: "Do you need real estate experience to start Airbnb arbitrage?"
-    answer: "No. Sunny started with zero real estate experience as a respiratory therapist. He leveraged his medical field knowledge to identify an underserved market near Texas Medical Center and used that expertise to craft a compelling pitch to landlords."
-  - question: "How many hours per week does Airbnb arbitrage require?"
-    answer: "During setup, Sunny spent about 12 hours per week over 3-4 months. Once the property launched, daily management dropped to about 1 hour per day for guest communication and cleaner coordination. Systems and automation reduce this further over time."
-  - question: "What is the best strategy for Airbnb in a saturated market?"
-    answer: "Find a niche and run with it. Sunny identified medical families near Texas Medical Center as an underserved segment in Houston's crowded market. By targeting this specific demographic with relevant amenities and messaging, he stood out from generic listings."
-  - question: "Is Legacy Investing Show worth it for Airbnb arbitrage?"
-    answer: "Based on Sunny's results, the program provided essential education, community connections, and actionable scripts. He went from knowing nothing about real estate to generating $5,000+ monthly profit within months of joining."
-  - question: "How does dynamic pricing help Airbnb hosts make more money?"
-    answer: "Sunny used Price Labs for dynamic pricing, which automatically detected the Taylor Swift concert and raised his rates accordingly. Without dynamic pricing, he would have booked those nights at his normal rate and missed out on thousands in additional profit."
-  - question: "What type of property works best for Airbnb arbitrage near medical centers?"
-    answer: "Sunny chose a 4-story townhouse with 5 bedrooms and 2.5 baths to accommodate families visiting loved ones. Features like multiple bedrooms, privacy, homely design, and outdoor space with string lights created a comfortable home away from home for guests during stressful times."
-
-# Table of Contents
+  - question: How much money can you make with Airbnb arbitrage near hospitals?
+    answer: >-
+      Sunny generates $2,000-$5,000+ per month in cash flow from 1 property near
+      Texas Medical Center. During events like the Taylor Swift concert, he made
+      over $5,000 profit in a single month from 10 guests paying premium rates
+      for just two nights.
+  - question: Is Airbnb arbitrage still profitable in saturated markets like Houston?
+    answer: >-
+      Yes. Sunny proves that finding the right niche within a saturated market
+      is the key. By targeting medical families visiting Texas Medical Center
+      and event travelers near NRG Stadium, he achieved consistent bookings
+      despite Houston's competitive market.
+  - question: How do you convince a landlord to allow Airbnb subleasing?
+    answer: >-
+      Sunny pitched his landlord by explaining his purpose: serving medical
+      families visiting loved ones at Texas Medical Center. The empathetic angle
+      resonated with the landlord, who appreciated the idea of helping families
+      during difficult times rather than just making money.
+  - question: How long does it take to start an Airbnb arbitrage business?
+    answer: >-
+      Sunny spent about 3-4 months from research to launch. He joined the Legacy
+      Investing Show around Thanksgiving, spent 12 hours per week researching
+      and setting up through February, and launched his Airbnb in March. Setup
+      time decreases significantly for additional properties.
+  - question: Do you need real estate experience to start Airbnb arbitrage?
+    answer: >-
+      No. Sunny started with zero real estate experience as a respiratory
+      therapist. He leveraged his medical field knowledge to identify an
+      underserved market near Texas Medical Center and used that expertise to
+      craft a compelling pitch to landlords.
+  - question: How many hours per week does Airbnb arbitrage require?
+    answer: >-
+      During setup, Sunny spent about 12 hours per week over 3-4 months. Once
+      the property launched, daily management dropped to about 1 hour per day
+      for guest communication and cleaner coordination. Systems and automation
+      reduce this further over time.
+  - question: What is the best strategy for Airbnb in a saturated market?
+    answer: >-
+      Find a niche and run with it. Sunny identified medical families near Texas
+      Medical Center as an underserved segment in Houston's crowded market. By
+      targeting this specific demographic with relevant amenities and messaging,
+      he stood out from generic listings.
+  - question: Is Legacy Investing Show worth it for Airbnb arbitrage?
+    answer: >-
+      Based on Sunny's results, the program provided essential education,
+      community connections, and actionable scripts. He went from knowing
+      nothing about real estate to generating $5,000+ monthly profit within
+      months of joining.
+  - question: How does dynamic pricing help Airbnb hosts make more money?
+    answer: >-
+      Sunny used Price Labs for dynamic pricing, which automatically detected
+      the Taylor Swift concert and raised his rates accordingly. Without dynamic
+      pricing, he would have booked those nights at his normal rate and missed
+      out on thousands in additional profit.
+  - question: >-
+      What type of property works best for Airbnb arbitrage near medical
+      centers?
+    answer: >-
+      Sunny chose a 4-story townhouse with 5 bedrooms and 2.5 baths to
+      accommodate families visiting loved ones. Features like multiple bedrooms,
+      privacy, homely design, and outdoor space with string lights created a
+      comfortable home away from home for guests during stressful times.
 toc: true
 tocDepth: 3
-
-# Reading Time
-readingTime: "25 min read"
-wordCount: "4966"
+readingTime: 25 min read
+wordCount: '4815'
 ---
-
 **Sunny earns $2,000-$5,000+ per month in cash flow from 1 Airbnb property near Texas Medical Center in Houston.** Working full-time as a respiratory therapist, he discovered an underserved niche in one of America's most competitive Airbnb markets: families visiting loved ones at the world's largest medical complex. When Taylor Swift came to town, he made over $5,000 profit in a single month from just one property.
 
 This case study breaks down exactly how Sunny dominated a saturated market by finding a niche and running with it, including his empathetic landlord pitch, home-away-from-home design philosophy, and the dynamic pricing strategy that captured thousands in event revenue he would have otherwise missed.

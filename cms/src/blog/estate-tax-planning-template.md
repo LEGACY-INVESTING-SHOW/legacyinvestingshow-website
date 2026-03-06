@@ -143,8 +143,8 @@ relatedPosts:
     title: '1031 exchange vs standard deduction: Which Strategy Works Better in 2026?'
   - slug: best-tax-deductions-2025
     title: 'Best Tax Deductions 2025: Complete 2026 Guide to Lower Your Tax Bill'
-readingTime: 10 min read
-wordCount: '2105'
+readingTime: 12 min read
+wordCount: '2254'
 ---
 If you are searching for an estate tax planning template, you are likely dealing with real decisions, not theory: concentrated stock, rental properties, business equity, or a family balance sheet that could trigger avoidable transfer taxes and conflict. A strong template is not one document. It is a coordinated system that connects legal documents, account titling, tax projections, gifting, trust strategy, and liquidity. The goal is practical: reduce preventable tax drag, protect family control, and keep your plan executable when life changes.
 

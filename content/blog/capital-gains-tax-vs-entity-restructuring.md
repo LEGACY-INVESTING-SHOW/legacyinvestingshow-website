@@ -146,8 +146,8 @@ relatedPosts:
     title: '1031 exchange vs standard deduction: Which Strategy Works Better in 2026?'
   - slug: best-tax-deductions-2025
     title: 'Best Tax Deductions 2025: Complete 2026 Guide to Lower Your Tax Bill'
-readingTime: 8 min read
-wordCount: '1751'
+readingTime: 10 min read
+wordCount: '1902'
 ---
 If you are evaluating a sale, recap, or ownership cleanup in 2026, the core decision is capital gains tax vs entity restructuring. One path focuses on optimizing gain recognition and reporting. The other path changes legal architecture before a transaction so more proceeds may receive capital treatment instead of ordinary treatment. For most US owners, this is less about tax theory and more about one question: which path gives the highest risk-adjusted after-tax cash in your actual timeline.
 

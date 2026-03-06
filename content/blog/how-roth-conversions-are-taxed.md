@@ -141,8 +141,8 @@ relatedPosts:
     title: >-
       Best Roth Conversion Strategy Calculator: Practical Guide, Break-Even
       Math, and Real Tax Examples
-readingTime: 10 min read
-wordCount: '2229'
+readingTime: 12 min read
+wordCount: '2293'
 ---
 If you are trying to understand how roth conversions are taxed, start with one core rule: converted pre-tax dollars from a traditional IRA or old 401(k) are added to your ordinary taxable income for the year of conversion. They are not taxed at long-term capital gains rates. That makes conversions powerful in low-income years and risky in high-income years.
 

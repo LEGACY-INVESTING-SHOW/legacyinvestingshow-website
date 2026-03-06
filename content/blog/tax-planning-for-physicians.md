@@ -136,8 +136,8 @@ relatedPosts:
     title: 'Best Tax Deductions for High Income Earners: Complete 2026 Guide'
   - slug: best-tax-deductions-for-individuals
     title: 'Best Tax Deductions for Individuals: Complete 2026 Guide'
-readingTime: 8 min read
-wordCount: '1794'
+readingTime: 10 min read
+wordCount: '1829'
 ---
 Tax planning for physicians is rarely a tax-return problem. It is usually a systems problem. By the time many doctors look at taxes in March, the highest-impact decisions on entity structure, payroll mix, retirement deferrals, and estimated payments were already made months earlier.
 

@@ -143,8 +143,8 @@ relatedPosts:
     title: >-
       Asset Allocation Tax Implications: Complete 2026 Guide for After-Tax
       Portfolio Returns
-readingTime: 10 min read
-wordCount: '2276'
+readingTime: 12 min read
+wordCount: '2331'
 ---
 The tax loss harvesting best strategy for most US investors in 2026 is not a one-time December trade. It is a repeatable operating system that combines tax-aware selling, immediate portfolio replacement, and strict wash-sale controls across all household accounts. Done well, it may lower your current tax bill without taking you out of the market.
 

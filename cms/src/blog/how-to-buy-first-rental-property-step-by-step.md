@@ -1,33 +1,33 @@
 ---
-# Core SEO Fields
-title: "How to Buy Your First Rental Property in 2025 (Complete Step-by-Step Guide)"
-titleTemplate: "%s | Legacy Investing Show"
-description: "Learn exactly how to buy your first rental property step by step. From credit score requirements (740+ FICO) to house hacking strategies, the 1% rule, and post-close management. Complete guide for beginners from investors with 50+ rental units."
-date: 2026-01-24
-modifiedDate: 2026-01-24
+title: How to Buy Your First Rental Property in 2025 (Complete Step-by-Step Guide)
+titleTemplate: '%s | Legacy Investing Show'
+description: >-
+  Learn exactly how to buy your first rental property step by step. From credit
+  score requirements (740+ FICO) to house hacking strategies, the 1% rule, and
+  post-close management. Complete guide for beginners from investors with 50+
+  rental units.
+date: 2026-01-24T00:00:00.000Z
+modifiedDate: 2026-01-24T00:00:00.000Z
 author: Preston Seo
-authorTitle: "Founder, Legacy Investing Show"
-authorCredentials: "50+ rental units, assisted living facility owner, 2,000+ students trained"
+authorTitle: 'Founder, Legacy Investing Show'
+authorCredentials: '50+ rental units, assisted living facility owner, 2,000+ students trained'
 category: Real Estate Investing
-canonical: "https://www.legacyinvestingshow.com/blog/how-to-buy-first-rental-property-step-by-step"
-
-# SEO Keyword Targeting
+canonical: >-
+  https://www.legacyinvestingshow.com/blog/how-to-buy-first-rental-property-step-by-step
 seo:
-  primaryKeyword: "how to buy first rental property"
+  primaryKeyword: how to buy first rental property
   secondaryKeywords:
-    - "rental property investing for beginners"
-    - "house hacking strategy"
-    - "buy and hold real estate"
-    - "rental property down payment"
+    - rental property investing for beginners
+    - house hacking strategy
+    - buy and hold real estate
+    - rental property down payment
   longTailKeywords:
-    - "how much money do you need to buy a rental property"
-    - "credit score needed for investment property"
-    - "what is the 1 percent rule in real estate"
-    - "house hacking for beginners step by step"
-  searchIntent: "informational"
-  targetSnippet: "how to buy first rental property step by step"
-
-# Tags (exact match keywords)
+    - how much money do you need to buy a rental property
+    - credit score needed for investment property
+    - what is the 1 percent rule in real estate
+    - house hacking for beginners step by step
+  searchIntent: informational
+  targetSnippet: how to buy first rental property step by step
 tags:
   - rental property
   - real estate investing
@@ -39,120 +39,151 @@ tags:
   - FHA loan
   - property analysis
   - beginner investing
-
-# Open Graph & Social
 image: /assets/images/blog/how-to-buy-first-rental-property.jpg
-imageAlt: "Step-by-step guide to buying your first rental property - house hacking and real estate investing for beginners"
+imageAlt: >-
+  Step-by-step guide to buying your first rental property - house hacking and
+  real estate investing for beginners
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
 featured: true
-
-# Video Integration
-youtubeId: "roR1QtsZbKs"
-videoDuration: "PT25M00S"
-
-# Multiple Schema Types for Rich Results
+youtubeId: roR1QtsZbKs
+videoDuration: PT25M00S
 schema:
   - type: Article
-    headline: "How to Buy Your First Rental Property Step by Step"
-    datePublished: "2026-01-24T00:00:00Z"
-    dateModified: "2026-01-24T00:00:00Z"
+    headline: How to Buy Your First Rental Property Step by Step
+    datePublished: '2026-01-24T00:00:00Z'
+    dateModified: '2026-01-24T00:00:00Z'
   - type: VideoObject
-    name: "How to Buy Your First Rental Property in 2025 (Step by Step)"
-    description: "Complete step-by-step guide for buying your first rental property, including credit requirements, house hacking, the 1% rule, and property analysis"
-    thumbnailUrl: "https://img.youtube.com/vi/roR1QtsZbKs/maxresdefault.jpg"
-    uploadDate: "2022-01-15"
-    duration: "PT25M00S"
-    embedUrl: "https://www.youtube.com/embed/roR1QtsZbKs"
+    name: How to Buy Your First Rental Property in 2025 (Step by Step)
+    description: >-
+      Complete step-by-step guide for buying your first rental property,
+      including credit requirements, house hacking, the 1% rule, and property
+      analysis
+    thumbnailUrl: 'https://img.youtube.com/vi/roR1QtsZbKs/maxresdefault.jpg'
+    uploadDate: '2022-01-15'
+    duration: PT25M00S
+    embedUrl: 'https://www.youtube.com/embed/roR1QtsZbKs'
   - type: HowTo
-    name: "How to Buy Your First Rental Property"
-    estimatedCost: "3.5-5% down payment + closing costs + 6 months reserves"
-    totalTime: "2-4 months from pre-approval to closing"
+    name: How to Buy Your First Rental Property
+    estimatedCost: 3.5-5% down payment + closing costs + 6 months reserves
+    totalTime: 2-4 months from pre-approval to closing
   - type: Person
-    name: "Preston Seo"
-    jobTitle: "Real Estate Investor & Educator"
-    knowsAbout: ["rental properties", "house hacking", "real estate investing", "buy and hold strategy"]
-
-# Breadcrumbs for Navigation Schema
+    name: Preston Seo
+    jobTitle: Real Estate Investor & Educator
+    knowsAbout:
+      - rental properties
+      - house hacking
+      - real estate investing
+      - buy and hold strategy
 breadcrumbs:
-  - name: "Home"
-    url: "/"
-  - name: "Blog"
-    url: "/blog"
-  - name: "Real Estate Investing"
-    url: "/blog/category/real-estate-investing"
-  - name: "Buy First Rental Property"
-    url: "/blog/how-to-buy-first-rental-property-step-by-step"
-
-# Statistics (AI-crawler accessible, renders as stat cards)
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog
+  - name: Real Estate Investing
+    url: /blog/category/real-estate-investing
+  - name: Buy First Rental Property
+    url: /blog/how-to-buy-first-rental-property-step-by-step
 statistics:
-  - value: "740+"
-    label: "Target Credit Score"
-    icon: "star"
-    context: "For best mortgage rates"
-    source: "FICO Score Guidelines"
+  - value: 740+
+    label: Target Credit Score
+    icon: star
+    context: For best mortgage rates
+    source: FICO Score Guidelines
     highlighted: true
-  - value: "3.5-5%"
-    label: "Down Payment"
-    icon: "dollar"
-    context: "FHA/conventional minimums"
-  - value: "1%"
-    label: "The 1% Rule"
-    icon: "percent"
-    context: "Monthly rent vs. purchase price"
-  - value: "6 months"
-    label: "Reserve Requirement"
-    icon: "calendar"
-    context: "Emergency fund for expenses"
-  - value: "50%"
-    label: "DTI Maximum"
-    icon: "chart"
-    context: "Debt-to-income ratio limit"
-  - value: "75%"
-    label: "Rental Income Credit"
-    icon: "home"
-    context: "Other units count toward qualifying"
-
-# FAQ (FAQPage schema + accordion rendering)
+  - value: 3.5-5%
+    label: Down Payment
+    icon: dollar
+    context: FHA/conventional minimums
+  - value: 1%
+    label: The 1% Rule
+    icon: percent
+    context: Monthly rent vs. purchase price
+  - value: 6 months
+    label: Reserve Requirement
+    icon: calendar
+    context: Emergency fund for expenses
+  - value: 50%
+    label: DTI Maximum
+    icon: chart
+    context: Debt-to-income ratio limit
+  - value: 75%
+    label: Rental Income Credit
+    icon: home
+    context: Other units count toward qualifying
 faq:
-  - question: "How much money do you need to buy your first rental property?"
-    answer: "You need 3.5-5% down payment (FHA or conventional), closing costs (typically 2-5% of purchase price), and 6 months of reserves for mortgage payments, taxes, insurance, and maintenance. For a $200,000 property, expect $15,000-$30,000 total to get started with house hacking."
-  - question: "What credit score do you need to buy a rental property?"
-    answer: "Aim for a 740+ FICO score for the best mortgage rates. Your credit score is determined by: payment history (35%), credit utilization (30%), length of credit history (15%), credit mix (10%), and new credit inquiries (10%). You can qualify with lower scores, but you'll pay higher interest rates."
-  - question: "What is the 1% rule in real estate investing?"
-    answer: "The 1% rule states that a rental property's monthly rent should be at least 1% of the purchase price. For example, a $150,000 property should rent for at least $1,500/month. This quick filter helps identify properties worth deeper analysis."
-  - question: "What is house hacking and why is it recommended for beginners?"
-    answer: "House hacking means buying a multi-unit property (duplex, triplex, or fourplex), living in one unit, and renting out the others. The rental income from other units helps pay your mortgage, and 75% of that income counts toward your loan qualification. It's the lowest-risk way to start investing."
-  - question: "How do I get pre-approved for a rental property mortgage?"
-    answer: "Gather your last 2 years of W-2s and tax returns, verify your debt-to-income ratio is under 50%, and apply with multiple lenders to compare rates. For house hacking, you can use FHA loans with only 3.5% down since you'll live in one unit."
-  - question: "What should I look for during a rental property inspection?"
-    answer: "Never skip the inspection contingency. Look for structural issues, roof condition, HVAC age and function, plumbing problems, electrical issues, foundation cracks, and pest damage. Inspection costs typically run $300-$500 but can save you thousands in unexpected repairs."
-  - question: "Should I manage my rental property myself or hire a property manager?"
-    answer: "For your first property, consider self-management to learn the business. Read 'Managing Your Rental Properties' by Heather and Brandon Turner for guidance. As you scale beyond 3-4 units, property management (typically 8-10% of rent) becomes more valuable."
-  - question: "Do I need an LLC for my first rental property?"
-    answer: "You don't need an LLC to start. Many investors buy their first property in their personal name, especially when house hacking with an owner-occupied loan. As your portfolio grows, consult a real estate attorney about LLC structures for liability protection."
-  - question: "How do I analyze a rental property deal?"
-    answer: "Use the CDS Calculator or similar tool to analyze cash flow. Input purchase price, down payment, interest rate, estimated rent, taxes, insurance, and maintenance reserves. Look for properties with positive cash flow and aim for 10%+ cash-on-cash return."
-  - question: "What contingencies should I include in my offer?"
-    answer: "Always include inspection and financing contingencies. The inspection contingency allows you to back out or negotiate repairs if issues are found. The financing contingency protects you if your loan falls through. Never waive these as a beginner."
-
-# Table of Contents
+  - question: How much money do you need to buy your first rental property?
+    answer: >-
+      You need 3.5-5% down payment (FHA or conventional), closing costs
+      (typically 2-5% of purchase price), and 6 months of reserves for mortgage
+      payments, taxes, insurance, and maintenance. For a $200,000 property,
+      expect $15,000-$30,000 total to get started with house hacking.
+  - question: What credit score do you need to buy a rental property?
+    answer: >-
+      Aim for a 740+ FICO score for the best mortgage rates. Your credit score
+      is determined by: payment history (35%), credit utilization (30%), length
+      of credit history (15%), credit mix (10%), and new credit inquiries (10%).
+      You can qualify with lower scores, but you'll pay higher interest rates.
+  - question: What is the 1% rule in real estate investing?
+    answer: >-
+      The 1% rule states that a rental property's monthly rent should be at
+      least 1% of the purchase price. For example, a $150,000 property should
+      rent for at least $1,500/month. This quick filter helps identify
+      properties worth deeper analysis.
+  - question: What is house hacking and why is it recommended for beginners?
+    answer: >-
+      House hacking means buying a multi-unit property (duplex, triplex, or
+      fourplex), living in one unit, and renting out the others. The rental
+      income from other units helps pay your mortgage, and 75% of that income
+      counts toward your loan qualification. It's the lowest-risk way to start
+      investing.
+  - question: How do I get pre-approved for a rental property mortgage?
+    answer: >-
+      Gather your last 2 years of W-2s and tax returns, verify your
+      debt-to-income ratio is under 50%, and apply with multiple lenders to
+      compare rates. For house hacking, you can use FHA loans with only 3.5%
+      down since you'll live in one unit.
+  - question: What should I look for during a rental property inspection?
+    answer: >-
+      Never skip the inspection contingency. Look for structural issues, roof
+      condition, HVAC age and function, plumbing problems, electrical issues,
+      foundation cracks, and pest damage. Inspection costs typically run
+      $300-$500 but can save you thousands in unexpected repairs.
+  - question: Should I manage my rental property myself or hire a property manager?
+    answer: >-
+      For your first property, consider self-management to learn the business.
+      Read 'Managing Your Rental Properties' by Heather and Brandon Turner for
+      guidance. As you scale beyond 3-4 units, property management (typically
+      8-10% of rent) becomes more valuable.
+  - question: Do I need an LLC for my first rental property?
+    answer: >-
+      You don't need an LLC to start. Many investors buy their first property in
+      their personal name, especially when house hacking with an owner-occupied
+      loan. As your portfolio grows, consult a real estate attorney about LLC
+      structures for liability protection.
+  - question: How do I analyze a rental property deal?
+    answer: >-
+      Use the CDS Calculator or similar tool to analyze cash flow. Input
+      purchase price, down payment, interest rate, estimated rent, taxes,
+      insurance, and maintenance reserves. Look for properties with positive
+      cash flow and aim for 10%+ cash-on-cash return.
+  - question: What contingencies should I include in my offer?
+    answer: >-
+      Always include inspection and financing contingencies. The inspection
+      contingency allows you to back out or negotiate repairs if issues are
+      found. The financing contingency protects you if your loan falls through.
+      Never waive these as a beginner.
 toc: true
 tocDepth: 3
-
-# Internal Linking Suggestions
 relatedPosts:
-  - slug: "getting-started-airbnb-arbitrage"
-    title: "Complete Guide to Airbnb Arbitrage"
-  - slug: "airbnb-startup-costs-capital-breakdown"
-    title: "Airbnb Startup Costs: Complete Capital Breakdown"
-
-# Reading Time
-readingTime: "15 min read"
-wordCount: "3800"
+  - slug: getting-started-airbnb-arbitrage
+    title: Complete Guide to Airbnb Arbitrage
+  - slug: airbnb-startup-costs-capital-breakdown
+    title: 'Airbnb Startup Costs: Complete Capital Breakdown'
+readingTime: 17 min read
+wordCount: '3301'
 ---
-
 **Buying your first rental property can seem intimidating, but with the right preparation, anyone can do it.** This step-by-step guide breaks down exactly how to purchase your first buy-and-hold rental property, from preparing your finances to managing tenants after closing. I've used these exact strategies to build a portfolio of 50+ rental units, and I'm sharing everything so you can achieve financial freedom too.
 
 This guide is specifically designed for beginners, but includes advanced tips that benefit investors at any level. We're focusing on house hacking—the strategy I recommend for everyone starting out, and exactly what I did to get started in real estate investing.

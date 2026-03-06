@@ -141,8 +141,8 @@ relatedPosts:
     title: 'Best Tax Deductions for High Income Earners: Complete 2026 Guide'
   - slug: best-tax-deductions-for-individuals
     title: 'Best Tax Deductions for Individuals: Complete 2026 Guide'
-readingTime: 9 min read
-wordCount: '2074'
+readingTime: 11 min read
+wordCount: '2119'
 ---
 The qbi deduction for high earners is mostly an income-design problem, not a tax-form problem. Under IRS Section 199A, eligible business owners may deduct up to 20% of qualified business income, but high-income households can lose part or all of that benefit through phase-outs, SSTB rules, and wage-based limitations. If your income moves materially year to year, you should project this before Q4 closes.
 

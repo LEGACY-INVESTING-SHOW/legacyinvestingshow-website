@@ -142,8 +142,8 @@ relatedPosts:
     title: 'Asset Allocation Strategies by Age: How to Balance Your Portfolio'
   - slug: crowdfunded-real-estate
     title: 'Crowdfunded Real Estate: Invest in Property with $500'
-readingTime: 11 min read
-wordCount: '2333'
+readingTime: 13 min read
+wordCount: '2448'
 ---
 Asset allocation tax implications are what determine whether a 7 percent pre-tax portfolio behaves like 6.6 percent or 5.8 percent after taxes. Two households can own the same funds and take very different tax hits depending on which assets sit in taxable accounts versus traditional and Roth accounts. This guide gives you a practical framework to improve after-tax returns without drifting from your risk plan.
 

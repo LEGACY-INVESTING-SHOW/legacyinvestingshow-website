@@ -136,8 +136,8 @@ relatedPosts:
     title: >-
       Best Tax Deductions for Self Employed: Complete 2026 Guide to Lower Taxes
       Without Leaving Money on the Table
-readingTime: 8 min read
-wordCount: '1837'
+readingTime: 10 min read
+wordCount: '1929'
 ---
 If you are evaluating the new tax deduction car loan interest rules, treat this as a tax-planning math problem, not a marketing perk from a dealership. The deduction can help, but only when you clear the eligibility rules and your income is inside the phaseout range.
 

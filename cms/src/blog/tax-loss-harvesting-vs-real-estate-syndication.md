@@ -154,8 +154,8 @@ relatedPosts:
     title: >-
       Asset Allocation Tax Implications: Complete 2026 Guide for After-Tax
       Portfolio Returns
-readingTime: 10 min read
-wordCount: '2181'
+readingTime: 12 min read
+wordCount: '2281'
 ---
 # Tax Loss Harvesting vs Real Estate Syndication: Which Strategy Works Better in 2026?
 

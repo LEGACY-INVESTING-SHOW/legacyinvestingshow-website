@@ -186,8 +186,8 @@ relatedPosts:
     title: >-
       Asset Allocation Tax Implications: Complete 2026 Guide for After-Tax
       Portfolio Returns
-readingTime: 9 min read
-wordCount: '2002'
+readingTime: 11 min read
+wordCount: '2073'
 ---
 Tax loss harvesting for beginners is one of the few investing moves that can improve after-tax returns without requiring better market predictions. You sell an investment below your cost basis, realize the capital loss, and use that loss to offset taxable gains. If losses are larger than gains, you may reduce ordinary income by up to $3,000 for the year and carry the rest forward.
 

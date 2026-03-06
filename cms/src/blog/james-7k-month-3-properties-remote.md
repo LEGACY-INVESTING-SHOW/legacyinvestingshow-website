@@ -1,26 +1,29 @@
 ---
-title: "How James Built a $7,000/Month Airbnb Business in 57 Days While Working Full-Time"
-description: "James Saunders went from zero real estate experience to $7,000/month in profit with 3 properties in just 57 days—all while keeping his consulting job. Learn his goal-setting system and remote management strategy."
-date: 2026-01-23
-modifiedDate: 2026-01-23
+title: >-
+  How James Built a $7,000/Month Airbnb Business in 57 Days While Working
+  Full-Time
+description: >-
+  James Saunders went from zero real estate experience to $7,000/month in profit
+  with 3 properties in just 57 days—all while keeping his consulting job. Learn
+  his goal-setting system and remote management strategy.
+date: 2026-01-23T00:00:00.000Z
+modifiedDate: 2026-01-23T00:00:00.000Z
 author: Preston Seo
-authorTitle: "Founder, Legacy Investing Show"
+authorTitle: 'Founder, Legacy Investing Show'
 category: Success Story
-canonical: "https://www.legacyinvestingshow.com/blog/james-7k-month-3-properties-remote"
-
+canonical: 'https://www.legacyinvestingshow.com/blog/james-7k-month-3-properties-remote'
 seo:
-  primaryKeyword: "airbnb arbitrage while working full time"
+  primaryKeyword: airbnb arbitrage while working full time
   secondaryKeywords:
-    - "airbnb arbitrage 57 days"
-    - "remote airbnb management"
-    - "airbnb arbitrage no experience"
+    - airbnb arbitrage 57 days
+    - remote airbnb management
+    - airbnb arbitrage no experience
   longTailKeywords:
-    - "how to start airbnb arbitrage with a full time job"
-    - "manage airbnb remotely from another state"
-    - "airbnb arbitrage for beginners 2026"
-  searchIntent: "informational"
-  targetSnippet: "how to start airbnb arbitrage while working full time"
-
+    - how to start airbnb arbitrage with a full time job
+    - manage airbnb remotely from another state
+    - airbnb arbitrage for beginners 2026
+  searchIntent: informational
+  targetSnippet: how to start airbnb arbitrage while working full time
 tags:
   - airbnb arbitrage
   - remote management
@@ -31,106 +34,129 @@ tags:
   - goal setting
   - case study
   - young entrepreneur
-
 image: /assets/images/blog/success-stories/james-7k-remote-airbnb.jpg
-imageAlt: "James Saunders - 24-year-old achieving $7,000/month with remote Airbnb arbitrage"
+imageAlt: >-
+  James Saunders - 24-year-old achieving $7,000/month with remote Airbnb
+  arbitrage
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
-
-youtubeId: "8jlPlCb4WgM"
-videoDuration: "PT28M"
-
+youtubeId: 8jlPlCb4WgM
+videoDuration: PT28M
 schema:
   - type: Article
-    headline: "How James Built a $7,000/Month Airbnb Business in 57 Days"
-    datePublished: "2026-01-23"
-    dateModified: "2026-01-23"
+    headline: 'How James Built a $7,000/Month Airbnb Business in 57 Days'
+    datePublished: '2026-01-23'
+    dateModified: '2026-01-23'
   - type: VideoObject
-    name: "James Saunders' Airbnb Success Story Interview"
-    description: "Full interview with James about building a $7,000/month Airbnb arbitrage business while working full-time"
-    thumbnailUrl: "https://img.youtube.com/vi/8jlPlCb4WgM/maxresdefault.jpg"
-    uploadDate: "2024-03-20"
-    duration: "PT28M"
-    embedUrl: "https://www.youtube.com/embed/8jlPlCb4WgM"
+    name: James Saunders' Airbnb Success Story Interview
+    description: >-
+      Full interview with James about building a $7,000/month Airbnb arbitrage
+      business while working full-time
+    thumbnailUrl: 'https://img.youtube.com/vi/8jlPlCb4WgM/maxresdefault.jpg'
+    uploadDate: '2024-03-20'
+    duration: PT28M
+    embedUrl: 'https://www.youtube.com/embed/8jlPlCb4WgM'
   - type: HowTo
-    name: "How to Build an Airbnb Business in Under 60 Days"
-    estimatedCost: "$10,000"
-    totalTime: "57 days"
+    name: How to Build an Airbnb Business in Under 60 Days
+    estimatedCost: '$10,000'
+    totalTime: 57 days
   - type: Person
-    name: "James Saunders"
-    jobTitle: "Consultant & Airbnb Entrepreneur"
-    knowsAbout: ["Airbnb arbitrage", "remote property management", "short-term rentals"]
-
+    name: James Saunders
+    jobTitle: Consultant & Airbnb Entrepreneur
+    knowsAbout:
+      - Airbnb arbitrage
+      - remote property management
+      - short-term rentals
 breadcrumbs:
-  - name: "Home"
-    url: "/"
-  - name: "Blog"
-    url: "/blog"
-  - name: "Success Stories"
-    url: "/blog/category/success-stories"
-  - name: "James' Story"
-    url: "/blog/james-7k-month-3-properties-remote"
-
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog
+  - name: Success Stories
+    url: /blog/category/success-stories
+  - name: James' Story
+    url: /blog/james-7k-month-3-properties-remote
 statistics:
-  - value: "$7,000"
-    label: "Monthly Profit"
-    icon: "dollar"
-    context: "Combined from 3 properties"
-    source: "Student Interview, March 2024"
+  - value: '$7,000'
+    label: Monthly Profit
+    icon: dollar
+    context: Combined from 3 properties
+    source: 'Student Interview, March 2024'
     highlighted: true
-  - value: "3"
-    label: "Properties"
-    icon: "home"
-    context: "Multiple markets"
-  - value: "57 days"
-    label: "Time to First Property"
-    icon: "clock"
-    context: "From joining program"
-  - value: "20-30"
-    label: "Calls Made"
-    icon: "phone"
-    context: "Before first yes"
-  - value: "5-6 hrs"
-    label: "Weekly Time"
-    icon: "time"
-    context: "Managing all properties"
-  - value: "24"
-    label: "Age"
-    icon: "user"
-    context: "When he started"
-
+  - value: '3'
+    label: Properties
+    icon: home
+    context: Multiple markets
+  - value: 57 days
+    label: Time to First Property
+    icon: clock
+    context: From joining program
+  - value: 20-30
+    label: Calls Made
+    icon: phone
+    context: Before first yes
+  - value: 5-6 hrs
+    label: Weekly Time
+    icon: time
+    context: Managing all properties
+  - value: '24'
+    label: Age
+    icon: user
+    context: When he started
 faq:
-  - question: "Can you start Airbnb arbitrage while working a full-time job?"
-    answer: "Yes. James works as a full-time consultant and manages 3 Airbnb properties generating $7,000/month profit. He spends 5-6 hours per week on management using automation tools like Guesty and Price Labs."
-  - question: "How fast can you get your first Airbnb arbitrage property?"
-    answer: "James went from joining the program to going live with his first property in just 57 days. He set a personal goal to beat the standard 90-day timeline by 30 days, using aggressive goal-setting and consistent daily action."
-  - question: "How many landlords do you need to call to get a yes?"
-    answer: "James called approximately 20-30 landlords before getting his first yes. After that, he got his second and third yeses within just 3-4 calls each, as his pitch and confidence improved dramatically."
-  - question: "Can you manage Airbnb properties in another state?"
-    answer: "Yes. One of James' properties is 18-20 hours away by car, in a completely different state. He manages it entirely remotely through his cleaning team, handyman referrals, and automation software."
-  - question: "How much does it cost to furnish an Airbnb property?"
-    answer: "James furnished a 4-bed, 2-bath property (2,900 sq ft on 5 acres including a hot tub) for under $10,000. The property came partially furnished, and he sourced remaining items from Amazon and Wayfair."
-  - question: "Do you need real estate experience to start Airbnb arbitrage?"
-    answer: "No. James came from an accounting/consulting background with zero real estate experience. He learned everything through Legacy Investing Show's training and was honest with landlords about being a first-time operator."
-  - question: "What should you say to landlords when you have no experience?"
-    answer: "James was completely honest: 'This will be my first property. I've never done it, but I'm in a mastermind group and I feel perfectly comfortable. I have people to help me out and I promise I'll always pay on time.' Landlords appreciated the honesty."
-  - question: "How do you find reliable cleaners for remote properties?"
-    answer: "James finds cleaners first through Thumbtack, vets them for communication speed (fast responders are more reliable), and then asks for referrals to build his full team—handymen, contractors, and other service providers."
-
+  - question: Can you start Airbnb arbitrage while working a full-time job?
+    answer: >-
+      Yes. James works as a full-time consultant and manages 3 Airbnb properties
+      generating $7,000/month profit. He spends 5-6 hours per week on management
+      using automation tools like Guesty and Price Labs.
+  - question: How fast can you get your first Airbnb arbitrage property?
+    answer: >-
+      James went from joining the program to going live with his first property
+      in just 57 days. He set a personal goal to beat the standard 90-day
+      timeline by 30 days, using aggressive goal-setting and consistent daily
+      action.
+  - question: How many landlords do you need to call to get a yes?
+    answer: >-
+      James called approximately 20-30 landlords before getting his first yes.
+      After that, he got his second and third yeses within just 3-4 calls each,
+      as his pitch and confidence improved dramatically.
+  - question: Can you manage Airbnb properties in another state?
+    answer: >-
+      Yes. One of James' properties is 18-20 hours away by car, in a completely
+      different state. He manages it entirely remotely through his cleaning
+      team, handyman referrals, and automation software.
+  - question: How much does it cost to furnish an Airbnb property?
+    answer: >-
+      James furnished a 4-bed, 2-bath property (2,900 sq ft on 5 acres including
+      a hot tub) for under $10,000. The property came partially furnished, and
+      he sourced remaining items from Amazon and Wayfair.
+  - question: Do you need real estate experience to start Airbnb arbitrage?
+    answer: >-
+      No. James came from an accounting/consulting background with zero real
+      estate experience. He learned everything through Legacy Investing Show's
+      training and was honest with landlords about being a first-time operator.
+  - question: What should you say to landlords when you have no experience?
+    answer: >-
+      James was completely honest: 'This will be my first property. I've never
+      done it, but I'm in a mastermind group and I feel perfectly comfortable. I
+      have people to help me out and I promise I'll always pay on time.'
+      Landlords appreciated the honesty.
+  - question: How do you find reliable cleaners for remote properties?
+    answer: >-
+      James finds cleaners first through Thumbtack, vets them for communication
+      speed (fast responders are more reliable), and then asks for referrals to
+      build his full team—handymen, contractors, and other service providers.
 toc: true
 tocDepth: 3
-
 relatedPosts:
-  - slug: "gary-marketing-executive-35k-month"
-    title: "How Gary Built a $35K/Month Airbnb Portfolio"
-  - slug: "micah-facebook-message-5k-month-houston"
-    title: "How Micah Found His First Property with One Facebook Message"
-
-readingTime: "14 min read"
-wordCount: "4800"
+  - slug: gary-marketing-executive-35k-month
+    title: How Gary Built a $35K/Month Airbnb Portfolio
+  - slug: micah-facebook-message-5k-month-houston
+    title: How Micah Found His First Property with One Facebook Message
+readingTime: 20 min read
+wordCount: '3840'
 ---
-
 **James Saunders generates $7,000 per month in profit from 3 Airbnb arbitrage properties—and he secured his first deal in just 57 days while working full-time as a consultant.** At 24 years old with zero real estate experience, James proved that aggressive goal-setting and consistent action beat experience every time.
 
 This case study reveals exactly how James built a multi-property portfolio across state lines, including the 20-30 calls it took to get his first yes, the $10,000 setup budget for a 2,900 square foot property, and the 5-6 hours per week he spends managing everything alongside his demanding consulting career.

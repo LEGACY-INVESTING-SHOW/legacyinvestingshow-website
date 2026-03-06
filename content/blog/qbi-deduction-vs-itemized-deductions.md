@@ -136,8 +136,8 @@ relatedPosts:
     title: 'Best Tax Deductions for High Income Earners: Complete 2026 Guide'
   - slug: best-tax-deductions-for-individuals
     title: 'Best Tax Deductions for Individuals: Complete 2026 Guide'
-readingTime: 10 min read
-wordCount: '2126'
+readingTime: 12 min read
+wordCount: '2207'
 ---
 If you are comparing qbi deduction vs itemized deductions for 2026, treat this as a sequencing decision, not an either-or decision. You can often claim both. The Internal Revenue Service (IRS) guidance says the Section 199A qualified business income deduction is available whether you itemize on Schedule A or take the standard deduction. The catch is that itemizing can still change how much QBI you get because QBI is capped by taxable income.
 

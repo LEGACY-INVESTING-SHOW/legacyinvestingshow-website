@@ -140,8 +140,8 @@ relatedPosts:
     title: '1031 exchange vs standard deduction: Which Strategy Works Better in 2026?'
   - slug: best-tax-deductions-2025
     title: 'Best Tax Deductions 2025: Complete 2026 Guide to Lower Your Tax Bill'
-readingTime: 10 min read
-wordCount: '2103'
+readingTime: 11 min read
+wordCount: '2196'
 ---
 Most people searching for an estate tax planning checklist do not have a paperwork problem. They have a decision problem: which moves matter first, how much tax is actually at stake, and which tradeoffs are worth making now versus later.
 

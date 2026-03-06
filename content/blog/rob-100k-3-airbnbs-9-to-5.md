@@ -1,26 +1,26 @@
 ---
-# Core SEO Fields
-title: "How Rob Made $100K from 3 Airbnbs While Working a 9-to-5 and Raising Two Kids (2025 Case Study)"
-titleTemplate: "%s | Legacy Investing Show Success Stories"
-description: "Rob went from MBA student to $100K+/year with 3 Airbnb arbitrage properties in Louisville and St. Simons Island while working full-time and raising two kids. Learn his exact strategies, landlord scripts, and remote management system."
-date: 2026-02-01
-modifiedDate: 2026-01-23
+title: >-
+  How Rob Made $100K from 3 Airbnbs While Working a 9-to-5 and Raising Two Kids
+  (2025 Case Study)
+titleTemplate: '%s | Legacy Investing Show Success Stories'
+description: >-
+  Rob went from MBA student to $100K+/year with 3 Airbnb arbitrage properties in
+  Louisville and St. Simons Island while working full-time and raising two kids.
+  Learn his exact strategies, landlord scripts, and remote management system.
+date: 2026-02-01T00:00:00.000Z
+modifiedDate: 2026-01-23T00:00:00.000Z
 author: Preston Seo
-authorTitle: "Founder, Legacy Investing Show"
-authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
+authorTitle: 'Founder, Legacy Investing Show'
+authorCredentials: '2,000+ students trained, $10M+ student revenue generated'
 category: Success Story
-canonical: "https://www.legacyinvestingshow.com/blog/rob-100k-3-airbnbs-9-to-5"
-
-# SEO Keyword Targeting
+canonical: 'https://www.legacyinvestingshow.com/blog/rob-100k-3-airbnbs-9-to-5'
 seo:
-  primaryKeyword: "airbnb success story"
+  primaryKeyword: airbnb success story
   secondaryKeywords:
-    - "short-term rental business"
+    - short-term rental business
   longTailKeywords:
-    - "how to start airbnb while working full time"
-  searchIntent: "informational"
-
-# Tags
+    - how to start airbnb while working full time
+  searchIntent: informational
 tags:
   - airbnb arbitrage
   - rental arbitrage
@@ -28,100 +28,136 @@ tags:
   - case study
   - success story
   - short-term rental
-
-# Open Graph & Social
 image: /assets/images/blog/success-stories/rob-100k-airbnb.jpg
-imageAlt: "How Rob Made $100K from 3 Airbnbs While Working a 9-to-5 and Raising Two Kids (2025 Case Study) - Legacy Investing Show"
+imageAlt: >-
+  How Rob Made $100K from 3 Airbnbs While Working a 9-to-5 and Raising Two Kids
+  (2025 Case Study) - Legacy Investing Show
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
 featured: false
-
-# Video Integration
-youtubeId: "W_JewQK4LJc"
-
-# Multiple Schema Types for Rich Results
+youtubeId: W_JewQK4LJc
 schema:
   - type: Article
-    headline: "How Rob Made $100K from 3 Airbnbs While Working a 9-to-5 and Raising Two Kids (2025 Case Study)"
-    datePublished: "2026-02-01T00:00:00Z"
-    dateModified: "2026-01-23T00:00:00Z"
+    headline: >-
+      How Rob Made $100K from 3 Airbnbs While Working a 9-to-5 and Raising Two
+      Kids (2025 Case Study)
+    datePublished: '2026-02-01T00:00:00Z'
+    dateModified: '2026-01-23T00:00:00Z'
   - type: VideoObject
-    name: "How Rob Made $100K from 3 Airbnbs While Working a 9-to-5 and Raising Two Kids (2025 Case Study) - Full Interview"
-    thumbnailUrl: "https://img.youtube.com/vi/W_JewQK4LJc/maxresdefault.jpg"
-    embedUrl: "https://www.youtube.com/embed/W_JewQK4LJc"
+    name: >-
+      How Rob Made $100K from 3 Airbnbs While Working a 9-to-5 and Raising Two
+      Kids (2025 Case Study) - Full Interview
+    thumbnailUrl: 'https://img.youtube.com/vi/W_JewQK4LJc/maxresdefault.jpg'
+    embedUrl: 'https://www.youtube.com/embed/W_JewQK4LJc'
   - type: HowTo
-    name: "How to Build an Airbnb Business Like This Success Story"
-
-# Breadcrumbs
+    name: How to Build an Airbnb Business Like This Success Story
 breadcrumbs:
-  - name: "Home"
-    url: "/"
-  - name: "Blog"
-    url: "/blog"
-  - name: "Success Stories"
-    url: "/blog/category/success-stories"
-
-# Statistics (AI-crawler accessible, renders as stat cards)
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog
+  - name: Success Stories
+    url: /blog/category/success-stories
 statistics:
-  - value: "$100K+"
-    label: "Annual Revenue"
-    icon: "dollar"
-    context: "Year one gross revenue"
-    source: "Student Interview, March 2024"
-  - value: "3"
-    label: "Properties"
-    icon: "home"
-    context: "Louisville & St. Simons Island"
-  - value: "2 months"
-    label: "Time to First Deal"
-    icon: "clock"
-    context: "From joining to lease signed"
-  - value: "9-to-5"
-    label: "Full-Time Job"
-    icon: "users"
-    context: "Plus raising two kids"
-  - value: "$92K"
-    label: "Q1 Revenue 2024"
-    icon: "chart"
-    context: "On track to beat prior year"
-  - value: "Remote"
-    label: "Management Style"
-    icon: "star"
-    context: "Never visited St. Simons before setup"
-
-# FAQ (FAQPage schema + accordion rendering)
+  - value: $100K+
+    label: Annual Revenue
+    icon: dollar
+    context: Year one gross revenue
+    source: 'Student Interview, March 2024'
+  - value: '3'
+    label: Properties
+    icon: home
+    context: Louisville & St. Simons Island
+  - value: 2 months
+    label: Time to First Deal
+    icon: clock
+    context: From joining to lease signed
+  - value: 9-to-5
+    label: Full-Time Job
+    icon: users
+    context: Plus raising two kids
+  - value: $92K
+    label: Q1 Revenue 2024
+    icon: chart
+    context: On track to beat prior year
+  - value: Remote
+    label: Management Style
+    icon: star
+    context: Never visited St. Simons before setup
 faq:
-  - question: "How much money can you make with Airbnb arbitrage while working full-time?"
-    answer: "Rob generates over $100,000 per year in gross revenue from 3 Airbnb arbitrage properties while working a 9-to-5 job and raising two kids. His Highland House in Louisville is his best performer, generating consistent revenue year-round thanks to Louisville's event programming."
-  - question: "Is Airbnb arbitrage still profitable in 2025?"
-    answer: "Yes. Rob started in 2020, secured his first property in October, went live in January 2021, and scaled to 3 properties generating $100K+/year by 2024. His success depends on market selection (year-round events), landlord relationships, and automation through tools like Guesty for Hosts."
-  - question: "How do you convince landlords to let you Airbnb their property?"
-    answer: "Rob uses a win-win sales approach: 1) Free property management - cleaners visit 2-3 times per week, better than annual inspections; 2) Year-round occupancy with constant oversight; 3) Ring cameras and guest screening to prevent parties; 4) Professional maintenance coordination. He addresses every objection by showing how he mitigates risks."
-  - question: "Can you manage Airbnb properties remotely without visiting them?"
-    answer: "Yes. Rob manages his St. Simons Island property in Georgia from Louisville, Kentucky without being there. He built his team through cleaner referrals, had his handyman assemble furniture from Wayfair, drew floor plans on notecards, and set up Ring cameras. He only visited after everything was operational."
-  - question: "How do you find a turnkey Airbnb property?"
-    answer: "Rob found his first property already set up as an Airbnb - the owners had launched in February 2020 but pivoted to long-term rentals when travel stopped. The property was fully furnished and had permits in place. He looked for properties on Zillow where owners already understood the STR model."
-  - question: "What is Guesty for Hosts and why do Airbnb hosts use it?"
-    answer: "Guesty for Hosts is an Airbnb management platform that centralizes all listings, syncs calendars across Airbnb/Vrbo/Booking.com to prevent double bookings, automates guest messaging, generates door codes for smart locks, and tracks revenue/occupancy. Rob says he \"could not possibly run this business without it.\""
-  - question: "How long does it take to start making money with Airbnb arbitrage?"
-    answer: "Rob joined Legacy Investing Show in August, had his first property under lease contract by October, and went live in January - about 5 months from program start to first booking. By year one, he was on track for over $100K in revenue across 3 properties."
-  - question: "Is Legacy Investing Show worth it?"
-    answer: "Based on Rob's results, the ROI speaks for itself: from zero properties to $100K+/year in revenue within one year. He credits the course for providing the roadmap, landlord scripts, and confidence to take action. His advice: \"If I can do this, you can do this - it's all in your head.\""
-  - question: "What markets are best for Airbnb arbitrage?"
-    answer: "Rob chose Louisville, Kentucky because the city programs events year-round - not just the Kentucky Derby. They host major rock concerts like Louder Than Life and other events that create consistent demand. He diversified with St. Simons Island, Georgia (April-September seasonality) to balance risk."
-  - question: "How much does it cost to start Airbnb arbitrage?"
-    answer: "Rob's first property required minimal investment because it was already furnished as an Airbnb. For his St. Simons property, he invested in paint, landscaping, furniture from Wayfair (with Pro account discounts), and assembly labor. He negotiated with landlords to reduce security deposits and invest the difference in property improvements."
-
-# Table of Contents
+  - question: How much money can you make with Airbnb arbitrage while working full-time?
+    answer: >-
+      Rob generates over $100,000 per year in gross revenue from 3 Airbnb
+      arbitrage properties while working a 9-to-5 job and raising two kids. His
+      Highland House in Louisville is his best performer, generating consistent
+      revenue year-round thanks to Louisville's event programming.
+  - question: Is Airbnb arbitrage still profitable in 2025?
+    answer: >-
+      Yes. Rob started in 2020, secured his first property in October, went live
+      in January 2021, and scaled to 3 properties generating $100K+/year by
+      2024. His success depends on market selection (year-round events),
+      landlord relationships, and automation through tools like Guesty for
+      Hosts.
+  - question: How do you convince landlords to let you Airbnb their property?
+    answer: >-
+      Rob uses a win-win sales approach: 1) Free property management - cleaners
+      visit 2-3 times per week, better than annual inspections; 2) Year-round
+      occupancy with constant oversight; 3) Ring cameras and guest screening to
+      prevent parties; 4) Professional maintenance coordination. He addresses
+      every objection by showing how he mitigates risks.
+  - question: Can you manage Airbnb properties remotely without visiting them?
+    answer: >-
+      Yes. Rob manages his St. Simons Island property in Georgia from
+      Louisville, Kentucky without being there. He built his team through
+      cleaner referrals, had his handyman assemble furniture from Wayfair, drew
+      floor plans on notecards, and set up Ring cameras. He only visited after
+      everything was operational.
+  - question: How do you find a turnkey Airbnb property?
+    answer: >-
+      Rob found his first property already set up as an Airbnb - the owners had
+      launched in February 2020 but pivoted to long-term rentals when travel
+      stopped. The property was fully furnished and had permits in place. He
+      looked for properties on Zillow where owners already understood the STR
+      model.
+  - question: What is Guesty for Hosts and why do Airbnb hosts use it?
+    answer: >-
+      Guesty for Hosts is an Airbnb management platform that centralizes all
+      listings, syncs calendars across Airbnb/Vrbo/Booking.com to prevent double
+      bookings, automates guest messaging, generates door codes for smart locks,
+      and tracks revenue/occupancy. Rob says he "could not possibly run this
+      business without it."
+  - question: How long does it take to start making money with Airbnb arbitrage?
+    answer: >-
+      Rob joined Legacy Investing Show in August, had his first property under
+      lease contract by October, and went live in January - about 5 months from
+      program start to first booking. By year one, he was on track for over
+      $100K in revenue across 3 properties.
+  - question: Is Legacy Investing Show worth it?
+    answer: >-
+      Based on Rob's results, the ROI speaks for itself: from zero properties to
+      $100K+/year in revenue within one year. He credits the course for
+      providing the roadmap, landlord scripts, and confidence to take action.
+      His advice: "If I can do this, you can do this - it's all in your head."
+  - question: What markets are best for Airbnb arbitrage?
+    answer: >-
+      Rob chose Louisville, Kentucky because the city programs events year-round
+      - not just the Kentucky Derby. They host major rock concerts like Louder
+      Than Life and other events that create consistent demand. He diversified
+      with St. Simons Island, Georgia (April-September seasonality) to balance
+      risk.
+  - question: How much does it cost to start Airbnb arbitrage?
+    answer: >-
+      Rob's first property required minimal investment because it was already
+      furnished as an Airbnb. For his St. Simons property, he invested in paint,
+      landscaping, furniture from Wayfair (with Pro account discounts), and
+      assembly labor. He negotiated with landlords to reduce security deposits
+      and invest the difference in property improvements.
 toc: true
 tocDepth: 3
-
-# Reading Time
-readingTime: "23 min read"
-wordCount: "4579"
+readingTime: 23 min read
+wordCount: '4443'
 ---
-
 **Rob earns over $100,000 per year from 3 Airbnb arbitrage properties while working a 9-to-5 job and raising two kids.** Starting with his MBA nearly complete and looking to deploy his savings into something meaningful, he joined Legacy Investing Show in August 2020 and had his first property under lease by October. Today, Rob manages properties in Louisville, Kentucky and St. Simons Island, Georgia, with systems so automated he barely thinks about the business day-to-day.
 
 This case study breaks down exactly how Rob built this Airbnb arbitrage business, including his specific strategies for convincing landlords, setting up properties remotely without ever visiting them, and creating automated systems that let him balance work, family, and entrepreneurship.

@@ -1,27 +1,28 @@
 ---
-# Core SEO Fields
-title: "How Kiana Replaced Her Finance Job with Airbnb Arbitrage in Scottsdale (2026 Case Study)"
-titleTemplate: "%s | Legacy Investing Show Success Stories"
-description: "Kiana quit her 10-year finance career and replaced her income with 2 Airbnb arbitrage properties generating $3,200/month cash flow in Scottsdale, Arizona. Learn her exact strategies for market research, landlord negotiations, and scaling while traveling the world."
-date: 2025-10-15
-modifiedDate: 2026-01-23
+title: >-
+  How Kiana Replaced Her Finance Job with Airbnb Arbitrage in Scottsdale (2026
+  Case Study)
+titleTemplate: '%s | Legacy Investing Show Success Stories'
+description: >-
+  Kiana quit her 10-year finance career and replaced her income with 2 Airbnb
+  arbitrage properties generating $3,200/month cash flow in Scottsdale, Arizona.
+  Learn her exact strategies for market research, landlord negotiations, and
+  scaling while traveling the world.
+date: 2025-10-15T00:00:00.000Z
+modifiedDate: 2026-01-23T00:00:00.000Z
 author: Preston Seo
-authorTitle: "Founder, Legacy Investing Show"
-authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
+authorTitle: 'Founder, Legacy Investing Show'
+authorCredentials: '2,000+ students trained, $10M+ student revenue generated'
 category: Success Story
-canonical: "https://www.legacyinvestingshow.com/blog/kiana-replaced-finance-job-airbnb"
-
-# SEO Keyword Targeting
+canonical: 'https://www.legacyinvestingshow.com/blog/kiana-replaced-finance-job-airbnb'
 seo:
-  primaryKeyword: "airbnb success story"
+  primaryKeyword: airbnb success story
   secondaryKeywords:
-    - "short-term rental business"
+    - short-term rental business
   longTailKeywords:
-    - "how much can you make with airbnb"
-    - "is airbnb arbitrage worth it"
-  searchIntent: "informational"
-
-# Tags
+    - how much can you make with airbnb
+    - is airbnb arbitrage worth it
+  searchIntent: informational
 tags:
   - airbnb arbitrage
   - rental arbitrage
@@ -29,100 +30,133 @@ tags:
   - case study
   - success story
   - short-term rental
-
-# Open Graph & Social
 image: /assets/images/blog/success-stories/kiana-finance-airbnb.jpg
-imageAlt: "How Kiana Replaced Her Finance Job with Airbnb Arbitrage in Scottsdale (2026 Case Study) - Legacy Investing Show"
+imageAlt: >-
+  How Kiana Replaced Her Finance Job with Airbnb Arbitrage in Scottsdale (2026
+  Case Study) - Legacy Investing Show
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
 featured: false
-
-# Video Integration
-youtubeId: "2T1M3T9YbkM"
-
-# Multiple Schema Types for Rich Results
+youtubeId: 2T1M3T9YbkM
 schema:
   - type: Article
-    headline: "How Kiana Replaced Her Finance Job with Airbnb Arbitrage in Scottsdale (2026 Case Study)"
-    datePublished: "2026-03-15T00:00:00Z"
-    dateModified: "2026-01-23T00:00:00Z"
+    headline: >-
+      How Kiana Replaced Her Finance Job with Airbnb Arbitrage in Scottsdale
+      (2026 Case Study)
+    datePublished: '2026-03-15T00:00:00Z'
+    dateModified: '2026-01-23T00:00:00Z'
   - type: VideoObject
-    name: "How Kiana Replaced Her Finance Job with Airbnb Arbitrage in Scottsdale (2026 Case Study) - Full Interview"
-    thumbnailUrl: "https://img.youtube.com/vi/2T1M3T9YbkM/maxresdefault.jpg"
-    embedUrl: "https://www.youtube.com/embed/2T1M3T9YbkM"
+    name: >-
+      How Kiana Replaced Her Finance Job with Airbnb Arbitrage in Scottsdale
+      (2026 Case Study) - Full Interview
+    thumbnailUrl: 'https://img.youtube.com/vi/2T1M3T9YbkM/maxresdefault.jpg'
+    embedUrl: 'https://www.youtube.com/embed/2T1M3T9YbkM'
   - type: HowTo
-    name: "How to Build an Airbnb Business Like This Success Story"
-
-# Breadcrumbs
+    name: How to Build an Airbnb Business Like This Success Story
 breadcrumbs:
-  - name: "Home"
-    url: "/"
-  - name: "Blog"
-    url: "/blog"
-  - name: "Success Stories"
-    url: "/blog/category/success-stories"
-
-# Statistics (AI-crawler accessible, renders as stat cards)
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog
+  - name: Success Stories
+    url: /blog/category/success-stories
 statistics:
-  - value: "$3,200"
-    label: "Monthly Cash Flow"
-    icon: "dollar"
-    context: "From 2 properties"
-    source: "Student Interview, 2026"
-  - value: "2"
-    label: "Properties"
-    icon: "home"
-    context: "Scottsdale, Arizona"
-  - value: "3 months"
-    label: "Time to Quit Job"
-    icon: "clock"
-    context: "After joining LIS"
-  - value: "10+ years"
-    label: "Finance Career Left"
-    icon: "check"
-    context: "For financial freedom"
-  - value: "4 hours"
-    label: "Weekly Management"
-    icon: "clock"
-    context: "After systemizing"
-  - value: "$2,500"
-    label: "Conservative Projection"
-    icon: "location"
-    context: "Hit on first property"
-
-# FAQ (FAQPage schema + accordion rendering)
+  - value: '$3,200'
+    label: Monthly Cash Flow
+    icon: dollar
+    context: From 2 properties
+    source: 'Student Interview, 2026'
+  - value: '2'
+    label: Properties
+    icon: home
+    context: 'Scottsdale, Arizona'
+  - value: 3 months
+    label: Time to Quit Job
+    icon: clock
+    context: After joining LIS
+  - value: 10+ years
+    label: Finance Career Left
+    icon: check
+    context: For financial freedom
+  - value: 4 hours
+    label: Weekly Management
+    icon: clock
+    context: After systemizing
+  - value: '$2,500'
+    label: Conservative Projection
+    icon: location
+    context: Hit on first property
 faq:
-  - question: "How much money can you make with Airbnb arbitrage?"
-    answer: "Kiana generates $3,200/month in cash flow from 2 properties in Scottsdale, Arizona. Her first property met the conservative projection of $2,500/month, and she secured a 1-year tenant at the same rate. Results vary based on market, property selection, and operational efficiency."
-  - question: "Is Airbnb arbitrage still profitable in 2026?"
-    answer: "Yes. Kiana started her Airbnb arbitrage journey recently and quickly scaled to 2 properties generating positive cash flow. She quit her 10-year finance job after just 3 months of research and community involvement. Success depends on market selection, delegating effectively, and trusting proven systems."
-  - question: "Can you quit your job with Airbnb arbitrage?"
-    answer: "Yes. Kiana quit her finance job after 10 years, just 3 months after joining Legacy Investing Show. She replaced her corporate income with cash flow from 2 Airbnb properties and now travels the world while managing her business remotely, spending only 4 hours per week on operations."
-  - question: "How long does it take to start making money with Airbnb arbitrage?"
-    answer: "Kiana spent 6 months researching before joining Legacy Investing Show, then got her first property within a couple months of joining. Her second property was signed and went live shortly after. Most Legacy Investing Show students secure their first property within 30-60 days."
-  - question: "Do you need real estate experience to start Airbnb arbitrage?"
-    answer: "No, but relevant experience helps. Kiana had 10+ years in finance and owned rental properties in Seattle, but had never done short-term rental arbitrage. Her finance background helped with analysis and projections, while the Legacy Investing Show community provided the arbitrage-specific knowledge."
-  - question: "What is the best market for Airbnb arbitrage?"
-    answer: "Kiana chose Scottsdale, Arizona despite initial concerns about saturation. She found success by differentiating her properties for luxury family travelers instead of bachelor/bachelorette parties. The best market is one where you have a support network, understand short-term rental laws, and can differentiate effectively."
-  - question: "How do you handle landlord negotiations for Airbnb arbitrage?"
-    answer: "Kiana initially struggled with landlord negotiations, so she delegated to a company that specializes in property acquisition. This allowed her to learn from experts while focusing on her strengths. Delegation is a key strategy for overcoming weaknesses in the arbitrage business."
-  - question: "Is Legacy Investing Show worth it?"
-    answer: "Based on Kiana's results, the program provided the confidence, resources, and community she needed to quit her job and build a profitable Airbnb business. The calculator, property feedback, cohort meetings, and market research resources were specifically valuable in her decision-making process."
-  - question: "How much time does it take to manage Airbnb arbitrage properties?"
-    answer: "Kiana spends about 4 hours per week managing her properties after trusting her systems and delegating effectively. Initially she spent around 10 hours per week while micromanaging, but reduced this by 60% by trusting the process and her management company."
-  - question: "Can you do Airbnb arbitrage while traveling?"
-    answer: "Yes. After quitting her finance job, Kiana has been traveling the world while managing her Scottsdale properties remotely. She chose Airbnb arbitrage specifically because it allows location freedom alongside financial freedom, conducting market research during her travels."
-
-# Table of Contents
+  - question: How much money can you make with Airbnb arbitrage?
+    answer: >-
+      Kiana generates $3,200/month in cash flow from 2 properties in Scottsdale,
+      Arizona. Her first property met the conservative projection of
+      $2,500/month, and she secured a 1-year tenant at the same rate. Results
+      vary based on market, property selection, and operational efficiency.
+  - question: Is Airbnb arbitrage still profitable in 2026?
+    answer: >-
+      Yes. Kiana started her Airbnb arbitrage journey recently and quickly
+      scaled to 2 properties generating positive cash flow. She quit her 10-year
+      finance job after just 3 months of research and community involvement.
+      Success depends on market selection, delegating effectively, and trusting
+      proven systems.
+  - question: Can you quit your job with Airbnb arbitrage?
+    answer: >-
+      Yes. Kiana quit her finance job after 10 years, just 3 months after
+      joining Legacy Investing Show. She replaced her corporate income with cash
+      flow from 2 Airbnb properties and now travels the world while managing her
+      business remotely, spending only 4 hours per week on operations.
+  - question: How long does it take to start making money with Airbnb arbitrage?
+    answer: >-
+      Kiana spent 6 months researching before joining Legacy Investing Show,
+      then got her first property within a couple months of joining. Her second
+      property was signed and went live shortly after. Most Legacy Investing
+      Show students secure their first property within 30-60 days.
+  - question: Do you need real estate experience to start Airbnb arbitrage?
+    answer: >-
+      No, but relevant experience helps. Kiana had 10+ years in finance and
+      owned rental properties in Seattle, but had never done short-term rental
+      arbitrage. Her finance background helped with analysis and projections,
+      while the Legacy Investing Show community provided the arbitrage-specific
+      knowledge.
+  - question: What is the best market for Airbnb arbitrage?
+    answer: >-
+      Kiana chose Scottsdale, Arizona despite initial concerns about saturation.
+      She found success by differentiating her properties for luxury family
+      travelers instead of bachelor/bachelorette parties. The best market is one
+      where you have a support network, understand short-term rental laws, and
+      can differentiate effectively.
+  - question: How do you handle landlord negotiations for Airbnb arbitrage?
+    answer: >-
+      Kiana initially struggled with landlord negotiations, so she delegated to
+      a company that specializes in property acquisition. This allowed her to
+      learn from experts while focusing on her strengths. Delegation is a key
+      strategy for overcoming weaknesses in the arbitrage business.
+  - question: Is Legacy Investing Show worth it?
+    answer: >-
+      Based on Kiana's results, the program provided the confidence, resources,
+      and community she needed to quit her job and build a profitable Airbnb
+      business. The calculator, property feedback, cohort meetings, and market
+      research resources were specifically valuable in her decision-making
+      process.
+  - question: How much time does it take to manage Airbnb arbitrage properties?
+    answer: >-
+      Kiana spends about 4 hours per week managing her properties after trusting
+      her systems and delegating effectively. Initially she spent around 10
+      hours per week while micromanaging, but reduced this by 60% by trusting
+      the process and her management company.
+  - question: Can you do Airbnb arbitrage while traveling?
+    answer: >-
+      Yes. After quitting her finance job, Kiana has been traveling the world
+      while managing her Scottsdale properties remotely. She chose Airbnb
+      arbitrage specifically because it allows location freedom alongside
+      financial freedom, conducting market research during her travels.
 toc: true
 tocDepth: 3
-
-# Reading Time
-readingTime: "24 min read"
-wordCount: "4748"
+readingTime: 23 min read
+wordCount: '4595'
 ---
-
 **Kiana earns $3,200 per month in cash flow from 2 Airbnb arbitrage properties in Scottsdale, Arizona.** After a decade in finance, she joined Legacy Investing Show, quit her corporate job within 3 months, and now travels the world while her short-term rental business runs with just 4 hours of weekly management. Her first property hit the conservative projection of $2,500/month, and she secured a one-year tenant at the same rate, demonstrating the flexibility of the arbitrage model.
 
 This case study breaks down exactly how Kiana built this Airbnb business while transitioning from corporate finance, including her specific strategies for market selection, landlord negotiation delegation, and differentiation in a saturated market like Scottsdale.

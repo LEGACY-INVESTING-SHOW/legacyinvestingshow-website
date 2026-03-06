@@ -1,28 +1,27 @@
 ---
-# Core SEO Fields
-title: "How Chad Makes $90K/Year with One Airbnb Property in North Florida (2026 Case Study)"
-titleTemplate: "%s | Legacy Investing Show Success Stories"
-description: "Chad went from long-term rentals to $90,000/year gross revenue with a single short-term rental property near Florida"
-date: 2026-02-28
-modifiedDate: 2026-01-23
+title: >-
+  How Chad Makes $90K/Year with One Airbnb Property in North Florida (2026 Case
+  Study)
+titleTemplate: '%s | Legacy Investing Show Success Stories'
+description: >-
+  Chad went from long-term rentals to $90,000/year gross revenue with a single
+  short-term rental property near Florida
+date: 2026-02-28T00:00:00.000Z
+modifiedDate: 2026-01-23T00:00:00.000Z
 author: Preston Seo
-authorTitle: "Founder, Legacy Investing Show"
-authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
+authorTitle: 'Founder, Legacy Investing Show'
+authorCredentials: '2,000+ students trained, $10M+ student revenue generated'
 category: Success Story
-canonical: "https://www.legacyinvestingshow.com/blog/chad-90k-year-one-property"
-
-# SEO Keyword Targeting
+canonical: 'https://www.legacyinvestingshow.com/blog/chad-90k-year-one-property'
 seo:
-  primaryKeyword: "airbnb success story"
+  primaryKeyword: airbnb success story
   secondaryKeywords:
-    - "short-term rental business"
-    - "florida airbnb"
+    - short-term rental business
+    - florida airbnb
   longTailKeywords:
-    - "how much can you make with airbnb"
-    - "is airbnb arbitrage worth it"
-  searchIntent: "informational"
-
-# Tags
+    - how much can you make with airbnb
+    - is airbnb arbitrage worth it
+  searchIntent: informational
 tags:
   - airbnb arbitrage
   - rental arbitrage
@@ -30,100 +29,141 @@ tags:
   - case study
   - success story
   - short-term rental
-
-# Open Graph & Social
 image: /assets/images/blog/success-stories/chad-camp-manatee.jpg
-imageAlt: "How Chad Makes $90K/Year with One Airbnb Property in North Florida (2026 Case Study) - Legacy Investing Show"
+imageAlt: >-
+  How Chad Makes $90K/Year with One Airbnb Property in North Florida (2026 Case
+  Study) - Legacy Investing Show
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
 featured: false
-
-# Video Integration
-youtubeId: "FgoKsbAoHu8"
-
-# Multiple Schema Types for Rich Results
+youtubeId: FgoKsbAoHu8
 schema:
   - type: Article
-    headline: "How Chad Makes $90K/Year with One Airbnb Property in North Florida (2026 Case Study)"
-    datePublished: "2026-02-28T00:00:00Z"
-    dateModified: "2026-01-23T00:00:00Z"
+    headline: >-
+      How Chad Makes $90K/Year with One Airbnb Property in North Florida (2026
+      Case Study)
+    datePublished: '2026-02-28T00:00:00Z'
+    dateModified: '2026-01-23T00:00:00Z'
   - type: VideoObject
-    name: "How Chad Makes $90K/Year with One Airbnb Property in North Florida (2026 Case Study) - Full Interview"
-    thumbnailUrl: "https://img.youtube.com/vi/FgoKsbAoHu8/maxresdefault.jpg"
-    embedUrl: "https://www.youtube.com/embed/FgoKsbAoHu8"
+    name: >-
+      How Chad Makes $90K/Year with One Airbnb Property in North Florida (2026
+      Case Study) - Full Interview
+    thumbnailUrl: 'https://img.youtube.com/vi/FgoKsbAoHu8/maxresdefault.jpg'
+    embedUrl: 'https://www.youtube.com/embed/FgoKsbAoHu8'
   - type: HowTo
-    name: "How to Build an Airbnb Business Like This Success Story"
-
-# Breadcrumbs
+    name: How to Build an Airbnb Business Like This Success Story
 breadcrumbs:
-  - name: "Home"
-    url: "/"
-  - name: "Blog"
-    url: "/blog"
-  - name: "Success Stories"
-    url: "/blog/category/success-stories"
-
-# Statistics (AI-crawler accessible, renders as stat cards)
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog
+  - name: Success Stories
+    url: /blog/category/success-stories
 statistics:
-  - value: "$90,000"
-    label: "Annual Gross Revenue"
-    icon: "dollar"
-    context: "First year of operation"
-    source: "Student Interview, October 2024"
-  - value: "1"
-    label: "Property"
-    icon: "home"
-    context: "Camp Manatee, North Florida"
-  - value: "$2,500"
-    label: "Monthly Cash Flow"
-    icon: "dollar"
-    context: "Average after expenses"
-  - value: "25%"
-    label: "Down Payment"
-    icon: "star"
-    context: "Using home equity"
-  - value: "1 Year"
-    label: "Time in Business"
-    icon: "clock"
-    context: "Purchased October 2023"
-  - value: "3+ Acres"
-    label: "Property Size"
-    icon: "star"
-    context: "Adjacent to 25-acre preserve"
-
-# FAQ (FAQPage schema + accordion rendering)
+  - value: '$90,000'
+    label: Annual Gross Revenue
+    icon: dollar
+    context: First year of operation
+    source: 'Student Interview, October 2024'
+  - value: '1'
+    label: Property
+    icon: home
+    context: 'Camp Manatee, North Florida'
+  - value: '$2,500'
+    label: Monthly Cash Flow
+    icon: dollar
+    context: Average after expenses
+  - value: 25%
+    label: Down Payment
+    icon: star
+    context: Using home equity
+  - value: 1 Year
+    label: Time in Business
+    icon: clock
+    context: Purchased October 2023
+  - value: 3+ Acres
+    label: Property Size
+    icon: star
+    context: Adjacent to 25-acre preserve
 faq:
-  - question: "How much money can you make with one Airbnb property?"
-    answer: "Chad generates approximately $90,000 in gross revenue per year from a single property in North Florida, with around $2,500 per month in cash flow after all expenses. His property exceeded initial expectations of $65,000 annual revenue by nearly $25,000."
-  - question: "Is buying an Airbnb property better than rental arbitrage?"
-    answer: "Both strategies have advantages. Chad chose to buy because he wanted all four benefits of real estate: appreciation, principal paydown, tax savings, and cash flow. He put 25% down for protection, knowing he could sell with equity if things didn't work out. Arbitrage requires less capital upfront but doesn't build equity."
-  - question: "What makes a good market for short-term rentals?"
-    answer: "Chad chose North Florida near natural springs because it offers multiple demand drivers: proximity to the University of Florida (40 minutes), natural springs that stay 72 degrees year-round (the third most popular attraction in Florida after beaches and Disney), and abundant wildlife on 3+ acres adjacent to a 6,000-acre preserve."
-  - question: "How important is a realtor when buying short-term rental property?"
-    answer: "According to Chad, the realtor is \"the lynchpin\" for out-of-market investing. His realtor not only found the property (alerting him when a previous sale fell through) but also connected him with cleaners, handymen, and other essential local contacts. The relationship between realtors helped Chad secure a property that was only on the market for hours."
-  - question: "What are the four benefits of owning real estate for short-term rentals?"
-    answer: "Chad emphasizes the \"four quadrants\" of real estate investing: 1) Appreciation - properties average 6% per year (higher in South Florida), 2) Principal paydown - tenants/guests pay down your mortgage, 3) Tax savings - business deductions help offset W2 income taxes, 4) Cash flow - monthly profit after all expenses. No other investment provides all four benefits simultaneously."
-  - question: "Is short-term rental investing stressful?"
-    answer: "Chad is honest that there is stress, especially early on when you don't know if bookings will come. However, he describes it as \"addicting\" once bookings start flowing - comparing the notification rush to social media likes. The stress becomes manageable as you learn the business and build systems."
-  - question: "Why did Chad sell his long-term rental condo?"
-    answer: "Chad sold his condo for several reasons: lack of control (HOA, shared walls, shared roof), excessive wear and tear from daily tenant use requiring frequent renovations, and lower revenue compared to short-term rentals. He used the equity to fund his current short-term rental investment."
-  - question: "Can you do short-term rentals while working a full-time job?"
-    answer: "Yes. Chad has worked at the same job for 16 years while building his short-term rental business. His wife is a full-time teacher. He notes that having the rental income has actually made him better at his day job because he takes more chances and risks, knowing he has backup income if things don't work out."
-  - question: "How much should you put down on an Airbnb investment property?"
-    answer: "Chad put 25% down on his property. While this requires more capital upfront, his reasoning was risk management: if the investment doesn't work out after a couple years, he can sell with significant equity and walk away ahead. Everyone's risk tolerance is different, but a larger down payment provides a safety cushion."
-  - question: "Should I use a property management company for my Airbnb?"
-    answer: "Chad initially used a management company to get the property on the market quickly and start generating cash flow. However, he's now transitioning away from his management company to become more hands-on, learn all the moving parts, and reduce the significant chunk of income management fees take. He recommends hiring virtual assistants and training them as a more cost-effective alternative."
-
-# Table of Contents
+  - question: How much money can you make with one Airbnb property?
+    answer: >-
+      Chad generates approximately $90,000 in gross revenue per year from a
+      single property in North Florida, with around $2,500 per month in cash
+      flow after all expenses. His property exceeded initial expectations of
+      $65,000 annual revenue by nearly $25,000.
+  - question: Is buying an Airbnb property better than rental arbitrage?
+    answer: >-
+      Both strategies have advantages. Chad chose to buy because he wanted all
+      four benefits of real estate: appreciation, principal paydown, tax
+      savings, and cash flow. He put 25% down for protection, knowing he could
+      sell with equity if things didn't work out. Arbitrage requires less
+      capital upfront but doesn't build equity.
+  - question: What makes a good market for short-term rentals?
+    answer: >-
+      Chad chose North Florida near natural springs because it offers multiple
+      demand drivers: proximity to the University of Florida (40 minutes),
+      natural springs that stay 72 degrees year-round (the third most popular
+      attraction in Florida after beaches and Disney), and abundant wildlife on
+      3+ acres adjacent to a 6,000-acre preserve.
+  - question: How important is a realtor when buying short-term rental property?
+    answer: >-
+      According to Chad, the realtor is "the lynchpin" for out-of-market
+      investing. His realtor not only found the property (alerting him when a
+      previous sale fell through) but also connected him with cleaners,
+      handymen, and other essential local contacts. The relationship between
+      realtors helped Chad secure a property that was only on the market for
+      hours.
+  - question: What are the four benefits of owning real estate for short-term rentals?
+    answer: >-
+      Chad emphasizes the "four quadrants" of real estate investing: 1)
+      Appreciation - properties average 6% per year (higher in South Florida),
+      2) Principal paydown - tenants/guests pay down your mortgage, 3) Tax
+      savings - business deductions help offset W2 income taxes, 4) Cash flow -
+      monthly profit after all expenses. No other investment provides all four
+      benefits simultaneously.
+  - question: Is short-term rental investing stressful?
+    answer: >-
+      Chad is honest that there is stress, especially early on when you don't
+      know if bookings will come. However, he describes it as "addicting" once
+      bookings start flowing - comparing the notification rush to social media
+      likes. The stress becomes manageable as you learn the business and build
+      systems.
+  - question: Why did Chad sell his long-term rental condo?
+    answer: >-
+      Chad sold his condo for several reasons: lack of control (HOA, shared
+      walls, shared roof), excessive wear and tear from daily tenant use
+      requiring frequent renovations, and lower revenue compared to short-term
+      rentals. He used the equity to fund his current short-term rental
+      investment.
+  - question: Can you do short-term rentals while working a full-time job?
+    answer: >-
+      Yes. Chad has worked at the same job for 16 years while building his
+      short-term rental business. His wife is a full-time teacher. He notes that
+      having the rental income has actually made him better at his day job
+      because he takes more chances and risks, knowing he has backup income if
+      things don't work out.
+  - question: How much should you put down on an Airbnb investment property?
+    answer: >-
+      Chad put 25% down on his property. While this requires more capital
+      upfront, his reasoning was risk management: if the investment doesn't work
+      out after a couple years, he can sell with significant equity and walk
+      away ahead. Everyone's risk tolerance is different, but a larger down
+      payment provides a safety cushion.
+  - question: Should I use a property management company for my Airbnb?
+    answer: >-
+      Chad initially used a management company to get the property on the market
+      quickly and start generating cash flow. However, he's now transitioning
+      away from his management company to become more hands-on, learn all the
+      moving parts, and reduce the significant chunk of income management fees
+      take. He recommends hiring virtual assistants and training them as a more
+      cost-effective alternative.
 toc: true
 tocDepth: 3
-
-# Reading Time
-readingTime: "24 min read"
-wordCount: "4696"
+readingTime: 23 min read
+wordCount: '4557'
 ---
-
 **Chad earns approximately $90,000 per year in gross revenue from a single short-term rental property in North Florida.** After 16 years at the same job and experience with long-term rentals, he discovered that short-term rentals could be far more lucrative. Within his first year operating Camp Manatee, Chad exceeded his initial projection of $65,000 by nearly $25,000, while generating around $2,500 in monthly cash flow.
 
 This case study breaks down exactly how Chad built this short-term rental business, including his decision to purchase rather than arbitrage, the importance of finding the right realtor, and his strategies for dominating a less competitive market near Florida's natural springs.

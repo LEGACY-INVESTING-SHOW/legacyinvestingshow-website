@@ -7,7 +7,7 @@
  * - If a page has GA gtag snippet but no GTM loader, inject GTM script.
  * - If a page has GTM loader but no noscript iframe, inject noscript after <body>.
  * - Ensure viewport, robots, canonical, and verification meta exist.
- * - Normalize meta description length and demote extra <h1> tags to <h2>.
+ * - Normalize meta description whitespace and demote extra <h1> tags to <h2>.
  */
 
 const fs = require('fs');
@@ -55,20 +55,22 @@ function walkHtmlFiles(dir) {
   return files;
 }
 
-function truncateToSerpLength(text, max = 160) {
+function normalizeMetaText(text) {
   if (!text) return '';
-  const normalized = text.replace(/\s+/g, ' ').trim();
-  if (normalized.length <= max) return normalized;
-  const slice = normalized.slice(0, max - 1);
-  const boundary = slice.lastIndexOf(' ');
-  if (boundary >= 100) {
-    return `${slice.slice(0, boundary).trim()}…`;
-  }
-  return `${slice.trim()}…`;
+  return text.replace(/\s+/g, ' ').trim();
 }
 
 function getTitle(content) {
   const match = content.match(/<title>([^<]*)<\/title>/i);
+  return match ? match[1].replace(/\s+/g, ' ').trim() : '';
+}
+
+function getMetaContent(content, name, attr = 'name') {
+  const regex = new RegExp(
+    `<meta\\s+${attr}=["']${name}["']\\s+content=["']([^"']*)["'][^>]*>`,
+    'i'
+  );
+  const match = content.match(regex);
   return match ? match[1].replace(/\s+/g, ' ').trim() : '';
 }
 
@@ -82,6 +84,28 @@ function ensureTitleLength(content) {
   const fallbackPrefix = baseTitle.toLowerCase() === 'blog' ? 'Investing Blog' : baseTitle;
   const nextTitle = `${fallbackPrefix} | Legacy Investing Show`;
   return content.replace(match[0], `<title>${nextTitle}</title>`);
+}
+
+function expandTitleFromOg(content) {
+  const titleMatch = content.match(/<title>([^<]*)<\/title>/i);
+  if (!titleMatch) return content;
+
+  const currentTitle = titleMatch[1].replace(/\s+/g, ' ').trim();
+  const ogTitle = getMetaContent(content, 'og:title', 'property');
+  if (!currentTitle.includes('…') || !ogTitle || ogTitle.includes('…')) {
+    return content;
+  }
+
+  const normalizedOgTitle = /\|\s*Legacy Investing Show/i.test(ogTitle)
+    ? ogTitle
+    : `${ogTitle} | Legacy Investing Show`;
+
+  content = content.replace(titleMatch[0], `<title>${normalizedOgTitle}</title>`);
+  content = content.replace(
+    /(<meta\s+name="title"\s+content=")[^"]*(")/i,
+    `$1${normalizedOgTitle}$2`
+  );
+  return content;
 }
 
 function ensureViewportMeta(content) {
@@ -133,7 +157,7 @@ function ensureMetaDescription(content) {
   const descriptionMatch = content.match(/<meta\s+name=["']description["']\s+content=["']([^"']*)["'][^>]*>/i);
   if (!descriptionMatch) {
     const title = getTitle(content) || 'Legacy Investing Show';
-    const generated = truncateToSerpLength(`${title} insights and strategies from Legacy Investing Show.`);
+    const generated = normalizeMetaText(`${title} insights and strategies from Legacy Investing Show.`);
     return content.replace(
       /(<meta\s+name=["']viewport["'][^>]*>\n)/i,
       `$1    <meta name="description" content="${generated}">\n`
@@ -141,9 +165,23 @@ function ensureMetaDescription(content) {
   }
 
   const current = descriptionMatch[1].replace(/\s+/g, ' ').trim();
-  const normalized = truncateToSerpLength(current);
+  const normalized = normalizeMetaText(current);
   if (normalized === current) return content;
   const replacement = descriptionMatch[0].replace(descriptionMatch[1], normalized);
+  return content.replace(descriptionMatch[0], replacement);
+}
+
+function expandDescriptionFromOg(content) {
+  const descriptionMatch = content.match(/<meta\s+name=["']description["']\s+content=["']([^"']*)["'][^>]*>/i);
+  if (!descriptionMatch) return content;
+
+  const currentDescription = descriptionMatch[1].replace(/\s+/g, ' ').trim();
+  const ogDescription = getMetaContent(content, 'og:description', 'property');
+  if (!currentDescription.includes('…') || !ogDescription || ogDescription.includes('…')) {
+    return content;
+  }
+
+  const replacement = descriptionMatch[0].replace(descriptionMatch[1], ogDescription);
   return content.replace(descriptionMatch[0], replacement);
 }
 
@@ -218,10 +256,12 @@ function processFile(filePath) {
   let next = original;
   next = ensureViewportMeta(next);
   next = ensureMetaDescription(next);
+  next = expandDescriptionFromOg(next);
   next = ensureRobotsMeta(next);
   next = ensureCanonical(next, relativePath);
   next = injectVerificationMeta(next);
   next = ensureTitleLength(next);
+  next = expandTitleFromOg(next);
   next = normalizeExtraH1(next);
   next = injectGtmScript(next);
   next = injectGaScript(next);

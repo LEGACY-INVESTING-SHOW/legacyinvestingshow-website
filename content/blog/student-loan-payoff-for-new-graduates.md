@@ -133,8 +133,8 @@ relatedPosts:
     title: 'Credit Score Optimization: Improve Your Score Fast'
   - slug: debt-avalanche-method
     title: 'Debt Avalanche Method: The Fastest Way to Pay Off Debt'
-readingTime: 9 min read
-wordCount: '2025'
+readingTime: 11 min read
+wordCount: '2155'
 ---
 Most graduates do not fail because they lack discipline. They fail because they start with the wrong sequence. A strong student loan payoff for new graduates plan starts with structure: identify loan types, choose a strategy based on your first-job risk, and automate the money flow before motivation fades.
 

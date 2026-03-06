@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Normalize HTML <title> tags to a SERP-friendly maximum length.
+ * Normalize HTML <title> tags without forcing a SERP length cap.
  * Also keeps <meta name="title"> aligned when present.
  */
 
@@ -9,28 +9,16 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
-const MAX_LEN = 60;
 const BRAND_SUFFIX = ' | Legacy Investing Show';
 const SKIP_DIRS = new Set(['node_modules', '.git']);
 
-function shortenTitle(raw) {
+function normalizeTitle(raw) {
   const title = (raw || '').replace(/\s+/g, ' ').trim();
-  if (!title || title.length <= MAX_LEN) return title;
+  if (!title) return '';
+  if (!title.endsWith(BRAND_SUFFIX)) return title;
 
-  const core = title.endsWith(BRAND_SUFFIX)
-    ? title.slice(0, -BRAND_SUFFIX.length)
-    : title;
-
-  if (core.length + BRAND_SUFFIX.length <= MAX_LEN) {
-    return `${core}${BRAND_SUFFIX}`;
-  }
-
-  const budgetWithSuffix = MAX_LEN - BRAND_SUFFIX.length - 1; // ellipsis
-  if (budgetWithSuffix >= 28) {
-    return `${core.slice(0, budgetWithSuffix).trimEnd()}…${BRAND_SUFFIX}`;
-  }
-
-  return `${core.slice(0, MAX_LEN - 1).trimEnd()}…`;
+  const core = title.slice(0, -BRAND_SUFFIX.length).trimEnd();
+  return core ? `${core}${BRAND_SUFFIX}` : title;
 }
 
 function walk(dir, files = []) {
@@ -55,7 +43,7 @@ function normalizeFile(filePath) {
   if (!titleMatch) return false;
 
   const current = titleMatch[1].replace(/\s+/g, ' ').trim();
-  const next = shortenTitle(current);
+  const next = normalizeTitle(current);
   if (!next || next === current) return false;
 
   html = html.replace(

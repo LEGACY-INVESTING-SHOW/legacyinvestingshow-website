@@ -138,8 +138,8 @@ relatedPosts:
     title: >-
       401k Strategy for Recession: Complete 2026 Guide to Protecting Retirement
       Without Panic Selling
-readingTime: 9 min read
-wordCount: '2006'
+readingTime: 11 min read
+wordCount: '2120'
 ---
 If you are within 5 to 10 years of leaving full-time work, a **401k strategy for pre retirees** should be a coordination plan, not just a fund selection exercise. You are no longer optimizing for maximum theoretical return; you are optimizing for retirement income reliability, tax efficiency, and lower regret if markets drop at the wrong time. This is where most plans fail: people keep saving, but they do not redesign for the transition from accumulation to distribution.
 

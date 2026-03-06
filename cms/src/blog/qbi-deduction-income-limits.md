@@ -136,8 +136,8 @@ relatedPosts:
     title: >-
       Best Roth Conversion Strategy Calculator: Practical Guide, Break-Even
       Math, and Real Tax Examples
-readingTime: 9 min read
-wordCount: '1933'
+readingTime: 11 min read
+wordCount: '2036'
 ---
 Most pass-through owners do not lose money on tax strategy because they missed a secret loophole; they lose money because they waited until filing season. For many owners, qbi deduction income limits are the line between a meaningful deduction and a disappointing one. If your taxable income is near a threshold, small decisions on wages, retirement contributions, depreciation, and entity structure can move your deduction by thousands.
 

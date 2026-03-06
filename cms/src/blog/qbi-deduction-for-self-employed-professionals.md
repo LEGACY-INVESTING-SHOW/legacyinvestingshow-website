@@ -141,8 +141,8 @@ relatedPosts:
     title: 'Best Tax Deductions for High Income Earners: Complete 2026 Guide'
   - slug: best-tax-deductions-for-individuals
     title: 'Best Tax Deductions for Individuals: Complete 2026 Guide'
-readingTime: 9 min read
-wordCount: '2031'
+readingTime: 11 min read
+wordCount: '2140'
 ---
 If you are self-employed in the US, the qbi deduction for self employed professionals can be one of the largest legal tax reducers on your return. But it is not a simple 20 percent coupon. Your actual deduction is shaped by taxable income, business type, wage and property limits, and a final cap tied to taxable income minus net capital gains.
 

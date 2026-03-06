@@ -27,7 +27,8 @@ tags:
   - retirement
   - wealth strategy
   - financial planning
-image: /assets/images/blog/retirement-withdrawal-strategy-for-small-business-owners.jpg
+image: >-
+  /assets/images/blog/retirement-withdrawal-strategy-for-small-business-owners.jpg
 imageAlt: >-
   Retirement Withdrawal Strategy For Small Business Owners: Complete 2026 Guide
   guide
@@ -114,8 +115,8 @@ relatedPosts:
     title: '401(k) Rollover Guide: Move Your Retirement Funds the Right Way'
   - slug: 401k-strategy-vs-taxable-brokerage
     title: '401k strategy vs taxable brokerage: Which Strategy Works Better in 2026?'
-readingTime: 12 min read
-wordCount: '2571'
+readingTime: 11 min read
+wordCount: '2107'
 ---
 # Dry Run
 

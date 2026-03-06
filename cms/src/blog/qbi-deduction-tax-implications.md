@@ -143,8 +143,8 @@ relatedPosts:
     title: 'Best Tax Deductions for High Income Earners: Complete 2026 Guide'
   - slug: best-tax-deductions-for-individuals
     title: 'Best Tax Deductions for Individuals: Complete 2026 Guide'
-readingTime: 10 min read
-wordCount: '2247'
+readingTime: 12 min read
+wordCount: '2354'
 ---
 If you run a pass-through business, qbi deduction tax implications can materially change your federal tax bill, cash flow, and entity strategy for 2026. The deduction may be worth up to 20% of qualified business income, but the real-world outcome depends on taxable income, business type, wages paid, and property basis. Small planning errors can shrink the deduction to near zero.
 

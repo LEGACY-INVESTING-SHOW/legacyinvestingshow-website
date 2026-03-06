@@ -137,8 +137,8 @@ relatedPosts:
       Portfolio You Can Stick With
   - slug: asset-allocation-strategies
     title: 'Asset Allocation Strategies by Age: How to Balance Your Portfolio'
-readingTime: 9 min read
-wordCount: '2089'
+readingTime: 11 min read
+wordCount: '2186'
 ---
 Asset allocation for busy professionals is often the highest-leverage decision in a portfolio because it determines how much risk you take, how steady your compounding feels, and whether you can stay invested when markets get rough. If your calendar is full, the goal is not to monitor markets daily. The goal is to choose a durable stock-bond-cash mix, automate contributions, and rebalance on a schedule you can actually keep. If you want a primer first, start with [asset allocation for beginners](/blog/asset-allocation-for-beginners). If you want model mixes, review [asset allocation strategies](/blog/asset-allocation-strategies).
 

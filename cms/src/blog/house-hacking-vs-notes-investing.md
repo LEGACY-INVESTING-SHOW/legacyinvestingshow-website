@@ -138,8 +138,8 @@ relatedPosts:
       Investors
   - slug: airbnb-cash-flow-vs-notes-investing
     title: 'Airbnb Cash Flow vs Notes Investing: Which Strategy Works Better in 2026?'
-readingTime: 9 min read
-wordCount: '1901'
+readingTime: 11 min read
+wordCount: '2068'
 ---
 If you're deciding between house hacking vs notes investing in 2026, you are really choosing between an active, leveraged real-estate strategy and a lender-style cash-flow strategy. Both can work. The better choice depends on your capital, your tolerance for operational headaches, and how stable you need monthly income to be.
 

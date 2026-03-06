@@ -95,14 +95,26 @@ function faqSchema(tool) {
 }
 
 function softwareApplicationSchema(tool, isoDate) {
+  const featureList = ['Interactive calculator', 'Worked execution notes', 'Documentation checklist', 'FAQ'];
+  const sectionTitles = (tool.sections || []).map((section) => section.title).filter(Boolean);
+
   return {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
     name: tool.title,
     description: tool.description,
     applicationCategory: 'FinanceApplication',
+    applicationSubCategory: tool.badge || 'Tax and wealth planning tool',
     operatingSystem: 'Web',
     isAccessibleForFree: true,
+    browserRequirements: 'Requires JavaScript',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+    },
+    featureList: [...featureList, ...sectionTitles].slice(0, 6),
+    keywords: [tool.title, tool.badge, ...(tool.related || []).map((item) => item.label)].filter(Boolean).join(', '),
     datePublished: isoDate,
     dateModified: isoDate,
     url: `https://www.legacyinvestingshow.com/tools/${tool.slug}`,
@@ -113,6 +125,68 @@ function softwareApplicationSchema(tool, isoDate) {
     author: {
       '@type': 'Person',
       name: 'Preston Seo',
+    },
+  };
+}
+
+function toolKeywords(tool) {
+  const values = [
+    tool.title,
+    tool.badge,
+    tool.description,
+    ...(tool.sections || []).map((section) => section.title),
+    ...(tool.related || []).map((item) => item.label),
+  ]
+    .filter(Boolean)
+    .flatMap((value) => String(value).split(/[,|]/))
+    .map((value) => value.trim())
+    .filter(Boolean);
+
+  return [...new Set(values)].slice(0, 12).join(', ');
+}
+
+function breadcrumbSchema(tool) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://www.legacyinvestingshow.com/',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Tools',
+        item: 'https://www.legacyinvestingshow.com/tools/',
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: tool.title,
+        item: `https://www.legacyinvestingshow.com/tools/${tool.slug}`,
+      },
+    ],
+  };
+}
+
+function toolIndexSchema(tools, isoDate) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'Free Tools (Execution-First)',
+    description: 'Free calculators and planning tools for tax, retirement, and wealth-building decisions.',
+    datePublished: isoDate,
+    mainEntity: {
+      '@type': 'ItemList',
+      itemListElement: tools.map((tool, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        url: `https://www.legacyinvestingshow.com/tools/${tool.slug}`,
+        name: tool.title,
+      })),
     },
   };
 }
@@ -2535,6 +2609,7 @@ function renderToolPage(tool) {
 
     <title>${esc(buildSEOTitle(tool.title))}</title>
     <meta name="description" content="${esc(tool.description)}">
+    <meta name="keywords" content="${esc(toolKeywords(tool))}">
     <meta name="robots" content="index, follow">
 ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verification" content="${code}">`).join('\n')}
     <link rel="canonical" href="${canonical}">
@@ -2553,6 +2628,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
     <link rel="stylesheet" href="/assets/css/styles.css">
 
     <script type="application/ld+json">${JSON.stringify(softwareApplicationSchema(tool, isoDate))}</script>
+    <script type="application/ld+json">${JSON.stringify(breadcrumbSchema(tool))}</script>
     <script type="application/ld+json">${JSON.stringify(faqSchema(tool))}</script>
 
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_CONTAINER_ID}');</script>
@@ -2566,8 +2642,20 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
 
     <style>
         .tools-hero {
-            padding: 8rem 0 3.5rem;
-            background: linear-gradient(135deg, #f8fafc 0%, #e5e7eb 100%);
+            padding: 8rem 0 3rem;
+            background:
+              radial-gradient(circle at top right, rgba(201, 169, 97, 0.18), transparent 36%),
+              linear-gradient(180deg, #faf7f2 0%, #ffffff 100%);
+        }
+        .tools-hero__grid {
+            display: grid;
+            gap: 1.25rem;
+            align-items: start;
+        }
+        @media (min-width: 1024px) {
+            .tools-hero__grid {
+                grid-template-columns: minmax(0, 1.45fr) minmax(300px, 0.8fr);
+            }
         }
         .tools-badge {
             display: inline-flex;
@@ -2577,32 +2665,93 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
             background: #111827;
             color: white;
             font-size: 0.75rem;
-            font-weight: 600;
+            font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 0.06em;
+            letter-spacing: 0.08em;
             border-radius: 999px;
             margin-bottom: 1rem;
         }
         .tools-title {
-            font-size: 2.125rem;
+            font-size: clamp(2.25rem, 5vw, 4.3rem);
             font-weight: 700;
-            line-height: 1.15;
+            line-height: 0.98;
+            letter-spacing: -0.04em;
             color: #111827;
-            margin-bottom: 1rem;
-        }
-        @media (min-width: 768px) {
-            .tools-title { font-size: 2.6rem; }
+            margin-bottom: 0.95rem;
+            max-width: 12ch;
         }
         .tools-subtitle {
-            max-width: 52rem;
-            color: #4b5563;
-            font-size: 1.1rem;
-            line-height: 1.7;
+            max-width: 46rem;
+            color: #475569;
+            font-size: 1.08rem;
+            line-height: 1.78;
+        }
+        .tools-hero__panel {
+            padding: 1.3rem 1.35rem 1.4rem;
+            border-radius: 1.2rem;
+            background: linear-gradient(160deg, #182234, #0f172a);
+            color: white;
+            box-shadow: 0 24px 56px rgba(15, 23, 42, 0.18);
+        }
+        .tools-hero__panel-eyebrow {
+            margin: 0 0 0.55rem;
+            color: rgba(217, 196, 138, 0.92);
+            font-size: 0.74rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+        .tools-hero__panel-title {
+            margin: 0 0 0.8rem;
+            color: white;
+            font-size: 1.55rem;
+            line-height: 1.1;
+        }
+        .tools-hero__panel-text {
+            margin: 0;
+            color: #cbd5e1;
+            font-size: 0.96rem;
+            line-height: 1.72;
+        }
+        .tools-summary-grid {
+            display: grid;
+            gap: 0.95rem;
+            margin-top: 1.35rem;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        }
+        .tools-summary-card {
+            padding: 1rem 1.05rem;
+            border-radius: 1rem;
+            background: rgba(255, 255, 255, 0.92);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 16px 36px rgba(15, 23, 42, 0.05);
+        }
+        .tools-summary-card__eyebrow {
+            margin: 0 0 0.45rem;
+            color: #b8933f;
+            font-size: 0.74rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+        .tools-summary-card p {
+            margin: 0;
+            color: #334155;
+            font-size: 0.95rem;
+            line-height: 1.68;
         }
 
-        .content-section { padding: 3.25rem 0; }
+        .content-section { padding: 0 0 3.25rem; }
         .content-section--alt { background: #f9fafb; }
-        .prose-content { color: #374151; line-height: 1.75; }
+        .prose-content {
+            color: #374151;
+            line-height: 1.75;
+            padding: 1.45rem;
+            border-radius: 1.5rem;
+            background: rgba(255, 255, 255, 0.96);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+        }
         .prose-content h2 { color: #111827; font-size: 1.6rem; line-height: 1.3; margin-bottom: 1rem; }
         .prose-content p { margin-bottom: 1rem; }
         .prose-content ul { padding-left: 1.2rem; margin: 0.5rem 0 1rem; }
@@ -2679,14 +2828,16 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
 
         .tool-card {
             background: white;
-            border: 1px solid #e5e7eb;
-            border-radius: 1rem;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            border-radius: 1.25rem;
             overflow: hidden;
             margin: 1.25rem 0 2rem;
+            box-shadow: 0 22px 54px rgba(15, 23, 42, 0.08);
         }
         .tool-card__header {
-            padding: 1.25rem 1.25rem 0.75rem;
+            padding: 1.35rem 1.25rem 0.85rem;
             border-bottom: 1px solid #f3f4f6;
+            background: linear-gradient(180deg, rgba(250, 247, 242, 0.7), rgba(255, 255, 255, 0.94));
         }
         .tool-card__title {
             margin: 0;
@@ -2957,11 +3108,13 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
         .log-remove { white-space: nowrap; }
 
         @media (max-width: 767px) {
-            .tools-hero { padding: 6.75rem 0 2.4rem; }
-            .tools-title { font-size: 1.65rem; }
+            .tools-hero { padding: 6.75rem 0 2.35rem; }
+            .tools-title { font-size: 1.75rem; max-width: none; }
             .tools-subtitle { font-size: 1rem; line-height: 1.6; }
-            .content-section { padding: 2.2rem 0; }
+            .content-section { padding: 0 0 2.4rem; }
+            .prose-content { padding: 1.15rem; }
             .prose-content h2 { font-size: 1.35rem; }
+            .tools-summary-grid { grid-template-columns: 1fr; }
             .jumpbar-wrap { top: 4.05rem; margin: 1rem 0 1.25rem; }
             .jumpbar { padding: 0.62rem 0.7rem; }
             .tool-grid { padding: 1rem; }
@@ -3034,15 +3187,39 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
 
         <section class="tools-hero">
             <div class="container-custom">
-                <span class="tools-badge">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 6v6l4 2"/>
-                        <path d="M21 12a9 9 0 1 1-9-9 9 9 0 0 1 9 9z"/>
-                    </svg>
-                    ${esc(tool.badge || 'Free Tool')}
-                </span>
-                <h1 class="tools-title">${esc(tool.title)}</h1>
-                <p class="tools-subtitle">${esc(tool.description)}</p>
+                <div class="tools-hero__grid">
+                    <div>
+                        <span class="tools-badge">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 6v6l4 2"/>
+                                <path d="M21 12a9 9 0 1 1-9-9 9 9 0 0 1 9 9z"/>
+                            </svg>
+                            ${esc(tool.badge || 'Free Tool')}
+                        </span>
+                        <h1 class="tools-title">${esc(tool.title)}</h1>
+                        <p class="tools-subtitle">${esc(tool.description)}</p>
+                    </div>
+                    <aside class="tools-hero__panel">
+                        <p class="tools-hero__panel-eyebrow">What You Get</p>
+                        <h2 class="tools-hero__panel-title">A planning tool, not a vibes calculator.</h2>
+                        <p class="tools-hero__panel-text">Use this to get conservative numbers, clearer guardrails, and an advisor-ready packet you can actually act on.</p>
+                    </aside>
+                </div>
+
+                <div class="tools-summary-grid">
+                    <article class="tools-summary-card">
+                        <p class="tools-summary-card__eyebrow">Conservative Math</p>
+                        <p>The tool is built to slow you down just enough to kill bad assumptions before they cost real money.</p>
+                    </article>
+                    <article class="tools-summary-card">
+                        <p class="tools-summary-card__eyebrow">Execution Notes</p>
+                        <p>You get process notes, not just outputs, so the answer still works when real life gets messy.</p>
+                    </article>
+                    <article class="tools-summary-card">
+                        <p class="tools-summary-card__eyebrow">SEO Benefit</p>
+                        <p>Each tool page is a high-intent landing page with interactive utility, internal links, FAQs, and SoftwareApplication markup.</p>
+                    </article>
+                </div>
             </div>
         </section>
 
@@ -3120,17 +3297,82 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
 
     <script defer src="/assets/js/main.js"></script>
     <script>
+        const toolMeta = {
+            id: ${JSON.stringify(tool.id || '')},
+            slug: ${JSON.stringify(tool.slug || '')},
+            title: ${JSON.stringify(tool.title || '')}
+        };
+
+        function emitToolEvent(action, detail = {}) {
+            const payload = {
+                tool_id: toolMeta.id,
+                tool_slug: toolMeta.slug,
+                tool_title: toolMeta.title,
+                tool_action: action,
+                page_type: 'tool',
+                ...detail
+            };
+
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                event: 'tool_interaction',
+                ...payload
+            });
+
+            if (typeof gtag === 'function') {
+                gtag('event', action, payload);
+            }
+        }
+
         document.querySelectorAll('.faq-question').forEach((button) => {
             button.addEventListener('click', () => {
                 const expanded = button.getAttribute('aria-expanded') === 'true';
                 button.setAttribute('aria-expanded', String(!expanded));
                 button.nextElementSibling.classList.toggle('faq-answer--open');
+                if (!expanded) {
+                    emitToolEvent('tool_faq_open', {
+                        faq_question: button.textContent.trim().slice(0, 120)
+                    });
+                }
             });
         });
 
         document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
             document.getElementById('mobile-menu').classList.toggle('hidden');
         });
+
+        document.querySelectorAll('#calculator button').forEach((button) => {
+            button.addEventListener('click', () => {
+                const label = button.textContent.trim().replace(/\s+/g, ' ');
+                let action = 'tool_button_click';
+
+                if ((button.id || '').endsWith('-calc')) action = 'tool_calculate';
+                if ((button.id || '').endsWith('-csv')) action = 'tool_export_csv';
+                if ((button.id || '').endsWith('-add')) action = 'tool_add_log_row';
+
+                emitToolEvent(action, {
+                    button_label: label.slice(0, 120)
+                });
+            });
+        });
+
+        document.querySelectorAll('.jumpbar__link').forEach((link) => {
+            link.addEventListener('click', () => {
+                emitToolEvent('tool_jump_nav_click', {
+                    jump_target: link.getAttribute('href') || ''
+                });
+            });
+        });
+
+        document.querySelectorAll('.related-card__cta').forEach((link) => {
+            link.addEventListener('click', () => {
+                emitToolEvent('tool_related_guide_click', {
+                    destination: link.getAttribute('href') || ''
+                });
+            });
+        });
+
+        emitToolEvent('tool_page_view');
     </script>
 </body>
 </html>`;
@@ -3174,12 +3416,14 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
     <link rel="icon" type="image/png" href="/assets/images/logo.png">
     <link rel="stylesheet" href="/assets/css/styles.css">
 
+    <script type="application/ld+json">${JSON.stringify(toolIndexSchema(tools, isoDate))}</script>
     <script type="application/ld+json">${JSON.stringify({
       '@context': 'https://schema.org',
-      '@type': 'CollectionPage',
-      name: 'Free Tools (Execution-First)',
-      description: 'Free tools and calculators for implementing tax and wealth strategies with clean documentation.',
-      datePublished: isoDate,
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.legacyinvestingshow.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Tools', item: canonical }
+      ]
     })}</script>
 
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_CONTAINER_ID}');</script>
@@ -3193,22 +3437,84 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
 
     <style>
       .hero {
-        padding: 8rem 0 3.5rem;
-        background: linear-gradient(135deg, #f8fafc 0%, #e5e7eb 100%);
+        padding: 8rem 0 3.25rem;
+        background:
+          radial-gradient(circle at top right, rgba(201, 169, 97, 0.18), transparent 38%),
+          linear-gradient(180deg, #faf7f2 0%, #ffffff 100%);
+      }
+      .hero-grid {
+        display: grid;
+        gap: 1.25rem;
+        align-items: start;
+      }
+      @media (min-width: 1024px) {
+        .hero-grid {
+          grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.85fr);
+        }
+      }
+      .hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.55rem;
+        padding: 0.45rem 0.85rem;
+        border-radius: 999px;
+        background: rgba(15, 23, 42, 0.04);
+        border: 1px solid rgba(201, 169, 97, 0.18);
+        color: #a88b4a;
+        font-size: 0.74rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        margin-bottom: 0.95rem;
+      }
+      .hero-badge::before {
+        content: "";
+        width: 0.45rem;
+        height: 0.45rem;
+        border-radius: 999px;
+        background: #c9a961;
       }
       .hero-title {
-        font-size: 2.2rem;
+        font-size: clamp(2.35rem, 5vw, 4.2rem);
         font-weight: 800;
         color: #111827;
-        line-height: 1.1;
+        line-height: 0.98;
+        letter-spacing: -0.04em;
         margin-bottom: 0.9rem;
+        max-width: 12ch;
       }
-      @media (min-width: 768px) { .hero-title { font-size: 2.8rem; } }
       .hero-subtitle {
-        max-width: 52rem;
-        color: #4b5563;
-        font-size: 1.1rem;
-        line-height: 1.7;
+        max-width: 48rem;
+        color: #475569;
+        font-size: 1.06rem;
+        line-height: 1.78;
+      }
+      .hero-panel {
+        padding: 1.25rem;
+        border-radius: 1.25rem;
+        background: linear-gradient(160deg, #182234, #0f172a);
+        color: white;
+        box-shadow: 0 22px 54px rgba(15, 23, 42, 0.18);
+      }
+      .hero-panel__stat {
+        padding: 0.85rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .hero-panel__stat:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+      .hero-panel__stat strong {
+        display: block;
+        font-size: 1.7rem;
+        line-height: 1;
+      }
+      .hero-panel__stat span {
+        display: block;
+        margin-top: 0.35rem;
+        color: #cbd5e1;
+        font-size: 0.92rem;
+        line-height: 1.6;
       }
       .section { padding: 3.25rem 0; }
       .grid {
@@ -3217,10 +3523,11 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       }
       .library-card {
-        background: white;
-        border: 1px solid #e5e7eb;
-        border-radius: 0.9rem;
+        background: rgba(255, 255, 255, 0.95);
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        border-radius: 1.15rem;
         padding: 1.1rem 1.1rem 1rem;
+        box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
       }
       .library-card__badge {
         display: inline-flex;
@@ -3263,7 +3570,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
       .breadcrumb span.sep { margin: 0 0.5rem; color: #9ca3af; }
       @media (max-width: 767px) {
         .hero { padding: 6.75rem 0 2.4rem; }
-        .hero-title { font-size: 1.75rem; }
+        .hero-title { font-size: 1.75rem; max-width: none; }
         .hero-subtitle { font-size: 1rem; line-height: 1.6; }
         .section { padding: 2.2rem 0; }
       }
@@ -3317,8 +3624,27 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
 
       <section class="hero">
         <div class="container-custom">
-          <h1 class="hero-title">Free Tools (Execution-First)</h1>
-          <p class="hero-subtitle">These tools are built for implementation, not vibes. Conservative math, clean documentation, and checklists your advisor can sign off on.</p>
+          <div class="hero-grid">
+            <div>
+              <span class="hero-badge">Free Tools</span>
+              <h1 class="hero-title">Execution-First Calculators for High-Intent SEO</h1>
+              <p class="hero-subtitle">These pages are not filler. They give searchers a real tool, conservative planning logic, and the documentation standards that make the result more useful than a generic calculator.</p>
+            </div>
+            <aside class="hero-panel">
+              <div class="hero-panel__stat">
+                <strong>${tools.length}</strong>
+                <span>Interactive planning tools now available locally and rebuildable from source.</span>
+              </div>
+              <div class="hero-panel__stat">
+                <strong>3</strong>
+                <span>Layers on every page: calculator UI, execution notes, and FAQ/internal-link SEO surface area.</span>
+              </div>
+              <div class="hero-panel__stat">
+                <strong>1</strong>
+                <span>Job for every tool page: rank for a high-intent query and convert that visit into trust.</span>
+              </div>
+            </aside>
+          </div>
         </div>
       </section>
 
@@ -3352,6 +3678,41 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
     <script>
         document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
             document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            event: 'tool_hub_view',
+            page_type: 'tool_hub',
+            tool_count: ${tools.length}
+        });
+
+        if (typeof gtag === 'function') {
+            gtag('event', 'tool_hub_view', {
+                page_type: 'tool_hub',
+                tool_count: ${tools.length}
+            });
+        }
+
+        document.querySelectorAll('.library-card a').forEach((link) => {
+            link.addEventListener('click', () => {
+                const href = link.getAttribute('href') || '';
+                const title = link.closest('.library-card')?.querySelector('h3')?.textContent?.trim() || '';
+                window.dataLayer.push({
+                    event: 'tool_hub_click',
+                    page_type: 'tool_hub',
+                    destination: href,
+                    tool_title: title
+                });
+
+                if (typeof gtag === 'function') {
+                    gtag('event', 'tool_hub_click', {
+                        page_type: 'tool_hub',
+                        destination: href,
+                        tool_title: title
+                    });
+                }
+            });
         });
     </script>
 </body>

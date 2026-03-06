@@ -134,8 +134,8 @@ relatedPosts:
     title: '1031 exchange vs standard deduction: Which Strategy Works Better in 2026?'
   - slug: best-tax-deductions-2025
     title: 'Best Tax Deductions 2025: Complete 2026 Guide to Lower Your Tax Bill'
-readingTime: 9 min read
-wordCount: '1921'
+readingTime: 11 min read
+wordCount: '2025'
 ---
 If you are searching for the **capital gains tax best strategy**, the highest-value move is to treat taxes as part of portfolio design, not a year-end cleanup task. Most investors focus on one tactic, like waiting a year or harvesting losses, but real tax efficiency usually comes from combining four levers: holding period, gain/loss netting, income timing, and account location.
 

@@ -175,8 +175,8 @@ relatedPosts:
     title: 'Credit Score Optimization: Improve Your Score Fast'
   - slug: debt-avalanche-method
     title: 'Debt Avalanche Method: The Fastest Way to Pay Off Debt'
-readingTime: 9 min read
-wordCount: '2041'
+readingTime: 11 min read
+wordCount: '2183'
 ---
 # Heloc Strategy To Pay Off Mortgage Calculator: Start With Math, Not Marketing
 

@@ -144,8 +144,8 @@ relatedPosts:
     title: >-
       Best Roth Conversion Strategy Calculator: Practical Guide, Break-Even
       Math, and Real Tax Examples
-readingTime: 10 min read
-wordCount: '2237'
+readingTime: 13 min read
+wordCount: '2409'
 ---
 If you are trying to figure out how to calculate qbi deduction 2024, the fastest way to make a good decision is to treat it as a sequence of tests, not a single percentage. Section 199A can be valuable, but the final number depends on taxable income, business type, SSTB status, W-2 wages, qualified property basis, and net capital gain.
 

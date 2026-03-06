@@ -136,8 +136,8 @@ relatedPosts:
     title: >-
       401k Strategy for Beginners: Complete 2026 Guide to Matching, Taxes, and
       Contribution Decisions
-readingTime: 10 min read
-wordCount: '2192'
+readingTime: 12 min read
+wordCount: '2266'
 ---
 If you are within 5 to 15 years of retirement, your ira strategy for pre retirees should optimize three outcomes at once: lower lifetime taxes, reliable cash flow, and flexibility when markets or tax rules change. Most people over-focus on portfolio return and under-focus on account structure. That can create avoidable tax drag right when income planning matters most.
 

@@ -138,8 +138,8 @@ relatedPosts:
     title: >-
       Asset Allocation Tax Implications: Complete 2026 Guide for After-Tax
       Portfolio Returns
-readingTime: 9 min read
-wordCount: '1980'
+readingTime: 11 min read
+wordCount: '2042'
 ---
 If you are searching for the best asset allocation for roth ira, you are really deciding how to balance growth, volatility, and taxes across your entire household portfolio. A Roth IRA is limited space, so each dollar you place there can have outsized long-term impact.
 

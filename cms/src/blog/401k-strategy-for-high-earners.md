@@ -133,8 +133,8 @@ relatedPosts:
     title: >-
       401k Strategy for Beginners: Complete 2026 Guide to Matching, Taxes, and
       Contribution Decisions
-readingTime: 10 min read
-wordCount: '2262'
+readingTime: 12 min read
+wordCount: '2352'
 ---
 If you are serious about retirement outcomes, a 401k strategy for high earners has to do more than max one payroll line and hope. You need a repeatable system that balances current-year tax reduction, future tax diversification, and plan-level constraints like ADP/ACP testing.
 

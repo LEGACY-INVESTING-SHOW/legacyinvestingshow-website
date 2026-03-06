@@ -143,8 +143,8 @@ relatedPosts:
     title: >-
       Asset Allocation Tax Implications: Complete 2026 Guide for After-Tax
       Portfolio Returns
-readingTime: 10 min read
-wordCount: '2101'
+readingTime: 11 min read
+wordCount: '2180'
 ---
 Tax loss harvesting for parents is one of the rare strategies that can reduce this year’s tax bill without requiring you to save more cash. That matters when your budget is already split between childcare, housing, college funding, debt payoff, and retirement.
 

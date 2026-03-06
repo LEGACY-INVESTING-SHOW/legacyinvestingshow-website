@@ -138,8 +138,8 @@ relatedPosts:
     title: >-
       Best Roth Conversion Strategy Calculator: Practical Guide, Break-Even
       Math, and Real Tax Examples
-readingTime: 10 min read
-wordCount: '2248'
+readingTime: 12 min read
+wordCount: '2328'
 ---
 If you are trying to understand how roth ira is taxed, focus on three moments: when money goes in, while it grows, and when it comes out. Most confusion happens when people mix up contribution rules, 5-year clocks, and conversion rules. That confusion can cost real money through missed contributions, avoidable taxes, or penalties.
 

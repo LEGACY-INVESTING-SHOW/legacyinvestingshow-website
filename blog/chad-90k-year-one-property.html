@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Primary Meta Tags -->
-    <title>How Chad Makes $90K/Year with One A… | Legacy Investing Show</title>
-    <meta name="title" content="How Chad Makes $90K/Year with One A… | Legacy Investing Show">
+    <title>How Chad Makes $90K/Year with One Airbnb Property in North Florida (2026 Case Study) | Legacy Investing Show</title>
+    <meta name="title" content="How Chad Makes $90K/Year with One Airbnb Property in North Florida (2026 Case Study) | Legacy Investing Show">
     <meta name="description" content="Chad went from long-term rentals to $90,000/year gross revenue with a single short-term rental property near Florida">
     <meta name="keywords" content="airbnb success story, short-term rental business, florida airbnb, how much can you make with airbnb, is airbnb arbitrage worth it">
     <meta name="author" content="Preston Seo">
@@ -46,137 +46,572 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    
+
     <!-- Preload hero image for LCP -->
-    <link rel="preload" as="image" href="../assets/images/blog/success-stories/chad-camp-manatee.jpg" type="image/webp" fetchpriority="high">
+    
     <link rel="preload" as="image" href="../assets/images/blog/success-stories/chad-camp-manatee.jpg" fetchpriority="high">
+    
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../assets/css/styles.css">
     
-    <!-- Content Styling Fixes -->
     <style>
-        /* Base typography */
-        .minimal-content {
-            font-size: 1.125rem;
-            line-height: 1.8;
-            color: #374151;
+        .minimal-article {
+            margin: 0 auto;
+            max-width: 1280px;
+            padding: 124px 24px 88px;
         }
-        
-        /* Paragraphs */
-        .minimal-content p {
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
+
+        .article-shell {
+            display: grid;
+            gap: 2rem;
+            align-items: start;
         }
-        
-        /* Headings */
-        .minimal-content h2 {
-            margin-top: 3.5rem;
-            margin-bottom: 1.5rem;
-            font-size: 2.25rem;
+
+        .article-main {
+            min-width: 0;
+        }
+
+        .article-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.55rem;
+            margin-bottom: 1rem;
+            padding: 0.45rem 0.85rem;
+            border-radius: 999px;
+            background: rgba(15, 23, 42, 0.04);
+            border: 1px solid rgba(201, 169, 97, 0.18);
+            color: var(--gold-dark);
+            font-size: 0.75rem;
             font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .article-eyebrow::before {
+            content: "";
+            width: 0.45rem;
+            height: 0.45rem;
+            border-radius: 999px;
+            background: var(--gold);
+            box-shadow: 0 0 0 6px rgba(201, 169, 97, 0.12);
+        }
+
+        .minimal-article-header {
+            margin-bottom: 1.8rem;
+            text-align: left;
+        }
+
+        .minimal-article-meta {
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .minimal-article-title {
+            max-width: 14ch;
+            margin-bottom: 1rem;
+            font-size: clamp(2.4rem, 5vw, 4.5rem);
+            line-height: 0.98;
+            letter-spacing: -0.04em;
+        }
+
+        .minimal-article-description {
+            max-width: 46rem;
+            margin: 0 0 1.15rem;
+            color: var(--text-secondary);
+            font-size: 1.08rem;
+            line-height: 1.8;
+        }
+
+        .minimal-article-author {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.85rem;
+            padding: 0.55rem 0.8rem 0.55rem 0.55rem;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 14px 34px rgba(15, 23, 42, 0.06);
+        }
+
+        .author-avatar {
+            width: 2.6rem;
+            height: 2.6rem;
+            border-radius: 999px;
+            object-fit: cover;
+            border: 2px solid rgba(201, 169, 97, 0.24);
+        }
+
+        .minimal-featured-image {
+            margin-bottom: 1.8rem;
+            border-radius: 28px;
+            overflow: hidden;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 28px 80px rgba(15, 23, 42, 0.12);
+        }
+
+        .article-intro-card {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+            margin-bottom: 1.8rem;
+            padding: 1.6rem 1.75rem;
+            border-radius: 28px;
+            background:
+                radial-gradient(circle at top right, rgba(201, 169, 97, 0.18), transparent 38%),
+                linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(250, 247, 242, 0.92));
+            border: 1px solid rgba(201, 169, 97, 0.22);
+            box-shadow: 0 20px 48px rgba(15, 23, 42, 0.08);
+        }
+
+        .article-intro-card__eyebrow {
+            margin: 0 0 0.6rem;
+            color: var(--gold-dark);
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .article-intro-card__title {
+            margin: 0;
+            color: var(--navy);
+            font-size: clamp(1.55rem, 2.5vw, 2.15rem);
+            line-height: 1.08;
+        }
+
+        .article-intro-card__copy {
+            margin: 0;
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.78;
+        }
+
+        .article-intro-card__list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 0.8rem;
+        }
+
+        .article-intro-card__list li {
+            position: relative;
+            margin: 0;
+            padding-left: 1.35rem;
+            color: var(--text-primary);
+            font-size: 0.96rem;
+            line-height: 1.65;
+        }
+
+        .article-intro-card__list li::before {
+            content: "";
+            position: absolute;
+            top: 0.58rem;
+            left: 0;
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 999px;
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+        }
+
+        .article-rail {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .statistics-section {
+            margin: 0;
+        }
+
+        .statistics-grid {
+            display: grid;
+            gap: 0.9rem;
+            grid-template-columns: 1fr;
+        }
+
+        .stat-card {
+            padding: 1.15rem 1.2rem;
+            border-radius: 24px;
+            background: rgba(255, 255, 255, 0.92);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+            text-align: left;
+        }
+
+        .stat-icon-wrapper {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.7rem;
+            height: 2.7rem;
+            margin-bottom: 0.95rem;
+            border-radius: 0.95rem;
+            background: rgba(201, 169, 97, 0.12);
+            color: var(--gold-dark);
+        }
+
+        .stat-icon {
+            width: 1.3rem;
+            height: 1.3rem;
+        }
+
+        .stat-value {
+            color: var(--navy);
+            font-family: "DM Serif Display", Georgia, serif;
+            font-size: 2rem;
+            line-height: 1;
+            letter-spacing: -0.04em;
+        }
+
+        .stat-label {
+            margin-top: 0.45rem;
+            color: var(--text-primary);
+            font-size: 0.9rem;
+            font-weight: 700;
+            line-height: 1.4;
+            text-transform: none;
+        }
+
+        .stat-context,
+        .stat-source {
+            display: block;
+            margin-top: 0.65rem;
+            color: var(--text-muted);
+            font-size: 0.84rem;
+            line-height: 1.6;
+        }
+
+        .article-rail-card {
+            padding: 1.25rem 1.25rem 1.3rem;
+            border-radius: 24px;
+            background: linear-gradient(160deg, #182234, #0f172a);
+            color: white;
+            box-shadow: 0 22px 55px rgba(15, 23, 42, 0.18);
+        }
+
+        .article-rail-card--muted {
+            background: rgba(255, 255, 255, 0.9);
+            color: var(--text-secondary);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+        }
+
+        .article-rail-card__eyebrow {
+            margin: 0 0 0.55rem;
+            color: rgba(217, 196, 138, 0.92);
+            font-size: 0.74rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .article-rail-card--muted .article-rail-card__eyebrow {
+            color: var(--gold-dark);
+        }
+
+        .article-rail-card__title {
+            margin: 0 0 0.75rem;
+            color: inherit;
+            font-size: 1.35rem;
+            line-height: 1.12;
+        }
+
+        .article-rail-card__body {
+            margin: 0;
+            color: inherit;
+            font-size: 0.95rem;
+            line-height: 1.72;
+        }
+
+        .minimal-content {
+            padding: clamp(1.35rem, 2vw, 2.6rem);
+            border-radius: 32px;
+            background: rgba(255, 255, 255, 0.96);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 28px 72px rgba(15, 23, 42, 0.08);
+            color: #374151;
+            font-size: 1.07rem;
+            line-height: 1.8;
+        }
+
+        .minimal-content p {
+            margin-bottom: 1.45rem;
+            line-height: 1.82;
+        }
+
+        .minimal-content h2 {
+            margin-top: 3rem;
+            margin-bottom: 1.2rem;
             color: #111827;
-            line-height: 1.2;
+            font-size: clamp(1.9rem, 2.8vw, 2.6rem);
+            font-weight: 400;
+            line-height: 1.08;
         }
-        
+
         .minimal-content h3 {
-            margin-top: 2.5rem;
-            margin-bottom: 1.25rem;
-            font-size: 1.5rem;
-            font-weight: 600;
+            margin-top: 2.2rem;
+            margin-bottom: 0.95rem;
+            font-size: 1.35rem;
+            font-weight: 700;
             color: #1f2937;
+            line-height: 1.3;
         }
-        
-        /* Tables */
+
         .minimal-content table {
             width: 100%;
-            margin: 2.5rem 0;
-            border-collapse: collapse;
-            font-size: 1rem;
+            margin: 2.2rem 0;
+            border-collapse: separate;
+            border-spacing: 0;
+            font-size: 0.97rem;
             background: white;
-            border-radius: 8px;
+            border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
         }
-        
+
         .minimal-content thead {
-            background: #0F172A;
+            background: #0f172a;
             color: white;
         }
-        
+
         .minimal-content th {
-            padding: 1rem 1.25rem;
+            padding: 1rem 1.1rem;
             text-align: left;
-            font-weight: 600;
-            font-size: 0.95rem;
+            font-weight: 700;
+            font-size: 0.77rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
         }
-        
+
         .minimal-content td {
-            padding: 1rem 1.25rem;
+            padding: 0.95rem 1.1rem;
             border-bottom: 1px solid #e5e7eb;
+            vertical-align: top;
         }
-        
+
         .minimal-content tbody tr:last-child td {
             border-bottom: none;
         }
-        
+
         .minimal-content tbody tr:nth-child(even) {
-            background: #FAF7F2;
+            background: #faf7f2;
         }
-        
+
         .minimal-content tbody tr:hover {
-            background: rgba(212, 168, 83, 0.08);
+            background: rgba(201, 169, 97, 0.09);
         }
-        
-        /* Blockquotes */
+
         .minimal-content blockquote {
-            margin: 2.5rem 0;
-            padding: 1.5rem 2rem;
-            background: rgba(212, 168, 83, 0.12);
-            border-left: 4px solid #D4A853;
-            font-style: italic;
-            font-size: 1.125rem;
-            line-height: 1.7;
+            margin: 2.3rem 0;
+            padding: 1.4rem 1.6rem;
+            border-radius: 24px;
+            background: rgba(201, 169, 97, 0.11);
+            border-left: 4px solid #d4a853;
+            font-size: 1.12rem;
+            line-height: 1.72;
         }
-        
+
         .minimal-content blockquote p {
             margin-bottom: 0;
         }
-        
-        /* Lists */
-        .minimal-content ul, .minimal-content ol {
-            margin-bottom: 1.5rem;
-            padding-left: 2rem;
+
+        .minimal-content ul,
+        .minimal-content ol {
+            margin-bottom: 1.45rem;
+            padding-left: 1.35rem;
         }
-        
+
         .minimal-content li {
-            margin-bottom: 0.75rem;
-            line-height: 1.7;
+            margin-bottom: 0.7rem;
+            line-height: 1.72;
         }
-        
-        /* Strong/Bold */
+
         .minimal-content strong {
             font-weight: 700;
             color: #111827;
         }
-        
-        /* Links */
+
         .minimal-content a {
-            color: #D4A853;
+            color: #b8933f;
             text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 0.16em;
         }
-        
+
         .minimal-content a:hover {
-            color: #B8933F;
+            color: #8e6d2d;
         }
-        
-        /* Emphasis */
-        .minimal-content em {
-            font-style: italic;
+
+        .article-faq {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            border-radius: 28px;
+            background: rgba(255, 255, 255, 0.96);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 22px 55px rgba(15, 23, 42, 0.08);
+        }
+
+        .article-faq__header {
+            margin-bottom: 1rem;
+        }
+
+        .article-faq__eyebrow {
+            margin: 0 0 0.45rem;
+            color: var(--gold-dark);
+            font-size: 0.76rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .article-faq__title {
+            margin: 0;
+            color: var(--navy);
+            font-size: clamp(1.7rem, 2.2vw, 2.25rem);
+        }
+
+        .article-faq__list {
+            display: grid;
+            gap: 0.85rem;
+        }
+
+        .article-faq__item {
+            border-radius: 20px;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            background: rgba(250, 247, 242, 0.65);
+            overflow: hidden;
+        }
+
+        .article-faq__question {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 1.1rem 1.15rem;
+            border: none;
+            background: transparent;
+            color: var(--navy);
+            font-size: 0.98rem;
+            font-weight: 700;
+            text-align: left;
+        }
+
+        .article-faq__chevron {
+            width: 1.15rem;
+            height: 1.15rem;
+            color: var(--text-muted);
+            transition: transform 0.2s ease;
+            flex: 0 0 auto;
+        }
+
+        .article-faq__question[aria-expanded="true"] .article-faq__chevron {
+            transform: rotate(180deg);
+        }
+
+        .article-faq__answer {
+            display: none;
+            padding: 0 1.15rem 1.15rem;
+        }
+
+        .article-faq__answer--open {
+            display: block;
+        }
+
+        .article-faq__answer p {
+            margin: 0;
+            color: var(--text-secondary);
+            font-size: 0.97rem;
+            line-height: 1.72;
+        }
+
+        @media (min-width: 1024px) {
+            .article-shell {
+                grid-template-columns: minmax(0, 1.55fr) minmax(320px, 0.78fr);
+                gap: 2.25rem;
+            }
+
+            .article-rail {
+                position: sticky;
+                top: 6.5rem;
+            }
+        }
+
+        @media (max-width: 1023px) {
+            .article-shell {
+                gap: 1.5rem;
+            }
+
+            .statistics-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 767px) {
+            .minimal-article {
+                padding: 106px 18px 64px;
+            }
+
+            .minimal-article-title {
+                max-width: none;
+                font-size: clamp(2rem, 10vw, 3rem);
+            }
+
+            .minimal-article-description {
+                font-size: 1rem;
+            }
+
+            .article-intro-card {
+                grid-template-columns: 1fr;
+                padding: 1.25rem;
+                border-radius: 24px;
+            }
+
+            .minimal-featured-image,
+            .minimal-content,
+            .article-faq {
+                border-radius: 24px;
+            }
+
+            .minimal-content {
+                padding: 1.15rem;
+            }
+
+            .minimal-content h2 {
+                margin-top: 2.35rem;
+            }
+
+            .minimal-content table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+            }
+        }
+
+        @media (max-width: 479px) {
+            .statistics-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .article-rail-card,
+            .stat-card {
+                padding: 1rem;
+            }
         }
     </style>
 
     <!-- Schema Markup -->
     
+
+
+
+
+
+
 
 
 
@@ -196,12 +631,12 @@
             "@type": "ListItem",
             "position": 2,
             "name": "Blog",
-            "item": "https://www.legacyinvestingshow.com/blog/"
+            "item": "https://www.legacyinvestingshow.com/blog"
         },
         {
             "@type": "ListItem",
             "position": 3,
-            "name": &quot;How Chad Makes $90K/Year with One Airbnb Property in North Florida (2026 Case Study)&quot;
+            "name": "How Chad Makes $90K/Year with One Airbnb Property in North Florida (2026 Case Study)"
         }
     ]
 }
@@ -212,18 +647,18 @@
 {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": &quot;How Chad Makes $90K/Year with One Airbnb Property in North Florida (2026 Case Study)&quot;,
-    "description": &quot;Chad went from long-term rentals to $90,000/year gross revenue with a single short-term rental property near Florida&quot;,
+    "headline": "How Chad Makes $90K/Year with One Airbnb Property in North Florida (2026 Case Study)",
+    "description": "Chad went from long-term rentals to $90,000/year gross revenue with a single short-term rental property near Florida",
     "image": {
         "@type": "ImageObject",
-        "url": &quot;https://www.legacyinvestingshow.com/assets/images/blog/success-stories/chad-camp-manatee.jpg&quot;,
+        "url": "https://www.legacyinvestingshow.com/assets/images/blog/success-stories/chad-camp-manatee.jpg",
         "width": 1200,
         "height": 630
     },
     "author": {
         "@type": "Person",
         "@id": "https://www.legacyinvestingshow.com/about#author",
-        "name": &quot;Preston Seo&quot;,
+        "name": "Preston Seo",
         "url": "https://www.legacyinvestingshow.com/about",
         "jobTitle": "Real Estate Investor & Educator",
         "knowsAbout": [
@@ -242,7 +677,7 @@
     "publisher": {
         "@type": "Organization",
         "name": "Legacy Investing Show",
-        "url": "https://www.legacyinvestingshow.com",
+        "url": "https://www.legacyinvestingshow.com/",
         "logo": {
             "@type": "ImageObject",
             "url": "https://www.legacyinvestingshow.com/assets/images/logo.png",
@@ -256,15 +691,15 @@
             "https://www.facebook.com/share/19LQhE6gmh/"
         ]
     },
-    "datePublished": &quot;2026-02-28T00:00:00.000Z&quot;,
-    "dateModified": &quot;2026-01-23T00:00:00.000Z&quot;,
+    "datePublished": "2026-02-28T00:00:00.000Z",
+    "dateModified": "2026-01-23T00:00:00.000Z",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": &quot;https://www.legacyinvestingshow.com/blog/chad-90k-year-one-property&quot;
+        "@id": "https://www.legacyinvestingshow.com/blog/chad-90k-year-one-property"
     },
-    "articleSection": &quot;Success Story&quot;,
-    "wordCount": &quot;4696&quot;,
-    "keywords": &quot;airbnb success story, short-term rental business, florida airbnb, how much can you make with airbnb, is airbnb arbitrage worth it&quot;,
+    "articleSection": "Success Story",
+    "wordCount": "4557",
+    "keywords": "airbnb success story, short-term rental business, florida airbnb, how much can you make with airbnb, is airbnb arbitrage worth it",
     "speakable": {
         "@type": "SpeakableSpecification",
         "cssSelector": [".minimal-article-title", ".minimal-content p:first-of-type"]
@@ -284,91 +719,91 @@
         
         {
             "@type": "Question",
-            "name": &quot;How much money can you make with one Airbnb property?&quot;,
+            "name": "How much money can you make with one Airbnb property?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Chad generates approximately $90,000 in gross revenue per year from a single property in North Florida, with around $2,500 per month in cash flow after all expenses. His property exceeded initial expectations of $65,000 annual revenue by nearly $25,000.&quot;
+                "text": "Chad generates approximately $90,000 in gross revenue per year from a single property in North Florida, with around $2,500 per month in cash flow after all expenses. His property exceeded initial expectations of $65,000 annual revenue by nearly $25,000."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;Is buying an Airbnb property better than rental arbitrage?&quot;,
+            "name": "Is buying an Airbnb property better than rental arbitrage?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Both strategies have advantages. Chad chose to buy because he wanted all four benefits of real estate: appreciation, principal paydown, tax savings, and cash flow. He put 25% down for protection, knowing he could sell with equity if things didn&#39;t work out. Arbitrage requires less capital upfront but doesn&#39;t build equity.&quot;
+                "text": "Both strategies have advantages. Chad chose to buy because he wanted all four benefits of real estate: appreciation, principal paydown, tax savings, and cash flow. He put 25% down for protection, knowing he could sell with equity if things didn't work out. Arbitrage requires less capital upfront but doesn't build equity."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;What makes a good market for short-term rentals?&quot;,
+            "name": "What makes a good market for short-term rentals?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Chad chose North Florida near natural springs because it offers multiple demand drivers: proximity to the University of Florida (40 minutes), natural springs that stay 72 degrees year-round (the third most popular attraction in Florida after beaches and Disney), and abundant wildlife on 3+ acres adjacent to a 6,000-acre preserve.&quot;
+                "text": "Chad chose North Florida near natural springs because it offers multiple demand drivers: proximity to the University of Florida (40 minutes), natural springs that stay 72 degrees year-round (the third most popular attraction in Florida after beaches and Disney), and abundant wildlife on 3+ acres adjacent to a 6,000-acre preserve."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;How important is a realtor when buying short-term rental property?&quot;,
+            "name": "How important is a realtor when buying short-term rental property?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;According to Chad, the realtor is &#92;&quot;the lynchpin&#92;&quot; for out-of-market investing. His realtor not only found the property (alerting him when a previous sale fell through) but also connected him with cleaners, handymen, and other essential local contacts. The relationship between realtors helped Chad secure a property that was only on the market for hours.&quot;
+                "text": "According to Chad, the realtor is \"the lynchpin\" for out-of-market investing. His realtor not only found the property (alerting him when a previous sale fell through) but also connected him with cleaners, handymen, and other essential local contacts. The relationship between realtors helped Chad secure a property that was only on the market for hours."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;What are the four benefits of owning real estate for short-term rentals?&quot;,
+            "name": "What are the four benefits of owning real estate for short-term rentals?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Chad emphasizes the &#92;&quot;four quadrants&#92;&quot; of real estate investing: 1) Appreciation - properties average 6% per year (higher in South Florida), 2) Principal paydown - tenants/guests pay down your mortgage, 3) Tax savings - business deductions help offset W2 income taxes, 4) Cash flow - monthly profit after all expenses. No other investment provides all four benefits simultaneously.&quot;
+                "text": "Chad emphasizes the \"four quadrants\" of real estate investing: 1) Appreciation - properties average 6% per year (higher in South Florida), 2) Principal paydown - tenants/guests pay down your mortgage, 3) Tax savings - business deductions help offset W2 income taxes, 4) Cash flow - monthly profit after all expenses. No other investment provides all four benefits simultaneously."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;Is short-term rental investing stressful?&quot;,
+            "name": "Is short-term rental investing stressful?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Chad is honest that there is stress, especially early on when you don&#39;t know if bookings will come. However, he describes it as &#92;&quot;addicting&#92;&quot; once bookings start flowing - comparing the notification rush to social media likes. The stress becomes manageable as you learn the business and build systems.&quot;
+                "text": "Chad is honest that there is stress, especially early on when you don't know if bookings will come. However, he describes it as \"addicting\" once bookings start flowing - comparing the notification rush to social media likes. The stress becomes manageable as you learn the business and build systems."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;Why did Chad sell his long-term rental condo?&quot;,
+            "name": "Why did Chad sell his long-term rental condo?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Chad sold his condo for several reasons: lack of control (HOA, shared walls, shared roof), excessive wear and tear from daily tenant use requiring frequent renovations, and lower revenue compared to short-term rentals. He used the equity to fund his current short-term rental investment.&quot;
+                "text": "Chad sold his condo for several reasons: lack of control (HOA, shared walls, shared roof), excessive wear and tear from daily tenant use requiring frequent renovations, and lower revenue compared to short-term rentals. He used the equity to fund his current short-term rental investment."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;Can you do short-term rentals while working a full-time job?&quot;,
+            "name": "Can you do short-term rentals while working a full-time job?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Yes. Chad has worked at the same job for 16 years while building his short-term rental business. His wife is a full-time teacher. He notes that having the rental income has actually made him better at his day job because he takes more chances and risks, knowing he has backup income if things don&#39;t work out.&quot;
+                "text": "Yes. Chad has worked at the same job for 16 years while building his short-term rental business. His wife is a full-time teacher. He notes that having the rental income has actually made him better at his day job because he takes more chances and risks, knowing he has backup income if things don't work out."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;How much should you put down on an Airbnb investment property?&quot;,
+            "name": "How much should you put down on an Airbnb investment property?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Chad put 25% down on his property. While this requires more capital upfront, his reasoning was risk management: if the investment doesn&#39;t work out after a couple years, he can sell with significant equity and walk away ahead. Everyone&#39;s risk tolerance is different, but a larger down payment provides a safety cushion.&quot;
+                "text": "Chad put 25% down on his property. While this requires more capital upfront, his reasoning was risk management: if the investment doesn't work out after a couple years, he can sell with significant equity and walk away ahead. Everyone's risk tolerance is different, but a larger down payment provides a safety cushion."
             }
         },
         
         {
             "@type": "Question",
-            "name": &quot;Should I use a property management company for my Airbnb?&quot;,
+            "name": "Should I use a property management company for my Airbnb?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": &quot;Chad initially used a management company to get the property on the market quickly and start generating cash flow. However, he&#39;s now transitioning away from his management company to become more hands-on, learn all the moving parts, and reduce the significant chunk of income management fees take. He recommends hiring virtual assistants and training them as a more cost-effective alternative.&quot;
+                "text": "Chad initially used a management company to get the property on the market quickly and start generating cash flow. However, he's now transitioning away from his management company to become more hands-on, learn all the moving parts, and reduce the significant chunk of income management fees take. He recommends hiring virtual assistants and training them as a more cost-effective alternative."
             }
         }
         
@@ -383,7 +818,7 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Legacy Investing Show",
-    "url": "https://www.legacyinvestingshow.com",
+    "url": "https://www.legacyinvestingshow.com/",
     "logo": "https://www.legacyinvestingshow.com/assets/images/logo.png",
     "sameAs": [
         "https://www.instagram.com/thelegacyinvestingshow/",
@@ -396,16 +831,16 @@
 
 
     <!-- Google Analytics 4 -->
-        <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-2578PT1WSS');
     </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
+
 </head>
 <body class="bg-cream text-navy">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -467,124 +902,59 @@
 </nav>
 
 
-            <header class="minimal-article-header">
-                <div class="minimal-article-meta">
-                    <span>Success Story</span>
-                    <span class="meta-dot"></span>
-                    <time datetime="2026-02-28T00:00:00.000Z">February 28, 2026</time>
-                    <span class="meta-dot"></span>
-                    <span>24 min read min read</span>
-                </div>
-                <h1 class="minimal-article-title">How Chad Makes $90K/Year with One Airbnb Property in North Florida (2026 Case Study)</h1>
-                <div class="minimal-article-author">
-                    <img src="../assets/images/preston-main.jpg" alt="Preston Seo" width="36" height="36" class="author-avatar">
-                    <span>Preston Seo</span>
-                </div>
-            </header>
+            <div class="article-shell">
+                <div class="article-main">
+                    <header class="minimal-article-header">
+                        <span class="article-eyebrow">Success Story Guide</span>
+                        <div class="minimal-article-meta">
+                            <span>Success Story</span>
+                            <span class="meta-dot"></span>
+                            <time datetime="2026-02-28T00:00:00.000Z">February 28, 2026</time>
+                            <span class="meta-dot"></span>
+                            <span>23 min read min read</span>
+                        </div>
+                        <h1 class="minimal-article-title">How Chad Makes $90K/Year with One Airbnb Property in North Florida (2026 Case Study)</h1>
+                        <p class="minimal-article-description">Chad went from long-term rentals to $90,000/year gross revenue with a single short-term rental property near Florida</p>
+                        <div class="minimal-article-author">
+                            <picture>
+                                <source srcset="../assets/images/preston-main.webp" type="image/webp">
+                                <img src="../assets/images/preston-main.jpg"
+                                     alt="Preston Seo"
+                                     width="36"
+                                     height="36"
+                                     class="author-avatar"
+                                     fetchpriority="low"
+                                     decoding="async">
+                            </picture>
+                            <span>Preston Seo</span>
+                        </div>
+                    </header>
 
-            <!-- Featured Image -->
-            <div class="minimal-featured-image">
-                <picture>
-                    <source srcset="../assets/images/blog/success-stories/chad-camp-manatee.jpg" type="image/webp">
-                    <img src="../assets/images/blog/success-stories/chad-camp-manatee.jpg" alt="How Chad Makes $90K/Year with One Airbnb Property in North Florida (2026 Case Study)" width="800" height="450" loading="eager" fetchpriority="high" decoding="async">
-                </picture>
-            </div>
+                    <div class="minimal-featured-image">
+                        <picture>
+                            
+                            <img src="../assets/images/blog/success-stories/chad-camp-manatee.jpg" alt="How Chad Makes $90K/Year with One Airbnb Property in North Florida (2026 Case Study)" width="800" height="450" loading="eager" fetchpriority="high" decoding="async">
+                        </picture>
+                    </div>
 
-            <!-- Statistics Cards -->
-            
-                <section class="statistics-section" aria-label="Key statistics">
-    <div class="statistics-grid">
-        
-        <div class="stat-card" data-stat-index="0">
-            <div class="stat-icon-wrapper">
-                
-                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-                
-            </div>
-            <div class="stat-value">$90,000</div>
-            <div class="stat-label">Annual Gross Revenue</div>
-            
-            <span class="stat-context">First year of operation</span>
-            
-            
-            <span class="stat-source">Student Interview, October 2024</span>
-            
-        </div>
-        
-        <div class="stat-card" data-stat-index="1">
-            <div class="stat-icon-wrapper">
-                
-                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-                
-            </div>
-            <div class="stat-value">1</div>
-            <div class="stat-label">Property</div>
-            
-            <span class="stat-context">Camp Manatee, North Florida</span>
-            
-            
-        </div>
-        
-        <div class="stat-card" data-stat-index="2">
-            <div class="stat-icon-wrapper">
-                
-                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-                
-            </div>
-            <div class="stat-value">$2,500</div>
-            <div class="stat-label">Monthly Cash Flow</div>
-            
-            <span class="stat-context">Average after expenses</span>
-            
-            
-        </div>
-        
-        <div class="stat-card" data-stat-index="3">
-            <div class="stat-icon-wrapper">
-                
-            </div>
-            <div class="stat-value">25%</div>
-            <div class="stat-label">Down Payment</div>
-            
-            <span class="stat-context">Using home equity</span>
-            
-            
-        </div>
-        
-        <div class="stat-card" data-stat-index="4">
-            <div class="stat-icon-wrapper">
-                
-                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                
-            </div>
-            <div class="stat-value">1 Year</div>
-            <div class="stat-label">Time in Business</div>
-            
-            <span class="stat-context">Purchased October 2023</span>
-            
-            
-        </div>
-        
-        <div class="stat-card" data-stat-index="5">
-            <div class="stat-icon-wrapper">
-                
-            </div>
-            <div class="stat-value">3+ Acres</div>
-            <div class="stat-label">Property Size</div>
-            
-            <span class="stat-context">Adjacent to 25-acre preserve</span>
-            
-            
-        </div>
-        
-    </div>
-</section>
+                    <section class="article-intro-card" aria-label="How to use this guide">
+                        <div>
+                            <p class="article-intro-card__eyebrow">Use This Like a Tool</p>
+                            <h2 class="article-intro-card__title">The point of this page is not more information. The point is better judgment before you act.</h2>
+                        </div>
+                        <ul class="article-intro-card__list">
+                            
+                            <li>Pull the real numbers first.</li>
+                            
+                            <li>Run a base case and a stress case.</li>
+                            
+                            <li>Use the result to make a cleaner decision, not a faster emotional one.</li>
+                            
+                        </ul>
+                    </section>
 
-            
-
-            <!-- Article Content -->
-            <div class="minimal-content">
-                <p><strong>Chad earns approximately $90,000 per year in gross revenue from a single short-term rental property in North Florida.</strong> After 16 years at the same job and experience with long-term rentals, he discovered that short-term rentals could be far more lucrative. Within his first year operating Camp Manatee, Chad exceeded his initial projection of $65,000 by nearly $25,000, while generating around $2,500 in monthly cash flow.</p>
+                    <div class="minimal-content">
+                        <p><strong>Chad earns approximately $90,000 per year in gross revenue from a single short-term rental property in North Florida.</strong> After 16 years at the same job and experience with long-term rentals, he discovered that short-term rentals could be far more lucrative. Within his first year operating Camp Manatee, Chad exceeded his initial projection of $65,000 by nearly $25,000, while generating around $2,500 in monthly cash flow.</p>
 <p>This case study breaks down exactly how Chad built this short-term rental business, including his decision to purchase rather than arbitrage, the importance of finding the right realtor, and his strategies for dominating a less competitive market near Florida's natural springs.</p>
 <p><strong>In this article:</strong></p>
 <ul>
@@ -1131,68 +1501,327 @@
 <p>Preston Seo</p>
 <p>Real estate investor and financial educator helping people build generational wealth through smart investing strategies.</p>
 
-            </div>
+                    </div>
 
-            <!-- FAQ Section -->
+                    
+                        <section class="article-faq" aria-label="Frequently asked questions">
+    <div class="article-faq__header">
+        <p class="article-faq__eyebrow">Questions that matter before you act</p>
+        <h2 class="article-faq__title">Frequently Asked Questions</h2>
+    </div>
+    <div class="article-faq__list">
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="true"
+                aria-controls="faq-answer-0"
+            >
+                <span>How much money can you make with one Airbnb property?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-0"
+                class="article-faq__answer article-faq__answer--open"
+            >
+                <p>Chad generates approximately $90,000 in gross revenue per year from a single property in North Florida, with around $2,500 per month in cash flow after all expenses. His property exceeded initial expectations of $65,000 annual revenue by nearly $25,000.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-1"
+            >
+                <span>Is buying an Airbnb property better than rental arbitrage?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-1"
+                class="article-faq__answer "
+            >
+                <p>Both strategies have advantages. Chad chose to buy because he wanted all four benefits of real estate: appreciation, principal paydown, tax savings, and cash flow. He put 25% down for protection, knowing he could sell with equity if things didn&#39;t work out. Arbitrage requires less capital upfront but doesn&#39;t build equity.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-2"
+            >
+                <span>What makes a good market for short-term rentals?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-2"
+                class="article-faq__answer "
+            >
+                <p>Chad chose North Florida near natural springs because it offers multiple demand drivers: proximity to the University of Florida (40 minutes), natural springs that stay 72 degrees year-round (the third most popular attraction in Florida after beaches and Disney), and abundant wildlife on 3+ acres adjacent to a 6,000-acre preserve.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-3"
+            >
+                <span>How important is a realtor when buying short-term rental property?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-3"
+                class="article-faq__answer "
+            >
+                <p>According to Chad, the realtor is &quot;the lynchpin&quot; for out-of-market investing. His realtor not only found the property (alerting him when a previous sale fell through) but also connected him with cleaners, handymen, and other essential local contacts. The relationship between realtors helped Chad secure a property that was only on the market for hours.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-4"
+            >
+                <span>What are the four benefits of owning real estate for short-term rentals?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-4"
+                class="article-faq__answer "
+            >
+                <p>Chad emphasizes the &quot;four quadrants&quot; of real estate investing: 1) Appreciation - properties average 6% per year (higher in South Florida), 2) Principal paydown - tenants/guests pay down your mortgage, 3) Tax savings - business deductions help offset W2 income taxes, 4) Cash flow - monthly profit after all expenses. No other investment provides all four benefits simultaneously.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-5"
+            >
+                <span>Is short-term rental investing stressful?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-5"
+                class="article-faq__answer "
+            >
+                <p>Chad is honest that there is stress, especially early on when you don&#39;t know if bookings will come. However, he describes it as &quot;addicting&quot; once bookings start flowing - comparing the notification rush to social media likes. The stress becomes manageable as you learn the business and build systems.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-6"
+            >
+                <span>Why did Chad sell his long-term rental condo?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-6"
+                class="article-faq__answer "
+            >
+                <p>Chad sold his condo for several reasons: lack of control (HOA, shared walls, shared roof), excessive wear and tear from daily tenant use requiring frequent renovations, and lower revenue compared to short-term rentals. He used the equity to fund his current short-term rental investment.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-7"
+            >
+                <span>Can you do short-term rentals while working a full-time job?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-7"
+                class="article-faq__answer "
+            >
+                <p>Yes. Chad has worked at the same job for 16 years while building his short-term rental business. His wife is a full-time teacher. He notes that having the rental income has actually made him better at his day job because he takes more chances and risks, knowing he has backup income if things don&#39;t work out.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-8"
+            >
+                <span>How much should you put down on an Airbnb investment property?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-8"
+                class="article-faq__answer "
+            >
+                <p>Chad put 25% down on his property. While this requires more capital upfront, his reasoning was risk management: if the investment doesn&#39;t work out after a couple years, he can sell with significant equity and walk away ahead. Everyone&#39;s risk tolerance is different, but a larger down payment provides a safety cushion.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-9"
+            >
+                <span>Should I use a property management company for my Airbnb?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-9"
+                class="article-faq__answer "
+            >
+                <p>Chad initially used a management company to get the property on the market quickly and start generating cash flow. However, he&#39;s now transitioning away from his management company to become more hands-on, learn all the moving parts, and reduce the significant chunk of income management fees take. He recommends hiring virtual assistants and training them as a more cost-effective alternative.</p>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<script>
+    document.querySelectorAll('.article-faq__question').forEach((button) => {
+        button.addEventListener('click', () => {
+            const expanded = button.getAttribute('aria-expanded') === 'true';
+            button.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+            button.nextElementSibling.classList.toggle('article-faq__answer--open');
+        });
+    });
+</script>
+
+                    
+                </div>
+
+                <aside class="article-rail">
+                    
+                        <section class="statistics-section" aria-label="Key statistics">
+    <div class="statistics-grid">
+        
+        <div class="stat-card" data-stat-index="0">
+            <div class="stat-icon-wrapper">
+                
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                
+            </div>
+            <div class="stat-value">$90,000</div>
+            <div class="stat-label">Annual Gross Revenue</div>
             
-                <section class="mt-16 bg-white rounded-xl shadow-lg p-8">
-    <h2 class="text-3xl font-bold text-navy mb-8">Frequently Asked Questions</h2>
-    <div class="space-y-6">
-        
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">How much money can you make with one Airbnb property?</h3>
-            <p class="text-gray-600">Chad generates approximately $90,000 in gross revenue per year from a single property in North Florida, with around $2,500 per month in cash flow after all expenses. His property exceeded initial expectations of $65,000 annual revenue by nearly $25,000.</p>
+            <span class="stat-context">First year of operation</span>
+            
+            
+            <span class="stat-source">Student Interview, October 2024</span>
+            
         </div>
         
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">Is buying an Airbnb property better than rental arbitrage?</h3>
-            <p class="text-gray-600">Both strategies have advantages. Chad chose to buy because he wanted all four benefits of real estate: appreciation, principal paydown, tax savings, and cash flow. He put 25% down for protection, knowing he could sell with equity if things didn&#39;t work out. Arbitrage requires less capital upfront but doesn&#39;t build equity.</p>
+        <div class="stat-card" data-stat-index="1">
+            <div class="stat-icon-wrapper">
+                
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                
+            </div>
+            <div class="stat-value">1</div>
+            <div class="stat-label">Property</div>
+            
+            <span class="stat-context">Camp Manatee, North Florida</span>
+            
+            
         </div>
         
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">What makes a good market for short-term rentals?</h3>
-            <p class="text-gray-600">Chad chose North Florida near natural springs because it offers multiple demand drivers: proximity to the University of Florida (40 minutes), natural springs that stay 72 degrees year-round (the third most popular attraction in Florida after beaches and Disney), and abundant wildlife on 3+ acres adjacent to a 6,000-acre preserve.</p>
+        <div class="stat-card" data-stat-index="2">
+            <div class="stat-icon-wrapper">
+                
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                
+            </div>
+            <div class="stat-value">$2,500</div>
+            <div class="stat-label">Monthly Cash Flow</div>
+            
+            <span class="stat-context">Average after expenses</span>
+            
+            
         </div>
         
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">How important is a realtor when buying short-term rental property?</h3>
-            <p class="text-gray-600">According to Chad, the realtor is &quot;the lynchpin&quot; for out-of-market investing. His realtor not only found the property (alerting him when a previous sale fell through) but also connected him with cleaners, handymen, and other essential local contacts. The relationship between realtors helped Chad secure a property that was only on the market for hours.</p>
+        <div class="stat-card" data-stat-index="3">
+            <div class="stat-icon-wrapper">
+                
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                
+            </div>
+            <div class="stat-value">25%</div>
+            <div class="stat-label">Down Payment</div>
+            
+            <span class="stat-context">Using home equity</span>
+            
+            
         </div>
         
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">What are the four benefits of owning real estate for short-term rentals?</h3>
-            <p class="text-gray-600">Chad emphasizes the &quot;four quadrants&quot; of real estate investing: 1) Appreciation - properties average 6% per year (higher in South Florida), 2) Principal paydown - tenants/guests pay down your mortgage, 3) Tax savings - business deductions help offset W2 income taxes, 4) Cash flow - monthly profit after all expenses. No other investment provides all four benefits simultaneously.</p>
+        <div class="stat-card" data-stat-index="4">
+            <div class="stat-icon-wrapper">
+                
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                
+            </div>
+            <div class="stat-value">1 Year</div>
+            <div class="stat-label">Time in Business</div>
+            
+            <span class="stat-context">Purchased October 2023</span>
+            
+            
         </div>
         
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">Is short-term rental investing stressful?</h3>
-            <p class="text-gray-600">Chad is honest that there is stress, especially early on when you don&#39;t know if bookings will come. However, he describes it as &quot;addicting&quot; once bookings start flowing - comparing the notification rush to social media likes. The stress becomes manageable as you learn the business and build systems.</p>
-        </div>
-        
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">Why did Chad sell his long-term rental condo?</h3>
-            <p class="text-gray-600">Chad sold his condo for several reasons: lack of control (HOA, shared walls, shared roof), excessive wear and tear from daily tenant use requiring frequent renovations, and lower revenue compared to short-term rentals. He used the equity to fund his current short-term rental investment.</p>
-        </div>
-        
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">Can you do short-term rentals while working a full-time job?</h3>
-            <p class="text-gray-600">Yes. Chad has worked at the same job for 16 years while building his short-term rental business. His wife is a full-time teacher. He notes that having the rental income has actually made him better at his day job because he takes more chances and risks, knowing he has backup income if things don&#39;t work out.</p>
-        </div>
-        
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">How much should you put down on an Airbnb investment property?</h3>
-            <p class="text-gray-600">Chad put 25% down on his property. While this requires more capital upfront, his reasoning was risk management: if the investment doesn&#39;t work out after a couple years, he can sell with significant equity and walk away ahead. Everyone&#39;s risk tolerance is different, but a larger down payment provides a safety cushion.</p>
-        </div>
-        
-        <div class="border-b pb-6">
-            <h3 class="text-xl font-semibold text-navy mb-3">Should I use a property management company for my Airbnb?</h3>
-            <p class="text-gray-600">Chad initially used a management company to get the property on the market quickly and start generating cash flow. However, he&#39;s now transitioning away from his management company to become more hands-on, learn all the moving parts, and reduce the significant chunk of income management fees take. He recommends hiring virtual assistants and training them as a more cost-effective alternative.</p>
+        <div class="stat-card" data-stat-index="5">
+            <div class="stat-icon-wrapper">
+                
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                
+            </div>
+            <div class="stat-value">3+ Acres</div>
+            <div class="stat-label">Property Size</div>
+            
+            <span class="stat-context">Adjacent to 25-acre preserve</span>
+            
+            
         </div>
         
     </div>
 </section>
 
-            
+                    
+                    <div class="article-rail-card">
+                        <p class="article-rail-card__eyebrow">Before You Act</p>
+                        <h2 class="article-rail-card__title">Good planning is mostly good sequencing.</h2>
+                        <p class="article-rail-card__body">Use this page to slow the decision down just enough to avoid the expensive version of “I thought I understood it.”</p>
+                    </div>
+                    <div class="article-rail-card article-rail-card--muted">
+                        <p class="article-rail-card__eyebrow">Important</p>
+                        <p class="article-rail-card__body">Educational only. Results vary. Tax, legal, and investment decisions should be reviewed with a qualified professional who can see your full situation.</p>
+                    </div>
+                </aside>
+            </div>
         </article>
     </main>
 

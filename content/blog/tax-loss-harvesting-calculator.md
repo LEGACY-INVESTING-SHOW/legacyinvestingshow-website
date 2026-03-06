@@ -146,8 +146,8 @@ relatedPosts:
     title: >-
       Asset Allocation Tax Implications: Complete 2026 Guide for After-Tax
       Portfolio Returns
-readingTime: 9 min read
-wordCount: '2028'
+readingTime: 11 min read
+wordCount: '2089'
 ---
 If you are evaluating a tax loss harvesting calculator, use it to answer one question: does harvesting this specific loss lot improve after-tax wealth after fees, wash-sale risk, and future tax drag? The calculator is useful, but only if you feed it your real tax profile, real holding periods, and your likely future sale plan. Otherwise, it becomes a false-precision tool.
 

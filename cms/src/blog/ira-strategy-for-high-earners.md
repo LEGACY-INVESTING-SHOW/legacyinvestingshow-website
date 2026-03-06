@@ -142,8 +142,8 @@ relatedPosts:
     title: >-
       401k Strategy for Beginners: Complete 2026 Guide to Matching, Taxes, and
       Contribution Decisions
-readingTime: 10 min read
-wordCount: '2178'
+readingTime: 12 min read
+wordCount: '2240'
 ---
 High income creates a useful problem: you have the cash flow to invest, but tax rules narrow your choices. That is why an **ira strategy for high earners** should be treated as a decision system, not a one-time account pick.
 

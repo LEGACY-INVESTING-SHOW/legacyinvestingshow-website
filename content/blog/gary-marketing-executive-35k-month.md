@@ -1,33 +1,31 @@
 ---
-# Core SEO Fields
-title: "How Gary Built a $35,000/Month Airbnb Business in Austin (2025 Case Study)"
-titleTemplate: "%s | Legacy Investing Show Success Stories"
-description: "Gary went from marketing executive at eBay and Chegg to $35,000/month cash flow with 7 Airbnb properties in Austin, Texas. Learn his exact strategies, tools, and step-by-step process for Airbnb arbitrage success."
-date: 2026-01-23
-modifiedDate: 2026-01-23
+title: 'How Gary Built a $35,000/Month Airbnb Business in Austin (2025 Case Study)'
+titleTemplate: '%s | Legacy Investing Show Success Stories'
+description: >-
+  Gary went from marketing executive at eBay and Chegg to $35,000/month cash
+  flow with 7 Airbnb properties in Austin, Texas. Learn his exact strategies,
+  tools, and step-by-step process for Airbnb arbitrage success.
+date: 2026-01-23T00:00:00.000Z
+modifiedDate: 2026-01-23T00:00:00.000Z
 author: Preston Seo
-authorTitle: "Founder, Legacy Investing Show"
-authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
+authorTitle: 'Founder, Legacy Investing Show'
+authorCredentials: '2,000+ students trained, $10M+ student revenue generated'
 category: Success Story
-canonical: "https://www.legacyinvestingshow.com/blog/gary-marketing-executive-35k-month"
-
-# SEO Keyword Targeting
+canonical: 'https://www.legacyinvestingshow.com/blog/gary-marketing-executive-35k-month'
 seo:
-  primaryKeyword: "airbnb arbitrage success story"
+  primaryKeyword: airbnb arbitrage success story
   secondaryKeywords:
-    - "airbnb cash flow"
-    - "rental arbitrage case study"
-    - "austin airbnb business"
-    - "airbnb passive income"
+    - airbnb cash flow
+    - rental arbitrage case study
+    - austin airbnb business
+    - airbnb passive income
   longTailKeywords:
-    - "how much can you make with airbnb arbitrage"
-    - "is airbnb arbitrage still profitable 2025"
-    - "best cities for airbnb arbitrage"
-    - "airbnb arbitrage startup costs"
-  searchIntent: "informational"
-  targetSnippet: "how much can you make with airbnb arbitrage"
-
-# Tags (exact match keywords)
+    - how much can you make with airbnb arbitrage
+    - is airbnb arbitrage still profitable 2025
+    - best cities for airbnb arbitrage
+    - airbnb arbitrage startup costs
+  searchIntent: informational
+  targetSnippet: how much can you make with airbnb arbitrage
 tags:
   - airbnb arbitrage
   - rental arbitrage
@@ -39,118 +37,149 @@ tags:
   - str investing
   - property management
   - tech executive
-
-# Open Graph & Social
 image: /assets/images/blog/success-stories/gary-marketing-executive.jpg
-imageAlt: "Gary - Airbnb arbitrage success story achieving $35,000/month cash flow in Austin, Texas"
+imageAlt: >-
+  Gary - Airbnb arbitrage success story achieving $35,000/month cash flow in
+  Austin, Texas
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
 featured: true
-
-# Video Integration
-youtubeId: "4uvMd9WRQ_8"
-videoDuration: "PT32M15S"
-
-# Multiple Schema Types for Rich Results
+youtubeId: 4uvMd9WRQ_8
+videoDuration: PT32M15S
 schema:
   - type: Article
-    headline: "How Gary Built a $35,000/Month Airbnb Business in Austin"
-    datePublished: "2026-01-23T00:00:00Z"
-    dateModified: "2026-01-23T00:00:00Z"
+    headline: 'How Gary Built a $35,000/Month Airbnb Business in Austin'
+    datePublished: '2026-01-23T00:00:00Z'
+    dateModified: '2026-01-23T00:00:00Z'
   - type: VideoObject
-    name: "Gary's Airbnb Success Story Interview - Legacy Investing Show"
-    description: "Full interview with Gary about building a $35,000/month Airbnb arbitrage business in Austin, Texas"
-    thumbnailUrl: "https://img.youtube.com/vi/4uvMd9WRQ_8/maxresdefault.jpg"
-    uploadDate: "2023-06-15"
-    duration: "PT32M15S"
-    embedUrl: "https://www.youtube.com/embed/4uvMd9WRQ_8"
+    name: Gary's Airbnb Success Story Interview - Legacy Investing Show
+    description: >-
+      Full interview with Gary about building a $35,000/month Airbnb arbitrage
+      business in Austin, Texas
+    thumbnailUrl: 'https://img.youtube.com/vi/4uvMd9WRQ_8/maxresdefault.jpg'
+    uploadDate: '2023-06-15'
+    duration: PT32M15S
+    embedUrl: 'https://www.youtube.com/embed/4uvMd9WRQ_8'
   - type: HowTo
-    name: "How to Build an Airbnb Arbitrage Business Like Gary"
-    estimatedCost: "$15,000-$25,000 per property"
-    totalTime: "3-6 months to first property"
+    name: How to Build an Airbnb Arbitrage Business Like Gary
+    estimatedCost: '$15,000-$25,000 per property'
+    totalTime: 3-6 months to first property
   - type: Person
-    name: "Gary"
-    jobTitle: "Airbnb Entrepreneur & Property Manager"
-    knowsAbout: ["Airbnb arbitrage", "short-term rentals", "Austin real estate", "property management"]
-
-# Breadcrumbs for Navigation Schema
+    name: Gary
+    jobTitle: Airbnb Entrepreneur & Property Manager
+    knowsAbout:
+      - Airbnb arbitrage
+      - short-term rentals
+      - Austin real estate
+      - property management
 breadcrumbs:
-  - name: "Home"
-    url: "/"
-  - name: "Blog"
-    url: "/blog"
-  - name: "Success Stories"
-    url: "/blog/category/success-stories"
-  - name: "Gary's Story"
-    url: "/blog/gary-marketing-executive-35k-month"
-
-# Statistics (AI-crawler accessible, renders as stat cards)
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog
+  - name: Success Stories
+    url: /blog/category/success-stories
+  - name: Gary's Story
+    url: /blog/gary-marketing-executive-35k-month
 statistics:
-  - value: "$35,000"
-    label: "Monthly Cash Flow"
-    icon: "dollar"
-    context: "After all expenses"
-    source: "Student Interview, June 2023"
+  - value: '$35,000'
+    label: Monthly Cash Flow
+    icon: dollar
+    context: After all expenses
+    source: 'Student Interview, June 2023'
     highlighted: true
-  - value: "7"
-    label: "Properties"
-    icon: "home"
-    context: "Austin, Texas market"
-  - value: "50%"
-    label: "Profit Margin"
-    icon: "percent"
-    context: "$5-6K net per property"
-  - value: "$10,000"
-    label: "Revenue Per Property"
-    icon: "chart"
-    context: "Average gross monthly"
-  - value: "3 years"
-    label: "Time to Scale"
-    icon: "clock"
-    context: "Started in 2020"
-  - value: "15+"
-    label: "Guest Capacity"
-    icon: "users"
-    context: "Per property average"
-
-# FAQ (FAQPage schema + accordion rendering)
+  - value: '7'
+    label: Properties
+    icon: home
+    context: 'Austin, Texas market'
+  - value: 50%
+    label: Profit Margin
+    icon: percent
+    context: $5-6K net per property
+  - value: '$10,000'
+    label: Revenue Per Property
+    icon: chart
+    context: Average gross monthly
+  - value: 3 years
+    label: Time to Scale
+    icon: clock
+    context: Started in 2020
+  - value: 15+
+    label: Guest Capacity
+    icon: users
+    context: Per property average
 faq:
-  - question: "How much money can you make with Airbnb arbitrage?"
-    answer: "Gary generates $35,000/month in cash flow from 7 properties in Austin, Texas. He targets $10,000 gross revenue per property, netting approximately $5,000-$6,000 after rent, utilities, cleaning, and all expenses—a 50% profit margin."
-  - question: "Is Airbnb arbitrage still profitable in 2025?"
-    answer: "Yes. Gary started in 2020 and continues to scale. His newest listing, posted less than 10 days before his interview, was already booking 1-2 reservations daily with weekends locked through October. Success depends on market selection, property amenities, and pricing strategy."
-  - question: "What makes Gary's Airbnb strategy different?"
-    answer: "Gary requires every Austin property to have a pool—non-negotiable in 110-degree summers. He also designs properties for specific demographics (male vs. female guests), uses rare amenities to reduce competition, and prices strategically to attract higher-quality guests who book 4-6 months in advance."
-  - question: "How much does it cost to start Airbnb arbitrage?"
-    answer: "Gary invests $15,000-$25,000 per property because he owns them with investor partners and adds custom amenities like saunas, custom staircases, and game rooms. Pure arbitrage operators can start with first month's rent, deposit, and furnishing costs—typically $5,000-$15,000."
-  - question: "What is the best market for Airbnb arbitrage?"
-    answer: "Gary chose Austin for its tech company presence (eBay, Apple), tourism appeal, year-round demand, and population growth from California migration. He emphasizes investing in markets you'd enjoy visiting yourself and understanding city-specific guest needs."
-  - question: "Do you need experience to start Airbnb arbitrage?"
-    answer: "No. Gary leveraged his marketing background from eBay and Chegg for listing optimization and data analysis, but had no formal real estate experience. His construction hobby with a childhood friend gave him design skills. Most skills transfer from other careers."
-  - question: "What tools does Gary use to manage his Airbnb properties?"
-    answer: "Gary uses Price Labs for dynamic pricing (not Airbnb's Smart Pricing), Hospitable for 24/7 automated guest messaging, Turno for cleaning team coordination, and Air DNA for market research. These tools enable him to manage 7+ properties without being tied to his phone."
-  - question: "Is Legacy Investing Show worth it?"
-    answer: "Based on Gary's results, the program provided valuable community connections, diverse perspectives, and knowledge sharing. He joined to both learn from others and share his expertise. The ROI: access to a network of active investors with different approaches to the same business."
-  - question: "Should you offer monthly discounts on Airbnb?"
-    answer: "Gary strongly advises against it. His weekly discount is under 10%, and monthly is in the low teens. Long-term guests exhaust supplies, leave bigger messes, and are pickier about issues. He prefers booking every weekend at premium rates over a 35% monthly discount."
-  - question: "What's the difference between Airbnb arbitrage and buying property?"
-    answer: "Gary buys properties (often with investor partners) because he invests heavily in custom amenities—drop ceilings, custom staircases, saunas—that wouldn't make sense if a landlord could reclaim the property. If doing arbitrage, keep improvements modest and removable."
-
-# Table of Contents
+  - question: How much money can you make with Airbnb arbitrage?
+    answer: >-
+      Gary generates $35,000/month in cash flow from 7 properties in Austin,
+      Texas. He targets $10,000 gross revenue per property, netting
+      approximately $5,000-$6,000 after rent, utilities, cleaning, and all
+      expenses—a 50% profit margin.
+  - question: Is Airbnb arbitrage still profitable in 2025?
+    answer: >-
+      Yes. Gary started in 2020 and continues to scale. His newest listing,
+      posted less than 10 days before his interview, was already booking 1-2
+      reservations daily with weekends locked through October. Success depends
+      on market selection, property amenities, and pricing strategy.
+  - question: What makes Gary's Airbnb strategy different?
+    answer: >-
+      Gary requires every Austin property to have a pool—non-negotiable in
+      110-degree summers. He also designs properties for specific demographics
+      (male vs. female guests), uses rare amenities to reduce competition, and
+      prices strategically to attract higher-quality guests who book 4-6 months
+      in advance.
+  - question: How much does it cost to start Airbnb arbitrage?
+    answer: >-
+      Gary invests $15,000-$25,000 per property because he owns them with
+      investor partners and adds custom amenities like saunas, custom
+      staircases, and game rooms. Pure arbitrage operators can start with first
+      month's rent, deposit, and furnishing costs—typically $5,000-$15,000.
+  - question: What is the best market for Airbnb arbitrage?
+    answer: >-
+      Gary chose Austin for its tech company presence (eBay, Apple), tourism
+      appeal, year-round demand, and population growth from California
+      migration. He emphasizes investing in markets you'd enjoy visiting
+      yourself and understanding city-specific guest needs.
+  - question: Do you need experience to start Airbnb arbitrage?
+    answer: >-
+      No. Gary leveraged his marketing background from eBay and Chegg for
+      listing optimization and data analysis, but had no formal real estate
+      experience. His construction hobby with a childhood friend gave him design
+      skills. Most skills transfer from other careers.
+  - question: What tools does Gary use to manage his Airbnb properties?
+    answer: >-
+      Gary uses Price Labs for dynamic pricing (not Airbnb's Smart Pricing),
+      Hospitable for 24/7 automated guest messaging, Turno for cleaning team
+      coordination, and Air DNA for market research. These tools enable him to
+      manage 7+ properties without being tied to his phone.
+  - question: Is Legacy Investing Show worth it?
+    answer: >-
+      Based on Gary's results, the program provided valuable community
+      connections, diverse perspectives, and knowledge sharing. He joined to
+      both learn from others and share his expertise. The ROI: access to a
+      network of active investors with different approaches to the same
+      business.
+  - question: Should you offer monthly discounts on Airbnb?
+    answer: >-
+      Gary strongly advises against it. His weekly discount is under 10%, and
+      monthly is in the low teens. Long-term guests exhaust supplies, leave
+      bigger messes, and are pickier about issues. He prefers booking every
+      weekend at premium rates over a 35% monthly discount.
+  - question: What's the difference between Airbnb arbitrage and buying property?
+    answer: >-
+      Gary buys properties (often with investor partners) because he invests
+      heavily in custom amenities—drop ceilings, custom staircases, saunas—that
+      wouldn't make sense if a landlord could reclaim the property. If doing
+      arbitrage, keep improvements modest and removable.
 toc: true
 tocDepth: 3
-
-# Internal Linking Suggestions
 relatedPosts:
-  - slug: "getting-started-airbnb-arbitrage"
-    title: "Complete Guide to Airbnb Arbitrage"
-
-# Reading Time
-readingTime: "18 min read"
-wordCount: "4200"
+  - slug: getting-started-airbnb-arbitrage
+    title: Complete Guide to Airbnb Arbitrage
+readingTime: 25 min read
+wordCount: '4861'
 ---
-
 **Gary earns $35,000 per month in cash flow from 7 Airbnb properties in Austin, Texas.** After a decade as a marketing executive at eBay and Chegg, he combined his data-driven mindset with a lifelong passion for construction and design to build a short-term rental business generating $5,000-$6,000 net profit per property. Today, Gary runs Home Collective, his property management company, while planning expansion to 20-30 properties.
 
 This case study breaks down exactly how Gary built this Airbnb business, including his specific strategies for property selection, demographic targeting, and pricing psychology that most hosts overlook.

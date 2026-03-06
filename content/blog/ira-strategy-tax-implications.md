@@ -146,8 +146,8 @@ relatedPosts:
     title: >-
       401k Strategy Tax Implications: Complete 2026 Guide to Contributions,
       Withdrawals, and Bracket Control
-readingTime: 10 min read
-wordCount: '2125'
+readingTime: 11 min read
+wordCount: '2187'
 ---
 # Ira Strategy Tax Implications: What Actually Drives the Tax Outcome
 

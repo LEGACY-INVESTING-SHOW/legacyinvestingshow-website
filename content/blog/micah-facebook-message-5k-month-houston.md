@@ -1,28 +1,28 @@
 ---
-# Core SEO Fields
-title: "How Micah Made $5,000 His First Month with One Facebook Message"
-titleTemplate: "%s | Legacy Investing Show Success Stories"
-description: "Micah Hydrick went from analysis paralysis to $5,000/month with a single Facebook Marketplace message. Learn his exact process for finding and launching his first Airbnb arbitrage property in Houston while keeping his full-time job."
-date: 2026-01-23
-modifiedDate: 2026-01-23
+title: 'How Micah Made $5,000 His First Month with One Facebook Message'
+titleTemplate: '%s | Legacy Investing Show Success Stories'
+description: >-
+  Micah Hydrick went from analysis paralysis to $5,000/month with a single
+  Facebook Marketplace message. Learn his exact process for finding and
+  launching his first Airbnb arbitrage property in Houston while keeping his
+  full-time job.
+date: 2026-01-23T00:00:00.000Z
+modifiedDate: 2026-01-23T00:00:00.000Z
 author: Preston Seo
-authorTitle: "Founder, Legacy Investing Show"
-authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
+authorTitle: 'Founder, Legacy Investing Show'
+authorCredentials: '2,000+ students trained, $10M+ student revenue generated'
 category: Success Story
-canonical: "https://www.legacyinvestingshow.com/blog/micah-facebook-message-5k-month-houston"
-
-# SEO Keyword Targeting
+canonical: >-
+  https://www.legacyinvestingshow.com/blog/micah-facebook-message-5k-month-houston
 seo:
-  primaryKeyword: "airbnb success story"
+  primaryKeyword: airbnb success story
   secondaryKeywords:
-    - "rental arbitrage"
-    - "short-term rental investing"
+    - rental arbitrage
+    - short-term rental investing
   longTailKeywords:
-    - "how to start airbnb while working full time"
-    - "first airbnb property tips"
-  searchIntent: "informational"
-
-# Tags
+    - how to start airbnb while working full time
+    - first airbnb property tips
+  searchIntent: informational
 tags:
   - airbnb arbitrage
   - rental arbitrage
@@ -30,92 +30,110 @@ tags:
   - case study
   - success story
   - short-term rental
-
-# Open Graph & Social
 image: /assets/images/blog/success-stories/micah-houston-airbnb.jpg
-imageAlt: "How Micah Made $5,000 His First Month with One Facebook Message - Legacy Investing Show"
+imageAlt: >-
+  How Micah Made $5,000 His First Month with One Facebook Message - Legacy
+  Investing Show
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
 featured: false
-
-# Video Integration
-youtubeId: "VwZtu5ijKoM"
-
-# Multiple Schema Types for Rich Results
+youtubeId: VwZtu5ijKoM
 schema:
   - type: Article
-    headline: "How Micah Made $5,000 His First Month with One Facebook Message"
-    datePublished: "2026-01-23T00:00:00Z"
-    dateModified: "2026-01-23T00:00:00Z"
+    headline: 'How Micah Made $5,000 His First Month with One Facebook Message'
+    datePublished: '2026-01-23T00:00:00Z'
+    dateModified: '2026-01-23T00:00:00Z'
   - type: VideoObject
-    name: "How Micah Made $5,000 His First Month with One Facebook Message - Full Interview"
-    thumbnailUrl: "https://img.youtube.com/vi/VwZtu5ijKoM/maxresdefault.jpg"
-    embedUrl: "https://www.youtube.com/embed/VwZtu5ijKoM"
+    name: >-
+      How Micah Made $5,000 His First Month with One Facebook Message - Full
+      Interview
+    thumbnailUrl: 'https://img.youtube.com/vi/VwZtu5ijKoM/maxresdefault.jpg'
+    embedUrl: 'https://www.youtube.com/embed/VwZtu5ijKoM'
   - type: HowTo
-    name: "How to Build an Airbnb Business Like This Success Story"
-
-# Breadcrumbs
+    name: How to Build an Airbnb Business Like This Success Story
 breadcrumbs:
-  - name: "Home"
-    url: "/"
-  - name: "Blog"
-    url: "/blog"
-  - name: "Success Stories"
-    url: "/blog/category/success-stories"
-
-# Statistics (AI-crawler accessible, renders as stat cards)
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog
+  - name: Success Stories
+    url: /blog/category/success-stories
 statistics:
-  - value: "$5,000"
-    label: "First Month Revenue"
-    icon: "dollar"
-    context: "Gross revenue in first month"
-    source: "Student Interview, April 2024"
-  - value: "1"
-    label: "Property"
-    icon: "home"
-    context: "Houston, Texas market"
-  - value: "5 months"
-    label: "Time to Launch"
-    icon: "clock"
-    context: "From joining to going live"
-  - value: "$15,000"
-    label: "Setup Investment"
-    icon: "star"
-    context: "Furniture and amenities"
-  - value: "5 min"
-    label: "First Response"
-    icon: "star"
-    context: "Facebook message reply time"
-
-# FAQ (FAQPage schema + accordion rendering)
+  - value: '$5,000'
+    label: First Month Revenue
+    icon: dollar
+    context: Gross revenue in first month
+    source: 'Student Interview, April 2024'
+  - value: '1'
+    label: Property
+    icon: home
+    context: 'Houston, Texas market'
+  - value: 5 months
+    label: Time to Launch
+    icon: clock
+    context: From joining to going live
+  - value: '$15,000'
+    label: Setup Investment
+    icon: star
+    context: Furniture and amenities
+  - value: 5 min
+    label: First Response
+    icon: star
+    context: Facebook message reply time
 faq:
-  - question: "Can you start Airbnb arbitrage without cold calling?"
-    answer: "Yes. Micah used Facebook Marketplace messaging instead of cold calling to find his first property. He sent one message and received a response within 5 minutes, eventually signing a lease without ever making a single phone call."
-  - question: "How much did Micah make in his first month of Airbnb?"
-    answer: "Micah generated approximately $5,000 in gross revenue in his first month (March 2024) with a single property in Houston. His average nightly rate was $250, though he often exceeded $300 per night on bookings."
-  - question: "How much does it cost to start Airbnb arbitrage in Houston?"
-    answer: "Micah invested approximately $15,000 to furnish his first property, which included all furniture, outdoor amenities like a fire pit, pool accessories, and decor. He worked with an interior designer friend to maximize his budget."
-  - question: "Is Airbnb arbitrage good for introverts?"
-    answer: "Yes, according to Micah. He specifically chose Airbnb arbitrage because it doesn't require face-to-face sales or doorstep interactions. Everything can be done over calls, messages, or even just Facebook Marketplace—making it ideal for introverts."
-  - question: "How long does it take to get your first Airbnb arbitrage property?"
-    answer: "Micah joined Legacy Investing Show in September 2023 and went live with his first property in February 2024—about 5 months. However, 6-8 weeks of that was spent in analysis paralysis. With focused action, most students can secure a property in 30-60 days."
-  - question: "What markets are good for Airbnb arbitrage near Houston?"
-    answer: "Micah operates in the Houston area, which benefits from proximity to Galveston (tourist destination), strong corporate travel demand, and events throughout the year. Spring break, summer, and holidays are peak seasons."
-  - question: "Do you need real estate experience for Airbnb arbitrage?"
-    answer: "No. Micah had no real estate experience before starting. His background was in entrepreneurship (he'd tried Amazon FBA and dropshipping, both of which failed). Legacy Investing Show's training and scripts helped him overcome the learning curve."
-  - question: "What is the Facebook Marketplace method for finding Airbnb properties?"
-    answer: "Instead of cold calling landlords, you can message property owners directly through Facebook Marketplace rental listings. Micah sent a simple message explaining his business model, and the landlord responded within 5 minutes expressing interest."
-
-# Table of Contents
+  - question: Can you start Airbnb arbitrage without cold calling?
+    answer: >-
+      Yes. Micah used Facebook Marketplace messaging instead of cold calling to
+      find his first property. He sent one message and received a response
+      within 5 minutes, eventually signing a lease without ever making a single
+      phone call.
+  - question: How much did Micah make in his first month of Airbnb?
+    answer: >-
+      Micah generated approximately $5,000 in gross revenue in his first month
+      (March 2024) with a single property in Houston. His average nightly rate
+      was $250, though he often exceeded $300 per night on bookings.
+  - question: How much does it cost to start Airbnb arbitrage in Houston?
+    answer: >-
+      Micah invested approximately $15,000 to furnish his first property, which
+      included all furniture, outdoor amenities like a fire pit, pool
+      accessories, and decor. He worked with an interior designer friend to
+      maximize his budget.
+  - question: Is Airbnb arbitrage good for introverts?
+    answer: >-
+      Yes, according to Micah. He specifically chose Airbnb arbitrage because it
+      doesn't require face-to-face sales or doorstep interactions. Everything
+      can be done over calls, messages, or even just Facebook Marketplace—making
+      it ideal for introverts.
+  - question: How long does it take to get your first Airbnb arbitrage property?
+    answer: >-
+      Micah joined Legacy Investing Show in September 2023 and went live with
+      his first property in February 2024—about 5 months. However, 6-8 weeks of
+      that was spent in analysis paralysis. With focused action, most students
+      can secure a property in 30-60 days.
+  - question: What markets are good for Airbnb arbitrage near Houston?
+    answer: >-
+      Micah operates in the Houston area, which benefits from proximity to
+      Galveston (tourist destination), strong corporate travel demand, and
+      events throughout the year. Spring break, summer, and holidays are peak
+      seasons.
+  - question: Do you need real estate experience for Airbnb arbitrage?
+    answer: >-
+      No. Micah had no real estate experience before starting. His background
+      was in entrepreneurship (he'd tried Amazon FBA and dropshipping, both of
+      which failed). Legacy Investing Show's training and scripts helped him
+      overcome the learning curve.
+  - question: What is the Facebook Marketplace method for finding Airbnb properties?
+    answer: >-
+      Instead of cold calling landlords, you can message property owners
+      directly through Facebook Marketplace rental listings. Micah sent a simple
+      message explaining his business model, and the landlord responded within 5
+      minutes expressing interest.
 toc: true
 tocDepth: 3
-
-# Reading Time
-readingTime: "20 min read"
-wordCount: "3809"
+readingTime: 19 min read
+wordCount: '3705'
 ---
-
 **Micah Hydrick earned $5,000 in his first month with just one Airbnb property in Houston—and he found it through a single Facebook message.** As a self-described introvert who gets nervous talking to new people, Micah thought cold calling landlords would be his biggest obstacle. Instead, he discovered a method that eliminated phone anxiety entirely and landed his first deal within 5 minutes of sending one message.
 
 This case study breaks down exactly how Micah went from analysis paralysis to profitable Airbnb arbitrage entrepreneur, including the Facebook Marketplace approach that introverts will love, his complete property setup for under $15,000, and how he manages everything in less than an hour per week.

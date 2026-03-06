@@ -132,8 +132,8 @@ relatedPosts:
     title: 'Best Tax Deductions for High Income Earners: Complete 2026 Guide'
   - slug: best-tax-deductions-for-individuals
     title: 'Best Tax Deductions for Individuals: Complete 2026 Guide'
-readingTime: 9 min read
-wordCount: '2015'
+readingTime: 11 min read
+wordCount: '2123'
 ---
 If you run a pass-through company, the **qbi deduction for small business owners** can be one of the highest-impact tax levers in your plan. But it is also one of the easiest deductions to misread because the headline rule (up to 20% off qualified business income) is only the starting point. Your actual result depends on taxable income, business type, wages, and in some cases qualified property.
 

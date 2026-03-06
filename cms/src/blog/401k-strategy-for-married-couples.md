@@ -147,8 +147,8 @@ relatedPosts:
     title: >-
       401k Strategy for Recession: Complete 2026 Guide to Protecting Retirement
       Without Panic Selling
-readingTime: 10 min read
-wordCount: '2141'
+readingTime: 12 min read
+wordCount: '2229'
 ---
 A strong 401k strategy for married couples is not just about picking funds. It is about coordinating two careers, two tax profiles, two employer plans, and one shared retirement target. Couples that coordinate contributions, tax treatment, and withdrawal sequencing often create more flexibility than couples that simply set equal percentages and forget it.
 

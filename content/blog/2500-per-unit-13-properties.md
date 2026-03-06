@@ -1,28 +1,25 @@
 ---
-# Core SEO Fields
-title: "How Leo Built a $32,500/Month Airbnb Business with 13 Properties in Cleveland (2026)"
-titleTemplate: "%s | Legacy Investing Show Success Stories"
-description: "Leo went from selling on eBay at age 15 and building a successful children"
-date: 2026-02-25
-modifiedDate: 2026-01-23
+title: >-
+  How Leo Built a $32,500/Month Airbnb Business with 13 Properties in Cleveland
+  (2026)
+titleTemplate: '%s | Legacy Investing Show Success Stories'
+description: Leo went from selling on eBay at age 15 and building a successful children
+date: 2026-02-25T00:00:00.000Z
+modifiedDate: 2026-01-23T00:00:00.000Z
 author: Preston Seo
-authorTitle: "Founder, Legacy Investing Show"
-authorCredentials: "2,000+ students trained, $10M+ student revenue generated"
+authorTitle: 'Founder, Legacy Investing Show'
+authorCredentials: '2,000+ students trained, $10M+ student revenue generated'
 category: Success Story
-canonical: "https://www.legacyinvestingshow.com/blog/2500-per-unit-13-properties"
-
-# SEO Keyword Targeting
+canonical: 'https://www.legacyinvestingshow.com/blog/2500-per-unit-13-properties'
 seo:
-  primaryKeyword: "airbnb success story"
+  primaryKeyword: airbnb success story
   secondaryKeywords:
-    - "rental arbitrage"
-    - "short-term rental investing"
+    - rental arbitrage
+    - short-term rental investing
   longTailKeywords:
-    - "how much can you make with airbnb"
-    - "is airbnb arbitrage worth it"
-  searchIntent: "informational"
-
-# Tags
+    - how much can you make with airbnb
+    - is airbnb arbitrage worth it
+  searchIntent: informational
 tags:
   - airbnb arbitrage
   - rental arbitrage
@@ -30,96 +27,125 @@ tags:
   - case study
   - success story
   - short-term rental
-
-# Open Graph & Social
 image: /assets/images/blog/success-stories/leo-cleveland-airbnb.jpg
-imageAlt: "How Leo Built a $32,500/Month Airbnb Business with 13 Properties in Cleveland (2026) - Legacy Investing Show"
+imageAlt: >-
+  How Leo Built a $32,500/Month Airbnb Business with 13 Properties in Cleveland
+  (2026) - Legacy Investing Show
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
 featured: false
-
-# Video Integration
-youtubeId: "AaVqUu4AcW8"
-
-# Multiple Schema Types for Rich Results
+youtubeId: AaVqUu4AcW8
 schema:
   - type: Article
-    headline: "How Leo Built a $32,500/Month Airbnb Business with 13 Properties in Cleveland (2026)"
-    datePublished: "2026-02-25T00:00:00Z"
-    dateModified: "2026-01-23T00:00:00Z"
+    headline: >-
+      How Leo Built a $32,500/Month Airbnb Business with 13 Properties in
+      Cleveland (2026)
+    datePublished: '2026-02-25T00:00:00Z'
+    dateModified: '2026-01-23T00:00:00Z'
   - type: VideoObject
-    name: "How Leo Built a $32,500/Month Airbnb Business with 13 Properties in Cleveland (2026) - Full Interview"
-    thumbnailUrl: "https://img.youtube.com/vi/AaVqUu4AcW8/maxresdefault.jpg"
-    embedUrl: "https://www.youtube.com/embed/AaVqUu4AcW8"
+    name: >-
+      How Leo Built a $32,500/Month Airbnb Business with 13 Properties in
+      Cleveland (2026) - Full Interview
+    thumbnailUrl: 'https://img.youtube.com/vi/AaVqUu4AcW8/maxresdefault.jpg'
+    embedUrl: 'https://www.youtube.com/embed/AaVqUu4AcW8'
   - type: HowTo
-    name: "How to Build an Airbnb Business Like This Success Story"
-
-# Breadcrumbs
+    name: How to Build an Airbnb Business Like This Success Story
 breadcrumbs:
-  - name: "Home"
-    url: "/"
-  - name: "Blog"
-    url: "/blog"
-  - name: "Success Stories"
-    url: "/blog/category/success-stories"
-
-# Statistics (AI-crawler accessible, renders as stat cards)
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog
+  - name: Success Stories
+    url: /blog/category/success-stories
 statistics:
-  - value: "$32,500"
-    label: "Monthly Cash Flow (Projected)"
-    icon: "dollar"
-    context: "After all expenses"
-    source: "Student Interview, 2024"
-  - value: "13"
-    label: "Properties"
-    icon: "home"
-    context: "Cleveland market (4 live + 9 negotiating)"
-  - value: "2 Months"
-    label: "Time to First Deal"
-    icon: "clock"
-    context: "From training to units live"
-  - value: "$2,500"
-    label: "Net Per 2BR Unit"
-    icon: "star"
-    context: "$5,500 revenue - $3,000 expenses"
-  - value: "$1,500"
-    label: "Net Per 1BR Unit"
-    icon: "chart"
-    context: "$4,500 revenue - $3,000 expenses"
-  - value: "1-2 hrs"
-    label: "Weekly Management"
-    icon: "users"
-    context: "With systems in place"
-
-# FAQ (FAQPage schema + accordion rendering)
+  - value: '$32,500'
+    label: Monthly Cash Flow (Projected)
+    icon: dollar
+    context: After all expenses
+    source: 'Student Interview, 2024'
+  - value: '13'
+    label: Properties
+    icon: home
+    context: Cleveland market (4 live + 9 negotiating)
+  - value: 2 Months
+    label: Time to First Deal
+    icon: clock
+    context: From training to units live
+  - value: '$2,500'
+    label: Net Per 2BR Unit
+    icon: star
+    context: '$5,500 revenue - $3,000 expenses'
+  - value: '$1,500'
+    label: Net Per 1BR Unit
+    icon: chart
+    context: '$4,500 revenue - $3,000 expenses'
+  - value: 1-2 hrs
+    label: Weekly Management
+    icon: users
+    context: With systems in place
 faq:
-  - question: "How much money can you make with Airbnb arbitrage?"
-    answer: "Leo generates approximately $32,500/month in projected cash flow from 13 properties in Cleveland. His one-bedroom units net around $1,500/month each ($4,500 revenue minus $3,000 expenses), while two-bedroom units net approximately $2,500/month each ($5,500 revenue minus $3,200 expenses)."
-  - question: "Is Airbnb arbitrage still profitable in 2026?"
-    answer: "Yes. Leo started his Airbnb arbitrage business in summer 2024 and scaled to 13 units within months. His first month of data showed strong performance with one-bedrooms at $4,500 revenue and two-bedrooms at $5,500 revenue. Success depends on market selection, systems building, and operational efficiency."
-  - question: "How long does it take to start making money with Airbnb arbitrage?"
-    answer: "Leo went from attending his first conference to having units live in Cleveland within approximately two months. He originally planned to set up five units in 10 days but discovered the building only allowed one unit every two weeks per operator. He stayed three weeks to set up his first two units, then his systems handled the rest remotely."
-  - question: "Do you need experience to start Airbnb arbitrage?"
-    answer: "No formal real estate experience is required, but business experience helps. Leo had extensive entrepreneurial background from eBay selling at age 15, running a children's nightlight company (Lil World) that he sold, and setting up cafeterias and nail salons internationally. This experience helped him build systems for efficient scaling."
-  - question: "How much does it cost to start Airbnb arbitrage?"
-    answer: "Leo recommends having capital for first month's rent, security deposit, furniture, and supplies. He hired VAs at $400/month instead of $600-800/month by finding them independently. His approach of assembling furniture in a storage unit before moving to apartments reduced costs and avoided clogging building mail rooms with packages."
-  - question: "What is the best market for Airbnb arbitrage?"
-    answer: "Leo chose Cleveland based on recommendations from experienced operators at a conference. The market offered good returns and allowed multiple units per operator (four units max per operator in his building). He recommends starting locally rather than out-of-state for your first property, as his out-of-state approach required a three-week on-site stay to build systems."
-  - question: "Is Legacy Investing Show worth it?"
-    answer: "Leo enrolled in Legacy Investing Show along with other courses and attended seminars during summer. Within two months of learning, he was in Cleveland signing units. He credits the training for providing the framework that enabled him to scale quickly, though he emphasizes following the system rather than buying referrals."
-  - question: "How do you manage Airbnb properties remotely?"
-    answer: "Leo built comprehensive SOPs using Monday.com and Slack, hired VAs at $400/month, found a reliable cleaning crew locally, and hired an operational manager on the ground in Cleveland. His system includes assembling furniture in a storage unit, coordinating delivery to apartments, and using Guesty for property management. Without growth activities, he estimates 1-2 hours per week for management."
-
-# Table of Contents
+  - question: How much money can you make with Airbnb arbitrage?
+    answer: >-
+      Leo generates approximately $32,500/month in projected cash flow from 13
+      properties in Cleveland. His one-bedroom units net around $1,500/month
+      each ($4,500 revenue minus $3,000 expenses), while two-bedroom units net
+      approximately $2,500/month each ($5,500 revenue minus $3,200 expenses).
+  - question: Is Airbnb arbitrage still profitable in 2026?
+    answer: >-
+      Yes. Leo started his Airbnb arbitrage business in summer 2024 and scaled
+      to 13 units within months. His first month of data showed strong
+      performance with one-bedrooms at $4,500 revenue and two-bedrooms at $5,500
+      revenue. Success depends on market selection, systems building, and
+      operational efficiency.
+  - question: How long does it take to start making money with Airbnb arbitrage?
+    answer: >-
+      Leo went from attending his first conference to having units live in
+      Cleveland within approximately two months. He originally planned to set up
+      five units in 10 days but discovered the building only allowed one unit
+      every two weeks per operator. He stayed three weeks to set up his first
+      two units, then his systems handled the rest remotely.
+  - question: Do you need experience to start Airbnb arbitrage?
+    answer: >-
+      No formal real estate experience is required, but business experience
+      helps. Leo had extensive entrepreneurial background from eBay selling at
+      age 15, running a children's nightlight company (Lil World) that he sold,
+      and setting up cafeterias and nail salons internationally. This experience
+      helped him build systems for efficient scaling.
+  - question: How much does it cost to start Airbnb arbitrage?
+    answer: >-
+      Leo recommends having capital for first month's rent, security deposit,
+      furniture, and supplies. He hired VAs at $400/month instead of
+      $600-800/month by finding them independently. His approach of assembling
+      furniture in a storage unit before moving to apartments reduced costs and
+      avoided clogging building mail rooms with packages.
+  - question: What is the best market for Airbnb arbitrage?
+    answer: >-
+      Leo chose Cleveland based on recommendations from experienced operators at
+      a conference. The market offered good returns and allowed multiple units
+      per operator (four units max per operator in his building). He recommends
+      starting locally rather than out-of-state for your first property, as his
+      out-of-state approach required a three-week on-site stay to build systems.
+  - question: Is Legacy Investing Show worth it?
+    answer: >-
+      Leo enrolled in Legacy Investing Show along with other courses and
+      attended seminars during summer. Within two months of learning, he was in
+      Cleveland signing units. He credits the training for providing the
+      framework that enabled him to scale quickly, though he emphasizes
+      following the system rather than buying referrals.
+  - question: How do you manage Airbnb properties remotely?
+    answer: >-
+      Leo built comprehensive SOPs using Monday.com and Slack, hired VAs at
+      $400/month, found a reliable cleaning crew locally, and hired an
+      operational manager on the ground in Cleveland. His system includes
+      assembling furniture in a storage unit, coordinating delivery to
+      apartments, and using Guesty for property management. Without growth
+      activities, he estimates 1-2 hours per week for management.
 toc: true
 tocDepth: 3
-
-# Reading Time
-readingTime: "24 min read"
-wordCount: "4780"
+readingTime: 24 min read
+wordCount: '4607'
 ---
-
 **Leo earns an estimated $32,500 per month in cash flow from 13 Airbnb arbitrage properties in Cleveland.** At 35 years old, with a history of entrepreneurial ventures starting from selling on eBay at age 15, Leo brought his business-building expertise to the short-term rental space. He secured his first four units and negotiated nine additional properties in a single building within months of starting. Today, his one-bedroom units net approximately $1,500/month each, while his two-bedroom units generate around $2,500/month net profit.
 
 This case study breaks down exactly how Leo built this Airbnb arbitrage business, including his systems-first approach, storage unit assembly method, and the operational frameworks that allow him to manage everything with just 1-2 hours per week.

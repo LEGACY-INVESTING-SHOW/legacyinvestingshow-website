@@ -137,8 +137,8 @@ relatedPosts:
     title: >-
       Best Roth Conversion Strategy Calculator: Practical Guide, Break-Even
       Math, and Real Tax Examples
-readingTime: 8 min read
-wordCount: '1760'
+readingTime: 10 min read
+wordCount: '1858'
 ---
 Most owners searching for qbi deduction phase out 2025 are trying to answer one practical question: should I spend time planning this, or is my deduction already locked in? For many households, the answer is yes, planning still matters. A small change in taxable income, compensation structure, or timing can move you from a partial deduction to a much larger one.
 

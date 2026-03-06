@@ -143,8 +143,8 @@ relatedPosts:
     title: 'Airbnb Cash Flow vs Notes Investing: Which Strategy Works Better in 2026?'
   - slug: atm-business-guide
     title: 'ATM Business Guide: Passive Income from Cash Machines'
-readingTime: 9 min read
-wordCount: '2083'
+readingTime: 11 min read
+wordCount: '2180'
 ---
 Royalty income tax treatment is one of the most misunderstood parts of personal finance because the same dollar can look passive in one contract and active business income in another. If you are a creator, investor, inventor, mineral-rights owner, or operator with licensing revenue, this guide helps you make practical tax decisions before filing season stress starts.
 

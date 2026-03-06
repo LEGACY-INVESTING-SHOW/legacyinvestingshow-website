@@ -70,23 +70,12 @@ function formatTitle(slug) {
 }
 
 /**
- * Build a SERP-friendly <title> string capped near 60 chars.
+ * Build a normalized <title> string without forced length truncation.
  */
 function buildSEOTitle(rawTitle) {
-    const title = (rawTitle || 'Tax Strategy').replace(/\s+/g, ' ').trim();
+    const title = (rawTitle || 'Tax Strategy').replace(/\s+/g, ' ').trim() || 'Tax Strategy';
     const suffix = ' | Legacy Investing Show';
-    const maxLen = 60;
-
-    if ((title + suffix).length <= maxLen) {
-        return `${title}${suffix}`;
-    }
-
-    const budgetWithSuffix = maxLen - suffix.length - 1; // reserve ellipsis
-    if (budgetWithSuffix >= 28) {
-        return `${title.slice(0, budgetWithSuffix).trimEnd()}…${suffix}`;
-    }
-
-    return `${title.slice(0, maxLen - 1).trimEnd()}…`;
+    return title.endsWith(suffix) ? title : `${title}${suffix}`;
 }
 
 /**
@@ -648,7 +637,7 @@ function generateIndexPage(strategies, personas) {
                 <div class="cta-card">
                     <h2 class="cta-card__title">Master These Tax Strategies</h2>
                     <p class="cta-card__text">Join the 3-Day Wealth Challenge to learn how to implement these strategies and build lasting wealth.</p>
-                    <a href="https://www.managemoney101.com/challengeoptin" class="cta-card__button">
+                    <a href="https://www.joinlwb.com/intensive" class="cta-card__button">
                         Start the Challenge
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -1130,7 +1119,7 @@ function generatePersonaPage(persona, strategies) {
                 <div class="cta-card">
                     <h2 class="cta-card__title">Learn More Tax Strategies</h2>
                     <p class="cta-card__text">Join the 3-Day Wealth Challenge to learn how to implement these strategies for your specific situation.</p>
-                    <a href="https://www.managemoney101.com/challengeoptin" class="cta-card__button">
+                    <a href="https://www.joinlwb.com/intensive" class="cta-card__button">
                         Start the Challenge
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M5 12h14M12 5l7 7-7 7"/>

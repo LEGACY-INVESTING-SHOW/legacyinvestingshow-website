@@ -139,8 +139,8 @@ relatedPosts:
     title: >-
       Asset Allocation Tax Implications: Complete 2026 Guide for After-Tax
       Portfolio Returns
-readingTime: 9 min read
-wordCount: '1936'
+readingTime: 11 min read
+wordCount: '2031'
 ---
 # Tax Loss Harvesting for Busy Professionals: Complete 2026 Guide
 

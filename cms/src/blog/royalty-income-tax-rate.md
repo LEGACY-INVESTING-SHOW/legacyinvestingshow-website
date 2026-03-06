@@ -141,8 +141,8 @@ relatedPosts:
     title: 'Airbnb Cash Flow vs Notes Investing: Which Strategy Works Better in 2026?'
   - slug: atm-business-guide
     title: 'ATM Business Guide: Passive Income from Cash Machines'
-readingTime: 10 min read
-wordCount: '2127'
+readingTime: 12 min read
+wordCount: '2236'
 ---
 Most people look for a single royalty income tax rate, but the real answer is a framework, not one number. In the U.S., royalties are usually taxed as ordinary income, then adjusted by how the income is classified, whether extra surtaxes apply, and what deductions you support with documentation.
 

@@ -146,8 +146,8 @@ relatedPosts:
     title: >-
       Best Roth Conversion Strategy Calculator: Practical Guide, Break-Even
       Math, and Real Tax Examples
-readingTime: 9 min read
-wordCount: '2067'
+readingTime: 11 min read
+wordCount: '2148'
 ---
 If you are asking how does qbi deduction work with a loss, start with one core mechanic: Section 199A uses net qualified business income, not just the business that made money. A loss can eliminate your current-year deduction and then carry forward to reduce future QBI. That is why a great tax result this year can quietly reduce next year's benefit if you do not model both years together.
 
