@@ -1218,8 +1218,8 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
             <div class="container-custom">
                 ${renderPageCtaSection({
                   variant: 'tax_masterclass',
-                  title: 'Turn The Comparison Into A Full Tax Plan',
-                  text: 'The right answer is rarely one isolated move. Use the free masterclass to see how tax strategy, entity structure, retirement planning, and documentation fit together.',
+                  title: 'Take The Comparison Into Before You File',
+                  text: 'The live challenge runs March 27-29, 2026, from 10 AM to 4 PM Eastern each day. Day 1 helps you read the return, Day 2 builds the strategy stack, and Day 3 turns it into a dated 12-month execution plan.',
                   trackLocation: 'compare_page_cta',
                 })}
             </div>

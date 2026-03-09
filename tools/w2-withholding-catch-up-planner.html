@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>W-2 Withholding Catch-Up Planner (Late-Year Fix) | Legacy Investing Show</title>
+    <title>W-2 Withholding Catch-Up Planner (L… | Legacy Investing Show</title>
     <meta name="description" content="Calculate how much extra withholding you need per paycheck to hit a year-end target, and compare it to making estimated payments.">
     <meta name="keywords" content="W-2 Withholding Catch-Up Planner (Late-Year Fix), Withholding, Calculate how much extra withholding you need per paycheck to hit a year-end target, and compare it to making estimated payments., What This Tool Is, Execution Notes, Estimated Tax Safe Harbor Planner, Annualized Income Estimated Tax Calculator">
     <meta name="robots" content="index, follow">
@@ -25,64 +25,128 @@
     <link rel="icon" type="image/png" href="/assets/images/logo.png">
     <link rel="stylesheet" href="/assets/css/styles.css">
 
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"W-2 Withholding Catch-Up Planner (Late-Year Fix)","description":"Calculate how much extra withholding you need per paycheck to hit a year-end target, and compare it to making estimated payments.","applicationCategory":"FinanceApplication","applicationSubCategory":"Withholding","operatingSystem":"Web","isAccessibleForFree":true,"browserRequirements":"Requires JavaScript","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Interactive calculator","Worked execution notes","Documentation checklist","FAQ","What This Tool Is","Execution Notes"],"keywords":"W-2 Withholding Catch-Up Planner (Late-Year Fix), Withholding, Estimated Tax Safe Harbor Planner, Annualized Income Estimated Tax Calculator","datePublished":"2026-03-06","dateModified":"2026-03-06","url":"https://www.legacyinvestingshow.com/tools/w2-withholding-catch-up-planner","publisher":{"@type":"Organization","name":"Legacy Investing Show"},"author":{"@type":"Person","name":"Preston Seo"}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"W-2 Withholding Catch-Up Planner (Late-Year Fix)","description":"Calculate how much extra withholding you need per paycheck to hit a year-end target, and compare it to making estimated payments.","applicationCategory":"FinanceApplication","applicationSubCategory":"Withholding","operatingSystem":"Web","isAccessibleForFree":true,"browserRequirements":"Requires JavaScript","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Interactive calculator","Worked execution notes","Documentation checklist","FAQ","What This Tool Is","Execution Notes"],"keywords":"W-2 Withholding Catch-Up Planner (Late-Year Fix), Withholding, Estimated Tax Safe Harbor Planner, Annualized Income Estimated Tax Calculator","datePublished":"2026-03-09","dateModified":"2026-03-09","url":"https://www.legacyinvestingshow.com/tools/w2-withholding-catch-up-planner","publisher":{"@type":"Organization","name":"Legacy Investing Show"},"author":{"@type":"Person","name":"Preston Seo"}}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.legacyinvestingshow.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://www.legacyinvestingshow.com/tools/"},{"@type":"ListItem","position":3,"name":"W-2 Withholding Catch-Up Planner (Late-Year Fix)","item":"https://www.legacyinvestingshow.com/tools/w2-withholding-catch-up-planner"}]}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Should I do withholding or estimated payments?","acceptedAnswer":{"@type":"Answer","text":"It depends on your income mix and how predictable your cash flow is. This tool helps you compare the execution paths."}},{"@type":"Question","name":"What should my target be?","acceptedAnswer":{"@type":"Answer","text":"Many people use a safe-harbor floor, a projection from their CPA, or a conservative buffer. Pick a target you will actually execute."}},{"@type":"Question","name":"Does this include state taxes?","acceptedAnswer":{"@type":"Answer","text":"Yes, if your target includes state. The tool is dollars-in, dollars-out."}}]}</script>
 
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2578PT1WSS');
+</script>
 
     <style>
+        :root {
+            --tools-ink: #111827;
+            --tools-muted: #475569;
+            --tools-line: rgba(15, 23, 42, 0.1);
+            --tools-accent: #c9a961;
+            --tools-accent-strong: #9f7a27;
+            --tools-surface: #fffdf8;
+            --tools-surface-strong: #f5efe2;
+            --tools-card: rgba(255, 255, 255, 0.92);
+            --tools-shadow: 0 24px 64px rgba(15, 23, 42, 0.08);
+        }
         .tools-hero {
-            padding: 8rem 0 3rem;
+            position: relative;
+            overflow: hidden;
+            padding: 8rem 0 3.5rem;
             background:
-              radial-gradient(circle at top right, rgba(201, 169, 97, 0.18), transparent 36%),
-              linear-gradient(180deg, #faf7f2 0%, #ffffff 100%);
+              radial-gradient(circle at top right, rgba(201, 169, 97, 0.2), transparent 34%),
+              radial-gradient(circle at left center, rgba(15, 23, 42, 0.06), transparent 26%),
+              linear-gradient(180deg, #fbf8f1 0%, #ffffff 100%);
+        }
+        .tools-hero::after {
+            content: '';
+            position: absolute;
+            inset: auto 0 -1px;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(201, 169, 97, 0), rgba(201, 169, 97, 0.5), rgba(201, 169, 97, 0));
         }
         .tools-hero__grid {
             display: grid;
-            gap: 1.25rem;
+            gap: 1.4rem;
             align-items: start;
         }
         @media (min-width: 1024px) {
             .tools-hero__grid {
-                grid-template-columns: minmax(0, 1.45fr) minmax(300px, 0.8fr);
+                grid-template-columns: minmax(0, 1.38fr) minmax(320px, 0.84fr);
             }
         }
         .tools-badge {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            padding: 0.5rem 1rem;
-            background: #111827;
-            color: white;
+            padding: 0.52rem 1rem;
+            background: rgba(17, 24, 39, 0.92);
+            color: #ffffff;
             font-size: 0.75rem;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 0.08em;
+            letter-spacing: 0.1em;
             border-radius: 999px;
             margin-bottom: 1rem;
+            box-shadow: 0 14px 36px rgba(15, 23, 42, 0.12);
         }
         .tools-title {
             font-size: clamp(2.25rem, 5vw, 4.3rem);
-            font-weight: 700;
-            line-height: 0.98;
+            font-weight: 800;
+            line-height: 0.94;
             letter-spacing: -0.04em;
-            color: #111827;
+            color: var(--tools-ink);
             margin-bottom: 0.95rem;
-            max-width: 12ch;
+            max-width: 11ch;
         }
         .tools-subtitle {
-            max-width: 46rem;
-            color: #475569;
-            font-size: 1.08rem;
-            line-height: 1.78;
+            max-width: 44rem;
+            color: var(--tools-muted);
+            font-size: 1.06rem;
+            line-height: 1.76;
+        }
+        .tools-hero__actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.35rem;
+        }
+        .tools-action {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.55rem;
+            min-height: 2.9rem;
+            padding: 0.82rem 1.15rem;
+            border-radius: 999px;
+            font-weight: 800;
+            text-decoration: none;
+            transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+        }
+        .tools-action:hover {
+            transform: translateY(-1px);
+        }
+        .tools-action--primary {
+            background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+            color: #ffffff;
+            box-shadow: 0 18px 34px rgba(17, 24, 39, 0.14);
+        }
+        .tools-action--secondary {
+            background: rgba(255, 255, 255, 0.82);
+            color: var(--tools-ink);
+            border: 1px solid rgba(17, 24, 39, 0.12);
+            backdrop-filter: blur(8px);
         }
         .tools-hero__panel {
-            padding: 1.3rem 1.35rem 1.4rem;
-            border-radius: 1.2rem;
-            background: linear-gradient(160deg, #182234, #0f172a);
+            padding: 1.35rem 1.35rem 1.4rem;
+            border-radius: 1.4rem;
+            background:
+              linear-gradient(165deg, rgba(24, 34, 52, 0.98), rgba(15, 23, 42, 0.98)),
+              linear-gradient(135deg, rgba(201, 169, 97, 0.18), rgba(201, 169, 97, 0));
             color: white;
-            box-shadow: 0 24px 56px rgba(15, 23, 42, 0.18);
+            box-shadow: 0 28px 64px rgba(15, 23, 42, 0.18);
+            border: 1px solid rgba(255, 255, 255, 0.08);
         }
         .tools-hero__panel-eyebrow {
             margin: 0 0 0.55rem;
@@ -104,22 +168,51 @@
             font-size: 0.96rem;
             line-height: 1.72;
         }
+        .tools-hero__panel-list {
+            display: grid;
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+        .tools-hero__panel-point {
+            display: grid;
+            gap: 0.2rem;
+            padding-top: 0.75rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .tools-hero__panel-point strong {
+            color: #ffffff;
+            font-size: 0.94rem;
+        }
+        .tools-hero__panel-point span {
+            color: #cbd5e1;
+            font-size: 0.88rem;
+            line-height: 1.55;
+        }
         .tools-summary-grid {
             display: grid;
-            gap: 0.95rem;
-            margin-top: 1.35rem;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin-top: 1.55rem;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         }
         .tools-summary-card {
-            padding: 1rem 1.05rem;
-            border-radius: 1rem;
-            background: rgba(255, 255, 255, 0.92);
+            position: relative;
+            padding: 1.05rem 1.1rem 1.1rem;
+            border-radius: 1.15rem;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 252, 246, 0.96));
             border: 1px solid rgba(15, 23, 42, 0.08);
-            box-shadow: 0 16px 36px rgba(15, 23, 42, 0.05);
+            box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+        }
+        .tools-summary-card::before {
+            content: '';
+            position: absolute;
+            inset: 0 auto 0 0;
+            width: 3px;
+            border-radius: 999px;
+            background: linear-gradient(180deg, var(--tools-accent), rgba(201, 169, 97, 0));
         }
         .tools-summary-card__eyebrow {
             margin: 0 0 0.45rem;
-            color: #b8933f;
+            color: var(--tools-accent-strong);
             font-size: 0.74rem;
             font-weight: 700;
             letter-spacing: 0.1em;
@@ -137,11 +230,12 @@
         .prose-content {
             color: #374151;
             line-height: 1.75;
-            padding: 1.45rem;
-            border-radius: 1.5rem;
-            background: rgba(255, 255, 255, 0.96);
+            padding: 1.55rem;
+            border-radius: 1.6rem;
+            background:
+              linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(255, 252, 247, 0.98));
             border: 1px solid rgba(15, 23, 42, 0.08);
-            box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+            box-shadow: var(--tools-shadow);
         }
         .prose-content h2 { color: #111827; font-size: 1.6rem; line-height: 1.3; margin-bottom: 1rem; }
         .prose-content p { margin-bottom: 1rem; }
@@ -210,31 +304,39 @@
           font-size: 0.85rem;
           white-space: nowrap;
           background: linear-gradient(180deg, rgba(255,255,255,1), rgba(249,250,251,1));
+          transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, background 0.18s ease;
         }
         .jumpbar__link:hover {
           border-color: rgba(17, 24, 39, 0.28);
           box-shadow: 0 10px 22px rgba(17, 24, 39, 0.06);
           transform: translateY(-1px);
         }
+        .jumpbar__link.is-active {
+          background: linear-gradient(135deg, rgba(17, 24, 39, 0.98), rgba(39, 50, 66, 0.98));
+          border-color: rgba(17, 24, 39, 0.98);
+          color: #ffffff;
+          box-shadow: 0 12px 24px rgba(17, 24, 39, 0.12);
+        }
 
         .tool-card {
-            background: white;
+            background: linear-gradient(180deg, #ffffff, #fffdf9);
             border: 1px solid rgba(15, 23, 42, 0.08);
-            border-radius: 1.25rem;
+            border-radius: 1.4rem;
             overflow: hidden;
             margin: 1.25rem 0 2rem;
-            box-shadow: 0 22px 54px rgba(15, 23, 42, 0.08);
+            box-shadow: 0 30px 70px rgba(15, 23, 42, 0.08);
         }
         .tool-card__header {
-            padding: 1.35rem 1.25rem 0.85rem;
-            border-bottom: 1px solid #f3f4f6;
-            background: linear-gradient(180deg, rgba(250, 247, 242, 0.7), rgba(255, 255, 255, 0.94));
+            padding: 1.35rem 1.3rem 1rem;
+            border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+            background:
+              linear-gradient(180deg, rgba(250, 247, 242, 0.92), rgba(255, 255, 255, 0.96));
         }
         .tool-card__title {
             margin: 0;
             color: #111827;
             font-weight: 800;
-            font-size: 1.25rem;
+            font-size: 1.28rem;
             line-height: 1.25;
         }
         .tool-card__subtitle {
@@ -243,24 +345,55 @@
             font-size: 0.95rem;
             line-height: 1.55;
         }
+        .tool-assist {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.9rem;
+            padding: 0.85rem 1.25rem;
+            background: linear-gradient(180deg, rgba(250, 247, 242, 0.6), rgba(255, 255, 255, 0.96));
+            border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+        }
+        .tool-assist__copy {
+            min-width: 0;
+        }
+        .tool-assist__title {
+            margin: 0;
+            color: #111827;
+            font-size: 0.92rem;
+            font-weight: 800;
+        }
+        .tool-assist__meta {
+            margin: 0.18rem 0 0;
+            color: #64748b;
+            font-size: 0.84rem;
+            line-height: 1.5;
+        }
+        .tool-assist__actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            justify-content: flex-end;
+        }
         .tool-grid {
             display: grid;
             grid-template-columns: minmax(0, 1fr);
-            gap: 1rem;
+            gap: 1.15rem;
             padding: 1.25rem;
         }
         @media (min-width: 1024px) {
-            .tool-grid { grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr); gap: 1.25rem; }
+            .tool-grid { grid-template-columns: minmax(0, 1.02fr) minmax(320px, 0.98fr); gap: 1.25rem; }
         }
         @media (min-width: 1024px) {
             .tool-grid--stack { grid-template-columns: minmax(0, 1fr); }
         }
 
         .tool-form {
-            background: #f9fafb;
-            border: 1px solid #e5e7eb;
-            border-radius: 0.9rem;
+            background: linear-gradient(180deg, rgba(249, 250, 251, 0.98), rgba(255, 255, 255, 0.98));
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            border-radius: 1rem;
             padding: 1rem;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
         }
         .field { margin-bottom: 0.9rem; }
         .field-row { display: grid; gap: 0.85rem; }
@@ -275,46 +408,75 @@
         .field input,
         .field select {
             width: 100%;
-            border: 1px solid #d1d5db;
-            border-radius: 0.6rem;
-            padding: 0.65rem 0.75rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 0.75rem;
+            padding: 0.75rem 0.82rem;
             font-size: 0.95rem;
-            background: white;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 250, 252, 0.98));
             color: #111827;
+            transition: border-color 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+        }
+        .field input:hover,
+        .field select:hover {
+            border-color: #94a3b8;
+        }
+        .field input:focus,
+        .field select:focus {
+            outline: none;
+            border-color: rgba(201, 169, 97, 0.95);
+            box-shadow: 0 0 0 4px rgba(201, 169, 97, 0.16);
+            background: #ffffff;
         }
         .hint { margin-top: 0.35rem; color: #6b7280; font-size: 0.82rem; line-height: 1.5; }
         .tool-button {
-            width: 100%;
             display: inline-flex;
             justify-content: center;
             align-items: center;
+            min-height: 2.9rem;
+            width: 100%;
             padding: 0.85rem 1.1rem;
-            background: #111827;
+            background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
             color: white;
             border: none;
-            border-radius: 0.65rem;
-            font-weight: 700;
+            border-radius: 0.8rem;
+            font-weight: 800;
             cursor: pointer;
+            box-shadow: 0 18px 28px rgba(15, 23, 42, 0.12);
+            transition: transform 0.18s ease, box-shadow 0.18s ease, opacity 0.18s ease;
         }
-        .tool-button:hover { background: #0b1220; }
+        .tool-button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 22px 30px rgba(15, 23, 42, 0.16);
+        }
         .tool-button--ghost {
-            background: transparent;
+            background: rgba(255, 255, 255, 0.9);
             border: 1px solid #d1d5db;
             color: #111827;
             width: auto;
-            padding: 0.6rem 0.9rem;
-            font-weight: 700;
+            padding: 0.68rem 0.95rem;
+            font-weight: 800;
+            box-shadow: none;
         }
-        .tool-button--ghost:hover { background: #f3f4f6; }
+        .tool-button--ghost:hover { background: #f8fafc; }
 
-        .tool-results { padding: 0.2rem 0; }
+        .tool-results {
+            padding: 0.2rem 0;
+            align-self: start;
+        }
+        @media (min-width: 1024px) {
+            .tool-grid:not(.tool-grid--stack) .tool-results {
+                position: sticky;
+                top: 6rem;
+            }
+        }
         .results-kpis { display: grid; gap: 0.85rem; }
         @media (min-width: 768px) { .results-kpis { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
         .kpi {
-            background: #ffffff;
-            border: 1px solid #e5e7eb;
-            border-radius: 0.9rem;
-            padding: 0.9rem 0.95rem;
+            background: linear-gradient(180deg, #ffffff, #fff9ef);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            border-radius: 1rem;
+            padding: 0.95rem 1rem;
+            box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
         }
         .kpi__label {
             font-size: 0.72rem;
@@ -323,20 +485,21 @@
             color: #6b7280;
             margin-bottom: 0.35rem;
         }
-        .kpi__value { color: #111827; font-weight: 800; font-size: 1.1rem; }
+        .kpi__value { color: #111827; font-weight: 900; font-size: 1.12rem; }
         .kpi__value--good { color: #047857; }
         .kpi__meta { color: #6b7280; font-size: 0.82rem; margin-top: 0.35rem; line-height: 1.4; }
 
         .results-table-wrap {
             margin-top: 1rem;
-            border: 1px solid #e5e7eb;
-            border-radius: 0.9rem;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            border-radius: 1rem;
             overflow-x: auto;
-            background: white;
+            background: #ffffff;
+            box-shadow: 0 14px 28px rgba(15, 23, 42, 0.05);
         }
         .results-table { width: 100%; border-collapse: collapse; min-width: 620px; }
         .results-table th {
-            background: #111827;
+            background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
             color: white;
             text-align: left;
             font-size: 0.85rem;
@@ -355,16 +518,16 @@
 
         .results-note {
             margin-top: 1rem;
-            background: #ecfdf5;
+            background: linear-gradient(180deg, rgba(236, 253, 245, 0.92), rgba(236, 253, 245, 0.68));
             border-left: 4px solid #10b981;
             padding: 0.9rem 0.95rem;
-            border-radius: 0.6rem;
+            border-radius: 0.8rem;
             color: #065f46;
             line-height: 1.6;
             font-size: 0.95rem;
         }
         .results-note--alt {
-            background: #eff6ff;
+            background: linear-gradient(180deg, rgba(239, 246, 255, 0.92), rgba(239, 246, 255, 0.7));
             border-left-color: #3b82f6;
             color: #1e3a8a;
         }
@@ -414,7 +577,7 @@
         .faq-section { background: #f9fafb; padding: 3.5rem 0; }
         .faq-section__title { font-size: 1.7rem; font-weight: 800; color: #111827; margin-bottom: 1.75rem; text-align: center; }
         .faq-list { max-width: 52rem; margin: 0 auto; }
-        .faq-item { background: white; border-radius: 0.75rem; margin-bottom: 0.9rem; overflow: hidden; border: 1px solid #e5e7eb; }
+        .faq-item { background: white; border-radius: 0.95rem; margin-bottom: 0.9rem; overflow: hidden; border: 1px solid #e5e7eb; box-shadow: 0 16px 34px rgba(15, 23, 42, 0.05); }
         .faq-question {
             width: 100%;
             display: flex;
@@ -438,9 +601,10 @@
         .cta-section { padding: 3.5rem 0; text-align: center; }
         .cta-card {
             background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
-            border-radius: 1rem;
+            border-radius: 1.2rem;
             padding: 2.5rem 1.5rem;
             color: white;
+            box-shadow: 0 26px 54px rgba(15, 23, 42, 0.16);
         }
         .cta-card__title { font-size: 1.7rem; font-weight: 800; color: #ffffff; margin-bottom: 0.85rem; }
         .cta-card__text { color: #d1d5db; max-width: 46rem; margin: 0 auto 1.4rem; }
@@ -463,15 +627,16 @@
         .breadcrumb span.sep { margin: 0 0.5rem; color: #9ca3af; }
 
         .log-table-wrap {
-            border: 1px solid #e5e7eb;
-            border-radius: 0.75rem;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            border-radius: 0.95rem;
             background: white;
             overflow-x: auto;
             margin-top: 0.6rem;
+            box-shadow: 0 14px 28px rgba(15, 23, 42, 0.05);
         }
         .log-table { width: 100%; border-collapse: collapse; min-width: 640px; }
         .log-table th {
-            background: #111827;
+            background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
             color: white;
             text-align: left;
             font-size: 0.85rem;
@@ -481,10 +646,16 @@
         .log-table td { border-bottom: 1px solid #e5e7eb; padding: 0.65rem 0.75rem; }
         .log-table input {
             width: 100%;
-            border: 1px solid #d1d5db;
-            border-radius: 0.55rem;
-            padding: 0.55rem 0.65rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 0.65rem;
+            padding: 0.62rem 0.7rem;
             font-size: 0.92rem;
+            transition: border-color 0.18s ease, box-shadow 0.18s ease;
+        }
+        .log-table input:focus {
+            outline: none;
+            border-color: rgba(201, 169, 97, 0.95);
+            box-shadow: 0 0 0 4px rgba(201, 169, 97, 0.16);
         }
         .log-actions { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-top: 0.75rem; }
         .linklike {
@@ -497,17 +668,47 @@
             font-weight: 700;
         }
         .log-remove { white-space: nowrap; }
+        a:focus-visible,
+        button:focus-visible,
+        input:focus-visible,
+        select:focus-visible {
+            outline: 3px solid rgba(201, 169, 97, 0.28);
+            outline-offset: 2px;
+        }
 
         @media (max-width: 767px) {
-            .tools-hero { padding: 6.75rem 0 2.35rem; }
+            .tools-hero { padding: 6.75rem 0 2.5rem; }
             .tools-title { font-size: 1.75rem; max-width: none; }
             .tools-subtitle { font-size: 1rem; line-height: 1.6; }
+            .tools-hero__actions { gap: 0.6rem; }
+            .tools-action {
+                flex: 1 1 100%;
+                width: 100%;
+            }
             .content-section { padding: 0 0 2.4rem; }
-            .prose-content { padding: 1.15rem; }
+            .prose-content { padding: 1.15rem; border-radius: 1.2rem; }
             .prose-content h2 { font-size: 1.35rem; }
             .tools-summary-grid { grid-template-columns: 1fr; }
             .jumpbar-wrap { top: 4.05rem; margin: 1rem 0 1.25rem; }
-            .jumpbar { padding: 0.62rem 0.7rem; }
+            .jumpbar {
+                padding: 0.62rem 0.7rem;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .jumpbar__links { width: 100%; }
+            .tool-assist {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0.85rem 1rem;
+            }
+            .tool-assist__actions {
+                width: 100%;
+                justify-content: stretch;
+            }
+            .tool-assist__actions .tool-button--ghost {
+                flex: 1 1 calc(50% - 0.3rem);
+                justify-content: center;
+            }
             .tool-grid { padding: 1rem; }
             .tool-form { padding: 0.85rem; }
             .results-table { min-width: 0; }
@@ -527,15 +728,6 @@
             }
         }
     </style>
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-2578PT1WSS');
-    </script>
-
 </head>
 <body class="bg-white text-gray-900" data-page-type="tool" data-page-slug="w2-withholding-catch-up-planner" data-page-title="W-2 Withholding Catch-Up Planner (Late-Year Fix)">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -604,26 +796,45 @@
                         </span>
                         <h1 class="tools-title">W-2 Withholding Catch-Up Planner (Late-Year Fix)</h1>
                         <p class="tools-subtitle">Calculate how much extra withholding you need per paycheck to hit a year-end target, and compare it to making estimated payments.</p>
+                        <div class="tools-hero__actions">
+                            <a class="tools-action tools-action--primary" href="#calculator">Jump to calculator</a>
+                            <a class="tools-action tools-action--secondary" href="#doc-checklist">Open doc checklist</a>
+                            <a class="tools-action tools-action--secondary" href="/tools/">Browse all tools</a>
+                        </div>
                     </div>
                     <aside class="tools-hero__panel">
                         <p class="tools-hero__panel-eyebrow">What You Get</p>
-                        <h2 class="tools-hero__panel-title">A planning tool, not a vibes calculator.</h2>
-                        <p class="tools-hero__panel-text">Use this to get conservative numbers, clearer guardrails, and an advisor-ready packet you can actually act on.</p>
+                        <h2 class="tools-hero__panel-title">A cleaner decision flow, not another spreadsheet rabbit hole.</h2>
+                        <p class="tools-hero__panel-text">Use this page to get a conservative number fast, pressure-test the weak spots, and leave with notes you can hand to an advisor.</p>
+                        <div class="tools-hero__panel-list">
+                            <div class="tools-hero__panel-point">
+                                <strong>Estimated Tax</strong>
+                                <span>Quarterly payment planning, catch-up math, and underpayment guardrails.</span>
+                            </div>
+                            <div class="tools-hero__panel-point">
+                                <strong>Live workspace</strong>
+                                <span>Most fields auto-refresh the outputs while you type, so you spend less time hunting for the calculate button.</span>
+                            </div>
+                            <div class="tools-hero__panel-point">
+                                <strong>Advisor-ready follow-through</strong>
+                                <span>Every page ends with a documentation checklist so the output can survive after the browser tab closes.</span>
+                            </div>
+                        </div>
                     </aside>
                 </div>
 
                 <div class="tools-summary-grid">
                     <article class="tools-summary-card">
-                        <p class="tools-summary-card__eyebrow">Conservative Math</p>
-                        <p>The tool is built to slow you down just enough to kill bad assumptions before they cost real money.</p>
+                        <p class="tools-summary-card__eyebrow">Category</p>
+                        <p>Quarterly payment planning, catch-up math, and underpayment guardrails.</p>
                     </article>
-                    <article class="tools-summary-card">
-                        <p class="tools-summary-card__eyebrow">Execution Notes</p>
-                        <p>You get process notes, not just outputs, so the answer still works when real life gets messy.</p>
+<article class="tools-summary-card">
+                        <p class="tools-summary-card__eyebrow">On This Page</p>
+                        <p>2 planning notes, 3 FAQs, and source links for follow-up.</p>
                     </article>
-                    <article class="tools-summary-card">
-                        <p class="tools-summary-card__eyebrow">SEO Benefit</p>
-                        <p>Each tool page is a high-intent landing page with interactive utility, internal links, FAQs, and SoftwareApplication markup.</p>
+<article class="tools-summary-card">
+                        <p class="tools-summary-card__eyebrow">Workflow</p>
+                        <p>Start with sample inputs, review the live output, then save the assumptions you plan to act on.</p>
                     </article>
                 </div>
             </div>
@@ -902,10 +1113,10 @@
         <section class="cta-section">
             <div class="container-custom">
                 <div class="cta-card">
-                    <h2 class="cta-card__title">Turn The Tool Into A Real Tax Workflow</h2>
-                    <p class="cta-card__text">Calculators are useful. The real win comes when your assumptions, documents, and advisor packet line up with the move you want to make.</p>
-                    <a href="https://www.managemoney101.com/2025workshop" class="cta-card__button" data-track-event="cta_clicked" data-track-label="Reserve Your Free Tax Strategy Seat" data-track-location="tool_page_cta" data-track-destination="https://www.managemoney101.com/2025workshop">
-                        Reserve Your Free Tax Strategy Seat
+                    <h2 class="cta-card__title">Use The Tool, Then Build The Full Plan Live</h2>
+                    <p class="cta-card__text">Before You File runs live on Zoom from Friday, March 27, 2026 through Sunday, March 29, 2026, from 10 AM to 4 PM Eastern each day. Preston walks through how to read your 2025 return, choose the right tax and wealth moves, and leave with a dated 12-month 2026 plan.</p>
+                    <a href="https://go.managemoney101.com/challenge3" class="cta-card__button" data-track-event="cta_clicked" data-track-label="Get Your Seat Before You File" data-track-location="tool_page_cta" data-track-destination="https://go.managemoney101.com/challenge3">
+                        Get Your Seat Before You File
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
@@ -1005,6 +1216,160 @@
             });
         });
 
+        function debounce(fn, wait) {
+            let timeoutId;
+            return function(...args) {
+                clearTimeout(timeoutId);
+                timeoutId = setTimeout(() => fn.apply(this, args), wait);
+            };
+        }
+
+        function extractPlaceholderSample(input) {
+            if (!(input instanceof HTMLInputElement)) return '';
+            if (input.type === 'date') return new Date().toISOString().slice(0, 10);
+
+            const placeholder = (input.getAttribute('placeholder') || '').trim();
+            if (!placeholder) return '';
+
+            const normalized = placeholder.replace(/^e\.g\.\s*/i, '').trim();
+            if (!normalized || /leave blank/i.test(normalized)) return '';
+            return normalized;
+        }
+
+        function fillSampleValues(form) {
+            form.querySelectorAll('input, textarea, select').forEach((field) => {
+                if (field.disabled || field.readOnly) return;
+
+                if (field instanceof HTMLSelectElement) {
+                    if (!field.value && field.options.length) field.selectedIndex = 0;
+                    return;
+                }
+
+                if (!(field instanceof HTMLInputElement) && !(field instanceof HTMLTextAreaElement)) return;
+                if (field.value) return;
+
+                const sample = extractPlaceholderSample(field);
+                if (sample) field.value = sample;
+            });
+        }
+
+        function clearFormValues(form) {
+            form.reset();
+            form.querySelectorAll('input[type="text"], input[type="date"], textarea').forEach((field) => {
+                field.value = '';
+            });
+        }
+
+        function setupJumpbarState() {
+            const jumpLinks = Array.from(document.querySelectorAll('.jumpbar__link'));
+            const jumpTargets = jumpLinks
+                .map((link) => {
+                    const href = link.getAttribute('href') || '';
+                    if (!href.startsWith('#')) return null;
+                    const target = document.querySelector(href);
+                    if (!target) return null;
+                    return { link, target };
+                })
+                .filter(Boolean);
+
+            if (!jumpTargets.length) return;
+
+            function setActive(activeId) {
+                jumpTargets.forEach(({ link, target }) => {
+                    link.classList.toggle('is-active', target.id === activeId);
+                });
+            }
+
+            setActive(jumpTargets[0].target.id);
+
+            if (!('IntersectionObserver' in window)) return;
+
+            const observer = new IntersectionObserver((entries) => {
+                const visible = entries
+                    .filter((entry) => entry.isIntersecting)
+                    .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+                if (visible && visible.target.id) setActive(visible.target.id);
+            }, {
+                rootMargin: '-18% 0px -62% 0px',
+                threshold: [0.15, 0.4, 0.7],
+            });
+
+            jumpTargets.forEach(({ target }) => observer.observe(target));
+        }
+
+        function setupToolWorkspace() {
+            const calculator = document.getElementById('calculator');
+            const form = calculator?.querySelector('.tool-form');
+            const calcButton = calculator?.querySelector('button[id$="-calc"]');
+            const header = calculator?.querySelector('.tool-card__header');
+
+            if (!calculator || !form || !calcButton || !header) return;
+
+            const assist = document.createElement('div');
+            assist.className = 'tool-assist';
+            assist.innerHTML = '<div class="tool-assist__copy">' +
+                '<p class="tool-assist__title">Faster workflow</p>' +
+                '<p class="tool-assist__meta" data-tool-status>Auto-updates while you type. Use sample inputs if you want a quick walkthrough.</p>' +
+              '</div>' +
+              '<div class="tool-assist__actions">' +
+                '<button type="button" class="tool-button tool-button--ghost" data-tool-fill>Try sample inputs</button>' +
+                '<button type="button" class="tool-button tool-button--ghost" data-tool-reset>Reset</button>' +
+              '</div>';
+            header.insertAdjacentElement('afterend', assist);
+
+            const status = assist.querySelector('[data-tool-status]');
+            const fillButton = assist.querySelector('[data-tool-fill]');
+            const resetButton = assist.querySelector('[data-tool-reset]');
+
+            function setStatus(message) {
+                if (status) status.textContent = message;
+            }
+
+            function runCalculation() {
+                calcButton.click();
+                setStatus('Updated just now. Save the assumptions you intend to act on.');
+            }
+
+            const debouncedRun = debounce(() => {
+                runCalculation();
+            }, 220);
+
+            form.addEventListener('input', (event) => {
+                if (!event.target.matches('input, select, textarea')) return;
+                setStatus('Updating outputs…');
+                debouncedRun();
+            });
+
+            form.addEventListener('change', (event) => {
+                if (!event.target.matches('input, select, textarea')) return;
+                setStatus('Updating outputs…');
+                debouncedRun();
+            });
+
+            calculator.addEventListener('click', (event) => {
+                if (event.target.closest('button[id$="-add"]') || event.target.closest('.linklike')) {
+                    setStatus('Refreshing totals…');
+                    setTimeout(runCalculation, 0);
+                }
+            });
+
+            fillButton?.addEventListener('click', () => {
+                fillSampleValues(form);
+                runCalculation();
+                emitToolEvent('tool_fill_sample_inputs');
+            });
+
+            resetButton?.addEventListener('click', () => {
+                clearFormValues(form);
+                runCalculation();
+                setStatus('Reset to blank inputs. Add your real numbers when you are ready.');
+                emitToolEvent('tool_reset');
+            });
+
+            setTimeout(runCalculation, 0);
+        }
+
         document.querySelectorAll('.related-card__cta').forEach((link) => {
             link.addEventListener('click', () => {
                 emitToolEvent('tool_related_guide_click', {
@@ -1013,6 +1378,8 @@
             });
         });
 
+        setupJumpbarState();
+        setupToolWorkspace();
         emitToolEvent('tool_page_view');
     </script>
 </body>

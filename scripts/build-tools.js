@@ -154,6 +154,48 @@ function toolKeywords(tool) {
   return [...new Set(values)].slice(0, 12).join(', ');
 }
 
+function toolTheme(tool) {
+  const haystack = `${tool.title || ''} ${tool.badge || ''} ${tool.description || ''}`.toLowerCase();
+
+  if (/estimated tax|safe harbor|annualized|withholding/.test(haystack)) {
+    return {
+      key: 'estimated-tax',
+      label: 'Estimated Tax',
+      summary: 'Quarterly payment planning, catch-up math, and underpayment guardrails.',
+    };
+  }
+
+  if (/roth|irmaa|qcd|backdoor|401\(k\)|401k/.test(haystack)) {
+    return {
+      key: 'retirement',
+      label: 'Retirement Planning',
+      summary: 'Conversion headroom, withdrawal sequencing, and account-level tradeoffs.',
+    };
+  }
+
+  if (/capital gains|installment sale/.test(haystack)) {
+    return {
+      key: 'capital-gains',
+      label: 'Capital Gains',
+      summary: 'Sale timing, cash-flow pacing, and gain management decisions.',
+    };
+  }
+
+  if (/cost segregation|real estate|augusta|heloc|rep status|hours tracker/.test(haystack)) {
+    return {
+      key: 'real-estate',
+      label: 'Real Estate Ops',
+      summary: 'Documentation, property strategy math, and operator discipline.',
+    };
+  }
+
+  return {
+    key: 'entity-workflows',
+    label: 'Entity Workflows',
+    summary: 'Reimbursement, compliance, and owner-operator process cleanup.',
+  };
+}
+
 function breadcrumbSchema(tool) {
   return {
     '@context': 'https://schema.org',
@@ -2605,10 +2647,25 @@ function widgetCapitalGainsHeadroom() {
 function renderToolPage(tool) {
   const isoDate = new Date().toISOString().split('T')[0];
   const canonical = `https://www.legacyinvestingshow.com/tools/${tool.slug}`;
+  const theme = toolTheme(tool);
   const openingHtml = renderParagraphs(tool.opening || []);
   const sectionsHtml = (tool.sections || []).map((s) => {
     return `<h2 id="${esc(s.id)}">${esc(s.title)}</h2>${renderParagraphs(s.paragraphs || [])}`;
   }).join('\n');
+  const insightCards = [
+    {
+      eyebrow: 'Category',
+      text: theme.summary,
+    },
+    {
+      eyebrow: 'On This Page',
+      text: `${(tool.sections || []).length} planning notes, ${(tool.faq || []).length} FAQs, and source links for follow-up.`,
+    },
+    {
+      eyebrow: 'Workflow',
+      text: 'Start with sample inputs, review the live output, then save the assumptions you plan to act on.',
+    },
+  ];
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -2643,57 +2700,114 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
     ${renderAnalyticsHead({ gaTrackingId: GA_TRACKING_ID, gtmContainerId: GTM_CONTAINER_ID })}
 
     <style>
+        :root {
+            --tools-ink: #111827;
+            --tools-muted: #475569;
+            --tools-line: rgba(15, 23, 42, 0.1);
+            --tools-accent: #c9a961;
+            --tools-accent-strong: #9f7a27;
+            --tools-surface: #fffdf8;
+            --tools-surface-strong: #f5efe2;
+            --tools-card: rgba(255, 255, 255, 0.92);
+            --tools-shadow: 0 24px 64px rgba(15, 23, 42, 0.08);
+        }
         .tools-hero {
-            padding: 8rem 0 3rem;
+            position: relative;
+            overflow: hidden;
+            padding: 8rem 0 3.5rem;
             background:
-              radial-gradient(circle at top right, rgba(201, 169, 97, 0.18), transparent 36%),
-              linear-gradient(180deg, #faf7f2 0%, #ffffff 100%);
+              radial-gradient(circle at top right, rgba(201, 169, 97, 0.2), transparent 34%),
+              radial-gradient(circle at left center, rgba(15, 23, 42, 0.06), transparent 26%),
+              linear-gradient(180deg, #fbf8f1 0%, #ffffff 100%);
+        }
+        .tools-hero::after {
+            content: '';
+            position: absolute;
+            inset: auto 0 -1px;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(201, 169, 97, 0), rgba(201, 169, 97, 0.5), rgba(201, 169, 97, 0));
         }
         .tools-hero__grid {
             display: grid;
-            gap: 1.25rem;
+            gap: 1.4rem;
             align-items: start;
         }
         @media (min-width: 1024px) {
             .tools-hero__grid {
-                grid-template-columns: minmax(0, 1.45fr) minmax(300px, 0.8fr);
+                grid-template-columns: minmax(0, 1.38fr) minmax(320px, 0.84fr);
             }
         }
         .tools-badge {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            padding: 0.5rem 1rem;
-            background: #111827;
-            color: white;
+            padding: 0.52rem 1rem;
+            background: rgba(17, 24, 39, 0.92);
+            color: #ffffff;
             font-size: 0.75rem;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 0.08em;
+            letter-spacing: 0.1em;
             border-radius: 999px;
             margin-bottom: 1rem;
+            box-shadow: 0 14px 36px rgba(15, 23, 42, 0.12);
         }
         .tools-title {
             font-size: clamp(2.25rem, 5vw, 4.3rem);
-            font-weight: 700;
-            line-height: 0.98;
+            font-weight: 800;
+            line-height: 0.94;
             letter-spacing: -0.04em;
-            color: #111827;
+            color: var(--tools-ink);
             margin-bottom: 0.95rem;
-            max-width: 12ch;
+            max-width: 11ch;
         }
         .tools-subtitle {
-            max-width: 46rem;
-            color: #475569;
-            font-size: 1.08rem;
-            line-height: 1.78;
+            max-width: 44rem;
+            color: var(--tools-muted);
+            font-size: 1.06rem;
+            line-height: 1.76;
+        }
+        .tools-hero__actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.35rem;
+        }
+        .tools-action {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.55rem;
+            min-height: 2.9rem;
+            padding: 0.82rem 1.15rem;
+            border-radius: 999px;
+            font-weight: 800;
+            text-decoration: none;
+            transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+        }
+        .tools-action:hover {
+            transform: translateY(-1px);
+        }
+        .tools-action--primary {
+            background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+            color: #ffffff;
+            box-shadow: 0 18px 34px rgba(17, 24, 39, 0.14);
+        }
+        .tools-action--secondary {
+            background: rgba(255, 255, 255, 0.82);
+            color: var(--tools-ink);
+            border: 1px solid rgba(17, 24, 39, 0.12);
+            backdrop-filter: blur(8px);
         }
         .tools-hero__panel {
-            padding: 1.3rem 1.35rem 1.4rem;
-            border-radius: 1.2rem;
-            background: linear-gradient(160deg, #182234, #0f172a);
+            padding: 1.35rem 1.35rem 1.4rem;
+            border-radius: 1.4rem;
+            background:
+              linear-gradient(165deg, rgba(24, 34, 52, 0.98), rgba(15, 23, 42, 0.98)),
+              linear-gradient(135deg, rgba(201, 169, 97, 0.18), rgba(201, 169, 97, 0));
             color: white;
-            box-shadow: 0 24px 56px rgba(15, 23, 42, 0.18);
+            box-shadow: 0 28px 64px rgba(15, 23, 42, 0.18);
+            border: 1px solid rgba(255, 255, 255, 0.08);
         }
         .tools-hero__panel-eyebrow {
             margin: 0 0 0.55rem;
@@ -2715,22 +2829,51 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
             font-size: 0.96rem;
             line-height: 1.72;
         }
+        .tools-hero__panel-list {
+            display: grid;
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+        .tools-hero__panel-point {
+            display: grid;
+            gap: 0.2rem;
+            padding-top: 0.75rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .tools-hero__panel-point strong {
+            color: #ffffff;
+            font-size: 0.94rem;
+        }
+        .tools-hero__panel-point span {
+            color: #cbd5e1;
+            font-size: 0.88rem;
+            line-height: 1.55;
+        }
         .tools-summary-grid {
             display: grid;
-            gap: 0.95rem;
-            margin-top: 1.35rem;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin-top: 1.55rem;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         }
         .tools-summary-card {
-            padding: 1rem 1.05rem;
-            border-radius: 1rem;
-            background: rgba(255, 255, 255, 0.92);
+            position: relative;
+            padding: 1.05rem 1.1rem 1.1rem;
+            border-radius: 1.15rem;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 252, 246, 0.96));
             border: 1px solid rgba(15, 23, 42, 0.08);
-            box-shadow: 0 16px 36px rgba(15, 23, 42, 0.05);
+            box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+        }
+        .tools-summary-card::before {
+            content: '';
+            position: absolute;
+            inset: 0 auto 0 0;
+            width: 3px;
+            border-radius: 999px;
+            background: linear-gradient(180deg, var(--tools-accent), rgba(201, 169, 97, 0));
         }
         .tools-summary-card__eyebrow {
             margin: 0 0 0.45rem;
-            color: #b8933f;
+            color: var(--tools-accent-strong);
             font-size: 0.74rem;
             font-weight: 700;
             letter-spacing: 0.1em;
@@ -2748,11 +2891,12 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
         .prose-content {
             color: #374151;
             line-height: 1.75;
-            padding: 1.45rem;
-            border-radius: 1.5rem;
-            background: rgba(255, 255, 255, 0.96);
+            padding: 1.55rem;
+            border-radius: 1.6rem;
+            background:
+              linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(255, 252, 247, 0.98));
             border: 1px solid rgba(15, 23, 42, 0.08);
-            box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+            box-shadow: var(--tools-shadow);
         }
         .prose-content h2 { color: #111827; font-size: 1.6rem; line-height: 1.3; margin-bottom: 1rem; }
         .prose-content p { margin-bottom: 1rem; }
@@ -2821,31 +2965,39 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
           font-size: 0.85rem;
           white-space: nowrap;
           background: linear-gradient(180deg, rgba(255,255,255,1), rgba(249,250,251,1));
+          transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, background 0.18s ease;
         }
         .jumpbar__link:hover {
           border-color: rgba(17, 24, 39, 0.28);
           box-shadow: 0 10px 22px rgba(17, 24, 39, 0.06);
           transform: translateY(-1px);
         }
+        .jumpbar__link.is-active {
+          background: linear-gradient(135deg, rgba(17, 24, 39, 0.98), rgba(39, 50, 66, 0.98));
+          border-color: rgba(17, 24, 39, 0.98);
+          color: #ffffff;
+          box-shadow: 0 12px 24px rgba(17, 24, 39, 0.12);
+        }
 
         .tool-card {
-            background: white;
+            background: linear-gradient(180deg, #ffffff, #fffdf9);
             border: 1px solid rgba(15, 23, 42, 0.08);
-            border-radius: 1.25rem;
+            border-radius: 1.4rem;
             overflow: hidden;
             margin: 1.25rem 0 2rem;
-            box-shadow: 0 22px 54px rgba(15, 23, 42, 0.08);
+            box-shadow: 0 30px 70px rgba(15, 23, 42, 0.08);
         }
         .tool-card__header {
-            padding: 1.35rem 1.25rem 0.85rem;
-            border-bottom: 1px solid #f3f4f6;
-            background: linear-gradient(180deg, rgba(250, 247, 242, 0.7), rgba(255, 255, 255, 0.94));
+            padding: 1.35rem 1.3rem 1rem;
+            border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+            background:
+              linear-gradient(180deg, rgba(250, 247, 242, 0.92), rgba(255, 255, 255, 0.96));
         }
         .tool-card__title {
             margin: 0;
             color: #111827;
             font-weight: 800;
-            font-size: 1.25rem;
+            font-size: 1.28rem;
             line-height: 1.25;
         }
         .tool-card__subtitle {
@@ -2854,24 +3006,55 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
             font-size: 0.95rem;
             line-height: 1.55;
         }
+        .tool-assist {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.9rem;
+            padding: 0.85rem 1.25rem;
+            background: linear-gradient(180deg, rgba(250, 247, 242, 0.6), rgba(255, 255, 255, 0.96));
+            border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+        }
+        .tool-assist__copy {
+            min-width: 0;
+        }
+        .tool-assist__title {
+            margin: 0;
+            color: #111827;
+            font-size: 0.92rem;
+            font-weight: 800;
+        }
+        .tool-assist__meta {
+            margin: 0.18rem 0 0;
+            color: #64748b;
+            font-size: 0.84rem;
+            line-height: 1.5;
+        }
+        .tool-assist__actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            justify-content: flex-end;
+        }
         .tool-grid {
             display: grid;
             grid-template-columns: minmax(0, 1fr);
-            gap: 1rem;
+            gap: 1.15rem;
             padding: 1.25rem;
         }
         @media (min-width: 1024px) {
-            .tool-grid { grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr); gap: 1.25rem; }
+            .tool-grid { grid-template-columns: minmax(0, 1.02fr) minmax(320px, 0.98fr); gap: 1.25rem; }
         }
         @media (min-width: 1024px) {
             .tool-grid--stack { grid-template-columns: minmax(0, 1fr); }
         }
 
         .tool-form {
-            background: #f9fafb;
-            border: 1px solid #e5e7eb;
-            border-radius: 0.9rem;
+            background: linear-gradient(180deg, rgba(249, 250, 251, 0.98), rgba(255, 255, 255, 0.98));
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            border-radius: 1rem;
             padding: 1rem;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
         }
         .field { margin-bottom: 0.9rem; }
         .field-row { display: grid; gap: 0.85rem; }
@@ -2886,46 +3069,75 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
         .field input,
         .field select {
             width: 100%;
-            border: 1px solid #d1d5db;
-            border-radius: 0.6rem;
-            padding: 0.65rem 0.75rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 0.75rem;
+            padding: 0.75rem 0.82rem;
             font-size: 0.95rem;
-            background: white;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 250, 252, 0.98));
             color: #111827;
+            transition: border-color 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+        }
+        .field input:hover,
+        .field select:hover {
+            border-color: #94a3b8;
+        }
+        .field input:focus,
+        .field select:focus {
+            outline: none;
+            border-color: rgba(201, 169, 97, 0.95);
+            box-shadow: 0 0 0 4px rgba(201, 169, 97, 0.16);
+            background: #ffffff;
         }
         .hint { margin-top: 0.35rem; color: #6b7280; font-size: 0.82rem; line-height: 1.5; }
         .tool-button {
-            width: 100%;
             display: inline-flex;
             justify-content: center;
             align-items: center;
+            min-height: 2.9rem;
+            width: 100%;
             padding: 0.85rem 1.1rem;
-            background: #111827;
+            background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
             color: white;
             border: none;
-            border-radius: 0.65rem;
-            font-weight: 700;
+            border-radius: 0.8rem;
+            font-weight: 800;
             cursor: pointer;
+            box-shadow: 0 18px 28px rgba(15, 23, 42, 0.12);
+            transition: transform 0.18s ease, box-shadow 0.18s ease, opacity 0.18s ease;
         }
-        .tool-button:hover { background: #0b1220; }
+        .tool-button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 22px 30px rgba(15, 23, 42, 0.16);
+        }
         .tool-button--ghost {
-            background: transparent;
+            background: rgba(255, 255, 255, 0.9);
             border: 1px solid #d1d5db;
             color: #111827;
             width: auto;
-            padding: 0.6rem 0.9rem;
-            font-weight: 700;
+            padding: 0.68rem 0.95rem;
+            font-weight: 800;
+            box-shadow: none;
         }
-        .tool-button--ghost:hover { background: #f3f4f6; }
+        .tool-button--ghost:hover { background: #f8fafc; }
 
-        .tool-results { padding: 0.2rem 0; }
+        .tool-results {
+            padding: 0.2rem 0;
+            align-self: start;
+        }
+        @media (min-width: 1024px) {
+            .tool-grid:not(.tool-grid--stack) .tool-results {
+                position: sticky;
+                top: 6rem;
+            }
+        }
         .results-kpis { display: grid; gap: 0.85rem; }
         @media (min-width: 768px) { .results-kpis { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
         .kpi {
-            background: #ffffff;
-            border: 1px solid #e5e7eb;
-            border-radius: 0.9rem;
-            padding: 0.9rem 0.95rem;
+            background: linear-gradient(180deg, #ffffff, #fff9ef);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            border-radius: 1rem;
+            padding: 0.95rem 1rem;
+            box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
         }
         .kpi__label {
             font-size: 0.72rem;
@@ -2934,20 +3146,21 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
             color: #6b7280;
             margin-bottom: 0.35rem;
         }
-        .kpi__value { color: #111827; font-weight: 800; font-size: 1.1rem; }
+        .kpi__value { color: #111827; font-weight: 900; font-size: 1.12rem; }
         .kpi__value--good { color: #047857; }
         .kpi__meta { color: #6b7280; font-size: 0.82rem; margin-top: 0.35rem; line-height: 1.4; }
 
         .results-table-wrap {
             margin-top: 1rem;
-            border: 1px solid #e5e7eb;
-            border-radius: 0.9rem;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            border-radius: 1rem;
             overflow-x: auto;
-            background: white;
+            background: #ffffff;
+            box-shadow: 0 14px 28px rgba(15, 23, 42, 0.05);
         }
         .results-table { width: 100%; border-collapse: collapse; min-width: 620px; }
         .results-table th {
-            background: #111827;
+            background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
             color: white;
             text-align: left;
             font-size: 0.85rem;
@@ -2966,16 +3179,16 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
 
         .results-note {
             margin-top: 1rem;
-            background: #ecfdf5;
+            background: linear-gradient(180deg, rgba(236, 253, 245, 0.92), rgba(236, 253, 245, 0.68));
             border-left: 4px solid #10b981;
             padding: 0.9rem 0.95rem;
-            border-radius: 0.6rem;
+            border-radius: 0.8rem;
             color: #065f46;
             line-height: 1.6;
             font-size: 0.95rem;
         }
         .results-note--alt {
-            background: #eff6ff;
+            background: linear-gradient(180deg, rgba(239, 246, 255, 0.92), rgba(239, 246, 255, 0.7));
             border-left-color: #3b82f6;
             color: #1e3a8a;
         }
@@ -3025,7 +3238,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
         .faq-section { background: #f9fafb; padding: 3.5rem 0; }
         .faq-section__title { font-size: 1.7rem; font-weight: 800; color: #111827; margin-bottom: 1.75rem; text-align: center; }
         .faq-list { max-width: 52rem; margin: 0 auto; }
-        .faq-item { background: white; border-radius: 0.75rem; margin-bottom: 0.9rem; overflow: hidden; border: 1px solid #e5e7eb; }
+        .faq-item { background: white; border-radius: 0.95rem; margin-bottom: 0.9rem; overflow: hidden; border: 1px solid #e5e7eb; box-shadow: 0 16px 34px rgba(15, 23, 42, 0.05); }
         .faq-question {
             width: 100%;
             display: flex;
@@ -3049,9 +3262,10 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
         .cta-section { padding: 3.5rem 0; text-align: center; }
         .cta-card {
             background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
-            border-radius: 1rem;
+            border-radius: 1.2rem;
             padding: 2.5rem 1.5rem;
             color: white;
+            box-shadow: 0 26px 54px rgba(15, 23, 42, 0.16);
         }
         .cta-card__title { font-size: 1.7rem; font-weight: 800; color: #ffffff; margin-bottom: 0.85rem; }
         .cta-card__text { color: #d1d5db; max-width: 46rem; margin: 0 auto 1.4rem; }
@@ -3074,15 +3288,16 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
         .breadcrumb span.sep { margin: 0 0.5rem; color: #9ca3af; }
 
         .log-table-wrap {
-            border: 1px solid #e5e7eb;
-            border-radius: 0.75rem;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            border-radius: 0.95rem;
             background: white;
             overflow-x: auto;
             margin-top: 0.6rem;
+            box-shadow: 0 14px 28px rgba(15, 23, 42, 0.05);
         }
         .log-table { width: 100%; border-collapse: collapse; min-width: 640px; }
         .log-table th {
-            background: #111827;
+            background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
             color: white;
             text-align: left;
             font-size: 0.85rem;
@@ -3092,10 +3307,16 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
         .log-table td { border-bottom: 1px solid #e5e7eb; padding: 0.65rem 0.75rem; }
         .log-table input {
             width: 100%;
-            border: 1px solid #d1d5db;
-            border-radius: 0.55rem;
-            padding: 0.55rem 0.65rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 0.65rem;
+            padding: 0.62rem 0.7rem;
             font-size: 0.92rem;
+            transition: border-color 0.18s ease, box-shadow 0.18s ease;
+        }
+        .log-table input:focus {
+            outline: none;
+            border-color: rgba(201, 169, 97, 0.95);
+            box-shadow: 0 0 0 4px rgba(201, 169, 97, 0.16);
         }
         .log-actions { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-top: 0.75rem; }
         .linklike {
@@ -3108,17 +3329,47 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
             font-weight: 700;
         }
         .log-remove { white-space: nowrap; }
+        a:focus-visible,
+        button:focus-visible,
+        input:focus-visible,
+        select:focus-visible {
+            outline: 3px solid rgba(201, 169, 97, 0.28);
+            outline-offset: 2px;
+        }
 
         @media (max-width: 767px) {
-            .tools-hero { padding: 6.75rem 0 2.35rem; }
+            .tools-hero { padding: 6.75rem 0 2.5rem; }
             .tools-title { font-size: 1.75rem; max-width: none; }
             .tools-subtitle { font-size: 1rem; line-height: 1.6; }
+            .tools-hero__actions { gap: 0.6rem; }
+            .tools-action {
+                flex: 1 1 100%;
+                width: 100%;
+            }
             .content-section { padding: 0 0 2.4rem; }
-            .prose-content { padding: 1.15rem; }
+            .prose-content { padding: 1.15rem; border-radius: 1.2rem; }
             .prose-content h2 { font-size: 1.35rem; }
             .tools-summary-grid { grid-template-columns: 1fr; }
             .jumpbar-wrap { top: 4.05rem; margin: 1rem 0 1.25rem; }
-            .jumpbar { padding: 0.62rem 0.7rem; }
+            .jumpbar {
+                padding: 0.62rem 0.7rem;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .jumpbar__links { width: 100%; }
+            .tool-assist {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0.85rem 1rem;
+            }
+            .tool-assist__actions {
+                width: 100%;
+                justify-content: stretch;
+            }
+            .tool-assist__actions .tool-button--ghost {
+                flex: 1 1 calc(50% - 0.3rem);
+                justify-content: center;
+            }
             .tool-grid { padding: 1rem; }
             .tool-form { padding: 0.85rem; }
             .results-table { min-width: 0; }
@@ -3194,27 +3445,38 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
                         </span>
                         <h1 class="tools-title">${esc(tool.title)}</h1>
                         <p class="tools-subtitle">${esc(tool.description)}</p>
+                        <div class="tools-hero__actions">
+                            <a class="tools-action tools-action--primary" href="#calculator">Jump to calculator</a>
+                            <a class="tools-action tools-action--secondary" href="#doc-checklist">Open doc checklist</a>
+                            <a class="tools-action tools-action--secondary" href="/tools/">Browse all tools</a>
+                        </div>
                     </div>
                     <aside class="tools-hero__panel">
                         <p class="tools-hero__panel-eyebrow">What You Get</p>
-                        <h2 class="tools-hero__panel-title">A planning tool, not a vibes calculator.</h2>
-                        <p class="tools-hero__panel-text">Use this to get conservative numbers, clearer guardrails, and an advisor-ready packet you can actually act on.</p>
+                        <h2 class="tools-hero__panel-title">A cleaner decision flow, not another spreadsheet rabbit hole.</h2>
+                        <p class="tools-hero__panel-text">Use this page to get a conservative number fast, pressure-test the weak spots, and leave with notes you can hand to an advisor.</p>
+                        <div class="tools-hero__panel-list">
+                            <div class="tools-hero__panel-point">
+                                <strong>${esc(theme.label)}</strong>
+                                <span>${esc(theme.summary)}</span>
+                            </div>
+                            <div class="tools-hero__panel-point">
+                                <strong>Live workspace</strong>
+                                <span>Most fields auto-refresh the outputs while you type, so you spend less time hunting for the calculate button.</span>
+                            </div>
+                            <div class="tools-hero__panel-point">
+                                <strong>Advisor-ready follow-through</strong>
+                                <span>Every page ends with a documentation checklist so the output can survive after the browser tab closes.</span>
+                            </div>
+                        </div>
                     </aside>
                 </div>
 
                 <div class="tools-summary-grid">
-                    <article class="tools-summary-card">
-                        <p class="tools-summary-card__eyebrow">Conservative Math</p>
-                        <p>The tool is built to slow you down just enough to kill bad assumptions before they cost real money.</p>
-                    </article>
-                    <article class="tools-summary-card">
-                        <p class="tools-summary-card__eyebrow">Execution Notes</p>
-                        <p>You get process notes, not just outputs, so the answer still works when real life gets messy.</p>
-                    </article>
-                    <article class="tools-summary-card">
-                        <p class="tools-summary-card__eyebrow">SEO Benefit</p>
-                        <p>Each tool page is a high-intent landing page with interactive utility, internal links, FAQs, and SoftwareApplication markup.</p>
-                    </article>
+                    ${insightCards.map((card) => `<article class="tools-summary-card">
+                        <p class="tools-summary-card__eyebrow">${esc(card.eyebrow)}</p>
+                        <p>${esc(card.text)}</p>
+                    </article>`).join('\n')}
                 </div>
             </div>
         </section>
@@ -3263,8 +3525,8 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
             <div class="container-custom">
                 ${renderPageCtaSection({
                   variant: 'tax_masterclass',
-                  title: 'Turn The Tool Into A Real Tax Workflow',
-                  text: 'Calculators are useful. The real win comes when your assumptions, documents, and advisor packet line up with the move you want to make.',
+                  title: 'Use The Tool, Then Build The Full Plan Live',
+                  text: 'Before You File runs live on Zoom from Friday, March 27, 2026 through Sunday, March 29, 2026, from 10 AM to 4 PM Eastern each day. Preston walks through how to read your 2025 return, choose the right tax and wealth moves, and leave with a dated 12-month 2026 plan.',
                   trackLocation: 'tool_page_cta',
                 })}
             </div>
@@ -3355,6 +3617,160 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
             });
         });
 
+        function debounce(fn, wait) {
+            let timeoutId;
+            return function(...args) {
+                clearTimeout(timeoutId);
+                timeoutId = setTimeout(() => fn.apply(this, args), wait);
+            };
+        }
+
+        function extractPlaceholderSample(input) {
+            if (!(input instanceof HTMLInputElement)) return '';
+            if (input.type === 'date') return new Date().toISOString().slice(0, 10);
+
+            const placeholder = (input.getAttribute('placeholder') || '').trim();
+            if (!placeholder) return '';
+
+            const normalized = placeholder.replace(/^e\\.g\\.\\s*/i, '').trim();
+            if (!normalized || /leave blank/i.test(normalized)) return '';
+            return normalized;
+        }
+
+        function fillSampleValues(form) {
+            form.querySelectorAll('input, textarea, select').forEach((field) => {
+                if (field.disabled || field.readOnly) return;
+
+                if (field instanceof HTMLSelectElement) {
+                    if (!field.value && field.options.length) field.selectedIndex = 0;
+                    return;
+                }
+
+                if (!(field instanceof HTMLInputElement) && !(field instanceof HTMLTextAreaElement)) return;
+                if (field.value) return;
+
+                const sample = extractPlaceholderSample(field);
+                if (sample) field.value = sample;
+            });
+        }
+
+        function clearFormValues(form) {
+            form.reset();
+            form.querySelectorAll('input[type="text"], input[type="date"], textarea').forEach((field) => {
+                field.value = '';
+            });
+        }
+
+        function setupJumpbarState() {
+            const jumpLinks = Array.from(document.querySelectorAll('.jumpbar__link'));
+            const jumpTargets = jumpLinks
+                .map((link) => {
+                    const href = link.getAttribute('href') || '';
+                    if (!href.startsWith('#')) return null;
+                    const target = document.querySelector(href);
+                    if (!target) return null;
+                    return { link, target };
+                })
+                .filter(Boolean);
+
+            if (!jumpTargets.length) return;
+
+            function setActive(activeId) {
+                jumpTargets.forEach(({ link, target }) => {
+                    link.classList.toggle('is-active', target.id === activeId);
+                });
+            }
+
+            setActive(jumpTargets[0].target.id);
+
+            if (!('IntersectionObserver' in window)) return;
+
+            const observer = new IntersectionObserver((entries) => {
+                const visible = entries
+                    .filter((entry) => entry.isIntersecting)
+                    .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+                if (visible && visible.target.id) setActive(visible.target.id);
+            }, {
+                rootMargin: '-18% 0px -62% 0px',
+                threshold: [0.15, 0.4, 0.7],
+            });
+
+            jumpTargets.forEach(({ target }) => observer.observe(target));
+        }
+
+        function setupToolWorkspace() {
+            const calculator = document.getElementById('calculator');
+            const form = calculator?.querySelector('.tool-form');
+            const calcButton = calculator?.querySelector('button[id$="-calc"]');
+            const header = calculator?.querySelector('.tool-card__header');
+
+            if (!calculator || !form || !calcButton || !header) return;
+
+            const assist = document.createElement('div');
+            assist.className = 'tool-assist';
+            assist.innerHTML = '<div class="tool-assist__copy">' +
+                '<p class="tool-assist__title">Faster workflow</p>' +
+                '<p class="tool-assist__meta" data-tool-status>Auto-updates while you type. Use sample inputs if you want a quick walkthrough.</p>' +
+              '</div>' +
+              '<div class="tool-assist__actions">' +
+                '<button type="button" class="tool-button tool-button--ghost" data-tool-fill>Try sample inputs</button>' +
+                '<button type="button" class="tool-button tool-button--ghost" data-tool-reset>Reset</button>' +
+              '</div>';
+            header.insertAdjacentElement('afterend', assist);
+
+            const status = assist.querySelector('[data-tool-status]');
+            const fillButton = assist.querySelector('[data-tool-fill]');
+            const resetButton = assist.querySelector('[data-tool-reset]');
+
+            function setStatus(message) {
+                if (status) status.textContent = message;
+            }
+
+            function runCalculation() {
+                calcButton.click();
+                setStatus('Updated just now. Save the assumptions you intend to act on.');
+            }
+
+            const debouncedRun = debounce(() => {
+                runCalculation();
+            }, 220);
+
+            form.addEventListener('input', (event) => {
+                if (!event.target.matches('input, select, textarea')) return;
+                setStatus('Updating outputs…');
+                debouncedRun();
+            });
+
+            form.addEventListener('change', (event) => {
+                if (!event.target.matches('input, select, textarea')) return;
+                setStatus('Updating outputs…');
+                debouncedRun();
+            });
+
+            calculator.addEventListener('click', (event) => {
+                if (event.target.closest('button[id$="-add"]') || event.target.closest('.linklike')) {
+                    setStatus('Refreshing totals…');
+                    setTimeout(runCalculation, 0);
+                }
+            });
+
+            fillButton?.addEventListener('click', () => {
+                fillSampleValues(form);
+                runCalculation();
+                emitToolEvent('tool_fill_sample_inputs');
+            });
+
+            resetButton?.addEventListener('click', () => {
+                clearFormValues(form);
+                runCalculation();
+                setStatus('Reset to blank inputs. Add your real numbers when you are ready.');
+                emitToolEvent('tool_reset');
+            });
+
+            setTimeout(runCalculation, 0);
+        }
+
         document.querySelectorAll('.related-card__cta').forEach((link) => {
             link.addEventListener('click', () => {
                 emitToolEvent('tool_related_guide_click', {
@@ -3363,6 +3779,8 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
             });
         });
 
+        setupJumpbarState();
+        setupToolWorkspace();
         emitToolEvent('tool_page_view');
     </script>
 </body>
@@ -3372,14 +3790,48 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
 function renderIndex(tools) {
   const canonical = 'https://www.legacyinvestingshow.com/tools/';
   const isoDate = new Date().toISOString().split('T')[0];
+  const themes = tools.reduce((acc, tool) => {
+    const theme = toolTheme(tool);
+    if (!acc.has(theme.key)) {
+      acc.set(theme.key, {
+        ...theme,
+        count: 0,
+      });
+    }
+    acc.get(theme.key).count += 1;
+    return acc;
+  }, new Map());
+
+  const filterButtons = [
+    { key: 'all', label: 'All Tools', count: tools.length },
+    ...Array.from(themes.values()).sort((a, b) => a.label.localeCompare(b.label)),
+  ]
+    .map((theme, index) => `<button type="button" class="filter-chip${index === 0 ? ' is-active' : ''}" data-filter="${esc(theme.key)}">
+                    <span>${esc(theme.label)}</span>
+                    <strong>${theme.count}</strong>
+                </button>`)
+    .join('\n');
 
   const cards = tools
-    .map((tool) => `<article class="library-card">
-                    <div class="library-card__badge">${esc(tool.badge || 'Tool')}</div>
-                    <h3><a href="/tools/${esc(tool.slug)}">${esc(tool.title)}</a></h3>
+    .map((tool) => {
+      const theme = toolTheme(tool);
+      const searchBlob = [tool.title, tool.badge, tool.description, theme.label, theme.summary].filter(Boolean).join(' ');
+
+      return `<article class="library-card" data-theme="${esc(theme.key)}" data-search="${esc(searchBlob.toLowerCase())}" data-href="/tools/${esc(tool.slug)}">
+                    <div class="library-card__top">
+                        <div class="library-card__eyebrow">
+                            <span class="library-card__badge">${esc(tool.badge || 'Tool')}</span>
+                            <span class="library-card__theme">${esc(theme.label)}</span>
+                        </div>
+                        <h3><a href="/tools/${esc(tool.slug)}">${esc(tool.title)}</a></h3>
+                    </div>
                     <p>${esc(tool.description)}</p>
-                    <a class="library-card__cta" href="/tools/${esc(tool.slug)}">Open tool</a>
-                </article>`)
+                    <div class="library-card__footer">
+                        <p class="library-card__signal">${esc(theme.summary)}</p>
+                        <a class="library-card__cta" href="/tools/${esc(tool.slug)}">Open tool</a>
+                    </div>
+                </article>`;
+    })
     .join('\n');
 
   return `<!DOCTYPE html>
@@ -3420,65 +3872,115 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
     ${renderAnalyticsHead({ gaTrackingId: GA_TRACKING_ID, gtmContainerId: GTM_CONTAINER_ID })}
 
     <style>
+      :root {
+        --tools-ink: #111827;
+        --tools-muted: #475569;
+        --tools-accent: #c9a961;
+        --tools-accent-strong: #9f7a27;
+      }
       .hero {
-        padding: 8rem 0 3.25rem;
+        position: relative;
+        overflow: hidden;
+        padding: 8rem 0 3.5rem;
         background:
-          radial-gradient(circle at top right, rgba(201, 169, 97, 0.18), transparent 38%),
-          linear-gradient(180deg, #faf7f2 0%, #ffffff 100%);
+          radial-gradient(circle at top right, rgba(201, 169, 97, 0.2), transparent 36%),
+          radial-gradient(circle at left center, rgba(15, 23, 42, 0.06), transparent 25%),
+          linear-gradient(180deg, #fbf8f1 0%, #ffffff 100%);
+      }
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: auto 0 -1px;
+        height: 1px;
+        background: linear-gradient(90deg, rgba(201, 169, 97, 0), rgba(201, 169, 97, 0.55), rgba(201, 169, 97, 0));
       }
       .hero-grid {
         display: grid;
-        gap: 1.25rem;
+        gap: 1.35rem;
         align-items: start;
       }
       @media (min-width: 1024px) {
         .hero-grid {
-          grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.85fr);
+          grid-template-columns: minmax(0, 1.38fr) minmax(300px, 0.84fr);
         }
       }
       .hero-badge {
         display: inline-flex;
         align-items: center;
         gap: 0.55rem;
-        padding: 0.45rem 0.85rem;
+        padding: 0.48rem 0.9rem;
         border-radius: 999px;
-        background: rgba(15, 23, 42, 0.04);
-        border: 1px solid rgba(201, 169, 97, 0.18);
-        color: #a88b4a;
+        background: rgba(17, 24, 39, 0.9);
+        color: #ffffff;
         font-size: 0.74rem;
         font-weight: 700;
         letter-spacing: 0.12em;
         text-transform: uppercase;
         margin-bottom: 0.95rem;
+        box-shadow: 0 14px 34px rgba(15, 23, 42, 0.12);
       }
       .hero-badge::before {
         content: "";
         width: 0.45rem;
         height: 0.45rem;
         border-radius: 999px;
-        background: #c9a961;
+        background: var(--tools-accent);
       }
       .hero-title {
         font-size: clamp(2.35rem, 5vw, 4.2rem);
         font-weight: 800;
-        color: #111827;
-        line-height: 0.98;
+        color: var(--tools-ink);
+        line-height: 0.94;
         letter-spacing: -0.04em;
         margin-bottom: 0.9rem;
-        max-width: 12ch;
+        max-width: 11ch;
       }
       .hero-subtitle {
-        max-width: 48rem;
-        color: #475569;
+        max-width: 44rem;
+        color: var(--tools-muted);
         font-size: 1.06rem;
-        line-height: 1.78;
+        line-height: 1.76;
+      }
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        margin-top: 1.35rem;
+      }
+      .hero-action {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 2.9rem;
+        padding: 0.82rem 1.1rem;
+        border-radius: 999px;
+        text-decoration: none;
+        font-weight: 800;
+        transition: transform 0.18s ease, box-shadow 0.18s ease;
+      }
+      .hero-action:hover {
+        transform: translateY(-1px);
+      }
+      .hero-action--primary {
+        background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+        color: white;
+        box-shadow: 0 18px 34px rgba(15, 23, 42, 0.14);
+      }
+      .hero-action--secondary {
+        background: rgba(255, 255, 255, 0.82);
+        border: 1px solid rgba(17, 24, 39, 0.12);
+        color: var(--tools-ink);
+        backdrop-filter: blur(8px);
       }
       .hero-panel {
-        padding: 1.25rem;
-        border-radius: 1.25rem;
-        background: linear-gradient(160deg, #182234, #0f172a);
+        padding: 1.3rem;
+        border-radius: 1.35rem;
+        background:
+          linear-gradient(160deg, rgba(24, 34, 52, 0.98), rgba(15, 23, 42, 0.98)),
+          linear-gradient(135deg, rgba(201, 169, 97, 0.16), rgba(201, 169, 97, 0));
         color: white;
-        box-shadow: 0 22px 54px rgba(15, 23, 42, 0.18);
+        box-shadow: 0 24px 58px rgba(15, 23, 42, 0.18);
+        border: 1px solid rgba(255, 255, 255, 0.08);
       }
       .hero-panel__stat {
         padding: 0.85rem 0;
@@ -3500,23 +4002,170 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
         font-size: 0.92rem;
         line-height: 1.6;
       }
+      .library-shell {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(255, 251, 245, 0.98));
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        border-radius: 1.5rem;
+        box-shadow: 0 24px 64px rgba(15, 23, 42, 0.08);
+        padding: 1.15rem;
+      }
+      .library-toolbar {
+        display: grid;
+        gap: 1rem;
+        align-items: end;
+      }
+      @media (min-width: 1024px) {
+        .library-toolbar {
+          grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+        }
+      }
+      .library-toolbar__eyebrow {
+        margin: 0 0 0.4rem;
+        color: var(--tools-accent-strong);
+        font-size: 0.75rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+      .library-toolbar__title {
+        margin: 0;
+        color: var(--tools-ink);
+        font-size: 1.45rem;
+        line-height: 1.15;
+      }
+      .library-toolbar__text {
+        margin: 0.45rem 0 0;
+        color: var(--tools-muted);
+        line-height: 1.65;
+      }
+      .library-search label {
+        display: block;
+        color: var(--tools-ink);
+        font-size: 0.84rem;
+        font-weight: 800;
+        margin-bottom: 0.45rem;
+      }
+      .library-search input {
+        width: 100%;
+        min-height: 3rem;
+        border-radius: 0.95rem;
+        border: 1px solid #cbd5e1;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 250, 252, 0.98));
+        padding: 0.82rem 0.95rem;
+        font-size: 0.96rem;
+        color: #111827;
+        transition: border-color 0.18s ease, box-shadow 0.18s ease;
+      }
+      .library-search input:focus {
+        outline: none;
+        border-color: rgba(201, 169, 97, 0.95);
+        box-shadow: 0 0 0 4px rgba(201, 169, 97, 0.16);
+      }
+      .library-filters {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.7rem;
+        margin-top: 1rem;
+      }
+      .filter-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.65rem;
+        min-height: 2.7rem;
+        padding: 0.68rem 0.9rem;
+        border-radius: 999px;
+        border: 1px solid rgba(17, 24, 39, 0.12);
+        background: rgba(255, 255, 255, 0.94);
+        color: #111827;
+        font-size: 0.88rem;
+        font-weight: 800;
+        cursor: pointer;
+        transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+      }
+      .filter-chip strong {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 1.6rem;
+        height: 1.6rem;
+        padding: 0 0.35rem;
+        border-radius: 999px;
+        background: rgba(17, 24, 39, 0.08);
+        font-size: 0.78rem;
+      }
+      .filter-chip:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+      }
+      .filter-chip.is-active {
+        background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+        border-color: rgba(17, 24, 39, 0.95);
+        color: white;
+        box-shadow: 0 16px 28px rgba(15, 23, 42, 0.14);
+      }
+      .filter-chip.is-active strong {
+        background: rgba(255, 255, 255, 0.12);
+      }
+      .library-meta {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.75rem;
+        margin-top: 1rem;
+        padding-top: 0.95rem;
+        border-top: 1px solid rgba(15, 23, 42, 0.08);
+      }
+      .library-meta strong {
+        color: var(--tools-ink);
+        font-size: 0.96rem;
+      }
+      .library-meta span {
+        color: var(--tools-muted);
+        font-size: 0.9rem;
+      }
       .section { padding: 3.25rem 0; }
       .grid {
         display: grid;
         gap: 1.2rem;
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        margin-top: 1.2rem;
       }
       .library-card {
-        background: rgba(255, 255, 255, 0.95);
+        display: flex;
+        flex-direction: column;
+        gap: 0.9rem;
+        min-height: 100%;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(255, 252, 247, 0.98));
         border: 1px solid rgba(15, 23, 42, 0.08);
-        border-radius: 1.15rem;
+        border-radius: 1.2rem;
         padding: 1.1rem 1.1rem 1rem;
-        box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+        box-shadow: 0 18px 42px rgba(15, 23, 42, 0.06);
+        transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+        cursor: pointer;
+      }
+      .library-card:hover {
+        transform: translateY(-3px);
+        border-color: rgba(17, 24, 39, 0.16);
+        box-shadow: 0 24px 46px rgba(15, 23, 42, 0.1);
+      }
+      .library-card.is-hidden {
+        display: none;
+      }
+      .library-card__top {
+        display: grid;
+        gap: 0.7rem;
+      }
+      .library-card__eyebrow {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.55rem;
+        align-items: center;
       }
       .library-card__badge {
         display: inline-flex;
         align-items: center;
-        padding: 0.25rem 0.65rem;
+        padding: 0.28rem 0.68rem;
         background: #111827;
         color: white;
         border-radius: 999px;
@@ -3524,39 +4173,94 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
         letter-spacing: 0.06em;
         text-transform: uppercase;
         font-weight: 700;
-        margin-bottom: 0.75rem;
+      }
+      .library-card__theme {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.26rem 0.68rem;
+        border-radius: 999px;
+        background: rgba(201, 169, 97, 0.16);
+        color: var(--tools-accent-strong);
+        font-size: 0.72rem;
+        font-weight: 800;
       }
       .library-card h3 {
-        margin: 0 0 0.6rem;
-        font-size: 1.05rem;
+        margin: 0;
+        font-size: 1.08rem;
         line-height: 1.35;
         font-weight: 800;
         color: #111827;
       }
       .library-card h3 a { color: inherit; text-decoration: none; }
       .library-card h3 a:hover { text-decoration: underline; }
-      .library-card p { color: #4b5563; line-height: 1.65; margin: 0 0 0.9rem; }
+      .library-card p { color: #4b5563; line-height: 1.65; margin: 0; }
+      .library-card__footer {
+        display: flex;
+        flex-direction: column;
+        gap: 0.9rem;
+        margin-top: auto;
+      }
+      .library-card__signal {
+        font-size: 0.9rem;
+        color: #64748b;
+      }
       .library-card__cta {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        padding: 0.7rem 1rem;
-        background: #111827;
+        min-height: 2.85rem;
+        padding: 0.72rem 1rem;
+        background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
         color: white;
-        border-radius: 0.65rem;
+        border-radius: 0.8rem;
         text-decoration: none;
         font-weight: 800;
+        box-shadow: 0 16px 28px rgba(15, 23, 42, 0.1);
       }
       .library-card__cta:hover { background: #0b1220; }
+      .library-empty {
+        display: none;
+        margin-top: 1.2rem;
+        padding: 1.15rem;
+        border-radius: 1rem;
+        border: 1px dashed rgba(15, 23, 42, 0.16);
+        background: rgba(248, 250, 252, 0.88);
+        color: #475569;
+        text-align: center;
+        line-height: 1.65;
+      }
+      .library-empty.is-visible {
+        display: block;
+      }
       .breadcrumb { padding: 1rem 0; font-size: 0.875rem; color: #6b7280; }
       .breadcrumb a { color: #6b7280; text-decoration: none; }
       .breadcrumb a:hover { color: #111827; }
       .breadcrumb span.sep { margin: 0 0.5rem; color: #9ca3af; }
+      a:focus-visible,
+      button:focus-visible,
+      input:focus-visible {
+        outline: 3px solid rgba(201, 169, 97, 0.28);
+        outline-offset: 2px;
+      }
       @media (max-width: 767px) {
-        .hero { padding: 6.75rem 0 2.4rem; }
+        .hero { padding: 6.75rem 0 2.55rem; }
         .hero-title { font-size: 1.75rem; max-width: none; }
         .hero-subtitle { font-size: 1rem; line-height: 1.6; }
+        .hero-actions {
+          gap: 0.6rem;
+        }
+        .hero-action {
+          flex: 1 1 100%;
+          width: 100%;
+        }
         .section { padding: 2.2rem 0; }
+        .library-shell {
+          padding: 1rem;
+          border-radius: 1.2rem;
+        }
+        .library-meta {
+          align-items: flex-start;
+        }
       }
     </style>
 </head>
@@ -3605,31 +4309,62 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
           <div class="hero-grid">
             <div>
               <span class="hero-badge">Free Tools</span>
-              <h1 class="hero-title">Execution-First Calculators for High-Intent SEO</h1>
-              <p class="hero-subtitle">These pages are not filler. They give searchers a real tool, conservative planning logic, and the documentation standards that make the result more useful than a generic calculator.</p>
+              <h1 class="hero-title">Free planning tools for taxes, real estate, and retirement moves</h1>
+              <p class="hero-subtitle">Each tool is built to answer one decision clearly: give you the math, explain the guardrails, and make the next step easier to execute in real life.</p>
+              <div class="hero-actions">
+                <a class="hero-action hero-action--primary" href="#tool-library">Browse the library</a>
+                <a class="hero-action hero-action--secondary" href="/worksheets/">See worksheets</a>
+              </div>
             </div>
             <aside class="hero-panel">
               <div class="hero-panel__stat">
                 <strong>${tools.length}</strong>
-                <span>Interactive planning tools now available locally and rebuildable from source.</span>
+                <span>Interactive tools covering estimated taxes, deductions, real estate ops, retirement planning, and exit decisions.</span>
               </div>
               <div class="hero-panel__stat">
-                <strong>3</strong>
-                <span>Layers on every page: calculator UI, execution notes, and FAQ/internal-link SEO surface area.</span>
+                <strong>Search</strong>
+                <span>Use the search bar and category filters below to narrow the list fast instead of scanning a flat wall of cards.</span>
               </div>
               <div class="hero-panel__stat">
-                <strong>1</strong>
-                <span>Job for every tool page: rank for a high-intent query and convert that visit into trust.</span>
+                <strong>Workflow</strong>
+                <span>Every tool page pairs the calculator with process notes, documentation reminders, and next-step links.</span>
               </div>
             </aside>
           </div>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" id="tool-library">
         <div class="container-custom">
-          <div class="grid">
-            ${cards}
+          <div class="library-shell">
+            <div class="library-toolbar">
+              <div>
+                <p class="library-toolbar__eyebrow">Tool Library</p>
+                <h2 class="library-toolbar__title">Find the right planning workflow faster</h2>
+                <p class="library-toolbar__text">Filter by theme, search by problem, and open the tool that matches the decision you are trying to make today.</p>
+              </div>
+              <div class="library-search">
+                <label for="tool-search">Search tools</label>
+                <input id="tool-search" type="search" placeholder="Search by strategy, problem, or tool name">
+              </div>
+            </div>
+
+            <div class="library-filters">
+              ${filterButtons}
+            </div>
+
+            <div class="library-meta">
+              <strong id="tool-count-label">${tools.length} tools shown</strong>
+              <span id="tool-count-copy">Showing the full library.</span>
+            </div>
+
+            <div class="grid" id="tool-grid">
+              ${cards}
+            </div>
+
+            <div class="library-empty" id="tool-empty-state">
+              No tools match that search yet. Clear the filters or try a broader phrase like <strong>Roth</strong>, <strong>estimated tax</strong>, or <strong>home office</strong>.
+            </div>
           </div>
         </div>
       </section>
@@ -3690,6 +4425,77 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
                 }
             });
         });
+
+        const searchInput = document.getElementById('tool-search');
+        const filterButtons = Array.from(document.querySelectorAll('.filter-chip'));
+        const cards = Array.from(document.querySelectorAll('.library-card'));
+        const toolCountLabel = document.getElementById('tool-count-label');
+        const toolCountCopy = document.getElementById('tool-count-copy');
+        const emptyState = document.getElementById('tool-empty-state');
+        let activeFilter = 'all';
+
+        function updateToolLibrary() {
+            const query = (searchInput?.value || '').trim().toLowerCase();
+            let visibleCount = 0;
+
+            cards.forEach((card) => {
+                const matchesFilter = activeFilter === 'all' || card.dataset.theme === activeFilter;
+                const matchesQuery = !query || (card.dataset.search || '').includes(query);
+                const isVisible = matchesFilter && matchesQuery;
+                card.classList.toggle('is-hidden', !isVisible);
+                if (isVisible) visibleCount += 1;
+            });
+
+            if (toolCountLabel) {
+                toolCountLabel.textContent = visibleCount + ' tool' + (visibleCount === 1 ? '' : 's') + ' shown';
+            }
+
+            if (toolCountCopy) {
+                if (query) {
+                    toolCountCopy.textContent = 'Filtered by "' + query + '"' + (activeFilter === 'all' ? '.' : ' within ' + (document.querySelector('.filter-chip.is-active span')?.textContent || 'selected tools') + '.');
+                } else if (activeFilter !== 'all') {
+                    toolCountCopy.textContent = 'Showing ' + (document.querySelector('.filter-chip.is-active span')?.textContent || 'selected tools') + '.';
+                } else {
+                    toolCountCopy.textContent = 'Showing the full library.';
+                }
+            }
+
+            emptyState?.classList.toggle('is-visible', visibleCount === 0);
+        }
+
+        filterButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach((item) => item.classList.remove('is-active'));
+                button.classList.add('is-active');
+                activeFilter = button.dataset.filter || 'all';
+                updateToolLibrary();
+
+                window.dataLayer.push({
+                    event: 'tool_hub_filter',
+                    page_type: 'tool_hub',
+                    tool_filter: activeFilter
+                });
+
+                if (typeof gtag === 'function') {
+                    gtag('event', 'tool_hub_filter', {
+                        page_type: 'tool_hub',
+                        tool_filter: activeFilter
+                    });
+                }
+            });
+        });
+
+        searchInput?.addEventListener('input', updateToolLibrary);
+
+        cards.forEach((card) => {
+            card.addEventListener('click', (event) => {
+                if (event.target.closest('a, button, input')) return;
+                const href = card.dataset.href;
+                if (href) window.location.href = href;
+            });
+        });
+
+        updateToolLibrary();
     </script>
 </body>
 </html>`;

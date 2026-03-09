@@ -704,9 +704,9 @@ function generateBlogIndex(posts) {
         <!-- CTA -->
         <section class="minimal-cta">
             <div class="minimal-cta-content">
-                <h2 class="minimal-cta-title">Turn Reading Into A Real Wealth Plan</h2>
-                <p class="minimal-cta-text">Use the free tax strategy masterclass to connect the articles, calculators, and decision guides into one practical next-step plan.</p>
-                <a href="https://www.managemoney101.com/2025workshop" class="minimal-cta-button" data-track-event="cta_clicked" data-track-label="Reserve Your Free Tax Strategy Seat" data-track-location="blog_index_cta" data-track-destination="https://www.managemoney101.com/2025workshop">Reserve Your Free Tax Strategy Seat</a>
+                <h2 class="minimal-cta-title">Turn Reading Into A Before You File Plan</h2>
+                <p class="minimal-cta-text">Join Preston live on Zoom from March 27-29, 2026, 10 AM-4 PM Eastern each day. You will read the return, build the strategy stack, and leave with a dated 12-month plan for 2026.</p>
+                <a href="https://go.managemoney101.com/challenge3" class="minimal-cta-button" data-track-event="cta_clicked" data-track-label="Get Your Seat Before You File" data-track-location="blog_index_cta" data-track-destination="https://go.managemoney101.com/challenge3">Get Your Seat Before You File</a>
             </div>
         </section>
     </main>

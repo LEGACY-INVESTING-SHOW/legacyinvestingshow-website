@@ -641,8 +641,8 @@ function generateIndexPage(strategies, personas) {
             <div class="container-custom">
                 ${renderPageCtaSection({
                     variant: 'tax_masterclass',
-                    title: 'Get The Full Tax Strategy System',
-                    text: 'The biggest wins usually come from combining multiple legal moves in the right order. Use the free masterclass to see how they work together.',
+                    title: 'See The Full Strategy Stack In Before You File',
+                    text: 'Join the live challenge on March 27-29, 2026, from 10 AM to 4 PM Eastern. Preston uses Day 1 to read the return, Day 2 to build the strategy stack, and Day 3 to lock the 12-month execution plan.',
                     trackLocation: 'tax_hub_cta',
                 })}
             </div>
@@ -1107,8 +1107,8 @@ function generatePersonaPage(persona, strategies) {
             <div class="container-custom">
                 ${renderPageCtaSection({
                     variant: 'tax_masterclass',
-                    title: `Map The Best Moves For ${persona.title}`,
-                    text: 'The right strategy stack depends on income, entity structure, and execution discipline. Use the free masterclass to see how Preston sequences the decisions.',
+                    title: `Map The Right Moves For ${persona.title} In Before You File`,
+                    text: 'The challenge runs live March 27-29, 2026, from 10 AM to 4 PM Eastern each day. It covers how to read your 2025 return, choose the right strategies for your situation, and turn them into a dated 2026 action plan.',
                     trackLocation: 'tax_persona_cta',
                 })}
             </div>

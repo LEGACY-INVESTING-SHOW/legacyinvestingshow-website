@@ -23,10 +23,10 @@ const FOOTER_NAV_ITEMS = [
 
 const CTA_LIBRARY = {
   tax_masterclass: {
-    title: 'See How These Decisions Fit Together',
-    text: 'Watch Preston break down the tax, retirement, entity, and cash-flow moves high earners use to keep more of what they make.',
-    href: 'https://www.managemoney101.com/2025workshop',
-    label: 'Reserve Your Free Tax Strategy Seat',
+    title: 'Join Before You File | March 27-29, 2026',
+    text: 'Live on Zoom from 10 AM to 4 PM Eastern each day. Day 1 shows you how to read your 2025 return and find the leaks, Day 2 builds the tax and wealth strategy, and Day 3 turns it into a dated 12-month 2026 plan.',
+    href: 'https://go.managemoney101.com/challenge3',
+    label: 'Get Your Seat Before You File',
   },
   wealth_challenge: {
     title: 'Build The Bigger Wealth System',

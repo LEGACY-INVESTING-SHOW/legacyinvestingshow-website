@@ -708,8 +708,8 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
         <div class="container-custom">
           ${renderPageCtaSection({
             variant: 'tax_masterclass',
-            title: 'Use The Worksheet As Part Of The Advisor Packet',
-            text: 'A worksheet is the starting point. The real leverage comes when your assumptions, supporting files, and next actions are clean enough for your CPA to review quickly.',
+            title: 'Bring The Worksheet Into The 3-Day Challenge',
+            text: 'Before You File is live on Zoom March 27-29, 2026, from 10 AM to 4 PM Eastern daily. Use the worksheet there to pressure-test your assumptions, identify the right strategies, and map the next 12 months in order.',
             trackLocation: 'worksheet_page_cta',
           })}
         </div>
