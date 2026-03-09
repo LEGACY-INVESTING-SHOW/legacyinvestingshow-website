@@ -215,7 +215,7 @@ function buildStrategyPage(strategy, template, allStrategies) {
         .replace(/\{\{dateModified\}\}/g, today)
         .replace(/\{\{analyticsHead\}\}/g, renderAnalyticsHead({ gaTrackingId: GA_TRACKING_ID, gtmContainerId: GTM_CONTAINER_ID }))
         .replace(/\{\{tagManagerBody\}\}/g, renderAnalyticsBody({ gtmContainerId: GTM_CONTAINER_ID }))
-        .replace(/\{\{primaryNavLinks\}\}/g, renderPrimaryNavLinks('/tax-strategies/'))
+        .replace(/\{\{primaryNavLinks\}\}/g, renderPrimaryNavLinks('/tax-strategies'))
         .replace(/\{\{footerLinks\}\}/g, renderFooterLinks())
         .replace(/\{\{footerYear\}\}/g, String(CURRENT_YEAR))
         .replace(/\{\{benefitsForList\}\}/g, generateBenefitsList(strategy.benefitsFor))
@@ -252,7 +252,7 @@ function generateIndexPage(strategies, personas) {
                     </a>`).join('\n');
 
     const personaCards = personas.map(p => `
-                    <a href="/tax-strategies/for/${p.slug}.html" class="persona-card">
+                    <a href="/tax-strategies/for/${p.slug}" class="persona-card">
                         <h3 class="persona-card__title">${p.title}</h3>
                         <p class="persona-card__desc">${p.description}</p>
                         <span class="persona-card__count">${p.topStrategies.length} strategies</span>
@@ -272,10 +272,10 @@ function generateIndexPage(strategies, personas) {
     <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="${GOOGLE_SITE_VERIFICATIONS[0]}">
     <meta name="google-site-verification" content="${GOOGLE_SITE_VERIFICATIONS[1]}">
-    <link rel="canonical" href="https://www.legacyinvestingshow.com/tax-strategies/">
+    <link rel="canonical" href="https://www.legacyinvestingshow.com/tax-strategies">
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.legacyinvestingshow.com/tax-strategies/">
+    <meta property="og:url" content="https://www.legacyinvestingshow.com/tax-strategies">
     <meta property="og:title" content="Tax Strategies for Investors | Legacy Investing Show">
     <meta property="og:description" content="Discover powerful tax strategies for real estate investors, business owners, and high-income earners.">
     <meta property="og:site_name" content="Legacy Investing Show">
@@ -297,7 +297,7 @@ function generateIndexPage(strategies, personas) {
         "@type": "CollectionPage",
         "name": "Tax Strategies for Investors",
         "description": "Comprehensive guide to tax strategies for real estate investors, business owners, and high-income earners",
-        "url": "https://www.legacyinvestingshow.com/tax-strategies/",
+        "url": "https://www.legacyinvestingshow.com/tax-strategies",
         "publisher": {
             "@type": "Organization",
             "name": "Legacy Investing Show"
@@ -516,7 +516,7 @@ function generateIndexPage(strategies, personas) {
                     <span>Legacy Investing Show</span>
                 </a>
                 <div class="hidden md:flex items-center gap-4">
-                    ${renderPrimaryNavLinks('/tax-strategies/')}
+                    ${renderPrimaryNavLinks('/tax-strategies')}
                 </div>
                 <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -526,7 +526,7 @@ function generateIndexPage(strategies, personas) {
             </div>
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <div class="flex flex-col gap-3">
-                    ${renderPrimaryNavLinks('/tax-strategies/')}
+                    ${renderPrimaryNavLinks('/tax-strategies')}
                 </div>
             </div>
         </nav>
@@ -692,7 +692,7 @@ function generatePersonaBreadcrumbSchema(persona) {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Tax Strategies",
-                "item": "https://www.legacyinvestingshow.com/tax-strategies/"
+                "item": "https://www.legacyinvestingshow.com/tax-strategies"
             },
             {
                 "@type": "ListItem",
@@ -1044,7 +1044,7 @@ function generatePersonaPage(persona, strategies) {
                     <span>Legacy Investing Show</span>
                 </a>
                 <div class="hidden md:flex items-center gap-4">
-                    ${renderPrimaryNavLinks('/tax-strategies/')}
+                    ${renderPrimaryNavLinks('/tax-strategies')}
                 </div>
                 <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1054,7 +1054,7 @@ function generatePersonaPage(persona, strategies) {
             </div>
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <div class="flex flex-col gap-3">
-                    ${renderPrimaryNavLinks('/tax-strategies/')}
+                    ${renderPrimaryNavLinks('/tax-strategies')}
                 </div>
             </div>
         </nav>
@@ -1068,7 +1068,7 @@ function generatePersonaPage(persona, strategies) {
                 <meta itemprop="position" content="1" />
             </li>
             <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a href="/tax-strategies/" class="breadcrumb__link" itemprop="item"><span itemprop="name">Tax Strategies</span></a>
+                <a href="/tax-strategies" class="breadcrumb__link" itemprop="item"><span itemprop="name">Tax Strategies</span></a>
                 <meta itemprop="position" content="2" />
             </li>
             <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">

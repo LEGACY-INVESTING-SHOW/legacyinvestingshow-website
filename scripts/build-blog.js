@@ -58,20 +58,9 @@ function calculateReadTime(content) {
  * Build a SERP-friendly <title> string capped near 60 chars.
  */
 function buildSEOTitle(rawTitle) {
-    const title = (rawTitle || 'Legacy Investing Show').replace(/\s+/g, ' ').trim();
-    const suffix = ' | Legacy Investing';
-    const maxLen = 60;
-
-    if ((title + suffix).length <= maxLen) {
-        return `${title}${suffix}`;
-    }
-
-    const budgetWithSuffix = maxLen - suffix.length - 1; // reserve ellipsis
-    if (budgetWithSuffix >= 25) {
-        return `${title.slice(0, budgetWithSuffix).trimEnd()}…${suffix}`;
-    }
-
-    return `${title.slice(0, maxLen - 1).trimEnd()}…`;
+    const title = (rawTitle || 'Legacy Investing Show').replace(/\s+/g, ' ').trim() || 'Legacy Investing Show';
+    const suffix = ' | Legacy Investing Show';
+    return title.endsWith(suffix) ? title : `${title}${suffix}`;
 }
 
 /**
@@ -590,11 +579,11 @@ function generateBlogIndex(posts) {
     <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="${GOOGLE_SITE_VERIFICATIONS[0]}">
     <meta name="google-site-verification" content="${GOOGLE_SITE_VERIFICATIONS[1]}">
-    <link rel="canonical" href="https://www.legacyinvestingshow.com/blog/">
+    <link rel="canonical" href="https://www.legacyinvestingshow.com/blog">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.legacyinvestingshow.com/blog/">
+    <meta property="og:url" content="https://www.legacyinvestingshow.com/blog">
     <meta property="og:title" content="Investing Blog & Case Studies | Legacy Investing Show">
     <meta property="og:description" content="Wealth-building strategies, investing insights, and financial freedom tips.">
     <meta property="og:image" content="https://www.legacyinvestingshow.com/assets/images/og-blog.jpg">
@@ -628,7 +617,7 @@ function generateBlogIndex(posts) {
         "@type": "Blog",
         "name": "Legacy Investing Show Blog",
         "description": "Wealth-building strategies and investing insights",
-        "url": "https://www.legacyinvestingshow.com/blog/",
+        "url": "https://www.legacyinvestingshow.com/blog",
         "publisher": {
             "@type": "Organization",
             "name": "Legacy Investing Show",
@@ -659,7 +648,7 @@ function generateBlogIndex(posts) {
                 </a>
 
                 <div class="hidden md:flex items-center gap-4">
-                    ${renderPrimaryNavLinks('/blog/')}
+                    ${renderPrimaryNavLinks('/blog')}
                 </div>
 
                 <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
@@ -671,7 +660,7 @@ function generateBlogIndex(posts) {
 
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <div class="flex flex-col gap-3">
-                    ${renderPrimaryNavLinks('/blog/')}
+                    ${renderPrimaryNavLinks('/blog')}
                 </div>
             </div>
         </nav>

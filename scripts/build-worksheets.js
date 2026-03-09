@@ -148,7 +148,7 @@ function breadcrumbSchema(worksheet) {
         '@type': 'ListItem',
         position: 2,
         name: 'Worksheets',
-        item: 'https://www.legacyinvestingshow.com/worksheets/',
+        item: 'https://www.legacyinvestingshow.com/worksheets',
       },
       {
         '@type': 'ListItem',
@@ -593,7 +593,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
                 </a>
 
                 <div class="hidden md:flex items-center gap-4">
-                    ${renderPrimaryNavLinks('/worksheets/')}
+                    ${renderPrimaryNavLinks('/worksheets')}
                 </div>
 
                 <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
@@ -605,7 +605,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
 
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <div class="flex flex-col gap-3">
-                    ${renderPrimaryNavLinks('/worksheets/')}
+                    ${renderPrimaryNavLinks('/worksheets')}
                 </div>
             </div>
         </nav>
@@ -871,7 +871,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
 }
 
 function renderIndex(worksheets) {
-  const canonical = 'https://www.legacyinvestingshow.com/worksheets/';
+  const canonical = 'https://www.legacyinvestingshow.com/worksheets';
   const isoDate = new Date().toISOString().split('T')[0];
 
   const cards = worksheets
@@ -1065,7 +1065,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
                 </a>
 
                 <div class="hidden md:flex items-center gap-4">
-                    ${renderPrimaryNavLinks('/worksheets/')}
+                    ${renderPrimaryNavLinks('/worksheets')}
                 </div>
 
                 <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
@@ -1077,7 +1077,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
 
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <div class="flex flex-col gap-3">
-                    ${renderPrimaryNavLinks('/worksheets/')}
+                    ${renderPrimaryNavLinks('/worksheets')}
                 </div>
             </div>
         </nav>

@@ -201,6 +201,21 @@
       "source": "/blog/rob-100k-3-airbnbs-working-fulltime.html",
       "destination": "/blog/rob-100k-3-airbnbs-9-to-5",
       "permanent": true
+    },
+    {
+      "source": "/tax-strategies/health-savings-account-strategy",
+      "destination": "/tax-strategies/hsa-strategy",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/health-savings-account-strategy/",
+      "destination": "/tax-strategies/hsa-strategy",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/health-savings-account-strategy.html",
+      "destination": "/tax-strategies/hsa-strategy",
+      "permanent": true
     }
   ],
   "rewrites": [

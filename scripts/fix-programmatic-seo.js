@@ -1,512 +1,1547 @@
 #!/usr/bin/env node
 
-/**
- * FIXED Programmatic SEO Page Generator
- * Uses proper CSS classes matching the existing website
- */
-
 const fs = require('fs');
 const path = require('path');
+const {
+    CURRENT_YEAR,
+    renderAnalyticsBody,
+    renderAnalyticsHead,
+    renderFooterLinks,
+    renderPrimaryNavLinks,
+} = require('./lib/site-shell');
 
-// Load data
-const citiesData = JSON.parse(fs.readFileSync('./data/cities.json', 'utf8'));
-const taxStrategiesDir = './tax-strategies';
-const outputDir = './programmatic-pages';
+const ROOT_DIR = path.join(__dirname, '..');
+const OUTPUT_DIR = path.join(ROOT_DIR, 'programmatic-pages');
+const CITIES_PATH = path.join(ROOT_DIR, 'data', 'cities.json');
+const TAX_STRATEGIES_PATH = path.join(ROOT_DIR, 'data', 'tax-strategies.json');
+const GA_TRACKING_ID = process.env.GA_TRACKING_ID || 'G-2578PT1WSS';
+const GTM_CONTAINER_ID = process.env.GTM_CONTAINER_ID || 'GTM-KQ4R2LKP';
+const GOOGLE_SITE_VERIFICATIONS = [
+    'Kec6RfGhFL-qG_8zKxCqt7yxjgy65WeDAftCBm90G2s',
+    '92MoCnkdQOj_ey1lEafT5Mz-znCcCQ3UABZlI-JG_nM',
+];
 
-// Ensure output directories exist
-const dirs = ['cities', 'comparisons', 'personas'].map(d => path.join(outputDir, d));
-dirs.forEach(dir => {
-  if (!fs.existsSync(dir)) {
-    fs.mkdirSync(dir, { recursive: true });
-  }
-});
-
-// Get all tax strategy files
-const getTaxStrategies = () => {
-  const files = fs.readdirSync(taxStrategiesDir)
-    .filter(f => f.endsWith('.html') && f !== 'index.html')
-    .filter(f => !f.startsWith('for/'));
-  
-  return files.map(file => {
-    const slug = file.replace('.html', '');
-    const title = slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-    return { slug, title, file };
-  });
+const STATE_CONTEXT = {
+    TX: {
+        taxLens: 'Texas operators usually care more about margin discipline, property taxes, hotel taxes, and entity setup than about a state income-tax bill.',
+        executionFocus: 'Underwrite for permit friction, cleaning labor, and event-driven demand instead of assuming every busy month repeats forever.',
+        checklist: [
+            'Map city-level short-term-rental rules before you sign a lease or contract.',
+            'Separate property-level bookkeeping from personal spending on day one.',
+            'Model property tax, insurance, and cleaning volatility before you count on tax savings.',
+        ],
+    },
+    TN: {
+        taxLens: 'Tennessee planning tends to revolve around local occupancy taxes, permit discipline, and business systems rather than a complex state income-tax overlay.',
+        executionFocus: 'Music and event demand can make revenue spikes look permanent, so use trailing data and conservative occupancy assumptions.',
+        checklist: [
+            'Pressure-test shoulder season numbers against your peak event assumptions.',
+            'Document cleaning, guest communication, and vendor workflows before adding units.',
+            'Review local permitting changes every quarter instead of only at acquisition.',
+        ],
+    },
+    FL: {
+        taxLens: 'Florida operators usually win or lose on pricing discipline, county-level taxes, and compliance with local short-term-rental rules.',
+        executionFocus: 'Tourism can cover weak operations for a while, but storm risk, insurance costs, and seasonality still need to be underwritten explicitly.',
+        checklist: [
+            'Budget for insurance swings, vacancy spikes, and weather-related disruption.',
+            'Track county-level taxes and filing deadlines separately from federal strategy work.',
+            'Use documentation that will still make sense in an audit file six months later.',
+        ],
+    },
+    AZ: {
+        taxLens: 'Arizona planning is often about seasonal cash flow, desert-market maintenance, and matching depreciation strategies to realistic hold periods.',
+        executionFocus: 'Do not let spring demand hide weak summer assumptions or soft weekday occupancy.',
+        checklist: [
+            'Model high and low season separately before you size any deduction strategy.',
+            'Pair depreciation planning with a realistic reserve policy for turns and repairs.',
+            'Keep city compliance, cleaner coverage, and pricing reviews on one calendar.',
+        ],
+    },
+    CO: {
+        taxLens: 'Colorado investors usually need a tighter view of permit limits, mountain or event seasonality, and whether the property is actually built for year-round use.',
+        executionFocus: 'Tax strategy only works when operational capacity keeps up with seasonal spikes and guest expectations.',
+        checklist: [
+            'Tie your tax plan to the actual hold period and renovation budget.',
+            'Avoid using peak ski or convention months as your default baseline.',
+            'Document any mixed personal and rental use clearly before filing.',
+        ],
+    },
+    GA: {
+        taxLens: 'Georgia planning often centers on entity hygiene, business-travel demand, and whether the property can support repeatable weekday occupancy.',
+        executionFocus: 'Airport and convention demand can be strong, but only if operations are consistent enough to protect reviews and pricing power.',
+        checklist: [
+            'Separate business-travel assumptions from leisure assumptions in underwriting.',
+            'Track contractor payments and reimbursements cleanly if you run multiple units.',
+            'Use quarterly reviews to decide whether the current entity structure still fits.',
+        ],
+    },
+    CA: {
+        taxLens: 'California operators usually need stronger documentation, tighter entity planning, and more caution around local regulation than a simple deduction checklist provides.',
+        executionFocus: 'High demand does not remove the need for conservative compliance and expense control.',
+        checklist: [
+            'Read local permit rules before relying on any short-term-rental tax thesis.',
+            'Build a documentation file that can support your deductions without guesswork.',
+            'Stress-test whether the project still works if your expected usage is restricted.',
+        ],
+    },
+    NC: {
+        taxLens: 'North Carolina planning usually comes down to operational consistency, financing discipline, and whether local demand is broad enough beyond peak events.',
+        executionFocus: 'The right tax strategy should protect cash flow, not only create a paper deduction.',
+        checklist: [
+            'Make sure your bookkeeping shows property-by-property performance.',
+            'Review reimbursement, mileage, and home-office records before year-end.',
+            'Use a conservative occupancy range if your thesis depends on event traffic.',
+        ],
+    },
+    NV: {
+        taxLens: 'Nevada planning is often about regulatory discipline, convention demand, and not confusing gross booking volume with durable profitability.',
+        executionFocus: 'In markets with heavy event traffic, risk control matters as much as revenue upside.',
+        checklist: [
+            'Check permit rules and neighborhood restrictions before acquisition.',
+            'Model quiet periods separately from convention or event peaks.',
+            'Keep guest logs, pricing changes, and vendor records in one operating file.',
+        ],
+    },
+    WA: {
+        taxLens: 'Washington operators usually need a practical system for business records, local compliance, and handling a mix of tech, cruise, and seasonal demand.',
+        executionFocus: 'Stable tax planning starts with stable operating systems and realistic labor assumptions.',
+        checklist: [
+            'Review city rules before adding capacity in dense neighborhoods.',
+            'Do not assume cruise or summer demand solves a weak winter model.',
+            'Match any entity or deduction move to actual recordkeeping capacity.',
+        ],
+    },
+    OR: {
+        taxLens: 'Oregon planning usually rewards careful documentation, conservative occupancy assumptions, and a clear operating cadence rather than aggressive tax positioning.',
+        executionFocus: 'Food, event, and outdoor demand can work well, but only if the property survives shoulder seasons cleanly.',
+        checklist: [
+            'Separate event-driven occupancy from base demand in your model.',
+            'Use consistent reimbursement and mileage logs if you self-manage.',
+            'Keep reserve planning tied to the same facts you use for tax planning.',
+        ],
+    },
 };
 
-// Standard head template
-const getHead = (title, description, slug, type = 'cities') => `
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${title} | Legacy Investing Show</title>
-    <meta name="description" content="${description}">
-    <meta name="keywords" content="tax strategies, real estate investing, wealth building, Preston Seo">
-    <meta name="author" content="Preston Seo">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.legacyinvestingshow.com/programmatic-pages/${type}/${slug}">
-    
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://www.legacyinvestingshow.com/programmatic-pages/${type}/${slug}">
-    <meta property="og:title" content="${title}">
-    <meta property="og:description" content="${description}">
-    <meta property="og:site_name" content="Legacy Investing Show">
-    
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="${title}">
-    <meta name="twitter:description" content="${description}">
-    
-    <meta name="theme-color" content="#059669">
-    <link rel="icon" type="image/png" href="/assets/images/logo.png">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "${title}",
-        "description": "${description}",
-        "author": {"@type": "Person", "name": "Preston Seo"},
-        "publisher": {"@type": "Organization", "name": "Legacy Investing Show"},
-        "datePublished": "${new Date().toISOString().split('T')[0]}"
-    }
-    </script>
-</head>`;
+const CITY_CONTEXT = {
+    'austin-tx': {
+        summary: 'Austin works best for operators who understand how event spikes, neighborhood rules, and cleaner capacity interact with underwriting.',
+        demandDrivers: ['SXSW and ACL can create outsized peak pricing windows.', 'Tech relocations and business travel can support midweek demand.', 'Neighborhood-level enforcement and operator saturation can compress margins quickly.'],
+        bestFit: 'Best for disciplined hosts or investors who can combine event revenue with a repeatable non-event base case.',
+        watchouts: ['Do not annualize festival pricing across the rest of the year.', 'Budget for higher service expectations in premium neighborhoods.', 'Review permit and HOA constraints before you count on short-term-rental status.'],
+    },
+    'nashville-tn': {
+        summary: 'Nashville rewards operators who underwrite party demand carefully and still protect the asset during quieter stretches.',
+        demandDrivers: ['Music tourism creates strong leisure demand.', 'Bachelor and bachelorette traffic can lift ADR but also operational wear.', 'New supply can make rankings and reviews matter more than headline demand.'],
+        bestFit: 'Best for hosts with strong guest rules, cleaner oversight, and pricing discipline.',
+        watchouts: ['Do not let group-travel demand hide turnover costs.', 'Protect reviews with tighter guest communication and house rules.', 'Use reserve planning for furnishing refreshes and frequent turns.'],
+    },
+    'miami-fl': {
+        summary: 'Miami can support premium pricing, but the tax win only holds if the operation survives insurance pressure, regulation, and seasonality.',
+        demandDrivers: ['Beach, nightlife, and international travel support strong leisure demand.', 'Conferences and luxury travel can widen top-end pricing.', 'Insurance, building rules, and local compliance can erase a weak margin model.'],
+        bestFit: 'Best for experienced operators who can manage compliance and premium-service expectations.',
+        watchouts: ['Do not underwrite with peak season occupancy alone.', 'Keep insurance and reserve assumptions conservative.', 'Verify building-level rental rules before signing or acquiring.'],
+    },
+    'phoenix-az': {
+        summary: 'Phoenix is a good fit when you plan around snowbird demand, spring events, and long hot shoulder seasons instead of only peak months.',
+        demandDrivers: ['Spring training and event traffic can create strong short bursts.', 'Seasonal relocations support longer booking windows.', 'Summer softness can expose thin underwriting fast.'],
+        bestFit: 'Best for investors who can match pricing strategy to a sharply seasonal calendar.',
+        watchouts: ['Model summer and spring separately.', 'Use real reserve assumptions for wear, pool service, and utilities.', 'Avoid forcing an aggressive tax plan onto a weak hold-period thesis.'],
+    },
+    'denver-co': {
+        summary: 'Denver works better as a tax strategy market when you tie deductions to a realistic usage pattern and a conservative seasonal model.',
+        demandDrivers: ['Mountain access and outdoor travel support broad appeal.', 'Convention and event traffic can help weekdays.', 'Seasonality and local rules can narrow the workable rental model.'],
+        bestFit: 'Best for operators with a clear plan for both leisure and business demand.',
+        watchouts: ['Do not rely on ski-adjacent demand if the location does not truly benefit from it.', 'Document mixed personal and rental use carefully.', 'Pair depreciation moves with a real exit or hold strategy.'],
+    },
+    'atlanta-ga': {
+        summary: 'Atlanta is more of an operations-and-entity market than a pure tourism market, so stable systems matter.',
+        demandDrivers: ['Airport and convention traffic can support weekday stays.', 'Film, business, and event traffic can diversify demand.', 'Supply competition can punish weak reviews or pricing laziness.'],
+        bestFit: 'Best for hosts who can run a repeatable operating system instead of chasing one-off event spikes.',
+        watchouts: ['Separate business and leisure assumptions in your reporting.', 'Track vendor payments and reimbursements carefully if you scale.', 'Use entity strategy to support operations, not to paper over weak margins.'],
+    },
+    'san-diego-ca': {
+        summary: 'San Diego can be attractive, but regulatory discipline and premium-service execution matter as much as tax strategy.',
+        demandDrivers: ['Beach demand supports leisure travel.', 'Military and conference demand can add stability.', 'Local rules and high carrying costs can limit room for mistakes.'],
+        bestFit: 'Best for operators who can manage premium expectations and compliance simultaneously.',
+        watchouts: ['Do not build the tax plan before confirming local STR rules.', 'Use conservative pricing for non-peak periods.', 'Treat documentation as part of risk control, not admin overhead.'],
+    },
+    'tampa-fl': {
+        summary: 'Tampa works when you combine leisure demand with a realistic cost structure and strong tax documentation.',
+        demandDrivers: ['Beach access and cruise traffic support traveler volume.', 'Compared with some Florida peers, entry can look easier.', 'Seasonality and weather still matter more than optimistic gross revenue projections.'],
+        bestFit: 'Best for operators who want Florida demand without assuming every submarket behaves like Miami or Orlando.',
+        watchouts: ['Stress-test the property outside of cruise and winter peaks.', 'Track county and city taxes separately.', 'Do not overbuild staffing or furniture around peak occupancy only.'],
+    },
+    'charlotte-nc': {
+        summary: 'Charlotte is most useful for operators who want a business-travel-heavy market with less reliance on pure vacation demand.',
+        demandDrivers: ['Banking and corporate activity can support weekdays.', 'NASCAR and event traffic can add revenue bursts.', 'Tech and population growth can make submarket selection matter more than metro-level averages.'],
+        bestFit: 'Best for hosts focused on cleaner operations, midweek demand, and practical tax documentation.',
+        watchouts: ['Do not ignore neighborhood-level demand variation.', 'Protect margins with disciplined vendor and cleaning controls.', 'Keep entity and reimbursement records ready before year-end.'],
+    },
+    'las-vegas-nv': {
+        summary: 'Las Vegas can create big gross numbers, but it is unforgiving if you ignore regulation or assume every event month repeats.',
+        demandDrivers: ['Convention demand can create premium weekdays.', 'Leisure and event traffic can widen ADR bands.', 'Regulatory pressure can be the deciding factor, not demand.'],
+        bestFit: 'Best for experienced operators who treat compliance as part of underwriting.',
+        watchouts: ['Confirm the asset is actually workable under current local rules.', 'Do not rely on conference weeks to justify the whole year.', 'Keep guest controls, cleaning standards, and cash reserves tighter than average.'],
+    },
+    'orlando-fl': {
+        summary: 'Orlando is strongest when family-travel demand, property layout, and seasonality all align with the tax strategy you want to use.',
+        demandDrivers: ['Theme parks create year-round booking volume.', 'Family travel can lengthen planning windows.', 'Heavy competition means weak operations show up fast in reviews and price pressure.'],
+        bestFit: 'Best for operators who can manage family-focused guest expectations and turnover quality.',
+        watchouts: ['Model cleaning and maintenance at family-travel intensity.', 'Do not assume occupancy alone will rescue a bad pricing strategy.', 'Pair deductions with documentation that is clean enough for audit review.'],
+    },
+    'dallas-tx': {
+        summary: 'Dallas is more about business-travel systems, event overlays, and entity hygiene than about headline tourism.',
+        demandDrivers: ['Corporate travel can support weekday stays.', 'Sports and convention traffic add peaks.', 'Submarket differences can make or break the model.'],
+        bestFit: 'Best for operators who want a business-travel profile and clean operating controls.',
+        watchouts: ['Do not underwrite every suburb the same way.', 'Track reimbursements, mileage, and admin expenses carefully if you self-manage.', 'Use pricing reviews to protect margins instead of reacting late.'],
+    },
+    'houston-tx': {
+        summary: 'Houston favors operators who understand medical, energy, and project-based travel patterns rather than simple vacation-market assumptions.',
+        demandDrivers: ['Medical and project travel can support non-weekend demand.', 'Energy and business activity can diversify guest sources.', 'Different submarkets can behave very differently by stay length and season.'],
+        bestFit: 'Best for investors who want a broader demand base and can run property-by-property reporting.',
+        watchouts: ['Do not copy an Austin or Orlando underwriting model into Houston.', 'Track stay-length mix and cleaning cadence carefully.', 'Use the tax plan to support a disciplined operation, not as the entire thesis.'],
+    },
+    'seattle-wa': {
+        summary: 'Seattle can work well for operators who align compliance, labor, and seasonal demand instead of treating the market as permanently premium.',
+        demandDrivers: ['Tech and corporate traffic can support weekday demand.', 'Cruise and summer travel can widen strong periods.', 'Neighborhood rules and operating costs can compress margins quickly.'],
+        bestFit: 'Best for hosts who can balance premium service with conservative cost assumptions.',
+        watchouts: ['Do not assume summer pricing will carry the full year.', 'Review labor and cleaner coverage before adding units.', 'Keep documentation ready if you mix personal travel with business travel.'],
+    },
+    'portland-or': {
+        summary: 'Portland is best approached as a discipline market: good records, realistic seasonality, and clear operator positioning matter more than flashy projections.',
+        demandDrivers: ['Food, event, and outdoor travel create mixed demand pockets.', 'Shorter peak windows can still be lucrative if cost control is strong.', 'Demand can soften fast when the listing or operating experience slips.'],
+        bestFit: 'Best for hosts who value consistent operations and conservative planning over aggressive scaling.',
+        watchouts: ['Use base-case occupancy that still works outside event periods.', 'Keep reimbursement and home-office documentation clean if you self-manage.', 'Pair every tax move with a written execution process.'],
+    },
+};
 
-// Standard header/navigation
-const getHeader = () => `
-<header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+const PERSONAS = [
+    {
+        slug: 'real-estate-investors',
+        title: 'Real Estate Investor Tax Planning Workflow',
+        description: 'A decision-first playbook for investors who need to connect acquisition, hold period, documentation, and exit timing before they chase deductions.',
+        authorityHref: '/tax-strategies/for/real-estate-investors',
+        authorityLabel: 'Core strategy page for real estate investors',
+        pressurePoints: [
+            'Choosing a property structure that supports the actual hold period.',
+            'Matching depreciation strategy to cash flow instead of chasing paper losses alone.',
+            'Keeping time logs, capex records, and entity records tight enough for review.',
+        ],
+        workflow: [
+            'Define whether the next move is acquisition, optimization, refinance, or sale.',
+            'Choose the deduction stack only after the hold period and operator role are clear.',
+            'Build one audit folder per property with purchase documents, capex, mileage, and time logs.',
+            'Review depreciation, exit timing, and entity structure before year-end instead of after closing.',
+        ],
+        mistakes: [
+            'Ordering a cost segregation study before confirming the property is still a good hold.',
+            'Claiming participation or status rules without a recordkeeping system.',
+            'Letting bookkeeping lag until the CPA has to reconstruct the year from bank statements.',
+        ],
+        resources: [
+            'cost-segregation',
+            'real-estate-professional-status',
+            'short-term-rental-loophole',
+            '1031-exchange',
+            'bonus-depreciation',
+        ],
+    },
+    {
+        slug: 'small-business-owners',
+        title: 'Small Business Owner Tax Operations Playbook',
+        description: 'A practical framework for owners who need entity discipline, reimbursement systems, payroll judgment, and deduction hygiene to work together.',
+        authorityHref: '/tax-strategies/for/business-owners',
+        authorityLabel: 'Core strategy page for business owners',
+        pressurePoints: [
+            'Choosing an entity structure that matches real payroll and admin capacity.',
+            'Separating business reimbursements from personal spending before year-end.',
+            'Using deductions to improve owner cash flow without creating messy records.',
+        ],
+        workflow: [
+            'Review entity fit, payroll reality, and reimbursement policy together.',
+            'Tighten bookkeeping, accountable-plan, and receipt discipline before hunting for more deductions.',
+            'Decide which one or two strategy changes matter most this year and ignore the rest.',
+            'Build a recurring quarterly review for payroll, estimates, and documentation gaps.',
+        ],
+        mistakes: [
+            'Electing S-corp treatment without consistent payroll execution.',
+            'Treating every personal expense as a business write-off candidate.',
+            'Adding multiple strategies at once without assigning who maintains the records.',
+        ],
+        resources: [
+            's-corp-strategy',
+            'qualified-business-income-deduction',
+            'home-office-deduction',
+            'business-vehicle-deduction',
+            'section-179',
+        ],
+    },
+    {
+        slug: 'high-income-earners',
+        title: 'High-Income Earner Tax Planning Sequence',
+        description: 'A sequencing page for W-2-heavy households that need to decide what to do first, what requires a business or real estate vehicle, and what is just noise.',
+        authorityHref: '/tax-strategies/for/high-income-earners',
+        authorityLabel: 'Core strategy page for high-income earners',
+        pressurePoints: [
+            'Filtering strategies that sound advanced but do not fit a W-2-heavy income mix.',
+            'Balancing charitable, retirement, and real estate moves without losing documentation quality.',
+            'Reducing tax drag while protecting liquidity and household flexibility.',
+        ],
+        workflow: [
+            'Start with payroll withholding, retirement contribution space, and cash reserve targets.',
+            'Decide whether this year is better suited for deduction, deferral, or asset-location moves.',
+            'Use real estate or business strategies only if the operating system already exists.',
+            'Review which moves belong this year and which should wait for a cleaner setup.',
+        ],
+        mistakes: [
+            'Buying complexity before building the operating capacity to support it.',
+            'Confusing a large deduction with a good long-term investment decision.',
+            'Letting charitable or retirement planning drift without a bracket-aware sequence.',
+        ],
+        resources: [
+            'backdoor-roth-ira',
+            'hsa-strategy',
+            'bunching-deductions',
+            'donor-advised-fund',
+            'short-term-rental-loophole',
+        ],
+    },
+    {
+        slug: 'self-employed',
+        title: 'Self-Employed Tax System for 1099 Operators',
+        description: 'A field guide for consultants, freelancers, and solo operators who need cleaner records, smarter estimate planning, and the right retirement setup.',
+        authorityHref: '/tax-strategies/for/self-employed',
+        authorityLabel: 'Core strategy page for self-employed professionals',
+        pressurePoints: [
+            'Managing irregular cash flow and estimated tax pressure.',
+            'Choosing between solo-owner retirement options without overcomplicating operations.',
+            'Creating records that make deductions defendable instead of debatable.',
+        ],
+        workflow: [
+            'Stabilize bookkeeping, estimate cadence, and reimbursement records first.',
+            'Choose the retirement vehicle that matches revenue consistency and admin tolerance.',
+            'Only consider S-corp treatment after payroll, profit level, and owner workload are clear.',
+            'Use quarterly reviews to update estimates instead of back-solving in March.',
+        ],
+        mistakes: [
+            'Mixing personal and business accounts for most of the year.',
+            'Ignoring estimated tax adjustments until the cash crunch appears.',
+            'Building a complex entity stack before revenue is stable enough to justify it.',
+        ],
+        resources: [
+            'solo-401k',
+            'qualified-business-income-deduction',
+            'hsa-strategy',
+            'home-office-deduction',
+            's-corp-strategy',
+        ],
+    },
+    {
+        slug: 'retirement-savers',
+        title: 'Retirement Saver Tax Sequencing Guide',
+        description: 'A sequencing page for savers deciding how to split dollars between tax-deferred, tax-free, and flexible accounts without chasing every acronym at once.',
+        authorityHref: '/retirement/traditional-vs-roth-401k',
+        authorityLabel: 'Core retirement contribution guide',
+        pressurePoints: [
+            'Choosing the next best account rather than funding everything halfway.',
+            'Keeping retirement contributions aligned with current bracket and future flexibility.',
+            'Avoiding tax moves that weaken near-term liquidity or documentation quality.',
+        ],
+        workflow: [
+            'Start with employer-match capture or the highest-value contribution bucket available.',
+            'Decide whether this year favors tax deduction, tax diversification, or conversion capacity.',
+            'Use HSAs and Roth-oriented moves only when cash flow and recordkeeping support them.',
+            'Review contribution sequencing before year-end, not after filing season starts.',
+        ],
+        mistakes: [
+            'Treating every retirement account as interchangeable.',
+            'Overfunding retirement while underfunding reserves or near-term tax obligations.',
+            'Ignoring the interaction between account type, bracket, and future flexibility.',
+        ],
+        resources: [
+            { href: '/retirement/traditional-vs-roth-401k', title: 'Traditional vs Roth 401(k)', description: 'Use current-vs-future tax rate logic before choosing contribution direction.' },
+            { href: '/retirement/401k-contribution-strategies', title: '401(k) Contribution Strategies', description: 'See how contribution sequencing changes when cash flow or match rules differ.' },
+            'backdoor-roth-ira',
+            'hsa-strategy',
+            { href: '/retirement/sep-ira-guide', title: 'SEP IRA Guide', description: 'Review when SEP IRA simplicity is a strength and when it becomes a constraint.' },
+        ],
+    },
+    {
+        slug: 'airbnb-hosts',
+        title: 'Airbnb Host Tax Operations Playbook',
+        description: 'A process-first page for hosts who need to align permits, stay-length rules, depreciation choices, and bookkeeping before they file.',
+        authorityHref: '/tax-strategies/for/airbnb-hosts',
+        authorityLabel: 'Core strategy page for Airbnb and STR hosts',
+        pressurePoints: [
+            'Knowing whether the property is really short-term-rental friendly under local rules.',
+            'Matching depreciation and participation strategy to the actual operating model.',
+            'Keeping guest, cleaner, and expense records organized enough to support the return.',
+        ],
+        workflow: [
+            'Confirm regulation and average-stay assumptions before deciding on the tax angle.',
+            'Choose the property-level deduction stack only after the operating model is clear.',
+            'Track nights, expenses, vendor payments, and material-participation records in one system.',
+            'Review the file with your CPA before year-end if you expect a large deduction swing.',
+        ],
+        mistakes: [
+            'Assuming the STR loophole applies because the property is on Airbnb.',
+            'Ordering cost segregation without a documented participation story.',
+            'Treating operational chaos as a bookkeeping problem instead of a business problem.',
+        ],
+        resources: [
+            'short-term-rental-loophole',
+            'cost-segregation',
+            'bonus-depreciation',
+            'real-estate-professional-status',
+            'home-office-deduction',
+        ],
+    },
+];
+
+const COMPARISONS = [
+    {
+        slug: 'cost-segregation-vs-bonus-depreciation',
+        title: 'Cost Segregation vs Bonus Depreciation',
+        description: 'Use this decision guide when you need to know whether the study itself is the value driver or whether the property already qualifies for a cleaner first-year deduction approach.',
+        s1: 'cost-segregation',
+        s2: 'bonus-depreciation',
+        quickTake: 'Cost segregation is a study-driven acceleration tool. Bonus depreciation is a timing rule. They often work together, but the sequencing and economics still matter.',
+    },
+    {
+        slug: '1031-exchange-vs-opportunity-zones',
+        title: '1031 Exchange vs Opportunity Zones',
+        description: 'A choice framework for investors deciding whether to preserve flexibility through like-kind exchange rules or accept a more constrained structure for a different deferral profile.',
+        s1: '1031-exchange',
+        s2: 'opportunity-zones',
+        quickTake: 'A 1031 exchange usually wins when you want continuity inside active real estate. Opportunity Zones can fit when deferral is only one part of a longer-term redevelopment or fund thesis.',
+    },
+    {
+        slug: 'real-estate-professional-vs-str-loophole',
+        title: 'Real Estate Professional Status vs STR Loophole',
+        description: 'Use this page when you are trying to decide whether your hours, stay lengths, and operating role support a status-based approach or a short-term-rental participation strategy.',
+        s1: 'real-estate-professional-status',
+        s2: 'short-term-rental-loophole',
+        quickTake: 'REPS is a broad status with strict hour tests. The STR loophole is narrower but can be more practical for owners whose average stays and participation records already fit.',
+    },
+    {
+        slug: 's-corp-vs-qbi-deduction',
+        title: 'S-Corp vs QBI Deduction',
+        description: 'A decision page for owners who need to separate payroll and entity choices from the deduction rules that may apply after the entity choice is already made.',
+        s1: 's-corp-strategy',
+        s2: 'qualified-business-income-deduction',
+        quickTake: 'An S-corp is an operating structure. QBI is a deduction framework. The right decision depends on payroll reality, profit level, and what administrative burden you can actually sustain.',
+    },
+    {
+        slug: 'donor-advised-fund-vs-charitable-trust',
+        title: 'Donor-Advised Fund vs Charitable Trust',
+        description: 'A choice framework for households deciding whether simple donation batching is enough or whether they need a more complex charitable structure tied to larger appreciated assets.',
+        s1: 'donor-advised-fund',
+        s2: 'charitable-remainder-trust',
+        quickTake: 'A donor-advised fund is usually the simpler execution path. A charitable trust can make sense when asset size, income objectives, and estate planning complexity justify it.',
+    },
+];
+
+function esc(value = '') {
+    return String(value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
+function humanizeSlug(slug) {
+    return String(slug || '')
+        .split('-')
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+}
+
+function ensureDir(dirPath) {
+    if (!fs.existsSync(dirPath)) {
+        fs.mkdirSync(dirPath, { recursive: true });
+    }
+}
+
+function loadJson(filePath) {
+    return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+}
+
+function slugForCity(city, state) {
+    return `${city.toLowerCase().replace(/\s+/g, '-')}-${state.toLowerCase()}`;
+}
+
+function programmaticUrl(section, slug) {
+    if (!section) {
+        return 'https://www.legacyinvestingshow.com/programmatic-pages';
+    }
+    return `https://www.legacyinvestingshow.com/programmatic-pages/${section}/${slug}`;
+}
+
+function renderHeader(activeHref) {
+    return `<header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
     <nav class="container-custom" aria-label="Main navigation">
-        <div class="flex items-center justify-between h-16">
+        <div class="flex items-center justify-between gap-4 min-h-[4rem] py-3">
             <a href="/" class="flex items-center gap-2 font-medium text-gray-900 hover:text-gray-700 transition-colors">
-                <img src="/assets/images/logo.png" alt="Legacy Investing Show Logo" width="28" height="28" class="w-7 h-7">
+                <img src="/assets/images/logo.png" alt="Legacy Investing Show logo" width="28" height="28" class="w-7 h-7">
                 <span>Legacy Investing Show</span>
             </a>
-            <div class="hidden md:flex items-center gap-6">
-                <a href="/" class="nav-link">Home</a>
-                <a href="/about" class="nav-link">About</a>
-                <a href="/programs" class="nav-link">Programs</a>
-                <a href="/success-stories" class="nav-link">Results</a>
-                <a href="/tax-strategies/" class="nav-link nav-link-active">Tax Strategies</a>
-                <a href="/blog/" class="nav-link">Blog</a>
+            <div class="hidden lg:flex items-center gap-4">
+                ${renderPrimaryNavLinks(activeHref)}
             </div>
-            <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                </svg>
-            </button>
+        </div>
+        <div class="lg:hidden flex flex-wrap gap-3 pb-3 text-sm">
+            ${renderPrimaryNavLinks(activeHref)}
         </div>
     </nav>
 </header>`;
+}
 
-// Standard footer
-const getFooter = () => `
-<footer class="bg-gray-900 text-white py-12">
-    <div class="container-custom">
-        <div class="grid md:grid-cols-4 gap-8">
-            <div>
-                <h3 class="font-semibold text-lg mb-4">Legacy Investing Show</h3>
-                <p class="text-gray-400 text-sm">Building wealth that lasts beyond a paycheck.</p>
-            </div>
-            <div>
-                <h4 class="font-medium mb-4">Quick Links</h4>
-                <ul class="space-y-2 text-sm text-gray-400">
-                    <li><a href="/about" class="hover:text-white">About</a></li>
-                    <li><a href="/programs" class="hover:text-white">Programs</a></li>
-                    <li><a href="/success-stories" class="hover:text-white">Success Stories</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-medium mb-4">Resources</h4>
-                <ul class="space-y-2 text-sm text-gray-400">
-                    <li><a href="/tax-strategies/" class="hover:text-white">Tax Strategies</a></li>
-                    <li><a href="/blog/" class="hover:text-white">Blog</a></li>
-                    <li><a href="/topics/airbnb-arbitrage" class="hover:text-white">Airbnb Arbitrage</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-medium mb-4">Legal</h4>
-                <ul class="space-y-2 text-sm text-gray-400">
-                    <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
-                    <li><a href="#" class="hover:text-white">Terms of Service</a></li>
-                </ul>
+function renderFooter() {
+    return `<footer class="bg-gray-900 text-white py-12">
+    <div class="container-custom grid gap-10 md:grid-cols-3">
+        <div>
+            <h2 class="text-lg font-semibold mb-3">Legacy Investing Show</h2>
+            <p class="text-gray-400 text-sm leading-7">Educational planning frameworks for tax, real estate, retirement, and wealth decisions.</p>
+        </div>
+        <div>
+            <h2 class="text-lg font-semibold mb-3">Resources</h2>
+            <div class="grid gap-2 text-sm text-gray-300">
+                ${renderFooterLinks()}
             </div>
         </div>
-        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-            <p>&copy; ${new Date().getFullYear()} Legacy Investing Show. All rights reserved.</p>
+        <div>
+            <h2 class="text-lg font-semibold mb-3">Next Steps</h2>
+            <div class="grid gap-2 text-sm text-gray-300">
+                <a href="/programs">Programs</a>
+                <a href="/success-stories">Success Stories</a>
+                <a href="/about">About Preston Seo</a>
+            </div>
         </div>
     </div>
+    <div class="container-custom border-t border-gray-800 mt-8 pt-8 text-sm text-gray-400">
+        <p>&copy; ${CURRENT_YEAR} Legacy Investing Show. Educational content only. Verify tax decisions with a qualified advisor.</p>
+    </div>
 </footer>`;
+}
 
-// Generate city pages
-const generateCityPages = () => {
-  const taxStrategies = getTaxStrategies();
-  const cities = citiesData.cities;
-  
-  console.log(`Generating ${cities.length} city pages...`);
-  
-  cities.forEach(cityData => {
-    const { city, state, region, notes } = cityData;
-    const slug = `${city.toLowerCase().replace(/\s+/g, '-')}-${state.toLowerCase()}`;
-    const title = `Tax Strategies in ${city}, ${state}`;
-    const description = `Discover the best tax strategies for ${city}, ${state} residents. Learn how to minimize taxes on real estate, business income, and investments with location-specific advice.`;
-    
-    const relevantStrategies = taxStrategies.slice(0, 9);
-    
-    const html = `<!DOCTYPE html>
+function renderStyles() {
+    return `<style>
+        .programmatic-main {
+            padding-top: 5rem;
+        }
+        .programmatic-hero {
+            padding: 4.5rem 0 3rem;
+            background:
+                radial-gradient(circle at top right, rgba(5, 150, 105, 0.18), transparent 28%),
+                linear-gradient(180deg, #ecfdf5 0%, #ffffff 100%);
+        }
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.4rem 0.8rem;
+            border-radius: 999px;
+            background: rgba(5, 150, 105, 0.08);
+            color: #047857;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+        .eyebrow::before {
+            content: "";
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 999px;
+            background: #10b981;
+        }
+        .hero-title {
+            margin-top: 1rem;
+            font-size: clamp(2.1rem, 5vw, 4rem);
+            line-height: 1.02;
+            letter-spacing: -0.04em;
+            color: #111827;
+            max-width: 14ch;
+        }
+        .hero-copy {
+            margin-top: 1rem;
+            max-width: 48rem;
+            color: #4b5563;
+            font-size: 1.05rem;
+            line-height: 1.75;
+        }
+        .hero-grid,
+        .section-grid,
+        .card-grid,
+        .faq-grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+        .hero-grid {
+            grid-template-columns: 1.8fr 1fr;
+            align-items: start;
+        }
+        .section-grid {
+            grid-template-columns: 1.35fr 1fr;
+            align-items: start;
+        }
+        .surface,
+        .info-card,
+        .stack-card,
+        .faq-card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 1rem;
+            box-shadow: 0 12px 30px rgba(15, 23, 42, 0.04);
+        }
+        .surface {
+            padding: 1.5rem;
+        }
+        .hero-panel {
+            padding: 1.4rem;
+            background: rgba(255, 255, 255, 0.84);
+            border: 1px solid rgba(16, 185, 129, 0.18);
+            border-radius: 1rem;
+            box-shadow: 0 12px 30px rgba(16, 185, 129, 0.08);
+        }
+        .hero-panel h2 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+        .hero-panel p,
+        .hero-panel li {
+            color: #4b5563;
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+        .hero-panel ul,
+        .checklist,
+        .bullet-list {
+            margin: 0;
+            padding-left: 1.1rem;
+        }
+        .section {
+            padding: 3.5rem 0;
+        }
+        .section--alt {
+            background: #f8fafc;
+        }
+        .section-title {
+            font-size: clamp(1.6rem, 3vw, 2.25rem);
+            line-height: 1.1;
+            color: #111827;
+            letter-spacing: -0.03em;
+            margin-bottom: 1rem;
+        }
+        .section-copy,
+        .surface p,
+        .info-card p,
+        .stack-card p,
+        .faq-card p {
+            color: #4b5563;
+            line-height: 1.8;
+        }
+        .meta-strip {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+        }
+        .meta-pill {
+            padding: 0.6rem 0.85rem;
+            border-radius: 999px;
+            background: #f3f4f6;
+            color: #374151;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+        .card-grid {
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        }
+        .info-card,
+        .stack-card,
+        .faq-card {
+            padding: 1.25rem;
+        }
+        .info-card h3,
+        .stack-card h3,
+        .faq-card h3 {
+            font-size: 1.05rem;
+            color: #111827;
+            margin-bottom: 0.65rem;
+        }
+        .stack-card__index {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 999px;
+            background: #dcfce7;
+            color: #047857;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 0.85rem;
+        }
+        .stack-card__link,
+        .inline-link {
+            color: #047857;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .stack-card__link:hover,
+        .inline-link:hover {
+            text-decoration: underline;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 1rem;
+            overflow: hidden;
+            border: 1px solid #e5e7eb;
+        }
+        .comparison-table th,
+        .comparison-table td {
+            padding: 1rem;
+            text-align: left;
+            vertical-align: top;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .comparison-table th {
+            background: #111827;
+            color: white;
+            font-size: 0.875rem;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+        }
+        .comparison-table tr:nth-child(even) td {
+            background: #f8fafc;
+        }
+        .cta-box {
+            padding: 2rem;
+            border-radius: 1.25rem;
+            background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+            color: white;
+        }
+        .cta-box p {
+            color: #d1d5db;
+            line-height: 1.8;
+        }
+        .cta-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.85rem;
+            margin-top: 1.25rem;
+        }
+        .cta-button,
+        .ghost-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.9rem 1.25rem;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        .cta-button {
+            background: #10b981;
+            color: white;
+        }
+        .ghost-button {
+            background: rgba(255, 255, 255, 0.08);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+        .resource-list,
+        .hub-list {
+            display: grid;
+            gap: 0.9rem;
+            margin-top: 1.25rem;
+        }
+        .resource-list a,
+        .hub-list a {
+            display: block;
+            padding: 1rem 1.1rem;
+            border-radius: 0.9rem;
+            border: 1px solid #e5e7eb;
+            background: white;
+            color: #111827;
+            text-decoration: none;
+            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+        }
+        .resource-list strong,
+        .hub-list strong {
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+        .resource-list span,
+        .hub-list span {
+            color: #4b5563;
+            font-size: 0.95rem;
+            line-height: 1.65;
+        }
+        .hub-list {
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        }
+        @media (max-width: 1024px) {
+            .hero-grid,
+            .section-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-title {
+                max-width: none;
+            }
+        }
+    </style>`;
+}
+
+function renderHead(config) {
+    const {
+        title,
+        description,
+        canonical,
+        keywords,
+        schemaBlocks,
+        image = 'https://www.legacyinvestingshow.com/assets/images/logo.png',
+        type = 'article',
+    } = config;
+
+    return `<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${esc(title)} | Legacy Investing Show</title>
+    <meta name="description" content="${esc(description)}">
+    <meta name="keywords" content="${esc(keywords)}">
+    <meta name="author" content="Preston Seo">
+    <meta name="robots" content="index, follow">
+${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verification" content="${code}">`).join('\n')}
+    <link rel="canonical" href="${esc(canonical)}">
+
+    <meta property="og:type" content="${esc(type)}">
+    <meta property="og:url" content="${esc(canonical)}">
+    <meta property="og:title" content="${esc(title)} | Legacy Investing Show">
+    <meta property="og:description" content="${esc(description)}">
+    <meta property="og:image" content="${esc(image)}">
+    <meta property="og:site_name" content="Legacy Investing Show">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="${esc(title)} | Legacy Investing Show">
+    <meta name="twitter:description" content="${esc(description)}">
+    <meta name="twitter:image" content="${esc(image)}">
+
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" href="/assets/images/logo.png">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    ${renderAnalyticsHead({ gaTrackingId: GA_TRACKING_ID, gtmContainerId: GTM_CONTAINER_ID })}
+    ${renderStyles()}
+${schemaBlocks.map((schema) => `    <script type="application/ld+json">${JSON.stringify(schema)}</script>`).join('\n')}
+</head>`;
+}
+
+function renderLayout(page) {
+    return `<!DOCTYPE html>
 <html lang="en">
-${getHead(title, description, `${slug}.html`, 'cities')}
-<body class="bg-white text-gray-900">
-    ${getHeader()}
-
-    <main id="main" class="pt-16">
-        <!-- Hero Section -->
-        <section style="padding: 6rem 0 4rem; background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); text-align: center;">
-            <div class="container-custom">
-                <h1 style="font-size: 2.5rem; font-weight: 700; color: #111827; margin-bottom: 1rem;">${title}</h1>
-                <p style="font-size: 1.25rem; color: #4b5563; max-width: 40rem; margin: 0 auto;">${description}</p>
-            </div>
-        </section>
-
-        <!-- Why This City Section -->
-        <section style="padding: 4rem 0; background: white;">
-            <div class="container-custom">
-                <div style="max-width: 48rem; margin: 0 auto;">
-                    <h2 style="font-size: 1.875rem; font-weight: 700; color: #111827; margin-bottom: 1.5rem;">Why ${city} Investors Need Specialized Tax Strategies</h2>
-                    <p style="color: #4b5563; line-height: 1.75; margin-bottom: 1.5rem;">${city}, ${state} offers unique opportunities for real estate investors and business owners. Located in the ${region} region, ${city} has specific market conditions that create distinct tax optimization opportunities.</p>
-                    <p style="color: #4b5563; line-height: 1.75; margin-bottom: 2rem;"><strong>Key factors:</strong> ${notes}</p>
-                    
-                    <div style="background: #f0fdf4; border-left: 4px solid #10b981; padding: 1.5rem;">
-                        <p style="color: #065f46; font-weight: 500; margin: 0;">Understanding ${state}'s specific tax laws and local regulations is crucial for implementing effective tax strategies in ${city}.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Top Strategies Section -->
-        <section style="padding: 4rem 0; background: #f9fafb;">
-            <div class="container-custom">
-                <h2 style="font-size: 1.875rem; font-weight: 700; color: #111827; margin-bottom: 1rem; text-align: center;">Top Tax Strategies for ${city} Residents</h2>
-                <p style="color: #6b7280; text-align: center; max-width: 36rem; margin: 0 auto 3rem;">These proven strategies work especially well for investors and business owners in ${city}, ${state}</p>
-                
-                <div style="display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));">
-                    ${relevantStrategies.map((strategy, index) => `
-                    <a href="/tax-strategies/${strategy.slug}" style="background: white; border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 1.5rem; text-decoration: none; transition: all 0.2s; display: block;" onmouseover="this.style.borderColor='#10b981';this.style.boxShadow='0 4px 12px rgba(16, 185, 129, 0.15)'" onmouseout="this.style.borderColor='#e5e7eb';this.style.boxShadow='none'">
-                        <div style="display: inline-block; font-size: 0.625rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.25rem 0.5rem; border-radius: 9999px; background: #d1fae5; color: #065f46; margin-bottom: 0.75rem;">Strategy ${index + 1}</div>
-                        <h3 style="font-size: 1.125rem; font-weight: 600; color: #111827; margin-bottom: 0.5rem;">${strategy.title}</h3>
-                        <p style="font-size: 0.875rem; color: #6b7280; line-height: 1.5;">Learn how ${strategy.title.toLowerCase()} can reduce your tax burden in ${city} and throughout ${state}.</p>
-                    </a>
-                    `).join('')}
-                </div>
-            </div>
-        </section>
-
-        <!-- State Considerations -->
-        <section style="padding: 4rem 0; background: white;">
-            <div class="container-custom">
-                <h2 style="font-size: 1.875rem; font-weight: 700; color: #111827; margin-bottom: 2rem; text-align: center;">${state}-Specific Tax Considerations</h2>
-                <div style="display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));">
-                    <div style="background: white; border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 1.5rem; border-left: 4px solid #10b981;">
-                        <h3 style="font-weight: 600; color: #111827; margin-bottom: 0.75rem;">State Income Tax</h3>
-                        <p style="color: #6b7280; font-size: 0.875rem; line-height: 1.6;">Understanding ${state}'s income tax structure is crucial for implementing effective tax strategies. Some strategies work better in high-tax states than others.</p>
-                    </div>
-                    <div style="background: white; border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 1.5rem; border-left: 4px solid #10b981;">
-                        <h3 style="font-weight: 600; color: #111827; margin-bottom: 0.75rem;">Property Tax Benefits</h3>
-                        <p style="color: #6b7280; font-size: 0.875rem; line-height: 1.6;">${state} property tax laws can impact your real estate investment strategy. Learn about exemptions, appeals, and optimization opportunities.</p>
-                    </div>
-                    <div style="background: white; border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 1.5rem; border-left: 4px solid #10b981;">
-                        <h3 style="font-weight: 600; color: #111827; margin-bottom: 0.75rem;">Business Entity Selection</h3>
-                        <p style="color: #6b7280; font-size: 0.875rem; line-height: 1.6;">The right business structure for ${state} can provide significant tax advantages. Consider LLCs, S-Corps, and other entities based on state law.</p>
-                    </div>
-                    <div style="background: white; border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 1.5rem; border-left: 4px solid #10b981;">
-                        <h3 style="font-weight: 600; color: #111827; margin-bottom: 0.75rem;">Local Incentives</h3>
-                        <p style="color: #6b7280; font-size: 0.875rem; line-height: 1.6;">${city} and ${state} may offer specific tax incentives for real estate development, business formation, or investment in certain areas.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Related Cities -->
-        <section style="padding: 4rem 0; background: #f9fafb;">
-            <div class="container-custom">
-                <h2 style="font-size: 1.5rem; font-weight: 700; color: #111827; margin-bottom: 1.5rem; text-align: center;">Other Cities in ${region}</h2>
-                <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center;">
-                    ${citiesData.cities
-                      .filter(c => c.region === region && c.city !== city)
-                      .map(c => `<a href="/programmatic-pages/cities/${c.city.toLowerCase().replace(/\s+/g, '-')}-${c.state.toLowerCase()}.html" style="padding: 0.5rem 1rem; background: white; border-radius: 9999px; text-decoration: none; color: #059669; font-size: 0.875rem; border: 1px solid #d1fae5;" onmouseover="this.style.background='#ecfdf5'" onmouseout="this.style.background='white'">${c.city}, ${c.state}</a>`)
-                      .join('')}
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section style="padding: 4rem 0; text-align: center;">
-            <div class="container-custom">
-                <div style="background: linear-gradient(135deg, #1f2937 0%, #111827 100%); border-radius: 1rem; padding: 3rem 2rem; color: white;">
-                    <h2 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1rem;">Ready to Optimize Your Taxes in ${city}?</h2>
-                    <p style="color: #d1d5db; margin-bottom: 1.5rem; max-width: 32rem; margin-left: auto; margin-right: auto;">Get personalized guidance and expert advice tailored to your specific situation in ${city}, ${state}.</p>
-                    <a href="/programs" style="display: inline-flex; align-items-center: center; gap: 0.5rem; padding: 1rem 2rem; background: #10b981; color: white; font-weight: 600; border-radius: 0.5rem; text-decoration: none; transition: background 0.2s;" onmouseover="this.style.background='#059669'" onmouseout="this.style.background='#10b981'">Get Personalized Tax Guidance</a>
-                </div>
-            </div>
-        </section>
+${renderHead(page)}
+<body class="bg-white text-gray-900" data-page-type="${esc(page.pageType)}" data-page-title="${esc(page.title)}">
+    ${renderAnalyticsBody({ gtmContainerId: GTM_CONTAINER_ID })}
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-gray-900 text-white px-4 py-2 z-50">Skip to main content</a>
+    ${renderHeader(page.activeHref || '/tax-strategies')}
+    <main id="main" class="programmatic-main">
+        ${page.body}
     </main>
-
-    ${getFooter()}
+    ${renderFooter()}
 </body>
 </html>`;
+}
 
-    fs.writeFileSync(path.join(outputDir, 'cities', `${slug}.html`), html);
-    console.log(`✓ Created: cities/${slug}.html`);
-  });
-};
+function breadcrumbSchema(items) {
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: items.map((item, index) => ({
+            '@type': 'ListItem',
+            position: index + 1,
+            name: item.name,
+            item: item.item,
+        })),
+    };
+}
 
-// Generate comparison pages
-const generateComparisonPages = () => {
-  const taxStrategies = getTaxStrategies();
-  
-  const comparisonPairs = [
-    { slug: 'cost-segregation-vs-bonus-depreciation', title: 'Cost Segregation vs Bonus Depreciation', s1: 'cost-segregation', s2: 'bonus-depreciation' },
-    { slug: '1031-exchange-vs-opportunity-zones', title: '1031 Exchange vs Opportunity Zones', s1: '1031-exchange', s2: 'opportunity-zones' },
-    { slug: 'real-estate-professional-vs-str-loophole', title: 'Real Estate Professional vs STR Loophole', s1: 'real-estate-professional-status', s2: 'short-term-rental-loophole' },
-    { slug: 's-corp-vs-qbi-deduction', title: 'S-Corp vs QBI Deduction', s1: 's-corp-strategy', s2: 'qualified-business-income-deduction' },
-    { slug: 'donor-advised-fund-vs-charitable-trust', title: 'Donor-Advised Fund vs Charitable Trust', s1: 'donor-advised-fund', s2: 'charitable-remainder-trust' },
-  ];
-  
-  console.log(`\nGenerating ${comparisonPairs.length} comparison pages...`);
-  
-  comparisonPairs.forEach(comp => {
-    const strategy1 = taxStrategies.find(s => s.slug === comp.s1) || { slug: comp.s1, title: comp.s1.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ') };
-    const strategy2 = taxStrategies.find(s => s.slug === comp.s2) || { slug: comp.s2, title: comp.s2.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ') };
-    
-    const description = `Compare ${strategy1.title} vs ${strategy2.title}. Learn which tax strategy is right for your situation with detailed pros, cons, and recommendations.`;
-    
-    const html = `<!DOCTYPE html>
-<html lang="en">
-${getHead(comp.title, description, `${comp.slug}.html`, 'comparisons')}
-<body class="bg-white text-gray-900">
-    ${getHeader()}
+function articleSchema(title, description, canonical, keywords) {
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: title,
+        description,
+        datePublished: new Date().toISOString().split('T')[0],
+        dateModified: new Date().toISOString().split('T')[0],
+        isAccessibleForFree: true,
+        mainEntityOfPage: canonical,
+        author: {
+            '@type': 'Person',
+            name: 'Preston Seo',
+            url: 'https://www.legacyinvestingshow.com/about',
+        },
+        publisher: {
+            '@type': 'Organization',
+            name: 'Legacy Investing Show',
+            url: 'https://www.legacyinvestingshow.com',
+        },
+        keywords,
+    };
+}
 
-    <main id="main" class="pt-16">
-        <!-- Hero Section -->
-        <section style="padding: 6rem 0 4rem; background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); text-align: center;">
-            <div class="container-custom">
-                <h1 style="font-size: 2.5rem; font-weight: 700; color: #111827; margin-bottom: 1rem;">${comp.title}</h1>
-                <p style="font-size: 1.25rem; color: #4b5563; max-width: 40rem; margin: 0 auto;">${description}</p>
+function faqSchema(items) {
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: items.map((item) => ({
+            '@type': 'Question',
+            name: item.question,
+            acceptedAnswer: {
+                '@type': 'Answer',
+                text: item.answer,
+            },
+        })),
+    };
+}
+
+function collectionSchema(name, description, canonical, entries) {
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        name,
+        description,
+        url: canonical,
+        mainEntity: {
+            '@type': 'ItemList',
+            itemListElement: entries.map((entry, index) => ({
+                '@type': 'ListItem',
+                position: index + 1,
+                name: entry.name,
+                url: entry.url,
+            })),
+        },
+    };
+}
+
+function normalizeStrategySlug(slug) {
+    if (slug === 'health-savings-account-strategy') {
+        return 'hsa-strategy';
+    }
+    return slug;
+}
+
+function buildStrategyMap() {
+    const data = loadJson(TAX_STRATEGIES_PATH).strategies;
+    return new Map(
+        data.map((strategy) => [
+            strategy.slug,
+            {
+                href: `/tax-strategies/${strategy.slug}`,
+                title: strategy.title,
+                description: strategy.shortDescription,
+                benefitsFor: strategy.benefitsFor || [],
+                bestFor: strategy.bestFor || '',
+                potentialSavings: strategy.potentialSavings || '',
+                complexity: strategy.complexity || '',
+            },
+        ])
+    );
+}
+
+function resolveResource(resource, strategyMap) {
+    if (typeof resource === 'object' && resource && resource.href) {
+        return resource;
+    }
+
+    const slug = normalizeStrategySlug(resource);
+    const existing = strategyMap.get(slug);
+    if (existing) {
+        return existing;
+    }
+
+    return {
+        href: `/tax-strategies/${slug}`,
+        title: humanizeSlug(slug),
+        description: 'Explore the core planning considerations, tradeoffs, and implementation questions for this strategy.',
+    };
+}
+
+function cityResourcePlan(cityContext) {
+    const base = ['cost-segregation', 'bonus-depreciation', '1031-exchange'];
+    const tourismBlend = ['short-term-rental-loophole', 'real-estate-professional-status'];
+    const businessBlend = ['s-corp-strategy', 'qualified-business-income-deduction'];
+
+    if (/theme parks|beach|nightlife|music|tourism|cruise|event/i.test(cityContext.summary + ' ' + cityContext.demandDrivers.join(' '))) {
+        return [...tourismBlend, ...base];
+    }
+
+    if (/business|medical|tech|banking|airport|corporate/i.test(cityContext.summary + ' ' + cityContext.demandDrivers.join(' '))) {
+        return [...base, ...businessBlend];
+    }
+
+    return [...base, 'short-term-rental-loophole', 's-corp-strategy'];
+}
+
+function renderResourceCards(resources, strategyMap, reasons) {
+    return resources
+        .map((resource, index) => {
+            const resolved = resolveResource(resource, strategyMap);
+            const reason = reasons[index] || resolved.description;
+            return `<article class="stack-card">
+                <div class="stack-card__index">0${index + 1}</div>
+                <h3>${esc(resolved.title)}</h3>
+                <p>${esc(reason)}</p>
+                <a class="stack-card__link" href="${esc(resolved.href)}">Open resource</a>
+            </article>`;
+        })
+        .join('');
+}
+
+function renderList(items, className) {
+    return `<ul class="${className}">${items.map((item) => `<li>${esc(item)}</li>`).join('')}</ul>`;
+}
+
+function buildCityFaqs(cityData, cityContext) {
+    return [
+        {
+            question: `What usually matters more in ${cityData.city}: tax strategy or operations?`,
+            answer: `${cityData.city} usually rewards operators who get both right. A deduction can improve after-tax results, but weak underwriting, loose recordkeeping, or ignoring local rules can erase the benefit quickly.`,
+        },
+        {
+            question: `How should investors think about ${cityData.city} demand in a tax plan?`,
+            answer: `Treat demand as a volatility input, not as a guarantee. Use peak periods to understand upside, but build the tax plan around a base case you can still defend if occupancy softens.`,
+        },
+        {
+            question: `What records should a ${cityData.city} operator keep before filing?`,
+            answer: `Keep a property-level file with purchase documents, repair records, cleaner and vendor invoices, stay-length data, mileage or time logs where relevant, and any local compliance documents that support the operating model.`,
+        },
+    ];
+}
+
+function renderCityPage(cityData, strategyMap) {
+    const slug = slugForCity(cityData.city, cityData.state);
+    const cityContext = CITY_CONTEXT[slug];
+    const stateContext = STATE_CONTEXT[cityData.state];
+    if (!cityContext || !stateContext) {
+        throw new Error(`Missing city or state context for ${slug}`);
+    }
+
+    const title = `${cityData.city}, ${cityData.state} Tax Strategy Guide for Investors and Operators`;
+    const description = `A practical tax-planning guide for ${cityData.city} operators: market context, deduction priorities, documentation habits, and the mistakes that usually break the model.`;
+    const canonical = programmaticUrl('cities', slug);
+    const resources = cityResourcePlan(cityContext);
+    const resourceReasons = [
+        `Use ${resolveResource(resources[0], strategyMap).title.toLowerCase()} when the property profile and hold period actually support it in ${cityData.city}.`,
+        `Use ${resolveResource(resources[1], strategyMap).title.toLowerCase()} only after you understand what qualifies and how the deduction changes real cash flow.`,
+        `Keep ${resolveResource(resources[2], strategyMap).title.toLowerCase()} in view if your exit plan matters as much as your current-year deduction.`,
+        `In ${cityData.city}, this strategy matters when the operating model fits the stay-length and participation facts, not just the platform you use.`,
+        `This becomes useful if your day-to-day role, documentation, and long-term operating plan can actually support it.`,
+    ];
+    const nearbyCities = loadJson(CITIES_PATH).cities
+        .filter((entry) => entry.region === cityData.region && entry.city !== cityData.city)
+        .map((entry) => ({
+            name: `${entry.city}, ${entry.state}`,
+            href: `/programmatic-pages/cities/${slugForCity(entry.city, entry.state)}`,
+            description: `See how the planning lens shifts in ${entry.city} with a different demand mix and operator profile.`,
+        }));
+    const faqItems = buildCityFaqs(cityData, cityContext);
+    const body = `<section class="programmatic-hero">
+    <div class="container-custom hero-grid">
+        <div>
+            <span class="eyebrow">${esc(cityData.region)} market guide</span>
+            <h1 class="hero-title">${esc(title)}</h1>
+            <p class="hero-copy">${esc(cityContext.summary)} ${esc(cityContext.bestFit)}</p>
+            <div class="meta-strip">
+                <span class="meta-pill">${esc(cityData.notes)}</span>
+                <span class="meta-pill">Priority market ${esc(cityData.priority)}</span>
+                <span class="meta-pill">Operator lens: tax + execution</span>
             </div>
-        </section>
+        </div>
+        <aside class="hero-panel">
+            <h2>What this page helps you decide</h2>
+            <p>${esc(stateContext.taxLens)}</p>
+            ${renderList(cityContext.demandDrivers, 'bullet-list')}
+        </aside>
+    </div>
+</section>
 
-        <!-- Comparison Table -->
-        <section style="padding: 4rem 0; background: white;">
-            <div class="container-custom">
-                <div style="overflow-x: auto;">
-                    <table style="width: 100%; border-collapse: collapse;">
-                        <thead>
-                            <tr style="background: #059669; color: white;">
-                                <th style="padding: 1rem; text-align: left; font-weight: 600;">Feature</th>
-                                <th style="padding: 1rem; text-align: left; font-weight: 600;">${strategy1.title}</th>
-                                <th style="padding: 1rem; text-align: left; font-weight: 600;">${strategy2.title}</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr style="border-bottom: 1px solid #e5e7eb;">
-                                <td style="padding: 1rem; font-weight: 600;">Best For</td>
-                                <td style="padding: 1rem; color: #4b5563;">Real estate investors with depreciable property</td>
-                                <td style="padding: 1rem; color: #4b5563;">Business owners seeking immediate deductions</td>
-                            </tr>
-                            <tr style="background: #f9fafb; border-bottom: 1px solid #e5e7eb;">
-                                <td style="padding: 1rem; font-weight: 600;">Tax Benefit</td>
-                                <td style="padding: 1rem; color: #4b5563;">Accelerated depreciation over 5-15 years</td>
-                                <td style="padding: 1rem; color: #4b5563;">Immediate expensing in year of purchase</td>
-                            </tr>
-                            <tr style="border-bottom: 1px solid #e5e7eb;">
-                                <td style="padding: 1rem; font-weight: 600;">Cost</td>
-                                <td style="padding: 1rem; color: #4b5563;">$5,000 - $15,000 for professional study</td>
-                                <td style="padding: 1rem; color: #4b5563;">$0 - $500 documentation</td>
-                            </tr>
-                            <tr style="background: #f9fafb;">
-                                <td style="padding: 1rem; font-weight: 600;">Complexity</td>
-                                <td style="padding: 1rem; color: #4b5563;">High - requires engineering study</td>
-                                <td style="padding: 1rem; color: #4b5563;">Medium - proper documentation needed</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+<section class="section">
+    <div class="container-custom section-grid">
+        <div class="surface">
+            <h2 class="section-title">What makes ${esc(cityData.city)} different</h2>
+            <p>${esc(cityContext.summary)}</p>
+            <p>${esc(stateContext.executionFocus)}</p>
+            <p>Use this page as a market-specific filter: decide whether the demand drivers, local friction, and documentation burden fit the strategy stack you want to use.</p>
+        </div>
+        <div class="surface">
+            <h2 class="section-title">Execution checklist</h2>
+            ${renderList(stateContext.checklist, 'checklist')}
+        </div>
+    </div>
+</section>
+
+<section class="section section--alt">
+    <div class="container-custom">
+        <h2 class="section-title">Recommended strategy stack for ${esc(cityData.city)}</h2>
+        <p class="section-copy">These are not ranked by hype. They are ranked by how often they matter once you combine the market profile, the likely operator type, and the amount of documentation required to defend the move.</p>
+        <div class="card-grid">
+            ${renderResourceCards(resources, strategyMap, resourceReasons)}
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container-custom section-grid">
+        <div class="surface">
+            <h2 class="section-title">Where investors usually get hurt</h2>
+            ${renderList(cityContext.watchouts, 'bullet-list')}
+            <p style="margin-top:1rem;">The goal is not to avoid tax strategy. The goal is to avoid using tax strategy as a substitute for underwriting, local rule review, or operator discipline.</p>
+        </div>
+        <div class="surface">
+            <h2 class="section-title">What to do in the next 90 days</h2>
+            <ol class="checklist">
+                <li>Write the base-case occupancy and rate assumptions for ${esc(cityData.city)} without using peak periods as the baseline.</li>
+                <li>Choose the one deduction or entity question that actually changes your next decision.</li>
+                <li>Build the audit file now: receipts, vendor records, local compliance notes, and property-level bookkeeping.</li>
+                <li>Review the plan with a CPA only after the operating facts are assembled cleanly.</li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+<section class="section section--alt">
+    <div class="container-custom">
+        <h2 class="section-title">Related city and strategy resources</h2>
+        <div class="hub-list">
+            ${nearbyCities.map((entry) => `<a href="${esc(entry.href)}"><strong>${esc(entry.name)}</strong><span>${esc(entry.description)}</span></a>`).join('')}
+            <a href="/tax-strategies"><strong>Tax Strategies Hub</strong><span>Review the main strategy library before you choose a city-specific angle.</span></a>
+            <a href="/blog"><strong>Blog and case studies</strong><span>See how operators and investors apply these decisions in real scenarios.</span></a>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container-custom">
+        <h2 class="section-title">Questions people ask before filing</h2>
+        <div class="faq-grid">
+            ${faqItems.map((item) => `<article class="faq-card"><h3>${esc(item.question)}</h3><p>${esc(item.answer)}</p></article>`).join('')}
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container-custom">
+        <div class="cta-box">
+            <h2 class="section-title" style="color:white;">Need a city-specific second opinion?</h2>
+            <p>Use this market lens to narrow the real questions first, then take the final structure, participation, and filing questions to an advisor who can review your facts.</p>
+            <div class="cta-actions">
+                <a class="cta-button" href="/programs">See programs</a>
+                <a class="ghost-button" href="/tax-strategies">Open tax strategy hub</a>
             </div>
-        </section>
+        </div>
+    </div>
+</section>`;
 
-        <!-- Strategy 1 Details -->
-        <section style="padding: 4rem 0; background: #f9fafb;">
-            <div class="container-custom">
-                <div style="max-width: 48rem; margin: 0 auto;">
-                    <h2 style="font-size: 1.875rem; font-weight: 700; color: #111827; margin-bottom: 1.5rem;">When to Choose ${strategy1.title}</h2>
-                    <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
-                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: #4b5563;"><span style="position: absolute; left: 0; color: #10b981; font-weight: bold;">✓</span> You own commercial or residential rental property</li>
-                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: #4b5563;"><span style="position: absolute; left: 0; color: #10b981; font-weight: bold;">✓</span> You want long-term depreciation benefits</li>
-                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: #4b5563;"><span style="position: absolute; left: 0; color: #10b981; font-weight: bold;">✓</span> You have high taxable income to offset</li>
-                    </ul>
-                    <a href="/tax-strategies/${strategy1.slug}" style="display: inline-block; padding: 0.75rem 1.5rem; background: transparent; color: #059669; border: 2px solid #059669; text-decoration: none; border-radius: 0.5rem; font-weight: 600;" onmouseover="this.style.background='#059669';this.style.color='white'" onmouseout="this.style.background='transparent';this.style.color='#059669'">Learn More About ${strategy1.title}</a>
-                </div>
+    const page = renderLayout({
+        title,
+        description,
+        canonical,
+        keywords: `${cityData.city} tax strategy, ${cityData.state} investors, ${cityData.city} short-term rental taxes, ${cityData.city} real estate tax planning`,
+        schemaBlocks: [
+            articleSchema(title, description, canonical, `${cityData.city}, ${cityData.state}, tax planning, real estate, operators`),
+            breadcrumbSchema([
+                { name: 'Home', item: 'https://www.legacyinvestingshow.com/' },
+                { name: 'Programmatic Pages', item: programmaticUrl('', '') },
+                { name: `${cityData.city}, ${cityData.state}`, item: canonical },
+            ]),
+            faqSchema(faqItems),
+        ],
+        pageType: 'programmatic_city',
+        body,
+    });
+
+    fs.writeFileSync(path.join(OUTPUT_DIR, 'cities', `${slug}.html`), page);
+}
+
+function renderPersonaPage(persona, strategyMap) {
+    const title = persona.title;
+    const description = persona.description;
+    const canonical = programmaticUrl('personas', persona.slug);
+    const faqItems = [
+        {
+            question: `How is this page different from the core ${persona.slug.replace(/-/g, ' ')} strategy page?`,
+            answer: 'This page is a sequencing and execution lens. It helps you decide what to do first, what to ignore, and what records need to exist before the higher-level strategy list becomes useful.',
+        },
+        {
+            question: 'Should you use every strategy shown here in the same year?',
+            answer: 'No. The point is to narrow the next one or two decisions that materially change your position. More strategies do not automatically mean a better return or a cleaner filing.',
+        },
+        {
+            question: 'What is the fastest way to improve the quality of a tax plan?',
+            answer: 'Tighten the facts first: bookkeeping, reimbursement records, hold period assumptions, payroll reality, and clean supporting documents. Most bad tax plans fail there before they fail on the statute.',
+        },
+    ];
+    const body = `<section class="programmatic-hero">
+    <div class="container-custom hero-grid">
+        <div>
+            <span class="eyebrow">Decision workflow</span>
+            <h1 class="hero-title">${esc(title)}</h1>
+            <p class="hero-copy">${esc(description)}</p>
+        </div>
+        <aside class="hero-panel">
+            <h2>Where this page fits</h2>
+            <p>Use this page when the problem is sequencing, not awareness. You already know there are strategies available. The real question is what belongs first, what requires setup, and what will only create noise right now.</p>
+        </aside>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container-custom section-grid">
+        <div class="surface">
+            <h2 class="section-title">Pressure points for this persona</h2>
+            ${renderList(persona.pressurePoints, 'bullet-list')}
+        </div>
+        <div class="surface">
+            <h2 class="section-title">The authority page to keep nearby</h2>
+            <p>This page is the workflow layer. For the authoritative strategy list and main category framing, keep the core page open too.</p>
+            <p><a class="inline-link" href="${esc(persona.authorityHref)}">${esc(persona.authorityLabel)}</a></p>
+        </div>
+    </div>
+</section>
+
+<section class="section section--alt">
+    <div class="container-custom">
+        <h2 class="section-title">Recommended resource stack</h2>
+        <p class="section-copy">The stack below is intentionally small. The goal is to reduce decision clutter and push you toward the resources that usually change the next move for this persona.</p>
+        <div class="card-grid">
+            ${renderResourceCards(persona.resources, strategyMap, persona.pressurePoints)}
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container-custom section-grid">
+        <div class="surface">
+            <h2 class="section-title">30-day workflow</h2>
+            <ol class="checklist">
+                ${persona.workflow.map((item) => `<li>${esc(item)}</li>`).join('')}
+            </ol>
+        </div>
+        <div class="surface">
+            <h2 class="section-title">What usually goes wrong</h2>
+            ${renderList(persona.mistakes, 'bullet-list')}
+        </div>
+    </div>
+</section>
+
+<section class="section section--alt">
+    <div class="container-custom">
+        <h2 class="section-title">Questions to ask before you escalate complexity</h2>
+        <div class="faq-grid">
+            ${faqItems.map((item) => `<article class="faq-card"><h3>${esc(item.question)}</h3><p>${esc(item.answer)}</p></article>`).join('')}
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container-custom">
+        <div class="cta-box">
+            <h2 class="section-title" style="color:white;">Use this like an operator, not a collector</h2>
+            <p>Pick the next move that changes your tax position cleanly, then ignore the rest until your records, cash flow, and advisor bandwidth can support another layer.</p>
+            <div class="cta-actions">
+                <a class="cta-button" href="${esc(persona.authorityHref)}">Open the core page</a>
+                <a class="ghost-button" href="/blog">Read case studies</a>
             </div>
-        </section>
+        </div>
+    </div>
+</section>`;
 
-        <!-- Strategy 2 Details -->
-        <section style="padding: 4rem 0; background: white;">
-            <div class="container-custom">
-                <div style="max-width: 48rem; margin: 0 auto;">
-                    <h2 style="font-size: 1.875rem; font-weight: 700; color: #111827; margin-bottom: 1.5rem;">When to Choose ${strategy2.title}</h2>
-                    <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
-                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: #4b5563;"><span style="position: absolute; left: 0; color: #10b981; font-weight: bold;">✓</span> You need immediate tax relief this year</li>
-                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: #4b5563;"><span style="position: absolute; left: 0; color: #10b981; font-weight: bold;">✓</span> You want simpler implementation</li>
-                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: #4b5563;"><span style="position: absolute; left: 0; color: #10b981; font-weight: bold;">✓</span> You have qualifying property purchases</li>
-                    </ul>
-                    <a href="/tax-strategies/${strategy2.slug}" style="display: inline-block; padding: 0.75rem 1.5rem; background: transparent; color: #059669; border: 2px solid #059669; text-decoration: none; border-radius: 0.5rem; font-weight: 600;" onmouseover="this.style.background='#059669';this.style.color='white'" onmouseout="this.style.background='transparent';this.style.color='#059669'">Learn More About ${strategy2.title}</a>
-                </div>
+    const page = renderLayout({
+        title,
+        description,
+        canonical,
+        keywords: `${persona.slug.replace(/-/g, ' ')}, tax planning workflow, decision framework, deductions, execution`,
+        schemaBlocks: [
+            articleSchema(title, description, canonical, `${persona.slug}, tax workflow, decision framework`),
+            breadcrumbSchema([
+                { name: 'Home', item: 'https://www.legacyinvestingshow.com/' },
+                { name: 'Programmatic Pages', item: programmaticUrl('', '') },
+                { name: title, item: canonical },
+            ]),
+            faqSchema(faqItems),
+        ],
+        pageType: 'programmatic_persona',
+        body,
+    });
+
+    fs.writeFileSync(path.join(OUTPUT_DIR, 'personas', `${persona.slug}.html`), page);
+}
+
+function comparisonRows(a, b) {
+    return [
+        ['Best when', a.bestFor || 'The asset or operating model clearly matches the rule set.', b.bestFor || 'The structure fits the objective and the paperwork burden is justified.'],
+        ['Potential upside', a.potentialSavings || 'Meaningful tax leverage when facts line up.', b.potentialSavings || 'Meaningful tax leverage when facts line up.'],
+        ['Complexity', a.complexity || 'Varies by facts and documentation quality.', b.complexity || 'Varies by facts and documentation quality.'],
+        ['Execution risk', 'Usually comes from bad assumptions or weak records.', 'Usually comes from bad assumptions or weak records.'],
+        ['Professional help', 'Useful when the move changes filing posture or documentation burden materially.', 'Useful when the move changes filing posture or documentation burden materially.'],
+    ];
+}
+
+function renderComparisonPage(config, strategyMap) {
+    const left = resolveResource(config.s1, strategyMap);
+    const right = resolveResource(config.s2, strategyMap);
+    const canonical = programmaticUrl('comparisons', config.slug);
+    const faqItems = [
+        {
+            question: `Can ${left.title} and ${right.title} ever work together?`,
+            answer: 'Sometimes yes, but only when the sequencing is clean and the paperwork burden is manageable. A combination is not automatically better than a cleaner single-path decision.',
+        },
+        {
+            question: 'What should decide the choice first?',
+            answer: 'Start with the real-world objective: current-year deduction, exit flexibility, documentation capacity, and hold period. Strategy labels are secondary to those constraints.',
+        },
+        {
+            question: 'What is the most common mistake in comparison pages like this?',
+            answer: 'People compare the headlines and skip the operating facts. The right answer usually depends on timing, records, and what you are actually trying to optimize.',
+        },
+    ];
+    const body = `<section class="programmatic-hero">
+    <div class="container-custom hero-grid">
+        <div>
+            <span class="eyebrow">Decision comparison</span>
+            <h1 class="hero-title">${esc(config.title)}</h1>
+            <p class="hero-copy">${esc(config.description)}</p>
+        </div>
+        <aside class="hero-panel">
+            <h2>Quick take</h2>
+            <p>${esc(config.quickTake)}</p>
+        </aside>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container-custom">
+        <h2 class="section-title">Side-by-side decision frame</h2>
+        <div class="surface" style="overflow-x:auto;">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Question</th>
+                        <th>${esc(left.title)}</th>
+                        <th>${esc(right.title)}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    ${comparisonRows(left, right).map((row) => `<tr><td>${esc(row[0])}</td><td>${esc(row[1])}</td><td>${esc(row[2])}</td></tr>`).join('')}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="section section--alt">
+    <div class="container-custom section-grid">
+        <div class="surface">
+            <h2 class="section-title">When ${esc(left.title)} tends to win</h2>
+            <p>${esc(left.description || 'It usually wins when the facts directly fit the rules and the strategy supports the underlying business or investment objective.')}</p>
+            <p>Use the structure when the operating facts, timeline, and documentation burden all reinforce the decision instead of fighting it.</p>
+            <p><a class="inline-link" href="${esc(left.href)}">Open ${esc(left.title)}</a></p>
+        </div>
+        <div class="surface">
+            <h2 class="section-title">When ${esc(right.title)} tends to win</h2>
+            <p>${esc(right.description || 'It usually wins when the investor or operator needs a cleaner fit for the actual goal, timing, or recordkeeping capacity.')}</p>
+            <p>Use the structure when it solves the real constraint rather than just sounding more advanced.</p>
+            <p><a class="inline-link" href="${esc(right.href)}">Open ${esc(right.title)}</a></p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container-custom section-grid">
+        <div class="surface">
+            <h2 class="section-title">Questions to answer before choosing</h2>
+            ${renderList([
+                'What is the actual objective: current-year deduction, exit flexibility, audit defensibility, or long-term compounding?',
+                'Can the records, advisors, and operator behavior support the more complex option?',
+                'Will the strategy still make sense if the market or hold period changes?',
+            ], 'bullet-list')}
+        </div>
+        <div class="surface">
+            <h2 class="section-title">Mistakes that create regret</h2>
+            ${renderList([
+                'Choosing the more complicated option because it sounds more powerful.',
+                'Ignoring the time and paperwork needed to defend the choice later.',
+                'Letting a tax headline override a weak investment or business thesis.',
+            ], 'bullet-list')}
+        </div>
+    </div>
+</section>
+
+<section class="section section--alt">
+    <div class="container-custom">
+        <h2 class="section-title">FAQ</h2>
+        <div class="faq-grid">
+            ${faqItems.map((item) => `<article class="faq-card"><h3>${esc(item.question)}</h3><p>${esc(item.answer)}</p></article>`).join('')}
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container-custom">
+        <div class="cta-box">
+            <h2 class="section-title" style="color:white;">Still split between the two?</h2>
+            <p>Write down the decision objective, the record burden, and the realistic exit or hold period before you ask a CPA to model the numbers. That will usually cut the answer time in half.</p>
+            <div class="cta-actions">
+                <a class="cta-button" href="${esc(left.href)}">Review ${esc(left.title)}</a>
+                <a class="ghost-button" href="${esc(right.href)}">Review ${esc(right.title)}</a>
             </div>
-        </section>
+        </div>
+    </div>
+</section>`;
 
-        <!-- CTA -->
-        <section style="padding: 4rem 0; text-align: center;">
-            <div class="container-custom">
-                <div style="background: linear-gradient(135deg, #1f2937 0%, #111827 100%); border-radius: 1rem; padding: 3rem 2rem; color: white;">
-                    <h2 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1rem;">Still Not Sure Which is Right for You?</h2>
-                    <p style="color: #d1d5db; margin-bottom: 1.5rem;">Get personalized advice from tax experts who can analyze your specific situation.</p>
-                    <a href="/programs" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; background: #10b981; color: white; font-weight: 600; border-radius: 0.5rem; text-decoration: none;" onmouseover="this.style.background='#059669'" onmouseout="this.style.background='#10b981'">Get Expert Guidance</a>
-                </div>
+    const page = renderLayout({
+        title: config.title,
+        description: config.description,
+        canonical,
+        keywords: `${config.title}, comparison, tax strategy, decision guide`,
+        schemaBlocks: [
+            articleSchema(config.title, config.description, canonical, `${config.slug}, comparison, tax planning`),
+            breadcrumbSchema([
+                { name: 'Home', item: 'https://www.legacyinvestingshow.com/' },
+                { name: 'Programmatic Pages', item: programmaticUrl('', '') },
+                { name: config.title, item: canonical },
+            ]),
+            faqSchema(faqItems),
+        ],
+        pageType: 'programmatic_comparison',
+        body,
+    });
+
+    fs.writeFileSync(path.join(OUTPUT_DIR, 'comparisons', `${config.slug}.html`), page);
+}
+
+function renderIndexPage(cities, personas, comparisons) {
+    const canonical = programmaticUrl('', '');
+    const title = 'Tax Strategy Resource Maps by City, Persona, and Comparison';
+    const description = 'Browse city guides, persona workflows, and side-by-side strategy comparisons to find the next best tax-planning decision without wading through generic boilerplate.';
+    const cityEntries = cities.map((city) => ({
+        name: `${city.city}, ${city.state}`,
+        url: programmaticUrl('cities', slugForCity(city.city, city.state)),
+        summary: CITY_CONTEXT[slugForCity(city.city, city.state)].summary,
+    }));
+    const personaEntries = personas.map((persona) => ({
+        name: persona.title,
+        url: programmaticUrl('personas', persona.slug),
+        summary: persona.description,
+    }));
+    const comparisonEntries = comparisons.map((comparison) => ({
+        name: comparison.title,
+        url: programmaticUrl('comparisons', comparison.slug),
+        summary: comparison.quickTake,
+    }));
+    const body = `<section class="programmatic-hero">
+    <div class="container-custom hero-grid">
+        <div>
+            <span class="eyebrow">Resource hub</span>
+            <h1 class="hero-title">${esc(title)}</h1>
+            <p class="hero-copy">${esc(description)}</p>
+        </div>
+        <aside class="hero-panel">
+            <h2>How to use this hub</h2>
+            <p>Start with the filter that matches the decision in front of you:</p>
+            ${renderList([
+                'Use city guides when market context changes the execution risk.',
+                'Use persona pages when the issue is sequencing and fit.',
+                'Use comparison pages when two strategies seem plausible and you need a decision frame.',
+            ], 'bullet-list')}
+        </aside>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container-custom">
+        <h2 class="section-title">City guides</h2>
+        <div class="hub-list">
+            ${cityEntries.map((entry) => `<a href="${esc(entry.url)}"><strong>${esc(entry.name)}</strong><span>${esc(entry.summary)}</span></a>`).join('')}
+        </div>
+    </div>
+</section>
+
+<section class="section section--alt">
+    <div class="container-custom">
+        <h2 class="section-title">Persona workflows</h2>
+        <div class="hub-list">
+            ${personaEntries.map((entry) => `<a href="${esc(entry.url)}"><strong>${esc(entry.name)}</strong><span>${esc(entry.summary)}</span></a>`).join('')}
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container-custom">
+        <h2 class="section-title">Comparison pages</h2>
+        <div class="hub-list">
+            ${comparisonEntries.map((entry) => `<a href="${esc(entry.url)}"><strong>${esc(entry.name)}</strong><span>${esc(entry.summary)}</span></a>`).join('')}
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container-custom">
+        <div class="cta-box">
+            <h2 class="section-title" style="color:white;">Want the full core library?</h2>
+            <p>This hub narrows decisions. The main strategy library holds the core pages, deeper explanations, and broader category coverage.</p>
+            <div class="cta-actions">
+                <a class="cta-button" href="/tax-strategies">Open tax strategy hub</a>
+                <a class="ghost-button" href="/blog">Open blog</a>
             </div>
-        </section>
-    </main>
+        </div>
+    </div>
+</section>`;
 
-    ${getFooter()}
-</body>
-</html>`;
+    const page = renderLayout({
+        title,
+        description,
+        canonical,
+        keywords: 'tax strategy hub, city tax guides, persona tax planning, strategy comparisons',
+        type: 'website',
+        schemaBlocks: [
+            collectionSchema(title, description, canonical, [...cityEntries, ...personaEntries, ...comparisonEntries]),
+            breadcrumbSchema([
+                { name: 'Home', item: 'https://www.legacyinvestingshow.com/' },
+                { name: 'Programmatic Pages', item: canonical },
+            ]),
+        ],
+        pageType: 'programmatic_hub',
+        body,
+    });
 
-    fs.writeFileSync(path.join(outputDir, 'comparisons', `${comp.slug}.html`), html);
-    console.log(`✓ Created: comparisons/${comp.slug}.html`);
-  });
-};
+    fs.writeFileSync(path.join(OUTPUT_DIR, 'index.html'), page);
+}
 
-// Generate persona pages
-const generatePersonaPages = () => {
-  const taxStrategies = getTaxStrategies();
-  
-  const personas = [
-    { slug: 'real-estate-investors', title: 'Real Estate Investors', desc: 'Property owners and real estate professionals seeking to maximize deductions.', strategies: ['cost-segregation', 'real-estate-professional-status', 'short-term-rental-loophole', '1031-exchange', 'bonus-depreciation'] },
-    { slug: 'small-business-owners', title: 'Small Business Owners', desc: 'Entrepreneurs looking to optimize tax structure and maximize deductions.', strategies: ['s-corp-strategy', 'qualified-business-income-deduction', 'home-office-deduction', 'business-vehicle-deduction', 'section-179'] },
-    { slug: 'high-income-earners', title: 'High Income Earners', desc: 'Professionals with W-2 income over $200K seeking advanced tax strategies.', strategies: ['backdoor-roth-ira', 'donor-advised-fund', 'bunching-deductions', 'health-savings-account-strategy', 'charitable-remainder-trust'] },
-    { slug: 'self-employed', title: 'Self-Employed Professionals', desc: 'Freelancers and contractors optimizing taxes for 1099 income.', strategies: ['solo-401k', 'qualified-business-income-deduction', 'health-savings-account-strategy', 'home-office-deduction', 's-corp-strategy'] },
-    { slug: 'retirement-savers', title: 'Retirement Savers', desc: 'Individuals focused on maximizing retirement contributions.', strategies: ['backdoor-roth-ira', 'solo-401k', 'sep-ira', 'health-savings-account-strategy', 'mega-backdoor-roth'] },
-    { slug: 'airbnb-hosts', title: 'Airbnb & Short-Term Rental Hosts', desc: 'STR operators maximizing tax benefits.', strategies: ['short-term-rental-loophole', 'bonus-depreciation', 'cost-segregation', 'real-estate-professional-status', 'home-office-deduction'] },
-  ];
-  
-  console.log(`\nGenerating ${personas.length} persona pages...`);
-  
-  personas.forEach(persona => {
-    const relevantStrategies = persona.strategies
-      .map(slug => taxStrategies.find(s => s.slug === slug))
-      .filter(Boolean)
-      .slice(0, 6);
-    
-    const html = `<!DOCTYPE html>
-<html lang="en">
-${getHead(`Tax Strategies for ${persona.title}`, persona.desc, `${persona.slug}.html`, 'personas')}
-<body class="bg-white text-gray-900">
-    ${getHeader()}
+function main() {
+    const cities = loadJson(CITIES_PATH).cities;
+    const strategyMap = buildStrategyMap();
 
-    <main id="main" class="pt-16">
-        <!-- Hero Section -->
-        <section style="padding: 6rem 0 4rem; background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); text-align: center;">
-            <div class="container-custom">
-                <h1 style="font-size: 2.5rem; font-weight: 700; color: #111827; margin-bottom: 1rem;">Tax Strategies for ${persona.title}</h1>
-                <p style="font-size: 1.25rem; color: #4b5563; max-width: 40rem; margin: 0 auto;">${persona.desc}</p>
-            </div>
-        </section>
+    ensureDir(OUTPUT_DIR);
+    ensureDir(path.join(OUTPUT_DIR, 'cities'));
+    ensureDir(path.join(OUTPUT_DIR, 'comparisons'));
+    ensureDir(path.join(OUTPUT_DIR, 'personas'));
 
-        <!-- Strategies Grid -->
-        <section style="padding: 4rem 0; background: #f9fafb;">
-            <div class="container-custom">
-                <h2 style="font-size: 1.875rem; font-weight: 700; color: #111827; margin-bottom: 1rem; text-align: center;">Top Strategies for ${persona.title}</h2>
-                <p style="color: #6b7280; text-align: center; max-width: 36rem; margin: 0 auto 3rem;">These strategies are specifically chosen for ${persona.title.toLowerCase()}</p>
-                
-                <div style="display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));">
-                    ${relevantStrategies.map((strategy, index) => `
-                    <a href="/tax-strategies/${strategy.slug}" style="background: white; border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 1.5rem; text-decoration: none; transition: all 0.2s; display: block;" onmouseover="this.style.borderColor='#10b981';this.style.boxShadow='0 4px 12px rgba(16, 185, 129, 0.15)'" onmouseout="this.style.borderColor='#e5e7eb';this.style.boxShadow='none'">
-                        <div style="display: inline-block; font-size: 0.625rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.25rem 0.5rem; border-radius: 9999px; background: #d1fae5; color: #065f46; margin-bottom: 0.75rem;">Top ${index + 1}</div>
-                        <h3 style="font-size: 1.125rem; font-weight: 600; color: #111827; margin-bottom: 0.5rem;">${strategy.title}</h3>
-                        <p style="font-size: 0.875rem; color: #6b7280; line-height: 1.5;">Essential strategy for ${persona.title.toLowerCase()} to minimize tax burden.</p>
-                    </a>
-                    `).join('')}
-                </div>
-            </div>
-        </section>
+    cities.forEach((city) => renderCityPage(city, strategyMap));
+    PERSONAS.forEach((persona) => renderPersonaPage(persona, strategyMap));
+    COMPARISONS.forEach((comparison) => renderComparisonPage(comparison, strategyMap));
+    renderIndexPage(cities, PERSONAS, COMPARISONS);
 
-        <!-- CTA -->
-        <section style="padding: 4rem 0; text-align: center;">
-            <div class="container-custom">
-                <div style="background: linear-gradient(135deg, #1f2937 0%, #111827 100%); border-radius: 1rem; padding: 3rem 2rem; color: white;">
-                    <h2 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1rem;">Get Expert Tax Guidance</h2>
-                    <p style="color: #d1d5db; margin-bottom: 1.5rem;">Every ${persona.title.toLowerCase()} situation is unique. Get personalized strategies tailored to you.</p>
-                    <a href="/programs" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; background: #10b981; color: white; font-weight: 600; border-radius: 0.5rem; text-decoration: none;" onmouseover="this.style.background='#059669'" onmouseout="this.style.background='#10b981'">Start Optimizing Your Taxes</a>
-                </div>
-            </div>
-        </section>
-    </main>
+    console.log(`Generated ${cities.length} city pages, ${PERSONAS.length} persona pages, ${COMPARISONS.length} comparison pages, and the programmatic hub.`);
+}
 
-    ${getFooter()}
-</body>
-</html>`;
-
-    fs.writeFileSync(path.join(outputDir, 'personas', `${persona.slug}.html`), html);
-    console.log(`✓ Created: personas/${persona.slug}.html`);
-  });
-};
-
-// Generate index page
-const generateIndexPage = () => {
-  const cities = citiesData.cities;
-  
-  const html = `<!DOCTYPE html>
-<html lang="en">
-${getHead('Tax Strategy Resources', 'Browse all location-specific, comparison, and persona-based tax strategy pages.', 'index.html', '')}
-<body class="bg-white text-gray-900">
-    ${getHeader()}
-
-    <main id="main" class="pt-16">
-        <section style="padding: 6rem 0 4rem; background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); text-align: center;">
-            <div class="container-custom">
-                <h1 style="font-size: 2.5rem; font-weight: 700; color: #111827; margin-bottom: 1rem;">Tax Strategy Resources</h1>
-                <p style="font-size: 1.25rem; color: #4b5563; max-width: 40rem; margin: 0 auto;">Browse all location-specific, comparison, and persona-based tax strategy pages</p>
-            </div>
-        </section>
-
-        <section style="padding: 4rem 0; background: white;">
-            <div class="container-custom">
-                <h2 style="font-size: 1.875rem; font-weight: 700; color: #111827; margin-bottom: 2rem;">City-Specific Tax Guides</h2>
-                <div style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));">
-                    ${cities.map(c => `<a href="/programmatic-pages/cities/${c.city.toLowerCase().replace(/\s+/g, '-')}-${c.state.toLowerCase()}.html" style="padding: 1rem; background: #f9fafb; border-radius: 0.5rem; text-decoration: none; color: #059669; text-align: center;" onmouseover="this.style.background='#ecfdf5'" onmouseout="this.style.background='#f9fafb'">${c.city}, ${c.state}</a>`).join('')}
-                </div>
-            </div>
-        </section>
-    </main>
-
-    ${getFooter()}
-</body>
-</html>`;
-
-  fs.writeFileSync(path.join(outputDir, 'index.html'), html);
-  console.log(`\n✓ Created: index.html`);
-};
-
-// Main execution
-console.log('🔧 FIXING Programmatic SEO Pages\n');
-
-generateCityPages();
-generateComparisonPages();
-generatePersonaPages();
-generateIndexPage();
-
-console.log('\n✅ All pages regenerated with proper styling!');
-console.log('\nTotal pages created:');
-console.log(`- ${citiesData.cities.length} city pages`);
-console.log(`- 5 comparison pages`);
-console.log(`- 6 persona pages`);
-console.log(`- 1 index page`);
+main();

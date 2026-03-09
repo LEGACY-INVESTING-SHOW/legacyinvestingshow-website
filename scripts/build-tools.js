@@ -211,7 +211,7 @@ function breadcrumbSchema(tool) {
         '@type': 'ListItem',
         position: 2,
         name: 'Tools',
-        item: 'https://www.legacyinvestingshow.com/tools/',
+        item: 'https://www.legacyinvestingshow.com/tools',
       },
       {
         '@type': 'ListItem',
@@ -3405,7 +3405,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
                 </a>
 
                 <div class="hidden md:flex items-center gap-4">
-                    ${renderPrimaryNavLinks('/tools/')}
+                    ${renderPrimaryNavLinks('/tools')}
                 </div>
 
                 <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
@@ -3417,7 +3417,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
 
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <div class="flex flex-col gap-3">
-                    ${renderPrimaryNavLinks('/tools/')}
+                    ${renderPrimaryNavLinks('/tools')}
                 </div>
             </div>
         </nav>
@@ -3788,7 +3788,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
 }
 
 function renderIndex(tools) {
-  const canonical = 'https://www.legacyinvestingshow.com/tools/';
+  const canonical = 'https://www.legacyinvestingshow.com/tools';
   const isoDate = new Date().toISOString().split('T')[0];
   const themes = tools.reduce((acc, tool) => {
     const theme = toolTheme(tool);
@@ -4279,7 +4279,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
                 </a>
 
                 <div class="hidden md:flex items-center gap-4">
-                    ${renderPrimaryNavLinks('/tools/')}
+                    ${renderPrimaryNavLinks('/tools')}
                 </div>
 
                 <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
@@ -4291,7 +4291,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
 
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <div class="flex flex-col gap-3">
-                    ${renderPrimaryNavLinks('/tools/')}
+                    ${renderPrimaryNavLinks('/tools')}
                 </div>
             </div>
         </nav>
@@ -4313,7 +4313,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
               <p class="hero-subtitle">Each tool is built to answer one decision clearly: give you the math, explain the guardrails, and make the next step easier to execute in real life.</p>
               <div class="hero-actions">
                 <a class="hero-action hero-action--primary" href="#tool-library">Browse the library</a>
-                <a class="hero-action hero-action--secondary" href="/worksheets/">See worksheets</a>
+                <a class="hero-action hero-action--secondary" href="/worksheets">See worksheets</a>
               </div>
             </div>
             <aside class="hero-panel">
