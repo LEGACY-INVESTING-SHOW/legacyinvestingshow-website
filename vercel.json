@@ -178,6 +178,16 @@
   ],
   "redirects": [
     {
+      "source": "/sitemap.txt",
+      "destination": "/sitemap.xml",
+      "permanent": true
+    },
+    {
+      "source": "/sitemap_index.xml",
+      "destination": "/sitemap.xml",
+      "permanent": true
+    },
+    {
       "source": "/topics",
       "destination": "/blog/",
       "permanent": true
@@ -215,6 +225,21 @@
     {
       "source": "/tax-strategies/health-savings-account-strategy.html",
       "destination": "/tax-strategies/hsa-strategy",
+      "permanent": true
+    },
+    {
+      "source": "/blog/this-is-the-millionaire-kid-blueprint",
+      "destination": "/blog/build-10-million-10-years",
+      "permanent": true
+    },
+    {
+      "source": "/blog/marriage-brings-a-10-000-yr-tax-return",
+      "destination": "/blog/tax-planning-for-high-earners",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-a-250k-w-2-salary-can-leave-you-poorer-than-a-120k-busin",
+      "destination": "/blog/tax-planning-for-high-earners",
       "permanent": true
     }
   ],

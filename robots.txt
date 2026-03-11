@@ -108,7 +108,6 @@ Allow: /
 # ===========================================
 
 Sitemap: https://www.legacyinvestingshow.com/sitemap.xml
-Sitemap: https://www.legacyinvestingshow.com/sitemap.txt
 
 # AI agents: See /llms.txt for structured site context
 # Full expanded context: /llms-full.txt

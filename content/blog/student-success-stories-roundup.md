@@ -9,7 +9,12 @@ keywords:
   - legacy investing show student results
   - airbnb arbitrage success
 author: Preston Seo
+authorTitle: 'Founder, Legacy Investing Show'
+authorCredentials: Real estate investor and financial educator
 date: '2026-03-01'
+modifiedDate: '2026-03-11'
+category: Success Stories
+canonical: 'https://www.legacyinvestingshow.com/blog/student-success-stories-roundup'
 wordCount: '1216'
 readingTime: 7 min read
 ---

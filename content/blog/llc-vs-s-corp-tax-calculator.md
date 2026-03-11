@@ -17,6 +17,8 @@ seo:
     - s corp reasonable salary
     - llc vs s corp self-employment tax
     - qbi deduction business structure
+    - schedule c vs s corp tax calculator
+    - schedule c vs s corp tax calculator for accountants
   longTailKeywords:
     - how much profit before s corp saves money
     - single-member llc taxed as s corp calculation example

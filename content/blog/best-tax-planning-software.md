@@ -17,11 +17,14 @@ seo:
     - tax planning tools for individuals
     - tax software comparison 2026
     - tax strategy software for high income earners
+    - tax planning tools
+    - tax strategy software
   longTailKeywords:
     - >-
       how to choose the best tax planning software for self employed
       professionals
     - best tax planning software with CPA support and projections
+    - best tax planning software with scenario modeling 2025 2026
     - tax planning software vs CPA cost benefit analysis
   searchIntent: commercial
   targetSnippet: >-

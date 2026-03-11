@@ -25,15 +25,18 @@ const staticPages = [
   { url: '/about' },
   { url: '/success-stories' },
   { url: '/blog/' },
+  { url: '/tax-strategies-101' },
   { url: '/stacking-presentation/' },
 ];
 
 // Programmatic SEO directories to scan
 const programmaticDirs = [
   'tax-strategies',
+  'retirement',
   'compare',
   'tools',
   'worksheets',
+  'programmatic-pages',
 ];
 
 /**
