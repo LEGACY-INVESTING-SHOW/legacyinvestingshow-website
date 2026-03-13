@@ -1,0 +1,1700 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Tax Strategy Report | Legacy Investing Show</title>
+    <meta name="description" content="Get a personalized 24-page tax strategy report for $47. See your estimated savings range, score, gaps, ranked strategies, and a practical action roadmap. Instant PDF delivery.">
+
+    <meta property="og:type" content="product">
+    <meta property="og:url" content="https://www.legacyinvestingshow.com/gettaxreport">
+    <meta property="og:title" content="Personalized Tax Strategy Report | Legacy Investing Show">
+    <meta property="og:description" content="A 24-page personalized tax strategy brief that shows your optimization potential, likely gaps, and what to review first.">
+    <meta property="og:image" content="https://www.joinlwb.com/tax/images/tax-report-og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Legacy Investing Show">
+    <meta property="og:price:amount" content="47.00">
+    <meta property="og:price:currency" content="USD">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.legacyinvestingshow.com/gettaxreport">
+    <meta property="twitter:title" content="Personalized Tax Strategy Report | Legacy Investing Show">
+    <meta property="twitter:description" content="See what tax moves may fit your situation before your next filing, entity, or contribution decision.">
+    <meta property="twitter:image" content="https://www.joinlwb.com/tax/images/tax-report-twitter.jpg">
+
+    <link rel="canonical" href="https://www.legacyinvestingshow.com/gettaxreport">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://player.vimeo.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Sora:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #0b0f0d;
+            --paper: #141a17;
+            --paper-strong: #1b2420;
+            --ink: #e8f2eb;
+            --muted: #c8dcd0;
+            --line: rgba(232, 242, 235, 0.12);
+            --line-strong: rgba(232, 242, 235, 0.22);
+            --olive: #5c7a69;
+            --rust: #2fbf71;
+            --rust-deep: #1d8d52;
+            --gold: #a8ecc4;
+            --gold-soft: rgba(47, 191, 113, 0.18);
+            --green: #2fbf71;
+            --ink-section: #09110d;
+            --shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+            --radius: 28px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Sora', system-ui, sans-serif;
+            color: var(--ink);
+            background:
+                radial-gradient(circle at top left, rgba(47, 191, 113, 0.18), transparent 24%),
+                radial-gradient(circle at 82% 18%, rgba(92, 122, 105, 0.12), transparent 20%),
+                linear-gradient(180deg, #121815 0%, #0b0f0d 100%);
+            line-height: 1.6;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.04)),
+                url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.78' numOctaves='3'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.15'/%3E%3C/svg%3E");
+            mix-blend-mode: screen;
+            opacity: 0.12;
+            z-index: -1;
+        }
+
+        img, iframe, svg {
+            max-width: 100%;
+            display: block;
+        }
+
+        i[data-lucide] {
+            display: none;
+        }
+
+        .w-4 { width: 1rem; }
+        .h-4 { height: 1rem; }
+        .w-5 { width: 1.25rem; }
+        .h-5 { height: 1.25rem; }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button, a {
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .skip-link {
+            position: absolute;
+            left: 16px;
+            top: 16px;
+            padding: 12px 16px;
+            border-radius: 999px;
+            background: var(--ink);
+            color: var(--paper);
+            font-weight: 600;
+            transform: translateY(-200%);
+            transition: transform 0.2s ease;
+            z-index: 120;
+        }
+
+        .skip-link:focus {
+            transform: translateY(0);
+        }
+
+        .shell {
+            width: min(1120px, calc(100vw - 32px));
+            margin: 0 auto;
+        }
+
+        .site-header {
+            position: fixed;
+            inset: 0 0 auto 0;
+            z-index: 100;
+            transform: translateY(-100%);
+            transition: transform 0.35s ease, background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+            border-bottom: 1px solid transparent;
+        }
+
+        .site-header.is-visible {
+            transform: translateY(0);
+        }
+
+        .site-header.scrolled {
+            background: rgba(20, 26, 23, 0.92);
+            backdrop-filter: blur(14px);
+            border-color: rgba(232, 242, 235, 0.08);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.24);
+        }
+
+        .site-header__inner {
+            min-height: 76px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .site-header__brand {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: var(--rust);
+        }
+
+        .eyebrow::before {
+            content: '';
+            width: 26px;
+            height: 1px;
+            background: currentColor;
+        }
+
+        .site-header__title {
+            font-family: 'Crimson Pro', Georgia, serif;
+            font-size: 1.15rem;
+            font-weight: 600;
+        }
+
+        .section {
+            padding: clamp(64px, 9vw, 110px) 0;
+        }
+
+        .hero {
+            padding: clamp(72px, 11vw, 116px) 0 44px;
+        }
+
+        .grid-2,
+        .final-grid {
+            display: grid;
+            gap: 28px;
+        }
+
+        .hero-copy {
+            display: grid;
+            gap: 18px;
+        }
+
+        .hero-proof {
+            display: grid;
+            gap: 12px;
+            padding: 18px 20px;
+            border-left: 3px solid var(--rust);
+            background: rgba(20, 26, 23, 0.72);
+        }
+
+        .hero-proof strong {
+            font-size: 0.95rem;
+            letter-spacing: 0.01em;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin: 0;
+            text-wrap: balance;
+        }
+
+        h1 {
+            font-family: 'Crimson Pro', Georgia, serif;
+            font-size: clamp(2.7rem, 6vw, 5rem);
+            line-height: 0.94;
+            letter-spacing: -0.04em;
+            max-width: 12ch;
+        }
+
+        h2 {
+            font-family: 'Crimson Pro', Georgia, serif;
+            font-size: clamp(2.4rem, 5vw, 4rem);
+            line-height: 0.98;
+            letter-spacing: -0.03em;
+        }
+
+        h3 {
+            font-family: 'Crimson Pro', Georgia, serif;
+            font-size: 1.9rem;
+            line-height: 1.05;
+        }
+
+        .body-copy,
+        .lede,
+        .note,
+        .card p,
+        .quote p,
+        .faq-answer-text,
+        .disclaimer {
+            font-size: clamp(1rem, 1.3vw, 1.08rem);
+            line-height: 1.75;
+            color: var(--muted);
+        }
+
+        .lede {
+            max-width: 60ch;
+        }
+
+        .pill-row,
+        .meta-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            min-height: 44px;
+            padding: 10px 16px;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            background: rgba(20, 26, 23, 0.84);
+            color: var(--ink);
+            font-size: 0.92rem;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+        }
+
+        .meta-row {
+            gap: 16px;
+            color: var(--muted);
+            font-size: 0.92rem;
+        }
+
+        .meta-row span {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .meta-row i {
+            color: var(--green);
+        }
+
+        .cta-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            min-height: 52px;
+            padding: 14px 24px;
+            border-radius: 999px;
+            border: 1px solid transparent;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+        }
+
+        .btn:hover,
+        .btn:focus-visible {
+            transform: translateY(-1px);
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.24);
+        }
+
+        .btn--primary {
+            background: linear-gradient(135deg, var(--rust) 0%, var(--rust-deep) 100%);
+            color: var(--paper);
+        }
+
+        .btn--secondary {
+            background: rgba(20, 26, 23, 0.84);
+            border-color: var(--line-strong);
+            color: var(--ink);
+        }
+
+        .text-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            min-height: 44px;
+            color: var(--rust);
+            font-weight: 600;
+        }
+
+        .card,
+        .video,
+        .faq-item,
+        .final-panel,
+        .quote {
+            background: rgba(20, 26, 23, 0.9);
+            border: 1px solid rgba(232, 242, 235, 0.08);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        .card {
+            padding: clamp(24px, 4vw, 36px);
+            display: grid;
+            gap: 18px;
+        }
+
+        .card--compact {
+            gap: 14px;
+        }
+
+        .price-row {
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .price-was {
+            color: rgba(232, 242, 235, 0.32);
+            text-decoration: line-through;
+        }
+
+        .price-now {
+            display: inline-flex;
+            align-items: baseline;
+            gap: 6px;
+            font-family: 'Crimson Pro', Georgia, serif;
+            font-size: clamp(3.3rem, 8vw, 5rem);
+            color: var(--ink);
+            line-height: 1;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            min-height: 36px;
+            padding: 8px 12px;
+            border-radius: 999px;
+            background: rgba(47, 191, 113, 0.16);
+            color: var(--rust);
+            font-size: 0.82rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .checklist {
+            display: grid;
+            gap: 14px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .checklist li {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 12px;
+            align-items: start;
+        }
+
+        .checklist li i {
+            margin-top: 4px;
+            color: var(--green);
+        }
+
+        .video {
+            overflow: hidden;
+        }
+
+        .video__frame {
+            aspect-ratio: 16 / 9;
+            border-bottom: 1px solid rgba(232, 242, 235, 0.08);
+            background: #090806;
+        }
+
+        .video__frame iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        .video__caption {
+            padding: 18px 22px 22px;
+            font-size: 0.95rem;
+            color: var(--muted);
+        }
+
+        .report-preview {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .report-preview--centered {
+            width: min(100%, 520px);
+            margin: 0 auto;
+        }
+
+        .report-preview__stage {
+            padding: 0;
+            border-bottom: 0;
+            background: transparent;
+        }
+
+        .report-preview__device {
+            width: min(100%, 480px);
+            margin: 0 auto;
+            padding: 0;
+            border-radius: 0;
+            border: 0;
+            background: transparent;
+            box-shadow: none;
+        }
+
+        .report-preview__screen {
+            overflow: hidden;
+            border-radius: 18px;
+            border: 1px solid rgba(232, 242, 235, 0.1);
+            background: #08100c;
+            box-shadow: 0 24px 50px rgba(0, 0, 0, 0.22);
+        }
+
+        .report-preview__screen img {
+            width: 100%;
+            height: auto;
+        }
+
+        .section-header {
+            display: grid;
+            gap: 14px;
+            margin-bottom: 36px;
+        }
+
+        .section-header p {
+            max-width: 58rem;
+        }
+
+        .section-header--center {
+            text-align: center;
+            justify-items: center;
+        }
+
+        .audience-list {
+            display: grid;
+            gap: 18px;
+        }
+
+        .audience-item {
+            display: grid;
+            gap: 8px;
+            padding: 22px 24px;
+            border-left: 3px solid var(--rust);
+            border-bottom: 1px solid rgba(232, 242, 235, 0.08);
+            background: rgba(20, 26, 23, 0.72);
+        }
+
+        .audience-item strong {
+            font-family: 'Crimson Pro', Georgia, serif;
+            font-size: 1.55rem;
+            color: var(--ink);
+        }
+
+        .section--ink {
+            background:
+                radial-gradient(circle at top right, rgba(47, 191, 113, 0.16), transparent 24%),
+                linear-gradient(180deg, #0d1511 0%, #070b09 100%);
+            color: var(--paper);
+        }
+
+        .section--ink .note,
+        .section--ink .body-copy,
+        .section--ink .section-header p {
+            color: rgba(232, 242, 235, 0.95);
+        }
+
+        .section--ink h2,
+        .section--ink h3 {
+            color: #f5faf7;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .section--ink .anatomy-item h3 {
+            color: #f5faf7;
+        }
+
+        .section--ink .compare-card strong {
+            color: #f5faf7;
+        }
+
+        .section--ink .eyebrow {
+            color: var(--rust);
+        }
+        }
+
+        .section--paper {
+            position: relative;
+        }
+
+        .section--paper::before {
+            content: '';
+            position: absolute;
+            inset: 24px 0 auto;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(232, 242, 235, 0.08), transparent);
+        }
+
+        .anatomy {
+            display: grid;
+            gap: 18px;
+        }
+
+        .anatomy-item {
+            display: grid;
+            gap: 12px;
+            padding: 24px 0;
+            border-top: 1px solid rgba(232, 242, 235, 0.14);
+        }
+
+        .anatomy-item:first-child {
+            border-top: none;
+            padding-top: 0;
+        }
+
+        .anatomy-meta {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .range {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.82rem;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            color: var(--rust);
+            font-weight: 500;
+        }
+
+        .steps {
+            display: grid;
+            gap: 18px;
+        }
+
+        .pain-grid,
+        .offer-grid {
+            display: grid;
+            gap: 18px;
+        }
+
+        .pain-item,
+        .offer-item {
+            padding: 22px 22px 20px;
+            border-radius: 22px;
+            border: 1px solid var(--line);
+            background: rgba(24, 19, 15, 0.76);
+        }
+
+        .pain-item strong,
+        .offer-item strong {
+            display: block;
+            margin-bottom: 8px;
+            font-family: 'Crimson Pro', Georgia, serif;
+            font-size: 1.45rem;
+            color: var(--ink);
+        }
+
+        .mid-cta {
+            padding: 28px;
+            border-radius: 28px;
+            background: linear-gradient(135deg, rgba(47, 191, 113, 0.12), rgba(20, 26, 23, 0.94));
+            border: 1px solid rgba(47, 191, 113, 0.18);
+            display: grid;
+            gap: 18px;
+        }
+
+        .mid-cta p {
+            margin: 0;
+        }
+
+        .stack-list {
+            display: grid;
+            gap: 12px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .stack-list li {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 10px;
+            align-items: start;
+        }
+
+        .stack-list li i {
+            margin-top: 5px;
+            color: var(--rust);
+        }
+
+        .step {
+            position: relative;
+            padding: 24px 24px 24px 78px;
+            border-top: 1px solid rgba(232, 242, 235, 0.12);
+        }
+
+        .step:first-child {
+            border-top: none;
+            padding-top: 0;
+        }
+
+        .step-index {
+            position: absolute;
+            left: 0;
+            top: 22px;
+            width: 52px;
+            height: 52px;
+            display: grid;
+            place-items: center;
+            border-radius: 999px;
+            background: rgba(47, 191, 113, 0.18);
+            color: var(--paper);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            letter-spacing: 0.14em;
+        }
+
+        .step:first-child .step-index {
+            top: 0;
+        }
+
+        .compare-grid {
+            display: grid;
+            gap: 28px;
+        }
+
+        .compare-card {
+            padding: 26px;
+            border-radius: 24px;
+            border: 1px solid rgba(232, 242, 235, 0.14);
+            background: rgba(232, 242, 235, 0.05);
+        }
+
+        .compare-card strong {
+            display: block;
+            margin-bottom: 12px;
+            font-family: 'Crimson Pro', Georgia, serif;
+            font-size: 1.7rem;
+            color: var(--paper);
+        }
+
+        .compare-card ul {
+            display: grid;
+            gap: 12px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            color: rgba(232, 242, 235, 0.94);
+        }
+
+        .compare-card li {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 10px;
+        }
+
+        .compare-card--warm {
+            background: rgba(47, 191, 113, 0.14);
+            border-color: rgba(47, 191, 113, 0.26);
+        }
+
+        .quote-grid {
+            display: grid;
+            gap: 18px;
+        }
+
+        .quote {
+            padding: 26px;
+            display: grid;
+            gap: 14px;
+        }
+
+        .quote-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            color: var(--rust);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+        }
+
+        .faq-item {
+            overflow: hidden;
+            transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .faq-item + .faq-item {
+            margin-top: 14px;
+        }
+
+        .faq-item:hover {
+            transform: translateY(-1px);
+            border-color: rgba(232, 242, 235, 0.14);
+        }
+
+        .faq-item.active {
+            border-color: rgba(47, 191, 113, 0.24);
+        }
+
+        .faq-question {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 22px 24px;
+            background: transparent;
+            border: 0;
+            color: var(--ink);
+            text-align: left;
+            cursor: pointer;
+        }
+
+        .faq-question-title {
+            font-family: 'Crimson Pro', Georgia, serif;
+            font-size: clamp(1.4rem, 3vw, 1.85rem);
+            line-height: 1.1;
+        }
+
+        .faq-icon-wrap {
+            width: 42px;
+            height: 42px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 999px;
+            border: 1px solid rgba(232, 242, 235, 0.12);
+            color: var(--rust);
+            flex-shrink: 0;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 320px;
+        }
+
+        .faq-answer-text {
+            padding: 18px 24px 22px;
+            margin: 0;
+            border-top: 1px solid rgba(232, 242, 235, 0.08);
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-icon {
+            transition: transform 0.2s ease;
+        }
+
+        .final-panel {
+            padding: clamp(28px, 4vw, 44px);
+            display: grid;
+            gap: 22px;
+            background:
+                radial-gradient(circle at top right, rgba(47, 191, 113, 0.16), transparent 22%),
+                rgba(20, 26, 23, 0.94);
+        }
+
+        .final-panel h2 {
+            max-width: 16ch;
+        }
+
+        .disclaimer {
+            font-size: 0.92rem;
+            max-width: 58rem;
+        }
+
+        .footer {
+            padding: 32px 0 56px;
+            color: var(--muted);
+        }
+
+        .footer__row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 14px;
+            padding-top: 18px;
+            border-top: 1px solid rgba(232, 242, 235, 0.12);
+        }
+
+        .footer nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+
+        .mobile-cta {
+            display: none;
+        }
+
+        .reveal {
+            opacity: 1;
+            transform: none;
+        }
+
+        .stagger-children > * {
+            opacity: 1;
+            transform: none;
+        }
+
+        .btn:focus-visible,
+        .text-link:focus-visible,
+        .faq-question:focus-visible,
+        .footer a:focus-visible {
+            outline: 2px solid var(--rust);
+            outline-offset: 3px;
+        }
+
+        @media (min-width: 900px) {
+            .grid-2,
+            .final-grid {
+                grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+            }
+
+            .compare-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .quote-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+
+            .pain-grid,
+            .offer-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 899px) {
+            .site-header__inner {
+                min-height: 68px;
+            }
+
+            .site-header__title {
+                font-size: 1rem;
+            }
+
+            .cta-row {
+                align-items: stretch;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .text-link {
+                width: auto;
+            }
+
+            .step {
+                padding-left: 70px;
+            }
+
+            .section {
+                padding: 48px 0;
+            }
+
+            .hero {
+                padding: 72px 0 28px;
+            }
+
+            h1 {
+                font-size: clamp(2.45rem, 12vw, 4rem);
+                max-width: 10ch;
+            }
+
+            h2 {
+                font-size: clamp(2rem, 9vw, 2.8rem);
+            }
+
+            .shell {
+                width: min(100vw - 24px, 1120px);
+            }
+
+            .card,
+            .quote,
+            .final-panel,
+            .faq-item,
+            .video {
+                border-radius: 22px;
+            }
+
+            .hero-copy {
+                gap: 16px;
+            }
+
+            .pill-row,
+            .meta-row {
+                gap: 8px;
+            }
+
+            .video {
+                display: none;
+            }
+
+            .site-header__brand {
+                min-width: 0;
+            }
+
+            .site-header__title {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .mobile-cta {
+                position: fixed;
+                left: 12px;
+                right: 12px;
+                bottom: 12px;
+                z-index: 110;
+                display: grid;
+                gap: 8px;
+                padding: 12px;
+                border-radius: 20px;
+                background: rgba(20, 12, 18, 0.94);
+                backdrop-filter: blur(14px);
+                box-shadow: 0 18px 40px rgba(0, 0, 0, 0.16);
+                opacity: 0;
+                transform: translateY(120%);
+                pointer-events: none;
+                transition: opacity 0.25s ease, transform 0.25s ease;
+            }
+
+            .mobile-cta.is-visible {
+                opacity: 1;
+                transform: translateY(0);
+                pointer-events: auto;
+            }
+
+            .mobile-cta .btn {
+                min-height: 50px;
+                width: 100%;
+            }
+
+            .mobile-cta__meta {
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+                color: rgba(232, 242, 235, 0.8);
+                font-size: 0.78rem;
+            }
+
+            body {
+                padding-bottom: 96px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            .site-header,
+            .btn,
+            .faq-answer,
+            .faq-icon,
+            .reveal,
+            .stagger-children > * {
+                transition: none !important;
+                animation: none !important;
+            }
+
+            .reveal,
+            .stagger-children > * {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+        }
+    </style>
+
+    <script defer type="application/javascript" src="https://35063397.aevent.online/getscript?page=registration&amp;wtl=vhmriHXslxTC43K"></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Personalized Tax Strategy Report",
+      "brand": {
+        "@type": "Brand",
+        "name": "Legacy Investing Show"
+      },
+      "description": "A personalized 24-page tax strategy report that estimates savings potential, surfaces likely gaps, and ranks strategies to review next.",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "47.00",
+        "availability": "https://schema.org/InStock",
+        "url": "https://legacyinvestingshow.spiffy.co/offer/xgD77hLuJ"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I not just Google this for free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can find generic tax strategies online. What is hard to find is a useful first-pass filter that tells you which of those ideas appear relevant to your income, state, and structure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are these strategies legitimate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The report is built around legitimate tax-planning concepts used by professionals and discussed in normal planning conversations. It is not about evasion."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "I already have a CPA. Would this still help?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The report is not a substitute for professional advice. It gives you a clearer shortlist of what to ask about, which usually makes your next planning conversation more focused."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if my situation only has a few worthwhile opportunities?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "That is still useful. The point is not to force complexity where it does not belong. The point is to see what is realistic, what can wait, and where your time is best spent."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <script>
+        (function breakoutFromEmbeddedCheckoutFrame() {
+            if (window.top === window.self) return;
+            try {
+                window.top.location.href = window.location.href;
+            } catch (err) {
+                window.location.href = window.location.href;
+            }
+        })();
+    </script>
+
+    <header id="sticky-header" class="site-header">
+        <div class="shell site-header__inner">
+            <div class="site-header__brand">
+                <span class="eyebrow">Legacy Investing Show</span>
+                <span class="site-header__title">Personalized Tax Strategy Report</span>
+            </div>
+            <a href="#report" class="btn btn--secondary">Review the $47 report</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="section hero">
+            <div class="shell grid-2">
+                <div id="main-content" class="hero-copy reveal">
+                    <p class="eyebrow">For high-income earners, owners, and side hustlers who already know they are paying too much.</p>
+                    <h1>See what tax moves may fit your situation before you overpay again.</h1>
+                    <p class="lede">
+                        For $47, get a personalized 24-page report that shows your likely tax-saving opportunities, the moves most worth reviewing first, and the questions to bring to your CPA before your next filing or entity decision.
+                    </p>
+                    <div class="hero-proof">
+                        <strong>You do not need more tax content.</strong>
+                        <span class="note">You need a clear first-pass answer to one question: “What is actually worth looking at for me?”</span>
+                    </div>
+                    <div class="pill-row">
+                        <span class="pill"><i data-lucide="file-chart-column" class="w-4 h-4"></i>24-page PDF</span>
+                        <span class="pill"><i data-lucide="clock-3" class="w-4 h-4"></i>Instant delivery</span>
+                        <span class="pill"><i data-lucide="badge-dollar-sign" class="w-4 h-4"></i>$47 one-time</span>
+                    </div>
+                    <p class="body-copy">
+                        Built from your income, state, filing setup, and current tax habits. The goal is simple: help you see where you may be leaking money, which strategies are realistic, and which ideas are not worth chasing yet.
+                    </p>
+                    <p class="body-copy">
+                        If you have ever finished a tax conversation still feeling unsure what to do next, this is designed for that moment. The report gives you a sharper starting point so you can stop circling around vague ideas and start reviewing a smaller set of moves that may actually matter.
+                    </p>
+                    <div class="cta-row">
+                        <a href="https://legacyinvestingshow.spiffy.co/offer/xgD77hLuJ" class="btn btn--primary">
+                            Get my tax strategy report
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                        <a href="#inside-report" class="text-link">
+                            Show me what I get
+                            <i data-lucide="move-down-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                    <div class="meta-row">
+                        <span><i data-lucide="shield-check" class="w-4 h-4"></i>30-day review guarantee</span>
+                        <span><i data-lucide="sparkles" class="w-4 h-4"></i>Personalized to your profile</span>
+                        <span><i data-lucide="briefcase-business" class="w-4 h-4"></i>Useful before your next CPA call</span>
+                    </div>
+                </div>
+
+                <div class="reveal" style="display:grid; gap:18px;">
+                    <aside class="card card--compact">
+                        <span class="eyebrow">What you get</span>
+                        <div class="price-row">
+                            <span class="price-was">$297</span>
+                            <span class="badge">84% off today</span>
+                        </div>
+                        <div class="price-now">
+                            <span>$</span>
+                            <span>47</span>
+                        </div>
+                        <p class="note">Less than one hour of tax planning, but enough clarity to make your next tax conversation dramatically more useful.</p>
+                        <p class="note">This is not tax prep software. It does not replace a CPA. It gives you a planning brief that helps you see what may fit, what may not, and what deserves a real conversation before another filing cycle slips by.</p>
+                        <a href="https://legacyinvestingshow.spiffy.co/offer/xgD77hLuJ" class="btn btn--primary">
+                            Download my report
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                        <ul class="checklist">
+                            <li>
+                                <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+                                <span><strong>Estimated upside:</strong> a first-pass look at how much tax leakage may be recoverable.</span>
+                            </li>
+                            <li>
+                                <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+                                <span><strong>Fit score and gaps:</strong> what you already use, what appears missing, and what deserves attention now.</span>
+                            </li>
+                            <li>
+                                <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+                                <span><strong>Strategy cards:</strong> likely savings ranges, qualification notes, common mistakes, and next steps.</span>
+                            </li>
+                        </ul>
+                        <a href="#report" class="text-link">
+                            See the full offer
+                            <i data-lucide="move-down-right" class="w-4 h-4"></i>
+                        </a>
+                    </aside>
+
+                    <div class="video">
+                        <div class="video__frame">
+                            <iframe src="https://player.vimeo.com/video/1151644607?autoplay=0&amp;title=0&amp;byline=0" title="Tax report walkthrough video" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <p class="video__caption">
+                            Watch the walkthrough to see how the report frames your savings potential, surfaces missed moves, and separates quick wins from structural tax changes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--paper">
+            <div class="shell grid-2">
+                <div class="reveal">
+                    <div class="section-header">
+                        <span class="eyebrow">If this sounds familiar</span>
+                        <h2>You make good money. You still have no clear answer on what tax moves actually fit.</h2>
+                    </div>
+                    <p class="body-copy">
+                        Maybe you already max retirement accounts. Maybe you have a side business, rentals, or a growing income. Maybe you keep hearing about S-corps, short-term rentals, Augusta, QBI, cost segregation, HSAs, and dozens of other ideas, but you still do not know what deserves real attention.
+                    </p>
+                    <p class="body-copy">
+                        That uncertainty is expensive. The wrong move creates complexity. No move at all often means another year of overpaying. This report is meant to give you a sane order of operations before that happens.
+                    </p>
+                    <p class="body-copy">
+                        And that is the real problem for most people reading this page. It is not that they have never heard tax-saving ideas before. It is that they have heard too many ideas, from too many people, with no clean way to tell which ones fit their own situation and which ones are likely a distraction.
+                    </p>
+                </div>
+
+                <div class="audience-list stagger-children">
+                    <article class="audience-item">
+                        <strong>You suspect there are better tax moves than the ones you already use.</strong>
+                        <p class="note">But you do not want to spend another weekend guessing which strategies are real fits and which ones are internet noise.</p>
+                    </article>
+                    <article class="audience-item">
+                        <strong>You want to talk to your CPA with better questions.</strong>
+                        <p class="note">Not vague curiosity. Specific questions about the few moves that may actually matter for your situation.</p>
+                    </article>
+                    <article class="audience-item">
+                        <strong>You want clarity before making your next big decision.</strong>
+                        <p class="note">Before another filing. Before another entity change. Before buying real estate. Before adding more complexity.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="inside-report" class="section section--ink">
+            <div class="shell grid-2">
+                <div class="reveal">
+                    <div class="section-header">
+                        <span class="eyebrow">What is inside</span>
+                        <h2>This is not a generic tax checklist. It is a direct-response planning brief for your tax situation.</h2>
+                    </div>
+                    <p class="body-copy">
+                        By the time you finish reading it, you should know which moves appear worth reviewing first, which ones may be too early or too complex, and where your next conversation should start.
+                    </p>
+                    <p class="body-copy">
+                        That matters because the best tax move on paper is often not the best move for your real life. Some strategies create maintenance. Some require timing. Some are only worth doing past a certain income level. Some are technically possible but not worth the effort. This report is designed to help you separate those categories faster.
+                    </p>
+                </div>
+
+                <div class="anatomy stagger-children">
+                    <article class="anatomy-item">
+                        <div class="anatomy-meta">
+                            <h3>Your tax snapshot and likely savings range</h3>
+                            <span class="range">Pages 1-2</span>
+                        </div>
+                        <p class="note">Your income context, filing status, state environment, and an estimated range for how much tax leakage may be recoverable.</p>
+                    </article>
+                    <article class="anatomy-item">
+                        <div class="anatomy-meta">
+                            <h3>Your score, peer benchmark, and gaps</h3>
+                            <span class="range">Pages 3-5</span>
+                        </div>
+                        <p class="note">A fast way to see how optimized your current structure looks compared with people in similar circumstances.</p>
+                    </article>
+                    <article class="anatomy-item">
+                        <div class="anatomy-meta">
+                            <h3>Ranked strategy cards with decision support</h3>
+                            <span class="range">Pages 6-16</span>
+                        </div>
+                        <p class="note">Each featured move includes expected upside, qualification notes, complexity, and what can go wrong if you implement it carelessly.</p>
+                    </article>
+                    <article class="anatomy-item">
+                        <div class="anatomy-meta">
+                            <h3>Roadmap, risk paths, and next steps</h3>
+                            <span class="range">Pages 17-24</span>
+                        </div>
+                        <p class="note">A practical order of operations, from quick cleanup wins to bigger structural moves that usually need more planning.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--paper">
+            <div class="shell">
+                <div class="section-header section-header--center reveal">
+                    <span class="eyebrow">Sample report preview</span>
+                    <h2>See the report scroll before you buy.</h2>
+                    <p class="body-copy">This is a quick visual pass through the actual PDF so you can judge the layout, pacing, scorecards, strategy pages, and roadmap structure for yourself.</p>
+                </div>
+
+                <figure class="report-preview report-preview--centered video reveal">
+                    <div class="report-preview__stage">
+                        <div class="report-preview__device">
+                            <div class="report-preview__screen">
+                                <img src="./screenshots/report-sneakpeek/tax-report-scroll.gif" alt="Animated preview scrolling through the personalized tax strategy report PDF." loading="eager">
+                            </div>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+        </section>
+
+        <section class="section section--paper">
+            <div class="shell">
+                <div class="section-header section-header--center reveal">
+                    <span class="eyebrow">What happens after you buy</span>
+                    <h2>Simple in. Useful out.</h2>
+                    <p class="body-copy">No complicated onboarding. No long wait. No guesswork about what you are supposed to do next.</p>
+                    <p class="body-copy">The process is short because the value is not in making you work harder. The value is in turning your information into a report that is easier to think with than a pile of articles, videos, and half-remembered tax advice.</p>
+                </div>
+
+                <div class="steps stagger-children">
+                    <article class="step">
+                        <span class="step-index">01</span>
+                        <h3>Answer a focused intake</h3>
+                        <p class="note">Give the essentials: income mix, state, filing status, business profile, and the common strategies you already use.</p>
+                    </article>
+                    <article class="step">
+                        <span class="step-index">02</span>
+                        <h3>Get your report instantly</h3>
+                        <p class="note">The report organizes your likely opportunities, surfaces gaps, and ranks the moves that seem most worth reviewing.</p>
+                    </article>
+                    <article class="step">
+                        <span class="step-index">03</span>
+                        <h3>Review it with more confidence</h3>
+                        <p class="note">Use it to decide what to ask, what to ignore, and what to bring to your CPA before your next major tax move.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--paper">
+            <div class="shell">
+                <div class="section-header reveal">
+                    <span class="eyebrow">Why people buy</span>
+                    <h2>You are not paying $47 for tax information. You are paying for a better decision.</h2>
+                </div>
+                <div class="offer-grid stagger-children">
+                    <article class="offer-item">
+                        <strong>Know what to ask next.</strong>
+                        <p class="note">Instead of showing up to a tax conversation with broad curiosity, you show up with specific priorities. That changes the quality of the conversation immediately.</p>
+                    </article>
+                    <article class="offer-item">
+                        <strong>Know what to ignore.</strong>
+                        <p class="note">Not every strategy is worth the paperwork, maintenance, or risk for your situation right now. The report helps you avoid forcing complexity where it does not belong.</p>
+                    </article>
+                    <article class="offer-item">
+                        <strong>Know what may be worth real money.</strong>
+                        <p class="note">The report helps you see where more planning may matter before you commit to the wrong move or no move at all. That alone can justify the cost many times over.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--ink">
+            <div class="shell">
+                <div class="section-header reveal">
+                    <span class="eyebrow">Why this beats DIY research</span>
+                    <h2>A personalized report beats another weekend of random tax research.</h2>
+                </div>
+
+                <div class="compare-grid stagger-children">
+                    <article class="compare-card">
+                        <strong>DIY tax research usually leaves you with:</strong>
+                        <ul>
+                            <li><i data-lucide="x" class="w-4 h-4" style="color:#8fe7b5;"></i><span>Dozens of strategies, but no clue which ones actually fit your profile.</span></li>
+                            <li><i data-lucide="x" class="w-4 h-4" style="color:#8fe7b5;"></i><span>Hours spent reading blog posts that cannot account for your income, state, or entity setup.</span></li>
+                            <li><i data-lucide="x" class="w-4 h-4" style="color:#8fe7b5;"></i><span>A pile of ideas with no ranking, no sequence, and no confidence.</span></li>
+                        </ul>
+                        <p class="note" style="margin-top:14px; color:rgba(232,242,235,0.84);">Most people do not need more tax content. They need a way to make decisions with less noise and more relevance.</p>
+                    </article>
+                    <article class="compare-card compare-card--warm">
+                        <strong>This report is designed to give you:</strong>
+                        <ul>
+                            <li><i data-lucide="check" class="w-4 h-4" style="color:#d0f7df;"></i><span>A clear estimate of what may be worth pursuing before you spend time or money implementing anything.</span></li>
+                            <li><i data-lucide="check" class="w-4 h-4" style="color:#d0f7df;"></i><span>Ranked opportunities with enough detail to know which conversations matter most.</span></li>
+                            <li><i data-lucide="check" class="w-4 h-4" style="color:#d0f7df;"></i><span>A document you can review, print, or bring into a planning conversation instead of relying on memory.</span></li>
+                        </ul>
+                        <p class="note" style="margin-top:14px; color:rgba(232,242,235,0.86);">That is what makes the offer compelling. It does not promise magic. It promises a better next decision.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--paper">
+            <div class="shell">
+                <div class="mid-cta reveal">
+                    <span class="eyebrow">Get the report</span>
+                    <h2 style="font-size:clamp(2rem,4vw,3rem);">If you already know you are overpaying, stop browsing and get the brief.</h2>
+                    <p class="body-copy">You can keep collecting generic advice and still feel uncertain, or you can get a personalized brief that helps you focus your next move. If clarity is what you need, this is the offer.</p>
+                    <ul class="stack-list">
+                        <li><i data-lucide="check-circle-2" class="w-5 h-5"></i><span>See the likely opportunities that fit your current profile.</span></li>
+                        <li><i data-lucide="check-circle-2" class="w-5 h-5"></i><span>Bring sharper questions into your next CPA or advisor conversation.</span></li>
+                        <li><i data-lucide="check-circle-2" class="w-5 h-5"></i><span>Use the 30-day review window if it does not give you the clarity you wanted.</span></li>
+                    </ul>
+                    <div class="cta-row">
+                        <a href="https://legacyinvestingshow.spiffy.co/offer/xgD77hLuJ" class="btn btn--primary">
+                            Get my report for $47
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--paper">
+            <div class="shell">
+                <div class="section-header reveal">
+                    <span class="eyebrow">Customer perspective</span>
+                    <h2>What people actually value is clarity.</h2>
+                    <p class="body-copy">The common thread is not “I found a magic loophole.” It is “I finally knew what was worth looking at first.”</p>
+                    <p class="body-copy">That is why the testimonials matter. People are not describing a fantasy result. They are describing the moment when the fog lifted and they could finally sort high-value moves from low-value noise.</p>
+                </div>
+
+                <div class="quote-grid stagger-children">
+                    <article class="quote">
+                        <div class="quote-meta">
+                            <span>Michael R.</span>
+                            <span>Software engineer</span>
+                            <span>$185K</span>
+                        </div>
+                        <h3>“It sorted the higher-impact ideas from the noise.”</h3>
+                        <p>I had already handled the obvious retirement moves. The report helped me see which ideas were actually worth discussing further and which ones were probably too much complexity for where I am right now.</p>
+                    </article>
+                    <article class="quote">
+                        <div class="quote-meta">
+                            <span>Sarah T.</span>
+                            <span>Agency owner</span>
+                            <span>$320K</span>
+                        </div>
+                        <h3>“It gave me better questions for my CPA.”</h3>
+                        <p>The most useful part was not just the list of strategies. It was how clearly the report separated quick wins from bigger moves that need more setup and more care.</p>
+                    </article>
+                    <article class="quote">
+                        <div class="quote-meta">
+                            <span>Jennifer L.</span>
+                            <span>Consultant</span>
+                            <span>$125K</span>
+                        </div>
+                        <h3>“It turned vague tax advice into an order of operations.”</h3>
+                        <p>I almost skipped it because I assumed tax planning was only for higher earners. What changed my mind was seeing a realistic mix of smaller wins and bigger opportunities laid out in a sane order.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--paper">
+            <div class="shell">
+                <div class="section-header reveal">
+                    <span class="eyebrow">Common questions</span>
+                    <h2>Still deciding whether this is worth it?</h2>
+                </div>
+
+                <div id="faq-container" class="reveal">
+                    <div class="faq-item">
+                        <button type="button" class="faq-question" aria-expanded="false">
+                            <h3 class="faq-question-title">Can I not just Google this for free?</h3>
+                            <span class="faq-icon-wrap">
+                                <i data-lucide="plus" class="w-5 h-5 faq-icon"></i>
+                            </span>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="faq-answer-text">You can find generic tax strategies online. What is hard to find is a useful first-pass filter that tells you which of those ideas appear relevant to your income, state, and structure. That filtering is the job of this report. It saves you from spending hours researching strategies that may not fit or may not be worth the effort for your situation.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button type="button" class="faq-question" aria-expanded="false">
+                            <h3 class="faq-question-title">Are these strategies legitimate?</h3>
+                            <span class="faq-icon-wrap">
+                                <i data-lucide="plus" class="w-5 h-5 faq-icon"></i>
+                            </span>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="faq-answer-text">Yes. The report is built around legitimate tax-planning concepts used by professionals and discussed in normal planning conversations. It is not about evasion. It is about knowing which legal moves may deserve a closer look, which ones may fit your profile, and which ones may not be worth forcing.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button type="button" class="faq-question" aria-expanded="false">
+                            <h3 class="faq-question-title">I already have a CPA. Would this still help?</h3>
+                            <span class="faq-icon-wrap">
+                                <i data-lucide="plus" class="w-5 h-5 faq-icon"></i>
+                            </span>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="faq-answer-text">That is often the best use case. The report is not a substitute for professional advice. It gives you a clearer shortlist of what to ask about, which usually makes your next planning conversation more focused and productive. Many people do not need another expert opinion first. They need a better way to frame the conversation.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button type="button" class="faq-question" aria-expanded="false">
+                            <h3 class="faq-question-title">What if my situation only has a few worthwhile opportunities?</h3>
+                            <span class="faq-icon-wrap">
+                                <i data-lucide="plus" class="w-5 h-5 faq-icon"></i>
+                            </span>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="faq-answer-text">That is still useful. The point is not to force complexity where it does not belong. The point is to see what is realistic, what can wait, and where your time is best spent. Sometimes the biggest win is clarity about what not to chase.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="report" class="section">
+            <div class="shell">
+                <div class="final-panel reveal">
+                    <span class="eyebrow">Final recap</span>
+                    <div class="final-grid">
+                        <div>
+                            <h2>Get the report before your next tax decision turns into another expensive guess.</h2>
+                            <p class="body-copy">
+                                If you already know there is likely money leaking through your current setup, the next useful step is not more browsing. It is a clearer view of what fits your situation and what deserves a real conversation.
+                            </p>
+                            <p class="body-copy">
+                                The offer is simple: pay $47 once, review the report on your own time, and use it to decide what is worth asking about next. If it does not give you the clarity you expected, use the review window and ask for your money back.
+                            </p>
+                            <p class="disclaimer">
+                                Educational report only. Not tax preparation, legal advice, or representation before the IRS. Best used as a planning brief to review on your own or with a qualified professional.
+                            </p>
+                        </div>
+
+                        <div class="card">
+                            <div class="price-row">
+                                <span class="price-was">$297</span>
+                                <span class="badge">Today: $47</span>
+                            </div>
+                            <div class="price-now" style="margin: 10px 0 18px;">
+                                <span>$</span>
+                                <span>47</span>
+                            </div>
+                            <ul class="checklist" style="margin-bottom: 22px;">
+                                <li>
+                                    <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+                                    <span>24-page personalized PDF delivered immediately after checkout</span>
+                                </li>
+                                <li>
+                                    <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+                                    <span>30-day review window if it does not give you the clarity you expected</span>
+                                </li>
+                                <li>
+                                    <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+                                    <span>Designed to help you prioritize your next tax conversation, not replace it</span>
+                                </li>
+                            </ul>
+                            <a href="https://legacyinvestingshow.spiffy.co/offer/xgD77hLuJ" id="tax-accept-btn" class="btn btn--primary">
+                                Get my tax strategy report
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="mobile-cta">
+        <div class="mobile-cta__meta">
+            <span>$47 one-time</span>
+            <span>24-page PDF</span>
+            <span>30-day review</span>
+        </div>
+        <a href="https://legacyinvestingshow.spiffy.co/offer/xgD77hLuJ" class="btn btn--primary">
+            Get my report
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+    </div>
+
+    <footer role="contentinfo" class="footer">
+        <div class="shell footer__row">
+            <p>&copy; 2025 Legacy Investing Show. All rights reserved.</p>
+            <nav aria-label="Footer">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Support</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        const incomingParams = new URLSearchParams(window.location.search);
+        if ([...incomingParams.keys()].length) {
+            const allowedHosts = new Set([
+                'legacyinvestingshow.spiffy.co',
+                'www.joinlwb.com'
+            ]);
+            const selector = [
+                'a[href*="legacyinvestingshow.spiffy.co/offer/"]',
+                'a[href*="www.joinlwb.com/upgradevip"]',
+                'a[href*="www.joinlwb.com/prepkit"]',
+                'a[href*="www.joinlwb.com/prepkitvip"]',
+                'a[href*="www.joinlwb.com/taxreport"]',
+                'a[href*="www.joinlwb.com/taxreportvip"]',
+                'a[href*="www.joinlwb.com/challengeconfirmation"]'
+            ].join(', ');
+
+            document.querySelectorAll(selector).forEach((link) => {
+                const href = link.getAttribute('href');
+                if (!href) return;
+
+                try {
+                    const url = new URL(href, window.location.origin);
+                    if (!allowedHosts.has(url.host)) return;
+
+                    incomingParams.forEach((value, key) => {
+                        if (!url.searchParams.has(key)) {
+                            url.searchParams.set(key, value);
+                        }
+                    });
+
+                    if (/^https?:\/\//i.test(href)) {
+                        link.setAttribute('href', url.toString());
+                    } else {
+                        link.setAttribute('href', `${url.pathname}${url.search}${url.hash}`);
+                    }
+                } catch (err) {
+                    // Ignore invalid href values.
+                }
+            });
+        }
+
+        const topbar = document.getElementById('sticky-header');
+
+        function syncTopbar() {
+            if (!topbar) return;
+            topbar.classList.toggle('is-visible', window.scrollY > 140);
+            topbar.classList.toggle('scrolled', window.scrollY > 18);
+        }
+
+        syncTopbar();
+        window.addEventListener('scroll', syncTopbar, { passive: true });
+
+        document.querySelectorAll('.reveal, .stagger-children').forEach((el) => {
+            el.classList.add('active');
+        });
+
+        document.querySelectorAll('.faq-question').forEach((question) => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const isActive = item.classList.contains('active');
+
+                document.querySelectorAll('.faq-item').forEach((faq) => {
+                    faq.classList.remove('active');
+                    const trigger = faq.querySelector('.faq-question');
+                    if (trigger) {
+                        trigger.setAttribute('aria-expanded', 'false');
+                    }
+                });
+
+                if (!isActive) {
+                    item.classList.add('active');
+                    question.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const href = this.getAttribute('href');
+                if (!href || href === '#') return;
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
