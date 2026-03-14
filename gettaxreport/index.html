@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personalized Tax Strategy Report | Legacy Investing Show</title>
-    <meta name="description" content="Get a personalized 24-page tax strategy report for $47. See your estimated savings range, score, gaps, ranked strategies, and a practical action roadmap. Instant PDF delivery.">
+    <title>Personalized Tax Report | Legacy Investing Show</title>
+    <meta name="description" content="Get a personalized tax report for $47. See which tax strategies may fit your situation, possible savings ranges, priority scores, and what to review first.">
 
     <meta property="og:type" content="product">
     <meta property="og:url" content="https://www.legacyinvestingshow.com/gettaxreport">
-    <meta property="og:title" content="Personalized Tax Strategy Report | Legacy Investing Show">
-    <meta property="og:description" content="A 24-page personalized tax strategy brief that shows your optimization potential, likely gaps, and what to review first.">
+    <meta property="og:title" content="Personalized Tax Report | Legacy Investing Show">
+    <meta property="og:description" content="A personalized tax report that shows which strategies may fit your situation, possible savings ranges, and what to review first.">
     <meta property="og:image" content="https://www.joinlwb.com/tax/images/tax-report-og.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -19,15 +19,16 @@
 
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.legacyinvestingshow.com/gettaxreport">
-    <meta property="twitter:title" content="Personalized Tax Strategy Report | Legacy Investing Show">
-    <meta property="twitter:description" content="See what tax moves may fit your situation before your next filing, entity, or contribution decision.">
+    <meta property="twitter:title" content="Personalized Tax Report | Legacy Investing Show">
+    <meta property="twitter:description" content="See which tax strategies may fit your situation, what they may save, and what to review first.">
     <meta property="twitter:image" content="https://www.joinlwb.com/tax/images/tax-report-twitter.jpg">
 
     <link rel="canonical" href="https://www.legacyinvestingshow.com/gettaxreport">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://player.vimeo.com">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Sora:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600;700&amp;family=Sora:wght@400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600;700&amp;family=Sora:wght@400;500;600;700&amp;display=swap" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600;700&amp;family=Sora:wght@400;500;600;700&amp;display=swap" rel="stylesheet"></noscript>
 
     <style>
         :root {
@@ -83,7 +84,7 @@
             z-index: -1;
         }
 
-        img, iframe, svg {
+        img, iframe, svg, picture {
             max-width: 100%;
             display: block;
         }
@@ -133,13 +134,17 @@
             position: fixed;
             inset: 0 0 auto 0;
             z-index: 100;
-            transform: translateY(-100%);
+            transform: translateY(calc(-100% - 24px));
             transition: transform 0.35s ease, background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
             border-bottom: 1px solid transparent;
+            opacity: 0;
+            pointer-events: none;
         }
 
         .site-header.is-visible {
             transform: translateY(0);
+            opacity: 1;
+            pointer-events: auto;
         }
 
         .site-header.scrolled {
@@ -167,18 +172,11 @@
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            font-family: 'JetBrains Mono', monospace;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
             font-size: 0.72rem;
             text-transform: uppercase;
             letter-spacing: 0.18em;
             color: var(--rust);
-        }
-
-        .eyebrow::before {
-            content: '';
-            width: 26px;
-            height: 1px;
-            background: currentColor;
         }
 
         .site-header__title {
@@ -263,25 +261,10 @@
             max-width: 60ch;
         }
 
-        .pill-row,
         .meta-row {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
-        }
-
-        .pill {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            min-height: 44px;
-            padding: 10px 16px;
-            border: 1px solid var(--line);
-            border-radius: 999px;
-            background: rgba(20, 26, 23, 0.84);
-            color: var(--ink);
-            font-size: 0.92rem;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
         }
 
         .meta-row {
@@ -550,7 +533,6 @@
         .section--ink .eyebrow {
             color: var(--rust);
         }
-        }
 
         .section--paper {
             position: relative;
@@ -590,7 +572,7 @@
         }
 
         .range {
-            font-family: 'JetBrains Mono', monospace;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
             font-size: 0.82rem;
             text-transform: uppercase;
             letter-spacing: 0.16em;
@@ -681,7 +663,7 @@
             border-radius: 999px;
             background: rgba(47, 191, 113, 0.18);
             color: var(--paper);
-            font-family: 'JetBrains Mono', monospace;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
             font-size: 0.85rem;
             letter-spacing: 0.14em;
         }
@@ -796,9 +778,19 @@
             align-items: center;
             justify-content: center;
             border-radius: 999px;
-            border: 1px solid rgba(232, 242, 235, 0.12);
-            color: var(--rust);
+            border: 1px solid rgba(47, 191, 113, 0.32);
+            background: rgba(47, 191, 113, 0.12);
+            color: #d4f8e3;
             flex-shrink: 0;
+        }
+
+        .faq-icon-wrap::before {
+            content: '+';
+            font-size: 1.55rem;
+            line-height: 1;
+            font-weight: 400;
+            transform: translateY(-1px);
+            transition: transform 0.2s ease;
         }
 
         .faq-answer {
@@ -808,7 +800,7 @@
         }
 
         .faq-item.active .faq-answer {
-            max-height: 320px;
+            max-height: 420px;
         }
 
         .faq-answer-text {
@@ -817,8 +809,8 @@
             border-top: 1px solid rgba(232, 242, 235, 0.08);
         }
 
-        .faq-item.active .faq-icon {
-            transform: rotate(45deg);
+        .faq-item.active .faq-icon-wrap::before {
+            transform: translateY(-1px) rotate(45deg);
         }
 
         .faq-icon {
@@ -964,7 +956,6 @@
                 gap: 16px;
             }
 
-            .pill-row,
             .meta-row {
                 gap: 8px;
             }
@@ -973,10 +964,32 @@
                 min-width: 0;
             }
 
+            .site-header .eyebrow {
+                display: none;
+            }
+
             .site-header__title {
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
+                font-size: 0.95rem;
+                line-height: 1.05;
+                white-space: normal;
+                overflow: visible;
+                text-overflow: clip;
+            }
+
+            .site-header .btn {
+                width: auto;
+                min-height: 44px;
+                padding: 12px 16px;
+                font-size: 0.9rem;
+            }
+
+            body::before {
+                display: none;
+            }
+
+            .site-header.scrolled,
+            .mobile-cta {
+                backdrop-filter: none;
             }
 
             .mobile-cta {
@@ -1045,18 +1058,16 @@
         }
     </style>
 
-    <script defer type="application/javascript" src="https://35063397.aevent.online/getscript?page=registration&amp;wtl=vhmriHXslxTC43K"></script>
-
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Product",
-      "name": "Personalized Tax Strategy Report",
+      "name": "Personalized Tax Report",
       "brand": {
         "@type": "Brand",
         "name": "Legacy Investing Show"
       },
-      "description": "A personalized 24-page tax strategy report that estimates savings potential, surfaces likely gaps, and ranks strategies to review next.",
+      "description": "A personalized tax report that shows which strategies may fit your situation, possible savings ranges, priority scores, and what to review first.",
       "offers": {
         "@type": "Offer",
         "priceCurrency": "USD",
@@ -1074,10 +1085,10 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Can I not just Google this for free?",
+            "name": "Can I not just Google this for free?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "You can find generic tax strategies online. What is hard to find is a useful first-pass filter that tells you which of those ideas appear relevant to your income, state, and structure."
+            "text": "You can find tax ideas online all day. What is hard to find is a report built for your own numbers, state, filing setup, and business activity. This report helps you sort real fits from internet noise."
           }
         },
         {
@@ -1085,23 +1096,47 @@
           "name": "Are these strategies legitimate?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. The report is built around legitimate tax-planning concepts used by professionals and discussed in normal planning conversations. It is not about evasion."
+            "text": "Yes. The report is built around legitimate tax planning strategies people already use with qualified professionals. It is not about evasion. It is about knowing which legal moves may deserve a closer look."
           }
         },
         {
           "@type": "Question",
-          "name": "I already have a CPA. Would this still help?",
+            "name": "I already have a CPA. Would this still help?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. The report is not a substitute for professional advice. It gives you a clearer shortlist of what to ask about, which usually makes your next planning conversation more focused."
+            "text": "Yes. The report is not a substitute for professional advice. It gives you a clearer shortlist of what may matter so your next planning conversation can be more focused."
           }
         },
         {
           "@type": "Question",
-          "name": "What if my situation only has a few worthwhile opportunities?",
+            "name": "What if my situation only has a few worthwhile opportunities?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "That is still useful. The point is not to force complexity where it does not belong. The point is to see what is realistic, what can wait, and where your time is best spent."
+            "text": "That is still useful. The point is not to force complexity where it does not belong. The point is to see what is realistic, what can wait, and what is not worth chasing right now."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long is the report?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most reports are between 25 and 40 pages. The exact length depends on your answers and how many relevant strategies fit your situation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does the intake take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most people finish the intake in about 90 seconds. You answer 15 quick questions, then the report is generated from your answers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens to my data after the report is generated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your answers are used to generate the report, then deleted. The page does not keep your intake data sitting around after the report is created."
           }
         }
       ]
@@ -1126,9 +1161,9 @@
         <div class="shell site-header__inner">
             <div class="site-header__brand">
                 <span class="eyebrow">Legacy Investing Show</span>
-                <span class="site-header__title">Personalized Tax Strategy Report</span>
+                <span class="site-header__title">Personalized Tax Report</span>
             </div>
-            <a href="#report" class="btn btn--secondary">Review the $47 report</a>
+            <a href="#report" class="btn btn--secondary">Get report</a>
         </div>
     </header>
 
@@ -1136,29 +1171,30 @@
         <section class="section hero">
             <div class="shell grid-2">
                 <div id="main-content" class="hero-copy reveal">
-                    <p class="eyebrow">For high-income earners, owners, and side hustlers who already know they are paying too much.</p>
+                    <p class="eyebrow">For high-income earners, owners, and side hustlers who already know they are paying too much in taxes.</p>
                     <h1>See what tax moves may fit your situation before you overpay again.</h1>
                     <p class="lede">
-                        For $47, get a personalized 24-page report that shows your likely tax-saving opportunities, the moves most worth reviewing first, and the questions to bring to your CPA before your next filing or entity decision.
+                        For $47, get a personalized tax report built from your answers. It shows which strategies may fit your situation, what they may save, how they rank by priority, and what to look at first.
                     </p>
                     <div class="hero-proof">
                         <strong>You do not need more tax content.</strong>
-                        <span class="note">You need a clear first-pass answer to one question: “What is actually worth looking at for me?”</span>
-                    </div>
-                    <div class="pill-row">
-                        <span class="pill"><i data-lucide="file-chart-column" class="w-4 h-4"></i>24-page PDF</span>
-                        <span class="pill"><i data-lucide="clock-3" class="w-4 h-4"></i>Instant delivery</span>
-                        <span class="pill"><i data-lucide="badge-dollar-sign" class="w-4 h-4"></i>$47 one-time</span>
+                        <span class="note">You need to know which strategies may actually work for your real situation, and which ones are a waste of time.</span>
                     </div>
                     <p class="body-copy">
-                        Built from your income, state, filing setup, and current tax habits. The goal is simple: help you see where you may be leaking money, which strategies are realistic, and which ideas are not worth chasing yet.
+                        This report is built for you from your own data. We use your answers about income, state, filing setup, business activity, and current tax habits to create a custom tax report for your situation.
+                    </p>
+                    <p class="body-copy">
+                        You hear all the big tax ideas on YouTube, TikTok, and Instagram. Then you talk to your CPA and find out half of them do not apply to you. This report is built to fix that. It helps you focus on the strategies that may actually fit your life.
                     </p>
                     <p class="body-copy">
                         If you have ever finished a tax conversation still feeling unsure what to do next, this is designed for that moment. The report gives you a sharper starting point so you can stop circling around vague ideas and start reviewing a smaller set of moves that may actually matter.
                     </p>
+                    <p class="body-copy">
+                        Your answers stay private. Once the report is generated, your intake data is deleted.
+                    </p>
                     <div class="cta-row">
                         <a href="https://legacyinvestingshow.spiffy.co/offer/xgD77hLuJ" class="btn btn--primary">
-                            Get my tax strategy report
+                            Get my tax report
                             <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </a>
                         <a href="#inside-report" class="text-link">
@@ -1167,9 +1203,9 @@
                         </a>
                     </div>
                     <div class="meta-row">
-                        <span><i data-lucide="shield-check" class="w-4 h-4"></i>30-day review guarantee</span>
-                        <span><i data-lucide="sparkles" class="w-4 h-4"></i>Personalized to your profile</span>
-                        <span><i data-lucide="briefcase-business" class="w-4 h-4"></i>Useful before your next CPA call</span>
+                        <span><i data-lucide="shield-check" class="w-4 h-4"></i>Private intake, deleted after generation</span>
+                        <span><i data-lucide="sparkles" class="w-4 h-4"></i>Personalized for your situation</span>
+                        <span><i data-lucide="briefcase-business" class="w-4 h-4"></i>Built from your own answers</span>
                     </div>
                 </div>
 
@@ -1178,30 +1214,29 @@
                         <span class="eyebrow">What you get</span>
                         <div class="price-row">
                             <span class="price-was">$297</span>
-                            <span class="badge">84% off today</span>
+                            <span class="badge">84% off</span>
                         </div>
                         <div class="price-now">
                             <span>$</span>
                             <span>47</span>
                         </div>
-                        <p class="note">Less than one hour of tax planning, but enough clarity to make your next tax conversation dramatically more useful.</p>
-                        <p class="note">This is not tax prep software. It does not replace a CPA. It gives you a planning brief that helps you see what may fit, what may not, and what deserves a real conversation before another filing cycle slips by.</p>
+                        <p class="note">Most reports are 25 to 40 pages, depending on your answers.</p>
                         <a href="https://legacyinvestingshow.spiffy.co/offer/xgD77hLuJ" class="btn btn--primary">
-                            Download my report
+                            Get my tax report
                             <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </a>
                         <ul class="checklist">
                             <li>
                                 <i data-lucide="check-circle-2" class="w-5 h-5"></i>
-                                <span><strong>Estimated upside:</strong> a first-pass look at how much tax leakage may be recoverable.</span>
+                                <span><strong>Possible savings ranges:</strong> see where the biggest tax-saving opportunities may be.</span>
                             </li>
                             <li>
                                 <i data-lucide="check-circle-2" class="w-5 h-5"></i>
-                                <span><strong>Fit score and gaps:</strong> what you already use, what appears missing, and what deserves attention now.</span>
+                                <span><strong>Priority scores:</strong> see what to look at first, next, and later based on your situation.</span>
                             </li>
                             <li>
                                 <i data-lucide="check-circle-2" class="w-5 h-5"></i>
-                                <span><strong>Strategy cards:</strong> likely savings ranges, qualification notes, common mistakes, and next steps.</span>
+                                <span><strong>Simple strategy breakdowns:</strong> savings ranges, qualification notes, watchouts, and next steps for each strategy.</span>
                             </li>
                         </ul>
                         <a href="#report" class="text-link">
@@ -1226,28 +1261,27 @@
             <div class="shell grid-2">
                 <div class="reveal">
                     <div class="section-header">
-                        <span class="eyebrow">If this sounds familiar</span>
-                        <h2>You make good money. You still have no clear answer on what tax moves actually fit.</h2>
+                        <h2>You make good money. You still do not know which tax strategies actually fit your situation.</h2>
                     </div>
                     <p class="body-copy">
-                        Maybe you already max retirement accounts. Maybe you have a side business, rentals, or a growing income. Maybe you keep hearing about S-corps, short-term rentals, Augusta, QBI, cost segregation, HSAs, and dozens of other ideas, but you still do not know what deserves real attention.
+                        You may already max retirement accounts. You may have a side business, rentals, or rising income. You keep hearing about S-corps, short-term rentals, Augusta, QBI, cost segregation, HSAs, and a dozen other strategies, but you still do not know what deserves real attention.
                     </p>
                     <p class="body-copy">
-                        That uncertainty is expensive. The wrong move creates complexity. No move at all often means another year of overpaying. This report is meant to give you a sane order of operations before that happens.
+                        That uncertainty is expensive. The wrong move creates complexity. No move at all often means another year of overpaying. This report helps you sort that out before it costs you more money.
                     </p>
                     <p class="body-copy">
-                        And that is the real problem for most people reading this page. It is not that they have never heard tax-saving ideas before. It is that they have heard too many ideas, from too many people, with no clean way to tell which ones fit their own situation and which ones are likely a distraction.
+                        The real problem is not a lack of tax advice. It is too much tax advice from too many places, with no clear way to tell what fits your situation and what is just noise.
                     </p>
                 </div>
 
                 <div class="audience-list stagger-children">
                     <article class="audience-item">
                         <strong>You suspect there are better tax moves than the ones you already use.</strong>
-                        <p class="note">But you do not want to spend another weekend guessing which strategies are real fits and which ones are internet noise.</p>
+                        <p class="note">But you do not want to spend another weekend guessing which strategies fit your life and which ones are internet noise.</p>
                     </article>
                     <article class="audience-item">
                         <strong>You want to talk to your CPA with better questions.</strong>
-                        <p class="note">Not vague curiosity. Specific questions about the few moves that may actually matter for your situation.</p>
+                        <p class="note">Not random ideas. Specific questions about the few moves that may actually matter for your situation.</p>
                     </article>
                     <article class="audience-item">
                         <strong>You want clarity before making your next big decision.</strong>
@@ -1262,44 +1296,44 @@
                 <div class="reveal">
                     <div class="section-header">
                         <span class="eyebrow">What is inside</span>
-                        <h2>This is not a generic tax checklist. It is a direct-response planning brief for your tax situation.</h2>
+                        <h2>This is your custom tax report, built for your situation.</h2>
                     </div>
                     <p class="body-copy">
-                        By the time you finish reading it, you should know which moves appear worth reviewing first, which ones may be too early or too complex, and where your next conversation should start.
+                        By the time you finish reading your report, you will know which tax strategies may fit, which ones may be too early or too complex, and what to look at first.
                     </p>
                     <p class="body-copy">
-                        That matters because the best tax move on paper is often not the best move for your real life. Some strategies create maintenance. Some require timing. Some are only worth doing past a certain income level. Some are technically possible but not worth the effort. This report is designed to help you separate those categories faster.
+                        Most reports are 25 to 40 pages. The exact length depends on your answers and how many useful strategies fit your situation. The goal is simple. Help you stop guessing and start seeing a clear order of operations.
                     </p>
                 </div>
 
                 <div class="anatomy stagger-children">
                     <article class="anatomy-item">
                         <div class="anatomy-meta">
-                            <h3>Your tax snapshot and likely savings range</h3>
+                            <h3>Your tax snapshot and possible savings</h3>
                             <span class="range">Pages 1-2</span>
                         </div>
-                        <p class="note">Your income context, filing status, state environment, and an estimated range for how much tax leakage may be recoverable.</p>
+                        <p class="note">See your income setup, filing details, and a simple estimate of where savings may be hiding.</p>
                     </article>
                     <article class="anatomy-item">
                         <div class="anatomy-meta">
-                            <h3>Your score, peer benchmark, and gaps</h3>
+                            <h3>Your score, missed moves, and biggest gaps</h3>
                             <span class="range">Pages 3-5</span>
                         </div>
-                        <p class="note">A fast way to see how optimized your current structure looks compared with people in similar circumstances.</p>
+                        <p class="note">See what you already do well, what looks missing, and where the biggest opportunities may be.</p>
                     </article>
                     <article class="anatomy-item">
                         <div class="anatomy-meta">
-                            <h3>Ranked strategy cards with decision support</h3>
+                            <h3>Your ranked tax strategies</h3>
                             <span class="range">Pages 6-16</span>
                         </div>
-                        <p class="note">Each featured move includes expected upside, qualification notes, complexity, and what can go wrong if you implement it carelessly.</p>
+                        <p class="note">Each strategy shows possible savings, who it fits, what to watch out for, and how important it looks for you.</p>
                     </article>
                     <article class="anatomy-item">
                         <div class="anatomy-meta">
-                            <h3>Roadmap, risk paths, and next steps</h3>
+                            <h3>Your action plan and next steps</h3>
                             <span class="range">Pages 17-24</span>
                         </div>
-                        <p class="note">A practical order of operations, from quick cleanup wins to bigger structural moves that usually need more planning.</p>
+                        <p class="note">Get a clear order to follow, from quick wins to bigger moves that need more planning.</p>
                     </article>
                 </div>
             </div>
@@ -1310,14 +1344,17 @@
                 <div class="section-header section-header--center reveal">
                     <span class="eyebrow">Sample report preview</span>
                     <h2>See the report scroll before you buy.</h2>
-                    <p class="body-copy">This is a quick visual pass through the actual PDF so you can judge the layout, pacing, scorecards, strategy pages, and roadmap structure for yourself.</p>
+                    <p class="body-copy">This is a quick pass through the actual PDF so you can judge the layout, scoring, strategy pages, and action plan for yourself.</p>
                 </div>
 
                 <figure class="report-preview report-preview--centered video reveal">
                     <div class="report-preview__stage">
                         <div class="report-preview__device">
                             <div class="report-preview__screen">
-                                <img src="/gettaxreport/screenshots/report-sneakpeek/tax-report-scroll.gif" alt="Animated preview scrolling through the personalized tax strategy report PDF." loading="eager">
+                                <picture>
+                                    <source srcset="/gettaxreport/screenshots/report-sneakpeek/tax-report-scroll.webp" type="image/webp">
+                                    <img src="/gettaxreport/screenshots/report-sneakpeek/tax-report-scroll.gif" alt="Animated preview scrolling through the personalized tax report PDF." width="420" height="543" loading="lazy" decoding="async" fetchpriority="low">
+                                </picture>
                             </div>
                         </div>
                     </div>
@@ -1329,26 +1366,26 @@
             <div class="shell">
                 <div class="section-header section-header--center reveal">
                     <span class="eyebrow">What happens after you buy</span>
-                    <h2>Simple in. Useful out.</h2>
-                    <p class="body-copy">No complicated onboarding. No long wait. No guesswork about what you are supposed to do next.</p>
-                    <p class="body-copy">The process is short because the value is not in making you work harder. The value is in turning your information into a report that is easier to think with than a pile of articles, videos, and half-remembered tax advice.</p>
+                    <h2>Answer 15 quick questions. Get your report a few minutes later.</h2>
+                    <p class="body-copy">The intake is short. Most people finish it in about 90 seconds.</p>
+                    <p class="body-copy">Your answers are used to generate a 25 to 40 page report for your situation, then your intake data is deleted.</p>
                 </div>
 
                 <div class="steps stagger-children">
                     <article class="step">
                         <span class="step-index">01</span>
-                        <h3>Answer a focused intake</h3>
-                        <p class="note">Give the essentials: income mix, state, filing status, business profile, and the common strategies you already use.</p>
+                        <h3>Answer 15 quick questions</h3>
+                        <p class="note">Tell us the basics about your income, state, filing setup, business activity, and current tax moves.</p>
                     </article>
                     <article class="step">
                         <span class="step-index">02</span>
-                        <h3>Get your report instantly</h3>
-                        <p class="note">The report organizes your likely opportunities, surfaces gaps, and ranks the moves that seem most worth reviewing.</p>
+                        <h3>Get your report within minutes</h3>
+                        <p class="note">Your report is generated from your answers and delivered as a personalized PDF.</p>
                     </article>
                     <article class="step">
                         <span class="step-index">03</span>
-                        <h3>Review it with more confidence</h3>
-                        <p class="note">Use it to decide what to ask, what to ignore, and what to bring to your CPA before your next major tax move.</p>
+                        <h3>See what to look at first</h3>
+                        <p class="note">Use the rankings, savings ranges, and next steps to see which strategies may deserve action now and which ones can wait.</p>
                     </article>
                 </div>
             </div>
@@ -1358,20 +1395,20 @@
             <div class="shell">
                 <div class="section-header reveal">
                     <span class="eyebrow">Why people buy</span>
-                    <h2>You are not paying $47 for tax information. You are paying for a better decision.</h2>
+                    <h2>You are paying $47 to stop guessing and see what to do first.</h2>
                 </div>
                 <div class="offer-grid stagger-children">
                     <article class="offer-item">
-                        <strong>Know what to ask next.</strong>
-                        <p class="note">Instead of showing up to a tax conversation with broad curiosity, you show up with specific priorities. That changes the quality of the conversation immediately.</p>
+                        <strong>See what deserves action first.</strong>
+                        <p class="note">Instead of staring at a long list of tax ideas, you see which ones may matter most for your situation right now.</p>
                     </article>
                     <article class="offer-item">
-                        <strong>Know what to ignore.</strong>
-                        <p class="note">Not every strategy is worth the paperwork, maintenance, or risk for your situation right now. The report helps you avoid forcing complexity where it does not belong.</p>
+                        <strong>Ignore what does not fit.</strong>
+                        <p class="note">Not every strategy is worth the paperwork, timing, or complexity. The report helps you stop chasing ideas that do not belong in your life right now.</p>
                     </article>
                     <article class="offer-item">
-                        <strong>Know what may be worth real money.</strong>
-                        <p class="note">The report helps you see where more planning may matter before you commit to the wrong move or no move at all. That alone can justify the cost many times over.</p>
+                        <strong>See where real money may be hiding.</strong>
+                        <p class="note">The report helps you see which strategies may be worth real savings before you spend time or money implementing the wrong thing.</p>
                     </article>
                 </div>
             </div>
@@ -1388,8 +1425,8 @@
                     <article class="compare-card">
                         <strong>DIY tax research usually leaves you with:</strong>
                         <ul>
-                            <li><i data-lucide="x" class="w-4 h-4" style="color:#8fe7b5;"></i><span>Dozens of strategies, but no clue which ones actually fit your profile.</span></li>
-                            <li><i data-lucide="x" class="w-4 h-4" style="color:#8fe7b5;"></i><span>Hours spent reading blog posts that cannot account for your income, state, or entity setup.</span></li>
+                            <li><i data-lucide="x" class="w-4 h-4" style="color:#8fe7b5;"></i><span>Dozens of strategies, but no clue which ones actually fit your situation.</span></li>
+                            <li><i data-lucide="x" class="w-4 h-4" style="color:#8fe7b5;"></i><span>Hours spent reading blog posts and watching videos that cannot account for your income, state, or entity setup.</span></li>
                             <li><i data-lucide="x" class="w-4 h-4" style="color:#8fe7b5;"></i><span>A pile of ideas with no ranking, no sequence, and no confidence.</span></li>
                         </ul>
                         <p class="note" style="margin-top:14px; color:rgba(232,242,235,0.84);">Most people do not need more tax content. They need a way to make decisions with less noise and more relevance.</p>
@@ -1397,11 +1434,11 @@
                     <article class="compare-card compare-card--warm">
                         <strong>This report is designed to give you:</strong>
                         <ul>
-                            <li><i data-lucide="check" class="w-4 h-4" style="color:#d0f7df;"></i><span>A clear estimate of what may be worth pursuing before you spend time or money implementing anything.</span></li>
-                            <li><i data-lucide="check" class="w-4 h-4" style="color:#d0f7df;"></i><span>Ranked opportunities with enough detail to know which conversations matter most.</span></li>
-                            <li><i data-lucide="check" class="w-4 h-4" style="color:#d0f7df;"></i><span>A document you can review, print, or bring into a planning conversation instead of relying on memory.</span></li>
+                            <li><i data-lucide="check" class="w-4 h-4" style="color:#d0f7df;"></i><span>A clear estimate of which strategies may be worth your time before you implement anything.</span></li>
+                            <li><i data-lucide="check" class="w-4 h-4" style="color:#d0f7df;"></i><span>Ranked opportunities with enough detail to see what comes first.</span></li>
+                            <li><i data-lucide="check" class="w-4 h-4" style="color:#d0f7df;"></i><span>A report you can review on your own or take into your next planning conversation.</span></li>
                         </ul>
-                        <p class="note" style="margin-top:14px; color:rgba(232,242,235,0.86);">That is what makes the offer compelling. It does not promise magic. It promises a better next decision.</p>
+                        <p class="note" style="margin-top:14px; color:rgba(232,242,235,0.86);">It does not promise magic. It gives you a clearer next move.</p>
                     </article>
                 </div>
             </div>
@@ -1411,16 +1448,16 @@
             <div class="shell">
                 <div class="mid-cta reveal">
                     <span class="eyebrow">Get the report</span>
-                    <h2 style="font-size:clamp(2rem,4vw,3rem);">If you already know you are overpaying, stop browsing and get the brief.</h2>
-                    <p class="body-copy">You can keep collecting generic advice and still feel uncertain, or you can get a personalized brief that helps you focus your next move. If clarity is what you need, this is the offer.</p>
+                    <h2 style="font-size:clamp(2rem,4vw,3rem);">If you know you are overpaying in taxes, get the report and see what to do first.</h2>
+                    <p class="body-copy">Stop collecting random tax ideas. Get a report built for your situation, with possible savings, priority scores, and a clear order to review.</p>
                     <ul class="stack-list">
-                        <li><i data-lucide="check-circle-2" class="w-5 h-5"></i><span>See the likely opportunities that fit your current profile.</span></li>
-                        <li><i data-lucide="check-circle-2" class="w-5 h-5"></i><span>Bring sharper questions into your next CPA or advisor conversation.</span></li>
-                        <li><i data-lucide="check-circle-2" class="w-5 h-5"></i><span>Use the 30-day review window if it does not give you the clarity you wanted.</span></li>
+                        <li><i data-lucide="check-circle-2" class="w-5 h-5"></i><span>See the strategies that may fit your situation.</span></li>
+                        <li><i data-lucide="check-circle-2" class="w-5 h-5"></i><span>See possible savings, watchouts, and what to review first.</span></li>
+                        <li><i data-lucide="check-circle-2" class="w-5 h-5"></i><span>Keep your answers private. Your intake data is deleted after generation.</span></li>
                     </ul>
                     <div class="cta-row">
                         <a href="https://legacyinvestingshow.spiffy.co/offer/xgD77hLuJ" class="btn btn--primary">
-                            Get my report for $47
+                            Get my tax report
                             <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </a>
                     </div>
@@ -1445,7 +1482,7 @@
                             <span>$185K</span>
                         </div>
                         <h3>“It sorted the higher-impact ideas from the noise.”</h3>
-                        <p>I had already handled the obvious retirement moves. The report helped me see which ideas were actually worth discussing further and which ones were probably too much complexity for where I am right now.</p>
+                        <p>I had already done the obvious stuff. The report helped me see which ideas were actually worth discussing and which ones were too much complexity for where I am right now.</p>
                     </article>
                     <article class="quote">
                         <div class="quote-meta">
@@ -1454,7 +1491,7 @@
                             <span>$320K</span>
                         </div>
                         <h3>“It gave me better questions for my CPA.”</h3>
-                        <p>The most useful part was not just the list of strategies. It was how clearly the report separated quick wins from bigger moves that need more setup and more care.</p>
+                        <p>The most useful part was not the list of strategies. It was seeing the quick wins separately from the bigger moves that need more setup and more care.</p>
                     </article>
                     <article class="quote">
                         <div class="quote-meta">
@@ -1463,7 +1500,7 @@
                             <span>$125K</span>
                         </div>
                         <h3>“It turned vague tax advice into an order of operations.”</h3>
-                        <p>I almost skipped it because I assumed tax planning was only for higher earners. What changed my mind was seeing a realistic mix of smaller wins and bigger opportunities laid out in a sane order.</p>
+                        <p>I almost skipped it because I assumed tax planning was only for much higher earners. What changed my mind was seeing smaller wins and bigger opportunities laid out in a sane order.</p>
                     </article>
                 </div>
             </div>
@@ -1485,7 +1522,7 @@
                             </span>
                         </button>
                         <div class="faq-answer">
-                            <p class="faq-answer-text">You can find generic tax strategies online. What is hard to find is a useful first-pass filter that tells you which of those ideas appear relevant to your income, state, and structure. That filtering is the job of this report. It saves you from spending hours researching strategies that may not fit or may not be worth the effort for your situation.</p>
+                            <p class="faq-answer-text">You can find tax ideas online all day. What is hard to find is a report built for your own numbers, state, filing setup, and business activity. This report helps you sort real fits from internet noise.</p>
                         </div>
                     </div>
 
@@ -1497,7 +1534,7 @@
                             </span>
                         </button>
                         <div class="faq-answer">
-                            <p class="faq-answer-text">Yes. The report is built around legitimate tax-planning concepts used by professionals and discussed in normal planning conversations. It is not about evasion. It is about knowing which legal moves may deserve a closer look, which ones may fit your profile, and which ones may not be worth forcing.</p>
+                            <p class="faq-answer-text">Yes. The report is built around legitimate tax planning strategies people already use with qualified professionals. It is not about evasion. It is about seeing which legal moves may deserve a closer look.</p>
                         </div>
                     </div>
 
@@ -1509,7 +1546,7 @@
                             </span>
                         </button>
                         <div class="faq-answer">
-                            <p class="faq-answer-text">That is often the best use case. The report is not a substitute for professional advice. It gives you a clearer shortlist of what to ask about, which usually makes your next planning conversation more focused and productive. Many people do not need another expert opinion first. They need a better way to frame the conversation.</p>
+                            <p class="faq-answer-text">That is often the best use case. The report is not a substitute for professional advice. It gives you a clearer shortlist of what may matter so your next planning conversation can be more focused and productive.</p>
                         </div>
                     </div>
 
@@ -1521,7 +1558,43 @@
                             </span>
                         </button>
                         <div class="faq-answer">
-                            <p class="faq-answer-text">That is still useful. The point is not to force complexity where it does not belong. The point is to see what is realistic, what can wait, and where your time is best spent. Sometimes the biggest win is clarity about what not to chase.</p>
+                            <p class="faq-answer-text">That is still useful. The point is not to force complexity where it does not belong. The point is to see what is realistic, what can wait, and what is not worth chasing right now.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button type="button" class="faq-question" aria-expanded="false">
+                            <h3 class="faq-question-title">How long is the report?</h3>
+                            <span class="faq-icon-wrap">
+                                <i data-lucide="plus" class="w-5 h-5 faq-icon"></i>
+                            </span>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="faq-answer-text">Most reports are between 25 and 40 pages. The exact length depends on your answers and how many relevant strategies fit your situation.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button type="button" class="faq-question" aria-expanded="false">
+                            <h3 class="faq-question-title">How long does the intake take?</h3>
+                            <span class="faq-icon-wrap">
+                                <i data-lucide="plus" class="w-5 h-5 faq-icon"></i>
+                            </span>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="faq-answer-text">Most people finish the intake in about 90 seconds. You answer 15 quick questions, then the report is generated from your answers.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button type="button" class="faq-question" aria-expanded="false">
+                            <h3 class="faq-question-title">What happens to my data after the report is generated?</h3>
+                            <span class="faq-icon-wrap">
+                                <i data-lucide="plus" class="w-5 h-5 faq-icon"></i>
+                            </span>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="faq-answer-text">Your answers are used to generate the report, then deleted. The page does not keep your intake data sitting around after the report is created.</p>
                         </div>
                     </div>
                 </div>
@@ -1534,12 +1607,12 @@
                     <span class="eyebrow">Final recap</span>
                     <div class="final-grid">
                         <div>
-                            <h2>Get the report before your next tax decision turns into another expensive guess.</h2>
+                            <h2>Get the report before your next tax decision costs you another year of overpaying.</h2>
                             <p class="body-copy">
-                                If you already know there is likely money leaking through your current setup, the next useful step is not more browsing. It is a clearer view of what fits your situation and what deserves a real conversation.
+                                If you already know there is money leaking through your current setup, the next useful step is not more browsing. It is a clear view of what fits your situation and what deserves action first.
                             </p>
                             <p class="body-copy">
-                                The offer is simple: pay $47 once, review the report on your own time, and use it to decide what is worth asking about next. If it does not give you the clarity you expected, use the review window and ask for your money back.
+                                Pay $47 once. Answer 15 quick questions. Get a personalized report that shows possible savings, priority scores, strategy breakdowns, and next steps built for your answers.
                             </p>
                             <p class="disclaimer">
                                 Educational report only. Not tax preparation, legal advice, or representation before the IRS. Best used as a planning brief to review on your own or with a qualified professional.
@@ -1549,7 +1622,7 @@
                         <div class="card">
                             <div class="price-row">
                                 <span class="price-was">$297</span>
-                                <span class="badge">Today: $47</span>
+                                <span class="badge">$47 one-time</span>
                             </div>
                             <div class="price-now" style="margin: 10px 0 18px;">
                                 <span>$</span>
@@ -1558,19 +1631,19 @@
                             <ul class="checklist" style="margin-bottom: 22px;">
                                 <li>
                                     <i data-lucide="check-circle-2" class="w-5 h-5"></i>
-                                    <span>24-page personalized PDF delivered immediately after checkout</span>
+                                    <span>25 to 40 page personalized PDF delivered within minutes</span>
                                 </li>
                                 <li>
                                     <i data-lucide="check-circle-2" class="w-5 h-5"></i>
-                                    <span>30-day review window if it does not give you the clarity you expected</span>
+                                    <span>Possible savings ranges, priority scores, and strategy rankings</span>
                                 </li>
                                 <li>
                                     <i data-lucide="check-circle-2" class="w-5 h-5"></i>
-                                    <span>Designed to help you prioritize your next tax conversation, not replace it</span>
+                                    <span>Private intake. Your answers are deleted after the report is generated</span>
                                 </li>
                             </ul>
                             <a href="https://legacyinvestingshow.spiffy.co/offer/xgD77hLuJ" id="tax-accept-btn" class="btn btn--primary">
-                                Get my tax strategy report
+                                Get my tax report
                                 <i data-lucide="arrow-right" class="w-4 h-4"></i>
                             </a>
                         </div>
@@ -1583,11 +1656,11 @@
     <div class="mobile-cta">
         <div class="mobile-cta__meta">
             <span>$47 one-time</span>
-            <span>24-page PDF</span>
-            <span>30-day review</span>
+            <span>15 quick questions</span>
+            <span>Delivered in minutes</span>
         </div>
         <a href="https://legacyinvestingshow.spiffy.co/offer/xgD77hLuJ" class="btn btn--primary">
-            Get my report
+            Get my tax report
             <i data-lucide="arrow-right" class="w-4 h-4"></i>
         </a>
     </div>
