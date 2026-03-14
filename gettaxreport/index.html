@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personalized Tax Report | Legacy Investing Show</title>
     <meta name="description" content="Get a personalized tax report for $47. See which tax strategies may fit your situation, possible savings ranges, priority scores, and what to review first.">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="Kec6RfGhFL-qG_8zKxCqt7yxjgy65WeDAftCBm90G2s">
+    <meta name="google-site-verification" content="92MoCnkdQOj_ey1lEafT5Mz-znCcCQ3UABZlI-JG_nM">
 
     <meta property="og:type" content="product">
     <meta property="og:url" content="https://www.legacyinvestingshow.com/gettaxreport">
@@ -80,13 +83,17 @@
                 linear-gradient(rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.04)),
                 url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.78' numOctaves='3'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.15'/%3E%3C/svg%3E");
             mix-blend-mode: screen;
-            opacity: 0.12;
+            opacity: 0.08;
             z-index: -1;
         }
 
         img, iframe, svg, picture {
             max-width: 100%;
             display: block;
+        }
+
+        [id] {
+            scroll-margin-top: 132px;
         }
 
         i[data-lucide] {
@@ -200,6 +207,11 @@
         }
 
         .hero-copy {
+            display: grid;
+            gap: 18px;
+        }
+
+        .hero-side {
             display: grid;
             gap: 18px;
         }
@@ -410,6 +422,11 @@
 
         .video {
             overflow: hidden;
+        }
+
+        .video--standalone {
+            width: min(100%, 760px);
+            margin: 0 auto;
         }
 
         .video__frame {
@@ -707,6 +724,23 @@
             gap: 10px;
         }
 
+        .compare-card__icon--muted {
+            color: #8fe7b5;
+        }
+
+        .compare-card__icon--bright {
+            color: #d0f7df;
+        }
+
+        .compare-card__note {
+            margin-top: 14px;
+            color: rgba(232, 242, 235, 0.84);
+        }
+
+        .compare-card__note--bright {
+            color: rgba(232, 242, 235, 0.86);
+        }
+
         .compare-card--warm {
             background: rgba(47, 191, 113, 0.14);
             border-color: rgba(47, 191, 113, 0.26);
@@ -794,16 +828,18 @@
         }
 
         .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.35s ease;
+            display: grid;
+            grid-template-rows: 0fr;
+            transition: grid-template-rows 0.35s ease;
         }
 
         .faq-item.active .faq-answer {
-            max-height: 420px;
+            grid-template-rows: 1fr;
         }
 
         .faq-answer-text {
+            min-height: 0;
+            overflow: hidden;
             padding: 18px 24px 22px;
             margin: 0;
             border-top: 1px solid rgba(232, 242, 235, 0.08);
@@ -828,6 +864,18 @@
 
         .final-panel h2 {
             max-width: 16ch;
+        }
+
+        .final-panel__cta-heading {
+            font-size: clamp(2rem, 4vw, 3rem);
+        }
+
+        .final-panel__price {
+            margin: 10px 0 18px;
+        }
+
+        .final-panel__list {
+            margin-bottom: 22px;
         }
 
         .disclaimer {
@@ -990,6 +1038,10 @@
             .site-header.scrolled,
             .mobile-cta {
                 backdrop-filter: none;
+            }
+
+            .video--standalone {
+                width: 100%;
             }
 
             .mobile-cta {
@@ -1209,7 +1261,7 @@
                     </div>
                 </div>
 
-                <div class="reveal" style="display:grid; gap:18px;">
+                <div class="reveal hero-side">
                     <aside class="card card--compact">
                         <span class="eyebrow">What you get</span>
                         <div class="price-row">
@@ -1244,15 +1296,6 @@
                             <i data-lucide="move-down-right" class="w-4 h-4"></i>
                         </a>
                     </aside>
-
-                    <div class="video">
-                        <div class="video__frame">
-                            <iframe src="https://player.vimeo.com/video/1151644607?autoplay=0&amp;title=0&amp;byline=0" title="Tax report walkthrough video" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <p class="video__caption">
-                            Watch the walkthrough to see how the report frames your savings potential, surfaces missed moves, and separates quick wins from structural tax changes.
-                        </p>
-                    </div>
                 </div>
             </div>
         </section>
@@ -1365,6 +1408,25 @@
         <section class="section section--paper">
             <div class="shell">
                 <div class="section-header section-header--center reveal">
+                    <span class="eyebrow">Walkthrough video</span>
+                    <h2>Watch the short walkthrough after you see the report preview.</h2>
+                    <p class="body-copy">This keeps the page focused on the core offer first, then gives you the full video explanation once you have the visual context.</p>
+                </div>
+
+                <div class="video video--standalone reveal">
+                    <div class="video__frame">
+                        <iframe src="https://player.vimeo.com/video/1151644607?autoplay=0&amp;title=0&amp;byline=0" title="Tax report walkthrough video" frameborder="0" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="video__caption">
+                        Watch the walkthrough to see how the report frames your savings potential, surfaces missed moves, and separates quick wins from structural tax changes.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--paper">
+            <div class="shell">
+                <div class="section-header section-header--center reveal">
                     <span class="eyebrow">What happens after you buy</span>
                     <h2>Answer 15 quick questions. Get your report a few minutes later.</h2>
                     <p class="body-copy">The intake is short. Most people finish it in about 90 seconds.</p>
@@ -1391,29 +1453,6 @@
             </div>
         </section>
 
-        <section class="section section--paper">
-            <div class="shell">
-                <div class="section-header reveal">
-                    <span class="eyebrow">Why people buy</span>
-                    <h2>You are paying $47 to stop guessing and see what to do first.</h2>
-                </div>
-                <div class="offer-grid stagger-children">
-                    <article class="offer-item">
-                        <strong>See what deserves action first.</strong>
-                        <p class="note">Instead of staring at a long list of tax ideas, you see which ones may matter most for your situation right now.</p>
-                    </article>
-                    <article class="offer-item">
-                        <strong>Ignore what does not fit.</strong>
-                        <p class="note">Not every strategy is worth the paperwork, timing, or complexity. The report helps you stop chasing ideas that do not belong in your life right now.</p>
-                    </article>
-                    <article class="offer-item">
-                        <strong>See where real money may be hiding.</strong>
-                        <p class="note">The report helps you see which strategies may be worth real savings before you spend time or money implementing the wrong thing.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
         <section class="section section--ink">
             <div class="shell">
                 <div class="section-header reveal">
@@ -1425,20 +1464,20 @@
                     <article class="compare-card">
                         <strong>DIY tax research usually leaves you with:</strong>
                         <ul>
-                            <li><i data-lucide="x" class="w-4 h-4" style="color:#8fe7b5;"></i><span>Dozens of strategies, but no clue which ones actually fit your situation.</span></li>
-                            <li><i data-lucide="x" class="w-4 h-4" style="color:#8fe7b5;"></i><span>Hours spent reading blog posts and watching videos that cannot account for your income, state, or entity setup.</span></li>
-                            <li><i data-lucide="x" class="w-4 h-4" style="color:#8fe7b5;"></i><span>A pile of ideas with no ranking, no sequence, and no confidence.</span></li>
+                            <li><i data-lucide="x" class="w-4 h-4 compare-card__icon--muted"></i><span>Dozens of strategies, but no clue which ones actually fit your situation.</span></li>
+                            <li><i data-lucide="x" class="w-4 h-4 compare-card__icon--muted"></i><span>Hours spent reading blog posts and watching videos that cannot account for your income, state, or entity setup.</span></li>
+                            <li><i data-lucide="x" class="w-4 h-4 compare-card__icon--muted"></i><span>A pile of ideas with no ranking, no sequence, and no confidence.</span></li>
                         </ul>
-                        <p class="note" style="margin-top:14px; color:rgba(232,242,235,0.84);">Most people do not need more tax content. They need a way to make decisions with less noise and more relevance.</p>
+                        <p class="note compare-card__note">Most people do not need more tax content. They need a way to make decisions with less noise and more relevance.</p>
                     </article>
                     <article class="compare-card compare-card--warm">
                         <strong>This report is designed to give you:</strong>
                         <ul>
-                            <li><i data-lucide="check" class="w-4 h-4" style="color:#d0f7df;"></i><span>A clear estimate of which strategies may be worth your time before you implement anything.</span></li>
-                            <li><i data-lucide="check" class="w-4 h-4" style="color:#d0f7df;"></i><span>Ranked opportunities with enough detail to see what comes first.</span></li>
-                            <li><i data-lucide="check" class="w-4 h-4" style="color:#d0f7df;"></i><span>A report you can review on your own or take into your next planning conversation.</span></li>
+                            <li><i data-lucide="check" class="w-4 h-4 compare-card__icon--bright"></i><span>A clear estimate of which strategies may be worth your time before you implement anything.</span></li>
+                            <li><i data-lucide="check" class="w-4 h-4 compare-card__icon--bright"></i><span>Ranked opportunities with enough detail to see what comes first.</span></li>
+                            <li><i data-lucide="check" class="w-4 h-4 compare-card__icon--bright"></i><span>A report you can review on your own or take into your next planning conversation.</span></li>
                         </ul>
-                        <p class="note" style="margin-top:14px; color:rgba(232,242,235,0.86);">It does not promise magic. It gives you a clearer next move.</p>
+                        <p class="note compare-card__note compare-card__note--bright">It does not promise magic. It gives you a clearer next move.</p>
                     </article>
                 </div>
             </div>
@@ -1448,7 +1487,7 @@
             <div class="shell">
                 <div class="mid-cta reveal">
                     <span class="eyebrow">Get the report</span>
-                    <h2 style="font-size:clamp(2rem,4vw,3rem);">If you know you are overpaying in taxes, get the report and see what to do first.</h2>
+                    <h2 class="final-panel__cta-heading">If you know you are overpaying in taxes, get the report and see what to do first.</h2>
                     <p class="body-copy">Stop collecting random tax ideas. Get a report built for your situation, with possible savings, priority scores, and a clear order to review.</p>
                     <ul class="stack-list">
                         <li><i data-lucide="check-circle-2" class="w-5 h-5"></i><span>See the strategies that may fit your situation.</span></li>
@@ -1624,11 +1663,11 @@
                                 <span class="price-was">$297</span>
                                 <span class="badge">$47 one-time</span>
                             </div>
-                            <div class="price-now" style="margin: 10px 0 18px;">
+                            <div class="price-now final-panel__price">
                                 <span>$</span>
                                 <span>47</span>
                             </div>
-                            <ul class="checklist" style="margin-bottom: 22px;">
+                            <ul class="checklist final-panel__list">
                                 <li>
                                     <i data-lucide="check-circle-2" class="w-5 h-5"></i>
                                     <span>25 to 40 page personalized PDF delivered within minutes</span>
@@ -1669,9 +1708,9 @@
         <div class="shell footer__row">
             <p>&copy; 2025 Legacy Investing Show. All rights reserved.</p>
             <nav aria-label="Footer">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Contact Support</a>
+                <a href="/privacy.html">Privacy Policy</a>
+                <a href="/terms.html">Terms of Service</a>
+                <a href="mailto:preston@legacyinvestingshow.com">Contact Support</a>
             </nav>
         </div>
     </footer>

@@ -272,6 +272,11 @@ function processFile(filePath) {
   const relativePath = path.relative(ROOT_DIR, filePath);
   const original = fs.readFileSync(filePath, 'utf8');
   let next = original;
+  const skipTrackingInjection = new Set([
+    path.join('gettaxreport', 'index.html'),
+    'privacy.html',
+    'terms.html',
+  ]).has(relativePath);
   next = ensureViewportMeta(next);
   next = ensureMetaDescription(next);
   next = expandDescriptionFromOg(next);
@@ -282,9 +287,11 @@ function processFile(filePath) {
   next = expandTitleFromOg(next);
   next = normalizeExtraH1(next);
   next = stripPlaceholderGaScript(next);
-  next = injectGtmScript(next);
-  next = injectGaScript(next);
-  next = injectGtmNoScript(next);
+  if (!skipTrackingInjection) {
+    next = injectGtmScript(next);
+    next = injectGaScript(next);
+    next = injectGtmNoScript(next);
+  }
 
   if (next !== original) {
     fs.writeFileSync(filePath, next, 'utf8');
