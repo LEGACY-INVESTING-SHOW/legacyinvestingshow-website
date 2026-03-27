@@ -23,9 +23,9 @@ const FOOTER_NAV_ITEMS = [
 
 const CTA_LIBRARY = {
   tax_masterclass: {
-    title: 'Join Before You File | March 27-29, 2026',
+    title: 'Join Before You File | April 17-19, 2026',
     text: 'Live on Zoom from 10 AM to 4 PM Eastern each day. Day 1 shows you how to read your 2025 return and find the leaks, Day 2 builds the tax and wealth strategy, and Day 3 turns it into a dated 12-month 2026 plan.',
-    href: 'https://go.managemoney101.com/challenge3',
+    href: 'https://go.managemoney101.com/challenge2',
     label: 'Get Your Seat Before You File',
   },
   wealth_challenge: {

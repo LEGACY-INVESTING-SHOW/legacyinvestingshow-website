@@ -709,7 +709,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
           ${renderPageCtaSection({
             variant: 'tax_masterclass',
             title: 'Bring The Worksheet Into The 3-Day Challenge',
-            text: 'Before You File is live on Zoom March 27-29, 2026, from 10 AM to 4 PM Eastern daily. Use the worksheet there to pressure-test your assumptions, identify the right strategies, and map the next 12 months in order.',
+            text: 'Before You File is live on Zoom April 17-19, 2026, from 10 AM to 4 PM Eastern daily. Use the worksheet there to pressure-test your assumptions, identify the right strategies, and map the next 12 months in order.',
             trackLocation: 'worksheet_page_cta',
           })}
         </div>

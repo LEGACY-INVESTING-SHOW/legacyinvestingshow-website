@@ -694,8 +694,8 @@ function generateBlogIndex(posts) {
         <section class="minimal-cta">
             <div class="minimal-cta-content">
                 <h2 class="minimal-cta-title">Turn Reading Into A Before You File Plan</h2>
-                <p class="minimal-cta-text">Join Preston live on Zoom from March 27-29, 2026, 10 AM-4 PM Eastern each day. You will read the return, build the strategy stack, and leave with a dated 12-month plan for 2026.</p>
-                <a href="https://go.managemoney101.com/challenge3" class="minimal-cta-button" data-track-event="cta_clicked" data-track-label="Get Your Seat Before You File" data-track-location="blog_index_cta" data-track-destination="https://go.managemoney101.com/challenge3">Get Your Seat Before You File</a>
+                <p class="minimal-cta-text">Join Preston live on Zoom from April 17-19, 2026, 10 AM-4 PM Eastern each day. You will read the return, build the strategy stack, and leave with a dated 12-month plan for 2026.</p>
+                <a href="https://go.managemoney101.com/challenge2" class="minimal-cta-button" data-track-event="cta_clicked" data-track-label="Get Your Seat Before You File" data-track-location="blog_index_cta" data-track-destination="https://go.managemoney101.com/challenge2">Get Your Seat Before You File</a>
             </div>
         </section>
     </main>
