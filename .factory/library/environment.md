@@ -2,7 +2,7 @@
 
 Environment variables, external dependencies, and setup notes.
 
-**What belongs here:** Required env vars, external API keys/services, dependency quirks, platform-specific notes.
+**What belongs here:** Required env vars, external dependencies, dependency quirks, platform-specific notes.
 **What does NOT belong here:** Service ports/commands (use `.factory/services.yaml`).
 
 ---
@@ -30,11 +30,19 @@ Environment variables, external dependencies, and setup notes.
 ## Wealth Plans Source
 
 - Location: `/Users/deveshdhardubey/Downloads/Legacy Investing Show/Website/Wealth Plans /Personalized Plans/`
-- Note: Directory name has a trailing space
-- ~82 unique client files after deduplication (PDFs and DOCXs)
+- **Note:** Directory name has a trailing space
+- ~129 total files (101 PDFs + 28 DOCXs)
+- ~57 unique client plans still need conversion after dedup/skipping
 - Two format types: WP (Wealth Plan) and WSS (Wealth Strategy Snapshot)
 
 ## Site URL
 
 - Production: https://www.legacyinvestingshow.com
 - Local dev: http://localhost:3000
+
+## Known Issues
+
+- `ian-wealth-plan.md` is broken (contains error string, not blog content)
+- 17 skeleton posts have `[Perspective content based on extracted plan data]` placeholders
+- Build currently fails on ian-wealth-plan.md (1 error)
+- Some wealth plan filenames have trailing spaces (handled by slug generation)

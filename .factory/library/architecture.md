@@ -18,12 +18,18 @@ blog/*.html        →  scripts/generate-rss.js       →  feed.xml
 4. **Sitemap**: `npm run build:sitemap` scans `blog/*.html` for posts
 5. **RSS**: `npm run build:rss` generates `feed.xml` from blog HTML
 
-## New Wealth Plan Conversion Pipeline
+## Wealth Plan Conversion Pipeline
 
 ```
 Wealth Plans (PDF/DOCX)
          ↓
-[pipeline script: extract + anonymize]
+scripts/wealth-plan-pipeline/extractor.py  (extract text)
+         ↓
+scripts/wealth-plan-pipeline/anonymizer.py  (scrub PII)
+         ↓
+scripts/wealth-plan-pipeline/generator.py  (create markdown skeleton)
+         ↓
+[LLM-expansion to 3000-5000 words]
          ↓
 content/blog/{slug}.md  (with YAML frontmatter)
          ↓
@@ -34,91 +40,75 @@ blog/{slug}.html + updated blog/index.html + sitemap.xml + feed.xml
 
 ## Key Components
 
-### 1. Extraction Script (`scripts/extract-wealth-plan.js` or `.py`)
+### 1. Extraction Script (`scripts/wealth-plan-pipeline/extractor.py`)
 - **Input**: PDF or DOCX file path
 - **Output**: Structured JSON with sections, financial data, strategies
 - **Uses**: PyMuPDF for PDF, zipfile for DOCX
 - **Key invariant**: Must preserve all financial data, only redact full names
 
-### 2. Markdown Generator (`scripts/generate-wealth-plan-post.js`)
+### 2. Markdown Generator (`scripts/wealth-plan-pipeline/generator.py`)
 - **Input**: Structured JSON from extraction
-- **Output**: Markdown file in `content/blog/{slug}.md`
-- **Frontmatter**: Must include all required fields (title, description, date, author, category, statistics, faq, seo, tags, image, canonical)
-- **Category**: Always "Wealth Plan"
-- **Disclaimer**: Standardized anonymization/disclaimer text at top of content
+- **Output**: Markdown file skeleton in `content/blog/{slug}.md`
+- **Produces structural skeleton**: The content sections are placeholders `[Perspective content based on extracted plan data]`
+- **Workers must expand**: Replace all placeholders with real 3,000-5,000 word content
 
-### 3. Anonymization Module
+### 3. Anonymization Module (`scripts/wealth-plan-pipeline/anonymizer.py`)
 - **Input**: Raw text from wealth plan
 - **Output**: Text with full names replaced by first names only
-- **Invariants**: 
-  - No full names (first+last) anywhere in output
-  - First names preserved for readability
-  - Location data preserved (city/state) as it's not PII in this context
-  - All financial figures preserved exactly
+- **Known safe false positives**: "Personalized Wealth", "Financial Independence", "Preston Seo", "Legacy Investing Show", etc.
+- **Invariants**: No full names, emails, phone numbers, SSNs, or addresses in output
 
-### 4. Keyword Enrichment (`scripts/build-blog.js` modification)
-- Add "Wealth Plan" category mapping to `extractKeywords()` function
-- Keywords: wealth plan, case study, personalized wealth strategy, tax optimization, financial roadmap
+### 4. Keyword Enrichment (`scripts/build-blog.js`)
+- "Wealth Plan" category mapping added to `extractKeywords()` function
+- Keywords: wealth plan, personalized strategy, tax optimization, financial planning, retirement strategy
+
+## Current State
+
+- **37 wealth plan `.md` files** exist in `content/blog/`
+- **1 broken**: `ian-wealth-plan.md` (contains error string, not content)
+- **17 skeletons**: placeholder content, need expansion to 3,000-5,000 words
+- **1 thin**: `trent-wealth-plan.md` (generic shell, ~85 words)
+- **19 expanded**: real content, 2,800+ words each
+- **~57 remaining** unique wealth plans still need conversion
 
 ## Frontmatter Template for Wealth Plan Posts
 
 ```yaml
 ---
-title: "How [FirstName] Saved $XX,XXX in Taxes with a Personalized Wealth Plan (2026 Case Study)"
-titleTemplate: '%s | Legacy Investing Show Case Studies'
+title: "How [FirstName] Saved $XX,XXX in Taxes with a Personalized Wealth Plan"
+titleTemplate: '%s | Legacy Investing Show Wealth Plans'
 description: "150-160 char SEO description"
 date: "2026-04-XX"
-modifiedDate: "2026-04-XX"
 author: Preston Seo
-authorTitle: 'Founder, Legacy Investing Show'
-authorCredentials: '2,000+ students trained, $10M+ student revenue generated'
 category: Wealth Plan
 canonical: 'https://www.legacyinvestingshow.com/blog/{slug}'
 seo:
   primaryKeyword: wealth plan case study
-  secondaryKeywords: [personalized wealth strategy, tax optimization plan, financial roadmap]
+  secondaryKeywords: [personalized wealth strategy, tax optimization plan]
   longTailKeywords: [specific long-tail from plan content]
   searchIntent: informational
 tags:
   - wealth plan
-  - case study
   - tax strategy
-  - [strategy-specific tags from plan]
-image: /assets/images/og-blog.jpg
-featured: false
+  - wealth building
+image: /assets/images/blog/wealth-plan-{firstname}.jpg
+imageAlt: "{FirstName}'s Personalized Wealth Plan Strategy"
+disclaimer: true
 statistics:
-  - value: '$XX,XXX'
-    label: Year-One Tax Savings
+  - label: "Year-One Tax Savings"
+    value: "$XX,XXX"
     icon: dollar
-    context: Conservative estimate
-  - value: '$XX,XXX'
-    label: Total First-Year Value
+  - label: "Total First-Year Value"
+    value: "$XX,XXX"
     icon: chart
-  - value: 'X'
-    label: Tax Strategies Deployed
+  - label: "Tax Strategies Deployed"
+    value: "X"
     icon: star
-  - value: 'X months'
-    label: Emergency Fund Target
-    icon: clock
 faq:
   - question: "..."
     answer: "..."
 ---
 ```
-
-## Blog Post Content Structure
-
-1. **Disclaimer block** (HTML div with standardized text)
-2. **Introduction** — Hook with key numbers from executive summary
-3. **Executive Summary** — Year-one value, primary objectives, strategic path
-4. **Current Financial Position** — Anonymized table of key metrics
-5. **Tax Strategy Playbook** — Each strategy as H2/H3 with explanation and dollar estimates
-6. **Primary Strategy** — STR business model, entity structure, scenario projections
-7. **Investment Strategy** — Bitcoin DCA, income sleeve, portfolio allocation
-8. **Year-One Value Breakdown** — Summary table with Conservative/Aggressive columns
-9. **Timeline/Action Items** — Week-by-week or month-by-month milestones
-10. **Key Takeaways** — Actionable summary
-11. **Disclaimer** — Repetition of legal disclaimer at end
 
 ## Invariants
 
@@ -127,7 +117,7 @@ faq:
 - Every post has category "Wealth Plan"
 - Every post has at least 3 statistics cards in frontmatter
 - Every post has at least 5 FAQ items
-- Posts are 3,000-5,000 words
+- Posts are 3,000-5,000 words (excluding frontmatter)
 - Canonical URLs follow pattern: `https://www.legacyinvestingshow.com/blog/{slug}`
 - All slugs are URL-safe (lowercase, hyphens, no special characters)
 - Build must complete without errors after adding any batch of posts
