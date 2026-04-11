@@ -219,7 +219,8 @@ function extractKeywords(content, category) {
     const categoryKeywords = {
         'Airbnb Arbitrage': ['airbnb', 'arbitrage', 'short-term rental', 'passive income', 'rental property'],
         'Real Estate': ['real estate', 'property investment', 'rental income', 'property management'],
-        'Investing': ['investment strategy', 'portfolio', 'returns', 'cash flow']
+        'Investing': ['investment strategy', 'portfolio', 'returns', 'cash flow'],
+        'Wealth Plan': ['wealth plan', 'personalized strategy', 'tax optimization', 'financial planning', 'retirement strategy', 'wealth building strategy']
     };
 
     const keywords = [...baseKeywords, ...(categoryKeywords[category] || [])];
