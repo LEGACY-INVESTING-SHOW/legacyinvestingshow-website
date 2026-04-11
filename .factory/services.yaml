@@ -1,0 +1,19 @@
+commands:
+  install: npm install
+  build: npm run build
+  build:css: npm run build:css
+  build:blog: npm run build:blog
+  build:sitemap: npm run build:sitemap
+  build:rss: npm run build:rss
+  start: npm run start
+  dev: npm run dev
+  lint: echo "No linter configured"
+  typecheck: echo "No typecheck configured"
+
+services:
+  web:
+    start: npm run start
+    stop: lsof -ti :3000 | xargs kill 2>/dev/null || true
+    healthcheck: curl -sf http://localhost:3000 || echo "Server not running"
+    port: 3000
+    depends_on: []
