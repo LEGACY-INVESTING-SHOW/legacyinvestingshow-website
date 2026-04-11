@@ -64,6 +64,11 @@ Use a short scorecard:
 
 That gives you a much better buying frame than generic vendor marketing.
 
+## A practical firm example
+Two firms can look similar on size and still need very different software.
+
+A compliance-heavy firm with standardized reviewer layers may care most about diagnostics and review controls. A smaller firm may care more about training friction and total cost. That is why feature lists are a weaker guide than actual workflow fit.
+
 ## Accountant needs versus CPA-firm needs
 There is overlap, but some accountants may prioritize:
 
@@ -100,6 +105,35 @@ This decision matters most when the firm is feeling review drag, workflow fricti
 
 ## Better buying sequence
 Start with workflow, diagnostics, and reviewer experience. Pricing only matters after you know the system can actually support the firm's preparation model.
+
+## Why this choice shows up in margins
+Prep software affects:
+
+- staff time
+- rework
+- review speed
+- consistency under deadline
+
+That is why the wrong choice quietly erodes margin even when the sticker price looked reasonable.
+
+## What a trial period should prove
+During evaluation, the firm should try to prove:
+
+- returns move through preparation cleanly
+- diagnostics reduce reviewer friction instead of adding more clicks
+- the system is teachable to the actual staff, not just to the partner who bought it
+
+That trial mindset is often more useful than another round of vendor demos.
+
+## What a live trial should answer
+A real trial should show whether the software helps the team:
+
+- prepare a representative return quickly
+- hand work off cleanly to review
+- resolve diagnostics without unnecessary looping
+- onboard junior staff without weeks of friction
+
+That is the practical test that turns software selection into a workflow decision instead of a marketing decision.
 
 ## FAQ
 ## Is tax prep software the same as tax planning software?

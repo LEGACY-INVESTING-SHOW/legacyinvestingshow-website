@@ -68,6 +68,15 @@ Tax strategy software is mainly about:
 
 That is why buyers often need both categories, not just one.
 
+## A practical buying example
+If a business owner keeps asking:
+
+- should I change compensation mix
+- should I move income this year or next
+- should I model a different contribution path
+
+then filing software alone is probably not solving the real problem. That is the point where tax strategy software starts to matter.
+
 ## Who needs it most
 This category matters most for:
 
@@ -90,6 +99,27 @@ That is why simple returns usually do not need much here, while more complex hou
 
 ## Worked buying lens
 If the taxpayer or advisor keeps asking future-facing questions throughout the year, strategy software can be worth paying for. If the only need is return preparation at filing time, prep software may still be the better core purchase.
+
+## What to compare first
+Start by comparing:
+
+- whether the tool really supports decision modeling
+- how clearly it surfaces assumptions
+- whether the output is usable by the actual decision-maker
+
+That is more important than whether the vendor uses the word “strategy” in the marketing.
+
+## A simple buyer test
+Before buying, run one real planning question through the tool:
+
+- should income move this year or next
+- should a contribution be made now or later
+- does a structure change materially alter the tax result
+
+If the tool cannot help a real user reason through one of those choices clearly, it is probably closer to reporting software than strategy software.
+
+## A good buyer question
+Ask whether the tool can improve one real decision you expect to make this year. If it cannot clearly help with a real compensation, timing, contribution, or entity-choice decision, then it may still be good software, but it is probably not strong tax-strategy software for your use case.
 
 ## Fast way to tell if a tool is really strategic
 Ask whether it helps compare future decisions before year-end. If it only helps report the past, it is probably not strategy software.

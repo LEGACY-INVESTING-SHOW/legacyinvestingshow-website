@@ -90,6 +90,14 @@ Direct giving usually wins when the donor already knows the recipient and wants 
 ## Quick decision test
 Ask whether this is mainly a simplicity year or mainly a timing year. That question often gets you to the right path faster than product marketing ever will.
 
+## A practical example
+If the donor has a normal-income year and already knows the exact recipient charity, direct giving may be more than enough. If the donor has a highly unusual income year, may donate appreciated assets, and wants to spread grants over time, a donor advised fund often becomes more compelling.
+
+That is why this comparison is less about generosity style and more about tax-year structure.
+
+## Why donors overcomplicate this decision
+The comparison becomes much easier when the donor stops asking which structure sounds more sophisticated and starts asking which structure best matches this year’s tax reality and the donor’s actual giving workflow.
+
 ## FAQ
 ## Is a donor advised fund always better than direct giving?
 No.

@@ -85,6 +85,9 @@ A serious CPA-firm shortlist should not stop at vendor demos. It should test:
 
 Those are the practical stress points that separate a decent platform from one that actually improves firm throughput.
 
+## Why workflow savings usually matter more than price savings
+CPA firms often over-focus on subscription pricing and under-focus on reviewer time, rework, and training drag. A more expensive platform can still be the cheaper operational choice if it shortens review cycles and lowers avoidable cleanup work. That is why the “best” prep software is usually the one that improves production flow, not the one with the lowest annual invoice.
+
 ## Worked buying lens
 If one product is cheaper but creates slower review cycles, the lower price can disappear fast once partner time and amended-return cleanup are included. That is why firms should compare total workflow cost, not just subscription cost.
 
@@ -98,6 +101,18 @@ A solo preparer and a multi-reviewer CPA firm often need different things from p
 
 ## Selection checklist
 Before choosing a platform, compare workflow speed, diagnostics, reviewer controls, training burden, and the total cost at your real team size rather than the vendor's starter price.
+
+## What a CPA firm should test in a live trial
+A better evaluation process is not just a demo. It is a controlled trial on a sample return or workflow.
+
+Useful test questions:
+
+- How fast can a preparer complete a realistic return?
+- How easy is the reviewer handoff?
+- Do diagnostics help or create noise?
+- How much firm-specific setup is needed before the tool feels usable?
+
+Those questions are what turn a software comparison into an operational decision.
 
 ## FAQ
 ## Is tax prep software the same as tax planning software?

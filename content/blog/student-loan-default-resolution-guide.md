@@ -50,6 +50,15 @@ Default resolution starts the same way many other student-loan decisions do:
 
 The systems, recovery options, and negotiation posture are different enough that combining them usually makes the decision worse.
 
+## What borrowers should verify immediately
+Before choosing any path, a borrower should confirm:
+
+- who currently holds or services the debt
+- whether collections activity is already active
+- whether the default status is federal-program based or private-creditor based
+
+Without that baseline, it is easy to choose a strategy that does not actually match the system controlling the account.
+
 ## What default resolution is trying to solve
 At a practical level, a default-resolution strategy is trying to improve some combination of:
 
@@ -100,6 +109,15 @@ Borrowers often talk about default as if it is one finish line. It is not. A res
 - Is the borrower solving the real problem or just buying time?
 
 Those questions matter because the first available exit from default is not always the best exit from default.
+
+## What a strong resolution path looks like
+A strong path usually does three things:
+
+- reduces immediate harm
+- creates a payment structure the borrower can realistically maintain
+- leaves the borrower in a better position six to twelve months later
+
+That is the bar a resolution option should be judged against.
 
 ## FAQ
 ## Is default resolution the same as settlement?

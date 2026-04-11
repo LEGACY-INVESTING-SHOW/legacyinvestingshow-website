@@ -75,6 +75,15 @@ Before relying on the deduction, the donor should usually confirm the contributi
 ## When this strategy tends to be strongest
 This page is most useful in high-income years, bunching years, and appreciated-asset years, when deduction timing becomes part of the tax plan rather than just part of the giving plan.
 
+## Why the deduction question gets mishandled
+People often ask “Do I get the deduction?” when the better question is:
+
+- in which year
+- under what itemizing context
+- with what documentation burden
+
+That is the difference between tax curiosity and actual deduction planning.
+
 ## FAQ
 ## When do you get the donor advised fund tax deduction?
 The practical answer usually points to the contribution year, not the later grant year.

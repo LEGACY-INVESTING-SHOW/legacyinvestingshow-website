@@ -53,6 +53,15 @@ At a practical level, the answer usually depends on:
 
 There is no serious break-even answer without those inputs.
 
+## A rough break-even mindset
+The break-even point is usually not one magic number. It is a band where:
+
+- profit is high enough that payroll-tax savings can matter
+- salary is still defensible
+- admin cost does not erase the spread
+
+That is why the better question is “Under what assumptions does the structure still win?” rather than “What one profit number should I memorize?”
+
 ## Why the internet often gets this wrong
 Many S corp examples assume:
 
@@ -87,6 +96,15 @@ That is because some businesses are technically profitable enough for an S corp 
 
 ## Why break-even is about quality of profit too
 Consistent profit matters more than one hot year. A business with unstable income can look “over the threshold” for one year and then immediately lose the advantage once profits normalize. That is why a good break-even decision usually looks at at least a rolling 12-month picture instead of one lucky quarter.
+
+## What owners often underestimate
+Owners usually underestimate:
+
+- the discipline of payroll
+- the cost of bookkeeping cleanup
+- the risk of using a salary that is too aggressive
+
+Those are exactly the issues that turn an “S corp saves money” narrative into a messy real-world outcome.
 
 ## FAQ
 ## Is there one fixed S corp break-even number?

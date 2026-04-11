@@ -64,6 +64,9 @@ That is why one owner may qualify cleanly while another owner in a higher-income
 ## Why SSTB status matters
 Specified service trades or businesses are one of the biggest reasons this query exists. Searchers want to know whether their line of work changes the result. The answer is that higher-income SSTB situations often need closer review because the deduction can become more limited.
 
+## A useful example of why this gets confusing
+Two business owners may both hear that the QBI deduction exists and assume the result is similar. But if one owner has lower income and a straightforward pass-through profile while the other is in a higher-income SSTB situation, the practical answer can look very different. That is why “who qualifies” is not a yes-or-no shortcut.
+
 ## Quick qualification checklist
 Before diving into advanced QBI math, ask:
 
@@ -88,6 +91,9 @@ To screen QBI eligibility, ask:
 
 ## Why this page matters
 Most taxpayers do not need more theory here. They need a faster way to decide whether they are even in the likely-qualification bucket before moving on to the calculation phase.
+
+## Better next step after the screen
+If the taxpayer appears to be in the likely-qualification bucket, the next move is not to guess the deduction. The next move is to review the calculation path and the income-limit rules so the eligibility screen turns into a real planning answer.
 
 ## FAQ
 ## Who usually qualifies for QBI?

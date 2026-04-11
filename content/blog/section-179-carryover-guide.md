@@ -55,6 +55,11 @@ The most practical reason is that:
 
 That is why Section 179 planning should not stop at “Can I elect it?”
 
+## A simple business example
+Assume a business elects Section 179 on qualifying equipment late in the year because the owner expects a large deduction. If the business-income limitation prevents full use of the elected amount, the planning conversation changes from “How big is the deduction?” to “How much can actually be used now and what carries forward?”
+
+That is the exact type of situation that makes the carryover concept matter.
+
 ## Common mistake
 People focus on the election and ignore the absorption capacity of the current year.
 
@@ -80,6 +85,13 @@ If a taxpayer elects Section 179 but the current year cannot absorb the full amo
 
 ## Why this matters for planning
 A Section 179 election is only as good as the taxpayer's ability to use it. That is why capacity planning matters as much as qualification.
+
+## Better year-end question
+Before electing Section 179, the stronger question is:
+
+- do I have enough current-year business-income capacity for this deduction to be fully useful now?
+
+That one question often prevents the most common planning mistake.
 
 ## FAQ
 ## What is a Section 179 carryover?

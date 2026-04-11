@@ -82,6 +82,18 @@ Start with the family goals, the asset mix, and the liquidity picture. Then deci
 ## Common planning trap
 The trap is chasing one “best” tactic instead of building a coordinated strategy that still works when control, liquidity, and family-governance issues are layered in.
 
+## A stronger family-level review
+Families should pressure-test a strategy by asking:
+
+- does this still work if the asset mix changes?
+- does it preserve enough control for the family?
+- does it create liquidity problems elsewhere?
+
+That is how estate strategy moves from abstract tax talk to real planning quality.
+
+## Why this page should be treated as an overview, not a product pitch
+Estate tax strategy almost never reduces to one tool. The real value of an overview page is helping the reader see the moving parts together before choosing which strategy families or advisors should explore more deeply.
+
 ## FAQ
 ## Is there one best estate tax strategy?
 Usually no. The best answer is usually a coordinated structure, not a single tactic.

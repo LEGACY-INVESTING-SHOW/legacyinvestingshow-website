@@ -73,6 +73,18 @@ It is weaker when the donor wants maximum simplicity and already knows exactly w
 ## Worked timing example
 If a donor wants the deduction in the current year but does not want to rush the final grant decisions, a donor advised fund can separate those two decisions cleanly. That is usually the main reason appreciated stock and DAFs get discussed together.
 
+## What the donor should compare before moving
+A useful pre-decision screen is:
+
+1. Would I otherwise sell this stock?
+2. Does the timing of the contribution matter this year?
+3. Do I actually need the later grant flexibility?
+
+Those questions help clarify whether the DAF structure is creating genuine value or just adding complexity.
+
+## Why appreciated stock changes donor behavior
+This strategy often matters because appreciated stock gives the donor a reason to think differently about both the tax year and the giving vehicle. The asset itself creates a planning question that ordinary cash giving often does not.
+
 ## When direct giving may still be better
 Direct giving can still be better when the recipient charity is already clear, the donation is simple, and the extra timing flexibility of a DAF adds very little value.
 

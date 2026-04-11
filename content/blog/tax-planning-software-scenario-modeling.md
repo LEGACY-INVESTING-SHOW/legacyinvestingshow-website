@@ -53,6 +53,15 @@ At a practical level, scenario modeling means the tool can compare multiple poss
 
 That is what separates decision software from reporting software.
 
+## Worked use case
+Imagine a taxpayer deciding between:
+
+- recognizing income this year or next year
+- making one contribution level or another
+- converting a smaller Roth amount or a larger one
+
+If the software can model those paths clearly, it is operating as true scenario software. If it cannot, it may still be a useful planning tool, but the scenario-modeling claim is weaker than the marketing suggests.
+
 ## Who cares most about this feature
 Scenario modeling matters most for:
 
@@ -74,6 +83,9 @@ If scenario modeling is the main buying criterion, compare:
 - year-over-year planning support
 
 Those dimensions matter more than generic feature-count marketing.
+
+## When this feature is overkill
+Scenario modeling is not essential for every filer. It is often overkill when the return is simple and the taxpayer does not face repeated, future-facing tax choices during the year.
 
 ## Scenario-modeling buyer checklist
 If scenario modeling is the core reason you are shopping, verify:

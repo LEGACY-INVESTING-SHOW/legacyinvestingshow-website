@@ -61,6 +61,15 @@ An S corp changes the structure by splitting owner economics between:
 
 That can create savings in some cases, but only if the salary is defensible and the remaining structure costs do not eat the benefit.
 
+## A useful comparison example
+Take two owners with the same headline profit.
+
+If Owner A has stable profit, clean books, and enough margin to support payroll and compliance, the S corp path may deserve serious modeling.
+
+If Owner B has inconsistent profit, weak bookkeeping, and no tolerance for admin friction, Schedule C simplicity may still be the better economic answer even if the tax spread looks attractive on paper.
+
+That is why the entity choice is partly a numbers question and partly an operating-discipline question.
+
 ## Why accountants care about this query
 For accountants, this is a high-frequency advisory question. The client usually wants:
 
@@ -92,6 +101,15 @@ The filing and payroll burden matters.
 
 ## Worked Example: Advisory Screen
 For accountants, Schedule C versus S corp is often a screening question before detailed modeling begins. If the client has low or inconsistent profit, simplicity may still win. If the client has sustained profit and can support a reasonable salary, the S corp path may deserve closer analysis. That is why this page is most useful as a decision framework, not just a slogan about tax savings.
+
+## What accountants should pressure-test
+Before recommending S corp treatment, accountants should pressure-test:
+
+- the salary assumption
+- the consistency of the profit stream
+- whether the client will actually maintain the structure correctly
+
+If any of those are weak, the “savings” may not be durable.
 
 ## FAQ
 ## Is S corp always better than Schedule C?

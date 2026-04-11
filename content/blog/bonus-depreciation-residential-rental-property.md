@@ -86,6 +86,9 @@ That sequence prevents the biggest mistake, which is starting with the accelerat
 ## Worked investor lens
 A better way to think about this topic is to separate the building from any shorter-life components that may be identified through a real analysis. That is why investors should treat bonus-depreciation discussions as a classification question first, not a slogan.
 
+## Why this still matters even when the headline sounds simple
+Many investors hear “bonus depreciation” and assume the entire property benefit is obvious. In reality, the real value is in understanding which parts of the property create the acceleration conversation and whether the taxpayer’s current-year plan actually benefits from that timing.
+
 ## When this strategy deserves a closer look
 This topic matters most when the investor is already evaluating cost segregation, accelerated deductions, and the tradeoff between bigger early write-offs and later basis effects.
 

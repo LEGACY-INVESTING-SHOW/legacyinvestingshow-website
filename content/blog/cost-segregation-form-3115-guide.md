@@ -79,6 +79,9 @@ Form 3115 matters because it is often the bridge between a corrected depreciatio
 ## Questions to bring to a CPA
 Ask whether the property facts support the correction, whether a method-change framework is really needed, and whether the expected catch-up result is meaningful enough to justify the work.
 
+## Why investors should not skip the process details
+The point of this page is not that the form itself is exciting. The point is that the compliance process is often what stands between a real catch-up depreciation result and a sloppy strategy that never gets implemented cleanly.
+
 ## FAQ
 ## Does cost segregation always require Form 3115?
 Not always. It is most relevant when the depreciation treatment is being corrected as part of a method-change framework.

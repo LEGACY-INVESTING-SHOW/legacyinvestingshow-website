@@ -66,6 +66,13 @@ Instead of asking only, “Did I spend money on the property?” ask:
 
 Those questions usually lead to a cleaner classification discussion.
 
+## A more concrete landlord example
+Imagine two landlords each spend $9,000.
+
+Landlord A uses the money to fix several isolated plumbing and drywall issues caused by tenant damage. Landlord B uses the money as one line item inside a broader kitchen refresh that materially changes how the space presents and functions.
+
+Those projects may end up in different tax conversations even though the check size is similar. That is why landlords should focus less on the invoice amount and more on the nature of the work.
+
 ## Worked Example: Year-End Labeling Matters
 If a landlord labels every contractor invoice as “repairs” without preserving scope, the return may be off before the CPA even begins. Better bookkeeping during the year often makes the repairs-versus-improvements decision easier than trying to reconstruct the facts months later.
 
@@ -90,6 +97,16 @@ This workflow reduces ambiguity later and makes the classification decision more
 
 ## Why timing is the real issue
 Many landlords assume the repairs-versus-improvements question is just technical tax jargon. In reality, it is mainly a timing issue. The classification changes when the deduction or recovery happens, which is why it affects cash flow and expectations more than people think.
+
+## When to slow down and get advice
+This is worth a slower review when:
+
+- the project is large
+- multiple building systems were touched
+- the work was part of a broader repositioning plan
+- the bookkeeping descriptions are vague
+
+That is when a rushed “just write it off” answer can create the most cleanup later.
 
 ## FAQ
 ## Are repairs treated the same as improvements?
