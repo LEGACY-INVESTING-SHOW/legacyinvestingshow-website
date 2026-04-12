@@ -9,7 +9,12 @@ keywords:
   - legacy investing show transformation
   - airbnb arbitrage results
 author: Preston Seo
+authorTitle: 'Founder, Legacy Investing Show'
+authorCredentials: Real estate investor and financial educator
 date: '2026-03-01'
+modifiedDate: '2026-03-11'
+category: Success Stories
+canonical: 'https://www.legacyinvestingshow.com/blog/before-and-after-transformations'
 wordCount: '2368'
 readingTime: 12 min read
 ---

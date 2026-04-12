@@ -1,0 +1,1279 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - navigation "Main navigation" [ref=e4]:
+      - generic [ref=e5]:
+        - link "Legacy Investing Show Logo Legacy Investing Show" [ref=e6] [cursor=pointer]:
+          - /url: /
+          - img "Legacy Investing Show Logo" [ref=e7]
+          - generic [ref=e8]: Legacy Investing Show
+        - generic [ref=e9]:
+          - link "Home" [ref=e10] [cursor=pointer]:
+            - /url: /
+          - link "About" [ref=e11] [cursor=pointer]:
+            - /url: /about
+          - link "Tax Strategies" [ref=e12] [cursor=pointer]:
+            - /url: /tax-strategies
+          - link "Compare" [ref=e13] [cursor=pointer]:
+            - /url: /compare
+          - link "Tools" [ref=e14] [cursor=pointer]:
+            - /url: /tools
+          - link "Worksheets" [ref=e15] [cursor=pointer]:
+            - /url: /worksheets
+          - link "Blog" [ref=e16] [cursor=pointer]:
+            - /url: /blog
+  - main [ref=e19]:
+    - article [ref=e20]:
+      - navigation "Breadcrumb" [ref=e21]:
+        - list [ref=e22]:
+          - listitem [ref=e23]:
+            - link "Home" [ref=e24] [cursor=pointer]:
+              - /url: /
+            - text: /
+          - listitem [ref=e25]:
+            - link "Blog" [ref=e26] [cursor=pointer]:
+              - /url: /blog
+            - text: /
+          - listitem [ref=e27]:
+            - generic [ref=e28]: "Mia & Jay's Wealth Plan: Achieving Zero Tax Liability with $259,700 in Year-One Savings"
+      - generic [ref=e29]:
+        - generic [ref=e30]:
+          - generic [ref=e31]: Wealth Plan
+          - time [ref=e33]: April 11, 2026
+          - generic [ref=e35]: 19 min read
+        - 'heading "Mia & Jay''s Wealth Plan: Achieving Zero Tax Liability with $259,700 in Year-One Savings" [level=1] [ref=e36]'
+        - generic [ref=e37]:
+          - img "Preston Seo" [ref=e38]
+          - generic [ref=e39]: Preston Seo
+      - 'img "Mia & Jay''s Wealth Plan: Achieving Zero Tax Liability with $259,700 in Year-One Savings" [ref=e42]'
+      - region "Key statistics" [ref=e43]:
+        - generic [ref=e44]:
+          - generic [ref=e45]:
+            - img [ref=e47]
+            - generic [ref=e49]: $90,000
+            - generic [ref=e50]: Current Annual Tax
+          - generic [ref=e51]:
+            - img [ref=e53]
+            - generic [ref=e55]: $259,700
+            - generic [ref=e56]: Year-One Tax Savings
+          - generic [ref=e57]:
+            - img [ref=e59]
+            - generic [ref=e61]: $0
+            - generic [ref=e62]: New Tax Liability
+          - generic [ref=e63]:
+            - img [ref=e65]
+            - generic [ref=e67]: $169,700
+            - generic [ref=e68]: Excess for Wealth Building
+          - generic [ref=e69]:
+            - img [ref=e71]
+            - generic [ref=e74]: Multi-Property
+            - generic [ref=e75]: STR Portfolio Target
+          - generic [ref=e76]:
+            - img [ref=e78]
+            - generic [ref=e80]: Immediate
+            - generic [ref=e81]: Wealth Acceleration
+      - navigation "Table of contents" [ref=e82]:
+        - paragraph [ref=e83]: Contents
+        - list [ref=e84]:
+          - listitem [ref=e85]:
+            - 'link "Mia & Jay''s Financial Overview: The Path to Zero Tax" [ref=e86] [cursor=pointer]':
+              - /url: "#mia-amp-jay-39-s-financial-overview-the-path-to-zero-tax"
+          - listitem [ref=e87]:
+            - 'link "Current Tax Burden: The $90,000 Problem" [ref=e88] [cursor=pointer]':
+              - /url: "#current-tax-burden-the-90-000-problem"
+          - listitem [ref=e89]:
+            - 'link "Executive Summary: The $259,700 Tax Transformation" [ref=e90] [cursor=pointer]':
+              - /url: "#executive-summary-the-259-700-tax-transformation"
+          - listitem [ref=e91]:
+            - 'link "Strategy 1: Real Estate Professional Status (REP) — The Master Key" [ref=e92] [cursor=pointer]':
+              - /url: "#strategy-1-real-estate-professional-status-rep-the-master-key"
+          - listitem [ref=e93]:
+            - 'link "Qualifying for REP Status: The 750-Hour Rule" [ref=e94] [cursor=pointer]':
+              - /url: "#qualifying-for-rep-status-the-750-hour-rule"
+          - listitem [ref=e95]:
+            - link "Mia and Jay's REP Qualification Strategy" [ref=e96] [cursor=pointer]:
+              - /url: "#mia-and-jay-39-s-rep-qualification-strategy"
+          - listitem [ref=e97]:
+            - link "Material Participation per Property" [ref=e98] [cursor=pointer]:
+              - /url: "#material-participation-per-property"
+          - listitem [ref=e99]:
+            - 'link "Strategy 2: The Short-Term Rental (STR) Loophole — Immediate Year-One Access" [ref=e100] [cursor=pointer]':
+              - /url: "#strategy-2-the-short-term-rental-str-loophole-immediate-year-one-access"
+          - listitem [ref=e101]:
+            - link "How the STR Loophole Works" [ref=e102] [cursor=pointer]:
+              - /url: "#how-the-str-loophole-works"
+          - listitem [ref=e103]:
+            - link "Average Stay Calculation" [ref=e104] [cursor=pointer]:
+              - /url: "#average-stay-calculation"
+          - listitem [ref=e105]:
+            - link "Material Participation for STR Loophole" [ref=e106] [cursor=pointer]:
+              - /url: "#material-participation-for-str-loophole"
+          - listitem [ref=e107]:
+            - 'link "Strategy 3: Cost Segregation — The Depreciation Acceleration Engine" [ref=e108] [cursor=pointer]':
+              - /url: "#strategy-3-cost-segregation-the-depreciation-acceleration-engine"
+          - listitem [ref=e109]:
+            - link "Traditional Depreciation vs. Cost Segregation" [ref=e110] [cursor=pointer]:
+              - /url: "#traditional-depreciation-vs-cost-segregation"
+          - listitem [ref=e111]:
+            - link "Cost Segregation Study Process" [ref=e112] [cursor=pointer]:
+              - /url: "#cost-segregation-study-process"
+          - listitem [ref=e113]:
+            - link "Multi-Property Cost Segregation Impact" [ref=e114] [cursor=pointer]:
+              - /url: "#multi-property-cost-segregation-impact"
+          - listitem [ref=e115]:
+            - 'link "Strategy 4: Multi-Property STR Portfolio Structure" [ref=e116] [cursor=pointer]':
+              - /url: "#strategy-4-multi-property-str-portfolio-structure"
+          - listitem [ref=e117]:
+            - 'link "Property #1: Urban Core Acquisition" [ref=e118] [cursor=pointer]':
+              - /url: "#property-1-urban-core-acquisition"
+          - listitem [ref=e119]:
+            - 'link "Property #2: Coastal/Vacation Market" [ref=e120] [cursor=pointer]':
+              - /url: "#property-2-coastal-vacation-market"
+          - listitem [ref=e121]:
+            - 'link "Property #3: Suburban Business Traveler" [ref=e122] [cursor=pointer]':
+              - /url: "#property-3-suburban-business-traveler"
+          - listitem [ref=e123]:
+            - link "Combined Portfolio Impact" [ref=e124] [cursor=pointer]:
+              - /url: "#combined-portfolio-impact"
+          - listitem [ref=e125]:
+            - 'link "Strategy 5: Business Entity Structure and Operating Deductions" [ref=e126] [cursor=pointer]':
+              - /url: "#strategy-5-business-entity-structure-and-operating-deductions"
+          - listitem [ref=e127]:
+            - link "S-Corporation Benefits" [ref=e128] [cursor=pointer]:
+              - /url: "#s-corporation-benefits"
+          - listitem [ref=e129]:
+            - link "Operating Expense Optimization" [ref=e130] [cursor=pointer]:
+              - /url: "#operating-expense-optimization"
+          - listitem [ref=e131]:
+            - link "Section 179 and Bonus Depreciation for Business Assets" [ref=e132] [cursor=pointer]:
+              - /url: "#section-179-and-bonus-depreciation-for-business-assets"
+          - listitem [ref=e133]:
+            - link "The Net Operating Loss (NOL) Carryforward Strategy" [ref=e134] [cursor=pointer]:
+              - /url: "#the-net-operating-loss-nol-carryforward-strategy"
+          - listitem [ref=e135]:
+            - link "How NOL Carryforwards Work" [ref=e136] [cursor=pointer]:
+              - /url: "#how-nol-carryforwards-work"
+          - listitem [ref=e137]:
+            - link "Tax Benefit Compounding" [ref=e138] [cursor=pointer]:
+              - /url: "#tax-benefit-compounding"
+          - listitem [ref=e139]:
+            - link "Massachusetts-Specific Tax Considerations" [ref=e140] [cursor=pointer]:
+              - /url: "#massachusetts-specific-tax-considerations"
+          - listitem [ref=e141]:
+            - link "Massachusetts State Tax Structure" [ref=e142] [cursor=pointer]:
+              - /url: "#massachusetts-state-tax-structure"
+          - listitem [ref=e143]:
+            - link "Massachusetts Short-Term Rental Regulations" [ref=e144] [cursor=pointer]:
+              - /url: "#massachusetts-short-term-rental-regulations"
+          - listitem [ref=e145]:
+            - link "Massachusetts Estate Tax Planning" [ref=e146] [cursor=pointer]:
+              - /url: "#massachusetts-estate-tax-planning"
+          - listitem [ref=e147]:
+            - 'link "12-Month Execution Timeline: From Tax Burden to Zero" [ref=e148] [cursor=pointer]':
+              - /url: "#12-month-execution-timeline-from-tax-burden-to-zero"
+          - listitem [ref=e149]:
+            - 'link "Year-One Results: The $259,700 Transformation" [ref=e150] [cursor=pointer]':
+              - /url: "#year-one-results-the-259-700-transformation"
+          - listitem [ref=e151]:
+            - link "Tax Impact Summary" [ref=e152] [cursor=pointer]:
+              - /url: "#tax-impact-summary"
+          - listitem [ref=e153]:
+            - link "Cash Flow and Wealth Building" [ref=e154] [cursor=pointer]:
+              - /url: "#cash-flow-and-wealth-building"
+          - listitem [ref=e155]:
+            - 'link "Key Takeaways: Lessons from Mia and Jay''s Zero-Tax Strategy" [ref=e156] [cursor=pointer]':
+              - /url: "#key-takeaways-lessons-from-mia-and-jay-39-s-zero-tax-strategy"
+          - listitem [ref=e157]:
+            - link "1. Complete Tax Elimination Is Achievable (Legally)" [ref=e158] [cursor=pointer]:
+              - /url: "#1-complete-tax-elimination-is-achievable-legally"
+          - listitem [ref=e159]:
+            - link "2. Time Value of Money Makes Immediate Action Critical" [ref=e160] [cursor=pointer]:
+              - /url: "#2-time-value-of-money-makes-immediate-action-critical"
+          - listitem [ref=e161]:
+            - link "3. Documentation Separates Success from Failure" [ref=e162] [cursor=pointer]:
+              - /url: "#3-documentation-separates-success-from-failure"
+          - listitem [ref=e163]:
+            - link "4. Multi-Property Portfolios Compound Benefits" [ref=e164] [cursor=pointer]:
+              - /url: "#4-multi-property-portfolios-compound-benefits"
+          - listitem [ref=e165]:
+            - link "5. Excess Deductions Are an Asset" [ref=e166] [cursor=pointer]:
+              - /url: "#5-excess-deductions-are-an-asset"
+          - listitem [ref=e167]:
+            - link "Frequently Asked Questions About Zero Tax Strategies" [ref=e168] [cursor=pointer]:
+              - /url: "#frequently-asked-questions-about-zero-tax-strategies"
+          - listitem [ref=e169]:
+            - link "Is this legal? Will I get audited?" [ref=e170] [cursor=pointer]:
+              - /url: "#is-this-legal-will-i-get-audited"
+          - listitem [ref=e171]:
+            - link "What happens when bonus depreciation phases down?" [ref=e172] [cursor=pointer]:
+              - /url: "#what-happens-when-bonus-depreciation-phases-down"
+          - listitem [ref=e173]:
+            - link "Can I do this with existing properties, or only new acquisitions?" [ref=e174] [cursor=pointer]:
+              - /url: "#can-i-do-this-with-existing-properties-or-only-new-acquisitions"
+          - listitem [ref=e175]:
+            - link "How does this affect my ability to sell properties?" [ref=e176] [cursor=pointer]:
+              - /url: "#how-does-this-affect-my-ability-to-sell-properties"
+          - listitem [ref=e177]:
+            - link "What if I don't have time to manage properties myself?" [ref=e178] [cursor=pointer]:
+              - /url: "#what-if-i-don-39-t-have-time-to-manage-properties-myself"
+          - listitem [ref=e179]:
+            - link "Welcome to Zero Tax Liability" [ref=e180] [cursor=pointer]:
+              - /url: "#welcome-to-zero-tax-liability"
+          - listitem [ref=e181]:
+            - link "The Wealth Acceleration Impact" [ref=e182] [cursor=pointer]:
+              - /url: "#the-wealth-acceleration-impact"
+          - listitem [ref=e183]:
+            - link "The Path Forward" [ref=e184] [cursor=pointer]:
+              - /url: "#the-path-forward"
+      - generic [ref=e185]:
+        - generic [ref=e186]:
+          - blockquote [ref=e187]:
+            - paragraph [ref=e188]:
+              - strong [ref=e189]: "Disclaimer:"
+              - text: This content is for educational and informational purposes only. It does not constitute financial, tax, or legal advice. Every individual's financial situation is unique — consult a qualified professional before making any financial decisions. The strategies discussed are based on a personalized plan and may not be suitable for everyone.
+          - 'heading "Mia & Jay''s Financial Overview: The Path to Zero Tax" [level=2] [ref=e190]'
+          - paragraph [ref=e191]:
+            - text: Mia and Jay's wealth plan represents the
+            - strong [ref=e192]: pinnacle of tax optimization strategy
+            - text: — a comprehensive approach that doesn't just reduce taxes, but
+            - strong [ref=e193]: completely eliminates $90,000 in annual federal and Massachusetts tax liability
+            - text: while generating $169,700 in excess wealth-building capacity.
+          - paragraph [ref=e194]:
+            - text: This isn't theoretical. The strategies outlined are
+            - strong [ref=e195]: IRS-recognized, court-tested mechanisms
+            - text: that high-income real estate investors have used for decades. The difference between paying $90,000 annually in taxes and redirecting that capital to wealth building is simply
+            - strong [ref=e196]: knowledge and execution
+            - text: .
+          - 'heading "Current Tax Burden: The $90,000 Problem" [level=3] [ref=e197]'
+          - table [ref=e198]:
+            - rowgroup [ref=e199]:
+              - row "Tax Type Annual Liability Primary Source" [ref=e200]:
+                - columnheader "Tax Type" [ref=e201]
+                - columnheader "Annual Liability" [ref=e202]
+                - columnheader "Primary Source" [ref=e203]
+            - rowgroup [ref=e204]:
+              - row "Federal Income Tax $65,000+ W-2 and business income" [ref=e205]:
+                - cell "Federal Income Tax" [ref=e206]
+                - cell "$65,000+" [ref=e207]
+                - cell "W-2 and business income" [ref=e208]
+              - row "Massachusetts State Tax $15,000+ 5% flat rate on income" [ref=e209]:
+                - cell "Massachusetts State Tax" [ref=e210]
+                - cell "$15,000+" [ref=e211]
+                - cell "5% flat rate on income" [ref=e212]
+              - row "Investment Taxes $5,000+ Dividends, interest, gains" [ref=e213]:
+                - cell "Investment Taxes" [ref=e214]
+                - cell "$5,000+" [ref=e215]
+                - cell "Dividends, interest, gains" [ref=e216]
+              - row "Self-Employment Tax $5,000+ 1099 and side income" [ref=e217]:
+                - cell "Self-Employment Tax" [ref=e218]
+                - cell "$5,000+" [ref=e219]
+                - cell "1099 and side income" [ref=e220]
+              - row "Total Annual Tax $90,000 Wealth destruction" [ref=e221]:
+                - cell "Total Annual Tax" [ref=e222]:
+                  - strong [ref=e223]: Total Annual Tax
+                - cell "$90,000" [ref=e224]:
+                  - strong [ref=e225]: $90,000
+                - cell "Wealth destruction" [ref=e226]:
+                  - strong [ref=e227]: Wealth destruction
+          - paragraph [ref=e228]:
+            - text: For every $3 earned, nearly $1 disappears to taxation. Over a decade, this represents
+            - strong [ref=e229]: $900,000 in lost capital
+            - text: — money that could have compounded in real estate, Bitcoin, or business investments.
+          - 'heading "Executive Summary: The $259,700 Tax Transformation" [level=2] [ref=e230]'
+          - paragraph [ref=e231]:
+            - text: Mia and Jay's wealth plan targets
+            - strong [ref=e232]: complete tax elimination through strategic deduction generation
+            - text: ":"
+          - paragraph [ref=e233]:
+            - strong [ref=e234]: "Current State:"
+          - list [ref=e235]:
+            - listitem [ref=e236]: "Annual tax liability: $90,000"
+            - listitem [ref=e237]: "After-tax investable capital: Limited"
+            - listitem [ref=e238]: "Wealth-building velocity: Constrained"
+          - paragraph [ref=e239]:
+            - strong [ref=e240]: "Planned State (Year One):"
+          - list [ref=e241]:
+            - listitem [ref=e242]: "Generated deductions: $259,700"
+            - listitem [ref=e243]: "Tax liability: $0 (fully offset)"
+            - listitem [ref=e244]: "Excess deduction capacity: $169,700 (carries forward)"
+            - listitem [ref=e245]:
+              - text: "Wealth-building capacity:"
+              - strong [ref=e246]: Maximized
+          - paragraph [ref=e247]:
+            - text: This isn't tax evasion (illegal) — it's
+            - strong [ref=e248]: tax optimization
+            - text: (legal, ethical, and IRS-sanctioned). The government specifically created these incentives to encourage real estate investment, business formation, and retirement savings.
+          - 'heading "Strategy 1: Real Estate Professional Status (REP) — The Master Key" [level=2] [ref=e249]'
+          - paragraph [ref=e250]:
+            - strong [ref=e251]: Real Estate Professional Status (REP)
+            - text: is the master key that unlocks unlimited passive loss utilization. Without it, rental real estate losses are limited to $25,000 annually (phasing out at $100,000-$150,000 income). With REP,
+            - strong [ref=e252]: losses can offset any income type without limit
+            - text: .
+          - 'heading "Qualifying for REP Status: The 750-Hour Rule" [level=3] [ref=e253]'
+          - paragraph [ref=e254]:
+            - strong [ref=e255]: "IRS Requirements (Section 469):"
+          - list [ref=e256]:
+            - listitem [ref=e257]:
+              - strong [ref=e258]: 750+ hours annually
+              - text: in real estate trades or businesses
+            - listitem [ref=e259]:
+              - strong [ref=e260]: More than 50% of total working time
+              - text: in real estate activities
+            - listitem [ref=e261]:
+              - strong [ref=e262]: Material participation
+              - text: in each rental property (or elect grouping)
+          - paragraph [ref=e263]:
+            - strong [ref=e264]: "What Counts as Real Estate Activity:"
+          - list [ref=e265]:
+            - listitem [ref=e266]: Property acquisition and development
+            - listitem [ref=e267]: Construction and reconstruction
+            - listitem [ref=e268]: Rental management and operations
+            - listitem [ref=e269]: Leasing and tenant relations
+            - listitem [ref=e270]: Property management (own properties only)
+            - listitem [ref=e271]: Real estate brokerage (if licensed)
+          - paragraph [ref=e272]:
+            - strong [ref=e273]: "What Does NOT Count:"
+          - list [ref=e274]:
+            - listitem [ref=e275]: Investing as a limited partner (passive)
+            - listitem [ref=e276]: Real estate research without investment
+            - listitem [ref=e277]: Education and training (unless implementing)
+          - heading "Mia and Jay's REP Qualification Strategy" [level=3] [ref=e278]
+          - paragraph [ref=e279]:
+            - strong [ref=e280]: "Real Estate Activities to Document:"
+          - list [ref=e281]:
+            - listitem [ref=e282]:
+              - strong [ref=e283]: Property acquisition research
+              - text: ": 150 hours/year (market analysis, underwriting, due diligence)"
+            - listitem [ref=e284]:
+              - strong [ref=e285]: Renovation oversight
+              - text: ": 200 hours/year (contractor management, design decisions, inspections)"
+            - listitem [ref=e286]:
+              - strong [ref=e287]: Property management
+              - text: ": 300 hours/year (tenant screening, maintenance coordination, financial review)"
+            - listitem [ref=e288]:
+              - strong [ref=e289]: Strategic planning
+              - text: ": 100+ hours/year (portfolio optimization, tax planning, entity management)"
+          - paragraph [ref=e290]:
+            - strong [ref=e291]: "Total: 750+ hours annually"
+            - text: — meeting the requirement with substantial cushion.
+          - heading "Material Participation per Property" [level=3] [ref=e292]
+          - paragraph [ref=e293]:
+            - text: For each rental property, Mia and Jay must meet
+            - strong [ref=e294]: one of seven material participation tests
+            - text: ":"
+          - list [ref=e295]:
+            - listitem [ref=e296]:
+              - strong [ref=e297]: 500+ hours
+              - text: in the specific property
+            - listitem [ref=e298]:
+              - strong [ref=e299]: Substantially all participation
+              - text: (more than anyone else)
+            - listitem [ref=e300]:
+              - strong [ref=e301]: 100+ hours
+              - text: and more than any other individual
+            - listitem [ref=e302]:
+              - strong [ref=e303]: Significant participation activity
+              - text: (100+ hours, aggregate test)
+            - listitem [ref=e304]:
+              - strong [ref=e305]: Prior year participation
+              - text: (5 of 10 years)
+            - listitem [ref=e306]:
+              - strong [ref=e307]: Personal service activity
+              - text: (3 prior years)
+            - listitem [ref=e308]:
+              - strong [ref=e309]: Facts and circumstances
+              - text: (continuous involvement)
+          - paragraph [ref=e310]:
+            - strong [ref=e311]: The "100+ hours and more than anyone else" test
+            - text: (option 3) is most practical for STR operators who personally manage listings but use cleaners and assistants.
+          - 'heading "Strategy 2: The Short-Term Rental (STR) Loophole — Immediate Year-One Access" [level=2] [ref=e312]'
+          - paragraph [ref=e313]:
+            - text: While building toward full REP status, Mia and Jay leverage the
+            - strong [ref=e314]: Short-Term Rental (STR) Loophole
+            - text: for immediate tax benefits.
+          - heading "How the STR Loophole Works" [level=3] [ref=e315]
+          - paragraph [ref=e316]:
+            - strong [ref=e317]: "Section 469 Exception for Short-Term Rentals:"
+          - list [ref=e318]:
+            - listitem [ref=e319]:
+              - text: Properties rented for
+              - strong [ref=e320]: average stays of 7 days or fewer
+              - text: are NOT rental activities
+            - listitem [ref=e321]:
+              - text: Instead classified as
+              - strong [ref=e322]: non-passive trade or business
+            - listitem [ref=e323]:
+              - text: Losses treated as
+              - strong [ref=e324]: ordinary business losses
+              - text: (not passive)
+            - listitem [ref=e325]:
+              - strong [ref=e326]: No income limitations
+              - text: on loss utilization
+          - paragraph [ref=e327]:
+            - strong [ref=e328]: "Comparison:"
+          - table [ref=e329]:
+            - rowgroup [ref=e330]:
+              - row "Classification Loss Type Offset Limitations REP Status Required" [ref=e331]:
+                - columnheader "Classification" [ref=e332]
+                - columnheader "Loss Type" [ref=e333]
+                - columnheader "Offset Limitations" [ref=e334]
+                - columnheader "REP Status Required" [ref=e335]
+            - rowgroup [ref=e336]:
+              - row "Long-Term Rental (>30 days) Passive $25,000/year, phases out $100K-$150K Yes for unlimited" [ref=e337]:
+                - cell "Long-Term Rental (>30 days)" [ref=e338]
+                - cell "Passive" [ref=e339]
+                - cell "$25,000/year, phases out $100K-$150K" [ref=e340]
+                - cell "Yes for unlimited" [ref=e341]
+              - row "Short-Term Rental (<7 days avg) Non-passive No limitations No" [ref=e342]:
+                - cell "Short-Term Rental (<7 days avg)" [ref=e343]
+                - cell "Non-passive" [ref=e344]
+                - cell "No limitations" [ref=e345]
+                - cell "No" [ref=e346]
+          - heading "Average Stay Calculation" [level=3] [ref=e347]
+          - paragraph [ref=e348]:
+            - strong [ref=e349]: "IRS Calculation Method:"
+          - list [ref=e350]:
+            - listitem [ref=e351]: Total rental days ÷ number of rentals = average stay
+            - listitem [ref=e352]:
+              - text: Must be
+              - strong [ref=e353]: 7.0 days or fewer
+              - text: to qualify
+          - paragraph [ref=e354]:
+            - strong [ref=e355]: "Example:"
+          - list [ref=e356]:
+            - listitem [ref=e357]: 365 rental days ÷ 52 rentals = 7.0 days average ✓
+            - listitem [ref=e358]: 365 rental days ÷ 60 rentals = 6.1 days average ✓
+            - listitem [ref=e359]: 365 rental days ÷ 40 rentals = 9.1 days average ✗ (doesn't qualify)
+          - paragraph [ref=e360]:
+            - strong [ref=e361]: "Mia and Jay's Target:"
+            - text: 60-100 annual rentals per property (2-6 day average stays)
+          - heading "Material Participation for STR Loophole" [level=3] [ref=e362]
+          - paragraph [ref=e363]:
+            - text: For STR properties, Mia and Jay must meet
+            - strong [ref=e364]: material participation standards
+            - text: "(100+ hours and more than anyone else per property):"
+          - paragraph [ref=e365]:
+            - strong [ref=e366]: "Documented Activities:"
+          - list [ref=e367]:
+            - listitem [ref=e368]: Guest communication and booking management
+            - listitem [ref=e369]: Pricing decisions and revenue optimization
+            - listitem [ref=e370]: Cleaning coordination and quality control
+            - listitem [ref=e371]: Maintenance oversight and vendor management
+            - listitem [ref=e372]: Listing optimization and marketing decisions
+            - listitem [ref=e373]: Guest experience and review management
+          - paragraph [ref=e374]:
+            - strong [ref=e375]: "Tools for Documentation:"
+          - list [ref=e376]:
+            - listitem [ref=e377]:
+              - strong [ref=e378]: Google Sheets time logs
+              - text: — daily activity recording
+            - listitem [ref=e379]:
+              - strong [ref=e380]: Hospitable messaging timestamps
+              - text: — automated guest communication records
+            - listitem [ref=e381]:
+              - strong [ref=e382]: Calendar apps
+              - text: — scheduled property visits and calls
+            - listitem [ref=e383]:
+              - strong [ref=e384]: Expense receipts
+              - text: — mileage, supplies, professional services
+          - 'heading "Strategy 3: Cost Segregation — The Depreciation Acceleration Engine" [level=2] [ref=e385]'
+          - paragraph [ref=e386]:
+            - strong [ref=e387]: Cost segregation
+            - text: is the technical engine that generates the massive first-year deductions powering Mia and Jay's zero-tax strategy.
+          - heading "Traditional Depreciation vs. Cost Segregation" [level=3] [ref=e388]
+          - paragraph [ref=e389]:
+            - strong [ref=e390]: "Straight-Line Depreciation (27.5 years):"
+          - list [ref=e391]:
+            - listitem [ref=e392]: $500,000 property ÷ 27.5 years = $18,182/year
+            - listitem [ref=e393]: Boring, slow, minimal annual impact
+          - paragraph [ref=e394]:
+            - strong [ref=e395]: "Cost Segregation + Bonus Depreciation:"
+          - list [ref=e396]:
+            - listitem [ref=e397]:
+              - strong [ref=e398]: 5-year property
+              - text: "(25% of value): $125,000 × 80% bonus = $100,000 year one"
+            - listitem [ref=e399]:
+              - strong [ref=e400]: 7-year property
+              - text: "(5% of value): $25,000 × 80% bonus = $20,000 year one"
+            - listitem [ref=e401]:
+              - strong [ref=e402]: Remaining 27.5-year
+              - text: ": $350,000 ÷ 27.5 = $12,727/year"
+            - listitem [ref=e403]:
+              - strong [ref=e404]: Total Year One
+              - text: ": $132,727 vs. $18,182 (7.3× acceleration)"
+          - heading "Cost Segregation Study Process" [level=3] [ref=e405]
+          - paragraph [ref=e406]:
+            - strong [ref=e407]: "Phase 1: Engineering Analysis (Week 1-2)"
+          - list [ref=e408]:
+            - listitem [ref=e409]: Licensed engineer inspects property (in-person or remote with photos)
+            - listitem [ref=e410]: Identifies building components by tax life category
+            - listitem [ref=e411]: Review of construction drawings, inspections, photographs
+            - listitem [ref=e412]: Component cost allocation based on industry standards
+          - paragraph [ref=e413]:
+            - strong [ref=e414]: "Phase 2: Report Generation (Week 3-4)"
+          - list [ref=e415]:
+            - listitem [ref=e416]: Detailed asset breakdown with IRS-accepted cost allocations
+            - listitem [ref=e417]: Supporting documentation for audit defense
+            - listitem [ref=e418]: Tax form integration (Form 3115 for catch-up or current year)
+            - listitem [ref=e419]: Professional certification and signature
+          - paragraph [ref=e420]:
+            - strong [ref=e421]: "Phase 3: Tax Integration (Week 4-5)"
+          - list [ref=e422]:
+            - listitem [ref=e423]: CPA implements study findings on tax return
+            - listitem [ref=e424]: Schedule E adjustments for rental properties
+            - listitem [ref=e425]: Form 4562 depreciation schedules updated
+            - listitem [ref=e426]: Carryforward calculations for excess losses
+          - heading "Multi-Property Cost Segregation Impact" [level=3] [ref=e427]
+          - table [ref=e428]:
+            - rowgroup [ref=e429]:
+              - row "Property Value Cost Seg Deduction Year 1 Tax Savings (35%)" [ref=e430]:
+                - columnheader "Property Value" [ref=e431]
+                - columnheader "Cost Seg Deduction" [ref=e432]
+                - columnheader "Year 1 Tax Savings (35%)" [ref=e433]
+            - rowgroup [ref=e434]:
+              - row "$500,000 $132,727 $46,454" [ref=e435]:
+                - cell "$500,000" [ref=e436]
+                - cell "$132,727" [ref=e437]
+                - cell "$46,454" [ref=e438]
+              - row "$600,000 $159,273 $55,746" [ref=e439]:
+                - cell "$600,000" [ref=e440]
+                - cell "$159,273" [ref=e441]
+                - cell "$55,746" [ref=e442]
+              - row "$750,000 $199,091 $69,682" [ref=e443]:
+                - cell "$750,000" [ref=e444]
+                - cell "$199,091" [ref=e445]
+                - cell "$69,682" [ref=e446]
+              - row "$1,850,000 Portfolio $491,091 $171,882" [ref=e447]:
+                - cell "$1,850,000 Portfolio" [ref=e448]:
+                  - strong [ref=e449]: $1,850,000 Portfolio
+                - cell "$491,091" [ref=e450]:
+                  - strong [ref=e451]: $491,091
+                - cell "$171,882" [ref=e452]:
+                  - strong [ref=e453]: $171,882
+          - paragraph [ref=e454]:
+            - text: With three properties, Mia and Jay's
+            - strong [ref=e455]: $491,000 in first-year cost segregation deductions
+            - text: alone nearly covers their $90,000 tax liability. Combined with operating losses and business deductions, complete tax elimination becomes achievable.
+          - 'heading "Strategy 4: Multi-Property STR Portfolio Structure" [level=2] [ref=e456]'
+          - paragraph [ref=e457]:
+            - text: Mia and Jay's plan targets
+            - strong [ref=e458]: three strategically located STR properties
+            - text: to maximize both tax benefits and cash flow.
+          - 'heading "Property #1: Urban Core Acquisition" [level=3] [ref=e459]'
+          - paragraph [ref=e460]:
+            - strong [ref=e461]: "Location Strategy:"
+          - list [ref=e462]:
+            - listitem [ref=e463]: Downtown Boston/Cambridge corridor
+            - listitem [ref=e464]: Walking distance to convention centers, hospitals, universities
+            - listitem [ref=e465]: 300+ nights of potential demand annually
+          - paragraph [ref=e466]:
+            - strong [ref=e467]: "Deal Structure:"
+          - list [ref=e468]:
+            - listitem [ref=e469]: "Purchase price: $600,000"
+            - listitem [ref=e470]: "Down payment: $120,000 (20%)"
+            - listitem [ref=e471]: "Financing: $480,000 DSCR loan at 7.5%"
+            - listitem [ref=e472]: "Cost segregation: $159,273 year-one deduction"
+          - paragraph [ref=e473]:
+            - strong [ref=e474]: "Projected Performance:"
+          - list [ref=e475]:
+            - listitem [ref=e476]: "Gross revenue: $85,000/year"
+            - listitem [ref=e477]: "Operating expenses: $35,000/year"
+            - listitem [ref=e478]: "Debt service: $38,000/year"
+            - listitem [ref=e479]:
+              - strong [ref=e480]: "Net cash flow: $12,000/year"
+            - listitem [ref=e481]:
+              - strong [ref=e482]: "Tax loss (with depreciation): $147,273"
+          - 'heading "Property #2: Coastal/Vacation Market" [level=3] [ref=e483]'
+          - paragraph [ref=e484]:
+            - strong [ref=e485]: "Location Strategy:"
+          - list [ref=e486]:
+            - listitem [ref=e487]: Cape Cod or North Shore beach access
+            - listitem [ref=e488]: Seasonal demand (summer peak, winter steady)
+            - listitem [ref=e489]: Regulation-friendly municipality
+          - paragraph [ref=e490]:
+            - strong [ref=e491]: "Deal Structure:"
+          - list [ref=e492]:
+            - listitem [ref=e493]: "Purchase price: $500,000"
+            - listitem [ref=e494]: "Down payment: $100,000 (20%)"
+            - listitem [ref=e495]: "Financing: $400,000 conventional"
+            - listitem [ref=e496]: "Cost segregation: $132,727 year-one deduction"
+          - paragraph [ref=e497]:
+            - strong [ref=e498]: "Projected Performance:"
+          - list [ref=e499]:
+            - listitem [ref=e500]: "Gross revenue: $65,000/year"
+            - listitem [ref=e501]: "Operating expenses: $28,000/year"
+            - listitem [ref=e502]: "Debt service: $32,000/year"
+            - listitem [ref=e503]:
+              - strong [ref=e504]: "Net cash flow: $5,000/year"
+            - listitem [ref=e505]:
+              - strong [ref=e506]: "Tax loss (with depreciation): $127,727"
+          - 'heading "Property #3: Suburban Business Traveler" [level=3] [ref=e507]'
+          - paragraph [ref=e508]:
+            - strong [ref=e509]: "Location Strategy:"
+          - list [ref=e510]:
+            - listitem [ref=e511]: Near major highway corridors (I-95, I-90)
+            - listitem [ref=e512]: Corporate housing demand from nearby business parks
+            - listitem [ref=e513]: Extended-stay format (week+ bookings)
+          - paragraph [ref=e514]:
+            - strong [ref=e515]: "Deal Structure:"
+          - list [ref=e516]:
+            - listitem [ref=e517]: "Purchase price: $750,000"
+            - listitem [ref=e518]: "Down payment: $150,000 (20%)"
+            - listitem [ref=e519]: "Financing: $600,000 DSCR loan"
+            - listitem [ref=e520]: "Cost segregation: $199,091 year-one deduction"
+          - paragraph [ref=e521]:
+            - strong [ref=e522]: "Projected Performance:"
+          - list [ref=e523]:
+            - listitem [ref=e524]: "Gross revenue: $95,000/year"
+            - listitem [ref=e525]: "Operating expenses: $40,000/year"
+            - listitem [ref=e526]: "Debt service: $48,000/year"
+            - listitem [ref=e527]:
+              - strong [ref=e528]: "Net cash flow: $7,000/year"
+            - listitem [ref=e529]:
+              - strong [ref=e530]: "Tax loss (with depreciation): $192,091"
+          - heading "Combined Portfolio Impact" [level=3] [ref=e531]
+          - table [ref=e532]:
+            - rowgroup [ref=e533]:
+              - row "Metric Property 1 Property 2 Property 3 Total" [ref=e534]:
+                - columnheader "Metric" [ref=e535]
+                - columnheader "Property 1" [ref=e536]
+                - columnheader "Property 2" [ref=e537]
+                - columnheader "Property 3" [ref=e538]
+                - columnheader "Total" [ref=e539]
+            - rowgroup [ref=e540]:
+              - row "Year 1 Cost Seg $159,273 $132,727 $199,091 $491,091" [ref=e541]:
+                - cell "Year 1 Cost Seg" [ref=e542]:
+                  - strong [ref=e543]: Year 1 Cost Seg
+                - cell "$159,273" [ref=e544]
+                - cell "$132,727" [ref=e545]
+                - cell "$199,091" [ref=e546]
+                - cell "$491,091" [ref=e547]:
+                  - strong [ref=e548]: $491,091
+              - row "Operating Loss $23,000 $3,000 $8,000 $34,000" [ref=e549]:
+                - cell "Operating Loss" [ref=e550]:
+                  - strong [ref=e551]: Operating Loss
+                - cell "$23,000" [ref=e552]
+                - cell "$3,000" [ref=e553]
+                - cell "$8,000" [ref=e554]
+                - cell "$34,000" [ref=e555]:
+                  - strong [ref=e556]: $34,000
+              - row "Total Tax Loss $182,273 $135,727 $207,091 $525,091" [ref=e557]:
+                - cell "Total Tax Loss" [ref=e558]:
+                  - strong [ref=e559]: Total Tax Loss
+                - cell "$182,273" [ref=e560]
+                - cell "$135,727" [ref=e561]
+                - cell "$207,091" [ref=e562]
+                - cell "$525,091" [ref=e563]:
+                  - strong [ref=e564]: $525,091
+              - row "Cash Invested $120,000 $100,000 $150,000 $370,000" [ref=e565]:
+                - cell "Cash Invested" [ref=e566]:
+                  - strong [ref=e567]: Cash Invested
+                - cell "$120,000" [ref=e568]
+                - cell "$100,000" [ref=e569]
+                - cell "$150,000" [ref=e570]
+                - cell "$370,000" [ref=e571]:
+                  - strong [ref=e572]: $370,000
+              - row "Net Cash Flow $12,000 $5,000 $7,000 $24,000" [ref=e573]:
+                - cell "Net Cash Flow" [ref=e574]:
+                  - strong [ref=e575]: Net Cash Flow
+                - cell "$12,000" [ref=e576]
+                - cell "$5,000" [ref=e577]
+                - cell "$7,000" [ref=e578]
+                - cell "$24,000" [ref=e579]:
+                  - strong [ref=e580]: $24,000
+          - paragraph [ref=e581]:
+            - strong [ref=e582]: "The Tax Math:"
+          - list [ref=e583]:
+            - listitem [ref=e584]: "Generated tax losses: $525,091"
+            - listitem [ref=e585]: "Available for W-2/business income offset: $525,091"
+            - listitem [ref=e586]: "Actual tax liability: $90,000"
+            - listitem [ref=e587]:
+              - strong [ref=e588]: "Excess deductions creating NOL: $435,091"
+          - 'heading "Strategy 5: Business Entity Structure and Operating Deductions" [level=2] [ref=e589]'
+          - paragraph [ref=e590]:
+            - text: Beyond real estate, Mia and Jay's plan layers in
+            - strong [ref=e591]: business entity deductions
+            - text: through strategic S-Corporation structures for any side income or consulting activities.
+          - heading "S-Corporation Benefits" [level=3] [ref=e592]
+          - paragraph [ref=e593]:
+            - strong [ref=e594]: "Payroll Tax Savings:"
+          - list [ref=e595]:
+            - listitem [ref=e596]: $100,000 business net income
+            - listitem [ref=e597]: "$50,000 reasonable salary (subject to payroll taxes: $7,650)"
+            - listitem [ref=e598]: $50,000 distribution (NOT subject to payroll taxes)
+            - listitem [ref=e599]:
+              - strong [ref=e600]: "Savings vs. sole proprietorship: $7,650 - $15,300 = $7,650"
+          - paragraph [ref=e601]:
+            - strong [ref=e602]: "Section 199A Qualified Business Income Deduction:"
+          - list [ref=e603]:
+            - listitem [ref=e604]: Distribution portion ($50,000) × 20% = $10,000 deduction
+            - listitem [ref=e605]: "Tax savings at 35%: $3,500"
+          - paragraph [ref=e606]:
+            - strong [ref=e607]: "Combined S-Corp Benefit:"
+          - list [ref=e608]:
+            - listitem [ref=e609]: "Payroll tax savings: $7,650"
+            - listitem [ref=e610]: "Section 199A deduction: $3,500"
+            - listitem [ref=e611]:
+              - strong [ref=e612]: "Total: $11,150 annually"
+          - heading "Operating Expense Optimization" [level=3] [ref=e613]
+          - paragraph [ref=e614]:
+            - strong [ref=e615]: "Home Office Deduction:"
+          - list [ref=e616]:
+            - listitem [ref=e617]: "Dedicated workspace: 200 sq ft (10% of home)"
+            - listitem [ref=e618]: "Utilities, insurance, maintenance allocation: $3,000/year"
+            - listitem [ref=e619]: "Home office exclusive use: Business only, no personal use"
+          - paragraph [ref=e620]:
+            - strong [ref=e621]: "Vehicle Expenses:"
+          - list [ref=e622]:
+            - listitem [ref=e623]: "Business mileage tracking: Real estate activities, property visits"
+            - listitem [ref=e624]: "Standard mileage rate: $0.67/mile (2024-2025)"
+            - listitem [ref=e625]: 10,000 business miles = $6,700 deduction
+          - paragraph [ref=e626]:
+            - strong [ref=e627]: "Professional Development:"
+          - list [ref=e628]:
+            - listitem [ref=e629]: Real estate training programs (Legacy Investing Show, etc.)
+            - listitem [ref=e630]: Tax strategy education and professional conferences
+            - listitem [ref=e631]: Business books, subscriptions, software
+            - listitem [ref=e632]: "Annual budget: $10,000 (fully deductible)"
+          - heading "Section 179 and Bonus Depreciation for Business Assets" [level=3] [ref=e633]
+          - paragraph [ref=e634]:
+            - strong [ref=e635]: "Immediate Expensing Opportunities:"
+          - list [ref=e636]:
+            - listitem [ref=e637]: "Computers and technology: $3,000 (100% Section 179)"
+            - listitem [ref=e638]: "Furniture and fixtures: $5,000 (100% bonus depreciation)"
+            - listitem [ref=e639]: "Equipment and tools: $2,000 (100% Section 179)"
+            - listitem [ref=e640]:
+              - strong [ref=e641]: "Total immediate deductions: $10,000/year"
+          - heading "The Net Operating Loss (NOL) Carryforward Strategy" [level=2] [ref=e642]
+          - paragraph [ref=e643]:
+            - text: With $259,700 in total deductions against $90,000 in tax liability, Mia and Jay generate
+            - strong [ref=e644]: $169,700 in excess deductions
+            - text: — a Net Operating Loss that creates a multi-year tax shield.
+          - heading "How NOL Carryforwards Work" [level=3] [ref=e645]
+          - paragraph [ref=e646]:
+            - strong [ref=e647]: "NOL Generation:"
+          - list [ref=e648]:
+            - listitem [ref=e649]: Excess business/real estate losses over income
+            - listitem [ref=e650]: Carryforward indefinitely (post-2017 TCJA rules)
+            - listitem [ref=e651]: Apply to future taxable income of any type
+          - paragraph [ref=e652]:
+            - strong [ref=e653]: "Future Application:"
+          - list [ref=e654]:
+            - listitem [ref=e655]:
+              - paragraph [ref=e656]: "Year 2: Salary increase to $150,000"
+            - listitem [ref=e657]:
+              - paragraph [ref=e658]: "NOL applied: $90,000 (remaining $79,700)"
+            - listitem [ref=e659]:
+              - paragraph [ref=e660]: "Taxable income: $60,000"
+            - listitem [ref=e661]:
+              - paragraph [ref=e662]: "Tax savings: $31,500"
+            - listitem [ref=e663]:
+              - paragraph [ref=e664]: "Year 3: Business sale gain of $200,000"
+            - listitem [ref=e665]:
+              - paragraph [ref=e666]: "NOL applied: $79,700 (fully exhausted)"
+            - listitem [ref=e667]:
+              - paragraph [ref=e668]: "Taxable gain: $120,300"
+            - listitem [ref=e669]:
+              - paragraph [ref=e670]: "Tax savings: $27,895"
+          - paragraph [ref=e671]:
+            - strong [ref=e672]: "Total NOL Value:"
+          - list [ref=e673]:
+            - listitem [ref=e674]: "Year 1: $90,000 (immediate)"
+            - listitem [ref=e675]: "Year 2: $31,500"
+            - listitem [ref=e676]: "Year 3: $27,895"
+            - listitem [ref=e677]:
+              - strong [ref=e678]: "3-year benefit: $149,395"
+          - heading "Tax Benefit Compounding" [level=3] [ref=e679]
+          - paragraph [ref=e680]: "The $90,000 in tax savings from year one, if invested at 10% annually:"
+          - list [ref=e681]:
+            - listitem [ref=e682]: "Year 1: $90,000"
+            - listitem [ref=e683]: "Year 2: $99,000 (+$9,000)"
+            - listitem [ref=e684]: "Year 3: $108,900 (+$9,900)"
+            - listitem [ref=e685]: "Year 4: $119,790 (+$10,890)"
+            - listitem [ref=e686]: "Year 5: $131,769 (+$11,979)"
+          - paragraph [ref=e687]:
+            - strong [ref=e688]: "5-year wealth impact: $131,769"
+            - text: from a single year of tax optimization
+          - heading "Massachusetts-Specific Tax Considerations" [level=2] [ref=e689]
+          - paragraph [ref=e690]:
+            - text: As Massachusetts residents, Mia and Jay's plan addresses
+            - strong [ref=e691]: state-specific opportunities and constraints
+            - text: .
+          - heading "Massachusetts State Tax Structure" [level=3] [ref=e692]
+          - paragraph [ref=e693]:
+            - strong [ref=e694]: "Flat Rate System:"
+          - list [ref=e695]:
+            - listitem [ref=e696]: 5% on most income types
+            - listitem [ref=e697]: 9% on short-term capital gains (assets held <1 year)
+            - listitem [ref=e698]: No federal deductibility of state taxes (post-TCJA $10K SALT cap)
+          - paragraph [ref=e699]:
+            - strong [ref=e700]: "Massachusetts Tax Savings from Plan:"
+          - list [ref=e701]:
+            - listitem [ref=e702]: "Federal tax eliminated: $65,000+ → $0"
+            - listitem [ref=e703]: "Massachusetts tax on remaining taxable income: $15,000+ → $0 (with state loss carryforwards)"
+            - listitem [ref=e704]:
+              - strong [ref=e705]: "Total state + federal savings: $90,000 annually"
+          - heading "Massachusetts Short-Term Rental Regulations" [level=3] [ref=e706]
+          - paragraph [ref=e707]:
+            - strong [ref=e708]: "Regulatory Landscape:"
+          - list [ref=e709]:
+            - listitem [ref=e710]: "Boston: Strict 90-day annual cap on unhosted STRs"
+            - listitem [ref=e711]: "Cambridge: Registration and zoning requirements"
+            - listitem [ref=e712]: "Other municipalities: Varying levels of restriction"
+          - paragraph [ref=e713]:
+            - strong [ref=e714]: "Strategy Response:"
+          - list [ref=e715]:
+            - listitem [ref=e716]:
+              - strong [ref=e717]: Primary investment outside Boston/Cambridge core
+              - text: (lower regulation)
+            - listitem [ref=e718]:
+              - strong [ref=e719]: Professional host presence
+              - text: (avoids unhosted caps)
+            - listitem [ref=e720]:
+              - strong [ref=e721]: Compliance-first approach
+              - text: (proper licensing and tax collection)
+            - listitem [ref=e722]:
+              - strong [ref=e723]: Diversification across multiple municipalities
+              - text: (reduces regulatory risk)
+          - heading "Massachusetts Estate Tax Planning" [level=3] [ref=e724]
+          - paragraph [ref=e725]:
+            - strong [ref=e726]: "Massachusetts Estate Tax:"
+          - list [ref=e727]:
+            - listitem [ref=e728]: "Threshold: $1 million (far lower than federal $13.61M)"
+            - listitem [ref=e729]: "Rate: 0.8% to 16% graduated"
+            - listitem [ref=e730]:
+              - strong [ref=e731]: Critical for Mia and Jay's wealth level
+          - paragraph [ref=e732]:
+            - strong [ref=e733]: "Plan Response:"
+          - list [ref=e734]:
+            - listitem [ref=e735]: Revocable living trust for probate avoidance
+            - listitem [ref=e736]: Annual gifting program ($18,000/person/year)
+            - listitem [ref=e737]: Life insurance in ILIT (outside taxable estate)
+            - listitem [ref=e738]: Family limited partnership for valuation discounts
+          - 'heading "12-Month Execution Timeline: From Tax Burden to Zero" [level=2] [ref=e739]'
+          - table [ref=e740]:
+            - rowgroup [ref=e741]:
+              - row "Month Key Actions Tax Impact" [ref=e742]:
+                - columnheader "Month" [ref=e743]
+                - columnheader "Key Actions" [ref=e744]
+                - columnheader "Tax Impact" [ref=e745]
+            - rowgroup [ref=e746]:
+              - 'row "January Close Property #1; order cost segregation study; begin REP hour documentation $182,273 deduction locked" [ref=e747]':
+                - cell "January" [ref=e748]:
+                  - strong [ref=e749]: January
+                - 'cell "Close Property #1; order cost segregation study; begin REP hour documentation" [ref=e750]'
+                - cell "$182,273 deduction locked" [ref=e751]
+              - row "February Form S-Corporation for side income; implement home office structure $11,150 annual savings" [ref=e752]:
+                - cell "February" [ref=e753]:
+                  - strong [ref=e754]: February
+                - cell "Form S-Corporation for side income; implement home office structure" [ref=e755]
+                - cell "$11,150 annual savings" [ref=e756]
+              - 'row "March Close Property #2; order cost segregation; document STR material participation Additional $135,727 deduction" [ref=e757]':
+                - cell "March" [ref=e758]:
+                  - strong [ref=e759]: March
+                - 'cell "Close Property #2; order cost segregation; document STR material participation" [ref=e760]'
+                - cell "Additional $135,727 deduction" [ref=e761]
+              - row "April Mid-year tax projection; adjust estimated payments to zero Stop overpaying quarterly taxes" [ref=e762]:
+                - cell "April" [ref=e763]:
+                  - strong [ref=e764]: April
+                - cell "Mid-year tax projection; adjust estimated payments to zero" [ref=e765]
+                - cell "Stop overpaying quarterly taxes" [ref=e766]
+              - 'row "May Close Property #3; order cost segregation; complete portfolio Additional $207,091 deduction" [ref=e767]':
+                - cell "May" [ref=e768]:
+                  - strong [ref=e769]: May
+                - 'cell "Close Property #3; order cost segregation; complete portfolio" [ref=e770]'
+                - cell "Additional $207,091 deduction" [ref=e771]
+              - row "June Q2 REP hour documentation review; refine time tracking systems Audit-ready records" [ref=e772]:
+                - cell "June" [ref=e773]:
+                  - strong [ref=e774]: June
+                - cell "Q2 REP hour documentation review; refine time tracking systems" [ref=e775]
+                - cell "Audit-ready records" [ref=e776]
+              - row "July Implement business operating systems; optimize vehicle deductions $6,700 mileage deduction" [ref=e777]:
+                - cell "July" [ref=e778]:
+                  - strong [ref=e779]: July
+                - cell "Implement business operating systems; optimize vehicle deductions" [ref=e780]
+                - cell "$6,700 mileage deduction" [ref=e781]
+              - row "August Property performance review; occupancy optimization Maximize cash flow" [ref=e782]:
+                - cell "August" [ref=e783]:
+                  - strong [ref=e784]: August
+                - cell "Property performance review; occupancy optimization" [ref=e785]
+                - cell "Maximize cash flow" [ref=e786]
+              - row "September Q3 tax projection; confirm $0 tax liability trajectory Validate strategy working" [ref=e787]:
+                - cell "September" [ref=e788]:
+                  - strong [ref=e789]: September
+                - cell "Q3 tax projection; confirm $0 tax liability trajectory" [ref=e790]
+                - cell "Validate strategy working" [ref=e791]
+              - row "October Year-end planning; property tax appeals; insurance optimization Cost reduction" [ref=e792]:
+                - cell "October" [ref=e793]:
+                  - strong [ref=e794]: October
+                - cell "Year-end planning; property tax appeals; insurance optimization" [ref=e795]
+                - cell "Cost reduction" [ref=e796]
+              - row "November Final cost segregation for any late acquisitions Capture all deductions" [ref=e797]:
+                - cell "November" [ref=e798]:
+                  - strong [ref=e799]: November
+                - cell "Final cost segregation for any late acquisitions" [ref=e800]
+                - cell "Capture all deductions" [ref=e801]
+              - row "December File extensions if needed; maximize retirement contributions Final optimization" [ref=e802]:
+                - cell "December" [ref=e803]:
+                  - strong [ref=e804]: December
+                - cell "File extensions if needed; maximize retirement contributions" [ref=e805]
+                - cell "Final optimization" [ref=e806]
+          - 'heading "Year-One Results: The $259,700 Transformation" [level=2] [ref=e807]'
+          - heading "Tax Impact Summary" [level=3] [ref=e808]
+          - table [ref=e809]:
+            - rowgroup [ref=e810]:
+              - row "Deduction Source Amount Tax Savings (Combined)" [ref=e811]:
+                - columnheader "Deduction Source" [ref=e812]
+                - columnheader "Amount" [ref=e813]
+                - columnheader "Tax Savings (Combined)" [ref=e814]
+            - rowgroup [ref=e815]:
+              - 'row "Property #1 Cost Seg + Operating $182,273 $63,796" [ref=e816]':
+                - 'cell "Property #1 Cost Seg + Operating" [ref=e817]'
+                - cell "$182,273" [ref=e818]
+                - cell "$63,796" [ref=e819]
+              - 'row "Property #2 Cost Seg + Operating $135,727 $47,504" [ref=e820]':
+                - 'cell "Property #2 Cost Seg + Operating" [ref=e821]'
+                - cell "$135,727" [ref=e822]
+                - cell "$47,504" [ref=e823]
+              - 'row "Property #3 Cost Seg + Operating $207,091 $72,482" [ref=e824]':
+                - 'cell "Property #3 Cost Seg + Operating" [ref=e825]'
+                - cell "$207,091" [ref=e826]
+                - cell "$72,482" [ref=e827]
+              - row "S-Corp Payroll Tax Savings $7,650 $7,650" [ref=e828]:
+                - cell "S-Corp Payroll Tax Savings" [ref=e829]
+                - cell "$7,650" [ref=e830]
+                - cell "$7,650" [ref=e831]
+              - row "Section 199A QBI Deduction $10,000 $3,500" [ref=e832]:
+                - cell "Section 199A QBI Deduction" [ref=e833]
+                - cell "$10,000" [ref=e834]
+                - cell "$3,500" [ref=e835]
+              - row "Home Office + Vehicle $9,700 $3,395" [ref=e836]:
+                - cell "Home Office + Vehicle" [ref=e837]
+                - cell "$9,700" [ref=e838]
+                - cell "$3,395" [ref=e839]
+              - row "Professional Development $10,000 $3,500" [ref=e840]:
+                - cell "Professional Development" [ref=e841]
+                - cell "$10,000" [ref=e842]
+                - cell "$3,500" [ref=e843]
+              - row "Section 179/Bonus Depreciation $10,000 $3,500" [ref=e844]:
+                - cell "Section 179/Bonus Depreciation" [ref=e845]
+                - cell "$10,000" [ref=e846]
+                - cell "$3,500" [ref=e847]
+              - row "Massachusetts State Tax $25,000 $25,000" [ref=e848]:
+                - cell "Massachusetts State Tax" [ref=e849]
+                - cell "$25,000" [ref=e850]
+                - cell "$25,000" [ref=e851]
+              - row "Total Year-One Benefit $596,441 $259,700" [ref=e852]:
+                - cell "Total Year-One Benefit" [ref=e853]:
+                  - strong [ref=e854]: Total Year-One Benefit
+                - cell "$596,441" [ref=e855]:
+                  - strong [ref=e856]: $596,441
+                - cell "$259,700" [ref=e857]:
+                  - strong [ref=e858]: $259,700
+          - heading "Cash Flow and Wealth Building" [level=3] [ref=e859]
+          - table [ref=e860]:
+            - rowgroup [ref=e861]:
+              - row "Metric Year One" [ref=e862]:
+                - columnheader "Metric" [ref=e863]
+                - columnheader "Year One" [ref=e864]
+            - rowgroup [ref=e865]:
+              - row "Tax Savings (Redirected to Wealth) $259,700" [ref=e866]:
+                - cell "Tax Savings (Redirected to Wealth)" [ref=e867]
+                - cell "$259,700" [ref=e868]
+              - row "STR Portfolio Cash Flow $24,000" [ref=e869]:
+                - cell "STR Portfolio Cash Flow" [ref=e870]
+                - cell "$24,000" [ref=e871]
+              - row "Total Wealth Building Capacity $283,700" [ref=e872]:
+                - cell "Total Wealth Building Capacity" [ref=e873]
+                - cell "$283,700" [ref=e874]
+              - row "Cash Invested in Properties ($370,000)" [ref=e875]:
+                - cell "Cash Invested in Properties" [ref=e876]
+                - cell "($370,000)" [ref=e877]
+              - row "Net Year-One Position ($86,300) + 3 properties" [ref=e878]:
+                - cell "Net Year-One Position" [ref=e879]:
+                  - strong [ref=e880]: Net Year-One Position
+                - cell "($86,300) + 3 properties" [ref=e881]:
+                  - strong [ref=e882]: ($86,300) + 3 properties
+          - paragraph [ref=e883]:
+            - strong [ref=e884]: "Year Two and Beyond:"
+          - list [ref=e885]:
+            - listitem [ref=e886]: Depreciation continues (lower amounts, but sustained)
+            - listitem [ref=e887]: Cash flow improves (occupancy optimization, rate increases)
+            - listitem [ref=e888]: Properties appreciate (historical 3-5% annually)
+            - listitem [ref=e889]: NOL carryforward protects future income
+          - 'heading "Key Takeaways: Lessons from Mia and Jay''s Zero-Tax Strategy" [level=2] [ref=e890]'
+          - heading "1. Complete Tax Elimination Is Achievable (Legally)" [level=3] [ref=e891]
+          - paragraph [ref=e892]:
+            - text: The $259,700 in deductions isn't a loophole or gray area — it's
+            - strong [ref=e893]: the intentional result of combining IRS-sanctioned strategies
+            - text: ":"
+          - list [ref=e894]:
+            - listitem [ref=e895]: Cost segregation (accelerated depreciation allowed since 1954)
+            - listitem [ref=e896]: Real estate professional status (court-tested for 30+ years)
+            - listitem [ref=e897]: Short-term rental exception (clear statutory language)
+            - listitem [ref=e898]: S-Corp structures (70+ years of established law)
+          - paragraph [ref=e899]:
+            - text: The difference between paying $90,000 and $0 isn't tax evasion — it's
+            - strong [ref=e900]: strategic entity formation and documentation
+            - text: .
+          - heading "2. Time Value of Money Makes Immediate Action Critical" [level=3] [ref=e901]
+          - paragraph [ref=e902]:
+            - text: Every year of delay costs
+            - strong [ref=e903]: $90,000 in immediate tax savings plus compounding
+            - text: . A five-year delay costs nearly $600,000 in lost tax-advantaged investment capacity. The properties, deductions, and structures must be in place
+            - strong [ref=e904]: this tax year
+            - text: to capture the benefits.
+          - heading "3. Documentation Separates Success from Failure" [level=3] [ref=e905]
+          - paragraph [ref=e906]:
+            - text: IRS challenges to real estate professional status are won or lost on
+            - strong [ref=e907]: contemporaneous records
+            - text: ":"
+          - list [ref=e908]:
+            - listitem [ref=e909]: Time logs created in real-time (not reconstructed later)
+            - listitem [ref=e910]: Activity logs showing real estate vs. other work hours
+            - listitem [ref=e911]: Mileage logs, appointment books, calendar entries
+            - listitem [ref=e912]: Property-specific participation evidence
+          - paragraph [ref=e913]:
+            - strong [ref=e914]: Good documentation wins audits; poor documentation loses legitimate deductions.
+          - heading "4. Multi-Property Portfolios Compound Benefits" [level=3] [ref=e915]
+          - paragraph [ref=e916]:
+            - text: One property creates meaningful deductions.
+            - strong [ref=e917]: Three properties create transformative tax elimination.
+            - text: The marginal cost of additional properties (once systems are established) is lower while tax benefits compound.
+          - heading "5. Excess Deductions Are an Asset" [level=3] [ref=e918]
+          - paragraph [ref=e919]:
+            - text: The $169,700 NOL isn't "wasted" — it's a
+            - strong [ref=e920]: tax shield asset
+            - text: protecting future income. Years of high income (business sales, inheritance, stock gains) can be offset by accumulated NOLs, creating
+            - strong [ref=e921]: multi-decade tax optimization
+            - text: .
+          - heading "Frequently Asked Questions About Zero Tax Strategies" [level=2] [ref=e922]
+          - heading "Is this legal? Will I get audited?" [level=3] [ref=e923]
+          - paragraph [ref=e924]:
+            - strong [ref=e925]: Yes, completely legal. Audit risk depends on documentation quality.
+          - list [ref=e926]:
+            - listitem [ref=e927]: "Cost segregation: Engineering studies accepted by IRS for decades"
+            - listitem [ref=e928]: "REP status: Specifically defined in Section 469 with clear tests"
+            - listitem [ref=e929]: "STR exception: Unambiguous statutory language"
+            - listitem [ref=e930]:
+              - strong [ref=e931]: Audit triggers
+              - text: ": Poor documentation, unreasonable positions, cash businesses"
+            - listitem [ref=e932]:
+              - strong [ref=e933]: Audit defense
+              - text: ": Contemporaneous records, professional studies, conservative positions"
+          - paragraph [ref=e934]:
+            - strong [ref=e935]: Reality
+            - text: ": Well-documented returns with reasonable positions face minimal audit risk. IRS focuses on clearly fraudulent schemes, not sophisticated legal optimization."
+          - heading "What happens when bonus depreciation phases down?" [level=3] [ref=e936]
+          - paragraph [ref=e937]:
+            - strong [ref=e938]: "Bonus depreciation schedule:"
+          - list [ref=e939]:
+            - listitem [ref=e940]: "2025: 80%"
+            - listitem [ref=e941]: "2026: 60%"
+            - listitem [ref=e942]: "2027: 40%"
+            - listitem [ref=e943]: "2028: 20%"
+            - listitem [ref=e944]: "2029+: 0%"
+          - paragraph [ref=e945]:
+            - strong [ref=e946]: "Strategy response:"
+          - list [ref=e947]:
+            - listitem [ref=e948]: Front-load acquisitions in high-bonus years (2025-2026)
+            - listitem [ref=e949]: Cost segregation still valuable (5, 7, 15-year schedules remain accelerated)
+            - listitem [ref=e950]: Section 179 expensing ($1.16M annual limit) for qualified property
+            - listitem [ref=e951]: Different depreciation methods (150% declining balance vs. straight-line)
+          - paragraph [ref=e952]:
+            - strong [ref=e953]: Post-2029
+            - text: ": Cost segregation still creates 3-4× depreciation acceleration vs. straight-line. Strategy remains viable, just less aggressive."
+          - heading "Can I do this with existing properties, or only new acquisitions?" [level=3] [ref=e954]
+          - paragraph [ref=e955]:
+            - strong [ref=e956]: "Both work, with different timing:"
+          - list [ref=e957]:
+            - listitem [ref=e958]:
+              - strong [ref=e959]: New acquisitions
+              - text: ": Cost segregation applies immediately to purchase price"
+            - listitem [ref=e960]:
+              - strong [ref=e961]: Existing properties
+              - text: ": Form 3115 \"Change in Accounting Method\" allows catch-up depreciation in current year (no amended returns needed)"
+          - paragraph [ref=e962]:
+            - strong [ref=e963]: Example
+            - text: ": Property owned 3 years with no cost segregation:"
+          - list [ref=e964]:
+            - listitem [ref=e965]: "Current basis: $400,000 remaining"
+            - listitem [ref=e966]: Cost segregation identifies $100,000 in 5-year property
+            - listitem [ref=e967]: Form 3115 allows $80,000 (80% bonus) + prior year missed deductions
+            - listitem [ref=e968]:
+              - strong [ref=e969]: "Catch-up deduction: $100,000+ in current year"
+          - heading "How does this affect my ability to sell properties?" [level=3] [ref=e970]
+          - paragraph [ref=e971]:
+            - strong [ref=e972]: Depreciation recapture
+            - text: "applies upon sale:"
+          - list [ref=e973]:
+            - listitem [ref=e974]: Depreciation taken is "recaptured" at 25% maximum rate (not ordinary income)
+            - listitem [ref=e975]: 1031 exchange allows deferral by reinvesting in replacement property
+            - listitem [ref=e976]: Step-up in basis at death eliminates recapture for heirs
+            - listitem [ref=e977]:
+              - strong [ref=e978]: Time value of money
+              - text: ": 25% tax years in the future vs. 35%+ savings today favors taking depreciation"
+          - paragraph [ref=e979]:
+            - strong [ref=e980]: Strategy
+            - text: ": Hold for long-term, exchange via 1031 when upgrading, step-up basis for generational transfer."
+          - heading "What if I don't have time to manage properties myself?" [level=3] [ref=e981]
+          - paragraph [ref=e982]:
+            - strong [ref=e983]: "Delegation options:"
+          - list [ref=e984]:
+            - listitem [ref=e985]:
+              - strong [ref=e986]: Co-hosting model
+              - text: ": Professional managers for 20-25% of revenue"
+            - listitem [ref=e987]:
+              - strong [ref=e988]: You still meet material participation
+              - text: if you make management decisions (pricing, approval of guests, strategic oversight)
+            - listitem [ref=e989]:
+              - strong [ref=e990]: 100+ hours
+              - text: includes time spent managing managers (calls, reviews, decisions)
+          - paragraph [ref=e991]:
+            - strong [ref=e992]: Key distinction
+            - text: ": You cannot simply hire a property manager and be passive. You must actively participate in management decisions to meet material participation tests."
+          - heading "Welcome to Zero Tax Liability" [level=2] [ref=e993]
+          - paragraph [ref=e994]:
+            - text: Mia and Jay's wealth plan demonstrates that
+            - strong [ref=e995]: $90,000 in annual tax liability can be transformed into $169,700 in wealth-building capacity
+            - text: through strategic real estate investment and business structure optimization. This isn't tax evasion — it's
+            - strong [ref=e996]: maximizing incentives intentionally built into the tax code
+            - text: .
+          - paragraph [ref=e997]: "The government wants:"
+          - list [ref=e998]:
+            - listitem [ref=e999]: Affordable rental housing (real estate incentives)
+            - listitem [ref=e1000]: Business formation and job creation (S-Corp structures)
+            - listitem [ref=e1001]: Retirement savings (contribution deductions)
+            - listitem [ref=e1002]: Professional development (education deductions)
+          - paragraph [ref=e1003]:
+            - text: Mia and Jay's plan simply
+            - strong [ref=e1004]: aligns their activities with these incentives
+            - text: to the maximum legal extent.
+          - heading "The Wealth Acceleration Impact" [level=3] [ref=e1005]
+          - paragraph [ref=e1006]:
+            - strong [ref=e1007]: "Previous Path:"
+          - list [ref=e1008]:
+            - listitem [ref=e1009]: "Annual tax: $90,000"
+            - listitem [ref=e1010]: "After-tax investable: Limited"
+            - listitem [ref=e1011]: "10-year wealth trajectory: Constrained"
+          - paragraph [ref=e1012]:
+            - strong [ref=e1013]: "Optimized Path:"
+          - list [ref=e1014]:
+            - listitem [ref=e1015]: "Annual tax: $0"
+            - listitem [ref=e1016]: "Wealth-building capacity: $259,700 year one, compounding thereafter"
+            - listitem [ref=e1017]:
+              - text: "10-year wealth trajectory:"
+              - strong [ref=e1018]: Transformed
+          - paragraph [ref=e1019]:
+            - text: This is the difference between working for the government (35% tax rate) and
+            - strong [ref=e1020]: having the government subsidize your wealth building
+            - text: (0% tax rate + deduction carryforwards).
+          - heading "The Path Forward" [level=3] [ref=e1021]
+          - paragraph [ref=e1022]: "Every element of this plan is accessible:"
+          - list [ref=e1023]:
+            - listitem [ref=e1024]: Properties are available in every market
+            - listitem [ref=e1025]: Cost segregation studies are provided by licensed engineers nationwide
+            - listitem [ref=e1026]: S-Corp structures are formed by attorneys and CPAs in every city
+            - listitem [ref=e1027]: The tax code is public; the strategies are documented
+          - paragraph [ref=e1028]:
+            - strong [ref=e1029]: The only variable is execution.
+          - paragraph [ref=e1030]:
+            - text: If you're ready to explore whether a zero-tax strategy is achievable in your financial situation, the
+            - link "Legacy Investing Show programs" [ref=e1031] [cursor=pointer]:
+              - /url: https://www.legacyinvestingshow.com/programs
+            - text: provide the education, community, and implementation support to evaluate and execute these advanced strategies.
+          - paragraph [ref=e1032]:
+            - strong [ref=e1033]: The best time to optimize your tax burden was last year. The second-best time is today.
+          - paragraph [ref=e1034]: Welcome to zero tax liability. Welcome to wealth acceleration.
+          - separator [ref=e1035]
+          - paragraph [ref=e1036]:
+            - emphasis [ref=e1037]: This educational analysis is based on a personalized wealth plan prepared for educational purposes. Individual results will vary based on specific circumstances, market conditions, and implementation quality. Always consult qualified tax, legal, and financial professionals before implementing advanced strategies.
+        - complementary [ref=e1038]:
+          - generic [ref=e1039]:
+            - img "Preston Seo" [ref=e1041]
+            - generic [ref=e1042]:
+              - paragraph [ref=e1043]: Preston Seo
+              - paragraph [ref=e1044]: Financial Educator & Real Estate Investor
+              - paragraph [ref=e1045]: Preston has built a $15M+ real estate portfolio and helped 2,000+ students improve tax decisions, wealth systems, and long-term financial execution.
+              - link "Learn more about Preston Seo →" [ref=e1046] [cursor=pointer]:
+                - /url: /about
+        - region "Frequently asked questions" [ref=e1047]:
+          - heading "Frequently Asked Questions" [level=2] [ref=e1048]
+          - generic [ref=e1049]:
+            - generic [ref=e1050]:
+              - button "How is achieving zero tax liability legally possible?" [expanded] [ref=e1051] [cursor=pointer]:
+                - generic [ref=e1052]: How is achieving zero tax liability legally possible?
+                - img [ref=e1053]
+              - paragraph [ref=e1057]: Zero tax liability is achieved by generating paper losses that equal or exceed taxable income. Through cost segregation (creating $150K+ in first-year depreciation), Real Estate Professional Status (unlimited passive loss offset against active income), and strategic business entity deductions, Mia and Jay's plan creates $259,700 in deductions against $90,000 in tax liability — resulting in zero net tax and $169,700 in excess deduction capacity for future years.
+            - generic [ref=e1058]:
+              - button "What is Real Estate Professional Status (REP) and why is it critical?" [ref=e1059] [cursor=pointer]:
+                - generic [ref=e1060]: What is Real Estate Professional Status (REP) and why is it critical?
+                - img [ref=e1061]
+              - paragraph [ref=e1065]: REP Status requires spending 750+ hours annually in real estate activities and more time in real estate than any other profession. It unlocks the ability to use rental real estate losses to offset W-2 or business income without limitation. Without REP, losses up to $25,000 phase out at $100K-$150K income; with REP, unlimited offset is available — the key to eliminating $90,000 in tax liability.
+            - generic [ref=e1066]:
+              - button "How does the Short-Term Rental (STR) Loophole differ from REP Status?" [ref=e1067] [cursor=pointer]:
+                - generic [ref=e1068]: How does the Short-Term Rental (STR) Loophole differ from REP Status?
+                - img [ref=e1069]
+              - paragraph [ref=e1073]: The STR Loophole (Section 469) allows averaging 100+ hours of material participation per short-term rental property as an alternative path to unlimited loss utilization. Unlike REP, it doesn't require 750+ total hours or real estate as primary occupation. Mia and Jay's plan combines both — STR Loophole for immediate year-one benefit while building toward full REP status for multi-property portfolio optimization.
+            - generic [ref=e1074]:
+              - button "What happens to the $169,700 in excess deductions?" [ref=e1075] [cursor=pointer]:
+                - generic [ref=e1076]: What happens to the $169,700 in excess deductions?
+                - img [ref=e1077]
+              - paragraph [ref=e1081]: Excess deductions create Net Operating Losses (NOLs) that carry forward indefinitely to offset future taxable income. This creates a 'tax shield' that protects future income — whether from salary increases, business profits, or investment gains. The $169,700 excess from year one provides years of future tax protection, making this a multi-year wealth acceleration strategy.
+            - generic [ref=e1082]:
+              - button "How does cost segregation on multiple properties compound the benefit?" [ref=e1083] [cursor=pointer]:
+                - generic [ref=e1084]: How does cost segregation on multiple properties compound the benefit?
+                - img [ref=e1085]
+              - paragraph [ref=e1089]: Each property's cost segregation study identifies 20-30% of value as eligible for accelerated depreciation. With bonus depreciation at 80% in 2025, each $500K property generates $100K in year-one write-offs. Three properties = $300K in deductions. Combined with operating expense losses, this creates the $259,700 total tax shelter. The key is timing acquisitions within the same tax year for maximum impact.
+            - generic [ref=e1090]:
+              - button "Why is Massachusetts specifically mentioned in this tax strategy?" [ref=e1091] [cursor=pointer]:
+                - generic [ref=e1092]: Why is Massachusetts specifically mentioned in this tax strategy?
+                - img [ref=e1093]
+              - paragraph [ref=e1097]: Massachusetts state tax laws interact with federal strategies. With a flat 5% state income tax (9% on short-term capital gains), state tax savings add $13,500+ annually to the federal benefit. Additionally, Massachusetts has specific rules around short-term rentals, pass-through entity taxes, and estate planning that require local expertise to optimize fully within this wealth plan.
+        - complementary "Related articles" [ref=e1098]:
+          - heading "Related Articles" [level=3] [ref=e1099]
+          - generic [ref=e1100]:
+            - 'link "Abigail''s Wealth Plan: Eliminating W-2 Tax Liability and Building Early Retirement Abigail''s Wealth Plan: Eliminating W-2 Tax Liability and Building Early Retirement 18 min read" [ref=e1101] [cursor=pointer]':
+              - /url: /blog/abigail-wealth-plan
+              - 'img "Abigail''s Wealth Plan: Eliminating W-2 Tax Liability and Building Early Retirement" [ref=e1103]'
+              - generic [ref=e1104]:
+                - 'heading "Abigail''s Wealth Plan: Eliminating W-2 Tax Liability and Building Early Retirement" [level=4] [ref=e1105]'
+                - text: 18 min read
+            - 'link "Brian''s Wealth Plan: Self-Employed Professional Tax and Retirement Strategy Brian''s Wealth Plan: Self-Employed Professional Tax and Retirement Strategy 13 min read" [ref=e1106] [cursor=pointer]':
+              - /url: /blog/brian-wealth-plan
+              - 'img "Brian''s Wealth Plan: Self-Employed Professional Tax and Retirement Strategy" [ref=e1108]'
+              - generic [ref=e1109]:
+                - 'heading "Brian''s Wealth Plan: Self-Employed Professional Tax and Retirement Strategy" [level=4] [ref=e1110]'
+                - text: 13 min read
+            - 'link "Casey''s Wealth Strategy Snapshot: Efficient Wealth Building Foundation Casey''s Wealth Strategy Snapshot: Efficient Wealth Building Foundation 13 min read" [ref=e1111] [cursor=pointer]':
+              - /url: /blog/casey-wealth-plan
+              - 'img "Casey''s Wealth Strategy Snapshot: Efficient Wealth Building Foundation" [ref=e1113]'
+              - generic [ref=e1114]:
+                - 'heading "Casey''s Wealth Strategy Snapshot: Efficient Wealth Building Foundation" [level=4] [ref=e1115]'
+                - text: 13 min read
+    - generic [ref=e1117]:
+      - heading "Bring The Article Into Before You File" [level=2] [ref=e1118]
+      - paragraph [ref=e1119]: Join Preston live on Zoom from April 17-19, 2026, 10 AM-4 PM Eastern. Day 1 reads the return, Day 2 builds the strategy, and Day 3 locks the 12-month plan.
+      - link "Get Your Seat Before You File" [ref=e1120] [cursor=pointer]:
+        - /url: https://go.managemoney101.com/challenge2
+  - contentinfo [ref=e1121]:
+    - generic [ref=e1122]:
+      - generic [ref=e1123]:
+        - generic [ref=e1124]:
+          - img "Legacy Investing Show" [ref=e1125]
+          - generic [ref=e1126]: Legacy Investing Show
+        - generic [ref=e1127]:
+          - link "Tax Strategies" [ref=e1128] [cursor=pointer]:
+            - /url: /tax-strategies
+          - link "Compare" [ref=e1129] [cursor=pointer]:
+            - /url: /compare
+          - link "Tools" [ref=e1130] [cursor=pointer]:
+            - /url: /tools
+          - link "Worksheets" [ref=e1131] [cursor=pointer]:
+            - /url: /worksheets
+          - link "Results" [ref=e1132] [cursor=pointer]:
+            - /url: /success-stories
+          - link "Blog" [ref=e1133] [cursor=pointer]:
+            - /url: /blog
+      - generic [ref=e1134]: Copyright 2026

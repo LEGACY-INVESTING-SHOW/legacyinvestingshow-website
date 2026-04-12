@@ -1,0 +1,1044 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - navigation "Main navigation" [ref=e4]:
+      - generic [ref=e5]:
+        - link "Legacy Investing Show Logo Legacy Investing Show" [ref=e6] [cursor=pointer]:
+          - /url: /
+          - img "Legacy Investing Show Logo" [ref=e7]
+          - generic [ref=e8]: Legacy Investing Show
+        - generic [ref=e9]:
+          - link "Home" [ref=e10] [cursor=pointer]:
+            - /url: /
+          - link "About" [ref=e11] [cursor=pointer]:
+            - /url: /about
+          - link "Tax Strategies" [ref=e12] [cursor=pointer]:
+            - /url: /tax-strategies
+          - link "Compare" [ref=e13] [cursor=pointer]:
+            - /url: /compare
+          - link "Tools" [ref=e14] [cursor=pointer]:
+            - /url: /tools
+          - link "Worksheets" [ref=e15] [cursor=pointer]:
+            - /url: /worksheets
+          - link "Blog" [ref=e16] [cursor=pointer]:
+            - /url: /blog
+  - main [ref=e19]:
+    - article [ref=e20]:
+      - navigation "Breadcrumb" [ref=e21]:
+        - list [ref=e22]:
+          - listitem [ref=e23]:
+            - link "Home" [ref=e24] [cursor=pointer]:
+              - /url: /
+            - text: /
+          - listitem [ref=e25]:
+            - link "Blog" [ref=e26] [cursor=pointer]:
+              - /url: /blog
+            - text: /
+          - listitem [ref=e27]:
+            - generic [ref=e28]: "Abigail's Wealth Plan: Eliminating W-2 Tax Liability and Building Early Retirement"
+      - generic [ref=e29]:
+        - generic [ref=e30]:
+          - generic [ref=e31]: Wealth Plan
+          - time [ref=e33]: April 11, 2026
+          - generic [ref=e35]: 18 min read
+        - 'heading "Abigail''s Wealth Plan: Eliminating W-2 Tax Liability and Building Early Retirement" [level=1] [ref=e36]'
+        - generic [ref=e37]:
+          - img "Preston Seo" [ref=e38]
+          - generic [ref=e39]: Preston Seo
+      - 'img "Abigail''s Wealth Plan: Eliminating W-2 Tax Liability and Building Early Retirement" [ref=e42]'
+      - region "Key statistics" [ref=e43]:
+        - generic [ref=e44]:
+          - generic [ref=e45]:
+            - img [ref=e47]
+            - generic [ref=e49]: $160,992
+            - generic [ref=e50]: Annual W-2 Income
+          - generic [ref=e51]:
+            - img [ref=e53]
+            - generic [ref=e55]: $52,500
+            - generic [ref=e56]: Year 1 Tax Refund from STR
+          - generic [ref=e57]:
+            - img [ref=e59]
+            - generic [ref=e61]: $1.29M
+            - generic [ref=e62]: Total Retirement Assets
+          - generic [ref=e63]:
+            - img [ref=e65]
+            - generic [ref=e67]: $108,600
+            - generic [ref=e68]: 12-Month Projected ROI
+          - generic [ref=e69]:
+            - img [ref=e71]
+            - generic [ref=e73]: $35,000
+            - generic [ref=e74]: S-Corp Annual Tax Deferral
+          - generic [ref=e75]:
+            - img [ref=e77]
+            - generic [ref=e79]: $4.5M
+            - generic [ref=e80]: Financial Independence Target
+      - navigation "Table of contents" [ref=e81]:
+        - paragraph [ref=e82]: Contents
+        - list [ref=e83]:
+          - listitem [ref=e84]:
+            - 'link "Abigail''s Financial Overview: A Strong Foundation for Aggressive Tax Optimization" [ref=e85] [cursor=pointer]':
+              - /url: "#abigail-39-s-financial-overview-a-strong-foundation-for-aggressive-tax-optimization"
+          - listitem [ref=e86]:
+            - 'link "Strategy 1: The Short-Term Rental \"Depreciation Bomb\" — Q3 2025 Launch" [ref=e87] [cursor=pointer]':
+              - /url: "#strategy-1-the-short-term-rental-quot-depreciation-bomb-quot-q3-2025-launch"
+          - listitem [ref=e88]:
+            - link "Understanding Cost Segregation for Tax Optimization" [ref=e89] [cursor=pointer]:
+              - /url: "#understanding-cost-segregation-for-tax-optimization"
+          - listitem [ref=e90]:
+            - link "The Material Participation Requirement" [ref=e91] [cursor=pointer]:
+              - /url: "#the-material-participation-requirement"
+          - listitem [ref=e92]:
+            - link "Execution Timeline and Deal Structure" [ref=e93] [cursor=pointer]:
+              - /url: "#execution-timeline-and-deal-structure"
+          - listitem [ref=e94]:
+            - link "Tax Impact Analysis" [ref=e95] [cursor=pointer]:
+              - /url: "#tax-impact-analysis"
+          - listitem [ref=e96]:
+            - 'link "Strategy 2: Trader LLC + Section 475(f) Election — Transform Trading Losses into W-2 Shields" [ref=e97] [cursor=pointer]':
+              - /url: "#strategy-2-trader-llc-section-475-f-election-transform-trading-losses-into-w-2-shields"
+          - listitem [ref=e98]:
+            - link "The Section 475(f) Mark-to-Market Election" [ref=e99] [cursor=pointer]:
+              - /url: "#the-section-475-f-mark-to-market-election"
+          - listitem [ref=e100]:
+            - link "Implementation Requirements" [ref=e101] [cursor=pointer]:
+              - /url: "#implementation-requirements"
+          - listitem [ref=e102]:
+            - link "Combined Impact with Solo 401(k)" [ref=e103] [cursor=pointer]:
+              - /url: "#combined-impact-with-solo-401-k"
+          - listitem [ref=e104]:
+            - 'link "Strategy 3: S-Corporation + Cash Balance Plan — The Six-Figure Tax Shelter" [ref=e105] [cursor=pointer]':
+              - /url: "#strategy-3-s-corporation-cash-balance-plan-the-six-figure-tax-shelter"
+          - listitem [ref=e106]:
+            - link "S-Corporation Fundamentals" [ref=e107] [cursor=pointer]:
+              - /url: "#s-corporation-fundamentals"
+          - listitem [ref=e108]:
+            - link "The Cash Balance Plan Power Play" [ref=e109] [cursor=pointer]:
+              - /url: "#the-cash-balance-plan-power-play"
+          - listitem [ref=e110]:
+            - link "Implementation Timeline" [ref=e111] [cursor=pointer]:
+              - /url: "#implementation-timeline"
+          - listitem [ref=e112]:
+            - 'link "Strategy 4: QSEHRA — Tax-Free Medical Reimbursement Up to $12,450/Year" [ref=e113] [cursor=pointer]':
+              - /url: "#strategy-4-qsehra-tax-free-medical-reimbursement-up-to-12-450-year"
+          - listitem [ref=e114]:
+            - link "How QSEHRA Works" [ref=e115] [cursor=pointer]:
+              - /url: "#how-qsehra-works"
+          - listitem [ref=e116]:
+            - link "Strategic Front-Loading" [ref=e117] [cursor=pointer]:
+              - /url: "#strategic-front-loading"
+          - listitem [ref=e118]:
+            - 'link "Strategy 5: Augusta Rule + Kids on Payroll — $44,200 in Tax-Free Household Income" [ref=e119] [cursor=pointer]':
+              - /url: "#strategy-5-augusta-rule-kids-on-payroll-44-200-in-tax-free-household-income"
+          - listitem [ref=e120]:
+            - 'link "The Augusta Rule: 14 Days of Tax-Free Rental Income" [ref=e121] [cursor=pointer]':
+              - /url: "#the-augusta-rule-14-days-of-tax-free-rental-income"
+          - listitem [ref=e122]:
+            - 'link "Kids on Payroll: $14,600 Tax-Free per Child" [ref=e123] [cursor=pointer]':
+              - /url: "#kids-on-payroll-14-600-tax-free-per-child"
+          - listitem [ref=e124]:
+            - link "Combined Family Tax Strategy" [ref=e125] [cursor=pointer]:
+              - /url: "#combined-family-tax-strategy"
+          - listitem [ref=e126]:
+            - 'link "Strategy 6: Roth Conversion Ladder — Penalty-Free Early Retirement Access" [ref=e127] [cursor=pointer]':
+              - /url: "#strategy-6-roth-conversion-ladder-penalty-free-early-retirement-access"
+          - listitem [ref=e128]:
+            - link "How the Roth Conversion Ladder Works" [ref=e129] [cursor=pointer]:
+              - /url: "#how-the-roth-conversion-ladder-works"
+          - listitem [ref=e130]:
+            - link "Abigail's Zero-Tax Conversion Strategy" [ref=e131] [cursor=pointer]:
+              - /url: "#abigail-39-s-zero-tax-conversion-strategy"
+          - listitem [ref=e132]:
+            - link "2025-2029 Conversion Timeline" [ref=e133] [cursor=pointer]:
+              - /url: "#2025-2029-conversion-timeline"
+          - listitem [ref=e134]:
+            - 'link "Strategy 7: Bitcoin Accumulation with MSTY Yield Component" [ref=e135] [cursor=pointer]':
+              - /url: "#strategy-7-bitcoin-accumulation-with-msty-yield-component"
+          - listitem [ref=e136]:
+            - link "Bitcoin Dollar-Cost Averaging Strategy" [ref=e137] [cursor=pointer]:
+              - /url: "#bitcoin-dollar-cost-averaging-strategy"
+          - listitem [ref=e138]:
+            - link "MSTY ETF for Monthly Income" [ref=e139] [cursor=pointer]:
+              - /url: "#msty-etf-for-monthly-income"
+          - listitem [ref=e140]:
+            - 'link "12-Month Execution Timeline: From Strategy to Results" [ref=e141] [cursor=pointer]':
+              - /url: "#12-month-execution-timeline-from-strategy-to-results"
+          - listitem [ref=e142]:
+            - 'link "Year-One ROI Summary: $108,600 in Total Value" [ref=e143] [cursor=pointer]':
+              - /url: "#year-one-roi-summary-108-600-in-total-value"
+          - listitem [ref=e144]:
+            - 'link "Key Takeaways: Lessons from Abigail''s Wealth Plan" [ref=e145] [cursor=pointer]':
+              - /url: "#key-takeaways-lessons-from-abigail-39-s-wealth-plan"
+          - listitem [ref=e146]:
+            - link "1. Tax Elimination Requires Multiple Levers" [ref=e147] [cursor=pointer]:
+              - /url: "#1-tax-elimination-requires-multiple-levers"
+          - listitem [ref=e148]:
+            - link "2. Paper Losses Create Real Cash Flow" [ref=e149] [cursor=pointer]:
+              - /url: "#2-paper-losses-create-real-cash-flow"
+          - listitem [ref=e150]:
+            - link "3. Family Structures Multiply Benefits" [ref=e151] [cursor=pointer]:
+              - /url: "#3-family-structures-multiply-benefits"
+          - listitem [ref=e152]:
+            - link "4. Early Retirement Requires Penalty-Free Access" [ref=e153] [cursor=pointer]:
+              - /url: "#4-early-retirement-requires-penalty-free-access"
+          - listitem [ref=e154]:
+            - link "5. Execution Is the Only Variable" [ref=e155] [cursor=pointer]:
+              - /url: "#5-execution-is-the-only-variable"
+          - listitem [ref=e156]:
+            - link "Frequently Asked Questions About Advanced Tax Strategies" [ref=e157] [cursor=pointer]:
+              - /url: "#frequently-asked-questions-about-advanced-tax-strategies"
+          - listitem [ref=e158]:
+            - link "What happens if STR regulations change in my city?" [ref=e159] [cursor=pointer]:
+              - /url: "#what-happens-if-str-regulations-change-in-my-city"
+          - listitem [ref=e160]:
+            - link "How do I document material participation hours properly?" [ref=e161] [cursor=pointer]:
+              - /url: "#how-do-i-document-material-participation-hours-properly"
+          - listitem [ref=e162]:
+            - link "Can I combine the Trader LLC with my existing brokerage account?" [ref=e163] [cursor=pointer]:
+              - /url: "#can-i-combine-the-trader-llc-with-my-existing-brokerage-account"
+          - listitem [ref=e164]:
+            - link "What's the risk of the Cash Balance Plan?" [ref=e165] [cursor=pointer]:
+              - /url: "#what-39-s-the-risk-of-the-cash-balance-plan"
+          - listitem [ref=e166]:
+            - link "How does hiring children affect their future financial aid eligibility?" [ref=e167] [cursor=pointer]:
+              - /url: "#how-does-hiring-children-affect-their-future-financial-aid-eligibility"
+          - listitem [ref=e168]:
+            - link "Ready to Build Your Own Tax Elimination Strategy?" [ref=e169] [cursor=pointer]:
+              - /url: "#ready-to-build-your-own-tax-elimination-strategy"
+      - generic [ref=e170]:
+        - generic [ref=e171]:
+          - blockquote [ref=e172]:
+            - paragraph [ref=e173]:
+              - strong [ref=e174]: "Disclaimer:"
+              - text: This content is for educational and informational purposes only. It does not constitute financial, tax, or legal advice. Every individual's financial situation is unique — consult a qualified professional before making any financial decisions. The strategies discussed are based on a personalized plan and may not be suitable for everyone.
+          - 'heading "Abigail''s Financial Overview: A Strong Foundation for Aggressive Tax Optimization" [level=2] [ref=e175]'
+          - paragraph [ref=e176]:
+            - text: "Abigail entered the Legacy Investing Show program with a crystal-clear mission:"
+            - strong [ref=e177]: eliminate her husband's entire W-2 federal income tax liability while engineering a path to financial independence before age 59½.
+            - text: This ambitious goal isn't just achievable — it's already supported by an exceptionally strong financial foundation that most households would envy.
+          - paragraph [ref=e178]: With a spouse earning $160,992 annually in W-2 income (approximately $3,096 per week), the household sits in a high federal tax bracket where strategic planning yields outsized returns. Current monthly take-home of $12,000 against $11,000 in spending leaves minimal margin for error, making every tax dollar saved immediately available for wealth acceleration rather than lifestyle inflation.
+          - paragraph [ref=e179]:
+            - text: "The asset position is remarkably robust:"
+            - strong [ref=e180]: $15,451 in liquid cash
+            - text: ","
+            - strong [ref=e181]: $183,995 in stocks and cryptocurrency holdings
+            - text: ", and most impressively,"
+            - strong [ref=e182]: $1.29 million in retirement assets
+            - text: — though heavily concentrated in Bitcoin. This concentration creates both opportunity and risk that the wealth plan strategically addresses. With $21,000 in capital loss carryforwards from 2024 and an
+            - strong [ref=e183]: approved $110,000 HELOC
+            - text: ", Abigail has immediate dry powder for strategic deployment."
+          - paragraph [ref=e184]:
+            - text: Perhaps the most powerful asset is the
+            - strong [ref=e185]: $385,000 mortgage locked at 2.625% for 30 years
+            - text: — essentially free leverage in an inflationary environment. With only $17,000 in credit card debt scheduled for payoff by December 2025, the household is positioned to enter 2026 with zero consumer debt and maximum flexibility.
+          - paragraph [ref=e186]:
+            - text: "The financial independence targets are clearly defined:"
+            - strong [ref=e187]: $3.68 million for lean FIRE (Financial Independence, Retire Early)
+            - text: and
+            - strong [ref=e188]: $4.5-5 million for comfortable retirement
+            - text: — achievable by 2029 with the aggressive strategies outlined in this plan.
+          - 'heading "Strategy 1: The Short-Term Rental \"Depreciation Bomb\" — Q3 2025 Launch" [level=2] [ref=e189]'
+          - paragraph [ref=e190]:
+            - text: The centerpiece of Abigail's tax elimination strategy is what the plan calls the
+            - strong [ref=e191]: "\"Depreciation Bomb\""
+            - text: — a cost-segregated short-term rental designed to generate up to
+            - strong [ref=e192]: $150,000 in first-year paper losses
+            - text: that directly offset W-2 income.
+          - heading "Understanding Cost Segregation for Tax Optimization" [level=3] [ref=e193]
+          - paragraph [ref=e194]: "Cost segregation is an IRS-recognized engineering-based study that reclassifies building components into shorter depreciation schedules. Instead of depreciating a residential property over 27.5 years straight-line, cost segregation identifies:"
+          - list [ref=e195]:
+            - listitem [ref=e196]:
+              - strong [ref=e197]: 5-year property
+              - text: ": Carpeting, decorative fixtures, specialty electrical for appliances"
+            - listitem [ref=e198]:
+              - strong [ref=e199]: 7-year property
+              - text: ": Furniture, appliances, equipment"
+            - listitem [ref=e200]:
+              - strong [ref=e201]: 15-year property
+              - text: ": Landscaping, paving, exterior improvements"
+            - listitem [ref=e202]:
+              - strong [ref=e203]: 27.5-year property
+              - text: ": Structural building components"
+          - paragraph [ref=e204]:
+            - text: For a
+            - strong [ref=e205]: $500,000-$600,000 short-term rental property
+            - text: ", a comprehensive cost segregation study typically identifies 20-30% of the property's value as eligible for accelerated depreciation. This means"
+            - strong [ref=e206]: $100,000-$180,000 in first-year write-offs
+            - text: through a combination of bonus depreciation (80% in 2025) and accelerated schedules.
+          - paragraph [ref=e207]:
+            - text: The plan targets a $150,000 first-year loss — conservative for this price point. At Abigail's
+            - strong [ref=e208]: 35% federal tax bracket
+            - text: ", this creates a"
+            - strong [ref=e209]: $52,500 cash tax refund
+            - text: while simultaneously building equity in an income-producing asset.
+          - heading "The Material Participation Requirement" [level=3] [ref=e210]
+          - paragraph [ref=e211]:
+            - text: To unlock these massive losses against W-2 income (rather than having them suspended as passive losses), Abigail must meet the
+            - strong [ref=e212]: IRS material participation standard
+            - text: "for short-term rental activities. The plan specifies the 100+ hours threshold with these tactical requirements:"
+          - list [ref=e213]:
+            - listitem [ref=e214]:
+              - strong [ref=e215]: Personal involvement in operations
+              - text: — not just passive investment
+            - listitem [ref=e216]:
+              - strong [ref=e217]: Active decision-making
+              - text: on pricing, guest management, and improvements
+            - listitem [ref=e218]:
+              - strong [ref=e219]: Time tracking
+              - text: via Google Sheet or app to document participation hours
+            - listitem [ref=e220]:
+              - strong [ref=e221]: Operational oversight
+              - text: rather than pure third-party management
+          - paragraph [ref=e222]: This "active participation" distinction is what separates tax professionals from amateur investors — and what makes the difference between suspended passive losses and immediate W-2 offset.
+          - heading "Execution Timeline and Deal Structure" [level=3] [ref=e223]
+          - paragraph [ref=e224]: "The plan outlines a precise Q3 2025 execution sequence:"
+          - paragraph [ref=e225]:
+            - strong [ref=e226]: "By July 15, 2025:"
+          - list [ref=e227]:
+            - listitem [ref=e228]: Define buy-box parameters (price range, zoning, occupancy rates)
+            - listitem [ref=e229]: Engage short-term rental specialized lender for pre-approval
+            - listitem [ref=e230]: Connect with local market agent familiar with STR regulations
+            - listitem [ref=e231]: Research local ordinances and licensing requirements
+          - paragraph [ref=e232]:
+            - strong [ref=e233]: "By September 30, 2025:"
+          - list [ref=e234]:
+            - listitem [ref=e235]:
+              - text: "Close on property using the strategic 10/10/80 structure:"
+              - list [ref=e236]:
+                - listitem [ref=e237]:
+                  - strong [ref=e238]: 10% down payment
+                  - text: from the $110,000 HELOC ($50,000-$60,000)
+                - listitem [ref=e239]:
+                  - strong [ref=e240]: 10% furnishings
+                  - text: via 0% credit card offers ($50,000-$60,000)
+                - listitem [ref=e241]:
+                  - strong [ref=e242]: 80% financing
+                  - text: through DSCR (Debt Service Coverage Ratio) or conventional loan
+          - paragraph [ref=e243]:
+            - strong [ref=e244]: "Within 30 days of closing:"
+          - list [ref=e245]:
+            - listitem [ref=e246]: Form single-member LLC for liability protection
+            - listitem [ref=e247]: Secure city STR license and permits
+            - listitem [ref=e248]: Open dedicated business bank account
+            - listitem [ref=e249]:
+              - strong [ref=e250]: Order cost segregation study
+              - text: — this is non-negotiable for the tax strategy
+            - listitem [ref=e251]: List on Airbnb/VRBO using Hospitable for automated messaging
+          - paragraph [ref=e252]:
+            - strong [ref=e253]: "Month 12 (September 2026):"
+          - list [ref=e254]:
+            - listitem [ref=e255]: Refinance to DSCR loan to clear HELOC and improve cash flow
+            - listitem [ref=e256]: Evaluate second STR acquisition if first unit performs
+          - heading "Tax Impact Analysis" [level=3] [ref=e257]
+          - table [ref=e258]:
+            - rowgroup [ref=e259]:
+              - row "Strategy Component Tax Benefit Cash Value" [ref=e260]:
+                - columnheader "Strategy Component" [ref=e261]
+                - columnheader "Tax Benefit" [ref=e262]
+                - columnheader "Cash Value" [ref=e263]
+            - rowgroup [ref=e264]:
+              - row "Cost Segregation ($150k loss × 35%) $52,500 refund Immediate" [ref=e265]:
+                - cell "Cost Segregation ($150k loss × 35%)" [ref=e266]
+                - cell "$52,500 refund" [ref=e267]
+                - cell "Immediate" [ref=e268]
+              - row "Bonus Depreciation on Furnishings Additional $20k-$30k Year 1" [ref=e269]:
+                - cell "Bonus Depreciation on Furnishings" [ref=e270]
+                - cell "Additional $20k-$30k" [ref=e271]
+                - cell "Year 1" [ref=e272]
+              - row "STR Operating Expense Deductions Ongoing shelter Annual" [ref=e273]:
+                - cell "STR Operating Expense Deductions" [ref=e274]
+                - cell "Ongoing shelter" [ref=e275]
+                - cell "Annual" [ref=e276]
+              - row "Total Year 1 STR Tax Benefit $70,000-$80,000 Immediate + Ongoing" [ref=e277]:
+                - cell "Total Year 1 STR Tax Benefit" [ref=e278]:
+                  - strong [ref=e279]: Total Year 1 STR Tax Benefit
+                - cell "$70,000-$80,000" [ref=e280]:
+                  - strong [ref=e281]: $70,000-$80,000
+                - cell "Immediate + Ongoing" [ref=e282]:
+                  - strong [ref=e283]: Immediate + Ongoing
+          - paragraph [ref=e284]:
+            - text: The beauty of this strategy is the
+            - strong [ref=e285]: asymmetric return profile
+            - text: ": $52,500 in tax savings on a $60,000 down payment represents an"
+            - strong [ref=e286]: 87.5% first-year return on invested cash
+            - text: — before any rental income is even considered. This is wealth acceleration at its most aggressive.
+          - 'heading "Strategy 2: Trader LLC + Section 475(f) Election — Transform Trading Losses into W-2 Shields" [level=2] [ref=e287]'
+          - paragraph [ref=e288]:
+            - text: "Abigail's existing stock and crypto holdings create an opportunity most investors miss: converting trading losses from capital treatment (limited to $3,000/year against ordinary income) to"
+            - strong [ref=e289]: ordinary loss treatment
+            - text: that offsets W-2 dollar-for-dollar.
+          - heading "The Section 475(f) Mark-to-Market Election" [level=3] [ref=e290]
+          - paragraph [ref=e291]:
+            - text: Normally, trading losses are capital losses — usable only against capital gains, with excess limited to $3,000/year carryforward. But the
+            - strong [ref=e292]: Section 475(f) mark-to-market election
+            - text: "changes everything:"
+          - list [ref=e293]:
+            - listitem [ref=e294]:
+              - strong [ref=e295]: Ordinary loss treatment
+              - text: ": Trading losses become ordinary business losses"
+            - listitem [ref=e296]:
+              - strong [ref=e297]: No wash sale rules
+              - text: ": Freely trade without 30-day restrictions"
+            - listitem [ref=e298]:
+              - strong [ref=e299]: Unlimited W-2 offset
+              - text: ": Losses directly reduce taxable W-2 income"
+            - listitem [ref=e300]:
+              - strong [ref=e301]: Solo 401(k) eligibility
+              - text: ": Business structure enables retirement contributions"
+          - paragraph [ref=e302]:
+            - text: For a household with significant trading activity and existing $21,000 capital loss carryforwards, this election could unlock
+            - strong [ref=e303]: $30,000+ in additional annual deductions
+            - text: .
+          - heading "Implementation Requirements" [level=3] [ref=e304]
+          - paragraph [ref=e305]:
+            - text: The plan specifies a
+            - strong [ref=e306]: March 15, 2026 deadline
+            - text: "for filing the election with the 2025 tax return (or as a late-filed election). The setup sequence:"
+          - list [ref=e307]:
+            - listitem [ref=e308]:
+              - strong [ref=e309]: Form Trading LLC in 2025
+              - text: — separate entity from property LLCs
+            - listitem [ref=e310]:
+              - strong [ref=e311]: Transfer active positions
+              - text: to LLC brokerage account
+            - listitem [ref=e312]:
+              - strong [ref=e313]: File Section 475(f) election
+              - text: by March 15, 2026
+            - listitem [ref=e314]:
+              - strong [ref=e315]: Open Solo 401(k)
+              - text: with $69,000 annual contribution capacity ($23,000 employee + $46,000 employer)
+            - listitem [ref=e316]:
+              - strong [ref=e317]: Implement systematic trading
+              - text: with ordinary loss protection
+          - heading "Combined Impact with Solo 401(k)" [level=3] [ref=e318]
+          - paragraph [ref=e319]: "The Solo 401(k) supercharges the strategy:"
+          - list [ref=e320]:
+            - listitem [ref=e321]:
+              - strong [ref=e322]: $23,000 employee deferral
+              - text: (Roth or traditional)
+            - listitem [ref=e323]:
+              - strong [ref=e324]: $46,000 employer contribution
+              - text: (up to 25% of net self-employment income)
+            - listitem [ref=e325]:
+              - strong [ref=e326]: Total $69,000 annual shelter
+              - text: from current-year income
+            - listitem [ref=e327]:
+              - strong [ref=e328]: Catch-up contributions
+              - text: available after age 50
+          - paragraph [ref=e329]:
+            - text: Combined with the Section 475(f) ordinary loss treatment, this creates a
+            - strong [ref=e330]: second major deduction bucket
+            - text: independent from real estate strategies.
+          - 'heading "Strategy 3: S-Corporation + Cash Balance Plan — The Six-Figure Tax Shelter" [level=2] [ref=e331]'
+          - paragraph [ref=e332]:
+            - text: For 2026 and beyond, the plan layers in the S-Corporation structure combined with a
+            - strong [ref=e333]: Cash Balance Plan
+            - text: — a defined benefit pension plan that allows massive annual contributions far exceeding 401(k) limits.
+          - heading "S-Corporation Fundamentals" [level=3] [ref=e334]
+          - paragraph [ref=e335]: "An S-Corp creates two powerful tax advantages:"
+          - list [ref=e336]:
+            - listitem [ref=e337]:
+              - strong [ref=e338]: Self-employment tax savings
+              - text: ": Only \"reasonable salary\" is subject to Social Security/Medicare taxes; distributions are exempt"
+            - listitem [ref=e339]:
+              - strong [ref=e340]: Business deduction expansion
+              - text: ": Health insurance, HSA contributions, and Section 179 deductions become available"
+          - paragraph [ref=e341]: "For a business generating $200,000+ in net income, the typical structure yields:"
+          - list [ref=e342]:
+            - listitem [ref=e343]:
+              - strong [ref=e344]: $60,000 reasonable salary
+              - text: (subject to payroll taxes)
+            - listitem [ref=e345]:
+              - strong [ref=e346]: $140,000 distribution
+              - text: (self-employment tax exempt)
+            - listitem [ref=e347]:
+              - strong [ref=e348]: $15,000+ annual payroll tax savings
+              - text: vs. sole proprietorship
+          - heading "The Cash Balance Plan Power Play" [level=3] [ref=e349]
+          - paragraph [ref=e350]:
+            - text: While a Solo 401(k) caps at $69,000, a
+            - strong [ref=e351]: Cash Balance Plan
+            - text: allows contributions based on age and compensation — often
+            - strong [ref=e352]: $100,000-$300,000 annually
+            - text: for business owners in their 40s-50s.
+          - paragraph [ref=e353]:
+            - text: The plan targets a
+            - strong [ref=e354]: $100,000 annual Cash Balance contribution
+            - text: ":"
+          - list [ref=e355]:
+            - listitem [ref=e356]:
+              - strong [ref=e357]: Actuary-designed benefit formula
+              - text: (required professional administration)
+            - listitem [ref=e358]:
+              - strong [ref=e359]: $4,000/year administrative cost
+              - text: (minimal relative to tax savings)
+            - listitem [ref=e360]:
+              - strong [ref=e361]: $100,000 × 35% = $35,000 annual tax deferral
+            - listitem [ref=e362]:
+              - strong [ref=e363]: Compound growth tax-deferred
+              - text: until retirement distributions
+          - heading "Implementation Timeline" [level=3] [ref=e364]
+          - paragraph [ref=e365]:
+            - strong [ref=e366]: "By March 15, 2026:"
+          - list [ref=e367]:
+            - listitem [ref=e368]: File Form 2553 for S-Corp election (effective January 1, 2026)
+            - listitem [ref=e369]: Establish reasonable salary of $60,000
+            - listitem [ref=e370]: Implement payroll system for proper documentation
+          - paragraph [ref=e371]:
+            - strong [ref=e372]: "By Q2 2026:"
+          - list [ref=e373]:
+            - listitem [ref=e374]: Engage actuary to design Cash Balance Plan
+            - listitem [ref=e375]: Adopt plan documents and IRS determination letter
+            - listitem [ref=e376]: Begin $100,000 annual contributions ($8,333/month)
+          - 'heading "Strategy 4: QSEHRA — Tax-Free Medical Reimbursement Up to $12,450/Year" [level=2] [ref=e377]'
+          - paragraph [ref=e378]:
+            - text: The
+            - strong [ref=e379]: Qualified Small Employer Health Reimbursement Arrangement (QSEHRA)
+            - text: allows the S-Corp to reimburse medical expenses tax-free — a benefit often overlooked by small business owners.
+          - heading "How QSEHRA Works" [level=3] [ref=e380]
+          - list [ref=e381]:
+            - listitem [ref=e382]:
+              - strong [ref=e383]: S-Corp adopts QSEHRA plan
+              - text: with written documentation
+            - listitem [ref=e384]:
+              - strong [ref=e385]: Employees (Abigail and spouse) incur medical expenses
+              - text: — premiums, deductibles, copays, dental, vision
+            - listitem [ref=e386]:
+              - strong [ref=e387]: Submit receipts monthly
+              - text: to the company
+            - listitem [ref=e388]:
+              - strong [ref=e389]: Company reimburses through payroll
+              - text: — 100% tax-free to employee, 100% deductible to business
+          - paragraph [ref=e390]: "For 2025, the maximum reimbursement is:"
+          - list [ref=e391]:
+            - listitem [ref=e392]:
+              - strong [ref=e393]: $6,150 for single coverage
+            - listitem [ref=e394]:
+              - strong [ref=e395]: $12,450 for family coverage
+          - paragraph [ref=e396]:
+            - text: At a 35% tax bracket, this represents
+            - strong [ref=e397]: $4,358 in tax savings annually
+            - text: while improving healthcare affordability.
+          - heading "Strategic Front-Loading" [level=3] [ref=e398]
+          - paragraph [ref=e399]:
+            - text: The plan recommends
+            - strong [ref=e400]: front-loading elective medical procedures
+            - text: during years with heavy STR depreciation losses. This creates maximum deductions in years with zero taxable income, effectively making medical care completely tax-subsidized.
+          - 'heading "Strategy 5: Augusta Rule + Kids on Payroll — $44,200 in Tax-Free Household Income" [level=2] [ref=e401]'
+          - paragraph [ref=e402]:
+            - text: The combination of the
+            - strong [ref=e403]: Augusta Rule (IRC Section 280A)
+            - text: and hiring children creates
+            - strong [ref=e404]: $44,200 in annual tax-free household income
+            - text: — one of the most powerful yet underutilized family tax strategies.
+          - 'heading "The Augusta Rule: 14 Days of Tax-Free Rental Income" [level=3] [ref=e405]'
+          - paragraph [ref=e406]:
+            - text: The Augusta Rule allows homeowners to rent their primary residence to their own business for up to
+            - strong [ref=e407]: 14 days per year
+            - text: ", completely tax-free at the federal level. No income is reported, no expenses are deducted, and the income is invisible to the IRS."
+          - paragraph [ref=e408]:
+            - strong [ref=e409]: "Execution framework:"
+          - list [ref=e410]:
+            - listitem [ref=e411]:
+              - strong [ref=e412]: Document fair market rental rate
+              - text: — pull 3 comparable short-term rental listings
+            - listitem [ref=e413]:
+              - strong [ref=e414]: Corporate minutes approval
+              - text: — formal authorization of meeting/event rental
+            - listitem [ref=e415]:
+              - strong [ref=e416]: Invoice the S-Corp
+              - text: — proper documentation of business purpose
+            - listitem [ref=e417]:
+              - strong [ref=e418]: 14 days at $500/day = $7,000 tax-free income
+          - paragraph [ref=e419]: The $500/day rate must be justified by comparable luxury short-term rentals in the area — but for high-end homes in desirable locations, this is often conservative.
+          - 'heading "Kids on Payroll: $14,600 Tax-Free per Child" [level=3] [ref=e420]'
+          - paragraph [ref=e421]:
+            - text: For households with children under 18, the
+            - strong [ref=e422]: "\"kids on payroll\" strategy"
+            - text: "is transformative:"
+          - list [ref=e423]:
+            - listitem [ref=e424]:
+              - strong [ref=e425]: $14,600 standard deduction
+              - text: (2025) means first $14,600 of earned income is federal tax-free
+            - listitem [ref=e426]:
+              - strong [ref=e427]: No payroll taxes
+              - text: for children under 18 employed by parents' S-Corp
+            - listitem [ref=e428]:
+              - strong [ref=e429]: Roth IRA contributions
+              - text: allowed — up to $7,000/year (2025) can go into tax-free retirement accounts
+            - listitem [ref=e430]:
+              - strong [ref=e431]: Business deduction
+              - text: for the S-Corp
+          - paragraph [ref=e432]: "With two daughters, Abigail can:"
+          - list [ref=e433]:
+            - listitem [ref=e434]:
+              - strong [ref=e435]: Pay each daughter $14,600/year
+              - text: for legitimate business tasks (photography, social media, administrative support)
+            - listitem [ref=e436]:
+              - strong [ref=e437]: Deduct $29,200 total
+              - text: from S-Corp income
+            - listitem [ref=e438]:
+              - strong [ref=e439]: Daughters pay $0 federal income tax
+              - text: (covered by standard deduction)
+            - listitem [ref=e440]:
+              - strong [ref=e441]: Fund $7,000 Roth IRA
+              - text: for each daughter — starting retirement savings at age 0 with decades of compound growth ahead
+          - heading "Combined Family Tax Strategy" [level=3] [ref=e442]
+          - table [ref=e443]:
+            - rowgroup [ref=e444]:
+              - row "Strategy Tax-Free Income Business Deduction Net Tax Benefit" [ref=e445]:
+                - columnheader "Strategy" [ref=e446]
+                - columnheader "Tax-Free Income" [ref=e447]
+                - columnheader "Business Deduction" [ref=e448]
+                - columnheader "Net Tax Benefit" [ref=e449]
+            - rowgroup [ref=e450]:
+              - row "Augusta Rule $7,000 $0 $2,450 (35% bracket)" [ref=e451]:
+                - cell "Augusta Rule" [ref=e452]
+                - cell "$7,000" [ref=e453]
+                - cell "$0" [ref=e454]
+                - cell "$2,450 (35% bracket)" [ref=e455]
+              - row "Kids on Payroll (2 children) $29,200 $29,200 $10,220" [ref=e456]:
+                - cell "Kids on Payroll (2 children)" [ref=e457]
+                - cell "$29,200" [ref=e458]
+                - cell "$29,200" [ref=e459]
+                - cell "$10,220" [ref=e460]
+              - row "Total Family Strategies $36,200 $29,200 $12,670/year" [ref=e461]:
+                - cell "Total Family Strategies" [ref=e462]:
+                  - strong [ref=e463]: Total Family Strategies
+                - cell "$36,200" [ref=e464]:
+                  - strong [ref=e465]: $36,200
+                - cell "$29,200" [ref=e466]:
+                  - strong [ref=e467]: $29,200
+                - cell "$12,670/year" [ref=e468]:
+                  - strong [ref=e469]: $12,670/year
+          - paragraph [ref=e470]: This is wealth building across generations — parents reduce current tax burden while children begin retirement savings with decades of tax-free growth ahead.
+          - 'heading "Strategy 6: Roth Conversion Ladder — Penalty-Free Early Retirement Access" [level=2] [ref=e471]'
+          - paragraph [ref=e472]:
+            - text: The
+            - strong [ref=e473]: Roth Conversion Ladder
+            - text: is the key mechanism for accessing retirement funds before age 59½ without penalties. This strategy transforms traditional 401(k) and IRA balances into penalty-free accessible income within 5 years.
+          - heading "How the Roth Conversion Ladder Works" [level=3] [ref=e474]
+          - list [ref=e475]:
+            - listitem [ref=e476]:
+              - strong [ref=e477]: Convert traditional 401(k)/IRA to Roth IRA
+              - text: — pay ordinary income tax on conversion amount
+            - listitem [ref=e478]:
+              - strong [ref=e479]: Wait 5 years
+              - text: from January 1 of the conversion year
+            - listitem [ref=e480]:
+              - strong [ref=e481]: Withdraw converted principal penalty-free
+              - text: — regardless of age
+            - listitem [ref=e482]:
+              - strong [ref=e483]: Repeat annually
+              - text: to create rolling access ladder
+          - heading "Abigail's Zero-Tax Conversion Strategy" [level=3] [ref=e484]
+          - paragraph [ref=e485]:
+            - text: The genius of combining this with STR cost segregation is the
+            - strong [ref=e486]: ability to convert during years of zero taxable income
+            - text: ":"
+          - list [ref=e487]:
+            - listitem [ref=e488]:
+              - strong [ref=e489]: November tax projection
+              - text: — estimate annual depreciation and other losses
+            - listitem [ref=e490]:
+              - strong [ref=e491]: Match conversion amount to losses
+              - text: — creating net zero taxable income
+            - listitem [ref=e492]:
+              - strong [ref=e493]: $50,000-$100,000 annual conversions
+              - text: at 0% effective tax rate
+            - listitem [ref=e494]:
+              - strong [ref=e495]: First tranche available penalty-free in 2029
+              - text: — the year Abigail targets financial independence
+          - heading "2025-2029 Conversion Timeline" [level=3] [ref=e496]
+          - table [ref=e497]:
+            - rowgroup [ref=e498]:
+              - row "Year Conversion Amount Tax Rate Effective Tax Cost Penalty-Free Access" [ref=e499]:
+                - columnheader "Year" [ref=e500]
+                - columnheader "Conversion Amount" [ref=e501]
+                - columnheader "Tax Rate" [ref=e502]
+                - columnheader "Effective Tax Cost" [ref=e503]
+                - columnheader "Penalty-Free Access" [ref=e504]
+            - rowgroup [ref=e505]:
+              - row "2025 $75,000 35% bracket offset by $75k+ losses $0 2030" [ref=e506]:
+                - cell "2025" [ref=e507]
+                - cell "$75,000" [ref=e508]
+                - cell "35% bracket offset by $75k+ losses" [ref=e509]
+                - cell "$0" [ref=e510]
+                - cell "2030" [ref=e511]
+              - row "2026 $100,000 35% bracket offset by $100k+ losses $0 2031" [ref=e512]:
+                - cell "2026" [ref=e513]
+                - cell "$100,000" [ref=e514]
+                - cell "35% bracket offset by $100k+ losses" [ref=e515]
+                - cell "$0" [ref=e516]
+                - cell "2031" [ref=e517]
+              - row "2027 $100,000 35% bracket offset by $100k+ losses $0 2032" [ref=e518]:
+                - cell "2027" [ref=e519]
+                - cell "$100,000" [ref=e520]
+                - cell "35% bracket offset by $100k+ losses" [ref=e521]
+                - cell "$0" [ref=e522]
+                - cell "2032" [ref=e523]
+              - row "2028 $100,000 35% bracket offset by $100k+ losses $0 2033" [ref=e524]:
+                - cell "2028" [ref=e525]
+                - cell "$100,000" [ref=e526]
+                - cell "35% bracket offset by $100k+ losses" [ref=e527]
+                - cell "$0" [ref=e528]
+                - cell "2033" [ref=e529]
+          - paragraph [ref=e530]:
+            - text: By 2029, Abigail has
+            - strong [ref=e531]: $375,000 in penalty-accessible Roth principal
+            - text: plus all associated growth — creating a sustainable early retirement income stream decades before traditional retirement age.
+          - 'heading "Strategy 7: Bitcoin Accumulation with MSTY Yield Component" [level=2] [ref=e532]'
+          - paragraph [ref=e533]:
+            - text: With
+            - strong [ref=e534]: $1.29 million already in retirement assets
+            - text: and significant monthly savings capacity, Abigail's wealth plan designates
+            - strong [ref=e535]: Bitcoin as the primary uncapped growth vehicle
+            - text: with a
+            - strong [ref=e536]: MSTY ETF income sleeve
+            - text: for monthly cash flow.
+          - heading "Bitcoin Dollar-Cost Averaging Strategy" [level=3] [ref=e537]
+          - paragraph [ref=e538]: "The plan specifies systematic accumulation:"
+          - list [ref=e539]:
+            - listitem [ref=e540]:
+              - strong [ref=e541]: 30% of free cash flow
+              - text: → monthly BTC DCA (approximately $1,000/month initially)
+            - listitem [ref=e542]:
+              - strong [ref=e543]: 30% of tax refunds
+              - text: → lump-sum BTC purchases
+            - listitem [ref=e544]:
+              - strong [ref=e545]: No preset cap
+              - text: — continuous accumulation until obligations and emergency funds are met
+            - listitem [ref=e546]:
+              - strong [ref=e547]: Hardware wallet custody
+              - text: → 2-of-3 multi-signature setup once holdings exceed 1 BTC
+          - heading "MSTY ETF for Monthly Income" [level=3] [ref=e548]
+          - paragraph [ref=e549]:
+            - text: The
+            - strong [ref=e550]: Market State Tactical Yield ETF (MSTY)
+            - text: "provides an income component:"
+          - list [ref=e551]:
+            - listitem [ref=e552]:
+              - strong [ref=e553]: ~10% annualized yield
+              - text: paid monthly
+            - listitem [ref=e554]:
+              - strong [ref=e555]: Options overlay strategy
+              - text: on MicroStrategy stock
+            - listitem [ref=e556]:
+              - strong [ref=e557]: Allocate up to 10% of portfolio
+              - text: within tax-advantaged accounts
+            - listitem [ref=e558]:
+              - strong [ref=e559]: $25,000 allocation = $2,500/year
+              - text: in additional cash flow
+          - paragraph [ref=e560]:
+            - text: The combination creates
+            - strong [ref=e561]: uncapped upside exposure
+            - text: (Bitcoin) with
+            - strong [ref=e562]: predictable monthly income
+            - text: (MSTY) — ideal for a household targeting aggressive growth with income stability.
+          - 'heading "12-Month Execution Timeline: From Strategy to Results" [level=2] [ref=e563]'
+          - table [ref=e564]:
+            - rowgroup [ref=e565]:
+              - row "Timeline Action Item Expected Result" [ref=e566]:
+                - columnheader "Timeline" [ref=e567]
+                - columnheader "Action Item" [ref=e568]
+                - columnheader "Expected Result" [ref=e569]
+            - rowgroup [ref=e570]:
+              - row "Q2 2025 Define STR buy-box, activate HELOC, connect with specialized STR lender and agent Acquisition-ready by July 1" [ref=e571]:
+                - cell "Q2 2025" [ref=e572]:
+                  - strong [ref=e573]: Q2 2025
+                - cell "Define STR buy-box, activate HELOC, connect with specialized STR lender and agent" [ref=e574]
+                - cell "Acquisition-ready by July 1" [ref=e575]
+              - row "July 2025 Begin $1,000/month BTC DCA automation Disciplined accumulation begins" [ref=e576]:
+                - cell "July 2025" [ref=e577]:
+                  - strong [ref=e578]: July 2025
+                - cell "Begin $1,000/month BTC DCA automation" [ref=e579]
+                - cell "Disciplined accumulation begins" [ref=e580]
+              - row "August 15, 2025 Close STR property, order cost segregation study, launch listing $150,000 depreciation locked" [ref=e581]:
+                - cell "August 15, 2025" [ref=e582]:
+                  - strong [ref=e583]: August 15, 2025
+                - cell "Close STR property, order cost segregation study, launch listing" [ref=e584]
+                - cell "$150,000 depreciation locked" [ref=e585]
+              - row "Q3 2025 Access complimentary STR Skool community training Operational excellence accelerated" [ref=e586]:
+                - cell "Q3 2025" [ref=e587]:
+                  - strong [ref=e588]: Q3 2025
+                - cell "Access complimentary STR Skool community training" [ref=e589]
+                - cell "Operational excellence accelerated" [ref=e590]
+              - row "Q4 2025 Open Solo 401(k) and QSEHRA under Trading LLC Additional deductions activated" [ref=e591]:
+                - cell "Q4 2025" [ref=e592]:
+                  - strong [ref=e593]: Q4 2025
+                - cell "Open Solo 401(k) and QSEHRA under Trading LLC" [ref=e594]
+                - cell "Additional deductions activated" [ref=e595]
+              - row "November 2025 Run AGI projection, execute tax-free Roth conversion Zero-tax conversion completed" [ref=e596]:
+                - cell "November 2025" [ref=e597]:
+                  - strong [ref=e598]: November 2025
+                - cell "Run AGI projection, execute tax-free Roth conversion" [ref=e599]
+                - cell "Zero-tax conversion completed" [ref=e600]
+              - row "March 15, 2026 File Section 475(f) and S-Corp elections W-2 protection structure in place" [ref=e601]:
+                - cell "March 15, 2026" [ref=e602]:
+                  - strong [ref=e603]: March 15, 2026
+                - cell "File Section 475(f) and S-Corp elections" [ref=e604]
+                - cell "W-2 protection structure in place" [ref=e605]
+              - row "Q2 2026 Establish Cash Balance Plan, contribute $100,000 $35,000 annual tax deferral active" [ref=e606]:
+                - cell "Q2 2026" [ref=e607]:
+                  - strong [ref=e608]: Q2 2026
+                - cell "Establish Cash Balance Plan, contribute $100,000" [ref=e609]
+                - cell "$35,000 annual tax deferral active" [ref=e610]
+              - row "Q3 2026 Evaluate second STR or oil & gas drilling investment Rolling ROI strategy deployed" [ref=e611]:
+                - cell "Q3 2026" [ref=e612]:
+                  - strong [ref=e613]: Q3 2026
+                - cell "Evaluate second STR or oil & gas drilling investment" [ref=e614]
+                - cell "Rolling ROI strategy deployed" [ref=e615]
+          - 'heading "Year-One ROI Summary: $108,600 in Total Value" [level=2] [ref=e616]'
+          - table [ref=e617]:
+            - rowgroup [ref=e618]:
+              - row "Strategy Component Conservative Aggressive Notes" [ref=e619]:
+                - columnheader "Strategy Component" [ref=e620]
+                - columnheader "Conservative" [ref=e621]
+                - columnheader "Aggressive" [ref=e622]
+                - columnheader "Notes" [ref=e623]
+            - rowgroup [ref=e624]:
+              - row "STR Depreciation Refund $52,500 $52,500 Locked via cost segregation" [ref=e625]:
+                - cell "STR Depreciation Refund" [ref=e626]
+                - cell "$52,500" [ref=e627]
+                - cell "$52,500" [ref=e628]
+                - cell "Locked via cost segregation" [ref=e629]
+              - row "S-Corp Self-Employment Tax Savings $15,000 $15,000 On $200k+ business income" [ref=e630]:
+                - cell "S-Corp Self-Employment Tax Savings" [ref=e631]
+                - cell "$15,000" [ref=e632]
+                - cell "$15,000" [ref=e633]
+                - cell "On $200k+ business income" [ref=e634]
+              - row "QSEHRA Medical Deduction $9,600 $9,600 Family coverage max" [ref=e635]:
+                - cell "QSEHRA Medical Deduction" [ref=e636]
+                - cell "$9,600" [ref=e637]
+                - cell "$9,600" [ref=e638]
+                - cell "Family coverage max" [ref=e639]
+              - row "Augusta Rule + Kids Payroll $15,000 $15,000 $7k + $14.6k × 2" [ref=e640]:
+                - cell "Augusta Rule + Kids Payroll" [ref=e641]
+                - cell "$15,000" [ref=e642]
+                - cell "$15,000" [ref=e643]
+                - cell "$7k + $14.6k × 2" [ref=e644]
+              - row "Trader Loss Offset $8,000 $9,000 Section 475(f) benefit" [ref=e645]:
+                - cell "Trader Loss Offset" [ref=e646]
+                - cell "$8,000" [ref=e647]
+                - cell "$9,000" [ref=e648]
+                - cell "Section 475(f) benefit" [ref=e649]
+              - row "BTC DCA Growth $6,000 $6,000 From $12k contribution" [ref=e650]:
+                - cell "BTC DCA Growth" [ref=e651]
+                - cell "$6,000" [ref=e652]
+                - cell "$6,000" [ref=e653]
+                - cell "From $12k contribution" [ref=e654]
+              - row "MSTY Cash Yield $2,500 $2,500 10% on $25k allocation" [ref=e655]:
+                - cell "MSTY Cash Yield" [ref=e656]
+                - cell "$2,500" [ref=e657]
+                - cell "$2,500" [ref=e658]
+                - cell "10% on $25k allocation" [ref=e659]
+              - row "Total 12-Month ROI $108,600 $110,600+ On $7,800 program investment" [ref=e660]:
+                - cell "Total 12-Month ROI" [ref=e661]:
+                  - strong [ref=e662]: Total 12-Month ROI
+                - cell "$108,600" [ref=e663]:
+                  - strong [ref=e664]: $108,600
+                - cell "$110,600+" [ref=e665]:
+                  - strong [ref=e666]: $110,600+
+                - cell "On $7,800 program investment" [ref=e667]:
+                  - strong [ref=e668]: On $7,800 program investment
+          - paragraph [ref=e669]:
+            - text: The
+            - strong [ref=e670]: return on investment is extraordinary
+            - text: ": $108,600 in first-year value from a $7,800 program investment represents a"
+            - strong [ref=e671]: 1,390% ROI
+            - text: — before compounding, before appreciation, before the second year's strategies layer on top.
+          - 'heading "Key Takeaways: Lessons from Abigail''s Wealth Plan" [level=2] [ref=e672]'
+          - heading "1. Tax Elimination Requires Multiple Levers" [level=3] [ref=e673]
+          - paragraph [ref=e674]:
+            - text: No single strategy eliminates $52,500+ in W-2 tax liability. Abigail's plan combines
+            - strong [ref=e675]: STR cost segregation, S-Corp structures, trading loss elections, family employment strategies, and retirement planning
+            - text: to create comprehensive tax shelter.
+          - heading "2. Paper Losses Create Real Cash Flow" [level=3] [ref=e676]
+          - paragraph [ref=e677]:
+            - text: The
+            - strong [ref=e678]: $150,000 first-year depreciation
+            - text: isn't "fake" — it generates a
+            - strong [ref=e679]: $52,500 cash refund
+            - text: that funds additional investments. Paper losses become real liquidity when properly structured.
+          - heading "3. Family Structures Multiply Benefits" [level=3] [ref=e680]
+          - paragraph [ref=e681]:
+            - text: The combination of
+            - strong [ref=e682]: Augusta Rule + Kids on Payroll
+            - text: doesn't just save taxes — it begins generational wealth transfer. Children with Roth IRAs at age 0-10 have 50+ years of compound growth ahead.
+          - heading "4. Early Retirement Requires Penalty-Free Access" [level=3] [ref=e683]
+          - paragraph [ref=e684]:
+            - text: The
+            - strong [ref=e685]: Roth Conversion Ladder
+            - text: is the mechanism for accessing funds before 59½. Starting conversions in 2025 means penalty-free access beginning 2029 — exactly when financial independence is targeted.
+          - heading "5. Execution Is the Only Variable" [level=3] [ref=e686]
+          - paragraph [ref=e687]:
+            - text: Abigail has the capital, the knowledge, and the plan.
+            - strong [ref=e688]: Every day of delay is wealth left on the table.
+            - text: The July 15, 2025 STR buy-box deadline isn't arbitrary — it's the date that determines whether the $52,500 refund arrives in April 2026 or is delayed an entire year.
+          - heading "Frequently Asked Questions About Advanced Tax Strategies" [level=2] [ref=e689]
+          - heading "What happens if STR regulations change in my city?" [level=3] [ref=e690]
+          - paragraph [ref=e691]:
+            - text: The plan addresses this by prioritizing
+            - strong [ref=e692]: markets with STR-friendly regulations
+            - text: and structuring for
+            - strong [ref=e693]: medium-term flexibility
+            - text: . If regulations tighten, a cost-segregated property can pivot to long-term rental (still generating depreciation) or be sold with 1031 exchange treatment into a replacement property. The $150,000 depreciation is locked in year one — future regulatory changes don't eliminate already-taken deductions.
+          - heading "How do I document material participation hours properly?" [level=3] [ref=e694]
+          - paragraph [ref=e695]:
+            - strong [ref=e696]: Contemporaneous time tracking
+            - text: "is essential. The plan recommends:"
+          - list [ref=e697]:
+            - listitem [ref=e698]:
+              - strong [ref=e699]: Google Sheet or Toggl app
+              - text: for daily logging
+            - listitem [ref=e700]:
+              - strong [ref=e701]: Activity categories
+              - text: ": guest communication, pricing decisions, maintenance oversight, supply purchasing, financial review"
+            - listitem [ref=e702]:
+              - strong [ref=e703]: Minimum 100 hours annually
+              - text: with clear business purpose
+            - listitem [ref=e704]:
+              - strong [ref=e705]: More participation than any other individual
+              - text: involved in the property
+          - paragraph [ref=e706]: During an audit, the IRS will request this documentation — maintaining it in real-time is far easier than reconstructing it later.
+          - heading "Can I combine the Trader LLC with my existing brokerage account?" [level=3] [ref=e707]
+          - paragraph [ref=e708]:
+            - strong [ref=e709]: "No"
+            - text: — the Section 475(f) election applies to the entity level. The plan specifies forming a
+            - strong [ref=e710]: new Trading LLC
+            - text: and
+            - strong [ref=e711]: transferring positions
+            - text: to a dedicated LLC brokerage account. Commingling personal and business trading undermines the election and could invalidate the ordinary loss treatment.
+          - heading "What's the risk of the Cash Balance Plan?" [level=3] [ref=e712]
+          - paragraph [ref=e713]:
+            - text: Cash Balance Plans are
+            - strong [ref=e714]: defined benefit plans
+            - text: with actuarially required annual funding. Unlike 401(k)s where contributions are discretionary, Cash Balance Plans have
+            - strong [ref=e715]: minimum annual contributions
+            - text: "determined by the actuary. The plan accounts for this by:"
+          - list [ref=e716]:
+            - listitem [ref=e717]: Starting with a conservative $100,000 target (adjustable with actuary)
+            - listitem [ref=e718]: Maintaining 6+ months operating expenses in reserve
+            - listitem [ref=e719]: Building the S-Corp income to support consistent funding
+          - paragraph [ref=e720]: The $4,000 annual administrative cost is minimal relative to the $35,000 tax benefit.
+          - heading "How does hiring children affect their future financial aid eligibility?" [level=3] [ref=e721]
+          - paragraph [ref=e722]:
+            - strong [ref=e723]: Positively
+            - text: — earned income from legitimate work often improves financial aid profiles compared to unearned income (interest, dividends). Additionally, Roth IRA assets held by children are
+            - strong [ref=e724]: not reported on FAFSA
+            - text: as student assets. The plan's approach of legitimate work with proper documentation (timesheets, job descriptions, W-2s) creates defensible positions for all purposes.
+          - heading "Ready to Build Your Own Tax Elimination Strategy?" [level=2] [ref=e725]
+          - paragraph [ref=e726]:
+            - text: Abigail's wealth plan demonstrates that
+            - strong [ref=e727]: eliminating six-figure W-2 tax liability isn't theoretical
+            - text: — it's a mechanical process of combining IRS-recognized strategies with disciplined execution. The difference between households that pay $50,000+ annually in federal taxes and those that redirect those dollars to wealth building isn't income level or luck —
+            - strong [ref=e728]: it's knowledge and action.
+          - paragraph [ref=e729]: "Every element of this plan is available to qualifying households:"
+          - list [ref=e730]:
+            - listitem [ref=e731]: Cost segregation studies are widely available from specialized engineering firms
+            - listitem [ref=e732]: S-Corp and Cash Balance Plan structures are implemented by thousands of small businesses
+            - listitem [ref=e733]: Solo 401(k)s are offered by major brokerages (Fidelity, Schwab, E*Trade)
+            - listitem [ref=e734]: The Augusta Rule and family employment strategies are published in IRS guidance
+          - paragraph [ref=e735]:
+            - strong [ref=e736]: The strategies are public. The execution is private.
+          - paragraph [ref=e737]:
+            - text: If you're ready to transform your tax burden from a liability into a wealth-building weapon, the
+            - link "Legacy Investing Show programs" [ref=e738] [cursor=pointer]:
+              - /url: https://www.legacyinvestingshow.com/programs
+            - text: provide the education, community, and support to implement these strategies in your own financial life.
+          - paragraph [ref=e739]:
+            - text: "Your wealth plan won't look exactly like Abigail's — every household's situation is unique. But the principles remain constant:"
+            - strong [ref=e740]: aggressive tax optimization, strategic asset deployment, and relentless execution toward financial independence.
+          - paragraph [ref=e741]:
+            - strong [ref=e742]: The best time to start was yesterday. The second-best time is today.
+          - separator [ref=e743]
+          - paragraph [ref=e744]:
+            - emphasis [ref=e745]: This educational analysis is based on a personalized wealth plan prepared for educational purposes. Individual results will vary based on specific circumstances, market conditions, and implementation quality. Always consult qualified tax, legal, and financial professionals before implementing advanced strategies.
+        - complementary [ref=e746]:
+          - generic [ref=e747]:
+            - img "Preston Seo" [ref=e749]
+            - generic [ref=e750]:
+              - paragraph [ref=e751]: Preston Seo
+              - paragraph [ref=e752]: Financial Educator & Real Estate Investor
+              - paragraph [ref=e753]: Preston has built a $15M+ real estate portfolio and helped 2,000+ students improve tax decisions, wealth systems, and long-term financial execution.
+              - link "Learn more about Preston Seo →" [ref=e754] [cursor=pointer]:
+                - /url: /about
+        - region "Frequently asked questions" [ref=e755]:
+          - heading "Frequently Asked Questions" [level=2] [ref=e756]
+          - generic [ref=e757]:
+            - generic [ref=e758]:
+              - button "How can cost segregation on a short-term rental eliminate W-2 tax liability?" [expanded] [ref=e759] [cursor=pointer]:
+                - generic [ref=e760]: How can cost segregation on a short-term rental eliminate W-2 tax liability?
+                - img [ref=e761]
+              - paragraph [ref=e765]: Cost segregation accelerates depreciation by separating building components into 5, 7, and 15-year property categories. For a $500-600K STR, this creates up to $150,000 in first-year paper losses. At a 35% tax bracket, these losses offset W-2 income dollar-for-dollar, generating a $52,500 cash refund while building real estate equity.
+            - generic [ref=e766]:
+              - button "What is the Augusta Rule and how does it save $7,000+ annually?" [ref=e767] [cursor=pointer]:
+                - generic [ref=e768]: What is the Augusta Rule and how does it save $7,000+ annually?
+                - img [ref=e769]
+              - paragraph [ref=e773]: The Augusta Rule (IRC Section 280A) allows homeowners to rent their primary residence to their own business for up to 14 days per year, completely tax-free. At $500/day fair market rate, this moves $7,000 from taxable business income to tax-free personal income while maintaining full mortgage deductions.
+            - generic [ref=e774]:
+              - button "How does a Roth conversion ladder enable penalty-free early retirement?" [ref=e775] [cursor=pointer]:
+                - generic [ref=e776]: How does a Roth conversion ladder enable penalty-free early retirement?
+                - img [ref=e777]
+              - paragraph [ref=e781]: A Roth conversion ladder converts traditional 401(k) funds to Roth annually, matching conversions to depreciation losses for zero-tax conversions. After 5 years, each conversion tranche becomes accessible penalty-free. Starting in 2025, Abigail's first conversions become available in 2029, creating a penalty-free income stream before age 59½.
+            - generic [ref=e782]:
+              - button "What makes Bitcoin accumulation a primary wealth strategy in this plan?" [ref=e783] [cursor=pointer]:
+                - generic [ref=e784]: What makes Bitcoin accumulation a primary wealth strategy in this plan?
+                - img [ref=e785]
+              - paragraph [ref=e789]: With $12,000+ annual capacity for alternative investments and existing crypto exposure, systematic Bitcoin dollar-cost averaging (30% of free cash flow) compounds over time. The plan targets moving 50% of retirement assets to Bitcoin while maintaining MSTY ETF for monthly yield, creating uncapped upside potential with income stability.
+            - generic [ref=e790]:
+              - button "How does hiring children through an S-Corp create $14,600 tax-free income per child?" [ref=e791] [cursor=pointer]:
+                - generic [ref=e792]: How does hiring children through an S-Corp create $14,600 tax-free income per child?
+                - img [ref=e793]
+              - paragraph [ref=e797]: Children under 18 employed by a parent's S-Corp can earn up to $14,600 (2025 standard deduction) completely federal income tax-free. The S-Corp deducts wages as a business expense, and children can contribute to Roth IRAs, jumpstarting tax-free retirement savings while reducing household tax burden.
+            - generic [ref=e798]:
+              - button "What is a Section 475(f) election and why file it by March 2026?" [ref=e799] [cursor=pointer]:
+                - generic [ref=e800]: What is a Section 475(f) election and why file it by March 2026?
+                - img [ref=e801]
+              - paragraph [ref=e805]: The Section 475(f) mark-to-market election converts capital gains/losses from trading into ordinary income/losses, enabling trading losses to offset W-2 income directly. Filed with the 2025 tax return by March 15, 2026, it creates a new deduction bucket that can shelter $30,000+ in income while maintaining full Solo 401(k) contribution capacity.
+        - complementary "Related articles" [ref=e806]:
+          - heading "Related Articles" [level=3] [ref=e807]
+          - generic [ref=e808]:
+            - 'link "Brian''s Wealth Plan: Self-Employed Professional Tax and Retirement Strategy Brian''s Wealth Plan: Self-Employed Professional Tax and Retirement Strategy 13 min read" [ref=e809] [cursor=pointer]':
+              - /url: /blog/brian-wealth-plan
+              - 'img "Brian''s Wealth Plan: Self-Employed Professional Tax and Retirement Strategy" [ref=e811]'
+              - generic [ref=e812]:
+                - 'heading "Brian''s Wealth Plan: Self-Employed Professional Tax and Retirement Strategy" [level=4] [ref=e813]'
+                - text: 13 min read
+            - 'link "Casey''s Wealth Strategy Snapshot: Efficient Wealth Building Foundation Casey''s Wealth Strategy Snapshot: Efficient Wealth Building Foundation 13 min read" [ref=e814] [cursor=pointer]':
+              - /url: /blog/casey-wealth-plan
+              - 'img "Casey''s Wealth Strategy Snapshot: Efficient Wealth Building Foundation" [ref=e816]'
+              - generic [ref=e817]:
+                - 'heading "Casey''s Wealth Strategy Snapshot: Efficient Wealth Building Foundation" [level=4] [ref=e818]'
+                - text: 13 min read
+            - 'link "Dan''s Wealth Plan: Mid-Career Optimization and Acceleration Strategy Dan''s Wealth Plan: Mid-Career Optimization and Acceleration Strategy 13 min read" [ref=e819] [cursor=pointer]':
+              - /url: /blog/dan-wealth-plan
+              - 'img "Dan''s Wealth Plan: Mid-Career Optimization and Acceleration Strategy" [ref=e821]'
+              - generic [ref=e822]:
+                - 'heading "Dan''s Wealth Plan: Mid-Career Optimization and Acceleration Strategy" [level=4] [ref=e823]'
+                - text: 13 min read
+    - generic [ref=e825]:
+      - heading "Bring The Article Into Before You File" [level=2] [ref=e826]
+      - paragraph [ref=e827]: Join Preston live on Zoom from April 17-19, 2026, 10 AM-4 PM Eastern. Day 1 reads the return, Day 2 builds the strategy, and Day 3 locks the 12-month plan.
+      - link "Get Your Seat Before You File" [ref=e828] [cursor=pointer]:
+        - /url: https://go.managemoney101.com/challenge2
+  - contentinfo [ref=e829]:
+    - generic [ref=e830]:
+      - generic [ref=e831]:
+        - generic [ref=e832]:
+          - img "Legacy Investing Show" [ref=e833]
+          - generic [ref=e834]: Legacy Investing Show
+        - generic [ref=e835]:
+          - link "Tax Strategies" [ref=e836] [cursor=pointer]:
+            - /url: /tax-strategies
+          - link "Compare" [ref=e837] [cursor=pointer]:
+            - /url: /compare
+          - link "Tools" [ref=e838] [cursor=pointer]:
+            - /url: /tools
+          - link "Worksheets" [ref=e839] [cursor=pointer]:
+            - /url: /worksheets
+          - link "Results" [ref=e840] [cursor=pointer]:
+            - /url: /success-stories
+          - link "Blog" [ref=e841] [cursor=pointer]:
+            - /url: /blog
+      - generic [ref=e842]: Copyright 2026

@@ -1,0 +1,1239 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - navigation "Main navigation" [ref=e4]:
+      - generic [ref=e5]:
+        - link "Legacy Investing Show Logo Legacy Investing Show" [ref=e6] [cursor=pointer]:
+          - /url: /
+          - img "Legacy Investing Show Logo" [ref=e7]
+          - generic [ref=e8]: Legacy Investing Show
+        - generic [ref=e9]:
+          - link "Home" [ref=e10] [cursor=pointer]:
+            - /url: /
+          - link "About" [ref=e11] [cursor=pointer]:
+            - /url: /about
+          - link "Tax Strategies" [ref=e12] [cursor=pointer]:
+            - /url: /tax-strategies
+          - link "Compare" [ref=e13] [cursor=pointer]:
+            - /url: /compare
+          - link "Tools" [ref=e14] [cursor=pointer]:
+            - /url: /tools
+          - link "Worksheets" [ref=e15] [cursor=pointer]:
+            - /url: /worksheets
+          - link "Blog" [ref=e16] [cursor=pointer]:
+            - /url: /blog
+  - main [ref=e19]:
+    - article [ref=e20]:
+      - navigation "Breadcrumb" [ref=e21]:
+        - list [ref=e22]:
+          - listitem [ref=e23]:
+            - link "Home" [ref=e24] [cursor=pointer]:
+              - /url: /
+            - text: /
+          - listitem [ref=e25]:
+            - link "Blog" [ref=e26] [cursor=pointer]:
+              - /url: /blog
+            - text: /
+          - listitem [ref=e27]:
+            - generic [ref=e28]: "Justin's Wealth Plan: $72,000 Annual Savings into Aggressive Bitcoin Accumulation"
+      - generic [ref=e29]:
+        - generic [ref=e30]:
+          - generic [ref=e31]: Wealth Plan
+          - time [ref=e33]: April 11, 2026
+          - generic [ref=e35]: 18 min read
+        - 'heading "Justin''s Wealth Plan: $72,000 Annual Savings into Aggressive Bitcoin Accumulation" [level=1] [ref=e36]'
+        - generic [ref=e37]:
+          - img "Preston Seo" [ref=e38]
+          - generic [ref=e39]: Preston Seo
+      - 'img "Justin''s Wealth Plan: $72,000 Annual Savings into Aggressive Bitcoin Accumulation" [ref=e42]'
+      - region "Key statistics" [ref=e43]:
+        - generic [ref=e44]:
+          - generic [ref=e45]:
+            - img [ref=e47]
+            - generic [ref=e49]: $6,000
+            - generic [ref=e50]: Monthly Savings Capacity
+          - generic [ref=e51]:
+            - img [ref=e53]
+            - generic [ref=e55]: $72,000
+            - generic [ref=e56]: Annual Savings Capacity
+          - generic [ref=e57]:
+            - img [ref=e59]
+            - generic [ref=e61]: Primary Asset
+            - generic [ref=e62]: Bitcoin Allocation Target
+          - generic [ref=e63]:
+            - img [ref=e65]
+            - generic [ref=e67]: $6,000
+            - generic [ref=e68]: DCA Monthly Target
+          - generic [ref=e69]:
+            - img [ref=e71]
+            - generic [ref=e73]: 1 BTC
+            - generic [ref=e74]: Self Custody Threshold
+          - generic [ref=e75]:
+            - img [ref=e77]
+            - generic [ref=e80]: 10+ Years
+            - generic [ref=e81]: Time Horizon
+      - navigation "Table of contents" [ref=e82]:
+        - paragraph [ref=e83]: Contents
+        - list [ref=e84]:
+          - listitem [ref=e85]:
+            - 'link "Justin''s Financial Overview: Exceptional Savings Capacity Meets Strategic Allocation" [ref=e86] [cursor=pointer]':
+              - /url: "#justin-39-s-financial-overview-exceptional-savings-capacity-meets-strategic-allocation"
+          - listitem [ref=e87]:
+            - link "The Savings Capacity Foundation" [ref=e88] [cursor=pointer]:
+              - /url: "#the-savings-capacity-foundation"
+          - listitem [ref=e89]:
+            - 'link "The Bitcoin Accumulation Strategy: Primary, Not Alternative" [ref=e90] [cursor=pointer]':
+              - /url: "#the-bitcoin-accumulation-strategy-primary-not-alternative"
+          - listitem [ref=e91]:
+            - link "Why Bitcoin as Primary Allocation" [ref=e92] [cursor=pointer]:
+              - /url: "#why-bitcoin-as-primary-allocation"
+          - listitem [ref=e93]:
+            - link "Bitcoin's Unique Characteristics" [ref=e94] [cursor=pointer]:
+              - /url: "#bitcoin-39-s-unique-characteristics"
+          - listitem [ref=e95]:
+            - 'link "Dollar-Cost Averaging: The $6,000 Monthly System" [ref=e96] [cursor=pointer]':
+              - /url: "#dollar-cost-averaging-the-6-000-monthly-system"
+          - listitem [ref=e97]:
+            - link "DCA Mechanics and Schedule" [ref=e98] [cursor=pointer]:
+              - /url: "#dca-mechanics-and-schedule"
+          - listitem [ref=e99]:
+            - 'link "DCA vs. Lump Sum: Why Monthly?" [ref=e100] [cursor=pointer]':
+              - /url: "#dca-vs-lump-sum-why-monthly"
+          - listitem [ref=e101]:
+            - link "Automating the DCA Pipeline" [ref=e102] [cursor=pointer]:
+              - /url: "#automating-the-dca-pipeline"
+          - listitem [ref=e103]:
+            - 'link "The Self-Custody Threshold: 1 BTC Security Upgrade" [ref=e104] [cursor=pointer]':
+              - /url: "#the-self-custody-threshold-1-btc-security-upgrade"
+          - listitem [ref=e105]:
+            - link "Exchange Custody Risks" [ref=e106] [cursor=pointer]:
+              - /url: "#exchange-custody-risks"
+          - listitem [ref=e107]:
+            - 'link "Self-Custody Implementation: 2-of-3 Multi-Sig" [ref=e108] [cursor=pointer]':
+              - /url: "#self-custody-implementation-2-of-3-multi-sig"
+          - listitem [ref=e109]:
+            - link "Custody Transition Process" [ref=e110] [cursor=pointer]:
+              - /url: "#custody-transition-process"
+          - listitem [ref=e111]:
+            - 'link "S-Corporation Structure: Tax Optimization for Side Income" [ref=e112] [cursor=pointer]':
+              - /url: "#s-corporation-structure-tax-optimization-for-side-income"
+          - listitem [ref=e113]:
+            - link "How S-Corp Tax Savings Work" [ref=e114] [cursor=pointer]:
+              - /url: "#how-s-corp-tax-savings-work"
+          - listitem [ref=e115]:
+            - link "Reasonable Salary Determination" [ref=e116] [cursor=pointer]:
+              - /url: "#reasonable-salary-determination"
+          - listitem [ref=e117]:
+            - link "Implementation Timeline" [ref=e118] [cursor=pointer]:
+              - /url: "#implementation-timeline"
+          - listitem [ref=e119]:
+            - 'link "The 10-Year Wealth Projection: Compounding Transformation" [ref=e120] [cursor=pointer]':
+              - /url: "#the-10-year-wealth-projection-compounding-transformation"
+          - listitem [ref=e121]:
+            - link "Conservative Projection (6% Annual BTC Growth)" [ref=e122] [cursor=pointer]:
+              - /url: "#conservative-projection-6-annual-btc-growth"
+          - listitem [ref=e123]:
+            - link "Moderate Projection (15% Annual BTC Growth)" [ref=e124] [cursor=pointer]:
+              - /url: "#moderate-projection-15-annual-btc-growth"
+          - listitem [ref=e125]:
+            - link "Historical Growth Projection (60% Annualized — Bitcoin's 10-Year Average)" [ref=e126] [cursor=pointer]:
+              - /url: "#historical-growth-projection-60-annualized-bitcoin-39-s-10-year-average"
+          - listitem [ref=e127]:
+            - 'link "Risk Management: Volatility as Strategy Component" [ref=e128] [cursor=pointer]':
+              - /url: "#risk-management-volatility-as-strategy-component"
+          - listitem [ref=e129]:
+            - link "Volatility Is the Price of Admission" [ref=e130] [cursor=pointer]:
+              - /url: "#volatility-is-the-price-of-admission"
+          - listitem [ref=e131]:
+            - link "Bear Market Accumulation Advantage" [ref=e132] [cursor=pointer]:
+              - /url: "#bear-market-accumulation-advantage"
+          - listitem [ref=e133]:
+            - link "Security and Operational Risk Mitigation" [ref=e134] [cursor=pointer]:
+              - /url: "#security-and-operational-risk-mitigation"
+          - listitem [ref=e135]:
+            - link "Tax Optimization for Bitcoin Holders" [ref=e136] [cursor=pointer]:
+              - /url: "#tax-optimization-for-bitcoin-holders"
+          - listitem [ref=e137]:
+            - link "Long-Term Capital Gains Treatment" [ref=e138] [cursor=pointer]:
+              - /url: "#long-term-capital-gains-treatment"
+          - listitem [ref=e139]:
+            - link "Tax-Efficient Liquidation Strategies" [ref=e140] [cursor=pointer]:
+              - /url: "#tax-efficient-liquidation-strategies"
+          - listitem [ref=e141]:
+            - link "Record Keeping Requirements" [ref=e142] [cursor=pointer]:
+              - /url: "#record-keeping-requirements"
+          - listitem [ref=e143]:
+            - 'link "Alternative Income Sleeve: MSTY for Yield" [ref=e144] [cursor=pointer]':
+              - /url: "#alternative-income-sleeve-msty-for-yield"
+          - listitem [ref=e145]:
+            - link "MSTY ETF Overview" [ref=e146] [cursor=pointer]:
+              - /url: "#msty-etf-overview"
+          - listitem [ref=e147]:
+            - link "Sizing and Implementation" [ref=e148] [cursor=pointer]:
+              - /url: "#sizing-and-implementation"
+          - listitem [ref=e149]:
+            - link "12-Month Execution Timeline" [ref=e150] [cursor=pointer]:
+              - /url: "#12-month-execution-timeline"
+          - listitem [ref=e151]:
+            - 'link "Key Takeaways: Lessons from Justin''s Bitcoin Accumulation Plan" [ref=e152] [cursor=pointer]':
+              - /url: "#key-takeaways-lessons-from-justin-39-s-bitcoin-accumulation-plan"
+          - listitem [ref=e153]:
+            - link "1. Exceptional Savings Capacity Enables Exceptional Strategies" [ref=e154] [cursor=pointer]:
+              - /url: "#1-exceptional-savings-capacity-enables-exceptional-strategies"
+          - listitem [ref=e155]:
+            - link "2. Bitcoin Is Primary, Not Alternative" [ref=e156] [cursor=pointer]:
+              - /url: "#2-bitcoin-is-primary-not-alternative"
+          - listitem [ref=e157]:
+            - link "3. DCA Removes Psychology from Investing" [ref=e158] [cursor=pointer]:
+              - /url: "#3-dca-removes-psychology-from-investing"
+          - listitem [ref=e159]:
+            - link "4. Self-Custody at 1 BTC Is Non-Negotiable" [ref=e160] [cursor=pointer]:
+              - /url: "#4-self-custody-at-1-btc-is-non-negotiable"
+          - listitem [ref=e161]:
+            - link "5. Tax Optimization Is Part of Accumulation Strategy" [ref=e162] [cursor=pointer]:
+              - /url: "#5-tax-optimization-is-part-of-accumulation-strategy"
+          - listitem [ref=e163]:
+            - link "Frequently Asked Questions About Aggressive Bitcoin Strategies" [ref=e164] [cursor=pointer]:
+              - /url: "#frequently-asked-questions-about-aggressive-bitcoin-strategies"
+          - listitem [ref=e165]:
+            - link "What if Bitcoin goes to zero?" [ref=e166] [cursor=pointer]:
+              - /url: "#what-if-bitcoin-goes-to-zero"
+          - listitem [ref=e167]:
+            - link "How do I handle family/spouse concerns about volatility?" [ref=e168] [cursor=pointer]:
+              - /url: "#how-do-i-handle-family-spouse-concerns-about-volatility"
+          - listitem [ref=e169]:
+            - link "Should I ever sell, and if so, when?" [ref=e170] [cursor=pointer]:
+              - /url: "#should-i-ever-sell-and-if-so-when"
+          - listitem [ref=e171]:
+            - link "How does inheritance work with self-custodied Bitcoin?" [ref=e172] [cursor=pointer]:
+              - /url: "#how-does-inheritance-work-with-self-custodied-bitcoin"
+          - listitem [ref=e173]:
+            - link "What about altcoins? Should I diversify crypto?" [ref=e174] [cursor=pointer]:
+              - /url: "#what-about-altcoins-should-i-diversify-crypto"
+          - listitem [ref=e175]:
+            - link "Ready to Implement Your Bitcoin Accumulation Strategy?" [ref=e176] [cursor=pointer]:
+              - /url: "#ready-to-implement-your-bitcoin-accumulation-strategy"
+      - generic [ref=e177]:
+        - generic [ref=e178]:
+          - blockquote [ref=e179]:
+            - paragraph [ref=e180]:
+              - strong [ref=e181]: "Disclaimer:"
+              - text: This content is for educational and informational purposes only. It does not constitute financial, tax, or legal advice. Every individual's financial situation is unique — consult a qualified professional before making any financial decisions. The strategies discussed are based on a personalized plan and may not be suitable for everyone.
+          - 'heading "Justin''s Financial Overview: Exceptional Savings Capacity Meets Strategic Allocation" [level=2] [ref=e182]'
+          - paragraph [ref=e183]:
+            - text: "Justin's situation represents a rare and powerful combination:"
+            - strong [ref=e184]: exceptional savings capacity ($6,000/month = $72,000/year) combined with a clear strategic vision for wealth acceleration.
+            - text: This isn't about budgeting to save — this is about
+            - strong [ref=e185]: deploying substantial existing capacity into the highest-conviction, highest-upside asset
+            - text: .
+          - paragraph [ref=e186]:
+            - text: Most households struggle to save $500 monthly. Justin's $6,000 monthly capacity places him in the
+            - strong [ref=e187]: top 5% of American savers
+            - text: — a position that demands a sophisticated, intentional strategy rather than generic "diversified portfolio" advice.
+          - heading "The Savings Capacity Foundation" [level=3] [ref=e188]
+          - table [ref=e189]:
+            - rowgroup [ref=e190]:
+              - row "Metric Value Strategic Significance" [ref=e191]:
+                - columnheader "Metric" [ref=e192]
+                - columnheader "Value" [ref=e193]
+                - columnheader "Strategic Significance" [ref=e194]
+            - rowgroup [ref=e195]:
+              - row "Monthly Savings $6,000 50× median household savings rate" [ref=e196]:
+                - cell "Monthly Savings" [ref=e197]
+                - cell "$6,000" [ref=e198]
+                - cell "50× median household savings rate" [ref=e199]
+              - row "Annual Capacity $72,000 $720,000 over 10 years (uninvested)" [ref=e200]:
+                - cell "Annual Capacity" [ref=e201]
+                - cell "$72,000" [ref=e202]
+                - cell "$720,000 over 10 years (uninvested)" [ref=e203]
+              - row "Employment Status W-2 + Side Business S-Corp optimization available" [ref=e204]:
+                - cell "Employment Status" [ref=e205]
+                - cell "W-2 + Side Business" [ref=e206]
+                - cell "S-Corp optimization available" [ref=e207]
+              - row "Time Horizon 10+ years Absorbs multiple Bitcoin cycles" [ref=e208]:
+                - cell "Time Horizon" [ref=e209]
+                - cell "10+ years" [ref=e210]
+                - cell "Absorbs multiple Bitcoin cycles" [ref=e211]
+              - row "Risk Tolerance High Capacity to weather volatility" [ref=e212]:
+                - cell "Risk Tolerance" [ref=e213]
+                - cell "High" [ref=e214]
+                - cell "Capacity to weather volatility" [ref=e215]
+              - row "Primary Goal Wealth Acceleration Uncapped appreciation target" [ref=e216]:
+                - cell "Primary Goal" [ref=e217]
+                - cell "Wealth Acceleration" [ref=e218]
+                - cell "Uncapped appreciation target" [ref=e219]
+          - 'heading "The Bitcoin Accumulation Strategy: Primary, Not Alternative" [level=2] [ref=e220]'
+          - paragraph [ref=e221]:
+            - text: "Justin's wealth plan is built on a simple but powerful premise:"
+            - strong [ref=e222]: with exceptional savings capacity and long time horizons, the optimal strategy is maximum exposure to the scarcest, most asymmetric asset available
+            - text: — Bitcoin.
+          - heading "Why Bitcoin as Primary Allocation" [level=3] [ref=e223]
+          - paragraph [ref=e224]:
+            - strong [ref=e225]: "Traditional Portfolio Theory:"
+          - list [ref=e226]:
+            - listitem [ref=e227]: Diversification across uncorrelated assets
+            - listitem [ref=e228]: Risk-adjusted returns (Sharpe ratio optimization)
+            - listitem [ref=e229]: 60/40 stocks/bonds as "balanced" allocation
+            - listitem [ref=e230]: Bitcoin as 1-5% "speculative" position
+          - paragraph [ref=e231]:
+            - strong [ref=e232]: "Justin's Strategic Framework:"
+          - list [ref=e233]:
+            - listitem [ref=e234]:
+              - strong [ref=e235]: Bitcoin as primary wealth storage
+              - text: — not speculative allocation
+            - listitem [ref=e236]:
+              - strong [ref=e237]: Volatility as feature
+              - text: — enables accumulation at varying prices
+            - listitem [ref=e238]:
+              - strong [ref=e239]: Scarcity as certainty
+              - text: — 21 million cap vs. infinite fiat expansion
+            - listitem [ref=e240]:
+              - strong [ref=e241]: Time horizon absorbs volatility
+              - text: — 10+ years smooths all cycles
+          - heading "Bitcoin's Unique Characteristics" [level=3] [ref=e242]
+          - paragraph [ref=e243]:
+            - strong [ref=e244]: "Absolute Scarcity:"
+          - list [ref=e245]:
+            - listitem [ref=e246]: Fixed supply of 21 million coins (19.5M already mined)
+            - listitem [ref=e247]: Halving every 4 years reduces new supply by 50%
+            - listitem [ref=e248]: Stock-to-flow ratio exceeds gold post-2024 halving
+            - listitem [ref=e249]: Mathematical certainty vs. human-controlled supply
+          - paragraph [ref=e250]:
+            - strong [ref=e251]: "Decentralization:"
+          - list [ref=e252]:
+            - listitem [ref=e253]: No single point of failure or control
+            - listitem [ref=e254]: Censorship-resistant transactions
+            - listitem [ref=e255]: Global, permissionless network
+            - listitem [ref=e256]: 15+ years of continuous operation without central authority
+          - paragraph [ref=e257]:
+            - strong [ref=e258]: "Network Effects:"
+          - list [ref=e259]:
+            - listitem [ref=e260]: Growing institutional adoption (ETFs, corporate treasuries, nation-states)
+            - listitem [ref=e261]: Expanding infrastructure (exchanges, custody, payment rails)
+            - listitem [ref=e262]: Increasing regulatory clarity (not banned in any major economy)
+            - listitem [ref=e263]: Developer ecosystem (Lightning Network, sidechains, applications)
+          - paragraph [ref=e264]:
+            - strong [ref=e265]: "Asymmetric Return Profile:"
+          - list [ref=e266]:
+            - listitem [ref=e267]: "Historical 10-year returns: 60%+ annualized"
+            - listitem [ref=e268]: "Downside: Limited to 100% (asset to zero)"
+            - listitem [ref=e269]: "Upside: Potentially 10-100× from current prices"
+            - listitem [ref=e270]: Risk/reward favors long-term holders
+          - 'heading "Dollar-Cost Averaging: The $6,000 Monthly System" [level=2] [ref=e271]'
+          - paragraph [ref=e272]:
+            - text: Justin's plan specifies
+            - strong [ref=e273]: systematic dollar-cost averaging (DCA)
+            - text: — the disciplined, unemotional accumulation strategy that removes timing decisions and psychological interference.
+          - heading "DCA Mechanics and Schedule" [level=3] [ref=e274]
+          - paragraph [ref=e275]:
+            - strong [ref=e276]: "Monthly Execution:"
+          - list [ref=e277]:
+            - listitem [ref=e278]:
+              - strong [ref=e279]: Amount
+              - text: ": $6,000 on the 1st of each month"
+            - listitem [ref=e280]:
+              - strong [ref=e281]: Platform
+              - text: ": River, Swan, or Strike (low-cost, Bitcoin-only)"
+            - listitem [ref=e282]:
+              - strong [ref=e283]: Method
+              - text: ": Automated bank transfer → Bitcoin purchase"
+            - listitem [ref=e284]:
+              - strong [ref=e285]: Custody
+              - text: ": Exchange initially, self-custody at 1 BTC threshold"
+            - listitem [ref=e286]:
+              - strong [ref=e287]: Duration
+              - text: ": Indefinite, 10+ year minimum horizon"
+          - paragraph [ref=e288]:
+            - strong [ref=e289]: "Annual Accumulation Projection:"
+          - table [ref=e290]:
+            - rowgroup [ref=e291]:
+              - row "Year Cumulative Invested Conservative BTC Price Portfolio Value" [ref=e292]:
+                - columnheader "Year" [ref=e293]
+                - columnheader "Cumulative Invested" [ref=e294]
+                - columnheader "Conservative BTC Price" [ref=e295]
+                - columnheader "Portfolio Value" [ref=e296]
+            - rowgroup [ref=e297]:
+              - row "1 $72,000 $70,000 ~1.0 BTC" [ref=e298]:
+                - cell "1" [ref=e299]
+                - cell "$72,000" [ref=e300]
+                - cell "$70,000" [ref=e301]
+                - cell "~1.0 BTC" [ref=e302]
+              - row "3 $216,000 $100,000 ~2.5 BTC" [ref=e303]:
+                - cell "3" [ref=e304]
+                - cell "$216,000" [ref=e305]
+                - cell "$100,000" [ref=e306]
+                - cell "~2.5 BTC" [ref=e307]
+              - row "5 $360,000 $150,000 ~3.0 BTC" [ref=e308]:
+                - cell "5" [ref=e309]
+                - cell "$360,000" [ref=e310]
+                - cell "$150,000" [ref=e311]
+                - cell "~3.0 BTC" [ref=e312]
+              - row "10 $720,000 $300,000 ~4.0 BTC" [ref=e313]:
+                - cell "10" [ref=e314]
+                - cell "$720,000" [ref=e315]
+                - cell "$300,000" [ref=e316]
+                - cell "~4.0 BTC" [ref=e317]
+          - paragraph [ref=e318]:
+            - strong [ref=e319]: Note
+            - text: ": Actual BTC accumulation varies with price; higher prices = fewer satoshis per $6,000."
+          - 'heading "DCA vs. Lump Sum: Why Monthly?" [level=3] [ref=e320]'
+          - paragraph [ref=e321]:
+            - strong [ref=e322]: "Academic Research Findings:"
+          - list [ref=e323]:
+            - listitem [ref=e324]: Lump sum investing outperforms DCA 66% of the time historically
+            - listitem [ref=e325]: "BUT: Lump sum requires having capital available upfront"
+            - listitem [ref=e326]: DCA reduces regret and behavioral errors
+            - listitem [ref=e327]: For ongoing income, DCA is the only practical option
+          - paragraph [ref=e328]:
+            - strong [ref=e329]: "Justin's Situation:"
+          - list [ref=e330]:
+            - listitem [ref=e331]: Savings flow in monthly from income
+            - listitem [ref=e332]: No large lump sum currently available
+            - listitem [ref=e333]: DCA aligns with cash flow timing
+            - listitem [ref=e334]: Psychological benefits of automation
+          - heading "Automating the DCA Pipeline" [level=3] [ref=e335]
+          - paragraph [ref=e336]:
+            - strong [ref=e337]: "Setup Steps:"
+          - list [ref=e338]:
+            - listitem [ref=e339]:
+              - strong [ref=e340]: Exchange account
+              - text: ": River Financial (Bitcoin-only, excellent DCA features)"
+            - listitem [ref=e341]:
+              - strong [ref=e342]: Bank connection
+              - text: ": ACH link to primary checking"
+            - listitem [ref=e343]:
+              - strong [ref=e344]: Recurring purchase
+              - text: ": $6,000/month on 1st"
+            - listitem [ref=e345]:
+              - strong [ref=e346]: Auto-withdrawal
+              - text: ": To hardware wallet at 1 BTC intervals"
+            - listitem [ref=e347]:
+              - strong [ref=e348]: Tax tracking
+              - text: ": CoinTracker or Koinly for cost basis"
+          - paragraph [ref=e349]:
+            - strong [ref=e350]: "Cost Optimization:"
+          - list [ref=e351]:
+            - listitem [ref=e352]: "River: 0.5-1.0% spread (no explicit fees)"
+            - listitem [ref=e353]: "Swan: 0.99% fee (excellent for smaller amounts)"
+            - listitem [ref=e354]: "Strike: Near-zero fees (Lightning-based)"
+            - listitem [ref=e355]:
+              - strong [ref=e356]: Monthly cost at 1%
+              - text: ": $60 (minimal relative to $6,000)"
+          - 'heading "The Self-Custody Threshold: 1 BTC Security Upgrade" [level=2] [ref=e357]'
+          - paragraph [ref=e358]:
+            - text: Justin's plan includes a
+            - strong [ref=e359]: critical custody transition at 1 Bitcoin accumulation
+            - text: — the point where exchange counterparty risk exceeds self-custody complexity.
+          - heading "Exchange Custody Risks" [level=3] [ref=e360]
+          - paragraph [ref=e361]:
+            - strong [ref=e362]: "Historical Precedents:"
+          - list [ref=e363]:
+            - listitem [ref=e364]: "Mt. Gox (2014): 850,000 BTC lost ($450M at the time)"
+            - listitem [ref=e365]: "FTX (2022): $8B+ in customer funds misappropriated"
+            - listitem [ref=e366]: "Celsius, BlockFi, Voyager (2022): Lending platform insolvencies"
+            - listitem [ref=e367]:
+              - strong [ref=e368]: Not your keys, not your coins
+              - text: — proven repeatedly
+          - paragraph [ref=e369]:
+            - strong [ref=e370]: "Ongoing Risks:"
+          - list [ref=e371]:
+            - listitem [ref=e372]: Exchange hacks (security breaches)
+            - listitem [ref=e373]: Regulatory freezes (government action)
+            - listitem [ref=e374]: Insolvency (rehypothecation, leverage losses)
+            - listitem [ref=e375]: Internal fraud (rogue employees)
+            - listitem [ref=e376]:
+              - strong [ref=e377]: Insurance
+              - text: ": Most exchanges carry minimal or no deposit insurance"
+          - 'heading "Self-Custody Implementation: 2-of-3 Multi-Sig" [level=3] [ref=e378]'
+          - paragraph [ref=e379]:
+            - strong [ref=e380]: "Hardware Wallet Selection:"
+          - list [ref=e381]:
+            - listitem [ref=e382]:
+              - strong [ref=e383]: Coldcard Mk4
+              - text: ": Bitcoin-only, air-gapped, open source ($157)"
+            - listitem [ref=e384]:
+              - strong [ref=e385]: SeedSigner
+              - text: ": DIY, Bitcoin-only, ultra-secure ($50-100)"
+            - listitem [ref=e386]:
+              - strong [ref=e387]: BitBox02
+              - text: ": Swiss-made, simple interface ($150)"
+            - listitem [ref=e388]:
+              - strong [ref=e389]: Blockstream Jade
+              - text: ": Affordable, open source ($65)"
+          - paragraph [ref=e390]:
+            - strong [ref=e391]: "2-of-3 Multi-Signature Setup:"
+          - list [ref=e392]:
+            - listitem [ref=e393]:
+              - strong [ref=e394]: Key 1
+              - text: ": Justin's hardware wallet (primary spending)"
+            - listitem [ref=e395]:
+              - strong [ref=e396]: Key 2
+              - text: ": Bank safe deposit box backup (physical security)"
+            - listitem [ref=e397]:
+              - strong [ref=e398]: Key 3
+              - text: ": Trusted third party (attorney, family member, executor)"
+          - paragraph [ref=e399]:
+            - strong [ref=e400]: "Transaction Requirements:"
+          - list [ref=e401]:
+            - listitem [ref=e402]: Any 2 of 3 keys required to spend
+            - listitem [ref=e403]: Theft of 1 key = funds safe
+            - listitem [ref=e404]: Loss of 1 key = recoverable with remaining 2
+            - listitem [ref=e405]: Geographic distribution reduces single-point-of-failure
+          - heading "Custody Transition Process" [level=3] [ref=e406]
+          - paragraph [ref=e407]:
+            - strong [ref=e408]: "At 1 BTC (~$70,000-$100,000):"
+          - list [ref=e409]:
+            - listitem [ref=e410]: Purchase Coldcard or SeedSigner hardware wallet
+            - listitem [ref=e411]: Generate seed phrase in isolated environment
+            - listitem [ref=e412]: Practice transactions with small amounts
+            - listitem [ref=e413]: Transfer 0.1 BTC test amount
+            - listitem [ref=e414]: Verify receipt and transaction signing
+            - listitem [ref=e415]: Transfer remaining balance in tranches
+            - listitem [ref=e416]: Distribute backup keys to secure locations
+          - paragraph [ref=e417]:
+            - strong [ref=e418]: "Annual Security Review:"
+          - list [ref=e419]:
+            - listitem [ref=e420]: Verify hardware wallet functionality
+            - listitem [ref=e421]: Check backup key accessibility
+            - listitem [ref=e422]: Update firmware if needed
+            - listitem [ref=e423]: Review inheritance planning documentation
+          - 'heading "S-Corporation Structure: Tax Optimization for Side Income" [level=2] [ref=e424]'
+          - paragraph [ref=e425]:
+            - text: While Justin's primary income is W-2, any side business or consulting income benefits from
+            - strong [ref=e426]: S-Corporation structuring
+            - text: — converting self-employment tax liability into distribution income.
+          - heading "How S-Corp Tax Savings Work" [level=3] [ref=e427]
+          - paragraph [ref=e428]:
+            - strong [ref=e429]: "Side Income Example:"
+          - list [ref=e430]:
+            - listitem [ref=e431]: "Consulting revenue: $50,000"
+            - listitem [ref=e432]: "Business expenses: $10,000"
+            - listitem [ref=e433]: "Net business income: $40,000"
+          - paragraph [ref=e434]:
+            - strong [ref=e435]: "Sole Proprietorship:"
+          - list [ref=e436]:
+            - listitem [ref=e437]: $40,000 × 15.3% self-employment tax = $6,120
+            - listitem [ref=e438]: Plus ordinary income tax on full $40,000
+          - paragraph [ref=e439]:
+            - strong [ref=e440]: "S-Corporation:"
+          - list [ref=e441]:
+            - listitem [ref=e442]: $20,000 reasonable salary (15.3% = $3,060 SE tax)
+            - listitem [ref=e443]: $20,000 distribution (0% SE tax)
+            - listitem [ref=e444]:
+              - strong [ref=e445]: "Tax savings: $3,060 annually"
+          - paragraph [ref=e446]:
+            - strong [ref=e447]: "Larger Side Income ($150,000):"
+          - list [ref=e448]:
+            - listitem [ref=e449]: $70,000 salary ($10,710 SE tax)
+            - listitem [ref=e450]: $80,000 distribution ($0 SE tax)
+            - listitem [ref=e451]:
+              - strong [ref=e452]: "Tax savings: $12,240 annually"
+          - heading "Reasonable Salary Determination" [level=3] [ref=e453]
+          - paragraph [ref=e454]:
+            - strong [ref=e455]: "IRS Requirements:"
+          - list [ref=e456]:
+            - listitem [ref=e457]: Must pay "reasonable compensation" for services
+            - listitem [ref=e458]: Based on industry standards, experience, time commitment
+            - listitem [ref=e459]: Can't be zero or unrealistically low
+          - paragraph [ref=e460]:
+            - strong [ref=e461]: "Justin Documentation:"
+          - list [ref=e462]:
+            - listitem [ref=e463]: Industry salary surveys for consulting role
+            - listitem [ref=e464]: Comparable W-2 positions in field
+            - listitem [ref=e465]: Time tracking showing hours devoted
+            - listitem [ref=e466]: Annual compensation review memo
+          - paragraph [ref=e467]:
+            - strong [ref=e468]: "Conservative Approach:"
+          - list [ref=e469]:
+            - listitem [ref=e470]: Set salary at 50-60% of net business income
+            - listitem [ref=e471]: Adjust annually based on hours/revenue
+            - listitem [ref=e472]: Never zero, never unreasonably low
+            - listitem [ref=e473]:
+              - strong [ref=e474]: Audit defense
+              - text: ": Documented rationale"
+          - heading "Implementation Timeline" [level=3] [ref=e475]
+          - paragraph [ref=e476]:
+            - strong [ref=e477]: "Month 1: Entity Formation"
+          - list [ref=e478]:
+            - listitem [ref=e479]: Form LLC in state of residence
+            - listitem [ref=e480]: File Form 2553 for S-Corp election
+            - listitem [ref=e481]: Obtain EIN from IRS
+          - paragraph [ref=e482]:
+            - strong [ref=e483]: "Month 2: Infrastructure Setup"
+          - list [ref=e484]:
+            - listitem [ref=e485]: Business bank account (separate from personal)
+            - listitem [ref=e486]: Accounting system (QuickBooks or Wave)
+            - listitem [ref=e487]: Payroll service (Gusto or ADP for single-person)
+          - paragraph [ref=e488]:
+            - strong [ref=e489]: "Month 3: Operational Launch"
+          - list [ref=e490]:
+            - listitem [ref=e491]: Begin consulting engagements through S-Corp
+            - listitem [ref=e492]: Invoicing and payment collection
+            - listitem [ref=e493]: Expense tracking and categorization
+          - paragraph [ref=e494]:
+            - strong [ref=e495]: "Year-End Optimization:"
+          - list [ref=e496]:
+            - listitem [ref=e497]: December salary adjustment based on annual income
+            - listitem [ref=e498]: Maximize distribution vs. salary ratio (legally)
+            - listitem [ref=e499]: Solo 401(k) contributions from salary portion
+          - 'heading "The 10-Year Wealth Projection: Compounding Transformation" [level=2] [ref=e500]'
+          - paragraph [ref=e501]:
+            - text: Justin's $6,000 monthly capacity, deployed systematically over 10 years, creates
+            - strong [ref=e502]: transformational wealth accumulation
+            - text: even under conservative Bitcoin price assumptions.
+          - heading "Conservative Projection (6% Annual BTC Growth)" [level=3] [ref=e503]
+          - table [ref=e504]:
+            - rowgroup [ref=e505]:
+              - row "Year Annual Investment Cumulative Invested BTC Holdings BTC Price Portfolio Value Gain" [ref=e506]:
+                - columnheader "Year" [ref=e507]
+                - columnheader "Annual Investment" [ref=e508]
+                - columnheader "Cumulative Invested" [ref=e509]
+                - columnheader "BTC Holdings" [ref=e510]
+                - columnheader "BTC Price" [ref=e511]
+                - columnheader "Portfolio Value" [ref=e512]
+                - columnheader "Gain" [ref=e513]
+            - rowgroup [ref=e514]:
+              - row "1 $72,000 $72,000 1.0 $70,000 $70,000 ($2,000)" [ref=e515]:
+                - cell "1" [ref=e516]
+                - cell "$72,000" [ref=e517]
+                - cell "$72,000" [ref=e518]
+                - cell "1.0" [ref=e519]
+                - cell "$70,000" [ref=e520]
+                - cell "$70,000" [ref=e521]
+                - cell "($2,000)" [ref=e522]
+              - row "3 $72,000 $216,000 2.8 $78,740 $220,472 $4,472" [ref=e523]:
+                - cell "3" [ref=e524]
+                - cell "$72,000" [ref=e525]
+                - cell "$216,000" [ref=e526]
+                - cell "2.8" [ref=e527]
+                - cell "$78,740" [ref=e528]
+                - cell "$220,472" [ref=e529]
+                - cell "$4,472" [ref=e530]
+              - row "5 $72,000 $360,000 4.5 $88,326 $397,467 $37,467" [ref=e531]:
+                - cell "5" [ref=e532]
+                - cell "$72,000" [ref=e533]
+                - cell "$360,000" [ref=e534]
+                - cell "4.5" [ref=e535]
+                - cell "$88,326" [ref=e536]
+                - cell "$397,467" [ref=e537]
+                - cell "$37,467" [ref=e538]
+              - row "7 $72,000 $504,000 6.1 $99,085 $604,418 $100,418" [ref=e539]:
+                - cell "7" [ref=e540]
+                - cell "$72,000" [ref=e541]
+                - cell "$504,000" [ref=e542]
+                - cell "6.1" [ref=e543]
+                - cell "$99,085" [ref=e544]
+                - cell "$604,418" [ref=e545]
+                - cell "$100,418" [ref=e546]
+              - row "10 $72,000 $720,000 8.5 $117,503 $998,776 $278,776" [ref=e547]:
+                - cell "10" [ref=e548]
+                - cell "$72,000" [ref=e549]
+                - cell "$720,000" [ref=e550]
+                - cell "8.5" [ref=e551]
+                - cell "$117,503" [ref=e552]
+                - cell "$998,776" [ref=e553]
+                - cell "$278,776" [ref=e554]
+          - heading "Moderate Projection (15% Annual BTC Growth)" [level=3] [ref=e555]
+          - table [ref=e556]:
+            - rowgroup [ref=e557]:
+              - row "Year Annual Investment Cumulative Invested BTC Holdings BTC Price Portfolio Value Gain" [ref=e558]:
+                - columnheader "Year" [ref=e559]
+                - columnheader "Annual Investment" [ref=e560]
+                - columnheader "Cumulative Invested" [ref=e561]
+                - columnheader "BTC Holdings" [ref=e562]
+                - columnheader "BTC Price" [ref=e563]
+                - columnheader "Portfolio Value" [ref=e564]
+                - columnheader "Gain" [ref=e565]
+            - rowgroup [ref=e566]:
+              - row "1 $72,000 $72,000 1.0 $70,000 $70,000 ($2,000)" [ref=e567]:
+                - cell "1" [ref=e568]
+                - cell "$72,000" [ref=e569]
+                - cell "$72,000" [ref=e570]
+                - cell "1.0" [ref=e571]
+                - cell "$70,000" [ref=e572]
+                - cell "$70,000" [ref=e573]
+                - cell "($2,000)" [ref=e574]
+              - row "3 $72,000 $216,000 2.5 $92,465 $231,163 $15,163" [ref=e575]:
+                - cell "3" [ref=e576]
+                - cell "$72,000" [ref=e577]
+                - cell "$216,000" [ref=e578]
+                - cell "2.5" [ref=e579]
+                - cell "$92,465" [ref=e580]
+                - cell "$231,163" [ref=e581]
+                - cell "$15,163" [ref=e582]
+              - row "5 $72,000 $360,000 3.8 $122,156 $464,193 $104,193" [ref=e583]:
+                - cell "5" [ref=e584]
+                - cell "$72,000" [ref=e585]
+                - cell "$360,000" [ref=e586]
+                - cell "3.8" [ref=e587]
+                - cell "$122,156" [ref=e588]
+                - cell "$464,193" [ref=e589]
+                - cell "$104,193" [ref=e590]
+              - row "7 $72,000 $504,000 5.1 $161,384 $823,058 $319,058" [ref=e591]:
+                - cell "7" [ref=e592]
+                - cell "$72,000" [ref=e593]
+                - cell "$504,000" [ref=e594]
+                - cell "5.1" [ref=e595]
+                - cell "$161,384" [ref=e596]
+                - cell "$823,058" [ref=e597]
+                - cell "$319,058" [ref=e598]
+              - row "10 $72,000 $720,000 7.0 $221,748 $1,552,236 $832,236" [ref=e599]:
+                - cell "10" [ref=e600]
+                - cell "$72,000" [ref=e601]
+                - cell "$720,000" [ref=e602]
+                - cell "7.0" [ref=e603]
+                - cell "$221,748" [ref=e604]
+                - cell "$1,552,236" [ref=e605]
+                - cell "$832,236" [ref=e606]
+          - heading "Historical Growth Projection (60% Annualized — Bitcoin's 10-Year Average)" [level=3] [ref=e607]
+          - table [ref=e608]:
+            - rowgroup [ref=e609]:
+              - row "Year Annual Investment Cumulative Invested BTC Holdings BTC Price Portfolio Value Gain" [ref=e610]:
+                - columnheader "Year" [ref=e611]
+                - columnheader "Annual Investment" [ref=e612]
+                - columnheader "Cumulative Invested" [ref=e613]
+                - columnheader "BTC Holdings" [ref=e614]
+                - columnheader "BTC Price" [ref=e615]
+                - columnheader "Portfolio Value" [ref=e616]
+                - columnheader "Gain" [ref=e617]
+            - rowgroup [ref=e618]:
+              - row "1 $72,000 $72,000 1.0 $70,000 $70,000 ($2,000)" [ref=e619]:
+                - cell "1" [ref=e620]
+                - cell "$72,000" [ref=e621]
+                - cell "$72,000" [ref=e622]
+                - cell "1.0" [ref=e623]
+                - cell "$70,000" [ref=e624]
+                - cell "$70,000" [ref=e625]
+                - cell "($2,000)" [ref=e626]
+              - row "3 $72,000 $216,000 1.8 $179,200 $322,560 $106,560" [ref=e627]:
+                - cell "3" [ref=e628]
+                - cell "$72,000" [ref=e629]
+                - cell "$216,000" [ref=e630]
+                - cell "1.8" [ref=e631]
+                - cell "$179,200" [ref=e632]
+                - cell "$322,560" [ref=e633]
+                - cell "$106,560" [ref=e634]
+              - row "5 $72,000 $360,000 2.5 $458,752 $1,147,000 $787,000" [ref=e635]:
+                - cell "5" [ref=e636]
+                - cell "$72,000" [ref=e637]
+                - cell "$360,000" [ref=e638]
+                - cell "2.5" [ref=e639]
+                - cell "$458,752" [ref=e640]
+                - cell "$1,147,000" [ref=e641]
+                - cell "$787,000" [ref=e642]
+              - row "7 $72,000 $504,000 3.2 $1,174,405 $3,758,096 $3,254,096" [ref=e643]:
+                - cell "7" [ref=e644]
+                - cell "$72,000" [ref=e645]
+                - cell "$504,000" [ref=e646]
+                - cell "3.2" [ref=e647]
+                - cell "$1,174,405" [ref=e648]
+                - cell "$3,758,096" [ref=e649]
+                - cell "$3,254,096" [ref=e650]
+              - row "10 $72,000 $720,000 4.2 $4,307,552 $18,091,718 $17,371,718" [ref=e651]:
+                - cell "10" [ref=e652]
+                - cell "$72,000" [ref=e653]
+                - cell "$720,000" [ref=e654]
+                - cell "4.2" [ref=e655]
+                - cell "$4,307,552" [ref=e656]
+                - cell "$18,091,718" [ref=e657]
+                - cell "$17,371,718" [ref=e658]
+          - paragraph [ref=e659]:
+            - strong [ref=e660]: Important
+            - text: ": 60% annualized is Bitcoin's historical 10-year performance but is NOT guaranteed. Past performance ≠ future results."
+          - 'heading "Risk Management: Volatility as Strategy Component" [level=2] [ref=e661]'
+          - paragraph [ref=e662]:
+            - text: Justin's plan explicitly
+            - strong [ref=e663]: embraces volatility
+            - text: rather than attempting to avoid it — a critical psychological and strategic distinction.
+          - heading "Volatility Is the Price of Admission" [level=3] [ref=e664]
+          - paragraph [ref=e665]:
+            - strong [ref=e666]: "Bitcoin Volatility Profile:"
+          - list [ref=e667]:
+            - listitem [ref=e668]: "Annualized volatility: 60-80% (vs. 15% for S&P 500)"
+            - listitem [ref=e669]: "Drawdowns: 50-85% corrections common in bear markets"
+            - listitem [ref=e670]: "Recoveries: Historical 4-year cycle patterns"
+            - listitem [ref=e671]:
+              - strong [ref=e672]: Long-term trend
+              - text: ": Higher lows, higher highs over multi-year periods"
+          - paragraph [ref=e673]:
+            - strong [ref=e674]: "Justin's Capacity to Absorb Volatility:"
+          - list [ref=e675]:
+            - listitem [ref=e676]:
+              - strong [ref=e677]: High savings rate
+              - text: ": $6,000/month continues regardless of price"
+            - listitem [ref=e678]:
+              - strong [ref=e679]: Long time horizon
+              - text: ": 10+ years smooths all cycles"
+            - listitem [ref=e680]:
+              - strong [ref=e681]: No leverage
+              - text: ": Cash purchases only, no margin calls"
+            - listitem [ref=e682]:
+              - strong [ref=e683]: No need to sell
+              - text: ": Income covers living expenses"
+          - heading "Bear Market Accumulation Advantage" [level=3] [ref=e684]
+          - paragraph [ref=e685]:
+            - strong [ref=e686]: "Example: 50% Price Drop Scenario"
+          - list [ref=e687]:
+            - listitem [ref=e688]: "Initial price: $70,000"
+            - listitem [ref=e689]: "Bear market low: $35,000"
+            - listitem [ref=e690]:
+              - text: "Justin's monthly $6,000 purchases:"
+              - list [ref=e691]:
+                - listitem [ref=e692]: "At $70,000: 0.086 BTC per month"
+                - listitem [ref=e693]: "At $35,000: 0.171 BTC per month"
+                - listitem [ref=e694]:
+                  - strong [ref=e695]: Double the accumulation rate during bear markets
+          - paragraph [ref=e696]:
+            - strong [ref=e697]: "Psychological Reframing:"
+          - list [ref=e698]:
+            - listitem [ref=e699]: Price drops = sale on the scarcest asset
+            - listitem [ref=e700]: Accumulating more satoshis for same dollars
+            - listitem [ref=e701]: Temporary drawdowns = future wealth opportunities
+            - listitem [ref=e702]: 4-year halving cycles create predictable recovery patterns
+          - heading "Security and Operational Risk Mitigation" [level=3] [ref=e703]
+          - paragraph [ref=e704]:
+            - strong [ref=e705]: "Technical Risks:"
+          - list [ref=e706]:
+            - listitem [ref=e707]: "Hardware wallet failure: Seed phrase backup enables recovery"
+            - listitem [ref=e708]: "Exchange insolvency: Self-custody eliminates counterparty risk"
+            - listitem [ref=e709]: "Password loss: Multi-sig backup keys enable recovery"
+            - listitem [ref=e710]: "Theft: Geographic key distribution prevents single-point loss"
+          - paragraph [ref=e711]:
+            - strong [ref=e712]: "Regulatory Risks:"
+          - list [ref=e713]:
+            - listitem [ref=e714]: "Bitcoin ban: Unlikely in US; Constitution protects property"
+            - listitem [ref=e715]: "Tax treatment changes: Long-term capital gains likely maintained"
+            - listitem [ref=e716]: "Exchange regulation: Self-custody unaffected by exchange rules"
+            - listitem [ref=e717]: "International portability: Bitcoin is global, not jurisdiction-bound"
+          - paragraph [ref=e718]:
+            - strong [ref=e719]: "Personal Risks:"
+          - list [ref=e720]:
+            - listitem [ref=e721]: "Job loss: Emergency fund separate from Bitcoin holdings"
+            - listitem [ref=e722]: "Health issues: Disability insurance maintains savings capacity"
+            - listitem [ref=e723]: "Death/incapacity: Inheritance planning with executor key access"
+          - heading "Tax Optimization for Bitcoin Holders" [level=2] [ref=e724]
+          - paragraph [ref=e725]:
+            - text: Justin's plan includes
+            - strong [ref=e726]: specific tax strategies
+            - text: for the unique characteristics of Bitcoin investment.
+          - heading "Long-Term Capital Gains Treatment" [level=3] [ref=e727]
+          - paragraph [ref=e728]:
+            - strong [ref=e729]: "Holding Period Strategy:"
+          - list [ref=e730]:
+            - listitem [ref=e731]: Hold Bitcoin >1 year for long-term capital gains rates
+            - listitem [ref=e732]: 0%, 15%, or 20% federal rates vs. ordinary income up to 37%
+            - listitem [ref=e733]:
+              - strong [ref=e734]: Justin's likely rate
+              - text: ": 15% or 20% (high-income earner)"
+          - paragraph [ref=e735]:
+            - strong [ref=e736]: "Tax-Loss Harvesting:"
+          - list [ref=e737]:
+            - listitem [ref=e738]: Sell Bitcoin at loss during bear markets (tax deduction)
+            - listitem [ref=e739]: Immediately repurchase (no wash sale rules for Bitcoin)
+            - listitem [ref=e740]: Offset gains elsewhere in portfolio
+            - listitem [ref=e741]: Carryforward excess losses ($3,000/year to ordinary income)
+          - heading "Tax-Efficient Liquidation Strategies" [level=3] [ref=e742]
+          - paragraph [ref=e743]:
+            - strong [ref=e744]: "Never Selling vs. Strategic Selling:"
+          - list [ref=e745]:
+            - listitem [ref=e746]: "Ideal: Never sell; borrow against holdings when needed"
+            - listitem [ref=e747]: "Strategic: Sell during low-income years (sabbatical, retirement)"
+            - listitem [ref=e748]: "Location: Sell from highest cost-basis lots (specific identification)"
+            - listitem [ref=e749]: "Offset: Match gains with harvested losses"
+          - paragraph [ref=e750]:
+            - strong [ref=e751]: "Future Lending Markets:"
+          - list [ref=e752]:
+            - listitem [ref=e753]: Bitcoin-backed loans (0-8% interest) avoid taxable events
+            - listitem [ref=e754]: Collateralized lending likely to expand significantly
+            - listitem [ref=e755]: Hold Bitcoin, spend dollars borrowed against it
+            - listitem [ref=e756]:
+              - strong [ref=e757]: Generational transfer
+              - text: ": Step-up in basis eliminates capital gains for heirs"
+          - heading "Record Keeping Requirements" [level=3] [ref=e758]
+          - paragraph [ref=e759]:
+            - strong [ref=e760]: "Cost Basis Tracking:"
+          - list [ref=e761]:
+            - listitem [ref=e762]: Every purchase date and price
+            - listitem [ref=e763]: Every sale date, price, and gain/loss
+            - listitem [ref=e764]: Wallet transfers (non-taxable but document)
+            - listitem [ref=e765]: Hard fork/airdrop income (if applicable)
+          - paragraph [ref=e766]:
+            - strong [ref=e767]: "Tools:"
+          - list [ref=e768]:
+            - listitem [ref=e769]: "CoinTracker: Automated exchange API imports"
+            - listitem [ref=e770]: "Koinly: Multi-exchange, multi-asset tracking"
+            - listitem [ref=e771]: "Bitcoin.Tax: Bitcoin-specific calculations"
+            - listitem [ref=e772]:
+              - strong [ref=e773]: CPA
+              - text: ": Specialize in cryptocurrency taxation"
+          - 'heading "Alternative Income Sleeve: MSTY for Yield" [level=2] [ref=e774]'
+          - paragraph [ref=e775]:
+            - text: While Bitcoin is the primary allocation, Justin's plan suggests a
+            - strong [ref=e776]: small income sleeve
+            - text: for diversification and monthly cash flow — specifically the
+            - strong [ref=e777]: MSTY ETF
+            - text: (Market State Tactical Yield).
+          - heading "MSTY ETF Overview" [level=3] [ref=e778]
+          - paragraph [ref=e779]:
+            - strong [ref=e780]: "Structure:"
+          - list [ref=e781]:
+            - listitem [ref=e782]: ETF that writes (sells) call options on MicroStrategy (MSTR) stock
+            - listitem [ref=e783]: MSTR is a Bitcoin-proxy (holds billions in BTC on balance sheet)
+            - listitem [ref=e784]: Collects option premiums and distributes as monthly income
+            - listitem [ref=e785]:
+              - strong [ref=e786]: Yield
+              - text: ": 10-15% annualized (variable, not guaranteed)"
+          - paragraph [ref=e787]:
+            - strong [ref=e788]: "Why MSTY vs. Other Yield Options:"
+          - list [ref=e789]:
+            - listitem [ref=e790]:
+              - strong [ref=e791]: Bitcoin exposure
+              - text: ": Indirect through MSTR holdings"
+            - listitem [ref=e792]:
+              - strong [ref=e793]: Monthly distributions
+              - text: ": Cash flow vs. pure appreciation"
+            - listitem [ref=e794]:
+              - strong [ref=e795]: IRA eligibility
+              - text: ": Can hold in tax-sheltered accounts"
+            - listitem [ref=e796]:
+              - strong [ref=e797]: Professional management
+              - text: ": Options strategy executed by fund"
+          - heading "Sizing and Implementation" [level=3] [ref=e798]
+          - paragraph [ref=e799]:
+            - strong [ref=e800]: "Allocation:"
+          - list [ref=e801]:
+            - listitem [ref=e802]: 5-10% of total portfolio maximum
+            - listitem [ref=e803]: $3,600-$7,200 annual investment from $72,000
+            - listitem [ref=e804]: Maintains 90-95% direct Bitcoin exposure
+          - paragraph [ref=e805]:
+            - strong [ref=e806]: "Location:"
+          - list [ref=e807]:
+            - listitem [ref=e808]: Traditional IRA or Solo 401(k) preferred
+            - listitem [ref=e809]: Ordinary income distributions tax-sheltered
+            - listitem [ref=e810]: Avoids annual tax drag on yield
+          - paragraph [ref=e811]:
+            - strong [ref=e812]: "Entry Strategy:"
+          - list [ref=e813]:
+            - listitem [ref=e814]: 3-month DCA into position (not lump sum)
+            - listitem [ref=e815]: Reinvest distributions for compounding
+            - listitem [ref=e816]: Monitor for strategic rebalancing
+          - heading "12-Month Execution Timeline" [level=2] [ref=e817]
+          - table [ref=e818]:
+            - rowgroup [ref=e819]:
+              - row "Month Key Actions Result" [ref=e820]:
+                - columnheader "Month" [ref=e821]
+                - columnheader "Key Actions" [ref=e822]
+                - columnheader "Result" [ref=e823]
+            - rowgroup [ref=e824]:
+              - row "1 Open River Financial account; set up $6,000 monthly auto-purchase DCA system operational" [ref=e825]:
+                - cell "1" [ref=e826]:
+                  - strong [ref=e827]: "1"
+                - cell "Open River Financial account; set up $6,000 monthly auto-purchase" [ref=e828]
+                - cell "DCA system operational" [ref=e829]
+              - row "2 Form S-Corporation for any side income; implement business structure Tax optimization active" [ref=e830]:
+                - cell "2" [ref=e831]:
+                  - strong [ref=e832]: "2"
+                - cell "Form S-Corporation for any side income; implement business structure" [ref=e833]
+                - cell "Tax optimization active" [ref=e834]
+              - row "3 Review first quarter purchases; optimize platform fees Cost minimization confirmed" [ref=e835]:
+                - cell "3" [ref=e836]:
+                  - strong [ref=e837]: "3"
+                - cell "Review first quarter purchases; optimize platform fees" [ref=e838]
+                - cell "Cost minimization confirmed" [ref=e839]
+              - row "4 Accumulation review; research hardware wallet options Self-custody preparation" [ref=e840]:
+                - cell "4" [ref=e841]:
+                  - strong [ref=e842]: "4"
+                - cell "Accumulation review; research hardware wallet options" [ref=e843]
+                - cell "Self-custody preparation" [ref=e844]
+              - row "5 Purchase Coldcard or SeedSigner; practice with small amount Hardware wallet ready" [ref=e845]:
+                - cell "5" [ref=e846]:
+                  - strong [ref=e847]: "5"
+                - cell "Purchase Coldcard or SeedSigner; practice with small amount" [ref=e848]
+                - cell "Hardware wallet ready" [ref=e849]
+              - 'row "6 If 1 BTC accumulated: execute self-custody transition Keys secured" [ref=e850]':
+                - cell "6" [ref=e851]:
+                  - strong [ref=e852]: "6"
+                - 'cell "If 1 BTC accumulated: execute self-custody transition" [ref=e853]'
+                - cell "Keys secured" [ref=e854]
+              - row "7 Mid-year tax review; optimize S-Corp salary/distribution ratio Tax strategy refined" [ref=e855]:
+                - cell "7" [ref=e856]:
+                  - strong [ref=e857]: "7"
+                - cell "Mid-year tax review; optimize S-Corp salary/distribution ratio" [ref=e858]
+                - cell "Tax strategy refined" [ref=e859]
+              - row "8 Consider opening Solo 401(k); research MSTY sleeve options Tax-sheltered options ready" [ref=e860]:
+                - cell "8" [ref=e861]:
+                  - strong [ref=e862]: "8"
+                - cell "Consider opening Solo 401(k); research MSTY sleeve options" [ref=e863]
+                - cell "Tax-sheltered options ready" [ref=e864]
+              - row "9 Q3 accumulation review; verify security protocols System integrity confirmed" [ref=e865]:
+                - cell "9" [ref=e866]:
+                  - strong [ref=e867]: "9"
+                - cell "Q3 accumulation review; verify security protocols" [ref=e868]
+                - cell "System integrity confirmed" [ref=e869]
+              - row "10 Year-end planning; maximize retirement contributions 2026 tax optimization" [ref=e870]:
+                - cell "10" [ref=e871]:
+                  - strong [ref=e872]: "10"
+                - cell "Year-end planning; maximize retirement contributions" [ref=e873]
+                - cell "2026 tax optimization" [ref=e874]
+              - row "11 Tax-loss harvesting evaluation (if applicable) Loss capture for deduction" [ref=e875]:
+                - cell "11" [ref=e876]:
+                  - strong [ref=e877]: "11"
+                - cell "Tax-loss harvesting evaluation (if applicable)" [ref=e878]
+                - cell "Loss capture for deduction" [ref=e879]
+              - row "12 Annual review; inheritance planning documentation Long-term security ensured" [ref=e880]:
+                - cell "12" [ref=e881]:
+                  - strong [ref=e882]: "12"
+                - cell "Annual review; inheritance planning documentation" [ref=e883]
+                - cell "Long-term security ensured" [ref=e884]
+          - 'heading "Key Takeaways: Lessons from Justin''s Bitcoin Accumulation Plan" [level=2] [ref=e885]'
+          - heading "1. Exceptional Savings Capacity Enables Exceptional Strategies" [level=3] [ref=e886]
+          - paragraph [ref=e887]:
+            - text: Justin $6,000 monthly capacity places him in a position where
+            - strong [ref=e888]: conventional "diversified" advice is suboptimal
+            - text: . With $72,000 annual capacity and 10+ year horizons, the strategy shifts from "preserve capital" to "maximize asymmetric upside."
+          - heading "2. Bitcoin Is Primary, Not Alternative" [level=3] [ref=e889]
+          - paragraph [ref=e890]:
+            - text: Framing Bitcoin as a "5% speculative allocation" misses its strategic value. As
+            - strong [ref=e891]: primary wealth storage
+            - text: ", it offers:"
+          - list [ref=e892]:
+            - listitem [ref=e893]: Absolute scarcity vs. infinite fiat supply
+            - listitem [ref=e894]: Decentralization vs. centralized control
+            - listitem [ref=e895]: Censorship resistance vs. permissioned systems
+            - listitem [ref=e896]:
+              - strong [ref=e897]: The asymmetric bet
+              - text: ": Unlimited upside, 100% maximum downside"
+          - heading "3. DCA Removes Psychology from Investing" [level=3] [ref=e898]
+          - paragraph [ref=e899]: "The $6,000 monthly auto-purchase removes all timing decisions:"
+          - list [ref=e900]:
+            - listitem [ref=e901]: No "should I buy now or wait?"
+            - listitem [ref=e902]: No emotional selling during crashes
+            - listitem [ref=e903]: No FOMO buying during peaks
+            - listitem [ref=e904]:
+              - strong [ref=e905]: Mechanical accumulation
+              - text: beats behavioral investing
+          - heading "4. Self-Custody at 1 BTC Is Non-Negotiable" [level=3] [ref=e906]
+          - paragraph [ref=e907]:
+            - text: Exchange custody risks are real and recurring. At $70,000-$100,000+ holdings, self-custody cost ($100-$200 hardware wallet) is trivial versus exchange failure risk.
+            - strong [ref=e908]: 2-of-3 multi-sig is institutional-grade security for individuals.
+          - heading "5. Tax Optimization Is Part of Accumulation Strategy" [level=3] [ref=e909]
+          - paragraph [ref=e910]:
+            - text: The S-Corp structure doesn't just save $3,000-$12,000 annually —
+            - strong [ref=e911]: it creates additional Bitcoin accumulation capacity.
+            - text: Every dollar saved in taxes is a dollar that can be deployed into the scarcest asset.
+          - heading "Frequently Asked Questions About Aggressive Bitcoin Strategies" [level=2] [ref=e912]
+          - heading "What if Bitcoin goes to zero?" [level=3] [ref=e913]
+          - paragraph [ref=e914]:
+            - strong [ref=e915]: "Risk Assessment:"
+          - list [ref=e916]:
+            - listitem [ref=e917]: "Maximum loss: 100% of investment ($720,000 over 10 years)"
+            - listitem [ref=e918]: "Probability assessment: Bitcoin is 15+ years old, $1T+ market cap, ETF-approved, nation-state adopted"
+            - listitem [ref=e919]: "Network effect: Growing user base, institutional adoption, infrastructure development"
+            - listitem [ref=e920]:
+              - strong [ref=e921]: Comparison
+              - text: ": Riskier than government bonds, less risky than early-stage startups"
+          - paragraph [ref=e922]:
+            - strong [ref=e923]: "Justin Context:"
+          - list [ref=e924]:
+            - listitem [ref=e925]: High income continues regardless of Bitcoin price
+            - listitem [ref=e926]: $72,000 annual capacity means ability to rebuild
+            - listitem [ref=e927]: DCA spreads entry points across all market conditions
+            - listitem [ref=e928]:
+              - strong [ref=e929]: Real risk
+              - text: ": Opportunity cost if Bitcoin succeeds and you're not exposed"
+          - heading "How do I handle family/spouse concerns about volatility?" [level=3] [ref=e930]
+          - paragraph [ref=e931]:
+            - strong [ref=e932]: "Education Approach:"
+          - list [ref=e933]:
+            - listitem [ref=e934]: Share long-term data (10+ year returns, adoption curves)
+            - listitem [ref=e935]: Explain position sizing ($6,000/month vs. total income)
+            - listitem [ref=e936]: Demonstrate security measures (self-custody, multi-sig)
+            - listitem [ref=e937]: Review together annually (transparency builds confidence)
+          - paragraph [ref=e938]:
+            - strong [ref=e939]: "Risk Management:"
+          - list [ref=e940]:
+            - listitem [ref=e941]: Maintain separate emergency fund (6-12 months expenses)
+            - listitem [ref=e942]: Keep home, auto, life insurance current
+            - listitem [ref=e943]: Consider 5-10% allocation to stable assets if needed for family harmony
+            - listitem [ref=e944]:
+              - strong [ref=e945]: Never risk money you can't afford to lose completely
+          - heading "Should I ever sell, and if so, when?" [level=3] [ref=e946]
+          - paragraph [ref=e947]:
+            - strong [ref=e948]: "Strategic Selling Framework:"
+          - list [ref=e949]:
+            - listitem [ref=e950]:
+              - strong [ref=e951]: Never sell
+              - text: "(ideal): Borrow against holdings if cash needed"
+            - listitem [ref=e952]:
+              - strong [ref=e953]: Strategic rebalancing
+              - text: "(if allocation exceeds 95%): Sell small portion to maintain sanity/diversification"
+            - listitem [ref=e954]:
+              - strong [ref=e955]: Life events
+              - text: ": Major purchases (home, business) that exceed cash flow"
+            - listitem [ref=e956]:
+              - strong [ref=e957]: Generational
+              - text: ": Transfer to heirs with step-up in basis (no capital gains)"
+          - paragraph [ref=e958]:
+            - strong [ref=e959]: Justin's Plan
+            - text: ": 10+ year holding minimum, generational wealth target, minimal selling."
+          - heading "How does inheritance work with self-custodied Bitcoin?" [level=3] [ref=e960]
+          - paragraph [ref=e961]:
+            - strong [ref=e962]: "Inheritance Planning:"
+          - list [ref=e963]:
+            - listitem [ref=e964]:
+              - strong [ref=e965]: Executor key
+              - text: ": 1 of 3 multi-sig keys held by estate attorney"
+            - listitem [ref=e966]:
+              - strong [ref=e967]: Inheritance letter
+              - text: ": Document with seed phrase locations, wallet instructions"
+            - listitem [ref=e968]:
+              - strong [ref=e969]: Step-up in basis
+              - text: ": Heirs receive Bitcoin at current market value (no capital gains on appreciation during your life)"
+            - listitem [ref=e970]:
+              - strong [ref=e971]: Estate liquidity
+              - text: ": Consider life insurance for estate tax obligations (if applicable)"
+          - paragraph [ref=e972]:
+            - strong [ref=e973]: "Security Balance:"
+          - list [ref=e974]:
+            - listitem [ref=e975]: Heirs must be able to access (with proper documentation)
+            - listitem [ref=e976]: Unauthorized access must be prevented during lifetime
+            - listitem [ref=e977]:
+              - strong [ref=e978]: Multi-sig solves both
+              - text: ": Executor + heir keys required together"
+          - heading "What about altcoins? Should I diversify crypto?" [level=3] [ref=e979]
+          - paragraph [ref=e980]:
+            - strong [ref=e981]: Justin's Plan Position
+            - text: ":"
+            - strong [ref=e982]: No altcoins. 100% Bitcoin.
+          - paragraph [ref=e983]:
+            - strong [ref=e984]: "Rationale:"
+          - list [ref=e985]:
+            - listitem [ref=e986]: Bitcoin has 15+ year track record, $1T+ market cap, regulatory clarity
+            - listitem [ref=e987]: Altcoins have 99% failure rate historically
+            - listitem [ref=e988]: Every cycle, new "Ethereum killers" emerge and die
+            - listitem [ref=e989]:
+              - strong [ref=e990]: Opportunity cost of altcoin experimentation
+              - text: ": Missed Bitcoin accumulation"
+            - listitem [ref=e991]:
+              - strong [ref=e992]: Focus
+              - text: ": Master one thing (Bitcoin) vs. being mediocre at many"
+          - paragraph [ref=e993]:
+            - strong [ref=e994]: Exception
+            - text: ": If deep technical expertise in specific altcoin project, tiny allocation (1-2%) acceptable. For non-experts: Bitcoin-only."
+          - heading "Ready to Implement Your Bitcoin Accumulation Strategy?" [level=2] [ref=e995]
+          - paragraph [ref=e996]:
+            - text: Justin's wealth plan demonstrates that
+            - strong [ref=e997]: exceptional savings capacity combined with disciplined execution creates transformational wealth potential.
+            - text: The $6,000 monthly DCA into Bitcoin isn't speculation — it's
+            - strong [ref=e998]: systematic accumulation of the scarcest asset in human history
+            - text: over a time horizon that absorbs volatility.
+          - paragraph [ref=e999]:
+            - text: The difference between watching from the sidelines and participating in this wealth transformation isn't income level or luck —
+            - strong [ref=e1000]: it's knowledge, conviction, and the willingness to act on that conviction.
+          - paragraph [ref=e1001]: "Every element of this plan is accessible:"
+          - list [ref=e1002]:
+            - listitem [ref=e1003]: River, Swan, Strike available to anyone with bank account
+            - listitem [ref=e1004]: Hardware wallets available online ($50-$200)
+            - listitem [ref=e1005]: S-Corp structures formed by CPAs nationwide
+            - listitem [ref=e1006]: Bitcoin education freely available (Legacy Investing Show, books, podcasts)
+          - paragraph [ref=e1007]:
+            - strong [ref=e1008]: The barrier isn't access. It's action.
+          - paragraph [ref=e1009]:
+            - text: If you're ready to explore whether a Bitcoin accumulation strategy fits your financial situation, the
+            - link "Legacy Investing Show programs" [ref=e1010] [cursor=pointer]:
+              - /url: https://www.legacyinvestingshow.com/programs
+            - text: provide the education, community, and implementation support to evaluate and execute these strategies.
+          - paragraph [ref=e1011]:
+            - strong [ref=e1012]: Time in the market beats timing the market. Start your accumulation today.
+          - separator [ref=e1013]
+          - paragraph [ref=e1014]:
+            - emphasis [ref=e1015]: This educational analysis is based on a personalized wealth plan prepared for educational purposes. Individual results will vary based on specific circumstances, market conditions, and Bitcoin price performance. Past performance does not guarantee future results. Always consult qualified tax, legal, and financial professionals before implementing investment strategies.
+        - complementary [ref=e1016]:
+          - generic [ref=e1017]:
+            - img "Preston Seo" [ref=e1019]
+            - generic [ref=e1020]:
+              - paragraph [ref=e1021]: Preston Seo
+              - paragraph [ref=e1022]: Financial Educator & Real Estate Investor
+              - paragraph [ref=e1023]: Preston has built a $15M+ real estate portfolio and helped 2,000+ students improve tax decisions, wealth systems, and long-term financial execution.
+              - link "Learn more about Preston Seo →" [ref=e1024] [cursor=pointer]:
+                - /url: /about
+        - region "Frequently asked questions" [ref=e1025]:
+          - heading "Frequently Asked Questions" [level=2] [ref=e1026]
+          - generic [ref=e1027]:
+            - generic [ref=e1028]:
+              - button "Why allocate 100% of savings to Bitcoin rather than diversification?" [expanded] [ref=e1029] [cursor=pointer]:
+                - generic [ref=e1030]: Why allocate 100% of savings to Bitcoin rather than diversification?
+                - img [ref=e1031]
+              - paragraph [ref=e1035]: "Justin's plan recognizes Bitcoin's unique characteristics: absolute scarcity (21M cap), decentralization, censorship resistance, and asymmetric upside potential. With $72,000 annual capacity and a 10+ year horizon, systematic Bitcoin accumulation offers uncapped appreciation potential that diversified portfolios cannot match. The plan acknowledges volatility but accepts it as the price of admission for transformational wealth building."
+            - generic [ref=e1036]:
+              - button "What is the optimal dollar-cost averaging frequency for Bitcoin?" [ref=e1037] [cursor=pointer]:
+                - generic [ref=e1038]: What is the optimal dollar-cost averaging frequency for Bitcoin?
+                - img [ref=e1039]
+              - paragraph [ref=e1043]: Research shows daily, weekly, and monthly DCA perform similarly over long time horizons. Justin's plan specifies monthly $6,000 purchases for simplicity and reduced transaction costs. Weekly ($1,500) or daily ($200) would smooth volatility further but increase complexity. The key is consistency — automated purchases on the same schedule regardless of price.
+            - generic [ref=e1044]:
+              - button "Why is self-custody at 1 BTC important versus exchange storage?" [ref=e1045] [cursor=pointer]:
+                - generic [ref=e1046]: Why is self-custody at 1 BTC important versus exchange storage?
+                - img [ref=e1047]
+              - paragraph [ref=e1051]: Exchange custody introduces counterparty risk (hacks, insolvency, regulatory freezes). At 1 BTC (current value ~$70,000-$100,000), the risk of exchange loss exceeds the cost and complexity of self-custody. Hardware wallets ($100-$200) with 2-of-3 multi-sig setup provide institutional-grade security without third-party dependence. The plan treats this as a rite of passage in Bitcoin ownership.
+            - generic [ref=e1052]:
+              - button "How does the S-Corp structure benefit high savers specifically?" [ref=e1053] [cursor=pointer]:
+                - generic [ref=e1054]: How does the S-Corp structure benefit high savers specifically?
+                - img [ref=e1055]
+              - paragraph [ref=e1059]: For high-income earners with side business income, the S-Corp creates immediate tax savings through salary/distribution splitting. A $150,000 business income split as $70,000 salary + $80,000 distribution saves $12,240 in self-employment taxes. This $12,000+ annual savings compounds into additional Bitcoin accumulation capacity — turning tax optimization into wealth acceleration.
+            - generic [ref=e1060]:
+              - button "What happens during extended Bitcoin bear markets?" [ref=e1061] [cursor=pointer]:
+                - generic [ref=e1062]: What happens during extended Bitcoin bear markets?
+                - img [ref=e1063]
+              - paragraph [ref=e1067]: The plan embraces volatility as feature, not bug. Bear markets allow accumulation of more satoshis per dollar. Historical data shows every 4-year cycle has delivered higher lows and higher highs. The $6,000 monthly commitment continues regardless of price — buying more when price is low, fewer when high. The 10+ year horizon absorbs multiple cycles.
+            - generic [ref=e1068]:
+              - button "How does this strategy compare to traditional 60/40 portfolios?" [ref=e1069] [cursor=pointer]:
+                - generic [ref=e1070]: How does this strategy compare to traditional 60/40 portfolios?
+                - img [ref=e1071]
+              - paragraph [ref=e1075]: Traditional 60/40 portfolios (stocks/bonds) target 6-8% annual returns with 15% volatility. Bitcoin has delivered 60%+ annualized returns with 80% volatility over 10+ year periods. Justin's plan prioritizes asymmetric upside over Sharpe ratio optimization. The $72,000 annual capacity allows weathering volatility that would devastate smaller portfolios — high savings rate enables high-volatility, high-return allocation.
+        - complementary "Related articles" [ref=e1076]:
+          - heading "Related Articles" [level=3] [ref=e1077]
+          - generic [ref=e1078]:
+            - 'link "Abigail''s Wealth Plan: Eliminating W-2 Tax Liability and Building Early Retirement Abigail''s Wealth Plan: Eliminating W-2 Tax Liability and Building Early Retirement 18 min read" [ref=e1079] [cursor=pointer]':
+              - /url: /blog/abigail-wealth-plan
+              - 'img "Abigail''s Wealth Plan: Eliminating W-2 Tax Liability and Building Early Retirement" [ref=e1081]'
+              - generic [ref=e1082]:
+                - 'heading "Abigail''s Wealth Plan: Eliminating W-2 Tax Liability and Building Early Retirement" [level=4] [ref=e1083]'
+                - text: 18 min read
+            - 'link "Brian''s Wealth Plan: Self-Employed Professional Tax and Retirement Strategy Brian''s Wealth Plan: Self-Employed Professional Tax and Retirement Strategy 13 min read" [ref=e1084] [cursor=pointer]':
+              - /url: /blog/brian-wealth-plan
+              - 'img "Brian''s Wealth Plan: Self-Employed Professional Tax and Retirement Strategy" [ref=e1086]'
+              - generic [ref=e1087]:
+                - 'heading "Brian''s Wealth Plan: Self-Employed Professional Tax and Retirement Strategy" [level=4] [ref=e1088]'
+                - text: 13 min read
+            - 'link "Casey''s Wealth Strategy Snapshot: Efficient Wealth Building Foundation Casey''s Wealth Strategy Snapshot: Efficient Wealth Building Foundation 13 min read" [ref=e1089] [cursor=pointer]':
+              - /url: /blog/casey-wealth-plan
+              - 'img "Casey''s Wealth Strategy Snapshot: Efficient Wealth Building Foundation" [ref=e1091]'
+              - generic [ref=e1092]:
+                - 'heading "Casey''s Wealth Strategy Snapshot: Efficient Wealth Building Foundation" [level=4] [ref=e1093]'
+                - text: 13 min read
+    - generic [ref=e1095]:
+      - heading "Bring The Article Into Before You File" [level=2] [ref=e1096]
+      - paragraph [ref=e1097]: Join Preston live on Zoom from April 17-19, 2026, 10 AM-4 PM Eastern. Day 1 reads the return, Day 2 builds the strategy, and Day 3 locks the 12-month plan.
+      - link "Get Your Seat Before You File" [ref=e1098] [cursor=pointer]:
+        - /url: https://go.managemoney101.com/challenge2
+  - contentinfo [ref=e1099]:
+    - generic [ref=e1100]:
+      - generic [ref=e1101]:
+        - generic [ref=e1102]:
+          - img "Legacy Investing Show" [ref=e1103]
+          - generic [ref=e1104]: Legacy Investing Show
+        - generic [ref=e1105]:
+          - link "Tax Strategies" [ref=e1106] [cursor=pointer]:
+            - /url: /tax-strategies
+          - link "Compare" [ref=e1107] [cursor=pointer]:
+            - /url: /compare
+          - link "Tools" [ref=e1108] [cursor=pointer]:
+            - /url: /tools
+          - link "Worksheets" [ref=e1109] [cursor=pointer]:
+            - /url: /worksheets
+          - link "Results" [ref=e1110] [cursor=pointer]:
+            - /url: /success-stories
+          - link "Blog" [ref=e1111] [cursor=pointer]:
+            - /url: /blog
+      - generic [ref=e1112]: Copyright 2026
