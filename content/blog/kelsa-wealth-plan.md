@@ -275,6 +275,37 @@ Kelsa's plan leverages **spousal opportunities** that multiply wealth building b
 - Both use $18,000 of their exclusion
 - **Form 709**: File to document gift-splitting election
 
+**Multi-Generational Gifting Impact:**
+A dual-income couple with two married children and four grandchildren can transfer substantial wealth annually:
+- Two children (married): $36,000 × 2 = $72,000
+- Four grandchildren: $36,000 × 4 = $144,000
+- **Total annual transfers**: $216,000
+- **Over 10 years**: $2.16 million transferred with zero gift tax
+
+This systematic approach reduces the taxable estate while providing immediate financial support to family members during their peak wealth-building years when the money has maximum impact.
+
+### Spousal Lifetime Access Trusts (SLATs)
+
+For dual-income households with significant assets, Spousal Lifetime Access Trusts offer powerful estate planning benefits:
+
+**How SLATs Work:**
+- Spouse 1 creates irrevocable trust for benefit of Spouse 2
+- Spouse 1 gifts assets up to lifetime exemption ($13.99M in 2025)
+- Spouse 2 can receive income and principal distributions
+- Assets appreciate outside of both estates
+- **Freeze technique**: Remove appreciating assets from estate
+
+**Reciprocal Trust Doctrine:**
+- Cannot create identical trusts for each other simultaneously
+- Must have meaningful differences in terms, beneficiaries, or timing
+- Work with experienced estate attorney to structure properly
+
+**Benefits for Dual-Income Households:**
+- Utilize both spouses' lifetime exemptions
+- Maintain indirect access through spouse beneficiary
+- Protect assets from creditors and future estate tax
+- Flexibility to change remainder beneficiaries later
+
 ### Spousal Business Strategies
 
 **If One Spouse Owns Business:**

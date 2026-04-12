@@ -413,6 +413,28 @@ With limited time for alternative investments, **maximizing tax-advantaged accou
 - References from prior investors
 - **Minimum**: Invest only what you can afford to lose entirely
 
+**Healthcare-Specific Syndication Considerations:**
+
+**Shift-Based Income Compatibility:**
+Unlike traditional 9-5 workers, healthcare professionals often work compressed schedules (3×12-hour shifts, 4×10-hour shifts, etc.). This actually creates advantages for passive investing:
+- **Concentrated days off**: 3-4 consecutive days available for due diligence, education, and research
+- **Night/weekend availability**: Can participate in investor calls during off-peak hours
+- **Predictable schedule**: Advance scheduling allows planning around earnings calls and updates
+
+**Professional Network Leverage:**
+Healthcare professionals have unique syndication evaluation advantages:
+- **Colleague referrals**: Many physicians and nurses invest in real estate syndications — network for references
+- **Location expertise**: Medical professionals often have deep knowledge of their market's neighborhoods, growth areas, and economic drivers
+- **Risk assessment skills**: Clinical decision-making translates well to investment risk evaluation
+
+**Managing Malpractice Insurance Costs:**
+While not directly an investment strategy, optimizing malpractice coverage affects investable cash flow:
+- **Shop annually**: Rates vary significantly between carriers
+- **Risk management credits**: Many insurers offer discounts for continuing education, safety protocols
+- **Group coverage**: If available through employer or professional association, often cheaper
+- **State programs**: Some states offer excess coverage pools at reduced rates
+- **Savings reinvestment**: Every dollar saved on premiums can be redirected to wealth-building investments
+
 ### Should I use a financial advisor specializing in healthcare?
 
 **Benefits of specialized advisor:**

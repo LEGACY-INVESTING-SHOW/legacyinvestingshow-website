@@ -466,6 +466,48 @@ Post-exit wealth management requires different skills than business operations. 
 
 **Timing**: Don't rush decision due to burnout; but don't delay indefinitely.
 
+### What are the psychological challenges of selling a business?
+
+**Identity Transition:**
+For many entrepreneurs, their business IS their identity. The transition from "business owner" to "wealth owner" requires psychological preparation:
+- **Purpose vacuum**: Without the daily challenges of business operations, some experience depression
+- **Social structure loss**: Many relationships were business-centric
+- **Validation shift**: External validation from revenue/market share must shift to internal satisfaction
+
+**Coping Strategies:**
+- **New identity creation**: "Mentor," "investor," "philanthropist," or "serial entrepreneur"
+- **Structured schedule**: Avoid the temptation of unstructured days that lead to aimlessness
+- **Community building**: Join entrepreneur peer groups (EO, YPO, Tiger 21)
+- **Legacy projects**: Teaching, writing, or philanthropy provide purpose
+
+**Timeline for Adjustment:**
+Most entrepreneurs report 6-18 months to fully adjust to post-exit life. Having a structured plan for this transition period is as important as the financial planning.
+
+### Should I consider a partial sale or recapitalization instead of full exit?
+
+**Partial Liquidity Options:**
+
+**Minority Sale (20-40%):**
+- Bring in private equity or strategic investor
+- Take chips off the table while retaining control
+- Partner brings expertise, capital, and network
+- **Benefit**: Reduce risk while keeping upside
+
+**Recapitalization:**
+- Refinance business to pull out cash
+- Maintain 100% ownership
+- Use debt to fund growth or distributions
+- **Benefit**: Liquidity without giving up equity
+
+**Earnout Structure:**
+- Sell controlling interest but retain minority stake
+- Earnout based on post-sale performance
+- Aligns buyer and seller incentives
+- **Benefit**: Capture value from continued growth
+
+**The "Second Bite" Strategy:**
+Many entrepreneurs sell 60-80% initially, grow with PE backing, then sell remaining stake 3-5 years later for significantly more — capturing two liquidity events from one business.
+
 
 ## Ready to Build and Exit Your Business Strategically?
 
