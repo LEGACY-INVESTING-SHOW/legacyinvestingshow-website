@@ -517,3 +517,12 @@ Tax optimization scenarios typically differ by: (1) Income timing—accelerating
 Every tax situation is unique. If you want a personalized tax optimization strategy tailored to your specific income structure, business activities, and wealth building goals—explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/programs) and start building your legacy today.
 
 Remember: Tax planning isn't about finding loopholes—it's about making informed decisions that align your current-year tax obligations with your long-term wealth building objectives. The best tax strategy is the one you understand, can implement consistently, and that serves your broader financial life goals.
+
+## Related Tax Strategies
+
+Deepen your understanding with these specific tax optimization strategies:
+
+- [Retirement Contribution Strategies](/tax-strategies/) - Maximize pre-tax and Roth options
+- [S-Corporation Election](/tax-strategies/s-corp-strategy/) - Business entity tax optimization
+- [Charitable Bunching Strategy](/tax-strategies/charitable-bunching/) - Optimize charitable deductions
+- [Tax Loss Harvesting](/tax-strategies/tax-loss-harvesting/) - Offset gains and income

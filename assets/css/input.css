@@ -1998,7 +1998,8 @@
   .prose-minimal table {
     display: block;
     overflow-x: auto;
-    white-space: nowrap;
+    width: 100%;
+    table-layout: fixed;
     -webkit-overflow-scrolling: touch;
   }
   
@@ -2006,6 +2007,8 @@
   .prose-minimal td {
     padding: 12px 16px;
     font-size: 0.875rem;
+    white-space: normal;
+    word-break: break-word;
   }
 }
 

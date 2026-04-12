@@ -602,6 +602,16 @@ Tax scenario modeling: (1) Establish baseline, (2) Define variables, (3) Calcula
 
 Educational tax planning presents general principles and frameworks. Advisory analyzes specific situations to provide actionable recommendations. This document is educational.
 
+## Related Tax Strategies
+
+Explore these specific strategies mentioned in Terry's tax planning scenarios:
+
+- [Retirement Account Optimization](/tax-strategies/) - 401(k), IRA, HSA maximization
+- [S-Corporation Strategy](/tax-strategies/s-corp-strategy/) - Entity structuring for business income
+- [Charitable Bunching](/tax-strategies/charitable-bunching/) - Strategic deduction timing
+- [Tax Loss Harvesting](/tax-strategies/tax-loss-harvesting/) - Offset gains and reduce liability
+- [Roth Conversion Strategy](/tax-strategies/roth-conversion/) - Timing conversions for optimal brackets
+
 ## Ready to Build Your Own Tax Strategy?
 
 Every tax situation is unique. If you want a personalized tax optimization strategy—explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/programs) and start building your legacy today.

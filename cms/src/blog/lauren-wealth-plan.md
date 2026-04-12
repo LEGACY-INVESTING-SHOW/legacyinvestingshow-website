@@ -505,3 +505,12 @@ If you're ready to implement a systematic pathway to $1 million—combining inco
 - [House Hacking Strategy](/blog/house-hacking/) - Live for free while building equity
 - [Low-Cost Investing Guide](/blog/index-fund-investing/) - Build wealth with minimal fees
 - [Side Income Ideas](/blog/side-income/) - Accelerate your timeline
+
+## Related Tax Strategies
+
+Optimize your path to $1 million with these tax strategies:
+
+- [Tax-Advantaged Accounts](/tax-strategies/) - Maximize 401(k), IRA, and HSA contributions
+- [Tax Loss Harvesting](/tax-strategies/tax-loss-harvesting/) - Minimize investment taxes
+- [Backdoor Roth IRA](/tax-strategies/backdoor-roth-ira/) - Tax-free wealth building
+- [HSA Triple Tax Advantage](/tax-strategies/hsa-strategy/) - Ultimate tax savings vehicle

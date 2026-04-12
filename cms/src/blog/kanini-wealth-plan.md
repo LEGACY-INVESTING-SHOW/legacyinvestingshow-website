@@ -425,3 +425,13 @@ Motivation strategies: (1) Visual progress tracking, (2) Milestone celebrations,
 Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation—whether that involves debt management, emergency fund building, staged wealth building, or comprehensive financial recovery—explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/programs) and start building your legacy today.
 
 The path from $50,000+ debt to financial freedom isn't easy, but it is simple: stabilize, eliminate, secure, then build. Kanini's plan provides the roadmap; the walking is up to you.
+
+## Related Tax Strategies
+
+As Kanini progresses to wealth building, these tax strategies will accelerate the journey:
+
+- [Tax Strategies for Debt Management](/tax-strategies/) - Optimize taxes during debt payoff
+- [Student Loan Interest Deduction](/tax-strategies/) - Maximize education tax benefits
+- [HSA Strategy Guide](/tax-strategies/hsa-strategy/) - Triple tax advantage for healthcare
+- [Retirement Contribution Tax Benefits](/tax-strategies/) - Reduce taxable income while saving
+- [Side Income Tax Optimization](/tax-strategies/self-employed/) - Business deductions for extra income
