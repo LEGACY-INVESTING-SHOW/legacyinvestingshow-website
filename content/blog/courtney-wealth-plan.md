@@ -481,3 +481,12 @@ Planning horizons should reflect increasing life expectancies. A 65-year-old cou
 
 **Legacy and Charitable Planning Integration:**
 Advanced modeling incorporates estate planning objectives, charitable giving strategies, and multi-generational wealth transfer considerations. These elements can significantly impact optimal savings and investment strategies during the accumulation phase.
+
+## Related Tax Strategies
+
+Explore these tax optimization strategies to complement your financial modeling approach:
+
+- [Tax Loss Harvesting](/tax-strategies/tax-loss-harvesting/) - Offset capital gains and reduce taxable income
+- [Roth Conversion Strategy](/tax-strategies/roth-conversion/) - Strategic timing for Roth conversions
+- [HSA Strategy Guide](/tax-strategies/hsa-strategy/) - Triple tax advantage health savings
+- [Charitable Bunching Strategy](/tax-strategies/charitable-bunching/) - Maximize charitable deductions

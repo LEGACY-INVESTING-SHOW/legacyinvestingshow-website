@@ -530,3 +530,13 @@ Airbnb arbitrage within LLC structure: (1) LLC leases property long-term from la
 Every real estate market and investor situation is unique. If you want a personalized wealth strategy incorporating leverage optimization, entity structuring, and tax-efficient operations—explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/programs) and start building your legacy today.
 
 Real estate wealth building isn't about finding the perfect property—it's about applying the right structure, strategy, and systems to good properties in solid markets. Lawrence's Worcester plan provides the blueprint; your execution determines the results.
+
+## Related Tax Strategies
+
+Explore these strategies to maximize Lawrence's real estate tax advantages:
+
+- [Short-Term Rental Loophole](/tax-strategies/short-term-rental-loophole/) - STR tax optimization
+- [Cost Segregation Study](/tax-strategies/cost-segregation/) - Accelerated depreciation benefits
+- [Real Estate Professional Status](/tax-strategies/real-estate-professional-status/) - Unlimited loss deductions
+- [Augusta Rule Benefits](/tax-strategies/augusta-rule/) - 14 days tax-free rental income
+- [Bonus Depreciation](/tax-strategies/bonus-depreciation/) - Immediate expense deductions

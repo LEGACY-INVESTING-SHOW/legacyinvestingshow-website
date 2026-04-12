@@ -568,6 +568,15 @@ Follow the RECIPE framework: (R) Review all categories, (E) Eliminate waste, (C)
 
 Eliminating debt creates compounding benefits: (1) Interest savings, (2) Cash flow liberation, (3) Credit score improvement, (4) Psychological freedom, (5) Risk capacity. For JC, eliminating $25K-$40K in high-interest debt creates $15K-$25K in first-year value.
 
+## Related Tax Strategies
+
+Explore these tax optimization strategies to accelerate JC's wealth building timeline:
+
+- [S-Corporation Strategy](/tax-strategies/s-corp-strategy/) - Reduce self-employment taxes
+- [Short-Term Rental Loophole](/tax-strategies/short-term-rental-loophole/) - STR tax optimization
+- [Cost Segregation Guide](/tax-strategies/cost-segregation/) - Accelerated depreciation benefits
+- [Backdoor Roth IRA](/tax-strategies/backdoor-roth-ira/) - Tax-free growth strategies
+
 ## Ready to Build Your Own Wealth Plan?
 
 Every financial journey is unique. If you want a personalized wealth strategy delivering year-one value—explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/programs) and start building your legacy today.
