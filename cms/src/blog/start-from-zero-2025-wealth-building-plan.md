@@ -79,7 +79,7 @@ breadcrumbs:
   - name: Blog
     url: /blog
   - name: Investing Strategy
-    url: /blog/category/investing-strategy
+    url: /topics/investing
   - name: Start From Zero 2025
     url: /blog/start-from-zero-2025-wealth-building-plan
 statistics:
@@ -730,7 +730,7 @@ The 50/25/25 allocation puts 25% into cash-flowing real estate—and Airbnb arbi
 
 Preston Seo created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[blog resources](/blog/) | [Watch free training →](/free-training)
+[blog resources](/blog/) | [Watch free training →](/tax-strategies-101)
 
 ---
 

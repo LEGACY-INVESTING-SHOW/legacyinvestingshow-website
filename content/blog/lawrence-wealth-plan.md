@@ -527,7 +527,7 @@ Airbnb arbitrage within LLC structure: (1) LLC leases property long-term from la
 
 ## Ready to Build Your Own Wealth Plan?
 
-Every real estate market and investor situation is unique. If you want a personalized wealth strategy incorporating leverage optimization, entity structuring, and tax-efficient operations—explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/programs) and start building your legacy today.
+Every real estate market and investor situation is unique. If you want a personalized wealth strategy incorporating leverage optimization, entity structuring, and tax-efficient operations—explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/tax-strategies-101) and start building your legacy today.
 
 Real estate wealth building isn't about finding the perfect property—it's about applying the right structure, strategy, and systems to good properties in solid markets. Lawrence's Worcester plan provides the blueprint; your execution determines the results.
 

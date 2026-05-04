@@ -589,7 +589,7 @@ The operators who will thrive in 2025 and beyond aren't those chasing the latest
 
 I created Legacy Investing Show to teach the exact systems that scaled my business from $15K first-month bookings to $34K/month—providing the strategy, scripts, and community that accelerate success.
 
-[blog resources](/blog/) | [Watch free training](/free-training)
+[blog resources](/blog/) | [Watch free training](/tax-strategies-101)
 
 ---
 

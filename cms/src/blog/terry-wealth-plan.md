@@ -610,8 +610,8 @@ Explore these specific strategies mentioned in Terry's tax planning scenarios:
 - [S-Corporation Strategy](/tax-strategies/s-corp-strategy/) - Entity structuring for business income
 - [Charitable Bunching](/tax-strategies/charitable-bunching/) - Strategic deduction timing
 - [Tax Loss Harvesting](/tax-strategies/tax-loss-harvesting/) - Offset gains and reduce liability
-- [Roth Conversion Strategy](/tax-strategies/roth-conversion/) - Timing conversions for optimal brackets
+- [Roth Conversion Strategy](/tax-strategies/roth-conversion-ladder) - Timing conversions for optimal brackets
 
 ## Ready to Build Your Own Tax Strategy?
 
-Every tax situation is unique. If you want a personalized tax optimization strategy—explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/programs) and start building your legacy today.
+Every tax situation is unique. If you want a personalized tax optimization strategy—explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/tax-strategies-101) and start building your legacy today.

@@ -459,6 +459,6 @@ REP requires 750+ hours annually. With 36-48 hours of nursing shifts weekly, add
 
 ## Ready to Build Your Own Wealth Plan?
 
-Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation — whether that involves healthcare professional tax optimization, passive real estate investment, or student loan elimination — explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/programs) and start building your legacy today.
+Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation — whether that involves healthcare professional tax optimization, passive real estate investment, or student loan elimination — explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/tax-strategies-101) and start building your legacy today.
 
 The demanding schedule of healthcare work doesn't preclude wealth building—it just requires selecting the right passive strategies that generate returns without requiring your limited time and energy.

@@ -675,6 +675,6 @@ Wealth optimization coordinates income maximization, tax minimization, investmen
 
 ## Ready to Build Your Own Wealth Plan?
 
-Every financial journey is unique. If you want a personalized wealth optimization strategy incorporating real estate investment, tax minimization, and systematic wealth building—explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/programs) and start building your legacy today.
+Every financial journey is unique. If you want a personalized wealth optimization strategy incorporating real estate investment, tax minimization, and systematic wealth building—explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/tax-strategies-101) and start building your legacy today.
 
 The difference between hoping for wealth and engineering it is the comprehensive plan. Hernan's roadmap demonstrates what's possible when real estate expertise, tax strategy, and disciplined execution align.

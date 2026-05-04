@@ -456,6 +456,6 @@ At $2M+ net worth in Washington, establish irrevocable trusts for asset protecti
 
 ## Ready to Build Your Own Wealth Plan?
 
-Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation — whether that involves high-net-worth optimization, geographic diversification, or sophisticated estate planning — explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/programs) and start building your legacy today.
+Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation — whether that involves high-net-worth optimization, geographic diversification, or sophisticated estate planning — explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/tax-strategies-101) and start building your legacy today.
 
 Managing $2.3 million in equity and $300K+ income requires strategic coordination across tax, investment, and estate planning disciplines.

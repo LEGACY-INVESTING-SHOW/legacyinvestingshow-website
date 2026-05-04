@@ -707,9 +707,9 @@ The difference between James and people who never start? Written goals and daily
 
 - [Complete Guide to Airbnb Arbitrage](/blog/getting-started-airbnb-arbitrage)
 
-- [Cold Calling Scripts for Landlords](/blog/landlord-cold-calling-scripts)
+- [Cold Calling Scripts for Landlords](/blog/how-to-convince-landlords-for-airbnb-arbitrage)
 
-- [Remote Property Management Guide](/blog/remote-airbnb-management)
+- [Remote Property Management Guide](/blog/james-7k-month-3-properties-remote)
 
 ---
 
@@ -727,7 +727,7 @@ The difference between James and people who never start? Written goals and daily
 
 Preston Seo has personally built a $15 million real estate portfolio generating over $400,000 per year in net profit from short-term rentals. He created Legacy Investing Show to teach the exact systems that scaled his business.
 
-[blog resources](/blog/) | [Watch free training](/free-training)
+[blog resources](/blog/) | [Watch free training](/tax-strategies-101)
 
 ---
 

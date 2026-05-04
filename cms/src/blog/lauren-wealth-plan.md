@@ -488,7 +488,7 @@ The key insight is that reaching $1 million isn't about finding the perfect inve
 
 **Your age today is the youngest you'll ever be. Every month of delay increases the required monthly contribution. Start now with whatever you can, optimize as you go, and let compounding work its magic.**
 
-If you're ready to implement a systematic pathway to $1 million—combining income growth, tax optimization, and disciplined investing—the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) provide the education, frameworks, and community to accelerate your journey.
+If you're ready to implement a systematic pathway to $1 million—combining income growth, tax optimization, and disciplined investing—the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) provide the education, frameworks, and community to accelerate your journey.
 
 **$1 million by 45 isn't a dream. It's a math problem with a solution. Start solving it today.**
 

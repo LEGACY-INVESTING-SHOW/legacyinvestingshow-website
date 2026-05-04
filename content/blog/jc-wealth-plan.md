@@ -579,4 +579,4 @@ Explore these tax optimization strategies to accelerate JC's wealth building tim
 
 ## Ready to Build Your Own Wealth Plan?
 
-Every financial journey is unique. If you want a personalized wealth strategy delivering year-one value—explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/programs) and start building your legacy today.
+Every financial journey is unique. If you want a personalized wealth strategy delivering year-one value—explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/tax-strategies-101) and start building your legacy today.

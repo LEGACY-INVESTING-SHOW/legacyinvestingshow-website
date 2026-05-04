@@ -658,4 +658,4 @@ For more information on Bitcoin and tax strategies, explore these related resour
 - Understand [Business Structure Tax Benefits](https://www.legacyinvestingshow.com/tax-strategies/business-structures) including LLC partnerships
 - Explore [Augusta Rule Benefits](https://www.legacyinvestingshow.com/tax-strategies/augusta-rule) for tax-free rental income
 
-*Ready to build your own Bitcoin-focused wealth plan? [Explore Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) and learn how to create a personalized strategy for digital asset accumulation and tax optimization.*
+*Ready to build your own Bitcoin-focused wealth plan? [Explore Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) and learn how to create a personalized strategy for digital asset accumulation and tax optimization.*

@@ -568,6 +568,6 @@ Coordinate depreciation and improvement timing:
 
 ## Ready to Build Your Own Wealth Plan?
 
-Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation — whether that involves dual-income optimization, real estate investment, or comprehensive estate planning — explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/programs) and start building your legacy today.
+Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation — whether that involves dual-income optimization, real estate investment, or comprehensive estate planning — explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/tax-strategies-101) and start building your legacy today.
 
 The power of coordinated financial planning can unlock wealth-building potential that exceeds the sum of individual efforts.

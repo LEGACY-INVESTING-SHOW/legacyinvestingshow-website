@@ -485,7 +485,7 @@ Every element of this plan is available to qualifying households:
 - Defined Benefit Plans through actuarial firms and specialized administrators
 - Estate planning from attorneys experienced with high-net-worth strategies
 
-If you're ready to transform your tax burden into a generational wealth-building engine, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) provide the education, community, and support to implement these strategies in your own financial life.
+If you're ready to transform your tax burden into a generational wealth-building engine, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) provide the education, community, and support to implement these strategies in your own financial life.
 
 **The best time to build systems that compound for decades was 20 years ago. The second-best time is today.**
 

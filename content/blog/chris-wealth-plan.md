@@ -579,6 +579,6 @@ While Texas allows direct property ownership in LLCs, many investors prefer Wyom
 
 ## Ready to Build Your Own Wealth Plan?
 
-Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation — whether that involves Houston real estate, Texas tax advantages, or short-term rental operations — explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/programs) and start building your legacy today.
+Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation — whether that involves Houston real estate, Texas tax advantages, or short-term rental operations — explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/tax-strategies-101) and start building your legacy today.
 
 The Houston market offers exceptional opportunities for investors who combine strategic planning with operational excellence.

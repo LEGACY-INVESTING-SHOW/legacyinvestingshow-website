@@ -617,7 +617,7 @@ Every element of this plan is accessible:
 
 **The barrier isn't access. It's action.**
 
-If you're ready to explore whether a Bitcoin accumulation strategy fits your financial situation, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) provide the education, community, and implementation support to evaluate and execute these strategies.
+If you're ready to explore whether a Bitcoin accumulation strategy fits your financial situation, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) provide the education, community, and implementation support to evaluate and execute these strategies.
 
 **Time in the market beats timing the market. Start your accumulation today.**
 

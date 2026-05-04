@@ -587,6 +587,6 @@ While cohosting starts as a side income strategy, successful operations can beco
 
 ## Ready to Build Your Own Wealth Plan?
 
-Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation — whether that involves time-constrained income generation, cohosting operations, or automated wealth building — explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/programs) and start building your legacy today.
+Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation — whether that involves time-constrained income generation, cohosting operations, or automated wealth building — explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/tax-strategies-101) and start building your legacy today.
 
 Even with only 3-5 hours weekly, strategic use of systems and delegation can generate substantial additional income streams.

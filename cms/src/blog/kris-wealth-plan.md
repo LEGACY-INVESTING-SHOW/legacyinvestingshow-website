@@ -507,7 +507,7 @@ Every element of this plan is accessible to tech professionals:
 
 **The barrier isn't access. It's making conscious decisions rather than defaulting to inaction.**
 
-If you're a tech professional ready to optimize your equity compensation, manage concentration risk, and build tax-efficient wealth, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) provide the education and community to implement these strategies.
+If you're a tech professional ready to optimize your equity compensation, manage concentration risk, and build tax-efficient wealth, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) provide the education and community to implement these strategies.
 
 **Your code creates value for your company. Make sure your equity creates value for your future.**
 

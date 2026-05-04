@@ -510,6 +510,6 @@ The decision depends primarily on interest rates: aggressively pay off high-inte
 
 ## Ready to Build Your Own Wealth Plan?
 
-Every financial journey is unique, and couples in high-cost metro areas face distinct challenges that require tailored strategies. If you want a personalized wealth strategy designed for your specific situation—whether that involves debt elimination, emergency fund building, NYC metro tax optimization, or long-term real estate planning—explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/programs) and start building your legacy today.
+Every financial journey is unique, and couples in high-cost metro areas face distinct challenges that require tailored strategies. If you want a personalized wealth strategy designed for your specific situation—whether that involves debt elimination, emergency fund building, NYC metro tax optimization, or long-term real estate planning—explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/tax-strategies-101) and start building your legacy today.
 
 The path from high debt to financial freedom is well-traveled. With systematic execution of the right strategies, Alicja and Althaf's transformation—and yours—is absolutely achievable.

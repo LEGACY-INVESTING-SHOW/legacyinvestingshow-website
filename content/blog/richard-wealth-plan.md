@@ -102,7 +102,7 @@ Richard's plan implements **comprehensive asset protection** — the foundation 
 - Minimum: $2M (acceptable for < $2M net worth)
 - Target: $5M-$10M for significant wealth
 - Cost: $300-$800 per $1M coverage
-- **Covers**: Personal liability claims above auto/home limits
+- **Covers**: Personal liability claims above auto/ limits
 
 **Professional Liability:**
 - Malpractice/errors & omissions for professional activities
@@ -487,7 +487,7 @@ Every element of preservation planning is accessible:
 
 **The barrier isn't complexity. It's treating preservation with the same urgency as accumulation.**
 
-If you have significant wealth to preserve and transfer, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) provide foundational education and referrals to specialized preservation planners.
+If you have significant wealth to preserve and transfer, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) provide foundational education and referrals to specialized preservation planners.
 
 **Wealth built over decades can be lost in years without proper preservation. Protect what you've built.**
 

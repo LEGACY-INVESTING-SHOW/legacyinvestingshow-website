@@ -503,7 +503,7 @@ The key is proper structuring: cost segregation for immediate tax benefits, enti
 
 **The $200K-$299K income range is the sweet spot for advanced tax optimization**—sufficient resources to implement sophisticated strategies while remaining below the highest brackets and phase-outs.
 
-If you're ready to explore self-storage investing, strategic Bitcoin allocation, or advanced tax optimization for your high-income situation, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) provide the education and community to implement these strategies effectively.
+If you're ready to explore self-storage investing, strategic Bitcoin allocation, or advanced tax optimization for your high-income situation, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) provide the education and community to implement these strategies effectively.
 
 **Wealth building is about strategic asset selection as much as it is about tax optimization. Do both.**
 

@@ -719,7 +719,7 @@ Kiana identifies regulation changes as the highest-risk factor, which is why she
 
 Preston Seo created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[blog resources](/blog/) | [Watch free training &rarr;](/free-training)
+[blog resources](/blog/) | [Watch free training &rarr;](/tax-strategies-101)
 
 ---
 

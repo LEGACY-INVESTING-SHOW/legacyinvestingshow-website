@@ -437,7 +437,7 @@ Daniel's wealth plan demonstrates that strategic short-term rental operations in
 
 The mountain STR opportunity isn't limited to Pagosa Springs — similar dynamics exist in Breckenridge, Steamboat Springs, Durango, and other Colorado resort communities. The key is matching market selection with capital position, operational capacity, and long-term wealth goals.
 
-If you're ready to explore how a personalized wealth plan could optimize your specific situation — whether that involves Colorado STR markets, tax strategy implementation, or scalable income development — the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) provide the education, community, and support to execute these strategies.
+If you're ready to explore how a personalized wealth plan could optimize your specific situation — whether that involves Colorado STR markets, tax strategy implementation, or scalable income development — the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) provide the education, community, and support to execute these strategies.
 
 **The gap between this plan and your results is execution. Start with market research and entity formation, and build momentum toward your financial freedom goals.**
 

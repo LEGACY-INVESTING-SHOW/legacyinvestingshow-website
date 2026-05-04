@@ -386,6 +386,6 @@ STRs with average guest stays under 7 days are NOT considered rental activity un
 
 ## Ready to Build Your Own Wealth Plan?
 
-Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation — whether that involves short-term rental businesses, tax optimization, or Bitcoin accumulation — explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/programs) and start building your legacy today.
+Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation — whether that involves short-term rental businesses, tax optimization, or Bitcoin accumulation — explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/tax-strategies-101) and start building your legacy today.
 
 The difference between this plan and results is execution. Start with Week 1 actions and build momentum toward your financial freedom goals.

@@ -446,6 +446,6 @@ Eric's first-generation wealth plan demonstrates that building wealth without fa
 
 ## Ready to Build Your Own Wealth Plan?
 
-Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation — whether that involves first-generation wealth building, family financial education, or multi-generational planning — explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/programs) and start building your legacy today.
+Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation — whether that involves first-generation wealth building, family financial education, or multi-generational planning — explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/tax-strategies-101) and start building your legacy today.
 
 The opportunity to create new financial patterns and establish lasting family wealth traditions is one of the most meaningful aspects of first-generation wealth building.

@@ -643,7 +643,7 @@ The systems she built—video walk-throughs with cleaners, noise monitoring, pro
 
 Preston Seo has personally managed 40+ properties and generated over $400,000 in net profit from his Airbnbs. He created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[blog resources](/blog/) | [Watch free training →](/free-training)
+[blog resources](/blog/) | [Watch free training →](/tax-strategies-101)
 
 ---
 

@@ -480,7 +480,7 @@ Every element of this plan is accessible to educators:
 
 **The barrier isn't access. It's treating your total compensation (salary + benefits + forgiveness) as strategically as you treat your curriculum planning.**
 
-If you're an educator ready to optimize your pension coordination, 403(b) investing, PSLF strategy, and supplemental income, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) provide the education and community to implement these strategies.
+If you're an educator ready to optimize your pension coordination, 403(b) investing, PSLF strategy, and supplemental income, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) provide the education and community to implement these strategies.
 
 **Your work shapes the next generation. Make sure your financial strategy is equally well-designed.**
 

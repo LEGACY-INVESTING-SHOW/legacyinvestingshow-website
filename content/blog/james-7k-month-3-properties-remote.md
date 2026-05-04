@@ -640,8 +640,8 @@ James proved that age and experience don't determine success—action does. At 2
 
 ### Helpful Resources
 - [Complete Guide to Airbnb Arbitrage](/blog/getting-started-airbnb-arbitrage)
-- [Cold Calling Scripts for Landlords](/blog/landlord-cold-calling-scripts)
-- [Remote Property Management Guide](/blog/remote-airbnb-management)
+- [Cold Calling Scripts for Landlords](/blog/how-to-convince-landlords-for-airbnb-arbitrage)
+- [Remote Property Management Guide](/blog/how-to-scale-an-airbnb-arbitrage-business)
 
 ---
 
@@ -656,7 +656,7 @@ James proved that age and experience don't determine success—action does. At 2
 
 Preston Seo has personally built a $15 million real estate portfolio generating over $400,000 per year in net profit from short-term rentals. He created Legacy Investing Show to teach the exact systems that scaled his business.
 
-[blog resources](/blog/) | [Watch free training →](/free-training)
+[blog resources](/blog/) | [Watch free training →](/tax-strategies-101)
 
 ---
 

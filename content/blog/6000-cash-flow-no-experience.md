@@ -764,7 +764,7 @@ Dustin addresses this directly: the biggest risk is often in your head. He almos
 
 Preston Seo created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[blog resources](/blog/) | [Watch free training &rarr;](/free-training)
+[blog resources](/blog/) | [Watch free training &rarr;](/tax-strategies-101)
 
 ---
 

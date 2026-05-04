@@ -623,7 +623,7 @@ The primary risks Kamari has navigated include:
 
 Preston Seo built a $15 million real estate portfolio generating over $400,000 yearly in net profit from his Airbnbs. He created Legacy Investing Show to teach the exact systems that scaled his business.
 
-[blog resources](/blog/) | [Watch free training](/free-training)
+[blog resources](/blog/) | [Watch free training](/tax-strategies-101)
 
 ---
 

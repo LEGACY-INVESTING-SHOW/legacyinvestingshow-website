@@ -280,7 +280,7 @@ Bottom line: S corp can help in the right income band, but retirement and docume
 | Freelancer under 80,000 net | Cash-flow stability, basic deductions, no penalties | Set 30% reserve rule, automate bookkeeping weekly, pay estimates on schedule | Underpaying quarterly taxes, weak receipt trail |
 | Consultant 80,000 to 200,000 net | Entity review, retirement optimization, QBI planning | Model sole prop vs S corp, implement Solo 401(k), monthly P&L review | Electing S corp too early or too late |
 | Agency owner above 200,000 net | Payroll design, advanced retirement strategy, state tax planning | Reasonable salary analysis, payroll workflow, mid-year tax projection | Compliance drag, overcomplex structure |
-| Side-hustle W-2 + 1099 | Withholding coordination and deduction capture | Increase W-2 withholding or estimates, track mileage/home office, separate bank account | Mixing personal and business spending |
+| Side-hustle W-2 + 1099 | Withholding coordination and deduction capture | Increase W-2 withholding or estimates, track mileage/ office, separate bank account | Mixing personal and business spending |
 | Real estate + services mix | Activity classification and documentation quality | Separate books by activity, align entity map, advisor review before year-end | Misclassified activity and missed planning windows |
 
 ## Step-by-Step Implementation Plan (First 90 Days)

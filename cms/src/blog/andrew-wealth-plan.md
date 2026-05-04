@@ -621,6 +621,6 @@ Georgia's tax structure offers both opportunities and considerations:
 
 ## Ready to Build Your Own Wealth Plan?
 
-Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation — whether that involves high-earner tax optimization, entity structuring, or Georgia-specific wealth building — explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/programs) and start building your legacy today.
+Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation — whether that involves high-earner tax optimization, entity structuring, or Georgia-specific wealth building — explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/tax-strategies-101) and start building your legacy today.
 
 The combination of federal and state tax optimization can transform tax burden from wealth drain to wealth-building accelerator.

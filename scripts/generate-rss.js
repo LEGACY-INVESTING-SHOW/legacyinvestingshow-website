@@ -51,6 +51,7 @@ function extractPostMetadata(filePath, fileName) {
   try {
     const content = fs.readFileSync(filePath, 'utf8');
     const stats = fs.statSync(filePath);
+    const slug = fileName.replace(/\.html$/i, '');
 
     // Extract title from <title> tag or <h1>
     let title = fileName.replace('.html', '').replace(/-/g, ' ');
@@ -86,8 +87,8 @@ function extractPostMetadata(filePath, fileName) {
       description,
       pubDate,
       author,
-      link: `${SITE_URL}/blog/${fileName}`,
-      guid: `${SITE_URL}/blog/${fileName}`,
+      link: `${SITE_URL}/blog/${slug}`,
+      guid: `${SITE_URL}/blog/${slug}`,
     };
   } catch (error) {
     console.error(`Error reading ${filePath}:`, error.message);

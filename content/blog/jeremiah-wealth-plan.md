@@ -585,7 +585,7 @@ The key is integration: treating business cash flow, real estate investing, and 
 
 **Every element of this plan is executable with widely available resources**: cost segregation studies from national providers, LLC formation through NC Secretary of State, S-Corp elections through standard tax preparers, and properties available through MLS and networks.
 
-If you're ready to implement a comprehensive wealth plan that integrates business optimization, real estate investing, and advanced tax strategies, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) provide the education and community support to execute these strategies effectively.
+If you're ready to implement a comprehensive wealth plan that integrates business optimization, real estate investing, and advanced tax strategies, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) provide the education and community support to execute these strategies effectively.
 
 **Your wealth plan should be as comprehensive as your ambitions. Build the system that builds your wealth.**
 

@@ -504,7 +504,7 @@ The key is treating your household finances as a unified system—coordinating c
 
 **The difference between couples who build substantial wealth together and those who struggle financially often isn't income level—it's the coordination of strategy and the discipline to maximize available advantages.**
 
-If you and your spouse are ready to implement a coordinated wealth-building strategy that leverages dual-income advantages, maximizes tax efficiency, and creates long-term financial security, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) provide the education and community to make it happen.
+If you and your spouse are ready to implement a coordinated wealth-building strategy that leverages dual-income advantages, maximizes tax efficiency, and creates long-term financial security, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) provide the education and community to make it happen.
 
 **Your marriage is a partnership. Your wealth-building strategy should be too.**
 
@@ -519,5 +519,5 @@ If you and your spouse are ready to implement a coordinated wealth-building stra
 - [Retirement Planning Guide](/retirement/) - Long-term retirement account optimization
 - [Spousal IRA Strategy](/tax-strategies/spousal-ira/) - Maximizing IRA contributions as a couple
 - [Social Security Optimization](/retirement/social-security/) - Spousal benefit coordination
-- [Estate Planning Basics](/tax-strategies/estate-planning/) - Joint asset transfer strategies
+- [Estate Planning Basics](/blog/estate-tax-planning-guide) - Joint asset transfer strategies
 - [HSA Strategy Guide](/tax-strategies/hsa-strategy/) - Health savings optimization for families

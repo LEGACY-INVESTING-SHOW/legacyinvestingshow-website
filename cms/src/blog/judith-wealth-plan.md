@@ -495,7 +495,7 @@ The 2026 tax year offers specific advantages including inflation-adjusted contri
 
 **The barriers to implementation aren't complexity—they're prioritization and timing.** The strategies outlined here are accessible through standard brokerage accounts, employer plans, and widely available financial products.
 
-If you're ready to optimize your 2026 tax year strategy, maximize tax-advantaged contributions, and build a diversified long-term portfolio, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) provide the education and community support to implement these strategies effectively.
+If you're ready to optimize your 2026 tax year strategy, maximize tax-advantaged contributions, and build a diversified long-term portfolio, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) provide the education and community support to implement these strategies effectively.
 
 **2026 is your opportunity to optimize. The tax savings alone from maximum contributions can fund additional investment growth, creating a compounding advantage that extends far beyond this single tax year.**
 

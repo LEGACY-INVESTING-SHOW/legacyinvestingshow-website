@@ -675,7 +675,7 @@ Lindsay identified several risks she actively manages:
 
 Preston Seo created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[blog resources](/blog/) | [Watch free training →](/free-training)
+[blog resources](/blog/) | [Watch free training →](/tax-strategies-101)
 
 ---
 

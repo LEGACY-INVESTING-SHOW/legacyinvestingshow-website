@@ -528,7 +528,7 @@ Every element of this plan is accessible to business owners:
 
 **The barrier isn't access. It's treating your business structure as strategically as you treat your business operations.**
 
-If you're a business owner ready to optimize your entity structure, owner compensation, retirement contributions, and tax strategy, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) provide the education and community to implement these strategies.
+If you're a business owner ready to optimize your entity structure, owner compensation, retirement contributions, and tax strategy, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) provide the education and community to implement these strategies.
 
 **Your business generates income. The right structure determines how much you keep.**
 

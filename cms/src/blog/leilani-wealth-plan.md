@@ -478,6 +478,6 @@ Establish 529 college savings plans for education funding, maintain adequate lif
 
 ## Ready to Build Your Own Wealth Plan?
 
-Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation — whether that involves post-divorce rebuilding, single parent wealth building, or starting a business with family responsibilities — explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/programs) and start building your legacy today.
+Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation — whether that involves post-divorce rebuilding, single parent wealth building, or starting a business with family responsibilities — explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/tax-strategies-101) and start building your legacy today.
 
 The most powerful lesson you can teach your children is that setbacks don't define financial futures—strategic action does.

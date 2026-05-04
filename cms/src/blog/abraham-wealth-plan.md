@@ -463,6 +463,6 @@ When a C-Corp converts to S-Corp, any accumulated earnings and profits (E&P) fro
 
 ## Ready to Build Your Own Wealth Plan?
 
-Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation—whether that involves entity restructuring, tax optimization, or comprehensive business planning—explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/programs) and start building your legacy today.
+Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation—whether that involves entity restructuring, tax optimization, or comprehensive business planning—explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/tax-strategies-101) and start building your legacy today.
 
 The difference between a good business and a wealth-building business often comes down to structural decisions made early. Make them wisely.

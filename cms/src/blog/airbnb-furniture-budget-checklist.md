@@ -402,7 +402,7 @@ But furnishing is just the beginning. The real question is: how do you actually 
 
 If you're serious about building a profitable Airbnb arbitrage business, the 3-Day Wealth Challenge is where you start. I'll walk you through the exact system my students use to find great properties, negotiate favorable leases, and hit $2,500+ in monthly revenue within their first 90 days.
 
-**[Join the 3-Day Wealth Challenge today →](/programs/)**
+**[Join the 3-Day Wealth Challenge today →](/tax-strategies-101)**
 
 Inside, you'll get:
 

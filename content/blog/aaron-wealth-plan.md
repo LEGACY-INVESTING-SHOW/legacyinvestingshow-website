@@ -341,6 +341,6 @@ Maintain: Corporate bylaws and meeting minutes, written Accountable Plan, mileag
 
 ## Ready to Build Your Own Wealth Plan?
 
-Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation — whether that involves high-earner tax optimization, entity structuring, or retirement maximization — explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/programs) and start building your legacy today.
+Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation — whether that involves high-earner tax optimization, entity structuring, or retirement maximization — explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/tax-strategies-101) and start building your legacy today.
 
 The difference between high-income professionals who build wealth and those who simply pay taxes is strategic planning and consistent execution.

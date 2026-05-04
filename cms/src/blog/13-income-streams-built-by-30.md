@@ -670,7 +670,7 @@ If you're interested in building income through real estate--specifically short-
 
 Preston Seo created Legacy Investing Show to teach the exact systems that built his 13 income streams, providing the mentorship, strategies, and community that accelerate wealth building.
 
-[blog resources](/blog/) | [Watch free training](/free-training)
+[blog resources](/blog/) | [Watch free training](/tax-strategies-101)
 
 ---
 

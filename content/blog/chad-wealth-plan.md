@@ -521,7 +521,7 @@ Chad's November 2025 plan demonstrates that even with year-end approaching, sign
 
 The key insight: waiting until January costs $4,000-$8,000 in recapturable 2025 tax value. Every week of delay in W-4 adjustment is $100-$150 in lost cash flow. Every month of STR launch delay is $1,500-$3,000 in missed revenue.
 
-If you're facing immediate cash flow needs while seeking tax optimization, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) provide the structured implementation support to execute these strategies with speed and compliance. You don't need to choose between immediate relief and long-term optimization — you need a plan that delivers both.
+If you're facing immediate cash flow needs while seeking tax optimization, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) provide the structured implementation support to execute these strategies with speed and compliance. You don't need to choose between immediate relief and long-term optimization — you need a plan that delivers both.
 
 **November isn't too late for 2025 optimization. But December 31 is. The window is narrow. The opportunity is real.**
 

@@ -738,7 +738,7 @@ Kayla identifies several risks she actively manages:
 
 Preston Seo has personally managed multiple properties and generated over $400,000 per year in Airbnb profit. His portfolio is worth over $15 million after 7 years in real estate. He created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[blog resources](/blog/) | [Watch free training &rarr;](/free-training)
+[blog resources](/blog/) | [Watch free training &rarr;](/tax-strategies-101)
 
 ---
 

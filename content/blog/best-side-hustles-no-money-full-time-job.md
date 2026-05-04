@@ -852,7 +852,7 @@ The strategies in this guide work - we know because we're using them and our com
 
 We've been in your shoes. We know how overwhelming getting started can be. That's why we created this channel and these programs - to help you step by step get to where you want to be financially.
 
-[blog resources](/blog/) | [Watch free training](/free-training)
+[blog resources](/blog/) | [Watch free training](/tax-strategies-101)
 
 ---
 

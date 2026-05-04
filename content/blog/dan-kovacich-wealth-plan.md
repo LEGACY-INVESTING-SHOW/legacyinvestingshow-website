@@ -571,6 +571,6 @@ Unlike traditional portfolio allocation limiting alternative assets to 5-10%, Da
 
 ## Ready to Build Your Own Wealth Plan?
 
-Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation—whether that involves keep vs sell analysis, multi-entity structuring, cost segregation strategy, or conviction-based investment allocation—explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/programs) and start building your legacy today.
+Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation—whether that involves keep vs sell analysis, multi-entity structuring, cost segregation strategy, or conviction-based investment allocation—explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/tax-strategies-101) and start building your legacy today.
 
 The difference between complexity and chaos is systematic planning and disciplined execution.

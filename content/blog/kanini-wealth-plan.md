@@ -422,7 +422,7 @@ Motivation strategies: (1) Visual progress tracking, (2) Milestone celebrations,
 
 ## Ready to Build Your Own Wealth Plan?
 
-Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation—whether that involves debt management, emergency fund building, staged wealth building, or comprehensive financial recovery—explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/programs) and start building your legacy today.
+Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation—whether that involves debt management, emergency fund building, staged wealth building, or comprehensive financial recovery—explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/tax-strategies-101) and start building your legacy today.
 
 The path from $50,000+ debt to financial freedom isn't easy, but it is simple: stabilize, eliminate, secure, then build. Kanini's plan provides the roadmap; the walking is up to you.
 

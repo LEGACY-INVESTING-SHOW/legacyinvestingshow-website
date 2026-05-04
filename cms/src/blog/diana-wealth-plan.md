@@ -592,7 +592,7 @@ Living in Texas provides structural advantages that amplify every other strategy
 
 **The most important insight**: Starting strategic planning at age 61 provides 12 years before RMDs begin—enough time to significantly reduce future tax burden through systematic Roth conversions while building tax-free growth assets.
 
-If you're in your late 50s or early 60s and ready to optimize your pre-retirement strategy—whether that includes Bitcoin allocation, Roth conversion planning, Social Security optimization, or Texas tax advantages—the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) provide the education and frameworks to maximize this critical planning window.
+If you're in your late 50s or early 60s and ready to optimize your pre-retirement strategy—whether that includes Bitcoin allocation, Roth conversion planning, Social Security optimization, or Texas tax advantages—the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) provide the education and frameworks to maximize this critical planning window.
 
 **Your retirement wealth is built in your final earning years. Make them count.**
 
@@ -604,7 +604,7 @@ If you're in your late 50s or early 60s and ready to optimize your pre-retiremen
 ## Related Resources
 
 - [Social Security Optimization](/retirement/social-security/) - Claiming strategy analysis
-- [Roth Conversion Strategy](/tax-strategies/roth-conversion/) - Pre-RMD conversion planning
+- [Roth Conversion Strategy](/tax-strategies/roth-conversion-ladder) - Pre-RMD conversion planning
 - [Medicare and IRMAA Planning](/retirement/medicare/) - Healthcare cost optimization
 - [RMD Planning Guide](/retirement/required-minimum-distributions/) - Distribution requirements
 - [Bitcoin in Retirement Portfolios](/blog/crypto-retirement/) - Cryptocurrency allocation

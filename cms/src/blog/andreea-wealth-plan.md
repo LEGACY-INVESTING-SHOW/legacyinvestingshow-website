@@ -523,7 +523,7 @@ Andreea's October 2025 plan demonstrates that severance years — despite their 
 
 The key constraint is time. October planning leaves 60-90 days for implementation. Property acquisition, cost segregation studies, and equipment placement must align before December 31. Every week of delay costs $5,000-$10,000 in lost tax savings at this income level.
 
-If you're facing a high-income year — whether from severance, stock options, business sale, or other windfall — the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) provide the specialized guidance for aggressive tax optimization. This isn't standard tax planning — it's high-stakes wealth preservation requiring speed, precision, and professional coordination.
+If you're facing a high-income year — whether from severance, stock options, business sale, or other windfall — the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) provide the specialized guidance for aggressive tax optimization. This isn't standard tax planning — it's high-stakes wealth preservation requiring speed, precision, and professional coordination.
 
 **The tax code offers powerful tools for wealth building. In a $770,000 income year, those tools are worth nearly 50 cents on the dollar. The only question is whether you'll deploy them before the December 31 deadline.**
 

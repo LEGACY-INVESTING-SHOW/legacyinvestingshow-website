@@ -439,7 +439,7 @@ Every element of this plan is accessible:
 
 **The barrier isn't access. It's recognizing the window of opportunity and acting before it closes.**
 
-If you're approaching retirement and want to optimize your tax valley, Roth conversion strategy, and withdrawal sequencing, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) provide the education and community to implement these strategies.
+If you're approaching retirement and want to optimize your tax valley, Roth conversion strategy, and withdrawal sequencing, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) provide the education and community to implement these strategies.
 
 **Your working years built the wealth. The transition phase determines how much you keep.**
 

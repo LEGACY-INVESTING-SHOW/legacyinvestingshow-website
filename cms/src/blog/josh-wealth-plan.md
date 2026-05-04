@@ -141,7 +141,7 @@ The plan targets **$500-$800 in monthly expense reduction** through systematic o
 |----------|-----------------|-------------------|-----------------|
 | Dining/Restaurants | $600-$800 | Meal planning, cooking skills | $250-$350 |
 | Subscriptions | $150-$200 | Audit all recurring charges | $75-$100 |
-| Insurance | $300-$400 | Reshop auto/home annually | $75-$150 |
+| Insurance | $300-$400 | Reshop auto/ annually | $75-$150 |
 | Utilities | $250-$350 | Smart thermostats, LED conversion | $50-$100 |
 | Entertainment | $200-$300 | Community events, libraries | $75-$150 |
 | **Total Target** | | | **$525-$850** |
@@ -442,7 +442,7 @@ Every element of this plan is accessible:
 - The business tax strategies are documented in IRS publications
 - Bitcoin DCA is available through multiple platforms
 
-If you're ready to transform your financial situation from debt burden to cash flow abundance, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) provide the roadmap, community, and support to implement these strategies in your own life.
+If you're ready to transform your financial situation from debt burden to cash flow abundance, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) provide the roadmap, community, and support to implement these strategies in your own life.
 
 **Debt freedom is possible. Cash flow independence is achievable. The only question is whether you'll start today.**
 

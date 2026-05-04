@@ -659,7 +659,7 @@ Every element of this plan is accessible:
 
 **The only variable is execution.**
 
-If you're ready to explore whether a zero-tax strategy is achievable in your financial situation, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) provide the education, community, and implementation support to evaluate and execute these advanced strategies.
+If you're ready to explore whether a zero-tax strategy is achievable in your financial situation, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) provide the education, community, and implementation support to evaluate and execute these advanced strategies.
 
 **The best time to optimize your tax burden was last year. The second-best time is today.**
 

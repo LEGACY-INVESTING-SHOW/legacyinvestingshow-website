@@ -510,6 +510,6 @@ Educational evaluation involves a four-stage process: First, information gatheri
 
 ## Ready to Build Your Own Wealth Strategy?
 
-Every financial journey requires both strategic planning and tactical execution. If you want a personalized strategy snapshot or comprehensive wealth plan tailored to your specific situation—whether that involves 2026 tax optimization, investment concept evaluation, or building your professional advisory team—explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/programs) and start building your legacy today.
+Every financial journey requires both strategic planning and tactical execution. If you want a personalized strategy snapshot or comprehensive wealth plan tailored to your specific situation—whether that involves 2026 tax optimization, investment concept evaluation, or building your professional advisory team—explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/tax-strategies-101) and start building your legacy today.
 
 The combination of educational frameworks and professional guidance creates a powerful foundation for 2026 and beyond. Cami's strategic approach—and yours—can transform tax year planning from stressful guesswork into confident optimization.

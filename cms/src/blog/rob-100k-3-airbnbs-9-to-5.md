@@ -629,7 +629,7 @@ Rob identifies several challenges he navigated:
 
 Preston Seo built a $15 million real estate portfolio and generates $400,000 per year in net profit from his Airbnbs. He created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[blog resources](/blog/) | [Watch free training](/free-training)
+[blog resources](/blog/) | [Watch free training](/tax-strategies-101)
 
 ---
 

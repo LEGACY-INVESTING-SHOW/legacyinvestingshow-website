@@ -460,7 +460,7 @@ Every element of this plan is accessible:
 
 **The barrier isn't access. It's taking time from patient care to focus on personal wealth planning.**
 
-If you're a healthcare professional ready to optimize your high income for wealth building while protecting against professional liability, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) provide the education and community to implement these strategies.
+If you're a healthcare professional ready to optimize your high income for wealth building while protecting against professional liability, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) provide the education and community to implement these strategies.
 
 **Your patients depend on you. Make sure your financial future is equally secure.**
 

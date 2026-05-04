@@ -442,7 +442,7 @@ The key insight is that every financial decision has mathematical consequences t
 
 **You don't need advanced mathematics to benefit from financial modeling—just a willingness to quantify trade-offs and think systematically about your financial decisions.**
 
-If you're ready to implement an educational modeling approach to your 2026 tax year planning—quantifying strategies, comparing scenarios, and optimizing outcomes—the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) provide the frameworks and tools to model your wealth plan effectively.
+If you're ready to implement an educational modeling approach to your 2026 tax year planning—quantifying strategies, comparing scenarios, and optimizing outcomes—the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) provide the frameworks and tools to model your wealth plan effectively.
 
 **Wealth building is a mathematical process. Model it, measure it, master it.**
 
@@ -487,6 +487,6 @@ Advanced modeling incorporates estate planning objectives, charitable giving str
 Explore these tax optimization strategies to complement your financial modeling approach:
 
 - [Tax Loss Harvesting](/tax-strategies/tax-loss-harvesting/) - Offset capital gains and reduce taxable income
-- [Roth Conversion Strategy](/tax-strategies/roth-conversion/) - Strategic timing for Roth conversions
+- [Roth Conversion Strategy](/tax-strategies/roth-conversion-ladder) - Strategic timing for Roth conversions
 - [HSA Strategy Guide](/tax-strategies/hsa-strategy/) - Triple tax advantage health savings
 - [Charitable Bunching Strategy](/tax-strategies/charitable-bunching/) - Maximize charitable deductions

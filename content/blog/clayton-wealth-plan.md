@@ -514,7 +514,7 @@ Tax optimization scenarios typically differ by: (1) Income timing—accelerating
 
 ## Ready to Build Your Own Tax Strategy?
 
-Every tax situation is unique. If you want a personalized tax optimization strategy tailored to your specific income structure, business activities, and wealth building goals—explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/programs) and start building your legacy today.
+Every tax situation is unique. If you want a personalized tax optimization strategy tailored to your specific income structure, business activities, and wealth building goals—explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/tax-strategies-101) and start building your legacy today.
 
 Remember: Tax planning isn't about finding loopholes—it's about making informed decisions that align your current-year tax obligations with your long-term wealth building objectives. The best tax strategy is the one you understand, can implement consistently, and that serves your broader financial life goals.
 

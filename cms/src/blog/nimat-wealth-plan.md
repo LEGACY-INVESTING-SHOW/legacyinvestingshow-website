@@ -804,4 +804,4 @@ For more information on tax optimization strategies, explore these related resou
 - Discover [Retirement Account Strategies](https://www.legacyinvestingshow.com/retirement) for long-term tax-advantaged growth
 - Understand [Real Estate Tax Benefits](https://www.legacyinvestingshow.com/tax-strategies/cost-segregation) including depreciation and 1031 exchanges
 
-*Ready to develop your personalized wealth strategy? [Explore Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) and learn how to create a comprehensive plan for financial optimization.*
+*Ready to develop your personalized wealth strategy? [Explore Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) and learn how to create a comprehensive plan for financial optimization.*

@@ -457,7 +457,7 @@ The strategies are accessible to every mid-career professional:
 
 **The barrier isn't knowledge. It's urgency and execution.**
 
-If you're in your peak earning years and ready to optimize your wealth acceleration, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) provide the education and community to implement these strategies.
+If you're in your peak earning years and ready to optimize your wealth acceleration, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) provide the education and community to implement these strategies.
 
 **Your peak earning years are happening now. Optimize them before the window closes.**
 

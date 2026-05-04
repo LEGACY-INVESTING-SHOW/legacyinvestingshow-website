@@ -523,7 +523,7 @@ Every element of this plan is accessible:
 
 **The barrier isn't access. It's treating exit planning with the same urgency as business operations.**
 
-If you're an entrepreneur building toward a liquidity event, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) provide foundational education and referrals to specialized exit planning professionals.
+If you're an entrepreneur building toward a liquidity event, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) provide foundational education and referrals to specialized exit planning professionals.
 
 **Build your business with the end in mind. The exit is where wealth is realized.**
 

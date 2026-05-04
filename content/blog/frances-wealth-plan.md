@@ -559,6 +559,6 @@ Frances' pre-retirement wealth plan demonstrates that the decade before retireme
 
 ## Ready to Build Your Own Wealth Plan?
 
-Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation — whether that involves pre-retirement optimization, income transition planning, or healthcare bridge strategies — explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/programs) and start building your legacy today.
+Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation — whether that involves pre-retirement optimization, income transition planning, or healthcare bridge strategies — explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/tax-strategies-101) and start building your legacy today.
 
 The pre-retirement decade offers the last major opportunity to optimize your financial position before transitioning to portfolio-based living—strategic planning during this window can add years of security to your retirement.

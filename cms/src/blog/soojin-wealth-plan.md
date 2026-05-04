@@ -498,7 +498,7 @@ The beauty of this framework is its flexibility—you're not locked into one pat
 
 **Every scenario delivers significant value compared to doing nothing.** The gap between no planning and conservative ($101K) is far larger than the gap between conservative and aggressive. The most important decision is choosing and implementing, not choosing perfectly.
 
-If you're ready to implement your chosen wealth strategy scenario—whether conservative, moderate, or aggressive—the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) provide the education, frameworks, and community support to execute effectively at any level.
+If you're ready to implement your chosen wealth strategy scenario—whether conservative, moderate, or aggressive—the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) provide the education, frameworks, and community support to execute effectively at any level.
 
 **Your wealth building journey starts with a single strategic choice. Pick your scenario and begin.**
 

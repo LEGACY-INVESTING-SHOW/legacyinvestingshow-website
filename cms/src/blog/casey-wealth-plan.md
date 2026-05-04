@@ -481,7 +481,7 @@ Every element of the WSS is accessible:
 
 **The barrier isn't access. It's starting.**
 
-If you're ready to build your wealth foundation with streamlined, efficient strategies, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) provide the education and community to implement your Wealth Strategy Snapshot.
+If you're ready to build your wealth foundation with streamlined, efficient strategies, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) provide the education and community to implement your Wealth Strategy Snapshot.
 
 **Start simple. Start today. The foundation you build determines the wealth you can construct.**
 

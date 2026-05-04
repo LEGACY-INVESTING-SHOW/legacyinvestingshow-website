@@ -473,6 +473,6 @@ Abel's Real Estate Professional Status wealth plan demonstrates how active real 
 
 ## Ready to Build Your Own Wealth Plan?
 
-Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation — whether that involves Real Estate Professional Status qualification, cost segregation strategies, or portfolio scaling — explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/programs) and start building your legacy today.
+Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation — whether that involves Real Estate Professional Status qualification, cost segregation strategies, or portfolio scaling — explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/tax-strategies-101) and start building your legacy today.
 
 The difference between real estate investors who build significant wealth and those who simply collect rent is often the strategic use of tax benefits through proper structuring and documentation.

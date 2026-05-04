@@ -435,7 +435,7 @@ Run monthly checks for cashflow and spending category drift. Run quarterly check
 
 If your spending keeps pace but taxes drift up, adjust bucket usage first, not lifestyle assumptions. If markets underperform, reduce optional spending in year one of stress before reducing core needs.
 
-For practical implementation details on early withdrawal framing, you can also review /blog/early-retirement-withdrawal and the broader context in /programs.
+For practical implementation details on early withdrawal framing, you can also review [early retirement withdrawal planning](/blog/early-retirement-withdrawal) and the broader context in [tax strategy training](/tax-strategies-101).
 
 You now have a pre-retiree model that is concrete: a bridge-first sequence, a numeric example, scenario comparison, and a governance process. The quality bar is not whether this is perfect on day one; it is whether each year in transition you can defend every withdrawal choice with a written rule.
 

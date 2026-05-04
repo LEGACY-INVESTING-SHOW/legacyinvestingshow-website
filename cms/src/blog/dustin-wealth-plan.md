@@ -465,6 +465,6 @@ Dustin's STR arbitrage scaling plan demonstrates that systematic growth creates 
 
 ## Ready to Build Your Own Wealth Plan?
 
-Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation — whether that involves short-term rental arbitrage, scaling strategies, or portfolio optimization — explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/programs) and start building your legacy today.
+Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation — whether that involves short-term rental arbitrage, scaling strategies, or portfolio optimization — explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/tax-strategies-101) and start building your legacy today.
 
 The path from a single arbitrage unit to a 10+ unit portfolio generating $25,000+ monthly requires disciplined execution, but the cash flow and tax benefits make it one of the most powerful wealth-building strategies available.

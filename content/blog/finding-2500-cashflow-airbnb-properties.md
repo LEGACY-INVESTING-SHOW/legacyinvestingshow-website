@@ -718,7 +718,7 @@ The process I've outlined works in markets across the country. The key is discip
 
 Preston has personally bought over 40 rental properties worth $1.5 million and runs multiple Airbnbs across the country. Legacy Investing Show teaches the exact systems that built this portfolio.
 
-[blog resources](/blog/) | [Watch free training →](/free-training)
+[blog resources](/blog/) | [Watch free training →](/tax-strategies-101)
 
 ---
 

@@ -638,4 +638,4 @@ For more information on California real estate and tax strategies, explore these
 - Understand [1031 Exchange Strategies](https://www.legacyinvestingshow.com/tax-strategies/1031-exchange) for tax-deferred upgrades
 - Explore [Real Estate Professional Status](https://www.legacyinvestingshow.com/tax-strategies/real-estate-professional-status) requirements and benefits
 
-*Ready to build your California real estate wealth plan? [Explore Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) and learn how to create a personalized strategy for high-cost market investing.*
+*Ready to build your California real estate wealth plan? [Explore Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) and learn how to create a personalized strategy for high-cost market investing.*

@@ -507,6 +507,6 @@ Execute the Friday utilization sweep: pay credit cards 2-3 days before statement
 
 ## Ready to Build Your Own Wealth Plan?
 
-Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation — whether that involves credit recovery, cohosting operations, or renter-specific tax optimization — explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/programs) and start building your legacy today.
+Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation — whether that involves credit recovery, cohosting operations, or renter-specific tax optimization — explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/tax-strategies-101) and start building your legacy today.
 
 Credit challenges are temporary obstacles, not permanent barriers to wealth building. The right strategies can generate income and build assets while credit recovers.

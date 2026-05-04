@@ -696,7 +696,7 @@ Christopher identifies several risks he manages:
 
 Preston Seo built a $15 million real estate portfolio generating over $400,000/year in net profit from short-term rentals. He created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[blog resources](/blog/) | [Watch free training](/free-training)
+[blog resources](/blog/) | [Watch free training](/tax-strategies-101)
 
 ---
 

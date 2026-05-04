@@ -518,6 +518,6 @@ Las Vegas offers strong year-round demand from tourism, conventions, and events.
 
 ## Ready to Build Your Own Wealth Plan?
 
-Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation — whether that involves short-term rental businesses, tax optimization, or investment portfolio design — explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/programs) and start building your legacy today.
+Every financial journey is unique. If you want a personalized wealth strategy tailored to your specific situation — whether that involves short-term rental businesses, tax optimization, or investment portfolio design — explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/tax-strategies-101) and start building your legacy today.
 
 The path from $0 to $20,000 monthly cash flow requires disciplined execution, but the tax benefits and wealth-building potential make it one of the most powerful strategies available for high-income professionals.

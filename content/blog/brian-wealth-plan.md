@@ -610,6 +610,6 @@ With 5-7 years to retirement target, balance growth preservation with capital pr
 
 ## Ready to Build Your Own High-Income Wealth Plan?
 
-Every financial journey is unique, and high-income earners face distinct opportunities and challenges that require sophisticated planning. If you want a personalized wealth strategy tailored to your specific situation—whether that involves W-2 and 1099 tax optimization, rental portfolio scaling, REIT position management, or ambitious retirement income targets—explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/programs) and start building your legacy today.
+Every financial journey is unique, and high-income earners face distinct opportunities and challenges that require sophisticated planning. If you want a personalized wealth strategy tailored to your specific situation—whether that involves W-2 and 1099 tax optimization, rental portfolio scaling, REIT position management, or ambitious retirement income targets—explore the programs at [Legacy Investing Show](https://www.legacyinvestingshow.com/tax-strategies-101) and start building your legacy today.
 
 Brian's path from $22,400 annual rental income to $40,000 monthly retirement income represents an ambitious but absolutely achievable goal with systematic execution of the right strategies. The combination of high income, multiple revenue streams, and strategic deployment can create extraordinary wealth in 5-7 years.

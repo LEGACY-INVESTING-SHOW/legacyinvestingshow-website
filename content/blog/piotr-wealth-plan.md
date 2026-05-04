@@ -474,7 +474,7 @@ Every element of international wealth planning is accessible:
 
 **The barrier isn't access. It's the complexity that demands professional partnership.**
 
-If you have international income, assets, or operations and need guidance on compliant optimization, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) provide foundational education and referrals to qualified international tax specialists.
+If you have international income, assets, or operations and need guidance on compliant optimization, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) provide foundational education and referrals to qualified international tax specialists.
 
 **Build your global wealth strategy correctly from the start. International compliance mistakes compound for years.**
 

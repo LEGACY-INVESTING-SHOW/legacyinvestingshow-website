@@ -773,7 +773,7 @@ The primary risks the brothers actively manage include:
 
 Marchia and Cash are among the program's top students, demonstrating what's possible even in saturated markets with the right strategies and mindset.
 
-[blog resources](/blog/) | [Watch free training](/free-training)
+[blog resources](/blog/) | [Watch free training](/tax-strategies-101)
 
 ---
 

@@ -280,6 +280,6 @@ If you're ready to stop guessing and start building, apply for our next cohort. 
 - Scale with capital discipline, not desperation
 - Create a business that runs without your daily involvement
 
-**[Apply for the program now and see if you qualify →](/programs)**
+**[Apply for the program now and see if you qualify →](/tax-strategies-101)**
 
 Your first unit proved it can work. Let's make sure your fifth unit proves you're building something that lasts.

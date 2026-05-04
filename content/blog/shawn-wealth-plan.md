@@ -483,7 +483,7 @@ Every element of Shawn's foundational plan is accessible:
 
 **The barrier isn't access. It's the discipline to implement systematically.**
 
-If you're ready to establish the foundational infrastructure for scalable wealth building, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) provide the education, step-by-step guidance, and community support to implement these fundamentals correctly from day one.
+If you're ready to establish the foundational infrastructure for scalable wealth building, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) provide the education, step-by-step guidance, and community support to implement these fundamentals correctly from day one.
 
 **Build your foundation today. Your future advanced strategies depend on it.**
 

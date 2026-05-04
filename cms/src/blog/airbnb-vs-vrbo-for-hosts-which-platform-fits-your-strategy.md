@@ -217,6 +217,6 @@ The short-term rental industry continues to evolve. Both platforms are investing
 
 **Ready to optimize your short-term rental strategy?**
 
-If you want to dive deeper into maximizing your rental revenue, reducing operational headaches, and building a business that scales—explore our [Airbnb Arbitrage Program](/programs.html) for comprehensive training on platform strategy, pricing optimization, and property management.
+If you want to dive deeper into maximizing your rental revenue, reducing operational headaches, and building a business that scales—explore our [Airbnb Arbitrage Program](/tax-strategies-101) for comprehensive training on platform strategy, pricing optimization, and property management.
 
 Have questions about which platform makes sense for your specific property? Drop them in the comments below—we've helped hundreds of hosts make these decisions, and we're happy to share what we've learned.

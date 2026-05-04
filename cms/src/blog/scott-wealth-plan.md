@@ -552,4 +552,4 @@ For more information on the tax strategies discussed in this wealth plan, explor
 - Understand [Real Estate Professional Status](https://www.legacyinvestingshow.com/tax-strategies/real-estate-professional-status) requirements and benefits
 - Explore [Cost Segregation](https://www.legacyinvestingshow.com/tax-strategies/cost-segregation) strategies for accelerated depreciation
 
-*Ready to build your own wealth plan? [Explore Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) to learn how to create a personalized strategy for financial freedom.*
+*Ready to build your own wealth plan? [Explore Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) to learn how to create a personalized strategy for financial freedom.*

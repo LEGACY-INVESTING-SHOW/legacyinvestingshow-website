@@ -461,7 +461,7 @@ The 2026 tax year offers specific opportunities—higher contribution limits, bo
 
 **Every dollar saved in taxes through strategic planning in 2026 becomes multiple dollars in retirement through the power of compounding.**
 
-If you're ready to implement an educational, analytical approach to your 2026 wealth planning—quantifying decisions, optimizing sequencing, and building long-term wealth systematically—the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) provide the frameworks and tools to make it happen.
+If you're ready to implement an educational, analytical approach to your 2026 wealth planning—quantifying decisions, optimizing sequencing, and building long-term wealth systematically—the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) provide the frameworks and tools to make it happen.
 
 **Wealth building is mathematics, not magic. Model it, measure it, master it.**
 
@@ -477,4 +477,4 @@ If you're ready to implement an educational, analytical approach to your 2026 we
 - [Retirement Contribution Guide](/retirement/contribution-limits/) - 2026 limits and strategies
 - [HSA Strategy Guide](/tax-strategies/hsa-strategy/) - Triple tax advantage
 - [Tax Loss Harvesting Guide](/tax-strategies/tax-loss-harvesting/) - Annual optimization
-- [Roth Conversion Strategy](/tax-strategies/roth-conversion/) - Bracket management
+- [Roth Conversion Strategy](/tax-strategies/roth-conversion-ladder) - Bracket management

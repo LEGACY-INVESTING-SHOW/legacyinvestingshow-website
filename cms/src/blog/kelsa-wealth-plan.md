@@ -496,7 +496,7 @@ Every element of this plan is accessible:
 
 **The barrier isn't access. It's treating two incomes as two separate financial lives rather than one coordinated wealth building machine.**
 
-If you're part of a dual-income household ready to coordinate your tax strategy, retirement contributions, and wealth building, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) provide the education and community to implement these strategies.
+If you're part of a dual-income household ready to coordinate your tax strategy, retirement contributions, and wealth building, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) provide the education and community to implement these strategies.
 
 **Two incomes working together create wealth faster than two incomes working apart.**
 

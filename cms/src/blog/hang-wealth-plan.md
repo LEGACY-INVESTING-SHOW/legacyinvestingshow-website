@@ -416,7 +416,7 @@ Build a small Bitcoin position even during debt elimination for three reasons:
 - Open 3-account system (bills, spend, safety)
 - Build first $1,000 of EF via split paycheck deposits
 - Start $100/month BTC DCA
-- Re-shop auto/home insurance
+- Re-shop auto/ insurance
 - Vending: shortlist 10 locations
 
 **Month 2 (September):**
@@ -584,4 +584,4 @@ For more information on debt elimination and wealth building, explore these rela
 - Understand [Augusta Rule Benefits](https://www.legacyinvestingshow.com/tax-strategies/augusta-rule) for 14 days of tax-free income
 - Explore [Solo 401(k) Strategies](https://www.legacyinvestingshow.com/retirement/solo-401k) for retirement savings once debt is cleared
 
-*Ready to tackle your debt and build wealth? [Explore Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) and learn how to create a personalized strategy for financial freedom.*
+*Ready to tackle your debt and build wealth? [Explore Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) and learn how to create a personalized strategy for financial freedom.*

@@ -9,25 +9,34 @@
 
 const fs = require('fs');
 const path = require('path');
-const matter = require('gray-matter');
+let matter = null;
+
+try {
+  matter = require('gray-matter');
+} catch {
+  // Keep sitemap generation usable in lean local checkouts where dependencies
+  // have not been installed yet. Full builds still use gray-matter elsewhere.
+}
 
 // Configuration
 const SITE_URL = process.env.SITE_URL || 'https://www.legacyinvestingshow.com';
 const ROOT_DIR = path.join(__dirname, '..');
 const OUTPUT_FILE = path.join(ROOT_DIR, 'sitemap.xml');
+const PAGE_SITEMAP_FILE = path.join(ROOT_DIR, 'sitemap-pages.xml');
+const BLOG_SITEMAP_FILE = path.join(ROOT_DIR, 'sitemap-blog.xml');
 const BLOG_CONTENT_DIR = path.join(ROOT_DIR, 'content', 'blog');
 
 // Static pages
 // Note: Removed duplicate entries (/index.html and /blog/index) to prevent crawler confusion
 // Note: changefreq and priority are ignored by Google, so we only use lastmod
 const staticPages = [
-  { url: '/' },
-  { url: '/about' },
-  { url: '/success-stories' },
-  { url: '/blog/' },
-  { url: '/gettaxreport' },
-  { url: '/tax-strategies-101' },
-  { url: '/stacking-presentation/' },
+  { url: '/', file: 'index.html' },
+  { url: '/about', file: 'about.html' },
+  { url: '/success-stories', file: 'success-stories.html' },
+  { url: '/blog/', file: 'blog/index.html' },
+  { url: '/gettaxreport', file: 'gettaxreport/index.html' },
+  { url: '/tax-strategies-101', file: 'tax-strategies-101.html' },
+  { url: '/stacking-presentation/', file: 'stacking-presentation/index.html' },
 ];
 
 // Programmatic SEO directories to scan
@@ -45,6 +54,18 @@ const programmaticDirs = [
  */
 function getW3CDate(date = new Date()) {
   return date.toISOString().split('T')[0];
+}
+
+/**
+ * Get a file-backed lastmod date when the page exists locally.
+ */
+function getFileLastmod(relativePath) {
+  if (!relativePath) return getW3CDate();
+
+  const filePath = path.join(ROOT_DIR, relativePath);
+  if (!fs.existsSync(filePath)) return getW3CDate();
+
+  return getW3CDate(fs.statSync(filePath).mtime);
 }
 
 /**
@@ -212,6 +233,25 @@ function parseFrontmatterDate(value) {
 }
 
 /**
+ * Small fallback frontmatter reader used only when gray-matter is unavailable.
+ */
+function parseSimpleFrontmatterData(raw) {
+  const match = raw.match(/^---\s*\n([\s\S]*?)\n---/);
+  const data = {};
+
+  if (!match) return data;
+
+  for (const line of match[1].split(/\r?\n/)) {
+    const field = line.match(/^([A-Za-z0-9_-]+):\s*(.+?)\s*$/);
+    if (!field) continue;
+
+    data[field[1]] = field[2].replace(/^['"]|['"]$/g, '');
+  }
+
+  return data;
+}
+
+/**
  * Build a lookup map of blog slug -> lastmod from markdown frontmatter.
  * Prefers `modifiedDate`, then falls back to `date`.
  */
@@ -227,7 +267,7 @@ function getBlogLastmodMap() {
 
     try {
       const raw = fs.readFileSync(fullPath, 'utf8');
-      const { data } = matter(raw);
+      const data = matter ? matter(raw).data : parseSimpleFrontmatterData(raw);
       const lastmod = parseFrontmatterDate(data.modifiedDate) || parseFrontmatterDate(data.date);
       if (lastmod) {
         lastmodMap.set(slug, lastmod);
@@ -300,42 +340,7 @@ function scanProgrammaticPages() {
 /**
  * Generate XML sitemap
  */
-function generateSitemap() {
-  const today = getW3CDate();
-
-  // Collect all URLs
-  const urls = [];
-
-  // Add static pages
-  for (const page of staticPages) {
-    // Skip duplicate index entries
-    if (page.url === '/index.html') continue;
-
-    urls.push({
-      loc: `${SITE_URL}${normalizePath(page.url)}`,
-      lastmod: today,
-    });
-  }
-
-  // Add blog posts
-  const blogPosts = scanBlogPosts();
-  for (const post of blogPosts) {
-    urls.push({
-      loc: `${SITE_URL}${normalizePath(post.url)}`,
-      lastmod: post.lastmod,
-      image: post.image,
-    });
-  }
-
-  // Add programmatic SEO pages (tax strategies, etc.)
-  const programmaticPages = scanProgrammaticPages();
-  for (const page of programmaticPages) {
-    urls.push({
-      loc: `${SITE_URL}${normalizePath(page.url)}`,
-      lastmod: page.lastmod,
-    });
-  }
-
+function buildSitemapUrlSet(urls) {
   // De-duplicate entries in case multiple sources resolve to same clean URL.
   const deduped = Array.from(
     new Map(urls.map((entry) => [entry.loc, entry])).values()
@@ -365,6 +370,87 @@ function generateSitemap() {
 }
 
 /**
+ * Generate a sitemap index that points crawlers to section-level sitemaps.
+ */
+function buildSitemapIndex(sitemaps) {
+  let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+  xml += '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+
+  for (const sitemap of sitemaps) {
+    xml += '  <sitemap>\n';
+    xml += `    <loc>${sitemap.loc}</loc>\n`;
+    xml += `    <lastmod>${sitemap.lastmod}</lastmod>\n`;
+    xml += '  </sitemap>\n';
+  }
+
+  xml += '</sitemapindex>\n';
+
+  return xml;
+}
+
+function getLatestLastmod(urls) {
+  return urls.reduce((latest, url) => {
+    if (!url.lastmod) return latest;
+    return url.lastmod > latest ? url.lastmod : latest;
+  }, '1970-01-01');
+}
+
+/**
+ * Generate XML sitemaps.
+ */
+function generateSitemaps() {
+  const pageUrls = [];
+  const blogUrls = [];
+
+  // Add static pages to the page sitemap.
+  for (const page of staticPages) {
+    // Skip duplicate index entries
+    if (page.url === '/index.html') continue;
+
+    pageUrls.push({
+      loc: `${SITE_URL}${normalizePath(page.url)}`,
+      lastmod: getFileLastmod(page.file),
+    });
+  }
+
+  // Add blog posts to the blog sitemap.
+  const blogPosts = scanBlogPosts();
+  for (const post of blogPosts) {
+    blogUrls.push({
+      loc: `${SITE_URL}${normalizePath(post.url)}`,
+      lastmod: post.lastmod,
+      image: post.image,
+    });
+  }
+
+  // Add programmatic SEO pages (tax strategies, etc.) to the page sitemap.
+  const programmaticPages = scanProgrammaticPages();
+  for (const page of programmaticPages) {
+    pageUrls.push({
+      loc: `${SITE_URL}${normalizePath(page.url)}`,
+      lastmod: page.lastmod,
+    });
+  }
+
+  const sitemapIndex = buildSitemapIndex([
+    {
+      loc: `${SITE_URL}/sitemap-pages.xml`,
+      lastmod: getLatestLastmod(pageUrls),
+    },
+    {
+      loc: `${SITE_URL}/sitemap-blog.xml`,
+      lastmod: getLatestLastmod(blogUrls),
+    },
+  ]);
+
+  return {
+    index: sitemapIndex,
+    pages: buildSitemapUrlSet(pageUrls),
+    blog: buildSitemapUrlSet(blogUrls),
+  };
+}
+
+/**
  * Main function
  */
 function main() {
@@ -373,13 +459,17 @@ function main() {
   console.log(`Output: ${OUTPUT_FILE}`);
 
   try {
-    const sitemap = generateSitemap();
-    fs.writeFileSync(OUTPUT_FILE, sitemap, 'utf8');
+    const sitemaps = generateSitemaps();
+    fs.writeFileSync(OUTPUT_FILE, sitemaps.index, 'utf8');
+    fs.writeFileSync(PAGE_SITEMAP_FILE, sitemaps.pages, 'utf8');
+    fs.writeFileSync(BLOG_SITEMAP_FILE, sitemaps.blog, 'utf8');
     console.log('Sitemap generated successfully!');
 
     // Count URLs
-    const urlCount = (sitemap.match(/<url>/g) || []).length;
-    console.log(`Total URLs in sitemap: ${urlCount}`);
+    const pageUrlCount = (sitemaps.pages.match(/<url>/g) || []).length;
+    const blogUrlCount = (sitemaps.blog.match(/<url>/g) || []).length;
+    console.log(`Page sitemap URLs: ${pageUrlCount}`);
+    console.log(`Blog sitemap URLs: ${blogUrlCount}`);
   } catch (error) {
     console.error('Error generating sitemap:', error.message);
     process.exit(1);

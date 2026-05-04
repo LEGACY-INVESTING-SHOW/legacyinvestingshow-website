@@ -215,6 +215,266 @@
   ],
   "redirects": [
     {
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/home/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/programs",
+      "destination": "/tax-strategies-101",
+      "permanent": true
+    },
+    {
+      "source": "/programs/",
+      "destination": "/tax-strategies-101",
+      "permanent": true
+    },
+    {
+      "source": "/free-training",
+      "destination": "/tax-strategies-101",
+      "permanent": true
+    },
+    {
+      "source": "/free-training/",
+      "destination": "/tax-strategies-101",
+      "permanent": true
+    },
+    {
+      "source": "/retirement-planning",
+      "destination": "/blog/retirement-income-strategies",
+      "permanent": true
+    },
+    {
+      "source": "/retirement-planning/",
+      "destination": "/blog/retirement-income-strategies",
+      "permanent": true
+    },
+    {
+      "source": "/blog/dustin-case-study",
+      "destination": "/success-stories",
+      "permanent": true
+    },
+    {
+      "source": "/blog/kirk-case-study",
+      "destination": "/success-stories",
+      "permanent": true
+    },
+    {
+      "source": "/blog/kirk-case-study.html",
+      "destination": "/success-stories",
+      "permanent": true
+    },
+    {
+      "source": "/blog/kiana-case-study",
+      "destination": "/blog/kiana-replaced-finance-job-airbnb",
+      "permanent": true
+    },
+    {
+      "source": "/blog/kiana-case-study.html",
+      "destination": "/blog/kiana-replaced-finance-job-airbnb",
+      "permanent": true
+    },
+    {
+      "source": "/blog/landlord-cold-calling-scripts",
+      "destination": "/blog/how-to-convince-landlords-for-airbnb-arbitrage",
+      "permanent": true
+    },
+    {
+      "source": "/blog/airbnb-property-setup-checklist",
+      "destination": "/blog/airbnb-startup-budget-checklist",
+      "permanent": true
+    },
+    {
+      "source": "/blog/real-estate-investing",
+      "destination": "/blog/house-hacking-real-estate-investing-for-beginners",
+      "permanent": true
+    },
+    {
+      "source": "/blog/real-estate-investing/",
+      "destination": "/blog/house-hacking-real-estate-investing-for-beginners",
+      "permanent": true
+    },
+    {
+      "source": "/blog/remote-airbnb-management",
+      "destination": "/blog/how-to-scale-an-airbnb-arbitrage-business",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/investing",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/business-structure-comparison",
+      "destination": "/blog/llc-vs-s-corp",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/business-structure",
+      "destination": "/blog/llc-vs-s-corp",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/qualified-opportunity-zones",
+      "destination": "/tax-strategies/opportunity-zones",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/qualified-business-income",
+      "destination": "/tax-strategies/qualified-business-income-deduction",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/family-employment",
+      "destination": "/tax-strategies/family-employment-tax-strategy",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/estimated-taxes",
+      "destination": "/tax-strategies/estimated-tax-payments",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/capital-gains-harvesting",
+      "destination": "/tax-strategies/tax-gain-harvesting",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/charitable-lead-trust",
+      "destination": "/tax-strategies/charitable-remainder-trust",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/s-corp-optimization",
+      "destination": "/tax-strategies/s-corp-strategy",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/sep-ira",
+      "destination": "/retirement/sep-ira-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/business-deductions",
+      "destination": "/blog/tax-deduction-for-small-business-owners",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/business-ownership-taxation",
+      "destination": "/tax-strategies/for/business-owners",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/s-corp",
+      "destination": "/tax-strategies/s-corp-strategy",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/passive-activity-loss-limitation",
+      "destination": "/tax-strategies/real-estate-professional-status",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/passive-activity-losses",
+      "destination": "/tax-strategies/real-estate-professional-status",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/roth-conversion",
+      "destination": "/tax-strategies/roth-conversion-ladder",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/private-foundation",
+      "destination": "/tax-strategies/donor-advised-fund",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/real-estate-tax-benefits",
+      "destination": "/tax-strategies/real-estate-professional-status",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/qbi-deduction",
+      "destination": "/tax-strategies/qualified-business-income-deduction",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/reasonable-salary",
+      "destination": "/blog/reasonable-salary-s-corp",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/quarterly-estimated-taxes",
+      "destination": "/tax-strategies/estimated-tax-payments",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/self-employed-deductions",
+      "destination": "/tax-strategies/for/self-employed",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/installment-sales",
+      "destination": "/tax-strategies/installment-sale",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/estate-planning",
+      "destination": "/blog/estate-tax-planning-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/deferral-strategies",
+      "destination": "/tax-strategies/installment-sale",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/qualified-intermediary",
+      "destination": "/tax-strategies/1031-exchange",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/business-operating-losses",
+      "destination": "/tax-strategies/pass-through-entity-tax",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/alternative-minimum-tax",
+      "destination": "/tax-strategies-101",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/business-entity-structure",
+      "destination": "/blog/llc-vs-s-corp",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/qualified-improvement-property",
+      "destination": "/tax-strategies/bonus-depreciation",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/vehicle-deductions",
+      "destination": "/tax-strategies/business-vehicle-deduction",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/donor-advised-funds",
+      "destination": "/tax-strategies/donor-advised-fund",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/real-estate-depreciation",
+      "destination": "/tax-strategies/rental-property-depreciation",
+      "permanent": true
+    },
+    {
       "source": "/sitemap.txt",
       "destination": "/sitemap.xml",
       "permanent": true

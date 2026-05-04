@@ -448,7 +448,7 @@ Every element of this plan is available to qualifying households:
 
 **The strategies are public. The execution is private.**
 
-If you're ready to transform your tax burden from a liability into a wealth-building weapon, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) provide the education, community, and support to implement these strategies in your own financial life.
+If you're ready to transform your tax burden from a liability into a wealth-building weapon, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) provide the education, community, and support to implement these strategies in your own financial life.
 
 Your wealth plan won't look exactly like Abigail's — every household's situation is unique. But the principles remain constant: **aggressive tax optimization, strategic asset deployment, and relentless execution toward financial independence.**
 

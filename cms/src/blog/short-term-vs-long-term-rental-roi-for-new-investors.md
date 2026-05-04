@@ -162,4 +162,4 @@ Before you commit to either path, talk to local property managers, research your
 
 If you're serious about building wealth through rental properties, the Legacy Investing Show has you covered. Our programs break down exactly how to evaluate properties, structure deals, and scale your portfolio—whether you choose short-term, long-term, or both.
 
-Explore our [investing programs](/programs.html) or browse [Airbnb arbitrage success stories](/success-stories.html) to see how other investors are putting these strategies to work.
+Explore our [investing programs](/tax-strategies-101) or browse [Airbnb arbitrage success stories](/success-stories.html) to see how other investors are putting these strategies to work.

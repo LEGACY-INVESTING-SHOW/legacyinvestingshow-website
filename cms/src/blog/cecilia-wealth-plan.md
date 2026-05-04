@@ -629,7 +629,7 @@ Cecilia's wealth plan demonstrates that systematic execution of tax optimization
 
 The December 2025 plan date suggests urgency: year-end is the optimal time for W-4 adjustments and 2026 preparation. Every month of delay costs $4,000-$5,000 in recapturable tax value.
 
-If you're a W-2 employee earning $100,000+ and seeking a strategic path to financial independence, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/programs) provide the education, community, and support structure to execute these strategies. The difference between this plan and your results is implementation — and you don't have to do it alone.
+If you're a W-2 employee earning $100,000+ and seeking a strategic path to financial independence, the [Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) provide the education, community, and support structure to execute these strategies. The difference between this plan and your results is implementation — and you don't have to do it alone.
 
 **The tax code is designed to reward business owners and real estate investors. The question isn't whether these strategies work — it's whether you'll implement them before another year of over-withholding passes.**
 
