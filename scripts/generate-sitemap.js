@@ -223,6 +223,33 @@ function scanBlogPosts() {
 }
 
 /**
+ * Scan generated crawlable blog archive pages such as /blog/category/tax-strategies.
+ */
+function scanBlogArchivePages() {
+  const archivePages = [];
+  const categoryDir = path.join(ROOT_DIR, 'blog', 'category');
+
+  if (!fs.existsSync(categoryDir)) {
+    return archivePages;
+  }
+
+  const entries = fs.readdirSync(categoryDir, { withFileTypes: true });
+  for (const entry of entries) {
+    if (!entry.isFile() || !entry.name.endsWith('.html')) continue;
+
+    const fullPath = path.join(categoryDir, entry.name);
+    if (!isIndexableHtml(fullPath)) continue;
+
+    archivePages.push({
+      url: `/blog/category/${entry.name}`,
+      lastmod: getW3CDate(fs.statSync(fullPath).mtime),
+    });
+  }
+
+  return archivePages;
+}
+
+/**
  * Parse a date-like value from frontmatter into YYYY-MM-DD.
  */
 function parseFrontmatterDate(value) {
@@ -414,6 +441,14 @@ function generateSitemaps() {
   }
 
   // Add blog posts to the blog sitemap.
+  const blogArchivePages = scanBlogArchivePages();
+  for (const page of blogArchivePages) {
+    blogUrls.push({
+      loc: `${SITE_URL}${normalizePath(page.url)}`,
+      lastmod: page.lastmod,
+    });
+  }
+
   const blogPosts = scanBlogPosts();
   for (const post of blogPosts) {
     blogUrls.push({

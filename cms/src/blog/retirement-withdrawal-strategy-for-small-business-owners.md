@@ -1,7 +1,7 @@
 ---
 title: 'Retirement Withdrawal Strategy For Small Business Owners: Complete 2026 Guide'
 titleTemplate: '%s | Legacy Investing Show'
-description: Dry run output
+description: Build a 2026 retirement withdrawal strategy for small business owners with tax sequencing, cash-flow planning, account ordering, and risk-control checkpoints.
 date: '2026-02-16'
 modifiedDate: '2026-02-16'
 author: Preston Seo
@@ -13,15 +13,15 @@ canonical: >-
 seo:
   primaryKeyword: retirement withdrawal strategy for small business owners
   secondaryKeywords:
-    - dry run strategy
-    - dry run guide
-    - dry run checklist
+    - retirement withdrawal tax planning
+    - small business owner retirement income
+    - retirement account withdrawal order
   longTailKeywords:
-    - how to dry run
-    - dry run mistakes
-    - dry run for beginners
+    - how small business owners should withdraw retirement income
+    - retirement withdrawal strategy after selling a business
+    - tax efficient withdrawal order for business owners
   searchIntent: informational
-  targetSnippet: dry run explained
+  targetSnippet: retirement withdrawal strategy for small business owners
 tags:
   - retirement withdrawal strategy for small business owners
   - retirement

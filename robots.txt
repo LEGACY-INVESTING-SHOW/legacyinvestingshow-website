@@ -1,111 +1,38 @@
 # Robots.txt for Legacy Investing Show
 # https://www.legacyinvestingshow.com
-# Last updated: 2026-03-02
+# Last updated: 2026-05-05
 
-# Default rules for all crawlers
+# Keep crawlers focused on public, canonical website pages.
+# Source files, old drafts, audits, screenshots, build scripts, and backups are
+# intentionally not part of the public SEO surface.
 User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /admin/
 Disallow: /private/
-
-# ===========================================
-# SEARCH ENGINE CRAWLERS
-# ===========================================
-
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: DuckDuckBot
-Allow: /
-
-User-agent: YandexBot
-Allow: /
-
-User-agent: Applebot
-Allow: /
-
-# ===========================================
-# AI/LLM CRAWLERS
-# ===========================================
-
-# OpenAI
-User-agent: GPTBot
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-User-agent: OAI-ImageBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-# Anthropic (Claude)
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: Claude-Web
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
-# Google AI
-User-agent: Google-Extended
-Allow: /
-
-# Perplexity
-User-agent: PerplexityBot
-Allow: /
-
-# X/Twitter
-User-agent: Grok-bot
-Allow: /
-
-# Meta
-User-agent: meta-externalagent
-Allow: /
-
-User-agent: FacebookBot
-Allow: /
-
-# Other AI
-User-agent: cohere-ai
-Allow: /
-
-User-agent: AI2Bot
-Allow: /
-
-User-agent: Bytespider
-Allow: /
-
-# ===========================================
-# SOCIAL MEDIA CRAWLERS
-# ===========================================
-
-User-agent: LinkedInBot
-Allow: /
-
-User-agent: Slackbot
-Allow: /
-
-User-agent: TelegramBot
-Allow: /
-
-User-agent: DiscordBot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-# ===========================================
-# SITEMAP & AI CONTEXT
-# ===========================================
+Disallow: /analysis/
+Disallow: /backups/
+Disallow: /docs/
+Disallow: /plans/
+Disallow: /screenshots/
+Disallow: /todos/
+Disallow: /content/
+Disallow: /data/
+Disallow: /scripts/
+Disallow: /templates/
+Disallow: /tests/
+Disallow: /pipeline/
+Disallow: /cms/
+Disallow: /.claude/
+Disallow: /.agents/
+Disallow: /.factory/
+Disallow: /.opencode/
+Disallow: /.playwright-mcp/
+Disallow: /*.md$
+Disallow: /*.json$
+Disallow: /*.csv$
+Disallow: /*.tsv$
+Disallow: /*.log$
 
 Sitemap: https://www.legacyinvestingshow.com/sitemap.xml
 

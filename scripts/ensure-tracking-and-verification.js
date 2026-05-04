@@ -74,6 +74,86 @@ function getMetaContent(content, name, attr = 'name') {
   return match ? match[1].replace(/\s+/g, ' ').trim() : '';
 }
 
+function getCanonical(content) {
+  const match = content.match(/<link\s+rel=["']canonical["']\s+href=["']([^"']+)["'][^>]*>/i);
+  return match ? match[1].replace(/\s+/g, ' ').trim() : '';
+}
+
+function stripBrand(title) {
+  return String(title || '').replace(/\s*\|\s*Legacy Investing Show\s*$/i, '').trim();
+}
+
+function escapeAttr(value) {
+  return String(value || '')
+    .replace(/&/g, '&amp;')
+    .replace(/"/g, '&quot;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
+
+function insertBeforeHeadEnd(content, snippet) {
+  if (/<\/head>/i.test(content)) {
+    return content.replace(/<\/head>/i, `${snippet}\n</head>`);
+  }
+  return content;
+}
+
+function ensureOpenGraphMeta(content) {
+  const missing = [];
+  const title = getTitle(content) || 'Legacy Investing Show';
+  const description = getMetaContent(content, 'description') || `${stripBrand(title)} from Legacy Investing Show.`;
+  const canonical = getCanonical(content) || SITE_URL;
+  const image = getMetaContent(content, 'og:image', 'property') || `${SITE_URL}/assets/images/og-blog.jpg`;
+
+  if (!/<meta\s+property=["']og:type["']/i.test(content)) {
+    missing.push('    <meta property="og:type" content="website">');
+  }
+  if (!/<meta\s+property=["']og:url["']/i.test(content)) {
+    missing.push(`    <meta property="og:url" content="${escapeAttr(canonical)}">`);
+  }
+  if (!/<meta\s+property=["']og:title["']/i.test(content)) {
+    missing.push(`    <meta property="og:title" content="${escapeAttr(title)}">`);
+  }
+  if (!/<meta\s+property=["']og:description["']/i.test(content)) {
+    missing.push(`    <meta property="og:description" content="${escapeAttr(description)}">`);
+  }
+  if (!/<meta\s+property=["']og:image["']/i.test(content)) {
+    missing.push(`    <meta property="og:image" content="${escapeAttr(image)}">`);
+  }
+  if (!/<meta\s+property=["']og:site_name["']/i.test(content)) {
+    missing.push('    <meta property="og:site_name" content="Legacy Investing Show">');
+  }
+
+  if (!missing.length) return content;
+  return insertBeforeHeadEnd(content, `\n    <!-- Open Graph fallback -->\n${missing.join('\n')}`);
+}
+
+function ensureTwitterMeta(content) {
+  const missing = [];
+  const title = getTitle(content) || 'Legacy Investing Show';
+  const description = getMetaContent(content, 'description') || `${stripBrand(title)} from Legacy Investing Show.`;
+  const image = getMetaContent(content, 'og:image', 'property') || `${SITE_URL}/assets/images/og-blog.jpg`;
+
+  if (!/<meta\s+name=["']twitter:card["']/i.test(content)) {
+    missing.push('    <meta name="twitter:card" content="summary_large_image">');
+  }
+  if (!/<meta\s+name=["']twitter:site["']/i.test(content)) {
+    missing.push('    <meta name="twitter:site" content="@thelegacyshow">');
+  }
+  if (!/<meta\s+name=["']twitter:title["']/i.test(content)) {
+    missing.push(`    <meta name="twitter:title" content="${escapeAttr(title)}">`);
+  }
+  if (!/<meta\s+name=["']twitter:description["']/i.test(content)) {
+    missing.push(`    <meta name="twitter:description" content="${escapeAttr(description)}">`);
+  }
+  if (!/<meta\s+name=["']twitter:image["']/i.test(content)) {
+    missing.push(`    <meta name="twitter:image" content="${escapeAttr(image)}">`);
+  }
+
+  if (!missing.length) return content;
+  return insertBeforeHeadEnd(content, `\n    <!-- Twitter Card fallback -->\n${missing.join('\n')}`);
+}
+
 function ensureTitleLength(content) {
   const match = content.match(/<title>([^<]*)<\/title>/i);
   if (!match) return content;
@@ -282,6 +362,8 @@ function processFile(filePath) {
   next = expandDescriptionFromOg(next);
   next = ensureRobotsMeta(next);
   next = ensureCanonical(next, relativePath);
+  next = ensureOpenGraphMeta(next);
+  next = ensureTwitterMeta(next);
   next = injectVerificationMeta(next);
   next = ensureTitleLength(next);
   next = expandTitleFromOg(next);

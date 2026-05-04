@@ -3,7 +3,7 @@ title: >-
   How Brian Makes $2,000/Month with Airbnb Arbitrage While Working Full-Time in
   IT (2026)
 titleTemplate: '%s | Legacy Investing Show Success Stories'
-description: Brian O
+description: Learn how Brian built a $2,000/month Airbnb arbitrage unit while working full-time in IT, including his first deal, setup process, and operator lessons.
 date: 2025-10-30T00:00:00.000Z
 modifiedDate: 2026-01-23T00:00:00.000Z
 author: Preston Seo

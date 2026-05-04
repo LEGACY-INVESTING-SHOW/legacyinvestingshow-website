@@ -3,7 +3,7 @@ title: >-
   How Leo Built a $32,500/Month Airbnb Business with 13 Properties in Cleveland
   (2026)
 titleTemplate: '%s | Legacy Investing Show Success Stories'
-description: Leo went from selling on eBay at age 15 and building a successful children
+description: See how Leo scaled to 13 Airbnb properties in Cleveland, built $32,500/month in cash flow, and used operator systems to turn early hustle into a real portfolio.
 date: 2026-02-25T00:00:00.000Z
 modifiedDate: 2026-01-23T00:00:00.000Z
 author: Preston Seo

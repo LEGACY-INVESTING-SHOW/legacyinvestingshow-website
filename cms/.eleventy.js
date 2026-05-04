@@ -1,3 +1,5 @@
+const { renderSourceBlock } = require("../scripts/lib/site-shell");
+
 module.exports = function(eleventyConfig) {
   const siteUrl = process.env.SITE_URL || "https://www.legacyinvestingshow.com";
 
@@ -67,6 +69,15 @@ module.exports = function(eleventyConfig) {
     } catch {
       return url;
     }
+  });
+
+  eleventyConfig.addShortcode("sourceBlock", function(title = "", slug = "", type = "") {
+    return renderSourceBlock({
+      title,
+      slug,
+      type,
+      heading: "Sources To Check Before You Act",
+    });
   });
   
   return {

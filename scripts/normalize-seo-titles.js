@@ -10,14 +10,39 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const BRAND_SUFFIX = ' | Legacy Investing Show';
-const SKIP_DIRS = new Set(['node_modules', '.git']);
+const SKIP_DIRS = new Set([
+  'node_modules',
+  '.git',
+  '.vercel',
+  '.claude',
+  '.agents',
+  '.factory',
+  '.opencode',
+  '.playwright-mcp',
+  'analysis',
+  'backups',
+  'cms',
+  'content',
+  'docs',
+  'plans',
+  'screenshots',
+  'scripts',
+  'templates',
+  'tests',
+  'todos',
+]);
 
 function normalizeTitle(raw) {
   const title = (raw || '').replace(/\s+/g, ' ').trim();
   if (!title) return '';
-  if (!title.endsWith(BRAND_SUFFIX)) return title;
+  if (!title.includes(BRAND_SUFFIX)) return title;
 
-  const core = title.slice(0, -BRAND_SUFFIX.length).trimEnd();
+  const core = title
+    .split(BRAND_SUFFIX)
+    .map(part => part.trim())
+    .filter(Boolean)
+    .join(' ')
+    .trim();
   return core ? `${core}${BRAND_SUFFIX}` : title;
 }
 

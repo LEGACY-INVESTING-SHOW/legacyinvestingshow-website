@@ -22,6 +22,7 @@ const {
     renderAnalyticsHead,
     renderFooterLinks,
     renderPrimaryNavLinks,
+    renderSourceBlock,
 } = require('./lib/site-shell');
 
 // Configure marked for better output
@@ -55,10 +56,13 @@ function calculateReadTime(content) {
 }
 
 /**
- * Build a SERP-friendly <title> string capped near 60 chars.
+ * Build a branded <title> string for generated blog pages.
  */
 function buildSEOTitle(rawTitle) {
-    const title = (rawTitle || 'Legacy Investing Show').replace(/\s+/g, ' ').trim() || 'Legacy Investing Show';
+    const title = (rawTitle || 'Legacy Investing Show')
+        .replace(/\s+/g, ' ')
+        .replace(/\s+\([^)]*\)\s*$/g, '')
+        .trim() || 'Legacy Investing Show';
     const suffix = ' | Legacy Investing Show';
     return title.endsWith(suffix) ? title : `${title}${suffix}`;
 }
@@ -367,6 +371,7 @@ function applyTemplate(template, post, allPosts = []) {
         : SITE_DOMAIN + rawImage;
     // Use rawImage for content display (relative paths work fine)
     const image = rawImage;
+    const imageAlt = post.frontmatter.imageAlt || post.frontmatter.title || 'Legacy Investing Show article image';
     // Generate WebP version path
     const imageWebp = rawImage.startsWith('http') 
         ? rawImage.replace(/\.(jpg|jpeg|png)$/i, '.webp') 
@@ -393,6 +398,12 @@ function applyTemplate(template, post, allPosts = []) {
     // Generate FAQ HTML and schema from frontmatter
     const faqHtml = generateFAQHTML(post.frontmatter.faq);
     const faqSchemaHtml = generateFAQSchema(post.frontmatter.faq);
+    const sourceBlockHtml = renderSourceBlock({
+        title: post.frontmatter.title,
+        slug: post.slug,
+        type: category,
+        heading: 'Sources To Check Before You Act',
+    });
 
     // Replace all placeholders
     let html = template
@@ -409,6 +420,7 @@ function applyTemplate(template, post, allPosts = []) {
         .replace(/\{\{authorCredentials\}\}/g, authorCredentials)
         .replace(/\{\{category\}\}/g, category)
         .replace(/\{\{image\}\}/g, image)
+        .replace(/\{\{imageAlt\}\}/g, imageAlt)
         .replace(/\{\{ogImage\}\}/g, ogImage)
         .replace(/\{\{imageWebp\}\}/g, imageWebp)
         .replace(/\{\{readTime\}\}/g, readTime)
@@ -418,6 +430,7 @@ function applyTemplate(template, post, allPosts = []) {
         .replace(/\{\{relatedPosts\}\}/g, relatedPostsHtml)
         .replace(/\{\{statistics\}\}/g, statisticsHtml)
         .replace(/\{\{faq\}\}/g, faqHtml)
+        .replace(/\{\{sourceBlock\}\}/g, sourceBlockHtml)
         .replace(/\{\{faqSchema\}\}/g, faqSchemaHtml);
 
     return html;
@@ -485,6 +498,32 @@ function slugifyCategory(category) {
     return category.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
 }
 
+function categoryDescription(category) {
+    const descriptions = {
+        'Airbnb Arbitrage': 'Lease-first short-term rental strategy, landlord conversations, setup budgets, pricing, operations, and real student case studies.',
+        'Business Structures': 'LLC, S-corp, C-corp, veil protection, operating agreement, registered agent, and entity-choice guides for operators and investors.',
+        'Debt Management': 'Debt payoff, consolidation, student-loan strategy, budgeting, and credit decision guides for building cleaner cash flow.',
+        'Investing': 'Portfolio construction, real estate, alternative assets, asset allocation, tax-aware investing, and wealth-building decisions.',
+        'Passive Income': 'Income-stream ideas, business models, and practical execution guides for building income beyond a paycheck.',
+        'Real Estate': 'Rental property, short-term rental, depreciation, house hacking, and investor decision guides.',
+        'Retirement': '401(k), IRA, Roth, pension, withdrawal, income, and tax-sequencing guides for retirement planning.',
+        'Success Story': 'Student case studies showing how real operators built cash flow, negotiated leases, and changed their financial trajectory.',
+        'Success Stories': 'Student case studies showing how real operators built cash flow, negotiated leases, and changed their financial trajectory.',
+        'Tax Strategies': 'Tax planning guides for real estate investors, business owners, high-income earners, and self-employed professionals.',
+        'Wealth Plan': 'Scenario-based wealth plans connecting income, tax, debt, real estate, retirement, and execution priorities.',
+    };
+
+    return descriptions[category] || `Guides, examples, and execution notes for ${category.toLowerCase()} from Legacy Investing Show.`;
+}
+
+function normalizeCategoryForArchives(category) {
+    if (category === 'Success Stories') return 'Success Story';
+    if (category === 'Real Estate Investing' || category === 'Real Estate Strategy') return 'Real Estate';
+    if (category === 'Investing Strategy' || category === 'Strategy') return 'Investing';
+    if (category === 'How-To Guide' || category === 'Getting Started') return 'Airbnb Arbitrage';
+    return category || 'Investing';
+}
+
 /**
  * Generate the blog index page
  */
@@ -495,13 +534,13 @@ function generateBlogIndex(posts) {
     });
 
     // Extract unique categories
-    const categories = [...new Set(sortedPosts.map(p => p.frontmatter.category || 'Investing'))];
+    const categories = [...new Set(sortedPosts.map(p => normalizeCategoryForArchives(p.frontmatter.category || 'Investing')))];
 
     // Generate category filter HTML
     const categoryFilterHTML = categories.length > 1 ? `
                 <nav class="category-filter" aria-label="Filter by category">
                     <button class="category-filter__btn active" data-category="all">All</button>
-                    ${categories.map(cat => `<button class="category-filter__btn" data-category="${slugifyCategory(cat)}">${cat}</button>`).join('\n                    ')}
+                    ${categories.map(cat => `<a class="category-filter__btn" href="/blog/category/${slugifyCategory(cat)}">${cat}</a>`).join('\n                    ')}
                 </nav>` : '';
 
     const postCardsHTML = sortedPosts.map(post => {
@@ -754,6 +793,175 @@ function generateBlogIndex(posts) {
 }
 
 /**
+ * Generate crawlable category archive pages so category hubs exist without JS.
+ */
+function generateCategoryArchives(posts) {
+    const sortedPosts = posts.sort((a, b) => {
+        return new Date(b.frontmatter.date) - new Date(a.frontmatter.date);
+    });
+    const archiveDir = path.join(OUTPUT_DIR, 'category');
+    ensureDir(archiveDir);
+    for (const entry of fs.readdirSync(archiveDir, { withFileTypes: true })) {
+        if (entry.isFile() && entry.name.endsWith('.html')) {
+            fs.unlinkSync(path.join(archiveDir, entry.name));
+        }
+    }
+
+    const postsByCategory = new Map();
+    for (const post of sortedPosts) {
+        const category = normalizeCategoryForArchives(post.frontmatter.category || 'Investing');
+        if (!postsByCategory.has(category)) {
+            postsByCategory.set(category, []);
+        }
+        postsByCategory.get(category).push(post);
+    }
+
+    for (const [category, categoryPosts] of postsByCategory.entries()) {
+        const categorySlug = slugifyCategory(category);
+        const description = categoryDescription(category);
+        const postCardsHTML = categoryPosts.map(post => {
+            const image = post.frontmatter.image || '/assets/images/og-blog.jpg';
+            const readTime = calculateReadTime(post.content);
+            const date = formatDate(post.frontmatter.date);
+
+            return `
+            <a href="/blog/${post.slug}" class="minimal-post-item" data-category="${categorySlug}">
+                <div class="minimal-post-image">
+                    <img src="${image}" alt="${post.frontmatter.title}" loading="lazy" width="320" height="180" onerror="this.onerror=null;this.src='/assets/images/og-blog.jpg';">
+                </div>
+                <div class="minimal-post-content">
+                    <div class="minimal-post-meta">
+                        <span class="minimal-post-category">${category}</span>
+                        <span class="meta-sep">·</span>
+                        <time datetime="${formatISODate(post.frontmatter.date)}">${date}</time>
+                        <span class="meta-sep">·</span>
+                        <span>${readTime} min</span>
+                    </div>
+                    <h2 class="minimal-post-title">${post.frontmatter.title}</h2>
+                    <p class="minimal-post-desc">${post.frontmatter.description || ''}</p>
+                </div>
+            </a>`;
+        }).join('\n');
+
+        const archiveHTML = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>${category} Articles | Legacy Investing Show</title>
+    <meta name="title" content="${category} Articles | Legacy Investing Show">
+    <meta name="description" content="${description}">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="${GOOGLE_SITE_VERIFICATIONS[0]}">
+    <meta name="google-site-verification" content="${GOOGLE_SITE_VERIFICATIONS[1]}">
+    <link rel="canonical" href="https://www.legacyinvestingshow.com/blog/category/${categorySlug}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.legacyinvestingshow.com/blog/category/${categorySlug}">
+    <meta property="og:title" content="${category} Articles | Legacy Investing Show">
+    <meta property="og:description" content="${description}">
+    <meta property="og:image" content="https://www.legacyinvestingshow.com/assets/images/og-blog.jpg">
+    <meta property="og:site_name" content="Legacy Investing Show">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@thelegacyshow">
+    <meta name="twitter:title" content="${category} Articles | Legacy Investing Show">
+    <meta name="twitter:description" content="${description}">
+    <meta name="twitter:image" content="https://www.legacyinvestingshow.com/assets/images/og-blog.jpg">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" href="/assets/images/logo.png">
+    <link rel="apple-touch-icon" href="/assets/images/logo.png">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script type="application/ld+json">
+    ${JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        name: `${category} Articles`,
+        description,
+        url: `https://www.legacyinvestingshow.com/blog/category/${categorySlug}`,
+        isPartOf: {
+            '@type': 'Blog',
+            name: 'Legacy Investing Show Blog',
+            url: 'https://www.legacyinvestingshow.com/blog',
+        },
+        mainEntity: {
+            '@type': 'ItemList',
+            numberOfItems: categoryPosts.length,
+            itemListElement: categoryPosts.slice(0, 50).map((post, index) => ({
+                '@type': 'ListItem',
+                position: index + 1,
+                url: `https://www.legacyinvestingshow.com/blog/${post.slug}`,
+                name: post.frontmatter.title,
+            })),
+        },
+    }, null, 4)}
+    </script>
+    ${renderAnalyticsHead({ gaTrackingId: GA_TRACKING_ID, gtmContainerId: GTM_CONTAINER_ID })}
+</head>
+<body class="bg-white text-gray-900" data-page-type="blog_category" data-page-title="${category}">
+    ${renderAnalyticsBody({ gtmContainerId: GTM_CONTAINER_ID })}
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-gray-900 text-white px-4 py-2 z-50">Skip to main content</a>
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <nav class="container-custom" aria-label="Main navigation">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="flex items-center gap-2 font-medium text-gray-900 hover:text-gray-700 transition-colors">
+                    <img src="/assets/images/logo.png" alt="Legacy Investing Show Logo" width="28" height="28" class="w-7 h-7">
+                    <span>Legacy Investing Show</span>
+                </a>
+                <div class="hidden md:flex items-center gap-4">
+                    ${renderPrimaryNavLinks('/blog')}
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col gap-3">
+                    ${renderPrimaryNavLinks('/blog')}
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="main">
+        <section class="minimal-blog-header">
+            <p class="minimal-blog-subtitle"><a href="/blog">Blog</a> / Category</p>
+            <h1 class="minimal-blog-title">${category}</h1>
+            <p class="minimal-blog-subtitle">${description}</p>
+        </section>
+        <section class="minimal-posts-section">
+            <div class="container-custom">
+                <div class="minimal-posts-list">
+                    ${postCardsHTML}
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="minimal-footer">
+        <div class="container-custom">
+            <div class="minimal-footer-content">
+                <div class="footer-brand">
+                    <img src="/assets/images/logo.png" alt="Legacy Investing Show" width="32" height="32">
+                    <span>Legacy Investing Show</span>
+                </div>
+                <div class="footer-links">
+                    ${renderFooterLinks()}
+                </div>
+            </div>
+            <div class="footer-copyright">Copyright ${CURRENT_YEAR}</div>
+        </div>
+    </footer>
+    <script defer src="/assets/js/main.js"></script>
+</body>
+</html>`;
+
+        fs.writeFileSync(path.join(archiveDir, `${categorySlug}.html`), archiveHTML);
+    }
+
+    return postsByCategory.size;
+}
+
+/**
  * Main build function
  */
 function build() {
@@ -811,6 +1019,8 @@ function build() {
         const indexPath = path.join(OUTPUT_DIR, 'index.html');
         fs.writeFileSync(indexPath, indexHTML);
         console.log(`\nBuilt: blog/index.html (${markdownPosts.length} posts)`);
+        const categoryCount = generateCategoryArchives(markdownPosts);
+        console.log(`Built: ${categoryCount} blog category archive(s)`);
     } catch (error) {
         console.error(`Error generating blog index: ${error.message}`);
         errorCount++;

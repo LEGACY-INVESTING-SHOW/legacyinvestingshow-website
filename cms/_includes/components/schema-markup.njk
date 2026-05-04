@@ -29,7 +29,8 @@
         {
             "@type": "ListItem",
             "position": 3,
-            "name": {{ title | jsonLd | safe }}
+            "name": {{ title | jsonLd | safe }},
+            "item": {{ canonicalCurrent | jsonLd | safe }}
         }
     ]
 }
