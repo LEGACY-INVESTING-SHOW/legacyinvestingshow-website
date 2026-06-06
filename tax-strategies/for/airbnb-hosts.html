@@ -142,6 +142,81 @@
         .strategies-section {
             padding: 4rem 0;
         }
+        .persona-guide {
+            padding: 0 0 4rem;
+        }
+        .persona-guide__intro {
+            max-width: 48rem;
+            margin-bottom: 2rem;
+        }
+        .persona-guide__intro h2,
+        .persona-faq h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 1rem;
+        }
+        .persona-guide__intro p,
+        .persona-guide__strategy p,
+        .persona-faq__answer {
+            color: #4b5563;
+            line-height: 1.7;
+        }
+        .persona-guide__list {
+            display: grid;
+            gap: 1rem;
+        }
+        .persona-guide__strategy {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 1rem;
+            padding: 1.25rem 0;
+            border-top: 1px solid #e5e7eb;
+        }
+        .persona-guide__number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 9999px;
+            background: #ecfdf5;
+            color: #047857;
+            font-weight: 700;
+            font-size: 0.875rem;
+        }
+        .persona-guide__strategy h3,
+        .persona-faq__question {
+            color: #111827;
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .persona-guide__strategy ul {
+            margin: 1rem 0;
+            padding-left: 1.25rem;
+            color: #374151;
+            line-height: 1.6;
+        }
+        .persona-guide__strategy a {
+            color: #047857;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .persona-guide__strategy a:hover {
+            text-decoration: underline;
+        }
+        .persona-faq {
+            padding: 0 0 4rem;
+        }
+        .persona-faq__grid {
+            display: grid;
+            gap: 1rem;
+        }
+        .persona-faq__item {
+            padding: 1.25rem 0;
+            border-top: 1px solid #e5e7eb;
+        }
         .section-title {
             font-size: 1.5rem;
             font-weight: 700;
@@ -384,6 +459,93 @@
                             <span class="strategy-card__savings-value">Up to $1,160,000 immediate deduction</span>
                         </div>
                     </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="persona-guide">
+            <div class="container-custom">
+                
+                <div class="persona-guide__intro">
+                    <h2>How Airbnb & STR Hosts Should Prioritize Tax Planning</h2>
+                    <p>Specific tax benefits for short-term rental operators. The main mistake is treating every tax strategy like it has the same timing, paperwork, and risk profile. Start with the moves that match your income source, ownership structure, and ability to document the activity before you chase more advanced deductions.</p>
+                    <p>Use the recommendations below as a planning map. Some strategies can be implemented during the year, some need entity or account setup before money moves, and others only work when the documentation is built before the deduction is claimed.</p>
+                </div>
+                <div class="persona-guide__list">
+                    
+                    <article class="persona-guide__strategy">
+                        <div class="persona-guide__number">1</div>
+                        <div>
+                            <h3>Cost Segregation</h3>
+                            <p>Cost segregation is a tax strategy that allows real estate investors to accelerate depreciation deductions by reclassifying components of a building into shorter depreciation periods. Instead of depreciating the entire property over 27.5 or 39 years, certain components like carpeting, appliances, and landscaping can be depreciated over 5, 7, or 15 years.</p>
+                            <ul>
+                                <li><strong>Best fit:</strong> Properties worth $500K+ purchased or renovated recently</li>
+                                <li><strong>Potential savings:</strong> $20,000 - $100,000+ in year one</li>
+                                <li><strong>Complexity:</strong> Advanced, professional guidance recommended</li>
+                            </ul>
+                            <a href="/tax-strategies/cost-segregation">Read the Cost Segregation guide</a>
+                        </div>
+                    </article>
+
+                    <article class="persona-guide__strategy">
+                        <div class="persona-guide__number">2</div>
+                        <div>
+                            <h3>Bonus Depreciation</h3>
+                            <p>Bonus depreciation allows investors to immediately deduct a large percentage of the purchase price of eligible assets. The percentage changes by tax year, so verify the current-year rate before you file or model savings.</p>
+                            <ul>
+                                <li><strong>Best fit:</strong> New equipment, vehicles, and property improvements</li>
+                                <li><strong>Potential savings:</strong> 60% of asset cost as immediate deduction</li>
+                                <li><strong>Complexity:</strong> Intermediate, usually manageable with careful documentation</li>
+                            </ul>
+                            <a href="/tax-strategies/bonus-depreciation">Read the Bonus Depreciation guide</a>
+                        </div>
+                    </article>
+
+                    <article class="persona-guide__strategy">
+                        <div class="persona-guide__number">3</div>
+                        <div>
+                            <h3>Short-Term Rental Loophole</h3>
+                            <p>The short-term rental loophole allows Airbnb and vacation rental owners to bypass passive activity loss rules without qualifying as a Real Estate Professional. If your average guest stay is 7 days or less AND you materially participate in the rental activity, the IRS treats it as a non-passive activity, allowing you to deduct losses against ordinary income.</p>
+                            <ul>
+                                <li><strong>Best fit:</strong> W-2 employees who want real estate tax benefits without REPS</li>
+                                <li><strong>Potential savings:</strong> $30,000 - $100,000+ in tax deductions</li>
+                                <li><strong>Complexity:</strong> Intermediate, professional guidance recommended</li>
+                            </ul>
+                            <a href="/tax-strategies/short-term-rental-loophole">Read the Short-Term Rental Loophole guide</a>
+                        </div>
+                    </article>
+
+                    <article class="persona-guide__strategy">
+                        <div class="persona-guide__number">4</div>
+                        <div>
+                            <h3>Section 179 Deduction</h3>
+                            <p>Section 179 allows businesses to deduct the full purchase price of qualifying equipment and software purchased during the tax year, rather than depreciating it over time. The deduction limit and phase-out threshold are updated by the IRS each year.</p>
+                            <ul>
+                                <li><strong>Best fit:</strong> Businesses purchasing equipment, vehicles, or software</li>
+                                <li><strong>Potential savings:</strong> Up to $1,160,000 immediate deduction</li>
+                                <li><strong>Complexity:</strong> Beginner, usually manageable with careful documentation</li>
+                            </ul>
+                            <a href="/tax-strategies/section-179">Read the Section 179 Deduction guide</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="persona-faq">
+            <div class="container-custom" style="max-width: 56rem;">
+                <h2>Common Questions for Airbnb & STR Hosts</h2>
+                <div class="persona-faq__grid">
+                    
+                    <div class="persona-faq__item">
+                        <h3 class="persona-faq__question">What are the best tax strategies for Airbnb hosts?</h3>
+                        <p class="persona-faq__answer">The Short-Term Rental Loophole allows Airbnb hosts to deduct rental losses against W-2 income. The Augusta Rule lets you rent your home to your business for up to 14 days tax-free. Cost segregation accelerates depreciation on furnished rental properties.</p>
+                    </div>
+
+                    <div class="persona-faq__item">
+                        <h3 class="persona-faq__question">Can Airbnb hosts qualify for Real Estate Professional Status?</h3>
+                        <p class="persona-faq__answer">Yes, if you spend more than 750 hours per year and over 50% of your working time in real property trades or businesses. This unlocks unlimited passive loss deductions against ordinary income.</p>
+                    </div>
                 </div>
             </div>
         </section>

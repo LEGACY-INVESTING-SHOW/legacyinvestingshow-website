@@ -50,6 +50,10 @@ function escapeXml(str) {
 function extractPostMetadata(filePath, fileName) {
   try {
     const content = fs.readFileSync(filePath, 'utf8');
+    if (/name=["']robots["'][^>]*content=["'][^"']*noindex/i.test(content)) {
+      return null;
+    }
+
     const stats = fs.statSync(filePath);
     const slug = fileName.replace(/\.html$/i, '');
 

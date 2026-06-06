@@ -34,9 +34,7 @@ const staticPages = [
   { url: '/about', file: 'about.html' },
   { url: '/success-stories', file: 'success-stories.html' },
   { url: '/blog/', file: 'blog/index.html' },
-  { url: '/gettaxreport', file: 'gettaxreport/index.html' },
   { url: '/tax-strategies-101', file: 'tax-strategies-101.html' },
-  { url: '/stacking-presentation/', file: 'stacking-presentation/index.html' },
 ];
 
 // Programmatic SEO directories to scan
@@ -44,6 +42,7 @@ const programmaticDirs = [
   'tax-strategies',
   'retirement',
   'compare',
+  'topics',
   'tools',
   'worksheets',
   'programmatic-pages',
@@ -323,7 +322,7 @@ function scanProgrammaticPages() {
 
     // Add index page
     const indexPath = path.join(dir, 'index.html');
-    if (fs.existsSync(indexPath)) {
+    if (fs.existsSync(indexPath) && isIndexableHtml(indexPath)) {
       const stats = fs.statSync(indexPath);
       pages.push({
         url: `/${dirName}/`,

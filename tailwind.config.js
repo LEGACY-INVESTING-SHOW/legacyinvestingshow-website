@@ -7,6 +7,7 @@ module.exports = {
     "./assets/js/**/*.js",
     "./tax-strategies/**/*.html",
     "./retirement/**/*.html",
+    "./topics/**/*.html",
     "./programmatic-pages/**/*.html"
   ],
   theme: {

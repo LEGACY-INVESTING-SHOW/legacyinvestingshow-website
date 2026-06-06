@@ -38,12 +38,91 @@ const ROOT_DIR = path.join(__dirname, '..');
 const CONTENT_DIR = path.join(ROOT_DIR, 'content', 'blog');
 const OUTPUT_DIR = path.join(ROOT_DIR, 'blog');
 const TEMPLATE_PATH = path.join(ROOT_DIR, 'templates', 'blog-post.html');
+const INDEXATION_POLICY_PATH = path.join(ROOT_DIR, 'data', 'indexation-policy.json');
+const SITE_DOMAIN = 'https://www.legacyinvestingshow.com';
 const GA_TRACKING_ID = process.env.GA_TRACKING_ID || 'G-2578PT1WSS';
 const GTM_CONTAINER_ID = process.env.GTM_CONTAINER_ID || 'GTM-KQ4R2LKP';
 const GOOGLE_SITE_VERIFICATIONS = [
     'Kec6RfGhFL-qG_8zKxCqt7yxjgy65WeDAftCBm90G2s',
     '92MoCnkdQOj_ey1lEafT5Mz-znCcCQ3UABZlI-JG_nM'
 ];
+
+function loadIndexationPolicy() {
+    if (!fs.existsSync(INDEXATION_POLICY_PATH)) {
+        return {
+            blogCategoryArchivesRobots: 'noindex, follow',
+            blogRedirects: [],
+            forceIndexBlogSlugs: [],
+            noindexBlogSlugPatterns: [],
+        };
+    }
+
+    try {
+        return JSON.parse(fs.readFileSync(INDEXATION_POLICY_PATH, 'utf8'));
+    } catch (error) {
+        console.error(`Error reading ${INDEXATION_POLICY_PATH}: ${error.message}`);
+        process.exit(1);
+    }
+}
+
+const INDEXATION_POLICY = loadIndexationPolicy();
+const FORCE_INDEX_BLOG_SLUGS = new Set(INDEXATION_POLICY.forceIndexBlogSlugs || []);
+const BLOG_REDIRECTS = new Map(
+    (INDEXATION_POLICY.blogRedirects || [])
+        .filter(entry => entry.source && entry.destination)
+        .map(entry => [entry.source.replace(/^\/blog\//, ''), entry])
+);
+const NOINDEX_BLOG_PATTERNS = (INDEXATION_POLICY.noindexBlogSlugPatterns || []).map(entry => ({
+    regex: new RegExp(entry.pattern),
+    reason: entry.reason || 'Matched indexation policy',
+}));
+
+function getBlogIndexation(post) {
+    const explicitRobots = post.frontmatter.robots || post.frontmatter.metaRobots;
+    const redirect = BLOG_REDIRECTS.get(post.slug);
+    const canonicalUrl = redirect
+        ? `${SITE_DOMAIN}${redirect.destination}`
+        : `${SITE_DOMAIN}/blog/${post.slug}`;
+
+    if (redirect) {
+        return {
+            robots: 'noindex, follow',
+            canonicalUrl,
+            reason: redirect.reason || 'Redirected duplicate',
+        };
+    }
+
+    if (explicitRobots) {
+        return {
+            robots: explicitRobots,
+            canonicalUrl,
+            reason: 'Frontmatter robots override',
+        };
+    }
+
+    if (FORCE_INDEX_BLOG_SLUGS.has(post.slug)) {
+        return {
+            robots: 'index, follow',
+            canonicalUrl,
+            reason: 'Force-indexed in indexation policy',
+        };
+    }
+
+    const matchedPattern = NOINDEX_BLOG_PATTERNS.find(entry => entry.regex.test(post.slug));
+    if (matchedPattern) {
+        return {
+            robots: 'noindex, follow',
+            canonicalUrl,
+            reason: matchedPattern.reason,
+        };
+    }
+
+    return {
+        robots: 'index, follow',
+        canonicalUrl,
+        reason: 'Default indexable blog URL',
+    };
+}
 
 /**
  * Calculate read time based on word count
@@ -365,7 +444,6 @@ function applyTemplate(template, post, allPosts = []) {
     // Set default values for optional fields
     const rawImage = post.frontmatter.image || '/assets/images/og-blog.jpg';
     // For local images, prepend domain for OG/twitter; for external URLs, use as-is
-    const SITE_DOMAIN = 'https://www.legacyinvestingshow.com';
     const ogImage = rawImage.startsWith('http') 
         ? rawImage 
         : SITE_DOMAIN + rawImage;
@@ -398,6 +476,7 @@ function applyTemplate(template, post, allPosts = []) {
     // Generate FAQ HTML and schema from frontmatter
     const faqHtml = generateFAQHTML(post.frontmatter.faq);
     const faqSchemaHtml = generateFAQSchema(post.frontmatter.faq);
+    const indexation = getBlogIndexation(post);
     const sourceBlockHtml = renderSourceBlock({
         title: post.frontmatter.title,
         slug: post.slug,
@@ -425,6 +504,8 @@ function applyTemplate(template, post, allPosts = []) {
         .replace(/\{\{imageWebp\}\}/g, imageWebp)
         .replace(/\{\{readTime\}\}/g, readTime)
         .replace(/\{\{slug\}\}/g, post.slug)
+        .replace(/\{\{robots\}\}/g, indexation.robots)
+        .replace(/\{\{canonicalUrl\}\}/g, indexation.canonicalUrl)
         .replace(/\{\{wordCount\}\}/g, wordCount)
         .replace(/\{\{keywords\}\}/g, keywords)
         .replace(/\{\{relatedPosts\}\}/g, relatedPostsHtml)
@@ -443,14 +524,15 @@ function generateRelatedPosts(currentPost, allPosts, limit = 3) {
     const relatedPosts = allPosts
         .filter(post =>
             post.slug !== currentPost.slug &&
-            post.frontmatter.category === currentPost.frontmatter.category
+            post.frontmatter.category === currentPost.frontmatter.category &&
+            isIndexableBlogPost(post)
         )
         .slice(0, limit);
 
     if (relatedPosts.length === 0) {
         // Fallback to any other posts if no category match
         const fallbackPosts = allPosts
-            .filter(post => post.slug !== currentPost.slug)
+            .filter(post => post.slug !== currentPost.slug && isIndexableBlogPost(post))
             .slice(0, limit);
 
         if (fallbackPosts.length === 0) return '';
@@ -524,12 +606,16 @@ function normalizeCategoryForArchives(category) {
     return category || 'Investing';
 }
 
+function isIndexableBlogPost(post) {
+    return !/noindex/i.test(getBlogIndexation(post).robots);
+}
+
 /**
  * Generate the blog index page
  */
 function generateBlogIndex(posts) {
     // Sort posts by date (newest first)
-    const sortedPosts = posts.sort((a, b) => {
+    const sortedPosts = posts.filter(isIndexableBlogPost).sort((a, b) => {
         return new Date(b.frontmatter.date) - new Date(a.frontmatter.date);
     });
 
@@ -796,7 +882,7 @@ function generateBlogIndex(posts) {
  * Generate crawlable category archive pages so category hubs exist without JS.
  */
 function generateCategoryArchives(posts) {
-    const sortedPosts = posts.sort((a, b) => {
+    const sortedPosts = posts.filter(isIndexableBlogPost).sort((a, b) => {
         return new Date(b.frontmatter.date) - new Date(a.frontmatter.date);
     });
     const archiveDir = path.join(OUTPUT_DIR, 'category');
@@ -1013,12 +1099,13 @@ function build() {
         }
     }
 
-    // Generate blog index with all posts
+    // Generate blog index and category archives with indexable posts.
     try {
         const indexHTML = generateBlogIndex(markdownPosts);
         const indexPath = path.join(OUTPUT_DIR, 'index.html');
         fs.writeFileSync(indexPath, indexHTML);
-        console.log(`\nBuilt: blog/index.html (${markdownPosts.length} posts)`);
+        const indexablePostCount = markdownPosts.filter(isIndexableBlogPost).length;
+        console.log(`\nBuilt: blog/index.html (${indexablePostCount} indexable posts)`);
         const categoryCount = generateCategoryArchives(markdownPosts);
         console.log(`Built: ${categoryCount} blog category archive(s)`);
     } catch (error) {
@@ -1033,7 +1120,7 @@ function build() {
     if (errorCount > 0) {
         console.log(`Errors: ${errorCount}`);
     }
-    console.log(`Total posts in index: ${markdownPosts.length}`);
+    console.log(`Total posts in index: ${markdownPosts.filter(isIndexableBlogPost).length}`);
     console.log('-------------------\n');
 }
 

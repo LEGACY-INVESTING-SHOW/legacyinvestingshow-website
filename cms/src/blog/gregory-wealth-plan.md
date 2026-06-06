@@ -28,7 +28,7 @@ tags:
   - multi-entity structure
   - business tax optimization
   - owner compensation
-image: /Users/deveshdhardubey/Downloads/Legacy Investing Show/Website/assets/images/blog/wealth-plan-gregory.jpg
+image: /assets/images/og-blog.jpg
 imageAlt: "Gregory's Personalized Wealth Plan Strategy - Legacy Investing Show"
 imageWidth: 1200
 imageHeight: 630

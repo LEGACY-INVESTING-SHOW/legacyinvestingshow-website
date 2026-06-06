@@ -28,7 +28,7 @@ tags:
   - catch up contributions
   - tax strategy refinement
   - financial independence
-image: /Users/deveshdhardubey/Downloads/Legacy Investing Show/Website/assets/images/blog/wealth-plan-dan.jpg
+image: /assets/images/og-blog.jpg
 imageAlt: "Dan's Personalized Wealth Plan Strategy - Legacy Investing Show"
 imageWidth: 1200
 imageHeight: 630

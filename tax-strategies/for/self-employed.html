@@ -142,6 +142,81 @@
         .strategies-section {
             padding: 4rem 0;
         }
+        .persona-guide {
+            padding: 0 0 4rem;
+        }
+        .persona-guide__intro {
+            max-width: 48rem;
+            margin-bottom: 2rem;
+        }
+        .persona-guide__intro h2,
+        .persona-faq h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 1rem;
+        }
+        .persona-guide__intro p,
+        .persona-guide__strategy p,
+        .persona-faq__answer {
+            color: #4b5563;
+            line-height: 1.7;
+        }
+        .persona-guide__list {
+            display: grid;
+            gap: 1rem;
+        }
+        .persona-guide__strategy {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 1rem;
+            padding: 1.25rem 0;
+            border-top: 1px solid #e5e7eb;
+        }
+        .persona-guide__number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 9999px;
+            background: #ecfdf5;
+            color: #047857;
+            font-weight: 700;
+            font-size: 0.875rem;
+        }
+        .persona-guide__strategy h3,
+        .persona-faq__question {
+            color: #111827;
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .persona-guide__strategy ul {
+            margin: 1rem 0;
+            padding-left: 1.25rem;
+            color: #374151;
+            line-height: 1.6;
+        }
+        .persona-guide__strategy a {
+            color: #047857;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .persona-guide__strategy a:hover {
+            text-decoration: underline;
+        }
+        .persona-faq {
+            padding: 0 0 4rem;
+        }
+        .persona-faq__grid {
+            display: grid;
+            gap: 1rem;
+        }
+        .persona-faq__item {
+            padding: 1.25rem 0;
+            border-top: 1px solid #e5e7eb;
+        }
         .section-title {
             font-size: 1.5rem;
             font-weight: 700;
@@ -374,6 +449,79 @@
                             <span class="strategy-card__savings-value">10-15% of business income</span>
                         </div>
                     </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="persona-guide">
+            <div class="container-custom">
+                
+                <div class="persona-guide__intro">
+                    <h2>How Self-Employed & Freelancers Should Prioritize Tax Planning</h2>
+                    <p>Maximize deductions and retirement savings for independent workers. The main mistake is treating every tax strategy like it has the same timing, paperwork, and risk profile. Start with the moves that match your income source, ownership structure, and ability to document the activity before you chase more advanced deductions.</p>
+                    <p>Use the recommendations below as a planning map. Some strategies can be implemented during the year, some need entity or account setup before money moves, and others only work when the documentation is built before the deduction is claimed.</p>
+                </div>
+                <div class="persona-guide__list">
+                    
+                    <article class="persona-guide__strategy">
+                        <div class="persona-guide__number">1</div>
+                        <div>
+                            <h3>Section 179 Deduction</h3>
+                            <p>Section 179 allows businesses to deduct the full purchase price of qualifying equipment and software purchased during the tax year, rather than depreciating it over time. The deduction limit and phase-out threshold are updated by the IRS each year.</p>
+                            <ul>
+                                <li><strong>Best fit:</strong> Businesses purchasing equipment, vehicles, or software</li>
+                                <li><strong>Potential savings:</strong> Up to $1,160,000 immediate deduction</li>
+                                <li><strong>Complexity:</strong> Beginner, usually manageable with careful documentation</li>
+                            </ul>
+                            <a href="/tax-strategies/section-179">Read the Section 179 Deduction guide</a>
+                        </div>
+                    </article>
+
+                    <article class="persona-guide__strategy">
+                        <div class="persona-guide__number">2</div>
+                        <div>
+                            <h3>Solo 401(k)</h3>
+                            <p>A Solo 401(k), also known as an Individual 401(k), is a retirement plan for self-employed individuals with no full-time employees. It allows significantly higher contribution limits than a traditional IRA, plus the ability to take loans from your account and invest in alternative assets.</p>
+                            <ul>
+                                <li><strong>Best fit:</strong> Self-employed individuals with high income</li>
+                                <li><strong>Potential savings:</strong> High annual contribution ceiling with catch-up options</li>
+                                <li><strong>Complexity:</strong> Intermediate, usually manageable with careful documentation</li>
+                            </ul>
+                            <a href="/tax-strategies/solo-401k">Read the Solo 401(k) guide</a>
+                        </div>
+                    </article>
+
+                    <article class="persona-guide__strategy">
+                        <div class="persona-guide__number">3</div>
+                        <div>
+                            <h3>S-Corp Tax Strategy</h3>
+                            <p>An S-Corporation election allows business owners to split their income between a reasonable salary (subject to payroll taxes) and distributions (not subject to self-employment tax). This can result in significant savings on the 15.3% self-employment tax.</p>
+                            <ul>
+                                <li><strong>Best fit:</strong> Self-employed individuals earning $50K+ in profit</li>
+                                <li><strong>Potential savings:</strong> 10-15% of business income</li>
+                                <li><strong>Complexity:</strong> Intermediate, professional guidance recommended</li>
+                            </ul>
+                            <a href="/tax-strategies/s-corp-strategy">Read the S-Corp Tax Strategy guide</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="persona-faq">
+            <div class="container-custom" style="max-width: 56rem;">
+                <h2>Common Questions for Self-Employed & Freelancers</h2>
+                <div class="persona-faq__grid">
+                    
+                    <div class="persona-faq__item">
+                        <h3 class="persona-faq__question">What retirement accounts are available for the self-employed?</h3>
+                        <p class="persona-faq__answer">Solo 401(k)s and SEP IRAs both offer high annual contribution ceilings that are updated by the IRS. Check the current-year limits before you implement the strategy.</p>
+                    </div>
+
+                    <div class="persona-faq__item">
+                        <h3 class="persona-faq__question">Can self-employed individuals deduct health insurance premiums?</h3>
+                        <p class="persona-faq__answer">Yes, self-employed health insurance premiums are 100% deductible as an adjustment to income. Health Savings Accounts (HSAs) offer additional triple tax advantages.</p>
+                    </div>
                 </div>
             </div>
         </section>

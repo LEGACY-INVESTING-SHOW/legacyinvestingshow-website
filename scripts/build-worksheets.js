@@ -873,6 +873,9 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
 function renderIndex(worksheets) {
   const canonical = 'https://www.legacyinvestingshow.com/worksheets';
   const isoDate = new Date().toISOString().split('T')[0];
+  const worksheetGuide = worksheets
+    .map((worksheet) => `<li><strong>${esc(worksheet.title)}:</strong> ${esc(worksheet.description)}</li>`)
+    .join('\n');
 
   const cards = worksheets
     .map((worksheet) => `<article class="library-card">
@@ -992,6 +995,28 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
         line-height: 1.6;
       }
       .section { padding: 3.25rem 0; }
+      .hub-copy {
+        max-width: 56rem;
+        margin: 0 auto;
+        color: #374151;
+        line-height: 1.75;
+      }
+      .hub-copy h2 {
+        color: #111827;
+        font-size: 1.6rem;
+        font-weight: 800;
+        margin-bottom: 0.85rem;
+      }
+      .hub-copy p {
+        margin-bottom: 1rem;
+      }
+      .hub-copy ul {
+        margin: 1rem 0 0;
+        padding-left: 1.25rem;
+      }
+      .hub-copy li {
+        margin-bottom: 0.75rem;
+      }
       .grid {
         display: grid;
         gap: 1.2rem;
@@ -1112,6 +1137,19 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
                 <span>Worksheet pages add high-intent search surface around the same topics as the tools and comparison pages.</span>
               </div>
             </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="padding-bottom: 0;">
+        <div class="container-custom">
+          <div class="hub-copy">
+            <h2>Use The Worksheets Before The Strategy Gets Expensive</h2>
+            <p>The best tax and wealth decisions usually fail in the handoff: the idea sounds good, but the facts, documents, advisor questions, and timing are scattered. This worksheet library is built for that middle step between reading an article and asking a CPA, attorney, or planner to review the move.</p>
+            <p>Each worksheet is fillable in the browser, can be saved locally on the device, and can be exported or printed before an advisor call. Use the pages here to capture the numbers, assumptions, documents, and open questions that determine whether a strategy is worth pursuing.</p>
+            <ul>
+              ${worksheetGuide}
+            </ul>
           </div>
         </div>
       </section>

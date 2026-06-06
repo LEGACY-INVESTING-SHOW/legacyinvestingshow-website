@@ -11,14 +11,14 @@
     <meta name="description" content="{{description}}">
     <meta name="keywords" content="{{category}}, wealth building, investing, financial freedom">
     <meta name="author" content="{{author}}">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="{{robots}}">
     <meta name="google-site-verification" content="Kec6RfGhFL-qG_8zKxCqt7yxjgy65WeDAftCBm90G2s">
     <meta name="google-site-verification" content="92MoCnkdQOj_ey1lEafT5Mz-znCcCQ3UABZlI-JG_nM">
-    <link rel="canonical" href="https://www.legacyinvestingshow.com/blog/{{slug}}">
+    <link rel="canonical" href="{{canonicalUrl}}">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://www.legacyinvestingshow.com/blog/{{slug}}">
+    <meta property="og:url" content="{{canonicalUrl}}">
     <meta property="og:title" content="{{title}} | Legacy Investing Show">
     <meta property="og:description" content="{{description}}">
     <meta property="og:image" content="{{ogImage}}">
@@ -75,7 +75,7 @@
                 "@type": "ListItem",
                 "position": 3,
                 "name": "{{title}}",
-                "item": "https://www.legacyinvestingshow.com/blog/{{slug}}"
+                "item": "{{canonicalUrl}}"
             }
         ]
     }
@@ -135,7 +135,7 @@
         "dateModified": "{{modifiedDate}}",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://www.legacyinvestingshow.com/blog/{{slug}}"
+            "@id": "{{canonicalUrl}}"
         },
         "articleSection": "{{category}}",
         "wordCount": "{{wordCount}}",

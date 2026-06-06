@@ -28,7 +28,7 @@ tags:
   - post exit
   - wealth management
   - entrepreneur strategy
-image: /Users/deveshdhardubey/Downloads/Legacy Investing Show/Website/assets/images/blog/wealth-plan-mark.jpg
+image: /assets/images/og-blog.jpg
 imageAlt: "Mark's Personalized Wealth Plan Strategy - Legacy Investing Show"
 imageWidth: 1200
 imageHeight: 630

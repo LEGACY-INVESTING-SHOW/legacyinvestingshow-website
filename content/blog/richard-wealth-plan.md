@@ -28,7 +28,7 @@ tags:
   - trust planning
   - inheritance strategy
   - wealth protection
-image: /Users/deveshdhardubey/Downloads/Legacy Investing Show/Website/assets/images/blog/wealth-plan-richard.jpg
+image: /assets/images/og-blog.jpg
 imageAlt: "Richard's Personalized Wealth Plan Strategy - Legacy Investing Show"
 imageWidth: 1200
 imageHeight: 630

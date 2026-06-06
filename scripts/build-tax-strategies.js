@@ -730,7 +730,7 @@ function generatePersonaCollectionSchema(persona) {
 /**
  * Generate FAQ schema for persona pages
  */
-function generatePersonaFaqSchema(persona) {
+function getPersonaFaqs(persona) {
     const faqs = {
         'airbnb-hosts': [
             {
@@ -794,7 +794,14 @@ function generatePersonaFaqSchema(persona) {
         ]
     };
     
-    const personaFaqs = faqs[persona.slug] || faqs['high-income-earners'];
+    return faqs[persona.slug] || faqs['high-income-earners'];
+}
+
+/**
+ * Generate FAQ schema for persona pages
+ */
+function generatePersonaFaqSchema(persona) {
+    const personaFaqs = getPersonaFaqs(persona);
     
     return {
         "@context": "https://schema.org",
@@ -808,6 +815,47 @@ function generatePersonaFaqSchema(persona) {
             }
         }))
     };
+}
+
+/**
+ * Generate visible FAQ markup for persona pages.
+ */
+function generatePersonaFaqHtml(persona) {
+    return getPersonaFaqs(persona).map((faq, index) => `
+                    <div class="persona-faq__item">
+                        <h3 class="persona-faq__question">${faq.question}</h3>
+                        <p class="persona-faq__answer">${faq.answer}</p>
+                    </div>`).join('\n');
+}
+
+/**
+ * Generate deeper persona-specific strategy guidance.
+ */
+function generatePersonaGuidance(persona, relevantStrategies) {
+    const strategyDetails = relevantStrategies.map((strategy, index) => `
+                    <article class="persona-guide__strategy">
+                        <div class="persona-guide__number">${index + 1}</div>
+                        <div>
+                            <h3>${strategy.title}</h3>
+                            <p>${strategy.fullDescription}</p>
+                            <ul>
+                                <li><strong>Best fit:</strong> ${strategy.bestFor}</li>
+                                <li><strong>Potential savings:</strong> ${strategy.potentialSavings}</li>
+                                <li><strong>Complexity:</strong> ${strategy.complexity}${strategy.professionalRequired ? ', professional guidance recommended' : ', usually manageable with careful documentation'}</li>
+                            </ul>
+                            <a href="/tax-strategies/${strategy.slug}">Read the ${strategy.title} guide</a>
+                        </div>
+                    </article>`).join('\n');
+
+    return `
+                <div class="persona-guide__intro">
+                    <h2>How ${persona.title} Should Prioritize Tax Planning</h2>
+                    <p>${persona.description}. The main mistake is treating every tax strategy like it has the same timing, paperwork, and risk profile. Start with the moves that match your income source, ownership structure, and ability to document the activity before you chase more advanced deductions.</p>
+                    <p>Use the recommendations below as a planning map. Some strategies can be implemented during the year, some need entity or account setup before money moves, and others only work when the documentation is built before the deduction is claimed.</p>
+                </div>
+                <div class="persona-guide__list">
+                    ${strategyDetails}
+                </div>`;
 }
 
 /**
@@ -826,6 +874,9 @@ function generatePersonaPage(persona, strategies) {
                             <span class="strategy-card__savings-value">${s.potentialSavings}</span>
                         </div>
                     </a>`).join('\n');
+
+    const personaGuidance = generatePersonaGuidance(persona, relevantStrategies);
+    const personaFaqHtml = generatePersonaFaqHtml(persona);
 
     // Generate schema markup
     const breadcrumbSchema = generatePersonaBreadcrumbSchema(persona);
@@ -908,6 +959,81 @@ function generatePersonaPage(persona, strategies) {
         }
         .strategies-section {
             padding: 4rem 0;
+        }
+        .persona-guide {
+            padding: 0 0 4rem;
+        }
+        .persona-guide__intro {
+            max-width: 48rem;
+            margin-bottom: 2rem;
+        }
+        .persona-guide__intro h2,
+        .persona-faq h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 1rem;
+        }
+        .persona-guide__intro p,
+        .persona-guide__strategy p,
+        .persona-faq__answer {
+            color: #4b5563;
+            line-height: 1.7;
+        }
+        .persona-guide__list {
+            display: grid;
+            gap: 1rem;
+        }
+        .persona-guide__strategy {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 1rem;
+            padding: 1.25rem 0;
+            border-top: 1px solid #e5e7eb;
+        }
+        .persona-guide__number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 9999px;
+            background: #ecfdf5;
+            color: #047857;
+            font-weight: 700;
+            font-size: 0.875rem;
+        }
+        .persona-guide__strategy h3,
+        .persona-faq__question {
+            color: #111827;
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .persona-guide__strategy ul {
+            margin: 1rem 0;
+            padding-left: 1.25rem;
+            color: #374151;
+            line-height: 1.6;
+        }
+        .persona-guide__strategy a {
+            color: #047857;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .persona-guide__strategy a:hover {
+            text-decoration: underline;
+        }
+        .persona-faq {
+            padding: 0 0 4rem;
+        }
+        .persona-faq__grid {
+            display: grid;
+            gap: 1rem;
+        }
+        .persona-faq__item {
+            padding: 1.25rem 0;
+            border-top: 1px solid #e5e7eb;
         }
         .section-title {
             font-size: 1.5rem;
@@ -1093,6 +1219,21 @@ function generatePersonaPage(persona, strategies) {
                 <h2 class="section-title">Recommended Strategies for ${persona.title}</h2>
                 <div class="strategies-grid">
                     ${strategyCards}
+                </div>
+            </div>
+        </section>
+
+        <section class="persona-guide">
+            <div class="container-custom">
+                ${personaGuidance}
+            </div>
+        </section>
+
+        <section class="persona-faq">
+            <div class="container-custom" style="max-width: 56rem;">
+                <h2>Common Questions for ${persona.title}</h2>
+                <div class="persona-faq__grid">
+                    ${personaFaqHtml}
                 </div>
             </div>
         </section>

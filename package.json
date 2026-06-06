@@ -16,10 +16,13 @@
     "build:tax-strategies": "node scripts/build-tax-strategies.js",
     "build:programmatic": "node scripts/fix-programmatic-seo.js",
     "build:compare": "node scripts/build-compare-pages.js",
+    "build:topics": "node scripts/build-topic-hubs.js",
     "build:tools": "node scripts/build-tools.js",
     "build:worksheets": "node scripts/build-worksheets.js",
     "build:tracking": "node scripts/ensure-tracking-and-verification.js",
     "build:seo-titles": "node scripts/normalize-seo-titles.js",
+    "build:links": "node scripts/normalize-internal-redirect-links.js",
+    "build:indexation": "node scripts/apply-indexation-policy.js",
     "pipeline:legacy": "node scripts/pipeline/run-pipeline.js",
     "pipeline": "node scripts/pipeline/run-skill-pipeline.js",
     "cms:sync:blog": "./scripts/cms/sync-blog-content.sh",
@@ -28,7 +31,7 @@
     "cms:smoke": "./scripts/cms/smoke-check-eleventy.sh",
     "cms:publish:posts": "./scripts/cms/publish-eleventy-posts.sh",
     "cms:verify": "npm run cms:sync:blog && npm run cms:check:parity && npm run cms:build && npm run cms:smoke",
-    "build": "npm run build:css && npm run build:blog && npm run cms:verify && npm run cms:publish:posts && npm run build:tax-strategies && npm run build:programmatic && npm run build:compare && npm run build:tools && npm run build:worksheets && npm run build:tracking && npm run build:seo-titles && npm run build:sitemap && npm run build:rss",
+    "build": "npm run build:css && npm run build:blog && npm run cms:verify && npm run cms:publish:posts && npm run build:tax-strategies && npm run build:programmatic && npm run build:compare && npm run build:topics && npm run build:tools && npm run build:worksheets && npm run build:tracking && npm run build:seo-titles && npm run build:links && npm run build:indexation && npm run build:sitemap && npm run build:rss",
     "start": "npx serve ."
   },
   "dependencies": {

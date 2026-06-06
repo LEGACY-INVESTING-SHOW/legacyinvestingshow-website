@@ -1,0 +1,121 @@
+{
+  "description": "Controls which generated pages should be treated as indexable. The goal is to keep the public site useful while sending Google a smaller, stronger canonical URL set.",
+  "blogCategoryArchivesRobots": "noindex, follow",
+  "blogRedirects": [
+    {
+      "source": "/blog/micah-facebook-message-5k-month-houston",
+      "destination": "/blog/micah-facebook-message-airbnb",
+      "reason": "Near-duplicate success story; keep the fuller 2026 case-study URL as canonical."
+    }
+  ],
+  "forceIndexBlogSlugs": [
+    "4-percent-rule",
+    "401k-rollover-guide",
+    "457b-plan-guide",
+    "airbnb-arbitrage-mistakes-that-kill-profit",
+    "airbnb-furniture-budget-checklist",
+    "airbnb-guest-message-templates-that-reduce-friction",
+    "annuities-vs-bonds-comparison-2026",
+    "best-tax-deductions-for-high-income-earners",
+    "best-tax-deductions-for-self-employed",
+    "best-tax-deductions-for-small-business",
+    "capital-gains-tax-for-beginners",
+    "debt-consolidation-guide",
+    "debt-to-income-ratio",
+    "etf-vs-mutual-fund",
+    "fire-movement-guide",
+    "house-hacking-guide",
+    "hsa-strategy-for-beginners",
+    "llc-vs-s-corp",
+    "micah-facebook-message-airbnb",
+    "qbi-deduction-vs-itemized-deductions",
+    "reasonable-salary-s-corp",
+    "rental-property-investing",
+    "s-corp-election-break-even-guide",
+    "s-corp-election-deadline",
+    "s-corp-election-form",
+    "schedule-c-vs-s-corp-tax-guide",
+    "sequence-of-returns-risk",
+    "student-loan-payoff-negotiation",
+    "tax-deduction-for-beginners",
+    "tax-planning-for-beginners"
+  ],
+  "noindexBlogSlugPatterns": [
+    {
+      "pattern": "-(for-(agency-owners|consultants|ecommerce-founders|freelancers|real-estate-operators|service-businesses|small-business-owners|physicians|high-earners|high-income-families|pre-retirees|government-employees|married-couples|self-employed|self-employed-professionals|busy-professionals|late-starters|parents|families|new-graduates|w2-professionals|remote-workers|career-switchers|operators|hosts|side-hustlers|full-time-employees|individuals|retirees|cpas|accountants|financial-advisors|non-us-citizens|beginners|dummies))$",
+      "reason": "Persona modifier variants are useful for browsing but too thin/overlapping to submit broadly."
+    },
+    {
+      "pattern": "-(calculator|checklist|template|spreadsheet|software|search)$",
+      "reason": "Blog posts with tool/template modifiers compete with actual tools, worksheets, or pillar guides."
+    },
+    {
+      "pattern": "-tax-implications$",
+      "reason": "Tax-implications variants usually overlap with core strategy guides."
+    },
+    {
+      "pattern": "-vs-",
+      "reason": "Most blog comparison variants overlap with dedicated comparison pages or broader pillar pages."
+    },
+    {
+      "pattern": "-best-strategy$",
+      "reason": "Best-strategy variants are usually search modifiers of stronger canonical guides."
+    },
+    {
+      "pattern": "^best-tax-strategy-for-",
+      "reason": "Generic best-tax-strategy persona variants should consolidate into stronger tax planning hubs."
+    },
+    {
+      "pattern": "^best-tax-planning-software",
+      "reason": "Software roundup variants are not core first-party expertise for this site."
+    },
+    {
+      "pattern": "^tax-strategy-(best-strategy|calculator|case-study|checklist|for-|mistakes|software|step-by-step|tax-implications|vs-)",
+      "reason": "Generic tax-strategy modifiers overlap with the tax strategies hub and stronger specific guides."
+    },
+    {
+      "pattern": "^tax-planning-(best-strategy|certified-professional|for-|to-and-through|tools)",
+      "reason": "Generic tax-planning modifiers overlap with the tax strategies hub and stronger specific guides."
+    },
+    {
+      "pattern": "^estate-tax-planning-(best-strategy|calculator|checklist|for-|template|vs-)",
+      "reason": "Estate-tax modifier cluster should consolidate around one or two stronger guides."
+    },
+    {
+      "pattern": "^multi-state-llc-(best-strategy|calculator|checklist|for-|search|tax-implications|template|vs-)",
+      "reason": "Multi-state LLC modifier cluster is a classic cannibalization pattern."
+    },
+    {
+      "pattern": "^s-corp-election-(best-strategy|calculator|checklist|for-|tax-implications|template|vs-)",
+      "reason": "S-corp election modifier cluster should support a smaller canonical set."
+    },
+    {
+      "pattern": "^retirement-withdrawal-strategy-(calculator|checklist|for-|guardrails|software|spreadsheet|tax-implications|template|vs-)",
+      "reason": "Retirement withdrawal modifier cluster should consolidate around stronger planning guides."
+    },
+    {
+      "pattern": "^401k-strategy-(for-|tax-implications|vs-)",
+      "reason": "401k modifier variants overlap heavily with core retirement guides."
+    },
+    {
+      "pattern": "^student-loan-payoff-(calculator|for-|tax-implications|vs-)",
+      "reason": "Student-loan payoff modifier variants overlap heavily with the core payoff strategy pages."
+    },
+    {
+      "pattern": "^tax-loss-harvesting-(best-strategy|calculator|checklist|for-|template|vs-)",
+      "reason": "Tax-loss harvesting modifier variants should consolidate around fewer stronger guides."
+    },
+    {
+      "pattern": "^series-llc-(for-|tax-implications|vs-)",
+      "reason": "Series LLC persona/comparison variants overlap with the core series LLC page."
+    },
+    {
+      "pattern": "^asset-allocation-(for-|tax-implications)$",
+      "reason": "Asset allocation persona variants overlap with broader investing guides."
+    },
+    {
+      "pattern": "^airbnb-(taxes|pricing-strategy|occupancy-strategy)-(for-|tax-implications|vs-)",
+      "reason": "Airbnb taxes/pricing/occupancy modifiers should consolidate into stronger operational guides."
+    }
+  ]
+}

@@ -28,7 +28,7 @@ tags:
   - spousal strategies
   - family wealth building
   - joint planning
-image: /Users/deveshdhardubey/Downloads/Legacy Investing Show/Website/assets/images/blog/wealth-plan-kelsa.jpg
+image: /assets/images/og-blog.jpg
 imageAlt: "Kelsa's Personalized Wealth Plan Strategy - Legacy Investing Show"
 imageWidth: 1200
 imageHeight: 630
