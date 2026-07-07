@@ -21,8 +21,6 @@ const FOOTER_NAV_ITEMS = [
   { href: '/blog', label: 'Blog' },
 ];
 
-const CTA_LIBRARY = {};
-
 function esc(str = '') {
   return String(str)
     .replace(/&/g, '&amp;')
@@ -94,36 +92,6 @@ function renderAnalyticsBody({
   }
 
   return `<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=${esc(gtmContainerId)}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>`;
-}
-
-function renderPageCtaSection({
-  variant = 'tax_masterclass',
-  title,
-  text,
-  href,
-  label,
-  trackLocation = 'page_cta',
-} = {}) {
-  const resolved = CTA_LIBRARY[variant] || CTA_LIBRARY.tax_masterclass;
-  if (!resolved) {
-    return '';
-  }
-  const ctaTitle = title || resolved.title;
-  const ctaText = text || resolved.text;
-  const ctaHref = href || resolved.href;
-  const ctaLabel = label || resolved.label;
-
-  return `<div class="cta-card">
-                    <h2 class="cta-card__title">${esc(ctaTitle)}</h2>
-                    <p class="cta-card__text">${esc(ctaText)}</p>
-                    <a href="${esc(ctaHref)}" class="cta-card__button" data-track-event="cta_clicked" data-track-label="${esc(ctaLabel)}" data-track-location="${esc(trackLocation)}" data-track-destination="${esc(ctaHref)}">
-                        ${esc(ctaLabel)}
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-                    <p style="margin: 1.25rem 0 0; color: #9ca3af; font-size: 0.85rem; line-height: 1.6;">Educational content only. Results vary based on your facts. Always consult a qualified tax professional before making decisions.</p>
-                </div>`;
 }
 
 function buildReferenceSources({ title = '', slug = '', type = '' } = {}) {
@@ -280,14 +248,12 @@ function renderSourceBlock({
 }
 
 module.exports = {
-  CTA_LIBRARY,
   CURRENT_YEAR,
   DEFAULT_GA_TRACKING_ID,
   DEFAULT_GTM_CONTAINER_ID,
   renderAnalyticsBody,
   renderAnalyticsHead,
   renderFooterLinks,
-  renderPageCtaSection,
   renderPrimaryNavLinks,
   renderSourceBlock,
 };

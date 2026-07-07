@@ -400,11 +400,7 @@ Furnishing your first property is one of the biggest hurdles in Airbnb arbitrage
 
 But furnishing is just the beginning. The real question is: how do you actually find a property, negotiate the lease, price your listings, and start generating bookings?
 
-If you're serious about building a profitable Airbnb arbitrage business, the 3-Day Wealth Challenge is where you start. I'll walk you through the exact system my students use to find great properties, negotiate favorable leases, and hit $2,500+ in monthly revenue within their first 90 days.
-
-**[Join the 3-Day Wealth Challenge today →](/tax-strategies-101)**
-
-Inside, you'll get:
+Keep working from a complete operating plan before you sign your first lease. The strongest hosts are clear on four things:
 
 - My proven property acquisition system
 - The exact lease negotiation scripts that work

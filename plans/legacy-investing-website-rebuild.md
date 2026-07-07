@@ -740,12 +740,11 @@ function validatePost(frontmatter) {
 1. Hero - Value proposition + CTA
 2. Social Proof Stats - $20M+, 2k+ success stories
 3. About Preview - Short bio with "Read Full Story" link
-4. Challenge CTA - 3-Day Wealth Challenge promotion
-5. Case Studies Grid - 4 featured success stories
-6. Resources Section - Free tools promotion
-7. Testimonials Carousel - Sliding testimonials
-8. FAQ Accordion - 6 questions with schema
-9. Footer - Links + social proof numbers
+4. Case Studies Grid - Featured success stories
+5. Resources Section - Free tools promotion
+6. Testimonials Carousel - Sliding testimonials
+7. FAQ Accordion - 6 questions with schema
+8. Footer - Links + social proof numbers
 
 **Key SEO Elements:**
 - Title: "Build Wealth That Lasts Beyond A Paycheck | Legacy Investing Show"

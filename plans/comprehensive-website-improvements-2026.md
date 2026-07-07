@@ -449,7 +449,6 @@ const topicPages = [
 - First-generation immigrant success story
 
 ## Contact & Programs
-- Free 3-Day Challenge: https://www.managemoney101.com/challengeoptin
 - Free Tax Masterclass: https://www.managemoney101.com/2025workshop
 - Website: https://www.legacyinvestingshow.com
 ```

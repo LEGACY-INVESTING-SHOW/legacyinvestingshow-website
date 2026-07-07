@@ -152,15 +152,6 @@ Role:
 - primary CTA for tax/wealth-focused traffic
 - used on decision pages, tools, and strategy hubs
 
-### 3-Day Wealth Challenge
-URL:
-- https://www.joinlwb.com/intensive
-
-Role:
-- alternative-income / wealth-building challenge
-- includes Airbnb as one lane
-- secondary offer compared with the tax-first masterclass
-
 ## Representative Content
 
 ### Tax / High-Income / Wealth Content

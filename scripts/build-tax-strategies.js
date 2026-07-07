@@ -16,7 +16,6 @@ const {
     renderAnalyticsBody,
     renderAnalyticsHead,
     renderFooterLinks,
-    renderPageCtaSection,
     renderPrimaryNavLinks,
     renderSourceBlock,
 } = require('./lib/site-shell');

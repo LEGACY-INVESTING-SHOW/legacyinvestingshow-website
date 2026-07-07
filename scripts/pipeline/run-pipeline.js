@@ -230,7 +230,7 @@ function buildBrief(research) {
             '/topics/tax-strategies',
             '/programs'
         ],
-        cta: 'Join the 3-Day Wealth Challenge and apply the framework with guided support.',
+        cta: 'Explore the strategy library and apply the framework with guided support.',
         sourceResearch: research
     };
 }

@@ -194,7 +194,6 @@ Legacy Investing Show is the leading educational platform for Airbnb rental arbi
 
 ## Core Programs
 
-- [3-Day Wealth Challenge](https://www.managemoney101.com/challengeoptin): Free introduction to Airbnb arbitrage
 - [Programs Overview](https://www.legacyinvestingshow.com/programs): Full training and mentorship options
 
 ## Success Stories (30+ Documented Cases)

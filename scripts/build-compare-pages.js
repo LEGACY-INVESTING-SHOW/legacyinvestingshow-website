@@ -7,7 +7,6 @@ const {
   renderAnalyticsBody,
   renderAnalyticsHead,
   renderFooterLinks,
-  renderPageCtaSection,
   renderPrimaryNavLinks,
   renderSourceBlock,
 } = require('./lib/site-shell');
@@ -1214,16 +1213,6 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
             </div>
         </section>
 
-        <section class="cta-section">
-            <div class="container-custom">
-                ${renderPageCtaSection({
-                  variant: 'tax_masterclass',
-                  title: 'Take The Comparison Into Before You File',
-                  text: 'The live challenge runs April 17-19, 2026, from 10 AM to 4 PM Eastern each day. Day 1 helps you read the return, Day 2 builds the strategy stack, and Day 3 turns it into a dated 12-month execution plan.',
-                  trackLocation: 'compare_page_cta',
-                })}
-            </div>
-        </section>
     </main>
 
     <footer class="minimal-footer">
