@@ -3521,16 +3521,6 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
             </div>
         </section>
 
-        <section class="cta-section">
-            <div class="container-custom">
-                ${renderPageCtaSection({
-                  variant: 'tax_masterclass',
-                  title: 'Use The Tool, Then Build The Full Plan Live',
-                  text: 'Before You File runs live on Zoom from Friday, April 17, 2026 through Sunday, April 19, 2026, from 10 AM to 4 PM Eastern each day. Preston walks through how to read your 2025 return, choose the right tax and wealth moves, and leave with a dated 12-month 2026 plan.',
-                  trackLocation: 'tool_page_cta',
-                })}
-            </div>
-        </section>
     </main>
 
     <footer class="minimal-footer">

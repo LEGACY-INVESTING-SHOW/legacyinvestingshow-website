@@ -21,20 +21,7 @@ const FOOTER_NAV_ITEMS = [
   { href: '/blog', label: 'Blog' },
 ];
 
-const CTA_LIBRARY = {
-  tax_masterclass: {
-    title: 'Join Before You File | April 17-19, 2026',
-    text: 'Live on Zoom from 10 AM to 4 PM Eastern each day. Day 1 shows you how to read your 2025 return and find the leaks, Day 2 builds the tax and wealth strategy, and Day 3 turns it into a dated 12-month 2026 plan.',
-    href: 'https://go.managemoney101.com/challenge2',
-    label: 'Get Your Seat Before You File',
-  },
-  wealth_challenge: {
-    title: 'Build The Bigger Wealth System',
-    text: 'Use the free challenge to connect tax, debt, income, and asset-building moves into one repeatable plan.',
-    href: 'https://www.joinlwb.com/intensive',
-    label: 'Join the 3-Day Wealth Challenge',
-  },
-};
+const CTA_LIBRARY = {};
 
 function esc(str = '') {
   return String(str)
@@ -118,6 +105,9 @@ function renderPageCtaSection({
   trackLocation = 'page_cta',
 } = {}) {
   const resolved = CTA_LIBRARY[variant] || CTA_LIBRARY.tax_masterclass;
+  if (!resolved) {
+    return '';
+  }
   const ctaTitle = title || resolved.title;
   const ctaText = text || resolved.text;
   const ctaHref = href || resolved.href;
