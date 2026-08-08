@@ -617,6 +617,8 @@ CoCR = ($37,200 / $12,000) x 100 = 310%
 
 (Note: The 253% figure in the case study used more conservative annual projections accounting for seasonality.)
 
+Run your own deal through the [Airbnb arbitrage ROI calculator](/tools/airbnb-arbitrage-roi) to see the projected cash-on-cash return before you sign a lease.
+
 ### Minimum CoCR Targets
 
 | CoCR Range | Assessment | Recommendation |

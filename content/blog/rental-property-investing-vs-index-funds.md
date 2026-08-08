@@ -320,7 +320,7 @@ The SEC emphasizes diversification and rebalancing because concentration mistake
 2. Stabilize liquidity.
    Build emergency reserves first. Keep separate property reserves if pursuing real estate.
 3. Stress test your debt capacity.
-   Model mortgage payment at current rates plus a small buffer, and test cash flow with vacancy and repair shocks.
+   Model mortgage payment at current rates plus a small buffer, and test cash flow with vacancy and repair shocks. Check how extra principal payments shorten the loan with the [mortgage extra payment calculator](/tools/mortgage-extra-payment).
 4. Build an investment policy one-pager.
    Include max leverage, minimum cash-on-cash target, exit rules, and rebalancing rules.
 5. Start automated index investing immediately.

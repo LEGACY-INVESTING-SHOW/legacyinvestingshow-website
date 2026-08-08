@@ -159,6 +159,8 @@ If you need the money to cover basic expenses, claiming earlier may be the pract
 ### Portfolio bridge assets
 Households with taxable savings, a governmental 457(b), or other bridge assets can afford more flexibility in claim timing.
 
+The [retirement income runway calculator](/tools/retirement-income-runway) can show how long bridge assets cover the gap while you delay claiming.
+
 ### Tax planning
 The years before Social Security starts can create room for Roth conversions or intentional withdrawals from pre-tax accounts. Claiming early can shrink that opportunity.
 

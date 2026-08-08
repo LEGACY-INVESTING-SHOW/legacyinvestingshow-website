@@ -181,7 +181,7 @@ The key nuance highlighted in the video: overtime treatment applies to the premi
 
 - Workers in qualifying compensation structures.
 - Employers with overtime and tip-exposed payrolls.
-- Households near phaseout thresholds where withholding precision matters.
+- Households near phaseout thresholds where withholding precision matters — the [gross-to-net pay estimator](/tools/gross-to-net-pay-estimate) shows how rule changes move take-home pay.
 
 These changes may influence payroll settings, estimated tax planning, and communication between owners and staff.
 

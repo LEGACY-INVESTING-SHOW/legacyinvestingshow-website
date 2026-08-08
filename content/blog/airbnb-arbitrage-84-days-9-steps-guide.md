@@ -315,6 +315,8 @@ Airbnb arbitrage won because it's scalable without needing massive initial inves
 
 These numbers validated everything. The first month, this property generated $15,000 in revenue with $9,000 in clear profit. This is the power of choosing the right property in the right market with proper analysis.
 
+You can model your own property with the [rental property cash flow calculator](/tools/rental-property-cash-flow) to see projected monthly profit before signing a lease.
+
 ---
 
 ## Step 1: Business Setup (Days 1-7)
@@ -478,6 +480,8 @@ Here's how to run the numbers for any property:
 **Step 3**: Calculate monthly revenue: (Rate x 30 x Occupancy)
 **Step 4**: Compare to rent: (Revenue / Rent = Multiple)
 **Step 5**: If multiple > 2.25, proceed to property hunt
+
+You can also run any deal through the [Airbnb arbitrage ROI calculator](/tools/airbnb-arbitrage-roi) to see the projected return before you commit.
 
 ### Action Items for Step 3
 

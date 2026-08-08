@@ -98,6 +98,8 @@ You need per-unit P&L tracking:
 
 Without this, you can't make intelligent scaling decisions. You might think Unit #3 is your best performer when it's actually Unit #1 subsidizing it through shared overhead you haven't properly allocated.
 
+When you evaluate a new unit, model its projected cash flow with the [rental property cash flow calculator](/tools/rental-property-cash-flow) before committing capital.
+
 **5. Maintenance and Emergency Protocols**
 
 What happens when a guest texts at 11 PM that the AC is broken and it's 94 degrees inside?
@@ -194,6 +196,8 @@ Here's where most scaling efforts crash: People add units faster than their bank
 I see it constantly. A host makes $2,000/month profit on one unit. They think, "I can afford two more!" They sign two more leases. Then reality hits: furnishing costs, initial marketing, the slow ramp-up to occupancy, and the inevitable surprise expenses (new AC unit, pest control, guest refund for a bad stay).
 
 Now they're cash-flow negative on a portfolio they can't afford to operate.
+
+Run each new unit through the [STR purchase analysis calculator](/tools/str-purchase-analysis) before you sign, so the cash-flow math is done in advance instead of after the lease.
 
 **My framework for scaling capital:**
 

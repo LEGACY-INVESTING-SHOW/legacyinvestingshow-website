@@ -207,7 +207,7 @@ Quick rule:
 | High stress from too many due dates | 5+ debts with scattered due dates | Cash flow budgeting first | Simplify payments, then accelerate |
 | Windfall expected in 3 to 6 months | Bonus or refund likely | Hybrid | Stabilize now, then deploy lump sum avalanche |
 
-If you are unsure, run both projections for 12 months and compare not only projected interest, but also probability of plan failure.
+If you are unsure, run both projections for 12 months and compare not only projected interest, but also probability of plan failure. You can also compare both payoff orders side by side with the [debt snowball vs avalanche calculator](/tools/debt-snowball-vs-avalanche).
 
 ## Fully Worked Numeric Example With Explicit Assumptions and Tradeoffs
 

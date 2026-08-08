@@ -36,6 +36,11 @@ Secondary focus area:
 - [Tax Strategies](https://www.legacyinvestingshow.com/tax-strategies/): primary hub for tax planning, deductions, entities, and real-estate tax moves
 - [Compare Guides](https://www.legacyinvestingshow.com/compare/): decision pages for edge-case money choices
 - [Free Tools](https://www.legacyinvestingshow.com/tools/): 70+ free personal-finance calculators for budgets, loans, mortgages, tax estimates, and insurance
+- [Personal Money Calculators](https://www.legacyinvestingshow.com/tools/categories/money): budgets, savings goals, debt payoff, and net worth
+- [Banking & Borrowing Calculators](https://www.legacyinvestingshow.com/tools/categories/banking-borrowing): loans, APY, amortization, and credit costs
+- [Taxes & Payroll Calculators](https://www.legacyinvestingshow.com/tools/categories/taxes-payroll): take-home pay, withholding, and tax reserves
+- [Housing & Moving Calculators](https://www.legacyinvestingshow.com/tools/categories/housing-moving): rent, mortgages, equity, and move-in costs
+- [Insurance Calculators](https://www.legacyinvestingshow.com/tools/categories/insurance-protection): renters, auto, pet, health, and income protection
 - [Worksheets](https://www.legacyinvestingshow.com/worksheets/): printable and fillable planning worksheets
 - [Blog](https://www.legacyinvestingshow.com/blog/): strategy articles, case studies, and transcript-based resource posts
 - [Success Stories](https://www.legacyinvestingshow.com/success-stories): curated student results and execution stories
@@ -51,6 +56,15 @@ Secondary focus area:
 - [How to Build $10 Million in 10 Years](https://www.legacyinvestingshow.com/blog/build-10-million-10-years)
 - [Airbnb Arbitrage ROI Calculator](https://www.legacyinvestingshow.com/tools/airbnb-arbitrage-roi)
 - [Monthly Budget Planner](https://www.legacyinvestingshow.com/tools/monthly-budget-planner)
+- [Renters Insurance Cost Calculator](https://www.legacyinvestingshow.com/tools/renters-insurance-cost)
+- [Mortgage Payment Calculator](https://www.legacyinvestingshow.com/tools/mortgage-payment)
+- [Capital Gains Tax Calculator](https://www.legacyinvestingshow.com/tools/capital-gains-tax-estimate)
+- [Take-Home Pay Calculator](https://www.legacyinvestingshow.com/tools/gross-to-net-pay-estimate)
+- [Emergency Fund Calculator](https://www.legacyinvestingshow.com/tools/emergency-fund-target)
+- [Retirement Income Runway Calculator](https://www.legacyinvestingshow.com/tools/retirement-income-runway)
+- [How Much Is Renters Insurance?](https://www.legacyinvestingshow.com/blog/how-much-is-renters-insurance-cost-guide)
+- [How Much Does Auto Insurance Cost?](https://www.legacyinvestingshow.com/blog/how-much-does-auto-insurance-cost)
+- [Is Pet Insurance Worth It?](https://www.legacyinvestingshow.com/blog/is-pet-insurance-worth-it-cost-comparison)
 - [Augusta Rule vs Home Office Deduction for S-Corp Owners](https://www.legacyinvestingshow.com/compare/augusta-rule-vs-home-office-deduction-s-corp)
 
 ## Positioning Notes

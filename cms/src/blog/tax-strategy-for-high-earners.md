@@ -207,7 +207,7 @@ Create five income buckets:
 - W-2 wages and bonuses.
 - Business net income and payroll allocations.
 - Passive/business income from investments and rentals.
-- Capital gains and ordinary income crossover items.
+- Capital gains and ordinary income crossover items (estimate any planned sale with the [capital gains tax estimator](/tools/capital-gains-tax-estimate)).
 - Timing-sensitive events (RSUs, stock vesting, distributions, property sales).
 
 For each bucket, identify:
@@ -227,7 +227,7 @@ A common practical rule:
 Tax strategy is only real if it executes. Build a compliance floor first:
 - Estimate quarterly tax requirements.
 - Set a tax reserve account split into federal and state.
-- Verify payroll withholding aligns with current-year projections.
+- Verify payroll withholding aligns with current-year projections (model take-home pay with the [gross-to-net pay estimator](/tools/gross-to-net-pay-estimate)).
 - Ensure bookkeeping and mileage/activity logs are clean.
 
 If your estimate shows likely underpayment, do not delay. Correct with estimated payments first, then optimize deductions. Underpayment penalties can erase the very savings you thought you had.

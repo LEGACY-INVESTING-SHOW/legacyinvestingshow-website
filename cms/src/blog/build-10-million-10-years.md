@@ -160,6 +160,8 @@ Here's what most people don't realize: **$10 million in 10 years is very achieva
 
 If you save $500 a month—which is more than most Americans can afford—and invest in index funds getting 7% returns, after 10 years, you'll have about $86,000. Even if you save $2,000 a month ($24,000 per year), you'd have about $345,000 after a decade.
 
+You can model your own monthly contributions with the [compound savings growth calculator](/tools/compound-savings-growth) to see what steady saving actually builds.
+
 That's not the path to $10 million. Not even close.
 
 **You need a completely different playbook.**
@@ -353,6 +355,8 @@ Keep the assets, keep the compounding, use the liquidity for whatever I need. **
 **Years 5-7**: Leverage kicks in—real estate portfolio expanding through refinancing, business potentially worth 3-5x profits, market investments compounding. By end of year 7: **$3-4 million**.
 
 **Years 8-10**: Full compounding effect—multiple properties with substantial equity, business value over $1 million, investment portfolio well into seven figures, potential business exit or recapitalization event. By end of year 10: **Over $10 million**.
+
+You can build your own path with the [savings goal timeline calculator](/tools/savings-goal-timeline) and see how your contribution rate and return assumptions move the finish date.
 
 Is this aggressive? Yes. Is it guaranteed? Absolutely not—nothing is. But is it achievable for someone willing to execute this playbook consistently for a decade? **Yes, absolutely.** The math works.
 

@@ -14,6 +14,7 @@ const ROOT_DIR = path.join(__dirname, '..');
 const OUTPUT_DIR = path.join(ROOT_DIR, 'programmatic-pages');
 const CITIES_PATH = path.join(ROOT_DIR, 'data', 'cities.json');
 const TAX_STRATEGIES_PATH = path.join(ROOT_DIR, 'data', 'tax-strategies.json');
+const INSURANCE_PATH = path.join(ROOT_DIR, 'data', 'renters-insurance-by-state.json');
 const GA_TRACKING_ID = process.env.GA_TRACKING_ID || 'G-2578PT1WSS';
 const GTM_CONTAINER_ID = process.env.GTM_CONTAINER_ID || 'GTM-KQ4R2LKP';
 const GOOGLE_SITE_VERIFICATIONS = [
@@ -441,6 +442,118 @@ const COMPARISONS = [
         quickTake: 'A donor-advised fund is usually the simpler execution path. A charitable trust can make sense when asset size, income objectives, and estate planning complexity justify it.',
     },
 ];
+
+// Renters insurance by state (NAIC 2021 baseline via Insurance Information Institute).
+// Nearby states used for side-by-side comparison on each state page.
+const RENTERS_NEIGHBORS = {
+    AL: ['GA', 'MS', 'TN'],
+    AK: ['WA', 'OR', 'ID'],
+    AZ: ['CA', 'NM', 'NV'],
+    AR: ['TX', 'OK', 'MO'],
+    CA: ['OR', 'NV', 'AZ'],
+    CO: ['WY', 'NM', 'UT'],
+    CT: ['NY', 'MA', 'RI'],
+    DE: ['MD', 'PA', 'NJ'],
+    DC: ['MD', 'VA', 'DE'],
+    FL: ['GA', 'AL', 'SC'],
+    GA: ['AL', 'FL', 'SC'],
+    HI: ['CA', 'OR', 'WA'],
+    ID: ['MT', 'WY', 'NV'],
+    IL: ['WI', 'IN', 'MO'],
+    IN: ['IL', 'OH', 'KY'],
+    IA: ['MN', 'WI', 'IL'],
+    KS: ['MO', 'OK', 'NE'],
+    KY: ['TN', 'IN', 'OH'],
+    LA: ['TX', 'MS', 'AL'],
+    ME: ['NH', 'VT', 'MA'],
+    MD: ['VA', 'DE', 'PA'],
+    MA: ['CT', 'RI', 'NH'],
+    MI: ['OH', 'IN', 'WI'],
+    MN: ['WI', 'IA', 'SD'],
+    MS: ['AL', 'LA', 'TN'],
+    MO: ['KS', 'IL', 'AR'],
+    MT: ['WY', 'ND', 'ID'],
+    NE: ['SD', 'IA', 'KS'],
+    NV: ['CA', 'AZ', 'UT'],
+    NH: ['VT', 'ME', 'MA'],
+    NJ: ['NY', 'PA', 'DE'],
+    NM: ['TX', 'AZ', 'CO'],
+    NY: ['NJ', 'PA', 'CT'],
+    NC: ['VA', 'SC', 'TN'],
+    ND: ['MN', 'SD', 'MT'],
+    OH: ['PA', 'IN', 'KY'],
+    OK: ['TX', 'AR', 'KS'],
+    OR: ['WA', 'CA', 'ID'],
+    PA: ['NY', 'NJ', 'MD'],
+    RI: ['MA', 'CT', 'NH'],
+    SC: ['GA', 'NC', 'FL'],
+    SD: ['ND', 'MN', 'NE'],
+    TN: ['KY', 'GA', 'AL'],
+    TX: ['OK', 'LA', 'NM'],
+    UT: ['ID', 'NV', 'CO'],
+    VT: ['NH', 'NY', 'MA'],
+    VA: ['MD', 'NC', 'WV'],
+    WA: ['OR', 'ID', 'MT'],
+    WV: ['VA', 'MD', 'OH'],
+    WI: ['MN', 'IL', 'MI'],
+    WY: ['CO', 'MT', 'SD'],
+};
+
+// General-context notes for the four factors that drive renters insurance pricing.
+// These are qualitative descriptions, not fabricated statistics.
+const RENTERS_STATE_CONTEXT = {
+    AL: { weather: 'severe storms and tornadoes drive more frequent claims', claims: 'weather-driven claims dominate and disputes are uncommon', replacement: 'replacement costs are moderate', competition: 'a solid mix of national carriers keeps pricing competitive' },
+    AK: { weather: 'extreme cold and remote locations make any claim more expensive to handle', claims: 'claim frequency is low because few renters policies are written', replacement: 'shipping and labor costs push replacement values up', competition: 'fewer carriers write coverage in the state, which limits price pressure' },
+    AZ: { weather: 'summer monsoon storms and heat-related wear shape loss patterns', claims: 'claim frequency is moderate and litigation is not a dominant driver', replacement: 'replacement costs in Phoenix and Tucson run above the state norm', competition: 'a healthy number of national carriers compete for renters business' },
+    AR: { weather: 'tornado and severe-storm exposure runs across much of the state', claims: 'claims are mostly weather-driven, with litigation less of a factor', replacement: 'replacement costs are modest', competition: 'plenty of national insurers compete, keeping quotes near the national average' },
+    CA: { weather: 'wildfire risk is a growing concern, while flood and earthquake damage sit outside standard policies', claims: 'claim frequency is relatively low and litigation is a smaller factor than in many states', replacement: 'replacement costs are among the highest in the country, especially in coastal metros', competition: 'a deep, competitive carrier market keeps pricing in check' },
+    CO: { weather: 'hail, wildfires, and winter storms all contribute to loss patterns', claims: 'claim frequency runs moderate, with hailstorms the most common trigger', replacement: 'replacement values along the Front Range are above the national norm', competition: 'many carriers compete, especially in the Denver market' },
+    CT: { weather: 'winter storms and coastal nor\'easters create seasonal claim risk', claims: 'claim frequency is low and the litigation climate is comparatively mild', replacement: 'replacement costs run above average in the New York metro orbit', competition: 'a competitive regional and national carrier market keeps rates near the national average' },
+    DE: { weather: 'coastal storms and nor\'easters are the main weather exposure', claims: 'claim frequency is low', replacement: 'replacement costs sit close to the mid-Atlantic norm', competition: 'the small market size means a handful of carriers dominate pricing' },
+    DC: { weather: 'winter storms and occasional coastal weather events shape claim patterns', claims: 'claim frequency is low and disputes are uncommon', replacement: 'replacement costs are high because the metro is one of the most expensive in the country', competition: 'a competitive carrier market keeps prices below what the high cost of living might suggest' },
+    FL: { weather: 'hurricane exposure is the defining risk, and storm claims can be severe when they occur', claims: 'the state has a reputation for higher claim frequency and litigation, which raises costs for everyone', replacement: 'replacement costs in coastal metros are elevated', competition: 'a crowded carrier market competes hard, but weather and legal costs push the average up' },
+    GA: { weather: 'severe storms and hurricane spillover from the coast shape claim patterns', claims: 'claim frequency is moderate, with litigation a modest factor', replacement: 'replacement costs are moderate, with Atlanta above the state norm', competition: 'many carriers compete for Atlanta-area renters' },
+    HI: { weather: 'hurricane and volcanic hazards are the state\'s headline exposures', claims: 'claim frequency is low given the limited number of renters policies', replacement: 'replacement costs are among the highest in the country because most goods are shipped in', competition: 'a thin carrier market with limited competition keeps the average below the national baseline' },
+    ID: { weather: 'wildfire season and winter storms are the main concerns', claims: 'claim frequency is low and litigation is rare', replacement: 'replacement costs are modest outside the Boise metro', competition: 'limited carrier competition in a smaller market keeps quotes low' },
+    IL: { weather: 'severe storms, hail, and winter weather drive claims', claims: 'claim frequency runs moderate, with litigation concentrated in the Chicago area', replacement: 'replacement costs in Chicago are above the state average', competition: 'a large competitive market with many national and regional carriers' },
+    IN: { weather: 'tornado and severe-storm exposure is present across the state', claims: 'claim frequency is moderate and litigation is not a major driver', replacement: 'replacement costs are moderate', competition: 'steady carrier competition keeps prices near the national average' },
+    IA: { weather: 'tornadoes, hail, and severe storms are the main claim triggers', claims: 'claim frequency is moderate, mostly weather-driven', replacement: 'replacement costs are modest', competition: 'a competitive regional carrier market keeps rates below average' },
+    KS: { weather: 'the state sits in severe-weather territory, with hail and tornadoes common', claims: 'weather claims dominate and litigation is a smaller factor', replacement: 'replacement costs are moderate', competition: 'many carriers compete, keeping the average close to the national figure' },
+    KY: { weather: 'severe storms and flooding are the main weather exposures', claims: 'claim frequency is moderate', replacement: 'replacement costs are modest', competition: 'good carrier competition keeps rates below the national average' },
+    LA: { weather: 'hurricane and flood exposure is among the highest in the country', claims: 'the state is known for higher claim frequency and litigation, which pushes premiums up', replacement: 'replacement costs in New Orleans and the coastal market are elevated', competition: 'some carriers limit exposure in the state, which reduces competition and raises prices' },
+    ME: { weather: 'winter storms and cold are the main claim drivers', claims: 'claim frequency is low', replacement: 'replacement costs are moderate', competition: 'a small but stable carrier market keeps the average among the lowest in the country' },
+    MD: { weather: 'coastal storms, nor\'easters, and winter weather shape claims', claims: 'claim frequency is low to moderate', replacement: 'replacement costs near Washington, DC and Baltimore are above the state norm', competition: 'a competitive mid-Atlantic carrier market keeps prices below the national average' },
+    MA: { weather: 'winter storms and nor\'easters are the primary weather risk', claims: 'claim frequency is low', replacement: 'replacement costs are among the highest in the country, especially around Boston', competition: 'strong carrier competition keeps the average close to the national figure despite high costs' },
+    MI: { weather: 'winter weather and severe storms are the main claim triggers', claims: 'claim frequency is moderate', replacement: 'replacement costs are moderate', competition: 'a competitive carrier market keeps rates below the national average' },
+    MN: { weather: 'hail, winter storms, and severe weather drive claims', claims: 'claim frequency is moderate and litigation is less of a factor', replacement: 'replacement costs in the Twin Cities run above the state norm', competition: 'many carriers compete in the upper Midwest market' },
+    MS: { weather: 'hurricanes, tornadoes, and severe storms are all part of the risk profile', claims: 'higher claim frequency and a more active litigation climate push costs up', replacement: 'replacement costs are low, which offsets some of the pressure', competition: 'some carriers limit Gulf exposure, which reduces competition and helps explain one of the highest averages in the country' },
+    MO: { weather: 'tornadoes, hail, and severe storms are common', claims: 'weather-driven claims dominate', replacement: 'replacement costs are moderate', competition: 'solid carrier competition keeps rates close to the national average' },
+    MT: { weather: 'winter storms and wildfire season are the main concerns', claims: 'claim frequency is low', replacement: 'replacement costs are moderate', competition: 'a thin carrier market keeps the average below the national figure' },
+    NE: { weather: 'severe storms, hail, and winter weather are common', claims: 'claim frequency is moderate, mostly weather-driven', replacement: 'replacement costs are modest', competition: 'a competitive carrier market keeps rates near the national average' },
+    NV: { weather: 'wildfire risk near the urban fringe and occasional winter storms shape losses', claims: 'claim frequency is moderate, with litigation concentrated in the Las Vegas area', replacement: 'replacement costs in Las Vegas and Reno run above the state norm', competition: 'many national carriers compete in the state' },
+    NH: { weather: 'winter storms are the main weather exposure', claims: 'claim frequency is low and litigation is rare', replacement: 'replacement costs are moderate', competition: 'a small, stable carrier market keeps the average among the lowest in the country' },
+    NJ: { weather: 'coastal storms and nor\'easters are the headline weather risk', claims: 'claim frequency is moderate, with litigation more common in the metro counties', replacement: 'replacement costs in the New York metro are high', competition: 'a deep competitive carrier market keeps the average below the national figure' },
+    NM: { weather: 'wildfire and severe-weather events shape the claim profile', claims: 'claim frequency is low to moderate', replacement: 'replacement costs are moderate', competition: 'a modest carrier market with moderate competition keeps rates near the national average' },
+    NY: { weather: 'winter storms and coastal weather are the main exposures', claims: 'claim frequency is moderate, and litigation is more common in New York City', replacement: 'replacement costs in the city and surrounding metro are among the highest in the country', competition: 'a very competitive carrier market moderates the average' },
+    NC: { weather: 'hurricane and severe-storm risk increases toward the coast', claims: 'claim frequency is moderate', replacement: 'replacement costs are moderate, with the metro areas above the state norm', competition: 'a growing, competitive insurance market keeps the average below the national figure' },
+    ND: { weather: 'severe winter weather and occasional hail shape claims', claims: 'claim frequency is low', replacement: 'replacement costs are moderate', competition: 'a thin carrier market keeps the average below the national baseline' },
+    OH: { weather: 'severe storms and winter weather are the main triggers', claims: 'claim frequency is moderate', replacement: 'replacement costs are moderate', competition: 'a highly competitive carrier market keeps the average well below the national figure' },
+    OK: { weather: 'the state is among the most severe-weather exposed in the country, with tornadoes and hail common', claims: 'weather claims and a more active litigation climate push costs up', replacement: 'replacement costs are moderate', competition: 'competition softens some of the weather-driven pressure, but the average still runs high' },
+    OR: { weather: 'wildfire risk, winter storms, and coastal weather all play a role', claims: 'claim frequency is low', replacement: 'replacement costs in the Portland metro are above the state norm', competition: 'a competitive west-coast carrier market keeps the average below the national figure' },
+    PA: { weather: 'winter storms and severe weather are the main exposures', claims: 'claim frequency is moderate, with litigation a factor in the Philadelphia metro', replacement: 'replacement costs are moderate overall, and higher in the metros', competition: 'many carriers compete, keeping the average below the national figure' },
+    RI: { weather: 'nor\'easters and winter storms are the primary weather risk', claims: 'claim frequency is low', replacement: 'replacement costs are moderate to high', competition: 'a small carrier market keeps the average right at the national figure' },
+    SC: { weather: 'hurricane and severe-storm exposure is significant, especially near the coast', claims: 'claim frequency is moderate', replacement: 'replacement costs are moderate', competition: 'a competitive southeast carrier market keeps the average below the national figure' },
+    SD: { weather: 'severe storms, hail, and winter weather are common', claims: 'claim frequency is moderate, mostly weather-driven', replacement: 'replacement costs are modest', competition: 'a thin carrier market keeps the average near the national figure' },
+    TN: { weather: 'severe storms and tornadoes are the main claim triggers', claims: 'claim frequency is moderate', replacement: 'replacement costs are moderate, and higher in Nashville', competition: 'steady carrier competition keeps the average below the national figure' },
+    TX: { weather: 'the state\'s size means hail, tornadoes, hurricanes, and winter freezes all drive claims', claims: 'claim frequency and litigation are both elevated, which pushes costs up across the board', replacement: 'replacement costs vary widely but run high in the major metros', competition: 'a huge carrier market competes hard, yet the average is the highest in the country' },
+    UT: { weather: 'winter storms and wildfire risk near the Wasatch Front shape losses', claims: 'claim frequency is low', replacement: 'replacement costs are moderate', competition: 'a growing carrier market keeps the average well below the national figure' },
+    VT: { weather: 'winter storms and cold are the main exposures', claims: 'claim frequency is low', replacement: 'replacement costs are moderate', competition: 'a small carrier market keeps the average among the lowest in the country' },
+    VA: { weather: 'hurricane spillover, coastal storms, and winter weather all contribute', claims: 'claim frequency is moderate', replacement: 'replacement costs near Washington, DC are elevated', competition: 'a competitive mid-Atlantic market keeps the average near the national figure' },
+    WA: { weather: 'wildfire season, winter storms, and coastal weather shape claims', claims: 'claim frequency is low', replacement: 'replacement costs in the Seattle metro run above the state norm', competition: 'many carriers compete, keeping the average below the national figure' },
+    WV: { weather: 'flooding and severe storms are the main weather exposures', claims: 'claim frequency is moderate', replacement: 'replacement costs are modest', competition: 'a limited carrier market keeps the average below the national figure' },
+    WI: { weather: 'winter storms, hail, and severe weather drive claims', claims: 'claim frequency is moderate', replacement: 'replacement costs are modest to moderate', competition: 'a strong regional carrier market keeps the average well below the national figure' },
+    WY: { weather: 'winter storms and wildfire risk are the main exposures', claims: 'claim frequency is low', replacement: 'replacement costs are moderate', competition: 'a thin carrier market keeps the average among the lowest in the country' },
+};
 
 function esc(value = '') {
     return String(value)
@@ -1527,21 +1640,279 @@ function renderIndexPage(cities, personas, comparisons) {
     fs.writeFileSync(path.join(OUTPUT_DIR, 'index.html'), page);
 }
 
+function slugForStateName(name) {
+    return String(name || '').toLowerCase().replace(/\s+/g, '-');
+}
+
+function rentersInsuranceUrl(slug) {
+    return `https://www.legacyinvestingshow.com/programmatic-pages/insurance/${slug}`;
+}
+
+function premiumVsUs(premium, usAverage) {
+    const diff = premium - usAverage;
+    if (diff === 0) return '$0 (at average)';
+    return diff > 0 ? `+$${diff}` : `−$${Math.abs(diff)}`;
+}
+
+function premiumProse(premium, usAverage) {
+    const diff = premium - usAverage;
+    if (diff === 0) return 'at the US average';
+    return diff > 0 ? `$${diff} above the US average` : `$${Math.abs(diff)} below the US average`;
+}
+
+function renderPremiumTable(rows, usAverage) {
+    return `<table class="comparison-table">
+        <thead>
+            <tr>
+                <th>Location</th>
+                <th>Average annual premium</th>
+                <th>vs US average ($${usAverage})</th>
+            </tr>
+        </thead>
+        <tbody>
+            ${rows.map((row) => `<tr${row.highlight ? ' style="background: #ecfdf5;"' : ''}>
+                <td>${row.href ? `<a class="inline-link" href="${esc(row.href)}">${esc(row.name)}</a>` : esc(row.name)}</td>
+                <td>$${row.premium}</td>
+                <td>${esc(row.vs)}</td>
+            </tr>`).join('\n            ')}
+        </tbody>
+    </table>`;
+}
+
+function renderInsuranceHubPage(stateEntries, usEntry) {
+    const usAverage = usEntry.averageAnnualPremium;
+    const canonical = rentersInsuranceUrl('renters-by-state');
+    const title = 'Average Renters Insurance Cost by State (2026)';
+    const description = 'Compare average renters insurance costs in all 50 states and Washington, DC, against the $170 US average (NAIC 2021 baseline from the Insurance Information Institute).';
+    const body = `<section class="programmatic-hero">
+    <div class="container-custom hero-grid">
+        <div>
+            <span class="eyebrow">Insurance research</span>
+            <h1 class="hero-title">${esc(title)}</h1>
+            <p class="hero-copy">Renters insurance protects your personal property, your liability, and your additional living costs when you rent. The average annual premium in the United States is about $${usAverage}. This page compares every state's average against that baseline so you can see where coverage tends to cost more and where it tends to cost less.</p>
+        </div>
+        <aside class="hero-panel">
+            <h2>How to use this table</h2>
+            <p>The figures are state averages, not quotes. Your premium depends on your city, coverage limits, deductible, and claims history.</p>
+            ${renderList([
+                'Find your state in the table and read its average annual premium.',
+                'Check the column that compares each state with the $' + usAverage + ' US average.',
+                'Open your state page to see how nearby states compare.',
+            ], 'bullet-list')}
+        </aside>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container-custom">
+        <h2 class="section-title">Average renters insurance cost by state</h2>
+        <p class="section-copy">Sorted alphabetically. A minus sign means the state's average is below the US average; a plus sign means it is above.</p>
+        <div style="margin-top: 1.5rem;">
+            ${renderPremiumTable([
+                { name: 'United States (national average)', premium: usAverage, vs: 'baseline' },
+                ...stateEntries.map((entry) => ({
+                    name: entry.state,
+                    premium: entry.averageAnnualPremium,
+                    vs: premiumVsUs(entry.averageAnnualPremium, usAverage),
+                    href: `/programmatic-pages/insurance/renters-${slugForStateName(entry.state)}`,
+                })),
+            ], usAverage)}
+        </div>
+        <p style="margin-top: 1rem; color: #4b5563; line-height: 1.7;">These are the NAIC 2021 baseline averages published by the Insurance Information Institute. Inflation has pushed 2026 quotes higher, so treat the table as a comparison tool rather than a quote.</p>
+    </div>
+</section>
+
+<section class="section section--alt">
+    <div class="container-custom">
+        <h2 class="section-title">What drives renters insurance prices</h2>
+        <div class="card-grid">
+            <article class="info-card"><h3>Claim frequency and litigation</h3><p>States with more claims, or with a more active litigation climate, tend to have higher average premiums.</p></article>
+            <article class="info-card"><h3>Replacement costs</h3><p>Where it costs more to replace your belongings, insurers charge more for the same coverage.</p></article>
+            <article class="info-card"><h3>Weather exposure</h3><p>Hurricanes, tornadoes, hail, wildfires, and winter storms all shape loss patterns and pricing.</p></article>
+            <article class="info-card"><h3>Carrier competition</h3><p>States with more competing insurers usually see lower prices; thin markets tend to run higher.</p></article>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container-custom">
+        <h2 class="section-title">Next steps</h2>
+        <div class="hub-list">
+            <a href="/tools/renters-insurance-cost"><strong>Renters insurance cost calculator</strong><span>Estimate your own annual premium with your coverage limits, deductible, and location.</span></a>
+            <a href="/blog/how-much-is-renters-insurance-cost-guide"><strong>How much is renters insurance?</strong><span>Read the full guide to what renters insurance covers and how premiums are set.</span></a>
+            <a href="/tools/categories/insurance-protection"><strong>Insurance and protection tools</strong><span>Browse the rest of the insurance calculator library.</span></a>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container-custom">
+        <div class="cta-box">
+            <h2 class="section-title" style="color:white;">Get a personal estimate</h2>
+            <p>State averages are a starting point. Your real quote depends on your address, the coverage you choose, and your claims history.</p>
+            <div class="cta-actions">
+                <a class="cta-button" href="/tools/renters-insurance-cost">Open the renters insurance calculator</a>
+                <a class="ghost-button" href="/blog/how-much-is-renters-insurance-cost-guide">Read the cost guide</a>
+            </div>
+        </div>
+    </div>
+</section>`;
+
+    const page = renderLayout({
+        title,
+        description,
+        canonical,
+        keywords: 'renters insurance cost by state, average renters insurance by state, renters insurance rates by state, renters insurance comparison',
+        type: 'website',
+        schemaBlocks: [
+            collectionSchema(title, description, canonical, stateEntries.map((entry) => ({
+                name: entry.state,
+                url: rentersInsuranceUrl(`renters-${slugForStateName(entry.state)}`),
+            }))),
+            breadcrumbSchema([
+                { name: 'Home', item: 'https://www.legacyinvestingshow.com/' },
+                { name: 'Renters insurance cost by state', item: canonical },
+            ]),
+        ],
+        pageType: 'programmatic_renters_hub',
+        activeHref: '/tools',
+        body,
+    });
+
+    fs.writeFileSync(path.join(OUTPUT_DIR, 'insurance', 'renters-by-state.html'), page);
+}
+
+function renderRentersStatePage(entry, entriesByAbbr, usEntry) {
+    const usAverage = usEntry.averageAnnualPremium;
+    const name = entry.state;
+    const slug = `renters-${slugForStateName(name)}`;
+    const title = `Renters Insurance Cost in ${name} (2026 Average)`;
+    const canonical = rentersInsuranceUrl(slug);
+    const context = RENTERS_STATE_CONTEXT[entry.abbreviation];
+    const neighbors = (RENTERS_NEIGHBORS[entry.abbreviation] || [])
+        .map((abbr) => entriesByAbbr.get(abbr))
+        .filter(Boolean);
+    const diff = entry.averageAnnualPremium - usAverage;
+    const diffPhrase = diff === 0
+        ? 'equal to'
+        : diff > 0
+            ? `about $${diff} more than`
+            : `about $${Math.abs(diff)} less than`;
+    const description = `${name} renters insurance averages about $${entry.averageAnnualPremium} a year (NAIC 2021) — ${premiumProse(entry.averageAnnualPremium, usAverage)}. Estimate your own quote.`;
+    const intro = `${name} renters paid about $${entry.averageAnnualPremium} a year on average in the NAIC 2021 baseline, ${diffPhrase} the $${usAverage} US average.`;
+    const body = `<section class="programmatic-hero">
+    <div class="container-custom hero-grid">
+        <div>
+            <span class="eyebrow">Renters insurance by state</span>
+            <h1 class="hero-title">${esc(title)}</h1>
+            <p class="hero-copy">${esc(intro)} The state average is a useful baseline, but your quote will depend on your city, coverage limits, deductible, and claims history.</p>
+            <div class="meta-strip">
+                <span class="meta-pill">State average: $${entry.averageAnnualPremium}/year</span>
+                <span class="meta-pill">US average: $${usAverage}/year</span>
+                <span class="meta-pill">NAIC 2021 baseline</span>
+            </div>
+        </div>
+        <aside class="hero-panel">
+            <h2>What this page helps you decide</h2>
+            <p>Use the comparison to see where ${esc(name)} sits relative to the national average and to nearby states before you shop for coverage.</p>
+        </aside>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container-custom section-grid">
+        <div class="surface">
+            <h2 class="section-title">What drives ${esc(name)} renters insurance costs</h2>
+            <p>${esc(intro)}</p>
+            <p>Weather exposure is a major driver here: ${esc(context.weather)}.</p>
+            <p>Claim frequency and litigation also matter: ${esc(context.claims)}.</p>
+            <p>Replacement costs and carrier competition round out the picture: ${esc(context.replacement)}, and ${esc(context.competition)}.</p>
+        </div>
+        <div class="surface">
+            <h2 class="section-title">How ${esc(name)} compares</h2>
+            ${renderPremiumTable([
+                { name: name, premium: entry.averageAnnualPremium, vs: premiumVsUs(entry.averageAnnualPremium, usAverage), highlight: true },
+                { name: 'United States (national average)', premium: usAverage, vs: 'baseline' },
+                ...neighbors.map((neighbor) => ({
+                    name: neighbor.state,
+                    premium: neighbor.averageAnnualPremium,
+                    vs: premiumVsUs(neighbor.averageAnnualPremium, usAverage),
+                    href: `/programmatic-pages/insurance/renters-${slugForStateName(neighbor.state)}`,
+                })),
+            ], usAverage)}
+            <p style="margin-top: 0.9rem; color: #4b5563; line-height: 1.7;">A minus sign means the average is below the US average. Figures are the NAIC 2021 baseline; 2026 quotes run higher after inflation.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section section--alt">
+    <div class="container-custom">
+        <h2 class="section-title">Next steps</h2>
+        <div class="hub-list">
+            <a href="/programmatic-pages/insurance/renters-by-state"><strong>Renters insurance cost by state</strong><span>See how ${esc(name)} compares with every other state.</span></a>
+            <a href="/tools/renters-insurance-cost"><strong>Renters insurance cost calculator</strong><span>Estimate your own premium with your coverage limits, deductible, and location.</span></a>
+            <a href="/blog/how-much-is-renters-insurance-cost-guide"><strong>How much is renters insurance?</strong><span>Read the full guide to what renters insurance covers and how premiums are set.</span></a>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container-custom">
+        <div class="cta-box">
+            <h2 class="section-title" style="color:white;">Estimate your own premium</h2>
+            <p>State averages only get you part of the way. Your real quote depends on your address, the coverage you choose, and your claims history.</p>
+            <div class="cta-actions">
+                <a class="cta-button" href="/tools/renters-insurance-cost">Open the renters insurance calculator</a>
+                <a class="ghost-button" href="/programmatic-pages/insurance/renters-by-state">Back to the state hub</a>
+            </div>
+        </div>
+    </div>
+</section>`;
+
+    const page = renderLayout({
+        title,
+        description,
+        canonical,
+        keywords: `${name} renters insurance cost, renters insurance in ${name}, average renters insurance ${name}, ${entry.abbreviation} renters insurance rates`,
+        schemaBlocks: [
+            articleSchema(title, description, canonical, `${name}, renters insurance, insurance cost, state comparison`),
+            breadcrumbSchema([
+                { name: 'Home', item: 'https://www.legacyinvestingshow.com/' },
+                { name: 'Renters insurance cost by state', item: rentersInsuranceUrl('renters-by-state') },
+                { name: name, item: canonical },
+            ]),
+        ],
+        pageType: 'programmatic_renters_state',
+        activeHref: '/tools',
+        body,
+    });
+
+    fs.writeFileSync(path.join(OUTPUT_DIR, 'insurance', `${slug}.html`), page);
+}
+
 function main() {
     const cities = loadJson(CITIES_PATH).cities;
     const strategyMap = buildStrategyMap();
+    const insuranceEntries = loadJson(INSURANCE_PATH);
+    const usEntry = insuranceEntries.find((entry) => entry.abbreviation === 'US');
+    const stateEntries = insuranceEntries.filter((entry) => entry.abbreviation !== 'US');
+    const entriesByAbbr = new Map(insuranceEntries.map((entry) => [entry.abbreviation, entry]));
 
     ensureDir(OUTPUT_DIR);
     ensureDir(path.join(OUTPUT_DIR, 'cities'));
     ensureDir(path.join(OUTPUT_DIR, 'comparisons'));
     ensureDir(path.join(OUTPUT_DIR, 'personas'));
+    ensureDir(path.join(OUTPUT_DIR, 'insurance'));
 
     cities.forEach((city) => renderCityPage(city, strategyMap));
     PERSONAS.forEach((persona) => renderPersonaPage(persona, strategyMap));
     COMPARISONS.forEach((comparison) => renderComparisonPage(comparison, strategyMap));
     renderIndexPage(cities, PERSONAS, COMPARISONS);
+    stateEntries.forEach((entry) => renderRentersStatePage(entry, entriesByAbbr, usEntry));
+    renderInsuranceHubPage(stateEntries, usEntry);
 
     console.log(`Generated ${cities.length} city pages, ${PERSONAS.length} persona pages, ${COMPARISONS.length} comparison pages, and the programmatic hub.`);
+    console.log(`Generated ${stateEntries.length} renters insurance state pages and the renters insurance hub.`);
 }
 
 main();

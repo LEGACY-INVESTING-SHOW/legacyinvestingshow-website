@@ -182,6 +182,7 @@ Use a floor plan and expected use pattern. Square footage is common, but consist
 
 2. Calculate effective housing cost, not just rent collected.
 Formula: annual personal housing cash outflow minus after-tax rental benefit. This keeps you focused on net household economics.
+Run the monthly payment on any property you are considering through the [mortgage payment calculator](/tools/mortgage-payment) before you model the tax layers.
 
 3. Stress-test passive-loss usability.
 Model two outcomes: loss usable now vs loss suspended. If the deal only works when losses are immediately usable, your margin is thin.

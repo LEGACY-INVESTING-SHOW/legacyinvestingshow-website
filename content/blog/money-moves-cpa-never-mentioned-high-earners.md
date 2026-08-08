@@ -191,6 +191,8 @@ When there is business or 1099 income, entity choice starts to matter materially
 
 The video includes a consultant example around $175K of 1099 income. By restructuring compensation and distributions, recurring annual tax savings became possible after admin costs.
 
+You can model how different compensation and withholding choices change take-home pay with the [payroll withholding estimator](/tools/payroll-withholding-estimate).
+
 Preston frames a practical threshold: for many situations, S-Corp math often becomes compelling around roughly $60K-$80K in net business profit, then improves as profit scales.
 
 The message is not "everyone should file an S-Corp tomorrow." The message is to evaluate structure intentionally once income profile supports it.
@@ -233,7 +235,7 @@ After reserves, retirement stacks, and debt framework, the transcript points to 
 The recommendation is not complexity for its own sake. It is tax-aware simplicity:
 
 - Be intentional with dividend-heavy positions.
-- Understand holding periods for long-term gains treatment.
+- Understand holding periods for long-term gains treatment, and estimate the tax on any planned sale with the [capital gains tax estimator](/tools/capital-gains-tax-estimate).
 - Use tax-loss harvesting thoughtfully when appropriate.
 
 For high earners, small tax-efficiency improvements repeated every year can compound significantly.

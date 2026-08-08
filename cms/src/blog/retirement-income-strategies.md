@@ -149,6 +149,8 @@ That often includes:
 
 The reason is simple. If your basics are already covered, the portfolio gets more room to recover from market declines and less pressure to produce yield at the wrong time.
 
+You can model how long your savings cover essential spending with the [retirement income runway calculator](/tools/retirement-income-runway).
+
 ## Then decide how the portfolio will support the rest
 Once essential expenses are covered, the portfolio handles the flexible layer of spending. There are several valid approaches.
 

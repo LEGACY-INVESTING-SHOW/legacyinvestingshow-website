@@ -226,6 +226,8 @@ Once annual deductions are projected, withholding can be recalibrated to reduce 
 
 In the case example, this freed meaningful monthly cash flow that could be redirected throughout the year instead of recovered after filing.
 
+You can run your own numbers through the [payroll withholding estimator](/tools/payroll-withholding-estimate) to see what a recalibration frees up.
+
 ### Retirement Stack Expansion
 
 The episode references coordinated retirement strategy including:

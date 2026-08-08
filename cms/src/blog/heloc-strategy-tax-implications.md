@@ -226,6 +226,8 @@ Tradeoff interpretation:
 - If your alternative debt is credit cards near 20%+, HELOC can still win on rate.
 - But the collateral risk is much higher because missed payments can put your home at risk.
 
+If you are weighing a HELOC against card payoff, run your balances through the [credit card payoff calculator](/tools/credit-card-payoff) to compare timelines and interest costs.
+
 This example is why heloc strategy tax implications should be modeled as a range, not one number.
 
 ## Step-by-Step Implementation Plan
