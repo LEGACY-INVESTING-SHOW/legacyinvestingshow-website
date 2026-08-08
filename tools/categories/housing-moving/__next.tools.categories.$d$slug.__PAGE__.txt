@@ -1,0 +1,7 @@
+1:"$Sreact.fragment"
+2:I[22016,["/tools/_next/static/chunks/3rdqn8rx95pw7.js","/tools/_next/static/chunks/14mrh2-p_w84d.js","/tools/_next/static/chunks/0qq7wukq6vnye.js"],""]
+3:I[20438,["/tools/_next/static/chunks/3rdqn8rx95pw7.js","/tools/_next/static/chunks/14mrh2-p_w84d.js","/tools/_next/static/chunks/0qq7wukq6vnye.js"],"CatalogBrowser"]
+4:I[97367,["/tools/_next/static/chunks/3rdqn8rx95pw7.js","/tools/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"mx-auto max-w-5xl px-5 py-10 sm:py-14","children":[["$","nav",null,{"aria-label":"Breadcrumb","className":"text-[13px] text-ink-faint","children":[["$","$L2",null,{"href":"/tools","className":"hover:text-ink-muted","children":"All calculators"}],["$","span",null,{"aria-hidden":true,"className":"mx-2","children":"/"}],["$","span",null,{"className":"text-ink-muted","children":"Housing & moving"}]]}],["$","h1",null,{"className":"mt-4 text-[30px] font-semibold tracking-tight text-ink","children":"Housing & moving"}],["$","$L3",null,{"initialCategory":"housing-moving"}]]}],[["$","script","script-0",{"src":"/tools/_next/static/chunks/0qq7wukq6vnye.js","async":true}]],["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"QN_f_l_9vKdaYcAiLNw6Y"}
+6:null

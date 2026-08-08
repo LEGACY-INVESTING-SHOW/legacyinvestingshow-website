@@ -102,11 +102,11 @@ Purpose:
 - support decision pages with execution tools
 
 Representative tools:
-- https://www.legacyinvestingshow.com/tools/estimated-tax-safe-harbor-planner
-- https://www.legacyinvestingshow.com/tools/accountable-plan-home-office-reimbursement-calculator
-- https://www.legacyinvestingshow.com/tools/augusta-rule-meeting-log-and-rent-calculator
-- https://www.legacyinvestingshow.com/tools/cost-segregation-payback-calculator
-- https://www.legacyinvestingshow.com/tools/backdoor-roth-pro-rata-calculator
+- https://www.legacyinvestingshow.com/tools/airbnb-arbitrage-roi
+- https://www.legacyinvestingshow.com/tools/monthly-budget-planner
+- https://www.legacyinvestingshow.com/tools/gross-to-net-pay-estimate
+- https://www.legacyinvestingshow.com/tools/mortgage-payment
+- https://www.legacyinvestingshow.com/tools/capital-gains-tax-estimate
 
 ### 4. Worksheets
 Primary route:

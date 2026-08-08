@@ -17,7 +17,7 @@
     "build:programmatic": "node scripts/fix-programmatic-seo.js",
     "build:compare": "node scripts/build-compare-pages.js",
     "build:topics": "node scripts/build-topic-hubs.js",
-    "build:tools": "node scripts/build-tools.js",
+    "build:tools": "node scripts/import-calculators.js",
     "build:worksheets": "node scripts/build-worksheets.js",
     "build:tracking": "node scripts/ensure-tracking-and-verification.js",
     "build:seo-titles": "node scripts/normalize-seo-titles.js",

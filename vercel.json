@@ -474,7 +474,72 @@
     },
     {
       "source": "/tools/tax-calculator",
-      "destination": "/tools/capital-gains-headroom-calculator",
+      "destination": "/tools/capital-gains-tax-estimate",
+      "permanent": true
+    },
+    {
+      "source": "/tools/estimated-tax-safe-harbor-planner",
+      "destination": "/tools/self-employment-tax-reserve",
+      "permanent": true
+    },
+    {
+      "source": "/tools/accountable-plan-home-office-reimbursement-calculator",
+      "destination": "/tools/home-office-deduction-estimate",
+      "permanent": true
+    },
+    {
+      "source": "/tools/augusta-rule-meeting-log-and-rent-calculator",
+      "destination": "/tools/home-office-deduction-estimate",
+      "permanent": true
+    },
+    {
+      "source": "/tools/annualized-income-estimated-tax-calculator",
+      "destination": "/tools/self-employment-tax-reserve",
+      "permanent": true
+    },
+    {
+      "source": "/tools/real-estate-professional-status-hours-tracker",
+      "destination": "/tools",
+      "permanent": true
+    },
+    {
+      "source": "/tools/cost-segregation-payback-calculator",
+      "destination": "/tools",
+      "permanent": true
+    },
+    {
+      "source": "/tools/irmaa-headroom-roth-conversion-planner",
+      "destination": "/tools",
+      "permanent": true
+    },
+    {
+      "source": "/tools/qcd-vs-roth-conversion-planner",
+      "destination": "/tools",
+      "permanent": true
+    },
+    {
+      "source": "/tools/solo-401k-loan-vs-heloc-calculator",
+      "destination": "/tools",
+      "permanent": true
+    },
+    {
+      "source": "/tools/installment-sale-tax-cashflow-planner",
+      "destination": "/tools",
+      "permanent": true
+    },
+    {
+      "source": "/tools/backdoor-roth-pro-rata-calculator",
+      "destination": "/tools",
+      "permanent": true
+    },
+    {
+      "source": "/tools/w2-withholding-catch-up-planner",
+      "destination": "/tools/payroll-withholding-estimate",
+      "permanent": true
+    },
+    {
+      "source": "/tools/capital-gains-headroom-calculator",
+      "destination": "/tools/capital-gains-tax-estimate",
       "permanent": true
     },
     {

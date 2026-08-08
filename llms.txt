@@ -35,7 +35,7 @@ Secondary focus area:
 
 - [Tax Strategies](https://www.legacyinvestingshow.com/tax-strategies/): primary hub for tax planning, deductions, entities, and real-estate tax moves
 - [Compare Guides](https://www.legacyinvestingshow.com/compare/): decision pages for edge-case money choices
-- [Free Tools](https://www.legacyinvestingshow.com/tools/): calculators, planners, and execution-first tax tools
+- [Free Tools](https://www.legacyinvestingshow.com/tools/): 70+ free personal-finance calculators for budgets, loans, mortgages, tax estimates, and insurance
 - [Worksheets](https://www.legacyinvestingshow.com/worksheets/): printable and fillable planning worksheets
 - [Blog](https://www.legacyinvestingshow.com/blog/): strategy articles, case studies, and transcript-based resource posts
 - [Success Stories](https://www.legacyinvestingshow.com/success-stories): curated student results and execution stories
@@ -49,7 +49,8 @@ Secondary focus area:
 - [$88K Tax Savings Case Study](https://www.legacyinvestingshow.com/blog/88k-tax-savings-cpa-missed-case-study)
 - [7 Money Moves Your CPA Never Mentioned for $200K+ Earners](https://www.legacyinvestingshow.com/blog/money-moves-cpa-never-mentioned-high-earners)
 - [How to Build $10 Million in 10 Years](https://www.legacyinvestingshow.com/blog/build-10-million-10-years)
-- [Estimated Tax Safe Harbor Planner](https://www.legacyinvestingshow.com/tools/estimated-tax-safe-harbor-planner)
+- [Airbnb Arbitrage ROI Calculator](https://www.legacyinvestingshow.com/tools/airbnb-arbitrage-roi)
+- [Monthly Budget Planner](https://www.legacyinvestingshow.com/tools/monthly-budget-planner)
 - [Augusta Rule vs Home Office Deduction for S-Corp Owners](https://www.legacyinvestingshow.com/compare/augusta-rule-vs-home-office-deduction-s-corp)
 
 ## Positioning Notes

@@ -82,8 +82,8 @@ const CANONICAL_ALIASES = {
     '/tools/compounding': '/tools',
     '/tools/fire': '/tools',
     '/tools/retirement': '/tools',
-    '/tools/roth-analyzer': '/tools/qcd-vs-roth-conversion-planner',
-    '/tools/tax-calculator': '/tools/capital-gains-headroom-calculator',
+    '/tools/roth-analyzer': '/tools',
+    '/tools/tax-calculator': '/tools/capital-gains-tax-estimate',
 };
 
 function walkHtmlFiles(dir, files = []) {
