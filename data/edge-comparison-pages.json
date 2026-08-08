@@ -1650,4 +1650,137 @@
       }
     ]
   }
+  ,
+  {
+    "slug": "mortgage-payoff-vs-investing",
+    "title": "Paying Off Your Mortgage Early vs Investing the Difference",
+    "description": "Guaranteed interest savings from extra mortgage payments versus market returns on the same money: break-even math, risk, liquidity, and taxes on a $400,000 loan.",
+    "quickVerdict": "A guaranteed 6.7% return beats a hoped-for 7% only if certainty is worth more to you than upside.",
+    "bestFor": "Borrowers with stable income who already fund retirement accounts and want a guaranteed return plus a lower monthly obligation.",
+    "intro": "Both options use the same $250 a month. They disagree about what you should demand from it: a guaranteed reduction in interest you definitely owe, or a market return you might earn over thirty years. This is a risk and liquidity decision wearing math clothing.",
+    "opening": [
+      "Your mortgage rate is the only guaranteed investment return you will ever be offered at that size. Every extra dollar against a 6.7% loan saves 6.7% interest, on schedule, with no market involved.",
+      "The counteroffer is the stock market: the same dollar, invested monthly at a 7% nominal long-run assumption, growing to roughly $305,000 pre-tax over 30 years in the textbook case.",
+      "The honest version of this decision is not which number is bigger. It is whether you can absorb the years when the market is not cooperating, and whether you need the cash before the loan would have ended."
+    ],
+    "commonMistake": "Comparing the mortgage rate against a stock market average as if both were guaranteed, then ignoring liquidity and taxes entirely.",
+    "decisionFrameworkLead": "Optimize the scarce resource: guaranteed cash-flow relief, or maximum expected long-run wealth. Both lanes are legitimate; picking one before the math is what decides the outcome.",
+    "preDecisionSteps": [
+      "Confirm your exact rate and remaining term, and whether you itemize deductions for mortgage interest.",
+      "Verify your retirement contributions already capture the employer match and tax-advantaged room.",
+      "Write down your liquidity needs: expected large expenses in the next 10 years, and how much emergency cash you keep.",
+      "Run both scenarios with your real numbers in the overpayment vs investing calculator.",
+      "Stress-test the investing path with a 10-year window of below-average returns before you commit."
+    ],
+    "optionAName": "Pay Off the Mortgage Early",
+    "optionBName": "Invest the Difference",
+    "winnerLabel": "Depends on risk tolerance and liquidity needs",
+    "whenA": "Payoff wins when you value a guaranteed 6.7% interest saving, want the house free of the payment, and have retirement accounts already funded.",
+    "whenB": "Investing wins when your horizon is long, you can hold through drawdowns, and you want liquidity plus expected higher long-run returns.",
+    "decisionMatrix": [
+      {
+        "factor": "Rate certainty",
+        "a": "Guaranteed 6.7% interest saved",
+        "b": "Expected ~7% nominal, not guaranteed",
+        "better": "A"
+      },
+      {
+        "factor": "Liquidity",
+        "a": "Locks equity in the house",
+        "b": "Cash you can sell if needed",
+        "better": "B"
+      },
+      {
+        "factor": "Tax treatment",
+        "a": "Interest saved is tax-free-equivalent",
+        "b": "Gains taxed when realized",
+        "better": "A"
+      },
+      {
+        "factor": "Cash flow",
+        "a": "Frees the payment years sooner",
+        "b": "Payment stays; balance grows instead",
+        "better": "Depends"
+      },
+      {
+        "factor": "Failure risk",
+        "a": "None from markets; home equity still illiquid",
+        "b": "Drawdowns can hit while you still owe",
+        "better": "A"
+      }
+    ],
+    "workedExample": {
+      "profile": "A $400,000 30-year fixed mortgage at 6.7%, with $250 a month available beyond the $2,581 base payment.",
+      "assumptions": [
+        "30-year fixed at 6.7%; base principal and interest payment of $2,581",
+        "Extra payment of $250 a month applied to principal",
+        "Investing alternative: $250 a month at a 7% nominal return, pre-tax, for 30 years",
+        "No assumptions about future rates, home prices, or tax brackets"
+      ],
+      "aOutcome": "The loan pays off about 6.7 years early and saves roughly $138,000 of interest, guaranteed by the note.",
+      "bOutcome": "The invested dollars grow to about $305,000 pre-tax at a 7% nominal return, with market risk, taxes on gains, and full liquidity.",
+      "takeaway": "Payoff sells certainty at a lower headline number. Investing sells upside at the price of risk. The right choice depends on whether the guaranteed 6.7% or the risky ~7% fits your cash-flow needs and temperament."
+    },
+    "edgeCases": [
+      "You carry high-interest credit card debt: that usually outranks both options.",
+      "You will sell within five years: payoff recovers little before the sale.",
+      "Your emergency fund is thin: prepaying the mortgage turns cash into illiquid equity.",
+      "You are near retirement: the payoff date may matter more than the balance."
+    ],
+    "avoidA": [
+      "You have not funded retirement accounts with matching or tax advantages.",
+      "You need cash access and would use a HELOC to get it back.",
+      "Your rate is low (for example, under 5%) and the market risk is acceptable to you."
+    ],
+    "avoidB": [
+      "You cannot hold through a multi-year drawdown without selling.",
+      "You want the guaranteed interest saving and the freed payment.",
+      "You would invest in a taxable account while ignoring asset location."
+    ],
+    "checklist": [
+      "Confirm your rate, remaining term, and whether you itemize.",
+      "Max out retirement match and tax-advantaged room first.",
+      "Run the overpayment vs investing calculator with real numbers.",
+      "Set a liquidity floor (emergency fund) before extra payments.",
+      "Write a policy: what market conditions would change your lane."
+    ],
+    "advisorQuestions": [
+      "Given my rate and remaining term, what is the guaranteed return of prepaying?",
+      "How does my marginal tax rate change the comparison?",
+      "What is the liquidity cost of locking money in the house?",
+      "How should asset location shape where the extra $250 goes?"
+    ],
+    "faq": [
+      {
+        "q": "Is paying off a 6.7% mortgage better than investing?",
+        "a": "Not universally. The 6.7% interest saving is guaranteed and tax-free-equivalent; a 7% assumed market return is neither guaranteed nor tax-free. The choice depends on your horizon, liquidity needs, and risk tolerance."
+      },
+      {
+        "q": "How much interest does an extra $250 a month save?",
+        "a": "On a $400,000 30-year loan at 6.7%, an extra $250 a month pays the loan off about 6.7 years early and saves roughly $138,000 of interest, assuming the payment is applied to principal."
+      },
+      {
+        "q": "What does the same $250 a month grow to if invested?",
+        "a": "At a 7% nominal return over 30 years, about $305,000 pre-tax. That figure assumes the return holds, ignores taxes on gains, and carries market risk."
+      }
+    ],
+    "related": [
+      {
+        "href": "/blog/should-you-pay-off-your-mortgage-early",
+        "label": "Should You Pay Off Your Mortgage Early?"
+      },
+      {
+        "href": "/tools/mortgage-overpayment-vs-index-investing",
+        "label": "Mortgage Overpayment vs Index Investing Calculator"
+      },
+      {
+        "href": "/blog/compound-interest-savings-guide",
+        "label": "Compound Interest Savings Guide"
+      },
+      {
+        "href": "/tools/mortgage-extra-payment",
+        "label": "Mortgage Extra Payment Calculator"
+      }
+    ]
+  }
 ]

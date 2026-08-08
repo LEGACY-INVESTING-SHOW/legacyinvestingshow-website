@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Primary Meta Tags -->
+    <title>High Deductible vs Low Deductible Insurance: The Break-Even Math | Legacy Investing Show</title>
+    <meta name="title" content="High Deductible vs Low Deductible Insurance: The Break-Even Math | Legacy Investing Show">
+    <meta name="description" content="High and low deductible insurance compared with break-even math: premium savings, claim frequency, and the absorb test that tells you which choice wins.">
+    <meta name="keywords" content="high deductible vs low deductible, deductible vs premium break even, high deductible insurance, low deductible insurance, how to choose an insurance deductible, is a high deductible worth it, how to calculate deductible break even, what deductible should I choose">
+    <meta name="author" content="Preston Seo">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="Kec6RfGhFL-qG_8zKxCqt7yxjgy65WeDAftCBm90G2s">
+    <meta name="google-site-verification" content="92MoCnkdQOj_ey1lEafT5Mz-znCcCQ3UABZlI-JG_nM">
+    
+    <link rel="canonical" href="https://www.legacyinvestingshow.com/blog/high-deductible-vs-low-deductible-insurance">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.legacyinvestingshow.com/blog/high-deductible-vs-low-deductible-insurance">
+    <meta property="og:title" content="High Deductible vs Low Deductible Insurance: The Break-Even Math | Legacy Investing Show">
+    <meta property="og:description" content="High and low deductible insurance compared with break-even math: premium savings, claim frequency, and the absorb test that tells you which choice wins.">
+    <meta property="og:image" content="https://www.legacyinvestingshow.com/assets/images/og-blog.jpg">
+    <meta property="og:site_name" content="Legacy Investing Show">
+    <meta property="article:published_time" content="2026-08-09T00:00:00.000Z">
+    <meta property="article:modified_time" content="2026-08-09T00:00:00.000Z">
+    <meta property="article:author" content="Preston Seo">
+    <meta property="article:section" content="Insurance">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@thelegacyshow">
+    <meta name="twitter:title" content="High Deductible vs Low Deductible Insurance: The Break-Even Math | Legacy Investing Show">
+    <meta name="twitter:description" content="High and low deductible insurance compared with break-even math: premium savings, claim frequency, and the absorb test that tells you which choice wins.">
+    <meta name="twitter:image" content="https://www.legacyinvestingshow.com/assets/images/og-blog.jpg">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#FAF7F2">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/logo.png">
+    <link rel="apple-touch-icon" href="../assets/images/logo.png">
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+
+    <!-- Preload hero image for LCP -->
+    
+    <link rel="preload" as="image" href="../assets/images/og-blog.jpg" fetchpriority="high">
+    
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    
+    <style>
+        .minimal-article {
+            margin: 0 auto;
+            max-width: 1280px;
+            padding: 124px 24px 88px;
+        }
+
+        .article-shell {
+            display: grid;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .article-main {
+            min-width: 0;
+        }
+
+        .article-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.55rem;
+            margin-bottom: 1rem;
+            padding: 0.45rem 0.85rem;
+            border-radius: 999px;
+            background: rgba(15, 23, 42, 0.04);
+            border: 1px solid rgba(201, 169, 97, 0.18);
+            color: var(--gold-dark);
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .article-eyebrow::before {
+            content: "";
+            width: 0.45rem;
+            height: 0.45rem;
+            border-radius: 999px;
+            background: var(--gold);
+            box-shadow: 0 0 0 6px rgba(201, 169, 97, 0.12);
+        }
+
+        .minimal-article-header {
+            margin-bottom: 1.8rem;
+            text-align: left;
+        }
+
+        .minimal-article-meta {
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .minimal-article-title {
+            max-width: 14ch;
+            margin-bottom: 1rem;
+            font-size: clamp(2.4rem, 5vw, 4.5rem);
+            line-height: 0.98;
+            letter-spacing: -0.04em;
+        }
+
+        .minimal-article-description {
+            max-width: 46rem;
+            margin: 0 0 1.15rem;
+            color: var(--text-secondary);
+            font-size: 1.08rem;
+            line-height: 1.8;
+        }
+
+        .minimal-article-author {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.85rem;
+            padding: 0.55rem 0.8rem 0.55rem 0.55rem;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 14px 34px rgba(15, 23, 42, 0.06);
+        }
+
+        .author-avatar {
+            width: 2.6rem;
+            height: 2.6rem;
+            border-radius: 999px;
+            object-fit: cover;
+            border: 2px solid rgba(201, 169, 97, 0.24);
+        }
+
+        .minimal-featured-image {
+            margin-bottom: 1.8rem;
+            border-radius: 28px;
+            overflow: hidden;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 28px 80px rgba(15, 23, 42, 0.12);
+        }
+
+        .article-intro-card {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+            margin-bottom: 1.8rem;
+            padding: 1.6rem 1.75rem;
+            border-radius: 28px;
+            background:
+                radial-gradient(circle at top right, rgba(201, 169, 97, 0.18), transparent 38%),
+                linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(250, 247, 242, 0.92));
+            border: 1px solid rgba(201, 169, 97, 0.22);
+            box-shadow: 0 20px 48px rgba(15, 23, 42, 0.08);
+        }
+
+        .article-intro-card__eyebrow {
+            margin: 0 0 0.6rem;
+            color: var(--gold-dark);
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .article-intro-card__title {
+            margin: 0;
+            color: var(--navy);
+            font-size: clamp(1.55rem, 2.5vw, 2.15rem);
+            line-height: 1.08;
+        }
+
+        .article-intro-card__copy {
+            margin: 0;
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.78;
+        }
+
+        .article-intro-card__list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 0.8rem;
+        }
+
+        .article-intro-card__list li {
+            position: relative;
+            margin: 0;
+            padding-left: 1.35rem;
+            color: var(--text-primary);
+            font-size: 0.96rem;
+            line-height: 1.65;
+        }
+
+        .article-intro-card__list li::before {
+            content: "";
+            position: absolute;
+            top: 0.58rem;
+            left: 0;
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 999px;
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+        }
+
+        .article-rail {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .statistics-section {
+            margin: 0;
+        }
+
+        .statistics-grid {
+            display: grid;
+            gap: 0.9rem;
+            grid-template-columns: 1fr;
+        }
+
+        .stat-card {
+            padding: 1.15rem 1.2rem;
+            border-radius: 24px;
+            background: rgba(255, 255, 255, 0.92);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+            text-align: left;
+        }
+
+        .stat-icon-wrapper {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.7rem;
+            height: 2.7rem;
+            margin-bottom: 0.95rem;
+            border-radius: 0.95rem;
+            background: rgba(201, 169, 97, 0.12);
+            color: var(--gold-dark);
+        }
+
+        .stat-icon {
+            width: 1.3rem;
+            height: 1.3rem;
+        }
+
+        .stat-value {
+            color: var(--navy);
+            font-family: "DM Serif Display", Georgia, serif;
+            font-size: 2rem;
+            line-height: 1;
+            letter-spacing: -0.04em;
+        }
+
+        .stat-label {
+            margin-top: 0.45rem;
+            color: var(--text-primary);
+            font-size: 0.9rem;
+            font-weight: 700;
+            line-height: 1.4;
+            text-transform: none;
+        }
+
+        .stat-context,
+        .stat-source {
+            display: block;
+            margin-top: 0.65rem;
+            color: var(--text-muted);
+            font-size: 0.84rem;
+            line-height: 1.6;
+        }
+
+        .article-rail-card {
+            padding: 1.25rem 1.25rem 1.3rem;
+            border-radius: 24px;
+            background: linear-gradient(160deg, #182234, #0f172a);
+            color: white;
+            box-shadow: 0 22px 55px rgba(15, 23, 42, 0.18);
+        }
+
+        .article-rail-card--muted {
+            background: rgba(255, 255, 255, 0.9);
+            color: var(--text-secondary);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+        }
+
+        .article-rail-card__eyebrow {
+            margin: 0 0 0.55rem;
+            color: rgba(217, 196, 138, 0.92);
+            font-size: 0.74rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .article-rail-card--muted .article-rail-card__eyebrow {
+            color: var(--gold-dark);
+        }
+
+        .article-rail-card__title {
+            margin: 0 0 0.75rem;
+            color: inherit;
+            font-size: 1.35rem;
+            line-height: 1.12;
+        }
+
+        .article-rail-card__body {
+            margin: 0;
+            color: inherit;
+            font-size: 0.95rem;
+            line-height: 1.72;
+        }
+
+        .minimal-content {
+            padding: clamp(1.35rem, 2vw, 2.6rem);
+            border-radius: 32px;
+            background: rgba(255, 255, 255, 0.96);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 28px 72px rgba(15, 23, 42, 0.08);
+            color: #374151;
+            font-size: 1.07rem;
+            line-height: 1.8;
+        }
+
+        .minimal-content p {
+            margin-bottom: 1.45rem;
+            line-height: 1.82;
+        }
+
+        .minimal-content h2 {
+            margin-top: 3rem;
+            margin-bottom: 1.2rem;
+            color: #111827;
+            font-size: clamp(1.9rem, 2.8vw, 2.6rem);
+            font-weight: 400;
+            line-height: 1.08;
+        }
+
+        .minimal-content h3 {
+            margin-top: 2.2rem;
+            margin-bottom: 0.95rem;
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #1f2937;
+            line-height: 1.3;
+        }
+
+        .minimal-content table {
+            width: 100%;
+            margin: 2.2rem 0;
+            border-collapse: separate;
+            border-spacing: 0;
+            font-size: 0.97rem;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+        }
+
+        .minimal-content thead {
+            background: #0f172a;
+            color: white;
+        }
+
+        .minimal-content th {
+            padding: 1rem 1.1rem;
+            text-align: left;
+            font-weight: 700;
+            font-size: 0.77rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .minimal-content td {
+            padding: 0.95rem 1.1rem;
+            border-bottom: 1px solid #e5e7eb;
+            vertical-align: top;
+        }
+
+        .minimal-content tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .minimal-content tbody tr:nth-child(even) {
+            background: #faf7f2;
+        }
+
+        .minimal-content tbody tr:hover {
+            background: rgba(201, 169, 97, 0.09);
+        }
+
+        .minimal-content blockquote {
+            margin: 2.3rem 0;
+            padding: 1.4rem 1.6rem;
+            border-radius: 24px;
+            background: rgba(201, 169, 97, 0.11);
+            border-left: 4px solid #d4a853;
+            font-size: 1.12rem;
+            line-height: 1.72;
+        }
+
+        .minimal-content blockquote p {
+            margin-bottom: 0;
+        }
+
+        .minimal-content ul,
+        .minimal-content ol {
+            margin-bottom: 1.45rem;
+            padding-left: 1.35rem;
+        }
+
+        .minimal-content li {
+            margin-bottom: 0.7rem;
+            line-height: 1.72;
+        }
+
+        .minimal-content strong {
+            font-weight: 700;
+            color: #111827;
+        }
+
+        .minimal-content a {
+            color: #b8933f;
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 0.16em;
+        }
+
+        .minimal-content a:hover {
+            color: #8e6d2d;
+        }
+
+        .article-faq {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            border-radius: 28px;
+            background: rgba(255, 255, 255, 0.96);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 22px 55px rgba(15, 23, 42, 0.08);
+        }
+
+        .article-faq__header {
+            margin-bottom: 1rem;
+        }
+
+        .article-faq__eyebrow {
+            margin: 0 0 0.45rem;
+            color: var(--gold-dark);
+            font-size: 0.76rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .article-faq__title {
+            margin: 0;
+            color: var(--navy);
+            font-size: clamp(1.7rem, 2.2vw, 2.25rem);
+        }
+
+        .article-faq__list {
+            display: grid;
+            gap: 0.85rem;
+        }
+
+        .article-faq__item {
+            border-radius: 20px;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            background: rgba(250, 247, 242, 0.65);
+            overflow: hidden;
+        }
+
+        .article-faq__question {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 1.1rem 1.15rem;
+            border: none;
+            background: transparent;
+            color: var(--navy);
+            font-size: 0.98rem;
+            font-weight: 700;
+            text-align: left;
+        }
+
+        .article-faq__chevron {
+            width: 1.15rem;
+            height: 1.15rem;
+            color: var(--text-muted);
+            transition: transform 0.2s ease;
+            flex: 0 0 auto;
+        }
+
+        .article-faq__question[aria-expanded="true"] .article-faq__chevron {
+            transform: rotate(180deg);
+        }
+
+        .article-faq__answer {
+            display: none;
+            padding: 0 1.15rem 1.15rem;
+        }
+
+        .article-faq__answer--open {
+            display: block;
+        }
+
+        .article-faq__answer p {
+            margin: 0;
+            color: var(--text-secondary);
+            font-size: 0.97rem;
+            line-height: 1.72;
+        }
+
+        @media (min-width: 1024px) {
+            .article-shell {
+                grid-template-columns: minmax(0, 1.55fr) minmax(320px, 0.78fr);
+                gap: 2.25rem;
+            }
+
+            .article-rail {
+                position: sticky;
+                top: 6.5rem;
+            }
+        }
+
+        @media (max-width: 1023px) {
+            .article-shell {
+                gap: 1.5rem;
+            }
+
+            .statistics-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 767px) {
+            .minimal-article {
+                padding: 106px 18px 64px;
+            }
+
+            .minimal-article-title {
+                max-width: none;
+                font-size: clamp(2rem, 10vw, 3rem);
+            }
+
+            .minimal-article-description {
+                font-size: 1rem;
+            }
+
+            .article-intro-card {
+                grid-template-columns: 1fr;
+                padding: 1.25rem;
+                border-radius: 24px;
+            }
+
+            .minimal-featured-image,
+            .minimal-content,
+            .article-faq {
+                border-radius: 24px;
+            }
+
+            .minimal-content {
+                padding: 1.15rem;
+            }
+
+            .minimal-content h2 {
+                margin-top: 2.35rem;
+            }
+
+            .minimal-content table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+            }
+        }
+
+        @media (max-width: 479px) {
+            .statistics-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .article-rail-card,
+            .stat-card {
+                padding: 1rem;
+            }
+        }
+    </style>
+
+    <!-- Schema Markup -->
+    
+
+
+
+
+
+
+
+
+
+<!-- BreadcrumbList Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.legacyinvestingshow.com/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://www.legacyinvestingshow.com/blog"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "High Deductible vs Low Deductible Insurance: The Break-Even Math",
+            "item": "https://www.legacyinvestingshow.com/blog/high-deductible-vs-low-deductible-insurance"
+        }
+    ]
+}
+</script>
+
+<!-- Article Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "High Deductible vs Low Deductible Insurance: The Break-Even Math",
+    "description": "High and low deductible insurance compared with break-even math: premium savings, claim frequency, and the absorb test that tells you which choice wins.",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.legacyinvestingshow.com/assets/images/og-blog.jpg",
+        "width": 1200,
+        "height": 630
+    },
+    "author": {
+        "@type": "Person",
+        "@id": "https://www.legacyinvestingshow.com/about#author",
+        "name": "Preston Seo",
+        "url": "https://www.legacyinvestingshow.com/about",
+        "jobTitle": "Real Estate Investor & Educator",
+        "knowsAbout": [
+            "Airbnb Arbitrage",
+            "Real Estate Investing",
+            "Short-Term Rentals",
+            "Passive Income Strategies",
+            "Property Management"
+        ],
+        "sameAs": [
+            "https://www.instagram.com/thelegacyshow",
+            "https://www.youtube.com/@thelegacyinvestingshow",
+            "https://www.tiktok.com/@thelegacyshow"
+        ]
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Legacy Investing Show",
+        "url": "https://www.legacyinvestingshow.com/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.legacyinvestingshow.com/assets/images/logo.png",
+            "width": 512,
+            "height": 512
+        },
+        "sameAs": [
+            "https://www.instagram.com/thelegacyshow",
+            "https://www.youtube.com/@thelegacyinvestingshow",
+            "https://www.tiktok.com/@thelegacyshow",
+            "https://www.facebook.com/share/19LQhE6gmh/"
+        ]
+    },
+    "datePublished": "2026-08-09T00:00:00.000Z",
+    "dateModified": "2026-08-09T00:00:00.000Z",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.legacyinvestingshow.com/blog/high-deductible-vs-low-deductible-insurance"
+    },
+    "articleSection": "Insurance",
+    "wordCount": 991,
+    "keywords": "high deductible vs low deductible, deductible vs premium break even, high deductible insurance, low deductible insurance, how to choose an insurance deductible, is a high deductible worth it, how to calculate deductible break even, what deductible should I choose",
+    "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".minimal-article-title", ".minimal-content p:first-of-type"]
+    },
+    "isAccessibleForFree": true,
+    "inLanguage": "en-US"
+}
+</script>
+
+
+<!-- FAQPage Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        
+        {
+            "@type": "Question",
+            "name": "Is a high deductible worth it?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It depends on the premium saving, the deductible gap, and how often you claim. Divide the deductible gap by the annual premium saving to get the break-even in years. If you claim less often than the break-even, the higher deductible costs less in total."
+            }
+        },
+        
+        {
+            "@type": "Question",
+            "name": "What is the difference between a $500 and a $1,000 deductible?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The deductible is the amount you pay before coverage starts. A $1,000 deductible means $500 more out of pocket on the first claim, in exchange for lower premiums. At $120 a year in savings, the extra $500 is repaid in 4.2 years."
+            }
+        },
+        
+        {
+            "@type": "Question",
+            "name": "How do I calculate the deductible break-even?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Divide the deductible gap by the annual premium saving. Example: $500 gap divided by $120 a year equals 4.2 years. Claims more frequent than the break-even favor the lower deductible; claims less frequent favor the higher one."
+            }
+        },
+        
+        {
+            "@type": "Question",
+            "name": "Should I choose a high deductible health plan?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A high-deductible health plan is the only plan type that qualifies for a health savings account, which adds a tax benefit on top of the premium saving. Use the same break-even math, then check that you can absorb the deductible from savings."
+            }
+        },
+        
+        {
+            "@type": "Question",
+            "name": "What if I cannot afford the higher deductible?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Choose the deductible you can pay from savings without borrowing. A deductible is a cash obligation at claim time. If the higher deductible empties your emergency fund, the lower deductible is the correct choice, even when the math favors the higher one."
+            }
+        }
+        
+    ]
+}
+</script>
+
+
+<!-- Organization Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Legacy Investing Show",
+    "url": "https://www.legacyinvestingshow.com/",
+    "logo": "https://www.legacyinvestingshow.com/assets/images/logo.png",
+    "sameAs": [
+        "https://www.instagram.com/thelegacyinvestingshow/",
+        "https://www.youtube.com/@LegacyInvestingShow",
+        "https://www.tiktok.com/@thelegacyinvestingshow",
+        "https://www.facebook.com/share/19LQhE6gmh/"
+    ]
+}
+</script>
+
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-2578PT1WSS');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
+
+</head>
+<body class="bg-cream text-navy">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <header class="header-glass fixed top-0 left-0 right-0 z-50">
+    <nav class="container-custom" aria-label="Main navigation">
+        <div class="flex items-center justify-between h-16">
+            <a href="/" class="flex items-center gap-2 font-medium text-gray-900 hover:text-gray-700 transition-colors">
+                <img src="../assets/images/logo.png" alt="Legacy Investing Show Logo" width="28" height="28" class="w-7 h-7">
+                <span>Legacy Investing Show</span>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/about" class="nav-link">About</a>
+                <a href="/success-stories" class="nav-link">Results</a>
+                <a href="/blog/" class="nav-link nav-link-active">Blog</a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-navy" aria-label="Open menu">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden pb-4">
+            <div class="flex flex-col gap-3">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/about" class="nav-link">About</a>
+                <a href="/success-stories" class="nav-link">Results</a>
+                <a href="/blog/" class="nav-link">Blog</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress" aria-hidden="true">
+        <div class="reading-progress-bar"></div>
+    </div>
+
+    <main id="main">
+        <article class="minimal-article">
+            <nav aria-label="Breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb__item">
+            <a href="/" class="breadcrumb__link">Home</a>
+        </li>
+        <li class="breadcrumb__item">
+            <a href="/blog/" class="breadcrumb__link">Blog</a>
+        </li>
+        <li class="breadcrumb__item">
+            <span class="breadcrumb__current">High Deductible vs Low Deductible Insurance: The Break-Even Math</span>
+        </li>
+    </ol>
+</nav>
+
+
+            <div class="article-shell">
+                <div class="article-main">
+                    <header class="minimal-article-header">
+                        <span class="article-eyebrow">Comparison Guide</span>
+                        <div class="minimal-article-meta">
+                            <span>Insurance</span>
+                            <span class="meta-dot"></span>
+                            <time datetime="2026-08-09T00:00:00.000Z">August 9, 2026</time>
+                            <span class="meta-dot"></span>
+                            <span>5 min read</span>
+                        </div>
+                        <h1 class="minimal-article-title">High Deductible vs Low Deductible Insurance: The Break-Even Math</h1>
+                        <p class="minimal-article-description">High and low deductible insurance compared with break-even math: premium savings, claim frequency, and the absorb test that tells you which choice wins.</p>
+                        <div class="minimal-article-author">
+                            <picture>
+                                <source srcset="../assets/images/preston-main.webp" type="image/webp">
+                                <img src="../assets/images/preston-main.jpg"
+                                     alt="Preston Seo"
+                                     width="36"
+                                     height="36"
+                                     class="author-avatar"
+                                     fetchpriority="low"
+                                     decoding="async">
+                            </picture>
+                            <span>Preston Seo</span>
+                        </div>
+                    </header>
+
+                    <div class="minimal-featured-image">
+                        <picture>
+                            
+                            <img src="../assets/images/og-blog.jpg" alt="High Deductible vs Low Deductible Insurance: The Break-Even Math" width="800" height="450" loading="eager" fetchpriority="high" decoding="async">
+                        </picture>
+                    </div>
+
+                    <section class="article-intro-card" aria-label="How to use this guide">
+                        <div>
+                            <p class="article-intro-card__eyebrow">Use This Like a Tool</p>
+                            <h2 class="article-intro-card__title">The wrong option usually looks fine until timing, taxes, or execution pressure shows up.</h2>
+                        </div>
+                        <ul class="article-intro-card__list">
+                            
+                            <li>Clarify what winning means before you compare options.</li>
+                            
+                            <li>Pressure-test the weaker scenario, not just the best case.</li>
+                            
+                            <li>Review the decision with your advisor before execution starts.</li>
+                            
+                        </ul>
+                    </section>
+
+                    <div class="minimal-content">
+                        <p>The deductible decision is a math problem with three inputs: the deductible gap, the annual premium saving, and how often you claim. Most people choose by feeling. The numbers decide faster.</p>
+<p>Consider the common pair: a $500 deductible and a $1,000 deductible. Suppose the higher deductible saves $120 a year in premium. The $500 difference in deductibles is repaid in 4.2 years. Claim less often than every 4.2 years, and the higher deductible costs less in total. Claim more often, and the lower one wins.</p>
+<h2>How the trade works</h2>
+<p>The deductible is the amount you pay before coverage starts. It is a risk-sharing device: you take a larger slice of each claim, and the insurer charges less for the policy. The two settings are locked together. You never shop for a deductible alone; you shop for a deductible-and-premium pair.</p>
+<p>The trade is only worth studying because claims are rare for most policies. A $500 and a $1,000 deductible differ by $500 on the first claim of a year, but the premium difference applies every single year. That is why the choice is a time calculation, not a one-claim calculation.</p>
+<h2>The break-even calculation</h2>
+<p>The formula has two numbers:</p>
+<p><strong>Years to break even = Deductible gap ÷ Annual premium saving</strong></p>
+<p>For the example pair:</p>
+<p><strong>$500 ÷ $120 per year = 4.2 years</strong></p>
+<p>Before the break-even point, the lower deductible has cost you less. After it, the higher deductible has. Most policies sit in force for years, which is why the higher deductible wins so often on paper.</p>
+<h2>Claim frequency decides</h2>
+<p>The only input you cannot know in advance is your claim rate. The math still gives you a decision rule. Here is the same pair, run over five years:</p>
+<table>
+<thead>
+<tr>
+<th>Deductible</th>
+<th>Annual premium</th>
+<th>5 years of premiums</th>
+<th>One claim in year 3</th>
+<th>Total over 5 years</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$500</td>
+<td>$1,200</td>
+<td>$6,000</td>
+<td>$500</td>
+<td>$6,500</td>
+</tr>
+<tr>
+<td>$1,000</td>
+<td>$1,080</td>
+<td>$5,400</td>
+<td>$1,000</td>
+<td>$6,400</td>
+</tr>
+</tbody>
+</table>
+<p>With one claim every five years, the higher deductible costs $100 less. With no claims, it costs $600 less. The lower deductible wins only when claims arrive faster than the break-even. At one claim every three years, the totals flip: the $500 deductible costs $4,100 against $4,240, a $140 advantage that shrinks as the years pass.</p>
+<h2>The absorb test</h2>
+<p>Before you trust the math, run the absorb test. Can you pay the full deductible from savings without borrowing? If the answer is no, the higher deductible is a risk you are not being paid enough to take. A deductible is a cash obligation at claim time, and it resets every policy year.</p>
+<p>There is a second, quieter effect. Filing a claim near the deductible amount is usually a loss: the payout is small, and a claim on your record can raise your premium for years. Households with higher deductibles correctly stop filing small claims, which keeps their future premiums lower. That behavior compounds the arithmetic in the table above.</p>
+<h2>Deductibles by policy type</h2>
+<p>The same choice appears on every policy, with different common ranges:</p>
+<ul>
+<li><strong>Health.</strong> Marketplace deductibles commonly run $1,500 to $7,000 for individuals, and high-deductible health plans are the only marketplace plans that qualify for a health savings account.</li>
+<li><strong>Auto.</strong> Collision and comprehensive deductibles usually sit at $500 or $1,000. The gap between them is small and claims are rare, which pushes the math toward the higher number.</li>
+<li><strong>Home and renters.</strong> Home deductibles commonly run $1,000 to $2,500, and renters deductibles $500 to $1,000. Home claims are rare and large, so the deductible is a small share of the claim.</li>
+<li><strong>Pet.</strong> Annual deductibles commonly run $250 to $1,000 and reset every year. The reset makes claim frequency close to certain, and the higher deductible usually wins for the same reason.</li>
+</ul>
+<h2>What to do with the savings</h2>
+<p>The premium saving is not spending money. It is the funding source for the higher deductible. Save the $120 a year in a dedicated account, and in four years you have banked the full $500 difference. From then on, the higher deductible pays you to hold the risk.</p>
+<h2>Run the numbers at every renewal</h2>
+<p>Premium changes at renewal reset the break-even. A $120 saving becomes $90 or $150 as rates move, and the break-even moves with it. Re-run the calculator each year, and treat the deductible as a deliberate choice rather than a setting you made once.</p>
+<h2>Where the same logic applies</h2>
+<p>The break-even math works on every policy type, with different claim rhythms:</p>
+<ul>
+<li><strong>Health insurance.</strong> Marketplace plans price deductibles against premiums directly, and a high-deductible plan is the only type that qualifies for a health savings account. Compare plans side by side with the <a href="/tools/health-insurance-plan-comparison">health insurance plan comparison tool</a>, and read the <a href="/blog/how-to-compare-health-insurance-plans">plan comparison guide</a> for the three numbers that decide the choice.</li>
+<li><strong>Auto insurance.</strong> Collision and comprehensive deductibles follow the same math, and claims are rarer than health claims, which favors the higher deductible. See how auto rates are built in the <a href="/blog/how-much-does-auto-insurance-cost">auto insurance cost guide</a> and price your own policy with the <a href="/tools/auto-insurance-annual-cost">annual cost tool</a>.</li>
+<li><strong>Renters insurance.</strong> Premiums are already low, so the saving from a higher deductible is smaller in dollars. Run the same formula before you decide. The <a href="/blog/how-much-is-renters-insurance-cost-guide">renters insurance cost guide</a> and the <a href="/tools/renters-insurance-cost">renters cost tool</a> give you the numbers.</li>
+</ul>
+<h2>Decide with the numbers, then check your stomach</h2>
+<p>The deductible choice has a correct arithmetic answer for your claim pattern, and a correct cash answer for your savings. Run the <a href="/tools/deductible-premium-break-even">deductible break-even calculator</a> first. If the higher deductible wins the math and you can absorb it from savings, take it and bank the difference. If either test fails, the lower deductible is the honest choice. The <a href="/tools/categories/insurance-protection">insurance protection hub</a> holds the full set of coverage guides for every policy type.</p>
+
+                    </div>
+
+                    <section class="source-note" aria-label="Primary sources" style="margin: 2rem 0 0; padding: 1.25rem; border: 1px solid #e5e7eb; border-radius: 1rem; background: #f8fafc;">
+            <h2 style="margin: 0 0 0.75rem; font-size: 1.2rem; color: #111827;">Sources To Check Before You Act</h2>
+            <p style="margin: 0 0 0.85rem; color: #4b5563; line-height: 1.7;">Use primary guidance and your own records before you treat any page like a final answer. These are the source layers that should drive the decision.</p>
+            <ul style="margin: 0; padding-left: 1.1rem; list-style: disc; color: #374151;">
+              <li style="margin-bottom: 0.55rem;"><a href="https://www.irs.gov/forms-instructions" rel="noopener noreferrer" target="_blank" style="color: #0f766e; text-decoration: underline;">Current IRS forms, instructions, and publications for the relevant tax year</a></li>
+<li style="margin-bottom: 0.55rem;">Your actual account statements, payroll reports, entity records, and advisor memos</li>
+            </ul>
+          </section>
+
+                    
+                        <section class="article-faq" aria-label="Frequently asked questions">
+    <div class="article-faq__header">
+        <p class="article-faq__eyebrow">Questions that matter before you act</p>
+        <h2 class="article-faq__title">Frequently Asked Questions</h2>
+    </div>
+    <div class="article-faq__list">
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="true"
+                aria-controls="faq-answer-0"
+            >
+                <span>Is a high deductible worth it?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-0"
+                class="article-faq__answer article-faq__answer--open"
+            >
+                <p>It depends on the premium saving, the deductible gap, and how often you claim. Divide the deductible gap by the annual premium saving to get the break-even in years. If you claim less often than the break-even, the higher deductible costs less in total.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-1"
+            >
+                <span>What is the difference between a $500 and a $1,000 deductible?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-1"
+                class="article-faq__answer "
+            >
+                <p>The deductible is the amount you pay before coverage starts. A $1,000 deductible means $500 more out of pocket on the first claim, in exchange for lower premiums. At $120 a year in savings, the extra $500 is repaid in 4.2 years.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-2"
+            >
+                <span>How do I calculate the deductible break-even?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-2"
+                class="article-faq__answer "
+            >
+                <p>Divide the deductible gap by the annual premium saving. Example: $500 gap divided by $120 a year equals 4.2 years. Claims more frequent than the break-even favor the lower deductible; claims less frequent favor the higher one.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-3"
+            >
+                <span>Should I choose a high deductible health plan?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-3"
+                class="article-faq__answer "
+            >
+                <p>A high-deductible health plan is the only plan type that qualifies for a health savings account, which adds a tax benefit on top of the premium saving. Use the same break-even math, then check that you can absorb the deductible from savings.</p>
+            </div>
+        </div>
+        
+        <div class="article-faq__item">
+            <button
+                class="article-faq__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-4"
+            >
+                <span>What if I cannot afford the higher deductible?</span>
+                <svg class="article-faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div
+                id="faq-answer-4"
+                class="article-faq__answer "
+            >
+                <p>Choose the deductible you can pay from savings without borrowing. A deductible is a cash obligation at claim time. If the higher deductible empties your emergency fund, the lower deductible is the correct choice, even when the math favors the higher one.</p>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<script>
+    document.querySelectorAll('.article-faq__question').forEach((button) => {
+        button.addEventListener('click', () => {
+            const expanded = button.getAttribute('aria-expanded') === 'true';
+            button.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+            button.nextElementSibling.classList.toggle('article-faq__answer--open');
+        });
+    });
+</script>
+
+                    
+                </div>
+
+                <aside class="article-rail">
+                    
+                        <section class="statistics-section" aria-label="Key statistics">
+    <div class="statistics-grid">
+        
+        <div class="stat-card" data-stat-index="0">
+            <div class="stat-icon-wrapper">
+                
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                
+            </div>
+            <div class="stat-value">4.2 years</div>
+            <div class="stat-label">Break-even at $120 a year premium saving</div>
+            
+            <span class="stat-context">Computed example: moving from a $500 to a $1,000 deductible saves $120 a year. The $500 deductible gap is repaid in 4.2 years.</span>
+            
+            
+            <span class="stat-source">Computed example</span>
+            
+        </div>
+        
+        <div class="stat-card" data-stat-index="1">
+            <div class="stat-icon-wrapper">
+                
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                
+            </div>
+            <div class="stat-value">$500 vs $1,000</div>
+            <div class="stat-label">The deductible pair in the example</div>
+            
+            <span class="stat-context">The two most common household deductible choices. Break-even time equals the deductible gap divided by the annual premium saving.</span>
+            
+            
+            <span class="stat-source">Computed example</span>
+            
+        </div>
+        
+        <div class="stat-card" data-stat-index="2">
+            <div class="stat-icon-wrapper">
+                
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="9" y1="6" x2="20" y2="6"/><line x1="9" y1="12" x2="20" y2="12"/><line x1="9" y1="18" x2="20" y2="18"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/></svg>
+                
+            </div>
+            <div class="stat-value">$100 less over 5 years</div>
+            <div class="stat-label">Higher deductible total with one claim every 5 years</div>
+            
+            <span class="stat-context">Computed example: with one claim every five years, the $1,000 deductible costs $100 less than the $500 deductible over the same period.</span>
+            
+            
+            <span class="stat-source">Computed example</span>
+            
+        </div>
+        
+    </div>
+</section>
+
+                    
+                    <div class="article-rail-card">
+                        <p class="article-rail-card__eyebrow">Before You Act</p>
+                        <h2 class="article-rail-card__title">The cheap mistake is deciding late.</h2>
+                        <p class="article-rail-card__body">Use this page to slow the decision down just enough to avoid the expensive version of “I thought I understood it.”</p>
+                    </div>
+                    <div class="article-rail-card article-rail-card--muted">
+                        <p class="article-rail-card__eyebrow">Important</p>
+                        <p class="article-rail-card__body">Educational only. Results vary. Tax, legal, and investment decisions should be reviewed with a qualified professional who can see your full situation.</p>
+                    </div>
+                </aside>
+            </div>
+        </article>
+    </main>
+
+    <footer class="bg-navy text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-xl font-bold text-gold mb-4">Legacy Investing Show</h3>
+                <p class="text-gray-400">Helping professionals build wealth through real estate investing and tax optimization strategies.</p>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Resources</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="/blog/" class="hover:text-gold transition">Blog</a></li>
+                    <li><a href="/tax-strategies/" class="hover:text-gold transition">Tax Strategies</a></li>
+                    <li><a href="/blog/" class="hover:text-gold transition">Resources</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Legal</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="/privacy" class="hover:text-gold transition">Privacy Policy</a></li>
+                    <li><a href="/terms" class="hover:text-gold transition">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Connect</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="/about" class="hover:text-gold transition">About</a></li>
+                    <li><a href="/success-stories" class="hover:text-gold transition">Results</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+            <p>&copy; 2026 Legacy Investing Show. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

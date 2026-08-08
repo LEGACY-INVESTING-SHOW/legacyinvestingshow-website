@@ -1,7 +1,7 @@
 # Calculators SEO & Traffic Growth Plan
 
 Date: 2026-08-09
-Status: Implemented 2026-08-09 (deploy pending)
+Status: Implemented 2026-08-09 (batch 2 complete; deploy pending)
 
 ## Goal
 
@@ -44,10 +44,13 @@ Not every tool needs an article. Selection criteria:
 
 ### Layer 1 - Companion articles (highest ROI)
 
-IMPLEMENTED: 13 articles published in content/blog/ (6 insurance, 3 tax, 2
-real estate, 1 investing, 1 retirement), each 950-1,050 words with sourced
-figures, statistics cards, FAQ accordion + schema, calculator CTA, and 6-8
-internal links. Distinct structure per article (no shared skeleton).
+IMPLEMENTED: 42 articles published in content/blog/ (13 in batch 1, 29 in
+batch 2 covering money, banking, taxes, housing, and insurance), each
+950-1,250 words with sourced figures, statistics cards, FAQ accordion +
+schema, calculator CTA, and 4-11 internal links. Distinct structure per
+article (no shared skeleton). Plus 1 comparison page
+(compare/mortgage-payoff-vs-investing) via data/edge-comparison-pages.json.
+Six "-vs-" slugs force-indexed in data/indexation-policy.json.
 
 Write 6-10 posts to start, in markdown under `content/blog/`, using the normal
 build pipeline. Each post: 900-1,400 words, real numbers with sources, a
@@ -85,7 +88,7 @@ Second batch (faster wins, existing authority): taxes and housing.
 
 ### Layer 2 - Tool page enrichment
 
-IMPLEMENTED: "Read the full guide" cards on the 13 mapped calculator pages,
+IMPLEMENTED: "Read the full guide" cards on all 42 mapped calculator pages,
 3-4 new long-tail FAQs per tool across 18 guides, a Sources block under
 Assumptions on the featured tools, and GTM dataLayer events (tool_view,
 tool_calculate, tool_click).
