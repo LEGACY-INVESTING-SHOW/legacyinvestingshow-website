@@ -21,6 +21,8 @@ if [[ ! -d "$ROOT_BLOG_DIR" ]]; then
 fi
 
 published=0
+published_list="$(mktemp)"
+find "$CMS_BLOG_DIR" -mindepth 2 -maxdepth 2 -name 'index.html' -print0 > "$published_list"
 while IFS= read -r -d '' src_file; do
   slug="$(basename "$(dirname "$src_file")")"
   dst_file="$ROOT_BLOG_DIR/$slug.html"
@@ -45,7 +47,8 @@ fs.writeFileSync(filePath, html, 'utf8');
 EOF
 
   published=$((published + 1))
-done < <(find "$CMS_BLOG_DIR" -mindepth 2 -maxdepth 2 -name 'index.html' -print0)
+done < "$published_list"
+rm -f "$published_list"
 
 expected="$(find "$CMS_SRC_DIR" -maxdepth 1 -name '*.md' | wc -l | tr -d ' ')"
 
