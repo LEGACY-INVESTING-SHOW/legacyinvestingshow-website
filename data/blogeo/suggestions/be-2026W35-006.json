@@ -1,0 +1,30 @@
+{
+  "id": "be-2026W35-006",
+  "status": "open",
+  "createdAt": "2026-08-24T16:06:49.514Z",
+  "week": "2026-W35",
+  "kind": "dead-link",
+  "lever": "hygiene",
+  "autoApply": true,
+  "url": "https://www.legacyinvestingshow.com/blog/diana-wealth-plan",
+  "path": "/blog/diana-wealth-plan",
+  "sourcePath": "content/blog/diana-wealth-plan.md",
+  "hrefFrom": "/retirement/social-security",
+  "hrefTo": "/blog/social-security-optimization",
+  "reason": "/retirement/social-security redirects to /blog/social-security-optimization",
+  "gscBefore": {
+    "clicks": 0,
+    "impressions": 14,
+    "position": 3.79,
+    "ctr": 0
+  },
+  "gscSitewideBefore": {
+    "clicks": 875,
+    "impressions": 25237,
+    "ctr": 0.034671315925030706,
+    "position": 23.782906050639937,
+    "startDate": "2026-05-23",
+    "endDate": "2026-08-22"
+  },
+  "contentHash": "7b56c2603685bd4ba96be40a7662b5088f704f296a0e0a8cefad3524777e3b47"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "be-2026W35-002",
+  "status": "open",
+  "createdAt": "2026-08-24T16:06:49.514Z",
+  "week": "2026-W35",
+  "kind": "dead-link",
+  "lever": "hygiene",
+  "autoApply": true,
+  "url": "https://www.legacyinvestingshow.com/blog/7k-month-3-properties-full-time",
+  "path": "/blog/7k-month-3-properties-full-time",
+  "sourcePath": "content/blog/7k-month-3-properties-full-time.md",
+  "hrefFrom": "/blog/micah-facebook-message-5k-month-houston",
+  "hrefTo": "/blog/micah-facebook-message-airbnb",
+  "reason": "/blog/micah-facebook-message-5k-month-houston redirects to /blog/micah-facebook-message-airbnb",
+  "gscBefore": {
+    "clicks": 0,
+    "impressions": 0,
+    "position": 0,
+    "ctr": 0
+  },
+  "gscSitewideBefore": {
+    "clicks": 875,
+    "impressions": 25237,
+    "ctr": 0.034671315925030706,
+    "position": 23.782906050639937,
+    "startDate": "2026-05-23",
+    "endDate": "2026-08-22"
+  },
+  "contentHash": "5c91a4ce0c92ebe8e462ce29d1fb6d0387fdc7d54dfea07088aec6d59e06d3f0"
+}

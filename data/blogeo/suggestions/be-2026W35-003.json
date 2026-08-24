@@ -1,0 +1,30 @@
+{
+  "id": "be-2026W35-003",
+  "status": "open",
+  "createdAt": "2026-08-24T16:06:49.514Z",
+  "week": "2026-W35",
+  "kind": "dead-link",
+  "lever": "hygiene",
+  "autoApply": true,
+  "url": "https://www.legacyinvestingshow.com/blog/clayton-wealth-plan",
+  "path": "/blog/clayton-wealth-plan",
+  "sourcePath": "content/blog/clayton-wealth-plan.md",
+  "hrefFrom": "/tax-strategies/charitable-bunching",
+  "hrefTo": "/tax-strategies/bunching-deductions",
+  "reason": "/tax-strategies/charitable-bunching redirects to /tax-strategies/bunching-deductions",
+  "gscBefore": {
+    "clicks": 0,
+    "impressions": 0,
+    "position": 0,
+    "ctr": 0
+  },
+  "gscSitewideBefore": {
+    "clicks": 875,
+    "impressions": 25237,
+    "ctr": 0.034671315925030706,
+    "position": 23.782906050639937,
+    "startDate": "2026-05-23",
+    "endDate": "2026-08-22"
+  },
+  "contentHash": "2b0f1d287ef8f1522a37057ea6fdfdbec44e47db20ca01e5fa6b14979d220cf9"
+}

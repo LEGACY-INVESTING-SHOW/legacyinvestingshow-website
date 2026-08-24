@@ -1,0 +1,30 @@
+{
+  "id": "be-2026W35-021",
+  "status": "open",
+  "createdAt": "2026-08-24T16:06:49.515Z",
+  "week": "2026-W35",
+  "kind": "dead-link",
+  "lever": "hygiene",
+  "autoApply": true,
+  "url": "https://www.legacyinvestingshow.com/blog/sylvia-wealth-plan",
+  "path": "/blog/sylvia-wealth-plan",
+  "sourcePath": "content/blog/sylvia-wealth-plan.md",
+  "hrefFrom": "/retirement",
+  "hrefTo": "/topics/retirement",
+  "reason": "/retirement redirects to /topics/retirement",
+  "gscBefore": {
+    "clicks": 0,
+    "impressions": 0,
+    "position": 0,
+    "ctr": 0
+  },
+  "gscSitewideBefore": {
+    "clicks": 875,
+    "impressions": 25237,
+    "ctr": 0.034671315925030706,
+    "position": 23.782906050639937,
+    "startDate": "2026-05-23",
+    "endDate": "2026-08-22"
+  },
+  "contentHash": "cf7e50760cccf4bd1d5384f43d15c65f8ebc0dd6d887c69cbb6b8648fa1de707"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "be-2026W35-026",
+  "status": "open",
+  "createdAt": "2026-08-24T16:06:49.515Z",
+  "week": "2026-W35",
+  "kind": "content-push",
+  "lever": "rank",
+  "autoApply": false,
+  "url": "https://www.legacyinvestingshow.com/blog/401k-rollover-guide",
+  "path": "/blog/401k-rollover-guide",
+  "sourcePath": "content/blog/401k-rollover-guide.md",
+  "reason": "Position 61.43 with 304 impressions. Title-only will not close this.",
+  "suggestedAction": "Human Edit only. Content push, not an Approve card.",
+  "gscBefore": {
+    "clicks": 0,
+    "impressions": 304,
+    "position": 61.43,
+    "ctr": 0
+  },
+  "gscSitewideBefore": {
+    "clicks": 875,
+    "impressions": 25237,
+    "ctr": 0.034671315925030706,
+    "position": 23.782906050639937,
+    "startDate": "2026-05-23",
+    "endDate": "2026-08-22"
+  },
+  "contentHash": "0fc0547882c54e4f497acd5296d1cda7342dfe7209747760b97e82062298661d"
+}

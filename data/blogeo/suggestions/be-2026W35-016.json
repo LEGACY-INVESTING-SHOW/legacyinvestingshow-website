@@ -1,0 +1,30 @@
+{
+  "id": "be-2026W35-016",
+  "status": "open",
+  "createdAt": "2026-08-24T16:06:49.515Z",
+  "week": "2026-W35",
+  "kind": "dead-link",
+  "lever": "hygiene",
+  "autoApply": true,
+  "url": "https://www.legacyinvestingshow.com/blog/micah-facebook-message-5k-month-houston",
+  "path": "/blog/micah-facebook-message-5k-month-houston",
+  "sourcePath": "content/blog/micah-facebook-message-5k-month-houston.md",
+  "hrefFrom": "/blog/facebook-marketplace-landlord-scripts",
+  "hrefTo": "/blog/how-to-convince-landlords-for-airbnb-arbitrage",
+  "reason": "/blog/facebook-marketplace-landlord-scripts redirects to /blog/how-to-convince-landlords-for-airbnb-arbitrage",
+  "gscBefore": {
+    "clicks": 0,
+    "impressions": 0,
+    "position": 0,
+    "ctr": 0
+  },
+  "gscSitewideBefore": {
+    "clicks": 875,
+    "impressions": 25237,
+    "ctr": 0.034671315925030706,
+    "position": 23.782906050639937,
+    "startDate": "2026-05-23",
+    "endDate": "2026-08-22"
+  },
+  "contentHash": "365e12d38372125113e16fae78eac3b60b02f79fb83d87016937a42e1c8eadf9"
+}

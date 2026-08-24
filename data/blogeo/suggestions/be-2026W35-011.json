@@ -1,0 +1,30 @@
+{
+  "id": "be-2026W35-011",
+  "status": "open",
+  "createdAt": "2026-08-24T16:06:49.515Z",
+  "week": "2026-W35",
+  "kind": "dead-link",
+  "lever": "hygiene",
+  "autoApply": true,
+  "url": "https://www.legacyinvestingshow.com/blog/it-guy-75-percent-occupancy",
+  "path": "/blog/it-guy-75-percent-occupancy",
+  "sourcePath": "content/blog/it-guy-75-percent-occupancy.md",
+  "hrefFrom": "/blog/micah-facebook-message-5k-month-houston",
+  "hrefTo": "/blog/micah-facebook-message-airbnb",
+  "reason": "/blog/micah-facebook-message-5k-month-houston redirects to /blog/micah-facebook-message-airbnb",
+  "gscBefore": {
+    "clicks": 0,
+    "impressions": 0,
+    "position": 0,
+    "ctr": 0
+  },
+  "gscSitewideBefore": {
+    "clicks": 875,
+    "impressions": 25237,
+    "ctr": 0.034671315925030706,
+    "position": 23.782906050639937,
+    "startDate": "2026-05-23",
+    "endDate": "2026-08-22"
+  },
+  "contentHash": "dfaa3bab2305895f9a1bb4a4a2f50ec5cc51ae541cdceacac9e57dbbd7e1255a"
+}
