@@ -71,6 +71,12 @@ module.exports = function(eleventyConfig) {
     }
   });
 
+  eleventyConfig.addCollection("blogIndex", (collectionApi) => {
+    return collectionApi.getFilteredByGlob("src/blog/*.md")
+      .filter((item) => item.data.hideFromBlogIndex !== true)
+      .sort((a, b) => b.date - a.date);
+  });
+
   eleventyConfig.addShortcode("sourceBlock", function(title = "", slug = "", type = "") {
     return renderSourceBlock({
       title,

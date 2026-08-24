@@ -8,9 +8,15 @@ const { saveSuggestion } = require('./apply-edit');
 const { pickIsoWeek } = require('./opportunity');
 const { loadOwnership, findOwner } = require('./ownership');
 const { isBrandedQuery, isInClusterQuery } = require('./queries');
+const { proposeTitle, proposeDescription } = require('./draft-edit');
 
 function pad(num) {
     return String(num).padStart(3, '0');
+}
+
+function countOccurrences(haystack, needle) {
+    if (!needle) return 0;
+    return String(haystack).split(needle).length - 1;
 }
 
 function makeTicket(partial, index, week) {
@@ -23,7 +29,19 @@ function makeTicket(partial, index, week) {
     };
 }
 
-function buildAuditTickets(scored, flags, snapshot) {
+function uniqueTitleYearSwap(page, root) {
+    const sourcePath = page.sourcePath;
+    if (!sourcePath || !sourcePath.endsWith('.md')) return null;
+    const abs = path.join(root, sourcePath);
+    if (!fs.existsSync(abs)) return null;
+    const live = fs.readFileSync(abs, 'utf8');
+    const titleLine = live.match(/^title:\s*(.+)$/m);
+    if (!titleLine || !/\b2025\b/.test(titleLine[1])) return null;
+    if (countOccurrences(live, '2025') !== 1) return null;
+    return { phraseFrom: '2025', phraseTo: '2026' };
+}
+
+function buildAuditTickets(scored, flags, snapshot, root = ROOT_DIR) {
     const week = (snapshot && snapshot.week) || pickIsoWeek();
     const tickets = [];
     let n = 1;
@@ -69,11 +87,38 @@ function buildAuditTickets(scored, flags, snapshot) {
             path: page.path,
             sourcePath: page.sourcePath,
             beforeTitle: page.title,
-            afterTitle: null,
+            afterTitle: proposeTitle(page, page.primaryKeyword) || null,
             beforeDescription: page.description,
-            afterDescription: null,
+            afterDescription: proposeDescription(page, page.primaryKeyword) || null,
             reason: `CTR ${((page.gsc.ctr || 0) * 100).toFixed(2)}% vs expected ${((page.opportunity.expectedCtr || 0) * 100).toFixed(1)}% at position ${page.gsc.position}`,
             suggestedAction: 'Rewrite title/description to match the head query. Do not change body copy.',
+            gscBefore: page.gsc,
+            gscSitewideBefore: snapshot ? snapshot.sitewide : null,
+        }, n, week));
+        n += 1;
+    }
+
+    const htmlCtr = scored.filter((page) => (
+        page.indexable
+        && !page.sitelinkSuspect
+        && page.opportunity.lever === 'ctr'
+        && page.opportunity.score > 0
+        && page.sourcePath
+        && !page.sourcePath.endsWith('.md')
+    )).slice(0, 5);
+    for (const page of htmlCtr) {
+        const toolsExport = String(page.sourcePath).replace(/\\/g, '/').startsWith('tools/');
+        tickets.push(makeTicket({
+            kind: 'content-push',
+            lever: 'ctr',
+            autoApply: false,
+            url: page.url,
+            path: page.path,
+            sourcePath: page.sourcePath,
+            reason: `CTR leak on a non-markdown surface (${page.sourcePath}).`,
+            suggestedAction: toolsExport
+                ? 'Edit the calcs2 repo. Do not patch tools/*.html as source of truth.'
+                : 'Edit the JSON/HTML source of truth. apply-edit will not rewrite this surface.',
             gscBefore: page.gsc,
             gscSitewideBefore: snapshot ? snapshot.sitewide : null,
         }, n, week));
@@ -96,6 +141,46 @@ function buildAuditTickets(scored, flags, snapshot) {
             gscBefore: page.gsc,
             gscSitewideBefore: snapshot ? snapshot.sitewide : null,
         }, n, week));
+        n += 1;
+    }
+
+    const factFlags = flags.filter((item) => item.type === 'staleTaxYear' || item.type === 'bannedTerm');
+    const seenFact = new Set();
+    for (const flag of factFlags.slice(0, 8)) {
+        const key = `${flag.path}|${flag.type}|${flag.detail}`;
+        if (seenFact.has(key)) continue;
+        seenFact.add(key);
+        const page = scored.find((item) => item.path === flag.path) || {};
+        const swap = flag.type === 'staleTaxYear' ? uniqueTitleYearSwap(page, root) : null;
+        if (swap) {
+            tickets.push(makeTicket({
+                kind: 'phrase-swap',
+                lever: 'hygiene',
+                autoApply: false,
+                url: page.url,
+                path: flag.path,
+                sourcePath: flag.sourcePath || page.sourcePath,
+                phraseFrom: swap.phraseFrom,
+                phraseTo: swap.phraseTo,
+                reason: flag.detail,
+                suggestedAction: 'Unique title-year token. Apply only if the year is the planning year, not a historical cite.',
+                gscBefore: page.gsc || null,
+                gscSitewideBefore: snapshot ? snapshot.sitewide : null,
+            }, n, week));
+        } else {
+            tickets.push(makeTicket({
+                kind: 'content-push',
+                lever: 'hygiene',
+                autoApply: false,
+                url: page.url,
+                path: flag.path,
+                sourcePath: flag.sourcePath || page.sourcePath,
+                reason: flag.detail,
+                suggestedAction: 'Human Edit only. Quote the source pack; do not auto-rewrite YMYL body copy.',
+                gscBefore: page.gsc || null,
+                gscSitewideBefore: snapshot ? snapshot.sitewide : null,
+            }, n, week));
+        }
         n += 1;
     }
 
@@ -140,6 +225,6 @@ module.exports = {
     buildAuditTickets,
     buildNearMissTickets,
     persistTickets,
-    persistTickets: persistTickets,
     makeTicket,
+    uniqueTitleYearSwap,
 };

@@ -4,8 +4,8 @@
 const fs = require('fs');
 const path = require('path');
 const { ROOT_DIR } = require('./lib/paths');
-const { writeJson } = require('./lib/fs');
-const { writeCatalog, buildCatalog } = require('./lib/catalog');
+const { writeJson, readJson } = require('./lib/fs');
+const { writeCatalog, buildCatalog, loadCatalog } = require('./lib/catalog');
 const { ingestGscCsv, loadLatestGsc } = require('./lib/gsc');
 const { scoreCatalog, powerLaw, nearMissQueries, runHygiene } = require('./lib/score');
 const { seedKeywordOwnership } = require('./lib/ownership');
@@ -17,6 +17,10 @@ const { applyEdit, skipTicket } = require('./lib/apply-edit');
 const { fillWindows } = require('./lib/fill');
 const { pickIsoWeek } = require('./lib/opportunity');
 const { readPolicy } = require('./lib/indexation');
+const { loadSourcePack, factCheckTopPages } = require('./lib/factcheck');
+const { ingestAeoCsv } = require('./lib/aeo-csv');
+const { proposeTitle, proposeDescription } = require('./lib/draft-edit');
+const { writeLlmsTxt } = require('./lib/llms-from-catalog');
 
 function parseArgs(argv) {
     const args = { _: [] };
@@ -35,9 +39,8 @@ function parseArgs(argv) {
     return args;
 }
 
-function latestImportDir(root = ROOT_DIR) {
-    if (process.env.BLOGEO_GSC_DIR) return process.env.BLOGEO_GSC_DIR;
-    const base = path.join(root, 'data', 'blogeo', 'gsc-imports');
+function latestDir(baseName, root = ROOT_DIR) {
+    const base = path.join(root, 'data', 'blogeo', baseName);
     if (!fs.existsSync(base)) return null;
     const dirs = fs.readdirSync(base, { withFileTypes: true })
         .filter((entry) => entry.isDirectory())
@@ -46,11 +49,18 @@ function latestImportDir(root = ROOT_DIR) {
     return dirs.length ? path.join(base, dirs[dirs.length - 1]) : null;
 }
 
+function latestImportDir(root = ROOT_DIR) {
+    return process.env.BLOGEO_GSC_DIR || latestDir('gsc-imports', root);
+}
+
 function cmdCatalog() {
     const catalog = writeCatalog(ROOT_DIR);
     const ownership = seedKeywordOwnership(catalog, {
         forceIndexSlugs: (readPolicy().forceIndexBlogSlugs || []),
     }, ROOT_DIR);
+    const snapshot = loadLatestGsc(ROOT_DIR);
+    const scored = snapshot ? scoreCatalog(catalog, snapshot) : catalog.pages;
+    writeLlmsTxt(catalog, scored, ROOT_DIR);
     console.log(`Catalog: ${catalog.pageCount} pages (${catalog.indexableCount} indexable).`);
     console.log(`Ownership keys: ${Object.keys(ownership.ownership).length}.`);
     return { catalog, ownership };
@@ -65,7 +75,23 @@ function cmdIngest(args) {
     return snapshot;
 }
 
-function runAudit() {
+function normalizePagePath(value) {
+    if (!value || value === true) return null;
+    const raw = String(value).trim();
+    if (!raw) return null;
+    try {
+        if (/^https?:\/\//i.test(raw)) {
+            const pathname = new URL(raw).pathname;
+            return pathname.replace(/\/$/, '') || '/';
+        }
+    } catch (error) {
+        // fall through to path-style handling
+    }
+    const withSlash = raw.startsWith('/') ? raw : `/${raw}`;
+    return withSlash.replace(/\/$/, '') || '/';
+}
+
+function runAudit(args = {}) {
     const catalog = buildCatalog(ROOT_DIR);
     writeCatalog(ROOT_DIR);
     const ownership = seedKeywordOwnership(catalog, {
@@ -80,10 +106,15 @@ function runAudit() {
 
     const scored = scoreCatalog(catalog, snapshot);
     const power = powerLaw(scored, snapshot.sitewide.clicks);
-    const flags = runHygiene(catalog, snapshot, ROOT_DIR);
+    const hygiene = runHygiene(catalog, snapshot, ROOT_DIR);
+    const pack = loadSourcePack(ROOT_DIR);
+    const fact = factCheckTopPages(scored, pack, ROOT_DIR);
+    const flags = hygiene.concat(fact.flags || []);
     const queries = nearMissQueries(snapshot, ownership);
     const tickets = persistTickets(buildAuditTickets(scored, flags, snapshot), ROOT_DIR);
     const week = snapshot.week || pickIsoWeek();
+    const aeo = readJson(path.join(ROOT_DIR, 'data', 'blogeo', 'aeo', 'latest.json'), null);
+    writeLlmsTxt(catalog, scored, ROOT_DIR);
     const run = {
         week,
         generatedAt: new Date().toISOString(),
@@ -91,6 +122,8 @@ function runAudit() {
         catalog: { pageCount: catalog.pageCount, indexableCount: catalog.indexableCount },
         sitewide: snapshot.sitewide,
         power,
+        factcheck: { checkedCount: fact.checkedCount, flagCount: (fact.flags || []).length },
+        aeo: aeo ? { citedUrlCount: aeo.citedUrlCount, rowCount: aeo.rowCount } : null,
         flagCounts: flags.reduce((acc, flag) => {
             acc[flag.type] = (acc[flag.type] || 0) + 1;
             return acc;
@@ -106,10 +139,19 @@ function runAudit() {
             sitelinkSuspect: page.sitelinkSuspect,
         })),
     };
+    const urlFilter = normalizePagePath(args.url || args.path);
+    let issueTickets = tickets;
+    let issueScored = scored;
+    let issueFlags = flags;
+    if (urlFilter) {
+        issueTickets = tickets.filter((ticket) => normalizePagePath(ticket.path) === urlFilter);
+        issueScored = scored.filter((page) => normalizePagePath(page.path) === urlFilter);
+        issueFlags = flags.filter((flag) => normalizePagePath(flag.path) === urlFilter);
+    }
     writeJson(path.join(ROOT_DIR, 'data', 'blogeo', 'runs', `${week}.json`), run);
-    writeGithubIssue({ week, snapshot, power, scored, flags, tickets, queries }, ROOT_DIR);
-    writeBaseline({ catalog, snapshot, power, scored, flags, queries, ownership }, ROOT_DIR);
-    console.log(`Audit ${week}: ${tickets.length} tickets, ${flags.length} hygiene flags.`);
+    writeGithubIssue({ week, snapshot, power, scored: issueScored, flags: issueFlags, tickets: issueTickets, queries }, ROOT_DIR);
+    writeBaseline({ catalog, snapshot, power, scored: issueScored, flags: issueFlags, queries, ownership, aeo }, ROOT_DIR);
+    console.log(`Audit ${week}: ${issueTickets.length} tickets, ${issueFlags.length} hygiene flags, fact-check ${fact.checkedCount} pages${urlFilter ? ` (filtered to ${urlFilter})` : ''}.`);
     console.log('Wrote analysis/blogeo-baseline.md and analysis/blogeo-audit-latest.md');
     return run;
 }
@@ -127,6 +169,66 @@ function cmdApply(args) {
     return edit;
 }
 
+function cmdFactcheck() {
+    const catalog = loadCatalog(ROOT_DIR);
+    const snapshot = loadLatestGsc(ROOT_DIR);
+    const scored = snapshot ? scoreCatalog(catalog, snapshot) : catalog.pages;
+    const result = factCheckTopPages(scored, loadSourcePack(ROOT_DIR), ROOT_DIR);
+    console.log(JSON.stringify(result, null, 2));
+    return result;
+}
+
+function cmdAeo(args) {
+    const dir = args.dir || latestDir('aeo-imports');
+    if (!dir) throw new Error('No AEO import directory. Pass --dir path/to/csv-folder');
+    const snapshot = ingestAeoCsv(dir, ROOT_DIR);
+    console.log(`AEO ingest: ${snapshot.rowCount} rows, ${snapshot.citedUrlCount} cited URLs.`);
+    return snapshot;
+}
+
+function cmdReport(args) {
+    const week = args.week;
+    if (week) {
+        const dated = path.join(ROOT_DIR, 'analysis', `blogeo-audit-${week}.md`);
+        const latest = path.join(ROOT_DIR, 'analysis', 'blogeo-audit-latest.md');
+        const target = fs.existsSync(dated) ? dated : latest;
+        if (fs.existsSync(target)) {
+            console.log(fs.readFileSync(target, 'utf8'));
+            console.log(`Read ${path.relative(ROOT_DIR, target)}`);
+            return target;
+        }
+    }
+    return runAudit(args);
+}
+
+function cmdTitle(args) {
+    const pagePath = normalizePagePath(args.path || args.url);
+    const query = args.query;
+    if (!pagePath) throw new Error('Pass --path /blog/slug or --url /blog/slug');
+    const catalog = loadCatalog(ROOT_DIR);
+    const page = (catalog.pages || []).find((item) => item.path === pagePath);
+    if (!page) throw new Error(`Unknown path: ${pagePath}`);
+    const result = {
+        path: page.path,
+        currentTitle: page.title,
+        currentDescription: page.description,
+        proposedTitle: proposeTitle(page, query),
+        proposedDescription: proposeDescription(page, query),
+        query: query || page.primaryKeyword || null,
+    };
+    console.log(JSON.stringify(result, null, 2));
+    return result;
+}
+
+function cmdLlms() {
+    const catalog = loadCatalog(ROOT_DIR);
+    const snapshot = loadLatestGsc(ROOT_DIR);
+    const scored = snapshot ? scoreCatalog(catalog, snapshot) : catalog.pages;
+    const result = writeLlmsTxt(catalog, scored, ROOT_DIR);
+    console.log(`Updated ${result.outPath}`);
+    return result;
+}
+
 function main() {
     const args = parseArgs(process.argv);
     const command = args._[0] || 'help';
@@ -136,27 +238,40 @@ function main() {
         case 'ingest':
             return cmdIngest(args);
         case 'audit':
+            return runAudit(args);
         case 'report':
-            return runAudit();
+            return cmdReport(args);
         case 'generate':
-            console.log(JSON.stringify(generateNearMiss(ROOT_DIR), null, 2));
+            console.log(JSON.stringify(generateNearMiss(ROOT_DIR, { query: args.query }), null, 2));
             return null;
         case 'apply':
             return cmdApply(args);
         case 'fill':
             console.log(JSON.stringify(fillWindows(ROOT_DIR), null, 2));
             return null;
+        case 'factcheck':
+            return cmdFactcheck();
+        case 'aeo':
+            return cmdAeo(args);
+        case 'title':
+            return cmdTitle(args);
+        case 'llms':
+            return cmdLlms();
         default:
             console.log(`BlogEO CLI
 
 Usage:
   node scripts/blogeo/cli.js catalog
   node scripts/blogeo/cli.js ingest [--dir data/blogeo/gsc-imports/2026-08-24]
-  node scripts/blogeo/cli.js audit
-  node scripts/blogeo/cli.js generate
-  node scripts/blogeo/cli.js report
+  node scripts/blogeo/cli.js audit [--url /blog/slug]
+  node scripts/blogeo/cli.js generate [--query "near miss query"]
+  node scripts/blogeo/cli.js report [--week 2026-W35]
   node scripts/blogeo/cli.js apply --ticket <id> [--skip]
   node scripts/blogeo/cli.js fill
+  node scripts/blogeo/cli.js factcheck
+  node scripts/blogeo/cli.js aeo [--dir data/blogeo/aeo-imports/2026-08-24]
+  node scripts/blogeo/cli.js title --path /blog/slug [--url /blog/slug] [--query "head term"]
+  node scripts/blogeo/cli.js llms
 `);
             return null;
     }

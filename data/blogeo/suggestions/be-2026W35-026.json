@@ -1,21 +1,21 @@
 {
   "id": "be-2026W35-026",
   "status": "open",
-  "createdAt": "2026-08-24T16:06:49.515Z",
+  "createdAt": "2026-08-24T17:26:43.311Z",
   "week": "2026-W35",
   "kind": "content-push",
-  "lever": "rank",
+  "lever": "ctr",
   "autoApply": false,
-  "url": "https://www.legacyinvestingshow.com/blog/401k-rollover-guide",
-  "path": "/blog/401k-rollover-guide",
-  "sourcePath": "content/blog/401k-rollover-guide.md",
-  "reason": "Position 61.43 with 304 impressions. Title-only will not close this.",
-  "suggestedAction": "Human Edit only. Content push, not an Approve card.",
+  "url": "https://www.legacyinvestingshow.com/about",
+  "path": "/about",
+  "sourcePath": "about.html",
+  "reason": "CTR leak on a non-markdown surface (about.html).",
+  "suggestedAction": "Edit the JSON/HTML source of truth. apply-edit will not rewrite this surface.",
   "gscBefore": {
-    "clicks": 0,
-    "impressions": 304,
-    "position": 61.43,
-    "ctr": 0
+    "clicks": 1,
+    "impressions": 1011,
+    "position": 7.25,
+    "ctr": 0.0009891196834817012
   },
   "gscSitewideBefore": {
     "clicks": 875,
@@ -25,5 +25,5 @@
     "startDate": "2026-05-23",
     "endDate": "2026-08-22"
   },
-  "contentHash": "0fc0547882c54e4f497acd5296d1cda7342dfe7209747760b97e82062298661d"
+  "contentHash": "bd96465512e49aff7d3a6b0d70f30832c78e9e9e6bf348a64a26c037265c97dc"
 }

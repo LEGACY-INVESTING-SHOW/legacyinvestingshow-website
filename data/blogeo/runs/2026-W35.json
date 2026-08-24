@@ -1,6 +1,6 @@
 {
   "week": "2026-W35",
-  "generatedAt": "2026-08-24T16:06:49.521Z",
+  "generatedAt": "2026-08-24T17:26:43.318Z",
   "windowNote": "Last 3 months",
   "catalog": {
     "pageCount": 947,
@@ -87,16 +87,22 @@
       }
     ]
   },
+  "factcheck": {
+    "checkedCount": 18,
+    "flagCount": 1
+  },
+  "aeo": null,
   "flagCounts": {
-    "descriptionLength": 290,
+    "descriptionLength": 47,
     "missingImage": 551,
-    "noQuickTake": 313,
     "deadInternalLink": 342,
+    "noQuickTake": 49,
     "taxYearStale": 18,
-    "emptyFaq": 64,
+    "emptyFaq": 10,
     "noindexButTraffic": 1,
     "thinProgrammatic": 73,
-    "dualCanonicalRisk": 8
+    "dualCanonicalRisk": 8,
+    "staleTaxYear": 1
   },
   "ticketIds": [
     "be-2026W35-001",
@@ -126,7 +132,13 @@
     "be-2026W35-025",
     "be-2026W35-026",
     "be-2026W35-027",
-    "be-2026W35-028"
+    "be-2026W35-028",
+    "be-2026W35-029",
+    "be-2026W35-030",
+    "be-2026W35-031",
+    "be-2026W35-032",
+    "be-2026W35-033",
+    "be-2026W35-034"
   ],
   "topOpportunities": [
     {

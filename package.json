@@ -37,8 +37,13 @@
     "blogeo:ingest": "node scripts/blogeo/cli.js ingest",
     "blogeo:audit": "node scripts/blogeo/cli.js audit",
     "blogeo:generate": "node scripts/blogeo/cli.js generate",
+    "blogeo:apply": "node scripts/blogeo/cli.js apply",
+    "blogeo:title": "node scripts/blogeo/cli.js title",
     "blogeo:report": "node scripts/blogeo/cli.js report",
-    "blogeo:fill": "node scripts/blogeo/cli.js fill"
+    "blogeo:fill": "node scripts/blogeo/cli.js fill",
+    "blogeo:factcheck": "node scripts/blogeo/cli.js factcheck",
+    "blogeo:aeo": "node scripts/blogeo/cli.js aeo",
+    "blogeo:llms": "node scripts/blogeo/cli.js llms"
   },
   "dependencies": {
     "@playwright/test": "^1.58.1",

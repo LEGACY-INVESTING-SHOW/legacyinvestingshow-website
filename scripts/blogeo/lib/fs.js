@@ -46,12 +46,10 @@ function walkHtml(dir) {
 
 module.exports = {
     ensureDir,
+    ensureDir: ensureDir,
     readJson,
     writeJson,
     writeText,
-    writeText: writeText,
     listFiles,
-    listFiles: listFiles,
     walkHtml,
-    walkHtml: walkHtml,
 };

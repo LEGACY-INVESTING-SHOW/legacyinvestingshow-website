@@ -55,21 +55,28 @@ GSC window: **Last 3 months**. Recover lever is unavailable until a second compa
 - `be-2026W35-021` · **dead-link** · hygiene · auto-apply candidate · /blog/sylvia-wealth-plan — /retirement redirects to /topics/retirement
 - `be-2026W35-022` · **dead-link** · hygiene · auto-apply candidate · /blog/sylvia-wealth-plan — /retirement/social-security redirects to /blog/social-security-optimization
 - `be-2026W35-023` · **dead-link** · hygiene · auto-apply candidate · /blog/terry-wealth-plan — /tax-strategies/charitable-bunching redirects to /tax-strategies/bunching-deductions
-- `be-2026W35-024` · **content-push** · rank · Approve / Edit / Skip · /blog/preston-seo-review — Position 16.32 with 8599 impressions. Title-only will not close this.
-- `be-2026W35-025` · **content-push** · rank · Approve / Edit / Skip · /blog/how-much-is-renters-insurance-cost-guide — Position 79.15 with 1077 impressions. Title-only will not close this.
-- `be-2026W35-026` · **content-push** · rank · Approve / Edit / Skip · /blog/401k-rollover-guide — Position 61.43 with 304 impressions. Title-only will not close this.
-- `be-2026W35-027` · **content-push** · rank · Approve / Edit / Skip · /blog/2026-mileage-reimbursement-rates — Position 74.87 with 242 impressions. Title-only will not close this.
-- `be-2026W35-028` · **content-push** · rank · Approve / Edit / Skip · /blog/legacy-investing-show-review — Position 14.31 with 345 impressions. Title-only will not close this.
+- `be-2026W35-024` · **content-push** · ctr · Approve / Edit / Skip · /tools — CTR leak on a non-markdown surface (tools/index.html).
+- `be-2026W35-025` · **content-push** · ctr · Approve / Edit / Skip · /compare — CTR leak on a non-markdown surface (compare/index.html).
+- `be-2026W35-026` · **content-push** · ctr · Approve / Edit / Skip · /about — CTR leak on a non-markdown surface (about.html).
+- `be-2026W35-027` · **content-push** · ctr · Approve / Edit / Skip · /tax-strategies — CTR leak on a non-markdown surface (tax-strategies/index.html).
+- `be-2026W35-028` · **content-push** · ctr · Approve / Edit / Skip · /blog — CTR leak on a non-markdown surface (blog/index.html).
+- `be-2026W35-029` · **content-push** · rank · Approve / Edit / Skip · /blog/preston-seo-review — Position 16.32 with 8599 impressions. Title-only will not close this.
+- `be-2026W35-030` · **content-push** · rank · Approve / Edit / Skip · /blog/how-much-is-renters-insurance-cost-guide — Position 79.15 with 1077 impressions. Title-only will not close this.
+- `be-2026W35-031` · **content-push** · rank · Approve / Edit / Skip · /blog/401k-rollover-guide — Position 61.43 with 304 impressions. Title-only will not close this.
+- `be-2026W35-032` · **content-push** · rank · Approve / Edit / Skip · /blog/2026-mileage-reimbursement-rates — Position 74.87 with 242 impressions. Title-only will not close this.
+- `be-2026W35-033` · **content-push** · rank · Approve / Edit / Skip · /blog/legacy-investing-show-review — Position 14.31 with 345 impressions. Title-only will not close this.
+- `be-2026W35-034` · **content-push** · hygiene · Approve / Edit / Skip · /blog/couple-17500-secured-one-week — Visible 2025 in title/description while source pack is 2026+
 
 ## Hygiene flags
 
 - deadInternalLink: 342
-- descriptionLength: 290
+- descriptionLength: 47
 - dualCanonicalRisk: 8
-- emptyFaq: 64
+- emptyFaq: 10
 - missingImage: 551
-- noQuickTake: 313
+- noQuickTake: 49
 - noindexButTraffic: 1
+- staleTaxYear: 1
 - taxYearStale: 18
 - thinProgrammatic: 73
 

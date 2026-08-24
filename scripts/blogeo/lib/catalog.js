@@ -120,6 +120,7 @@ function buildCatalog(root = ROOT_DIR) {
             hasFaq: parsed.faqCount > 0,
             hasQuickTake: parsed.hasQuickTake,
             featured: parsed.featured,
+            hideFromBlogIndex: Boolean(parsed.hideFromBlogIndex),
             hrefs: parsed.links,
         });
     }

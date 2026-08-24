@@ -13,25 +13,33 @@ function num(value) {
     return Number(value || 0).toLocaleString('en-US');
 }
 
-function buildBaselineMarkdown({ catalog, snapshot, power, scored, flags, queries, ownership }) {
-    const week = (snapshot && snapshot.week) || pickIsoWeek();
-    const topScored = (scored || []).filter((page) => page.gsc && page.gsc.impressions > 0).slice(0, 20);
+function buildBaselineMarkdown(payload) {
+    const catalog = payload.catalog || {};
+    const snapshot = payload.snapshot || {};
+    const power = payload.power || {};
+    const scored = payload.scored || [];
+    const flags = payload.flags || [];
+    const queries = payload.queries || [];
+    const ownership = payload.ownership || {};
+    const aeo = payload.aeo || null;
+    const week = snapshot.week || pickIsoWeek();
+    const topScored = scored.filter((page) => page.gsc && page.gsc.impressions > 0).slice(0, 20);
     const brandedClicks = (snapshot.queries || [])
         .filter((row) => /preston seo|legacy investing show|legacyinvestingshow|legacy wealth blueprint/i.test(row.query))
         .reduce((sum, row) => sum + row.clicks, 0);
-    const nearMisses = (queries || []).filter((row) => row.nearMiss);
-    const watch = (queries || []).filter((row) => row.watchlist);
+    const nearMisses = queries.filter((row) => row.nearMiss);
+    const watch = queries.filter((row) => row.watchlist);
     const byType = {};
-    for (const flag of flags || []) byType[flag.type] = (byType[flag.type] || 0) + 1;
+    for (const flag of flags) byType[flag.type] = (byType[flag.type] || 0) + 1;
 
     const lines = [
         '# BlogEO baseline',
         '',
         `Week: **${week}**  `,
-        snapshot && snapshot.windowNote ? `GSC export: **${snapshot.windowNote}**  ` : '',
-        snapshot && snapshot.sitewide ? `Chart range: **${snapshot.sitewide.startDate} → ${snapshot.sitewide.endDate}**  ` : '',
+        snapshot.windowNote ? `GSC export: **${snapshot.windowNote}**  ` : '',
+        snapshot.sitewide ? `Chart range: **${snapshot.sitewide.startDate} → ${snapshot.sitewide.endDate}**  ` : '',
         `Catalog: **${catalog.pageCount}** URLs, **${catalog.indexableCount}** indexable, **${catalog.noindexCount}** noindex  `,
-        `Keyword ownership keys: **${Object.keys((ownership && ownership.ownership) || {}).length}**`,
+        `Keyword ownership keys: **${Object.keys(ownership.ownership || {}).length}**`,
         '',
         '## What this snapshot can and cannot say',
         '',
@@ -43,10 +51,10 @@ function buildBaselineMarkdown({ catalog, snapshot, power, scored, flags, querie
         '',
         '| Metric | Value |',
         '|---|---:|',
-        `| Clicks | ${num(snapshot.sitewide.clicks)} |`,
-        `| Impressions | ${num(snapshot.sitewide.impressions)} |`,
-        `| CTR | ${pct(snapshot.sitewide.ctr)} |`,
-        `| Avg position (impression-weighted daily) | ${(snapshot.sitewide.position || 0).toFixed(1)} |`,
+        `| Clicks | ${num(snapshot.sitewide && snapshot.sitewide.clicks)} |`,
+        `| Impressions | ${num(snapshot.sitewide && snapshot.sitewide.impressions)} |`,
+        `| CTR | ${pct(snapshot.sitewide && snapshot.sitewide.ctr)} |`,
+        `| Avg position (impression-weighted daily) | ${((snapshot.sitewide && snapshot.sitewide.position) || 0).toFixed(1)} |`,
         `| Branded query clicks (approx.) | ${num(brandedClicks)} |`,
         '',
         '## Power law',
@@ -81,8 +89,10 @@ function buildBaselineMarkdown({ catalog, snapshot, power, scored, flags, querie
         const notes = [];
         if (page.sitelinkSuspect) notes.push('sitelink-suspect');
         if (!page.indexable) notes.push('noindex');
-        if (page.opportunity.lowVisibility) notes.push('low-visibility');
-        lines.push(`| \`${page.path}\` | ${page.opportunity.lever} | ${page.opportunity.score.toFixed(1)} | ${page.gsc.clicks} | ${page.gsc.impressions} | ${page.gsc.position} | ${pct(page.gsc.ctr)} | ${pct(page.opportunity.expectedCtr)} | ${notes.join(', ') || '—'} |`);
+        if (page.opportunity && page.opportunity.lowVisibility) notes.push('low-visibility');
+        const opp = page.opportunity || {};
+        const gsc = page.gsc || {};
+        lines.push(`| \`${page.path}\` | ${opp.lever} | ${(opp.score || 0).toFixed(1)} | ${gsc.clicks} | ${gsc.impressions} | ${gsc.position} | ${pct(gsc.ctr)} | ${pct(opp.expectedCtr)} | ${notes.join(', ') || '—'} |`);
     }
     lines.push(
         '',
@@ -102,6 +112,16 @@ function buildBaselineMarkdown({ catalog, snapshot, power, scored, flags, querie
         '|---|---:|',
     );
     for (const type of Object.keys(byType).sort()) lines.push(`| ${type} | ${byType[type]} |`);
+    const aeoBlock = aeo || { rowCount: 0, citedUrlCount: 0 };
+    lines.push(
+        '',
+        '## AEO citations',
+        '',
+        `Citation CSV rows: **${aeoBlock.rowCount || 0}**. Cited URLs: **${aeoBlock.citedUrlCount || 0}**. Google winners and cited URLs will diverge; that is expected.`,
+        aeoBlock.citedUrlCount
+            ? 'Drop the next SEMrush/Ahrefs/Peec CSV into `data/blogeo/aeo-imports/<date>/` and run `node scripts/blogeo/cli.js aeo`.'
+            : 'No citation CSV loaded yet. Phase 4 stays CSV-manual until a vendor export exists.',
+    );
     lines.push(
         '',
         '## What to do next',

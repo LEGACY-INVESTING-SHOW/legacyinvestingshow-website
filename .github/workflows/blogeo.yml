@@ -15,6 +15,8 @@ on:
           - generate
           - report
           - fill
+          - factcheck
+          - llms
   schedule:
     - cron: "0 16 * * 1"
     - cron: "0 16 * * 2"
@@ -26,6 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+      issues: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -48,6 +51,16 @@ jobs:
           echo "job=$JOB" >> "$GITHUB_OUTPUT"
       - name: Run BlogEO
         run: node scripts/blogeo/cli.js ${{ steps.job.outputs.job }}
+      - name: Open GitHub issue for audit/report
+        if: steps.job.outputs.job == 'audit' || steps.job.outputs.job == 'report'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -f analysis/blogeo-audit-latest.md ]; then
+            WEEK="$(date -u +%G-W%V)"
+            gh issue create --title "BlogEO audit ${WEEK}" --body-file analysis/blogeo-audit-latest.md
+          fi
       - name: Upload reports
         if: always()
         uses: actions/upload-artifact@v4
@@ -57,6 +70,7 @@ jobs:
             analysis/blogeo-*.md
             data/blogeo/runs/
             data/blogeo/generated/
+            data/blogeo/generated-posts/
           if-no-files-found: warn
 
 # This workflow must not push to main. Humans apply tickets through

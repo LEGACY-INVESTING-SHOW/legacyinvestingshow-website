@@ -1,21 +1,21 @@
 {
   "id": "be-2026W35-028",
   "status": "open",
-  "createdAt": "2026-08-24T16:06:49.515Z",
+  "createdAt": "2026-08-24T17:26:43.311Z",
   "week": "2026-W35",
   "kind": "content-push",
-  "lever": "rank",
+  "lever": "ctr",
   "autoApply": false,
-  "url": "https://www.legacyinvestingshow.com/blog/legacy-investing-show-review",
-  "path": "/blog/legacy-investing-show-review",
-  "sourcePath": "content/blog/legacy-investing-show-review.md",
-  "reason": "Position 14.31 with 345 impressions. Title-only will not close this.",
-  "suggestedAction": "Human Edit only. Content push, not an Approve card.",
+  "url": "https://www.legacyinvestingshow.com/blog",
+  "path": "/blog",
+  "sourcePath": "blog/index.html",
+  "reason": "CTR leak on a non-markdown surface (blog/index.html).",
+  "suggestedAction": "Edit the JSON/HTML source of truth. apply-edit will not rewrite this surface.",
   "gscBefore": {
-    "clicks": 5,
-    "impressions": 345,
-    "position": 14.31,
-    "ctr": 0.014492753623188406
+    "clicks": 0,
+    "impressions": 646,
+    "position": 7.13,
+    "ctr": 0
   },
   "gscSitewideBefore": {
     "clicks": 875,
@@ -25,5 +25,5 @@
     "startDate": "2026-05-23",
     "endDate": "2026-08-22"
   },
-  "contentHash": "27a746ea6af51e1bec0a9059d32828efa7a4049a1ce17544082251e4c2965fd7"
+  "contentHash": "bea6812c0594629e4ca93cf6b48502d5e5ebcfff81a878732008b7bd0058bc62"
 }

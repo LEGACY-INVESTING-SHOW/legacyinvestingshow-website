@@ -1,21 +1,21 @@
 {
   "id": "be-2026W35-027",
   "status": "open",
-  "createdAt": "2026-08-24T16:06:49.515Z",
+  "createdAt": "2026-08-24T17:26:43.311Z",
   "week": "2026-W35",
   "kind": "content-push",
-  "lever": "rank",
+  "lever": "ctr",
   "autoApply": false,
-  "url": "https://www.legacyinvestingshow.com/blog/2026-mileage-reimbursement-rates",
-  "path": "/blog/2026-mileage-reimbursement-rates",
-  "sourcePath": "content/blog/2026-mileage-reimbursement-rates.md",
-  "reason": "Position 74.87 with 242 impressions. Title-only will not close this.",
-  "suggestedAction": "Human Edit only. Content push, not an Approve card.",
+  "url": "https://www.legacyinvestingshow.com/tax-strategies",
+  "path": "/tax-strategies",
+  "sourcePath": "tax-strategies/index.html",
+  "reason": "CTR leak on a non-markdown surface (tax-strategies/index.html).",
+  "suggestedAction": "Edit the JSON/HTML source of truth. apply-edit will not rewrite this surface.",
   "gscBefore": {
-    "clicks": 0,
-    "impressions": 242,
-    "position": 74.87,
-    "ctr": 0
+    "clicks": 1,
+    "impressions": 1011,
+    "position": 7.25,
+    "ctr": 0.0009891196834817012
   },
   "gscSitewideBefore": {
     "clicks": 875,
@@ -25,5 +25,5 @@
     "startDate": "2026-05-23",
     "endDate": "2026-08-22"
   },
-  "contentHash": "930aa1c07a28d50bda8f8b8b1819708578b77d9ba33c6032cb4dcdd7507a4025"
+  "contentHash": "40823b3e0bbd312fe998593cd3095296cd1fd66c1724f3c6ef97649794f373fd"
 }

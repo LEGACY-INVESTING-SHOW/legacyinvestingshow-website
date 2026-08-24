@@ -64,6 +64,7 @@ function parseMarkdownPost(raw, filePath) {
         category: data.category || '',
         image: data.image || '',
         featured: Boolean(data.featured),
+        hideFromBlogIndex: data.hideFromBlogIndex === true || data.hideFromBlogIndex === true,
         primaryKeyword: seo.primaryKeyword || seo.primary_keyword || '',
         faqCount: faq.length,
         hasQuickTake: hasQuickTake(parsed.content || ''),

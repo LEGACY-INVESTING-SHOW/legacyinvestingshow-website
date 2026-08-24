@@ -26,8 +26,16 @@ npm run blogeo:audit
 npm run blogeo:generate
 npm run blogeo:report
 npm run blogeo:fill
+npm run blogeo:factcheck
+npm run blogeo:aeo -- --dir data/blogeo/aeo-imports/<date>
+npm run blogeo:llms
+node scripts/blogeo/cli.js title --path /blog/preston-seo-review --query "preston seo"
 node scripts/blogeo/cli.js apply --ticket <id>
 node scripts/blogeo/cli.js apply --ticket <id> --skip
 ```
 
 Cap: at most one near-miss draft ticket per week, and only for GSC queries with ≥150 impressions, position 5–20, and no owner in `keyword-ownership.json`. Do not resume `seo-topics-1000.json`.
+
+Generated posts enroll in `data/blogeo/generated-posts/` with day-0 GSC zeros. `blogeo:fill` writes +28 / +56 windows onto both edits and generated posts.
+
+`data/blogeo/youtube-queue.json` is a manual seed list when GSC near-misses are thin. It still goes through the same gates. Do not patch `tools/*.html`; calculator copy lives in calcs2.

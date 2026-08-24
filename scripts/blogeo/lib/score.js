@@ -151,7 +151,7 @@ function runHygiene(catalog, snapshot, root = ROOT_DIR) {
         if (gsc && gsc.clicks > 0 && !page.indexable) {
             flags.push({ type: 'noindexButTraffic', path: page.path, detail: `${gsc.clicks} GSC clicks on a noindex URL`, autoApply: false });
         }
-        if (page.indexable && page.description) {
+        if (page.indexable && page.description && gsc && gsc.impressions > 0) {
             const len = page.description.length;
             if (len < 120 || len > 165) {
                 flags.push({ type: 'descriptionLength', path: page.path, detail: `meta description ${len} chars`, autoApply: false });
@@ -160,10 +160,10 @@ function runHygiene(catalog, snapshot, root = ROOT_DIR) {
         if (page.indexable && /2025/.test(`${page.title} ${page.description || ''}`)) {
             flags.push({ type: 'taxYearStale', path: page.path, detail: 'Visible 2025 in title or description during 2026+', autoApply: false });
         }
-        if (page.pageType === 'blog' && page.indexable && !page.hasFaq) {
+        if (page.pageType === 'blog' && page.indexable && gsc && gsc.impressions > 0 && !page.hasFaq) {
             flags.push({ type: 'emptyFaq', path: page.path, detail: 'Indexable blog missing FAQ', autoApply: false });
         }
-        if (page.pageType === 'blog' && page.indexable && !page.hasQuickTake) {
+        if (page.pageType === 'blog' && page.indexable && gsc && gsc.impressions > 0 && !page.hasQuickTake) {
             flags.push({ type: 'noQuickTake', path: page.path, detail: 'Indexable blog missing Quick Take', autoApply: false });
         }
         if ((page.pageType === 'city' || page.pageType === 'pseo-persona' || page.pageType === 'insurance-state')

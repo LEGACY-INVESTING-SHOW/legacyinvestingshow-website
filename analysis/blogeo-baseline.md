@@ -84,14 +84,20 @@ Watchlist (30–149 impressions, pos 5–20): `legacy investing` (86 impr, pos 1
 | Flag | Count |
 |---|---:|
 | deadInternalLink | 342 |
-| descriptionLength | 290 |
+| descriptionLength | 47 |
 | dualCanonicalRisk | 8 |
-| emptyFaq | 64 |
+| emptyFaq | 10 |
 | missingImage | 551 |
-| noQuickTake | 313 |
+| noQuickTake | 49 |
 | noindexButTraffic | 1 |
+| staleTaxYear | 1 |
 | taxYearStale | 18 |
 | thinProgrammatic | 73 |
+
+## AEO citations
+
+Citation CSV rows: **0**. Cited URLs: **0**. Google winners and cited URLs will diverge; that is expected.
+No citation CSV loaded yet. Phase 4 stays CSV-manual until a vendor export exists.
 
 ## What to do next
 

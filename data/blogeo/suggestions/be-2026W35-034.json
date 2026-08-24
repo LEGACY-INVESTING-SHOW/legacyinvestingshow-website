@@ -1,0 +1,29 @@
+{
+  "id": "be-2026W35-034",
+  "status": "open",
+  "createdAt": "2026-08-24T17:26:43.311Z",
+  "week": "2026-W35",
+  "kind": "content-push",
+  "lever": "hygiene",
+  "autoApply": false,
+  "url": "https://www.legacyinvestingshow.com/blog/couple-17500-secured-one-week",
+  "path": "/blog/couple-17500-secured-one-week",
+  "sourcePath": "content/blog/couple-17500-secured-one-week.md",
+  "reason": "Visible 2025 in title/description while source pack is 2026+",
+  "suggestedAction": "Human Edit only. Quote the source pack; do not auto-rewrite YMYL body copy.",
+  "gscBefore": {
+    "clicks": 0,
+    "impressions": 100,
+    "position": 7.15,
+    "ctr": 0
+  },
+  "gscSitewideBefore": {
+    "clicks": 875,
+    "impressions": 25237,
+    "ctr": 0.034671315925030706,
+    "position": 23.782906050639937,
+    "startDate": "2026-05-23",
+    "endDate": "2026-08-22"
+  },
+  "contentHash": "3fe45a21958d968da878b410d1239cb6131e76e15cd643e90e5dac00fa28ec4f"
+}

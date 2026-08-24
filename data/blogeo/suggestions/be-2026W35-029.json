@@ -1,0 +1,29 @@
+{
+  "id": "be-2026W35-029",
+  "status": "open",
+  "createdAt": "2026-08-24T17:26:43.311Z",
+  "week": "2026-W35",
+  "kind": "content-push",
+  "lever": "rank",
+  "autoApply": false,
+  "url": "https://www.legacyinvestingshow.com/blog/preston-seo-review",
+  "path": "/blog/preston-seo-review",
+  "sourcePath": "content/blog/preston-seo-review.md",
+  "reason": "Position 16.32 with 8599 impressions. Title-only will not close this.",
+  "suggestedAction": "Human Edit only. Content push, not an Approve card.",
+  "gscBefore": {
+    "clicks": 171,
+    "impressions": 8599,
+    "position": 16.32,
+    "ctr": 0.019886033259681357
+  },
+  "gscSitewideBefore": {
+    "clicks": 875,
+    "impressions": 25237,
+    "ctr": 0.034671315925030706,
+    "position": 23.782906050639937,
+    "startDate": "2026-05-23",
+    "endDate": "2026-08-22"
+  },
+  "contentHash": "cb50a9c6b305f7a364239bd686eda7f65acc3f3323fc673631b57a38f71409c2"
+}

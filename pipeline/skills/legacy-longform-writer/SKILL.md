@@ -47,6 +47,7 @@ Apply writing rules:
 - explain tradeoffs and decisions
 - use short paragraphs and clear bullets
 - only include claims supported by dossier
+- emit sourced claims in frontmatter `claims[]` (`type`, `sourceUrl`, `asOf`) for tax figures, stats, and formulas
 
 ## Step 4: FAQs and CTA
 

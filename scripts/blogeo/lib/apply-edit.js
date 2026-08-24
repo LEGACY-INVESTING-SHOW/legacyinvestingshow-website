@@ -6,7 +6,10 @@ const { ROOT_DIR } = require('./paths');
 const { sha256 } = require('./hash');
 const { acquireLock, releaseLock } = require('./lock');
 const { patchFrontmatter } = require('./frontmatter');
-const { writeJson } = require('./fs');
+const { writeJson, listFiles, readJson } = require('./fs');
+const { findOwner, loadOwnership } = require('./ownership');
+
+const COOLDOWN_DAYS = 28;
 
 function suggestionsDir(root) {
     return path.join(root, 'data', 'blogeo', 'suggestions');
@@ -14,6 +17,13 @@ function suggestionsDir(root) {
 
 function editsDir(root) {
     return path.join(root, 'data', 'blogeo', 'edits');
+}
+
+function pick(ticket, keys) {
+    for (const key of keys) {
+        if (ticket[key] != null && ticket[key] !== '') return ticket[key];
+    }
+    return undefined;
 }
 
 function loadSuggestion(ticketId, root = ROOT_DIR) {
@@ -33,6 +43,28 @@ function countOccurrences(haystack, needle) {
     return haystack.split(needle).length - 1;
 }
 
+function inCooldown(sourcePath, root) {
+    const dir = editsDir(root);
+    const files = listFiles(dir, (name) => name.endsWith('.json'));
+    const now = Date.now();
+    for (const filePath of files) {
+        const edit = readJson(filePath);
+        if (!edit || edit.sourcePath !== sourcePath) continue;
+        if (edit.cooldownUntil && Date.parse(edit.cooldownUntil) > now) return edit;
+    }
+    return null;
+}
+
+function refuseCannibalization(ticket, root) {
+    const query = pick(ticket, ['targetQuery', 'query']);
+    const pagePath = pick(ticket, ['path']);
+    if (!query) return;
+    const owner = findOwner(query, loadOwnership(root));
+    if (owner && owner.canonical && pagePath && owner.canonical !== pagePath) {
+        throw new Error(`query owned by ${owner.canonical}; refusing cannibalization`);
+    }
+}
+
 function applyEdit(ticketId, actor = 'cli', root = ROOT_DIR) {
     const ticket = loadSuggestion(ticketId, root);
     if (!ticket) throw new Error(`unknown ticket: ${ticketId}`);
@@ -40,46 +72,67 @@ function applyEdit(ticketId, actor = 'cli', root = ROOT_DIR) {
     if (!acquireLock(ticketId, actor, root)) throw new Error('already handled');
 
     try {
-        const absPath = path.join(root, ticket.sourcePath);
-        if (!fs.existsSync(absPath)) throw new Error(`source missing: ${ticket.sourcePath}`);
+        const sourcePath = pick(ticket, ['sourcePath']);
+        const kind = pick(ticket, ['kind']);
+        if (!sourcePath) throw new Error('ticket missing sourcePath');
+        if (String(sourcePath).replace(/\\/g, '/').startsWith('tools/')) {
+            throw new Error('tools/*.html is a calcs2 export; refusing to patch HTML as source of truth');
+        }
+        refuseCannibalization(ticket, root);
+
+        const absPath = path.join(root, sourcePath);
+        if (!fs.existsSync(absPath)) throw new Error(`source missing: ${sourcePath}`);
         const live = fs.readFileSync(absPath, 'utf8');
         const hash = sha256(live);
-        if (ticket.contentHash && hash !== ticket.contentHash) {
+        const expectedHash = pick(ticket, ['contentHash']);
+        if (expectedHash && hash !== expectedHash) {
             throw new Error('source changed since suggestion; refusing to clobber');
         }
 
+        const cooled = inCooldown(sourcePath, root);
+        if (cooled) throw new Error(`source in cooldown until ${cooled.cooldownUntil}`);
+
         let next = live;
-        if ((ticket.kind === 'seo-fields' || ticket.kind === 'seo-fields')) {
-            if (ticket.beforeTitle && !live.includes(ticket.beforeTitle)) {
+        if (kind === 'seo-fields') {
+            const beforeTitle = pick(ticket, ['beforeTitle']);
+            if (beforeTitle && !live.includes(beforeTitle)) {
                 throw new Error('beforeTitle not found in source');
             }
             next = patchFrontmatter(live, {
-                title: ticket.afterTitle || undefined,
-                description: ticket.afterDescription || undefined,
+                title: pick(ticket, ['afterTitle']) || undefined,
+                description: pick(ticket, ['afterDescription']) || undefined,
             });
-        } else if ((ticket.kind === 'phrase-swap' || ticket.kind === 'phrase-swap')) {
-            if (countOccurrences(live, ticket.phraseFrom) !== 1) {
+        } else if (kind === 'phrase-swap') {
+            const from = pick(ticket, ['phraseFrom']);
+            const to = pick(ticket, ['phraseTo']);
+            if (countOccurrences(live, from) !== 1) {
                 throw new Error('phrase not unique; human Edit required');
             }
-            next = live.replace(ticket.phraseFrom, ticket.phraseTo);
-        } else if ((ticket.kind === 'dead-link' || ticket.kind === 'dead-link')) {
-            if (countOccurrences(live, ticket.hrefFrom) < 1) throw new Error('hrefFrom not found');
-            next = live.split(ticket.hrefFrom).join(ticket.hrefTo);
+            next = live.replace(from, to);
+        } else if (kind === 'dead-link') {
+            const from = pick(ticket, ['hrefFrom']);
+            const to = pick(ticket, ['hrefTo']);
+            if (countOccurrences(live, from) < 1) throw new Error('hrefFrom not found');
+            next = live.split(from).join(to);
+        } else if (kind === 'near-miss-draft' || kind === 'content-push') {
+            throw new Error('this ticket is Edit-only; apply-edit will not write a new URL or body rewrite');
         } else {
-            throw new Error(`unsupported kind: ${ticket.kind}`);
+            throw new Error(`unsupported kind: ${kind}`);
         }
 
         fs.writeFileSync(absPath, next);
+        const cooldownUntil = new Date(Date.now() + COOLDOWN_DAYS * 24 * 60 * 60 * 1000).toISOString();
         const edit = {
             id: ticket.id,
             ticketId: ticket.id,
             url: ticket.url || ticket.path,
             path: ticket.path,
-            kind: ticket.kind,
+            kind,
             lever: ticket.lever || 'hygiene',
-            sourcePath: ticket.sourcePath,
+            sourcePath,
             actor,
             appliedAt: new Date().toISOString(),
+            cooldownUntil,
             contentHashBefore: hash,
             contentHashAfter: sha256(next),
             gscBefore: ticket.gscBefore || null,
@@ -90,6 +143,7 @@ function applyEdit(ticketId, actor = 'cli', root = ROOT_DIR) {
         ticket.status = 'applied';
         ticket.appliedAt = edit.appliedAt;
         ticket.appliedBy = actor;
+        ticket.cooldownUntil = cooldownUntil;
         saveSuggestion(ticket, root);
         return edit;
     } catch (error) {
@@ -112,8 +166,9 @@ function skipTicket(ticketId, actor = 'cli', root = ROOT_DIR) {
 module.exports = {
     loadSuggestion,
     saveSuggestion,
-    saveSuggestion: saveSuggestion,
     applyEdit,
     skipTicket,
     countOccurrences,
+    COOLDOWN_DAYS,
+    refuseCannibalization,
 };
