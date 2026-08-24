@@ -33,6 +33,11 @@ Create markdown with:
 - one H1
 - ordered H2/H3 hierarchy
 - planned FAQ section
+- `## Quick Take` as the first H2 after the lede (required gate)
+
+## Step 2b: Quick Take
+
+The first H2 must be exactly `## Quick Take`. One short paragraph: who this is for, the decision, and the number that matters. Do not bury this under another heading.
 
 ## Step 3: Write Content
 

@@ -32,7 +32,13 @@
     "cms:publish:posts": "./scripts/cms/publish-eleventy-posts.sh",
     "cms:verify": "npm run cms:sync:blog && npm run cms:check:parity && npm run cms:build && npm run cms:smoke",
     "build": "npm run build:css && npm run build:blog && npm run cms:verify && npm run cms:publish:posts && npm run build:tax-strategies && npm run build:programmatic && npm run build:compare && npm run build:topics && npm run build:tools && npm run build:worksheets && npm run build:tracking && npm run build:seo-titles && npm run build:links && npm run build:indexation && npm run build:sitemap && npm run build:rss",
-    "start": "npx serve ."
+    "start": "npx serve .",
+    "blogeo:catalog": "node scripts/blogeo/cli.js catalog",
+    "blogeo:ingest": "node scripts/blogeo/cli.js ingest",
+    "blogeo:audit": "node scripts/blogeo/cli.js audit",
+    "blogeo:generate": "node scripts/blogeo/cli.js generate",
+    "blogeo:report": "node scripts/blogeo/cli.js report",
+    "blogeo:fill": "node scripts/blogeo/cli.js fill"
   },
   "dependencies": {
     "@playwright/test": "^1.58.1",

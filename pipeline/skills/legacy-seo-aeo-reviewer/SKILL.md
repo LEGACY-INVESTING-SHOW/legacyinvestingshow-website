@@ -23,6 +23,7 @@ Validate:
 - heading hierarchy
 - word count range
 - FAQ presence and quality
+- labelled `## Quick Take` as the first H2 (P0 fail if missing)
 
 ## Step 2: SEO/AEO Checks
 
@@ -32,6 +33,7 @@ Validate:
 - title/meta quality
 - entity coverage
 - answer-ready FAQ wording
+- Quick Take present, specific, and not a generic intro
 - internal link relevance
 
 ## Step 3: Factual Risk Checks

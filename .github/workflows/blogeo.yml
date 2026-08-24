@@ -1,0 +1,63 @@
+name: BlogEO
+
+on:
+  workflow_dispatch:
+    inputs:
+      job:
+        description: catalog, ingest, audit, generate, report, or fill
+        required: true
+        default: audit
+        type: choice
+        options:
+          - catalog
+          - ingest
+          - audit
+          - generate
+          - report
+          - fill
+  schedule:
+    - cron: "0 16 * * 1"
+    - cron: "0 16 * * 2"
+    - cron: "0 16 * * 5"
+    - cron: "0 17 * * *"
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: npm ci
+      - name: Resolve job
+        id: job
+        run: |
+          JOB="${{ inputs.job }}"
+          if [ -z "$JOB" ]; then
+            DOW="$(date -u +%u)"
+            case "$DOW" in
+              1) JOB=generate ;;
+              2) JOB=audit ;;
+              5) JOB=report ;;
+              *) JOB=fill ;;
+            esac
+          fi
+          echo "job=$JOB" >> "$GITHUB_OUTPUT"
+      - name: Run BlogEO
+        run: node scripts/blogeo/cli.js ${{ steps.job.outputs.job }}
+      - name: Upload reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: blogeo-${{ steps.job.outputs.job }}
+          path: |
+            analysis/blogeo-*.md
+            data/blogeo/runs/
+            data/blogeo/generated/
+          if-no-files-found: warn
+
+# This workflow must not push to main. Humans apply tickets through
+# `node scripts/blogeo/cli.js apply --ticket <id>` on a branch/PR.

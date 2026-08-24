@@ -272,6 +272,11 @@ function publishDraft(runDir, draftPath, reviewVerdict, args) {
         return report;
     }
 
+    if (process.env.BLOGEO_ALLOW_DIRECT_PUBLISH !== '1') {
+        report.reason = 'Direct publish is disabled. Production writes go through `node scripts/blogeo/cli.js apply --ticket <id>`. Set BLOGEO_ALLOW_DIRECT_PUBLISH=1 only for an emergency publisher override.';
+        return report;
+    }
+
     if (reviewVerdict !== 'PASS') {
         report.reason = 'Review verdict is not PASS.';
         return report;

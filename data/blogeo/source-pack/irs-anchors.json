@@ -1,0 +1,55 @@
+{
+  "asOf": "2026-01-01",
+  "anchors": [
+    {
+      "id": "s-corporations",
+      "title": "S Corporations",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/s-corporations"
+    },
+    {
+      "id": "form-2553",
+      "title": "Instructions for Form 2553",
+      "url": "https://www.irs.gov/instructions/i2553"
+    },
+    {
+      "id": "publication-946",
+      "title": "Publication 946, How To Depreciate Property",
+      "url": "https://www.irs.gov/publications/p946"
+    },
+    {
+      "id": "publication-527",
+      "title": "Publication 527, Residential Rental Property",
+      "url": "https://www.irs.gov/publications/p527"
+    },
+    {
+      "id": "publication-587",
+      "title": "Publication 587, Business Use of Your Home",
+      "url": "https://www.irs.gov/publications/p587"
+    },
+    {
+      "id": "publication-544",
+      "title": "Publication 544, Sales and Other Dispositions of Assets",
+      "url": "https://www.irs.gov/publications/p544"
+    },
+    {
+      "id": "topic-409",
+      "title": "Topic No. 409, Capital Gains and Losses",
+      "url": "https://www.irs.gov/taxtopics/tc409"
+    },
+    {
+      "id": "section-179",
+      "title": "Section 179 Deduction",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/section-179-deduction"
+    },
+    {
+      "id": "qbi",
+      "title": "Qualified Business Income Deduction",
+      "url": "https://www.irs.gov/newsroom/qualified-business-income-deduction"
+    },
+    {
+      "id": "standard-mileage",
+      "title": "Standard mileage rates",
+      "url": "https://www.irs.gov/tax-professionals/standard-mileage-rates"
+    }
+  ]
+}

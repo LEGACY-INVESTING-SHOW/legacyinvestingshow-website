@@ -31,6 +31,14 @@ Validate:
 
 ## Step 3: Publish
 
+Default: do **not** copy into `content/blog` from the agent. Create or update a BlogEO suggestion ticket and stop.
+
+Emergency override: `BLOGEO_ALLOW_DIRECT_PUBLISH=1` plus `--publish`.
+
+Production string edits after publish still go through `node scripts/blogeo/cli.js apply --ticket <id>`.
+
+## Step 3b: Legacy copy path
+
 Copy markdown into:
 
 - `content/blog/<slug>.md`

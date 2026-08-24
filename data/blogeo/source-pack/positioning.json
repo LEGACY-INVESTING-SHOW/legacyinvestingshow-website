@@ -1,0 +1,14 @@
+{
+  "brand": "Legacy Investing Show",
+  "host": "Preston Seo",
+  "site": "https://www.legacyinvestingshow.com",
+  "offer": "Free Tax Strategy Masterclass",
+  "disclaimer": "Educational content, not tax, legal, or investment advice. Confirm numbers with a CPA.",
+  "notA": ["CPA firm", "registered investment adviser", "get-rich-quick blog"],
+  "voice": [
+    "Direct",
+    "Numbers-first",
+    "High-earner and operator oriented",
+    "No hype adjectives"
+  ]
+}
