@@ -5,7 +5,7 @@ const os = require('os');
 const path = require('path');
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { saveSuggestion, applyEdit, skipTicket, COOLDOWN_DAYS } = require('../scripts/blogeo/lib/apply-edit');
+const { saveSuggestion, applyEdit, skipTicket, applyAutoTickets, COOLDOWN_DAYS } = require('../scripts/blogeo/lib/apply-edit');
 const { sha256 } = require('../scripts/blogeo/lib/hash');
 const { writeJson } = require('../scripts/blogeo/lib/fs');
 
@@ -138,4 +138,38 @@ test('applyEdit enforces 28-day cooldown when the hash still matches', () => {
         contentHash: sha256(next),
     }, root);
     assert.throws(() => applyEdit('be-test-007', 'test', root), /cooldown/i);
+});
+
+test('applyAutoTickets applies open autoApply dead-link tickets', () => {
+    const root = makeRoot();
+    const sourcePath = 'content/blog/links.md';
+    const original = `---\ntitle: Links\ndescription: desc\n---\n\nSee [old](/old-path) for more.\n`;
+    fs.writeFileSync(path.join(root, sourcePath), original);
+    saveSuggestion({
+        id: 'be-test-auto-001',
+        status: 'open',
+        kind: 'dead-link',
+        autoApply: true,
+        sourcePath,
+        hrefFrom: '/old-path',
+        hrefTo: '/new-path',
+        contentHash: sha256(original),
+    }, root);
+    saveSuggestion({
+        id: 'be-test-auto-002',
+        status: 'open',
+        kind: 'seo-fields',
+        autoApply: false,
+        sourcePath,
+        afterTitle: 'Should Not Apply',
+        contentHash: sha256(original),
+    }, root);
+    const result = applyAutoTickets('test', root);
+    assert.equal(result.considered, 1);
+    assert.equal(result.applied.length, 1);
+    assert.equal(result.failed.length, 0);
+    const updated = fs.readFileSync(path.join(root, sourcePath), 'utf8');
+    assert.match(updated, /\/new-path/);
+    assert.doesNotMatch(updated, /\/old-path/);
+    assert.match(updated, /title: Links/);
 });

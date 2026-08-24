@@ -152,6 +152,34 @@ function applyEdit(ticketId, actor = 'cli', root = ROOT_DIR) {
     }
 }
 
+function listAutoApplyTickets(root = ROOT_DIR) {
+    const dir = suggestionsDir(root);
+    const files = listFiles(dir, (name) => name.endsWith('.json'));
+    const tickets = [];
+    for (const filePath of files) {
+        const ticket = readJson(filePath);
+        if (!ticket || ticket.status !== 'open') continue;
+        if (ticket.autoApply !== true) continue;
+        if (ticket.kind !== 'dead-link') continue;
+        tickets.push(ticket);
+    }
+    return tickets.sort((a, b) => String(a.id).localeCompare(String(b.id)));
+}
+
+function applyAutoTickets(actor = 'cli', root = ROOT_DIR) {
+    const tickets = listAutoApplyTickets(root);
+    const applied = [];
+    const failed = [];
+    for (const ticket of tickets) {
+        try {
+            applied.push(applyEdit(ticket.id, actor, root));
+        } catch (error) {
+            failed.push({ id: ticket.id, error: error.message });
+        }
+    }
+    return { applied, failed, considered: tickets.length };
+}
+
 function skipTicket(ticketId, actor = 'cli', root = ROOT_DIR) {
     const ticket = loadSuggestion(ticketId, root);
     if (!ticket) throw new Error(`unknown ticket: ${ticketId}`);
@@ -168,6 +196,8 @@ module.exports = {
     saveSuggestion,
     applyEdit,
     skipTicket,
+    applyAutoTickets,
+    listAutoApplyTickets,
     countOccurrences,
     COOLDOWN_DAYS,
     refuseCannibalization,

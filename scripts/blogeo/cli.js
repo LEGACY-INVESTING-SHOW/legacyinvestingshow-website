@@ -13,7 +13,7 @@ const { buildAuditTickets, persistTickets } = require('./lib/tickets');
 const { writeGithubIssue } = require('./lib/github');
 const { writeBaseline } = require('./lib/report');
 const { generateNearMiss } = require('./lib/generate');
-const { applyEdit, skipTicket } = require('./lib/apply-edit');
+const { applyEdit, skipTicket, applyAutoTickets } = require('./lib/apply-edit');
 const { fillWindows } = require('./lib/fill');
 const { pickIsoWeek } = require('./lib/opportunity');
 const { readPolicy } = require('./lib/indexation');
@@ -157,14 +157,20 @@ function runAudit(args = {}) {
 }
 
 function cmdApply(args) {
+    const actor = process.env.USER || 'cli';
+    if (args.auto) {
+        const result = applyAutoTickets(actor, ROOT_DIR);
+        console.log(JSON.stringify(result, null, 2));
+        return result;
+    }
     const ticketId = args.ticket;
-    if (!ticketId) throw new Error('Pass --ticket <id>');
+    if (!ticketId) throw new Error('Pass --ticket <id> or --auto');
     if (args.skip) {
-        const skipped = skipTicket(ticketId, process.env.USER || 'cli', ROOT_DIR);
+        const skipped = skipTicket(ticketId, actor, ROOT_DIR);
         console.log(`Skipped ${skipped.id}`);
         return skipped;
     }
-    const edit = applyEdit(ticketId, process.env.USER || 'cli', ROOT_DIR);
+    const edit = applyEdit(ticketId, actor, ROOT_DIR);
     console.log(`Applied ${edit.id} to ${edit.sourcePath}`);
     return edit;
 }
@@ -267,6 +273,8 @@ Usage:
   node scripts/blogeo/cli.js generate [--query "near miss query"]
   node scripts/blogeo/cli.js report [--week 2026-W35]
   node scripts/blogeo/cli.js apply --ticket <id> [--skip]
+  node scripts/blogeo/cli.js apply --auto
+  node scripts/blogeo/cli.js apply --auto
   node scripts/blogeo/cli.js fill
   node scripts/blogeo/cli.js factcheck
   node scripts/blogeo/cli.js aeo [--dir data/blogeo/aeo-imports/2026-08-24]
