@@ -750,3 +750,15 @@ npm run start
 - Generated page URL is:
   `https://www.legacyinvestingshow.com/blog/<slug>`
 - The site uses clean URLs. Do not hand out `.html` blog URLs unless specifically needed for filesystem debugging.
+
+## Cursor Cloud specific instructions
+
+This is a static site (HTML + Tailwind CSS v3 + Node CommonJS build scripts) plus an Eleventy CMS workspace in `cms/`. There is no application server or database. The startup update script runs `npm install` at the repo root and `npm install --prefix cms`; both are required because `cms/` has its own `package.json` and the full build depends on Eleventy.
+
+Standard commands live in `package.json` scripts and the `## Build & Development Commands` section above. Non-obvious caveats for future agents:
+
+- **Run the site in dev:** start `npm run dev` (Tailwind watch, rebuilds `assets/css/styles.css`) and `npm run start` (`npx serve .`, serves the repo root at `http://localhost:3000`) in two separate long-running terminals. `npm run start` serves whatever static HTML already exists — it does not build; run the relevant `build:*` step first if you changed source.
+- **Lint/test are lightweight:** `npm run lint` is just `node --check` syntax checks on a couple of scripts, and `npm run test` runs `node --test tests/*.test.js` (a few unit tests). Neither covers the generated HTML.
+- **`npm run build` runs the entire SEO pipeline** (CSS, blog, full `cms:verify` Eleventy chain, tax strategies, programmatic pages, sitemap, RSS, etc.) and rewrites hundreds of generated HTML files plus `sitemap*.xml` and `feed.xml`. Expect a very large `git diff` after a build; only commit generated files intentionally, never as a side effect of unrelated work.
+- **Harmless build warning:** `build:tools` (`import-calculators.js`) logs `calculator app not found at /Users/deveshdhardubey/calcs2; keeping committed tools/ artifacts.` This is expected in cloud/CI — that path only exists on the original author's machine. The step keeps the committed `tools/` artifacts and does not fail the build.
+- **CMS build wipes and regenerates** `cms/_site/blog` and republishes into `blog/*.html`; `cms:verify` enforces byte-level parity between `content/blog/*.md` (canonical) and `cms/src/blog/*.md`. Edit canonical markdown in `content/blog/`, not the CMS copies.
