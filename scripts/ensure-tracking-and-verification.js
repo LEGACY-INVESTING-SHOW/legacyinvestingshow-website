@@ -32,6 +32,7 @@ const SKIP_DIRS = new Set([
   'backups',
   'cms',
   'docs',
+  'lx',
   'plans',
   'screenshots',
   'todos',

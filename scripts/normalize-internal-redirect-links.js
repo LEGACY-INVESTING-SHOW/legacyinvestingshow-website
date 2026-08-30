@@ -12,7 +12,7 @@ const path = require('path');
 
 const ROOT_DIR = path.join(__dirname, '..');
 const VERCEL_CONFIG = path.join(ROOT_DIR, 'vercel.json');
-const SKIP_DIRS = new Set(['.git', 'node_modules', 'backups', 'cms', 'analysis']);
+const SKIP_DIRS = new Set(['.git', 'node_modules', 'backups', 'cms', 'analysis', 'lx']);
 const CANONICAL_ALIASES = {
     '/blog/2026-tax-changes': '/blog/2026-tax-changes-you-need-to-know',
     '/blog/airbnb-furnishing-budget-guide': '/blog/airbnb-furniture-budget-checklist',

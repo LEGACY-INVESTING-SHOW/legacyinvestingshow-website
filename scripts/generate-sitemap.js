@@ -146,6 +146,7 @@ function scanDirectory(dir, basePath = '') {
           entry.name !== 'analysis' &&
           entry.name !== 'plans' &&
           entry.name !== 'content' &&
+          entry.name !== 'lx' &&
           entry.name !== 'public') {
         files.push(...scanDirectory(fullPath, relativePath));
       }
