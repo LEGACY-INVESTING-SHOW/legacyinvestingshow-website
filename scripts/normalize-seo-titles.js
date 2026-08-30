@@ -24,6 +24,7 @@ const SKIP_DIRS = new Set([
   'cms',
   'content',
   'docs',
+  'lx',
   'plans',
   'screenshots',
   'scripts',

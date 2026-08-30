@@ -1,6 +1,6 @@
 # Robots.txt for Legacy Investing Show
 # https://www.legacyinvestingshow.com
-# Last updated: 2026-05-05
+# Last updated: 2026-08-30
 
 # Keep crawlers focused on public, canonical website pages.
 # Source files, old drafts, audits, screenshots, build scripts, and backups are
@@ -33,6 +33,10 @@ Disallow: /*.json$
 Disallow: /*.csv$
 Disallow: /*.tsv$
 Disallow: /*.log$
+Disallow: /lx/
+
+# Paid client libraries at /lx/* are unlisted. Do not add them to nav,
+# sitemaps, llms.txt, or internal links.
 
 Sitemap: https://www.legacyinvestingshow.com/sitemap.xml
 

@@ -12,6 +12,7 @@ const PUBLIC_SKIP_DIRS = new Set([
   'cms',
   'content',
   'docs',
+  'lx',
   'node_modules',
   'plans',
   'screenshots',
