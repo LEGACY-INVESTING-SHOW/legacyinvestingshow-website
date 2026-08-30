@@ -1,0 +1,30 @@
+{
+  "id": "be-2026W35-014",
+  "status": "open",
+  "createdAt": "2026-08-24T17:26:43.310Z",
+  "week": "2026-W35",
+  "kind": "dead-link",
+  "lever": "hygiene",
+  "autoApply": true,
+  "url": "https://www.legacyinvestingshow.com/blog/judith-wealth-plan",
+  "path": "/blog/judith-wealth-plan",
+  "sourcePath": "content/blog/judith-wealth-plan.md",
+  "hrefFrom": "/blog/wealth-building-basics",
+  "hrefTo": "/topics/wealth-building",
+  "reason": "/blog/wealth-building-basics redirects to /topics/wealth-building",
+  "gscBefore": {
+    "clicks": 0,
+    "impressions": 0,
+    "position": 0,
+    "ctr": 0
+  },
+  "gscSitewideBefore": {
+    "clicks": 875,
+    "impressions": 25237,
+    "ctr": 0.034671315925030706,
+    "position": 23.782906050639937,
+    "startDate": "2026-05-23",
+    "endDate": "2026-08-22"
+  },
+  "contentHash": "e30c29105db01a0b948dfd6ac2efc9243d4d3efdf20e177862226638bdcc879d"
+}

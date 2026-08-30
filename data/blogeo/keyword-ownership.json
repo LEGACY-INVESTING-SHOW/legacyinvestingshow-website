@@ -1,0 +1,795 @@
+{
+  "generatedAt": "2026-08-24T17:26:43.272Z",
+  "brandedQueries": [
+    "preston seo",
+    "preston seo reviews",
+    "is preston seo legit",
+    "who is preston seo",
+    "legacy investing show",
+    "the legacy investing show",
+    "legacy investing show reviews",
+    "legacyinvestingshow",
+    "legacy wealth blueprint",
+    "preston seo legacy wealth blueprint"
+  ],
+  "ownership": {
+    "preston seo": {
+      "canonical": "/blog/preston-seo-review",
+      "supporting": [
+        "/"
+      ]
+    },
+    "legacy investing show": {
+      "canonical": "/",
+      "supporting": [
+        "/blog/legacy-investing-show-review",
+        "/about"
+      ]
+    },
+    "cost segregation": {
+      "canonical": "/tax-strategies/cost-segregation",
+      "supporting": [
+        "/tools/cost-segregation-payback-calculator"
+      ]
+    },
+    "cost segregation calculator": {
+      "canonical": "/tools/cost-segregation-payback-calculator",
+      "supporting": [
+        "/tax-strategies/cost-segregation"
+      ]
+    },
+    "augusta rule": {
+      "canonical": "/tax-strategies/augusta-rule",
+      "supporting": [
+        "/tools/augusta-rule-meeting-log-and-rent-calculator",
+        "/compare/augusta-rule-vs-home-office-deduction-s-corp"
+      ]
+    },
+    "s corp election": {
+      "canonical": "/tax-strategies/s-corp-strategy",
+      "supporting": [
+        "/blog/s-corp-election-break-even-guide",
+        "/worksheets/s-corp-election-decision-worksheet"
+      ]
+    },
+    "qbi deduction": {
+      "canonical": "/tax-strategies/qualified-business-income-deduction",
+      "supporting": [
+        "/worksheets/qbi-deduction-worksheet"
+      ]
+    },
+    "short term rental loophole": {
+      "canonical": "/tax-strategies/short-term-rental-loophole",
+      "supporting": []
+    },
+    "renters insurance cost": {
+      "canonical": "/tools/renters-insurance-cost",
+      "supporting": [
+        "/blog/how-much-is-renters-insurance-cost-guide"
+      ]
+    },
+    "how much is renters insurance": {
+      "canonical": "/blog/how-much-is-renters-insurance-cost-guide",
+      "supporting": [
+        "/tools/renters-insurance-cost"
+      ]
+    },
+    "401k rollover": {
+      "canonical": "/blog/401k-rollover-guide",
+      "supporting": []
+    },
+    "tax planning software": {
+      "canonical": "/blog/best-tax-planning-software-for-cpas",
+      "supporting": []
+    },
+    "bonus depreciation": {
+      "canonical": "/tax-strategies/bonus-depreciation",
+      "supporting": []
+    },
+    "1031 exchange": {
+      "canonical": "/tax-strategies/1031-exchange",
+      "supporting": []
+    },
+    "real estate professional status": {
+      "canonical": "/tax-strategies/real-estate-professional-status",
+      "supporting": [
+        "/tools/real-estate-professional-status-hours-tracker"
+      ]
+    },
+    "backdoor roth": {
+      "canonical": "/tax-strategies/backdoor-roth-ira",
+      "supporting": []
+    },
+    "hsa strategy": {
+      "canonical": "/tax-strategies/hsa-strategy",
+      "supporting": []
+    },
+    "solo 401k": {
+      "canonical": "/tax-strategies/solo-401k",
+      "supporting": []
+    },
+    "tax loss harvesting": {
+      "canonical": "/tax-strategies/tax-loss-harvesting",
+      "supporting": [
+        "/worksheets/tax-loss-harvesting-worksheet"
+      ]
+    },
+    "airbnb arbitrage": {
+      "canonical": "/topics/airbnb-arbitrage",
+      "supporting": []
+    },
+    "cost segregation study": {
+      "canonical": "/tax-strategies/cost-segregation",
+      "supporting": []
+    },
+    "accelerated depreciation": {
+      "canonical": "/tax-strategies/cost-segregation",
+      "supporting": [
+        "/tax-strategies/bonus-depreciation"
+      ]
+    },
+    "real estate tax strategy": {
+      "canonical": "/tax-strategies/cost-segregation",
+      "supporting": []
+    },
+    "first year depreciation": {
+      "canonical": "/tax-strategies/bonus-depreciation",
+      "supporting": []
+    },
+    "tax cuts and jobs act depreciation": {
+      "canonical": "/tax-strategies/bonus-depreciation",
+      "supporting": []
+    },
+    "like kind exchange": {
+      "canonical": "/tax-strategies/1031-exchange",
+      "supporting": []
+    },
+    "tax deferred exchange": {
+      "canonical": "/tax-strategies/1031-exchange",
+      "supporting": []
+    },
+    "starker exchange": {
+      "canonical": "/tax-strategies/1031-exchange",
+      "supporting": []
+    },
+    "real estate professional status reps": {
+      "canonical": "/tax-strategies/real-estate-professional-status",
+      "supporting": []
+    },
+    "reps tax status": {
+      "canonical": "/tax-strategies/real-estate-professional-status",
+      "supporting": []
+    },
+    "passive loss limitations": {
+      "canonical": "/tax-strategies/real-estate-professional-status",
+      "supporting": []
+    },
+    "material participation": {
+      "canonical": "/tax-strategies/real-estate-professional-status",
+      "supporting": []
+    },
+    "airbnb tax loophole": {
+      "canonical": "/tax-strategies/short-term-rental-loophole",
+      "supporting": []
+    },
+    "str tax strategy": {
+      "canonical": "/tax-strategies/short-term-rental-loophole",
+      "supporting": []
+    },
+    "vacation rental tax benefits": {
+      "canonical": "/tax-strategies/short-term-rental-loophole",
+      "supporting": []
+    },
+    "section 179": {
+      "canonical": "/tax-strategies/section-179",
+      "supporting": []
+    },
+    "section 179 deduction": {
+      "canonical": "/tax-strategies/section-179",
+      "supporting": []
+    },
+    "equipment expensing": {
+      "canonical": "/tax-strategies/section-179",
+      "supporting": []
+    },
+    "business tax deduction": {
+      "canonical": "/tax-strategies/section-179",
+      "supporting": []
+    },
+    "self directed ira": {
+      "canonical": "/tax-strategies/self-directed-ira",
+      "supporting": []
+    },
+    "sdira real estate": {
+      "canonical": "/tax-strategies/self-directed-ira",
+      "supporting": []
+    },
+    "ira real estate investing": {
+      "canonical": "/tax-strategies/self-directed-ira",
+      "supporting": []
+    },
+    "alternative ira investments": {
+      "canonical": "/tax-strategies/self-directed-ira",
+      "supporting": []
+    },
+    "solo 401 k": {
+      "canonical": "/tax-strategies/solo-401k",
+      "supporting": []
+    },
+    "individual 401k": {
+      "canonical": "/tax-strategies/solo-401k",
+      "supporting": []
+    },
+    "self employed 401k": {
+      "canonical": "/tax-strategies/solo-401k",
+      "supporting": []
+    },
+    "one participant 401k": {
+      "canonical": "/tax-strategies/solo-401k",
+      "supporting": []
+    },
+    "hsa triple tax advantage": {
+      "canonical": "/tax-strategies/hsa-strategy",
+      "supporting": []
+    },
+    "health savings account": {
+      "canonical": "/tax-strategies/hsa-strategy",
+      "supporting": []
+    },
+    "hsa investing": {
+      "canonical": "/tax-strategies/hsa-strategy",
+      "supporting": []
+    },
+    "hsa retirement strategy": {
+      "canonical": "/tax-strategies/hsa-strategy",
+      "supporting": []
+    },
+    "augusta rule section 280a": {
+      "canonical": "/tax-strategies/augusta-rule",
+      "supporting": []
+    },
+    "section 280a": {
+      "canonical": "/tax-strategies/augusta-rule",
+      "supporting": []
+    },
+    "rent home to business": {
+      "canonical": "/tax-strategies/augusta-rule",
+      "supporting": []
+    },
+    "14 day rental rule": {
+      "canonical": "/tax-strategies/augusta-rule",
+      "supporting": []
+    },
+    "s corp strategy": {
+      "canonical": "/tax-strategies/s-corp-strategy",
+      "supporting": []
+    },
+    "s corp tax strategy": {
+      "canonical": "/tax-strategies/s-corp-strategy",
+      "supporting": []
+    },
+    "s corporation tax savings": {
+      "canonical": "/tax-strategies/s-corp-strategy",
+      "supporting": []
+    },
+    "reasonable salary s corp": {
+      "canonical": "/tax-strategies/s-corp-strategy",
+      "supporting": [
+        "/blog/reasonable-salary-s-corp"
+      ]
+    },
+    "self employment tax savings": {
+      "canonical": "/tax-strategies/s-corp-strategy",
+      "supporting": []
+    },
+    "opportunity zones": {
+      "canonical": "/tax-strategies/opportunity-zones",
+      "supporting": []
+    },
+    "opportunity zone investing": {
+      "canonical": "/tax-strategies/opportunity-zones",
+      "supporting": []
+    },
+    "qualified opportunity zone": {
+      "canonical": "/tax-strategies/opportunity-zones",
+      "supporting": []
+    },
+    "qoz investing": {
+      "canonical": "/tax-strategies/opportunity-zones",
+      "supporting": []
+    },
+    "capital gains deferral": {
+      "canonical": "/tax-strategies/opportunity-zones",
+      "supporting": []
+    },
+    "estimated tax safe harbor planner": {
+      "canonical": "/tools/estimated-tax-safe-harbor-planner",
+      "supporting": []
+    },
+    "accountable plan home office reimbursement calculator": {
+      "canonical": "/tools/accountable-plan-home-office-reimbursement-calculator",
+      "supporting": []
+    },
+    "home office reimbursement calculator": {
+      "canonical": "/tools/accountable-plan-home-office-reimbursement-calculator",
+      "supporting": []
+    },
+    "augusta rule meeting log and rent calculator": {
+      "canonical": "/tools/augusta-rule-meeting-log-and-rent-calculator",
+      "supporting": []
+    },
+    "augusta rule rent calculator log": {
+      "canonical": "/tools/augusta-rule-meeting-log-and-rent-calculator",
+      "supporting": []
+    },
+    "annualized income estimated tax calculator": {
+      "canonical": "/tools/annualized-income-estimated-tax-calculator",
+      "supporting": []
+    },
+    "real estate professional status hours tracker": {
+      "canonical": "/tools/real-estate-professional-status-hours-tracker",
+      "supporting": []
+    },
+    "rep status str hours tracker log csv": {
+      "canonical": "/tools/real-estate-professional-status-hours-tracker",
+      "supporting": []
+    },
+    "cost segregation payback calculator": {
+      "canonical": "/tools/cost-segregation-payback-calculator",
+      "supporting": []
+    },
+    "cost segregation payback calculator sensitivity": {
+      "canonical": "/tools/cost-segregation-payback-calculator",
+      "supporting": []
+    },
+    "irmaa headroom roth conversion planner": {
+      "canonical": "/tools/irmaa-headroom-roth-conversion-planner",
+      "supporting": []
+    },
+    "irmaa headroom roth conversion room planner": {
+      "canonical": "/tools/irmaa-headroom-roth-conversion-planner",
+      "supporting": []
+    },
+    "qcd vs roth conversion planner": {
+      "canonical": "/tools/qcd-vs-roth-conversion-planner",
+      "supporting": []
+    },
+    "qcd vs roth conversion planner rmd irmaa": {
+      "canonical": "/tools/qcd-vs-roth-conversion-planner",
+      "supporting": []
+    },
+    "solo 401k loan vs heloc calculator": {
+      "canonical": "/tools/solo-401k-loan-vs-heloc-calculator",
+      "supporting": []
+    },
+    "solo 401 k loan vs heloc calculator": {
+      "canonical": "/tools/solo-401k-loan-vs-heloc-calculator",
+      "supporting": []
+    },
+    "installment sale tax cashflow planner": {
+      "canonical": "/tools/installment-sale-tax-cashflow-planner",
+      "supporting": []
+    },
+    "backdoor roth pro rata calculator": {
+      "canonical": "/tools/backdoor-roth-pro-rata-calculator",
+      "supporting": []
+    },
+    "backdoor roth pro rata calculator form 8606": {
+      "canonical": "/tools/backdoor-roth-pro-rata-calculator",
+      "supporting": []
+    },
+    "w2 withholding catch up planner": {
+      "canonical": "/tools/w2-withholding-catch-up-planner",
+      "supporting": []
+    },
+    "w 2 withholding catch up planner late year fix": {
+      "canonical": "/tools/w2-withholding-catch-up-planner",
+      "supporting": []
+    },
+    "capital gains headroom calculator": {
+      "canonical": "/tools/capital-gains-headroom-calculator",
+      "supporting": []
+    },
+    "capital gains headroom calculator user entered guardrails": {
+      "canonical": "/tools/capital-gains-headroom-calculator",
+      "supporting": []
+    },
+    "qbi deduction worksheet": {
+      "canonical": "/worksheets/qbi-deduction-worksheet",
+      "supporting": []
+    },
+    "s corp election decision worksheet": {
+      "canonical": "/worksheets/s-corp-election-decision-worksheet",
+      "supporting": []
+    },
+    "tax loss harvesting worksheet": {
+      "canonical": "/worksheets/tax-loss-harvesting-worksheet",
+      "supporting": []
+    },
+    "721 upreit vs dst aging landlords": {
+      "canonical": "/compare/721-upreit-vs-dst-aging-landlords",
+      "supporting": []
+    },
+    "augusta rule vs home office deduction s corp": {
+      "canonical": "/compare/augusta-rule-vs-home-office-deduction-s-corp",
+      "supporting": []
+    },
+    "backdoor roth vs taxable brokerage high income earners": {
+      "canonical": "/compare/backdoor-roth-vs-taxable-brokerage-high-income-earners",
+      "supporting": []
+    },
+    "capital gains harvesting vs roth conversion early retirees": {
+      "canonical": "/compare/capital-gains-harvesting-vs-roth-conversion-early-retirees",
+      "supporting": []
+    },
+    "cost segregation vs str loophole w2 passive loss": {
+      "canonical": "/compare/cost-segregation-vs-str-loophole-w2-passive-loss",
+      "supporting": []
+    },
+    "installment sale vs deferred sales trust small business exit": {
+      "canonical": "/compare/installment-sale-vs-deferred-sales-trust-small-business-exit",
+      "supporting": []
+    },
+    "mark to market vs capital gains active traders": {
+      "canonical": "/compare/mark-to-market-vs-capital-gains-active-traders",
+      "supporting": []
+    },
+    "mfj vs mfs high income student loans": {
+      "canonical": "/compare/mfj-vs-mfs-high-income-student-loans",
+      "supporting": []
+    },
+    "mortgage payoff vs investing": {
+      "canonical": "/compare/mortgage-payoff-vs-investing",
+      "supporting": []
+    },
+    "pricelabs vs pms native pricing multi property": {
+      "canonical": "/compare/pricelabs-vs-pms-native-pricing-multi-property",
+      "supporting": []
+    },
+    "qcd first vs roth conversion first irmaa": {
+      "canonical": "/compare/qcd-first-vs-roth-conversion-first-irmaa",
+      "supporting": []
+    },
+    "s corp election vs sole proprietorship high income consultants": {
+      "canonical": "/compare/s-corp-election-vs-sole-proprietorship-high-income-consultants",
+      "supporting": []
+    },
+    "safe harbor vs annualized income 1099": {
+      "canonical": "/compare/safe-harbor-vs-annualized-income-1099",
+      "supporting": []
+    },
+    "solo 401k loan vs heloc down payment": {
+      "canonical": "/compare/solo-401k-loan-vs-heloc-down-payment",
+      "supporting": []
+    },
+    "4 percent rule": {
+      "canonical": "/blog/4-percent-rule",
+      "supporting": []
+    },
+    "4 percent rule retirement": {
+      "canonical": "/blog/4-percent-rule",
+      "supporting": []
+    },
+    "the 4 rule how much can you safely withdraw in retirement": {
+      "canonical": "/blog/4-percent-rule",
+      "supporting": []
+    },
+    "401k rollover guide": {
+      "canonical": "/blog/401k-rollover-guide",
+      "supporting": []
+    },
+    "401 k rollover guide move your retirement funds the right way": {
+      "canonical": "/blog/401k-rollover-guide",
+      "supporting": []
+    },
+    "457b plan guide": {
+      "canonical": "/blog/457b-plan-guide",
+      "supporting": []
+    },
+    "457b plan": {
+      "canonical": "/blog/457b-plan-guide",
+      "supporting": []
+    },
+    "457 b plan guide the government employees secret weapon": {
+      "canonical": "/blog/457b-plan-guide",
+      "supporting": []
+    },
+    "apy vs interest rate guide": {
+      "canonical": "/blog/apy-vs-interest-rate-guide",
+      "supporting": []
+    },
+    "apy vs interest rate": {
+      "canonical": "/blog/apy-vs-interest-rate-guide",
+      "supporting": []
+    },
+    "apy vs interest rate what your savings account really pays": {
+      "canonical": "/blog/apy-vs-interest-rate-guide",
+      "supporting": []
+    },
+    "airbnb arbitrage mistakes that kill profit": {
+      "canonical": "/blog/airbnb-arbitrage-mistakes-that-kill-profit",
+      "supporting": []
+    },
+    "10 airbnb arbitrage mistakes that kill profit for new hosts": {
+      "canonical": "/blog/airbnb-arbitrage-mistakes-that-kill-profit",
+      "supporting": []
+    },
+    "airbnb furniture budget checklist": {
+      "canonical": "/blog/airbnb-furniture-budget-checklist",
+      "supporting": []
+    },
+    "airbnb furniture budget checklist for new arbitrage hosts": {
+      "canonical": "/blog/airbnb-furniture-budget-checklist",
+      "supporting": []
+    },
+    "airbnb guest message templates that reduce friction": {
+      "canonical": "/blog/airbnb-guest-message-templates-that-reduce-friction",
+      "supporting": []
+    },
+    "airbnb guest message templates that reduce friction and improve reviews": {
+      "canonical": "/blog/airbnb-guest-message-templates-that-reduce-friction",
+      "supporting": []
+    },
+    "annuities vs bonds comparison 2026": {
+      "canonical": "/blog/annuities-vs-bonds-comparison-2026",
+      "supporting": []
+    },
+    "annuities vs bonds comparison 2026 income risk and liquidity tradeoffs": {
+      "canonical": "/blog/annuities-vs-bonds-comparison-2026",
+      "supporting": []
+    },
+    "best tax deductions for high income earners": {
+      "canonical": "/blog/best-tax-deductions-for-high-income-earners",
+      "supporting": []
+    },
+    "best tax deductions for high income earners complete 2026 guide": {
+      "canonical": "/blog/best-tax-deductions-for-high-income-earners",
+      "supporting": []
+    },
+    "best tax deductions for self employed": {
+      "canonical": "/blog/best-tax-deductions-for-self-employed",
+      "supporting": []
+    },
+    "best tax deductions for self employed complete 2026 guide to lower taxes without leaving money on the table": {
+      "canonical": "/blog/best-tax-deductions-for-self-employed",
+      "supporting": []
+    },
+    "best tax deductions for small business": {
+      "canonical": "/blog/best-tax-deductions-for-small-business",
+      "supporting": []
+    },
+    "best tax deductions for small business complete 2026 guide": {
+      "canonical": "/blog/best-tax-deductions-for-small-business",
+      "supporting": []
+    },
+    "capital gains tax for beginners": {
+      "canonical": "/blog/capital-gains-tax-for-beginners",
+      "supporting": []
+    },
+    "capital gains tax for beginners complete 2026 guide to paying less and avoiding costly mistakes": {
+      "canonical": "/blog/capital-gains-tax-for-beginners",
+      "supporting": []
+    },
+    "debt snowball vs avalanche": {
+      "canonical": "/blog/debt-snowball-vs-avalanche",
+      "supporting": []
+    },
+    "debt snowball vs avalanche which payoff method wins": {
+      "canonical": "/blog/debt-snowball-vs-avalanche",
+      "supporting": []
+    },
+    "debt consolidation guide": {
+      "canonical": "/blog/debt-consolidation-guide",
+      "supporting": []
+    },
+    "debt consolidation": {
+      "canonical": "/blog/debt-consolidation-guide",
+      "supporting": []
+    },
+    "debt consolidation guide when it saves money and when it does not": {
+      "canonical": "/blog/debt-consolidation-guide",
+      "supporting": []
+    },
+    "debt to income ratio": {
+      "canonical": "/blog/debt-to-income-ratio",
+      "supporting": []
+    },
+    "debt to income ratio what lenders look for how to improve": {
+      "canonical": "/blog/debt-to-income-ratio",
+      "supporting": []
+    },
+    "etf vs mutual fund": {
+      "canonical": "/blog/etf-vs-mutual-fund",
+      "supporting": []
+    },
+    "etf vs mutual fund which is better for your portfolio": {
+      "canonical": "/blog/etf-vs-mutual-fund",
+      "supporting": []
+    },
+    "fire movement guide": {
+      "canonical": "/blog/fire-movement-guide",
+      "supporting": []
+    },
+    "fire movement": {
+      "canonical": "/blog/fire-movement-guide",
+      "supporting": []
+    },
+    "fire movement guide financial independence retire early": {
+      "canonical": "/blog/fire-movement-guide",
+      "supporting": []
+    },
+    "high deductible vs low deductible insurance": {
+      "canonical": "/blog/high-deductible-vs-low-deductible-insurance",
+      "supporting": []
+    },
+    "high deductible vs low deductible": {
+      "canonical": "/blog/high-deductible-vs-low-deductible-insurance",
+      "supporting": []
+    },
+    "high deductible vs low deductible insurance the break even math": {
+      "canonical": "/blog/high-deductible-vs-low-deductible-insurance",
+      "supporting": []
+    },
+    "house hacking guide": {
+      "canonical": "/blog/house-hacking-guide",
+      "supporting": []
+    },
+    "house hacking": {
+      "canonical": "/blog/house-hacking-guide",
+      "supporting": []
+    },
+    "house hacking guide live for free while building wealth": {
+      "canonical": "/blog/house-hacking-guide",
+      "supporting": []
+    },
+    "hsa strategy for beginners": {
+      "canonical": "/blog/hsa-strategy-for-beginners",
+      "supporting": []
+    },
+    "hsa strategy for beginners complete 2026 guide to lower taxes and build long term health wealth": {
+      "canonical": "/blog/hsa-strategy-for-beginners",
+      "supporting": []
+    },
+    "line of credit vs term loan": {
+      "canonical": "/blog/line-of-credit-vs-term-loan",
+      "supporting": []
+    },
+    "line of credit vs term loan which one costs you less": {
+      "canonical": "/blog/line-of-credit-vs-term-loan",
+      "supporting": []
+    },
+    "llc vs s corp": {
+      "canonical": "/blog/llc-vs-s-corp",
+      "supporting": []
+    },
+    "llc vs s corp which business structure saves more taxes": {
+      "canonical": "/blog/llc-vs-s-corp",
+      "supporting": []
+    },
+    "marginal vs effective tax rate": {
+      "canonical": "/blog/marginal-vs-effective-tax-rate",
+      "supporting": []
+    },
+    "marginal vs effective tax rate what the brackets actually do to your money": {
+      "canonical": "/blog/marginal-vs-effective-tax-rate",
+      "supporting": []
+    },
+    "micah facebook message airbnb": {
+      "canonical": "/blog/micah-facebook-message-airbnb",
+      "supporting": []
+    },
+    "airbnb success story": {
+      "canonical": "/blog/micah-facebook-message-airbnb",
+      "supporting": []
+    },
+    "how micah hydrick made 5 000 his first month with one facebook message 2026 case study": {
+      "canonical": "/blog/micah-facebook-message-airbnb",
+      "supporting": []
+    },
+    "qbi deduction vs itemized deductions": {
+      "canonical": "/blog/qbi-deduction-vs-itemized-deductions",
+      "supporting": []
+    },
+    "qbi deduction vs itemized deductions which strategy works better in 2026": {
+      "canonical": "/blog/qbi-deduction-vs-itemized-deductions",
+      "supporting": []
+    },
+    "s corp reasonable salary": {
+      "canonical": "/blog/reasonable-salary-s-corp",
+      "supporting": []
+    },
+    "s corp reasonable salary how to set your pay avoid irs issues": {
+      "canonical": "/blog/reasonable-salary-s-corp",
+      "supporting": []
+    },
+    "rent vs buy which is better": {
+      "canonical": "/blog/rent-vs-buy-which-is-better",
+      "supporting": []
+    },
+    "rent vs buy which is better for your money": {
+      "canonical": "/blog/rent-vs-buy-which-is-better",
+      "supporting": []
+    },
+    "rental property investing": {
+      "canonical": "/blog/rental-property-investing",
+      "supporting": []
+    },
+    "rental property investing 2026 guide to cash flow underwriting and first deal risk": {
+      "canonical": "/blog/rental-property-investing",
+      "supporting": []
+    },
+    "s corp election break even guide": {
+      "canonical": "/blog/s-corp-election-break-even-guide",
+      "supporting": []
+    },
+    "when should i elect s corp": {
+      "canonical": "/blog/s-corp-election-break-even-guide",
+      "supporting": []
+    },
+    "s corp election break even guide when the structure starts making sense": {
+      "canonical": "/blog/s-corp-election-break-even-guide",
+      "supporting": []
+    },
+    "s corp election deadline": {
+      "canonical": "/blog/s-corp-election-deadline",
+      "supporting": []
+    },
+    "s corp election deadline complete 2026 guide for us business owners": {
+      "canonical": "/blog/s-corp-election-deadline",
+      "supporting": []
+    },
+    "s corp election form": {
+      "canonical": "/blog/s-corp-election-form",
+      "supporting": []
+    },
+    "s corp election form complete 2026 guide to form 2553 deadlines and tax tradeoffs": {
+      "canonical": "/blog/s-corp-election-form",
+      "supporting": []
+    },
+    "schedule c vs s corp tax guide": {
+      "canonical": "/blog/schedule-c-vs-s-corp-tax-guide",
+      "supporting": []
+    },
+    "schedule c vs s corp tax calculator for accountants": {
+      "canonical": "/blog/schedule-c-vs-s-corp-tax-guide",
+      "supporting": []
+    },
+    "schedule c vs s corp tax guide 2026 framework for owners and accountants": {
+      "canonical": "/blog/schedule-c-vs-s-corp-tax-guide",
+      "supporting": []
+    },
+    "sequence of returns risk": {
+      "canonical": "/blog/sequence-of-returns-risk",
+      "supporting": []
+    },
+    "sequence of returns risk protect your retirement from market crashes": {
+      "canonical": "/blog/sequence-of-returns-risk",
+      "supporting": []
+    },
+    "student loan payoff negotiation": {
+      "canonical": "/blog/student-loan-payoff-negotiation",
+      "supporting": []
+    },
+    "student loan payoff negotiation 2026 guide to federal vs private settlement reality": {
+      "canonical": "/blog/student-loan-payoff-negotiation",
+      "supporting": []
+    },
+    "tax deduction for beginners": {
+      "canonical": "/blog/tax-deduction-for-beginners",
+      "supporting": []
+    },
+    "tax deduction for beginners complete 2026 guide to practical tax reduction decisions": {
+      "canonical": "/blog/tax-deduction-for-beginners",
+      "supporting": []
+    },
+    "tax planning for beginners": {
+      "canonical": "/blog/tax-planning-for-beginners",
+      "supporting": []
+    },
+    "tax planning for beginners complete 2026 guide to reducing your tax bill": {
+      "canonical": "/blog/tax-planning-for-beginners",
+      "supporting": []
+    }
+  },
+  "notes": "One canonical URL per head query. Tool + companion article is an intentional cluster."
+}

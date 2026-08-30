@@ -1,0 +1,30 @@
+{
+  "id": "be-2026W35-005",
+  "status": "open",
+  "createdAt": "2026-08-24T17:26:43.310Z",
+  "week": "2026-W35",
+  "kind": "dead-link",
+  "lever": "hygiene",
+  "autoApply": true,
+  "url": "https://www.legacyinvestingshow.com/blog/courtney-wealth-plan",
+  "path": "/blog/courtney-wealth-plan",
+  "sourcePath": "content/blog/courtney-wealth-plan.md",
+  "hrefFrom": "/tax-strategies/charitable-bunching",
+  "hrefTo": "/tax-strategies/bunching-deductions",
+  "reason": "/tax-strategies/charitable-bunching redirects to /tax-strategies/bunching-deductions",
+  "gscBefore": {
+    "clicks": 0,
+    "impressions": 0,
+    "position": 0,
+    "ctr": 0
+  },
+  "gscSitewideBefore": {
+    "clicks": 875,
+    "impressions": 25237,
+    "ctr": 0.034671315925030706,
+    "position": 23.782906050639937,
+    "startDate": "2026-05-23",
+    "endDate": "2026-08-22"
+  },
+  "contentHash": "4c598230132adace7bee68b741397303b9a3a551f1ee04390d5456d50d91c6f3"
+}

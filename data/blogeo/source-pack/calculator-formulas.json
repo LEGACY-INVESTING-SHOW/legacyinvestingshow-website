@@ -1,0 +1,20 @@
+{
+  "note": "Calculator math lives in the calcs2 repo. Do not treat tools/*.html as source of truth. This file only maps public URLs to claim types.",
+  "tools": [
+    {
+      "path": "/tools/augusta-rule-meeting-log-and-rent-calculator",
+      "claimType": "formula",
+      "sourceUrl": "https://www.irs.gov/publications/p587"
+    },
+    {
+      "path": "/tools/cost-segregation-payback-calculator",
+      "claimType": "formula",
+      "sourceUrl": "https://www.irs.gov/publications/p946"
+    },
+    {
+      "path": "/tools/renters-insurance-cost",
+      "claimType": "stat",
+      "sourceUrl": "https://www.legacyinvestingshow.com/tools/renters-insurance-cost"
+    }
+  ]
+}

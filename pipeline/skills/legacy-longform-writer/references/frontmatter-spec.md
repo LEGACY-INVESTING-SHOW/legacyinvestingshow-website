@@ -15,3 +15,4 @@ Preferred fields:
 - seo.secondaryKeywords
 - faq
 - statistics
+- claims (array of `{ type, sourceUrl, asOf }` for tax-figure / stat / formula blocks)

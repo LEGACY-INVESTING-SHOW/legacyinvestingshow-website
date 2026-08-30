@@ -23,6 +23,9 @@ Validate:
 - heading hierarchy
 - word count range
 - FAQ presence and quality
+- labelled `## Quick Take` as the first H2 (P0 fail if missing)
+- FAQ items written as spoken questions (P0 if FAQ exists but is not questions)
+- `claims[]` with `sourceUrl` on tax figures, stats, and formulas (P1 if missing on new drafts)
 
 ## Step 2: SEO/AEO Checks
 
@@ -32,6 +35,7 @@ Validate:
 - title/meta quality
 - entity coverage
 - answer-ready FAQ wording
+- Quick Take present, specific, and not a generic intro
 - internal link relevance
 
 ## Step 3: Factual Risk Checks

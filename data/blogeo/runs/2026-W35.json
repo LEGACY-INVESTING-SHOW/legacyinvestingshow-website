@@ -1,0 +1,370 @@
+{
+  "week": "2026-W35",
+  "generatedAt": "2026-08-24T17:26:43.318Z",
+  "windowNote": "Last 3 months",
+  "catalog": {
+    "pageCount": 947,
+    "indexableCount": 608
+  },
+  "sitewide": {
+    "clicks": 875,
+    "impressions": 25237,
+    "ctr": 0.034671315925030706,
+    "position": 23.782906050639937,
+    "startDate": "2026-05-23",
+    "endDate": "2026-08-22"
+  },
+  "power": {
+    "totalClicks": 875,
+    "urlsWithClicks": 8,
+    "top1Share": 0.792,
+    "top5Share": 0.9954285714285714,
+    "top14Share": 0.9988571428571429,
+    "topUrls": [
+      {
+        "path": "/",
+        "clicks": 693,
+        "impressions": 11241,
+        "position": 9.19,
+        "ctr": 0.06164931945556445,
+        "share": 0.792
+      },
+      {
+        "path": "/blog/preston-seo-review",
+        "clicks": 171,
+        "impressions": 8599,
+        "position": 16.32,
+        "ctr": 0.019886033259681357,
+        "share": 0.19542857142857142
+      },
+      {
+        "path": "/blog/legacy-investing-show-review",
+        "clicks": 5,
+        "impressions": 345,
+        "position": 14.31,
+        "ctr": 0.014492753623188406,
+        "share": 0.005714285714285714
+      },
+      {
+        "path": "/about",
+        "clicks": 1,
+        "impressions": 1011,
+        "position": 7.25,
+        "ctr": 0.0009891196834817012,
+        "share": 0.001142857142857143
+      },
+      {
+        "path": "/tax-strategies",
+        "clicks": 1,
+        "impressions": 1011,
+        "position": 7.25,
+        "ctr": 0.0009891196834817012,
+        "share": 0.001142857142857143
+      },
+      {
+        "path": "/blog/money-moves-cpa-never-mentioned-high-earners",
+        "clicks": 1,
+        "impressions": 68,
+        "position": 12.49,
+        "ctr": 0.014705882352941176,
+        "share": 0.001142857142857143
+      },
+      {
+        "path": "/blog/tax-planning-for-high-earners",
+        "clicks": 1,
+        "impressions": 35,
+        "position": 16.06,
+        "ctr": 0.02857142857142857,
+        "share": 0.001142857142857143
+      },
+      {
+        "path": "/tools/home-purchase-cash-to-close",
+        "clicks": 1,
+        "impressions": 5,
+        "position": 54.4,
+        "ctr": 0.2,
+        "share": 0.001142857142857143
+      }
+    ]
+  },
+  "factcheck": {
+    "checkedCount": 18,
+    "flagCount": 1
+  },
+  "aeo": null,
+  "flagCounts": {
+    "descriptionLength": 47,
+    "missingImage": 551,
+    "deadInternalLink": 342,
+    "noQuickTake": 49,
+    "taxYearStale": 18,
+    "emptyFaq": 10,
+    "noindexButTraffic": 1,
+    "thinProgrammatic": 73,
+    "dualCanonicalRisk": 8,
+    "staleTaxYear": 1
+  },
+  "ticketIds": [
+    "be-2026W35-001",
+    "be-2026W35-002",
+    "be-2026W35-003",
+    "be-2026W35-004",
+    "be-2026W35-005",
+    "be-2026W35-006",
+    "be-2026W35-007",
+    "be-2026W35-008",
+    "be-2026W35-009",
+    "be-2026W35-010",
+    "be-2026W35-011",
+    "be-2026W35-012",
+    "be-2026W35-013",
+    "be-2026W35-014",
+    "be-2026W35-015",
+    "be-2026W35-016",
+    "be-2026W35-017",
+    "be-2026W35-018",
+    "be-2026W35-019",
+    "be-2026W35-020",
+    "be-2026W35-021",
+    "be-2026W35-022",
+    "be-2026W35-023",
+    "be-2026W35-024",
+    "be-2026W35-025",
+    "be-2026W35-026",
+    "be-2026W35-027",
+    "be-2026W35-028",
+    "be-2026W35-029",
+    "be-2026W35-030",
+    "be-2026W35-031",
+    "be-2026W35-032",
+    "be-2026W35-033",
+    "be-2026W35-034"
+  ],
+  "topOpportunities": [
+    {
+      "path": "/blog/preston-seo-review",
+      "lever": "rank",
+      "score": 172.96,
+      "clicks": 171,
+      "impressions": 8599,
+      "position": 16.32,
+      "sitelinkSuspect": false
+    },
+    {
+      "path": "/blog/how-much-is-renters-insurance-cost-guide",
+      "lever": "rank",
+      "score": 43.08,
+      "clicks": 0,
+      "impressions": 1077,
+      "position": 79.15,
+      "sitelinkSuspect": false
+    },
+    {
+      "path": "/tools",
+      "lever": "ctr",
+      "score": 25.450000000000003,
+      "clicks": 0,
+      "impressions": 1018,
+      "position": 7.24,
+      "sitelinkSuspect": false
+    },
+    {
+      "path": "/compare",
+      "lever": "ctr",
+      "score": 25.3,
+      "clicks": 0,
+      "impressions": 1012,
+      "position": 7.24,
+      "sitelinkSuspect": false
+    },
+    {
+      "path": "/about",
+      "lever": "ctr",
+      "score": 24.275000000000002,
+      "clicks": 1,
+      "impressions": 1011,
+      "position": 7.25,
+      "sitelinkSuspect": false
+    },
+    {
+      "path": "/tax-strategies",
+      "lever": "ctr",
+      "score": 24.275000000000002,
+      "clicks": 1,
+      "impressions": 1011,
+      "position": 7.25,
+      "sitelinkSuspect": false
+    },
+    {
+      "path": "/blog/best-tax-planning-software-for-cpas",
+      "lever": "rank",
+      "score": 20.04,
+      "clicks": 0,
+      "impressions": 501,
+      "position": 44.69,
+      "sitelinkSuspect": false
+    },
+    {
+      "path": "/blog",
+      "lever": "ctr",
+      "score": 16.150000000000002,
+      "clicks": 0,
+      "impressions": 646,
+      "position": 7.13,
+      "sitelinkSuspect": false
+    },
+    {
+      "path": "/worksheets",
+      "lever": "ctr",
+      "score": 16.1,
+      "clicks": 0,
+      "impressions": 644,
+      "position": 7.13,
+      "sitelinkSuspect": false
+    },
+    {
+      "path": "/blog/best-tax-planning-software-for-financial-advisors",
+      "lever": "rank",
+      "score": 14.16,
+      "clicks": 0,
+      "impressions": 354,
+      "position": 57.47,
+      "sitelinkSuspect": false
+    },
+    {
+      "path": "/blog/401k-rollover-guide",
+      "lever": "rank",
+      "score": 12.16,
+      "clicks": 0,
+      "impressions": 304,
+      "position": 61.43,
+      "sitelinkSuspect": false
+    },
+    {
+      "path": "/blog/2026-mileage-reimbursement-rates",
+      "lever": "rank",
+      "score": 9.68,
+      "clicks": 0,
+      "impressions": 242,
+      "position": 74.87,
+      "sitelinkSuspect": false
+    },
+    {
+      "path": "/blog/best-tax-planning-software-for-retirees",
+      "lever": "rank",
+      "score": 9.32,
+      "clicks": 0,
+      "impressions": 233,
+      "position": 49.69,
+      "sitelinkSuspect": false
+    },
+    {
+      "path": "/blog/legacy-investing-show-review",
+      "lever": "rank",
+      "score": 8.799999999999999,
+      "clicks": 5,
+      "impressions": 345,
+      "position": 14.31,
+      "sitelinkSuspect": false
+    },
+    {
+      "path": "/blog/how-to-pay-off-a-loan-early",
+      "lever": "rank",
+      "score": 8.32,
+      "clicks": 0,
+      "impressions": 208,
+      "position": 68.16,
+      "sitelinkSuspect": false
+    },
+    {
+      "path": "/blog/best-side-hustles-no-money-full-time-job",
+      "lever": "rank",
+      "score": 6.28,
+      "clicks": 0,
+      "impressions": 157,
+      "position": 21.68,
+      "sitelinkSuspect": false
+    },
+    {
+      "path": "/",
+      "lever": "none",
+      "score": 0,
+      "clicks": 693,
+      "impressions": 11241,
+      "position": 9.19,
+      "sitelinkSuspect": false
+    },
+    {
+      "path": "/blog/best-airbnb-automation-tools-for-small-operators",
+      "lever": "none",
+      "score": 0,
+      "clicks": 0,
+      "impressions": 146,
+      "position": 28.77,
+      "sitelinkSuspect": false
+    },
+    {
+      "path": "/topics/airbnb-arbitrage",
+      "lever": "none",
+      "score": 0,
+      "clicks": 0,
+      "impressions": 135,
+      "position": 28.42,
+      "sitelinkSuspect": false
+    },
+    {
+      "path": "/blog/how-to-calculate-home-equity",
+      "lever": "none",
+      "score": 0,
+      "clicks": 0,
+      "impressions": 107,
+      "position": 80.47,
+      "sitelinkSuspect": false
+    },
+    {
+      "path": "/blog/couple-17500-secured-one-week",
+      "lever": "none",
+      "score": 0,
+      "clicks": 0,
+      "impressions": 100,
+      "position": 7.15,
+      "sitelinkSuspect": false
+    },
+    {
+      "path": "/blog/kiana-replaced-finance-job-airbnb",
+      "lever": "none",
+      "score": 0,
+      "clicks": 0,
+      "impressions": 78,
+      "position": 9.95,
+      "sitelinkSuspect": false
+    },
+    {
+      "path": "/blog/how-to-estimate-home-contents-value-for-insurance",
+      "lever": "none",
+      "score": 0,
+      "clicks": 0,
+      "impressions": 72,
+      "position": 89.67,
+      "sitelinkSuspect": false
+    },
+    {
+      "path": "/blog/money-moves-cpa-never-mentioned-high-earners",
+      "lever": "none",
+      "score": 0,
+      "clicks": 1,
+      "impressions": 68,
+      "position": 12.49,
+      "sitelinkSuspect": false
+    },
+    {
+      "path": "/programmatic-pages/insurance/renters-california",
+      "lever": "none",
+      "score": 0,
+      "clicks": 0,
+      "impressions": 66,
+      "position": 84.06,
+      "sitelinkSuspect": false
+    }
+  ]
+}

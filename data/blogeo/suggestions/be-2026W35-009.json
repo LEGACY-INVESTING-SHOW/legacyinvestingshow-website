@@ -1,0 +1,30 @@
+{
+  "id": "be-2026W35-009",
+  "status": "open",
+  "createdAt": "2026-08-24T17:26:43.310Z",
+  "week": "2026-W35",
+  "kind": "dead-link",
+  "lever": "hygiene",
+  "autoApply": true,
+  "url": "https://www.legacyinvestingshow.com/blog/harold-wealth-plan",
+  "path": "/blog/harold-wealth-plan",
+  "sourcePath": "content/blog/harold-wealth-plan.md",
+  "hrefFrom": "/tools/tax-calculator",
+  "hrefTo": "/tools/capital-gains-tax-estimate",
+  "reason": "/tools/tax-calculator redirects to /tools/capital-gains-tax-estimate",
+  "gscBefore": {
+    "clicks": 0,
+    "impressions": 0,
+    "position": 0,
+    "ctr": 0
+  },
+  "gscSitewideBefore": {
+    "clicks": 875,
+    "impressions": 25237,
+    "ctr": 0.034671315925030706,
+    "position": 23.782906050639937,
+    "startDate": "2026-05-23",
+    "endDate": "2026-08-22"
+  },
+  "contentHash": "fe39932507901f8cb937d8f9521d7a18a28a2661f0269be0ed6aa2faaace14c9"
+}

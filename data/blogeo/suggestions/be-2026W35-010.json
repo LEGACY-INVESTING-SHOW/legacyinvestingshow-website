@@ -1,0 +1,30 @@
+{
+  "id": "be-2026W35-010",
+  "status": "open",
+  "createdAt": "2026-08-24T17:26:43.310Z",
+  "week": "2026-W35",
+  "kind": "dead-link",
+  "lever": "hygiene",
+  "autoApply": true,
+  "url": "https://www.legacyinvestingshow.com/blog/high-school-friends-2508-month-airbnb",
+  "path": "/blog/high-school-friends-2508-month-airbnb",
+  "sourcePath": "content/blog/high-school-friends-2508-month-airbnb.md",
+  "hrefFrom": "/blog/micah-facebook-message-5k-month-houston",
+  "hrefTo": "/blog/micah-facebook-message-airbnb",
+  "reason": "/blog/micah-facebook-message-5k-month-houston redirects to /blog/micah-facebook-message-airbnb",
+  "gscBefore": {
+    "clicks": 0,
+    "impressions": 0,
+    "position": 0,
+    "ctr": 0
+  },
+  "gscSitewideBefore": {
+    "clicks": 875,
+    "impressions": 25237,
+    "ctr": 0.034671315925030706,
+    "position": 23.782906050639937,
+    "startDate": "2026-05-23",
+    "endDate": "2026-08-22"
+  },
+  "contentHash": "cc45fdd237385d82a947b45f7151f548e483f111b80d334c07c293990f8642e2"
+}

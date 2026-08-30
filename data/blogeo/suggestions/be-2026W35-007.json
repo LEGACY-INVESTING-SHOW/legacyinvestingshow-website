@@ -1,0 +1,30 @@
+{
+  "id": "be-2026W35-007",
+  "status": "open",
+  "createdAt": "2026-08-24T17:26:43.310Z",
+  "week": "2026-W35",
+  "kind": "dead-link",
+  "lever": "hygiene",
+  "autoApply": true,
+  "url": "https://www.legacyinvestingshow.com/blog/dominate-saturated-market-airbnb",
+  "path": "/blog/dominate-saturated-market-airbnb",
+  "sourcePath": "content/blog/dominate-saturated-market-airbnb.md",
+  "hrefFrom": "/blog/micah-facebook-message-5k-month-houston",
+  "hrefTo": "/blog/micah-facebook-message-airbnb",
+  "reason": "/blog/micah-facebook-message-5k-month-houston redirects to /blog/micah-facebook-message-airbnb",
+  "gscBefore": {
+    "clicks": 0,
+    "impressions": 0,
+    "position": 0,
+    "ctr": 0
+  },
+  "gscSitewideBefore": {
+    "clicks": 875,
+    "impressions": 25237,
+    "ctr": 0.034671315925030706,
+    "position": 23.782906050639937,
+    "startDate": "2026-05-23",
+    "endDate": "2026-08-22"
+  },
+  "contentHash": "13b30df77dafc552e8110b3b2b5578061c3b94aff843e7d9b0d968dd633b4b8b"
+}

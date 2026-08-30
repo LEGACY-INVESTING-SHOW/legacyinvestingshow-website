@@ -1,0 +1,30 @@
+{
+  "id": "be-2026W35-020",
+  "status": "open",
+  "createdAt": "2026-08-24T17:26:43.310Z",
+  "week": "2026-W35",
+  "kind": "dead-link",
+  "lever": "hygiene",
+  "autoApply": true,
+  "url": "https://www.legacyinvestingshow.com/blog/soojin-wealth-plan",
+  "path": "/blog/soojin-wealth-plan",
+  "sourcePath": "content/blog/soojin-wealth-plan.md",
+  "hrefFrom": "/blog/wealth-building-basics",
+  "hrefTo": "/topics/wealth-building",
+  "reason": "/blog/wealth-building-basics redirects to /topics/wealth-building",
+  "gscBefore": {
+    "clicks": 0,
+    "impressions": 0,
+    "position": 0,
+    "ctr": 0
+  },
+  "gscSitewideBefore": {
+    "clicks": 875,
+    "impressions": 25237,
+    "ctr": 0.034671315925030706,
+    "position": 23.782906050639937,
+    "startDate": "2026-05-23",
+    "endDate": "2026-08-22"
+  },
+  "contentHash": "0d9190891357a2e42e34fc3e4e3f21e5ff182be6053a3eb4a4a0924b36b6f63f"
+}

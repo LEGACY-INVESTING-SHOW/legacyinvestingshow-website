@@ -1,0 +1,29 @@
+{
+  "id": "be-2026W35-026",
+  "status": "open",
+  "createdAt": "2026-08-24T17:26:43.311Z",
+  "week": "2026-W35",
+  "kind": "content-push",
+  "lever": "ctr",
+  "autoApply": false,
+  "url": "https://www.legacyinvestingshow.com/about",
+  "path": "/about",
+  "sourcePath": "about.html",
+  "reason": "CTR leak on a non-markdown surface (about.html).",
+  "suggestedAction": "Edit the JSON/HTML source of truth. apply-edit will not rewrite this surface.",
+  "gscBefore": {
+    "clicks": 1,
+    "impressions": 1011,
+    "position": 7.25,
+    "ctr": 0.0009891196834817012
+  },
+  "gscSitewideBefore": {
+    "clicks": 875,
+    "impressions": 25237,
+    "ctr": 0.034671315925030706,
+    "position": 23.782906050639937,
+    "startDate": "2026-05-23",
+    "endDate": "2026-08-22"
+  },
+  "contentHash": "bd96465512e49aff7d3a6b0d70f30832c78e9e9e6bf348a64a26c037265c97dc"
+}

@@ -6,6 +6,7 @@ const matter = require('gray-matter');
 const { spawnSync } = require('child_process');
 const { searchWeb } = require('./lib/search-client');
 const { runLLM } = require('./lib/llm-client');
+const { writePublishBlockedTicket } = require('../blogeo/lib/pipeline-handoff');
 
 const ROOT_DIR = path.join(__dirname, '..', '..');
 const PIPELINE_DIR = path.join(ROOT_DIR, 'pipeline');
@@ -269,6 +270,20 @@ function publishDraft(runDir, draftPath, reviewVerdict, args) {
 
     if (!args.publish) {
         report.reason = 'Publish not requested.';
+        return report;
+    }
+
+    if (process.env.BLOGEO_ALLOW_DIRECT_PUBLISH !== '1') {
+        const parsedDraft = matter(readText(draftPath));
+        const blockedSlug = parsedDraft.data.slug || slugify(parsedDraft.data.title || path.basename(draftPath, '.md'));
+        const ticket = writePublishBlockedTicket({
+            draftPath,
+            slug: blockedSlug,
+            query: parsedDraft.data.seo && parsedDraft.data.seo.primaryKeyword,
+            reason: 'Pipeline --publish was blocked. Human copies the draft after review.',
+        }, ROOT_DIR);
+        report.ticketId = ticket.id;
+        report.reason = `Direct publish is disabled. Wrote suggestion ${ticket.id}. Production writes go through \`node scripts/blogeo/cli.js apply --ticket <id>\`. Set BLOGEO_ALLOW_DIRECT_PUBLISH=1 only for an emergency publisher override.`;
         return report;
     }
 

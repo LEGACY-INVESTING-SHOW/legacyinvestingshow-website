@@ -1,0 +1,30 @@
+{
+  "id": "be-2026W35-018",
+  "status": "open",
+  "createdAt": "2026-08-24T17:26:43.310Z",
+  "week": "2026-W35",
+  "kind": "dead-link",
+  "lever": "hygiene",
+  "autoApply": true,
+  "url": "https://www.legacyinvestingshow.com/blog/rob-27200-one-month-2-airbnbs",
+  "path": "/blog/rob-27200-one-month-2-airbnbs",
+  "sourcePath": "content/blog/rob-27200-one-month-2-airbnbs.md",
+  "hrefFrom": "/blog/micah-facebook-message-5k-month-houston",
+  "hrefTo": "/blog/micah-facebook-message-airbnb",
+  "reason": "/blog/micah-facebook-message-5k-month-houston redirects to /blog/micah-facebook-message-airbnb",
+  "gscBefore": {
+    "clicks": 0,
+    "impressions": 0,
+    "position": 0,
+    "ctr": 0
+  },
+  "gscSitewideBefore": {
+    "clicks": 875,
+    "impressions": 25237,
+    "ctr": 0.034671315925030706,
+    "position": 23.782906050639937,
+    "startDate": "2026-05-23",
+    "endDate": "2026-08-22"
+  },
+  "contentHash": "31157a39dc445dc9875fef182214e1b0286cd94f6159d48906a910736130ffb7"
+}
