@@ -6,6 +6,15 @@
   "trailingSlash": false,
   "headers": [
     {
+      "source": "/lx",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow, noarchive"
+        }
+      ]
+    },
+    {
       "source": "/lx/(.*)",
       "headers": [
         {

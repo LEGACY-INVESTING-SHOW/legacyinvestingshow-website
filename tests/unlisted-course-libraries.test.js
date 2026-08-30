@@ -73,4 +73,11 @@ test('unlisted course libraries are not linked from public SEO surfaces', () => 
 
     const robots = fs.readFileSync(path.join(ROOT, 'robots.txt'), 'utf8');
     assert.match(robots, /Disallow: \/lx\//);
+
+    const parent = fs.readFileSync(path.join(ROOT, 'lx', 'index.html'), 'utf8');
+    assert.match(parent, /noindex, nofollow, noarchive/);
+    assert.doesNotMatch(parent, /wbp-26/);
+    assert.doesNotMatch(parent, /str-rd/);
+    assert.doesNotMatch(parent, /Wealth Blueprint/);
+    assert.doesNotMatch(parent, /Arbitrage Roadmap/);
 });
