@@ -1,0 +1,1941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legacy Wealth Blueprint | Find Hidden Wealth, Cut Taxes, Build the System</title>
+    <meta name="description" content="Watch this before your strategy call to see how Legacy Wealth Blueprint helps you find $100K+ in hidden wealth, cut taxes, eliminate debt drag, and build a complete wealth system. Includes STR ownership overview for applicants interested in buying a property.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-primary: #FAF7F2;
+            --bg-secondary: #ffffff;
+            --bg-accent: #F5EFE6;
+            --bg-warm: #EFE8DC;
+            
+            --text-primary: #2D2A26;
+            --text-secondary: #6B6560;
+            --text-muted: #8B8580;
+            
+            --accent-primary: #2D2A26;
+            --accent-secondary: #C75B39;
+            --accent-light: rgba(199, 91, 57, 0.1);
+            
+            --gold: #C75B39;
+            --gold-light: rgba(199, 91, 57, 0.12);
+            
+            --border-light: rgba(139, 90, 43, 0.1);
+            --border-medium: rgba(139, 90, 43, 0.2);
+            --border-gold: rgba(199, 91, 57, 0.3);
+            
+            --shadow-soft: 0 4px 24px rgba(45, 42, 38, 0.06);
+            --shadow-medium: 0 8px 32px rgba(45, 42, 38, 0.1);
+            --shadow-strong: 0 16px 48px rgba(45, 42, 38, 0.14);
+            
+            --radius-sm: 12px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            --radius-xl: 32px;
+            
+            --transition-fast: 0.15s ease;
+            --transition-medium: 0.3s ease;
+            --transition-slow: 0.5s ease;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-primary);
+            background: var(--bg-primary);
+            line-height: 1.6;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Background Pattern */
+        .bg-pattern {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: -1;
+            background: 
+                radial-gradient(ellipse 80% 50% at 20% 40%, rgba(13, 115, 119, 0.04) 0%, transparent 50%),
+                radial-gradient(ellipse 60% 40% at 80% 60%, rgba(20, 160, 133, 0.03) 0%, transparent 50%),
+                radial-gradient(ellipse 100% 60% at 50% 0%, rgba(13, 115, 119, 0.02) 0%, transparent 60%);
+        }
+        
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(248, 250, 249, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .nav-logo span { color: var(--accent-primary); }
+        
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color var(--transition-fast);
+            position: relative;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #C75B39;
+            transition: width var(--transition-medium);
+        }
+
+        .nav-links a:hover { color: #C75B39; }
+        .nav-links a:hover::after { width: 100%; }
+        
+        .nav-cta {
+            background: #2D2A26;
+            color: #FAF7F2;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius-sm);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all var(--transition-medium);
+            box-shadow: 0 2px 0 #1a1815, 0 4px 12px rgba(45, 42, 38, 0.2);
+        }
+
+        .nav-cta:hover {
+            background: #3D3A36;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 0 #1a1815, 0 6px 16px rgba(45, 42, 38, 0.25);
+        }
+        
+        /* Main Container */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem 6rem;
+        }
+        
+        section { margin-bottom: 4rem; }
+        
+        /* Section Headers */
+        .section-header {
+            text-align: center;
+            max-width: 640px;
+            margin: 0 auto 3rem;
+        }
+        
+        .section-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--accent-light);
+            border: 1px solid var(--border-medium);
+            padding: 0.5rem 1rem;
+            border-radius: 100px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--accent-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 1rem;
+        }
+        
+        .section-tag.gold {
+            background: var(--gold-light);
+            border-color: var(--border-gold);
+            color: #876b1e;
+        }
+        
+        h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2rem, 4vw, 2.75rem);
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .section-description {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        /* Long-Form Copy Blocks */
+        .copy-block {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        .copy-block p {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin: 0 0 1rem;
+        }
+
+        .copy-block p.lead {
+            color: var(--text-primary);
+            font-size: 1.15rem;
+        }
+
+        .copy-block p:last-child {
+            margin-bottom: 0;
+        }
+        
+        /* Hero Section */
+        .hero {
+            display: grid;
+            grid-template-columns: 1.3fr 0.7fr;
+            gap: 4rem;
+            align-items: center;
+            padding: 3rem 0 5rem;
+        }
+        
+        .hero-content { animation: fadeInUp 0.8s ease-out; }
+        
+        .hero h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2.75rem, 5vw, 4rem);
+            font-weight: 600;
+            line-height: 1.1;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+        
+        .hero-subtitle {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.75rem;
+            font-weight: 500;
+            font-style: italic;
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero-description {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 2.5rem;
+            max-width: 540px;
+        }
+        
+        .hero-cta-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all var(--transition-medium);
+
+            cursor: pointer;
+            border: none;
+        }
+        
+        .btn-primary {
+            background: #2D2A26;
+            color: #FAF7F2;
+            box-shadow: 0 4px 0 #1a1815, 0 8px 25px rgba(45, 42, 38, 0.25);
+            border: none;
+            position: relative;
+        }
+
+        .btn-primary:hover {
+            background: #3D3A36;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 0 #1a1815, 0 12px 35px rgba(45, 42, 38, 0.3);
+        }
+
+        .btn-primary:active {
+            transform: translateY(1px);
+            box-shadow: 0 1px 0 #1a1815, 0 4px 15px rgba(45, 42, 38, 0.2);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #2D2A26;
+            border: 1.5px solid rgba(139, 90, 43, 0.25);
+        }
+
+        .btn-secondary:hover {
+            border-color: #C75B39;
+            color: #C75B39;
+            background: rgba(199, 91, 57, 0.05);
+            transform: translateY(-2px);
+        }
+
+        .btn-gold {
+            background: #2D2A26;
+            color: #FAF7F2;
+            box-shadow: 0 4px 0 #1a1815, 0 8px 25px rgba(45, 42, 38, 0.25);
+            border: none;
+            position: relative;
+        }
+
+        .btn-gold:hover {
+            background: #3D3A36;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 0 #1a1815, 0 12px 35px rgba(45, 42, 38, 0.3);
+        }
+
+        .btn-gold:active {
+            transform: translateY(1px);
+            box-shadow: 0 1px 0 #1a1815, 0 4px 15px rgba(45, 42, 38, 0.2);
+        }
+        
+        /* Hero Stats */
+        .hero-stats {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+        
+        .stat-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            box-shadow: var(--shadow-soft);
+            transition: all var(--transition-medium);
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-medium);
+            border-color: var(--border-medium);
+        }
+        
+        .stat-card .label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent-primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-card.gold .label { color: var(--gold); }
+        
+        .stat-card .value {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--text-primary);
+            line-height: 1.4;
+        }
+        
+        /* Video */
+        .video-embed-shell {
+            margin-top: 2rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+        }
+        
+        .video-embed-shell iframe {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            min-height: 320px;
+            border: 0;
+            display: block;
+            background: #0f172a;
+        }
+
+        /* Client Results */
+        .proof-video-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1.25rem;
+            margin-top: 2rem;
+        }
+
+        .proof-video-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            transition: all var(--transition-medium);
+        }
+
+        .proof-video-card:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .proof-video-card iframe {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: 0;
+            display: block;
+            background: #0f172a;
+        }
+
+        .proof-meta {
+            padding: 1rem 1rem 1.1rem;
+        }
+
+        .proof-kicker {
+            font-size: 0.72rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            font-weight: 700;
+            margin-bottom: 0.45rem;
+        }
+
+        .proof-title {
+            font-size: 1rem;
+            line-height: 1.45;
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .proof-image-grid {
+            display: grid;
+            grid-template-columns: repeat(12, minmax(0, 1fr));
+            gap: 1rem;
+            margin-top: 1.25rem;
+        }
+
+        .proof-image-grid .proof-image-card {
+            grid-column: span 4;
+        }
+
+        .proof-image-grid .proof-image-card:nth-child(4) {
+            grid-column: 3 / span 4;
+        }
+
+        .proof-image-grid .proof-image-card:nth-child(5) {
+            grid-column: 7 / span 4;
+        }
+
+        .proof-image-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            transition: all var(--transition-medium);
+        }
+
+        .proof-image-card:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .proof-image-card img {
+            width: 100%;
+            aspect-ratio: 9 / 16;
+            object-fit: cover;
+            display: block;
+            background: #f0ece6;
+        }
+
+        .proof-caption {
+            padding: 0.8rem 0.75rem;
+            font-size: 0.82rem;
+            line-height: 1.35;
+            color: var(--text-secondary);
+            text-align: center;
+        }
+
+        .proof-shot-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .proof-shot {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            transition: all var(--transition-medium);
+        }
+
+        .proof-shot:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-medium);
+            border-color: var(--border-medium);
+        }
+
+        .proof-shot-wide {
+            grid-column: 1 / -1;
+        }
+
+        .proof-shot video {
+            width: 100%;
+            height: 620px;
+            display: block;
+            object-fit: cover;
+            object-position: top center;
+            background: #f3f0ea;
+        }
+
+        .proof-shot figcaption {
+            padding: 1rem 1rem 1.1rem;
+        }
+
+        .proof-shot strong {
+            display: block;
+            color: var(--text-primary);
+            font-size: 0.98rem;
+            margin-bottom: 0.45rem;
+        }
+
+        .proof-shot span {
+            display: block;
+            color: var(--text-secondary);
+            font-size: 0.88rem;
+            line-height: 1.45;
+        }
+        
+        /* Cards */
+        .card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            box-shadow: var(--shadow-soft);
+            transition: all var(--transition-medium);
+        }
+        
+        .card:hover {
+            box-shadow: var(--shadow-medium);
+            border-color: var(--border-medium);
+        }
+        
+        .card.gold {
+            border-color: var(--border-gold);
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-warm) 100%);
+        }
+        
+        /* Grids */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+        
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+        
+        /* Feature Cards */
+        .feature-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            padding: 2rem;
+            text-align: center;
+            transition: all var(--transition-medium);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-medium);
+        }
+        
+        .feature-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            margin: 0 auto 1rem;
+            font-size: 1.75rem;
+        }
+        
+        .feature-icon.green {
+            background: var(--accent-light);
+            border: 2px solid var(--accent-primary);
+        }
+        
+        .feature-icon.gold {
+            background: var(--gold-light);
+            border: 2px solid var(--gold);
+        }
+        
+        .feature-icon.silver {
+            background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+            border: 2px solid rgba(0,0,0,0.1);
+        }
+        
+        .feature-card h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+        }
+        
+        .feature-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        /* Pillar Cards */
+        .pillar-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            padding: 2rem;
+            transition: all var(--transition-medium);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .pillar-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+            transform: scaleX(0);
+            transition: transform var(--transition-medium);
+        }
+        
+        .pillar-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-medium);
+        }
+        
+        .pillar-card:hover::before { transform: scaleX(1); }
+        
+        .pillar-icon {
+            width: 56px;
+            height: 56px;
+            background: var(--accent-light);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.25rem;
+        }
+        
+        .pillar-card h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+        }
+        
+        .pillar-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        /* Process Steps */
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .process-step {
+            position: relative;
+            padding: 2rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            text-align: center;
+        }
+        
+        .process-step:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -1.5rem;
+            width: 1.5rem;
+            height: 2px;
+            background: var(--border-medium);
+        }
+        
+        .step-number {
+            width: 48px;
+            height: 48px;
+            background: var(--accent-primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.25rem;
+            margin: 0 auto 1rem;
+        }
+        
+        .process-step h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .process-step p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        /* Comparison Section */
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 0;
+            align-items: stretch;
+        }
+        
+        .comparison-card {
+            background: var(--bg-secondary);
+            border-radius: var(--radius-md);
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+        }
+        
+        .comparison-card.negative {
+            border: 2px solid rgba(197, 48, 48, 0.3);
+            border-radius: var(--radius-md) 0 0 var(--radius-md);
+        }
+        
+        .comparison-card.positive {
+            border: 2px solid rgba(20, 160, 133, 0.3);
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+        }
+        
+        .comparison-label {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 100px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .comparison-card.negative .comparison-label {
+            background: #c53030;
+            color: white;
+        }
+        
+        .comparison-card.positive .comparison-label {
+            background: var(--accent-primary);
+            color: white;
+        }
+        
+        .vs-divider {
+            width: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .vs-circle {
+            width: 50px;
+            height: 50px;
+            background: var(--text-primary);
+            border: 2px solid var(--gold);
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            color: var(--gold);
+            font-size: 14px;
+            font-weight: 700;
+        }
+        
+        /* Stats Grid */
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin: 2.5rem 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: var(--bg-secondary);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-light);
+        }
+        
+        .stat-item .number {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-item.negative .number { color: #c44536; }
+        .stat-item.positive .number { color: var(--accent-secondary); }
+        .stat-item.gold .number { color: var(--gold); }
+        
+        .stat-item .label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+        
+        /* Callout */
+        .callout {
+            background: linear-gradient(90deg, var(--accent-light), rgba(13, 115, 119, 0.04));
+            border-left: 4px solid var(--accent-primary);
+            padding: 1.25rem 1.5rem;
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            margin: 1.5rem 0;
+        }
+        
+        .callout p {
+            margin: 0;
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+        
+        .callout.gold {
+            background: linear-gradient(90deg, var(--gold-light), rgba(212, 175, 55, 0.04));
+            border-left-color: var(--gold);
+        }
+        
+        .callout.red {
+            background: linear-gradient(90deg, rgba(197, 48, 48, 0.08), rgba(197, 48, 48, 0.03));
+            border-left-color: #c53030;
+        }
+        
+        /* Chip Cards */
+        .chip {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            box-shadow: var(--shadow-soft);
+            transition: all var(--transition-medium);
+        }
+        
+        .chip:hover {
+            box-shadow: var(--shadow-medium);
+            transform: translateY(-2px);
+        }
+        
+        .chip.positive { border-color: rgba(20, 160, 133, 0.35); }
+        .chip.negative { border-color: rgba(197, 48, 48, 0.3); }
+        .chip.gold { border-color: var(--border-gold); }
+        
+        /* Timeline Cards */
+        .timeline-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+        }
+        
+        .timeline-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            transition: all var(--transition-medium);
+        }
+        
+        .timeline-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-strong);
+        }
+        
+        .timeline-card .header {
+            padding: 1.5rem;
+            text-align: center;
+            border-bottom: 2px solid var(--border-light);
+        }
+        
+        .timeline-card.gold .header {
+            background: var(--gold-light);
+            border-bottom-color: var(--border-gold);
+        }
+        
+        .timeline-card .content {
+            padding: 1.5rem;
+        }
+        
+        .timeline-card ul {
+            list-style: none;
+
+            padding: 0;
+            margin: 0;
+        }
+        
+        .timeline-card li {
+            margin-bottom: 0.75rem;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .timeline-card li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--accent-primary);
+            font-weight: 700;
+        }
+        
+        /* Guarantee Cards */
+        .guarantee-card {
+            background: var(--bg-secondary);
+            border-radius: var(--radius-md);
+            padding: 2.5rem;
+            text-align: center;
+            border: 2px solid rgba(20, 160, 133, 0.3);
+            box-shadow: var(--shadow-soft);
+        }
+        
+        .guarantee-card.gold {
+            border-color: var(--border-gold);
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-warm) 100%);
+        }
+        
+        .guarantee-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            margin: 0 auto 1.25rem;
+            font-size: 1.75rem;
+        }
+        
+        /* Feature Items */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+        }
+        
+        .feature-item {
+            display: flex;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: var(--bg-primary);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-light);
+            transition: all var(--transition-medium);
+        }
+        
+        .feature-item:hover {
+            border-color: var(--border-medium);
+            transform: translateX(4px);
+        }
+        
+        .feature-check {
+            width: 28px;
+            height: 28px;
+            background: var(--accent-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        
+        .feature-check svg {
+            width: 14px;
+            height: 14px;
+            stroke: var(--accent-primary);
+            stroke-width: 3;
+        }
+        
+        .feature-content h4 {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            color: var(--text-primary);
+        }
+        
+        .feature-content p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        
+        /* Toolkit */
+        .toolkit-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.25rem;
+            margin-top: 2rem;
+        }
+        
+        .tool-item {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            text-align: center;
+            transition: all var(--transition-medium);
+        }
+        
+        .tool-item:hover {
+            border-color: var(--accent-primary);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-medium);
+        }
+        
+        .tool-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+        .tool-name { font-weight: 600; color: var(--text-primary); margin-bottom: 0.25rem; }
+        .tool-value { font-size: 0.85rem; color: var(--accent-primary); font-weight: 600; }
+        
+        /* Math Display */
+        .math-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(26, 46, 42, 0.1);
+            color: var(--text-secondary);
+        }
+        
+        .math-row:last-child { border-bottom: none; }
+        
+        .math-total {
+            background: linear-gradient(90deg, var(--gold-light), rgba(212, 175, 55, 0.05));
+            border: 2px solid var(--gold);
+            border-radius: var(--radius-md);
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        /* CTA Section v2 - Warm Cream Theme */
+        .cta-section-v2 {
+            background: linear-gradient(180deg, #FAF7F2 0%, #F5EFE6 50%, #EFE8DC 100%);
+            border-radius: 24px;
+            padding: 4rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            margin: 3rem 0;
+            border: 1px solid rgba(139, 90, 43, 0.1);
+            box-shadow: 
+                0 4px 6px -1px rgba(0, 0, 0, 0.05),
+                0 10px 15px -3px rgba(0, 0, 0, 0.08),
+                inset 0 1px 0 rgba(255,255,255,0.8);
+        }
+
+        .cta-section-v2::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: 
+                radial-gradient(ellipse 60% 30% at 50% 0%, rgba(199, 91, 57, 0.06) 0%, transparent 60%),
+                radial-gradient(ellipse 40% 25% at 20% 100%, rgba(139, 90, 43, 0.04) 0%, transparent 50%),
+                radial-gradient(ellipse 40% 25% at 80% 100%, rgba(139, 90, 43, 0.04) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .cta-container {
+            position: relative;
+            z-index: 1;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .cta-badge {
+            display: inline-block;
+            background: rgba(199, 91, 57, 0.1);
+            border: 1px solid rgba(199, 91, 57, 0.25);
+            color: #C75B39;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            padding: 0.4rem 1rem;
+            border-radius: 100px;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-headline {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 600;
+            color: #2D2A26;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            letter-spacing: -0.01em;
+        }
+
+        .cta-subheadline {
+            font-size: 1.05rem;
+            color: #6B6560;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+            max-width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-value-props {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            margin-bottom: 2.5rem;
+            align-items: center;
+        }
+
+        .value-prop {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.9rem;
+            color: #4A4540;
+        }
+
+        .check-icon {
+            width: 20px;
+            height: 20px;
+            background: rgba(199, 91, 57, 0.12);
+            border: 1px solid rgba(199, 91, 57, 0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.65rem;
+            color: #C75B39;
+            flex-shrink: 0;
+        }
+
+        .cta-button-v2 {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+            background: #2D2A26;
+            color: #FAF7F2;
+            font-size: 1.05rem;
+            font-weight: 600;
+            text-decoration: none;
+            padding: 1.1rem 2.25rem;
+            border-radius: 10px;
+            box-shadow: 
+                0 2px 0 #1a1815,
+                0 8px 25px rgba(45, 42, 38, 0.25);
+            transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 1.25rem;
+        }
+
+        .cta-button-v2:hover {
+            background: #3D3A36;
+            transform: translateY(-2px);
+            box-shadow: 
+                0 4px 0 #1a1815,
+                0 12px 35px rgba(45, 42, 38, 0.3);
+        }
+
+        .cta-button-v2:active {
+            transform: translateY(1px);
+            box-shadow: 
+                0 1px 0 #1a1815,
+                0 4px 15px rgba(45, 42, 38, 0.2);
+        }
+
+        .cta-button-arrow {
+            font-size: 1.1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-button-v2:hover .cta-button-arrow {
+            transform: translateX(3px);
+        }
+
+        .cta-scarcity {
+            margin-bottom: 1.25rem;
+        }
+
+        .scarcity-indicator {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(199, 91, 57, 0.08);
+            border: 1px solid rgba(199, 91, 57, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 100px;
+        }
+
+        .pulse-dot {
+            width: 7px;
+            height: 7px;
+            background: #C75B39;
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+            flex-shrink: 0;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.6; transform: scale(1.2); }
+        }
+
+        .scarcity-text {
+            font-size: 0.75rem;
+            color: #6B6560;
+            letter-spacing: 0.01em;
+        }
+
+        .scarcity-text strong {
+            color: #C75B39;
+            font-weight: 600;
+        }
+
+        .cta-footer-text {
+            font-size: 0.8rem;
+            color: #8B8580;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .cta-section-v2 {
+                padding: 3rem 1.5rem;
+                margin: 2rem 0;
+                border-radius: 20px;
+            }
+            
+            .cta-button-v2 {
+                font-size: 0.95rem;
+                padding: 1rem 1.75rem;
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .cta-value-props {
+                gap: 0.5rem;
+            }
+            
+            .value-prop {
+                font-size: 0.85rem;
+            }
+        }
+        
+        /* FAQ Grid */
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .faq-item {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            padding: 1.25rem;
+            box-shadow: var(--shadow-soft);
+        }
+        
+        .faq-item h4 {
+            margin: 0 0 0.4rem;
+            color: var(--text-primary);
+            font-size: 1rem;
+        }
+        
+        .faq-item p {
+            margin: 0;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+        
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--border-light);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+        
+        .footer-logo span { color: var(--accent-primary); }
+        
+        .footer-contact {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        
+        .footer-contact a {
+            color: var(--accent-primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .fade-in {
+            opacity: 1;
+            transform: none;
+            transition: none;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: none;
+        }
+        
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero { grid-template-columns: 1fr; gap: 2rem; }
+            .hero-stats { flex-direction: row; flex-wrap: wrap; }
+            .stat-card { flex: 1; min-width: 200px; }
+            .grid-2, .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
+            .process-grid { grid-template-columns: repeat(2, 1fr); }
+            .process-step:not(:last-child)::after { display: none; }
+            .stat-grid { grid-template-columns: repeat(2, 1fr); }
+            .toolkit-grid { grid-template-columns: repeat(2, 1fr); }
+            .timeline-grid { grid-template-columns: repeat(2, 1fr); }
+            .comparison-grid { grid-template-columns: 1fr; }
+            .comparison-card.negative, .comparison-card.positive { border-radius: var(--radius-md); }
+            .vs-divider { display: none; }
+            .proof-shot-grid { grid-template-columns: 1fr; }
+            .proof-shot-wide { grid-column: auto; }
+            .proof-image-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+            .proof-image-grid .proof-image-card,
+            .proof-image-grid .proof-image-card:nth-child(4),
+            .proof-image-grid .proof-image-card:nth-child(5) { grid-column: auto; }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            main { padding: 2rem 1.5rem 4rem; }
+            .hero { padding: 1rem 0 3rem; }
+            .hero-stats { flex-direction: column; }
+            .stat-card { min-width: auto; }
+            .grid-2, .grid-3, .grid-4, .features-grid, .stat-grid, .toolkit-grid, .timeline-grid, .faq-grid { grid-template-columns: 1fr; }
+            .process-grid { grid-template-columns: 1fr; }
+            .cta-section { padding: 2.5rem 1.5rem; }
+
+            .video-embed-shell iframe { min-height: 220px; }
+            .proof-video-grid { grid-template-columns: 1fr; }
+            .proof-image-grid,
+            .proof-shot-grid { grid-template-columns: 1fr; }
+            .proof-shot-wide { grid-column: auto; }
+        }
+
+        @media (max-width: 560px) {
+            .proof-image-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-pattern"></div>
+    
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Legacy <span>Wealth</span></a>
+            <ul class="nav-links">
+                <li><a href="#roi">Opportunity</a></li>
+                <li><a href="#how-it-works">System</a></li>
+                <li><a href="#features">Support</a></li>
+                <li><a href="#client-results">Results</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Find The Hidden Wealth Inside Your Current Income.</h1>
+                <p class="hero-subtitle">Most high earners do not need another income stream first. They need to stop leaking money through taxes, debt drag, and bad sequencing.</p>
+                <p class="hero-description">
+                    This walkthrough covers the Legacy Wealth Blueprint system. How to cut your tax bill, eliminate expensive debt, set up the right entity structures, and build a real wealth plan around the income you already have. You also showed interest in buying a property on your application, so the video covers how STR ownership works for qualified clients once the foundation is in place.
+                </p>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="label">Best Fit</div>
+                    <div class="value">$100K+ earners, W-2s, 1099s, business owners, and families who know too much money is slipping through the cracks</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">Typical Opportunity</div>
+                    <div class="value">Tax savings, interest savings, better cash flow, and clearer next moves. Plus an STR ownership path for clients who want to add a property.</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">Proof</div>
+                    <div class="value">4,700+ clients helped. $50M+ in net worth built.</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Video Section -->
+        <section>
+            <div class="section-header" style="margin-bottom: 1.5rem;">
+                <h2>Watch This Before Your Strategy Call</h2>
+            </div>
+            <div class="video-embed-shell">
+                <iframe src="https://player.vimeo.com/video/1170393471" title="Legacy Wealth Blueprint walkthrough video" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <div class="callout gold" style="margin-top: 1.5rem;">
+                <p><strong>The strategy call is where the team pressure-tests fit.</strong> Whether STR ownership makes sense for your capital, tax profile, and timing right now. The foundation comes first regardless.</p>
+            </div>
+        </section>
+        
+        <!-- Where The Money Hides (LWB ROI) -->
+        <section id="lwb-roi">
+            <div class="section-header">
+                <h2>Where The Money Usually Hides First</h2>
+                <p class="section-description">The first win is usually not a new investment. It is fixing the places where your current income is quietly getting drained or trapped.</p>
+            </div>
+            
+            <div class="card">
+                <div class="stat-grid">
+                    <div class="stat-item positive">
+                        <div class="number">$15K+</div>
+                        <div class="label">Tax Savings / Year</div>
+                    </div>
+                    <div class="stat-item positive">
+                        <div class="number">$20K+</div>
+                        <div class="label">Interest Savings</div>
+                    </div>
+                    <div class="stat-item gold">
+                        <div class="number">$82K-$221K</div>
+                        <div class="label">Client Impact Range</div>
+                    </div>
+                </div>
+                
+                <div class="callout">
+                    <p><strong>The mechanism is coordination.</strong> Most people have taxes, debt, investing, and protection handled in separate silos. This system puts them in the right order, which is why the financial impact can move faster.</p>
+                </div>
+                
+                <div class="callout gold">
+                    <p><strong>No Client Left Behind Guarantee:</strong> if you put in the work and do not see a full return on your investment, the team will keep working with you for free until you do.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Good Income Doesn't Feel Like Wealth -->
+        <section>
+            <div class="section-header">
+                <h2>Why Good Income Still Does Not Feel Like Wealth</h2>
+                <p class="section-description">The gap is usually not effort. It is structure. High earners get hit hardest when taxes, debt, credit, and investing are handled out of order.</p>
+            </div>
+            
+            <div class="grid-2">
+                <div class="card">
+                    <p style="color:var(--text-primary);font-size:1.1rem;font-weight:600;margin-bottom:1rem;">What Usually Breaks First</p>
+                    <p style="color:var(--text-secondary);line-height:1.7;">Most people come in with the same pattern:</p>
+                    <ul style="color:var(--text-secondary);margin-top:1rem;padding-left:1.5rem;">
+                        <li>They are paying more tax than they need to</li>
+                        <li>Debt and weak credit structure keep stealing monthly cash flow</li>
+                        <li>Cash sits idle because nobody showed them what to fix first</li>
+                        <li>Their CPA, lender, and advisor are not working from one plan</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <p style="color:var(--accent-primary);font-size:1.1rem;font-weight:600;margin-bottom:1rem;">Why This Works Better Than Generic Advice</p>
+                    <p style="color:var(--text-secondary);line-height:1.7;">Legacy Wealth Blueprint fixes the exact places where momentum usually dies:</p>
+                    
+                    <ul style="color:var(--text-secondary);margin-top:1rem;padding-left:1.5rem;">
+                        <li><strong>Coordination:</strong> taxes, debt, investing, and protection are handled together instead of in separate silos</li>
+                        <li><strong>Sequencing:</strong> you know what to fix first, second, and later instead of chasing ten strategies at once</li>
+                        <li><strong>Implementation:</strong> the plan gets translated into real moves, not another stack of financial advice</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why STRs Work (For Property-Interested Applicants) -->
+        <section>
+            <div class="section-header">
+                <h2>Because You Showed Interest In Buying A Property</h2>
+                <p class="section-description">You mentioned interest in buying a property on your application. Below is why STR ownership gets attention from high earners once the wealth foundation is in place.</p>
+            </div>
+            
+            <div class="grid-3">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon green">💰</div>
+                    <h3>Cash Flow</h3>
+                    <p>The right short-term rental can produce materially more income than a long-term rental in the same market.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon gold">📉</div>
+                    <h3>Tax Savings</h3>
+                    <p>When structured correctly, the depreciation can create a meaningful year-one tax offset.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon silver">🏠</div>
+                    <h3>Equity & Appreciation</h3>
+                    <p>You are not just creating income. You are building ownership, equity, and long-term upside too.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ROI Section (STR Deal Math) -->
+        <section id="roi">
+            <div class="section-header">
+                <h2>What The STR Math Looks Like When Done Right</h2>
+                <p class="section-description">This is the kind of deal math Preston walks through in the video for clients who want to add property ownership. It shows why the opportunity gets attention when the planning and acquisition are handled correctly.</p>
+            </div>
+            
+            <div class="grid-2">
+                <div class="card">
+                    <p style="color:var(--accent-primary);font-size:0.9rem;font-weight:700;letter-spacing:0.1em;margin-bottom:1.5rem;text-align:center;text-transform:uppercase;">Annual Cash Flow</p>
+                    <div style="text-align:center;margin-bottom:1.5rem;">
+                        <p style="font-family:'Cormorant Garamond',serif;font-size:4rem;color:var(--accent-primary);font-weight:600;">$23K</p>
+                        <p style="font-size:0.95rem;color:var(--text-secondary);">Net Profit After All Expenses</p>
+                    </div>
+                    <div style="background:var(--bg-primary);border-radius:var(--radius-sm);padding:1.25rem;">
+                        <div class="math-row"><span>Gross revenue</span><span style="font-weight:600;">$75K</span></div>
+                        <div class="math-row"><span>Operating expenses</span><span style="color:#c53030;font-weight:600;">-$52K</span></div>
+                        <div class="math-row" style="padding-top:0.75rem;border-top:2px solid rgba(0,0,0,0.1);margin-top:0.5rem;"><span style="font-weight:700;">Cash in your pocket</span><span style="color:var(--accent-primary);font-weight:700;">$23K/yr</span></div>
+                    </div>
+                </div>
+                
+                <div class="card gold">
+                    <p style="color:var(--gold);font-size:0.9rem;font-weight:700;letter-spacing:0.1em;margin-bottom:1.5rem;text-align:center;text-transform:uppercase;">Tax Refund (Year 1)</p>
+                    <div style="text-align:center;margin-bottom:1.5rem;">
+                        <p style="font-family:'Cormorant Garamond',serif;font-size:4rem;color:var(--gold);font-weight:600;">$50K</p>
+                        <p style="font-size:0.95rem;color:var(--text-secondary);">Back From The IRS</p>
+                    </div>
+                    <div style="background:var(--bg-primary);border-radius:var(--radius-sm);padding:1.25rem;">
+                        <div class="math-row"><span>Cost seg deduction</span><span style="font-weight:600;">$150K</span></div>
+                        <div class="math-row"><span>× Your tax bracket</span><span style="font-weight:600;">37%</span></div>
+                        <div class="math-row" style="padding-top:0.75rem;border-top:2px solid rgba(0,0,0,0.1);margin-top:0.5rem;"><span style="font-weight:700;">Tax savings</span><span style="color:var(--gold);font-weight:700;">~$55K</span></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="math-total" style="margin-top:2rem;max-width:600px;margin-left:auto;margin-right:auto;">
+                <p style="font-size:0.75rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text-muted);margin-bottom:0.5rem;">Year 1 Total Value</p>
+                <p style="font-family:'Cormorant Garamond',serif;font-size:3.5rem;color:var(--gold);font-weight:600;line-height:1;margin-bottom:0.5rem;">$78,500</p>
+                <p style="font-size:0.95rem;color:var(--text-secondary);">$23K cash flow + $55.5K tax savings</p>
+            </div>
+
+            <div class="callout gold" style="margin-top:2rem;">
+                <p><strong>The key detail:</strong> this only becomes powerful when the acquisition, cost segregation, and tax strategy are all handled correctly from the beginning.</p>
+            </div>
+        </section>
+        
+        <!-- STR Loophole -->
+        <section>
+            <div class="section-header">
+                <h2>Why Most Rentals Do Not Change A High Earner's Tax Picture</h2>
+            </div>
+
+            <div class="copy-block">
+                <p class="lead">Most people hear "rental depreciation" and assume any property will help their W-2 taxes. That is not how it works.</p>
+
+                <p>Most long-term rentals are treated as passive, which means the paper losses usually do not help your W-2 income. That is why so many high earners buy rentals and still do not get the tax outcome they expected.</p>
+
+                <p>Short-term rentals can be different. If the stay length and participation rules are handled correctly, the depreciation may be able to offset active income without needing Real Estate Professional Status. That is the mechanism people get excited about.</p>
+            </div>
+        </section>
+        
+        <!-- How It Works -->
+        <section id="how-it-works">
+            <div class="section-header">
+                <h2>How The System Works</h2>
+                <p class="section-description">The foundation comes first. For clients who want to add STR ownership, the acquisition and launch are layered in only after the wealth plan is solid.</p>
+            </div>
+            
+            <div class="timeline-grid">
+                <div class="timeline-card">
+                    <div class="header">
+                        <p style="color:var(--gold);font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:0.5rem;">Phase 1 (Start Here)</p>
+                        <p style="color:var(--text-primary);font-size:1.25rem;font-weight:700;">Legacy Wealth Blueprint Strategy</p>
+                        <p style="color:var(--accent-primary);font-size:0.85rem;font-weight:600;margin-top:0.25rem;">Before You Buy</p>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>Review taxes, debt, capital, and goals</li>
+                            <li>Map the ownership strategy to your real financial picture</li>
+                            <li>Set up entity structure and tax planning direction</li>
+                            <li>Confirm whether STR ownership is the right next move now</li>
+                        </ul>
+                        <div style="text-align:center;margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border-light);">
+                            <p style="color:var(--accent-primary);font-size:0.85rem;font-weight:600;">✓ You move into acquisition with a real plan</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-card gold">
+                    <div class="header">
+                        <p style="color:var(--gold);font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:0.5rem;">Phase 2</p>
+                        <p style="color:var(--text-primary);font-size:1.25rem;font-weight:700;">DFY Property Acquisition</p>
+                        <p style="color:var(--accent-primary);font-size:0.85rem;font-weight:600;margin-top:0.25rem;">~4 Months</p>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>Define your buy box and market criteria</li>
+                            <li>Source and underwrite 5-10 qualified deals</li>
+                            <li>Guide offers, due diligence, financing, and close</li>
+                            <li>Coordinate tax strategy before or at close</li>
+                        </ul>
+                        <div style="text-align:center;margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border-gold);">
+                            <p style="color:var(--accent-primary);font-size:0.85rem;font-weight:600;">✓ You own a tax-optimized property</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-card">
+                    <div class="header">
+                        <p style="color:var(--gold);font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:0.5rem;">Phase 3</p>
+                        <p style="color:var(--text-primary);font-size:1.25rem;font-weight:700;">DFY Setup + Optimization</p>
+                        <p style="color:var(--accent-primary);font-size:0.85rem;font-weight:600;margin-top:0.25rem;">Launch + Ongoing Support</p>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>Listings, systems, and automations are set up</li>
+                            <li>30-day and 90-day performance reviews</li>
+                            <li>Dedicated STR coach and direct messaging support</li>
+                            <li>Vetted referral network stays available</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Features Section -->
+        <section id="features">
+            <div class="section-header">
+                <h2>Why People Actually Follow Through With This</h2>
+                <p class="section-description">Most people do not fail because they lack information. They fail because nobody turns the strategy into a real plan with support behind it.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-check">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Personalized Strategy</h4>
+                        <p>You get a clear plan based on your income, tax picture, debt load, and goals instead of generic financial advice.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-check">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Coaching And Accountability</h4>
+                        <p>You get guidance on what to do first, what to ignore, and how to keep moving without getting overwhelmed.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-check">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Vetted Experts And Resources</h4>
+                        <p>You get access to the lenders, CPAs, attorneys, and tools that usually take years to piece together on your own.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-check">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h4>STR Acquisition Support (For Qualified Clients)</h4>
+                        <p>If property ownership fits your plan, you also get help with deal sourcing, tax-optimized acquisition, and launch so the numbers work from day one.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="callout" style="margin-top:2rem;">
+                <p><strong>The big idea:</strong> stop leaking money, stop guessing, and finally know what to do first with the income you already make. For clients who want to add a property, the acquisition and tax strategy are handled together so the deal actually works.</p>
+            </div>
+        </section>
+
+        <!-- Client Results -->
+        <section id="client-results">
+            <div class="section-header">
+                <h2>Proof That The System Works In Real Life</h2>
+                <p class="section-description">These are real outcomes from the Legacy Wealth Blueprint system. Different backgrounds, different income types, same pattern of money slipping through the cracks before the plan was cleaned up.</p>
+            </div>
+
+            <div class="features-grid" style="margin-bottom:2rem;">
+                <div class="feature-item">
+                    <div class="feature-check">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Trent</h4>
+                        <p>W-2 income over $100K. Found $82K in missed tax deductions and saw more than $100K of year-one impact.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-check">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Shawn</h4>
+                        <p>Self-employed with multiple income streams. Wrong entity structure and tax setup. Year-one impact: roughly $140K to $221K.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-check">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Abigail + Spouse</h4>
+                        <p>Two W-2 incomes around $160K combined. Saw $108K in combined benefit, including $35K in tax savings in year one.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="callout gold" style="margin-bottom:2rem;">
+                <p><strong>Broader proof:</strong> the team has helped more than 4,700 clients build over $50 million in net worth across a wide range of situations. The STR ownership wins below sit on top of that larger system.</p>
+            </div>
+
+            <div class="section-header" style="margin-bottom: 1rem;">
+                <h2 style="font-size:2rem;">Redacted Wealth Plan Previews</h2>
+                <p class="section-description">These anonymized motion previews show the planning side behind the offer: implementation timing, projection scenarios, and tax strategy pages, without exposing personal client details.</p>
+            </div>
+
+            <div class="proof-shot-grid">
+                <figure class="proof-shot">
+                    <video autoplay muted loop playsinline preload="metadata" poster="assets/wealth-plan-loops/str-launch-preview-page1.jpg">
+                        <source src="assets/wealth-plan-loops/str-launch-preview.mp4" type="video/mp4">
+                    </video>
+                    <figcaption>
+                        <strong>STR Launch Transition Plan</strong>
+                        <span>Shows phased rollout, projection scenarios, and implementation detail for a W-2 to STR transition.</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="proof-shot">
+                    <video autoplay muted loop playsinline preload="metadata" poster="assets/wealth-plan-loops/business-owner-preview-page1.jpg">
+                        <source src="assets/wealth-plan-loops/business-owner-preview.mp4" type="video/mp4">
+                    </video>
+                    <figcaption>
+                        <strong>Business Owner Tax Plan</strong>
+                        <span>Shows 30-day awareness items and tax strategy education pages built for a high-income business owner.</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="proof-shot proof-shot-wide">
+                    <video autoplay muted loop playsinline preload="metadata" poster="assets/wealth-plan-loops/w2-tax-preview-page1.jpg">
+                        <source src="assets/wealth-plan-loops/w2-tax-preview.mp4" type="video/mp4">
+                    </video>
+                    <figcaption>
+                        <strong>High-Income W-2 Tax Plan</strong>
+                        <span>Shows implementation timing, remaining opportunity windows, and tax strategy education for a high-income W-2 profile.</span>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="proof-video-grid">
+                <article class="proof-video-card">
+                    <iframe src="https://app.kartra.com/external_video/youtube/4uvMd9WRQ_8" title="Gary Tsang testimonial video" allowfullscreen loading="lazy"></iframe>
+                    <div class="proof-meta">
+                        <p class="proof-kicker">Video Result</p>
+                        <p class="proof-title">Gary Tsang: $35,000/mo cash flow in one Airbnb market</p>
+                    </div>
+                </article>
+
+                <article class="proof-video-card">
+                    <iframe src="https://app.kartra.com/external_video/youtube/fNpdiiyr1JU?feature=shared" title="Tom Morgan testimonial video" allowfullscreen loading="lazy"></iframe>
+                    <div class="proof-meta">
+                        <p class="proof-kicker">Video Result</p>
+                        <p class="proof-title">Tom Morgan: 0 to $25K in 2 weeks</p>
+                    </div>
+                </article>
+
+                <article class="proof-video-card">
+                    <iframe src="https://app.kartra.com/external_video/youtube/aT4TQi04KZQ?feature=shared" title="Hampton testimonial video" allowfullscreen loading="lazy"></iframe>
+                    <div class="proof-meta">
+                        <p class="proof-kicker">Video Result</p>
+                        <p class="proof-title">Hampton: $20K generated in the first month</p>
+                    </div>
+                </article>
+
+                <article class="proof-video-card">
+                    <iframe src="https://app.kartra.com/external_video/youtube/-A4Pe5M0iUU?feature=shared" title="Fischer couple testimonial video" allowfullscreen loading="lazy"></iframe>
+                    <div class="proof-meta">
+                        <p class="proof-kicker">Video Result</p>
+                        <p class="proof-title">Fischer Couple: $17,500 in bookings in 1 week</p>
+                    </div>
+                </article>
+
+                <article class="proof-video-card">
+                    <iframe src="https://app.kartra.com/external_video/youtube/5h9iwMgZxjk" title="Rob Saag testimonial video" allowfullscreen loading="lazy"></iframe>
+                    <div class="proof-meta">
+                        <p class="proof-kicker">Video Result</p>
+                        <p class="proof-title">Rob Saag: Over $100,000/year with his Airbnbs</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="proof-image-grid">
+                <figure class="proof-image-card">
+                    <img src="https://d11n7da8rpqbjy.cloudfront.net/legacyinvesting/27286730615Kirk_s_Airbnb_Journey__Your_Story_.png" alt="Kirk Airbnb journey screenshot" loading="lazy">
+                    <figcaption class="proof-caption">Kirk: $194,287 revenue in first 6 months</figcaption>
+                </figure>
+
+                <figure class="proof-image-card">
+                    <img src="https://d11n7da8rpqbjy.cloudfront.net/legacyinvesting/723325108516_Jenna_s_Airbnb_Journey__Your_Story_.png" alt="Jenna and Tyler Airbnb journey screenshot" loading="lazy">
+                    <figcaption class="proof-caption">Jenna & Tyler: $100K booked, $160K-$200K projected</figcaption>
+                </figure>
+
+                <figure class="proof-image-card">
+                    <img src="https://d11n7da8rpqbjy.cloudfront.net/legacyinvesting/486366635495Rob_s_Airbnb_Journey__Your_Story__Vertical.png" alt="Rob Airbnb journey screenshot" loading="lazy">
+                    <figcaption class="proof-caption">Rob: $100K+ generated in 2023</figcaption>
+                </figure>
+
+                <figure class="proof-image-card">
+                    <img src="https://d11n7da8rpqbjy.cloudfront.net/legacyinvesting/873306275581Dustin_s_Airbnb_Journey__Your_Story_.png" alt="Dustin Airbnb journey screenshot" loading="lazy">
+                    <figcaption class="proof-caption">Dustin: Nearly $60K/month net</figcaption>
+                </figure>
+
+                <figure class="proof-image-card">
+                    <img src="https://d11n7da8rpqbjy.cloudfront.net/legacyinvesting/46220916534Josh_Szentes_s_Airbnb_Journey__Your_Story_.png" alt="Josh Szentes Airbnb journey screenshot" loading="lazy">
+                    <figcaption class="proof-caption">Josh: $40,905.13 generated in first 3 months</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section>
+            <div class="section-header">
+                <h2>Questions People Usually Have Before The Call</h2>
+                <p class="section-description">These are the objections most people have before they see how much opportunity is already sitting inside their current financial picture.</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>"I already have a CPA. Do I still need this?"</h4>
+                    <p>Usually, yes. Most CPAs are there to file returns, not build one coordinated strategy across taxes, debt, entity structure, and cash deployment. That is why high earners can still make good money and feel behind.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>"Does this only work for business owners?"</h4>
+                    <p>No. The system has worked for W-2 employees, self-employed people, business owners, couples, and singles. The issue is not your label. The issue is whether money is being left on the table right now.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>"How do I know the math is real?"</h4>
+                    <p>The team backs this with a results guarantee: if you put in the work and do not see a full return, they keep working with you for free until you do. That guarantee only makes sense if the math is measurable and the system is repeatable.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>"What if I am not financially sophisticated?"</h4>
+                    <p>That is exactly why the plan matters. You do not need to know every strategy. You need to know what applies to you, what to do first, and what to ignore so you can move with confidence.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>"How much capital do I need for the property side?"</h4>
+                    <p>Typically $120K+ to deploy for the down payment, setup, and concierge side. But the team pressure-tests the fit against your full picture first. If the timing is not right, you still get the full wealth plan.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>"What if I want the wealth plan but am not ready to buy yet?"</h4>
+                    <p>That is useful to know early. The team can help you tighten the wealth foundation first so you are not forcing a purchase before the timing is right. The plan works on its own regardless.</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+</body>
+</html>
