@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Legacy Wealth Blueprint</title>
+  <style>
+    :root {
+      --ink: #183028;
+      --muted: #5d6f68;
+      --paper: #faf6ef;
+      --panel: rgba(255,255,255,0.88);
+      --line: rgba(24,48,40,0.12);
+      --accent: #b8682b;
+      --accent-soft: rgba(184,104,43,0.12);
+      --forest: #285844;
+      --forest-soft: rgba(40,88,68,0.1);
+      --shadow: 0 20px 50px rgba(24,48,40,0.08);
+      --radius: 22px;
+      --max: 1060px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(184,104,43,0.16), transparent 28%),
+        radial-gradient(circle at top right, rgba(40,88,68,0.14), transparent 32%),
+        linear-gradient(180deg, #f4ecdf 0%, var(--paper) 40%, #faf7f2 100%);
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      line-height: 1.56;
+      padding: 36px 18px 72px;
+    }
+
+    .page {
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+
+    .hero,
+    .section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+
+    .hero {
+      padding: 48px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -70px;
+      top: -70px;
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(184,104,43,0.22), transparent 70%);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      padding: 7px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(184,104,43,0.28);
+      background: rgba(255,255,255,0.74);
+      color: var(--accent);
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+      line-height: 1.12;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+      margin-top: 16px;
+    }
+
+    h2 {
+      font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+      margin-bottom: 14px;
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      margin-bottom: 6px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 1.07rem;
+    }
+
+    .stack {
+      display: grid;
+      gap: 24px;
+      margin-top: 24px;
+    }
+
+    .section { padding: 36px; }
+
+    .section-intro {
+      max-width: 800px;
+      color: var(--muted);
+      margin: 0 0 20px;
+      font-size: 1rem;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .grid-5 {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .item {
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.84);
+      padding: 22px;
+    }
+
+    .item h3 { color: var(--ink); }
+
+    .item p {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .item .icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: var(--forest-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      color: var(--forest);
+      margin-bottom: 12px;
+    }
+
+    .s-card {
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.84);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .s-card .s-letter {
+      font-family: "Iowan Old Style", Georgia, serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    .s-card .s-name {
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-top: 6px;
+      color: var(--ink);
+    }
+
+    .s-card p {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 0.84rem;
+      line-height: 1.4;
+    }
+
+    .callout {
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: linear-gradient(135deg, rgba(40,88,68,0.08), rgba(184,104,43,0.08));
+      padding: 22px;
+      margin-top: 20px;
+    }
+
+    .callout p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .guarantee {
+      border-radius: 16px;
+      border: 2px solid var(--forest);
+      background: linear-gradient(135deg, rgba(40,88,68,0.1), rgba(40,88,68,0.04));
+      padding: 28px;
+      margin-top: 20px;
+    }
+
+    .guarantee h3 {
+      color: var(--forest);
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .guarantee p {
+      margin: 8px 0 0;
+      color: var(--ink);
+      font-size: 0.98rem;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 5px 11px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: #7d4318;
+      font-weight: 700;
+      font-size: 0.9rem;
+      margin-top: 8px;
+    }
+
+    .coach-creds {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .cred-tag {
+      display: inline-block;
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: var(--forest-soft);
+      color: var(--forest);
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+
+    @media (max-width: 900px) {
+      .grid-5 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 680px) {
+      .grid-2 { grid-template-columns: 1fr; }
+      .grid-5 { grid-template-columns: 1fr 1fr; }
+      body { padding: 18px 12px 40px; }
+      .hero, .section { padding: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="eyebrow">Path A</div>
+      <h1>Legacy Wealth Blueprint</h1>
+      <p>A personalized 12-month wealth plan built around your income, debt, goals, and situation. One connected system. A dedicated team. And a written guarantee that we work with you until you see results.</p>
+      <span class="tag">Spouse / family membership included</span>
+    </section>
+
+    <div class="stack">
+      <section class="section">
+        <h2>The 5S System</h2>
+        <p class="section-intro">Five pillars. One connected system. Each one feeds the next. Everything inside the program is organized around these so you always know where you are and what to do next.</p>
+        <div class="grid-5">
+          <div class="s-card">
+            <div class="s-letter">S</div>
+            <div class="s-name">SLASH</div>
+            <p>Cut your tax bill. Creates the capital you deploy into everything else.</p>
+          </div>
+          <div class="s-card">
+            <div class="s-letter">S</div>
+            <div class="s-name">SPOT</div>
+            <p>Find where your money has been leaking. Plug the holes your CPA missed.</p>
+          </div>
+          <div class="s-card">
+            <div class="s-letter">S</div>
+            <div class="s-name">SHIFT</div>
+            <p>Move your money into the right accounts so it grows tax-free instead of getting eaten by fees.</p>
+          </div>
+          <div class="s-card">
+            <div class="s-letter">S</div>
+            <div class="s-name">STACK</div>
+            <p>Deploy your capital for real wealth building. Investment frameworks, allocation, and real estate.</p>
+          </div>
+          <div class="s-card">
+            <div class="s-letter">S</div>
+            <div class="s-name">SHIELD</div>
+            <p>Protect everything you've built. Entity structure, asset protection, and estate planning.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Your personalized wealth plan</h2>
+        <p class="section-intro">We take the 5S system and build it around your actual numbers. Your income. Your tax situation. Your goals. Your timeline.</p>
+        <div class="grid-2">
+          <div class="item">
+            <div class="icon">&#9670;</div>
+            <h3>Built around your actual numbers</h3>
+            <p>Not a template. Two people with different situations get completely different plans with different strategies in a different order.</p>
+          </div>
+          <div class="item">
+            <div class="icon">&#9670;</div>
+            <h3>Dollar amounts on every move</h3>
+            <p>Each strategy connects to a realistic dollar impact and timing window. You see exactly what each move is worth before you make it.</p>
+          </div>
+          <div class="item">
+            <div class="icon">&#9670;</div>
+            <h3>The right order of operations</h3>
+            <p>Some strategies only work if others come first. The plan shows you the sequence so each move sets up the next one.</p>
+          </div>
+          <div class="item">
+            <div class="icon">&#9670;</div>
+            <h3>30-day action checklist</h3>
+            <p>You know exactly what to do in week one. No guessing, no overwhelm. Clear steps that lead to your first wins fast.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Dedicated 1-on-1 coaching</h2>
+        <p class="section-intro">You get assigned a dedicated Legacy Wealth Guide. Not a chatbot. Not a support ticket. A real person with serious credentials who becomes your main point of contact for 12 months.</p>
+        <div class="grid-2">
+          <div class="item">
+            <div class="icon">&#9670;</div>
+            <h3>1-on-1 onboarding call</h3>
+            <p>They walk you through everything. Every platform, every resource, exactly where to start based on your wealth plan.</p>
+          </div>
+          <div class="item">
+            <div class="icon">&#9670;</div>
+            <h3>Priority access</h3>
+            <p>Stuck on something? Message them. Need a second opinion? Hop on a call. Every conversation picks up right where you left off.</p>
+          </div>
+          <div class="item">
+            <div class="icon">&#9670;</div>
+            <h3>Bi-weekly accountability check-ins</h3>
+            <p>They follow up with you. Not the other way around. If life gets in the way and you stall, they reach out. Their only job is to make sure you keep moving forward.</p>
+          </div>
+          <div class="item">
+            <div class="icon">&#9670;</div>
+            <h3>Weekly live coaching calls</h3>
+            <p>Group calls every week with Preston and the coaching team. Plus a full replay library so you never miss anything.</p>
+          </div>
+        </div>
+
+        <div class="callout">
+          <p><strong>Your coaching team's track record</strong></p>
+          <div class="coach-creds">
+            <span class="cred-tag">30+ years in finance</span>
+            <span class="cred-tag">MBA in International Business</span>
+            <span class="cred-tag">Morgan Stanley Private Bank experience</span>
+            <span class="cred-tag">Licensed investment professionals</span>
+            <span class="cred-tag">Executive coaching for senior executives</span>
+            <span class="cred-tag">Actively own profitable STRs and flips</span>
+          </div>
+          <p style="margin-top:12px;">These are not people who read about wealth building in a textbook. They have managed money for high-net-worth individuals, held investment licenses, and are actively building real estate portfolios right now.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Lifetime curriculum access</h2>
+        <p class="section-intro">100+ step-by-step video lessons organized by the 5S system. Each pillar has its own implementation track.</p>
+        <div class="grid-2">
+          <div class="item">
+            <h3>SLASH</h3>
+            <p>Every tax strategy covered in the program and dozens more. Entity optimization, deduction systems, retirement vehicles, and advanced moves.</p>
+          </div>
+          <div class="item">
+            <h3>SPOT</h3>
+            <p>The full CPA vetting system. How to identify leaks in your current setup and what to do about them.</p>
+          </div>
+          <div class="item">
+            <h3>SHIFT</h3>
+            <p>Every retirement vehicle and account optimization. Roth conversions, backdoor strategies, and tax-free growth frameworks.</p>
+          </div>
+          <div class="item">
+            <h3>STACK</h3>
+            <p>Investment frameworks, allocation models, and real estate strategies. Where to deploy your capital for real wealth building.</p>
+          </div>
+          <div class="item">
+            <h3>SHIELD</h3>
+            <p>Entity structure, asset protection, trusts, and estate planning. Protect everything you've built so it lasts for generations.</p>
+          </div>
+          <div class="item">
+            <h3>Templates, SOPs &amp; checklists</h3>
+            <p>Every strategy comes with the tools to implement it. Calculators, scripts, tracking sheets, and step-by-step checklists.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Tools &amp; ongoing support</h2>
+        <div class="grid-2">
+          <div class="item">
+            <div class="icon">&#9670;</div>
+            <h3>Legacy Wealth AI Advisor</h3>
+            <p>Not ChatGPT. This AI is trained on everything inside the program. Every strategy, every framework, every update. When you ask it a question, it gives you specific steps based on the same system your coach uses. Available 24/7.</p>
+          </div>
+          <div class="item">
+            <div class="icon">&#9670;</div>
+            <h3>Vetted partner network</h3>
+            <p>LLC formation, cost segregation, tax planning, DSCR lending, and more. We connect you with professionals who specialize in what you need. Our lead partner has generated over $500K in personal tax savings.</p>
+          </div>
+          <div class="item">
+            <div class="icon">&#9670;</div>
+            <h3>Private community (12 months)</h3>
+            <p>Thousands of active members sharing wins, asking questions, and supporting each other. Direct messaging access to Preston and the team.</p>
+          </div>
+          <div class="item">
+            <div class="icon">&#9670;</div>
+            <h3>Spouse / family membership</h3>
+            <p>Your partner gets full access to the community, curriculum, and coaching at no extra cost. Most families see better results when both partners are involved.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="guarantee">
+        <h3>Our No Client Left Behind Guarantee</h3>
+        <p>If you join this program and put in the work, we will not stop until you see results. Period.</p>
+        <p><strong>For tax and foundation clients:</strong> you see a full return on your investment. <strong>For real estate clients:</strong> we work with you until you close on a property.</p>
+        <p>We stay with you until you hit your milestones. We'll sign an agreement on it. We back it with our time, our team, and our resources. The only way this doesn't work is if you never start.</p>
+        <p style="margin-top:14px; font-size:0.88rem; color:var(--muted);">Your investment may qualify as a tax-deductible business expense under IRC Section 162.</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

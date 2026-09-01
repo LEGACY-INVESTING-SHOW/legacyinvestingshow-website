@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legacy Wealth Blueprint — Renewal Options</title>
+    <meta
+      name="description"
+      content="Your first 12 months are almost up. The course stays yours forever. Choose how you want to continue with community, weekly calls, AI access, Wealth Guides, and an optional new 12-Month Wealth Plan."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg-primary: #0a0a0b;
+        --bg-secondary: #121214;
+        --bg-tertiary: #1a1a1d;
+        --surface: #222226;
+        --surface-hover: #2a2a2e;
+        --text-primary: #fafafa;
+        --text-secondary: #a1a1aa;
+        --text-tertiary: #71717a;
+        --accent-gold: #d4a574;
+        --accent-gold-light: #e8c9a0;
+        --accent-gold-dark: #b8935f;
+        --accent-olive: #8b9a6d;
+        --accent-cream: #f5f0e8;
+        --border: rgba(255, 255, 255, 0.08);
+        --border-strong: rgba(255, 255, 255, 0.15);
+        --glow-gold: 0 0 40px rgba(212, 165, 116, 0.15);
+        --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+        --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+        --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+        background: var(--bg-primary);
+        color: var(--text-primary);
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+
+      /* Ambient background */
+      .ambient-bg {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 0;
+        overflow: hidden;
+      }
+
+      .ambient-bg::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background:
+          radial-gradient(ellipse 80% 50% at 20% 40%, rgba(212, 165, 116, 0.03), transparent 50%),
+          radial-gradient(ellipse 60% 40% at 80% 60%, rgba(139, 154, 109, 0.02), transparent 50%),
+          radial-gradient(ellipse 100% 100% at 50% 0%, rgba(212, 165, 116, 0.02), transparent 70%);
+        animation: ambientMove 20s ease-in-out infinite;
+      }
+
+      @keyframes ambientMove {
+        0%, 100% { transform: translate(0, 0) rotate(0deg); }
+        33% { transform: translate(2%, 2%) rotate(1deg); }
+        66% { transform: translate(-1%, 1%) rotate(-1deg); }
+      }
+
+      /* Grain texture overlay */
+      .grain {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 1;
+        opacity: 0.03;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      }
+
+      main {
+        position: relative;
+        z-index: 2;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      /* Navigation */
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 0;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .logo {
+        font-family: "Playfair Display", serif;
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: var(--text-primary);
+        text-decoration: none;
+        letter-spacing: -0.02em;
+      }
+
+      .logo span {
+        color: var(--accent-gold);
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+      }
+
+      .nav-links a {
+        color: var(--text-secondary);
+        text-decoration: none;
+        font-size: 0.875rem;
+        font-weight: 500;
+        transition: color 0.2s ease;
+      }
+
+      .nav-links a:hover {
+        color: var(--text-primary);
+      }
+
+      /* Hero Section */
+      .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        padding: 100px 0 80px;
+        align-items: center;
+      }
+
+      .hero-content {
+        max-width: 600px;
+      }
+
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 16px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 100px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--accent-gold);
+        margin-bottom: 32px;
+      }
+
+      .badge::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        background: var(--accent-gold);
+        border-radius: 50%;
+        animation: pulse 2s ease-in-out infinite;
+      }
+
+      @keyframes pulse {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.5; transform: scale(1.2); }
+      }
+
+      h1 {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(2.75rem, 4.5vw, 4rem);
+        font-weight: 500;
+        line-height: 1.12;
+        letter-spacing: -0.03em;
+        margin-bottom: 24px;
+      }
+
+      h1 em {
+        color: var(--accent-gold);
+        font-style: italic;
+      }
+
+      .hero-subtitle {
+        font-size: 1.0625rem;
+        color: var(--text-secondary);
+        line-height: 1.75;
+        margin-bottom: 40px;
+        max-width: 500px;
+      }
+
+      .hero-cta {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 16px 28px;
+        font-size: 0.9375rem;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 12px;
+        transition: all 0.3s var(--ease-out-expo);
+        border: none;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, var(--accent-gold) 0%, var(--accent-gold-dark) 100%);
+        color: var(--bg-primary);
+        box-shadow: 0 4px 20px rgba(212, 165, 116, 0.3);
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 30px rgba(212, 165, 116, 0.4);
+      }
+
+      .btn-secondary {
+        background: var(--surface);
+        color: var(--text-primary);
+        border: 1px solid var(--border);
+      }
+
+      .btn-secondary:hover {
+        background: var(--surface-hover);
+        border-color: var(--border-strong);
+      }
+
+      /* Video Card */
+      .video-card {
+        position: relative;
+        background: var(--bg-secondary);
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        padding: 24px;
+        box-shadow: var(--shadow-lg);
+      }
+
+      .video-frame {
+        position: relative;
+        aspect-ratio: 16/9;
+        border-radius: 16px;
+        overflow: hidden;
+        background: linear-gradient(135deg, #1a1a1d 0%, #0a0a0b 100%);
+      }
+
+      .video-frame iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      /* Trust Banner */
+      /* Section Styles */
+      section {
+        padding: 100px 0;
+      }
+
+      .section-header {
+        text-align: center;
+        max-width: 640px;
+        margin: 0 auto 64px;
+      }
+
+      .section-label {
+        display: inline-block;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: var(--accent-gold);
+        margin-bottom: 16px;
+      }
+
+      h2 {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(2.25rem, 3.5vw, 3.25rem);
+        font-weight: 500;
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        margin-bottom: 20px;
+      }
+
+      .section-subtitle {
+        font-size: 1.0625rem;
+        color: var(--text-secondary);
+        line-height: 1.7;
+      }
+
+      /* What You Keep Section */
+      .keep-section {
+        background: var(--bg-secondary);
+        border-radius: 32px;
+        padding: 80px;
+        margin: 0 -24px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .keep-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+        opacity: 0.5;
+      }
+
+      .keep-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: start;
+      }
+
+      .keep-content h2 {
+        margin-bottom: 16px;
+      }
+
+      .keep-content h2 em {
+        color: var(--accent-gold);
+        font-style: italic;
+      }
+
+      .keep-description {
+        color: var(--text-secondary);
+        font-size: 1.0625rem;
+        line-height: 1.75;
+        margin-bottom: 8px;
+      }
+
+      .keep-list {
+        list-style: none;
+        margin-top: 32px;
+      }
+
+      .keep-list li {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 16px 0;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .keep-list li:last-child {
+        border-bottom: none;
+      }
+
+      .keep-icon {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+        color: var(--accent-gold);
+        margin-top: 2px;
+      }
+
+      .keep-list strong {
+        display: block;
+        color: var(--text-primary);
+        font-weight: 600;
+        margin-bottom: 4px;
+      }
+
+      .keep-list span {
+        color: var(--text-secondary);
+        font-size: 0.9375rem;
+        line-height: 1.6;
+      }
+
+      .renew-list {
+        list-style: none;
+      }
+
+      .renew-list li {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 20px 0;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .renew-list li:last-child {
+        border-bottom: none;
+      }
+
+      .renew-icon {
+        width: 44px;
+        height: 44px;
+        flex-shrink: 0;
+        background: linear-gradient(135deg, rgba(212, 165, 116, 0.15), rgba(212, 165, 116, 0.05));
+        border: 1px solid rgba(212, 165, 116, 0.2);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .renew-icon svg {
+        width: 20px;
+        height: 20px;
+        color: var(--accent-gold);
+      }
+
+      .renew-list strong {
+        display: block;
+        color: var(--text-primary);
+        font-weight: 600;
+        margin-bottom: 4px;
+      }
+
+      .renew-list span {
+        color: var(--text-secondary);
+        font-size: 0.9375rem;
+        line-height: 1.6;
+      }
+
+      /* Wealth Guides Callout */
+      .wealth-guides-callout {
+        background: linear-gradient(135deg, rgba(212, 165, 116, 0.08), rgba(139, 154, 109, 0.04));
+        border: 1px solid rgba(212, 165, 116, 0.15);
+        border-radius: 24px;
+        padding: 48px;
+        margin: 0 auto;
+        max-width: 900px;
+        text-align: center;
+        position: relative;
+      }
+
+      .wealth-guides-callout::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+        opacity: 0.4;
+      }
+
+      .wealth-guides-callout .section-label {
+        margin-bottom: 12px;
+      }
+
+      .wealth-guides-callout h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.75rem;
+        font-weight: 500;
+        margin-bottom: 16px;
+        letter-spacing: -0.02em;
+      }
+
+      .wealth-guides-callout p {
+        color: var(--text-secondary);
+        font-size: 1.0625rem;
+        line-height: 1.75;
+        max-width: 680px;
+        margin: 0 auto;
+      }
+
+      .wg-features {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+        margin-top: 36px;
+      }
+
+      .wg-feature {
+        text-align: center;
+        padding: 20px 12px;
+      }
+
+      .wg-feature-icon {
+        width: 48px;
+        height: 48px;
+        margin: 0 auto 12px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .wg-feature-icon svg {
+        width: 22px;
+        height: 22px;
+        color: var(--accent-gold);
+      }
+
+      .wg-feature strong {
+        display: block;
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: var(--text-primary);
+        margin-bottom: 4px;
+      }
+
+      .wg-feature span {
+        font-size: 0.8125rem;
+        color: var(--text-secondary);
+        line-height: 1.5;
+      }
+
+      /* Pricing Section */
+      .pricing-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1.2fr;
+        gap: 24px;
+        align-items: stretch;
+      }
+
+      .pricing-card {
+        position: relative;
+        background: var(--bg-secondary);
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        padding: 40px 32px;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.4s var(--ease-out-expo);
+      }
+
+      .pricing-card:hover {
+        transform: translateY(-8px);
+        border-color: var(--border-strong);
+      }
+
+      .pricing-card.featured {
+        order: 3;
+        background: linear-gradient(180deg, var(--surface) 0%, var(--bg-secondary) 100%);
+        border-color: var(--accent-gold);
+        box-shadow: var(--glow-gold), var(--shadow-lg);
+        transform: scale(1.02);
+      }
+
+      .pricing-card.featured:hover {
+        transform: scale(1.02) translateY(-8px);
+      }
+
+      .pricing-badge {
+        position: absolute;
+        top: -1px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: linear-gradient(135deg, var(--accent-gold) 0%, var(--accent-gold-dark) 100%);
+        color: var(--bg-primary);
+        font-size: 0.6875rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        padding: 8px 20px;
+        border-radius: 0 0 12px 12px;
+      }
+
+      .pricing-header {
+        text-align: center;
+        margin-bottom: 32px;
+        padding-bottom: 32px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .pricing-name {
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: var(--text-tertiary);
+        margin-bottom: 12px;
+      }
+
+      .pricing-card.featured .pricing-name {
+        color: var(--accent-gold);
+      }
+
+      .pricing-title {
+        font-family: "Playfair Display", serif;
+        font-size: 1.75rem;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+
+      .pricing-amount {
+        font-family: "Playfair Display", serif;
+        font-size: 3.5rem;
+        font-weight: 500;
+        line-height: 1;
+        color: var(--text-primary);
+      }
+
+      .pricing-amount span {
+        font-size: 1.25rem;
+        color: var(--text-tertiary);
+        font-weight: 400;
+      }
+
+      .pricing-period {
+        font-size: 0.875rem;
+        color: var(--text-secondary);
+        margin-top: 8px;
+      }
+
+      .pricing-features {
+        list-style: none;
+        flex: 1;
+        margin-bottom: 32px;
+      }
+
+      .pricing-features li {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 12px 0;
+        font-size: 0.9375rem;
+        color: var(--text-secondary);
+        border-bottom: 1px solid var(--border);
+      }
+
+      .pricing-features li:last-child {
+        border-bottom: none;
+      }
+
+      .pricing-features li svg {
+        width: 20px;
+        height: 20px;
+        color: var(--accent-gold);
+        flex-shrink: 0;
+        margin-top: 2px;
+      }
+
+      .pricing-best-for {
+        background: var(--surface);
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 24px;
+      }
+
+      .pricing-best-for strong {
+        display: block;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--text-tertiary);
+        margin-bottom: 8px;
+      }
+
+      .pricing-best-for p {
+        font-size: 0.9375rem;
+        color: var(--text-secondary);
+        line-height: 1.6;
+      }
+
+      .pricing-card.featured .pricing-best-for {
+        background: rgba(212, 165, 116, 0.1);
+        border: 1px solid rgba(212, 165, 116, 0.2);
+      }
+
+      .pricing-card.featured .pricing-best-for strong {
+        color: var(--accent-gold);
+      }
+
+      .pricing-cta {
+        width: 100%;
+      }
+
+      /* Upgrade Note */
+      .upgrade-note {
+        max-width: 720px;
+        margin: 48px auto 0;
+        text-align: center;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 28px 36px;
+      }
+
+      .upgrade-note p {
+        color: var(--text-secondary);
+        font-size: 0.9375rem;
+        line-height: 1.7;
+      }
+
+      .upgrade-note strong {
+        color: var(--text-primary);
+      }
+
+      /* FAQ Section */
+      .faq-grid {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 80px;
+      }
+
+      .faq-header {
+        position: sticky;
+        top: 40px;
+        height: fit-content;
+      }
+
+      .faq-header h2 {
+        text-align: left;
+      }
+
+      .faq-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .faq-item {
+        background: var(--bg-secondary);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+      }
+
+      .faq-item:hover {
+        border-color: var(--border-strong);
+      }
+
+      .faq-item[open] {
+        border-color: var(--accent-gold);
+      }
+
+      .faq-question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 1.0625rem;
+        list-style: none;
+      }
+
+      .faq-question::-webkit-details-marker {
+        display: none;
+      }
+
+      .faq-icon {
+        width: 24px;
+        height: 24px;
+        color: var(--text-tertiary);
+        transition: transform 0.3s ease, color 0.3s ease;
+        flex-shrink: 0;
+        margin-left: 16px;
+      }
+
+      .faq-item[open] .faq-icon {
+        transform: rotate(45deg);
+        color: var(--accent-gold);
+      }
+
+      .faq-answer {
+        padding: 0 24px 24px;
+        color: var(--text-secondary);
+        line-height: 1.8;
+        font-size: 0.9375rem;
+      }
+
+      /* Final CTA */
+      .final-cta {
+        background: linear-gradient(135deg, var(--surface) 0%, var(--bg-secondary) 100%);
+        border: 1px solid var(--border);
+        border-radius: 32px;
+        padding: 80px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .final-cta::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+      }
+
+      .final-cta h2 {
+        margin-bottom: 16px;
+      }
+
+      .final-cta p {
+        color: var(--text-secondary);
+        font-size: 1.0625rem;
+        max-width: 520px;
+        margin: 0 auto 32px;
+        line-height: 1.7;
+      }
+
+      .final-cta-buttons {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      /* Footer */
+      footer {
+        padding: 60px 0;
+        border-top: 1px solid var(--border);
+        text-align: center;
+      }
+
+      footer p {
+        color: var(--text-tertiary);
+        font-size: 0.875rem;
+      }
+
+      /* Responsive */
+      @media (max-width: 1024px) {
+        .hero {
+          grid-template-columns: 1fr;
+          gap: 60px;
+          text-align: center;
+        }
+
+        .hero-content {
+          max-width: 100%;
+        }
+
+        .hero-subtitle {
+          max-width: 100%;
+        }
+
+        .hero-cta {
+          justify-content: center;
+        }
+
+        .keep-grid {
+          grid-template-columns: 1fr;
+          gap: 60px;
+        }
+
+        .pricing-grid {
+          grid-template-columns: 1fr;
+          max-width: 480px;
+          margin: 0 auto;
+        }
+
+        .pricing-card.featured {
+          transform: none;
+          order: -1;
+        }
+
+        .pricing-card.featured:hover {
+          transform: translateY(-8px);
+        }
+
+        .faq-grid {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+
+        .faq-header {
+          position: static;
+          text-align: center;
+        }
+
+        .faq-header h2 {
+          text-align: center;
+        }
+
+        .keep-section {
+          padding: 60px 32px;
+        }
+
+        .final-cta {
+          padding: 60px 32px;
+        }
+
+        .wg-features {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .wealth-guides-callout {
+          padding: 36px 24px;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .nav-links {
+          display: none;
+        }
+
+        section {
+          padding: 60px 0;
+        }
+
+        .hero {
+          padding: 60px 0 80px;
+        }
+
+        .wg-features {
+          grid-template-columns: 1fr 1fr;
+          gap: 16px;
+        }
+      }
+
+      /* Animation classes */
+      .fade-in {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeIn 0.8s var(--ease-out-expo) forwards;
+      }
+
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .delay-1 { animation-delay: 0.1s; }
+      .delay-2 { animation-delay: 0.2s; }
+      .delay-3 { animation-delay: 0.3s; }
+      .delay-4 { animation-delay: 0.4s; }
+    </style>
+  </head>
+  <body>
+    <div class="ambient-bg"></div>
+    <div class="grain"></div>
+
+    <main>
+      <!-- Navigation -->
+      <nav class="fade-in">
+        <a href="#" class="logo">Legacy <span>Investing Show</span></a>
+        <div class="nav-links">
+          <a href="#video">Watch Video</a>
+          <a href="#pricing">Renewal Options</a>
+          <a href="#faq">Questions</a>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content fade-in delay-1">
+          <h1>Your first year is almost up. <em>Here's what comes next.</em></h1>
+          <p class="hero-subtitle">
+            The course is yours forever. What's coming up for renewal is the implementation layer that helps you put those strategies into action -- your 12-Month Wealth Plan, Wealth Guides, weekly calls, community, and AI access. Watch the short video or scroll down to see your options.
+          </p>
+          <div class="hero-cta">
+            <a href="#pricing" class="btn btn-primary">
+              See Your Options
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M8 3l5 5-5 5M3 8h10" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#video" class="btn btn-secondary">Watch the Video</a>
+          </div>
+        </div>
+
+        <div class="video-card fade-in delay-2" id="video">
+          <div class="video-frame">
+            <iframe
+              src="https://player.vimeo.com/video/1175280206?title=0&byline=0&portrait=0&dnt=1"
+              title="Legacy Wealth Blueprint Renewal Overview"
+              loading="lazy"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- What You Keep vs. What Renews -->
+      <section>
+        <div class="keep-section fade-in">
+          <div class="keep-grid">
+            <div class="keep-content">
+              <span class="section-label">What stays yours</span>
+              <h2>The course is yours <em>for life</em></h2>
+              <p class="keep-description">
+                Everything you got when you joined -- the full video course, all the strategies, all the training -- that's lifetime access. Nothing changes there.
+              </p>
+              <ul class="keep-list">
+                <li>
+                  <svg class="keep-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                    <polyline points="22 4 12 14.01 9 11.01"/>
+                  </svg>
+                  <div>
+                    <strong>Tax Strategies</strong>
+                    <span>Cost segregation, bonus depreciation, entity structures, and every tax strategy in the course</span>
+                  </div>
+                </li>
+                <li>
+                  <svg class="keep-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                    <polyline points="22 4 12 14.01 9 11.01"/>
+                  </svg>
+                  <div>
+                    <strong>Real Estate Investing</strong>
+                    <span>Short-term rentals, deal analysis, and the full investing framework</span>
+                  </div>
+                </li>
+                <li>
+                  <svg class="keep-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                    <polyline points="22 4 12 14.01 9 11.01"/>
+                  </svg>
+                  <div>
+                    <strong>Wealth Planning</strong>
+                    <span>The complete wealth-building roadmap, retirement strategies, and financial planning modules</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <span class="section-label">What's up for renewal</span>
+              <h2 style="margin-bottom: 16px;">The implementation layer</h2>
+              <p class="keep-description">
+                The course gives you dozens of strategies. This is the part that helps you actually implement them -- your personalized roadmap, your Wealth Guides, and the support system that keeps you on track. It runs on a 12-month cycle, and it's updated every year to reflect the latest tax rules, strategies, and opportunities.
+              </p>
+              <ul class="renew-list">
+                <li>
+                  <div class="renew-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                      <polyline points="14 2 14 8 20 8"/>
+                      <line x1="16" y1="13" x2="8" y2="13"/>
+                      <line x1="16" y1="17" x2="8" y2="17"/>
+                      <polyline points="10 9 9 9 8 9"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <strong>12-Month Wealth Plan</strong>
+                    <span>A 12-month roadmap that tells you exactly what financial moves to make and when</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="renew-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                      <circle cx="9" cy="7" r="4"/>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <strong>Community Access</strong>
+                    <span>Connect with other members who are on the same path</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="renew-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                      <line x1="8" y1="21" x2="16" y2="21"/>
+                      <line x1="12" y1="17" x2="12" y2="21"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <strong>Weekly Calls</strong>
+                    <span>Live group calls to get your questions answered in real time</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="renew-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <strong>AI Access</strong>
+                    <span>Get quick answers on tax strategies, deal analysis, and planning</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="renew-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <strong>Wealth Guides</strong>
+                    <span>Your dedicated point of contact for accountability, strategy calls, and implementation support</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Wealth Guides Callout -->
+      <section style="padding-top: 0;">
+        <div class="wealth-guides-callout fade-in">
+          <span class="section-label">New Addition</span>
+          <h3>We recently introduced Wealth Guides</h3>
+          <p>
+            We're always looking for ways to give you better support. Wealth Guides are your main point of contact inside the program -- they help you implement strategies, answer questions, and keep you on track. Here's what they do:
+          </p>
+          <div class="wg-features">
+            <div class="wg-feature">
+              <div class="wg-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72"/>
+                </svg>
+              </div>
+              <strong>1-on-1 Calls</strong>
+              <span>Get on a call whenever you need guidance</span>
+            </div>
+            <div class="wg-feature">
+              <div class="wg-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 11 12 14 22 4"/>
+                  <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                </svg>
+              </div>
+              <strong>Accountability</strong>
+              <span>Stay on track with your wealth-building goals</span>
+            </div>
+            <div class="wg-feature">
+              <div class="wg-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                  <line x1="12" y1="17" x2="12.01" y2="17"/>
+                </svg>
+              </div>
+              <strong>Q&A Support</strong>
+              <span>Get answers to your tax and investing questions</span>
+            </div>
+            <div class="wg-feature">
+              <div class="wg-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                </svg>
+              </div>
+              <strong>Implementation</strong>
+              <span>Help putting strategies into action</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section id="pricing">
+        <div class="section-header fade-in">
+          <span class="section-label">Renewal Options</span>
+          <h2>Pick the path that fits where you are</h2>
+          <p class="section-subtitle">
+            Keep the implementation support going, get an updated strategy, or do both.
+          </p>
+        </div>
+        <div class="pricing-grid">
+          <!-- Option 1 -->
+          <div class="pricing-card fade-in delay-1">
+            <div class="pricing-header">
+              <div class="pricing-name">Option 01</div>
+              <div class="pricing-title">Community + Calls + AI Access</div>
+              <div class="pricing-amount">$1,000<span>/year</span></div>
+              <div class="pricing-period">Another 12 months of implementation support</div>
+            </div>
+            <ul class="pricing-features">
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                Weekly live group calls
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                Community access
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                AI access
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                Dedicated Wealth Guide
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                Past call recordings
+              </li>
+            </ul>
+            <div class="pricing-best-for">
+              <strong>Best if</strong>
+              <p>Your strategy feels solid and you want accountability, real-time answers, and a Wealth Guide to help you keep implementing.</p>
+            </div>
+            <a href="https://whop.com/checkout/plan_Iu3Kj978Hm0FW" class="btn btn-secondary pricing-cta">Choose This Option</a>
+          </div>
+
+          <!-- Option 3 (Featured) -->
+          <div class="pricing-card featured fade-in delay-2">
+            <div class="pricing-badge">Best Value</div>
+            <div class="pricing-header">
+              <div class="pricing-name">Option 03</div>
+              <div class="pricing-title">Full Renewal Bundle</div>
+              <div class="pricing-amount">$2,000<span>/year</span></div>
+              <div class="pricing-period">Updated strategy + 12 months of implementation support</div>
+            </div>
+            <ul class="pricing-features">
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                Everything in Option 1
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                New 12-Month Wealth Plan
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                1-on-1 call with Coach Jeff
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                New strategy based on where you are now
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                Clear action plan for the next 12 months
+              </li>
+            </ul>
+            <div class="pricing-best-for">
+              <strong>Best if</strong>
+              <p>You want a fresh strategy for where you are now and a full year of implementation support to follow through on it.</p>
+            </div>
+            <a href="https://whop.com/checkout/plan_a2UIEShn0xgUs" class="btn btn-primary pricing-cta">Choose This Option</a>
+          </div>
+
+          <!-- Option 2 -->
+          <div class="pricing-card fade-in delay-3">
+            <div class="pricing-header">
+              <div class="pricing-name">Option 02</div>
+              <div class="pricing-title">12-Month Wealth Plan</div>
+              <div class="pricing-amount">$1,000<span>/one-time</span></div>
+              <div class="pricing-period">A fresh plan built on 2026 rules and your current situation</div>
+            </div>
+            <ul class="pricing-features">
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                New 12-Month Wealth Plan
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                1-on-1 call with Coach Jeff
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                Strategy based on your current finances and goals
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                Clear next steps for what to do now
+              </li>
+            </ul>
+            <div class="pricing-best-for">
+              <strong>Best if</strong>
+              <p>Your income, goals, or situation changed -- or the tax code has changed since your first plan and you want a new one built on 2026 rules and strategies.</p>
+            </div>
+            <a href="https://whop.com/checkout/plan_Hlh6wi32NnJD8" class="btn btn-secondary pricing-cta">Choose This Option</a>
+          </div>
+        </div>
+
+        <div class="upgrade-note fade-in">
+          <p>
+            <strong>Not sure?</strong> Start with Option 1 or 2 -- you can upgrade to Option 3 within 30 days and get full credit for what you already paid.
+          </p>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section id="faq">
+        <div class="faq-grid">
+          <div class="faq-header fade-in">
+            <span class="section-label">FAQ</span>
+            <h2>Common questions</h2>
+            <p class="section-subtitle">
+              Everything you need to decide which option is right for you.
+            </p>
+          </div>
+          <div class="faq-list">
+            <details class="faq-item fade-in delay-1" open>
+              <summary class="faq-question">
+                What exactly am I renewing?
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </summary>
+              <div class="faq-answer">
+                The implementation layer -- your 12-Month Wealth Plan, community access, weekly calls, AI access, and your Wealth Guide. The course gives you the strategies; this is what helps you implement them. It runs on a 12-month cycle. The video course is yours for life and doesn't need to be renewed.
+              </div>
+            </details>
+            <details class="faq-item fade-in delay-2">
+              <summary class="faq-question">
+                What are Wealth Guides?
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </summary>
+              <div class="faq-answer">
+                Wealth Guides are your main point of contact inside the program. They can get on calls with you whenever you need, answer your questions, give you accountability, and help you implement the strategies you're learning. Think of them as your personal guide through the wealth-building process.
+              </div>
+            </details>
+            <details class="faq-item fade-in delay-2">
+              <summary class="faq-question">
+                What is the 12-Month Wealth Plan?
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </summary>
+              <div class="faq-answer">
+                It's a 12-month roadmap tailored to your income, goals, and timeline that tells you exactly what financial moves to make and when. Your current plan expires with your implementation access. A new 12-Month Wealth Plan comes with Option 2 and Option 3, and includes a 1-on-1 call with Coach Jeff.
+              </div>
+            </details>
+            <details class="faq-item fade-in delay-2">
+              <summary class="faq-question">
+                Who should choose the Community + Calls option?
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </summary>
+              <div class="faq-answer">
+                Option 1 is for you if your strategy feels solid and you want the implementation support to keep executing -- the weekly calls, your Wealth Guide, AI access, and a community of people who understand what you're building.
+              </div>
+            </details>
+            <details class="faq-item fade-in delay-3">
+              <summary class="faq-question">
+                Who should choose the 12-Month Wealth Plan?
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </summary>
+              <div class="faq-answer">
+                Option 2 is for you if your situation has changed since you first joined -- or if the tax landscape has. Maybe you implemented strategies from your first plan and your financial picture looks different now. Maybe your income jumped, your goals evolved, or your family or business situation changed. On top of that, the tax code itself has changed -- there are new rules, new thresholds, and new strategies available in 2026 that didn't exist when your first plan was built. This gives you a new 12-Month Wealth Plan based on where you actually are today and the latest tax landscape, plus a call with Coach Jeff to map out your next moves.
+              </div>
+            </details>
+            <details class="faq-item fade-in delay-3">
+              <summary class="faq-question">
+                What happens on the call with Coach Jeff?
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </summary>
+              <div class="faq-answer">
+                You'll walk through your new 12-Month Wealth Plan together, talk about what's changed in your life and finances, and get clear next steps based on your current goals. It's a strategy session tailored to where you are right now.
+              </div>
+            </details>
+            <details class="faq-item fade-in delay-4">
+              <summary class="faq-question">
+                Can I start with one option and upgrade later?
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </summary>
+              <div class="faq-answer">
+                Yes. If you start with Option 1 or Option 2 and later want the Full Renewal Bundle, you can upgrade within 30 days and we'll credit what you already paid toward Option 3.
+              </div>
+            </details>
+            <details class="faq-item fade-in delay-4">
+              <summary class="faq-question">
+                What happens if I don't renew?
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </summary>
+              <div class="faq-answer">
+                Your 12-Month Wealth Plan, community access, weekly calls, AI access, and Wealth Guide access will end. You'll keep lifetime access to the full video course -- that never goes away. If you want to rejoin the implementation support later, you can always reach out.
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final CTA -->
+      <section class="final-cta fade-in">
+        <span class="section-label">Ready to decide?</span>
+        <h2>Pick the option that fits where you are</h2>
+        <p>
+          Wealth building isn't a one-year project. The tax code changes every year -- new rules, new deductions, new thresholds. The strategies that worked in 2025 may not be the best moves in 2026. The right implementation system -- your wealth plan, your Wealth Guides, the calls, the community -- keeps you making the right moves based on the latest rules, not an outdated playbook.
+        </p>
+        <div class="final-cta-buttons">
+          <a href="#pricing" class="btn btn-primary" style="font-size: 1.0625rem; padding: 18px 36px;">
+            See Your Options
+            <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" style="margin-left: 4px;">
+              <path d="M8 3l5 5-5 5M3 8h10" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="#video" class="btn btn-secondary" style="font-size: 1.0625rem; padding: 18px 36px;">
+            Watch the Video First
+          </a>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <p>&copy; 2026 Legacy Investing Show. Questions? Reply to your renewal email or reach out to your Wealth Guide.</p>
+      </footer>
+    </main>
+
+    <!-- html-agentation:start -->
+    <script type="module">
+      const params = new URLSearchParams(window.location.search);
+      const reviewMode = params.get("agentation") === "1";
+
+      if (reviewMode) {
+        const helper = document.createElement("div");
+        helper.setAttribute("role", "status");
+        helper.innerHTML = [
+          "<strong>Review Mode</strong>",
+          "<span>Open the Agentation toolbar, click elements, add comments, then use Copy and paste the output back into Codex.</span>"
+        ].join("");
+
+        Object.assign(helper.style, {
+          position: "fixed",
+          left: "20px",
+          bottom: "20px",
+          zIndex: "2147483645",
+          maxWidth: "360px",
+          padding: "14px 16px",
+          borderRadius: "14px",
+          border: "1px solid rgba(226, 232, 240, 0.16)",
+          background: "rgba(10, 14, 24, 0.92)",
+          color: "#f8fafc",
+          boxShadow: "0 24px 80px rgba(2, 6, 23, 0.45)",
+          backdropFilter: "blur(16px)",
+          fontFamily: "Inter, sans-serif",
+          fontSize: "13px",
+          lineHeight: "1.5"
+        });
+
+        const title = helper.firstElementChild;
+        const body = helper.lastElementChild;
+
+        title.style.display = "block";
+        title.style.marginBottom = "4px";
+        title.style.fontSize = "12px";
+        title.style.letterSpacing = "0.12em";
+        title.style.textTransform = "uppercase";
+        body.style.display = "block";
+        body.style.color = "rgba(226, 232, 240, 0.84)";
+
+        document.body.appendChild(helper);
+
+        if (window.location.protocol === "file:") {
+          body.textContent = "Serve this folder over HTTP, then reopen this page with ?agentation=1.";
+        } else {
+          const [{ createElement }, { createRoot }, { Agentation }] = await Promise.all([
+            import("https://esm.sh/react@18.3.1"),
+            import("https://esm.sh/react-dom@18.3.1/client?deps=react@18.3.1"),
+            import("https://esm.sh/agentation@2.3.3?deps=react@18.3.1,react-dom@18.3.1")
+          ]);
+
+          const mount = document.createElement("div");
+          mount.id = "agentation-review-root";
+          document.body.appendChild(mount);
+
+          const root = createRoot(mount);
+          root.render(
+            createElement(Agentation, {
+              copyToClipboard: false,
+              onCopy: async (markdown) => {
+                try {
+                  await navigator.clipboard.writeText(markdown);
+                } catch (error) {
+                  console.warn("Agentation copy failed", error);
+                }
+              },
+              onSubmit: async (markdown) => {
+                try {
+                  await navigator.clipboard.writeText(markdown);
+                  body.textContent = "Annotations copied. Paste them back into your Codex chat for implementation.";
+                } catch (error) {
+                  body.textContent = "Copy failed. Use the toolbar copy button, then paste the annotations into chat.";
+                  console.warn("Agentation submit copy failed", error);
+                }
+              }
+            })
+          );
+        }
+      }
+    </script>
+    <!-- html-agentation:end -->
+  </body>
+</html>

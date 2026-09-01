@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Airbnb Ascension</title>
+  <style>
+    :root {
+      --ink: #183028; --muted: #5d6f68; --paper: #faf6ef;
+      --panel: rgba(255,255,255,0.88); --line: rgba(24,48,40,0.12);
+      --accent: #b8682b; --accent-soft: rgba(184,104,43,0.12);
+      --forest: #285844; --forest-soft: rgba(40,88,68,0.1);
+      --shadow: 0 20px 50px rgba(24,48,40,0.08); --radius: 22px; --max: 1060px;
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; color:var(--ink); background:radial-gradient(circle at top left,rgba(184,104,43,0.16),transparent 28%),radial-gradient(circle at top right,rgba(40,88,68,0.14),transparent 32%),linear-gradient(180deg,#f4ecdf 0%,var(--paper) 40%,#faf7f2 100%); font-family:"Avenir Next","Segoe UI",sans-serif; line-height:1.56; padding:36px 18px 72px; }
+    .page { max-width:var(--max); margin:0 auto; }
+    .hero,.section { background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); backdrop-filter:blur(8px); }
+    .hero { padding:48px; position:relative; overflow:hidden; }
+    .hero::after { content:""; position:absolute; right:-70px; top:-70px; width:240px; height:240px; border-radius:50%; background:radial-gradient(circle,rgba(184,104,43,0.22),transparent 70%); }
+    .eyebrow { display:inline-flex; align-items:center; padding:7px 14px; border-radius:999px; border:1px solid rgba(184,104,43,0.28); background:rgba(255,255,255,0.74); color:var(--accent); font-size:12px; letter-spacing:0.12em; text-transform:uppercase; font-weight:700; }
+    h1,h2,h3 { font-family:"Iowan Old Style","Palatino Linotype",Georgia,serif; line-height:1.12; margin:0; font-weight:700; }
+    h1 { font-size:clamp(2.2rem,4.5vw,3.6rem); margin-top:16px; }
+    h2 { font-size:clamp(1.5rem,2.5vw,2.2rem); margin-bottom:14px; }
+    h3 { font-size:1.15rem; margin-bottom:6px; }
+    .hero p { max-width:760px; margin:18px 0 0; color:var(--muted); font-size:1.07rem; }
+    .stack { display:grid; gap:24px; margin-top:24px; }
+    .section { padding:36px; }
+    .section-intro { max-width:800px; color:var(--muted); margin:0 0 20px; font-size:1rem; }
+    .grid-2 { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+    .grid-3 { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+    .item { border-radius:16px; border:1px solid var(--line); background:rgba(255,255,255,0.84); padding:22px; }
+    .item h3 { color:var(--ink); }
+    .item p { margin:6px 0 0; color:var(--muted); font-size:0.94rem; }
+    .item .icon { width:40px; height:40px; border-radius:10px; background:var(--forest-soft); display:flex; align-items:center; justify-content:center; font-size:18px; color:var(--forest); margin-bottom:12px; }
+    .step-number { display:inline-flex; align-items:center; justify-content:center; width:32px; height:32px; border-radius:50%; background:var(--accent); color:#fff; font-weight:700; font-size:0.9rem; margin-bottom:12px; }
+    .highlight-row { display:flex; gap:16px; margin-top:20px; }
+    .highlight-box { flex:1; border-radius:16px; padding:20px; text-align:center; }
+    .highlight-box.green { background:var(--forest-soft); border:1px solid rgba(40,88,68,0.2); }
+    .highlight-box.amber { background:var(--accent-soft); border:1px solid rgba(184,104,43,0.2); }
+    .highlight-box strong { display:block; font-size:1.4rem; font-family:"Iowan Old Style",Georgia,serif; margin-bottom:4px; }
+    .highlight-box span { color:var(--muted); font-size:0.88rem; }
+    .callout { border-radius:16px; border:1px solid var(--line); background:linear-gradient(135deg,rgba(40,88,68,0.08),rgba(184,104,43,0.08)); padding:22px; margin-top:20px; }
+    .callout p { margin:0; color:var(--muted); font-size:0.95rem; }
+    .tag { display:inline-block; padding:5px 11px; border-radius:999px; background:var(--forest-soft); color:var(--forest); font-weight:700; font-size:0.9rem; margin-top:8px; }
+    @media (max-width:680px) { .grid-2,.grid-3,.highlight-row { grid-template-columns:1fr; flex-direction:column; } body { padding:18px 12px 40px; } .hero,.section { padding:22px; } }
+  </style>
+</head>
+<body>
+<main class="page">
+
+  <section class="hero">
+    <div class="eyebrow">Path B</div>
+    <h1>Airbnb Ascension</h1>
+    <p>A 6-month 1-on-1 coaching program where we walk you through everything from finding profitable markets to launching your first short-term rental. You don't need to own property. Lease-based, so the barrier to entry is low.</p>
+    <span class="tag">No property ownership required</span>
+  </section>
+
+  <div class="stack">
+
+    <section class="section">
+      <h2>How we get you to your first rental</h2>
+      <p class="section-intro">Three phases. We handle each one with you so there's no guessing.</p>
+      <div class="grid-3">
+        <div class="item">
+          <div class="step-number">1</div>
+          <h3>We help you acquire the lease</h3>
+          <p>Finding profitable markets, cold calling scripts, roleplay practice, lease negotiation playbook. Your coaches even vouch for you with landlords as references.</p>
+        </div>
+        <div class="item">
+          <div class="step-number">2</div>
+          <h3>We set up all operations</h3>
+          <p>Design and furnishing guidance, listings on Airbnb, VRBO, and Booking.com, optimized copy and photos, and guest communication templates.</p>
+        </div>
+        <div class="item">
+          <div class="step-number">3</div>
+          <h3>We automate your pricing &amp; systems</h3>
+          <p>Dynamic pricing strategy, automated pricing tools, guest messaging automation, and operations SOPs for hands-off management.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Your dedicated coach</h2>
+      <p class="section-intro">You are not in a group hoping someone answers your question. You get a dedicated mentor assigned to you.</p>
+      <div class="grid-2">
+        <div class="item">
+          <div class="icon">&#9670;</div>
+          <h3>1-on-1 onboarding call</h3>
+          <p>30-45 minute session to map out your game plan and get clarity on the implementation timeline.</p>
+        </div>
+        <div class="item">
+          <div class="icon">&#9670;</div>
+          <h3>All-day messaging access</h3>
+          <p>Instant access to your coach for questions, deal reviews, and discussions. Every single day.</p>
+        </div>
+        <div class="item">
+          <div class="icon">&#9670;</div>
+          <h3>Scheduled 1-on-1 calls</h3>
+          <p>Freedom to book calls with your coach whenever you need deeper guidance on a decision or strategy.</p>
+        </div>
+        <div class="item">
+          <div class="icon">&#9670;</div>
+          <h3>Daily accountability</h3>
+          <p>Your coach guides you every step of the way so you know what needs to be done each day. Weekly progress tracking keeps you on pace.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Community &amp; curriculum</h2>
+      <div class="grid-2">
+        <div class="item">
+          <div class="icon">&#9670;</div>
+          <h3>7+ hours of on-demand curriculum</h3>
+          <p>Lifetime access. Self-paced content covering every step from market research to scaling your business.</p>
+        </div>
+        <div class="item">
+          <div class="icon">&#9670;</div>
+          <h3>Weekly live Zoom calls</h3>
+          <p>Plus 18+ months of call recordings. Strategies, Q&A, and roundtable discussions in real time.</p>
+        </div>
+        <div class="item">
+          <div class="icon">&#9670;</div>
+          <h3>Private community (lifetime)</h3>
+          <p>Access to the Airbnb Association community. Real conversations with active operators and coaches.</p>
+        </div>
+        <div class="item">
+          <div class="icon">&#9670;</div>
+          <h3>Unlimited messaging to Preston &amp; coaches</h3>
+          <p>Direct access inside the community. No limits on how much you can ask.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Business setup included</h2>
+      <p class="section-intro">We partner with experts who handle your entity and tax setup so you can focus on getting your Airbnb live.</p>
+      <div class="grid-2">
+        <div class="item">
+          <div class="icon">&#9670;</div>
+          <h3>Done-for-you LLC formation</h3>
+          <p>Entity setup handled by our vetted partner. You only pay filing fees ($300-$600). Same cost you'd pay doing it yourself, but done by professionals.</p>
+        </div>
+        <div class="item">
+          <div class="icon">&#9670;</div>
+          <h3>Tax strategy session</h3>
+          <p>Free 45-60 minute strategy session covering asset protection, tax savings, and business credit development.</p>
+        </div>
+        <div class="item">
+          <div class="icon">&#9670;</div>
+          <h3>Business credit guidance</h3>
+          <p>Learn how to build business credit and shift personal lines to your business entity.</p>
+        </div>
+        <div class="item">
+          <div class="icon">&#9670;</div>
+          <h3>250+ tax deductions</h3>
+          <p>Access to a comprehensive deduction library so you capture every write-off available to your business.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Full resource library</h2>
+      <p class="section-intro">Every tool, template, script, and calculator you need. All included.</p>
+      <div class="grid-3" style="font-size:0.92rem;">
+        <div class="item">
+          <h3>Market research</h3>
+          <p>Top 500 U.S. markets guide, market analysis tools, AirDNA walkthrough, regulations summary by state and city.</p>
+        </div>
+        <div class="item">
+          <h3>Scripts &amp; outreach</h3>
+          <p>Landlord scripts, email templates, cold calling scripts, sublease addendum, lease checklist.</p>
+        </div>
+        <div class="item">
+          <h3>Setup &amp; furnishing</h3>
+          <p>Furniture budget tracker, top-performing furniture lists, exclusive supplier memberships, remote setup guide, design for non-designers.</p>
+        </div>
+        <div class="item">
+          <h3>Operations</h3>
+          <p>Guest message templates, welcome packet, cleaner interview guide, VA training guide, automation tool tutorials.</p>
+        </div>
+        <div class="item">
+          <h3>Financial tools</h3>
+          <p>Arbitrage calculator, purchase calculator, market comparison sheet, property analysis framework.</p>
+        </div>
+        <div class="item">
+          <h3>Scaling</h3>
+          <p>Co-hosting masterclass, negotiation scripts, client agreements, VA super team playbook, dynamic pricing strategies.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="highlight-row">
+      <div class="highlight-box green">
+        <strong>$10K &#8211; $25K</strong>
+        <span>Typical capital needed for setup, deposits, and furnishing</span>
+      </div>
+      <div class="highlight-box amber">
+        <strong>4 hours / week</strong>
+        <span>Time commitment once your systems are automated</span>
+      </div>
+      <div class="highlight-box green">
+        <strong>6 months</strong>
+        <span>Guided execution with your dedicated coach</span>
+      </div>
+    </div>
+
+    <div class="callout">
+      <p><strong>No property ownership required.</strong> This is lease-based, which means lower capital, faster start, and you can scale to multiple properties without buying anything. Your coach walks you through every step from market research to your first guest.</p>
+    </div>
+
+  </div>
+</main>
+</body>
+</html>

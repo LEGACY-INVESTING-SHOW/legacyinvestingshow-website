@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>STR Concierge</title>
+  <style>
+    :root {
+      --ink: #183028; --muted: #5d6f68; --paper: #faf6ef;
+      --panel: rgba(255,255,255,0.88); --line: rgba(24,48,40,0.12);
+      --accent: #b8682b; --accent-soft: rgba(184,104,43,0.12);
+      --forest: #285844; --forest-soft: rgba(40,88,68,0.1);
+      --shadow: 0 20px 50px rgba(24,48,40,0.08); --radius: 22px; --max: 1060px;
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; color:var(--ink); background:radial-gradient(circle at top left,rgba(184,104,43,0.16),transparent 28%),radial-gradient(circle at top right,rgba(40,88,68,0.14),transparent 32%),linear-gradient(180deg,#f4ecdf 0%,var(--paper) 40%,#faf7f2 100%); font-family:"Avenir Next","Segoe UI",sans-serif; line-height:1.56; padding:36px 18px 72px; }
+    .page { max-width:var(--max); margin:0 auto; }
+    .hero,.section { background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); backdrop-filter:blur(8px); }
+    .hero { padding:48px; position:relative; overflow:hidden; }
+    .hero::after { content:""; position:absolute; right:-70px; top:-70px; width:240px; height:240px; border-radius:50%; background:radial-gradient(circle,rgba(184,104,43,0.22),transparent 70%); }
+    .eyebrow { display:inline-flex; align-items:center; padding:7px 14px; border-radius:999px; border:1px solid rgba(184,104,43,0.28); background:rgba(255,255,255,0.74); color:var(--accent); font-size:12px; letter-spacing:0.12em; text-transform:uppercase; font-weight:700; }
+    h1,h2,h3 { font-family:"Iowan Old Style","Palatino Linotype",Georgia,serif; line-height:1.12; margin:0; font-weight:700; }
+    h1 { font-size:clamp(2.2rem,4.5vw,3.6rem); margin-top:16px; }
+    h2 { font-size:clamp(1.5rem,2.5vw,2.2rem); margin-bottom:14px; }
+    h3 { font-size:1.15rem; margin-bottom:6px; }
+    .hero p { max-width:760px; margin:18px 0 0; color:var(--muted); font-size:1.07rem; }
+    .stack { display:grid; gap:24px; margin-top:24px; }
+    .section { padding:36px; }
+    .section-intro { max-width:800px; color:var(--muted); margin:0 0 20px; font-size:1rem; }
+    .grid-2 { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+    .grid-3 { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+    .item { border-radius:16px; border:1px solid var(--line); background:rgba(255,255,255,0.84); padding:22px; }
+    .item h3 { color:var(--ink); }
+    .item p { margin:6px 0 0; color:var(--muted); font-size:0.94rem; }
+    .item .icon { width:40px; height:40px; border-radius:10px; background:var(--forest-soft); display:flex; align-items:center; justify-content:center; font-size:18px; color:var(--forest); margin-bottom:12px; }
+    .phase-label { display:inline-flex; align-items:center; gap:8px; padding:8px 16px; border-radius:999px; font-weight:700; font-size:0.85rem; letter-spacing:0.06em; text-transform:uppercase; margin-bottom:16px; }
+    .phase-label.p1 { background:var(--forest-soft); color:var(--forest); border:1px solid rgba(40,88,68,0.2); }
+    .phase-label.p2 { background:var(--accent-soft); color:#7d4318; border:1px solid rgba(184,104,43,0.2); }
+    .highlight-row { display:flex; gap:16px; margin-top:20px; }
+    .highlight-box { flex:1; border-radius:16px; padding:20px; text-align:center; }
+    .highlight-box.green { background:var(--forest-soft); border:1px solid rgba(40,88,68,0.2); }
+    .highlight-box.amber { background:var(--accent-soft); border:1px solid rgba(184,104,43,0.2); }
+    .highlight-box strong { display:block; font-size:1.4rem; font-family:"Iowan Old Style",Georgia,serif; margin-bottom:4px; }
+    .highlight-box span { color:var(--muted); font-size:0.88rem; }
+    .callout { border-radius:16px; border:1px solid var(--line); background:linear-gradient(135deg,rgba(40,88,68,0.08),rgba(184,104,43,0.08)); padding:22px; margin-top:20px; }
+    .callout p { margin:0; color:var(--muted); font-size:0.95rem; }
+    .roi-callout { border-radius:16px; background:linear-gradient(135deg,rgba(184,104,43,0.12),rgba(40,88,68,0.08)); border:1px solid rgba(184,104,43,0.3); padding:24px; margin-top:20px; }
+    .roi-callout p { margin:0; font-size:1.05rem; color:var(--ink); }
+    .tag { display:inline-block; padding:5px 11px; border-radius:999px; background:var(--forest-soft); color:var(--forest); font-weight:700; font-size:0.9rem; margin-top:8px; }
+    @media (max-width:680px) { .grid-2,.grid-3,.highlight-row { grid-template-columns:1fr; flex-direction:column; } body { padding:18px 12px 40px; } .hero,.section { padding:22px; } }
+  </style>
+</head>
+<body>
+<main class="page">
+
+  <section class="hero">
+    <div class="eyebrow">Path C</div>
+    <h1>STR Concierge</h1>
+    <p>We find the deal. We set up everything. You own the property. A complete done-for-you service where we handle acquisition and launch your short-term rental so you're earning within 4 months.</p>
+    <span class="tag">You own the asset. Cash flow + tax savings + equity.</span>
+  </section>
+
+  <div class="stack">
+
+    <section class="section">
+      <div class="phase-label p1">Phase 1: Done-For-You Property Acquisition</div>
+      <h2>We find and underwrite the right property for you</h2>
+      <p class="section-intro">Timeline: 90 to 120 days to close. We handle the research, analysis, and coordination so you make decisions, not guesses.</p>
+      <div class="grid-2">
+        <div class="item">
+          <div class="icon">&#9670;</div>
+          <h3>Discovery call &amp; buy box</h3>
+          <p>60-minute strategy session to define your target market, property type, price range, profit targets, tax goals, timeline, and risk tolerance.</p>
+        </div>
+        <div class="item">
+          <div class="icon">&#9670;</div>
+          <h3>5 to 10 deals sourced for you</h3>
+          <p>Each property comes with AirDNA market data, comparable analysis, regulation checks, property condition assessment, and neighborhood scoring.</p>
+        </div>
+        <div class="item">
+          <div class="icon">&#9670;</div>
+          <h3>Full underwriting on every deal</h3>
+          <p>Projected revenue, operating expenses, net cash flow, cap rate, cash-on-cash return, cost segregation estimate, tax impact, and total year-one value.</p>
+        </div>
+        <div class="item">
+          <div class="icon">&#9670;</div>
+          <h3>Offer &amp; negotiation support</h3>
+          <p>We help you structure the offer, coach you through counteroffers, and coordinate with your agent. You make the call, we guide every decision.</p>
+        </div>
+        <div class="item">
+          <div class="icon">&#9670;</div>
+          <h3>Due diligence coordination</h3>
+          <p>Vetted STR inspectors, appraisal review, title and escrow connections, and a final walkthrough checklist. If issues come up, we help you decide.</p>
+        </div>
+        <div class="item">
+          <div class="icon">&#9670;</div>
+          <h3>Tax &amp; entity setup</h3>
+          <p>LLC, S-Corp, or holding company guidance. Cost segregation coordinated for accelerated depreciation. Expense tracking system. CPA referral if needed.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="phase-label p2">Phase 2: Done-For-You Operations Setup</div>
+      <h2>We launch your STR so you're live and earning fast</h2>
+      <p class="section-intro">Timeline: 2 to 3 weeks after close. We handle everything from listing creation to automation to your first guest.</p>
+      <div class="grid-2">
+        <div class="item">
+          <div class="icon">&#9670;</div>
+          <h3>Listings on all major platforms</h3>
+          <p>Airbnb, VRBO, Booking.com, plus a direct booking website. Optimized titles, descriptions, house rules, and search ranking.</p>
+        </div>
+        <div class="item">
+          <div class="icon">&#9670;</div>
+          <h3>Full tech stack integration</h3>
+          <p>PriceLabs dynamic pricing, Guesty or PMS setup, automated guest messaging, calendar sync across all platforms. One dashboard runs everything.</p>
+        </div>
+        <div class="item">
+          <div class="icon">&#9670;</div>
+          <h3>Furnishing &amp; interior optimization</h3>
+          <p>Full furnishing playbook, budget templates, top-performing furniture lists, exclusive supplier pricing, interior design guidance, and professional photographer referrals.</p>
+        </div>
+        <div class="item">
+          <div class="icon">&#9670;</div>
+          <h3>Operational playbook &amp; SOPs</h3>
+          <p>Cleaner hiring, cleaning checklists, guest communication scripts, and emergency response playbooks. Everything you need to run hands-off.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>We don't disappear after launch</h2>
+      <div class="grid-3">
+        <div class="item">
+          <div class="icon">&#9670;</div>
+          <h3>30-day check-in</h3>
+          <p>Dedicated call to make sure everything is running smooth and address any issues that came up during your first month.</p>
+        </div>
+        <div class="item">
+          <div class="icon">&#9670;</div>
+          <h3>90-day performance review</h3>
+          <p>Deep dive into what's working and what needs adjustment. Pricing tweaks, listing optimization, operational improvements.</p>
+        </div>
+        <div class="item">
+          <div class="icon">&#9670;</div>
+          <h3>Direct messaging access</h3>
+          <p>Ongoing access to our team for troubleshooting. You are not figuring this out alone.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Vetted referral network</h2>
+      <p class="section-intro">We connect you with specialists who actually know short-term rentals.</p>
+      <div class="grid-3" style="font-size:0.92rem;">
+        <div class="item">
+          <h3>DSCR Lenders</h3>
+          <p>Financing experts who understand STR income and know how to underwrite these deals.</p>
+        </div>
+        <div class="item">
+          <h3>Cost Segregation Firms</h3>
+          <p>Specialists who maximize year-one depreciation for the biggest possible tax refund.</p>
+        </div>
+        <div class="item">
+          <h3>STR-Focused CPAs</h3>
+          <p>Tax professionals who know real estate. Not generalists who've never seen an STR.</p>
+        </div>
+        <div class="item">
+          <h3>Investor-Friendly Agents</h3>
+          <p>Market-specific specialists who know where the deals are and how to structure them.</p>
+        </div>
+        <div class="item">
+          <h3>Interior Designers</h3>
+          <p>STR staging and furnishing professionals who know what actually books.</p>
+        </div>
+        <div class="item">
+          <h3>Property Managers</h3>
+          <p>For hands-off investing if you want someone else running day-to-day operations.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Why ownership wins</h2>
+      <p class="section-intro">Here's what a typical $500K STR property looks like in year one.</p>
+      <div class="highlight-row">
+        <div class="highlight-box green">
+          <strong>$75,000</strong>
+          <span>Gross revenue</span>
+        </div>
+        <div class="highlight-box amber">
+          <strong>$23,000</strong>
+          <span>Net cash flow after expenses</span>
+        </div>
+        <div class="highlight-box green">
+          <strong>$55,500</strong>
+          <span>Tax savings from cost segregation</span>
+        </div>
+      </div>
+      <div class="roi-callout">
+        <p><strong>Total year-one value: $78,500+</strong> from a single property. Cash flow plus tax savings. And you're building equity as the property appreciates. This is before accounting for any additional properties.</p>
+      </div>
+    </section>
+
+    <div class="highlight-row">
+      <div class="highlight-box green">
+        <strong>$120K+</strong>
+        <span>Capital needed (down payment, closing, reserves, furniture)</span>
+      </div>
+      <div class="highlight-box amber">
+        <strong>90 &#8211; 120 days</strong>
+        <span>Phase 1: Acquisition to close</span>
+      </div>
+      <div class="highlight-box green">
+        <strong>2 &#8211; 3 weeks</strong>
+        <span>Phase 2: Close to first guests</span>
+      </div>
+    </div>
+
+    <div class="callout">
+      <p><strong>You own the asset.</strong> Unlike arbitrage or leasing, you're building real equity. The property appreciates. The depreciation offsets your W-2 income. The cash flow compounds. And you have a tangible asset that grows in value over time.</p>
+    </div>
+
+  </div>
+</main>
+</body>
+</html>
