@@ -7,7 +7,7 @@ const { run } = require('../scripts/build-vercel');
 test('funnel-only build restores generated output without restoring old funnel copy', () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'lis-build-test-'));
   const write = (f, s) => { fs.mkdirSync(path.dirname(path.join(root, f)), { recursive: true }); fs.writeFileSync(path.join(root, f), s); };
-  const env = { VERCEL: '1', VERCEL_ENV: 'production' };
+  const env = { VERCEL: '1', VERCEL_ENV: 'production', CALC2_SRC: path.join(root, 'no-external-calculators') };
   let full = 0;
   const build = name => { if (name === 'build') { full++; write('blog/example.html', 'generated'); write('feed.xml', 'feed'); } };
   try {
