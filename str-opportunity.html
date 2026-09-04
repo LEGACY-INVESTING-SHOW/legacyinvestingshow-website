@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The STR Opportunity in Your Wealth Plan · Legacy Wealth Blueprint</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://www.legacyinvestingshow.com/str-opportunity">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://player.vimeo.com">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ============ CLEAN MODERN MINIMAL ============ */
+:root{
+  --bg:#FFFFFF; --bg-soft:#F7F8F6; --card:#FFFFFF;
+  --ink:#101815; --body:#4A5550; --mut:#8A948E;
+  --line:#E7EAE6; --line-dk:#D8DDD8;
+  --green:#0E7A4E; --green-dk:#0A5C3B; --green-tint:#EDF6F1; --green-line:#CDE6DA;
+  --amber:#B07C10;
+  --head:"Schibsted Grotesk",-apple-system,"Segoe UI",sans-serif;
+  --sans:"Instrument Sans",-apple-system,"Segoe UI",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--green)}
+
+.wrap{max-width:1100px;margin:0 auto;padding:0 clamp(18px,4vw,48px)}
+section{padding:clamp(44px,7vw,96px) 0}
+section.soft{background:var(--bg-soft)}
+section.tight{padding-top:clamp(24px,5vw,52px)}
+
+h1{font-family:var(--head);font-size:clamp(31px,5.2vw,60px);font-weight:800;line-height:1.04;letter-spacing:-.03em;text-wrap:balance}
+h2{font-family:var(--head);font-size:clamp(25px,3.8vw,42px);font-weight:700;line-height:1.1;letter-spacing:-.025em;max-width:860px;text-wrap:balance}
+h3{font-family:var(--head)}
+.sub{font-size:clamp(15.5px,1.8vw,18.5px);color:var(--body);line-height:1.6;max-width:680px;margin-top:14px}
+.sub b{color:var(--ink);font-weight:600}
+.hl{color:var(--green)}
+.num{font-variant-numeric:tabular-nums}
+.tlink{font:600 15px/1.4 var(--sans);color:var(--green);text-decoration:none;border-bottom:1px solid var(--green-line);padding-bottom:2px}
+.tlink:hover{border-color:var(--green)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--green);color:#fff;font:600 15px/1 var(--sans);letter-spacing:-.01em;padding:16px 28px;text-decoration:none;border-radius:12px;border:1px solid var(--green);transition:background .18s ease;cursor:pointer}
+.btn:hover{background:var(--green-dk)}
+
+/* ============ TOP BAR ============ */
+header.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:12px;padding-bottom:12px}
+.brand{font:700 14px/1.3 var(--head);letter-spacing:-.01em}
+.toplink{font:600 13.5px/1 var(--sans);color:#fff;background:var(--green);border-radius:999px;padding:10px 18px;text-decoration:none;white-space:nowrap}
+.toplink:hover{background:var(--green-dk)}
+
+/* ============ HERO ============ */
+.hero{padding-top:clamp(24px,6vw,72px);padding-bottom:clamp(20px,4vw,44px)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(24px,5vw,64px);align-items:center}
+.video-frame{border-radius:18px;background:var(--ink);box-shadow:0 24px 60px -24px rgba(16,24,21,.35);overflow:hidden;border:1px solid var(--line)}
+.video-inner{position:relative;aspect-ratio:16/9}
+.video-inner iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+@media(max-width:880px){.hero .wrap{grid-template-columns:1fr}.hero .copy{order:2}.hero .vid{order:1}.video-frame{border-radius:14px}}
+
+.video-cta{margin-top:20px}
+.video-cta .btn{width:100%}
+#book{scroll-margin-top:80px}
+.calc-toggle{padding:22px clamp(18px,3.5vw,40px);cursor:pointer;font:600 18px/1.4 var(--sans)}
+.calc-note{font-size:13px;color:var(--body);line-height:1.5}
+/* ============ CALCULATOR ============ */
+#numbers{padding-top:24px}
+.calc{border-top:1px solid var(--line-dk);border-bottom:1px solid var(--line-dk)}
+.calc-toggle{padding:26px 0;font:600 clamp(18px,2.5vw,24px)/1.4 var(--head)}
+.calc-head{padding:8px 0 24px}
+.calc-head h2{font-size:clamp(23px,3vw,32px)}
+.calc-head p{margin-top:12px;color:var(--body);font-size:15px}
+.calc-body{padding-bottom:32px}
+.calc-form{display:grid;grid-template-columns:1fr 1fr;gap:28px 40px}
+.q{display:grid;gap:14px;align-content:start;min-width:0}
+.q:first-child,.calc-actions{grid-column:1/-1}
+.q-lbl{font:600 16px/1.4 var(--sans)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.q:not(:first-child) .two{grid-template-columns:1fr}
+.field{display:grid;gap:8px}
+.field label{font-size:14px;color:var(--body)}
+.money{position:relative}
+.money::before{content:"$";position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--body)}
+input[type=text],select{width:100%;min-height:50px;font:500 16px/1.4 var(--sans);color:var(--ink);background:white;border:1px solid var(--line-dk);border-radius:8px;padding:12px 16px}
+.money input{padding-left:32px}
+input:focus,select:focus{outline:2px solid var(--green);outline-offset:2px}
+.q-opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.q-opts button{min-height:50px;border:1px solid var(--line-dk);border-radius:8px;background:white;color:var(--ink);font:500 15px/1.4 var(--sans);padding:12px;cursor:pointer}
+.q-opts button:hover{border-color:var(--green)}
+.q-opts button[aria-pressed=true]{background:var(--green);border-color:var(--green);color:white}
+.calc-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.calc-hint{font-size:14px}
+.out-empty{display:none}
+.out{display:none;margin-top:32px;padding-top:32px;border-top:1px solid var(--line-dk)}
+.out.show{display:block}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:20px 40px}
+.kpi{padding:0}
+.kpi span{display:block;font-size:14px;color:var(--body)}
+.kpi b{display:block;font:800 clamp(32px,4vw,48px)/1.15 var(--head);letter-spacing:-.03em;margin:8px 0;color:var(--green)}
+.kpi small{display:block;font-size:13px;line-height:1.55;color:var(--body)}
+.kpi.big{grid-column:1}.kpi.tax{grid-column:2;grid-row:1}
+.kpi .warn{color:var(--amber)}
+.verdict{margin-top:28px;max-width:740px}
+.verdict h3{font-size:24px;line-height:1.3}
+.verdict p,.verdict .alt{font-size:15px;color:var(--body);margin-top:10px}
+.verdict ul{margin:16px 0;padding-left:20px;color:var(--body);display:grid;gap:6px}
+.verdict .cta{margin-top:24px}
+@media(max-width:600px){.calc-form,.two,.kpis{grid-template-columns:1fr}.kpi.big,.kpi.tax{grid-column:1;grid-row:auto}.calc-actions .btn{width:100%}}
+
+/* ============ TWO WAYS, TWO SERVICES ============ */
+.model{display:grid;grid-template-columns:1fr 1fr;margin-top:clamp(24px,4vw,40px)}
+.model>div{padding:8px 0}
+.model>div.buy{padding-right:clamp(24px,4vw,44px)}
+.model>div+div{border-left:1px solid var(--line-dk);padding-left:clamp(24px,5vw,56px)}
+.model h3{font:800 clamp(21px,2.8vw,30px)/1.12 var(--head);letter-spacing:-.025em}
+.model .cap{font:800 clamp(32px,4.4vw,48px)/1 var(--head);letter-spacing:-.03em;color:var(--ink);margin-top:12px}
+.model>div.buy .cap{color:var(--green)}
+.model .cap small{display:block;font:500 13.5px/1.5 var(--sans);color:var(--body);margin-top:6px;letter-spacing:0}
+.model .gets{font:600 15.5px/1.5 var(--sans);color:var(--ink);margin-top:14px}
+.model .gets .dim{color:var(--mut);font-weight:500}
+.model .svc{margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+.model .svc b{display:block;font:700 17px/1.3 var(--head);letter-spacing:-.015em;color:var(--green)}
+.model .svc p{font-size:15px;color:var(--body);line-height:1.6;margin-top:8px;max-width:420px}
+.model .svc p em{font-style:normal;font-weight:600;color:var(--ink)}
+@media(max-width:600px){.model{grid-template-columns:1fr}.model>div+div{border-left:0;border-top:1px solid var(--line-dk);padding-left:0;padding-top:22px;margin-top:18px}}
+
+/* ============ MEMBERS ============ */
+.story-gallery{columns:3;column-gap:22px;margin-top:36px}
+.story-image{display:block;break-inside:avoid;margin-bottom:22px;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:white;transition:border-color .15s}
+.story-image:hover{border-color:var(--green)}
+.story-image img{width:100%;height:auto}
+.more{margin-top:28px}
+@media(max-width:820px){.story-gallery{columns:2}}
+@media(max-width:520px){.story-gallery{columns:1}}
+
+/* ============ BOOK A CALL ============ */
+.calllist{list-style:none;display:grid;gap:12px;margin-top:clamp(18px,3vw,30px);max-width:720px}
+.calllist li{font-size:clamp(16px,2vw,20px);color:var(--body);line-height:1.5;padding-left:24px;position:relative}
+.calllist li::before{content:"";position:absolute;left:0;top:11px;width:9px;height:9px;border-radius:50%;background:var(--green)}
+
+.scheduler{margin-top:clamp(22px,4vw,40px);border:1px solid var(--line);border-radius:16px;background:var(--card);overflow:hidden}
+.scheduler iframe{width:100%;height:760px;border:0;display:block;background:var(--card)}
+@media(max-width:600px){.scheduler{margin-left:-6px;margin-right:-6px}.scheduler iframe{height:840px}}
+.sched-fallback{padding:14px 20px;border-top:1px solid var(--line);font-size:13.5px;color:var(--mut)}
+
+/* ============ FAQ ============ */
+.faq{max-width:760px;margin-top:clamp(18px,4vw,38px);border-top:1px solid var(--line-dk)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:18px;padding:18px 0;font:600 16px/1.4 var(--sans);letter-spacing:-.01em}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font:500 22px/1 var(--head);color:var(--green);flex-shrink:0}
+.faq details[open] summary::after{content:"−"}
+.faq .fa{padding:0 0 20px;font-size:15px;color:var(--body);line-height:1.65;max-width:640px}
+
+/* ============ FOOTER ============ */
+footer{padding:clamp(30px,6vw,56px) 0 44px;border-top:1px solid var(--line);background:var(--bg-soft)}
+footer p{font-size:12.5px;color:var(--mut);line-height:1.65;max-width:840px;margin-bottom:12px}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand">Legacy Wealth Blueprint</div>
+    <a class="toplink" href="#book">Book a call</a>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO + VIDEO ============ -->
+<section class="hero">
+  <div class="wrap">
+    <div class="copy">
+      <h1 id="heroH1">Start your short-term rental with a team that <span class="hl">does most of the work.</span></h1>
+    </div>
+    <div class="vid">
+      <div class="video-frame">
+        <div class="video-inner">
+          <iframe src="https://player.vimeo.com/video/1224098386?title=0&byline=0&portrait=0&dnt=1" title="The STR Opportunity" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="eager"></iframe>
+        </div>
+      </div>
+      <div class="video-cta"><a class="btn" href="#book">Book a call</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TWO WAYS, TWO SERVICES ============ -->
+<section class="soft">
+  <div class="wrap">
+    <h2>Get help buying a property or starting with a lease.</h2>
+    <div class="model">
+      <div class="buy">
+        <h3>Buy your own property</h3>
+        <div class="cap num">$120K+<small>For the down payment, closing costs, furniture, and reserves. Some members qualify with less.</small></div>
+        <p class="gets">Rental income, equity, and potential tax savings.</p>
+        <div class="svc">
+          <b>STR Concierge</b>
+          <p>We find 5 to 10 properties and give each one a written review before you decide. You choose the property. We handle the purchase process, help furnish it, and set up the listings, pricing, and guest messaging. We stay with you through the first 90 days after launch.</p>
+        </div>
+      </div>
+      <div>
+        <h3>Lease a property and host guests</h3>
+        <div class="cap num">$10K–$25K<small>For setup costs and reserves. You need the owner's permission to use the property as a short-term rental.</small></div>
+        <p class="gets">Rental income without buying a property.</p>
+        <div class="svc">
+          <b>Airbnb Ascension</b>
+          <p>We help you choose a market, prepare for landlord calls, and review the lease. You make the calls. We help set up the property, listings, pricing, and guest messaging, with one-on-one support for six months.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MEMBERS ============ -->
+<section id="stories">
+  <div class="wrap">
+    <h2>See what our members have built</h2>
+    <div class="story-gallery">
+      <a class="story-image" href="/str-opportunity/assets/member-stories/member-2.png" target="_blank" rel="noopener"><img src="/str-opportunity/assets/member-stories/member-2.png" alt="Alvaro Cortes sharing a signed agreement and a photo" loading="lazy"></a>
+      <a class="story-image" href="/str-opportunity/assets/member-stories/member-1.png" target="_blank" rel="noopener"><img src="/str-opportunity/assets/member-stories/member-1.png" alt="Member message reporting $5,500 in net profit for a month" loading="lazy"></a>
+      <a class="story-image" href="/str-opportunity/assets/member-stories/member-3.jpeg" target="_blank" rel="noopener"><img src="/str-opportunity/assets/member-stories/member-3.jpeg" alt="Member message about signing a property lease" loading="lazy"></a>
+      <a class="story-image" href="/str-opportunity/assets/member-stories/member-7.png" target="_blank" rel="noopener"><img src="/str-opportunity/assets/member-stories/member-7.png" alt="Monique Avery sharing her experience renting out her basement" loading="lazy"></a>
+      <a class="story-image" href="/str-opportunity/assets/member-stories/member-5.png" target="_blank" rel="noopener"><img src="/str-opportunity/assets/member-stories/member-5.png" alt="Member update about June bookings and expected income after expenses" loading="lazy"></a>
+      <a class="story-image" href="/str-opportunity/assets/member-stories/member-6.jpeg" target="_blank" rel="noopener"><img src="/str-opportunity/assets/member-stories/member-6.jpeg" alt="Member message reporting about $1,800 in monthly cash flow" loading="lazy"></a>
+    </div>
+    <p class="more"><a class="tlink" href="https://www.firstairbnb.com/stories" target="_blank" rel="noopener">See more member stories</a></p>
+  </div>
+</section>
+
+<!-- ============ CALCULATOR ============ -->
+<section class="tight" id="numbers">
+  <div class="wrap">
+    <details class="calc">
+      <summary class="calc-toggle">Explore your numbers (optional)</summary>
+      <div class="calc-head">
+        <h2>Compare the estimates in your wealth plan</h2>
+        <p>Enter the two Year-One Value figures from the first page of your plan.</p>
+      </div>
+      <div class="calc-body">
+        <div class="calc-form">
+          <div class="q">
+            <div class="q-lbl">Your plan estimates</div>
+            <div class="two">
+              <div class="field"><label for="cons">Conservative scenario</label><div class="money"><input type="text" id="cons" inputmode="numeric" placeholder="e.g. 154,839" autocomplete="off"></div></div>
+              <div class="field"><label for="agg">Aggressive scenario</label><div class="money"><input type="text" id="agg" inputmode="numeric" placeholder="e.g. 394,557" autocomplete="off"></div></div>
+            </div>
+          </div>
+          <div class="q" data-q="capital">
+            <div class="q-lbl">How much cash could you put toward this?</div>
+            <div class="q-opts">
+              <button type="button" data-v="under10">Under $10K</button>
+              <button type="button" data-v="10to25">$10K – $25K</button>
+              <button type="button" data-v="25to120">$25K – $120K</button>
+              <button type="button" data-v="120plus">$120K or more</button>
+            </div>
+          </div>
+          <div class="q">
+            <div class="q-lbl">Estimate the tax savings from a purchase</div>
+            <p class="calc-note">The starting values match the property price and tax rate in the video. Your estimate may differ from your plan.</p>
+            <div class="two">
+              <div class="field"><label for="rate">Combined federal and state tax rate</label>
+                <select id="rate">
+                  <option value="0.24">24%</option>
+                  <option value="0.32">32%</option>
+                  <option value="0.35">35%</option>
+                  <option value="0.37">37%</option>
+                  <option value="0.42" selected>42%</option>
+                  <option value="0.45">45% or more</option>
+                </select>
+              </div>
+              <div class="field"><label for="price">Property price</label><div class="money"><input type="text" id="price" inputmode="numeric" value="375,000" autocomplete="off"></div></div>
+            </div>
+          </div>
+          <div class="calc-actions">
+            <button type="button" class="btn" id="calcBtn">Calculate</button>
+            <span class="calc-hint" id="calcHint"></span>
+          </div>
+        </div>
+        <div class="calc-out">
+          <div class="out-empty" id="outEmpty">Enter your details to see the estimates.</div>
+          <div class="out" id="out" aria-live="polite"></div>
+        </div>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- ============ BOOK A CALL ============ -->
+<section class="soft" id="book">
+  <div class="wrap">
+    <h2>Talk with us about your first short-term rental.</h2>
+    <ul class="calllist">
+      <li>We review your goals, budget, and the time you have available.</li>
+      <li>We discuss whether buying or leasing a property makes sense for you.</li>
+      <li>We explain the services, the fees, and what you would need to do.</li>
+    </ul>
+
+    <div class="scheduler">
+      <!--
+        SCHEDULER EMBED. Calendly route: https://calendly.com/andrewstrohm/str-concierge-call (recheck before publishing).
+        The calculator appends a1–a4 (cash, gap, calculator path, the two plan numbers) plus UTM tags.
+        The event needs four custom questions in that order for the prefill to land.
+        assets/booking-qr.png encodes this same Calendly link.
+      -->
+      <!-- src is injected on scroll (see script at end of body) so the embed cannot scroll-jack the page on load -->
+      <iframe data-src="https://calendly.com/andrewstrohm/str-concierge-call?embed_domain=www.legacyinvestingshow.com&embed_type=Inline&hide_gdpr_banner=1" title="Book a call"></iframe>
+      <div class="sched-fallback">If the calendar does not load, <a class="bookbtn" href="https://calendly.com/andrewstrohm/str-concierge-call" target="_blank" rel="noopener">open it in a new tab</a>.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section>
+  <div class="wrap">
+    <h2>Frequently asked questions</h2>
+    <div class="faq">
+      <details>
+        <summary>I have a full-time job. Will I have time for this?</summary>
+        <div class="fa">We built these services for people who already have a job and do not have time to do all the work themselves. With STR Concierge, our team handles most of the setup while you choose the property and make the key decisions. With Airbnb Ascension, you make the landlord calls and we work through the setup with you. We explain the time and work involved before you join.</div>
+      </details>
+      <details>
+        <summary>I already paid for Legacy Wealth Blueprint. What would I be paying for here?</summary>
+        <div class="fa">Legacy Wealth Blueprint is a broad personal finance program. These separate paid services focus on building a short-term rental business, either by buying a property or leasing one from an owner. You are paying for done-for-you services and consulting to help put that business in place. We explain what each program includes and what it costs on the call.</div>
+      </details>
+      <details>
+        <summary>Do I need to own a property to get started?</summary>
+        <div class="fa">No. You can lease a property with the owner's permission, furnish it, and rent it to short-term guests. Airbnb Ascension helps you with that process. If you want to buy a property, STR Concierge supports the purchase and setup.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<script>
+// ============ CALCULATOR ============
+(function(){
+  var BOOK='https://calendly.com/andrewstrohm/str-concierge-call';
+  var EMBED='embed_domain=www.legacyinvestingshow.com&embed_type=Inline&hide_gdpr_banner=1';
+  var out=document.getElementById('out'), empty=document.getElementById('outEmpty'), hint=document.getElementById('calcHint');
+  var cons=document.getElementById('cons'), agg=document.getElementById('agg'), rate=document.getElementById('rate'), price=document.getElementById('price');
+  var capital=null;
+  var CAP_LABEL={under10:'Under $10K','10to25':'$10K–$25K','25to120':'$25K–$120K','120plus':'$120K or more'};
+
+  function fmt(n){ return '$'+Math.round(n).toLocaleString('en-US'); }
+  function val(el){ var n=parseFloat(String(el.value).replace(/[^0-9.]/g,'')); return isNaN(n)?NaN:n; }
+  [cons,agg,price].forEach(function(el){ el.addEventListener('blur',function(){ var n=val(el); el.value=isNaN(n)?'':Math.round(n).toLocaleString('en-US'); }); });
+
+  document.querySelectorAll('.q[data-q="capital"] button').forEach(function(btn){
+    btn.setAttribute('aria-pressed','false');
+    btn.addEventListener('click',function(){
+      document.querySelectorAll('.q[data-q="capital"] button').forEach(function(b){b.setAttribute('aria-pressed','false');});
+      btn.setAttribute('aria-pressed','true');
+      capital=btn.getAttribute('data-v');
+      if(out.classList.contains('show')) render();
+    });
+  });
+  document.getElementById('calcBtn').addEventListener('click',render);
+  [cons,agg,rate,price].forEach(function(el){ el.addEventListener('change',function(){ if(out.classList.contains('show')) render(); }); });
+
+  function pathFor(cap){
+    if(cap==='under10') return 'prepare';
+    if(cap==='120plus') return 'buy';
+    if(cap==='25to120') return 'buy-check';
+    return 'lease';
+  }
+
+  var BUY_LIST='<ul>'+
+    '<li>We find and review 5 to 10 properties.</li>'+
+    '<li>We handle the purchase process and help launch the rental.</li>'+
+    '<li class="you">You choose the property.</li>'+
+  '</ul>';
+  var LEASE_LIST='<ul>'+
+    '<li>We help choose a market, review the lease, and set up the rental.</li>'+
+    '<li>You get one-on-one support for six months.</li>'+
+    '<li class="you">You make the landlord calls.</li>'+
+  '</ul>';
+
+  function render(){
+    var c=val(cons), a=val(agg);
+    if(!(c>=0)||!(a>=0)||!capital){ hint.textContent='Enter both plan figures and select your available cash.'; hint.style.color='var(--amber)'; return; }
+    hint.textContent='';
+    var gap=a-c;
+    var r=parseFloat(rate.value), p=val(price)||0;
+    var tax=p*0.75*0.30*r;
+    var v=pathFor(capital), vlabel={prepare:'Build cash first',buy:'Buy your own property',
+      'buy-check':'Buy your own property, cash check',lease:'Start with somebody else\'s property'}[v];
+
+    var html='<div class="kpis">';
+    if(gap>0){
+      html+='<div class="kpi big"><span>Difference between your plan estimates</span><b class="num">'+fmt(gap)+'</b><small>'+fmt(c)+' conservative · '+fmt(a)+' aggressive</small></div>';
+      html+='<p class="calc-note" style="grid-column:1/-1">This difference can include several strategies. Only part of it may come from a short-term rental.</p>';
+    } else {
+      html+='<div class="kpi big"><span>Your two numbers</span><b class="num">'+fmt(c)+' · '+fmt(a)+'</b><small class="warn">Check your plan figures. The aggressive estimate is usually higher.</small></div>';
+    }
+    html+='<div class="kpi tax"><span>Estimated tax savings if you buy</span><b class="num">≈'+fmt(tax)+'</b><small>'+fmt(p)+' × 75% after land × 30% bonus-eligible × '+Math.round(r*100)+'%. Assumes you can use the full deduction; confirm with your CPA.</small></div>';
+    html+='</div>';
+
+    html+='<div class="verdict">';
+    if(v==='buy'){
+      html+='<h3>Buying may be an option.</h3><p>Your selected budget is within the range discussed in the video. We still need to review the property costs and financing with you.</p>'+BUY_LIST;
+    } else if(v==='buy-check'){
+      html+='<h3>Let&#39;s review your budget.</h3><p>Some members buy with less than $120,000. We can look at your financing and property costs to see whether buying is an option.</p>'+BUY_LIST+
+        '<div class="alt">Leasing may be another option if you want to start with less cash.</div>';
+    } else if(v==='lease'){
+      html+='<h3>Leasing may be an option.</h3><p>This is the starting cash range discussed in the video. You would lease with the owner&#39;s permission and earn rental income without owning the property.</p>'+LEASE_LIST;
+    } else {
+      html+='<h3>You may need to build your savings first.</h3><p>The starting range discussed in the video is $10,000 to $25,000 for leasing. We can discuss the costs and what you need to prepare.</p><ul>'+
+        '<li>Keep working through your wealth plan.</li>'+
+        '<li>Set a savings target for startup costs and reserves.</li>'+
+        '<li>Use your existing training to learn how to assess a property.</li>'+
+      '</ul>';
+    }
+    html+='<div class="cta"><a class="btn" href="#book">Book a call</a></div></div>';
+
+    out.innerHTML=html; out.classList.add('show'); empty.style.display='none';
+
+    // prefill the booking route with the answers
+    var q='a1='+encodeURIComponent(CAP_LABEL[capital])+
+      '&a2='+encodeURIComponent(gap>0?fmt(gap):'')+
+      '&a3='+encodeURIComponent(vlabel)+
+      '&a4='+encodeURIComponent(fmt(c)+' / '+fmt(a))+
+      '&utm_source=course&utm_medium=vsl&utm_content='+encodeURIComponent(v);
+    document.querySelectorAll('a.bookbtn').forEach(function(el){ el.href=BOOK+'?'+q; });
+    var frame=document.querySelector('.scheduler iframe');
+    var full=BOOK+'?'+EMBED+'&'+q;
+    frame.setAttribute('data-src',full);
+    if(frame.src) frame.src=full;
+
+    out.scrollIntoView({behavior:'smooth',block:'nearest'});
+  }
+})();
+
+// Load the scheduler embed only when the visitor nears the booking section.
+(function(){
+  var frame=document.querySelector('.scheduler iframe[data-src]');
+  if(!frame) return;
+  function load(){ if(!frame.src){ frame.src=frame.getAttribute('data-src'); } }
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ load(); io.disconnect(); } });
+    },{rootMargin:'600px 0px'});
+    io.observe(frame);
+  } else { load(); }
+})();
+</script>
+
+<footer>
+  <div class="wrap">
+    <p>For Legacy Wealth Blueprint members only. All plan figures, cash-flow estimates, and tax effects on this page are modeled or estimated from delivered member documents and recorded interviews. They are educational examples, not projections of your results, and individual results vary. Bookings are gross revenue, not profit. The calculator uses the numbers you enter from your own plan and the tax rate you pick; tax usability depends on your facts and your CPA.</p>
+    <p>Nothing on this page is tax, legal, lending, or investment advice. Your CPA, attorney, and lender keep authority over your decisions. Written agreements control the exact scope and terms of any service.</p>
+    <p>© Legacy Investing Show</p>
+  </div>
+</footer>
+
+</body>
+</html>
