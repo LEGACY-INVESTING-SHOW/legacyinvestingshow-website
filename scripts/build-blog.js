@@ -610,12 +610,18 @@ function isIndexableBlogPost(post) {
     return !/noindex/i.test(getBlogIndexation(post).robots);
 }
 
+function isListedOnBlogIndex(post) {
+    const fm = post.frontmatter || {};
+    if (fm.hideFromBlogIndex === true || fm.hideFromBlogIndex === true) return false;
+    return isIndexableBlogPost(post);
+}
+
 /**
  * Generate the blog index page
  */
 function generateBlogIndex(posts) {
     // Sort posts by date (newest first)
-    const sortedPosts = posts.filter(isIndexableBlogPost).sort((a, b) => {
+    const sortedPosts = posts.filter(isListedOnBlogIndex).sort((a, b) => {
         return new Date(b.frontmatter.date) - new Date(a.frontmatter.date);
     });
 
@@ -874,7 +880,7 @@ function generateBlogIndex(posts) {
  * Generate crawlable category archive pages so category hubs exist without JS.
  */
 function generateCategoryArchives(posts) {
-    const sortedPosts = posts.filter(isIndexableBlogPost).sort((a, b) => {
+    const sortedPosts = posts.filter(isListedOnBlogIndex).sort((a, b) => {
         return new Date(b.frontmatter.date) - new Date(a.frontmatter.date);
     });
     const archiveDir = path.join(OUTPUT_DIR, 'category');

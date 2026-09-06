@@ -280,6 +280,7 @@ module.exports = {
             return countWords(getRawContent(data));
         },
         keywords: (data) => toKeywordString(data),
-        dateModified: (data) => data.modifiedDate || data.updatedAt || data.date
+        dateModified: (data) => data.modifiedDate || data.updatedAt || data.date,
+        listedOnBlogIndex: (data) => data.hideFromBlogIndex !== true && data.hideFromBlogIndex !== true
     }
 };

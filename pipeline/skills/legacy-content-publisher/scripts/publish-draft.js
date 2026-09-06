@@ -16,6 +16,11 @@ if (!draftFile || !slug || !targetDir) {
     process.exit(1);
 }
 
+if (process.env.BLOGEO_ALLOW_DIRECT_PUBLISH !== '1') {
+    console.error('Direct publish is disabled. Create a BlogEO ticket instead of copying to content/blog. Set BLOGEO_ALLOW_DIRECT_PUBLISH=1 only for an emergency publisher override.');
+    process.exit(1);
+}
+
 const target = path.join(targetDir, `${slug}.md`);
 
 if (fs.existsSync(target)) {

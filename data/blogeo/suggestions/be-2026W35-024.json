@@ -1,0 +1,29 @@
+{
+  "id": "be-2026W35-024",
+  "status": "open",
+  "createdAt": "2026-08-24T17:26:43.311Z",
+  "week": "2026-W35",
+  "kind": "content-push",
+  "lever": "ctr",
+  "autoApply": false,
+  "url": "https://www.legacyinvestingshow.com/tools",
+  "path": "/tools",
+  "sourcePath": "tools/index.html",
+  "reason": "CTR leak on a non-markdown surface (tools/index.html).",
+  "suggestedAction": "Edit the calcs2 repo. Do not patch tools/*.html as source of truth.",
+  "gscBefore": {
+    "clicks": 0,
+    "impressions": 1018,
+    "position": 7.24,
+    "ctr": 0
+  },
+  "gscSitewideBefore": {
+    "clicks": 875,
+    "impressions": 25237,
+    "ctr": 0.034671315925030706,
+    "position": 23.782906050639937,
+    "startDate": "2026-05-23",
+    "endDate": "2026-08-22"
+  },
+  "contentHash": "61e6926307ba854aecdb223fc0ef96f99c91cd3d0f7022768bb4a303f67b8c1d"
+}

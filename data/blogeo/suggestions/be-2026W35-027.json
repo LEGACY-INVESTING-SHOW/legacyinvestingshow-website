@@ -1,0 +1,29 @@
+{
+  "id": "be-2026W35-027",
+  "status": "open",
+  "createdAt": "2026-08-24T17:26:43.311Z",
+  "week": "2026-W35",
+  "kind": "content-push",
+  "lever": "ctr",
+  "autoApply": false,
+  "url": "https://www.legacyinvestingshow.com/tax-strategies",
+  "path": "/tax-strategies",
+  "sourcePath": "tax-strategies/index.html",
+  "reason": "CTR leak on a non-markdown surface (tax-strategies/index.html).",
+  "suggestedAction": "Edit the JSON/HTML source of truth. apply-edit will not rewrite this surface.",
+  "gscBefore": {
+    "clicks": 1,
+    "impressions": 1011,
+    "position": 7.25,
+    "ctr": 0.0009891196834817012
+  },
+  "gscSitewideBefore": {
+    "clicks": 875,
+    "impressions": 25237,
+    "ctr": 0.034671315925030706,
+    "position": 23.782906050639937,
+    "startDate": "2026-05-23",
+    "endDate": "2026-08-22"
+  },
+  "contentHash": "40823b3e0bbd312fe998593cd3095296cd1fd66c1724f3c6ef97649794f373fd"
+}

@@ -73,6 +73,38 @@ Secondary focus area:
 - The site emphasizes practical execution, not generic inspiration.
 - Decision pages, tools, and worksheets are core assets.
 
+<!-- blogeo-resources:start -->
+## Catalog representatives (generated)
+
+Regenerated from the BlogEO catalog. Hand-edit the intro above this marker, not this list.
+
+- [Build Wealth Beyond A Paycheck | Legacy Investing Show](https://www.legacyinvestingshow.com/)
+- [Preston Seo Review: Who He Is, What He Teaches, and Why Students Trust Him](https://www.legacyinvestingshow.com/blog/preston-seo-review)
+- [Legacy Investing Show Review: Real Student Results Inside](https://www.legacyinvestingshow.com/blog/legacy-investing-show-review)
+- [About Preston Seo | Legacy Investing Show](https://www.legacyinvestingshow.com/about)
+- [Tax Strategies for Investors | Legacy Investing Show](https://www.legacyinvestingshow.com/tax-strategies)
+- [7 Money Moves Your CPA Never Mentioned for $200K+ Earners](https://www.legacyinvestingshow.com/blog/money-moves-cpa-never-mentioned-high-earners)
+- [Home purchase cash to close calculator · Legacy Investing Calculators](https://www.legacyinvestingshow.com/tools/home-purchase-cash-to-close)
+- [Investing Blog & Case Studies | Legacy Investing Show](https://www.legacyinvestingshow.com/blog)
+- [Edge-Case Comparison Guides | Legacy Investing Show](https://www.legacyinvestingshow.com/compare)
+- [721 UPREIT vs DST for Aging Landlords Exiting Active Management | Legacy Investing Show](https://www.legacyinvestingshow.com/compare/721-upreit-vs-dst-aging-landlords)
+- [Augusta Rule vs Home Office Deduction for S-Corp Owners | Legacy Investing Show](https://www.legacyinvestingshow.com/compare/augusta-rule-vs-home-office-deduction-s-corp)
+- [Backdoor Roth vs Taxable Brokerage for High-Income Earners | Legacy Investing Show](https://www.legacyinvestingshow.com/compare/backdoor-roth-vs-taxable-brokerage-high-income-earners)
+- [Capital Gains Harvesting vs Roth Conversion for Early Retirees | Legacy Investing Show](https://www.legacyinvestingshow.com/compare/capital-gains-harvesting-vs-roth-conversion-early-retirees)
+- [Cost Segregation vs STR Loophole for W-2 Professionals with Passive Loss Limits | Legacy Investing Show](https://www.legacyinvestingshow.com/compare/cost-segregation-vs-str-loophole-w2-passive-loss)
+- [Installment Sale vs Deferred Sales Trust for a Small Business Exit | Legacy Investing Show](https://www.legacyinvestingshow.com/compare/installment-sale-vs-deferred-sales-trust-small-business-exit)
+- [Mark-to-Market Election vs Capital Gains for Active Traders | Legacy Investing Show](https://www.legacyinvestingshow.com/compare/mark-to-market-vs-capital-gains-active-traders)
+- [MFJ vs MFS for High-Income Couples with Student Loans | Legacy Investing Show](https://www.legacyinvestingshow.com/compare/mfj-vs-mfs-high-income-student-loans)
+- [Paying Off Your Mortgage Early vs Investing the Difference | Legacy Investing Show](https://www.legacyinvestingshow.com/compare/mortgage-payoff-vs-investing)
+- [PriceLabs Rule-Based Pricing vs PMS Native Pricing for Multi-Property Operators | Legacy Investing Show](https://www.legacyinvestingshow.com/compare/pricelabs-vs-pms-native-pricing-multi-property)
+- [QCD First vs Roth Conversion First to Manage IRMAA | Legacy Investing Show](https://www.legacyinvestingshow.com/compare/qcd-first-vs-roth-conversion-first-irmaa)
+- [S-Corp Election vs Sole Proprietorship for High-Income Consultants | Legacy Investing Show](https://www.legacyinvestingshow.com/compare/s-corp-election-vs-sole-proprietorship-high-income-consultants)
+- [Safe Harbor vs Annualized Income Method for Uneven 1099 Income | Legacy Investing Show](https://www.legacyinvestingshow.com/compare/safe-harbor-vs-annualized-income-1099)
+- [Solo 401(k) Loan vs HELOC for Down Payment Funding | Legacy Investing Show](https://www.legacyinvestingshow.com/compare/solo-401k-loan-vs-heloc-down-payment)
+- [Tax Strategy Resource Maps by City, Persona, and Comparison | Legacy Investing Show](https://www.legacyinvestingshow.com/programmatic-pages)
+
+<!-- blogeo-resources:end -->
+
 ## Citation Format
 
 Legacy Investing Show. "[Title]." legacyinvestingshow.com, [Date], [URL]

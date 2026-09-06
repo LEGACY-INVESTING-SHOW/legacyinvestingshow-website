@@ -1,0 +1,29 @@
+{
+  "id": "be-2026W35-025",
+  "status": "open",
+  "createdAt": "2026-08-24T17:26:43.311Z",
+  "week": "2026-W35",
+  "kind": "content-push",
+  "lever": "ctr",
+  "autoApply": false,
+  "url": "https://www.legacyinvestingshow.com/compare",
+  "path": "/compare",
+  "sourcePath": "compare/index.html",
+  "reason": "CTR leak on a non-markdown surface (compare/index.html).",
+  "suggestedAction": "Edit the JSON/HTML source of truth. apply-edit will not rewrite this surface.",
+  "gscBefore": {
+    "clicks": 0,
+    "impressions": 1012,
+    "position": 7.24,
+    "ctr": 0
+  },
+  "gscSitewideBefore": {
+    "clicks": 875,
+    "impressions": 25237,
+    "ctr": 0.034671315925030706,
+    "position": 23.782906050639937,
+    "startDate": "2026-05-23",
+    "endDate": "2026-08-22"
+  },
+  "contentHash": "740bebbd8740a6f941c0dc79bdffc441dbe1ad2ce2ea4323ca9e9bc8506c5dc5"
+}

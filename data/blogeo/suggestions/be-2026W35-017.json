@@ -1,0 +1,30 @@
+{
+  "id": "be-2026W35-017",
+  "status": "open",
+  "createdAt": "2026-08-24T17:26:43.310Z",
+  "week": "2026-W35",
+  "kind": "dead-link",
+  "lever": "hygiene",
+  "autoApply": true,
+  "url": "https://www.legacyinvestingshow.com/blog/nimat-wealth-plan",
+  "path": "/blog/nimat-wealth-plan",
+  "sourcePath": "content/blog/nimat-wealth-plan.md",
+  "hrefFrom": "/retirement",
+  "hrefTo": "/topics/retirement",
+  "reason": "/retirement redirects to /topics/retirement",
+  "gscBefore": {
+    "clicks": 0,
+    "impressions": 0,
+    "position": 0,
+    "ctr": 0
+  },
+  "gscSitewideBefore": {
+    "clicks": 875,
+    "impressions": 25237,
+    "ctr": 0.034671315925030706,
+    "position": 23.782906050639937,
+    "startDate": "2026-05-23",
+    "endDate": "2026-08-22"
+  },
+  "contentHash": "124fd7c31c2a6ab3d377ce3b869522e62cf0a84d0a2f27b844042cb0a40c0bd0"
+}

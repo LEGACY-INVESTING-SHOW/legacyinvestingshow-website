@@ -1,0 +1,5 @@
+{
+  "taxYear": 2026,
+  "staleTokens": ["2024", "2025 tax year", "TY2025"],
+  "notes": "Flag visible 2025 in titles/descriptions of indexable pages during 2026+. Do not auto-rewrite body copy."
+}

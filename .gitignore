@@ -51,3 +51,7 @@ cms/_site/
 # yarn.lock
 .vercel
 .env*.local
+
+# BlogEO ticket locks (keep folder, ignore live locks)
+data/blogeo/locks/*.json
+!data/blogeo/locks/.gitkeep

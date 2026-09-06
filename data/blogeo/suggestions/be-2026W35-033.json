@@ -1,0 +1,29 @@
+{
+  "id": "be-2026W35-033",
+  "status": "open",
+  "createdAt": "2026-08-24T17:26:43.311Z",
+  "week": "2026-W35",
+  "kind": "content-push",
+  "lever": "rank",
+  "autoApply": false,
+  "url": "https://www.legacyinvestingshow.com/blog/legacy-investing-show-review",
+  "path": "/blog/legacy-investing-show-review",
+  "sourcePath": "content/blog/legacy-investing-show-review.md",
+  "reason": "Position 14.31 with 345 impressions. Title-only will not close this.",
+  "suggestedAction": "Human Edit only. Content push, not an Approve card.",
+  "gscBefore": {
+    "clicks": 5,
+    "impressions": 345,
+    "position": 14.31,
+    "ctr": 0.014492753623188406
+  },
+  "gscSitewideBefore": {
+    "clicks": 875,
+    "impressions": 25237,
+    "ctr": 0.034671315925030706,
+    "position": 23.782906050639937,
+    "startDate": "2026-05-23",
+    "endDate": "2026-08-22"
+  },
+  "contentHash": "27a746ea6af51e1bec0a9059d32828efa7a4049a1ce17544082251e4c2965fd7"
+}

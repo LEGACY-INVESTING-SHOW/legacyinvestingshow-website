@@ -180,4 +180,11 @@ function main() {
     console.log(`Blog indexation target: ${indexable} indexable post(s), ${noindexed} noindex URL(s) including category archives.`);
 }
 
-main();
+if (require.main === module) {
+    main();
+}
+
+module.exports = {
+    readPolicy,
+    getDecision,
+};

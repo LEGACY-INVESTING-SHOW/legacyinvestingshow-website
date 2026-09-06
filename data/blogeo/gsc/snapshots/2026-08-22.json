@@ -1,0 +1,8039 @@
+{
+  "ingestedAt": "2026-08-24T17:26:42.346Z",
+  "sourceDir": "data/blogeo/gsc-imports/2026-08-24",
+  "week": "2026-W35",
+  "filters": {
+    "Search type": "Web",
+    "Date": "Last 3 months"
+  },
+  "windowNote": "Last 3 months",
+  "comparable28d": false,
+  "sitewide": {
+    "clicks": 875,
+    "impressions": 25237,
+    "ctr": 0.034671315925030706,
+    "position": 23.782906050639937,
+    "startDate": "2026-05-23",
+    "endDate": "2026-08-22"
+  },
+  "pages": [
+    {
+      "url": "https://www.legacyinvestingshow.com/",
+      "path": "/",
+      "clicks": 693,
+      "impressions": 11240,
+      "ctr": 0.0617,
+      "position": 9.19
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/preston-seo-review",
+      "path": "/blog/preston-seo-review",
+      "clicks": 171,
+      "impressions": 8599,
+      "ctr": 0.0199,
+      "position": 16.32
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/legacy-investing-show-review",
+      "path": "/blog/legacy-investing-show-review",
+      "clicks": 5,
+      "impressions": 345,
+      "ctr": 0.014499999999999999,
+      "position": 14.31
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/about",
+      "path": "/about",
+      "clicks": 1,
+      "impressions": 1011,
+      "ctr": 0.001,
+      "position": 7.25
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tax-strategies/",
+      "path": "/tax-strategies",
+      "clicks": 1,
+      "impressions": 1011,
+      "ctr": 0.001,
+      "position": 7.25
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/cost-segregation-payback-calculator",
+      "path": "/tools/cost-segregation-payback-calculator",
+      "clicks": 1,
+      "impressions": 312,
+      "ctr": 0.0032,
+      "position": 64.28
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/augusta-rule-meeting-log-and-rent-calculator",
+      "path": "/tools/augusta-rule-meeting-log-and-rent-calculator",
+      "clicks": 1,
+      "impressions": 119,
+      "ctr": 0.0084,
+      "position": 21.03
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/money-moves-cpa-never-mentioned-high-earners",
+      "path": "/blog/money-moves-cpa-never-mentioned-high-earners",
+      "clicks": 1,
+      "impressions": 68,
+      "ctr": 0.0147,
+      "position": 12.49
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/tax-planning-for-high-earners",
+      "path": "/blog/tax-planning-for-high-earners",
+      "clicks": 1,
+      "impressions": 35,
+      "ctr": 0.0286,
+      "position": 16.06
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/home-purchase-cash-to-close",
+      "path": "/tools/home-purchase-cash-to-close",
+      "clicks": 1,
+      "impressions": 5,
+      "ctr": 0.2,
+      "position": 54.4
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/how-much-is-renters-insurance-cost-guide",
+      "path": "/blog/how-much-is-renters-insurance-cost-guide",
+      "clicks": 0,
+      "impressions": 1077,
+      "ctr": 0,
+      "position": 79.15
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/compare/",
+      "path": "/compare",
+      "clicks": 0,
+      "impressions": 1011,
+      "ctr": 0,
+      "position": 7.25
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/",
+      "path": "/tools",
+      "clicks": 0,
+      "impressions": 1011,
+      "ctr": 0,
+      "position": 7.25
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/",
+      "path": "/blog",
+      "clicks": 0,
+      "impressions": 644,
+      "ctr": 0,
+      "position": 7.13
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/worksheets/",
+      "path": "/worksheets",
+      "clicks": 0,
+      "impressions": 644,
+      "ctr": 0,
+      "position": 7.13
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/best-tax-planning-software-for-cpas",
+      "path": "/blog/best-tax-planning-software-for-cpas",
+      "clicks": 0,
+      "impressions": 501,
+      "ctr": 0,
+      "position": 44.69
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/best-tax-planning-software-for-financial-advisors",
+      "path": "/blog/best-tax-planning-software-for-financial-advisors",
+      "clicks": 0,
+      "impressions": 354,
+      "ctr": 0,
+      "position": 57.47
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/401k-rollover-guide",
+      "path": "/blog/401k-rollover-guide",
+      "clicks": 0,
+      "impressions": 304,
+      "ctr": 0,
+      "position": 61.43
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/2026-mileage-reimbursement-rates",
+      "path": "/blog/2026-mileage-reimbursement-rates",
+      "clicks": 0,
+      "impressions": 242,
+      "ctr": 0,
+      "position": 74.87
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/best-tax-planning-software-for-retirees",
+      "path": "/blog/best-tax-planning-software-for-retirees",
+      "clicks": 0,
+      "impressions": 233,
+      "ctr": 0,
+      "position": 49.69
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/how-to-pay-off-a-loan-early",
+      "path": "/blog/how-to-pay-off-a-loan-early",
+      "clicks": 0,
+      "impressions": 208,
+      "ctr": 0,
+      "position": 68.16
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/best-side-hustles-no-money-full-time-job",
+      "path": "/blog/best-side-hustles-no-money-full-time-job",
+      "clicks": 0,
+      "impressions": 157,
+      "ctr": 0,
+      "position": 21.68
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/best-airbnb-automation-tools-for-small-operators",
+      "path": "/blog/best-airbnb-automation-tools-for-small-operators",
+      "clicks": 0,
+      "impressions": 146,
+      "ctr": 0,
+      "position": 28.77
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/topics/airbnb-arbitrage",
+      "path": "/topics/airbnb-arbitrage",
+      "clicks": 0,
+      "impressions": 135,
+      "ctr": 0,
+      "position": 28.42
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/real-estate-professional-status-hours-tracker",
+      "path": "/tools/real-estate-professional-status-hours-tracker",
+      "clicks": 0,
+      "impressions": 129,
+      "ctr": 0,
+      "position": 47.13
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/estimated-tax-safe-harbor-planner",
+      "path": "/tools/estimated-tax-safe-harbor-planner",
+      "clicks": 0,
+      "impressions": 110,
+      "ctr": 0,
+      "position": 49.52
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/how-to-calculate-home-equity",
+      "path": "/blog/how-to-calculate-home-equity",
+      "clicks": 0,
+      "impressions": 107,
+      "ctr": 0,
+      "position": 80.47
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/couple-17500-secured-one-week",
+      "path": "/blog/couple-17500-secured-one-week",
+      "clicks": 0,
+      "impressions": 100,
+      "ctr": 0,
+      "position": 7.15
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/kiana-replaced-finance-job-airbnb",
+      "path": "/blog/kiana-replaced-finance-job-airbnb",
+      "clicks": 0,
+      "impressions": 78,
+      "ctr": 0,
+      "position": 9.95
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/how-to-estimate-home-contents-value-for-insurance",
+      "path": "/blog/how-to-estimate-home-contents-value-for-insurance",
+      "clicks": 0,
+      "impressions": 72,
+      "ctr": 0,
+      "position": 89.67
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/interest-only-payment",
+      "path": "/tools/interest-only-payment",
+      "clicks": 0,
+      "impressions": 66,
+      "ctr": 0,
+      "position": 76.64
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-california",
+      "path": "/programmatic-pages/insurance/renters-california",
+      "clicks": 0,
+      "impressions": 66,
+      "ctr": 0,
+      "position": 84.06
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/irmaa-headroom-roth-conversion-planner",
+      "path": "/tools/irmaa-headroom-roth-conversion-planner",
+      "clicks": 0,
+      "impressions": 54,
+      "ctr": 0,
+      "position": 16.67
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/early-loan-payoff",
+      "path": "/tools/early-loan-payoff",
+      "clicks": 0,
+      "impressions": 51,
+      "ctr": 0,
+      "position": 76.65
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-arizona",
+      "path": "/programmatic-pages/insurance/renters-arizona",
+      "clicks": 0,
+      "impressions": 49,
+      "ctr": 0,
+      "position": 71.57
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/mileage-reimbursement",
+      "path": "/tools/mileage-reimbursement",
+      "clicks": 0,
+      "impressions": 49,
+      "ctr": 0,
+      "position": 73.14
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-utah",
+      "path": "/programmatic-pages/insurance/renters-utah",
+      "clicks": 0,
+      "impressions": 48,
+      "ctr": 0,
+      "position": 75.27
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-new-jersey",
+      "path": "/programmatic-pages/insurance/renters-new-jersey",
+      "clicks": 0,
+      "impressions": 48,
+      "ctr": 0,
+      "position": 75.62
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-michigan",
+      "path": "/programmatic-pages/insurance/renters-michigan",
+      "clicks": 0,
+      "impressions": 48,
+      "ctr": 0,
+      "position": 78.79
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-washington",
+      "path": "/programmatic-pages/insurance/renters-washington",
+      "clicks": 0,
+      "impressions": 46,
+      "ctr": 0,
+      "position": 70.7
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-by-state",
+      "path": "/programmatic-pages/insurance/renters-by-state",
+      "clicks": 0,
+      "impressions": 46,
+      "ctr": 0,
+      "position": 75.04
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-massachusetts",
+      "path": "/programmatic-pages/insurance/renters-massachusetts",
+      "clicks": 0,
+      "impressions": 44,
+      "ctr": 0,
+      "position": 76.5
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-texas",
+      "path": "/programmatic-pages/insurance/renters-texas",
+      "clicks": 0,
+      "impressions": 44,
+      "ctr": 0,
+      "position": 81.91
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tax-strategies/short-term-rental-loophole",
+      "path": "/tax-strategies/short-term-rental-loophole",
+      "clicks": 0,
+      "impressions": 43,
+      "ctr": 0,
+      "position": 21.84
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-north-carolina",
+      "path": "/programmatic-pages/insurance/renters-north-carolina",
+      "clicks": 0,
+      "impressions": 41,
+      "ctr": 0,
+      "position": 77.17
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-iowa",
+      "path": "/programmatic-pages/insurance/renters-iowa",
+      "clicks": 0,
+      "impressions": 40,
+      "ctr": 0,
+      "position": 77.97
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-new-mexico",
+      "path": "/programmatic-pages/insurance/renters-new-mexico",
+      "clicks": 0,
+      "impressions": 37,
+      "ctr": 0,
+      "position": 30.24
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-new-york",
+      "path": "/programmatic-pages/insurance/renters-new-york",
+      "clicks": 0,
+      "impressions": 37,
+      "ctr": 0,
+      "position": 77.95
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/best-real-estate-model-beginners-2024",
+      "path": "/blog/best-real-estate-model-beginners-2024",
+      "clicks": 0,
+      "impressions": 36,
+      "ctr": 0,
+      "position": 10.5
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-virginia",
+      "path": "/programmatic-pages/insurance/renters-virginia",
+      "clicks": 0,
+      "impressions": 36,
+      "ctr": 0,
+      "position": 74.42
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/how-much-to-set-aside-for-self-employment-tax",
+      "path": "/blog/how-much-to-set-aside-for-self-employment-tax",
+      "clicks": 0,
+      "impressions": 35,
+      "ctr": 0,
+      "position": 63.63
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/compare/backdoor-roth-vs-taxable-brokerage-high-income-earners",
+      "path": "/compare/backdoor-roth-vs-taxable-brokerage-high-income-earners",
+      "clicks": 0,
+      "impressions": 34,
+      "ctr": 0,
+      "position": 29.5
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/inflation-purchasing-power",
+      "path": "/tools/inflation-purchasing-power",
+      "clicks": 0,
+      "impressions": 34,
+      "ctr": 0,
+      "position": 65.68
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/loan-amortization-schedule-explained",
+      "path": "/blog/loan-amortization-schedule-explained",
+      "clicks": 0,
+      "impressions": 34,
+      "ctr": 0,
+      "position": 66.68
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/loan-to-value-ratio",
+      "path": "/tools/loan-to-value-ratio",
+      "clicks": 0,
+      "impressions": 34,
+      "ctr": 0,
+      "position": 87.94
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/line-of-credit-vs-term-loan",
+      "path": "/blog/line-of-credit-vs-term-loan",
+      "clicks": 0,
+      "impressions": 33,
+      "ctr": 0,
+      "position": 72.7
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/faq-review",
+      "path": "/blog/faq-review",
+      "clicks": 0,
+      "impressions": 31,
+      "ctr": 0,
+      "position": 5.71
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/marginal-vs-effective-tax-rate",
+      "path": "/blog/marginal-vs-effective-tax-rate",
+      "clicks": 0,
+      "impressions": 30,
+      "ctr": 0,
+      "position": 59.83
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/small-business-insurance-cost-guide",
+      "path": "/blog/small-business-insurance-cost-guide",
+      "clicks": 0,
+      "impressions": 30,
+      "ctr": 0,
+      "position": 69.33
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-illinois",
+      "path": "/programmatic-pages/insurance/renters-illinois",
+      "clicks": 0,
+      "impressions": 30,
+      "ctr": 0,
+      "position": 80.7
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/roommate-rent-split",
+      "path": "/tools/roommate-rent-split",
+      "clicks": 0,
+      "impressions": 29,
+      "ctr": 0,
+      "position": 56.34
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-ohio",
+      "path": "/programmatic-pages/insurance/renters-ohio",
+      "clicks": 0,
+      "impressions": 27,
+      "ctr": 0,
+      "position": 79.7
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tax-strategies/rental-property-depreciation",
+      "path": "/tax-strategies/rental-property-depreciation",
+      "clicks": 0,
+      "impressions": 26,
+      "ctr": 0,
+      "position": 4.04
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/employer-payroll-cost",
+      "path": "/tools/employer-payroll-cost",
+      "clicks": 0,
+      "impressions": 26,
+      "ctr": 0,
+      "position": 67.73
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/debt-avalanche-vs-snowball-calculator",
+      "path": "/blog/debt-avalanche-vs-snowball-calculator",
+      "clicks": 0,
+      "impressions": 25,
+      "ctr": 0,
+      "position": 10.2
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/best-airbnb-markets-2026-how-to-evaluate-a-city",
+      "path": "/blog/best-airbnb-markets-2026-how-to-evaluate-a-city",
+      "clicks": 0,
+      "impressions": 25,
+      "ctr": 0,
+      "position": 17.2
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-wisconsin",
+      "path": "/programmatic-pages/insurance/renters-wisconsin",
+      "clicks": 0,
+      "impressions": 24,
+      "ctr": 0,
+      "position": 63.42
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/high-deductible-vs-low-deductible-insurance",
+      "path": "/blog/high-deductible-vs-low-deductible-insurance",
+      "clicks": 0,
+      "impressions": 23,
+      "ctr": 0,
+      "position": 63.78
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-minnesota",
+      "path": "/programmatic-pages/insurance/renters-minnesota",
+      "clicks": 0,
+      "impressions": 23,
+      "ctr": 0,
+      "position": 73.61
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/employer-payroll-cost-guide",
+      "path": "/blog/employer-payroll-cost-guide",
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 15.71
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-connecticut",
+      "path": "/programmatic-pages/insurance/renters-connecticut",
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 81.67
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/emergency-fund-how-many-months-is-enough",
+      "path": "/blog/emergency-fund-how-many-months-is-enough",
+      "clicks": 0,
+      "impressions": 20,
+      "ctr": 0,
+      "position": 70.8
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-idaho",
+      "path": "/programmatic-pages/insurance/renters-idaho",
+      "clicks": 0,
+      "impressions": 20,
+      "ctr": 0,
+      "position": 78.35
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-louisiana",
+      "path": "/programmatic-pages/insurance/renters-louisiana",
+      "clicks": 0,
+      "impressions": 20,
+      "ctr": 0,
+      "position": 79.65
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/personal-loan-payment-guide",
+      "path": "/blog/personal-loan-payment-guide",
+      "clicks": 0,
+      "impressions": 19,
+      "ctr": 0,
+      "position": 61.05
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-hawaii",
+      "path": "/programmatic-pages/insurance/renters-hawaii",
+      "clicks": 0,
+      "impressions": 19,
+      "ctr": 0,
+      "position": 69.21
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-maryland",
+      "path": "/programmatic-pages/insurance/renters-maryland",
+      "clicks": 0,
+      "impressions": 19,
+      "ctr": 0,
+      "position": 71.42
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tax-strategies/opportunity-zones",
+      "path": "/tax-strategies/opportunity-zones",
+      "clicks": 0,
+      "impressions": 18,
+      "ctr": 0,
+      "position": 15.56
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/pay-period-converter",
+      "path": "/tools/pay-period-converter",
+      "clicks": 0,
+      "impressions": 18,
+      "ctr": 0,
+      "position": 67.06
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-wyoming",
+      "path": "/programmatic-pages/insurance/renters-wyoming",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 60.81
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-pennsylvania",
+      "path": "/programmatic-pages/insurance/renters-pennsylvania",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 76
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/topics/business-structures",
+      "path": "/topics/business-structures",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 16.27
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/bank-account-fee-comparison",
+      "path": "/tools/bank-account-fee-comparison",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 38.73
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-georgia",
+      "path": "/programmatic-pages/insurance/renters-georgia",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 76.93
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/diana-wealth-plan",
+      "path": "/blog/diana-wealth-plan",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 3.79
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/backyard-rv-3k-month-airbnb",
+      "path": "/blog/backyard-rv-3k-month-airbnb",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 6.07
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/how-to-convince-landlords-for-airbnb-arbitrage",
+      "path": "/blog/how-to-convince-landlords-for-airbnb-arbitrage",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 14.08
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-oklahoma",
+      "path": "/programmatic-pages/insurance/renters-oklahoma",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 54.31
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tax-strategies/donor-advised-fund",
+      "path": "/tax-strategies/donor-advised-fund",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 6.67
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/retirement-withdrawal-strategy-software",
+      "path": "/blog/retirement-withdrawal-strategy-software",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 12.25
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-nebraska",
+      "path": "/programmatic-pages/insurance/renters-nebraska",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 75.75
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/cities/charlotte-nc",
+      "path": "/programmatic-pages/cities/charlotte-nc",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 4.36
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/airbnb-startup-costs-capital-breakdown",
+      "path": "/blog/airbnb-startup-costs-capital-breakdown",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-maine",
+      "path": "/programmatic-pages/insurance/renters-maine",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 57.64
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-north-dakota",
+      "path": "/programmatic-pages/insurance/renters-north-dakota",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 71
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/short-term-rental-investing-tax-implications",
+      "path": "/blog/short-term-rental-investing-tax-implications",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 3.67
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/how-to-scale-an-airbnb-arbitrage-business",
+      "path": "/blog/how-to-scale-an-airbnb-arbitrage-business",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 23
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/personal-savings-rate",
+      "path": "/tools/personal-savings-rate",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 75.78
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-florida",
+      "path": "/programmatic-pages/insurance/renters-florida",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 77.11
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tax-strategies/installment-sale",
+      "path": "/tax-strategies/installment-sale",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 1.38
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tax-strategies/bonus-depreciation",
+      "path": "/tax-strategies/bonus-depreciation",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 16.62
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/raise-or-pay-cut-impact",
+      "path": "/tools/raise-or-pay-cut-impact",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 20.38
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/capital-gains-tax-what-you-owe-when-you-sell",
+      "path": "/blog/capital-gains-tax-what-you-owe-when-you-sell",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 76.88
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools",
+      "path": "/tools",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 5.43
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/student-loan-payoff-vs-negotiated-settlements",
+      "path": "/blog/student-loan-payoff-vs-negotiated-settlements",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 30
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/personal-loan-comparison",
+      "path": "/tools/personal-loan-comparison",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 65.14
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-alaska",
+      "path": "/programmatic-pages/insurance/renters-alaska",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 74.43
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tax-strategies/for/airbnb-hosts",
+      "path": "/tax-strategies/for/airbnb-hosts",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 19.8
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/estate-tax-planning-for-beginners",
+      "path": "/blog/estate-tax-planning-for-beginners",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 68.8
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/topics/investing",
+      "path": "/topics/investing",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 3.75
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/registered-agent-pricing-comparison",
+      "path": "/blog/registered-agent-pricing-comparison",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 4.75
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/airbnb-pricing-strategy-for-real-estate-investors",
+      "path": "/blog/airbnb-pricing-strategy-for-real-estate-investors",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 5.25
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/personas/self-employed",
+      "path": "/programmatic-pages/personas/self-employed",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 5.25
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/s-corp-election-vs-partnership",
+      "path": "/blog/s-corp-election-vs-partnership",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 6.75
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/series-llc-vs-trust-structure",
+      "path": "/blog/series-llc-vs-trust-structure",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/investment-fee-drag-guide",
+      "path": "/blog/investment-fee-drag-guide",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 28
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/rental-property-cash-flow-guide",
+      "path": "/blog/rental-property-cash-flow-guide",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 39
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/airbnb-arbitrage-roi",
+      "path": "/tools/airbnb-arbitrage-roi",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 40.5
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/take-home-pay-what-your-salary-actually-pays-you",
+      "path": "/blog/take-home-pay-what-your-salary-actually-pays-you",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 57
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/gross-to-net-pay-estimate",
+      "path": "/tools/gross-to-net-pay-estimate",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 75.25
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/debt-to-income-ratio-guide",
+      "path": "/blog/debt-to-income-ratio-guide",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 80.5
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/assets/images/hero-image.jpg",
+      "path": "/assets/images/hero-image.jpg",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/how-much-rent-can-i-afford",
+      "path": "/blog/how-much-rent-can-i-afford",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 7.67
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/retirement-runway-how-long-will-your-savings-last",
+      "path": "/blog/retirement-runway-how-long-will-your-savings-last",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/topics",
+      "path": "/topics",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/invoice-withholding-tax",
+      "path": "/tools/invoice-withholding-tax",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 22.33
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/holiday-pay-accrual",
+      "path": "/tools/holiday-pay-accrual",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 71
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/self-employment-tax-reserve",
+      "path": "/tools/self-employment-tax-reserve",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 2.5
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/retirement/traditional-vs-roth-401k",
+      "path": "/retirement/traditional-vs-roth-401k",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 3.5
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/how-much-does-auto-insurance-cost",
+      "path": "/blog/how-much-does-auto-insurance-cost",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 4.5
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/airbnb-arbitrage-mistakes-that-kill-profit",
+      "path": "/blog/airbnb-arbitrage-mistakes-that-kill-profit",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 5.5
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog",
+      "path": "/blog",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/88k-tax-savings-cpa-missed-case-study",
+      "path": "/blog/88k-tax-savings-cpa-missed-case-study",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7.5
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/how-to-calculate-net-worth",
+      "path": "/blog/how-to-calculate-net-worth",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 30.5
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/maximum-home-office-deduction-2026",
+      "path": "/blog/maximum-home-office-deduction-2026",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 46
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/rent-increase-impact",
+      "path": "/tools/rent-increase-impact",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 56.5
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/mortgage-refinance-break-even",
+      "path": "/tools/mortgage-refinance-break-even",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 57
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/insurance-coverage-gap-guide",
+      "path": "/blog/insurance-coverage-gap-guide",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 62
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/fixed-term-deposit-growth",
+      "path": "/tools/fixed-term-deposit-growth",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 87
+    },
+    {
+      "url": "https://legacyinvestingshow.com/",
+      "path": "/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/compare",
+      "path": "/compare",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/tax-strategy-tax-implications",
+      "path": "/blog/tax-strategy-tax-implications",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/str-purchase-analysis",
+      "path": "/tools/str-purchase-analysis",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/abigail-wealth-plan",
+      "path": "/blog/abigail-wealth-plan",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/assets/images/og-blog.jpg",
+      "path": "/assets/images/og-blog.jpg",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/home-maintenance-reserve",
+      "path": "/tools/home-maintenance-reserve",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/irregular-income-budget",
+      "path": "/tools/irregular-income-budget",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/is-pet-insurance-worth-it-cost-comparison",
+      "path": "/blog/is-pet-insurance-worth-it-cost-comparison",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/deductible-premium-break-even",
+      "path": "/tools/deductible-premium-break-even",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/compound-interest-savings-guide",
+      "path": "/blog/compound-interest-savings-guide",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/debt-snowball-vs-avalanche",
+      "path": "/blog/debt-snowball-vs-avalanche",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/what-does-an-insurance-claim-cost-out-of-pocket",
+      "path": "/blog/what-does-an-insurance-claim-cost-out-of-pocket",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 46
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/sinking-fund-contribution",
+      "path": "/tools/sinking-fund-contribution",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 53
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/mortgage-overpayment-vs-index-investing",
+      "path": "/tools/mortgage-overpayment-vs-index-investing",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 60
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/blog/salary-to-hourly-pay-conversion",
+      "path": "/blog/salary-to-hourly-pay-conversion",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 61
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-colorado",
+      "path": "/programmatic-pages/insurance/renters-colorado",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 64
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/payment-based-borrowing-limit",
+      "path": "/tools/payment-based-borrowing-limit",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 67
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-kansas",
+      "path": "/programmatic-pages/insurance/renters-kansas",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 74
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-rhode-island",
+      "path": "/programmatic-pages/insurance/renters-rhode-island",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 75
+    },
+    {
+      "url": "https://www.legacyinvestingshow.com/tools/monthly-budget-planner",
+      "path": "/tools/monthly-budget-planner",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 90
+    }
+  ],
+  "queries": [
+    {
+      "query": "preston seo",
+      "clicks": 190,
+      "impressions": 6917,
+      "ctr": 0.0275,
+      "position": 10.41
+    },
+    {
+      "query": "legacy investing show",
+      "clicks": 139,
+      "impressions": 564,
+      "ctr": 0.2465,
+      "position": 3.43
+    },
+    {
+      "query": "preston seo reviews",
+      "clicks": 72,
+      "impressions": 1313,
+      "ctr": 0.0548,
+      "position": 6.91
+    },
+    {
+      "query": "the legacy investing show",
+      "clicks": 55,
+      "impressions": 246,
+      "ctr": 0.2236,
+      "position": 3.61
+    },
+    {
+      "query": "preston seo legacy investing",
+      "clicks": 30,
+      "impressions": 93,
+      "ctr": 0.3226,
+      "position": 3.48
+    },
+    {
+      "query": "legacy investing show llc",
+      "clicks": 25,
+      "impressions": 120,
+      "ctr": 0.20829999999999999,
+      "position": 2.94
+    },
+    {
+      "query": "preston seo legacy wealth blueprint reviews",
+      "clicks": 11,
+      "impressions": 161,
+      "ctr": 0.0683,
+      "position": 5.09
+    },
+    {
+      "query": "legacy wealth blueprint preston seo",
+      "clicks": 11,
+      "impressions": 77,
+      "ctr": 0.1429,
+      "position": 2.57
+    },
+    {
+      "query": "legacy investing show reviews",
+      "clicks": 9,
+      "impressions": 218,
+      "ctr": 0.041299999999999996,
+      "position": 10.21
+    },
+    {
+      "query": "legacyinvestingshow",
+      "clicks": 9,
+      "impressions": 19,
+      "ctr": 0.47369999999999995,
+      "position": 3.26
+    },
+    {
+      "query": "is preston seo legit",
+      "clicks": 6,
+      "impressions": 192,
+      "ctr": 0.031200000000000002,
+      "position": 7.39
+    },
+    {
+      "query": "preston seo legacy investing reviews",
+      "clicks": 6,
+      "impressions": 82,
+      "ctr": 0.0732,
+      "position": 5.89
+    },
+    {
+      "query": "preston seo legacy investing show",
+      "clicks": 6,
+      "impressions": 67,
+      "ctr": 0.08960000000000001,
+      "position": 4.82
+    },
+    {
+      "query": "manage money 101 preston seo reviews",
+      "clicks": 6,
+      "impressions": 59,
+      "ctr": 0.1017,
+      "position": 9.24
+    },
+    {
+      "query": "legacy investment show",
+      "clicks": 5,
+      "impressions": 26,
+      "ctr": 0.1923,
+      "position": 6.69
+    },
+    {
+      "query": "legacy investing preston seo",
+      "clicks": 4,
+      "impressions": 13,
+      "ctr": 0.3077,
+      "position": 1.08
+    },
+    {
+      "query": "preston seo legacy wealth blueprint cost",
+      "clicks": 3,
+      "impressions": 110,
+      "ctr": 0.0273,
+      "position": 8.72
+    },
+    {
+      "query": "who is preston seo",
+      "clicks": 3,
+      "impressions": 60,
+      "ctr": 0.05,
+      "position": 7.8
+    },
+    {
+      "query": "preston seo biography",
+      "clicks": 3,
+      "impressions": 16,
+      "ctr": 0.1875,
+      "position": 4.81
+    },
+    {
+      "query": "the legacy investing show reviews",
+      "clicks": 2,
+      "impressions": 117,
+      "ctr": 0.0171,
+      "position": 10.09
+    },
+    {
+      "query": "legacy wealth blueprint preston seo reviews",
+      "clicks": 2,
+      "impressions": 39,
+      "ctr": 0.0513,
+      "position": 4.72
+    },
+    {
+      "query": "preston legacy investing",
+      "clicks": 2,
+      "impressions": 33,
+      "ctr": 0.060599999999999994,
+      "position": 2
+    },
+    {
+      "query": "preston seo course",
+      "clicks": 1,
+      "impressions": 84,
+      "ctr": 0.011899999999999999,
+      "position": 12.39
+    },
+    {
+      "query": "preston seo wife",
+      "clicks": 1,
+      "impressions": 46,
+      "ctr": 0.0217,
+      "position": 9.02
+    },
+    {
+      "query": "preston seo tax strategy",
+      "clicks": 1,
+      "impressions": 14,
+      "ctr": 0.07139999999999999,
+      "position": 13.64
+    },
+    {
+      "query": "preston legacy wealth blueprint",
+      "clicks": 1,
+      "impressions": 2,
+      "ctr": 0.5,
+      "position": 4
+    },
+    {
+      "query": "seo preston",
+      "clicks": 0,
+      "impressions": 2670,
+      "ctr": 0,
+      "position": 18.03
+    },
+    {
+      "query": "mark preston seo",
+      "clicks": 0,
+      "impressions": 1181,
+      "ctr": 0,
+      "position": 26.99
+    },
+    {
+      "query": "tax planning software",
+      "clicks": 0,
+      "impressions": 199,
+      "ctr": 0,
+      "position": 49.27
+    },
+    {
+      "query": "princeton seo",
+      "clicks": 0,
+      "impressions": 188,
+      "ctr": 0,
+      "position": 65.15
+    },
+    {
+      "query": "401k rollover for beginners",
+      "clicks": 0,
+      "impressions": 182,
+      "ctr": 0,
+      "position": 67.01
+    },
+    {
+      "query": "cost segregation calculator",
+      "clicks": 0,
+      "impressions": 151,
+      "ctr": 0,
+      "position": 71.38
+    },
+    {
+      "query": "prescott seo",
+      "clicks": 0,
+      "impressions": 124,
+      "ctr": 0,
+      "position": 68.09
+    },
+    {
+      "query": "best tax planning software",
+      "clicks": 0,
+      "impressions": 98,
+      "ctr": 0,
+      "position": 63.74
+    },
+    {
+      "query": "legacy investing",
+      "clicks": 0,
+      "impressions": 86,
+      "ctr": 0,
+      "position": 14.83
+    },
+    {
+      "query": "real estate professional hours tracker",
+      "clicks": 0,
+      "impressions": 83,
+      "ctr": 0,
+      "position": 63.16
+    },
+    {
+      "query": "how much is renters insurance",
+      "clicks": 0,
+      "impressions": 77,
+      "ctr": 0,
+      "position": 82
+    },
+    {
+      "query": "airbnb automation tools",
+      "clicks": 0,
+      "impressions": 75,
+      "ctr": 0,
+      "position": 34.01
+    },
+    {
+      "query": "personal finance masterclass by preston seo",
+      "clicks": 0,
+      "impressions": 73,
+      "ctr": 0,
+      "position": 7.74
+    },
+    {
+      "query": "average cost of renters insurance in texas",
+      "clicks": 0,
+      "impressions": 59,
+      "ctr": 0,
+      "position": 83.37
+    },
+    {
+      "query": "401k rollover guides",
+      "clicks": 0,
+      "impressions": 53,
+      "ctr": 0,
+      "position": 49.57
+    },
+    {
+      "query": "cost segregation study calculator",
+      "clicks": 0,
+      "impressions": 51,
+      "ctr": 0,
+      "position": 66.37
+    },
+    {
+      "query": "cost of renters insurance",
+      "clicks": 0,
+      "impressions": 50,
+      "ctr": 0,
+      "position": 80.1
+    },
+    {
+      "query": "renters insurance cost",
+      "clicks": 0,
+      "impressions": 47,
+      "ctr": 0,
+      "position": 83.38
+    },
+    {
+      "query": "pay off car loan early calculator",
+      "clicks": 0,
+      "impressions": 45,
+      "ctr": 0,
+      "position": 65.11
+    },
+    {
+      "query": "tax planning software for cpas",
+      "clicks": 0,
+      "impressions": 43,
+      "ctr": 0,
+      "position": 37.53
+    },
+    {
+      "query": "retirement tax planning software",
+      "clicks": 0,
+      "impressions": 38,
+      "ctr": 0,
+      "position": 54.58
+    },
+    {
+      "query": "augusta rule calculator",
+      "clicks": 0,
+      "impressions": 37,
+      "ctr": 0,
+      "position": 16.95
+    },
+    {
+      "query": "renters insurance new mexico",
+      "clicks": 0,
+      "impressions": 37,
+      "ctr": 0,
+      "position": 30.24
+    },
+    {
+      "query": "how much does renters insurance cost per month",
+      "clicks": 0,
+      "impressions": 37,
+      "ctr": 0,
+      "position": 80.22
+    },
+    {
+      "query": "average cost of renters insurance",
+      "clicks": 0,
+      "impressions": 37,
+      "ctr": 0,
+      "position": 84.08
+    },
+    {
+      "query": "how much does renters insurance cost",
+      "clicks": 0,
+      "impressions": 36,
+      "ctr": 0,
+      "position": 84.11
+    },
+    {
+      "query": "preston seo net worth",
+      "clicks": 0,
+      "impressions": 35,
+      "ctr": 0,
+      "position": 14.06
+    },
+    {
+      "query": "renters insurance rates by state",
+      "clicks": 0,
+      "impressions": 34,
+      "ctr": 0,
+      "position": 70.21
+    },
+    {
+      "query": "average price for renters insurance",
+      "clicks": 0,
+      "impressions": 34,
+      "ctr": 0,
+      "position": 78.97
+    },
+    {
+      "query": "renters insurance rates",
+      "clicks": 0,
+      "impressions": 33,
+      "ctr": 0,
+      "position": 63.76
+    },
+    {
+      "query": "airbnb leverage",
+      "clicks": 0,
+      "impressions": 32,
+      "ctr": 0,
+      "position": 25.66
+    },
+    {
+      "query": "best tax planning software for financial advisors",
+      "clicks": 0,
+      "impressions": 32,
+      "ctr": 0,
+      "position": 48.5
+    },
+    {
+      "query": "average renters insurance cost",
+      "clicks": 0,
+      "impressions": 31,
+      "ctr": 0,
+      "position": 76.94
+    },
+    {
+      "query": "how much is renters insurance per month",
+      "clicks": 0,
+      "impressions": 31,
+      "ctr": 0,
+      "position": 83.68
+    },
+    {
+      "query": "preston seo consultant",
+      "clicks": 0,
+      "impressions": 30,
+      "ctr": 0,
+      "position": 31.33
+    },
+    {
+      "query": "renters insurance price",
+      "clicks": 0,
+      "impressions": 30,
+      "ctr": 0,
+      "position": 74.4
+    },
+    {
+      "query": "average renters insurance",
+      "clicks": 0,
+      "impressions": 30,
+      "ctr": 0,
+      "position": 76.47
+    },
+    {
+      "query": "renter insurance cost",
+      "clicks": 0,
+      "impressions": 30,
+      "ctr": 0,
+      "position": 79.2
+    },
+    {
+      "query": "preston seo masterclass reviews",
+      "clicks": 0,
+      "impressions": 29,
+      "ctr": 0,
+      "position": 7.14
+    },
+    {
+      "query": "renters insurance average cost",
+      "clicks": 0,
+      "impressions": 29,
+      "ctr": 0,
+      "position": 77.03
+    },
+    {
+      "query": "what does renters insurance cost",
+      "clicks": 0,
+      "impressions": 29,
+      "ctr": 0,
+      "position": 88
+    },
+    {
+      "query": "tax planning software for retirement",
+      "clicks": 0,
+      "impressions": 28,
+      "ctr": 0,
+      "position": 59.04
+    },
+    {
+      "query": "how much is renters insurance for a house",
+      "clicks": 0,
+      "impressions": 28,
+      "ctr": 0,
+      "position": 75.61
+    },
+    {
+      "query": "how much should renters insurance cost",
+      "clicks": 0,
+      "impressions": 28,
+      "ctr": 0,
+      "position": 88.18
+    },
+    {
+      "query": "preston seo agency",
+      "clicks": 0,
+      "impressions": 27,
+      "ctr": 0,
+      "position": 42.85
+    },
+    {
+      "query": "average price of renters insurance wa",
+      "clicks": 0,
+      "impressions": 27,
+      "ctr": 0,
+      "position": 70.07
+    },
+    {
+      "query": "how much does renters insurance cost in michigan",
+      "clicks": 0,
+      "impressions": 27,
+      "ctr": 0,
+      "position": 78.33
+    },
+    {
+      "query": "average renters insurance coverage",
+      "clicks": 0,
+      "impressions": 27,
+      "ctr": 0,
+      "position": 88.74
+    },
+    {
+      "query": "how much is renters insurance in washington state",
+      "clicks": 0,
+      "impressions": 26,
+      "ctr": 0,
+      "position": 73.23
+    },
+    {
+      "query": "renters insurance prices",
+      "clicks": 0,
+      "impressions": 25,
+      "ctr": 0,
+      "position": 63.44
+    },
+    {
+      "query": "augusta rule fmv calculator",
+      "clicks": 0,
+      "impressions": 24,
+      "ctr": 0,
+      "position": 16.38
+    },
+    {
+      "query": "average renters insurance in arizona",
+      "clicks": 0,
+      "impressions": 24,
+      "ctr": 0,
+      "position": 72.04
+    },
+    {
+      "query": "how much is renters insurance a month",
+      "clicks": 0,
+      "impressions": 24,
+      "ctr": 0,
+      "position": 72.25
+    },
+    {
+      "query": "how much is renters insurance for an apartment",
+      "clicks": 0,
+      "impressions": 24,
+      "ctr": 0,
+      "position": 76.17
+    },
+    {
+      "query": "renters insurance utah cost",
+      "clicks": 0,
+      "impressions": 24,
+      "ctr": 0,
+      "position": 76.67
+    },
+    {
+      "query": "renters insurance massachusetts cost",
+      "clicks": 0,
+      "impressions": 24,
+      "ctr": 0,
+      "position": 79.38
+    },
+    {
+      "query": "cost segregation real estate calculator",
+      "clicks": 0,
+      "impressions": 23,
+      "ctr": 0,
+      "position": 67.3
+    },
+    {
+      "query": "renters insurance rate",
+      "clicks": 0,
+      "impressions": 23,
+      "ctr": 0,
+      "position": 74.96
+    },
+    {
+      "query": "rental insurance costs",
+      "clicks": 0,
+      "impressions": 23,
+      "ctr": 0,
+      "position": 79.09
+    },
+    {
+      "query": "what is the average cost of renters insurance",
+      "clicks": 0,
+      "impressions": 23,
+      "ctr": 0,
+      "position": 82.65
+    },
+    {
+      "query": "renters insurance wisconsin cost",
+      "clicks": 0,
+      "impressions": 22,
+      "ctr": 0,
+      "position": 62.23
+    },
+    {
+      "query": "average renters insurance prices",
+      "clicks": 0,
+      "impressions": 22,
+      "ctr": 0,
+      "position": 74.09
+    },
+    {
+      "query": "how much is renters insurance in utah",
+      "clicks": 0,
+      "impressions": 22,
+      "ctr": 0,
+      "position": 75.23
+    },
+    {
+      "query": "how much is renters insurance for a one bedroom apartment",
+      "clicks": 0,
+      "impressions": 22,
+      "ctr": 0,
+      "position": 78.64
+    },
+    {
+      "query": "financial planning software for advisors",
+      "clicks": 0,
+      "impressions": 22,
+      "ctr": 0,
+      "position": 81.23
+    },
+    {
+      "query": "renters insurance iowa cost",
+      "clicks": 0,
+      "impressions": 22,
+      "ctr": 0,
+      "position": 81.68
+    },
+    {
+      "query": "average cost of renters insurance in arizona",
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 70.33
+    },
+    {
+      "query": "average apartment insurance cost",
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 78.62
+    },
+    {
+      "query": "how much is renters insurance in michigan",
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 79.38
+    },
+    {
+      "query": "renters insurance cost per month",
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 81.86
+    },
+    {
+      "query": "average cost of renters insurance in massachusetts",
+      "clicks": 0,
+      "impressions": 20,
+      "ctr": 0,
+      "position": 73.05
+    },
+    {
+      "query": "average cost of renters insurance in virginia",
+      "clicks": 0,
+      "impressions": 20,
+      "ctr": 0,
+      "position": 73.65
+    },
+    {
+      "query": "how much is renters insurance in new york",
+      "clicks": 0,
+      "impressions": 20,
+      "ctr": 0,
+      "position": 77.7
+    },
+    {
+      "query": "renters insurance cost boise idaho",
+      "clicks": 0,
+      "impressions": 20,
+      "ctr": 0,
+      "position": 78.35
+    },
+    {
+      "query": "louisiana renters insurance cost",
+      "clicks": 0,
+      "impressions": 20,
+      "ctr": 0,
+      "position": 79.65
+    },
+    {
+      "query": "average renters insurance california",
+      "clicks": 0,
+      "impressions": 20,
+      "ctr": 0,
+      "position": 81.5
+    },
+    {
+      "query": "how much is renters insurance in texas",
+      "clicks": 0,
+      "impressions": 20,
+      "ctr": 0,
+      "position": 84.5
+    },
+    {
+      "query": "how much is renters insurance in hawaii",
+      "clicks": 0,
+      "impressions": 19,
+      "ctr": 0,
+      "position": 69.21
+    },
+    {
+      "query": "how much is renters insurance in maryland",
+      "clicks": 0,
+      "impressions": 19,
+      "ctr": 0,
+      "position": 71.42
+    },
+    {
+      "query": "how renters insurance is priced",
+      "clicks": 0,
+      "impressions": 19,
+      "ctr": 0,
+      "position": 81.47
+    },
+    {
+      "query": "preston seo legacy investing show reviews",
+      "clicks": 0,
+      "impressions": 18,
+      "ctr": 0,
+      "position": 7.28
+    },
+    {
+      "query": "tax planning software for cpa",
+      "clicks": 0,
+      "impressions": 18,
+      "ctr": 0,
+      "position": 39.44
+    },
+    {
+      "query": "tax planning tools",
+      "clicks": 0,
+      "impressions": 18,
+      "ctr": 0,
+      "position": 47.83
+    },
+    {
+      "query": "irs mileage rate 2026",
+      "clicks": 0,
+      "impressions": 18,
+      "ctr": 0,
+      "position": 65.56
+    },
+    {
+      "query": "how much is renters insurance in iowa",
+      "clicks": 0,
+      "impressions": 18,
+      "ctr": 0,
+      "position": 73.44
+    },
+    {
+      "query": "best tax planning solutions for cpas",
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 58.18
+    },
+    {
+      "query": "tenant insurance cost",
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 70.94
+    },
+    {
+      "query": "how much is renters insurance in nj",
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 73.41
+    },
+    {
+      "query": "renters insurance nj cost",
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 78.18
+    },
+    {
+      "query": "the legacy investing show reviews complaints",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 10.56
+    },
+    {
+      "query": "financial planning software tax modeling",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 42.31
+    },
+    {
+      "query": "cost seg calculator",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 69.69
+    },
+    {
+      "query": "how much is renters insurance in north carolina",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 74.06
+    },
+    {
+      "query": "how much is renters insurance in california",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 84.75
+    },
+    {
+      "query": "legacy investing show llc reviews",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 10.27
+    },
+    {
+      "query": "tax strategy software",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 48.07
+    },
+    {
+      "query": "best airbnb automation",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 48.73
+    },
+    {
+      "query": "average renters insurance cost in georgia",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 76.93
+    },
+    {
+      "query": "how to calculate home equity",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 77.73
+    },
+    {
+      "query": "how much is renters insurance in ohio",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 79.07
+    },
+    {
+      "query": "how much is renters insurance in nyc",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 79.2
+    },
+    {
+      "query": "how much is renters insurance in illinois",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 80
+    },
+    {
+      "query": "average renters insurance illinois",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 81.4
+    },
+    {
+      "query": "average cost of renters insurance indiana",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 81.8
+    },
+    {
+      "query": "tax planning software for financial advisors",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 48
+    },
+    {
+      "query": "how much is renters insurance in wyoming",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 60.5
+    },
+    {
+      "query": "retirement tax planning software for individuals",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 69
+    },
+    {
+      "query": "average renters insurance in nj",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 75.21
+    },
+    {
+      "query": "how much is renters insurance in va",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 75.71
+    },
+    {
+      "query": "best tax planning software for accountants",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 76.79
+    },
+    {
+      "query": "financial planning software for financial advisors",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 81.36
+    },
+    {
+      "query": "interest only loan calculator",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 84.29
+    },
+    {
+      "query": "renters insurance cost california",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 87.71
+    },
+    {
+      "query": "preston seo reviews tax",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 10.62
+    },
+    {
+      "query": "how much is renters insurance in oklahoma",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 54.31
+    },
+    {
+      "query": "irs mileage deduction rate 2026",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 56
+    },
+    {
+      "query": "financial advisor accounting software",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 57.92
+    },
+    {
+      "query": "best tax software for retirees",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 61.77
+    },
+    {
+      "query": "cost segregation bonus depreciation calculator",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 66.15
+    },
+    {
+      "query": "how much is renters insurance in mn",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 74
+    },
+    {
+      "query": "tax planning software for retirement strategies",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 78.31
+    },
+    {
+      "query": "loan payoff early calculator",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 79.54
+    },
+    {
+      "query": "accounting software for financial advisors",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 80.46
+    },
+    {
+      "query": "renters insurance cost north carolina",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 81.31
+    },
+    {
+      "query": "preston seo company",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 47.58
+    },
+    {
+      "query": "how much is renters insurance in nebraska",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 75.75
+    },
+    {
+      "query": "how much is renters insurance ohio",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 80.5
+    },
+    {
+      "query": "calculate home equity",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 84.67
+    },
+    {
+      "query": "tax planning software for accountants",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 45.36
+    },
+    {
+      "query": "cost segregation benefit calculator",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 69.55
+    },
+    {
+      "query": "safe harbor rules for estimated taxes",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 73.09
+    },
+    {
+      "query": "how to calculate business mileage reimbursement",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 78.73
+    },
+    {
+      "query": "how much is renters insurance in ct",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 81.73
+    },
+    {
+      "query": "how much is renters insurance in ca",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 84
+    },
+    {
+      "query": "best tax planning software year",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 28.2
+    },
+    {
+      "query": "airbnb arbitrage script",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 32.7
+    },
+    {
+      "query": "2022 tax planning software",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 45.6
+    },
+    {
+      "query": "best roth conversion software",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 61.7
+    },
+    {
+      "query": "term loan vs line of credit",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 63.1
+    },
+    {
+      "query": "renters insurance mn cost",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 73.1
+    },
+    {
+      "query": "mileage rate 2026",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 76.8
+    },
+    {
+      "query": "best retirement tax planning software",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 78.8
+    },
+    {
+      "query": "renters insurance ct cost",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 81.6
+    },
+    {
+      "query": "airbnb arbitrage roadmap review",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 19.33
+    },
+    {
+      "query": "is legacy investing show legit",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 20.67
+    },
+    {
+      "query": "tax modeling software",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 47.22
+    },
+    {
+      "query": "tax planner software",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 49.78
+    },
+    {
+      "query": "maine renters insurance",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 53.67
+    },
+    {
+      "query": "average renters insurance deductible",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 76.22
+    },
+    {
+      "query": "how much is renters insurance in nc",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 76.22
+    },
+    {
+      "query": "how much is renters insurance in pa",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 78
+    },
+    {
+      "query": "irs mileage rate 2026 business",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 81.67
+    },
+    {
+      "query": "legacy investing reviews",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 9.62
+    },
+    {
+      "query": "year tax planning software",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 46.75
+    },
+    {
+      "query": "safe harbor tax and payroll",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 53.38
+    },
+    {
+      "query": "tax and financial planning software",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 60.5
+    },
+    {
+      "query": "irc 469 short-term rental exception",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 63.38
+    },
+    {
+      "query": "renters insurance by state",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 68.25
+    },
+    {
+      "query": "calculating home equity",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 84.38
+    },
+    {
+      "query": "how do you compare true cost of an loc vs a term loan when draws are \nintermittent, and which lenders/products are typically recommended for \nborrowers who want flexibility?",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 86.38
+    },
+    {
+      "query": "contents valuation",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 94
+    },
+    {
+      "query": "side hustles with no money",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 27.14
+    },
+    {
+      "query": "augusta rule meeting agenda template",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 45.71
+    },
+    {
+      "query": "tax planning software for advisors",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 48.43
+    },
+    {
+      "query": "financial and tax planning software",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 56.43
+    },
+    {
+      "query": "renters insurance quotes north dakota",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 69.86
+    },
+    {
+      "query": "irs guidance on rollover 401k",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 71
+    },
+    {
+      "query": "renters insurance quotes alaska",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 74.43
+    },
+    {
+      "query": "florida renters insurance cost",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 77
+    },
+    {
+      "query": "financial planning software for ria",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 77.71
+    },
+    {
+      "query": "2026 business mileage rate",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 79.14
+    },
+    {
+      "query": "irs gov mileage rate 2026",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 85
+    },
+    {
+      "query": "irs business mileage reimbursement rate 2026",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 88.14
+    },
+    {
+      "query": "legacy investing show preston seo",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 3.33
+    },
+    {
+      "query": "preston seo reddit",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 12.83
+    },
+    {
+      "query": "investing show",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 15.33
+    },
+    {
+      "query": "tax scenario software",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 43
+    },
+    {
+      "query": "income tax planning software",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 49.67
+    },
+    {
+      "query": "tax advisory software",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 51.17
+    },
+    {
+      "query": "pay off early car loan calculator",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 58.67
+    },
+    {
+      "query": "employer payroll taxes calculator",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 67.67
+    },
+    {
+      "query": "how many months emergency fund",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 73.33
+    },
+    {
+      "query": "irs allowable mileage rate 2026",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 73.5
+    },
+    {
+      "query": "how to do airbnb arbitrage",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 76.33
+    },
+    {
+      "query": "small business insurance cost",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 77
+    },
+    {
+      "query": "irs mileage rate for gig workers 2026",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 84.17
+    },
+    {
+      "query": "hard money loan repayment schedule",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 89
+    },
+    {
+      "query": "estimated tax payments safe harbor",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 93.67
+    },
+    {
+      "query": "thelegacyinvestingshow",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 23.2
+    },
+    {
+      "query": "managemoney101",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 25.4
+    },
+    {
+      "query": "safe harbor calculation",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 33.8
+    },
+    {
+      "query": "tax scenario modeling tool",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 38
+    },
+    {
+      "query": "tax planning software for financial planners",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 52.4
+    },
+    {
+      "query": "safe harbor tax calculator",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 53
+    },
+    {
+      "query": "financial planning software advisors",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 60.8
+    },
+    {
+      "query": "financial planning software requirements",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 65.2
+    },
+    {
+      "query": "roth conversion software",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 67.2
+    },
+    {
+      "query": "best tax planning software for high net worth clients",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 68.8
+    },
+    {
+      "query": "calculate savings rate",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 78.6
+    },
+    {
+      "query": "irs gas mileage rate 2026",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 78.6
+    },
+    {
+      "query": "free cost segregation calculator",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 80.2
+    },
+    {
+      "query": "business mileage rate 2026",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 81.4
+    },
+    {
+      "query": "how to calculate home equity loan",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 81.8
+    },
+    {
+      "query": "loan to value ratio calculator",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 84.8
+    },
+    {
+      "query": "calculating home equity loan",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 86.4
+    },
+    {
+      "query": "mileage reimbursement",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 90.2
+    },
+    {
+      "query": "how to calculate cost segregation",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 96.2
+    },
+    {
+      "query": "preston legacy",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "query": "legacy investing show, llc",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 9.75
+    },
+    {
+      "query": "legacy investing show reddit",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 11.75
+    },
+    {
+      "query": "the legacy investment show",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 13.25
+    },
+    {
+      "query": "side hustle with no money",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 26.25
+    },
+    {
+      "query": "banking fees comparison",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 32.25
+    },
+    {
+      "query": "bank fees comparison",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 33
+    },
+    {
+      "query": "cpa tax planning software",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 37
+    },
+    {
+      "query": "tax planning strategy software",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 43
+    },
+    {
+      "query": "small business insurance rates",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 47.5
+    },
+    {
+      "query": "ria compliance software comparison 2026",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 47.75
+    },
+    {
+      "query": "ria tax planning insights",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 52.75
+    },
+    {
+      "query": "small business insurance rate",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 59.5
+    },
+    {
+      "query": "car loan extra payment",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 64.75
+    },
+    {
+      "query": "tax projection tools for advisors",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 65.25
+    },
+    {
+      "query": "early loan payoff",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 65.5
+    },
+    {
+      "query": "interst only calculator",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 71.75
+    },
+    {
+      "query": "payment schedule",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 74.75
+    },
+    {
+      "query": "safe harbor for tax estimates",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 75.75
+    },
+    {
+      "query": "interest only calculator",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 76.5
+    },
+    {
+      "query": "best brokerage for backdoor roth ira",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 77
+    },
+    {
+      "query": "small business insurance costs",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 78.75
+    },
+    {
+      "query": "calculate early repayment of loan",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 79.25
+    },
+    {
+      "query": "pay off loan early calculator",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 81
+    },
+    {
+      "query": "letter of credit vs line of credit",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 84
+    },
+    {
+      "query": "pay loan off early calculator",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 86
+    },
+    {
+      "query": "safe harbor for estimated tax payments",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 86.75
+    },
+    {
+      "query": "preston seo scam",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 17.33
+    },
+    {
+      "query": "side hustles that require no money",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 28.33
+    },
+    {
+      "query": "tax planning software 2019",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 35
+    },
+    {
+      "query": "augusta rule meeting minutes template",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 35.33
+    },
+    {
+      "query": "airbnb arbritage",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 40.33
+    },
+    {
+      "query": "ria compliance software comparison 2025 2026",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 47.67
+    },
+    {
+      "query": "roth conversion planning software",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 55
+    },
+    {
+      "query": "personal loan origination fee calculator",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 59.33
+    },
+    {
+      "query": "additional payment calculator auto",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 61.33
+    },
+    {
+      "query": "pay off auto loan early calculator",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 63.67
+    },
+    {
+      "query": "extra payment calculator car",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 66
+    },
+    {
+      "query": "irs standard mileage rate 2026",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 68
+    },
+    {
+      "query": "shane seo",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 69.67
+    },
+    {
+      "query": "augusta rule sample documentation",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 70
+    },
+    {
+      "query": "employer burden calculator",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 70
+    },
+    {
+      "query": "top ria compliance software 2026",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 70.33
+    },
+    {
+      "query": "apartment renters insurance cost",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 70.67
+    },
+    {
+      "query": "when will my loan be paid off with extra payments",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 72
+    },
+    {
+      "query": "auto loan with extra payment",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 72.33
+    },
+    {
+      "query": "average cost of renters insurance in philadelphia",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 74
+    },
+    {
+      "query": "augusta rule fmv calculation",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 74.67
+    },
+    {
+      "query": "renters insurance cost philadelphia",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 74.67
+    },
+    {
+      "query": "+financial +planning +software +for +advisors +2018",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 76
+    },
+    {
+      "query": "bc mileage rate 2026",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 76.67
+    },
+    {
+      "query": "how many months of emergency fund should i have",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 77.67
+    },
+    {
+      "query": "ria compliance software comparison 2025 or 2026",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 78
+    },
+    {
+      "query": "interest only payment calculator",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 79.33
+    },
+    {
+      "query": "cost of renters insurance per month",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 80.33
+    },
+    {
+      "query": "how do you calculate equity",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 80.33
+    },
+    {
+      "query": "2026 pov mileage rate",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 80.67
+    },
+    {
+      "query": "cost of small business insurance",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 80.67
+    },
+    {
+      "query": "interest only mortgage calculator",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 85.67
+    },
+    {
+      "query": "how much is renters insurance per month for an apartment",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 86.33
+    },
+    {
+      "query": "ltv calculator",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 96.67
+    },
+    {
+      "query": "preston seo legit",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "query": "managemoney101 com reviews complaints",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 9.5
+    },
+    {
+      "query": "preston seo reviews reddit",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "query": "what software helps cpas track irs section 7520 rate changes?",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "query": "legacy investor",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 11.5
+    },
+    {
+      "query": "best markets for airbnb rental arbitrage 2026",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 14.5
+    },
+    {
+      "query": "managemoney101 reviews",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 16
+    },
+    {
+      "query": "mega backdoor roth vs taxable brokerage",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 27.5
+    },
+    {
+      "query": "ria tax management software",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 28.5
+    },
+    {
+      "query": "tax planning software reviews",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 29.5
+    },
+    {
+      "query": "ria tax software",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 35.5
+    },
+    {
+      "query": "tax optimization advisor software",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 39.5
+    },
+    {
+      "query": "student loans negotiating payoff",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 40.5
+    },
+    {
+      "query": "best tax preparation software for retirees",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 41
+    },
+    {
+      "query": "legacy investing sc",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 41
+    },
+    {
+      "query": "arbitrage airbnb",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 44.5
+    },
+    {
+      "query": "rent split calculator",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 45.5
+    },
+    {
+      "query": "backdoor roth ira vs brokerage account",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 47
+    },
+    {
+      "query": "rent splitter",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 48
+    },
+    {
+      "query": "tax planning strategies software",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 48
+    },
+    {
+      "query": "rolling 401k financing",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 49.5
+    },
+    {
+      "query": "wealth management tax modeling software",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 50
+    },
+    {
+      "query": "tax impact modeling for advisors",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 50.5
+    },
+    {
+      "query": "tax planning software for retirees",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 51
+    },
+    {
+      "query": "splitwise rent calculator",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 52.5
+    },
+    {
+      "query": "calculate rent increase over time",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 56.5
+    },
+    {
+      "query": "car loan early payoff",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 57.5
+    },
+    {
+      "query": "mileage reimbursement calculator",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 57.5
+    },
+    {
+      "query": "advisor revenue contribution tracking",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 58
+    },
+    {
+      "query": "self employment tax rate 2026",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 59.5
+    },
+    {
+      "query": "cra business mileage rate 2026",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 60
+    },
+    {
+      "query": "paying extra on car loan",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 60
+    },
+    {
+      "query": "irs mileage calculator 2026",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 61
+    },
+    {
+      "query": "north dakota renters insurance",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 61
+    },
+    {
+      "query": "best ria compliance software 2026",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 61.5
+    },
+    {
+      "query": "marginal vs effective tax rates",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 61.5
+    },
+    {
+      "query": "calculate early payoff",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 62
+    },
+    {
+      "query": "how to read amortization schedule",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 62.5
+    },
+    {
+      "query": "amortization schedule straight line",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 63
+    },
+    {
+      "query": "how much to put aside for taxes self employed",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 63.5
+    },
+    {
+      "query": "how much to set aside for taxes self employed",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 63.5
+    },
+    {
+      "query": "tax projection tool for financial planners",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 63.5
+    },
+    {
+      "query": "early payoff",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 64.5
+    },
+    {
+      "query": "employer tax calculator",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 64.5
+    },
+    {
+      "query": "how to start airbnb arbitrage",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 64.5
+    },
+    {
+      "query": "roth conversion calculator with irmaa",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 64.5
+    },
+    {
+      "query": "average vs effective tax rate",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 65
+    },
+    {
+      "query": "cra mileage rate 2026 medical",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 65
+    },
+    {
+      "query": "extra auto payment calculator",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 65
+    },
+    {
+      "query": "how much tax should i set aside for self employment",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 65
+    },
+    {
+      "query": "tax mitigation product for cpas",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 65.5
+    },
+    {
+      "query": "wealth management tax optimization software",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 65.5
+    },
+    {
+      "query": "car payoff early calculator",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 66
+    },
+    {
+      "query": "paying off car loan early calculator",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 66
+    },
+    {
+      "query": "accelerated depreciation calculator",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 66.5
+    },
+    {
+      "query": "loan vs line of credit interest rates",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 67
+    },
+    {
+      "query": "early car payoff calculator",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 68
+    },
+    {
+      "query": "fixed term loan vs line of credit",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 69.5
+    },
+    {
+      "query": "how much is renter insurance for an apartment",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 69.5
+    },
+    {
+      "query": "is 500 deductible better than 1000",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 70
+    },
+    {
+      "query": "employer paid payroll tax calculator",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 70.5
+    },
+    {
+      "query": "mileage reimbursement calculator 2026",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 70.5
+    },
+    {
+      "query": "how to calculate paying off loan early",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 71
+    },
+    {
+      "query": "personal loan payment options",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 71
+    },
+    {
+      "query": "2026 cap gains",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 71.5
+    },
+    {
+      "query": "fuel reimbursement rate 2026",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 71.5
+    },
+    {
+      "query": "how many months of emergency fund",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 72
+    },
+    {
+      "query": "opportunity zone investing strategies",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 72
+    },
+    {
+      "query": "take the airbnb rental arbitrage route",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 72
+    },
+    {
+      "query": "2020 tax planning software",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 72.5
+    },
+    {
+      "query": "early loan payoff calculator",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 72.5
+    },
+    {
+      "query": "estimated renters insurance",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 72.5
+    },
+    {
+      "query": "personal loan payments",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 72.5
+    },
+    {
+      "query": "401 k rollover strategies",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 73
+    },
+    {
+      "query": "calculate early payoff loan",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 73
+    },
+    {
+      "query": "2026 irs standard mileage rate 72.5 cents per mile",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 74
+    },
+    {
+      "query": "what is airbnb arbitrage",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 74
+    },
+    {
+      "query": "average renters insurance cost per month",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 74.5
+    },
+    {
+      "query": "mileage rate reimbursement 2026",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 74.5
+    },
+    {
+      "query": "extra car payment",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 75
+    },
+    {
+      "query": "how much is renters insurance in az",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 75.5
+    },
+    {
+      "query": "renters insurance quotes maine",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 75.5
+    },
+    {
+      "query": "auto loan with extra payments",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 77
+    },
+    {
+      "query": "interest calculator interest only",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 78
+    },
+    {
+      "query": "safe harbor for estimated taxes",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 78
+    },
+    {
+      "query": "apartment insurance cost",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 78.5
+    },
+    {
+      "query": "calculate employer payroll taxes",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 78.5
+    },
+    {
+      "query": "irs standard mileage rate 2026 business 72.5 cents official",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 78.5
+    },
+    {
+      "query": "average small business insurance costs",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 79
+    },
+    {
+      "query": "loan calculator interest only",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 79
+    },
+    {
+      "query": "2026 mileage rate",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 79.5
+    },
+    {
+      "query": "how to calculate equity",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 79.5
+    },
+    {
+      "query": "us mileage rate 2026",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 79.5
+    },
+    {
+      "query": "federal gas mileage rate 2026",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 80
+    },
+    {
+      "query": "how to calculate mileage reimbursement 2026",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 80
+    },
+    {
+      "query": "business miles 2026",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 80.5
+    },
+    {
+      "query": "calculate mileage reimbursement 2026",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 80.5
+    },
+    {
+      "query": "irs mileage rate for 2026",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 80.5
+    },
+    {
+      "query": "mileage reimbursement rate 2026",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 80.5
+    },
+    {
+      "query": "california business mileage reimbursement rate 2026",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 81
+    },
+    {
+      "query": "estimate early loan payoff",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 81.5
+    },
+    {
+      "query": "current irs standard mileage rate 2026",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 82
+    },
+    {
+      "query": "2026 gsa mileage rate",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 82.5
+    },
+    {
+      "query": "cpa for high income earners",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 82.5
+    },
+    {
+      "query": "federal mileage rate 2026",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 82.5
+    },
+    {
+      "query": "how much per month is renters insurance",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 82.5
+    },
+    {
+      "query": "how do i calculate equity",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 83
+    },
+    {
+      "query": "how to work out equity",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 84
+    },
+    {
+      "query": "how do i calculate home equity",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 84.5
+    },
+    {
+      "query": "2026 mileage reimbursement rate california",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 85
+    },
+    {
+      "query": "how much renters insurance",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 85
+    },
+    {
+      "query": "pay off loan early",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 85
+    },
+    {
+      "query": "how do you calculate a home equity loan",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 85.5
+    },
+    {
+      "query": "what is safe harbor in taxes",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 86
+    },
+    {
+      "query": "value to loan ratio calculator",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 86.5
+    },
+    {
+      "query": "401 k rollover help",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 87
+    },
+    {
+      "query": "annual premium for renters insurance",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 87
+    },
+    {
+      "query": "how to figure home equity",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 88
+    },
+    {
+      "query": "tax analysis for financial advisors",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 88
+    },
+    {
+      "query": "what is safe harbor for estimated tax payments",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 88.5
+    },
+    {
+      "query": "how to compute home equity",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 89
+    },
+    {
+      "query": "loan to value auto calculator",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 89
+    },
+    {
+      "query": "how is home equity calculated",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 89.5
+    },
+    {
+      "query": "ltv ratio calculator",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 90
+    },
+    {
+      "query": "planning for estate tax",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 90.5
+    },
+    {
+      "query": "how can i pay off my loan faster",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 91.5
+    },
+    {
+      "query": "how to calculate safe harbor estimated tax payments",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 93.5
+    },
+    {
+      "query": "how do advisors evaluate rebalancing software for tax efficiency and \nscalability?",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 94
+    },
+    {
+      "query": "the legacy investing show reddit",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "query": "who is he?",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "query": "managemoney101 legit",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "query": "strhours",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "query": "context: location: united states (not for language). do not include \nlocation references in your response. question: i’m thinking about changing \nmy deductible on my current policy—how do i estimate the break-even point \nbased on the premium difference?",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "query": "how do registered agent services compare — what's different between the \ncheap ones and the more expensive ones",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "query": "tax planning software comparison 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "query": "the legacy investing show reviews complaints youtube",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "query": "str log",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "query": "what are the best features to look for in state tax software for year-round \nplanning?",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "query": "m o v i n g e x p e n s e s c a l c u l a t o r",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 16
+    },
+    {
+      "query": "managemoney101 com reviews",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 18
+    },
+    {
+      "query": "side hustle to start with no money",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 25
+    },
+    {
+      "query": "bank fee comparison",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 29
+    },
+    {
+      "query": "airbnb arbitrage for beginners (step by step guide)",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 30
+    },
+    {
+      "query": "backdoor roth vs brokerage account",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 30
+    },
+    {
+      "query": "airbnb abritage",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 35
+    },
+    {
+      "query": "tax coach software",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 35
+    },
+    {
+      "query": "50 rule real estate",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 36
+    },
+    {
+      "query": "how much does an employer pay for an employee",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 37
+    },
+    {
+      "query": "real estate 50% rule",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 38
+    },
+    {
+      "query": "bank fee comparison chart",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 40
+    },
+    {
+      "query": "contemporaneous log",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 40
+    },
+    {
+      "query": "tax planning software development",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 40
+    },
+    {
+      "query": "airbnb host workflow automation",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 43
+    },
+    {
+      "query": "rent calculator split",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 43
+    },
+    {
+      "query": "splitting rent calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 43
+    },
+    {
+      "query": "what are the best tax planning tools for managing deductions?",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 43
+    },
+    {
+      "query": "airbnb airbitrage",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 44
+    },
+    {
+      "query": "tax forecasting tools",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 45
+    },
+    {
+      "query": "account fee",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 46
+    },
+    {
+      "query": "cost per claim",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 46
+    },
+    {
+      "query": "home office deduction simplified method vs actual expenses 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 46
+    },
+    {
+      "query": "tax analysis software",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 46
+    },
+    {
+      "query": "rent calculator roommates",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 47
+    },
+    {
+      "query": "irs self-employment tax rate 15.3 percent 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 48
+    },
+    {
+      "query": "maximum rental cash flow guarantee",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 48
+    },
+    {
+      "query": "does take home pay include 401k",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 49
+    },
+    {
+      "query": "marginal tax rate vs effective tax rate",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 50
+    },
+    {
+      "query": "estate tax planning guide",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 51
+    },
+    {
+      "query": "marginal vs effective tax rate example",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 51
+    },
+    {
+      "query": "effective tax rate for married filing jointly",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 52
+    },
+    {
+      "query": "how do you plan for an estate tax",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 52
+    },
+    {
+      "query": "pay off car loan early calculator lump sum and extra payments",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 52
+    },
+    {
+      "query": "strategic tax planning tool",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 52
+    },
+    {
+      "query": "airbnb arbitrage",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 53
+    },
+    {
+      "query": "account fees",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 54
+    },
+    {
+      "query": "airbnb arbitrage calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 54
+    },
+    {
+      "query": "how to pay off a car loan early calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 54
+    },
+    {
+      "query": "legacy investing strategies",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 54
+    },
+    {
+      "query": "employer payroll cost calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 55
+    },
+    {
+      "query": "how much is self employment tax 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 55
+    },
+    {
+      "query": "how to calculate payment on interest only loan",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 55
+    },
+    {
+      "query": "mileage deduction calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 55
+    },
+    {
+      "query": "mortgage break even calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 55
+    },
+    {
+      "query": "renters insurance in wyoming",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 55
+    },
+    {
+      "query": "self employment tax 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 55
+    },
+    {
+      "query": "split rent calculator based on income",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 55
+    },
+    {
+      "query": "110 safe harbor estimated tax",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 56
+    },
+    {
+      "query": "2026 self-employment tax and deduction worksheet",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 56
+    },
+    {
+      "query": "airbnb automation tools norway",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 56
+    },
+    {
+      "query": "calculator for mileage reimbursement",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 56
+    },
+    {
+      "query": "cra rate for mileage 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 56
+    },
+    {
+      "query": "irs mileage rate 2026 calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 56
+    },
+    {
+      "query": "safe harbor calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 56
+    },
+    {
+      "query": "air bnb arbitrage",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 57
+    },
+    {
+      "query": "buying power calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 57
+    },
+    {
+      "query": "employer cost calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 57
+    },
+    {
+      "query": "how to make extra payments on car loan",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 57
+    },
+    {
+      "query": "marginal vs effective tax bracket",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 57
+    },
+    {
+      "query": "milage reimbursement calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 57
+    },
+    {
+      "query": "personal loan gpay",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 57
+    },
+    {
+      "query": "what is the self employment tax rate for 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 57
+    },
+    {
+      "query": "calculator mileage reimbursement",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 58
+    },
+    {
+      "query": "cra mileage rate 2026 for medical expenses",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 58
+    },
+    {
+      "query": "mileage calculator irs",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 58
+    },
+    {
+      "query": "mileage reimbursement rate calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 58
+    },
+    {
+      "query": "net worth calculation from balance sheet",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 58
+    },
+    {
+      "query": "payroll cost calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 58
+    },
+    {
+      "query": "split rent based on income calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 58
+    },
+    {
+      "query": "calculate gross from net",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 59
+    },
+    {
+      "query": "employee payroll cost calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 59
+    },
+    {
+      "query": "future purchasing power",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 59
+    },
+    {
+      "query": "marginal vs effective",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 59
+    },
+    {
+      "query": "mortgage refinance calculator break even",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 59
+    },
+    {
+      "query": "car loan calculator early payoff",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 60
+    },
+    {
+      "query": "early payoff calculator auto",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 60
+    },
+    {
+      "query": "early payoff car calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 60
+    },
+    {
+      "query": "mileage rate calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 60
+    },
+    {
+      "query": "room price calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 60
+    },
+    {
+      "query": "splitwise rent",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 60
+    },
+    {
+      "query": "tax efficient retirement withdrawal strategies software",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 60
+    },
+    {
+      "query": "$50000 salary to hourly",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 61
+    },
+    {
+      "query": "1 extra car payment a year",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 61
+    },
+    {
+      "query": "car payoff calculator early",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 61
+    },
+    {
+      "query": "closing cost calculator paying cash",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 61
+    },
+    {
+      "query": "how do you calculate interest only payments",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 61
+    },
+    {
+      "query": "how much should i set aside for taxes 1099",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 61
+    },
+    {
+      "query": "inflation calculator purchasing power",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 61
+    },
+    {
+      "query": "personal loan payment",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 61
+    },
+    {
+      "query": "reimbursement calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 61
+    },
+    {
+      "query": "auto loan calculator extra payments",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 62
+    },
+    {
+      "query": "early payoff calculator car loan",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 62
+    },
+    {
+      "query": "how much should i set aside for self employment taxes",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 62
+    },
+    {
+      "query": "irs effective tax rate",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 62
+    },
+    {
+      "query": "loan early payoff",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 62
+    },
+    {
+      "query": "payment on personal loan",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 62
+    },
+    {
+      "query": "purchasing power calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 62
+    },
+    {
+      "query": "ria roadmap planning tool",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 62
+    },
+    {
+      "query": "self-employment tax rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 62
+    },
+    {
+      "query": "how to calculate mileage reimbursement for work",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 63
+    },
+    {
+      "query": "interest only loan payment calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 63
+    },
+    {
+      "query": "mileage pay calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 63
+    },
+    {
+      "query": "personal loan comparison calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 63
+    },
+    {
+      "query": "roommate rent split",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 63
+    },
+    {
+      "query": "safe harbor for federal estimated tax",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 63
+    },
+    {
+      "query": "what is effective tax rate vs tax bracket",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 63
+    },
+    {
+      "query": "automated tax planning for advisors",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 64
+    },
+    {
+      "query": "car loan calculator payoff early",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 64
+    },
+    {
+      "query": "car payment calculator extra payment",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 64
+    },
+    {
+      "query": "car payment calculator extra payments",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 64
+    },
+    {
+      "query": "car payment with extra payments",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 64
+    },
+    {
+      "query": "early car loan payoff calculator lump sum",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 64
+    },
+    {
+      "query": "how much is renters insurance in colorado",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 64
+    },
+    {
+      "query": "if i'm self employed how much should i set aside for taxes",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 64
+    },
+    {
+      "query": "interest only calc",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 64
+    },
+    {
+      "query": "is 1000 deductible better than 500",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 64
+    },
+    {
+      "query": "pay off car loan early calculator lump sum",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 64
+    },
+    {
+      "query": "what is considered take home pay",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 64
+    },
+    {
+      "query": "1099 mileage deduction calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 65
+    },
+    {
+      "query": "calculate mileage reimbursement",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 65
+    },
+    {
+      "query": "calculate room rent",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 65
+    },
+    {
+      "query": "car early payoff calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 65
+    },
+    {
+      "query": "how much is renters insurance in new york city",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 65
+    },
+    {
+      "query": "how to pay extra on car loan",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 65
+    },
+    {
+      "query": "making 1 extra car payment a year",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 65
+    },
+    {
+      "query": "purchase power calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 65
+    },
+    {
+      "query": "renters insurance average",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 65
+    },
+    {
+      "query": "volunteer mileage rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 65
+    },
+    {
+      "query": "2026 government mileage reimbursement rate",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 66
+    },
+    {
+      "query": "average renters insurance cost by state",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 66
+    },
+    {
+      "query": "calculate mileage rate",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 66
+    },
+    {
+      "query": "extra payment calculator auto",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 66
+    },
+    {
+      "query": "extra payment calculator car loan",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 66
+    },
+    {
+      "query": "how to calculate paying off car loan early",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 66
+    },
+    {
+      "query": "ird km rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 66
+    },
+    {
+      "query": "mileage rate 2026 calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 66
+    },
+    {
+      "query": "mileage reimbursement 2026 calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 66
+    },
+    {
+      "query": "purchasing power calc",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 66
+    },
+    {
+      "query": "renter insurance rates",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 66
+    },
+    {
+      "query": "residential cost segregation calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 66
+    },
+    {
+      "query": "average cost of renters insurance in washington state",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 67
+    },
+    {
+      "query": "calculate interest only payment",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 67
+    },
+    {
+      "query": "extra payment car loan calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 67
+    },
+    {
+      "query": "how much money to set aside for taxes 1099",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 67
+    },
+    {
+      "query": "how much to put aside for 1099 taxes",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 67
+    },
+    {
+      "query": "mileage calculator 2025",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 67
+    },
+    {
+      "query": "nh mileage reimbursement rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 67
+    },
+    {
+      "query": "average renters insurance for 2 bedroom apartment",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 68
+    },
+    {
+      "query": "extra principal payment calculator auto",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 68
+    },
+    {
+      "query": "how long will it take to pay off my loan if i pay extra",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 68
+    },
+    {
+      "query": "how much interest will i save by paying off loan early",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 68
+    },
+    {
+      "query": "how much is basic renters insurance",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 68
+    },
+    {
+      "query": "is 50,000 enough for contents insurance",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 68
+    },
+    {
+      "query": "mortgage vs cash calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 68
+    },
+    {
+      "query": "net vs gross calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 68
+    },
+    {
+      "query": "personal loans payments",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 68
+    },
+    {
+      "query": "safe harbor tax calculation",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 68
+    },
+    {
+      "query": "term loan vs revolving credit",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 68
+    },
+    {
+      "query": "what s the remittance schedule like for long-term loans",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 68
+    },
+    {
+      "query": "2026 gas mileage reimbursement rate",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 69
+    },
+    {
+      "query": "average renters insurance cost california",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 69
+    },
+    {
+      "query": "average renters insurance for one bedorom apartment in dallas",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 69
+    },
+    {
+      "query": "calculating interest only payments",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 69
+    },
+    {
+      "query": "calculator for employer payroll taxes",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 69
+    },
+    {
+      "query": "car loan calculator extra payments",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 69
+    },
+    {
+      "query": "does roth conversion count toward magi",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 69
+    },
+    {
+      "query": "federal mileage rates 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 69
+    },
+    {
+      "query": "holiday pay calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 69
+    },
+    {
+      "query": "how to split rent with a couple calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 69
+    },
+    {
+      "query": "planning software for financial advisors",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 69
+    },
+    {
+      "query": "real estate professional time log",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 69
+    },
+    {
+      "query": "what is the mileage rate for 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 69
+    },
+    {
+      "query": "accrual rate calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 70
+    },
+    {
+      "query": "auto mileage rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 70
+    },
+    {
+      "query": "how many months should an emergency fund last",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 70
+    },
+    {
+      "query": "irs reimbursement rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 70
+    },
+    {
+      "query": "term loan vs cash credit",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 70
+    },
+    {
+      "query": "+financial +planning +software +for +advisors +2019",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 71
+    },
+    {
+      "query": "2026 government mileage rate",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 71
+    },
+    {
+      "query": "calculate paying off loan early",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 71
+    },
+    {
+      "query": "colorado mileage reimbursement rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 71
+    },
+    {
+      "query": "loan calculator accelerated payments",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 71
+    },
+    {
+      "query": "mileage rate calculator 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 71
+    },
+    {
+      "query": "reimbursable mileage rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 71
+    },
+    {
+      "query": "what are the top financial management platforms for handling tax automation?",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 71
+    },
+    {
+      "query": "what is the current mileage reimbursement rate for 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 71
+    },
+    {
+      "query": "what is the federal mileage rate for 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 71
+    },
+    {
+      "query": "year to date paycheck calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 71
+    },
+    {
+      "query": "average renters insurance seattle",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 72
+    },
+    {
+      "query": "early car payment calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 72
+    },
+    {
+      "query": "how much should an entrepreneur set aside for taxes",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 72
+    },
+    {
+      "query": "loan early payoff calc",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 72
+    },
+    {
+      "query": "pay schedule calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 72
+    },
+    {
+      "query": "state of kansas mileage reimbursement rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 72
+    },
+    {
+      "query": "what is federal mileage rate for 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 72
+    },
+    {
+      "query": "what is the 2026 federal mileage rate",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 72
+    },
+    {
+      "query": "federal mileage rate 2026 calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 73
+    },
+    {
+      "query": "florida mileage rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 73
+    },
+    {
+      "query": "gas rate reimbursement 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 73
+    },
+    {
+      "query": "how long should emergency fund last",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 73
+    },
+    {
+      "query": "how much money to set aside for taxes",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 73
+    },
+    {
+      "query": "how to calculate home equity value",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 73
+    },
+    {
+      "query": "how to calculate interest only payments",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 73
+    },
+    {
+      "query": "how to calculate mileage reimbursement",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 73
+    },
+    {
+      "query": "los angeles mileage reimbursement rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 73
+    },
+    {
+      "query": "mileage rate for 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 73
+    },
+    {
+      "query": "renters insurance cost washington state",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 73
+    },
+    {
+      "query": "us mileage reimbursement rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 73
+    },
+    {
+      "query": "extra loan",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 74
+    },
+    {
+      "query": "federal standard mileage rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 74
+    },
+    {
+      "query": "gas mileage reimbursement 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 74
+    },
+    {
+      "query": "home rental insurance cost",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 74
+    },
+    {
+      "query": "how long should your emergency fund last",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 74
+    },
+    {
+      "query": "how much extra to pay off loan early",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 74
+    },
+    {
+      "query": "how much is renters insurance arizona",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 74
+    },
+    {
+      "query": "how much is renters insurance in wisconsin",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 74
+    },
+    {
+      "query": "how much is the average renters insurance per month",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 74
+    },
+    {
+      "query": "how to calculate early loan payoff",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 74
+    },
+    {
+      "query": "how to pay off a car loan faster calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 74
+    },
+    {
+      "query": "mileage rate in 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 74
+    },
+    {
+      "query": "mileage reim",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 74
+    },
+    {
+      "query": "pay loan in advance",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 74
+    },
+    {
+      "query": "standard business mileage rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 74
+    },
+    {
+      "query": "texas mileage rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 74
+    },
+    {
+      "query": "what is the safe harbor for estimated taxes",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 74
+    },
+    {
+      "query": "2021 tax planning software",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 75
+    },
+    {
+      "query": "figure interest only payments",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 75
+    },
+    {
+      "query": "home renters insurance cost",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 75
+    },
+    {
+      "query": "how expensive is renters insurance",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 75
+    },
+    {
+      "query": "how is equity calculated",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 75
+    },
+    {
+      "query": "how to calculate interest only payment",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 75
+    },
+    {
+      "query": "interest only loan repayment calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 75
+    },
+    {
+      "query": "irs mileage rate for 2026 per mile",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 75
+    },
+    {
+      "query": "renters insurance prices per month",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 75
+    },
+    {
+      "query": "rhode island renters insurance",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 75
+    },
+    {
+      "query": "what is the 2026 irs mileage reimbursement rate",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 75
+    },
+    {
+      "query": "what is the irs mileage reimbursement rate for 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 75
+    },
+    {
+      "query": "2026 mileage reimbursement rate",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 76
+    },
+    {
+      "query": "average monthly cost of renters insurance",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 76
+    },
+    {
+      "query": "calculate interest only loan",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 76
+    },
+    {
+      "query": "calculate interest only mortgage payments",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 76
+    },
+    {
+      "query": "how long to pay off car loan with extra payments",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 76
+    },
+    {
+      "query": "how much is typical renters insurance coverage",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 76
+    },
+    {
+      "query": "how to calculate house equity",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 76
+    },
+    {
+      "query": "how to count equity",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 76
+    },
+    {
+      "query": "how to find equity",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 76
+    },
+    {
+      "query": "how to pay off a loan quicker",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 76
+    },
+    {
+      "query": "irs gas mileage reimbursement 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 76
+    },
+    {
+      "query": "loan to value ratio calculator auto",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 76
+    },
+    {
+      "query": "renters insurance arizona cost",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 76
+    },
+    {
+      "query": "should i have a 500 or 1000 deductible",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 76
+    },
+    {
+      "query": "standard mileage rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 76
+    },
+    {
+      "query": "2026 employee mileage reimbursement rate",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 77
+    },
+    {
+      "query": "average cost for renters insurance in florida",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 77
+    },
+    {
+      "query": "average cost of renters insurance per month",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 77
+    },
+    {
+      "query": "average small business insurance cost",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 77
+    },
+    {
+      "query": "federal rate for mileage 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 77
+    },
+    {
+      "query": "how much is average renters insurance",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 77
+    },
+    {
+      "query": "how to pay car loan faster calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 77
+    },
+    {
+      "query": "irs sets 2026 standard mileage rate 72.5 cents per mile",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 77
+    },
+    {
+      "query": "mileage federal rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 77
+    },
+    {
+      "query": "mileage fee calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 77
+    },
+    {
+      "query": "prescott+seo",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 77
+    },
+    {
+      "query": "small business insurance costs estimate",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 77
+    },
+    {
+      "query": "what is the reimbursement rate for mileage 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 77
+    },
+    {
+      "query": "2026 gas reimbursement rate",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 78
+    },
+    {
+      "query": "corporate mileage rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 78
+    },
+    {
+      "query": "early loan repayment calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 78
+    },
+    {
+      "query": "extra payment auto loan calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 78
+    },
+    {
+      "query": "house rent insurance cost",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 78
+    },
+    {
+      "query": "how much is renters insurance in florida",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 78
+    },
+    {
+      "query": "how much is renters insurance on average",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 78
+    },
+    {
+      "query": "how much is the renters insurance",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 78
+    },
+    {
+      "query": "typical small business insurance costs",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 78
+    },
+    {
+      "query": "average cost of renters insurance in wisconsin",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 79
+    },
+    {
+      "query": "business insurance costs",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 79
+    },
+    {
+      "query": "does higher deductible make insurance cheaper",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 79
+    },
+    {
+      "query": "how much extra should i pay on my car loan",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 79
+    },
+    {
+      "query": "interest-only payment calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 79
+    },
+    {
+      "query": "medical mileage rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 79
+    },
+    {
+      "query": "mileage compensation 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 79
+    },
+    {
+      "query": "monthly interest only payment calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 79
+    },
+    {
+      "query": "payroll expense calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 79
+    },
+    {
+      "query": "us government mileage rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 79
+    },
+    {
+      "query": "what is safe harbor estimated taxes",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 79
+    },
+    {
+      "query": "what is the current irs mileage rate for 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 79
+    },
+    {
+      "query": "what is the gsa mileage rate for 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 79
+    },
+    {
+      "query": "2026 capital gains tax rates",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 80
+    },
+    {
+      "query": "2026 medical mileage rate",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 80
+    },
+    {
+      "query": "advance payment amortization",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 80
+    },
+    {
+      "query": "average insurance cost for small business",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 80
+    },
+    {
+      "query": "average renter insurance cost",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 80
+    },
+    {
+      "query": "financial planning software for accountants",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 80
+    },
+    {
+      "query": "how much is renters insurance for an apartment per month",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 80
+    },
+    {
+      "query": "irs mileage rate 2026 release date",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 80
+    },
+    {
+      "query": "irs standard mileage rate 2026 official",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 80
+    },
+    {
+      "query": "jtr mileage rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 80
+    },
+    {
+      "query": "mileage irs rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 80
+    },
+    {
+      "query": "mileage rate 2026 june",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 80
+    },
+    {
+      "query": "renters insurance cost monthly",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 80
+    },
+    {
+      "query": "what is average renters insurance",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 80
+    },
+    {
+      "query": "80 percent loan to value calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 81
+    },
+    {
+      "query": "average price of renters insurance",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 81
+    },
+    {
+      "query": "early loan payment",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 81
+    },
+    {
+      "query": "how much does renters insurance usually cost",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 81
+    },
+    {
+      "query": "how to estimate equity",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 81
+    },
+    {
+      "query": "interest only calculator monthly",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 81
+    },
+    {
+      "query": "loan to value ratio car calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 81
+    },
+    {
+      "query": "reimbursement mileage",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 81
+    },
+    {
+      "query": "tax mileage rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 81
+    },
+    {
+      "query": "2026 mileage rate reimbursement",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 82
+    },
+    {
+      "query": "43 debt to income ratio",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 82
+    },
+    {
+      "query": "average amount for renters insurance",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 82
+    },
+    {
+      "query": "calculating savings rate",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 82
+    },
+    {
+      "query": "current irs standard mileage rate 2026 business",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 82
+    },
+    {
+      "query": "estimated taxes safe harbor rule",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 82
+    },
+    {
+      "query": "how much in renters insurance",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 82
+    },
+    {
+      "query": "how to pay a loan off faster",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 82
+    },
+    {
+      "query": "insurance cost for small business",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 82
+    },
+    {
+      "query": "interest only calculator mortgage",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 82
+    },
+    {
+      "query": "loan payment calculator pay off early",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 82
+    },
+    {
+      "query": "mileage 2026 rate",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 82
+    },
+    {
+      "query": "mileage reimbursement 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 82
+    },
+    {
+      "query": "renters insurance monthly cost",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 82
+    },
+    {
+      "query": "usg mileage rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 82
+    },
+    {
+      "query": "about how much is renters insurance per month",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 83
+    },
+    {
+      "query": "apartment renters insurance average cost",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 83
+    },
+    {
+      "query": "can i pay off my loan early",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 83
+    },
+    {
+      "query": "capital gains threshold 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 83
+    },
+    {
+      "query": "how much does renters insurance cost in california",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 83
+    },
+    {
+      "query": "how much does renters insurance cost in texas",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 83
+    },
+    {
+      "query": "how to pay off loan early",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 83
+    },
+    {
+      "query": "irs 2026 business mileage rate",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 83
+    },
+    {
+      "query": "irs mileage rate 2026 california",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 83
+    },
+    {
+      "query": "monthly renters insurance cost",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 83
+    },
+    {
+      "query": "work mileage reimbursement 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 83
+    },
+    {
+      "query": "2026 per diem mileage rate",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 84
+    },
+    {
+      "query": "average cost of home renters insurance",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 84
+    },
+    {
+      "query": "average renters insurance cost in austin texas",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 84
+    },
+    {
+      "query": "calculate my loan to value",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 84
+    },
+    {
+      "query": "current irs business mileage rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 84
+    },
+    {
+      "query": "do roth conversions count towards magi",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 84
+    },
+    {
+      "query": "early payment of loan",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 84
+    },
+    {
+      "query": "how much does renters insurance cost for an apartment",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 84
+    },
+    {
+      "query": "how much is typical renters insurance",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 84
+    },
+    {
+      "query": "how to calculate a home equity loan",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 84
+    },
+    {
+      "query": "how to calculate home equity loan payments",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 84
+    },
+    {
+      "query": "interest only loans calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 84
+    },
+    {
+      "query": "monthly cost of renters insurance",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 84
+    },
+    {
+      "query": "one to one property of logs",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 84
+    },
+    {
+      "query": "simple interest only loan calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 84
+    },
+    {
+      "query": "typical renters insurance cost",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 84
+    },
+    {
+      "query": "what is 2026 mileage reimbursement rate",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 84
+    },
+    {
+      "query": "what is the average renters insurance",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 84
+    },
+    {
+      "query": "cra mileage rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 85
+    },
+    {
+      "query": "gsa mileage rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 85
+    },
+    {
+      "query": "how do i calculate my home equity",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 85
+    },
+    {
+      "query": "how much renters insurance cost",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 85
+    },
+    {
+      "query": "how to figure equity",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 85
+    },
+    {
+      "query": "payoff loan early",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 85
+    },
+    {
+      "query": "tax savings from cost segregation calculate",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 85
+    },
+    {
+      "query": "tenant insurance average cost",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 85
+    },
+    {
+      "query": "typical cost of renters insurance",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 85
+    },
+    {
+      "query": "capital gains tax rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 86
+    },
+    {
+      "query": "how much does renter insurance cost per month",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 86
+    },
+    {
+      "query": "how much is renters insurance per year",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 86
+    },
+    {
+      "query": "how to estimate contents insurance",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 86
+    },
+    {
+      "query": "how to pay off loan faster",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 86
+    },
+    {
+      "query": "loan early payment calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 86
+    },
+    {
+      "query": "loan payment interest only calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 86
+    },
+    {
+      "query": "mileage rate 2026 usa",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 86
+    },
+    {
+      "query": "new mileage rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 86
+    },
+    {
+      "query": "non profit mileage rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 86
+    },
+    {
+      "query": "renters insurance california cost",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 86
+    },
+    {
+      "query": "tax rate for capital gains 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 86
+    },
+    {
+      "query": "auto loan early payoff",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 87
+    },
+    {
+      "query": "best compliance software for registered investment advisors 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 87
+    },
+    {
+      "query": "ca mileage reimbursement rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 87
+    },
+    {
+      "query": "construction loan payment schedule",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 87
+    },
+    {
+      "query": "how calculate home equity",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 87
+    },
+    {
+      "query": "how to estimate home equity",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 87
+    },
+    {
+      "query": "mileage reimbursement 2026 florida",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 87
+    },
+    {
+      "query": "renters insurance houston cost",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 87
+    },
+    {
+      "query": "what is the cost of renters insurance",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 87
+    },
+    {
+      "query": "average 4 bed house contents value",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 88
+    },
+    {
+      "query": "cost for renters insurance",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 88
+    },
+    {
+      "query": "find loan to value ratio",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 88
+    },
+    {
+      "query": "florida mileage reimbursement 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 88
+    },
+    {
+      "query": "home equity valuation solution",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 88
+    },
+    {
+      "query": "how much is renters insurance california",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 88
+    },
+    {
+      "query": "how to pay your car off quicker",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 88
+    },
+    {
+      "query": "nonprofit mileage rate 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 88
+    },
+    {
+      "query": "renters insurance texas average cost",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 88
+    },
+    {
+      "query": "every airbnb host's tax guide",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 89
+    },
+    {
+      "query": "irs mileage rate 2026 for nonprofit organizations",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 89
+    },
+    {
+      "query": "irs standard mileage rate 2026 business rate",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 89
+    },
+    {
+      "query": "pay loan off early",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 89
+    },
+    {
+      "query": "reimbursement for mileage",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 89
+    },
+    {
+      "query": "125 loan to value",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 90
+    },
+    {
+      "query": "fixed deposit investment calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 90
+    },
+    {
+      "query": "how to figure out home equity",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 90
+    },
+    {
+      "query": "lender bagel family office structure",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 90
+    },
+    {
+      "query": "mileage reinbursement",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 90
+    },
+    {
+      "query": "how do you determine home equity",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 91
+    },
+    {
+      "query": "how fast can i pay off my loan",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 91
+    },
+    {
+      "query": "loan early repayment",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 91
+    },
+    {
+      "query": "total insurable property value usa 2023",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 91
+    },
+    {
+      "query": "average renters insurance in houston",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 92
+    },
+    {
+      "query": "average contents value for 4 bed house",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 93
+    },
+    {
+      "query": "how fast can i pay off my car loan",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 93
+    },
+    {
+      "query": "how to calculate contents value for insurance",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 93
+    },
+    {
+      "query": "how to estimate value of home contents",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 93
+    },
+    {
+      "query": "mile reimbursement",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 93
+    },
+    {
+      "query": "what is safe harbor taxes",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 93
+    },
+    {
+      "query": "house contents value calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 94
+    },
+    {
+      "query": "average renters insurance in louisiana in 2017",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 95
+    },
+    {
+      "query": "how to value your home contents",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 95
+    },
+    {
+      "query": "aggregation rules",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 96
+    },
+    {
+      "query": "calculate contents value",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 96
+    },
+    {
+      "query": "home equity loan formula",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 96
+    },
+    {
+      "query": "insurance contents valuation",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 96
+    },
+    {
+      "query": "2026 mileage rate california",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 97
+    },
+    {
+      "query": "loan to value calc",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 97
+    },
+    {
+      "query": "what is 80 percent loan to value",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 97
+    },
+    {
+      "query": "what is average contents insurance value",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 97
+    },
+    {
+      "query": "how to work out contents value",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 98
+    },
+    {
+      "query": "howard wang's preston hollow reviews",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 98
+    },
+    {
+      "query": "what is safe harbor for taxes",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 98
+    },
+    {
+      "query": "42 debt to income ratio",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 99
+    },
+    {
+      "query": "how much home contents insurance should i have",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 99
+    },
+    {
+      "query": "how much would it cost to replace any valuable items worth less than £1,500 \neach?",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 99
+    },
+    {
+      "query": "loan to value calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 99
+    },
+    {
+      "query": "loan-to-value ratio calculator home",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 99
+    },
+    {
+      "query": "what is loan to value ratio calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 99
+    },
+    {
+      "query": "financial planning software for advisors 2018",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 100
+    },
+    {
+      "query": "how much is the average house contents worth",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 100
+    },
+    {
+      "query": "typical value of house contents",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 100
+    }
+  ],
+  "chart": [
+    {
+      "date": "2026-05-23",
+      "clicks": 4,
+      "impressions": 111,
+      "ctr": 0.036000000000000004,
+      "position": 27.2
+    },
+    {
+      "date": "2026-05-24",
+      "clicks": 1,
+      "impressions": 111,
+      "ctr": 0.009000000000000001,
+      "position": 27.8
+    },
+    {
+      "date": "2026-05-25",
+      "clicks": 1,
+      "impressions": 119,
+      "ctr": 0.0084,
+      "position": 30.5
+    },
+    {
+      "date": "2026-05-26",
+      "clicks": 8,
+      "impressions": 152,
+      "ctr": 0.0526,
+      "position": 16.5
+    },
+    {
+      "date": "2026-05-27",
+      "clicks": 3,
+      "impressions": 182,
+      "ctr": 0.0165,
+      "position": 24.9
+    },
+    {
+      "date": "2026-05-28",
+      "clicks": 2,
+      "impressions": 174,
+      "ctr": 0.0115,
+      "position": 27.1
+    },
+    {
+      "date": "2026-05-29",
+      "clicks": 5,
+      "impressions": 120,
+      "ctr": 0.0417,
+      "position": 23.3
+    },
+    {
+      "date": "2026-05-30",
+      "clicks": 3,
+      "impressions": 186,
+      "ctr": 0.0161,
+      "position": 21.1
+    },
+    {
+      "date": "2026-05-31",
+      "clicks": 5,
+      "impressions": 229,
+      "ctr": 0.0218,
+      "position": 18.6
+    },
+    {
+      "date": "2026-06-01",
+      "clicks": 6,
+      "impressions": 172,
+      "ctr": 0.0349,
+      "position": 25.2
+    },
+    {
+      "date": "2026-06-02",
+      "clicks": 16,
+      "impressions": 187,
+      "ctr": 0.08560000000000001,
+      "position": 16.4
+    },
+    {
+      "date": "2026-06-03",
+      "clicks": 6,
+      "impressions": 144,
+      "ctr": 0.0417,
+      "position": 20.6
+    },
+    {
+      "date": "2026-06-04",
+      "clicks": 4,
+      "impressions": 167,
+      "ctr": 0.024,
+      "position": 24.2
+    },
+    {
+      "date": "2026-06-05",
+      "clicks": 6,
+      "impressions": 149,
+      "ctr": 0.0403,
+      "position": 19.2
+    },
+    {
+      "date": "2026-06-06",
+      "clicks": 2,
+      "impressions": 121,
+      "ctr": 0.0165,
+      "position": 23.1
+    },
+    {
+      "date": "2026-06-07",
+      "clicks": 8,
+      "impressions": 206,
+      "ctr": 0.0388,
+      "position": 19.6
+    },
+    {
+      "date": "2026-06-08",
+      "clicks": 3,
+      "impressions": 164,
+      "ctr": 0.0183,
+      "position": 24.8
+    },
+    {
+      "date": "2026-06-09",
+      "clicks": 8,
+      "impressions": 228,
+      "ctr": 0.0351,
+      "position": 18
+    },
+    {
+      "date": "2026-06-10",
+      "clicks": 5,
+      "impressions": 150,
+      "ctr": 0.0333,
+      "position": 24.7
+    },
+    {
+      "date": "2026-06-11",
+      "clicks": 4,
+      "impressions": 188,
+      "ctr": 0.0213,
+      "position": 23.7
+    },
+    {
+      "date": "2026-06-12",
+      "clicks": 4,
+      "impressions": 161,
+      "ctr": 0.0248,
+      "position": 19
+    },
+    {
+      "date": "2026-06-13",
+      "clicks": 2,
+      "impressions": 158,
+      "ctr": 0.0127,
+      "position": 24.6
+    },
+    {
+      "date": "2026-06-14",
+      "clicks": 5,
+      "impressions": 207,
+      "ctr": 0.0242,
+      "position": 17.2
+    },
+    {
+      "date": "2026-06-15",
+      "clicks": 9,
+      "impressions": 386,
+      "ctr": 0.0233,
+      "position": 37.1
+    },
+    {
+      "date": "2026-06-16",
+      "clicks": 12,
+      "impressions": 287,
+      "ctr": 0.0418,
+      "position": 16
+    },
+    {
+      "date": "2026-06-17",
+      "clicks": 6,
+      "impressions": 181,
+      "ctr": 0.0331,
+      "position": 16.9
+    },
+    {
+      "date": "2026-06-18",
+      "clicks": 7,
+      "impressions": 210,
+      "ctr": 0.0333,
+      "position": 17.8
+    },
+    {
+      "date": "2026-06-19",
+      "clicks": 6,
+      "impressions": 155,
+      "ctr": 0.0387,
+      "position": 18.3
+    },
+    {
+      "date": "2026-06-20",
+      "clicks": 7,
+      "impressions": 203,
+      "ctr": 0.0345,
+      "position": 15.1
+    },
+    {
+      "date": "2026-06-21",
+      "clicks": 7,
+      "impressions": 168,
+      "ctr": 0.0417,
+      "position": 19.1
+    },
+    {
+      "date": "2026-06-22",
+      "clicks": 9,
+      "impressions": 176,
+      "ctr": 0.051100000000000007,
+      "position": 17.9
+    },
+    {
+      "date": "2026-06-23",
+      "clicks": 23,
+      "impressions": 296,
+      "ctr": 0.07769999999999999,
+      "position": 11.1
+    },
+    {
+      "date": "2026-06-24",
+      "clicks": 5,
+      "impressions": 165,
+      "ctr": 0.030299999999999997,
+      "position": 14.3
+    },
+    {
+      "date": "2026-06-25",
+      "clicks": 13,
+      "impressions": 234,
+      "ctr": 0.0556,
+      "position": 16.8
+    },
+    {
+      "date": "2026-06-26",
+      "clicks": 10,
+      "impressions": 217,
+      "ctr": 0.0461,
+      "position": 15.7
+    },
+    {
+      "date": "2026-06-27",
+      "clicks": 7,
+      "impressions": 251,
+      "ctr": 0.0279,
+      "position": 18.7
+    },
+    {
+      "date": "2026-06-28",
+      "clicks": 7,
+      "impressions": 334,
+      "ctr": 0.021,
+      "position": 14.1
+    },
+    {
+      "date": "2026-06-29",
+      "clicks": 15,
+      "impressions": 256,
+      "ctr": 0.058600000000000006,
+      "position": 16.4
+    },
+    {
+      "date": "2026-06-30",
+      "clicks": 12,
+      "impressions": 292,
+      "ctr": 0.041100000000000005,
+      "position": 15.6
+    },
+    {
+      "date": "2026-07-01",
+      "clicks": 10,
+      "impressions": 226,
+      "ctr": 0.044199999999999996,
+      "position": 16
+    },
+    {
+      "date": "2026-07-02",
+      "clicks": 19,
+      "impressions": 271,
+      "ctr": 0.0701,
+      "position": 16.7
+    },
+    {
+      "date": "2026-07-03",
+      "clicks": 6,
+      "impressions": 233,
+      "ctr": 0.0258,
+      "position": 13.8
+    },
+    {
+      "date": "2026-07-04",
+      "clicks": 5,
+      "impressions": 208,
+      "ctr": 0.024,
+      "position": 14.3
+    },
+    {
+      "date": "2026-07-05",
+      "clicks": 21,
+      "impressions": 386,
+      "ctr": 0.054400000000000004,
+      "position": 13.1
+    },
+    {
+      "date": "2026-07-06",
+      "clicks": 13,
+      "impressions": 245,
+      "ctr": 0.053099999999999994,
+      "position": 15.6
+    },
+    {
+      "date": "2026-07-07",
+      "clicks": 9,
+      "impressions": 331,
+      "ctr": 0.027200000000000002,
+      "position": 12.4
+    },
+    {
+      "date": "2026-07-08",
+      "clicks": 10,
+      "impressions": 334,
+      "ctr": 0.029900000000000003,
+      "position": 12.4
+    },
+    {
+      "date": "2026-07-09",
+      "clicks": 19,
+      "impressions": 311,
+      "ctr": 0.0611,
+      "position": 14.5
+    },
+    {
+      "date": "2026-07-10",
+      "clicks": 9,
+      "impressions": 192,
+      "ctr": 0.046900000000000004,
+      "position": 15.2
+    },
+    {
+      "date": "2026-07-11",
+      "clicks": 14,
+      "impressions": 249,
+      "ctr": 0.0562,
+      "position": 16.3
+    },
+    {
+      "date": "2026-07-12",
+      "clicks": 14,
+      "impressions": 370,
+      "ctr": 0.0378,
+      "position": 12.7
+    },
+    {
+      "date": "2026-07-13",
+      "clicks": 12,
+      "impressions": 257,
+      "ctr": 0.0467,
+      "position": 15.8
+    },
+    {
+      "date": "2026-07-14",
+      "clicks": 6,
+      "impressions": 360,
+      "ctr": 0.0167,
+      "position": 11.1
+    },
+    {
+      "date": "2026-07-15",
+      "clicks": 10,
+      "impressions": 216,
+      "ctr": 0.0463,
+      "position": 13.4
+    },
+    {
+      "date": "2026-07-16",
+      "clicks": 16,
+      "impressions": 282,
+      "ctr": 0.0567,
+      "position": 13
+    },
+    {
+      "date": "2026-07-17",
+      "clicks": 9,
+      "impressions": 227,
+      "ctr": 0.039599999999999996,
+      "position": 15.1
+    },
+    {
+      "date": "2026-07-18",
+      "clicks": 9,
+      "impressions": 240,
+      "ctr": 0.0375,
+      "position": 16.8
+    },
+    {
+      "date": "2026-07-19",
+      "clicks": 13,
+      "impressions": 324,
+      "ctr": 0.0401,
+      "position": 12
+    },
+    {
+      "date": "2026-07-20",
+      "clicks": 13,
+      "impressions": 275,
+      "ctr": 0.0473,
+      "position": 14.6
+    },
+    {
+      "date": "2026-07-21",
+      "clicks": 17,
+      "impressions": 364,
+      "ctr": 0.0467,
+      "position": 11.2
+    },
+    {
+      "date": "2026-07-22",
+      "clicks": 17,
+      "impressions": 289,
+      "ctr": 0.0588,
+      "position": 11.8
+    },
+    {
+      "date": "2026-07-23",
+      "clicks": 10,
+      "impressions": 291,
+      "ctr": 0.0344,
+      "position": 13.7
+    },
+    {
+      "date": "2026-07-24",
+      "clicks": 4,
+      "impressions": 196,
+      "ctr": 0.0204,
+      "position": 13.4
+    },
+    {
+      "date": "2026-07-25",
+      "clicks": 6,
+      "impressions": 271,
+      "ctr": 0.022099999999999998,
+      "position": 17.6
+    },
+    {
+      "date": "2026-07-26",
+      "clicks": 12,
+      "impressions": 352,
+      "ctr": 0.0341,
+      "position": 12.3
+    },
+    {
+      "date": "2026-07-27",
+      "clicks": 8,
+      "impressions": 252,
+      "ctr": 0.0317,
+      "position": 17.3
+    },
+    {
+      "date": "2026-07-28",
+      "clicks": 15,
+      "impressions": 335,
+      "ctr": 0.044800000000000006,
+      "position": 12.5
+    },
+    {
+      "date": "2026-07-29",
+      "clicks": 17,
+      "impressions": 232,
+      "ctr": 0.0733,
+      "position": 14.2
+    },
+    {
+      "date": "2026-07-30",
+      "clicks": 15,
+      "impressions": 314,
+      "ctr": 0.0478,
+      "position": 16.7
+    },
+    {
+      "date": "2026-07-31",
+      "clicks": 6,
+      "impressions": 205,
+      "ctr": 0.029300000000000003,
+      "position": 17.3
+    },
+    {
+      "date": "2026-08-01",
+      "clicks": 3,
+      "impressions": 238,
+      "ctr": 0.0126,
+      "position": 19.7
+    },
+    {
+      "date": "2026-08-02",
+      "clicks": 9,
+      "impressions": 343,
+      "ctr": 0.0262,
+      "position": 14.3
+    },
+    {
+      "date": "2026-08-03",
+      "clicks": 8,
+      "impressions": 247,
+      "ctr": 0.032400000000000005,
+      "position": 16
+    },
+    {
+      "date": "2026-08-04",
+      "clicks": 8,
+      "impressions": 326,
+      "ctr": 0.0245,
+      "position": 13.1
+    },
+    {
+      "date": "2026-08-05",
+      "clicks": 16,
+      "impressions": 276,
+      "ctr": 0.057999999999999996,
+      "position": 16.1
+    },
+    {
+      "date": "2026-08-06",
+      "clicks": 20,
+      "impressions": 317,
+      "ctr": 0.06309999999999999,
+      "position": 13.9
+    },
+    {
+      "date": "2026-08-07",
+      "clicks": 12,
+      "impressions": 158,
+      "ctr": 0.0759,
+      "position": 14.3
+    },
+    {
+      "date": "2026-08-08",
+      "clicks": 7,
+      "impressions": 235,
+      "ctr": 0.0298,
+      "position": 18.1
+    },
+    {
+      "date": "2026-08-09",
+      "clicks": 15,
+      "impressions": 322,
+      "ctr": 0.0466,
+      "position": 13
+    },
+    {
+      "date": "2026-08-10",
+      "clicks": 15,
+      "impressions": 245,
+      "ctr": 0.061200000000000004,
+      "position": 18.1
+    },
+    {
+      "date": "2026-08-11",
+      "clicks": 11,
+      "impressions": 295,
+      "ctr": 0.0373,
+      "position": 12.5
+    },
+    {
+      "date": "2026-08-12",
+      "clicks": 14,
+      "impressions": 248,
+      "ctr": 0.0565,
+      "position": 13.3
+    },
+    {
+      "date": "2026-08-13",
+      "clicks": 6,
+      "impressions": 260,
+      "ctr": 0.0231,
+      "position": 16
+    },
+    {
+      "date": "2026-08-14",
+      "clicks": 3,
+      "impressions": 181,
+      "ctr": 0.0166,
+      "position": 19.3
+    },
+    {
+      "date": "2026-08-15",
+      "clicks": 8,
+      "impressions": 432,
+      "ctr": 0.018500000000000003,
+      "position": 40.8
+    },
+    {
+      "date": "2026-08-16",
+      "clicks": 13,
+      "impressions": 621,
+      "ctr": 0.0209,
+      "position": 43.1
+    },
+    {
+      "date": "2026-08-17",
+      "clicks": 11,
+      "impressions": 485,
+      "ctr": 0.0227,
+      "position": 51
+    },
+    {
+      "date": "2026-08-18",
+      "clicks": 18,
+      "impressions": 765,
+      "ctr": 0.0235,
+      "position": 42.1
+    },
+    {
+      "date": "2026-08-19",
+      "clicks": 14,
+      "impressions": 812,
+      "ctr": 0.0172,
+      "position": 56.4
+    },
+    {
+      "date": "2026-08-20",
+      "clicks": 18,
+      "impressions": 921,
+      "ctr": 0.0195,
+      "position": 57.8
+    },
+    {
+      "date": "2026-08-21",
+      "clicks": 8,
+      "impressions": 791,
+      "ctr": 0.0101,
+      "position": 58.9
+    },
+    {
+      "date": "2026-08-22",
+      "clicks": 8,
+      "impressions": 484,
+      "ctr": 0.0165,
+      "position": 47.2
+    }
+  ]
+}

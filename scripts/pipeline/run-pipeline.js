@@ -5,6 +5,8 @@ const path = require('path');
 const matter = require('gray-matter');
 const { spawnSync } = require('child_process');
 
+const { writePublishBlockedTicket, shouldBlockDirectPublish } = require('../blogeo/lib/pipeline-handoff');
+
 const ROOT_DIR = path.join(__dirname, '..', '..');
 const PIPELINE_DIR = path.join(ROOT_DIR, 'pipeline');
 const RUNS_DIR = path.join(PIPELINE_DIR, 'runs');
@@ -560,6 +562,22 @@ function publishDraft(draftPath, slug, review) {
         return {
             published: false,
             reason: 'Target file already exists. Manual merge required.',
+            targetPath,
+            build: [],
+            reverted: false
+        };
+    }
+
+    if (shouldBlockDirectPublish()) {
+        const ticket = writePublishBlockedTicket({
+            draftPath,
+            slug,
+            reason: 'Legacy pipeline --publish was blocked. Human copies the draft after review.',
+        }, ROOT_DIR);
+        return {
+            published: false,
+            reason: `Direct publish is disabled. Wrote suggestion ${ticket.id}. Production writes go through node scripts/blogeo/cli.js apply --ticket <id>.`,
+            ticketId: ticket.id,
             targetPath,
             build: [],
             reverted: false

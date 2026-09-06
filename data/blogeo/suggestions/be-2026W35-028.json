@@ -1,0 +1,29 @@
+{
+  "id": "be-2026W35-028",
+  "status": "open",
+  "createdAt": "2026-08-24T17:26:43.311Z",
+  "week": "2026-W35",
+  "kind": "content-push",
+  "lever": "ctr",
+  "autoApply": false,
+  "url": "https://www.legacyinvestingshow.com/blog",
+  "path": "/blog",
+  "sourcePath": "blog/index.html",
+  "reason": "CTR leak on a non-markdown surface (blog/index.html).",
+  "suggestedAction": "Edit the JSON/HTML source of truth. apply-edit will not rewrite this surface.",
+  "gscBefore": {
+    "clicks": 0,
+    "impressions": 646,
+    "position": 7.13,
+    "ctr": 0
+  },
+  "gscSitewideBefore": {
+    "clicks": 875,
+    "impressions": 25237,
+    "ctr": 0.034671315925030706,
+    "position": 23.782906050639937,
+    "startDate": "2026-05-23",
+    "endDate": "2026-08-22"
+  },
+  "contentHash": "bea6812c0594629e4ca93cf6b48502d5e5ebcfff81a878732008b7bd0058bc62"
+}
