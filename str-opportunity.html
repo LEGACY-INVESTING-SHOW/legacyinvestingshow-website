@@ -138,6 +138,14 @@ footer p{font-size:12.5px;color:var(--mut);line-height:1.65;max-width:840px;marg
 #stories{background:var(--bg-soft)}.gallery-controls{display:flex;justify-content:flex-end;margin-top:20px}.gallery-toggle{border:1px solid var(--line-dk);border-radius:999px;background:white;color:var(--green);font:600 14px var(--sans);padding:10px 18px;cursor:pointer}.story-gallery{display:block;overflow-x:auto;margin-top:18px;padding-bottom:16px;scrollbar-width:thin;scrollbar-color:var(--green-line) transparent}.story-track{display:flex;gap:24px;width:max-content}.story{width:400px;flex:0 0 400px;padding:22px;background:white;border:1px solid var(--line);border-radius:14px}.story figcaption{font-size:18px;min-height:51px;margin-bottom:18px}.story-image{height:285px;border:0;border-radius:6px;display:flex;align-items:center;justify-content:center}.story-image img{width:100%;height:100%;object-fit:contain}.story-image:hover{opacity:.85}#stories .scope-note{margin-left:auto;margin-right:auto;text-align:center}
 #faq h2{margin-inline:auto;text-align:center}.faq{margin-inline:auto}.faq summary{justify-content:center;text-align:center;position:relative;padding:20px 32px}.faq summary:after{position:absolute;right:0}.faq .fa{margin-inline:auto;text-align:center}
 @media(max-width:700px){.arbitrage,.work-split{grid-template-columns:1fr;gap:24px}.arbitrage{margin-top:32px}.team-work,.client-work{padding:24px}.team-work ul{grid-template-columns:1fr 1fr;gap:8px}.team-work li{font-size:14px;padding:10px}.story{width:310px;flex-basis:310px;padding:18px}.story-image{height:270px}.arbitrage-number strong{font-size:40px}}
+/* Refined gallery controls and booking notice. */
+.faq summary{justify-content:flex-start;text-align:left;padding-left:0}
+.faq .fa{margin-left:0;text-align:left;max-width:none;padding-right:32px}
+#book .availability{border:1px solid var(--green-line);border-radius:16px;background:var(--green-tint);padding:26px 30px;max-width:100%}
+.availability h3{color:var(--green-dk)}.availability p{max-width:760px}
+.gallery-controls{gap:10px;align-items:center}.gallery-arrow{width:44px;height:44px;display:grid;place-items:center;border:1px solid var(--line-dk);border-radius:50%;background:white;color:var(--green);font:500 24px var(--sans);cursor:pointer}.gallery-arrow:hover,.gallery-toggle:hover{background:var(--green-tint);border-color:var(--green-line)}
+.gallery-toggle{min-width:152px;height:44px}.story-gallery{scrollbar-width:none;padding-bottom:0;mask-image:linear-gradient(to right,#000 0%,#000 95%,transparent 100%)}.story-gallery::-webkit-scrollbar{display:none}.story-track{position:relative}.story{box-shadow:0 8px 24px -20px rgba(16,24,21,.18)}
+@media(max-width:700px){#book .availability{padding:22px}.gallery-controls{justify-content:flex-start}.gallery-toggle{font-size:13px;min-width:140px}}
 </style>
 </head>
 <body>
@@ -186,8 +194,8 @@ footer p{font-size:12.5px;color:var(--mut);line-height:1.65;max-width:840px;marg
   <div class="wrap">
     <h2>From finding the property to welcoming your first guest.</h2>
     <div class="work-split">
-      <div class="team-work"><h3>Our team’s work</h3><ul><li>Market research</li><li>Rental demand and comps</li><li>Property and deal analysis</li><li>Local rules review</li><li>Purchase guidance</li><li>Lease review and negotiation help</li><li>Landlord scripts and coaching</li><li>Furnishing plan</li><li>Listing copy and setup</li><li>Pricing and calendar setup</li><li>Guest messaging setup</li><li>Operating systems and checklists</li><li>Launch support</li><li>Ongoing troubleshooting</li></ul></div>
-      <div class="client-work"><h3>Your part</h3><div><h4>If you buy</h4><p>Choose the property.</p></div><div><h4>If you lease</h4><p>Call the landlords with our scripts and coaching.</p></div><div class="client-common"><p>You approve decisions, provide the funds, and sign the documents. We guide you through the setup and explain what you’ll manage after launch.</p></div></div>
+      <div class="team-work"><h3>What we do</h3><ul><li>Market research</li><li>Rental demand and comps</li><li>Property and deal analysis</li><li>Local rules review</li><li>Purchase guidance</li><li>Lease review and negotiation help</li><li>Landlord scripts and coaching</li><li>Furnishing plan</li><li>Listing copy and setup</li><li>Pricing and calendar setup</li><li>Guest messaging setup</li><li>Operating systems and checklists</li><li>Launch support</li><li>Ongoing troubleshooting</li></ul></div>
+      <div class="client-work"><h3>What you do</h3><div><h4>If you buy</h4><p>Choose the property.</p></div><div><h4>If you lease</h4><p>Call the landlords with our scripts and coaching.</p></div><div class="client-common"><p>You approve decisions, provide the funds, and sign the documents. We guide you through the setup and explain what you’ll manage after launch.</p></div></div>
     </div>
   </div>
 </section>
@@ -196,7 +204,7 @@ footer p{font-size:12.5px;color:var(--mut);line-height:1.65;max-width:840px;marg
 <section id="stories">
   <div class="wrap">
     <h2>See what our members have built</h2>
-    <div class="gallery-controls"><button type="button" class="gallery-toggle" aria-pressed="false">Pause stories</button></div>
+    <div class="gallery-controls"><button type="button" class="gallery-arrow gallery-prev" aria-label="Previous member story">←</button><button type="button" class="gallery-toggle" aria-pressed="false">Pause scrolling</button><button type="button" class="gallery-arrow gallery-next" aria-label="Next member story">→</button></div>
     <div class="story-gallery" tabindex="0" aria-label="Member stories. Scroll horizontally to browse."><div class="story-track"><figure class="story"><figcaption>Alvaro signed a property agreement</figcaption><a class="story-image" href="/str-opportunity/assets/member-stories/member-2.png" target="_blank" rel="noopener"><img src="/str-opportunity/assets/member-stories/member-2.png" alt="Member update: Alvaro signed a property agreement" loading="lazy"></a></figure><figure class="story"><figcaption>$5,500 in net profit for one month</figcaption><a class="story-image" href="/str-opportunity/assets/member-stories/member-1.png" target="_blank" rel="noopener"><img src="/str-opportunity/assets/member-stories/member-1.png" alt="Member update: $5,500 in net profit for one month" loading="lazy"></a></figure><figure class="story"><figcaption>A signed lease and a new rental</figcaption><a class="story-image" href="/str-opportunity/assets/member-stories/member-3.jpeg" target="_blank" rel="noopener"><img src="/str-opportunity/assets/member-stories/member-3.jpeg" alt="Member update: A signed lease and a new rental" loading="lazy"></a></figure><figure class="story"><figcaption>About $1,800 in monthly cash flow</figcaption><a class="story-image" href="/str-opportunity/assets/member-stories/member-6.jpeg" target="_blank" rel="noopener"><img src="/str-opportunity/assets/member-stories/member-6.jpeg" alt="Member update: About $1,800 in monthly cash flow" loading="lazy"></a></figure><figure class="story"><figcaption>Matthew signed his first lease</figcaption><a class="story-image" href="/str-opportunity/assets/member-stories/story-11.png" target="_blank" rel="noopener"><img src="/str-opportunity/assets/member-stories/story-11.png" alt="Member update: Matthew signed his first lease" loading="lazy"></a></figure><figure class="story"><figcaption>Kayla won her first property pitch</figcaption><a class="story-image" href="/str-opportunity/assets/member-stories/story-15.png" target="_blank" rel="noopener"><img src="/str-opportunity/assets/member-stories/story-15.png" alt="Member update: Kayla won her first property pitch" loading="lazy"></a></figure><figure class="story"><figcaption>Johnny got the keys to his first rental</figcaption><a class="story-image" href="/str-opportunity/assets/member-stories/story-17.png" target="_blank" rel="noopener"><img src="/str-opportunity/assets/member-stories/story-17.png" alt="Member update: Johnny got the keys to his first rental" loading="lazy"></a></figure><figure class="story"><figcaption>Tarek launched his listing</figcaption><a class="story-image" href="/str-opportunity/assets/member-stories/story-18.png" target="_blank" rel="noopener"><img src="/str-opportunity/assets/member-stories/story-18.png" alt="Member update: Tarek launched his listing" loading="lazy"></a></figure><figure class="story"><figcaption>Kirk spotted his listing on Vrbo</figcaption><a class="story-image" href="/str-opportunity/assets/member-stories/story-19.png" target="_blank" rel="noopener"><img src="/str-opportunity/assets/member-stories/story-19.png" alt="Member update: Kirk spotted his listing on Vrbo" loading="lazy"></a></figure><figure class="story"><figcaption>Mark reported $9,500 in first-month bookings</figcaption><a class="story-image" href="/str-opportunity/assets/member-stories/story-20.png" target="_blank" rel="noopener"><img src="/str-opportunity/assets/member-stories/story-20.png" alt="Member update: Mark reported $9,500 in first-month bookings" loading="lazy"></a></figure></div></div>
   </div>
 </section>
@@ -266,18 +274,22 @@ footer p{font-size:12.5px;color:var(--mut);line-height:1.65;max-width:840px;marg
 (function(){
  const gallery=document.querySelector('.story-gallery'),track=gallery.querySelector('.story-track'),button=document.querySelector('.gallery-toggle');
  const motion=matchMedia('(prefers-reduced-motion: reduce)');
- let paused=motion.matches,hover=false,focus=false,visible=false,last=0;
+ let paused=motion.matches,hover=false,focus=false,visible=false,last=0,position=0,manualUntil=0;
  const originals=[...track.children];
  originals.forEach(card=>{const copy=card.cloneNode(true);copy.setAttribute('aria-hidden','true');copy.inert=true;track.appendChild(copy);});
- function label(){button.textContent=paused?'Play stories':'Pause stories';button.setAttribute('aria-pressed',String(paused));}
- label();button.addEventListener('click',()=>{paused=!paused;label();});
+ function loopWidth(){return track.children[originals.length].offsetLeft-track.children[0].offsetLeft;}
+ function label(){button.textContent=paused?'Resume scrolling':'Pause scrolling';button.setAttribute('aria-pressed',String(paused));}
+ function move(delta){const width=loopWidth();if(!width)return;position=((position+delta)%width+width)%width;gallery.scrollLeft=position;}
+ label();button.addEventListener('click',()=>{paused=!paused;position=gallery.scrollLeft;label();});
  motion.addEventListener('change',e=>{paused=e.matches;label();});
- gallery.addEventListener('mouseenter',()=>hover=true);gallery.addEventListener('mouseleave',()=>hover=false);
- gallery.addEventListener('focusin',()=>focus=true);gallery.addEventListener('focusout',()=>focus=false);
- gallery.addEventListener('touchstart',()=>{paused=true;label();},{passive:true});
+ gallery.addEventListener('mouseenter',()=>hover=true);gallery.addEventListener('mouseleave',()=>{hover=false;position=gallery.scrollLeft;});
+ gallery.addEventListener('focusin',()=>focus=true);gallery.addEventListener('focusout',e=>{focus=gallery.contains(e.relatedTarget);position=gallery.scrollLeft;});
+ function manual(){manualUntil=performance.now()+4000;}
+ gallery.addEventListener('touchstart',manual,{passive:true});gallery.addEventListener('touchmove',manual,{passive:true});gallery.addEventListener('wheel',manual,{passive:true});
  gallery.addEventListener('keydown',()=>{paused=true;label();});
+ document.querySelectorAll('.gallery-arrow').forEach(arrow=>arrow.addEventListener('click',()=>{position=gallery.scrollLeft;move((arrow.classList.contains('gallery-next')?1:-1)*(originals[1].offsetLeft-originals[0].offsetLeft));manual();}));
  new IntersectionObserver(entries=>visible=entries[0].isIntersecting).observe(gallery);
- function tick(now){const dt=Math.min(now-last,40);last=now;if(visible&&!paused&&!hover&&!focus){gallery.scrollLeft+=dt*.032;const loop=track.children[originals.length].offsetLeft-track.children[0].offsetLeft;if(gallery.scrollLeft>=loop)gallery.scrollLeft-=loop;}requestAnimationFrame(tick);}
+ function tick(now){const dt=Math.min(now-last,40);last=now;if(visible&&!paused&&!hover&&!focus&&now> manualUntil){move(dt*.135);}else{position=gallery.scrollLeft;}requestAnimationFrame(tick);}
  requestAnimationFrame(tick);
 })();
 </script>
