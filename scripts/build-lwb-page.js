@@ -31,12 +31,12 @@ function renderPage(template, data) {
         return `<div class="video-frame"><a href="https://vimeo.com/${video.id}" data-vimeo-id="${video.id}" aria-label="Watch ${escapeHtml(video.title)}" target="_blank" rel="noopener"><img src="${escapeHtml(video.thumbnail)}" alt="${escapeHtml(video.name || video.title)}" width="960" height="540" ${hero ? 'fetchpriority="high"' : 'loading="lazy"'}><span class="play-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3l15 9-15 9z"/></svg></span><span class="duration">${escapeHtml(duration)}</span></a></div>`;
     }
     function card(video, clip = false) {
-        return `<article class="story-card">${videoFrame(video)}<div class="story-copy"><h3>${escapeHtml(clip ? video.title : video.name || video.title)}</h3>${video.description ? `<p>${escapeHtml(video.description)}</p>` : ''}</div></article>`;
+        return `<article class="story-card">${videoFrame(video)}<div class="story-copy"><h3>${escapeHtml(clip ? video.title : video.name || video.title)}</h3>${clip ? '' : `<p>In conversation with Preston</p>`}</div></article>`;
     }
     const images = data.snapshots
         .map(
-            (snapshot) =>
-                `<figure class="plan-card"><a class="plan-image" href="${escapeHtml(snapshot.image)}" data-plan-image data-caption="${escapeHtml(snapshot.description)}" aria-label="Enlarge ${escapeHtml(snapshot.title)}" target="_blank" rel="noopener"><img src="${escapeHtml(snapshot.image)}" alt="${escapeHtml(snapshot.alt)}" width="${snapshot.width}" height="${snapshot.height}" loading="lazy"><span class="expand-icon" aria-hidden="true">↗</span></a><figcaption><h3>${escapeHtml(snapshot.title)}</h3><p>${escapeHtml(snapshot.description)}</p></figcaption></figure>`,
+            (snapshot, index) =>
+                `<figure class="plan-card${index === 0 ? ' plan-card-lead' : ''}"><a class="plan-image" href="${escapeHtml(snapshot.image)}" data-plan-image data-caption="${escapeHtml(snapshot.description)}" aria-label="Enlarge ${escapeHtml(snapshot.title)}" target="_blank" rel="noopener"><img src="${escapeHtml(snapshot.image)}" alt="${escapeHtml(snapshot.alt)}" width="${snapshot.width}" height="${snapshot.height}" loading="lazy"><span class="expand-icon" aria-hidden="true">Enlarge</span></a><figcaption><h3>${escapeHtml(snapshot.title)}</h3><p>${escapeHtml(snapshot.description)}</p></figcaption></figure>`,
         )
         .join('\n');
     const replacements = {
@@ -46,7 +46,12 @@ function renderPage(template, data) {
             .join('\n'),
         CLIP_VIDEOS: data.clips.map((video) => card(video, true)).join('\n'),
         PLAN_IMAGES: images,
-        CLIENT_QUOTE: `<blockquote class="client-quote"><p>“${escapeHtml(data.quotes[0].quote)}”</p><footer>${escapeHtml(data.quotes[0].person)} · ${escapeHtml(data.quotes[0].date)}</footer></blockquote>`,
+        CLIENT_QUOTE: data.quotes
+            .map(
+                (item, index) =>
+                    `<blockquote class="client-quote${index === 0 ? ' client-quote-lead' : ''}"><p>“${escapeHtml(item.quote)}”</p><footer>${escapeHtml(item.person)}, ${escapeHtml(item.date)}</footer></blockquote>`,
+            )
+            .join('\n'),
     };
     for (const [token, html] of Object.entries(replacements)) {
         if (!template.includes(`{{${token}}}`))

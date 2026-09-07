@@ -14,6 +14,10 @@ The four success-stories videos are included once each. The existing Abigail ID 
 
 The copy distinguishes projected plan figures from realized results and retains Stephanie's qualification that the program was not solely responsible for her refund. The current offer document does not specify guarantee terms, so the FAQ directs readers to confirm the current written terms instead of repeating an unqualified return promise.
 
+## Design (Sep 7, 2026 pass)
+
+The page uses the forest green and gold from the walkthrough video, with ivory and paper sections between the green ones. Type is Literata for headings and Hanken Grotesk for body copy. Colors are OKLCH tokens at the top of the CSS. The plan section leads with one full-width snapshot and two smaller ones. The client section renders every quote in the JSON, with the first quote set large. Copy was rewritten so each heading carries a claim and the one action on the page is to watch the walkthrough before the call.
+
 ## Maintenance
 
 Edit `templates/legacy-wealth-blueprint.html` for page copy and structure and `data/lwb-success-stories.json` for videos and snapshots. `npm run build:lwb` generates the root HTML. The full build runs this step before tracking and metadata normalization. Page CSS and behavior are in `assets/css/legacy-wealth-blueprint.css` and `assets/js/legacy-wealth-blueprint.js`.
