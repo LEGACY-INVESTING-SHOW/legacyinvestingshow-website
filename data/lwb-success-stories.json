@@ -1,0 +1,158 @@
+{
+  "sourceUrl": "https://www.lwblive.com/successstories",
+  "sourceRepository": "https://github.com/LEGACY-INVESTING-SHOW/str-webinar",
+  "verifiedDate": "2026-09-07",
+  "hero": {
+    "id": "1177459394",
+    "provider": "vimeo",
+    "title": "the Blueprint walkthrough with Preston",
+    "name": "Preston Seo",
+    "duration": 678,
+    "thumbnail": "/assets/images/lwb-proof/video-1177459394.jpg",
+    "sourceTitle": "LWB PRE-CALL PITCH VSL_2",
+    "metadataSource": "https://vimeo.com/api/oembed.json?url=https://vimeo.com/1177459394"
+  },
+  "interviews": [
+    {
+      "id": "1207907513",
+      "provider": "vimeo",
+      "title": "Stephanie’s experience",
+      "name": "Stephanie Dailey",
+      "duration": 1367,
+      "thumbnail": "/assets/images/lwb-proof/video-1207907513.jpg",
+      "sourceTitle": "stephanie dailey testimonial call",
+      "metadataSource": "https://vimeo.com/api/oembed.json?url=https://vimeo.com/1207907513"
+    },
+    {
+      "id": "1207906800",
+      "provider": "vimeo",
+      "title": "Albert’s experience",
+      "name": "Albert",
+      "duration": 1564,
+      "thumbnail": "/assets/images/lwb-proof/video-1207906800.jpg",
+      "sourceTitle": "cb8b92a3bc164166be663825357bf654",
+      "metadataSource": "https://vimeo.com/api/oembed.json?url=https://vimeo.com/1207906800"
+    },
+    {
+      "id": "1124934002",
+      "provider": "vimeo",
+      "title": "Abigail’s experience",
+      "name": "Abigail",
+      "duration": 1725,
+      "thumbnail": "/assets/images/lwb-proof/video-1124934002.jpg",
+      "sourceTitle": "PRESTON X ABIGAIL_1",
+      "metadataSource": "https://vimeo.com/api/oembed.json?url=https://vimeo.com/1124934002"
+    },
+    {
+      "id": "1210332705",
+      "provider": "vimeo",
+      "title": "Shawn on the value of his Blueprint",
+      "name": "Shawn",
+      "duration": 83,
+      "thumbnail": "/assets/images/lwb-proof/video-1210332705.jpg",
+      "sourceTitle": "Shawn - ROI new",
+      "metadataSource": "https://vimeo.com/api/oembed.json?url=https://vimeo.com/1210332705"
+    }
+  ],
+  "clips": [
+    {
+      "id": "1124930953",
+      "provider": "vimeo",
+      "title": "Shawn on his next step",
+      "name": "Shawn",
+      "duration": 60,
+      "thumbnail": "/assets/images/lwb-proof/video-1124930953.jpg",
+      "sourceTitle": "Shawn - next step",
+      "metadataSource": "https://vimeo.com/api/oembed.json?url=https://vimeo.com/1124930953"
+    },
+    {
+      "id": "1124933172",
+      "provider": "vimeo",
+      "title": "Shawn on his results",
+      "name": "Shawn",
+      "duration": 23,
+      "thumbnail": "/assets/images/lwb-proof/video-1124933172.jpg",
+      "sourceTitle": "Shawn - ROI",
+      "metadataSource": "https://vimeo.com/api/oembed.json?url=https://vimeo.com/1124933172"
+    }
+  ],
+  "snapshots": [
+    {
+      "id": "case-006",
+      "title": "W-2 income and a new business",
+      "image": "/assets/images/lwb-proof/case-006.webp",
+      "alt": "A plan for a working couple shown in a redacted educational wealth snapshot",
+      "description": "A redacted plan for a married couple with W-2 income and a new LLC, exploring tax efficiency, investing, and a long-term wealth goal.",
+      "width": 920,
+      "height": 550,
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-006.webp",
+      "classification": "Illustrative planning scenario, not an achieved member result"
+    },
+    {
+      "id": "case-027",
+      "title": "Home equity, debt, and taxes",
+      "image": "/assets/images/lwb-proof/case-027.webp",
+      "alt": "A plan built around an existing financial picture shown in a redacted educational wealth snapshot",
+      "description": "A redacted executive summary tailored to W-2 income, a new LLC, home equity, and debt.",
+      "width": 920,
+      "height": 276,
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-027.webp",
+      "classification": "Illustrative planning scenario, not an achieved member result"
+    },
+    {
+      "id": "case-064",
+      "title": "From a foundation to a growth plan",
+      "image": "/assets/images/lwb-proof/case-064.webp",
+      "alt": "A plan with a clear order of priorities shown in a redacted educational wealth snapshot",
+      "description": "A redacted plan for a W-2 employee compares a foundation scenario with a growth scenario, starting with debt, reserves, and retirement contributions.",
+      "width": 920,
+      "height": 550,
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-064.webp",
+      "classification": "Illustrative planning scenario, not an achieved member result"
+    }
+  ],
+  "quotes": [
+    {
+      "title": "Tax refund after implementing the strategies",
+      "quote": "$20k tax refund after implementing the tax strategies and advice here. That was not solely because of this course but the course helped a lot. It helped me get off my rear and get more organized.",
+      "person": "Stephanie Dailey",
+      "date": "Mar 2026"
+    },
+    {
+      "title": "Credit score, from one utilization change",
+      "quote": "Before I got to Module 2, I used to wait for the statement balance and then pay it off in full. But after learning more, I started paying it down before the statement closes to lower my credit utilization - and it boosted my score by 50 points!",
+      "person": "Ivanka Sangria",
+      "date": "Jun 2025"
+    },
+    {
+      "title": "Putting the customized blueprint into action",
+      "quote": "Went over customized wealth blueprint with Jeff. Much kudos to Jeff! He was very thorough and provided lots of helpful information. Going to view rental properties tomorrow.",
+      "person": "Nim Shahid",
+      "date": "Feb 2026"
+    },
+    {
+      "title": "Completed all modules - and acted on all of them",
+      "quote": "I have set up recurrent automatic investments for DCA, rebalanced my 401K portfolio, frozen my credit with the 3 credit bureaus, and asked about the back door Roth IRA option. My next step is to establish a 2-3 year cash reserve fund.",
+      "person": "Valerie Ann Hopkins",
+      "date": "Mar 2026"
+    }
+  ],
+  "deduplication": [
+    {
+      "kept": "1210332705",
+      "replaced": "1124930840",
+      "reason": "Both provider records use title Shawn - ROI new, duration 83 seconds, and show the same interview setting, caption style, and opening exchange in thumbnails. Keep current successstories version, omit older upload."
+    },
+    {
+      "kept": "1124934002",
+      "reason": "Exact same Vimeo ID was already on target page. Include once."
+    }
+  ],
+  "sourceVideoIds": [
+    "1207907513",
+    "1207906800",
+    "1124934002",
+    "1210332705"
+  ],
+  "sourceCaseStudyCount": 72
+}
