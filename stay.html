@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>You're Still on the List</title>
+  <meta name="description" content="Thanks for confirming. You'll continue receiving emails about investing, taxes, real estate, and wealth building.">
+  <style>
+    :root {
+      --ink: #182d27;
+      --muted: #61736d;
+      --paper: #fbf7ef;
+      --panel: #ffffff;
+      --line: rgba(24, 45, 39, 0.12);
+      --gold: #b87835;
+      --green: #2d604a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      color: var(--ink);
+      background:
+        linear-gradient(135deg, rgba(184, 120, 53, 0.14), transparent 34%),
+        linear-gradient(225deg, rgba(45, 96, 74, 0.14), transparent 36%),
+        var(--paper);
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+    }
+
+    main {
+      width: min(680px, 100%);
+      padding: clamp(32px, 6vw, 56px);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 24px 70px rgba(24, 45, 39, 0.1);
+      text-align: center;
+    }
+
+    .mark {
+      width: 52px;
+      height: 52px;
+      display: inline-grid;
+      place-items: center;
+      margin-bottom: 24px;
+      border-radius: 50%;
+      background: rgba(45, 96, 74, 0.12);
+      color: var(--green);
+      font-size: 28px;
+      line-height: 1;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 6vw, 3.4rem);
+      line-height: 1.05;
+      font-weight: 700;
+    }
+
+    p {
+      max-width: 540px;
+      margin: 18px auto 0;
+      color: var(--muted);
+      font-size: clamp(1rem, 2.5vw, 1.15rem);
+      line-height: 1.7;
+    }
+
+    .rule {
+      width: 76px;
+      height: 3px;
+      margin: 28px auto 0;
+      border-radius: 99px;
+      background: linear-gradient(90deg, var(--gold), var(--green));
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark" aria-hidden="true">&#10003;</div>
+    <h1>You're still on the list.</h1>
+    <p>Thanks for confirming. You'll continue receiving emails from me about investing, taxes, real estate, and wealth building</p>
+    <div class="rule" aria-hidden="true"></div>
+  </main>
+</body>
+</html>
