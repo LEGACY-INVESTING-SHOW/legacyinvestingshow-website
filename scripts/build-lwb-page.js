@@ -1,4 +1,5 @@
 const fs = require('fs');
+const crypto = require('node:crypto');
 const path = require('path');
 const ROOT_DIR = path.join(__dirname, '..');
 
@@ -57,6 +58,17 @@ function renderPage(template, data) {
         if (!template.includes(`{{${token}}}`))
             throw new Error(`Missing LWB template token: ${token}`);
         template = template.replace(`{{${token}}}`, html);
+    }
+    // These paths have a one-year immutable cache policy on Vercel.
+    // A content hash makes returning browsers request each changed asset.
+    for (const asset of [
+        'assets/css/legacy-wealth-blueprint.css',
+        'assets/js/legacy-wealth-blueprint.js',
+    ]) {
+        const version = crypto.createHash('sha256')
+            .update(fs.readFileSync(path.join(ROOT_DIR, asset)))
+            .digest('hex').slice(0, 12);
+        template = template.replace(`/${asset}`, `/${asset}?v=${version}`);
     }
     return template;
 }

@@ -37,3 +37,16 @@ test('rejects duplicate or malformed video IDs before producing a page', () => {
     malformed.hero.id = 'invalid';
     assert.throws(() => renderPage(template, malformed), /Invalid/);
 });
+
+
+test('versions immutable CSS and JavaScript URLs using their current content', () => {
+    const crypto = require('node:crypto');
+    const html = renderPage(template, data);
+    for (const asset of ['assets/css/legacy-wealth-blueprint.css', 'assets/js/legacy-wealth-blueprint.js']) {
+        const hash = crypto.createHash('sha256')
+            .update(fs.readFileSync(path.join(__dirname, '..', asset)))
+            .digest('hex').slice(0, 12);
+        assert.ok(html.includes(`/${asset}?v=${hash}`));
+        assert.ok(!html.includes(`/${asset}"`));
+    }
+});
