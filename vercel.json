@@ -521,6 +521,46 @@
   ],
   "redirects": [
     {
+      "source": "/funnels/airbnbascension",
+      "destination": "/airbnbascension",
+      "permanent": true
+    },
+    {
+      "source": "/funnels/airbnbascension/",
+      "destination": "/airbnbascension",
+      "permanent": true
+    },
+    {
+      "source": "/funnels/lwbprogram",
+      "destination": "/lwbprogram",
+      "permanent": true
+    },
+    {
+      "source": "/funnels/lwbprogram/",
+      "destination": "/lwbprogram",
+      "permanent": true
+    },
+    {
+      "source": "/funnels/programroi",
+      "destination": "/programroi",
+      "permanent": true
+    },
+    {
+      "source": "/funnels/programroi/",
+      "destination": "/programroi",
+      "permanent": true
+    },
+    {
+      "source": "/funnels/strconcierge",
+      "destination": "/strconcierge",
+      "permanent": true
+    },
+    {
+      "source": "/funnels/strconcierge/",
+      "destination": "/strconcierge",
+      "permanent": true
+    },
+    {
       "source": "/tax-strategies/depreciation-recapture",
       "destination": "/blog/rental-property-depreciation-deduction-guide",
       "permanent": true
