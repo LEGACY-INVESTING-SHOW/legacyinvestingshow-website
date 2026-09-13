@@ -304,6 +304,33 @@ function articleSchema(page, isoDate) {
   };
 }
 
+function breadcrumbSchema(page) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://www.legacyinvestingshow.com/',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Compare',
+        item: 'https://www.legacyinvestingshow.com/compare',
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: page.title,
+        item: `https://www.legacyinvestingshow.com/compare/${page.slug}`,
+      },
+    ],
+  };
+}
+
 function faqSchema(page) {
   return {
     '@context': 'https://schema.org',
@@ -353,6 +380,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
     <link rel="stylesheet" href="/assets/css/styles.css">
 
     <script type="application/ld+json">${JSON.stringify(articleSchema(page, isoDate))}</script>
+    <script type="application/ld+json">${JSON.stringify(breadcrumbSchema(page))}</script>
     <script type="application/ld+json">${JSON.stringify(faqSchema(page))}</script>
 
     ${renderAnalyticsHead({ gaTrackingId: GA_TRACKING_ID, gtmContainerId: GTM_CONTAINER_ID })}

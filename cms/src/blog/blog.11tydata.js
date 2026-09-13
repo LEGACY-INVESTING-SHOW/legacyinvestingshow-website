@@ -114,86 +114,6 @@ function pageLabelFor(data) {
     return `${data.category || 'Strategy'} Guide`;
 }
 
-function guideIntroFor(data) {
-    const category = data.category || '';
-
-    if (isToolLikePage(data)) {
-        if (category === 'Tax Strategies') {
-            return 'The calculator is the easy part. The expensive part is triggering tax before you understand the second-order effects.';
-        }
-
-        if (category === 'Retirement') {
-            return 'Withdrawal math gets expensive when you optimize one year and ignore the next twenty.';
-        }
-
-        if (category === 'Debt Management') {
-            return 'Debt plans fail when the numbers look clean on paper but the payment rhythm breaks in real life.';
-        }
-
-        if (category === 'Passive Income' || category === 'Airbnb Arbitrage' || category === 'Real Estate') {
-            return 'Good deal math is not the base case. Good deal math is what still works when occupancy drops, costs rise, or your operator habits slip.';
-        }
-    }
-
-    if (isComparisonLikePage(data)) {
-        return 'The wrong option usually looks fine until timing, taxes, or execution pressure shows up.';
-    }
-
-    return 'The point of this page is not more information. The point is better judgment before you act.';
-}
-
-function checklistFor(data) {
-    const category = data.category || '';
-
-    if (isToolLikePage(data)) {
-        if (category === 'Tax Strategies') {
-            return [
-                'Model the tax bill before you trigger it.',
-                'Check cliffs like IRMAA, phaseouts, and state tax changes.',
-                'Bring cleaner numbers to your CPA before you file.'
-            ];
-        }
-
-        if (category === 'Retirement') {
-            return [
-                'Sequence withdrawals across tax buckets, not just account balances.',
-                'Stress-test low-return years before you lock the plan.',
-                'Watch IRMAA, RMD, and survivor-filing pressure at the same time.'
-            ];
-        }
-
-        if (category === 'Debt Management') {
-            return [
-                'Use real balances, rates, and minimums, not rough guesses.',
-                'Build a payment plan that survives a bad month.',
-                'Know when consolidation, transfer offers, or a hybrid strategy changes the math.'
-            ];
-        }
-
-        if (category === 'Passive Income' || category === 'Airbnb Arbitrage' || category === 'Real Estate') {
-            return [
-                'Underwrite the downside before you sign the lease or close the deal.',
-                'Separate vanity revenue from actual cash flow.',
-                'Set the reserve number that keeps the property alive during weak months.'
-            ];
-        }
-    }
-
-    if (isComparisonLikePage(data)) {
-        return [
-            'Clarify what winning means before you compare options.',
-            'Pressure-test the weaker scenario, not just the best case.',
-            'Review the decision with your advisor before execution starts.'
-        ];
-    }
-
-    return [
-        'Pull the real numbers first.',
-        'Run a base case and a stress case.',
-        'Use the result to make a cleaner decision, not a faster emotional one.'
-    ];
-}
-
 function railNoteTitleFor(data) {
     if (isToolLikePage(data)) {
         return 'A clean model beats a clever guess.';
@@ -271,8 +191,6 @@ module.exports = {
         faqs: (data) => data.faqs || data.faq || [],
         isToolPage: (data) => isToolLikePage(data),
         pageLabel: (data) => pageLabelFor(data),
-        guideIntro: (data) => guideIntroFor(data),
-        guideChecklist: (data) => checklistFor(data),
         railNoteTitle: (data) => railNoteTitleFor(data),
         railNoteBody: (data) => railNoteBodyFor(data),
         wordCount: (data) => {

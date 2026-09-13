@@ -115,15 +115,9 @@ Representative tools:
 - https://www.legacyinvestingshow.com/tools/mortgage-payment
 - https://www.legacyinvestingshow.com/tools/capital-gains-tax-estimate
 - https://www.legacyinvestingshow.com/tools/renters-insurance-cost
-- https://www.legacyinvestingshow.com/tools/auto-insurance-annual-cost
-- https://www.legacyinvestingshow.com/tools/pet-insurance-comparison
 - https://www.legacyinvestingshow.com/tools/emergency-fund-target
 - https://www.legacyinvestingshow.com/tools/retirement-income-runway
 - https://www.legacyinvestingshow.com/tools/payroll-withholding-estimate
-- https://www.legacyinvestingshow.com/renters-insurance
-- https://www.legacyinvestingshow.com/renters-insurance/kentucky
-- https://www.legacyinvestingshow.com/markets
-- https://www.legacyinvestingshow.com/markets/austin-tx
 
 Companion guides:
 - https://www.legacyinvestingshow.com/blog/how-much-is-renters-insurance-cost-guide

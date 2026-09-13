@@ -156,7 +156,7 @@
         .article-intro-card {
             display: grid;
             gap: 1.5rem;
-            grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+            grid-template-columns: minmax(0, 1fr);
             margin-bottom: 1.8rem;
             padding: 1.6rem 1.75rem;
             border-radius: 28px;
@@ -185,9 +185,39 @@
 
         .article-intro-card__copy {
             margin: 0;
-            color: var(--text-secondary);
-            font-size: 1rem;
-            line-height: 1.78;
+            color: var(--text-primary);
+            font-size: 1.15rem;
+            line-height: 1.6;
+        }
+
+        .related-guides {
+            margin: 2rem 0 0;
+            padding: 1.25rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 1rem;
+            background: #f8fafc;
+        }
+
+        .related-guides__title {
+            margin: 0 0 0.75rem;
+            color: #111827;
+            font-size: 1.2rem;
+        }
+
+        .related-guides__list {
+            margin: 0;
+            padding-left: 1.1rem;
+            list-style: disc;
+            color: #374151;
+        }
+
+        .related-guides__list li {
+            margin-bottom: 0.55rem;
+        }
+
+        .related-guides__list a {
+            color: #0f766e;
+            text-decoration: underline;
         }
 
         .article-intro-card__list {
@@ -894,21 +924,15 @@
                         </picture>
                     </div>
 
-                    <section class="article-intro-card" aria-label="How to use this guide">
+                    
+                    
+                    <section class="article-intro-card" aria-label="Quick answer">
                         <div>
-                            <p class="article-intro-card__eyebrow">Use This Like a Tool</p>
-                            <h2 class="article-intro-card__title">The point of this page is not more information. The point is better judgment before you act.</h2>
+                            <p class="article-intro-card__eyebrow">Quick answer</p>
+                            <p class="article-intro-card__copy">Compound interest turns $120,000 of $500 monthly contributions into about $260,000 in 20 years at 7%. See the math, the Rule of 72, and what eats growth.</p>
                         </div>
-                        <ul class="article-intro-card__list">
-                            
-                            <li>Pull the real numbers first.</li>
-                            
-                            <li>Run a base case and a stress case.</li>
-                            
-                            <li>Use the result to make a cleaner decision, not a faster emotional one.</li>
-                            
-                        </ul>
                     </section>
+                    
 
                     <div class="minimal-content">
                         <p>The account statement surprises you in year 20, not year 5. In year 5 the balance looks like contributions with a small bonus attached. By year 20 the growth has outrun the contributions, and the account earns more in a single year than you deposit in most years. That is compound interest, and it is the closest thing to a free worker in personal finance.</p>
@@ -1034,6 +1058,24 @@
 <p>Start the contributions, leave the growth alone, and keep the costs low. The <a href="/tools/compound-savings-growth">compound savings calculator</a> shows your 20-year number, and the <a href="/tools/categories/money">investing calculators</a> cover the rest of the account. The statement will not be exciting in year 5. It will be hard to believe in year 20.</p>
 
                     </div>
+
+                    
+                    
+                    <nav class="related-guides" aria-label="Related guides">
+                        <h2 class="related-guides__title">Related guides</h2>
+                        <ul class="related-guides__list">
+                            
+                            <li><a href="/blog/apy-vs-interest-rate-guide">APY vs Interest Rate: What Your Savings Account Really Pays</a></li>
+                            
+                            <li><a href="/blog/emergency-fund-how-many-months-is-enough">Emergency Fund: How Many Months Is Enough?</a></li>
+                            
+                            <li><a href="/blog/how-to-calculate-net-worth">How to Calculate Net Worth: The Balance Sheet That Matters</a></li>
+                            
+                            <li><a href="/blog/investment-fee-drag-guide">Investment Fee Drag: What a 1% Fee Really Costs</a></li>
+                            
+                        </ul>
+                    </nav>
+                    
 
                     <section class="source-note" aria-label="Primary sources" style="margin: 2rem 0 0; padding: 1.25rem; border: 1px solid #e5e7eb; border-radius: 1rem; background: #f8fafc;">
             <h2 style="margin: 0 0 0.75rem; font-size: 1.2rem; color: #111827;">Sources To Check Before You Act</h2>

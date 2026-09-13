@@ -17,20 +17,6 @@ function siteUrl(pathname) {
     return `${SITE_ORIGIN}${cleaned}`;
 }
 
-function rentersInsurancePath(stateSlug) {
-    if (!stateSlug) {
-        return '/renters-insurance';
-    }
-    return `/renters-insurance/${stateSlug}`;
-}
-
-function marketPath(citySlug) {
-    if (!citySlug) {
-        return '/markets';
-    }
-    return `/markets/${citySlug}`;
-}
-
 function personaPath(slug) {
     if (PERSONA_MIGRATIONS[slug]) {
         return PERSONA_MIGRATIONS[slug];
@@ -46,8 +32,6 @@ module.exports = {
     SITE_ORIGIN,
     PERSONA_MIGRATIONS,
     siteUrl,
-    rentersInsurancePath,
-    marketPath,
     personaPath,
     comparisonPath,
 };

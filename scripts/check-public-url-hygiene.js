@@ -24,8 +24,6 @@ const PUBLIC_TEXT_SURFACES = [
 ];
 
 const PUBLIC_HTML_ROOTS = [
-    'renters-insurance',
-    'markets',
     'compare',
     'tax-strategies',
     'topics',
@@ -107,64 +105,34 @@ function collectFailures() {
         }
     }
 
-    const kentucky = path.join(ROOT_DIR, 'renters-insurance', 'kentucky.html');
-    if (!fs.existsSync(kentucky)) {
-        failures.push('renters-insurance/kentucky.html is missing');
-    } else {
-        const html = fs.readFileSync(kentucky, 'utf8');
-        if (!html.includes('canonical" href="https://www.legacyinvestingshow.com/renters-insurance/kentucky"')) {
-            failures.push('Kentucky canonical is not /renters-insurance/kentucky');
-        }
-        if (!/Louisville/i.test(html)) {
-            failures.push('Kentucky page has no Louisville-specific copy');
-        }
-        if (!html.includes('FAQPage')) {
-            failures.push('Kentucky page is missing FAQPage schema');
-        }
-        if (html.includes('Verify tax decisions')) {
-            failures.push('Kentucky insurance page still uses the tax-advisor footer');
-        }
-    }
-
-    const austin = path.join(ROOT_DIR, 'markets', 'austin-tx.html');
-    if (!fs.existsSync(austin)) {
-        failures.push('markets/austin-tx.html is missing');
-    } else {
-        const html = fs.readFileSync(austin, 'utf8');
-        if (html.includes('Programmatic Pages')) {
-            failures.push('Austin market page still uses a Programmatic Pages breadcrumb');
-        }
-        if (!html.includes('canonical" href="https://www.legacyinvestingshow.com/markets/austin-tx"')) {
-            failures.push('Austin canonical is not /markets/austin-tx');
-        }
-        if (html.includes('Priority market')) {
-            failures.push('Austin page still shows generator Priority market pills');
-        }
-    }
-
     const sitemapPages = fs.readFileSync(path.join(ROOT_DIR, 'sitemap-pages.xml'), 'utf8');
-    if (!sitemapPages.includes('https://www.legacyinvestingshow.com/renters-insurance/kentucky')) {
-        failures.push('sitemap-pages.xml is missing the Kentucky URL');
+    if (sitemapPages.includes('https://www.legacyinvestingshow.com/renters-insurance/')) {
+        failures.push('sitemap-pages.xml still lists retired renters-insurance URLs');
     }
-    if (!sitemapPages.includes('https://www.legacyinvestingshow.com/markets/austin-tx')) {
-        failures.push('sitemap-pages.xml is missing the Austin URL');
+    if (sitemapPages.includes('https://www.legacyinvestingshow.com/markets')) {
+        failures.push('sitemap-pages.xml still lists retired markets URLs');
     }
 
     const llms = fs.readFileSync(path.join(ROOT_DIR, 'llms.txt'), 'utf8');
-    if (!llms.includes('https://www.legacyinvestingshow.com/renters-insurance/kentucky')) {
-        failures.push('llms.txt is missing the Kentucky URL');
+    if (llms.includes('https://www.legacyinvestingshow.com/renters-insurance/')) {
+        failures.push('llms.txt still lists retired renters-insurance URLs');
     }
-    if (!llms.includes('https://www.legacyinvestingshow.com/markets/austin-tx')) {
-        failures.push('llms.txt is missing the Austin URL');
+    if (llms.includes('https://www.legacyinvestingshow.com/markets')) {
+        failures.push('llms.txt still lists retired markets URLs');
     }
 
     const vercel = JSON.parse(fs.readFileSync(path.join(ROOT_DIR, 'vercel.json'), 'utf8'));
     const redirectSources = (vercel.redirects || []).map((rule) => rule.source);
-    if (!redirectSources.includes('/programmatic-pages/insurance/renters-:state')) {
-        failures.push('vercel.json is missing the renters state redirect');
+    for (const required of ['/renters-insurance', '/renters-insurance/:path*', '/markets', '/markets/:path*']) {
+        if (!redirectSources.includes(required)) {
+            failures.push(`vercel.json is missing the ${required} redirect`);
+        }
     }
-    if (!redirectSources.includes('/programmatic-pages/cities/:slug')) {
-        failures.push('vercel.json is missing the city market redirect');
+    const chained = (vercel.redirects || []).filter((rule) => (
+        /^\/(renters-insurance|markets)(\/|$)/.test(rule.destination || '')
+    ));
+    if (chained.length > 0) {
+        failures.push('vercel.json still redirects into retired renters-insurance/markets URLs');
     }
 
     return failures;

@@ -12,6 +12,8 @@ const path = require('path');
 
 const ROOT_DIR = path.join(__dirname, '..');
 const BLOG_DIR = path.join(ROOT_DIR, 'blog');
+const TOOLS_DIR = path.join(ROOT_DIR, 'tools');
+const TOOL_CATEGORIES_DIR = path.join(TOOLS_DIR, 'categories');
 const POLICY_PATH = path.join(ROOT_DIR, 'data', 'indexation-policy.json');
 const SITE_URL = process.env.SITE_URL || 'https://www.legacyinvestingshow.com';
 
@@ -144,6 +146,157 @@ function applyToCategory(filePath) {
     return null;
 }
 
+const toolPolicy = (() => {
+    const entry = policy.noindexToolSlugs;
+    if (!entry) {
+        return { slugs: [], robots: 'noindex, follow', minPerHub: 3 };
+    }
+
+    const slugs = Array.isArray(entry) ? entry : (entry.slugs || []);
+    return {
+        slugs,
+        robots: (!Array.isArray(entry) && entry.robots) || 'noindex, follow',
+        minPerHub: (!Array.isArray(entry) && entry.minIndexableToolsPerCategoryHub) || 3,
+    };
+})();
+
+function escapeRegExp(value) {
+    return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+/**
+ * Set a robots meta inside <head>. Tools HTML is a minified single-line
+ * Next.js export, so this works on markup without line breaks.
+ */
+function setRobotsMeta(html, robots) {
+    const tag = `<meta name="robots" content="${robots}">`;
+
+    if (/<meta\s+name=["']robots["'][^>]*>/i.test(html)) {
+        return html.replace(/<meta\s+name=["']robots["'][^>]*>/i, tag);
+    }
+
+    return html.replace(/<head(\s[^>]*)?>/i, (match) => `${match}${tag}`);
+}
+
+/**
+ * Remove whole <a>...</a> listing cards that point at a given path.
+ * Tool and category cards never nest another anchor, so the lazy match is safe.
+ */
+function removeLinksTo(html, hrefs) {
+    let next = html;
+
+    for (const href of hrefs) {
+        const pattern = new RegExp(`<a\\b[^>]*href="${escapeRegExp(href)}"[^>]*>[\\s\\S]*?<\\/a>`, 'g');
+        next = next.replace(pattern, '');
+    }
+
+    return next;
+}
+
+function updateCategoryCount(html, categorySlug, count) {
+    const pattern = new RegExp(
+        `(id="cat-${escapeRegExp(categorySlug)}"[^>]*>[^<]*<span[^>]*>)\\d+(<\\/span>)`
+    );
+
+    return html.replace(pattern, `$1${count}$2`);
+}
+
+function toolSlugsLinkedFrom(html, knownSlugs) {
+    const found = new Set();
+    const pattern = /href="\/tools\/([a-z0-9-]+)"/g;
+    let match;
+
+    while ((match = pattern.exec(html)) !== null) {
+        if (knownSlugs.has(match[1])) {
+            found.add(match[1]);
+        }
+    }
+
+    return found;
+}
+
+function applyToTools() {
+    if (!fs.existsSync(TOOLS_DIR) || toolPolicy.slugs.length === 0) {
+        return;
+    }
+
+    const knownSlugs = new Set(
+        fs.readdirSync(TOOLS_DIR, { withFileTypes: true })
+            .filter((entry) => entry.isFile() && entry.name.endsWith('.html') && entry.name !== 'index.html')
+            .map((entry) => path.basename(entry.name, '.html'))
+    );
+
+    const noindexSlugs = toolPolicy.slugs.filter((slug) => knownSlugs.has(slug));
+    const missing = toolPolicy.slugs.filter((slug) => !knownSlugs.has(slug));
+    if (missing.length > 0) {
+        console.warn(`Indexation policy lists tool slugs with no HTML file: ${missing.join(', ')}`);
+    }
+
+    let taggedTools = 0;
+    for (const slug of noindexSlugs) {
+        const filePath = path.join(TOOLS_DIR, `${slug}.html`);
+        const original = fs.readFileSync(filePath, 'utf8');
+        const updated = setRobotsMeta(original, toolPolicy.robots);
+        if (updated !== original) {
+            fs.writeFileSync(filePath, updated, 'utf8');
+        }
+        taggedTools += 1;
+    }
+
+    const noindexSet = new Set(noindexSlugs);
+    const removableToolHrefs = noindexSlugs.map((slug) => `/tools/${slug}`);
+    const hubCounts = new Map();
+    const noindexHubs = [];
+
+    if (fs.existsSync(TOOL_CATEGORIES_DIR)) {
+        for (const entry of fs.readdirSync(TOOL_CATEGORIES_DIR, { withFileTypes: true })) {
+            if (!entry.isFile() || !entry.name.endsWith('.html')) continue;
+
+            const categorySlug = path.basename(entry.name, '.html');
+            const filePath = path.join(TOOL_CATEGORIES_DIR, entry.name);
+            const original = fs.readFileSync(filePath, 'utf8');
+
+            const linked = toolSlugsLinkedFrom(original, knownSlugs);
+            const remaining = [...linked].filter((slug) => !noindexSet.has(slug));
+            hubCounts.set(categorySlug, remaining.length);
+
+            let updated = removeLinksTo(original, removableToolHrefs);
+            updated = updateCategoryCount(updated, categorySlug, remaining.length);
+
+            if (remaining.length < toolPolicy.minPerHub) {
+                updated = setRobotsMeta(updated, toolPolicy.robots);
+                noindexHubs.push(categorySlug);
+            }
+
+            if (updated !== original) {
+                fs.writeFileSync(filePath, updated, 'utf8');
+            }
+        }
+    }
+
+    const indexPath = path.join(TOOLS_DIR, 'index.html');
+    if (fs.existsSync(indexPath)) {
+        const original = fs.readFileSync(indexPath, 'utf8');
+        let updated = removeLinksTo(original, removableToolHrefs);
+        updated = removeLinksTo(updated, noindexHubs.map((slug) => `/tools/categories/${slug}`));
+
+        for (const [categorySlug, count] of hubCounts) {
+            updated = updateCategoryCount(updated, categorySlug, count);
+        }
+
+        if (updated !== original) {
+            fs.writeFileSync(indexPath, updated, 'utf8');
+        }
+    }
+
+    console.log(`Tools indexation: ${taggedTools} calculator page(s) set to "${toolPolicy.robots}".`);
+    console.log(
+        noindexHubs.length > 0
+            ? `Tool category hubs noindexed for thin coverage: ${noindexHubs.join(', ')}.`
+            : 'All tool category hubs kept indexable.'
+    );
+}
+
 function main() {
     if (!fs.existsSync(BLOG_DIR)) {
         console.log('Blog directory missing; no indexation policy applied.');
@@ -175,6 +328,8 @@ function main() {
             if (/noindex/i.test(robots || policy.blogCategoryArchivesRobots || '')) noindexed += 1;
         }
     }
+
+    applyToTools();
 
     console.log(`Applied indexation policy to ${updated} HTML file(s).`);
     console.log(`Blog indexation target: ${indexable} indexable post(s), ${noindexed} noindex URL(s) including category archives.`);

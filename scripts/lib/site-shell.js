@@ -15,8 +15,6 @@ const PRIMARY_NAV_ITEMS = [
 const FOOTER_NAV_ITEMS = [
   { href: '/tax-strategies', label: 'Tax Strategies' },
   { href: '/compare', label: 'Compare' },
-  { href: '/markets', label: 'Markets' },
-  { href: '/renters-insurance', label: 'Renters insurance' },
   { href: '/tools', label: 'Tools' },
   { href: '/worksheets', label: 'Worksheets' },
   { href: '/success-stories', label: 'Results' },

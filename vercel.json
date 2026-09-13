@@ -521,48 +521,68 @@
   ],
   "redirects": [
     {
+      "source": "/renters-insurance",
+      "destination": "/tools/renters-insurance-cost",
+      "permanent": true
+    },
+    {
+      "source": "/renters-insurance/:path*",
+      "destination": "/tools/renters-insurance-cost",
+      "permanent": true
+    },
+    {
+      "source": "/markets",
+      "destination": "/tax-strategies",
+      "permanent": true
+    },
+    {
+      "source": "/markets/:path*",
+      "destination": "/tax-strategies",
+      "permanent": true
+    },
+    {
       "source": "/programmatic-pages/insurance/renters-by-state",
-      "destination": "/renters-insurance",
+      "destination": "/tools/renters-insurance-cost",
       "permanent": true
     },
     {
       "source": "/programmatic-pages/insurance/renters-by-state/",
-      "destination": "/renters-insurance",
+      "destination": "/tools/renters-insurance-cost",
       "permanent": true
     },
     {
       "source": "/programmatic-pages/insurance/renters-by-state.html",
-      "destination": "/renters-insurance",
+      "destination": "/tools/renters-insurance-cost",
       "permanent": true
     },
     {
       "source": "/programmatic-pages/insurance/renters-:state",
-      "destination": "/renters-insurance/:state",
+      "destination": "/tools/renters-insurance-cost",
       "permanent": true
     },
     {
       "source": "/programmatic-pages/insurance/renters-:state/",
-      "destination": "/renters-insurance/:state",
+      "destination": "/tools/renters-insurance-cost",
       "permanent": true
     },
     {
       "source": "/programmatic-pages/insurance/renters-:state.html",
-      "destination": "/renters-insurance/:state",
+      "destination": "/tools/renters-insurance-cost",
       "permanent": true
     },
     {
       "source": "/programmatic-pages/cities/:slug",
-      "destination": "/markets/:slug",
+      "destination": "/tax-strategies",
       "permanent": true
     },
     {
       "source": "/programmatic-pages/cities/:slug/",
-      "destination": "/markets/:slug",
+      "destination": "/tax-strategies",
       "permanent": true
     },
     {
       "source": "/programmatic-pages/cities/:slug.html",
-      "destination": "/markets/:slug",
+      "destination": "/tax-strategies",
       "permanent": true
     },
     {
@@ -627,22 +647,22 @@
     },
     {
       "source": "/programmatic-pages",
-      "destination": "/markets",
+      "destination": "/tax-strategies",
       "permanent": true
     },
     {
       "source": "/programmatic-pages/",
-      "destination": "/markets",
+      "destination": "/tax-strategies",
       "permanent": true
     },
     {
       "source": "/programmatic-pages/index.html",
-      "destination": "/markets",
+      "destination": "/tax-strategies",
       "permanent": true
     },
     {
       "source": "/programmatic-pages/:path*",
-      "destination": "/markets",
+      "destination": "/tax-strategies",
       "permanent": true
     },
     {

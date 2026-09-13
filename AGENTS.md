@@ -172,26 +172,20 @@ High-level category overview pages:
 - Business Structures (`business-structures.html`)
 - Debt Management (`debt-management.html`)
 
-### 5. Market and insurance guides (Generated from Data)
-**Source:** `data/cities.json`, `data/renters-insurance-by-state.json`, `data/renters-insurance-guides.json` → **Output:** `markets/*.html`, `renters-insurance/*.html`
+### 5. Persona and comparison pages
 
 Do not publish pages under `/programmatic-pages`. That path is a 301 to the public IA.
 
-**a) City market pages** (`markets/*.html`)
-Location-specific tax and operating guides. Generated from `data/cities.json`:
-- Austin, TX (`/markets/austin-tx`)
-- Nashville, TN (`/markets/nashville-tn`)
-- Miami, FL (`/markets/miami-fl`)
-- And 12+ more major markets
-
-**b) Persona pages**
+**a) Persona pages**
 Audience pages live under `tax-strategies/for/*.html`. Do not generate a parallel persona tree.
 
-**c) Comparison pages**
+**b) Comparison pages**
 Head-to-head strategy comparisons live under `compare/*.html`.
 
-**d) Renters insurance by state** (`renters-insurance/*.html`)
-Hub: `/renters-insurance`. State page: `/renters-insurance/kentucky`.
+**Retired sections (2026-09-14).** The `/markets` city guides and `/renters-insurance` state
+pages were deleted because they were generic programmatic pages Google would not index.
+`/markets/*` now 301s to `/tax-strategies` and `/renters-insurance/*` to
+`/tools/renters-insurance-cost`. Do not recreate them.
 
 ### 6. Static Core Pages
 - `index.html` - Homepage
@@ -204,9 +198,6 @@ Hub: `/renters-insurance`. State page: `/renters-insurance/kentucky`.
 
 ### Content Data
 - `data/tax-strategies.json` - 40+ tax strategies with metadata, FAQs, personas
-- `data/cities.json` - 15 major US markets for city tax guides
-- `data/renters-insurance-by-state.json` - NAIC premium table
-- `data/renters-insurance-guides.json` - unique per-state copy for renters pages
 - `data/topics.json` - 30+ content topic ideas (guides, comparisons, listicles)
 - `data/seo-topics-100.json` - 100 topic pipeline with generation status
 - `data/youtube-queue.json` - YouTube video automation queue
@@ -264,9 +255,6 @@ Hub: `/renters-insurance`. State page: `/renters-insurance/kentucky`.
 
 ### `scripts/build-tax-strategies.js`
 **Purpose:** Generates tax strategy HTML pages from `data/tax-strategies.json`
-
-### `scripts/fix-programmatic-seo.js`
-**Purpose:** Generates `/markets` city guides and `/renters-insurance` state pages from data. Do not emit `/programmatic-pages`.
 
 ### `scripts/youtube-to-blog.js`
 **Purpose:** Automated YouTube-to-blog conversion (currently placeholder)
@@ -520,7 +508,6 @@ legacyinvestingshow-website/
 │   ├── build-tax-strategies.js  # Tax strategy generator
 │   ├── generate-sitemap.js      # Sitemap generator
 │   ├── generate-rss.js          # RSS feed generator
-│   ├── fix-programmatic-seo.js  # Market and renters insurance pages
 │   ├── youtube-to-blog.js       # YouTube automation
 │   └── build-missing-posts.js   # One-off blog generator
 │
@@ -534,7 +521,6 @@ legacyinvestingshow-website/
 │
 ├── data/                        # JSON data sources
 │   ├── tax-strategies.json      # 40+ tax strategies
-│   ├── cities.json              # 15 US markets
 │   ├── topics.json              # 30+ content topics
 │   ├── seo-topics-100.json      # 100-topic pipeline
 │   └── youtube-queue.json       # YouTube automation
@@ -556,14 +542,6 @@ legacyinvestingshow-website/
 │   ├── airbnb-arbitrage.html
 │   ├── tax-strategies.html
 │   └── ...
-│
-├── markets/                     # City tax and operating guides
-│   ├── index.html
-│   └── austin-tx.html
-│
-├── renters-insurance/           # State renters insurance guides
-│   ├── index.html
-│   └── kentucky.html
 │
 ├── sitemap.xml                  # Generated sitemap
 ├── feed.xml                     # Generated RSS feed
@@ -614,13 +592,6 @@ vercel --prod
 2. **Run** `npm run build:tax-strategies`
 3. **Run** `npm run build`
 4. **Test** and deploy
-
-### Market and insurance guide workflow
-1. **Update** `data/cities.json` or `data/renters-insurance-guides.json`.
-2. **Run** `npm run build:programmatic`.
-3. **Run** `npm run build`.
-4. **Review** generated pages under `/markets` and `/renters-insurance`.
-5. **Deploy**
 
 ## Common Tasks
 

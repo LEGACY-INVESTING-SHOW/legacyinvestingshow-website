@@ -1,6 +1,31 @@
 {
   "description": "Controls which generated pages should be treated as indexable. The goal is to keep the public site useful while sending Google a smaller, stronger canonical URL set.",
   "blogCategoryArchivesRobots": "noindex, follow",
+  "noindexToolSlugs": {
+    "reason": "General insurance, pay-admin, and bill-splitting calculators sit outside the tax, real estate, and wealth-building topics this site is trying to rank for. They are kept live for existing users but removed from the index so the crawl budget goes to on-topic pages.",
+    "robots": "noindex, follow",
+    "minIndexableToolsPerCategoryHub": 3,
+    "slugs": [
+      "auto-insurance-annual-cost",
+      "pet-insurance-comparison",
+      "health-insurance-plan-comparison",
+      "business-insurance-budget",
+      "claim-out-of-pocket-cost",
+      "coverage-gap",
+      "deductible-premium-break-even",
+      "insurance-payment-frequency",
+      "home-contents-replacement-value",
+      "income-protection-gap",
+      "roommate-rent-split",
+      "security-deposit-split",
+      "money-split-calculator",
+      "holiday-pay-accrual",
+      "pay-period-converter",
+      "salary-to-hourly-pay",
+      "subscription-annual-cost",
+      "money-calendar"
+    ]
+  },
   "blogRedirects": [
     {
       "source": "/blog/micah-facebook-message-5k-month-houston",

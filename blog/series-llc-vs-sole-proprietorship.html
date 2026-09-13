@@ -156,7 +156,7 @@
         .article-intro-card {
             display: grid;
             gap: 1.5rem;
-            grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+            grid-template-columns: minmax(0, 1fr);
             margin-bottom: 1.8rem;
             padding: 1.6rem 1.75rem;
             border-radius: 28px;
@@ -185,9 +185,39 @@
 
         .article-intro-card__copy {
             margin: 0;
-            color: var(--text-secondary);
-            font-size: 1rem;
-            line-height: 1.78;
+            color: var(--text-primary);
+            font-size: 1.15rem;
+            line-height: 1.6;
+        }
+
+        .related-guides {
+            margin: 2rem 0 0;
+            padding: 1.25rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 1rem;
+            background: #f8fafc;
+        }
+
+        .related-guides__title {
+            margin: 0 0 0.75rem;
+            color: #111827;
+            font-size: 1.2rem;
+        }
+
+        .related-guides__list {
+            margin: 0;
+            padding-left: 1.1rem;
+            list-style: disc;
+            color: #374151;
+        }
+
+        .related-guides__list li {
+            margin-bottom: 0.55rem;
+        }
+
+        .related-guides__list a {
+            color: #0f766e;
+            text-decoration: underline;
         }
 
         .article-intro-card__list {
@@ -921,21 +951,15 @@
                         </picture>
                     </div>
 
-                    <section class="article-intro-card" aria-label="How to use this guide">
+                    
+                    
+                    <section class="article-intro-card" aria-label="Quick answer">
                         <div>
-                            <p class="article-intro-card__eyebrow">Use This Like a Tool</p>
-                            <h2 class="article-intro-card__title">The wrong option usually looks fine until timing, taxes, or execution pressure shows up.</h2>
+                            <p class="article-intro-card__eyebrow">Quick answer</p>
+                            <p class="article-intro-card__copy">For most owners, the series llc vs sole proprietorship decision is about risk concentration. Sole proprietorship wins on speed and low cost. Series LLC can be stronger for multi-asset operators who can keep strict records and state-compliant separation, but it usually does not create automatic tax savings by itself.</p>
                         </div>
-                        <ul class="article-intro-card__list">
-                            
-                            <li>Clarify what winning means before you compare options.</li>
-                            
-                            <li>Pressure-test the weaker scenario, not just the best case.</li>
-                            
-                            <li>Review the decision with your advisor before execution starts.</li>
-                            
-                        </ul>
                     </section>
+                    
 
                     <div class="minimal-content">
                         <p>If you are comparing series llc vs sole proprietorship in 2026, the best choice is usually driven by risk concentration, not hype. A sole proprietorship is the fastest and cheapest way to operate, but it does not create a legal shield between business liabilities and your personal assets. A series LLC can compartmentalize risk across assets, but it adds state-specific legal complexity, administrative overhead, and banking friction.</p>
@@ -1287,6 +1311,22 @@ Entity structure affects tax, legal risk, financing, and estate planning. Docume
 <p>For deeper implementation detail, review <a href="/blog/anonymous-llc">anonymous LLC guidance</a> and provider comparisons in <a href="/blog/best-registered-agent-service-for-llc">best registered agent service for LLC</a>. Educational note: entity and tax outcomes depend on your facts, your state, and evolving rules, so use this framework to ask better questions and make faster, cleaner decisions with licensed professionals.</p>
 
                     </div>
+
+                    
+                    
+                    <nav class="related-guides" aria-label="Related guides">
+                        <h2 class="related-guides__title">Related guides</h2>
+                        <ul class="related-guides__list">
+                            
+                            <li><a href="/blog/anonymous-llc">Anonymous LLC: How to Keep Your Business Ownership Private</a></li>
+                            
+                            <li><a href="/blog/best-bank-for-series-llc">Best Bank for Series LLC: Complete 2026 Guide</a></li>
+                            
+                            <li><a href="/blog/best-registered-agent-for-llc">Best Registered Agent for LLC: Complete 2026 Guide to Cost, Privacy, and Compliance</a></li>
+                            
+                        </ul>
+                    </nav>
+                    
 
                     <section class="source-note" aria-label="Primary sources" style="margin: 2rem 0 0; padding: 1.25rem; border: 1px solid #e5e7eb; border-radius: 1rem; background: #f8fafc;">
             <h2 style="margin: 0 0 0.75rem; font-size: 1.2rem; color: #111827;">Sources To Check Before You Act</h2>

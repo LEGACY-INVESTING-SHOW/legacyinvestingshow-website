@@ -156,7 +156,7 @@
         .article-intro-card {
             display: grid;
             gap: 1.5rem;
-            grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+            grid-template-columns: minmax(0, 1fr);
             margin-bottom: 1.8rem;
             padding: 1.6rem 1.75rem;
             border-radius: 28px;
@@ -185,9 +185,39 @@
 
         .article-intro-card__copy {
             margin: 0;
-            color: var(--text-secondary);
-            font-size: 1rem;
-            line-height: 1.78;
+            color: var(--text-primary);
+            font-size: 1.15rem;
+            line-height: 1.6;
+        }
+
+        .related-guides {
+            margin: 2rem 0 0;
+            padding: 1.25rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 1rem;
+            background: #f8fafc;
+        }
+
+        .related-guides__title {
+            margin: 0 0 0.75rem;
+            color: #111827;
+            font-size: 1.2rem;
+        }
+
+        .related-guides__list {
+            margin: 0;
+            padding-left: 1.1rem;
+            list-style: disc;
+            color: #374151;
+        }
+
+        .related-guides__list li {
+            margin-bottom: 0.55rem;
+        }
+
+        .related-guides__list a {
+            color: #0f766e;
+            text-decoration: underline;
         }
 
         .article-intro-card__list {
@@ -921,21 +951,15 @@
                         </picture>
                     </div>
 
-                    <section class="article-intro-card" aria-label="How to use this guide">
+                    
+                    
+                    <section class="article-intro-card" aria-label="Quick answer">
                         <div>
-                            <p class="article-intro-card__eyebrow">Use This Like a Tool</p>
-                            <h2 class="article-intro-card__title">The point of this page is not more information. The point is better judgment before you act.</h2>
+                            <p class="article-intro-card__eyebrow">Quick answer</p>
+                            <p class="article-intro-card__copy">Debt to income ratio tax implications matter because lender DTI is based on gross income and required debt payments, while taxes affect your real monthly cash flow. The best strategy is the one that improves both underwriting metrics and after-tax liquidity without creating avoidable tax surprises.</p>
                         </div>
-                        <ul class="article-intro-card__list">
-                            
-                            <li>Pull the real numbers first.</li>
-                            
-                            <li>Run a base case and a stress case.</li>
-                            
-                            <li>Use the result to make a cleaner decision, not a faster emotional one.</li>
-                            
-                        </ul>
                     </section>
+                    
 
                     <div class="minimal-content">
                         <p>Most people treat debt and taxes as separate problems. In practice, debt to income ratio tax implications drive whether a debt move improves your life or just shifts pain to a later date. If you are trying to qualify for a mortgage, refinance high-interest balances, or stabilize monthly cash flow, you need one plan that works for underwriting and tax season. The Consumer Financial Protection Bureau describes DTI as monthly debt payments divided by gross monthly income, while IRS rules can make some debt-related outcomes taxable. That means a strategy that lowers your payment today can still backfire if it creates an unexpected tax bill.</p>
@@ -1336,6 +1360,22 @@ A healthier balance sheet requires DTI improvement, liquidity resilience, and ta
 <p>Educational note: tax treatment and underwriting rules depend on your facts, lender overlays, and state rules. Use this guide as a planning framework and confirm final decisions with qualified professionals.</p>
 
                     </div>
+
+                    
+                    
+                    <nav class="related-guides" aria-label="Related guides">
+                        <h2 class="related-guides__title">Related guides</h2>
+                        <ul class="related-guides__list">
+                            
+                            <li><a href="/blog/balance-transfer-strategy">Balance Transfer Strategy: Use 0% APR to Crush Debt</a></li>
+                            
+                            <li><a href="/blog/credit-score-optimization">Credit Score Optimization: Improve Your Score Fast</a></li>
+                            
+                            <li><a href="/blog/debt-avalanche-method">Debt Avalanche Method: The Fastest Way to Pay Off Debt</a></li>
+                            
+                        </ul>
+                    </nav>
+                    
 
                     <section class="source-note" aria-label="Primary sources" style="margin: 2rem 0 0; padding: 1.25rem; border: 1px solid #e5e7eb; border-radius: 1rem; background: #f8fafc;">
             <h2 style="margin: 0 0 0.75rem; font-size: 1.2rem; color: #111827;">Sources To Check Before You Act</h2>

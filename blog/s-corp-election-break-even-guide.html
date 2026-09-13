@@ -156,7 +156,7 @@
         .article-intro-card {
             display: grid;
             gap: 1.5rem;
-            grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+            grid-template-columns: minmax(0, 1fr);
             margin-bottom: 1.8rem;
             padding: 1.6rem 1.75rem;
             border-radius: 28px;
@@ -185,9 +185,39 @@
 
         .article-intro-card__copy {
             margin: 0;
-            color: var(--text-secondary);
-            font-size: 1rem;
-            line-height: 1.78;
+            color: var(--text-primary);
+            font-size: 1.15rem;
+            line-height: 1.6;
+        }
+
+        .related-guides {
+            margin: 2rem 0 0;
+            padding: 1.25rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 1rem;
+            background: #f8fafc;
+        }
+
+        .related-guides__title {
+            margin: 0 0 0.75rem;
+            color: #111827;
+            font-size: 1.2rem;
+        }
+
+        .related-guides__list {
+            margin: 0;
+            padding-left: 1.1rem;
+            list-style: disc;
+            color: #374151;
+        }
+
+        .related-guides__list li {
+            margin-bottom: 0.55rem;
+        }
+
+        .related-guides__list a {
+            color: #0f766e;
+            text-decoration: underline;
         }
 
         .article-intro-card__list {
@@ -838,21 +868,15 @@
                         </picture>
                     </div>
 
-                    <section class="article-intro-card" aria-label="How to use this guide">
+                    
+                    
+                    <section class="article-intro-card" aria-label="Quick answer">
                         <div>
-                            <p class="article-intro-card__eyebrow">Use This Like a Tool</p>
-                            <h2 class="article-intro-card__title">The point of this page is not more information. The point is better judgment before you act.</h2>
+                            <p class="article-intro-card__eyebrow">Quick answer</p>
+                            <p class="article-intro-card__copy">Learn how to think about the S corp election break-even point, including profit level, salary assumptions, payroll overhead, and why the cheapest salary model is not the right model.</p>
                         </div>
-                        <ul class="article-intro-card__list">
-                            
-                            <li>Pull the real numbers first.</li>
-                            
-                            <li>Run a base case and a stress case.</li>
-                            
-                            <li>Use the result to make a cleaner decision, not a faster emotional one.</li>
-                            
-                        </ul>
                     </section>
+                    
 
                     <div class="minimal-content">
                         <p>Most people ask “Should I elect S corp?” when the better question is “At what profit level and under what salary assumptions does the structure actually create net benefit after all the extra overhead?”</p>
@@ -922,6 +946,20 @@
 <p>The S corp election only makes sense when the tax savings survive real salary assumptions and real admin cost. That is why the break-even question matters more than the hype question.</p>
 
                     </div>
+
+                    
+                    
+                    <nav class="related-guides" aria-label="Related guides">
+                        <h2 class="related-guides__title">Related guides</h2>
+                        <ul class="related-guides__list">
+                            
+                            <li><a href="/blog/schedule-c-vs-s-corp-tax-guide">Schedule C vs S Corp Tax Guide: 2026 Framework for Owners and Accountants</a></li>
+                            
+                            <li><a href="/blog/reasonable-salary-s-corp">S-Corp Reasonable Salary: How to Set Your Pay &amp; Avoid IRS Issues</a></li>
+                            
+                        </ul>
+                    </nav>
+                    
 
                     <section class="source-note" aria-label="Primary sources" style="margin: 2rem 0 0; padding: 1.25rem; border: 1px solid #e5e7eb; border-radius: 1rem; background: #f8fafc;">
             <h2 style="margin: 0 0 0.75rem; font-size: 1.2rem; color: #111827;">Sources To Check Before You Act</h2>

@@ -1,4 +1,25 @@
 const { renderSourceBlock } = require("../scripts/lib/site-shell");
+const indexationPolicy = require("../data/indexation-policy.json");
+
+const FORCE_INDEX_SLUGS = new Set(indexationPolicy.forceIndexBlogSlugs || []);
+const REDIRECTED_SLUGS = new Set(
+  (indexationPolicy.blogRedirects || [])
+    .filter((entry) => entry.source)
+    .map((entry) => entry.source.replace(/^\/blog\//, ""))
+);
+const NOINDEX_SLUG_PATTERNS = (indexationPolicy.noindexBlogSlugPatterns || [])
+  .map((entry) => new RegExp(entry.pattern));
+
+/**
+ * Mirrors scripts/apply-indexation-policy.js so related links only point at
+ * blog URLs that stay in the index.
+ */
+function isIndexableSlug(slug) {
+  if (!slug) return false;
+  if (REDIRECTED_SLUGS.has(slug)) return false;
+  if (FORCE_INDEX_SLUGS.has(slug)) return true;
+  return !NOINDEX_SLUG_PATTERNS.some((pattern) => pattern.test(slug));
+}
 
 module.exports = function(eleventyConfig) {
   const siteUrl = process.env.SITE_URL || "https://www.legacyinvestingshow.com";
@@ -70,6 +91,59 @@ module.exports = function(eleventyConfig) {
       return url;
     }
   });
+
+  /**
+   * Resolve a post's relatedPosts frontmatter against the blog collection.
+   * Falls back to the newest indexable posts in the same category.
+   */
+  eleventyConfig.addFilter(
+    "relatedGuides",
+    (relatedPosts, posts, currentSlug, category, limit = 4) => {
+      const all = Array.isArray(posts) ? posts : [];
+      const bySlug = new Map();
+
+      for (const post of all) {
+        const slug = post.page && post.page.fileSlug;
+        if (!slug || !post.data || !post.data.title) continue;
+        bySlug.set(slug, {
+          slug,
+          title: post.data.title,
+          url: `/blog/${slug}`,
+          category: post.data.category || "",
+          date: post.date ? new Date(post.date).getTime() : 0,
+        });
+      }
+
+      const picked = [];
+      const seen = new Set([currentSlug]);
+
+      const add = (slug) => {
+        if (picked.length >= limit) return;
+        if (!slug || seen.has(slug)) return;
+        const entry = bySlug.get(slug);
+        if (!entry) return;
+        if (!isIndexableSlug(slug)) return;
+        seen.add(slug);
+        picked.push(entry);
+      };
+
+      for (const item of Array.isArray(relatedPosts) ? relatedPosts : []) {
+        add(typeof item === "string" ? item : item && item.slug);
+      }
+
+      if (picked.length === 0 && category) {
+        const sameCategory = [...bySlug.values()]
+          .filter((entry) => entry.category === category)
+          .sort((a, b) => b.date - a.date);
+
+        for (const entry of sameCategory) {
+          add(entry.slug);
+        }
+      }
+
+      return picked;
+    }
+  );
 
   eleventyConfig.addShortcode("sourceBlock", function(title = "", slug = "", type = "") {
     return renderSourceBlock({
