@@ -4,22 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Preconnect to critical origins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <!-- Prefetch other pages for faster navigation -->
     <link rel="prefetch" href="/about">
-    <link rel="prefetch" href="/success-stories">
+    <link rel="prefetch" href="/tax-strategies">
 
-    <!-- Preload the actual LCP candidate without double-fetching the fallback -->
+    <!-- Preload the LCP candidate without double-fetching the fallback -->
     <link rel="preload"
           as="image"
           href="/assets/images/hero-image.webp"
           type="image/webp"
           fetchpriority="high"
-          imagesrcset="/assets/images/hero-image.webp 591w"
-          imagesizes="(min-width: 1024px) 512px, (min-width: 640px) calc(100vw - 4rem), calc(100vw - 3rem)">
+          imagesrcset="/assets/images/hero-image-400.webp 400w, /assets/images/hero-image.webp 591w"
+          imagesizes="(min-width: 1024px) 512px, (min-width: 640px) calc(100vw - 4rem), calc(100vw - 2rem)">
 
     <!-- Primary Meta Tags -->
     <title>Build Wealth Beyond A Paycheck | Legacy Investing Show</title>
@@ -52,7 +48,7 @@
     <meta name="twitter:image" content="https://www.legacyinvestingshow.com/assets/images/og-home.jpg">
 
     <!-- Theme Color -->
-    <meta name="theme-color" content="#D4A853">
+    <meta name="theme-color" content="#FAF7F2">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/assets/images/logo.png">
@@ -80,7 +76,7 @@
     }
     </script>
 
-    <!-- Structured Data - FAQPage -->
+    <!-- Structured Data - FAQPage. Text matches the visible FAQ exactly. -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -88,57 +84,58 @@
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "How Is This Better Than Just Watching YouTube Videos Or Reading Finance Books?",
+                "name": "How is this different from YouTube videos and finance books?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "YouTube videos and finance books give you general knowledge, but they don't give you a personalized system. Our program provides step-by-step implementation, direct coaching, and accountability to ensure you actually build wealth, not just learn about it."
+                    "text": "Videos and books give you general knowledge, not a system built around your own numbers. The program adds step-by-step implementation, direct coaching, and accountability."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Can I Still Join If I Don't Own A Business Yet?",
+                "name": "Can I still join if I don't own a business yet?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Absolutely! Many of our most successful students started without a business. We help you build income streams and optimize your existing finances, whether you're a W-2 employee or entrepreneur."
+                    "text": "Yes. Many students start without one. We work on building income streams and optimizing the finances you already have, whether you are a W-2 employee or an entrepreneur."
                 }
             },
             {
                 "@type": "Question",
-                "name": "What If My Partner/Spouse Isn't On Board Yet?",
+                "name": "What if my partner or spouse isn't on board yet?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "This is common. We recommend reviewing the free resources together. Once they see the concrete strategies and real examples, they usually become the biggest supporters."
+                    "text": "That is common. Start with the free resources and go through them together. The strategies and examples are concrete enough to discuss as a decision rather than a leap of faith."
                 }
             },
             {
                 "@type": "Question",
-                "name": "I Don't Have Time To Do This Right Now",
+                "name": "I don't have time for this right now",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Most of our students work full-time jobs. The strategies we teach are designed to work alongside your current schedule. Even 2-3 hours per week can lead to significant wealth building over time."
+                    "text": "Most students work full-time. The strategies are designed to run alongside a normal schedule, and two to three hours a week is enough to keep moving."
                 }
             },
             {
                 "@type": "Question",
-                "name": "How Do I Know If This Is For Me?",
+                "name": "How do I know if this is for me?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "If you make good money but feel like you're not getting ahead, pay more in taxes than you'd like, or want to build passive income streams - this is for you. Our students typically earn $75K+ and want to optimize their financial future."
+                    "text": "If you make good money, pay more tax than you would like, or want income that does not depend on your next paycheck, it is for you. Students typically earn $75K+."
                 }
             },
             {
                 "@type": "Question",
-                "name": "What If I'm Not Good At Any of This Finance Stuff?",
+                "name": "What if I'm not good at any of this finance stuff?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "You don't need to be a finance expert. We break everything down into simple, actionable steps. If you can follow a recipe, you can follow our wealth-building system."
+                    "text": "You don't need to be. Every strategy breaks into steps you follow in order, and you can start with one."
                 }
             }
         ]
     }
     </script>
 
-    <!-- Stylesheet -->
+    <link rel="preload" href="/assets/fonts/dm-serif-display-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/plus-jakarta-sans-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/assets/css/styles.css">
 
     <!-- Google Tag Manager -->
@@ -155,736 +152,357 @@
 </head>
 <body class="bg-cream" data-page-type="homepage" data-page-title="Homepage">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- Skip to main content for accessibility -->
-    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-white px-4 py-2 rounded-lg z-50">
-        Skip to main content
-    </a>
+    <a href="#main" class="skip-link">Skip to main content</a>
 
-    <!-- Header / Navigation -->
-    <header class="fixed top-0 left-0 right-0 z-50 header-glass">
-        <nav class="container-custom" aria-label="Main navigation">
-            <div class="flex items-center justify-between h-16 md:h-20">
-                <!-- Logo -->
-                <a href="/" class="flex items-center gap-3 font-semibold text-lg hover:opacity-80 transition-opacity">
-                    <img src="/assets/images/logo.png" alt="Legacy Investing Show Logo" width="36" height="36" class="w-9 h-9">
-                    <span class="hidden md:block">Preston Seo | Legacy Investing Show</span>
-                </a>
-                
-                <!-- Desktop Navigation -->
-                <div class="hidden md:flex items-center gap-4">
-                    <a href="/" class="nav-link nav-link-active">Home</a>
+    <header class="site-header">
+        <nav class="container-custom site-nav" aria-label="Main navigation">
+            <a href="/" class="site-brand">
+                <img src="/assets/images/logo-240.webp" alt="" width="28" height="28">
+                <span>Legacy Investing Show</span>
+            </a>
+            <div class="site-nav-links">
+                <a href="/" class="nav-link nav-link-active">Home</a>
                     <a href="/about" class="nav-link">About</a>
-                    <a href="/tax-strategies/" class="nav-link">Tax Strategies</a>
-                    <a href="/compare/" class="nav-link">Compare</a>
-                    <a href="/tools/" class="nav-link">Tools</a>
-                    <a href="/blog/" class="nav-link">Blog</a>
-                </div>
-                
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700 hover:text-emerald-600 transition-colors" aria-label="Open menu" aria-expanded="false">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
+                    <a href="/tax-strategies" class="nav-link">Tax Strategies</a>
+                    <a href="/compare" class="nav-link">Compare</a>
+                    <a href="/tools" class="nav-link">Tools</a>
+                    <a href="/blog" class="nav-link">Blog</a>
             </div>
-            
-            <!-- Mobile Navigation -->
-            <div id="mobile-menu" class="hidden md:hidden pb-6 border-t border-gray-200 mt-4 pt-4">
-                <div class="flex flex-col gap-4">
-                    <a href="/" class="nav-link nav-link-active">Home</a>
+            <button id="mobile-menu-btn" class="site-nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            </button>
+            <div id="mobile-menu" class="site-nav-mobile hidden">
+                <a href="/" class="nav-link nav-link-active">Home</a>
                     <a href="/about" class="nav-link">About</a>
-                    <a href="/tax-strategies/" class="nav-link">Tax Strategies</a>
-                    <a href="/compare/" class="nav-link">Compare</a>
-                    <a href="/tools/" class="nav-link">Tools</a>
-                    <a href="/blog/" class="nav-link">Blog</a>
-                </div>
+                    <a href="/tax-strategies" class="nav-link">Tax Strategies</a>
+                    <a href="/compare" class="nav-link">Compare</a>
+                    <a href="/tools" class="nav-link">Tools</a>
+                    <a href="/blog" class="nav-link">Blog</a>
             </div>
         </nav>
     </header>
 
     <main id="main" role="main">
-        <!-- Hero Section -->
-        <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-gradient-hero">
-            <div class="container-custom relative">
-                <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-                    <div class="text-center lg:text-left">
-                        <!-- Personal greeting -->
-                        <p class="hero-greeting animate-fade-in-up">
-                            Hey there <span class="hero-greeting-wave">👋</span> I'm Preston
-                        </p>
-
-                        <h1 class="hero-title text-4xl md:text-5xl lg:text-6xl mb-6 animate-fade-in-up delay-100">
-                            I Help You Build Wealth <span class="highlight text-gold">Beyond A Paycheck.</span>
+        <!-- Hero -->
+        <section class="pt-12 pb-14 md:pt-20 md:pb-20">
+            <div class="container-custom">
+                <div class="grid lg:grid-cols-[1.05fr_0.95fr] gap-12 lg:gap-16 items-center">
+                    <div>
+                        <h1 class="hero-title text-4xl md:text-5xl lg:text-6xl mb-6">
+                            I help you build wealth <span class="highlight">beyond a paycheck</span>
                         </h1>
 
-                        <p class="hero-subtitle text-lg md:text-xl text-gray-600 mb-10 leading-relaxed max-w-xl mx-auto lg:mx-0 animate-fade-in-up delay-200">
-                            For Professionals Who Make Good Money But Want To Keep More, Grow Faster And Stress Less.
+                        <p class="text-lg md:text-xl text-secondary leading-relaxed max-w-xl mb-8">
+                            For professionals who make good money and want to keep more of it, grow it faster, and stop guessing at the next decision.
                         </p>
-                    </div>
 
-                    <div class="relative animate-fade-in-up delay-400">
-                        <!-- Organic blob background -->
-                        <div class="blob-bg w-[120%] h-[120%] -top-[10%] -left-[10%]"></div>
-                        <div class="relative">
-                            <picture>
-                                <source srcset="/assets/images/hero-image.webp 591w"
-                                        sizes="(min-width: 1024px) 512px, (min-width: 640px) calc(100vw - 4rem), calc(100vw - 3rem)"
-                                        type="image/webp">
-                                <img src="/assets/images/hero-image.jpg"
-                                     srcset="/assets/images/hero-image.jpg 591w"
-                                     sizes="(min-width: 1024px) 512px, (min-width: 640px) calc(100vw - 4rem), calc(100vw - 3rem)"
-                                     alt="Preston Seo with his wife - Building generational wealth together"
-                                     width="591"
-                                     height="700"
-                                     class="relative w-full max-w-lg mx-auto rounded-3xl shadow-xl border border-gray-200"
-                                     loading="eager"
-                                     fetchpriority="high"
-                                     decoding="async">
-                            </picture>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Social Proof Stats -->
-                <div class="mt-20 pt-16 border-t border-gray-200">
-                    <div class="flex flex-wrap justify-center lg:justify-start gap-12 md:gap-20">
-                        <div class="text-center lg:text-left animate-fade-in-up delay-500">
-                            <p class="stat-number">$15M+</p>
-                            <p class="stat-label">In Real Estate Investment</p>
-                        </div>
-                        <div class="text-center lg:text-left animate-fade-in-up delay-600">
-                            <p class="stat-number">2,000+</p>
-                            <p class="stat-label">Students Guided</p>
-                        </div>
-                        <div class="text-center lg:text-left animate-fade-in-up delay-700">
-                            <p class="stat-number">6.5M+</p>
-                            <p class="stat-label">Across Social Channels</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Preview Section -->
-        <section class="section bg-light">
-            <div class="container-custom">
-                <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-                    <div class="order-2 lg:order-1">
-                        <div class="relative">
-                            <picture>
-                                <source srcset="/assets/images/preston-main.webp 581w"
-                                        sizes="(min-width: 1024px) 448px, (min-width: 640px) calc(100vw - 4rem), calc(100vw - 3rem)"
-                                        type="image/webp">
-                                <img src="/assets/images/preston-main.jpg"
-                                     srcset="/assets/images/preston-main.jpg 581w"
-                                     sizes="(min-width: 1024px) 448px, (min-width: 640px) calc(100vw - 4rem), calc(100vw - 3rem)"
-                                     alt="Preston Seo - Real Estate Investor and Financial Educator"
-                                     width="581"
-                                     height="800"
-                                     class="relative w-full max-w-md mx-auto rounded-3xl shadow-lg border border-gray-200"
-                                     loading="lazy"
-                                     fetchpriority="low"
-                                     decoding="async">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="order-1 lg:order-2">
-                        <p class="section-label">My Story</p>
-                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-gray-900">
-                            Hey, I'm <span class="text-gold">Preston Seo</span>
-                        </h2>
-                        <p class="text-lg text-gray-600 leading-relaxed mb-6">
-                            I didn't grow up rich. My parents were first-generation immigrants—we worked for everything. After college, I landed a corporate job, and within a year, I knew it wasn't my path.
-                        </p>
-                        <p class="text-lg text-gray-600 leading-relaxed mb-6">
-                            I started studying money from every angle: taxes, cash flow, investing, and ownership. Fast forward a few years, my wife and I built a <span class="text-gold font-semibold">$15M+ real estate portfolio</span> and a repeatable wealth system that let us walk away from the 9-to-5 for good.
-                        </p>
-                        <p class="text-lg text-gray-900 leading-relaxed mb-8 font-medium">
-                            These days, I teach the decision frameworks and execution systems that help more families keep more of what they earn and build wealth with less guesswork.
-                        </p>
-                        <a href="/about" class="btn-secondary">
-                            Read My Full Story
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Free Live Masterclass Section -->
-        <section id="masterclass" class="section bg-white relative overflow-hidden">
-            <div class="container-custom">
-                <div class="webinar-card max-w-4xl mx-auto text-center">
-                    <div class="flex justify-center mb-6">
-                        <span class="live-badge">Free Live Training</span>
-                    </div>
-
-                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-white leading-tight">
-                        The 5 Tax Strategies That Could Cut Your Tax Bill By <span class="text-gold">$30K+</span>
-                    </h2>
-                    <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
-                        Discover the exact system I used to get a $46 refund from the IRS the same year I made $500K
-                    </p>
-
-                    <!-- Countdown Timer -->
-                    <div class="mb-8">
-                        <p class="text-sm text-gray-400 mb-3" id="webinar-date-label">Next masterclass starts in:</p>
-                        <div class="countdown-timer" id="countdown-timer">
-                            <div class="countdown-unit">
-                                <span class="countdown-value" id="countdown-days">00</span>
-                                <span class="countdown-label">Days</span>
-                            </div>
-                            <span class="countdown-separator">:</span>
-                            <div class="countdown-unit">
-                                <span class="countdown-value" id="countdown-hours">00</span>
-                                <span class="countdown-label">Hours</span>
-                            </div>
-                            <span class="countdown-separator">:</span>
-                            <div class="countdown-unit">
-                                <span class="countdown-value" id="countdown-minutes">00</span>
-                                <span class="countdown-label">Minutes</span>
-                            </div>
-                            <span class="countdown-separator">:</span>
-                            <div class="countdown-unit">
-                                <span class="countdown-value" id="countdown-seconds">00</span>
-                                <span class="countdown-label">Seconds</span>
-                            </div>
+                        <div class="flex flex-wrap items-center gap-x-8 gap-y-4">
+                            <a href="https://www.managemoney101.com/2025workshop"
+                               class="btn-primary"
+                               data-track-event="cta_clicked"
+                               data-track-label="Free Tax Strategy Masterclass"
+                               data-track-location="homepage_hero"
+                               data-track-destination="https://www.managemoney101.com/2025workshop">
+                                Join the free tax masterclass
+                            </a>
+                            <a href="/tax-strategies"
+                               class="font-semibold text-navy underline decoration-1 underline-offset-4 hover:text-gold"
+                               data-track-event="cta_clicked"
+                               data-track-label="Browse Tax Strategies"
+                               data-track-location="homepage_hero"
+                               data-track-destination="/tax-strategies">
+                                Or read the tax strategy library
+                            </a>
                         </div>
                     </div>
 
-                    <!-- What you'll learn -->
-                    <div class="webinar-benefits">
-                        <div class="webinar-benefit">
-                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                            </svg>
-                            <span>Unlock $10K+ in deductions</span>
-                        </div>
-                        <div class="webinar-benefit">
-                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                            </svg>
-                            <span>Build tax-free income</span>
-                        </div>
-                        <div class="webinar-benefit">
-                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                            </svg>
-                            <span>Live Q&A with Preston</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Case Studies Section -->
-        <section class="section bg-light">
-            <div class="container-custom">
-                <div class="text-center mb-16">
-                    <p class="section-label justify-center">Case Studies</p>
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-gray-900">
-                        See the <span class="text-gold">Decision System</span> in Real Lives
-                    </h2>
-                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                        Tax wins, wealth-planning shifts, and alternative-income results all matter. These stories show how the strategy becomes real once it is executed.
-                    </p>
-                </div>
-
-                <div class="grid md:grid-cols-2 gap-8">
-                    <!-- Case Study 1 -->
-                    <a href="/blog/6000-cash-flow-no-experience" class="blog-card group hover-lift">
-                        <div class="overflow-hidden rounded-t-2xl">
-                            <img src="/assets/images/case-study-dustin.jpg"
-                                 alt="Dustin - Turned a failed Airbnb into cash-flowing lakeside rentals"
-                                 width="640"
-                                 height="360"
-                                 class="blog-card-image"
-                                 loading="lazy"
-                                 fetchpriority="low"
+                    <div>
+                        <picture>
+                            <source srcset="/assets/images/hero-image-400.webp 400w, /assets/images/hero-image.webp 591w"
+                                    sizes="(min-width: 1024px) 512px, (min-width: 640px) calc(100vw - 4rem), calc(100vw - 2rem)"
+                                    type="image/webp">
+                            <img src="/assets/images/hero-image.jpg"
+                                 srcset="/assets/images/hero-image.jpg 591w"
+                                 sizes="(min-width: 1024px) 512px, (min-width: 640px) calc(100vw - 4rem), calc(100vw - 2rem)"
+                                 alt="Preston Seo and his wife, who built the portfolio together"
+                                 width="591"
+                                 height="700"
+                                 class="w-full max-w-lg mx-auto rounded-2xl"
+                                 loading="eager"
+                                 fetchpriority="high"
                                  decoding="async">
-                        </div>
-                        <div class="p-6 lg:p-8">
-                            <span class="badge mb-4">Airbnb Success</span>
-                            <h3 class="text-xl font-semibold leading-snug text-gray-900">
-                                How Dustin Turned a "Failed" Airbnb Into a Cash-Flowing Pair of Lakeside Rentals
-                            </h3>
-                            <p class="text-gray-500 mt-3 text-sm">In under a year</p>
-                        </div>
-                    </a>
-
-                    <!-- Case Study 2 -->
-                    <a href="/blog/kiana-replaced-finance-job-airbnb" class="blog-card group hover-lift">
-                        <div class="overflow-hidden rounded-t-2xl">
-                            <img src="/assets/images/case-study-kiana.jpg"
-                                 alt="Kiana - Replaced her 10-year finance career with Airbnb arbitrage"
-                                 width="640"
-                                 height="360"
-                                 class="blog-card-image"
-                                 loading="lazy"
-                                 fetchpriority="low"
-                                 decoding="async">
-                        </div>
-                        <div class="p-6 lg:p-8">
-                            <span class="badge mb-4">Career Change</span>
-                            <h3 class="text-xl font-semibold leading-snug text-gray-900">
-                                How Kiana Replaced Her 10-Year Finance Career With Airbnb Arbitrage
-                            </h3>
-                            <p class="text-gray-500 mt-3 text-sm">Full financial freedom</p>
-                        </div>
-                    </a>
-
-                    <!-- Case Study 3 -->
-                    <a href="/blog/couple-17500-secured-one-week" class="blog-card group hover-lift">
-                        <div class="overflow-hidden rounded-t-2xl">
-                            <img src="/assets/images/case-study-fischers.jpg"
-                                 alt="The Fischers - Booked $17,500 in two weeks with Airbnb arbitrage"
-                                 width="640"
-                                 height="360"
-                                 class="blog-card-image"
-                                 loading="lazy"
-                                 fetchpriority="low"
-                                 decoding="async">
-                        </div>
-                        <div class="p-6 lg:p-8">
-                            <span class="badge mb-4">Quick Wins</span>
-                            <h3 class="text-xl font-semibold leading-snug text-gray-900">
-                                How the Fischers Booked $17,500 in Two Weeks With Airbnb Arbitrage
-                            </h3>
-                            <p class="text-gray-500 mt-3 text-sm">Couple success story</p>
-                        </div>
-                    </a>
-
-                    <!-- Case Study 4 -->
-                    <a href="/blog/212k-year-10-minutes-week" class="blog-card group hover-lift">
-                        <div class="overflow-hidden rounded-t-2xl">
-                            <img src="/assets/images/case-study-kirk.jpg"
-                                 alt="Kirk - Making $2000/mo from first Airbnb while working as a nurse"
-                                 width="640"
-                                 height="360"
-                                 class="blog-card-image"
-                                 loading="lazy"
-                                 fetchpriority="low"
-                                 decoding="async">
-                        </div>
-                        <div class="p-6 lg:p-8">
-                            <span class="badge mb-4">Side Income</span>
-                            <h3 class="text-xl font-semibold leading-snug text-gray-900">
-                                How Kirk Makes $2,000/mo From His First Airbnb While Working Full-Time
-                            </h3>
-                            <p class="text-gray-500 mt-3 text-sm">Nurse turned investor</p>
-                        </div>
-                    </a>
+                        </picture>
+                    </div>
                 </div>
 
-                <div class="text-center mt-12">
-                    <a href="/success-stories" class="btn-secondary">
-                        View All Success Stories
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                        </svg>
-                    </a>
-                </div>
+                <p class="mt-12 pt-6 border-t border-slate-200 text-base text-secondary tabular">
+                    $15M+ real estate portfolio &middot; 2,000+ students guided &middot; 6.5M+ followers across channels
+                </p>
             </div>
         </section>
 
-        <!-- Resources Section -->
-        <section class="section bg-white">
+        <!-- My story -->
+        <section class="py-16 md:py-24 border-t border-slate-200">
             <div class="container-custom">
-                <div class="text-center mb-16">
-                    <p class="section-label justify-center">Free Tools</p>
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-gray-900">
-                        Free Tools for <span class="text-emerald-600">Smarter Wealth Decisions</span>
-                    </h2>
-                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                        Explore our latest calculators, planners, and trackers for tax strategy, retirement planning, and real estate execution.
-                    </p>
-                </div>
-
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-                    <div class="card p-6 lg:p-8 hover-lift">
-                        <div class="icon-box mb-5">
-                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-                            </svg>
-                        </div>
-                        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-600 mb-3">Short-Term Rental</p>
-                        <h3 class="text-lg font-semibold mb-2 font-sans text-gray-900">
-                            <a href="/tools/airbnb-arbitrage-roi" class="hover:text-emerald-600 transition-colors">
-                                Airbnb Arbitrage ROI
-                            </a>
-                        </h3>
-                        <p class="text-gray-500 text-sm">
-                            What cash-on-cash return does a short-term rental lease arbitrage deal produce?
-                        </p>
-                        <a href="/tools/airbnb-arbitrage-roi" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-emerald-600 hover:text-emerald-700">
-                            Open tool
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-                            </svg>
-                        </a>
+                <div class="grid lg:grid-cols-[0.8fr_1.2fr] gap-12 lg:gap-16 items-start">
+                    <div>
+                        <picture>
+                            <source srcset="/assets/images/preston-main-400.webp 400w, /assets/images/preston-main.webp 581w"
+                                    sizes="(min-width: 1024px) 360px, (min-width: 640px) calc(100vw - 4rem), calc(100vw - 2rem)"
+                                    type="image/webp">
+                            <img src="/assets/images/preston-main.jpg"
+                                 srcset="/assets/images/preston-main.jpg 581w"
+                                 sizes="(min-width: 1024px) 360px, (min-width: 640px) calc(100vw - 4rem), calc(100vw - 2rem)"
+                                 alt="Preston Seo, founder of Legacy Investing Show"
+                                 width="581"
+                                 height="800"
+                                 class="w-full max-w-sm rounded-2xl"
+                                 loading="lazy"
+                                 decoding="async">
+                        </picture>
                     </div>
-
-                    <div class="card p-6 lg:p-8 hover-lift">
-                        <div class="icon-box mb-5">
-                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
+                    <div>
+                        <h2 class="mb-6">How I got here</h2>
+                        <div class="max-w-[68ch] text-lg text-secondary leading-relaxed space-y-5">
+                            <p>
+                                I didn't grow up rich. My parents were first-generation immigrants and we worked for everything. After college I took a corporate job and left within a year.
+                            </p>
+                            <p>
+                                So I started studying money from every angle: taxes, cash flow, investing, ownership. A few years later my wife and I had built a $15M+ real estate portfolio and a repeatable system that let us leave the 9-to-5 for good.
+                            </p>
+                            <p class="text-navy font-medium">
+                                Now I teach the decision frameworks and execution systems behind it, so more families keep more of what they earn.
+                            </p>
                         </div>
-                        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-600 mb-3">Payroll</p>
-                        <h3 class="text-lg font-semibold mb-2 font-sans text-gray-900">
-                            <a href="/tools/gross-to-net-pay-estimate" class="hover:text-emerald-600 transition-colors">
-                                Gross to Net Pay Estimate
-                            </a>
-                        </h3>
-                        <p class="text-gray-500 text-sm">
-                            What take-home pay remains after the deductions and tax rates you enter?
+                        <p class="mt-7">
+                            <a href="/about" class="font-semibold text-navy underline decoration-1 underline-offset-4 hover:text-gold">Read my full story</a>
                         </p>
-                        <a href="/tools/gross-to-net-pay-estimate" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-emerald-600 hover:text-emerald-700">
-                            Open tool
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-                            </svg>
-                        </a>
                     </div>
-
-                    <div class="card p-6 lg:p-8 hover-lift">
-                        <div class="icon-box mb-5">
-                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
-                            </svg>
-                        </div>
-                        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-600 mb-3">Withholding</p>
-                        <h3 class="text-lg font-semibold mb-2 font-sans text-gray-900">
-                            <a href="/tools/payroll-withholding-estimate" class="hover:text-emerald-600 transition-colors">
-                                Payroll Withholding Estimate
-                            </a>
-                        </h3>
-                        <p class="text-gray-500 text-sm">
-                            How much should be withheld from each pay period at the rate you enter?
-                        </p>
-                        <a href="/tools/payroll-withholding-estimate" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-emerald-600 hover:text-emerald-700">
-                            Open tool
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-                            </svg>
-                        </a>
-                    </div>
-
-                    <div class="card p-6 lg:p-8 hover-lift">
-                        <div class="icon-box mb-5">
-                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
-                            </svg>
-                        </div>
-                        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-600 mb-3">Capital Gains</p>
-                        <h3 class="text-lg font-semibold mb-2 font-sans text-gray-900">
-                            <a href="/tools/capital-gains-tax-estimate" class="hover:text-emerald-600 transition-colors">
-                                Capital Gains Tax Estimate
-                            </a>
-                        </h3>
-                        <p class="text-gray-500 text-sm">
-                            What taxable gain and estimated tax follow from the rate you enter?
-                        </p>
-                        <a href="/tools/capital-gains-tax-estimate" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-emerald-600 hover:text-emerald-700">
-                            Open tool
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-                            </svg>
-                        </a>
-                    </div>
-
-                    <div class="card p-6 lg:p-8 hover-lift">
-                        <div class="icon-box mb-5">
-                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
-                        </div>
-                        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-600 mb-3">Home Office</p>
-                        <h3 class="text-lg font-semibold mb-2 font-sans text-gray-900">
-                            <a href="/tools/home-office-deduction-estimate" class="hover:text-emerald-600 transition-colors">
-                                Home Office Deduction Estimate
-                            </a>
-                        </h3>
-                        <p class="text-gray-500 text-sm">
-                            What workspace share of eligible home costs is potentially deductible?
-                        </p>
-                        <a href="/tools/home-office-deduction-estimate" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-emerald-600 hover:text-emerald-700">
-                            Open tool
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-                            </svg>
-                        </a>
-                    </div>
-
-                    <div class="card p-6 lg:p-8 hover-lift">
-                        <div class="icon-box mb-5">
-                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                            </svg>
-                        </div>
-                        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-600 mb-3">Retirement</p>
-                        <h3 class="text-lg font-semibold mb-2 font-sans text-gray-900">
-                            <a href="/tools/retirement-income-runway" class="hover:text-emerald-600 transition-colors">
-                                Retirement Income Runway
-                            </a>
-                        </h3>
-                        <p class="text-gray-500 text-sm">
-                            How long can retirement savings support the income gap you expect?
-                        </p>
-                        <a href="/tools/retirement-income-runway" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-emerald-600 hover:text-emerald-700">
-                            Open tool
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="/tools/" class="btn-primary" data-track-event="cta_clicked" data-track-label="Browse All Free Tools" data-track-location="tool_library" data-track-destination="/tools/">
-                        Browse All Free Tools
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                        </svg>
-                    </a>
-                    <a href="/compare/" class="btn-secondary" data-track-event="cta_clicked" data-track-label="Explore Compare Guides" data-track-location="tool_library" data-track-destination="/compare/">
-                        Explore Compare Guides
-                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- Testimonials Section -->
-        <section class="section bg-light">
+        <!-- Masterclass -->
+        <section id="masterclass" class="cta-band">
             <div class="container-custom">
-                <div class="text-center mb-16">
-                    <p class="section-label justify-center">Testimonials</p>
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
-                        Real <span class="text-emerald-600">Student Results</span>
-                    </h2>
-                    <p class="text-lg text-gray-600 max-w-2xl mx-auto mt-4">
-                        Hear from students who transformed their financial future
-                    </p>
-                </div>
-
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Testimonial 1 -->
-                    <div class="card p-6 lg:p-8 hover-lift">
-                        <div class="flex items-center gap-1 mb-4">
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        </div>
-                        <p class="text-gray-600 mb-6 leading-relaxed">"I didn't realize how much I didn't know. The course connected all the financial concepts together and helped me understand where I am and what steps to take next."</p>
-                        <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center">
-                                <span class="text-emerald-600 font-semibold text-sm">E</span>
-                            </div>
-                            <div>
-                                <p class="font-semibold text-gray-900">Earl</p>
-                                <p class="text-sm text-gray-500">Verified Student</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 2 -->
-                    <div class="card p-6 lg:p-8 hover-lift">
-                        <div class="flex items-center gap-1 mb-4">
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        </div>
-                        <p class="text-gray-600 mb-6 leading-relaxed">"It gives you 100+ times the value for what you pay. The seminar will save me thousands in taxes while giving me a completely fresh perspective on building wealth."</p>
-                        <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-full bg-gold-muted flex items-center justify-center">
-                                <span class="text-gold-dark font-semibold text-sm">E</span>
-                            </div>
-                            <div>
-                                <p class="font-semibold text-gray-900">Ellie</p>
-                                <p class="text-sm text-gray-500">Verified Student</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 3 -->
-                    <div class="card p-6 lg:p-8 hover-lift">
-                        <div class="flex items-center gap-1 mb-4">
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        </div>
-                        <p class="text-gray-600 mb-6 leading-relaxed">"Well worth the investment. The three-day session was packed with actionable strategies I could implement immediately. The VIP Q&A sessions were incredibly helpful for my situation."</p>
-                        <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-full bg-gold-muted flex items-center justify-center">
-                                <span class="text-gold-dark font-semibold text-sm">IW</span>
-                            </div>
-                            <div>
-                                <p class="font-semibold text-gray-900">Ian Whiteley</p>
-                                <p class="text-sm text-gray-500">Verified Student</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 4 -->
-                    <div class="card p-6 lg:p-8 hover-lift">
-                        <div class="flex items-center gap-1 mb-4">
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        </div>
-                        <p class="text-gray-600 mb-6 leading-relaxed">"Having side income is essential today. The insights completely reshaped my perspective on money, taxes, and the fundamentals of wealth building. Game changer."</p>
-                        <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-full bg-gold-muted flex items-center justify-center">
-                                <span class="text-gold-dark font-semibold text-sm">BB</span>
-                            </div>
-                            <div>
-                                <p class="font-semibold text-gray-900">Brady B.</p>
-                                <p class="text-sm text-gray-500">Verified Student</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 5 -->
-                    <div class="card p-6 lg:p-8 hover-lift">
-                        <div class="flex items-center gap-1 mb-4">
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        </div>
-                        <p class="text-gray-600 mb-6 leading-relaxed">"Making $2,000/month from my first Airbnb while still working full-time as a nurse. The step-by-step guidance made it possible to build this income stream around my busy schedule."</p>
-                        <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-full bg-gold-muted flex items-center justify-center">
-                                <span class="text-gold-dark font-semibold text-sm">K</span>
-                            </div>
-                            <div>
-                                <p class="font-semibold text-gray-900">Kirk</p>
-                                <p class="text-sm text-gray-500">Full-Time Nurse</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 6 -->
-                    <div class="card p-6 lg:p-8 hover-lift">
-                        <div class="flex items-center gap-1 mb-4">
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        </div>
-                        <p class="text-gray-600 mb-6 leading-relaxed">"We secured $17,500 worth of bookings in just one week after launching. The strategies Preston teaches actually work when you follow the system."</p>
-                        <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-full bg-gold-muted flex items-center justify-center">
-                                <span class="text-gold-dark font-semibold text-sm">TF</span>
-                            </div>
-                            <div>
-                                <p class="font-semibold text-gray-900">The Fischers</p>
-                                <p class="text-sm text-gray-500">$17.5K First Week</p>
-                            </div>
-                        </div>
-                    </div>
+                <h2>The five tax strategies that could cut your tax bill by $30K+</h2>
+                <p>
+                    This is the system I used to get a $46 refund from the IRS the same year I made $500K. It runs live, and it is free.
+                </p>
+                <ul>
+                    <li>Where $10K+ in deductions usually hides</li>
+                    <li>How to build income that is taxed on your terms</li>
+                    <li>Live Q&amp;A with Preston</li>
+                </ul>
+                <div class="cta-band-actions">
+                    <a href="https://www.managemoney101.com/2025workshop"
+                       class="btn-primary"
+                       data-track-event="cta_clicked"
+                       data-track-label="Register For Masterclass"
+                       data-track-location="homepage_masterclass"
+                       data-track-destination="https://www.managemoney101.com/2025workshop">
+                        Register for the masterclass
+                    </a>
+                    <a href="/tax-strategies"
+                       data-track-event="cta_clicked"
+                       data-track-label="Tax Strategy Library"
+                       data-track-location="homepage_masterclass"
+                       data-track-destination="/tax-strategies">Read the written strategies instead</a>
                 </div>
             </div>
         </section>
 
-        <!-- FAQ Section -->
-        <section id="faq" class="section bg-white">
+        <!-- Case studies -->
+        <section class="py-16 md:py-24">
+            <div class="container-custom">
+                <div class="max-w-[68ch] mb-10">
+                    <h2 class="mb-4">What it looks like when students execute</h2>
+                    <p class="text-lg text-secondary">Four results, each written up in full.</p>
+                </div>
+
+                <ul class="rule-list max-w-4xl">
+                    <li class="flex gap-5 items-start">
+                        <picture>
+                            <source srcset="/assets/images/case-study-dustin-240.webp" type="image/webp">
+                            <img src="/assets/images/case-study-dustin.jpg" alt="" width="96" height="54" class="w-24 shrink-0 rounded" loading="lazy" decoding="async">
+                        </picture>
+                        <div class="min-w-0">
+                            <h3 class="rule-list__title"><a href="/blog/6000-cash-flow-no-experience">How Dustin turned a "failed" Airbnb into a cash-flowing pair of lakeside rentals</a></h3>
+                            <p class="rule-list__meta">In under a year, with no prior experience.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-5 items-start">
+                        <picture>
+                            <source srcset="/assets/images/case-study-kiana-240.webp" type="image/webp">
+                            <img src="/assets/images/case-study-kiana.jpg" alt="" width="96" height="54" class="w-24 shrink-0 rounded" loading="lazy" decoding="async">
+                        </picture>
+                        <div class="min-w-0">
+                            <h3 class="rule-list__title"><a href="/blog/kiana-replaced-finance-job-airbnb">How Kiana replaced her 10-year finance career with Airbnb arbitrage</a></h3>
+                            <p class="rule-list__meta">A decade in finance, replaced by rental income.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-5 items-start">
+                        <picture>
+                            <source srcset="/assets/images/case-study-fischers-240.webp" type="image/webp">
+                            <img src="/assets/images/case-study-fischers.jpg" alt="" width="96" height="54" class="w-24 shrink-0 rounded" loading="lazy" decoding="async">
+                        </picture>
+                        <div class="min-w-0">
+                            <h3 class="rule-list__title"><a href="/blog/couple-17500-secured-one-week">How the Fischers booked $17,500 in two weeks with Airbnb arbitrage</a></h3>
+                            <p class="rule-list__meta">A couple running it together.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-5 items-start">
+                        <picture>
+                            <source srcset="/assets/images/case-study-kirk-240.webp" type="image/webp">
+                            <img src="/assets/images/case-study-kirk.jpg" alt="" width="96" height="54" class="w-24 shrink-0 rounded" loading="lazy" decoding="async">
+                        </picture>
+                        <div class="min-w-0">
+                            <h3 class="rule-list__title"><a href="/blog/212k-year-10-minutes-week">How Kirk makes $2,000/mo from his first Airbnb while working full-time</a></h3>
+                            <p class="rule-list__meta">Built around shifts as a nurse.</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <p class="mt-8">
+                    <a href="/success-stories" class="font-semibold text-navy underline decoration-1 underline-offset-4 hover:text-gold">All student results</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Tools -->
+        <section class="py-16 md:py-24 border-t border-slate-200">
+            <div class="container-custom">
+                <div class="max-w-[68ch] mb-10">
+                    <h2 class="mb-4">Free calculators</h2>
+                    <p class="text-lg text-secondary">Each answers one question with your own numbers. Nothing to sign up for.</p>
+                </div>
+
+                <dl class="facts max-w-4xl">
+                    <dt><a href="/tools/airbnb-arbitrage-roi" class="text-navy underline decoration-1 underline-offset-4 hover:text-gold">Airbnb arbitrage ROI</a></dt>
+                    <dd>What cash-on-cash return does a short-term rental lease arbitrage deal produce?</dd>
+
+                    <dt><a href="/tools/gross-to-net-pay-estimate" class="text-navy underline decoration-1 underline-offset-4 hover:text-gold">Gross to net pay</a></dt>
+                    <dd>What take-home pay remains after the deductions and tax rates you enter?</dd>
+
+                    <dt><a href="/tools/payroll-withholding-estimate" class="text-navy underline decoration-1 underline-offset-4 hover:text-gold">Payroll withholding</a></dt>
+                    <dd>How much should be withheld from each pay period at the rate you enter?</dd>
+
+                    <dt><a href="/tools/capital-gains-tax-estimate" class="text-navy underline decoration-1 underline-offset-4 hover:text-gold">Capital gains tax</a></dt>
+                    <dd>What taxable gain and estimated tax follow from the rate you enter?</dd>
+
+                    <dt><a href="/tools/home-office-deduction-estimate" class="text-navy underline decoration-1 underline-offset-4 hover:text-gold">Home office deduction</a></dt>
+                    <dd>What workspace share of eligible home costs is potentially deductible?</dd>
+
+                    <dt><a href="/tools/retirement-income-runway" class="text-navy underline decoration-1 underline-offset-4 hover:text-gold">Retirement income runway</a></dt>
+                    <dd>How long can retirement savings support the income gap you expect?</dd>
+                </dl>
+
+                <p class="mt-8 flex flex-wrap gap-x-8 gap-y-3">
+                    <a href="/tools" class="font-semibold text-navy underline decoration-1 underline-offset-4 hover:text-gold" data-track-event="cta_clicked" data-track-label="Browse All Free Tools" data-track-location="tool_library" data-track-destination="/tools">Browse all free tools</a>
+                    <a href="/compare" class="font-semibold text-navy underline decoration-1 underline-offset-4 hover:text-gold" data-track-event="cta_clicked" data-track-label="Explore Compare Guides" data-track-location="tool_library" data-track-destination="/compare">Compare two strategies side by side</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="py-16 md:py-24 border-t border-slate-200">
+            <div class="container-custom">
+                <h2 class="mb-10">What students say</h2>
+
+                <div class="grid md:grid-cols-3 gap-10 lg:gap-14">
+                    <figure class="pull-quote">
+                        <blockquote><p>I didn't realize how much I didn't know. The course connected all the financial concepts together and helped me understand where I am and what steps to take next.</p></blockquote>
+                        <figcaption>Earl <span>Verified student</span></figcaption>
+                    </figure>
+
+                    <figure class="pull-quote">
+                        <blockquote><p>It gives you 100+ times the value for what you pay. The seminar will save me thousands in taxes while giving me a completely fresh perspective on building wealth.</p></blockquote>
+                        <figcaption>Ellie <span>Verified student</span></figcaption>
+                    </figure>
+
+                    <figure class="pull-quote">
+                        <blockquote><p>Well worth the investment. The three-day session was packed with actionable strategies I could implement immediately. The VIP Q&amp;A sessions were incredibly helpful for my situation.</p></blockquote>
+                        <figcaption>Ian Whiteley <span>Verified student</span></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="py-16 md:py-24 border-t border-slate-200">
             <div class="container-custom max-w-3xl">
-                <div class="text-center mb-16">
-                    <p class="section-label justify-center">FAQ</p>
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
-                        Common <span class="text-gold">Questions</span>
-                    </h2>
-                </div>
+                <h2 class="mb-8">Questions people ask first</h2>
 
-                <div class="space-y-0">
-                    <!-- FAQ Item 1 -->
+                <div class="faq-list">
                     <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            <span>How Is This Better Than Just Watching YouTube Videos Or Reading Finance Books?</span>
-                            <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        <button type="button" class="faq-question" aria-expanded="false">
+                            <span>How is this different from YouTube videos and finance books?</span>
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
                             </svg>
                         </button>
                         <div class="faq-answer hidden">
-                            <p>YouTube videos and finance books give you general knowledge, but they don't give you a personalized system. Our program provides step-by-step implementation, direct coaching, and accountability to ensure you actually build wealth, not just learn about it.</p>
+                            <p>Videos and books give you general knowledge, not a system built around your own numbers. The program adds step-by-step implementation, direct coaching, and accountability.</p>
                         </div>
                     </div>
 
-                    <!-- FAQ Item 2 -->
                     <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            <span>Can I Still Join If I Don't Own A Business Yet?</span>
-                            <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        <button type="button" class="faq-question" aria-expanded="false">
+                            <span>Can I still join if I don't own a business yet?</span>
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
                             </svg>
                         </button>
                         <div class="faq-answer hidden">
-                            <p>Absolutely! Many of our most successful students started without a business. We help you build income streams and optimize your existing finances, whether you're a W-2 employee or entrepreneur.</p>
+                            <p>Yes. Many students start without one. We work on building income streams and optimizing the finances you already have, whether you are a W-2 employee or an entrepreneur.</p>
                         </div>
                     </div>
 
-                    <!-- FAQ Item 3 -->
                     <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            <span>What If My Partner/Spouse Isn't On Board Yet?</span>
-                            <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        <button type="button" class="faq-question" aria-expanded="false">
+                            <span>What if my partner or spouse isn't on board yet?</span>
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
                             </svg>
                         </button>
                         <div class="faq-answer hidden">
-                            <p>This is common. We recommend reviewing the free resources together. Once they see the concrete strategies and real examples, they usually become the biggest supporters.</p>
+                            <p>That is common. Start with the free resources and go through them together. The strategies and examples are concrete enough to discuss as a decision rather than a leap of faith.</p>
                         </div>
                     </div>
 
-                    <!-- FAQ Item 4 -->
                     <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            <span>I Don't Have Time To Do This Right Now</span>
-                            <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        <button type="button" class="faq-question" aria-expanded="false">
+                            <span>I don't have time for this right now</span>
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
                             </svg>
                         </button>
                         <div class="faq-answer hidden">
-                            <p>Most of our students work full-time jobs. The strategies we teach are designed to work alongside your current schedule. Even 2-3 hours per week can lead to significant wealth building over time.</p>
+                            <p>Most students work full-time. The strategies are designed to run alongside a normal schedule, and two to three hours a week is enough to keep moving.</p>
                         </div>
                     </div>
 
-                    <!-- FAQ Item 5 -->
                     <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            <span>How Do I Know If This Is For Me?</span>
-                            <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        <button type="button" class="faq-question" aria-expanded="false">
+                            <span>How do I know if this is for me?</span>
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
                             </svg>
                         </button>
                         <div class="faq-answer hidden">
-                            <p>If you make good money but feel like you're not getting ahead, pay more in taxes than you'd like, or want to build passive income streams - this is for you. Our students typically earn $75K+ and want to optimize their financial future.</p>
+                            <p>If you make good money, pay more tax than you would like, or want income that does not depend on your next paycheck, it is for you. Students typically earn $75K+.</p>
                         </div>
                     </div>
 
-                    <!-- FAQ Item 6 -->
                     <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            <span>What If I'm Not Good At Any of This Finance Stuff?</span>
-                            <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        <button type="button" class="faq-question" aria-expanded="false">
+                            <span>What if I'm not good at any of this finance stuff?</span>
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
                             </svg>
                         </button>
                         <div class="faq-answer hidden">
-                            <p>You don't need to be a finance expert. We break everything down into simple, actionable steps. If you can follow a recipe, you can follow our wealth-building system.</p>
+                            <p>You don't need to be. Every strategy breaks into steps you follow in order, and you can start with one.</p>
                         </div>
                     </div>
                 </div>
@@ -892,147 +510,44 @@
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12" role="contentinfo">
+    <footer class="site-footer" role="contentinfo">
         <div class="container-custom">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
-                <!-- Brand -->
-                <div>
-                    <div class="flex items-center gap-2 mb-4">
-                        <img src="/assets/images/logo.png" alt="Legacy Investing Show" width="32" height="32">
-                        <span class="font-semibold">Legacy Investing Show</span>
-                    </div>
-                    <p class="text-gray-400 text-sm">Tax strategy, wealth systems, and practical decision tools for professionals, investors, and founders.</p>
+            <div class="site-footer-grid">
+                <div class="site-footer-brand">
+                    <a href="/" class="site-brand"><img src="/assets/images/logo-240.webp" alt="" width="28" height="28"><span>Legacy Investing Show</span></a>
+                    <p>Tax strategy, wealth systems, and practical decision tools for professionals, investors, and founders.</p>
                 </div>
-                
-                
-                <!-- Resources -->
-                <div>
-                    <h4 class="font-semibold mb-4">Resources</h4>
-                    <ul class="space-y-2 text-sm text-gray-400">
-                        <li><a href="/tax-strategies/" class="hover:text-white">Tax Strategies</a></li>
-                        <li><a href="/compare/" class="hover:text-white">Compare Guides</a></li>
-                        <li><a href="/markets/" class="hover:text-white">City market guides</a></li>
-                        <li><a href="/renters-insurance/" class="hover:text-white">Renters insurance by state</a></li>
-                        <li><a href="/tools/" class="hover:text-white">Free Tools</a></li>
+                <div class="site-footer-group">
+                    <h2>Guides</h2>
+                    <ul>
+                        <li><a href="/tax-strategies">Tax strategies</a></li>
+                        <li><a href="/compare">Compare guides</a></li>
+                        <li><a href="/topics">Topics</a></li>
+                        <li><a href="/markets">City market guides</a></li>
+                        <li><a href="/renters-insurance">Renters insurance by state</a></li>
                     </ul>
                 </div>
-                
-                <!-- Company -->
-                <div>
-                    <h4 class="font-semibold mb-4">Company</h4>
-                    <ul class="space-y-2 text-sm text-gray-400">
-                        <li><a href="/about" class="hover:text-white">About</a></li>
-                        <li><a href="/success-stories" class="hover:text-white">Results</a></li>
-                        <li><a href="/blog/" class="hover:text-white">Blog</a></li>
+                <div class="site-footer-group">
+                    <h2>Tools</h2>
+                    <ul>
+                        <li><a href="/tools">Free calculators</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer-group">
+                    <h2>Company</h2>
+                    <ul>
+                        <li><a href="/about">About Preston Seo</a></li>
+                        <li><a href="/success-stories">Student results</a></li>
+                        <li><a href="/privacy">Privacy</a></li>
+                        <li><a href="/terms">Terms</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-500">
-                Copyright 2026 Legacy Investing Show. All rights reserved.
-            </div>
+            <p class="site-footer-legal">&copy; 2026 Legacy Investing Show. Educational content, not individual tax, legal, or investment advice.</p>
         </div>
     </footer>
 
-    <!-- JavaScript -->
     <script defer src="/assets/js/main.js"></script>
-
-    <!-- Scroll reveal animation -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const reveals = document.querySelectorAll('.scroll-reveal');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('revealed');
-                    }
-                });
-            }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-            reveals.forEach(el => observer.observe(el));
-        });
-    </script>
-
-    <!-- Webinar Countdown Timer -->
-    <script>
-        (function() {
-            // Get next webinar date (Wednesday 7 PM ET or Sunday 2 PM ET)
-            function getNextWebinarDate() {
-                const now = new Date();
-                // Convert to Eastern Time
-                const et = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
-                const currentDay = et.getDay(); // 0 = Sunday, 3 = Wednesday
-                const currentHour = et.getHours();
-
-                // Calculate days until next Wednesday (7 PM ET) and Sunday (2 PM ET)
-                let daysToWednesday = (3 - currentDay + 7) % 7;
-                let daysToSunday = (0 - currentDay + 7) % 7;
-
-                // If it's Wednesday and past 7 PM, next Wednesday is 7 days away
-                if (currentDay === 3 && currentHour >= 19) {
-                    daysToWednesday = 7;
-                }
-                // If it's Sunday and past 2 PM, next Sunday is 7 days away
-                if (currentDay === 0 && currentHour >= 14) {
-                    daysToSunday = 7;
-                }
-
-                // Create dates for next Wednesday 7 PM ET and next Sunday 2 PM ET
-                const nextWednesday = new Date(et);
-                nextWednesday.setDate(et.getDate() + daysToWednesday);
-                nextWednesday.setHours(19, 0, 0, 0);
-
-                const nextSunday = new Date(et);
-                nextSunday.setDate(et.getDate() + daysToSunday);
-                nextSunday.setHours(14, 0, 0, 0);
-
-                // Return the sooner one
-                if (nextWednesday <= nextSunday) {
-                    return { date: nextWednesday, dayName: 'Wednesday', time: '7 PM ET' };
-                } else {
-                    return { date: nextSunday, dayName: 'Sunday', time: '2 PM ET' };
-                }
-            }
-
-            function updateCountdown() {
-                const webinar = getNextWebinarDate();
-                const now = new Date();
-                // Convert now to Eastern Time for comparison
-                const nowET = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
-
-                // Calculate difference in milliseconds
-                const diff = webinar.date - nowET;
-
-                if (diff <= 0) {
-                    // Webinar is happening now or has passed, recalculate
-                    setTimeout(updateCountdown, 1000);
-                    return;
-                }
-
-                // Calculate time units
-                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-                // Update DOM
-                const daysEl = document.getElementById('countdown-days');
-                const hoursEl = document.getElementById('countdown-hours');
-                const minutesEl = document.getElementById('countdown-minutes');
-                const secondsEl = document.getElementById('countdown-seconds');
-                const labelEl = document.getElementById('webinar-date-label');
-
-                if (daysEl) daysEl.textContent = String(days).padStart(2, '0');
-                if (hoursEl) hoursEl.textContent = String(hours).padStart(2, '0');
-                if (minutesEl) minutesEl.textContent = String(minutes).padStart(2, '0');
-                if (secondsEl) secondsEl.textContent = String(seconds).padStart(2, '0');
-                if (labelEl) labelEl.textContent = `Next masterclass: ${webinar.dayName} @ ${webinar.time}`;
-            }
-
-            // Initial update
-            updateCountdown();
-            // Update every second
-            setInterval(updateCountdown, 1000);
-        })();
-    </script>
 </body>
 </html>
