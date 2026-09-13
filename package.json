@@ -19,6 +19,7 @@
     "build:compare": "node scripts/build-compare-pages.js",
     "build:topics": "node scripts/build-topic-hubs.js",
     "build:tools": "node scripts/import-calculators.js && node scripts/build-tax-structure-calculator.js",
+    "build:shell": "node scripts/sync-static-shell.js",
     "build:tracking": "node scripts/ensure-tracking-and-verification.js",
     "build:seo-titles": "node scripts/normalize-seo-titles.js",
     "build:links": "node scripts/normalize-internal-redirect-links.js",
@@ -31,7 +32,7 @@
     "cms:smoke": "bash ./scripts/cms/smoke-check-eleventy.sh",
     "cms:publish:posts": "bash ./scripts/cms/publish-eleventy-posts.sh",
     "cms:verify": "npm run cms:sync:blog && npm run cms:check:parity && npm run cms:build && npm run cms:smoke",
-    "build": "npm run build:images && npm run build:css && npm run build:blog && npm run cms:verify && npm run cms:publish:posts && npm run build:tax-strategies && npm run build:programmatic && npm run build:compare && npm run build:topics && npm run build:tools && npm run build:lwb && npm run build:tracking && npm run build:seo-titles && npm run build:links && npm run build:indexation && npm run build:sitemap && npm run build:rss && npm run build:assets",
+    "build": "npm run build:images && npm run build:css && npm run build:blog && npm run cms:verify && npm run cms:publish:posts && npm run build:tax-strategies && npm run build:programmatic && npm run build:compare && npm run build:topics && npm run build:tools && npm run build:lwb && npm run build:shell && npm run build:tracking && npm run build:seo-titles && npm run build:links && npm run build:indexation && npm run build:sitemap && npm run build:rss && npm run build:assets",
     "start": "npx serve .",
     "build:lwb": "node scripts/build-lwb-page.js",
     "build:tax-structure": "node scripts/build-tax-structure-calculator.js"
