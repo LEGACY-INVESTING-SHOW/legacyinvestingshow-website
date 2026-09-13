@@ -13,6 +13,7 @@
     "build:sitemap": "node scripts/generate-sitemap.js",
     "build:rss": "node scripts/generate-rss.js",
     "build:images": "node scripts/optimize-images.js",
+    "build:assets": "node scripts/version-assets.js",
     "build:tax-strategies": "node scripts/build-tax-strategies.js",
     "build:programmatic": "node scripts/fix-programmatic-seo.js",
     "build:compare": "node scripts/build-compare-pages.js",
@@ -30,7 +31,7 @@
     "cms:smoke": "bash ./scripts/cms/smoke-check-eleventy.sh",
     "cms:publish:posts": "bash ./scripts/cms/publish-eleventy-posts.sh",
     "cms:verify": "npm run cms:sync:blog && npm run cms:check:parity && npm run cms:build && npm run cms:smoke",
-    "build": "npm run build:css && npm run build:blog && npm run cms:verify && npm run cms:publish:posts && npm run build:tax-strategies && npm run build:programmatic && npm run build:compare && npm run build:topics && npm run build:tools && npm run build:lwb && npm run build:tracking && npm run build:seo-titles && npm run build:links && npm run build:indexation && npm run build:sitemap && npm run build:rss",
+    "build": "npm run build:images && npm run build:css && npm run build:blog && npm run cms:verify && npm run cms:publish:posts && npm run build:tax-strategies && npm run build:programmatic && npm run build:compare && npm run build:topics && npm run build:tools && npm run build:lwb && npm run build:tracking && npm run build:seo-titles && npm run build:links && npm run build:indexation && npm run build:sitemap && npm run build:rss && npm run build:assets",
     "start": "npx serve .",
     "build:lwb": "node scripts/build-lwb-page.js",
     "build:tax-structure": "node scripts/build-tax-structure-calculator.js"

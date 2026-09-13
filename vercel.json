@@ -372,6 +372,10 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
         }
       ]
     },
@@ -381,6 +385,10 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
         }
       ]
     },
@@ -1138,6 +1146,21 @@
     {
       "source": "/blog/micah-facebook-message-5k-month-houston.html",
       "destination": "/blog/micah-facebook-message-airbnb",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/1031-exchange-vs-opportunity-zones",
+      "destination": "/compare/1031-exchange-vs-opportunity-zones",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/1031-exchange-vs-opportunity-zones/",
+      "destination": "/compare/1031-exchange-vs-opportunity-zones",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/1031-exchange-vs-opportunity-zones.html",
+      "destination": "/compare/1031-exchange-vs-opportunity-zones",
       "permanent": true
     },
     {

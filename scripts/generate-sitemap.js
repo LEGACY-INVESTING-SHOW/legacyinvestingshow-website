@@ -85,6 +85,62 @@ function normalizePath(rawPath) {
 }
 
 /**
+ * Every clean URL that vercel.json permanently redirects away.
+ *
+ * A sitemap must never advertise a redirect source (removed worksheets, the
+ * duplicate /tax-strategies/1031-exchange-vs-opportunity-zones, the
+ * health-savings-account-strategy stub). If the stale HTML file is still on
+ * disk when the sitemap is built, this is what keeps it out.
+ */
+function getRedirectSources() {
+  const sources = new Set();
+  try {
+    const config = JSON.parse(
+      fs.readFileSync(path.join(ROOT_DIR, 'vercel.json'), 'utf8')
+    );
+    for (const redirect of config.redirects || []) {
+      const source = String(redirect.source || '');
+      // Parameterised sources (/worksheets/:slug*) cover a whole subtree.
+      if (source.includes(':') || source.includes('(')) {
+        const prefix = source.split(/[:(]/)[0].replace(/\/+$/, '');
+        if (prefix.length > 1) sources.add(`${prefix}/*`);
+        continue;
+      }
+      sources.add(normalizePath(source));
+    }
+  } catch (error) {
+    console.warn(`Could not read redirects from vercel.json: ${error.message}`);
+  }
+  return sources;
+}
+
+const REDIRECT_SOURCES = getRedirectSources();
+
+function isRedirected(cleanUrl) {
+  if (REDIRECT_SOURCES.has(cleanUrl)) return true;
+  for (const source of REDIRECT_SOURCES) {
+    if (source.endsWith('/*') && cleanUrl.startsWith(source.slice(0, -1))) {
+      return true;
+    }
+  }
+  return false;
+}
+
+/**
+ * A redirect wins over a static file on Vercel, so any page still sitting at a
+ * redirect source is unreachable. Name them: either the file should go, or the
+ * redirect should.
+ */
+function warnAboutShadowedPages(cleanUrls) {
+  const shadowed = cleanUrls.filter(isRedirected);
+  if (!shadowed.length) return;
+  console.warn(
+    `${shadowed.length} page(s) excluded because vercel.json redirects their URL:`
+  );
+  for (const url of shadowed) console.warn(`  ${url}`);
+}
+
+/**
  * Determine whether an HTML page should be included in sitemap.
  * Excludes explicit noindex pages and meta-refresh redirect shims.
  */
@@ -242,6 +298,39 @@ function scanBlogArchivePages() {
 }
 
 /**
+ * Scan generated blog pagination pages (/blog/page/2, /blog/page/3, ...).
+ */
+function scanBlogPaginationPages() {
+  const pages = [];
+  const pageDir = path.join(ROOT_DIR, 'blog', 'page');
+
+  if (!fs.existsSync(pageDir)) {
+    return pages;
+  }
+
+  const entries = fs.readdirSync(pageDir, { withFileTypes: true });
+  for (const entry of entries) {
+    if (!entry.isFile() || !entry.name.endsWith('.html')) continue;
+
+    const fullPath = path.join(pageDir, entry.name);
+    if (!isIndexableHtml(fullPath)) continue;
+
+    pages.push({
+      url: `/blog/page/${entry.name}`,
+      lastmod: getW3CDate(fs.statSync(fullPath).mtime),
+    });
+  }
+
+  // /blog/page/2 before /blog/page/10.
+  pages.sort((a, b) => {
+    const num = url => Number((url.match(/\/(\d+)\.html$/) || [])[1] || 0);
+    return num(a.url) - num(b.url);
+  });
+
+  return pages;
+}
+
+/**
  * Parse a date-like value from frontmatter into YYYY-MM-DD.
  */
 function parseFrontmatterDate(value) {
@@ -339,12 +428,18 @@ function buildSitemapUrlSet(urls) {
     new Map(urls.map((entry) => [entry.loc, entry])).values()
   );
 
+  const cleanUrls = deduped.map((entry) => entry.loc.replace(SITE_URL, '') || '/');
+  warnAboutShadowedPages(cleanUrls);
+  const included = deduped.filter(
+    (entry, index) => !isRedirected(cleanUrls[index])
+  );
+
   // Generate XML with image namespace for enhanced SEO
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n';
   xml += '        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n';
 
-  for (const url of deduped) {
+  for (const url of included) {
     xml += '  <url>\n';
     xml += `    <loc>${url.loc}</loc>\n`;
     xml += `    <lastmod>${url.lastmod}</lastmod>\n`;
@@ -415,6 +510,14 @@ function generateSitemaps() {
     });
   }
 
+  const blogPaginationPages = scanBlogPaginationPages();
+  for (const page of blogPaginationPages) {
+    blogUrls.push({
+      loc: `${SITE_URL}${normalizePath(page.url)}`,
+      lastmod: page.lastmod,
+    });
+  }
+
   const blogPosts = scanBlogPosts();
   for (const post of blogPosts) {
     blogUrls.push({
@@ -476,4 +579,4 @@ function main() {
   }
 }
 
-main();
+if (require.main === module) main();

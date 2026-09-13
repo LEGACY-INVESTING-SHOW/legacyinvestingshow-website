@@ -1,0 +1,354 @@
+{
+  "generatedBy": "scripts/optimize-images.js",
+  "webpQuality": 78,
+  "images": {
+    "/assets/images/hero-image.png": {
+      "role": "hero/about",
+      "original": "/assets/images/hero-image.png",
+      "fullSizeWebp": "/assets/images/hero-image.webp",
+      "originalWidth": 591,
+      "originalHeight": 700,
+      "originalBytes": 837828,
+      "variants": [
+        {
+          "url": "/assets/images/hero-image-400.webp",
+          "width": 400,
+          "height": 474,
+          "bytes": 50402
+        }
+      ]
+    },
+    "/assets/images/preston-main.jpg": {
+      "role": "hero/about",
+      "original": "/assets/images/preston-main.jpg",
+      "fullSizeWebp": "/assets/images/preston-main.webp",
+      "originalWidth": 581,
+      "originalHeight": 800,
+      "originalBytes": 110952,
+      "variants": [
+        {
+          "url": "/assets/images/preston-main-400.webp",
+          "width": 400,
+          "height": 551,
+          "bytes": 27158
+        }
+      ]
+    },
+    "/assets/images/about-childhood.png": {
+      "role": "hero/about",
+      "original": "/assets/images/about-childhood.png",
+      "fullSizeWebp": "/assets/images/about-childhood.webp",
+      "originalWidth": 445,
+      "originalHeight": 445,
+      "originalBytes": 133393,
+      "variants": [
+        {
+          "url": "/assets/images/about-childhood-400.webp",
+          "width": 400,
+          "height": 400,
+          "bytes": 36500
+        }
+      ]
+    },
+    "/assets/images/about-family-1.png": {
+      "role": "hero/about",
+      "original": "/assets/images/about-family-1.png",
+      "fullSizeWebp": "/assets/images/about-family-1.webp",
+      "originalWidth": 1290,
+      "originalHeight": 1290,
+      "originalBytes": 876182,
+      "variants": [
+        {
+          "url": "/assets/images/about-family-1-1200.webp",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 181462
+        },
+        {
+          "url": "/assets/images/about-family-1-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 113646
+        },
+        {
+          "url": "/assets/images/about-family-1-600.webp",
+          "width": 600,
+          "height": 600,
+          "bytes": 77740
+        },
+        {
+          "url": "/assets/images/about-family-1-400.webp",
+          "width": 400,
+          "height": 400,
+          "bytes": 39884
+        }
+      ]
+    },
+    "/assets/images/about-family-2.jpeg": {
+      "role": "hero/about",
+      "original": "/assets/images/about-family-2.jpeg",
+      "fullSizeWebp": "/assets/images/about-family-2.webp",
+      "originalWidth": 1000,
+      "originalHeight": 1000,
+      "originalBytes": 268067,
+      "variants": [
+        {
+          "url": "/assets/images/about-family-2-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 89382
+        },
+        {
+          "url": "/assets/images/about-family-2-600.webp",
+          "width": 600,
+          "height": 600,
+          "bytes": 59896
+        },
+        {
+          "url": "/assets/images/about-family-2-400.webp",
+          "width": 400,
+          "height": 400,
+          "bytes": 31580
+        }
+      ]
+    },
+    "/assets/images/about-family-3.png": {
+      "role": "hero/about",
+      "original": "/assets/images/about-family-3.png",
+      "fullSizeWebp": "/assets/images/about-family-3.webp",
+      "originalWidth": 1290,
+      "originalHeight": 1290,
+      "originalBytes": 952625,
+      "variants": [
+        {
+          "url": "/assets/images/about-family-3-1200.webp",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 323572
+        },
+        {
+          "url": "/assets/images/about-family-3-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 171800
+        },
+        {
+          "url": "/assets/images/about-family-3-600.webp",
+          "width": 600,
+          "height": 600,
+          "bytes": 102114
+        },
+        {
+          "url": "/assets/images/about-family-3-400.webp",
+          "width": 400,
+          "height": 400,
+          "bytes": 44812
+        }
+      ]
+    },
+    "/assets/images/about-header.png": {
+      "role": "hero/about",
+      "original": "/assets/images/about-header.png",
+      "fullSizeWebp": null,
+      "originalWidth": 1920,
+      "originalHeight": 481,
+      "originalBytes": 77216,
+      "variants": [
+        {
+          "url": "/assets/images/about-header-800.webp",
+          "width": 800,
+          "height": 200,
+          "bytes": 38572
+        },
+        {
+          "url": "/assets/images/about-header-600.webp",
+          "width": 600,
+          "height": 150,
+          "bytes": 21682
+        },
+        {
+          "url": "/assets/images/about-header-400.webp",
+          "width": 400,
+          "height": 100,
+          "bytes": 10836
+        }
+      ]
+    },
+    "/assets/images/about-mission.png": {
+      "role": "hero/about",
+      "original": "/assets/images/about-mission.png",
+      "fullSizeWebp": "/assets/images/about-mission.webp",
+      "originalWidth": 512,
+      "originalHeight": 507,
+      "originalBytes": 107089,
+      "variants": [
+        {
+          "url": "/assets/images/about-mission-400.webp",
+          "width": 400,
+          "height": 396,
+          "bytes": 12504
+        }
+      ]
+    },
+    "/assets/images/about-work-1.jpg": {
+      "role": "hero/about",
+      "original": "/assets/images/about-work-1.jpg",
+      "fullSizeWebp": null,
+      "originalWidth": 768,
+      "originalHeight": 768,
+      "originalBytes": 71039,
+      "variants": [
+        {
+          "url": "/assets/images/about-work-1-600.webp",
+          "width": 600,
+          "height": 600,
+          "bytes": 16512
+        },
+        {
+          "url": "/assets/images/about-work-1-400.webp",
+          "width": 400,
+          "height": 400,
+          "bytes": 9300
+        }
+      ]
+    },
+    "/assets/images/about-work-2.jpg": {
+      "role": "hero/about",
+      "original": "/assets/images/about-work-2.jpg",
+      "fullSizeWebp": "/assets/images/about-work-2.webp",
+      "originalWidth": 3024,
+      "originalHeight": 3024,
+      "originalBytes": 914667,
+      "variants": [
+        {
+          "url": "/assets/images/about-work-2-1200.webp",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 50496
+        },
+        {
+          "url": "/assets/images/about-work-2-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 28416
+        },
+        {
+          "url": "/assets/images/about-work-2-600.webp",
+          "width": 600,
+          "height": 600,
+          "bytes": 18844
+        },
+        {
+          "url": "/assets/images/about-work-2-400.webp",
+          "width": 400,
+          "height": 400,
+          "bytes": 10880
+        }
+      ]
+    },
+    "/assets/images/logo.png": {
+      "role": "thumbnail",
+      "original": "/assets/images/logo.png",
+      "fullSizeWebp": null,
+      "originalWidth": 2836,
+      "originalHeight": 1290,
+      "originalBytes": 17954,
+      "variants": [
+        {
+          "url": "/assets/images/logo-240.webp",
+          "width": 240,
+          "height": 109,
+          "bytes": 15766
+        }
+      ]
+    },
+    "/assets/images/case-study-dustin.jpg": {
+      "role": "thumbnail",
+      "original": "/assets/images/case-study-dustin.jpg",
+      "fullSizeWebp": "/assets/images/case-study-dustin.webp",
+      "originalWidth": 1280,
+      "originalHeight": 720,
+      "originalBytes": 166510,
+      "variants": [
+        {
+          "url": "/assets/images/case-study-dustin-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 27332
+        },
+        {
+          "url": "/assets/images/case-study-dustin-240.webp",
+          "width": 240,
+          "height": 135,
+          "bytes": 9804
+        }
+      ]
+    },
+    "/assets/images/case-study-fischers.jpg": {
+      "role": "thumbnail",
+      "original": "/assets/images/case-study-fischers.jpg",
+      "fullSizeWebp": "/assets/images/case-study-fischers.webp",
+      "originalWidth": 1280,
+      "originalHeight": 720,
+      "originalBytes": 185102,
+      "variants": [
+        {
+          "url": "/assets/images/case-study-fischers-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 18482
+        },
+        {
+          "url": "/assets/images/case-study-fischers-240.webp",
+          "width": 240,
+          "height": 135,
+          "bytes": 6820
+        }
+      ]
+    },
+    "/assets/images/case-study-kiana.jpg": {
+      "role": "thumbnail",
+      "original": "/assets/images/case-study-kiana.jpg",
+      "fullSizeWebp": "/assets/images/case-study-kiana.webp",
+      "originalWidth": 1280,
+      "originalHeight": 720,
+      "originalBytes": 107788,
+      "variants": [
+        {
+          "url": "/assets/images/case-study-kiana-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 16602
+        },
+        {
+          "url": "/assets/images/case-study-kiana-240.webp",
+          "width": 240,
+          "height": 135,
+          "bytes": 6780
+        }
+      ]
+    },
+    "/assets/images/case-study-kirk.jpg": {
+      "role": "thumbnail",
+      "original": "/assets/images/case-study-kirk.jpg",
+      "fullSizeWebp": "/assets/images/case-study-kirk.webp",
+      "originalWidth": 1280,
+      "originalHeight": 720,
+      "originalBytes": 130897,
+      "variants": [
+        {
+          "url": "/assets/images/case-study-kirk-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 17852
+        },
+        {
+          "url": "/assets/images/case-study-kirk-240.webp",
+          "width": 240,
+          "height": 135,
+          "bytes": 6358
+        }
+      ]
+    }
+  }
+}
