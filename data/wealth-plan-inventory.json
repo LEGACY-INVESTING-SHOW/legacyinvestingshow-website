@@ -1,0 +1,2444 @@
+{
+  "generated": "2026-09-13",
+  "note": "Figures are quoted exactly as each post publishes them. Wealth plan posts are educational planning scenarios, not achieved results.",
+  "headlineFigureRule": "Only a figure the post presents as an outcome (tax savings, modeled year-one value, net worth goal, ROI) counts. Plain income, equity and debt balances are current position, not a result, so those posts carry null instead of a borrowed number. 31 of the 61 wealth plan posts state no outcome figure at all.",
+  "taxSavingsSelection": "The literal grep for \"tax savings\" matches 170+ generic SEO guides. Kept only posts that are genuinely a case study or a named student result. Three near misses were excluded because their headline dollar figure is an audience income threshold or a generic goal, not a result: money-moves-cpa-never-mentioned-high-earners ($200K+ earners), why-150k-year-feels-broke ($150K/year), build-10-million-10-years ($10 million).",
+  "counts": {
+    "wealthPlans": 61,
+    "taxSavings": 3
+  },
+  "wealthPlans": [
+    {
+      "slug": "aaron-wealth-plan",
+      "file": "content/blog/aaron-wealth-plan.md",
+      "name": "Aaron",
+      "title": "Aaron's Wealth Plan: High-Income Professional Tax Optimization",
+      "date": "2026-04-12",
+      "headlineFigure": {
+        "label": "Annual Tax Savings Target",
+        "value": "$40,000+",
+        "statedIn": "statistics"
+      },
+      "headlineAmount": 40000,
+      "summary": "Aaron's tax optimization strategy for high-income professionals, targeting $40,000+ in annual tax savings through entity structuring, retirement maximization, and strategic deductions.",
+      "heroImage": "/assets/images/blog/wealth-plan-aaron.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Annual Tax Savings Target",
+          "value": "$40,000+"
+        },
+        {
+          "label": "Retirement Contribution Capacity",
+          "value": "$69,000"
+        },
+        {
+          "label": "Implementation Timeline",
+          "value": "90 Days"
+        },
+        {
+          "label": "Entity Structure",
+          "value": "S-Corp LLC"
+        },
+        {
+          "label": "Estimated ROI",
+          "value": "300%+"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "abel-wealth-plan",
+      "file": "content/blog/abel-wealth-plan.md",
+      "name": "Abel",
+      "title": "Abel's Wealth Plan: Real Estate Professional Status and Tax Optimization",
+      "date": "2026-04-12",
+      "headlineFigure": {
+        "label": "Tax Savings Year 1",
+        "value": "$35,000+",
+        "statedIn": "statistics"
+      },
+      "headlineAmount": 35000,
+      "summary": "Abel's wealth strategy for achieving Real Estate Professional Status, unlocking $50,000+ in passive loss deductions and building a multi-property portfolio.",
+      "heroImage": "/assets/images/blog/wealth-plan-abel.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "REP Hour Target",
+          "value": "750+ hrs/year"
+        },
+        {
+          "label": "Passive Loss Potential",
+          "value": "$50,000+"
+        },
+        {
+          "label": "Cost Seg Benefit",
+          "value": "$80,000+"
+        },
+        {
+          "label": "Property Target",
+          "value": "3-5 Units"
+        },
+        {
+          "label": "Tax Savings Year 1",
+          "value": "$35,000+"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "abigail-wealth-plan",
+      "file": "content/blog/abigail-wealth-plan.md",
+      "name": "Abigail",
+      "title": "Abigail's Wealth Plan: Eliminating W-2 Tax Liability and Building Early Retirement",
+      "date": "2026-04-11",
+      "headlineFigure": {
+        "label": "Year 1 Tax Refund from STR",
+        "value": "$52,500",
+        "statedIn": "statistics"
+      },
+      "headlineAmount": 52500,
+      "summary": "Abigail's personalized wealth strategy for eliminating $52,500+ in annual taxes through STR cost segregation, S-Corp structures, and Bitcoin accumulation — a blueprint for financial independence before 59½.",
+      "heroImage": "/assets/images/blog/wealth-plan-abigail.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Annual W-2 Income",
+          "value": "$160,992"
+        },
+        {
+          "label": "Year 1 Tax Refund from STR",
+          "value": "$52,500"
+        },
+        {
+          "label": "Total Retirement Assets",
+          "value": "$1.29M"
+        },
+        {
+          "label": "12-Month Projected ROI",
+          "value": "$108,600"
+        },
+        {
+          "label": "S-Corp Annual Tax Deferral",
+          "value": "$35,000"
+        },
+        {
+          "label": "Financial Independence Target",
+          "value": "$4.5M"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "abraham-wealth-plan",
+      "file": "content/blog/abraham-wealth-plan.md",
+      "name": "Abraham",
+      "title": "Abraham's Wealth Plan: C-Corp to S-Corp Conversion and 2026 Tax Optimization Strategy",
+      "date": "2026-04-12",
+      "headlineFigure": {
+        "label": "Annual Tax Savings Range",
+        "value": "$42K - $53K",
+        "statedIn": "statistics"
+      },
+      "headlineAmount": 42000,
+      "summary": "Abraham's wealth strategy for 2026: C-Corporation to S-Corporation conversion to eliminate double taxation, unlocking $42K-$53K in annual tax savings through strategic entity restructuring.",
+      "heroImage": "/assets/images/blog/wealth-plan-abraham.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Annual Tax Savings Range",
+          "value": "$42K - $53K"
+        },
+        {
+          "label": "Double Taxation Elimination",
+          "value": "21% + Personal"
+        },
+        {
+          "label": "S-Corp Election Deadline",
+          "value": "March 15, 2026"
+        },
+        {
+          "label": "Consulting Income Optimization",
+          "value": "Immediate"
+        },
+        {
+          "label": "Plan Period",
+          "value": "Full 2026 Year"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "alicja-althaf-wealth-plan",
+      "file": "content/blog/alicja-althaf-wealth-plan.md",
+      "name": "Alicja & Althaf",
+      "title": "Alicja & Althaf's Wealth Plan: Building Financial Foundations in the NYC Metro Area",
+      "date": "2026-04-11",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "Alicja and Althaf's wealth strategy for transforming their financial position from high debt to long-term wealth building in the high-cost Levittown, NY market.",
+      "heroImage": "/assets/images/blog/wealth-plan-alicja-althaf.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Location",
+          "value": "Levittown, NY"
+        },
+        {
+          "label": "Plan Focus",
+          "value": "Foundation Building"
+        },
+        {
+          "label": "Key Challenge",
+          "value": "High Debt Load"
+        },
+        {
+          "label": "Target Timeline",
+          "value": "Long-term"
+        },
+        {
+          "label": "Metro Area",
+          "value": "NYC/Long Island"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "andreea-wealth-plan",
+      "file": "content/blog/andreea-wealth-plan.md",
+      "name": "Andreea",
+      "title": "Andreea's Wealth Plan: High-Income Severance Year Tax Strategy",
+      "date": "2026-04-11",
+      "headlineFigure": {
+        "label": "Path A Year-One Value",
+        "value": "$118,500 - $339,760",
+        "statedIn": "statistics"
+      },
+      "headlineAmount": 118500,
+      "summary": "Andreea's aggressive October 2025 tax strategy for a $770K severance year — leveraging cost segregation, 100% bonus depreciation, and strategic asset acquisition decisions.",
+      "heroImage": "/assets/images/blog/wealth-plan-andreea.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Severance Year Income",
+          "value": "$770,000"
+        },
+        {
+          "label": "Path A Year-One Value",
+          "value": "$118,500 - $339,760"
+        },
+        {
+          "label": "Tax Year",
+          "value": "2025 High"
+        },
+        {
+          "label": "Strategy Focus",
+          "value": "Cost Seg + Depreciation"
+        },
+        {
+          "label": "Decision Point",
+          "value": "STR vs Equipment"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "andrew-wealth-plan",
+      "file": "content/blog/andrew-wealth-plan.md",
+      "name": "Andrew",
+      "title": "Andrew's Wealth Plan: Atlanta High-Earner Tax Optimization",
+      "date": "2026-04-11",
+      "headlineFigure": {
+        "label": "Year-One Tax Savings Target",
+        "value": "$40K-$54K",
+        "statedIn": "statistics"
+      },
+      "headlineAmount": 40000,
+      "summary": "Andrew's tax optimization strategy for high-income earners in Atlanta, targeting $50,000+ in annual tax savings through entity structuring and strategic deductions.",
+      "heroImage": "/assets/images/blog/wealth-plan-andrew.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Year-One Tax Savings Target",
+          "value": "$40K-$54K"
+        },
+        {
+          "label": "Georgia State Tax",
+          "value": "5.75% max"
+        },
+        {
+          "label": "Immediate Cash Flow",
+          "value": "$7,200"
+        },
+        {
+          "label": "Implementation Timeline",
+          "value": "30 Days"
+        },
+        {
+          "label": "Entity Structure",
+          "value": "S-Corp LLC"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "blake-elisa-wealth-plan",
+      "file": "content/blog/blake-elisa-wealth-plan.md",
+      "name": "Blake & Elisa",
+      "title": "Blake & Elisa's Wealth Plan: Dual-Income Tax Optimization Strategy",
+      "date": "2026-04-11",
+      "headlineFigure": {
+        "label": "Tax Savings Potential",
+        "value": "$15K-$25K",
+        "statedIn": "statistics"
+      },
+      "headlineAmount": 15000,
+      "summary": "Blake and Elisa's wealth strategy for optimizing taxes across dual W-2 incomes, real estate investment, and long-term wealth building.",
+      "heroImage": "/assets/images/blog/wealth-plan-blake-elisa.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Combined Annual Income",
+          "value": "$200K+"
+        },
+        {
+          "label": "Tax Savings Potential",
+          "value": "$15K-$25K"
+        },
+        {
+          "label": "Retirement Accounts",
+          "value": "Maxed 401(k)"
+        },
+        {
+          "label": "Real Estate Equity",
+          "value": "Growing"
+        },
+        {
+          "label": "Investment Timeline",
+          "value": "12-18 Months"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "brady-wealth-plan",
+      "file": "content/blog/brady-wealth-plan.md",
+      "name": "Brady",
+      "title": "Brady's Wealth Plan: Low-Time-Commitment Wealth Building Strategy",
+      "date": "2026-04-11",
+      "headlineFigure": {
+        "label": "Year-One Tax Value",
+        "value": "$8K-15K",
+        "statedIn": "statistics"
+      },
+      "headlineAmount": 8000,
+      "summary": "Brady's wealth strategy for building substantial income with only 3-5 hours weekly through cohosting, tax optimization, and automated Bitcoin accumulation.",
+      "heroImage": "/assets/images/blog/wealth-plan-brady.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Household Income",
+          "value": "$200K"
+        },
+        {
+          "label": "Available Time",
+          "value": "3-5 hrs/week"
+        },
+        {
+          "label": "Target Cohosting Income",
+          "value": "$300-600/mo"
+        },
+        {
+          "label": "Year-One Tax Value",
+          "value": "$8K-15K"
+        },
+        {
+          "label": "Bitcoin DCA",
+          "value": "$300-500/mo"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "brian-wealth-plan",
+      "file": "content/blog/brian-wealth-plan.md",
+      "name": "Brian",
+      "title": "Brian's Wealth Plan: High-Income Tax Optimization and $40K/Month Retirement Strategy",
+      "date": "2026-04-11",
+      "headlineFigure": {
+        "label": "Retirement Goal",
+        "value": "$40K/mo",
+        "statedIn": "statistics"
+      },
+      "headlineAmount": 40000,
+      "summary": "Brian's wealth plan for high-income earners: W-2 + 1099 strategies, long-term rental optimization, REIT portfolio management, and legal recovery asset integration for a $40K/month retirement income target.",
+      "heroImage": "/assets/images/blog/wealth-plan-brian.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Combined Income",
+          "value": "$500K+"
+        },
+        {
+          "label": "Rental Income",
+          "value": "$22,400/year"
+        },
+        {
+          "label": "REIT Position",
+          "value": "~$200K"
+        },
+        {
+          "label": "Retirement Goal",
+          "value": "$40K/mo"
+        },
+        {
+          "label": "Timeline",
+          "value": "5-7 Years"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "cami-wealth-plan",
+      "file": "content/blog/cami-wealth-plan.md",
+      "name": "Cami",
+      "title": "Cami's Wealth Strategy Snapshot: 2026 Tax Year Planning and Scenario Modeling",
+      "date": "2026-04-11",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "Cami's 2026 tax year planning strategy with educational scenario modeling for tax optimization, investment analysis, and professional consultation frameworks.",
+      "heroImage": "/assets/images/blog/wealth-plan-cami.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Plan Type",
+          "value": "Strategy Snapshot"
+        },
+        {
+          "label": "Focus Year",
+          "value": "2026 Tax Year"
+        },
+        {
+          "label": "Planning Date",
+          "value": "March 2026"
+        },
+        {
+          "label": "Core Approach",
+          "value": "Scenario Modeling"
+        },
+        {
+          "label": "Analysis Type",
+          "value": "Educational"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "casey-wealth-strategy-snapshot",
+      "file": "content/blog/casey-wealth-plan.md",
+      "name": "Casey",
+      "title": "Casey's Wealth Strategy Snapshot: Efficient Wealth Building Foundation",
+      "date": "2026-04-11",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "Casey's Wealth Strategy Snapshot (WSS) focusing on streamlined wealth building essentials, foundational tax strategies, and efficient investment approaches for rapid implementation.",
+      "heroImage": "/assets/images/blog/wealth-plan-casey.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Plan Type",
+          "value": "WSS"
+        },
+        {
+          "label": "Focus",
+          "value": "Essentials"
+        },
+        {
+          "label": "Complexity",
+          "value": "Streamlined"
+        },
+        {
+          "label": "Implementation",
+          "value": "Rapid"
+        },
+        {
+          "label": "Priority",
+          "value": "Core Strategies"
+        },
+        {
+          "label": "Outcome",
+          "value": "Foundation Set"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "cecilia-wealth-plan",
+      "file": "content/blog/cecilia-wealth-plan.md",
+      "name": "Cecilia",
+      "title": "Cecilia's Wealth Plan: 12-Month Path to Financial Independence",
+      "date": "2026-04-11",
+      "headlineFigure": {
+        "label": "12-Month Tax Reduction",
+        "value": "$50,200",
+        "statedIn": "statistics"
+      },
+      "headlineAmount": 50200,
+      "summary": "Cecilia's 12-month wealth implementation strategy for $150K-$199K household income — building tax optimization, STR business launch, and financial independence pathways.",
+      "heroImage": "/assets/images/blog/wealth-plan-cecilia.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Household Income Range",
+          "value": "$150K - $199K"
+        },
+        {
+          "label": "12-Month Tax Reduction",
+          "value": "$50,200"
+        },
+        {
+          "label": "Cash Flow Improvement",
+          "value": "$5,400"
+        },
+        {
+          "label": "Retirement Assets",
+          "value": "$500K+"
+        },
+        {
+          "label": "Implementation Focus",
+          "value": "STR Launch"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "chad-wealth-plan",
+      "file": "content/blog/chad-wealth-plan.md",
+      "name": "Chad",
+      "title": "Chad's Wealth Plan: Immediate Tax Optimization and STR Arbitrage Launch",
+      "date": "2026-04-11",
+      "headlineFigure": {
+        "label": "2025 Tax Optimization Range",
+        "value": "$18,500 - $43,500",
+        "statedIn": "statistics"
+      },
+      "headlineAmount": 18500,
+      "summary": "Chad's November 2025 wealth strategy focusing on $18,500-$43,500 immediate tax optimization, LLC formation, and proof-of-concept STR arbitrage for rapid cash flow.",
+      "heroImage": "/assets/images/blog/wealth-plan-chad.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "2025 Tax Optimization Range",
+          "value": "$18,500 - $43,500"
+        },
+        {
+          "label": "LLC Formation Through",
+          "value": "Eileen"
+        },
+        {
+          "label": "Strategy Focus",
+          "value": "STR Arbitrage"
+        },
+        {
+          "label": "Timeline",
+          "value": "Immediate"
+        },
+        {
+          "label": "Investment Priority",
+          "value": "Cash Flow"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "chris-wealth-plan",
+      "file": "content/blog/chris-wealth-plan.md",
+      "name": "Chris",
+      "title": "Chris's Wealth Plan: Houston Market Real Estate Strategy",
+      "date": "2026-04-11",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "Chris's wealth strategy for real estate investing in Houston, Texas, including tax optimization, property acquisition, and wealth building.",
+      "heroImage": "/assets/images/blog/wealth-plan-chris.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Target Market",
+          "value": "Houston, TX"
+        },
+        {
+          "label": "Texas State Income Tax",
+          "value": "0%"
+        },
+        {
+          "label": "Property Focus",
+          "value": "Short-Term Rental"
+        },
+        {
+          "label": "Investment Timeline",
+          "value": "12-18 Months"
+        },
+        {
+          "label": "Wealth Strategy",
+          "value": "Multi-Pronged"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "clayton-wealth-plan",
+      "file": "content/blog/clayton-wealth-plan.md",
+      "name": "Clayton",
+      "title": "Clayton's 2026 Tax Year Planning Wealth Strategy Snapshot",
+      "date": "2026-04-01",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "Clayton's educational wealth strategy snapshot for 2026 tax year planning. Learn tax optimization scenarios, educational modeling, and strategic timing for maximum wealth preservation.",
+      "heroImage": "/assets/images/blog/wealth-plan-clayton.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Tax Year Focus",
+          "value": "2026"
+        },
+        {
+          "label": "Optimization Scenarios",
+          "value": "3-5"
+        },
+        {
+          "label": "Educational Focus",
+          "value": "Modeling"
+        },
+        {
+          "label": "Strategic Timing",
+          "value": "Q4 2025"
+        },
+        {
+          "label": "Planning Timeline",
+          "value": "12 Months"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "courtney-wealth-plan",
+      "file": "content/blog/courtney-wealth-plan.md",
+      "name": "Courtney",
+      "title": "Courtney Wright's Wealth Strategy Snapshot: 2026 Tax Year Planning with Educational Modeling",
+      "date": "2026-04-01",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "Courtney Wright's 2026 tax year wealth strategy snapshot featuring educational modeling of tax optimization scenarios, retirement planning frameworks, and strategic wealth building approaches.",
+      "heroImage": "/assets/images/blog/wealth-plan-courtney.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Planning Year",
+          "value": "2026 Tax Year"
+        },
+        {
+          "label": "Approach",
+          "value": "Educational Modeling"
+        },
+        {
+          "label": "Strategy Type",
+          "value": "Comprehensive"
+        },
+        {
+          "label": "Tax Focus",
+          "value": "Optimized"
+        },
+        {
+          "label": "Modeling Method",
+          "value": "Scenario-Based"
+        },
+        {
+          "label": "Implementation",
+          "value": "Phased"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "dan-kovacich-wealth-plan",
+      "file": "content/blog/dan-kovacich-wealth-plan.md",
+      "name": "Dan",
+      "title": "Dan's Wealth Plan: Keep vs Sell STR Decision Gate and Multi-Entity Tax Optimization",
+      "date": "2026-04-12",
+      "headlineFigure": {
+        "label": "Year-One Value Range",
+        "value": "$55K - $265K",
+        "statedIn": "statistics"
+      },
+      "headlineAmount": 55000,
+      "summary": "Dan's wealth strategy: a strict Decision Gate framework for keep vs sell analysis on a $1.375M STR property, maximizing $100K+ tax savings through multi-entity structuring, cost segregation, and strategic Bitcoin deployment.",
+      "heroImage": "/assets/images/blog/wealth-plan-dan-kovacich.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Year-One Value Range",
+          "value": "$55K - $265K"
+        },
+        {
+          "label": "Property Market Value",
+          "value": "$1,375,000"
+        },
+        {
+          "label": "Cost Seg Add-On Value",
+          "value": "$45K - $140K"
+        },
+        {
+          "label": "Entities Required",
+          "value": "3 LLCs"
+        },
+        {
+          "label": "Investment Focus",
+          "value": "BTC + IREN"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "dan-wealth-plan",
+      "file": "content/blog/dan-wealth-plan.md",
+      "name": "Dan",
+      "title": "Dan's Wealth Plan: Mid-Career Optimization and Acceleration Strategy",
+      "date": "2026-04-11",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "Dan's personalized wealth strategy for mid-career professionals focusing on optimization of existing assets, tax strategy refinement, and acceleration toward financial independence.",
+      "heroImage": "/assets/images/og-blog.jpg",
+      "heroImageExists": true,
+      "allStatistics": [
+        {
+          "label": "Life Stage",
+          "value": "Mid-Career"
+        },
+        {
+          "label": "Income Trend",
+          "value": "Peak/Max"
+        },
+        {
+          "label": "Focus",
+          "value": "Optimization"
+        },
+        {
+          "label": "Retirement",
+          "value": "15-20 Years"
+        },
+        {
+          "label": "Strategy",
+          "value": "Acceleration"
+        },
+        {
+          "label": "Catch-Up",
+          "value": "Activated"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "daniel-wealth-plan",
+      "file": "content/blog/daniel-wealth-plan.md",
+      "name": "Daniel",
+      "title": "Daniel's Wealth Plan: Colorado Mountain Market STR Strategy and Tax Optimization",
+      "date": "2026-04-11",
+      "headlineFigure": {
+        "label": "Year-One Value Range",
+        "value": "$55,900 - $68,300",
+        "statedIn": "statistics"
+      },
+      "headlineAmount": 55900,
+      "summary": "Daniel's personalized wealth strategy for Pagosa Springs, Colorado — leveraging mountain STR markets, strategic tax optimization, and scalable income potential to $210K annually.",
+      "heroImage": "/assets/images/blog/wealth-plan-daniel.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Year-One Value Range",
+          "value": "$55,900 - $68,300"
+        },
+        {
+          "label": "Annual Scale Potential",
+          "value": "$140K - $210K"
+        },
+        {
+          "label": "Colorado State Tax",
+          "value": "4.4%"
+        },
+        {
+          "label": "Market Type",
+          "value": "Mountain/Resort"
+        },
+        {
+          "label": "Growth Trajectory",
+          "value": "Aggressive"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "diana-wealth-plan",
+      "file": "content/blog/diana-wealth-plan.md",
+      "name": "Diana",
+      "title": "Diana Peninger's Comprehensive Wealth Plan: Age 61 Retirement-Focused Strategy with Bitcoin and Income Planning from Texas",
+      "date": "2025-12-01",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "Wealth plan for Diana Peninger age 61 focusing on retirement income strategy, Bitcoin allocation, and Texas-based tax optimization for late-stage wealth building.",
+      "heroImage": "/assets/images/blog/wealth-plan-diana.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Age",
+          "value": "61 Years"
+        },
+        {
+          "label": "Focus",
+          "value": "Pre-Retirement"
+        },
+        {
+          "label": "Location",
+          "value": "Texas"
+        },
+        {
+          "label": "Bitcoin Allocation",
+          "value": "Strategic"
+        },
+        {
+          "label": "Income Priority",
+          "value": "Sustainable"
+        },
+        {
+          "label": "Tax Strategy",
+          "value": "No State Tax"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "dustin-wealth-plan",
+      "file": "content/blog/dustin-wealth-plan.md",
+      "name": "Dustin",
+      "title": "Dustin's Wealth Plan: Short-Term Rental Arbitrage and Scaling Strategy",
+      "date": "2026-04-12",
+      "headlineFigure": {
+        "label": "Year 1 Tax Savings",
+        "value": "$45,000+",
+        "statedIn": "statistics"
+      },
+      "headlineAmount": 45000,
+      "summary": "Dustin's aggressive wealth strategy for building a $25,000/month short-term rental arbitrage portfolio with systematic scaling and tax optimization.",
+      "heroImage": "/assets/images/blog/wealth-plan-dustin.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Target Monthly Cash Flow",
+          "value": "$25,000"
+        },
+        {
+          "label": "Portfolio Size Target",
+          "value": "8-12 Units"
+        },
+        {
+          "label": "Capital per Unit",
+          "value": "$15K-$25K"
+        },
+        {
+          "label": "Timeline to Target",
+          "value": "24 Months"
+        },
+        {
+          "label": "Year 1 Tax Savings",
+          "value": "$45,000+"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "elizabeth-wealth-plan",
+      "file": "content/blog/elizabeth-wealth-plan.md",
+      "name": "Elizabeth",
+      "title": "Elizabeth's Wealth Plan: Healthcare Worker Tax Optimization and Passive Income",
+      "date": "2026-04-12",
+      "headlineFigure": {
+        "label": "Tax Savings Target",
+        "value": "$8,000-$15K",
+        "statedIn": "statistics"
+      },
+      "headlineAmount": 8000,
+      "summary": "Elizabeth's wealth strategy for healthcare professionals, combining shift-work flexibility with strategic tax optimization and passive real estate investment.",
+      "heroImage": "/assets/images/blog/wealth-plan-elizabeth.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Annual Income",
+          "value": "$80K-$120K"
+        },
+        {
+          "label": "Shift Flexibility",
+          "value": "High"
+        },
+        {
+          "label": "Tax Savings Target",
+          "value": "$8,000-$15K"
+        },
+        {
+          "label": "Investment Focus",
+          "value": "Passive"
+        },
+        {
+          "label": "Time Available",
+          "value": "Limited"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "eric-wealth-plan",
+      "file": "content/blog/eric-wealth-plan.md",
+      "name": "Eric",
+      "title": "Eric's Wealth Plan: First-Generation Wealth Building and Family Financial Planning",
+      "date": "2026-04-12",
+      "headlineFigure": {
+        "label": "Tax Savings Target",
+        "value": "$12,000+",
+        "statedIn": "statistics"
+      },
+      "headlineAmount": 12000,
+      "summary": "Eric's wealth strategy for first-generation wealth builders, focusing on family financial education, tax optimization, and building generational assets.",
+      "heroImage": "/assets/images/blog/wealth-plan-eric.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Wealth Generation",
+          "value": "First Gen"
+        },
+        {
+          "label": "Family Members",
+          "value": "4-6"
+        },
+        {
+          "label": "Education Focus",
+          "value": "High"
+        },
+        {
+          "label": "Tax Savings Target",
+          "value": "$12,000+"
+        },
+        {
+          "label": "Legacy Timeline",
+          "value": "20 Years"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "erin-wealth-plan",
+      "file": "content/blog/erin-wealth-plan.md",
+      "name": "Erin",
+      "title": "Erin's Wealth Plan: Educator Financial Strategy and Public Sector Optimization",
+      "date": "2026-04-11",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "Erin's personalized wealth strategy for educators and public sector employees, optimizing pension coordination, 403(b) strategies, and public service loan forgiveness programs.",
+      "heroImage": "/assets/images/og-blog.jpg",
+      "heroImageExists": true,
+      "allStatistics": [
+        {
+          "label": "Employment Type",
+          "value": "Public Sector"
+        },
+        {
+          "label": "Retirement System",
+          "value": "Pension + 403b"
+        },
+        {
+          "label": "Loan Program",
+          "value": "PSLF Eligible"
+        },
+        {
+          "label": "Focus Area",
+          "value": "Coordination"
+        },
+        {
+          "label": "Job Security",
+          "value": "High"
+        },
+        {
+          "label": "Income Growth",
+          "value": "Step-Based"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "frances-wealth-plan",
+      "file": "content/blog/frances-wealth-plan.md",
+      "name": "Frances",
+      "title": "Frances' Wealth Plan: Pre-Retirement Wealth Optimization and Income Transition",
+      "date": "2026-04-12",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "Frances' wealth strategy for optimizing finances in the decade before retirement, including tax-efficient withdrawals, healthcare planning, and income transition strategies.",
+      "heroImage": "/assets/images/blog/wealth-plan-frances.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Years to Retirement",
+          "value": "5-10"
+        },
+        {
+          "label": "Retirement Accounts",
+          "value": "$500K+"
+        },
+        {
+          "label": "Tax Bracket Goal",
+          "value": "Optimize"
+        },
+        {
+          "label": "Healthcare Strategy",
+          "value": "Bridge to Medicare"
+        },
+        {
+          "label": "Income Target",
+          "value": "80% Replacement"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "gregory-wealth-plan",
+      "file": "content/blog/gregory-wealth-plan.md",
+      "name": "Gregory",
+      "title": "Gregory's Wealth Plan: Business Owner Strategy and Entity Optimization",
+      "date": "2026-04-11",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "Gregory's personalized wealth strategy for business owners focusing on multi-entity structures, profit distribution optimization, and tax-efficient business wealth building.",
+      "heroImage": "/assets/images/og-blog.jpg",
+      "heroImageExists": true,
+      "allStatistics": [
+        {
+          "label": "Business Type",
+          "value": "Operating Company"
+        },
+        {
+          "label": "Entity Focus",
+          "value": "Multi-Structure"
+        },
+        {
+          "label": "Distribution Strategy",
+          "value": "Optimized"
+        },
+        {
+          "label": "Tax Approach",
+          "value": "Aggressive"
+        },
+        {
+          "label": "Owner Compensation",
+          "value": "Strategic"
+        },
+        {
+          "label": "Growth Target",
+          "value": "Sustainable"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "hang-wealth-plan",
+      "file": "content/blog/hang-wealth-plan.md",
+      "name": "Hang & Antonio",
+      "title": "Hang & Antonio's Wealth Plan: Debt Elimination & Side Hustle Strategy",
+      "date": "2025-08-01",
+      "headlineFigure": {
+        "label": "Year-One Benefit",
+        "value": "$12,600-$21,400",
+        "statedIn": "statistics"
+      },
+      "headlineAmount": 12600,
+      "summary": "How Hang and Antonio's wealth plan tackles $150K consumer debt through structured settlements, budget optimization, and strategic side hustles including vending, cohosting, and arbitrage.",
+      "heroImage": "/assets/images/blog/hang-wealth-plan.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Consumer Debt Target",
+          "value": "$150,000"
+        },
+        {
+          "label": "Monthly Debt Payment",
+          "value": "$1,907"
+        },
+        {
+          "label": "Income Lanes Planned",
+          "value": "3"
+        },
+        {
+          "label": "Year-One Benefit",
+          "value": "$12,600-$21,400"
+        },
+        {
+          "label": "Emergency Fund Target",
+          "value": "$6,000"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "harold-wealth-plan",
+      "file": "content/blog/harold-wealth-plan.md",
+      "name": "Harold",
+      "title": "Harold Vaughn Heath's Wealth Strategy Snapshot: 2026 Tax Year Planning with Educational Analysis",
+      "date": "2026-03-01",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "2026 tax year wealth strategy snapshot for Harold Vaughn Heath featuring educational analysis of tax optimization, retirement planning, and strategic wealth building frameworks.",
+      "heroImage": "/assets/images/blog/wealth-plan-harold.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Tax Year Focus",
+          "value": "2026 Planning"
+        },
+        {
+          "label": "Analysis Type",
+          "value": "Educational"
+        },
+        {
+          "label": "Strategy Framework",
+          "value": "Comprehensive"
+        },
+        {
+          "label": "Tax Approach",
+          "value": "Optimized"
+        },
+        {
+          "label": "Retirement Focus",
+          "value": "Maximized"
+        },
+        {
+          "label": "Wealth Building",
+          "value": "Strategic"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "henri-melica-wealth-plan",
+      "file": "content/blog/henri-melica-wealth-plan.md",
+      "name": "Henri & Melica",
+      "title": "Henri & Melica's Wealth Plan: $50,000+ Annual Tax Reduction Strategy",
+      "date": "2026-04-11",
+      "headlineFigure": {
+        "label": "Target Annual Tax Savings",
+        "value": "$50,000+",
+        "statedIn": "statistics"
+      },
+      "headlineAmount": 50000,
+      "summary": "Henri and Melica's 2026 wealth strategy targeting $50,000+ in tax savings through advanced real estate structures, S-Corp optimization, and strategic retirement planning.",
+      "heroImage": "/assets/images/blog/wealth-plan-henri-melica.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Target Annual Tax Savings",
+          "value": "$50,000+"
+        },
+        {
+          "label": "Real Estate Portfolio Target",
+          "value": "Multi-Property"
+        },
+        {
+          "label": "Retirement Account Strategy",
+          "value": "Defined Benefit"
+        },
+        {
+          "label": "Estate Planning Focus",
+          "value": "Generational"
+        },
+        {
+          "label": "Business Structure",
+          "value": "S-Corp + LLCs"
+        },
+        {
+          "label": "Wealth Protection",
+          "value": "Multi-Layered"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "hernan-wealth-plan",
+      "file": "content/blog/hernan-wealth-plan.md",
+      "name": "Hernan",
+      "title": "Hernan Zegarra Valencia's 2025-2026 Wealth Optimization Plan: $50,459-$74,626 Year-One Value",
+      "date": "2025-11-01",
+      "headlineFigure": {
+        "label": "Year-One Value Range",
+        "value": "$50,459 - $74,626",
+        "statedIn": "statistics"
+      },
+      "headlineAmount": 50459,
+      "summary": "Hernan Zegarra Valencia's 2025-2026 wealth optimization plan delivering $50,459-$74,626 in year-one value. Real estate investment focus with tax optimization for 2026.",
+      "heroImage": "/assets/images/blog/wealth-plan-hernan.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Year-One Value Range",
+          "value": "$50,459 - $74,626"
+        },
+        {
+          "label": "Real Estate Focus",
+          "value": "2026"
+        },
+        {
+          "label": "Tax Optimization",
+          "value": "Maximum"
+        },
+        {
+          "label": "Strategy Depth",
+          "value": "8,700+ Words"
+        },
+        {
+          "label": "Investment Type",
+          "value": "Real Estate"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "ian-wealth-plan",
+      "file": "content/blog/ian-wealth-plan.md",
+      "name": "Ian",
+      "title": "Ian's Wealth Plan: Comprehensive Tax Optimization and STR Launch Strategy",
+      "date": "2026-04-11",
+      "headlineFigure": {
+        "label": "Year-One Tax Value (Aggressive)",
+        "value": "$49,680",
+        "statedIn": "statistics"
+      },
+      "headlineAmount": 49680,
+      "summary": "Ian's complete wealth strategy for Airbnb business launch, tax optimization with LLC formation, and Bitcoin accumulation in Nevada's 0% tax environment.",
+      "heroImage": "/assets/images/blog/wealth-plan-ian.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Year-One Tax Value (Conservative)",
+          "value": "$20,280"
+        },
+        {
+          "label": "Year-One Tax Value (Aggressive)",
+          "value": "$49,680"
+        },
+        {
+          "label": "Home Equity Accessible",
+          "value": "$300K+"
+        },
+        {
+          "label": "Federal Marginal Tax Rate",
+          "value": "22-24%"
+        },
+        {
+          "label": "Target HELOC Amount",
+          "value": "$50K-$75K"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "jc-wealth-plan",
+      "file": "content/blog/jc-wealth-plan.md",
+      "name": "Jc",
+      "title": "JC Nichols' Wealth Plan: $28,100-$48,800 Year-One Value Strategy",
+      "date": "2025-12-01",
+      "headlineFigure": {
+        "label": "Year-One Value Range",
+        "value": "$28,100 - $48,800",
+        "statedIn": "statistics"
+      },
+      "headlineAmount": 28100,
+      "summary": "JC Nichols' wealth strategy delivering $28,100-$48,800 in year-one value through cash flow optimization, debt elimination, and accelerated wealth building systems.",
+      "heroImage": "/assets/images/blog/wealth-plan-jc.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Year-One Value Range",
+          "value": "$28,100 - $48,800"
+        },
+        {
+          "label": "Cash Flow Optimization",
+          "value": "$1,500+"
+        },
+        {
+          "label": "Debt Elimination Timeline",
+          "value": "18-24 Months"
+        },
+        {
+          "label": "Wealth Building Rate",
+          "value": "$3K+/Month"
+        },
+        {
+          "label": "Strategy Components",
+          "value": "7 Systems"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "jeanette-wealth-plan",
+      "file": "content/blog/jeanette-wealth-plan.md",
+      "name": "Jeanette & Ryan",
+      "title": "Jeanette & Ryan's Wealth Plan: Bitcoin-Centric Tax Strategy",
+      "date": "2025-12-01",
+      "headlineFigure": {
+        "label": "Year-One Tax Savings",
+        "value": "$28,362 - $34,489",
+        "statedIn": "statistics"
+      },
+      "headlineAmount": 28362,
+      "summary": "Learn how Jeanette and Ryan's personalized wealth plan combines Bitcoin accumulation with strategic tax optimization, targeting $28,362-$34,489 in year-one tax savings.",
+      "heroImage": "/assets/images/blog/jeanette-wealth-plan.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Year-One Tax Savings",
+          "value": "$28,362 - $34,489"
+        },
+        {
+          "label": "Bitcoin Accumulation Target",
+          "value": "Monthly DCA"
+        },
+        {
+          "label": "Investment Timeline",
+          "value": "5-10 Years"
+        },
+        {
+          "label": "Tax Optimization Strategies",
+          "value": "10+"
+        },
+        {
+          "label": "Business Entity Structure",
+          "value": "LLC Partnership"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "jeremiah-wealth-plan",
+      "file": "content/blog/jeremiah-wealth-plan.md",
+      "name": "Jeremiah",
+      "title": "Jeremiah Matthews' Comprehensive Wealth Plan: Tax Reduction, Business Cash Flow & Real Estate from Raleigh, NC",
+      "date": "2025-11-01",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "Jeremiah Matthews' wealth plan from Raleigh, NC featuring advanced tax reduction strategies, business cash flow optimization, and real estate investment approaches for sustainable wealth building.",
+      "heroImage": "/assets/images/blog/wealth-plan-jeremiah.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Location",
+          "value": "Raleigh, NC"
+        },
+        {
+          "label": "Focus Areas",
+          "value": "Tax + Business + Real Estate"
+        },
+        {
+          "label": "Strategy Type",
+          "value": "Comprehensive"
+        },
+        {
+          "label": "Tax Optimization",
+          "value": "Advanced"
+        },
+        {
+          "label": "Real Estate",
+          "value": "Active Investor"
+        },
+        {
+          "label": "Business Entity",
+          "value": "Optimized"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "josh-wealth-plan",
+      "file": "content/blog/josh-wealth-plan.md",
+      "name": "Josh",
+      "title": "Josh's Wealth Plan: From High-Interest Debt to Cash Flow Independence",
+      "date": "2026-04-11",
+      "headlineFigure": {
+        "label": "Year-One Projected ROI",
+        "value": "$78,400",
+        "statedIn": "statistics"
+      },
+      "headlineAmount": 78400,
+      "summary": "Josh's personalized wealth strategy for eliminating $38K credit card debt through HELOC refinancing, building a $78,400 year-one ROI with cohosting, arbitrage, and Bitcoin accumulation.",
+      "heroImage": "/assets/images/blog/wealth-plan-josh.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Annual Income (1099)",
+          "value": "$104,400"
+        },
+        {
+          "label": "Credit Card Debt to Eliminate",
+          "value": "$38,000"
+        },
+        {
+          "label": "Available Home Equity",
+          "value": "$180,000"
+        },
+        {
+          "label": "Year-One Projected ROI",
+          "value": "$78,400"
+        },
+        {
+          "label": "Emergency Fund Target",
+          "value": "$5,000"
+        },
+        {
+          "label": "Monthly Expense Reduction",
+          "value": "$800"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "judith-wealth-plan",
+      "file": "content/blog/judith-wealth-plan.md",
+      "name": "Judith",
+      "title": "Judith Simpson's Wealth Strategy Snapshot: 2026 Tax Year Planning",
+      "date": "2026-03-01",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "2026 tax year wealth strategy snapshot for Judith Simpson featuring tax optimization, retirement planning, and diversified investment approaches for sustainable wealth building.",
+      "heroImage": "/assets/images/blog/wealth-plan-judith.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Tax Year Focus",
+          "value": "2026 Planning"
+        },
+        {
+          "label": "Strategy Type",
+          "value": "Comprehensive"
+        },
+        {
+          "label": "Investment Focus",
+          "value": "Diversified"
+        },
+        {
+          "label": "Planning Horizon",
+          "value": "Long-term"
+        },
+        {
+          "label": "Risk Profile",
+          "value": "Balanced"
+        },
+        {
+          "label": "Tax Efficiency",
+          "value": "Optimized"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "justin-wealth-plan",
+      "file": "content/blog/justin-wealth-plan.md",
+      "name": "Justin",
+      "title": "Justin's Wealth Plan: $72,000 Annual Savings into Aggressive Bitcoin Accumulation",
+      "date": "2026-04-11",
+      "headlineFigure": {
+        "label": "annual savings",
+        "value": "$72,000",
+        "statedIn": "description"
+      },
+      "headlineAmount": 72000,
+      "summary": "Justin's personalized wealth strategy for deploying $72,000 in annual savings capacity into systematic Bitcoin dollar-cost averaging, business entity optimization, and wealth acceleration through disciplined accumulation.",
+      "heroImage": "/assets/images/blog/wealth-plan-justin.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Monthly Savings Capacity",
+          "value": "$6,000"
+        },
+        {
+          "label": "Annual Savings Capacity",
+          "value": "$72,000"
+        },
+        {
+          "label": "Bitcoin Allocation Target",
+          "value": "Primary Asset"
+        },
+        {
+          "label": "DCA Monthly Target",
+          "value": "$6,000"
+        },
+        {
+          "label": "Self Custody Threshold",
+          "value": "1 BTC"
+        },
+        {
+          "label": "Time Horizon",
+          "value": "10+ Years"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "kanini-wealth-plan",
+      "file": "content/blog/kanini-wealth-plan.md",
+      "name": "Kanini",
+      "title": "Kanini's Wealth Plan: Strategic Debt Management and Staged Wealth Building",
+      "date": "2025-11-01",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "Kanini's wealth strategy for managing significant debt, building emergency reserves, and implementing a phased approach to financial recovery and wealth accumulation.",
+      "heroImage": "/assets/images/blog/wealth-plan-kanini.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Total Debt Load",
+          "value": "$50K+"
+        },
+        {
+          "label": "Emergency Fund Target",
+          "value": "$15K - $25K"
+        },
+        {
+          "label": "Debt Elimination Timeline",
+          "value": "24-36 Months"
+        },
+        {
+          "label": "Monthly Debt Payment",
+          "value": "$2K - $3K"
+        },
+        {
+          "label": "Wealth Building Phase",
+          "value": "Year 3+"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "kelsa-wealth-plan",
+      "file": "content/blog/kelsa-wealth-plan.md",
+      "name": "Kelsa",
+      "title": "Kelsa's Wealth Plan: Dual-Income Household Optimization and Coordination",
+      "date": "2026-04-11",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "Kelsa's personalized wealth strategy for dual-income households focusing on coordinated tax optimization, strategic account selection, and family wealth building efficiency.",
+      "heroImage": "/assets/images/og-blog.jpg",
+      "heroImageExists": true,
+      "allStatistics": [
+        {
+          "label": "Household Structure",
+          "value": "Dual Income"
+        },
+        {
+          "label": "Tax Filing",
+          "value": "Joint/MFJ"
+        },
+        {
+          "label": "Income Capacity",
+          "value": "Combined High"
+        },
+        {
+          "label": "Retirement Room",
+          "value": "Doubled"
+        },
+        {
+          "label": "Strategy",
+          "value": "Coordinated"
+        },
+        {
+          "label": "Benefits",
+          "value": "Multiplied"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "kris-wealth-plan",
+      "file": "content/blog/kris-wealth-plan.md",
+      "name": "Kris",
+      "title": "Kris's Wealth Plan: Technology Professional Income Optimization and Investment Strategy",
+      "date": "2026-04-11",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "Kris's personalized wealth strategy for technology professionals combining equity compensation optimization, tax-efficient investing, and real estate strategies for high-income tech workers.",
+      "heroImage": "/assets/images/blog/wealth-plan-kris.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Compensation Type",
+          "value": "Equity Heavy"
+        },
+        {
+          "label": "Income Level",
+          "value": "High W-2"
+        },
+        {
+          "label": "Focus Area",
+          "value": "Tax Efficiency"
+        },
+        {
+          "label": "Vesting Schedule",
+          "value": "Multi-Year"
+        },
+        {
+          "label": "Investment Strategy",
+          "value": "Diversified"
+        },
+        {
+          "label": "Geographic",
+          "value": "Tech Hub"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "lauren-wealth-plan",
+      "file": "content/blog/lauren-wealth-plan.md",
+      "name": "Lauren",
+      "title": "Lauren Chi's Comprehensive Wealth Plan: Pathway to $1M Net Worth by Age 45",
+      "date": "2025-12-01",
+      "headlineFigure": {
+        "label": "Wealth Goal",
+        "value": "$1M Net Worth",
+        "statedIn": "statistics"
+      },
+      "headlineAmount": 1000000,
+      "summary": "Wealth plan for Lauren Chi featuring a strategic pathway to achieve $1 million net worth by age 45 through systematic investing, tax optimization, and accelerated wealth building strategies.",
+      "heroImage": "/assets/images/blog/wealth-plan-lauren.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Wealth Goal",
+          "value": "$1M Net Worth"
+        },
+        {
+          "label": "Target Age",
+          "value": "45 Years"
+        },
+        {
+          "label": "Approach",
+          "value": "Systematic"
+        },
+        {
+          "label": "Strategy Type",
+          "value": "Accelerated"
+        },
+        {
+          "label": "Focus",
+          "value": "Compounding"
+        },
+        {
+          "label": "Timeline",
+          "value": "15-20 Years"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "lawrence-wealth-plan",
+      "file": "content/blog/lawrence-wealth-plan.md",
+      "name": "Lawrence",
+      "title": "Lawrence Nfor's Wealth Plan: HELOC Strategy, Multi-Member LLC & STR Loophole Optimization",
+      "date": "2025-10-01",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "Lawrence Nfor's Worcester, MA wealth strategy leveraging HELOC financing, multi-member LLC advantages, and Airbnb arbitrage with Short-Term Rental tax loophole optimization.",
+      "heroImage": "/assets/images/blog/wealth-plan-lawrence.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "HELOC Leverage",
+          "value": "Strategic"
+        },
+        {
+          "label": "LLC Structure",
+          "value": "Multi-Member"
+        },
+        {
+          "label": "STR Loophole",
+          "value": "Optimized"
+        },
+        {
+          "label": "Target Market",
+          "value": "Worcester MA"
+        },
+        {
+          "label": "Focus",
+          "value": "3,000+ Words"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "leilani-wealth-plan",
+      "file": "content/blog/leilani-wealth-plan.md",
+      "name": "Leilani",
+      "title": "Leilani's Wealth Plan: Post-Divorce Financial Rebuilding Strategy",
+      "date": "2026-04-11",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "Leilani's post-divorce wealth rebuilding plan, featuring tax optimization, STR business launch, and debt elimination strategies.",
+      "heroImage": "/assets/images/blog/wealth-plan-leilani.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Age",
+          "value": "37"
+        },
+        {
+          "label": "Target Monthly STR Income",
+          "value": "$2,000+"
+        },
+        {
+          "label": "Debt Elimination Timeline",
+          "value": "18 Months"
+        },
+        {
+          "label": "Children's Future Fund",
+          "value": "Secure"
+        },
+        {
+          "label": "Financial Independence Goal",
+          "value": "5-7 Years"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "mark-wealth-plan",
+      "file": "content/blog/mark-wealth-plan.md",
+      "name": "Mark",
+      "title": "Mark's Wealth Plan: Entrepreneur Wealth Creation and Business Exit Strategy",
+      "date": "2026-04-11",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "Mark's personalized wealth strategy for entrepreneurs building valuable businesses and planning strategic exits, focusing on value creation, exit timing, and post-liquidity wealth management.",
+      "heroImage": "/assets/images/og-blog.jpg",
+      "heroImageExists": true,
+      "allStatistics": [
+        {
+          "label": "Wealth Source",
+          "value": "Business"
+        },
+        {
+          "label": "Focus",
+          "value": "Exit Planning"
+        },
+        {
+          "label": "Liquidity",
+          "value": "Event Driven"
+        },
+        {
+          "label": "Strategy",
+          "value": "Value Creation"
+        },
+        {
+          "label": "Timing",
+          "value": "Strategic"
+        },
+        {
+          "label": "Post-Exit",
+          "value": "Wealth Management"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "mia-jay-wealth-plan",
+      "file": "content/blog/mia-jay-wealth-plan.md",
+      "name": "Mia & Jay",
+      "title": "Mia & Jay's Wealth Plan: Achieving Zero Tax Liability with $259,700 in Year-One Savings",
+      "date": "2026-04-11",
+      "headlineFigure": {
+        "label": "Year-One Tax Savings",
+        "value": "$259,700",
+        "statedIn": "statistics"
+      },
+      "headlineAmount": 259700,
+      "summary": "How Mia and Jay's personalized wealth plan eliminates $90,000 in annual taxes through strategic real estate structures, business entity optimization, and advanced retirement planning — creating $169,700 in excess wealth-building capacity.",
+      "heroImage": "/assets/images/blog/wealth-plan-mia-jay.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Current Annual Tax",
+          "value": "$90,000"
+        },
+        {
+          "label": "Year-One Tax Savings",
+          "value": "$259,700"
+        },
+        {
+          "label": "New Tax Liability",
+          "value": "$0"
+        },
+        {
+          "label": "Excess for Wealth Building",
+          "value": "$169,700"
+        },
+        {
+          "label": "STR Portfolio Target",
+          "value": "Multi-Property"
+        },
+        {
+          "label": "Wealth Acceleration",
+          "value": "Immediate"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "michael-wealth-plan",
+      "file": "content/blog/michael-wealth-plan.md",
+      "name": "Michael",
+      "title": "Michael's Wealth Plan: Morgan Hill Real Estate & Tax Optimization",
+      "date": "2025-12-01",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "Michael's wealth plan from Morgan Hill, California, combining real estate investment strategies with aggressive tax optimization for long-term wealth building.",
+      "heroImage": "/assets/images/blog/michael-wealth-plan.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Location Focus",
+          "value": "Morgan Hill, CA"
+        },
+        {
+          "label": "Investment Type",
+          "value": "Real Estate Focused"
+        },
+        {
+          "label": "Tax Optimization",
+          "value": "Multi-Strategy"
+        },
+        {
+          "label": "Planning Horizon",
+          "value": "Long-Term"
+        },
+        {
+          "label": "Primary Goal",
+          "value": "Wealth Building"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "nimat-wealth-plan",
+      "file": "content/blog/nimat-wealth-plan.md",
+      "name": "Nimat",
+      "title": "Nimat's Wealth Strategy Snapshot: Tax Optimization & Investment Analysis",
+      "date": "2026-02-01",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "How Nimat's wealth strategy snapshot reveals tax optimization opportunities and investment modeling for 2026 tax year planning and long-term wealth building.",
+      "heroImage": "/assets/images/blog/nimat-wealth-plan.jpg",
+      "heroImageExists": false,
+      "allStatistics": [],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "patricia-wealth-plan",
+      "file": "content/blog/patricia-wealth-plan.md",
+      "name": "Patricia",
+      "title": "Patricia's Wealth Plan: Retirement Transition and Income Optimization Strategy",
+      "date": "2026-04-11",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "Patricia's personalized wealth strategy for pre-retirees focusing on retirement income optimization, tax-efficient withdrawal strategies, and wealth preservation for the transition phase.",
+      "heroImage": "/assets/images/blog/wealth-plan-patricia.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Life Stage",
+          "value": "Pre-Retirement"
+        },
+        {
+          "label": "Focus",
+          "value": "Income Optimization"
+        },
+        {
+          "label": "Tax Priority",
+          "value": "Efficiency"
+        },
+        {
+          "label": "Time Horizon",
+          "value": "5-10 Years"
+        },
+        {
+          "label": "Withdrawal Strategy",
+          "value": "Tax-Optimized"
+        },
+        {
+          "label": "Legacy Goal",
+          "value": "Preservation"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "piotr-wealth-plan",
+      "file": "content/blog/piotr-wealth-plan.md",
+      "name": "Piotr",
+      "title": "Piotr's Wealth Plan: European Investment Strategy and International Tax Optimization",
+      "date": "2026-04-11",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "Piotr's personalized wealth strategy navigating international investment opportunities, cross-border tax considerations, and building wealth across multiple jurisdictions.",
+      "heroImage": "/assets/images/blog/wealth-plan-piotr.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Strategy Focus",
+          "value": "International"
+        },
+        {
+          "label": "Jurisdictions",
+          "value": "Multi-Country"
+        },
+        {
+          "label": "Tax Complexity",
+          "value": "Cross-Border"
+        },
+        {
+          "label": "Investment Scope",
+          "value": "Global"
+        },
+        {
+          "label": "Compliance Priority",
+          "value": "Critical"
+        },
+        {
+          "label": "Time Horizon",
+          "value": "Long-Term"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "qu-wealth-plan",
+      "file": "content/blog/qu-wealth-plan.md",
+      "name": "Qu",
+      "title": "Qu's Wealth Plan: Seattle High-Net-Worth Optimization Strategy",
+      "date": "2026-04-11",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "Qu's wealth strategy for optimizing $300K+ income, managing $2.3M real estate equity, and building tax-efficient wealth in Seattle's high-cost environment.",
+      "heroImage": "/assets/images/blog/wealth-plan-qu.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Annual Income",
+          "value": "$300K+"
+        },
+        {
+          "label": "Real Estate Equity",
+          "value": "$2.3M"
+        },
+        {
+          "label": "Retirement Accounts",
+          "value": "$250K+"
+        },
+        {
+          "label": "Washington State Tax",
+          "value": "No income tax"
+        },
+        {
+          "label": "Wealth Strategy",
+          "value": "Multi-Pronged"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "richard-wealth-plan",
+      "file": "content/blog/richard-wealth-plan.md",
+      "name": "Richard",
+      "title": "Richard's Wealth Plan: Wealth Preservation and Legacy Transfer Strategy",
+      "date": "2026-04-11",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "Richard's personalized wealth strategy focusing on wealth preservation, estate planning, tax-efficient legacy transfer, and multi-generational wealth protection for established wealth holders.",
+      "heroImage": "/assets/images/og-blog.jpg",
+      "heroImageExists": true,
+      "allStatistics": [
+        {
+          "label": "Wealth Stage",
+          "value": "Preservation"
+        },
+        {
+          "label": "Primary Goal",
+          "value": "Legacy Transfer"
+        },
+        {
+          "label": "Estate Value",
+          "value": "Significant"
+        },
+        {
+          "label": "Time Horizon",
+          "value": "Generational"
+        },
+        {
+          "label": "Tax Focus",
+          "value": "Estate/Gift"
+        },
+        {
+          "label": "Protection",
+          "value": "Multi-Layered"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "roy-wealth-plan",
+      "file": "content/blog/roy-wealth-plan.md",
+      "name": "Roy",
+      "title": "Roy's Wealth Plan: Credit Recovery and STR Business Launch",
+      "date": "2026-04-11",
+      "headlineFigure": {
+        "label": "Year-One Value",
+        "value": "$21K-$53K",
+        "statedIn": "statistics"
+      },
+      "headlineAmount": 21000,
+      "summary": "Roy's wealth strategy for recovering from sub-620 credit while building a low-risk cohosting income stream and automated Bitcoin accumulation.",
+      "heroImage": "/assets/images/blog/wealth-plan-roy.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Household Income",
+          "value": "$300K+"
+        },
+        {
+          "label": "Current Credit Score",
+          "value": "< 620"
+        },
+        {
+          "label": "Year-One Value",
+          "value": "$21K-$53K"
+        },
+        {
+          "label": "Time Available",
+          "value": "0-2 hrs/week"
+        },
+        {
+          "label": "Available Capital",
+          "value": "$0-$2K"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "sandra-wealth-plan",
+      "file": "content/blog/sandra-wealth-plan.md",
+      "name": "Sandra",
+      "title": "Sandra S. Elbaum's Wealth Plan from Midlothian, VA: Tax Optimization with Bitcoin and Self-Storage Investment",
+      "date": "2025-11-01",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "Wealth plan for Sandra S. Elbaum from Midlothian, VA featuring advanced tax optimization strategies, Bitcoin allocation, and self-storage real estate investment in the $200K-$299K income range.",
+      "heroImage": "/assets/images/blog/wealth-plan-sandra.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Location",
+          "value": "Midlothian, VA"
+        },
+        {
+          "label": "Income Range",
+          "value": "$200K-$299K"
+        },
+        {
+          "label": "Real Estate",
+          "value": "Self-Storage"
+        },
+        {
+          "label": "Alternative Asset",
+          "value": "Bitcoin"
+        },
+        {
+          "label": "Tax Strategy",
+          "value": "Advanced"
+        },
+        {
+          "label": "Focus",
+          "value": "Diversification"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "scott-wealth-plan",
+      "file": "content/blog/scott-wealth-plan.md",
+      "name": "Scott",
+      "title": "Scott's Wealth Plan: Tax Optimization & Short-Term Rental Strategy",
+      "date": "2025-11-01",
+      "headlineFigure": {
+        "label": "Tax Savings",
+        "value": "$28,100 - $36,700",
+        "statedIn": "statistics"
+      },
+      "headlineAmount": 28100,
+      "summary": "How Scott's personalized wealth plan delivers $39,350-$51,100 in year-one value through tax optimization and a strategic short-term rental business launch.",
+      "heroImage": "/assets/images/blog/scott-wealth-plan.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Year-One Value",
+          "value": "$39,350 - $51,100"
+        },
+        {
+          "label": "Tax Savings",
+          "value": "$28,100 - $36,700"
+        },
+        {
+          "label": "STR Launch Timeline",
+          "value": "90 Days"
+        },
+        {
+          "label": "Target Occupancy",
+          "value": "65%"
+        },
+        {
+          "label": "Monthly Cash Flow Goal",
+          "value": "$1,200+"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "shawn-wealth-plan",
+      "file": "content/blog/shawn-wealth-plan.md",
+      "name": "Shawn",
+      "title": "Shawn's Wealth Plan: Building Wealth Strategy Foundation for Financial Growth",
+      "date": "2026-04-11",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "Shawn's foundational wealth strategy plan focusing on business structure optimization, initial tax planning, and establishing systems for sustainable financial growth and wealth accumulation.",
+      "heroImage": "/assets/images/blog/wealth-plan-shawn.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Plan Focus",
+          "value": "Foundation Building"
+        },
+        {
+          "label": "Primary Strategy",
+          "value": "Business Setup"
+        },
+        {
+          "label": "Tax Optimization",
+          "value": "Entry Level"
+        },
+        {
+          "label": "Time Horizon",
+          "value": "3-5 Years"
+        },
+        {
+          "label": "Growth Target",
+          "value": "Sustainable"
+        },
+        {
+          "label": "Priority",
+          "value": "Foundation First"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "soojin-wealth-plan",
+      "file": "content/blog/soojin-wealth-plan.md",
+      "name": "Soojin",
+      "title": "Soojin Jun's Wealth Strategy Snapshot: 2026 Tax Year Planning with Conservative to Aggressive Scenarios",
+      "date": "2026-03-01",
+      "headlineFigure": {
+        "label": "Aggressive Value",
+        "value": "$385K First Year",
+        "statedIn": "statistics"
+      },
+      "headlineAmount": 385000,
+      "summary": "Soojin Jun's 2026 wealth strategy snapshot featuring conservative to aggressive scenarios showing first-year value creation from $101K to $385K through strategic tax optimization and wealth building approaches.",
+      "heroImage": "/assets/images/blog/wealth-plan-soojin.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Planning Year",
+          "value": "2026 Tax Year"
+        },
+        {
+          "label": "Scenario Range",
+          "value": "$101K-$385K"
+        },
+        {
+          "label": "Strategy Type",
+          "value": "Scenario-Based"
+        },
+        {
+          "label": "Conservative Value",
+          "value": "$101K First Year"
+        },
+        {
+          "label": "Aggressive Value",
+          "value": "$385K First Year"
+        },
+        {
+          "label": "Optimization",
+          "value": "Multi-Scenario"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "sylvia-wealth-plan",
+      "file": "content/blog/sylvia-wealth-plan.md",
+      "name": "Sylvia",
+      "title": "Sylvia & Kevin Lee's Wealth Strategy Snapshot: Couple-Focused 2026 Tax Year Planning",
+      "date": "2026-03-01",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "Joint wealth strategy snapshot for Sylvia and Kevin Lee featuring couple-focused tax optimization, coordinated retirement planning, and dual-income wealth building for 2026.",
+      "heroImage": "/assets/images/blog/wealth-plan-sylvia.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Household Structure",
+          "value": "Dual Income"
+        },
+        {
+          "label": "Tax Filing",
+          "value": "Married Filing Joint"
+        },
+        {
+          "label": "Retirement Accounts",
+          "value": "Coordinated"
+        },
+        {
+          "label": "Contribution Potential",
+          "value": "Maximized"
+        },
+        {
+          "label": "Planning Year",
+          "value": "2026 Focus"
+        },
+        {
+          "label": "Strategy Type",
+          "value": "Comprehensive"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "terry-wealth-plan",
+      "file": "content/blog/terry-wealth-plan.md",
+      "name": "Terry",
+      "title": "Terry B. Young's 2026 Tax Year Planning: Educational Wealth Strategy Snapshot",
+      "date": "2026-03-01",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "Terry B. Young's educational 2026 tax year planning wealth strategy snapshot. Learn tax optimization modeling, strategic timing decisions, and year-end planning frameworks.",
+      "heroImage": "/assets/images/blog/wealth-plan-terry.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Tax Year Focus",
+          "value": "2026"
+        },
+        {
+          "label": "Planning Type",
+          "value": "Educational"
+        },
+        {
+          "label": "Scenario Models",
+          "value": "Multiple"
+        },
+        {
+          "label": "Strategy Depth",
+          "value": "5,500+ Words"
+        },
+        {
+          "label": "Focus Area",
+          "value": "Tax Timing"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "trent-wealth-plan",
+      "file": "content/blog/trent-wealth-plan.md",
+      "name": "Trent",
+      "title": "Trent's Wealth Plan: Building a $20K/Month STR Cash Flow Engine",
+      "date": "2026-04-11",
+      "headlineFigure": {
+        "label": "Year-One Tax Savings (Bonus Depreciation)",
+        "value": "$60K-$90K",
+        "statedIn": "statistics"
+      },
+      "headlineAmount": 60000,
+      "summary": "Trent's aggressive 12-month wealth strategy for building a $20,000/month short-term rental cash-flow engine with tax optimization and Bitcoin stacking.",
+      "heroImage": "/assets/images/blog/wealth-plan-trent.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Target Monthly Cash Flow",
+          "value": "$20,000"
+        },
+        {
+          "label": "Year-One Tax Savings (Bonus Depreciation)",
+          "value": "$60K-$90K"
+        },
+        {
+          "label": "Bitcoin DCA Monthly",
+          "value": "$1,800"
+        },
+        {
+          "label": "Current Take-Home Pay",
+          "value": "$8,970/mo"
+        },
+        {
+          "label": "Year-One Total Benefit",
+          "value": "$92K-$127K"
+        }
+      ],
+      "category": "Wealth Plan"
+    },
+    {
+      "slug": "trish-wealth-plan",
+      "file": "content/blog/trish-wealth-plan.md",
+      "name": "Trish",
+      "title": "Trish's Wealth Plan: Healthcare Professional Wealth Building and Tax Optimization",
+      "date": "2026-04-11",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "Trish's personalized wealth strategy for healthcare professionals, combining high-income optimization, real estate investment, and specialized tax strategies for medical industry workers.",
+      "heroImage": "/assets/images/blog/wealth-plan-trish.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Income Profile",
+          "value": "High W-2"
+        },
+        {
+          "label": "Primary Strategy",
+          "value": "Real Estate"
+        },
+        {
+          "label": "Liability Focus",
+          "value": "Critical"
+        },
+        {
+          "label": "Tax Bracket",
+          "value": "High"
+        },
+        {
+          "label": "Time Horizon",
+          "value": "15+ Years"
+        },
+        {
+          "label": "Protection Priority",
+          "value": "Maximum"
+        }
+      ],
+      "category": "Wealth Plan"
+    }
+  ],
+  "taxSavings": [
+    {
+      "slug": "88k-tax-savings-cpa-missed-case-study",
+      "file": "content/blog/88k-tax-savings-cpa-missed-case-study.md",
+      "name": null,
+      "title": "$88K Tax Savings Case Study: What One CPA Missed",
+      "date": "2026-03-02",
+      "headlineFigure": {
+        "label": "stated in the post headline",
+        "value": "$88K",
+        "statedIn": "title"
+      },
+      "headlineAmount": 88000,
+      "summary": "Full-transcript case study of how a $300K W2 client uncovered major first-year value through entity setup, strategic deductions, withholding optimization, and retirement account sequencing.",
+      "heroImage": "https://i.ytimg.com/vi/klUlrTYd5yI/maxresdefault.jpg",
+      "heroImageExists": false,
+      "allStatistics": [],
+      "category": "Tax Strategies"
+    },
+    {
+      "slug": "chad-90k-year-one-property",
+      "file": "content/blog/chad-90k-year-one-property.md",
+      "name": "Chad",
+      "title": "How Chad Makes $90K/Year with One Airbnb Property in North Florida (2026 Case Study)",
+      "date": "2026-02-28",
+      "headlineFigure": {
+        "label": "stated in the post headline",
+        "value": "$90K/Year",
+        "statedIn": "title"
+      },
+      "headlineAmount": 90000,
+      "summary": "Chad went from long-term rentals to $90,000/year gross revenue with a single short-term rental property near Florida",
+      "heroImage": "/assets/images/blog/success-stories/chad-camp-manatee.jpg",
+      "heroImageExists": true,
+      "allStatistics": [
+        {
+          "label": "Annual Gross Revenue",
+          "value": "$90,000"
+        },
+        {
+          "label": "Property",
+          "value": "1"
+        },
+        {
+          "label": "Monthly Cash Flow",
+          "value": "$2,500"
+        },
+        {
+          "label": "Down Payment",
+          "value": "25%"
+        },
+        {
+          "label": "Time in Business",
+          "value": "1 Year"
+        },
+        {
+          "label": "Property Size",
+          "value": "3+ Acres"
+        }
+      ],
+      "category": "Success Story"
+    },
+    {
+      "slug": "tax-strategy-case-study",
+      "file": "content/blog/tax-strategy-case-study.md",
+      "name": null,
+      "title": "Tax Strategy Case Study: Complete 2026 Guide for Business Owners and High-Income Households",
+      "date": "2026-02-16",
+      "headlineFigure": null,
+      "headlineAmount": null,
+      "summary": "A practical tax strategy case study with numbers, tradeoffs, and a 30-day action plan for US business owners, families, and high-income earners in 2026.",
+      "heroImage": "/assets/images/blog/tax-strategy-case-study.jpg",
+      "heroImageExists": false,
+      "allStatistics": [
+        {
+          "label": "Illustrative Net Year-1 Benefit",
+          "value": "$67,700"
+        },
+        {
+          "label": "Decision Framework Inputs",
+          "value": "5 factors"
+        },
+        {
+          "label": "Planning Models",
+          "value": "3 scenarios"
+        },
+        {
+          "label": "Initial Execution Window",
+          "value": "30 days"
+        }
+      ],
+      "category": "Tax Strategies"
+    }
+  ]
+}

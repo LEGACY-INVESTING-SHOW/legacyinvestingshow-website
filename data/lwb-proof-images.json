@@ -1,0 +1,1560 @@
+{
+  "generated": "2026-09-13",
+  "outputDirectory": "assets/images/lwb-proof-large/",
+  "summary": {
+    "total": 79,
+    "caseStudySnapshots": 72,
+    "videoThumbnails": 7,
+    "byKind": {
+      "wealth-plan": 72,
+      "other": 7
+    },
+    "upgradedToLargerResolution": 7,
+    "newlySourced": 69,
+    "noLargerOriginalAvailable": [
+      "case-006.webp",
+      "case-027.webp",
+      "case-064.webp"
+    ]
+  },
+  "sourcing": {
+    "caseStudies": "https://www.lwblive.com/successstories serves 72 redacted wealth plan crops as plain static files at exactly 920px wide. There is no srcset, no resize query parameter, and no larger variant (case-006-full, @2x, .png and /full/ and /originals/ paths all return 404), so 920px is the original. The three already in this repo were byte-identical to the source.",
+    "videoThumbnails": "Vimeo oEmbed returns a _1280 thumbnail URL; swapping the suffix to _1920 returns the full-resolution frame. Those were downscaled to 1600px wide and encoded as WebP at quality 82.",
+    "reEncoding": "Case study files were copied verbatim rather than re-encoded. They are already WebP and under the 1600px cap, so a second lossy pass would have lost quality without saving bytes."
+  },
+  "images": [
+    {
+      "file": "case-004.webp",
+      "path": "/assets/images/lwb-proof-large/case-004.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary page from a 2026 wealth strategy plan balancing debt elimination with tax optimization, stating $42,100-$52,900 in potential annual tax optimization value.",
+      "legibleFigures": [
+        "$42,100",
+        "$52,900"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-004.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 52350,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-005.webp",
+      "path": "/assets/images/lwb-proof-large/case-005.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for a high-income W-2 earner ($300-399K) filing Married Filing Separately in California, showing modeled first-year impact from $68,849 (conservative) to $291,137 (aggressive).",
+      "legibleFigures": [
+        "$300-399K",
+        "$68,849",
+        "$291,137",
+        "$40,750",
+        "$115,750"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-005.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 57302,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-006.webp",
+      "path": "/assets/images/lwb-proof-large/case-006.webp",
+      "kind": "wealth-plan",
+      "caption": "Section 01 Executive Summary for a Maryland couple with the name redacted, showing W-2 household income near $147,000 and modeled first-year value of $36,726 to $41,970.",
+      "legibleFigures": [
+        "$147,000",
+        "$23,500",
+        "$2M",
+        "$36,726",
+        "$41,970"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-006.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 61660,
+      "previousVersion": {
+        "path": "/assets/images/lwb-proof/case-006.webp",
+        "width": 920,
+        "height": 550,
+        "bytes": 61660
+      },
+      "upgrade": "no larger original exists - source serves the same 920px width we already had",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-007.webp",
+      "path": "/assets/images/lwb-proof-large/case-007.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for a multi-member LLC owner in Chantilly, Virginia transitioning to self-employment, showing modeled first-year value from $142,506 to $318,293.",
+      "legibleFigures": [
+        "$142,506",
+        "$318,293",
+        "$40,000"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-007.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 71838,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-008.webp",
+      "path": "/assets/images/lwb-proof-large/case-008.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for an ER physician operating through an S-Corporation in California with rental properties, showing modeled first-year value from $132,429 to $318,745.",
+      "legibleFigures": [
+        "$400-499K",
+        "$132,429",
+        "$318,745"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-008.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 80228,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-009.webp",
+      "path": "/assets/images/lwb-proof-large/case-009.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary with the family name and other details blacked out, showing modeled first-year value from $154,839 to $394,557.",
+      "legibleFigures": [
+        "$154,839",
+        "$394,557"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-009.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 51572,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-011.webp",
+      "path": "/assets/images/lwb-proof-large/case-011.webp",
+      "kind": "wealth-plan",
+      "caption": "Page 1 of 31, Section 01 Executive Summary for a self-employed single filer in Atlanta, Georgia, showing a modeled conservative first-year value of $103,453.",
+      "legibleFigures": [
+        "$103,453"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-011.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 54566,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-012.webp",
+      "path": "/assets/images/lwb-proof-large/case-012.webp",
+      "kind": "wealth-plan",
+      "caption": "Year-One Value table showing a Conservative scenario at $86,795 and an Aggressive scenario at $243,109, followed by a Core Planning Thesis heading; some words redacted.",
+      "legibleFigures": [
+        "$86,795",
+        "$243,109",
+        "$37,500",
+        "$50,000"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-012.webp",
+      "width": 920,
+      "height": 566,
+      "bytes": 40306,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-014.webp",
+      "path": "/assets/images/lwb-proof-large/case-014.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary titled 'Your Path to $50K+ Annual Tax Savings' for an IT consulting and AI business owner, stating $40,400 to $53,800 in first-year tax savings plus $7,200 in cash flow improvement.",
+      "legibleFigures": [
+        "$50K",
+        "$40,400",
+        "$53,800",
+        "$7,200",
+        "$175K",
+        "$20K",
+        "$8,900",
+        "$11,900",
+        "$90K"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-014.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 64210,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-015.webp",
+      "path": "/assets/images/lwb-proof-large/case-015.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for a 49-year-old architect and S-Corporation owner in Gates Mills, Ohio, showing modeled first-year value from about $36,646 to about $263,862.",
+      "legibleFigures": [
+        "$163K",
+        "$313K",
+        "$40K",
+        "$36,646",
+        "$263,862"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-015.webp",
+      "width": 920,
+      "height": 566,
+      "bytes": 74364,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-016.webp",
+      "path": "/assets/images/lwb-proof-large/case-016.webp",
+      "kind": "wealth-plan",
+      "caption": "Section 01 Executive Summary with the client name redacted, describing a digital marketing consulting side business and a goal of reducing a roughly $50,000 annual tax burden.",
+      "legibleFigures": [
+        "$50,000"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-016.webp",
+      "width": 920,
+      "height": 353,
+      "bytes": 26968,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-017.webp",
+      "path": "/assets/images/lwb-proof-large/case-017.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary with some words redacted, showing modeled first-year value from $56,818 (conservative) to $189,819-$212,319 (aggressive).",
+      "legibleFigures": [
+        "$56,818",
+        "$189,819",
+        "$212,319"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-017.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 59204,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-019.webp",
+      "path": "/assets/images/lwb-proof-large/case-019.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary with the household name redacted, for dual W-2 earners in Oceanside, California, showing modeled first-year value from $47,085 to $81,229.",
+      "legibleFigures": [
+        "$47,085",
+        "$81,229"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-019.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 52688,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-021.webp",
+      "path": "/assets/images/lwb-proof-large/case-021.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary labeled '2026 FOCUS - OBBBA-AWARE' for a high-income household in Carlsbad, California, showing modeled first-year value from $73,363 to $445,650.",
+      "legibleFigures": [
+        "$500K",
+        "$73,363",
+        "$445,650"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-021.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 66508,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-022.webp",
+      "path": "/assets/images/lwb-proof-large/case-022.webp",
+      "kind": "wealth-plan",
+      "caption": "Section 01 Executive Summary and Current Financial Position table for a W-2 earner in the $200-299K range filing Head of Household in Colorado, showing modeled value from $46,141 to $170,021; name redacted.",
+      "legibleFigures": [
+        "$200-299K",
+        "$46,141",
+        "$170,021"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-022.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 54384,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-023.webp",
+      "path": "/assets/images/lwb-proof-large/case-023.webp",
+      "kind": "wealth-plan",
+      "caption": "Card-style Executive Summary for a married-filing-jointly household in Florida with W-2 income of $200,000-$299,000, displaying a conservative scenario of $77,126 and an aggressive scenario of $279,877 in large type.",
+      "legibleFigures": [
+        "$200,000",
+        "$299,000",
+        "$40,000",
+        "$77,126",
+        "$279,877"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-023.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 49708,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-024.webp",
+      "path": "/assets/images/lwb-proof-large/case-024.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary with the household name redacted, for a real estate investor household with income under $75K, showing modeled first-year value from $44,587 to $232,955.",
+      "legibleFigures": [
+        "$75K",
+        "$40,000",
+        "$2,500,000",
+        "$2,200",
+        "$2,000",
+        "$44,587",
+        "$232,955"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-024.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 59470,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-025.webp",
+      "path": "/assets/images/lwb-proof-large/case-025.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary with a 'Your Financial Snapshot' card showing annual household income $150,000-$199,000, liquid capital $10,000-$24,000, retirement assets $500,000+, and a goal of launching a short-term rental business to replace W-2 income by 2026.",
+      "legibleFigures": [
+        "$150,000-$199,000",
+        "$10,000-$24,000",
+        "$500,000+"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-025.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 14610,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-027.webp",
+      "path": "/assets/images/lwb-proof-large/case-027.webp",
+      "kind": "wealth-plan",
+      "caption": "Opening of an Executive Summary about a W-2 earner in the 32% federal bracket with a newly formed LLC, no state income tax, home equity and consolidation debt; the crop ends before any dollar figures.",
+      "legibleFigures": [],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-027.webp",
+      "width": 920,
+      "height": 276,
+      "bytes": 18310,
+      "previousVersion": {
+        "path": "/assets/images/lwb-proof/case-027.webp",
+        "width": 920,
+        "height": 276,
+        "bytes": 18310
+      },
+      "upgrade": "no larger original exists - source serves the same 920px width we already had",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-029.webp",
+      "path": "/assets/images/lwb-proof-large/case-029.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for a high-earning W-2 professional with an S-Corp side business, stating a modeled first-year value range of $109,000 to $362,000.",
+      "legibleFigures": [
+        "$109,000",
+        "$362,000"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-029.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 53786,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-030.webp",
+      "path": "/assets/images/lwb-proof-large/case-030.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for a dual-income household with a growing private therapy practice, stating a modeled year-one value range of $65,503 (conservative) to $104,239 (aggressive).",
+      "legibleFigures": [
+        "$65,503",
+        "$104,239"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-030.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 56648,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-031.webp",
+      "path": "/assets/images/lwb-proof-large/case-031.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for a W-2 employee and single-member LLC owner in Jericho, New York filing jointly, stating a modeled first-year value range of $94,042 to $312,861.",
+      "legibleFigures": [
+        "$94,042",
+        "$312,861"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-031.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 59536,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-032.webp",
+      "path": "/assets/images/lwb-proof-large/case-032.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for a high-income W-2 earner with a real estate portfolio and active LLC entities, name blacked out, stating a modeled first-year value range of $113,379 to $939,433.",
+      "legibleFigures": [
+        "$113,379",
+        "$939,433"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-032.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 41940,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-033.webp",
+      "path": "/assets/images/lwb-proof-large/case-033.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for a high-income W-2 professional launching a consulting practice in Santa Fe, New Mexico, with a 39% combined marginal rate and a modeled first-year value range of $72,121 to $286,270.",
+      "legibleFigures": [
+        "39%",
+        "$72,121",
+        "$286,270"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-033.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 59542,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-037.webp",
+      "path": "/assets/images/lwb-proof-large/case-037.webp",
+      "kind": "wealth-plan",
+      "caption": "Opening of an Executive Summary for a W-2 professional with a new consulting LLC, home equity, a commercial property and $500K+ in liquid capital; the crop ends before any value range.",
+      "legibleFigures": [
+        "$500K+"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-037.webp",
+      "width": 920,
+      "height": 276,
+      "bytes": 17336,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-038.webp",
+      "path": "/assets/images/lwb-proof-large/case-038.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for a 53-year-old federal employee filing jointly in Maryland with a new single-member LLC for Airbnb arbitrage, citing a combined marginal rate of about 33%; no value range in this crop.",
+      "legibleFigures": [
+        "33%"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-038.webp",
+      "width": 920,
+      "height": 525,
+      "bytes": 51300,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-039.webp",
+      "path": "/assets/images/lwb-proof-large/case-039.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for a 61-year-old Texas S-Corporation owner filing jointly, stating a modeled first-year value range of $92,909 to $333,812.",
+      "legibleFigures": [
+        "$92,909",
+        "$333,812"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-039.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 73618,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-040.webp",
+      "path": "/assets/images/lwb-proof-large/case-040.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for a plan to replace a spouse's W-2 income through an RV park development and existing rentals, stating projected first-year tax savings of $10,260 to $35,625.",
+      "legibleFigures": [
+        "$10,260",
+        "$35,625"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-040.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 52012,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-042.webp",
+      "path": "/assets/images/lwb-proof-large/case-042.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for a high-income W-2 earner with a recently formed Wyoming LLC, stating a modeled first-year value range of $57,883 to $243,660.",
+      "legibleFigures": [
+        "$57,883",
+        "$243,660"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-042.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 42054,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-044.webp",
+      "path": "/assets/images/lwb-proof-large/case-044.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for a high-income married-filing-jointly household in Texas with an existing LLC, name blacked out, stating a modeled first-year value range of $90,653 to $410,337.",
+      "legibleFigures": [
+        "$90,653",
+        "$410,337"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-044.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 33328,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-047.webp",
+      "path": "/assets/images/lwb-proof-large/case-047.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for a retired high-income individual in Texas with multiple entities, with a highlighted box stating a modeled 2026 value range of $116,420 to $431,651.",
+      "legibleFigures": [
+        "$116,420",
+        "$431,651"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-047.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 53902,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-048.webp",
+      "path": "/assets/images/lwb-proof-large/case-048.webp",
+      "kind": "wealth-plan",
+      "caption": "Cover page of a Wealth Strategy Snapshot labeled 'Educational Analysis', with the 'Prepared For' name blacked out, tax year focus 2026 Planning, prepared April 2026.",
+      "legibleFigures": [],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-048.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 16356,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-049.webp",
+      "path": "/assets/images/lwb-proof-large/case-049.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for a W-2 executive at an estimated 24% marginal federal rate building an Airbnb arbitrage business in Florida, stating a modeled first-year value range of $58,009 to $193,606.",
+      "legibleFigures": [
+        "24%",
+        "$58,009",
+        "$193,606"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-049.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 68288,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-050.webp",
+      "path": "/assets/images/lwb-proof-large/case-050.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for a 64-year-old solo S-Corporation owner in Hawaii, name blacked out, citing a combined marginal rate of about 43% and a modeled first-year value range of $101,149 to $443,077.",
+      "legibleFigures": [
+        "43%",
+        "$101,149",
+        "$443,077"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-050.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 52770,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-052.webp",
+      "path": "/assets/images/lwb-proof-large/case-052.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for a W-2 professional in California who recently launched a single-member LLC in health and wellness, stating a modeled first-year value range of $38,657 to $271,099.",
+      "legibleFigures": [
+        "$38,657",
+        "$271,099"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-052.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 46030,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-054.webp",
+      "path": "/assets/images/lwb-proof-large/case-054.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for a 64-year-old married business owner running an S-Corp in Utah, stating a modeled first-year value range of $122,568 to $377,436.",
+      "legibleFigures": [
+        "$122,568",
+        "$377,436"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-054.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 51420,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-055.webp",
+      "path": "/assets/images/lwb-proof-large/case-055.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary describing 2026 tax optimization for a household with $300-399K income, LLC entities and a $50K oil-and-gas investment; the household name is blacked out.",
+      "legibleFigures": [
+        "$300-399K",
+        "$50K"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-055.webp",
+      "width": 920,
+      "height": 270,
+      "bytes": 17806,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-056.webp",
+      "path": "/assets/images/lwb-proof-large/case-056.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for an S-Corporation owner in Kentucky earning about $293K for the 2026 tax year; the client name is blacked out.",
+      "legibleFigures": [
+        "$293K"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-056.webp",
+      "width": 920,
+      "height": 345,
+      "bytes": 17724,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-057.webp",
+      "path": "/assets/images/lwb-proof-large/case-057.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for a retired married couple in Provo, Utah with about $1.2M in real estate, showing modeled first-year value from $8,746 to $208,578; the client name is blacked out.",
+      "legibleFigures": [
+        "$100-149K",
+        "$1.2M",
+        "$8,746",
+        "$208,578"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-057.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 59506,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-058.webp",
+      "path": "/assets/images/lwb-proof-large/case-058.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary targeting $50,000+ in 2026 tax reduction through real estate and Bitcoin accumulation, with $200,000 in capital deployed across two rental properties; some words redacted.",
+      "legibleFigures": [
+        "$50,000+",
+        "$200,000",
+        "32%",
+        "22%"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-058.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 36772,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-061.webp",
+      "path": "/assets/images/lwb-proof-large/case-061.webp",
+      "kind": "wealth-plan",
+      "caption": "Dark-navy Executive Summary for a high-growth S-Corporation generating $400-499K annually with a military separation in November 2026, showing modeled first-year value from $124,503 to $372,736; names blacked out.",
+      "legibleFigures": [
+        "$400-499K",
+        "$1M+",
+        "$124,503",
+        "$372,736"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-061.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 45976,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-064.webp",
+      "path": "/assets/images/lwb-proof-large/case-064.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for a single W-2 commercial pilot in Idaho with a single-member LLC, showing modeled first-year value from $16,277 (foundation) to $46,473 (growth tilt).",
+      "legibleFigures": [
+        "$16,277",
+        "$46,473"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-064.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 67292,
+      "previousVersion": {
+        "path": "/assets/images/lwb-proof/case-064.webp",
+        "width": 920,
+        "height": 550,
+        "bytes": 67292
+      },
+      "upgrade": "no larger original exists - source serves the same 920px width we already had",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-065.webp",
+      "path": "/assets/images/lwb-proof-large/case-065.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for a self-employed professional in California with $200,000-$299,000 household income at a 33% combined marginal rate, showing modeled first-year value from $147,190 to $311,588; name blacked out.",
+      "legibleFigures": [
+        "$200,000-$299,000",
+        "33%",
+        "24%",
+        "9.3%",
+        "$147,190",
+        "$311,588"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-065.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 61372,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-066.webp",
+      "path": "/assets/images/lwb-proof-large/case-066.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for a dual-income household with $300-399K income in a 24% federal bracket and no Washington state income tax, showing modeled first-year value from $70,010 to $329,971; names blacked out.",
+      "legibleFigures": [
+        "$300-399K",
+        "24%",
+        "$70,010",
+        "$329,971"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-066.webp",
+      "width": 920,
+      "height": 482,
+      "bytes": 59344,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-068.webp",
+      "path": "/assets/images/lwb-proof-large/case-068.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary headlined with a Year-One Financial Impact of $28,100-$48,800 in combined tax savings, cash flow improvement, debt elimination and wealth building for an S-Corporation owner with commercial property.",
+      "legibleFigures": [
+        "$28,100",
+        "$48,800",
+        "$100-149K"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-068.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 29052,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-069.webp",
+      "path": "/assets/images/lwb-proof-large/case-069.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary describing a plan to cut the 2025-2026 tax burden by $28,362 to $34,489 for a household earning $150K-$199K with a small LLC teaching business; some words redacted.",
+      "legibleFigures": [
+        "$28,362",
+        "$34,489",
+        "$150K-$199K",
+        "50%",
+        "$34,762",
+        "$40,889"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-069.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 58698,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-071.webp",
+      "path": "/assets/images/lwb-proof-large/case-071.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for a Head of Household filer in California with W-2 medical imaging contracting income and a single-member LLC, showing a 33.3% marginal rate and modeled first-year value from $88,933 to $351,951.",
+      "legibleFigures": [
+        "33.3%",
+        "$88,933",
+        "$351,951"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-071.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 51340,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-073.webp",
+      "path": "/assets/images/lwb-proof-large/case-073.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for a profile with $500K+ business income and $2M+ California rental equity, showing a 43% combined marginal rate and modeled first-year value from $218,559 to $471,770.",
+      "legibleFigures": [
+        "$500K+",
+        "$2M+",
+        "43%",
+        "32%",
+        "11%",
+        "$218,559",
+        "$471,770"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-073.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 49280,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-074.webp",
+      "path": "/assets/images/lwb-proof-large/case-074.webp",
+      "kind": "wealth-plan",
+      "caption": "Wealth snapshot excerpt showing a modeled 2026 first-year value of $100,680-$484,837 plus a Current Financial Position table for a single 63-year-old in Maryland with $500,000+ W-2 income and $245,000 in 2024 taxes paid.",
+      "legibleFigures": [
+        "$100,680",
+        "$484,837",
+        "$500,000+",
+        "$245,000",
+        "6.25%"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-074.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 28994,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-075.webp",
+      "path": "/assets/images/lwb-proof-large/case-075.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary referencing the One Big Beautiful Bill Act and 100% bonus depreciation, showing modeled first-year value from $72,599 to $249,547 for a W-2 professional with self-employment income and rentals.",
+      "legibleFigures": [
+        "$72,599",
+        "$249,547"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-075.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 55466,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-076.webp",
+      "path": "/assets/images/lwb-proof-large/case-076.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for a W-2 professional earning $200-299K filing Married Filing Separately in California, showing modeled first-year value from $53,212 to $350,881.",
+      "legibleFigures": [
+        "$200-299K",
+        "$53,212",
+        "$350,881"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-076.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 54314,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-077.webp",
+      "path": "/assets/images/lwb-proof-large/case-077.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary titled 'Your Path to Early Retirement Through Real Estate' showing $20,765 in first-year tax savings plus cash flow improvement for a short-term rental and side-business plan.",
+      "legibleFigures": [
+        "$20,765"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-077.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 22500,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-079.webp",
+      "path": "/assets/images/lwb-proof-large/case-079.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for a business owner and consultant in San Diego, California covering a Solo 401(k), a possible S-Corp election and a Bitcoin-anchored investment scenario; several words blacked out.",
+      "legibleFigures": [],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-079.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 48302,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-080.webp",
+      "path": "/assets/images/lwb-proof-large/case-080.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for a high-income W-2 household in Hawaii with military retirement and tax-free VA disability income, showing a roughly 41% blended marginal rate and modeled first-year value from $79,114 to $343,296.",
+      "legibleFigures": [
+        "41%",
+        "8.25-9%",
+        "$79,114",
+        "$343,296"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-080.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 69074,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-082.webp",
+      "path": "/assets/images/lwb-proof-large/case-082.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary describing tax optimization for a W-2 healthcare professional with an S-Corporation, modeling first-year value from $77,962 to $134,407.",
+      "legibleFigures": [
+        "$77,962",
+        "$134,407",
+        "0%"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-082.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 52432,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-083.webp",
+      "path": "/assets/images/lwb-proof-large/case-083.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary describing a tax and investment plan for a household moving from $500K+ W-2 employment to consulting; a name is blacked out.",
+      "legibleFigures": [
+        "$500K",
+        "$6M"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-083.webp",
+      "width": 920,
+      "height": 276,
+      "bytes": 16842,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-084.webp",
+      "path": "/assets/images/lwb-proof-large/case-084.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for a dual W-2 plus multi-member LLC household, modeling first-year value from $155,264 to $459,973; several words blacked out.",
+      "legibleFigures": [
+        "$155,264",
+        "$459,973"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-084.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 66160,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-085.webp",
+      "path": "/assets/images/lwb-proof-large/case-085.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for someone moving from W-2 employment to entrepreneurship, aiming to cut the 2025 tax burden by $60,000-$85,000; some phrases blacked out.",
+      "legibleFigures": [
+        "$50K+",
+        "$60,000-$85,000",
+        "$400-499K",
+        "35%",
+        "9.85%",
+        "44.85%"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-085.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 57814,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-086.webp",
+      "path": "/assets/images/lwb-proof-large/case-086.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary describing a plan to eliminate $56,100 to $116,300 in taxes using a Wyoming LLC, S-Corp election and an Airbnb arbitrage strategy.",
+      "legibleFigures": [
+        "$56,100",
+        "$116,300",
+        "$175,000",
+        "55%",
+        "25%",
+        "20%"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-086.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 61754,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-087.webp",
+      "path": "/assets/images/lwb-proof-large/case-087.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for an investment banker, stating a total first-year financial impact of $72,799 to $79,022 through debt elimination and tax optimization.",
+      "legibleFigures": [
+        "$200-299K",
+        "$30K",
+        "$72,799",
+        "$79,022"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-087.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 37626,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-088.webp",
+      "path": "/assets/images/lwb-proof-large/case-088.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary titled 'Your Wealth Plan at a Glance' stating a plan to cut the 2025 tax bill by $51,000+, optimize 2026 taxes by over $100,000, and build $240,000 in annual passive income by 2030.",
+      "legibleFigures": [
+        "$51,000+",
+        "$100,000",
+        "$240,000"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-088.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 27092,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-089.webp",
+      "path": "/assets/images/lwb-proof-large/case-089.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary and financial position table for a Head of Household with about $450,000 W-2 income, modeling first-year financial impact of $70,113 to $223,041.",
+      "legibleFigures": [
+        "$70,113",
+        "$223,041",
+        "$36,400",
+        "$106,400",
+        "$450,000",
+        "35%",
+        "11%",
+        "46%"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-089.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 63454,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-090.webp",
+      "path": "/assets/images/lwb-proof-large/case-090.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for a recently retired federal employee in Virginia, with a two-day deadline notice for April 15, 2026 tax-year contributions.",
+      "legibleFigures": [],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-090.webp",
+      "width": 920,
+      "height": 509,
+      "bytes": 40136,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-091.webp",
+      "path": "/assets/images/lwb-proof-large/case-091.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary describing a plan to build $1 million in net worth by age 45, stating $35,000+ in first-year tax savings and cash flow improvement.",
+      "legibleFigures": [
+        "$1 million",
+        "$35,000+"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-091.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 19336,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-094.webp",
+      "path": "/assets/images/lwb-proof-large/case-094.webp",
+      "kind": "wealth-plan",
+      "caption": "Section 2 Executive Summary for a self-employed psychologist and professor in Honolulu, Hawaii, modeling first-year value from $125,474 to $314,433.",
+      "legibleFigures": [
+        "$125,474",
+        "$314,433",
+        "41%"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-094.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 54668,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-095.webp",
+      "path": "/assets/images/lwb-proof-large/case-095.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for a 37-year-old newly divorced head of household building a coaching practice, targeting $25,000-$40,000 annual passive income and a $2 million retirement fund by age 60; a name is blacked out.",
+      "legibleFigures": [
+        "$25,000-$40,000",
+        "$2 million",
+        "$10,800-$23,360",
+        "55%",
+        "35%"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-095.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 33562,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-097.webp",
+      "path": "/assets/images/lwb-proof-large/case-097.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary for a retired military veteran with a bookkeeping business, modeling first-year value from $26,552 to $223,784 using Solo 401(k) and TSP-to-Roth conversion strategies.",
+      "legibleFigures": [
+        "$26,552",
+        "$223,784"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-097.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 56922,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-098.webp",
+      "path": "/assets/images/lwb-proof-large/case-098.webp",
+      "kind": "wealth-plan",
+      "caption": "Section 01 Executive Summary for a high-income dual W-2 and LLC earner in Woodbury, Minnesota, modeling first-year value from $153,705 to $397,620; a name is blacked out.",
+      "legibleFigures": [
+        "34%",
+        "24%",
+        "9.85%",
+        "$153,705",
+        "$397,620"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-098.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 38648,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-099.webp",
+      "path": "/assets/images/lwb-proof-large/case-099.webp",
+      "kind": "wealth-plan",
+      "caption": "Section 1 Executive Summary for a married couple filing jointly in California with W-2 income and a single-member LLC, modeling a conservative first-year value of $88,430.",
+      "legibleFigures": [
+        "$200-299K",
+        "$100K+",
+        "$88,430"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-099.webp",
+      "width": 920,
+      "height": 479,
+      "bytes": 50012,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-100.webp",
+      "path": "/assets/images/lwb-proof-large/case-100.webp",
+      "kind": "wealth-plan",
+      "caption": "Executive Summary referencing a mandatory retirement date of November 27, 2028, modeling first-year value from $108,101 to $273,183; a name is blacked out.",
+      "legibleFigures": [
+        "$108,101",
+        "$273,183"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-100.webp",
+      "width": 920,
+      "height": 550,
+      "bytes": 58280,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-101.webp",
+      "path": "/assets/images/lwb-proof-large/case-101.webp",
+      "kind": "wealth-plan",
+      "caption": "Section 01 Executive Summary for an S-Corp business owner in Florida with about $450,000 household income, modeling first-year value from $128,501 to $331,696 and a path to $1M net worth by age 55.",
+      "legibleFigures": [
+        "$450,000",
+        "32%",
+        "24%",
+        "$1M",
+        "$128,501",
+        "$331,696"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-101.webp",
+      "width": 920,
+      "height": 525,
+      "bytes": 50004,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "case-102.webp",
+      "path": "/assets/images/lwb-proof-large/case-102.webp",
+      "kind": "wealth-plan",
+      "caption": "Section 01 Executive Summary for a married-filing-jointly household in Florida with about $262,000 combined W-2 income and a newly formed single-member LLC (page 1 of 21).",
+      "legibleFigures": [
+        "$262,000"
+      ],
+      "sourceUrl": "https://www.lwblive.com/successstories/assets/case-studies/case-102.webp",
+      "width": 920,
+      "height": 390,
+      "bytes": 27650,
+      "previousVersion": null,
+      "upgrade": "new - not previously in the repo",
+      "note": "copied verbatim (source is already WebP and <= 1600px; re-encoding would only lose quality)"
+    },
+    {
+      "file": "video-1177459394.webp",
+      "path": "/assets/images/lwb-proof-large/video-1177459394.webp",
+      "kind": "other",
+      "caption": "Presentation slide titled '$100K+ Already Inside Your Current Income' listing five strategy categories, with a small thumbnail of Preston speaking and a banner reading 'GO TO MANAGEMONEY101.COM'.",
+      "legibleFigures": [
+        "$100K+",
+        "$15K+",
+        "$10K+",
+        "$20K+",
+        "$50K+"
+      ],
+      "sourceUrl": "https://i.vimeocdn.com/video/2138795814-93a0a88eadff93f00da9d3f3c3fe19af0611d8932b3b92b46ff04818355422e0-d_1920?region=us",
+      "width": 1600,
+      "height": 896,
+      "bytes": 58296,
+      "previousVersion": {
+        "path": "/assets/images/lwb-proof/video-1177459394.jpg",
+        "width": 960,
+        "height": 540,
+        "bytes": 47728
+      },
+      "upgrade": "upgraded from 960x540 to 1600x896",
+      "note": "downscaled from source to 1600px wide, webp q82"
+    },
+    {
+      "file": "video-1207907513.webp",
+      "path": "/assets/images/lwb-proof-large/video-1207907513.webp",
+      "kind": "other",
+      "caption": "Split-screen video call thumbnail showing Stephanie Dailey in the top frame and Preston in the bottom frame.",
+      "legibleFigures": [],
+      "sourceUrl": "https://i.vimeocdn.com/video/2177091614-7b22645757e44e2a1a29aa60113d184c8e7d4120380885c0b3b645181bf6adce-d_1920?region=us",
+      "width": 1600,
+      "height": 1085,
+      "bytes": 40568,
+      "previousVersion": {
+        "path": "/assets/images/lwb-proof/video-1207907513.jpg",
+        "width": 960,
+        "height": 540,
+        "bytes": 34683
+      },
+      "upgrade": "upgraded from 960x540 to 1600x1085",
+      "note": "downscaled from source to 1600px wide, webp q82"
+    },
+    {
+      "file": "video-1207906800.webp",
+      "path": "/assets/images/lwb-proof-large/video-1207906800.webp",
+      "kind": "other",
+      "caption": "Split-screen video call thumbnail showing Albert in the top frame and Preston in front of a 'THE LEGACY INVESTING SHOW' sign in the bottom frame.",
+      "legibleFigures": [],
+      "sourceUrl": "https://i.vimeocdn.com/video/2177091060-da59c22a0e3f07fe88b5b8dac478ef88a41418e838718caac6e608b3e6461a86-d_1920?region=us",
+      "width": 1600,
+      "height": 1309,
+      "bytes": 63902,
+      "previousVersion": {
+        "path": "/assets/images/lwb-proof/video-1207906800.jpg",
+        "width": 960,
+        "height": 540,
+        "bytes": 46216
+      },
+      "upgrade": "upgraded from 960x540 to 1600x1309",
+      "note": "downscaled from source to 1600px wide, webp q82"
+    },
+    {
+      "file": "video-1124934002.webp",
+      "path": "/assets/images/lwb-proof-large/video-1124934002.webp",
+      "kind": "other",
+      "caption": "Close-up video thumbnail of Preston speaking into a microphone.",
+      "legibleFigures": [],
+      "sourceUrl": "https://i.vimeocdn.com/video/2066947702-c4028474a711dc3c26da3a8bb2d0ef30ddf7c1e20acbbec1e2500c0a1b1d2ad8-d_1920?region=us",
+      "width": 1600,
+      "height": 900,
+      "bytes": 30082,
+      "previousVersion": {
+        "path": "/assets/images/lwb-proof/video-1124934002.jpg",
+        "width": 960,
+        "height": 540,
+        "bytes": 31838
+      },
+      "upgrade": "upgraded from 960x540 to 1600x900",
+      "note": "downscaled from source to 1600px wide, webp q82"
+    },
+    {
+      "file": "video-1210332705.webp",
+      "path": "/assets/images/lwb-proof-large/video-1210332705.webp",
+      "kind": "other",
+      "caption": "Video thumbnail of Preston with the on-screen caption 'you know, you being very successful'.",
+      "legibleFigures": [],
+      "sourceUrl": "https://i.vimeocdn.com/video/2180194558-6ec27a06441fe70eaaeaebb9cbf6d48b235f7ba17ee0193f009efb19c4d4471b-d_1920?region=us",
+      "width": 1600,
+      "height": 900,
+      "bytes": 32124,
+      "previousVersion": {
+        "path": "/assets/images/lwb-proof/video-1210332705.jpg",
+        "width": 960,
+        "height": 540,
+        "bytes": 29096
+      },
+      "upgrade": "upgraded from 960x540 to 1600x900",
+      "note": "downscaled from source to 1600px wide, webp q82"
+    },
+    {
+      "file": "video-1124930953.webp",
+      "path": "/assets/images/lwb-proof-large/video-1124930953.webp",
+      "kind": "other",
+      "caption": "Video thumbnail of Preston with the on-screen caption 'how do you laser focus and'.",
+      "legibleFigures": [],
+      "sourceUrl": "https://i.vimeocdn.com/video/2066942848-6fd9487e7b876ad7b5f181e3ccbf42db5fd7f34c2e1a4ba477493ac99c183926-d_1920?region=us",
+      "width": 1600,
+      "height": 900,
+      "bytes": 30466,
+      "previousVersion": {
+        "path": "/assets/images/lwb-proof/video-1124930953.jpg",
+        "width": 960,
+        "height": 540,
+        "bytes": 28779
+      },
+      "upgrade": "upgraded from 960x540 to 1600x900",
+      "note": "downscaled from source to 1600px wide, webp q82"
+    },
+    {
+      "file": "video-1124933172.webp",
+      "path": "/assets/images/lwb-proof-large/video-1124933172.webp",
+      "kind": "other",
+      "caption": "Video thumbnail of Preston with the on-screen caption 'you know, what kind of ROI'.",
+      "legibleFigures": [],
+      "sourceUrl": "https://i.vimeocdn.com/video/2066945756-f5aa506fbc801b40568d67dbd086f800f46ea9bafe3d4e1901e6974620f741d5-d_1920?region=us",
+      "width": 1600,
+      "height": 900,
+      "bytes": 31016,
+      "previousVersion": {
+        "path": "/assets/images/lwb-proof/video-1124933172.jpg",
+        "width": 960,
+        "height": 540,
+        "bytes": 29319
+      },
+      "upgrade": "upgraded from 960x540 to 1600x900",
+      "note": "downscaled from source to 1600px wide, webp q82"
+    }
+  ],
+  "candidates": {
+    "note": "Not copied into this repo. Listed for the owner to approve before any use. Named client plans are private and are deliberately excluded.",
+    "anonymisedWealthPlanDocuments": [
+      {
+        "label": "Personalized wealth report student 1",
+        "path": "_ai-context/content/wealth-plans/clients/Personalized wealth report student 1.md",
+        "alsoDocx": true
+      },
+      {
+        "label": "Personalized Wealth Strategy Report Student 2",
+        "path": "_ai-context/content/wealth-plans/clients/Personalized Wealth Strategy Report Student 2.md",
+        "alsoDocx": true
+      },
+      {
+        "label": "Personalized report student 3",
+        "path": "_ai-context/content/wealth-plans/clients/personalized report student 3.md",
+        "alsoDocx": true
+      },
+      {
+        "label": "NEW Client 1 - WP",
+        "path": "_ai-context/content/wealth-plans/clients/NEW Client 1 - WP.md",
+        "alsoDocx": false
+      },
+      {
+        "label": "New Client 2 - WP",
+        "path": "_ai-context/content/wealth-plans/clients/New Client 2 - WP.md",
+        "alsoDocx": false
+      },
+      {
+        "label": "NEW Client 3 - WP",
+        "path": "_ai-context/content/wealth-plans/clients/NEW Client 3 - WP.md",
+        "alsoDocx": false
+      }
+    ],
+    "readyMadeSamplePageImages": [
+      {
+        "file": "sample-cover.png",
+        "width": 1408,
+        "height": 1822,
+        "dir": "_ai-context/content/wealth-plans/pages/v2-sales-page/assets/"
+      },
+      {
+        "file": "sample-cover2.png",
+        "width": 1408,
+        "height": 1822,
+        "dir": "_ai-context/content/wealth-plans/pages/v2-sales-page/assets/"
+      },
+      {
+        "file": "sample-position.png",
+        "width": 1408,
+        "height": 1822,
+        "dir": "_ai-context/content/wealth-plans/pages/v2-sales-page/assets/"
+      },
+      {
+        "file": "sample-roth.png",
+        "width": 1408,
+        "height": 1822,
+        "dir": "_ai-context/content/wealth-plans/pages/v2-sales-page/assets/"
+      },
+      {
+        "file": "sample-strategies.png",
+        "width": 1408,
+        "height": 1822,
+        "dir": "_ai-context/content/wealth-plans/pages/v2-sales-page/assets/"
+      }
+    ],
+    "readyMadeSamplePageNote": "Five 1408x1822 sample wealth plan page images already prepared for the v2 wealth plan sales page. These are taller and sharper than anything currently on /reviews and are the best candidates for large readable images. Needs owner approval that they are cleared for public use.",
+    "otherSources": [
+      {
+        "label": "Client results overview PDF",
+        "path": "_ai-context/content/wealth-plans/personalized-wealth-plan-client-results-overview.pdf"
+      },
+      {
+        "label": "Wealth plan analysis",
+        "path": "_ai-context/content/wealth-plans/Wealth plan analysis.html"
+      }
+    ],
+    "excluded": "131 named client wealth plan and Wealth Strategy Snapshot files in _ai-context/content/wealth-plans/clients/ hold private client data and were not read, copied or catalogued.",
+    "wealthToolsRepo": "The wealth-tools project listed in the workspace project map is not cloned on this machine (no folder at \"Legacy Investing Show/wealth-tools\"), so it could not be checked. A local folder named \"wealth plans\" holds the July 4 sales page work instead."
+  }
+}
