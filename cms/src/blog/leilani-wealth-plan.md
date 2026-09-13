@@ -1,7 +1,7 @@
 ---
 title: "Leilani's Wealth Plan: Post-Divorce Financial Rebuilding Strategy"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Leilani's comprehensive post-divorce wealth rebuilding plan, featuring tax optimization, STR business launch, and debt elimination strategies."
+description: "Leilani's post-divorce wealth rebuilding plan, featuring tax optimization, STR business launch, and debt elimination strategies."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

@@ -1,7 +1,7 @@
 ---
 title: "Andrew's Wealth Plan: Atlanta High-Earner Tax Optimization"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Explore Andrew's comprehensive tax optimization strategy for high-income earners in Atlanta, targeting $50,000+ in annual tax savings through entity structuring and strategic deductions."
+description: "Andrew's tax optimization strategy for high-income earners in Atlanta, targeting $50,000+ in annual tax savings through entity structuring and strategic deductions."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

@@ -1,7 +1,7 @@
 ---
 title: "Brady's Wealth Plan: Low-Time-Commitment Wealth Building Strategy"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Brady's wealth strategy for building substantial income with only 3-5 hours weekly through cohosting, tax optimization, and automated Bitcoin accumulation."
+description: "Brady's wealth strategy for building substantial income with only 3-5 hours weekly through cohosting, tax optimization, and automated Bitcoin accumulation."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

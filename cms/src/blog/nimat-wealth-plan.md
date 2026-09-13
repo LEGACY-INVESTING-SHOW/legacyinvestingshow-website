@@ -1,6 +1,6 @@
 ---
 title: "Nimat's Wealth Strategy Snapshot: Tax Optimization & Investment Analysis"
-description: "Explore how Nimat's wealth strategy snapshot reveals tax optimization opportunities and investment modeling for 2026 tax year planning and long-term wealth building."
+description: "How Nimat's wealth strategy snapshot reveals tax optimization opportunities and investment modeling for 2026 tax year planning and long-term wealth building."
 date: "2026-02-01"
 author: "Preston Seo"
 category: "Wealth Plan"

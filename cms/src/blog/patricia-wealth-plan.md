@@ -1,7 +1,7 @@
 ---
 title: "Patricia's Wealth Plan: Retirement Transition and Income Optimization Strategy"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Patricia's personalized wealth strategy for pre-retirees focusing on retirement income optimization, tax-efficient withdrawal strategies, and wealth preservation for the transition phase."
+description: "Patricia's personalized wealth strategy for pre-retirees focusing on retirement income optimization, tax-efficient withdrawal strategies, and wealth preservation for the transition phase."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

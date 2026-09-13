@@ -4,7 +4,7 @@ title: >-
   Guide)
 titleTemplate: '%s | Legacy Investing Show'
 description: >-
-  Discover the 4 best side hustles you can start with no money while working
+  The 4 best side hustles you can start with no money while working
   full time. Learn how to make $10,000-$100,000/month with wholesaling real
   estate, virtual assistant work, flipping items, and social media management.
   Step-by-step guide from real practitioners.

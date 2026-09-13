@@ -1,7 +1,7 @@
 ---
 title: "Josh's Wealth Plan: From High-Interest Debt to Cash Flow Independence"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Josh's personalized wealth strategy for eliminating $38K credit card debt through HELOC refinancing, building a $78,400 year-one ROI with cohosting, arbitrage, and Bitcoin accumulation."
+description: "Josh's personalized wealth strategy for eliminating $38K credit card debt through HELOC refinancing, building a $78,400 year-one ROI with cohosting, arbitrage, and Bitcoin accumulation."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

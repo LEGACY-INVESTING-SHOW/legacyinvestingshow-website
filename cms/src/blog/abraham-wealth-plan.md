@@ -1,7 +1,7 @@
 ---
 title: "Abraham's Wealth Plan: C-Corp to S-Corp Conversion and 2026 Tax Optimization Strategy"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Abraham's comprehensive wealth strategy for 2026: C-Corporation to S-Corporation conversion to eliminate double taxation, unlocking $42K-$53K in annual tax savings through strategic entity restructuring."
+description: "Abraham's wealth strategy for 2026: C-Corporation to S-Corporation conversion to eliminate double taxation, unlocking $42K-$53K in annual tax savings through strategic entity restructuring."
 date: 2026-04-12
 modifiedDate: 2026-04-12
 author: Preston Seo

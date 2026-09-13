@@ -1,7 +1,7 @@
 ---
 title: "Kris's Wealth Plan: Technology Professional Income Optimization and Investment Strategy"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Kris's personalized wealth strategy for technology professionals combining equity compensation optimization, tax-efficient investing, and real estate strategies for high-income tech workers."
+description: "Kris's personalized wealth strategy for technology professionals combining equity compensation optimization, tax-efficient investing, and real estate strategies for high-income tech workers."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

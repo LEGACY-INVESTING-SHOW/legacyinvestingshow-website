@@ -1,7 +1,7 @@
 ---
 title: "Elizabeth's Wealth Plan: Healthcare Worker Tax Optimization and Passive Income"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Elizabeth's wealth strategy for healthcare professionals, combining shift-work flexibility with strategic tax optimization and passive real estate investment."
+description: "Elizabeth's wealth strategy for healthcare professionals, combining shift-work flexibility with strategic tax optimization and passive real estate investment."
 date: 2026-04-12
 modifiedDate: 2026-04-12
 author: Preston Seo

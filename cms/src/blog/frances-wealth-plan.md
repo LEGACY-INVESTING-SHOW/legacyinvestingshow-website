@@ -1,7 +1,7 @@
 ---
 title: "Frances' Wealth Plan: Pre-Retirement Wealth Optimization and Income Transition"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Frances' wealth strategy for optimizing finances in the decade before retirement, including tax-efficient withdrawals, healthcare planning, and income transition strategies."
+description: "Frances' wealth strategy for optimizing finances in the decade before retirement, including tax-efficient withdrawals, healthcare planning, and income transition strategies."
 date: 2026-04-12
 modifiedDate: 2026-04-12
 author: Preston Seo

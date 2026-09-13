@@ -1,6 +1,6 @@
 ---
 title: "Hang & Antonio's Wealth Plan: Debt Elimination & Side Hustle Strategy"
-description: "Discover how Hang and Antonio's wealth plan tackles $150K consumer debt through structured settlements, budget optimization, and strategic side hustles including vending, cohosting, and arbitrage."
+description: "How Hang and Antonio's wealth plan tackles $150K consumer debt through structured settlements, budget optimization, and strategic side hustles including vending, cohosting, and arbitrage."
 date: "2025-08-01"
 author: "Preston Seo"
 category: "Wealth Plan"

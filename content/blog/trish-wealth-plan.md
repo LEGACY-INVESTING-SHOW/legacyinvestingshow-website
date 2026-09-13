@@ -1,7 +1,7 @@
 ---
 title: "Trish's Wealth Plan: Healthcare Professional Wealth Building and Tax Optimization"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Trish's personalized wealth strategy for healthcare professionals, combining high-income optimization, real estate investment, and specialized tax strategies for medical industry workers."
+description: "Trish's personalized wealth strategy for healthcare professionals, combining high-income optimization, real estate investment, and specialized tax strategies for medical industry workers."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

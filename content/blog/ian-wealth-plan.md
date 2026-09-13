@@ -1,7 +1,7 @@
 ---
 title: "Ian's Wealth Plan: Comprehensive Tax Optimization and STR Launch Strategy"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Ian's complete wealth strategy for Airbnb business launch, tax optimization with LLC formation, and Bitcoin accumulation in Nevada's 0% tax environment."
+description: "Ian's complete wealth strategy for Airbnb business launch, tax optimization with LLC formation, and Bitcoin accumulation in Nevada's 0% tax environment."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

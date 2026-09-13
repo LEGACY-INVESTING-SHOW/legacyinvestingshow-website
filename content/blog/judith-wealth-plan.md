@@ -1,7 +1,7 @@
 ---
 title: "Judith Simpson's Wealth Strategy Snapshot: 2026 Tax Year Planning"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Comprehensive 2026 tax year wealth strategy snapshot for Judith Simpson featuring tax optimization, retirement planning, and diversified investment approaches for sustainable wealth building."
+description: "2026 tax year wealth strategy snapshot for Judith Simpson featuring tax optimization, retirement planning, and diversified investment approaches for sustainable wealth building."
 date: 2026-03-01
 modifiedDate: 2026-03-01
 author: Preston Seo

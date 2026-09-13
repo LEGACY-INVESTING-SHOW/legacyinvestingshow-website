@@ -1,6 +1,6 @@
 ---
 title: "Michael's Wealth Plan: Morgan Hill Real Estate & Tax Optimization"
-description: "Explore Michael's comprehensive wealth plan from Morgan Hill, California, combining real estate investment strategies with aggressive tax optimization for long-term wealth building."
+description: "Michael's wealth plan from Morgan Hill, California, combining real estate investment strategies with aggressive tax optimization for long-term wealth building."
 date: "2025-12-01"
 author: "Preston Seo"
 category: "Wealth Plan"

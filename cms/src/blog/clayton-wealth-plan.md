@@ -1,7 +1,7 @@
 ---
 title: "Clayton's 2026 Tax Year Planning Wealth Strategy Snapshot"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Explore Clayton's educational wealth strategy snapshot for 2026 tax year planning. Learn tax optimization scenarios, educational modeling, and strategic timing for maximum wealth preservation."
+description: "Clayton's educational wealth strategy snapshot for 2026 tax year planning. Learn tax optimization scenarios, educational modeling, and strategic timing for maximum wealth preservation."
 date: 2026-04-01
 modifiedDate: 2026-04-01
 author: Preston Seo

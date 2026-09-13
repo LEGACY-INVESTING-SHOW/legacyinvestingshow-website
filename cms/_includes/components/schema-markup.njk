@@ -3,7 +3,7 @@
 {% set blogIndexUrl = ("/blog/" | absoluteUrl) | canonicalizeUrl %}
 {% set aboutUrl = ("/about" | absoluteUrl) | canonicalizeUrl %}
 {% set aboutAuthorUrl = (aboutUrl ~ "#author") | canonicalizeUrl %}
-{% set heroImageUrl = (heroImage | absoluteUrl) | canonicalizeUrl %}
+{% set heroImageUrl = ((hero.ogImage or heroImage) | absoluteUrl) | canonicalizeUrl %}
 {% set logoUrl = ("/assets/images/logo.png" | absoluteUrl) | canonicalizeUrl %}
 {% set publishedIso = date | isoDate %}
 {% set modifiedIso = (dateModified or date) | isoDate %}
@@ -91,12 +91,12 @@
         "@type": "WebPage",
         "@id": {{ canonicalCurrent | jsonLd | safe }}
     },
-    "articleSection": {{ category | jsonLd | safe }},
+    "articleSection": {{ (articleCategory or category) | jsonLd | safe }},
     "wordCount": {{ wordCount | jsonLd | safe }},
     "keywords": {{ keywords | jsonLd | safe }},
     "speakable": {
         "@type": "SpeakableSpecification",
-        "cssSelector": [".minimal-article-title", ".minimal-content p:first-of-type"]
+        "cssSelector": [".post-title", ".post-prose > p:first-of-type"]
     },
     "isAccessibleForFree": true,
     "inLanguage": "en-US"

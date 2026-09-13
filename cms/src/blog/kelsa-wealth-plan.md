@@ -1,7 +1,7 @@
 ---
 title: "Kelsa's Wealth Plan: Dual-Income Household Optimization and Coordination"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Kelsa's personalized wealth strategy for dual-income households focusing on coordinated tax optimization, strategic account selection, and family wealth building efficiency."
+description: "Kelsa's personalized wealth strategy for dual-income households focusing on coordinated tax optimization, strategic account selection, and family wealth building efficiency."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

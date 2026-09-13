@@ -1,0 +1,716 @@
+/* ==========================================================================
+   blog.css — the blog surface (index, pagination, category archives, posts)
+   Loaded after styles.css. Plain CSS, no Tailwind. Base body, heading and
+   link styles still come from styles.css; everything here is blog-specific.
+   ========================================================================== */
+
+.blog-page,
+.post-page {
+  /* Long unbroken tokens (URLs, IDs) wrap instead of widening the page. */
+  overflow-wrap: break-word;
+
+  --blog-measure-list: 68ch;
+  --blog-measure-post: 72ch;
+  --blog-rule: #E2E8F0;
+  --blog-meta: #475569;
+  --blog-body: #334155;
+  --blog-ink: #0F172A;
+  --blog-accent: #C9A961;
+  --blog-accent-text: #8A6F35;
+}
+
+/* ---------------------------------------------------------------- listings */
+
+.blog-page {
+  max-width: var(--blog-measure-list);
+  margin: 0 auto;
+  padding-block: clamp(3rem, 7vw, 5rem) clamp(4rem, 8vw, 6rem);
+  padding-inline: 1rem;
+}
+
+.blog-listing-title {
+  margin: 0;
+  font-size: clamp(2.5rem, 7vw, 3.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.blog-listing-intro {
+  margin: 0.75rem 0 0;
+  max-width: 58ch;
+  color: var(--blog-body);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+/* Plain crawlable category list — a hairline row, not a filter widget. */
+.blog-categories {
+  margin-top: 2rem;
+  padding: 0.875rem 0;
+  border-top: 1px solid var(--blog-rule);
+  border-bottom: 1px solid var(--blog-rule);
+}
+
+.blog-categories-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.blog-categories-item a {
+  color: var(--blog-meta);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.blog-categories-item a:hover,
+.blog-categories-item a:focus-visible {
+  color: var(--blog-ink);
+  text-decoration: underline;
+  text-decoration-color: var(--blog-accent);
+  text-underline-offset: 0.15em;
+}
+
+.blog-categories-item--current a {
+  color: var(--blog-ink);
+  font-weight: 600;
+}
+
+.blog-entries {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.blog-entry {
+  padding: 1.75rem 0;
+  border-bottom: 1px solid var(--blog-rule);
+}
+
+.blog-entry:last-child {
+  border-bottom: 0;
+}
+
+.blog-entry-title {
+  margin: 0;
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 1.32;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+.blog-entry-title a {
+  color: var(--blog-ink);
+  text-decoration: none;
+}
+
+.blog-entry-title a:hover,
+.blog-entry-title a:focus-visible {
+  text-decoration: underline;
+  text-decoration-color: var(--blog-accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+}
+
+.blog-entry-desc {
+  margin: 0.5rem 0 0;
+  color: var(--blog-body);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.blog-entry-meta {
+  margin: 0.6rem 0 0;
+  color: var(--blog-meta);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  font-variant-numeric: tabular-nums;
+}
+
+.blog-entry-meta .blog-meta-sep {
+  padding-inline: 0.45rem;
+  color: #94A3B8;
+}
+
+.blog-empty {
+  margin-top: 2rem;
+  color: var(--blog-body);
+}
+
+/* Pagination — ordinary links, no chrome. */
+.blog-pagination {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--blog-rule);
+  font-size: 0.9375rem;
+}
+
+.blog-pagination a {
+  color: var(--blog-ink);
+  text-decoration: underline;
+  text-decoration-color: var(--blog-accent);
+  text-underline-offset: 0.15em;
+}
+
+.blog-pagination a:hover,
+.blog-pagination a:focus-visible {
+  text-decoration-color: currentColor;
+}
+
+.blog-pagination-status {
+  color: var(--blog-meta);
+  font-variant-numeric: tabular-nums;
+}
+
+.blog-pagination-prev,
+.blog-pagination-next {
+  flex: 0 0 auto;
+}
+
+.blog-pagination-next {
+  margin-left: auto;
+  text-align: right;
+}
+
+/* ------------------------------------------------------------------ posts */
+
+.post-page {
+  max-width: var(--blog-measure-post);
+  margin: 0 auto;
+  padding-block: clamp(2rem, 5vw, 3.25rem) clamp(4rem, 8vw, 6rem);
+  padding-inline: 1rem;
+}
+
+.post-crumbs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.5rem;
+  margin: 0 0 2rem;
+  padding: 0;
+  list-style: none;
+  color: var(--blog-meta);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.post-crumbs-item + .post-crumbs-item::before {
+  content: "/";
+  margin-right: 0.5rem;
+  color: #94A3B8;
+}
+
+.post-crumbs-item a {
+  color: var(--blog-meta);
+  text-decoration: none;
+}
+
+.post-crumbs-item a:hover,
+.post-crumbs-item a:focus-visible {
+  color: var(--blog-ink);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.post-crumbs-current {
+  color: var(--blog-ink);
+}
+
+.post-header {
+  margin-bottom: 2.5rem;
+}
+
+.post-title {
+  margin: 0;
+  font-size: clamp(2.25rem, 5.5vw, 3.25rem);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+.post-standfirst {
+  margin: 1rem 0 0;
+  color: var(--blog-body);
+  font-size: 1.125rem;
+  line-height: 1.65;
+}
+
+.post-meta {
+  margin: 1.25rem 0 0;
+  color: var(--blog-meta);
+  font-size: 0.875rem;
+  line-height: 1.7;
+  font-variant-numeric: tabular-nums;
+}
+
+.post-meta-sep {
+  padding-inline: 0.4rem;
+  color: #94A3B8;
+}
+
+.post-meta-category {
+  color: var(--blog-meta);
+  text-decoration: underline;
+  text-decoration-color: var(--blog-accent);
+  text-underline-offset: 0.15em;
+}
+
+.post-meta-category:hover,
+.post-meta-category:focus-visible {
+  color: var(--blog-ink);
+}
+
+.post-figure {
+  margin: 0 0 2.5rem;
+}
+
+.post-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--blog-rule);
+}
+
+/* Contents: a plain nested list, no panel. */
+.post-toc {
+  margin: 0 0 2.5rem;
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--blog-rule);
+  border-bottom: 1px solid var(--blog-rule);
+}
+
+.post-toc-title {
+  margin: 0 0 0.75rem;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.4;
+}
+
+.post-toc-list,
+.post-toc-sublist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.post-toc-sublist {
+  margin-top: 0.35rem;
+  padding-left: 1.125rem;
+}
+
+.post-toc-item {
+  margin-bottom: 0.35rem;
+  line-height: 1.55;
+}
+
+.post-toc-item a {
+  color: var(--blog-body);
+  font-size: 0.9375rem;
+  text-decoration: none;
+}
+
+.post-toc-item a:hover,
+.post-toc-item a:focus-visible {
+  color: var(--blog-ink);
+  text-decoration: underline;
+  text-decoration-color: var(--blog-accent);
+  text-underline-offset: 0.15em;
+}
+
+/* Prose */
+.post-prose {
+  color: var(--blog-body);
+  font-size: 1.0625rem;
+  line-height: 1.75;
+}
+
+.post-prose > *:first-child {
+  margin-top: 0;
+}
+
+.post-prose p {
+  margin: 0 0 1.4rem;
+}
+
+.post-prose h2 {
+  margin: 3rem 0 1rem;
+  color: var(--blog-ink);
+  font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+  line-height: 1.15;
+  text-wrap: balance;
+}
+
+.post-prose h3 {
+  margin: 2.25rem 0 0.75rem;
+  color: var(--blog-ink);
+  font-size: 1.375rem;
+  line-height: 1.32;
+  text-wrap: balance;
+}
+
+.post-prose h4 {
+  margin: 1.75rem 0 0.6rem;
+  color: var(--blog-ink);
+  font-size: 1.125rem;
+  line-height: 1.35;
+}
+
+.post-prose ul,
+.post-prose ol {
+  margin: 0 0 1.4rem;
+  padding-left: 1.35rem;
+  list-style: disc;
+}
+
+.post-prose ol {
+  list-style: decimal;
+}
+
+.post-prose ul ul,
+.post-prose ol ol,
+.post-prose ul ol,
+.post-prose ol ul {
+  margin: 0.5rem 0 0;
+}
+
+.post-prose li::marker {
+  color: #94A3B8;
+}
+
+.post-prose li {
+  margin-bottom: 0.55rem;
+}
+
+/* Loose markdown lists wrap each item in <p>; keep them from double-spacing. */
+.post-prose li > p {
+  margin-bottom: 0.5rem;
+}
+
+.post-prose li > p:last-child {
+  margin-bottom: 0;
+}
+
+.post-prose a {
+  color: var(--blog-ink);
+  text-decoration: underline;
+  text-decoration-color: var(--blog-accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+.post-prose a:hover,
+.post-prose a:focus-visible {
+  text-decoration-color: currentColor;
+}
+
+.post-prose strong {
+  color: var(--blog-ink);
+  font-weight: 600;
+}
+
+.post-prose blockquote {
+  margin: 2rem 0;
+  padding: 0 0 0 1.25rem;
+  border-left: 1px solid var(--blog-accent);
+  color: var(--blog-ink);
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.post-prose blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.post-prose img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 2rem 0;
+}
+
+/* Embeds in the markdown carry fixed 560x315 attributes; make them fluid. */
+.post-prose iframe {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  margin: 2rem 0;
+  border: 1px solid var(--blog-rule);
+}
+
+.post-prose > * {
+  max-width: 100%;
+}
+
+.post-prose code {
+  font-size: 0.9em;
+  background: #F1F5F9;
+  padding: 0.1em 0.35em;
+}
+
+.post-prose pre {
+  margin: 2rem 0;
+  padding: 1rem 1.25rem;
+  overflow-x: auto;
+  background: #F1F5F9;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.post-prose pre code {
+  background: none;
+  padding: 0;
+}
+
+.post-prose hr {
+  margin: 2.5rem 0;
+  border: 0;
+  border-top: 1px solid var(--blog-rule);
+}
+
+/* Tables are a distinct object: hairlines, tabular figures, own scroller. */
+.post-table {
+  margin: 2rem 0;
+  overflow-x: auto;
+}
+
+.post-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.post-table th,
+.post-table td {
+  padding: 0.7rem 0.9rem 0.7rem 0;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--blog-rule);
+}
+
+.post-table thead th {
+  color: var(--blog-ink);
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid var(--blog-ink);
+}
+
+.post-table tbody tr:last-child th,
+.post-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+/* Sourced facts */
+.post-facts {
+  margin: 2.5rem 0;
+  padding: 0.5rem 0;
+  border-top: 1px solid var(--blog-rule);
+}
+
+.post-fact {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--blog-rule);
+}
+
+.post-fact-label {
+  margin: 0;
+  color: var(--blog-meta);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.post-fact-body {
+  margin: 0.3rem 0 0;
+}
+
+.post-fact-value {
+  display: block;
+  color: var(--blog-ink);
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 1.75rem;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+
+.post-fact-note {
+  margin: 0.4rem 0 0;
+  color: var(--blog-body);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.post-fact-source {
+  margin: 0.35rem 0 0;
+  color: var(--blog-meta);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+
+/* Sources */
+.post-sources {
+  margin: 3rem 0 0;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--blog-rule);
+}
+
+.post-sources-title {
+  margin: 0 0 0.75rem;
+  color: var(--blog-ink);
+  font-size: 1.375rem;
+  line-height: 1.32;
+}
+
+.post-sources p {
+  margin: 0 0 1rem;
+  color: var(--blog-body);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.post-sources-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style: disc;
+  color: var(--blog-body);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.post-sources-item {
+  margin-bottom: 0.5rem;
+}
+
+.post-sources-item::marker {
+  color: #94A3B8;
+}
+
+.post-sources-item a {
+  color: var(--blog-ink);
+  text-decoration: underline;
+  text-decoration-color: var(--blog-accent);
+  text-underline-offset: 0.15em;
+}
+
+.post-sources-item a:hover,
+.post-sources-item a:focus-visible {
+  text-decoration-color: currentColor;
+}
+
+.post-sources-disclaimer {
+  margin: 1.25rem 0 0;
+  color: var(--blog-meta);
+  font-size: 0.875rem;
+  line-height: 1.65;
+}
+
+/* FAQ */
+.post-faq {
+  margin: 3rem 0 0;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--blog-rule);
+}
+
+.post-faq-title {
+  margin: 0 0 1.25rem;
+  color: var(--blog-ink);
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
+
+.post-faq-list {
+  margin: 0;
+}
+
+.post-faq-question {
+  margin: 0;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--blog-rule);
+  color: var(--blog-ink);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.post-faq-list .post-faq-question:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.post-faq-answer {
+  margin: 0.5rem 0 1.1rem;
+  color: var(--blog-body);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Related */
+.post-related {
+  margin: 3rem 0 0;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--blog-rule);
+}
+
+.post-related-title {
+  margin: 0 0 1rem;
+  color: var(--blog-ink);
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+.post-related-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.post-related-item {
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--blog-rule);
+  line-height: 1.5;
+}
+
+.post-related-item:last-child {
+  border-bottom: 0;
+}
+
+.post-related-item a {
+  color: var(--blog-ink);
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.post-related-item a:hover,
+.post-related-item a:focus-visible {
+  text-decoration: underline;
+  text-decoration-color: var(--blog-accent);
+  text-underline-offset: 0.15em;
+}
+
+.post-related-all a {
+  color: var(--blog-meta);
+  font-size: 0.9375rem;
+}
+
+@media (max-width: 480px) {
+  .post-prose {
+    font-size: 1rem;
+  }
+}
