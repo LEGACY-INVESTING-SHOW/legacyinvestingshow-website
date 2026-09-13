@@ -538,11 +538,92 @@
       "slug": "w2-employees",
       "title": "W-2 Employees",
       "description": "Tax strategies for salaried workers looking to reduce their tax burden",
+      "metaDescription": "What a salaried worker can actually do about taxes, grouped by whether the move needs nothing, a rental, or a spouse or side business.",
+      "answer": "Most of what a W-2 earner can do happens inside payroll and investment accounts. Fill the 401k and the HSA, use any after-tax 401k room, add a backdoor Roth IRA, then harvest losses and time charitable gifts. Everything larger than that needs a rental, a side business, or a spouse with time.",
+      "lede": "A paycheck is the hardest income to shelter. There is no entity to route it through, and unreimbursed employee expenses are not deductible on a federal return. So the moves below are grouped by what each one asks of you.",
       "topStrategies": [
         "short-term-rental-loophole",
         "hsa-strategy",
         "solo-401k",
         "cost-segregation"
+      ],
+      "groups": [
+        {
+          "heading": "No business needed",
+          "intro": "These work with nothing but your own payroll elections and a brokerage account. Start here, because they are the only moves that are fully under your control.",
+          "strategies": [
+            "hsa-strategy",
+            "mega-backdoor-roth",
+            "backdoor-roth-ira",
+            "dependent-care-fsa",
+            "tax-loss-harvesting",
+            "bunching-deductions",
+            "donor-advised-fund"
+          ]
+        },
+        {
+          "heading": "Needs a rental",
+          "intro": "These only exist if you own property. They can be the largest numbers on the page, and they carry the most work, the most records, and depreciation recapture when you sell.",
+          "strategies": [
+            "short-term-rental-loophole",
+            "cost-segregation",
+            "bonus-depreciation"
+          ]
+        },
+        {
+          "heading": "Needs a spouse or a side business",
+          "intro": "These need income or hours that a full-time job leaves no room for. On a joint return a spouse can meet tests you cannot.",
+          "strategies": [
+            "real-estate-professional-status",
+            "solo-401k",
+            "s-corp-strategy",
+            "qualified-business-income-deduction"
+          ]
+        }
+      ],
+      "readNext": [
+        {
+          "url": "/blog/w2-tax-strategies-after-maxing-401k-and-hsa",
+          "title": "What is actually left after you max the 401k and HSA"
+        },
+        {
+          "url": "/blog/cut-taxes-w2-300k-without-starting-a-business",
+          "title": "Cut taxes on a $300K W-2 without starting a business"
+        },
+        {
+          "url": "/tools/marginal-vs-effective-tax-rate",
+          "title": "Marginal vs effective tax rate calculator"
+        },
+        {
+          "url": "/tools/payroll-withholding-estimate",
+          "title": "Payroll withholding estimator"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "I max my 401k and HSA. What is left?",
+          "answer": "After-tax 401k room converted to Roth, a backdoor Roth IRA, a dependent care FSA, tax-loss harvesting in a taxable account, and charitable bunching through a donor-advised fund. Those five need no business, no property, and no spouse. Anything larger than that does."
+        },
+        {
+          "question": "What tax strategies are available to W-2 employees?",
+          "answer": "A health savings account, after-tax 401k contributions converted to Roth, a backdoor Roth IRA above the income limits, a dependent care FSA, bunching itemized deductions into alternate years, and the short-term rental loophole if a rental property is part of the plan."
+        },
+        {
+          "question": "Can I deduct expenses against my wages?",
+          "answer": "Almost never. Unreimbursed employee business expenses are not deductible on a federal return. Pre-tax payroll items such as the 401k, the HSA, health premiums, and the dependent care FSA are the main way to lower wages before they reach the return."
+        },
+        {
+          "question": "How can W-2 employees deduct rental property losses?",
+          "answer": "The short-term rental loophole treats a rental with an average stay of seven days or less as non-passive when you materially participate, which takes it outside the passive activity loss limits that normally block the deduction. Clearing the seven-day test is only the first half. Material participation is a separate test with its own hour requirements and its own record keeping."
+        },
+        {
+          "question": "Can I qualify for real estate professional status with a full-time job?",
+          "answer": "No. The test needs more than 750 hours and more than half of your working time in real property trades or businesses, and a full-time job makes the second half impossible. A spouse who is not working full time elsewhere is the realistic route on a joint return."
+        },
+        {
+          "question": "Does an LLC lower the tax on my salary?",
+          "answer": "No. An LLC does not change how wages are taxed. Entity choice starts to matter only once you have self-employment or rental income, and even then the S-corp question depends on profit level, payroll cost, and state treatment."
+        }
       ],
       "linkLabel": "W-2 employees"
     },

@@ -115,6 +115,16 @@ function formatTitle(slug) {
 }
 
 /**
+ * Turn a heading into a stable in-page anchor id.
+ */
+function slugify(value = '') {
+    return String(value)
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-+|-+$/g, '');
+}
+
+/**
  * Build a normalized <title> string without forced length truncation.
  */
 function buildSEOTitle(rawTitle) {
@@ -508,6 +518,10 @@ function generatePersonaCollectionSchema(persona) {
  * Persona FAQs
  */
 function getPersonaFaqs(persona) {
+    if (Array.isArray(persona.faqs) && persona.faqs.length) {
+        return persona.faqs;
+    }
+
     const faqs = {
         'airbnb-hosts': [
             {
@@ -582,25 +596,24 @@ function generatePersonaFaqSchema(persona) {
  * Persona strategy guidance: what each move is, what it needs, and where the
  * full guide lives. One column, hairlines, no cards.
  */
-function renderPersonaStrategies(persona, strategyBySlug, catalogBySlug) {
-    return persona.topStrategies.map((slug, index) => {
-        const strategy = strategyBySlug.get(slug);
-        const entry = catalogBySlug.get(slug);
-        const title = (entry && entry.title) || (strategy && strategy.title) || formatTitle(slug);
-        const body = strategy ? strategy.fullDescription : (entry ? entry.summary : '');
+function renderStrategyEntry(slug, number, strategyBySlug, catalogBySlug) {
+    const strategy = strategyBySlug.get(slug);
+    const entry = catalogBySlug.get(slug);
+    const title = (entry && entry.title) || (strategy && strategy.title) || formatTitle(slug);
+    const body = strategy ? strategy.fullDescription : (entry ? entry.summary : '');
 
-        const facts = [];
-        if (strategy) {
-            facts.push(['Potential savings', strategy.potentialSavings]);
-            facts.push(['Best fit', strategy.bestFor]);
-            facts.push(['Level', String(strategy.complexity).toLowerCase()]);
-            facts.push(['Typical cost', strategy.typicalCost]);
-        } else if (entry) {
-            facts.push(['Level', entry.level]);
-        }
+    const facts = [];
+    if (strategy) {
+        facts.push(['Potential savings', strategy.potentialSavings]);
+        facts.push(['Best fit', strategy.bestFor]);
+        facts.push(['Level', String(strategy.complexity).toLowerCase()]);
+        facts.push(['Typical cost', strategy.typicalCost]);
+    } else if (entry) {
+        facts.push(['Level', entry.level]);
+    }
 
-        const table = facts.length
-            ? `
+    const table = facts.length
+        ? `
                     <div class="table-inset">
                         <table>
                             <tbody>
@@ -611,12 +624,50 @@ ${facts.map(([term, value]) => `                                <tr>
                             </tbody>
                         </table>
                     </div>`
-            : '';
+        : '';
 
-        return `
-                    <h3 id="${esc(slug)}">${index + 1}. <a href="/tax-strategies/${esc(slug)}">${esc(title)}</a></h3>
+    return `
+                    <h3 id="${esc(slug)}">${number}. <a href="/tax-strategies/${esc(slug)}">${esc(title)}</a></h3>
                     <p>${esc(body)}</p>${table}`;
+}
+
+function renderPersonaStrategies(persona, strategyBySlug, catalogBySlug) {
+    return persona.topStrategies
+        .map((slug, index) => renderStrategyEntry(slug, index + 1, strategyBySlug, catalogBySlug))
+        .join('\n');
+}
+
+/**
+ * Grouped variant. A persona can sort its strategies by what each one asks of
+ * the reader (nothing, a rental, a spouse or a side business) instead of one
+ * flat list. Numbering runs continuously across the groups.
+ */
+function renderPersonaGroups(persona, strategyBySlug, catalogBySlug) {
+    let number = 0;
+
+    return persona.groups.map((group) => {
+        const heading = `
+                        <h2 id="${esc(slugify(group.heading))}">${esc(group.heading)}</h2>`;
+        const intro = group.intro ? `
+                        <p>${esc(group.intro)}</p>` : '';
+        const entries = (group.strategies || [])
+            .map((slug) => renderStrategyEntry(slug, ++number, strategyBySlug, catalogBySlug))
+            .join('\n');
+
+        return `${heading}${intro}
+${entries}`;
     }).join('\n');
+}
+
+/** "Read next" links a persona page can point at: guides, posts, calculators. */
+function renderPersonaReadNext(persona) {
+    if (!Array.isArray(persona.readNext) || !persona.readNext.length) return '';
+
+    return `
+                        <h2 id="read-next">Read next</h2>
+                        <ul>
+${persona.readNext.map((item) => `                            <li><a href="${esc(item.url)}">${esc(item.title)}</a></li>`).join('\n')}
+                        </ul>`;
 }
 
 /**
@@ -627,8 +678,23 @@ function generatePersonaPage(persona, strategyBySlug, catalogBySlug, allPersonas
     const breadcrumbSchema = generatePersonaBreadcrumbSchema(persona);
     const collectionSchema = generatePersonaCollectionSchema(persona);
     const faqSchema = generatePersonaFaqSchema(persona);
-    const description = `${persona.description}. The strategies that usually matter first, what each one requires, and the questions to settle before you file.`;
+    const description = persona.metaDescription
+        || `${persona.description}. The strategies that usually matter first, what each one requires, and the questions to settle before you file.`;
     const label = persona.linkLabel || persona.title;
+    const keyLine = persona.answer || 'Sequence matters more than size. Work down this list in order.';
+    const lede = persona.lede
+        || `${persona.description}. These are the ${persona.topStrategies.length} moves that usually matter first, what each one requires, and the questions to settle before you file.`;
+    const hasGroups = Array.isArray(persona.groups) && persona.groups.length > 0;
+    const startHeading = hasGroups
+        ? `
+                        <h2 id="where-to-start">How the moves are grouped</h2>
+                        <p>Grouped by what each one asks of you, not by the size of the deduction. Work down from the top of the first group. Some can be put in place during the year. Some need an account opened before money moves. Some only work if the documentation exists before the deduction is claimed.</p>`
+        : `
+                        <h2 id="where-to-start">Where to start</h2>
+                        <p>Ordered by how often each one matters for this group, not by the size of the deduction. Some can be put in place during the year. Some need an account or an entity opened before money moves. Some only work if the documentation exists before the deduction is claimed.</p>`;
+    const startBody = hasGroups
+        ? renderPersonaGroups(persona, strategyBySlug, catalogBySlug)
+        : renderPersonaStrategies(persona, strategyBySlug, catalogBySlug);
 
     return `<!DOCTYPE html>
 <html lang="en">
@@ -696,8 +762,8 @@ function generatePersonaPage(persona, strategyBySlug, catalogBySlug, allPersonas
                         </ol>
                     </nav>
                     <h1 class="opener__title">Tax strategies for ${esc(label.toLowerCase())}</h1>
-                    <p class="opener__key">Sequence matters more than size. Work down this list in order.</p>
-                    <p class="opener__lede">${esc(persona.description)}. These are the ${persona.topStrategies.length} moves that usually matter first, what each one requires, and the questions to settle before you file.</p>
+                    <p class="opener__key">${esc(keyLine)}</p>
+                    <p class="opener__lede">${esc(lede)}</p>
                 </div>
             </div>
         </section>
@@ -705,10 +771,8 @@ function generatePersonaPage(persona, strategyBySlug, catalogBySlug, allPersonas
         <section class="section section--rule">
             <div class="container-custom">
                 <div class="col">
-                    <div class="prose">
-                        <h2 id="where-to-start">Where to start</h2>
-                        <p>Ordered by how often each one matters for this group, not by the size of the deduction. Some can be put in place during the year. Some need an account or an entity opened before money moves. Some only work if the documentation exists before the deduction is claimed.</p>
-${renderPersonaStrategies(persona, strategyBySlug, catalogBySlug)}
+                    <div class="prose">${startHeading}
+${startBody}${renderPersonaReadNext(persona)}
 
                         <h2 id="questions">Common questions</h2>
                     </div>
