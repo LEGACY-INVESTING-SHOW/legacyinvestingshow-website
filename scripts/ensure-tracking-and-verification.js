@@ -38,6 +38,14 @@ const SKIP_DIRS = new Set([
   'todos',
 ]);
 
+// --- icon backstop ---
+// The committed logo.png is a corrupt image; icons must point at /favicon.ico.
+function fixIconLinks(html) {
+  return html
+    .replace(/<link rel="icon"[^>]*href="(?:\.\.\/|\/)assets\/images\/logo(?:-240)?\.(?:png|webp)"[^>]*>\s*/g, '<link rel="icon" href="/favicon.ico" sizes="32x32">\n    ')
+    .replace(/\s*<link rel="apple-touch-icon"[^>]*href="(?:\.\.\/|\/)assets\/images\/logo(?:-240)?\.(?:png|webp)"[^>]*>/g, '');
+}
+
 function walkHtmlFiles(dir) {
   const files = [];
   const entries = fs.readdirSync(dir, { withFileTypes: true });
@@ -438,6 +446,7 @@ function processFile(filePath) {
   next = repairSocialImages(next, relativePath);
   next = dropBrokenImagePreloads(next, relativePath);
   next = dropGoogleFontsPreconnect(next);
+  next = fixIconLinks(next);
   next = stripPlaceholderGaScript(next);
   if (!skipTrackingInjection) {
     next = injectGtmScript(next);

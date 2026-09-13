@@ -4,7 +4,7 @@
 {% set aboutUrl = ("/about" | absoluteUrl) | canonicalizeUrl %}
 {% set aboutAuthorUrl = (aboutUrl ~ "#author") | canonicalizeUrl %}
 {% set heroImageUrl = ((hero.ogImage or heroImage) | absoluteUrl) | canonicalizeUrl %}
-{% set logoUrl = ("/assets/images/logo.png" | absoluteUrl) | canonicalizeUrl %}
+{% set logoUrl = ("/assets/images/og-home.jpg" | absoluteUrl) | canonicalizeUrl %}
 {% set publishedIso = date | isoDate %}
 {% set modifiedIso = (dateModified or date) | isoDate %}
 

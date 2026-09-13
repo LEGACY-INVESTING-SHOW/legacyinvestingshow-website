@@ -386,8 +386,7 @@ function listingDocument({
     <meta name="twitter:image" content="${SITE_DOMAIN}/assets/images/og-blog.jpg">
 
     <meta name="theme-color" content="#FAF7F2">
-    <link rel="icon" type="image/png" href="/assets/images/logo.png">
-    <link rel="apple-touch-icon" href="/assets/images/logo.png">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
 
     ${renderHeadAssets()}
     <link rel="stylesheet" href="/assets/css/blog.css">

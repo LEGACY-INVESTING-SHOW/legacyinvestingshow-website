@@ -155,7 +155,7 @@ function generateRSSFeed() {
 
   // Image (logo)
   xml += '    <image>\n';
-  xml += `      <url>${SITE_URL}/assets/images/logo.png</url>\n`;
+  xml += `      <url>${SITE_URL}/assets/images/og-home.jpg</url>\n`;
   xml += `      <title>${escapeXml(FEED_TITLE)}</title>\n`;
   xml += `      <link>${SITE_URL}</link>\n`;
   xml += '    </image>\n';
