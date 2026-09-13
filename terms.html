@@ -48,6 +48,21 @@
         gtag('js', new Date());
         gtag('config', 'G-2578PT1WSS');
     </script>
+
+    <!-- Page-scoped layout. Shared components come from the kit in styles.css. -->
+    <style>
+    /* Tailwind ships a .contents{display:contents} utility that overrides the kit component. */
+    .contents { display: block; }
+    .legal { display: grid; gap: clamp(2rem, 4vw, 3rem); }
+    @media (min-width: 1024px) { .legal { grid-template-columns: 14rem minmax(0, 1fr); gap: clamp(2.5rem, 4vw, 4rem); align-items: start; } }
+    .legal__body h2 { font-size: clamp(1.5rem, 2.4vw, 2rem); margin: 3rem 0 0; }
+    .legal__body h2:first-of-type { margin-top: 0; }
+    .legal__body h2::after { content: ''; display: block; width: 3rem; border-top: 2px solid var(--gold); margin-top: 0.875rem; }
+    .legal__body p { margin: 1rem 0 0; font-size: 1.0625rem; line-height: 1.7; color: var(--text-secondary); max-width: 68ch; }
+    .legal__body a { color: var(--text-primary); font-weight: 500; text-decoration: underline; text-decoration-color: var(--gold); }
+    .legal__body a:hover { color: var(--gold-text); }
+    </style>
+
 </head>
 <body class="bg-cream">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -56,7 +71,7 @@
     <header class="site-header">
         <nav class="container-custom site-nav" aria-label="Main navigation">
             <a href="/" class="site-brand">
-                <img src="/assets/images/logo-240.webp" alt="" width="28" height="28">
+                <img src="/assets/images/logo-240.webp" alt="" width="62" height="28">
                 <span>Legacy Investing Show</span>
             </a>
             <div class="site-nav-links">
@@ -82,36 +97,57 @@
     </header>
 
     <main id="main">
-        <div class="container-custom max-w-3xl py-12 md:py-20">
-            <article class="max-w-lg">
-                <h1 class="text-navy">Terms of Service</h1>
+        <section class="section section--tight">
+            <div class="container-custom">
+                <div class="opener">
+                    <div>
+                        <h1 class="opener__title">Terms of service</h1>
+                        <p class="opener__lede">These terms govern access to this website and any educational products, reports, and services offered through Legacy Investing Show.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <p class="mt-8 text-lg text-secondary leading-relaxed">These terms govern access to this website and any educational products, reports, and services offered through Legacy Investing Show.</p>
-
-                <h2 class="mt-12 pt-8 border-t border-slate-200 text-2xl md:text-3xl text-navy">Educational use</h2>
-                <p class="mt-4 text-secondary">Content on this website is for educational purposes only and does not constitute tax, legal, investment, or financial advice.</p>
-
-                <h2 class="mt-12 pt-8 border-t border-slate-200 text-2xl md:text-3xl text-navy">User responsibilities</h2>
-                <p class="mt-4 text-secondary">Users are responsible for the accuracy of information they submit and for reviewing any decision with qualified professionals where appropriate.</p>
-
-                <h2 class="mt-12 pt-8 border-t border-slate-200 text-2xl md:text-3xl text-navy">Purchases and access</h2>
-                <p class="mt-4 text-secondary">Access to paid products and services is governed by the offer terms shown at checkout, including any refund or review policies presented there.</p>
-
-                <h2 class="mt-12 pt-8 border-t border-slate-200 text-2xl md:text-3xl text-navy">Questions</h2>
-                <p class="mt-4 text-secondary">If you have questions about these terms, email <a href="mailto:preston@legacyinvestingshow.com" class="text-navy font-medium underline hover:text-gold">preston@legacyinvestingshow.com</a>.</p>
-            </article>
-        </div>
+        <section class="band band--white section">
+            <div class="container-custom">
+                <div class="legal">
+                    <details class="contents" open>
+                        <summary>On this page</summary>
+                        <nav aria-label="On this page">
+                            <ol>
+                                    <li><a href="#educational-use">Educational use</a></li>
+                                    <li><a href="#user-responsibilities">User responsibilities</a></li>
+                                    <li><a href="#purchases-and-access">Purchases and access</a></li>
+                                    <li><a href="#questions">Questions</a></li>
+                            </ol>
+                        </nav>
+                    </details>
+                    <div class="sheet">
+                        <article class="legal__body">
+                                <h2 id="educational-use">Educational use</h2>
+                                <p>Content on this website is for educational purposes only and does not constitute tax, legal, investment, or financial advice.</p>
+                                <h2 id="user-responsibilities">User responsibilities</h2>
+                                <p>Users are responsible for the accuracy of information they submit and for reviewing any decision with qualified professionals where appropriate.</p>
+                                <h2 id="purchases-and-access">Purchases and access</h2>
+                                <p>Access to paid products and services is governed by the offer terms shown at checkout, including any refund or review policies presented there.</p>
+                                <h2 id="questions">Questions</h2>
+                                <p>If you have questions about these terms, email <a href="mailto:preston@legacyinvestingshow.com">preston@legacyinvestingshow.com</a>.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="site-footer" role="contentinfo">
         <div class="container-custom">
             <div class="site-footer-grid">
                 <div class="site-footer-brand">
-                    <a href="/" class="site-brand"><img src="/assets/images/logo-240.webp" alt="" width="28" height="28"><span>Legacy Investing Show</span></a>
+                    <a href="/" class="site-brand"><img src="/assets/images/logo-240.webp" alt="" width="62" height="28"><span>Legacy Investing Show</span></a>
                     <p>Tax strategy, wealth systems, and practical decision tools for professionals, investors, and founders.</p>
                 </div>
                 <div class="site-footer-group">
-                    <h2>Guides</h2>
+                    <p class="site-footer-title">Guides</p>
                     <ul>
                         <li><a href="/tax-strategies">Tax strategies</a></li>
                         <li><a href="/compare">Compare guides</a></li>
@@ -121,14 +157,14 @@
                     </ul>
                 </div>
                 <div class="site-footer-group">
-                    <h2>Tools</h2>
+                    <p class="site-footer-title">Tools</p>
                     <ul>
                         <li><a href="/tools">Free calculators</a></li>
                         <li><a href="/blog">Blog</a></li>
                     </ul>
                 </div>
                 <div class="site-footer-group">
-                    <h2>Company</h2>
+                    <p class="site-footer-title">Company</p>
                     <ul>
                         <li><a href="/about">About Preston Seo</a></li>
                         <li><a href="/success-stories">Student results</a></li>
