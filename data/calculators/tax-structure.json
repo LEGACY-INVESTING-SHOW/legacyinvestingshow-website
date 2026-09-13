@@ -1,0 +1,11 @@
+{
+  "year": 2026,
+  "standardDeduction": { "single": 16100, "joint": 32200 },
+  "ordinaryThresholds": { "single": [12400, 50400, 105700, 201775, 256225, 640600], "joint": [24800, 100800, 211400, 403550, 512450, 768700] },
+  "rates": [0.1, 0.12, 0.22, 0.24, 0.32, 0.35, 0.37],
+  "capitalGainsThresholds": { "single": [49450, 545500], "joint": [98900, 613700] },
+  "niitThreshold": { "single": 200000, "joint": 250000 },
+  "socialSecurityWageBase": 184500,
+  "defaultAmount": 150000,
+  "rental": { "expensePercent": 70.33333333333333, "propertyValue": 1000000, "landPercent": 20, "recoveryYears": 27.5, "accelerated": 60000 }
+}

@@ -1,0 +1,6 @@
+{
+  "url": "https://www.legacyinvestingshow.com/tools/tax-structure-calculator",
+  "deploymentId": "dpl_7tjj5KGmqvJK48Q7apb515Zcpqbt",
+  "readyState": "READY",
+  "checks": "Model tests: 8 passed. Full build passed. Mobile comparison, joint filing, split expenses, no overflow, preserved routes and assets verified."
+}

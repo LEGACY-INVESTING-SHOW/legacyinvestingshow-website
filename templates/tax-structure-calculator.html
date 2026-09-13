@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tax Structure Calculator | Legacy Investing Show</title>
+  <meta name="description" content="Enter what you earn and see what the IRS keeps if it comes as W-2 wages, long-term capital gains, or a structured rental. 2026 federal tables, split mode, editable assumptions.">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="Kec6RfGhFL-qG_8zKxCqt7yxjgy65WeDAftCBm90G2s">
+    <meta name="google-site-verification" content="92MoCnkdQOj_ey1lEafT5Mz-znCcCQ3UABZlI-JG_nM">
+  <link rel="canonical" href="https://www.legacyinvestingshow.com/tools/tax-structure-calculator">
+  <meta property="og:title" content="Same income. Three outcomes. Structure is the lever.">
+  <meta property="og:description" content="Plug in your number and see how wages, long-term gains, and a structured rental are taxed differently.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.legacyinvestingshow.com/tools/tax-structure-calculator">
+  <meta property="og:image" content="https://www.legacyinvestingshow.com/assets/images/og-home.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tax Structure Calculator">
+  <meta name="twitter:description" content="See what the IRS keeps when the same income arrives as wages, long-term gains, or rent.">
+  <meta name="twitter:image" content="https://www.legacyinvestingshow.com/assets/images/og-home.jpg">
+  <meta name="keywords" content="tax structure calculator, W-2 tax, capital gains, rental depreciation">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":"Tax Structure Calculator","url":"https://www.legacyinvestingshow.com/tools/tax-structure-calculator","applicationCategory":"FinanceApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},{"@type":"Organization","name":"Legacy Investing Show","url":"https://www.legacyinvestingshow.com"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.legacyinvestingshow.com"},{"@type":"ListItem","position":2,"name":"Tax Structure Calculator","item":"https://www.legacyinvestingshow.com/tools/tax-structure-calculator"}]}]}</script>
+  <meta name="theme-color" content="#faf7f2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/tax-structure-calculator.css">
+  <script id="tax-tables" type="application/json">{{TAX_TABLES}}</script>
+  <script src="/assets/js/tax-structure-model.js" defer></script>
+  <script src="/assets/js/tax-structure-calculator.js" defer></script>
+
+    <!-- Open Graph fallback -->
+    <meta property="og:site_name" content="Legacy Investing Show">
+
+    <!-- Twitter Card fallback -->
+    <meta name="twitter:site" content="@thelegacyshow">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-2578PT1WSS');
+    </script>
+
+</head>
+<body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <header class="top">
+    <a class="brand" href="https://www.legacyinvestingshow.com/tools">Tax Structure Calculator</a>
+    <span class="meta">2026 · Federal · <a href="https://www.legacyinvestingshow.com/tools">All calculators</a></span>
+  </header>
+  <main>
+    <h1>What the IRS keeps from <span class="n" data-value="amountLabel">$150,000</span></h1>
+    <p class="sub">Drag to your income. Dark is what the IRS keeps.</p>
+
+    <section class="controls" aria-label="Your numbers">
+      <div class="amount">
+        <label for="amount">Annual amount</label>
+        <div class="money"><span aria-hidden="true">$</span><input id="amount" type="number" min="0" max="100000000" step="any" value="150000" inputmode="decimal"></div>
+        <input id="amount-range" type="range" min="25000" max="500000" step="5000" value="150000" aria-label="Annual amount slider">
+        <div class="ticks" aria-hidden="true"><span>$25K</span><span>$500K</span></div>
+      </div>
+      <fieldset class="pick">
+        <legend>Filing</legend>
+        <div class="seg">
+          <input type="radio" name="status" id="status-single" value="single" checked><label for="status-single">Single</label>
+          <input type="radio" name="status" id="status-joint" value="joint"><label for="status-joint">Married</label>
+        </div>
+      </fieldset>
+      <fieldset class="pick">
+        <legend>Mode</legend>
+        <div class="seg">
+          <input type="radio" name="mode" id="mode-compare" value="compare" checked><label for="mode-compare">All three</label>
+          <input type="radio" name="mode" id="mode-split" value="split"><label for="mode-split">My split</label>
+        </div>
+      </fieldset>
+      <div class="split" id="split-fields" hidden>
+        <div class="split-head"><span>Where the money comes from</span><span id="split-sum">100%</span></div>
+        <div class="split-row"><label for="splitWages">W-2 wages</label><input id="splitWages-range" type="range" min="0" max="100" step="1" value="60" aria-label="W-2 wages share"><span class="pct"><input id="splitWages" type="number" min="0" max="100" step="1" value="60" inputmode="numeric">%</span></div>
+        <div class="split-row"><label for="splitGains">Long-term gains</label><input id="splitGains-range" type="range" min="0" max="100" step="1" value="20" aria-label="Long-term gains share"><span class="pct"><input id="splitGains" type="number" min="0" max="100" step="1" value="20" inputmode="numeric">%</span></div>
+        <div class="split-row"><label for="splitRental">Rental income</label><input id="splitRental-range" type="range" min="0" max="100" step="1" value="20" aria-label="Rental income share"><span class="pct"><input id="splitRental" type="number" min="0" max="100" step="1" value="20" inputmode="numeric">%</span></div>
+        <p class="hint">One return. Wages, gains, and rent taxed together.</p>
+      </div>
+    </section>
+
+    <p id="error" role="alert" hidden></p>
+    <div id="result-status" class="sr-only" role="status" aria-live="polite"></div>
+
+    <div id="results">
+      <section class="chart" aria-label="Federal tax as a share of income">
+        <div class="bar">
+          <div class="h"><b>W-2 wages</b><span>keep <i data-value="wagesRetained">$113,791</i></span></div>
+          <div class="track"><div id="wages-bar" class="fill"><span data-value="wagesTotal">$36,209</span></div><div class="rest" id="wages-rest">24.1% gone</div></div>
+        </div>
+        <div class="bar">
+          <div class="h"><b>Long-term capital gains</b><span>keep <i data-value="gainsRetained">$137,333</i></span></div>
+          <div class="track"><div id="gains-bar" class="fill"><span data-value="gainsTotal">$12,668</span></div><div class="rest" id="gains-rest">8.4% gone</div></div>
+        </div>
+        <div class="bar">
+          <div class="h"><b>Structured rental</b><span>cash left <i data-value="rentalRetained">$44,500</i></span></div>
+          <div class="track"><div id="rental-bar" class="fill"><span data-value="rentalTax">$0</span></div><div class="rest" id="rental-rest">$0 tax · $44,591 paper loss</div></div>
+        </div>
+        <div class="legend" aria-hidden="true"><span><i class="dark"></i>Federal tax</span><span><i class="light"></i>Yours</span></div>
+      </section>
+
+      <div class="split-total" data-mode="split" hidden>
+        <p><span>Total federal tax on this split</span><b data-value="splitTotal"></b><em data-value="splitRate"></em></p>
+        <p><span>If it all came as wages</span><b data-value="allWages"></b><em data-value="allWagesRate"></em></p>
+        <p><span>You keep</span><b data-value="splitRetained"></b><em></em></p>
+      </div>
+
+      <p class="tagline">Same <span data-value="amountLabel">$150,000</span>. Three outcomes. Structure is the lever.</p>
+
+      <table class="statement">
+        <tbody>
+          <tr class="head"><th>W-2 wages</th><th class="r" data-value="wagesAmount">$150,000</th></tr>
+          <tr><td>Federal income tax</td><td class="r" data-value="incomeTax"></td></tr>
+          <tr><td>Social Security</td><td class="r" data-value="socialSecurity"></td></tr>
+          <tr><td>Medicare</td><td class="r" data-value="medicare"></td></tr>
+          <tr data-row="additionalMedicare"><td>Additional Medicare</td><td class="r" data-value="additionalMedicare"></td></tr>
+          <tr class="total"><td>Tax paid</td><td class="r" data-value="wagesTotal"></td></tr>
+          <tr class="keep"><td><span data-value="wagesRate"></span> of income</td><td class="r">You keep <span data-value="wagesRetained"></span></td></tr>
+
+          <tr class="head"><th>Long-term capital gains</th><th class="r" data-value="gainsAmount">$150,000</th></tr>
+          <tr><td>Capital gains tax (0% / 15% / 20%)</td><td class="r" data-value="capitalGainsTax"></td></tr>
+          <tr><td>Investment surtax (NIIT)</td><td class="r" data-value="niit"></td></tr>
+          <tr class="total"><td>Tax paid</td><td class="r" data-value="gainsTotal"></td></tr>
+          <tr class="keep"><td><span data-value="gainsRate"></span> of income</td><td class="r">You keep <span data-value="gainsRetained"></span></td></tr>
+
+          <tr class="head"><th>Structured rental</th><th class="r" data-value="rentalAmount">$150,000</th></tr>
+          <tr><td>Operating expenses (<span data-value="expensePercentLabel">70⅓%</span>)</td><td class="r neg" data-value="expenses"></td></tr>
+          <tr class="sub"><td>Cash left before tax</td><td class="r" data-value="cashBeforeTax"></td></tr>
+          <tr><td>Building depreciation</td><td class="r neg" data-value="standardDepreciation"></td></tr>
+          <tr><td>Accelerated depreciation</td><td class="r neg" data-value="acceleratedDepreciation"></td></tr>
+          <tr class="sub"><td data-label="rentalResult">Taxable result</td><td class="r" data-value="rentalResult"></td></tr>
+          <tr><td>Rental income tax and surtax</td><td class="r" data-value="rentalTaxLine"></td></tr>
+          <tr class="total"><td>Tax paid</td><td class="r" data-value="rentalTax"></td></tr>
+          <tr class="keep"><td id="rental-keep-label">Paper loss, not a refund</td><td class="r">Cash left <span data-value="rentalRetained"></span></td></tr>
+        </tbody>
+      </table>
+      <p id="rental-note" class="note"></p>
+    </div>
+
+    <section class="assumptions" aria-label="Rental assumptions">
+      <details id="advanced">
+        <summary><span>Rental assumptions: <b id="assumption-line">70⅓% expenses, $1M property, 20% land, 27.5-year depreciation, $60,000 accelerated</b></span><span class="edit">Edit</span></summary>
+        <div class="body">
+          <label class="check"><input id="carousel-defaults" type="checkbox" checked> Use the carousel example</label>
+          <div class="grid">
+            <div class="field"><label for="preset">Example</label><select id="preset"><option value="brief">Original carousel</option><option value="updated">Updated carousel</option></select></div>
+            <div class="field"><label for="expensePercent">Operating expenses (%)</label><input id="expensePercent" type="number" min="0" max="100" step="any" value="70.33333333333333" disabled></div>
+            <div class="field"><label for="propertyValue">Property value ($)</label><input id="propertyValue" type="number" min="0" max="1000000000" step="any" value="1000000" disabled></div>
+            <div class="field"><label for="landPercent">Land share (%)</label><input id="landPercent" type="number" min="0" max="100" step="any" value="20" disabled></div>
+            <div class="field"><label for="recoveryYears">Recovery period</label><select id="recoveryYears" disabled><option value="27.5">27.5 years</option><option value="39">39 years</option></select></div>
+            <div class="field"><label for="accelerated">Accelerated depreciation ($)</label><input id="accelerated" type="number" min="0" max="1000000000" step="any" value="60000" disabled></div>
+          </div>
+          <p id="preset-note" class="note"></p>
+        </div>
+      </details>
+      <button id="reset" type="button" class="reset">Reset to the carousel example</button>
+    </section>
+
+    <footer>
+      <p>Standard deduction <span data-value="standardDeduction">$16,100</span> · No other income · Federal only · 2026 tables</p>
+      <details>
+        <summary><span>How the math works</span><span class="edit">Show</span></summary>
+        <p>"All three ways" treats the full amount as your only income on three separate returns. "My real split" puts wages, gains, and rent on one return: wages and any rental profit share the standard deduction and the ordinary brackets, and long-term gains stack on top for the 0, 15, and 20 percent brackets. Single wage earner, under 65. Excludes state tax, AMT, credits, QBI and itemized deductions.</p>
+        <p>Rental: gross rent, minus operating expenses, minus straight-line building depreciation on the non-land part of the property, minus an accelerated first-year amount. The accelerated amount is a net increase above the standard baseline, not a cost-segregation study. A paper loss is shown as is. Whether it can be deducted now or carried forward depends on passive-activity, basis and at-risk rules, and this tool never uses it to offset wages. Purchase price, principal payments and sale taxes are excluded.</p>
+        <p>Tables: <a href="https://www.irs.gov/irb/2025-45_IRB">IRS 2026</a> · <a href="https://www.ssa.gov/oact/cola/cbb.html">SSA</a> · <a href="https://www.irs.gov/publications/p527">Rental rules</a></p>
+      </details>
+      <p>Illustrative educational model. Not a cost-seg study, not tax advice. Work with a CPA or EA for real numbers.</p>
+    </footer>
+    <noscript>Enable JavaScript to calculate your results.</noscript>
+  </main>
+</body>
+</html>

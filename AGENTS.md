@@ -750,8 +750,16 @@ npm run start
 
 - Safe manual production deploy command:
   `vercel --prod`
-- Run manual deploys only from this repo when `.vercel/project.json` is present and correct.
+- Run manual deploys from this repo when `.vercel/project.json` is present and correct, except for the temporary release-folder workflow below when GitHub deployment is blocked by commit-author membership.
 - After deploy, verify the production URL on `https://www.legacyinvestingshow.com`, not just a preview URL.
+
+## Vercel Production Deploys
+
+When a GitHub-triggered Vercel deployment is blocked because the commit author is not linked to the Vercel team, deploy manually from a fresh temporary **non-Git** release folder containing only the intended production files. Link that folder explicitly with `vercel link --yes --scope legacy-investing-show --project <project>`, then deploy it with `vercel deploy --prod --yes --scope legacy-investing-show --cwd <release-folder>`.
+
+Before reporting success, inspect the public alias with `vercel inspect <public-alias> --format=json --scope legacy-investing-show`; require `readyState: READY` and confirm the alias resolves to the new deployment. Delete the temporary release folder afterward.
+
+For this website, replace `<project>` with `legacyinvestingshow`.
 
 ### Blog URL Pattern
 

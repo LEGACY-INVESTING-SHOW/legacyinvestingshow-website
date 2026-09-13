@@ -1,0 +1,20 @@
+{
+  "deploymentId": "dpl_Gsarg4iZwTAqTRV1Pg7KrrmJ69nB",
+  "readyState": "READY",
+  "modelTests": 7,
+  "fullBuild": "passed in isolated copy, CI calculator-import fallback",
+  "browserChecks": [
+    {
+      "preset": "original",
+      "noLogin": true,
+      "jsErrors": [],
+      "passed": true
+    },
+    {
+      "preset": "updated",
+      "noLogin": true,
+      "jsErrors": [],
+      "passed": true
+    }
+  ]
+}
