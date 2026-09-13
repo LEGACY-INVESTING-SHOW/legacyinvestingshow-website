@@ -137,6 +137,14 @@ faq:
 toc: true
 tocDepth: 3
 relatedPosts:
+  - slug: w2-tax-strategies-after-maxing-401k-and-hsa
+    title: >-
+      You Maxed Your 401k and HSA. Here Is What Is Actually Left for W-2 Earners
+      at $300K+ (2026)
+  - slug: cut-taxes-w2-300k-without-starting-a-business
+    title: >-
+      How to Cut Taxes as a W-2 Earner Making $300K Without Starting a Business
+      (2026)
   - slug: best-tax-deductions-2025
     title: 'Best Tax Deductions 2025: Complete 2026 Guide to Lower Your Tax Bill'
   - slug: best-tax-deductions-for-high-income-earners

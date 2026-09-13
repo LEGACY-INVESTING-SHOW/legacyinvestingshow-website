@@ -110,6 +110,14 @@ faq:
       term life insurance as basic protection layers, especially once assets and
       income are significant.
 relatedPosts:
+  - slug: w2-tax-strategies-after-maxing-401k-and-hsa
+    title: >-
+      You Maxed Your 401k and HSA. Here Is What Is Actually Left for W-2 Earners
+      at $300K+ (2026)
+  - slug: cut-taxes-w2-300k-without-starting-a-business
+    title: >-
+      How to Cut Taxes as a W-2 Earner Making $300K Without Starting a Business
+      (2026)
   - slug: why-150k-year-feels-broke
     title: 'Why $150K/Year Feels Broke: The Tax Math Nobody Shows You'
   - slug: build-10-million-10-years
