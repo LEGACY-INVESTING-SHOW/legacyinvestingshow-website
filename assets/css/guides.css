@@ -1,1909 +1,389 @@
 /* ==========================================================================
-   guides.css — Read register for hubs, guides, compare, topics, markets.
-   Loaded after styles.css by every generated guide page and by the frozen
-   long-form pages swept by scripts/sweep-frozen-guides.js. Plain CSS only:
-   palette, type and shell come from styles.css (:root tokens, .container-custom,
-   .site-header, .site-footer).
+   GUIDES — the guide-specific layer over the FIELD GUIDE v3 kit
+   --------------------------------------------------------------------------
+   Loaded by /tax-strategies, /retirement, /compare, /topics, /markets and
+   /renters-insurance on top of styles.css. The kit in styles.css owns the
+   tokens, the type scale, buttons, tables, .toc, .callout, .big, .words,
+   .steps, .do, .cta, .list-rows and .faq. This file owns only three things:
+
+     1. the single reading column these pages run in,
+     2. the section names the 41 frozen long-form guides still use,
+     3. the handful of legacy class names left inside their prose.
+
+   Nothing here introduces a card, a panel, a band or a shadow.
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
    1. Page frame
    -------------------------------------------------------------------------- */
 
-body {
-    background: var(--white);
-}
-
 .guide-page {
-    background: var(--white);
-}
-
-.container,
-.guide-container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 80rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-}
-
-@media (min-width: 768px) {
-    .container,
-    .guide-container {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-}
-
-.guide-measure {
-    max-width: 72ch;
-}
-
-.guide-section {
-    padding: 3rem 0;
-}
-
-.guide-section--tight {
-    padding: 1.75rem 0 3rem;
-}
-
-.guide-section--alt {
-    background: var(--cream);
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-}
-
-/* Frozen-page section wrappers keep their old names. */
-.content-section,
-.strategies-section,
-.personas-section,
-.persona-guide,
-.persona-faq,
-.library-section,
-.resource-main .section {
-    padding: 2.5rem 0;
-}
-
-.resource-main {
-    padding-top: 0;
-}
-
-/* --------------------------------------------------------------------------
-   2. Breadcrumbs
-   -------------------------------------------------------------------------- */
-
-.breadcrumb,
-ol.breadcrumb {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.5rem;
-    list-style: none;
-    margin: 0;
-    padding: 1.5rem 0 0;
-    font-size: 0.875rem;
-    color: var(--text-muted);
-}
-
-.breadcrumb a,
-.breadcrumb__link {
-    color: var(--text-secondary);
-    text-decoration: none;
-}
-
-.breadcrumb a:hover,
-.breadcrumb__link:hover {
-    color: var(--text-primary);
-    text-decoration: underline;
-    text-underline-offset: 0.15em;
-}
-
-.breadcrumb__item::after {
-    content: "/";
-    margin-left: 0.5rem;
-    color: var(--text-light);
-}
-
-.breadcrumb__item:last-child::after {
-    content: none;
-}
-
-.breadcrumb__current {
-    color: var(--text-muted);
-}
-
-.breadcrumb span.sep,
-.breadcrumb > span {
-    color: var(--text-light);
-}
-
-/* --------------------------------------------------------------------------
-   3. Hero
-   -------------------------------------------------------------------------- */
-
-.guide-hero,
-.strategy-hero,
-.persona-hero,
-.tax-hero,
-.compare-hero,
-.library-hero,
-.resource-hero {
-    background: var(--white);
-    border-bottom: 1px solid var(--border);
-    padding: 1.5rem 0 2.5rem;
-    text-align: left;
-}
-
-.guide-hero__title,
-.strategy-title,
-.persona-hero__title,
-.tax-hero__title,
-.compare-title,
-.library-hero h1,
-.hero-title {
-    font-family: "DM Serif Display", Georgia, serif;
-    font-size: clamp(2.125rem, 4.5vw, 3.25rem);
-    font-weight: 400;
-    line-height: 1.08;
-    letter-spacing: -0.02em;
-    color: var(--text-primary);
-    text-wrap: balance;
-    max-width: 24ch;
-    margin: 0 0 1rem;
-}
-
-.guide-deck,
-.strategy-subtitle,
-.persona-hero__subtitle,
-.tax-hero__subtitle,
-.compare-subtitle,
-.library-hero p,
-.hero-copy {
-    max-width: 68ch;
-    margin: 0 0 0.75rem;
-    color: var(--text-secondary);
-    font-size: 1.0625rem;
-    line-height: 1.7;
-}
-
-.guide-deck a,
-.hero-copy a {
-    color: var(--navy);
-    text-decoration: underline;
-    text-decoration-color: var(--gold);
-    text-decoration-thickness: 1px;
-    text-underline-offset: 0.15em;
-    font-weight: 500;
-}
-
-.guide-deck a:hover,
-.hero-copy a:hover {
-    text-decoration-color: var(--navy);
-}
-
-.guide-hero__meta,
-.irs-reference {
-    display: block;
-    margin-top: 1.25rem;
-    font-size: 0.875rem;
-    color: var(--text-muted);
-}
-
-.irs-reference svg {
-    display: none;
-}
-
-/* Chrome removed by the sweep; neutralised here so any straggler is invisible. */
-.strategy-badge,
-.persona-hero__badge,
-.compare-badge,
-.library-hero__eyebrow,
-.eyebrow,
-.library-card__eyebrow,
-.snapshot-card__eyebrow,
-.sidebar-card__eyebrow,
-.stack-card__index,
-.how-step__num,
-.persona-guide__number,
-.compare-anchor-nav,
-.meta-pill,
-.reading-progress {
-    display: none !important;
-}
-
-/* --------------------------------------------------------------------------
-   4. Prose
-   -------------------------------------------------------------------------- */
-
-.prose-content,
-.guide-prose,
-.minimal-content,
-.persona-guide__intro,
-.compare-prose {
-    max-width: 72ch;
-    color: var(--text-secondary);
-    font-size: 1.0625rem;
-    line-height: 1.75;
-    background: none;
-    border: 0;
-    box-shadow: none;
-    padding: 0;
-    border-radius: 0;
-}
-
-.prose-content h2,
-.guide-prose h2,
-.minimal-content h2,
-.guide-h2 {
-    font-family: "DM Serif Display", Georgia, serif;
-    font-size: clamp(1.625rem, 3vw, 2.125rem);
-    font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-    color: var(--text-primary);
-    text-wrap: balance;
-    margin: 3rem 0 1rem;
-}
-
-.prose-content h3,
-.guide-prose h3,
-.minimal-content h3 {
-    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
-    font-size: 1.375rem;
-    font-weight: 600;
-    line-height: 1.3;
-    letter-spacing: -0.01em;
-    color: var(--text-primary);
-    margin: 2.25rem 0 0.75rem;
-}
-
-.prose-content h4,
-.guide-prose h4,
-.minimal-content h4 {
-    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
-    font-size: 1.125rem;
-    font-weight: 600;
-    color: var(--text-primary);
-    margin: 1.75rem 0 0.5rem;
-}
-
-.prose-content p,
-.guide-prose p,
-.minimal-content p {
-    margin: 0 0 1.15rem;
-}
-
-.prose-content ul,
-.guide-prose ul,
-.minimal-content ul,
-.checklist,
-.bullet-list {
-    list-style: disc;
-}
-
-.prose-content ol,
-.guide-prose ol,
-.minimal-content ol {
-    list-style: decimal;
-}
-
-.prose-content ul,
-.prose-content ol,
-.guide-prose ul,
-.guide-prose ol,
-.minimal-content ul,
-.minimal-content ol {
-    margin: 0 0 1.25rem;
-    padding-left: 1.35rem;
-}
-
-.prose-content li::marker,
-.guide-prose li::marker,
-.minimal-content li::marker {
-    color: var(--text-light);
-}
-
-.prose-content li,
-.guide-prose li,
-.minimal-content li {
-    margin-bottom: 0.55rem;
-}
-
-.prose-content strong,
-.guide-prose strong {
-    color: var(--text-primary);
-    font-weight: 600;
-}
-
-.prose-content a,
-.guide-prose a,
-.minimal-content a,
-.internal-link,
-.inline-link,
-.stack-card__link {
-    color: var(--navy);
-    text-decoration: underline;
-    text-decoration-color: var(--gold);
-    text-decoration-thickness: 1px;
-    text-underline-offset: 0.15em;
-    font-weight: 500;
-}
-
-.prose-content a:hover,
-.guide-prose a:hover,
-.minimal-content a:hover,
-.internal-link:hover,
-.inline-link:hover {
-    text-decoration-color: var(--navy);
-}
-
-.guide-lead {
-    font-size: 1.1875rem;
-    line-height: 1.65;
-    color: var(--text-secondary);
-}
-
-/* --------------------------------------------------------------------------
-   5. Single column: the old 2fr/1fr rails collapse to one reading column
-   -------------------------------------------------------------------------- */
-
-.content-grid,
-.compare-hero__grid,
-.library-hero__grid,
-.hero-grid,
-.section-grid,
-.split-panels,
-.snapshot-grid,
-.card-grid,
-.faq-grid,
-.how-it-works,
-.strategies-grid,
-.personas-grid,
-.persona-guide__list,
-.persona-faq__grid,
-.library-grid {
-    display: block;
-}
-
-.compare-hero__panel,
-.library-hero__panel,
-.hero-panel,
-.snapshot-card,
-.panel,
-.how-step,
-.info-card,
-.stack-card,
-.faq-card,
-.surface,
-.library-card,
-.strategy-card,
-.persona-card {
-    background: none;
-    border: 0;
-    border-radius: 0;
-    box-shadow: none;
-    color: inherit;
-    padding: 0;
-}
-
-.split-panels > .panel + .panel,
-.snapshot-grid > .snapshot-card + .snapshot-card {
-    margin-top: 1.25rem;
-}
-
-/* --------------------------------------------------------------------------
-   6. The unboxed rail (former sidebar cards)
-   -------------------------------------------------------------------------- */
-
-.sidebar,
-.guide-rail {
-    display: block;
-    position: static;
-    max-width: 72ch;
-    margin: 3rem 0 0;
-    padding-top: 1.75rem;
-    border-top: 1px solid var(--border);
-}
-
-.sidebar-card,
-.guide-rail__block {
-    background: none !important;
-    border: 0;
-    border-radius: 0;
-    box-shadow: none;
-    padding: 0;
-    margin: 0 0 2rem;
-    color: var(--text-secondary);
-}
-
-.sidebar-card:last-child,
-.guide-rail__block:last-child {
-    margin-bottom: 0;
-}
-
-.sidebar-card__title,
-.guide-rail__title {
-    font-size: 1.0625rem;
-    font-weight: 600;
-    color: var(--text-primary);
-    margin: 0 0 0.75rem;
-}
-
-.sidebar-card__body {
-    margin: 0;
-    color: var(--text-secondary);
-    font-size: 1rem;
-    line-height: 1.7;
-}
-
-ul.sidebar-list,
-ul.benefits-list,
-ul.related-strategies,
-ul.guide-linklist,
-.sidebar-list,
-.benefits-list,
-.related-strategies,
-.guide-linklist {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.sidebar-list li,
-.benefits-list li,
-.related-strategies li,
-.guide-linklist li {
-    display: block;
-    margin: 0;
-    padding: 0.6rem 0;
-    border-top: 1px solid var(--border-light);
-    font-size: 1rem;
-    line-height: 1.6;
-    color: var(--text-secondary);
-}
-
-.sidebar-list li:first-child,
-.benefits-list li:first-child,
-.related-strategies li:first-child,
-.guide-linklist li:first-child {
-    border-top: 0;
-}
-
-.benefits-list svg,
-.related-strategies svg {
-    display: none;
-}
-
-.sidebar-list a,
-.related-strategies a,
-.guide-linklist a {
-    display: inline;
-    padding: 0;
-    background: none;
-    color: var(--navy);
-    font-size: inherit;
-    text-decoration: underline;
-    text-decoration-color: var(--gold);
-    text-underline-offset: 0.15em;
-}
-
-.sidebar-list a:hover,
-.related-strategies a:hover,
-.guide-linklist a:hover {
-    background: none;
-    text-decoration-color: var(--navy);
-}
-
-/* --------------------------------------------------------------------------
-   7. Definition lists (at a glance, FAQ, key facts)
-   -------------------------------------------------------------------------- */
-
-.guide-dl {
-    margin: 1.75rem 0;
-    max-width: 60ch;
-    border-top: 1px solid var(--border);
-}
-
-.guide-dl > div {
-    display: grid;
-    grid-template-columns: minmax(9rem, 15rem) 1fr;
-    gap: 0.5rem 1.5rem;
-    padding: 0.7rem 0;
-    border-bottom: 1px solid var(--border-light);
-}
-
-.guide-dl dt {
-    margin: 0;
-    color: var(--guide-muted, #5b6b84);
-    font-size: 0.9375rem;
-}
-
-.guide-dl dd {
-    margin: 0;
-    color: var(--text-primary);
-    font-size: 1rem;
-    font-weight: 500;
-    font-variant-numeric: tabular-nums;
-}
-
-@media (max-width: 599px) {
-    .guide-dl > div {
-        grid-template-columns: 1fr;
-        gap: 0.15rem;
-    }
-}
-
-.guide-figure {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: 0.25rem 0.75rem;
-    margin: 0 0 0.5rem;
-    color: var(--text-secondary);
-    line-height: 1.5;
-}
-
-.guide-figure span {
-    color: var(--text-muted);
-    font-size: 0.9375rem;
-}
-
-.guide-figure strong {
-    color: var(--text-primary);
-    font-size: 1.125rem;
-    font-weight: 600;
-    font-variant-numeric: tabular-nums;
-}
-
-.persona-strategy {
-    padding: 1.75rem 0 0.5rem;
-    border-top: 1px solid var(--border-light);
-}
-
-.persona-strategy:first-of-type {
-    border-top: 1px solid var(--border);
-}
-
-.persona-strategy h3 {
-    margin-top: 0.5rem;
-}
-
-.guide-faq {
-    margin: 1.5rem 0 0;
-    max-width: 72ch;
-    border-top: 1px solid var(--border);
-}
-
-.guide-faq dt {
-    margin: 0;
-    padding: 1.5rem 0 0.5rem;
-    font-size: 1.125rem;
-    font-weight: 600;
-    color: var(--text-primary);
-}
-
-.guide-faq dd {
-    margin: 0;
-    padding: 0 0 1.5rem;
-    border-bottom: 1px solid var(--border-light);
-    color: var(--text-secondary);
-    font-size: 1.0625rem;
-    line-height: 1.7;
-}
-
-/* --------------------------------------------------------------------------
-   8. Link rows (hub listings)
-   -------------------------------------------------------------------------- */
-
-ul.guide-rows,
-.guide-rows {
-    margin: 1.5rem 0 0;
-    padding: 0;
-    list-style: none;
-    border-top: 1px solid var(--border);
-    max-width: 78ch;
-}
-
-.guide-rows > li {
-    padding: 1.25rem 0;
-    border-bottom: 1px solid var(--border-light);
-}
-
-.guide-rows h3,
-.guide-row__title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    line-height: 1.35;
-    margin: 0 0 0.35rem;
-    color: var(--text-primary);
-}
-
-.guide-rows h3 a,
-.guide-row__title a {
-    color: var(--text-primary);
-    text-decoration: none;
-}
-
-.guide-rows h3 a:hover,
-.guide-row__title a:hover {
-    text-decoration: underline;
-    text-decoration-color: var(--gold);
-    text-underline-offset: 0.15em;
-}
-
-.guide-rows p {
-    margin: 0 0 0.3rem;
-    color: var(--text-secondary);
-    font-size: 1rem;
-    line-height: 1.65;
-    max-width: 70ch;
-}
-
-.guide-row__note {
-    margin: 0;
-    color: var(--guide-muted, #5b6b84);
-    font-size: 0.9375rem;
-    line-height: 1.6;
-}
-
-.guide-row__date {
-    display: block;
-    margin-top: 0.3rem;
-    color: var(--guide-muted, #5b6b84);
-    font-size: 0.875rem;
-    font-variant-numeric: tabular-nums;
-}
-
-/* Frozen-page and generator list blocks reduced to the same rows. */
-.hub-list,
-.resource-list {
-    display: block;
-    margin: 1.5rem 0 0;
-    border-top: 1px solid var(--border);
-    max-width: 78ch;
-}
-
-.hub-list a,
-.resource-list a {
-    display: block;
-    padding: 1.1rem 0;
-    border-bottom: 1px solid var(--border-light);
-    border-radius: 0;
-    border-left: 0;
-    border-right: 0;
-    border-top: 0;
-    background: none;
-    box-shadow: none;
-    color: var(--text-primary);
-    text-decoration: none;
-}
-
-.hub-list strong,
-.resource-list strong {
-    display: block;
-    margin-bottom: 0.25rem;
-    font-size: 1.1875rem;
-    font-weight: 600;
-}
-
-.hub-list a:hover strong,
-.resource-list a:hover strong {
-    text-decoration: underline;
-    text-decoration-color: var(--gold);
-    text-underline-offset: 0.15em;
-}
-
-.hub-list span,
-.resource-list span {
-    display: block;
-    color: var(--text-secondary);
-    font-size: 1rem;
-    line-height: 1.65;
-}
-
-/* --------------------------------------------------------------------------
-   9. Tables
-   -------------------------------------------------------------------------- */
-
-.table-scroll,
-.table-wrap,
-.table-wrapper {
-    overflow-x: auto;
-    margin: 1.75rem 0;
-    border: 0;
-    border-radius: 0;
-    background: none;
-    box-shadow: none;
-    -webkit-overflow-scrolling: touch;
-}
-
-.guide-table,
-.comparison-table,
-.compare-table,
-.calculation-table,
-.real-numbers-table,
-.prose-content table {
-    width: 100%;
-    border-collapse: collapse;
-    background: var(--white);
-    border: 0;
-    border-radius: 0;
-    box-shadow: none;
-    overflow: visible;
-    font-size: 0.9375rem;
-    font-variant-numeric: tabular-nums;
-    min-width: 34rem;
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-}
-
-.guide-table th,
-.calculation-table th,
-.real-numbers-table th {
-    background: var(--cream-dark);
-    color: var(--text-primary);
-    text-align: left;
-    vertical-align: bottom;
-    font-size: 0.8125rem;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: none;
-    padding: 0.75rem 0.9rem;
-    border-bottom: 1px solid var(--border);
-}
-
-.guide-table td,
-.calculation-table td,
-.real-numbers-table td,
-.prose-content table:not(.data-table) td {
-    padding: 0.75rem 0.9rem;
-    vertical-align: top;
-    border-bottom: 1px solid var(--border-light);
-    color: var(--text-secondary);
-    line-height: 1.6;
-}
-
-.guide-table tr:last-child td {
-    border-bottom: 0;
-}
-
-.guide-table tbody tr:nth-child(2n) > *,
-.data-table tbody tr.alt > * {
-    background: var(--cream);
-}
-
-.guide-table tbody th {
-    background: none;
-    font-weight: 600;
-    color: var(--text-primary);
-    text-transform: none;
-    letter-spacing: 0;
-    font-size: 0.9375rem;
-    border-bottom: 1px solid var(--border-light);
-}
-
-.guide-table td strong,
-.data-table td strong {
-    color: var(--text-primary);
-}
-
-.guide-table--plain {
-    min-width: 0;
-}
-
-/* Six-column scorecards stack into labelled rows on a phone. */
-@media (max-width: 719px) {
-    .compare-table {
-        min-width: 0;
-        border-top: 0;
-    }
-
-    .compare-table thead {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-    }
-
-    .compare-table,
-    .compare-table tbody,
-    .compare-table tr,
-    .compare-table td {
-        display: block;
-        width: 100%;
-    }
-
-    .compare-table tr {
-        padding: 0.75rem 0;
-        border-bottom: 1px solid var(--border);
-    }
-
-    .compare-table tr.alt > * {
-        background: none;
-    }
-
-    .compare-table td {
-        border-bottom: 0;
-        padding: 0.35rem 0;
-    }
-
-    .compare-table td::before {
-        content: attr(data-label);
-        display: block;
-        margin-bottom: 0.15rem;
-        color: var(--text-muted);
-        font-size: 0.8125rem;
-    }
-}
-
-/* --------------------------------------------------------------------------
-   10. Panels that stay (a genuinely distinct object only)
-   -------------------------------------------------------------------------- */
-
-.guide-note,
-.highlight-box,
-.bottom-line-box,
-.callout-box,
-.info-box,
-.pro-tip,
-.warning-box,
-.expert-strategy-box,
-.quick-summary,
-.step-box,
-.mistake-card,
-.comparison-box,
-.tool-item,
-.tax-state-card,
-.timeline-step {
-    display: block;
-    background: none;
-    border: 0;
-    border-left: 0;
-    border-radius: 0;
-    padding: 0;
-    margin: 0 0 1.15rem;
-    color: var(--text-secondary);
-    box-shadow: none;
-}
-
-.guide-note strong,
-.highlight-box strong,
-.bottom-line-box strong,
-.callout-box strong {
-    color: var(--text-primary);
-}
-
-.calculation-box,
-.real-numbers-box,
-.example-box,
-.source-note {
-    background: var(--cream);
-    border: 1px solid var(--border);
-    border-left: 1px solid var(--border);
-    border-radius: 0.5rem;
-    padding: 1.25rem 1.35rem;
-    margin: 1.75rem 0;
-    color: var(--text-secondary);
-    box-shadow: none;
-}
-
-.calculation-box h4,
-.real-numbers-box h4,
-.example-box h4,
-.calculation-box__title,
-.source-note h2,
-.source-note h3 {
-    margin: 0 0 0.6rem;
-    font-size: 1.0625rem;
-    font-weight: 600;
-    color: var(--text-primary);
-}
-
-.source-note ul {
-    margin: 0;
-    padding-left: 1.2rem;
-}
-
-.source-note li {
-    margin-bottom: 0.5rem;
-}
-
-.calculation-line {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 0.35rem 0;
-    border-bottom: 1px solid var(--border-light);
-    font-variant-numeric: tabular-nums;
-}
-
-.calculation-line--total {
-    border-bottom: 0;
-    font-weight: 600;
-    color: var(--text-primary);
-}
-
-/* --------------------------------------------------------------------------
-   11. Table of contents blocks on frozen pages
-   -------------------------------------------------------------------------- */
-
-.toc,
-.toc-section,
-.toc-nav,
-.table-of-contents {
-    margin: 2rem 0;
-    padding: 1.25rem 0;
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-    background: none;
-    border-radius: 0;
-}
-
-.toc__title,
-.toc-section__title,
-.toc-nav__title,
-.toc-section h3,
-.table-of-contents h3 {
-    margin: 0 0 0.65rem;
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--text-primary);
-}
-
-.toc__list,
-.toc-section ul,
-.toc-section ol,
-.toc-nav ol,
-.table-of-contents ul {
-    margin: 0;
-    padding-left: 1.2rem;
-    columns: 2;
-    column-gap: 2rem;
-}
-
-.toc__item,
-.toc-section li,
-.toc-nav li,
-.table-of-contents li {
-    margin-bottom: 0.4rem;
-    break-inside: avoid;
-    font-size: 0.9375rem;
-}
-
-.toc__link,
-.toc-section a,
-.toc-nav a,
-.table-of-contents a {
-    color: var(--text-secondary);
-    text-decoration: none;
-}
-
-.toc__link:hover,
-.toc-section a:hover,
-.toc-nav a:hover,
-.table-of-contents a:hover {
-    color: var(--navy);
-    text-decoration: underline;
-    text-underline-offset: 0.15em;
-}
-
-@media (max-width: 599px) {
-    .toc__list,
-    .toc-section ul,
-    .toc-section ol,
-    .toc-nav ol,
-    .table-of-contents ul {
-        columns: 1;
-    }
-}
-
-/* --------------------------------------------------------------------------
-   12. FAQ accordion (frozen pages and compare pages)
-   -------------------------------------------------------------------------- */
-
-.faq-section {
-    background: none;
-    padding: 2.5rem 0 3rem;
-    border-top: 1px solid var(--border);
-}
-
-.faq-section__title {
-    font-family: "DM Serif Display", Georgia, serif;
-    font-size: clamp(1.625rem, 3vw, 2.125rem);
-    font-weight: 400;
-    letter-spacing: -0.02em;
-    color: var(--text-primary);
-    text-align: left;
-    margin: 0 0 1rem;
-}
-
-.faq-list {
-    max-width: 72ch;
-    margin: 0;
-    padding-top: 0.5rem;
-    border-top: 1px solid var(--border);
-}
-
-.faq-item:last-child {
-    border-bottom: 0;
-}
-
-.faq-item {
-    background: none;
-    border: 0;
-    border-bottom: 1px solid var(--border-light);
-    border-radius: 0;
-    margin: 0;
-    box-shadow: none;
-    overflow: visible;
-}
-
-/* A few frozen pages reuse .faq-item for a plain takeaway line. */
-.faq-item > p {
-    margin: 0;
-    padding: 0.9rem 0;
-    color: var(--text-secondary);
-    line-height: 1.7;
-}
-
-.faq-question,
-.faq-toggle {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 1rem;
-    padding: 1.1rem 0;
-    background: none;
-    border: 0;
-    cursor: pointer;
-    text-align: left;
-    font-family: inherit;
-    font-size: 1.0625rem;
-    font-weight: 600;
-    color: var(--text-primary);
-}
-
-.faq-question:hover,
-.faq-toggle:hover {
-    background: none;
-    color: var(--navy);
-}
-
-.faq-chevron {
-    flex: none;
-    width: 1.1rem;
-    height: 1.1rem;
-    color: var(--text-muted);
-    transition: transform 0.25s var(--ease-smooth);
-}
-
-.faq-question[aria-expanded="true"] .faq-chevron,
-.faq-toggle[aria-expanded="true"] .faq-chevron {
-    transform: rotate(180deg);
-}
-
-.faq-answer {
-    display: none;
-    padding: 0 0 1.25rem;
-    color: var(--text-secondary);
-    font-size: 1.0625rem;
-    line-height: 1.7;
-    max-width: 70ch;
-}
-
-.faq-answer--open {
-    display: block;
-}
-
-.faq-answer p {
-    margin: 0;
-}
-
-/* Native <details> FAQs on a few frozen guides. */
-main details[class] {
-    background: none;
-    border: 0;
-    border-bottom: 1px solid var(--border-light);
-    border-radius: 0;
-    box-shadow: none;
-    padding: 0.35rem 0;
-    max-width: 72ch;
-}
-
-main details[class] summary {
-    padding: 0.9rem 0;
-    font-size: 1.0625rem;
-    font-weight: 600;
-    color: var(--text-primary);
-    list-style: none;
-}
-
-main details[class] summary::-webkit-details-marker {
-    display: none;
-}
-
-main details[class][open] summary .faq-chevron {
-    transform: rotate(180deg);
-}
-
-main details[class] > p {
-    max-width: 70ch;
-    color: var(--text-secondary);
-    line-height: 1.7;
-}
-
-/* --------------------------------------------------------------------------
-   13. One navy CTA band per page
-   -------------------------------------------------------------------------- */
-
-.cta-card,
-.cta-box {
-    background: var(--navy);
-    border-radius: 0;
-    padding: 3rem 0;
-    color: #e2e8f0;
-    box-shadow: none;
-    text-align: left;
-}
-
-.cta-section {
-    padding: 0;
-    text-align: left;
-}
-
-.cta-band__inner {
-    max-width: 60ch;
-}
-
-/* The CTA band already closes the page; the footer follows it directly. */
-body:has(.cta-band) .site-footer {
-    margin-top: 0;
-}
-
-.cta-card__title,
-.cta-box h2 {
-    font-family: "DM Serif Display", Georgia, serif;
-    font-size: clamp(1.5rem, 2.8vw, 2rem);
-    font-weight: 400;
-    letter-spacing: -0.02em;
-    color: #ffffff;
-    margin: 0 0 0.75rem;
-}
-
-.cta-card__text,
-.cta-box p {
-    margin: 0 0 1.5rem;
-    max-width: 60ch;
-    color: #cbd5e1;
-    font-size: 1.0625rem;
-    line-height: 1.7;
-}
-
-.cta-card__button,
-.cta-button,
-.ghost-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.8rem 1.5rem;
-    background: var(--gold);
-    color: var(--navy);
-    border: 0;
-    border-radius: 0.375rem;
-    font-weight: 600;
-    font-size: 1rem;
-    text-decoration: none;
-    transition: background 0.2s var(--ease-smooth);
-}
-
-.cta-card__button:hover,
-.cta-button:hover,
-.ghost-button:hover {
-    background: var(--gold-light);
-    transform: none;
-}
-
-.ghost-button {
-    background: none;
-    color: #e2e8f0;
-    border: 1px solid rgba(226, 232, 240, 0.35);
-}
-
-.ghost-button:hover {
-    background: rgba(226, 232, 240, 0.08);
-}
-
-.cta-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.85rem;
-    margin-top: 0;
-}
-
-/* --------------------------------------------------------------------------
-   14. Frozen article-header pages (retirement, a few strategy guides)
-   -------------------------------------------------------------------------- */
-
-.minimal-article {
-    max-width: 46rem;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-}
-
-.minimal-article-header {
-    padding: 1.5rem 0 2rem;
-    border-bottom: 1px solid var(--border);
-    margin-bottom: 2.5rem;
-}
-
-.minimal-article-title {
-    font-family: "DM Serif Display", Georgia, serif;
-    font-size: clamp(2rem, 4.2vw, 3rem);
-    font-weight: 400;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    color: var(--text-primary);
-    text-wrap: balance;
-    margin: 0 0 1rem;
-}
-
-.minimal-article-meta,
-.minimal-article-author {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.6rem;
-    color: var(--text-muted);
-    font-size: 0.875rem;
-}
-
-.minimal-article-author {
-    margin-top: 1rem;
-    color: var(--text-secondary);
-}
-
-.author-avatar {
-    border-radius: 9999px;
-}
-
-.meta-dot {
-    width: 3px;
-    height: 3px;
-    border-radius: 9999px;
-    background: var(--text-light);
-}
-
-.author-bio,
-.related-topics {
-    max-width: 72ch;
-    margin: 2.5rem 0 0;
-    padding-top: 1.75rem;
-    border-top: 1px solid var(--border);
-    color: var(--text-secondary);
-    line-height: 1.7;
-}
-
-/* --------------------------------------------------------------------------
-   15. Compare pages
-   -------------------------------------------------------------------------- */
-
-.compare-verdict {
-    margin: 1.5rem 0 0;
-    max-width: 60ch;
-    border-top: 1px solid var(--border);
-}
-
-.compare-verdict > div {
-    display: grid;
-    grid-template-columns: minmax(6rem, 10rem) 1fr;
-    gap: 0.5rem 1.5rem;
-    padding: 0.7rem 0;
-    border-bottom: 1px solid var(--border-light);
-}
-
-.compare-verdict dt {
-    color: var(--guide-muted, #5b6b84);
-    font-size: 0.9375rem;
-}
-
-.compare-verdict dd {
-    margin: 0;
-    color: var(--text-primary);
-    font-weight: 500;
-}
-
-@media (max-width: 599px) {
-    .compare-verdict > div {
-        grid-template-columns: 1fr;
-        gap: 0.15rem;
-    }
-}
-
-.compare-note {
-    background: none;
-    border: 0;
-    border-left: 0;
-    border-radius: 0;
-    padding: 0;
-    margin: 0 0 1.15rem;
-    color: var(--text-secondary);
-}
-
-.compare-outline-nav {
-    margin: 1.5rem 0 2.5rem;
-    padding: 1.25rem 0;
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-}
-
-.compare-outline-nav .guide-rail__title {
-    margin-bottom: 0.65rem;
-    font-size: 1rem;
-}
-
-ul.compare-outline,
-.compare-outline {
-    margin: 0 0 1.5rem;
-    padding: 0;
-    list-style: none;
-    columns: 2;
-    column-gap: 2rem;
-}
-
-.compare-outline li {
-    margin-bottom: 0.45rem;
-    break-inside: avoid;
-    font-size: 0.9375rem;
-}
-
-@media (max-width: 599px) {
-    .compare-outline {
-        columns: 1;
-    }
-}
-
-/* --------------------------------------------------------------------------
-   16. Markets, renters insurance, topics
-   -------------------------------------------------------------------------- */
-
-.section-title {
-    font-family: "DM Serif Display", Georgia, serif;
-    font-size: clamp(1.625rem, 3vw, 2.125rem);
-    font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-    color: var(--text-primary);
-    text-wrap: balance;
-    margin: 0 0 1rem;
-}
-
-.section-copy,
-.surface p,
-.info-card p,
-.stack-card p,
-.faq-card p {
-    color: var(--text-secondary);
-    font-size: 1.0625rem;
-    line-height: 1.75;
-    max-width: 72ch;
-    margin: 0 0 1.15rem;
-}
-
-.checklist,
-.bullet-list {
-    margin: 0 0 1.25rem;
-    padding-left: 1.35rem;
-    color: var(--text-secondary);
-    line-height: 1.7;
-    max-width: 72ch;
-}
-
-.checklist li,
-.bullet-list li {
-    margin-bottom: 0.55rem;
-}
-
-.guide-columns {
-    display: grid;
-    gap: 2.5rem;
-    align-items: start;
-}
-
-@media (min-width: 900px) {
-    .guide-columns {
-        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-        gap: 3rem;
-    }
-}
-
-/* --------------------------------------------------------------------------
-   17. Motion, focus, and print
-   -------------------------------------------------------------------------- */
-
-@media (prefers-reduced-motion: reduce) {
-    .faq-chevron {
-        transition: none;
-    }
+    background: var(--paper);
+    color: var(--ink);
 }
 
 .guide-skip {
     position: absolute;
-    left: -9999px;
-}
-
-.guide-skip:focus {
-    left: 1rem;
-    top: 1rem;
-    z-index: 60;
-    background: var(--navy);
-    color: #ffffff;
-    padding: 0.75rem 1rem;
-    border-radius: 0.375rem;
-}
-
-/* ==========================================================================
-   ELEVATION — guide-specific composition on top of the shared kit in
-   styles.css (.opener, .figure, .band, .sheet, .marginalia, .contents,
-   .dl-terms, .data-table, .steps, .pull-quote, .photo, .section__head).
-   Only what is specific to guide pages lives here.
-   ========================================================================== */
-
-/* Margin notes sit beside the prose, not stretched to its height. */
-.marginalia,
-.opener {
-    align-items: start;
-}
-
-/* Muted text that still clears 4.5:1 on the cream surfaces. The frozen guides
-   have no body class, so this is declared on the root. */
-:root {
-    --guide-muted: #5b6b84;
-}
-
-/* The opener sits on the cream ground and closes with a hairline. */
-.guide-opener {
-    background: var(--cream);
-    border-bottom: 1px solid var(--border);
-    padding-top: 1.5rem;
-    padding-top: clamp(1.25rem, 2.5vw, 1.75rem);
-    padding-bottom: 3rem;
-    padding-bottom: clamp(2.5rem, 6vw, 4rem);
-}
-
-.guide-opener .breadcrumb {
-    padding: 0 0 clamp(1.5rem, 3vw, 2.25rem);
-}
-
-/* A short factual line under the lede: scope, source, or vintage. */
-.guide-opener__meta {
-    margin: 1.75rem 0 0;
-    padding-top: 1.25rem;
-    border-top: 1px solid var(--border);
-    max-width: 52ch;
-    color: var(--guide-muted, #5b6b84);
-    font-size: 0.9375rem;
-    line-height: 1.6;
-}
-
-/* Two or three of the page's own numbers, side by side. */
-.guide-figures {
-    display: grid;
-    gap: 2rem 3rem;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-    margin: 0;
-}
-
-.guide-figures .figure__value {
-    font-size: clamp(2.25rem, 3.6vw, 3.25rem);
-}
-
-/* Contents rail on the left, reading column on the right. */
-.guide-layout {
-    display: grid;
-    gap: clamp(2rem, 4vw, 3rem);
-    align-items: start;
-}
-
-@media (min-width: 1024px) {
-    .guide-layout {
-        grid-template-columns: minmax(0, 13rem) minmax(0, 1fr);
-        gap: clamp(2.5rem, 4vw, 4rem);
-    }
-}
-
-/* Margin notes: facts, sources and routing beside the prose. */
-.guide-aside {
-    display: grid;
-    gap: 2.25rem;
-    align-content: start;
-}
-
-.guide-aside__title {
-    margin: 0 0 0.875rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--gold);
-    font-size: 0.9375rem;
+    left: 50%;
+    top: -100%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    padding: 0.875rem 1.75rem;
+    border-radius: 999px;
+    background: var(--forest);
+    color: var(--paper);
     font-weight: 600;
-    color: var(--text-primary);
-}
-
-.guide-aside p {
-    margin: 0 0 0.75rem;
-    color: var(--text-secondary);
-    font-size: 0.9375rem;
-    line-height: 1.65;
-}
-
-.guide-aside .guide-dl {
-    margin: 0;
-    border-top: 0;
-}
-
-.guide-aside .guide-dl > div {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 0.15rem;
-    padding: 0.65rem 0;
-}
-
-.guide-aside .guide-dl dd {
-    font-size: 0.9375rem;
-}
-
-.guide-aside .dl-terms dt {
-    font-size: 1.1875rem;
-    margin-top: 1.5rem;
-}
-
-.guide-aside .dl-terms dd {
-    font-size: 0.9375rem;
-    line-height: 1.6;
-}
-
-.guide-aside .dl-terms a,
-.dl-terms a {
-    color: var(--text-primary);
-    text-decoration: underline;
-    text-decoration-color: var(--gold);
-    text-underline-offset: 0.15em;
-}
-
-.guide-aside .dl-terms a:hover,
-.dl-terms a:hover {
-    text-decoration-color: var(--navy);
-}
-
-/* No double spacing where a sheet's padding already opens the section. */
-.sheet > .guide-prose > :first-child,
-.sheet > .prose-content > :first-child,
-.marginalia__main > .guide-prose > :first-child,
-.guide-column > .guide-prose > :first-child {
-    margin-top: 0;
-}
-
-/* Prose keeps its measure inside a full-width sheet. */
-.sheet > .guide-prose,
-.sheet > .prose-content,
-.guide-sheet > .guide-prose,
-.guide-sheet > .prose-content {
-    max-width: 68ch;
-}
-
-/* Category blocks inside the strategy table. */
-.guide-group + .guide-group {
-    margin-top: clamp(2.5rem, 5vw, 3.5rem);
-}
-
-.guide-group__head {
-    display: grid;
-    gap: 0.4rem 2.5rem;
-    align-items: baseline;
-    margin-bottom: 1rem;
-    padding-top: 0.5rem;
-}
-
-@media (min-width: 900px) {
-    .guide-group__head {
-        grid-template-columns: minmax(0, 16rem) minmax(0, 1fr);
-    }
-}
-
-.guide-group__head h3 {
-    margin: 0;
-    font-family: "DM Serif Display", Georgia, serif;
-    font-size: 1.625rem;
-    font-weight: 400;
-    letter-spacing: -0.02em;
-    line-height: 1.15;
-    color: var(--text-primary);
-}
-
-.guide-group__head p {
-    margin: 0;
-    color: var(--guide-muted, #5b6b84);
-    font-size: 0.9375rem;
-    line-height: 1.6;
-    max-width: 58ch;
-}
-
-/* A strategy or guide entry: its figure on the left, the guide on the right. */
-.guide-entry {
-    display: grid;
-    gap: 1rem 2.5rem;
-    padding: clamp(1.75rem, 3vw, 2.5rem) 0;
-    border-top: 1px solid var(--border);
-}
-
-.guide-entry:last-of-type {
-    border-bottom: 1px solid var(--border);
-}
-
-@media (min-width: 768px) {
-    .guide-entry {
-        grid-template-columns: minmax(0, 12rem) minmax(0, 1fr);
-    }
-}
-
-.guide-entry .figure__value {
-    font-size: clamp(1.75rem, 2.4vw, 2.25rem);
-}
-
-.guide-entry .figure__label {
-    font-size: 0.9375rem;
-    font-weight: 400;
-    color: var(--text-secondary);
-}
-
-.guide-entry h3 {
-    margin: 0 0 0.6rem;
-    font-family: "DM Serif Display", Georgia, serif;
-    font-size: clamp(1.5rem, 2.2vw, 1.875rem);
-    font-weight: 400;
-    letter-spacing: -0.02em;
-    line-height: 1.2;
-}
-
-.guide-entry h3 a {
-    color: var(--text-primary);
     text-decoration: none;
 }
 
-.guide-entry h3 a:hover {
-    text-decoration: underline;
-    text-decoration-color: var(--gold);
-    text-underline-offset: 0.15em;
+.guide-skip:focus {
+    top: 0.75rem;
+    color: var(--paper);
 }
 
-.guide-entry p {
-    margin: 0 0 0.75rem;
-    color: var(--text-secondary);
-    line-height: 1.7;
-    max-width: 64ch;
+/* --------------------------------------------------------------------------
+   2. The reading column
+   The generated pages wrap their content in .col themselves. The frozen guides
+   keep their own section names, so the column is set on the container instead.
+   -------------------------------------------------------------------------- */
+
+.guide-page > nav.container-custom,
+.guide-opener > .container-custom,
+.content-section > .container-custom,
+.faq-section > .container-custom,
+.guide-close > .container-custom,
+.statistics-section > .container-custom,
+.guide-section > .container-custom {
+    max-width: 46rem;
 }
 
-.guide-entry__meta {
-    margin: 0;
-    color: var(--guide-muted, #5b6b84);
-    font-size: 0.9375rem;
+/* The strategy hub sets six tables side by side with prose, so it runs wider
+   than a prose column. Its tables stay at 44rem, inside that. */
+.guide-catalog {
+    max-width: 54rem;
 }
 
-/* Navy band: a figure and a sentence that explains it. */
-.guide-band__grid {
-    display: grid;
-    gap: 2rem 3.5rem;
-    align-items: start;
+.guide-page > nav.container-custom {
+    padding-top: 1.75rem;
 }
 
-@media (min-width: 900px) {
-    .guide-band__grid {
-        grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+/* --------------------------------------------------------------------------
+   3. Section rhythm for the frozen guides' own section names
+   -------------------------------------------------------------------------- */
+
+.guide-opener {
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.content-section,
+.faq-section,
+.guide-close,
+.guide-section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.guide-section--tight {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+@media (min-width: 700px) {
+    .content-section,
+    .faq-section,
+    .guide-close,
+    .guide-section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
 }
 
-.guide-band__lede {
-    max-width: 56ch;
-    margin: 0;
-    font-size: 1.0625rem;
-    line-height: 1.75;
+.guide-opener + .content-section {
+    padding-top: 0;
 }
 
-/* Data tables still need a scroll container on a phone. */
-.table-scroll > .data-table {
-    min-width: 34rem;
-}
-
-/* Row headers are content, not chrome: only the head row is navy. */
-.data-table tbody th {
-    background: var(--white);
-    color: var(--text-primary);
-    font-weight: 600;
-    font-size: 0.9375rem;
-    padding: 0.875rem 1.25rem;
-    text-align: left;
-    vertical-align: top;
-    border-bottom: 1px solid var(--border);
-    white-space: normal;
-}
-
-.data-table tbody tr:nth-child(2n) th {
-    background: var(--cream-dark);
-}
-
-.data-table tbody tr:last-child th {
-    border-bottom: 0;
-}
-
-.data-table tbody th a {
-    color: var(--text-primary);
-    text-decoration: underline;
-    text-decoration-color: var(--gold);
-    text-underline-offset: 0.15em;
-}
-
-/* Contents rail: a plain list on desktop, a disclosure on a phone. */
-.guide-contents ol {
-    counter-reset: none;
-}
-
-.guide-contents li {
-    border-bottom: 1px solid var(--border-light);
-}
-
-.guide-contents li:last-child {
-    border-bottom: 0;
-}
-
-.guide-contents a {
-    padding: 0.45rem 0;
-}
-
-/* A ranged or long value cannot run at full display size. */
-.figure--long .figure__value {
-    font-size: clamp(1.75rem, 2.8vw, 2.5rem);
-}
-
-.guide-column {
-    min-width: 0;
-}
-
-/* One quotation, in the guide's own words, to break the longest run of prose. */
-.guide-inset {
-    display: block;
-    margin: clamp(2.5rem, 5vw, 3.5rem) 0;
-    padding: clamp(1.75rem, 3.5vw, 2.75rem);
-    background: var(--navy);
-}
-
-.guide-inset .pull-quote p {
-    color: var(--cream-dark);
-    max-width: 44ch;
-}
-
-.guide-inset .pull-quote::before {
-    border-top-color: var(--gold);
-}
-
-/* The frozen guides keep their own section names; give them the rhythm. */
-.content-section {
-    padding-top: clamp(2.5rem, 5vw, 4rem);
-    padding-bottom: clamp(2.5rem, 5vw, 4rem);
-}
-
+/* One hairline between the article and the FAQ. The closing block draws no
+   rule of its own: the sources list already opens on one. */
 .faq-section {
-    background: var(--cream-dark);
-    border-top: 1px solid var(--border);
-    padding-top: 3.5rem;
-    padding-top: clamp(3rem, 6vw, 4.5rem);
-    padding-bottom: 3.5rem;
-    padding-bottom: clamp(3rem, 6vw, 4.5rem);
+    border-top: 1px solid var(--line);
 }
 
-.faq-section .faq-list {
-    margin-left: 0;
+.guide-close {
+    padding-top: 0;
 }
 
-/* The old sidebar block closes the article as a cream-dark strip of links. */
-.guide-rail {
-    margin-top: clamp(2.5rem, 5vw, 3.5rem);
-    padding-top: 2rem;
-    border-top: 2px solid var(--gold);
+/* --------------------------------------------------------------------------
+   4. Opener details
+   -------------------------------------------------------------------------- */
+
+.opener .words__label {
+    margin-top: 1.75rem;
 }
 
-@media (min-width: 768px) {
-    .guide-rail {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-        gap: 2rem 3rem;
-        align-items: start;
-    }
+.guide-opener__meta,
+.guide-deck + .meta {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--ink-faint);
+    margin: 0.75rem 0 0;
+    max-width: 60ch;
 }
 
-.guide-rail .sidebar-card {
+.guide-deck {
+    font-size: 1.125rem;
+    line-height: 1.45;
+    font-weight: 500;
+    color: var(--emerald);
+    margin: 0.75rem 0 0;
+    max-width: 56ch;
+}
+
+.strategy-title {
     margin: 0;
 }
 
-/* Tailwind ships a `.contents` display utility that dissolves the kit's
-   contents rail into its grid parent; keep the rail a block. */
-.guide-contents {
-    display: block;
+/* --------------------------------------------------------------------------
+   5. Prose additions the kit does not carry
+   -------------------------------------------------------------------------- */
+
+/* The one-line educational note that closes a guide. */
+.guide-note {
+    font-size: 0.8125rem;
+    line-height: 1.6;
+    color: var(--ink-faint);
+    margin: 2rem 0 0;
+    max-width: 68ch;
 }
 
-/* The number a worked example was driving at, beside the sentence that states it. */
-.guide-takeaway {
+/* What used to sit in a right-hand rail: who it suits, what to read next. */
+.guide-extras {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    max-width: 44rem;
+}
+
+.guide-extras h3 {
+    margin: 1.5rem 0 0.25rem;
+}
+
+.guide-extras > h3:first-child {
+    margin-top: 0;
+}
+
+.guide-extras ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.guide-extras li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 0.9375rem;
+    color: var(--ink-soft);
+}
+
+/* A worked example's running total: label left, figure right. */
+.ledger {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0.375rem 0;
+    font-size: 0.9375rem;
+    font-variant-numeric: tabular-nums;
+    border-bottom: 1px solid rgba(47, 125, 91, 0.18);
+}
+
+.ledger:last-of-type {
+    border-bottom: 0;
+}
+
+.ledger span:last-child {
+    font-weight: 600;
+    color: var(--forest);
+    white-space: nowrap;
+}
+
+.calculation-line--total,
+.ledger--total {
+    border-bottom: 0;
+    border-top: 2px solid var(--gold);
+    margin-top: 0.25rem;
+    padding-top: 0.625rem;
+}
+
+/* A figure that reads as a line of text rather than a panel. */
+.guide-figure {
+    margin: 0 0 1.125rem;
+    font-variant-numeric: tabular-nums;
+}
+
+/* --------------------------------------------------------------------------
+   6. Legacy class names still inside the frozen prose
+   -------------------------------------------------------------------------- */
+
+.bullet-list,
+.checklist,
+.benefits-list,
+.related-strategies {
+    margin: 0 0 1.125rem;
+    padding-left: 1.25rem;
+    list-style: disc;
+}
+
+.bullet-list li,
+.checklist li,
+.benefits-list li,
+.related-strategies li {
+    margin-bottom: 0.375rem;
+}
+
+.bullet-list li::marker,
+.checklist li::marker,
+.benefits-list li::marker,
+.related-strategies li::marker {
+    color: var(--emerald);
+}
+
+.guide-extras .benefits-list,
+.guide-extras .related-strategies {
+    padding-left: 0;
+    list-style: none;
+}
+
+.internal-link,
+.inline-link {
+    color: var(--emerald);
+    text-decoration: underline;
+    text-decoration-color: var(--line);
+}
+
+.internal-link:hover,
+.inline-link:hover {
+    text-decoration-color: currentColor;
+}
+
+/* Numbered how-to blocks written before the kit existed. */
+.step-number {
+    display: inline-block;
+    margin-right: 0.5rem;
+    font-weight: 600;
+    color: var(--emerald);
+    font-variant-numeric: tabular-nums;
+}
+
+.step-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--forest);
+    margin: 1.5rem 0 0.25rem;
+}
+
+.step-description,
+.timeline-step__content,
+.timezone-step__content {
+    margin: 0 0 1.125rem;
+    color: var(--ink-soft);
+    max-width: 68ch;
+}
+
+/* Two old grids: read them as stacked rows on a hairline. */
+.comparison-grid,
+.tax-states-grid {
     display: grid;
-    gap: 1rem 2.5rem;
-    align-items: start;
-    margin: clamp(2rem, 4vw, 3rem) 0;
-    padding: clamp(1.5rem, 3vw, 2rem);
-    background: var(--cream-dark);
-    border-top: 2px solid var(--gold);
+    gap: 0;
+    margin: 1.25rem 0;
+    border-top: 1px solid var(--line);
+    max-width: 44rem;
 }
 
-@media (min-width: 768px) {
-    .guide-takeaway {
-        grid-template-columns: minmax(0, 11rem) minmax(0, 1fr);
-    }
+.comparison-grid > *,
+.tax-states-grid > * {
+    padding: 0.875rem 0;
+    border-bottom: 1px solid var(--line);
 }
 
-.guide-takeaway .figure__value {
-    font-size: clamp(1.75rem, 2.6vw, 2.25rem);
-}
-
-.guide-takeaway .figure__label {
-    font-size: 0.9375rem;
-    font-weight: 400;
-    color: var(--text-secondary);
-}
-
-.guide-takeaway p {
-    margin: 0;
-    color: var(--text-secondary);
-    line-height: 1.7;
-    max-width: 62ch;
-}
-
-/* The verdict line inside a definition list entry. */
-.dl-terms__note {
+/* Article furniture at the foot of a few guides. */
+.author-bio,
+.related-topics {
     display: block;
-    margin-top: 0.35rem;
-    color: var(--text-muted);
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    max-width: 44rem;
     font-size: 0.9375rem;
+    color: var(--ink-soft);
 }
 
-/* Steps that carry a list rather than a paragraph. */
-.steps ul {
-    margin: 0.5rem 0 0;
-    padding-left: 1.2rem;
-    color: var(--text-secondary);
-    line-height: 1.7;
+.author-bio img,
+.author-bio picture img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-.steps li ul li {
-    margin-bottom: 0.4rem;
+.related-topics a {
+    display: inline-block;
+    margin: 0 1.25rem 0.5rem 0;
 }
 
-
-/* Muted roles on the cream surfaces need a darker grey than the shared token. */
-.breadcrumb,
-.breadcrumb__current,
-.figure__note,
-.dl-terms__note,
-.guide-figure__note,
-.band--cream-dark .guide-row__note {
-    color: var(--guide-muted, #5b6b84);
+.faq-title,
+.faq-section__title {
+    margin-top: 0;
 }
 
-/* Long definition terms need room to breathe on two lines. */
-.dl-terms dt {
-    line-height: 1.3;
+/* Native <details> rows outside a .faq wrapper get the same hairline rows. */
+.prose > details,
+.content-section details:not(.toc) {
+    border-bottom: 1px solid var(--line);
+    max-width: 44rem;
 }
 
-/* Bold text inside a navy header row must not fall back to navy ink. */
-.data-table th strong,
-.data-table thead strong,
-.band strong,
-.guide-inset strong {
-    color: inherit;
+.prose > details > summary,
+.content-section details:not(.toc) > summary {
+    display: block;
+    list-style: none;
+    cursor: pointer;
+    padding: 0.9375rem 1.75rem 0.9375rem 0;
+    font-weight: 600;
+    color: var(--forest);
+}
+
+.prose > details > summary::-webkit-details-marker,
+.content-section details:not(.toc) > summary::-webkit-details-marker {
+    display: none;
+}
+
+.prose > details > summary:hover,
+.content-section details:not(.toc) > summary:hover {
+    color: var(--emerald);
+}
+
+.prose > details > p,
+.content-section details:not(.toc) > p {
+    margin: 0 0 1.125rem;
+    color: var(--ink-soft);
+    max-width: 68ch;
+}
+
+/* --------------------------------------------------------------------------
+   7. Long tables on a phone
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 640px) {
+    .table-inset,
+    .table-inset--wide,
+    .table-scroll {
+        max-width: 100%;
+    }
+
+    .table-inset table,
+    .table-scroll table {
+        min-width: 30rem;
+    }
 }

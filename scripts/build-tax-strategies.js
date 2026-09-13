@@ -123,25 +123,18 @@ function buildSEOTitle(rawTitle) {
 }
 
 /**
- * Generate FAQ accordion items.
- * The toggle class is deliberately not `faq-question`: main.js binds a second,
- * incompatible handler to that class and the two would cancel each other out.
+ * FAQ rows. <details> carries the schema markup, so no script is needed.
  */
 function generateFaqItems(faqs) {
     if (!faqs || faqs.length === 0) return '';
 
-    return faqs.map((faq, index) => `
-                    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-toggle" aria-expanded="${index === 0 ? 'true' : 'false'}" aria-controls="faq-answer-${index}">
-                            <span itemprop="name">${faq.question}</span>
-                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                                <polyline points="6 9 12 15 18 9"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer ${index === 0 ? 'faq-answer--open' : ''}" id="faq-answer-${index}" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <p itemprop="text">${faq.answer}</p>
+    return faqs.map((faq) => `
+                    <details class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <summary itemprop="name">${esc(faq.question)}</summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">${esc(faq.answer)}</p>
                         </div>
-                    </div>`).join('\n');
+                    </details>`).join('\n');
 }
 
 /**
@@ -169,44 +162,15 @@ function generateFaqSchema(faqs) {
     </script>`;
 }
 
-/**
- * Visible FAQ as a definition list.
- */
-function renderFaqList(faqs) {
-    return `<dl class="guide-faq">
-${faqs.map((faq) => `                        <dt>${esc(faq.question)}</dt>
-                        <dd>${esc(faq.answer)}</dd>`).join('\n')}
-                    </dl>`;
-}
-
-/**
- * Split a savings string into a display value and the words around it, so the
- * number can be set in the display face and the qualifier stays as a label.
- * Returns null when the string carries no figure to show.
- */
-function splitFigure(text) {
-    const raw = String(text || '').trim();
-    if (!raw) return null;
-    const match = raw.match(/^(?:Up to\s+)?(\$[\d,]+(?:\s*[-–—]\s*\$?[\d,]+)?\+?|[\d.]+\s*[-–—]\s*[\d.]+%|[\d.]+%)/i);
-    if (!match) return null;
-    const value = match[0].replace(/\s*[-–—]\s*/, '–').replace(/^Up to\s+/i, '');
-    const label = raw.slice(match[0].length).trim().replace(/^[-–—,]\s*/, '');
-    return { value, label, upTo: /^up to/i.test(raw) };
-}
-
-function renderFigure(text, fallbackLabel, className = 'figure') {
-    const parsed = splitFigure(text);
-    if (!parsed) return '';
-    const label = parsed.label || fallbackLabel;
-    return `<div class="${className}">
-                            <span class="figure__value">${esc(parsed.value)}</span>
-                            <span class="figure__label">${esc(parsed.upTo ? `${label} (maximum)` : label)}</span>
-                        </div>`;
+/** The visible FAQ block, schema included. */
+function renderFaqBlock(faqs) {
+    return `<div class="faq" itemscope itemtype="https://schema.org/FAQPage">${generateFaqItems(faqs)}
+                    </div>`;
 }
 
 /** renderSourceBlock still ships inline styles; guides.css owns the look. */
 function plainSourceBlock(options) {
-    return renderSourceBlock({ heading: 'Primary sources to verify before you act', ...options })
+    return renderSourceBlock({ heading: 'Sources to check', ...options })
         .replace(/ style="[^"]*"/g, '');
 }
 
@@ -228,7 +192,7 @@ function generateRelatedStrategiesList(relatedSlugs, allStrategies, catalogBySlu
         const catalogEntry = catalogBySlug.get(slug);
         const title = (strategy && strategy.title) || (catalogEntry && catalogEntry.title) || formatTitle(slug);
         return `
-                                <li><a href="/tax-strategies/${slug}">${esc(title)}</a></li>`;
+                            <li><a href="/tax-strategies/${slug}">${esc(title)}</a></li>`;
     }).join('');
 }
 
@@ -273,7 +237,6 @@ function buildStrategyPage(strategy, template, allStrategies, catalogBySlug) {
         .replace(/\{\{bestFor\}\}/g, strategy.bestFor)
         .replace(/\{\{datePublished\}\}/g, today)
         .replace(/\{\{dateModified\}\}/g, today)
-        .replace(/\{\{savingsFigure\}\}/g, renderFigure(strategy.potentialSavings, 'potential saving', 'figure figure--gold') || `<div class="figure figure--gold"><span class="figure__value">${esc(String(strategy.complexity))}</span><span class="figure__label">level: ${esc(strategy.potentialSavings)}</span></div>`)
         .replace(/\{\{headAssets\}\}/g, renderHeadAssets())
         .replace(/\{\{analyticsHead\}\}/g, renderAnalyticsHead({ gaTrackingId: GA_TRACKING_ID, gtmContainerId: GTM_CONTAINER_ID }))
         .replace(/\{\{tagManagerBody\}\}/g, renderAnalyticsBody({ gtmContainerId: GTM_CONTAINER_ID }))
@@ -282,16 +245,15 @@ function buildStrategyPage(strategy, template, allStrategies, catalogBySlug) {
         .replace(/\{\{footerYear\}\}/g, String(CURRENT_YEAR))
         .replace(/\{\{benefitsForList\}\}/g, generateBenefitsList(strategy.benefitsFor))
         .replace(/\{\{relatedStrategiesList\}\}/g, generateRelatedStrategiesList(strategy.relatedStrategies, allStrategies, catalogBySlug))
-        .replace(/\{\{faqItems\}\}/g, generateFaqItems(strategy.faqs))
+        .replace(/\{\{faqBlock\}\}/g, renderFaqBlock(strategy.faqs || []))
+        .replace(/\{\{sourcesBlock\}\}/g, plainSourceBlock({ title: strategy.title, slug: strategy.slug, type: 'tax_strategy' }))
         .replace(/\{\{faqSchema\}\}/g, generateFaqSchema(strategy.faqs));
 
     // Handle minimum property value section
     if (strategy.minimumPropertyValue && strategy.minimumPropertyValue !== 'No minimum') {
         html = html.replace(/\{\{minimumPropertyValueRow\}\}/g, `
-                        <div>
-                            <dt>Minimum property value</dt>
-                            <dd>${esc(strategy.minimumPropertyValue)}</dd>
-                        </div>`);
+                        <dt>Minimum property value</dt>
+                        <dd>${esc(strategy.minimumPropertyValue)}</dd>`);
     } else {
         html = html.replace(/\{\{minimumPropertyValueRow\}\}/g, '');
     }
@@ -300,21 +262,20 @@ function buildStrategyPage(strategy, template, allStrategies, catalogBySlug) {
 }
 
 /**
- * The hub: one table per category, every strategy on the site in a row.
+ * The hub: one inset table per category, every strategy on the site in a row.
  */
 function renderCatalogGroups(categories, catalog) {
     return categories.map((category) => {
         const rows = catalog.filter((entry) => entry.category === category.id);
         if (!rows.length) return '';
         return `
-                <section class="guide-group" id="${esc(category.id)}">
-                    <div class="guide-group__head">
-                        <h3>${esc(category.title)}</h3>
-                        <p>${esc(category.lead)}</p>
-                    </div>
-                    <div class="table-scroll">
-                        <table class="data-table">
-                            <caption class="sr-only">${esc(category.title)} tax strategies</caption>
+        <section class="section section--rule" id="${esc(category.id)}">
+            <div class="container-custom">
+                <div class="col guide-catalog">
+                    <h2>${esc(category.title)}</h2>
+                    <p class="section__summary">${esc(category.lead)}</p>
+                    <div class="table-inset table-inset--wide">
+                        <table>
                             <thead>
                                 <tr>
                                     <th scope="col">Strategy</th>
@@ -324,14 +285,16 @@ function renderCatalogGroups(categories, catalog) {
                             </thead>
                             <tbody>
 ${rows.map((row) => `                                <tr>
-                                    <th scope="row"><a href="/tax-strategies/${esc(row.slug)}">${esc(row.title)}</a></th>
+                                    <td><a href="/tax-strategies/${esc(row.slug)}">${esc(row.title)}</a></td>
                                     <td>${esc(row.summary)}</td>
                                     <td>${esc(row.level)}</td>
                                 </tr>`).join('\n')}
                             </tbody>
                         </table>
                     </div>
-                </section>`;
+                </div>
+            </div>
+        </section>`;
     }).join('\n');
 }
 
@@ -401,7 +364,7 @@ function generateIndexPage(data) {
     <meta name="twitter:description" content="${esc(description)}">
     <meta name="twitter:image" content="${OG_IMAGE}">
 
-    <meta name="theme-color" content="#FAF7F2">
+    <meta name="theme-color" content="#FBF8F1">
     <link rel="icon" href="/favicon.ico" sizes="32x32">
     ${renderHeadAssets()}
     <link rel="stylesheet" href="/assets/css/guides.css">
@@ -417,113 +380,77 @@ ${schemaBlocks.map((schema) => `    <script type="application/ld+json">${JSON.st
     ${renderSiteHeader('/tax-strategies')}
 
     <main id="main">
-        <section class="guide-opener">
+        <section class="opener">
             <div class="container-custom">
-                <nav aria-label="Breadcrumb">
-                    <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-                        <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                            <a href="/" class="breadcrumb__link" itemprop="item"><span itemprop="name">Home</span></a>
-                            <meta itemprop="position" content="1" />
-                        </li>
-                        <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                            <span class="breadcrumb__current" itemprop="name">Tax strategies</span>
-                            <meta itemprop="position" content="2" />
-                        </li>
-                    </ol>
-                </nav>
-                <div class="opener">
-                    <div class="opener__main">
-                        <h1 class="opener__title">Tax strategies for investors</h1>
-                        <p class="opener__lede">Every strategy guide on the site, grouped by the income or asset it applies to. Each one states the qualification test first, then the mechanics, then a worked example with its assumptions written out.</p>
-                        <p class="guide-opener__meta">Six categories, from beginner to advanced. Level describes the documentation burden, not the size of the deduction.</p>
-                    </div>
-                    <aside class="opener__aside">
-                        <div class="figure figure--gold">
-                            <span class="figure__value">${catalog.length}</span>
-                            <span class="figure__label">strategy guides, plus ${retirementGuides.length} retirement plan guides</span>
-                        </div>
-                    </aside>
+                <div class="col guide-catalog">
+                    <nav aria-label="Breadcrumb">
+                        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                            <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <a href="/" class="breadcrumb__link" itemprop="item"><span itemprop="name">Home</span></a>
+                                <meta itemprop="position" content="1" />
+                            </li>
+                            <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <span class="breadcrumb__current" itemprop="name">Tax strategies</span>
+                                <meta itemprop="position" content="2" />
+                            </li>
+                        </ol>
+                    </nav>
+                    <h1 class="opener__title">Tax strategies for investors</h1>
+                    <p class="opener__key">Start from the income you already have, not from the deduction that sounds best.</p>
+                    <p class="opener__lede">${catalog.length} strategy guides, grouped by the income or asset each one applies to. Every guide states the qualification test first, then the mechanics, then a worked example with its assumptions written out.</p>
+                    <p class="meta">Level describes the documentation burden, not the size of the deduction.</p>
                 </div>
             </div>
         </section>
 
-        <section class="section">
+        <section class="section section--rule">
             <div class="container-custom">
-                <div class="marginalia">
-                    <div class="marginalia__main sheet guide-sheet">
-                        <div class="guide-prose">
-                            <h2>How to read this library</h2>
-                            <p>Tax strategy is less about finding an unknown deduction than about matching a move to the income you already have. A deduction that transforms a rental owner's return does nothing for a salaried employee with no property, and an entity election that saves self-employment tax can cost more in payroll administration than it returns.</p>
-                            <p>Three things decide whether a strategy survives contact with your return: whether you meet the test, whether you can document it before you file, and whether the work is worth the money it saves. Start from the situation that matches your income, then read the guide for the one move that changes your next decision.</p>
-                        </div>
-                    </div>
-                    <aside class="marginalia__aside guide-aside">
-                        <div>
-                            <p class="guide-aside__title">Start from your situation</p>
-                            <dl class="dl-terms">
-${personas.map((persona) => `                                <dt><a href="/tax-strategies/for/${esc(persona.slug)}">${esc(persona.linkLabel || persona.title)}</a></dt>
-                                <dd>${esc(persona.description)}.</dd>`).join('\n')}
-                            </dl>
-                        </div>
-                    </aside>
+                <div class="col guide-catalog">
+                    <h2 id="start-here">Start from your situation</h2>
+                    <p class="section__summary">A deduction that transforms a rental owner's return does nothing for a salaried employee with no property. Pick the group that matches your income, then read the one guide that changes your next decision.</p>
+                    <ul class="list-rows">
+${personas.map((persona) => `                        <li>
+                            <p class="list-rows__title"><a href="/tax-strategies/for/${esc(persona.slug)}">${esc(persona.linkLabel || persona.title)}</a></p>
+                            <p class="list-rows__desc">${esc(persona.description)}.</p>
+                        </li>`).join('\n')}
+                    </ul>
                 </div>
             </div>
         </section>
-
-        <section class="band">
-            <div class="container-custom">
-                <div class="guide-band__grid">
-                    <div class="figure figure--navy">
-                        <span class="figure__value">$2,400</span>
-                        <span class="figure__label">what a $10,000 deduction is worth at a 24% marginal rate</span>
-                        <span class="figure__note">A $10,000 credit would save the full $10,000.</span>
-                    </div>
-                    <p class="guide-band__lede">Almost everything in this library is a deduction or a deferral rather than a credit, so its value tracks your marginal rate. The same strategy is worth roughly twice as much to a reader in the top bracket as to one in the 22% bracket, which is why the order you work through these matters.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section band--cream-dark">
-            <div class="container-custom">
-                <div class="section__head">
-                    <h2>Every strategy, by category</h2>
-                    <p>Beginner strategies you can usually run yourself. Advanced ones need a professional and a paper trail built during the year, not after it.</p>
-                </div>
 ${renderCatalogGroups(categories, catalog)}
-            </div>
-        </section>
 
-        <section class="section">
+        <section class="section section--rule">
             <div class="container-custom">
-                <div class="marginalia">
-                    <div class="marginalia__main sheet guide-sheet">
-                        <div class="guide-prose">
-                            <h2>Common questions</h2>
-                            ${renderFaqList(HUB_FAQS)}
-
-                            ${plainSourceBlock({ title: 'Tax Strategies Hub', slug: 'tax-strategies', type: 'tax_hub' })}
-                        </div>
-                    </div>
-                    <aside class="marginalia__aside guide-aside">
-                        <div>
-                            <p class="guide-aside__title">Retirement plan guides</p>
-                            <dl class="dl-terms">
-${retirementGuides.map((guide) => `                                <dt><a href="/retirement/${esc(guide.slug)}">${esc(guide.title)}</a></dt>
-                                <dd>${esc(guide.summary)}</dd>`).join('\n')}
-                            </dl>
-                        </div>
-                    </aside>
+                <div class="col guide-catalog">
+                    <h2 id="retirement">Retirement plan guides</h2>
+                    <p class="section__summary">Five plan guides sit alongside the strategies above. They cover contribution ceilings, deadlines, and who each plan fits.</p>
+                    <ul class="list-rows">
+${retirementGuides.map((guide) => `                        <li>
+                            <p class="list-rows__title"><a href="/retirement/${esc(guide.slug)}">${esc(guide.title)}</a></p>
+                            <p class="list-rows__desc">${esc(guide.summary)}</p>
+                        </li>`).join('\n')}
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <section class="cta-band">
+        <section class="section section--rule">
             <div class="container-custom">
-                <h2>Not sure which one applies to you?</h2>
-                <p>The persona pages sequence four or five strategies for one kind of earner, in the order they usually pay off. The compare guides take two strategies that both sound right and show where each one wins.</p>
-                <div class="cta-band-actions">
-                    <a href="/compare" class="btn-primary">Open the compare guides</a>
-                    <a href="/tax-strategies/for/w2-employees" class="btn-secondary">Start from a situation</a>
+                <div class="col guide-catalog">
+                    <h2 id="questions">Common questions</h2>
+                    ${renderFaqBlock(HUB_FAQS)}
+
+                    ${plainSourceBlock({ title: 'Tax Strategies Hub', slug: 'tax-strategies', type: 'tax_hub' })}
+
+                    <div class="cta">
+                        <h2>Not sure which one applies to you?</h2>
+                        <p>The situation pages sequence four or five strategies for one kind of earner. The compare guides take two strategies that both sound right and show where each one wins.</p>
+                        <p class="cta__actions">
+                            <a href="/compare" class="btn-primary">Open the compare guides</a>
+                            <a href="/tax-strategies/for/w2-employees" class="btn-secondary">Start from a situation</a>
+                        </p>
+                    </div>
+                    <p class="guide-note">Educational content only. It is not individual tax, legal, or investment advice.</p>
                 </div>
             </div>
         </section>
@@ -649,45 +576,43 @@ function generatePersonaFaqSchema(persona) {
 }
 
 /**
- * Persona strategy guidance: the savings figure on the left, the guide on the right.
+ * Persona strategy guidance: what each move is, what it needs, and where the
+ * full guide lives. One column, hairlines, no cards.
  */
 function renderPersonaStrategies(persona, strategyBySlug, catalogBySlug) {
-    return persona.topStrategies.map((slug) => {
+    return persona.topStrategies.map((slug, index) => {
         const strategy = strategyBySlug.get(slug);
         const entry = catalogBySlug.get(slug);
         const title = (entry && entry.title) || (strategy && strategy.title) || formatTitle(slug);
         const body = strategy ? strategy.fullDescription : (entry ? entry.summary : '');
-        const level = (strategy && String(strategy.complexity).toLowerCase()) || (entry && entry.level) || '';
-        const figure = strategy ? renderFigure(strategy.potentialSavings, 'potential saving') : '';
 
         const facts = [];
         if (strategy) {
+            facts.push(['Potential savings', strategy.potentialSavings]);
             facts.push(['Best fit', strategy.bestFor]);
+            facts.push(['Level', String(strategy.complexity).toLowerCase()]);
             facts.push(['Typical cost', strategy.typicalCost]);
-            if (!figure) facts.push(['Potential savings', strategy.potentialSavings]);
+        } else if (entry) {
+            facts.push(['Level', entry.level]);
         }
 
-        const factList = facts.length
+        const table = facts.length
             ? `
-                        <dl class="guide-dl">
-${facts.map(([term, value]) => `                            <div>
-                                <dt>${esc(term)}</dt>
-                                <dd>${esc(value)}</dd>
-                            </div>`).join('\n')}
-                        </dl>`
+                    <div class="table-inset">
+                        <table>
+                            <tbody>
+${facts.map(([term, value]) => `                                <tr>
+                                    <td>${esc(term)}</td>
+                                    <td>${esc(value)}</td>
+                                </tr>`).join('\n')}
+                            </tbody>
+                        </table>
+                    </div>`
             : '';
 
         return `
-                    <article class="guide-entry">
-                        <div>
-                            ${figure || ''}
-                            ${level ? `<p class="guide-entry__meta">Level: ${esc(level)}</p>` : ''}
-                        </div>
-                        <div>
-                            <h3><a href="/tax-strategies/${esc(slug)}">${esc(title)}</a></h3>
-                            <p>${esc(body)}</p>${factList}
-                        </div>
-                    </article>`;
+                    <h3 id="${esc(slug)}">${index + 1}. <a href="/tax-strategies/${esc(slug)}">${esc(title)}</a></h3>
+                    <p>${esc(body)}</p>${table}`;
     }).join('\n');
 }
 
@@ -700,6 +625,7 @@ function generatePersonaPage(persona, strategyBySlug, catalogBySlug, allPersonas
     const collectionSchema = generatePersonaCollectionSchema(persona);
     const faqSchema = generatePersonaFaqSchema(persona);
     const description = `${persona.description}. The strategies that usually matter first, what each one requires, and the questions to settle before you file.`;
+    const label = persona.linkLabel || persona.title;
 
     return `<!DOCTYPE html>
 <html lang="en">
@@ -733,7 +659,7 @@ function generatePersonaPage(persona, strategyBySlug, catalogBySlug, allPersonas
     <meta name="twitter:description" content="${esc(description)}">
     <meta name="twitter:image" content="${OG_IMAGE}">
 
-    <meta name="theme-color" content="#FAF7F2">
+    <meta name="theme-color" content="#FBF8F1">
     <link rel="icon" href="/favicon.ico" sizes="32x32">
     ${renderHeadAssets()}
     <link rel="stylesheet" href="/assets/css/guides.css">
@@ -747,98 +673,68 @@ function generatePersonaPage(persona, strategyBySlug, catalogBySlug, allPersonas
     ${renderSiteHeader('/tax-strategies')}
 
     <main id="main">
-        <section class="guide-opener">
+        <section class="opener">
             <div class="container-custom">
-                <nav aria-label="Breadcrumb">
-                    <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-                        <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                            <a href="/" class="breadcrumb__link" itemprop="item"><span itemprop="name">Home</span></a>
-                            <meta itemprop="position" content="1" />
-                        </li>
-                        <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                            <a href="/tax-strategies" class="breadcrumb__link" itemprop="item"><span itemprop="name">Tax strategies</span></a>
-                            <meta itemprop="position" content="2" />
-                        </li>
-                        <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                            <span class="breadcrumb__current" itemprop="name">${esc(persona.title)}</span>
-                            <meta itemprop="position" content="3" />
-                        </li>
-                    </ol>
-                </nav>
-                <div class="opener">
-                    <div>
-                        <h1 class="opener__title">Tax strategies for ${esc(persona.linkLabel || persona.title)}</h1>
-                        <p class="opener__lede">${esc(persona.description)}. These are the moves that usually matter first, what each one requires, and the questions to settle before you file.</p>
-                    </div>
-                    <aside class="opener__aside">
-                        <div class="figure figure--gold">
-                            <span class="figure__value">${persona.topStrategies.length}</span>
-                            <span class="figure__label">strategies, in the order they usually pay off</span>
-                        </div>
-                    </aside>
+                <div class="col">
+                    <nav aria-label="Breadcrumb">
+                        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                            <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <a href="/" class="breadcrumb__link" itemprop="item"><span itemprop="name">Home</span></a>
+                                <meta itemprop="position" content="1" />
+                            </li>
+                            <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <a href="/tax-strategies" class="breadcrumb__link" itemprop="item"><span itemprop="name">Tax strategies</span></a>
+                                <meta itemprop="position" content="2" />
+                            </li>
+                            <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <span class="breadcrumb__current" itemprop="name">${esc(persona.title)}</span>
+                                <meta itemprop="position" content="3" />
+                            </li>
+                        </ol>
+                    </nav>
+                    <h1 class="opener__title">Tax strategies for ${esc(label.toLowerCase())}</h1>
+                    <p class="opener__key">Sequence matters more than size. Work down this list in order.</p>
+                    <p class="opener__lede">${esc(persona.description)}. These are the ${persona.topStrategies.length} moves that usually matter first, what each one requires, and the questions to settle before you file.</p>
                 </div>
             </div>
         </section>
 
-        <section class="section">
+        <section class="section section--rule">
             <div class="container-custom">
-                <div class="marginalia">
-                    <div class="marginalia__main">
-                        <div class="section__head">
-                            <h2>Where to start</h2>
-                            <p>Ordered by how often each one matters for this group, not by size of deduction.</p>
-                        </div>
+                <div class="col">
+                    <div class="prose">
+                        <h2 id="where-to-start">Where to start</h2>
+                        <p>Ordered by how often each one matters for this group, not by the size of the deduction. Some can be put in place during the year. Some need an account or an entity opened before money moves. Some only work if the documentation exists before the deduction is claimed.</p>
 ${renderPersonaStrategies(persona, strategyBySlug, catalogBySlug)}
+
+                        <h2 id="questions">Common questions</h2>
                     </div>
-                    <aside class="marginalia__aside guide-aside">
-                        <div>
-                            <p class="guide-aside__title">Other situations</p>
-                            <dl class="dl-terms">
-${otherPersonas.map((other) => `                                <dt><a href="/tax-strategies/for/${esc(other.slug)}">${esc(other.linkLabel || other.title)}</a></dt>
-                                <dd>${esc(other.description)}.</dd>`).join('\n')}
-                            </dl>
-                        </div>
-                    </aside>
-                </div>
-            </div>
-        </section>
+                    ${renderFaqBlock(getPersonaFaqs(persona))}
 
-        <section class="band">
-            <div class="container-custom">
-                <figure class="pull-quote">
-                    <blockquote>
-                        <p>Some of these can be put in place during the year. Some need an account or an entity opened before money moves. Some only work if the documentation exists before the deduction is claimed.</p>
-                    </blockquote>
-                    <figcaption>Sequence matters more than size<span>Work down this list in order, not by headline number.</span></figcaption>
-                </figure>
-            </div>
-        </section>
+                    ${plainSourceBlock({ title: persona.title, slug: persona.slug, type: 'persona' })}
 
-        <section class="section band--cream-dark">
-            <div class="container-custom">
-                <div class="marginalia">
-                    <div class="marginalia__main">
-                        <div class="section__head">
-                            <h2>Common questions</h2>
-                            <p>The two that come up most often for this group.</p>
-                        </div>
-                        <div class="guide-prose">
-                            ${renderFaqList(getPersonaFaqs(persona))}
-
-                            ${plainSourceBlock({ title: persona.title, slug: persona.slug, type: 'persona' })}
-                        </div>
+                    <div class="do">
+                        <p class="do__label">Do this next</p>
+                        <ul>
+                            <li>Read the guide for the first strategy on the list above.</li>
+                            <li>Check the qualification test against your own facts before you plan around it.</li>
+                            <li>Write down the records you would need, and start keeping them now.</li>
+                            <li>Take the one open question to a CPA rather than the whole list.</li>
+                        </ul>
                     </div>
-                    <aside class="marginalia__aside guide-aside">
-                        <div>
-                            <p class="guide-aside__title">Keep reading</p>
-                            <dl class="dl-terms">
-                                <dt><a href="/tax-strategies">Every tax strategy</a></dt>
-                                <dd>The full table, grouped by the income or asset each one applies to.</dd>
-                                <dt><a href="/compare">Compare guides</a></dt>
-                                <dd>Head-to-head when two strategies both look right.</dd>
-                            </dl>
-                        </div>
-                    </aside>
+
+                    <div class="cta">
+                        <h2>Other situations</h2>
+                        <p>Each page sequences the strategies for one kind of earner.</p>
+                        <ul>
+${otherPersonas.map((other) => `                            <li><a href="/tax-strategies/for/${esc(other.slug)}">${esc(other.linkLabel || other.title)}</a>. ${esc(other.description)}.</li>`).join('\n')}
+                        </ul>
+                        <p class="cta__actions">
+                            <a href="/tax-strategies" class="btn-primary">Every tax strategy</a>
+                            <a href="/compare" class="btn-secondary">Compare two strategies</a>
+                        </p>
+                    </div>
+                    <p class="guide-note">Educational content only. It is not individual tax, legal, or investment advice.</p>
                 </div>
             </div>
         </section>

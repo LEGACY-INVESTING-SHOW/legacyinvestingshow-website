@@ -31,16 +31,15 @@
     <meta name="twitter:description" content="Learn how to access retirement funds tax-free before 59½">
 
     <!-- Theme Color -->
-    <meta name="theme-color" content="#FAF7F2">
+    <meta name="theme-color" content="#FBF8F1">
 
     <!-- Favicon -->
     <link rel="icon" href="/favicon.ico" sizes="32x32">
 
     <!-- Stylesheet -->
-    <link rel="preload" href="/assets/fonts/dm-serif-display-400-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/assets/fonts/plus-jakarta-sans-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="/assets/css/styles.css?v=b6172e78">
-    <link rel="stylesheet" href="/assets/css/guides.css?v=9f8d9de9">
+    <link rel="preload" href="/assets/fonts/public-sans-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/guides.css">
 
     <!-- Schema Markup -->
     <script type="application/ld+json">
@@ -89,7 +88,7 @@
                 "name": "Can I withdraw Roth conversions without penalty before age 59½?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, with proper planning. Converted funds can be withdrawn tax-free and penalty-free after they've been in the Roth IRA for 5 years, regardless of your age. This is the key advantage of the Roth Conversion Ladder—it allows access to retirement funds before 59½ without the 10% penalty that applies to premature Traditional IRA withdrawals (IRC Section 408(d)(2))."
+                    "text": "Yes, with proper planning. Converted funds can be withdrawn tax-free and penalty-free after they've been in the Roth IRA for 5 years, regardless of your age. This is the key advantage of the Roth Conversion Ladder, it allows access to retirement funds before 59½ without the 10% penalty that applies to premature Traditional IRA withdrawals (IRC Section 408(d)(2))."
                 }
             },
             {
@@ -105,7 +104,7 @@
                 "name": "What taxes do I owe when I convert to a Roth IRA?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "You owe income tax on the converted amount in the year of conversion. If you convert $50,000 from a Traditional IRA and have no basis, you owe taxes on the full $50,000 at your ordinary income tax rate. This is why spreading conversions across multiple years (the ladder strategy) is effective—it keeps your tax bracket lower by avoiding one massive conversion in a single year."
+                    "text": "You owe income tax on the converted amount in the year of conversion. If you convert $50,000 from a Traditional IRA and have no basis, you owe taxes on the full $50,000 at your ordinary income tax rate. This is why spreading conversions across multiple years (the ladder strategy) is effective, it keeps your tax bracket lower by avoiding one massive conversion in a single year."
                 }
             },
             {
@@ -129,7 +128,7 @@
                 "name": "Can I do a Roth Conversion Ladder with a 401(k)?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, you can convert 401(k) funds to a Roth IRA through what's called an in-service conversion or direct rollover. However, first confirm your plan allows this—not all 401(k) plans permit conversions. Once you roll over 401(k) funds to an IRA, you can then convert to Roth. Keep pro-rata rule implications in mind if you have other pre-tax IRA balances."
+                    "text": "Yes, you can convert 401(k) funds to a Roth IRA through what's called an in-service conversion or direct rollover. However, first confirm your plan allows this, not all 401(k) plans permit conversions. Once you roll over 401(k) funds to an IRA, you can then convert to Roth. Keep pro-rata rule implications in mind if you have other pre-tax IRA balances."
                 }
             },
             {
@@ -300,9 +299,10 @@
     <!-- Twitter Card fallback -->
     <meta name="twitter:image" content="https://www.legacyinvestingshow.com/assets/images/og-home.jpg">
 </head>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="display:none; visibility:hidden"></iframe></noscript>
+<body class="guide-page">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="visibility:hidden"></iframe></noscript>
     <!-- Skip to main content -->
-    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-navy text-white px-4 py-2 z-50">
+    <a href="#main" class="sr-only z-50">
         Skip to main content
     </a>
 
@@ -356,31 +356,21 @@
         <section class="guide-opener">
             <div class="container-custom">
                 <div class="opener">
-                    <div>
-                        <h1 class="opener__title">Roth Conversion Ladder</h1>
-                        <p class="opener__lede">Strategic tax planning technique for early retirees to access retirement funds penalty-free and tax-free before age 59½</p>
-                        <p class="guide-opener__meta">IRS Reference: IRC Sections 408A(d)(2), 72(t), Notice 87-13</p>
-                    </div>
-                    <aside class="opener__aside">
-                        <div class="figure figure--gold">
-                            <span class="figure__value">Any Age</span>
-                            <span class="figure__label">earliest withdrawal age</span>
-                        </div>
-                        <dl class="guide-dl">
-                            <div>
-                                <dt>5-Year Rule Wait</dt>
-                                <dd>Per Conversion</dd>
-                            </div>
-                            <div>
-                                <dt>Tax Benefit</dt>
-                                <dd>100% Tax-Free</dd>
-                            </div>
-                            <div>
-                                <dt>Penalty on Withdrawal</dt>
-                                <dd>$0</dd>
-                            </div>
-                        </dl>
-                    </aside>
+                    <h1>Roth Conversion Ladder</h1>
+                    <p class="opener__key">Strategic tax planning technique for early retirees to access retirement funds penalty-free and tax-free before age 59½.</p>
+                    <p class="words__label">At a glance</p>
+                    <dl class="words">
+                        <dt>Earliest withdrawal age</dt>
+                        <dd>Any Age</dd>
+                        <dt>5-Year rule wait</dt>
+                        <dd>Per Conversion</dd>
+                        <dt>Tax benefit</dt>
+                        <dd>100% Tax-Free</dd>
+                        <dt>Penalty on withdrawal</dt>
+                        <dd>$0</dd>
+                        <dt>IRS reference</dt>
+                        <dd>IRC Sections 408A(d)(2), 72(t), Notice 87-13</dd>
+                    </dl>
                 </div>
             </div>
         </section>
@@ -388,10 +378,10 @@
         <!-- Content Section -->
         <section class="content-section">
             <div class="container-custom">
-                <div class="guide-layout">
-                    <details class="contents guide-contents" open>
+
+                    <details class="toc" open>
                         <summary>On this page</summary>
-                        <ol>
+                        <ul>
                             <li><a href="#the-early-retiree-s-secret-to-tax-free-retirement-income">The Early Retiree&#39;s Secret to Tax-Free Retirement Income</a></li>
                             <li><a href="#what-is-a-roth-conversion-ladder-complete-explanation">What Is a Roth Conversion Ladder? Complete Explanation</a></li>
                             <li><a href="#who-benefits-most-from-roth-conversion-ladders">Who Benefits Most from Roth Conversion Ladders</a></li>
@@ -404,16 +394,15 @@
                             <li><a href="#related-tax-strategies-techniques">Related Tax Strategies &amp; Techniques</a></li>
                             <li><a href="#frequently-asked-questions">Frequently Asked Questions</a></li>
                             <li><a href="#frequently-asked-questions-2">Frequently Asked Questions</a></li>
-                            <li><a href="#ready-to-build-your-early-retirement-strategy">Ready to Build Your Early Retirement Strategy?</a></li>
-                        </ol>
+                        </ul>
                     </details>
-                    <div class="guide-column">
-                    <div class="prose-content">
+
+                    <div class="prose">
                         <!-- Hook & Quick Summary -->
                         <h2 id="the-early-retiree-s-secret-to-tax-free-retirement-income">The Early Retiree's Secret to Tax-Free Retirement Income</h2>
-                        <p>Imagine retiring at 45 and accessing your retirement savings completely tax-free and penalty-free every single year until age 59½. No 10% early withdrawal penalties. No income taxes. Just the money you need, when you need it. This isn't a fantasy—it's the Roth Conversion Ladder, one of the most powerful yet underutilized tax strategies available to people planning early retirement.</p>
+                        <p>Imagine retiring at 45 and accessing your retirement savings completely tax-free and penalty-free every single year until age 59½. No 10% early withdrawal penalties. No income taxes. Just the money you need, when you need it. This isn't a fantasy, it's the Roth Conversion Ladder, one of the most powerful yet underutilized tax strategies available to people planning early retirement.</p>
 
-                        <div style="background: var(--cream-dark); padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem">
+                        <div>
                             <strong>Bottom Line:</strong> A Roth Conversion Ladder allows early retirees to convert Traditional IRA or 401(k) funds to a Roth IRA in strategic increments, creating a "ladder" of tax-free withdrawals that mature over 5-year periods. Someone with $500,000 in pre-tax retirement savings can create a 10-year ladder providing $50,000 annually in completely tax-free income from age 45-55, then seamlessly transition to penalty-free 59½+ withdrawals. With proper planning, a $500,000 ladder at 8% growth could produce over $1.2 million in tax-free retirement income.
                         </div>
 
@@ -458,7 +447,7 @@
                         <p>Successfully executing a Roth Conversion Ladder requires careful planning and disciplined execution. Following these steps ensures you maximize tax efficiency and avoid common pitfalls.</p>
 
                         <h3>Step 1: Calculate Your Total Income Need Through Age 59½</h3>
-                        <p>Determine your annual living expenses in early retirement and multiply by the years until age 59½. If you plan to retire at 48 and live until 100, but only need ladder income until 59½ (11 years), calculate: $60,000 annual need × 11 years = $660,000 total ladder amount. This is your target conversion pool. Factor in inflation conservatively—use 3% annual inflation adjustments to future years. This calculation determines your ladder's total size and individual rung amounts.</p>
+                        <p>Determine your annual living expenses in early retirement and multiply by the years until age 59½. If you plan to retire at 48 and live until 100, but only need ladder income until 59½ (11 years), calculate: $60,000 annual need × 11 years = $660,000 total ladder amount. This is your target conversion pool. Factor in inflation conservatively, use 3% annual inflation adjustments to future years. This calculation determines your ladder's total size and individual rung amounts.</p>
 
                         <h3>Step 2: Audit Your Current IRA Balances and Pro-Rata Rule</h3>
                         <p>List all pre-tax IRA balances (Traditional IRA, SEP-IRA, SIMPLE IRA, Rollover IRA). Calculate total basis across all accounts. If you have $0 basis (all pre-tax) and convert $50,000, you owe taxes on the full $50,000. However, if you have $100,000 pre-tax and $100,000 after-tax (Basis), converting $50,000 means $25,000 is pre-tax and $25,000 is after-tax (50/50 split). The pro-rata rule can substantially increase your tax bill. Solution: Execute a reverse rollover of pre-tax IRA balances to your 401(k) to remove them from pro-rata calculations (if your 401(k) plan permits). This is critical for minimizing conversion taxes.</p>
@@ -470,13 +459,13 @@
                         <p>Execute your first conversion from Traditional IRA to Roth IRA through your brokerage (this takes 1-2 business days typically). Ensure the brokerage documents the conversion amount and date clearly. When you file your tax return, report this conversion on Form 8606 (Nondeductible IRAs). Without Form 8606, the IRS may not recognize your conversion properly, potentially triggering double taxation. File accurately and keep copies of all conversion documentation.</p>
 
                         <h3>Step 5: Pay Conversion Taxes Strategically</h3>
-                        <p>Pay the taxes owed on conversions from non-retirement accounts (taxable accounts, checking, savings). Never pay conversion taxes from the Roth IRA itself—this effectively reduces your ladder's purchasing power. If your $50,000 conversion owes $12,000 in taxes, pay that $12,000 from your taxable accounts. This preserves the full $50,000 growing tax-free in your Roth IRA. Many early retirees fund conversions with a mix: part from Traditional IRA transfer, part paid from their taxable investment accounts.</p>
+                        <p>Pay the taxes owed on conversions from non-retirement accounts (taxable accounts, checking, savings). Never pay conversion taxes from the Roth IRA itself, this effectively reduces your ladder's purchasing power. If your $50,000 conversion owes $12,000 in taxes, pay that $12,000 from your taxable accounts. This preserves the full $50,000 growing tax-free in your Roth IRA. Many early retirees fund conversions with a mix: part from Traditional IRA transfer, part paid from their taxable investment accounts.</p>
 
                         <h3>Step 6: Repeat Annually Through Your Timeline</h3>
-                        <p>Each subsequent year, execute the next conversion rung following your schedule. Keep meticulous records of each conversion date and amount. Maintain a spreadsheet tracking: conversion year, amount, maturity date (5 years later), and when you plan to withdraw. This prevents confusion and ensures you don't accidentally withdraw before the 5-year maturity date. Consistency is critical—missing a year or delaying conversions means your ladder's timeline shifts.</p>
+                        <p>Each subsequent year, execute the next conversion rung following your schedule. Keep meticulous records of each conversion date and amount. Maintain a spreadsheet tracking: conversion year, amount, maturity date (5 years later), and when you plan to withdraw. This prevents confusion and ensures you don't accidentally withdraw before the 5-year maturity date. Consistency is critical, missing a year or delaying conversions means your ladder's timeline shifts.</p>
 
                         <h3>Step 7: Begin Retirement and Withdraw Systematically</h3>
-                        <p>Once your first ladder rung matures (5 years after Year 1 conversion), you can begin withdrawals. Withdraw only from mature rungs. If you need $50,000 annually and your Year 1 conversion (now mature) has grown to $60,000, you withdraw $50,000 tax-free and penalty-free. The remaining $10,000 continues growing tax-free. Do not withdraw from immature rungs—this triggers the 10% penalty on that portion. Your brokerage's tax reporting should clearly separate mature conversions from immature ones.</p>
+                        <p>Once your first ladder rung matures (5 years after Year 1 conversion), you can begin withdrawals. Withdraw only from mature rungs. If you need $50,000 annually and your Year 1 conversion (now mature) has grown to $60,000, you withdraw $50,000 tax-free and penalty-free. The remaining $10,000 continues growing tax-free. Do not withdraw from immature rungs, this triggers the 10% penalty on that portion. Your brokerage's tax reporting should clearly separate mature conversions from immature ones.</p>
 
                         <h3>Step 8: Transition to Age 59½ and Standard Retirement</h3>
                         <p>Once you turn 59½, the entire Roth IRA becomes accessible with no penalties. Your ladder's purpose transitions from "access tool" to "wealth repository." At this point, you can take qualified distributions from the Roth entirely tax-free. If your ladder has grown to $800,000 by age 59, you now have tax-free income access for life. You can also switch to standard Roth IRA distribution rules and begin Required Minimum Distributions at age 73 if applicable (Roth IRAs have no RMD during the account owner's lifetime, but beneficiaries do).</p>
@@ -491,55 +480,55 @@
                         <h3>The Ladder Plan</h3>
                         <p>Sarah builds a 15-year conversion ladder ($60,000 annually × 15 years = $900,000 total need, but she only has $500,000, so she'll combine this with taxable account withdrawals). Here's her year-by-year conversion schedule:</p>
 
-                        <div style="background: var(--cream-dark); padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem; overflow-x: auto">
-                            <div class="table-scroll"><table class="data-table" style="width: 100%; border-collapse: collapse; font-size: 0.9rem">
-                                <tr style="background: var(--cream-dark); font-weight: bold">
-                                    <td style="padding: 0.75rem; border: 1px solid #10b981">Year</td>
-                                    <td style="padding: 0.75rem; border: 1px solid #10b981">Conversion Amount</td>
-                                    <td style="padding: 0.75rem; border: 1px solid #10b981">Tax Bracket</td>
-                                    <td style="padding: 0.75rem; border: 1px solid #10b981">Est. Tax Owed</td>
-                                    <td style="padding: 0.75rem; border: 1px solid #10b981">Matures</td>
+                        <div style="overflow-x: auto">
+                            <div class="table-inset"><table class="table--zebra">
+                                <tr>
+                                    <td>Year</td>
+                                    <td>Conversion Amount</td>
+                                    <td>Tax Bracket</td>
+                                    <td>Est. Tax Owed</td>
+                                    <td>Matures</td>
                                 </tr>
                                 <tr>
-                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb">2026</td>
-                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb">$33,000</td>
-                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb">22%</td>
-                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb">$7,260</td>
-                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb">2031</td>
-                                </tr>
-                                <tr style="background: var(--cream)">
-                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb">2027</td>
-                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb">$33,000</td>
-                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb">22%</td>
-                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb">$7,260</td>
-                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb">2032</td>
+                                    <td>2026</td>
+                                    <td>$33,000</td>
+                                    <td>22%</td>
+                                    <td>$7,260</td>
+                                    <td>2031</td>
                                 </tr>
                                 <tr>
-                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb">2028</td>
-                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb">$33,000</td>
-                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb">22%</td>
-                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb">$7,260</td>
-                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb">2033</td>
-                                </tr>
-                                <tr style="background: var(--cream)">
-                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb">2029</td>
-                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb">$33,000</td>
-                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb">24%</td>
-                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb">$7,920</td>
-                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb">2034</td>
+                                    <td>2027</td>
+                                    <td>$33,000</td>
+                                    <td>22%</td>
+                                    <td>$7,260</td>
+                                    <td>2032</td>
                                 </tr>
                                 <tr>
-                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb">2030</td>
-                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb">$35,000</td>
-                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb">24%</td>
-                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb">$8,400</td>
-                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb">2035</td>
+                                    <td>2028</td>
+                                    <td>$33,000</td>
+                                    <td>22%</td>
+                                    <td>$7,260</td>
+                                    <td>2033</td>
+                                </tr>
+                                <tr>
+                                    <td>2029</td>
+                                    <td>$33,000</td>
+                                    <td>24%</td>
+                                    <td>$7,920</td>
+                                    <td>2034</td>
+                                </tr>
+                                <tr>
+                                    <td>2030</td>
+                                    <td>$35,000</td>
+                                    <td>24%</td>
+                                    <td>$8,400</td>
+                                    <td>2035</td>
                                 </tr>
                             </table></div>
                         </div>
 
                         <h3>The Tax Impact Analysis</h3>
-                        <p>Over 15 years of conversions, Sarah will pay approximately $120,000-$140,000 in total conversion taxes (at blended rates of 22-24%). However, she converts $500,000 of pre-tax retirement assets. If she took this $500,000 as traditional withdrawals after age 59½ in a single year at a 35% rate, she'd owe $175,000 in taxes. By spreading conversions across 15 years while semi-retired (lower tax bracket), she saves $35,000-$55,000 in taxes. Plus, her $500,000 compounds tax-free in the Roth—an additional advantage of hundreds of thousands in growth.</p>
+                        <p>Over 15 years of conversions, Sarah will pay approximately $120,000-$140,000 in total conversion taxes (at blended rates of 22-24%). However, she converts $500,000 of pre-tax retirement assets. If she took this $500,000 as traditional withdrawals after age 59½ in a single year at a 35% rate, she'd owe $175,000 in taxes. By spreading conversions across 15 years while semi-retired (lower tax bracket), she saves $35,000-$55,000 in taxes. Plus, her $500,000 compounds tax-free in the Roth, an additional advantage of hundreds of thousands in growth.</p>
 
                         <h3>Retirement Income Construction</h3>
                         <p>Starting at age 45 (semi-retirement), Sarah's income structure looks like:</p>
@@ -574,7 +563,7 @@
                         <p>Use tax-loss harvesting to generate capital losses offsetting the conversion's taxable amount. Example: You harvest $30,000 in capital losses from a poorly performing position. Execute a $50,000 Roth conversion ($50,000 would normally create $11,000-$12,000 in taxes at 22-24% rate). The $30,000 loss offsets $30,000 of the $50,000 conversion, reducing taxable conversion income to $20,000. Tax owed drops to $4,400-$4,800. You've effectively pre-paid conversion taxes with loss harvesting. This works particularly well for taxable account investors managing concentrated positions.</p>
 
                         <h3>Strategy 4: Coordinate with Charitable Giving and QCDs</h3>
-                        <p>If you plan to give to charity anyway, time large charitable donations alongside conversion years. Example: You intend to donate $20,000 to your favorite charity. Execute this in a high-conversion year when your income is already elevated. Better yet, if you're 70½+, use a Qualified Charitable Distribution (QCD)—donate directly from your Traditional IRA to charity (up to $25,000 per person per year per Notice 2022-16). QCDs don't increase taxable income, so they reduce the tax hit from conversions. A $50,000 conversion + $25,000 QCD in the same year might result in only $25,000-$30,000 of taxable conversion income instead of $50,000.</p>
+                        <p>If you plan to give to charity anyway, time large charitable donations alongside conversion years. Example: You intend to donate $20,000 to your favorite charity. Execute this in a high-conversion year when your income is already elevated. Better yet, if you're 70½+, use a Qualified Charitable Distribution (QCD), donate directly from your Traditional IRA to charity (up to $25,000 per person per year per Notice 2022-16). QCDs don't increase taxable income, so they reduce the tax hit from conversions. A $50,000 conversion + $25,000 QCD in the same year might result in only $25,000-$30,000 of taxable conversion income instead of $50,000.</p>
 
                         <h3>Strategy 5: Stagger Ladder Rungs by Conversion Dollar Amount</h3>
                         <p>Rather than equal ladder rungs ($50,000 each year), vary them: $30,000 in high-income years, $60,000 in low-income years, $45,000 in moderate years. This optimizes tax brackets year by year. Your average conversion might still be $50,000 annually, but by concentrating conversions in lower-income years, you pay lower blended rates overall. If you're semi-retired with variable consulting income, years with $30,000 income are ideal for $80,000 conversions; years with $100,000 income get only $30,000 conversions.</p>
@@ -583,17 +572,12 @@
                         <p>Married couples can each execute independent ladders if both have retirement accounts. Couple with $400,000 in combined IRAs ($200,000 each) can execute: Spouse A converts $50,000 annually, Spouse B converts $50,000 annually = $100,000 total annual conversions. If filing jointly at 24% bracket normally, but semi-retired collectively at 22%, they save 2% on every conversion dollar: $100,000 × 2% = $2,000 annually tax savings. Over 10 years = $20,000 total tax savings. Plus, they can more efficiently manage pro-rata rules by isolating each spouse's IRA accounts.</p>
 
                         <!-- Common Mistakes -->
-                        <aside class="guide-inset">
-                            <figure class="pull-quote">
-                                <blockquote><p>Married couples can each execute independent ladders if both have retirement accounts.</p></blockquote>
-                            </figure>
-                        </aside>
 
                         <h2 id="common-mistakes-pitfalls-to-avoid">Common Mistakes: Pitfalls to Avoid</h2>
                         <p>Even well-intentioned early retirees make costly errors executing conversion ladders. Understanding these mistakes helps you avoid them.</p>
 
                         <h3>Mistake 1: Forgetting to File Form 8606</h3>
-                        <p>The most common error. You execute a $50,000 conversion but fail to file Form 8606 with your tax return. The IRS doesn't recognize your conversion and treats the entire $50,000 as a regular income distribution—taxable at ordinary rates plus potentially the 10% early withdrawal penalty. You get double-taxed: once on conversion (you paid taxes thinking this was legitimate), then again when IRS reassesses. File Form 8606 every single conversion year, every time. No exceptions.</p>
+                        <p>The most common error. You execute a $50,000 conversion but fail to file Form 8606 with your tax return. The IRS doesn't recognize your conversion and treats the entire $50,000 as a regular income distribution, taxable at ordinary rates plus potentially the 10% early withdrawal penalty. You get double-taxed: once on conversion (you paid taxes thinking this was legitimate), then again when IRS reassesses. File Form 8606 every single conversion year, every time. No exceptions.</p>
 
                         <h3>Mistake 2: Ignoring the Pro-Rata Rule</h3>
                         <p>You have a $100,000 SEP-IRA from past self-employment. You try to execute a "clean" $50,000 Backdoor Roth assuming only this amount gets taxed. Wrong. Pro-rata rule says: ($100,000 / $150,000 total pre-tax) × $50,000 = $33,333 is taxable. Your conversion costs $8,000 in taxes instead of planned $0. This mistake costs thousands. Always calculate pro-rata implications before converting. If you have pre-tax balances, execute reverse rollovers to 401(k) first to remove them from pro-rata calculations.</p>
@@ -605,7 +589,7 @@
                         <p>You convert $50,000 from Traditional to Roth and owe $12,000 in taxes. You take $12,000 from the newly funded Roth IRA to pay taxes. This violates the "non-distribution" rule and is treated as a premature distribution triggering the 10% penalty. Your Roth account depletes to $38,000 instead of $50,000. Always pay conversion taxes from non-retirement accounts (taxable brokerage, checking, savings). This preserves the full conversion amount for tax-free growth.</p>
 
                         <h3>Mistake 5: Creating a Ladder Without Advance Planning</h3>
-                        <p>You decide at age 48 that you want to retire in 6 months. You try to execute a 10-year ladder starting immediately. This doesn't work—your first rung won't mature until 5 years, requiring income from other sources for the first 5 years. You either need substantial taxable assets or must work longer. Begin ladder planning 5-7 years before your target retirement date. This allows first rungs to mature within your early-retirement timeline.</p>
+                        <p>You decide at age 48 that you want to retire in 6 months. You try to execute a 10-year ladder starting immediately. This doesn't work, your first rung won't mature until 5 years, requiring income from other sources for the first 5 years. You either need substantial taxable assets or must work longer. Begin ladder planning 5-7 years before your target retirement date. This allows first rungs to mature within your early-retirement timeline.</p>
 
                         <h3>Mistake 6: Miscalculating Your Income Needs and Ladder Size</h3>
                         <p>You estimate $50,000 annual retirement needs and build a $500,000 ladder (10 years × $50,000). Then inflation is higher than expected, healthcare costs spike, or investment returns disappoint. Your ladder becomes insufficient. Calculate conservatively. If you might need $60,000, build a ladder sized for that. Better to have excess that compounds tax-free than insufficient income forcing you back to work or triggering early Social Security at 62.</p>
@@ -614,7 +598,7 @@
                         <h2 id="comparison-roth-conversion-ladder-vs-alternative-strategies">Comparison: Roth Conversion Ladder vs. Alternative Strategies</h2>
                         <p>How does the Roth Conversion Ladder compare to other early-retirement income strategies? Understanding trade-offs helps you choose the right approach.</p>
 
-                        <div class="table-scroll"><table class="data-table">
+                        <div class="table-inset"><table class="table--zebra">
                             <thead>
                                 <tr>
                                     <th>Strategy</th>
@@ -664,11 +648,11 @@
                         </table></div>
 
                         <h3>Head-to-Head Comparison Analysis</h3>
-                        <p><strong>Roth Ladder vs. SEPP:</strong> Both allow pre-59½ access, but SEPP locks you into a specific withdrawal amount for 5+ years based on IRS calculations (IRC Section 72(t)(4)). Ladder is flexible—you control amounts annually. Tax-wise, SEPP distributions are fully taxable (ordinary income); Ladder conversions are taxed upfront, but withdrawals are tax-free. Verdict: Ladder wins for flexibility, though it requires longer planning.</p>
+                        <p><strong>Roth Ladder vs. SEPP:</strong> Both allow pre-59½ access, but SEPP locks you into a specific withdrawal amount for 5+ years based on IRS calculations (IRC Section 72(t)(4)). Ladder is flexible, you control amounts annually. Tax-wise, SEPP distributions are fully taxable (ordinary income); Ladder conversions are taxed upfront, but withdrawals are tax-free. Verdict: Ladder wins for flexibility, though it requires longer planning.</p>
 
                         <p><strong>Roth Ladder vs. Taxable Accounts:</strong> If you have substantial taxable savings, withdrawals face capital gains tax (~15-20% for long-term gains) but with zero penalties and immediate access. Roth Ladder requires pre-planning but offers complete tax-free withdrawals after 5-year maturity. Verdict: Ladder wins for tax efficiency if you have time to plan; taxable accounts win for flexibility.</p>
 
-                        <p><strong>Roth Ladder vs. Working Longer:</strong> Simplest option is to work until 59½ and then access retirement accounts penalty-free. This eliminates conversion complexity but requires additional working years. If you value early retirement more than simplicity, Ladder is worthwhile. Each extra working year costs 1-2 years of early retirement—significant over a lifetime.</p>
+                        <p><strong>Roth Ladder vs. Working Longer:</strong> Simplest option is to work until 59½ and then access retirement accounts penalty-free. This eliminates conversion complexity but requires additional working years. If you value early retirement more than simplicity, Ladder is worthwhile. Each extra working year costs 1-2 years of early retirement, significant over a lifetime.</p>
 
                         <!-- Tools & Resources -->
                         <h2 id="tools-calculators-and-resources">Tools, Calculators, and Resources</h2>
@@ -722,253 +706,154 @@
                     </div>
 
                     <!-- Sidebar -->
-                    <div class="sidebar">
-                        <div class="sidebar-card">
-                            <div class="sidebar-card__title">Key Benefits</div>
-                            <ul class="benefits-list">
-                                <li>
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                                        <polyline points="22 4 12 14.01 9 11.01"/>
-                                    </svg>
-                                    <span>Access retirement funds before 59½ penalty-free</span>
-                                </li>
-                                <li>
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                                        <polyline points="22 4 12 14.01 9 11.01"/>
-                                    </svg>
-                                    <span>Withdraw converted funds completely tax-free</span>
-                                </li>
-                                <li>
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                                        <polyline points="22 4 12 14.01 9 11.01"/>
-                                    </svg>
-                                    <span>Spread conversion taxes across multiple years</span>
-                                </li>
-                                <li>
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                                        <polyline points="22 4 12 14.01 9 11.01"/>
-                                    </svg>
-                                    <span>Complete flexibility in withdrawal timing</span>
-                                </li>
-                                <li>
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                                        <polyline points="22 4 12 14.01 9 11.01"/>
-                                    </svg>
-                                    <span>Enable early retirement with lower tax burden</span>
-                                </li>
-                                <li>
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                                        <polyline points="22 4 12 14.01 9 11.01"/>
-                                    </svg>
-                                    <span>Works with multiple IRA types</span>
-                                </li>
-                            </ul>
-                        </div>
 
-                        <div class="sidebar-card">
-                            <div class="sidebar-card__title">Related Strategies</div>
-                            <ul class="related-strategies">
-                                <li>
-                                    <a href="/tax-strategies/backdoor-roth-ira">
-                                        <span>Backdoor Roth IRA</span>
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/tax-strategies/">
-                                        <span>All Tax Strategies</span>
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                </div>
             </div>
         </section>
 
         <!-- FAQ Section -->
         <section class="faq-section">
             <div class="container-custom">
-                <h2 id="frequently-asked-questions-2" class="faq-section__title">Frequently Asked Questions</h2>
-                <div class="faq-list">
-                    <div class="faq-item">
-                        <button class="faq-toggle" aria-expanded="false">
-                            <span>What is a Roth Conversion Ladder?</span>
-                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">A Roth Conversion Ladder is a multi-year tax strategy where you convert portions of a Traditional IRA or 401(k) to a Roth IRA annually. Each conversion "rung" becomes available for withdrawal after 5 years tax-free. This allows early retirees to systematically access retirement funds before age 59½ without penalties or taxes.</div>
-                    </div>
+                <h2 id="frequently-asked-questions-2">Frequently Asked Questions</h2>
+                <div class="faq">
+                    <details class="faq__item" >
+                        <summary itemprop="name">What is a Roth Conversion Ladder?</summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            A Roth Conversion Ladder is a multi-year tax strategy where you convert portions of a Traditional IRA or 401(k) to a Roth IRA annually. Each conversion "rung" becomes available for withdrawal after 5 years tax-free. This allows early retirees to systematically access retirement funds before age 59½ without penalties or taxes.
+                        </div>
+                    </details>
 
-                    <div class="faq-item">
-                        <button class="faq-toggle" aria-expanded="false">
-                            <span>Can I withdraw Roth conversions without penalty before age 59½?</span>
-                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">Yes, if the 5-year holding period has elapsed. Per IRC Section 408A(d)(2)(B), converted funds can be withdrawn tax-free and penalty-free after 5 tax years in the Roth IRA, regardless of your age. This is the key advantage—it bypasses the 10% early withdrawal penalty and income taxes that normally apply to pre-59½ Traditional IRA withdrawals.</div>
-                    </div>
+                    <details class="faq__item" >
+                        <summary itemprop="name">Can I withdraw Roth conversions without penalty before age 59½?</summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            Yes, if the 5-year holding period has elapsed. Per IRC Section 408A(d)(2)(B), converted funds can be withdrawn tax-free and penalty-free after 5 tax years in the Roth IRA, regardless of your age. This is the key advantage, it bypasses the 10% early withdrawal penalty and income taxes that normally apply to pre-59½ Traditional IRA withdrawals.
+                        </div>
+                    </details>
 
-                    <div class="faq-item">
-                        <button class="faq-toggle" aria-expanded="false">
-                            <span>How does the 5-year rule work?</span>
-                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">Each conversion has its own 5-year clock starting January 1 of the conversion year. A 2026 conversion becomes withdrawal-eligible starting January 1, 2031. This is separate from the 5-year rule for Roth original contributions. Track each conversion year carefully—conversions from different years have different maturity dates.</div>
-                    </div>
+                    <details class="faq__item" >
+                        <summary itemprop="name">How does the 5-year rule work?</summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            Each conversion has its own 5-year clock starting January 1 of the conversion year. A 2026 conversion becomes withdrawal-eligible starting January 1, 2031. This is separate from the 5-year rule for Roth original contributions. Track each conversion year carefully, conversions from different years have different maturity dates.
+                        </div>
+                    </details>
 
-                    <div class="faq-item">
-                        <button class="faq-toggle" aria-expanded="false">
-                            <span>What taxes do I owe when converting to Roth?</span>
-                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">You owe ordinary income tax on the converted amount in the year of conversion. If you convert $50,000 from a Traditional IRA with all pre-tax money, you owe tax on $50,000 at your marginal tax rate. This is why spreading conversions over multiple years is advantageous—it keeps you in lower tax brackets. Pay taxes from non-retirement accounts to preserve the full converted amount.</div>
-                    </div>
+                    <details class="faq__item" >
+                        <summary itemprop="name">What taxes do I owe when converting to Roth?</summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            You owe ordinary income tax on the converted amount in the year of conversion. If you convert $50,000 from a Traditional IRA with all pre-tax money, you owe tax on $50,000 at your marginal tax rate. This is why spreading conversions over multiple years is advantageous, it keeps you in lower tax brackets. Pay taxes from non-retirement accounts to preserve the full converted amount.
+                        </div>
+                    </details>
 
-                    <div class="faq-item">
-                        <button class="faq-toggle" aria-expanded="false">
-                            <span>Is the Roth Conversion Ladder different from a Backdoor Roth?</span>
-                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">Yes. Backdoor Roth is converting a single $7,000-$8,000 annual contribution to bypass income limits. Roth Conversion Ladder involves much larger amounts ($50,000-$100,000+) converted strategically across multiple years to create accessible income for early retirement. Both use conversions but serve different purposes.</div>
-                    </div>
+                    <details class="faq__item" >
+                        <summary itemprop="name">Is the Roth Conversion Ladder different from a Backdoor Roth?</summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            Yes. Backdoor Roth is converting a single $7,000-$8,000 annual contribution to bypass income limits. Roth Conversion Ladder involves much larger amounts ($50,000-$100,000+) converted strategically across multiple years to create accessible income for early retirement. Both use conversions but serve different purposes.
+                        </div>
+                    </details>
 
-                    <div class="faq-item">
-                        <button class="faq-toggle" aria-expanded="false">
-                            <span>Does the pro-rata rule apply to ladder conversions?</span>
-                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">Yes, per IRC Section 408(d)(2). If you have any pre-tax IRA balances, conversions are proportionally split between pre-tax and after-tax money. If 90% of your IRAs are pre-tax, then 90% of your conversion is taxable. This makes ladders problematic if you have existing pre-tax IRA balances. Solution: Execute reverse rollovers to a 401(k) first to remove these from pro-rata calculations.</div>
-                    </div>
+                    <details class="faq__item" >
+                        <summary itemprop="name">Does the pro-rata rule apply to ladder conversions?</summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            Yes, per IRC Section 408(d)(2). If you have any pre-tax IRA balances, conversions are proportionally split between pre-tax and after-tax money. If 90% of your IRAs are pre-tax, then 90% of your conversion is taxable. This makes ladders problematic if you have existing pre-tax IRA balances. Solution: Execute reverse rollovers to a 401(k) first to remove these from pro-rata calculations.
+                        </div>
+                    </details>
 
-                    <div class="faq-item">
-                        <button class="faq-toggle" aria-expanded="false">
-                            <span>Can I do a ladder with a 401(k)?</span>
-                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">Yes, through an in-service conversion or direct rollover. First, roll your 401(k) to a Traditional IRA (if your plan allows). Then convert to Roth. Not all 401(k) plans permit this—verify with your plan administrator. Once converted to IRA, pro-rata rules apply if you have other pre-tax IRAs.</div>
-                    </div>
+                    <details class="faq__item" >
+                        <summary itemprop="name">Can I do a ladder with a 401(k)?</summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            Yes, through an in-service conversion or direct rollover. First, roll your 401(k) to a Traditional IRA (if your plan allows). Then convert to Roth. Not all 401(k) plans permit this, verify with your plan administrator. Once converted to IRA, pro-rata rules apply if you have other pre-tax IRAs.
+                        </div>
+                    </details>
 
-                    <div class="faq-item">
-                        <button class="faq-toggle" aria-expanded="false">
-                            <span>How long should my ladder be?</span>
-                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">Ladder length depends on your early retirement timeline. If retiring at 50 and living to 100, you need income until age 59.5 (9.5 years), so a 9-10 year ladder makes sense. Each rung should roughly equal your annual income need. Common ladder lengths range 5-15 years depending on retirement age and expenses.</div>
-                    </div>
+                    <details class="faq__item" >
+                        <summary itemprop="name">How long should my ladder be?</summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            Ladder length depends on your early retirement timeline. If retiring at 50 and living to 100, you need income until age 59.5 (9.5 years), so a 9-10 year ladder makes sense. Each rung should roughly equal your annual income need. Common ladder lengths range 5-15 years depending on retirement age and expenses.
+                        </div>
+                    </details>
 
-                    <div class="faq-item">
-                        <button class="faq-toggle" aria-expanded="false">
-                            <span>Are there taxes on Roth withdrawals?</span>
-                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">Zero federal income tax if you're withdrawing converted principal (not earnings) from mature conversions. Qualified Roth IRA distributions are entirely tax-free. No federal tax, no state tax, no Medicare premium surcharges. This is the entire advantage of the ladder strategy.</div>
-                    </div>
+                    <details class="faq__item" >
+                        <summary itemprop="name">Are there taxes on Roth withdrawals?</summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            Zero federal income tax if you're withdrawing converted principal (not earnings) from mature conversions. Qualified Roth IRA distributions are entirely tax-free. No federal tax, no state tax, no Medicare premium surcharges. This is the entire advantage of the ladder strategy.
+                        </div>
+                    </details>
 
-                    <div class="faq-item">
-                        <button class="faq-toggle" aria-expanded="false">
-                            <span>Will conversions trigger Net Investment Income Tax?</span>
-                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">Yes, conversions can trigger the 3.8% Net Investment Income Tax if your Modified Adjusted Gross Income exceeds $200,000 (single) or $250,000 (married filing jointly). For early retirees with low earned income, this is typically not a concern. High earners should model the NIIT impact on large conversions.</div>
-                    </div>
+                    <details class="faq__item" >
+                        <summary itemprop="name">Will conversions trigger Net Investment Income Tax?</summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            Yes, conversions can trigger the 3.8% Net Investment Income Tax if your Modified Adjusted Gross Income exceeds $200,000 (single) or $250,000 (married filing jointly). For early retirees with low earned income, this is typically not a concern. High earners should model the NIIT impact on large conversions.
+                        </div>
+                    </details>
 
-                    <div class="faq-item">
-                        <button class="faq-toggle" aria-expanded="false">
-                            <span>Can I use Roth original contributions in a ladder?</span>
-                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">Yes. Roth original contributions can be withdrawn anytime tax-free and penalty-free. They have their own separate 5-year rule and don't interfere with conversions. In a complete ladder strategy, original contributions provide a flexibility "cushion" for emergencies, while conversions fund primary income needs.</div>
-                    </div>
+                    <details class="faq__item" >
+                        <summary itemprop="name">Can I use Roth original contributions in a ladder?</summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            Yes. Roth original contributions can be withdrawn anytime tax-free and penalty-free. They have their own separate 5-year rule and don't interfere with conversions. In a complete ladder strategy, original contributions provide a flexibility "cushion" for emergencies, while conversions fund primary income needs.
+                        </div>
+                    </details>
 
-                    <div class="faq-item">
-                        <button class="faq-toggle" aria-expanded="false">
-                            <span>What's the difference between a ladder and Rule 72(t)?</span>
-                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">Rule 72(t) (Substantially Equal Periodic Payments) allows SEPP distributions from Traditional IRAs pre-59½ without penalty, but distributions are fully taxable as ordinary income. Ladder conversions are taxed upfront, but withdrawals are tax-free. Ladder provides better tax efficiency; 72(t) requires less planning but locks you into payment amounts.</div>
-                    </div>
+                    <details class="faq__item" >
+                        <summary itemprop="name">What&#39;s the difference between a ladder and Rule 72(t)?</summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            Rule 72(t) (Substantially Equal Periodic Payments) allows SEPP distributions from Traditional IRAs pre-59½ without penalty, but distributions are fully taxable as ordinary income. Ladder conversions are taxed upfront, but withdrawals are tax-free. Ladder provides better tax efficiency; 72(t) requires less planning but locks you into payment amounts.
+                        </div>
+                    </details>
 
-                    <div class="faq-item">
-                        <button class="faq-toggle" aria-expanded="false">
-                            <span>Can I combine ladder with other strategies?</span>
-                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">Absolutely. Advanced practitioners combine ladders with Rule 72(t) SEPP, Backdoor Roth contributions, tax-loss harvesting, and Qualified Charitable Distributions. Each strategy layers tax benefits, creating comprehensive early retirement income with minimal tax burden.</div>
-                    </div>
+                    <details class="faq__item" >
+                        <summary itemprop="name">Can I combine ladder with other strategies?</summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            Absolutely. Advanced practitioners combine ladders with Rule 72(t) SEPP, Backdoor Roth contributions, tax-loss harvesting, and Qualified Charitable Distributions. Each strategy layers tax benefits, creating comprehensive early retirement income with minimal tax burden.
+                        </div>
+                    </details>
 
-                    <div class="faq-item">
-                        <button class="faq-toggle" aria-expanded="false">
-                            <span>What if I need more income than the ladder provides?</span>
-                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">Supplement with taxable account withdrawals (capital gains tax ~15-20%), earned income from part-time work, spouse's income, or other sources. Many early retirees live below the ladder's available income, investing the surplus. The ladder provides the tax-free foundation; other income sources provide flexibility.</div>
-                    </div>
+                    <details class="faq__item" >
+                        <summary itemprop="name">What if I need more income than the ladder provides?</summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            Supplement with taxable account withdrawals (capital gains tax ~15-20%), earned income from part-time work, spouse's income, or other sources. Many early retirees live below the ladder's available income, investing the surplus. The ladder provides the tax-free foundation; other income sources provide flexibility.
+                        </div>
+                    </details>
 
-                    <div class="faq-item">
-                        <button class="faq-toggle" aria-expanded="false">
-                            <span>Are there income limits for Roth conversions?</span>
-                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">No income limits for conversions themselves per IRC Section 408A(c)(3). However, high earners should track Modified Adjusted Gross Income because conversions increase MAGI, potentially triggering higher Medicare premiums and Net Investment Income Tax. Model the full tax impact before large conversions.</div>
-                    </div>
+                    <details class="faq__item" >
+                        <summary itemprop="name">Are there income limits for Roth conversions?</summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            No income limits for conversions themselves per IRC Section 408A(c)(3). However, high earners should track Modified Adjusted Gross Income because conversions increase MAGI, potentially triggering higher Medicare premiums and Net Investment Income Tax. Model the full tax impact before large conversions.
+                        </div>
+                    </details>
                 </div>
             </div>
         </section>
 
         <!-- CTA Section -->
-        <section class="cta-section">
+            <section class="guide-close">
             <div class="container-custom">
-                <div class="cta-card">
-                    <h2 id="ready-to-build-your-early-retirement-strategy" class="cta-card__title">Ready to Build Your Early Retirement Strategy?</h2>
-                    <p class="cta-card__text">A Roth Conversion Ladder could unlock thousands in tax savings and enable your early retirement dreams. Explore how this strategy fits into your comprehensive financial plan.</p>
-                    <a href="/blog/" class="cta-card__button">
-                        <span>Explore Our Resources</span>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </a>
+                <section class="source-note" aria-label="Primary sources">
+            <h2 id="sources">Sources to check</h2>
+            <p>Check primary guidance and your own records before you treat any page as a final answer.</p>
+            <ul>
+              <li><a href="https://www.irs.gov/retirement-plans" rel="noopener noreferrer" target="_blank">IRS retirement plan guidance and IRA rules</a></li>
+<li><a href="https://www.medicare.gov" rel="noopener noreferrer" target="_blank">Medicare premium and IRMAA guidance</a></li>
+<li><a href="https://www.irs.gov/forms-instructions" rel="noopener noreferrer" target="_blank">Current IRS forms, instructions, and publications for the relevant tax year</a></li>
+<li>Your actual account statements, payroll reports, entity records, and advisor memos</li>
+            </ul>
+          </section>
+                <div class="do">
+                    <p class="do__label">Do this next</p>
+                    <ul>
+                        <li>Calculate your total income need through age 59½</li>
+                        <li>Audit your current IRA balances and pro-rata rule</li>
+                        <li>Map your conversion Schedule and tax brackets</li>
+                        <li>Execute year 1 conversion and file Form 8606</li>
+                    </ul>
                 </div>
+                <div class="cta">
+                    <h2 id="where-to-go-next">Where to go next</h2>
+                    <p>The library lists every strategy in one table. The compare guides put two of them side by side and show which facts decide it.</p>
+                    <p class="cta__actions">
+                        <a class="btn-primary" href="/tax-strategies">Open the strategy library</a>
+                        <a class="btn-secondary" href="/compare">Compare two strategies</a>
+                    </p>
+                </div>
+                <p class="guide-note">Educational content only. It is not individual tax, legal, or investment advice. Confirm your own facts with a qualified professional before you file.</p>
             </div>
         </section>
     </main>
@@ -1014,16 +899,5 @@
 
     <!-- FAQ Script -->
     <script defer src="/assets/js/main.js?v=5efea1b4"></script>
-    <script>
-        document.querySelectorAll('.faq-toggle').forEach(function (button) {
-            button.addEventListener('click', function () {
-                var expanded = button.getAttribute('aria-expanded') === 'true';
-                button.setAttribute('aria-expanded', String(!expanded));
-                if (button.nextElementSibling) {
-                    button.nextElementSibling.classList.toggle('faq-answer--open');
-                }
-            });
-        });
-    </script>
 </body>
 </html>

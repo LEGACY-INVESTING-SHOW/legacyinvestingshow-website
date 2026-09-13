@@ -201,9 +201,9 @@ function renderPostRow(post) {
     const description = post.frontmatter.description || '';
 
     return `                        <li>
-                            <h3 class="guide-row__title"><a href="/blog/${esc(post.slug)}">${esc(post.frontmatter.title)}</a></h3>
-                            ${description ? `<p>${esc(description)}</p>` : ''}
-                            ${date ? `<time class="guide-row__date" datetime="${esc(isoDate(post.frontmatter.date))}">${esc(date)}</time>` : ''}
+                            <p class="list-rows__title"><a href="/blog/${esc(post.slug)}">${esc(post.frontmatter.title)}</a></p>
+                            ${description ? `<p class="list-rows__desc">${esc(description)}</p>` : ''}
+                            ${date ? `<p class="list-rows__meta"><time datetime="${esc(isoDate(post.frontmatter.date))}">${esc(date)}</time></p>` : ''}
                         </li>`;
 }
 
@@ -235,7 +235,7 @@ function renderHead({ title, description, canonical, extraSchema = [] }) {
     <meta name="twitter:title" content="${esc(title)} | Legacy Investing Show">
     <meta name="twitter:description" content="${esc(description)}">
     <meta name="twitter:image" content="${SITE_URL}/assets/images/og-blog.jpg">
-    <meta name="theme-color" content="#FAF7F2">
+    <meta name="theme-color" content="#FBF8F1">
     <link rel="icon" href="/favicon.ico" sizes="32x32">
     ${renderHeadAssets()}
     <link rel="stylesheet" href="/assets/css/guides.css">
@@ -291,51 +291,41 @@ ${renderHead({ title: topic.title, description: topic.description, canonical, ex
     ${renderSiteHeader('/blog')}
 
     <main id="main">
-        <section class="guide-opener">
+        <section class="opener">
             <div class="container-custom">
-                <nav aria-label="Breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Home</a></li>
-                        <li class="breadcrumb__item"><a href="/topics" class="breadcrumb__link">Topics</a></li>
-                        <li class="breadcrumb__item"><span class="breadcrumb__current">${esc(topic.title)}</span></li>
-                    </ol>
-                </nav>
-                <div class="opener">
-                    <div>
-                        <h1 class="opener__title">${esc(topic.title)}</h1>
-                        <p class="opener__lede">${esc(topic.intro)}</p>
-                    </div>
-                    <aside class="opener__aside">
-                        <div class="figure figure--gold">
-                            <span class="figure__value">${topPosts.length}</span>
-                            <span class="figure__label">articles in this hub, newest first</span>
-                        </div>
-                    </aside>
+                <div class="col">
+                    <nav aria-label="Breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Home</a></li>
+                            <li class="breadcrumb__item"><a href="/topics" class="breadcrumb__link">Topics</a></li>
+                            <li class="breadcrumb__item"><span class="breadcrumb__current">${esc(topic.title)}</span></li>
+                        </ol>
+                    </nav>
+                    <h1 class="opener__title">${esc(topic.title)}</h1>
+                    <p class="opener__key">${topPosts.length} articles in this hub, newest first.</p>
+                    <p class="opener__lede">${esc(topic.intro)}</p>
                 </div>
             </div>
         </section>
 
-        <section class="section">
+        <section class="section section--rule">
             <div class="container-custom">
-                <div class="marginalia">
-                    <div class="marginalia__main sheet guide-sheet">
-                        <div class="section__head">
-                            <h2>Articles in this hub</h2>
-                            <p>Newest first. Every one is indexable and kept current.</p>
-                        </div>
-                        <ul class="guide-rows">
+                <div class="col">
+                    <h2 id="articles">Articles in this hub</h2>
+                    <ul class="list-rows">
 ${topPosts.map((post) => renderPostRow(post)).join('\n')}
+                    </ul>
+
+                    <div class="cta">
+                        <h2>Other topics</h2>
+                        <ul>
+${TOPIC_HUBS.filter((entry) => entry.slug !== topic.slug).map((entry) => `                            <li><a href="/topics/${esc(entry.slug)}">${esc(entry.title)}</a>. ${esc(entry.description)}</li>`).join('\n')}
                         </ul>
+                        <p class="cta__actions">
+                            <a href="/blog" class="btn-primary">The full archive</a>
+                            <a href="/tax-strategies" class="btn-secondary">Tax strategies</a>
+                        </p>
                     </div>
-                    <aside class="marginalia__aside guide-aside">
-                        <div>
-                            <p class="guide-aside__title">Other topics</p>
-                            <dl class="dl-terms">
-${TOPIC_HUBS.filter((entry) => entry.slug !== topic.slug).map((entry) => `                                <dt><a href="/topics/${esc(entry.slug)}">${esc(entry.title)}</a></dt>
-                                <dd>${esc(entry.description)}</dd>`).join('\n')}
-                            </dl>
-                        </div>
-                    </aside>
                 </div>
             </div>
         </section>
@@ -347,6 +337,7 @@ ${TOPIC_HUBS.filter((entry) => entry.slug !== topic.slug).map((entry) => `      
 </body>
 </html>`;
 }
+
 
 function renderTopicsIndex() {
     const canonical = `${SITE_URL}/topics`;
@@ -380,8 +371,8 @@ function renderTopicsIndex() {
     };
 
     const rows = TOPIC_HUBS.map((topic) => `                        <li>
-                            <h3 class="guide-row__title"><a href="/topics/${esc(topic.slug)}">${esc(topic.title)}</a></h3>
-                            <p>${esc(topic.description)}</p>
+                            <p class="list-rows__title"><a href="/topics/${esc(topic.slug)}">${esc(topic.title)}</a></p>
+                            <p class="list-rows__desc">${esc(topic.description)}</p>
                         </li>`).join('\n');
 
     return `<!DOCTYPE html>
@@ -396,64 +387,48 @@ ${renderHead({ title: 'Topics', description, canonical, extraSchema: [schema, br
     ${renderSiteHeader('/blog')}
 
     <main id="main">
-        <section class="guide-opener">
+        <section class="opener">
             <div class="container-custom">
-                <nav aria-label="Breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Home</a></li>
-                        <li class="breadcrumb__item"><span class="breadcrumb__current">Topics</span></li>
-                    </ol>
-                </nav>
-                <div class="opener">
-                    <div>
-                        <h1 class="opener__title">Topics</h1>
-                        <p class="opener__lede">The blog archive is broad. These hubs group the articles by the decision they help with, so a question leads to the strongest guides on it rather than to the newest post.</p>
-                    </div>
-                    <aside class="opener__aside">
-                        <div class="figure figure--gold">
-                            <span class="figure__value">${TOPIC_HUBS.length}</span>
-                            <span class="figure__label">reading paths through the archive</span>
-                        </div>
-                    </aside>
+                <div class="col">
+                    <nav aria-label="Breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Home</a></li>
+                            <li class="breadcrumb__item"><span class="breadcrumb__current">Topics</span></li>
+                        </ol>
+                    </nav>
+                    <h1 class="opener__title">Topics</h1>
+                    <p class="opener__key">${TOPIC_HUBS.length} reading paths through the archive.</p>
+                    <p class="opener__lede">The blog archive is broad. These hubs group the articles by the decision they help with, so a question leads to the strongest guides on it rather than to the newest post.</p>
                 </div>
             </div>
         </section>
 
-        <section class="section band--cream-dark">
+        <section class="section section--rule">
             <div class="container-custom">
-                <div class="section__head">
-                    <h2>The hubs</h2>
-                    <p>Start with the one that matches the decision in front of you.</p>
-                </div>
-                <dl class="dl-terms dl-terms--cols">
-${TOPIC_HUBS.map((topic) => `                    <dt><a href="/topics/${esc(topic.slug)}">${esc(topic.title)}</a></dt>
-                    <dd>${esc(topic.description)}</dd>`).join('\n')}
-                </dl>
-            </div>
-        </section>
+                <div class="col">
+                    <h2 id="hubs">The hubs</h2>
+                    <p class="section__summary">Start with the one that matches the decision in front of you.</p>
+                    <ul class="list-rows">
+${rows}
+                    </ul>
 
-        <section class="section">
-            <div class="container-custom">
-                <div class="marginalia">
-                    <div class="marginalia__main sheet guide-sheet">
-                        <div class="guide-prose">
-                            <h2>Elsewhere on the site</h2>
-                            <p>The hubs cover the article archive. The decision libraries sit alongside them: the strategy guides state a qualification test and a worked example, and the compare guides take two strategies that both sound right and show where each one wins.</p>
-                        </div>
+                    <div class="prose">
+                        <h2 id="elsewhere">Elsewhere on the site</h2>
+                        <p>The hubs cover the article archive. The decision libraries sit alongside them. The strategy guides state a qualification test and a worked example, and the compare guides take two strategies that both sound right and show where each one wins.</p>
                     </div>
-                    <aside class="marginalia__aside guide-aside">
-                        <div>
-                            <p class="guide-aside__title">Decision libraries</p>
-                            <dl class="dl-terms">
-                                <dt><a href="/tax-strategies">Tax strategies</a></dt>
-                                <dd>Every strategy guide in one table.</dd>
-                                <dt><a href="/compare">Compare guides</a></dt>
-                                <dd>Head-to-head decisions with a scorecard.</dd>
-                                <dt><a href="/blog">The full archive</a></dt>
-                                <dd>Everything, newest first.</dd>
-                            </dl>
-                        </div>
-                    </aside>
+
+                    <div class="cta">
+                        <h2>Decision libraries</h2>
+                        <ul>
+                            <li><a href="/tax-strategies">Tax strategies</a>. Every strategy guide in one table.</li>
+                            <li><a href="/compare">Compare guides</a>. Head-to-head decisions with a scorecard.</li>
+                            <li><a href="/blog">The full archive</a>. Everything, newest first.</li>
+                        </ul>
+                        <p class="cta__actions">
+                            <a href="/tax-strategies" class="btn-primary">Open the strategy library</a>
+                            <a href="/compare" class="btn-secondary">Compare two strategies</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -465,6 +440,7 @@ ${TOPIC_HUBS.map((topic) => `                    <dt><a href="/topics/${esc(topi
 </body>
 </html>`;
 }
+
 
 function build() {
     console.log('Building topic hubs...');

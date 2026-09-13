@@ -31,16 +31,15 @@
     <meta name="twitter:description" content="Complete guide to estimated tax payments. Learn quarterly payment requirements, calculation methods, and safe harbor rules.">
 
     <!-- Theme Color -->
-    <meta name="theme-color" content="#FAF7F2">
+    <meta name="theme-color" content="#FBF8F1">
 
     <!-- Favicon -->
     <link rel="icon" href="/favicon.ico" sizes="32x32">
 
     <!-- Stylesheet -->
-    <link rel="preload" href="/assets/fonts/dm-serif-display-400-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/assets/fonts/plus-jakarta-sans-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="/assets/css/styles.css?v=b6172e78">
-    <link rel="stylesheet" href="/assets/css/guides.css?v=9f8d9de9">
+    <link rel="preload" href="/assets/fonts/public-sans-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/guides.css">
 
     <!-- Schema Markup -->
     <script type="application/ld+json">
@@ -273,9 +272,10 @@
     <!-- Twitter Card fallback -->
     <meta name="twitter:image" content="https://www.legacyinvestingshow.com/assets/images/og-home.jpg">
 </head>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="display:none; visibility:hidden"></iframe></noscript>
+<body class="guide-page">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="visibility:hidden"></iframe></noscript>
     <!-- Skip to main content -->
-    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-navy text-white px-4 py-2 z-50">
+    <a href="#main" class="sr-only z-50">
         Skip to main content
     </a>
 
@@ -329,31 +329,21 @@
         <section class="guide-opener">
             <div class="container-custom">
                 <div class="opener">
-                    <div>
-                        <h1 class="opener__title">Estimated Tax Payments</h1>
-                        <p class="opener__lede">Master quarterly estimated taxes to avoid penalties, reduce cash flow surprises, and ensure IRS compliance. Complete calculation guide with safe harbor rules.</p>
-                        <p class="guide-opener__meta">IRS Reference: IRC Section 6654, IRC Section 6655, Form 1040-ES</p>
-                    </div>
-                    <aside class="opener__aside">
-                        <div class="figure figure--gold figure--long">
-                            <span class="figure__value">$500 - $5,000/year</span>
-                            <span class="figure__label">penalty cost</span>
-                        </div>
-                        <dl class="guide-dl">
-                            <div>
-                                <dt>Quarterly Deadlines</dt>
-                                <dd>April 15, June 15, Sept 15, Jan 15</dd>
-                            </div>
-                            <div>
-                                <dt>Complexity</dt>
-                                <dd>Intermediate</dd>
-                            </div>
-                            <div>
-                                <dt>Who Needs It</dt>
-                                <dd>Self-employed, investors, retirees</dd>
-                            </div>
-                        </dl>
-                    </aside>
+                    <h1>Estimated Tax Payments</h1>
+                    <p class="opener__key">Master quarterly estimated taxes to avoid penalties, reduce cash flow surprises, and ensure IRS compliance. Complete calculation guide with safe harbor rules.</p>
+                    <p class="words__label">At a glance</p>
+                    <dl class="words">
+                        <dt>Penalty cost</dt>
+                        <dd>$500 - $5,000/year</dd>
+                        <dt>Quarterly deadlines</dt>
+                        <dd>April 15, June 15, Sept 15, Jan 15</dd>
+                        <dt>Complexity</dt>
+                        <dd>Intermediate</dd>
+                        <dt>Who needs it</dt>
+                        <dd>Self-employed, investors, retirees</dd>
+                        <dt>IRS reference</dt>
+                        <dd>IRC Section 6654, IRC Section 6655, Form 1040-ES</dd>
+                    </dl>
                 </div>
             </div>
         </section>
@@ -361,10 +351,10 @@
         <!-- Content Section -->
         <section class="content-section">
             <div class="container-custom">
-                <div class="guide-layout">
-                    <details class="contents guide-contents" open>
+
+                    <details class="toc" open>
                         <summary>On this page</summary>
-                        <ol>
+                        <ul>
                             <li><a href="#what-are-estimated-tax-payments">What Are Estimated Tax Payments?</a></li>
                             <li><a href="#understanding-estimated-taxes-and-your-obligations">Understanding Estimated Taxes and Your Obligations</a></li>
                             <li><a href="#how-to-calculate-your-estimated-tax-payments">How to Calculate Your Estimated Tax Payments</a></li>
@@ -375,12 +365,11 @@
                             <li><a href="#tools-and-resources-for-managing-estimated-taxes">Tools and Resources for Managing Estimated Taxes</a></li>
                             <li><a href="#frequently-asked-questions-about-estimated-taxes">Frequently Asked Questions About Estimated Taxes</a></li>
                             <li><a href="#frequently-asked-questions">Frequently Asked Questions</a></li>
-                            <li><a href="#optimize-your-tax-strategy-today">Optimize Your Tax Strategy Today</a></li>
                             <li><a href="#related-tax-strategy-articles">Related Tax Strategy Articles</a></li>
-                        </ol>
+                        </ul>
                     </details>
-                    <div class="guide-column">
-                    <div class="prose-content">
+
+                    <div class="prose">
                         <h2 id="what-are-estimated-tax-payments">What Are Estimated Tax Payments?</h2>
                         <p>Estimated tax payments are quarterly payments of federal (and sometimes state) income taxes made by individuals whose tax liability cannot be fully covered through payroll withholding. These payments are required by the Internal Revenue Service under IRC Section 6654 and allow self-employed individuals, business owners, investors, and retirees to spread their annual tax burden across four installments throughout the year.</p>
                         <p>Unlike employees who have taxes withheld from their paychecks, self-employed individuals and investment income earners receive income without automatic tax withholding. The IRS requires these taxpayers to estimate their annual tax liability and pay it throughout the year in four equal (or reasonably equal) quarterly installments. Failure to make these payments can result in underpayment penalties and interest charges, even if the taxpayer ultimately owes no additional tax when filing their annual return.</p>
@@ -486,7 +475,8 @@
                             <li>Total annual tax: $25,300</li>
                             <li>Quarterly estimated payment: $25,300 / 4 = $6,325 per quarter</li>
                         </ul>
-                        <p><strong>Result:</strong> James needs to pay $6,325 each quarter on April 15, June 15, September 15, and January 15. If his W-2 employer withholds $500 per month ($6,000/year), he should reduce his quarterly payments to account for this withholding.</p>
+                        <div class="big"><p>James needs to pay $6,325 each quarter on April 15, June 15, September 15, and January 15.</p></div>
+                        <p>If his W-2 employer withholds $500 per month ($6,000/year), he should reduce his quarterly payments to account for this withholding.</p>
 
                         <h3>Scenario 2: Investment Income Earner</h3>
                         <p><strong>The Situation:</strong> Patricia is a 55-year-old semi-retired investor living on investment income. She has $500,000 in a taxable brokerage account generating significant dividend and capital gains income.</p>
@@ -508,7 +498,8 @@
                             <li>Total annual tax: $13,265</li>
                             <li>Quarterly estimated payment: $13,265 / 4 = $3,316 per quarter</li>
                         </ul>
-                        <p><strong>Result:</strong> Patricia must pay $3,316 each quarter even though investment income typically has no withholding. Missing even one payment could trigger penalties approaching $500+.</p>
+                        <div class="big"><p>Patricia must pay $3,316 each quarter even though investment income typically has no withholding.</p></div>
+                        <p>Missing even one payment could trigger penalties approaching $500+.</p>
 
                         <h3>Scenario 3: Business Owner with Seasonal Income</h3>
                         <p><strong>The Situation:</strong> Marco owns a construction business with highly seasonal income. His business generates $300,000 in annual gross revenue but with significant quarterly fluctuations: Q1 $30K, Q2 $75K, Q3 $125K, Q4 $70K.</p>
@@ -562,14 +553,8 @@
                         <p><strong>The Problem:</strong> If you realize midway through the year that you missed previous quarterly payments, many taxpayers ignore this and continue making regular payments, unaware that penalties and interest are accruing on the missed payments. By April 15, the penalty bill can be substantial.</p>
                         <p><strong>How to Avoid:</strong> Calculate the penalty immediately upon recognizing a missed payment. Use IRS Form 2210 to determine your exact underpayment and penalty. Consider whether paying the missed amount plus penalty now or waiting until filing and dealing with it then makes more financial sense.</p>
 
-                        <aside class="guide-inset">
-                            <figure class="pull-quote">
-                                <blockquote><p>Use IRS Form 2210 to determine your exact underpayment and penalty.</p></blockquote>
-                            </figure>
-                        </aside>
-
                         <h2 id="comparison-of-payment-strategies">Comparison of Payment Strategies</h2>
-                        <div class="table-scroll"><table class="data-table">
+                        <div class="table-inset"><table class="table--zebra">
                             <thead>
                                 <tr>
                                     <th>Strategy</th>
@@ -631,284 +616,206 @@
 
                     </div>
 
-                    <div class="sidebar">
-                        <div class="sidebar-card">
-                            <h3 class="sidebar-card__title">Key Deadlines</h3>
-                            <ul class="benefits-list">
+                    <div class="guide-extras">
+                        <h3>Key deadlines</h3>
+                        <ul>
                                 <li>
-                                    <svg fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                    </svg>
                                     <span>Q1: April 15</span>
                                 </li>
                                 <li>
-                                    <svg fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                    </svg>
                                     <span>Q2: June 15</span>
                                 </li>
                                 <li>
-                                    <svg fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                    </svg>
                                     <span>Q3: September 15</span>
                                 </li>
                                 <li>
-                                    <svg fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                    </svg>
                                     <span>Q4: January 15</span>
                                 </li>
                             </ul>
-                        </div>
-
-                        <div class="sidebar-card">
-                            <h3 class="sidebar-card__title">Safe Harbor Calculation</h3>
-                            <ul class="benefits-list">
+                        <h3>Safe harbor calculation</h3>
+                        <ul>
                                 <li>
-                                    <svg fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                    </svg>
                                     <span>100% of prior year tax (AGI under $150K)</span>
                                 </li>
                                 <li>
-                                    <svg fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                    </svg>
                                     <span>110% of prior year tax (AGI over $150K)</span>
                                 </li>
                                 <li>
-                                    <svg fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                    </svg>
                                     <span>90% of current year tax liability</span>
                                 </li>
                             </ul>
-                        </div>
-
-                        <div class="sidebar-card">
-                            <h3 class="sidebar-card__title">Related Strategies</h3>
-                            <ul class="related-strategies">
+                        <h3>Related strategies</h3>
+                        <ul>
                                 <li>
                                     <a href="/tax-strategies/tax-loss-harvesting">
-                                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
-                                        </svg>
                                         Tax Loss Harvesting
                                     </a>
                                 </li>
                                 <li>
                                     <a href="/tax-strategies/tax-gain-harvesting">
-                                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
-                                        </svg>
                                         Tax Gain Harvesting
                                     </a>
                                 </li>
                                 <li>
                                     <a href="/tax-strategies/">
-                                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
-                                        </svg>
                                         All Tax Strategies
                                     </a>
                                 </li>
                             </ul>
-                        </div>
                     </div>
-                </div>
-                </div>
+
             </div>
         </section>
 
         <!-- FAQ Section -->
         <section class="faq-section">
             <div class="container-custom">
-                <h2 id="frequently-asked-questions" class="faq-section__title">Frequently Asked Questions</h2>
-                <div class="faq-list">
-                    <div class="faq-item">
-                        <button class="faq-toggle" aria-expanded="false">
-                            <span>Who must pay estimated taxes?</span>
-                            <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">You must pay estimated taxes if you expect to owe $1,000 or more in federal income taxes after subtracting withholding and credits. This includes self-employed individuals, business owners, investors with significant income, retirees, and anyone with supplemental income not subject to withholding under IRC Section 6654.</div>
-                    </div>
+                <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
+                <div class="faq">
+                    <details class="faq__item" >
+                        <summary itemprop="name">Who must pay estimated taxes?</summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            You must pay estimated taxes if you expect to owe $1,000 or more in federal income taxes after subtracting withholding and credits. This includes self-employed individuals, business owners, investors with significant income, retirees, and anyone with supplemental income not subject to withholding under IRC Section 6654.
+                        </div>
+                    </details>
 
-                    <div class="faq-item">
-                        <button class="faq-toggle" aria-expanded="false">
-                            <span>What are the quarterly payment deadlines?</span>
-                            <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">The four quarterly estimated tax payment deadlines are: Q1 (January-March income) due April 15; Q2 (April-May income) due June 15; Q3 (June-August income) due September 15; Q4 (September-December income) due January 15 of the following year. If a deadline falls on a weekend or legal holiday, payment is due the next business day.</div>
-                    </div>
+                    <details class="faq__item" >
+                        <summary itemprop="name">What are the quarterly payment deadlines?</summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            The four quarterly estimated tax payment deadlines are: Q1 (January-March income) due April 15; Q2 (April-May income) due June 15; Q3 (June-August income) due September 15; Q4 (September-December income) due January 15 of the following year. If a deadline falls on a weekend or legal holiday, payment is due the next business day.
+                        </div>
+                    </details>
 
-                    <div class="faq-item">
-                        <button class="faq-toggle" aria-expanded="false">
-                            <span>What is the safe harbor rule for estimated taxes?</span>
-                            <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">The safe harbor rule under IRC Section 6655 allows you to avoid underpayment penalties if you pay either: 100% of your prior year's total tax liability (or 110% if your prior year AGI exceeded $150,000), or 90% of your current year's tax liability, whichever is smaller. Meeting either requirement provides penalty protection regardless of actual current-year results.</div>
-                    </div>
+                    <details class="faq__item" >
+                        <summary itemprop="name">What is the safe harbor rule for estimated taxes?</summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            The safe harbor rule under IRC Section 6655 allows you to avoid underpayment penalties if you pay either: 100% of your prior year's total tax liability (or 110% if your prior year AGI exceeded $150,000), or 90% of your current year's tax liability, whichever is smaller. Meeting either requirement provides penalty protection regardless of actual current-year results.
+                        </div>
+                    </details>
 
-                    <div class="faq-item">
-                        <button class="faq-toggle" aria-expanded="false">
-                            <span>How do I calculate my quarterly estimated tax payments?</span>
-                            <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">To calculate estimated taxes: (1) Project your total income from all sources, (2) Subtract anticipated deductions and estimate credits, (3) Calculate your expected tax liability using applicable tax brackets, (4) Divide by four for equal quarterly payments. Form 1040-ES provides official worksheets, tax tables, and detailed calculation instructions for federal tax purposes.</div>
-                    </div>
+                    <details class="faq__item" >
+                        <summary itemprop="name">How do I calculate my quarterly estimated tax payments?</summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            To calculate estimated taxes: (1) Project your total income from all sources, (2) Subtract anticipated deductions and estimate credits, (3) Calculate your expected tax liability using applicable tax brackets, (4) Divide by four for equal quarterly payments. Form 1040-ES provides official worksheets, tax tables, and detailed calculation instructions for federal tax purposes.
+                        </div>
+                    </details>
 
-                    <div class="faq-item">
-                        <button class="faq-toggle" aria-expanded="false">
-                            <span>What happens if I miss a quarterly payment deadline?</span>
-                            <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">Missing a deadline can result in underpayment penalties and interest charges calculated from the due date through your tax return filing date. The penalty rate is tied to the federal funds rate and compounds quarterly. Penalties may be waived under IRC Section 6664 if you had reasonable cause for missing a payment or if it was your first year of self-employment. The penalty is calculated separately for each missed quarter.</div>
-                    </div>
+                    <details class="faq__item" >
+                        <summary itemprop="name">What happens if I miss a quarterly payment deadline?</summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            Missing a deadline can result in underpayment penalties and interest charges calculated from the due date through your tax return filing date. The penalty rate is tied to the federal funds rate and compounds quarterly. Penalties may be waived under IRC Section 6664 if you had reasonable cause for missing a payment or if it was your first year of self-employment. The penalty is calculated separately for each missed quarter.
+                        </div>
+                    </details>
 
-                    <div class="faq-item">
-                        <button class="faq-toggle" aria-expanded="false">
-                            <span>Can I pay estimated taxes monthly instead of quarterly?</span>
-                            <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">While the IRS requires quarterly payment deadlines, you can pay monthly (12 times per year) if preferred. Making more frequent payments provides advantages: improved cash flow management, reduced interest and penalty exposure if income is seasonal, and greater flexibility. The key requirement is that your total payments meet safe harbor thresholds when calculated quarterly.</div>
-                    </div>
+                    <details class="faq__item" >
+                        <summary itemprop="name">Can I pay estimated taxes monthly instead of quarterly?</summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            While the IRS requires quarterly payment deadlines, you can pay monthly (12 times per year) if preferred. Making more frequent payments provides advantages: improved cash flow management, reduced interest and penalty exposure if income is seasonal, and greater flexibility. The key requirement is that your total payments meet safe harbor thresholds when calculated quarterly.
+                        </div>
+                    </details>
 
-                    <div class="faq-item">
-                        <button class="faq-toggle" aria-expanded="false">
-                            <span>What payment methods are available?</span>
-                            <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">You can pay estimated taxes through: IRS Direct Pay (free online at irs.gov), Electronic Federal Tax Payment System (EFTPS), credit or debit card (with processing fees through approved payment processors), or by mailing a check with Form 1040-ES voucher. Each method provides different advantages regarding fees, documentation, and confirmation timing.</div>
-                    </div>
+                    <details class="faq__item" >
+                        <summary itemprop="name">What payment methods are available?</summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            You can pay estimated taxes through: IRS Direct Pay (free online at irs.gov), Electronic Federal Tax Payment System (EFTPS), credit or debit card (with processing fees through approved payment processors), or by mailing a check with Form 1040-ES voucher. Each method provides different advantages regarding fees, documentation, and confirmation timing.
+                        </div>
+                    </details>
 
-                    <div class="faq-item">
-                        <button class="faq-toggle" aria-expanded="false">
-                            <span>What is an underpayment penalty?</span>
-                            <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">Under IRC Section 6655, an underpayment penalty applies when your estimated tax payments fall below safe harbor thresholds. The penalty equals the shortfall multiplied by the IRS's underpayment rate (approximately 8% annually, but changes quarterly). The penalty accrues from the original due date through your return filing date and is calculated separately for each quarter.</div>
-                    </div>
+                    <details class="faq__item" >
+                        <summary itemprop="name">What is an underpayment penalty?</summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            Under IRC Section 6655, an underpayment penalty applies when your estimated tax payments fall below safe harbor thresholds. The penalty equals the shortfall multiplied by the IRS's underpayment rate (approximately 8% annually, but changes quarterly). The penalty accrues from the original due date through your return filing date and is calculated separately for each quarter.
+                        </div>
+                    </details>
 
-                    <div class="faq-item">
-                        <button class="faq-toggle" aria-expanded="false">
-                            <span>Should I use prior year income or current year projections?</span>
-                            <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">The safe harbor rule allows using 100% of prior year tax liability (or 110% if AGI exceeded $150,000), which provides penalty protection regardless of current year changes. Early in the year, this is simpler than current year projections. However, if current year income differs significantly, recalculating based on current projections may result in more appropriate payments that better match your actual liability.</div>
-                    </div>
+                    <details class="faq__item" >
+                        <summary itemprop="name">Should I use prior year income or current year projections?</summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            The safe harbor rule allows using 100% of prior year tax liability (or 110% if AGI exceeded $150,000), which provides penalty protection regardless of current year changes. Early in the year, this is simpler than current year projections. However, if current year income differs significantly, recalculating based on current projections may result in more appropriate payments that better match your actual liability.
+                        </div>
+                    </details>
 
-                    <div class="faq-item">
-                        <button class="faq-toggle" aria-expanded="false">
-                            <span>Do I need to file quarterly returns with estimated payments?</span>
-                            <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">No. Estimated tax payments are made without filing quarterly returns. You simply submit payments using Form 1040-ES vouchers or electronic payment methods. However, you must file your complete annual tax return (Form 1040) by April 15 of the following year, reporting all income, deductions, withholding, and estimated payments made during the year.</div>
-                    </div>
+                    <details class="faq__item" >
+                        <summary itemprop="name">Do I need to file quarterly returns with estimated payments?</summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            No. Estimated tax payments are made without filing quarterly returns. You simply submit payments using Form 1040-ES vouchers or electronic payment methods. However, you must file your complete annual tax return (Form 1040) by April 15 of the following year, reporting all income, deductions, withholding, and estimated payments made during the year.
+                        </div>
+                    </details>
 
-                    <div class="faq-item">
-                        <button class="faq-toggle" aria-expanded="false">
-                            <span>What if my income is highly seasonal or variable?</span>
-                            <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">For seasonal income, you can use the annualized income installment method (Form 1040-ES Schedule A). This calculates estimated tax for each specific quarter based on projected quarterly income, then adjusts payments accordingly. This works well for businesses with busy seasons, farmers, and construction workers with highly variable quarterly income, reducing overall overpayment.</div>
-                    </div>
+                    <details class="faq__item" >
+                        <summary itemprop="name">What if my income is highly seasonal or variable?</summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            For seasonal income, you can use the annualized income installment method (Form 1040-ES Schedule A). This calculates estimated tax for each specific quarter based on projected quarterly income, then adjusts payments accordingly. This works well for businesses with busy seasons, farmers, and construction workers with highly variable quarterly income, reducing overall overpayment.
+                        </div>
+                    </details>
 
-                    <div class="faq-item">
-                        <button class="faq-toggle" aria-expanded="false">
-                            <span>How do I claim overpaid estimated taxes?</span>
-                            <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">Report all estimated tax payments on Form 1040 line 37 when filing your annual return. The IRS automatically credits overpayments against your current year tax liability. You can choose to receive a refund, carry the excess forward to next year's estimated taxes, or apply it to your current year tax liability. File your return by April 15 to claim refunds by the return deadline.</div>
-                    </div>
+                    <details class="faq__item" >
+                        <summary itemprop="name">How do I claim overpaid estimated taxes?</summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            Report all estimated tax payments on Form 1040 line 37 when filing your annual return. The IRS automatically credits overpayments against your current year tax liability. You can choose to receive a refund, carry the excess forward to next year's estimated taxes, or apply it to your current year tax liability. File your return by April 15 to claim refunds by the return deadline.
+                        </div>
+                    </details>
 
-                    <div class="faq-item">
-                        <button class="faq-toggle" aria-expanded="false">
-                            <span>Are estimated taxes required for investment and rental income?</span>
-                            <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">Yes, estimated taxes are required for significant investment income (dividends, capital gains, interest) and rental property income that isn't subject to withholding. If your W-2 withholding covers most taxes but investment income creates additional liability exceeding $1,000, you must pay estimated taxes on that amount under IRC Section 6654(d).</div>
-                    </div>
+                    <details class="faq__item" >
+                        <summary itemprop="name">Are estimated taxes required for investment and rental income?</summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            Yes, estimated taxes are required for significant investment income (dividends, capital gains, interest) and rental property income that isn't subject to withholding. If your W-2 withholding covers most taxes but investment income creates additional liability exceeding $1,000, you must pay estimated taxes on that amount under IRC Section 6654(d).
+                        </div>
+                    </details>
                 </div>
             </div>
         </section>
 
         <!-- CTA Section -->
-        <section class="cta-section">
-            <div class="container-custom">
-                <div class="cta-card">
-                    <h2 id="optimize-your-tax-strategy-today" class="cta-card__title">Optimize Your Tax Strategy Today</h2>
-                    <p class="cta-card__text">Stop overpaying estimated taxes or risking penalty bills. Let our tax experts review your situation and create a customized payment plan that aligns with your cash flow and minimizes your tax burden.</p>
-                    <a href="/tax-strategies-101" class="cta-card__button">
-                        Explore Our Tax Programs
-                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </section>
-
         <!-- Related Links -->
         <section class="content-section">
             <div class="container-custom">
                 <h2 id="related-tax-strategy-articles" style="text-align: center; margin-bottom: 2rem">Related Tax Strategy Articles</h2>
-                <div class="content-grid">
+
                     <div>
                         <ul class="related-strategies" style="grid-template-columns: 1fr">
                             <li>
                                 <a href="/tax-strategies/tax-loss-harvesting">
-                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
-                                    </svg>
                                     Tax Loss Harvesting: Offset Capital Gains
                                 </a>
                             </li>
                             <li>
                                 <a href="/tax-strategies/tax-gain-harvesting">
-                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
-                                    </svg>
                                     Tax Gain Harvesting: Strategic Income Timing
                                 </a>
                             </li>
                             <li>
                                 <a href="/tax-strategies/">
-                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
-                                    </svg>
                                     Browse All Tax Strategies
                                 </a>
                             </li>
                         </ul>
                     </div>
+
+            </div>
+        </section>
+            <section class="guide-close">
+            <div class="container-custom">
+                <section class="source-note" aria-label="Primary sources">
+            <h2 id="sources">Sources to check</h2>
+            <p>Check primary guidance and your own records before you treat any page as a final answer.</p>
+            <ul>
+              <li><a href="https://www.irs.gov/forms-pubs/about-publication-505" rel="noopener noreferrer" target="_blank">IRS Publication 505: Tax Withholding and Estimated Tax</a></li>
+<li><a href="https://www.irs.gov/forms-pubs/about-form-1040-es" rel="noopener noreferrer" target="_blank">IRS Form 1040-ES and instructions</a></li>
+<li><a href="https://www.irs.gov/forms-instructions" rel="noopener noreferrer" target="_blank">Current IRS forms, instructions, and publications for the relevant tax year</a></li>
+<li>Your actual account statements, payroll reports, entity records, and advisor memos</li>
+            </ul>
+          </section>
+
+                <div class="cta">
+                    <h2 id="where-to-go-next">Where to go next</h2>
+                    <p>The library lists every strategy in one table. The compare guides put two of them side by side and show which facts decide it.</p>
+                    <p class="cta__actions">
+                        <a class="btn-primary" href="/tax-strategies">Open the strategy library</a>
+                        <a class="btn-secondary" href="/compare">Compare two strategies</a>
+                    </p>
                 </div>
+                <p class="guide-note">Educational content only. It is not individual tax, legal, or investment advice. Confirm your own facts with a qualified professional before you file.</p>
             </div>
         </section>
     </main>
@@ -954,16 +861,5 @@
 
     <!-- FAQ Toggle Script -->
     <script defer src="/assets/js/main.js?v=5efea1b4"></script>
-    <script>
-        document.querySelectorAll('.faq-toggle').forEach(function (button) {
-            button.addEventListener('click', function () {
-                var expanded = button.getAttribute('aria-expanded') === 'true';
-                button.setAttribute('aria-expanded', String(!expanded));
-                if (button.nextElementSibling) {
-                    button.nextElementSibling.classList.toggle('faq-answer--open');
-                }
-            });
-        });
-    </script>
 </body>
 </html>

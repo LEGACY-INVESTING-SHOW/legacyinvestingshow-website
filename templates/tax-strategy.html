@@ -30,14 +30,14 @@
     <meta name="twitter:description" content="{{shortDescription}}">
     <meta name="twitter:image" content="https://www.legacyinvestingshow.com/assets/images/og-home.jpg">
 
-    <meta name="theme-color" content="#FAF7F2">
+    <meta name="theme-color" content="#FBF8F1">
 
     <!-- Favicon -->
     <link rel="icon" href="/favicon.ico" sizes="32x32">
 
     <!-- Stylesheets -->
     {{headAssets}}
-    <link rel="stylesheet" href="/assets/css/guides.css?v=9f8d9de9">
+    <link rel="stylesheet" href="/assets/css/guides.css">
 
     <!-- Schema Markup -->
     <script type="application/ld+json">
@@ -83,158 +83,127 @@
     {{faqSchema}}
 
     {{analyticsHead}}
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
-
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-2578PT1WSS');
-    </script>
-
 </head>
 <body class="guide-page" data-page-type="tax_strategy" data-page-slug="{{slug}}" data-page-title="{{title}}">
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     {{tagManagerBody}}
     <a href="#main" class="guide-skip">Skip to main content</a>
 
     {{siteHeader}}
 
     <main id="main">
-        <section class="guide-opener">
+        <section class="opener">
             <div class="container-custom">
-                <nav aria-label="Breadcrumb">
-                    <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-                        <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                            <a href="/" class="breadcrumb__link" itemprop="item"><span itemprop="name">Home</span></a>
-                            <meta itemprop="position" content="1" />
-                        </li>
-                        <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                            <a href="/tax-strategies" class="breadcrumb__link" itemprop="item"><span itemprop="name">Tax strategies</span></a>
-                            <meta itemprop="position" content="2" />
-                        </li>
-                        <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                            <span class="breadcrumb__current" itemprop="name">{{title}}</span>
-                            <meta itemprop="position" content="3" />
-                        </li>
-                    </ol>
-                </nav>
-                <div class="opener">
-                    <div>
-                        <h1 class="opener__title">{{title}}</h1>
-                        <p class="opener__lede">{{shortDescription}}.</p>
-                        <p class="guide-opener__meta">IRS reference: {{irsReference}}. Professional help: {{professionalRequired}}. Typical cost: {{typicalCost}}.</p>
-                    </div>
-                    <aside class="opener__aside">
-                        {{savingsFigure}}
-                    </aside>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="container-custom">
-                <div class="marginalia">
-                    <div class="marginalia__main">
-                        <div class="guide-prose">
-                            <h2 id="what-it-is">What {{title}} is</h2>
-                            <p>{{fullDescription}}</p>
-
-                            <h2 id="who-it-fits">Who it fits</h2>
-                            <p>{{bestFor}}</p>
-                            <p>It is most often used by:</p>
-                            <ul>
-                                {{benefitsForList}}
-                            </ul>
-
-                            <h2 id="how-to">How to put it in place</h2>
-                        </div>
-                        <ol class="steps">
-                            <li>
-                                <div>
-                                    <h3 class="steps__title">Check that you qualify</h3>
-                                    <p>Confirm the facts of your own situation meet the test before you plan around the deduction.</p>
-                                </div>
+                <div class="col">
+                    <nav aria-label="Breadcrumb">
+                        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                            <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <a href="/" class="breadcrumb__link" itemprop="item"><span itemprop="name">Home</span></a>
+                                <meta itemprop="position" content="1" />
                             </li>
-                            <li>
-                                <div>
-                                    <h3 class="steps__title">Model the numbers</h3>
-                                    <p>Work out what the strategy returns at your marginal rate, net of what it costs to run.</p>
-                                </div>
+                            <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <a href="/tax-strategies" class="breadcrumb__link" itemprop="item"><span itemprop="name">Tax strategies</span></a>
+                                <meta itemprop="position" content="2" />
                             </li>
-                            <li>
-                                <div>
-                                    <h3 class="steps__title">Build the file as you go</h3>
-                                    <p>Contemporaneous records defend the position; reconstructed ones rarely do.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <h3 class="steps__title">Review it each year</h3>
-                                    <p>Limits, rates and your own facts move. A strategy that fit last year may not fit this one.</p>
-                                </div>
+                            <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <span class="breadcrumb__current" itemprop="name">{{title}}</span>
+                                <meta itemprop="position" content="3" />
                             </li>
                         </ol>
-                    </div>
-                    <aside class="marginalia__aside guide-aside">
-                        <div>
-                            <p class="guide-aside__title">At a glance</p>
-                            <dl class="guide-dl">
-                                <div>
-                                    <dt>Potential savings</dt>
-                                    <dd>{{potentialSavings}}</dd>
-                                </div>
-                                <div>
-                                    <dt>Level</dt>
-                                    <dd>{{complexity}}</dd>
-                                </div>
-                                <div>
-                                    <dt>Professional help</dt>
-                                    <dd>{{professionalRequired}}</dd>
-                                </div>
-                                <div>
-                                    <dt>Typical cost</dt>
-                                    <dd>{{typicalCost}}</dd>
-                                </div>{{minimumPropertyValueRow}}
-                            </dl>
-                        </div>
-                        <div>
-                            <p class="guide-aside__title">Related strategies</p>
-                            <ul class="guide-linklist">
-                                {{relatedStrategiesList}}
-                            </ul>
-                        </div>
-                    </aside>
+                    </nav>
+                    <h1 class="opener__title">{{title}}</h1>
+                    <p class="opener__key">{{shortDescription}}.</p>
+                    <p class="words__label">At a glance</p>
+                    <dl class="words">
+                        <dt>Potential savings</dt>
+                        <dd>{{potentialSavings}}</dd>
+                        <dt>Level</dt>
+                        <dd>{{complexity}}</dd>
+                        <dt>Professional help</dt>
+                        <dd>{{professionalRequired}}</dd>
+                        <dt>Typical cost</dt>
+                        <dd>{{typicalCost}}</dd>{{minimumPropertyValueRow}}
+                        <dt>IRS reference</dt>
+                        <dd>{{irsReference}}</dd>
+                    </dl>
                 </div>
             </div>
         </section>
 
-        <section class="section band--cream-dark">
+        <section class="section section--rule">
             <div class="container-custom">
-                <div class="marginalia">
-                    <div class="marginalia__main">
-                        <div class="section__head">
-                            <h2 id="faq">Frequently asked questions</h2>
-                            <p>The questions readers ask before they commit to {{title}}.</p>
-                        </div>
-                        <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
-                            {{faqItems}}
-                        </div>
+                <div class="col">
+                    <details class="toc" open>
+                        <summary>On this page</summary>
+                        <ul>
+                            <li><a href="#what-it-is">What {{title}} is</a></li>
+                            <li><a href="#who-it-fits">Who it fits</a></li>
+                            <li><a href="#how-to">How to put it in place</a></li>
+                            <li><a href="#faq">Frequently asked questions</a></li>
+                            <li><a href="#sources">Sources to check</a></li>
+                        </ul>
+                    </details>
+
+                    <div class="prose">
+                        <h2 id="what-it-is">What {{title}} is</h2>
+                        <p>{{fullDescription}}</p>
+
+                        <h2 id="who-it-fits">Who it fits</h2>
+                        <p>{{bestFor}}</p>
+                        <p>It is most often used by:</p>
+                        <ul>
+                            {{benefitsForList}}
+                        </ul>
+
+                        <h2 id="how-to">How to put it in place</h2>
                     </div>
-                    <aside class="marginalia__aside guide-aside">
-                        <div>
-                            <p class="guide-aside__title">Keep reading</p>
-                            <dl class="dl-terms">
-                                <dt><a href="/tax-strategies">Every tax strategy</a></dt>
-                                <dd>The full table, grouped by the income or asset each one applies to.</dd>
-                                <dt><a href="/compare">Compare guides</a></dt>
-                                <dd>Head-to-head when two strategies both look right.</dd>
-                            </dl>
-                        </div>
-                    </aside>
+                    <ol class="steps">
+                        <li>
+                            <h3 class="steps__title">Check that you qualify</h3>
+                            <p>Confirm the facts of your own situation meet the test before you plan around the deduction.</p>
+                        </li>
+                        <li>
+                            <h3 class="steps__title">Model the numbers</h3>
+                            <p>Work out what the strategy returns at your marginal rate, net of what it costs to run.</p>
+                        </li>
+                        <li>
+                            <h3 class="steps__title">Build the file as you go</h3>
+                            <p>Contemporaneous records defend the position. Reconstructed ones rarely do.</p>
+                        </li>
+                        <li>
+                            <h3 class="steps__title">Review it each year</h3>
+                            <p>Limits, rates and your own facts move. A strategy that fit last year may not fit this one.</p>
+                        </li>
+                    </ol>
+
+                    <div class="prose">
+                        <h2 id="faq">Frequently asked questions</h2>
+                    </div>
+                    {{faqBlock}}
+
+                    {{sourcesBlock}}
+
+                    <div class="do">
+                        <p class="do__label">Do this next</p>
+                        <ul>
+                            <li>Check the qualification test against your own facts.</li>
+                            <li>Model the saving at your marginal rate, net of the cost to run it.</li>
+                            <li>Start the record file now rather than at year end.</li>
+                            <li>Take the one open question to a CPA.</li>
+                        </ul>
+                    </div>
+
+                    <div class="cta">
+                        <h2>Where to go next</h2>
+                        <p>Related strategies, and the guides that put two of them side by side.</p>
+                        <ul>
+                            {{relatedStrategiesList}}
+                        </ul>
+                        <p class="cta__actions">
+                            <a href="/tax-strategies" class="btn-primary">Every tax strategy</a>
+                            <a href="/compare" class="btn-secondary">Compare two strategies</a>
+                        </p>
+                    </div>
+                    <p class="guide-note">Educational content only. It is not individual tax, legal, or investment advice.</p>
                 </div>
             </div>
         </section>
@@ -242,17 +211,6 @@
 
     {{siteFooter}}
 
-    <script defer src="/assets/js/main.js?v=5efea1b4"></script>
-    <script>
-        document.querySelectorAll('.faq-toggle').forEach(function (button) {
-            button.addEventListener('click', function () {
-                var expanded = button.getAttribute('aria-expanded') === 'true';
-                button.setAttribute('aria-expanded', String(!expanded));
-                if (button.nextElementSibling) {
-                    button.nextElementSibling.classList.toggle('faq-answer--open');
-                }
-            });
-        });
-    </script>
+    <script defer src="/assets/js/main.js"></script>
 </body>
 </html>

@@ -574,7 +574,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
     <meta name="twitter:description" content="${esc(description)}">
     <meta name="twitter:image" content="${esc(image)}">
 
-    <meta name="theme-color" content="#FAF7F2">
+    <meta name="theme-color" content="#FBF8F1">
     <link rel="icon" href="/favicon.ico" sizes="32x32">
     ${renderHeadAssets()}
     ${renderStyles()}
@@ -615,9 +615,11 @@ ${renderHead(page)}
 ${page.breadcrumbNav || ''}
     <main id="main">
         ${page.body}
-        <section class="guide-section--tight">
+        <section class="section--tight">
             <div class="container-custom">
-                <p class="guide-row__note">${esc(disclaimer)}</p>
+                <div class="col">
+                    <p class="guide-note">${esc(disclaimer)}</p>
+                </div>
             </div>
         </section>
     </main>
@@ -762,15 +764,11 @@ function renderResourceRows(resources, strategyMap, reasons) {
         .map((resource, index) => {
             const resolved = resolveResource(resource, strategyMap);
             const reason = reasons[index] || resolved.description;
-            return `        <article class="guide-entry">
-            <div>
-                <p class="guide-entry__meta">Priority ${index + 1}</p>
-            </div>
-            <div>
-                <h3><a href="${esc(resolved.href)}">${esc(resolved.title)}</a></h3>
-                <p>${esc(reason)}</p>
-            </div>
-        </article>`;
+            return `                        <li>
+                            <p class="list-rows__title"><a href="${esc(resolved.href)}">${esc(resolved.title)}</a></p>
+                            <p class="list-rows__desc">${esc(reason)}</p>
+                            <p class="list-rows__meta">Priority ${index + 1}</p>
+                        </li>`;
         })
         .join('\n');
 }
@@ -837,124 +835,89 @@ function renderCityPage(cityData, strategyMap) {
         { name: 'Market guides', href: marketPath() },
         { name: `${cityData.city}, ${cityData.state}` },
     ]);
-    const body = `<section class="guide-opener">
+    const body = `<section class="opener">
     <div class="container-custom">
-        ${breadcrumbNav}
-        <div class="opener">
-            <div>
-                <h1 class="opener__title">${esc(cityData.city)}, ${esc(cityData.state)} tax strategy guide</h1>
-                <p class="opener__lede">${esc(cityContext.summary)} ${esc(cityContext.bestFit)}</p>
-                <p class="guide-opener__meta">${esc(stateContext.taxLens)}</p>
+        <div class="col">
+            ${breadcrumbNav}
+            <h1 class="opener__title">${esc(cityData.city)}, ${esc(cityData.state)} tax strategy guide</h1>
+            <p class="opener__key">${esc(cityContext.bestFit)}</p>
+            <p class="opener__lede">${esc(cityContext.summary)}</p>
+            <p class="meta">${esc(stateContext.taxLens)}</p>
+        </div>
+    </div>
+</section>
+
+<section class="section section--rule">
+    <div class="container-custom">
+        <div class="col">
+            <div class="prose">
+                <h2 id="what-makes-it-different">What makes ${esc(cityData.city)} different</h2>
+                <p>${esc(stateContext.executionFocus)}</p>
+                ${cityLocal.taxReality ? `<p>${esc(cityLocal.taxReality)}</p>` : ''}
+                ${cityLocal.operatorDay ? `<p>${esc(cityLocal.operatorDay)}</p>` : ''}
+
+                <h3>What drives demand here</h3>
+                ${renderList(cityContext.demandDrivers, 'bullet-list')}
+
+                <h3>Where investors usually get hurt</h3>
+                ${renderList(cityContext.watchouts, 'bullet-list')}
+                <p>The goal is not to avoid tax strategy. It is to avoid using tax strategy as a substitute for underwriting, local rule review, or operator discipline.</p>
+
+                <h2 id="strategy-stack">Strategy stack for ${esc(cityData.city)}</h2>
+                <p>Ranked by how often each one matters once you combine the market profile, the likely operator type, and the documentation required to defend the move.</p>
             </div>
-            <aside class="opener__aside">
-                <div class="figure figure--gold">
-                    <span class="figure__value">${resources.length}</span>
-                    <span class="figure__label">strategies ranked for this market</span>
-                </div>
-            </aside>
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container-custom">
-        <div class="marginalia">
-            <div class="marginalia__main sheet guide-sheet">
-                <div class="guide-prose">
-                    <h2>What makes ${esc(cityData.city)} different</h2>
-                    <p>${esc(stateContext.executionFocus)}</p>
-                    ${cityLocal.taxReality ? `<p>${esc(cityLocal.taxReality)}</p>` : ''}
-                    ${cityLocal.operatorDay ? `<p>${esc(cityLocal.operatorDay)}</p>` : ''}
-
-                    <h3>Where investors usually get hurt</h3>
-                    ${renderList(cityContext.watchouts, 'bullet-list')}
-                    <p>The goal is not to avoid tax strategy. It is to avoid using tax strategy as a substitute for underwriting, local rule review, or operator discipline.</p>
-                </div>
-            </div>
-            <aside class="marginalia__aside guide-aside">
-                <div>
-                    <p class="guide-aside__title">What drives demand here</p>
-                    ${renderList(cityContext.demandDrivers, 'bullet-list')}
-                </div>
-                <div>
-                    <p class="guide-aside__title">Execution checklist</p>
-                    ${renderList(stateContext.checklist, 'bullet-list')}
-                </div>
-            </aside>
-        </div>
-    </div>
-</section>
-
-<section class="band">
-    <div class="container-custom">
-        <figure class="pull-quote">
-            <blockquote><p>${esc(cityContext.bestFit)}</p></blockquote>
-            <figcaption>${esc(cityData.city)} in one line<span>${esc(cityData.notes)}</span></figcaption>
-        </figure>
-    </div>
-</section>
-
-<section class="section band--cream-dark">
-    <div class="container-custom">
-        <div class="section__head">
-            <h2>Strategy stack for ${esc(cityData.city)}</h2>
-            <p>Ranked by how often each one matters once you combine the market profile, the likely operator type, and the documentation required to defend the move.</p>
-        </div>
+            <ul class="list-rows">
 ${renderResourceRows(resources, strategyMap, resourceReasons)}
-    </div>
-</section>
+            </ul>
 
-<section class="section">
-    <div class="container-custom">
-        <div class="marginalia">
-            <div class="marginalia__main">
-                <div class="section__head">
-                    <h2>What to do in the next 90 days</h2>
-                    <p>Assemble the operating facts before you take the tax question to anyone.</p>
-                </div>
-                <ol class="steps">
-                    <li><div><p>Write the base-case occupancy and rate assumptions for ${esc(cityData.city)} without using peak periods as the baseline.</p></div></li>
-                    <li><div><p>Choose the one deduction or entity question that actually changes your next decision.</p></div></li>
-                    <li><div><p>Build the audit file now: receipts, vendor records, local compliance notes, and property-level bookkeeping.</p></div></li>
-                    <li><div><p>Review the plan with a CPA once the operating facts are assembled cleanly.</p></div></li>
-                </ol>
-
-                <div class="guide-prose">
-                    <h2>Questions people ask before filing</h2>
-                    <dl class="guide-faq">
-${faqItems.map((item) => `                        <dt>${esc(item.question)}</dt>
-                        <dd>${esc(item.answer)}</dd>`).join('\n')}
-                    </dl>
-                </div>
+            <div class="prose">
+                <h2 id="next-90-days">What to do in the next 90 days</h2>
+                <p>Assemble the operating facts before you take the tax question to anyone.</p>
             </div>
-            <aside class="marginalia__aside guide-aside">
-                <div>
-                    <p class="guide-aside__title">Nearby markets</p>
-                    <dl class="dl-terms">
-${nearbyCities.map((entry) => `                        <dt><a href="${esc(entry.href)}">${esc(entry.name)}</a></dt>
-                        <dd>${esc(entry.description)}</dd>`).join('\n')}
-                    </dl>
-                </div>
-                <div>
-                    <p class="guide-aside__title">Keep reading</p>
-                    <dl class="dl-terms">
-                        <dt><a href="/tax-strategies">Tax strategy library</a></dt>
-                        <dd>Every strategy guide in one table.</dd>
-                        <dt><a href="/markets">All city guides</a></dt>
-                        <dd>The rest of the market pages.</dd>
-                    </dl>
-                </div>
-            </aside>
-        </div>
-    </div>
-</section>
+            <ol class="steps">
+                <li><p>Write the base-case occupancy and rate assumptions for ${esc(cityData.city)} without using peak periods as the baseline.</p></li>
+                <li><p>Choose the one deduction or entity question that actually changes your next decision.</p></li>
+                <li><p>Build the audit file now: receipts, vendor records, local compliance notes, and property-level bookkeeping.</p></li>
+                <li><p>Review the plan with a CPA once the operating facts are assembled cleanly.</p></li>
+            </ol>
 
-<section class="cta-band">
-    <div class="container-custom">
-        <h2>Take the narrowed question to an advisor</h2>
-        <p>A market guide should shrink the question, not answer it. Bring the property-level file and the one structure or participation question that is still open.</p>
-        <div class="cta-band-actions">
-            <a href="/tax-strategies" class="btn-primary">Open the tax strategy library</a>
+            <div class="callout">
+                <p class="callout__label">Execution checklist</p>
+                ${renderList(stateContext.checklist, 'bullet-list')}
+            </div>
+
+            <div class="prose">
+                <h2 id="questions">Questions people ask before filing</h2>
+            </div>
+            <div class="faq" itemscope itemtype="https://schema.org/FAQPage">
+${faqItems.map((item) => `                <details class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <summary itemprop="name">${esc(item.question)}</summary>
+                    <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <p itemprop="text">${esc(item.answer)}</p>
+                    </div>
+                </details>`).join('\n')}
+            </div>
+
+            <div class="do">
+                <p class="do__label">Do this next</p>
+                <ul>
+                    <li>Write down your base-case occupancy and nightly rate.</li>
+                    <li>Check the local rules that apply to your stay length.</li>
+                    <li>Open a property-level file for receipts and vendor records.</li>
+                </ul>
+            </div>
+
+            <div class="cta">
+                <h2>Take the narrowed question to an advisor</h2>
+                <p>A market guide should shrink the question, not answer it. Bring the property-level file and the one structure or participation question that is still open.</p>
+                <ul>
+${nearbyCities.map((entry) => `                    <li><a href="${esc(entry.href)}">${esc(entry.name)}</a>. ${esc(entry.description)}</li>`).join('\n')}
+                </ul>
+                <p class="cta__actions">
+                    <a href="/tax-strategies" class="btn-primary">Open the tax strategy library</a>
+                    <a href="/markets" class="btn-secondary">All city guides</a>
+                </p>
+            </div>
         </div>
     </div>
 </section>`;
@@ -989,63 +952,48 @@ function renderMarketsHub(cities) {
         url: marketPath(slugForCity(city.city, city.state)),
         summary: CITY_CONTEXT[slugForCity(city.city, city.state)].summary,
     }));
-    const body = `<section class="guide-opener">
+    const body = `<section class="opener">
     <div class="container-custom">
-        ${renderBreadcrumbNav([{ name: 'Home', href: '/' }, { name: 'Market guides' }])}
-        <div class="opener">
-            <div>
-                <h1 class="opener__title">City tax strategy guides</h1>
-                <p class="opener__lede">A deduction stack that works in Austin can fail in Miami. Local rules, insurance, seasonality, and stay-length mix change the operating facts before they change the tax return.</p>
-                <p class="guide-opener__meta">Pick the city you are actually underwriting and read the operating facts before you open a strategy page.</p>
-            </div>
-            <aside class="opener__aside">
-                <div class="figure figure--gold">
-                    <span class="figure__value">${cityEntries.length}</span>
-                    <span class="figure__label">markets, each written around its own demand and rules</span>
-                </div>
-            </aside>
+        <div class="col">
+            ${renderBreadcrumbNav([{ name: 'Home', href: '/' }, { name: 'Market guides' }])}
+            <h1 class="opener__title">City tax strategy guides</h1>
+            <p class="opener__key">A deduction stack that works in Austin can fail in Miami.</p>
+            <p class="opener__lede">Local rules, insurance, seasonality, and stay-length mix change the operating facts before they change the tax return. ${cityEntries.length} markets, each written around its own demand and rules.</p>
         </div>
     </div>
 </section>
 
-<section class="section band--cream-dark">
+<section class="section section--rule">
     <div class="container-custom">
-        <div class="section__head">
-            <h2>City guides</h2>
-            <p>Start with demand and local rules rather than the largest deduction name.</p>
-        </div>
-        <dl class="dl-terms dl-terms--cols">
-${cityEntries.map((entry) => `            <dt><a href="${esc(entry.url)}">${esc(entry.name)}</a></dt>
-            <dd>${esc(entry.summary)}</dd>`).join('\n')}
-        </dl>
-    </div>
-</section>
+        <div class="col">
+            <h2 id="city-guides">City guides</h2>
+            <p class="section__summary">Start with demand and local rules rather than the largest deduction name.</p>
+            <ul class="list-rows">
+${cityEntries.map((entry) => `                <li>
+                    <p class="list-rows__title"><a href="${esc(entry.url)}">${esc(entry.name)}</a></p>
+                    <p class="list-rows__desc">${esc(entry.summary)}</p>
+                </li>`).join('\n')}
+            </ul>
 
-<section class="section">
-    <div class="container-custom">
-        <div class="marginalia">
-            <div class="marginalia__main sheet guide-sheet">
-                <div class="guide-prose">
-                    <h2>How to use these guides</h2>
-                    <p>Treat the strategy stack on each page as a filter, not a shopping list. The market decides which moves are even available: stay-length rules decide whether the short-term rental route exists, property tax and insurance decide whether the underwriting survives a soft quarter, and the operator profile decides whether you can document participation at all.</p>
-                    <p>Compare a neighbouring city only after your base-case occupancy is written down. Two markets that look similar on a revenue chart often differ entirely on enforcement and cleaning cost.</p>
-                </div>
+            <div class="prose">
+                <h2 id="how-to-use">How to use these guides</h2>
+                <p>Treat the strategy stack on each page as a filter, not a shopping list. The market decides which moves are even available. Stay-length rules decide whether the short-term rental route exists. Property tax and insurance decide whether the underwriting survives a soft quarter. The operator profile decides whether you can document participation at all.</p>
+                <p>Compare a neighbouring city only after your base-case occupancy is written down. Two markets that look similar on a revenue chart often differ entirely on enforcement and cleaning cost.</p>
             </div>
-            <aside class="marginalia__aside guide-aside">
-                <div>
-                    <p class="guide-aside__title">Related decision pages</p>
-                    <dl class="dl-terms">
-                        <dt><a href="/tax-strategies">Tax strategy library</a></dt>
-                        <dd>Core deduction, entity, and real estate tax pages.</dd>
-                        <dt><a href="/tax-strategies/for/airbnb-hosts">Strategies for Airbnb hosts</a></dt>
-                        <dd>Host-specific sequencing rather than a market template.</dd>
-                        <dt><a href="/compare">Compare guides</a></dt>
-                        <dd>Head-to-head when two strategies both sound plausible.</dd>
-                        <dt><a href="/renters-insurance">Renters insurance by state</a></dt>
-                        <dd>State premium baselines and coverage notes.</dd>
-                    </dl>
-                </div>
-            </aside>
+
+            <div class="cta">
+                <h2>Related decision pages</h2>
+                <ul>
+                    <li><a href="/tax-strategies">Tax strategy library</a>. Core deduction, entity, and real estate tax pages.</li>
+                    <li><a href="/tax-strategies/for/airbnb-hosts">Strategies for Airbnb hosts</a>. Host-specific sequencing rather than a market template.</li>
+                    <li><a href="/compare">Compare guides</a>. Head-to-head when two strategies both sound plausible.</li>
+                    <li><a href="/renters-insurance">Renters insurance by state</a>. State premium baselines and coverage notes.</li>
+                </ul>
+                <p class="cta__actions">
+                    <a href="/tax-strategies" class="btn-primary">Open the strategy library</a>
+                    <a href="/compare" class="btn-secondary">Compare two strategies</a>
+                </p>
+            </div>
         </div>
     </div>
 </section>`;
@@ -1087,19 +1035,19 @@ function premiumProse(premium, usAverage) {
 }
 
 function renderPremiumTable(rows, usAverage) {
-    return `<div class="table-scroll"><table class="guide-table">
+    return `<div class="table-inset"><table class="table--zebra">
         <thead>
             <tr>
                 <th scope="col">Location</th>
-                <th scope="col">Average annual premium</th>
-                <th scope="col">vs US average ($${usAverage})</th>
+                <th scope="col" class="num">Average a year</th>
+                <th scope="col" class="num">vs US average ($${usAverage})</th>
             </tr>
         </thead>
         <tbody>
             ${rows.map((row) => `<tr>
-                <th scope="row">${row.href ? `<a class="inline-link" href="${esc(row.href)}">${esc(row.name)}</a>` : esc(row.name)}${row.highlight ? ' <span class="guide-row__note">(this page)</span>' : ''}</th>
-                <td>$${row.premium}</td>
-                <td>${esc(row.vs)}</td>
+                <td>${row.href ? `<a href="${esc(row.href)}">${esc(row.name)}</a>` : esc(row.name)}${row.highlight ? ' (this page)' : ''}</td>
+                <td class="num">$${row.premium}</td>
+                <td class="num">${esc(row.vs)}</td>
             </tr>`).join('\n            ')}
         </tbody>
     </table></div>`;
@@ -1110,10 +1058,14 @@ function rentersGuide(abbreviation, guides) {
 }
 
 function renderFaqList(items) {
-    return `<dl class="guide-faq">
-${items.map((item) => `                <dt>${esc(item.question || item.q)}</dt>
-                <dd>${esc(item.answer || item.a)}</dd>`).join('\n')}
-            </dl>`;
+    return `<div class="faq" itemscope itemtype="https://schema.org/FAQPage">
+${items.map((item) => `                <details class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <summary itemprop="name">${esc(item.question || item.q)}</summary>
+                    <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <p itemprop="text">${esc(item.answer || item.a)}</p>
+                    </div>
+                </details>`).join('\n')}
+            </div>`;
 }
 
 function normalizeFaqs(rawFaqs, fallback) {
@@ -1130,76 +1082,57 @@ function renderInsuranceHubPage(stateEntries, usEntry) {
     const canonical = siteUrl(rentersInsurancePath());
     const title = 'Average Renters Insurance Cost by State (2026)';
     const description = 'Compare average renters insurance costs in all 50 states and Washington, DC, against the $170 US average (NAIC 2021 baseline from the Insurance Information Institute).';
-    const body = `<section class="guide-opener">
+    const body = `<section class="opener">
     <div class="container-custom">
-        ${renderBreadcrumbNav([{ name: 'Home', href: '/' }, { name: 'Renters insurance by state' }])}
-        <div class="opener">
-            <div>
-                <h1 class="opener__title">Average renters insurance cost by state</h1>
-                <p class="opener__lede">Renters insurance covers your belongings, your liability, and a hotel bill if a fire or burst pipe puts you out of the apartment. These are state averages, not quotes: your number moves with ZIP code, contents limit, deductible, and claims history.</p>
-                <p class="guide-opener__meta">NAIC 2021 baseline, published by the Insurance Information Institute. Inflation has pushed 2026 quotes higher.</p>
-            </div>
-            <aside class="opener__aside">
-                <div class="figure figure--gold">
-                    <span class="figure__value">$${usAverage}</span>
-                    <span class="figure__label">US average a year</span>
-                </div>
-            </aside>
+        <div class="col">
+            ${renderBreadcrumbNav([{ name: 'Home', href: '/' }, { name: 'Renters insurance by state' }])}
+            <h1 class="opener__title">Average renters insurance cost by state</h1>
+            <p class="opener__key">The US average is $${usAverage} a year. Your own number moves with ZIP code, contents limit, deductible, and claims history.</p>
+            <p class="opener__lede">Renters insurance covers your belongings, your liability, and a hotel bill if a fire or burst pipe puts you out of the apartment. These are state averages, not quotes.</p>
+            <p class="meta">NAIC 2021 baseline, published by the Insurance Information Institute. Inflation has pushed 2026 quotes higher.</p>
         </div>
     </div>
 </section>
 
-<section class="section band--cream-dark">
+<section class="section section--rule">
     <div class="container-custom">
-        <div class="section__head">
-            <h2>Average cost by state</h2>
-            <p>A minus sign means the state average sits below the US average. The spread is mostly weather, claims, and replacement cost.</p>
-        </div>
-        ${renderPremiumTable([
-            { name: 'United States (national average)', premium: usAverage, vs: 'baseline' },
-            ...stateEntries.map((entry) => ({
-                name: entry.state,
-                premium: entry.averageAnnualPremium,
-                vs: premiumVsUs(entry.averageAnnualPremium, usAverage),
-                href: rentersInsurancePath(slugForStateName(entry.state)),
-            })),
-        ], usAverage)}
-    </div>
-</section>
+        <div class="col">
+            <h2 id="by-state">Average cost by state</h2>
+            <p class="section__summary">A minus sign means the state average sits below the US average. The spread is mostly weather, claims, and replacement cost.</p>
+            ${renderPremiumTable([
+                { name: 'United States (national average)', premium: usAverage, vs: 'baseline' },
+                ...stateEntries.map((entry) => ({
+                    name: entry.state,
+                    premium: entry.averageAnnualPremium,
+                    vs: premiumVsUs(entry.averageAnnualPremium, usAverage),
+                    href: rentersInsurancePath(slugForStateName(entry.state)),
+                })),
+            ], usAverage)}
+            <p class="cap">Find your state, note the gap against the $${usAverage} US average, then open the state page for weather, landlord norms, and a worked example.</p>
 
-<section class="section">
-    <div class="container-custom">
-        <div class="marginalia">
-            <div class="marginalia__main sheet guide-sheet">
-                <div class="guide-prose">
-                    <h2>What drives renters insurance prices</h2>
-                    <h3>Claim frequency and litigation</h3>
-                    <p>States with more theft, fire, and lawsuit activity price the same $20,000 contents limit higher because the pool loses more money.</p>
-                    <h3>Replacement costs</h3>
-                    <p>If it costs more to replace a sofa in Boston than in Boise, the premium follows. Shipping-heavy states show the same pattern.</p>
-                    <h3>Weather exposure</h3>
-                    <p>Hail, wind, freeze bursts, and wildfire smoke claims all show up in renters books. Flood and earthquake usually do not, which is why those need separate decisions.</p>
-                    <h3>Carrier competition</h3>
-                    <p>A crowded market can hold prices down. A thin market, or one where carriers have pulled back, does the opposite.</p>
-                </div>
+            <div class="prose">
+                <h2 id="what-drives-prices">What drives renters insurance prices</h2>
+                <h3>Claim frequency and litigation</h3>
+                <p>States with more theft, fire, and lawsuit activity price the same $20,000 contents limit higher because the pool loses more money.</p>
+                <h3>Replacement costs</h3>
+                <p>If it costs more to replace a sofa in Boston than in Boise, the premium follows. Shipping-heavy states show the same pattern.</p>
+                <h3>Weather exposure</h3>
+                <p>Hail, wind, freeze bursts, and wildfire smoke claims all show up in renters books. Flood and earthquake usually do not, which is why those need separate decisions.</p>
+                <h3>Carrier competition</h3>
+                <p>A crowded market can hold prices down. A thin market, or one where carriers have pulled back, does the opposite.</p>
             </div>
-            <aside class="marginalia__aside guide-aside">
-                <div>
-                    <p class="guide-aside__title">How to use the table</p>
-                    <p>Find your state, note the gap against the $${usAverage} US average, then open the state page for weather, landlord norms, and a worked example.</p>
-                </div>
-                <div>
-                    <p class="guide-aside__title">Next steps</p>
-                    <dl class="dl-terms">
-                        <dt><a href="/tools/renters-insurance-cost">Cost calculator</a></dt>
-                        <dd>Estimate your own premium from your coverage limits, deductible, and location.</dd>
-                        <dt><a href="/blog/how-much-is-renters-insurance-cost-guide">How much is renters insurance?</a></dt>
-                        <dd>What the policy covers and how premiums are set.</dd>
-                        <dt><a href="/tools/categories/insurance-protection">Insurance tools</a></dt>
-                        <dd>The rest of the calculator library.</dd>
-                    </dl>
-                </div>
-            </aside>
+
+            <div class="cta">
+                <h2>Next steps</h2>
+                <ul>
+                    <li><a href="/tools/renters-insurance-cost">Cost calculator</a>. Estimate your own premium from your coverage limits, deductible, and location.</li>
+                    <li><a href="/blog/how-much-is-renters-insurance-cost-guide">How much is renters insurance?</a> What the policy covers and how premiums are set.</li>
+                    <li><a href="/tools/categories/insurance-protection">Insurance tools</a>. The rest of the calculator library.</li>
+                </ul>
+                <p class="cta__actions">
+                    <a href="/tools/renters-insurance-cost" class="btn-primary">Open the cost calculator</a>
+                </p>
+            </div>
         </div>
     </div>
 </section>`;
@@ -1279,105 +1212,93 @@ function renderRentersStatePage(entry, entriesByAbbr, usEntry, guides) {
     const faqItems = normalizeFaqs(guide && guide.faqs, fallbackFaqs);
     const uniqueBlocks = [];
     if (guide && guide.localAngle) {
-        uniqueBlocks.push(`<h2>What is different about ${esc(name)}</h2><p>${esc(guide.localAngle)}</p><p>${esc(cityLine)}</p>`);
+        uniqueBlocks.push(`<h2 id="whats-different">What is different about ${esc(name)}</h2><p>${esc(guide.localAngle)}</p><p>${esc(cityLine)}</p>`);
     } else {
-        uniqueBlocks.push(`<h2>What is different about ${esc(name)}</h2><p>${esc(intro)} ${esc(cityLine)}</p>`);
+        uniqueBlocks.push(`<h2 id="whats-different">What is different about ${esc(name)}</h2><p>${esc(intro)} ${esc(cityLine)}</p>`);
     }
     if (guide && guide.leaseNorm) {
-        uniqueBlocks.push(`<h2>Leases and landlord rules in ${esc(name)}</h2><p>${esc(guide.leaseNorm)}</p>`);
+        uniqueBlocks.push(`<h2 id="leases">Leases and landlord rules in ${esc(name)}</h2><p>${esc(guide.leaseNorm)}</p>`);
     }
     if (guide && guide.contentsNote) {
-        uniqueBlocks.push(`<h2>What to actually schedule</h2><p>${esc(guide.contentsNote)}</p>`);
+        uniqueBlocks.push(`<h2 id="schedule">What to actually schedule</h2><p>${esc(guide.contentsNote)}</p>`);
     }
     if (guide && guide.scenarioStory) {
-        uniqueBlocks.push(`<h2>A ${esc(guide.scenarioCity || name)} example</h2><p>${esc(guide.scenarioStory)}</p>`);
+        uniqueBlocks.push(`<h2 id="example">A ${esc(guide.scenarioCity || name)} example</h2><p>${esc(guide.scenarioStory)}</p>`);
     }
     const regulator = (guide && guide.regulatorName)
-        ? `<p>Questions about carriers or complaints go to the ${esc(guide.regulatorName)}${guide.regulatorUrl ? ` (<a class="inline-link" href="${esc(guide.regulatorUrl)}">${esc(guide.regulatorUrl.replace(/^https?:\/\//, ''))}</a>)` : ''}.</p>`
+        ? `<p>Questions about carriers or complaints go to the ${esc(guide.regulatorName)}${guide.regulatorUrl ? ` (<a href="${esc(guide.regulatorUrl)}">${esc(guide.regulatorUrl.replace(/^https?:\/\//, ''))}</a>)` : ''}.</p>`
         : '';
 
-    const body = `<section class="guide-opener">
+    const body = `<section class="opener">
     <div class="container-custom">
-        ${renderBreadcrumbNav([
-            { name: 'Home', href: '/' },
-            { name: 'Renters insurance by state', href: rentersInsurancePath() },
-            { name },
-        ])}
-        <div class="opener">
-            <div>
-                <h1 class="opener__title">Renters insurance cost in ${esc(name)}</h1>
-                <p class="opener__lede">${esc(intro)} The state average is a baseline; your quote depends on your city, coverage limits, deductible, and claims history.</p>
-                <p class="guide-opener__meta">US average: $${usAverage} a year, on the same NAIC 2021 baseline.</p>
+        <div class="col">
+            ${renderBreadcrumbNav([
+                { name: 'Home', href: '/' },
+                { name: 'Renters insurance by state', href: rentersInsurancePath() },
+                { name },
+            ])}
+            <h1 class="opener__title">Renters insurance cost in ${esc(name)}</h1>
+            <p class="opener__key">${esc(name)} averages about $${entry.averageAnnualPremium} a year, ${esc(premiumProse(entry.averageAnnualPremium, usAverage))}.</p>
+            <p class="opener__lede">${esc(intro)} The state average is a baseline. Your quote depends on your city, coverage limits, deductible, and claims history.</p>
+            <p class="meta">US average: $${usAverage} a year, on the same NAIC 2021 baseline.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section section--rule">
+    <div class="container-custom">
+        <div class="col">
+            <div class="prose">
+                ${uniqueBlocks.join('')}
+
+                <h2 id="what-drives-costs">What drives ${esc(name)} renters insurance costs</h2>
+                <p>Weather exposure is a major driver here: ${esc(context.weather)}.</p>
+                <p>Claim frequency and litigation also matter: ${esc(context.claims)}.</p>
+                <p>Replacement costs and carrier competition round out the picture: ${esc(context.replacement)}, and ${esc(context.competition)}.</p>
+                ${regulator}
+
+                <h2 id="how-it-compares">How ${esc(name)} compares</h2>
+                <p>Against the national average and its neighbours, on the same NAIC baseline.</p>
             </div>
-            <aside class="opener__aside">
-                <div class="figure figure--gold">
-                    <span class="figure__value">$${entry.averageAnnualPremium}</span>
-                    <span class="figure__label">${esc(name)} average a year, ${esc(premiumProse(entry.averageAnnualPremium, usAverage))}</span>
-                </div>
-            </aside>
-        </div>
-    </div>
-</section>
+            ${renderPremiumTable([
+                { name: name, premium: entry.averageAnnualPremium, vs: premiumVsUs(entry.averageAnnualPremium, usAverage), highlight: true },
+                { name: 'United States (national average)', premium: usAverage, vs: 'baseline' },
+                ...neighbors.map((neighbor) => ({
+                    name: neighbor.state,
+                    premium: neighbor.averageAnnualPremium,
+                    vs: premiumVsUs(neighbor.averageAnnualPremium, usAverage),
+                    href: rentersInsurancePath(slugForStateName(neighbor.state)),
+                })),
+            ], usAverage)}
+            <p class="cap">A minus sign means the average is below the US average. Figures are the NAIC 2021 baseline. 2026 quotes run higher after inflation.</p>
 
-<section class="section">
-    <div class="container-custom">
-        <div class="marginalia">
-            <div class="marginalia__main sheet guide-sheet">
-                <div class="guide-prose">
-                    ${uniqueBlocks.join('')}
-
-                    <h2>What drives ${esc(name)} renters insurance costs</h2>
-                    <p>Weather exposure is a major driver here: ${esc(context.weather)}.</p>
-                    <p>Claim frequency and litigation also matter: ${esc(context.claims)}.</p>
-                    <p>Replacement costs and carrier competition round out the picture: ${esc(context.replacement)}, and ${esc(context.competition)}.</p>
-                    ${regulator}
-                </div>
+            <div class="prose">
+                <h2 id="questions">Questions people ask about ${esc(name)} renters insurance</h2>
+                <p>What the state average does and does not tell you.</p>
             </div>
-            <aside class="marginalia__aside guide-aside">
-                <div>
-                    <p class="guide-aside__title">Next steps</p>
-                    <dl class="dl-terms">
-                        <dt><a href="${esc(rentersInsurancePath())}">All states</a></dt>
-                        <dd>See how ${esc(name)} compares with every other state.</dd>
-                        <dt><a href="/tools/renters-insurance-cost">Cost calculator</a></dt>
-                        <dd>Estimate your own premium.</dd>
-                        <dt><a href="/blog/how-much-is-renters-insurance-cost-guide">How much is renters insurance?</a></dt>
-                        <dd>What the policy covers and how premiums are set.</dd>
-                    </dl>
-                </div>
-            </aside>
-        </div>
-    </div>
-</section>
-
-<section class="section band--cream-dark">
-    <div class="container-custom">
-        <div class="section__head">
-            <h2>How ${esc(name)} compares</h2>
-            <p>Against the national average and its neighbours, on the same NAIC baseline.</p>
-        </div>
-        ${renderPremiumTable([
-            { name: name, premium: entry.averageAnnualPremium, vs: premiumVsUs(entry.averageAnnualPremium, usAverage), highlight: true },
-            { name: 'United States (national average)', premium: usAverage, vs: 'baseline' },
-            ...neighbors.map((neighbor) => ({
-                name: neighbor.state,
-                premium: neighbor.averageAnnualPremium,
-                vs: premiumVsUs(neighbor.averageAnnualPremium, usAverage),
-                href: rentersInsurancePath(slugForStateName(neighbor.state)),
-            })),
-        ], usAverage)}
-        <p class="guide-row__note">A minus sign means the average is below the US average. Figures are the NAIC 2021 baseline; 2026 quotes run higher after inflation.</p>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container-custom">
-        <div class="section__head">
-            <h2>Questions people ask about ${esc(name)} renters insurance</h2>
-            <p>What the state average does and does not tell you.</p>
-        </div>
-        <div class="guide-prose">
             ${renderFaqList(faqItems)}
+
+            <div class="do">
+                <p class="do__label">Do this next</p>
+                <ul>
+                    <li>List what you own and price the contents limit you actually need.</li>
+                    <li>Pick a deductible you could pay tomorrow.</li>
+                    <li>Read the lease for the liability limit your landlord requires.</li>
+                </ul>
+            </div>
+
+            <div class="cta">
+                <h2>Next steps</h2>
+                <ul>
+                    <li><a href="${esc(rentersInsurancePath())}">All states</a>. See how ${esc(name)} compares with every other state.</li>
+                    <li><a href="/tools/renters-insurance-cost">Cost calculator</a>. Estimate your own premium.</li>
+                    <li><a href="/blog/how-much-is-renters-insurance-cost-guide">How much is renters insurance?</a> What the policy covers and how premiums are set.</li>
+                </ul>
+                <p class="cta__actions">
+                    <a href="/tools/renters-insurance-cost" class="btn-primary">Open the cost calculator</a>
+                    <a href="${esc(rentersInsurancePath())}" class="btn-secondary">Compare all states</a>
+                </p>
+            </div>
         </div>
     </div>
 </section>`;
