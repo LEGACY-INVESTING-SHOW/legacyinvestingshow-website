@@ -108,7 +108,7 @@ State averages swing more than most people expect, because claims frequency, rep
 | Wisconsin | $112 |
 | Idaho | $103 |
 
-This is the 2021 NAIC baseline — the latest comprehensive state comparison — so today's quotes run higher after several years of inflation. Treat it as a reference band, not a quote. If you want your own state's number plus the factors that move it, the [state-by-state renters insurance cost pages](/programmatic-pages/insurance/renters-by-state) have the full table. A Texan at the $250 average and an Idahoan at $103 should both expect their own policy to land near their state's band — and both should be suspicious of a quote far above it.
+This is the 2021 NAIC baseline — the latest comprehensive state comparison — so today's quotes run higher after several years of inflation. Treat it as a reference band, not a quote. If you want your own state's number plus the factors that move it, the [state-by-state renters insurance cost pages](/renters-insurance) have the full table. A Texan at the $250 average and an Idahoan at $103 should both expect their own policy to land near their state's band — and both should be suspicious of a quote far above it.
 
 ## Why the number moves
 

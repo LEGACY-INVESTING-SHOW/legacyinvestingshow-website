@@ -9,14 +9,7 @@
 
 const fs = require('fs');
 const path = require('path');
-let matter = null;
-
-try {
-  matter = require('gray-matter');
-} catch {
-  // Keep sitemap generation usable in lean local checkouts where dependencies
-  // have not been installed yet. Full builds still use gray-matter elsewhere.
-}
+const matter = require('gray-matter');
 
 // Configuration
 const SITE_URL = process.env.SITE_URL || 'https://www.legacyinvestingshow.com';
@@ -37,15 +30,15 @@ const staticPages = [
   { url: '/tax-strategies-101', file: 'tax-strategies-101.html' },
 ];
 
-// Programmatic SEO directories to scan
-const programmaticDirs = [
+const resourceDirs = [
   'tax-strategies',
   'retirement',
   'compare',
   'topics',
   'tools',
   'worksheets',
-  'programmatic-pages',
+  'markets',
+  'renters-insurance',
 ];
 
 /**
@@ -259,29 +252,6 @@ function parseFrontmatterDate(value) {
   return getW3CDate(date);
 }
 
-/**
- * Small fallback frontmatter reader used only when gray-matter is unavailable.
- */
-function parseSimpleFrontmatterData(raw) {
-  const match = raw.match(/^---\s*\n([\s\S]*?)\n---/);
-  const data = {};
-
-  if (!match) return data;
-
-  for (const line of match[1].split(/\r?\n/)) {
-    const field = line.match(/^([A-Za-z0-9_-]+):\s*(.+?)\s*$/);
-    if (!field) continue;
-
-    data[field[1]] = field[2].replace(/^['"]|['"]$/g, '');
-  }
-
-  return data;
-}
-
-/**
- * Build a lookup map of blog slug -> lastmod from markdown frontmatter.
- * Prefers `modifiedDate`, then falls back to `date`.
- */
 function getBlogLastmodMap() {
   const lastmodMap = new Map();
   if (!fs.existsSync(BLOG_CONTENT_DIR)) return lastmodMap;
@@ -294,7 +264,7 @@ function getBlogLastmodMap() {
 
     try {
       const raw = fs.readFileSync(fullPath, 'utf8');
-      const data = matter ? matter(raw).data : parseSimpleFrontmatterData(raw);
+      const data = matter(raw).data;
       const lastmod = parseFrontmatterDate(data.modifiedDate) || parseFrontmatterDate(data.date);
       if (lastmod) {
         lastmodMap.set(slug, lastmod);
@@ -307,13 +277,10 @@ function getBlogLastmodMap() {
   return lastmodMap;
 }
 
-/**
- * Scan programmatic SEO directories for pages
- */
-function scanProgrammaticPages() {
+function scanResourcePages() {
   const pages = [];
 
-  for (const dirName of programmaticDirs) {
+  for (const dirName of resourceDirs) {
     const dir = path.join(ROOT_DIR, dirName);
 
     if (!fs.existsSync(dir)) {
@@ -458,9 +425,8 @@ function generateSitemaps() {
     });
   }
 
-  // Add programmatic SEO pages (tax strategies, etc.) to the page sitemap.
-  const programmaticPages = scanProgrammaticPages();
-  for (const page of programmaticPages) {
+  const resourcePages = scanResourcePages();
+  for (const page of resourcePages) {
     pageUrls.push({
       loc: `${SITE_URL}${normalizePath(page.url)}`,
       lastmod: page.lastmod,

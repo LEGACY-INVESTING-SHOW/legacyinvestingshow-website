@@ -172,31 +172,26 @@ High-level category overview pages:
 - Business Structures (`business-structures.html`)
 - Debt Management (`debt-management.html`)
 
-### 5. Programmatic SEO Pages (Generated from Data)
-**Source:** `data/*.json` → **Output:** `programmatic-pages/**/*.html`
+### 5. Market and insurance guides (Generated from Data)
+**Source:** `data/cities.json`, `data/renters-insurance-by-state.json`, `data/renters-insurance-guides.json` → **Output:** `markets/*.html`, `renters-insurance/*.html`
 
-**Three types of programmatic pages:**
+Do not publish pages under `/programmatic-pages`. That path is a 301 to the public IA.
 
-**a) City Pages** (`programmatic-pages/cities/*.html`)
-Location-specific tax strategies. Generated from `data/cities.json`:
-- Austin, TX (`austin-tx.html`)
-- Nashville, TN (`nashville-tn.html`)
-- Miami, FL (`miami-fl.html`)
-- Phoenix, AZ (`phoenix-az.html`)
-- Denver, CO (`denver-co.html`)
-- And 10+ more major markets
+**a) City market pages** (`markets/*.html`)
+Location-specific tax and operating guides. Generated from `data/cities.json`:
+- Austin, TX (`/markets/austin-tx`)
+- Nashville, TN (`/markets/nashville-tn`)
+- Miami, FL (`/markets/miami-fl`)
+- And 12+ more major markets
 
-**b) Persona Pages** (`programmatic-pages/personas/*.html`)
-Audience-specific guidance:
-- Airbnb Hosts (`airbnb-hosts.html`)
-- Real Estate Investors (`real-estate-investors.html`)
-- Self-Employed (`self-employed.html`)
-- High-Income Earners (`high-income-earners.html`)
-- Small Business Owners (`small-business-owners.html`)
-- Retirement Savers (`retirement-savers.html`)
+**b) Persona pages**
+Audience pages live under `tax-strategies/for/*.html`. Do not generate a parallel persona tree.
 
-**c) Comparison Pages** (`programmatic-pages/comparisons/*.html`)
-Head-to-head strategy comparisons.
+**c) Comparison pages**
+Head-to-head strategy comparisons live under `compare/*.html`.
+
+**d) Renters insurance by state** (`renters-insurance/*.html`)
+Hub: `/renters-insurance`. State page: `/renters-insurance/kentucky`.
 
 ### 6. Static Core Pages
 - `index.html` - Homepage
@@ -209,7 +204,9 @@ Head-to-head strategy comparisons.
 
 ### Content Data
 - `data/tax-strategies.json` - 40+ tax strategies with metadata, FAQs, personas
-- `data/cities.json` - 15 major US markets for programmatic SEO
+- `data/cities.json` - 15 major US markets for city tax guides
+- `data/renters-insurance-by-state.json` - NAIC premium table
+- `data/renters-insurance-guides.json` - unique per-state copy for renters pages
 - `data/topics.json` - 30+ content topic ideas (guides, comparisons, listicles)
 - `data/seo-topics-100.json` - 100 topic pipeline with generation status
 - `data/youtube-queue.json` - YouTube video automation queue
@@ -260,7 +257,7 @@ Head-to-head strategy comparisons.
 - Blog posts with images (blog/*.html)
 - Tax strategies (tax-strategies/*.html)
 - Retirement guides (retirement/*.html)
-- Programmatic pages with lastmod dates
+- Market and insurance guides with lastmod dates
 
 ### `scripts/generate-rss.js`
 **Purpose:** Generates RSS feed (feed.xml) for blog syndication
@@ -268,8 +265,8 @@ Head-to-head strategy comparisons.
 ### `scripts/build-tax-strategies.js`
 **Purpose:** Generates tax strategy HTML pages from `data/tax-strategies.json`
 
-### `scripts/generate-programmatic-seo.js`
-**Purpose:** Generates city, persona, and comparison pages from data
+### `scripts/fix-programmatic-seo.js`
+**Purpose:** Generates `/markets` city guides and `/renters-insurance` state pages from data. Do not emit `/programmatic-pages`.
 
 ### `scripts/youtube-to-blog.js`
 **Purpose:** Automated YouTube-to-blog conversion (currently placeholder)
@@ -523,7 +520,7 @@ legacyinvestingshow-website/
 │   ├── build-tax-strategies.js  # Tax strategy generator
 │   ├── generate-sitemap.js      # Sitemap generator
 │   ├── generate-rss.js          # RSS feed generator
-│   ├── generate-programmatic-seo.js  # Programmatic pages
+│   ├── fix-programmatic-seo.js  # Market and renters insurance pages
 │   ├── youtube-to-blog.js       # YouTube automation
 │   └── build-missing-posts.js   # One-off blog generator
 │
@@ -560,10 +557,13 @@ legacyinvestingshow-website/
 │   ├── tax-strategies.html
 │   └── ...
 │
-├── programmatic-pages/          # Generated programmatic SEO
-│   ├── cities/                  # 15 city pages
-│   ├── personas/                # 6 persona pages
-│   └── comparisons/             # Comparison pages
+├── markets/                     # City tax and operating guides
+│   ├── index.html
+│   └── austin-tx.html
+│
+├── renters-insurance/           # State renters insurance guides
+│   ├── index.html
+│   └── kentucky.html
 │
 ├── sitemap.xml                  # Generated sitemap
 ├── feed.xml                     # Generated RSS feed
@@ -615,11 +615,11 @@ vercel --prod
 3. **Run** `npm run build`
 4. **Test** and deploy
 
-### Programmatic SEO Workflow
-1. **Update** data files (cities.json, etc.)
-2. **Run** `node scripts/generate-programmatic-seo.js`
-3. **Run** `npm run build`
-4. **Review** generated pages
+### Market and insurance guide workflow
+1. **Update** `data/cities.json` or `data/renters-insurance-guides.json`.
+2. **Run** `npm run build:programmatic`.
+3. **Run** `npm run build`.
+4. **Review** generated pages under `/markets` and `/renters-insurance`.
 5. **Deploy**
 
 ## Common Tasks

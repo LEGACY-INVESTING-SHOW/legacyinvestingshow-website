@@ -11,6 +11,8 @@ allowed-tools: Read, Write, Grep, Glob, Bash, WebFetch, WebSearch
 
 Generate comprehensive, SEO-optimized pages that are 3,000-5,000 words with real depth and value. These are NOT thin content pages - they should be the definitive resource on each topic.
 
+**Public URLs.** Never write pages under `/programmatic-pages`. City guides go to `/markets`. Renters insurance guides go to `/renters-insurance`. Persona pages use `/tax-strategies/for`. Comparisons use `/compare`. After generation, run `node scripts/check-public-url-hygiene.js`.
+
 ## Philosophy
 
 **The Problem with Thin Programmatic SEO:**

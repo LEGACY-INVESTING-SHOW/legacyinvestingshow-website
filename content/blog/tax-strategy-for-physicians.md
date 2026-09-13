@@ -386,7 +386,7 @@ You can compress this if needed, but do not skip the final two steps.
 - compare actual outcome to projected outcome,
 - review whether complexity still earns net benefit.
 
-For practical references on core deduction topics, use [W-2 deductions](/blog/best-tax-deductions-for-w2-employees) and [self-employed deduction categories](/blog/best-tax-deductions-for-self-employed). For a programmatic support path, see [blog resources](/blog/).
+For practical references on core deduction topics, use [W-2 deductions](/blog/best-tax-deductions-for-w2-employees) and [self-employed deduction categories](/blog/best-tax-deductions-for-self-employed). More deduction guides live on the [blog](/blog/).
 
 ## How This Compares To Alternatives
 

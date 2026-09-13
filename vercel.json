@@ -521,6 +521,131 @@
   ],
   "redirects": [
     {
+      "source": "/programmatic-pages/insurance/renters-by-state",
+      "destination": "/renters-insurance",
+      "permanent": true
+    },
+    {
+      "source": "/programmatic-pages/insurance/renters-by-state/",
+      "destination": "/renters-insurance",
+      "permanent": true
+    },
+    {
+      "source": "/programmatic-pages/insurance/renters-by-state.html",
+      "destination": "/renters-insurance",
+      "permanent": true
+    },
+    {
+      "source": "/programmatic-pages/insurance/renters-:state",
+      "destination": "/renters-insurance/:state",
+      "permanent": true
+    },
+    {
+      "source": "/programmatic-pages/insurance/renters-:state/",
+      "destination": "/renters-insurance/:state",
+      "permanent": true
+    },
+    {
+      "source": "/programmatic-pages/insurance/renters-:state.html",
+      "destination": "/renters-insurance/:state",
+      "permanent": true
+    },
+    {
+      "source": "/programmatic-pages/cities/:slug",
+      "destination": "/markets/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/programmatic-pages/cities/:slug/",
+      "destination": "/markets/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/programmatic-pages/cities/:slug.html",
+      "destination": "/markets/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/programmatic-pages/comparisons/:slug",
+      "destination": "/compare/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/programmatic-pages/comparisons/:slug/",
+      "destination": "/compare/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/programmatic-pages/comparisons/:slug.html",
+      "destination": "/compare/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/programmatic-pages/personas/small-business-owners",
+      "destination": "/tax-strategies/for/business-owners",
+      "permanent": true
+    },
+    {
+      "source": "/programmatic-pages/personas/small-business-owners/",
+      "destination": "/tax-strategies/for/business-owners",
+      "permanent": true
+    },
+    {
+      "source": "/programmatic-pages/personas/small-business-owners.html",
+      "destination": "/tax-strategies/for/business-owners",
+      "permanent": true
+    },
+    {
+      "source": "/programmatic-pages/personas/retirement-savers",
+      "destination": "/retirement/traditional-vs-roth-401k",
+      "permanent": true
+    },
+    {
+      "source": "/programmatic-pages/personas/retirement-savers/",
+      "destination": "/retirement/traditional-vs-roth-401k",
+      "permanent": true
+    },
+    {
+      "source": "/programmatic-pages/personas/retirement-savers.html",
+      "destination": "/retirement/traditional-vs-roth-401k",
+      "permanent": true
+    },
+    {
+      "source": "/programmatic-pages/personas/:slug",
+      "destination": "/tax-strategies/for/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/programmatic-pages/personas/:slug/",
+      "destination": "/tax-strategies/for/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/programmatic-pages/personas/:slug.html",
+      "destination": "/tax-strategies/for/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/programmatic-pages",
+      "destination": "/markets",
+      "permanent": true
+    },
+    {
+      "source": "/programmatic-pages/",
+      "destination": "/markets",
+      "permanent": true
+    },
+    {
+      "source": "/programmatic-pages/index.html",
+      "destination": "/markets",
+      "permanent": true
+    },
+    {
+      "source": "/programmatic-pages/:path*",
+      "destination": "/markets",
+      "permanent": true
+    },
+    {
       "source": "/funnels/airbnbascension",
       "destination": "/airbnbascension",
       "permanent": true

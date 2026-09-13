@@ -120,7 +120,10 @@ Representative tools:
 - https://www.legacyinvestingshow.com/tools/emergency-fund-target
 - https://www.legacyinvestingshow.com/tools/retirement-income-runway
 - https://www.legacyinvestingshow.com/tools/payroll-withholding-estimate
-- https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-by-state
+- https://www.legacyinvestingshow.com/renters-insurance
+- https://www.legacyinvestingshow.com/renters-insurance/kentucky
+- https://www.legacyinvestingshow.com/markets
+- https://www.legacyinvestingshow.com/markets/austin-tx
 
 Companion guides:
 - https://www.legacyinvestingshow.com/blog/how-much-is-renters-insurance-cost-guide

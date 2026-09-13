@@ -1782,5 +1782,682 @@
         "label": "Mortgage Extra Payment Calculator"
       }
     ]
+  },
+  {
+    "slug": "cost-segregation-vs-bonus-depreciation",
+    "title": "Cost Segregation vs Bonus Depreciation",
+    "description": "When a cost segregation study is worth the fee versus taking bonus depreciation only on assets you already have on invoices, with recapture and usable-loss gates.",
+    "quickVerdict": "The study creates buckets. Bonus is the first-year rate on those buckets.",
+    "bestFor": "Investors who just bought or renovated a building and need to know whether to pay for an engineering study.",
+    "intro": "These two labels get sold as rivals. They are not. Cost segregation reclassifies building cost into shorter lives. Bonus depreciation is the first-year percentage that then applies to property with a recovery period of 20 years or less. The real decision is whether the study fee buys enough extra short-life basis, and whether you can use the deduction this year.",
+    "opening": [
+      "A lot of owners hear cost segregation and bonus depreciation in the same sales pitch and think they have to pick a side. The study is how you find 5-year carpet, 7-year equipment, and 15-year site work inside a 27.5-year or 39-year building. Bonus is the timing rule that can pull a large share of those shorter-life costs into year one.",
+      "If you already have clean invoices for furniture, appliances, and qualified improvement property, you may take bonus on those items without a study. The study earns its keep when a meaningful slice of the building itself can be reclassified, and when the tax on that extra depreciation exceeds the fee after you apply passive-loss rules.",
+      "Paper depreciation is not cash. If the loss is trapped as passive, you paid for a carryforward. Model usable loss before you sign the engagement letter.",
+      "Exit math matters as much as year-one math. Accelerated depreciation can come back as ordinary income on a sale. A two-year flip and a ten-year hold are different decisions even when the study looks identical."
+    ],
+    "commonMistake": "Paying $8,000 to $15,000 for a study, celebrating a six-figure year-one number, then discovering most of it carries forward because the rental is passive and you have no participation path.",
+    "decisionFrameworkLead": "Price the study against extra usable depreciation, then check hold period and recapture. Do not start with the marketing range.",
+    "preDecisionSteps": [
+      "Write the building basis after land, the close date or placed-in-service date, and the expected hold period.",
+      "List assets that already qualify for bonus without a study, using invoices and a depreciation schedule.",
+      "Ask your CPA how much of a year-one loss you can actually use under passive-activity rules, STR participation, or real estate professional status.",
+      "Get a written study quote and a conservative reclassification range, then run tax at your marginal rate on the extra usable deduction minus the fee.",
+      "Model a sale in year 3 and year 8, including recapture, before you authorize the study."
+    ],
+    "optionAName": "Cost Segregation",
+    "optionBName": "Bonus Depreciation",
+    "winnerLabel": "Usually stacked, study only when the extra basis pays for itself",
+    "whenA": "The study wins when the building is large enough, the purchase or renovation is recent, the extra short-life basis is real, and you have a documented way to use the loss this year or on a short, planned timeline.",
+    "whenB": "Bonus without a study wins when the obvious personal property and improvement invoices already capture most of the acceleration, the building is too small for the fee, or you expect to sell before the study can earn its cost.",
+    "decisionMatrix": [
+      {
+        "factor": "What the tool actually does",
+        "a": "Engineering study that splits building cost into 5, 7, and 15-year lives plus remaining real property",
+        "b": "First-year percentage on property with a recovery period of 20 years or less, including qualified improvement property",
+        "better": "A finds basis, B times it"
+      },
+      {
+        "factor": "Upfront cost",
+        "a": "Typical study fee of $5,000 to $15,000",
+        "b": "Usually inside ordinary tax prep if invoices are clean",
+        "better": "B"
+      },
+      {
+        "factor": "Year-one deduction size on a building",
+        "a": "Often much larger because hidden components leave the 27.5 or 39-year bucket",
+        "b": "Limited to assets you can already support without reclassifying the structure",
+        "better": "A"
+      },
+      {
+        "factor": "Admin and exam file",
+        "a": "Need a credible report, land allocation, and a depreciation schedule that matches the study",
+        "b": "Need invoices, placed-in-service dates, and the current-year bonus rate",
+        "better": "B"
+      },
+      {
+        "factor": "Short hold and recapture",
+        "a": "Fee plus ordinary-income recapture can erase the year-one win on a fast sale",
+        "b": "Still recaptures, but you did not add a study bill",
+        "better": "B on a short hold"
+      }
+    ],
+    "workedExample": {
+      "profile": "Raleigh investors close a $1,150,000 fourplex. Land is 20 percent. Building basis is $920,000. They expect an 8-year hold and have STR participation logs.",
+      "assumptions": [
+        "Study quote is $8,500 and reclassifies $210,000 to 5-year property and $90,000 to 15-year property, leaving $620,000 on 27.5 years",
+        "Model bonus rate is 60 percent of qualifying short-life basis, matching the current site figure and subject to the filing-year statute",
+        "Federal-plus-state marginal rate on usable ordinary income is 35 percent",
+        "Without a study, year-one building depreciation is about $33,500 ($920,000 divided by 27.5)"
+      ],
+      "aOutcome": "With the study and 60 percent bonus, year-one depreciation is about $180,000 of bonus on the $300,000 short-life pool, plus about $22,500 on the remaining $620,000, or roughly $202,500 before the $8,500 fee. If the $169,000 of extra deduction is usable, tax savings are about $59,000.",
+      "bOutcome": "Bonus alone, with no study, stays near the $33,500 straight-line figure unless they have a separate furniture invoice. If they later add $40,000 of appliances, bonus on that invoice is $24,000. That is real money and it does not require an engineering report.",
+      "takeaway": "The study is a purchase of extra short-life basis. Buy it when usable tax on that extra basis clears the fee with room for recapture. Skip it when invoices already grab the acceleration or the loss will sit unused."
+    },
+    "edgeCases": [
+      "You run look-back cost segregation on a property placed in service years ago and need Form 3115 treatment, not a casual year-one claim.",
+      "Land value is understated so the study inflates depreciable basis.",
+      "You sell inside three years and ordinary-income recapture plus the fee wipe the headline savings.",
+      "A weak report uses percentages with no site visit and no asset list you can defend."
+    ],
+    "avoidA": [
+      "Building basis after land is well under $500,000 and the fee will eat the tax savings.",
+      "You have no path to use a passive loss this year or next.",
+      "You already plan to list the property in the next 24 months."
+    ],
+    "avoidB": [
+      "You treat bonus as a substitute for identifying building components that are still sitting on 27.5 or 39 years.",
+      "You claim bonus on structural building cost that does not qualify.",
+      "You model 100 percent bonus in a year when the statute uses a lower rate."
+    ],
+    "checklist": [
+      "Lock land versus building basis with a supportable allocation.",
+      "Collect invoices for furniture, appliances, and qualified improvements before you talk to a study firm.",
+      "Get a written usable-loss memo from your CPA covering passive limits, STR hours, or REPS.",
+      "Compare study fee against extra usable tax in a conservative reclass range.",
+      "File the report, photos, and the matching depreciation schedule in one folder."
+    ],
+    "advisorQuestions": [
+      "How much extra short-life basis do you need before a study fee is rational on this building?",
+      "What bonus percentage should we model for the year the property is placed in service?",
+      "If the rental stays passive, what is the carryforward worth on my timeline?",
+      "How should we model recapture if I sell in year 3 versus year 8?"
+    ],
+    "faq": [
+      {
+        "q": "Is cost segregation a different deduction from bonus depreciation?",
+        "a": "Cost segregation changes asset class and recovery period. Bonus depreciation is a first-year percentage that can apply after property qualifies under section 168(k). The study often creates the buckets that bonus then accelerates."
+      },
+      {
+        "q": "Can I take bonus on furniture without paying for a study?",
+        "a": "Yes, if the invoices, dates, and asset class are clean. A study is for components buried in the building contract, not for a sofa you can already point to on a receipt."
+      },
+      {
+        "q": "What if the year-one loss is larger than I can use?",
+        "a": "Unused passive losses carry forward. That can still be useful if you later have passive income, qualify under STR participation, or qualify as a real estate professional. It is a weaker reason to pay a large study fee today."
+      },
+      {
+        "q": "Does a cost segregation study change my 1031 plans?",
+        "a": "It can. A later exchange carries depreciated basis into the replacement property, and recapture accounts still exist. Tell the CPA and the qualified intermediary that a study was done before you list the property."
+      }
+    ],
+    "related": [
+      {
+        "href": "/tax-strategies/cost-segregation",
+        "label": "Cost Segregation"
+      },
+      {
+        "href": "/tax-strategies/bonus-depreciation",
+        "label": "Bonus Depreciation"
+      },
+      {
+        "href": "/tax-strategies/short-term-rental-loophole",
+        "label": "Short-Term Rental Loophole"
+      },
+      {
+        "href": "/tax-strategies/",
+        "label": "All Tax Strategies"
+      }
+    ]
+  },
+  {
+    "slug": "1031-exchange-vs-opportunity-zones",
+    "title": "1031 Exchange vs Opportunity Zones",
+    "description": "A sale-of-property comparison of like-kind exchange deferral versus investing capital gain in a qualified opportunity fund, including clocks, basis, and the 10-year hold.",
+    "quickVerdict": "Stay in replacement real estate, or move the gain into a fund with a later recognition date.",
+    "bestFor": "Landlords and investors sitting on a large built-in gain who must pick an exit structure before they list.",
+    "intro": "Both paths defer tax. They do not buy the same life. A 1031 exchange keeps you in like-kind real estate, with carryover basis and a 45-day identification clock. An opportunity zone path lets you invest the gain into a qualified opportunity fund, accept a later recognition date on that original gain, and chase a 10-year exclusion on the fund growth. Pick the life you want after the sale, then run the clocks.",
+    "opening": [
+      "When a long-held rental is about to sell, the tax bill can look like a second mortgage. A 1031 exchange is the familiar move. You sell, a qualified intermediary holds the equity, you identify replacement property in 45 days, and you close in 180 days. Gain stays deferred while you still own real estate.",
+      "Opportunity zones answer a different wish. You may want out of tenants and toilets. You may want the sale proceeds split, with only the gain going into a fund. The original gain is deferred to the date in the statute, not erased. If you hold the qualified opportunity fund investment at least 10 years, growth on that investment can be excluded.",
+      "People lose money here by comparing slogans. One slogan is tax-free forever. The other is swap till you drop. Neither slogan tells you whether you can find a replacement property, whether you can live with a 10-year fund hold, or whether you can write the check when the deferred gain comes due.",
+      "Run both models with the same sale. Include selling costs, debt payoff, state tax, depreciation recapture, and what you will own on the morning after closing."
+    ],
+    "commonMistake": "Treating an opportunity zone investment like a 1031 that deletes the old gain, then getting surprised when the original gain is still on a statutory recognition calendar.",
+    "decisionFrameworkLead": "Decide whether you still want to own and operate replacement real estate. The tax clocks are secondary to that life choice.",
+    "preDecisionSteps": [
+      "Compute realized gain, depreciation recapture, selling costs, and net cash after debt payoff.",
+      "Write down whether you still want to be a landlord, a passive fund investor, or a mix, for the next 10 years.",
+      "If you lean 1031, interview a qualified intermediary and map the 45-day and 180-day calendar against real listings.",
+      "If you lean opportunity zones, read the fund documents for fees, illiquidity, and what happens if you need cash before year 10.",
+      "Have your CPA model the original-gain recognition date under current section 1400Z rules and your state treatment, side by side with a fully deferred 1031."
+    ],
+    "optionAName": "1031 Exchange",
+    "optionBName": "Opportunity Zones",
+    "winnerLabel": "1031 if you stay in real estate, opportunity zones if you can hold a fund for 10 years",
+    "whenA": "A 1031 exchange wins when you want another property, you can meet the 45-day and 180-day clocks, and you want to keep deferring the same gain through later exchanges.",
+    "whenB": "Opportunity zones win when you want out of direct operations, you can invest the gain into a qualified opportunity fund on time, and you can hold through the 10-year mark for the fund-growth exclusion.",
+    "decisionMatrix": [
+      {
+        "factor": "What you must own next",
+        "a": "Like-kind real property held for investment or business",
+        "b": "An interest in a qualified opportunity fund that meets the 90 percent asset test",
+        "better": "A if you want another building"
+      },
+      {
+        "factor": "Treatment of the original gain",
+        "a": "Deferred while you keep exchanging, with carryover basis",
+        "b": "Deferred until the statutory recognition date or an earlier sale of the fund interest",
+        "better": "A for repeated deferral"
+      },
+      {
+        "factor": "Tax on later growth",
+        "a": "Replacement property growth is taxed later unless you exchange again or die with a basis step-up",
+        "b": "Growth on the fund interest can be excluded after a 10-year hold",
+        "better": "B"
+      },
+      {
+        "factor": "Clock pressure",
+        "a": "45 days to identify, 180 days to close, strict intermediary rules",
+        "b": "Generally 180 days to invest the gain, then a long hold",
+        "better": "B"
+      },
+      {
+        "factor": "Liquidity after closing",
+        "a": "Equity typically must go into the replacement to stay fully deferred",
+        "b": "You invest the gain. Basis and some cash may stay outside the fund.",
+        "better": "B"
+      }
+    ],
+    "workedExample": {
+      "profile": "Dallas landlord lists a duplex bought in 2012. Sale price is $780,000. Adjusted basis is $210,000. Selling costs are $38,000. A $190,000 loan is paid off at closing.",
+      "assumptions": [
+        "Realized gain is about $532,000 after selling costs ($780,000 minus $38,000 minus $210,000)",
+        "Net cash after the loan payoff is about $552,000 before tax",
+        "Combined federal long-term rate, NIIT, and state tax on a cash sale is modeled at 23.8 percent, or about $126,000 if they take the check",
+        "They are tired of tenants and will not identify a replacement property they want to manage"
+      ],
+      "aOutcome": "A full 1031 needs replacement real estate of about $780,000 and almost all of the equity. The $532,000 gain stays deferred and basis carries over. They remain landlords, or they pay a manager. Miss the 45-day list and the deferred tax comes due.",
+      "bOutcome": "They can invest the $532,000 gain in a qualified opportunity fund within 180 days and keep remaining cash outside that investment. The $532,000 is still scheduled to be recognized on the statutory date. If the fund grows and they hold 10 years, that growth can be excluded. They are no longer running a duplex.",
+      "takeaway": "Use 1031 when the next chapter is still a building you control. Use an opportunity fund when the next chapter is a 10-year, illiquid investment and you have a plan for the original gain coming back onto a return."
+    },
+    "edgeCases": [
+      "Related-party 1031 rules or a vacation-home facts pattern that fails the investment-intent test.",
+      "A drop-and-swap or partnership interest that does not qualify as like-kind real property.",
+      "An opportunity fund that fails the 90 percent test or invests outside a designated tract.",
+      "You need the cash in year 6 and cannot hold the fund to year 10."
+    ],
+    "avoidA": [
+      "You cannot identify replacement property you actually want within 45 days.",
+      "You need to walk away from real estate operations and you will resent the next building.",
+      "You are trying to exchange a partnership interest as if it were the underlying land."
+    ],
+    "avoidB": [
+      "You believe the original sale gain disappears on day one.",
+      "You cannot lock capital for 10 years.",
+      "You have not read fees, promote, and the fund plan for the recognition-date tax bill."
+    ],
+    "checklist": [
+      "Build a gain, recapture, and net-cash worksheet before you accept an offer.",
+      "If exchanging, engage the qualified intermediary before closing and calendar both clocks.",
+      "If using a fund, confirm it is a qualified opportunity fund and save the election forms your CPA will need.",
+      "Write a cash plan for the year the deferred original gain is recognized.",
+      "Keep the sale closing statement, intermediary or fund subscription file, and the tax memo in one folder."
+    ],
+    "advisorQuestions": [
+      "On this sale, how much of the gain is unrecaptured 1250 versus long-term capital gain?",
+      "What replacement value do I need to stay fully deferred in a 1031?",
+      "What date should we use for original-gain recognition if I invest in a qualified opportunity fund this year?",
+      "How does my state treat 1031 exchanges and opportunity zone funds, and do they match the federal result?"
+    ],
+    "faq": [
+      {
+        "q": "Does an opportunity zone investment replace a 1031 exchange on the same property?",
+        "a": "They are different statutes. A 1031 exchange replaces the property and defers gain while you stay in like-kind real estate. An opportunity zone investment is a reinvestment of capital gain into a fund. You generally pick one path for a given pot of gain and document it."
+      },
+      {
+        "q": "Is the original gain wiped out after 10 years in an opportunity zone?",
+        "a": "No. The 10-year hold is about excluding growth on the fund interest. The original gain is deferred to the recognition date in the statute, or earlier if you sell the fund interest. Confirm the current date with your CPA before you subscribe."
+      },
+      {
+        "q": "What happens if I miss the 45-day identification list?",
+        "a": "The exchange fails and the sale is taxable in the year of transfer, subject to the usual gain rules. Do not list a property until you have a replacement plan you can execute."
+      },
+      {
+        "q": "Can I 1031 into a property inside an opportunity zone?",
+        "a": "Owning real estate in a tract is not the same as holding a qualified opportunity fund interest. Mixing the two without a written structure is how people create a mess. Ask counsel before you try to stack them."
+      }
+    ],
+    "related": [
+      {
+        "href": "/tax-strategies/1031-exchange",
+        "label": "1031 Exchange"
+      },
+      {
+        "href": "/tax-strategies/opportunity-zones",
+        "label": "Opportunity Zones"
+      },
+      {
+        "href": "/tax-strategies/cost-segregation",
+        "label": "Cost Segregation"
+      },
+      {
+        "href": "/tax-strategies/",
+        "label": "All Tax Strategies"
+      }
+    ]
+  },
+  {
+    "slug": "real-estate-professional-vs-str-loophole",
+    "title": "Real Estate Professional Status vs STR Loophole",
+    "description": "Hour tests, average stay length, and usable rental losses for W-2 households choosing real estate professional status versus short-term rental material participation.",
+    "quickVerdict": "REPS is a life. The STR path is a property and a log.",
+    "bestFor": "High-income W-2 owners who have a paper rental loss and need to know which participation test they can actually pass.",
+    "intro": "Both ideas try to get rental losses onto a return that is full of W-2 wages. They use different doors. Real estate professional status is a taxpayer-level hour test plus material participation in the rentals. The short-term rental path is a property-level test. Average stays of 7 days or less, plus material participation, can pull that activity out of the usual rental-passive box. Count hours and nights before you count tax.",
+    "opening": [
+      "The attractive number is a cost segregation loss sitting on a Schedule E while a hospital or law firm W-2 fills the rest of the return. Passive activity rules will trap that loss unless you fit an exception. Two exceptions get most of the airtime. One is real estate professional status. The other is the short-term rental participation path people call the STR loophole.",
+      "REPS is strict. More than 750 hours in real property trades or businesses, and more than half of your personal services hours in those trades. Then you still need material participation in the rental activities, often by grouping. A spouse with a full-time job rarely clears the more-than-half test unless the other spouse is truly in the business.",
+      "The STR path does not ask you to become a real estate professional. It asks whether the average customer stay is 7 days or less, or 30 days or less with substantial services, and whether you materially participate. A 100-hour year with more hours than anyone else can be enough. A turnkey manager who outworks you can sink it.",
+      "If your average stay is 14 nights and you work 400 hours, you may have neither door. Design the operation to the test you can pass, or accept a carryforward."
+    ],
+    "commonMistake": "Claiming real estate professional status on a joint return while both spouses have full-time W-2 jobs and a weekend Airbnb, then reconstructing hours in March from memory.",
+    "decisionFrameworkLead": "Start with calendars, not software. If the hours and stay lengths are not already true, the deduction is not a plan.",
+    "preDecisionSteps": [
+      "Export stay lengths from last year and compute the average customer stay for each property.",
+      "Write each spouse work-hour total outside real estate, including W-2 and any side business.",
+      "Draft a weekly task list for guest communication, turnover, vendor management, and booking, and estimate honest hours.",
+      "Decide whether a manager will work more hours than you. If yes, the STR participation story is already weak.",
+      "Bring the hour log format and grouping question to your CPA before you authorize another cost segregation study."
+    ],
+    "optionAName": "Real Estate Professional Status",
+    "optionBName": "STR Loophole",
+    "winnerLabel": "STR for most W-2 owners, REPS when real estate is already the job",
+    "whenA": "REPS wins when one spouse already lives in real estate work, can clear 750 hours and the more-than-half test, and you want long-term rentals and STRs treated as nonpassive as a group.",
+    "whenB": "The STR path wins when average stays are 7 days or less, one owner can beat the manager on hours, and nobody can honestly drop a W-2 to chase 750 hours.",
+    "decisionMatrix": [
+      {
+        "factor": "Who must qualify",
+        "a": "The taxpayer, or one spouse on a joint return, must meet the 750-hour and more-than-half tests",
+        "b": "The owners of that STR activity must materially participate. No 750-hour career test.",
+        "better": "B for W-2 households"
+      },
+      {
+        "factor": "Property types covered",
+        "a": "Can reach long-term rentals after grouping and material participation",
+        "b": "Only activities that meet the stay-length and services tests",
+        "better": "A"
+      },
+      {
+        "factor": "Hour bar",
+        "a": "750 hours plus more than half of all personal service hours, then rental material participation",
+        "b": "Common tests are 500 hours, or 100 hours with more than anyone else",
+        "better": "B"
+      },
+      {
+        "factor": "Exam pressure",
+        "a": "REPS is a frequent exam topic because the hour totals are large and easy to overstate",
+        "b": "Stay reports and a contemporaneous log are the usual fight, still real, usually narrower",
+        "better": "B"
+      },
+      {
+        "factor": "Fit with a 2,000-hour W-2",
+        "a": "The more-than-half test usually fails unless the other spouse is the professional",
+        "b": "A 2,000-hour job can coexist if the STR hours are real and beat other participants",
+        "better": "B"
+      }
+    ],
+    "workedExample": {
+      "profile": "Asheville couple with $365,000 of combined W-2 wages. One furnished STR. A cost segregation study produces a $72,000 year-one paper loss. He works 2,150 hours at a hospital. She works 1,280 hours as a nurse and 410 hours on the STR.",
+      "assumptions": [
+        "Average guest stay last year was 4.8 nights. No personal-use problem on the night count.",
+        "They have no full-time manager. A cleaner works 180 hours. She handles guest messages, restocking, and vendor calls.",
+        "Neither spouse has 750 hours in real estate. Her real estate hours are 410 of 1,690 total work hours, which is not more than half.",
+        "Usable $72,000 against wages at a 32 percent marginal rate is about $23,000 of tax if the activity is nonpassive"
+      ],
+      "aOutcome": "REPS fails on these facts. He cannot get 750 real estate hours on top of 2,150 clinical hours and still pass the more-than-half test. She would need to cut nursing hours or add real estate hours until real estate is both 750 and the majority of her work. The $72,000 stays passive if they claim REPS they do not have.",
+      "bOutcome": "The STR path can work if the 4.8-night average holds and her 410 hours stay above the cleaner and any other worker. The $72,000 can offset the W-2. If they hire a turnkey operator who works 500 hours and she drops to 80, the same loss is trapped.",
+      "takeaway": "Do not shop REPS to rescue a W-2 couple that already has jobs. Build the STR so the stay length and the hour lead are true, or leave the loss unused on purpose."
+    },
+    "edgeCases": [
+      "You average 9-night stays and assume the 7-day door still opens.",
+      "A spouse claims REPS while also reporting 2,400 hours on a W-2 in the same year.",
+      "You group long-term rentals with an STR and blur the tests.",
+      "Personal use and repair days are sloppy, so occupancy and participation both look invented."
+    ],
+    "avoidA": [
+      "Both spouses have full-time jobs and neither will change that this year.",
+      "You will not keep a contemporaneous hour log with dates and tasks.",
+      "Your only properties are one or two STRs and you do not need a taxpayer-level status."
+    ],
+    "avoidB": [
+      "Average stays are longer than 7 days and you do not provide substantial services.",
+      "A manager or cleaner will have more hours than you.",
+      "You treat every Airbnb as automatically nonpassive without reading the tests."
+    ],
+    "checklist": [
+      "Compute average stay from the booking export, not from memory.",
+      "Start a dated hour log this week with task, property, and minutes.",
+      "List every other person who works on the property and estimate their hours.",
+      "Pause extra cost segregation spend until the participation door is chosen.",
+      "Have your CPA confirm grouping, personal use, and how the loss will appear on the return."
+    ],
+    "advisorQuestions": [
+      "On the prior-year stay report, do I meet the 7-day average or the 30-day-plus-services test?",
+      "Which material participation test do you want me to live on, and what log format will you accept?",
+      "Can one spouse qualify for REPS on these hours, or is that a non-starter?",
+      "If we fail both tests, what is the carryforward worth versus changing operations?"
+    ],
+    "faq": [
+      {
+        "q": "Can I use REPS and the STR participation path on the same return?",
+        "a": "They can appear on the same return for different activities. An STR that already qualifies as nonpassive does not need REPS. Long-term rentals still might. Do not double-count hours or blur grouping. Have your CPA draw the map before year end."
+      },
+      {
+        "q": "Does a 750-hour Airbnb sideline make me a real estate professional?",
+        "a": "Only if those hours are in real property trades or businesses and they are more than half of your personal service hours. A 2,000-hour W-2 plus 750 Airbnb hours fails the majority test. The hours also have to be the right kind of work, not investor reading."
+      },
+      {
+        "q": "What stay length opens the short-term rental door?",
+        "a": "The common door is an average period of customer use of 7 days or less. Another door is 30 days or less with significant personal services. Mid-term stays with a silent owner usually stay in the rental-passive box."
+      },
+      {
+        "q": "If I hire a co-host, do I lose the STR loss against wages?",
+        "a": "You can hire help. If that person works more hours than you, the 100-hour-and-more-than-anyone-else test fails. Raise your real work or use a different participation test you actually meet. Paying a co-host does not create the deduction by itself."
+      }
+    ],
+    "related": [
+      {
+        "href": "/tax-strategies/real-estate-professional-status",
+        "label": "Real Estate Professional Status"
+      },
+      {
+        "href": "/tax-strategies/short-term-rental-loophole",
+        "label": "Short-Term Rental Loophole"
+      },
+      {
+        "href": "/tax-strategies/cost-segregation",
+        "label": "Cost Segregation"
+      },
+      {
+        "href": "/tax-strategies/bonus-depreciation",
+        "label": "Bonus Depreciation"
+      }
+    ]
+  },
+  {
+    "slug": "s-corp-vs-qbi-deduction",
+    "title": "S-Corp vs QBI Deduction",
+    "description": "How an S-corp reasonable salary changes self-employment tax and qualified business income, including SSTB phaseouts and the wage limitation.",
+    "quickVerdict": "An S-corp is a payroll structure. QBI is a later deduction that salary can shrink or unlock.",
+    "bestFor": "Profitable sole proprietors and single-member LLC owners who are being sold an S-corp as if it were the 20 percent deduction.",
+    "intro": "These are not two flavors of the same election. An S-corp splits profit into a reasonable wage, which faces payroll tax, and distributions, which do not face self-employment tax. The qualified business income deduction is section 199A, a later computation that starts from pass-through profit. Wages you pay yourself are not QBI. At high taxable income, those same wages can help the wage limitation. Model both effects before you file Form 2553.",
+    "opening": [
+      "Owners get this backwards. They hear 20 percent and they hear 15.3 percent and they pick a team. Team S-corp wants payroll and a retirement of the Schedule C. Team QBI wants to leave profit high so the 20 percent looks fat. Both teams skip the interaction.",
+      "QBI is not a reason by itself to stay a sole proprietor, and it is not a reason by itself to elect S-corp. Below the taxable-income thresholds, a non-specified-service business can take 20 percent of QBI with few extra tests. Salary lowers QBI. Payroll tax savings may still win. Above the thresholds, a specified service trade or business can lose QBI entirely. Then the S-corp question is mostly payroll tax, reasonable salary, and admin cost.",
+      "In the middle band, wages paid by the S-corp can become the thing that keeps 199A alive under the wage and property limits. The same salary that shrank QBI at $180,000 of profit can be the reason QBI still exists at $450,000 of taxable income.",
+      "Payroll late filings, a toy salary, and a missing reasonable-compensation memo are how the S-corp savings disappear in an exam. If you will not run payroll on time, stay on Schedule C and take the QBI you actually have."
+    ],
+    "commonMistake": "Electing S-corp to chase QBI, then paying a $24,000 salary on $280,000 of profit and calling the rest a distribution.",
+    "decisionFrameworkLead": "Compute self-employment or payroll tax and 199A on the same spreadsheet, using current-year taxable-income thresholds, before you change entity.",
+    "preDecisionSteps": [
+      "Estimate profit for this year, your filing status, and whether the work is a specified service trade or business.",
+      "Look up the current-year 199A taxable-income thresholds and SSTB phaseout range. Do not use a prior-year memory.",
+      "Pick a reasonable salary from market data for the work you actually do, not from a blog percentage.",
+      "Run three columns. Stay unincorporated. Elect S-corp with that salary. Elect S-corp with a higher salary that might help the wage limit.",
+      "Add payroll service cost, extra tax-prep cost, and state franchise or PTE tax before you call the net a win."
+    ],
+    "optionAName": "S-Corp",
+    "optionBName": "QBI Deduction",
+    "winnerLabel": "Model both on one sheet. They are not substitutes.",
+    "whenA": "The S-corp wins when profit is high enough that payroll-tax savings clear admin cost, you will pay a defensible wage on time, and you either do not need QBI or the wage helps 199A at your income level.",
+    "whenB": "Staying focused on QBI, often while remaining unincorporated, wins when profit is modest, SSTB phaseout is not in play, payroll would cost more than it saves, or you will not run a clean payroll.",
+    "decisionMatrix": [
+      {
+        "factor": "What you are choosing",
+        "a": "An entity and payroll method that splits wage and distributions",
+        "b": "A Code section 199A deduction computed after entity and wages are set",
+        "better": "Tie"
+      },
+      {
+        "factor": "Self-employment or payroll tax",
+        "a": "Tax applies to the wage, not to a properly characterized distribution",
+        "b": "Does not by itself change self-employment tax on a Schedule C",
+        "better": "A"
+      },
+      {
+        "factor": "Size of QBI",
+        "a": "Owner wage reduces QBI because W-2 wages are not qualified business income",
+        "b": "Unincorporated profit can remain fully in the QBI base if other tests pass",
+        "better": "B below the thresholds"
+      },
+      {
+        "factor": "High taxable income wage limit",
+        "a": "S-corp W-2 can supply the 50 percent of wages number that 199A may require",
+        "b": "A no-wage sole prop can lose QBI in the phaseout even with large profit",
+        "better": "A above the thresholds"
+      },
+      {
+        "factor": "Admin load",
+        "a": "Payroll, reasonable-compensation file, extra return, possible late-penalty risk",
+        "b": "Mostly a computation and a worksheet if the entity is already simple",
+        "better": "B"
+      }
+    ],
+    "workedExample": {
+      "profile": "Married software consultant filing jointly. Schedule C profit is $240,000 before owner pay. Spouse has $42,000 of W-2. They rent, so taxable income before the QBI deduction lands near $255,000. The work is treated as a specified service trade or business for the model.",
+      "assumptions": [
+        "Unincorporated self-employment tax is modeled at 15.3 percent on 92.35 percent of $240,000, about $33,900",
+        "Reasonable salary if they elect S-corp is $120,000. Employer and employee FICA on that wage is about $18,360, plus $1,800 of payroll and extra prep",
+        "QBI is 20 percent of remaining qualified profit if they are still inside the SSTB range. Confirm the filing-year thresholds before you copy these dollars.",
+        "Ordinary marginal rate on the last dollars of taxable income is 24 percent in the model"
+      ],
+      "aOutcome": "S-corp payroll tax is about $18,360. SE tax of $33,900 goes away. Net payroll-tax save is about $15,500 before $1,800 of admin, or about $13,700. QBI falls because only the leftover profit, about $120,000, is QBI. A 20 percent QBI deduction of $24,000 is $24,000 smaller than the $48,000 they had on $240,000. At 24 percent, that smaller deduction costs about $5,800. They are still ahead on the combined sheet if the SSTB deduction still exists.",
+      "bOutcome": "They stay on Schedule C, pay about $33,900 of self-employment tax, and keep the larger QBI base. If taxable income later crosses the SSTB cliff, that $48,000 deduction can go to zero in one year and the S-corp wage discussion changes. The 20 percent line is not a standing reason to refuse payroll.",
+      "takeaway": "Elect S-corp for payroll-tax math you will administer. Keep QBI as a second column that salary can shrink or, at higher income, support. If you will not run payroll, do not elect."
+    },
+    "edgeCases": [
+      "Taxable income is already above the SSTB phaseout, so 199A is zero and the only live question is payroll tax versus admin.",
+      "You are a non-SSTB with heavy equipment and the 199A property test matters more than wages.",
+      "A state PTE tax or franchise tax changes the S-corp column more than federal payroll tax.",
+      "You already have employees, so the wage limitation may be satisfied without owner payroll games."
+    ],
+    "avoidA": [
+      "Profit is under about $60,000 and payroll cost will exceed the tax save.",
+      "You will set a token salary to inflate distributions.",
+      "You will miss payroll deposits or Forms 941 and 1120-S."
+    ],
+    "avoidB": [
+      "You treat 199A as a reason to never pay yourself a wage after an S-corp election.",
+      "You assume a specified service business keeps 20 percent at any income.",
+      "You ignore taxable income from a spouse W-2, investments, or a one-time gain that pushes you through the phaseout."
+    ],
+    "checklist": [
+      "Classify the business as SSTB or not, in writing, with your CPA.",
+      "Pull the filing-year 199A threshold and phaseout numbers before you model.",
+      "Document a reasonable salary with market comps and hours.",
+      "Build a three-column workbook for SE tax, payroll tax, QBI, and admin cost.",
+      "If you elect, start payroll in the quarter you elect, not the following January by accident."
+    ],
+    "advisorQuestions": [
+      "At my projected taxable income, how much QBI do I keep as a sole prop versus as an S-corp with your salary number?",
+      "Do you consider this work an SSTB, and which threshold should we use this year?",
+      "What reasonable salary would you defend, and what file do you want under it?",
+      "Will S-corp wages help the 199A wage limit for me, or only shrink QBI?"
+    ],
+    "faq": [
+      {
+        "q": "Does electing S-corp give me the QBI deduction?",
+        "a": "No. S-corps can generate QBI on the leftover profit after a reasonable wage. The deduction is section 199A, not the election. Some S-corp owners get less QBI than they had on Schedule C because wages are not QBI."
+      },
+      {
+        "q": "Why would an S-corp wage ever help QBI?",
+        "a": "Once taxable income is high enough, 199A can be limited to a percentage of W-2 wages or a mix of wages and property. Owner wages are W-2 wages. They can raise that limit even while they lower the QBI base. That trade only shows up on a spreadsheet."
+      },
+      {
+        "q": "I am a consultant. Can I lose QBI entirely?",
+        "a": "If the work is a specified service trade or business and your taxable income is above the phaseout, the SSTB QBI can go to zero. Confirm the current-year range. A spouse W-2 or a capital gain can push you over even if the business profit looks safe."
+      },
+      {
+        "q": "What salary percentage should I use?",
+        "a": "There is no safe percentage in the Code. The standard is reasonable compensation for the services you perform. Industry pay, hours, and what you would pay a replacement are the usual facts. A flat 50 percent rule is a shortcut, not a defense."
+      }
+    ],
+    "related": [
+      {
+        "href": "/tax-strategies/s-corp-strategy",
+        "label": "S-Corp Tax Strategy"
+      },
+      {
+        "href": "/tax-strategies/qualified-business-income-deduction",
+        "label": "Qualified Business Income Deduction"
+      },
+      {
+        "href": "/tax-strategies/",
+        "label": "All Tax Strategies"
+      }
+    ]
+  },
+  {
+    "slug": "donor-advised-fund-vs-charitable-trust",
+    "title": "Donor-Advised Fund vs Charitable Trust",
+    "description": "When a donor-advised fund is enough for bunching appreciated stock versus when a charitable remainder trust is the vehicle because you still need an income stream.",
+    "quickVerdict": "Use a DAF to give and walk away. Use a CRT when the same assets must still pay you.",
+    "bestFor": "Households with appreciated stock or a business-sale gain who want a charitable deduction and are split between simplicity and lifetime income.",
+    "intro": "A donor-advised fund is a giving account. You contribute cash or appreciated assets, take a deduction subject to AGI limits, and recommend grants over time. A charitable remainder trust is a split-interest vehicle. You transfer assets, keep an income stream for life or a term, and leave the remainder to charity. The deduction is the present value of that remainder, not the full transfer. If you do not need income from the gifted assets, the fund is usually the cleaner file.",
+    "opening": [
+      "Appreciated public stock is the usual fuel. Selling it yourself realizes gain. Giving it to a public charity or a donor-advised fund generally avoids that gain and gives you a fair-market-value deduction, limited by AGI, with a five-year carryforward. The fund can grant to charities later. You do not get the money back.",
+      "A charitable remainder unitrust or annuity trust is a different contract. The trust can sell the stock without the gain hitting your return in the year of sale. You take a unitrust or annuity payout, often 5 percent or more of a CRUT. The IRS requires a remainder that is worth at least 10 percent at funding. Legal and actuarial work is real cost. The remainder is locked to charity.",
+      "People open a CRT because a slide said income for life, then they fund $150,000 and spend $12,000 on documents. A DAF would have granted the same dollars with a form. People also dump $2 million of founder stock into a DAF and then wonder why they have no paycheck from those shares. That second household needed a trust, or they needed to give only a slice.",
+      "Name the job. Bunch deductions in a high-income year. Remove a concentrated position. Replace a paycheck from the gifted principal. Only the last job points at a CRT first."
+    ],
+    "commonMistake": "Funding a charitable remainder trust for a mid-five-figure gift because the income-for-life phrase sounded sophisticated, then paying setup costs that dwarf the extra planning value.",
+    "decisionFrameworkLead": "If you do not need a paycheck from the donated assets, start with a donor-advised fund. Open a CRT only when income, size, and the remainder test all clear.",
+    "preDecisionSteps": [
+      "List the assets you might give, the basis, the unrealized gain, and AGI for this year.",
+      "Write the cash you still need from those assets over the next 10 years. If the answer is none, stay with a DAF unless an estate lawyer has a separate reason.",
+      "Compute the AGI percentage limits for cash versus appreciated property and the five-year carryforward.",
+      "If a CRT is still in play, ask counsel for a 7520-rate remainder calculation at a 5 percent and a 6 percent payout, including legal cost.",
+      "Decide who the remainder charity is, and whether you want grant flexibility through a DAF named as the CRT remainder."
+    ],
+    "optionAName": "Donor-Advised Fund",
+    "optionBName": "Charitable Remainder Trust",
+    "winnerLabel": "DAF for most gifts, CRT when you need income from a large appreciated block",
+    "whenA": "A donor-advised fund wins when you want a deduction this year, you can live without those assets, and you want to recommend grants later without trust administration.",
+    "whenB": "A charitable remainder trust wins when the block is large, you need a lifetime or term payout from it, and the remainder value and setup cost still make the deduction and the income plan worth the contract.",
+    "decisionMatrix": [
+      {
+        "factor": "Income back to you",
+        "a": "None. Grants go to charities you recommend.",
+        "b": "Unitrust or annuity payments for life or a term of years",
+        "better": "B if you need the paycheck"
+      },
+      {
+        "factor": "Deduction in the gift year",
+        "a": "Fair market value of a qualifying long-term appreciated gift, subject to the 30 percent AGI limit for public charities, with carryforward",
+        "b": "Present value of the remainder interest only, using IRS tables and the 7520 rate",
+        "better": "A for a clean full-value gift"
+      },
+      {
+        "factor": "Setup and upkeep",
+        "a": "Account agreement and a contribution form. Sponsor handles custody.",
+        "b": "Trust document, trustee, actuarial work, and annual trust filings",
+        "better": "A"
+      },
+      {
+        "factor": "Practical minimum size",
+        "a": "Works at a few thousand dollars at many sponsors",
+        "b": "Usually not worth the legal bill below a few hundred thousand of funding",
+        "better": "A for smaller gifts"
+      },
+      {
+        "factor": "Selling a concentrated position",
+        "a": "The fund can sell after the gift. You gave away the principal.",
+        "b": "The trust can sell and then pay you a stream from the diversified proceeds",
+        "better": "B when you still need that wealth to live on"
+      }
+    ],
+    "workedExample": {
+      "profile": "Age 61, AGI $410,000, $720,000 of public stock with $95,000 of basis. They want about $40,000 a year of extra cash and they already give about $20,000 a year to the same three charities.",
+      "assumptions": [
+        "A gift of long-term appreciated stock to a public DAF is limited to 30 percent of AGI this year, or $123,000, with a five-year carryforward for the rest",
+        "Selling the full $720,000 themselves would realize about $625,000 of gain",
+        "A 5.5 percent CRUT on $720,000 would target about $39,600 of year-one payout. Remainder value must clear the 10 percent test at the 7520 rate then in effect.",
+        "CRT legal and actuarial cost is modeled at $12,000. A DAF account has no setup fee in this model."
+      ],
+      "aOutcome": "They contribute $123,000 of stock to the DAF this year, avoid gain on that slice, and deduct $123,000 subject to itemizing. They can contribute more in later years. They still own $597,000 of the stock if they need the $40,000 paycheck from their own portfolio. Grants can stay at $20,000 a year from the fund.",
+      "bOutcome": "They fund a $720,000 CRUT, take a remainder-based deduction that is much smaller than $720,000, and start a ~$39,600 payout. The trust can sell and diversify without the $625,000 gain hitting their 1040 in the sale year. They no longer own the $720,000. Setup cost is $12,000 and the remainder is no longer theirs.",
+      "takeaway": "Give the slice you can live without to a DAF. Use a CRT when the whole block must both leave your name and keep paying you. Do not buy a trust for a gift a fund can hold in a week."
+    },
+    "edgeCases": [
+      "You name a DAF as the CRT remainder so you can keep grant flexibility after the income term.",
+      "A closely held note or restricted stock that a DAF sponsor will not accept, which can force a trust or a pre-gift cleanup.",
+      "You need a charitable lead trust or a private foundation for a different job. Neither is this comparison.",
+      "State income tax on CRT payouts and NIIT on net investment income change the paycheck you thought was clean."
+    ],
+    "avoidA": [
+      "You need a paycheck from the same shares you plan to give.",
+      "The sponsor will not accept the asset you actually own.",
+      "You want a legally binding remainder to one institution with trust terms your counsel drafts."
+    ],
+    "avoidB": [
+      "The gift is under a few hundred thousand and legal fees will dominate.",
+      "You do not want an income stream and you like recommending grants year by year.",
+      "The remainder test fails at a payout high enough to cover your budget."
+    ],
+    "checklist": [
+      "Pull basis, holding period, and AGI for this year before you transfer anything.",
+      "Write the annual cash you still need from these assets.",
+      "If using a DAF, confirm the sponsor accepts the asset and the AGI limit on this gift.",
+      "If using a CRT, get a remainder calculation and a fee quote before you sign.",
+      "Store the contribution receipt or trust instrument with the return that claims the deduction."
+    ],
+    "advisorQuestions": [
+      "At my AGI, how much appreciated stock can I deduct this year to a DAF, and what carries forward?",
+      "If we fund a CRUT at 5 percent and at 6 percent, what remainder deduction do the tables produce at my age?",
+      "Will my state tax CRT payouts in a way that changes the paycheck I am counting on?",
+      "Should the CRT remainder be a DAF so my family can recommend grants later?"
+    ],
+    "faq": [
+      {
+        "q": "Do I get a deduction for the full amount I put into a charitable remainder trust?",
+        "a": "No. You deduct the present value of the remainder that will go to charity, using IRS tables, your age or term, the payout, and the 7520 rate. The income interest is not a charitable deduction."
+      },
+      {
+        "q": "Can a donor-advised fund pay me income the way a CRT does?",
+        "a": "No. Once the assets are in the fund, grants go to charities. If you still need income from those dollars, keep the assets or use a split-interest trust. Do not expect a DAF sponsor to send you a paycheck."
+      },
+      {
+        "q": "What is the 10 percent remainder test?",
+        "a": "A charitable remainder trust must be set so the present value of the remainder is at least 10 percent of the funding amount at inception. A high payout on a young donor can fail that test. That is a math gate, not a taste preference."
+      },
+      {
+        "q": "Can I bunch several years of giving into a DAF in a high-income year?",
+        "a": "Yes, that is a common use. You contribute more than you plan to grant this year, take the deduction now subject to AGI limits, and recommend grants later. A CRT is a weaker bunching tool because the deduction is only the remainder value."
+      }
+    ],
+    "related": [
+      {
+        "href": "/tax-strategies/donor-advised-fund",
+        "label": "Donor-Advised Fund"
+      },
+      {
+        "href": "/tax-strategies/charitable-remainder-trust",
+        "label": "Charitable Remainder Trust"
+      },
+      {
+        "href": "/tax-strategies/",
+        "label": "All Tax Strategies"
+      }
+    ]
   }
 ]

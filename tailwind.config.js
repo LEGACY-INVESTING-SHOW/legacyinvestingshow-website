@@ -8,7 +8,8 @@ module.exports = {
     "./tax-strategies/**/*.html",
     "./retirement/**/*.html",
     "./topics/**/*.html",
-    "./programmatic-pages/**/*.html"
+    "./markets/**/*.html",
+    "./renters-insurance/**/*.html"
   ],
   theme: {
     extend: {
