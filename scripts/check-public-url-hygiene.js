@@ -152,6 +152,15 @@ function collectFailures() {
         failures.push('llms.txt is missing the Austin URL');
     }
 
+    const vercel = JSON.parse(fs.readFileSync(path.join(ROOT_DIR, 'vercel.json'), 'utf8'));
+    const redirectSources = (vercel.redirects || []).map((rule) => rule.source);
+    if (!redirectSources.includes('/programmatic-pages/insurance/renters-:state')) {
+        failures.push('vercel.json is missing the renters state redirect');
+    }
+    if (!redirectSources.includes('/programmatic-pages/cities/:slug')) {
+        failures.push('vercel.json is missing the city market redirect');
+    }
+
     return failures;
 }
 
