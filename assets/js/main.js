@@ -181,8 +181,8 @@ document.querySelectorAll('main a[href^="/"]').forEach(link => {
     }, { once: true });
 });
 
-// Click-to-play YouTube. The page ships a thumbnail and a button; the iframe
-// is created only after the reader asks for the video.
+// Click-to-play YouTube and Vimeo. The page ships a thumbnail and a button;
+// the iframe is created only after the reader asks for the video.
 document.addEventListener('click', (event) => {
     const target = event.target;
     if (!target || typeof target.closest !== 'function') return;
@@ -191,12 +191,21 @@ document.addEventListener('click', (event) => {
     if (!button) return;
 
     const facade = button.closest('.yt-facade');
-    const videoId = facade && facade.dataset ? facade.dataset.youtubeId : '';
-    if (!videoId) return;
+    const data = facade && facade.dataset ? facade.dataset : null;
+    if (!data) return;
+
+    const youtubeId = data.youtubeId || '';
+    const vimeoId = data.vimeoId || '';
+    if (!youtubeId && !vimeoId) return;
 
     const iframe = document.createElement('iframe');
-    iframe.src = `https://www.youtube.com/embed/${encodeURIComponent(videoId)}?autoplay=1&rel=0`;
-    iframe.title = facade.dataset.youtubeTitle || 'YouTube video player';
+    if (youtubeId) {
+        iframe.src = `https://www.youtube.com/embed/${encodeURIComponent(youtubeId)}?autoplay=1&rel=0`;
+        iframe.title = data.youtubeTitle || 'YouTube video player';
+    } else {
+        iframe.src = `https://player.vimeo.com/video/${encodeURIComponent(vimeoId)}?autoplay=1`;
+        iframe.title = data.vimeoTitle || 'Vimeo video player';
+    }
     iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
     iframe.allowFullscreen = true;
     iframe.setAttribute('frameborder', '0');

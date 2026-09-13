@@ -568,8 +568,18 @@ const YOUTUBE_IFRAME_PATTERN =
 
 const YOUTUBE_ID_PATTERN = /^[A-Za-z0-9_-]{6,}$/;
 
+const VIMEO_IFRAME_PATTERN =
+    /<iframe\b[^>]*?\bsrc="https?:\/\/player\.vimeo\.com\/video\/(\d{6,})[^"]*"[^>]*>\s*<\/iframe>/gi;
+
+const VIMEO_ID_PATTERN = /^\d{6,}$/;
+
 function youtubeThumbnail(videoId) {
     return `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
+}
+
+/** Vimeo gives no public thumbnail URL, so the proof images ship with the site. */
+function vimeoThumbnail(videoId) {
+    return `/assets/images/lwb-proof/video-${videoId}.jpg`;
 }
 
 /**
@@ -594,15 +604,49 @@ function youtubeFacades(contentHtml) {
     });
 }
 
+/** Same click-to-play facade for the Vimeo interviews, same markup and styles. */
+function vimeoFacades(contentHtml) {
+    return String(contentHtml).replace(VIMEO_IFRAME_PATTERN, (match, videoId) => {
+        const titleMatch = match.match(/\btitle="([^"]*)"/i);
+        const videoTitle = titleMatch ? decodeEntities(titleMatch[1]).trim() : '';
+        const label = videoTitle ? `Play video: ${videoTitle}` : 'Play video';
+
+        return `<div class="yt-facade" data-vimeo-id="${esc(videoId)}"${
+            videoTitle ? ` data-vimeo-title="${esc(videoTitle)}"` : ''
+        }>
+            <button type="button" class="yt-facade-btn" aria-label="${esc(label)}">
+                <img class="yt-facade-thumb" src="${esc(vimeoThumbnail(videoId))}" alt="" width="640" height="360" loading="lazy" decoding="async">
+                <span class="yt-facade-play" aria-hidden="true"></span>
+            </button>
+        </div>`;
+    });
+}
+
 /**
- * VideoObject for any post that names a `youtubeId`. Video results and AI
- * answers need the thumbnail, the upload date and a publisher, so the node
- * points back at the shared Organization `@id`.
+ * VideoObject for any post that names a `youtubeId` or a `vimeoId`. Video
+ * results and AI answers need the thumbnail, the upload date and a publisher,
+ * so the node points back at the shared Organization `@id`.
  */
 function renderVideoSchema(post) {
     const fm = post.frontmatter || {};
-    const videoId = String(fm.youtubeId || '').trim();
-    if (!videoId || !YOUTUBE_ID_PATTERN.test(videoId)) return '';
+    const youtubeId = String(fm.youtubeId || '').trim();
+    const vimeoId = String(fm.vimeoId || '').trim();
+
+    let thumbnailUrl = '';
+    let embedUrl = '';
+    let contentUrl = '';
+
+    if (youtubeId && YOUTUBE_ID_PATTERN.test(youtubeId)) {
+        thumbnailUrl = youtubeThumbnail(youtubeId);
+        embedUrl = `https://www.youtube.com/embed/${youtubeId}`;
+        contentUrl = `https://www.youtube.com/watch?v=${youtubeId}`;
+    } else if (vimeoId && VIMEO_ID_PATTERN.test(vimeoId)) {
+        thumbnailUrl = `${SITE_DOMAIN}${vimeoThumbnail(vimeoId)}`;
+        embedUrl = `https://player.vimeo.com/video/${vimeoId}`;
+        contentUrl = `https://vimeo.com/${vimeoId}`;
+    } else {
+        return '';
+    }
 
     const uploadDate = formatISODate(fm.date);
     const name = String(fm.videoTitle || fm.title || '').trim();
@@ -614,10 +658,10 @@ function renderVideoSchema(post) {
         '@type': 'VideoObject',
         name,
         description,
-        thumbnailUrl: youtubeThumbnail(videoId),
+        thumbnailUrl,
         uploadDate,
-        embedUrl: `https://www.youtube.com/embed/${videoId}`,
-        contentUrl: `https://www.youtube.com/watch?v=${videoId}`,
+        embedUrl,
+        contentUrl,
         publisher: schemaOrg.organization(),
     };
 
@@ -766,8 +810,10 @@ function renderArticleBody({ post, contentHtml, allPosts }) {
     const fm = post.frontmatter;
     const wordCount = fm.wordCount ? Number(fm.wordCount) : countWords(post.content || '');
     const { toc, content } = buildTOC(contentHtml, wordCount);
-    const prose = youtubeFacades(
-        promoteBigStatements(stylePullQuotes(wrapTables(content)), fm.statistics || fm.stats)
+    const prose = vimeoFacades(
+        youtubeFacades(
+            promoteBigStatements(stylePullQuotes(wrapTables(content)), fm.statistics || fm.stats)
+        )
     );
 
     const parts = [
@@ -826,6 +872,7 @@ module.exports = {
     slugifyHeading,
     stripTags,
     stylePullQuotes,
+    vimeoFacades,
     wrapTables,
     youtubeFacades,
 };
