@@ -11,6 +11,7 @@ test('funnel-only build restores generated output without restoring old funnel c
   let full = 0;
   const build = name => { if (name === 'build') { full++; write('blog/example.html', 'generated'); write('feed.xml', 'feed'); } };
   try {
+    fs.symlinkSync(path.join(root, 'missing-codegraph-cache'), path.join(root, '.codegraph'));
     write('content/post.md', 'source'); write('blog/example.html', 'committed'); write('str-opportunity.html', 'old');
     assert.equal(run(root, env, build), 'full');
     const reset = () => { write('blog/example.html', 'committed'); fs.rmSync(path.join(root, 'feed.xml'), { force: true }); };
