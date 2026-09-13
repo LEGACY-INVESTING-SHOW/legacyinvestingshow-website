@@ -101,14 +101,54 @@ function matchWealthPlanPost(caption, plans) {
     return best;
 }
 
+/**
+ * The featured row above the snapshot grid: five full pages from one member
+ * wealth plan, cleared for public use. They carry the same data attributes as
+ * the snapshots so the filter pills count them and the lightbox opens them.
+ */
+function buildSamplePages(images) {
+    const pages = ((images && images.samplePages) || []).filter(function (page) {
+        return page && page.path;
+    });
+    if (!pages.length) return '';
+
+    const cards = pages.map(function (page, index) {
+        const caption = page.caption || 'Sample page from a Legacy Wealth Blueprint wealth plan.';
+        const alt = page.alt || ('Legacy Wealth Blueprint wealth plan sample page: ' + caption);
+        const search = searchable('wealth plan sample page legacy wealth blueprint ' + caption);
+        return ''
+            + '\n                            <figure class="rv-snap rv-sample" data-program="lwb" data-type="wealth-plan" data-search="'
+            + esc(search) + '">'
+            + '\n                                <button type="button" class="rv-snap__open" data-full="' + esc(page.path)
+            + '" data-caption="' + esc(caption) + '" data-width="' + esc(page.width || '')
+            + '" data-height="' + esc(page.height || '') + '">'
+            + '\n                                    <img src="' + esc(page.path) + '" alt="' + esc(alt) + '" width="'
+            + esc(page.width || 1408) + '" height="' + esc(page.height || 1822)
+            + '" loading="' + (index === 0 ? 'eager' : 'lazy')
+            + '" decoding="async" sizes="(min-width: 1100px) 30vw, (min-width: 720px) 45vw, 92vw">'
+            + '\n                                    <span class="rv-snap__cue">Enlarge</span>'
+            + '\n                                </button>'
+            + '\n                                <figcaption class="rv-snap__cap">' + esc(caption) + '</figcaption>'
+            + '\n                            </figure>';
+    }).join('');
+
+    return ''
+        + '\n                    <div class="rv-samples" data-rv-samples>'
+        + '\n                        <h3 class="rv-samples__head">Inside a Legacy Wealth Blueprint wealth plan</h3>'
+        + '\n                        <p class="rv-samples__note">These five pages come from one member wealth plan, with the name blacked out.</p>'
+        + '\n                        <div class="rv-samplegrid">' + cards + '\n                        </div>'
+        + '\n                    </div>';
+}
+
 function buildWealthPlans() {
     const images = readJson('data/lwb-proof-images.json');
     const inventory = readJson('data/wealth-plan-inventory.json');
     const plans = (inventory && inventory.wealthPlans) || [];
+    const samples = buildSamplePages(images);
     const snapshots = ((images && images.images) || []).filter(function (image) {
         return image.kind === 'wealth-plan' && image.path;
     });
-    if (!snapshots.length) return '\n';
+    if (!snapshots.length) return samples ? samples + '\n                ' : '\n';
 
     const cards = snapshots.map(function (image) {
         const caption = image.caption || 'Wealth plan page from a Legacy Wealth Blueprint client plan.';
@@ -137,7 +177,7 @@ function buildWealthPlans() {
             + '\n                        </figure>';
     }).join('');
 
-    return '\n                    <div class="rv-snapgrid">' + cards + '\n                    </div>\n                ';
+    return samples + '\n                    <div class="rv-snapgrid">' + cards + '\n                    </div>\n                ';
 }
 
 /* ------------------------------------------------------------- trustpilot */
@@ -287,8 +327,10 @@ function main() {
     fs.writeFileSync(PAGE, html);
 
     const snapshotCount = (wealthPlans.match(/class="rv-snap"/g) || []).length;
+    const sampleCount = (wealthPlans.match(/class="rv-snap rv-sample"/g) || []).length;
     const reviewCount = (trustpilot.match(/class="rv-tp"/g) || []).length;
-    console.log('build-reviews-sections: ' + snapshotCount + ' wealth plan snapshots, '
+    console.log('build-reviews-sections: ' + sampleCount + ' wealth plan sample pages, '
+        + snapshotCount + ' wealth plan snapshots, '
         + reviewCount + ' Trustpilot reviews');
 }
 

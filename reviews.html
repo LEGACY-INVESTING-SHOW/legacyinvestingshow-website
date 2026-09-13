@@ -1040,6 +1040,15 @@
     .rv-snap__cap { font-size: 0.75rem; line-height: 1.5; color: var(--ink-faint); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
     .rv-snap__link { font-size: 0.8125rem; font-weight: 600; color: var(--emerald-deep); }
 
+    /* --- featured sample pages -------------------------------------------- */
+    .rv-samples { margin-top: 1.75rem; padding-bottom: 2rem; border-bottom: 1px solid var(--line); }
+    .rv-samples__head { margin: 0 0 0.4rem; font-size: 1.125rem; }
+    .rv-samples__note { margin: 0; font-size: 0.9375rem; line-height: 1.55; color: var(--ink-soft); max-width: 68ch; }
+    .rv-samplegrid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; margin-top: 1.25rem; }
+    @media (min-width: 720px) { .rv-samplegrid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.75rem 1.5rem; } }
+    @media (min-width: 1100px) { .rv-samplegrid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+    .rv-sample .rv-snap__cap { font-size: 0.8125rem; -webkit-line-clamp: 4; }
+
     /* --- lightbox --------------------------------------------------------- */
     .rv-lb { border: 0; padding: 0; width: min(96vw, 1060px); max-width: 96vw; max-height: 92vh; background: var(--paper); border-radius: 14px; color: var(--ink); overflow: auto; }
     .rv-lb::backdrop { background: rgba(22, 53, 42, 0.74); }
@@ -1164,7 +1173,7 @@
                     <div class="rv-group" role="group" aria-labelledby="rv-lab-program">
                         <p class="rv-group__label" id="rv-lab-program">Program</p>
                         <div class="rv-pills">
-                            <button type="button" class="rv-pill" data-group="program" data-value="lwb" aria-pressed="false">Legacy Wealth Blueprint <span class="rv-count" data-count-for="program:lwb">126</span></button>
+                            <button type="button" class="rv-pill" data-group="program" data-value="lwb" aria-pressed="false">Legacy Wealth Blueprint <span class="rv-count" data-count-for="program:lwb">131</span></button>
                             <button type="button" class="rv-pill" data-group="program" data-value="str" aria-pressed="false">Airbnb <span class="rv-count" data-count-for="program:str">19</span></button>
                         </div>
                     </div>
@@ -1173,7 +1182,7 @@
                         <div class="rv-pills">
                             <button type="button" class="rv-pill" data-group="type" data-value="video" aria-pressed="false">Case study video <span class="rv-count" data-count-for="type:video">19</span></button>
                             <button type="button" class="rv-pill" data-group="type" data-value="written" aria-pressed="false">Written story <span class="rv-count" data-count-for="type:written">47</span></button>
-                            <button type="button" class="rv-pill" data-group="type" data-value="wealth-plan" aria-pressed="false">Wealth plan <span class="rv-count" data-count-for="type:wealth-plan">72</span></button>
+                            <button type="button" class="rv-pill" data-group="type" data-value="wealth-plan" aria-pressed="false">Wealth plan <span class="rv-count" data-count-for="type:wealth-plan">77</span></button>
                             <button type="button" class="rv-pill" data-group="type" data-value="tax" aria-pressed="false">Tax savings <span class="rv-count" data-count-for="type:tax">8</span></button>
                             <button type="button" class="rv-pill" data-group="type" data-value="trustpilot" aria-pressed="false">Trustpilot <span class="rv-count" data-count-for="type:trustpilot">58</span></button>
                         </div>
@@ -1385,6 +1394,47 @@
                     <h2>Wealth plan snapshots and modeled client results</h2>
                     <p class="measure">Pages from the 12-month wealth plans Blueprint members get. Names and identifying details are blacked out. The dollar figures on them are modeled, not banked.</p>
                     <!-- reviews:wealth-plans:start -->
+                    <div class="rv-samples" data-rv-samples>
+                        <h3 class="rv-samples__head">Inside a Legacy Wealth Blueprint wealth plan</h3>
+                        <p class="rv-samples__note">These five pages come from one member wealth plan, with the name blacked out.</p>
+                        <div class="rv-samplegrid">
+                            <figure class="rv-snap rv-sample" data-program="lwb" data-type="wealth-plan" data-search="wealth plan sample page legacy wealth blueprint cover page and executive summary showing $40,400 to $53,800 in first-year tax savings, a $7,200 cash flow boost, and a 1.0 btc three-year target, with the client name blacked out.">
+                                <button type="button" class="rv-snap__open" data-full="/assets/images/wealth-plan-samples/sample-cover.webp" data-caption="Cover page and Executive Summary showing $40,400 to $53,800 in first-year tax savings, a $7,200 cash flow boost, and a 1.0 BTC three-year target, with the client name blacked out." data-width="1408" data-height="1822">
+                                    <img src="/assets/images/wealth-plan-samples/sample-cover.webp" alt="Legacy Wealth Blueprint wealth plan sample page: Cover page and Executive Summary showing $40,400 to $53,800 in first-year tax savings, a $7,200 cash flow boost, and a 1.0 BTC three-year target, with the client name blacked out." width="1408" height="1822" loading="eager" decoding="async" sizes="(min-width: 1100px) 30vw, (min-width: 720px) 45vw, 92vw">
+                                    <span class="rv-snap__cue">Enlarge</span>
+                                </button>
+                                <figcaption class="rv-snap__cap">Cover page and Executive Summary showing $40,400 to $53,800 in first-year tax savings, a $7,200 cash flow boost, and a 1.0 BTC three-year target, with the client name blacked out.</figcaption>
+                            </figure>
+                            <figure class="rv-snap rv-sample" data-program="lwb" data-type="wealth-plan" data-search="wealth plan sample page legacy wealth blueprint title page of a comprehensive wealth plan dated december 2025 with a 12-month implementation period and the client name blacked out.">
+                                <button type="button" class="rv-snap__open" data-full="/assets/images/wealth-plan-samples/sample-cover2.webp" data-caption="Title page of a Comprehensive Wealth Plan dated December 2025 with a 12-month implementation period and the client name blacked out." data-width="1408" data-height="1822">
+                                    <img src="/assets/images/wealth-plan-samples/sample-cover2.webp" alt="Legacy Wealth Blueprint wealth plan sample page: Title page of a Comprehensive Wealth Plan dated December 2025 with a 12-month implementation period and the client name blacked out." width="1408" height="1822" loading="lazy" decoding="async" sizes="(min-width: 1100px) 30vw, (min-width: 720px) 45vw, 92vw">
+                                    <span class="rv-snap__cue">Enlarge</span>
+                                </button>
+                                <figcaption class="rv-snap__cap">Title page of a Comprehensive Wealth Plan dated December 2025 with a 12-month implementation period and the client name blacked out.</figcaption>
+                            </figure>
+                            <figure class="rv-snap rv-sample" data-program="lwb" data-type="wealth-plan" data-search="wealth plan sample page legacy wealth blueprint income sources and current financial position tables listing $175,000 w-2 income, $350,000+ total household income, and balances for cash, debt, home equity and retirement accounts.">
+                                <button type="button" class="rv-snap__open" data-full="/assets/images/wealth-plan-samples/sample-position.webp" data-caption="Income Sources and Current Financial Position tables listing $175,000 W-2 income, $350,000+ total household income, and balances for cash, debt, home equity and retirement accounts." data-width="1408" data-height="1822">
+                                    <img src="/assets/images/wealth-plan-samples/sample-position.webp" alt="Legacy Wealth Blueprint wealth plan sample page: Income Sources and Current Financial Position tables listing $175,000 W-2 income, $350,000+ total household income, and balances for cash, debt, home equity and retirement accounts." width="1408" height="1822" loading="lazy" decoding="async" sizes="(min-width: 1100px) 30vw, (min-width: 720px) 45vw, 92vw">
+                                    <span class="rv-snap__cue">Enlarge</span>
+                                </button>
+                                <figcaption class="rv-snap__cap">Income Sources and Current Financial Position tables listing $175,000 W-2 income, $350,000+ total household income, and balances for cash, debt, home equity and retirement accounts.</figcaption>
+                            </figure>
+                            <figure class="rv-snap rv-sample" data-program="lwb" data-type="wealth-plan" data-search="wealth plan sample page legacy wealth blueprint strategy #7, backdoor roth ira for both spouses, with an estimated annual value of $14,000 in contributions and the steps to set it up.">
+                                <button type="button" class="rv-snap__open" data-full="/assets/images/wealth-plan-samples/sample-roth.webp" data-caption="Strategy #7, Backdoor Roth IRA for both spouses, with an estimated annual value of $14,000 in contributions and the steps to set it up." data-width="1408" data-height="1822">
+                                    <img src="/assets/images/wealth-plan-samples/sample-roth.webp" alt="Legacy Wealth Blueprint wealth plan sample page: Strategy #7, Backdoor Roth IRA for both spouses, with an estimated annual value of $14,000 in contributions and the steps to set it up." width="1408" height="1822" loading="lazy" decoding="async" sizes="(min-width: 1100px) 30vw, (min-width: 720px) 45vw, 92vw">
+                                    <span class="rv-snap__cue">Enlarge</span>
+                                </button>
+                                <figcaption class="rv-snap__cap">Strategy #7, Backdoor Roth IRA for both spouses, with an estimated annual value of $14,000 in contributions and the steps to set it up.</figcaption>
+                            </figure>
+                            <figure class="rv-snap rv-sample" data-program="lwb" data-type="wealth-plan" data-search="wealth plan sample page legacy wealth blueprint strategy #2, solo 401(k), at $20,500 to $24,500 estimated annual value, and strategy #3, management company structure, at $5,900 to $8,900.">
+                                <button type="button" class="rv-snap__open" data-full="/assets/images/wealth-plan-samples/sample-strategies.webp" data-caption="Strategy #2, Solo 401(k), at $20,500 to $24,500 estimated annual value, and Strategy #3, Management Company Structure, at $5,900 to $8,900." data-width="1408" data-height="1822">
+                                    <img src="/assets/images/wealth-plan-samples/sample-strategies.webp" alt="Legacy Wealth Blueprint wealth plan sample page: Strategy #2, Solo 401(k), at $20,500 to $24,500 estimated annual value, and Strategy #3, Management Company Structure, at $5,900 to $8,900." width="1408" height="1822" loading="lazy" decoding="async" sizes="(min-width: 1100px) 30vw, (min-width: 720px) 45vw, 92vw">
+                                    <span class="rv-snap__cue">Enlarge</span>
+                                </button>
+                                <figcaption class="rv-snap__cap">Strategy #2, Solo 401(k), at $20,500 to $24,500 estimated annual value, and Strategy #3, Management Company Structure, at $5,900 to $8,900.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
                     <div class="rv-snapgrid">
                         <figure class="rv-snap" data-program="lwb" data-type="wealth-plan" data-search="wealth plan snapshot client result executive summary page from a 2026 wealth strategy plan balancing debt elimination with tax optimization, stating $42,100-$52,900 in potential annual tax optimization value. $42,100 $52,900">
                             <button type="button" class="rv-snap__open" data-full="/assets/images/lwb-proof-large/case-004.webp" data-caption="Executive Summary page from a 2026 wealth strategy plan balancing debt elimination with tax optimization, stating $42,100-$52,900 in potential annual tax optimization value." data-width="920" data-height="550">
