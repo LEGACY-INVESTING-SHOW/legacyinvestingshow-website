@@ -290,10 +290,7 @@ function renderSiteHeader(activeHref = '') {
   const links = renderPrimaryNavLinks(activeHref);
   return `<header class="site-header">
         <nav class="container-custom site-nav" aria-label="Main navigation">
-            <a href="/" class="site-brand">
-                <img src="/assets/images/logo-240.webp" alt="" width="62" height="28">
-                <span>Legacy Investing Show</span>
-            </a>
+            <a href="/" class="site-brand">Legacy Investing Show</a>
             <div class="site-nav-links">
                 ${links}
             </div>
@@ -320,7 +317,7 @@ function renderSiteFooter() {
         <div class="container-custom">
             <div class="site-footer-grid">
                 <div class="site-footer-brand">
-                    <a href="/" class="site-brand"><img src="/assets/images/logo-240.webp" alt="" width="62" height="28"><span>Legacy Investing Show</span></a>
+                    <a href="/" class="site-brand">Legacy Investing Show</a>
                     <p>Tax strategy, wealth systems, and practical decision tools for professionals, investors, and founders.</p>
                 </div>
                 ${groups}
