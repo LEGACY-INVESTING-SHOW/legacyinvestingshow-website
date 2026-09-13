@@ -1,7 +1,7 @@
 ---
 title: "Eric's Wealth Plan: First-Generation Wealth Building and Family Financial Planning"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Eric's comprehensive wealth strategy for first-generation wealth builders, focusing on family financial education, tax optimization, and building generational assets."
+description: "Eric's wealth strategy for first-generation wealth builders, focusing on family financial education, tax optimization, and building generational assets."
 date: 2026-04-12
 modifiedDate: 2026-04-12
 author: Preston Seo

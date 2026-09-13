@@ -1,7 +1,7 @@
 ---
 title: "Erin's Wealth Plan: Educator Financial Strategy and Public Sector Optimization"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Erin's personalized wealth strategy for educators and public sector employees, optimizing pension coordination, 403(b) strategies, and public service loan forgiveness programs."
+description: "Erin's personalized wealth strategy for educators and public sector employees, optimizing pension coordination, 403(b) strategies, and public service loan forgiveness programs."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

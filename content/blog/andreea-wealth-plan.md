@@ -1,7 +1,7 @@
 ---
 title: "Andreea's Wealth Plan: High-Income Severance Year Tax Strategy"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Andreea's aggressive October 2025 tax strategy for a $770K severance year — leveraging cost segregation, 100% bonus depreciation, and strategic asset acquisition decisions."
+description: "Andreea's aggressive October 2025 tax strategy for a $770K severance year — leveraging cost segregation, 100% bonus depreciation, and strategic asset acquisition decisions."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

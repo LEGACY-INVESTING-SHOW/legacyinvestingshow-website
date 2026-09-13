@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Primary Meta Tags -->
-    <title>Real Estate Tax Strategies 101: Complete Beginner | Legacy Investing Show</title>
-    <meta name="title" content="Real Estate Tax Strategies 101: Complete Beginner | Legacy Investing Show">
+    <title>Real Estate Tax Strategies 101: Complete Beginner</title>
+    <meta name="title" content="Real Estate Tax Strategies 101: Complete Beginner">
     <meta name="description" content="Master real estate tax strategies from scratch. Learn cost segregation, 1031 exchanges, depreciation & 37+ proven strategies to save $50K+ in taxes. Free guide!">
     <meta name="keywords" content="real estate tax strategies, tax strategies 101, real estate investing taxes, rental property tax deductions, depreciation strategies">
     <meta name="author" content="Preston Seo">
@@ -21,7 +21,7 @@
     <meta property="og:url" content="https://www.legacyinvestingshow.com/tax-strategies-101">
     <meta property="og:title" content="Real Estate Tax Strategies 101: Complete Beginner's Guide">
     <meta property="og:description" content="Master real estate tax strategies from scratch. Learn cost segregation, 1031 exchanges, depreciation & 37+ proven strategies to save $50K+ in taxes.">
-    <meta property="og:image" content="https://www.legacyinvestingshow.com/assets/images/og-tax-strategies-101.jpg">
+    <meta property="og:image" content="https://www.legacyinvestingshow.com/assets/images/og-home.jpg">
     <meta property="og:site_name" content="Legacy Investing Show">
 
     <!-- Twitter Card -->
@@ -34,15 +34,11 @@
     <meta name="theme-color" content="#FAF7F2">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/assets/images/logo.png">
-    <link rel="apple-touch-icon" href="/assets/images/logo.png">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
 
-    <!-- Preconnect -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <!-- Fonts & Stylesheet -->
+    <link rel="preload" href="/assets/fonts/public-sans-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/assets/css/styles.css?v=4be94b91">
 
     <!-- Schema Markup -->
     <script type="application/ld+json">
@@ -134,490 +130,376 @@
 
 
     <!-- Twitter Card fallback -->
-    <meta name="twitter:image" content="https://www.legacyinvestingshow.com/assets/images/og-tax-strategies-101.jpg">
+    <meta name="twitter:image" content="https://www.legacyinvestingshow.com/assets/images/og-home.jpg">
+
+
+    <!-- Page-scoped reading rhythm inside the shared .col column. Components come from the kit. -->
+    <style>
+    .col > h2 { margin-top: 2.75rem; }
+    .col h3:not([class]) { margin: 1.75rem 0 0.5rem; }
+    .col > .steps + p, .col > .words + p, .col > .table-inset + p, .col > .callout + p { margin-top: 1.5rem; }
+    </style>
+
 </head>
-<body class="bg-white text-navy">
+<body class="bg-cream">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a href="#main" class="skip-link">Skip to main content</a>
 
-    <!-- Header -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gold">
-        <nav class="container-custom" aria-label="Main navigation">
-            <div class="flex items-center justify-between h-16">
-                <a href="/" class="flex items-center gap-2 font-medium text-navy hover:text-gray-700 transition-colors">
-                    <img src="/assets/images/logo.png" alt="Legacy Investing Show Logo" width="28" height="28" class="w-7 h-7">
-                    <span>Legacy Investing Show</span>
-                </a>
-
-                <div class="hidden md:flex items-center gap-6">
-                    <a href="/" class="nav-link">Home</a>
+    <header class="site-header">
+        <nav class="container-custom site-nav" aria-label="Main navigation">
+            <a href="/" class="site-brand">Legacy Investing Show</a>
+            <div class="site-nav-links">
+                <a href="/" class="nav-link">Home</a>
                     <a href="/about" class="nav-link">About</a>
-                    <a href="/success-stories" class="nav-link">Results</a>
-                    <a href="/blog/" class="nav-link">Blog</a>
-                    <a href="/tax-strategies/" class="nav-link nav-link-active">Tax Strategies</a>
-                </div>
-
-                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
+                    <a href="/tax-strategies" class="nav-link nav-link-active">Tax Strategies</a>
+                    <a href="/compare" class="nav-link">Compare</a>
+                    <a href="/tools" class="nav-link">Tools</a>
+                    <a href="/blog" class="nav-link">Blog</a>
             </div>
-
-            <div id="mobile-menu" class="hidden md:hidden pb-4">
-                <div class="flex flex-col gap-3">
-                    <a href="/" class="nav-link">Home</a>
+            <button id="mobile-menu-btn" class="site-nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            </button>
+            <div id="mobile-menu" class="site-nav-mobile hidden">
+                <a href="/" class="nav-link">Home</a>
                     <a href="/about" class="nav-link">About</a>
-                    <a href="/success-stories" class="nav-link">Results</a>
-                    <a href="/blog/" class="nav-link">Blog</a>
-                    <a href="/tax-strategies/" class="nav-link nav-link-active">Tax Strategies</a>
-                </div>
+                    <a href="/tax-strategies" class="nav-link nav-link-active">Tax Strategies</a>
+                    <a href="/compare" class="nav-link">Compare</a>
+                    <a href="/tools" class="nav-link">Tools</a>
+                    <a href="/blog" class="nav-link">Blog</a>
             </div>
         </nav>
     </header>
 
     <main id="main">
-        <!-- Hero Section -->
-        <section class="pt-32 pb-16 md:pt-40 md:pb-24 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
-            <div class="container-custom">
-                <div class="max-w-4xl mx-auto text-center">
-                    <span class="inline-block px-4 py-1.5 mb-6 text-sm font-medium tracking-wide text-cyan-300 bg-cyan-900/30 rounded-full border border-cyan-700/50">
-                        FREE COMPREHENSIVE GUIDE
-                    </span>
-                    <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                        Real Estate Tax Strategies 101
-                    </h1>
-                    <p class="text-xl md:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-                        The complete beginner's guide to legally saving $50K-$150K in taxes through smart real estate investing
-                    </p>
-                    <div class="flex flex-wrap justify-center gap-4 text-sm text-slate-400">
-                        <span class="flex items-center gap-2">
-                            <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                            37+ Tax Strategies
-                        </span>
-                        <span class="flex items-center gap-2">
-                            <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                            Step-by-Step Guides
-                        </span>
-                        <span class="flex items-center gap-2">
-                            <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                            100% Free
-                        </span>
+        <article>
+            <section class="opener">
+                <div class="container-custom">
+                    <div class="col">
+                        <h1 class="opener__title">Real estate tax strategies 101</h1>
+                        <p class="opener__key">Tax efficiency decides how much of your rental income you actually keep.</p>
+                        <p class="opener__lede">Every real estate tax plan is built from four groups of strategy: depreciation, acceleration, deferral, and active income reduction. This page explains each group, with the rules and the numbers.</p>
+
+                        <details class="toc" open>
+                            <summary>On this page</summary>
+                            <nav aria-label="On this page">
+                                <ol class="toc__list">
+                                    <li class="toc__item"><a class="toc__link" href="#depreciation">Depreciation basics</a></li>
+                                    <li class="toc__item"><a class="toc__link" href="#accelerated">Accelerated strategies</a></li>
+                                    <li class="toc__item"><a class="toc__link" href="#deferral">Tax deferral</a></li>
+                                    <li class="toc__item"><a class="toc__link" href="#income">Income reduction</a></li>
+                                    <li class="toc__item"><a class="toc__link" href="#library">Strategy library</a></li>
+                                    <li class="toc__item"><a class="toc__link" href="#next-steps">Your next steps</a></li>
+                                    <li class="toc__item"><a class="toc__link" href="#faq">Common questions</a></li>
+                                </ol>
+                            </nav>
+                        </details>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Table of Contents -->
-        <section class="py-12 bg-slate-50 border-b border-slate-200">
-            <div class="container-custom">
-                <h2 class="text-2xl font-bold text-center mb-8">What's Inside This Guide</h2>
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-                    <a href="#depreciation" class="p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <div class="text-2xl mb-2">📉</div>
-                        <h3 class="font-semibold text-navy">Depreciation Basics</h3>
-                        <p class="text-sm text-secondary mt-1">How to deduct property costs over time</p>
-                    </a>
-                    <a href="#accelerated" class="p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <div class="text-2xl mb-2">⚡</div>
-                        <h3 class="font-semibold text-navy">Accelerated Strategies</h3>
-                        <p class="text-sm text-secondary mt-1">Cost segregation & bonus depreciation</p>
-                    </a>
-                    <a href="#deferral" class="p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <div class="text-2xl mb-2">🔄</div>
-                        <h3 class="font-semibold text-navy">Tax Deferral</h3>
-                        <p class="text-sm text-secondary mt-1">1031 exchanges & Opportunity Zones</p>
-                    </a>
-                    <a href="#income" class="p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <div class="text-2xl mb-2">💰</div>
-                        <h3 class="font-semibold text-navy">Income Reduction</h3>
-                        <p class="text-sm text-secondary mt-1">REPS, STR loophole & loss deductions</p>
-                    </a>
+            <section id="depreciation" class="section section--rule">
+                <div class="container-custom">
+                    <div class="col">
+                        <h2>Depreciation, the foundation of real estate tax strategy</h2>
+                        <p class="measure"><strong>Depreciation</strong> is the single most useful tax benefit of real estate investing. It is a paper deduction for wear on a building, so you write off part of the cost every year even while the property gains value.</p>
+                        <h3>How depreciation works</h3>
+                        <p class="measure">The IRS treats a building as something that wears out, so it lets you deduct a slice of the building's value each year. Land is never depreciable, because it does not wear out.</p>
+                        <div class="table-inset">
+                            <table>
+                                <caption>The two default depreciation schedules.</caption>
+                                <thead>
+                                    <tr><th scope="col">Property type</th><th scope="col">Schedule</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Residential rental</td><td>27.5 years</td></tr>
+                                    <tr><td>Commercial</td><td>39 years</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="measure">These two schedules set the pace of every deduction below. Acceleration strategies move deductions forward inside them. Deferral strategies delay the tax that comes due when you sell.</p>
+                        <div class="big">
+                            <p>A $400,000 rental house with $100,000 of land gives you a $10,909 deduction every year, because $300,000 divided by 27.5 years is $10,909.</p>
+                        </div>
+                        <div class="callout">
+                            <p class="callout__label">Worked example</p>
+                            <p>If that property collects $15,000 in rent, you pay tax on $15,000 minus $10,909, which is <strong>$4,091</strong>. That is a 73% cut in taxable income, on a deduction you never wrote a check for.</p>
+                        </div>
+                        <p class="measure">Cost segregation goes further. It reclassifies parts of the property so they depreciate over 5, 7, or 15 years instead of 27.5 or 39. <a href="/tax-strategies/cost-segregation">Read the cost segregation guide</a>.</p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Content -->
-        <article class="py-16 md:py-24">
-            <div class="container-custom max-w-4xl">
-                <div class="prose prose-lg max-w-none">
-                    
-                    <!-- Introduction -->
-                    <div class="bg-amber-50 border-l-4 border-amber-400 p-6 mb-12 rounded-r-lg">
-                        <p class="text-lg text-amber-900 m-0">
-                            <strong>Why this matters:</strong> The average real estate investor overpays $20,000-$50,000 in taxes annually simply because they don't know these strategies exist. This guide changes that.
-                        </p>
+            <section id="accelerated" class="section section--rule">
+                <div class="container-custom">
+                    <div class="col">
+                        <h2>Accelerated depreciation strategies</h2>
+                        <p class="measure">You do not have to wait 27.5 years for every deduction. These strategies pull deductions into the early years of ownership, when they usually matter most.</p>
+                        <h3>Cost segregation study</h3>
+                        <p class="measure">A cost segregation study is an engineering review that splits a property into components, each with its own depreciation schedule.</p>
+                        <div class="table-inset">
+                            <table>
+                                <caption>How a cost segregation study reclassifies a property's components.</caption>
+                                <thead>
+                                    <tr><th scope="col">Component</th><th scope="col">Period</th><th scope="col">Examples</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Personal property</td><td>5 years</td><td>Carpets, appliances, furniture</td></tr>
+                                    <tr><td>Personal property</td><td>7 years</td><td>Landscaping, signage</td></tr>
+                                    <tr><td>Land improvements</td><td>15 years</td><td>Parking lots, sidewalks, fencing</td></tr>
+                                    <tr><td>Building structure</td><td>27.5 or 39 years</td><td>Walls, roof, foundation</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="big">
+                            <p>On a $1 million commercial property, a cost segregation study combined with bonus depreciation can produce $200,000 to $350,000 in extra first-year deductions.</p>
+                        </div>
+                        <h3>Bonus depreciation</h3>
+                        <p class="measure">Bonus depreciation lets you deduct a share of qualified property costs right away. The share drops every year, so the timing of a purchase matters. <a href="/tax-strategies/bonus-depreciation">Read the bonus depreciation guide</a>.</p>
+                        <div class="callout">
+                            <p class="callout__label">The phase-out schedule</p>
+                            <div class="table-inset">
+                                <table>
+                                    <thead>
+                                        <tr><th scope="col">Tax year</th><th scope="col" class="num">Bonus depreciation</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>2018-2022</td><td class="num">100%</td></tr>
+                                        <tr><td>2023</td><td class="num">80%</td></tr>
+                                        <tr><td>2024</td><td class="num">60%</td></tr>
+                                        <tr><td>2025</td><td class="num">40%</td></tr>
+                                        <tr><td>2026</td><td class="num">20%</td></tr>
+                                        <tr><td>2027 and later</td><td class="num">0%</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
+                </div>
+            </section>
 
-                    <p class="text-xl text-secondary leading-relaxed mb-8">
-                        Real estate isn't just about cash flow and appreciation—it's about <strong>tax efficiency</strong>. The investors who build the most wealth aren't necessarily the ones with the highest income; they're the ones who keep more of what they earn.
-                    </p>
-
-                    <p>In this comprehensive guide, you'll learn every major tax strategy available to real estate investors, from basic depreciation to advanced techniques like cost segregation and 1031 exchanges. Whether you're a beginner or experienced investor, there's something here that will save you money.</p>
-
-                    <hr class="my-12">
-
-                    <!-- Section 1: Depreciation Basics -->
-                    <h2 id="depreciation" class="text-3xl font-bold text-navy mb-6">1. Depreciation: The Foundation of Real Estate Tax Strategy</h2>
-
-                    <p><strong>Depreciation</strong> is the single most powerful tax benefit of real estate investing. It's a non-cash deduction that allows you to write off the cost of your property over time—even as it actually appreciates in value.</p>
-
-                    <h3 class="text-xl font-semibold text-navy mt-8 mb-4">How Depreciation Works</h3>
-                    <p>The IRS recognizes that buildings wear out over time (even though they usually don't). So they let you deduct a portion of the property's value each year:</p>
-
-                    <ul class="space-y-2 mt-4">
-                        <li><strong>Residential rentals:</strong> 27.5 years</li>
-                        <li><strong>Commercial properties:</strong> 39 years</li>
-                        <li><strong>Land:</strong> Not depreciable (doesn't wear out)</li>
-                    </ul>
-
-                    <div class="bg-slate-50 p-6 rounded-lg my-8">
-                        <h4 class="font-semibold text-navy mb-3">Example: Basic Depreciation</h4>
-                        <p class="text-gray-700 m-0">You buy a rental house for $400,000. The land is worth $100,000, so the building is $300,000. Your annual depreciation deduction is $300,000 ÷ 27.5 = <strong>$10,909 per year</strong>.</p>
-                        <p class="text-gray-700 mt-4 m-0">If the property generates $15,000 in rental income, you only pay tax on $15,000 - $10,909 = <strong>$4,091</strong>. That's a 73% reduction in taxable income!</p>
+            <section id="deferral" class="section section--rule">
+                <div class="container-custom">
+                    <div class="col">
+                        <h2>Tax deferral strategies</h2>
+                        <p class="measure">Sometimes the best move is not avoiding tax. It is delaying it, so your money keeps compounding in the meantime.</p>
+                        <h3>1031 exchange</h3>
+                        <p class="measure">A 1031 exchange, also called a like-kind exchange, lets you sell an investment property and roll the proceeds into a similar one without paying capital gains tax on the sale. Four rules govern it.</p>
+                        <dl class="words">
+                            <dt>45-day rule</dt>
+                            <dd>Identify the replacement property, or properties, within 45 days.</dd>
+                            <dt>180-day rule</dt>
+                            <dd>Close on the replacement within 180 days.</dd>
+                            <dt>Qualified intermediary</dt>
+                            <dd>A qualified intermediary must hold the proceeds. You cannot touch them.</dd>
+                            <dt>Equal or greater value</dt>
+                            <dd>The replacement must match or beat the old property in value and equity.</dd>
+                        </dl>
+                        <div class="big">
+                            <p>Both clocks start the day you sell: 45 days to identify the replacement, 180 days to close on it.</p>
+                        </div>
+                        <p class="measure"><a href="/tax-strategies/1031-exchange">Read the 1031 exchange guide</a>, or see how it stacks up against the alternative in <a href="/compare/1031-exchange-vs-opportunity-zones">1031 exchange vs Opportunity Zones</a>.</p>
+                        <h3>Opportunity Zones</h3>
+                        <p class="measure">Investing in a designated distressed area earns three tax benefits, each tied to how long you hold.</p>
+                        <dl class="words">
+                            <dt>Defer</dt>
+                            <dd>Capital gains are deferred until 2026, or until you sell the Opportunity Zone investment.</dd>
+                            <dt>Reduce</dt>
+                            <dd>Capital gains are reduced by up to 15% if held 7 or more years.</dd>
+                            <dt>Eliminate</dt>
+                            <dd>All gains on the Opportunity Zone investment itself disappear if held 10 or more years.</dd>
+                        </dl>
+                        <p class="measure"><a href="/tax-strategies/opportunity-zones">Read the Opportunity Zones guide</a>.</p>
                     </div>
+                </div>
+            </section>
 
-                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 my-8">
-                        <h4 class="font-semibold text-blue-900 mb-2">🎯 Deep Dive: Cost Segregation</h4>
-                        <p class="text-blue-800 m-0 mb-4">Want to accelerate your depreciation deductions? Cost segregation reclassifies components of your property to depreciate them faster—5, 7, or 15 years instead of 27.5 or 39.</p>
-                        <a href="/tax-strategies/cost-segregation" class="inline-flex items-center gap-2 text-blue-700 font-medium hover:text-blue-800">
-                            Learn Cost Segregation 
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-                        </a>
+            <section id="income" class="section section--rule">
+                <div class="container-custom">
+                    <div class="col">
+                        <h2>Active income reduction strategies</h2>
+                        <p class="measure">For a high earner, the goal is cutting taxable W-2 or business income. Two routes make that possible.</p>
+                        <h3>Real estate professional status</h3>
+                        <p class="measure">If you qualify as a real estate professional, rental losses stop being passive, so you can deduct them without limit against ordinary income. You must pass both tests.</p>
+                        <dl class="words">
+                            <dt>750-hour rule</dt>
+                            <dd>Spend 750 or more hours per year in real property trades or businesses.</dd>
+                            <dt>More than half rule</dt>
+                            <dd>Real estate activities must be more than half your total working hours.</dd>
+                        </dl>
+                        <div class="big">
+                            <p>Miss either test and the losses stay passive, which caps them at $25,000 for an active participant.</p>
+                        </div>
+                        <p class="measure"><a href="/tax-strategies/real-estate-professional-status">Read the REPS guide</a>.</p>
+                        <h3>Short-term rental loophole</h3>
+                        <p class="measure">If you do not qualify for REPS, the short-term rental loophole may still work. When the average rental period is under 7 days, the activity is not treated as a rental activity, so the losses can offset other income.</p>
+                        <p class="measure">A high-income W-2 earner who buys a short-term rental can potentially deduct $50,000 to $100,000+ of first-year losses against salary, through cost segregation and bonus depreciation, <strong>without needing REPS</strong>. <a href="/tax-strategies/short-term-rental-loophole">Read the STR loophole guide</a>.</p>
                     </div>
+                </div>
+            </section>
 
-                    <hr class="my-12">
-
-                    <!-- Section 2: Accelerated Strategies -->
-                    <h2 id="accelerated" class="text-3xl font-bold text-navy mb-6">2. Accelerated Depreciation Strategies</h2>
-
-                    <p>Why wait 27.5 years to get your tax deductions when you can front-load them? These strategies help you take larger deductions in the early years of ownership when they matter most.</p>
-
-                    <h3 class="text-xl font-semibold text-navy mt-8 mb-4">Cost Segregation Study</h3>
-                    <p>A cost segregation study is an engineering-based analysis that breaks your property into components with different depreciation schedules:</p>
-
-                    <table class="w-full mt-4 mb-6">
-                        <thead>
-                            <tr class="bg-slate-100">
-                                <th class="p-3 text-left">Component</th>
-                                <th class="p-3 text-left">Depreciation Period</th>
-                                <th class="p-3 text-left">Examples</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="border-b">
-                                <td class="p-3">Personal Property</td>
-                                <td class="p-3">5 years</td>
-                                <td class="p-3">Carpets, appliances, furniture</td>
-                            </tr>
-                            <tr class="border-b">
-                                <td class="p-3">Personal Property</td>
-                                <td class="p-3">7 years</td>
-                                <td class="p-3">Landscaping, signage</td>
-                            </tr>
-                            <tr class="border-b">
-                                <td class="p-3">Land Improvements</td>
-                                <td class="p-3">15 years</td>
-                                <td class="p-3">Parking lots, sidewalks, fencing</td>
-                            </tr>
-                            <tr>
-                                <td class="p-3">Building Structure</td>
-                                <td class="p-3">27.5/39 years</td>
-                                <td class="p-3">Walls, roof, foundation</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <div class="bg-green-50 border border-green-200 rounded-lg p-6 my-8">
-                        <h4 class="font-semibold text-green-900 mb-2">💡 The Impact</h4>
-                        <p class="text-green-800 m-0">On a $1 million commercial property, a cost segregation study can generate <strong>$200,000-$350,000 in additional first-year deductions</strong> when combined with bonus depreciation.</p>
+            <section id="library" class="section section--rule">
+                <div class="container-custom">
+                    <div class="col">
+                        <h2>The complete tax strategy library</h2>
+                        <p class="measure">Each strategy has its own guide covering how it works, who qualifies, and how to put it in place.</p>
+                        <dl class="words">
+                        <dt><a href="/tax-strategies/1031-exchange">1031 Exchange</a></dt>
+                        <dd>Defer capital gains indefinitely</dd>
+                        <dt><a href="/compare/1031-exchange-vs-opportunity-zones">1031 Exchange vs Opportunity Zones</a></dt>
+                        <dd>Which tax deferral strategy is right for you</dd>
+                        <dt><a href="/tax-strategies/augusta-rule">Augusta Rule</a></dt>
+                        <dd>14 days tax-free rental income</dd>
+                        <dt><a href="/tax-strategies/bonus-depreciation">Bonus Depreciation</a></dt>
+                        <dd>Immediate deduction of asset costs</dd>
+                        <dt><a href="/tax-strategies/bunching-deductions">Bunching Deductions</a></dt>
+                        <dd>Maximize itemized deductions</dd>
+                        <dt><a href="/tax-strategies/capital-gains-exclusion">Capital Gains Exclusion</a></dt>
+                        <dd>$250K/$500K home sale exclusion</dd>
+                        <dt><a href="/tax-strategies/charitable-remainder-trust">Charitable Remainder Trust</a></dt>
+                        <dd>Defer gains and support charities</dd>
+                        <dt><a href="/tax-strategies/cost-segregation">Cost Segregation</a></dt>
+                        <dd>Accelerate depreciation deductions</dd>
+                        <dt><a href="/tax-strategies/hsa-strategy">HSA Strategy</a></dt>
+                        <dd>Triple tax-advantaged savings</dd>
+                        <dt><a href="/tax-strategies/opportunity-zones">Opportunity Zones</a></dt>
+                        <dd>Defer, reduce, and eliminate gains</dd>
+                        <dt><a href="/tax-strategies/real-estate-professional-status">Real Estate Professional Status</a></dt>
+                        <dd>Unlimited passive loss deductions</dd>
+                        <dt><a href="/tax-strategies/self-directed-ira">Self-Directed IRA</a></dt>
+                        <dd>Tax-deferred real estate investing</dd>
+                        <dt><a href="/tax-strategies/short-term-rental-loophole">Short-Term Rental Loophole</a></dt>
+                        <dd>Deduct rental losses vs W-2 income</dd>
+                        </dl>
+                        <p><a href="/tax-strategies/">View all 37+ tax strategies</a></p>
                     </div>
+                </div>
+            </section>
 
-                    <h3 class="text-xl font-semibold text-navy mt-8 mb-4">Bonus Depreciation</h3>
-                    <p>Bonus depreciation allows you to deduct a percentage of qualified property costs immediately:</p>
-                    <ul class="space-y-2 mt-4">
-                        <li><strong>2018-2022:</strong> 100% bonus depreciation</li>
-                        <li><strong>2023:</strong> 80%</li>
-                        <li><strong>2024:</strong> 60%</li>
-                        <li><strong>2025:</strong> 40%</li>
-                        <li><strong>2026:</strong> 20%</li>
-                        <li><strong>2027+:</strong> 0% (phases out)</li>
-                    </ul>
-
-                    <div class="grid md:grid-cols-2 gap-4 my-8">
-                        <a href="/tax-strategies/cost-segregation" class="block p-4 bg-white border border border-gold rounded-lg hover:border-cyan-500 hover:shadow-md transition-all">
-                            <h4 class="font-semibold text-navy">Cost Segregation</h4>
-                            <p class="text-sm text-secondary mt-1">Complete guide to accelerating depreciation</p>
-                        </a>
-                        <a href="/tax-strategies/bonus-depreciation" class="block p-4 bg-white border border border-gold rounded-lg hover:border-cyan-500 hover:shadow-md transition-all">
-                            <h4 class="font-semibold text-navy">Bonus Depreciation</h4>
-                            <p class="text-sm text-secondary mt-1">Maximize immediate deductions</p>
-                        </a>
-                    </div>
-
-                    <hr class="my-12">
-
-                    <!-- Section 3: Tax Deferral -->
-                    <h2 id="deferral" class="text-3xl font-bold text-navy mb-6">3. Tax Deferral Strategies</h2>
-
-                    <p>Sometimes the best tax strategy isn't avoiding taxes entirely—it's delaying them. Deferral strategies let you compound your wealth on the government's money.</p>
-
-                    <h3 class="text-xl font-semibold text-navy mt-8 mb-4">1031 Exchange (Like-Kind Exchange)</h3>
-                    <p>A 1031 exchange allows you to sell an investment property and reinvest the proceeds into a "like-kind" property without paying capital gains taxes on the sale.</p>
-
-                    <div class="bg-slate-50 p-6 rounded-lg my-8">
-                        <h4 class="font-semibold text-navy mb-3">1031 Exchange Rules</h4>
-                        <ul class="space-y-2 m-0">
-                            <li><strong>45-Day Rule:</strong> Identify replacement property(ies) within 45 days</li>
-                            <li><strong>180-Day Rule:</strong> Close on replacement within 180 days</li>
-                            <li><strong>Qualified Intermediary:</strong> Must use a QI to hold proceeds</li>
-                            <li><strong>Equal or Greater Value:</strong> Replacement must be equal or greater in value and equity</li>
-                        </ul>
-                    </div>
-
-                    <h3 class="text-xl font-semibold text-navy mt-8 mb-4">Opportunity Zones</h3>
-                    <p>Invest in designated economically distressed areas to get three powerful tax benefits:</p>
-                    <ol class="space-y-3 mt-4">
-                        <li><strong>Defer</strong> capital gains until 2026 (or until you sell the OZ investment)</li>
-                        <li><strong>Reduce</strong> capital gains by up to 15% (if held 7+ years)</li>
-                        <li><strong>Eliminate</strong> all gains on the OZ investment itself (if held 10+ years)</li>
-                    </ol>
-
-                    <div class="grid md:grid-cols-2 gap-4 my-8">
-                        <a href="/tax-strategies/1031-exchange" class="block p-4 bg-white border border border-gold rounded-lg hover:border-cyan-500 hover:shadow-md transition-all">
-                            <h4 class="font-semibold text-navy">1031 Exchange Guide</h4>
-                            <p class="text-sm text-secondary mt-1">Step-by-step exchange process</p>
-                        </a>
-                        <a href="/tax-strategies/opportunity-zones" class="block p-4 bg-white border border border-gold rounded-lg hover:border-cyan-500 hover:shadow-md transition-all">
-                            <h4 class="font-semibold text-navy">Opportunity Zones</h4>
-                            <p class="text-sm text-secondary mt-1">Defer, reduce & eliminate gains</p>
-                        </a>
-                    </div>
-
-                    <div class="bg-amber-50 border border-amber-200 rounded-lg p-6 my-8">
-                        <h4 class="font-semibold text-amber-900 mb-2">⚖️ 1031 vs Opportunity Zones: Which is Better?</h4>
-                        <p class="text-amber-800 m-0 mb-4">Both defer taxes, but they work differently. See our detailed comparison to choose the right strategy for your situation.</p>
-                        <a href="/tax-strategies/1031-exchange-vs-opportunity-zones" class="inline-flex items-center gap-2 text-amber-700 font-medium hover:text-amber-800">
-                            View Comparison
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-                        </a>
-                    </div>
-
-                    <hr class="my-12">
-
-                    <!-- Section 4: Income Reduction -->
-                    <h2 id="income" class="text-3xl font-bold text-navy mb-6">4. Active Income Reduction Strategies</h2>
-
-                    <p>For high-income earners, the holy grail is reducing taxable W-2 or business income. These strategies make it possible.</p>
-
-                    <h3 class="text-xl font-semibold text-navy mt-8 mb-4">Real Estate Professional Status (REPS)</h3>
-                    <p>If you qualify as a real estate professional, rental real estate losses are no longer "passive"—meaning you can deduct unlimited losses against your ordinary income.</p>
-
-                    <div class="bg-slate-50 p-6 rounded-lg my-8">
-                        <h4 class="font-semibold text-navy mb-3">REPS Requirements</h4>
-                        <p class="mb-3">You must meet BOTH tests:</p>
-                        <ol class="space-y-2 m-0">
-                            <li><strong>750-Hour Rule:</strong> Spend 750+ hours per year in real property trades or businesses</li>
-                            <li><strong>More Than Half Rule:</strong> Real estate activities must be more than half your total working hours</li>
-                        </ol>
-                    </div>
-
-                    <h3 class="text-xl font-semibold text-navy mt-8 mb-4">Short-Term Rental Loophole</h3>
-                    <p>Don't qualify for REPS? The Short-Term Rental (STR) Loophole might be your answer. If your average rental period is under 7 days, the activity isn't considered a "rental activity"—so losses can offset other income.</p>
-
-                    <div class="bg-green-50 border border-green-200 rounded-lg p-6 my-8">
-                        <h4 class="font-semibold text-green-900 mb-2">💡 Why This Matters</h4>
-                        <p class="text-green-800 m-0">A high-income W-2 earner who buys a short-term rental can potentially deduct $50,000-$100,000+ in first-year losses (through cost segregation + bonus depreciation) against their salary—<strong>without needing REPS</strong>.</p>
-                    </div>
-
-                    <div class="grid md:grid-cols-2 gap-4 my-8">
-                        <a href="/tax-strategies/real-estate-professional-status" class="block p-4 bg-white border border border-gold rounded-lg hover:border-cyan-500 hover:shadow-md transition-all">
-                            <h4 class="font-semibold text-navy">Real Estate Professional Status</h4>
-                            <p class="text-sm text-secondary mt-1">Qualify for unlimited loss deductions</p>
-                        </a>
-                        <a href="/tax-strategies/short-term-rental-loophole" class="block p-4 bg-white border border border-gold rounded-lg hover:border-cyan-500 hover:shadow-md transition-all">
-                            <h4 class="font-semibold text-navy">STR Loophole</h4>
-                            <p class="text-sm text-secondary mt-1">Deduct losses without REPS</p>
-                        </a>
-                    </div>
-
-                    <hr class="my-12">
-
-                    <!-- Complete Strategy List -->
-                    <h2 class="text-3xl font-bold text-navy mb-6">Complete Tax Strategy Library</h2>
-                    <p class="mb-8">Browse all 37+ tax strategies available to real estate investors. Click any strategy to learn how it works, who qualifies, and how to implement it.</p>
-
-                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                        <a href="/tax-strategies/cost-segregation" class="p-4 bg-white border border border-gold rounded-lg hover:border-cyan-500 hover:shadow-md transition-all">
-                            <h4 class="font-semibold text-cyan-700">Cost Segregation</h4>
-                            <p class="text-sm text-secondary">Accelerate depreciation deductions</p>
-                        </a>
-                        <a href="/tax-strategies/1031-exchange" class="p-4 bg-white border border border-gold rounded-lg hover:border-cyan-500 hover:shadow-md transition-all">
-                            <h4 class="font-semibold text-cyan-700">1031 Exchange</h4>
-                            <p class="text-sm text-secondary">Defer capital gains indefinitely</p>
-                        </a>
-                        <a href="/tax-strategies/bonus-depreciation" class="p-4 bg-white border border border-gold rounded-lg hover:border-cyan-500 hover:shadow-md transition-all">
-                            <h4 class="font-semibold text-cyan-700">Bonus Depreciation</h4>
-                            <p class="text-sm text-secondary">Immediate deduction of asset costs</p>
-                        </a>
-                        <a href="/tax-strategies/opportunity-zones" class="p-4 bg-white border border border-gold rounded-lg hover:border-cyan-500 hover:shadow-md transition-all">
-                            <h4 class="font-semibold text-cyan-700">Opportunity Zones</h4>
-                            <p class="text-sm text-secondary">Defer, reduce & eliminate gains</p>
-                        </a>
-                        <a href="/tax-strategies/short-term-rental-loophole" class="p-4 bg-white border border border-gold rounded-lg hover:border-cyan-500 hover:shadow-md transition-all">
-                            <h4 class="font-semibold text-cyan-700">STR Loophole</h4>
-                            <p class="text-sm text-secondary">Deduct rental losses vs W-2 income</p>
-                        </a>
-                        <a href="/tax-strategies/real-estate-professional-status" class="p-4 bg-white border border border-gold rounded-lg hover:border-cyan-500 hover:shadow-md transition-all">
-                            <h4 class="font-semibold text-cyan-700">RE Professional Status</h4>
-                            <p class="text-sm text-secondary">Unlimited passive loss deductions</p>
-                        </a>
-                        <a href="/tax-strategies/augusta-rule" class="p-4 bg-white border border border-gold rounded-lg hover:border-cyan-500 hover:shadow-md transition-all">
-                            <h4 class="font-semibold text-cyan-700">Augusta Rule</h4>
-                            <p class="text-sm text-secondary">14 days tax-free rental income</p>
-                        </a>
-                        <a href="/tax-strategies/capital-gains-exclusion" class="p-4 bg-white border border border-gold rounded-lg hover:border-cyan-500 hover:shadow-md transition-all">
-                            <h4 class="font-semibold text-cyan-700">Capital Gains Exclusion</h4>
-                            <p class="text-sm text-secondary">$250K/$500K home sale exclusion</p>
-                        </a>
-                        <a href="/tax-strategies/charitable-remainder-trust" class="p-4 bg-white border border border-gold rounded-lg hover:border-cyan-500 hover:shadow-md transition-all">
-                            <h4 class="font-semibold text-cyan-700">Charitable Remainder Trust</h4>
-                            <p class="text-sm text-secondary">Defer gains & support charities</p>
-                        </a>
-                        <a href="/tax-strategies/self-directed-ira" class="p-4 bg-white border border border-gold rounded-lg hover:border-cyan-500 hover:shadow-md transition-all">
-                            <h4 class="font-semibold text-cyan-700">Self-Directed IRA</h4>
-                            <p class="text-sm text-secondary">Tax-deferred real estate investing</p>
-                        </a>
-                        <a href="/tax-strategies/hsa-strategy" class="p-4 bg-white border border border-gold rounded-lg hover:border-cyan-500 hover:shadow-md transition-all">
-                            <h4 class="font-semibold text-cyan-700">HSA Strategy</h4>
-                            <p class="text-sm text-secondary">Triple tax-advantaged savings</p>
-                        </a>
-                        <a href="/tax-strategies/bunching-deductions" class="p-4 bg-white border border border-gold rounded-lg hover:border-cyan-500 hover:shadow-md transition-all">
-                            <h4 class="font-semibold text-cyan-700">Bunching Deductions</h4>
-                            <p class="text-sm text-secondary">Maximize itemized deductions</p>
-                        </a>
-                    </div>
-
-                    <div class="text-center mt-8">
-                        <a href="/tax-strategies/" class="inline-flex items-center gap-2 text-cyan-700 font-medium hover:text-cyan-800">
-                            View All 37+ Tax Strategies
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-                        </a>
-                    </div>
-
-                    <hr class="my-12">
-
-                    <!-- Next Steps -->
-                    <h2 class="text-3xl font-bold text-navy mb-6">Your Next Steps</h2>
-
-                    <div class="bg-gradient-to-r from-cyan-50 to-blue-50 border border-cyan-200 rounded-lg p-8 my-8">
-                        <h3 class="text-xl font-bold text-navy mb-4">Start Saving Taxes Today</h3>
-                        <ol class="space-y-4 m-0">
-                            <li class="flex gap-3">
-                                <span class="flex-shrink-0 w-8 h-8 bg-cyan-600 text-white rounded-full flex items-center justify-center font-bold">1</span>
-                                <div>
-                                    <strong>Review your current situation.</strong> What properties do you own? What's your tax bracket? Do you have W-2 income to offset?
-                                </div>
+            <section id="next-steps" class="section section--rule">
+                <div class="container-custom">
+                    <div class="col">
+                        <h2>Your next steps</h2>
+                        <p class="measure">Work through these in order. The last one is what keeps the first three defensible.</p>
+                        <ol class="steps">
+                            <li>
+                                <h3 class="steps__title">Review your current situation</h3>
+                                <p>What do you own? What is your tax bracket? Is there W-2 income to offset?</p>
                             </li>
-                            <li class="flex gap-3">
-                                <span class="flex-shrink-0 w-8 h-8 bg-cyan-600 text-white rounded-full flex items-center justify-center font-bold">2</span>
-                                <div>
-                                    <strong>Pick 2-3 strategies to implement.</strong> Don't try to do everything at once. Start with the highest-impact strategies for your situation.
-                                </div>
+                            <li>
+                                <h3 class="steps__title">Pick two or three strategies</h3>
+                                <p>Do not try everything at once. Start with the ones that fit your situation best.</p>
                             </li>
-                            <li class="flex gap-3">
-                                <span class="flex-shrink-0 w-8 h-8 bg-cyan-600 text-white rounded-full flex items-center justify-center font-bold">3</span>
-                                <div>
-                                    <strong>Work with qualified professionals.</strong> These strategies have specific rules—get a CPA or tax attorney who specializes in real estate.
-                                </div>
+                            <li>
+                                <h3 class="steps__title">Work with qualified professionals</h3>
+                                <p>These strategies have specific rules. Get a CPA or tax attorney who specializes in real estate.</p>
                             </li>
-                            <li class="flex gap-3">
-                                <span class="flex-shrink-0 w-8 h-8 bg-cyan-600 text-white rounded-full flex items-center justify-center font-bold">4</span>
-                                <div>
-                                    <strong>Track everything.</strong> Good records are essential for audits and maximizing deductions.
-                                </div>
+                            <li>
+                                <h3 class="steps__title">Track everything</h3>
+                                <p>Good records are what hold up in an audit and what keep deductions intact.</p>
                             </li>
                         </ol>
+                        <p class="measure">Buying your first property? Read <a href="/blog/how-to-buy-first-rental-property-step-by-step">how to buy your first rental property</a>.</p>
                     </div>
-
-                    <div class="bg-slate-900 text-white rounded-lg p-8 my-8 text-center">
-                        <h3 class="text-2xl font-bold mb-3">Want Personalized Tax Strategy Help?</h3>
-                        <p class="text-slate-300 mb-6">Join 2,000+ students who have learned how to legally save $50K+ annually in taxes through strategic real estate investing.</p>
-                        <a href="/blog/" class="inline-flex items-center gap-2 px-6 py-3 bg-cyan-600 hover:bg-cyan-700 text-white font-semibold rounded-lg transition-colors">
-                            Explore Our Resources
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-                        </a>
-                    </div>
-
                 </div>
-            </div>
+            </section>
+
+            <section id="faq" class="section section--rule">
+                <div class="container-custom">
+                    <div class="col">
+                        <h2>Common questions</h2>
+                        <p class="measure">The five questions readers ask most often about these strategies.</p>
+                        <div class="faq">
+                        <details>
+                            <summary>What are the best tax strategies for real estate investors?</summary>
+                            <div class="faq__answer"><p>The best tax strategies for real estate investors include: 1) Cost segregation to accelerate depreciation, 2) 1031 exchanges to defer capital gains, 3) Bonus depreciation for immediate deductions, 4) Real Estate Professional Status for unlimited loss deductions, 5) Short-term rental loophole for W-2 income offset, and 6) Opportunity Zones for capital gains elimination. These strategies can save investors $50,000-$150,000+ annually in taxes.</p></div>
+                        </details>
+                        <details>
+                            <summary>How much can real estate investors save in taxes?</summary>
+                            <div class="faq__answer"><p>Real estate investors can save $50,000 to $150,000+ annually in taxes through strategic use of deductions, depreciation, and tax-deferred strategies. A $1 million property can generate $150,000-$300,000 in first-year depreciation through cost segregation. 1031 exchanges can defer hundreds of thousands in capital gains taxes indefinitely. The key is combining multiple strategies and working with qualified tax professionals.</p></div>
+                        </details>
+                        <details>
+                            <summary>What is depreciation in real estate?</summary>
+                            <div class="faq__answer"><p>Depreciation is a tax deduction that allows real estate investors to recover the cost of income-producing property over time. Residential rental properties are depreciated over 27.5 years, while commercial properties over 39 years. Through cost segregation, components can be reclassified to depreciate over 5, 7, or 15 years, creating larger deductions in early years. Depreciation is a non-cash expense, meaning you deduct it without actually spending money.</p></div>
+                        </details>
+                        <details>
+                            <summary>Do I need to be a real estate professional to use these tax strategies?</summary>
+                            <div class="faq__answer"><p>No, many tax strategies don&#39;t require Real Estate Professional Status (REPS). Cost segregation, 1031 exchanges, bonus depreciation, and Opportunity Zones are available to all investors. However, REPS allows you to deduct unlimited rental losses against ordinary income. Without REPS, rental losses are generally passive and limited to $25,000 for active participants. The Short-Term Rental Loophole allows loss deductions without REPS if average rental period is under 7 days.</p></div>
+                        </details>
+                        <details>
+                            <summary>What is a 1031 exchange?</summary>
+                            <div class="faq__answer"><p>A 1031 exchange (like-kind exchange) allows real estate investors to defer capital gains taxes by reinvesting proceeds from a sold property into a similar replacement property. You must identify replacement properties within 45 days and close within 180 days. There are no limits on how many times you can 1031 exchange, potentially deferring taxes indefinitely. Eventually, stepped-up basis at death can eliminate the tax entirely for heirs.</p></div>
+                        </details>
+                        </div>
+
+                        <div class="do">
+                            <p class="do__label">Do this next</p>
+                            <ul>
+                                <li>Write down your marginal tax bracket and this year's W-2 income.</li>
+                                <li>Pick the two strategies above that match your situation.</li>
+                                <li>Ask a real estate CPA what a cost segregation study would cost on your property.</li>
+                                <li><a href="/tools">Open the calculators</a> and price one strategy before you commit.</li>
+                            </ul>
+                        </div>
+                        <p class="cap">Educational content only. Consult a qualified tax professional before using any strategy.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section--tight">
+                <div class="container-custom">
+                    <div class="col">
+                        <div class="cta">
+                            <h2>Put these strategies to work</h2>
+                            <p>Every strategy in the library has its own guide, with the rules, who qualifies, and a worked example.</p>
+                            <div class="cta__actions">
+                                <a href="/tax-strategies" class="btn-primary">Browse the strategy library</a>
+                                <a href="/tools" class="btn-secondary">Run the numbers</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </article>
-
-        <!-- Related Resources -->
-        <section class="py-16 bg-slate-50 border-t border-slate-200">
-            <div class="container-custom max-w-6xl">
-                <h2 class="text-2xl font-bold text-center mb-8">Continue Your Learning</h2>
-                <div class="grid md:grid-cols-3 gap-6">
-                    <a href="/tax-strategies/1031-exchange-vs-opportunity-zones" class="block bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <div class="text-3xl mb-3">⚖️</div>
-                        <h3 class="font-semibold text-navy mb-2">1031 vs Opportunity Zones</h3>
-                        <p class="text-sm text-secondary">Which tax deferral strategy is right for you?</p>
-                    </a>
-                    <a href="/blog/how-to-buy-first-rental-property-step-by-step" class="block bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <div class="text-3xl mb-3">🏠</div>
-                        <h3 class="font-semibold text-navy mb-2">Buy Your First Rental</h3>
-                        <p class="text-sm text-secondary">Step-by-step guide to your first property</p>
-                    </a>
-                    <a href="/tax-strategies/" class="block bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <div class="text-3xl mb-3">📚</div>
-                        <h3 class="font-semibold text-navy mb-2">All Tax Strategies</h3>
-                        <p class="text-sm text-secondary">Browse the complete library of 37+ strategies</p>
-                    </a>
-                </div>
-            </div>
-        </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+    <footer class="site-footer" role="contentinfo">
         <div class="container-custom">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
-                <div class="md:col-span-2">
-                    <div class="flex items-center gap-2 mb-4 text-white">
-                        <img src="/assets/images/logo.png" alt="Legacy Investing Show Logo" width="28" height="28" class="w-7 h-7">
-                        <span class="font-semibold">Legacy Investing Show</span>
-                    </div>
-                    <p class="text-sm">Helping real estate investors build wealth through strategic tax planning and proven investment strategies.</p>
+            <div class="site-footer-grid">
+                <div class="site-footer-brand">
+                    <a href="/" class="site-brand">Legacy Investing Show</a>
+                    <p>Tax strategy, wealth systems, and practical decision tools for professionals, investors, and founders.</p>
                 </div>
-                <div>
-                    <h4 class="text-white font-medium mb-3">Quick Links</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="/tax-strategies/" class="hover:text-gold transition-colors">Tax Strategies</a></li>
-                        <li><a href="/blog/" class="hover:text-gold transition-colors">Blog</a></li>
-                        <li><a href="/about" class="hover:text-gold transition-colors">About</a></li>
+                <div class="site-footer-group">
+                    <p class="site-footer-title">Guides</p>
+                    <ul>
+                        <li><a href="/tax-strategies">Tax strategies</a></li>
+                        <li><a href="/compare">Compare guides</a></li>
+                        <li><a href="/topics">Topics</a></li>
+                        <li><a href="/markets">City market guides</a></li>
+                        <li><a href="/renters-insurance">Renters insurance by state</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h4 class="text-white font-medium mb-3">Legal</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="/privacy" class="hover:text-gold transition-colors">Privacy Policy</a></li>
-                        <li><a href="/terms" class="hover:text-gold transition-colors">Terms of Service</a></li>
-                        <li><a href="/tax-strategies-101" class="hover:text-gold transition-colors">Tax Disclaimer</a></li>
+                <div class="site-footer-group">
+                    <p class="site-footer-title">Tools</p>
+                    <ul>
+                        <li><a href="/tools">Free calculators</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer-group">
+                    <p class="site-footer-title">Company</p>
+                    <ul>
+                        <li><a href="/about">About Preston Seo</a></li>
+                        <li><a href="/success-stories">Student results</a></li>
+                        <li><a href="/privacy">Privacy</a></li>
+                        <li><a href="/terms">Terms</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="pt-8 border-t border-slate-800 text-sm text-center">
-                <p>&copy; 2026 Legacy Investing Show. All rights reserved.</p>
-                <p class="mt-2 text-slate-500">Educational content only. Consult a qualified tax professional before implementing any strategy.</p>
-            </div>
+            <p class="site-footer-legal">&copy; 2026 Legacy Investing Show. Educational content, not individual tax, legal, or investment advice.</p>
         </div>
     </footer>
 
-    <script>
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-    </script>
+    <script src="/assets/js/main.js?v=5efea1b4" defer></script>
 </body>
 </html>

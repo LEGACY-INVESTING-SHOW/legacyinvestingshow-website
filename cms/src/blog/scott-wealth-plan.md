@@ -1,6 +1,6 @@
 ---
 title: "Scott's Wealth Plan: Tax Optimization & Short-Term Rental Strategy"
-description: "Discover how Scott's personalized wealth plan delivers $39,350-$51,100 in year-one value through tax optimization and a strategic short-term rental business launch."
+description: "How Scott's personalized wealth plan delivers $39,350-$51,100 in year-one value through tax optimization and a strategic short-term rental business launch."
 date: "2025-11-01"
 author: "Preston Seo"
 category: "Wealth Plan"

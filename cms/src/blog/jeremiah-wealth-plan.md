@@ -1,7 +1,7 @@
 ---
 title: "Jeremiah Matthews' Comprehensive Wealth Plan: Tax Reduction, Business Cash Flow & Real Estate from Raleigh, NC"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Explore Jeremiah Matthews' comprehensive wealth plan from Raleigh, NC featuring advanced tax reduction strategies, business cash flow optimization, and real estate investment approaches for sustainable wealth building."
+description: "Jeremiah Matthews' wealth plan from Raleigh, NC featuring advanced tax reduction strategies, business cash flow optimization, and real estate investment approaches for sustainable wealth building."
 date: 2025-11-01
 modifiedDate: 2025-11-01
 author: Preston Seo

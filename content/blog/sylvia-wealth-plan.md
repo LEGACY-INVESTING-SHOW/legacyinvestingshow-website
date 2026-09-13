@@ -1,7 +1,7 @@
 ---
 title: "Sylvia & Kevin Lee's Wealth Strategy Snapshot: Couple-Focused 2026 Tax Year Planning"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Comprehensive joint wealth strategy snapshot for Sylvia and Kevin Lee featuring couple-focused tax optimization, coordinated retirement planning, and dual-income wealth building for 2026."
+description: "Joint wealth strategy snapshot for Sylvia and Kevin Lee featuring couple-focused tax optimization, coordinated retirement planning, and dual-income wealth building for 2026."
 date: 2026-03-01
 modifiedDate: 2026-03-01
 author: Preston Seo

@@ -1,7 +1,7 @@
 ---
 title: "Shawn's Wealth Plan: Building Wealth Strategy Foundation for Financial Growth"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Shawn's foundational wealth strategy plan focusing on business structure optimization, initial tax planning, and establishing systems for sustainable financial growth and wealth accumulation."
+description: "Shawn's foundational wealth strategy plan focusing on business structure optimization, initial tax planning, and establishing systems for sustainable financial growth and wealth accumulation."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

@@ -8,7 +8,6 @@ const PRIMARY_NAV_ITEMS = [
   { href: '/tax-strategies', label: 'Tax Strategies' },
   { href: '/compare', label: 'Compare' },
   { href: '/tools', label: 'Tools' },
-  { href: '/worksheets', label: 'Worksheets' },
   { href: '/blog', label: 'Blog' },
 ];
 
@@ -18,7 +17,6 @@ const FOOTER_NAV_ITEMS = [
   { href: '/markets', label: 'Markets' },
   { href: '/renters-insurance', label: 'Renters insurance' },
   { href: '/tools', label: 'Tools' },
-  { href: '/worksheets', label: 'Worksheets' },
   { href: '/success-stories', label: 'Results' },
   { href: '/blog', label: 'Blog' },
 ];
@@ -43,7 +41,8 @@ function isPlaceholderTagManagerId(id) {
 }
 
 function isActiveLink(activeHref, href) {
-  const current = String(activeHref || '').trim() || '/';
+  const current = String(activeHref || '').trim();
+  if (!current) return false;
   if (href === '/') return current === '/';
   return current === href || current.startsWith(href);
 }
@@ -175,7 +174,7 @@ function buildReferenceSources({ title = '', slug = '', type = '' } = {}) {
     ];
   }
 
-  if (/cost segregation|bonus depreciation|reps|real estate|short-term rental|str/.test(text)) {
+  if (/cost segregation|bonus depreciation|\breps\b|real estate|short-term rental|\bstr\b/.test(text)) {
     return [
       {
         label: 'IRS Publication 946 and depreciation guidance',
@@ -234,22 +233,105 @@ function renderSourceBlock({
   const rows = items.map((item) => {
     const label = esc(item.label);
     if (item.href) {
-      return `<li style="margin-bottom: 0.55rem;"><a href="${esc(item.href)}" rel="noopener noreferrer" target="_blank" style="color: #0f766e; text-decoration: underline;">${label}</a></li>`;
+      return `<li><a href="${esc(item.href)}" rel="noopener noreferrer" target="_blank">${label}</a></li>`;
     }
-
-    return `<li style="margin-bottom: 0.55rem;">${label}</li>`;
+    return `<li>${label}</li>`;
   }).join('\n');
 
-  return `<section class="source-note" aria-label="Primary sources" style="margin: 2rem 0 0; padding: 1.25rem; border: 1px solid #e5e7eb; border-radius: 1rem; background: #f8fafc;">
-            <h2 style="margin: 0 0 0.75rem; font-size: 1.2rem; color: #111827;">${esc(heading)}</h2>
-            <p style="margin: 0 0 0.85rem; color: #4b5563; line-height: 1.7;">Use primary guidance and your own records before you treat any page like a final answer. These are the source layers that should drive the decision.</p>
-            <ul style="margin: 0; padding-left: 1.1rem; list-style: disc; color: #374151;">
+  return `<section class="source-note" aria-label="Primary sources">
+            <h2>${esc(heading)}</h2>
+            <p>Check primary guidance and your own records before you treat any page as a final answer.</p>
+            <ul>
               ${rows}
             </ul>
           </section>`;
 }
 
+// ---- Shared site shell (header / footer / head assets) ------------------
+// Every generated page and every static page mirrors this markup exactly.
+
+const FOOTER_GROUPS = [
+  {
+    title: 'Guides',
+    items: [
+      { href: '/tax-strategies', label: 'Tax strategies' },
+      { href: '/compare', label: 'Compare guides' },
+      { href: '/topics', label: 'Topics' },
+      { href: '/markets', label: 'City market guides' },
+      { href: '/renters-insurance', label: 'Renters insurance by state' },
+    ],
+  },
+  {
+    title: 'Tools',
+    items: [
+      { href: '/tools', label: 'Free calculators' },
+      { href: '/blog', label: 'Blog' },
+    ],
+  },
+  {
+    title: 'Company',
+    items: [
+      { href: '/about', label: 'About Preston Seo' },
+      { href: '/success-stories', label: 'Student results' },
+      { href: '/privacy', label: 'Privacy' },
+      { href: '/terms', label: 'Terms' },
+    ],
+  },
+];
+
+function renderHeadAssets() {
+  return [
+    '<link rel="preload" href="/assets/fonts/public-sans-variable-latin.woff2" as="font" type="font/woff2" crossorigin>',
+    '<link rel="stylesheet" href="/assets/css/styles.css">',
+  ].join('\n    ');
+}
+
+function renderSiteHeader(activeHref = '') {
+  const links = renderPrimaryNavLinks(activeHref);
+  return `<header class="site-header">
+        <nav class="container-custom site-nav" aria-label="Main navigation">
+            <a href="/" class="site-brand">Legacy Investing Show</a>
+            <div class="site-nav-links">
+                ${links}
+            </div>
+            <button id="mobile-menu-btn" class="site-nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            </button>
+            <div id="mobile-menu" class="site-nav-mobile hidden">
+                ${links}
+            </div>
+        </nav>
+    </header>`;
+}
+
+function renderSiteFooter() {
+  const groups = FOOTER_GROUPS.map(
+    (g) => `<div class="site-footer-group">
+                    <p class="site-footer-title">${esc(g.title)}</p>
+                    <ul>
+                        ${g.items.map((i) => `<li><a href="${i.href}">${esc(i.label)}</a></li>`).join('\n                        ')}
+                    </ul>
+                </div>`
+  ).join('\n                ');
+  return `<footer class="site-footer" role="contentinfo">
+        <div class="container-custom">
+            <div class="site-footer-grid">
+                <div class="site-footer-brand">
+                    <a href="/" class="site-brand">Legacy Investing Show</a>
+                    <p>Tax strategy, wealth systems, and practical decision tools for professionals, investors, and founders.</p>
+                </div>
+                ${groups}
+            </div>
+            <p class="site-footer-legal">&copy; ${CURRENT_YEAR} Legacy Investing Show. Educational content, not individual tax, legal, or investment advice.</p>
+        </div>
+    </footer>`;
+}
+
 module.exports = {
+  renderHeadAssets,
+  renderSiteHeader,
+  renderSiteFooter,
+  FOOTER_GROUPS,
   CURRENT_YEAR,
   DEFAULT_GA_TRACKING_ID,
   DEFAULT_GTM_CONTAINER_ID,

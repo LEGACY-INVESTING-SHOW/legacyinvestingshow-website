@@ -1,7 +1,7 @@
 ---
 title: "Chad's Wealth Plan: Immediate Tax Optimization and STR Arbitrage Launch"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Explore Chad's November 2025 wealth strategy focusing on $18,500-$43,500 immediate tax optimization, LLC formation, and proof-of-concept STR arbitrage for rapid cash flow."
+description: "Chad's November 2025 wealth strategy focusing on $18,500-$43,500 immediate tax optimization, LLC formation, and proof-of-concept STR arbitrage for rapid cash flow."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

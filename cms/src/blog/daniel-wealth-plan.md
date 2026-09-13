@@ -1,7 +1,7 @@
 ---
 title: "Daniel's Wealth Plan: Colorado Mountain Market STR Strategy and Tax Optimization"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Explore Daniel's personalized wealth strategy for Pagosa Springs, Colorado — leveraging mountain STR markets, strategic tax optimization, and scalable income potential to $210K annually."
+description: "Daniel's personalized wealth strategy for Pagosa Springs, Colorado — leveraging mountain STR markets, strategic tax optimization, and scalable income potential to $210K annually."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

@@ -1,7 +1,7 @@
 ---
 title: "Blake & Elisa's Wealth Plan: Dual-Income Tax Optimization Strategy"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Explore Blake and Elisa's comprehensive wealth strategy for optimizing taxes across dual W-2 incomes, real estate investment, and long-term wealth building."
+description: "Blake and Elisa's wealth strategy for optimizing taxes across dual W-2 incomes, real estate investment, and long-term wealth building."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

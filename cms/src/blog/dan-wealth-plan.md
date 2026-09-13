@@ -1,7 +1,7 @@
 ---
 title: "Dan's Wealth Plan: Mid-Career Optimization and Acceleration Strategy"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Dan's personalized wealth strategy for mid-career professionals focusing on optimization of existing assets, tax strategy refinement, and acceleration toward financial independence."
+description: "Dan's personalized wealth strategy for mid-career professionals focusing on optimization of existing assets, tax strategy refinement, and acceleration toward financial independence."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

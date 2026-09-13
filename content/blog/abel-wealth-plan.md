@@ -1,7 +1,7 @@
 ---
 title: "Abel's Wealth Plan: Real Estate Professional Status and Tax Optimization"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Abel's comprehensive wealth strategy for achieving Real Estate Professional Status, unlocking $50,000+ in passive loss deductions and building a multi-property portfolio."
+description: "Abel's wealth strategy for achieving Real Estate Professional Status, unlocking $50,000+ in passive loss deductions and building a multi-property portfolio."
 date: 2026-04-12
 modifiedDate: 2026-04-12
 author: Preston Seo

@@ -1,7 +1,7 @@
 ---
 title: "Mia & Jay's Wealth Plan: Achieving Zero Tax Liability with $259,700 in Year-One Savings"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover how Mia and Jay's personalized wealth plan eliminates $90,000 in annual taxes through strategic real estate structures, business entity optimization, and advanced retirement planning — creating $169,700 in excess wealth-building capacity."
+description: "How Mia and Jay's personalized wealth plan eliminates $90,000 in annual taxes through strategic real estate structures, business entity optimization, and advanced retirement planning — creating $169,700 in excess wealth-building capacity."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

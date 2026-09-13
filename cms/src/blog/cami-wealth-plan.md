@@ -1,7 +1,7 @@
 ---
 title: "Cami's Wealth Strategy Snapshot: 2026 Tax Year Planning and Scenario Modeling"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Explore Cami's comprehensive 2026 tax year planning strategy with educational scenario modeling for tax optimization, investment analysis, and professional consultation frameworks."
+description: "Cami's 2026 tax year planning strategy with educational scenario modeling for tax optimization, investment analysis, and professional consultation frameworks."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

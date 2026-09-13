@@ -1,7 +1,7 @@
 ---
 title: "Alicja & Althaf's Wealth Plan: Building Financial Foundations in the NYC Metro Area"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Alicja and Althaf's comprehensive wealth strategy for transforming their financial position from high debt to long-term wealth building in the high-cost Levittown, NY market."
+description: "Alicja and Althaf's wealth strategy for transforming their financial position from high debt to long-term wealth building in the high-cost Levittown, NY market."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

@@ -1,7 +1,7 @@
 ---
 title: "Lauren Chi's Comprehensive Wealth Plan: Pathway to $1M Net Worth by Age 45"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Comprehensive wealth plan for Lauren Chi featuring a strategic pathway to achieve $1 million net worth by age 45 through systematic investing, tax optimization, and accelerated wealth building strategies."
+description: "Wealth plan for Lauren Chi featuring a strategic pathway to achieve $1 million net worth by age 45 through systematic investing, tax optimization, and accelerated wealth building strategies."
 date: 2025-12-01
 modifiedDate: 2025-12-01
 author: Preston Seo

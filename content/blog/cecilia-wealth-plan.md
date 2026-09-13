@@ -1,7 +1,7 @@
 ---
 title: "Cecilia's Wealth Plan: 12-Month Path to Financial Independence"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Cecilia's 12-month wealth implementation strategy for $150K-$199K household income — building tax optimization, STR business launch, and financial independence pathways."
+description: "Cecilia's 12-month wealth implementation strategy for $150K-$199K household income — building tax optimization, STR business launch, and financial independence pathways."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

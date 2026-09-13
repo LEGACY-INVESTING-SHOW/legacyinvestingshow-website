@@ -1,7 +1,7 @@
 ---
 title: "Sandra S. Elbaum's Wealth Plan from Midlothian, VA: Tax Optimization with Bitcoin and Self-Storage Investment"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Comprehensive wealth plan for Sandra S. Elbaum from Midlothian, VA featuring advanced tax optimization strategies, Bitcoin allocation, and self-storage real estate investment in the $200K-$299K income range."
+description: "Wealth plan for Sandra S. Elbaum from Midlothian, VA featuring advanced tax optimization strategies, Bitcoin allocation, and self-storage real estate investment in the $200K-$299K income range."
 date: 2025-11-01
 modifiedDate: 2025-11-01
 author: Preston Seo

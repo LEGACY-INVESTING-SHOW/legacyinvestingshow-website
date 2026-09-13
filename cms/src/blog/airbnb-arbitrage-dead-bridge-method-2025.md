@@ -4,7 +4,7 @@ title: >-
   2025
 titleTemplate: '%s | Legacy Investing Show'
 description: >-
-  Discover why Airbnb arbitrage isn't dead—it's evolved. Learn the Bridge Method
+  Why Airbnb arbitrage isn't dead—it's evolved. Learn the Bridge Method
   that Preston Seo uses to generate $34,000/month from 7 properties, plus real
   student success stories earning $90K/year from a single property.
 date: 2026-01-24T00:00:00.000Z

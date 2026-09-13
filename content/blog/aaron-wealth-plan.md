@@ -1,7 +1,7 @@
 ---
 title: "Aaron's Wealth Plan: High-Income Professional Tax Optimization"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Aaron's comprehensive tax optimization strategy for high-income professionals, targeting $40,000+ in annual tax savings through entity structuring, retirement maximization, and strategic deductions."
+description: "Aaron's tax optimization strategy for high-income professionals, targeting $40,000+ in annual tax savings through entity structuring, retirement maximization, and strategic deductions."
 date: 2026-04-12
 modifiedDate: 2026-04-12
 author: Preston Seo

@@ -1,7 +1,7 @@
 ---
 title: "Gregory's Wealth Plan: Business Owner Strategy and Entity Optimization"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Gregory's personalized wealth strategy for business owners focusing on multi-entity structures, profit distribution optimization, and tax-efficient business wealth building."
+description: "Gregory's personalized wealth strategy for business owners focusing on multi-entity structures, profit distribution optimization, and tax-efficient business wealth building."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

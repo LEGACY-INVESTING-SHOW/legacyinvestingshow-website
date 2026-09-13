@@ -1,7 +1,7 @@
 ---
 title: "Justin's Wealth Plan: $72,000 Annual Savings into Aggressive Bitcoin Accumulation"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Justin's personalized wealth strategy for deploying $72,000 in annual savings capacity into systematic Bitcoin dollar-cost averaging, business entity optimization, and wealth acceleration through disciplined accumulation."
+description: "Justin's personalized wealth strategy for deploying $72,000 in annual savings capacity into systematic Bitcoin dollar-cost averaging, business entity optimization, and wealth acceleration through disciplined accumulation."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo
