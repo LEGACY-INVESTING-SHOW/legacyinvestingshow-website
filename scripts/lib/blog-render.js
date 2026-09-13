@@ -13,6 +13,7 @@ const fs = require('fs');
 const path = require('path');
 const matter = require('gray-matter');
 const { renderSourceBlock } = require('./site-shell');
+const schemaOrg = require('./schema-org');
 
 const ROOT_DIR = path.join(__dirname, '..', '..');
 const CONTENT_DIR = path.join(ROOT_DIR, 'content', 'blog');
@@ -355,8 +356,12 @@ function renderPostHeader(post) {
             ? `, updated <time datetime="${formatISODate(modifiedRaw)}">${esc(modified)}</time>`
             : '';
 
+    // The byline links to the author page so the Person @id in the Article
+    // schema has a crawlable page behind it.
+    const byline = `<a href="/about/preston-seo" rel="author">${esc(fm.author || 'Preston Seo')}</a>`;
+
     return `<h1 class="post-title">${esc(fm.title || 'Untitled')}</h1>${lede}
-        <p class="meta post-meta">${esc(fm.author || 'Preston Seo')}, <time datetime="${formatISODate(fm.date)}">${esc(published)}</time>, ${readTime} min read${updated}</p>`;
+        <p class="meta post-meta">${byline}, <time datetime="${formatISODate(fm.date)}">${esc(published)}</time>, ${readTime} min read${updated}</p>`;
 }
 
 /**
@@ -556,6 +561,69 @@ function promoteBigStatements(contentHtml, statistics) {
 
 // -------------------------------------------------------- sources, faq, more
 
+// --------------------------------------------------------------- video
+
+const YOUTUBE_IFRAME_PATTERN =
+    /<iframe\b[^>]*?\bsrc="https?:\/\/(?:www\.)?youtube(?:-nocookie)?\.com\/embed\/([A-Za-z0-9_-]{6,})[^"]*"[^>]*>\s*<\/iframe>/gi;
+
+const YOUTUBE_ID_PATTERN = /^[A-Za-z0-9_-]{6,}$/;
+
+function youtubeThumbnail(videoId) {
+    return `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
+}
+
+/**
+ * A raw YouTube <iframe> costs about a megabyte and sets cookies before the
+ * reader asks for anything. Each one becomes a button showing the video
+ * thumbnail; the iframe is injected, with autoplay, only on click.
+ */
+function youtubeFacades(contentHtml) {
+    return String(contentHtml).replace(YOUTUBE_IFRAME_PATTERN, (match, videoId) => {
+        const titleMatch = match.match(/\btitle="([^"]*)"/i);
+        const videoTitle = titleMatch ? decodeEntities(titleMatch[1]).trim() : '';
+        const label = videoTitle ? `Play video: ${videoTitle}` : 'Play video';
+
+        return `<div class="yt-facade" data-youtube-id="${esc(videoId)}"${
+            videoTitle ? ` data-youtube-title="${esc(videoTitle)}"` : ''
+        }>
+            <button type="button" class="yt-facade-btn" aria-label="${esc(label)}">
+                <img class="yt-facade-thumb" src="${esc(youtubeThumbnail(videoId))}" alt="" width="480" height="360" loading="lazy" decoding="async">
+                <span class="yt-facade-play" aria-hidden="true"></span>
+            </button>
+        </div>`;
+    });
+}
+
+/**
+ * VideoObject for any post that names a `youtubeId`. Video results and AI
+ * answers need the thumbnail, the upload date and a publisher, so the node
+ * points back at the shared Organization `@id`.
+ */
+function renderVideoSchema(post) {
+    const fm = post.frontmatter || {};
+    const videoId = String(fm.youtubeId || '').trim();
+    if (!videoId || !YOUTUBE_ID_PATTERN.test(videoId)) return '';
+
+    const uploadDate = formatISODate(fm.date);
+    const name = String(fm.videoTitle || fm.title || '').trim();
+    const description = String(fm.videoDescription || fm.description || '').trim();
+    if (!name || !uploadDate) return '';
+
+    const video = {
+        '@context': 'https://schema.org',
+        '@type': 'VideoObject',
+        name,
+        description,
+        thumbnailUrl: youtubeThumbnail(videoId),
+        uploadDate,
+        embedUrl: `https://www.youtube.com/embed/${videoId}`,
+        contentUrl: `https://www.youtube.com/watch?v=${videoId}`,
+        publisher: schemaOrg.organization(),
+    };
+
+    return schemaOrg.renderJsonLdScript(video, 4);
+}
+
 /**
  * The shared source block ships inline styles for the legacy card look. Blog
  * posts drop the chrome: a heading, a hairline list, the disclaimer once.
@@ -698,9 +766,8 @@ function renderArticleBody({ post, contentHtml, allPosts }) {
     const fm = post.frontmatter;
     const wordCount = fm.wordCount ? Number(fm.wordCount) : countWords(post.content || '');
     const { toc, content } = buildTOC(contentHtml, wordCount);
-    const prose = promoteBigStatements(
-        stylePullQuotes(wrapTables(content)),
-        fm.statistics || fm.stats
+    const prose = youtubeFacades(
+        promoteBigStatements(stylePullQuotes(wrapTables(content)), fm.statistics || fm.stats)
     );
 
     const parts = [
@@ -713,6 +780,7 @@ function renderArticleBody({ post, contentHtml, allPosts }) {
         renderSources(post),
         renderFAQ(fm.faq || fm.faqs),
         renderRelated(post, allPosts || loadAllPosts()),
+        renderVideoSchema(post),
     ].filter(Boolean);
 
     return `<article class="post">
@@ -752,10 +820,12 @@ module.exports = {
     renderQuickAnswer,
     renderRelated,
     renderSources,
+    renderVideoSchema,
     resolveHero,
     slugifyCategory,
     slugifyHeading,
     stripTags,
     stylePullQuotes,
     wrapTables,
+    youtubeFacades,
 };

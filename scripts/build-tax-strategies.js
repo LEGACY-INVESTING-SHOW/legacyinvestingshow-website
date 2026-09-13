@@ -21,6 +21,7 @@ const {
     renderSiteHeader,
     renderSourceBlock,
 } = require('./lib/site-shell');
+const schemaOrg = require('./lib/schema-org');
 
 // Paths
 const ROOT_DIR = path.join(__dirname, '..');
@@ -247,7 +248,9 @@ function buildStrategyPage(strategy, template, allStrategies, catalogBySlug) {
         .replace(/\{\{relatedStrategiesList\}\}/g, generateRelatedStrategiesList(strategy.relatedStrategies, allStrategies, catalogBySlug))
         .replace(/\{\{faqBlock\}\}/g, renderFaqBlock(strategy.faqs || []))
         .replace(/\{\{sourcesBlock\}\}/g, plainSourceBlock({ title: strategy.title, slug: strategy.slug, type: 'tax_strategy' }))
-        .replace(/\{\{faqSchema\}\}/g, generateFaqSchema(strategy.faqs));
+        .replace(/\{\{faqSchema\}\}/g, generateFaqSchema(strategy.faqs))
+        .replace(/\{\{authorSchema\}\}/g, schemaOrg.toJsonLd(schemaOrg.author('Preston Seo'), 4))
+        .replace(/\{\{publisherSchema\}\}/g, schemaOrg.toJsonLd(schemaOrg.organization(), 4));
 
     // Handle minimum property value section
     if (strategy.minimumPropertyValue && strategy.minimumPropertyValue !== 'No minimum') {

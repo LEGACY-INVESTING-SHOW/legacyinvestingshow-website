@@ -37,7 +37,7 @@
     {{heroPreload}}
 
     {{headAssets}}
-    <link rel="stylesheet" href="/assets/css/blog.css?v=e1ea6de2">
+    <link rel="stylesheet" href="/assets/css/blog.css?v=68c90a2e">
 
     <!-- BreadcrumbList Schema -->
     <script type="application/ld+json">
@@ -80,42 +80,8 @@
             "width": 1200,
             "height": 630
         },
-        "author": {
-            "@type": "Person",
-            "@id": "https://www.legacyinvestingshow.com/about#author",
-            "name": "{{author}}",
-            "url": "https://www.legacyinvestingshow.com/about",
-            "jobTitle": "Real Estate Investor & Educator",
-            "knowsAbout": [
-                "Airbnb Arbitrage",
-                "Real Estate Investing",
-                "Short-Term Rentals",
-                "Passive Income Strategies",
-                "Property Management"
-            ],
-            "sameAs": [
-                "https://www.instagram.com/thelegacyshow",
-                "https://www.youtube.com/@thelegacyinvestingshow",
-                "https://www.tiktok.com/@thelegacyshow"
-            ]
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Legacy Investing Show",
-            "url": "https://www.legacyinvestingshow.com",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://www.legacyinvestingshow.com/assets/images/og-home.jpg",
-                "width": 512,
-                "height": 512
-            },
-            "sameAs": [
-                "https://www.instagram.com/thelegacyshow",
-                "https://www.youtube.com/@thelegacyinvestingshow",
-                "https://www.tiktok.com/@thelegacyshow",
-                "https://www.facebook.com/share/19LQhE6gmh/"
-            ]
-        },
+        "author": {{authorSchema}},
+        "publisher": {{publisherSchema}},
         "datePublished": "{{isoDate}}",
         "dateModified": "{{modifiedDate}}",
         "mainEntityOfPage": {
@@ -138,21 +104,7 @@
     {{faqSchema}}
 
     <!-- Organization Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Legacy Investing Show",
-        "url": "https://www.legacyinvestingshow.com",
-        "logo": "https://www.legacyinvestingshow.com/assets/images/og-home.jpg",
-        "sameAs": [
-            "https://www.instagram.com/thelegacyinvestingshow/",
-            "https://www.youtube.com/@LegacyInvestingShow",
-            "https://www.tiktok.com/@thelegacyinvestingshow",
-            "https://www.facebook.com/share/19LQhE6gmh/"
-        ]
-    }
-    </script>
+    {{organizationSchema}}
 
     {{analyticsHead}}
     <!-- Google Tag Manager -->
@@ -183,6 +135,6 @@
 
     {{siteFooter}}
 
-    <script defer src="/assets/js/main.js?v=a167e3e3"></script>
+    <script defer src="/assets/js/main.js?v=e3dec4ce"></script>
 </body>
 </html>
