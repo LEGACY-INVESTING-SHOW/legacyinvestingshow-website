@@ -422,6 +422,6 @@ Once you understand how the game works, you can't be taken advantage of. Once yo
 3. **There are three income types**—earned, portfolio, and passive—they're taxed completely differently. Wealthy people structure finances to minimize earned income
 4. **Your escape plan**: Start a business, explore real estate, maximize tax-advantaged accounts strategically, get a tax strategist who thinks ahead
 
-Ready to implement these strategies? Join our free live master class where we go deep on advanced tax strategies for high earners—specific moves that can add over $100,000 to your net worth over time. [Register at managemoney101.com/fbmasterclass](https://join.managemoney101.com/tax-strategies).
+Ready to implement these strategies? Join our free live master class where we go deep on advanced tax strategies for high earners—specific moves that can add over $100,000 to your net worth over time. [Register at join.managemoney101.com/tax-strategies](https://join.managemoney101.com/tax-strategies).
 
 *What strategies do you want me to cover next? Let me know in the comments.*
