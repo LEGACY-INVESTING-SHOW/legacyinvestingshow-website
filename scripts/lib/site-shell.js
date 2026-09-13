@@ -257,8 +257,6 @@ const FOOTER_GROUPS = [
       { href: '/tax-strategies', label: 'Tax strategies' },
       { href: '/compare', label: 'Compare guides' },
       { href: '/topics', label: 'Topics' },
-      { href: '/markets', label: 'City market guides' },
-      { href: '/renters-insurance', label: 'Renters insurance by state' },
     ],
   },
   {
