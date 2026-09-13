@@ -542,7 +542,14 @@ function renderHeader(activeHref) {
 </header>`;
 }
 
-function renderFooter() {
+function indefiniteArticle(word) {
+    const first = String(word || '').trim().charAt(0).toLowerCase();
+    return 'aeiou'.includes(first) ? 'an' : 'a';
+}
+
+function renderFooter(disclaimer) {
+    const legal = disclaimer
+        || 'Educational content only. Verify tax decisions with a qualified advisor.';
     return `<footer class="bg-gray-900 text-white py-12">
     <div class="container-custom grid gap-10 md:grid-cols-3">
         <div>
@@ -565,7 +572,7 @@ function renderFooter() {
         </div>
     </div>
     <div class="container-custom border-t border-gray-800 mt-8 pt-8 text-sm text-gray-400">
-        <p>&copy; ${CURRENT_YEAR} Legacy Investing Show. Educational content only. Verify tax decisions with a qualified advisor.</p>
+        <p>&copy; ${CURRENT_YEAR} Legacy Investing Show. ${esc(legal)}</p>
     </div>
 </footer>`;
 }
@@ -900,7 +907,7 @@ ${renderHead(page)}
     <main id="main" class="resource-main">
         ${page.body}
     </main>
-    ${renderFooter()}
+    ${renderFooter(page.disclaimer)}
 </body>
 </html>`;
 }
@@ -1068,7 +1075,7 @@ function buildCityFaqs(cityData, cityContext, cityLocal) {
             answer: `Treat demand as a volatility input, not as a guarantee. Use peak periods to understand upside, but build the tax plan around a base case you can still defend if occupancy softens.`,
         },
         {
-            question: `What records should a ${cityData.city} operator keep before filing?`,
+            question: `What records should ${indefiniteArticle(cityData.city)} ${cityData.city} operator keep before filing?`,
             answer: `Keep a property-level file with purchase documents, repair records, cleaner and vendor invoices, stay-length data, mileage or time logs where relevant, and any local compliance documents that support the operating model.`,
         },
         {
@@ -1114,8 +1121,6 @@ function renderCityPage(cityData, strategyMap) {
             <p class="hero-copy">${esc(cityContext.summary)} ${esc(cityContext.bestFit)}</p>
             <div class="meta-strip">
                 <span class="meta-pill">${esc(cityData.notes)}</span>
-                <span class="meta-pill">Priority market ${esc(cityData.priority)}</span>
-                <span class="meta-pill">Operator lens: tax + execution</span>
             </div>
         </div>
         <aside class="hero-panel">
@@ -1457,6 +1462,7 @@ function renderInsuranceHubPage(stateEntries, usEntry) {
         ],
         pageType: 'renters_hub',
         activeHref: '/tools',
+        disclaimer: 'Educational content only. A statewide average is not a quote. Confirm coverage with a licensed agent.',
         body,
     });
 
@@ -1492,7 +1498,7 @@ function renderRentersStatePage(entry, entriesByAbbr, usEntry, guides) {
             answer: `${intro} Treat that as a comparison band. A downtown ZIP with higher theft or replacement costs can price above the average even when the state overall sits ${premiumProse(entry.averageAnnualPremium, usAverage)}.`,
         },
         {
-            question: `Does a ${name} landlord usually require renters insurance?`,
+            question: `Does ${indefiniteArticle(name)} ${name} landlord usually require renters insurance?`,
             answer: guide && guide.leaseNorm
                 ? guide.leaseNorm
                 : `Many leases ask for liability coverage and to be listed as an interested party. Read the lease. The state average does not waive a landlord's requirement.`,
@@ -1621,6 +1627,7 @@ function renderRentersStatePage(entry, entriesByAbbr, usEntry, guides) {
         ],
         pageType: 'renters_state',
         activeHref: '/tools',
+        disclaimer: 'Educational content only. A statewide average is not a quote. Confirm coverage with a licensed agent.',
         body,
     });
 

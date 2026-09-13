@@ -121,6 +121,9 @@ function collectFailures() {
         if (!html.includes('FAQPage')) {
             failures.push('Kentucky page is missing FAQPage schema');
         }
+        if (html.includes('Verify tax decisions')) {
+            failures.push('Kentucky insurance page still uses the tax-advisor footer');
+        }
     }
 
     const austin = path.join(ROOT_DIR, 'markets', 'austin-tx.html');
@@ -133,6 +136,9 @@ function collectFailures() {
         }
         if (!html.includes('canonical" href="https://www.legacyinvestingshow.com/markets/austin-tx"')) {
             failures.push('Austin canonical is not /markets/austin-tx');
+        }
+        if (html.includes('Priority market')) {
+            failures.push('Austin page still shows generator Priority market pills');
         }
     }
 
