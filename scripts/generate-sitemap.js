@@ -27,6 +27,8 @@ const staticPages = [
   { url: '/about', file: 'about.html' },
   { url: '/about/preston-seo', file: 'about/preston-seo.html' },
   { url: '/success-stories', file: 'success-stories.html' },
+  { url: '/reviews', file: 'reviews.html' },
+  { url: '/pricing', file: 'pricing.html' },
   { url: '/blog/', file: 'blog/index.html' },
   { url: '/tax-strategies-101', file: 'tax-strategies-101.html' },
 ];

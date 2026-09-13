@@ -1,13 +1,14 @@
 ---
-title: 'Preston Seo Review: Who He Is, What He Teaches, and Why Students Trust Him'
+title: 'Preston Seo Reviews: Is Legacy Investing Show Legit?'
 description: >-
-  An honest Preston Seo review covering his background, $20M+ portfolio,
-  teaching style, and what students say about working with him.
+  Preston Seo reviews, the real complaints, what Legacy Investing Show sells,
+  what it costs, and the questions to ask before you pay.
 keywords:
+  - preston seo reviews
+  - is preston seo legit
+  - preston seo legacy wealth blueprint reviews
+  - legacy investing show reviews
   - preston seo review
-  - preston seo legacy investing show
-  - preston seo background
-  - preston seo real estate
 author: Preston Seo
 authorTitle: 'Founder, Legacy Investing Show'
 authorCredentials: Real estate investor and financial educator
@@ -18,8 +19,6 @@ canonical: 'https://www.legacyinvestingshow.com/blog/preston-seo-review'
 wordCount: '1476'
 readingTime: 8 min read
 ---
-# Preston Seo Review: Who He Is, What He Teaches, and Why Students Trust Him
-
 You're probably wondering if I'm worth listening to.
 
 Fair question.
@@ -29,6 +28,59 @@ Before you spend money on any program, you should know who the founder is. What 
 This is my honest background. The wins and the losses.
 
 No hype. Just facts.
+
+## Is Legacy Investing Show Legit?
+
+Yes. It is a real registered company that sells paid courses and coaching. It is not a free service, and it is not cheap. Here is what you can check yourself, plus the complaints people make and what I say about each one.
+
+### What the company is
+
+Legacy Investing Show, LLC is based in Herriman, Utah. The [Better Business Bureau profile](https://www.bbb.org/us/ut/herriman/profile/real-estate-school/legacy-investing-show-llc-1166-90045660) lists it under Real Estate School. The company is not BBB accredited.
+
+You can also look at the two Trustpilot profiles. The main one is [Legacy Investing Show By Preston Seo](https://www.trustpilot.com/review/firstairbnb.com), with 66 reviews and a 4.2 score. There is a second, [nearly empty profile for legacyinvestingshow.com](https://www.trustpilot.com/review/legacyinvestingshow.com) with one review.
+
+### What it sells and what it costs
+
+| Program | Price |
+| --- | ---: |
+| Legacy Wealth Blueprint | $9,800 |
+| LWB Course + AI | $1,500 |
+| Airbnb Ascension | $9,800 |
+| Airbnb Ascension Scale | $18,000 |
+| STR Concierge | $16,000 |
+| STR Concierge Portfolio | $30,000 |
+
+Bundles run from $17,000 to $34,000. Full details are on the [pricing page](/pricing).
+
+### The four complaints people make
+
+On Trustpilot, 77% of the 66 reviews are five star and 9% are one star. The one star reviews repeat four things.
+
+**1. Refunds.** Reviewers say they asked for a refund and did not get a clear answer, or that the contract was not refundable.
+
+What I say: this site does not publish refund terms. Our [terms page](/terms) says paid access is governed by the offer terms shown at checkout. So the terms live in the agreement you sign. Ask for that agreement in writing and read the refund section before you pay. If a rep will not send it, walk away.
+
+**2. Slow replies.** Reviewers say email and Zoom support was slow or hard to reach.
+
+What I say: Trustpilot shows we reply to 83% of negative reviews and usually take more than a month to do it. That is too slow, and I own it. Before you buy, ask who your point of contact is, which channel they use, and how fast they reply. Get the answer in writing.
+
+**3. The price moved during the sales call.** Reviewers say the price dropped when they hesitated.
+
+What I say: the list prices are above and on the [pricing page](/pricing). Two things can change the number you hear. The Blueprint is $9,800 paid by cash or card, and $10,800 through Splitit financing, because financing costs money. We also run promotions at some points in the year. Neither is a reason to decide in one call. Ask for the price in writing and take it away with you.
+
+**4. The testimonials are all interviews I run myself.** This one is true.
+
+What I say: most of the video stories on this site are calls I recorded with students. That is useful, but it is not independent. So I also put the written student quotes, their names, and where each one came from on one page. See [reviews and student results](/reviews). Then read the third-party pages I linked above, which I do not control.
+
+### What to ask before you pay
+
+- Send me the enrollment agreement and show me the refund section.
+- What are the written terms of the No Client Left Behind Guarantee? (Our [Legacy Wealth Blueprint page](/legacy-wealth-blueprint) tells you to ask for these on the call, so ask.)
+- Who is my point of contact, and how fast do they reply?
+- Is this price the full price, and will you put it in writing?
+- Can I speak to two students who started where I am now?
+
+Good answers to those five questions tell you more than any review page.
 
 ## The Quick Version
 

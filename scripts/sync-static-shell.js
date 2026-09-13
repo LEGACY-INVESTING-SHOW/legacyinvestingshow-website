@@ -11,6 +11,8 @@ const PAGES = {
   'about.html': '/about',
   'about/preston-seo.html': '/about',
   'success-stories.html': '/success-stories',
+  'reviews.html': '',
+  'pricing.html': '',
   'tax-strategies-101.html': '/tax-strategies',
   'privacy.html': '',
   'terms.html': '',
