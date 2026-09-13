@@ -521,6 +521,16 @@
   ],
   "redirects": [
     {
+      "source": "/worksheets",
+      "destination": "/tools",
+      "permanent": true
+    },
+    {
+      "source": "/worksheets/:slug*",
+      "destination": "/tools",
+      "permanent": true
+    },
+    {
       "source": "/programmatic-pages/insurance/renters-by-state",
       "destination": "/renters-insurance",
       "permanent": true

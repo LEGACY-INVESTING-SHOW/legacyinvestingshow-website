@@ -36,7 +36,6 @@ const resourceDirs = [
   'compare',
   'topics',
   'tools',
-  'worksheets',
   'markets',
   'renters-insurance',
 ];

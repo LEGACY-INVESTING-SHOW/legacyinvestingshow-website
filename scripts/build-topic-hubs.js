@@ -154,7 +154,20 @@ function getMarkdownPosts() {
 function formatDate(value) {
     const date = new Date(value);
     if (Number.isNaN(date.getTime())) return '';
-    return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    return date.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        timeZone: 'UTC',
+    });
+}
+
+// Machine-readable date for <time datetime>. Always YYYY-MM-DD in UTC so the
+// generated markup does not depend on the build machine's locale or timezone.
+function isoDate(value) {
+    const date = new Date(value);
+    if (Number.isNaN(date.getTime())) return '';
+    return date.toISOString().slice(0, 10);
 }
 
 function postMatchesTopic(post, topic) {
@@ -196,7 +209,7 @@ function renderPostCard(post, topicSlug) {
                 <div class="minimal-post-content">
                     <div class="minimal-post-meta">
                         <span class="minimal-post-category">${esc(category)}</span>
-                        ${date ? `<span class="meta-sep">·</span><time datetime="${esc(post.frontmatter.date)}">${esc(date)}</time>` : ''}
+                        ${date ? `<span class="meta-sep">·</span><time datetime="${esc(isoDate(post.frontmatter.date))}">${esc(date)}</time>` : ''}
                     </div>
                     <h2 class="minimal-post-title">${esc(post.frontmatter.title)}</h2>
                     <p class="minimal-post-desc">${esc(description)}</p>

@@ -90,13 +90,13 @@ document.querySelectorAll('[data-track-event]').forEach(element => {
     });
 });
 
-// Track first meaningful interaction on tool and worksheet pages
+// Track first meaningful interaction on tool pages
 let hasTrackedPageStart = false;
 document.addEventListener('input', (event) => {
     if (hasTrackedPageStart) return;
 
     const pageType = document.body?.dataset?.pageType || '';
-    if (!['tool', 'worksheet'].includes(pageType)) return;
+    if (pageType !== 'tool') return;
     if (!(event.target instanceof HTMLInputElement) &&
         !(event.target instanceof HTMLTextAreaElement) &&
         !(event.target instanceof HTMLSelectElement)) {
@@ -104,10 +104,7 @@ document.addEventListener('input', (event) => {
     }
 
     hasTrackedPageStart = true;
-    pushAnalyticsEvent(
-        pageType === 'tool' ? 'tool_started' : 'worksheet_started',
-        buildTrackingPayload(event.target)
-    );
+    pushAnalyticsEvent('tool_started', buildTrackingPayload(event.target));
 });
 
 // Close mobile menu when clicking outside
