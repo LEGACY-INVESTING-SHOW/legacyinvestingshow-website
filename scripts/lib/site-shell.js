@@ -310,7 +310,7 @@ function renderSiteHeader(activeHref = '') {
 function renderSiteFooter() {
   const groups = FOOTER_GROUPS.map(
     (g) => `<div class="site-footer-group">
-                    <h2>${esc(g.title)}</h2>
+                    <p class="site-footer-title">${esc(g.title)}</p>
                     <ul>
                         ${g.items.map((i) => `<li><a href="${i.href}">${esc(i.label)}</a></li>`).join('\n                        ')}
                     </ul>

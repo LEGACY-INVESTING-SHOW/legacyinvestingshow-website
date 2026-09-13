@@ -14,7 +14,7 @@
     "build:rss": "node scripts/generate-rss.js",
     "build:images": "node scripts/optimize-images.js",
     "build:assets": "node scripts/version-assets.js",
-    "build:tax-strategies": "node scripts/build-tax-strategies.js",
+    "build:tax-strategies": "node scripts/build-tax-strategies.js && node scripts/sweep-frozen-guides.js",
     "build:programmatic": "node scripts/fix-programmatic-seo.js",
     "build:compare": "node scripts/build-compare-pages.js",
     "build:topics": "node scripts/build-topic-hubs.js",

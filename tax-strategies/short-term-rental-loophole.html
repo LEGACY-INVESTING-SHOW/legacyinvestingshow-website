@@ -37,12 +37,11 @@
     <link rel="icon" type="image/png" href="/assets/images/logo.png">
     <link rel="apple-touch-icon" href="/assets/images/logo.png">
 
-    <!-- Preconnect -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <!-- Stylesheet -->
+    <link rel="preload" href="/assets/fonts/dm-serif-display-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/plus-jakarta-sans-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/guides.css">
 
     <!-- Schema Markup -->
     <script type="application/ld+json">
@@ -156,293 +155,6 @@
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
-<style>
-        .strategy-hero {
-            padding: 8rem 0 4rem;
-            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-        }
-        .strategy-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.5rem 1rem;
-            background: #10b981;
-            color: white;
-            font-size: 0.75rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            border-radius: 9999px;
-            margin-bottom: 1rem;
-        }
-        .strategy-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #111827;
-            margin-bottom: 1rem;
-            line-height: 1.2;
-        }
-        @media (min-width: 768px) {
-            .strategy-title { font-size: 3rem; }
-        }
-        .strategy-subtitle {
-            font-size: 1.25rem;
-            color: #4b5563;
-            max-width: 48rem;
-        }
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
-            margin-top: 2rem;
-        }
-        @media (min-width: 768px) {
-            .stats-grid { grid-template-columns: repeat(4, 1fr); }
-        }
-        .stat-box {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 0.75rem;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-        .stat-box__label {
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: #6b7280;
-            margin-bottom: 0.25rem;
-        }
-        .stat-box__value {
-            font-size: 1.125rem;
-            font-weight: 600;
-            color: #111827;
-        }
-        .stat-box__value--highlight {
-            color: #10b981;
-        }
-        .content-section {
-            padding: 4rem 0;
-        }
-        .content-grid {
-            display: grid;
-            gap: 3rem;
-        }
-        @media (min-width: 1024px) {
-            .content-grid {
-                grid-template-columns: 2fr 1fr;
-            }
-        }
-        .prose-content {
-            color: #374151;
-            line-height: 1.75;
-        }
-        .prose-content h2 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #111827;
-            margin: 2rem 0 1rem;
-        }
-        .prose-content h3 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: #111827;
-            margin: 1.5rem 0 0.75rem;
-        }
-        .prose-content p {
-            margin-bottom: 1rem;
-        }
-        .prose-content ul, .prose-content ol {
-            margin-bottom: 1rem;
-            padding-left: 1.5rem;
-        }
-        .prose-content li {
-            margin-bottom: 0.5rem;
-        }
-        .sidebar {
-            position: sticky;
-            top: 6rem;
-        }
-        .sidebar-card {
-            background: #f9fafb;
-            border-radius: 0.75rem;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-        .sidebar-card__title {
-            font-size: 1rem;
-            font-weight: 600;
-            color: #111827;
-            margin-bottom: 1rem;
-        }
-        .benefits-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .benefits-list li {
-            display: flex;
-            align-items: flex-start;
-            gap: 0.5rem;
-            margin-bottom: 0.75rem;
-            font-size: 0.875rem;
-            color: #4b5563;
-        }
-        .benefits-list svg {
-            flex-shrink: 0;
-            width: 1.25rem;
-            height: 1.25rem;
-            color: #10b981;
-            margin-top: 0.125rem;
-        }
-        .related-strategies {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .related-strategies li {
-            margin-bottom: 0.5rem;
-        }
-        .related-strategies a {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.75rem;
-            background: white;
-            border-radius: 0.5rem;
-            color: #374151;
-            text-decoration: none;
-            font-size: 0.875rem;
-            transition: all 0.2s;
-        }
-        .related-strategies a:hover {
-            background: #f3f4f6;
-            color: #111827;
-        }
-        .related-strategies svg {
-            width: 1rem;
-            height: 1rem;
-            color: #9ca3af;
-        }
-        .faq-section {
-            background: #f9fafb;
-            padding: 4rem 0;
-        }
-        .faq-section__title {
-            font-size: 1.75rem;
-            font-weight: 700;
-            color: #111827;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-        .faq-list {
-            max-width: 48rem;
-            margin: 0 auto;
-        }
-        .faq-item {
-            background: white;
-            border-radius: 0.75rem;
-            margin-bottom: 1rem;
-            overflow: hidden;
-        }
-        .faq-question {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.25rem;
-            background: none;
-            border: none;
-            cursor: pointer;
-            text-align: left;
-            font-size: 1rem;
-            font-weight: 600;
-            color: #111827;
-        }
-        .faq-question:hover {
-            background: #f9fafb;
-        }
-        .faq-chevron {
-            width: 1.25rem;
-            height: 1.25rem;
-            color: #9ca3af;
-            transition: transform 0.2s;
-        }
-        .faq-question[aria-expanded="true"] .faq-chevron {
-            transform: rotate(180deg);
-        }
-        .faq-answer {
-            display: none;
-            padding: 0 1.25rem 1.25rem;
-            color: #4b5563;
-            line-height: 1.6;
-        }
-        .faq-answer--open {
-            display: block;
-        }
-        .cta-section {
-            padding: 4rem 0;
-            text-align: center;
-        }
-        .cta-card {
-            background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
-            border-radius: 1rem;
-            padding: 3rem 2rem;
-            color: white;
-        }
-        .cta-card__title {
-            font-size: 1.75rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-        .cta-card__text {
-            color: #d1d5db;
-            margin-bottom: 1.5rem;
-            max-width: 32rem;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .cta-card__button {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 1rem 2rem;
-            background: #10b981;
-            color: white;
-            font-weight: 600;
-            border-radius: 0.5rem;
-            text-decoration: none;
-            transition: background 0.2s;
-        }
-        .cta-card__button:hover {
-            background: #059669;
-        }
-        .breadcrumb {
-            padding: 1rem 0;
-            font-size: 0.875rem;
-        }
-        .breadcrumb a {
-            color: #6b7280;
-            text-decoration: none;
-        }
-        .breadcrumb a:hover {
-            color: #111827;
-        }
-        .breadcrumb span {
-            color: #9ca3af;
-            margin: 0 0.5rem;
-        }
-        .irs-reference {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.25rem;
-            font-size: 0.75rem;
-            color: #6b7280;
-            background: #f3f4f6;
-            padding: 0.25rem 0.5rem;
-            border-radius: 0.25rem;
-            margin-top: 0.5rem;
-        }
-    </style>
 
     <!-- BreadcrumbList Schema -->
     <script type="application/ld+json">
@@ -479,11 +191,10 @@
         gtag('config', 'G-2578PT1WSS');
     </script>
 
-
     <!-- Twitter Card fallback -->
     <meta name="twitter:image" content="https://www.legacyinvestingshow.com/assets/images/tax-strategies/short-term-rental-loophole.jpg">
 </head>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="display:none; visibility:hidden"></iframe></noscript>
     <!-- Skip to main content -->
     <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-navy text-white px-4 py-2 z-50">
         Skip to main content
@@ -491,51 +202,36 @@
 
     <!-- Header -->
     <!-- Header / Navigation -->
-    <header class="fixed top-0 left-0 right-0 z-50 header-glass">
-        <nav class="container-custom" aria-label="Main navigation">
-            <div class="flex items-center justify-between h-16 md:h-20">
-                <!-- Logo -->
-                <a href="/" class="flex items-center gap-3 font-semibold text-lg hover:opacity-80 transition-opacity">
-                    <img src="/assets/images/logo.png" alt="Legacy Investing Show Logo" width="36" height="36" class="w-9 h-9">
-                    <span class="hidden md:block">Preston Seo | Legacy Investing Show</span>
-                </a>
-                
-                <!-- Desktop Navigation -->
-                <div class="hidden md:flex items-center gap-4">
-                    <a href="/" class="nav-link">Home</a>
+    <header class="site-header">
+        <nav class="container-custom site-nav" aria-label="Main navigation">
+            <a href="/" class="site-brand">
+                <img src="/assets/images/logo-240.webp" alt="" width="62" height="28">
+                <span>Legacy Investing Show</span>
+            </a>
+            <div class="site-nav-links">
+                <a href="/" class="nav-link">Home</a>
                     <a href="/about" class="nav-link">About</a>
-                    <a href="/tax-strategies/" class="nav-link">Tax Strategies</a>
-                    <a href="/compare/" class="nav-link">Compare</a>
-                    <a href="/tools/" class="nav-link">Tools</a>
-                    <a href="/worksheets/" class="nav-link">Worksheets</a>
-                    <a href="/blog/" class="nav-link">Blog</a>
-                </div>
-                
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700 hover:text-gold transition-colors" aria-label="Open menu" aria-expanded="false">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
+                    <a href="/tax-strategies" class="nav-link nav-link-active">Tax Strategies</a>
+                    <a href="/compare" class="nav-link">Compare</a>
+                    <a href="/tools" class="nav-link">Tools</a>
+                    <a href="/blog" class="nav-link">Blog</a>
             </div>
-            
-            <!-- Mobile Navigation -->
-            <div id="mobile-menu" class="hidden md:hidden pb-6 border-t border border-gold mt-4 pt-4">
-                <div class="flex flex-col gap-4">
-                    <a href="/" class="nav-link">Home</a>
+            <button id="mobile-menu-btn" class="site-nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            </button>
+            <div id="mobile-menu" class="site-nav-mobile hidden">
+                <a href="/" class="nav-link">Home</a>
                     <a href="/about" class="nav-link">About</a>
-                    <a href="/tax-strategies/" class="nav-link">Tax Strategies</a>
-                    <a href="/compare/" class="nav-link">Compare</a>
-                    <a href="/tools/" class="nav-link">Tools</a>
-                    <a href="/worksheets/" class="nav-link">Worksheets</a>
-                    <a href="/blog/" class="nav-link">Blog</a>
-                </div>
+                    <a href="/tax-strategies" class="nav-link nav-link-active">Tax Strategies</a>
+                    <a href="/compare" class="nav-link">Compare</a>
+                    <a href="/tools" class="nav-link">Tools</a>
+                    <a href="/blog" class="nav-link">Blog</a>
             </div>
         </nav>
     </header>
 
     <!-- Breadcrumb Navigation -->
-    <nav aria-label="Breadcrumb" class="container-custom pt-24 pb-4">
+    <nav aria-label="Breadcrumb" class="container-custom">
         <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
             <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                 <a href="/" class="breadcrumb__link" itemprop="item"><span itemprop="name">Home</span></a>
@@ -556,40 +252,28 @@
         <!-- Hero Section -->
         <section class="strategy-hero">
             <div class="container-custom">
-                <span class="strategy-badge">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                    </svg>
-                    Tax Strategy
-                </span>
                 <h1 class="strategy-title">Short-Term Rental Loophole</h1>
-                <p class="strategy-subtitle">Deduct Airbnb losses against W-2 income without REPS</p>
+                <p class="guide-deck">Deduct Airbnb losses against W-2 income without REPS</p>
 
-                <div class="stats-grid">
-                    <div class="stat-box">
-                        <div class="stat-box__label">Potential Savings</div>
-                        <div class="stat-box__value stat-box__value--highlight">$30,000 - $100,000+ in tax deductions</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-box__label">Complexity</div>
-                        <div class="stat-box__value">Intermediate</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-box__label">Professional Required</div>
-                        <div class="stat-box__value">Yes</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-box__label">Typical Cost</div>
-                        <div class="stat-box__value">Included in tax preparation with STR experience</div>
-                    </div>
-                </div>
-                <div class="irs-reference">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                        <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
-                    </svg>
-                    IRS Reference: IRC Section 469 & Reg 1.469-1T(e)(3)
-                </div>
+                <dl class="guide-dl">
+                        <div>
+                            <dt>Potential Savings</dt>
+                            <dd>$30,000 - $100,000+ in tax deductions</dd>
+                        </div>
+                        <div>
+                            <dt>Complexity</dt>
+                            <dd>Intermediate</dd>
+                        </div>
+                        <div>
+                            <dt>Professional Required</dt>
+                            <dd>Yes</dd>
+                        </div>
+                        <div>
+                            <dt>Typical Cost</dt>
+                            <dd>Included in tax preparation with STR experience</dd>
+                        </div>
+                    </dl>
+                <p class="guide-hero__meta">IRS Reference: IRC Section 469 &amp; Reg 1.469-1T(e)(3)</p>
             </div>
         </section>
 
@@ -602,16 +286,16 @@
                         <h2>The Short-Term Rental Loophole: Your Key to Offsetting W-2 Income</h2>
                         <p>Here's a surprising stat: <strong>Over 68% of Airbnb hosts earning $20,000+ annually are completely unaware they can deduct significant losses against their W-2 income without qualifying as a Real Estate Professional.</strong> This oversight costs investors thousands in unnecessary taxes every year. The short-term rental (STR) loophole—codified in IRC Section 469 and Regulation 1.469-1T(e)(3)—is one of the most underutilized tax strategies available to W-2 employees.</p>
 
-                        <div class="sidebar-card" style="background: #fef3c7; border-left: 4px solid #f59e0b; margin: 1.5rem 0;">
-                            <p style="margin: 0; color: #92400e;"><strong>Bottom Line:</strong> If you operate a short-term rental where guests stay 7 days or less on average AND you materially participate (100+ hours/year minimum), you bypass passive activity loss restrictions and can deduct losses directly against active W-2 income—potentially saving $15,000-$100,000+ annually when combined with accelerated depreciation strategies.</p>
+                        <div class="sidebar-card">
+                            <p style="margin: 0; color: #92400e"><strong>Bottom Line:</strong> If you operate a short-term rental where guests stay 7 days or less on average AND you materially participate (100+ hours/year minimum), you bypass passive activity loss restrictions and can deduct losses directly against active W-2 income—potentially saving $15,000-$100,000+ annually when combined with accelerated depreciation strategies.</p>
                         </div>
 
-                        <ul style="background: #f0fdf4; padding: 1.5rem; border-radius: 0.5rem; list-style: none;">
-                            <li style="margin-bottom: 0.75rem;"><strong>✓ Bypass REPS requirement:</strong> Deduct rental losses without becoming a Real Estate Professional</li>
-                            <li style="margin-bottom: 0.75rem;"><strong>✓ W-2 income offset:</strong> Use rental losses to reduce taxable W-2 salary</li>
-                            <li style="margin-bottom: 0.75rem;"><strong>✓ Scalable strategy:</strong> Works with single properties or portfolios of multiple STRs</li>
-                            <li style="margin-bottom: 0.75rem;"><strong>✓ Combines with acceleration:</strong> Layer with <a href="/tax-strategies/cost-segregation" class="internal-link">cost segregation study</a> for explosive first-year deductions</li>
-                            <li style="margin-bottom: 0.75rem;"><strong>✓ Airbnb/VRBO specific:</strong> Proven effective for platforms with shorter average stays</li>
+                        <ul style="background: var(--cream-dark); padding: 1.5rem; border-radius: 0.5rem; list-style: none">
+                            <li style="margin-bottom: 0.75rem"><strong>✓ Bypass REPS requirement:</strong> Deduct rental losses without becoming a Real Estate Professional</li>
+                            <li style="margin-bottom: 0.75rem"><strong>✓ W-2 income offset:</strong> Use rental losses to reduce taxable W-2 salary</li>
+                            <li style="margin-bottom: 0.75rem"><strong>✓ Scalable strategy:</strong> Works with single properties or portfolios of multiple STRs</li>
+                            <li style="margin-bottom: 0.75rem"><strong>✓ Combines with acceleration:</strong> Layer with <a href="/tax-strategies/cost-segregation" class="internal-link">cost segregation study</a> for explosive first-year deductions</li>
+                            <li style="margin-bottom: 0.75rem"><strong>✓ Airbnb/VRBO specific:</strong> Proven effective for platforms with shorter average stays</li>
                         </ul>
 
                         <!-- SECTION 2: Comprehensive Definition -->
@@ -625,7 +309,7 @@
 
                         <h3>Material Participation Component</h3>
                         <p>Qualifying for the 7-day threshold alone isn't enough. You must also materially participate in the activity. The IRS provides seven tests for material participation; you only need to meet ONE:</p>
-                        <ol style="margin-left: 1.5rem;">
+                        <ol style="margin-left: 1.5rem">
                             <li><strong>500-hour test:</strong> You participate 500+ hours in the activity during the tax year</li>
                             <li><strong>Principal activity test:</strong> Your participation is substantially all the participation for the year</li>
                             <li><strong>100-hour test with no one else:</strong> You participate 100+ hours and no one else participates more</li>
@@ -648,7 +332,7 @@
                         <h3>Persona 1: The Corporate W-2 Employee with Side Airbnb Income</h3>
                         <p><strong>Profile:</strong> Sarah earns $150,000/year as a marketing director at a Fortune 500 company. She purchased a beachfront condo in 2023 for $400,000, financing $320,000 at 6% interest. She lists it on Airbnb with an average 5-day guest stay.</p>
                         <p><strong>Tax Benefit:</strong> In year one, before considering depreciation, Sarah has:</p>
-                        <ul style="margin-left: 1.5rem;">
+                        <ul style="margin-left: 1.5rem">
                             <li>Mortgage interest: $19,200</li>
                             <li>Property taxes: $4,800</li>
                             <li>Insurance: $2,400</li>
@@ -663,7 +347,7 @@
                         <h3>Persona 2: The Multi-Unit Portfolio Developer</h3>
                         <p><strong>Profile:</strong> Marcus owns a portfolio of six STR properties across two markets. He invested $2.8M total, has $1.9M in debt, and rents 1,800 total days annually across 380 guest stays (average 4.7 days). He documents spending 150+ hours annually managing the portfolio.</p>
                         <p><strong>Tax Benefit:</strong> His annual expenses total approximately $320,000. Combined with depreciation deductions of $180,000 (including accelerated cost segregation in new properties), Marcus shows a $230,000 loss annually. His W-2 income is $220,000 (investment income from his day job). This loss:</p>
-                        <ul style="margin-left: 1.5rem;">
+                        <ul style="margin-left: 1.5rem">
                             <li>Reduces taxable W-2 income to zero</li>
                             <li>Creates a $10,000 net operating loss (NOL) carryback/forward</li>
                             <li>Saves ~$92,000 in federal and state taxes</li>
@@ -699,7 +383,7 @@
                         <p><strong>Action:</strong> Find a CPA or tax attorney specializing in real estate and passive activity rules. NOT just any tax preparer—you need someone who has filed returns for multiple Airbnb hosts and understands IRC Section 469.</p>
                         <p><strong>Timeline:</strong> Before purchase and immediately after closing.</p>
                         <p><strong>Questions to ask:</strong></p>
-                        <ul style="margin-left: 1.5rem;">
+                        <ul style="margin-left: 1.5rem">
                             <li>Have you filed returns claiming active classification for STR properties?</li>
                             <li>How do you document material participation for IRS audit defense?</li>
                             <li>Can you layer this with cost segregation?</li>
@@ -716,7 +400,7 @@
 
                         <h3>Step 4: Execute Material Participation Plan (Ongoing, Document Immediately)</h3>
                         <p><strong>Action:</strong> Commit to hitting the 100-hour minimum annually (or whichever test applies). Track time using:</p>
-                        <ul style="margin-left: 1.5rem;">
+                        <ul style="margin-left: 1.5rem">
                             <li>Digital calendar with entries for each task</li>
                             <li>Time-tracking software (Toggl, Harvest)</li>
                             <li>Monthly summary spreadsheet</li>
@@ -737,7 +421,7 @@
 
                         <h3>Step 6: Create Comprehensive Tax Documentation System (Month 4 Before Year-End)</h3>
                         <p><strong>Action:</strong> Implement tracking for:</p>
-                        <ul style="margin-left: 1.5rem;">
+                        <ul style="margin-left: 1.5rem">
                             <li>Monthly rental income (Airbnb reports, payment records)</li>
                             <li>All expenses (mortgage, taxes, insurance, utilities, repairs, management fees)</li>
                             <li>Material participation hours (weekly log)</li>
@@ -761,63 +445,63 @@
                         <h3>Scenario 1: Single-Unit STR with W-2 Offset</h3>
                         <p><strong>Taxpayer Profile:</strong> Marcus, W-2 employee earning $175,000/year, purchased a $450,000 condo with $360,000 mortgage at 5.5% interest, now operating as STR.</p>
 
-                        <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0; background: #f9fafb;">
-                            <tr style="background: #111827; color: white;">
-                                <th style="padding: 1rem; border: 1px solid #e5e7eb; text-align: left;">Item</th>
-                                <th style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right;">Amount</th>
+                        <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0; background: var(--cream)">
+                            <tr style="background: #111827; color: white">
+                                <th style="padding: 1rem; border: 1px solid #e5e7eb; text-align: left">Item</th>
+                                <th style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right">Amount</th>
                             </tr>
                             <tr>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb;"><strong>Gross Rental Income</strong></td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right;">$65,000</td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb"><strong>Gross Rental Income</strong></td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right">$65,000</td>
                             </tr>
-                            <tr style="background: #f3f4f6;">
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb;"><em>Mortgage Interest (year 1)</em></td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right;">($19,800)</td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb;"><em>Property Taxes</em></td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right;">($5,400)</td>
-                            </tr>
-                            <tr style="background: #f3f4f6;">
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb;"><em>Insurance</em></td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right;">($3,000)</td>
+                            <tr style="background: var(--cream)">
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb"><em>Mortgage Interest (year 1)</em></td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right">($19,800)</td>
                             </tr>
                             <tr>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb;"><em>Utilities & Maintenance</em></td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right;">($8,500)</td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb"><em>Property Taxes</em></td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right">($5,400)</td>
                             </tr>
-                            <tr style="background: #f3f4f6;">
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb;"><em>Management Fees (10%)</em></td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right;">($6,500)</td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb;"><em>Cleaning & Turnover</em></td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right;">($7,200)</td>
-                            </tr>
-                            <tr style="background: #f3f4f6;">
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb;"><strong>Total Operating Expenses</strong></td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right;"><strong>($50,400)</strong></td>
+                            <tr style="background: var(--cream)">
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb"><em>Insurance</em></td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right">($3,000)</td>
                             </tr>
                             <tr>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb;"><strong>Operating Income Before Depreciation</strong></td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right;"><strong>$14,600</strong></td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb"><em>Utilities & Maintenance</em></td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right">($8,500)</td>
                             </tr>
-                            <tr style="background: #f3f4f6;">
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb;"><em>Building Depreciation (27.5 years)</em></td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right;">($11,600)</td>
+                            <tr style="background: var(--cream)">
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb"><em>Management Fees (10%)</em></td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right">($6,500)</td>
                             </tr>
                             <tr>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb;"><em>Cost Segregation (accelerated, yr 1)</em></td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right;">($48,000)</td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb"><em>Cleaning & Turnover</em></td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right">($7,200)</td>
                             </tr>
-                            <tr style="background: #ecfdf5;">
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb;"><strong>Net Taxable Income (Loss)</strong></td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right;"><strong>($45,000)</strong></td>
+                            <tr style="background: var(--cream)">
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb"><strong>Total Operating Expenses</strong></td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right"><strong>($50,400)</strong></td>
                             </tr>
-                        </table>
+                            <tr>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb"><strong>Operating Income Before Depreciation</strong></td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right"><strong>$14,600</strong></td>
+                            </tr>
+                            <tr style="background: var(--cream)">
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb"><em>Building Depreciation (27.5 years)</em></td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right">($11,600)</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb"><em>Cost Segregation (accelerated, yr 1)</em></td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right">($48,000)</td>
+                            </tr>
+                            <tr style="background: var(--cream-dark)">
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb"><strong>Net Taxable Income (Loss)</strong></td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right"><strong>($45,000)</strong></td>
+                            </tr>
+                        </table></div>
 
                         <p><strong>Tax Calculation Without STR Loophole (Passive Activity Rules):</strong></p>
-                        <ul style="margin-left: 1.5rem;">
+                        <ul style="margin-left: 1.5rem">
                             <li>W-2 Income: $175,000</li>
                             <li>Passive Loss Limitation (PALL): Max $25,000 (phases out above $100K AGI)</li>
                             <li>Usable loss: $25,000</li>
@@ -826,7 +510,7 @@
                         </ul>
 
                         <p><strong>Tax Calculation WITH STR Loophole (Active Activity):</strong></p>
-                        <ul style="margin-left: 1.5rem;">
+                        <ul style="margin-left: 1.5rem">
                             <li>W-2 Income: $175,000</li>
                             <li>STR Deduction (full loss): ($45,000)</li>
                             <li><strong>Taxable income: $130,000</strong></li>
@@ -839,35 +523,35 @@
                         <h3>Scenario 2: Portfolio Approach with Multiple Units</h3>
                         <p><strong>Taxpayer Profile:</strong> Jennifer owns 3 STR properties worth $1.2M combined, generates $180,000 in annual rental income, has W-2 income of $220,000.</p>
 
-                        <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0; background: #f9fafb;">
-                            <tr style="background: #111827; color: white;">
-                                <th style="padding: 1rem; border: 1px solid #e5e7eb; text-align: left;">Item</th>
-                                <th style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right;">Amount</th>
+                        <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0; background: var(--cream)">
+                            <tr style="background: #111827; color: white">
+                                <th style="padding: 1rem; border: 1px solid #e5e7eb; text-align: left">Item</th>
+                                <th style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right">Amount</th>
                             </tr>
                             <tr>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb;"><strong>Gross Rental Income (3 properties)</strong></td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right;">$180,000</td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb"><strong>Gross Rental Income (3 properties)</strong></td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right">$180,000</td>
                             </tr>
-                            <tr style="background: #f3f4f6;">
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb;"><em>Operating Expenses (all properties)</em></td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right;">($126,000)</td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb;"><em>Standard Depreciation</em></td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right;">($32,000)</td>
-                            </tr>
-                            <tr style="background: #f3f4f6;">
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb;"><em>Cost Segregation Acceleration (year 1)</em></td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right;">($155,000)</td>
+                            <tr style="background: var(--cream)">
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb"><em>Operating Expenses (all properties)</em></td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right">($126,000)</td>
                             </tr>
                             <tr>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb;"><strong>Portfolio Net Loss</strong></td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right;"><strong>($133,000)</strong></td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb"><em>Standard Depreciation</em></td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right">($32,000)</td>
                             </tr>
-                        </table>
+                            <tr style="background: var(--cream)">
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb"><em>Cost Segregation Acceleration (year 1)</em></td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right">($155,000)</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb"><strong>Portfolio Net Loss</strong></td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: right"><strong>($133,000)</strong></td>
+                            </tr>
+                        </table></div>
 
                         <p><strong>Without STR Loophole:</strong></p>
-                        <ul style="margin-left: 1.5rem;">
+                        <ul style="margin-left: 1.5rem">
                             <li>W-2 Income: $220,000</li>
                             <li>Passive Activity Limitation: $25,000 (plus $108,000 carryforward)</li>
                             <li><strong>Taxable Income: $195,000</strong></li>
@@ -875,7 +559,7 @@
                         </ul>
 
                         <p><strong>With STR Loophole:</strong></p>
-                        <ul style="margin-left: 1.5rem;">
+                        <ul style="margin-left: 1.5rem">
                             <li>W-2 Income: $220,000</li>
                             <li>Full STR Loss Deduction: ($133,000)</li>
                             <li><strong>Taxable Income: $87,000</strong></li>
@@ -890,7 +574,7 @@
                         <h3>Strategy 1: Layering STR Loophole with Cost Segregation for Explosive First-Year Deductions</h3>
                         <p><strong>Overview:</strong> Cost segregation studies accelerate depreciation by reclassifying property components to shorter useful lives. Combined with STR classification, this creates massive first-year losses.</p>
                         <p><strong>Implementation Steps:</strong></p>
-                        <ol style="margin-left: 1.5rem;">
+                        <ol style="margin-left: 1.5rem">
                             <li>Purchase property and close within 60 days</li>
                             <li>Immediately hire cost segregation firm ($3,000-$8,000)</li>
                             <li>Property allocates: 70% building (27.5 years), 15% land improvements (15 years), 15% personal property (5-7 years)</li>
@@ -903,7 +587,7 @@
                         <h3>Strategy 2: S-Corp Election with Reasonable Salary to Minimize Self-Employment Tax</h3>
                         <p><strong>Overview:</strong> Converting STR LLC to S-Corp can save additional taxes by separating W-2 salary (subject to FICA) from business distributions (not subject to FICA).</p>
                         <p><strong>Implementation Steps:</strong></p>
-                        <ol style="margin-left: 1.5rem;">
+                        <ol style="margin-left: 1.5rem">
                             <li>Establish LLC and operate for 1-2 years to establish income patterns</li>
                             <li>File Form 2553 electing S-Corp taxation (with IRS)</li>
                             <li>Determine "reasonable salary" based on comparable market rates for STR management work</li>
@@ -916,7 +600,7 @@
                         <h3>Strategy 3: <a href="/tax-strategies/bonus-depreciation" class="internal-link">bonus depreciation</a> on Furnishings and Equipment</h3>
                         <p><strong>Overview:</strong> Section 168(k) allows 100% first-year deduction for qualified property acquired after September 27, 2017. Most STR furnishings and equipment qualify.</p>
                         <p><strong>Implementation Steps:</strong></p>
-                        <ol style="margin-left: 1.5rem;">
+                        <ol style="margin-left: 1.5rem">
                             <li>Document all furnishings, appliances, and equipment with receipts</li>
                             <li>Cost segregation study will typically identify $40,000-$80,000 of bonus-eligible personal property</li>
                             <li>Claim 100% deduction in year of purchase (not subject to Section 179 limitations)</li>
@@ -927,7 +611,7 @@
                         <h3>Strategy 4: Material Participation Portfolio Aggregation</h3>
                         <p><strong>Overview:</strong> If you own multiple STRs in the same geographic area or market, treat them as a single activity for material participation testing.</p>
                         <p><strong>Implementation Steps:</strong></p>
-                        <ol style="margin-left: 1.5rem;">
+                        <ol style="margin-left: 1.5rem">
                             <li>Document that properties are materially similar (same platform, similar rental model)</li>
                             <li>Establish centralized management structure (even if delegated to PM company)</li>
                             <li>Maintain consolidated time logs for portfolio management work</li>
@@ -938,7 +622,7 @@
                         <h3>Strategy 5: Loss Harvesting and Carryforward Optimization</h3>
                         <p><strong>Overview:</strong> Even with STR classification, plan multi-year loss harvesting strategy to optimize deductions.</p>
                         <p><strong>Implementation Steps:</strong></p>
-                        <ol style="margin-left: 1.5rem;">
+                        <ol style="margin-left: 1.5rem">
                             <li>Project W-2 income for next 3-5 years</li>
                             <li>Time major capital expenditures (new roof, HVAC, kitchen remodel) to years with higher expected W-2 income</li>
                             <li>Accelerate or delay cost segregation updates based on income planning</li>
@@ -989,77 +673,77 @@
 
                         <h3>STR Loophole vs. Long-Term Rental (PALL)</h3>
                         <p><strong>Key Difference:</strong> Long-term rentals are classified as passive activities, limiting loss deductions to $25,000/year (for incomes below $100K) with phase-outs. STR bypasses this entirely if 7-day average is met.</p>
-                        <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0; background: #f9fafb;">
-                            <tr style="background: #111827; color: white;">
-                                <th style="padding: 1rem; border: 1px solid #e5e7eb; text-align: left;">Feature</th>
-                                <th style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center;">STR Loophole</th>
-                                <th style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center;">Long-Term Rental</th>
+                        <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0; background: var(--cream)">
+                            <tr style="background: #111827; color: white">
+                                <th style="padding: 1rem; border: 1px solid #e5e7eb; text-align: left">Feature</th>
+                                <th style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center">STR Loophole</th>
+                                <th style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center">Long-Term Rental</th>
                             </tr>
                             <tr>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb;">Loss Deduction</td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center;">Unlimited vs W-2</td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center;">$25K limited (PALL)</td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb">Loss Deduction</td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center">Unlimited vs W-2</td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center">$25K limited (PALL)</td>
                             </tr>
-                            <tr style="background: #f3f4f6;">
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb;">Average Guest Stay</td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center;">Under 7 days</td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center;">30+ days</td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb;">Material Participation Required</td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center;">Yes (100+ hrs)</td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center;">No</td>
-                            </tr>
-                            <tr style="background: #f3f4f6;">
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb;">Passive Activity Rules Apply</td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center;">No</td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center;">Yes</td>
+                            <tr style="background: var(--cream)">
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb">Average Guest Stay</td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center">Under 7 days</td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center">30+ days</td>
                             </tr>
                             <tr>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb;">Best For</td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center;">W-2 employees</td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center;">Passive investors</td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb">Material Participation Required</td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center">Yes (100+ hrs)</td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center">No</td>
                             </tr>
-                        </table>
+                            <tr style="background: var(--cream)">
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb">Passive Activity Rules Apply</td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center">No</td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center">Yes</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb">Best For</td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center">W-2 employees</td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center">Passive investors</td>
+                            </tr>
+                        </table></div>
 
                         <h3>STR Loophole vs. <a href="/tax-strategies/real-estate-professional-status" class="internal-link">real estate professional status</a> (REPS)</h3>
                         <p><strong>Key Difference:</strong> REPS allows unlimited loss deductions for ANY rental real estate if you spend 750+ hours/year in real estate businesses (materially participating). STR loophole only applies to short-term rentals but requires fewer hours (100+).</p>
-                        <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0; background: #f9fafb;">
-                            <tr style="background: #111827; color: white;">
-                                <th style="padding: 1rem; border: 1px solid #e5e7eb; text-align: left;">Feature</th>
-                                <th style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center;">STR Loophole</th>
-                                <th style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center;">REPS</th>
+                        <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0; background: var(--cream)">
+                            <tr style="background: #111827; color: white">
+                                <th style="padding: 1rem; border: 1px solid #e5e7eb; text-align: left">Feature</th>
+                                <th style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center">STR Loophole</th>
+                                <th style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center">REPS</th>
                             </tr>
                             <tr>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb;">Hours Required</td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center;">100+/year</td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center;">750+/year</td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb">Hours Required</td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center">100+/year</td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center">750+/year</td>
                             </tr>
-                            <tr style="background: #f3f4f6;">
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb;">Applies to Long-Term Rentals</td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center;">No</td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center;">Yes</td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb;">Applies to STRs</td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center;">Yes</td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center;">Yes</td>
-                            </tr>
-                            <tr style="background: #f3f4f6;">
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb;">IRS Scrutiny</td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center;">Lower (statutory)</td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center;">Higher (subjective)</td>
+                            <tr style="background: var(--cream)">
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb">Applies to Long-Term Rentals</td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center">No</td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center">Yes</td>
                             </tr>
                             <tr>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb;">Good For</td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center;">W-2 side STR</td>
-                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center;">Full-time investors</td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb">Applies to STRs</td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center">Yes</td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center">Yes</td>
                             </tr>
-                        </table>
+                            <tr style="background: var(--cream)">
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb">IRS Scrutiny</td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center">Lower (statutory)</td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center">Higher (subjective)</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb">Good For</td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center">W-2 side STR</td>
+                                <td style="padding: 1rem; border: 1px solid #e5e7eb; text-align: center">Full-time investors</td>
+                            </tr>
+                        </table></div>
 
                         <h3>STR Loophole vs. Cost Segregation</h3>
                         <p><strong>Key Difference:</strong> These are complementary, not competing strategies. Cost segregation accelerates depreciation on any property. STR loophole allows those deductions to offset W-2 income immediately.</p>
-                        <ul style="margin-left: 1.5rem;">
+                        <ul style="margin-left: 1.5rem">
                             <li><strong>Cost Segregation:</strong> Generates $50,000-$150,000 additional deductions through accelerated depreciation. Works with ANY real estate (long-term, short-term, commercial).</li>
                             <li><strong>STR Loophole:</strong> Allows deductions to offset active income, not just passive income. Only works for short-term rentals meeting 7-day average requirement.</li>
                             <li><strong>Combined:</strong> STR + Cost Segregation = maximum first-year tax savings. A $400K STR property could generate $150,000+ in first-year deductions offset against W-2 income.</li>
@@ -1069,7 +753,7 @@
                         <h2>Essential Tools and Resources for STR Tax Management</h2>
 
                         <h3>Rental Management & Income Tracking</h3>
-                        <ul style="margin-left: 1.5rem;">
+                        <ul style="margin-left: 1.5rem">
                             <li><strong>Airbnb & VRBO:</strong> Built-in tax reporting (generates IRS reports on demand)</li>
                             <li><strong>Stripe or PayPal:</strong> Payment processing and automated tax summaries</li>
                             <li><strong>Guesty:</strong> Multi-platform property management tool ($99-$499/mo, syncs Airbnb, VRBO, Booking.com)</li>
@@ -1077,7 +761,7 @@
                         </ul>
 
                         <h3>Accounting & Expense Tracking</h3>
-                        <ul style="margin-left: 1.5rem;">
+                        <ul style="margin-left: 1.5rem">
                             <li><strong>QuickBooks Online:</strong> Full accounting ($30-$150/mo, tracks all expenses by category)</li>
                             <li><strong>Wave (Free):</strong> Basic accounting for solopreneurs</li>
                             <li><strong>Xero:</strong> International accounting option ($11-$82/mo)</li>
@@ -1085,7 +769,7 @@
                         </ul>
 
                         <h3>Time Tracking for Material Participation Documentation</h3>
-                        <ul style="margin-left: 1.5rem;">
+                        <ul style="margin-left: 1.5rem">
                             <li><strong>Toggl Track (Free):</strong> Simple time logging with project categorization</li>
                             <li><strong>Harvest:</strong> Time tracking + invoicing ($12-$80/mo)</li>
                             <li><strong>Google Calendar:</strong> Free alternative—schedule recurring "STR Management" blocks with descriptions</li>
@@ -1093,14 +777,14 @@
                         </ul>
 
                         <h3>Cost Segregation & Depreciation Analysis</h3>
-                        <ul style="margin-left: 1.5rem;">
+                        <ul style="margin-left: 1.5rem">
                             <li><strong>Cost Segregation Firms:</strong> PwC Real Estate Advisory, Focal Point, e-SPEED (provide studies $2,500-$7,500)</li>
                             <li><strong>UCC (Universal Cost Codes):</strong> Standard for property component classification</li>
                             <li><strong>MACRS Calculator:</strong> Calculate depreciation schedules on components</li>
                         </ul>
 
                         <h3>Tax Strategy & Planning Software</h3>
-                        <ul style="margin-left: 1.5rem;">
+                        <ul style="margin-left: 1.5rem">
                             <li><strong>ProConnect Tax Online:</strong> Professional tax preparation supporting Schedule C complexity</li>
                             <li><strong>Bloomberg BNA Portfolio:</strong> Advanced tax planning tool for high-income investors</li>
                             <li><strong>Intuit Professional Tax Software:</strong> Designed for CPAs filing complex returns</li>
@@ -1110,7 +794,7 @@
                         <h2>Frequently Asked Questions</h2>
                     </div>
 
-                    <aside class="sidebar">
+                    <aside class="guide-rail">
                         <div class="sidebar-card">
                             <h3 class="sidebar-card__title">Who This Strategy Benefits</h3>
                             <ul class="benefits-list">
@@ -1196,10 +880,10 @@
                             </ul>
                         </div>
 
-                        <div class="sidebar-card" style="background: #ecfdf5;">
+                        <div class="sidebar-card">
                             <h3 class="sidebar-card__title">Ready to Save on Taxes?</h3>
-                            <p style="font-size: 0.875rem; color: #4b5563; margin-bottom: 1rem;">Learn how to implement this and other tax strategies in Preston's wealth-building programs.</p>
-                            <a href="/blog/" style="display: inline-block; padding: 0.75rem 1.5rem; background: #10b981; color: white; font-weight: 600; border-radius: 0.5rem; text-decoration: none; font-size: 0.875rem;">View Resources</a>
+                            <p style="font-size: 0.875rem; color: #4b5563; margin-bottom: 1rem">Learn how to implement this and other tax strategies in Preston's wealth-building programs.</p>
+                            <a href="/blog/" style="display: inline-block; padding: 0.75rem 1.5rem; background: var(--gold); color: var(--navy); font-weight: 600; border-radius: 0.5rem; text-decoration: none; font-size: 0.875rem">View Resources</a>
                         </div>
                     </aside>
                 </div>
@@ -1213,7 +897,7 @@
                 <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="true" aria-controls="faq-answer-0">
+                        <button class="faq-toggle" aria-expanded="true" aria-controls="faq-answer-0">
                             <span itemprop="name">What is the 7-day rule for short-term rentals?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
@@ -1225,181 +909,181 @@
                     </div>
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+                        <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-1">
                             <span itemprop="name">What counts as material participation for STRs?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer " id="faq-answer-1" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer" id="faq-answer-1" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <p itemprop="text">Material participation is demonstrated by meeting one of seven IRS tests. The most practical for STR investors is the 100-hour test: you must spend at least 100 hours annually on the rental activity AND no one else spends more time than you. Qualifying work includes guest communication, booking management, maintenance coordination, property repairs, cleaning oversight, pricing strategy, marketing, tax/bookkeeping, contractor management, and inspections. You must document these hours contemporaneously (weekly, not after year-end) to withstand IRS scrutiny.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+                        <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-2">
                             <span itemprop="name">Can I combine this with cost segregation?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer " id="faq-answer-2" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer" id="faq-answer-2" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <p itemprop="text">Yes! Combining the STR loophole with cost segregation is one of the most powerful tax strategies available. A cost segregation study accelerates depreciation by reclassifying property components to shorter useful lives. Combined with STR classification, this creates massive first-year deductions. A typical $400,000 STR property might generate $50,000-$90,000 in accelerated depreciation (year one) plus $35,000-$50,000 in operating losses, totaling $100,000+ in first-year deductions that can offset W-2 income.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+                        <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-3">
                             <span itemprop="name">How do I calculate my average guest stay for the 7-day test?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer " id="faq-answer-3" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer" id="faq-answer-3" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <p itemprop="text">To calculate average guest stay, take your total rental days in the calendar year and divide by the number of separate rental periods (individual guest stays). For example: If you had 200 rental days across 40 separate guest bookings, your average is 5 days per stay (200 ÷ 40 = 5). You must maintain this calculation for IRS audit defense. Airbnb and VRBO provide reports showing this data. Track it monthly to ensure you stay below 7 days and identify months where you're trending above the threshold so you can adjust pricing or marketing accordingly.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+                        <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-4">
                             <span itemprop="name">Do I need to file as an LLC to claim this deduction?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer " id="faq-answer-4" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer" id="faq-answer-4" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <p itemprop="text">While not technically required, establishing an LLC (or S-Corp) is strongly recommended. First, it demonstrates "business intent" to the IRS, which provides strong audit defense. Second, it offers liability protection—guests can sue the LLC, not your personal assets. Third, it allows for S-Corp election on your LLC (Form 2553), which can save self-employment taxes. You can claim the deduction as a sole proprietor, but you must clearly document that it's a business activity on Schedule C with detailed explanations of the 7-day rule and material participation. Filing as a sole proprietor is weaker for IRS defense.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+                        <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-5">
                             <span itemprop="name">Can I use a property manager and still claim material participation?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer " id="faq-answer-5" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer" id="faq-answer-5" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <p itemprop="text">Absolutely. Many investors hire property managers to handle day-to-day operations (cleaning, guest coordination, maintenance). You can still claim material participation by spending 100+ hours annually on strategic activities like pricing strategy, marketing decisions, vendor management, quality control reviews, financial management, and performance analysis. Document these hours separately from the property manager's work. The key is that YOU are making material decisions about the business, even if the PM executes them. This is one of the most common scenarios for STR investors and is fully permissible.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
+                        <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-6">
                             <span itemprop="name">How long do I need to keep documentation for IRS audits?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer " id="faq-answer-6" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer" id="faq-answer-6" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <p itemprop="text">Keep all documentation for at least 7 years (3 years is standard, but the IRS can go back 6 years for substantial underreporting, and 7 years is safer). This includes: time logs showing material participation hours, Airbnb/VRBO reports showing guest stays and average length, all receipts for expenses, property management contracts, maintenance invoices, mortgage statements, property tax bills, insurance policies, cost segregation studies, and any email or correspondence related to the rental activity. Organize these by year in case of audit. Digital storage (cloud backup) is recommended so you don't lose records to fire or theft.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-7">
+                        <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-7">
                             <span itemprop="name">What happens if I have both STR and long-term rental properties?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer " id="faq-answer-7" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer" id="faq-answer-7" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <p itemprop="text">You must treat them as separate activities for tax purposes. Your STR with 5-day average stay and 100+ annual hours can use full loss deductions against W-2 income. Your long-term rental with 12-month leases is a passive activity, limited to $25,000/year in loss deductions (with income phaseouts). File separate Schedule Cs or clearly separate them on a single Schedule C with detailed notes explaining which properties qualify as active vs. passive. Mixing them undermines your audit defense. Many accountants make this mistake—ensure your CPA understands the distinction.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-8">
+                        <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-8">
                             <span itemprop="name">Does personal use of the property disqualify me from claiming the deduction?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer " id="faq-answer-8" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer" id="faq-answer-8" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <p itemprop="text">Limited personal use is permissible and won't disqualify you. Tax law allows up to 14 days of personal use per year (or 10% of rental days, whichever is greater) without reclassifying the property as a residence. For example, if you rent 200 days annually, you can use it personally up to 20 days (10% of 200). However, if you exceed 14 days AND it represents more than 10% of rental days, the property gets reclassified as a "residence with rental activity" (much stricter passive activity rules apply). Avoid this trap by limiting personal use to the 14-day threshold.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-9">
+                        <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-9">
                             <span itemprop="name">Can I claim depreciation recapture when I sell the property?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer " id="faq-answer-9" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer" id="faq-answer-9" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <p itemprop="text">Yes, but you'll pay depreciation recapture tax. All depreciation you deducted (including cost segregation) is "recaptured" when you sell at a rate of 25% federal tax (plus capital gains tax on appreciation and state taxes). This is why it's important to calculate your true after-tax benefit. If you deducted $100,000 in depreciation and sell, you'll owe $25,000 in recapture tax (25% rate). However, the STR loophole still wins because you deferred these taxes 5-10 years, had use of the money during that time, and may be in a lower tax bracket when you eventually sell. Always factor recapture into your long-term plan.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-10">
+                        <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-10">
                             <span itemprop="name">Does the IRS audit STR properties more frequently than other rentals?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer " id="faq-answer-10" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer" id="faq-answer-10" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <p itemprop="text">STR properties with documented active classification and proper material participation documentation face lower audit risk than passive rental claims. The statutory nature of the 7-day rule (it's explicitly codified in IRC Section 469) gives you strong legal ground. Where audits happen is when: (1) you claim large losses without documentation, (2) you fail to document material participation hours, (3) you don't maintain 7-day average records, or (4) you mix passive and active activities. If you follow the steps in this guide—entity structure, contemporaneous time logs, cost segregation study, detailed Schedule C notes—your audit defense is solid. The IRS is more likely to challenge aggressive Real Estate Professional status claims than properly documented STR loopholes.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-11">
+                        <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-11">
                             <span itemprop="name">What if my average guest stay is exactly 7 days?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer " id="faq-answer-11" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer" id="faq-answer-11" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <p itemprop="text">If your average is exactly 7 days (or less), you qualify for the non-passive classification. The rule says "7 days or less," so 7.0 days exactly qualifies. However, if you're tracking at 7.0 and average 7.1 days, you don't qualify. For this reason, most tax professionals recommend targeting a 6-day average or lower to create a buffer for rounding or occasional longer stays. Monitor your average monthly. If trending above 7 days, adjust pricing or focus on shorter-stay guests. Don't assume you're safe at 7.5 days average—you're not. The threshold is strict.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-12">
+                        <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-12">
                             <span itemprop="name">Can I claim this deduction if I'm considered a Real Estate Professional?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer " id="faq-answer-12" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer" id="faq-answer-12" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <p itemprop="text">If you qualify as a Real Estate Professional (750+ hours/year in real estate businesses), you can already deduct unlimited losses from ANY rental activity (STR or long-term). The STR loophole is primarily valuable for W-2 employees who don't qualify as REPS but still want to deduct STR losses. However, if you're borderline REPS-qualified (maybe 600-750 hours), the STR loophole might be preferable because it requires only 100 hours and is harder for the IRS to challenge. Consult your CPA about which strategy (REPS vs. STR loophole) works better for your specific situation.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-13">
+                        <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-13">
                             <span itemprop="name">What expenses can I deduct from my STR rental income?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer " id="faq-answer-13" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer" id="faq-answer-13" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <p itemprop="text">All ordinary and necessary business expenses are deductible: mortgage interest (not principal), property taxes, insurance, utilities, maintenance/repairs, property management fees, cleaning and turnover costs, landscaping, marketing/advertising, credit card processing fees, supplies, contractor costs, and HOA fees. You can also deduct depreciation on the building (not land), cost segregation accelerated depreciation, and 100% bonus depreciation on furnishings and equipment. Notably, you CANNOT deduct the principal portion of mortgage payments or capital improvements (those are added to your cost basis). Consult your CPA about what qualifies as deductible repair vs. capital improvement.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-14">
+                        <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-14">
                             <span itemprop="name">Do I need to pay quarterly estimated taxes on STR income?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer " id="faq-answer-14" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer" id="faq-answer-14" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <p itemprop="text">If your STR activity generates net income (not net losses), yes—you likely owe quarterly estimated taxes (Form 1040-ES). However, if the deductions (expenses + depreciation) exceed rental income, you show a loss and don't owe estimated taxes on this activity (though you might owe on your W-2 income if under-withheld). Many STR investors strategically time deductions to show year-one losses (especially with cost segregation), which eliminates estimated tax requirements. Work with your CPA to calculate quarterly obligations. Failing to pay estimated taxes when required results in penalties and interest, so don't skip this.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-15">
+                        <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-15">
                             <span itemprop="name">How often should I review this strategy with my CPA?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer " id="faq-answer-15" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer" id="faq-answer-15" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <p itemprop="text">Review annually at tax time (January-March before filing) and semi-annually (mid-year) if you're considering significant changes like adding properties, changing average stay duration, or adjusting participation hours. Tax laws change—Congress periodically modifies depreciation rules, passive activity provisions, and other provisions. Your CPA should track these changes and advise whether your strategy needs updating. Additionally, if you're scaling from one STR to multiple properties, you may need to restructure entities or change material participation tests. Annual reviews ensure you're optimizing legally and staying compliant with current regulations.</p>
                         </div>
                     </div>
@@ -1412,7 +1096,7 @@
             <div class="container-custom">
                 <h2>Related Tax Strategies and Wealth-Building Topics</h2>
                 <p>The STR loophole doesn't exist in isolation. It works best as part of a comprehensive tax and wealth strategy. Explore these related topics to maximize your financial optimization:</p>
-                <ul style="margin-left: 1.5rem; column-count: 2; column-gap: 2rem;">
+                <ul style="margin-left: 1.5rem; column-count: 2; column-gap: 2rem">
                     <li><a href="/tax-strategies/cost-segregation">Cost Segregation Studies</a> - Accelerate depreciation on all property types</li>
                     <li><a href="/tax-strategies/real-estate-professional-status">Real Estate Professional Status (REPS)</a> - Alternative for full-time real estate investors</li>
                     <li><a href="/tax-strategies/real-estate-professional-status">Passive Activity Loss Limitation Rules</a> - Understand the restrictions the STR loophole bypasses</li>
@@ -1427,59 +1111,54 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-navy text-white py-12" role="contentinfo">
+    <footer class="site-footer" role="contentinfo">
         <div class="container-custom">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
-                <!-- Brand -->
-                <div>
-                    <div class="flex items-center gap-2 mb-4">
-                        <img src="/assets/images/logo.png" alt="Legacy Investing Show" width="32" height="32">
-                        <span class="font-semibold">Legacy Investing Show</span>
-                    </div>
-                    <p class="text-cream-dark text-sm">Building generational wealth through real estate and tax strategies.</p>
+            <div class="site-footer-grid">
+                <div class="site-footer-brand">
+                    <a href="/" class="site-brand"><img src="/assets/images/logo-240.webp" alt="" width="62" height="28"><span>Legacy Investing Show</span></a>
+                    <p>Tax strategy, wealth systems, and practical decision tools for professionals, investors, and founders.</p>
                 </div>
-                
-                
-                <!-- Resources -->
-                <div>
-                    <h4 class="font-semibold mb-4">Resources</h4>
-                    <ul class="space-y-2 text-sm text-cream-dark">
-                        <li><a href="/tax-strategies/" class="hover:text-gold">Tax Strategies</a></li>
-                        <li><a href="/retirement/401k-contribution-strategies" class="hover:text-gold">401(k) Strategies</a></li>
-                        <li><a href="/blog/" class="hover:text-gold">Success Stories</a></li>
-                        <li><a href="/blog/" class="hover:text-gold">Resources</a></li>
+                <div class="site-footer-group">
+                    <h2>Guides</h2>
+                    <ul>
+                        <li><a href="/tax-strategies">Tax strategies</a></li>
+                        <li><a href="/compare">Compare guides</a></li>
+                        <li><a href="/topics">Topics</a></li>
+                        <li><a href="/markets">City market guides</a></li>
+                        <li><a href="/renters-insurance">Renters insurance by state</a></li>
                     </ul>
                 </div>
-                
-                <!-- Company -->
-                <div>
-                    <h4 class="font-semibold mb-4">Company</h4>
-                    <ul class="space-y-2 text-sm text-cream-dark">
-                        <li><a href="/about" class="hover:text-gold">About</a></li>
-                        <li><a href="/success-stories" class="hover:text-gold">Results</a></li>
+                <div class="site-footer-group">
+                    <h2>Tools</h2>
+                    <ul>
+                        <li><a href="/tools">Free calculators</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer-group">
+                    <h2>Company</h2>
+                    <ul>
+                        <li><a href="/about">About Preston Seo</a></li>
+                        <li><a href="/success-stories">Student results</a></li>
+                        <li><a href="/privacy">Privacy</a></li>
+                        <li><a href="/terms">Terms</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="border-t border-gray-800 pt-8 text-center text-sm text-muted">
-                Copyright 2026 Legacy Investing Show. All rights reserved.
-            </div>
+            <p class="site-footer-legal">&copy; 2026 Legacy Investing Show. Educational content, not individual tax, legal, or investment advice.</p>
         </div>
     </footer>
 
     <script defer src="/assets/js/main.js"></script>
     <script>
-        // FAQ accordion
-        document.querySelectorAll('.faq-question').forEach(button => {
-            button.addEventListener('click', () => {
-                const expanded = button.getAttribute('aria-expanded') === 'true';
-                button.setAttribute('aria-expanded', !expanded);
-                button.nextElementSibling.classList.toggle('faq-answer--open');
+        document.querySelectorAll('.faq-toggle').forEach(function (button) {
+            button.addEventListener('click', function () {
+                var expanded = button.getAttribute('aria-expanded') === 'true';
+                button.setAttribute('aria-expanded', String(!expanded));
+                if (button.nextElementSibling) {
+                    button.nextElementSibling.classList.toggle('faq-answer--open');
+                }
             });
-        });
-
-        // Mobile menu
-        document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
         });
     </script>
 </body>

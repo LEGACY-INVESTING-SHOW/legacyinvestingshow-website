@@ -37,12 +37,11 @@
     <link rel="icon" type="image/png" href="/assets/images/logo.png">
     <link rel="apple-touch-icon" href="/assets/images/logo.png">
 
-    <!-- Preconnect -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <!-- Stylesheet -->
+    <link rel="preload" href="/assets/fonts/dm-serif-display-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/plus-jakarta-sans-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/guides.css">
 
     <!-- Schema Markup -->
     <script type="application/ld+json">
@@ -239,362 +238,6 @@
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
-<style>
-        .strategy-hero {
-            padding: 8rem 0 4rem;
-            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-        }
-        .strategy-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.5rem 1rem;
-            background: #10b981;
-            color: white;
-            font-size: 0.75rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            border-radius: 9999px;
-            margin-bottom: 1rem;
-        }
-        .strategy-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #111827;
-            margin-bottom: 1rem;
-            line-height: 1.2;
-        }
-        @media (min-width: 768px) {
-            .strategy-title { font-size: 3rem; }
-        }
-        .strategy-subtitle {
-            font-size: 1.25rem;
-            color: #4b5563;
-            max-width: 48rem;
-        }
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
-            margin-top: 2rem;
-        }
-        @media (min-width: 768px) {
-            .stats-grid { grid-template-columns: repeat(4, 1fr); }
-        }
-        .stat-box {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 0.75rem;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-        .stat-box__label {
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: #6b7280;
-            margin-bottom: 0.25rem;
-        }
-        .stat-box__value {
-            font-size: 1.125rem;
-            font-weight: 600;
-            color: #111827;
-        }
-        .stat-box__value--highlight {
-            color: #10b981;
-        }
-        .content-section {
-            padding: 4rem 0;
-        }
-        .content-grid {
-            display: grid;
-            gap: 3rem;
-        }
-        @media (min-width: 1024px) {
-            .content-grid {
-                grid-template-columns: 2fr 1fr;
-            }
-        }
-        .prose-content {
-            color: #374151;
-            line-height: 1.75;
-        }
-        .prose-content h2 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #111827;
-            margin: 2rem 0 1rem;
-        }
-        .prose-content h3 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: #111827;
-            margin: 1.5rem 0 0.75rem;
-        }
-        .prose-content p {
-            margin-bottom: 1rem;
-        }
-        .prose-content ul, .prose-content ol {
-            margin-bottom: 1rem;
-            padding-left: 1.5rem;
-        }
-        .prose-content li {
-            margin-bottom: 0.5rem;
-        }
-        .sidebar {
-            position: sticky;
-            top: 6rem;
-        }
-        .sidebar-card {
-            background: #f9fafb;
-            border-radius: 0.75rem;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-        .sidebar-card__title {
-            font-size: 1rem;
-            font-weight: 600;
-            color: #111827;
-            margin-bottom: 1rem;
-        }
-        .benefits-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .benefits-list li {
-            display: flex;
-            align-items: flex-start;
-            gap: 0.5rem;
-            margin-bottom: 0.75rem;
-            font-size: 0.875rem;
-            color: #4b5563;
-        }
-        .benefits-list svg {
-            flex-shrink: 0;
-            width: 1.25rem;
-            height: 1.25rem;
-            color: #10b981;
-            margin-top: 0.125rem;
-        }
-        .related-strategies {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .related-strategies li {
-            margin-bottom: 0.5rem;
-        }
-        .related-strategies a {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.75rem;
-            background: white;
-            border-radius: 0.5rem;
-            color: #374151;
-            text-decoration: none;
-            font-size: 0.875rem;
-            transition: all 0.2s;
-        }
-        .related-strategies a:hover {
-            background: #f3f4f6;
-            color: #111827;
-        }
-        .related-strategies svg {
-            width: 1rem;
-            height: 1rem;
-            color: #9ca3af;
-        }
-        .faq-section {
-            background: #f9fafb;
-            padding: 4rem 0;
-        }
-        .faq-section__title {
-            font-size: 1.75rem;
-            font-weight: 700;
-            color: #111827;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-        .faq-list {
-            max-width: 48rem;
-            margin: 0 auto;
-        }
-        .faq-item {
-            background: white;
-            border-radius: 0.75rem;
-            margin-bottom: 1rem;
-            overflow: hidden;
-        }
-        .faq-question {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.25rem;
-            background: none;
-            border: none;
-            cursor: pointer;
-            text-align: left;
-            font-size: 1rem;
-            font-weight: 600;
-            color: #111827;
-        }
-        .faq-question:hover {
-            background: #f9fafb;
-        }
-        .faq-chevron {
-            width: 1.25rem;
-            height: 1.25rem;
-            color: #9ca3af;
-            transition: transform 0.2s;
-        }
-        .faq-question[aria-expanded="true"] .faq-chevron {
-            transform: rotate(180deg);
-        }
-        .faq-answer {
-            display: none;
-            padding: 0 1.25rem 1.25rem;
-            color: #4b5563;
-            line-height: 1.6;
-        }
-        .faq-answer--open {
-            display: block;
-        }
-        .cta-section {
-            padding: 4rem 0;
-            text-align: center;
-        }
-        .cta-card {
-            background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
-            border-radius: 1rem;
-            padding: 3rem 2rem;
-            color: white;
-        }
-        .cta-card__title {
-            font-size: 1.75rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-        .cta-card__text {
-            color: #d1d5db;
-            margin-bottom: 1.5rem;
-            max-width: 32rem;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .cta-card__button {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 1rem 2rem;
-            background: #10b981;
-            color: white;
-            font-weight: 600;
-            border-radius: 0.5rem;
-            text-decoration: none;
-            transition: background 0.2s;
-        }
-        .cta-card__button:hover {
-            background: #059669;
-        }
-        .breadcrumb {
-            padding: 1rem 0;
-            font-size: 0.875rem;
-        }
-        .breadcrumb a {
-            color: #6b7280;
-            text-decoration: none;
-        }
-        .breadcrumb a:hover {
-            color: #111827;
-        }
-        .breadcrumb span {
-            color: #9ca3af;
-            margin: 0 0.5rem;
-        }
-        .irs-reference {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.25rem;
-            font-size: 0.75rem;
-            color: #6b7280;
-            background: #f3f4f6;
-            padding: 0.25rem 0.5rem;
-            border-radius: 0.25rem;
-            margin-top: 0.5rem;
-        }
-        .comparison-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1.5rem 0;
-            background: white;
-            border-radius: 0.75rem;
-            overflow: hidden;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-        .comparison-table th {
-            background: #f9fafb;
-            padding: 1rem;
-            text-align: left;
-            font-weight: 600;
-            color: #111827;
-            border-bottom: 1px solid #e5e7eb;
-        }
-        .comparison-table td {
-            padding: 1rem;
-            border-bottom: 1px solid #e5e7eb;
-            color: #374151;
-        }
-        .comparison-table tr:last-child td {
-            border-bottom: none;
-        }
-        .tax-states-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            margin: 1.5rem 0;
-        }
-        .tax-state-card {
-            background: #f9fafb;
-            padding: 1.5rem;
-            border-radius: 0.75rem;
-            border-left: 4px solid #10b981;
-        }
-        .tax-state-card__name {
-            font-weight: 600;
-            color: #111827;
-            margin-bottom: 0.5rem;
-        }
-        .tax-state-card__info {
-            font-size: 0.875rem;
-            color: #4b5563;
-        }
-        .checklist {
-            list-style: none;
-            padding: 0;
-            margin: 1.5rem 0;
-        }
-        .checklist li {
-            display: flex;
-            align-items: flex-start;
-            gap: 0.75rem;
-            margin-bottom: 1rem;
-            padding: 1rem;
-            background: #f9fafb;
-            border-radius: 0.5rem;
-        }
-        .checklist input {
-            margin-top: 0.25rem;
-            flex-shrink: 0;
-        }
-        .checklist label {
-            color: #374151;
-            cursor: pointer;
-            flex: 1;
-        }
-    </style>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
     <script>
@@ -604,11 +247,10 @@
         gtag('config', 'G-2578PT1WSS');
     </script>
 
-
     <!-- Twitter Card fallback -->
     <meta name="twitter:image" content="https://www.legacyinvestingshow.com/assets/images/tax-strategies/state-tax-residency.jpg">
 </head>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="display:none; visibility:hidden"></iframe></noscript>
     <!-- Skip to main content -->
     <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-navy text-white px-4 py-2 z-50">
         Skip to main content
@@ -616,51 +258,36 @@
 
     <!-- Header -->
     <!-- Header / Navigation -->
-    <header class="fixed top-0 left-0 right-0 z-50 header-glass">
-        <nav class="container-custom" aria-label="Main navigation">
-            <div class="flex items-center justify-between h-16 md:h-20">
-                <!-- Logo -->
-                <a href="/" class="flex items-center gap-3 font-semibold text-lg hover:opacity-80 transition-opacity">
-                    <img src="/assets/images/logo.png" alt="Legacy Investing Show Logo" width="36" height="36" class="w-9 h-9">
-                    <span class="hidden md:block">Preston Seo | Legacy Investing Show</span>
-                </a>
-                
-                <!-- Desktop Navigation -->
-                <div class="hidden md:flex items-center gap-4">
-                    <a href="/" class="nav-link">Home</a>
+    <header class="site-header">
+        <nav class="container-custom site-nav" aria-label="Main navigation">
+            <a href="/" class="site-brand">
+                <img src="/assets/images/logo-240.webp" alt="" width="62" height="28">
+                <span>Legacy Investing Show</span>
+            </a>
+            <div class="site-nav-links">
+                <a href="/" class="nav-link">Home</a>
                     <a href="/about" class="nav-link">About</a>
-                    <a href="/tax-strategies/" class="nav-link">Tax Strategies</a>
-                    <a href="/compare/" class="nav-link">Compare</a>
-                    <a href="/tools/" class="nav-link">Tools</a>
-                    <a href="/worksheets/" class="nav-link">Worksheets</a>
-                    <a href="/blog/" class="nav-link">Blog</a>
-                </div>
-                
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700 hover:text-gold transition-colors" aria-label="Open menu" aria-expanded="false">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
+                    <a href="/tax-strategies" class="nav-link nav-link-active">Tax Strategies</a>
+                    <a href="/compare" class="nav-link">Compare</a>
+                    <a href="/tools" class="nav-link">Tools</a>
+                    <a href="/blog" class="nav-link">Blog</a>
             </div>
-            
-            <!-- Mobile Navigation -->
-            <div id="mobile-menu" class="hidden md:hidden pb-6 border-t border border-gold mt-4 pt-4">
-                <div class="flex flex-col gap-4">
-                    <a href="/" class="nav-link">Home</a>
+            <button id="mobile-menu-btn" class="site-nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            </button>
+            <div id="mobile-menu" class="site-nav-mobile hidden">
+                <a href="/" class="nav-link">Home</a>
                     <a href="/about" class="nav-link">About</a>
-                    <a href="/tax-strategies/" class="nav-link">Tax Strategies</a>
-                    <a href="/compare/" class="nav-link">Compare</a>
-                    <a href="/tools/" class="nav-link">Tools</a>
-                    <a href="/worksheets/" class="nav-link">Worksheets</a>
-                    <a href="/blog/" class="nav-link">Blog</a>
-                </div>
+                    <a href="/tax-strategies" class="nav-link nav-link-active">Tax Strategies</a>
+                    <a href="/compare" class="nav-link">Compare</a>
+                    <a href="/tools" class="nav-link">Tools</a>
+                    <a href="/blog" class="nav-link">Blog</a>
             </div>
         </nav>
     </header>
 
     <!-- Breadcrumb Navigation -->
-    <nav aria-label="Breadcrumb" class="container-custom pt-24 pb-4">
+    <nav aria-label="Breadcrumb" class="container-custom">
         <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
             <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                 <a href="/" class="breadcrumb__link" itemprop="item"><span itemprop="name">Home</span></a>
@@ -681,40 +308,28 @@
         <!-- Hero Section -->
         <section class="strategy-hero">
             <div class="container-custom">
-                <span class="strategy-badge">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                    </svg>
-                    Tax Strategy
-                </span>
                 <h1 class="strategy-title">State Tax Residency</h1>
-                <p class="strategy-subtitle">Legally reduce your state income tax burden by establishing residency in a low-tax or no-tax state</p>
+                <p class="guide-deck">Legally reduce your state income tax burden by establishing residency in a low-tax or no-tax state</p>
 
-                <div class="stats-grid">
-                    <div class="stat-box">
-                        <div class="stat-box__label">Potential Savings</div>
-                        <div class="stat-box__value stat-box__value--highlight">Up to 13.3% annually</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-box__label">Complexity</div>
-                        <div class="stat-box__value">Moderate to Advanced</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-box__label">Professional Required</div>
-                        <div class="stat-box__value">Highly Recommended</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-box__label">Implementation Time</div>
-                        <div class="stat-box__value">6-12 months</div>
-                    </div>
-                </div>
-                <div class="irs-reference">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                        <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
-                    </svg>
-                    IRS Reference: IRC Section 11-02(d) Domicile Determination
-                </div>
+                <dl class="guide-dl">
+                        <div>
+                            <dt>Potential Savings</dt>
+                            <dd>Up to 13.3% annually</dd>
+                        </div>
+                        <div>
+                            <dt>Complexity</dt>
+                            <dd>Moderate to Advanced</dd>
+                        </div>
+                        <div>
+                            <dt>Professional Required</dt>
+                            <dd>Highly Recommended</dd>
+                        </div>
+                        <div>
+                            <dt>Implementation Time</dt>
+                            <dd>6-12 months</dd>
+                        </div>
+                    </dl>
+                <p class="guide-hero__meta">IRS Reference: IRC Section 11-02(d) Domicile Determination</p>
             </div>
         </section>
 
@@ -739,7 +354,7 @@
                         <h2>Section 2: Why This Strategy Matters—The Financial Impact</h2>
                         <p>For high-income earners, the savings from state tax residency planning are staggering. Consider a hypothetical $1 million earner in California:</p>
 
-                        <table class="comparison-table">
+                        <div class="table-scroll"><table class="comparison-table">
                             <thead>
                                 <tr>
                                     <th>Income Level</th>
@@ -768,7 +383,7 @@
                                     <td>$266,000</td>
                                 </tr>
                             </tbody>
-                        </table>
+                        </table></div>
 
                         <p>Over 10 years, a $1 million earner saves $1.33 million by establishing Florida residency instead of maintaining California domicile. Over 30 years of career and retirement, these savings compound dramatically. This isn't tax evasion—it's tax planning within the law.</p>
 
@@ -1027,7 +642,7 @@
 
                     </div>
 
-                    <aside class="sidebar">
+                    <aside class="guide-rail">
                         <div class="sidebar-card">
                             <h3 class="sidebar-card__title">Who This Strategy Benefits</h3>
                             <ul class="benefits-list">
@@ -1116,10 +731,10 @@
                             </ul>
                         </div>
 
-                        <div class="sidebar-card" style="background: #ecfdf5;">
+                        <div class="sidebar-card">
                             <h3 class="sidebar-card__title">Ready to Save on Taxes?</h3>
-                            <p style="font-size: 0.875rem; color: #4b5563; margin-bottom: 1rem;">Learn how to implement this and other tax strategies in Preston's wealth-building programs.</p>
-                            <a href="/blog/" style="display: inline-block; padding: 0.75rem 1.5rem; background: #10b981; color: white; font-weight: 600; border-radius: 0.5rem; text-decoration: none; font-size: 0.875rem;">View Resources</a>
+                            <p style="font-size: 0.875rem; color: #4b5563; margin-bottom: 1rem">Learn how to implement this and other tax strategies in Preston's wealth-building programs.</p>
+                            <a href="/blog/" style="display: inline-block; padding: 0.75rem 1.5rem; background: var(--gold); color: var(--navy); font-weight: 600; border-radius: 0.5rem; text-decoration: none; font-size: 0.875rem">View Resources</a>
                         </div>
                     </aside>
                 </div>
@@ -1133,7 +748,7 @@
                 <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="true" aria-controls="faq-answer-0">
+                        <button class="faq-toggle" aria-expanded="true" aria-controls="faq-answer-0">
                             <span itemprop="name">What is the difference between domicile and residency?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
@@ -1145,169 +760,169 @@
                     </div>
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+                        <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-1">
                             <span itemprop="name">How many days do I need to spend in a state to establish residency?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer " id="faq-answer-1" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer" id="faq-answer-1" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <p itemprop="text">Most states use the 183-day rule: if you spend more than 183 days in a state, you may be considered a resident. However, this rule varies significantly by state. Some states are more aggressive in claiming residents based on part-year presence, while others focus more on your domicile.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+                        <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-2">
                             <span itemprop="name">Can I establish residency in a no-income-tax state while working remotely?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer " id="faq-answer-2" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer" id="faq-answer-2" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <p itemprop="text">Yes, if you establish proper residency requirements and have genuine connections to a no-income-tax state, you can reduce your state income tax burden regardless of where your employer is located. Many states like Florida, Texas, and Wyoming have no income tax. However, you must have legitimate ties to these states and not be maintaining your primary residence elsewhere.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+                        <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-3">
                             <span itemprop="name">What documentation do I need to prove residency?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer " id="faq-answer-3" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer" id="faq-answer-3" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <p itemprop="text">Essential documentation includes: driver's license, voter registration, property ownership or lease agreement, utility bills, bank account statements showing local address, vehicle registration, healthcare provider records, and cell phone bills. The more contemporaneous documentation you have, the stronger your residency claim.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+                        <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-4">
                             <span itemprop="name">Can states challenge my residency claim after I establish it?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer " id="faq-answer-4" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer" id="faq-answer-4" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <p itemprop="text">Yes. States actively audit residency claims, especially for high-income individuals. If you maintained significant ties to your former state (home, family, business operations), states may pursue you for back taxes. This is why proper planning and documentation is essential.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+                        <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-5">
                             <span itemprop="name">What is the 'convenience of the employer' rule?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer " id="faq-answer-5" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer" id="faq-answer-5" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <p itemprop="text">Some states use the 'convenience of the employer' test, which means if you're working remotely but your employer's office is in the state, you may be taxed there anyway. States like New York used to enforce this aggressively. This is why changing your residency should be done strategically if you still have employer connections to high-tax states.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
+                        <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-6">
                             <span itemprop="name">Are there states that specifically tax non-residents for remote work?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer " id="faq-answer-6" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer" id="faq-answer-6" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <p itemprop="text">Yes, several states attempted to tax non-residents working remotely during and after the pandemic. These include states like New York, Connecticut, and Maryland. However, courts and legislatures have gradually restricted these practices, recognizing they create unconstitutional double taxation issues under the dormant Commerce Clause.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-7">
+                        <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-7">
                             <span itemprop="name">How long should I wait before moving to establish residency credibility?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer " id="faq-answer-7" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer" id="faq-answer-7" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <p itemprop="text">You should generally wait 6-12 months of establishing all residency connections before claiming the new state as your domicile on your tax return. This creates a documentation trail that demonstrates genuine intent. However, consult a tax professional, as requirements vary by state.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-8">
+                        <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-8">
                             <span itemprop="name">Do high-income earners face more scrutiny?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer " id="faq-answer-8" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer" id="faq-answer-8" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <p itemprop="text">Absolutely. States focus audit resources on high-income individuals changing residency, especially from high-tax to no-tax states. If you're earning $500,000+, expect scrutiny. States use sophisticated tracking to identify people with significant ties to their former state.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-9">
+                        <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-9">
                             <span itemprop="name">What happens if I'm caught claiming false residency?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer " id="faq-answer-9" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer" id="faq-answer-9" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <p itemprop="text">Penalties can be severe: back taxes, interest (often 5-10%), negligence penalties (20%), and potentially fraud penalties up to 75% in egregious cases. Additionally, you may face criminal prosecution for tax evasion. This is why genuine residency establishment is critical.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-10">
+                        <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-10">
                             <span itemprop="name">Can I split residency between two states?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer " id="faq-answer-10" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer" id="faq-answer-10" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <p itemprop="text">No, for tax purposes you can only claim one domicile. However, you can be a resident of multiple states if you have significant ties to each. If you're claimed as a resident of multiple states, you'll pay taxes accordingly, but you may be able to claim tax credits to avoid double taxation.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-11">
+                        <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-11">
                             <span itemprop="name">Which states have no income tax?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer " id="faq-answer-11" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer" id="faq-answer-11" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <p itemprop="text">States with no income tax include: Alaska, Florida, Nevada, South Dakota, Tennessee, Texas, Washington, and Wyoming. Some states like New Hampshire and Tennessee don't tax wages but tax other income. These states are popular for residency planning, especially for high earners.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-12">
+                        <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-12">
                             <span itemprop="name">Do I need an accountant to establish residency?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer " id="faq-answer-12" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer" id="faq-answer-12" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <p itemprop="text">While not strictly required for simply moving, working with a CPA or tax attorney is highly recommended for high-income earners. They can help you navigate the documentation requirements and ensure your residency strategy complies with state tax laws and doesn't trigger audits.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-13">
+                        <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-13">
                             <span itemprop="name">Can I maintain my old state's residency for dual benefits?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer " id="faq-answer-13" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer" id="faq-answer-13" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <p itemprop="text">No, and attempting this is a common audit trigger. Once you establish residency in a new state, you must formally release residency in your old state, typically by obtaining a nonresident tax return filing requirement and updating your documentation. States actively track this through cross-state data matching.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-14">
+                        <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-14">
                             <span itemprop="name">What role does real estate ownership play in residency?</span>
                             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
-                        <div class="faq-answer " id="faq-answer-14" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer" id="faq-answer-14" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <p itemprop="text">Maintaining a home in your former state while claiming residency in a new state is a major audit red flag. States closely examine whether you maintain property, whether family members live there, and whether you return frequently. Selling your old state home strengthens your new residency claim significantly.</p>
                         </div>
                     </div>
@@ -1319,59 +934,54 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-navy text-white py-12" role="contentinfo">
+    <footer class="site-footer" role="contentinfo">
         <div class="container-custom">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
-                <!-- Brand -->
-                <div>
-                    <div class="flex items-center gap-2 mb-4">
-                        <img src="/assets/images/logo.png" alt="Legacy Investing Show" width="32" height="32">
-                        <span class="font-semibold">Legacy Investing Show</span>
-                    </div>
-                    <p class="text-cream-dark text-sm">Building generational wealth through real estate and tax strategies.</p>
+            <div class="site-footer-grid">
+                <div class="site-footer-brand">
+                    <a href="/" class="site-brand"><img src="/assets/images/logo-240.webp" alt="" width="62" height="28"><span>Legacy Investing Show</span></a>
+                    <p>Tax strategy, wealth systems, and practical decision tools for professionals, investors, and founders.</p>
                 </div>
-                
-                
-                <!-- Resources -->
-                <div>
-                    <h4 class="font-semibold mb-4">Resources</h4>
-                    <ul class="space-y-2 text-sm text-cream-dark">
-                        <li><a href="/tax-strategies/" class="hover:text-gold">Tax Strategies</a></li>
-                        <li><a href="/retirement/401k-contribution-strategies" class="hover:text-gold">401(k) Strategies</a></li>
-                        <li><a href="/blog/" class="hover:text-gold">Success Stories</a></li>
-                        <li><a href="/blog/" class="hover:text-gold">Resources</a></li>
+                <div class="site-footer-group">
+                    <h2>Guides</h2>
+                    <ul>
+                        <li><a href="/tax-strategies">Tax strategies</a></li>
+                        <li><a href="/compare">Compare guides</a></li>
+                        <li><a href="/topics">Topics</a></li>
+                        <li><a href="/markets">City market guides</a></li>
+                        <li><a href="/renters-insurance">Renters insurance by state</a></li>
                     </ul>
                 </div>
-                
-                <!-- Company -->
-                <div>
-                    <h4 class="font-semibold mb-4">Company</h4>
-                    <ul class="space-y-2 text-sm text-cream-dark">
-                        <li><a href="/about" class="hover:text-gold">About</a></li>
-                        <li><a href="/success-stories" class="hover:text-gold">Results</a></li>
+                <div class="site-footer-group">
+                    <h2>Tools</h2>
+                    <ul>
+                        <li><a href="/tools">Free calculators</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer-group">
+                    <h2>Company</h2>
+                    <ul>
+                        <li><a href="/about">About Preston Seo</a></li>
+                        <li><a href="/success-stories">Student results</a></li>
+                        <li><a href="/privacy">Privacy</a></li>
+                        <li><a href="/terms">Terms</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="border-t border-gray-800 pt-8 text-center text-sm text-muted">
-                Copyright 2026 Legacy Investing Show. All rights reserved.
-            </div>
+            <p class="site-footer-legal">&copy; 2026 Legacy Investing Show. Educational content, not individual tax, legal, or investment advice.</p>
         </div>
     </footer>
 
     <script defer src="/assets/js/main.js"></script>
     <script>
-        // FAQ accordion
-        document.querySelectorAll('.faq-question').forEach(button => {
-            button.addEventListener('click', () => {
-                const expanded = button.getAttribute('aria-expanded') === 'true';
-                button.setAttribute('aria-expanded', !expanded);
-                button.nextElementSibling.classList.toggle('faq-answer--open');
+        document.querySelectorAll('.faq-toggle').forEach(function (button) {
+            button.addEventListener('click', function () {
+                var expanded = button.getAttribute('aria-expanded') === 'true';
+                button.setAttribute('aria-expanded', String(!expanded));
+                if (button.nextElementSibling) {
+                    button.nextElementSibling.classList.toggle('faq-answer--open');
+                }
             });
-        });
-
-        // Mobile menu
-        document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
         });
     </script>
 </body>

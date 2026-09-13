@@ -3,11 +3,11 @@
 const fs = require('fs');
 const path = require('path');
 const {
-    CURRENT_YEAR,
     renderAnalyticsBody,
     renderAnalyticsHead,
-    renderFooterLinks,
-    renderPrimaryNavLinks,
+    renderHeadAssets,
+    renderSiteFooter,
+    renderSiteHeader,
 } = require('./lib/site-shell');
 const {
     siteUrl,
@@ -524,22 +524,7 @@ function loadRentersGuides() {
 }
 
 function renderHeader(activeHref) {
-    return `<header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
-    <nav class="container-custom" aria-label="Main navigation">
-        <div class="flex items-center justify-between gap-4 min-h-[4rem] py-3">
-            <a href="/" class="flex items-center gap-2 font-medium text-gray-900 hover:text-gray-700 transition-colors">
-                <img src="/assets/images/logo.png" alt="Legacy Investing Show logo" width="28" height="28" class="w-7 h-7">
-                <span>Legacy Investing Show</span>
-            </a>
-            <div class="hidden lg:flex items-center gap-4">
-                ${renderPrimaryNavLinks(activeHref)}
-            </div>
-        </div>
-        <div class="lg:hidden flex flex-wrap gap-3 pb-3 text-sm">
-            ${renderPrimaryNavLinks(activeHref)}
-        </div>
-    </nav>
-</header>`;
+    return renderSiteHeader(activeHref);
 }
 
 function indefiniteArticle(word) {
@@ -547,310 +532,12 @@ function indefiniteArticle(word) {
     return 'aeiou'.includes(first) ? 'an' : 'a';
 }
 
-function renderFooter(disclaimer) {
-    const legal = disclaimer
-        || 'Educational content only. Verify tax decisions with a qualified advisor.';
-    return `<footer class="bg-gray-900 text-white py-12">
-    <div class="container-custom grid gap-10 md:grid-cols-3">
-        <div>
-            <h2 class="text-lg font-semibold mb-3">Legacy Investing Show</h2>
-            <p class="text-gray-400 text-sm leading-7">Educational planning frameworks for tax, real estate, retirement, and wealth decisions.</p>
-        </div>
-        <div>
-            <h2 class="text-lg font-semibold mb-3">Resources</h2>
-            <div class="grid gap-2 text-sm text-gray-300">
-                ${renderFooterLinks()}
-            </div>
-        </div>
-        <div>
-            <h2 class="text-lg font-semibold mb-3">Next Steps</h2>
-            <div class="grid gap-2 text-sm text-gray-300">
-                <a href="/programs">Programs</a>
-                <a href="/success-stories">Success Stories</a>
-                <a href="/about">About Preston Seo</a>
-            </div>
-        </div>
-    </div>
-    <div class="container-custom border-t border-gray-800 mt-8 pt-8 text-sm text-gray-400">
-        <p>&copy; ${CURRENT_YEAR} Legacy Investing Show. ${esc(legal)}</p>
-    </div>
-</footer>`;
+function renderFooter() {
+    return renderSiteFooter();
 }
 
 function renderStyles() {
-    return `<style>
-        .resource-main {
-            padding-top: 5rem;
-        }
-        .resource-hero {
-            padding: 4.5rem 0 3rem;
-            background:
-                radial-gradient(circle at top right, rgba(5, 150, 105, 0.18), transparent 28%),
-                linear-gradient(180deg, #ecfdf5 0%, #ffffff 100%);
-        }
-        .eyebrow {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.4rem 0.8rem;
-            border-radius: 999px;
-            background: rgba(5, 150, 105, 0.08);
-            color: #047857;
-            font-size: 0.75rem;
-            font-weight: 700;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-        }
-        .eyebrow::before {
-            content: "";
-            width: 0.5rem;
-            height: 0.5rem;
-            border-radius: 999px;
-            background: #10b981;
-        }
-        .hero-title {
-            margin-top: 1rem;
-            font-size: clamp(2.1rem, 5vw, 4rem);
-            line-height: 1.02;
-            letter-spacing: -0.04em;
-            color: #111827;
-            max-width: 14ch;
-        }
-        .hero-copy {
-            margin-top: 1rem;
-            max-width: 48rem;
-            color: #4b5563;
-            font-size: 1.05rem;
-            line-height: 1.75;
-        }
-        .hero-grid,
-        .section-grid,
-        .card-grid,
-        .faq-grid {
-            display: grid;
-            gap: 1.5rem;
-        }
-        .hero-grid {
-            grid-template-columns: 1.8fr 1fr;
-            align-items: start;
-        }
-        .section-grid {
-            grid-template-columns: 1.35fr 1fr;
-            align-items: start;
-        }
-        .surface,
-        .info-card,
-        .stack-card,
-        .faq-card {
-            background: white;
-            border: 1px solid #e5e7eb;
-            border-radius: 1rem;
-            box-shadow: 0 12px 30px rgba(15, 23, 42, 0.04);
-        }
-        .surface {
-            padding: 1.5rem;
-        }
-        .hero-panel {
-            padding: 1.4rem;
-            background: rgba(255, 255, 255, 0.84);
-            border: 1px solid rgba(16, 185, 129, 0.18);
-            border-radius: 1rem;
-            box-shadow: 0 12px 30px rgba(16, 185, 129, 0.08);
-        }
-        .hero-panel h2 {
-            font-size: 0.95rem;
-            font-weight: 700;
-            color: #111827;
-            margin-bottom: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 0.06em;
-        }
-        .hero-panel p,
-        .hero-panel li {
-            color: #4b5563;
-            line-height: 1.7;
-            font-size: 0.95rem;
-        }
-        .hero-panel ul,
-        .checklist,
-        .bullet-list {
-            margin: 0;
-            padding-left: 1.1rem;
-        }
-        .section {
-            padding: 3.5rem 0;
-        }
-        .section--alt {
-            background: #f8fafc;
-        }
-        .section-title {
-            font-size: clamp(1.6rem, 3vw, 2.25rem);
-            line-height: 1.1;
-            color: #111827;
-            letter-spacing: -0.03em;
-            margin-bottom: 1rem;
-        }
-        .section-copy,
-        .surface p,
-        .info-card p,
-        .stack-card p,
-        .faq-card p {
-            color: #4b5563;
-            line-height: 1.8;
-        }
-        .meta-strip {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.75rem;
-            margin-top: 1.5rem;
-        }
-        .meta-pill {
-            padding: 0.6rem 0.85rem;
-            border-radius: 999px;
-            background: #f3f4f6;
-            color: #374151;
-            font-size: 0.875rem;
-            font-weight: 600;
-        }
-        .card-grid {
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        }
-        .info-card,
-        .stack-card,
-        .faq-card {
-            padding: 1.25rem;
-        }
-        .info-card h3,
-        .stack-card h3,
-        .faq-card h3 {
-            font-size: 1.05rem;
-            color: #111827;
-            margin-bottom: 0.65rem;
-        }
-        .stack-card__index {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 2rem;
-            height: 2rem;
-            border-radius: 999px;
-            background: #dcfce7;
-            color: #047857;
-            font-size: 0.85rem;
-            font-weight: 700;
-            margin-bottom: 0.85rem;
-        }
-        .stack-card__link,
-        .inline-link {
-            color: #047857;
-            font-weight: 700;
-            text-decoration: none;
-        }
-        .stack-card__link:hover,
-        .inline-link:hover {
-            text-decoration: underline;
-        }
-        .comparison-table {
-            width: 100%;
-            border-collapse: collapse;
-            background: white;
-            border-radius: 1rem;
-            overflow: hidden;
-            border: 1px solid #e5e7eb;
-        }
-        .comparison-table th,
-        .comparison-table td {
-            padding: 1rem;
-            text-align: left;
-            vertical-align: top;
-            border-bottom: 1px solid #e5e7eb;
-        }
-        .comparison-table th {
-            background: #111827;
-            color: white;
-            font-size: 0.875rem;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-        }
-        .comparison-table tr:nth-child(even) td {
-            background: #f8fafc;
-        }
-        .cta-box {
-            padding: 2rem;
-            border-radius: 1.25rem;
-            background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
-            color: white;
-        }
-        .cta-box p {
-            color: #d1d5db;
-            line-height: 1.8;
-        }
-        .cta-actions {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.85rem;
-            margin-top: 1.25rem;
-        }
-        .cta-button,
-        .ghost-button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0.9rem 1.25rem;
-            border-radius: 999px;
-            text-decoration: none;
-            font-weight: 700;
-        }
-        .cta-button {
-            background: #10b981;
-            color: white;
-        }
-        .ghost-button {
-            background: rgba(255, 255, 255, 0.08);
-            color: white;
-            border: 1px solid rgba(255, 255, 255, 0.18);
-        }
-        .resource-list,
-        .hub-list {
-            display: grid;
-            gap: 0.9rem;
-            margin-top: 1.25rem;
-        }
-        .resource-list a,
-        .hub-list a {
-            display: block;
-            padding: 1rem 1.1rem;
-            border-radius: 0.9rem;
-            border: 1px solid #e5e7eb;
-            background: white;
-            color: #111827;
-            text-decoration: none;
-            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
-        }
-        .resource-list strong,
-        .hub-list strong {
-            display: block;
-            margin-bottom: 0.3rem;
-        }
-        .resource-list span,
-        .hub-list span {
-            color: #4b5563;
-            font-size: 0.95rem;
-            line-height: 1.65;
-        }
-        .hub-list {
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        }
-        @media (max-width: 1024px) {
-            .hero-grid,
-            .section-grid {
-                grid-template-columns: 1fr;
-            }
-            .hero-title {
-                max-width: none;
-            }
-        }
-    </style>`;
+    return '<link rel="stylesheet" href="/assets/css/guides.css">';
 }
 
 function renderHead(config) {
@@ -860,7 +547,7 @@ function renderHead(config) {
         canonical,
         keywords,
         schemaBlocks,
-        image = 'https://www.legacyinvestingshow.com/assets/images/logo.png',
+        image = 'https://www.legacyinvestingshow.com/assets/images/og-image.jpg',
         type = 'article',
     } = config;
 
@@ -887,27 +574,55 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
     <meta name="twitter:description" content="${esc(description)}">
     <meta name="twitter:image" content="${esc(image)}">
 
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#FAF7F2">
     <link rel="icon" type="image/png" href="/assets/images/logo.png">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    ${renderAnalyticsHead({ gaTrackingId: GA_TRACKING_ID, gtmContainerId: GTM_CONTAINER_ID })}
+    ${renderHeadAssets()}
     ${renderStyles()}
+    ${renderAnalyticsHead({ gaTrackingId: GA_TRACKING_ID, gtmContainerId: GTM_CONTAINER_ID })}
 ${schemaBlocks.map((schema) => `    <script type="application/ld+json">${JSON.stringify(schema)}</script>`).join('\n')}
 </head>`;
 }
 
+function renderBreadcrumbNav(trail) {
+    const items = trail.map((item, index) => {
+        const isLast = index === trail.length - 1;
+        if (isLast || !item.href) {
+            return `                <li class="breadcrumb__item"><span class="breadcrumb__current">${esc(item.name)}</span></li>`;
+        }
+        return `                <li class="breadcrumb__item"><a href="${esc(item.href)}" class="breadcrumb__link">${esc(item.name)}</a></li>`;
+    }).join('\n');
+
+    return `    <div class="container-custom">
+        <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb">
+${items}
+            </ol>
+        </nav>
+    </div>`;
+}
+
 function renderLayout(page) {
+    const disclaimer = page.disclaimer
+        || 'Educational content only. Verify tax decisions with a qualified advisor.';
+
     return `<!DOCTYPE html>
 <html lang="en">
 ${renderHead(page)}
-<body class="bg-white text-gray-900" data-page-type="${esc(page.pageType)}" data-page-title="${esc(page.title)}">
+<body class="guide-page" data-page-type="${esc(page.pageType)}" data-page-title="${esc(page.title)}">
     ${renderAnalyticsBody({ gtmContainerId: GTM_CONTAINER_ID })}
-    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-gray-900 text-white px-4 py-2 z-50">Skip to main content</a>
+    <a href="#main" class="guide-skip">Skip to main content</a>
     ${renderHeader(page.activeHref || '/tax-strategies')}
-    <main id="main" class="resource-main">
+${page.breadcrumbNav || ''}
+    <main id="main">
         ${page.body}
+        <section class="guide-section--tight">
+            <div class="container-custom">
+                <p class="guide-row__note">${esc(disclaimer)}</p>
+            </div>
+        </section>
     </main>
-    ${renderFooter(page.disclaimer)}
+    ${renderFooter()}
+    <script defer src="/assets/js/main.js"></script>
 </body>
 </html>`;
 }
@@ -1042,19 +757,17 @@ function cityResourcePlan(cityContext) {
     return [...base, 'short-term-rental-loophole', 's-corp-strategy'];
 }
 
-function renderResourceCards(resources, strategyMap, reasons) {
+function renderResourceRows(resources, strategyMap, reasons) {
     return resources
         .map((resource, index) => {
             const resolved = resolveResource(resource, strategyMap);
             const reason = reasons[index] || resolved.description;
-            return `<article class="stack-card">
-                <div class="stack-card__index">0${index + 1}</div>
-                <h3>${esc(resolved.title)}</h3>
-                <p>${esc(reason)}</p>
-                <a class="stack-card__link" href="${esc(resolved.href)}">Open resource</a>
-            </article>`;
+            return `                        <li>
+                            <h3 class="guide-row__title"><a href="${esc(resolved.href)}">${esc(resolved.title)}</a></h3>
+                            <p>${esc(reason)}</p>
+                        </li>`;
         })
-        .join('');
+        .join('\n');
 }
 
 function renderList(items, className) {
@@ -1110,102 +823,71 @@ function renderCityPage(cityData, strategyMap) {
         .map((entry) => ({
             name: `${entry.city}, ${entry.state}`,
             href: marketPath(slugForCity(entry.city, entry.state)),
-            description: `See how the planning lens shifts in ${entry.city} with a different demand mix and operator profile.`,
+            description: (CITY_CONTEXT[slugForCity(entry.city, entry.state)] || {}).bestFit
+                || `${entry.city} runs on a different demand mix and operator profile.`,
         }));
     const faqItems = buildCityFaqs(cityData, cityContext, cityLocal);
-    const body = `<section class="resource-hero">
-    <div class="container-custom hero-grid">
-        <div>
-            <span class="eyebrow">${esc(cityData.region)} market guide</span>
-            <h1 class="hero-title">${esc(title)}</h1>
-            <p class="hero-copy">${esc(cityContext.summary)} ${esc(cityContext.bestFit)}</p>
-            <div class="meta-strip">
-                <span class="meta-pill">${esc(cityData.notes)}</span>
-            </div>
-        </div>
-        <aside class="hero-panel">
-            <h2>What this page helps you decide</h2>
-            <p>${esc(stateContext.taxLens)}</p>
-            ${renderList(cityContext.demandDrivers, 'bullet-list')}
-        </aside>
+    const body = `<section class="guide-hero">
+    <div class="container-custom">
+        <h1 class="guide-hero__title">${esc(cityData.city)}, ${esc(cityData.state)} tax strategy guide</h1>
+        <p class="guide-deck">${esc(cityContext.summary)} ${esc(cityContext.bestFit)}</p>
     </div>
 </section>
 
-<section class="section">
-    <div class="container-custom section-grid">
-        <div class="surface">
-            <h2 class="section-title">What makes ${esc(cityData.city)} different</h2>
-            <p>${esc(cityContext.summary)}</p>
+<section class="guide-section">
+    <div class="container-custom">
+        <div class="guide-prose">
+            <h2>What makes ${esc(cityData.city)} different</h2>
             <p>${esc(stateContext.executionFocus)}</p>
-            <p>Use this page as a market-specific filter: decide whether the demand drivers, local friction, and documentation burden fit the strategy stack you want to use.</p>
+            <p>${esc(stateContext.taxLens)}</p>
             ${cityLocal.taxReality ? `<p>${esc(cityLocal.taxReality)}</p>` : ''}
             ${cityLocal.operatorDay ? `<p>${esc(cityLocal.operatorDay)}</p>` : ''}
-        </div>
-        <div class="surface">
-            <h2 class="section-title">Execution checklist</h2>
+            <h3>What drives demand here</h3>
+            ${renderList(cityContext.demandDrivers, 'bullet-list')}
+
+            <h2>Execution checklist</h2>
             ${renderList(stateContext.checklist, 'checklist')}
-        </div>
-    </div>
-</section>
 
-<section class="section section--alt">
-    <div class="container-custom">
-        <h2 class="section-title">Recommended strategy stack for ${esc(cityData.city)}</h2>
-        <p class="section-copy">These are not ranked by hype. They are ranked by how often they matter once you combine the market profile, the likely operator type, and the amount of documentation required to defend the move.</p>
-        <div class="card-grid">
-            ${renderResourceCards(resources, strategyMap, resourceReasons)}
-        </div>
-    </div>
-</section>
+            <h2>Strategy stack for ${esc(cityData.city)}</h2>
+            <p>Ranked by how often each one matters once you combine the market profile, the likely operator type, and the documentation required to defend the move.</p>
+            <ul class="guide-rows">
+${renderResourceRows(resources, strategyMap, resourceReasons)}
+            </ul>
 
-<section class="section">
-    <div class="container-custom section-grid">
-        <div class="surface">
-            <h2 class="section-title">Where investors usually get hurt</h2>
+            <h2>Where investors usually get hurt</h2>
             ${renderList(cityContext.watchouts, 'bullet-list')}
-            <p style="margin-top:1rem;">The goal is not to avoid tax strategy. The goal is to avoid using tax strategy as a substitute for underwriting, local rule review, or operator discipline.</p>
-        </div>
-        <div class="surface">
-            <h2 class="section-title">What to do in the next 90 days</h2>
-            <ol class="checklist">
+            <p>The goal is not to avoid tax strategy. It is to avoid using tax strategy as a substitute for underwriting, local rule review, or operator discipline.</p>
+
+            <h2>What to do in the next 90 days</h2>
+            <ol>
                 <li>Write the base-case occupancy and rate assumptions for ${esc(cityData.city)} without using peak periods as the baseline.</li>
                 <li>Choose the one deduction or entity question that actually changes your next decision.</li>
                 <li>Build the audit file now: receipts, vendor records, local compliance notes, and property-level bookkeeping.</li>
-                <li>Review the plan with a CPA only after the operating facts are assembled cleanly.</li>
+                <li>Review the plan with a CPA once the operating facts are assembled cleanly.</li>
             </ol>
+
+            <h2>Questions people ask before filing</h2>
+            <dl class="guide-faq">
+${faqItems.map((item) => `                <dt>${esc(item.question)}</dt>
+                <dd>${esc(item.answer)}</dd>`).join('\n')}
+            </dl>
+
+            <h2>Related guides</h2>
+            <ul class="guide-linklist">
+${nearbyCities.map((entry) => `                <li><a href="${esc(entry.href)}">${esc(entry.name)}</a> — ${esc(entry.description)}</li>`).join('\n')}
+                <li><a href="/tax-strategies">Tax strategy library</a> — every strategy guide in one table.</li>
+                <li><a href="/markets">All city guides</a> — the rest of the market pages.</li>
+            </ul>
         </div>
     </div>
 </section>
 
-<section class="section section--alt">
+<section class="cta-band">
     <div class="container-custom">
-        <h2 class="section-title">Related city and strategy resources</h2>
-        <div class="hub-list">
-            ${nearbyCities.map((entry) => `<a href="${esc(entry.href)}"><strong>${esc(entry.name)}</strong><span>${esc(entry.description)}</span></a>`).join('')}
-            <a href="/tax-strategies"><strong>Tax Strategies Hub</strong><span>Review the main strategy library before you choose a city-specific angle.</span></a>
-            <a href="/blog"><strong>Blog and case studies</strong><span>See how operators and investors apply these decisions in real scenarios.</span></a>
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container-custom">
-        <h2 class="section-title">Questions people ask before filing</h2>
-        <div class="faq-grid">
-            ${faqItems.map((item) => `<article class="faq-card"><h3>${esc(item.question)}</h3><p>${esc(item.answer)}</p></article>`).join('')}
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container-custom">
-        <div class="cta-box">
-            <h2 class="section-title" style="color:white;">Need a city-specific second opinion?</h2>
-            <p>Use this market lens to narrow the real questions first, then take the final structure, participation, and filing questions to an advisor who can review your facts.</p>
-            <div class="cta-actions">
-                <a class="cta-button" href="/tax-strategies-101">See programs</a>
-                <a class="ghost-button" href="/tax-strategies">Open tax strategy hub</a>
-            </div>
+        <h2>Take the narrowed question to an advisor</h2>
+        <p>A market guide should shrink the question, not answer it. Bring the property-level file and the one structure or participation question that is still open.</p>
+        <div class="cta-band-actions">
+            <a href="/tax-strategies" class="btn-primary">Open the tax strategy library</a>
         </div>
     </div>
 </section>`;
@@ -1225,6 +907,11 @@ function renderCityPage(cityData, strategyMap) {
             faqSchema(faqItems),
         ],
         pageType: 'market_city',
+        breadcrumbNav: renderBreadcrumbNav([
+            { name: 'Home', href: '/' },
+            { name: 'Market guides', href: marketPath() },
+            { name: `${cityData.city}, ${cityData.state}` },
+        ]),
         body,
     });
 
@@ -1240,55 +927,34 @@ function renderMarketsHub(cities) {
         url: marketPath(slugForCity(city.city, city.state)),
         summary: CITY_CONTEXT[slugForCity(city.city, city.state)].summary,
     }));
-    const body = `<section class="resource-hero">
-    <div class="container-custom hero-grid">
-        <div>
-            <span class="eyebrow">Market guides</span>
-            <h1 class="hero-title">${esc(title)}</h1>
-            <p class="hero-copy">These pages exist because a deduction stack that works in Austin can fail in Miami. Local rules, insurance, seasonality, and stay-length mix change the operating facts before they change the tax return.</p>
-        </div>
-        <aside class="hero-panel">
+    const body = `<section class="guide-hero">
+    <div class="container-custom">
+        <h1 class="guide-hero__title">City tax strategy guides</h1>
+        <p class="guide-deck">A deduction stack that works in Austin can fail in Miami. Local rules, insurance, seasonality, and stay-length mix change the operating facts before they change the tax return.</p>
+    </div>
+</section>
+
+<section class="guide-section">
+    <div class="container-custom">
+        <div class="guide-prose">
             <h2>How to use these guides</h2>
-            <p>Pick the city you are actually underwriting. Then read the operating facts before you open a strategy page.</p>
-            ${renderList([
-                'Start with demand and local rules, not with the largest deduction name.',
-                'Use the strategy stack as a filter, not as a shopping list.',
-                'Compare a neighboring city only after your base-case occupancy is written down.',
-            ], 'bullet-list')}
-        </aside>
-    </div>
-</section>
+            <p>Pick the city you are actually underwriting and read the operating facts before you open a strategy page. Start with demand and local rules rather than the largest deduction name, treat the strategy stack as a filter rather than a shopping list, and only compare a neighbouring city once your base-case occupancy is written down.</p>
 
-<section class="section">
-    <div class="container-custom">
-        <h2 class="section-title">City guides</h2>
-        <div class="hub-list">
-            ${cityEntries.map((entry) => `<a href="${esc(entry.url)}"><strong>${esc(entry.name)}</strong><span>${esc(entry.summary)}</span></a>`).join('')}
-        </div>
-    </div>
-</section>
+            <h2>City guides</h2>
+            <ul class="guide-rows">
+${cityEntries.map((entry) => `                <li>
+                    <h3 class="guide-row__title"><a href="${esc(entry.url)}">${esc(entry.name)}</a></h3>
+                    <p>${esc(entry.summary)}</p>
+                </li>`).join('\n')}
+            </ul>
 
-<section class="section section--alt">
-    <div class="container-custom">
-        <h2 class="section-title">Related decision pages</h2>
-        <div class="hub-list">
-            <a href="/tax-strategies"><strong>Tax strategy library</strong><span>Core deduction, entity, and real estate tax pages.</span></a>
-            <a href="/tax-strategies/for/airbnb-hosts"><strong>Tax strategies for Airbnb hosts</strong><span>The host-specific sequencing page, not a cloned market template.</span></a>
-            <a href="/compare"><strong>Compare guides</strong><span>Head-to-head decisions when two strategies both sound plausible.</span></a>
-            <a href="/renters-insurance"><strong>Renters insurance by state</strong><span>State-level premium baselines and local coverage notes.</span></a>
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container-custom">
-        <div class="cta-box">
-            <h2 class="section-title" style="color:white;">Use the city as a filter, then get specific</h2>
-            <p>A market guide should narrow the next question. Take that question to the strategy library or to a CPA with a property-level file, not with a screenshot of someone else's occupancy.</p>
-            <div class="cta-actions">
-                <a class="cta-button" href="/tax-strategies">Open tax strategy hub</a>
-                <a class="ghost-button" href="/blog">Open blog</a>
-            </div>
+            <h2>Related decision pages</h2>
+            <ul class="guide-linklist">
+                <li><a href="/tax-strategies">Tax strategy library</a> — core deduction, entity, and real estate tax pages.</li>
+                <li><a href="/tax-strategies/for/airbnb-hosts">Tax strategies for Airbnb hosts</a> — host-specific sequencing.</li>
+                <li><a href="/compare">Compare guides</a> — head-to-head when two strategies both sound plausible.</li>
+                <li><a href="/renters-insurance">Renters insurance by state</a> — state premium baselines and coverage notes.</li>
+            </ul>
         </div>
     </div>
 </section>`;
@@ -1307,6 +973,10 @@ function renderMarketsHub(cities) {
             ]),
         ],
         pageType: 'markets_hub',
+        breadcrumbNav: renderBreadcrumbNav([
+            { name: 'Home', href: '/' },
+            { name: 'Market guides' },
+        ]),
         body,
     });
 
@@ -1330,30 +1000,33 @@ function premiumProse(premium, usAverage) {
 }
 
 function renderPremiumTable(rows, usAverage) {
-    return `<table class="comparison-table">
+    return `<div class="table-scroll"><table class="guide-table">
         <thead>
             <tr>
-                <th>Location</th>
-                <th>Average annual premium</th>
-                <th>vs US average ($${usAverage})</th>
+                <th scope="col">Location</th>
+                <th scope="col">Average annual premium</th>
+                <th scope="col">vs US average ($${usAverage})</th>
             </tr>
         </thead>
         <tbody>
-            ${rows.map((row) => `<tr${row.highlight ? ' style="background: #ecfdf5;"' : ''}>
-                <td>${row.href ? `<a class="inline-link" href="${esc(row.href)}">${esc(row.name)}</a>` : esc(row.name)}</td>
+            ${rows.map((row) => `<tr>
+                <th scope="row">${row.href ? `<a class="inline-link" href="${esc(row.href)}">${esc(row.name)}</a>` : esc(row.name)}${row.highlight ? ' <span class="guide-row__note">(this page)</span>' : ''}</th>
                 <td>$${row.premium}</td>
                 <td>${esc(row.vs)}</td>
             </tr>`).join('\n            ')}
         </tbody>
-    </table>`;
+    </table></div>`;
 }
 
 function rentersGuide(abbreviation, guides) {
     return guides[abbreviation] || null;
 }
 
-function renderFaqCards(items) {
-    return items.map((item) => `<article class="faq-card"><h3>${esc(item.question || item.q)}</h3><p>${esc(item.answer || item.a)}</p></article>`).join('');
+function renderFaqList(items) {
+    return `<dl class="guide-faq">
+${items.map((item) => `                <dt>${esc(item.question || item.q)}</dt>
+                <dd>${esc(item.answer || item.a)}</dd>`).join('\n')}
+            </dl>`;
 }
 
 function normalizeFaqs(rawFaqs, fallback) {
@@ -1370,30 +1043,21 @@ function renderInsuranceHubPage(stateEntries, usEntry) {
     const canonical = siteUrl(rentersInsurancePath());
     const title = 'Average Renters Insurance Cost by State (2026)';
     const description = 'Compare average renters insurance costs in all 50 states and Washington, DC, against the $170 US average (NAIC 2021 baseline from the Insurance Information Institute).';
-    const body = `<section class="resource-hero">
-    <div class="container-custom hero-grid">
-        <div>
-            <span class="eyebrow">Insurance research</span>
-            <h1 class="hero-title">${esc(title)}</h1>
-            <p class="hero-copy">Renters insurance protects your stuff, your liability, and a hotel bill if a fire or burst pipe puts you out of the apartment. The US average in the NAIC 2021 baseline is about $${usAverage} a year. State pages below turn that table into local context: weather, landlord norms, and what a realistic quote fight looks like in that market.</p>
-        </div>
-        <aside class="hero-panel">
-            <h2>How to use this table</h2>
-            <p>These are state averages, not quotes. Your number moves with ZIP code, contents limit, deductible, and claims history.</p>
-            ${renderList([
-                'Find your state and note the gap versus the $' + usAverage + ' US average.',
-                'Open the state page for weather, landlord norms, and a worked example.',
-                'Then run the calculator with your actual contents limit instead of guessing from the average.',
-            ], 'bullet-list')}
-        </aside>
+    const body = `<section class="guide-hero">
+    <div class="container-custom">
+        <h1 class="guide-hero__title">Average renters insurance cost by state</h1>
+        <p class="guide-deck">Renters insurance covers your belongings, your liability, and a hotel bill if a fire or burst pipe puts you out of the apartment. The US average in the NAIC 2021 baseline is about $${usAverage} a year.</p>
     </div>
 </section>
 
-<section class="section">
+<section class="guide-section">
     <div class="container-custom">
-        <h2 class="section-title">Average renters insurance cost by state</h2>
-        <p class="section-copy">Sorted alphabetically. A minus sign means the state's average is below the US average. Texas sits at the top of the table. Idaho sits near the bottom. The gap is mostly weather, claims, and replacement cost, not a mysterious "state fee."</p>
-        <div style="margin-top: 1.5rem;">
+        <div class="guide-prose">
+            <h2>How to use this table</h2>
+            <p>These are state averages, not quotes. Your number moves with ZIP code, contents limit, deductible, and claims history. Find your state, note the gap against the $${usAverage} US average, then open the state page for weather, landlord norms, and a worked example before you run the calculator with your own contents limit.</p>
+
+            <h2>Average renters insurance cost by state</h2>
+            <p>Sorted alphabetically. A minus sign means the state average is below the US average. The spread is mostly weather, claims, and replacement cost.</p>
             ${renderPremiumTable([
                 { name: 'United States (national average)', premium: usAverage, vs: 'baseline' },
                 ...stateEntries.map((entry) => ({
@@ -1403,43 +1067,24 @@ function renderInsuranceHubPage(stateEntries, usEntry) {
                     href: rentersInsurancePath(slugForStateName(entry.state)),
                 })),
             ], usAverage)}
-        </div>
-        <p style="margin-top: 1rem; color: #4b5563; line-height: 1.7;">These are the NAIC 2021 baseline averages published by the Insurance Information Institute. Inflation has pushed 2026 quotes higher, so treat the table as a comparison tool rather than a quote.</p>
-    </div>
-</section>
+            <p>These are the NAIC 2021 baseline averages published by the Insurance Information Institute. Inflation has pushed 2026 quotes higher, so treat the table as a comparison tool rather than a quote.</p>
 
-<section class="section section--alt">
-    <div class="container-custom">
-        <h2 class="section-title">What drives renters insurance prices</h2>
-        <div class="card-grid">
-            <article class="info-card"><h3>Claim frequency and litigation</h3><p>States with more theft, fire, and lawsuit activity price the same $20,000 contents limit higher because the pool loses more money.</p></article>
-            <article class="info-card"><h3>Replacement costs</h3><p>If it costs more to replace a sofa in Boston than in Boise, the premium follows. Shipping-heavy states show the same pattern.</p></article>
-            <article class="info-card"><h3>Weather exposure</h3><p>Hail, wind, freeze bursts, and wildfire smoke claims all show up in renters books. Flood and earthquake usually do not, which is why those need separate decisions.</p></article>
-            <article class="info-card"><h3>Carrier competition</h3><p>A crowded market can hold prices down. A thin market, or one where carriers have pulled back, does the opposite.</p></article>
-        </div>
-    </div>
-</section>
+            <h2>What drives renters insurance prices</h2>
+            <h3>Claim frequency and litigation</h3>
+            <p>States with more theft, fire, and lawsuit activity price the same $20,000 contents limit higher because the pool loses more money.</p>
+            <h3>Replacement costs</h3>
+            <p>If it costs more to replace a sofa in Boston than in Boise, the premium follows. Shipping-heavy states show the same pattern.</p>
+            <h3>Weather exposure</h3>
+            <p>Hail, wind, freeze bursts, and wildfire smoke claims all show up in renters books. Flood and earthquake usually do not, which is why those need separate decisions.</p>
+            <h3>Carrier competition</h3>
+            <p>A crowded market can hold prices down. A thin market, or one where carriers have pulled back, does the opposite.</p>
 
-<section class="section">
-    <div class="container-custom">
-        <h2 class="section-title">Next steps</h2>
-        <div class="hub-list">
-            <a href="/tools/renters-insurance-cost"><strong>Renters insurance cost calculator</strong><span>Estimate your own annual premium with your coverage limits, deductible, and location.</span></a>
-            <a href="/blog/how-much-is-renters-insurance-cost-guide"><strong>How much is renters insurance?</strong><span>Read the full guide to what renters insurance covers and how premiums are set.</span></a>
-            <a href="/tools/categories/insurance-protection"><strong>Insurance and protection tools</strong><span>Browse the rest of the insurance calculator library.</span></a>
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container-custom">
-        <div class="cta-box">
-            <h2 class="section-title" style="color:white;">Get a personal estimate</h2>
-            <p>State averages are a starting point. Your real quote depends on your address, the coverage you choose, and your claims history.</p>
-            <div class="cta-actions">
-                <a class="cta-button" href="/tools/renters-insurance-cost">Open the renters insurance calculator</a>
-                <a class="ghost-button" href="/blog/how-much-is-renters-insurance-cost-guide">Read the cost guide</a>
-            </div>
+            <h2>Next steps</h2>
+            <ul class="guide-linklist">
+                <li><a href="/tools/renters-insurance-cost">Renters insurance cost calculator</a> — estimate your own premium from your coverage limits, deductible, and location.</li>
+                <li><a href="/blog/how-much-is-renters-insurance-cost-guide">How much is renters insurance?</a> — what the policy covers and how premiums are set.</li>
+                <li><a href="/tools/categories/insurance-protection">Insurance and protection tools</a> — the rest of the calculator library.</li>
+            </ul>
         </div>
     </div>
 </section>`;
@@ -1462,6 +1107,10 @@ function renderInsuranceHubPage(stateEntries, usEntry) {
         ],
         pageType: 'renters_hub',
         activeHref: '/tools',
+        breadcrumbNav: renderBreadcrumbNav([
+            { name: 'Home', href: '/' },
+            { name: 'Renters insurance by state' },
+        ]),
         disclaimer: 'Educational content only. A statewide average is not a quote. Confirm coverage with a licensed agent.',
         body,
     });
@@ -1489,8 +1138,12 @@ function renderRentersStatePage(entry, entriesByAbbr, usEntry, guides) {
     const description = `${name} renters insurance averages about $${entry.averageAnnualPremium} a year (NAIC 2021), ${premiumProse(entry.averageAnnualPremium, usAverage)}. Local context, a worked example, and what the average misses.`;
     const intro = `${name} renters paid about $${entry.averageAnnualPremium} a year on average in the NAIC 2021 baseline, ${diffPhrase} the $${usAverage} US average.`;
     const cities = (guide && guide.cities) || [];
+    const topCities = cities.slice(0, 3);
+    const cityList = topCities.length > 1
+        ? `${topCities.slice(0, -1).join(', ')} and ${topCities[topCities.length - 1]}`
+        : topCities.join('');
     const cityLine = cities.length
-        ? `Most shopping conversations in ${name} start in ${cities.slice(0, 3).join(', ')}.`
+        ? `Most shopping conversations in ${name} start in ${cityList}.`
         : `Quotes inside ${name} still split by city even when the statewide average looks simple.`;
     const fallbackFaqs = [
         {
@@ -1515,54 +1168,56 @@ function renderRentersStatePage(entry, entriesByAbbr, usEntry, guides) {
     const faqItems = normalizeFaqs(guide && guide.faqs, fallbackFaqs);
     const uniqueBlocks = [];
     if (guide && guide.localAngle) {
-        uniqueBlocks.push(`<h2 class="section-title">What is different about ${esc(name)}</h2><p>${esc(guide.localAngle)}</p><p>${esc(cityLine)}</p>`);
+        uniqueBlocks.push(`<h2>What is different about ${esc(name)}</h2><p>${esc(guide.localAngle)}</p><p>${esc(cityLine)}</p>`);
     } else {
-        uniqueBlocks.push(`<h2 class="section-title">What is different about ${esc(name)}</h2><p>${esc(intro)} ${esc(cityLine)}</p>`);
+        uniqueBlocks.push(`<h2>What is different about ${esc(name)}</h2><p>${esc(intro)} ${esc(cityLine)}</p>`);
     }
     if (guide && guide.leaseNorm) {
-        uniqueBlocks.push(`<h2 class="section-title">Leases and landlord rules in ${esc(name)}</h2><p>${esc(guide.leaseNorm)}</p>`);
+        uniqueBlocks.push(`<h2>Leases and landlord rules in ${esc(name)}</h2><p>${esc(guide.leaseNorm)}</p>`);
     }
     if (guide && guide.contentsNote) {
-        uniqueBlocks.push(`<h2 class="section-title">What to actually schedule</h2><p>${esc(guide.contentsNote)}</p>`);
+        uniqueBlocks.push(`<h2>What to actually schedule</h2><p>${esc(guide.contentsNote)}</p>`);
     }
     if (guide && guide.scenarioStory) {
-        uniqueBlocks.push(`<h2 class="section-title">A ${esc(guide.scenarioCity || name)} example</h2><p>${esc(guide.scenarioStory)}</p>`);
+        uniqueBlocks.push(`<h2>A ${esc(guide.scenarioCity || name)} example</h2><p>${esc(guide.scenarioStory)}</p>`);
     }
     const regulator = (guide && guide.regulatorName)
         ? `<p>Questions about carriers or complaints go to the ${esc(guide.regulatorName)}${guide.regulatorUrl ? ` (<a class="inline-link" href="${esc(guide.regulatorUrl)}">${esc(guide.regulatorUrl.replace(/^https?:\/\//, ''))}</a>)` : ''}.</p>`
         : '';
 
-    const body = `<section class="resource-hero">
-    <div class="container-custom hero-grid">
-        <div>
-            <span class="eyebrow">Renters insurance by state</span>
-            <h1 class="hero-title">${esc(title)}</h1>
-            <p class="hero-copy">${esc(intro)} The state average is a useful baseline, but your quote will depend on your city, coverage limits, deductible, and claims history.</p>
-            <div class="meta-strip">
-                <span class="meta-pill">State average: $${entry.averageAnnualPremium}/year</span>
-                <span class="meta-pill">US average: $${usAverage}/year</span>
-                <span class="meta-pill">NAIC 2021 baseline</span>
+    const body = `<section class="guide-hero">
+    <div class="container-custom">
+        <h1 class="guide-hero__title">Renters insurance cost in ${esc(name)}</h1>
+        <p class="guide-deck">${esc(intro)} The state average is a baseline; your quote depends on your city, coverage limits, deductible, and claims history.</p>
+        <dl class="guide-dl">
+            <div>
+                <dt>${esc(name)} average</dt>
+                <dd>$${entry.averageAnnualPremium} a year</dd>
             </div>
-        </div>
-        <aside class="hero-panel">
-            <h2>What this page helps you decide</h2>
-            <p>See where ${esc(name)} sits versus the country and versus nearby states, then use the local notes before you shop.</p>
-        </aside>
+            <div>
+                <dt>US average</dt>
+                <dd>$${usAverage} a year</dd>
+            </div>
+            <div>
+                <dt>Source</dt>
+                <dd>NAIC 2021 baseline</dd>
+            </div>
+        </dl>
     </div>
 </section>
 
-<section class="section">
-    <div class="container-custom section-grid">
-        <div class="surface">
+<section class="guide-section">
+    <div class="container-custom">
+        <div class="guide-prose">
             ${uniqueBlocks.join('')}
-            <h2 class="section-title">What drives ${esc(name)} renters insurance costs</h2>
+
+            <h2>What drives ${esc(name)} renters insurance costs</h2>
             <p>Weather exposure is a major driver here: ${esc(context.weather)}.</p>
             <p>Claim frequency and litigation also matter: ${esc(context.claims)}.</p>
             <p>Replacement costs and carrier competition round out the picture: ${esc(context.replacement)}, and ${esc(context.competition)}.</p>
             ${regulator}
-        </div>
-        <div class="surface">
-            <h2 class="section-title">How ${esc(name)} compares</h2>
+
+            <h2>How ${esc(name)} compares</h2>
             ${renderPremiumTable([
                 { name: name, premium: entry.averageAnnualPremium, vs: premiumVsUs(entry.averageAnnualPremium, usAverage), highlight: true },
                 { name: 'United States (national average)', premium: usAverage, vs: 'baseline' },
@@ -1573,40 +1228,17 @@ function renderRentersStatePage(entry, entriesByAbbr, usEntry, guides) {
                     href: rentersInsurancePath(slugForStateName(neighbor.state)),
                 })),
             ], usAverage)}
-            <p style="margin-top: 0.9rem; color: #4b5563; line-height: 1.7;">A minus sign means the average is below the US average. Figures are the NAIC 2021 baseline; 2026 quotes run higher after inflation.</p>
-        </div>
-    </div>
-</section>
+            <p>A minus sign means the average is below the US average. Figures are the NAIC 2021 baseline; 2026 quotes run higher after inflation.</p>
 
-<section class="section section--alt">
-    <div class="container-custom">
-        <h2 class="section-title">Questions people ask about ${esc(name)} renters insurance</h2>
-        <div class="faq-grid">
-            ${renderFaqCards(faqItems)}
-        </div>
-    </div>
-</section>
+            <h2>Questions people ask about ${esc(name)} renters insurance</h2>
+            ${renderFaqList(faqItems)}
 
-<section class="section">
-    <div class="container-custom">
-        <h2 class="section-title">Next steps</h2>
-        <div class="hub-list">
-            <a href="${esc(rentersInsurancePath())}"><strong>Renters insurance cost by state</strong><span>See how ${esc(name)} compares with every other state.</span></a>
-            <a href="/tools/renters-insurance-cost"><strong>Renters insurance cost calculator</strong><span>Estimate your own premium with your coverage limits, deductible, and location.</span></a>
-            <a href="/blog/how-much-is-renters-insurance-cost-guide"><strong>How much is renters insurance?</strong><span>Read the full guide to what renters insurance covers and how premiums are set.</span></a>
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container-custom">
-        <div class="cta-box">
-            <h2 class="section-title" style="color:white;">Estimate your own premium</h2>
-            <p>State averages only get you part of the way. Your real quote depends on your address, the coverage you choose, and your claims history.</p>
-            <div class="cta-actions">
-                <a class="cta-button" href="/tools/renters-insurance-cost">Open the renters insurance calculator</a>
-                <a class="ghost-button" href="${esc(rentersInsurancePath())}">Back to the state hub</a>
-            </div>
+            <h2>Next steps</h2>
+            <ul class="guide-linklist">
+                <li><a href="${esc(rentersInsurancePath())}">Renters insurance cost by state</a> — see how ${esc(name)} compares with every other state.</li>
+                <li><a href="/tools/renters-insurance-cost">Renters insurance cost calculator</a> — estimate your own premium.</li>
+                <li><a href="/blog/how-much-is-renters-insurance-cost-guide">How much is renters insurance?</a> — what the policy covers and how premiums are set.</li>
+            </ul>
         </div>
     </div>
 </section>`;
@@ -1627,6 +1259,11 @@ function renderRentersStatePage(entry, entriesByAbbr, usEntry, guides) {
         ],
         pageType: 'renters_state',
         activeHref: '/tools',
+        breadcrumbNav: renderBreadcrumbNav([
+            { name: 'Home', href: '/' },
+            { name: 'Renters insurance by state', href: rentersInsurancePath() },
+            { name },
+        ]),
         disclaimer: 'Educational content only. A statewide average is not a quote. Confirm coverage with a licensed agent.',
         body,
     });

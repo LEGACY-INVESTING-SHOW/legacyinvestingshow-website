@@ -16,17 +16,20 @@
     <meta property="og:url" content="https://www.legacyinvestingshow.com/markets/charlotte-nc">
     <meta property="og:title" content="Charlotte, NC Tax Strategy Guide for Investors and Operators | Legacy Investing Show">
     <meta property="og:description" content="A practical tax-planning guide for Charlotte operators: market context, deduction priorities, documentation habits, and the mistakes that usually break the model.">
-    <meta property="og:image" content="https://www.legacyinvestingshow.com/assets/images/logo.png">
+    <meta property="og:image" content="https://www.legacyinvestingshow.com/assets/images/og-image.jpg">
     <meta property="og:site_name" content="Legacy Investing Show">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Charlotte, NC Tax Strategy Guide for Investors and Operators | Legacy Investing Show">
     <meta name="twitter:description" content="A practical tax-planning guide for Charlotte operators: market context, deduction priorities, documentation habits, and the mistakes that usually break the model.">
-    <meta name="twitter:image" content="https://www.legacyinvestingshow.com/assets/images/logo.png">
+    <meta name="twitter:image" content="https://www.legacyinvestingshow.com/assets/images/og-image.jpg">
 
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#FAF7F2">
     <link rel="icon" type="image/png" href="/assets/images/logo.png">
+    <link rel="preload" href="/assets/fonts/dm-serif-display-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/plus-jakarta-sans-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/guides.css">
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
 <script>
@@ -35,471 +38,186 @@
     gtag('js', new Date());
     gtag('config', 'G-2578PT1WSS');
 </script>
-    <style>
-        .resource-main {
-            padding-top: 5rem;
-        }
-        .resource-hero {
-            padding: 4.5rem 0 3rem;
-            background:
-                radial-gradient(circle at top right, rgba(5, 150, 105, 0.18), transparent 28%),
-                linear-gradient(180deg, #ecfdf5 0%, #ffffff 100%);
-        }
-        .eyebrow {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.4rem 0.8rem;
-            border-radius: 999px;
-            background: rgba(5, 150, 105, 0.08);
-            color: #047857;
-            font-size: 0.75rem;
-            font-weight: 700;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-        }
-        .eyebrow::before {
-            content: "";
-            width: 0.5rem;
-            height: 0.5rem;
-            border-radius: 999px;
-            background: #10b981;
-        }
-        .hero-title {
-            margin-top: 1rem;
-            font-size: clamp(2.1rem, 5vw, 4rem);
-            line-height: 1.02;
-            letter-spacing: -0.04em;
-            color: #111827;
-            max-width: 14ch;
-        }
-        .hero-copy {
-            margin-top: 1rem;
-            max-width: 48rem;
-            color: #4b5563;
-            font-size: 1.05rem;
-            line-height: 1.75;
-        }
-        .hero-grid,
-        .section-grid,
-        .card-grid,
-        .faq-grid {
-            display: grid;
-            gap: 1.5rem;
-        }
-        .hero-grid {
-            grid-template-columns: 1.8fr 1fr;
-            align-items: start;
-        }
-        .section-grid {
-            grid-template-columns: 1.35fr 1fr;
-            align-items: start;
-        }
-        .surface,
-        .info-card,
-        .stack-card,
-        .faq-card {
-            background: white;
-            border: 1px solid #e5e7eb;
-            border-radius: 1rem;
-            box-shadow: 0 12px 30px rgba(15, 23, 42, 0.04);
-        }
-        .surface {
-            padding: 1.5rem;
-        }
-        .hero-panel {
-            padding: 1.4rem;
-            background: rgba(255, 255, 255, 0.84);
-            border: 1px solid rgba(16, 185, 129, 0.18);
-            border-radius: 1rem;
-            box-shadow: 0 12px 30px rgba(16, 185, 129, 0.08);
-        }
-        .hero-panel h2 {
-            font-size: 0.95rem;
-            font-weight: 700;
-            color: #111827;
-            margin-bottom: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 0.06em;
-        }
-        .hero-panel p,
-        .hero-panel li {
-            color: #4b5563;
-            line-height: 1.7;
-            font-size: 0.95rem;
-        }
-        .hero-panel ul,
-        .checklist,
-        .bullet-list {
-            margin: 0;
-            padding-left: 1.1rem;
-        }
-        .section {
-            padding: 3.5rem 0;
-        }
-        .section--alt {
-            background: #f8fafc;
-        }
-        .section-title {
-            font-size: clamp(1.6rem, 3vw, 2.25rem);
-            line-height: 1.1;
-            color: #111827;
-            letter-spacing: -0.03em;
-            margin-bottom: 1rem;
-        }
-        .section-copy,
-        .surface p,
-        .info-card p,
-        .stack-card p,
-        .faq-card p {
-            color: #4b5563;
-            line-height: 1.8;
-        }
-        .meta-strip {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.75rem;
-            margin-top: 1.5rem;
-        }
-        .meta-pill {
-            padding: 0.6rem 0.85rem;
-            border-radius: 999px;
-            background: #f3f4f6;
-            color: #374151;
-            font-size: 0.875rem;
-            font-weight: 600;
-        }
-        .card-grid {
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        }
-        .info-card,
-        .stack-card,
-        .faq-card {
-            padding: 1.25rem;
-        }
-        .info-card h3,
-        .stack-card h3,
-        .faq-card h3 {
-            font-size: 1.05rem;
-            color: #111827;
-            margin-bottom: 0.65rem;
-        }
-        .stack-card__index {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 2rem;
-            height: 2rem;
-            border-radius: 999px;
-            background: #dcfce7;
-            color: #047857;
-            font-size: 0.85rem;
-            font-weight: 700;
-            margin-bottom: 0.85rem;
-        }
-        .stack-card__link,
-        .inline-link {
-            color: #047857;
-            font-weight: 700;
-            text-decoration: none;
-        }
-        .stack-card__link:hover,
-        .inline-link:hover {
-            text-decoration: underline;
-        }
-        .comparison-table {
-            width: 100%;
-            border-collapse: collapse;
-            background: white;
-            border-radius: 1rem;
-            overflow: hidden;
-            border: 1px solid #e5e7eb;
-        }
-        .comparison-table th,
-        .comparison-table td {
-            padding: 1rem;
-            text-align: left;
-            vertical-align: top;
-            border-bottom: 1px solid #e5e7eb;
-        }
-        .comparison-table th {
-            background: #111827;
-            color: white;
-            font-size: 0.875rem;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-        }
-        .comparison-table tr:nth-child(even) td {
-            background: #f8fafc;
-        }
-        .cta-box {
-            padding: 2rem;
-            border-radius: 1.25rem;
-            background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
-            color: white;
-        }
-        .cta-box p {
-            color: #d1d5db;
-            line-height: 1.8;
-        }
-        .cta-actions {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.85rem;
-            margin-top: 1.25rem;
-        }
-        .cta-button,
-        .ghost-button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0.9rem 1.25rem;
-            border-radius: 999px;
-            text-decoration: none;
-            font-weight: 700;
-        }
-        .cta-button {
-            background: #10b981;
-            color: white;
-        }
-        .ghost-button {
-            background: rgba(255, 255, 255, 0.08);
-            color: white;
-            border: 1px solid rgba(255, 255, 255, 0.18);
-        }
-        .resource-list,
-        .hub-list {
-            display: grid;
-            gap: 0.9rem;
-            margin-top: 1.25rem;
-        }
-        .resource-list a,
-        .hub-list a {
-            display: block;
-            padding: 1rem 1.1rem;
-            border-radius: 0.9rem;
-            border: 1px solid #e5e7eb;
-            background: white;
-            color: #111827;
-            text-decoration: none;
-            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
-        }
-        .resource-list strong,
-        .hub-list strong {
-            display: block;
-            margin-bottom: 0.3rem;
-        }
-        .resource-list span,
-        .hub-list span {
-            color: #4b5563;
-            font-size: 0.95rem;
-            line-height: 1.65;
-        }
-        .hub-list {
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        }
-        @media (max-width: 1024px) {
-            .hero-grid,
-            .section-grid {
-                grid-template-columns: 1fr;
-            }
-            .hero-title {
-                max-width: none;
-            }
-        }
-    </style>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Charlotte, NC Tax Strategy Guide for Investors and Operators","description":"A practical tax-planning guide for Charlotte operators: market context, deduction priorities, documentation habits, and the mistakes that usually break the model.","datePublished":"2026-09-13","dateModified":"2026-09-13","isAccessibleForFree":true,"mainEntityOfPage":"https://www.legacyinvestingshow.com/markets/charlotte-nc","author":{"@type":"Person","name":"Preston Seo","url":"https://www.legacyinvestingshow.com/about"},"publisher":{"@type":"Organization","name":"Legacy Investing Show","url":"https://www.legacyinvestingshow.com"},"keywords":"Charlotte, NC, tax planning, real estate, operators"}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.legacyinvestingshow.com/"},{"@type":"ListItem","position":2,"name":"Market guides","item":"https://www.legacyinvestingshow.com/markets"},{"@type":"ListItem","position":3,"name":"Charlotte, NC","item":"https://www.legacyinvestingshow.com/markets/charlotte-nc"}]}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Charlotte demand more corporate than leisure?","acceptedAnswer":{"@type":"Answer","text":"Often. Banking, airport, and conference traffic can fill weekdays. Price and clean for that guest, then treat race weekends as overlay, not the whole thesis."}},{"@type":"Question","name":"How does North Carolina tax change the entity conversation?","acceptedAnswer":{"@type":"Answer","text":"State tax is part of the model. Do not copy a Texas entity memo onto a Charlotte property and call it done."}},{"@type":"Question","name":"What documentation helps a Charlotte operator at filing time?","acceptedAnswer":{"@type":"Answer","text":"Property-level books, vendor 1099s if you scale, and a stay-length export that matches the tax treatment you want to claim."}},{"@type":"Question","name":"Should I use the STR loophole because Charlotte has lots of Airbnbs?","acceptedAnswer":{"@type":"Answer","text":"No. The loophole cares about average stay and participation, not about how many listings are on the map."}}]}</script>
-
-    <!-- Twitter Card fallback -->
-    <meta name="twitter:site" content="@thelegacyshow">
 </head>
-<body class="bg-white text-gray-900" data-page-type="market_city" data-page-title="Charlotte, NC Tax Strategy Guide for Investors and Operators">
+<body class="guide-page" data-page-type="market_city" data-page-title="Charlotte, NC Tax Strategy Guide for Investors and Operators">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-gray-900 text-white px-4 py-2 z-50">Skip to main content</a>
-    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
-    <nav class="container-custom" aria-label="Main navigation">
-        <div class="flex items-center justify-between gap-4 min-h-[4rem] py-3">
-            <a href="/" class="flex items-center gap-2 font-medium text-gray-900 hover:text-gray-700 transition-colors">
-                <img src="/assets/images/logo.png" alt="Legacy Investing Show logo" width="28" height="28" class="w-7 h-7">
+    <a href="#main" class="guide-skip">Skip to main content</a>
+    <header class="site-header">
+        <nav class="container-custom site-nav" aria-label="Main navigation">
+            <a href="/" class="site-brand">
+                <img src="/assets/images/logo-240.webp" alt="" width="62" height="28">
                 <span>Legacy Investing Show</span>
             </a>
-            <div class="hidden lg:flex items-center gap-4">
+            <div class="site-nav-links">
                 <a href="/" class="nav-link">Home</a>
                     <a href="/about" class="nav-link">About</a>
                     <a href="/tax-strategies" class="nav-link nav-link-active">Tax Strategies</a>
                     <a href="/compare" class="nav-link">Compare</a>
                     <a href="/tools" class="nav-link">Tools</a>
-                    <a href="/worksheets" class="nav-link">Worksheets</a>
                     <a href="/blog" class="nav-link">Blog</a>
             </div>
-        </div>
-        <div class="lg:hidden flex flex-wrap gap-3 pb-3 text-sm">
-            <a href="/" class="nav-link">Home</a>
+            <button id="mobile-menu-btn" class="site-nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            </button>
+            <div id="mobile-menu" class="site-nav-mobile hidden">
+                <a href="/" class="nav-link">Home</a>
                     <a href="/about" class="nav-link">About</a>
                     <a href="/tax-strategies" class="nav-link nav-link-active">Tax Strategies</a>
                     <a href="/compare" class="nav-link">Compare</a>
                     <a href="/tools" class="nav-link">Tools</a>
-                    <a href="/worksheets" class="nav-link">Worksheets</a>
                     <a href="/blog" class="nav-link">Blog</a>
-        </div>
-    </nav>
-</header>
-    <main id="main" class="resource-main">
-        <section class="resource-hero">
-    <div class="container-custom hero-grid">
-        <div>
-            <span class="eyebrow">Southeast market guide</span>
-            <h1 class="hero-title">Charlotte, NC Tax Strategy Guide for Investors and Operators</h1>
-            <p class="hero-copy">Charlotte is most useful for operators who want a business-travel-heavy market with less reliance on pure vacation demand. Best for hosts focused on cleaner operations, midweek demand, and practical tax documentation.</p>
-            <div class="meta-strip">
-                <span class="meta-pill">Banking hub, NASCAR, growing tech scene</span>
             </div>
-        </div>
-        <aside class="hero-panel">
-            <h2>What this page helps you decide</h2>
-            <p>North Carolina planning usually comes down to operational consistency, financing discipline, and whether local demand is broad enough beyond peak events.</p>
-            <ul class="bullet-list"><li>Banking and corporate activity can support weekdays.</li><li>NASCAR and event traffic can add revenue bursts.</li><li>Tech and population growth can make submarket selection matter more than metro-level averages.</li></ul>
-        </aside>
+        </nav>
+    </header>
+    <div class="container-custom">
+        <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Home</a></li>
+                <li class="breadcrumb__item"><a href="/markets" class="breadcrumb__link">Market guides</a></li>
+                <li class="breadcrumb__item"><span class="breadcrumb__current">Charlotte, NC</span></li>
+            </ol>
+        </nav>
+    </div>
+    <main id="main">
+        <section class="guide-hero">
+    <div class="container-custom">
+        <h1 class="guide-hero__title">Charlotte, NC tax strategy guide</h1>
+        <p class="guide-deck">Charlotte is most useful for operators who want a business-travel-heavy market with less reliance on pure vacation demand. Best for hosts focused on cleaner operations, midweek demand, and practical tax documentation.</p>
     </div>
 </section>
 
-<section class="section">
-    <div class="container-custom section-grid">
-        <div class="surface">
-            <h2 class="section-title">What makes Charlotte different</h2>
-            <p>Charlotte is most useful for operators who want a business-travel-heavy market with less reliance on pure vacation demand.</p>
+<section class="guide-section">
+    <div class="container-custom">
+        <div class="guide-prose">
+            <h2>What makes Charlotte different</h2>
             <p>The right tax strategy should protect cash flow, not only create a paper deduction.</p>
-            <p>Use this page as a market-specific filter: decide whether the demand drivers, local friction, and documentation burden fit the strategy stack you want to use.</p>
+            <p>North Carolina planning usually comes down to operational consistency, financing discipline, and whether local demand is broad enough beyond peak events.</p>
             <p>Charlotte is a banking-and-event overlay, not a beach town. North Carolina tax and neighborhood-level demand matter more than a NASCAR weekend you cannot repeat 52 times.</p>
             <p>Uptown weekdays can carry a listing that South End Saturdays cannot. Submarket choice is the strategy.</p>
-        </div>
-        <div class="surface">
-            <h2 class="section-title">Execution checklist</h2>
+            <h3>What drives demand here</h3>
+            <ul class="bullet-list"><li>Banking and corporate activity can support weekdays.</li><li>NASCAR and event traffic can add revenue bursts.</li><li>Tech and population growth can make submarket selection matter more than metro-level averages.</li></ul>
+
+            <h2>Execution checklist</h2>
             <ul class="checklist"><li>Make sure your bookkeeping shows property-by-property performance.</li><li>Review reimbursement, mileage, and home-office records before year-end.</li><li>Use a conservative occupancy range if your thesis depends on event traffic.</li></ul>
-        </div>
-    </div>
-</section>
 
-<section class="section section--alt">
-    <div class="container-custom">
-        <h2 class="section-title">Recommended strategy stack for Charlotte</h2>
-        <p class="section-copy">These are not ranked by hype. They are ranked by how often they matter once you combine the market profile, the likely operator type, and the amount of documentation required to defend the move.</p>
-        <div class="card-grid">
-            <article class="stack-card">
-                <div class="stack-card__index">01</div>
-                <h3>Short-Term Rental Loophole</h3>
-                <p>Use short-term rental loophole when the property profile and hold period actually support it in Charlotte.</p>
-                <a class="stack-card__link" href="/tax-strategies/short-term-rental-loophole">Open resource</a>
-            </article><article class="stack-card">
-                <div class="stack-card__index">02</div>
-                <h3>Real Estate Professional Status (REPS)</h3>
-                <p>Use real estate professional status (reps) only after you understand what qualifies and how the deduction changes real cash flow.</p>
-                <a class="stack-card__link" href="/tax-strategies/real-estate-professional-status">Open resource</a>
-            </article><article class="stack-card">
-                <div class="stack-card__index">03</div>
-                <h3>Cost Segregation</h3>
-                <p>Keep cost segregation in view if your exit plan matters as much as your current-year deduction.</p>
-                <a class="stack-card__link" href="/tax-strategies/cost-segregation">Open resource</a>
-            </article><article class="stack-card">
-                <div class="stack-card__index">04</div>
-                <h3>Bonus Depreciation</h3>
-                <p>In Charlotte, this strategy matters when the operating model fits the stay-length and participation facts, not just the platform you use.</p>
-                <a class="stack-card__link" href="/tax-strategies/bonus-depreciation">Open resource</a>
-            </article><article class="stack-card">
-                <div class="stack-card__index">05</div>
-                <h3>1031 Exchange</h3>
-                <p>This becomes useful if your day-to-day role, documentation, and long-term operating plan can actually support it.</p>
-                <a class="stack-card__link" href="/tax-strategies/1031-exchange">Open resource</a>
-            </article>
-        </div>
-    </div>
-</section>
+            <h2>Strategy stack for Charlotte</h2>
+            <p>Ranked by how often each one matters once you combine the market profile, the likely operator type, and the documentation required to defend the move.</p>
+            <ul class="guide-rows">
+                        <li>
+                            <h3 class="guide-row__title"><a href="/tax-strategies/short-term-rental-loophole">Short-Term Rental Loophole</a></h3>
+                            <p>Use short-term rental loophole when the property profile and hold period actually support it in Charlotte.</p>
+                        </li>
+                        <li>
+                            <h3 class="guide-row__title"><a href="/tax-strategies/real-estate-professional-status">Real Estate Professional Status (REPS)</a></h3>
+                            <p>Use real estate professional status (reps) only after you understand what qualifies and how the deduction changes real cash flow.</p>
+                        </li>
+                        <li>
+                            <h3 class="guide-row__title"><a href="/tax-strategies/cost-segregation">Cost Segregation</a></h3>
+                            <p>Keep cost segregation in view if your exit plan matters as much as your current-year deduction.</p>
+                        </li>
+                        <li>
+                            <h3 class="guide-row__title"><a href="/tax-strategies/bonus-depreciation">Bonus Depreciation</a></h3>
+                            <p>In Charlotte, this strategy matters when the operating model fits the stay-length and participation facts, not just the platform you use.</p>
+                        </li>
+                        <li>
+                            <h3 class="guide-row__title"><a href="/tax-strategies/1031-exchange">1031 Exchange</a></h3>
+                            <p>This becomes useful if your day-to-day role, documentation, and long-term operating plan can actually support it.</p>
+                        </li>
+            </ul>
 
-<section class="section">
-    <div class="container-custom section-grid">
-        <div class="surface">
-            <h2 class="section-title">Where investors usually get hurt</h2>
+            <h2>Where investors usually get hurt</h2>
             <ul class="bullet-list"><li>Do not ignore neighborhood-level demand variation.</li><li>Protect margins with disciplined vendor and cleaning controls.</li><li>Keep entity and reimbursement records ready before year-end.</li></ul>
-            <p style="margin-top:1rem;">The goal is not to avoid tax strategy. The goal is to avoid using tax strategy as a substitute for underwriting, local rule review, or operator discipline.</p>
-        </div>
-        <div class="surface">
-            <h2 class="section-title">What to do in the next 90 days</h2>
-            <ol class="checklist">
+            <p>The goal is not to avoid tax strategy. It is to avoid using tax strategy as a substitute for underwriting, local rule review, or operator discipline.</p>
+
+            <h2>What to do in the next 90 days</h2>
+            <ol>
                 <li>Write the base-case occupancy and rate assumptions for Charlotte without using peak periods as the baseline.</li>
                 <li>Choose the one deduction or entity question that actually changes your next decision.</li>
                 <li>Build the audit file now: receipts, vendor records, local compliance notes, and property-level bookkeeping.</li>
-                <li>Review the plan with a CPA only after the operating facts are assembled cleanly.</li>
+                <li>Review the plan with a CPA once the operating facts are assembled cleanly.</li>
             </ol>
+
+            <h2>Questions people ask before filing</h2>
+            <dl class="guide-faq">
+                <dt>Is Charlotte demand more corporate than leisure?</dt>
+                <dd>Often. Banking, airport, and conference traffic can fill weekdays. Price and clean for that guest, then treat race weekends as overlay, not the whole thesis.</dd>
+                <dt>How does North Carolina tax change the entity conversation?</dt>
+                <dd>State tax is part of the model. Do not copy a Texas entity memo onto a Charlotte property and call it done.</dd>
+                <dt>What documentation helps a Charlotte operator at filing time?</dt>
+                <dd>Property-level books, vendor 1099s if you scale, and a stay-length export that matches the tax treatment you want to claim.</dd>
+                <dt>Should I use the STR loophole because Charlotte has lots of Airbnbs?</dt>
+                <dd>No. The loophole cares about average stay and participation, not about how many listings are on the map.</dd>
+            </dl>
+
+            <h2>Related guides</h2>
+            <ul class="guide-linklist">
+                <li><a href="/markets/nashville-tn">Nashville, TN</a> — Best for hosts with strong guest rules, cleaner oversight, and pricing discipline.</li>
+                <li><a href="/markets/miami-fl">Miami, FL</a> — Best for experienced operators who can manage compliance and premium-service expectations.</li>
+                <li><a href="/markets/atlanta-ga">Atlanta, GA</a> — Best for hosts who can run a repeatable operating system instead of chasing one-off event spikes.</li>
+                <li><a href="/markets/tampa-fl">Tampa, FL</a> — Best for operators who want Florida demand without assuming every submarket behaves like Miami or Orlando.</li>
+                <li><a href="/markets/orlando-fl">Orlando, FL</a> — Best for operators who can manage family-focused guest expectations and turnover quality.</li>
+                <li><a href="/tax-strategies">Tax strategy library</a> — every strategy guide in one table.</li>
+                <li><a href="/markets">All city guides</a> — the rest of the market pages.</li>
+            </ul>
         </div>
     </div>
 </section>
 
-<section class="section section--alt">
+<section class="cta-band">
     <div class="container-custom">
-        <h2 class="section-title">Related city and strategy resources</h2>
-        <div class="hub-list">
-            <a href="/markets/nashville-tn"><strong>Nashville, TN</strong><span>See how the planning lens shifts in Nashville with a different demand mix and operator profile.</span></a><a href="/markets/miami-fl"><strong>Miami, FL</strong><span>See how the planning lens shifts in Miami with a different demand mix and operator profile.</span></a><a href="/markets/atlanta-ga"><strong>Atlanta, GA</strong><span>See how the planning lens shifts in Atlanta with a different demand mix and operator profile.</span></a><a href="/markets/tampa-fl"><strong>Tampa, FL</strong><span>See how the planning lens shifts in Tampa with a different demand mix and operator profile.</span></a><a href="/markets/orlando-fl"><strong>Orlando, FL</strong><span>See how the planning lens shifts in Orlando with a different demand mix and operator profile.</span></a>
-            <a href="/tax-strategies"><strong>Tax Strategies Hub</strong><span>Review the main strategy library before you choose a city-specific angle.</span></a>
-            <a href="/blog"><strong>Blog and case studies</strong><span>See how operators and investors apply these decisions in real scenarios.</span></a>
+        <h2>Take the narrowed question to an advisor</h2>
+        <p>A market guide should shrink the question, not answer it. Bring the property-level file and the one structure or participation question that is still open.</p>
+        <div class="cta-band-actions">
+            <a href="/tax-strategies" class="btn-primary">Open the tax strategy library</a>
         </div>
     </div>
 </section>
-
-<section class="section">
-    <div class="container-custom">
-        <h2 class="section-title">Questions people ask before filing</h2>
-        <div class="faq-grid">
-            <article class="faq-card"><h3>Is Charlotte demand more corporate than leisure?</h3><p>Often. Banking, airport, and conference traffic can fill weekdays. Price and clean for that guest, then treat race weekends as overlay, not the whole thesis.</p></article><article class="faq-card"><h3>How does North Carolina tax change the entity conversation?</h3><p>State tax is part of the model. Do not copy a Texas entity memo onto a Charlotte property and call it done.</p></article><article class="faq-card"><h3>What documentation helps a Charlotte operator at filing time?</h3><p>Property-level books, vendor 1099s if you scale, and a stay-length export that matches the tax treatment you want to claim.</p></article><article class="faq-card"><h3>Should I use the STR loophole because Charlotte has lots of Airbnbs?</h3><p>No. The loophole cares about average stay and participation, not about how many listings are on the map.</p></article>
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container-custom">
-        <div class="cta-box">
-            <h2 class="section-title" style="color:white;">Need a city-specific second opinion?</h2>
-            <p>Use this market lens to narrow the real questions first, then take the final structure, participation, and filing questions to an advisor who can review your facts.</p>
-            <div class="cta-actions">
-                <a class="cta-button" href="/tax-strategies-101">See programs</a>
-                <a class="ghost-button" href="/tax-strategies">Open tax strategy hub</a>
+        <section class="guide-section--tight">
+            <div class="container-custom">
+                <p class="guide-row__note">Educational content only. Verify tax decisions with a qualified advisor.</p>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
     </main>
-    <footer class="bg-gray-900 text-white py-12">
-    <div class="container-custom grid gap-10 md:grid-cols-3">
-        <div>
-            <h2 class="text-lg font-semibold mb-3">Legacy Investing Show</h2>
-            <p class="text-gray-400 text-sm leading-7">Educational planning frameworks for tax, real estate, retirement, and wealth decisions.</p>
-        </div>
-        <div>
-            <h2 class="text-lg font-semibold mb-3">Resources</h2>
-            <div class="grid gap-2 text-sm text-gray-300">
-                <a href="/tax-strategies">Tax Strategies</a>
-                    <a href="/compare">Compare</a>
-                    <a href="/markets">Markets</a>
-                    <a href="/renters-insurance">Renters insurance</a>
-                    <a href="/tools">Tools</a>
-                    <a href="/worksheets">Worksheets</a>
-                    <a href="/success-stories">Results</a>
-                    <a href="/blog">Blog</a>
+    <footer class="site-footer" role="contentinfo">
+        <div class="container-custom">
+            <div class="site-footer-grid">
+                <div class="site-footer-brand">
+                    <a href="/" class="site-brand"><img src="/assets/images/logo-240.webp" alt="" width="62" height="28"><span>Legacy Investing Show</span></a>
+                    <p>Tax strategy, wealth systems, and practical decision tools for professionals, investors, and founders.</p>
+                </div>
+                <div class="site-footer-group">
+                    <h2>Guides</h2>
+                    <ul>
+                        <li><a href="/tax-strategies">Tax strategies</a></li>
+                        <li><a href="/compare">Compare guides</a></li>
+                        <li><a href="/topics">Topics</a></li>
+                        <li><a href="/markets">City market guides</a></li>
+                        <li><a href="/renters-insurance">Renters insurance by state</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer-group">
+                    <h2>Tools</h2>
+                    <ul>
+                        <li><a href="/tools">Free calculators</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer-group">
+                    <h2>Company</h2>
+                    <ul>
+                        <li><a href="/about">About Preston Seo</a></li>
+                        <li><a href="/success-stories">Student results</a></li>
+                        <li><a href="/privacy">Privacy</a></li>
+                        <li><a href="/terms">Terms</a></li>
+                    </ul>
+                </div>
             </div>
+            <p class="site-footer-legal">&copy; 2026 Legacy Investing Show. Educational content, not individual tax, legal, or investment advice.</p>
         </div>
-        <div>
-            <h2 class="text-lg font-semibold mb-3">Next Steps</h2>
-            <div class="grid gap-2 text-sm text-gray-300">
-                <a href="/tax-strategies-101">Programs</a>
-                <a href="/success-stories">Success Stories</a>
-                <a href="/about">About Preston Seo</a>
-            </div>
-        </div>
-    </div>
-    <div class="container-custom border-t border-gray-800 mt-8 pt-8 text-sm text-gray-400">
-        <p>&copy; 2026 Legacy Investing Show. Educational content only. Verify tax decisions with a qualified advisor.</p>
-    </div>
-</footer>
+    </footer>
+    <script defer src="/assets/js/main.js"></script>
 </body>
 </html>

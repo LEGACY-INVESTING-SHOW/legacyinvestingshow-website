@@ -3,10 +3,11 @@
 /**
  * Tax Strategies Page Generator for Legacy Investing Show
  *
- * This script generates SEO-optimized tax strategy pages from data:
- * 1. Individual strategy pages (/tax-strategies/[slug].html)
- * 2. Persona-based pages (/tax-strategies/for/[persona].html)
- * 3. Main index page (/tax-strategies/index)
+ * Generates:
+ * 1. Individual strategy pages (/tax-strategies/[slug]) from templates/tax-strategy.html
+ *    — long-form pages already on disk are never regenerated (see shouldSkipFile).
+ * 2. Persona pages (/tax-strategies/for/[persona])
+ * 3. The hub page (/tax-strategies)
  */
 
 const fs = require('fs');
@@ -15,8 +16,9 @@ const {
     CURRENT_YEAR,
     renderAnalyticsBody,
     renderAnalyticsHead,
-    renderFooterLinks,
-    renderPrimaryNavLinks,
+    renderHeadAssets,
+    renderSiteFooter,
+    renderSiteHeader,
     renderSourceBlock,
 } = require('./lib/site-shell');
 
@@ -27,9 +29,34 @@ const TEMPLATE_PATH = path.join(ROOT_DIR, 'templates', 'tax-strategy.html');
 const OUTPUT_DIR = path.join(ROOT_DIR, 'tax-strategies');
 const GA_TRACKING_ID = process.env.GA_TRACKING_ID || 'G-2578PT1WSS';
 const GTM_CONTAINER_ID = process.env.GTM_CONTAINER_ID || 'GTM-KQ4R2LKP';
+const SITE_URL = 'https://www.legacyinvestingshow.com';
+const OG_IMAGE = `${SITE_URL}/assets/images/og-image.jpg`;
 const GOOGLE_SITE_VERIFICATIONS = [
     'Kec6RfGhFL-qG_8zKxCqt7yxjgy65WeDAftCBm90G2s',
     '92MoCnkdQOj_ey1lEafT5Mz-znCcCQ3UABZlI-JG_nM'
+];
+
+const HUB_FAQS = [
+    {
+        question: 'Which strategy should I implement first?',
+        answer: 'Start with the one that fits the income you already have. A rental owner usually gets the largest first-year move from cost segregation combined with bonus depreciation. A W-2 employee with no property gets further with an HSA, bunching deductions, or the short-term rental loophole if a property is already in the plan.'
+    },
+    {
+        question: 'Do I need a CPA to implement these strategies?',
+        answer: 'Some are self-service: HSA contributions, a solo 401(k), tracking mileage. Others are not. A cost segregation study has to be produced by qualified engineers, a 1031 exchange needs a qualified intermediary before closing, and real estate professional status stands or falls on contemporaneous time logs a CPA should review.'
+    },
+    {
+        question: 'Can I use several strategies at once?',
+        answer: 'Yes, and most plans do. Cost segregation and bonus depreciation work on the same property. A solo 401(k) and an HSA sit alongside an S-corp election. The constraint is interaction: a deduction that lowers wages can shrink a retirement contribution limit, and passive losses only help if you clear the participation tests.'
+    },
+    {
+        question: 'What is the difference between a deduction and a credit?',
+        answer: 'A deduction reduces taxable income, so its value is the deduction multiplied by your marginal rate. In the 24% bracket a $10,000 deduction saves $2,400. A credit reduces the tax itself, so a $10,000 credit saves $10,000. Almost everything on this page is a deduction or a deferral rather than a credit.'
+    },
+    {
+        question: 'How much can these strategies actually save?',
+        answer: 'It depends on your marginal rate, your income type, and whether the facts support the strategy before you file. The savings figures on each page are worked examples with their assumptions written out. Run the same math with your own numbers rather than with the example.'
+    }
 ];
 
 /**
@@ -67,6 +94,15 @@ function loadTemplate() {
     }
 }
 
+function esc(value = '') {
+    return String(value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
 /**
  * Format strategy title for display
  */
@@ -87,16 +123,18 @@ function buildSEOTitle(rawTitle) {
 }
 
 /**
- * Generate FAQ HTML items
+ * Generate FAQ accordion items.
+ * The toggle class is deliberately not `faq-question`: main.js binds a second,
+ * incompatible handler to that class and the two would cancel each other out.
  */
 function generateFaqItems(faqs) {
     if (!faqs || faqs.length === 0) return '';
 
     return faqs.map((faq, index) => `
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <button class="faq-question" aria-expanded="${index === 0 ? 'true' : 'false'}" aria-controls="faq-answer-${index}">
+                        <button class="faq-toggle" aria-expanded="${index === 0 ? 'true' : 'false'}" aria-controls="faq-answer-${index}">
                             <span itemprop="name">${faq.question}</span>
-                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
@@ -109,25 +147,42 @@ function generateFaqItems(faqs) {
 /**
  * Generate FAQ Schema JSON-LD
  */
-function generateFaqSchema(faqs) {
-    if (!faqs || faqs.length === 0) return '';
-
-    const schema = {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": faqs.map(faq => ({
-            "@type": "Question",
-            "name": faq.question,
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": faq.answer
+function faqSchemaObject(faqs) {
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqs.map(faq => ({
+            '@type': 'Question',
+            name: faq.question,
+            acceptedAnswer: {
+                '@type': 'Answer',
+                text: faq.answer
             }
         }))
     };
+}
 
+function generateFaqSchema(faqs) {
+    if (!faqs || faqs.length === 0) return '';
     return `<script type="application/ld+json">
-    ${JSON.stringify(schema, null, 4)}
+    ${JSON.stringify(faqSchemaObject(faqs), null, 4)}
     </script>`;
+}
+
+/**
+ * Visible FAQ as a definition list.
+ */
+function renderFaqList(faqs) {
+    return `<dl class="guide-faq">
+${faqs.map((faq) => `                        <dt>${esc(faq.question)}</dt>
+                        <dd>${esc(faq.answer)}</dd>`).join('\n')}
+                    </dl>`;
+}
+
+/** renderSourceBlock still ships inline styles; guides.css owns the look. */
+function plainSourceBlock(options) {
+    return renderSourceBlock({ heading: 'Primary sources to verify before you act', ...options })
+        .replace(/ style="[^"]*"/g, '');
 }
 
 /**
@@ -138,63 +193,44 @@ function generateBenefitsList(benefits) {
 }
 
 /**
- * Generate benefits list with icons
- */
-function generateBenefitsListWithIcons(benefits) {
-    return benefits.map(b => `
-                                <li>
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <polyline points="20 6 9 17 4 12"/>
-                                    </svg>
-                                    ${b}
-                                </li>`).join('');
-}
-
-/**
  * Generate related strategies list
  */
-function generateRelatedStrategiesList(relatedSlugs, allStrategies) {
+function generateRelatedStrategiesList(relatedSlugs, allStrategies, catalogBySlug) {
     if (!relatedSlugs || relatedSlugs.length === 0) return '';
 
     return relatedSlugs.map(slug => {
         const strategy = allStrategies.find(s => s.slug === slug);
-        const title = strategy ? strategy.title : formatTitle(slug);
+        const catalogEntry = catalogBySlug.get(slug);
+        const title = (strategy && strategy.title) || (catalogEntry && catalogEntry.title) || formatTitle(slug);
         return `
-                                <li>
-                                    <a href="/tax-strategies/${slug}">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <path d="M9 18l6-6-6-6"/>
-                                        </svg>
-                                        ${title}
-                                    </a>
-                                </li>`;
+                                <li><a href="/tax-strategies/${slug}">${esc(title)}</a></li>`;
     }).join('');
 }
 
 /**
- * Check if a file exists and is comprehensive (has substantial content)
- * Returns true if file should be skipped (already comprehensive)
+ * Check if a file exists and is comprehensive (has substantial content).
+ * Returns true if the file should be left alone. The long-form strategy pages
+ * are hand-written and must never be replaced by template output.
  */
 function shouldSkipFile(filePath) {
     if (!fs.existsSync(filePath)) {
         return false;
     }
-    
-    const stats = fs.statSync(filePath);
+
     const lineCount = fs.readFileSync(filePath, 'utf-8').split('\n').length;
-    
+
     // Skip if file is > 500 lines (comprehensive content)
     if (lineCount > 500) {
         return true;
     }
-    
+
     return false;
 }
 
 /**
  * Build individual strategy page
  */
-function buildStrategyPage(strategy, template, allStrategies) {
+function buildStrategyPage(strategy, template, allStrategies, catalogBySlug) {
     const today = new Date().toISOString().split('T')[0];
 
     let html = template
@@ -206,56 +242,118 @@ function buildStrategyPage(strategy, template, allStrategies) {
         .replace(/\{\{keywords\}\}/g, strategy.keywords.join(', '))
         .replace(/\{\{potentialSavings\}\}/g, strategy.potentialSavings)
         .replace(/\{\{complexity\}\}/g, strategy.complexity)
-        .replace(/\{\{professionalRequired\}\}/g, strategy.professionalRequired ? 'Yes' : 'No')
+        .replace(/\{\{professionalRequired\}\}/g, strategy.professionalRequired ? 'Recommended' : 'Not required')
         .replace(/\{\{typicalCost\}\}/g, strategy.typicalCost)
         .replace(/\{\{irsReference\}\}/g, strategy.irsReference)
         .replace(/\{\{bestFor\}\}/g, strategy.bestFor)
         .replace(/\{\{datePublished\}\}/g, today)
         .replace(/\{\{dateModified\}\}/g, today)
+        .replace(/\{\{headAssets\}\}/g, renderHeadAssets())
         .replace(/\{\{analyticsHead\}\}/g, renderAnalyticsHead({ gaTrackingId: GA_TRACKING_ID, gtmContainerId: GTM_CONTAINER_ID }))
         .replace(/\{\{tagManagerBody\}\}/g, renderAnalyticsBody({ gtmContainerId: GTM_CONTAINER_ID }))
-        .replace(/\{\{primaryNavLinks\}\}/g, renderPrimaryNavLinks('/tax-strategies'))
-        .replace(/\{\{footerLinks\}\}/g, renderFooterLinks())
+        .replace(/\{\{siteHeader\}\}/g, renderSiteHeader('/tax-strategies'))
+        .replace(/\{\{siteFooter\}\}/g, renderSiteFooter())
         .replace(/\{\{footerYear\}\}/g, String(CURRENT_YEAR))
         .replace(/\{\{benefitsForList\}\}/g, generateBenefitsList(strategy.benefitsFor))
-        .replace(/\{\{benefitsForListWithIcons\}\}/g, generateBenefitsListWithIcons(strategy.benefitsFor))
-        .replace(/\{\{relatedStrategiesList\}\}/g, generateRelatedStrategiesList(strategy.relatedStrategies, allStrategies))
+        .replace(/\{\{relatedStrategiesList\}\}/g, generateRelatedStrategiesList(strategy.relatedStrategies, allStrategies, catalogBySlug))
         .replace(/\{\{faqItems\}\}/g, generateFaqItems(strategy.faqs))
         .replace(/\{\{faqSchema\}\}/g, generateFaqSchema(strategy.faqs));
 
     // Handle minimum property value section
     if (strategy.minimumPropertyValue && strategy.minimumPropertyValue !== 'No minimum') {
-        html = html.replace(/\{\{minimumPropertyValueSection\}\}/g, `
-                        <h3>Minimum Requirements</h3>
-                        <p>This strategy typically requires a minimum property value of <strong>${strategy.minimumPropertyValue}</strong> to be cost-effective.</p>`);
+        html = html.replace(/\{\{minimumPropertyValueRow\}\}/g, `
+                        <div>
+                            <dt>Minimum property value</dt>
+                            <dd>${esc(strategy.minimumPropertyValue)}</dd>
+                        </div>`);
     } else {
-        html = html.replace(/\{\{minimumPropertyValueSection\}\}/g, '');
+        html = html.replace(/\{\{minimumPropertyValueRow\}\}/g, '');
     }
 
     return html;
 }
 
 /**
+ * The hub: one table per category, every strategy on the site in a row.
+ */
+function renderCatalogTables(categories, catalog) {
+    return categories.map((category) => {
+        const rows = catalog.filter((entry) => entry.category === category.id);
+        if (!rows.length) return '';
+        return `
+                <h3 id="${esc(category.id)}">${esc(category.title)}</h3>
+                <p>${esc(category.lead)}</p>
+                <div class="table-scroll">
+                    <table class="guide-table">
+                        <caption class="sr-only">${esc(category.title)} tax strategies</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Strategy</th>
+                                <th scope="col">What it does</th>
+                                <th scope="col">Level</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+${rows.map((row) => `                            <tr>
+                                <th scope="row"><a href="/tax-strategies/${esc(row.slug)}">${esc(row.title)}</a></th>
+                                <td>${esc(row.summary)}</td>
+                                <td>${esc(row.level)}</td>
+                            </tr>`).join('\n')}
+                        </tbody>
+                    </table>
+                </div>`;
+    }).join('\n');
+}
+
+/**
  * Generate the tax strategies index page
  */
-function generateIndexPage(strategies, personas) {
-    const strategyCards = strategies.map(s => `
-                    <a href="/tax-strategies/${s.slug}" class="strategy-card">
-                        <div class="strategy-card__complexity strategy-card__complexity--${s.complexity.toLowerCase()}">${s.complexity}</div>
-                        <h3 class="strategy-card__title">${s.title}</h3>
-                        <p class="strategy-card__desc">${s.shortDescription}</p>
-                        <div class="strategy-card__savings">
-                            <span class="strategy-card__savings-label">Potential Savings:</span>
-                            <span class="strategy-card__savings-value">${s.potentialSavings}</span>
-                        </div>
-                    </a>`).join('\n');
+function generateIndexPage(data) {
+    const { personas, catalog, categories, retirementGuides } = data;
 
-    const personaCards = personas.map(p => `
-                    <a href="/tax-strategies/for/${p.slug}" class="persona-card">
-                        <h3 class="persona-card__title">${p.title}</h3>
-                        <p class="persona-card__desc">${p.description}</p>
-                        <span class="persona-card__count">${p.topStrategies.length} strategies</span>
-                    </a>`).join('\n');
+    const personaLinks = personas
+        .map((p, index) => {
+            const label = p.linkLabel || p.title;
+            const link = `<a href="/tax-strategies/for/${esc(p.slug)}">${esc(label)}</a>`;
+            if (index === personas.length - 1) return `or ${link}`;
+            return link;
+        })
+        .join(', ');
+
+    const retirementLinks = retirementGuides.map((guide) => `
+                        <li><a href="/retirement/${esc(guide.slug)}">${esc(guide.title)}</a> — ${esc(guide.summary)}</li>`).join('');
+
+    const schemaBlocks = [
+        {
+            '@context': 'https://schema.org',
+            '@type': 'CollectionPage',
+            name: 'Tax Strategies for Investors',
+            description: 'Every tax strategy guide on Legacy Investing Show, grouped by the kind of income or asset it applies to.',
+            url: `${SITE_URL}/tax-strategies`,
+            publisher: { '@type': 'Organization', name: 'Legacy Investing Show' },
+            mainEntity: {
+                '@type': 'ItemList',
+                numberOfItems: catalog.length,
+                itemListElement: catalog.map((entry, index) => ({
+                    '@type': 'ListItem',
+                    position: index + 1,
+                    url: `${SITE_URL}/tax-strategies/${entry.slug}`,
+                    name: entry.title
+                }))
+            }
+        },
+        {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+                { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+                { '@type': 'ListItem', position: 2, name: 'Tax Strategies', item: `${SITE_URL}/tax-strategies` }
+            ]
+        },
+        faqSchemaObject(HUB_FAQS)
+    ];
+
+    const description = `Every tax strategy guide on the site in one table: what each one does, who it fits, and how involved it is. ${catalog.length} strategies across real estate, business entities, retirement accounts, and timing.`;
 
     return `<!DOCTYPE html>
 <html lang="en">
@@ -265,400 +363,104 @@ function generateIndexPage(strategies, personas) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Tax Strategies for Investors | Legacy Investing Show</title>
-    <meta name="description" content="Discover powerful tax strategies for real estate investors, business owners, and high-income earners. Learn about cost segregation, 1031 exchanges, REPS, and more.">
+    <meta name="description" content="${esc(description)}">
     <meta name="keywords" content="tax strategies, real estate tax benefits, cost segregation, 1031 exchange, tax deductions, wealth building">
     <meta name="author" content="Preston Seo">
     <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="${GOOGLE_SITE_VERIFICATIONS[0]}">
     <meta name="google-site-verification" content="${GOOGLE_SITE_VERIFICATIONS[1]}">
-    <link rel="canonical" href="https://www.legacyinvestingshow.com/tax-strategies">
+    <link rel="canonical" href="${SITE_URL}/tax-strategies">
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.legacyinvestingshow.com/tax-strategies">
-    <meta property="og:title" content="Tax Strategies for Investors | Legacy Investing Show">
-    <meta property="og:description" content="Discover powerful tax strategies for real estate investors, business owners, and high-income earners.">
+    <meta property="og:url" content="${SITE_URL}/tax-strategies">
+    <meta property="og:title" content="Tax Strategies for Investors">
+    <meta property="og:description" content="${esc(description)}">
+    <meta property="og:image" content="${OG_IMAGE}">
     <meta property="og:site_name" content="Legacy Investing Show">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Tax Strategies for Investors">
-    <meta name="twitter:description" content="Discover powerful tax strategies for real estate investors, business owners, and high-income earners.">
+    <meta name="twitter:description" content="${esc(description)}">
+    <meta name="twitter:image" content="${OG_IMAGE}">
 
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#FAF7F2">
     <link rel="icon" type="image/png" href="/assets/images/logo.png">
     <link rel="apple-touch-icon" href="/assets/images/logo.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    ${renderHeadAssets()}
+    <link rel="stylesheet" href="/assets/css/guides.css">
 
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "CollectionPage",
-        "name": "Tax Strategies for Investors",
-        "description": "Comprehensive guide to tax strategies for real estate investors, business owners, and high-income earners",
-        "url": "https://www.legacyinvestingshow.com/tax-strategies",
-        "publisher": {
-            "@type": "Organization",
-            "name": "Legacy Investing Show"
-        }
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://www.legacyinvestingshow.com/"
-            },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Tax Strategies"
-            }
-        ]
-    }
-    </script>
+${schemaBlocks.map((schema) => `    <script type="application/ld+json">${JSON.stringify(schema)}</script>`).join('\n')}
 
     ${renderAnalyticsHead({ gaTrackingId: GA_TRACKING_ID, gtmContainerId: GTM_CONTAINER_ID })}
-
-    <style>
-        .tax-hero {
-            padding: 8rem 0 4rem;
-            background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
-            text-align: center;
-        }
-        .tax-hero__title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #111827;
-            margin-bottom: 1rem;
-        }
-        @media (min-width: 768px) {
-            .tax-hero__title { font-size: 3.5rem; }
-        }
-        .tax-hero__subtitle {
-            font-size: 1.25rem;
-            color: #4b5563;
-            max-width: 40rem;
-            margin: 0 auto;
-        }
-        .strategies-section {
-            padding: 4rem 0;
-        }
-        .section-title {
-            font-size: 1.75rem;
-            font-weight: 700;
-            color: #111827;
-            margin-bottom: 2rem;
-        }
-        .strategies-grid {
-            display: grid;
-            gap: 1.5rem;
-        }
-        @media (min-width: 768px) {
-            .strategies-grid { grid-template-columns: repeat(2, 1fr); }
-        }
-        @media (min-width: 1024px) {
-            .strategies-grid { grid-template-columns: repeat(3, 1fr); }
-        }
-        .strategy-card {
-            background: white;
-            border: 1px solid #e5e7eb;
-            border-radius: 0.75rem;
-            padding: 1.5rem;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .strategy-card:hover {
-            border-color: #10b981;
-            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15);
-            transform: translateY(-2px);
-        }
-        .strategy-card__complexity {
-            display: inline-block;
-            font-size: 0.625rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            padding: 0.25rem 0.5rem;
-            border-radius: 9999px;
-            margin-bottom: 0.75rem;
-        }
-        .strategy-card__complexity--beginner { background: #d1fae5; color: #065f46; }
-        .strategy-card__complexity--intermediate { background: #fef3c7; color: #92400e; }
-        .strategy-card__complexity--advanced { background: #fee2e2; color: #991b1b; }
-        .strategy-card__title {
-            font-size: 1.125rem;
-            font-weight: 600;
-            color: #111827;
-            margin-bottom: 0.5rem;
-        }
-        .strategy-card__desc {
-            font-size: 0.875rem;
-            color: #6b7280;
-            margin-bottom: 1rem;
-            line-height: 1.5;
-        }
-        .strategy-card__savings {
-            display: flex;
-            flex-direction: column;
-            gap: 0.125rem;
-            padding-top: 1rem;
-            border-top: 1px solid #f3f4f6;
-        }
-        .strategy-card__savings-label {
-            font-size: 0.75rem;
-            color: #9ca3af;
-        }
-        .strategy-card__savings-value {
-            font-size: 0.875rem;
-            font-weight: 600;
-            color: #10b981;
-        }
-        .personas-section {
-            padding: 4rem 0;
-            background: #f9fafb;
-        }
-        .personas-grid {
-            display: grid;
-            gap: 1rem;
-        }
-        @media (min-width: 768px) {
-            .personas-grid { grid-template-columns: repeat(2, 1fr); }
-        }
-        @media (min-width: 1024px) {
-            .personas-grid { grid-template-columns: repeat(3, 1fr); }
-        }
-        .persona-card {
-            background: white;
-            border-radius: 0.75rem;
-            padding: 1.5rem;
-            text-decoration: none;
-            transition: all 0.2s;
-            border: 1px solid #e5e7eb;
-        }
-        .persona-card:hover {
-            border-color: #10b981;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-        .persona-card__title {
-            font-size: 1.125rem;
-            font-weight: 600;
-            color: #111827;
-            margin-bottom: 0.5rem;
-        }
-        .persona-card__desc {
-            font-size: 0.875rem;
-            color: #6b7280;
-            margin-bottom: 0.75rem;
-        }
-        .persona-card__count {
-            font-size: 0.75rem;
-            color: #10b981;
-            font-weight: 500;
-        }
-        .cta-section {
-            padding: 4rem 0;
-            text-align: center;
-        }
-        .cta-card {
-            background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
-            border-radius: 1rem;
-            padding: 3rem 2rem;
-            color: white;
-        }
-        .cta-card__title {
-            font-size: 1.75rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-        .cta-card__text {
-            color: #d1d5db;
-            margin-bottom: 1.5rem;
-            max-width: 32rem;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .cta-card__button {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 1rem 2rem;
-            background: #10b981;
-            color: white;
-            font-weight: 600;
-            border-radius: 0.5rem;
-            text-decoration: none;
-            transition: background 0.2s;
-        }
-        .cta-card__button:hover {
-            background: #059669;
-        }
-    </style>
 </head>
-<body class="bg-white text-gray-900" data-page-type="tax_strategies_hub" data-page-title="Tax Strategies">
+<body class="guide-page" data-page-type="tax_strategies_hub" data-page-title="Tax Strategies">
     ${renderAnalyticsBody({ gtmContainerId: GTM_CONTAINER_ID })}
-    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-gray-900 text-white px-4 py-2 z-50">
-        Skip to main content
-    </a>
+    <a href="#main" class="guide-skip">Skip to main content</a>
 
-    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
-        <nav class="container-custom" aria-label="Main navigation">
-            <div class="flex items-center justify-between h-16">
-                <a href="/" class="flex items-center gap-2 font-medium text-gray-900 hover:text-gray-700 transition-colors">
-                    <img src="/assets/images/logo.png" alt="Legacy Investing Show Logo" width="28" height="28" class="w-7 h-7">
-                    <span>Legacy Investing Show</span>
-                </a>
-                <div class="hidden md:flex items-center gap-4">
-                    ${renderPrimaryNavLinks('/tax-strategies')}
-                </div>
-                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
-            </div>
-            <div id="mobile-menu" class="hidden md:hidden pb-4">
-                <div class="flex flex-col gap-3">
-                    ${renderPrimaryNavLinks('/tax-strategies')}
-                </div>
-            </div>
+    ${renderSiteHeader('/tax-strategies')}
+
+    <div class="container-custom">
+        <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="/" class="breadcrumb__link" itemprop="item"><span itemprop="name">Home</span></a>
+                    <meta itemprop="position" content="1" />
+                </li>
+                <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span class="breadcrumb__current" itemprop="name">Tax strategies</span>
+                    <meta itemprop="position" content="2" />
+                </li>
+            </ol>
         </nav>
-    </header>
-
-    <!-- Breadcrumb Navigation -->
-    <nav aria-label="Breadcrumb" class="container-custom pt-24 pb-4">
-        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-            <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a href="/" class="breadcrumb__link" itemprop="item"><span itemprop="name">Home</span></a>
-                <meta itemprop="position" content="1" />
-            </li>
-            <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <span class="breadcrumb__current" itemprop="name">Tax Strategies</span>
-                <meta itemprop="position" content="2" />
-            </li>
-        </ol>
-    </nav>
+    </div>
 
     <main id="main">
-        <section class="tax-hero">
+        <section class="guide-hero">
             <div class="container-custom">
-                <h1 class="tax-hero__title">Tax Strategies for Investors</h1>
-                <p class="tax-hero__subtitle">Discover proven tax strategies used by real estate investors, business owners, and high-income earners to legally minimize their tax burden.</p>
+                <h1 class="guide-hero__title">Tax strategies for investors</h1>
+                <p class="guide-deck">${catalog.length} strategies, each with its own guide: what it does, who it fits, what it costs to run, and where it breaks. Start from your situation — ${personaLinks} — or read the table below.</p>
             </div>
         </section>
 
-        <section class="intro-section" style="padding: 4rem 0; background: white;">
+        <section class="guide-section">
             <div class="container-custom">
-                <div style="max-width: 48rem; margin: 0 auto;">
-                    <h2 style="font-size: 1.875rem; font-weight: 700; color: #111827; margin-bottom: 1.5rem;">Why Tax Strategy Matters for Building Wealth</h2>
-                    <p style="color: #4b5563; line-height: 1.75; margin-bottom: 1.5rem;">The difference between wealthy investors and average earners often comes down to one thing: tax strategy. While most people focus on increasing income, the truly wealthy focus on keeping more of what they earn. According to IRS data, real estate investors who implement strategic tax planning can reduce their effective tax rate by 15-35% annually.</p>
-                    <p style="color: #4b5563; line-height: 1.75; margin-bottom: 1.5rem;">Whether you're a W-2 employee looking for your first deduction, a real estate investor with multiple properties, or a business owner trying to optimize your tax position, the strategies on this page can save you tens of thousands of dollars—potentially hundreds of thousands over a lifetime.</p>
-                    
-                    <h3 style="font-size: 1.25rem; font-weight: 600; color: #111827; margin: 2rem 0 1rem;">Key Categories of Tax Strategies</h3>
-                    
-                    <div style="margin-bottom: 1.5rem;">
-                        <h4 style="font-weight: 600; color: #111827; margin-bottom: 0.5rem;">1. Real Estate Tax Strategies</h4>
-                        <p style="color: #4b5563; line-height: 1.75;">Real estate offers some of the most powerful tax advantages available. From <a href="/tax-strategies/cost-segregation" style="color: #059669; text-decoration: underline;">cost segregation</a> that accelerates depreciation to the <a href="/tax-strategies/short-term-rental-loophole" style="color: #059669; text-decoration: underline;">short-term rental loophole</a> that allows W-2 employees to deduct losses against ordinary income, these strategies can transform your tax bill. Real estate professional status (REPS) can unlock unlimited passive loss deductions, potentially eliminating your entire tax liability.</p>
-                    </div>
-                    
-                    <div style="margin-bottom: 1.5rem;">
-                        <h4 style="font-weight: 600; color: #111827; margin-bottom: 0.5rem;">2. Business Tax Optimization</h4>
-                        <p style="color: #4b5563; line-height: 1.75;">Business owners have access to deductions that employees simply don't. <a href="/tax-strategies/section-179" style="color: #059669; text-decoration: underline;">Section 179</a> allows immediate expensing of up to $1.16 million in equipment. <a href="/tax-strategies/s-corp-strategy" style="color: #059669; text-decoration: underline;">S-Corp elections</a> can reduce self-employment tax by thousands. The Augusta Rule lets you rent your home to your business for up to 14 days tax-free. These strategies work together to minimize your business tax burden.</p>
-                    </div>
-                    
-                    <div style="margin-bottom: 1.5rem;">
-                        <h4 style="font-weight: 600; color: #111827; margin-bottom: 0.5rem;">3. Retirement & Investment Accounts</h4>
-                        <p style="color: #4b5563; line-height: 1.75;">Self-directed IRAs and Solo 401(k)s allow you to invest retirement funds in real estate and alternative assets while enjoying tax-deferred or tax-free growth. <a href="/tax-strategies/hsa-strategy" style="color: #059669; text-decoration: underline;">Health Savings Accounts</a> offer triple tax advantages: deductible contributions, tax-free growth, and tax-free withdrawals for medical expenses. These accounts are powerful wealth-building tools when used strategically.</p>
-                    </div>
-                    
-                    <div style="background: #f0fdf4; border-left: 4px solid #10b981; padding: 1.5rem; margin: 2rem 0;">
-                        <p style="color: #065f46; font-weight: 500; margin: 0;"><strong>Key Insight:</strong> The average high-income earner who implements just 3-4 of these strategies saves $25,000-$50,000 annually in taxes. Over 10 years, that's $250,000-$500,000 kept in your pocket instead of sent to the IRS.</p>
-                    </div>
+                <div class="guide-prose">
+                    <h2>How to read this library</h2>
+                    <p>Tax strategy is less about finding an unknown deduction than about matching a move to the income you already have. A deduction that transforms a rental owner's return does nothing for a salaried employee with no property, and an entity election that saves self-employment tax can cost more in payroll administration than it returns.</p>
+                    <p>Each guide states the qualification test first, then the mechanics, then a worked example with its assumptions written out. Three things decide whether a strategy survives contact with your return: whether you meet the test, whether you can document it before you file, and whether the work is worth the money it saves.</p>
+
+                    <h2>Every strategy, by category</h2>
+                    <p>Level is about the work and the documentation burden, not the size of the deduction. Beginner strategies you can usually run yourself; advanced ones need a professional and a paper trail built during the year, not after it.</p>
+${renderCatalogTables(categories, catalog)}
+
+                    <h3>Retirement plan guides</h3>
+                    <p>Plan-level guides that sit alongside the account strategies above.</p>
+                    <ul class="guide-linklist">${retirementLinks}
+                    </ul>
+
+                    <h2>Common questions</h2>
+                    ${renderFaqList(HUB_FAQS)}
+
+                    ${plainSourceBlock({ title: 'Tax Strategies Hub', slug: 'tax-strategies', type: 'tax_hub' })}
                 </div>
             </div>
         </section>
 
-        <section class="personas-section">
+        <section class="cta-band">
             <div class="container-custom">
-                <h2 class="section-title">Find Strategies for Your Situation</h2>
-                <div class="personas-grid">
-                    ${personaCards}
+                <h2>Not sure which one applies to you?</h2>
+                <p>The persona pages sequence four or five strategies for one kind of earner, in the order they usually pay off. The compare guides take two strategies that both sound right and show where each one wins.</p>
+                <div class="cta-band-actions">
+                    <a href="/compare" class="btn-primary">Open the compare guides</a>
+                    <a href="/tax-strategies/for/w2-employees" class="btn-secondary">Start from a situation</a>
                 </div>
             </div>
         </section>
-
-        <section class="strategies-section">
-            <div class="container-custom">
-                <h2 class="section-title">All Tax Strategies</h2>
-                <div class="strategies-grid">
-                    ${strategyCards}
-                </div>
-            </div>
-        </section>
-
-        <section class="faq-section" style="padding: 4rem 0; background: #f9fafb;">
-            <div class="container-custom">
-                <h2 style="font-size: 1.875rem; font-weight: 700; color: #111827; margin-bottom: 2rem; text-align: center;">Frequently Asked Questions About Tax Strategies</h2>
-                <div style="max-width: 48rem; margin: 0 auto;">
-                    <div class="faq-item" style="background: white; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 1rem; border: 1px solid #e5e7eb;">
-                        <h3 style="font-weight: 600; color: #111827; margin-bottom: 0.75rem;">Which tax strategy should I implement first?</h3>
-                        <p style="color: #4b5563; line-height: 1.75; margin: 0;">Start with the strategy that offers the highest return for your specific situation. For most investors with rental properties, cost segregation combined with bonus depreciation provides the biggest immediate impact—potentially $20,000-$100,000 in first-year deductions. For W-2 employees, the short-term rental loophole or HSA strategy are excellent starting points that don't require major lifestyle changes.</p>
-                    </div>
-                    <div class="faq-item" style="background: white; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 1rem; border: 1px solid #e5e7eb;">
-                        <h3 style="font-weight: 600; color: #111827; margin-bottom: 0.75rem;">Do I need a CPA to implement these strategies?</h3>
-                        <p style="color: #4b5563; line-height: 1.75; margin: 0;">While some strategies like basic HSA contributions can be done yourself, most advanced strategies require professional guidance. Cost segregation studies must be performed by qualified engineers or tax professionals. 1031 exchanges require a qualified intermediary. Real estate professional status requires careful documentation that a CPA can help establish. The cost of professional help is usually 1-5% of the tax savings generated.</p>
-                    </div>
-                    <div class="faq-item" style="background: white; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 1rem; border: 1px solid #e5e7eb;">
-                        <h3 style="font-weight: 600; color: #111827; margin-bottom: 0.75rem;">Can I use multiple tax strategies together?</h3>
-                        <p style="color: #4b5563; line-height: 1.75; margin: 0;">Absolutely—and you should. The most successful investors stack multiple strategies. For example, you might combine cost segregation with bonus depreciation on a rental property, contribute to a self-directed IRA, maximize your HSA, and implement an S-Corp strategy for your business income. The key is ensuring the strategies complement rather than conflict with each other. Always consult a tax professional when combining multiple advanced strategies.</p>
-                    </div>
-                    <div class="faq-item" style="background: white; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 1rem; border: 1px solid #e5e7eb;">
-                        <h3 style="font-weight: 600; color: #111827; margin-bottom: 0.75rem;">What's the difference between a tax deduction and a tax credit?</h3>
-                        <p style="color: #4b5563; line-height: 1.75; margin: 0;">A tax deduction reduces your taxable income, while a tax credit directly reduces your tax bill dollar-for-dollar. For someone in the 24% tax bracket, a $10,000 deduction saves $2,400 in taxes. A $10,000 credit saves the full $10,000. Most strategies on this page are deductions (like depreciation), but some credits exist—particularly for opportunity zone investments and certain energy-efficient improvements. Deductions are more common in real estate investing.</p>
-                    </div>
-                    <div class="faq-item" style="background: white; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 1rem; border: 1px solid #e5e7eb;">
-                        <h3 style="font-weight: 600; color: #111827; margin-bottom: 0.75rem;">How much can I realistically save with these strategies?</h3>
-                        <p style="color: #4b5563; line-height: 1.75; margin: 0;">Savings vary dramatically based on your income, investments, and which strategies you implement. A W-2 employee might save $5,000-$15,000 annually with HSA and basic deductions. A real estate investor with multiple properties using cost segregation, REPS, and the short-term rental loophole could save $50,000-$150,000+ per year. Business owners often fall in the middle, saving $15,000-$50,000 through entity structuring and expense optimization. The key is starting with the highest-impact strategies for your situation.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section style="padding: 0 0 4rem;">
-            <div class="container-custom" style="max-width: 56rem;">
-                ${renderSourceBlock({ title: 'Tax Strategies Hub', slug: 'tax-strategies', type: 'tax_hub' })}
-            </div>
-        </section>
-
     </main>
 
-    <footer class="minimal-footer">
-        <div class="container-custom">
-            <div class="minimal-footer-content">
-                <div class="footer-brand">
-                    <img src="/assets/images/logo.png" alt="Legacy Investing Show" width="32" height="32">
-                    <span>Legacy Investing Show</span>
-                </div>
-                <div class="footer-links">
-                    ${renderFooterLinks()}
-                </div>
-            </div>
-            <div class="footer-copyright">Copyright ${CURRENT_YEAR}</div>
-        </div>
-    </footer>
+    ${renderSiteFooter()}
 
     <script defer src="/assets/js/main.js"></script>
-    <script>
-        document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-    </script>
 </body>
 </html>`;
 }
@@ -668,27 +470,12 @@ function generateIndexPage(strategies, personas) {
  */
 function generatePersonaBreadcrumbSchema(persona) {
     return {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://www.legacyinvestingshow.com/"
-            },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Tax Strategies",
-                "item": "https://www.legacyinvestingshow.com/tax-strategies"
-            },
-            {
-                "@type": "ListItem",
-                "position": 3,
-                "name": persona.title,
-                "item": `https://www.legacyinvestingshow.com/tax-strategies/for/${persona.slug}`
-            }
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+            { '@type': 'ListItem', position: 2, name: 'Tax Strategies', item: `${SITE_URL}/tax-strategies` },
+            { '@type': 'ListItem', position: 3, name: persona.title, item: `${SITE_URL}/tax-strategies/for/${persona.slug}` }
         ]
     };
 }
@@ -698,179 +485,144 @@ function generatePersonaBreadcrumbSchema(persona) {
  */
 function generatePersonaCollectionSchema(persona) {
     return {
-        "@context": "https://schema.org",
-        "@type": "CollectionPage",
-        "name": `Tax Strategies for ${persona.title}`,
-        "description": persona.description,
-        "url": `https://www.legacyinvestingshow.com/tax-strategies/for/${persona.slug}`,
-        "isPartOf": {
-            "@type": "WebSite",
-            "name": "Legacy Investing Show",
-            "url": "https://www.legacyinvestingshow.com"
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        name: `Tax Strategies for ${persona.title}`,
+        description: persona.description,
+        url: `${SITE_URL}/tax-strategies/for/${persona.slug}`,
+        isPartOf: {
+            '@type': 'WebSite',
+            name: 'Legacy Investing Show',
+            url: SITE_URL
         },
-        "about": {
-            "@type": "Thing",
-            "name": persona.title,
-            "description": persona.description
+        about: {
+            '@type': 'Thing',
+            name: persona.title,
+            description: persona.description
         }
     };
 }
 
 /**
- * Generate FAQ schema for persona pages
+ * Persona FAQs
  */
 function getPersonaFaqs(persona) {
     const faqs = {
         'airbnb-hosts': [
             {
-                question: "What are the best tax strategies for Airbnb hosts?",
-                answer: "The Short-Term Rental Loophole allows Airbnb hosts to deduct rental losses against W-2 income. The Augusta Rule lets you rent your home to your business for up to 14 days tax-free. Cost segregation accelerates depreciation on furnished rental properties."
+                question: 'What are the best tax strategies for Airbnb hosts?',
+                answer: 'The short-term rental loophole lets hosts deduct rental losses against W-2 income when the average stay is seven days or less and they materially participate. The Augusta rule covers renting your home to your own business for up to 14 days. Cost segregation accelerates depreciation on a furnished property.'
             },
             {
-                question: "Can Airbnb hosts qualify for Real Estate Professional Status?",
-                answer: "Yes, if you spend more than 750 hours per year and over 50% of your working time in real property trades or businesses. This unlocks unlimited passive loss deductions against ordinary income."
+                question: 'Can Airbnb hosts qualify for real estate professional status?',
+                answer: 'Only if you spend more than 750 hours a year and over half your working time in real property trades or businesses. Most hosts with a day job cannot clear that bar, which is why the short-term rental loophole exists as a separate route.'
             }
         ],
         'business-owners': [
             {
-                question: "What is the best business structure for tax savings?",
-                answer: "An S-Corporation election can save thousands in self-employment taxes by splitting income between salary and distributions. The optimal structure depends on your income level and business type."
+                question: 'What is the best business structure for tax savings?',
+                answer: 'An S-corporation election can reduce self-employment tax by splitting owner pay between reasonable salary and distributions. Whether it pays depends on profit level, payroll cost, and state treatment, so model it before you elect.'
             },
             {
-                question: "How can business owners deduct equipment purchases?",
-                answer: "Section 179 allows immediate expensing of up to $1.16 million in qualifying equipment. Bonus depreciation offers additional first-year deductions on new and used property."
+                question: 'How can business owners deduct equipment purchases?',
+                answer: 'Section 179 expenses qualifying equipment in the year it is placed in service, up to the annual cap. Bonus depreciation covers additional first-year deductions on new and used property. The two interact, so check the order they apply in.'
             }
         ],
         'high-income-earners': [
             {
-                question: "How can high-income earners reduce their tax burden?",
-                answer: "Backdoor Roth IRAs allow tax-free growth regardless of income limits. Donor-Advised Funds provide immediate charitable deductions. Qualified Opportunity Zone investments defer and reduce capital gains taxes."
+                question: 'How can high-income earners reduce their tax burden?',
+                answer: 'The usable moves are a backdoor or mega backdoor Roth for tax-free growth above the income limits, a donor-advised fund for a deduction in a high-income year, and opportunity zone investments to defer capital gains.'
             },
             {
-                question: "What is the maximum tax rate for high earners?",
-                answer: "The top federal income tax rate is 37%, but with the 3.8% Net Investment Income Tax and state taxes, some taxpayers face rates exceeding 50% in high-tax states."
+                question: 'What is the top marginal rate for high earners?',
+                answer: 'The top federal income tax rate is 37%. Add the 3.8% net investment income tax and a state income tax and the combined marginal rate passes 50% in the highest-tax states.'
             }
         ],
         'real-estate-investors': [
             {
-                question: "What is cost segregation and how does it work?",
-                answer: "Cost segregation accelerates depreciation by reclassifying building components into shorter recovery periods (5, 7, or 15 years instead of 27.5 or 39 years), creating larger early-year deductions."
+                question: 'What is cost segregation and how does it work?',
+                answer: 'It reclassifies building components into 5, 7, and 15-year recovery periods instead of leaving everything in a 27.5 or 39-year building life, which moves deductions into the early years. It takes an engineering-based study to support.'
             },
             {
-                question: "Can I defer capital gains when selling investment property?",
-                answer: "Yes, a 1031 Exchange allows you to defer capital gains taxes by reinvesting proceeds into like-kind property. This strategy can be repeated indefinitely to build wealth tax-deferred."
+                question: 'Can I defer capital gains when selling investment property?',
+                answer: 'A 1031 exchange defers the gain when the proceeds are reinvested in like-kind property through a qualified intermediary, with a 45-day identification window and a 180-day closing window.'
             }
         ],
         'self-employed': [
             {
-                question: "What retirement accounts are available for the self-employed?",
-                answer: "Solo 401(k)s and SEP IRAs both offer high annual contribution ceilings that are updated by the IRS. Check the current-year limits before you implement the strategy."
+                question: 'What retirement accounts are available to the self-employed?',
+                answer: 'Solo 401(k)s and SEP IRAs both allow far higher contributions than an IRA. The solo 401(k) usually wins at lower profit levels because it adds an employee deferral on top of the employer contribution. Check the current-year limits before you fund either.'
             },
             {
-                question: "Can self-employed individuals deduct health insurance premiums?",
-                answer: "Yes, self-employed health insurance premiums are 100% deductible as an adjustment to income. Health Savings Accounts (HSAs) offer additional triple tax advantages."
+                question: 'Can self-employed individuals deduct health insurance premiums?',
+                answer: 'Self-employed health insurance premiums are deductible as an adjustment to income, subject to the earned income limit. A health savings account adds a second, separate deduction if the plan qualifies.'
             }
         ],
         'w2-employees': [
             {
-                question: "What tax strategies are available for W-2 employees?",
-                answer: "W-2 employees can use Backdoor Roth IRAs, Health Savings Accounts, bunching deductions to exceed standard deduction thresholds, and the Short-Term Rental Loophole if they have Airbnb properties."
+                question: 'What tax strategies are available to W-2 employees?',
+                answer: 'A health savings account, a backdoor Roth IRA above the income limits, bunching itemized deductions into alternate years, and the short-term rental loophole if a rental property is part of the plan.'
             },
             {
-                question: "How can W-2 employees deduct rental property losses?",
-                answer: "The Short-Term Rental Loophole allows W-2 employees to deduct rental losses if they average less than 7 days per stay and materially participate, bypassing passive activity loss limitations."
+                question: 'How can W-2 employees deduct rental property losses?',
+                answer: 'The short-term rental loophole treats a rental with an average stay of seven days or less as non-passive when you materially participate, which takes it outside the passive activity loss limits that normally block the deduction.'
             }
         ]
     };
-    
+
     return faqs[persona.slug] || faqs['high-income-earners'];
 }
 
-/**
- * Generate FAQ schema for persona pages
- */
 function generatePersonaFaqSchema(persona) {
-    const personaFaqs = getPersonaFaqs(persona);
-    
-    return {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": personaFaqs.map(faq => ({
-            "@type": "Question",
-            "name": faq.question,
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": faq.answer
-            }
-        }))
-    };
+    return faqSchemaObject(getPersonaFaqs(persona));
 }
 
 /**
- * Generate visible FAQ markup for persona pages.
+ * Persona strategy guidance: one hairline-separated block per strategy.
  */
-function generatePersonaFaqHtml(persona) {
-    return getPersonaFaqs(persona).map((faq, index) => `
-                    <div class="persona-faq__item">
-                        <h3 class="persona-faq__question">${faq.question}</h3>
-                        <p class="persona-faq__answer">${faq.answer}</p>
-                    </div>`).join('\n');
-}
+function renderPersonaStrategies(persona, strategyBySlug, catalogBySlug) {
+    return persona.topStrategies.map((slug) => {
+        const strategy = strategyBySlug.get(slug);
+        const entry = catalogBySlug.get(slug);
+        const title = (entry && entry.title) || (strategy && strategy.title) || formatTitle(slug);
+        const body = strategy ? strategy.fullDescription : (entry ? entry.summary : '');
+        const facts = [];
 
-/**
- * Generate deeper persona-specific strategy guidance.
- */
-function generatePersonaGuidance(persona, relevantStrategies) {
-    const strategyDetails = relevantStrategies.map((strategy, index) => `
-                    <article class="persona-guide__strategy">
-                        <div class="persona-guide__number">${index + 1}</div>
-                        <div>
-                            <h3>${strategy.title}</h3>
-                            <p>${strategy.fullDescription}</p>
-                            <ul>
-                                <li><strong>Best fit:</strong> ${strategy.bestFor}</li>
-                                <li><strong>Potential savings:</strong> ${strategy.potentialSavings}</li>
-                                <li><strong>Complexity:</strong> ${strategy.complexity}${strategy.professionalRequired ? ', professional guidance recommended' : ', usually manageable with careful documentation'}</li>
-                            </ul>
-                            <a href="/tax-strategies/${strategy.slug}">Read the ${strategy.title} guide</a>
-                        </div>
-                    </article>`).join('\n');
+        if (strategy) {
+            facts.push(['Best fit', strategy.bestFor]);
+            facts.push(['Potential savings', strategy.potentialSavings]);
+            facts.push(['Typical cost', strategy.typicalCost]);
+            facts.push(['Level', String(strategy.complexity).toLowerCase()]);
+        } else if (entry) {
+            facts.push(['Level', entry.level]);
+        }
 
-    return `
-                <div class="persona-guide__intro">
-                    <h2>How ${persona.title} Should Prioritize Tax Planning</h2>
-                    <p>${persona.description}. The main mistake is treating every tax strategy like it has the same timing, paperwork, and risk profile. Start with the moves that match your income source, ownership structure, and ability to document the activity before you chase more advanced deductions.</p>
-                    <p>Use the recommendations below as a planning map. Some strategies can be implemented during the year, some need entity or account setup before money moves, and others only work when the documentation is built before the deduction is claimed.</p>
-                </div>
-                <div class="persona-guide__list">
-                    ${strategyDetails}
-                </div>`;
+        const dl = facts.length
+            ? `
+                        <dl class="guide-dl">
+${facts.map(([term, value]) => `                            <div>
+                                <dt>${esc(term)}</dt>
+                                <dd>${esc(value)}</dd>
+                            </div>`).join('\n')}
+                        </dl>`
+            : '';
+
+        return `
+                    <section class="persona-strategy">
+                        <h3><a href="/tax-strategies/${esc(slug)}">${esc(title)}</a></h3>
+                        <p>${esc(body)}</p>${dl}
+                    </section>`;
+    }).join('\n');
 }
 
 /**
  * Generate persona page
  */
-function generatePersonaPage(persona, strategies) {
-    const relevantStrategies = strategies.filter(s => persona.topStrategies.includes(s.slug));
-
-    const strategyCards = relevantStrategies.map(s => `
-                    <a href="/tax-strategies/${s.slug}" class="strategy-card">
-                        <div class="strategy-card__complexity strategy-card__complexity--${s.complexity.toLowerCase()}">${s.complexity}</div>
-                        <h3 class="strategy-card__title">${s.title}</h3>
-                        <p class="strategy-card__desc">${s.shortDescription}</p>
-                        <div class="strategy-card__savings">
-                            <span class="strategy-card__savings-label">Potential Savings:</span>
-                            <span class="strategy-card__savings-value">${s.potentialSavings}</span>
-                        </div>
-                    </a>`).join('\n');
-
-    const personaGuidance = generatePersonaGuidance(persona, relevantStrategies);
-    const personaFaqHtml = generatePersonaFaqHtml(persona);
-
-    // Generate schema markup
+function generatePersonaPage(persona, strategyBySlug, catalogBySlug) {
     const breadcrumbSchema = generatePersonaBreadcrumbSchema(persona);
     const collectionSchema = generatePersonaCollectionSchema(persona);
     const faqSchema = generatePersonaFaqSchema(persona);
+    const description = `${persona.description}. The strategies that usually matter first, what each one requires, and the questions to settle before you file.`;
 
     return `<!DOCTYPE html>
 <html lang="en">
@@ -879,383 +631,97 @@ function generatePersonaPage(persona, strategies) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Tax Strategies for ${persona.title} | Legacy Investing Show</title>
-    <meta name="description" content="${persona.description}. Discover the best tax strategies tailored for ${persona.title.toLowerCase()}.">
-    <meta name="keywords" content="tax strategies ${persona.title.toLowerCase()}, ${persona.topStrategies.join(', ')}">
+    <title>Tax Strategies for ${esc(persona.title)} | Legacy Investing Show</title>
+    <meta name="description" content="${esc(description)}">
+    <meta name="keywords" content="tax strategies ${esc(persona.title.toLowerCase())}, ${esc(persona.topStrategies.join(', '))}">
     <meta name="author" content="Preston Seo">
     <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="${GOOGLE_SITE_VERIFICATIONS[0]}">
     <meta name="google-site-verification" content="${GOOGLE_SITE_VERIFICATIONS[1]}">
-    <link rel="canonical" href="https://www.legacyinvestingshow.com/tax-strategies/for/${persona.slug}">
+    <link rel="canonical" href="${SITE_URL}/tax-strategies/for/${persona.slug}">
 
-    <!-- Schema Markup -->
-    <script type="application/ld+json">
-    ${JSON.stringify(breadcrumbSchema, null, 4)}
-    </script>
-
-    <script type="application/ld+json">
-    ${JSON.stringify(collectionSchema, null, 4)}
-    </script>
-
-    <script type="application/ld+json">
-    ${JSON.stringify(faqSchema, null, 4)}
-    </script>
+    <script type="application/ld+json">${JSON.stringify(breadcrumbSchema)}</script>
+    <script type="application/ld+json">${JSON.stringify(collectionSchema)}</script>
+    <script type="application/ld+json">${JSON.stringify(faqSchema)}</script>
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.legacyinvestingshow.com/tax-strategies/for/${persona.slug}">
-    <meta property="og:title" content="Tax Strategies for ${persona.title}">
-    <meta property="og:description" content="${persona.description}">
+    <meta property="og:url" content="${SITE_URL}/tax-strategies/for/${persona.slug}">
+    <meta property="og:title" content="Tax Strategies for ${esc(persona.title)}">
+    <meta property="og:description" content="${esc(description)}">
+    <meta property="og:image" content="${OG_IMAGE}">
     <meta property="og:site_name" content="Legacy Investing Show">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Tax Strategies for ${persona.title}">
-    <meta name="twitter:description" content="${persona.description}">
+    <meta name="twitter:title" content="Tax Strategies for ${esc(persona.title)}">
+    <meta name="twitter:description" content="${esc(description)}">
+    <meta name="twitter:image" content="${OG_IMAGE}">
 
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#FAF7F2">
     <link rel="icon" type="image/png" href="/assets/images/logo.png">
     <link rel="apple-touch-icon" href="/assets/images/logo.png">
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    ${renderHeadAssets()}
+    <link rel="stylesheet" href="/assets/css/guides.css">
 
     ${renderAnalyticsHead({ gaTrackingId: GA_TRACKING_ID, gtmContainerId: GTM_CONTAINER_ID })}
-
-    <style>
-        .persona-hero {
-            padding: 8rem 0 4rem;
-            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
-        }
-        .persona-hero__badge {
-            display: inline-block;
-            font-size: 0.75rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: #10b981;
-            margin-bottom: 1rem;
-        }
-        .persona-hero__title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #111827;
-            margin-bottom: 1rem;
-        }
-        @media (min-width: 768px) {
-            .persona-hero__title { font-size: 3rem; }
-        }
-        .persona-hero__subtitle {
-            font-size: 1.25rem;
-            color: #4b5563;
-            max-width: 40rem;
-        }
-        .strategies-section {
-            padding: 4rem 0;
-        }
-        .persona-guide {
-            padding: 0 0 4rem;
-        }
-        .persona-guide__intro {
-            max-width: 48rem;
-            margin-bottom: 2rem;
-        }
-        .persona-guide__intro h2,
-        .persona-faq h2 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #111827;
-            margin-bottom: 1rem;
-        }
-        .persona-guide__intro p,
-        .persona-guide__strategy p,
-        .persona-faq__answer {
-            color: #4b5563;
-            line-height: 1.7;
-        }
-        .persona-guide__list {
-            display: grid;
-            gap: 1rem;
-        }
-        .persona-guide__strategy {
-            display: grid;
-            grid-template-columns: auto 1fr;
-            gap: 1rem;
-            padding: 1.25rem 0;
-            border-top: 1px solid #e5e7eb;
-        }
-        .persona-guide__number {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 2rem;
-            height: 2rem;
-            border-radius: 9999px;
-            background: #ecfdf5;
-            color: #047857;
-            font-weight: 700;
-            font-size: 0.875rem;
-        }
-        .persona-guide__strategy h3,
-        .persona-faq__question {
-            color: #111827;
-            font-size: 1.125rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-        .persona-guide__strategy ul {
-            margin: 1rem 0;
-            padding-left: 1.25rem;
-            color: #374151;
-            line-height: 1.6;
-        }
-        .persona-guide__strategy a {
-            color: #047857;
-            font-weight: 600;
-            text-decoration: none;
-        }
-        .persona-guide__strategy a:hover {
-            text-decoration: underline;
-        }
-        .persona-faq {
-            padding: 0 0 4rem;
-        }
-        .persona-faq__grid {
-            display: grid;
-            gap: 1rem;
-        }
-        .persona-faq__item {
-            padding: 1.25rem 0;
-            border-top: 1px solid #e5e7eb;
-        }
-        .section-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #111827;
-            margin-bottom: 2rem;
-        }
-        .strategies-grid {
-            display: grid;
-            gap: 1.5rem;
-        }
-        @media (min-width: 768px) {
-            .strategies-grid { grid-template-columns: repeat(2, 1fr); }
-        }
-        .strategy-card {
-            background: white;
-            border: 1px solid #e5e7eb;
-            border-radius: 0.75rem;
-            padding: 1.5rem;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .strategy-card:hover {
-            border-color: #10b981;
-            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15);
-            transform: translateY(-2px);
-        }
-        .strategy-card__complexity {
-            display: inline-block;
-            font-size: 0.625rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            padding: 0.25rem 0.5rem;
-            border-radius: 9999px;
-            margin-bottom: 0.75rem;
-        }
-        .strategy-card__complexity--beginner { background: #d1fae5; color: #065f46; }
-        .strategy-card__complexity--intermediate { background: #fef3c7; color: #92400e; }
-        .strategy-card__complexity--advanced { background: #fee2e2; color: #991b1b; }
-        .strategy-card__title {
-            font-size: 1.125rem;
-            font-weight: 600;
-            color: #111827;
-            margin-bottom: 0.5rem;
-        }
-        .strategy-card__desc {
-            font-size: 0.875rem;
-            color: #6b7280;
-            margin-bottom: 1rem;
-            line-height: 1.5;
-        }
-        .strategy-card__savings {
-            display: flex;
-            flex-direction: column;
-            gap: 0.125rem;
-            padding-top: 1rem;
-            border-top: 1px solid #f3f4f6;
-        }
-        .strategy-card__savings-label {
-            font-size: 0.75rem;
-            color: #9ca3af;
-        }
-        .strategy-card__savings-value {
-            font-size: 0.875rem;
-            font-weight: 600;
-            color: #10b981;
-        }
-        .breadcrumb {
-            padding: 1rem 0;
-            font-size: 0.875rem;
-        }
-        .breadcrumb a {
-            color: #6b7280;
-            text-decoration: none;
-        }
-        .breadcrumb a:hover {
-            color: #111827;
-        }
-        .breadcrumb span {
-            color: #9ca3af;
-            margin: 0 0.5rem;
-        }
-        .cta-section {
-            padding: 4rem 0;
-            text-align: center;
-        }
-        .cta-card {
-            background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
-            border-radius: 1rem;
-            padding: 3rem 2rem;
-            color: white;
-        }
-        .cta-card__title {
-            font-size: 1.75rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-        .cta-card__text {
-            color: #d1d5db;
-            margin-bottom: 1.5rem;
-            max-width: 32rem;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .cta-card__button {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 1rem 2rem;
-            background: #10b981;
-            color: white;
-            font-weight: 600;
-            border-radius: 0.5rem;
-            text-decoration: none;
-            transition: background 0.2s;
-        }
-        .cta-card__button:hover {
-            background: #059669;
-        }
-    </style>
 </head>
-<body class="bg-white text-gray-900" data-page-type="tax_persona" data-page-slug="${persona.slug}" data-page-title="${persona.title}">
+<body class="guide-page" data-page-type="tax_persona" data-page-slug="${esc(persona.slug)}" data-page-title="${esc(persona.title)}">
     ${renderAnalyticsBody({ gtmContainerId: GTM_CONTAINER_ID })}
-    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-gray-900 text-white px-4 py-2 z-50">
-        Skip to main content
-    </a>
+    <a href="#main" class="guide-skip">Skip to main content</a>
 
-    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
-        <nav class="container-custom" aria-label="Main navigation">
-            <div class="flex items-center justify-between h-16">
-                <a href="/" class="flex items-center gap-2 font-medium text-gray-900 hover:text-gray-700 transition-colors">
-                    <img src="/assets/images/logo.png" alt="Legacy Investing Show Logo" width="28" height="28" class="w-7 h-7">
-                    <span>Legacy Investing Show</span>
-                </a>
-                <div class="hidden md:flex items-center gap-4">
-                    ${renderPrimaryNavLinks('/tax-strategies')}
-                </div>
-                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
-            </div>
-            <div id="mobile-menu" class="hidden md:hidden pb-4">
-                <div class="flex flex-col gap-3">
-                    ${renderPrimaryNavLinks('/tax-strategies')}
-                </div>
-            </div>
+    ${renderSiteHeader('/tax-strategies')}
+
+    <div class="container-custom">
+        <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="/" class="breadcrumb__link" itemprop="item"><span itemprop="name">Home</span></a>
+                    <meta itemprop="position" content="1" />
+                </li>
+                <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="/tax-strategies" class="breadcrumb__link" itemprop="item"><span itemprop="name">Tax strategies</span></a>
+                    <meta itemprop="position" content="2" />
+                </li>
+                <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span class="breadcrumb__current" itemprop="name">${esc(persona.title)}</span>
+                    <meta itemprop="position" content="3" />
+                </li>
+            </ol>
         </nav>
-    </header>
-
-    <!-- Breadcrumb Navigation -->
-    <nav aria-label="Breadcrumb" class="container-custom pt-24 pb-4">
-        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-            <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a href="/" class="breadcrumb__link" itemprop="item"><span itemprop="name">Home</span></a>
-                <meta itemprop="position" content="1" />
-            </li>
-            <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a href="/tax-strategies" class="breadcrumb__link" itemprop="item"><span itemprop="name">Tax Strategies</span></a>
-                <meta itemprop="position" content="2" />
-            </li>
-            <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <span class="breadcrumb__current" itemprop="name">For ${persona.title}</span>
-                <meta itemprop="position" content="3" />
-            </li>
-        </ol>
-    </nav>
+    </div>
 
     <main id="main">
-
-        <section class="persona-hero">
+        <section class="guide-hero">
             <div class="container-custom">
-                <span class="persona-hero__badge">Tax Strategies For</span>
-                <h1 class="persona-hero__title">${persona.title}</h1>
-                <p class="persona-hero__subtitle">${persona.description}</p>
+                <h1 class="guide-hero__title">Tax strategies for ${esc(persona.linkLabel || persona.title)}</h1>
+                <p class="guide-deck">${esc(persona.description)}.</p>
             </div>
         </section>
 
-        <section class="strategies-section">
+        <section class="guide-section">
             <div class="container-custom">
-                <h2 class="section-title">Recommended Strategies for ${persona.title}</h2>
-                <div class="strategies-grid">
-                    ${strategyCards}
+                <div class="guide-prose">
+                    <h2>Where to start</h2>
+                    <p>The strategies below are ordered by how often they matter for this group, not by size of deduction. Some can be put in place during the year, some need an account or entity opened before money moves, and some only work if the documentation exists before the deduction is claimed.</p>
+${renderPersonaStrategies(persona, strategyBySlug, catalogBySlug)}
+
+                    <h2>Common questions</h2>
+                    ${renderFaqList(getPersonaFaqs(persona))}
+
+                    <h2>Related reading</h2>
+                    <ul class="guide-linklist">
+                        <li><a href="/tax-strategies">Every tax strategy on the site</a> — the full table, grouped by category.</li>
+                        <li><a href="/compare">Compare guides</a> — head-to-head when two strategies both look right.</li>
+                    </ul>
+
+                    ${plainSourceBlock({ title: persona.title, slug: persona.slug, type: 'persona' })}
                 </div>
             </div>
         </section>
-
-        <section class="persona-guide">
-            <div class="container-custom">
-                ${personaGuidance}
-            </div>
-        </section>
-
-        <section class="persona-faq">
-            <div class="container-custom" style="max-width: 56rem;">
-                <h2>Common Questions for ${persona.title}</h2>
-                <div class="persona-faq__grid">
-                    ${personaFaqHtml}
-                </div>
-            </div>
-        </section>
-
-        <section style="padding: 0 0 3rem;">
-            <div class="container-custom" style="max-width: 56rem;">
-                ${renderSourceBlock({ title: persona.title, slug: persona.slug, type: 'persona' })}
-            </div>
-        </section>
-
     </main>
 
-    <footer class="minimal-footer">
-        <div class="container-custom">
-            <div class="minimal-footer-content">
-                <div class="footer-brand">
-                    <img src="/assets/images/logo.png" alt="Legacy Investing Show" width="32" height="32">
-                    <span>Legacy Investing Show</span>
-                </div>
-                <div class="footer-links">
-                    ${renderFooterLinks()}
-                </div>
-            </div>
-            <div class="footer-copyright">Copyright ${CURRENT_YEAR}</div>
-        </div>
-    </footer>
+    ${renderSiteFooter()}
 
     <script defer src="/assets/js/main.js"></script>
-    <script>
-        document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-    </script>
 </body>
 </html>`;
 }
@@ -1266,37 +732,37 @@ function generatePersonaPage(persona, strategies) {
 function build() {
     console.log('Starting tax strategies build...\n');
 
-    // Load data and template
     const data = loadData();
     const template = loadTemplate();
     const strategies = data.strategies;
     const personas = data.personas;
+    const catalog = data.catalog || [];
+    const catalogBySlug = new Map(catalog.map((entry) => [entry.slug, entry]));
+    const strategyBySlug = new Map(strategies.map((entry) => [entry.slug, entry]));
 
-    console.log(`Found ${strategies.length} strategies`);
+    console.log(`Found ${strategies.length} templated strategies`);
+    console.log(`Found ${catalog.length} catalogued strategy pages`);
     console.log(`Found ${personas.length} personas\n`);
 
-    // Ensure output directories exist
     ensureDir(OUTPUT_DIR);
     ensureDir(path.join(OUTPUT_DIR, 'for'));
 
     let successCount = 0;
     let errorCount = 0;
 
-    // Build individual strategy pages
     console.log('Building strategy pages...');
     let skippedCount = 0;
     for (const strategy of strategies) {
         try {
             const outputPath = path.join(OUTPUT_DIR, `${strategy.slug}.html`);
-            
-            // Skip if file already exists and is comprehensive
+
             if (shouldSkipFile(outputPath)) {
-                console.log(`  Skipped: ${strategy.slug}.html (comprehensive content exists)`);
+                console.log(`  Skipped: ${strategy.slug}.html (long-form page on disk)`);
                 skippedCount++;
                 continue;
             }
-            
-            const html = buildStrategyPage(strategy, template, strategies);
+
+            const html = buildStrategyPage(strategy, template, strategies, catalogBySlug);
             fs.writeFileSync(outputPath, html);
             console.log(`  Built: ${strategy.slug}.html`);
             successCount++;
@@ -1306,11 +772,10 @@ function build() {
         }
     }
 
-    // Build persona pages
     console.log('\nBuilding persona pages...');
     for (const persona of personas) {
         try {
-            const html = generatePersonaPage(persona, strategies);
+            const html = generatePersonaPage(persona, strategyBySlug, catalogBySlug);
             const outputPath = path.join(OUTPUT_DIR, 'for', `${persona.slug}.html`);
             fs.writeFileSync(outputPath, html);
             console.log(`  Built: for/${persona.slug}.html`);
@@ -1321,12 +786,10 @@ function build() {
         }
     }
 
-    // Build index page
     console.log('\nBuilding index page...');
     try {
-        const indexHtml = generateIndexPage(strategies, personas);
-        const indexPath = path.join(OUTPUT_DIR, 'index.html');
-        fs.writeFileSync(indexPath, indexHtml);
+        const indexHtml = generateIndexPage(data);
+        fs.writeFileSync(path.join(OUTPUT_DIR, 'index.html'), indexHtml);
         console.log('  Built: index.html');
         successCount++;
     } catch (error) {
@@ -1334,17 +797,19 @@ function build() {
         errorCount++;
     }
 
-    // Summary
+    const missing = catalog.filter((entry) => !fs.existsSync(path.join(OUTPUT_DIR, `${entry.slug}.html`)));
+    if (missing.length) {
+        console.warn(`\nWarning: catalog lists ${missing.length} page(s) with no HTML on disk: ${missing.map((m) => m.slug).join(', ')}`);
+    }
+
     console.log('\n-------------------');
     console.log('Build complete!');
     console.log(`Successfully built: ${successCount} page(s)`);
-    console.log(`Skipped (comprehensive): ${skippedCount} page(s)`);
+    console.log(`Skipped (long-form): ${skippedCount} page(s)`);
     if (errorCount > 0) {
         console.log(`Errors: ${errorCount}`);
     }
-    console.log(`Total pages: ${strategies.length} strategies + ${personas.length} personas + 1 index = ${strategies.length + personas.length + 1}`);
     console.log('-------------------\n');
 }
 
-// Run build
 build();

@@ -1,0 +1,1456 @@
+/* ==========================================================================
+   guides.css — Read register for hubs, guides, compare, topics, markets.
+   Loaded after styles.css by every generated guide page and by the frozen
+   long-form pages swept by scripts/sweep-frozen-guides.js. Plain CSS only:
+   palette, type and shell come from styles.css (:root tokens, .container-custom,
+   .site-header, .site-footer).
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Page frame
+   -------------------------------------------------------------------------- */
+
+body {
+    background: var(--white);
+}
+
+.guide-page {
+    background: var(--white);
+}
+
+.container,
+.guide-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .container,
+    .guide-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+.guide-measure {
+    max-width: 72ch;
+}
+
+.guide-section {
+    padding: 3rem 0;
+}
+
+.guide-section--tight {
+    padding: 1.75rem 0 3rem;
+}
+
+.guide-section--alt {
+    background: var(--cream);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+/* Frozen-page section wrappers keep their old names. */
+.content-section,
+.strategies-section,
+.personas-section,
+.persona-guide,
+.persona-faq,
+.library-section,
+.resource-main .section {
+    padding: 2.5rem 0;
+}
+
+.resource-main {
+    padding-top: 0;
+}
+
+/* --------------------------------------------------------------------------
+   2. Breadcrumbs
+   -------------------------------------------------------------------------- */
+
+.breadcrumb,
+ol.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 1.5rem 0 0;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+.breadcrumb a,
+.breadcrumb__link {
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover,
+.breadcrumb__link:hover {
+    color: var(--text-primary);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
+.breadcrumb__item::after {
+    content: "/";
+    margin-left: 0.5rem;
+    color: var(--text-light);
+}
+
+.breadcrumb__item:last-child::after {
+    content: none;
+}
+
+.breadcrumb__current {
+    color: var(--text-muted);
+}
+
+.breadcrumb span.sep,
+.breadcrumb > span {
+    color: var(--text-light);
+}
+
+/* --------------------------------------------------------------------------
+   3. Hero
+   -------------------------------------------------------------------------- */
+
+.guide-hero,
+.strategy-hero,
+.persona-hero,
+.tax-hero,
+.compare-hero,
+.library-hero,
+.resource-hero {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    padding: 1.5rem 0 2.5rem;
+    text-align: left;
+}
+
+.guide-hero__title,
+.strategy-title,
+.persona-hero__title,
+.tax-hero__title,
+.compare-title,
+.library-hero h1,
+.hero-title {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(2.125rem, 4.5vw, 3.25rem);
+    font-weight: 400;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+    text-wrap: balance;
+    max-width: 24ch;
+    margin: 0 0 1rem;
+}
+
+.guide-deck,
+.strategy-subtitle,
+.persona-hero__subtitle,
+.tax-hero__subtitle,
+.compare-subtitle,
+.library-hero p,
+.hero-copy {
+    max-width: 68ch;
+    margin: 0 0 0.75rem;
+    color: var(--text-secondary);
+    font-size: 1.0625rem;
+    line-height: 1.7;
+}
+
+.guide-deck a,
+.hero-copy a {
+    color: var(--navy);
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.15em;
+    font-weight: 500;
+}
+
+.guide-deck a:hover,
+.hero-copy a:hover {
+    text-decoration-color: var(--navy);
+}
+
+.guide-hero__meta,
+.irs-reference {
+    display: block;
+    margin-top: 1.25rem;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+.irs-reference svg {
+    display: none;
+}
+
+/* Chrome removed by the sweep; neutralised here so any straggler is invisible. */
+.strategy-badge,
+.persona-hero__badge,
+.compare-badge,
+.library-hero__eyebrow,
+.eyebrow,
+.library-card__eyebrow,
+.snapshot-card__eyebrow,
+.sidebar-card__eyebrow,
+.stack-card__index,
+.how-step__num,
+.persona-guide__number,
+.compare-anchor-nav,
+.meta-pill,
+.reading-progress {
+    display: none !important;
+}
+
+/* --------------------------------------------------------------------------
+   4. Prose
+   -------------------------------------------------------------------------- */
+
+.prose-content,
+.guide-prose,
+.minimal-content,
+.persona-guide__intro,
+.compare-prose {
+    max-width: 72ch;
+    color: var(--text-secondary);
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    background: none;
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+    border-radius: 0;
+}
+
+.prose-content h2,
+.guide-prose h2,
+.minimal-content h2,
+.guide-h2 {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.625rem, 3vw, 2.125rem);
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+    text-wrap: balance;
+    margin: 3rem 0 1rem;
+}
+
+.prose-content h3,
+.guide-prose h3,
+.minimal-content h3 {
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+    font-size: 1.375rem;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    color: var(--text-primary);
+    margin: 2.25rem 0 0.75rem;
+}
+
+.prose-content h4,
+.guide-prose h4,
+.minimal-content h4 {
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 1.75rem 0 0.5rem;
+}
+
+.prose-content p,
+.guide-prose p,
+.minimal-content p {
+    margin: 0 0 1.15rem;
+}
+
+.prose-content ul,
+.guide-prose ul,
+.minimal-content ul,
+.checklist,
+.bullet-list {
+    list-style: disc;
+}
+
+.prose-content ol,
+.guide-prose ol,
+.minimal-content ol {
+    list-style: decimal;
+}
+
+.prose-content ul,
+.prose-content ol,
+.guide-prose ul,
+.guide-prose ol,
+.minimal-content ul,
+.minimal-content ol {
+    margin: 0 0 1.25rem;
+    padding-left: 1.35rem;
+}
+
+.prose-content li::marker,
+.guide-prose li::marker,
+.minimal-content li::marker {
+    color: var(--text-light);
+}
+
+.prose-content li,
+.guide-prose li,
+.minimal-content li {
+    margin-bottom: 0.55rem;
+}
+
+.prose-content strong,
+.guide-prose strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.prose-content a,
+.guide-prose a,
+.minimal-content a,
+.internal-link,
+.inline-link,
+.stack-card__link {
+    color: var(--navy);
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.15em;
+    font-weight: 500;
+}
+
+.prose-content a:hover,
+.guide-prose a:hover,
+.minimal-content a:hover,
+.internal-link:hover,
+.inline-link:hover {
+    text-decoration-color: var(--navy);
+}
+
+.guide-lead {
+    font-size: 1.1875rem;
+    line-height: 1.65;
+    color: var(--text-secondary);
+}
+
+/* --------------------------------------------------------------------------
+   5. Single column: the old 2fr/1fr rails collapse to one reading column
+   -------------------------------------------------------------------------- */
+
+.content-grid,
+.compare-hero__grid,
+.library-hero__grid,
+.hero-grid,
+.section-grid,
+.split-panels,
+.snapshot-grid,
+.card-grid,
+.faq-grid,
+.how-it-works,
+.strategies-grid,
+.personas-grid,
+.persona-guide__list,
+.persona-faq__grid,
+.library-grid {
+    display: block;
+}
+
+.compare-hero__panel,
+.library-hero__panel,
+.hero-panel,
+.snapshot-card,
+.panel,
+.how-step,
+.info-card,
+.stack-card,
+.faq-card,
+.surface,
+.library-card,
+.strategy-card,
+.persona-card {
+    background: none;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    color: inherit;
+    padding: 0;
+}
+
+.split-panels > .panel + .panel,
+.snapshot-grid > .snapshot-card + .snapshot-card {
+    margin-top: 1.25rem;
+}
+
+/* --------------------------------------------------------------------------
+   6. The unboxed rail (former sidebar cards)
+   -------------------------------------------------------------------------- */
+
+.sidebar,
+.guide-rail {
+    display: block;
+    position: static;
+    max-width: 72ch;
+    margin: 3rem 0 0;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--border);
+}
+
+.sidebar-card,
+.guide-rail__block {
+    background: none !important;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    margin: 0 0 2rem;
+    color: var(--text-secondary);
+}
+
+.sidebar-card:last-child,
+.guide-rail__block:last-child {
+    margin-bottom: 0;
+}
+
+.sidebar-card__title,
+.guide-rail__title {
+    font-size: 1.0625rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0 0 0.75rem;
+}
+
+.sidebar-card__body {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+ul.sidebar-list,
+ul.benefits-list,
+ul.related-strategies,
+ul.guide-linklist,
+.sidebar-list,
+.benefits-list,
+.related-strategies,
+.guide-linklist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-list li,
+.benefits-list li,
+.related-strategies li,
+.guide-linklist li {
+    display: block;
+    margin: 0;
+    padding: 0.6rem 0;
+    border-top: 1px solid var(--border-light);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+.sidebar-list li:first-child,
+.benefits-list li:first-child,
+.related-strategies li:first-child,
+.guide-linklist li:first-child {
+    border-top: 0;
+}
+
+.benefits-list svg,
+.related-strategies svg {
+    display: none;
+}
+
+.sidebar-list a,
+.related-strategies a,
+.guide-linklist a {
+    display: inline;
+    padding: 0;
+    background: none;
+    color: var(--navy);
+    font-size: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+    text-underline-offset: 0.15em;
+}
+
+.sidebar-list a:hover,
+.related-strategies a:hover,
+.guide-linklist a:hover {
+    background: none;
+    text-decoration-color: var(--navy);
+}
+
+/* --------------------------------------------------------------------------
+   7. Definition lists (at a glance, FAQ, key facts)
+   -------------------------------------------------------------------------- */
+
+.guide-dl {
+    margin: 1.75rem 0;
+    max-width: 60ch;
+    border-top: 1px solid var(--border);
+}
+
+.guide-dl > div {
+    display: grid;
+    grid-template-columns: minmax(9rem, 15rem) 1fr;
+    gap: 0.5rem 1.5rem;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.guide-dl dt {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.9375rem;
+}
+
+.guide-dl dd {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 599px) {
+    .guide-dl > div {
+        grid-template-columns: 1fr;
+        gap: 0.15rem;
+    }
+}
+
+.guide-figure {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.25rem 0.75rem;
+    margin: 0 0 0.5rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.guide-figure span {
+    color: var(--text-muted);
+    font-size: 0.9375rem;
+}
+
+.guide-figure strong {
+    color: var(--text-primary);
+    font-size: 1.125rem;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+}
+
+.persona-strategy {
+    padding: 1.75rem 0 0.5rem;
+    border-top: 1px solid var(--border-light);
+}
+
+.persona-strategy:first-of-type {
+    border-top: 1px solid var(--border);
+}
+
+.persona-strategy h3 {
+    margin-top: 0.5rem;
+}
+
+.guide-faq {
+    margin: 1.5rem 0 0;
+    max-width: 72ch;
+    border-top: 1px solid var(--border);
+}
+
+.guide-faq dt {
+    margin: 0;
+    padding: 1.5rem 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.guide-faq dd {
+    margin: 0;
+    padding: 0 0 1.5rem;
+    border-bottom: 1px solid var(--border-light);
+    color: var(--text-secondary);
+    font-size: 1.0625rem;
+    line-height: 1.7;
+}
+
+/* --------------------------------------------------------------------------
+   8. Link rows (hub listings)
+   -------------------------------------------------------------------------- */
+
+ul.guide-rows,
+.guide-rows {
+    margin: 1.5rem 0 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid var(--border);
+    max-width: 78ch;
+}
+
+.guide-rows > li {
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.guide-rows h3,
+.guide-row__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.35;
+    margin: 0 0 0.35rem;
+    color: var(--text-primary);
+}
+
+.guide-rows h3 a,
+.guide-row__title a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.guide-rows h3 a:hover,
+.guide-row__title a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+    text-underline-offset: 0.15em;
+}
+
+.guide-rows p {
+    margin: 0 0 0.3rem;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.65;
+    max-width: 70ch;
+}
+
+.guide-row__note {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+}
+
+.guide-row__date {
+    display: block;
+    margin-top: 0.3rem;
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    font-variant-numeric: tabular-nums;
+}
+
+/* Frozen-page and generator list blocks reduced to the same rows. */
+.hub-list,
+.resource-list {
+    display: block;
+    margin: 1.5rem 0 0;
+    border-top: 1px solid var(--border);
+    max-width: 78ch;
+}
+
+.hub-list a,
+.resource-list a {
+    display: block;
+    padding: 1.1rem 0;
+    border-bottom: 1px solid var(--border-light);
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    background: none;
+    box-shadow: none;
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.hub-list strong,
+.resource-list strong {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 1.1875rem;
+    font-weight: 600;
+}
+
+.hub-list a:hover strong,
+.resource-list a:hover strong {
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+    text-underline-offset: 0.15em;
+}
+
+.hub-list span,
+.resource-list span {
+    display: block;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+/* --------------------------------------------------------------------------
+   9. Tables
+   -------------------------------------------------------------------------- */
+
+.table-scroll,
+.table-wrap,
+.table-wrapper {
+    overflow-x: auto;
+    margin: 1.75rem 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.guide-table,
+.comparison-table,
+.compare-table,
+.calculation-table,
+.real-numbers-table,
+.prose-content table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: visible;
+    font-size: 0.9375rem;
+    font-variant-numeric: tabular-nums;
+    min-width: 34rem;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.guide-table th,
+.comparison-table th,
+.compare-table th,
+.calculation-table th,
+.real-numbers-table th,
+.prose-content table th {
+    background: var(--cream-dark);
+    color: var(--text-primary);
+    text-align: left;
+    vertical-align: bottom;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: none;
+    padding: 0.75rem 0.9rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.guide-table td,
+.comparison-table td,
+.compare-table td,
+.calculation-table td,
+.real-numbers-table td,
+.prose-content table td {
+    padding: 0.75rem 0.9rem;
+    vertical-align: top;
+    border-bottom: 1px solid var(--border-light);
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.guide-table tr:last-child td,
+.comparison-table tr:last-child td,
+.compare-table tr:last-child td {
+    border-bottom: 0;
+}
+
+.guide-table tbody tr:nth-child(2n) > *,
+.comparison-table tr:nth-child(2n) > *,
+.compare-table tr.alt > * {
+    background: var(--cream);
+}
+
+.guide-table tbody th,
+.comparison-table tbody th,
+.compare-table tbody th {
+    background: none;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 0.9375rem;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.guide-table td strong,
+.comparison-table td strong,
+.compare-table td strong {
+    color: var(--text-primary);
+}
+
+.guide-table--plain {
+    min-width: 0;
+}
+
+/* Six-column scorecards stack into labelled rows on a phone. */
+@media (max-width: 719px) {
+    .compare-table {
+        min-width: 0;
+        border-top: 0;
+    }
+
+    .compare-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+    }
+
+    .compare-table,
+    .compare-table tbody,
+    .compare-table tr,
+    .compare-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .compare-table tr {
+        padding: 0.75rem 0;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .compare-table tr.alt > * {
+        background: none;
+    }
+
+    .compare-table td {
+        border-bottom: 0;
+        padding: 0.35rem 0;
+    }
+
+    .compare-table td::before {
+        content: attr(data-label);
+        display: block;
+        margin-bottom: 0.15rem;
+        color: var(--text-muted);
+        font-size: 0.8125rem;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   10. Panels that stay (a genuinely distinct object only)
+   -------------------------------------------------------------------------- */
+
+.guide-note,
+.highlight-box,
+.bottom-line-box,
+.callout-box,
+.info-box,
+.pro-tip,
+.warning-box,
+.expert-strategy-box,
+.quick-summary,
+.step-box,
+.mistake-card,
+.comparison-box,
+.tool-item,
+.tax-state-card,
+.timeline-step {
+    display: block;
+    background: none;
+    border: 0;
+    border-left: 0;
+    border-radius: 0;
+    padding: 0;
+    margin: 0 0 1.15rem;
+    color: var(--text-secondary);
+    box-shadow: none;
+}
+
+.guide-note strong,
+.highlight-box strong,
+.bottom-line-box strong,
+.callout-box strong {
+    color: var(--text-primary);
+}
+
+.calculation-box,
+.real-numbers-box,
+.example-box,
+.source-note {
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+    border-radius: 0.5rem;
+    padding: 1.25rem 1.35rem;
+    margin: 1.75rem 0;
+    color: var(--text-secondary);
+    box-shadow: none;
+}
+
+.calculation-box h4,
+.real-numbers-box h4,
+.example-box h4,
+.calculation-box__title,
+.source-note h2,
+.source-note h3 {
+    margin: 0 0 0.6rem;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.source-note ul {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.source-note li {
+    margin-bottom: 0.5rem;
+}
+
+.calculation-line {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.35rem 0;
+    border-bottom: 1px solid var(--border-light);
+    font-variant-numeric: tabular-nums;
+}
+
+.calculation-line--total {
+    border-bottom: 0;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* --------------------------------------------------------------------------
+   11. Table of contents blocks on frozen pages
+   -------------------------------------------------------------------------- */
+
+.toc,
+.toc-section,
+.toc-nav,
+.table-of-contents {
+    margin: 2rem 0;
+    padding: 1.25rem 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: none;
+    border-radius: 0;
+}
+
+.toc__title,
+.toc-section__title,
+.toc-nav__title,
+.toc-section h3,
+.table-of-contents h3 {
+    margin: 0 0 0.65rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.toc__list,
+.toc-section ul,
+.toc-section ol,
+.toc-nav ol,
+.table-of-contents ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    columns: 2;
+    column-gap: 2rem;
+}
+
+.toc__item,
+.toc-section li,
+.toc-nav li,
+.table-of-contents li {
+    margin-bottom: 0.4rem;
+    break-inside: avoid;
+    font-size: 0.9375rem;
+}
+
+.toc__link,
+.toc-section a,
+.toc-nav a,
+.table-of-contents a {
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+.toc__link:hover,
+.toc-section a:hover,
+.toc-nav a:hover,
+.table-of-contents a:hover {
+    color: var(--navy);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
+@media (max-width: 599px) {
+    .toc__list,
+    .toc-section ul,
+    .toc-section ol,
+    .toc-nav ol,
+    .table-of-contents ul {
+        columns: 1;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   12. FAQ accordion (frozen pages and compare pages)
+   -------------------------------------------------------------------------- */
+
+.faq-section {
+    background: none;
+    padding: 2.5rem 0 3rem;
+    border-top: 1px solid var(--border);
+}
+
+.faq-section__title {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.625rem, 3vw, 2.125rem);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+    text-align: left;
+    margin: 0 0 1rem;
+}
+
+.faq-list {
+    max-width: 72ch;
+    margin: 0;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.faq-item:last-child {
+    border-bottom: 0;
+}
+
+.faq-item {
+    background: none;
+    border: 0;
+    border-bottom: 1px solid var(--border-light);
+    border-radius: 0;
+    margin: 0;
+    box-shadow: none;
+    overflow: visible;
+}
+
+/* A few frozen pages reuse .faq-item for a plain takeaway line. */
+.faq-item > p {
+    margin: 0;
+    padding: 0.9rem 0;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.faq-question,
+.faq-toggle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 1.1rem 0;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    text-align: left;
+    font-family: inherit;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.faq-question:hover,
+.faq-toggle:hover {
+    background: none;
+    color: var(--navy);
+}
+
+.faq-chevron {
+    flex: none;
+    width: 1.1rem;
+    height: 1.1rem;
+    color: var(--text-muted);
+    transition: transform 0.25s var(--ease-smooth);
+}
+
+.faq-question[aria-expanded="true"] .faq-chevron,
+.faq-toggle[aria-expanded="true"] .faq-chevron {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    display: none;
+    padding: 0 0 1.25rem;
+    color: var(--text-secondary);
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    max-width: 70ch;
+}
+
+.faq-answer--open {
+    display: block;
+}
+
+.faq-answer p {
+    margin: 0;
+}
+
+/* Native <details> FAQs on a few frozen guides. */
+main details[class] {
+    background: none;
+    border: 0;
+    border-bottom: 1px solid var(--border-light);
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0.35rem 0;
+    max-width: 72ch;
+}
+
+main details[class] summary {
+    padding: 0.9rem 0;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    list-style: none;
+}
+
+main details[class] summary::-webkit-details-marker {
+    display: none;
+}
+
+main details[class][open] summary .faq-chevron {
+    transform: rotate(180deg);
+}
+
+main details[class] > p {
+    max-width: 70ch;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+/* --------------------------------------------------------------------------
+   13. One navy CTA band per page
+   -------------------------------------------------------------------------- */
+
+.cta-card,
+.cta-box {
+    background: var(--navy);
+    border-radius: 0;
+    padding: 3rem 0;
+    color: #e2e8f0;
+    box-shadow: none;
+    text-align: left;
+}
+
+.cta-section {
+    padding: 0;
+    text-align: left;
+}
+
+.cta-band__inner {
+    max-width: 60ch;
+}
+
+/* The CTA band already closes the page; the footer follows it directly. */
+body:has(.cta-band) .site-footer {
+    margin-top: 0;
+}
+
+.cta-card__title,
+.cta-box h2 {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.5rem, 2.8vw, 2rem);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    margin: 0 0 0.75rem;
+}
+
+.cta-card__text,
+.cta-box p {
+    margin: 0 0 1.5rem;
+    max-width: 60ch;
+    color: #cbd5e1;
+    font-size: 1.0625rem;
+    line-height: 1.7;
+}
+
+.cta-card__button,
+.cta-button,
+.ghost-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background: var(--gold);
+    color: var(--navy);
+    border: 0;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background 0.2s var(--ease-smooth);
+}
+
+.cta-card__button:hover,
+.cta-button:hover,
+.ghost-button:hover {
+    background: var(--gold-light);
+    transform: none;
+}
+
+.ghost-button {
+    background: none;
+    color: #e2e8f0;
+    border: 1px solid rgba(226, 232, 240, 0.35);
+}
+
+.ghost-button:hover {
+    background: rgba(226, 232, 240, 0.08);
+}
+
+.cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    margin-top: 0;
+}
+
+/* --------------------------------------------------------------------------
+   14. Frozen article-header pages (retirement, a few strategy guides)
+   -------------------------------------------------------------------------- */
+
+.minimal-article {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.minimal-article-header {
+    padding: 1.5rem 0 2rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2.5rem;
+}
+
+.minimal-article-title {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(2rem, 4.2vw, 3rem);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+    text-wrap: balance;
+    margin: 0 0 1rem;
+}
+
+.minimal-article-meta,
+.minimal-article-author {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--text-muted);
+    font-size: 0.875rem;
+}
+
+.minimal-article-author {
+    margin-top: 1rem;
+    color: var(--text-secondary);
+}
+
+.author-avatar {
+    border-radius: 9999px;
+}
+
+.meta-dot {
+    width: 3px;
+    height: 3px;
+    border-radius: 9999px;
+    background: var(--text-light);
+}
+
+.author-bio,
+.related-topics {
+    max-width: 72ch;
+    margin: 2.5rem 0 0;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--border);
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+/* --------------------------------------------------------------------------
+   15. Compare pages
+   -------------------------------------------------------------------------- */
+
+.compare-verdict {
+    margin: 1.5rem 0 0;
+    max-width: 60ch;
+    border-top: 1px solid var(--border);
+}
+
+.compare-verdict > div {
+    display: grid;
+    grid-template-columns: minmax(6rem, 10rem) 1fr;
+    gap: 0.5rem 1.5rem;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.compare-verdict dt {
+    color: var(--text-muted);
+    font-size: 0.9375rem;
+}
+
+.compare-verdict dd {
+    margin: 0;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+@media (max-width: 599px) {
+    .compare-verdict > div {
+        grid-template-columns: 1fr;
+        gap: 0.15rem;
+    }
+}
+
+.compare-note {
+    background: none;
+    border: 0;
+    border-left: 0;
+    border-radius: 0;
+    padding: 0;
+    margin: 0 0 1.15rem;
+    color: var(--text-secondary);
+}
+
+.compare-outline-nav {
+    margin: 1.5rem 0 2.5rem;
+    padding: 1.25rem 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.compare-outline-nav .guide-rail__title {
+    margin-bottom: 0.65rem;
+    font-size: 1rem;
+}
+
+ul.compare-outline,
+.compare-outline {
+    margin: 0 0 1.5rem;
+    padding: 0;
+    list-style: none;
+    columns: 2;
+    column-gap: 2rem;
+}
+
+.compare-outline li {
+    margin-bottom: 0.45rem;
+    break-inside: avoid;
+    font-size: 0.9375rem;
+}
+
+@media (max-width: 599px) {
+    .compare-outline {
+        columns: 1;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   16. Markets, renters insurance, topics
+   -------------------------------------------------------------------------- */
+
+.section-title {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.625rem, 3vw, 2.125rem);
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+    text-wrap: balance;
+    margin: 0 0 1rem;
+}
+
+.section-copy,
+.surface p,
+.info-card p,
+.stack-card p,
+.faq-card p {
+    color: var(--text-secondary);
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    max-width: 72ch;
+    margin: 0 0 1.15rem;
+}
+
+.checklist,
+.bullet-list {
+    margin: 0 0 1.25rem;
+    padding-left: 1.35rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    max-width: 72ch;
+}
+
+.checklist li,
+.bullet-list li {
+    margin-bottom: 0.55rem;
+}
+
+.guide-columns {
+    display: grid;
+    gap: 2.5rem;
+    align-items: start;
+}
+
+@media (min-width: 900px) {
+    .guide-columns {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 3rem;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   17. Motion, focus, and print
+   -------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+    .faq-chevron {
+        transition: none;
+    }
+}
+
+.guide-skip {
+    position: absolute;
+    left: -9999px;
+}
+
+.guide-skip:focus {
+    left: 1rem;
+    top: 1rem;
+    z-index: 60;
+    background: var(--navy);
+    color: #ffffff;
+    padding: 0.75rem 1rem;
+    border-radius: 0.375rem;
+}

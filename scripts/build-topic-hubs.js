@@ -8,11 +8,11 @@ const fs = require('fs');
 const path = require('path');
 const matter = require('gray-matter');
 const {
-    CURRENT_YEAR,
     renderAnalyticsBody,
     renderAnalyticsHead,
-    renderFooterLinks,
-    renderPrimaryNavLinks,
+    renderHeadAssets,
+    renderSiteFooter,
+    renderSiteHeader,
 } = require('./lib/site-shell');
 
 const ROOT_DIR = path.join(__dirname, '..');
@@ -195,33 +195,53 @@ function selectTopicPosts(posts, topic) {
     });
 }
 
-function renderPostCard(post, topicSlug) {
-    const image = post.frontmatter.image || '/assets/images/og-blog.jpg';
+
+function renderPostRow(post) {
     const date = formatDate(post.frontmatter.date);
-    const category = post.frontmatter.category || topicSlug.replace(/-/g, ' ');
     const description = post.frontmatter.description || '';
 
-    return `
-            <a href="/blog/${esc(post.slug)}" class="minimal-post-item" data-category="${esc(topicSlug)}">
-                <div class="minimal-post-image">
-                    <img src="${esc(image)}" alt="${esc(post.frontmatter.title)}" loading="lazy" width="320" height="180" onerror="this.onerror=null;this.src='/assets/images/og-blog.jpg';">
-                </div>
-                <div class="minimal-post-content">
-                    <div class="minimal-post-meta">
-                        <span class="minimal-post-category">${esc(category)}</span>
-                        ${date ? `<span class="meta-sep">·</span><time datetime="${esc(isoDate(post.frontmatter.date))}">${esc(date)}</time>` : ''}
-                    </div>
-                    <h2 class="minimal-post-title">${esc(post.frontmatter.title)}</h2>
-                    <p class="minimal-post-desc">${esc(description)}</p>
-                </div>
-            </a>`;
+    return `                        <li>
+                            <h3 class="guide-row__title"><a href="/blog/${esc(post.slug)}">${esc(post.frontmatter.title)}</a></h3>
+                            ${description ? `<p>${esc(description)}</p>` : ''}
+                            ${date ? `<time class="guide-row__date" datetime="${esc(isoDate(post.frontmatter.date))}">${esc(date)}</time>` : ''}
+                        </li>`;
 }
 
 function renderTopicNav(currentSlug) {
-    return TOPIC_HUBS.map((topic) => {
-        const activeClass = topic.slug === currentSlug ? ' active' : '';
-        return `<a class="category-filter__btn${activeClass}" href="/topics/${topic.slug}">${esc(topic.title)}</a>`;
-    }).join('\n                    ');
+    const links = TOPIC_HUBS
+        .filter((topic) => topic.slug !== currentSlug)
+        .map((topic) => `<a href="/topics/${topic.slug}">${esc(topic.title)}</a>`);
+    return links.join(' · ');
+}
+
+function renderHead({ title, description, canonical, extraSchema = [] }) {
+    return `    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>${esc(title)} | Legacy Investing Show</title>
+    <meta name="description" content="${esc(description)}">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="${GOOGLE_SITE_VERIFICATIONS[0]}">
+    <meta name="google-site-verification" content="${GOOGLE_SITE_VERIFICATIONS[1]}">
+    <link rel="canonical" href="${canonical}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="${canonical}">
+    <meta property="og:title" content="${esc(title)} | Legacy Investing Show">
+    <meta property="og:description" content="${esc(description)}">
+    <meta property="og:image" content="${SITE_URL}/assets/images/og-blog.jpg">
+    <meta property="og:site_name" content="Legacy Investing Show">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@thelegacyshow">
+    <meta name="twitter:title" content="${esc(title)} | Legacy Investing Show">
+    <meta name="twitter:description" content="${esc(description)}">
+    <meta name="twitter:image" content="${SITE_URL}/assets/images/og-blog.jpg">
+    <meta name="theme-color" content="#FAF7F2">
+    <link rel="icon" type="image/png" href="/assets/images/logo.png">
+    <link rel="apple-touch-icon" href="/assets/images/logo.png">
+    ${renderHeadAssets()}
+    <link rel="stylesheet" href="/assets/css/guides.css">
+${extraSchema.map((schema) => `    <script type="application/ld+json">${JSON.stringify(schema)}</script>`).join('\n')}
+    ${renderAnalyticsHead({ gaTrackingId: GA_TRACKING_ID, gtmContainerId: GTM_CONTAINER_ID })}`;
 }
 
 function renderTopicPage(topic, posts) {
@@ -250,96 +270,62 @@ function renderTopicPage(topic, posts) {
         },
     };
 
+    const breadcrumb = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+            { '@type': 'ListItem', position: 2, name: 'Topics', item: `${SITE_URL}/topics` },
+            { '@type': 'ListItem', position: 3, name: topic.title, item: canonical },
+        ],
+    };
+
     return `<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>${esc(topic.title)} | Legacy Investing Show</title>
-    <meta name="title" content="${esc(topic.title)} | Legacy Investing Show">
-    <meta name="description" content="${esc(topic.description)}">
-    <meta name="robots" content="index, follow">
-    <meta name="google-site-verification" content="${GOOGLE_SITE_VERIFICATIONS[0]}">
-    <meta name="google-site-verification" content="${GOOGLE_SITE_VERIFICATIONS[1]}">
-    <link rel="canonical" href="${canonical}">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="${canonical}">
-    <meta property="og:title" content="${esc(topic.title)} | Legacy Investing Show">
-    <meta property="og:description" content="${esc(topic.description)}">
-    <meta property="og:image" content="${SITE_URL}/assets/images/og-blog.jpg">
-    <meta property="og:site_name" content="Legacy Investing Show">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@thelegacyshow">
-    <meta name="twitter:title" content="${esc(topic.title)} | Legacy Investing Show">
-    <meta name="twitter:description" content="${esc(topic.description)}">
-    <meta name="twitter:image" content="${SITE_URL}/assets/images/og-blog.jpg">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="icon" type="image/png" href="/assets/images/logo.png">
-    <link rel="apple-touch-icon" href="/assets/images/logo.png">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <script type="application/ld+json">
-    ${JSON.stringify(schema, null, 4)}
-    </script>
-    ${renderAnalyticsHead({ gaTrackingId: GA_TRACKING_ID, gtmContainerId: GTM_CONTAINER_ID })}
+${renderHead({ title: topic.title, description: topic.description, canonical, extraSchema: [schema, breadcrumb] })}
 </head>
-<body class="bg-white text-gray-900" data-page-type="topic_hub" data-page-title="${esc(topic.title)}">
+<body class="guide-page" data-page-type="topic_hub" data-page-title="${esc(topic.title)}">
     ${renderAnalyticsBody({ gtmContainerId: GTM_CONTAINER_ID })}
-    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-gray-900 text-white px-4 py-2 z-50">Skip to main content</a>
-    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
-        <nav class="container-custom" aria-label="Main navigation">
-            <div class="flex items-center justify-between h-16">
-                <a href="/" class="flex items-center gap-2 font-medium text-gray-900 hover:text-gray-700 transition-colors">
-                    <img src="/assets/images/logo.png" alt="Legacy Investing Show Logo" width="28" height="28" class="w-7 h-7">
-                    <span>Legacy Investing Show</span>
-                </a>
-                <div class="hidden md:flex items-center gap-4">
-                    ${renderPrimaryNavLinks('/blog')}
-                </div>
-                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
-            </div>
-            <div id="mobile-menu" class="hidden md:hidden pb-4">
-                <div class="flex flex-col gap-3">
-                    ${renderPrimaryNavLinks('/blog')}
-                </div>
-            </div>
+    <a href="#main" class="guide-skip">Skip to main content</a>
+
+    ${renderSiteHeader('/blog')}
+
+    <div class="container-custom">
+        <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Home</a></li>
+                <li class="breadcrumb__item"><a href="/topics" class="breadcrumb__link">Topics</a></li>
+                <li class="breadcrumb__item"><span class="breadcrumb__current">${esc(topic.title)}</span></li>
+            </ol>
         </nav>
-    </header>
+    </div>
+
     <main id="main">
-        <section class="minimal-blog-header">
-            <p class="minimal-blog-subtitle"><a href="/blog">Blog</a> / Topic Hub</p>
-            <h1 class="minimal-blog-title">${esc(topic.title)}</h1>
-            <p class="minimal-blog-subtitle">${esc(topic.intro)}</p>
-        </section>
-        <section class="minimal-posts-section">
+        <section class="guide-hero">
             <div class="container-custom">
-                <nav class="category-filter" aria-label="Topic hubs">
-                    ${renderTopicNav(topic.slug)}
-                </nav>
-                <div class="minimal-posts-list">
-                    ${topPosts.map((post) => renderPostCard(post, topic.slug)).join('\n')}
+                <h1 class="guide-hero__title">${esc(topic.title)}</h1>
+                <p class="guide-deck">${esc(topic.intro)}</p>
+            </div>
+        </section>
+
+        <section class="guide-section">
+            <div class="container-custom">
+                <div class="guide-prose">
+                    <h2>${topPosts.length} article${topPosts.length === 1 ? '' : 's'}</h2>
+                    <ul class="guide-rows">
+${topPosts.map((post) => renderPostRow(post)).join('\n')}
+                    </ul>
+
+                    <h2>Other topics</h2>
+                    <p class="guide-row__note">${renderTopicNav(topic.slug)}</p>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="minimal-footer">
-        <div class="container-custom">
-            <div class="minimal-footer-content">
-                <div class="footer-brand">
-                    <img src="/assets/images/logo.png" alt="Legacy Investing Show" width="32" height="32">
-                    <span>Legacy Investing Show</span>
-                </div>
-                <div class="footer-links">
-                    ${renderFooterLinks()}
-                </div>
-            </div>
-            <div class="footer-copyright">Copyright ${CURRENT_YEAR}</div>
-        </div>
-    </footer>
+
+    ${renderSiteFooter()}
+
     <script defer src="/assets/js/main.js"></script>
 </body>
 </html>`;
@@ -347,11 +333,8 @@ function renderTopicPage(topic, posts) {
 
 function renderTopicsIndex() {
     const canonical = `${SITE_URL}/topics`;
-    const description = 'Browse the main Legacy Investing Show topic hubs for tax strategies, business structures, retirement, investing, debt management, Airbnb arbitrage, and wealth building.';
-    const topicGuide = TOPIC_HUBS.map((topic) => `
-                    <li>
-                        <strong>${esc(topic.title)}:</strong> ${esc(topic.intro)}
-                    </li>`).join('\n');
+    const description = 'The main reading paths through the Legacy Investing Show archive: tax strategies, business structures, retirement, investing, debt, Airbnb arbitrage, and wealth building.';
+
     const schema = {
         '@context': 'https://schema.org',
         '@type': 'CollectionPage',
@@ -370,116 +353,69 @@ function renderTopicsIndex() {
         },
     };
 
-    const cards = TOPIC_HUBS.map((topic) => `
-            <a href="/topics/${esc(topic.slug)}" class="minimal-post-item">
-                <div class="minimal-post-content">
-                    <div class="minimal-post-meta">
-                        <span class="minimal-post-category">Topic Hub</span>
-                    </div>
-                    <h2 class="minimal-post-title">${esc(topic.title)}</h2>
-                    <p class="minimal-post-desc">${esc(topic.description)}</p>
-                </div>
-            </a>`).join('\n');
+    const breadcrumb = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+            { '@type': 'ListItem', position: 2, name: 'Topics', item: canonical },
+        ],
+    };
+
+    const rows = TOPIC_HUBS.map((topic) => `                        <li>
+                            <h3 class="guide-row__title"><a href="/topics/${esc(topic.slug)}">${esc(topic.title)}</a></h3>
+                            <p>${esc(topic.description)}</p>
+                        </li>`).join('\n');
 
     return `<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Topic Hubs | Legacy Investing Show</title>
-    <meta name="title" content="Topic Hubs | Legacy Investing Show">
-    <meta name="description" content="${esc(description)}">
-    <meta name="robots" content="index, follow">
-    <meta name="google-site-verification" content="${GOOGLE_SITE_VERIFICATIONS[0]}">
-    <meta name="google-site-verification" content="${GOOGLE_SITE_VERIFICATIONS[1]}">
-    <link rel="canonical" href="${canonical}">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="${canonical}">
-    <meta property="og:title" content="Topic Hubs | Legacy Investing Show">
-    <meta property="og:description" content="${esc(description)}">
-    <meta property="og:image" content="${SITE_URL}/assets/images/og-blog.jpg">
-    <meta property="og:site_name" content="Legacy Investing Show">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@thelegacyshow">
-    <meta name="twitter:title" content="Topic Hubs | Legacy Investing Show">
-    <meta name="twitter:description" content="${esc(description)}">
-    <meta name="twitter:image" content="${SITE_URL}/assets/images/og-blog.jpg">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="icon" type="image/png" href="/assets/images/logo.png">
-    <link rel="apple-touch-icon" href="/assets/images/logo.png">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <script type="application/ld+json">
-    ${JSON.stringify(schema, null, 4)}
-    </script>
-    ${renderAnalyticsHead({ gaTrackingId: GA_TRACKING_ID, gtmContainerId: GTM_CONTAINER_ID })}
+${renderHead({ title: 'Topics', description, canonical, extraSchema: [schema, breadcrumb] })}
 </head>
-<body class="bg-white text-gray-900" data-page-type="topic_index" data-page-title="Topic Hubs">
+<body class="guide-page" data-page-type="topic_index" data-page-title="Topics">
     ${renderAnalyticsBody({ gtmContainerId: GTM_CONTAINER_ID })}
-    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-gray-900 text-white px-4 py-2 z-50">Skip to main content</a>
-    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
-        <nav class="container-custom" aria-label="Main navigation">
-            <div class="flex items-center justify-between h-16">
-                <a href="/" class="flex items-center gap-2 font-medium text-gray-900 hover:text-gray-700 transition-colors">
-                    <img src="/assets/images/logo.png" alt="Legacy Investing Show Logo" width="28" height="28" class="w-7 h-7">
-                    <span>Legacy Investing Show</span>
-                </a>
-                <div class="hidden md:flex items-center gap-4">
-                    ${renderPrimaryNavLinks('/blog')}
-                </div>
-                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
-            </div>
-            <div id="mobile-menu" class="hidden md:hidden pb-4">
-                <div class="flex flex-col gap-3">
-                    ${renderPrimaryNavLinks('/blog')}
-                </div>
-            </div>
+    <a href="#main" class="guide-skip">Skip to main content</a>
+
+    ${renderSiteHeader('/blog')}
+
+    <div class="container-custom">
+        <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Home</a></li>
+                <li class="breadcrumb__item"><span class="breadcrumb__current">Topics</span></li>
+            </ol>
         </nav>
-    </header>
+    </div>
+
     <main id="main">
-        <section class="minimal-blog-header">
-            <p class="minimal-blog-subtitle"><a href="/blog">Blog</a> / Topic Hubs</p>
-            <h1 class="minimal-blog-title">Topic Hubs</h1>
-            <p class="minimal-blog-subtitle">${esc(description)}</p>
-        </section>
-        <section class="minimal-posts-section" style="padding-top: 0;">
+        <section class="guide-hero">
             <div class="container-custom">
-                <div class="minimal-content" style="max-width: 56rem; margin: 0 auto 2rem;">
-                    <h2>Use These Hubs As The Main Reading Paths</h2>
-                    <p>The blog archive is intentionally broad, but Google and readers both need cleaner paths through the best material. These topic hubs group the indexable articles by decision type so someone can move from a broad question into the strongest supporting guides without paging through every post on the site.</p>
-                    <p>Start with the hub that matches the decision in front of you, then use the linked articles to compare strategy, documentation, timing, and implementation risk. The hubs also help the site send clearer internal-linking signals around the subjects Legacy Investing Show wants to be known for.</p>
-                    <ul>
-                        ${topicGuide}
+                <h1 class="guide-hero__title">Topics</h1>
+                <p class="guide-deck">The blog archive is broad. These seven hubs group the articles by the decision they help with, so a question leads to the strongest guides on it rather than to the newest post.</p>
+            </div>
+        </section>
+
+        <section class="guide-section">
+            <div class="container-custom">
+                <div class="guide-prose">
+                    <h2>The hubs</h2>
+                    <ul class="guide-rows">
+${rows}
+                    </ul>
+
+                    <h2>Elsewhere on the site</h2>
+                    <ul class="guide-linklist">
+                        <li><a href="/tax-strategies">Tax strategies</a> — every strategy guide in one table.</li>
+                        <li><a href="/compare">Compare guides</a> — head-to-head decisions.</li>
+                        <li><a href="/blog">The full blog archive</a> — everything, newest first.</li>
                     </ul>
                 </div>
             </div>
         </section>
-        <section class="minimal-posts-section">
-            <div class="container-custom">
-                <div class="minimal-posts-list">
-                    ${cards}
-                </div>
-            </div>
-        </section>
     </main>
-    <footer class="minimal-footer">
-        <div class="container-custom">
-            <div class="minimal-footer-content">
-                <div class="footer-brand">
-                    <img src="/assets/images/logo.png" alt="Legacy Investing Show" width="32" height="32">
-                    <span>Legacy Investing Show</span>
-                </div>
-                <div class="footer-links">
-                    ${renderFooterLinks()}
-                </div>
-            </div>
-            <div class="footer-copyright">Copyright ${CURRENT_YEAR}</div>
-        </div>
-    </footer>
+
+    ${renderSiteFooter()}
+
     <script defer src="/assets/js/main.js"></script>
 </body>
 </html>`;
@@ -497,11 +433,7 @@ function build() {
 
     const posts = getMarkdownPosts();
     const indexablePosts = posts.filter(isIndexableBlogPost);
-    fs.writeFileSync(
-        path.join(OUTPUT_DIR, 'index.html'),
-        renderTopicsIndex(),
-        'utf8'
-    );
+    fs.writeFileSync(path.join(OUTPUT_DIR, 'index.html'), renderTopicsIndex(), 'utf8');
     console.log(`Built /topics (${TOPIC_HUBS.length} topic hubs)`);
 
     for (const topic of TOPIC_HUBS) {

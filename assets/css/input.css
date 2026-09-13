@@ -1379,7 +1379,7 @@
   color: var(--on-navy);
 }
 
-.site-footer-group h2 {
+.site-footer-title {
   font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
   font-size: 0.9375rem;
   font-weight: 600;
