@@ -153,129 +153,206 @@
             </nav>
         </div>
 
-        <!-- Lede -->
-        <section class="pb-14 md:pb-20">
+        <!-- Opener -->
+        <section class="section">
             <div class="container-custom">
-                <div class="grid lg:grid-cols-[1.15fr_0.85fr] gap-12 lg:gap-16 items-start">
+                <div class="opener">
                     <div>
-                        <h1 class="mb-6">From $80K in debt to a repeatable wealth system</h1>
-                        <div class="max-w-[68ch] text-lg text-secondary leading-relaxed space-y-5">
-                            <p>
-                                I'm Preston Seo. My parents were first-generation immigrants, so nothing arrived by default. After college I took a corporate job and left within a year, then started studying money from every angle: taxes, cash flow, investing, ownership.
-                            </p>
-                            <p>
-                                Real estate and Airbnb were part of the breakthrough, but not the whole answer. The bigger shift was learning how taxes, ownership, cash flow, and decision-making fit together. My wife and I built a $15M+ real estate portfolio on the back of that and left the 9-to-5 for good.
-                            </p>
-                            <p class="text-navy font-medium">
-                                That is what Legacy Investing Show teaches. Not one tactic, but the system underneath it.
-                            </p>
-                        </div>
+                        <h1 class="opener__title">From $80K in debt to a repeatable wealth system</h1>
+                        <p class="opener__lede">
+                            I'm Preston Seo. My parents were first-generation immigrants, so nothing arrived by default. After college I took a corporate job and left within a year, then started studying money from every angle: taxes, cash flow, investing, ownership.
+                        </p>
                     </div>
-                    <div>
-                        <picture>
-                            <source srcset="/assets/images/preston-main-400.webp 400w, /assets/images/preston-main.webp 581w"
-                                    sizes="(min-width: 1024px) 380px, (min-width: 640px) calc(100vw - 4rem), calc(100vw - 2rem)"
-                                    type="image/webp">
-                            <img src="/assets/images/preston-main.jpg"
-                                 srcset="/assets/images/preston-main.jpg 581w"
-                                 sizes="(min-width: 1024px) 380px, (min-width: 640px) calc(100vw - 4rem), calc(100vw - 2rem)"
-                                 alt="Preston Seo, founder of Legacy Investing Show"
-                                 width="581"
-                                 height="800"
-                                 class="w-full max-w-sm rounded-2xl"
-                                 loading="eager"
-                                 fetchpriority="high"
-                                 decoding="async">
-                        </picture>
+
+                    <div class="opener__aside photo--pair">
+                        <figure class="photo">
+                            <picture>
+                                <source srcset="/assets/images/about-family-3-400.webp 400w, /assets/images/about-family-3-600.webp 600w"
+                                        sizes="(min-width: 1024px) 280px, 44vw"
+                                        type="image/webp">
+                                <img src="/assets/images/about-family-3.png"
+                                     alt="Preston Seo carrying his two children across the concrete foundations of a build in progress"
+                                     width="600"
+                                     height="600"
+                                     loading="eager"
+                                     fetchpriority="high"
+                                     decoding="async">
+                            </picture>
+                        </figure>
+                        <figure class="photo">
+                            <picture>
+                                <source srcset="/assets/images/about-work-2-400.webp 400w, /assets/images/about-work-2-600.webp 600w"
+                                        sizes="(min-width: 1024px) 190px, 34vw"
+                                        type="image/webp">
+                                <img src="/assets/images/about-work-2.jpg"
+                                     alt="Preston Seo's corporate ID badge from the job he left within a year"
+                                     width="600"
+                                     height="600"
+                                     loading="lazy"
+                                     decoding="async">
+                            </picture>
+                        </figure>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- What happened -->
-        <section class="py-14 md:py-20 border-t border-slate-200">
+        <!-- The two numbers the story runs between -->
+        <section class="band" aria-label="Before and after">
             <div class="container-custom">
-                <h2 class="mb-8">What happened</h2>
+                <div class="figure-row">
+                    <figure class="figure figure--navy">
+                        <span class="figure__value">$80K</span>
+                        <span class="figure__label">In debt in 2017, while employed full time</span>
+                        <span class="figure__note">Paid off in 2019.</span>
+                    </figure>
+                    <figure class="figure figure--navy">
+                        <span class="figure__value">$15M+</span>
+                        <span class="figure__label">Real estate portfolio today, built with my wife</span>
+                        <span class="figure__note">Enough to leave the 9-to-5 for good.</span>
+                    </figure>
+                </div>
+            </div>
+        </section>
 
-                <ol class="rule-list max-w-3xl">
-                    <li class="sm:grid sm:grid-cols-[6rem_1fr] sm:gap-8">
-                        <p class="font-display text-xl text-navy tabular">2017</p>
-                        <p class="rule-list__meta sm:mt-0">$80,000 in debt while employed full time, with no system for taxes, cash flow, or investing.</p>
+        <!-- What changed -->
+        <section class="section">
+            <div class="container-custom">
+                <div class="marginalia">
+                    <div class="marginalia__main sheet">
+                        <h2 class="mb-6">What actually changed</h2>
+                        <div class="max-w-[64ch] text-lg text-secondary leading-relaxed space-y-5">
+                            <p>
+                                Real estate and Airbnb were part of the breakthrough, but not the whole answer. The bigger shift was learning how taxes, ownership, cash flow, and decision-making fit together.
+                            </p>
+                            <p>
+                                My wife and I built a $15M+ real estate portfolio on the back of that. The portfolio is the result; the system is the thing worth copying.
+                            </p>
+                        </div>
+                    </div>
+                    <aside class="marginalia__aside">
+                        <figure class="pull-quote">
+                            <blockquote><p>That is what Legacy Investing Show teaches. Not one tactic, but the system underneath it.</p></blockquote>
+                            <figcaption>Preston Seo <span>Founder, Legacy Investing Show</span></figcaption>
+                        </figure>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- What happened -->
+        <section class="section section--tight">
+            <div class="container-custom">
+                <div class="section__head">
+                    <h2>What happened, year by year</h2>
+                    <p class="section__summary">Seven years between the debt and the number on this page.</p>
+                </div>
+
+                <ol class="steps steps--years max-w-3xl">
+                    <li>
+                        <span class="steps__marker">2017</span>
+                        <div>
+                            <h3 class="steps__title">The starting point</h3>
+                            <p>$80,000 in debt while employed full time, with no system for taxes, cash flow, or investing.</p>
+                        </div>
                     </li>
-                    <li class="sm:grid sm:grid-cols-[6rem_1fr] sm:gap-8">
-                        <p class="font-display text-xl text-navy tabular">2018</p>
-                        <p class="rule-list__meta sm:mt-0">First real experiments: income, ownership structures, tax moves, real estate. Some worked; others were expensive lessons.</p>
+                    <li>
+                        <span class="steps__marker">2018</span>
+                        <div>
+                            <h3 class="steps__title">First experiments</h3>
+                            <p>Income, ownership structures, tax moves, real estate. Some worked; others were expensive lessons.</p>
+                        </div>
                     </li>
-                    <li class="sm:grid sm:grid-cols-[6rem_1fr] sm:gap-8">
-                        <p class="font-display text-xl text-navy tabular">2019</p>
-                        <p class="rule-list__meta sm:mt-0">The $80K was paid off.</p>
+                    <li>
+                        <span class="steps__marker">2019</span>
+                        <div>
+                            <h3 class="steps__title">Debt cleared</h3>
+                            <p>The $80K was paid off.</p>
+                        </div>
                     </li>
-                    <li class="sm:grid sm:grid-cols-[6rem_1fr] sm:gap-8">
-                        <p class="font-display text-xl text-navy tabular">2020</p>
-                        <p class="rule-list__meta sm:mt-0">Founded Legacy Investing Show to teach the frameworks rather than the tactics.</p>
+                    <li>
+                        <span class="steps__marker">2020</span>
+                        <div>
+                            <h3 class="steps__title">Legacy Investing Show</h3>
+                            <p>Founded to teach the frameworks rather than the tactics.</p>
+                        </div>
                     </li>
-                    <li class="sm:grid sm:grid-cols-[6rem_1fr] sm:gap-8">
-                        <p class="font-display text-xl text-navy tabular">2024</p>
-                        <p class="rule-list__meta sm:mt-0">Past 2,000 students guided through the frameworks.</p>
+                    <li>
+                        <span class="steps__marker">2024</span>
+                        <div>
+                            <h3 class="steps__title">Past 2,000 students</h3>
+                            <p>Guided through the same frameworks, one decision at a time.</p>
+                        </div>
                     </li>
                 </ol>
             </div>
         </section>
 
         <!-- What I teach -->
-        <section class="py-14 md:py-20 border-t border-slate-200">
+        <section class="band band--white band--pad">
             <div class="container-custom">
-                <h2 class="mb-4">What I actually teach</h2>
-                <p class="max-w-[68ch] text-lg text-secondary mb-8">
-                    Four areas carry most of the work, with two more supporting them.
-                </p>
+                <div class="section__head">
+                    <h2>What I actually teach</h2>
+                    <p class="section__summary">Four areas carry most of the work, with two more supporting them.</p>
+                </div>
 
-                <dl class="facts max-w-4xl">
-                    <dt>Tax strategy</dt>
-                    <dd>Which deductions, structures, and timing decisions apply to your situation, and in what order.</dd>
+                <div class="marginalia">
+                    <div class="marginalia__main">
+                        <dl class="dl-terms dl-terms--cols">
+                            <dt>Tax strategy</dt>
+                            <dd>Which deductions, structures, and timing decisions apply to your situation, and in what order.</dd>
 
-                    <dt>Investment planning</dt>
-                    <dd>How to choose between assets on the numbers rather than on the story attached to them.</dd>
+                            <dt>Investment planning</dt>
+                            <dd>How to choose between assets on the numbers rather than on the story attached to them.</dd>
 
-                    <dt>Business structures</dt>
-                    <dd>Entity choice, ownership, and how the structure changes what you owe.</dd>
+                            <dt>Business structures</dt>
+                            <dd>Entity choice, ownership, and how the structure changes what you owe.</dd>
 
-                    <dt>Retirement accounts</dt>
-                    <dd>Solo 401(k)s, IRAs, conversions, and the trade-offs between them.</dd>
+                            <dt>Retirement accounts</dt>
+                            <dd>Solo 401(k)s, IRAs, conversions, and the trade-offs between them.</dd>
 
-                    <dt>Debt management</dt>
-                    <dd>Paying down debt as one option among several, compared against investing the same dollar.</dd>
+                            <dt>Debt management</dt>
+                            <dd>Paying down debt as one option among several, compared against investing the same dollar.</dd>
 
-                    <dt>Alternative income</dt>
-                    <dd>Airbnb arbitrage and other income streams that do not depend on a salary.</dd>
-                </dl>
-
-                <p class="mt-8 max-w-[68ch] text-secondary">
-                    Airbnb arbitrage is the part people know me for, and it is roughly 20% of what we do. The other 80% is tax strategy, investment planning, structures, and retirement — which is where most of the money actually moves.
-                </p>
-            </div>
-        </section>
-
-        <!-- Who this is for -->
-        <section class="py-14 md:py-20 border-t border-slate-200">
-            <div class="container-custom">
-                <h2 class="mb-4">Who this is for</h2>
-                <div class="max-w-[68ch] text-lg text-secondary leading-relaxed">
-                    <p class="mb-4">Students typically earn $75K+ and fall into one of four groups:</p>
-                    <ul class="list-disc pl-6 space-y-2">
-                        <li>High earners paying more tax than they expected to</li>
-                        <li>Business owners deciding how to structure and pay themselves</li>
-                        <li>Real estate investors sizing up depreciation, exchanges, and entity choices</li>
-                        <li>Professionals building a first wealth system from scratch</li>
-                    </ul>
+                            <dt>Alternative income</dt>
+                            <dd>Airbnb arbitrage and other income streams that do not depend on a salary.</dd>
+                        </dl>
+                    </div>
+                    <aside class="marginalia__aside">
+                        <figure class="figure">
+                            <span class="figure__value">20%</span>
+                            <span class="figure__label">Of what we do is Airbnb arbitrage, the part people know me for</span>
+                            <span class="figure__note">The other 80% is tax strategy, investment planning, structures, and retirement, which is where most of the money actually moves.</span>
+                        </figure>
+                    </aside>
                 </div>
             </div>
         </section>
 
-        <!-- Where to start -->
-        <section class="py-14 md:py-20 border-t border-slate-200">
+        <!-- Who this is for -->
+        <section class="band band--cream-dark band--pad">
             <div class="container-custom">
-                <h2 class="mb-8">Where to start</h2>
+                <div class="section__head">
+                    <h2>Who this is for</h2>
+                    <p class="section__summary">Students typically earn $75K+ and fall into one of four groups.</p>
+                </div>
+
+                <ul class="rule-list max-w-3xl">
+                    <li><p class="rule-list__meta mt-0">High earners paying more tax than they expected to</p></li>
+                    <li><p class="rule-list__meta mt-0">Business owners deciding how to structure and pay themselves</p></li>
+                    <li><p class="rule-list__meta mt-0">Real estate investors sizing up depreciation, exchanges, and entity choices</p></li>
+                    <li><p class="rule-list__meta mt-0">Professionals building a first wealth system from scratch</p></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Where to start -->
+        <section class="section">
+            <div class="container-custom">
+                <div class="section__head">
+                    <h2>Where to start</h2>
+                    <p class="section__summary">Three routes in, depending on how far along the decision you are.</p>
+                </div>
 
                 <ul class="rule-list max-w-3xl">
                     <li>
@@ -311,6 +388,7 @@
                         Register for the masterclass
                     </a>
                     <a href="/success-stories"
+                       class="btn-secondary"
                        data-track-event="cta_clicked"
                        data-track-label="Student Results"
                        data-track-location="about_cta"
@@ -328,7 +406,7 @@
                     <p>Tax strategy, wealth systems, and practical decision tools for professionals, investors, and founders.</p>
                 </div>
                 <div class="site-footer-group">
-                    <h2>Guides</h2>
+                    <p class="site-footer-title">Guides</p>
                     <ul>
                         <li><a href="/tax-strategies">Tax strategies</a></li>
                         <li><a href="/compare">Compare guides</a></li>
@@ -338,14 +416,14 @@
                     </ul>
                 </div>
                 <div class="site-footer-group">
-                    <h2>Tools</h2>
+                    <p class="site-footer-title">Tools</p>
                     <ul>
                         <li><a href="/tools">Free calculators</a></li>
                         <li><a href="/blog">Blog</a></li>
                     </ul>
                 </div>
                 <div class="site-footer-group">
-                    <h2>Company</h2>
+                    <p class="site-footer-title">Company</p>
                     <ul>
                         <li><a href="/about">About Preston Seo</a></li>
                         <li><a href="/success-stories">Student results</a></li>
