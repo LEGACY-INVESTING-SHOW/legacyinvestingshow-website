@@ -1,0 +1,1634 @@
+{
+  "AL": {
+    "cities": [
+      "Birmingham",
+      "Huntsville",
+      "Mobile"
+    ],
+    "regulatorName": "Alabama Department of Insurance",
+    "regulatorUrl": "https://aldoi.gov/",
+    "localAngle": "Alabama's NAIC 2021 average of $162 sits just under the $170 US figure. Tornado and severe-storm seasons in the Tennessee Valley and along the Gulf raise claim frequency, while replacement costs stay moderate outside a few urban cores. Birmingham and Huntsville renters see more wind and theft claims than rural counties. Mobile adds tropical rain and storm surge that a standard renters policy still treats as flood, which the HO-4 form excludes.",
+    "leaseNorm": "Alabama law does not force a tenant to buy renters insurance. Birmingham and Huntsville apartment operators usually put an HO-4 clause in the lease, ask for $100,000 of liability, and want the owner listed as an additional interest before keys go out, and Mobile student housing near the University of South Alabama treats the same proof as a move-in item.",
+    "contentsNote": "Schedule laptops, cameras, and e-bikes if they sit above the unscheduled electronics or jewelry sublimit. Do not assume flood is covered in Mobile or on a creek lot in Birmingham, though wind damage after a tornado can still be a contents claim when the form includes wind.",
+    "scenarioCity": "Birmingham",
+    "scenarioStory": "Take a Birmingham renter with an example $18,000 of clothes, furniture, and electronics and a $500 deductible. A quote a little under $162 a year can still be fair if the building is inland from the Gulf and the liability limit is $100,000. A quote well above $162 needs a reason such as a first-floor unit, prior claims, or scheduled jewelry. Compare the number to the $170 US average and to what the same carrier quotes in Huntsville, not to a guess about Alabama as a whole.",
+    "faqs": [
+      {
+        "q": "Does Alabama require renters insurance by law?",
+        "a": "No statewide statute requires an Alabama tenant to carry an HO-4. The duty comes from the lease. If the landlord writes a coverage minimum into the contract, missing the deadline can delay keys or trigger a default notice. The Alabama Department of Insurance regulates the policy, not the lease clause."
+      },
+      {
+        "q": "Is flood covered on a typical Alabama renters policy?",
+        "a": "Flood is usually excluded. That matters in Mobile and anywhere a creek or storm drain backs up into a first-floor unit. A separate flood policy or a water-backup endorsement is the usual fix. Wind from a tornado is a different peril and can be covered even when flood is not."
+      },
+      {
+        "q": "Why is Alabama close to the national renters average?",
+        "a": "Storm claims pull the figure up. Moderate replacement costs and a competitive carrier market pull it back down. The $162 NAIC 2021 average is a statewide blend of Birmingham, Huntsville, Mobile, and quieter counties. Your ZIP can sit well off that midpoint."
+      },
+      {
+        "q": "What liability limit do Alabama landlords usually ask for?",
+        "a": "Most professionally managed buildings ask for $100,000. Some newer Huntsville complexes ask for $300,000. Ask whether they want to be an additional interest, which is the form most HO-4 policies can actually issue, rather than an additional insured."
+      }
+    ]
+  },
+  "AK": {
+    "cities": [
+      "Anchorage",
+      "Fairbanks",
+      "Juneau"
+    ],
+    "regulatorName": "Alaska Division of Insurance",
+    "regulatorUrl": "https://www.commerce.alaska.gov/web/ins/",
+    "localAngle": "Alaska's NAIC 2021 average of $114 is well below the $170 US figure even though any claim can be expensive to service. Remote locations, winter darkness, and long shipping times raise the cost of replacing a sofa or a laptop once a loss happens. Anchorage holds most of the written premium, while Fairbanks adds extreme cold and Juneau adds ferry-dependent delivery. Fewer carriers write the state, so a low average reflects thin volume more than cheap reconstruction.",
+    "leaseNorm": "Alaska does not impose a statewide renters-insurance mandate. Anchorage property managers and military-adjacent landlords near Joint Base Elmendorf-Richardson commonly require an HO-4 with $100,000 of liability and proof before move-in, while Fairbanks and Juneau landlords are more likely to accept a binder after the lease is signed.",
+    "contentsNote": "Price electronics and winter gear at what it costs to fly or barge replacements to Anchorage, Fairbanks, or Juneau, and schedule bikes, cameras, and firearms if they exceed sublimits. Earthquake needs a rider, and flood, including ice-jam overflow, stays off a standard HO-4.",
+    "scenarioCity": "Anchorage",
+    "scenarioStory": "Imagine an Anchorage renter with an example $24,000 of belongings, including winter clothing and two laptops, and a $500 deductible. A quote near $114 can be reasonable if the building is in a well-served ZIP and nothing is scheduled. If the quote jumps because a camera kit or a fat-tire bike is listed, treat that as a contents decision, not proof that Alaska is expensive. The state average sits far below $170 because many policies are small, not because a claim in January is cheap to settle.",
+    "faqs": [
+      {
+        "q": "Why is renters insurance cheaper on average in Alaska than in most states?",
+        "a": "The $114 NAIC 2021 average is a thin-market number. Fewer policies are written, claim frequency is low, and many renters buy only the minimum the lease requires. When a loss does happen, shipping and labor can erase that cheap premium quickly, so match limits to replacement cost in Alaska, not to the average."
+      },
+      {
+        "q": "Do Alaska landlords require renters insurance?",
+        "a": "Many Anchorage and military-area leases do. The requirement is contractual. The Alaska Division of Insurance does not write lease forms. If a landlord asks to be named as an additional insured, ask for additional-interest language that an HO-4 can actually support."
+      },
+      {
+        "q": "Does a standard Alaska renters policy cover earthquake?",
+        "a": "Usually not. Southcentral Alaska has real earthquake exposure. Buy a rider if you want shaking damage paid. Flood and ice overflow remain separate problems and stay off the base form."
+      },
+      {
+        "q": "Should an Alaska renter raise contents limits because of shipping?",
+        "a": "Yes, if a sofa, mattress, or desktop would have to come in by barge or air. An example $24,000 inventory that looks generous in the Lower 48 can be tight in Juneau. Photograph serial numbers and keep receipts in cloud storage so a winter claim is not a memory test."
+      }
+    ]
+  },
+  "AZ": {
+    "cities": [
+      "Phoenix",
+      "Tucson",
+      "Mesa"
+    ],
+    "regulatorName": "Arizona Department of Insurance and Financial Institutions",
+    "regulatorUrl": "https://difi.az.gov/",
+    "localAngle": "Arizona's NAIC 2021 average of $149 sits under the $170 US mark. Summer monsoon storms, haboobs, and roof-driven water leaks shape loss patterns more than winter weather. Phoenix and Mesa replacement costs run above the rest of the state, and Tucson is a little cheaper to rebuild but still sees monsoon claims. Heat itself is not a typical HO-4 peril, but water that follows a failed AC line or a sudden storm can be.",
+    "leaseNorm": "Arizona statutes do not require tenants to carry renters insurance. Phoenix and Mesa garden-style complexes almost always write it into the lease with $100,000 of liability and the owner as additional interest, and Tucson student housing near the University of Arizona often requires each roommate to be a named insured.",
+    "contentsNote": "Schedule bikes, cameras, and jewelry that sit above sublimits, and give electronics a realistic Phoenix replacement number. Flood from a wash is excluded, and earthquake is uncommon but still needs a rider if you want it.",
+    "scenarioCity": "Phoenix",
+    "scenarioStory": "A Phoenix renter with an example $20,000 of furniture and electronics and a $500 deductible should expect a quote that can land near the $149 state average if the building is a mid-rise with controlled access. A first-floor unit facing a wash, a dog with a bite history, or scheduled jewelry can push the number up. Treat $149 as a statewide blend, not a Phoenix price list. The $170 US average is a reminder that Arizona is still cheaper than many coastal states even when monsoon season feels loud.",
+    "faqs": [
+      {
+        "q": "Does monsoon rain count as flood on an Arizona renters policy?",
+        "a": "Sudden rain through a failed roof or window can be a weather or water claim. Water that rises from a wash or a street is usually flood and is excluded. The distinction matters in Phoenix and Tucson after a heavy monsoon burst. Read the water and flood language before you assume a soaked carpet is covered."
+      },
+      {
+        "q": "Can Arizona landlords require renters insurance?",
+        "a": "Yes, through the lease. The Arizona Department of Insurance and Financial Institutions regulates the insurer, not the property manager. If the building asks for proof within 14 days of signing, calendar that date. A binder from the carrier is usually enough to get keys."
+      },
+      {
+        "q": "Why is Arizona below the US renters average?",
+        "a": "Claim frequency is moderate, litigation is not the main driver, and many national carriers compete in Phoenix. Replacement costs in the metro keep the $149 average from falling further. Your quote still moves with ZIP, credit-based insurance score where allowed, and the deductible you pick."
+      },
+      {
+        "q": "Should a Mesa, Arizona renter schedule a road bike?",
+        "a": "If the bike's replacement cost sits above the unscheduled sports-equipment sublimit, yes. Theft from a patio or a vehicle is a common gap. A scheduled item with a stated value is clearer than arguing about depreciation after the fact."
+      }
+    ]
+  },
+  "AR": {
+    "cities": [
+      "Little Rock",
+      "Fayetteville",
+      "Fort Smith"
+    ],
+    "regulatorName": "Arkansas Insurance Department",
+    "regulatorUrl": "https://insurance.arkansas.gov/",
+    "localAngle": "Arkansas posted a $151 NAIC 2021 average, under the $170 US figure. Tornado and severe-storm exposure runs across the state, from the Arkansas River Valley to the Ozarks. Claims are mostly weather-driven. Replacement costs stay modest outside a few Fayetteville and Little Rock neighborhoods, and plenty of national insurers compete, which keeps quotes from drifting toward Gulf-coast levels.",
+    "leaseNorm": "Arkansas does not have a statewide tenant-insurance statute. Little Rock and Fayetteville apartment firms typically require an HO-4, $100,000 of liability, and the landlord as additional interest before the move-in packet is complete, while Fort Smith smaller landlords may only ask after a storm year.",
+    "contentsNote": "Inventory electronics, musical instruments, and bikes at replacement cost, and put jewelry above a few thousand dollars on a rider. Flood from a creek or the Arkansas River is excluded, though tornado wind can be covered even when the water that follows is not.",
+    "scenarioCity": "Little Rock",
+    "scenarioStory": "Picture a Little Rock renter with an example $16,500 of belongings and a $500 deductible. A quote around $151 matches the statewide NAIC average and can be a clean deal if the unit is not on a floodplain and nothing is scheduled. If a carrier quotes far below $151 with actual-cash-value contents, ask what a sofa would pay after five years of depreciation. The $170 US average is a ceiling this state usually stays under, not a target you should pay without a reason.",
+    "faqs": [
+      {
+        "q": "Is tornado damage covered for Arkansas renters?",
+        "a": "Wind and debris from a tornado are often covered on an HO-4. Floodwater that follows the storm is not. After a Little Rock or Fort Smith outbreak, photograph the unit before cleanup and call the carrier with the date and ZIP. The Arkansas Insurance Department can help if the claim stalls."
+      },
+      {
+        "q": "Do Fayetteville, Arkansas student leases require renters insurance?",
+        "a": "Many University of Arkansas-area buildings do. Each roommate may need to be named. A parent's homeowners policy sometimes extends limited theft coverage for a student, but it rarely meets a landlord's liability minimum. Ask for a declarations page that shows the campus address."
+      },
+      {
+        "q": "Why is Arkansas near $151 instead of the US $170 average?",
+        "a": "Storms raise frequency. Modest reconstruction costs and carrier competition hold the average down. The figure blends Little Rock, Fayetteville, Fort Smith, and rural counties. A Hillcrest walk-up and a small-town duplex will not price the same."
+      },
+      {
+        "q": "What should an Arkansas renter do if a landlord demands to be additional insured?",
+        "a": "Ask the agent whether the HO-4 can issue additional-interest language instead. Additional insured status is a commercial concept many personal policies cannot grant. The lease can still be satisfied if the owner receives notice of cancellation."
+      }
+    ]
+  },
+  "CA": {
+    "cities": [
+      "Los Angeles",
+      "San Diego",
+      "San Francisco"
+    ],
+    "regulatorName": "California Department of Insurance",
+    "regulatorUrl": "https://www.insurance.ca.gov/",
+    "localAngle": "California's NAIC 2021 average of $188 sits above the $170 US figure. Wildfire risk is the weather story people notice. Earthquake and flood sit outside a standard renters policy. Replacement costs in Los Angeles, San Diego, and San Francisco are among the highest in the country, which lifts the average even when claim frequency is not extreme, and a deep carrier market still competes, so the statewide number is high without matching homeowners-insurance chaos.",
+    "leaseNorm": "California does not require renters insurance by statute. Large Los Angeles, San Diego, and San Francisco operators almost always write an HO-4 requirement into the lease with $100,000 of liability and portal proof before keys, and they usually cannot force you onto a specific carrier unless the lease names a master policy you may opt into.",
+    "contentsNote": "Schedule jewelry, cameras, and bikes, and price electronics at metro replacement cost. Earthquake needs a rider or a CEA-style policy if you want shaking paid, wildfire smoke can be a contents claim, and flood, including atmospheric-river overflow, is excluded.",
+    "scenarioCity": "Los Angeles",
+    "scenarioStory": "A Los Angeles renter with an example $32,000 of furniture, clothes, and electronics and a $1,000 deductible should not treat $188 as a cheap-state number. A quote near that average can still be fair if the building is not in a high wildfire interface ZIP and you skip earthquake for now. Add a quake rider and scheduled jewelry and the quote should rise. Compare it to the $170 US average only to remember California replacement costs, not to argue the carrier down to a Midwest price.",
+    "faqs": [
+      {
+        "q": "Does a California renters policy cover earthquake?",
+        "a": "Almost never on the base form. Los Angeles, San Diego, and the Bay Area all have shaking risk. Buy a rider or a standalone earthquake policy if you want that peril paid. The California Department of Insurance publishes consumer pages on how those products differ from an HO-4."
+      },
+      {
+        "q": "Is wildfire covered for California renters?",
+        "a": "Fire is a standard peril. If a wildfire burns or smokes your unit, contents can be covered up to the limit. Evacuation extra-expense coverage depends on the form. The land and the building are the landlord's problem; your clothes and laptop are yours."
+      },
+      {
+        "q": "Can a California landlord require a specific insurance company?",
+        "a": "Leases usually require an HO-4 that meets stated limits, not a named brand. Some buildings sell a master policy as an opt-in. You can often bring your own carrier if the declarations page shows the required liability and the owner as additional interest. Read the lease before you buy twice."
+      },
+      {
+        "q": "Why is California above the US renters average?",
+        "a": "The $188 NAIC 2021 figure reflects high replacement costs in the coastal metros and growing wildfire concern. Claim frequency is not the whole story. A San Francisco studio with modest contents can still quote below $188, while a Los Angeles house-share with scheduled bikes and cameras can sit well above it."
+      }
+    ]
+  },
+  "CO": {
+    "cities": [
+      "Denver",
+      "Colorado Springs",
+      "Aurora"
+    ],
+    "regulatorName": "Colorado Division of Insurance",
+    "regulatorUrl": "https://doi.colorado.gov/",
+    "localAngle": "Colorado's NAIC 2021 average of $147 sits under the $170 US figure. Hail along the Front Range is the claim that shows up most often. Wildfire and winter storms add the rest. Denver, Aurora, and Colorado Springs replacement values run above the mountain towns, and many carriers compete in the Denver market, which keeps the statewide number from tracking every headline hailstorm.",
+    "leaseNorm": "Colorado does not mandate renters insurance statewide. Denver and Aurora garden communities typically require an HO-4 with $100,000 of liability and electronic proof inside the first week, and Colorado Springs landlords near military installations often ask for the same packet.",
+    "contentsNote": "Schedule bikes, skis, and jewelry, and give electronics a realistic replacement number after a hail-driven roof leak. Flood from a creek is excluded, wildfire is a fire peril, and earthquake is rare along the Front Range and still needs a rider if you want it.",
+    "scenarioCity": "Denver",
+    "scenarioStory": "A Denver renter with an example $22,000 of belongings and a $1,000 deductible is making a hail bet. Raising the deductible can pull a quote toward or below the $147 state average. Dropping it to $250 after a neighbor's roof dented last June will cost more each year. If the quote sits near $147 with $100,000 of liability and no scheduled items, it is doing what the statewide blend describes. The $170 US average is only a reminder that Front Range hail has not pushed Colorado to the top of the table.",
+    "faqs": [
+      {
+        "q": "Does Colorado renters insurance cover hail damage to my stuff?",
+        "a": "If hail breaks a window or a roof leak ruins furniture, contents can be covered up to the limit minus the deductible. The building and the roof belong to the landlord's policy. Your sofa does not. Photograph damage before the restoration crew bags it."
+      },
+      {
+        "q": "Do Denver, Colorado landlords require renters insurance?",
+        "a": "Most professionally managed buildings do. The Colorado Division of Insurance does not write that clause. Upload a declarations page that shows the address, the liability limit, and the owner as additional interest if the lease asks for it."
+      },
+      {
+        "q": "Is wildfire smoke covered in Colorado?",
+        "a": "Soot and smoke that enter the unit from a wildfire can be a contents claim. Extra living costs if you are displaced depend on the loss-of-use language. Evacuating as a precaution without a covered loss to the unit may not trigger payment. Read that section before fire season."
+      },
+      {
+        "q": "Why is Colorado below the US average despite hail?",
+        "a": "Hail is frequent along the Front Range, yet many losses hit buildings more than tenant contents. Carrier competition in Denver is strong. The $147 NAIC 2021 average blends those facts. A quote that ignores a recent personal claim or a high-value bike is the one to question, not the statewide figure."
+      }
+    ]
+  },
+  "CT": {
+    "cities": [
+      "Hartford",
+      "New Haven",
+      "Stamford"
+    ],
+    "regulatorName": "Connecticut Insurance Department",
+    "regulatorUrl": "https://portal.ct.gov/cid",
+    "localAngle": "Connecticut's NAIC 2021 average of $144 sits under the $170 US figure. Winter storms and coastal nor'easters create the seasonal claim risk. Replacement costs run higher in the New York metro orbit around Stamford than in Hartford. Claim frequency is low and the litigation climate is comparatively mild, and regional and national carriers still compete, which keeps the average near the middle of the New England pack.",
+    "leaseNorm": "Connecticut does not require tenants to buy insurance by statute. Stamford and New Haven professionally managed buildings usually require an HO-4, $100,000 to $300,000 of liability, and the landlord as additional interest, while Hartford older three-family houses are less consistent.",
+    "contentsNote": "Schedule jewelry, cameras, and commuter bikes, and value electronics in a Stamford walk-up at metro replacement cost. Flood from the Connecticut River or a coastal surge is excluded, and earthquake is a minor local story that still needs a rider if you want it.",
+    "scenarioCity": "Hartford",
+    "scenarioStory": "A Hartford renter with an example $19,000 of belongings and a $500 deductible can reasonably see a quote near $144 if the building is inland and nothing is scheduled. A Stamford quote for the same inventory may run higher because replacement and theft pressure follow the New York orbit. Use the $144 state average as Hartford's gravity and the $170 US average as a national marker, not as a promise. If the deductible drops to $250, expect the annual number to move more than the coverage does.",
+    "faqs": [
+      {
+        "q": "Does Connecticut renters insurance cover nor'easter damage?",
+        "a": "Wind and sudden water through a failed roof can be covered. Flood from a tidal surge or a river is not. After a coastal storm, separate those perils before you assume the HO-4 will pay for a soaked basement bedroom in New Haven."
+      },
+      {
+        "q": "Can a Connecticut landlord require $300,000 of liability?",
+        "a": "Yes, if the lease says so. Stamford buildings sometimes do. The extra limit is usually inexpensive on a renters form compared with the same number on an auto policy. Confirm the owner is listed as additional interest so a cancellation notice goes to the property manager."
+      },
+      {
+        "q": "Why is Connecticut under the US renters average?",
+        "a": "Low claim frequency and a competitive market offset high replacement costs in the southwest corner of the state. The $144 NAIC 2021 average blends Hartford, New Haven, and Stamford. Your ZIP inside those metros still matters more than the statewide blend."
+      },
+      {
+        "q": "Should a New Haven student rely on a parent's Connecticut homeowners policy?",
+        "a": "A student away at school sometimes has limited theft coverage under a parent's homeowners form. That rarely meets a landlord's liability minimum and may not list the campus address. Buy an HO-4 in the student's name if the lease asks for proof."
+      }
+    ]
+  },
+  "DE": {
+    "cities": [
+      "Wilmington",
+      "Dover",
+      "Newark"
+    ],
+    "regulatorName": "Delaware Department of Insurance",
+    "regulatorUrl": "https://insurance.delaware.gov/",
+    "localAngle": "Delaware's NAIC 2021 average of $124 sits well under the $170 US figure. Coastal storms and nor'easters are the main weather exposure. Claim frequency is low. Replacement costs sit close to the mid-Atlantic norm, and the small market means a handful of carriers write most of the premium, which can make a single company's appetite matter more than it would in a bigger state.",
+    "leaseNorm": "Delaware does not mandate renters insurance. Wilmington apartment operators and Newark student housing near the University of Delaware commonly require an HO-4 with $100,000 of liability before keys, and Dover leases are more mixed, with proof usually due at move-in when the clause appears.",
+    "contentsNote": "Schedule bikes, laptops, and any jewelry above the unscheduled sublimit. Flood from the Christina River, inland bays, or a coastal surge is excluded, though wind from a nor'easter can still be a contents peril.",
+    "scenarioCity": "Wilmington",
+    "scenarioStory": "A Wilmington renter with an example $15,000 of belongings and a $500 deductible should not be surprised by a quote near $124. That is the statewide NAIC average and it already sits far below $170. If a carrier quotes much higher, look for a first-floor unit, a prior claim, or a dog restriction, not for a secret Delaware surcharge. A $250 deductible will not change the math as much as adding a jewelry rider will.",
+    "faqs": [
+      {
+        "q": "Is Delaware renters insurance cheaper because the state is small?",
+        "a": "The $124 NAIC 2021 average reflects low claim frequency and mid-Atlantic replacement costs, not the acreage of the state. A thin carrier list can still produce a high personal quote if one company steps back from coastal ZIPs. Shop more than one insurer."
+      },
+      {
+        "q": "Do Newark, Delaware student rentals require insurance?",
+        "a": "Many University of Delaware-area buildings require an HO-4 and name each tenant. A roommate's policy does not automatically cover your laptop. Ask for a declarations page that shows the Newark address and the landlord as additional interest if the lease demands it."
+      },
+      {
+        "q": "Does a Delaware renters policy cover coastal flooding?",
+        "a": "No. Flood is excluded, including storm surge near the beaches and river overflow in Wilmington. Wind damage can still be covered. Buy flood separately if the unit is in a mapped flood zone or a first-floor coastal walk-up."
+      },
+      {
+        "q": "Where does a Delaware renter file an insurance complaint?",
+        "a": "Start with the carrier. If that stalls, the Delaware Department of Insurance takes consumer complaints. Have the policy number, the claim number, and a short timeline ready. The department regulates the insurer, not a landlord who is slow to repair the building."
+      }
+    ]
+  },
+  "DC": {
+    "cities": [
+      "Washington",
+      "Georgetown",
+      "Navy Yard"
+    ],
+    "regulatorName": "District of Columbia Department of Insurance, Securities and Banking",
+    "regulatorUrl": "https://disb.dc.gov/",
+    "localAngle": "The District of Columbia's NAIC 2021 average of $147 sits under the $170 US figure even though replacement costs are high. Winter storms and occasional coastal leftovers shape claims. Theft and water leaks in older rowhouses matter as much as weather. A competitive carrier market keeps prices below what the cost of living might suggest, and the $147 blend is a city figure, not a suburban average imported from Maryland or Virginia.",
+    "leaseNorm": "The District does not require tenants to buy renters insurance by statute. Large Washington, Georgetown, and Navy Yard buildings almost always require an HO-4, often $100,000 or $300,000 of liability, uploaded to a portal before keys, and many leases also ask every adult occupant to be a named insured.",
+    "contentsNote": "Schedule bikes, cameras, and jewelry, because electronics and tailored clothing add up fast in a small apartment. Flood from the Potomac, the Anacostia, or a backed-up basement drain is excluded unless you buy flood or a water-backup endorsement, and earthquake still needs a rider.",
+    "scenarioCity": "Washington",
+    "scenarioStory": "A Washington renter with an example $28,000 of belongings and a $500 deductible is buying high replacement costs inside a below-US average. A quote near $147 can be fair for a mid-rise with a door attendant and no scheduled items. A basement unit in a flood-prone block needs a flood conversation even if the HO-4 looks cheap. Do not use the $170 US average as a reason to accept a $220 quote without checking a second carrier.",
+    "faqs": [
+      {
+        "q": "Does the District of Columbia require renters insurance?",
+        "a": "No District statute requires it. Most professionally managed buildings require it in the lease. Missing the upload can delay keys. DISB can help with a claim dispute; it will not rewrite your lease."
+      },
+      {
+        "q": "Is a basement apartment in Washington, DC covered for sewer backup?",
+        "a": "Not on a bare HO-4. Water backup and sump overflow usually need an endorsement. River flood needs a flood policy. A cheap premium that skips both is a bet against a wet spring, not a bargain."
+      },
+      {
+        "q": "Why is DC below the US renters average despite high living costs?",
+        "a": "The $147 NAIC 2021 average reflects low claim frequency and a competitive market, not cheap sofas. Replacement costs are high, which is why a low contents limit is a poor fit. Raise the contents number to match what you would actually rebuy."
+      },
+      {
+        "q": "Can roommates in the District share one renters policy?",
+        "a": "Only if every roommate is a named insured and the carrier allows it. A person who is not named may have no contents or liability protection. Many Navy Yard and Georgetown leases require each adult to show coverage."
+      }
+    ]
+  },
+  "FL": {
+    "cities": [
+      "Miami",
+      "Tampa",
+      "Orlando"
+    ],
+    "regulatorName": "Florida Office of Insurance Regulation",
+    "regulatorUrl": "https://floir.gov/",
+    "localAngle": "Florida's NAIC 2021 average of $159 sits under the $170 US figure even with hurricane exposure. Storm claims can be severe when they occur. Litigation and claim frequency have a reputation for raising costs, yet a crowded carrier market still competes for renters business. Miami and Tampa coastal ZIPs feel the weather more than Orlando, and flood and storm surge remain off a standard HO-4 no matter how loud the hurricane coverage conversation gets.",
+    "leaseNorm": "Florida does not impose a statewide tenant-insurance law. Miami, Tampa, and Orlando apartment operators almost universally require an HO-4, $100,000 of liability, and the association or owner as additional interest before keys, and some buildings offer a master policy if you miss the deadline, often at a worse price than shopping yourself.",
+    "contentsNote": "Schedule jewelry, cameras, and bikes, and price electronics at what they cost to replace after a storm crunch. Hurricane wind can be a contents peril, flood and surge are excluded, and a water-backup endorsement matters more than a quake rider in a first-floor Miami or Tampa unit.",
+    "scenarioCity": "Miami",
+    "scenarioStory": "A Miami renter with an example $25,000 of belongings and a $1,000 deductible is trading premium for storm deductible math. A quote near $159 can be honest if the building is inland from the barrier islands and you skip flood. A $250 deductible looks friendly until you realize one water claim would have paid for years of the higher deductible. Compare the quote to Florida's $159 average and the $170 US average, then price flood separately if the unit is on the ground floor.",
+    "faqs": [
+      {
+        "q": "Does Florida renters insurance cover hurricanes?",
+        "a": "Wind from a hurricane can be covered. Flood and storm surge are not. The Florida Office of Insurance Regulation regulates the companies that write the HO-4. It does not turn a renters policy into a flood policy; if the unit sits in a surge zone, shop flood on its own form."
+      },
+      {
+        "q": "Can a Florida landlord buy a policy and bill me?",
+        "a": "Some leases let the owner force-place coverage if you miss the proof deadline. That product is often narrower and more expensive than an HO-4 you choose. Buy your own policy before move-in and send the declarations page the same day you get the keys."
+      },
+      {
+        "q": "Why is Florida under the US average despite storms?",
+        "a": "The $159 NAIC 2021 figure is a statewide blend that includes Orlando and inland counties with less surge exposure. Renters contents limits are also smaller than homeowners limits, so hurricane chaos in the homeowners market does not map one-for-one onto HO-4 pricing."
+      },
+      {
+        "q": "Should a Tampa, Florida renter buy flood insurance?",
+        "a": "If the unit is on grade, in a mapped flood zone, or near the bay, yes. A standard renters policy will not pay for rising water. Wind-driven rain through a torn window is a different conversation. Ask the agent to walk both perils, not one."
+      }
+    ]
+  },
+  "GA": {
+    "cities": [
+      "Atlanta",
+      "Savannah",
+      "Augusta"
+    ],
+    "regulatorName": "Georgia Office of Commissioner of Insurance and Safety Fire",
+    "regulatorUrl": "https://oci.georgia.gov/",
+    "localAngle": "Georgia's NAIC 2021 average of $158 sits just under the $170 US figure. Severe storms and hurricane spillover from the coast shape claims. Atlanta replacement costs run above the state norm. Savannah adds tropical moisture and surge questions that an HO-4 will not answer with flood coverage, and many carriers compete for Atlanta-area renters, which keeps the statewide number from jumping toward Mississippi or Louisiana.",
+    "leaseNorm": "Georgia does not require tenants to carry insurance by statute. Atlanta and Augusta professionally managed communities typically require an HO-4 with $100,000 of liability and portal proof, and Savannah historic-district landlords plus student housing near Georgia Tech and UGA write the same requirement into every roommate's move-in list.",
+    "contentsNote": "Schedule bikes, cameras, and jewelry, and raise electronics limits after an upgrade year in Atlanta. Flood is excluded in Savannah and along any Atlanta creek, though hurricane wind can still be a contents peril.",
+    "scenarioCity": "Atlanta",
+    "scenarioStory": "An Atlanta renter with an example $21,000 of belongings and a $500 deductible should treat $158 as a midpoint, not a bargain floor. A Midtown high-rise with access control can quote near that average. A garden unit on a creek in the suburbs needs a flood question even if the HO-4 looks cheap. The $170 US average is close enough that a $210 quote deserves a second carrier, not a shrug about Georgia weather.",
+    "faqs": [
+      {
+        "q": "Does Georgia renters insurance cover hurricane leftover rain in Savannah?",
+        "a": "Wind and sudden rain through a damaged opening can be covered. Flood and surge are excluded. Savannah renters near the river or marshes should price flood separately. The Office of Commissioner of Insurance and Safety Fire can help if a wind claim is delayed after a named storm."
+      },
+      {
+        "q": "Can an Atlanta, Georgia landlord require renters insurance?",
+        "a": "Yes, in the lease. Upload a declarations page that lists the address and the required liability. If the portal rejects a valid HO-4 because the owner is not labeled additional insured, ask the agent for additional-interest wording that personal lines can issue."
+      },
+      {
+        "q": "Why is Georgia near the national renters average?",
+        "a": "Storms and Atlanta replacement costs push up. Carrier competition pulls down. The $158 NAIC 2021 average is a blend of Atlanta, Savannah, Augusta, and quieter counties. Your building's theft history and your deductible move the quote more than the statewide midpoint."
+      },
+      {
+        "q": "Should a Georgia renter schedule an e-bike?",
+        "a": "If the replacement cost sits above the unscheduled sports or electronics sublimit, yes. Theft from a porch or a garage cage is a common Atlanta claim. A scheduled amount is easier to settle than a depreciated lump sum."
+      }
+    ]
+  },
+  "HI": {
+    "cities": [
+      "Honolulu",
+      "Hilo",
+      "Kailua"
+    ],
+    "regulatorName": "Hawaii Insurance Division",
+    "regulatorUrl": "https://cca.hawaii.gov/ins/",
+    "localAngle": "Hawaii's NAIC 2021 average of $151 sits under the $170 US figure even though replacement costs are among the highest in the country. Almost every sofa, mattress, and desktop is shipped in. Hurricane and volcanic hazards are the headline exposures. Claim frequency is low because the renter market is smaller than on the mainland, and a thin carrier list keeps competition modest, which is why a below-US average can still feel expensive when you actually replace a bed in Honolulu.",
+    "leaseNorm": "Hawaii does not mandate renters insurance statewide. Honolulu high-rises and military-adjacent landlords commonly require an HO-4 with $100,000 of liability and the association as additional interest before the lockbox code is issued, while Hilo and Kailua leases are more mixed.",
+    "contentsNote": "Value contents at Honolulu landed cost and schedule cameras, surfboards, bikes, and jewelry. Hurricane wind can be a contents peril, flood including tsunami runoff is excluded, and earthquake or volcanic damage usually needs special language or a rider.",
+    "scenarioCity": "Honolulu",
+    "scenarioStory": "A Honolulu renter with an example $30,000 of belongings and a $500 deductible is buying shipping reality. A quote near $151 can still be fair because the statewide average is pulled by smaller policies and low claim frequency. If you would spend $3,000 to replace a mattress and dresser that cost $1,200 on the mainland, the contents limit is the line to raise, not the deductible to shrink. The $170 US average is not a ceiling you should aim for. It is a reminder that Hawaii's cheap-looking average hides expensive stuff.",
+    "faqs": [
+      {
+        "q": "Why is Hawaii under the US renters average if shipping is so expensive?",
+        "a": "The $151 NAIC 2021 figure reflects low claim frequency and a smaller book of business, not cheap reconstruction. When a loss happens, replacement hurts. Set the contents limit as if every item has to land on Oahu or the island you live on."
+      },
+      {
+        "q": "Does Hawaii renters insurance cover hurricanes?",
+        "a": "Wind can be covered. Flood and storm surge are not. Some buildings sit in tsunami-evacuation zones that an HO-4 will not solve. Ask about flood and about any hurricane deductible the form uses before you sign."
+      },
+      {
+        "q": "Do Honolulu, Hawaii landlords require renters insurance?",
+        "a": "Most condo associations and high-rise managers do. The Hawaii Insurance Division regulates the insurer. The association rules regulate the building. Bring a declarations page that shows the unit address and the required liability."
+      },
+      {
+        "q": "Should a Hilo, Hawaii renter worry about lava or volcanic damage?",
+        "a": "A standard HO-4 is a poor lava policy. Volcanic action and earthquake usually need endorsements or a separate product. If the unit is in a lava-hazard zone, ask the agent a direct question instead of assuming fire coverage will stretch to a flow."
+      }
+    ]
+  },
+  "ID": {
+    "cities": [
+      "Boise",
+      "Meridian",
+      "Nampa"
+    ],
+    "regulatorName": "Idaho Department of Insurance",
+    "regulatorUrl": "https://doi.idaho.gov/",
+    "localAngle": "Idaho's NAIC 2021 average of $103 is among the lowest in the country and far under the $170 US figure. Wildfire season and winter storms are the main weather concerns, and claim frequency is low. Replacement costs stay modest outside the Boise metro. Limited carrier competition in a smaller market has not pushed prices up, so the $103 average is a real low-cost signal.",
+    "leaseNorm": "Idaho does not require tenants to buy insurance by statute. Boise and Meridian garden communities typically require an HO-4 with $100,000 of liability and the owner as additional interest, and Nampa workforce housing increasingly copies that Treasure Valley template.",
+    "contentsNote": "Schedule bikes, skis, and cameras, and match electronics to what you would reorder after a wildfire evacuation. Flood is excluded along the Boise River, wildfire is a fire peril, and earthquake along the western Idaho faults needs a rider if you want shaking paid.",
+    "scenarioCity": "Boise",
+    "scenarioStory": "A Boise renter with an example $17,000 of belongings and a $500 deductible should expect a quote that can sit near the $103 state average if nothing is scheduled and the building is not on the wildland edge. That $103 figure is among the lowest NAIC 2021 averages in the country. A quote of $180 without scheduled jewelry or a prior claim deserves a second shop. The $170 US average is a national marker Idaho usually beats, not a price you should volunteer to pay.",
+    "faqs": [
+      {
+        "q": "Is Idaho really among the cheapest states for renters insurance?",
+        "a": "The $103 NAIC 2021 average is among the lowest reported. Low claim frequency and modest replacement costs drive it. Your Boise or Meridian ZIP can still quote higher after a personal claim or a high contents limit. Treat $103 as a statewide floor with room above it, not as a guaranteed offer."
+      },
+      {
+        "q": "Does Idaho renters insurance cover wildfire?",
+        "a": "Fire is a standard peril. If a wildfire burns or smokes the unit, contents can be covered. Extra living costs depend on the loss-of-use clause. Evacuating without damage to your belongings may not pay; flood from firefighting runoff is a different, usually excluded, problem."
+      },
+      {
+        "q": "Can a Boise, Idaho landlord require renters insurance?",
+        "a": "Yes, by lease. The Idaho Department of Insurance does not write residential leases. Send a declarations page that shows the required liability and the owner as additional interest. A master policy the building sells is optional unless the lease says otherwise."
+      },
+      {
+        "q": "Should a Nampa, Idaho renter buy earthquake coverage?",
+        "a": "Western Idaho has fault risk that a base HO-4 usually skips. If you want shaking paid, add a rider. For most Treasure Valley renters, water backup and a realistic contents limit matter first. Ask the agent to price the rider so you can see the extra dollars."
+      }
+    ]
+  },
+  "IL": {
+    "cities": [
+      "Chicago",
+      "Aurora",
+      "Naperville"
+    ],
+    "regulatorName": "Illinois Department of Insurance",
+    "regulatorUrl": "https://idoi.illinois.gov/",
+    "localAngle": "Illinois posted a $141 NAIC 2021 average, under the $170 US figure. Severe storms, hail, and winter weather drive claims. Replacement costs in Chicago sit above the rest of the state. Litigation is more of a factor in Cook County than in Aurora or Naperville, and a large competitive market of national and regional carriers keeps the statewide blend from matching the city's reputation for expensive everything else.",
+    "leaseNorm": "Illinois does not require renters insurance by statute. Chicago high-rises and professionally managed buildings in Aurora and Naperville almost always require an HO-4, often $100,000 or $300,000 of liability, uploaded before keys, and many Chicago leases also require every adult occupant to be named.",
+    "contentsNote": "Schedule bikes, cameras, and jewelry, because electronics and winter coats add up in a small Chicago apartment. Flood from the river, a basement drain, or a suburban creek is excluded, hail-driven leaks can still be a contents claim, and most Chicago renters should buy water backup before a quake rider.",
+    "scenarioCity": "Chicago",
+    "scenarioStory": "A Chicago renter with an example $26,000 of belongings and a $500 deductible is buying city replacement costs inside a $141 state average. A quote near $141 can be fair in a doorman building with no scheduled items. A garden apartment that has taken water twice should raise the contents conversation and add water backup, not chase a $90 premium. The $170 US average is close enough that a $200 Chicago quote needs a reason such as a claim or jewelry, not a shrug about the Loop.",
+    "faqs": [
+      {
+        "q": "Does Illinois renters insurance cover basement flooding in Chicago?",
+        "a": "Rising floodwater and sewer backup are usually excluded on a bare HO-4. A water-backup endorsement can cover some drain events. A flood policy is the tool for river or storm overflow. Garden apartments should price both before trusting the cheap premium."
+      },
+      {
+        "q": "Can a Chicago, Illinois landlord require every roommate to have a policy?",
+        "a": "Yes, if the lease says so. One roommate's HO-4 does not automatically cover the others. Name every adult or buy separate policies. The Illinois Department of Insurance can help with a claim fight; it will not referee a roommate dispute about who owned the TV."
+      },
+      {
+        "q": "Why is Illinois below the US renters average?",
+        "a": "Statewide claim frequency is moderate and many carriers compete. Chicago replacement costs keep the $141 NAIC 2021 average from falling further. Downstate quotes can sit well below the blend. Shop the ZIP, not the state nickname."
+      },
+      {
+        "q": "Should a Naperville, Illinois renter schedule jewelry?",
+        "a": "If a ring or watch sits above the unscheduled jewelry sublimit, yes. Theft and mysterious disappearance pay more cleanly on a scheduled item. Keep an appraisal or a receipt in cloud storage so a claim is not a description contest."
+      }
+    ]
+  },
+  "IN": {
+    "cities": [
+      "Indianapolis",
+      "Fort Wayne",
+      "Bloomington"
+    ],
+    "regulatorName": "Indiana Department of Insurance",
+    "regulatorUrl": "https://www.in.gov/idoi/",
+    "localAngle": "Indiana's NAIC 2021 average of $127 sits well under the $170 US figure. Tornado and severe-storm exposure is present across the state. Claim frequency is moderate and litigation is not the main driver. Replacement costs are moderate, and steady carrier competition keeps quotes nearer the Midwest cluster than the national midpoint.",
+    "leaseNorm": "Indiana does not mandate renters insurance. Indianapolis and Fort Wayne apartment operators typically require an HO-4 with $100,000 of liability and the owner as additional interest, and Bloomington student housing near Indiana University often requires each roommate to show a policy that lists the campus address.",
+    "contentsNote": "Schedule bikes, instruments, and jewelry, and value electronics at replacement cost after a tornado. Flood is excluded along White River and any creek lot, though wind from a tornado can be covered, and earthquake in the southwestern counties is a rider conversation.",
+    "scenarioCity": "Indianapolis",
+    "scenarioStory": "An Indianapolis renter with an example $16,000 of belongings and a $500 deductible should see why $127 exists. A quote near that average with $100,000 of liability and no scheduled items is doing ordinary Midwest work. If the number jumps to $190, look for a prior claim, a dog, or a first-floor unit, not for a hidden Indiana storm tax. The $170 US average is a national marker this state usually beats.",
+    "faqs": [
+      {
+        "q": "Is tornado damage covered for Indiana renters?",
+        "a": "Wind and debris often are. Flood that follows is not. After an Indianapolis or Fort Wayne outbreak, photograph belongings before hauling them to the dumpster. The Indiana Department of Insurance can step in if the carrier goes quiet."
+      },
+      {
+        "q": "Do Bloomington, Indiana student leases require renters insurance?",
+        "a": "Many do. Each tenant may need to be named. A parent's homeowners policy is a weak substitute for the landlord's liability minimum. Buy an HO-4 that shows the Bloomington address on the declarations page."
+      },
+      {
+        "q": "Why is Indiana well below the US renters average?",
+        "a": "Moderate replacement costs, a competitive market, and weather that hits buildings as often as tenant contents keep the $127 NAIC 2021 average down. Your deductible and credit-based insurance score, where used, still move the personal quote."
+      },
+      {
+        "q": "Should an Indiana renter add water-backup coverage?",
+        "a": "If the unit is on grade or in a basement, yes. A cheap HO-4 that skips backup is a bet against a spring storm and a tired municipal drain. The endorsement is usually a small add-on compared with replacing a soaked mattress out of pocket."
+      }
+    ]
+  },
+  "IA": {
+    "cities": [
+      "Des Moines",
+      "Cedar Rapids",
+      "Iowa City"
+    ],
+    "regulatorName": "Iowa Insurance Division",
+    "regulatorUrl": "https://iid.iowa.gov/",
+    "localAngle": "Iowa's NAIC 2021 average of $115 sits far under the $170 US figure. Tornadoes, hail, and severe storms are the main claim triggers. Frequency is moderate and mostly weather-driven. Replacement costs are modest, and a competitive regional carrier market keeps rates in the cheap Midwest cluster rather than near the national midpoint.",
+    "leaseNorm": "Iowa does not require tenants to carry insurance by statute. Des Moines and Cedar Rapids professionally managed buildings typically require an HO-4 with $100,000 of liability, and Iowa City student housing near the University of Iowa often requires each roommate to upload proof.",
+    "contentsNote": "Schedule instruments, bikes, and jewelry, and value electronics at replacement cost after a hail-driven leak. Flood from the Des Moines or Cedar rivers is excluded, though tornado wind can be covered.",
+    "scenarioCity": "Des Moines",
+    "scenarioStory": "A Des Moines renter with an example $14,500 of belongings and a $500 deductible is in a cheap-premium state. A quote near $115 matches the NAIC average. Chasing $80 by dropping to actual-cash-value contents can erase a decade of savings if a sofa and laptop are stolen in the same week. Use the $170 US average only as a national reference. Iowa should usually beat it without you cutting the limit to $10,000.",
+    "faqs": [
+      {
+        "q": "Does Iowa renters insurance cover hail damage to my furniture?",
+        "a": "If hail opens the building and water ruins contents, the HO-4 can pay up to the limit minus the deductible. The roof is the landlord's claim. Your dresser is yours. Photograph everything before the restoration crew arrives."
+      },
+      {
+        "q": "Can an Iowa City landlord require renters insurance?",
+        "a": "Yes, by lease. Student buildings often do. The Iowa Insurance Division regulates the company, not the property manager. Send a declarations page that lists the Iowa City address and the required liability."
+      },
+      {
+        "q": "Why is Iowa one of the cheaper renters states?",
+        "a": "Modest replacement costs and a competitive regional market hold the $115 NAIC 2021 average down even though storms are common. Many losses hit structures more than tenant property. Your quote still rises with claims, dogs, and scheduled items."
+      },
+      {
+        "q": "Should a Cedar Rapids, Iowa renter buy flood coverage?",
+        "a": "If the unit is near the Cedar River or in a mapped flood zone, yes. The 2008 flood is the local memory for a reason. A standard HO-4 will not pay for rising river water. Wind and hail remain separate perils on the renters form."
+      }
+    ]
+  },
+  "KS": {
+    "cities": [
+      "Wichita",
+      "Overland Park",
+      "Kansas City"
+    ],
+    "regulatorName": "Kansas Insurance Department",
+    "regulatorUrl": "https://www.insurance.kansas.gov/",
+    "localAngle": "Kansas posted a $148 NAIC 2021 average, under the $170 US figure. The state sits in severe-weather territory, with hail and tornadoes common from Wichita through the Kansas City metro. Weather claims dominate. Replacement costs stay moderate, and many carriers compete, which keeps the average close to the national number without matching Texas.",
+    "leaseNorm": "Kansas does not require tenants to buy insurance by statute. Overland Park and Kansas City apartment operators typically require an HO-4 with $100,000 of liability and the owner as additional interest before keys, and Wichita professionally managed communities follow the same pattern.",
+    "contentsNote": "Schedule bikes, instruments, and jewelry, and use replacement-cost numbers for electronics after a hail-driven roof opening. Flood is excluded along the Arkansas and Kansas rivers, though tornado wind can be covered.",
+    "scenarioCity": "Wichita",
+    "scenarioStory": "A Wichita renter with an example $17,500 of belongings and a $1,000 deductible is making a hail trade. The higher deductible can hold a quote near the $148 state average. A $250 deductible after last spring's dents will cost more every year than it is likely to return. If the quote sits near $148 with $100,000 of liability, it matches the statewide blend. The $170 US average is the national marker Kansas usually stays under.",
+    "faqs": [
+      {
+        "q": "Does Kansas renters insurance cover hail and tornado damage?",
+        "a": "Wind and hail that open the building and ruin contents can be covered. Flood that follows is not. After a Wichita outbreak, photograph items before they go to the curb. The Kansas Insurance Department can help if the claim stalls."
+      },
+      {
+        "q": "Can an Overland Park, Kansas landlord require renters insurance?",
+        "a": "Yes, through the lease. Upload a declarations page that shows the address, the liability limit, and the owner as additional interest. The department regulates the insurer. It does not write apartment leases."
+      },
+      {
+        "q": "Why is Kansas near $148 instead of the US $170 average?",
+        "a": "Hail and tornadoes raise frequency. Moderate reconstruction costs and carrier competition hold the NAIC 2021 average down. A Johnson County townhome and a small-town duplex will not quote the same."
+      },
+      {
+        "q": "Should a Kansas City, Kansas renter buy flood coverage?",
+        "a": "If the unit sits near the Kansas River or in a mapped flood zone, yes. The HO-4 will not pay for rising water. Hail and wind remain the perils the renters form is built to discuss."
+      }
+    ]
+  },
+  "KY": {
+    "cities": [
+      "Louisville",
+      "Lexington",
+      "Bowling Green"
+    ],
+    "regulatorName": "Kentucky Department of Insurance",
+    "regulatorUrl": "https://insurance.ky.gov/",
+    "localAngle": "Kentucky's NAIC 2021 average of $123 sits well under the $170 US figure. Severe storms and flooding are the main weather exposures, from Ohio River towns through the Bluegrass. Louisville and Lexington hold most of the renter population and pull replacement costs above the eastern counties. Claim frequency is moderate, and carrier competition keeps the $123 average below the national midpoint even in wet years.",
+    "leaseNorm": "Kentucky does not require tenants to carry insurance by statute. Louisville and Lexington professionally managed buildings typically require an HO-4 with $100,000 of liability and the owner listed as additional interest before keys, and Bowling Green student and workforce housing has copied that template.",
+    "contentsNote": "Schedule bikes, cameras, and jewelry, and value electronics in Louisville and Lexington at replacement cost after a storm-driven leak. Flood from the Ohio, the Kentucky River, or a backed-up basement drain is excluded, tornado wind can be covered, and earthquake along the western Kentucky faults needs a rider if you want shaking paid.",
+    "scenarioCity": "Louisville",
+    "scenarioStory": "A Louisville renter with an example $18,500 of belongings and a $500 deductible should treat $123 as the statewide gravity. A Germantown walk-up with no scheduled items can quote near that NAIC 2021 average. A first-floor unit near Beargrass Creek needs a flood and water-backup conversation even if the HO-4 looks cheap. Lexington quotes for the same inventory often land in the same band. The $170 US average is a national marker Kentucky usually beats without cutting the contents limit to a wishful number.",
+    "faqs": [
+      {
+        "q": "Does Kentucky require renters insurance by law?",
+        "a": "No statewide statute requires a tenant to buy an HO-4. Louisville and Lexington landlords commonly write the duty into the lease. Missing proof can delay keys. The Kentucky Department of Insurance regulates the policy, not the lease clause."
+      },
+      {
+        "q": "Is flood covered on a typical Kentucky renters policy?",
+        "a": "Flood is usually excluded. That matters along the Ohio River in Louisville, on creek lots, and in any basement bedroom. Wind from a severe storm can still be a contents peril. Buy flood or a water-backup endorsement if the unit sits on grade."
+      },
+      {
+        "q": "Why is Kentucky's average $123?",
+        "a": "Moderate replacement costs and a competitive market hold the NAIC 2021 figure down even though storms and flooding are real. Louisville and Lexington raise the blend above the cheapest rural counties. Your ZIP and deductible still move the personal quote more than the statewide midpoint."
+      },
+      {
+        "q": "What liability limit do Kentucky landlords usually ask for?",
+        "a": "Most professionally managed buildings in Louisville and Lexington ask for $100,000. Some newer complexes ask for $300,000. Ask for additional-interest wording that an HO-4 can issue rather than additional-insured language borrowed from a commercial form."
+      }
+    ]
+  },
+  "LA": {
+    "cities": [
+      "New Orleans",
+      "Baton Rouge",
+      "Shreveport"
+    ],
+    "regulatorName": "Louisiana Department of Insurance",
+    "regulatorUrl": "https://www.ldi.la.gov/",
+    "localAngle": "Louisiana's NAIC 2021 average of $184 sits above the $170 US figure. Hurricane and flood exposure is among the highest in the country. Claim frequency and litigation push premiums up. Replacement costs in New Orleans and the coastal market are elevated, and some carriers limit exposure, which thins competition, while Shreveport is inland and still lives inside a statewide number shaped by the Gulf.",
+    "leaseNorm": "Louisiana does not impose a statewide tenant-insurance mandate. New Orleans and Baton Rouge apartment operators and condo associations almost always require an HO-4, $100,000 of liability, and the owner or association as additional interest, and Shreveport professionally managed buildings have copied the same packet.",
+    "contentsNote": "Schedule jewelry, cameras, and instruments, and price electronics at post-storm replacement cost. Hurricane wind can be a contents peril, flood and surge are excluded, including a New Orleans canal overflow, and water backup matters in any below-grade or slab-on-grade unit.",
+    "scenarioCity": "New Orleans",
+    "scenarioStory": "A New Orleans renter with an example $23,000 of belongings and a $1,000 deductible is buying weather and legal cost, not a Midwest price. A quote near $184 matches the statewide NAIC average and already sits above $170. If the unit is on grade near a canal, price flood separately and do not treat a cheap HO-4 as the whole program. A $250 deductible looks friendly until one water claim spends years of the extra premium.",
+    "faqs": [
+      {
+        "q": "Does Louisiana renters insurance cover hurricanes?",
+        "a": "Wind can be covered. Flood and storm surge are not. The Louisiana Department of Insurance regulates the companies. It does not convert an HO-4 into a flood policy; if the unit is in a surge or levee-adjacent ZIP, shop flood on its own form."
+      },
+      {
+        "q": "Can a New Orleans, Louisiana landlord require renters insurance?",
+        "a": "Yes, and most do. Upload a declarations page that shows the address and the required liability. If you miss the deadline, some buildings force-place a narrower policy and bill you. Buy your own HO-4 first."
+      },
+      {
+        "q": "Why is Louisiana above the US renters average?",
+        "a": "Hurricane exposure, higher claim frequency, litigation, and thinner carrier appetite lift the $184 NAIC 2021 figure. Shreveport is cheaper weather than the coast and still reports inside that statewide blend. Shop the ZIP."
+      },
+      {
+        "q": "Should a Baton Rouge, Louisiana renter buy flood insurance?",
+        "a": "If the unit is on grade or near the river or a bayou, yes. A standard renters policy will not pay for rising water. Wind-driven rain through a damaged opening is a different peril. Ask the agent to price both."
+      }
+    ]
+  },
+  "ME": {
+    "cities": [
+      "Portland",
+      "Lewiston",
+      "Bangor"
+    ],
+    "regulatorName": "Maine Bureau of Insurance",
+    "regulatorUrl": "https://www.maine.gov/pfr/insurance/",
+    "localAngle": "Maine's NAIC 2021 average of $109 is among the lower figures in the country and well under the $170 US mark. Winter storms and cold are the main claim drivers. Claim frequency is low. Replacement costs are moderate, and a small but stable carrier market keeps the average cheap even when a Portland water leak is miserable in January.",
+    "leaseNorm": "Maine does not require tenants to buy insurance by statute. Portland professionally managed buildings typically require an HO-4 with $100,000 of liability and proof before keys, while Lewiston and Bangor leases are more mixed and campus housing still treats coverage as a move-in item.",
+    "contentsNote": "Schedule bikes, cameras, and jewelry, and value winter gear and electronics at what you would reorder in Portland. Flood from the harbor, a river, or ice-jam overflow is excluded, though nor'easter wind can still be a contents peril.",
+    "scenarioCity": "Portland",
+    "scenarioStory": "A Portland renter with an example $16,000 of belongings and a $500 deductible should expect a quote that can sit near $109 if nothing is scheduled. That average already beats $170 by a wide gap. Raising contents to match a real winter wardrobe is a better use of money than shrinking the deductible to $250. If a carrier quotes $160 without jewelry or a claim, shop again before deciding Maine suddenly got expensive.",
+    "faqs": [
+      {
+        "q": "Why is Maine renters insurance so cheap on average?",
+        "a": "The $109 NAIC 2021 figure reflects low claim frequency and a stable small market. Winter is real. Losses are not constant. Your Portland ZIP can still quote higher after a water claim; treat $109 as a statewide blend, not a promised offer."
+      },
+      {
+        "q": "Do Portland, Maine landlords require renters insurance?",
+        "a": "Many professionally managed buildings do. The Maine Bureau of Insurance regulates the insurer. Send a declarations page that lists the address and the required liability. Additional-interest language is the form an HO-4 can usually support."
+      },
+      {
+        "q": "Does a Maine renters policy cover ice-dam leaks?",
+        "a": "Sudden water through a failed roof can be covered. Gradual seepage and flood are different problems. Photograph the damage and the ice. If the carrier calls it maintenance, the Bureau of Insurance can review the file."
+      },
+      {
+        "q": "Should a Bangor, Maine renter buy flood coverage?",
+        "a": "If the unit sits near the Penobscot or in a mapped flood zone, yes. A standard HO-4 will not pay for rising water. Wind and burst-pipe water are the perils the renters form is more likely to discuss."
+      }
+    ]
+  },
+  "MD": {
+    "cities": [
+      "Baltimore",
+      "Silver Spring",
+      "Rockville"
+    ],
+    "regulatorName": "Maryland Insurance Administration",
+    "regulatorUrl": "https://insurance.maryland.gov/",
+    "localAngle": "Maryland's NAIC 2021 average of $131 sits under the $170 US figure. Coastal storms, nor'easters, and winter weather shape claims. Replacement costs near Washington, DC and in Baltimore sit above the Eastern Shore. Claim frequency is low to moderate, and a competitive mid-Atlantic carrier market keeps prices below the national midpoint.",
+    "leaseNorm": "Maryland does not mandate renters insurance. Silver Spring, Rockville, and Baltimore professionally managed buildings typically require an HO-4 with $100,000 or $300,000 of liability uploaded to a portal, and many Montgomery County leases also require every adult occupant to be named.",
+    "contentsNote": "Schedule bikes, cameras, and jewelry, because electronics and work equipment add up in Silver Spring and Rockville apartments. Flood from the Chesapeake, the Inner Harbor, or a basement drain is excluded, though nor'easter wind can still be a contents peril.",
+    "scenarioCity": "Baltimore",
+    "scenarioStory": "A Baltimore renter with an example $19,500 of belongings and a $500 deductible should treat $131 as the statewide midpoint. A Canton mid-rise with access control can quote near that average. A basement apartment in a flood-prone block needs water backup and maybe flood, even if the HO-4 looks cheaper than the $170 US figure. A $200 quote without scheduled items or a claim deserves a second carrier.",
+    "faqs": [
+      {
+        "q": "Does Maryland renters insurance cover harbor or bay flooding?",
+        "a": "No. Flood and storm surge are excluded. Wind can still be covered. Baltimore and Annapolis renters on grade should price flood separately; the Maryland Insurance Administration can help with a wind-claim delay after a nor'easter."
+      },
+      {
+        "q": "Can a Silver Spring, Maryland landlord require $300,000 of liability?",
+        "a": "Yes, if the lease says so. The extra limit is usually inexpensive on an HO-4. Confirm the owner is additional interest so a cancellation notice reaches the property manager."
+      },
+      {
+        "q": "Why is Maryland below the US renters average?",
+        "a": "Low-to-moderate claim frequency and a competitive market offset high replacement costs near DC. The $131 NAIC 2021 average blends Baltimore, the Maryland suburbs, and quieter counties. Your ZIP still matters more than the statewide blend."
+      },
+      {
+        "q": "Should a Rockville, Maryland renter schedule a commuter bike?",
+        "a": "If the replacement cost sits above the unscheduled sports sublimit, yes. Theft from a locker or a patio is a common Metro-adjacent claim. A stated value settles more cleanly than a depreciated lump sum."
+      }
+    ]
+  },
+  "MA": {
+    "cities": [
+      "Boston",
+      "Cambridge",
+      "Worcester"
+    ],
+    "regulatorName": "Massachusetts Division of Insurance",
+    "regulatorUrl": "https://www.mass.gov/orgs/division-of-insurance",
+    "localAngle": "Massachusetts posted a $141 NAIC 2021 average, under the $170 US figure. Winter storms and nor'easters are the primary weather risk. Replacement costs around Boston and Cambridge are among the highest in the country. Claim frequency is low, and strong carrier competition keeps the average close to the national cluster despite those replacement costs.",
+    "leaseNorm": "Massachusetts does not require tenants to buy insurance by statute. Boston and Cambridge professionally managed buildings typically require an HO-4, often $100,000 or $300,000 of liability, and every adult occupant named, and Worcester student and workforce housing has copied the same portal proof.",
+    "contentsNote": "Schedule bikes, cameras, and jewelry, because electronics and tailored clothing add up in a small Boston apartment. Flood from the Charles, the Harbor, or a basement drain is excluded, though nor'easter wind can still be a contents peril.",
+    "scenarioCity": "Boston",
+    "scenarioStory": "A Boston renter with an example $29,000 of belongings and a $500 deductible is buying high replacement costs inside a $141 state average. A quote near $141 can be fair in a Back Bay building with no scheduled items. A Cambridge triple-decker basement needs water backup even if the premium looks cheaper than $170. If the quote is $210 without jewelry or a claim, shop a second carrier before blaming Massachusetts weather.",
+    "faqs": [
+      {
+        "q": "Does Massachusetts renters insurance cover nor'easter flooding?",
+        "a": "Wind and sudden rain through a damaged opening can be covered. Flood and storm surge are excluded. Boston Harbor and river-adjacent units need a flood conversation. The Division of Insurance can review a stalled wind claim."
+      },
+      {
+        "q": "Can a Cambridge, Massachusetts landlord require every roommate to be on the policy?",
+        "a": "Yes, if the lease says so. One named insured does not automatically cover the others. Student households should not rely on a parent's homeowners form to meet a $100,000 liability minimum."
+      },
+      {
+        "q": "Why is Massachusetts under the US renters average despite Boston prices?",
+        "a": "Low claim frequency and carrier competition offset high replacement costs. The $141 NAIC 2021 average blends Boston, Cambridge, Worcester, and cheaper towns. Raise contents limits to match what you would actually rebuy in this metro."
+      },
+      {
+        "q": "Should a Worcester, Massachusetts renter buy water-backup coverage?",
+        "a": "If the unit is in a basement or on a slab with a tired drain, yes. A cheap HO-4 that skips backup leaves a soaked mattress as a personal bill. The endorsement is usually small compared with one laundry-room overflow."
+      }
+    ]
+  },
+  "MI": {
+    "cities": [
+      "Detroit",
+      "Grand Rapids",
+      "Ann Arbor"
+    ],
+    "regulatorName": "Michigan Department of Insurance and Financial Services",
+    "regulatorUrl": "https://www.michigan.gov/difs",
+    "localAngle": "Michigan's NAIC 2021 average of $122 sits well under the $170 US figure. Winter weather and severe storms are the main claim triggers. Claim frequency is moderate. Replacement costs are moderate, and a competitive carrier market keeps rates in the cheap Great Lakes cluster rather than near the national midpoint.",
+    "leaseNorm": "Michigan does not mandate renters insurance. Detroit and Grand Rapids professionally managed buildings typically require an HO-4 with $100,000 of liability and the owner as additional interest, and Ann Arbor student housing near the University of Michigan often requires each roommate to upload proof that lists the campus address.",
+    "contentsNote": "Schedule bikes, instruments, and jewelry, and value winter gear and electronics at replacement cost after a pipe break. Flood from the Detroit River, the Grand River, or a basement drain is excluded, though ice-dam and burst-pipe water can still be contents perils.",
+    "scenarioCity": "Detroit",
+    "scenarioStory": "A Detroit renter with an example $15,500 of belongings and a $500 deductible should see why $122 exists. A quote near that NAIC average with $100,000 of liability and no scheduled items is ordinary Midwest pricing. A Midtown loft with cameras and bikes will sit higher and should. The $170 US average is a national marker Michigan usually beats without starving the contents limit.",
+    "faqs": [
+      {
+        "q": "Does Michigan renters insurance cover frozen-pipe damage?",
+        "a": "Sudden accidental discharge from a burst pipe can be covered. Vacant-unit and heat-maintenance conditions apply. Photograph the damage and keep the thermostat story honest. Flood from a river is still excluded."
+      },
+      {
+        "q": "Do Ann Arbor, Michigan student leases require renters insurance?",
+        "a": "Many do. Each roommate may need to be named. A parent's homeowners policy rarely meets the landlord's liability minimum. Buy an HO-4 that shows the Ann Arbor address."
+      },
+      {
+        "q": "Why is Michigan well below the US renters average?",
+        "a": "Moderate replacement costs and a competitive market hold the $122 NAIC 2021 average down. Winter claims happen. They have not pushed the statewide blend to $170. Your deductible and prior claims still move the personal quote."
+      },
+      {
+        "q": "Should a Grand Rapids, Michigan renter add water-backup coverage?",
+        "a": "If the unit is in a basement or on a low lot, yes. A cheap HO-4 that skips backup is a bet against a spring thaw and a tired drain. The endorsement is usually a small add-on."
+      }
+    ]
+  },
+  "MN": {
+    "cities": [
+      "Minneapolis",
+      "Saint Paul",
+      "Rochester"
+    ],
+    "regulatorName": "Minnesota Department of Commerce",
+    "regulatorUrl": "https://mn.gov/commerce/",
+    "localAngle": "Minnesota posted a $139 NAIC 2021 average, under the $170 US figure. Hail, winter storms, and severe weather drive claims. Replacement costs in the Twin Cities run above Rochester and the rest of the state. Claim frequency is moderate and litigation is less of a factor, and many carriers compete in the upper Midwest market.",
+    "leaseNorm": "Minnesota does not require tenants to buy insurance by statute. Minneapolis and Saint Paul professionally managed buildings typically require an HO-4 with $100,000 of liability and portal proof, and Rochester medical-center housing often asks for the same packet.",
+    "contentsNote": "Schedule bikes, skis, and jewelry, and match electronics to a January replacement cart. Flood from the Mississippi or a basement drain is excluded, though hail-driven leaks and burst pipes can still be contents perils.",
+    "scenarioCity": "Minneapolis",
+    "scenarioStory": "A Minneapolis renter with an example $20,000 of belongings and a $500 deductible is buying Twin Cities replacement costs inside a $139 state average. A quote near $139 can be fair in a Uptown building with no scheduled items. A first-floor unit near a creek needs water backup even if the premium beats $170. If the quote is $200 without jewelry or a claim, shop again before blaming hail season.",
+    "faqs": [
+      {
+        "q": "Does Minnesota renters insurance cover hail damage to my stuff?",
+        "a": "If hail opens the building and water ruins contents, the HO-4 can pay up to the limit minus the deductible. The roof is the landlord's claim. Photograph items before the restoration crew bags them."
+      },
+      {
+        "q": "Can a Minneapolis, Minnesota landlord require renters insurance?",
+        "a": "Yes, by lease. The Minnesota Department of Commerce regulates the insurer. Upload a declarations page that shows the address and the required liability. Additional-interest language is what most HO-4 forms can issue."
+      },
+      {
+        "q": "Why is Minnesota below the US renters average?",
+        "a": "A competitive upper Midwest market and moderate claim patterns hold the $139 NAIC 2021 average down even with Twin Cities replacement costs. Rochester and smaller cities pull the blend lower. Shop the ZIP."
+      },
+      {
+        "q": "Should a Saint Paul, Minnesota renter buy flood coverage?",
+        "a": "If the unit is near the Mississippi or in a mapped flood zone, yes. A standard HO-4 will not pay for rising water. Burst pipes and hail leaks remain the more common contents conversations."
+      }
+    ]
+  },
+  "MS": {
+    "cities": [
+      "Jackson",
+      "Gulfport",
+      "Oxford"
+    ],
+    "regulatorName": "Mississippi Insurance Department",
+    "regulatorUrl": "https://www.mid.ms.gov/",
+    "localAngle": "Mississippi's NAIC 2021 average of $190 is one of the highest in the country and well above the $170 US figure. Hurricanes, tornadoes, and severe storms all sit in the risk profile. Higher claim frequency and a more active litigation climate push costs up. Replacement costs are relatively low, which is not enough to offset Gulf exposure, and some carriers limit the coast, which thins competition and helps explain why the average sits near the top of the table.",
+    "leaseNorm": "Mississippi does not mandate renters insurance statewide. Gulfport and Jackson professionally managed buildings typically require an HO-4 with $100,000 of liability and the owner as additional interest, and Oxford student housing near the University of Mississippi often requires each roommate to show proof.",
+    "contentsNote": "Schedule instruments, jewelry, and bikes, and price electronics at post-storm replacement cost. Hurricane wind can be a contents peril, flood and surge are excluded especially in Gulfport, and tornado wind inland can still be covered.",
+    "scenarioCity": "Jackson",
+    "scenarioStory": "A Jackson renter with an example $16,000 of belongings and a $1,000 deductible is living inside a high-average state. A quote near $190 matches the NAIC figure and already sits above $170. Inland Jackson should still be cheaper weather than Gulfport, so a $260 quote without a claim or scheduled jewelry deserves a second shop. If the unit is on the Coast, price flood separately and treat the HO-4 as the wind-and-theft layer only.",
+    "faqs": [
+      {
+        "q": "Why is Mississippi renters insurance among the highest averages?",
+        "a": "The $190 NAIC 2021 figure reflects hurricane exposure, higher claim frequency, litigation, and thinner coastal appetite. Low replacement costs are not enough to pull the blend under $170. Gulfport and Jackson will not quote the same."
+      },
+      {
+        "q": "Does Mississippi renters insurance cover hurricanes?",
+        "a": "Wind can be covered. Flood and surge are not. The Mississippi Insurance Department regulates the companies. It does not turn an HO-4 into a flood policy; coast renters should shop flood on a separate form."
+      },
+      {
+        "q": "Do Oxford, Mississippi student leases require renters insurance?",
+        "a": "Many do. Each roommate may need to be named. A parent's homeowners policy is a weak match for a landlord's liability minimum. Buy an HO-4 that lists the Oxford address."
+      },
+      {
+        "q": "Can a Gulfport, Mississippi landlord force-place insurance if I miss the deadline?",
+        "a": "Some leases allow it. The forced policy is often narrower and more expensive than an HO-4 you choose. Buy your own coverage before keys and send the declarations page the same day."
+      }
+    ]
+  },
+  "MO": {
+    "cities": [
+      "Kansas City",
+      "St. Louis",
+      "Springfield"
+    ],
+    "regulatorName": "Missouri Department of Commerce and Insurance",
+    "regulatorUrl": "https://insurance.mo.gov/",
+    "localAngle": "Missouri posted a $155 NAIC 2021 average, under the $170 US figure. Tornadoes, hail, and severe storms are common from Kansas City through Saint Louis and Springfield. Weather-driven claims dominate. Replacement costs are moderate, and solid carrier competition keeps rates close to the national number without matching the highest Plains states.",
+    "leaseNorm": "Missouri does not require tenants to buy insurance by statute. Kansas City and Saint Louis professionally managed buildings typically require an HO-4 with $100,000 of liability and portal proof, and Springfield student and workforce housing has copied the same template.",
+    "contentsNote": "Schedule bikes, instruments, and jewelry, and use replacement-cost numbers for electronics after a hail opening. Flood from the Missouri or Mississippi or a basement drain is excluded, tornado wind can be covered, and earthquake in the Bootheel needs a rider if you want New Madrid shaking paid.",
+    "scenarioCity": "Kansas City",
+    "scenarioStory": "A Kansas City renter with an example $18,000 of belongings and a $500 deductible should treat $155 as the statewide midpoint. A Crossroads loft with no scheduled items can quote near that average. A first-floor unit in a floodplain needs a flood question even if the HO-4 beats $170. If the quote is $220 without a claim or jewelry, shop a second carrier before blaming Missouri hail.",
+    "faqs": [
+      {
+        "q": "Does Missouri renters insurance cover tornado damage?",
+        "a": "Wind and debris often are covered. Flood that follows is not. After a Kansas City or St. Louis outbreak, photograph belongings before disposal; the Department of Commerce and Insurance can help if the claim stalls."
+      },
+      {
+        "q": "Can a St. Louis, Missouri landlord require renters insurance?",
+        "a": "Yes, by lease. Upload a declarations page that shows the address and the required liability. Ask for additional-interest wording if the portal demands additional insured and the HO-4 cannot issue that form."
+      },
+      {
+        "q": "Why is Missouri close to the national renters average?",
+        "a": "Storms raise frequency. Moderate reconstruction costs and carrier competition hold the $155 NAIC 2021 average just under $170. Springfield and rural counties pull the blend down from the two big metros."
+      },
+      {
+        "q": "Should a Springfield, Missouri renter buy earthquake coverage?",
+        "a": "The New Madrid zone matters more in the Bootheel than in Springfield. If you want shaking paid, price a rider. For most renters, water backup and a realistic contents limit come first."
+      }
+    ]
+  },
+  "MT": {
+    "cities": [
+      "Billings",
+      "Missoula",
+      "Bozeman"
+    ],
+    "regulatorName": "Montana Commissioner of Securities and Insurance",
+    "regulatorUrl": "https://csimt.gov/",
+    "localAngle": "Montana's NAIC 2021 average of $130 sits under the $170 US figure. Winter storms and wildfire season are the main concerns. Claim frequency is low. Replacement costs are moderate, and a thin carrier market keeps the average below the national number even when a Missoula or Bozeman rebuild is not cheap.",
+    "leaseNorm": "Montana does not mandate renters insurance. Billings and Bozeman professionally managed buildings typically require an HO-4 with $100,000 of liability and the owner as additional interest, and Missoula student housing near the University of Montana often requires each roommate to show proof.",
+    "contentsNote": "Schedule bikes, skis, cameras, and firearms if they exceed sublimits, and price electronics at what they cost to replace in Billings or Bozeman. Flood is excluded along the Yellowstone and Clark Fork, wildfire is a fire peril, and earthquake in western Montana needs a rider if you want shaking paid.",
+    "scenarioCity": "Billings",
+    "scenarioStory": "A Billings renter with an example $16,500 of belongings and a $500 deductible should expect a quote that can sit near $130 if nothing is scheduled. That average already beats $170. A Bozeman quote for the same inventory may run higher because replacement and theft pressure follow a tighter housing market. If a carrier quotes $200 without jewelry or a claim, shop again before deciding Montana is suddenly expensive.",
+    "faqs": [
+      {
+        "q": "Does Montana renters insurance cover wildfire?",
+        "a": "Fire is a standard peril. Smoke and soot that enter the unit can be a contents claim. Extra living costs depend on the loss-of-use clause. Flood from firefighting runoff is usually excluded; the Commissioner of Securities and Insurance can help if a fire claim stalls."
+      },
+      {
+        "q": "Do Bozeman, Montana landlords require renters insurance?",
+        "a": "Many professionally managed buildings do. Send a declarations page that lists the address and the required liability. A master policy the building sells is optional unless the lease says otherwise."
+      },
+      {
+        "q": "Why is Montana below the US renters average?",
+        "a": "Low claim frequency and a small book of business hold the $130 NAIC 2021 average down. Thin competition can still produce a high personal quote if one carrier steps back. Shop more than one company."
+      },
+      {
+        "q": "Should a Missoula, Montana renter buy earthquake coverage?",
+        "a": "Western Montana has fault risk that a base HO-4 usually skips. Price a rider if you want shaking paid. For most renters, wildfire preparedness and a realistic contents limit matter first."
+      }
+    ]
+  },
+  "NE": {
+    "cities": [
+      "Omaha",
+      "Lincoln",
+      "Bellevue"
+    ],
+    "regulatorName": "Nebraska Department of Insurance",
+    "regulatorUrl": "https://doi.nebraska.gov/",
+    "localAngle": "Nebraska posted a $150 NAIC 2021 average, under the $170 US figure. Severe storms, hail, and winter weather are common. Claim frequency is moderate and mostly weather-driven. Replacement costs are modest, and a competitive carrier market keeps rates near the national cluster without matching the highest Plains states.",
+    "leaseNorm": "Nebraska does not require tenants to buy insurance by statute. Omaha and Lincoln professionally managed buildings typically require an HO-4 with $100,000 of liability and the owner as additional interest, and Bellevue military-adjacent housing often asks for the same packet.",
+    "contentsNote": "Schedule bikes, instruments, and jewelry, and use replacement-cost numbers for electronics after a hail opening. Flood from the Missouri or a basement drain is excluded, though tornado wind can be covered.",
+    "scenarioCity": "Omaha",
+    "scenarioStory": "An Omaha renter with an example $17,000 of belongings and a $1,000 deductible is making a hail trade. The higher deductible can hold a quote near the $150 state average. Dropping to $250 after a neighbor's roof dented will cost more every year than it is likely to return. The $170 US average is the national marker Nebraska usually stays under.",
+    "faqs": [
+      {
+        "q": "Does Nebraska renters insurance cover hail and tornadoes?",
+        "a": "Wind and hail that ruin contents after the building opens can be covered. Flood that follows is not. Photograph items before they go to the curb. The Nebraska Department of Insurance can help if the claim stalls."
+      },
+      {
+        "q": "Can a Lincoln, Nebraska landlord require renters insurance?",
+        "a": "Yes, by lease. Student buildings near the university often do. Upload a declarations page that shows the Lincoln address and the required liability."
+      },
+      {
+        "q": "Why is Nebraska near $150 instead of the US $170 average?",
+        "a": "Hail and storms raise frequency. Modest reconstruction costs and carrier competition hold the NAIC 2021 average down. Omaha and Lincoln will not quote the same as a small-town duplex."
+      },
+      {
+        "q": "Should a Bellevue, Nebraska renter schedule jewelry?",
+        "a": "If a ring or watch sits above the unscheduled jewelry sublimit, yes. A stated value settles more cleanly than a depreciated lump sum after a burglary."
+      }
+    ]
+  },
+  "NV": {
+    "cities": [
+      "Las Vegas",
+      "Henderson",
+      "Reno"
+    ],
+    "regulatorName": "Nevada Division of Insurance",
+    "regulatorUrl": "https://doi.nv.gov/",
+    "localAngle": "Nevada's NAIC 2021 average of $132 sits under the $170 US figure. Wildfire risk near the urban fringe and occasional winter storms in Reno shape losses. Claim frequency is moderate, with litigation more of a Las Vegas story. Replacement costs in Las Vegas, Henderson, and Reno run above the rest of the state, and many national carriers compete.",
+    "leaseNorm": "Nevada does not mandate renters insurance. Las Vegas and Henderson professionally managed communities typically require an HO-4 with $100,000 of liability and portal proof before keys, and Reno student and casino-adjacent housing has copied the same template.",
+    "contentsNote": "Schedule bikes, cameras, and jewelry, and match electronics to Las Vegas replacement cost. Flood from a wash or a flash flood is excluded, wildfire is a fire peril, and earthquake, including Reno-area fault risk, needs a rider if you want shaking paid.",
+    "scenarioCity": "Las Vegas",
+    "scenarioStory": "A Las Vegas renter with an example $19,000 of belongings and a $500 deductible should treat $132 as the statewide midpoint. A high-rise with access control can quote near that average. A first-floor unit facing a wash needs a flood question even if the HO-4 beats $170. If the quote is $200 without jewelry or a claim, shop a second carrier before blaming the Strip.",
+    "faqs": [
+      {
+        "q": "Does Nevada renters insurance cover flash floods in Las Vegas?",
+        "a": "Rising water from a wash is usually flood and is excluded. Sudden rain through a failed roof can be a different peril. Henderson and Las Vegas renters on grade should ask about flood and water backup, not assume the HO-4 is enough."
+      },
+      {
+        "q": "Can a Las Vegas, Nevada landlord require renters insurance?",
+        "a": "Yes, and most professionally managed buildings do. The Nevada Division of Insurance regulates the insurer. Upload a declarations page that shows the address and the required liability."
+      },
+      {
+        "q": "Why is Nevada below the US renters average?",
+        "a": "A competitive market and moderate claim frequency hold the $132 NAIC 2021 average down. Replacement costs in Las Vegas and Reno keep it from falling further. Shop the ZIP, especially on the wildland fringe."
+      },
+      {
+        "q": "Should a Reno, Nevada renter buy earthquake coverage?",
+        "a": "Reno sits closer to fault risk than most Las Vegas ZIPs. A base HO-4 usually skips shaking. Price a rider if you want that peril paid. For many renters, theft limits and water backup still come first."
+      }
+    ]
+  },
+  "NH": {
+    "cities": [
+      "Manchester",
+      "Nashua",
+      "Concord"
+    ],
+    "regulatorName": "New Hampshire Insurance Department",
+    "regulatorUrl": "https://www.insurance.nh.gov/",
+    "localAngle": "New Hampshire's NAIC 2021 average of $104 is among the lowest in the country and far under the $170 US figure. Winter storms are the main weather exposure. Claim frequency is low and litigation is rare. Replacement costs are moderate, and a small, stable carrier market keeps the average cheap even when a Manchester pipe break is a miserable January night.",
+    "leaseNorm": "New Hampshire does not require tenants to buy insurance by statute. Manchester and Nashua professionally managed buildings typically require an HO-4 with $100,000 of liability and proof before keys, while Concord leases are more mixed and student housing still treats coverage as a move-in item.",
+    "contentsNote": "Schedule bikes, cameras, and jewelry, and use replacement-cost numbers for winter gear and electronics. Flood from the Merrimack or a basement drain is excluded, though ice-dam and burst-pipe water can still be contents perils.",
+    "scenarioCity": "Manchester",
+    "scenarioStory": "A Manchester renter with an example $15,000 of belongings and a $500 deductible should expect a quote that can sit near $104 if nothing is scheduled. That average is among the cheapest NAIC 2021 figures. Raising contents to match a real winter wardrobe is a better use of money than shrinking the deductible to $250. If a carrier quotes $160 without jewelry or a claim, shop again.",
+    "faqs": [
+      {
+        "q": "Why is New Hampshire renters insurance among the cheapest averages?",
+        "a": "The $104 NAIC 2021 figure reflects low claim frequency and a stable small market. Winter is real. Losses are not constant. Your Manchester or Nashua ZIP can still quote higher after a water claim."
+      },
+      {
+        "q": "Can a Nashua, New Hampshire landlord require renters insurance?",
+        "a": "Yes, by lease. The New Hampshire Insurance Department regulates the insurer. Send a declarations page that lists the address and the required liability."
+      },
+      {
+        "q": "Does a New Hampshire renters policy cover ice-dam leaks?",
+        "a": "Sudden water through a failed roof can be covered. Gradual seepage and flood are different problems. Photograph the ice and the damage. If the carrier calls it maintenance, the department can review the file."
+      },
+      {
+        "q": "Should a Concord, New Hampshire renter buy flood coverage?",
+        "a": "If the unit sits near a river or in a mapped flood zone, yes. A standard HO-4 will not pay for rising water. Burst pipes remain the more common winter conversation."
+      }
+    ]
+  },
+  "NJ": {
+    "cities": [
+      "Newark",
+      "Jersey City",
+      "Hoboken"
+    ],
+    "regulatorName": "New Jersey Department of Banking and Insurance",
+    "regulatorUrl": "https://www.nj.gov/dobi/",
+    "localAngle": "New Jersey's NAIC 2021 average of $125 sits well under the $170 US figure. Coastal storms and nor'easters are the headline weather risk. Claim frequency is moderate, with litigation more common in the metro counties. Replacement costs in the New York orbit around Jersey City and Hoboken are high, and a deep competitive carrier market still keeps the statewide average below the national number.",
+    "leaseNorm": "New Jersey does not mandate renters insurance. Jersey City, Hoboken, and Newark professionally managed buildings typically require an HO-4 with $100,000 or $300,000 of liability and every adult occupant named, with proof due before keys on a tenant portal.",
+    "contentsNote": "Schedule bikes, cameras, and jewelry, because electronics and commuting gear add up in a small Hoboken apartment. Flood from the Hudson, the Hackensack, or a basement drain is excluded, though nor'easter wind can still be a contents peril.",
+    "scenarioCity": "Newark",
+    "scenarioStory": "A Newark renter with an example $22,000 of belongings and a $500 deductible should treat $125 as the statewide gravity, not a Jersey City price list. A quote near $125 can be fair in a mid-rise with no scheduled items. A Hoboken ground-floor unit needs a flood conversation even if the HO-4 beats $170. If the quote is $200 without jewelry or a claim, shop a second carrier.",
+    "faqs": [
+      {
+        "q": "Does New Jersey renters insurance cover Hudson River flooding?",
+        "a": "No. Flood and storm surge are excluded. Wind can still be covered. Hoboken and Jersey City renters on grade should price flood separately; the Department of Banking and Insurance can help with a stalled wind claim after a nor'easter."
+      },
+      {
+        "q": "Can a Jersey City, New Jersey landlord require $300,000 of liability?",
+        "a": "Yes, if the lease says so. The extra limit is usually inexpensive on an HO-4. Confirm the owner is additional interest so a cancellation notice reaches the manager."
+      },
+      {
+        "q": "Why is New Jersey below the US renters average?",
+        "a": "A competitive market offsets high replacement costs in the Hudson County metros. The $125 NAIC 2021 average blends Newark, the shore, and cheaper inland counties. Shop the ZIP."
+      },
+      {
+        "q": "Should a Hoboken, New Jersey renter buy water-backup coverage?",
+        "a": "If the unit is on grade or in a garden apartment, yes. Sandy-era memory is the local reason. A cheap HO-4 that skips backup and flood leaves the expensive water events unpaid."
+      }
+    ]
+  },
+  "NM": {
+    "cities": [
+      "Albuquerque",
+      "Santa Fe",
+      "Las Cruces"
+    ],
+    "regulatorName": "New Mexico Office of Superintendent of Insurance",
+    "regulatorUrl": "https://www.osi.state.nm.us/",
+    "localAngle": "New Mexico's NAIC 2021 average of $130 sits under the $170 US figure. Wildfire and severe-weather events shape the claim profile. Claim frequency is low to moderate. Replacement costs are moderate, and a modest carrier market keeps rates near the cheaper Southwest cluster rather than the national midpoint.",
+    "leaseNorm": "New Mexico does not require tenants to buy insurance by statute. Albuquerque professionally managed buildings typically require an HO-4 with $100,000 of liability and the owner as additional interest, and Santa Fe and Las Cruces newer communities have copied that template.",
+    "contentsNote": "Schedule jewelry, cameras, and bikes, and match electronics to Albuquerque replacement cost. Flood from an arroyo or a flash flood is excluded, wildfire is a fire peril, and earthquake still needs a rider if you want it.",
+    "scenarioCity": "Albuquerque",
+    "scenarioStory": "An Albuquerque renter with an example $16,000 of belongings and a $500 deductible should expect a quote that can sit near $130 if nothing is scheduled. That average already beats $170. A foothills ZIP on the wildland edge can price higher because of fire, not because New Mexico is an expensive state. If the quote is $200 without jewelry or a claim, shop again.",
+    "faqs": [
+      {
+        "q": "Does New Mexico renters insurance cover wildfire?",
+        "a": "Fire is a standard peril. Smoke and soot can be a contents claim. Extra living costs depend on the loss-of-use clause. Flood from firefighting runoff is usually excluded; the Office of Superintendent of Insurance can help if a fire claim stalls."
+      },
+      {
+        "q": "Can an Albuquerque, New Mexico landlord require renters insurance?",
+        "a": "Yes, by lease. Upload a declarations page that shows the address and the required liability. Additional-interest language is what most HO-4 forms can issue."
+      },
+      {
+        "q": "Why is New Mexico below the US renters average?",
+        "a": "Low-to-moderate claim frequency and moderate replacement costs hold the $130 NAIC 2021 average down. Thin competition can still produce a high personal quote. Shop more than one carrier."
+      },
+      {
+        "q": "Should a Santa Fe, New Mexico renter buy flood coverage?",
+        "a": "If the unit sits near an arroyo or in a mapped flood zone, yes. Flash floods are the local water story. A standard HO-4 will not pay for rising water from a wash."
+      }
+    ]
+  },
+  "NY": {
+    "cities": [
+      "New York",
+      "Buffalo",
+      "Rochester"
+    ],
+    "regulatorName": "New York State Department of Financial Services",
+    "regulatorUrl": "https://www.dfs.ny.gov/",
+    "localAngle": "New York's NAIC 2021 average of $164 sits just under the $170 US figure. Winter storms and coastal weather are the main exposures. Claim frequency is moderate, and litigation is more common in New York City. Replacement costs in the city and the surrounding metro are among the highest in the country, and a very competitive carrier market still moderates the statewide blend, which also includes cheaper Buffalo and Rochester ZIPs.",
+    "leaseNorm": "New York does not require tenants to buy insurance by statewide statute. New York City professionally managed buildings typically require an HO-4 with $100,000 or $300,000 of liability and every adult occupant named, and Buffalo and Rochester newer buildings have copied the portal proof.",
+    "contentsNote": "Schedule bikes, cameras, jewelry, and instruments, because electronics and clothing add up fast in a small New York apartment. Flood from the East River, a subway-adjacent basement, or a backed-up drain is excluded, though nor'easter wind can still be a contents peril.",
+    "scenarioCity": "New York",
+    "scenarioStory": "A New York renter with an example $35,000 of belongings and a $500 deductible is buying city replacement costs inside a $164 state average. A quote near $164 can be fair in a doorman building with no scheduled items. A basement unit in a flood-prone block needs flood and water backup even if the HO-4 sits under $170. Buffalo would likely quote the same inventory for less. Use the statewide average as a blend, not as a Manhattan price list.",
+    "faqs": [
+      {
+        "q": "Does New York renters insurance cover basement flooding in the city?",
+        "a": "Rising floodwater and sewer backup are usually excluded on a bare HO-4. A water-backup endorsement can cover some drain events. A flood policy is the tool for surge or river overflow. Garden apartments should price both."
+      },
+      {
+        "q": "Can a New York City landlord require renters insurance?",
+        "a": "Yes, by lease. The Department of Financial Services regulates the insurer. Upload a declarations page that shows the unit address and the required liability. One roommate's policy does not automatically cover the others."
+      },
+      {
+        "q": "Why is New York so close to the US renters average?",
+        "a": "High city replacement costs and metro litigation push up. Buffalo, Rochester, and carrier competition pull down. The $164 NAIC 2021 average is a statewide blend. Your borough and deductible move the personal quote more than that midpoint."
+      },
+      {
+        "q": "Should a Buffalo renter buy the same contents limit as a New York City renter?",
+        "a": "Buy the limit that replaces your stuff, not the limit that matches a Manhattan blog post. Replacement costs are lower in Buffalo. The perils, including winter pipe breaks, are still real. Inventory the apartment you have."
+      }
+    ]
+  },
+  "NC": {
+    "cities": [
+      "Charlotte",
+      "Raleigh",
+      "Durham"
+    ],
+    "regulatorName": "North Carolina Department of Insurance",
+    "regulatorUrl": "https://www.ncdoi.gov/",
+    "localAngle": "North Carolina's NAIC 2021 average of $128 sits well under the $170 US figure. Hurricane and severe-storm risk increases toward the coast. Charlotte, Raleigh, and Durham replacement costs sit above the rural east. Claim frequency is moderate, and a growing, competitive insurance market keeps the inland metros from pricing like a Gulf-coast average.",
+    "leaseNorm": "North Carolina does not mandate renters insurance. Charlotte and Raleigh professionally managed buildings typically require an HO-4 with $100,000 of liability and portal proof before keys, and Durham student housing often requires each roommate to be named.",
+    "contentsNote": "Schedule bikes, cameras, and jewelry, and match electronics to Charlotte or Raleigh replacement cost. Flood from a hurricane, a creek, or a basement drain is excluded, though wind from a tropical storm can be a contents peril.",
+    "scenarioCity": "Charlotte",
+    "scenarioStory": "A Charlotte renter with an example $19,000 of belongings and a $500 deductible should treat $128 as the statewide midpoint. A South End mid-rise with no scheduled items can quote near that average. A first-floor unit on a creek needs water backup even if the HO-4 beats $170. Raleigh would likely land in the same band. If the quote is $190 without jewelry or a claim, shop a second carrier.",
+    "faqs": [
+      {
+        "q": "Does North Carolina renters insurance cover hurricanes?",
+        "a": "Wind can be covered. Flood and surge are not. The North Carolina Department of Insurance regulates the companies. Coast renters should shop flood on a separate form even if they keep a Charlotte-sized contents limit."
+      },
+      {
+        "q": "Can a Raleigh, North Carolina landlord require renters insurance?",
+        "a": "Yes, by lease. Upload a declarations page that shows the address and the required liability. Additional-interest language is what most HO-4 forms can issue."
+      },
+      {
+        "q": "Why is North Carolina well below the US renters average?",
+        "a": "A competitive market and a large inland renter base hold the $128 NAIC 2021 average down. The coast is a different weather story and still reports inside that statewide blend. Shop the ZIP."
+      },
+      {
+        "q": "Should a Durham, North Carolina renter schedule a bike?",
+        "a": "If the replacement cost sits above the unscheduled sports sublimit, yes. Theft from a porch or a rack is a common Triangle claim. A stated value settles more cleanly than a depreciated lump sum."
+      }
+    ]
+  },
+  "ND": {
+    "cities": [
+      "Fargo",
+      "Bismarck",
+      "Grand Forks"
+    ],
+    "regulatorName": "North Dakota Insurance Department",
+    "regulatorUrl": "https://www.insurance.nd.gov/",
+    "localAngle": "North Dakota's NAIC 2021 average of $117 sits far under the $170 US figure. Severe winter weather and occasional hail shape claims. Claim frequency is low. Replacement costs are moderate, and a thin carrier market keeps the average in the cheap Plains cluster even when a Fargo pipe break is a hard January night.",
+    "leaseNorm": "North Dakota does not require tenants to buy insurance by statute. Fargo professionally managed buildings typically require an HO-4 with $100,000 of liability and proof before keys, and student housing near NDSU often requires each roommate to be named.",
+    "contentsNote": "Schedule bikes, instruments, and jewelry, and use replacement-cost numbers for winter gear and electronics after a burst pipe. Flood from the Red River or a basement drain is excluded, though ice-dam and hail-driven water can still be contents perils.",
+    "scenarioCity": "Fargo",
+    "scenarioStory": "A Fargo renter with an example $14,000 of belongings and a $500 deductible should expect a quote that can sit near $117 if nothing is scheduled. That average already beats $170 by a wide gap. Raising contents to match a real winter wardrobe is a better use of money than shrinking the deductible to $250. If a carrier quotes $170 without jewelry or a claim, shop again.",
+    "faqs": [
+      {
+        "q": "Does North Dakota renters insurance cover frozen-pipe damage?",
+        "a": "Sudden accidental discharge from a burst pipe can be covered. Heat-maintenance conditions apply. Photograph the damage. River flood remains excluded; the North Dakota Insurance Department can review a stalled water claim."
+      },
+      {
+        "q": "Can a Fargo, North Dakota landlord require renters insurance?",
+        "a": "Yes, by lease. Student buildings often do. Send a declarations page that lists the Fargo address and the required liability."
+      },
+      {
+        "q": "Why is North Dakota well below the US renters average?",
+        "a": "Low claim frequency and modest replacement costs hold the $117 NAIC 2021 average down. Thin competition can still produce a high personal quote. Shop more than one company."
+      },
+      {
+        "q": "Should a Grand Forks, North Dakota renter buy flood coverage?",
+        "a": "If the unit is near the Red River or in a mapped flood zone, yes. Local memory of river flooding is the reason. A standard HO-4 will not pay for rising water."
+      }
+    ]
+  },
+  "OH": {
+    "cities": [
+      "Columbus",
+      "Cleveland",
+      "Cincinnati"
+    ],
+    "regulatorName": "Ohio Department of Insurance",
+    "regulatorUrl": "https://insurance.ohio.gov/",
+    "localAngle": "Ohio's NAIC 2021 average of $125 sits well under the $170 US figure. Severe storms and winter weather are the main triggers. Claim frequency is moderate. Replacement costs are moderate, and a highly competitive carrier market keeps the average in the cheap Midwest cluster across Columbus, Cleveland, and Cincinnati.",
+    "leaseNorm": "Ohio does not mandate renters insurance. Columbus and Cincinnati professionally managed buildings typically require an HO-4 with $100,000 of liability and portal proof, and student housing near Ohio State often requires each roommate to be named.",
+    "contentsNote": "Schedule bikes, instruments, and jewelry, and use replacement-cost numbers for electronics after a storm leak or a pipe break. Flood from the Ohio or Cuyahoga or a basement drain is excluded, though tornado wind and burst pipes can still be contents perils.",
+    "scenarioCity": "Columbus",
+    "scenarioStory": "A Columbus renter with an example $17,500 of belongings and a $500 deductible should treat $125 as ordinary Ohio pricing. A Short North mid-rise with no scheduled items can quote near that average. A first-floor unit that has taken water needs backup coverage even if the HO-4 beats $170. Cleveland and Cincinnati often land in the same band. If the quote is $190 without jewelry or a claim, shop a second carrier.",
+    "faqs": [
+      {
+        "q": "Does Ohio renters insurance cover basement flooding?",
+        "a": "Rising floodwater and sewer backup are usually excluded on a bare HO-4. A water-backup endorsement can cover some drain events. Photograph the damage. The Ohio Department of Insurance can help if a covered water claim stalls."
+      },
+      {
+        "q": "Can a Columbus, Ohio landlord require renters insurance?",
+        "a": "Yes, by lease. Upload a declarations page that shows the address and the required liability. One roommate's policy does not automatically cover the others."
+      },
+      {
+        "q": "Why is Ohio well below the US renters average?",
+        "a": "A highly competitive market and moderate replacement costs hold the $125 NAIC 2021 average down. Storms happen. They have not pushed the statewide blend to $170. Your deductible and claims still move the personal quote."
+      },
+      {
+        "q": "Should a Cincinnati, Ohio renter buy flood coverage?",
+        "a": "If the unit sits near the Ohio River or in a mapped flood zone, yes. A standard HO-4 will not pay for rising water. Wind and burst pipes remain the more common contents conversations."
+      }
+    ]
+  },
+  "OK": {
+    "cities": [
+      "Oklahoma City",
+      "Tulsa",
+      "Norman"
+    ],
+    "regulatorName": "Oklahoma Insurance Department",
+    "regulatorUrl": "https://www.oid.ok.gov/",
+    "localAngle": "Oklahoma's NAIC 2021 average of $163 sits just under the $170 US figure. The state is among the most severe-weather exposed in the country, with tornadoes and hail common. Weather claims and a more active litigation climate push costs up. Replacement costs are moderate, and competition softens some of the weather-driven pressure, but the average still runs high for the Plains.",
+    "leaseNorm": "Oklahoma does not require tenants to buy insurance by statute. Oklahoma City and Tulsa professionally managed buildings typically require an HO-4 with $100,000 of liability and the owner as additional interest, and Norman student housing near the University of Oklahoma often requires each roommate to show proof.",
+    "contentsNote": "Schedule instruments, bikes, and jewelry, and use replacement-cost numbers for electronics after a hail opening. Flood from a creek or a basement drain is excluded, tornado wind can be covered, and earthquake from induced or natural shaking needs a rider if you want it paid.",
+    "scenarioCity": "Oklahoma City",
+    "scenarioStory": "An Oklahoma City renter with an example $18,000 of belongings and a $1,000 deductible is making a hail and tornado trade. The higher deductible can hold a quote near the $163 state average. A $250 deductible after last spring's outbreak will cost more every year than it is likely to return. The $170 US average is close enough that a $230 quote without jewelry or a claim deserves a second shop.",
+    "faqs": [
+      {
+        "q": "Does Oklahoma renters insurance cover tornadoes and hail?",
+        "a": "Wind and hail that ruin contents after the building opens can be covered. Flood that follows is not. Photograph items before they go to the curb. The Oklahoma Insurance Department can help if the claim stalls."
+      },
+      {
+        "q": "Can a Tulsa, Oklahoma landlord require renters insurance?",
+        "a": "Yes, by lease. Upload a declarations page that shows the address and the required liability. Some buildings force-place coverage if you miss the deadline. Buy your own HO-4 first."
+      },
+      {
+        "q": "Why is Oklahoma so close to the US renters average?",
+        "a": "Severe weather and litigation push the $163 NAIC 2021 figure up. Moderate reconstruction costs and competition keep it from jumping toward Texas. Norman and rural counties still report inside that statewide blend."
+      },
+      {
+        "q": "Should a Norman, Oklahoma renter buy earthquake coverage?",
+        "a": "If you want shaking paid, price a rider. A base HO-4 usually skips earthquake. For most student households, a realistic contents limit and the landlord's liability minimum come first."
+      }
+    ]
+  },
+  "OR": {
+    "cities": [
+      "Portland",
+      "Eugene",
+      "Salem"
+    ],
+    "regulatorName": "Oregon Division of Financial Regulation",
+    "regulatorUrl": "https://dfr.oregon.gov/",
+    "localAngle": "Oregon's NAIC 2021 average of $119 sits well under the $170 US figure. Wildfire risk, winter storms, and coastal weather all play a role. Claim frequency is low. Replacement costs in the Portland metro sit above Eugene and Salem, and a competitive west-coast carrier market keeps the average cheap even when a Portland rebuild is not.",
+    "leaseNorm": "Oregon does not mandate renters insurance. Portland professionally managed buildings typically require an HO-4 with $100,000 of liability and portal proof, and Eugene student housing near the University of Oregon often requires each roommate to be named.",
+    "contentsNote": "Schedule bikes, cameras, and jewelry, and match electronics to Portland replacement cost. Flood from the Willamette or a basement drain is excluded, wildfire is a fire peril, and earthquake in the Cascadia story needs a rider if you want shaking paid.",
+    "scenarioCity": "Portland",
+    "scenarioStory": "A Portland renter with an example $21,000 of belongings and a $500 deductible should treat $119 as the statewide gravity. A quote near $119 can be fair in an inner-eastside building with no scheduled items. Add an earthquake rider and scheduled bikes and the quote should rise. The $170 US average is a national marker Oregon usually beats. Do not spend that gap by leaving a $10,000 contents limit on a $21,000 apartment.",
+    "faqs": [
+      {
+        "q": "Does Oregon renters insurance cover wildfire?",
+        "a": "Fire is a standard peril. Smoke and soot can be a contents claim. Extra living costs depend on the loss-of-use clause. Flood from firefighting runoff is usually excluded; the Division of Financial Regulation can help if a fire claim stalls."
+      },
+      {
+        "q": "Should a Portland, Oregon renter buy earthquake coverage?",
+        "a": "If you want Cascadia shaking paid, yes. A base HO-4 usually skips earthquake. Price the rider so you can see the extra dollars. For many renters it is the first endorsement worth a hard look after water backup."
+      },
+      {
+        "q": "Can a Eugene, Oregon landlord require renters insurance?",
+        "a": "Yes, by lease. Student buildings often do. Send a declarations page that lists the Eugene address and the required liability. One roommate's policy does not automatically cover the others."
+      },
+      {
+        "q": "Why is Oregon well below the US renters average?",
+        "a": "Low claim frequency and a competitive market hold the $119 NAIC 2021 average down. Portland replacement costs keep it from falling further. Shop the ZIP, especially on the wildland fringe and in older floodplain buildings."
+      }
+    ]
+  },
+  "PA": {
+    "cities": [
+      "Philadelphia",
+      "Pittsburgh",
+      "Harrisburg"
+    ],
+    "regulatorName": "Pennsylvania Insurance Department",
+    "regulatorUrl": "https://www.pa.gov/agencies/insurance",
+    "localAngle": "Pennsylvania's NAIC 2021 average of $124 sits well under the $170 US figure. Winter storms and severe weather are the main exposures. Claim frequency is moderate, with litigation more of a Philadelphia-metro factor. Replacement costs are moderate overall and higher in the two big metros, and many carriers compete, which keeps the statewide blend cheap.",
+    "leaseNorm": "Pennsylvania does not require tenants to buy insurance by statute. Philadelphia and Pittsburgh professionally managed buildings typically require an HO-4 with $100,000 of liability and portal proof, and student housing often requires each roommate to be named.",
+    "contentsNote": "Schedule bikes, cameras, and jewelry, and match electronics to Philadelphia or Pittsburgh replacement cost. Flood from the Schuylkill, the Allegheny, or a basement drain is excluded, though ice-dam and burst-pipe water can still be contents perils.",
+    "scenarioCity": "Philadelphia",
+    "scenarioStory": "A Philadelphia renter with an example $20,000 of belongings and a $500 deductible should treat $124 as the statewide midpoint. A Fishtown walk-up with no scheduled items can quote near that average. A basement apartment needs water backup even if the HO-4 beats $170. Pittsburgh often lands in the same band. If the quote is $190 without jewelry or a claim, shop a second carrier.",
+    "faqs": [
+      {
+        "q": "Does Pennsylvania renters insurance cover basement flooding in Philadelphia?",
+        "a": "Rising floodwater and sewer backup are usually excluded on a bare HO-4. A water-backup endorsement can cover some drain events. Photograph the damage. The Pennsylvania Insurance Department can help if a covered water claim stalls."
+      },
+      {
+        "q": "Can a Pittsburgh, Pennsylvania landlord require renters insurance?",
+        "a": "Yes, by lease. Upload a declarations page that shows the address and the required liability. Additional-interest language is what most HO-4 forms can issue."
+      },
+      {
+        "q": "Why is Pennsylvania well below the US renters average?",
+        "a": "A competitive market and moderate replacement costs outside Center City hold the $124 NAIC 2021 average down. Philadelphia litigation is a local factor and still has not pushed the statewide blend to $170."
+      },
+      {
+        "q": "Should a Harrisburg, Pennsylvania renter buy flood coverage?",
+        "a": "If the unit sits near the Susquehanna or in a mapped flood zone, yes. A standard HO-4 will not pay for rising water. Winter pipe breaks remain the more common contents conversation inland."
+      }
+    ]
+  },
+  "RI": {
+    "cities": [
+      "Providence",
+      "Warwick",
+      "Newport"
+    ],
+    "regulatorName": "Rhode Island Department of Business Regulation Insurance Division",
+    "regulatorUrl": "https://dbr.ri.gov/insurance-overview",
+    "localAngle": "Rhode Island posted a $139 NAIC 2021 average, under the $170 US figure. Nor'easters and winter storms are the primary weather risk. Claim frequency is low. Replacement costs are moderate to high, especially near the coast, and a small carrier market keeps the average near the New England cluster rather than at the national midpoint.",
+    "leaseNorm": "Rhode Island does not mandate renters insurance. Providence professionally managed buildings typically require an HO-4 with $100,000 of liability and the owner as additional interest, and student housing near Brown and RISD often requires each roommate to be named.",
+    "contentsNote": "Schedule bikes, cameras, and jewelry, and match electronics to Providence replacement cost. Flood from the bay, a coastal surge, or a basement drain is excluded, though nor'easter wind can still be a contents peril.",
+    "scenarioCity": "Providence",
+    "scenarioStory": "A Providence renter with an example $18,000 of belongings and a $500 deductible should treat $139 as the statewide midpoint. A quote near $139 can be fair on the East Side with no scheduled items. A Newport ground-floor unit needs a flood conversation even if the HO-4 beats $170. If the quote is $200 without jewelry or a claim, shop a second carrier before blaming the small-state market.",
+    "faqs": [
+      {
+        "q": "Does Rhode Island renters insurance cover coastal flooding?",
+        "a": "No. Flood and storm surge are excluded. Wind can still be covered. Warwick and Newport renters on grade should price flood separately; the Insurance Division can help with a stalled wind claim after a nor'easter."
+      },
+      {
+        "q": "Can a Providence, Rhode Island landlord require renters insurance?",
+        "a": "Yes, by lease. Upload a declarations page that shows the address and the required liability. Student households should name every roommate."
+      },
+      {
+        "q": "Why is Rhode Island below the US renters average?",
+        "a": "Low claim frequency holds the $139 NAIC 2021 average down even with coastal replacement costs. A small carrier list can still produce a high personal quote. Shop more than one company."
+      },
+      {
+        "q": "Should a Newport, Rhode Island renter buy flood coverage?",
+        "a": "If the unit is on grade or near the harbor, yes. A standard HO-4 will not pay for rising water. Wind from a nor'easter remains a separate peril on the renters form."
+      }
+    ]
+  },
+  "SC": {
+    "cities": [
+      "Charleston",
+      "Columbia",
+      "Greenville"
+    ],
+    "regulatorName": "South Carolina Department of Insurance",
+    "regulatorUrl": "https://doi.sc.gov/",
+    "localAngle": "South Carolina's NAIC 2021 average of $124 sits well under the $170 US figure. Hurricane and severe-storm exposure is significant, especially near Charleston. Claim frequency is moderate. Replacement costs are moderate, and a competitive southeast carrier market keeps Columbia and Greenville from pricing like a Gulf-coast average.",
+    "leaseNorm": "South Carolina does not require tenants to buy insurance by statute. Charleston and Columbia professionally managed buildings typically require an HO-4 with $100,000 of liability and the owner as additional interest, and after a hurricane year the coastal clause is not optional.",
+    "contentsNote": "Schedule bikes, cameras, and jewelry, and match electronics to Charleston replacement cost after a storm. Flood and surge are excluded, hurricane wind can be a contents peril, and earthquake in the Charleston fault story needs a rider if you want shaking paid.",
+    "scenarioCity": "Charleston",
+    "scenarioStory": "A Charleston renter with an example $20,000 of belongings and a $1,000 deductible is buying coastal weather inside a cheap-looking statewide average. A quote near $124 can still be fair inland of the barrier islands with no scheduled items. A ground-floor unit south of Broad needs flood even if the HO-4 beats $170. Columbia and Greenville would likely quote the same inventory for less wind pressure.",
+    "faqs": [
+      {
+        "q": "Does South Carolina renters insurance cover hurricanes?",
+        "a": "Wind can be covered. Flood and surge are not. The South Carolina Department of Insurance regulates the companies. Charleston renters on grade should shop flood on a separate form."
+      },
+      {
+        "q": "Can a Columbia, South Carolina landlord require renters insurance?",
+        "a": "Yes, by lease. Upload a declarations page that shows the address and the required liability. Student buildings often require each roommate to be named."
+      },
+      {
+        "q": "Why is South Carolina well below the US renters average?",
+        "a": "A competitive market and a large inland renter base hold the $124 NAIC 2021 average down. Charleston is a different weather story and still reports inside that statewide blend. Shop the ZIP."
+      },
+      {
+        "q": "Should a Charleston, South Carolina renter buy earthquake coverage?",
+        "a": "The Charleston fault is a real local story. A base HO-4 usually skips shaking. Price a rider if you want that peril paid. For many renters, flood still belongs first on the list."
+      }
+    ]
+  },
+  "SD": {
+    "cities": [
+      "Sioux Falls",
+      "Rapid City",
+      "Aberdeen"
+    ],
+    "regulatorName": "South Dakota Division of Insurance",
+    "regulatorUrl": "https://dlr.sd.gov/insurance/",
+    "localAngle": "South Dakota's NAIC 2021 average of $130 sits under the $170 US figure. Severe storms, hail, and winter weather are common. Claim frequency is moderate and mostly weather-driven. Replacement costs are modest, and a thin carrier market keeps the average near the cheaper Plains cluster.",
+    "leaseNorm": "South Dakota does not mandate renters insurance. Sioux Falls professionally managed buildings typically require an HO-4 with $100,000 of liability and proof before keys, and student housing often requires each roommate to be named.",
+    "contentsNote": "Schedule bikes, instruments, and jewelry, and use replacement-cost numbers for electronics after a hail opening. Flood from the Big Sioux or a basement drain is excluded, though tornado wind and burst pipes can still be contents perils.",
+    "scenarioCity": "Sioux Falls",
+    "scenarioStory": "A Sioux Falls renter with an example $14,500 of belongings and a $500 deductible should expect a quote that can sit near $130 if nothing is scheduled. That average already beats $170. Raising contents to match a real apartment is a better use of money than shrinking the deductible to $250. If a carrier quotes $180 without jewelry or a claim, shop again.",
+    "faqs": [
+      {
+        "q": "Does South Dakota renters insurance cover hail and tornadoes?",
+        "a": "Wind and hail that ruin contents after the building opens can be covered. Flood that follows is not. Photograph items before they go to the curb. The Division of Insurance can help if the claim stalls."
+      },
+      {
+        "q": "Can a Sioux Falls, South Dakota landlord require renters insurance?",
+        "a": "Yes, by lease. Send a declarations page that lists the address and the required liability. Additional-interest language is what most HO-4 forms can issue."
+      },
+      {
+        "q": "Why is South Dakota below the US renters average?",
+        "a": "Modest replacement costs and moderate weather-driven claims hold the $130 NAIC 2021 average down. Thin competition can still produce a high personal quote. Shop more than one company."
+      },
+      {
+        "q": "Should a Rapid City, South Dakota renter worry about wildfire?",
+        "a": "The Black Hills fringe has fire exposure. Fire is a standard peril on an HO-4. Smoke can be a contents claim. Flood from firefighting runoff is usually excluded; ask about loss-of-use language before fire season."
+      }
+    ]
+  },
+  "TN": {
+    "cities": [
+      "Nashville",
+      "Memphis",
+      "Knoxville"
+    ],
+    "regulatorName": "Tennessee Department of Commerce and Insurance",
+    "regulatorUrl": "https://www.tn.gov/commerce/insurance-division.html",
+    "localAngle": "Tennessee's NAIC 2021 average of $138 sits under the $170 US figure. Severe storms and tornadoes are the main claim triggers. Claim frequency is moderate. Replacement costs are moderate and higher in Nashville, and steady carrier competition keeps the average below the national number even after a loud storm week.",
+    "leaseNorm": "Tennessee does not require tenants to buy insurance by statute. Nashville and Memphis professionally managed buildings typically require an HO-4 with $100,000 of liability and portal proof before keys, and Knoxville student housing near the University of Tennessee often requires each roommate to be named.",
+    "contentsNote": "Schedule instruments, bikes, and jewelry, and match electronics to Nashville replacement cost after a storm leak. Flood from the Cumberland, the Mississippi, or a basement drain is excluded, tornado wind can be covered, and earthquake in the western part of the state needs a rider if you want New Madrid shaking paid.",
+    "scenarioCity": "Nashville",
+    "scenarioStory": "A Nashville renter with an example $22,000 of belongings and a $500 deductible should treat $138 as the statewide midpoint. An East Nashville mid-rise with no scheduled items can quote near that average. A first-floor unit near a creek needs water backup even if the HO-4 beats $170. Memphis and Knoxville often land in a similar band. If the quote is $200 without jewelry or a claim, shop a second carrier.",
+    "faqs": [
+      {
+        "q": "Does Tennessee renters insurance cover tornadoes?",
+        "a": "Wind and debris often are covered. Flood that follows is not. Photograph belongings before disposal. The Department of Commerce and Insurance can help if the claim stalls."
+      },
+      {
+        "q": "Can a Nashville, Tennessee landlord require renters insurance?",
+        "a": "Yes, by lease. Upload a declarations page that shows the address and the required liability. Music-gear households should schedule instruments that sit above sublimits."
+      },
+      {
+        "q": "Why is Tennessee below the US renters average?",
+        "a": "Moderate replacement costs outside the hottest Nashville ZIPs and a competitive market hold the $138 NAIC 2021 average down. Storms raise frequency. They have not pushed the statewide blend to $170."
+      },
+      {
+        "q": "Should a Memphis, Tennessee renter buy earthquake coverage?",
+        "a": "Western Tennessee sits closer to New Madrid risk. A base HO-4 usually skips shaking. Price a rider if you want that peril paid. For many renters, flood and water backup still come first along the river."
+      }
+    ]
+  },
+  "TX": {
+    "cities": [
+      "Houston",
+      "Dallas",
+      "Austin"
+    ],
+    "regulatorName": "Texas Department of Insurance",
+    "regulatorUrl": "https://www.tdi.texas.gov/",
+    "localAngle": "Texas posted a $250 NAIC 2021 average, the highest in the country and far above the $170 US figure. The state's size means hail, tornadoes, hurricanes, and winter freezes all drive claims. Claim frequency and litigation are both elevated, and replacement costs run high in the major metros. A huge carrier market competes hard, yet the average is still the highest on the table.",
+    "leaseNorm": "Texas does not impose a statewide tenant-insurance statute. Houston, Dallas, and Austin apartment operators almost universally require an HO-4, $100,000 of liability, and the owner as additional interest before keys, and some buildings offer a master policy if you miss the deadline, often at a worse price than shopping yourself.",
+    "contentsNote": "Schedule jewelry, cameras, bikes, and instruments, and price electronics at what they cost to replace after a supply crunch. Hurricane wind in Houston can be a contents peril, flood and surge are excluded, and hail in Dallas or a burst pipe after a freeze is a common contents story.",
+    "scenarioCity": "Houston",
+    "scenarioStory": "A Houston renter with an example $24,000 of belongings and a $1,000 deductible is buying the most expensive statewide average in the NAIC 2021 table. A quote near $250 can be honest in this market even with no scheduled items. A ground-floor unit needs a flood conversation that the HO-4 will not solve. Dallas hail and Austin growth ZIPs can also land near that high average. Do not use the $170 US figure as a reason the carrier must match a Midwest price.",
+    "faqs": [
+      {
+        "q": "Why is Texas the highest average for renters insurance?",
+        "a": "The $250 NAIC 2021 figure is the highest state average in that table. Hail, tornadoes, hurricanes, freezes, claim frequency, and litigation all feed it. A competitive market has not pulled Texas down to the $170 US midpoint. Shop the ZIP anyway; Houston and Lubbock are not the same weather."
+      },
+      {
+        "q": "Does Texas renters insurance cover hurricanes and flood?",
+        "a": "Wind can be covered. Flood and surge are not. The Texas Department of Insurance regulates the companies. It does not convert an HO-4 into a flood policy; Houston renters on grade should shop flood on its own form."
+      },
+      {
+        "q": "Can an Austin, Texas landlord require renters insurance?",
+        "a": "Yes, and most professionally managed buildings do. Upload a declarations page that shows the address and the required liability. If you miss the deadline, some owners force-place a narrower policy and bill you."
+      },
+      {
+        "q": "Should a Dallas, Texas renter raise the deductible after hail season?",
+        "a": "A $1,000 deductible can make sense if you can pay it tomorrow. A $250 deductible looks friendly until you price a year of the extra premium against one hail-driven leak. Run the math on your example contents value, not on the statewide $250 average alone."
+      }
+    ]
+  },
+  "UT": {
+    "cities": [
+      "Salt Lake City",
+      "Provo",
+      "Ogden"
+    ],
+    "regulatorName": "Utah Insurance Department",
+    "regulatorUrl": "https://insurance.utah.gov/",
+    "localAngle": "Utah's NAIC 2021 average of $111 sits far under the $170 US figure. Winter storms and wildfire risk near the Wasatch Front shape losses. Claim frequency is low. Replacement costs are moderate, and a growing carrier market keeps the average well below the national number even as Salt Lake City replacement costs rise.",
+    "leaseNorm": "Utah does not require tenants to buy insurance by statute. Salt Lake City and Provo professionally managed buildings typically require an HO-4 with $100,000 of liability and portal proof, and student housing along the Wasatch Front often requires each roommate to be named.",
+    "contentsNote": "Schedule bikes, skis, cameras, and jewelry, and match electronics to Salt Lake replacement cost. Flood from a creek, canal, or basement drain is excluded, wildfire is a fire peril, and earthquake along the Wasatch Fault needs a rider if you want shaking paid.",
+    "scenarioCity": "Salt Lake City",
+    "scenarioStory": "A Salt Lake City renter with an example $18,000 of belongings and a $500 deductible should expect a quote that can sit near $111 if nothing is scheduled. That average already beats $170. Add an earthquake rider and scheduled skis and the quote should rise. Do not spend the cheap statewide number by leaving a contents limit that would not replace the apartment.",
+    "faqs": [
+      {
+        "q": "Should a Utah renter buy earthquake coverage?",
+        "a": "If you want Wasatch Fault shaking paid, yes. A base HO-4 usually skips earthquake. Price the rider so you can see the extra dollars. The Utah Insurance Department publishes consumer material on the gap."
+      },
+      {
+        "q": "Can a Provo, Utah landlord require renters insurance?",
+        "a": "Yes, by lease. Student buildings often do. Send a declarations page that lists the Provo address and the required liability. One roommate's policy does not automatically cover the others."
+      },
+      {
+        "q": "Why is Utah well below the US renters average?",
+        "a": "Low claim frequency and a growing competitive market hold the $111 NAIC 2021 average down. Wildfire and quake risk still sit in the perils you must buy on purpose. Shop the foothill ZIPs separately from the valley floor."
+      },
+      {
+        "q": "Does Utah renters insurance cover wildfire?",
+        "a": "Fire is a standard peril. Smoke can be a contents claim. Extra living costs depend on the loss-of-use clause. Flood from firefighting runoff is usually excluded."
+      }
+    ]
+  },
+  "VT": {
+    "cities": [
+      "Burlington",
+      "South Burlington",
+      "Montpelier"
+    ],
+    "regulatorName": "Vermont Department of Financial Regulation",
+    "regulatorUrl": "https://dfr.vermont.gov/",
+    "localAngle": "Vermont's NAIC 2021 average of $113 sits far under the $170 US figure. Winter storms and cold are the main exposures. Claim frequency is low. Replacement costs are moderate, and a small carrier market keeps the average among the lowest in the country even when a Burlington water leak is a long January.",
+    "leaseNorm": "Vermont does not mandate renters insurance. Burlington and South Burlington professionally managed buildings typically require an HO-4 with $100,000 of liability and proof before keys, and student housing near the University of Vermont often requires each roommate to be named.",
+    "contentsNote": "Schedule bikes, skis, cameras, and jewelry, and use replacement-cost numbers for winter gear and electronics. Flood from Lake Champlain, a river, or a basement drain is excluded, though ice-dam and burst-pipe water can still be contents perils.",
+    "scenarioCity": "Burlington",
+    "scenarioStory": "A Burlington renter with an example $15,500 of belongings and a $500 deductible should expect a quote that can sit near $113 if nothing is scheduled. That average already beats $170. Raising contents to match a real winter wardrobe is a better use of money than shrinking the deductible to $250. If a carrier quotes $170 without jewelry or a claim, shop again.",
+    "faqs": [
+      {
+        "q": "Why is Vermont renters insurance among the cheaper averages?",
+        "a": "The $113 NAIC 2021 figure reflects low claim frequency and a small stable market. Winter is real. Losses are not constant. Your Burlington ZIP can still quote higher after a water claim."
+      },
+      {
+        "q": "Can a Burlington, Vermont landlord require renters insurance?",
+        "a": "Yes, by lease. The Department of Financial Regulation regulates the insurer. Send a declarations page that lists the address and the required liability."
+      },
+      {
+        "q": "Does a Vermont renters policy cover ice-dam leaks?",
+        "a": "Sudden water through a failed roof can be covered. Gradual seepage and flood are different problems. Photograph the ice and the damage. If the carrier calls it maintenance, the department can review the file."
+      },
+      {
+        "q": "Should a Montpelier, Vermont renter buy flood coverage?",
+        "a": "If the unit sits near a river or in a mapped flood zone, yes. A standard HO-4 will not pay for rising water. Burst pipes remain the more common winter conversation."
+      }
+    ]
+  },
+  "VA": {
+    "cities": [
+      "Virginia Beach",
+      "Richmond",
+      "Arlington"
+    ],
+    "regulatorName": "Virginia Bureau of Insurance",
+    "regulatorUrl": "https://www.scc.virginia.gov/regulated-industries/bureau-of-insurance/",
+    "localAngle": "Virginia posted a $139 NAIC 2021 average, under the $170 US figure. Hurricane spillover, coastal storms, and winter weather all contribute. Claim frequency is moderate. Replacement costs near Washington, DC in Arlington sit above Richmond, and a competitive mid-Atlantic market keeps the statewide blend near the national cluster without matching the highest coastal states.",
+    "leaseNorm": "Virginia does not require tenants to buy insurance by statute. Arlington and Virginia Beach professionally managed buildings typically require an HO-4 with $100,000 or $300,000 of liability and portal proof, and military-adjacent leases often ask for the same packet.",
+    "contentsNote": "Schedule bikes, cameras, and jewelry, and match electronics to Arlington or Virginia Beach replacement cost. Flood and surge are excluded, especially in Virginia Beach, though hurricane wind can still be a contents peril.",
+    "scenarioCity": "Virginia Beach",
+    "scenarioStory": "A Virginia Beach renter with an example $19,000 of belongings and a $1,000 deductible is buying coastal weather inside a $139 state average. A quote near $139 can be fair west of the oceanfront with no scheduled items. A ground-floor unit near the Chesapeake needs flood even if the HO-4 beats $170. Arlington would likely quote the same inventory with more theft and replacement pressure and less surge.",
+    "faqs": [
+      {
+        "q": "Does Virginia renters insurance cover hurricanes and flood?",
+        "a": "Wind can be covered. Flood and surge are not. The Virginia Bureau of Insurance regulates the companies. Virginia Beach renters on grade should shop flood on a separate form."
+      },
+      {
+        "q": "Can an Arlington, Virginia landlord require $300,000 of liability?",
+        "a": "Yes, if the lease says so. The extra limit is usually inexpensive on an HO-4. Confirm the owner is additional interest so a cancellation notice reaches the manager."
+      },
+      {
+        "q": "Why is Virginia below the US renters average?",
+        "a": "A competitive mid-Atlantic market holds the $139 NAIC 2021 average down. Coastal weather and Northern Virginia replacement costs keep it from falling further. Shop the ZIP. Richmond and Virginia Beach are not the same peril mix."
+      },
+      {
+        "q": "Should a Richmond, Virginia renter buy earthquake coverage?",
+        "a": "Central Virginia has some fault history. A base HO-4 usually skips shaking. Price a rider if you want that peril paid. For most renters, water backup still belongs first."
+      }
+    ]
+  },
+  "WA": {
+    "cities": [
+      "Seattle",
+      "Spokane",
+      "Tacoma"
+    ],
+    "regulatorName": "Washington Office of the Insurance Commissioner",
+    "regulatorUrl": "https://www.insurance.wa.gov/",
+    "localAngle": "Washington's NAIC 2021 average of $134 sits under the $170 US figure. Wildfire season, winter storms, and coastal weather shape claims. Claim frequency is low. Replacement costs in the Seattle metro run above Spokane and Tacoma, and many carriers compete, which keeps the statewide blend below the national number even when a Seattle rebuild is expensive.",
+    "leaseNorm": "Washington does not mandate renters insurance. Seattle and Tacoma professionally managed buildings typically require an HO-4 with $100,000 of liability and portal proof before keys, and student housing often requires each roommate to be named.",
+    "contentsNote": "Schedule bikes, cameras, and jewelry, and match electronics to Seattle replacement cost. Flood from a river, a hillside drain, or a basement is excluded, wildfire is a fire peril, and earthquake in the Cascadia and Seattle-fault story needs a rider if you want shaking paid.",
+    "scenarioCity": "Seattle",
+    "scenarioStory": "A Seattle renter with an example $27,000 of belongings and a $500 deductible is buying high replacement costs inside a $134 state average. A quote near $134 can be fair in a Ballard building with no scheduled items. Add an earthquake rider and scheduled bikes and the quote should rise. Spokane would likely quote the same inventory for less. The $170 US average is a national marker Washington usually beats without starving the contents limit.",
+    "faqs": [
+      {
+        "q": "Should a Washington renter buy earthquake coverage?",
+        "a": "If you want Cascadia or Seattle-fault shaking paid, yes. A base HO-4 usually skips earthquake. Price the rider. The Office of the Insurance Commissioner publishes consumer pages on the gap."
+      },
+      {
+        "q": "Does Washington renters insurance cover wildfire?",
+        "a": "Fire is a standard peril. Smoke can be a contents claim. Extra living costs depend on the loss-of-use clause. Flood from firefighting runoff is usually excluded; East-side and foothill ZIPs should read that language before fire season."
+      },
+      {
+        "q": "Can a Seattle, Washington landlord require renters insurance?",
+        "a": "Yes, by lease. Upload a declarations page that shows the unit address and the required liability. One roommate's policy does not automatically cover the others."
+      },
+      {
+        "q": "Why is Washington below the US renters average?",
+        "a": "Low claim frequency and a competitive market hold the $134 NAIC 2021 average down. Seattle replacement costs keep it from falling further. Shop the ZIP. Spokane and Seattle are not the same rebuild bill."
+      }
+    ]
+  },
+  "WV": {
+    "cities": [
+      "Charleston",
+      "Huntington",
+      "Morgantown"
+    ],
+    "regulatorName": "West Virginia Offices of the Insurance Commissioner",
+    "regulatorUrl": "https://www.wvinsurance.gov/",
+    "localAngle": "West Virginia's NAIC 2021 average of $133 sits under the $170 US figure. Flooding and severe storms are the main weather exposures, from river towns through steep hollows. Claim frequency is moderate. Replacement costs are modest, and a limited carrier market keeps the average below the national number even when a flooded first floor is a total contents loss the HO-4 will not treat as flood.",
+    "leaseNorm": "West Virginia does not require tenants to buy insurance by statute. Charleston and Huntington professionally managed buildings typically require an HO-4 with $100,000 of liability and the owner as additional interest, and Morgantown student housing near West Virginia University often requires each roommate to show proof.",
+    "contentsNote": "Schedule instruments, bikes, and jewelry, and use replacement-cost numbers for electronics after a storm leak. Flood from the Kanawha, the Ohio, or a hollow drain is excluded, and that exclusion is the local contents problem even when severe-storm wind is covered.",
+    "scenarioCity": "Charleston",
+    "scenarioStory": "A Charleston renter with an example $13,500 of belongings and a $500 deductible should expect a quote that can sit near $133 if nothing is scheduled. That average beats $170. A first-floor unit along the river needs flood even if the HO-4 looks cheap. Morgantown student quotes often land in the same band. If a carrier quotes $190 without jewelry or a claim, shop again.",
+    "faqs": [
+      {
+        "q": "Does West Virginia renters insurance cover river flooding?",
+        "a": "No. Flood is excluded. Wind and sudden rain through a damaged opening can still be covered. Charleston and Huntington renters on grade should shop flood on a separate form; the Offices of the Insurance Commissioner can help with a stalled wind claim."
+      },
+      {
+        "q": "Can a Morgantown, West Virginia landlord require renters insurance?",
+        "a": "Yes, by lease. Student buildings often do. Send a declarations page that lists the Morgantown address and the required liability. One roommate's policy does not automatically cover the others."
+      },
+      {
+        "q": "Why is West Virginia below the US renters average?",
+        "a": "Modest replacement costs hold the $133 NAIC 2021 average down. Flood risk is real and mostly sits off the HO-4, which is one reason the cheap premium can still leave a hole. Buy the peril you actually live next to."
+      },
+      {
+        "q": "Should a Huntington, West Virginia renter add water-backup coverage?",
+        "a": "If the unit is on grade or in a basement, yes. A cheap HO-4 that skips backup and flood leaves the expensive water events unpaid. The endorsement is usually a small add-on compared with one soaked apartment."
+      }
+    ]
+  },
+  "WI": {
+    "cities": [
+      "Milwaukee",
+      "Madison",
+      "Green Bay"
+    ],
+    "regulatorName": "Wisconsin Office of the Commissioner of Insurance",
+    "regulatorUrl": "https://oci.wi.gov/",
+    "localAngle": "Wisconsin's NAIC 2021 average of $112 sits far under the $170 US figure. Winter storms, hail, and severe weather drive claims. Claim frequency is moderate. Replacement costs are modest to moderate, and a strong regional carrier market keeps the average well below the national number across Milwaukee, Madison, and Green Bay.",
+    "leaseNorm": "Wisconsin does not mandate renters insurance. Milwaukee and Madison professionally managed buildings typically require an HO-4 with $100,000 of liability and portal proof, and student housing near UW-Madison often requires each roommate to be named.",
+    "contentsNote": "Schedule bikes, instruments, and jewelry, and use replacement-cost numbers for winter gear and electronics after a pipe break. Flood from a lake, a river, or a basement drain is excluded, though hail-driven leaks and burst pipes can still be contents perils.",
+    "scenarioCity": "Milwaukee",
+    "scenarioStory": "A Milwaukee renter with an example $16,500 of belongings and a $500 deductible should expect a quote that can sit near $112 if nothing is scheduled. That average already beats $170. Madison student quotes often land in the same cheap band if the contents limit is honest. If a carrier quotes $170 without jewelry or a claim, shop again before deciding Wisconsin got expensive.",
+    "faqs": [
+      {
+        "q": "Does Wisconsin renters insurance cover frozen-pipe damage?",
+        "a": "Sudden accidental discharge from a burst pipe can be covered. Heat-maintenance conditions apply. Photograph the damage. Lake or river flood remains excluded; the Office of the Commissioner of Insurance can review a stalled water claim."
+      },
+      {
+        "q": "Can a Madison, Wisconsin landlord require renters insurance?",
+        "a": "Yes, by lease. Student buildings often do. Send a declarations page that lists the Madison address and the required liability. One roommate's policy does not automatically cover the others."
+      },
+      {
+        "q": "Why is Wisconsin well below the US renters average?",
+        "a": "A strong regional market and modest replacement costs hold the $112 NAIC 2021 average down. Winter claims happen. They have not pushed the statewide blend to $170. Your deductible and claims still move the personal quote."
+      },
+      {
+        "q": "Should a Green Bay, Wisconsin renter buy flood coverage?",
+        "a": "If the unit sits near the bay or a river or in a mapped flood zone, yes. A standard HO-4 will not pay for rising water. Burst pipes remain the more common winter conversation."
+      }
+    ]
+  },
+  "WY": {
+    "cities": [
+      "Cheyenne",
+      "Casper",
+      "Laramie"
+    ],
+    "regulatorName": "Wyoming Department of Insurance",
+    "regulatorUrl": "https://doi.wyo.gov/",
+    "localAngle": "Wyoming's NAIC 2021 average of $106 is among the lowest in the country and far under the $170 US figure. Winter storms and wildfire risk are the main exposures. Claim frequency is low. Replacement costs are moderate, and a thin carrier market keeps the average cheap even when a Cheyenne rebuild in January is not a quick errand.",
+    "leaseNorm": "Wyoming does not require tenants to buy insurance by statute. Cheyenne and Casper professionally managed buildings typically require an HO-4 with $100,000 of liability and the owner as additional interest, and Laramie student housing near the University of Wyoming often requires each roommate to show proof.",
+    "contentsNote": "Schedule bikes, cameras, firearms, and jewelry if they exceed sublimits, and price electronics at what they cost to replace in Cheyenne or Casper. Flood is excluded, wildfire is a fire peril, and earthquake is a smaller local story that still needs a rider if you want shaking paid.",
+    "scenarioCity": "Cheyenne",
+    "scenarioStory": "A Cheyenne renter with an example $14,000 of belongings and a $500 deductible should expect a quote that can sit near $106 if nothing is scheduled. That average is among the cheapest NAIC 2021 figures and sits far below $170. Raising contents to match a real winter apartment is a better use of money than shrinking the deductible to $250. If a carrier quotes $160 without jewelry or a claim, shop again.",
+    "faqs": [
+      {
+        "q": "Why is Wyoming renters insurance among the cheapest averages?",
+        "a": "The $106 NAIC 2021 figure reflects low claim frequency and a small book of business. Winter and wildfire are real. Losses are not constant. Your Cheyenne ZIP can still quote higher after a claim; treat $106 as a statewide blend, not a promised offer."
+      },
+      {
+        "q": "Can a Laramie, Wyoming landlord require renters insurance?",
+        "a": "Yes, by lease. Student buildings often do. Send a declarations page that lists the Laramie address and the required liability. The Wyoming Department of Insurance regulates the insurer, not the lease."
+      },
+      {
+        "q": "Does Wyoming renters insurance cover wildfire?",
+        "a": "Fire is a standard peril. Smoke can be a contents claim. Extra living costs depend on the loss-of-use clause. Flood from firefighting runoff is usually excluded."
+      },
+      {
+        "q": "Should a Casper, Wyoming renter buy earthquake coverage?",
+        "a": "If you want shaking paid, price a rider. A base HO-4 usually skips earthquake. For most renters, a realistic contents limit and winter pipe language matter first."
+      }
+    ]
+  }
+}
