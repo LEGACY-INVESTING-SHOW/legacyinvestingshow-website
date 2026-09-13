@@ -602,6 +602,104 @@ function elevateTables(html) {
 }
 
 /**
+ * Money expressions in a sentence, as written. A range is kept whole: showing
+ * only its maximum would misstate the guide's own number.
+ */
+const MONEY_SOURCE = String.raw`\$\s?\d[\d,]*(?:\.\d+)?(?:\s*(?:million|billion|thousand|[KkMmBb])(?![A-Za-z]))?\+?`;
+const RANGE_RE = new RegExp(`(${MONEY_SOURCE})\\s*(-|–|—|to)\\s*(${MONEY_SOURCE})`, 'g');
+const MONEY_RE = new RegExp(MONEY_SOURCE, 'g');
+const RESULT_CUE_RE = /\b(saves?|saved|saving|savings|benefit|benefits|deduction|deductions|deducts?|refund|impact|generates?|generated|nets?|netted|worth|reduces?|reduced|shelters?|contributes?|contribution|credit)\b/gi;
+
+function moneyValue(token) {
+    const digits = Number(String(token).replace(/[^\d.]/g, ''));
+    if (!Number.isFinite(digits)) return 0;
+    if (/billion|\bb\b/i.test(token)) return digits * 1e9;
+    if (/million|\bm\b/i.test(token)) return digits * 1e6;
+    if (/thousand|\bk\b/i.test(token)) return digits * 1e3;
+    return digits;
+}
+
+function findMoneyExpressions(text) {
+    const expressions = [];
+    const covered = [];
+
+    RANGE_RE.lastIndex = 0;
+    let match;
+    while ((match = RANGE_RE.exec(text)) !== null) {
+        const [whole, from, separator, to] = match;
+        const display = separator.toLowerCase() === 'to'
+            ? `${from.trim()} to ${to.trim()}`
+            : `${from.trim()}–${to.trim()}`;
+        expressions.push({ start: match.index, display, value: Math.max(moneyValue(from), moneyValue(to)) });
+        covered.push([match.index, match.index + whole.length]);
+    }
+
+    MONEY_RE.lastIndex = 0;
+    while ((match = MONEY_RE.exec(text)) !== null) {
+        const inside = covered.some(([from, to]) => match.index >= from && match.index < to);
+        if (inside) continue;
+        expressions.push({ start: match.index, display: match[0].trim(), value: moneyValue(match[0]) });
+    }
+
+    return expressions.sort((a, b) => a.start - b.start);
+}
+
+/**
+ * The figure a result sentence is actually stating: the first money expression
+ * that follows a result word ("saves", "deduction", "refund"). When the sentence
+ * carries exactly one expression that is the figure. Anything looser is dropped
+ * rather than guessed at.
+ */
+function resultFigure(text) {
+    // A worked calculation ("$30,000 × 15% = $4,500", "vs. $2,564") states
+    // several numbers on the way to an answer; none of them is the figure.
+    if (/[×x]\s*\d|=\s*\$|\bvs\.?\s*\$/i.test(text)) return null;
+
+    const expressions = findMoneyExpressions(text);
+    if (!expressions.length) return null;
+
+    const cues = [];
+    RESULT_CUE_RE.lastIndex = 0;
+    let cue;
+    while ((cue = RESULT_CUE_RE.exec(text)) !== null) {
+        cues.push(cue.index + cue[0].length);
+    }
+
+    // The figure has to be governed by the result word: only filler may sit
+    // between them, so "creating deductions … on a $1 million property" does
+    // not hand back the property price.
+    const filler = /^[\s,:;–—-]*(?:of|up to|about|roughly|approximately|around|more than|over|another|an additional|additional|an|a|the|in|by|to|you|your)?[\s,:;–—-]*$/i;
+
+    const anchored = [];
+    for (const cueEnd of cues) {
+        const candidate = expressions.find((item) => item.start >= cueEnd && item.start - cueEnd <= 25);
+        if (candidate && filler.test(text.slice(cueEnd, candidate.start))) {
+            anchored.push(candidate.display);
+        }
+    }
+
+    // Every result word in the sentence has to point at the same figure. When a
+    // sentence states several different numbers, none of them is "the" figure.
+    const distinct = [...new Set(anchored)];
+    if (distinct.length === 1) return distinct[0];
+    if (distinct.length > 1) return null;
+
+    if (expressions.length === 1) return expressions[0].display;
+    return null;
+}
+
+/**
+ * Re-run safety: unwrap any takeaway this sweep produced before, so the figure
+ * is re-derived from the sentence rather than frozen at an older reading.
+ */
+function restoreTakeaways(html) {
+    return html.replace(
+        /<aside class="guide-takeaway">\s*<div class="figure[^"]*">\s*<span class="figure__value">[\s\S]*?<\/span>\s*<span class="figure__label">([\s\S]*?)<\/span>\s*<\/div>\s*<p>([\s\S]*?)<\/p>\s*<\/aside>/g,
+        (whole, label, body) => `<p><strong>${label.trim()}:</strong> ${body.trim()}</p>`
+    );
+}
+
+/**
  * A guide's "bottom line" paragraph carries the number the whole section was
  * working towards. Pull that number out as a display figure and keep the
  * sentence beside it.
@@ -617,27 +715,22 @@ function elevateTakeaways(html) {
         (whole, label, body) => {
             if (used >= 2) return whole;
             const text = stripTags(body).trim();
-            const amounts = [...text.matchAll(/\$[\d,]+(?:\.\d+)?/g)].map((m) => m[0]);
-            if (!amounts.length) return whole;
-
-            const biggest = amounts.reduce((best, current) => (
-                Number(current.replace(/[^\d.]/g, '')) > Number(best.replace(/[^\d.]/g, '')) ? current : best
-            ), amounts[0]);
+            const figure = resultFigure(text);
+            if (!figure) return whole;
+            if (seen.has(figure)) return whole;
+            seen.add(figure);
+            used += 1;
 
             const heading = label.replace(/[::]\s*$/, '').trim();
             const sentence = heading
                 .toLowerCase()
                 .replace(/^(.)/, (c) => c.toUpperCase())
-                .replace(/(\$[\d.,]+)([kmb])\b/g, (whole, amount, unit) => `${amount}${unit.toUpperCase()}`)
+                .replace(/(\$[\d.,]+)([kmb])\b/g, (match, amount, unit) => `${amount}${unit.toUpperCase()}`)
                 .replace(/\birs\b/g, 'IRS');
-
-            if (seen.has(biggest)) return whole;
-            seen.add(biggest);
-            used += 1;
 
             return `<aside class="guide-takeaway">
                             <div class="figure figure--long">
-                                <span class="figure__value">${esc(biggest)}</span>
+                                <span class="figure__value">${esc(figure)}</span>
                                 <span class="figure__label">${esc(sentence)}</span>
                             </div>
                             <p>${body.trim()}</p>
@@ -720,6 +813,7 @@ function sweepFile(filePath, activeHref) {
     html = fixHeadingSkips(html);
     html = elevateHero(html);
     html = elevateTables(html);
+    html = restoreTakeaways(html);
     html = elevateTakeaways(html);
     html = addContentsRail(html);
     html = addPullQuote(html);

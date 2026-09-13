@@ -187,7 +187,7 @@ ${faqs.map((faq) => `                        <dt>${esc(faq.question)}</dt>
 function splitFigure(text) {
     const raw = String(text || '').trim();
     if (!raw) return null;
-    const match = raw.match(/^(?:Up to\s+)?(\$[\d,]+(?:\s*[-–—]\s*\$?[\d,]+)?\+?|[\d.]+%(?:\s*[-–—]\s*[\d.]+%)?)/i);
+    const match = raw.match(/^(?:Up to\s+)?(\$[\d,]+(?:\s*[-–—]\s*\$?[\d,]+)?\+?|[\d.]+\s*[-–—]\s*[\d.]+%|[\d.]+%)/i);
     if (!match) return null;
     const value = match[0].replace(/\s*[-–—]\s*/, '–').replace(/^Up to\s+/i, '');
     const label = raw.slice(match[0].length).trim().replace(/^[-–—,]\s*/, '');
