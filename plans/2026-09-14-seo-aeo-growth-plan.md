@@ -104,6 +104,25 @@ On arbitrage, buyers compare Preston to Calvin Tran and Chi Ta. On tax, to Karlt
 - Sitemap: pages 236 → 144, blog 374 → 389. Tests 54 pass.
 - Note: a separate site redesign (PR #8, about 850 files) landed on main during this work and was merged in. It also deleted /worksheets/.
 
+### Seven parallel tasks (commits 30905d33 and 650bc2d0, deployed Sep 14)
+1. Reputation: /reviews (67 stories from lwblive.com, firstairbnb.com, and Trustpilot; filter by program, result, format; click-to-play video; Review schema; Trustpilot 4.2 / 66 shown as Trustpilot's rating). Review post retitled for "preston seo reviews" and "is preston seo legit" with an honest complaints section. Home FAQ gained "legit" and "cost" answers. A /pricing page was built and then removed on the owner's request; /pricing redirects to /reviews.
+2. Entity: /about/preston-seo (ProfilePage + Person). One Organization and Person @id sitewide via scripts/lib/schema-org.js. VideoObject schema on 46 video posts. YouTube embeds are click-to-play facades.
+3. Tax comparison posts: tax-alchemy-alternatives, taxfreeceo-alternatives, karlton-dennis-vs-mark-kohler-vs-legacy-wealth-blueprint, best-tax-strategy-programs-w2-earners-over-250k.
+4. Real estate and Airbnb comparison posts: bnb-formula-vs-10xbnb-vs-airbnb-ascension, sean-rakidzich-vs-preston-seo-airbnb-training, best-real-estate-investing-courses-full-time-job, best-airbnb-arbitrage-courses-2026.
+5. STR tax cluster: short-term-rental-loophole rewritten (HowTo + FAQ), new depreciation-recapture-str and reps-vs-str-loophole, bonus-depreciation corrected for 2026 (100% for property acquired after Jan 19, 2025).
+6. W-2 content: w2-tax-strategies-after-maxing-401k-and-hsa, cut-taxes-w2-300k-without-starting-a-business, and the /tax-strategies/for/w2-employees hub rewritten with grouped strategies and FAQ.
+7. Technical: fonts self-hosted on funnel and offer pages, topic hubs have unique intros and "start here" lists, tool pages use summary_large_image cards, .html duplicates already 308 to clean URLs (no change needed), stale footer links to /markets and /renters-insurance removed.
+Sitemap after: 148 pages, 399 posts. Tests 56 pass. Indexing requested in GSC for 10 priority tax pages (daily cap reached).
+
+Follow-ups noted by the agents:
+- success-stories.html has six initials-only testimonials with no source. Decide whether to keep them.
+- The review post says $20M portfolio; the site elsewhere says $15M+. Pick one.
+- TaxFreeCEO's site did not load on Sep 14; its post uses only the book listing. Update when the site is reachable.
+- No first-party pages exist yet for deferred compensation, municipal bonds, or 83(b).
+- The 12 long-form tax strategy pages and the persona pages do not carry the shared Organization @id yet.
+- Each STR cluster page still needs a YouTube video.
+- design-explorations/ is crawlable and not noindexed.
+
 ### Measurement
 See section 5 for the GA4, GTM, GSC, and Bing status.
 
