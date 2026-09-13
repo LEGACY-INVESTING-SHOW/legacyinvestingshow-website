@@ -105,6 +105,43 @@ document.querySelectorAll('[data-track-event]').forEach(element => {
     });
 });
 
+// Automatic funnel and outbound link tracking.
+// masterclass_click fires on any link into the registration funnels or offer pages.
+// outbound_click fires on any link that leaves the site.
+const FUNNEL_LINK_PATTERN = /managemoney101\.com|joinlwb\.com|\/legacy-wealth-blueprint|\/lwbprogram|\/airbnbascension|\/strconcierge|\/str-opportunity/i;
+
+document.addEventListener('click', (event) => {
+    const link = event.target?.closest?.('a[href]');
+    if (!link) return;
+
+    const href = link.getAttribute('href') || '';
+    if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) return;
+
+    let url;
+    try {
+        url = new URL(href, window.location.href);
+    } catch (error) {
+        return;
+    }
+
+    const isExternal = url.hostname && url.hostname !== window.location.hostname;
+    const isFunnel = FUNNEL_LINK_PATTERN.test(url.href);
+
+    if (isFunnel) {
+        pushAnalyticsEvent('masterclass_click', {
+            ...buildTrackingPayload(link),
+            link_url: url.href,
+            link_text: (link.textContent || '').trim().slice(0, 100)
+        });
+    } else if (isExternal) {
+        pushAnalyticsEvent('outbound_click', {
+            link_url: url.href,
+            link_domain: url.hostname,
+            page_slug: document.body?.dataset?.pageSlug || window.location.pathname
+        });
+    }
+}, true);
+
 // Track first meaningful interaction on tool pages
 let hasTrackedPageStart = false;
 document.addEventListener('input', (event) => {
