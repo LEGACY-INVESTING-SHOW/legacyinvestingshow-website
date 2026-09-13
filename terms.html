@@ -17,9 +17,8 @@
     <link rel="icon" href="/favicon.ico" sizes="32x32">
 
     <!-- Fonts & Stylesheet -->
-    <link rel="preload" href="/assets/fonts/dm-serif-display-400-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/assets/fonts/plus-jakarta-sans-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="/assets/css/styles.css?v=b6172e78">
+    <link rel="preload" href="/assets/fonts/public-sans-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/assets/css/styles.css">
 
     <!-- Open Graph fallback -->
     <meta property="og:type" content="website">
@@ -48,18 +47,12 @@
         gtag('config', 'G-2578PT1WSS');
     </script>
 
-    <!-- Page-scoped layout. Shared components come from the kit in styles.css. -->
+
+    <!-- Page-scoped reading rhythm inside the shared .col column. Components come from the kit. -->
     <style>
-    /* Tailwind ships a .contents{display:contents} utility that overrides the kit component. */
-    .contents { display: block; }
-    .legal { display: grid; gap: clamp(2rem, 4vw, 3rem); }
-    @media (min-width: 1024px) { .legal { grid-template-columns: 14rem minmax(0, 1fr); gap: clamp(2.5rem, 4vw, 4rem); align-items: start; } }
-    .legal__body h2 { font-size: clamp(1.5rem, 2.4vw, 2rem); margin: 3rem 0 0; }
-    .legal__body h2:first-of-type { margin-top: 0; }
-    .legal__body h2::after { content: ''; display: block; width: 3rem; border-top: 2px solid var(--gold); margin-top: 0.875rem; }
-    .legal__body p { margin: 1rem 0 0; font-size: 1.0625rem; line-height: 1.7; color: var(--text-secondary); max-width: 68ch; }
-    .legal__body a { color: var(--text-primary); font-weight: 500; text-decoration: underline; text-decoration-color: var(--gold); }
-    .legal__body a:hover { color: var(--gold-text); }
+    .col > h2 { margin-top: 2.75rem; }
+    .col h3:not([class]) { margin: 1.75rem 0 0.5rem; }
+    .col > .steps + p, .col > .words + p, .col > .table-inset + p, .col > .callout + p { margin-top: 1.5rem; }
     </style>
 
 </head>
@@ -71,7 +64,7 @@
         <nav class="container-custom site-nav" aria-label="Main navigation">
             <a href="/" class="site-brand">Legacy Investing Show</a>
             <div class="site-nav-links">
-                <a href="/" class="nav-link nav-link-active">Home</a>
+                <a href="/" class="nav-link">Home</a>
                     <a href="/about" class="nav-link">About</a>
                     <a href="/tax-strategies" class="nav-link">Tax Strategies</a>
                     <a href="/compare" class="nav-link">Compare</a>
@@ -82,7 +75,7 @@
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
             </button>
             <div id="mobile-menu" class="site-nav-mobile hidden">
-                <a href="/" class="nav-link nav-link-active">Home</a>
+                <a href="/" class="nav-link">Home</a>
                     <a href="/about" class="nav-link">About</a>
                     <a href="/tax-strategies" class="nav-link">Tax Strategies</a>
                     <a href="/compare" class="nav-link">Compare</a>
@@ -93,43 +86,27 @@
     </header>
 
     <main id="main">
-        <section class="section section--tight">
+        <section class="opener">
             <div class="container-custom">
-                <div class="opener">
-                    <div>
-                        <h1 class="opener__title">Terms of service</h1>
-                        <p class="opener__lede">These terms govern access to this website and any educational products, reports, and services offered through Legacy Investing Show.</p>
-                    </div>
+                <div class="col">
+                    <h1 class="opener__title">Terms of service</h1>
+                    <p class="opener__key">The rules that apply when you use this site or buy anything through it.</p>
+                    <p class="opener__lede">These terms govern access to this website and any educational products, reports, and services offered through Legacy Investing Show.</p>
                 </div>
             </div>
         </section>
 
-        <section class="band band--white section">
+        <section class="section section--rule">
             <div class="container-custom">
-                <div class="legal">
-                    <details class="contents" open>
-                        <summary>On this page</summary>
-                        <nav aria-label="On this page">
-                            <ol>
-                                    <li><a href="#educational-use">Educational use</a></li>
-                                    <li><a href="#user-responsibilities">User responsibilities</a></li>
-                                    <li><a href="#purchases-and-access">Purchases and access</a></li>
-                                    <li><a href="#questions">Questions</a></li>
-                            </ol>
-                        </nav>
-                    </details>
-                    <div class="sheet">
-                        <article class="legal__body">
-                                <h2 id="educational-use">Educational use</h2>
-                                <p>Content on this website is for educational purposes only and does not constitute tax, legal, investment, or financial advice.</p>
-                                <h2 id="user-responsibilities">User responsibilities</h2>
-                                <p>Users are responsible for the accuracy of information they submit and for reviewing any decision with qualified professionals where appropriate.</p>
-                                <h2 id="purchases-and-access">Purchases and access</h2>
-                                <p>Access to paid products and services is governed by the offer terms shown at checkout, including any refund or review policies presented there.</p>
-                                <h2 id="questions">Questions</h2>
-                                <p>If you have questions about these terms, email <a href="mailto:preston@legacyinvestingshow.com">preston@legacyinvestingshow.com</a>.</p>
-                        </article>
-                    </div>
+                <div class="col">
+                    <h2 id="educational-use">Educational use</h2>
+                    <p class="measure">Content on this website is for educational purposes only and does not constitute tax, legal, investment, or financial advice.</p>
+                    <h2 id="user-responsibilities">User responsibilities</h2>
+                    <p class="measure">Users are responsible for the accuracy of information they submit and for reviewing any decision with qualified professionals where appropriate.</p>
+                    <h2 id="purchases-and-access">Purchases and access</h2>
+                    <p class="measure">Access to paid products and services is governed by the offer terms shown at checkout, including any refund or review policies presented there.</p>
+                    <h2 id="questions">Questions</h2>
+                    <p class="measure">If you have questions about these terms, email <a href="mailto:preston@legacyinvestingshow.com">preston@legacyinvestingshow.com</a>.</p>
                 </div>
             </div>
         </section>

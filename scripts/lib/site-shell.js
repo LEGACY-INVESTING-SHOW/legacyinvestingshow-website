@@ -41,7 +41,8 @@ function isPlaceholderTagManagerId(id) {
 }
 
 function isActiveLink(activeHref, href) {
-  const current = String(activeHref || '').trim() || '/';
+  const current = String(activeHref || '').trim();
+  if (!current) return false;
   if (href === '/') return current === '/';
   return current === href || current.startsWith(href);
 }

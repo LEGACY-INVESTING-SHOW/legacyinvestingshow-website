@@ -38,9 +38,8 @@
     <link rel="icon" href="/favicon.ico" sizes="32x32">
 
     <!-- Fonts & Stylesheet -->
-    <link rel="preload" href="/assets/fonts/dm-serif-display-400-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/assets/fonts/plus-jakarta-sans-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="/assets/css/styles.css?v=b6172e78">
+    <link rel="preload" href="/assets/fonts/public-sans-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/assets/css/styles.css">
 
     <!-- Schema.org CollectionPage Markup -->
     <script type="application/ld+json">
@@ -95,31 +94,6 @@
     <meta name="twitter:description" content="Results, case studies, and real-world wins from students using better tax, wealth, and alternative-income decisions to change their financial trajectory.">
     <meta name="twitter:image" content="https://www.legacyinvestingshow.com/assets/images/og-home.jpg">
 
-    <!-- Page-scoped layout. Shared components come from the kit in styles.css. -->
-    <style>
-    .ss-headline-figure { margin-top: clamp(2rem, 4vw, 2.75rem); max-width: 21rem; }
-    .ss-aside-facts { margin-top: 1.75rem; }
-    .ss-cases { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--border); }
-    .ss-case { display: grid; grid-template-columns: 116px minmax(0, 1fr); gap: 0.75rem 1.25rem; align-items: start; padding: 1.75rem 0; border-bottom: 1px solid var(--border); }
-    .ss-case__photo { grid-row: span 2; padding: 0; }
-    .ss-case__photo img { outline-offset: 5px; }
-    .ss-case__title { font-family: 'DM Serif Display', Georgia, serif; font-size: clamp(1.25rem, 1.8vw, 1.5rem); font-weight: 400; line-height: 1.32; letter-spacing: -0.01em; margin: 0; }
-    .ss-case__title a { color: inherit; text-decoration: none; background-image: linear-gradient(var(--gold), var(--gold)); background-size: 0 1px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size 0.3s var(--ease-smooth); }
-    .ss-case__title a:hover { color: var(--gold-text); background-size: 100% 1px; }
-    .ss-case__path { margin: 0.5rem 0 0; font-size: 0.9375rem; color: var(--text-secondary); max-width: 52ch; }
-    .ss-case__figure { grid-column: 2; }
-    .ss-case__figure .figure__value { font-size: clamp(2rem, 3vw, 2.75rem); }
-    .ss-case__figure .figure__label { margin-top: 0.375rem; font-size: 0.9375rem; font-weight: 400; color: var(--text-secondary); }
-    @media (min-width: 768px) {
-      .ss-case { grid-template-columns: 200px minmax(0, 1fr) 12rem; gap: 2.5rem; align-items: center; padding: 2.5rem 0; }
-      .ss-case__photo { grid-row: auto; padding: 12px; }
-      .ss-case__photo img { outline-offset: 9px; }
-      .ss-case__figure { grid-column: auto; }
-    }
-    .ss-quotes { display: grid; gap: 3rem clamp(2.5rem, 5vw, 4rem); }
-    @media (min-width: 768px) { .ss-quotes { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-    .pull-quote figcaption .ss-result { display: block; margin-top: 0.5rem; font-family: 'DM Serif Display', Georgia, serif; font-size: 1.5rem; line-height: 1.2; font-weight: 400; color: var(--text-primary); font-variant-numeric: tabular-nums; }
-    </style>
 
 </head>
 <body class="bg-cream min-h-screen" data-page-type="results" data-page-title="Success Stories">
@@ -152,185 +126,146 @@
     </header>
 
     <main id="main" role="main">
-        <nav aria-label="Breadcrumb" class="container-custom pt-8">
-            <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-                <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <a href="/" class="breadcrumb__link" itemprop="item"><span itemprop="name">Home</span></a>
-                    <meta itemprop="position" content="1" />
-                </li>
-                <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <span class="breadcrumb__current" itemprop="name">Success Stories</span>
-                    <meta itemprop="position" content="2" />
-                </li>
-            </ol>
-        </nav>
+        <div class="container-custom">
+            <div class="col pt-6">
+                <nav aria-label="Breadcrumb">
+                    <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                        <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a href="/" class="breadcrumb__link" itemprop="item"><span itemprop="name">Home</span></a>
+                            <meta itemprop="position" content="1" />
+                        </li>
+                        <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <span class="breadcrumb__current" itemprop="name">Success Stories</span>
+                            <meta itemprop="position" content="2" />
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <section class="opener">
+            <div class="container-custom">
+                <div class="col">
+                    <h1 class="opener__title">Students who changed their finances</h1>
+                    <p class="opener__key">Four case studies and six student quotes, each with the result the student reports.</p>
+                    <p class="opener__lede">These stories cover tax wins, wealth-building shifts, and alternative-income results. They show what happens when better money decisions are made consistently in the real world.</p>
+                    <dl class="words">
+                        <dt>Students guided</dt>
+                        <dd>2,000+</dd>
+                        <dt>Documented case studies</dt>
+                        <dd>30+</dd>
+                        <dt>Portfolio built by Preston</dt>
+                        <dd>$15M+</dd>
+                        <dt>Audience reach</dt>
+                        <dd>6.5M+</dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--rule">
+            <div class="container-custom">
+                <div class="col">
+                    <h2>Featured case studies</h2>
+                    <p class="measure">Four students, four starting points, and the result each one reached.</p>
+                    <ul class="list-rows list-rows--thumbs">
+                        <li>
+                            <div class="list-rows__thumb">
+                                <picture>
+                                    <source type="image/webp" srcset="/assets/images/case-study-dustin-240.webp 240w, /assets/images/case-study-dustin-480.webp 480w" sizes="(min-width: 640px) 120px, 160px">
+                                    <img src="/assets/images/case-study-dustin.jpg" alt="Dustin at one of his lakeside short-term rentals" width="240" height="135" loading="lazy" decoding="async">
+                                </picture>
+                            </div>
+                            <div>
+                                <h3 class="list-rows__title"><a href="/blog/6000-cash-flow-no-experience">How Dustin turned a failed Airbnb into cash-flowing lakeside rentals</a></h3>
+                                <p class="list-rows__desc">His first unit struggled. He now runs two profitable lakeside rentals.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-rows__thumb">
+                                <picture>
+                                    <source type="image/webp" srcset="/assets/images/case-study-kiana-240.webp 240w, /assets/images/case-study-kiana-480.webp 480w" sizes="(min-width: 640px) 120px, 160px">
+                                    <img src="/assets/images/case-study-kiana.jpg" alt="Kiana, who left a finance career for short-term rentals" width="240" height="135" loading="lazy" decoding="async">
+                                </picture>
+                            </div>
+                            <div>
+                                <h3 class="list-rows__title"><a href="/blog/kiana-replaced-finance-job-airbnb">How Kiana replaced her 10-year finance career with Airbnb arbitrage</a></h3>
+                                <p class="list-rows__desc">She left a corporate finance job of 10 years and runs short-term rentals full time.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-rows__thumb">
+                                <picture>
+                                    <source type="image/webp" srcset="/assets/images/case-study-fischers-240.webp 240w, /assets/images/case-study-fischers-480.webp 480w" sizes="(min-width: 640px) 120px, 160px">
+                                    <img src="/assets/images/case-study-fischers.jpg" alt="The Fischers, who booked $17,500 in their first two weeks" width="240" height="135" loading="lazy" decoding="async">
+                                </picture>
+                            </div>
+                            <div>
+                                <h3 class="list-rows__title"><a href="/blog/couple-17500-secured-one-week">How the Fischers booked $17,500 in two weeks with Airbnb arbitrage</a></h3>
+                                <p class="list-rows__desc">They wanted side income. They booked $17,500 in the first two weeks.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-rows__thumb">
+                                <picture>
+                                    <source type="image/webp" srcset="/assets/images/case-study-kirk-240.webp 240w, /assets/images/case-study-kirk-480.webp 480w" sizes="(min-width: 640px) 120px, 160px">
+                                    <img src="/assets/images/case-study-kirk.jpg" alt="Kirk, a nurse running his first short-term rental" width="240" height="135" loading="lazy" decoding="async">
+                                </picture>
+                            </div>
+                            <div>
+                                <h3 class="list-rows__title"><a href="/blog/212k-year-10-minutes-week">How Kirk makes $2,000 a month from his first Airbnb while working full time</a></h3>
+                                <p class="list-rows__desc">A nurse on a full-time schedule, earning $2,000 a month from one unit.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--rule">
+            <div class="container-custom">
+                <div class="col">
+                    <h2>What students say</h2>
+                    <p class="measure">Six students on what changed, with the monthly result and unit count each one reports.</p>
+                    <figure class="pull-quote">
+                        <blockquote><p>Within 60 days of joining, I had my first unit up and running. Now I&#39;m making an extra $3,500/month. Preston&#39;s system just works.</p></blockquote>
+                        <figcaption>Sarah J., marketing manager<span class="tabular">$3,500 a month, 2 units</span></figcaption>
+                    </figure>
+                    <figure class="pull-quote">
+                        <blockquote><p>I was skeptical at first, but the ROI on this program has been incredible. I&#39;ve scaled to 5 units in 8 months and I&#39;m on track to leave my W-2 this year.</p></blockquote>
+                        <figcaption>Marcus T., software engineer<span class="tabular">$8,200 a month, 5 units</span></figcaption>
+                    </figure>
+                    <figure class="pull-quote">
+                        <blockquote><p>As a stay-at-home mom, I needed something flexible. This program gave me the tools to build income while being present for my kids.</p></blockquote>
+                        <figcaption>Jennifer L., stay-at-home mom<span class="tabular">$2,800 a month, 1 unit</span></figcaption>
+                    </figure>
+                    <figure class="pull-quote">
+                        <blockquote><p>Even as a real estate agent, I learned so much from this program. The arbitrage model opened up a whole new revenue stream for my business.</p></blockquote>
+                        <figcaption>David K., real estate agent<span class="tabular">$12,000 a month, 7 units</span></figcaption>
+                    </figure>
+                    <figure class="pull-quote">
+                        <blockquote><p>On a teacher&#39;s salary, I never thought I could invest in real estate. Arbitrage changed everything. My first unit pays more than my day job.</p></blockquote>
+                        <figcaption>Michelle P., teacher<span class="tabular">$4,100 a month, 2 units</span></figcaption>
+                    </figure>
+                    <figure class="pull-quote">
+                        <blockquote><p>We did this together as a couple and it has been incredible for our family. The community support is unmatched, everyone wants you to succeed.</p></blockquote>
+                        <figcaption>Robert &amp; Lisa M., healthcare workers<span class="tabular">$6,500 a month, 4 units</span></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
 
         <section class="section section--tight">
             <div class="container-custom">
-                <div class="opener">
-                    <div>
-                        <h1 class="opener__title">Students who transformed their finances</h1>
-                        <p class="opener__lede">
-                            These stories cover tax wins, wealth-building shifts, and alternative-income results. They show what happens when better money decisions are executed consistently in the real world.
-                        </p>
-                        <p class="figure figure--gold ss-headline-figure">
-                            <span class="figure__value">2,000+</span>
-                            <span class="figure__label">Students guided</span>
-                        </p>
+                <div class="col">
+                    <div class="cta">
+                        <h2>Build the next version of your financial story</h2>
+                        <p>Start with the tax strategy masterclass, then use the compare guides and tools to turn the plan into action.</p>
+                        <div class="cta__actions">
+                            <a href="https://www.managemoney101.com/2025workshop" class="btn-primary" rel="noopener">Watch the free masterclass</a>
+                            <a href="/blog/" class="btn-secondary">Read the blog</a>
+                        </div>
                     </div>
-                    <div class="opener__aside">
-                        <figure class="photo">
-                            <img src="/assets/images/preston-main.webp"
-                                 srcset="/assets/images/preston-main-400.webp 400w, /assets/images/preston-main.webp 581w"
-                                 sizes="(min-width: 1024px) 420px, 100vw"
-                                 alt="Preston Seo, founder of Legacy Investing Show"
-                                 width="581" height="800" loading="eager" decoding="async">
-                            <figcaption class="photo__caption">Preston Seo teaches the tax and income strategies behind these results.</figcaption>
-                        </figure>
-                        <dl class="facts ss-aside-facts">
-                            <dt>Documented case studies</dt>
-                            <dd>30+</dd>
-                            <dt>Portfolio built by Preston</dt>
-                            <dd>$15M+</dd>
-                            <dt>Audience reach</dt>
-                            <dd>6.5M+</dd>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="band band--white section">
-            <div class="container-custom">
-                <div class="section__head">
-                    <h2>Featured case studies</h2>
-                    <p class="section__summary">Four students, four starting points, and the result each one reached.</p>
-                </div>
-
-                <ul class="ss-cases">
-                    <li class="ss-case">
-                        <figure class="photo ss-case__photo">
-                            <picture>
-                                <source type="image/webp" srcset="/assets/images/case-study-dustin-240.webp 240w, /assets/images/case-study-dustin-480.webp 480w" sizes="(min-width: 768px) 176px, 104px">
-                                <img src="/assets/images/case-study-dustin.jpg"
-                                     alt="Dustin at one of his lakeside short-term rentals"
-                                     width="240" height="135"
-                                     loading="lazy" decoding="async">
-                            </picture>
-                        </figure>
-                        <div>
-                            <h3 class="ss-case__title"><a href="/blog/6000-cash-flow-no-experience">How Dustin turned a "failed" Airbnb into cash-flowing lakeside rentals</a></h3>
-                            <p class="ss-case__path">From struggling with his first unit to two profitable lakeside rentals.</p>
-                        </div>
-                        <p class="figure ss-case__figure">
-                            <span class="figure__value">2</span>
-                            <span class="figure__label">profitable lakeside rentals</span>
-                        </p>
-                    </li>
-                    <li class="ss-case">
-                        <figure class="photo ss-case__photo">
-                            <picture>
-                                <source type="image/webp" srcset="/assets/images/case-study-kiana-240.webp 240w, /assets/images/case-study-kiana-480.webp 480w" sizes="(min-width: 768px) 176px, 104px">
-                                <img src="/assets/images/case-study-kiana.jpg"
-                                     alt="Kiana, who left a finance career for short-term rentals"
-                                     width="240" height="135"
-                                     loading="lazy" decoding="async">
-                            </picture>
-                        </figure>
-                        <div>
-                            <h3 class="ss-case__title"><a href="/blog/kiana-replaced-finance-job-airbnb">How Kiana replaced her 10-year finance career with Airbnb arbitrage</a></h3>
-                            <p class="ss-case__path">From a corporate finance job to running short-term rentals full time.</p>
-                        </div>
-                        <p class="figure ss-case__figure">
-                            <span class="figure__value">10 yrs</span>
-                            <span class="figure__label">of corporate finance replaced</span>
-                        </p>
-                    </li>
-                    <li class="ss-case">
-                        <figure class="photo ss-case__photo">
-                            <picture>
-                                <source type="image/webp" srcset="/assets/images/case-study-fischers-240.webp 240w, /assets/images/case-study-fischers-480.webp 480w" sizes="(min-width: 768px) 176px, 104px">
-                                <img src="/assets/images/case-study-fischers.jpg"
-                                     alt="The Fischers, who booked $17,500 in their first two weeks"
-                                     width="240" height="135"
-                                     loading="lazy" decoding="async">
-                            </picture>
-                        </figure>
-                        <div>
-                            <h3 class="ss-case__title"><a href="/blog/couple-17500-secured-one-week">How the Fischers booked $17,500 in two weeks with Airbnb arbitrage</a></h3>
-                            <p class="ss-case__path">From looking for side income to bookings in the first two weeks.</p>
-                        </div>
-                        <p class="figure ss-case__figure">
-                            <span class="figure__value">$17,500</span>
-                            <span class="figure__label">booked in the first two weeks</span>
-                        </p>
-                    </li>
-                    <li class="ss-case">
-                        <figure class="photo ss-case__photo">
-                            <picture>
-                                <source type="image/webp" srcset="/assets/images/case-study-kirk-240.webp 240w, /assets/images/case-study-kirk-480.webp 480w" sizes="(min-width: 768px) 176px, 104px">
-                                <img src="/assets/images/case-study-kirk.jpg"
-                                     alt="Kirk, a nurse running his first short-term rental"
-                                     width="240" height="135"
-                                     loading="lazy" decoding="async">
-                            </picture>
-                        </figure>
-                        <div>
-                            <h3 class="ss-case__title"><a href="/blog/212k-year-10-minutes-week">How Kirk makes $2,000 a month from his first Airbnb while working full time</a></h3>
-                            <p class="ss-case__path">From a nurse looking for side income to passive income alongside the job.</p>
-                        </div>
-                        <p class="figure ss-case__figure">
-                            <span class="figure__value">$2,000</span>
-                            <span class="figure__label">a month, still working full time</span>
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="band band--cream-dark section">
-            <div class="container-custom">
-                <div class="section__head">
-                    <h2>What our students say</h2>
-                    <p class="section__summary">Six students on what changed, with the monthly result and unit count each one reports.</p>
-                </div>
-
-                <div class="ss-quotes">
-                    <figure class="pull-quote">
-                        <blockquote><p>"Within 60 days of joining, I had my first unit up and running. Now I'm making an extra $3,500/month. Preston's system just works."</p></blockquote>
-                        <figcaption>Sarah J., marketing manager<span class="ss-result">$3,500 a month, 2 units</span></figcaption>
-                    </figure>
-                    <figure class="pull-quote">
-                        <blockquote><p>"I was skeptical at first, but the ROI on this program has been incredible. I've scaled to 5 units in 8 months and I'm on track to leave my W-2 this year."</p></blockquote>
-                        <figcaption>Marcus T., software engineer<span class="ss-result">$8,200 a month, 5 units</span></figcaption>
-                    </figure>
-                    <figure class="pull-quote">
-                        <blockquote><p>"As a stay-at-home mom, I needed something flexible. This program gave me the tools to build income while being present for my kids."</p></blockquote>
-                        <figcaption>Jennifer L., stay-at-home mom<span class="ss-result">$2,800 a month, 1 unit</span></figcaption>
-                    </figure>
-                    <figure class="pull-quote">
-                        <blockquote><p>"Even as a real estate agent, I learned so much from this program. The arbitrage model opened up a whole new revenue stream for my business."</p></blockquote>
-                        <figcaption>David K., real estate agent<span class="ss-result">$12,000 a month, 7 units</span></figcaption>
-                    </figure>
-                    <figure class="pull-quote">
-                        <blockquote><p>"On a teacher's salary, I never thought I could invest in real estate. Arbitrage changed everything. My first unit pays more than my day job!"</p></blockquote>
-                        <figcaption>Michelle P., teacher<span class="ss-result">$4,100 a month, 2 units</span></figcaption>
-                    </figure>
-                    <figure class="pull-quote">
-                        <blockquote><p>"We did this together as a couple and it's been incredible for our family. The community support is unmatched - everyone wants you to succeed."</p></blockquote>
-                        <figcaption>Robert &amp; Lisa M., healthcare workers<span class="ss-result">$6,500 a month, 4 units</span></figcaption>
-                    </figure>
-                </div>
-            </div>
-        </section>
-
-        <section class="cta-band">
-            <div class="container-custom">
-                <h2>Ready to build the next version of your financial story?</h2>
-                <p>Start with the tax strategy masterclass, then use the compare guides and tools to turn the plan into action.</p>
-                <div class="cta-band-actions">
-                    <a href="https://www.managemoney101.com/2025workshop" class="btn-primary" rel="noopener">Watch the free masterclass</a>
-                    <a href="/blog/">Read the blog</a>
                 </div>
             </div>
         </section>
