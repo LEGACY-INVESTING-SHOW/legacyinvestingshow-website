@@ -24,44 +24,36 @@
   },
   "samplePages": [
     {
-      "file": "sample-cover.webp",
-      "path": "/assets/images/wealth-plan-samples/sample-cover.webp",
-      "width": 1408,
-      "height": 1822,
-      "caption": "Cover page and Executive Summary showing $40,400 to $53,800 in first-year tax savings, a $7,200 cash flow boost, and a 1.0 BTC three-year target, with the client name blacked out.",
-      "alt": "Legacy Wealth Blueprint wealth plan sample page: Cover page and Executive Summary showing $40,400 to $53,800 in first-year tax savings, a $7,200 cash flow boost, and a 1.0 BTC three-year target, with the client name blacked out."
+      "file": "section-executive-summary.webp",
+      "path": "/assets/images/wealth-plan-samples/section-executive-summary.webp",
+      "width": 1210,
+      "height": 700,
+      "caption": "Executive summary from a member wealth plan: $40,400 to $53,800 in first-year tax savings from eight strategies, plus $7,200 in cash flow, with the S-Corp election as the single highest-value move.",
+      "alt": "Legacy Wealth Blueprint wealth plan section: Executive summary from a member wealth plan: $40,400 to $53,800 in first-year tax savings from eight strategies, plus $7,200 in cash flow, with the S-Corp election as the single highest-value move."
     },
     {
-      "file": "sample-cover2.webp",
-      "path": "/assets/images/wealth-plan-samples/sample-cover2.webp",
-      "width": 1408,
-      "height": 1822,
-      "caption": "Title page of a Comprehensive Wealth Plan dated December 2025 with a 12-month implementation period and the client name blacked out.",
-      "alt": "Legacy Wealth Blueprint wealth plan sample page: Title page of a Comprehensive Wealth Plan dated December 2025 with a 12-month implementation period and the client name blacked out."
+      "file": "section-year-one-results.webp",
+      "path": "/assets/images/wealth-plan-samples/section-year-one-results.webp",
+      "width": 1210,
+      "height": 255,
+      "caption": "Year-one result cards from a member wealth plan: $47,600 in year-one tax savings, a $7,200 cash flow boost, and a 1.0 BTC three-year target.",
+      "alt": "Legacy Wealth Blueprint wealth plan section: Year-one result cards from a member wealth plan: $47,600 in year-one tax savings, a $7,200 cash flow boost, and a 1.0 BTC three-year target."
     },
     {
-      "file": "sample-position.webp",
-      "path": "/assets/images/wealth-plan-samples/sample-position.webp",
-      "width": 1408,
-      "height": 1822,
-      "caption": "Income Sources and Current Financial Position tables listing $175,000 W-2 income, $350,000+ total household income, and balances for cash, debt, home equity and retirement accounts.",
-      "alt": "Legacy Wealth Blueprint wealth plan sample page: Income Sources and Current Financial Position tables listing $175,000 W-2 income, $350,000+ total household income, and balances for cash, debt, home equity and retirement accounts."
+      "file": "section-solo-401k.webp",
+      "path": "/assets/images/wealth-plan-samples/section-solo-401k.webp",
+      "width": 1190,
+      "height": 320,
+      "caption": "Strategy #2 from a member wealth plan: Solo 401(k) maximum contribution with an estimated annual value of $20,500 to $24,500 and how it works.",
+      "alt": "Legacy Wealth Blueprint wealth plan section: Strategy #2 from a member wealth plan: Solo 401(k) maximum contribution with an estimated annual value of $20,500 to $24,500 and how it works."
     },
     {
-      "file": "sample-roth.webp",
-      "path": "/assets/images/wealth-plan-samples/sample-roth.webp",
-      "width": 1408,
-      "height": 1822,
-      "caption": "Strategy #7, Backdoor Roth IRA for both spouses, with an estimated annual value of $14,000 in contributions and the steps to set it up.",
-      "alt": "Legacy Wealth Blueprint wealth plan sample page: Strategy #7, Backdoor Roth IRA for both spouses, with an estimated annual value of $14,000 in contributions and the steps to set it up."
-    },
-    {
-      "file": "sample-strategies.webp",
-      "path": "/assets/images/wealth-plan-samples/sample-strategies.webp",
-      "width": 1408,
-      "height": 1822,
-      "caption": "Strategy #2, Solo 401(k), at $20,500 to $24,500 estimated annual value, and Strategy #3, Management Company Structure, at $5,900 to $8,900.",
-      "alt": "Legacy Wealth Blueprint wealth plan sample page: Strategy #2, Solo 401(k), at $20,500 to $24,500 estimated annual value, and Strategy #3, Management Company Structure, at $5,900 to $8,900."
+      "file": "section-backdoor-roth.webp",
+      "path": "/assets/images/wealth-plan-samples/section-backdoor-roth.webp",
+      "width": 1190,
+      "height": 320,
+      "caption": "Strategy #7 from a member wealth plan: Backdoor Roth IRA for both spouses with $14,000 a year in contributions and how it works.",
+      "alt": "Legacy Wealth Blueprint wealth plan section: Strategy #7 from a member wealth plan: Backdoor Roth IRA for both spouses with $14,000 a year in contributions and how it works."
     }
   ],
   "images": [

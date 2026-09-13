@@ -114,7 +114,7 @@ function buildSamplePages(images) {
 
     const cards = pages.map(function (page, index) {
         const caption = page.caption || 'Sample page from a Legacy Wealth Blueprint wealth plan.';
-        const alt = page.alt || ('Legacy Wealth Blueprint wealth plan sample page: ' + caption);
+        const alt = page.alt || ('Legacy Wealth Blueprint wealth plan section: ' + caption);
         const search = searchable('wealth plan sample page legacy wealth blueprint ' + caption);
         return ''
             + '\n                            <figure class="rv-snap rv-sample" data-program="lwb" data-type="wealth-plan" data-search="'
@@ -135,7 +135,7 @@ function buildSamplePages(images) {
     return ''
         + '\n                    <div class="rv-samples" data-rv-samples>'
         + '\n                        <h3 class="rv-samples__head">Inside a Legacy Wealth Blueprint wealth plan</h3>'
-        + '\n                        <p class="rv-samples__note">These five pages come from one member wealth plan, with the name blacked out.</p>'
+        + '\n                        <p class="rv-samples__note">These sections come from one member wealth plan, with the name blacked out.</p>'
         + '\n                        <div class="rv-samplegrid">' + cards + '\n                        </div>'
         + '\n                    </div>';
 }
