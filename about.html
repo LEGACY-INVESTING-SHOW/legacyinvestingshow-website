@@ -35,8 +35,8 @@
     <meta name="theme-color" content="#FAF7F2">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/assets/images/logo.png">
-    <link rel="apple-touch-icon" href="/assets/images/logo.png">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    
 
     <!-- Schema.org Person Markup -->
     <script type="application/ld+json">
@@ -111,10 +111,7 @@
 
     <header class="site-header">
         <nav class="container-custom site-nav" aria-label="Main navigation">
-            <a href="/" class="site-brand">
-                <img src="/assets/images/logo-240.webp" alt="" width="62" height="28">
-                <span>Legacy Investing Show</span>
-            </a>
+            <a href="/" class="site-brand">Legacy Investing Show</a>
             <div class="site-nav-links">
                 <a href="/" class="nav-link">Home</a>
                     <a href="/about" class="nav-link nav-link-active">About</a>
@@ -164,35 +161,20 @@
                         </p>
                     </div>
 
-                    <div class="opener__aside photo--pair">
-                        <figure class="photo">
-                            <picture>
-                                <source srcset="/assets/images/about-family-3-400.webp 400w, /assets/images/about-family-3-600.webp 600w"
-                                        sizes="(min-width: 1024px) 280px, 44vw"
-                                        type="image/webp">
-                                <img src="/assets/images/about-family-3.png"
-                                     alt="Preston Seo carrying his two children across the concrete foundations of a build in progress"
-                                     width="600"
-                                     height="600"
-                                     loading="eager"
-                                     fetchpriority="high"
-                                     decoding="async">
-                            </picture>
-                        </figure>
-                        <figure class="photo">
-                            <picture>
-                                <source srcset="/assets/images/about-work-2-400.webp 400w, /assets/images/about-work-2-600.webp 600w"
-                                        sizes="(min-width: 1024px) 190px, 34vw"
-                                        type="image/webp">
-                                <img src="/assets/images/about-work-2.jpg"
-                                     alt="Preston Seo's corporate ID badge from the job he left within a year"
-                                     width="600"
-                                     height="600"
-                                     loading="lazy"
-                                     decoding="async">
-                            </picture>
-                        </figure>
-                    </div>
+                    <figure class="opener__aside photo">
+                        <picture>
+                            <source srcset="/assets/images/about-family-3-400.webp 400w, /assets/images/about-family-3-600.webp 600w, /assets/images/about-family-3-800.webp 800w, /assets/images/about-family-3-1200.webp 1200w"
+                                    sizes="(min-width: 1024px) 480px, calc(100vw - 3.5rem)"
+                                    type="image/webp">
+                            <img src="/assets/images/about-family-3.png"
+                                 alt="Preston Seo carrying his two children across the concrete foundations of a build in progress"
+                                 width="800"
+                                 height="800"
+                                 loading="eager"
+                                 fetchpriority="high"
+                                 decoding="async">
+                        </picture>
+                    </figure>
                 </div>
             </div>
         </section>
@@ -218,7 +200,7 @@
         <!-- What changed -->
         <section class="section">
             <div class="container-custom">
-                <div class="marginalia">
+                <div class="marginalia items-start">
                     <div class="marginalia__main sheet">
                         <h2 class="mb-6">What actually changed</h2>
                         <div class="max-w-[64ch] text-lg text-secondary leading-relaxed space-y-5">
@@ -234,6 +216,21 @@
                         <figure class="pull-quote">
                             <blockquote><p>That is what Legacy Investing Show teaches. Not one tactic, but the system underneath it.</p></blockquote>
                             <figcaption>Preston Seo <span>Founder, Legacy Investing Show</span></figcaption>
+                        </figure>
+
+                        <figure class="photo mt-10">
+                            <picture>
+                                <source srcset="/assets/images/about-work-2-400.webp 400w, /assets/images/about-work-2-600.webp 600w, /assets/images/about-work-2-800.webp 800w"
+                                        sizes="(min-width: 1024px) 320px, calc(100vw - 3.5rem)"
+                                        type="image/webp">
+                                <img src="/assets/images/about-work-2.jpg"
+                                     alt="Preston Seo's corporate ID badge, photographed after he left the job"
+                                     width="600"
+                                     height="600"
+                                     loading="lazy"
+                                     decoding="async">
+                            </picture>
+                            <figcaption class="photo__caption">The corporate ID from the job I left within a year of starting it.</figcaption>
                         </figure>
                     </aside>
                 </div>
@@ -402,7 +399,7 @@
         <div class="container-custom">
             <div class="site-footer-grid">
                 <div class="site-footer-brand">
-                    <a href="/" class="site-brand"><img src="/assets/images/logo-240.webp" alt="" width="62" height="28"><span>Legacy Investing Show</span></a>
+                    <a href="/" class="site-brand">Legacy Investing Show</a>
                     <p>Tax strategy, wealth systems, and practical decision tools for professionals, investors, and founders.</p>
                 </div>
                 <div class="site-footer-group">
