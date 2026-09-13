@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    { "source": "/programmatic-pages/insurance/renters-by-state", "destination": "/renters-insurance" },
+    { "source": "/programmatic-pages/insurance/renters-by-state/", "destination": "/renters-insurance" },
+    { "source": "/programmatic-pages/insurance/renters-:state", "destination": "/renters-insurance/:state" },
+    { "source": "/programmatic-pages/cities/:slug", "destination": "/markets/:slug" },
+    { "source": "/programmatic-pages/comparisons/:slug", "destination": "/compare/:slug" },
+    { "source": "/programmatic-pages/personas/small-business-owners", "destination": "/tax-strategies/for/business-owners" },
+    { "source": "/programmatic-pages/personas/retirement-savers", "destination": "/retirement/traditional-vs-roth-401k" },
+    { "source": "/programmatic-pages/personas/:slug", "destination": "/tax-strategies/for/:slug" },
+    { "source": "/programmatic-pages", "destination": "/markets" },
+    { "source": "/programmatic-pages/:path*", "destination": "/markets" }
+  ]
+}

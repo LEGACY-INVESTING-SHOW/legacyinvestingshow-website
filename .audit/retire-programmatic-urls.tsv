@@ -1,0 +1,9 @@
+ts	phase	decision	why	evidence	result
+2026-09-13T14:50:00Z	frame	Treat /programmatic-pages as a public URL defect, not a folder name to keep	Readers and crawlers see the generation method in the address bar	https://www.legacyinvestingshow.com/programmatic-pages/insurance/renters-kentucky	open
+2026-09-13T14:52:00Z	design	Fold pages into existing IA instead of inventing a /guides tree	/compare, /tax-strategies/for, and insurance tools already exist, so a parallel tree would cannibalize	scripts/lib/public-urls.js	open
+2026-09-13T14:53:00Z	design	Skip a second architecture bakeoff	The destination prefixes are already in production	playbooks/figure-it-out.md skip of arena	open
+2026-09-13T15:29:28Z	generator	Deleted unused PERSONAS and COMPARISONS arrays and the generate-programmatic-seo.js shim	Those arrays had no callers after personas folded into tax-strategies/for and comparisons into /compare	scripts/fix-programmatic-seo.js	kept
+2026-09-13T15:29:28Z	seo	Aligned sitemap, llms.txt, robots, and internal links with /markets and /renters-insurance	Crawlers and answer engines should see the public IA, not the old folder name	scripts/check-public-url-hygiene.js	tests green
+2026-09-13T15:29:28Z	verify	Hygiene test now also requires Kentucky and Austin URLs in sitemap-pages.xml and llms.txt	A missing sitemap row would otherwise look like a URL move that never published	tests/public-url-hygiene.test.js	tests green
+2026-09-13T15:29:28Z	comments	Deleted the generator alias, gray-matter fallback parser, and lying programmaticDirs names	Comment Sicko flagged those as leftover workarounds from the old tree	scripts/generate-sitemap.js	kept
+2026-09-13T15:29:28Z	comments	Kept removeLegacyProgrammaticTree in the generator	npm run build should delete the folder if a later agent recreates it. The hygiene test fails if it comes back.	scripts/fix-programmatic-seo.js	kept

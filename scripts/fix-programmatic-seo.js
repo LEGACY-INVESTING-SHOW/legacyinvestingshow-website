@@ -9,9 +9,17 @@ const {
     renderFooterLinks,
     renderPrimaryNavLinks,
 } = require('./lib/site-shell');
+const {
+    siteUrl,
+    rentersInsurancePath,
+    marketPath,
+} = require('./lib/public-urls');
 
 const ROOT_DIR = path.join(__dirname, '..');
-const OUTPUT_DIR = path.join(ROOT_DIR, 'programmatic-pages');
+const MARKETS_DIR = path.join(ROOT_DIR, 'markets');
+const RENTERS_DIR = path.join(ROOT_DIR, 'renters-insurance');
+const LEGACY_PROGRAMMATIC_DIR = path.join(ROOT_DIR, 'programmatic-pages');
+const RENTERS_GUIDES_PATH = path.join(ROOT_DIR, 'data', 'renters-insurance-guides.json');
 const CITIES_PATH = path.join(ROOT_DIR, 'data', 'cities.json');
 const TAX_STRATEGIES_PATH = path.join(ROOT_DIR, 'data', 'tax-strategies.json');
 const INSURANCE_PATH = path.join(ROOT_DIR, 'data', 'renters-insurance-by-state.json');
@@ -217,234 +225,159 @@ const CITY_CONTEXT = {
     },
 };
 
-const PERSONAS = [
-    {
-        slug: 'real-estate-investors',
-        title: 'Real Estate Investor Tax Planning Workflow',
-        description: 'A decision-first playbook for investors who need to connect acquisition, hold period, documentation, and exit timing before they chase deductions.',
-        authorityHref: '/tax-strategies/for/real-estate-investors',
-        authorityLabel: 'Core strategy page for real estate investors',
-        pressurePoints: [
-            'Choosing a property structure that supports the actual hold period.',
-            'Matching depreciation strategy to cash flow instead of chasing paper losses alone.',
-            'Keeping time logs, capex records, and entity records tight enough for review.',
-        ],
-        workflow: [
-            'Define whether the next move is acquisition, optimization, refinance, or sale.',
-            'Choose the deduction stack only after the hold period and operator role are clear.',
-            'Build one audit folder per property with purchase documents, capex, mileage, and time logs.',
-            'Review depreciation, exit timing, and entity structure before year-end instead of after closing.',
-        ],
-        mistakes: [
-            'Ordering a cost segregation study before confirming the property is still a good hold.',
-            'Claiming participation or status rules without a recordkeeping system.',
-            'Letting bookkeeping lag until the CPA has to reconstruct the year from bank statements.',
-        ],
-        resources: [
-            'cost-segregation',
-            'real-estate-professional-status',
-            'short-term-rental-loophole',
-            '1031-exchange',
-            'bonus-depreciation',
+const CITY_LOCAL = {
+    'austin-tx': {
+        taxReality: 'Texas has no state income tax, so Austin underwriting lives or dies on property tax, hotel tax, insurance, and whether the neighborhood still allows the stay lengths you modeled.',
+        operatorDay: 'A realistic Austin week mixes a SXSW or ACL spike with quieter midweeks. If the listing only works when downtown is packed, the tax stack is sitting on a fragile base case.',
+        faqs: [
+            { question: 'Does Austin have a state income tax that STR operators can plan around?', answer: 'No. Texas does not levy a personal income tax. The local fight is property tax, occupancy tax, permits, and whether the property can legally run as a short-term rental in that ZIP.' },
+            { question: 'Should I annualize SXSW rates in an Austin tax model?', answer: 'No. Festival weeks are a stress test, not a baseline. Build occupancy and ADR from trailing non-event months, then treat events as upside.' },
+            { question: 'What records matter most for an Austin host before filing?', answer: 'Stay-length logs, cleaner invoices, permit or HOA documents, and a property-level P&L that does not mix personal travel with guest stays.' },
+            { question: 'When does cost segregation make sense in Austin?', answer: 'After the hold period and operating model are real. A study on a property you cannot keep filled, or cannot legally rent short-term, is a fee for a deduction you may not get to use cleanly.' },
         ],
     },
-    {
-        slug: 'small-business-owners',
-        title: 'Small Business Owner Tax Operations Playbook',
-        description: 'A practical framework for owners who need entity discipline, reimbursement systems, payroll judgment, and deduction hygiene to work together.',
-        authorityHref: '/tax-strategies/for/business-owners',
-        authorityLabel: 'Core strategy page for business owners',
-        pressurePoints: [
-            'Choosing an entity structure that matches real payroll and admin capacity.',
-            'Separating business reimbursements from personal spending before year-end.',
-            'Using deductions to improve owner cash flow without creating messy records.',
-        ],
-        workflow: [
-            'Review entity fit, payroll reality, and reimbursement policy together.',
-            'Tighten bookkeeping, accountable-plan, and receipt discipline before hunting for more deductions.',
-            'Decide which one or two strategy changes matter most this year and ignore the rest.',
-            'Build a recurring quarterly review for payroll, estimates, and documentation gaps.',
-        ],
-        mistakes: [
-            'Electing S-corp treatment without consistent payroll execution.',
-            'Treating every personal expense as a business write-off candidate.',
-            'Adding multiple strategies at once without assigning who maintains the records.',
-        ],
-        resources: [
-            's-corp-strategy',
-            'qualified-business-income-deduction',
-            'home-office-deduction',
-            'business-vehicle-deduction',
-            'section-179',
+    'nashville-tn': {
+        taxReality: 'Tennessee planning here is local occupancy tax, permit discipline, and whether bachelor-party demand is covering wear that the depreciation schedule cannot see.',
+        operatorDay: 'Music City weekends can look like a money printer until you price in furniture refresh, noise complaints, and the shoulder-season weekday that does not book.',
+        faqs: [
+            { question: 'Is Nashville STR income taxed at the state level like W-2 wages?', answer: 'Tennessee does not tax most wage income the way a high-income-tax state does. You still have federal tax, local occupancy tax, and entity questions that do not disappear because Music City is busy on Saturday.' },
+            { question: 'Why do Nashville listings fail after a strong first summer?', answer: 'Group travel raises ADR and also raises turnover cost. If house rules, cleaner coverage, and reserves were built for a quiet one-bedroom, bachelorette volume will chew the asset.' },
+            { question: 'What should a Nashville operator document for the STR loophole?', answer: 'Average stay length, material participation hours, and a calendar that matches what Airbnb actually booked, not what you hoped the listing would do.' },
+            { question: 'Does new supply in Nashville change the tax plan?', answer: 'It changes the operating plan first. Rankings and reviews move faster than your depreciation schedule. Fix occupancy math before you order a cost segregation study.' },
         ],
     },
-    {
-        slug: 'high-income-earners',
-        title: 'High-Income Earner Tax Planning Sequence',
-        description: 'A sequencing page for W-2-heavy households that need to decide what to do first, what requires a business or real estate vehicle, and what is just noise.',
-        authorityHref: '/tax-strategies/for/high-income-earners',
-        authorityLabel: 'Core strategy page for high-income earners',
-        pressurePoints: [
-            'Filtering strategies that sound advanced but do not fit a W-2-heavy income mix.',
-            'Balancing charitable, retirement, and real estate moves without losing documentation quality.',
-            'Reducing tax drag while protecting liquidity and household flexibility.',
-        ],
-        workflow: [
-            'Start with payroll withholding, retirement contribution space, and cash reserve targets.',
-            'Decide whether this year is better suited for deduction, deferral, or asset-location moves.',
-            'Use real estate or business strategies only if the operating system already exists.',
-            'Review which moves belong this year and which should wait for a cleaner setup.',
-        ],
-        mistakes: [
-            'Buying complexity before building the operating capacity to support it.',
-            'Confusing a large deduction with a good long-term investment decision.',
-            'Letting charitable or retirement planning drift without a bracket-aware sequence.',
-        ],
-        resources: [
-            'backdoor-roth-ira',
-            'hsa-strategy',
-            'bunching-deductions',
-            'donor-advised-fund',
-            'short-term-rental-loophole',
+    'miami-fl': {
+        taxReality: 'Florida has no state income tax, but Miami still extracts its pound through insurance, condo rules, and county tourist taxes. The federal stack only matters if the unit survives those costs.',
+        operatorDay: 'Peak season can hide a listing that loses money from June through October. Underwrite the insurance renewal, not the New Year’s Eve ADR.',
+        faqs: [
+            { question: 'Is Miami a no-income-tax shortcut for STR operators?', answer: 'Florida skips a state wage tax. It does not skip insurance spikes, building rental rules, or federal tax on the activity. Model those first.' },
+            { question: 'What breaks Miami deals more often than a bad CPA?', answer: 'A board that bans short stays, an insurance quote that doubles, or a seasonality assumption copied from January occupancy.' },
+            { question: 'Should hurricane risk change the tax file?', answer: 'It should change reserves and insurance. Keep repair invoices, loss documentation, and a clear split between personal use and rental use if you ever occupy the unit yourself.' },
+            { question: 'When is bonus depreciation useful in Miami?', answer: 'When the property is in service, the stay-length facts support the activity, and you can still fund operations after the deduction. Paper losses do not pay the condo assessment.' },
         ],
     },
-    {
-        slug: 'self-employed',
-        title: 'Self-Employed Tax System for 1099 Operators',
-        description: 'A field guide for consultants, freelancers, and solo operators who need cleaner records, smarter estimate planning, and the right retirement setup.',
-        authorityHref: '/tax-strategies/for/self-employed',
-        authorityLabel: 'Core strategy page for self-employed professionals',
-        pressurePoints: [
-            'Managing irregular cash flow and estimated tax pressure.',
-            'Choosing between solo-owner retirement options without overcomplicating operations.',
-            'Creating records that make deductions defendable instead of debatable.',
-        ],
-        workflow: [
-            'Stabilize bookkeeping, estimate cadence, and reimbursement records first.',
-            'Choose the retirement vehicle that matches revenue consistency and admin tolerance.',
-            'Only consider S-corp treatment after payroll, profit level, and owner workload are clear.',
-            'Use quarterly reviews to update estimates instead of back-solving in March.',
-        ],
-        mistakes: [
-            'Mixing personal and business accounts for most of the year.',
-            'Ignoring estimated tax adjustments until the cash crunch appears.',
-            'Building a complex entity stack before revenue is stable enough to justify it.',
-        ],
-        resources: [
-            'solo-401k',
-            'qualified-business-income-deduction',
-            'hsa-strategy',
-            'home-office-deduction',
-            's-corp-strategy',
+    'phoenix-az': {
+        taxReality: 'Arizona state tax exists, so Phoenix operators cannot pretend the only bill is federal. Snowbird season also creates a cash-flow shape that a straight-line tax plan will miss.',
+        operatorDay: 'Spring training weeks are not a year. Pool service, electricity, and empty July nights are the actual business.',
+        faqs: [
+            { question: 'How should Phoenix seasonality show up in a tax plan?', answer: 'Split the year. High season can fund reserves. Low season should still cover debt, utilities, and cleaner retainers before you count on a depreciation win.' },
+            { question: 'Does Arizona state tax change entity choice for a Phoenix rental?', answer: 'It can. Run federal and Arizona together. A structure that looks elegant on a federal projector can still create state-level friction you did not budget.' },
+            { question: 'What records should a Phoenix host keep in summer?', answer: 'Utility bills, vacancy logs, and vendor invoices. Those months are where people invent occupancy they did not actually have.' },
+            { question: 'Is snowbird demand a substitute for short-term-rental status?', answer: 'No. Longer winter stays can push you out of STR treatment. Track average stay length on purpose, not as an afterthought in March.' },
         ],
     },
-    {
-        slug: 'retirement-savers',
-        title: 'Retirement Saver Tax Sequencing Guide',
-        description: 'A sequencing page for savers deciding how to split dollars between tax-deferred, tax-free, and flexible accounts without chasing every acronym at once.',
-        authorityHref: '/retirement/traditional-vs-roth-401k',
-        authorityLabel: 'Core retirement contribution guide',
-        pressurePoints: [
-            'Choosing the next best account rather than funding everything halfway.',
-            'Keeping retirement contributions aligned with current bracket and future flexibility.',
-            'Avoiding tax moves that weaken near-term liquidity or documentation quality.',
-        ],
-        workflow: [
-            'Start with employer-match capture or the highest-value contribution bucket available.',
-            'Decide whether this year favors tax deduction, tax diversification, or conversion capacity.',
-            'Use HSAs and Roth-oriented moves only when cash flow and recordkeeping support them.',
-            'Review contribution sequencing before year-end, not after filing season starts.',
-        ],
-        mistakes: [
-            'Treating every retirement account as interchangeable.',
-            'Overfunding retirement while underfunding reserves or near-term tax obligations.',
-            'Ignoring the interaction between account type, bracket, and future flexibility.',
-        ],
-        resources: [
-            { href: '/retirement/traditional-vs-roth-401k', title: 'Traditional vs Roth 401(k)', description: 'Use current-vs-future tax rate logic before choosing contribution direction.' },
-            { href: '/retirement/401k-contribution-strategies', title: '401(k) Contribution Strategies', description: 'See how contribution sequencing changes when cash flow or match rules differ.' },
-            'backdoor-roth-ira',
-            'hsa-strategy',
-            { href: '/retirement/sep-ira-guide', title: 'SEP IRA Guide', description: 'Review when SEP IRA simplicity is a strength and when it becomes a constraint.' },
+    'denver-co': {
+        taxReality: 'Colorado tax and mountain-adjacent permit rules matter as much as federal depreciation. A Denver listing that is also a personal ski condo needs mixed-use documentation from day one.',
+        operatorDay: 'Convention weekdays and weekend mountain overflow are different products. If the unit sits in a neighborhood with tight STR caps, the tax thesis may be illegal before it is inefficient.',
+        faqs: [
+            { question: 'Can I treat a Denver condo I ski from as a pure rental for tax purposes?', answer: 'Only if personal use stays inside the rules and you document it. Mixed personal and rental use is the usual Denver audit story, not a clever loophole.' },
+            { question: 'Do Front Range hail and wildfire costs belong in the tax model?', answer: 'They belong in underwriting. Insurance deductibles and repair years change cash flow. Save every restoration invoice against the same property file as your depreciation schedule.' },
+            { question: 'Is REPS easier in Denver because of outdoor tourism?', answer: 'No. REPS is about hours and a real estate trade, not about how pretty the Rockies are. Count hours you actually work.' },
+            { question: 'What should I verify before a cost segregation study in Denver?', answer: 'Permit status, personal-use days, and a hold period that still makes sense if the HOA tightens rentals next year.' },
         ],
     },
-    {
-        slug: 'airbnb-hosts',
-        title: 'Airbnb Host Tax Operations Playbook',
-        description: 'A process-first page for hosts who need to align permits, stay-length rules, depreciation choices, and bookkeeping before they file.',
-        authorityHref: '/tax-strategies/for/airbnb-hosts',
-        authorityLabel: 'Core strategy page for Airbnb and STR hosts',
-        pressurePoints: [
-            'Knowing whether the property is really short-term-rental friendly under local rules.',
-            'Matching depreciation and participation strategy to the actual operating model.',
-            'Keeping guest, cleaner, and expense records organized enough to support the return.',
-        ],
-        workflow: [
-            'Confirm regulation and average-stay assumptions before deciding on the tax angle.',
-            'Choose the property-level deduction stack only after the operating model is clear.',
-            'Track nights, expenses, vendor payments, and material-participation records in one system.',
-            'Review the file with your CPA before year-end if you expect a large deduction swing.',
-        ],
-        mistakes: [
-            'Assuming the STR loophole applies because the property is on Airbnb.',
-            'Ordering cost segregation without a documented participation story.',
-            'Treating operational chaos as a bookkeeping problem instead of a business problem.',
-        ],
-        resources: [
-            'short-term-rental-loophole',
-            'cost-segregation',
-            'bonus-depreciation',
-            'real-estate-professional-status',
-            'home-office-deduction',
+    'atlanta-ga': {
+        taxReality: 'Atlanta is a weekday market dressed up as a tourism story. Georgia tax, entity hygiene, and airport-driven stays should drive the file more than Peachtree festival weekends.',
+        operatorDay: 'A Hartsfield connection and a downtown conference can fill Tuesday. If your model needs Saturday party groups to work, you picked the wrong city story.',
+        faqs: [
+            { question: 'Is Atlanta better for business-travel STRs than leisure STRs?', answer: 'Often yes. Airport and convention traffic can support midweek occupancy that a pure vacation market does not. Track stay purpose in your notes so pricing and cleaning cadence match reality.' },
+            { question: 'How should a Georgia S-corp and an Atlanta rental interact?', answer: 'Keep the rental on its own books. Mixing consulting income, reimbursements, and a Midtown listing in one checking account is how the year becomes un-filable.' },
+            { question: 'What local tax should Atlanta operators budget besides federal?', answer: 'Georgia income tax plus local occupancy and hotel taxes where they apply. Put filing dates on the same calendar as federal estimates.' },
+            { question: 'When does the STR loophole fail in Atlanta?', answer: 'When average stays drift longer, participation hours are fictional, or the property is really a mid-term corporate housing product you never measured.' },
         ],
     },
-];
+    'san-diego-ca': {
+        taxReality: 'California tax, local STR rules, and coastal insurance are the operating system. Federal depreciation is a module you add after those three are honest.',
+        operatorDay: 'Beach demand does not repeal a city permit cap. Comic-Con week is a bonus. Year-round parking, HOA fines, and cleaner wages are the job.',
+        faqs: [
+            { question: 'Should I start a San Diego tax plan with bonus depreciation?', answer: 'No. Start with whether the unit can legally operate, what California tax does to the leftover, and whether insurance is still writable. Then talk depreciation.' },
+            { question: 'How do California rules change STR recordkeeping?', answer: 'You need a file that would survive a city audit and a tax audit. Permits, occupancy reports, and property-level books belong together.' },
+            { question: 'Is military and conference demand enough to ignore seasonality?', answer: 'It helps the base case. It does not let you skip a conservative off-peak occupancy number.' },
+            { question: 'What mixed-use trap is common in San Diego?', answer: 'Owners who stay for summer weeks and still want full STR treatment. Count personal days before you count deductions.' },
+        ],
+    },
+    'tampa-fl': {
+        taxReality: 'Tampa looks cheaper than Miami until you model insurance, flood, and county tourist tax. Florida’s lack of a wage tax does not make a weak listing a good federal tax shelter.',
+        operatorDay: 'Cruise weeks and winter visitors are real. So is a humid August with a tired sofa and a higher insurance bill than last year.',
+        faqs: [
+            { question: 'Is Tampa a cheaper Florida STR tax market than Miami?', answer: 'Entry prices can look easier. Insurance, flood exposure, and seasonality still set the after-tax result. Compare those line items, not just purchase price.' },
+            { question: 'Does flood insurance change the Tampa tax file?', answer: 'Flood is usually a separate policy and a reserve issue. Keep premiums and claims with the property file so you are not reconstructing a storm year from memory.' },
+            { question: 'What stay-length pattern should Tampa operators watch?', answer: 'Snowbird months can lengthen averages. If you need STR treatment, measure the average stay instead of assuming every booking is a long weekend.' },
+            { question: 'When should a Tampa host talk to a CPA about cost segregation?', answer: 'After the unit is in service, the hold period is clear, and the insurance and occupancy model still works without the deduction.' },
+        ],
+    },
+    'charlotte-nc': {
+        taxReality: 'Charlotte is a banking-and-event overlay, not a beach town. North Carolina tax and neighborhood-level demand matter more than a NASCAR weekend you cannot repeat 52 times.',
+        operatorDay: 'Uptown weekdays can carry a listing that South End Saturdays cannot. Submarket choice is the strategy.',
+        faqs: [
+            { question: 'Is Charlotte demand more corporate than leisure?', answer: 'Often. Banking, airport, and conference traffic can fill weekdays. Price and clean for that guest, then treat race weekends as overlay, not the whole thesis.' },
+            { question: 'How does North Carolina tax change the entity conversation?', answer: 'State tax is part of the model. Do not copy a Texas entity memo onto a Charlotte property and call it done.' },
+            { question: 'What documentation helps a Charlotte operator at filing time?', answer: 'Property-level books, vendor 1099s if you scale, and a stay-length export that matches the tax treatment you want to claim.' },
+            { question: 'Should I use the STR loophole because Charlotte has lots of Airbnbs?', answer: 'No. The loophole cares about average stay and participation, not about how many listings are on the map.' },
+        ],
+    },
+    'las-vegas-nv': {
+        taxReality: 'Nevada has no state income tax, which is not the same as “Vegas is easy.” Permit status and event-week concentration decide whether any federal strategy is even reachable.',
+        operatorDay: 'Convention midweeks can print. Neighborhood enforcement can shut the printer off. Underwrite the rulebook before the Strip ADR.',
+        faqs: [
+            { question: 'Is Las Vegas a no-tax STR market?', answer: 'Nevada skips a state income tax. Local licensing, room tax, and HOA or city rules can still end the business. Confirm the asset is allowed to operate.' },
+            { question: 'Should I underwrite CES week as my base occupancy?', answer: 'No. Treat mega-events as upside. The listing has to survive the quiet week after the convention center empties.' },
+            { question: 'What records are uniquely important in Las Vegas?', answer: 'License and permit documents, guest incident logs, and a calendar that shows you did not confuse a party house with a lodging business.' },
+            { question: 'When does depreciation become a distraction in Vegas?', answer: 'When the unit cannot legally operate, or when event-month revenue is the only reason the debt service clears.' },
+        ],
+    },
+    'orlando-fl': {
+        taxReality: 'Orlando’s tax story is family-travel volume, turnover cost, and Florida’s insurance market. Theme-park occupancy does not automatically create STR tax treatment.',
+        operatorDay: 'A seven-bedroom near the parks is a cleaning company with a house attached. Model labor before bonus depreciation.',
+        faqs: [
+            { question: 'Does year-round theme-park demand make Orlando occupancy a given?', answer: 'Volume is real. Competition is also real. Weak reviews and slow turns show up faster here than in a sleepy beach town.' },
+            { question: 'Why do Orlando tax plans blow up after a cost segregation study?', answer: 'Because the study assumed a hold and an operating cadence the owner could not staff. Family-travel wear is a cash cost, not just a depreciation input.' },
+            { question: 'What should an Orlando operator track besides ADR?', answer: 'Turn time, linen replacement, and average stay length. Those three numbers tell you whether the tax treatment you want is even available.' },
+            { question: 'Is Florida’s lack of income tax enough reason to buy in Orlando?', answer: 'No. It is one input. Insurance, HOA, and whether you can actually run a large-home listing are the others.' },
+        ],
+    },
+    'dallas-tx': {
+        taxReality: 'Dallas is Texas, so skip the state wage-tax fantasy and look at property tax, hotel tax, and which suburb you actually bought. Plano is not Deep Ellum.',
+        operatorDay: 'Corporate travel can fill a weekday. A sports overlay can fill a weekend. Neither forgives a cleaning vendor who no-shows in Frisco.',
+        faqs: [
+            { question: 'Do all Dallas-Fort Worth suburbs underwrite the same way?', answer: 'No. Stay mix, HOA culture, and commute patterns change by city. Build the tax file on the property you own, not on a metro average.' },
+            { question: 'How should a Dallas operator think about Texas property tax?', answer: 'It is a carrying cost that can move. Protest, budget, and do not treat a first-year assessment as the forever number in your depreciation model.' },
+            { question: 'When is an S-corp relevant to a Dallas STR?', answer: 'When there is a real operating business with payroll capacity. A single listing does not become an S-corp problem just because you watched a YouTube video.' },
+            { question: 'What records matter if I self-manage in Dallas?', answer: 'Mileage, reimbursements, vendor payments, and a property P&L. Those are the documents a CPA can use. Group chat screenshots are not.' },
+        ],
+    },
+    'houston-tx': {
+        taxReality: 'Houston’s medical and project travel can support longer stays than an Austin festival model. That is a tax fact: average stay length may knock you out of STR treatment if you never measure it.',
+        operatorDay: 'A Medical Center listing behaves unlike a beach house. Build the file around stay mix, not around a Texas slogan.',
+        faqs: [
+            { question: 'Why shouldn’t I copy an Austin underwriting model into Houston?', answer: 'Demand sources differ. Medical, energy, and corporate project stays can lengthen averages and change cleaning cadence. Austin event math will lie to you here.' },
+            { question: 'How could longer Houston stays affect the STR loophole?', answer: 'If average stays exceed the short-term threshold, the loophole is not a loophole. Export the stay report before you claim the treatment.' },
+            { question: 'What local costs should Houston operators stress-test?', answer: 'Insurance, flooding exposure, and summer utilities. Those lines move. Keep invoices with the property, not in a personal inbox.' },
+            { question: 'Is Texas franchise or margin tax part of a Houston rental conversation?', answer: 'Entity choice can drag state-level filings into the year. Ask the CPA which forms the structure actually creates before you file an election to look busy.' },
+        ],
+    },
+    'seattle-wa': {
+        taxReality: 'Washington has no wage income tax in the classic sense, but Seattle operators still live with B&O, city rules, and labor costs that eat the federal deduction if you ignore them.',
+        operatorDay: 'Cruise summer and tech weekdays are different seasons. A Capitol Hill permit problem is not solved by a cost segregation PDF.',
+        faqs: [
+            { question: 'Does Washington’s tax system make Seattle STRs “tax free”?', answer: 'No. You still have federal tax, local licensing, and business-and-occupation type friction depending on how you operate. Model the city rules with the CPA, not from a slogan.' },
+            { question: 'Why do Seattle margins compress even when ADR looks high?', answer: 'Labor, cleaner coverage, and neighborhood rules. Premium guests still need a premium operation. Budget people, not just furniture.' },
+            { question: 'What mixed-use issue shows up in Seattle?', answer: 'Owners who use the unit during cruise season and still want a full-year rental story. Log personal days.' },
+            { question: 'When should a Seattle host delay depreciation planning?', answer: 'When the listing cannot staff winters, or when the city rule set is still unresolved. Unstable operations make a beautiful tax memo into fiction.' },
+        ],
+    },
+    'portland-or': {
+        taxReality: 'Oregon tax plus conservative occupancy is the Portland file. Flashy national STR tactics usually fail here because the peak window is shorter than the Instagram caption.',
+        operatorDay: 'Food and event weekends help. Shoulder months decide whether you keep the cleaner. Document that cadence before you talk QBI or cost seg.',
+        faqs: [
+            { question: 'Why is Portland called a discipline market in this guide?', answer: 'Because demand pockets are real and also easy to overstate. Records, reserves, and a base occupancy that works off-peak matter more than a peak-weekend ADR screenshot.' },
+            { question: 'How does Oregon state tax change the plan?', answer: 'It is part of the after-tax yield. Do not import a no-income-tax-state memo. Run Oregon and federal together.' },
+            { question: 'What should a Portland operator put in the 90-day file?', answer: 'A written occupancy base case, vendor contracts, and a reimbursement log if you self-manage. Those three items make the CPA conversation useful.' },
+            { question: 'Is aggressive scaling a good tax strategy in Portland?', answer: 'Usually not. Adding units before the first listing has clean books just multiplies a process problem. Get one file right.' },
+        ],
+    },
+};
 
-const COMPARISONS = [
-    {
-        slug: 'cost-segregation-vs-bonus-depreciation',
-        title: 'Cost Segregation vs Bonus Depreciation',
-        description: 'Use this decision guide when you need to know whether the study itself is the value driver or whether the property already qualifies for a cleaner first-year deduction approach.',
-        s1: 'cost-segregation',
-        s2: 'bonus-depreciation',
-        quickTake: 'Cost segregation is a study-driven acceleration tool. Bonus depreciation is a timing rule. They often work together, but the sequencing and economics still matter.',
-    },
-    {
-        slug: '1031-exchange-vs-opportunity-zones',
-        title: '1031 Exchange vs Opportunity Zones',
-        description: 'A choice framework for investors deciding whether to preserve flexibility through like-kind exchange rules or accept a more constrained structure for a different deferral profile.',
-        s1: '1031-exchange',
-        s2: 'opportunity-zones',
-        quickTake: 'A 1031 exchange usually wins when you want continuity inside active real estate. Opportunity Zones can fit when deferral is only one part of a longer-term redevelopment or fund thesis.',
-    },
-    {
-        slug: 'real-estate-professional-vs-str-loophole',
-        title: 'Real Estate Professional Status vs STR Loophole',
-        description: 'Use this page when you are trying to decide whether your hours, stay lengths, and operating role support a status-based approach or a short-term-rental participation strategy.',
-        s1: 'real-estate-professional-status',
-        s2: 'short-term-rental-loophole',
-        quickTake: 'REPS is a broad status with strict hour tests. The STR loophole is narrower but can be more practical for owners whose average stays and participation records already fit.',
-    },
-    {
-        slug: 's-corp-vs-qbi-deduction',
-        title: 'S-Corp vs QBI Deduction',
-        description: 'A decision page for owners who need to separate payroll and entity choices from the deduction rules that may apply after the entity choice is already made.',
-        s1: 's-corp-strategy',
-        s2: 'qualified-business-income-deduction',
-        quickTake: 'An S-corp is an operating structure. QBI is a deduction framework. The right decision depends on payroll reality, profit level, and what administrative burden you can actually sustain.',
-    },
-    {
-        slug: 'donor-advised-fund-vs-charitable-trust',
-        title: 'Donor-Advised Fund vs Charitable Trust',
-        description: 'A choice framework for households deciding whether simple donation batching is enough or whether they need a more complex charitable structure tied to larger appreciated assets.',
-        s1: 'donor-advised-fund',
-        s2: 'charitable-remainder-trust',
-        quickTake: 'A donor-advised fund is usually the simpler execution path. A charitable trust can make sense when asset size, income objectives, and estate planning complexity justify it.',
-    },
-];
-
-// Renters insurance by state (NAIC 2021 baseline via Insurance Information Institute).
-// Nearby states used for side-by-side comparison on each state page.
 const RENTERS_NEIGHBORS = {
     AL: ['GA', 'MS', 'TN'],
     AK: ['WA', 'OR', 'ID'],
@@ -499,8 +432,6 @@ const RENTERS_NEIGHBORS = {
     WY: ['CO', 'MT', 'SD'],
 };
 
-// General-context notes for the four factors that drive renters insurance pricing.
-// These are qualitative descriptions, not fabricated statistics.
 const RENTERS_STATE_CONTEXT = {
     AL: { weather: 'severe storms and tornadoes drive more frequent claims', claims: 'weather-driven claims dominate and disputes are uncommon', replacement: 'replacement costs are moderate', competition: 'a solid mix of national carriers keeps pricing competitive' },
     AK: { weather: 'extreme cold and remote locations make any claim more expensive to handle', claims: 'claim frequency is low because few renters policies are written', replacement: 'shipping and labor costs push replacement values up', competition: 'fewer carriers write coverage in the state, which limits price pressure' },
@@ -585,11 +516,11 @@ function slugForCity(city, state) {
     return `${city.toLowerCase().replace(/\s+/g, '-')}-${state.toLowerCase()}`;
 }
 
-function programmaticUrl(section, slug) {
-    if (!section) {
-        return 'https://www.legacyinvestingshow.com/programmatic-pages';
+function loadRentersGuides() {
+    if (!fs.existsSync(RENTERS_GUIDES_PATH)) {
+        return {};
     }
-    return `https://www.legacyinvestingshow.com/programmatic-pages/${section}/${slug}`;
+    return loadJson(RENTERS_GUIDES_PATH);
 }
 
 function renderHeader(activeHref) {
@@ -641,10 +572,10 @@ function renderFooter() {
 
 function renderStyles() {
     return `<style>
-        .programmatic-main {
+        .resource-main {
             padding-top: 5rem;
         }
-        .programmatic-hero {
+        .resource-hero {
             padding: 4.5rem 0 3rem;
             background:
                 radial-gradient(circle at top right, rgba(5, 150, 105, 0.18), transparent 28%),
@@ -966,7 +897,7 @@ ${renderHead(page)}
     ${renderAnalyticsBody({ gtmContainerId: GTM_CONTAINER_ID })}
     <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-gray-900 text-white px-4 py-2 z-50">Skip to main content</a>
     ${renderHeader(page.activeHref || '/tax-strategies')}
-    <main id="main" class="programmatic-main">
+    <main id="main" class="resource-main">
         ${page.body}
     </main>
     ${renderFooter()}
@@ -1123,7 +1054,10 @@ function renderList(items, className) {
     return `<ul class="${className}">${items.map((item) => `<li>${esc(item)}</li>`).join('')}</ul>`;
 }
 
-function buildCityFaqs(cityData, cityContext) {
+function buildCityFaqs(cityData, cityContext, cityLocal) {
+    if (cityLocal && Array.isArray(cityLocal.faqs) && cityLocal.faqs.length > 0) {
+        return cityLocal.faqs;
+    }
     return [
         {
             question: `What usually matters more in ${cityData.city}: tax strategy or operations?`,
@@ -1137,12 +1071,17 @@ function buildCityFaqs(cityData, cityContext) {
             question: `What records should a ${cityData.city} operator keep before filing?`,
             answer: `Keep a property-level file with purchase documents, repair records, cleaner and vendor invoices, stay-length data, mileage or time logs where relevant, and any local compliance documents that support the operating model.`,
         },
+        {
+            question: `Is ${cityData.city} a better tax market than a better operating market?`,
+            answer: `Lead with operations. ${cityData.notes} That profile has to work before depreciation or entity choices change the outcome.`,
+        },
     ];
 }
 
 function renderCityPage(cityData, strategyMap) {
     const slug = slugForCity(cityData.city, cityData.state);
     const cityContext = CITY_CONTEXT[slug];
+    const cityLocal = CITY_LOCAL[slug] || {};
     const stateContext = STATE_CONTEXT[cityData.state];
     if (!cityContext || !stateContext) {
         throw new Error(`Missing city or state context for ${slug}`);
@@ -1150,7 +1089,7 @@ function renderCityPage(cityData, strategyMap) {
 
     const title = `${cityData.city}, ${cityData.state} Tax Strategy Guide for Investors and Operators`;
     const description = `A practical tax-planning guide for ${cityData.city} operators: market context, deduction priorities, documentation habits, and the mistakes that usually break the model.`;
-    const canonical = programmaticUrl('cities', slug);
+    const canonical = siteUrl(marketPath(slug));
     const resources = cityResourcePlan(cityContext);
     const resourceReasons = [
         `Use ${resolveResource(resources[0], strategyMap).title.toLowerCase()} when the property profile and hold period actually support it in ${cityData.city}.`,
@@ -1163,11 +1102,11 @@ function renderCityPage(cityData, strategyMap) {
         .filter((entry) => entry.region === cityData.region && entry.city !== cityData.city)
         .map((entry) => ({
             name: `${entry.city}, ${entry.state}`,
-            href: `/programmatic-pages/cities/${slugForCity(entry.city, entry.state)}`,
+            href: marketPath(slugForCity(entry.city, entry.state)),
             description: `See how the planning lens shifts in ${entry.city} with a different demand mix and operator profile.`,
         }));
-    const faqItems = buildCityFaqs(cityData, cityContext);
-    const body = `<section class="programmatic-hero">
+    const faqItems = buildCityFaqs(cityData, cityContext, cityLocal);
+    const body = `<section class="resource-hero">
     <div class="container-custom hero-grid">
         <div>
             <span class="eyebrow">${esc(cityData.region)} market guide</span>
@@ -1194,6 +1133,8 @@ function renderCityPage(cityData, strategyMap) {
             <p>${esc(cityContext.summary)}</p>
             <p>${esc(stateContext.executionFocus)}</p>
             <p>Use this page as a market-specific filter: decide whether the demand drivers, local friction, and documentation burden fit the strategy stack you want to use.</p>
+            ${cityLocal.taxReality ? `<p>${esc(cityLocal.taxReality)}</p>` : ''}
+            ${cityLocal.operatorDay ? `<p>${esc(cityLocal.operatorDay)}</p>` : ''}
         </div>
         <div class="surface">
             <h2 class="section-title">Execution checklist</h2>
@@ -1257,7 +1198,7 @@ function renderCityPage(cityData, strategyMap) {
             <h2 class="section-title" style="color:white;">Need a city-specific second opinion?</h2>
             <p>Use this market lens to narrow the real questions first, then take the final structure, participation, and filing questions to an advisor who can review your facts.</p>
             <div class="cta-actions">
-                <a class="cta-button" href="/programs">See programs</a>
+                <a class="cta-button" href="/tax-strategies-101">See programs</a>
                 <a class="ghost-button" href="/tax-strategies">Open tax strategy hub</a>
             </div>
         </div>
@@ -1273,308 +1214,41 @@ function renderCityPage(cityData, strategyMap) {
             articleSchema(title, description, canonical, `${cityData.city}, ${cityData.state}, tax planning, real estate, operators`),
             breadcrumbSchema([
                 { name: 'Home', item: 'https://www.legacyinvestingshow.com/' },
-                { name: 'Programmatic Pages', item: programmaticUrl('', '') },
+                { name: 'Market guides', item: siteUrl(marketPath()) },
                 { name: `${cityData.city}, ${cityData.state}`, item: canonical },
             ]),
             faqSchema(faqItems),
         ],
-        pageType: 'programmatic_city',
+        pageType: 'market_city',
         body,
     });
 
-    fs.writeFileSync(path.join(OUTPUT_DIR, 'cities', `${slug}.html`), page);
+    fs.writeFileSync(path.join(MARKETS_DIR, `${slug}.html`), page);
 }
 
-function renderPersonaPage(persona, strategyMap) {
-    const title = persona.title;
-    const description = persona.description;
-    const canonical = programmaticUrl('personas', persona.slug);
-    const faqItems = [
-        {
-            question: `How is this page different from the core ${persona.slug.replace(/-/g, ' ')} strategy page?`,
-            answer: 'This page is a sequencing and execution lens. It helps you decide what to do first, what to ignore, and what records need to exist before the higher-level strategy list becomes useful.',
-        },
-        {
-            question: 'Should you use every strategy shown here in the same year?',
-            answer: 'No. The point is to narrow the next one or two decisions that materially change your position. More strategies do not automatically mean a better return or a cleaner filing.',
-        },
-        {
-            question: 'What is the fastest way to improve the quality of a tax plan?',
-            answer: 'Tighten the facts first: bookkeeping, reimbursement records, hold period assumptions, payroll reality, and clean supporting documents. Most bad tax plans fail there before they fail on the statute.',
-        },
-    ];
-    const body = `<section class="programmatic-hero">
-    <div class="container-custom hero-grid">
-        <div>
-            <span class="eyebrow">Decision workflow</span>
-            <h1 class="hero-title">${esc(title)}</h1>
-            <p class="hero-copy">${esc(description)}</p>
-        </div>
-        <aside class="hero-panel">
-            <h2>Where this page fits</h2>
-            <p>Use this page when the problem is sequencing, not awareness. You already know there are strategies available. The real question is what belongs first, what requires setup, and what will only create noise right now.</p>
-        </aside>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container-custom section-grid">
-        <div class="surface">
-            <h2 class="section-title">Pressure points for this persona</h2>
-            ${renderList(persona.pressurePoints, 'bullet-list')}
-        </div>
-        <div class="surface">
-            <h2 class="section-title">The authority page to keep nearby</h2>
-            <p>This page is the workflow layer. For the authoritative strategy list and main category framing, keep the core page open too.</p>
-            <p><a class="inline-link" href="${esc(persona.authorityHref)}">${esc(persona.authorityLabel)}</a></p>
-        </div>
-    </div>
-</section>
-
-<section class="section section--alt">
-    <div class="container-custom">
-        <h2 class="section-title">Recommended resource stack</h2>
-        <p class="section-copy">The stack below is intentionally small. The goal is to reduce decision clutter and push you toward the resources that usually change the next move for this persona.</p>
-        <div class="card-grid">
-            ${renderResourceCards(persona.resources, strategyMap, persona.pressurePoints)}
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container-custom section-grid">
-        <div class="surface">
-            <h2 class="section-title">30-day workflow</h2>
-            <ol class="checklist">
-                ${persona.workflow.map((item) => `<li>${esc(item)}</li>`).join('')}
-            </ol>
-        </div>
-        <div class="surface">
-            <h2 class="section-title">What usually goes wrong</h2>
-            ${renderList(persona.mistakes, 'bullet-list')}
-        </div>
-    </div>
-</section>
-
-<section class="section section--alt">
-    <div class="container-custom">
-        <h2 class="section-title">Questions to ask before you escalate complexity</h2>
-        <div class="faq-grid">
-            ${faqItems.map((item) => `<article class="faq-card"><h3>${esc(item.question)}</h3><p>${esc(item.answer)}</p></article>`).join('')}
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container-custom">
-        <div class="cta-box">
-            <h2 class="section-title" style="color:white;">Use this like an operator, not a collector</h2>
-            <p>Pick the next move that changes your tax position cleanly, then ignore the rest until your records, cash flow, and advisor bandwidth can support another layer.</p>
-            <div class="cta-actions">
-                <a class="cta-button" href="${esc(persona.authorityHref)}">Open the core page</a>
-                <a class="ghost-button" href="/blog">Read case studies</a>
-            </div>
-        </div>
-    </div>
-</section>`;
-
-    const page = renderLayout({
-        title,
-        description,
-        canonical,
-        keywords: `${persona.slug.replace(/-/g, ' ')}, tax planning workflow, decision framework, deductions, execution`,
-        schemaBlocks: [
-            articleSchema(title, description, canonical, `${persona.slug}, tax workflow, decision framework`),
-            breadcrumbSchema([
-                { name: 'Home', item: 'https://www.legacyinvestingshow.com/' },
-                { name: 'Programmatic Pages', item: programmaticUrl('', '') },
-                { name: title, item: canonical },
-            ]),
-            faqSchema(faqItems),
-        ],
-        pageType: 'programmatic_persona',
-        body,
-    });
-
-    fs.writeFileSync(path.join(OUTPUT_DIR, 'personas', `${persona.slug}.html`), page);
-}
-
-function comparisonRows(a, b) {
-    return [
-        ['Best when', a.bestFor || 'The asset or operating model clearly matches the rule set.', b.bestFor || 'The structure fits the objective and the paperwork burden is justified.'],
-        ['Potential upside', a.potentialSavings || 'Meaningful tax leverage when facts line up.', b.potentialSavings || 'Meaningful tax leverage when facts line up.'],
-        ['Complexity', a.complexity || 'Varies by facts and documentation quality.', b.complexity || 'Varies by facts and documentation quality.'],
-        ['Execution risk', 'Usually comes from bad assumptions or weak records.', 'Usually comes from bad assumptions or weak records.'],
-        ['Professional help', 'Useful when the move changes filing posture or documentation burden materially.', 'Useful when the move changes filing posture or documentation burden materially.'],
-    ];
-}
-
-function renderComparisonPage(config, strategyMap) {
-    const left = resolveResource(config.s1, strategyMap);
-    const right = resolveResource(config.s2, strategyMap);
-    const canonical = programmaticUrl('comparisons', config.slug);
-    const faqItems = [
-        {
-            question: `Can ${left.title} and ${right.title} ever work together?`,
-            answer: 'Sometimes yes, but only when the sequencing is clean and the paperwork burden is manageable. A combination is not automatically better than a cleaner single-path decision.',
-        },
-        {
-            question: 'What should decide the choice first?',
-            answer: 'Start with the real-world objective: current-year deduction, exit flexibility, documentation capacity, and hold period. Strategy labels are secondary to those constraints.',
-        },
-        {
-            question: 'What is the most common mistake in comparison pages like this?',
-            answer: 'People compare the headlines and skip the operating facts. The right answer usually depends on timing, records, and what you are actually trying to optimize.',
-        },
-    ];
-    const body = `<section class="programmatic-hero">
-    <div class="container-custom hero-grid">
-        <div>
-            <span class="eyebrow">Decision comparison</span>
-            <h1 class="hero-title">${esc(config.title)}</h1>
-            <p class="hero-copy">${esc(config.description)}</p>
-        </div>
-        <aside class="hero-panel">
-            <h2>Quick take</h2>
-            <p>${esc(config.quickTake)}</p>
-        </aside>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container-custom">
-        <h2 class="section-title">Side-by-side decision frame</h2>
-        <div class="surface" style="overflow-x:auto;">
-            <table class="comparison-table">
-                <thead>
-                    <tr>
-                        <th>Question</th>
-                        <th>${esc(left.title)}</th>
-                        <th>${esc(right.title)}</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    ${comparisonRows(left, right).map((row) => `<tr><td>${esc(row[0])}</td><td>${esc(row[1])}</td><td>${esc(row[2])}</td></tr>`).join('')}
-                </tbody>
-            </table>
-        </div>
-    </div>
-</section>
-
-<section class="section section--alt">
-    <div class="container-custom section-grid">
-        <div class="surface">
-            <h2 class="section-title">When ${esc(left.title)} tends to win</h2>
-            <p>${esc(left.description || 'It usually wins when the facts directly fit the rules and the strategy supports the underlying business or investment objective.')}</p>
-            <p>Use the structure when the operating facts, timeline, and documentation burden all reinforce the decision instead of fighting it.</p>
-            <p><a class="inline-link" href="${esc(left.href)}">Open ${esc(left.title)}</a></p>
-        </div>
-        <div class="surface">
-            <h2 class="section-title">When ${esc(right.title)} tends to win</h2>
-            <p>${esc(right.description || 'It usually wins when the investor or operator needs a cleaner fit for the actual goal, timing, or recordkeeping capacity.')}</p>
-            <p>Use the structure when it solves the real constraint rather than just sounding more advanced.</p>
-            <p><a class="inline-link" href="${esc(right.href)}">Open ${esc(right.title)}</a></p>
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container-custom section-grid">
-        <div class="surface">
-            <h2 class="section-title">Questions to answer before choosing</h2>
-            ${renderList([
-                'What is the actual objective: current-year deduction, exit flexibility, audit defensibility, or long-term compounding?',
-                'Can the records, advisors, and operator behavior support the more complex option?',
-                'Will the strategy still make sense if the market or hold period changes?',
-            ], 'bullet-list')}
-        </div>
-        <div class="surface">
-            <h2 class="section-title">Mistakes that create regret</h2>
-            ${renderList([
-                'Choosing the more complicated option because it sounds more powerful.',
-                'Ignoring the time and paperwork needed to defend the choice later.',
-                'Letting a tax headline override a weak investment or business thesis.',
-            ], 'bullet-list')}
-        </div>
-    </div>
-</section>
-
-<section class="section section--alt">
-    <div class="container-custom">
-        <h2 class="section-title">FAQ</h2>
-        <div class="faq-grid">
-            ${faqItems.map((item) => `<article class="faq-card"><h3>${esc(item.question)}</h3><p>${esc(item.answer)}</p></article>`).join('')}
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container-custom">
-        <div class="cta-box">
-            <h2 class="section-title" style="color:white;">Still split between the two?</h2>
-            <p>Write down the decision objective, the record burden, and the realistic exit or hold period before you ask a CPA to model the numbers. That will usually cut the answer time in half.</p>
-            <div class="cta-actions">
-                <a class="cta-button" href="${esc(left.href)}">Review ${esc(left.title)}</a>
-                <a class="ghost-button" href="${esc(right.href)}">Review ${esc(right.title)}</a>
-            </div>
-        </div>
-    </div>
-</section>`;
-
-    const page = renderLayout({
-        title: config.title,
-        description: config.description,
-        canonical,
-        keywords: `${config.title}, comparison, tax strategy, decision guide`,
-        schemaBlocks: [
-            articleSchema(config.title, config.description, canonical, `${config.slug}, comparison, tax planning`),
-            breadcrumbSchema([
-                { name: 'Home', item: 'https://www.legacyinvestingshow.com/' },
-                { name: 'Programmatic Pages', item: programmaticUrl('', '') },
-                { name: config.title, item: canonical },
-            ]),
-            faqSchema(faqItems),
-        ],
-        pageType: 'programmatic_comparison',
-        body,
-    });
-
-    fs.writeFileSync(path.join(OUTPUT_DIR, 'comparisons', `${config.slug}.html`), page);
-}
-
-function renderIndexPage(cities, personas, comparisons) {
-    const canonical = programmaticUrl('', '');
-    const title = 'Tax Strategy Resource Maps by City, Persona, and Comparison';
-    const description = 'Browse city guides, persona workflows, and side-by-side strategy comparisons to find the next best tax-planning decision without wading through generic boilerplate.';
+function renderMarketsHub(cities) {
+    const canonical = siteUrl(marketPath());
+    const title = 'City Tax Strategy Guides for Investors and Operators';
+    const description = 'Market-by-market tax and operating guides for Austin, Nashville, Miami, and other high-intent short-term rental cities, written as decision pages rather than cloned templates.';
     const cityEntries = cities.map((city) => ({
         name: `${city.city}, ${city.state}`,
-        url: programmaticUrl('cities', slugForCity(city.city, city.state)),
+        url: marketPath(slugForCity(city.city, city.state)),
         summary: CITY_CONTEXT[slugForCity(city.city, city.state)].summary,
     }));
-    const personaEntries = personas.map((persona) => ({
-        name: persona.title,
-        url: programmaticUrl('personas', persona.slug),
-        summary: persona.description,
-    }));
-    const comparisonEntries = comparisons.map((comparison) => ({
-        name: comparison.title,
-        url: programmaticUrl('comparisons', comparison.slug),
-        summary: comparison.quickTake,
-    }));
-    const body = `<section class="programmatic-hero">
+    const body = `<section class="resource-hero">
     <div class="container-custom hero-grid">
         <div>
-            <span class="eyebrow">Resource hub</span>
+            <span class="eyebrow">Market guides</span>
             <h1 class="hero-title">${esc(title)}</h1>
-            <p class="hero-copy">${esc(description)}</p>
+            <p class="hero-copy">These pages exist because a deduction stack that works in Austin can fail in Miami. Local rules, insurance, seasonality, and stay-length mix change the operating facts before they change the tax return.</p>
         </div>
         <aside class="hero-panel">
-            <h2>How to use this hub</h2>
-            <p>Start with the filter that matches the decision in front of you:</p>
+            <h2>How to use these guides</h2>
+            <p>Pick the city you are actually underwriting. Then read the operating facts before you open a strategy page.</p>
             ${renderList([
-                'Use city guides when market context changes the execution risk.',
-                'Use persona pages when the issue is sequencing and fit.',
-                'Use comparison pages when two strategies seem plausible and you need a decision frame.',
+                'Start with demand and local rules, not with the largest deduction name.',
+                'Use the strategy stack as a filter, not as a shopping list.',
+                'Compare a neighboring city only after your base-case occupancy is written down.',
             ], 'bullet-list')}
         </aside>
     </div>
@@ -1591,18 +1265,12 @@ function renderIndexPage(cities, personas, comparisons) {
 
 <section class="section section--alt">
     <div class="container-custom">
-        <h2 class="section-title">Persona workflows</h2>
+        <h2 class="section-title">Related decision pages</h2>
         <div class="hub-list">
-            ${personaEntries.map((entry) => `<a href="${esc(entry.url)}"><strong>${esc(entry.name)}</strong><span>${esc(entry.summary)}</span></a>`).join('')}
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container-custom">
-        <h2 class="section-title">Comparison pages</h2>
-        <div class="hub-list">
-            ${comparisonEntries.map((entry) => `<a href="${esc(entry.url)}"><strong>${esc(entry.name)}</strong><span>${esc(entry.summary)}</span></a>`).join('')}
+            <a href="/tax-strategies"><strong>Tax strategy library</strong><span>Core deduction, entity, and real estate tax pages.</span></a>
+            <a href="/tax-strategies/for/airbnb-hosts"><strong>Tax strategies for Airbnb hosts</strong><span>The host-specific sequencing page, not a cloned market template.</span></a>
+            <a href="/compare"><strong>Compare guides</strong><span>Head-to-head decisions when two strategies both sound plausible.</span></a>
+            <a href="/renters-insurance"><strong>Renters insurance by state</strong><span>State-level premium baselines and local coverage notes.</span></a>
         </div>
     </div>
 </section>
@@ -1610,8 +1278,8 @@ function renderIndexPage(cities, personas, comparisons) {
 <section class="section">
     <div class="container-custom">
         <div class="cta-box">
-            <h2 class="section-title" style="color:white;">Want the full core library?</h2>
-            <p>This hub narrows decisions. The main strategy library holds the core pages, deeper explanations, and broader category coverage.</p>
+            <h2 class="section-title" style="color:white;">Use the city as a filter, then get specific</h2>
+            <p>A market guide should narrow the next question. Take that question to the strategy library or to a CPA with a property-level file, not with a screenshot of someone else's occupancy.</p>
             <div class="cta-actions">
                 <a class="cta-button" href="/tax-strategies">Open tax strategy hub</a>
                 <a class="ghost-button" href="/blog">Open blog</a>
@@ -1624,28 +1292,24 @@ function renderIndexPage(cities, personas, comparisons) {
         title,
         description,
         canonical,
-        keywords: 'tax strategy hub, city tax guides, persona tax planning, strategy comparisons',
+        keywords: 'city tax guides, short-term rental markets, Austin tax strategy, Miami STR taxes, real estate market guides',
         type: 'website',
         schemaBlocks: [
-            collectionSchema(title, description, canonical, [...cityEntries, ...personaEntries, ...comparisonEntries]),
+            collectionSchema(title, description, canonical, cityEntries),
             breadcrumbSchema([
                 { name: 'Home', item: 'https://www.legacyinvestingshow.com/' },
-                { name: 'Programmatic Pages', item: canonical },
+                { name: 'Market guides', item: canonical },
             ]),
         ],
-        pageType: 'programmatic_hub',
+        pageType: 'markets_hub',
         body,
     });
 
-    fs.writeFileSync(path.join(OUTPUT_DIR, 'index.html'), page);
+    fs.writeFileSync(path.join(MARKETS_DIR, 'index.html'), page);
 }
 
 function slugForStateName(name) {
     return String(name || '').toLowerCase().replace(/\s+/g, '-');
-}
-
-function rentersInsuranceUrl(slug) {
-    return `https://www.legacyinvestingshow.com/programmatic-pages/insurance/${slug}`;
 }
 
 function premiumVsUs(premium, usAverage) {
@@ -1679,25 +1343,42 @@ function renderPremiumTable(rows, usAverage) {
     </table>`;
 }
 
+function rentersGuide(abbreviation, guides) {
+    return guides[abbreviation] || null;
+}
+
+function renderFaqCards(items) {
+    return items.map((item) => `<article class="faq-card"><h3>${esc(item.question || item.q)}</h3><p>${esc(item.answer || item.a)}</p></article>`).join('');
+}
+
+function normalizeFaqs(rawFaqs, fallback) {
+    const items = Array.isArray(rawFaqs) ? rawFaqs : [];
+    const mapped = items.map((item) => ({
+        question: item.question || item.q,
+        answer: item.answer || item.a,
+    })).filter((item) => item.question && item.answer);
+    return mapped.length > 0 ? mapped : fallback;
+}
+
 function renderInsuranceHubPage(stateEntries, usEntry) {
     const usAverage = usEntry.averageAnnualPremium;
-    const canonical = rentersInsuranceUrl('renters-by-state');
+    const canonical = siteUrl(rentersInsurancePath());
     const title = 'Average Renters Insurance Cost by State (2026)';
     const description = 'Compare average renters insurance costs in all 50 states and Washington, DC, against the $170 US average (NAIC 2021 baseline from the Insurance Information Institute).';
-    const body = `<section class="programmatic-hero">
+    const body = `<section class="resource-hero">
     <div class="container-custom hero-grid">
         <div>
             <span class="eyebrow">Insurance research</span>
             <h1 class="hero-title">${esc(title)}</h1>
-            <p class="hero-copy">Renters insurance protects your personal property, your liability, and your additional living costs when you rent. The average annual premium in the United States is about $${usAverage}. This page compares every state's average against that baseline so you can see where coverage tends to cost more and where it tends to cost less.</p>
+            <p class="hero-copy">Renters insurance protects your stuff, your liability, and a hotel bill if a fire or burst pipe puts you out of the apartment. The US average in the NAIC 2021 baseline is about $${usAverage} a year. State pages below turn that table into local context: weather, landlord norms, and what a realistic quote fight looks like in that market.</p>
         </div>
         <aside class="hero-panel">
             <h2>How to use this table</h2>
-            <p>The figures are state averages, not quotes. Your premium depends on your city, coverage limits, deductible, and claims history.</p>
+            <p>These are state averages, not quotes. Your number moves with ZIP code, contents limit, deductible, and claims history.</p>
             ${renderList([
-                'Find your state in the table and read its average annual premium.',
-                'Check the column that compares each state with the $' + usAverage + ' US average.',
-                'Open your state page to see how nearby states compare.',
+                'Find your state and note the gap versus the $' + usAverage + ' US average.',
+                'Open the state page for weather, landlord norms, and a worked example.',
+                'Then run the calculator with your actual contents limit instead of guessing from the average.',
             ], 'bullet-list')}
         </aside>
     </div>
@@ -1706,7 +1387,7 @@ function renderInsuranceHubPage(stateEntries, usEntry) {
 <section class="section">
     <div class="container-custom">
         <h2 class="section-title">Average renters insurance cost by state</h2>
-        <p class="section-copy">Sorted alphabetically. A minus sign means the state's average is below the US average; a plus sign means it is above.</p>
+        <p class="section-copy">Sorted alphabetically. A minus sign means the state's average is below the US average. Texas sits at the top of the table. Idaho sits near the bottom. The gap is mostly weather, claims, and replacement cost, not a mysterious "state fee."</p>
         <div style="margin-top: 1.5rem;">
             ${renderPremiumTable([
                 { name: 'United States (national average)', premium: usAverage, vs: 'baseline' },
@@ -1714,7 +1395,7 @@ function renderInsuranceHubPage(stateEntries, usEntry) {
                     name: entry.state,
                     premium: entry.averageAnnualPremium,
                     vs: premiumVsUs(entry.averageAnnualPremium, usAverage),
-                    href: `/programmatic-pages/insurance/renters-${slugForStateName(entry.state)}`,
+                    href: rentersInsurancePath(slugForStateName(entry.state)),
                 })),
             ], usAverage)}
         </div>
@@ -1726,10 +1407,10 @@ function renderInsuranceHubPage(stateEntries, usEntry) {
     <div class="container-custom">
         <h2 class="section-title">What drives renters insurance prices</h2>
         <div class="card-grid">
-            <article class="info-card"><h3>Claim frequency and litigation</h3><p>States with more claims, or with a more active litigation climate, tend to have higher average premiums.</p></article>
-            <article class="info-card"><h3>Replacement costs</h3><p>Where it costs more to replace your belongings, insurers charge more for the same coverage.</p></article>
-            <article class="info-card"><h3>Weather exposure</h3><p>Hurricanes, tornadoes, hail, wildfires, and winter storms all shape loss patterns and pricing.</p></article>
-            <article class="info-card"><h3>Carrier competition</h3><p>States with more competing insurers usually see lower prices; thin markets tend to run higher.</p></article>
+            <article class="info-card"><h3>Claim frequency and litigation</h3><p>States with more theft, fire, and lawsuit activity price the same $20,000 contents limit higher because the pool loses more money.</p></article>
+            <article class="info-card"><h3>Replacement costs</h3><p>If it costs more to replace a sofa in Boston than in Boise, the premium follows. Shipping-heavy states show the same pattern.</p></article>
+            <article class="info-card"><h3>Weather exposure</h3><p>Hail, wind, freeze bursts, and wildfire smoke claims all show up in renters books. Flood and earthquake usually do not, which is why those need separate decisions.</p></article>
+            <article class="info-card"><h3>Carrier competition</h3><p>A crowded market can hold prices down. A thin market, or one where carriers have pulled back, does the opposite.</p></article>
         </div>
     </div>
 </section>
@@ -1767,28 +1448,29 @@ function renderInsuranceHubPage(stateEntries, usEntry) {
         schemaBlocks: [
             collectionSchema(title, description, canonical, stateEntries.map((entry) => ({
                 name: entry.state,
-                url: rentersInsuranceUrl(`renters-${slugForStateName(entry.state)}`),
+                url: siteUrl(rentersInsurancePath(slugForStateName(entry.state))),
             }))),
             breadcrumbSchema([
                 { name: 'Home', item: 'https://www.legacyinvestingshow.com/' },
                 { name: 'Renters insurance cost by state', item: canonical },
             ]),
         ],
-        pageType: 'programmatic_renters_hub',
+        pageType: 'renters_hub',
         activeHref: '/tools',
         body,
     });
 
-    fs.writeFileSync(path.join(OUTPUT_DIR, 'insurance', 'renters-by-state.html'), page);
+    fs.writeFileSync(path.join(RENTERS_DIR, 'index.html'), page);
 }
 
-function renderRentersStatePage(entry, entriesByAbbr, usEntry) {
+function renderRentersStatePage(entry, entriesByAbbr, usEntry, guides) {
     const usAverage = usEntry.averageAnnualPremium;
     const name = entry.state;
-    const slug = `renters-${slugForStateName(name)}`;
+    const stateSlug = slugForStateName(name);
     const title = `Renters Insurance Cost in ${name} (2026 Average)`;
-    const canonical = rentersInsuranceUrl(slug);
+    const canonical = siteUrl(rentersInsurancePath(stateSlug));
     const context = RENTERS_STATE_CONTEXT[entry.abbreviation];
+    const guide = rentersGuide(entry.abbreviation, guides);
     const neighbors = (RENTERS_NEIGHBORS[entry.abbreviation] || [])
         .map((abbr) => entriesByAbbr.get(abbr))
         .filter(Boolean);
@@ -1798,9 +1480,53 @@ function renderRentersStatePage(entry, entriesByAbbr, usEntry) {
         : diff > 0
             ? `about $${diff} more than`
             : `about $${Math.abs(diff)} less than`;
-    const description = `${name} renters insurance averages about $${entry.averageAnnualPremium} a year (NAIC 2021) — ${premiumProse(entry.averageAnnualPremium, usAverage)}. Estimate your own quote.`;
+    const description = `${name} renters insurance averages about $${entry.averageAnnualPremium} a year (NAIC 2021), ${premiumProse(entry.averageAnnualPremium, usAverage)}. Local context, a worked example, and what the average misses.`;
     const intro = `${name} renters paid about $${entry.averageAnnualPremium} a year on average in the NAIC 2021 baseline, ${diffPhrase} the $${usAverage} US average.`;
-    const body = `<section class="programmatic-hero">
+    const cities = (guide && guide.cities) || [];
+    const cityLine = cities.length
+        ? `Most shopping conversations in ${name} start in ${cities.slice(0, 3).join(', ')}.`
+        : `Quotes inside ${name} still split by city even when the statewide average looks simple.`;
+    const fallbackFaqs = [
+        {
+            question: `How much is renters insurance in ${name}?`,
+            answer: `${intro} Treat that as a comparison band. A downtown ZIP with higher theft or replacement costs can price above the average even when the state overall sits ${premiumProse(entry.averageAnnualPremium, usAverage)}.`,
+        },
+        {
+            question: `Does a ${name} landlord usually require renters insurance?`,
+            answer: guide && guide.leaseNorm
+                ? guide.leaseNorm
+                : `Many leases ask for liability coverage and to be listed as an interested party. Read the lease. The state average does not waive a landlord's requirement.`,
+        },
+        {
+            question: `Does ${name} renters insurance cover flood or earthquake?`,
+            answer: `Standard renters policies are built around fire, theft, some weather, and liability. Flood is a separate conversation. Earthquake usually needs a rider. Buy the policy for the perils that actually hit ${name}, then fill gaps on purpose.`,
+        },
+        {
+            question: `How should I use the $${entry.averageAnnualPremium} ${name} average?`,
+            answer: `Use it to spot a quote that is wildly off-market. Then price your own contents inventory, pick a deductible you can pay tomorrow, and run the calculator instead of rounding to the state mean.`,
+        },
+    ];
+    const faqItems = normalizeFaqs(guide && guide.faqs, fallbackFaqs);
+    const uniqueBlocks = [];
+    if (guide && guide.localAngle) {
+        uniqueBlocks.push(`<h2 class="section-title">What is different about ${esc(name)}</h2><p>${esc(guide.localAngle)}</p><p>${esc(cityLine)}</p>`);
+    } else {
+        uniqueBlocks.push(`<h2 class="section-title">What is different about ${esc(name)}</h2><p>${esc(intro)} ${esc(cityLine)}</p>`);
+    }
+    if (guide && guide.leaseNorm) {
+        uniqueBlocks.push(`<h2 class="section-title">Leases and landlord rules in ${esc(name)}</h2><p>${esc(guide.leaseNorm)}</p>`);
+    }
+    if (guide && guide.contentsNote) {
+        uniqueBlocks.push(`<h2 class="section-title">What to actually schedule</h2><p>${esc(guide.contentsNote)}</p>`);
+    }
+    if (guide && guide.scenarioStory) {
+        uniqueBlocks.push(`<h2 class="section-title">A ${esc(guide.scenarioCity || name)} example</h2><p>${esc(guide.scenarioStory)}</p>`);
+    }
+    const regulator = (guide && guide.regulatorName)
+        ? `<p>Questions about carriers or complaints go to the ${esc(guide.regulatorName)}${guide.regulatorUrl ? ` (<a class="inline-link" href="${esc(guide.regulatorUrl)}">${esc(guide.regulatorUrl.replace(/^https?:\/\//, ''))}</a>)` : ''}.</p>`
+        : '';
+
+    const body = `<section class="resource-hero">
     <div class="container-custom hero-grid">
         <div>
             <span class="eyebrow">Renters insurance by state</span>
@@ -1814,7 +1540,7 @@ function renderRentersStatePage(entry, entriesByAbbr, usEntry) {
         </div>
         <aside class="hero-panel">
             <h2>What this page helps you decide</h2>
-            <p>Use the comparison to see where ${esc(name)} sits relative to the national average and to nearby states before you shop for coverage.</p>
+            <p>See where ${esc(name)} sits versus the country and versus nearby states, then use the local notes before you shop.</p>
         </aside>
     </div>
 </section>
@@ -1822,11 +1548,12 @@ function renderRentersStatePage(entry, entriesByAbbr, usEntry) {
 <section class="section">
     <div class="container-custom section-grid">
         <div class="surface">
+            ${uniqueBlocks.join('')}
             <h2 class="section-title">What drives ${esc(name)} renters insurance costs</h2>
-            <p>${esc(intro)}</p>
             <p>Weather exposure is a major driver here: ${esc(context.weather)}.</p>
             <p>Claim frequency and litigation also matter: ${esc(context.claims)}.</p>
             <p>Replacement costs and carrier competition round out the picture: ${esc(context.replacement)}, and ${esc(context.competition)}.</p>
+            ${regulator}
         </div>
         <div class="surface">
             <h2 class="section-title">How ${esc(name)} compares</h2>
@@ -1837,7 +1564,7 @@ function renderRentersStatePage(entry, entriesByAbbr, usEntry) {
                     name: neighbor.state,
                     premium: neighbor.averageAnnualPremium,
                     vs: premiumVsUs(neighbor.averageAnnualPremium, usAverage),
-                    href: `/programmatic-pages/insurance/renters-${slugForStateName(neighbor.state)}`,
+                    href: rentersInsurancePath(slugForStateName(neighbor.state)),
                 })),
             ], usAverage)}
             <p style="margin-top: 0.9rem; color: #4b5563; line-height: 1.7;">A minus sign means the average is below the US average. Figures are the NAIC 2021 baseline; 2026 quotes run higher after inflation.</p>
@@ -1847,9 +1574,18 @@ function renderRentersStatePage(entry, entriesByAbbr, usEntry) {
 
 <section class="section section--alt">
     <div class="container-custom">
+        <h2 class="section-title">Questions people ask about ${esc(name)} renters insurance</h2>
+        <div class="faq-grid">
+            ${renderFaqCards(faqItems)}
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container-custom">
         <h2 class="section-title">Next steps</h2>
         <div class="hub-list">
-            <a href="/programmatic-pages/insurance/renters-by-state"><strong>Renters insurance cost by state</strong><span>See how ${esc(name)} compares with every other state.</span></a>
+            <a href="${esc(rentersInsurancePath())}"><strong>Renters insurance cost by state</strong><span>See how ${esc(name)} compares with every other state.</span></a>
             <a href="/tools/renters-insurance-cost"><strong>Renters insurance cost calculator</strong><span>Estimate your own premium with your coverage limits, deductible, and location.</span></a>
             <a href="/blog/how-much-is-renters-insurance-cost-guide"><strong>How much is renters insurance?</strong><span>Read the full guide to what renters insurance covers and how premiums are set.</span></a>
         </div>
@@ -1863,7 +1599,7 @@ function renderRentersStatePage(entry, entriesByAbbr, usEntry) {
             <p>State averages only get you part of the way. Your real quote depends on your address, the coverage you choose, and your claims history.</p>
             <div class="cta-actions">
                 <a class="cta-button" href="/tools/renters-insurance-cost">Open the renters insurance calculator</a>
-                <a class="ghost-button" href="/programmatic-pages/insurance/renters-by-state">Back to the state hub</a>
+                <a class="ghost-button" href="${esc(rentersInsurancePath())}">Back to the state hub</a>
             </div>
         </div>
     </div>
@@ -1878,16 +1614,23 @@ function renderRentersStatePage(entry, entriesByAbbr, usEntry) {
             articleSchema(title, description, canonical, `${name}, renters insurance, insurance cost, state comparison`),
             breadcrumbSchema([
                 { name: 'Home', item: 'https://www.legacyinvestingshow.com/' },
-                { name: 'Renters insurance cost by state', item: rentersInsuranceUrl('renters-by-state') },
+                { name: 'Renters insurance cost by state', item: siteUrl(rentersInsurancePath()) },
                 { name: name, item: canonical },
             ]),
+            faqSchema(faqItems),
         ],
-        pageType: 'programmatic_renters_state',
+        pageType: 'renters_state',
         activeHref: '/tools',
         body,
     });
 
-    fs.writeFileSync(path.join(OUTPUT_DIR, 'insurance', `${slug}.html`), page);
+    fs.writeFileSync(path.join(RENTERS_DIR, `${stateSlug}.html`), page);
+}
+
+function removeLegacyProgrammaticTree() {
+    if (fs.existsSync(LEGACY_PROGRAMMATIC_DIR)) {
+        fs.rmSync(LEGACY_PROGRAMMATIC_DIR, { recursive: true, force: true });
+    }
 }
 
 function main() {
@@ -1897,21 +1640,18 @@ function main() {
     const usEntry = insuranceEntries.find((entry) => entry.abbreviation === 'US');
     const stateEntries = insuranceEntries.filter((entry) => entry.abbreviation !== 'US');
     const entriesByAbbr = new Map(insuranceEntries.map((entry) => [entry.abbreviation, entry]));
+    const guides = loadRentersGuides();
 
-    ensureDir(OUTPUT_DIR);
-    ensureDir(path.join(OUTPUT_DIR, 'cities'));
-    ensureDir(path.join(OUTPUT_DIR, 'comparisons'));
-    ensureDir(path.join(OUTPUT_DIR, 'personas'));
-    ensureDir(path.join(OUTPUT_DIR, 'insurance'));
+    ensureDir(MARKETS_DIR);
+    ensureDir(RENTERS_DIR);
 
     cities.forEach((city) => renderCityPage(city, strategyMap));
-    PERSONAS.forEach((persona) => renderPersonaPage(persona, strategyMap));
-    COMPARISONS.forEach((comparison) => renderComparisonPage(comparison, strategyMap));
-    renderIndexPage(cities, PERSONAS, COMPARISONS);
-    stateEntries.forEach((entry) => renderRentersStatePage(entry, entriesByAbbr, usEntry));
+    renderMarketsHub(cities);
+    stateEntries.forEach((entry) => renderRentersStatePage(entry, entriesByAbbr, usEntry, guides));
     renderInsuranceHubPage(stateEntries, usEntry);
+    removeLegacyProgrammaticTree();
 
-    console.log(`Generated ${cities.length} city pages, ${PERSONAS.length} persona pages, ${COMPARISONS.length} comparison pages, and the programmatic hub.`);
+    console.log(`Generated ${cities.length} market guides and the markets hub.`);
     console.log(`Generated ${stateEntries.length} renters insurance state pages and the renters insurance hub.`);
 }
 
