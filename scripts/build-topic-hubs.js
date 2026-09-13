@@ -32,7 +32,14 @@ const TOPIC_HUBS = [
         slug: 'tax-strategies',
         title: 'Tax Strategies',
         description: 'Compare practical tax planning guides, deduction frameworks, entity decisions, and retirement tax moves for high-income earners and business owners.',
-        intro: 'Tax strategy works when the pieces are organized before filing season: income timing, entity structure, deductions, retirement accounts, real estate losses, and documentation. This hub groups the most useful Legacy Investing Show tax guides so readers can move from broad planning to specific execution pages without wandering through the full archive.',
+        intro: 'This hub is for people who pay a lot of tax and want to know which part of it they can change. That includes W-2 earners on a high salary, self-employed people, and owners who run a business through an LLC or an S corporation. The guides follow the order a real plan follows: read the return, fix the withholding, claim the deductions the work already earns, then look at the bigger moves like entity choice, real estate losses, and retirement accounts. Most guides show the math with a worked example and say what proof the IRS expects. Start with the rate and withholding guides if you are not sure what you owe today. Move to the deduction and strategy guides once those numbers are clear. Nothing here is advice for your return. It is background, so the conversation with your CPA starts further along.',
+        startHere: [
+            { slug: 'marginal-vs-effective-tax-rate', note: 'What the brackets actually take, and why the two rates differ.' },
+            { slug: 'how-to-fix-w2-withholding-mid-year', note: 'The fastest fix if last April was a surprise.' },
+            { slug: 'home-office-deduction-2026-guide', note: 'Both methods, who qualifies, and the records to keep.' },
+            { slug: 'capital-gains-tax-what-you-owe-when-you-sell', note: 'What a sale costs before you agree to it.' },
+            { slug: 'augusta-rule-280a-business-use', note: 'A 14-day rule owners often hear about and rarely document.' },
+        ],
         categoryMatches: ['Tax Strategies'],
         keywordMatches: ['tax', 'qbi', 'deduction', 'roth', 'hsa', '1031', 'cost-segregation', 's-corp', 'estate-tax', 'capital-gains'],
     },
@@ -40,7 +47,14 @@ const TOPIC_HUBS = [
         slug: 'business-structures',
         title: 'Business Structures',
         description: 'Entity planning guides for LLCs, S corporations, registered agents, operating agreements, business credit, and legal structure decisions.',
-        intro: 'Entity structure should clarify risk, taxes, operations, and banking. This hub collects the business structure articles that help readers compare LLCs, S corporations, registered agents, operating agreements, and related implementation choices.',
+        intro: 'This hub is for owners who need to pick an entity, and for owners who already have one and want it to hold up. That means sole proprietors deciding whether an S corporation election pays for itself, LLC owners who need a real operating agreement, and investors running more than one property or business. The guides compare the cost and the paperwork of each structure, not only the tax line. They cover reasonable salary, payroll, registered agents, state filings, bank accounts, and the record keeping that keeps the liability shield intact. Read the Schedule C and S corp comparison first, so the tax difference is clear. Then check the break-even guide to see whether your profit is high enough yet. After that, the salary, amendment, and corporate veil guides cover what has to stay true every year. Structure is a yearly job, not a one-time filing.',
+        startHere: [
+            { slug: 'schedule-c-vs-s-corp-tax-guide', note: 'The tax difference between the two, side by side.' },
+            { slug: 's-corp-election-break-even-guide', note: 'The profit level where the election starts paying for itself.' },
+            { slug: 'how-much-is-reasonable-salary-for-s-corp', note: 'The number the IRS looks at first.' },
+            { slug: 'operating-agreement-amendment-guide', note: 'How to change the agreement without losing the paper trail.' },
+            { slug: 'how-is-corporate-veil-pierced', note: 'What breaks the liability shield in practice.' },
+        ],
         categoryMatches: ['Business Structures'],
         keywordMatches: ['llc', 's-corp', 'registered-agent', 'operating-agreement', 'corporate-veil', 'business-credit', 'entity'],
     },
@@ -48,7 +62,14 @@ const TOPIC_HUBS = [
         slug: 'retirement',
         title: 'Retirement',
         description: 'Retirement planning guides covering 401(k)s, IRAs, withdrawal sequencing, Roth conversions, annuities, and tax-aware income planning.',
-        intro: 'Retirement planning is not just an account choice. The useful work is sequencing contributions, conversions, withdrawals, healthcare costs, income floors, and tax brackets over time. This hub organizes the retirement guides into one crawlable path.',
+        intro: 'This hub is for people inside twenty years of retiring, and for high earners filling accounts now who want the tax order right. The guides treat contributions, conversions, withdrawals, and allocation as one sequence rather than four separate choices. You will find the annual limits, how a Roth conversion is taxed in the year you do it, how to pull from taxable, tax-deferred, and Roth money in an order that lowers the lifetime bill, and how long a balance lasts at a given spending rate. Each guide shows the math with real numbers, so the tradeoff is visible. Start with the conversion and withdrawal guides if you are close to retiring. Start with the mega backdoor Roth guide if you are still saving and your plan allows after-tax contributions. Then use the allocation guides to match risk to the years you have left.',
+        startHere: [
+            { slug: 'how-roth-conversions-are-taxed', note: 'What a conversion costs in the year you do it.' },
+            { slug: 'best-ira-withdrawal-strategy', note: 'Which account to draw from first, and why the order matters.' },
+            { slug: 'retirement-runway-how-long-will-your-savings-last', note: 'How many years a balance covers at your spending rate.' },
+            { slug: 'mega-backdoor-roth-2026', note: 'The after-tax route into a Roth, and the plan rules it needs.' },
+            { slug: 'best-asset-allocation-for-retirement', note: 'Matching risk to the years you have left.' },
+        ],
         categoryMatches: ['Retirement'],
         keywordMatches: ['retirement', '401k', '401-k', 'ira', 'roth', 'annuity', 'withdrawal', 'pension'],
     },
@@ -56,7 +77,14 @@ const TOPIC_HUBS = [
         slug: 'investing',
         title: 'Investing',
         description: 'Investing education on asset allocation, rental property, ETFs, bonds, income streams, BRRRR, notes investing, and portfolio tax implications.',
-        intro: 'Investing decisions improve when readers can compare cash flow, taxes, liquidity, volatility, and time commitment side by side. This hub gathers the investing guides and related real estate, portfolio, and passive income articles.',
+        intro: 'This hub is for people with money to put to work each month who want to compare the options on the same terms: what it returns, what it costs, how liquid it is, and how much time it takes. The guides start with net worth and cash flow, then cover index funds, fees, rental property, home equity, and the rent versus buy decision. Real estate sits here too, because a rental is an investment with a job attached. Every guide shows the arithmetic rather than a rule of thumb, so you can put your own numbers in. Start with the net worth and compound interest guides to set a baseline. Read the fee drag guide before you pick a fund or an advisor. Read the rental cash flow and rent versus buy guides before any property decision. The tax side of each choice lives in the tax strategies library.',
+        startHere: [
+            { slug: 'how-to-calculate-net-worth', note: 'The balance sheet every other decision is measured against.' },
+            { slug: 'compound-interest-savings-guide', note: 'What a steady monthly amount turns into over time.' },
+            { slug: 'investment-fee-drag-guide', note: 'What a one percent fee costs across a working life.' },
+            { slug: 'rental-property-cash-flow-guide', note: 'Real monthly math, not the gross rent.' },
+            { slug: 'rent-vs-buy-which-is-better', note: 'The full cost on both sides of the decision.' },
+        ],
         categoryMatches: ['Investing', 'Passive Income', 'Real Estate', 'Wealth Building', 'Real Estate Investing', 'Real Estate Strategy', 'Investing Strategy'],
         keywordMatches: ['investing', 'asset-allocation', 'rental-property', 'brrrr', 'cash-flow', 'portfolio', 'etf', 'mutual-fund', 'bonds', 'reits'],
     },
@@ -64,7 +92,14 @@ const TOPIC_HUBS = [
         slug: 'debt-management',
         title: 'Debt Management',
         description: 'Debt payoff frameworks, student loan strategies, DTI planning, debt avalanche guides, consolidation decisions, and cash-flow tradeoffs.',
-        intro: 'Debt strategy is not only about paying balances faster. The better question is how each move affects cash flow, credit, tax exposure, and the next asset-building step. This hub groups the debt management guides into a practical reading path.',
+        intro: 'This hub is for people carrying credit card balances, student loans, a car loan, or a mortgage, who want to know which balance to attack first and what it costs to wait. The guides cover the two payoff methods, the debt-to-income ratio a lender actually calculates, consolidation, amortization, early payoff math, and the student loan rules for federal and private borrowers. Each one shows the interest saved and the months removed, so the choice is a number rather than a feeling. Start with the debt-to-income guide to see how a lender reads your file. Read the snowball versus avalanche comparison to pick a method you will stay with. Check the credit card payoff guide if a high rate is the real problem, and the amortization guide if you want to see where each payment goes. Consolidation comes last, once the cost of the current debt is clear.',
+        startHere: [
+            { slug: 'debt-to-income-ratio-guide', note: 'How a lender reads your file before you apply.' },
+            { slug: 'debt-snowball-vs-avalanche', note: 'Which payoff order costs less, and which one people finish.' },
+            { slug: 'credit-card-payoff-strategy-guide', note: 'The plan for the balance charging the highest rate.' },
+            { slug: 'loan-amortization-schedule-explained', note: 'Where each payment goes, month by month.' },
+            { slug: 'debt-consolidation-guide', note: 'When one new loan helps, and when it only moves the problem.' },
+        ],
         categoryMatches: ['Debt Management'],
         keywordMatches: ['debt', 'student-loan', 'dti', 'consolidation', 'avalanche', 'snowball', 'payoff', 'heloc'],
     },
@@ -72,7 +107,14 @@ const TOPIC_HUBS = [
         slug: 'airbnb-arbitrage',
         title: 'Airbnb Arbitrage',
         description: 'Airbnb arbitrage guides, startup cost breakdowns, pricing systems, occupancy strategy, tax implications, and student success stories.',
-        intro: 'Airbnb arbitrage content needs both strategy and execution: market selection, landlord conversations, furnishing budgets, pricing, guest operations, taxes, and real examples. This hub connects the core Airbnb guides and success stories.',
+        intro: 'This hub is for people who want to run short-term rentals without buying property. That means renting a unit, getting written permission to sublet, furnishing it, and operating it well enough to keep the reviews high. The guides cover the startup budget, how to judge a city before you commit, the landlord conversation, pricing, guest messaging, automation, and the mistakes that quietly remove the profit. Student stories sit here too, so you can see what the first twelve months really look like. Start with the startup cost guide, so the budget is honest before anything else. Read the market guide before you sign a lease. Read the landlord guide so the first call does not sound risky to them. Then use the mistakes and scaling guides once a unit is live. The tax treatment of short-term rentals is covered in the tax strategies library.',
+        startHere: [
+            { slug: 'how-much-does-it-cost-to-start-an-airbnb', note: 'The real first-unit budget, line by line.' },
+            { slug: 'best-airbnb-markets-2026-how-to-evaluate-a-city', note: 'How to judge a city before you sign a lease.' },
+            { slug: 'how-to-convince-landlords-for-airbnb-arbitrage', note: 'The conversation that gets written permission to sublet.' },
+            { slug: 'airbnb-arbitrage-mistakes-that-kill-profit', note: 'What quietly removes the margin on a live unit.' },
+            { slug: 'how-to-scale-an-airbnb-arbitrage-business', note: 'Adding units without breaking operations.' },
+        ],
         categoryMatches: ['Airbnb Arbitrage', 'Success Story', 'Success Stories', 'How-To Guide', 'Getting Started', 'Strategy', 'Case Study', 'Side Hustles'],
         keywordMatches: ['airbnb', 'short-term-rental', 'occupancy', 'pricing-strategy', 'startup-cost', 'guest', 'landlord'],
     },
@@ -80,7 +122,14 @@ const TOPIC_HUBS = [
         slug: 'wealth-building',
         title: 'Wealth Building',
         description: 'Wealth-building articles on income streams, tax strategy, asset acquisition, and long-term financial independence planning.',
-        intro: 'Wealth building is the system that connects income, taxes, cash flow, debt, business structure, and investments. This hub points readers to the highest-signal guides for building durable momentum.',
+        intro: 'This hub is for people who already earn well and want the pieces to work as one system: income, taxes, debt, entity, and the assets that pay them later. Most of the pages are anonymized wealth plans. Each one is built for a single household and shows the numbers and the order the moves were made in. Reading a few of them is the fastest way to see how the parts connect, because a plan shows tradeoffs a single guide cannot. The rest of the hub covers the building blocks: house hacking, index funds, rental cash flow, and allocation for people with business income. Start with the ten year guide for the shape of a long plan. Read the rental cash flow and house hacking guides for the asset side. Read the index fund and entrepreneur allocation guides for the paper side. The plans are education, not advice for your situation.',
+        startHere: [
+            { slug: 'build-10-million-10-years', note: 'What a long plan looks like when the pieces line up.' },
+            { slug: 'rental-property-cash-flow-guide', note: 'The asset side, with real monthly math.' },
+            { slug: 'house-hacking-guide', note: 'Using the home you live in to carry part of the cost.' },
+            { slug: 'index-fund-investing', note: 'The paper side, kept simple and cheap.' },
+            { slug: 'asset-allocation-for-entrepreneurs', note: 'Allocation when your income is already tied to one business.' },
+        ],
         categoryMatches: ['Wealth Building', 'Wealth Plan'],
         keywordMatches: ['wealth', 'income-stream', 'financial-independence', 'million', 'cash-flow'],
     },
@@ -207,6 +256,39 @@ function renderPostRow(post) {
                         </li>`;
 }
 
+/**
+ * The hand-picked "read these first" rows for a hub. Titles come from the
+ * markdown frontmatter so a renamed post never leaves a stale label behind;
+ * a slug the hub no longer carries is skipped with a warning rather than
+ * silently linking to a page that is not in this hub.
+ */
+function renderStartHere(topic, posts) {
+    const bySlug = new Map(posts.map((post) => [post.slug, post]));
+    const rows = [];
+
+    for (const entry of topic.startHere || []) {
+        const post = bySlug.get(entry.slug);
+        if (!post) {
+            console.warn(`  start-here slug not in /topics/${topic.slug}: ${entry.slug}`);
+            continue;
+        }
+        rows.push(`                            <li>
+                                <p class="list-rows__title"><a href="/blog/${esc(post.slug)}">${esc(post.frontmatter.title)}</a></p>
+                                <p class="list-rows__desc">${esc(entry.note)}</p>
+                            </li>`);
+    }
+
+    if (rows.length === 0) return '';
+
+    return `
+                    <h2 id="start-here">Start here</h2>
+                    <p class="section__summary">${rows.length} pages that cover most of what people come to this hub for.</p>
+                    <ul class="list-rows">
+${rows.join('\n')}
+                    </ul>
+`;
+}
+
 function renderTopicNav(currentSlug) {
     const links = TOPIC_HUBS
         .filter((topic) => topic.slug !== currentSlug)
@@ -311,10 +393,21 @@ ${renderHead({ title: topic.title, description: topic.description, canonical, ex
         <section class="section section--rule">
             <div class="container-custom">
                 <div class="col">
+${renderStartHere(topic, topPosts)}
                     <h2 id="articles">Articles in this hub</h2>
                     <ul class="list-rows">
 ${topPosts.map((post) => renderPostRow(post)).join('\n')}
                     </ul>
+
+                    <div class="cta">
+                        <h2>The rest of the site</h2>
+                        <ul>
+                            <li><a href="/tax-strategies">Tax strategies</a>. Every strategy guide in one table.</li>
+                            <li><a href="/compare">Compare guides</a>. Two strategies head to head, with a scorecard.</li>
+                            <li><a href="/tools">Free calculators</a>. Run your own numbers.</li>
+                            <li><a href="/blog">The full archive</a>. Everything, newest first.</li>
+                        </ul>
+                    </div>
 
                     <div class="cta">
                         <h2>Other topics</h2>
@@ -422,6 +515,7 @@ ${rows}
                         <ul>
                             <li><a href="/tax-strategies">Tax strategies</a>. Every strategy guide in one table.</li>
                             <li><a href="/compare">Compare guides</a>. Head-to-head decisions with a scorecard.</li>
+                            <li><a href="/tools">Free calculators</a>. Run your own numbers.</li>
                             <li><a href="/blog">The full archive</a>. Everything, newest first.</li>
                         </ul>
                         <p class="cta__actions">

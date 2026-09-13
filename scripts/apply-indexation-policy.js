@@ -17,6 +17,12 @@ const TOOL_CATEGORIES_DIR = path.join(TOOLS_DIR, 'categories');
 const POLICY_PATH = path.join(ROOT_DIR, 'data', 'indexation-policy.json');
 const SITE_URL = process.env.SITE_URL || 'https://www.legacyinvestingshow.com';
 
+// The tools tree is a vendored Next.js export. Its own head ships
+// `twitter:card=summary`, which renders a small square card, and some pages
+// ship no `og:image` at all. Both are rewritten below so a shared tool link
+// gets the same wide card as the rest of the site.
+const DEFAULT_SOCIAL_IMAGE = `${SITE_URL}/assets/images/og-home.jpg`;
+
 function readPolicy() {
     if (!fs.existsSync(POLICY_PATH)) {
         return {
@@ -215,6 +221,74 @@ function toolSlugsLinkedFrom(html, knownSlugs) {
     return found;
 }
 
+/**
+ * Force `twitter:card=summary_large_image` and guarantee an `og:image`.
+ * Tools HTML is a minified single-line export, so every edit is regex-based
+ * and idempotent: re-running leaves an already-corrected file untouched.
+ */
+function applySocialCards(html) {
+    let next = html;
+
+    if (/<meta\s+name=["']twitter:card["'][^>]*>/i.test(next)) {
+        next = next.replace(
+            /<meta\s+name=["']twitter:card["'][^>]*>/i,
+            '<meta name="twitter:card" content="summary_large_image">'
+        );
+    } else {
+        next = next.replace(
+            /<head(\s[^>]*)?>/i,
+            (match) => `${match}<meta name="twitter:card" content="summary_large_image">`
+        );
+    }
+
+    const existingImage = (next.match(
+        /<meta\s+property=["']og:image["']\s+content=["']([^"']+)["'][^>]*>/i
+    ) || [])[1];
+
+    if (!existingImage) {
+        next = next.replace(
+            /<head(\s[^>]*)?>/i,
+            (match) => `${match}<meta property="og:image" content="${DEFAULT_SOCIAL_IMAGE}">`
+        );
+    }
+
+    if (!/<meta\s+name=["']twitter:image["']/i.test(next)) {
+        next = next.replace(
+            /<head(\s[^>]*)?>/i,
+            (match) => `${match}<meta name="twitter:image" content="${existingImage || DEFAULT_SOCIAL_IMAGE}">`
+        );
+    }
+
+    return next;
+}
+
+function applySocialCardsToTools() {
+    if (!fs.existsSync(TOOLS_DIR)) return 0;
+
+    const files = [];
+    for (const dir of [TOOLS_DIR, TOOL_CATEGORIES_DIR]) {
+        if (!fs.existsSync(dir)) continue;
+        for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+            if (entry.isFile() && entry.name.endsWith('.html')) {
+                files.push(path.join(dir, entry.name));
+            }
+        }
+    }
+
+    let changed = 0;
+    for (const filePath of files) {
+        const original = fs.readFileSync(filePath, 'utf8');
+        const updated = applySocialCards(original);
+        if (updated !== original) {
+            fs.writeFileSync(filePath, updated, 'utf8');
+            changed += 1;
+        }
+    }
+
+    console.log(`Tool social cards: ${changed} of ${files.length} page(s) updated to summary_large_image.`);
+    return changed;
+}
+
 function applyToTools() {
     if (!fs.existsSync(TOOLS_DIR) || toolPolicy.slugs.length === 0) {
         return;
@@ -300,6 +374,7 @@ function applyToTools() {
 function main() {
     if (!fs.existsSync(BLOG_DIR)) {
         console.log('Blog directory missing; no indexation policy applied.');
+        applySocialCardsToTools();
         return;
     }
 
@@ -330,6 +405,7 @@ function main() {
     }
 
     applyToTools();
+    applySocialCardsToTools();
 
     console.log(`Applied indexation policy to ${updated} HTML file(s).`);
     console.log(`Blog indexation target: ${indexable} indexable post(s), ${noindexed} noindex URL(s) including category archives.`);
