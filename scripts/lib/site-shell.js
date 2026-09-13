@@ -280,8 +280,7 @@ const FOOTER_GROUPS = [
 
 function renderHeadAssets() {
   return [
-    '<link rel="preload" href="/assets/fonts/dm-serif-display-400-latin.woff2" as="font" type="font/woff2" crossorigin>',
-    '<link rel="preload" href="/assets/fonts/plus-jakarta-sans-variable-latin.woff2" as="font" type="font/woff2" crossorigin>',
+    '<link rel="preload" href="/assets/fonts/public-sans-variable-latin.woff2" as="font" type="font/woff2" crossorigin>',
     '<link rel="stylesheet" href="/assets/css/styles.css">',
   ].join('\n    ');
 }
