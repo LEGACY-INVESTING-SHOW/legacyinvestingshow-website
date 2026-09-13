@@ -284,10 +284,7 @@
     <!-- Header / Navigation -->
     <header class="site-header">
         <nav class="container-custom site-nav" aria-label="Main navigation">
-            <a href="/" class="site-brand">
-                <img src="/assets/images/logo-240.webp" alt="" width="62" height="28">
-                <span>Legacy Investing Show</span>
-            </a>
+            <a href="/" class="site-brand">Legacy Investing Show</a>
             <div class="site-nav-links">
                 <a href="/" class="nav-link">Home</a>
                     <a href="/about" class="nav-link">About</a>
@@ -330,44 +327,67 @@
 
     <main id="main">
         <!-- Hero Section -->
-        <section class="strategy-hero">
+        <section class="guide-opener">
             <div class="container-custom">
-                <h1 class="strategy-title">Estimated Tax Payments</h1>
-                <p class="guide-deck">Master quarterly estimated taxes to avoid penalties, reduce cash flow surprises, and ensure IRS compliance. Complete calculation guide with safe harbor rules.</p>
-
-                <dl class="guide-dl">
-                        <div>
-                            <dt>Penalty Cost</dt>
-                            <dd>$500 - $5,000/year</dd>
+                <div class="opener">
+                    <div>
+                        <h1 class="opener__title">Estimated Tax Payments</h1>
+                        <p class="opener__lede">Master quarterly estimated taxes to avoid penalties, reduce cash flow surprises, and ensure IRS compliance. Complete calculation guide with safe harbor rules.</p>
+                        <p class="guide-opener__meta">IRS Reference: IRC Section 6654, IRC Section 6655, Form 1040-ES</p>
+                    </div>
+                    <aside class="opener__aside">
+                        <div class="figure figure--gold figure--long">
+                            <span class="figure__value">$500 - $5,000/year</span>
+                            <span class="figure__label">penalty cost</span>
                         </div>
-                        <div>
-                            <dt>Quarterly Deadlines</dt>
-                            <dd>April 15, June 15, Sept 15, Jan 15</dd>
-                        </div>
-                        <div>
-                            <dt>Complexity</dt>
-                            <dd>Intermediate</dd>
-                        </div>
-                        <div>
-                            <dt>Who Needs It</dt>
-                            <dd>Self-employed, investors, retirees</dd>
-                        </div>
-                    </dl>
-                <p class="guide-hero__meta">IRS Reference: IRC Section 6654, IRC Section 6655, Form 1040-ES</p>
+                        <dl class="guide-dl">
+                            <div>
+                                <dt>Quarterly Deadlines</dt>
+                                <dd>April 15, June 15, Sept 15, Jan 15</dd>
+                            </div>
+                            <div>
+                                <dt>Complexity</dt>
+                                <dd>Intermediate</dd>
+                            </div>
+                            <div>
+                                <dt>Who Needs It</dt>
+                                <dd>Self-employed, investors, retirees</dd>
+                            </div>
+                        </dl>
+                    </aside>
+                </div>
             </div>
         </section>
 
         <!-- Content Section -->
         <section class="content-section">
             <div class="container-custom">
-                <div class="content-grid">
+                <div class="guide-layout">
+                    <details class="contents guide-contents" open>
+                        <summary>On this page</summary>
+                        <ol>
+                            <li><a href="#what-are-estimated-tax-payments">What Are Estimated Tax Payments?</a></li>
+                            <li><a href="#understanding-estimated-taxes-and-your-obligations">Understanding Estimated Taxes and Your Obligations</a></li>
+                            <li><a href="#how-to-calculate-your-estimated-tax-payments">How to Calculate Your Estimated Tax Payments</a></li>
+                            <li><a href="#real-numbers-estimated-tax-payment-examples">Real Numbers: Estimated Tax Payment Examples</a></li>
+                            <li><a href="#expert-strategies-for-optimizing-estimated-taxes">Expert Strategies for Optimizing Estimated Taxes</a></li>
+                            <li><a href="#common-mistakes-and-penalties-to-avoid">Common Mistakes and Penalties to Avoid</a></li>
+                            <li><a href="#comparison-of-payment-strategies">Comparison of Payment Strategies</a></li>
+                            <li><a href="#tools-and-resources-for-managing-estimated-taxes">Tools and Resources for Managing Estimated Taxes</a></li>
+                            <li><a href="#frequently-asked-questions-about-estimated-taxes">Frequently Asked Questions About Estimated Taxes</a></li>
+                            <li><a href="#frequently-asked-questions">Frequently Asked Questions</a></li>
+                            <li><a href="#optimize-your-tax-strategy-today">Optimize Your Tax Strategy Today</a></li>
+                            <li><a href="#related-tax-strategy-articles">Related Tax Strategy Articles</a></li>
+                        </ol>
+                    </details>
+                    <div class="guide-column">
                     <div class="prose-content">
-                        <h2>What Are Estimated Tax Payments?</h2>
+                        <h2 id="what-are-estimated-tax-payments">What Are Estimated Tax Payments?</h2>
                         <p>Estimated tax payments are quarterly payments of federal (and sometimes state) income taxes made by individuals whose tax liability cannot be fully covered through payroll withholding. These payments are required by the Internal Revenue Service under IRC Section 6654 and allow self-employed individuals, business owners, investors, and retirees to spread their annual tax burden across four installments throughout the year.</p>
                         <p>Unlike employees who have taxes withheld from their paychecks, self-employed individuals and investment income earners receive income without automatic tax withholding. The IRS requires these taxpayers to estimate their annual tax liability and pay it throughout the year in four equal (or reasonably equal) quarterly installments. Failure to make these payments can result in underpayment penalties and interest charges, even if the taxpayer ultimately owes no additional tax when filing their annual return.</p>
                         <p>The estimated tax system is designed to distribute the tax burden evenly throughout the year, preventing sudden large tax bills at year-end and reducing the interest and penalties associated with underpayment. For business owners with seasonal income variations, the IRS offers alternative calculation methods that adjust payments based on quarterly income fluctuations.</p>
 
-                        <h2>Understanding Estimated Taxes and Your Obligations</h2>
+                        <h2 id="understanding-estimated-taxes-and-your-obligations">Understanding Estimated Taxes and Your Obligations</h2>
                         <p>The fundamental principle behind estimated taxes is that as you earn income throughout the year, you should be paying taxes on that income continuously. The IRS enforces this through the underpayment penalty system, which assesses interest-like charges to taxpayers who don't pay enough during the year.</p>
 
                         <h3>Who Must Pay Estimated Taxes?</h3>
@@ -391,7 +411,7 @@
                         </ul>
                         <p>When a deadline falls on a Saturday, Sunday, or legal holiday, the payment is due on the next business day. For example, if April 15 falls on a Saturday, payment is due Monday April 17. The IRS provides detailed calendars showing adjusted due dates on its website.</p>
 
-                        <h2>How to Calculate Your Estimated Tax Payments</h2>
+                        <h2 id="how-to-calculate-your-estimated-tax-payments">How to Calculate Your Estimated Tax Payments</h2>
 
                         <h3>Step 1: Project Your Annual Income (Early January)</h3>
                         <p>Begin by estimating your total taxable income for the current year from all sources. Include wages, business income, rental income, dividend income, capital gains, interest, and any other taxable income sources. For self-employed individuals, subtract anticipated business expenses from gross business revenue to calculate net self-employment income. For investors, add up all expected dividend distributions, interest income, and estimated capital gains or losses.</p>
@@ -445,7 +465,7 @@
                             <li>Confirmation number</li>
                         </ul>
 
-                        <h2>Real Numbers: Estimated Tax Payment Examples</h2>
+                        <h2 id="real-numbers-estimated-tax-payment-examples">Real Numbers: Estimated Tax Payment Examples</h2>
 
                         <h3>Scenario 1: Self-Employed Consultant</h3>
                         <p><strong>The Situation:</strong> James is a 42-year-old independent management consultant earning $100,000 in gross consulting revenue. His business expenses (office, software, continuing education) total $25,000 annually.</p>
@@ -467,7 +487,13 @@
                             <li>Total annual tax: $25,300</li>
                             <li>Quarterly estimated payment: $25,300 / 4 = $6,325 per quarter</li>
                         </ul>
-                        <p><strong>Result:</strong> James needs to pay $6,325 each quarter on April 15, June 15, September 15, and January 15. If his W-2 employer withholds $500 per month ($6,000/year), he should reduce his quarterly payments to account for this withholding.</p>
+                        <aside class="guide-takeaway">
+                            <div class="figure figure--long">
+                                <span class="figure__value">$6,325</span>
+                                <span class="figure__label">Result</span>
+                            </div>
+                            <p>James needs to pay $6,325 each quarter on April 15, June 15, September 15, and January 15. If his W-2 employer withholds $500 per month ($6,000/year), he should reduce his quarterly payments to account for this withholding.</p>
+                        </aside>
 
                         <h3>Scenario 2: Investment Income Earner</h3>
                         <p><strong>The Situation:</strong> Patricia is a 55-year-old semi-retired investor living on investment income. She has $500,000 in a taxable brokerage account generating significant dividend and capital gains income.</p>
@@ -489,7 +515,13 @@
                             <li>Total annual tax: $13,265</li>
                             <li>Quarterly estimated payment: $13,265 / 4 = $3,316 per quarter</li>
                         </ul>
-                        <p><strong>Result:</strong> Patricia must pay $3,316 each quarter even though investment income typically has no withholding. Missing even one payment could trigger penalties approaching $500+.</p>
+                        <aside class="guide-takeaway">
+                            <div class="figure figure--long">
+                                <span class="figure__value">$3,316</span>
+                                <span class="figure__label">Result</span>
+                            </div>
+                            <p>Patricia must pay $3,316 each quarter even though investment income typically has no withholding. Missing even one payment could trigger penalties approaching $500+.</p>
+                        </aside>
 
                         <h3>Scenario 3: Business Owner with Seasonal Income</h3>
                         <p><strong>The Situation:</strong> Marco owns a construction business with highly seasonal income. His business generates $300,000 in annual gross revenue but with significant quarterly fluctuations: Q1 $30K, Q2 $75K, Q3 $125K, Q4 $70K.</p>
@@ -506,7 +538,7 @@
                         </ul>
                         <p><strong>Result:</strong> Using the annualized method, Marco's payments align with his actual quarterly income, reducing cash flow strain during his slow Q1 and Q4 seasons.</p>
 
-                        <h2>Expert Strategies for Optimizing Estimated Taxes</h2>
+                        <h2 id="expert-strategies-for-optimizing-estimated-taxes">Expert Strategies for Optimizing Estimated Taxes</h2>
 
                         <h3>1. Use the Safe Harbor Rule for Certainty</h3>
                         <p>Rather than attempting to perfectly forecast current year income, calculate 100% (or 110%) of your prior year tax liability and divide by four. This approach virtually eliminates underpayment penalty risk regardless of actual current year performance. If current year income ends up higher than projected, you'll simply owe additional tax at filing time. If income is lower, you'll get a refund. The key advantage is penalty elimination.</p>
@@ -523,7 +555,7 @@
                         <h3>5. Leverage Spouse's Income for Joint Tax Planning</h3>
                         <p>For married couples filing jointly, consider whether making estimated tax payments from joint income or separately reporting income to each spouse changes your total quarterly payment requirement. In some cases, strategic distribution of income between spouses can optimize estimated tax payment timing.</p>
 
-                        <h2>Common Mistakes and Penalties to Avoid</h2>
+                        <h2 id="common-mistakes-and-penalties-to-avoid">Common Mistakes and Penalties to Avoid</h2>
 
                         <h3>Mistake 1: Missing Quarterly Deadlines</h3>
                         <p><strong>The Problem:</strong> Missing even one quarterly deadline triggers underpayment penalties and interest charges calculated quarterly through your return filing date. A missed Q1 payment continues accruing penalties through April 15 of the following year when your tax return is filed.</p>
@@ -543,8 +575,14 @@
                         <p><strong>The Problem:</strong> If you realize midway through the year that you missed previous quarterly payments, many taxpayers ignore this and continue making regular payments, unaware that penalties and interest are accruing on the missed payments. By April 15, the penalty bill can be substantial.</p>
                         <p><strong>How to Avoid:</strong> Calculate the penalty immediately upon recognizing a missed payment. Use IRS Form 2210 to determine your exact underpayment and penalty. Consider whether paying the missed amount plus penalty now or waiting until filing and dealing with it then makes more financial sense.</p>
 
-                        <h2>Comparison of Payment Strategies</h2>
-                        <div class="table-scroll"><table class="comparison-table">
+                        <aside class="guide-inset">
+                            <figure class="pull-quote">
+                                <blockquote><p>Use IRS Form 2210 to determine your exact underpayment and penalty.</p></blockquote>
+                            </figure>
+                        </aside>
+
+                        <h2 id="comparison-of-payment-strategies">Comparison of Payment Strategies</h2>
+                        <div class="table-scroll"><table class="data-table">
                             <thead>
                                 <tr>
                                     <th>Strategy</th>
@@ -593,13 +631,13 @@
                             </tbody>
                         </table></div>
 
-                        <h2>Tools and Resources for Managing Estimated Taxes</h2>
+                        <h2 id="tools-and-resources-for-managing-estimated-taxes">Tools and Resources for Managing Estimated Taxes</h2>
                         <p><strong>IRS Resources:</strong> Form 1040-ES provides official worksheets and tax tables for calculating estimated taxes. Publication 505 (Tax Withholding and Estimated Tax) offers comprehensive guidance. The IRS Tax Withholding Estimator at irs.gov provides interactive calculation assistance.</p>
                         <p><strong>Payment Platforms:</strong> IRS Direct Pay (irs.gov/payments), EFTPS (eftps.gov), and most major financial institutions' payment systems allow easy estimated tax payment submission with immediate confirmation.</p>
                         <p><strong>Accounting Software:</strong> TurboTax, H&R Block, and other tax software include estimated tax payment calculators integrated into their preparation workflows. These automatically adjust recommendations as your income picture changes throughout the year.</p>
                         <p><strong>Professional Services:</strong> Certified public accountants (CPAs) and tax professionals can calculate optimal payment strategies, identify potential withholding adjustments, and ensure compliance with all quarterly and annual filing requirements.</p>
 
-                        <h2>Frequently Asked Questions About Estimated Taxes</h2>
+                        <h2 id="frequently-asked-questions-about-estimated-taxes">Frequently Asked Questions About Estimated Taxes</h2>
 
                         <p><strong>Pro Tip: Track Everything Quarterly</strong>
                             Rather than waiting until tax time to address estimated taxes, create a simple quarterly checklist: 1) Recalculate income through date, 2) Update expected annual total, 3) Recalculate tax liability, 4) Assess whether current quarterly payments remain appropriate, 5) Make adjustments if needed. This proactive approach prevents surprises and penalty bills at year-end.</p>
@@ -692,13 +730,14 @@
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
         </section>
 
         <!-- FAQ Section -->
         <section class="faq-section">
             <div class="container-custom">
-                <h2 class="faq-section__title">Frequently Asked Questions</h2>
+                <h2 id="frequently-asked-questions" class="faq-section__title">Frequently Asked Questions</h2>
                 <div class="faq-list">
                     <div class="faq-item">
                         <button class="faq-toggle" aria-expanded="false">
@@ -837,7 +876,7 @@
         <section class="cta-section">
             <div class="container-custom">
                 <div class="cta-card">
-                    <h2 class="cta-card__title">Optimize Your Tax Strategy Today</h2>
+                    <h2 id="optimize-your-tax-strategy-today" class="cta-card__title">Optimize Your Tax Strategy Today</h2>
                     <p class="cta-card__text">Stop overpaying estimated taxes or risking penalty bills. Let our tax experts review your situation and create a customized payment plan that aligns with your cash flow and minimizes your tax burden.</p>
                     <a href="/tax-strategies-101" class="cta-card__button">
                         Explore Our Tax Programs
@@ -852,7 +891,7 @@
         <!-- Related Links -->
         <section class="content-section">
             <div class="container-custom">
-                <h2 style="text-align: center; margin-bottom: 2rem">Related Tax Strategy Articles</h2>
+                <h2 id="related-tax-strategy-articles" style="text-align: center; margin-bottom: 2rem">Related Tax Strategy Articles</h2>
                 <div class="content-grid">
                     <div>
                         <ul class="related-strategies" style="grid-template-columns: 1fr">
@@ -892,11 +931,11 @@
         <div class="container-custom">
             <div class="site-footer-grid">
                 <div class="site-footer-brand">
-                    <a href="/" class="site-brand"><img src="/assets/images/logo-240.webp" alt="" width="62" height="28"><span>Legacy Investing Show</span></a>
+                    <a href="/" class="site-brand">Legacy Investing Show</a>
                     <p>Tax strategy, wealth systems, and practical decision tools for professionals, investors, and founders.</p>
                 </div>
                 <div class="site-footer-group">
-                    <h2>Guides</h2>
+                    <p class="site-footer-title">Guides</p>
                     <ul>
                         <li><a href="/tax-strategies">Tax strategies</a></li>
                         <li><a href="/compare">Compare guides</a></li>
@@ -906,14 +945,14 @@
                     </ul>
                 </div>
                 <div class="site-footer-group">
-                    <h2>Tools</h2>
+                    <p class="site-footer-title">Tools</p>
                     <ul>
                         <li><a href="/tools">Free calculators</a></li>
                         <li><a href="/blog">Blog</a></li>
                     </ul>
                 </div>
                 <div class="site-footer-group">
-                    <h2>Company</h2>
+                    <p class="site-footer-title">Company</p>
                     <ul>
                         <li><a href="/about">About Preston Seo</a></li>
                         <li><a href="/success-stories">Student results</a></li>

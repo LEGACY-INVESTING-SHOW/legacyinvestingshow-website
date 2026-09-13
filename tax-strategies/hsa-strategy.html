@@ -156,10 +156,7 @@
     <!-- Header / Navigation -->
     <header class="site-header">
         <nav class="container-custom site-nav" aria-label="Main navigation">
-            <a href="/" class="site-brand">
-                <img src="/assets/images/logo-240.webp" alt="" width="62" height="28">
-                <span>Legacy Investing Show</span>
-            </a>
+            <a href="/" class="site-brand">Legacy Investing Show</a>
             <div class="site-nav-links">
                 <a href="/" class="nav-link">Home</a>
                     <a href="/about" class="nav-link">About</a>
@@ -202,40 +199,63 @@
 
     <main id="main">
         <!-- Hero Section -->
-        <section class="strategy-hero">
+        <section class="guide-opener">
             <div class="container-custom">
-                <h1 class="strategy-title">HSA Triple Tax Advantage</h1>
-                <p class="guide-deck">The only account with tax-free contributions, growth, AND withdrawals</p>
-
-                <dl class="guide-dl">
-                        <div>
-                            <dt>2026 Contribution Limits</dt>
-                            <dd>$4,300 individual / $8,550 family + tax-free growth</dd>
+                <div class="opener">
+                    <div>
+                        <h1 class="opener__title">HSA Triple Tax Advantage</h1>
+                        <p class="opener__lede">The only account with tax-free contributions, growth, AND withdrawals</p>
+                        <p class="guide-opener__meta">IRS Reference: IRC Section 223</p>
+                    </div>
+                    <aside class="opener__aside">
+                        <div class="figure figure--gold figure--long">
+                            <span class="figure__value">$4,300 individual / $8,550 family + tax-free growth</span>
+                            <span class="figure__label">2026 contribution limits</span>
                         </div>
-                        <div>
-                            <dt>Complexity</dt>
-                            <dd>Beginner</dd>
-                        </div>
-                        <div>
-                            <dt>Professional Required</dt>
-                            <dd>No</dd>
-                        </div>
-                        <div>
-                            <dt>Typical Cost</dt>
-                            <dd>Free with most providers</dd>
-                        </div>
-                    </dl>
-                <p class="guide-hero__meta">IRS Reference: IRC Section 223</p>
+                        <dl class="guide-dl">
+                            <div>
+                                <dt>Complexity</dt>
+                                <dd>Beginner</dd>
+                            </div>
+                            <div>
+                                <dt>Professional Required</dt>
+                                <dd>No</dd>
+                            </div>
+                            <div>
+                                <dt>Typical Cost</dt>
+                                <dd>Free with most providers</dd>
+                            </div>
+                        </dl>
+                    </aside>
+                </div>
             </div>
         </section>
 
         <!-- Content Section -->
         <section class="content-section">
             <div class="container-custom">
-                <div class="content-grid">
+                <div class="guide-layout">
+                    <details class="contents guide-contents" open>
+                        <summary>On this page</summary>
+                        <ol>
+                            <li><a href="#the-only-account-with-three-tax-advantages">The Only Account with Three Tax Advantages</a></li>
+                            <li><a href="#what-is-an-hsa-complete-definition-how-it-works">What is an HSA? Complete Definition &amp; How It Works</a></li>
+                            <li><a href="#who-benefits-most-from-hsa-strategy-five-detailed-personas">Who Benefits Most from HSA Strategy? Five Detailed Personas</a></li>
+                            <li><a href="#step-by-step-implementation-guide-800-words">Step-by-Step Implementation Guide (800 words)</a></li>
+                            <li><a href="#real-numbers-tax-savings-growth-calculations">Real Numbers: Tax Savings &amp; Growth Calculations</a></li>
+                            <li><a href="#five-advanced-hsa-strategies-you-ve-never-heard-of">Five Advanced HSA Strategies You&#39;ve Never Heard Of</a></li>
+                            <li><a href="#seven-common-hsa-mistakes-and-how-to-fix-them">Seven Common HSA Mistakes (And How to Fix Them)</a></li>
+                            <li><a href="#hsa-vs-fsa-vs-hra-complete-comparison">HSA vs. FSA vs. HRA: Complete Comparison</a></li>
+                            <li><a href="#best-hsa-providers-investment-platforms">Best HSA Providers &amp; Investment Platforms</a></li>
+                            <li><a href="#frequently-asked-questions-15-detailed-answers">Frequently Asked Questions (15 Detailed Answers)</a></li>
+                            <li><a href="#related-tax-strategies-topics">Related Tax Strategies &amp; Topics</a></li>
+                            <li><a href="#still-have-questions-more-faq-details">Still Have Questions? More FAQ Details</a></li>
+                        </ol>
+                    </details>
+                    <div class="guide-column">
                     <div class="prose-content">
                         <!-- SECTION 1: HOOK & QUICK SUMMARY -->
-                        <h2>The Only Account with Three Tax Advantages</h2>
+                        <h2 id="the-only-account-with-three-tax-advantages">The Only Account with Three Tax Advantages</h2>
                         <p>Here's a startling statistic: Most American workers leave thousands of dollars on the table every year by not maximizing their HSAs. An HSA is the only account where contributions are tax-deductible, growth is tax-free, AND withdrawals for medical expenses are tax-free. Yet only 38% of eligible employees contribute to their HSAs, according to Employee Benefits Research Institute data. For a family earning $150,000 with a high-deductible health plan, maximizing an HSA strategy could save over $15,000+ in taxes across just five years through tax-free growth alone.</p>
 
                         <div style="background: var(--cream-dark); padding: 1.5rem; border-radius: 0.5rem; margin: 2rem 0">
@@ -253,7 +273,7 @@
                         </ul>
 
                         <!-- SECTION 2: COMPREHENSIVE DEFINITION -->
-                        <h2>What is an HSA? Complete Definition & How It Works</h2>
+                        <h2 id="what-is-an-hsa-complete-definition-how-it-works">What is an HSA? Complete Definition & How It Works</h2>
                         <p>A Health Savings Account (HSA) is a tax-advantaged savings account specifically designed for individuals and families enrolled in high-deductible health plans (HDHPs). Unlike Flexible Spending Accounts (FSAs) that operate under "use-it-or-lose-it" rules, HSAs offer unlimited rollover capabilities, investment options, and long-term wealth accumulation potential.</p>
 
                         <p><strong>The Triple Tax Advantage Explained:</strong></p>
@@ -268,7 +288,7 @@
                         <p><strong>Legal Framework (IRC Section 223):</strong> All HSA rules derive from Internal Revenue Code Section 223. To qualify, you must: (1) be enrolled in a qualifying HDHP (2026 minimum deductible: $1,550 individual / $3,100 family), (2) have no other coverage except qualifying expenses, (3) not be claimed as a dependent on another's return, and (4) be under 65 (or be working while over 65 in some circumstances).</p>
 
                         <!-- SECTION 3: WHO BENEFITS ANALYSIS -->
-                        <h2>Who Benefits Most from HSA Strategy? Five Detailed Personas</h2>
+                        <h2 id="who-benefits-most-from-hsa-strategy-five-detailed-personas">Who Benefits Most from HSA Strategy? Five Detailed Personas</h2>
                         <p>Not everyone benefits equally from HSA strategies. Your health status, income level, time horizon, and tax bracket all determine whether this strategy makes financial sense for you.</p>
 
                         <h3>Persona 1: The Healthy Professional (Age 35, $120K income)</h3>
@@ -292,7 +312,7 @@
                         <p><strong>Why It Works:</strong> Alex contributes $4,300 annually to the HSA, invests it conservatively in balanced index funds, and lets compounding work across 37 years until retirement. At 7% average annual returns with consistent contributions, by age 65 his HSA grows to approximately $2,640,000. This is far more than he'll ever need for medical expenses, allowing him to use it as a supplemental retirement account. <strong>Tax benefit: $1,290 per year in federal taxes (24% bracket) × 37 years = $47,730+ in total tax savings, plus $2,592,500+ in tax-free growth.</strong></p>
 
                         <!-- SECTION 4: STEP-BY-STEP IMPLEMENTATION -->
-                        <h2>Step-by-Step Implementation Guide (800 words)</h2>
+                        <h2 id="step-by-step-implementation-guide-800-words">Step-by-Step Implementation Guide (800 words)</h2>
                         <p><strong>Timeline:</strong> 4-6 weeks from start to active investing. Most steps can be completed online in 2-3 hours of actual work.</p>
 
                         <h3>Step 1: Verify HDHP Eligibility (Week 1)</h3>
@@ -322,7 +342,7 @@
                         <p><strong>Common Pitfalls:</strong> (1) Using the debit card frivolously—defeats the long-term strategy. (2) Not keeping receipts—makes future reimbursements undocumented. (3) Losing track of receipt dates—receipts lose documentation value over time if not organized. (4) Allowing cash to sit uninvested—missed growth opportunity. (5) Confusing HSA with FSA rules—HSA funds roll over; FSA funds don't. (6) Contributing while ineligible—triggers taxes and penalties if discovered by IRS.</p>
 
                         <!-- SECTION 5: REAL NUMBERS & CALCULATIONS -->
-                        <h2>Real Numbers: Tax Savings & Growth Calculations</h2>
+                        <h2 id="real-numbers-tax-savings-growth-calculations">Real Numbers: Tax Savings & Growth Calculations</h2>
 
                         <h3>Scenario 1: Individual Contributor, 28% Tax Bracket, 20-Year Horizon</h3>
                         <p><strong>Setup:</strong> James, age 35, contributes $4,300 annually to an HSA for 20 years. He invests it entirely in a total stock market index fund (historically 9.5% average annual return; we'll conservatively use 8% in our calculation). He never withdraws for medical expenses during accumulation (strategic out-of-pocket payment), maintaining perfect receipt documentation.</p>
@@ -364,7 +384,7 @@
                         <p><strong>Interpretation:</strong> For high earners, HSAs function partly as immediate tax reduction vehicles. Patricia effectively "buys" $4,300 in healthcare savings for only $2,365 in out-of-pocket money annually.</p>
 
                         <!-- SECTION 6: EXPERT STRATEGIES -->
-                        <h2>Five Advanced HSA Strategies You've Never Heard Of</h2>
+                        <h2 id="five-advanced-hsa-strategies-you-ve-never-heard-of">Five Advanced HSA Strategies You've Never Heard Of</h2>
 
                         <h3>Strategy 1: The "30-Year Receipt Reimbursement" Approach</h3>
                         <p><strong>How it works:</strong> Pay all qualified medical expenses from your personal checking account or credit card. Save every receipt. Invest your entire HSA balance immediately upon contribution. Do not reimburse yourself from the HSA for 30 years. When you reach age 65 or retire, reimburse yourself the lump sum of accumulated medical expenses from your now-massive HSA, which has been compounding tax-free for decades.</p>
@@ -391,7 +411,13 @@
                         <p><strong>Real benefit:</strong> A California resident ($13.3% state income tax) moving to Texas could immediately save $572 annually on a $4,300 HSA contribution (13.3% × $4,300) just from state tax elimination. Over 30 years, this is $17,160+ in state tax savings on top of federal savings.</p>
 
                         <!-- SECTION 7: COMMON MISTAKES -->
-                        <h2>Seven Common HSA Mistakes (And How to Fix Them)</h2>
+                        <aside class="guide-inset">
+                            <figure class="pull-quote">
+                                <blockquote><p>Over 30 years, this is $17,160+ in state tax savings on top of federal savings.</p></blockquote>
+                            </figure>
+                        </aside>
+
+                        <h2 id="seven-common-hsa-mistakes-and-how-to-fix-them">Seven Common HSA Mistakes (And How to Fix Them)</h2>
 
                         <h3>Mistake 1: Contributing While Ineligible</h3>
                         <p><strong>The problem:</strong> You're enrolled in a regular (low-deductible) insurance plan while maintaining an HSA account from a previous year. You accidentally contribute to the HSA while ineligible. The IRS considers this an excess contribution and imposes: (1) 6% excise tax on the excess, (2) Double taxation (the excess contribution and its growth), (3) Potential penalties and interest if discovered in audit.</p>
@@ -422,10 +448,10 @@
                         <p><strong>How to fix it:</strong> (1) Each year, create a simple tax savings checklist: HSA contribution limit, 401(k) contribution limit, Solo 401(k) if self-employed, IRA contribution limit, <a href="/tax-strategies/roth-conversion-ladder" class="internal-link">Roth conversion ladder</a> opportunity, EITC qualification status. (2) Work with a tax professional who understands HSAs in context of your full financial picture. (3) Time contributions strategically: if you'll have a big income year, maximize all tax-deductible accounts. (4) Consider Roth HSA conversions if available (some providers offer this, essentially converting pre-tax HSA funds to post-tax HSA funds for even more tax-free growth). (5) Maintain a single document showing all tax-advantaged account balances so you don't accidentally over-contribute.</p>
 
                         <!-- SECTION 8: COMPARISON SECTION -->
-                        <h2>HSA vs. FSA vs. HRA: Complete Comparison</h2>
+                        <h2 id="hsa-vs-fsa-vs-hra-complete-comparison">HSA vs. FSA vs. HRA: Complete Comparison</h2>
                         <p>Three types of accounts can help with healthcare expenses. Understanding the differences is critical for choosing the right strategy.</p>
 
-                        <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.9rem">
+                        <div class="table-scroll"><table class="data-table" style="width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.9rem">
                             <thead>
                                 <tr style="background: var(--cream); border-bottom: 2px solid #e5e7eb">
                                     <th style="padding: 0.75rem; text-align: left; font-weight: 600">Feature</th>
@@ -498,7 +524,7 @@
                         <p><strong>Choose HRA if:</strong> Your employer offers it with substantial employer contributions, you want employer-subsidized healthcare costs, you plan to retire with employer coverage continuation.</p>
 
                         <!-- SECTION 9: TOOLS & RESOURCES -->
-                        <h2>Best HSA Providers & Investment Platforms</h2>
+                        <h2 id="best-hsa-providers-investment-platforms">Best HSA Providers & Investment Platforms</h2>
 
                         <h3>Top-Tier HSA Providers (Investment-Focused)</h3>
                         <ul>
@@ -524,7 +550,7 @@
                         </ul>
 
                         <!-- SECTION 10: COMPREHENSIVE FAQ -->
-                        <h2>Frequently Asked Questions (15 Detailed Answers)</h2>
+                        <h2 id="frequently-asked-questions-15-detailed-answers">Frequently Asked Questions (15 Detailed Answers)</h2>
 
                         <h3>Q1: What exactly is a "qualified medical expense" for HSA purposes?</h3>
                         <p><strong>A:</strong> Qualified medical expenses are healthcare services and products necessary to diagnose, treat, or prevent disease or injury. This includes: doctors, dentists, vision care (exams, glasses, contacts, corrective surgery), medical equipment (wheelchairs, crutches, hearing aids), prescription medications, over-the-counter medications (some restrictions apply—now must be prescribed), mental health services, physical therapy, dental procedures (fillings, cleanings, braces, implants), vision correction (LASIK), hearing aids, but NOT cosmetic procedures (unless medically necessary), gym memberships, vitamins (unless prescribed), or personal care items. When in doubt, check IRS Publication 969 or ask your HSA provider in writing.</p>
@@ -642,13 +668,14 @@
                         </div>
                     </aside>
                 </div>
+                </div>
             </div>
         </section>
 
         <!-- SECTION 11: RELATED TOPICS & INTERNAL LINKS -->
         <section class="content-section">
             <div class="container-custom">
-                <h2>Related Tax Strategies & Topics</h2>
+                <h2 id="related-tax-strategies-topics">Related Tax Strategies & Topics</h2>
                 <p>HSA strategies work best when coordinated with other tax optimization approaches. Consider how these related strategies complement your overall wealth-building plan:</p>
                 <ul style="columns: 2; column-gap: 2rem; margin: 1.5rem 0">
                     <li><strong>Solo 401(k) Optimization:</strong> Combine HSA contributions with Solo 401(k) or SEP-IRA for self-employed individuals to maximize tax deductions</li>
@@ -667,7 +694,7 @@
         <!-- FAQ Section -->
         <section class="faq-section">
             <div class="container-custom">
-                <h2 class="faq-section__title">Still Have Questions? More FAQ Details</h2>
+                <h2 id="still-have-questions-more-faq-details" class="faq-section__title">Still Have Questions? More FAQ Details</h2>
                 <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
 
                     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
@@ -873,11 +900,11 @@
         <div class="container-custom">
             <div class="site-footer-grid">
                 <div class="site-footer-brand">
-                    <a href="/" class="site-brand"><img src="/assets/images/logo-240.webp" alt="" width="62" height="28"><span>Legacy Investing Show</span></a>
+                    <a href="/" class="site-brand">Legacy Investing Show</a>
                     <p>Tax strategy, wealth systems, and practical decision tools for professionals, investors, and founders.</p>
                 </div>
                 <div class="site-footer-group">
-                    <h2>Guides</h2>
+                    <p class="site-footer-title">Guides</p>
                     <ul>
                         <li><a href="/tax-strategies">Tax strategies</a></li>
                         <li><a href="/compare">Compare guides</a></li>
@@ -887,14 +914,14 @@
                     </ul>
                 </div>
                 <div class="site-footer-group">
-                    <h2>Tools</h2>
+                    <p class="site-footer-title">Tools</p>
                     <ul>
                         <li><a href="/tools">Free calculators</a></li>
                         <li><a href="/blog">Blog</a></li>
                     </ul>
                 </div>
                 <div class="site-footer-group">
-                    <h2>Company</h2>
+                    <p class="site-footer-title">Company</p>
                     <ul>
                         <li><a href="/about">About Preston Seo</a></li>
                         <li><a href="/success-stories">Student results</a></li>

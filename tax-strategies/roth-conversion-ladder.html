@@ -311,10 +311,7 @@
     <!-- Header / Navigation -->
     <header class="site-header">
         <nav class="container-custom site-nav" aria-label="Main navigation">
-            <a href="/" class="site-brand">
-                <img src="/assets/images/logo-240.webp" alt="" width="62" height="28">
-                <span>Legacy Investing Show</span>
-            </a>
+            <a href="/" class="site-brand">Legacy Investing Show</a>
             <div class="site-nav-links">
                 <a href="/" class="nav-link">Home</a>
                     <a href="/about" class="nav-link">About</a>
@@ -357,40 +354,64 @@
 
     <main id="main">
         <!-- Hero Section -->
-        <section class="strategy-hero">
+        <section class="guide-opener">
             <div class="container-custom">
-                <h1 class="strategy-title">Roth Conversion Ladder</h1>
-                <p class="guide-deck">Strategic tax planning technique for early retirees to access retirement funds penalty-free and tax-free before age 59½</p>
-
-                <dl class="guide-dl">
-                        <div>
-                            <dt>Earliest Withdrawal Age</dt>
-                            <dd>Any Age</dd>
+                <div class="opener">
+                    <div>
+                        <h1 class="opener__title">Roth Conversion Ladder</h1>
+                        <p class="opener__lede">Strategic tax planning technique for early retirees to access retirement funds penalty-free and tax-free before age 59½</p>
+                        <p class="guide-opener__meta">IRS Reference: IRC Sections 408A(d)(2), 72(t), Notice 87-13</p>
+                    </div>
+                    <aside class="opener__aside">
+                        <div class="figure figure--gold">
+                            <span class="figure__value">Any Age</span>
+                            <span class="figure__label">earliest withdrawal age</span>
                         </div>
-                        <div>
-                            <dt>5-Year Rule Wait</dt>
-                            <dd>Per Conversion</dd>
-                        </div>
-                        <div>
-                            <dt>Tax Benefit</dt>
-                            <dd>100% Tax-Free</dd>
-                        </div>
-                        <div>
-                            <dt>Penalty on Withdrawal</dt>
-                            <dd>$0</dd>
-                        </div>
-                    </dl>
-                <p class="guide-hero__meta">IRS Reference: IRC Sections 408A(d)(2), 72(t), Notice 87-13</p>
+                        <dl class="guide-dl">
+                            <div>
+                                <dt>5-Year Rule Wait</dt>
+                                <dd>Per Conversion</dd>
+                            </div>
+                            <div>
+                                <dt>Tax Benefit</dt>
+                                <dd>100% Tax-Free</dd>
+                            </div>
+                            <div>
+                                <dt>Penalty on Withdrawal</dt>
+                                <dd>$0</dd>
+                            </div>
+                        </dl>
+                    </aside>
+                </div>
             </div>
         </section>
 
         <!-- Content Section -->
         <section class="content-section">
             <div class="container-custom">
-                <div class="content-grid">
+                <div class="guide-layout">
+                    <details class="contents guide-contents" open>
+                        <summary>On this page</summary>
+                        <ol>
+                            <li><a href="#the-early-retiree-s-secret-to-tax-free-retirement-income">The Early Retiree&#39;s Secret to Tax-Free Retirement Income</a></li>
+                            <li><a href="#what-is-a-roth-conversion-ladder-complete-explanation">What Is a Roth Conversion Ladder? Complete Explanation</a></li>
+                            <li><a href="#who-benefits-most-from-roth-conversion-ladders">Who Benefits Most from Roth Conversion Ladders</a></li>
+                            <li><a href="#step-by-step-implementation-building-your-roth-conversion-la">Step-by-Step Implementation: Building Your Roth Conversion Ladder</a></li>
+                            <li><a href="#real-numbers-the-500-000-roth-conversion-ladder">Real Numbers: The $500,000 Roth Conversion Ladder</a></li>
+                            <li><a href="#expert-strategies-maximizing-your-roth-conversion-ladder">Expert Strategies: Maximizing Your Roth Conversion Ladder</a></li>
+                            <li><a href="#common-mistakes-pitfalls-to-avoid">Common Mistakes: Pitfalls to Avoid</a></li>
+                            <li><a href="#comparison-roth-conversion-ladder-vs-alternative-strategies">Comparison: Roth Conversion Ladder vs. Alternative Strategies</a></li>
+                            <li><a href="#tools-calculators-and-resources">Tools, Calculators, and Resources</a></li>
+                            <li><a href="#related-tax-strategies-techniques">Related Tax Strategies &amp; Techniques</a></li>
+                            <li><a href="#frequently-asked-questions">Frequently Asked Questions</a></li>
+                            <li><a href="#frequently-asked-questions-2">Frequently Asked Questions</a></li>
+                            <li><a href="#ready-to-build-your-early-retirement-strategy">Ready to Build Your Early Retirement Strategy?</a></li>
+                        </ol>
+                    </details>
+                    <div class="guide-column">
                     <div class="prose-content">
                         <!-- Hook & Quick Summary -->
-                        <h2>The Early Retiree's Secret to Tax-Free Retirement Income</h2>
+                        <h2 id="the-early-retiree-s-secret-to-tax-free-retirement-income">The Early Retiree's Secret to Tax-Free Retirement Income</h2>
                         <p>Imagine retiring at 45 and accessing your retirement savings completely tax-free and penalty-free every single year until age 59½. No 10% early withdrawal penalties. No income taxes. Just the money you need, when you need it. This isn't a fantasy—it's the Roth Conversion Ladder, one of the most powerful yet underutilized tax strategies available to people planning early retirement.</p>
 
                         <div style="background: var(--cream-dark); padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem">
@@ -408,7 +429,7 @@
                         </ul>
 
                         <!-- Comprehensive Definition -->
-                        <h2>What Is a Roth Conversion Ladder? Complete Explanation</h2>
+                        <h2 id="what-is-a-roth-conversion-ladder-complete-explanation">What Is a Roth Conversion Ladder? Complete Explanation</h2>
                         <p>A Roth Conversion Ladder is a multi-year tax strategy where an individual converts portions of a Traditional IRA or 401(k) to a Roth IRA in calculated increments over several years, creating sequential "rungs" of conversions. Each rung becomes available for withdrawal after a 5-year holding period (per IRC Section 408A(d)(2)(B)). The ladder structure allows early retirees to systematically access retirement funds before age 59½ completely tax-free and penalty-free.</p>
 
                         <h3>The Historical Development</h3>
@@ -421,7 +442,7 @@
                         <p>IRC Section 408A(d)(2)(B) requires that converted funds remain in the Roth IRA for five tax years before withdrawals are "qualified" and tax-free. This prevents the strategy from becoming pure tax-avoidance (converting and immediately re-accessing funds). The five-year period is calendar-based: a 2026 conversion is held until January 1, 2031, when it becomes accessible without penalty or taxation on the converted principal (earnings have separate rules).</p>
 
                         <!-- Who Benefits Analysis -->
-                        <h2>Who Benefits Most from Roth Conversion Ladders</h2>
+                        <h2 id="who-benefits-most-from-roth-conversion-ladders">Who Benefits Most from Roth Conversion Ladders</h2>
                         <p>The Roth Conversion Ladder is specifically designed for early retirees but benefits various financial situations. Understanding your profile helps determine if this strategy aligns with your retirement goals.</p>
 
                         <h3>Ideal Candidate #1: Early Retirees with Traditional IRAs (Ages 40-55)</h3>
@@ -434,7 +455,7 @@
                         <p><strong>Profile:</strong> 48-year-old business owner with $800,000 in a Solo 401(k) who plans to sell their business and semi-retire in 3 years. They implement a 10-year ladder starting today (while still working) with $80,000 annual conversions. This spreads conversion taxes across working years when income may be higher anyway (offsetting some tax burden). After business sale and semi-retirement, their ladder provides $80,000 annually tax-free from age 51-61, transitioning smoothly to standard retirement at 62-65.</p>
 
                         <!-- Step-by-Step Implementation -->
-                        <h2>Step-by-Step Implementation: Building Your Roth Conversion Ladder</h2>
+                        <h2 id="step-by-step-implementation-building-your-roth-conversion-la">Step-by-Step Implementation: Building Your Roth Conversion Ladder</h2>
                         <p>Successfully executing a Roth Conversion Ladder requires careful planning and disciplined execution. Following these steps ensures you maximize tax efficiency and avoid common pitfalls.</p>
 
                         <h3>Step 1: Calculate Your Total Income Need Through Age 59½</h3>
@@ -462,7 +483,7 @@
                         <p>Once you turn 59½, the entire Roth IRA becomes accessible with no penalties. Your ladder's purpose transitions from "access tool" to "wealth repository." At this point, you can take qualified distributions from the Roth entirely tax-free. If your ladder has grown to $800,000 by age 59, you now have tax-free income access for life. You can also switch to standard Roth IRA distribution rules and begin Required Minimum Distributions at age 73 if applicable (Roth IRAs have no RMD during the account owner's lifetime, but beneficiaries do).</p>
 
                         <!-- Real Numbers Example -->
-                        <h2>Real Numbers: The $500,000 Roth Conversion Ladder</h2>
+                        <h2 id="real-numbers-the-500-000-roth-conversion-ladder">Real Numbers: The $500,000 Roth Conversion Ladder</h2>
                         <p>Let's walk through a complete real-world example to illustrate how dramatically this strategy can impact your early retirement.</p>
 
                         <h3>The Scenario</h3>
@@ -472,7 +493,7 @@
                         <p>Sarah builds a 15-year conversion ladder ($60,000 annually × 15 years = $900,000 total need, but she only has $500,000, so she'll combine this with taxable account withdrawals). Here's her year-by-year conversion schedule:</p>
 
                         <div style="background: var(--cream-dark); padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem; overflow-x: auto">
-                            <div class="table-scroll"><table style="width: 100%; border-collapse: collapse; font-size: 0.9rem">
+                            <div class="table-scroll"><table class="data-table" style="width: 100%; border-collapse: collapse; font-size: 0.9rem">
                                 <tr style="background: var(--cream-dark); font-weight: bold">
                                     <td style="padding: 0.75rem; border: 1px solid #10b981">Year</td>
                                     <td style="padding: 0.75rem; border: 1px solid #10b981">Conversion Amount</td>
@@ -541,7 +562,7 @@
                         <p>By converting $500,000 early and paying $120,000-$140,000 in upfront taxes, Sarah creates over $4.5 million in tax-free wealth that never generates income tax, Medicare premium surcharges, or tax-driven required distributions. This is the power of the ladder compounded over decades.</p>
 
                         <!-- Expert Strategies -->
-                        <h2>Expert Strategies: Maximizing Your Roth Conversion Ladder</h2>
+                        <h2 id="expert-strategies-maximizing-your-roth-conversion-ladder">Expert Strategies: Maximizing Your Roth Conversion Ladder</h2>
                         <p>Advanced practitioners layer additional strategies atop the basic ladder to optimize tax efficiency further and create backup income sources.</p>
 
                         <h3>Strategy 1: Combine Ladder with Rule 72(t) SEPP</h3>
@@ -563,7 +584,13 @@
                         <p>Married couples can each execute independent ladders if both have retirement accounts. Couple with $400,000 in combined IRAs ($200,000 each) can execute: Spouse A converts $50,000 annually, Spouse B converts $50,000 annually = $100,000 total annual conversions. If filing jointly at 24% bracket normally, but semi-retired collectively at 22%, they save 2% on every conversion dollar: $100,000 × 2% = $2,000 annually tax savings. Over 10 years = $20,000 total tax savings. Plus, they can more efficiently manage pro-rata rules by isolating each spouse's IRA accounts.</p>
 
                         <!-- Common Mistakes -->
-                        <h2>Common Mistakes: Pitfalls to Avoid</h2>
+                        <aside class="guide-inset">
+                            <figure class="pull-quote">
+                                <blockquote><p>Married couples can each execute independent ladders if both have retirement accounts.</p></blockquote>
+                            </figure>
+                        </aside>
+
+                        <h2 id="common-mistakes-pitfalls-to-avoid">Common Mistakes: Pitfalls to Avoid</h2>
                         <p>Even well-intentioned early retirees make costly errors executing conversion ladders. Understanding these mistakes helps you avoid them.</p>
 
                         <h3>Mistake 1: Forgetting to File Form 8606</h3>
@@ -585,10 +612,10 @@
                         <p>You estimate $50,000 annual retirement needs and build a $500,000 ladder (10 years × $50,000). Then inflation is higher than expected, healthcare costs spike, or investment returns disappoint. Your ladder becomes insufficient. Calculate conservatively. If you might need $60,000, build a ladder sized for that. Better to have excess that compounds tax-free than insufficient income forcing you back to work or triggering early Social Security at 62.</p>
 
                         <!-- Comparison Section -->
-                        <h2>Comparison: Roth Conversion Ladder vs. Alternative Strategies</h2>
+                        <h2 id="comparison-roth-conversion-ladder-vs-alternative-strategies">Comparison: Roth Conversion Ladder vs. Alternative Strategies</h2>
                         <p>How does the Roth Conversion Ladder compare to other early-retirement income strategies? Understanding trade-offs helps you choose the right approach.</p>
 
-                        <div class="table-scroll"><table class="comparison-table">
+                        <div class="table-scroll"><table class="data-table">
                             <thead>
                                 <tr>
                                     <th>Strategy</th>
@@ -645,7 +672,7 @@
                         <p><strong>Roth Ladder vs. Working Longer:</strong> Simplest option is to work until 59½ and then access retirement accounts penalty-free. This eliminates conversion complexity but requires additional working years. If you value early retirement more than simplicity, Ladder is worthwhile. Each extra working year costs 1-2 years of early retirement—significant over a lifetime.</p>
 
                         <!-- Tools & Resources -->
-                        <h2>Tools, Calculators, and Resources</h2>
+                        <h2 id="tools-calculators-and-resources">Tools, Calculators, and Resources</h2>
                         <p>Successfully executing a Roth Conversion Ladder requires tracking multiple conversion years, maturity dates, and tax scenarios. These tools simplify the process.</p>
 
                         <h3>Essential Spreadsheet Tools</h3>
@@ -676,7 +703,7 @@
                         </ul>
 
                         <!-- Related Strategies -->
-                        <h2>Related Tax Strategies & Techniques</h2>
+                        <h2 id="related-tax-strategies-techniques">Related Tax Strategies & Techniques</h2>
                         <p>Advanced practitioners combine the Roth Conversion Ladder with complementary strategies to optimize their early retirement tax situation comprehensively.</p>
 
                         <h3>Backdoor Roth IRA Integration</h3>
@@ -692,7 +719,7 @@
                         <p>Use capital losses from taxable account investments to offset conversion taxes. This requires discipline and active portfolio management but can meaningfully reduce conversion tax bills over a 10-year ladder period.</p>
 
                         <!-- FAQ Section -->
-                        <h2>Frequently Asked Questions</h2>
+                        <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
                     </div>
 
                     <!-- Sidebar -->
@@ -768,13 +795,14 @@
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
         </section>
 
         <!-- FAQ Section -->
         <section class="faq-section">
             <div class="container-custom">
-                <h2 class="faq-section__title">Frequently Asked Questions</h2>
+                <h2 id="frequently-asked-questions-2" class="faq-section__title">Frequently Asked Questions</h2>
                 <div class="faq-list">
                     <div class="faq-item">
                         <button class="faq-toggle" aria-expanded="false">
@@ -933,7 +961,7 @@
         <section class="cta-section">
             <div class="container-custom">
                 <div class="cta-card">
-                    <h2 class="cta-card__title">Ready to Build Your Early Retirement Strategy?</h2>
+                    <h2 id="ready-to-build-your-early-retirement-strategy" class="cta-card__title">Ready to Build Your Early Retirement Strategy?</h2>
                     <p class="cta-card__text">A Roth Conversion Ladder could unlock thousands in tax savings and enable your early retirement dreams. Explore how this strategy fits into your comprehensive financial plan.</p>
                     <a href="/blog/" class="cta-card__button">
                         <span>Explore Our Resources</span>
@@ -951,11 +979,11 @@
         <div class="container-custom">
             <div class="site-footer-grid">
                 <div class="site-footer-brand">
-                    <a href="/" class="site-brand"><img src="/assets/images/logo-240.webp" alt="" width="62" height="28"><span>Legacy Investing Show</span></a>
+                    <a href="/" class="site-brand">Legacy Investing Show</a>
                     <p>Tax strategy, wealth systems, and practical decision tools for professionals, investors, and founders.</p>
                 </div>
                 <div class="site-footer-group">
-                    <h2>Guides</h2>
+                    <p class="site-footer-title">Guides</p>
                     <ul>
                         <li><a href="/tax-strategies">Tax strategies</a></li>
                         <li><a href="/compare">Compare guides</a></li>
@@ -965,14 +993,14 @@
                     </ul>
                 </div>
                 <div class="site-footer-group">
-                    <h2>Tools</h2>
+                    <p class="site-footer-title">Tools</p>
                     <ul>
                         <li><a href="/tools">Free calculators</a></li>
                         <li><a href="/blog">Blog</a></li>
                     </ul>
                 </div>
                 <div class="site-footer-group">
-                    <h2>Company</h2>
+                    <p class="site-footer-title">Company</p>
                     <ul>
                         <li><a href="/about">About Preston Seo</a></li>
                         <li><a href="/success-stories">Student results</a></li>

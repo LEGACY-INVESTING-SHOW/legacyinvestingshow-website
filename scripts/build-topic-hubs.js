@@ -291,34 +291,52 @@ ${renderHead({ title: topic.title, description: topic.description, canonical, ex
 
     ${renderSiteHeader('/blog')}
 
-    <div class="container-custom">
-        <nav aria-label="Breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Home</a></li>
-                <li class="breadcrumb__item"><a href="/topics" class="breadcrumb__link">Topics</a></li>
-                <li class="breadcrumb__item"><span class="breadcrumb__current">${esc(topic.title)}</span></li>
-            </ol>
-        </nav>
-    </div>
-
     <main id="main">
-        <section class="guide-hero">
+        <section class="guide-opener">
             <div class="container-custom">
-                <h1 class="guide-hero__title">${esc(topic.title)}</h1>
-                <p class="guide-deck">${esc(topic.intro)}</p>
+                <nav aria-label="Breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Home</a></li>
+                        <li class="breadcrumb__item"><a href="/topics" class="breadcrumb__link">Topics</a></li>
+                        <li class="breadcrumb__item"><span class="breadcrumb__current">${esc(topic.title)}</span></li>
+                    </ol>
+                </nav>
+                <div class="opener">
+                    <div>
+                        <h1 class="opener__title">${esc(topic.title)}</h1>
+                        <p class="opener__lede">${esc(topic.intro)}</p>
+                    </div>
+                    <aside class="opener__aside">
+                        <div class="figure figure--gold">
+                            <span class="figure__value">${topPosts.length}</span>
+                            <span class="figure__label">articles in this hub, newest first</span>
+                        </div>
+                    </aside>
+                </div>
             </div>
         </section>
 
-        <section class="guide-section">
+        <section class="section">
             <div class="container-custom">
-                <div class="guide-prose">
-                    <h2>${topPosts.length} article${topPosts.length === 1 ? '' : 's'}</h2>
-                    <ul class="guide-rows">
+                <div class="marginalia">
+                    <div class="marginalia__main sheet guide-sheet">
+                        <div class="section__head">
+                            <h2>Articles in this hub</h2>
+                            <p>Newest first. Every one is indexable and kept current.</p>
+                        </div>
+                        <ul class="guide-rows">
 ${topPosts.map((post) => renderPostRow(post)).join('\n')}
-                    </ul>
-
-                    <h2>Other topics</h2>
-                    <p class="guide-row__note">${renderTopicNav(topic.slug)}</p>
+                        </ul>
+                    </div>
+                    <aside class="marginalia__aside guide-aside">
+                        <div>
+                            <p class="guide-aside__title">Other topics</p>
+                            <dl class="dl-terms">
+${TOPIC_HUBS.filter((entry) => entry.slug !== topic.slug).map((entry) => `                                <dt><a href="/topics/${esc(entry.slug)}">${esc(entry.title)}</a></dt>
+                                <dd>${esc(entry.description)}</dd>`).join('\n')}
+                            </dl>
+                        </div>
+                    </aside>
                 </div>
             </div>
         </section>
@@ -378,37 +396,65 @@ ${renderHead({ title: 'Topics', description, canonical, extraSchema: [schema, br
 
     ${renderSiteHeader('/blog')}
 
-    <div class="container-custom">
-        <nav aria-label="Breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Home</a></li>
-                <li class="breadcrumb__item"><span class="breadcrumb__current">Topics</span></li>
-            </ol>
-        </nav>
-    </div>
-
     <main id="main">
-        <section class="guide-hero">
+        <section class="guide-opener">
             <div class="container-custom">
-                <h1 class="guide-hero__title">Topics</h1>
-                <p class="guide-deck">The blog archive is broad. These seven hubs group the articles by the decision they help with, so a question leads to the strongest guides on it rather than to the newest post.</p>
+                <nav aria-label="Breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Home</a></li>
+                        <li class="breadcrumb__item"><span class="breadcrumb__current">Topics</span></li>
+                    </ol>
+                </nav>
+                <div class="opener">
+                    <div>
+                        <h1 class="opener__title">Topics</h1>
+                        <p class="opener__lede">The blog archive is broad. These hubs group the articles by the decision they help with, so a question leads to the strongest guides on it rather than to the newest post.</p>
+                    </div>
+                    <aside class="opener__aside">
+                        <div class="figure figure--gold">
+                            <span class="figure__value">${TOPIC_HUBS.length}</span>
+                            <span class="figure__label">reading paths through the archive</span>
+                        </div>
+                    </aside>
+                </div>
             </div>
         </section>
 
-        <section class="guide-section">
+        <section class="section band--cream-dark">
             <div class="container-custom">
-                <div class="guide-prose">
+                <div class="section__head">
                     <h2>The hubs</h2>
-                    <ul class="guide-rows">
-${rows}
-                    </ul>
+                    <p>Start with the one that matches the decision in front of you.</p>
+                </div>
+                <dl class="dl-terms dl-terms--cols">
+${TOPIC_HUBS.map((topic) => `                    <dt><a href="/topics/${esc(topic.slug)}">${esc(topic.title)}</a></dt>
+                    <dd>${esc(topic.description)}</dd>`).join('\n')}
+                </dl>
+            </div>
+        </section>
 
-                    <h2>Elsewhere on the site</h2>
-                    <ul class="guide-linklist">
-                        <li><a href="/tax-strategies">Tax strategies</a> — every strategy guide in one table.</li>
-                        <li><a href="/compare">Compare guides</a> — head-to-head decisions.</li>
-                        <li><a href="/blog">The full blog archive</a> — everything, newest first.</li>
-                    </ul>
+        <section class="section">
+            <div class="container-custom">
+                <div class="marginalia">
+                    <div class="marginalia__main sheet guide-sheet">
+                        <div class="guide-prose">
+                            <h2>Elsewhere on the site</h2>
+                            <p>The hubs cover the article archive. The decision libraries sit alongside them: the strategy guides state a qualification test and a worked example, and the compare guides take two strategies that both sound right and show where each one wins.</p>
+                        </div>
+                    </div>
+                    <aside class="marginalia__aside guide-aside">
+                        <div>
+                            <p class="guide-aside__title">Decision libraries</p>
+                            <dl class="dl-terms">
+                                <dt><a href="/tax-strategies">Tax strategies</a></dt>
+                                <dd>Every strategy guide in one table.</dd>
+                                <dt><a href="/compare">Compare guides</a></dt>
+                                <dd>Head-to-head decisions with a scorecard.</dd>
+                                <dt><a href="/blog">The full archive</a></dt>
+                                <dd>Everything, newest first.</dd>
+                            </dl>
+                        </div>
+                    </aside>
                 </div>
             </div>
         </section>

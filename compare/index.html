@@ -48,10 +48,7 @@
 
     <header class="site-header">
         <nav class="container-custom site-nav" aria-label="Main navigation">
-            <a href="/" class="site-brand">
-                <img src="/assets/images/logo-240.webp" alt="" width="62" height="28">
-                <span>Legacy Investing Show</span>
-            </a>
+            <a href="/" class="site-brand">Legacy Investing Show</a>
             <div class="site-nav-links">
                 <a href="/" class="nav-link">Home</a>
                     <a href="/about" class="nav-link">About</a>
@@ -74,131 +71,103 @@
         </nav>
     </header>
 
-    <div class="container-custom">
-        <nav aria-label="Breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Home</a></li>
-                <li class="breadcrumb__item"><span class="breadcrumb__current">Compare</span></li>
-            </ol>
-        </nav>
-    </div>
-
     <main id="main">
-        <section class="guide-hero">
+        <section class="guide-opener">
             <div class="container-custom">
-                <h1 class="guide-hero__title">Comparison guides</h1>
-                <p class="guide-deck">19 decisions where two options both look reasonable. Each guide scores the tradeoffs, works an example, names the failure modes, and sets out a 90-day plan.</p>
+                <nav aria-label="Breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Home</a></li>
+                        <li class="breadcrumb__item"><span class="breadcrumb__current">Compare</span></li>
+                    </ol>
+                </nav>
+                <div class="opener">
+                    <div>
+                        <h1 class="opener__title">Comparison guides</h1>
+                        <p class="opener__lede">Decisions where two options both look reasonable. Each guide scores the tradeoffs, works an example, names the failure modes, and sets out a 90-day plan.</p>
+                        <p class="guide-opener__meta">Pick one primary objective first — lower tax, better cash flow, more liquidity, or simpler execution. The two options rarely win on the same axis.</p>
+                    </div>
+                    <aside class="opener__aside">
+                        <div class="figure figure--gold">
+                            <span class="figure__value">19</span>
+                            <span class="figure__label">head-to-head guides, each with a scorecard and a worked example</span>
+                        </div>
+                    </aside>
+                </div>
             </div>
         </section>
 
-        <section class="guide-section">
+        <section class="section">
             <div class="container-custom">
-                <div class="guide-prose">
-                    <h2>How to use them</h2>
-                    <p>Pick one primary objective first — lower tax, better cash flow, more liquidity, or simpler execution — because the two options rarely win on the same axis. Then run both paths through the scorecard and the scenario model with conservative assumptions.</p>
-                    <p>Set the documentation standard before you execute, not at year end, and re-score the decision annually as income, law, and circumstances change.</p>
-
-                    <h2>The guides</h2>
-                    <ul class="guide-rows">
-                        <li>
-                            <h3 class="guide-row__title"><a href="/compare/augusta-rule-vs-home-office-deduction-s-corp">Augusta Rule vs Home Office Deduction for S-Corp Owners</a></h3>
-                            <p>A real-world comparison for S-corp owners choosing between Augusta Rule payments and accountable-plan home office reimbursements, with documentation standards and a worked scenario.</p>
-                            <p class="guide-row__note">Verdict: Bigger write-off is not the whole game.</p>
-                        </li>
-                        <li>
-                            <h3 class="guide-row__title"><a href="/compare/mfj-vs-mfs-high-income-student-loans">MFJ vs MFS for High-Income Couples with Student Loans</a></h3>
-                            <p>A cash-flow-first comparison of MFJ vs MFS when income-driven repayment and high income collide, with a worked example and annual review checklist.</p>
-                            <p class="guide-row__note">Verdict: Model tax and loan payments together.</p>
-                        </li>
-                        <li>
-                            <h3 class="guide-row__title"><a href="/compare/safe-harbor-vs-annualized-income-1099">Safe Harbor vs Annualized Income Method for Uneven 1099 Income</a></h3>
-                            <p>A practical comparison for freelancers with lumpy income: safe harbor vs annualized estimated taxes, with decision matrix and execution controls.</p>
-                            <p class="guide-row__note">Verdict: Simplicity and precision rarely peak together.</p>
-                        </li>
-                        <li>
-                            <h3 class="guide-row__title"><a href="/compare/cost-segregation-vs-str-loophole-w2-passive-loss">Cost Segregation vs STR Loophole for W-2 Professionals with Passive Loss Limits</a></h3>
-                            <p>A usable-loss comparison for W-2 professionals: cost segregation vs STR participation, with recapture and documentation notes.</p>
-                            <p class="guide-row__note">Verdict: Usable loss matters more than a headline deduction.</p>
-                        </li>
-                        <li>
-                            <h3 class="guide-row__title"><a href="/compare/721-upreit-vs-dst-aging-landlords">721 UPREIT vs DST for Aging Landlords Exiting Active Management</a></h3>
-                            <p>A comparison for landlords shifting from active management to passive income: 721 UPREIT exchange vs DST, focused on liquidity, control, and concentration risk.</p>
-                            <p class="guide-row__note">Verdict: Control, liquidity, and concentration decide it.</p>
-                        </li>
-                        <li>
-                            <h3 class="guide-row__title"><a href="/compare/pricelabs-vs-pms-native-pricing-multi-property">PriceLabs Rule-Based Pricing vs PMS Native Pricing for Multi-Property Operators</a></h3>
-                            <p>A practical comparison for STR operators running multiple listings: PriceLabs rule sets vs PMS native pricing, with guardrails, failure modes, and an execution plan.</p>
-                            <p class="guide-row__note">Verdict: Portfolio complexity decides the winner.</p>
-                        </li>
-                        <li>
-                            <h3 class="guide-row__title"><a href="/compare/solo-401k-loan-vs-heloc-down-payment">Solo 401(k) Loan vs HELOC for Down Payment Funding</a></h3>
-                            <p>A comparison for business owners and high earners funding a down payment: Solo 401(k) loan vs HELOC, focused on risk, flexibility, and real cost.</p>
-                            <p class="guide-row__note">Verdict: Funding speed can hide long-term drag.</p>
-                        </li>
-                        <li>
-                            <h3 class="guide-row__title"><a href="/compare/mark-to-market-vs-capital-gains-active-traders">Mark-to-Market Election vs Capital Gains for Active Traders</a></h3>
-                            <p>A comparison for active traders: mark-to-market election vs capital gains treatment, focused on qualification, wash-sale exposure, and long-term flexibility.</p>
-                            <p class="guide-row__note">Verdict: Trader status decides everything.</p>
-                        </li>
-                        <li>
-                            <h3 class="guide-row__title"><a href="/compare/qcd-first-vs-roth-conversion-first-irmaa">QCD First vs Roth Conversion First to Manage IRMAA</a></h3>
-                            <p>A retirement planning comparison: QCD-first vs Roth-conversion-first, focused on IRMAA, RMD timing, and charitable intent.</p>
-                            <p class="guide-row__note">Verdict: Income timing can move Medicare costs.</p>
-                        </li>
-                        <li>
-                            <h3 class="guide-row__title"><a href="/compare/installment-sale-vs-deferred-sales-trust-small-business-exit">Installment Sale vs Deferred Sales Trust for a Small Business Exit</a></h3>
-                            <p>A business-exit comparison: installment sale vs deferred sales trust concepts, focused on timing, risk, fees, and realistic execution.</p>
-                            <p class="guide-row__note">Verdict: Simple deferral and layered complexity are not the same thing.</p>
-                        </li>
-                        <li>
-                            <h3 class="guide-row__title"><a href="/compare/s-corp-election-vs-sole-proprietorship-high-income-consultants">S-Corp Election vs Sole Proprietorship for High-Income Consultants</a></h3>
-                            <p>A consultant-focused comparison of S-corp election vs staying a sole proprietor, focused on payroll friction, QBI interaction, and realistic tax savings.</p>
-                            <p class="guide-row__note">Verdict: Savings only count if payroll reality holds.</p>
-                        </li>
-                        <li>
-                            <h3 class="guide-row__title"><a href="/compare/backdoor-roth-vs-taxable-brokerage-high-income-earners">Backdoor Roth vs Taxable Brokerage for High-Income Earners</a></h3>
-                            <p>A high-income comparison of backdoor Roth contributions vs taxable brokerage funding, focused on pro-rata friction, liquidity, and after-tax flexibility.</p>
-                            <p class="guide-row__note">Verdict: Tax-free space is great until pro-rata ruins the story.</p>
-                        </li>
-                        <li>
-                            <h3 class="guide-row__title"><a href="/compare/capital-gains-harvesting-vs-roth-conversion-early-retirees">Capital Gains Harvesting vs Roth Conversion for Early Retirees</a></h3>
-                            <p>A tax-bracket comparison for early retirees choosing between capital gains harvesting and Roth conversions, focused on bracket management, IRMAA, and long-term account sequencing.</p>
-                            <p class="guide-row__note">Verdict: The cheaper move this year may cost more later.</p>
-                        </li>
-                        <li>
-                            <h3 class="guide-row__title"><a href="/compare/mortgage-payoff-vs-investing">Paying Off Your Mortgage Early vs Investing the Difference</a></h3>
-                            <p>Guaranteed interest savings from extra mortgage payments versus market returns on the same money: break-even math, risk, liquidity, and taxes on a $400,000 loan.</p>
-                            <p class="guide-row__note">Verdict: A guaranteed 6.7% return beats a hoped-for 7% only if certainty is worth more to you than upside.</p>
-                        </li>
-                        <li>
-                            <h3 class="guide-row__title"><a href="/compare/cost-segregation-vs-bonus-depreciation">Cost Segregation vs Bonus Depreciation</a></h3>
-                            <p>When a cost segregation study is worth the fee versus taking bonus depreciation only on assets you already have on invoices, with recapture and usable-loss gates.</p>
-                            <p class="guide-row__note">Verdict: The study creates buckets. Bonus is the first-year rate on those buckets.</p>
-                        </li>
-                        <li>
-                            <h3 class="guide-row__title"><a href="/compare/1031-exchange-vs-opportunity-zones">1031 Exchange vs Opportunity Zones</a></h3>
-                            <p>A sale-of-property comparison of like-kind exchange deferral versus investing capital gain in a qualified opportunity fund, including clocks, basis, and the 10-year hold.</p>
-                            <p class="guide-row__note">Verdict: Stay in replacement real estate, or move the gain into a fund with a later recognition date.</p>
-                        </li>
-                        <li>
-                            <h3 class="guide-row__title"><a href="/compare/real-estate-professional-vs-str-loophole">Real Estate Professional Status vs STR Loophole</a></h3>
-                            <p>Hour tests, average stay length, and usable rental losses for W-2 households choosing real estate professional status versus short-term rental material participation.</p>
-                            <p class="guide-row__note">Verdict: REPS is a life. The STR path is a property and a log.</p>
-                        </li>
-                        <li>
-                            <h3 class="guide-row__title"><a href="/compare/s-corp-vs-qbi-deduction">S-Corp vs QBI Deduction</a></h3>
-                            <p>How an S-corp reasonable salary changes self-employment tax and qualified business income, including SSTB phaseouts and the wage limitation.</p>
-                            <p class="guide-row__note">Verdict: An S-corp is a payroll structure. QBI is a later deduction that salary can shrink or unlock.</p>
-                        </li>
-                        <li>
-                            <h3 class="guide-row__title"><a href="/compare/donor-advised-fund-vs-charitable-trust">Donor-Advised Fund vs Charitable Trust</a></h3>
-                            <p>When a donor-advised fund is enough for bunching appreciated stock versus when a charitable remainder trust is the vehicle because you still need an income stream.</p>
-                            <p class="guide-row__note">Verdict: Use a DAF to give and walk away. Use a CRT when the same assets must still pay you.</p>
-                        </li>
-                    </ul>
-
-                    <p class="guide-row__note">Educational content only. Results vary with your facts. Confirm the decision with a qualified tax professional.</p>
+                <div class="marginalia">
+                    <div class="marginalia__main sheet guide-sheet">
+                        <div class="guide-prose">
+                            <h2>How to use them</h2>
+                            <p>Run both paths through the scorecard and the scenario model with conservative assumptions, then pressure-test the likely winner against the edge cases. Set the documentation standard before you execute, not at year end.</p>
+                            <p>Re-score the decision annually. Income, law, and circumstances change, and the option that lost last year is often the one that fits now.</p>
+                        </div>
+                    </div>
+                    <aside class="marginalia__aside guide-aside">
+                        <div>
+                            <p class="guide-aside__title">Elsewhere on the site</p>
+                            <dl class="dl-terms">
+                                <dt><a href="/tax-strategies">Tax strategies</a></dt>
+                                <dd>Every strategy guide in one table, grouped by the income or asset it applies to.</dd>
+                                <dt><a href="/topics">Topics</a></dt>
+                                <dd>Reading paths through the article archive.</dd>
+                            </dl>
+                        </div>
+                    </aside>
                 </div>
+            </div>
+        </section>
+
+        <section class="section band--cream-dark">
+            <div class="container-custom">
+                <div class="section__head">
+                    <h2>The guides</h2>
+                    <p>Each one names the verdict up front, then shows the facts that would change it.</p>
+                </div>
+                <dl class="dl-terms dl-terms--cols">
+                    <dt><a href="/compare/augusta-rule-vs-home-office-deduction-s-corp">Augusta Rule vs Home Office Deduction for S-Corp Owners</a></dt>
+                    <dd>A real-world comparison for S-corp owners choosing between Augusta Rule payments and accountable-plan home office reimbursements, with documentation standards and a worked scenario. <span class="dl-terms__note">Verdict: Bigger write-off is not the whole game.</span></dd>
+                    <dt><a href="/compare/mfj-vs-mfs-high-income-student-loans">MFJ vs MFS for High-Income Couples with Student Loans</a></dt>
+                    <dd>A cash-flow-first comparison of MFJ vs MFS when income-driven repayment and high income collide, with a worked example and annual review checklist. <span class="dl-terms__note">Verdict: Model tax and loan payments together.</span></dd>
+                    <dt><a href="/compare/safe-harbor-vs-annualized-income-1099">Safe Harbor vs Annualized Income Method for Uneven 1099 Income</a></dt>
+                    <dd>A practical comparison for freelancers with lumpy income: safe harbor vs annualized estimated taxes, with decision matrix and execution controls. <span class="dl-terms__note">Verdict: Simplicity and precision rarely peak together.</span></dd>
+                    <dt><a href="/compare/cost-segregation-vs-str-loophole-w2-passive-loss">Cost Segregation vs STR Loophole for W-2 Professionals with Passive Loss Limits</a></dt>
+                    <dd>A usable-loss comparison for W-2 professionals: cost segregation vs STR participation, with recapture and documentation notes. <span class="dl-terms__note">Verdict: Usable loss matters more than a headline deduction.</span></dd>
+                    <dt><a href="/compare/721-upreit-vs-dst-aging-landlords">721 UPREIT vs DST for Aging Landlords Exiting Active Management</a></dt>
+                    <dd>A comparison for landlords shifting from active management to passive income: 721 UPREIT exchange vs DST, focused on liquidity, control, and concentration risk. <span class="dl-terms__note">Verdict: Control, liquidity, and concentration decide it.</span></dd>
+                    <dt><a href="/compare/pricelabs-vs-pms-native-pricing-multi-property">PriceLabs Rule-Based Pricing vs PMS Native Pricing for Multi-Property Operators</a></dt>
+                    <dd>A practical comparison for STR operators running multiple listings: PriceLabs rule sets vs PMS native pricing, with guardrails, failure modes, and an execution plan. <span class="dl-terms__note">Verdict: Portfolio complexity decides the winner.</span></dd>
+                    <dt><a href="/compare/solo-401k-loan-vs-heloc-down-payment">Solo 401(k) Loan vs HELOC for Down Payment Funding</a></dt>
+                    <dd>A comparison for business owners and high earners funding a down payment: Solo 401(k) loan vs HELOC, focused on risk, flexibility, and real cost. <span class="dl-terms__note">Verdict: Funding speed can hide long-term drag.</span></dd>
+                    <dt><a href="/compare/mark-to-market-vs-capital-gains-active-traders">Mark-to-Market Election vs Capital Gains for Active Traders</a></dt>
+                    <dd>A comparison for active traders: mark-to-market election vs capital gains treatment, focused on qualification, wash-sale exposure, and long-term flexibility. <span class="dl-terms__note">Verdict: Trader status decides everything.</span></dd>
+                    <dt><a href="/compare/qcd-first-vs-roth-conversion-first-irmaa">QCD First vs Roth Conversion First to Manage IRMAA</a></dt>
+                    <dd>A retirement planning comparison: QCD-first vs Roth-conversion-first, focused on IRMAA, RMD timing, and charitable intent. <span class="dl-terms__note">Verdict: Income timing can move Medicare costs.</span></dd>
+                    <dt><a href="/compare/installment-sale-vs-deferred-sales-trust-small-business-exit">Installment Sale vs Deferred Sales Trust for a Small Business Exit</a></dt>
+                    <dd>A business-exit comparison: installment sale vs deferred sales trust concepts, focused on timing, risk, fees, and realistic execution. <span class="dl-terms__note">Verdict: Simple deferral and layered complexity are not the same thing.</span></dd>
+                    <dt><a href="/compare/s-corp-election-vs-sole-proprietorship-high-income-consultants">S-Corp Election vs Sole Proprietorship for High-Income Consultants</a></dt>
+                    <dd>A consultant-focused comparison of S-corp election vs staying a sole proprietor, focused on payroll friction, QBI interaction, and realistic tax savings. <span class="dl-terms__note">Verdict: Savings only count if payroll reality holds.</span></dd>
+                    <dt><a href="/compare/backdoor-roth-vs-taxable-brokerage-high-income-earners">Backdoor Roth vs Taxable Brokerage for High-Income Earners</a></dt>
+                    <dd>A high-income comparison of backdoor Roth contributions vs taxable brokerage funding, focused on pro-rata friction, liquidity, and after-tax flexibility. <span class="dl-terms__note">Verdict: Tax-free space is great until pro-rata ruins the story.</span></dd>
+                    <dt><a href="/compare/capital-gains-harvesting-vs-roth-conversion-early-retirees">Capital Gains Harvesting vs Roth Conversion for Early Retirees</a></dt>
+                    <dd>A tax-bracket comparison for early retirees choosing between capital gains harvesting and Roth conversions, focused on bracket management, IRMAA, and long-term account sequencing. <span class="dl-terms__note">Verdict: The cheaper move this year may cost more later.</span></dd>
+                    <dt><a href="/compare/mortgage-payoff-vs-investing">Paying Off Your Mortgage Early vs Investing the Difference</a></dt>
+                    <dd>Guaranteed interest savings from extra mortgage payments versus market returns on the same money: break-even math, risk, liquidity, and taxes on a $400,000 loan. <span class="dl-terms__note">Verdict: A guaranteed 6.7% return beats a hoped-for 7% only if certainty is worth more to you than upside.</span></dd>
+                    <dt><a href="/compare/cost-segregation-vs-bonus-depreciation">Cost Segregation vs Bonus Depreciation</a></dt>
+                    <dd>When a cost segregation study is worth the fee versus taking bonus depreciation only on assets you already have on invoices, with recapture and usable-loss gates. <span class="dl-terms__note">Verdict: The study creates buckets. Bonus is the first-year rate on those buckets.</span></dd>
+                    <dt><a href="/compare/1031-exchange-vs-opportunity-zones">1031 Exchange vs Opportunity Zones</a></dt>
+                    <dd>A sale-of-property comparison of like-kind exchange deferral versus investing capital gain in a qualified opportunity fund, including clocks, basis, and the 10-year hold. <span class="dl-terms__note">Verdict: Stay in replacement real estate, or move the gain into a fund with a later recognition date.</span></dd>
+                    <dt><a href="/compare/real-estate-professional-vs-str-loophole">Real Estate Professional Status vs STR Loophole</a></dt>
+                    <dd>Hour tests, average stay length, and usable rental losses for W-2 households choosing real estate professional status versus short-term rental material participation. <span class="dl-terms__note">Verdict: REPS is a life. The STR path is a property and a log.</span></dd>
+                    <dt><a href="/compare/s-corp-vs-qbi-deduction">S-Corp vs QBI Deduction</a></dt>
+                    <dd>How an S-corp reasonable salary changes self-employment tax and qualified business income, including SSTB phaseouts and the wage limitation. <span class="dl-terms__note">Verdict: An S-corp is a payroll structure. QBI is a later deduction that salary can shrink or unlock.</span></dd>
+                    <dt><a href="/compare/donor-advised-fund-vs-charitable-trust">Donor-Advised Fund vs Charitable Trust</a></dt>
+                    <dd>When a donor-advised fund is enough for bunching appreciated stock versus when a charitable remainder trust is the vehicle because you still need an income stream. <span class="dl-terms__note">Verdict: Use a DAF to give and walk away. Use a CRT when the same assets must still pay you.</span></dd>
+                </dl>
+                <p class="guide-row__note">Educational content only. Results vary with your facts. Confirm the decision with a qualified tax professional.</p>
             </div>
         </section>
     </main>
@@ -207,11 +176,11 @@
         <div class="container-custom">
             <div class="site-footer-grid">
                 <div class="site-footer-brand">
-                    <a href="/" class="site-brand"><img src="/assets/images/logo-240.webp" alt="" width="62" height="28"><span>Legacy Investing Show</span></a>
+                    <a href="/" class="site-brand">Legacy Investing Show</a>
                     <p>Tax strategy, wealth systems, and practical decision tools for professionals, investors, and founders.</p>
                 </div>
                 <div class="site-footer-group">
-                    <h2>Guides</h2>
+                    <p class="site-footer-title">Guides</p>
                     <ul>
                         <li><a href="/tax-strategies">Tax strategies</a></li>
                         <li><a href="/compare">Compare guides</a></li>
@@ -221,14 +190,14 @@
                     </ul>
                 </div>
                 <div class="site-footer-group">
-                    <h2>Tools</h2>
+                    <p class="site-footer-title">Tools</p>
                     <ul>
                         <li><a href="/tools">Free calculators</a></li>
                         <li><a href="/blog">Blog</a></li>
                     </ul>
                 </div>
                 <div class="site-footer-group">
-                    <h2>Company</h2>
+                    <p class="site-footer-title">Company</p>
                     <ul>
                         <li><a href="/about">About Preston Seo</a></li>
                         <li><a href="/success-stories">Student results</a></li>

@@ -403,193 +403,261 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
 
     ${renderSiteHeader('/compare')}
 
-    <div class="container-custom">
-        <nav aria-label="Breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Home</a></li>
-                <li class="breadcrumb__item"><a href="/compare" class="breadcrumb__link">Compare</a></li>
-                <li class="breadcrumb__item"><span class="breadcrumb__current">${esc(page.title)}</span></li>
-            </ol>
-        </nav>
-    </div>
-
     <main id="main">
-        <section class="guide-hero">
+        <section class="guide-opener">
             <div class="container-custom">
-                <h1 class="guide-hero__title">${esc(page.title)}</h1>
-                <p class="guide-deck">${esc(page.description)}</p>
-                <dl class="compare-verdict">
+                <nav aria-label="Breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Home</a></li>
+                        <li class="breadcrumb__item"><a href="/compare" class="breadcrumb__link">Compare</a></li>
+                        <li class="breadcrumb__item"><span class="breadcrumb__current">${esc(page.title)}</span></li>
+                    </ol>
+                </nav>
+                <div class="opener">
                     <div>
-                        <dt>Option A</dt>
-                        <dd>${esc(page.optionAName)}</dd>
+                        <h1 class="opener__title">${esc(page.title)}</h1>
+                        <p class="opener__lede">${esc(page.description)}</p>
+                        <p class="guide-opener__meta">Quick verdict: ${esc(verdict)}</p>
                     </div>
-                    <div>
-                        <dt>Option B</dt>
-                        <dd>${esc(page.optionBName)}</dd>
-                    </div>
-                    <div>
-                        <dt>Quick verdict</dt>
-                        <dd>${esc(verdict)}</dd>
-                    </div>
-                </dl>
+                    <aside class="opener__aside">
+                        <div class="figure figure--gold">
+                            <span class="figure__value">${(page.decisionMatrix || []).length}</span>
+                            <span class="figure__label">decision factors scored, each with the edge-case read</span>
+                        </div>
+                    </aside>
+                </div>
             </div>
         </section>
 
-        <section class="guide-section">
+        <section class="section">
             <div class="container-custom">
-                <article class="guide-prose">
-                    <nav class="compare-outline-nav" aria-label="On this page">
-                        <p class="guide-rail__title">On this page</p>
-                        <ul class="compare-outline">
+                <div class="guide-layout">
+                    <details class="contents guide-contents" open>
+                        <summary>On this page</summary>
+                        <ol>
 ${OUTLINE.map(([id, label]) => `                            <li><a href="#${id}">${esc(label)}</a></li>`).join('\n')}
-                        </ul>
-                    </nav>
+                        </ol>
+                    </details>
+                    <div class="guide-column">
+                        <article class="guide-prose">
+                            <h2 id="executive-summary">Executive summary</h2>
+                            ${openingHtml}
+                            <p>${esc(page.intro)}</p>
+                            <p>Written for ${esc(String(page.bestFor || page.description).replace(/^./, (c) => c.toLowerCase()))}</p>
 
-                    <h2 id="executive-summary">Executive summary</h2>
-                    ${openingHtml}
-                    <p>${esc(page.intro)}</p>
-                    <p>Written for ${esc(String(page.bestFor || page.description).replace(/^./, (c) => c.toLowerCase()))}</p>
+                            <h3>When ${esc(page.optionAName)} tends to win</h3>
+                            <p>${esc(page.whenA)}</p>
+                            <h3>When ${esc(page.optionBName)} tends to win</h3>
+                            <p>${esc(page.whenB)}</p>
+                            <h3>Where people lose money</h3>
+                            <p>${esc(page.commonMistake || 'Forcing the facts to match the strategy after the year is over.')}</p>
 
-                    <h3>When ${esc(page.optionAName)} tends to win</h3>
-                    <p>${esc(page.whenA)}</p>
-                    <h3>When ${esc(page.optionBName)} tends to win</h3>
-                    <p>${esc(page.whenB)}</p>
-                    <h3>Where people lose money</h3>
-                    <p>${esc(page.commonMistake || 'Forcing the facts to match the strategy after the year is over.')}</p>
-
-                    <h2 id="comparison-matrix">Decision scorecard</h2>
-                    <p>The score is directional, not a guarantee. Your facts and your documentation decide what is actually defensible.</p>
-                    <div class="table-scroll">
-                        <table class="compare-table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Decision factor</th>
-                                    <th scope="col">${esc(page.optionAName)}</th>
-                                    <th scope="col">${esc(page.optionBName)}</th>
-                                    <th scope="col">Edge-case read</th>
-                                    <th scope="col">A</th>
-                                    <th scope="col">B</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                ${buildDecisionRows(page)}
-                                <tr>
-                                    <td data-label="Decision Factor"><strong>Total signal</strong></td>
-                                    <td data-label="${esc(page.optionAName)}">Directional score from the matrix.</td>
-                                    <td data-label="${esc(page.optionBName)}">Directional score from the matrix.</td>
-                                    <td data-label="Edge-Case Read">Use it after qualification checks and stress testing.</td>
-                                    <td data-label="A Score"><strong>${aTotal}</strong></td>
-                                    <td data-label="B Score"><strong>${bTotal}</strong></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <h2 id="decision-framework">Decision framework</h2>
-                    <p>${esc(page.decisionFrameworkLead || 'This only works when execution is clean. Run this sequence before you commit.')}</p>
-                    <ol>
-                        ${steps.map((item) => `<li>${esc(item)}</li>`).join('')}
-                    </ol>
-
-                    <h2 id="worked-example">Worked example</h2>
-                    <p><strong>Profile:</strong> ${esc(page.workedExample.profile)}</p>
-                    <ul>
-                        ${renderBullets(page.workedExample.assumptions)}
-                    </ul>
-                    <h3>${esc(page.optionAName)} outcome</h3>
-                    <p>${esc(page.workedExample.aOutcome)}</p>
-                    <h3>${esc(page.optionBName)} outcome</h3>
-                    <p>${esc(page.workedExample.bOutcome)}</p>
-                    <p><strong>Takeaway:</strong> ${esc(page.workedExample.takeaway)}</p>
-
-                    <h2 id="evidence-standards">Evidence and documentation standards</h2>
-                    <p>If the evidence package is weak, the strategy that looks better on paper usually underperforms in practice.</p>
-                    <div class="table-scroll">
-                        <table class="compare-table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Evidence requirement</th>
-                                    <th scope="col">What good looks like</th>
-                                    <th scope="col">Common failure mode</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                ${renderEvidenceRows(page)}
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <h2 id="failure-modes">Failure modes and mitigations</h2>
-                    <p>These are the practical breakdowns that turn a valid strategy into an expensive cleanup project.</p>
-                    <div class="table-scroll">
-                        <table class="compare-table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Failure mode</th>
-                                    <th scope="col">Mitigation control</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                ${renderFailureRows(page)}
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <h2 id="edge-cases">Edge cases that change the decision</h2>
-                    <ul>
-                        ${renderBullets(page.edgeCases)}
-                    </ul>
-
-                    <h3>Avoid ${esc(page.optionAName)} if</h3>
-                    <ul>${renderBullets(page.avoidA)}</ul>
-                    <h3>Avoid ${esc(page.optionBName)} if</h3>
-                    <ul>${renderBullets(page.avoidB)}</ul>
-
-                    <h2 id="execution-plan">90-day implementation plan</h2>
-                    <h3>Days 0-30: decision and controls</h3>
-                    <ul>${renderBullets(ninetyDay.days0to30)}</ul>
-                    <h3>Days 31-60: execution and documentation</h3>
-                    <ul>${renderBullets(ninetyDay.days31to60)}</ul>
-                    <h3>Days 61-90: validation and advisor packet</h3>
-                    <ul>${renderBullets(ninetyDay.days61to90)}</ul>
-
-                    <h2 id="advisor-packet">Questions to ask your CPA</h2>
-                    <ul>
-                        ${renderBullets(page.advisorQuestions)}
-                    </ul>
-                    <h3>What to include in the packet</h3>
-                    <ul>
-                        ${renderBullets(advisorPacketItems(page))}
-                    </ul>
-
-                    <h2 id="faq">Questions people ask</h2>
-                    <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
-                        ${renderFaqItems(page.faq || [])}
-                    </div>
-
-                    <div class="guide-rail">
-                        <div class="guide-rail__block">
-                            <h2 class="guide-rail__title">Decision signal</h2>
-                            <p class="sidebar-card__body"><strong>${esc(page.optionAName)}</strong>: ${aTotal} points. <strong>${esc(page.optionBName)}</strong>: ${bTotal} points. Treat the score as a directional input, then validate it against qualification and execution constraints.</p>
+                            <h2 id="comparison-matrix">Decision scorecard</h2>
+                            <p>The score is directional, not a guarantee. Your facts and your documentation decide what is actually defensible.</p>
+                        </article>
+                        <div class="table-scroll">
+                            <table class="data-table compare-table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Decision factor</th>
+                                        <th scope="col">${esc(page.optionAName)}</th>
+                                        <th scope="col">${esc(page.optionBName)}</th>
+                                        <th scope="col">Edge-case read</th>
+                                        <th scope="col">A</th>
+                                        <th scope="col">B</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${buildDecisionRows(page)}
+                                    <tr>
+                                        <td data-label="Decision Factor"><strong>Total signal</strong></td>
+                                        <td data-label="${esc(page.optionAName)}">Directional score from the matrix.</td>
+                                        <td data-label="${esc(page.optionBName)}">Directional score from the matrix.</td>
+                                        <td data-label="Edge-Case Read">Use it after qualification checks and stress testing.</td>
+                                        <td data-label="A Score"><strong>${aTotal}</strong></td>
+                                        <td data-label="B Score"><strong>${bTotal}</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <div class="guide-rail__block">
-                            <h2 class="guide-rail__title">Implementation checklist</h2>
+
+                        <div class="guide-prose">
+                            <h2 id="decision-framework">Decision framework</h2>
+                            <p>${esc(page.decisionFrameworkLead || 'This only works when execution is clean. Run this sequence before you commit.')}</p>
+                        </div>
+                        <ol class="steps">
+${steps.map((item) => `                            <li><div><p>${esc(item)}</p></div></li>`).join('\n')}
+                        </ol>
+
+                        <div class="guide-prose">
+                            <h2 id="worked-example">Worked example</h2>
+                            <p><strong>Profile:</strong> ${esc(page.workedExample.profile)}</p>
+                            <ul>
+                                ${renderBullets(page.workedExample.assumptions)}
+                            </ul>
+                            <h3>${esc(page.optionAName)} outcome</h3>
+                            <p>${esc(page.workedExample.aOutcome)}</p>
+                            <h3>${esc(page.optionBName)} outcome</h3>
+                            <p>${esc(page.workedExample.bOutcome)}</p>
+                        </div>
+                        <aside class="guide-takeaway">
+                            <div class="figure figure--long">
+                                <span class="figure__value">Takeaway</span>
+                                <span class="figure__label">from the scenario above</span>
+                            </div>
+                            <p>${esc(page.workedExample.takeaway)}</p>
+                        </aside>
+
+                        <div class="guide-prose">
+                            <h2 id="evidence-standards">Evidence and documentation standards</h2>
+                            <p>If the evidence package is weak, the strategy that looks better on paper usually underperforms in practice.</p>
+                        </div>
+                        <div class="table-scroll">
+                            <table class="data-table compare-table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Evidence requirement</th>
+                                        <th scope="col">What good looks like</th>
+                                        <th scope="col">Common failure mode</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${renderEvidenceRows(page)}
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="guide-prose">
+                            <h2 id="failure-modes">Failure modes and mitigations</h2>
+                            <p>These are the practical breakdowns that turn a valid strategy into an expensive cleanup project.</p>
+                        </div>
+                        <div class="table-scroll">
+                            <table class="data-table compare-table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Failure mode</th>
+                                        <th scope="col">Mitigation control</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${renderFailureRows(page)}
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="guide-prose">
+                            <h2 id="edge-cases">Edge cases that change the decision</h2>
+                            <ul>
+                                ${renderBullets(page.edgeCases)}
+                            </ul>
+
+                            <h3>Avoid ${esc(page.optionAName)} if</h3>
+                            <ul>${renderBullets(page.avoidA)}</ul>
+                            <h3>Avoid ${esc(page.optionBName)} if</h3>
+                            <ul>${renderBullets(page.avoidB)}</ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="band">
+            <div class="container-custom">
+                <div class="guide-band__grid">
+                    <div class="guide-figures">
+                        <div class="figure figure--navy">
+                            <span class="figure__value">${aTotal}</span>
+                            <span class="figure__label">${esc(page.optionAName)}</span>
+                        </div>
+                        <div class="figure figure--navy">
+                            <span class="figure__value">${bTotal}</span>
+                            <span class="figure__label">${esc(page.optionBName)}</span>
+                        </div>
+                    </div>
+                    <p class="guide-band__lede">${esc(verdict)} The score adds one point for each factor where an option holds the edge and splits the point where the read is genuinely mixed. Treat it as a directional input, then validate it against qualification and execution constraints.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container-custom">
+                <div class="marginalia">
+                    <div class="marginalia__main">
+                        <div class="section__head">
+                            <h2 id="execution-plan">90-day implementation plan</h2>
+                            <p>Decide early, set the guardrails, then keep the records as you go.</p>
+                        </div>
+                        <ol class="steps">
+                            <li>
+                                <div>
+                                    <h3 class="steps__title">Days 0-30: decision and controls</h3>
+                                    <ul>${renderBullets(ninetyDay.days0to30)}</ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h3 class="steps__title">Days 31-60: execution and documentation</h3>
+                                    <ul>${renderBullets(ninetyDay.days31to60)}</ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h3 class="steps__title">Days 61-90: validation and advisor packet</h3>
+                                    <ul>${renderBullets(ninetyDay.days61to90)}</ul>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                    <aside class="marginalia__aside guide-aside">
+                        <div>
+                            <p class="guide-aside__title">Implementation checklist</p>
                             <ul class="guide-linklist">
                                 ${renderBullets((page.checklist || []).slice(0, 5))}
                             </ul>
                         </div>
-                        <div class="guide-rail__block">
-                            <h2 class="guide-rail__title">Related reading</h2>
+                        <div>
+                            <p class="guide-aside__title">Related reading</p>
                             <ul class="guide-linklist">
                                 ${renderRelated(page.related)}
                             </ul>
                         </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="section band--cream-dark">
+            <div class="container-custom">
+                <div class="marginalia">
+                    <div class="marginalia__main">
+                        <div class="section__head">
+                            <h2 id="advisor-packet">Questions to ask your CPA</h2>
+                            <p>Take these, and the packet beside them, into the meeting.</p>
+                        </div>
+                        <div class="guide-prose">
+                            <ul>
+                                ${renderBullets(page.advisorQuestions)}
+                            </ul>
+
+                            <h2 id="faq">Questions people ask</h2>
+                            <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
+                                ${renderFaqItems(page.faq || [])}
+                            </div>
+
+                            ${plainSourceBlock({ title: page.title, slug: page.slug, type: 'compare' })}
+
+                            <p class="guide-row__note">This is an educational decision brief, not personalised tax or legal advice. The right answer depends on your facts, your records, and your advisor's review.</p>
+                        </div>
                     </div>
-
-                    ${plainSourceBlock({ title: page.title, slug: page.slug, type: 'compare' })}
-
-                    <p class="guide-row__note">This is an educational decision brief, not personalised tax or legal advice. The right answer depends on your facts, your records, and your advisor's review.</p>
-                </article>
+                    <aside class="marginalia__aside guide-aside">
+                        <div>
+                            <p class="guide-aside__title">What to bring</p>
+                            <ul class="guide-linklist">
+                                ${renderBullets(advisorPacketItems(page))}
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
             </div>
         </section>
     </main>
@@ -618,11 +686,8 @@ function renderIndex(pages) {
   const description = 'Head-to-head guides for tax and wealth decisions where two options both look reasonable: a scored comparison, a worked example, the failure modes, and a 90-day plan.';
 
   const rows = pages
-    .map((page) => `                        <li>
-                            <h3 class="guide-row__title"><a href="/compare/${esc(page.slug)}">${esc(page.title)}</a></h3>
-                            <p>${esc(page.description)}</p>
-                            <p class="guide-row__note">Verdict: ${esc(page.quickVerdict || bestText(page))}</p>
-                        </li>`)
+    .map((page) => `                    <dt><a href="/compare/${esc(page.slug)}">${esc(page.title)}</a></dt>
+                    <dd>${esc(page.description)} <span class="dl-terms__note">Verdict: ${esc(page.quickVerdict || bestText(page))}</span></dd>`)
     .join('\n');
 
   const schema = [
@@ -693,37 +758,66 @@ ${schema.map((entry) => `    <script type="application/ld+json">${JSON.stringify
 
     ${renderSiteHeader('/compare')}
 
-    <div class="container-custom">
-        <nav aria-label="Breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Home</a></li>
-                <li class="breadcrumb__item"><span class="breadcrumb__current">Compare</span></li>
-            </ol>
-        </nav>
-    </div>
-
     <main id="main">
-        <section class="guide-hero">
+        <section class="guide-opener">
             <div class="container-custom">
-                <h1 class="guide-hero__title">Comparison guides</h1>
-                <p class="guide-deck">${pages.length} decisions where two options both look reasonable. Each guide scores the tradeoffs, works an example, names the failure modes, and sets out a 90-day plan.</p>
+                <nav aria-label="Breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Home</a></li>
+                        <li class="breadcrumb__item"><span class="breadcrumb__current">Compare</span></li>
+                    </ol>
+                </nav>
+                <div class="opener">
+                    <div>
+                        <h1 class="opener__title">Comparison guides</h1>
+                        <p class="opener__lede">Decisions where two options both look reasonable. Each guide scores the tradeoffs, works an example, names the failure modes, and sets out a 90-day plan.</p>
+                        <p class="guide-opener__meta">Pick one primary objective first — lower tax, better cash flow, more liquidity, or simpler execution. The two options rarely win on the same axis.</p>
+                    </div>
+                    <aside class="opener__aside">
+                        <div class="figure figure--gold">
+                            <span class="figure__value">${pages.length}</span>
+                            <span class="figure__label">head-to-head guides, each with a scorecard and a worked example</span>
+                        </div>
+                    </aside>
+                </div>
             </div>
         </section>
 
-        <section class="guide-section">
+        <section class="section">
             <div class="container-custom">
-                <div class="guide-prose">
-                    <h2>How to use them</h2>
-                    <p>Pick one primary objective first — lower tax, better cash flow, more liquidity, or simpler execution — because the two options rarely win on the same axis. Then run both paths through the scorecard and the scenario model with conservative assumptions.</p>
-                    <p>Set the documentation standard before you execute, not at year end, and re-score the decision annually as income, law, and circumstances change.</p>
-
-                    <h2>The guides</h2>
-                    <ul class="guide-rows">
-${rows}
-                    </ul>
-
-                    <p class="guide-row__note">Educational content only. Results vary with your facts. Confirm the decision with a qualified tax professional.</p>
+                <div class="marginalia">
+                    <div class="marginalia__main sheet guide-sheet">
+                        <div class="guide-prose">
+                            <h2>How to use them</h2>
+                            <p>Run both paths through the scorecard and the scenario model with conservative assumptions, then pressure-test the likely winner against the edge cases. Set the documentation standard before you execute, not at year end.</p>
+                            <p>Re-score the decision annually. Income, law, and circumstances change, and the option that lost last year is often the one that fits now.</p>
+                        </div>
+                    </div>
+                    <aside class="marginalia__aside guide-aside">
+                        <div>
+                            <p class="guide-aside__title">Elsewhere on the site</p>
+                            <dl class="dl-terms">
+                                <dt><a href="/tax-strategies">Tax strategies</a></dt>
+                                <dd>Every strategy guide in one table, grouped by the income or asset it applies to.</dd>
+                                <dt><a href="/topics">Topics</a></dt>
+                                <dd>Reading paths through the article archive.</dd>
+                            </dl>
+                        </div>
+                    </aside>
                 </div>
+            </div>
+        </section>
+
+        <section class="section band--cream-dark">
+            <div class="container-custom">
+                <div class="section__head">
+                    <h2>The guides</h2>
+                    <p>Each one names the verdict up front, then shows the facts that would change it.</p>
+                </div>
+                <dl class="dl-terms dl-terms--cols">
+${rows}
+                </dl>
+                <p class="guide-row__note">Educational content only. Results vary with your facts. Confirm the decision with a qualified tax professional.</p>
             </div>
         </section>
     </main>

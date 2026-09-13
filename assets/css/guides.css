@@ -514,7 +514,7 @@ ul.guide-linklist,
 
 .guide-dl dt {
     margin: 0;
-    color: var(--text-muted);
+    color: var(--guide-muted, #5b6b84);
     font-size: 0.9375rem;
 }
 
@@ -641,7 +641,7 @@ ul.guide-rows,
 
 .guide-row__note {
     margin: 0;
-    color: var(--text-muted);
+    color: var(--guide-muted, #5b6b84);
     font-size: 0.9375rem;
     line-height: 1.6;
 }
@@ -649,7 +649,7 @@ ul.guide-rows,
 .guide-row__date {
     display: block;
     margin-top: 0.3rem;
-    color: var(--text-muted);
+    color: var(--guide-muted, #5b6b84);
     font-size: 0.875rem;
     font-variant-numeric: tabular-nums;
 }
@@ -738,11 +738,8 @@ ul.guide-rows,
 }
 
 .guide-table th,
-.comparison-table th,
-.compare-table th,
 .calculation-table th,
-.real-numbers-table th,
-.prose-content table th {
+.real-numbers-table th {
     background: var(--cream-dark);
     color: var(--text-primary);
     text-align: left;
@@ -756,11 +753,9 @@ ul.guide-rows,
 }
 
 .guide-table td,
-.comparison-table td,
-.compare-table td,
 .calculation-table td,
 .real-numbers-table td,
-.prose-content table td {
+.prose-content table:not(.data-table) td {
     padding: 0.75rem 0.9rem;
     vertical-align: top;
     border-bottom: 1px solid var(--border-light);
@@ -768,21 +763,16 @@ ul.guide-rows,
     line-height: 1.6;
 }
 
-.guide-table tr:last-child td,
-.comparison-table tr:last-child td,
-.compare-table tr:last-child td {
+.guide-table tr:last-child td {
     border-bottom: 0;
 }
 
 .guide-table tbody tr:nth-child(2n) > *,
-.comparison-table tr:nth-child(2n) > *,
-.compare-table tr.alt > * {
+.data-table tbody tr.alt > * {
     background: var(--cream);
 }
 
-.guide-table tbody th,
-.comparison-table tbody th,
-.compare-table tbody th {
+.guide-table tbody th {
     background: none;
     font-weight: 600;
     color: var(--text-primary);
@@ -793,8 +783,7 @@ ul.guide-rows,
 }
 
 .guide-table td strong,
-.comparison-table td strong,
-.compare-table td strong {
+.data-table td strong {
     color: var(--text-primary);
 }
 
@@ -1316,7 +1305,7 @@ body:has(.cta-band) .site-footer {
 }
 
 .compare-verdict dt {
-    color: var(--text-muted);
+    color: var(--guide-muted, #5b6b84);
     font-size: 0.9375rem;
 }
 
@@ -1453,4 +1442,468 @@ ul.compare-outline,
     color: #ffffff;
     padding: 0.75rem 1rem;
     border-radius: 0.375rem;
+}
+
+/* ==========================================================================
+   ELEVATION — guide-specific composition on top of the shared kit in
+   styles.css (.opener, .figure, .band, .sheet, .marginalia, .contents,
+   .dl-terms, .data-table, .steps, .pull-quote, .photo, .section__head).
+   Only what is specific to guide pages lives here.
+   ========================================================================== */
+
+/* Margin notes sit beside the prose, not stretched to its height. */
+.marginalia,
+.opener {
+    align-items: start;
+}
+
+/* Muted text that still clears 4.5:1 on the cream surfaces. The frozen guides
+   have no body class, so this is declared on the root. */
+:root {
+    --guide-muted: #5b6b84;
+}
+
+/* The opener sits on the cream ground and closes with a hairline. */
+.guide-opener {
+    background: var(--cream);
+    border-bottom: 1px solid var(--border);
+    padding-top: 1.5rem;
+    padding-top: clamp(1.25rem, 2.5vw, 1.75rem);
+    padding-bottom: 3rem;
+    padding-bottom: clamp(2.5rem, 6vw, 4rem);
+}
+
+.guide-opener .breadcrumb {
+    padding: 0 0 clamp(1.5rem, 3vw, 2.25rem);
+}
+
+/* A short factual line under the lede: scope, source, or vintage. */
+.guide-opener__meta {
+    margin: 1.75rem 0 0;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border);
+    max-width: 52ch;
+    color: var(--guide-muted, #5b6b84);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+}
+
+/* Two or three of the page's own numbers, side by side. */
+.guide-figures {
+    display: grid;
+    gap: 2rem 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    margin: 0;
+}
+
+.guide-figures .figure__value {
+    font-size: clamp(2.25rem, 3.6vw, 3.25rem);
+}
+
+/* Contents rail on the left, reading column on the right. */
+.guide-layout {
+    display: grid;
+    gap: clamp(2rem, 4vw, 3rem);
+    align-items: start;
+}
+
+@media (min-width: 1024px) {
+    .guide-layout {
+        grid-template-columns: minmax(0, 13rem) minmax(0, 1fr);
+        gap: clamp(2.5rem, 4vw, 4rem);
+    }
+}
+
+/* Margin notes: facts, sources and routing beside the prose. */
+.guide-aside {
+    display: grid;
+    gap: 2.25rem;
+    align-content: start;
+}
+
+.guide-aside__title {
+    margin: 0 0 0.875rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--gold);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.guide-aside p {
+    margin: 0 0 0.75rem;
+    color: var(--text-secondary);
+    font-size: 0.9375rem;
+    line-height: 1.65;
+}
+
+.guide-aside .guide-dl {
+    margin: 0;
+    border-top: 0;
+}
+
+.guide-aside .guide-dl > div {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.15rem;
+    padding: 0.65rem 0;
+}
+
+.guide-aside .guide-dl dd {
+    font-size: 0.9375rem;
+}
+
+.guide-aside .dl-terms dt {
+    font-size: 1.1875rem;
+    margin-top: 1.5rem;
+}
+
+.guide-aside .dl-terms dd {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+}
+
+.guide-aside .dl-terms a,
+.dl-terms a {
+    color: var(--text-primary);
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+    text-underline-offset: 0.15em;
+}
+
+.guide-aside .dl-terms a:hover,
+.dl-terms a:hover {
+    text-decoration-color: var(--navy);
+}
+
+/* No double spacing where a sheet's padding already opens the section. */
+.sheet > .guide-prose > :first-child,
+.sheet > .prose-content > :first-child,
+.marginalia__main > .guide-prose > :first-child,
+.guide-column > .guide-prose > :first-child {
+    margin-top: 0;
+}
+
+/* Prose keeps its measure inside a full-width sheet. */
+.sheet > .guide-prose,
+.sheet > .prose-content,
+.guide-sheet > .guide-prose,
+.guide-sheet > .prose-content {
+    max-width: 68ch;
+}
+
+/* Category blocks inside the strategy table. */
+.guide-group + .guide-group {
+    margin-top: clamp(2.5rem, 5vw, 3.5rem);
+}
+
+.guide-group__head {
+    display: grid;
+    gap: 0.4rem 2.5rem;
+    align-items: baseline;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+}
+
+@media (min-width: 900px) {
+    .guide-group__head {
+        grid-template-columns: minmax(0, 16rem) minmax(0, 1fr);
+    }
+}
+
+.guide-group__head h3 {
+    margin: 0;
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: 1.625rem;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    color: var(--text-primary);
+}
+
+.guide-group__head p {
+    margin: 0;
+    color: var(--guide-muted, #5b6b84);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    max-width: 58ch;
+}
+
+/* A strategy or guide entry: its figure on the left, the guide on the right. */
+.guide-entry {
+    display: grid;
+    gap: 1rem 2.5rem;
+    padding: clamp(1.75rem, 3vw, 2.5rem) 0;
+    border-top: 1px solid var(--border);
+}
+
+.guide-entry:last-of-type {
+    border-bottom: 1px solid var(--border);
+}
+
+@media (min-width: 768px) {
+    .guide-entry {
+        grid-template-columns: minmax(0, 12rem) minmax(0, 1fr);
+    }
+}
+
+.guide-entry .figure__value {
+    font-size: clamp(1.75rem, 2.4vw, 2.25rem);
+}
+
+.guide-entry .figure__label {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: var(--text-secondary);
+}
+
+.guide-entry h3 {
+    margin: 0 0 0.6rem;
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.5rem, 2.2vw, 1.875rem);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+.guide-entry h3 a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.guide-entry h3 a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+    text-underline-offset: 0.15em;
+}
+
+.guide-entry p {
+    margin: 0 0 0.75rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    max-width: 64ch;
+}
+
+.guide-entry__meta {
+    margin: 0;
+    color: var(--guide-muted, #5b6b84);
+    font-size: 0.9375rem;
+}
+
+/* Navy band: a figure and a sentence that explains it. */
+.guide-band__grid {
+    display: grid;
+    gap: 2rem 3.5rem;
+    align-items: start;
+}
+
+@media (min-width: 900px) {
+    .guide-band__grid {
+        grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    }
+}
+
+.guide-band__lede {
+    max-width: 56ch;
+    margin: 0;
+    font-size: 1.0625rem;
+    line-height: 1.75;
+}
+
+/* Data tables still need a scroll container on a phone. */
+.table-scroll > .data-table {
+    min-width: 34rem;
+}
+
+/* Row headers are content, not chrome: only the head row is navy. */
+.data-table tbody th {
+    background: var(--white);
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    padding: 0.875rem 1.25rem;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid var(--border);
+    white-space: normal;
+}
+
+.data-table tbody tr:nth-child(2n) th {
+    background: var(--cream-dark);
+}
+
+.data-table tbody tr:last-child th {
+    border-bottom: 0;
+}
+
+.data-table tbody th a {
+    color: var(--text-primary);
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+    text-underline-offset: 0.15em;
+}
+
+/* Contents rail: a plain list on desktop, a disclosure on a phone. */
+.guide-contents ol {
+    counter-reset: none;
+}
+
+.guide-contents li {
+    border-bottom: 1px solid var(--border-light);
+}
+
+.guide-contents li:last-child {
+    border-bottom: 0;
+}
+
+.guide-contents a {
+    padding: 0.45rem 0;
+}
+
+/* A ranged or long value cannot run at full display size. */
+.figure--long .figure__value {
+    font-size: clamp(1.75rem, 2.8vw, 2.5rem);
+}
+
+.guide-column {
+    min-width: 0;
+}
+
+/* One quotation, in the guide's own words, to break the longest run of prose. */
+.guide-inset {
+    display: block;
+    margin: clamp(2.5rem, 5vw, 3.5rem) 0;
+    padding: clamp(1.75rem, 3.5vw, 2.75rem);
+    background: var(--navy);
+}
+
+.guide-inset .pull-quote p {
+    color: var(--cream-dark);
+    max-width: 44ch;
+}
+
+.guide-inset .pull-quote::before {
+    border-top-color: var(--gold);
+}
+
+/* The frozen guides keep their own section names; give them the rhythm. */
+.content-section {
+    padding-top: clamp(2.5rem, 5vw, 4rem);
+    padding-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+.faq-section {
+    background: var(--cream-dark);
+    border-top: 1px solid var(--border);
+    padding-top: 3.5rem;
+    padding-top: clamp(3rem, 6vw, 4.5rem);
+    padding-bottom: 3.5rem;
+    padding-bottom: clamp(3rem, 6vw, 4.5rem);
+}
+
+.faq-section .faq-list {
+    margin-left: 0;
+}
+
+/* The old sidebar block closes the article as a cream-dark strip of links. */
+.guide-rail {
+    margin-top: clamp(2.5rem, 5vw, 3.5rem);
+    padding-top: 2rem;
+    border-top: 2px solid var(--gold);
+}
+
+@media (min-width: 768px) {
+    .guide-rail {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        gap: 2rem 3rem;
+        align-items: start;
+    }
+}
+
+.guide-rail .sidebar-card {
+    margin: 0;
+}
+
+/* Tailwind ships a `.contents` display utility that dissolves the kit's
+   contents rail into its grid parent; keep the rail a block. */
+.guide-contents {
+    display: block;
+}
+
+/* The number a worked example was driving at, beside the sentence that states it. */
+.guide-takeaway {
+    display: grid;
+    gap: 1rem 2.5rem;
+    align-items: start;
+    margin: clamp(2rem, 4vw, 3rem) 0;
+    padding: clamp(1.5rem, 3vw, 2rem);
+    background: var(--cream-dark);
+    border-top: 2px solid var(--gold);
+}
+
+@media (min-width: 768px) {
+    .guide-takeaway {
+        grid-template-columns: minmax(0, 11rem) minmax(0, 1fr);
+    }
+}
+
+.guide-takeaway .figure__value {
+    font-size: clamp(1.75rem, 2.6vw, 2.25rem);
+}
+
+.guide-takeaway .figure__label {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: var(--text-secondary);
+}
+
+.guide-takeaway p {
+    margin: 0;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    max-width: 62ch;
+}
+
+/* The verdict line inside a definition list entry. */
+.dl-terms__note {
+    display: block;
+    margin-top: 0.35rem;
+    color: var(--text-muted);
+    font-size: 0.9375rem;
+}
+
+/* Steps that carry a list rather than a paragraph. */
+.steps ul {
+    margin: 0.5rem 0 0;
+    padding-left: 1.2rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.steps li ul li {
+    margin-bottom: 0.4rem;
+}
+
+
+/* Muted roles on the cream surfaces need a darker grey than the shared token. */
+.breadcrumb,
+.breadcrumb__current,
+.figure__note,
+.dl-terms__note,
+.guide-figure__note,
+.band--cream-dark .guide-row__note {
+    color: var(--guide-muted, #5b6b84);
+}
+
+/* Long definition terms need room to breathe on two lines. */
+.dl-terms dt {
+    line-height: 1.3;
+}
+
+/* Bold text inside a navy header row must not fall back to navy ink. */
+.data-table th strong,
+.data-table thead strong,
+.band strong,
+.guide-inset strong {
+    color: inherit;
 }

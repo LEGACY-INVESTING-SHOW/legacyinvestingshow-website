@@ -552,7 +552,7 @@
         "section-179",
         "home-office-deduction"
       ],
-      "linkLabel": "the self-employed"
+      "linkLabel": "Self-employed and freelancers"
     },
     {
       "slug": "real-estate-investors",
@@ -564,7 +564,7 @@
         "real-estate-professional-status",
         "bonus-depreciation"
       ],
-      "linkLabel": "real estate investors"
+      "linkLabel": "Real estate investors"
     },
     {
       "slug": "airbnb-hosts",
@@ -588,7 +588,7 @@
         "cost-segregation",
         "mega-backdoor-roth"
       ],
-      "linkLabel": "high-income earners"
+      "linkLabel": "High-income earners"
     },
     {
       "slug": "business-owners",
@@ -600,7 +600,7 @@
         "section-179",
         "solo-401k"
       ],
-      "linkLabel": "business owners"
+      "linkLabel": "Business owners"
     }
   ],
   "catalog": [

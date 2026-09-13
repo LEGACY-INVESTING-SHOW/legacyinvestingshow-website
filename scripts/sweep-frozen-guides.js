@@ -481,6 +481,212 @@ function normaliseScripts(html) {
     return out;
 }
 
+/* ----------------------------------------------------------- elevation --- */
+
+function slugifyHeading(text, used) {
+    const base = String(text).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 60) || 'section';
+    let id = base;
+    let n = 2;
+    while (used.has(id)) {
+        id = `${base}-${n}`;
+        n += 1;
+    }
+    used.add(id);
+    return id;
+}
+
+/**
+ * The hero becomes an opener: title and lede on the left, the strategy's own
+ * headline number as a gold figure on the right, the remaining facts beneath.
+ */
+function elevateHero(html) {
+    const pattern = /<section class="strategy-hero">\s*<div class="container-custom">([\s\S]*?)<\/div>\s*<\/section>/;
+    const match = pattern.exec(html);
+    if (!match) return html;
+
+    const inner = match[1];
+    const title = (inner.match(/<h1[^>]*>([\s\S]*?)<\/h1>/) || [])[1] || '';
+    const deck = (inner.match(/<p class="guide-deck">([\s\S]*?)<\/p>/) || [])[1] || '';
+    const meta = (inner.match(/<p class="guide-hero__meta">([\s\S]*?)<\/p>/) || [])[1] || '';
+    const dl = (inner.match(/<dl class="guide-dl">([\s\S]*?)<\/dl>/) || [])[1] || '';
+
+    const rows = [...dl.matchAll(/<div>\s*<dt>([\s\S]*?)<\/dt>\s*<dd>([\s\S]*?)<\/dd>\s*<\/div>/g)]
+        .map((row) => ({ label: stripTags(row[1]), value: stripTags(row[2]) }));
+
+    const lead = rows.shift();
+    const figure = lead
+        ? `<div class="figure figure--gold${lead.value.length > 10 ? ' figure--long' : ''}">
+                            <span class="figure__value">${esc(lead.value)}</span>
+                            <span class="figure__label">${esc(lead.label.toLowerCase())}</span>
+                        </div>`
+        : '';
+
+    const restDl = rows.length
+        ? `
+                        <dl class="guide-dl">
+${rows.map((row) => `                            <div>
+                                <dt>${esc(row.label)}</dt>
+                                <dd>${esc(row.value)}</dd>
+                            </div>`).join('\n')}
+                        </dl>`
+        : '';
+
+    const replacement = `<section class="guide-opener">
+            <div class="container-custom">
+                <div class="opener">
+                    <div>
+                        <h1 class="opener__title">${title.trim()}</h1>
+                        ${deck ? `<p class="opener__lede">${deck.trim()}</p>` : ''}
+                        ${meta ? `<p class="guide-opener__meta">${meta.trim()}</p>` : ''}
+                    </div>
+                    <aside class="opener__aside">
+                        ${figure}${restDl}
+                    </aside>
+                </div>
+            </div>
+        </section>`;
+
+    return html.slice(0, match.index) + replacement + html.slice(match.index + match[0].length);
+}
+
+/**
+ * A sticky contents rail built from the guide's own H2s, so a 20,000px page
+ * always shows where the reader is and what else is on it.
+ */
+function addContentsRail(html) {
+    if (html.includes('class="contents guide-contents"')) return html;
+
+    const gridPattern = /<div class="content-grid">/;
+    if (!gridPattern.test(html)) return html;
+
+    const used = new Set();
+    const entries = [];
+
+    let out = html.replace(/<h2(?![^>]*\bid=)([^>]*)>([\s\S]*?)<\/h2>/g, (whole, attrs, body) => {
+        const text = stripTags(body);
+        if (!text) return whole;
+        const id = slugifyHeading(text, used);
+        entries.push({ id, text });
+        return `<h2 id="${id}"${attrs}>${body}</h2>`;
+    });
+
+    if (entries.length < 4) return out;
+
+    const rail = `<details class="contents guide-contents" open>
+                        <summary>On this page</summary>
+                        <ol>
+${entries.slice(0, 14).map((entry) => `                            <li><a href="#${entry.id}">${esc(entry.text)}</a></li>`).join('\n')}
+                        </ol>
+                    </details>`;
+
+    const open = '<div class="content-grid">';
+    const index = out.indexOf(open);
+    if (index === -1) return out;
+    const end = findBalancedEnd(out, index, 'div');
+    if (end === -1) return out;
+
+    const inner = out.slice(index + open.length, end - '</div>'.length);
+    const rebuilt = `<div class="guide-layout">
+                    ${rail}
+                    <div class="guide-column">${inner}</div>
+                </div>`;
+
+    return out.slice(0, index) + rebuilt + out.slice(end);
+}
+
+/** Every data table in a guide takes the shared navy-header treatment. */
+function elevateTables(html) {
+    return html
+        .replace(/class="comparison-table"/g, 'class="data-table"')
+        .replace(/<table(?![^>]*class=)([^>]*)>/g, '<table class="data-table"$1>');
+}
+
+/**
+ * A guide's "bottom line" paragraph carries the number the whole section was
+ * working towards. Pull that number out as a display figure and keep the
+ * sentence beside it.
+ */
+function elevateTakeaways(html) {
+    if (html.includes('class="guide-takeaway"')) return html;
+
+    let used = 0;
+    const seen = new Set();
+
+    return html.replace(
+        /<p><strong>((?:Bottom Line|Tax Impact|Tax Savings|Potential Savings|Expected savings|Result|Net Result|Wealth Impact[^<]*|Total tax benefit)[^<]{0,30}?)[::]?\s*<\/strong>\s*([\s\S]*?)<\/p>/gi,
+        (whole, label, body) => {
+            if (used >= 2) return whole;
+            const text = stripTags(body).trim();
+            const amounts = [...text.matchAll(/\$[\d,]+(?:\.\d+)?/g)].map((m) => m[0]);
+            if (!amounts.length) return whole;
+
+            const biggest = amounts.reduce((best, current) => (
+                Number(current.replace(/[^\d.]/g, '')) > Number(best.replace(/[^\d.]/g, '')) ? current : best
+            ), amounts[0]);
+
+            const heading = label.replace(/[::]\s*$/, '').trim();
+            const sentence = heading
+                .toLowerCase()
+                .replace(/^(.)/, (c) => c.toUpperCase())
+                .replace(/(\$[\d.,]+)([kmb])\b/g, (whole, amount, unit) => `${amount}${unit.toUpperCase()}`)
+                .replace(/\birs\b/g, 'IRS');
+
+            if (seen.has(biggest)) return whole;
+            seen.add(biggest);
+            used += 1;
+
+            return `<aside class="guide-takeaway">
+                            <div class="figure figure--long">
+                                <span class="figure__value">${esc(biggest)}</span>
+                                <span class="figure__label">${esc(sentence)}</span>
+                            </div>
+                            <p>${body.trim()}</p>
+                        </aside>`;
+        }
+    );
+}
+
+/**
+ * One pull-quote, taken from the guide's own words, to break the longest run
+ * of prose. Placed before the H2 nearest the middle of the article.
+ */
+function addPullQuote(html) {
+    if (html.includes('class="guide-inset"')) return html;
+
+    const headings = [...html.matchAll(/<h2[^>]*>[\s\S]*?<\/h2>/g)];
+    if (headings.length < 6) return html;
+
+    const target = headings[Math.floor(headings.length / 2)];
+    const before = html.slice(0, target.index);
+    const paragraphs = [...before.matchAll(/<p>([\s\S]*?)<\/p>/g)].slice(-8);
+    if (!paragraphs.length) return html;
+
+    const sentences = [];
+    for (const paragraph of paragraphs.reverse()) {
+        for (const part of stripTags(paragraph[1]).split(/(?<=[.!?])\s+/)) {
+            sentences.push(part.trim());
+        }
+    }
+
+    const sentence = sentences.find((part) => (
+        part.length > 60
+        && part.length < 190
+        && !/^[A-Z][A-Za-z ]{2,24}:/.test(part)
+        && !/^(Example|Note|Tip|Step|Year)\b/i.test(part)
+    ));
+    if (!sentence) return html;
+
+    const quote = `<aside class="guide-inset">
+                            <figure class="pull-quote">
+                                <blockquote><p>${esc(sentence)}</p></blockquote>
+                            </figure>
+                        </aside>
+
+                        `;
+
+    return html.slice(0, target.index) + quote + html.slice(target.index);
+}
+
 function tidyWhitespace(html) {
     return html.replace(/\n{3,}/g, '\n\n');
 }
@@ -512,6 +718,11 @@ function sweepFile(filePath, activeHref) {
     html = cleanSidebarCards(html);
     html = fixHeroSubtitle(html);
     html = fixHeadingSkips(html);
+    html = elevateHero(html);
+    html = elevateTables(html);
+    html = elevateTakeaways(html);
+    html = addContentsRail(html);
+    html = addPullQuote(html);
     html = normaliseScripts(html);
     html = tidyWhitespace(html);
 
