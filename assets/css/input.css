@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Self-hosted web fonts (latin subset). Replaces the Google Fonts @import that the CSS build silently dropped. */
+@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/dm-serif-display-400-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-display:swap;src:url('/assets/fonts/dm-serif-display-400-italic-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:400 700;font-display:swap;src:url('/assets/fonts/plus-jakarta-sans-variable-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+
 /* ============================================
    DESIGN SYSTEM: Premium Editorial Finance
    - Sophisticated navy & gold palette
@@ -11,8 +16,6 @@
    ============================================ */
 
 /* Premium Typography Stack */
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 @layer base {
   :root {
@@ -2195,3 +2198,126 @@
   color: var(--text-muted);
   font-weight: 500;
 }
+
+/* Site shell — outside @layer so it is never purged */
+  /* =====================================
+     SITE SHELL — header / footer (shared by every page)
+     ===================================== */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: var(--cream);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 4rem;
+    gap: 1rem;
+  }
+
+  .site-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-primary);
+    text-decoration: none;
+  }
+
+  .site-brand img { width: 1.75rem; height: 1.75rem; }
+
+  .site-nav-links {
+    display: none;
+    align-items: center;
+    gap: 1.75rem;
+  }
+
+  .site-nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    margin-right: -0.5rem;
+    color: var(--text-primary);
+    background: none;
+    border: 0;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+
+  .site-nav-mobile {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.5rem 0 1rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .site-nav-mobile.hidden { display: none; }
+  .site-nav-mobile .nav-link { padding: 0.625rem 0; font-size: 1rem; }
+
+  @media (min-width: 768px) {
+    .site-nav-links { display: flex; }
+    .site-nav-toggle,
+    .site-nav-mobile { display: none !important; }
+  }
+
+  .site-footer {
+    background: var(--navy);
+    color: #CBD5E1;
+    padding: 4rem 0 2.5rem;
+    margin-top: 6rem;
+  }
+
+  .site-footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem 2rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid rgba(203, 213, 225, 0.18);
+  }
+
+  @media (min-width: 640px) { .site-footer-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1024px) { .site-footer-grid { grid-template-columns: 1.6fr repeat(3, 1fr); } }
+
+  .site-footer .site-brand { color: #fff; }
+  .site-footer-brand p {
+    margin-top: 1rem;
+    max-width: 34ch;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: #CBD5E1;
+  }
+
+  .site-footer-group h2 {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    color: #fff;
+    margin-bottom: 0.875rem;
+  }
+
+  .site-footer-group ul { display: grid; gap: 0.5rem; }
+  .site-footer-group a {
+    color: #CBD5E1;
+    font-size: 0.9375rem;
+    text-decoration: none;
+    text-underline-offset: 0.15em;
+  }
+  .site-footer-group a:hover { color: #fff; text-decoration: underline; }
+
+  .site-footer-legal {
+    padding-top: 1.75rem;
+    font-size: 0.875rem;
+    color: #94A3B8;
+    max-width: 70ch;
+  }

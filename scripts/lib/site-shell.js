@@ -247,7 +247,95 @@ function renderSourceBlock({
           </section>`;
 }
 
+// ---- Shared site shell (header / footer / head assets) ------------------
+// Every generated page and every static page mirrors this markup exactly.
+
+const FOOTER_GROUPS = [
+  {
+    title: 'Guides',
+    items: [
+      { href: '/tax-strategies', label: 'Tax strategies' },
+      { href: '/compare', label: 'Compare guides' },
+      { href: '/topics', label: 'Topics' },
+      { href: '/markets', label: 'City market guides' },
+      { href: '/renters-insurance', label: 'Renters insurance by state' },
+    ],
+  },
+  {
+    title: 'Tools',
+    items: [
+      { href: '/tools', label: 'Free calculators' },
+      { href: '/blog', label: 'Blog' },
+    ],
+  },
+  {
+    title: 'Company',
+    items: [
+      { href: '/about', label: 'About Preston Seo' },
+      { href: '/success-stories', label: 'Student results' },
+      { href: '/privacy', label: 'Privacy' },
+      { href: '/terms', label: 'Terms' },
+    ],
+  },
+];
+
+function renderHeadAssets() {
+  return [
+    '<link rel="preload" href="/assets/fonts/dm-serif-display-400-latin.woff2" as="font" type="font/woff2" crossorigin>',
+    '<link rel="preload" href="/assets/fonts/plus-jakarta-sans-variable-latin.woff2" as="font" type="font/woff2" crossorigin>',
+    '<link rel="stylesheet" href="/assets/css/styles.css">',
+  ].join('\n    ');
+}
+
+function renderSiteHeader(activeHref = '') {
+  const links = renderPrimaryNavLinks(activeHref);
+  return `<header class="site-header">
+        <nav class="container-custom site-nav" aria-label="Main navigation">
+            <a href="/" class="site-brand">
+                <img src="/assets/images/logo.png" alt="" width="28" height="28">
+                <span>Legacy Investing Show</span>
+            </a>
+            <div class="site-nav-links">
+                ${links}
+            </div>
+            <button id="mobile-menu-btn" class="site-nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            </button>
+            <div id="mobile-menu" class="site-nav-mobile hidden">
+                ${links}
+            </div>
+        </nav>
+    </header>`;
+}
+
+function renderSiteFooter() {
+  const groups = FOOTER_GROUPS.map(
+    (g) => `<div class="site-footer-group">
+                    <h2>${esc(g.title)}</h2>
+                    <ul>
+                        ${g.items.map((i) => `<li><a href="${i.href}">${esc(i.label)}</a></li>`).join('\n                        ')}
+                    </ul>
+                </div>`
+  ).join('\n                ');
+  return `<footer class="site-footer" role="contentinfo">
+        <div class="container-custom">
+            <div class="site-footer-grid">
+                <div class="site-footer-brand">
+                    <a href="/" class="site-brand"><img src="/assets/images/logo.png" alt="" width="28" height="28"><span>Legacy Investing Show</span></a>
+                    <p>Tax strategy, wealth systems, and practical decision tools for professionals, investors, and founders.</p>
+                </div>
+                ${groups}
+            </div>
+            <p class="site-footer-legal">&copy; ${CURRENT_YEAR} Legacy Investing Show. Educational content, not individual tax, legal, or investment advice.</p>
+        </div>
+    </footer>`;
+}
+
 module.exports = {
+  renderHeadAssets,
+  renderSiteHeader,
+  renderSiteFooter,
+  FOOTER_GROUPS,
   CURRENT_YEAR,
   DEFAULT_GA_TRACKING_ID,
   DEFAULT_GTM_CONTAINER_ID,
