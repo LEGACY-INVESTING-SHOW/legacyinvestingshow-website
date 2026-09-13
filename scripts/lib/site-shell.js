@@ -17,7 +17,6 @@ const FOOTER_NAV_ITEMS = [
   { href: '/tools', label: 'Tools' },
   { href: '/success-stories', label: 'Results' },
   { href: '/reviews', label: 'Reviews' },
-  { href: '/pricing', label: 'Pricing' },
   { href: '/blog', label: 'Blog' },
 ];
 
@@ -272,8 +271,7 @@ const FOOTER_GROUPS = [
       { href: '/about', label: 'About Preston Seo' },
       { href: '/success-stories', label: 'Student results' },
       { href: '/reviews', label: 'Reviews' },
-      { href: '/pricing', label: 'Pricing' },
-      { href: '/privacy', label: 'Privacy' },
+          { href: '/privacy', label: 'Privacy' },
       { href: '/terms', label: 'Terms' },
     ],
   },

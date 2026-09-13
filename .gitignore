@@ -51,3 +51,4 @@ cms/_site/
 # yarn.lock
 .vercel
 .env*.local
+.claude/worktrees/

@@ -50,7 +50,7 @@ You can also look at the two Trustpilot profiles. The main one is [Legacy Invest
 | STR Concierge | $16,000 |
 | STR Concierge Portfolio | $30,000 |
 
-Bundles run from $17,000 to $34,000. Full details are on the [pricing page](/pricing).
+Bundles run from $17,000 to $34,000.
 
 ### The four complaints people make
 
@@ -66,7 +66,7 @@ What I say: Trustpilot shows we reply to 83% of negative reviews and usually tak
 
 **3. The price moved during the sales call.** Reviewers say the price dropped when they hesitated.
 
-What I say: the list prices are above and on the [pricing page](/pricing). Two things can change the number you hear. The Blueprint is $9,800 paid by cash or card, and $10,800 through Splitit financing, because financing costs money. We also run promotions at some points in the year. Neither is a reason to decide in one call. Ask for the price in writing and take it away with you.
+What I say: the list prices are above. Two things can change the number you hear. The Blueprint is $9,800 paid by cash or card, and $10,800 through Splitit financing, because financing costs money. We also run promotions at some points in the year. Neither is a reason to decide in one call. Ask for the price in writing and take it away with you.
 
 **4. The testimonials are all interviews I run myself.** This one is true.
 

@@ -529,6 +529,11 @@
   ],
   "redirects": [
     {
+      "source": "/pricing",
+      "destination": "/reviews",
+      "permanent": true
+    },
+    {
       "source": "/renters-insurance",
       "destination": "/tools/renters-insurance-cost",
       "permanent": true
