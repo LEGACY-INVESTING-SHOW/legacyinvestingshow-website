@@ -187,6 +187,88 @@ function fileExistsInRepo(relativePath) {
 }
 
 /**
+ * Intrinsic pixel size straight out of the file header (JPEG, PNG, WebP, GIF).
+ * The frontmatter's imageWidth/imageHeight are wrong on a good number of posts,
+ * and a wrong width/height pair is worse than none: it reserves the wrong box
+ * and the page jumps when the image lands.
+ */
+const imageSizeCache = new Map();
+
+function readImageSize(absolutePath) {
+    if (imageSizeCache.has(absolutePath)) return imageSizeCache.get(absolutePath);
+    let size = null;
+    try {
+        const buf = fs.readFileSync(absolutePath);
+        size = parseImageSize(buf);
+    } catch (error) {
+        size = null;
+    }
+    imageSizeCache.set(absolutePath, size);
+    return size;
+}
+
+function parseImageSize(buf) {
+    if (buf.length < 24) return null;
+
+    // PNG: IHDR width/height at bytes 16..24.
+    if (buf.readUInt32BE(0) === 0x89504e47) {
+        return { width: buf.readUInt32BE(16), height: buf.readUInt32BE(20) };
+    }
+
+    // GIF: little-endian width/height at bytes 6..10.
+    if (buf.toString('ascii', 0, 3) === 'GIF') {
+        return { width: buf.readUInt16LE(6), height: buf.readUInt16LE(8) };
+    }
+
+    // WebP: lossy (VP8 ), lossless (VP8L) and extended (VP8X) all differ.
+    if (buf.toString('ascii', 0, 4) === 'RIFF' && buf.toString('ascii', 8, 12) === 'WEBP') {
+        const chunk = buf.toString('ascii', 12, 16);
+        if (chunk === 'VP8 ' && buf.length >= 30) {
+            return { width: buf.readUInt16LE(26) & 0x3fff, height: buf.readUInt16LE(28) & 0x3fff };
+        }
+        if (chunk === 'VP8L' && buf.length >= 25) {
+            const bits = buf.readUInt32LE(21);
+            return { width: (bits & 0x3fff) + 1, height: ((bits >> 14) & 0x3fff) + 1 };
+        }
+        if (chunk === 'VP8X' && buf.length >= 30) {
+            return {
+                width: (buf[24] | (buf[25] << 8) | (buf[26] << 16)) + 1,
+                height: (buf[27] | (buf[28] << 8) | (buf[29] << 16)) + 1,
+            };
+        }
+        return null;
+    }
+
+    // JPEG: walk the marker chain to the start-of-frame segment.
+    if (buf[0] === 0xff && buf[1] === 0xd8) {
+        let offset = 2;
+        while (offset + 9 < buf.length) {
+            if (buf[offset] !== 0xff) {
+                offset += 1;
+                continue;
+            }
+            const marker = buf[offset + 1];
+            if (marker === 0xd8 || marker === 0x01 || (marker >= 0xd0 && marker <= 0xd7)) {
+                offset += 2;
+                continue;
+            }
+            const length = buf.readUInt16BE(offset + 2);
+            const isFrame =
+                (marker >= 0xc0 && marker <= 0xc3) ||
+                (marker >= 0xc5 && marker <= 0xc7) ||
+                (marker >= 0xc9 && marker <= 0xcb) ||
+                (marker >= 0xcd && marker <= 0xcf);
+            if (isFrame) {
+                return { height: buf.readUInt16BE(offset + 5), width: buf.readUInt16BE(offset + 7) };
+            }
+            offset += 2 + length;
+        }
+    }
+
+    return null;
+}
+
+/**
  * A hero <figure> is emitted only when the asset can actually be served.
  * 551 posts pointed at files that were never created; they now render no figure,
  * no preload, and fall back to the shared OG card for social previews.
@@ -194,7 +276,7 @@ function fileExistsInRepo(relativePath) {
 function resolveHero(post) {
     const raw = post.frontmatter.heroImage || post.frontmatter.image || '';
     if (!raw) {
-        return { exists: false, src: '', webp: '', alt: '', ogImage: SITE_DOMAIN + FALLBACK_OG_IMAGE };
+        return { exists: false, src: '', webp: '', alt: '', width: 0, height: 0, ogImage: SITE_DOMAIN + FALLBACK_OG_IMAGE };
     }
     if (/^https?:/i.test(raw)) {
         return {
@@ -202,19 +284,30 @@ function resolveHero(post) {
             src: raw,
             webp: '',
             alt: post.frontmatter.imageAlt || post.frontmatter.title || '',
+            width: 0,
+            height: 0,
             ogImage: raw,
         };
     }
     if (!fileExistsInRepo(raw)) {
-        return { exists: false, src: '', webp: '', alt: '', ogImage: SITE_DOMAIN + FALLBACK_OG_IMAGE };
+        return { exists: false, src: '', webp: '', alt: '', width: 0, height: 0, ogImage: SITE_DOMAIN + FALLBACK_OG_IMAGE };
+    }
+    // 54 posts name the shared social card as their image. It is a share
+    // thumbnail, not a photograph of anything in the article: keep it for
+    // og:image and render no figure.
+    if (raw.replace(/^\//, '') === FALLBACK_OG_IMAGE.replace(/^\//, '')) {
+        return { exists: false, src: '', webp: '', alt: '', width: 0, height: 0, ogImage: SITE_DOMAIN + FALLBACK_OG_IMAGE };
     }
     const webpCandidate = raw.replace(/\.(jpg|jpeg|png)$/i, '.webp');
     const webp = webpCandidate !== raw && fileExistsInRepo(webpCandidate) ? webpCandidate : '';
+    const size = readImageSize(path.join(ROOT_DIR, raw.replace(/^\//, ''))) || { width: 0, height: 0 };
     return {
         exists: true,
         src: raw,
         webp,
         alt: post.frontmatter.imageAlt || post.frontmatter.title || '',
+        width: size.width,
+        height: size.height,
         ogImage: SITE_DOMAIN + raw,
     };
 }
@@ -223,45 +316,86 @@ function resolveHero(post) {
 
 function renderCrumbs(title) {
     return `<nav class="post-crumbs" aria-label="Breadcrumb">
-                <ol class="post-crumbs-list">
-                    <li class="post-crumbs-item"><a href="/">Home</a></li>
-                    <li class="post-crumbs-item"><a href="/blog">Blog</a></li>
-                    <li class="post-crumbs-item post-crumbs-current">${esc(title)}</li>
-                </ol>
-            </nav>`;
-}
-
-function renderHeader(post) {
-    const fm = post.frontmatter;
-    const category = normalizeCategoryForArchives(fm.category || 'Investing');
-    const readTime = normalizeReadTime(post);
-    const description = fm.description ? `\n                <p class="post-standfirst">${esc(fm.description)}</p>` : '';
-
-    return `<header class="post-header">
-                <h1 class="post-title">${esc(fm.title || 'Untitled')}</h1>${description}
-                <p class="post-meta">
-                    <a class="post-meta-category" href="/blog/category/${slugifyCategory(category)}">${esc(category)}</a>
-                    <span class="post-meta-sep" aria-hidden="true">·</span>
-                    <time datetime="${formatISODate(fm.date)}">${esc(formatDate(fm.date))}</time>
-                    <span class="post-meta-sep" aria-hidden="true">·</span>
-                    <span>${readTime} min read</span>
-                    <span class="post-meta-sep" aria-hidden="true">·</span>
-                    <span>${esc(fm.author || 'Preston Seo')}</span>
-                </p>
-            </header>`;
-}
-
-function renderFigure(hero) {
-    if (!hero.exists) return '';
-    const img = `<img src="${esc(hero.src)}" alt="${esc(hero.alt)}" width="1200" height="630" loading="eager" fetchpriority="high" decoding="async">`;
-    const picture = hero.webp
-        ? `<picture><source srcset="${esc(hero.webp)}" type="image/webp">${img}</picture>`
-        : img;
-    return `<figure class="post-figure">${picture}</figure>`;
+                    <ol class="post-crumbs-list">
+                        <li class="post-crumbs-item"><a href="/">Home</a></li>
+                        <li class="post-crumbs-item"><a href="/blog">Blog</a></li>
+                        <li class="post-crumbs-item post-crumbs-current">${esc(title)}</li>
+                    </ol>
+                </nav>`;
 }
 
 /**
- * Heading anchors + a plain nested contents list for long reads only.
+ * The opener: title and lede in the wide column, the article's facts as a
+ * definition list in the aside. Meta is never a middle-dot string.
+ */
+function renderOpener(post) {
+    const fm = post.frontmatter;
+    const category = normalizeCategoryForArchives(fm.category || 'Investing');
+    const readTime = normalizeReadTime(post);
+    const lede = fm.description
+        ? `\n                        <p class="opener__lede post-standfirst">${esc(fm.description)}</p>`
+        : '';
+
+    const published = formatDate(fm.date);
+    const modifiedRaw = fm.modifiedDate || fm.updatedAt || '';
+    // Some posts carry a modifiedDate that predates the publication date;
+    // an "Updated" line older than "Published" is worse than none.
+    const isLater = modifiedRaw && new Date(modifiedRaw) > new Date(fm.date);
+    const modified = isLater ? formatDate(modifiedRaw) : '';
+    const updatedRow =
+        modified && modified !== published
+            ? `\n                            <div class="post-meta-row">
+                                <dt class="post-meta-term">Updated</dt>
+                                <dd class="post-meta-value"><time datetime="${formatISODate(modifiedRaw)}">${esc(modified)}</time></dd>
+                            </div>`
+            : '';
+
+    return `<header class="opener post-opener">
+                    <div class="opener__main">
+                        <h1 class="opener__title post-title">${esc(fm.title || 'Untitled')}</h1>${lede}
+                    </div>
+                    <div class="opener__aside post-opener-aside">
+                        <dl class="post-meta">
+                            <div class="post-meta-row">
+                                <dt class="post-meta-term">Category</dt>
+                                <dd class="post-meta-value"><a class="post-meta-category" href="/blog/category/${slugifyCategory(category)}">${esc(category)}</a></dd>
+                            </div>
+                            <div class="post-meta-row">
+                                <dt class="post-meta-term">Published</dt>
+                                <dd class="post-meta-value"><time datetime="${formatISODate(fm.date)}">${esc(published)}</time></dd>
+                            </div>${updatedRow}
+                            <div class="post-meta-row">
+                                <dt class="post-meta-term">Read time</dt>
+                                <dd class="post-meta-value">${readTime} min</dd>
+                            </div>
+                            <div class="post-meta-row">
+                                <dt class="post-meta-term">Written by</dt>
+                                <dd class="post-meta-value">${esc(fm.author || 'Preston Seo')}</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </header>`;
+}
+
+/** The hero photograph, inside the shared gold offset frame. */
+function renderFigure(hero) {
+    if (!hero.exists) return '';
+    const dims = hero.width && hero.height ? ` width="${hero.width}" height="${hero.height}"` : '';
+    const img = `<img src="${esc(hero.src)}" alt="${esc(hero.alt)}"${dims} loading="eager" fetchpriority="high" decoding="async">`;
+    const picture = hero.webp
+        ? `<picture><source srcset="${esc(hero.webp)}" type="image/webp">${img}</picture>`
+        : img;
+    return `<div class="post-hero">
+                <div class="post-wrap">
+                    <figure class="photo post-figure">${picture}</figure>
+                </div>
+            </div>`;
+}
+
+/**
+ * Heading anchors plus the contents rail for long reads only. The rail ships
+ * as a closed <details> — the right default on a phone — and the stylesheet
+ * forces it open as a rail from 1024px.
  * Returns the content with ids injected so in-page links resolve.
  */
 function buildTOC(contentHtml, wordCount) {
@@ -302,30 +436,30 @@ function buildTOC(contentHtml, wordCount) {
     const list = items
         .map((item) => {
             const children = item.children.length
-                ? `\n                            <ol class="post-toc-sublist">${item.children
+                ? `\n                                <ol class="post-toc-sublist">${item.children
                       .map(
                           (child) =>
-                              `\n                                <li class="post-toc-item"><a href="#${child.slug}">${esc(child.label)}</a></li>`
+                              `\n                                    <li class="post-toc-item"><a href="#${child.slug}">${esc(child.label)}</a></li>`
                       )
-                      .join('')}\n                            </ol>\n                        `
+                      .join('')}\n                                </ol>\n                            `
                 : '';
-            return `\n                        <li class="post-toc-item"><a href="#${item.slug}">${esc(item.label)}</a>${children}</li>`;
+            return `\n                            <li class="post-toc-item"><a href="#${item.slug}">${esc(item.label)}</a>${children}</li>`;
         })
         .join('');
 
-    const toc = `<nav class="post-toc" aria-labelledby="post-toc-title">
-                <h2 class="post-toc-title" id="post-toc-title">Contents</h2>
-                <ol class="post-toc-list">${list}
-                </ol>
-            </nav>`;
+    const toc = `<details class="contents post-contents">
+                        <summary class="contents__summary post-toc-title">Contents</summary>
+                        <ol class="contents__list post-toc-list">${list}
+                        </ol>
+                    </details>`;
 
     return { toc, content };
 }
 
 /**
- * Statistics become one definition list of sourced facts. A stat without a
- * source, or one whose note merely repeats a sentence already in the body,
- * is dropped rather than re-dressed as a card.
+ * Statistics become display figures in the margin. A stat without a source, or
+ * one whose note merely repeats a sentence already in the body, is dropped
+ * rather than re-dressed as a card.
  */
 function renderFacts(statistics, proseText) {
     if (!Array.isArray(statistics) || statistics.length === 0) return '';
@@ -344,37 +478,44 @@ function renderFacts(statistics, proseText) {
     const rows = kept
         .map((stat) => {
             const note = stat.context
-                ? `\n                        <p class="post-fact-note">${esc(stat.context)}</p>`
+                ? `\n                                <p class="figure__note post-fact-note">${esc(stat.context)}</p>`
                 : '';
-            return `\n                    <div class="post-fact">
-                        <dt class="post-fact-label">${esc(stat.label)}</dt>
-                        <dd class="post-fact-body">
-                            <span class="post-fact-value">${esc(stat.value)}</span>${note}
-                            <p class="post-fact-source">Source: ${esc(stat.source)}</p>
-                        </dd>
-                    </div>`;
+            return `\n                        <div class="figure post-fact">
+                            <dt class="figure__label post-fact-label">${esc(stat.label)}</dt>
+                            <dd class="post-fact-body">
+                                <span class="figure__value post-fact-value">${esc(stat.value)}</span>${note}
+                                <p class="post-fact-source">Source: ${esc(stat.source)}</p>
+                            </dd>
+                        </div>`;
         })
         .join('');
 
-    return `<dl class="post-facts">${rows}
-                </dl>`;
+    return `<section class="post-figures" aria-labelledby="post-figures-title">
+                        <h2 class="post-aside-title" id="post-figures-title">Figures in this article</h2>
+                        <dl class="post-facts">${rows}
+                        </dl>
+                    </section>`;
 }
 
-/** Markdown tables get their own horizontal scroller so narrow screens never pan the page. */
+/** Markdown tables become the shared data table inside their own scroller. */
 function wrapTables(contentHtml) {
     return String(contentHtml).replace(
         /<table(\s[^>]*)?>([\s\S]*?)<\/table>/gi,
-        (match) => `<div class="post-table">${match}</div>`
+        (match, attrs) => {
+            const withClass = /\sclass="/.test(attrs || '')
+                ? match.replace(/\sclass="/, ' class="data-table ')
+                : match.replace(/^<table/, '<table class="data-table"');
+            return `<div class="post-table">${withClass}</div>`;
+        }
     );
 }
 
-/** Insert the fact list after the article's first section. */
-function insertFacts(contentHtml, factsHtml) {
-    if (!factsHtml) return contentHtml;
-    const second = [...String(contentHtml).matchAll(/<h2[\s>]/gi)][1];
-    if (!second) return `${contentHtml}\n            ${factsHtml}`;
-    const at = second.index;
-    return `${contentHtml.slice(0, at)}${factsHtml}\n            ${contentHtml.slice(at)}`;
+/** A quotation in the copy is a pull-quote, not an indented paragraph. */
+function stylePullQuotes(contentHtml) {
+    return String(contentHtml).replace(/<blockquote(\s[^>]*)?>/gi, (match, attrs) => {
+        if (/\sclass="/.test(attrs || '')) return match.replace(/\sclass="/, ' class="pull-quote ');
+        return '<blockquote class="pull-quote">';
+    });
 }
 
 /**
@@ -393,32 +534,37 @@ function renderSources(post) {
     const stripped = raw
         .replace(/\s+style="[^"]*"/g, '')
         .replace('class="source-note"', 'class="post-sources"')
-        .replace('<h2>', '<h2 class="post-sources-title">')
+        .replace('<h2>', '<h2 class="post-aside-title post-sources-title">')
         .replace('<ul>', '<ul class="post-sources-list">')
         .replace(/<li>/g, '<li class="post-sources-item">')
         .replace(/\s+$/, '');
 
     return stripped.replace(
         '</section>',
-        `  <p class="post-sources-disclaimer">${DISCLAIMER}</p>\n            </section>`
+        `  <p class="post-sources-disclaimer">${DISCLAIMER}</p>\n          </section>`
     );
 }
 
+/** Questions and answers as a definition list on the cream-dark band. */
 function renderFAQ(faqs) {
     if (!Array.isArray(faqs) || faqs.length === 0) return '';
     const rows = faqs
         .filter((item) => item && item.question && item.answer)
         .map(
-            (item) => `\n                    <dt class="post-faq-question">${esc(item.question)}</dt>
-                    <dd class="post-faq-answer">${esc(item.answer)}</dd>`
+            (item) => `\n                        <div class="post-faq-row">
+                            <dt class="post-faq-question">${esc(item.question)}</dt>
+                            <dd class="post-faq-answer">${esc(item.answer)}</dd>
+                        </div>`
         )
         .join('');
     if (!rows) return '';
 
-    return `<section class="post-faq" aria-labelledby="post-faq-title">
-                <h2 class="post-faq-title" id="post-faq-title">Frequently asked questions</h2>
-                <dl class="post-faq-list">${rows}
-                </dl>
+    return `<section class="band band--cream-dark post-faq" aria-labelledby="post-faq-title">
+                <div class="post-wrap">
+                    <h2 class="post-faq-title" id="post-faq-title">Frequently asked questions</h2>
+                    <dl class="dl-terms post-faq-list">${rows}
+                    </dl>
+                </div>
             </section>`;
 }
 
@@ -445,42 +591,73 @@ function renderRelated(post, allPosts, limit = RELATED_LIMIT) {
     const items = picks
         .map(
             (item) =>
-                `\n                    <li class="post-related-item"><a href="/blog/${item.slug}">${esc(item.frontmatter.title || item.slug)}</a></li>`
+                `\n                        <li class="post-related-item"><a href="/blog/${item.slug}">${esc(item.frontmatter.title || item.slug)}</a></li>`
         )
         .join('');
 
     return `<nav class="post-related" aria-labelledby="post-related-title">
-                <h2 class="post-related-title" id="post-related-title">More in ${esc(category)}</h2>
-                <ul class="post-related-list">${items}
-                    <li class="post-related-item post-related-all"><a href="/blog/category/${slugifyCategory(category)}">All ${esc(category)} articles</a></li>
-                </ul>
+                <div class="post-wrap">
+                    <h2 class="post-related-title" id="post-related-title">More in ${esc(category)}</h2>
+                    <ul class="post-related-list">${items}
+                    </ul>
+                    <p class="post-related-all"><a href="/blog/category/${slugifyCategory(category)}">All ${esc(category)} articles</a></p>
+                </div>
             </nav>`;
 }
 
 /**
  * The complete <article> markup for a post. Both renderers call this, so the
  * static template and the Eleventy layout cannot produce different DOM.
+ *
+ * Surfaces, in order: cream opener, the framed hero photograph, the white
+ * reading sheet with its margin column, the cream-dark FAQ band, and the
+ * related list back on cream.
  */
 function renderArticleBody({ post, contentHtml, allPosts }) {
     const fm = post.frontmatter;
     const wordCount = fm.wordCount ? Number(fm.wordCount) : countWords(post.content || '');
     const { toc, content } = buildTOC(contentHtml, wordCount);
     const facts = renderFacts(fm.statistics || fm.stats, stripTags(content));
-    const prose = insertFacts(wrapTables(content), facts);
-    const hero = resolveHero(post);
+    const prose = stylePullQuotes(wrapTables(content));
+    const hero = renderFigure(resolveHero(post));
 
-    const parts = [
-        renderCrumbs(fm.title || 'Untitled'),
-        renderHeader(post),
-        renderFigure(hero),
-        toc,
-        `<div class="post-prose">\n${prose}\n            </div>`,
-        renderSources(post),
+    const asideParts = [facts, renderSources(post)].filter(Boolean);
+    const aside = asideParts.length
+        ? `<aside class="marginalia__aside post-aside">
+                    ${asideParts.join('\n\n                    ')}
+                </aside>`
+        : '';
+    const bodyClasses = ['marginalia', 'post-body'];
+    if (!toc) bodyClasses.push('post-body--no-contents');
+    if (!aside) bodyClasses.push('post-body--no-aside');
+
+    const bodyInner = [toc, `<div class="marginalia__main post-main">
+                        <div class="sheet post-prose">
+${prose}
+                        </div>
+                    </div>`, aside].filter(Boolean);
+
+    const sections = [
+        `<div class="post-head">
+                <div class="post-wrap">
+                    ${renderCrumbs(fm.title || 'Untitled')}
+
+                    ${renderOpener(post)}
+                </div>
+            </div>`,
+        hero,
+        `<div class="post-body-outer">
+                <div class="post-wrap">
+                    <div class="${bodyClasses.join(' ')}">
+                        ${bodyInner.join('\n\n                    ')}
+                    </div>
+                </div>
+            </div>`,
         renderFAQ(fm.faq || fm.faqs),
         renderRelated(post, allPosts || loadAllPosts()),
     ].filter(Boolean);
 
-    return `<article class="post">\n            ${parts.join('\n\n            ')}\n        </article>`;
+    return `<article class="post">\n            ${sections.join('\n\n            ')}\n        </article>`;
 }
 
 // ------------------------------------------------------------------ exports
@@ -504,6 +681,7 @@ module.exports = {
     normalizeCategoryForArchives,
     normalizeReadTime,
     parseMarkdownFile,
+    readImageSize,
     renderArticleBody,
     renderFacts,
     renderFAQ,
@@ -513,5 +691,6 @@ module.exports = {
     slugifyCategory,
     slugifyHeading,
     stripTags,
+    stylePullQuotes,
     wrapTables,
 };

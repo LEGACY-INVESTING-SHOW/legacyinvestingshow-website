@@ -32,7 +32,7 @@
     <meta name="theme-color" content="#FAF7F2">
     <link rel="icon" type="image/png" href="../assets/images/logo.png">
     <link rel="apple-touch-icon" href="../assets/images/logo.png">
-    <link rel="preload" as="image" href="../assets/images/og-blog.jpg" fetchpriority="high">
+    
 
     <link rel="preload" href="../assets/fonts/dm-serif-display-400-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../assets/fonts/plus-jakarta-sans-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -179,10 +179,7 @@
 
     <header class="site-header">
         <nav class="container-custom site-nav" aria-label="Main navigation">
-            <a href="/" class="site-brand">
-                <img src="../assets/images/logo-240.webp" alt="" width="62" height="28">
-                <span>Legacy Investing Show</span>
-            </a>
+            <a href="/" class="site-brand">Legacy Investing Show</a>
             <div class="site-nav-links">
                 <a href="/" class="nav-link">Home</a>
                     <a href="/about" class="nav-link">About</a>
@@ -208,31 +205,54 @@
     <main id="main">
         <div class="post-page">
         <article class="post">
-            <nav class="post-crumbs" aria-label="Breadcrumb">
-                <ol class="post-crumbs-list">
-                    <li class="post-crumbs-item"><a href="/">Home</a></li>
-                    <li class="post-crumbs-item"><a href="/blog">Blog</a></li>
-                    <li class="post-crumbs-item post-crumbs-current">BRRRR Method: 2026 Guide to Buy, Rehab, Rent, Refinance, Repeat Without Bad Math</li>
-                </ol>
-            </nav>
+            <div class="post-head">
+                <div class="post-wrap">
+                    <nav class="post-crumbs" aria-label="Breadcrumb">
+                    <ol class="post-crumbs-list">
+                        <li class="post-crumbs-item"><a href="/">Home</a></li>
+                        <li class="post-crumbs-item"><a href="/blog">Blog</a></li>
+                        <li class="post-crumbs-item post-crumbs-current">BRRRR Method: 2026 Guide to Buy, Rehab, Rent, Refinance, Repeat Without Bad Math</li>
+                    </ol>
+                </nav>
 
-            <header class="post-header">
-                <h1 class="post-title">BRRRR Method: 2026 Guide to Buy, Rehab, Rent, Refinance, Repeat Without Bad Math</h1>
-                <p class="post-standfirst">Learn how the BRRRR method works, where the refinance step breaks deals, and how investors should underwrite rehab, rent, and cash-out assumptions in 2026.</p>
-                <p class="post-meta">
-                    <a class="post-meta-category" href="/blog/category/real-estate">Real Estate</a>
-                    <span class="post-meta-sep" aria-hidden="true">·</span>
-                    <time datetime="2026-02-15T00:00:00.000Z">February 15, 2026</time>
-                    <span class="post-meta-sep" aria-hidden="true">·</span>
-                    <span>3 min read</span>
-                    <span class="post-meta-sep" aria-hidden="true">·</span>
-                    <span>Preston Seo</span>
-                </p>
-            </header>
+                    <header class="opener post-opener">
+                    <div class="opener__main">
+                        <h1 class="opener__title post-title">BRRRR Method: 2026 Guide to Buy, Rehab, Rent, Refinance, Repeat Without Bad Math</h1>
+                        <p class="opener__lede post-standfirst">Learn how the BRRRR method works, where the refinance step breaks deals, and how investors should underwrite rehab, rent, and cash-out assumptions in 2026.</p>
+                    </div>
+                    <div class="opener__aside post-opener-aside">
+                        <dl class="post-meta">
+                            <div class="post-meta-row">
+                                <dt class="post-meta-term">Category</dt>
+                                <dd class="post-meta-value"><a class="post-meta-category" href="/blog/category/real-estate">Real Estate</a></dd>
+                            </div>
+                            <div class="post-meta-row">
+                                <dt class="post-meta-term">Published</dt>
+                                <dd class="post-meta-value"><time datetime="2026-02-15T00:00:00.000Z">February 15, 2026</time></dd>
+                            </div>
+                            <div class="post-meta-row">
+                                <dt class="post-meta-term">Updated</dt>
+                                <dd class="post-meta-value"><time datetime="2026-03-11T00:00:00.000Z">March 11, 2026</time></dd>
+                            </div>
+                            <div class="post-meta-row">
+                                <dt class="post-meta-term">Read time</dt>
+                                <dd class="post-meta-value">3 min</dd>
+                            </div>
+                            <div class="post-meta-row">
+                                <dt class="post-meta-term">Written by</dt>
+                                <dd class="post-meta-value">Preston Seo</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </header>
+                </div>
+            </div>
 
-            <figure class="post-figure"><img src="../assets/images/og-blog.jpg" alt="BRRRR Method: 2026 Guide to Buy, Rehab, Rent, Refinance, Repeat Without Bad Math" width="1200" height="630" loading="eager" fetchpriority="high" decoding="async"></figure>
-
-            <div class="post-prose">
+            <div class="post-body-outer">
+                <div class="post-wrap">
+                    <div class="marginalia post-body post-body--no-contents">
+                        <div class="marginalia__main post-main">
+                        <div class="sheet post-prose">
 <p>The BRRRR method sounds elegant because the acronym makes the process feel mechanical: buy, rehab, rent, refinance, repeat. In practice, the strategy succeeds or fails on one thing: whether the refinance step actually works on realistic numbers.</p>
 <p>Many investors get the first four letters right and still lose because they were underwriting the refinance as a story instead of a financing event.</p>
 <h2 id="what-the-brrrr-method-is-trying-to-do">What the BRRRR method is trying to do</h2>
@@ -296,11 +316,13 @@
 <h2 id="final-takeaway">Final takeaway</h2>
 <p>The BRRRR method is powerful when the investor can bridge construction risk, leasing risk, and refinance risk without pretending any of those steps are automatic. The strategy works best when the refinance is underwritten conservatively and the final hold still makes sense on its own.</p>
 
-            </div>
+                        </div>
+                    </div>
 
-            <section class="post-sources" aria-label="Primary sources">
-            <h2 class="post-sources-title">Sources to check before you act</h2>
-            <p>Use primary guidance and your own records before you treat any page like a final answer. These are the source layers that should drive the decision.</p>
+                    <aside class="marginalia__aside post-aside">
+                    <section class="post-sources" aria-label="Primary sources">
+            <h2 class="post-aside-title post-sources-title">Sources to check before you act</h2>
+            <p>Check primary guidance and your own records before you treat any page as a final answer.</p>
             <ul class="post-sources-list">
               <li class="post-sources-item"><a href="https://www.irs.gov/forms-pubs/about-publication-946" rel="noopener noreferrer" target="_blank">IRS Publication 946 and depreciation guidance</a></li>
 <li class="post-sources-item"><a href="https://www.irs.gov/forms-pubs/about-publication-925" rel="noopener noreferrer" target="_blank">IRS passive activity rules (Publication 925)</a></li>
@@ -308,19 +330,25 @@
 <li class="post-sources-item">Your actual account statements, payroll reports, entity records, and advisor memos</li>
             </ul>
             <p class="post-sources-disclaimer">Educational only. Results vary. Tax, legal, and investment decisions should be reviewed with a qualified professional who can see your full situation.</p>
-            </section>
+          </section>
+                </aside>
+                    </div>
+                </div>
+            </div>
 
             <nav class="post-related" aria-labelledby="post-related-title">
-                <h2 class="post-related-title" id="post-related-title">More in Real Estate</h2>
-                <ul class="post-related-list">
-                    <li class="post-related-item"><a href="/blog/how-much-does-it-cost-to-move">How Much Does It Cost to Move? The Real 2026 Budget</a></li>
-                    <li class="post-related-item"><a href="/blog/how-much-rent-can-i-afford">How Much Rent Can I Afford? A Budget That Survives the Lease</a></li>
-                    <li class="post-related-item"><a href="/blog/how-to-calculate-home-equity">How to Calculate Home Equity and What It Really Unlocks</a></li>
-                    <li class="post-related-item"><a href="/blog/mortgage-payment-principal-interest-taxes-insurance">Mortgage Payment Breakdown: Principal, Interest, Taxes, and Insurance</a></li>
-                    <li class="post-related-item"><a href="/blog/mortgage-refinance-break-even-guide">Mortgage Refinance Break-Even: When a Lower Rate Pays Off</a></li>
-                    <li class="post-related-item"><a href="/blog/rent-vs-buy-which-is-better">Rent vs Buy: Which Is Better for Your Money?</a></li>
-                    <li class="post-related-item post-related-all"><a href="/blog/category/real-estate">All Real Estate articles</a></li>
-                </ul>
+                <div class="post-wrap">
+                    <h2 class="post-related-title" id="post-related-title">More in Real Estate</h2>
+                    <ul class="post-related-list">
+                        <li class="post-related-item"><a href="/blog/how-much-does-it-cost-to-move">How Much Does It Cost to Move? The Real 2026 Budget</a></li>
+                        <li class="post-related-item"><a href="/blog/how-much-rent-can-i-afford">How Much Rent Can I Afford? A Budget That Survives the Lease</a></li>
+                        <li class="post-related-item"><a href="/blog/how-to-calculate-home-equity">How to Calculate Home Equity and What It Really Unlocks</a></li>
+                        <li class="post-related-item"><a href="/blog/mortgage-payment-principal-interest-taxes-insurance">Mortgage Payment Breakdown: Principal, Interest, Taxes, and Insurance</a></li>
+                        <li class="post-related-item"><a href="/blog/mortgage-refinance-break-even-guide">Mortgage Refinance Break-Even: When a Lower Rate Pays Off</a></li>
+                        <li class="post-related-item"><a href="/blog/rent-vs-buy-which-is-better">Rent vs Buy: Which Is Better for Your Money?</a></li>
+                    </ul>
+                    <p class="post-related-all"><a href="/blog/category/real-estate">All Real Estate articles</a></p>
+                </div>
             </nav>
         </article>
         </div>
@@ -330,11 +358,11 @@
         <div class="container-custom">
             <div class="site-footer-grid">
                 <div class="site-footer-brand">
-                    <a href="/" class="site-brand"><img src="../assets/images/logo-240.webp" alt="" width="62" height="28"><span>Legacy Investing Show</span></a>
+                    <a href="/" class="site-brand">Legacy Investing Show</a>
                     <p>Tax strategy, wealth systems, and practical decision tools for professionals, investors, and founders.</p>
                 </div>
                 <div class="site-footer-group">
-                    <h2>Guides</h2>
+                    <p class="site-footer-title">Guides</p>
                     <ul>
                         <li><a href="/tax-strategies">Tax strategies</a></li>
                         <li><a href="/compare">Compare guides</a></li>
@@ -344,14 +372,14 @@
                     </ul>
                 </div>
                 <div class="site-footer-group">
-                    <h2>Tools</h2>
+                    <p class="site-footer-title">Tools</p>
                     <ul>
                         <li><a href="/tools">Free calculators</a></li>
                         <li><a href="/blog">Blog</a></li>
                     </ul>
                 </div>
                 <div class="site-footer-group">
-                    <h2>Company</h2>
+                    <p class="site-footer-title">Company</p>
                     <ul>
                         <li><a href="/about">About Preston Seo</a></li>
                         <li><a href="/success-stories">Student results</a></li>
