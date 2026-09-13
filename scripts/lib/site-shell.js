@@ -173,7 +173,7 @@ function buildReferenceSources({ title = '', slug = '', type = '' } = {}) {
     ];
   }
 
-  if (/cost segregation|bonus depreciation|reps|real estate|short-term rental|str/.test(text)) {
+  if (/cost segregation|bonus depreciation|\breps\b|real estate|short-term rental|\bstr\b/.test(text)) {
     return [
       {
         label: 'IRS Publication 946 and depreciation guidance',
@@ -232,16 +232,15 @@ function renderSourceBlock({
   const rows = items.map((item) => {
     const label = esc(item.label);
     if (item.href) {
-      return `<li style="margin-bottom: 0.55rem;"><a href="${esc(item.href)}" rel="noopener noreferrer" target="_blank" style="color: #0f766e; text-decoration: underline;">${label}</a></li>`;
+      return `<li><a href="${esc(item.href)}" rel="noopener noreferrer" target="_blank">${label}</a></li>`;
     }
-
-    return `<li style="margin-bottom: 0.55rem;">${label}</li>`;
+    return `<li>${label}</li>`;
   }).join('\n');
 
-  return `<section class="source-note" aria-label="Primary sources" style="margin: 2rem 0 0; padding: 1.25rem; border: 1px solid #e5e7eb; border-radius: 1rem; background: #f8fafc;">
-            <h2 style="margin: 0 0 0.75rem; font-size: 1.2rem; color: #111827;">${esc(heading)}</h2>
-            <p style="margin: 0 0 0.85rem; color: #4b5563; line-height: 1.7;">Use primary guidance and your own records before you treat any page like a final answer. These are the source layers that should drive the decision.</p>
-            <ul style="margin: 0; padding-left: 1.1rem; list-style: disc; color: #374151;">
+  return `<section class="source-note" aria-label="Primary sources">
+            <h2>${esc(heading)}</h2>
+            <p>Check primary guidance and your own records before you treat any page as a final answer.</p>
+            <ul>
               ${rows}
             </ul>
           </section>`;

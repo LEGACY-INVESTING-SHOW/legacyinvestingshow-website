@@ -1403,3 +1403,13 @@
   color: var(--on-navy-muted);
   max-width: 70ch;
 }
+
+
+  /* Primary sources block (rendered by site-shell renderSourceBlock) */
+  .source-note { margin: 3rem 0 0; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+  .source-note h2 { font-size: 1.25rem; margin: 0 0 0.5rem; }
+  .source-note p { margin: 0 0 0.75rem; color: var(--text-secondary); max-width: 65ch; }
+  .source-note ul { margin: 0; padding-left: 1.1rem; list-style: disc; color: var(--text-secondary); }
+  .source-note li { margin-bottom: 0.4rem; }
+  .source-note a { color: var(--text-primary); text-decoration: underline; text-underline-offset: 0.15em; }
+  .source-note a:hover { color: var(--gold-text); }
