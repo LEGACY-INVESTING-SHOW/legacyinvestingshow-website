@@ -9,6 +9,7 @@ const ROOT = path.resolve(__dirname, '..');
 const PAGES = {
   'index.html': '/',
   'about.html': '/about',
+  'about/preston-seo.html': '/about',
   'success-stories.html': '/success-stories',
   'tax-strategies-101.html': '/tax-strategies',
   'privacy.html': '',

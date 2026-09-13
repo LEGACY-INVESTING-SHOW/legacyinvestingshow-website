@@ -26,6 +26,7 @@ const {
     renderSiteHeader,
 } = require('./lib/site-shell');
 const blogRender = require('./lib/blog-render');
+const schemaOrg = require('./lib/schema-org');
 
 const {
     POSTS_PER_PAGE,
@@ -161,6 +162,9 @@ function applyTemplate(template, post, allPosts) {
         .replace(/\{\{category\}\}/g, esc(category))
         .replace(/\{\{wordCount\}\}/g, String(wordCount))
         .replace(/\{\{faqSchema\}\}/g, generateFAQSchema(fm.faq || fm.faqs))
+        .replace(/\{\{authorSchema\}\}/g, schemaOrg.toJsonLd(schemaOrg.author(fm.author || 'Preston Seo'), 4))
+        .replace(/\{\{publisherSchema\}\}/g, schemaOrg.toJsonLd(schemaOrg.organization(), 4))
+        .replace(/\{\{organizationSchema\}\}/g, schemaOrg.renderJsonLdScript(schemaOrg.organizationWithContext(), 4))
         .replace(/\{\{headAssets\}\}/g, renderHeadAssets())
         .replace(/\{\{siteHeader\}\}/g, renderSiteHeader('/blog'))
         .replace(/\{\{siteFooter\}\}/g, renderSiteFooter())

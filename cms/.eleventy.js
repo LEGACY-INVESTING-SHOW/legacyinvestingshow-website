@@ -6,6 +6,7 @@ const {
   renderAnalyticsHead,
 } = require("../scripts/lib/site-shell");
 const blogRender = require("../scripts/lib/blog-render");
+const schemaOrg = require("../scripts/lib/schema-org");
 
 module.exports = function(eleventyConfig) {
   const siteUrl = process.env.SITE_URL || "https://www.legacyinvestingshow.com";
@@ -17,6 +18,18 @@ module.exports = function(eleventyConfig) {
   // The header, footer and head assets are never hand-copied into Nunjucks:
   // they come straight from scripts/lib/site-shell.js, the same renderer the
   // static generators call.
+  // ---- Entity graph ------------------------------------------------------
+  // Organization and Person JSON-LD come from scripts/lib/schema-org.js so the
+  // whole site keeps one Organization @id and one Person @id.
+  eleventyConfig.addGlobalData("schemaOrg", () => ({
+    organization: schemaOrg.organization(),
+    organizationWithContext: schemaOrg.organizationWithContext(),
+    personId: schemaOrg.PERSON_ID,
+    personUrl: schemaOrg.PERSON_PAGE_URL,
+  }));
+
+  eleventyConfig.addFilter("authorSchema", (name) => schemaOrg.author(name || "Preston Seo"));
+
   eleventyConfig.addGlobalData("siteShell", () => ({
     headAssets: renderHeadAssets(),
     header: renderSiteHeader("/blog"),

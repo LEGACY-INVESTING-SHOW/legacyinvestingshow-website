@@ -1,10 +1,7 @@
 {% set canonicalCurrent = (canonicalUrl or (page.url | absoluteUrl)) | canonicalizeUrl %}
 {% set siteRootUrl = ("/" | absoluteUrl) | canonicalizeUrl %}
 {% set blogIndexUrl = ("/blog/" | absoluteUrl) | canonicalizeUrl %}
-{% set aboutUrl = ("/about" | absoluteUrl) | canonicalizeUrl %}
-{% set aboutAuthorUrl = (aboutUrl ~ "#author") | canonicalizeUrl %}
 {% set heroImageUrl = ((hero.ogImage or heroImage) | absoluteUrl) | canonicalizeUrl %}
-{% set logoUrl = ("/assets/images/og-home.jpg" | absoluteUrl) | canonicalizeUrl %}
 {% set publishedIso = date | isoDate %}
 {% set modifiedIso = (dateModified or date) | isoDate %}
 
@@ -49,42 +46,8 @@
         "width": 1200,
         "height": 630
     },
-    "author": {
-        "@type": "Person",
-        "@id": {{ aboutAuthorUrl | jsonLd | safe }},
-        "name": {{ author | jsonLd | safe }},
-        "url": {{ aboutUrl | jsonLd | safe }},
-        "jobTitle": "Real Estate Investor & Educator",
-        "knowsAbout": [
-            "Airbnb Arbitrage",
-            "Real Estate Investing",
-            "Short-Term Rentals",
-            "Passive Income Strategies",
-            "Property Management"
-        ],
-        "sameAs": [
-            "https://www.instagram.com/thelegacyshow",
-            "https://www.youtube.com/@thelegacyinvestingshow",
-            "https://www.tiktok.com/@thelegacyshow"
-        ]
-    },
-    "publisher": {
-        "@type": "Organization",
-        "name": "Legacy Investing Show",
-        "url": {{ siteRootUrl | jsonLd | safe }},
-        "logo": {
-            "@type": "ImageObject",
-            "url": {{ logoUrl | jsonLd | safe }},
-            "width": 512,
-            "height": 512
-        },
-        "sameAs": [
-            "https://www.instagram.com/thelegacyshow",
-            "https://www.youtube.com/@thelegacyinvestingshow",
-            "https://www.tiktok.com/@thelegacyshow",
-            "https://www.facebook.com/share/19LQhE6gmh/"
-        ]
-    },
+    "author": {{ author | authorSchema | jsonLd | safe }},
+    "publisher": {{ schemaOrg.organization | jsonLd | safe }},
     "datePublished": {{ publishedIso | jsonLd | safe }},
     "dateModified": {{ modifiedIso | jsonLd | safe }},
     "mainEntityOfPage": {
@@ -127,17 +90,5 @@
 
 <!-- Organization Schema -->
 <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Legacy Investing Show",
-    "url": {{ siteRootUrl | jsonLd | safe }},
-    "logo": {{ logoUrl | jsonLd | safe }},
-    "sameAs": [
-        "https://www.instagram.com/thelegacyinvestingshow/",
-        "https://www.youtube.com/@LegacyInvestingShow",
-        "https://www.tiktok.com/@thelegacyinvestingshow",
-        "https://www.facebook.com/share/19LQhE6gmh/"
-    ]
-}
+{{ schemaOrg.organizationWithContext | jsonLd | safe }}
 </script>

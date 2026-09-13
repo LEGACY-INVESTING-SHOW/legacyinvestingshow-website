@@ -25,6 +25,7 @@ const BLOG_CONTENT_DIR = path.join(ROOT_DIR, 'content', 'blog');
 const staticPages = [
   { url: '/', file: 'index.html' },
   { url: '/about', file: 'about.html' },
+  { url: '/about/preston-seo', file: 'about/preston-seo.html' },
   { url: '/success-stories', file: 'success-stories.html' },
   { url: '/blog/', file: 'blog/index.html' },
   { url: '/tax-strategies-101', file: 'tax-strategies-101.html' },
