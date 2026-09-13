@@ -1312,7 +1312,7 @@
   text-decoration: none;
 }
 
-.site-brand img { width: 1.75rem; height: 1.75rem; object-fit: contain; }
+.site-brand img { width: auto; height: 1.75rem; }
 
 .site-nav-links {
   display: none;
