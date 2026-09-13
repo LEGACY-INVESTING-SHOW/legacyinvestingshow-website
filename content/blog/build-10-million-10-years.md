@@ -410,4 +410,4 @@ The only question now is: **Are you willing to execute?**
 
 ---
 
-*Ready to accelerate your wealth building journey? Join our free live master class where we go deep on advanced tax strategies that can add over $100,000 to your net worth over time. [Register for free at managemoney101.com/fbmasterclass](https://www.managemoney101.com/fbmasterclass).*
+*Ready to accelerate your wealth building journey? Join our free live master class where we go deep on advanced tax strategies that can add over $100,000 to your net worth over time. [Register for free at managemoney101.com/fbmasterclass](https://join.managemoney101.com/tax-strategies).*
