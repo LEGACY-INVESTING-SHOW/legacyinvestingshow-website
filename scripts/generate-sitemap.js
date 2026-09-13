@@ -26,6 +26,8 @@ const staticPages = [
   { url: '/', file: 'index.html' },
   { url: '/about', file: 'about.html' },
   { url: '/success-stories', file: 'success-stories.html' },
+  { url: '/reviews', file: 'reviews.html' },
+  { url: '/pricing', file: 'pricing.html' },
   { url: '/blog/', file: 'blog/index.html' },
   { url: '/tax-strategies-101', file: 'tax-strategies-101.html' },
 ];
