@@ -578,7 +578,7 @@ The actual time spent managing guests, communicating with cleaners, and handling
 
 **Pro tip**: "Be careful not to drop your price point too low. You want to get bookings but you also want to attract quality guests who plan ahead."
 
-### Virtual Assistant: The Game-Changer for Time Freedom
+### Virtual assistant: how the time freedom works
 
 **What it does**: Handles day-to-day guest inquiries and booking requests while Kayla works at her dental practice.
 

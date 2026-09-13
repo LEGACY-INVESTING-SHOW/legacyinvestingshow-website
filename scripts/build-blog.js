@@ -188,97 +188,30 @@ function categoryDescription(category) {
 }
 
 /** Sentence case for the category link row; proper nouns stay capitalised. */
+/** Sentence case for the category link row; initialisms keep their caps. */
 function categoryLinkLabel(category) {
-    const keepCaps = /^(LLC|S-corp|C-corp|IRA|401\(k\))/i;
-    if (keepCaps.test(category)) return category;
-    return category.charAt(0) + category.slice(1).toLowerCase();
+    return blogRender.categoryLabel(category);
 }
 
-/**
- * The category list is the blog's table of contents: a two-column nav on the
- * cream-dark band, each row carrying the number of articles behind it.
- */
-function renderCategoryNav(categories, counts, currentSlug) {
+/** The category row is a plain wrapped list of links, not a filter bar. */
+function renderCategoryNav(categories, currentSlug) {
     if (categories.length === 0) return '';
     const items = categories
         .map((category) => {
             const slug = slugifyCategory(category);
             const current = slug === currentSlug ? ' blog-cat-item--current' : '';
             const aria = slug === currentSlug ? ' aria-current="page"' : '';
-            const count = counts.get(category) || 0;
-            return `<li class="blog-cat-item${current}">
-                                <a class="blog-cat-link" href="/blog/category/${slug}"${aria}>
-                                    <span class="blog-cat-name">${esc(categoryLinkLabel(category))}</span>
-                                    <span class="blog-cat-count">${count}</span>
-                                </a>
-                            </li>`;
+            return `<li class="blog-cat-item${current}"><a href="/blog/category/${slug}"${aria}>${esc(categoryLinkLabel(category))}</a></li>`;
         })
-        .join('\n                            ');
-    return `<section class="band band--cream-dark blog-cats" aria-label="Browse by category">
-                <div class="blog-wrap">
-                    <nav class="blog-cats-nav">
-                        <ul class="blog-cat-list">
-                            ${items}
-                        </ul>
-                    </nav>
-                </div>
-            </section>`;
+        .join('\n                        ');
+    return `<nav class="blog-cats" aria-label="Browse by category">
+                    <ul class="blog-cat-list">
+                        ${items}
+                    </ul>
+                </nav>`;
 }
 
-/** Date and read time as a small definition list — never a middle-dot string. */
-function renderEntryMeta(post, extraRows = '') {
-    const fm = post.frontmatter;
-    return `<dl class="blog-meta">
-                                <div class="blog-meta-row">
-                                    <dt class="blog-meta-term">Published</dt>
-                                    <dd class="blog-meta-value"><time datetime="${formatISODate(fm.date)}">${esc(formatDate(fm.date))}</time></dd>
-                                </div>
-                                <div class="blog-meta-row">
-                                    <dt class="blog-meta-term">Read time</dt>
-                                    <dd class="blog-meta-value">${normalizeReadTime(post)} min</dd>
-                                </div>${extraRows}
-                            </dl>`;
-}
-
-/**
- * The newest post leads the page on the navy band, with its photograph when
- * one was actually produced for it.
- */
-function renderFeatured(post) {
-    if (!post) return '';
-    const fm = post.frontmatter;
-    const hero = resolveHero(post);
-    const category = normalizeCategoryForArchives(fm.category || 'Investing');
-
-    const media = hero.exists
-        ? `<div class="blog-featured-media">
-                            <figure class="photo blog-featured-photo"><img src="${esc(hero.src)}" alt="${esc(hero.alt)}"${hero.width && hero.height ? ` width="${hero.width}" height="${hero.height}"` : ''} loading="lazy" decoding="async"></figure>
-                        </div>`
-        : '';
-
-    const description = fm.description
-        ? `\n                            <p class="blog-featured-desc">${esc(fm.description)}</p>`
-        : '';
-
-    const extra = `
-                                <div class="blog-meta-row">
-                                    <dt class="blog-meta-term">Category</dt>
-                                    <dd class="blog-meta-value">${esc(category)}</dd>
-                                </div>`;
-
-    return `<section class="band blog-featured" aria-label="Latest article">
-                <div class="blog-wrap">
-                    <div class="blog-featured-grid${hero.exists ? '' : ' blog-featured-grid--text'}">
-                        ${media}
-                        <div class="blog-featured-text">
-                            <h2 class="blog-featured-title"><a href="/blog/${post.slug}">${esc(fm.title || post.slug)}</a></h2>${description}
-                            ${renderEntryMeta(post, extra)}
-                        </div>
-                    </div>
-                </div>
-            </section>`;
-}
-
+/** Posts as editorial list rows: title, one line, date and read time. */
 function renderEntries(posts) {
     if (posts.length === 0) {
         return '<p class="blog-empty">No posts yet.</p>';
@@ -287,20 +220,20 @@ function renderEntries(posts) {
         .map((post) => {
             const fm = post.frontmatter;
             const description = fm.description
-                ? `\n                            <p class="blog-entry-desc">${esc(fm.description)}</p>`
+                ? `\n                            <p class="list-rows__desc">${esc(fm.description)}</p>`
                 : '';
-            return `<li class="blog-entry">
-                            <h2 class="blog-entry-title"><a href="/blog/${post.slug}">${esc(fm.title || post.slug)}</a></h2>${description}
-                            ${renderEntryMeta(post)}
+            return `<li class="list-rows__item">
+                            <h2 class="list-rows__title"><a href="/blog/${post.slug}">${esc(fm.title || post.slug)}</a></h2>${description}
+                            <p class="list-rows__meta"><time datetime="${formatISODate(fm.date)}">${esc(formatDate(fm.date))}</time>, ${normalizeReadTime(post)} min read</p>
                         </li>`;
         })
         .join('\n                        ');
-    return `<ul class="blog-entries">
+    return `<ul class="list-rows blog-entries">
                         ${items}
                     </ul>`;
 }
 
-/** Pagination reads as a row of numerals, with the page range spelled out. */
+/** Pagination is a row of numerals; the current one is not a link. */
 function renderPagination(pageNum, totalPages) {
     if (totalPages <= 1) return '';
     const href = (n) => (n === 1 ? '/blog' : `/blog/page/${n}`);
@@ -318,23 +251,10 @@ function renderPagination(pageNum, totalPages) {
         }
     }
 
-    const prev =
-        pageNum > 1
-            ? `<a class="blog-pagination-prev" href="${href(pageNum - 1)}">Newer posts</a>`
-            : '<span class="blog-pagination-edge">Newest posts</span>';
-    const next =
-        pageNum < totalPages
-            ? `<a class="blog-pagination-next" href="${href(pageNum + 1)}">Older posts</a>`
-            : '<span class="blog-pagination-edge">Oldest posts</span>';
-
     return `<nav class="blog-pagination" aria-label="Pagination">
                         <ol class="blog-page-list">
                             ${numbers.join('\n                            ')}
                         </ol>
-                        <div class="blog-pagination-ends">
-                            ${prev}
-                            ${next}
-                        </div>
                     </nav>`;
 }
 
@@ -347,10 +267,7 @@ function listingDocument({
     bodyTitle,
     heading,
     intro,
-    figureValue,
-    figureLabel,
     categoriesNav,
-    featuredHTML,
     entriesHTML,
     paginationHTML,
     schema,
@@ -385,7 +302,7 @@ function listingDocument({
     <meta name="twitter:description" content="${esc(description)}">
     <meta name="twitter:image" content="${SITE_DOMAIN}/assets/images/og-blog.jpg">
 
-    <meta name="theme-color" content="#FAF7F2">
+    <meta name="theme-color" content="#FBF8F1">
     <link rel="icon" href="/favicon.ico" sizes="32x32">
 
     ${renderHeadAssets()}
@@ -405,33 +322,15 @@ function listingDocument({
 
     <main id="main">
         <div class="blog-page">
-            <div class="blog-head">
-                <div class="blog-wrap">
-                    <header class="opener blog-opener">
-                        <div class="opener__main">
-                            <h1 class="opener__title blog-listing-title">${esc(heading)}</h1>
-                            <p class="opener__lede blog-listing-intro">${esc(intro)}</p>
-                        </div>
-                        <div class="opener__aside blog-opener-aside">
-                            <p class="figure figure--gold blog-count">
-                                <span class="figure__value blog-count-value">${esc(String(figureValue))}</span>
-                                <span class="figure__label blog-count-label">${esc(figureLabel)}</span>
-                            </p>
-                        </div>
-                    </header>
-                </div>
-            </div>
+            <div class="blog-wrap">
+                <h1 class="blog-title">${esc(heading)}</h1>
+                <p class="lede blog-lede">${esc(intro)}</p>
 
-            ${categoriesNav}
-${featuredHTML ? `\n            ${featuredHTML}\n` : ''}
-            <div class="blog-list">
-                <div class="blog-wrap">
-                    <div class="sheet blog-sheet">
-                        ${entriesHTML}
-                    </div>
+                ${categoriesNav}
 
-                    ${paginationHTML}
-                </div>
+                ${entriesHTML}
+
+                ${paginationHTML}
             </div>
         </div>
     </main>
@@ -468,13 +367,12 @@ function listSchema(name, description, url, posts) {
     };
 }
 
-function countByCategory(posts) {
-    const counts = new Map();
+function listCategories(posts) {
+    const found = new Set();
     for (const post of posts) {
-        const category = normalizeCategoryForArchives(post.frontmatter.category || 'Investing');
-        counts.set(category, (counts.get(category) || 0) + 1);
+        found.add(normalizeCategoryForArchives(post.frontmatter.category || 'Investing'));
     }
-    return counts;
+    return [...found].sort((a, b) => a.localeCompare(b));
 }
 
 function generateBlogIndexPages(posts) {
@@ -482,16 +380,13 @@ function generateBlogIndexPages(posts) {
         .filter(isIndexableBlogPost)
         .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
 
-    const counts = countByCategory(sorted);
-    const categories = [...counts.keys()].sort((a, b) => a.localeCompare(b));
+    const categories = listCategories(sorted);
 
     const totalPages = Math.max(1, Math.ceil(sorted.length / POSTS_PER_PAGE));
     const written = [];
 
     for (let pageNum = 1; pageNum <= totalPages; pageNum += 1) {
         const slice = sorted.slice((pageNum - 1) * POSTS_PER_PAGE, pageNum * POSTS_PER_PAGE);
-        const featured = pageNum === 1 ? slice[0] : null;
-        const rest = featured ? slice.slice(1) : slice;
         const canonicalPath = pageNum === 1 ? '/blog' : `/blog/page/${pageNum}`;
         const metaTitle =
             pageNum === 1
@@ -507,11 +402,8 @@ function generateBlogIndexPages(posts) {
             bodyTitle: pageNum === 1 ? 'Blog' : `Blog page ${pageNum}`,
             heading: 'Blog',
             intro: BLOG_DESCRIPTION,
-            figureValue: sorted.length,
-            figureLabel: 'articles published',
-            categoriesNav: renderCategoryNav(categories, counts, ''),
-            featuredHTML: renderFeatured(featured),
-            entriesHTML: renderEntries(rest),
+            categoriesNav: renderCategoryNav(categories, ''),
+            entriesHTML: renderEntries(slice),
             paginationHTML: renderPagination(pageNum, totalPages),
             schema: listSchema(
                 pageNum === 1 ? 'Legacy Investing Show Blog' : `Legacy Investing Show Blog, page ${pageNum}`,
@@ -565,7 +457,6 @@ function generateCategoryArchives(posts) {
         byCategory.get(category).push(post);
     }
 
-    const counts = countByCategory(sorted);
     const categories = [...byCategory.keys()].sort((a, b) => a.localeCompare(b));
 
     for (const category of categories) {
@@ -573,7 +464,6 @@ function generateCategoryArchives(posts) {
         const slug = slugifyCategory(category);
         const description = categoryDescription(category);
         const canonicalPath = `/blog/category/${slug}`;
-        const featured = categoryPosts[0];
 
         const html = listingDocument({
             metaTitle: `${category} articles | Legacy Investing Show`,
@@ -582,13 +472,10 @@ function generateCategoryArchives(posts) {
             robots: 'index, follow',
             bodyType: 'blog_category',
             bodyTitle: category,
-            heading: category,
+            heading: categoryLinkLabel(category),
             intro: description,
-            figureValue: categoryPosts.length,
-            figureLabel: 'articles in this category',
-            categoriesNav: renderCategoryNav(categories, counts, slug),
-            featuredHTML: renderFeatured(featured),
-            entriesHTML: renderEntries(categoryPosts.slice(1)),
+            categoriesNav: renderCategoryNav(categories, slug),
+            entriesHTML: renderEntries(categoryPosts),
             paginationHTML: '',
             schema: listSchema(
                 `${category} articles`,

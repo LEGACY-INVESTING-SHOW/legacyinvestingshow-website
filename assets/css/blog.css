@@ -1,1295 +1,283 @@
 /* ==========================================================================
-   blog.css — the blog surface (index, pagination, category archives, posts)
+   Blog — the only rules that are specific to the blog surface.
 
-   Loaded after styles.css. Plain CSS, no Tailwind. The markup carries the
-   shared kit class names (.opener, .band, .sheet, .marginalia, .contents,
-   .figure, .dl-terms, .data-table, .pull-quote, .photo) so the blog reads as
-   the same system as the rest of the site; every rule below is the
-   blog-specific tuning of those objects and is written to stand on its own.
-
-   Surfaces alternate down every page: cream ground, cream-dark category band,
-   navy lead band, white reading sheet, cream-dark FAQ band.
+   Everything shared comes from styles.css (FIELD GUIDE v3): base type and
+   tokens, .prose, .table-inset, .cap, .num, .toc, .callout, .big,
+   .list-rows, .faq, .pull-quote and the buttons. What is left here is the
+   reading column, the page furniture around the article, and the index.
    ========================================================================== */
+
+/* --- One column on paper ------------------------------------------------- */
 
 .blog-page,
 .post-page {
-  /* Long unbroken tokens (URLs, IDs) wrap instead of widening the page. */
-  overflow-wrap: break-word;
-
-  --blog-rule: #E2E8F0;
-  --blog-rule-dark: rgba(15, 23, 42, 0.12);
-  --blog-meta: #475569;
-  --blog-body: #334155;
-  --blog-ink: #0F172A;
-  --blog-navy: #0F172A;
-  --blog-cream: #FAF7F2;
-  --blog-cream-dark: #F5F0E8;
-  --blog-white: #FFFFFF;
-  --blog-accent: #C9A961;
-  --blog-accent-text: #8A6F35;
-  --blog-on-navy: #CBD5E1;
-  --blog-on-navy-quiet: #9BA9BC;
-  --blog-on-navy-bright: #F5F0E8;
-  --blog-serif: 'DM Serif Display', Georgia, 'Times New Roman', serif;
-  --blog-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-}
-
-/* Every section carries the page gutter and its own vertical interval; the
-   wrap inside it only holds the measure. Written as one shorthand per step so
-   a full-bleed band always has a visible inset. */
-.blog-head,
-.post-head { padding: 2.5rem 1rem 2rem; }
-.blog-cats { padding: 2rem 1rem; }
-.blog-featured { padding: 2.75rem 1rem; }
-.blog-list { padding: 2.5rem 1rem 3rem; }
-.post-hero { padding: 0 1rem 1.5rem; }
-.post-body-outer { padding: 0 1rem 2rem; }
-.post-faq { padding: 2.75rem 1rem; }
-.post-related { padding: 2.5rem 1rem; }
-
-@media (min-width: 640px) {
-  .blog-head,
-  .post-head { padding: 3.5rem 2rem 2.75rem; }
-  .blog-cats { padding: 2.5rem 2rem; }
-  .blog-featured { padding: 3.5rem 2rem; }
-  .blog-list { padding: 3.25rem 2rem 4rem; }
-  .post-hero { padding: 0 2rem 2rem; }
-  .post-body-outer { padding: 0 2rem 2.75rem; }
-  .post-faq { padding: 3.5rem 2rem; }
-  .post-related { padding: 3.25rem 2rem; }
-}
-
-@media (min-width: 1024px) {
-  .blog-head,
-  .post-head { padding: 4.5rem 2.5rem 3.5rem; }
-  .blog-cats { padding: 3rem 2.5rem; }
-  .blog-featured { padding: 4.5rem 2.5rem; }
-  .blog-list { padding: 4rem 2.5rem 5rem; }
-  .post-hero { padding: 0 2.5rem 2.5rem; }
-  .post-body-outer { padding: 0 2.5rem 3.5rem; }
-  .post-faq { padding: 4.25rem 2.5rem; }
-  .post-related { padding: 4rem 2.5rem; }
+    background: var(--paper);
 }
 
 .blog-wrap,
 .post-wrap {
-  max-width: 78rem;
-  margin-inline: auto;
-}
-
-.post-wrap {
-  max-width: 82rem;
-}
-
-/* =============================================================== openers == */
-
-.blog-opener,
-.post-opener {
-  display: grid;
-  gap: 2rem;
-}
-
-.opener__main {
-  min-width: 0;
-}
-
-@media (min-width: 900px) {
-  .blog-opener,
-  .post-opener {
-    grid-template-columns: minmax(0, 7fr) minmax(0, 4fr);
-    gap: clamp(2rem, 5vw, 4rem);
-  }
-
-  /* The listing title is short: the figure sits on its baseline. An article
-     title runs several lines, so its facts start at the top instead. */
-  .blog-opener {
-    align-items: end;
-  }
-
-  .post-opener {
-    align-items: start;
-  }
-
-  .post-opener .opener__aside {
-    padding-top: 0.75rem;
-  }
-}
-
-.blog-listing-title {
-  margin: 0;
-  font-family: var(--blog-serif);
-  font-weight: 400;
-  font-size: clamp(2.75rem, 6vw, 5rem);
-  line-height: 1.02;
-  letter-spacing: -0.025em;
-  color: var(--blog-ink);
-  text-wrap: balance;
-}
-
-.post-title {
-  margin: 0;
-  font-family: var(--blog-serif);
-  font-weight: 400;
-  font-size: clamp(2.25rem, 4.6vw, 3.75rem);
-  line-height: 1.06;
-  letter-spacing: -0.025em;
-  color: var(--blog-ink);
-  text-wrap: balance;
-}
-
-.blog-listing-intro,
-.post-standfirst {
-  margin: 1.125rem 0 0;
-  max-width: 40ch;
-  color: var(--blog-body);
-  font-size: clamp(1.125rem, 1.6vw, 1.3125rem);
-  line-height: 1.55;
-}
-
-.post-standfirst {
-  max-width: 46ch;
-}
-
-/* The article count as a gold display figure. */
-.blog-count {
-  display: inline-block;
-  margin: 0;
-  color: var(--blog-navy);
-}
-
-.blog-count-value {
-  display: block;
-  font-family: var(--blog-serif);
-  font-size: clamp(2.75rem, 5vw, 4.25rem);
-  line-height: 1;
-  letter-spacing: -0.02em;
-  font-variant-numeric: tabular-nums;
-}
-
-.blog-count-label {
-  display: block;
-  margin-top: 0.4rem;
-  font-size: 1rem;
-  line-height: 1.4;
-}
-
-/* The post's own facts, as a definition list rather than a dotted string. */
-.post-meta {
-  margin: 0;
-  font-variant-numeric: tabular-nums;
-}
-
-.post-meta-row {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 0.625rem 0;
-  border-top: 1px solid var(--blog-rule);
-}
-
-.post-meta-row:first-child {
-  border-top: 2px solid var(--blog-accent);
-}
-
-.post-meta-term {
-  margin: 0;
-  color: var(--blog-meta);
-  font-size: 0.875rem;
-  line-height: 1.4;
-}
-
-.post-meta-value {
-  margin: 0;
-  color: var(--blog-ink);
-  font-size: 0.9375rem;
-  line-height: 1.4;
-  text-align: right;
-}
-
-.post-meta-category {
-  color: var(--blog-ink);
-  text-decoration: underline;
-  text-decoration-color: var(--blog-accent);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.15em;
-}
-
-.post-meta-category:hover,
-.post-meta-category:focus-visible {
-  text-decoration-color: currentColor;
-}
-
-/* ====================================================== category band ==== */
-
-.blog-cats {
-  background: var(--blog-cream-dark);
-}
-
-.blog-cat-list {
-  display: grid;
-  gap: 0 clamp(2rem, 5vw, 4rem);
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-@media (min-width: 720px) {
-  .blog-cat-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-.blog-cat-link {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 0.7rem 0;
-  border-bottom: 1px solid var(--blog-rule-dark);
-  color: var(--blog-ink);
-  text-decoration: none;
-}
-
-.blog-cat-name {
-  font-family: var(--blog-serif);
-  font-size: 1.25rem;
-  line-height: 1.3;
-  letter-spacing: -0.01em;
-}
-
-.blog-cat-count {
-  color: var(--blog-meta);
-  font-size: 0.9375rem;
-  font-variant-numeric: tabular-nums;
-}
-
-.blog-cat-link:hover .blog-cat-name,
-.blog-cat-link:focus-visible .blog-cat-name {
-  text-decoration: underline;
-  text-decoration-color: var(--blog-accent);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.16em;
-}
-
-.blog-cat-item--current .blog-cat-link {
-  border-bottom-color: var(--blog-accent);
-}
-
-.blog-cat-item--current .blog-cat-name {
-  text-decoration: underline;
-  text-decoration-color: var(--blog-accent);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 0.16em;
-}
-
-/* ========================================================= lead article == */
-
-.blog-featured {
-  background: var(--blog-navy);
-  color: var(--blog-on-navy);
-}
-
-.blog-featured-grid {
-  display: grid;
-  gap: clamp(2rem, 4vw, 3.5rem);
-  align-items: center;
-}
-
-@media (min-width: 900px) {
-  .blog-featured-grid {
-    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
-  }
-
-  .blog-featured-grid--text {
-    grid-template-columns: minmax(0, 1fr);
-  }
-}
-
-.blog-featured-media {
-  min-width: 0;
-}
-
-/* The frame itself comes from the shared .photo object. Portrait photographs
-   are capped so the lead does not become a full-height column. */
-.blog-featured-photo {
-  padding: 0.75rem;
-}
-
-.blog-featured-photo img {
-  width: auto;
-  max-width: 100%;
-  max-height: 26rem;
-}
-
-.blog-featured-title {
-  margin: 0;
-  font-family: var(--blog-serif);
-  font-weight: 400;
-  font-size: 1.875rem;
-  line-height: 1.3;
-  letter-spacing: -0.02em;
-  text-wrap: balance;
-}
-
-@media (min-width: 900px) {
-  .blog-featured-title {
-    font-size: 2.375rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .blog-featured-title {
-    font-size: 2.875rem;
-  }
-}
-
-.blog-page .blog-featured .blog-featured-title a:not(.btn-primary):not(.btn-secondary) {
-  color: var(--blog-on-navy-bright);
-  text-decoration: none;
-}
-
-.blog-page .blog-featured .blog-featured-title a:not(.btn-primary):not(.btn-secondary):hover,
-.blog-page .blog-featured .blog-featured-title a:not(.btn-primary):not(.btn-secondary):focus-visible {
-  text-decoration: underline;
-  text-decoration-color: var(--blog-accent);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 0.14em;
-}
-
-.blog-featured-desc {
-  margin: 1rem 0 0;
-  max-width: 58ch;
-  color: var(--blog-on-navy);
-  font-size: 1.0625rem;
-  line-height: 1.65;
-}
-
-.blog-featured .blog-meta {
-  margin-top: 1.5rem;
-}
-
-.blog-featured .blog-meta-term {
-  color: var(--blog-on-navy-quiet);
-}
-
-.blog-featured .blog-meta-value {
-  color: var(--blog-on-navy-bright);
-}
-
-/* ======================================================== listing sheet == */
-
-.blog-sheet {
-  background: var(--blog-white);
-  border: 1px solid var(--blog-rule);
-  padding: 1.5rem;
+    width: 100%;
+    max-width: 68ch;
+    margin: 0 auto;
+    padding: 0 1rem 3.5rem;
 }
 
 @media (min-width: 640px) {
-  .blog-sheet {
-    padding: 2.25rem;
-  }
+    .blog-wrap,
+    .post-wrap {
+        padding: 0 1.5rem 4.5rem;
+    }
 }
 
-@media (min-width: 1024px) {
-  .blog-sheet {
-    padding: 3rem;
-  }
-}
+/* --- Post: breadcrumb, title, meta, photograph --------------------------- */
 
-.blog-entries {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.blog-entry {
-  padding: 1.75rem 0;
-  border-bottom: 1px solid var(--blog-rule);
-}
-
-@media (min-width: 860px) {
-  .blog-entry {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 11rem;
-    gap: 0.5rem 3rem;
-    align-items: start;
-  }
-
-  .blog-entry-title,
-  .blog-entry-desc {
-    grid-column: 1;
-  }
-
-  .blog-entry .blog-meta {
-    grid-column: 2;
-    grid-row: 1 / span 2;
-    flex-direction: column;
-    gap: 0.75rem;
-    margin-top: 0.35rem;
-  }
-}
-
-.blog-entry:first-child {
-  padding-top: 0;
-}
-
-.blog-entry:last-child {
-  padding-bottom: 0;
-  border-bottom: 0;
-}
-
-.blog-entry-title {
-  margin: 0;
-  font-family: var(--blog-serif);
-  font-size: clamp(1.375rem, 2vw, 1.625rem);
-  font-weight: 400;
-  line-height: 1.3;
-  letter-spacing: -0.015em;
-  text-wrap: balance;
-}
-
-.blog-entry-title a {
-  color: var(--blog-ink);
-  text-decoration: none;
-}
-
-.blog-entry-title a:hover,
-.blog-entry-title a:focus-visible {
-  text-decoration: underline;
-  text-decoration-color: var(--blog-accent);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 0.16em;
-}
-
-.blog-entry-desc {
-  margin: 0.5rem 0 0;
-  max-width: 70ch;
-  color: var(--blog-body);
-  font-size: 1.0625rem;
-  line-height: 1.65;
-}
-
-.blog-empty {
-  margin: 0;
-  color: var(--blog-body);
-}
-
-/* Date and read time as a compact definition list. */
-.blog-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem 2.25rem;
-  margin: 0.9rem 0 0;
-  font-variant-numeric: tabular-nums;
-}
-
-.blog-meta-row {
-  display: flex;
-  flex-direction: column;
-  gap: 0.1rem;
-}
-
-.blog-meta-term {
-  margin: 0;
-  color: var(--blog-meta);
-  font-size: 0.8125rem;
-  line-height: 1.4;
-}
-
-.blog-meta-value {
-  margin: 0;
-  color: var(--blog-ink);
-  font-size: 0.9375rem;
-  line-height: 1.4;
-}
-
-/* =========================================================== pagination == */
-
-.blog-pagination {
-  margin-top: clamp(2rem, 5vw, 3rem);
-}
-
-.blog-page-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.5rem 1.5rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.blog-page-num {
-  display: inline-block;
-  padding-bottom: 0.2rem;
-  border-bottom: 2px solid transparent;
-  color: var(--blog-meta);
-  font-family: var(--blog-serif);
-  font-size: clamp(1.5rem, 2.6vw, 2rem);
-  line-height: 1;
-  font-variant-numeric: tabular-nums;
-  text-decoration: none;
-}
-
-a.blog-page-num:hover,
-a.blog-page-num:focus-visible {
-  color: var(--blog-ink);
-  border-bottom-color: var(--blog-accent);
-}
-
-.blog-page-num--current {
-  color: var(--blog-ink);
-  border-bottom-color: var(--blog-accent);
-}
-
-.blog-pagination-ends {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 0.75rem 1.5rem;
-  margin-top: 1.5rem;
-  padding-top: 1.125rem;
-  border-top: 1px solid var(--blog-rule);
-  font-size: 0.9375rem;
-}
-
-.blog-pagination-ends a {
-  color: var(--blog-ink);
-  text-decoration: underline;
-  text-decoration-color: var(--blog-accent);
-  text-underline-offset: 0.15em;
-}
-
-.blog-pagination-ends a:hover,
-.blog-pagination-ends a:focus-visible {
-  text-decoration-color: currentColor;
-}
-
-.blog-pagination-edge {
-  color: var(--blog-meta);
-}
-
-/* ================================================================ posts == */
-
-.post-page {
-  padding-bottom: 3rem;
+.post-crumbs {
+    margin: 1.75rem 0 1.5rem;
+    font-size: 0.8125rem;
+    line-height: 1.5;
 }
 
 .post-crumbs-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem 0.5rem;
-  margin: 0 0 1.75rem;
-  padding: 0;
-  list-style: none;
-  color: var(--blog-meta);
-  font-size: 0.875rem;
-  line-height: 1.5;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.25rem 0.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.post-crumbs-item {
+    color: var(--ink-faint);
 }
 
 .post-crumbs-item + .post-crumbs-item::before {
-  content: "/";
-  margin-right: 0.5rem;
-  color: #94A3B8;
+    content: "/";
+    margin-right: 0.5rem;
+    color: var(--line);
 }
 
 .post-crumbs-item a {
-  color: var(--blog-meta);
-  text-decoration: none;
+    color: var(--ink-faint);
+    text-decoration: none;
 }
 
-.post-crumbs-item a:hover,
-.post-crumbs-item a:focus-visible {
-  color: var(--blog-ink);
-  text-decoration: underline;
-  text-underline-offset: 0.15em;
+.post-crumbs-item a:hover {
+    color: var(--emerald);
+    text-decoration: underline;
 }
 
 .post-crumbs-current {
-  color: var(--blog-ink);
+    max-width: 32ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
-/* The hero photograph in the gold offset frame. */
-/* The 2px gold offset frame is drawn by the shared .photo object. */
+.post-title {
+    margin: 0;
+}
+
 .post-figure {
-  max-width: 56rem;
-  padding: 0.75rem;
+    margin: 2rem 0 0;
 }
 
 .post-figure img {
-  width: auto;
-  max-width: 100%;
-  max-height: 32rem;
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
 }
 
-/* ------------------------------------------- reading sheet and margins -- */
-
-.post-body {
-  display: grid;
-  gap: 2rem;
-}
-
-@media (min-width: 900px) {
-  .post-body {
-    grid-template-columns: minmax(0, 1fr) 16rem;
-    gap: 2.5rem;
-    align-items: start;
-  }
-
-  .post-contents {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  .post-main {
-    grid-column: 1;
-    grid-row: 1 / span 2;
-  }
-
-  .post-aside {
-    grid-column: 2;
-    grid-row: 2;
-  }
-
-  .post-body--no-contents .post-main {
-    grid-row: 1;
-  }
-
-  .post-body--no-contents .post-aside {
-    grid-row: 1;
-  }
-}
-
-@media (min-width: 1200px) {
-  .post-body {
-    grid-template-columns: 12rem minmax(0, 1fr) 16.5rem;
-    gap: clamp(2rem, 3vw, 3rem);
-  }
-
-  .post-contents {
-    grid-column: 1;
-    grid-row: 1;
-    position: sticky;
-    top: 5.5rem;
-    max-height: calc(100vh - 8rem);
-    overflow-y: auto;
-  }
-
-  .post-main {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  .post-aside {
-    grid-column: 3;
-    grid-row: 1;
-  }
-
-  .post-body--no-contents {
-    grid-template-columns: minmax(0, 1fr) 16.5rem;
-  }
-
-  .post-body--no-contents .post-main {
-    grid-column: 1;
-  }
-
-  .post-body--no-contents .post-aside {
-    grid-column: 2;
-  }
-}
-
-/* Contents: a closed disclosure on small screens, an always-open sticky rail
-   from 1024px. display is restored explicitly: Tailwind ships a .contents
-   utility (display: contents) that otherwise collapses the whole rail. */
-.post-contents {
-  display: block;
-  padding-top: 0.9rem;
-  border-top: 2px solid var(--blog-accent);
-}
-
-/* The summary stays operable at every width, so a browser without
-   ::details-content support still opens the list. */
-.post-contents > .post-toc-title {
-  pointer-events: auto;
-}
-
-@media (min-width: 1024px) {
-  @supports selector(::details-content) {
-    .post-contents::details-content {
-      content-visibility: visible;
-      block-size: auto;
-      overflow: visible;
+/* The contents list is a list, not a disclosure, once there is room for it. */
+@media (min-width: 700px) {
+    .post-toc > .toc__list {
+        display: block;
     }
 
-    .post-contents > .post-toc-title::after {
-      content: none;
+    .post-toc::details-content {
+        content-visibility: visible;
+        block-size: auto;
     }
-  }
 }
 
-.post-toc-title {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 1rem;
-  list-style: none;
-  cursor: pointer;
-  color: var(--blog-ink);
-  font-family: var(--blog-sans);
-  font-size: 0.9375rem;
-  font-weight: 600;
-  line-height: 1.4;
-}
-
-.post-toc-title::-webkit-details-marker {
-  display: none;
-}
-
-.post-toc-list,
-.post-toc-sublist {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.post-toc-list {
-  margin-top: 0.85rem;
-}
-
-.post-toc-sublist {
-  margin-top: 0.3rem;
-  padding-left: 0.85rem;
-}
-
-.post-toc-item {
-  margin-bottom: 0.45rem;
-  line-height: 1.45;
-}
-
-.post-toc-item a {
-  color: var(--blog-body);
-  font-size: 0.875rem;
-  text-decoration: none;
-}
-
-.post-toc-item a:hover,
-.post-toc-item a:focus-visible {
-  color: var(--blog-ink);
-  text-decoration: underline;
-  text-decoration-color: var(--blog-accent);
-  text-underline-offset: 0.15em;
-}
-
-/* --------------------------------------------------------------- prose -- */
+/* --- Post: the prose ----------------------------------------------------- */
 
 .post-prose {
-  --sheet-pad: 1.5rem;
-  background: var(--blog-white);
-  border: 1px solid var(--blog-rule);
-  padding: var(--sheet-pad);
-  color: var(--blog-body);
-  font-size: 1.0625rem;
-  line-height: 1.75;
-}
-
-@media (min-width: 640px) {
-  .post-prose {
-    --sheet-pad: 2.25rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .post-prose {
-    --sheet-pad: 3rem;
-  }
+    margin-top: 2.25rem;
 }
 
 .post-prose > *:first-child {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .post-prose > *:last-child {
-  margin-bottom: 0;
-}
-
-.post-prose p {
-  margin: 0 0 1.4rem;
-}
-
-.post-prose h2,
-.post-prose h3,
-.post-prose h4 {
-  font-family: var(--blog-serif);
-  font-weight: 400;
-  color: var(--blog-ink);
-  scroll-margin-top: 5.5rem;
-  text-wrap: balance;
-}
-
-.post-prose h2 {
-  margin: 3.25rem 0 1.25rem;
-  font-size: clamp(1.75rem, 2.8vw, 2.25rem);
-  line-height: 1.14;
-  letter-spacing: -0.02em;
-}
-
-/* The gold rule under a section title is the article's one repeated motif. */
-.post-prose h2::after {
-  content: "";
-  display: block;
-  width: 2.5rem;
-  height: 2px;
-  margin-top: 0.75rem;
-  background: var(--blog-accent);
-}
-
-.post-prose h3 {
-  margin: 2.25rem 0 0.75rem;
-  font-size: 1.375rem;
-  line-height: 1.3;
-}
-
-.post-prose h4 {
-  margin: 1.75rem 0 0.6rem;
-  font-family: var(--blog-sans);
-  font-size: 1.0625rem;
-  font-weight: 600;
-  line-height: 1.4;
-}
-
-.post-prose ul,
-.post-prose ol {
-  margin: 0 0 1.4rem;
-  padding-left: 1.35rem;
-  list-style: disc;
-}
-
-.post-prose ol {
-  list-style: decimal;
-}
-
-.post-prose ul ul,
-.post-prose ol ol,
-.post-prose ul ol,
-.post-prose ol ul {
-  margin: 0.5rem 0 0;
-}
-
-.post-prose li::marker {
-  color: var(--blog-accent-text);
-}
-
-.post-prose li {
-  margin-bottom: 0.55rem;
+    margin-bottom: 0;
 }
 
 /* Loose markdown lists wrap each item in <p>; keep them from double-spacing. */
 .post-prose li > p {
-  margin-bottom: 0.5rem;
+    margin: 0;
 }
 
-.post-prose li > p:last-child {
-  margin-bottom: 0;
-}
-
-.post-prose a {
-  color: var(--blog-ink);
-  text-decoration: underline;
-  text-decoration-color: var(--blog-accent);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.15em;
-}
-
-.post-prose a:hover,
-.post-prose a:focus-visible {
-  text-decoration-color: currentColor;
-}
-
-.post-prose strong {
-  color: var(--blog-ink);
-  font-weight: 600;
-}
-
-/* A quotation is a pull-quote: serif, opened by a gold rule. */
-.post-prose .pull-quote {
-  margin: 2.5rem 0;
-  padding: 0;
-  border: 0;
-}
-
-.post-prose .pull-quote p {
-  max-width: 44ch;
-  margin: 0 0 0.75rem;
-  font-size: clamp(1.375rem, 2.2vw, 1.625rem);
-  line-height: 1.38;
-}
-
-.post-prose .pull-quote p:last-child {
-  margin-bottom: 0;
-}
-
-.post-prose .pull-quote cite,
-.post-prose .pull-quote em {
-  display: block;
-  margin-top: 0.75rem;
-  color: var(--blog-meta);
-  font-family: var(--blog-sans);
-  font-size: 0.9375rem;
-  font-style: normal;
-  line-height: 1.5;
-}
-
-.post-prose img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 2rem 0;
-  outline: 2px solid var(--blog-accent);
-  outline-offset: 0.5rem;
-}
-
-/* Embeds in the markdown carry fixed 560x315 attributes; make them fluid. */
-.post-prose iframe {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;
-  margin: 2rem 0;
-  border: 1px solid var(--blog-rule);
-}
-
-.post-prose > * {
-  max-width: 100%;
-}
-
-/* The table bleeds into the sheet's own padding; the cap above must not
-   pull it back to the prose measure. */
-.post-prose > .post-table {
-  max-width: none;
-}
-
-.post-prose code {
-  font-size: 0.9em;
-  background: #F1F5F9;
-  padding: 0.1em 0.35em;
-}
-
-.post-prose pre {
-  margin: 2rem 0;
-  padding: 1rem 1.25rem;
-  overflow-x: auto;
-  background: #F1F5F9;
-  font-size: 0.9375rem;
-  line-height: 1.6;
-}
-
-.post-prose pre code {
-  background: none;
-  padding: 0;
+.post-prose li > p + p {
+    margin-top: 0.5rem;
 }
 
 .post-prose hr {
-  margin: 2.5rem 0;
-  border: 0;
-  border-top: 1px solid var(--blog-rule);
+    border: 0;
+    border-top: 1px solid var(--line);
+    margin: 2.5rem 0;
 }
 
-/* Tables: navy header, cream-dark zebra rows, tabular figures, own scroller.
-   A table runs to the edges of the sheet; the reading measure is for prose. */
-.post-table {
-  margin: 2.25rem calc(-1 * var(--sheet-pad, 1.5rem));
-  overflow-x: auto;
+/* Markdown embeds carry fixed 560x315 attributes; make them fluid. */
+.post-prose iframe {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    border-radius: 16px;
+    margin: 1.75rem 0;
 }
 
-.post-prose .data-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.9375rem;
-  font-variant-numeric: tabular-nums;
+/* --- Post: sources, questions, more to read ------------------------------ */
+
+.post-sources,
+.post-faq,
+.post-related {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--line);
 }
 
-.post-prose .data-table th,
-.post-prose .data-table td {
-  padding: 0.65rem 0.8rem;
-  text-align: left;
-  vertical-align: top;
-  border-bottom: 1px solid var(--blog-rule);
+.post-sources-title,
+.post-faq-title,
+.post-related-title {
+    margin: 0;
 }
 
-.post-prose .data-table thead th {
-  white-space: normal;
-  background: var(--blog-navy);
-  color: var(--blog-on-navy-bright);
-  font-family: var(--blog-sans);
-  font-size: 0.875rem;
-  font-weight: 600;
-  line-height: 1.4;
-  border-bottom: 0;
-}
-
-.post-prose .data-table tbody tr:nth-child(even) {
-  background: var(--blog-cream-dark);
-}
-
-.post-prose .data-table tbody th {
-  color: var(--blog-ink);
-  font-weight: 600;
-}
-
-.post-prose .data-table tbody tr:last-child th,
-.post-prose .data-table tbody tr:last-child td {
-  border-bottom: 0;
-}
-
-/* ------------------------------------------------------------- margins -- */
-
-.post-aside {
-  position: static;
-  min-width: 0;
-  font-size: 1rem;
-  color: var(--blog-body);
-}
-
-.post-aside-title {
-  margin: 0 0 0.9rem;
-  padding-top: 0.9rem;
-  border-top: 2px solid var(--blog-accent);
-  color: var(--blog-ink);
-  font-family: var(--blog-sans);
-  font-size: 0.9375rem;
-  font-weight: 600;
-  line-height: 1.4;
-  letter-spacing: 0;
-}
-
-.post-figures + .post-sources {
-  margin-top: 2.25rem;
-}
-
-.post-facts {
-  margin: 0;
-}
-
-.post-fact {
-  padding: 0.9rem 0;
-}
-
-.post-fact:not(:last-child) {
-  border-bottom: 1px solid var(--blog-rule);
-}
-
-.post-fact:last-child {
-  padding-bottom: 0;
-}
-
-.post-fact-label {
-  margin: 0;
-  color: var(--blog-meta);
-  font-size: 0.875rem;
-  line-height: 1.45;
-}
-
-.post-fact-body {
-  margin: 0.25rem 0 0;
-}
-
-.post-fact-value {
-  display: block;
-  color: var(--blog-ink);
-  font-family: var(--blog-serif);
-  font-size: clamp(2rem, 3vw, 2.5rem);
-  line-height: 1.05;
-  letter-spacing: -0.02em;
-  font-variant-numeric: tabular-nums;
-}
-
-.post-fact-note {
-  margin: 0.45rem 0 0;
-  color: var(--blog-body);
-  font-size: 0.9375rem;
-  line-height: 1.55;
-}
-
-.post-fact-source {
-  margin: 0.35rem 0 0;
-  color: var(--blog-meta);
-  font-size: 0.8125rem;
-  line-height: 1.5;
-}
-
-.post-sources p {
-  margin: 0 0 0.9rem;
-  color: var(--blog-body);
-  font-size: 0.9375rem;
-  line-height: 1.6;
+.post-sources-note {
+    margin: 0.75rem 0 0;
+    color: var(--ink-soft);
+    max-width: 62ch;
 }
 
 .post-sources-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    list-style: none;
+    margin: 1.25rem 0 0;
+    padding: 0;
+    border-top: 1px solid var(--line);
 }
 
 .post-sources-item {
-  padding: 0.55rem 0;
-  font-size: 0.9375rem;
-  line-height: 1.5;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--line);
+    color: var(--ink-soft);
+    font-size: 0.9375rem;
+    line-height: 1.5;
 }
 
-.post-sources-item:not(:last-child) {
-  border-bottom: 1px solid var(--blog-rule);
-}
-
-.post-sources-item a {
-  color: var(--blog-ink);
-  text-decoration: underline;
-  text-decoration-color: var(--blog-accent);
-  text-underline-offset: 0.15em;
-}
-
-.post-sources-item a:hover,
-.post-sources-item a:focus-visible {
-  text-decoration-color: currentColor;
-}
-
-.post-sources-disclaimer {
-  margin: 1rem 0 0;
-  color: var(--blog-meta);
-  font-size: 0.8125rem;
-  line-height: 1.6;
-}
-
-/* ------------------------------------------------------------ FAQ band -- */
-
-.post-faq {
-  background: var(--blog-cream-dark);
-}
-
-.post-faq-title {
-  margin: 0 0 1.5rem;
-  font-family: var(--blog-serif);
-  font-weight: 400;
-  font-size: clamp(1.875rem, 3.2vw, 2.5rem);
-  line-height: 1.15;
-  letter-spacing: -0.02em;
-  color: var(--blog-ink);
-}
-
-.post-faq-list {
-  margin: 0;
-}
-
-/* Columns rather than a grid: the questions flow without the ragged gaps a
-   shared row height would leave. */
-@media (min-width: 1024px) {
-  .post-faq-list {
-    columns: 2;
-    column-gap: clamp(2rem, 5vw, 4rem);
-  }
-}
-
-.post-faq-row {
-  padding: 0 0 1.75rem;
-  break-inside: avoid;
-}
-
-.post-faq-list .post-faq-question {
-  margin: 0;
-  color: var(--blog-ink);
-  font-family: var(--blog-serif);
-  font-size: 1.3125rem;
-  font-weight: 400;
-  line-height: 1.3;
-  letter-spacing: -0.01em;
-}
-
-.post-faq-list .post-faq-answer {
-  margin: 0.5rem 0 0;
-  max-width: 62ch;
-  color: var(--blog-body);
-  font-size: 1rem;
-  line-height: 1.7;
-}
-
-/* ------------------------------------------------------------- related -- */
-
-.post-related-title {
-  margin: 0 0 1.25rem;
-  font-family: var(--blog-serif);
-  font-weight: 400;
-  font-size: clamp(1.5rem, 2.6vw, 2rem);
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-  color: var(--blog-ink);
-}
-
-.post-related-list {
-  display: grid;
-  gap: 0 clamp(2rem, 5vw, 4rem);
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-@media (min-width: 720px) {
-  .post-related-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-.post-related-item {
-  padding: 0.8rem 0;
-  border-bottom: 1px solid var(--blog-rule);
-}
-
-.post-related-item a {
-  color: var(--blog-ink);
-  font-family: var(--blog-serif);
-  font-size: 1.125rem;
-  line-height: 1.35;
-  text-decoration: none;
-}
-
-.post-related-item a:hover,
-.post-related-item a:focus-visible {
-  text-decoration: underline;
-  text-decoration-color: var(--blog-accent);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 0.16em;
+.post-disclaimer {
+    margin: 1.25rem 0 0;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    color: var(--ink-faint);
+    max-width: 62ch;
 }
 
 .post-related-all {
-  margin: 1.25rem 0 0;
-  font-size: 0.9375rem;
+    margin: 1.25rem 0 0;
+    font-size: 0.9375rem;
 }
 
-.post-related-all a {
-  color: var(--blog-ink);
-  text-decoration: underline;
-  text-decoration-color: var(--blog-accent);
-  text-underline-offset: 0.15em;
+/* --- Index, category and pagination -------------------------------------- */
+
+.blog-title {
+    margin: 2.25rem 0 0;
 }
 
-.post-related-all a:hover,
-.post-related-all a:focus-visible {
-  text-decoration-color: currentColor;
+.blog-cats {
+    margin-top: 2rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--line);
 }
 
-/* ============================================================== narrow == */
-
-@media (max-width: 480px) {
-  .post-prose {
-    font-size: 1rem;
-  }
+.blog-cat-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9375rem;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .blog-page *,
-  .post-page * {
-    transition-duration: 0.01ms !important;
-    animation-duration: 0.01ms !important;
-  }
+.blog-cat-item a {
+    color: var(--emerald);
+    text-decoration: none;
+}
+
+.blog-cat-item a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+    text-underline-offset: 3px;
+}
+
+.blog-cat-item--current a {
+    color: var(--forest);
+    font-weight: 600;
+}
+
+.blog-entries {
+    margin-top: 2rem;
+}
+
+/* A row title is an h2 for the outline only; it carries no section rule. */
+.blog-entries .list-rows__title::after {
+    content: none;
+}
+
+.blog-empty {
+    margin: 2rem 0 0;
+    color: var(--ink-soft);
+}
+
+.blog-pagination {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+}
+
+.blog-page-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    margin: 0;
+    padding: 0;
+    font-variant-numeric: tabular-nums;
+}
+
+.blog-page-num {
+    display: inline-block;
+    min-width: 2.25rem;
+    padding: 0.4rem 0.5rem;
+    text-align: center;
+    font-size: 0.9375rem;
+    line-height: 1.4;
+    color: var(--ink-soft);
+    text-decoration: none;
+    border-radius: 999px;
+}
+
+a.blog-page-num:hover {
+    color: var(--forest);
+    background: var(--ivory);
+}
+
+.blog-page-num--current {
+    color: var(--forest);
+    font-weight: 600;
 }

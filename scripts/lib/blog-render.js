@@ -312,72 +312,53 @@ function resolveHero(post) {
     };
 }
 
+
 // ------------------------------------------------------------ article parts
+
+/** Sentence case for a category shown in prose; initialisms keep their caps. */
+function categoryLabel(category) {
+    const value = String(category || '').trim();
+    if (!value) return '';
+    if (/^(LLC|S-corp|C-corp|IRA|401\(k\))/i.test(value)) return value;
+    return value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
+}
 
 function renderCrumbs(title) {
     return `<nav class="post-crumbs" aria-label="Breadcrumb">
-                    <ol class="post-crumbs-list">
-                        <li class="post-crumbs-item"><a href="/">Home</a></li>
-                        <li class="post-crumbs-item"><a href="/blog">Blog</a></li>
-                        <li class="post-crumbs-item post-crumbs-current">${esc(title)}</li>
-                    </ol>
-                </nav>`;
+            <ol class="post-crumbs-list">
+                <li class="post-crumbs-item"><a href="/">Home</a></li>
+                <li class="post-crumbs-item"><a href="/blog">Blog</a></li>
+                <li class="post-crumbs-item post-crumbs-current">${esc(title)}</li>
+            </ol>
+        </nav>`;
 }
 
 /**
- * The opener: title and lede in the wide column, the article's facts as a
- * definition list in the aside. Meta is never a middle-dot string.
+ * Title, lede and one plain meta line. Author, date and read time are
+ * separated by commas and spaces: no middle dots, no definition list.
  */
-function renderOpener(post) {
+function renderPostHeader(post) {
     const fm = post.frontmatter;
-    const category = normalizeCategoryForArchives(fm.category || 'Investing');
     const readTime = normalizeReadTime(post);
+    const published = formatDate(fm.date);
     const lede = fm.description
-        ? `\n                        <p class="opener__lede post-standfirst">${esc(fm.description)}</p>`
+        ? `\n        <p class="lede post-lede">${esc(fm.description)}</p>`
         : '';
 
-    const published = formatDate(fm.date);
     const modifiedRaw = fm.modifiedDate || fm.updatedAt || '';
-    // Some posts carry a modifiedDate that predates the publication date;
-    // an "Updated" line older than "Published" is worse than none.
+    // A "last updated" line older than the publication date is worse than none.
     const isLater = modifiedRaw && new Date(modifiedRaw) > new Date(fm.date);
     const modified = isLater ? formatDate(modifiedRaw) : '';
-    const updatedRow =
+    const updated =
         modified && modified !== published
-            ? `\n                            <div class="post-meta-row">
-                                <dt class="post-meta-term">Updated</dt>
-                                <dd class="post-meta-value"><time datetime="${formatISODate(modifiedRaw)}">${esc(modified)}</time></dd>
-                            </div>`
+            ? `, updated <time datetime="${formatISODate(modifiedRaw)}">${esc(modified)}</time>`
             : '';
 
-    return `<header class="opener post-opener">
-                    <div class="opener__main">
-                        <h1 class="opener__title post-title">${esc(fm.title || 'Untitled')}</h1>${lede}
-                    </div>
-                    <div class="opener__aside post-opener-aside">
-                        <dl class="post-meta">
-                            <div class="post-meta-row">
-                                <dt class="post-meta-term">Category</dt>
-                                <dd class="post-meta-value"><a class="post-meta-category" href="/blog/category/${slugifyCategory(category)}">${esc(category)}</a></dd>
-                            </div>
-                            <div class="post-meta-row">
-                                <dt class="post-meta-term">Published</dt>
-                                <dd class="post-meta-value"><time datetime="${formatISODate(fm.date)}">${esc(published)}</time></dd>
-                            </div>${updatedRow}
-                            <div class="post-meta-row">
-                                <dt class="post-meta-term">Read time</dt>
-                                <dd class="post-meta-value">${readTime} min</dd>
-                            </div>
-                            <div class="post-meta-row">
-                                <dt class="post-meta-term">Written by</dt>
-                                <dd class="post-meta-value">${esc(fm.author || 'Preston Seo')}</dd>
-                            </div>
-                        </dl>
-                    </div>
-                </header>`;
+    return `<h1 class="post-title">${esc(fm.title || 'Untitled')}</h1>${lede}
+        <p class="meta post-meta">${esc(fm.author || 'Preston Seo')}, <time datetime="${formatISODate(fm.date)}">${esc(published)}</time>, ${readTime} min read${updated}</p>`;
 }
 
-/** The hero photograph, inside the shared gold offset frame. */
+/** The hero photograph, rounded, no frame. Only when the file is really there. */
 function renderFigure(hero) {
     if (!hero.exists) return '';
     const dims = hero.width && hero.height ? ` width="${hero.width}" height="${hero.height}"` : '';
@@ -385,17 +366,12 @@ function renderFigure(hero) {
     const picture = hero.webp
         ? `<picture><source srcset="${esc(hero.webp)}" type="image/webp">${img}</picture>`
         : img;
-    return `<div class="post-hero">
-                <div class="post-wrap">
-                    <figure class="photo post-figure">${picture}</figure>
-                </div>
-            </div>`;
+    return `<figure class="post-figure">${picture}</figure>`;
 }
 
 /**
- * Heading anchors plus the contents rail for long reads only. The rail ships
- * as a closed <details> — the right default on a phone — and the stylesheet
- * forces it open as a rail from 1024px.
+ * Heading anchors plus an "On this page" list for long reads only. It is a
+ * plain list, not a rail: a <details> on a phone, forced open from 900px.
  * Returns the content with ids injected so in-page links resolve.
  */
 function buildTOC(contentHtml, wordCount) {
@@ -409,7 +385,8 @@ function buildTOC(contentHtml, wordCount) {
         return `<h${level}${attrs || ''} id="${slug}">${inner}</h${level}>`;
     });
 
-    if (wordCount < TOC_MIN_WORDS || headings.filter((h) => h.level === 2).length < 3) {
+    const sections = headings.filter((heading) => heading.level === 2);
+    if (wordCount < TOC_MIN_WORDS || sections.length < 3) {
         return { toc: '', content };
     }
 
@@ -420,107 +397,148 @@ function buildTOC(contentHtml, wordCount) {
         return { toc: '', content };
     }
 
-    // A contents list is a map, not a transcript: past 20 headings the
-    // subsections stop helping and only the top level is listed.
-    const includeSubheadings = headings.length <= 20;
-
-    const items = [];
-    for (const heading of headings) {
-        if (heading.level === 2) {
-            items.push({ ...heading, children: [] });
-        } else if (includeSubheadings && items.length > 0) {
-            items[items.length - 1].children.push(heading);
-        }
-    }
-
-    const list = items
-        .map((item) => {
-            const children = item.children.length
-                ? `\n                                <ol class="post-toc-sublist">${item.children
-                      .map(
-                          (child) =>
-                              `\n                                    <li class="post-toc-item"><a href="#${child.slug}">${esc(child.label)}</a></li>`
-                      )
-                      .join('')}\n                                </ol>\n                            `
-                : '';
-            return `\n                            <li class="post-toc-item"><a href="#${item.slug}">${esc(item.label)}</a>${children}</li>`;
-        })
+    const items = sections
+        .map(
+            (item) =>
+                `\n                <li class="toc__item"><a href="#${item.slug}">${esc(item.label)}</a></li>`
+        )
         .join('');
 
-    const toc = `<details class="contents post-contents">
-                        <summary class="contents__summary post-toc-title">Contents</summary>
-                        <ol class="contents__list post-toc-list">${list}
-                        </ol>
-                    </details>`;
+    const toc = `<details class="toc post-toc">
+            <summary class="toc__title">On this page</summary>
+            <ol class="toc__list">${items}
+            </ol>
+        </details>`;
 
     return { toc, content };
 }
 
-/**
- * Statistics become display figures in the margin. A stat without a source, or
- * one whose note merely repeats a sentence already in the body, is dropped
- * rather than re-dressed as a card.
- */
-function renderFacts(statistics, proseText) {
-    if (!Array.isArray(statistics) || statistics.length === 0) return '';
-    const haystack = String(proseText || '').toLowerCase().replace(/\s+/g, ' ');
+// ----------------------------------------------------------------- tables
 
-    const kept = statistics.filter((stat) => {
-        if (!stat || !stat.source || !String(stat.source).trim()) return false;
-        if (!stat.value || !stat.label) return false;
-        const note = String(stat.context || '').toLowerCase().replace(/\s+/g, ' ').trim();
-        if (note.length > 30 && haystack.includes(note.slice(0, 80))) return false;
-        return true;
-    });
+const CELL_PATTERN = /<(t[hd])(\s[^>]*)?>([\s\S]*?)<\/\1>/gi;
 
-    if (kept.length === 0) return '';
-
-    const rows = kept
-        .map((stat) => {
-            const note = stat.context
-                ? `\n                                <p class="figure__note post-fact-note">${esc(stat.context)}</p>`
-                : '';
-            return `\n                        <div class="figure post-fact">
-                            <dt class="figure__label post-fact-label">${esc(stat.label)}</dt>
-                            <dd class="post-fact-body">
-                                <span class="figure__value post-fact-value">${esc(stat.value)}</span>${note}
-                                <p class="post-fact-source">Source: ${esc(stat.source)}</p>
-                            </dd>
-                        </div>`;
-        })
-        .join('');
-
-    return `<section class="post-figures" aria-labelledby="post-figures-title">
-                        <h2 class="post-aside-title" id="post-figures-title">Figures in this article</h2>
-                        <dl class="post-facts">${rows}
-                        </dl>
-                    </section>`;
+/** A cell is a number when it carries digits and no real word. */
+function isNumericCell(html) {
+    const value = stripTags(decodeEntities(html)).trim();
+    if (!value || !/\d/.test(value)) return false;
+    return !/[A-Za-z]{4,}/.test(value);
 }
 
-/** Markdown tables become the shared data table inside their own scroller. */
+/** Right-align the columns that hold numbers, so figures line up. */
+function annotateTable(tableHtml) {
+    const rows = (String(tableHtml).match(/<tr(?:\s[^>]*)?>[\s\S]*?<\/tr>/gi) || []);
+    const tally = [];
+    for (const row of rows) {
+        let index = -1;
+        for (const cell of row.matchAll(CELL_PATTERN)) {
+            index += 1;
+            if (cell[1].toLowerCase() !== 'td') continue;
+            if (!tally[index]) tally[index] = { total: 0, numeric: 0 };
+            tally[index].total += 1;
+            if (isNumericCell(cell[3])) tally[index].numeric += 1;
+        }
+    }
+    const numeric = tally.map((column) => Boolean(column && column.total > 0 && column.numeric / column.total >= 0.6));
+    if (!numeric.some(Boolean)) return tableHtml;
+
+    return String(tableHtml).replace(/<tr(\s[^>]*)?>([\s\S]*?)<\/tr>/gi, (match, attrs, inner) => {
+        let index = -1;
+        const next = inner.replace(CELL_PATTERN, (cellMatch, tag, cellAttrs, body) => {
+            index += 1;
+            if (!numeric[index]) return cellMatch;
+            if (cellAttrs && /\sclass="/.test(cellAttrs)) {
+                return cellMatch.replace(/\sclass="/, ' class="num ');
+            }
+            return `<${tag}${cellAttrs || ''} class="num">${body}</${tag}>`;
+        });
+        return `<tr${attrs || ''}>${next}</tr>`;
+    });
+}
+
+const TABLE_PATTERN =
+    /<table(?:\s[^>]*)?>[\s\S]*?<\/table>(?:\s*<p>(?:<em>)?\s*(?:Sources?|Note)\b[\s\S]*?<\/p>)?/gi;
+
+/**
+ * Every table is inset: it sits in its own column, narrower than the text, and
+ * keeps its source line with it as a caption.
+ */
 function wrapTables(contentHtml) {
+    return String(contentHtml).replace(TABLE_PATTERN, (match) => {
+        const end = match.toLowerCase().lastIndexOf('</table>') + '</table>'.length;
+        const table = annotateTable(match.slice(0, end));
+        const trailing = match.slice(end).trim();
+        const caption = trailing
+            ? `\n<p class="cap">${trailing
+                  .replace(/^<p>/i, '')
+                  .replace(/<\/p>$/i, '')
+                  .replace(/^<em>/i, '')
+                  .replace(/<\/em>$/i, '')
+                  .trim()}</p>`
+            : '';
+        return `<div class="table-inset">${table}${caption}</div>`;
+    });
+}
+
+// --------------------------------------------------------- quotes and stats
+
+const CALLOUT_LEAD = /^(worked example|example|scenario|how to read this)\b/i;
+
+/**
+ * A quotation that opens a worked example becomes a callout; every other
+ * blockquote is a plain pull-quote.
+ */
+function stylePullQuotes(contentHtml) {
     return String(contentHtml).replace(
-        /<table(\s[^>]*)?>([\s\S]*?)<\/table>/gi,
-        (match, attrs) => {
-            const withClass = /\sclass="/.test(attrs || '')
-                ? match.replace(/\sclass="/, ' class="data-table ')
-                : match.replace(/^<table/, '<table class="data-table"');
-            return `<div class="post-table">${withClass}</div>`;
+        /<blockquote(?:\s[^>]*)?>([\s\S]*?)<\/blockquote>/gi,
+        (match, inner) => {
+            const lead = stripTags(decodeEntities(inner)).trim().match(CALLOUT_LEAD);
+            if (lead) {
+                const isReading = /how to read this/i.test(lead[1]);
+                const label = isReading ? 'How to read this' : 'Worked example';
+                const variant = isReading ? ' callout--gold' : '';
+                return `<div class="callout${variant}"><p class="callout__label">${label}</p>${inner}</div>`;
+            }
+            return `<blockquote class="pull-quote">${inner}</blockquote>`;
         }
     );
 }
 
-/** A quotation in the copy is a pull-quote, not an indented paragraph. */
-function stylePullQuotes(contentHtml) {
-    return String(contentHtml).replace(/<blockquote(\s[^>]*)?>/gi, (match, attrs) => {
-        if (/\sclass="/.test(attrs || '')) return match.replace(/\sclass="/, ' class="pull-quote ');
-        return '<blockquote class="pull-quote">';
+/**
+ * Sourced statistics never become a figure panel. When the markdown already
+ * states the number inside a sentence, that sentence is promoted to a big
+ * statement in place. When it does not, the statistic is dropped.
+ */
+function promoteBigStatements(contentHtml, statistics) {
+    if (!Array.isArray(statistics) || statistics.length === 0) return contentHtml;
+
+    const values = [
+        ...new Set(
+            statistics
+                .filter((stat) => stat && stat.value && stat.source && String(stat.source).trim())
+                .map((stat) => String(stat.value).trim())
+                .filter((value) => value.length >= 2)
+        ),
+    ];
+    if (values.length === 0) return contentHtml;
+
+    const used = new Set();
+    return String(contentHtml).replace(/<p>([\s\S]*?)<\/p>/gi, (match, inner) => {
+        if (used.size >= 2) return match;
+        const text = stripTags(decodeEntities(inner)).trim();
+        if (!text || text.length > 180) return match;
+        if ((text.match(/[.!?](?:\s|$)/g) || []).length > 1) return match;
+        const hit = values.find((value) => !used.has(value) && text.includes(value));
+        if (!hit) return match;
+        used.add(hit);
+        return `<div class="big"><p>${inner}</p></div>`;
     });
 }
 
+// -------------------------------------------------------- sources, faq, more
+
 /**
- * The shared source block carries hard-coded inline styles for the legacy card
- * look. Blog posts drop the chrome and take their styling from blog.css.
+ * The shared source block ships inline styles for the legacy card look. Blog
+ * posts drop the chrome: a heading, a hairline list, the disclaimer once.
  */
 function renderSources(post) {
     const category = normalizeCategoryForArchives(post.frontmatter.category || 'Investing');
@@ -534,41 +552,40 @@ function renderSources(post) {
     const stripped = raw
         .replace(/\s+style="[^"]*"/g, '')
         .replace('class="source-note"', 'class="post-sources"')
-        .replace('<h2>', '<h2 class="post-aside-title post-sources-title">')
+        .replace('<h2>', '<h2 class="post-sources-title">')
+        .replace('<p>', '<p class="post-sources-note">')
         .replace('<ul>', '<ul class="post-sources-list">')
         .replace(/<li>/g, '<li class="post-sources-item">')
         .replace(/\s+$/, '');
 
     return stripped.replace(
         '</section>',
-        `  <p class="post-sources-disclaimer">${DISCLAIMER}</p>\n          </section>`
+        `  <p class="post-disclaimer">${DISCLAIMER}</p>\n        </section>`
     );
 }
 
-/** Questions and answers as a definition list on the cream-dark band. */
+/** Questions as disclosure rows on hairlines. No box, no eyebrow. */
 function renderFAQ(faqs) {
     if (!Array.isArray(faqs) || faqs.length === 0) return '';
     const rows = faqs
         .filter((item) => item && item.question && item.answer)
         .map(
-            (item) => `\n                        <div class="post-faq-row">
-                            <dt class="post-faq-question">${esc(item.question)}</dt>
-                            <dd class="post-faq-answer">${esc(item.answer)}</dd>
-                        </div>`
+            (item) => `\n                <details>
+                    <summary>${esc(item.question)}</summary>
+                    <p class="faq__answer">${esc(item.answer)}</p>
+                </details>`
         )
         .join('');
     if (!rows) return '';
 
-    return `<section class="band band--cream-dark post-faq" aria-labelledby="post-faq-title">
-                <div class="post-wrap">
-                    <h2 class="post-faq-title" id="post-faq-title">Frequently asked questions</h2>
-                    <dl class="dl-terms post-faq-list">${rows}
-                    </dl>
-                </div>
-            </section>`;
+    return `<section class="post-faq" aria-labelledby="post-faq-title">
+            <h2 class="post-faq-title" id="post-faq-title">Frequently asked questions</h2>
+            <div class="faq post-faq-list">${rows}
+            </div>
+        </section>`;
 }
 
-/** Text-only "More in <category>" list. Same category first, then any other post. */
+/** "More in <category>" as editorial list rows. Same category first. */
 function renderRelated(post, allPosts, limit = RELATED_LIMIT) {
     const category = normalizeCategoryForArchives(post.frontmatter.category || 'Investing');
     const pool = allPosts.filter((candidate) => candidate.slug !== post.slug && isIndexableBlogPost(candidate));
@@ -576,88 +593,72 @@ function renderRelated(post, allPosts, limit = RELATED_LIMIT) {
     const sameCategory = pool.filter(
         (candidate) => normalizeCategoryForArchives(candidate.frontmatter.category || 'Investing') === category
     );
-    const picks = sameCategory.slice(0, limit);
-    if (picks.length < limit) {
-        const seen = new Set(picks.map((p) => p.slug));
-        for (const candidate of pool) {
-            if (picks.length >= limit) break;
-            if (seen.has(candidate.slug)) continue;
-            picks.push(candidate);
-            seen.add(candidate.slug);
-        }
-    }
+
+    // A "More in <category>" heading has to be true. When the category is too
+    // thin to fill the list, the list becomes the newest posts instead.
+    const inCategory = sameCategory.length >= 3;
+    const picks = (inCategory ? sameCategory : pool).slice(0, limit);
     if (picks.length === 0) return '';
 
+    const heading = inCategory ? `More in ${esc(categoryLabel(category))}` : 'More from the blog';
+    const allLink = inCategory
+        ? `<p class="post-related-all"><a href="/blog/category/${slugifyCategory(category)}">All ${esc(categoryLabel(category))} articles</a></p>`
+        : '<p class="post-related-all"><a href="/blog">All articles</a></p>';
+
     const items = picks
-        .map(
-            (item) =>
-                `\n                        <li class="post-related-item"><a href="/blog/${item.slug}">${esc(item.frontmatter.title || item.slug)}</a></li>`
-        )
+        .map((item) => {
+            const fm = item.frontmatter;
+            const description = fm.description
+                ? `\n                    <p class="list-rows__desc">${esc(fm.description)}</p>`
+                : '';
+            return `\n                <li class="list-rows__item">
+                    <p class="list-rows__title"><a href="/blog/${item.slug}">${esc(fm.title || item.slug)}</a></p>${description}
+                    <p class="list-rows__meta">${esc(formatDate(fm.date))}, ${normalizeReadTime(item)} min read</p>
+                </li>`;
+        })
         .join('');
 
     return `<nav class="post-related" aria-labelledby="post-related-title">
-                <div class="post-wrap">
-                    <h2 class="post-related-title" id="post-related-title">More in ${esc(category)}</h2>
-                    <ul class="post-related-list">${items}
-                    </ul>
-                    <p class="post-related-all"><a href="/blog/category/${slugifyCategory(category)}">All ${esc(category)} articles</a></p>
-                </div>
-            </nav>`;
+            <h2 class="post-related-title" id="post-related-title">${heading}</h2>
+            <ul class="list-rows post-related-list">${items}
+            </ul>
+            ${allLink}
+        </nav>`;
 }
 
 /**
  * The complete <article> markup for a post. Both renderers call this, so the
  * static template and the Eleventy layout cannot produce different DOM.
  *
- * Surfaces, in order: cream opener, the framed hero photograph, the white
- * reading sheet with its margin column, the cream-dark FAQ band, and the
- * related list back on cream.
+ * One column on paper: breadcrumb, title, lede, meta line, optional photograph,
+ * "On this page" on long reads, the prose with inset tables, sources, FAQ rows
+ * and the related list. Posts end without a CTA block.
  */
 function renderArticleBody({ post, contentHtml, allPosts }) {
     const fm = post.frontmatter;
     const wordCount = fm.wordCount ? Number(fm.wordCount) : countWords(post.content || '');
     const { toc, content } = buildTOC(contentHtml, wordCount);
-    const facts = renderFacts(fm.statistics || fm.stats, stripTags(content));
-    const prose = stylePullQuotes(wrapTables(content));
-    const hero = renderFigure(resolveHero(post));
+    const prose = promoteBigStatements(
+        stylePullQuotes(wrapTables(content)),
+        fm.statistics || fm.stats
+    );
 
-    const asideParts = [facts, renderSources(post)].filter(Boolean);
-    const aside = asideParts.length
-        ? `<aside class="marginalia__aside post-aside">
-                    ${asideParts.join('\n\n                    ')}
-                </aside>`
-        : '';
-    const bodyClasses = ['marginalia', 'post-body'];
-    if (!toc) bodyClasses.push('post-body--no-contents');
-    if (!aside) bodyClasses.push('post-body--no-aside');
-
-    const bodyInner = [toc, `<div class="marginalia__main post-main">
-                        <div class="sheet post-prose">
-${prose}
-                        </div>
-                    </div>`, aside].filter(Boolean);
-
-    const sections = [
-        `<div class="post-head">
-                <div class="post-wrap">
-                    ${renderCrumbs(fm.title || 'Untitled')}
-
-                    ${renderOpener(post)}
-                </div>
-            </div>`,
-        hero,
-        `<div class="post-body-outer">
-                <div class="post-wrap">
-                    <div class="${bodyClasses.join(' ')}">
-                        ${bodyInner.join('\n\n                    ')}
-                    </div>
-                </div>
-            </div>`,
+    const parts = [
+        renderCrumbs(fm.title || 'Untitled'),
+        renderPostHeader(post),
+        renderFigure(resolveHero(post)),
+        toc,
+        `<div class="prose post-prose">\n${prose}\n        </div>`,
+        renderSources(post),
         renderFAQ(fm.faq || fm.faqs),
         renderRelated(post, allPosts || loadAllPosts()),
     ].filter(Boolean);
 
-    return `<article class="post">\n            ${sections.join('\n\n            ')}\n        </article>`;
+    return `<article class="post">
+        <div class="post-wrap">
+        ${parts.join('\n\n        ')}
+        </div>
+    </article>`;
 }
 
 // ------------------------------------------------------------------ exports
@@ -669,7 +670,9 @@ module.exports = {
     POSTS_PER_PAGE,
     ROOT_DIR,
     SITE_DOMAIN,
+    annotateTable,
     buildTOC,
+    categoryLabel,
     countWords,
     esc,
     fileExistsInRepo,
@@ -681,9 +684,9 @@ module.exports = {
     normalizeCategoryForArchives,
     normalizeReadTime,
     parseMarkdownFile,
+    promoteBigStatements,
     readImageSize,
     renderArticleBody,
-    renderFacts,
     renderFAQ,
     renderRelated,
     renderSources,
