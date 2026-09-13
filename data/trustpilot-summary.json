@@ -1,0 +1,41 @@
+{
+  "capturedAt": "2026-09-13T21:53:16.436Z",
+  "sourceUrl": "https://www.trustpilot.com/review/firstairbnb.com",
+  "businessDisplayName": "Legacy Investing Show By Preston Seo",
+  "identifyingName": "firstairbnb.com",
+  "websiteUrl": "https://www.managemoney101.com/home",
+  "countryCode": "US",
+  "profileClaimed": true,
+  "trustScore": 4.2,
+  "starsRounded": 4,
+  "totalReviews": 66,
+  "reviewsLast12Months": 66,
+  "hasCollectedIncentivisedReviews": false,
+  "starDistribution": {
+    "five": {
+      "count": 51,
+      "percentDisplayed": 77,
+      "percentExact": 77.3
+    },
+    "four": {
+      "count": 7,
+      "percentDisplayed": 11,
+      "percentExact": 10.6
+    },
+    "three": {
+      "count": 2,
+      "percentDisplayed": 3,
+      "percentExact": 3
+    },
+    "two": {
+      "count": 0,
+      "percentDisplayed": 0,
+      "percentExact": 0
+    },
+    "one": {
+      "count": 6,
+      "percentDisplayed": 9,
+      "percentExact": 9.1
+    }
+  }
+}
