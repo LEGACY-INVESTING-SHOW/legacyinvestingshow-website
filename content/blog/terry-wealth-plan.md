@@ -1,7 +1,7 @@
 ---
 title: "Terry B. Young's 2026 Tax Year Planning: Educational Wealth Strategy Snapshot"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Explore Terry B. Young's educational 2026 tax year planning wealth strategy snapshot. Learn tax optimization modeling, strategic timing decisions, and year-end planning frameworks."
+description: "Terry B. Young's educational 2026 tax year planning wealth strategy snapshot. Learn tax optimization modeling, strategic timing decisions, and year-end planning frameworks."
 date: 2026-03-01
 modifiedDate: 2026-03-01
 author: Preston Seo

@@ -1,32 +1,63 @@
-const { renderSourceBlock } = require("../scripts/lib/site-shell");
-const indexationPolicy = require("../data/indexation-policy.json");
-
-const FORCE_INDEX_SLUGS = new Set(indexationPolicy.forceIndexBlogSlugs || []);
-const REDIRECTED_SLUGS = new Set(
-  (indexationPolicy.blogRedirects || [])
-    .filter((entry) => entry.source)
-    .map((entry) => entry.source.replace(/^\/blog\//, ""))
-);
-const NOINDEX_SLUG_PATTERNS = (indexationPolicy.noindexBlogSlugPatterns || [])
-  .map((entry) => new RegExp(entry.pattern));
-
-/**
- * Mirrors scripts/apply-indexation-policy.js so related links only point at
- * blog URLs that stay in the index.
- */
-function isIndexableSlug(slug) {
-  if (!slug) return false;
-  if (REDIRECTED_SLUGS.has(slug)) return false;
-  if (FORCE_INDEX_SLUGS.has(slug)) return true;
-  return !NOINDEX_SLUG_PATTERNS.some((pattern) => pattern.test(slug));
-}
+const {
+  renderHeadAssets,
+  renderSiteFooter,
+  renderSiteHeader,
+  renderAnalyticsBody,
+  renderAnalyticsHead,
+} = require("../scripts/lib/site-shell");
+const blogRender = require("../scripts/lib/blog-render");
 
 module.exports = function(eleventyConfig) {
   const siteUrl = process.env.SITE_URL || "https://www.legacyinvestingshow.com";
 
   // Copy assets
   eleventyConfig.addPassthroughCopy("assets");
-  
+
+  // ---- Shared site shell -------------------------------------------------
+  // The header, footer and head assets are never hand-copied into Nunjucks:
+  // they come straight from scripts/lib/site-shell.js, the same renderer the
+  // static generators call.
+  eleventyConfig.addGlobalData("siteShell", () => ({
+    headAssets: renderHeadAssets(),
+    header: renderSiteHeader("/blog"),
+    footer: renderSiteFooter(),
+    analyticsHead: renderAnalyticsHead({
+      gaTrackingId: process.env.GA_TRACKING_ID || "G-2578PT1WSS",
+      gtmContainerId: process.env.GTM_CONTAINER_ID || "GTM-KQ4R2LKP",
+    }),
+    analyticsBody: renderAnalyticsBody({
+      gtmContainerId: process.env.GTM_CONTAINER_ID || "GTM-KQ4R2LKP",
+    }),
+  }));
+
+  // ---- Shared post markup ------------------------------------------------
+  // scripts/lib/blog-render.js owns the <article> DOM for both renderers, so
+  // templates/blog-post.html and this layout cannot drift apart.
+  const postsBySlug = new Map(blogRender.loadAllPosts().map((post) => [post.slug, post]));
+
+  eleventyConfig.addFilter("articleBody", (content, slug) => {
+    const post = postsBySlug.get(slug);
+    if (!post) return content;
+    return blogRender.renderArticleBody({
+      post,
+      contentHtml: content,
+      allPosts: blogRender.loadAllPosts(),
+    });
+  });
+
+  // Hero assets resolve against the canonical repo: a post whose image file was
+  // never created renders no <figure>, no preload, and the shared OG fallback.
+  eleventyConfig.addFilter("blogHero", (slug) => {
+    const post = postsBySlug.get(slug);
+    return post
+      ? blogRender.resolveHero(post)
+      : { exists: false, src: "", webp: "", alt: "", ogImage: siteUrl + blogRender.FALLBACK_OG_IMAGE };
+  });
+
+  eleventyConfig.addFilter("blogCategory", (category) =>
+    blogRender.normalizeCategoryForArchives(category)
+  );
+
   // Date filter
   eleventyConfig.addFilter("readableDate", function(dateObj) {
     return new Date(dateObj).toLocaleDateString('en-US', {
@@ -92,68 +123,6 @@ module.exports = function(eleventyConfig) {
     }
   });
 
-  /**
-   * Resolve a post's relatedPosts frontmatter against the blog collection.
-   * Falls back to the newest indexable posts in the same category.
-   */
-  eleventyConfig.addFilter(
-    "relatedGuides",
-    (relatedPosts, posts, currentSlug, category, limit = 4) => {
-      const all = Array.isArray(posts) ? posts : [];
-      const bySlug = new Map();
-
-      for (const post of all) {
-        const slug = post.page && post.page.fileSlug;
-        if (!slug || !post.data || !post.data.title) continue;
-        bySlug.set(slug, {
-          slug,
-          title: post.data.title,
-          url: `/blog/${slug}`,
-          category: post.data.category || "",
-          date: post.date ? new Date(post.date).getTime() : 0,
-        });
-      }
-
-      const picked = [];
-      const seen = new Set([currentSlug]);
-
-      const add = (slug) => {
-        if (picked.length >= limit) return;
-        if (!slug || seen.has(slug)) return;
-        const entry = bySlug.get(slug);
-        if (!entry) return;
-        if (!isIndexableSlug(slug)) return;
-        seen.add(slug);
-        picked.push(entry);
-      };
-
-      for (const item of Array.isArray(relatedPosts) ? relatedPosts : []) {
-        add(typeof item === "string" ? item : item && item.slug);
-      }
-
-      if (picked.length === 0 && category) {
-        const sameCategory = [...bySlug.values()]
-          .filter((entry) => entry.category === category)
-          .sort((a, b) => b.date - a.date);
-
-        for (const entry of sameCategory) {
-          add(entry.slug);
-        }
-      }
-
-      return picked;
-    }
-  );
-
-  eleventyConfig.addShortcode("sourceBlock", function(title = "", slug = "", type = "") {
-    return renderSourceBlock({
-      title,
-      slug,
-      type,
-      heading: "Sources To Check Before You Act",
-    });
-  });
-  
   return {
     dir: {
       input: "src",

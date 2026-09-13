@@ -1,7 +1,7 @@
 ---
 title: "Harold Vaughn Heath's Wealth Strategy Snapshot: 2026 Tax Year Planning with Educational Analysis"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Comprehensive 2026 tax year wealth strategy snapshot for Harold Vaughn Heath featuring educational analysis of tax optimization, retirement planning, and strategic wealth building frameworks."
+description: "2026 tax year wealth strategy snapshot for Harold Vaughn Heath featuring educational analysis of tax optimization, retirement planning, and strategic wealth building frameworks."
 date: 2026-03-01
 modifiedDate: 2026-03-01
 author: Preston Seo

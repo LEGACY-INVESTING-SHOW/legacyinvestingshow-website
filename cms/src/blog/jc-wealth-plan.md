@@ -1,7 +1,7 @@
 ---
 title: "JC Nichols' Wealth Plan: $28,100-$48,800 Year-One Value Strategy"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover JC Nichols' comprehensive wealth strategy delivering $28,100-$48,800 in year-one value through cash flow optimization, debt elimination, and accelerated wealth building systems."
+description: "JC Nichols' wealth strategy delivering $28,100-$48,800 in year-one value through cash flow optimization, debt elimination, and accelerated wealth building systems."
 date: 2025-12-01
 modifiedDate: 2025-12-01
 author: Preston Seo

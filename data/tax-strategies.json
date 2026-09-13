@@ -5,8 +5,18 @@
       "title": "Cost Segregation",
       "shortDescription": "Accelerate depreciation on rental properties to reduce taxable income",
       "fullDescription": "Cost segregation is a tax strategy that allows real estate investors to accelerate depreciation deductions by reclassifying components of a building into shorter depreciation periods. Instead of depreciating the entire property over 27.5 or 39 years, certain components like carpeting, appliances, and landscaping can be depreciated over 5, 7, or 15 years.",
-      "keywords": ["cost segregation", "cost segregation study", "accelerated depreciation", "real estate tax strategy"],
-      "benefitsFor": ["Real estate investors", "Airbnb hosts", "Commercial property owners", "High-income earners"],
+      "keywords": [
+        "cost segregation",
+        "cost segregation study",
+        "accelerated depreciation",
+        "real estate tax strategy"
+      ],
+      "benefitsFor": [
+        "Real estate investors",
+        "Airbnb hosts",
+        "Commercial property owners",
+        "High-income earners"
+      ],
       "potentialSavings": "$20,000 - $100,000+ in year one",
       "minimumPropertyValue": "$500,000",
       "bestFor": "Properties worth $500K+ purchased or renovated recently",
@@ -14,7 +24,11 @@
       "professionalRequired": true,
       "typicalCost": "$5,000 - $15,000 for a study",
       "irsReference": "IRC Section 168",
-      "relatedStrategies": ["bonus-depreciation", "1031-exchange", "real-estate-professional-status"],
+      "relatedStrategies": [
+        "bonus-depreciation",
+        "1031-exchange",
+        "real-estate-professional-status"
+      ],
       "faqs": [
         {
           "question": "What is cost segregation?",
@@ -35,8 +49,18 @@
       "title": "Bonus Depreciation",
       "shortDescription": "Deduct a large share of qualifying property costs in the first year",
       "fullDescription": "Bonus depreciation allows investors to immediately deduct a large percentage of the purchase price of eligible assets. The percentage changes by tax year, so verify the current-year rate before you file or model savings.",
-      "keywords": ["bonus depreciation", "accelerated depreciation", "first-year depreciation", "tax cuts and jobs act depreciation"],
-      "benefitsFor": ["Business owners", "Real estate investors", "Equipment purchasers", "Vehicle buyers"],
+      "keywords": [
+        "bonus depreciation",
+        "accelerated depreciation",
+        "first-year depreciation",
+        "tax cuts and jobs act depreciation"
+      ],
+      "benefitsFor": [
+        "Business owners",
+        "Real estate investors",
+        "Equipment purchasers",
+        "Vehicle buyers"
+      ],
       "potentialSavings": "60% of asset cost as immediate deduction",
       "minimumPropertyValue": "No minimum",
       "bestFor": "New equipment, vehicles, and property improvements",
@@ -44,7 +68,11 @@
       "professionalRequired": false,
       "typicalCost": "Included in standard tax preparation",
       "irsReference": "IRC Section 168(k)",
-      "relatedStrategies": ["cost-segregation", "section-179", "vehicle-deductions"],
+      "relatedStrategies": [
+        "cost-segregation",
+        "section-179",
+        "vehicle-deductions"
+      ],
       "faqs": [
         {
           "question": "What qualifies for bonus depreciation?",
@@ -65,8 +93,18 @@
       "title": "1031 Exchange",
       "shortDescription": "Defer capital gains taxes by reinvesting proceeds into like-kind property",
       "fullDescription": "A 1031 exchange, named after Section 1031 of the IRS code, allows real estate investors to defer paying capital gains taxes when they sell an investment property and reinvest the proceeds into another 'like-kind' property. This powerful strategy lets investors grow their portfolio tax-free as long as they continue exchanging properties.",
-      "keywords": ["1031 exchange", "like kind exchange", "tax deferred exchange", "starker exchange"],
-      "benefitsFor": ["Real estate investors", "Property flippers", "Landlords", "Commercial property owners"],
+      "keywords": [
+        "1031 exchange",
+        "like kind exchange",
+        "tax deferred exchange",
+        "starker exchange"
+      ],
+      "benefitsFor": [
+        "Real estate investors",
+        "Property flippers",
+        "Landlords",
+        "Commercial property owners"
+      ],
       "potentialSavings": "15-20% capital gains tax deferral",
       "minimumPropertyValue": "No minimum",
       "bestFor": "Investors looking to upgrade or diversify their real estate portfolio",
@@ -74,7 +112,11 @@
       "professionalRequired": true,
       "typicalCost": "$1,000 - $3,000 for qualified intermediary",
       "irsReference": "IRC Section 1031",
-      "relatedStrategies": ["cost-segregation", "opportunity-zones", "installment-sales"],
+      "relatedStrategies": [
+        "cost-segregation",
+        "opportunity-zones",
+        "installment-sales"
+      ],
       "faqs": [
         {
           "question": "What is the 45-day rule in a 1031 exchange?",
@@ -95,8 +137,18 @@
       "title": "Real Estate Professional Status (REPS)",
       "shortDescription": "Unlock unlimited passive loss deductions against ordinary income",
       "fullDescription": "Real Estate Professional Status is an IRS designation that allows qualifying taxpayers to deduct rental real estate losses against their ordinary income without passive activity loss limitations. This can result in significant tax savings for high-income earners who materially participate in their real estate activities.",
-      "keywords": ["real estate professional status", "REPS tax status", "passive loss limitations", "material participation"],
-      "benefitsFor": ["Full-time real estate investors", "Real estate agents", "Property managers", "High-income spouses"],
+      "keywords": [
+        "real estate professional status",
+        "REPS tax status",
+        "passive loss limitations",
+        "material participation"
+      ],
+      "benefitsFor": [
+        "Full-time real estate investors",
+        "Real estate agents",
+        "Property managers",
+        "High-income spouses"
+      ],
       "potentialSavings": "Unlimited passive losses against W-2 income",
       "minimumPropertyValue": "No minimum",
       "bestFor": "Those who spend 750+ hours annually in real estate activities",
@@ -104,7 +156,11 @@
       "professionalRequired": true,
       "typicalCost": "Included in tax preparation, but requires detailed time tracking",
       "irsReference": "IRC Section 469(c)(7)",
-      "relatedStrategies": ["cost-segregation", "bonus-depreciation", "short-term-rental-loophole"],
+      "relatedStrategies": [
+        "cost-segregation",
+        "bonus-depreciation",
+        "short-term-rental-loophole"
+      ],
       "faqs": [
         {
           "question": "What are the requirements for Real Estate Professional Status?",
@@ -125,8 +181,18 @@
       "title": "Short-Term Rental Loophole",
       "shortDescription": "Deduct Airbnb losses against W-2 income without REPS",
       "fullDescription": "The short-term rental loophole allows Airbnb and vacation rental owners to bypass passive activity loss rules without qualifying as a Real Estate Professional. If your average guest stay is 7 days or less AND you materially participate in the rental activity, the IRS treats it as a non-passive activity, allowing you to deduct losses against ordinary income.",
-      "keywords": ["short term rental loophole", "airbnb tax loophole", "STR tax strategy", "vacation rental tax benefits"],
-      "benefitsFor": ["Airbnb hosts", "Vacation rental owners", "W-2 employees with side rentals", "High-income earners"],
+      "keywords": [
+        "short term rental loophole",
+        "airbnb tax loophole",
+        "STR tax strategy",
+        "vacation rental tax benefits"
+      ],
+      "benefitsFor": [
+        "Airbnb hosts",
+        "Vacation rental owners",
+        "W-2 employees with side rentals",
+        "High-income earners"
+      ],
       "potentialSavings": "$30,000 - $100,000+ in tax deductions",
       "minimumPropertyValue": "No minimum",
       "bestFor": "W-2 employees who want real estate tax benefits without REPS",
@@ -134,7 +200,11 @@
       "professionalRequired": true,
       "typicalCost": "Included in tax preparation with STR experience",
       "irsReference": "IRC Section 469 & Reg 1.469-1T(e)(3)",
-      "relatedStrategies": ["cost-segregation", "bonus-depreciation", "real-estate-professional-status"],
+      "relatedStrategies": [
+        "cost-segregation",
+        "bonus-depreciation",
+        "real-estate-professional-status"
+      ],
       "faqs": [
         {
           "question": "What is the 7-day rule for short-term rentals?",
@@ -155,8 +225,18 @@
       "title": "Section 179 Deduction",
       "shortDescription": "Immediately expense up to $1.16M in business equipment",
       "fullDescription": "Section 179 allows businesses to deduct the full purchase price of qualifying equipment and software purchased during the tax year, rather than depreciating it over time. The deduction limit and phase-out threshold are updated by the IRS each year.",
-      "keywords": ["section 179", "section 179 deduction", "equipment expensing", "business tax deduction"],
-      "benefitsFor": ["Small business owners", "Self-employed individuals", "Equipment-heavy businesses", "Vehicle purchasers"],
+      "keywords": [
+        "section 179",
+        "section 179 deduction",
+        "equipment expensing",
+        "business tax deduction"
+      ],
+      "benefitsFor": [
+        "Small business owners",
+        "Self-employed individuals",
+        "Equipment-heavy businesses",
+        "Vehicle purchasers"
+      ],
       "potentialSavings": "Up to $1,160,000 immediate deduction",
       "minimumPropertyValue": "No minimum",
       "bestFor": "Businesses purchasing equipment, vehicles, or software",
@@ -164,7 +244,11 @@
       "professionalRequired": false,
       "typicalCost": "Included in standard tax preparation",
       "irsReference": "IRC Section 179",
-      "relatedStrategies": ["bonus-depreciation", "vehicle-deductions", "home-office-deduction"],
+      "relatedStrategies": [
+        "bonus-depreciation",
+        "vehicle-deductions",
+        "home-office-deduction"
+      ],
       "faqs": [
         {
           "question": "What is the current Section 179 limit?",
@@ -185,8 +269,18 @@
       "title": "Self-Directed IRA",
       "shortDescription": "Invest retirement funds in real estate, businesses, and alternative assets",
       "fullDescription": "A Self-Directed IRA allows you to invest your retirement funds in a wider range of assets beyond stocks and bonds, including real estate, private businesses, precious metals, and more. All income and gains grow tax-deferred (Traditional) or tax-free (Roth).",
-      "keywords": ["self directed ira", "sdira real estate", "ira real estate investing", "alternative ira investments"],
-      "benefitsFor": ["Real estate investors", "Business owners", "Alternative asset investors", "Retirement savers"],
+      "keywords": [
+        "self directed ira",
+        "sdira real estate",
+        "ira real estate investing",
+        "alternative ira investments"
+      ],
+      "benefitsFor": [
+        "Real estate investors",
+        "Business owners",
+        "Alternative asset investors",
+        "Retirement savers"
+      ],
       "potentialSavings": "Tax-deferred or tax-free growth on investments",
       "minimumPropertyValue": "Varies by custodian",
       "bestFor": "Investors who want to diversify retirement funds into real estate",
@@ -194,7 +288,11 @@
       "professionalRequired": true,
       "typicalCost": "$200 - $500/year custodian fees",
       "irsReference": "IRC Section 408",
-      "relatedStrategies": ["solo-401k", "roth-conversion", "mega-backdoor-roth"],
+      "relatedStrategies": [
+        "solo-401k",
+        "roth-conversion",
+        "mega-backdoor-roth"
+      ],
       "faqs": [
         {
           "question": "What can I invest in with a Self-Directed IRA?",
@@ -215,8 +313,18 @@
       "title": "Solo 401(k)",
       "shortDescription": "Contribute up to $69,000 per year as a self-employed individual",
       "fullDescription": "A Solo 401(k), also known as an Individual 401(k), is a retirement plan for self-employed individuals with no full-time employees. It allows significantly higher contribution limits than a traditional IRA, plus the ability to take loans from your account and invest in alternative assets.",
-      "keywords": ["solo 401k", "individual 401k", "self employed 401k", "one participant 401k"],
-      "benefitsFor": ["Self-employed individuals", "Freelancers", "Side business owners", "Consultants"],
+      "keywords": [
+        "solo 401k",
+        "individual 401k",
+        "self employed 401k",
+        "one participant 401k"
+      ],
+      "benefitsFor": [
+        "Self-employed individuals",
+        "Freelancers",
+        "Side business owners",
+        "Consultants"
+      ],
       "potentialSavings": "High annual contribution ceiling with catch-up options",
       "minimumPropertyValue": "No minimum",
       "bestFor": "Self-employed individuals with high income",
@@ -224,7 +332,11 @@
       "professionalRequired": false,
       "typicalCost": "$0 - $300/year depending on provider",
       "irsReference": "IRC Section 401(k)",
-      "relatedStrategies": ["self-directed-ira", "mega-backdoor-roth", "sep-ira"],
+      "relatedStrategies": [
+        "self-directed-ira",
+        "mega-backdoor-roth",
+        "sep-ira"
+      ],
       "faqs": [
         {
           "question": "What are the current Solo 401(k) contribution limits?",
@@ -245,8 +357,18 @@
       "title": "HSA Triple Tax Advantage",
       "shortDescription": "The only account with tax-free contributions, growth, AND withdrawals",
       "fullDescription": "A Health Savings Account (HSA) offers a triple tax advantage: contributions are tax-deductible, growth is tax-free, and withdrawals for qualified medical expenses are tax-free. Many investors use HSAs as stealth retirement accounts by paying current medical expenses out-of-pocket and letting the HSA grow.",
-      "keywords": ["hsa strategy", "health savings account", "hsa investing", "hsa retirement strategy"],
-      "benefitsFor": ["High-deductible health plan holders", "Long-term savers", "Early retirees", "Tax-conscious investors"],
+      "keywords": [
+        "hsa strategy",
+        "health savings account",
+        "hsa investing",
+        "hsa retirement strategy"
+      ],
+      "benefitsFor": [
+        "High-deductible health plan holders",
+        "Long-term savers",
+        "Early retirees",
+        "Tax-conscious investors"
+      ],
       "potentialSavings": "Triple tax benefit with annual contribution limits",
       "minimumPropertyValue": "No minimum",
       "bestFor": "Healthy individuals with high-deductible health plans",
@@ -254,7 +376,11 @@
       "professionalRequired": false,
       "typicalCost": "Free with most providers",
       "irsReference": "IRC Section 223",
-      "relatedStrategies": ["solo-401k", "roth-conversion", "tax-loss-harvesting"],
+      "relatedStrategies": [
+        "solo-401k",
+        "roth-conversion",
+        "tax-loss-harvesting"
+      ],
       "faqs": [
         {
           "question": "What is the triple tax advantage of an HSA?",
@@ -275,8 +401,18 @@
       "title": "Augusta Rule (Section 280A)",
       "shortDescription": "Rent your home to your business tax-free for up to 14 days",
       "fullDescription": "The Augusta Rule allows homeowners to rent their home for up to 14 days per year without reporting the rental income. Business owners can leverage this by having their business rent their personal residence for meetings, retreats, or events at fair market rates.",
-      "keywords": ["augusta rule", "section 280a", "rent home to business", "14 day rental rule"],
-      "benefitsFor": ["Business owners", "S-Corp owners", "LLC members", "Home-based businesses"],
+      "keywords": [
+        "augusta rule",
+        "section 280a",
+        "rent home to business",
+        "14 day rental rule"
+      ],
+      "benefitsFor": [
+        "Business owners",
+        "S-Corp owners",
+        "LLC members",
+        "Home-based businesses"
+      ],
       "potentialSavings": "$5,000 - $30,000 tax-free income",
       "minimumPropertyValue": "No minimum",
       "bestFor": "Business owners who can legitimately use their home for business purposes",
@@ -284,7 +420,11 @@
       "professionalRequired": true,
       "typicalCost": "May need appraisal for fair market rent ($200-500)",
       "irsReference": "IRC Section 280A(g)",
-      "relatedStrategies": ["home-office-deduction", "s-corp-strategy", "reasonable-salary"],
+      "relatedStrategies": [
+        "home-office-deduction",
+        "s-corp-strategy",
+        "reasonable-salary"
+      ],
       "faqs": [
         {
           "question": "What is the Augusta Rule?",
@@ -305,8 +445,18 @@
       "title": "S-Corp Tax Strategy",
       "shortDescription": "Save 15.3% self-employment tax by splitting income into salary and distributions",
       "fullDescription": "An S-Corporation election allows business owners to split their income between a reasonable salary (subject to payroll taxes) and distributions (not subject to self-employment tax). This can result in significant savings on the 15.3% self-employment tax.",
-      "keywords": ["s corp strategy", "s corporation tax savings", "reasonable salary s corp", "self employment tax savings"],
-      "benefitsFor": ["Self-employed individuals", "Freelancers", "Consultants", "Business owners"],
+      "keywords": [
+        "s corp strategy",
+        "s corporation tax savings",
+        "reasonable salary s corp",
+        "self employment tax savings"
+      ],
+      "benefitsFor": [
+        "Self-employed individuals",
+        "Freelancers",
+        "Consultants",
+        "Business owners"
+      ],
       "potentialSavings": "10-15% of business income",
       "minimumPropertyValue": "Generally profitable businesses over $50K",
       "bestFor": "Self-employed individuals earning $50K+ in profit",
@@ -314,7 +464,11 @@
       "professionalRequired": true,
       "typicalCost": "$500 - $2,000/year for payroll and additional tax prep",
       "irsReference": "IRC Subchapter S",
-      "relatedStrategies": ["solo-401k", "augusta-rule", "reasonable-salary"],
+      "relatedStrategies": [
+        "solo-401k",
+        "augusta-rule",
+        "reasonable-salary"
+      ],
       "faqs": [
         {
           "question": "How much can I save with an S-Corp?",
@@ -335,8 +489,18 @@
       "title": "Opportunity Zone Investing",
       "shortDescription": "Defer and reduce capital gains by investing in designated communities",
       "fullDescription": "Qualified Opportunity Zones allow investors to defer capital gains taxes by reinvesting gains into designated low-income communities. Hold for 10+ years and pay zero tax on appreciation of the Opportunity Zone investment itself.",
-      "keywords": ["opportunity zones", "qualified opportunity zone", "qoz investing", "capital gains deferral"],
-      "benefitsFor": ["Investors with capital gains", "Real estate developers", "Business investors", "Stock sellers"],
+      "keywords": [
+        "opportunity zones",
+        "qualified opportunity zone",
+        "qoz investing",
+        "capital gains deferral"
+      ],
+      "benefitsFor": [
+        "Investors with capital gains",
+        "Real estate developers",
+        "Business investors",
+        "Stock sellers"
+      ],
       "potentialSavings": "100% exclusion on OZ gains after 10 years",
       "minimumPropertyValue": "No minimum",
       "bestFor": "Long-term investors with significant capital gains to reinvest",
@@ -344,7 +508,11 @@
       "professionalRequired": true,
       "typicalCost": "Fund fees vary; direct investment requires significant capital",
       "irsReference": "IRC Section 1400Z",
-      "relatedStrategies": ["1031-exchange", "installment-sales", "cost-segregation"],
+      "relatedStrategies": [
+        "1031-exchange",
+        "installment-sales",
+        "cost-segregation"
+      ],
       "faqs": [
         {
           "question": "How do Opportunity Zones work?",
@@ -366,37 +534,386 @@
       "slug": "w2-employees",
       "title": "W-2 Employees",
       "description": "Tax strategies for salaried workers looking to reduce their tax burden",
-      "topStrategies": ["short-term-rental-loophole", "hsa-strategy", "solo-401k", "cost-segregation"]
+      "topStrategies": [
+        "short-term-rental-loophole",
+        "hsa-strategy",
+        "solo-401k",
+        "cost-segregation"
+      ],
+      "linkLabel": "W-2 employees"
     },
     {
       "slug": "self-employed",
       "title": "Self-Employed & Freelancers",
       "description": "Maximize deductions and retirement savings for independent workers",
-      "topStrategies": ["s-corp-strategy", "solo-401k", "section-179", "home-office-deduction"]
+      "topStrategies": [
+        "s-corp-strategy",
+        "solo-401k",
+        "section-179",
+        "home-office-deduction"
+      ],
+      "linkLabel": "Self-employed and freelancers"
     },
     {
       "slug": "real-estate-investors",
       "title": "Real Estate Investors",
       "description": "Advanced strategies for rental property owners and flippers",
-      "topStrategies": ["cost-segregation", "1031-exchange", "real-estate-professional-status", "bonus-depreciation"]
+      "topStrategies": [
+        "cost-segregation",
+        "1031-exchange",
+        "real-estate-professional-status",
+        "bonus-depreciation"
+      ],
+      "linkLabel": "Real estate investors"
     },
     {
       "slug": "airbnb-hosts",
       "title": "Airbnb & STR Hosts",
       "description": "Specific tax benefits for short-term rental operators",
-      "topStrategies": ["short-term-rental-loophole", "cost-segregation", "bonus-depreciation", "section-179"]
+      "topStrategies": [
+        "short-term-rental-loophole",
+        "cost-segregation",
+        "bonus-depreciation",
+        "section-179"
+      ],
+      "linkLabel": "Airbnb and short-term rental hosts"
     },
     {
       "slug": "high-income-earners",
       "title": "High-Income Earners",
       "description": "Strategies for those in the highest tax brackets",
-      "topStrategies": ["real-estate-professional-status", "opportunity-zones", "cost-segregation", "mega-backdoor-roth"]
+      "topStrategies": [
+        "real-estate-professional-status",
+        "opportunity-zones",
+        "cost-segregation",
+        "mega-backdoor-roth"
+      ],
+      "linkLabel": "High-income earners"
     },
     {
       "slug": "business-owners",
       "title": "Business Owners",
       "description": "Tax optimization for entrepreneurs and company owners",
-      "topStrategies": ["s-corp-strategy", "augusta-rule", "section-179", "solo-401k"]
+      "topStrategies": [
+        "s-corp-strategy",
+        "augusta-rule",
+        "section-179",
+        "solo-401k"
+      ],
+      "linkLabel": "Business owners"
+    }
+  ],
+  "catalog": [
+    {
+      "slug": "cost-segregation",
+      "title": "Cost segregation",
+      "category": "real-estate",
+      "level": "advanced",
+      "summary": "Reclassifies building components into shorter depreciation lives so deductions land in the early years."
+    },
+    {
+      "slug": "bonus-depreciation",
+      "title": "Bonus depreciation",
+      "category": "real-estate",
+      "level": "intermediate",
+      "summary": "Deducts a large share of qualifying property costs in the first year instead of over its useful life."
+    },
+    {
+      "slug": "rental-property-depreciation",
+      "title": "Rental property depreciation",
+      "category": "real-estate",
+      "level": "beginner",
+      "summary": "Deducts a rental building over 27.5 years and tracks the basis that matters at sale."
+    },
+    {
+      "slug": "real-estate-professional-status",
+      "title": "Real estate professional status",
+      "category": "real-estate",
+      "level": "advanced",
+      "summary": "Removes the passive loss limit so rental losses can offset ordinary income."
+    },
+    {
+      "slug": "short-term-rental-loophole",
+      "title": "Short-term rental loophole",
+      "category": "real-estate",
+      "level": "intermediate",
+      "summary": "Deducts short-term rental losses against W-2 income when average stays are seven days or less and you materially participate."
+    },
+    {
+      "slug": "1031-exchange",
+      "title": "1031 exchange",
+      "category": "real-estate",
+      "level": "advanced",
+      "summary": "Defers capital gains tax when sale proceeds are reinvested in like-kind property."
+    },
+    {
+      "slug": "installment-sale",
+      "title": "Installment sale",
+      "category": "real-estate",
+      "level": "intermediate",
+      "summary": "Spreads the gain on a sale across the years the payments are actually received."
+    },
+    {
+      "slug": "opportunity-zones",
+      "title": "Opportunity zone investing",
+      "category": "real-estate",
+      "level": "advanced",
+      "summary": "Defers and reduces capital gains reinvested in designated communities."
+    },
+    {
+      "slug": "qualified-opportunity-zone-fund",
+      "title": "Qualified opportunity zone funds",
+      "category": "real-estate",
+      "level": "advanced",
+      "summary": "Holds opportunity zone investments through a fund that has to meet asset and improvement tests."
+    },
+    {
+      "slug": "capital-gains-exclusion",
+      "title": "Primary residence gain exclusion",
+      "category": "real-estate",
+      "level": "beginner",
+      "summary": "Excludes up to $250,000 of gain, or $500,000 filing jointly, on the sale of a main home under Section 121."
+    },
+    {
+      "slug": "s-corp-strategy",
+      "title": "S-corp election",
+      "category": "business",
+      "level": "intermediate",
+      "summary": "Splits owner pay between salary and distributions to cut self-employment tax."
+    },
+    {
+      "slug": "qualified-business-income-deduction",
+      "title": "Qualified business income deduction",
+      "category": "business",
+      "level": "intermediate",
+      "summary": "Deducts up to 20% of qualified pass-through business income."
+    },
+    {
+      "slug": "section-179",
+      "title": "Section 179 expensing",
+      "category": "business",
+      "level": "beginner",
+      "summary": "Expenses qualifying equipment in the year it is placed in service instead of depreciating it."
+    },
+    {
+      "slug": "business-vehicle-deduction",
+      "title": "Business vehicle deduction",
+      "category": "business",
+      "level": "intermediate",
+      "summary": "Deducts vehicle costs through Section 179, standard mileage, or the actual expense method."
+    },
+    {
+      "slug": "home-office-deduction",
+      "title": "Home office deduction",
+      "category": "business",
+      "level": "beginner",
+      "summary": "Deducts the business-use share of your home under the simplified or actual expense method."
+    },
+    {
+      "slug": "augusta-rule",
+      "title": "Augusta rule",
+      "category": "business",
+      "level": "intermediate",
+      "summary": "Rents your home to your business for up to 14 days a year without reporting the rent as income."
+    },
+    {
+      "slug": "family-employment-tax-strategy",
+      "title": "Hiring your children",
+      "category": "business",
+      "level": "intermediate",
+      "summary": "Puts family members on payroll for real work, moving income into a lower bracket."
+    },
+    {
+      "slug": "pass-through-entity-tax",
+      "title": "Pass-through entity tax",
+      "category": "business",
+      "level": "intermediate",
+      "summary": "Pays state tax at the entity level so the deduction survives the federal SALT cap."
+    },
+    {
+      "slug": "captive-insurance",
+      "title": "Captive insurance",
+      "category": "business",
+      "level": "advanced",
+      "summary": "Forms a licensed insurance company to cover real business risks and deduct the premiums."
+    },
+    {
+      "slug": "solo-401k",
+      "title": "Solo 401(k)",
+      "category": "accounts",
+      "level": "intermediate",
+      "summary": "Combines employee deferrals and employer contributions for an owner-only business."
+    },
+    {
+      "slug": "hsa-strategy",
+      "title": "Health savings account",
+      "category": "accounts",
+      "level": "beginner",
+      "summary": "Contributions, growth, and qualified medical withdrawals all escape tax."
+    },
+    {
+      "slug": "dependent-care-fsa",
+      "title": "Dependent care FSA",
+      "category": "accounts",
+      "level": "beginner",
+      "summary": "Pays childcare and dependent care costs with pre-tax payroll dollars."
+    },
+    {
+      "slug": "backdoor-roth-ira",
+      "title": "Backdoor Roth IRA",
+      "category": "accounts",
+      "level": "intermediate",
+      "summary": "Reaches a Roth IRA through a non-deductible contribution and conversion when income exceeds the Roth limits."
+    },
+    {
+      "slug": "mega-backdoor-roth",
+      "title": "Mega backdoor Roth",
+      "category": "accounts",
+      "level": "advanced",
+      "summary": "Uses after-tax 401(k) contributions and in-plan conversion to add Roth dollars above the deferral limit."
+    },
+    {
+      "slug": "roth-conversion-ladder",
+      "title": "Roth conversion ladder",
+      "category": "accounts",
+      "level": "intermediate",
+      "summary": "Converts traditional balances in planned yearly slices to control the bracket and open penalty-free access."
+    },
+    {
+      "slug": "self-directed-ira",
+      "title": "Self-directed IRA",
+      "category": "accounts",
+      "level": "advanced",
+      "summary": "Holds real estate, private companies, and other alternative assets inside a retirement account."
+    },
+    {
+      "slug": "net-unrealized-appreciation",
+      "title": "Net unrealized appreciation",
+      "category": "accounts",
+      "level": "advanced",
+      "summary": "Moves employer stock out of a 401(k) so the appreciation is taxed at capital gains rates."
+    },
+    {
+      "slug": "tax-loss-harvesting",
+      "title": "Tax loss harvesting",
+      "category": "investments",
+      "level": "beginner",
+      "summary": "Sells losing positions to offset realized gains while respecting the wash-sale rule."
+    },
+    {
+      "slug": "tax-gain-harvesting",
+      "title": "Tax gain harvesting",
+      "category": "investments",
+      "level": "intermediate",
+      "summary": "Realizes gains deliberately in a low-income year to reset basis at the 0% or 15% rate."
+    },
+    {
+      "slug": "qualified-small-business-stock",
+      "title": "Qualified small business stock",
+      "category": "investments",
+      "level": "advanced",
+      "summary": "Excludes gain on qualifying C corporation stock held five years under Section 1202."
+    },
+    {
+      "slug": "donor-advised-fund",
+      "title": "Donor-advised fund",
+      "category": "giving",
+      "level": "intermediate",
+      "summary": "Takes the charitable deduction in the year the account is funded and grants the money out later."
+    },
+    {
+      "slug": "charitable-remainder-trust",
+      "title": "Charitable remainder trust",
+      "category": "giving",
+      "level": "advanced",
+      "summary": "Converts an appreciated asset into lifetime income with a current deduction and deferred gain."
+    },
+    {
+      "slug": "bunching-deductions",
+      "title": "Bunching deductions",
+      "category": "timing",
+      "level": "beginner",
+      "summary": "Concentrates two years of charitable gifts and other itemized deductions into one year to clear the standard deduction."
+    },
+    {
+      "slug": "estimated-tax-payments",
+      "title": "Estimated tax payments",
+      "category": "timing",
+      "level": "beginner",
+      "summary": "Times quarterly payments and safe-harbor amounts so you avoid underpayment penalties."
+    },
+    {
+      "slug": "income-shifting-strategies",
+      "title": "Income shifting",
+      "category": "timing",
+      "level": "intermediate",
+      "summary": "Moves income to family members or entities taxed at lower rates."
+    },
+    {
+      "slug": "state-tax-residency",
+      "title": "State tax residency",
+      "category": "timing",
+      "level": "advanced",
+      "summary": "Establishes domicile and day-count evidence before changing the state that taxes your income."
+    }
+  ],
+  "categories": [
+    {
+      "id": "real-estate",
+      "title": "Real estate",
+      "lead": "Depreciation, deferral, and the participation tests that decide whether a rental loss is usable this year."
+    },
+    {
+      "id": "business",
+      "title": "Business and entity",
+      "lead": "Entity choice, owner compensation, equipment, and the deductions that only exist once there is a business."
+    },
+    {
+      "id": "accounts",
+      "title": "Retirement and benefit accounts",
+      "lead": "Contribution ceilings, conversions, and the accounts that shelter growth rather than a single year of income."
+    },
+    {
+      "id": "investments",
+      "title": "Investments and capital gains",
+      "lead": "Timing realized gains and losses in a taxable brokerage account."
+    },
+    {
+      "id": "giving",
+      "title": "Charitable giving",
+      "lead": "Two structures that separate the year of the deduction from the year the money reaches a charity."
+    },
+    {
+      "id": "timing",
+      "title": "Timing, residency, and family",
+      "lead": "Moves that change when income is taxed, where it is taxed, or who reports it."
+    }
+  ],
+  "retirementGuides": [
+    {
+      "slug": "traditional-vs-roth-401k",
+      "title": "Traditional vs Roth 401(k)",
+      "summary": "Which contribution type fits your current and expected bracket."
+    },
+    {
+      "slug": "401k-contribution-strategies",
+      "title": "401(k) contribution strategies",
+      "summary": "Capturing the full employer match, catch-up contributions, and deferral order."
+    },
+    {
+      "slug": "sep-ira-guide",
+      "title": "SEP IRA",
+      "summary": "A high-ceiling, low-paperwork plan for self-employed income."
+    },
+    {
+      "slug": "simple-ira-guide",
+      "title": "SIMPLE IRA",
+      "summary": "A small-business plan with mandatory employer contributions and lighter administration."
+    },
+    {
+      "slug": "defined-benefit-plan",
+      "title": "Defined benefit plan",
+      "summary": "The largest deductible contributions available to a stable, high-income owner."
     }
   ]
 }

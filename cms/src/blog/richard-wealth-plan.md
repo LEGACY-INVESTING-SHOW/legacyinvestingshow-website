@@ -1,7 +1,7 @@
 ---
 title: "Richard's Wealth Plan: Wealth Preservation and Legacy Transfer Strategy"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Richard's personalized wealth strategy focusing on wealth preservation, estate planning, tax-efficient legacy transfer, and multi-generational wealth protection for established wealth holders."
+description: "Richard's personalized wealth strategy focusing on wealth preservation, estate planning, tax-efficient legacy transfer, and multi-generational wealth protection for established wealth holders."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

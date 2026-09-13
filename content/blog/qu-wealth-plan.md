@@ -1,7 +1,7 @@
 ---
 title: "Qu's Wealth Plan: Seattle High-Net-Worth Optimization Strategy"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Qu's comprehensive wealth strategy for optimizing $300K+ income, managing $2.3M real estate equity, and building tax-efficient wealth in Seattle's high-cost environment."
+description: "Qu's wealth strategy for optimizing $300K+ income, managing $2.3M real estate equity, and building tax-efficient wealth in Seattle's high-cost environment."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

@@ -1,142 +1,70 @@
 #!/usr/bin/env node
 
 /**
- * Blog Build Script for Legacy Investing Show
+ * Blog build for Legacy Investing Show.
  *
- * This script:
- * 1. Reads markdown files from content/blog/
- * 2. Parses frontmatter with gray-matter
- * 3. Converts markdown to HTML with marked
- * 4. Applies the blog post template
- * 5. Generates individual blog post HTML files to blog/
- * 6. Generates a blog index page
+ * Writes:
+ *   blog/<slug>.html        one page per markdown post (templates/blog-post.html)
+ *   blog/index.html         page 1 of the index
+ *   blog/page/<n>.html      pages 2..N of the index (24 posts per page)
+ *   blog/category/<s>.html  one archive per category
+ *
+ * The post DOM comes from scripts/lib/blog-render.js, which the Eleventy layout
+ * also uses, so the two renderers cannot drift. Eleventy output overwrites
+ * blog/<slug>.html later in the build chain (npm run cms:publish:posts).
  */
 
 const fs = require('fs');
 const path = require('path');
-const matter = require('gray-matter');
 const { marked } = require('marked');
 const {
     CURRENT_YEAR,
     renderAnalyticsBody,
     renderAnalyticsHead,
-    renderFooterLinks,
-    renderPrimaryNavLinks,
-    renderSourceBlock,
+    renderHeadAssets,
+    renderSiteFooter,
+    renderSiteHeader,
 } = require('./lib/site-shell');
+const blogRender = require('./lib/blog-render');
 
-// Configure marked for better output
-marked.setOptions({
-    gfm: true,
-    breaks: true,
-    headerIds: true,
-    mangle: false
-});
+const {
+    POSTS_PER_PAGE,
+    SITE_DOMAIN,
+    esc,
+    formatDate,
+    formatISODate,
+    getBlogIndexation,
+    isIndexableBlogPost,
+    loadAllPosts,
+    normalizeCategoryForArchives,
+    normalizeReadTime,
+    renderArticleBody,
+    resolveHero,
+    slugifyCategory,
+} = blogRender;
 
-// Paths
+marked.setOptions({ gfm: true, breaks: true, mangle: false });
+
 const ROOT_DIR = path.join(__dirname, '..');
-const CONTENT_DIR = path.join(ROOT_DIR, 'content', 'blog');
 const OUTPUT_DIR = path.join(ROOT_DIR, 'blog');
+const PAGE_DIR = path.join(OUTPUT_DIR, 'page');
 const TEMPLATE_PATH = path.join(ROOT_DIR, 'templates', 'blog-post.html');
-const INDEXATION_POLICY_PATH = path.join(ROOT_DIR, 'data', 'indexation-policy.json');
-const SITE_DOMAIN = 'https://www.legacyinvestingshow.com';
 const GA_TRACKING_ID = process.env.GA_TRACKING_ID || 'G-2578PT1WSS';
 const GTM_CONTAINER_ID = process.env.GTM_CONTAINER_ID || 'GTM-KQ4R2LKP';
 const GOOGLE_SITE_VERIFICATIONS = [
     'Kec6RfGhFL-qG_8zKxCqt7yxjgy65WeDAftCBm90G2s',
-    '92MoCnkdQOj_ey1lEafT5Mz-znCcCQ3UABZlI-JG_nM'
+    '92MoCnkdQOj_ey1lEafT5Mz-znCcCQ3UABZlI-JG_nM',
 ];
 
-function loadIndexationPolicy() {
-    if (!fs.existsSync(INDEXATION_POLICY_PATH)) {
-        return {
-            blogCategoryArchivesRobots: 'noindex, follow',
-            blogRedirects: [],
-            forceIndexBlogSlugs: [],
-            noindexBlogSlugPatterns: [],
-        };
-    }
+const BLOG_DESCRIPTION =
+    'Tax strategy, real estate, retirement, and business-structure guides, plus case studies from operators who ran them.';
 
-    try {
-        return JSON.parse(fs.readFileSync(INDEXATION_POLICY_PATH, 'utf8'));
-    } catch (error) {
-        console.error(`Error reading ${INDEXATION_POLICY_PATH}: ${error.message}`);
-        process.exit(1);
+function ensureDir(dirPath) {
+    if (!fs.existsSync(dirPath)) {
+        fs.mkdirSync(dirPath, { recursive: true });
     }
 }
 
-const INDEXATION_POLICY = loadIndexationPolicy();
-const FORCE_INDEX_BLOG_SLUGS = new Set(INDEXATION_POLICY.forceIndexBlogSlugs || []);
-const BLOG_REDIRECTS = new Map(
-    (INDEXATION_POLICY.blogRedirects || [])
-        .filter(entry => entry.source && entry.destination)
-        .map(entry => [entry.source.replace(/^\/blog\//, ''), entry])
-);
-const NOINDEX_BLOG_PATTERNS = (INDEXATION_POLICY.noindexBlogSlugPatterns || []).map(entry => ({
-    regex: new RegExp(entry.pattern),
-    reason: entry.reason || 'Matched indexation policy',
-}));
-
-function getBlogIndexation(post) {
-    const explicitRobots = post.frontmatter.robots || post.frontmatter.metaRobots;
-    const redirect = BLOG_REDIRECTS.get(post.slug);
-    const canonicalUrl = redirect
-        ? `${SITE_DOMAIN}${redirect.destination}`
-        : `${SITE_DOMAIN}/blog/${post.slug}`;
-
-    if (redirect) {
-        return {
-            robots: 'noindex, follow',
-            canonicalUrl,
-            reason: redirect.reason || 'Redirected duplicate',
-        };
-    }
-
-    if (explicitRobots) {
-        return {
-            robots: explicitRobots,
-            canonicalUrl,
-            reason: 'Frontmatter robots override',
-        };
-    }
-
-    if (FORCE_INDEX_BLOG_SLUGS.has(post.slug)) {
-        return {
-            robots: 'index, follow',
-            canonicalUrl,
-            reason: 'Force-indexed in indexation policy',
-        };
-    }
-
-    const matchedPattern = NOINDEX_BLOG_PATTERNS.find(entry => entry.regex.test(post.slug));
-    if (matchedPattern) {
-        return {
-            robots: 'noindex, follow',
-            canonicalUrl,
-            reason: matchedPattern.reason,
-        };
-    }
-
-    return {
-        robots: 'index, follow',
-        canonicalUrl,
-        reason: 'Default indexable blog URL',
-    };
-}
-
-/**
- * Calculate read time based on word count
- * Average reading speed: 200 words per minute
- */
-function calculateReadTime(content) {
-    const words = content.trim().split(/\s+/).length;
-    const readTime = Math.ceil(words / 200);
-    return Math.max(1, readTime); // Minimum 1 minute
-}
-
-/**
- * Build a branded <title> string for generated blog pages.
- */
 function buildSEOTitle(rawTitle) {
     const title = (rawTitle || 'Legacy Investing Show')
         .replace(/\s+/g, ' ')
@@ -146,737 +74,374 @@ function buildSEOTitle(rawTitle) {
     return title.endsWith(suffix) ? title : `${title}${suffix}`;
 }
 
-/**
- * Generate slug from filename
- */
-function generateSlug(filename) {
-    return filename.replace(/\.md$/, '');
-}
-
-/**
- * Format date for display
- */
-function formatDate(date) {
-    const options = { year: 'numeric', month: 'long', day: 'numeric' };
-    return new Date(date).toLocaleDateString('en-US', options);
-}
-
-/**
- * Format date as ISO string for schema markup
- */
-function formatISODate(date) {
-    return new Date(date).toISOString();
-}
-
-/**
- * Ensure directory exists
- */
-function ensureDir(dirPath) {
-    if (!fs.existsSync(dirPath)) {
-        fs.mkdirSync(dirPath, { recursive: true });
-        console.log(`Created directory: ${dirPath}`);
-    }
-}
-
-/**
- * Read all markdown files from content directory
- */
-function getMarkdownFiles() {
-    ensureDir(CONTENT_DIR);
-
-    try {
-        const files = fs.readdirSync(CONTENT_DIR);
-        return files.filter(file => file.endsWith('.md'));
-    } catch (error) {
-        console.error(`Error reading content directory: ${error.message}`);
-        return [];
-    }
-}
-
-/**
- * NOTE: Previous version had logic to preserve existing HTML files.
- * This has been removed since all posts now have markdown sources.
- * The build script now always builds from markdown, overwriting HTML files.
- */
-
-/**
- * Parse a markdown file and extract frontmatter and content
- */
-function parseMarkdownFile(filename) {
-    const filePath = path.join(CONTENT_DIR, filename);
-
-    try {
-        const fileContent = fs.readFileSync(filePath, 'utf-8');
-        const { data, content } = matter(fileContent);
-
-        // Validate required frontmatter fields
-        const required = ['title', 'description', 'date', 'author', 'category'];
-        const missing = required.filter(field => !data[field]);
-
-        if (missing.length > 0) {
-            console.warn(`Warning: ${filename} is missing required fields: ${missing.join(', ')}`);
-        }
-
-        return {
-            frontmatter: data,
-            content: content,
-            slug: generateSlug(filename),
-            filename: filename
-        };
-    } catch (error) {
-        console.error(`Error parsing ${filename}: ${error.message}`);
-        return null;
-    }
-}
-
-/**
- * Generate slug from heading text for anchor links
- */
-function slugifyHeading(text) {
-    return text
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, '-')
-        .replace(/(^-|-$)/g, '');
-}
-
-/**
- * Generate Table of Contents from HTML content
- * Only generates TOC for articles > 1500 words with at least 3 headings
- */
-function generateTOC(htmlContent, wordCount) {
-    if (wordCount < 1500) return { toc: '', content: htmlContent };
-
-    const headingRegex = /<h([23])>([^<]+)<\/h[23]>/gi;
-    const headings = [];
-    let match;
-
-    while ((match = headingRegex.exec(htmlContent)) !== null) {
-        headings.push({
-            level: parseInt(match[1]),
-            text: match[2],
-            slug: slugifyHeading(match[2])
-        });
-    }
-
-    if (headings.length < 3) return { toc: '', content: htmlContent };
-
-    // Add IDs to headings in content
-    let modifiedContent = htmlContent;
-    headings.forEach(heading => {
-        const regex = new RegExp(`<h${heading.level}>${heading.text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}<\\/h${heading.level}>`, 'i');
-        modifiedContent = modifiedContent.replace(
-            regex,
-            `<h${heading.level} id="${heading.slug}">${heading.text}</h${heading.level}>`
-        );
-    });
-
-    // Generate TOC HTML
-    const tocItems = headings.map(h => {
-        const indent = h.level === 3 ? ' toc__item--h3' : '';
-        return `<li class="toc__item${indent}"><a href="#${h.slug}" class="toc__link">${h.text}</a></li>`;
-    }).join('\n                ');
-
-    const tocHtml = `
-        <nav class="toc" aria-label="Table of contents">
-            <p class="toc__title">Contents</p>
-            <ul class="toc__list">
-                ${tocItems}
-            </ul>
-        </nav>`;
-
-    return { toc: tocHtml, content: modifiedContent };
-}
-
-/**
- * Convert markdown content to HTML
- */
-function markdownToHTML(content) {
-    return marked(content);
-}
-
-/**
- * Extract keywords from content (simple extraction based on category and common terms)
- */
-function extractKeywords(content, category) {
-    const baseKeywords = ['investing', 'wealth building', 'financial freedom'];
-    const categoryKeywords = {
-        'Airbnb Arbitrage': ['airbnb', 'arbitrage', 'short-term rental', 'passive income', 'rental property'],
-        'Real Estate': ['real estate', 'property investment', 'rental income', 'property management'],
-        'Investing': ['investment strategy', 'portfolio', 'returns', 'cash flow'],
-        'Wealth Plan': ['wealth plan', 'personalized strategy', 'tax optimization', 'financial planning', 'retirement strategy', 'wealth building strategy']
-    };
-
-    const keywords = [...baseKeywords, ...(categoryKeywords[category] || [])];
-    return keywords.join(', ');
-}
-
-/**
- * Icon SVGs for statistics cards
- */
-const STAT_ICONS = {
-    dollar: `<svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>`,
-    home: `<svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>`,
-    chart: `<svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>`,
-    clock: `<svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>`,
-    percent: `<svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="5" x2="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg>`,
-    location: `<svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>`,
-    users: `<svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
-    star: `<svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`,
-    default: `<svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>`
+const DEFAULT_KEYWORDS = ['wealth building', 'investing', 'financial freedom'];
+const CATEGORY_KEYWORDS = {
+    'Airbnb Arbitrage': ['airbnb', 'arbitrage', 'short-term rental', 'passive income', 'rental property'],
+    'Real Estate': ['real estate', 'property investment', 'rental income', 'property management'],
+    'Tax Strategies': ['tax strategy', 'tax planning', 'tax savings', 'irs rules'],
+    Investing: ['investment strategy', 'portfolio', 'returns', 'cash flow'],
 };
 
-/**
- * Generate statistics HTML cards from frontmatter
- */
-function generateStatisticsHTML(statistics) {
-    if (!statistics || !Array.isArray(statistics) || statistics.length === 0) {
-        return '';
+/** Mirrors cms/src/blog/blog.11tydata.js so both renderers emit the same keywords. */
+function buildKeywords(frontmatter) {
+    if (typeof frontmatter.keywords === 'string' && frontmatter.keywords.trim()) {
+        return frontmatter.keywords.trim();
     }
-
-    const statsCards = statistics.map((stat, index) => {
-        const icon = STAT_ICONS[stat.icon] || STAT_ICONS.default;
-        const context = stat.context ? `<span class="stat-context">${stat.context}</span>` : '';
-        const source = stat.source ? `<span class="stat-source">${stat.source}</span>` : '';
-
-        return `
-            <div class="stat-card" data-stat-index="${index}">
-                <div class="stat-icon-wrapper">
-                    ${icon}
-                </div>
-                <div class="stat-value">${stat.value}</div>
-                <div class="stat-label">${stat.label}</div>
-                ${context}
-                ${source}
-            </div>`;
-    }).join('\n');
-
-    return `
-        <section class="statistics-section" aria-label="Key statistics">
-            <div class="statistics-grid">
-                ${statsCards}
-            </div>
-        </section>`;
+    if (Array.isArray(frontmatter.keywords)) {
+        const values = frontmatter.keywords.map((v) => String(v || '').trim()).filter(Boolean);
+        if (values.length) return values.join(', ');
+    }
+    if (frontmatter.seo && typeof frontmatter.seo === 'object') {
+        const values = [];
+        if (frontmatter.seo.primaryKeyword) values.push(frontmatter.seo.primaryKeyword);
+        if (Array.isArray(frontmatter.seo.secondaryKeywords)) values.push(...frontmatter.seo.secondaryKeywords);
+        if (Array.isArray(frontmatter.seo.longTailKeywords)) values.push(...frontmatter.seo.longTailKeywords.slice(0, 4));
+        if (values.length) return values.join(', ');
+    }
+    if (Array.isArray(frontmatter.tags)) {
+        const values = frontmatter.tags
+            .map((v) => String(v || '').trim())
+            .filter(Boolean)
+            .filter((v) => v.toLowerCase() !== 'blog');
+        if (values.length) return values.join(', ');
+    }
+    const category = frontmatter.category || '';
+    const combined = [category, ...(CATEGORY_KEYWORDS[category] || []), ...DEFAULT_KEYWORDS]
+        .filter(Boolean)
+        .map((v) => String(v).trim())
+        .filter(Boolean);
+    return [...new Set(combined)].join(', ');
 }
 
-/**
- * Generate FAQ HTML with expandable accordions
- */
-function generateFAQHTML(faq) {
-    if (!faq || !Array.isArray(faq) || faq.length === 0) {
-        return '';
-    }
-
-    const faqItems = faq.map((item, index) => {
-        const isFirst = index === 0;
-        return `
-            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                <button class="faq-question" aria-expanded="${isFirst ? 'true' : 'false'}" aria-controls="faq-answer-${index}">
-                    <span itemprop="name">${item.question}</span>
-                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="6 9 12 15 18 9"/>
-                    </svg>
-                </button>
-                <div class="faq-answer ${isFirst ? 'faq-answer--open' : ''}" id="faq-answer-${index}" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                    <div itemprop="text">
-                        <p>${item.answer}</p>
-                    </div>
-                </div>
-            </div>`;
-    }).join('\n');
-
-    return `
-        <section class="faq-section" aria-label="Frequently asked questions">
-            <h2 class="faq-title">Frequently Asked Questions</h2>
-            <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
-                ${faqItems}
-            </div>
-        </section>
-        <script>
-            document.querySelectorAll('.faq-question').forEach(button => {
-                button.addEventListener('click', () => {
-                    const expanded = button.getAttribute('aria-expanded') === 'true';
-                    button.setAttribute('aria-expanded', !expanded);
-                    button.nextElementSibling.classList.toggle('faq-answer--open');
-                });
-            });
-        </script>`;
-}
-
-/**
- * Generate FAQPage JSON-LD schema
- */
 function generateFAQSchema(faq) {
-    if (!faq || !Array.isArray(faq) || faq.length === 0) {
-        return '';
-    }
-
-    const faqEntries = faq.map(item => ({
-        "@type": "Question",
-        "name": item.question,
-        "acceptedAnswer": {
-            "@type": "Answer",
-            "text": item.answer
-        }
-    }));
-
-    const schema = {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": faqEntries
-    };
-
+    if (!Array.isArray(faq) || faq.length === 0) return '';
+    const entries = faq
+        .filter((item) => item && item.question && item.answer)
+        .map((item) => ({
+            '@type': 'Question',
+            name: item.question,
+            acceptedAnswer: { '@type': 'Answer', text: item.answer },
+        }));
+    if (entries.length === 0) return '';
     return `<script type="application/ld+json">
-    ${JSON.stringify(schema, null, 4)}
+    ${JSON.stringify({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: entries }, null, 4)}
     </script>`;
 }
 
 /**
- * Apply template to post data
+ * Apply templates/blog-post.html. The article markup itself comes from
+ * blog-render so this path and the Eleventy layout stay byte-comparable.
  */
-function applyTemplate(template, post, allPosts = []) {
-    const rawHtmlContent = markdownToHTML(post.content);
-    const readTime = calculateReadTime(post.content);
-    const wordCount = post.content.trim().split(/\s+/).length;
-
-    // Generate TOC for longer articles
-    const { toc, content: htmlContent } = generateTOC(rawHtmlContent, wordCount);
-
-    // Set default values for optional fields
-    const rawImage = post.frontmatter.image || '/assets/images/og-blog.jpg';
-    // For local images, prepend domain for OG/twitter; for external URLs, use as-is
-    const ogImage = rawImage.startsWith('http') 
-        ? rawImage 
-        : SITE_DOMAIN + rawImage;
-    // Use rawImage for content display (relative paths work fine)
-    const image = rawImage;
-    const imageAlt = post.frontmatter.imageAlt || post.frontmatter.title || 'Legacy Investing Show article image';
-    // Generate WebP version path
-    const imageWebp = rawImage.startsWith('http') 
-        ? rawImage.replace(/\.(jpg|jpeg|png)$/i, '.webp') 
-        : rawImage.replace(/\.(jpg|jpeg|png)$/i, '.webp');
-    const author = post.frontmatter.author || 'Preston Seo';
-    const authorTitle = post.frontmatter.authorTitle || 'Real Estate Investor & Educator';
-    const authorCredentials = post.frontmatter.authorCredentials || '';
-    const category = post.frontmatter.category || 'Investing';
-
-    // Handle modified date (use frontmatter if provided, otherwise use published date)
-    const modifiedDate = post.frontmatter.modifiedDate
-        ? formatISODate(post.frontmatter.modifiedDate)
-        : formatISODate(post.frontmatter.date);
-
-    // Generate keywords
-    const keywords = post.frontmatter.keywords || extractKeywords(post.content, category);
-
-    // Generate related posts HTML
-    const relatedPostsHtml = generateRelatedPosts(post, allPosts);
-
-    // Generate statistics cards HTML from frontmatter
-    const statisticsHtml = generateStatisticsHTML(post.frontmatter.statistics);
-
-    // Generate FAQ HTML and schema from frontmatter
-    const faqHtml = generateFAQHTML(post.frontmatter.faq);
-    const faqSchemaHtml = generateFAQSchema(post.frontmatter.faq);
+function applyTemplate(template, post, allPosts) {
+    const fm = post.frontmatter;
+    const contentHtml = marked(post.content);
+    const wordCount = fm.wordCount ? Number(fm.wordCount) : blogRender.countWords(post.content);
+    const hero = resolveHero(post);
     const indexation = getBlogIndexation(post);
-    const sourceBlockHtml = renderSourceBlock({
-        title: post.frontmatter.title,
-        slug: post.slug,
-        type: category,
-        heading: 'Sources To Check Before You Act',
-    });
+    const category = normalizeCategoryForArchives(fm.category || 'Investing');
 
-    // Replace all placeholders
-    let html = template
-        .replace(/\{\{title\}\}/g, post.frontmatter.title || 'Untitled')
-        .replace(/\{\{seoTitle\}\}/g, buildSEOTitle(post.frontmatter.title))
-        .replace(/\{\{description\}\}/g, post.frontmatter.description || '')
-        .replace(/\{\{toc\}\}/g, toc)
-        .replace(/\{\{content\}\}/g, htmlContent)
-        .replace(/\{\{date\}\}/g, formatDate(post.frontmatter.date))
-        .replace(/\{\{isoDate\}\}/g, formatISODate(post.frontmatter.date))
-        .replace(/\{\{modifiedDate\}\}/g, modifiedDate)
-        .replace(/\{\{author\}\}/g, author)
-        .replace(/\{\{authorTitle\}\}/g, authorTitle)
-        .replace(/\{\{authorCredentials\}\}/g, authorCredentials)
-        .replace(/\{\{category\}\}/g, category)
-        .replace(/\{\{image\}\}/g, image)
-        .replace(/\{\{imageAlt\}\}/g, imageAlt)
-        .replace(/\{\{ogImage\}\}/g, ogImage)
-        .replace(/\{\{imageWebp\}\}/g, imageWebp)
-        .replace(/\{\{readTime\}\}/g, readTime)
-        .replace(/\{\{slug\}\}/g, post.slug)
-        .replace(/\{\{robots\}\}/g, indexation.robots)
-        .replace(/\{\{canonicalUrl\}\}/g, indexation.canonicalUrl)
-        .replace(/\{\{wordCount\}\}/g, wordCount)
-        .replace(/\{\{keywords\}\}/g, keywords)
-        .replace(/\{\{relatedPosts\}\}/g, relatedPostsHtml)
-        .replace(/\{\{statistics\}\}/g, statisticsHtml)
-        .replace(/\{\{faq\}\}/g, faqHtml)
-        .replace(/\{\{sourceBlock\}\}/g, sourceBlockHtml)
-        .replace(/\{\{faqSchema\}\}/g, faqSchemaHtml);
+    const heroPreload = hero.exists
+        ? `<link rel="preload" as="image" href="${esc(hero.webp || hero.src)}"${hero.webp ? ' type="image/webp"' : ''} fetchpriority="high">`
+        : '';
 
-    return html;
+    const modifiedDate = fm.modifiedDate || fm.updatedAt || fm.date;
+
+    return template
+        .replace(/\{\{seoTitle\}\}/g, esc(buildSEOTitle(fm.title)))
+        .replace(/\{\{title\}\}/g, esc(fm.title || 'Untitled'))
+        .replace(/\{\{description\}\}/g, esc(fm.description || ''))
+        .replace(/\{\{keywords\}\}/g, esc(buildKeywords(fm)))
+        .replace(/\{\{author\}\}/g, esc(fm.author || 'Preston Seo'))
+        .replace(/\{\{robots\}\}/g, esc(indexation.robots))
+        .replace(/\{\{canonicalUrl\}\}/g, esc(indexation.canonicalUrl))
+        .replace(/\{\{ogImage\}\}/g, esc(hero.ogImage))
+        .replace(/\{\{heroPreload\}\}/g, heroPreload)
+        .replace(/\{\{isoDate\}\}/g, formatISODate(fm.date))
+        .replace(/\{\{modifiedDate\}\}/g, formatISODate(modifiedDate))
+        .replace(/\{\{category\}\}/g, esc(category))
+        .replace(/\{\{wordCount\}\}/g, String(wordCount))
+        .replace(/\{\{faqSchema\}\}/g, generateFAQSchema(fm.faq || fm.faqs))
+        .replace(/\{\{headAssets\}\}/g, renderHeadAssets())
+        .replace(/\{\{siteHeader\}\}/g, renderSiteHeader('/blog'))
+        .replace(/\{\{siteFooter\}\}/g, renderSiteFooter())
+        .replace(/\{\{analyticsHead\}\}/g, renderAnalyticsHead({ gaTrackingId: GA_TRACKING_ID, gtmContainerId: GTM_CONTAINER_ID }))
+        .replace(/\{\{analyticsBody\}\}/g, renderAnalyticsBody({ gtmContainerId: GTM_CONTAINER_ID }))
+        .replace(/\{\{articleBody\}\}/g, renderArticleBody({ post, contentHtml, allPosts }));
 }
 
-/**
- * Generate related posts HTML based on category matching
- */
-function generateRelatedPosts(currentPost, allPosts, limit = 3) {
-    const relatedPosts = allPosts
-        .filter(post =>
-            post.slug !== currentPost.slug &&
-            post.frontmatter.category === currentPost.frontmatter.category &&
-            isIndexableBlogPost(post)
-        )
-        .slice(0, limit);
-
-    if (relatedPosts.length === 0) {
-        // Fallback to any other posts if no category match
-        const fallbackPosts = allPosts
-            .filter(post => post.slug !== currentPost.slug && isIndexableBlogPost(post))
-            .slice(0, limit);
-
-        if (fallbackPosts.length === 0) return '';
-        return generateRelatedPostsMarkup(fallbackPosts);
-    }
-
-    return generateRelatedPostsMarkup(relatedPosts);
-}
-
-/**
- * Generate the HTML markup for related posts
- */
-function generateRelatedPostsMarkup(posts) {
-    if (posts.length === 0) return '';
-
-    const postsHtml = posts.map(post => {
-        const image = post.frontmatter.image || '/assets/images/og-blog.jpg';
-        const readTime = calculateReadTime(post.content);
-
-        return `
-            <a href="/blog/${post.slug}" class="related-post-item">
-                <div class="related-post-image">
-                    <img src="${image}" alt="${post.frontmatter.title}" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/og-blog.jpg';">
-                </div>
-                <div class="related-post-content">
-                    <h4 class="related-post-title">${post.frontmatter.title}</h4>
-                    <span class="related-post-meta">${readTime} min read</span>
-                </div>
-            </a>`;
-    }).join('\n');
-
-    return `
-        <aside class="related-posts" aria-label="Related articles">
-            <h3 class="related-posts-title">Related Articles</h3>
-            <div class="related-posts-grid">
-                ${postsHtml}
-            </div>
-        </aside>`;
-}
-
-/**
- * Convert category name to slug
- */
-function slugifyCategory(category) {
-    return category.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
-}
+// -------------------------------------------------------------- listing pages
 
 function categoryDescription(category) {
     const descriptions = {
         'Airbnb Arbitrage': 'Lease-first short-term rental strategy, landlord conversations, setup budgets, pricing, operations, and real student case studies.',
         'Business Structures': 'LLC, S-corp, C-corp, veil protection, operating agreement, registered agent, and entity-choice guides for operators and investors.',
         'Debt Management': 'Debt payoff, consolidation, student-loan strategy, budgeting, and credit decision guides for building cleaner cash flow.',
-        'Investing': 'Portfolio construction, real estate, alternative assets, asset allocation, tax-aware investing, and wealth-building decisions.',
+        Investing: 'Portfolio construction, real estate, alternative assets, asset allocation, tax-aware investing, and wealth-building decisions.',
         'Passive Income': 'Income-stream ideas, business models, and practical execution guides for building income beyond a paycheck.',
         'Real Estate': 'Rental property, short-term rental, depreciation, house hacking, and investor decision guides.',
-        'Retirement': '401(k), IRA, Roth, pension, withdrawal, income, and tax-sequencing guides for retirement planning.',
+        Retirement: '401(k), IRA, Roth, pension, withdrawal, income, and tax-sequencing guides for retirement planning.',
         'Success Story': 'Student case studies showing how real operators built cash flow, negotiated leases, and changed their financial trajectory.',
-        'Success Stories': 'Student case studies showing how real operators built cash flow, negotiated leases, and changed their financial trajectory.',
         'Tax Strategies': 'Tax planning guides for real estate investors, business owners, high-income earners, and self-employed professionals.',
         'Wealth Plan': 'Scenario-based wealth plans connecting income, tax, debt, real estate, retirement, and execution priorities.',
     };
-
     return descriptions[category] || `Guides, examples, and execution notes for ${category.toLowerCase()} from Legacy Investing Show.`;
 }
 
-function normalizeCategoryForArchives(category) {
-    if (category === 'Success Stories') return 'Success Story';
-    if (category === 'Real Estate Investing' || category === 'Real Estate Strategy') return 'Real Estate';
-    if (category === 'Investing Strategy' || category === 'Strategy') return 'Investing';
-    if (category === 'How-To Guide' || category === 'Getting Started') return 'Airbnb Arbitrage';
-    return category || 'Investing';
+/** Sentence case for the category link row; proper nouns stay capitalised. */
+/** Sentence case for the category link row; initialisms keep their caps. */
+function categoryLinkLabel(category) {
+    return blogRender.categoryLabel(category);
 }
 
-function isIndexableBlogPost(post) {
-    return !/noindex/i.test(getBlogIndexation(post).robots);
+/** The category row is a plain wrapped list of links, not a filter bar. */
+function renderCategoryNav(categories, currentSlug) {
+    if (categories.length === 0) return '';
+    const items = categories
+        .map((category) => {
+            const slug = slugifyCategory(category);
+            const current = slug === currentSlug ? ' blog-cat-item--current' : '';
+            const aria = slug === currentSlug ? ' aria-current="page"' : '';
+            return `<li class="blog-cat-item${current}"><a href="/blog/category/${slug}"${aria}>${esc(categoryLinkLabel(category))}</a></li>`;
+        })
+        .join('\n                        ');
+    return `<nav class="blog-cats" aria-label="Browse by category">
+                    <ul class="blog-cat-list">
+                        ${items}
+                    </ul>
+                </nav>`;
 }
 
-/**
- * Generate the blog index page
- */
-function generateBlogIndex(posts) {
-    // Sort posts by date (newest first)
-    const sortedPosts = posts.filter(isIndexableBlogPost).sort((a, b) => {
-        return new Date(b.frontmatter.date) - new Date(a.frontmatter.date);
-    });
+/** Posts as editorial list rows: title, one line, date and read time. */
+function renderEntries(posts) {
+    if (posts.length === 0) {
+        return '<p class="blog-empty">No posts yet.</p>';
+    }
+    const items = posts
+        .map((post) => {
+            const fm = post.frontmatter;
+            const description = fm.description
+                ? `\n                            <p class="list-rows__desc">${esc(fm.description)}</p>`
+                : '';
+            return `<li class="list-rows__item">
+                            <h2 class="list-rows__title"><a href="/blog/${post.slug}">${esc(fm.title || post.slug)}</a></h2>${description}
+                            <p class="list-rows__meta"><time datetime="${formatISODate(fm.date)}">${esc(formatDate(fm.date))}</time>, ${normalizeReadTime(post)} min read</p>
+                        </li>`;
+        })
+        .join('\n                        ');
+    return `<ul class="list-rows blog-entries">
+                        ${items}
+                    </ul>`;
+}
 
-    // Extract unique categories
-    const categories = [...new Set(sortedPosts.map(p => normalizeCategoryForArchives(p.frontmatter.category || 'Investing')))];
+/** Pagination is a row of numerals; the current one is not a link. */
+function renderPagination(pageNum, totalPages) {
+    if (totalPages <= 1) return '';
+    const href = (n) => (n === 1 ? '/blog' : `/blog/page/${n}`);
 
-    // Generate category filter HTML
-    const categoryFilterHTML = categories.length > 1 ? `
-                <nav class="category-filter" aria-label="Filter by category">
-                    <button class="category-filter__btn active" data-category="all">All</button>
-                    ${categories.map(cat => `<a class="category-filter__btn" href="/blog/category/${slugifyCategory(cat)}">${cat}</a>`).join('\n                    ')}
-                </nav>` : '';
+    const numbers = [];
+    for (let n = 1; n <= totalPages; n += 1) {
+        if (n === pageNum) {
+            numbers.push(
+                `<li class="blog-page-item"><span class="blog-page-num blog-page-num--current" aria-current="page">${n}</span></li>`
+            );
+        } else {
+            numbers.push(
+                `<li class="blog-page-item"><a class="blog-page-num" href="${href(n)}">${n}</a></li>`
+            );
+        }
+    }
 
-    const postCardsHTML = sortedPosts.map(post => {
-        const image = post.frontmatter.image || '/assets/images/og-blog.jpg';
-        const readTime = calculateReadTime(post.content);
-        const category = post.frontmatter.category || 'Investing';
-        const categorySlug = slugifyCategory(category);
-        const date = formatDate(post.frontmatter.date);
+    return `<nav class="blog-pagination" aria-label="Pagination">
+                        <ol class="blog-page-list">
+                            ${numbers.join('\n                            ')}
+                        </ol>
+                    </nav>`;
+}
 
-        return `
-            <a href="/blog/${post.slug}" class="minimal-post-item" data-category="${categorySlug}">
-                <div class="minimal-post-image">
-                    <img src="${image}" alt="${post.frontmatter.title}" loading="lazy" onerror="this.onerror=null;this.src='/assets/images/og-blog.jpg';">
-                </div>
-                <div class="minimal-post-content">
-                    <div class="minimal-post-meta">
-                        <span class="minimal-post-category">${category}</span>
-                        <span class="meta-sep">·</span>
-                        <time>${date}</time>
-                        <span class="meta-sep">·</span>
-                        <span>${readTime} min</span>
-                    </div>
-                    <h2 class="minimal-post-title">${post.frontmatter.title}</h2>
-                    <p class="minimal-post-desc">${post.frontmatter.description || ''}</p>
-                </div>
-            </a>`;
-    }).join('\n');
-
-    // Featured posts (first 3 or those marked as featured)
-    const featuredPosts = sortedPosts.filter(p => p.frontmatter.featured).slice(0, 3);
-    const displayFeatured = featuredPosts.length > 0 ? featuredPosts : sortedPosts.slice(0, 1);
-
-    const featuredHTML = displayFeatured.map(post => {
-        const image = post.frontmatter.image || '/assets/images/og-blog.jpg';
-        const readTime = calculateReadTime(post.content);
-
-        return `
-                    <a href="/blog/${post.slug}" class="block group">
-                        <div class="relative overflow-hidden rounded-sm">
-                            <img src="${image}"
-                                 alt="${post.frontmatter.title}"
-                                 class="w-full aspect-[4/3] object-cover"
-                                 loading="eager"
-                                 onerror="this.onerror=null;this.src='/assets/images/og-blog.jpg';">
-                        </div>
-                        <div class="pt-4">
-                            <span class="category-label mb-2 block">Featured</span>
-                            <h2 class="text-xl md:text-2xl font-semibold mb-2 text-gray-900 group-hover:text-brand-primary transition-colors">
-                                ${post.frontmatter.title}
-                            </h2>
-                            <p class="text-sm text-brand-text-muted mb-3 line-clamp-2 max-w-2xl">
-                                ${post.frontmatter.description || ''}
-                            </p>
-                            <div class="meta-simple">
-                                <time datetime="${formatISODate(post.frontmatter.date)}">${formatDate(post.frontmatter.date)}</time>
-                                <span class="mx-2">·</span>
-                                <span>${readTime} min read</span>
-                            </div>
-                        </div>
-                    </a>`;
-    }).join('\n');
-
-    const indexHTML = `<!DOCTYPE html>
+function listingDocument({
+    metaTitle,
+    description,
+    canonicalPath,
+    robots,
+    bodyType,
+    bodyTitle,
+    heading,
+    intro,
+    categoriesNav,
+    entriesHTML,
+    paginationHTML,
+    schema,
+}) {
+    const canonical = `${SITE_DOMAIN}${canonicalPath}`;
+    return `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Primary Meta Tags -->
-    <title>Investing Blog & Case Studies | Legacy Investing Show</title>
-    <meta name="title" content="Investing Blog & Case Studies | Legacy Investing Show">
-    <meta name="description" content="Wealth-building strategies, investing insights, and financial freedom tips.">
-    <meta name="keywords" content="wealth building, investing, real estate, financial freedom">
+    <title>${esc(metaTitle)}</title>
+    <meta name="title" content="${esc(metaTitle)}">
+    <meta name="description" content="${esc(description)}">
     <meta name="author" content="Preston Seo">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="${esc(robots)}">
     <meta name="google-site-verification" content="${GOOGLE_SITE_VERIFICATIONS[0]}">
     <meta name="google-site-verification" content="${GOOGLE_SITE_VERIFICATIONS[1]}">
-    <link rel="canonical" href="https://www.legacyinvestingshow.com/blog">
+    <link rel="canonical" href="${canonical}">
 
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.legacyinvestingshow.com/blog">
-    <meta property="og:title" content="Investing Blog & Case Studies | Legacy Investing Show">
-    <meta property="og:description" content="Wealth-building strategies, investing insights, and financial freedom tips.">
-    <meta property="og:image" content="https://www.legacyinvestingshow.com/assets/images/og-blog.jpg">
+    <meta property="og:url" content="${canonical}">
+    <meta property="og:title" content="${esc(metaTitle)}">
+    <meta property="og:description" content="${esc(description)}">
+    <meta property="og:image" content="${SITE_DOMAIN}/assets/images/og-blog.jpg">
     <meta property="og:site_name" content="Legacy Investing Show">
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@thelegacyshow">
-    <meta name="twitter:title" content="Investing Blog & Case Studies | Legacy Investing Show">
-    <meta name="twitter:description" content="Wealth-building strategies, investing insights, and financial freedom tips.">
-    <meta name="twitter:image" content="https://www.legacyinvestingshow.com/assets/images/og-blog.jpg">
+    <meta name="twitter:title" content="${esc(metaTitle)}">
+    <meta name="twitter:description" content="${esc(description)}">
+    <meta name="twitter:image" content="${SITE_DOMAIN}/assets/images/og-blog.jpg">
 
-    <!-- Theme Color -->
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#FBF8F1">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/assets/images/logo.png">
-    <link rel="apple-touch-icon" href="/assets/images/logo.png">
+    ${renderHeadAssets()}
+    <link rel="stylesheet" href="/assets/css/blog.css">
 
-    <!-- Preconnect for performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="/assets/css/styles.css">
-
-    <!-- Blog Schema -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Blog",
-        "name": "Legacy Investing Show Blog",
-        "description": "Wealth-building strategies and investing insights",
-        "url": "https://www.legacyinvestingshow.com/blog",
-        "publisher": {
-            "@type": "Organization",
-            "name": "Legacy Investing Show",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://www.legacyinvestingshow.com/assets/images/logo.png"
-            }
-        }
-    }
+    ${JSON.stringify(schema, null, 4)}
     </script>
 
     ${renderAnalyticsHead({ gaTrackingId: GA_TRACKING_ID, gtmContainerId: GTM_CONTAINER_ID })}
 </head>
-<body class="bg-white text-gray-900" data-page-type="blog_index" data-page-title="Blog">
+<body data-page-type="${esc(bodyType)}" data-page-title="${esc(bodyTitle)}">
     ${renderAnalyticsBody({ gtmContainerId: GTM_CONTAINER_ID })}
-    <!-- Skip to main content -->
-    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-gray-900 text-white px-4 py-2 z-50">
-        Skip to main content
-    </a>
+    <a href="#main" class="skip-link">Skip to main content</a>
 
-    <!-- Header -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
-        <nav class="container-custom" aria-label="Main navigation">
-            <div class="flex items-center justify-between h-16">
-                <a href="/" class="flex items-center gap-2 font-medium text-gray-900 hover:text-gray-700 transition-colors">
-                    <img src="/assets/images/logo.png" alt="Legacy Investing Show Logo" width="28" height="28" class="w-7 h-7">
-                    <span>Legacy Investing Show</span>
-                </a>
-
-                <div class="hidden md:flex items-center gap-4">
-                    ${renderPrimaryNavLinks('/blog')}
-                </div>
-
-                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
-            </div>
-
-            <div id="mobile-menu" class="hidden md:hidden pb-4">
-                <div class="flex flex-col gap-3">
-                    ${renderPrimaryNavLinks('/blog')}
-                </div>
-            </div>
-        </nav>
-    </header>
+    ${renderSiteHeader('/blog')}
 
     <main id="main">
-        <!-- Blog Header -->
-        <section class="minimal-blog-header">
-            <h1 class="minimal-blog-title">Blog</h1>
-            <p class="minimal-blog-subtitle">Thoughts on building wealth and financial freedom.</p>
-        </section>
+        <div class="blog-page">
+            <div class="blog-wrap">
+                <h1 class="blog-title">${esc(heading)}</h1>
+                <p class="lede blog-lede">${esc(intro)}</p>
 
-        <!-- Posts List -->
-        <section class="minimal-posts-section">
-            <div class="container-custom">
-                ${categoryFilterHTML}
+                ${categoriesNav}
 
-                <div class="minimal-posts-list">
-                    ${postCardsHTML}
-                </div>
+                ${entriesHTML}
 
-                ${sortedPosts.length === 0 ? `
-                <div class="minimal-empty">
-                    <p>No posts yet. Check back soon.</p>
-                </div>
-                ` : ''}
+                ${paginationHTML}
             </div>
-        </section>
-
+        </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="minimal-footer">
-        <div class="container-custom">
-            <div class="minimal-footer-content">
-                <div class="footer-brand">
-                    <img src="/assets/images/logo.png" alt="Legacy Investing Show" width="32" height="32">
-                    <span>Legacy Investing Show</span>
-                </div>
-                <div class="footer-links">
-                    ${renderFooterLinks()}
-                </div>
-            </div>
-            <div class="footer-copyright">Copyright ${CURRENT_YEAR}</div>
-        </div>
-    </footer>
+    ${renderSiteFooter()}
 
     <script defer src="/assets/js/main.js"></script>
-    <script>
-        // Category filter functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const filterButtons = document.querySelectorAll('[data-category]');
-            const postItems = document.querySelectorAll('.minimal-post-item[data-category]');
-
-            filterButtons.forEach(btn => {
-                if (btn.classList.contains('category-filter__btn')) {
-                    btn.addEventListener('click', () => {
-                        const category = btn.dataset.category;
-
-                        // Update active state
-                        document.querySelectorAll('.category-filter__btn').forEach(b => b.classList.remove('active'));
-                        btn.classList.add('active');
-
-                        // Filter posts
-                        postItems.forEach(item => {
-                            const itemCategory = item.dataset.category;
-                            if (category === 'all' || itemCategory === category) {
-                                item.style.display = '';
-                            } else {
-                                item.style.display = 'none';
-                            }
-                        });
-                    });
-                }
-            });
-        });
-    </script>
 </body>
 </html>`;
-
-    return indexHTML;
 }
 
-/**
- * Generate crawlable category archive pages so category hubs exist without JS.
- */
+function listSchema(name, description, url, posts) {
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        name,
+        description,
+        url,
+        isPartOf: {
+            '@type': 'Blog',
+            name: 'Legacy Investing Show Blog',
+            url: `${SITE_DOMAIN}/blog`,
+        },
+        mainEntity: {
+            '@type': 'ItemList',
+            numberOfItems: posts.length,
+            itemListElement: posts.slice(0, 50).map((post, index) => ({
+                '@type': 'ListItem',
+                position: index + 1,
+                url: `${SITE_DOMAIN}/blog/${post.slug}`,
+                name: post.frontmatter.title,
+            })),
+        },
+    };
+}
+
+function listCategories(posts) {
+    const found = new Set();
+    for (const post of posts) {
+        found.add(normalizeCategoryForArchives(post.frontmatter.category || 'Investing'));
+    }
+    return [...found].sort((a, b) => a.localeCompare(b));
+}
+
+function generateBlogIndexPages(posts) {
+    const sorted = posts
+        .filter(isIndexableBlogPost)
+        .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
+
+    const categories = listCategories(sorted);
+
+    const totalPages = Math.max(1, Math.ceil(sorted.length / POSTS_PER_PAGE));
+    const written = [];
+
+    for (let pageNum = 1; pageNum <= totalPages; pageNum += 1) {
+        const slice = sorted.slice((pageNum - 1) * POSTS_PER_PAGE, pageNum * POSTS_PER_PAGE);
+        const canonicalPath = pageNum === 1 ? '/blog' : `/blog/page/${pageNum}`;
+        const metaTitle =
+            pageNum === 1
+                ? 'Blog | Legacy Investing Show'
+                : `Blog, page ${pageNum} | Legacy Investing Show`;
+
+        const html = listingDocument({
+            metaTitle,
+            description: BLOG_DESCRIPTION,
+            canonicalPath,
+            robots: 'index, follow',
+            bodyType: 'blog_index',
+            bodyTitle: pageNum === 1 ? 'Blog' : `Blog page ${pageNum}`,
+            heading: 'Blog',
+            intro: BLOG_DESCRIPTION,
+            categoriesNav: renderCategoryNav(categories, ''),
+            entriesHTML: renderEntries(slice),
+            paginationHTML: renderPagination(pageNum, totalPages),
+            schema: listSchema(
+                pageNum === 1 ? 'Legacy Investing Show Blog' : `Legacy Investing Show Blog, page ${pageNum}`,
+                BLOG_DESCRIPTION,
+                `${SITE_DOMAIN}${canonicalPath}`,
+                slice
+            ),
+        });
+
+        if (pageNum === 1) {
+            fs.writeFileSync(path.join(OUTPUT_DIR, 'index.html'), html);
+            written.push('blog/index.html');
+        } else {
+            ensureDir(PAGE_DIR);
+            fs.writeFileSync(path.join(PAGE_DIR, `${pageNum}.html`), html);
+            written.push(`blog/page/${pageNum}.html`);
+        }
+    }
+
+    // Drop pages left behind by an earlier, longer run.
+    if (fs.existsSync(PAGE_DIR)) {
+        for (const entry of fs.readdirSync(PAGE_DIR)) {
+            if (!entry.endsWith('.html')) continue;
+            const num = parseInt(entry.replace('.html', ''), 10);
+            if (!Number.isFinite(num) || num < 2 || num > totalPages) {
+                fs.unlinkSync(path.join(PAGE_DIR, entry));
+            }
+        }
+    }
+
+    return { written, totalPages, postCount: sorted.length };
+}
+
 function generateCategoryArchives(posts) {
-    const sortedPosts = posts.filter(isIndexableBlogPost).sort((a, b) => {
-        return new Date(b.frontmatter.date) - new Date(a.frontmatter.date);
-    });
+    const sorted = posts
+        .filter(isIndexableBlogPost)
+        .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
+
     const archiveDir = path.join(OUTPUT_DIR, 'category');
     ensureDir(archiveDir);
     for (const entry of fs.readdirSync(archiveDir, { withFileTypes: true })) {
@@ -885,236 +450,104 @@ function generateCategoryArchives(posts) {
         }
     }
 
-    const postsByCategory = new Map();
-    for (const post of sortedPosts) {
+    const byCategory = new Map();
+    for (const post of sorted) {
         const category = normalizeCategoryForArchives(post.frontmatter.category || 'Investing');
-        if (!postsByCategory.has(category)) {
-            postsByCategory.set(category, []);
-        }
-        postsByCategory.get(category).push(post);
+        if (!byCategory.has(category)) byCategory.set(category, []);
+        byCategory.get(category).push(post);
     }
 
-    for (const [category, categoryPosts] of postsByCategory.entries()) {
-        const categorySlug = slugifyCategory(category);
+    const categories = [...byCategory.keys()].sort((a, b) => a.localeCompare(b));
+
+    for (const category of categories) {
+        const categoryPosts = byCategory.get(category);
+        const slug = slugifyCategory(category);
         const description = categoryDescription(category);
-        const postCardsHTML = categoryPosts.map(post => {
-            const image = post.frontmatter.image || '/assets/images/og-blog.jpg';
-            const readTime = calculateReadTime(post.content);
-            const date = formatDate(post.frontmatter.date);
+        const canonicalPath = `/blog/category/${slug}`;
 
-            return `
-            <a href="/blog/${post.slug}" class="minimal-post-item" data-category="${categorySlug}">
-                <div class="minimal-post-image">
-                    <img src="${image}" alt="${post.frontmatter.title}" loading="lazy" width="320" height="180" onerror="this.onerror=null;this.src='/assets/images/og-blog.jpg';">
-                </div>
-                <div class="minimal-post-content">
-                    <div class="minimal-post-meta">
-                        <span class="minimal-post-category">${category}</span>
-                        <span class="meta-sep">·</span>
-                        <time datetime="${formatISODate(post.frontmatter.date)}">${date}</time>
-                        <span class="meta-sep">·</span>
-                        <span>${readTime} min</span>
-                    </div>
-                    <h2 class="minimal-post-title">${post.frontmatter.title}</h2>
-                    <p class="minimal-post-desc">${post.frontmatter.description || ''}</p>
-                </div>
-            </a>`;
-        }).join('\n');
+        const html = listingDocument({
+            metaTitle: `${category} articles | Legacy Investing Show`,
+            description,
+            canonicalPath,
+            robots: 'index, follow',
+            bodyType: 'blog_category',
+            bodyTitle: category,
+            heading: categoryLinkLabel(category),
+            intro: description,
+            categoriesNav: renderCategoryNav(categories, slug),
+            entriesHTML: renderEntries(categoryPosts),
+            paginationHTML: '',
+            schema: listSchema(
+                `${category} articles`,
+                description,
+                `${SITE_DOMAIN}${canonicalPath}`,
+                categoryPosts
+            ),
+        });
 
-        const archiveHTML = `<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>${category} Articles | Legacy Investing Show</title>
-    <meta name="title" content="${category} Articles | Legacy Investing Show">
-    <meta name="description" content="${description}">
-    <meta name="robots" content="index, follow">
-    <meta name="google-site-verification" content="${GOOGLE_SITE_VERIFICATIONS[0]}">
-    <meta name="google-site-verification" content="${GOOGLE_SITE_VERIFICATIONS[1]}">
-    <link rel="canonical" href="https://www.legacyinvestingshow.com/blog/category/${categorySlug}">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.legacyinvestingshow.com/blog/category/${categorySlug}">
-    <meta property="og:title" content="${category} Articles | Legacy Investing Show">
-    <meta property="og:description" content="${description}">
-    <meta property="og:image" content="https://www.legacyinvestingshow.com/assets/images/og-blog.jpg">
-    <meta property="og:site_name" content="Legacy Investing Show">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@thelegacyshow">
-    <meta name="twitter:title" content="${category} Articles | Legacy Investing Show">
-    <meta name="twitter:description" content="${description}">
-    <meta name="twitter:image" content="https://www.legacyinvestingshow.com/assets/images/og-blog.jpg">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="icon" type="image/png" href="/assets/images/logo.png">
-    <link rel="apple-touch-icon" href="/assets/images/logo.png">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <script type="application/ld+json">
-    ${JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'CollectionPage',
-        name: `${category} Articles`,
-        description,
-        url: `https://www.legacyinvestingshow.com/blog/category/${categorySlug}`,
-        isPartOf: {
-            '@type': 'Blog',
-            name: 'Legacy Investing Show Blog',
-            url: 'https://www.legacyinvestingshow.com/blog',
-        },
-        mainEntity: {
-            '@type': 'ItemList',
-            numberOfItems: categoryPosts.length,
-            itemListElement: categoryPosts.slice(0, 50).map((post, index) => ({
-                '@type': 'ListItem',
-                position: index + 1,
-                url: `https://www.legacyinvestingshow.com/blog/${post.slug}`,
-                name: post.frontmatter.title,
-            })),
-        },
-    }, null, 4)}
-    </script>
-    ${renderAnalyticsHead({ gaTrackingId: GA_TRACKING_ID, gtmContainerId: GTM_CONTAINER_ID })}
-</head>
-<body class="bg-white text-gray-900" data-page-type="blog_category" data-page-title="${category}">
-    ${renderAnalyticsBody({ gtmContainerId: GTM_CONTAINER_ID })}
-    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-gray-900 text-white px-4 py-2 z-50">Skip to main content</a>
-    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
-        <nav class="container-custom" aria-label="Main navigation">
-            <div class="flex items-center justify-between h-16">
-                <a href="/" class="flex items-center gap-2 font-medium text-gray-900 hover:text-gray-700 transition-colors">
-                    <img src="/assets/images/logo.png" alt="Legacy Investing Show Logo" width="28" height="28" class="w-7 h-7">
-                    <span>Legacy Investing Show</span>
-                </a>
-                <div class="hidden md:flex items-center gap-4">
-                    ${renderPrimaryNavLinks('/blog')}
-                </div>
-                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
-            </div>
-            <div id="mobile-menu" class="hidden md:hidden pb-4">
-                <div class="flex flex-col gap-3">
-                    ${renderPrimaryNavLinks('/blog')}
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main id="main">
-        <section class="minimal-blog-header">
-            <p class="minimal-blog-subtitle"><a href="/blog">Blog</a> / Category</p>
-            <h1 class="minimal-blog-title">${category}</h1>
-            <p class="minimal-blog-subtitle">${description}</p>
-        </section>
-        <section class="minimal-posts-section">
-            <div class="container-custom">
-                <div class="minimal-posts-list">
-                    ${postCardsHTML}
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="minimal-footer">
-        <div class="container-custom">
-            <div class="minimal-footer-content">
-                <div class="footer-brand">
-                    <img src="/assets/images/logo.png" alt="Legacy Investing Show" width="32" height="32">
-                    <span>Legacy Investing Show</span>
-                </div>
-                <div class="footer-links">
-                    ${renderFooterLinks()}
-                </div>
-            </div>
-            <div class="footer-copyright">Copyright ${CURRENT_YEAR}</div>
-        </div>
-    </footer>
-    <script defer src="/assets/js/main.js"></script>
-</body>
-</html>`;
-
-        fs.writeFileSync(path.join(archiveDir, `${categorySlug}.html`), archiveHTML);
+        fs.writeFileSync(path.join(archiveDir, `${slug}.html`), html);
     }
 
-    return postsByCategory.size;
+    return categories.length;
 }
 
-/**
- * Main build function
- */
+// --------------------------------------------------------------------- build
+
 function build() {
     console.log('Starting blog build...\n');
-
-    // Ensure output directory exists
     ensureDir(OUTPUT_DIR);
 
-    // Read template
     let template;
     try {
         template = fs.readFileSync(TEMPLATE_PATH, 'utf-8');
-        console.log('Template loaded successfully');
     } catch (error) {
         console.error(`Error reading template: ${error.message}`);
-        console.error('Please ensure templates/blog-post.html exists');
         process.exit(1);
     }
 
-    // Get all markdown files
-    const markdownFiles = getMarkdownFiles();
-    console.log(`Found ${markdownFiles.length} markdown file(s)\n`);
+    const posts = loadAllPosts();
+    console.log(`Found ${posts.length} markdown file(s)\n`);
 
-    if (markdownFiles.length === 0) {
-        console.log('No markdown files found in content/blog/');
-        console.log('Creating empty blog index...\n');
-    }
-
-    // Parse all markdown posts
-    const markdownPosts = markdownFiles
-        .map(file => parseMarkdownFile(file))
-        .filter(post => post !== null);
-
-    // Build individual post pages from markdown
     let successCount = 0;
     let errorCount = 0;
 
-    for (const post of markdownPosts) {
+    for (const post of posts) {
         try {
-            const html = applyTemplate(template, post, markdownPosts);
-            const outputPath = path.join(OUTPUT_DIR, `${post.slug}.html`);
-
-            fs.writeFileSync(outputPath, html);
-            console.log(`Built: ${post.slug}.html`);
-            successCount++;
+            fs.writeFileSync(path.join(OUTPUT_DIR, `${post.slug}.html`), applyTemplate(template, post, posts));
+            successCount += 1;
         } catch (error) {
             console.error(`Error building ${post.slug}: ${error.message}`);
-            errorCount++;
+            errorCount += 1;
         }
     }
 
-    // Generate blog index and category archives with indexable posts.
-    try {
-        const indexHTML = generateBlogIndex(markdownPosts);
-        const indexPath = path.join(OUTPUT_DIR, 'index.html');
-        fs.writeFileSync(indexPath, indexHTML);
-        const indexablePostCount = markdownPosts.filter(isIndexableBlogPost).length;
-        console.log(`\nBuilt: blog/index.html (${indexablePostCount} indexable posts)`);
-        const categoryCount = generateCategoryArchives(markdownPosts);
-        console.log(`Built: ${categoryCount} blog category archive(s)`);
-    } catch (error) {
-        console.error(`Error generating blog index: ${error.message}`);
-        errorCount++;
-    }
+    const index = generateBlogIndexPages(posts);
+    console.log(`Built: ${index.written.length} index page(s) for ${index.postCount} indexable posts`);
+    console.log(`       ${index.written.join(', ')}`);
 
-    // Summary
+    const categoryCount = generateCategoryArchives(posts);
+    console.log(`Built: ${categoryCount} blog category archive(s)`);
+
     console.log('\n-------------------');
     console.log('Build complete!');
     console.log(`Successfully built: ${successCount} post(s)`);
-    if (errorCount > 0) {
-        console.log(`Errors: ${errorCount}`);
-    }
-    console.log(`Total posts in index: ${markdownPosts.filter(isIndexableBlogPost).length}`);
+    if (errorCount > 0) console.log(`Errors: ${errorCount}`);
     console.log('-------------------\n');
 }
 
-// Run build
-build();
+if (require.main === module) {
+    build();
+}
+
+module.exports = {
+    applyTemplate,
+    build,
+    buildKeywords,
+    buildSEOTitle,
+    categoryLinkLabel,
+    generateBlogIndexPages,
+    generateCategoryArchives,
+    generateFAQSchema,
+    renderEntries,
+    renderPagination,
+};

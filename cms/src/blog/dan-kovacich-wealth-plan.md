@@ -1,7 +1,7 @@
 ---
 title: "Dan's Wealth Plan: Keep vs Sell STR Decision Gate and Multi-Entity Tax Optimization"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Dan's comprehensive wealth strategy: a strict Decision Gate framework for keep vs sell analysis on a $1.375M STR property, maximizing $100K+ tax savings through multi-entity structuring, cost segregation, and strategic Bitcoin deployment."
+description: "Dan's wealth strategy: a strict Decision Gate framework for keep vs sell analysis on a $1.375M STR property, maximizing $100K+ tax savings through multi-entity structuring, cost segregation, and strategic Bitcoin deployment."
 date: 2026-04-12
 modifiedDate: 2026-04-12
 author: Preston Seo

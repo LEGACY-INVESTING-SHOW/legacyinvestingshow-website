@@ -1,7 +1,7 @@
 ---
 title: "Lawrence Nfor's Wealth Plan: HELOC Strategy, Multi-Member LLC & STR Loophole Optimization"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Explore Lawrence Nfor's Worcester, MA wealth strategy leveraging HELOC financing, multi-member LLC advantages, and Airbnb arbitrage with Short-Term Rental tax loophole optimization."
+description: "Lawrence Nfor's Worcester, MA wealth strategy leveraging HELOC financing, multi-member LLC advantages, and Airbnb arbitrage with Short-Term Rental tax loophole optimization."
 date: 2025-10-01
 modifiedDate: 2025-10-01
 author: Preston Seo

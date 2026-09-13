@@ -5,53 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Primary Meta Tags -->
     <title>{{seoTitle}} | Legacy Investing Show</title>
     <meta name="title" content="{{seoTitle}}">
     <meta name="description" content="{{description}}">
-    <meta name="keywords" content="{{category}}, wealth building, investing, financial freedom">
+    <meta name="keywords" content="{{keywords}}">
     <meta name="author" content="{{author}}">
     <meta name="robots" content="{{robots}}">
     <meta name="google-site-verification" content="Kec6RfGhFL-qG_8zKxCqt7yxjgy65WeDAftCBm90G2s">
     <meta name="google-site-verification" content="92MoCnkdQOj_ey1lEafT5Mz-znCcCQ3UABZlI-JG_nM">
     <link rel="canonical" href="{{canonicalUrl}}">
 
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="{{canonicalUrl}}">
     <meta property="og:title" content="{{title}} | Legacy Investing Show">
     <meta property="og:description" content="{{description}}">
-    <meta property="og:image" content="{{ogImage}}">
+    <meta property="og:image" content="https://www.legacyinvestingshow.com/assets/images/og-home.jpg">
     <meta property="og:site_name" content="Legacy Investing Show">
     <meta property="article:published_time" content="{{isoDate}}">
     <meta property="article:modified_time" content="{{modifiedDate}}">
     <meta property="article:author" content="{{author}}">
     <meta property="article:section" content="{{category}}">
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@thelegacyshow">
     <meta name="twitter:title" content="{{title}} | Legacy Investing Show">
     <meta name="twitter:description" content="{{description}}">
-    <meta name="twitter:image" content="{{ogImage}}">
+    <meta name="twitter:image" content="https://www.legacyinvestingshow.com/assets/images/og-home.jpg">
 
-    <!-- Theme Color -->
-    <meta name="theme-color" content="#FAF7F2">
+    <meta name="theme-color" content="#FBF8F1">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    {{heroPreload}}
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/assets/images/logo.png">
-    <link rel="apple-touch-icon" href="/assets/images/logo.png">
-
-    <!-- Preconnect for performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Preload hero image for LCP optimization -->
-    <link rel="preload" as="image" href="{{imageWebp}}" type="image/webp" fetchpriority="high">
-    <link rel="preload" as="image" href="{{image}}" fetchpriority="high">
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    {{headAssets}}
+    <link rel="stylesheet" href="/assets/css/blog.css?v=e1ea6de2">
 
     <!-- BreadcrumbList Schema -->
     <script type="application/ld+json">
@@ -81,7 +67,7 @@
     }
     </script>
 
-    <!-- Article Schema Markup with Enhanced E-E-A-T -->
+    <!-- Article Schema -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -99,8 +85,7 @@
             "@id": "https://www.legacyinvestingshow.com/about#author",
             "name": "{{author}}",
             "url": "https://www.legacyinvestingshow.com/about",
-            "jobTitle": "{{authorTitle}}",
-            "description": "{{authorCredentials}}",
+            "jobTitle": "Real Estate Investor & Educator",
             "knowsAbout": [
                 "Airbnb Arbitrage",
                 "Real Estate Investing",
@@ -120,7 +105,7 @@
             "url": "https://www.legacyinvestingshow.com",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://www.legacyinvestingshow.com/assets/images/logo.png",
+                "url": "https://www.legacyinvestingshow.com/assets/images/og-home.jpg",
                 "width": 512,
                 "height": 512
             },
@@ -142,7 +127,7 @@
         "keywords": "{{keywords}}",
         "speakable": {
             "@type": "SpeakableSpecification",
-            "cssSelector": [".minimal-article-title", ".minimal-content p:first-of-type"]
+            "cssSelector": [".post-title", ".post-prose > p:first-of-type"]
         },
         "isAccessibleForFree": true,
         "inLanguage": "en-US"
@@ -159,7 +144,7 @@
         "@type": "Organization",
         "name": "Legacy Investing Show",
         "url": "https://www.legacyinvestingshow.com",
-        "logo": "https://www.legacyinvestingshow.com/assets/images/logo.png",
+        "logo": "https://www.legacyinvestingshow.com/assets/images/og-home.jpg",
         "sameAs": [
             "https://www.instagram.com/thelegacyinvestingshow/",
             "https://www.youtube.com/@LegacyInvestingShow",
@@ -169,8 +154,10 @@
     }
     </script>
 
+    {{analyticsHead}}
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
+
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
     <script>
@@ -181,208 +168,21 @@
     </script>
 
 </head>
-<body class="bg-cream text-navy" data-page-type="blog_post" data-page-title="{{title}}">
+<body data-page-type="blog_post" data-page-title="{{title}}">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- Skip to main content (accessibility) -->
+    {{analyticsBody}}
     <a href="#main" class="skip-link">Skip to main content</a>
 
-    <!-- Header -->
-    <header class="header-glass fixed top-0 left-0 right-0 z-50">
-        <nav class="container-custom" aria-label="Main navigation">
-            <div class="flex items-center justify-between h-20">
-                <a href="/" class="flex items-center gap-3 font-semibold text-navy">
-                    <img src="/assets/images/logo.png" alt="Legacy Investing Show Logo" width="36" height="36" class="w-9 h-9">
-                    <span class="text-lg hidden sm:inline">Legacy Investing Show</span>
-                </a>
-
-                <div class="hidden md:flex items-center gap-4">
-                    <a href="/" class="nav-link">Home</a>
-                    <a href="/about" class="nav-link">About</a>
-                    <a href="/tax-strategies" class="nav-link">Tax Strategies</a>
-                    <a href="/compare" class="nav-link">Compare</a>
-                    <a href="/tools" class="nav-link">Tools</a>
-                    <a href="/worksheets" class="nav-link">Worksheets</a>
-                    <a href="/blog" class="nav-link nav-link-active">Blog</a>
-                </div>
-
-                <button id="mobile-menu-btn" class="md:hidden p-2 text-navy" aria-label="Open menu">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
-            </div>
-
-            <div id="mobile-menu" class="hidden md:hidden pb-4">
-                <div class="flex flex-col gap-3">
-                    <a href="/" class="nav-link">Home</a>
-                    <a href="/about" class="nav-link">About</a>
-                    <a href="/tax-strategies" class="nav-link">Tax Strategies</a>
-                    <a href="/compare" class="nav-link">Compare</a>
-                    <a href="/tools" class="nav-link">Tools</a>
-                    <a href="/worksheets" class="nav-link">Worksheets</a>
-                    <a href="/blog" class="nav-link nav-link-active">Blog</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Reading Progress Bar -->
-    <div class="reading-progress" aria-hidden="true">
-        <div class="reading-progress-bar"></div>
-    </div>
+    {{siteHeader}}
 
     <main id="main">
-        <!-- Article Header -->
-        <article class="minimal-article">
-            <!-- Visual Breadcrumb Navigation -->
-            <nav aria-label="Breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb__item">
-                        <a href="/" class="breadcrumb__link">Home</a>
-                    </li>
-                    <li class="breadcrumb__item">
-                        <a href="/blog" class="breadcrumb__link">Blog</a>
-                    </li>
-                    <li class="breadcrumb__item">
-                        <span class="breadcrumb__current">{{title}}</span>
-                    </li>
-                </ol>
-            </nav>
-
-            <header class="minimal-article-header">
-                <div class="minimal-article-meta">
-                    <span>{{category}}</span>
-                    <span class="meta-dot"></span>
-                    <time datetime="{{isoDate}}">{{date}}</time>
-                    <span class="meta-dot"></span>
-                    <span>{{readTime}} min read</span>
-                </div>
-                <h1 class="minimal-article-title">{{title}}</h1>
-                <div class="minimal-article-author">
-                    <img src="/assets/images/preston-avatar.jpg" alt="{{author}}" width="36" height="36" class="author-avatar" onerror="this.src='/assets/images/logo.png'">
-                    <span>{{author}}</span>
-                </div>
-            </header>
-
-            <!-- Featured Image -->
-            <div class="minimal-featured-image">
-                <picture>
-                    <source srcset="{{imageWebp}}" type="image/webp">
-                    <img src="{{image}}"
-                         alt="{{imageAlt}}"
-                         width="800"
-                         height="450"
-                         loading="eager"
-                         fetchpriority="high"
-                         decoding="async"
-                         onerror="this.onerror=null;this.src='/assets/images/og-blog.jpg';">
-                </picture>
-            </div>
-
-            <!-- Key Statistics Cards (rendered from frontmatter) -->
-            {{statistics}}
-
-            <!-- Table of Contents (auto-generated for long articles) -->
-            {{toc}}
-
-            <!-- Article Content -->
-            <div class="minimal-content">
-                <div class="prose-minimal">
-                    {{content}}
-                </div>
-
-                <!-- Author Bio with E-E-A-T Signals -->
-                <aside class="author-bio" itemscope itemtype="https://schema.org/Person">
-                    <div class="flex items-start gap-4">
-                        <picture>
-                            <source srcset="/assets/images/preston-main.webp" type="image/webp">
-                            <img src="/assets/images/preston-main.jpg"
-                                 alt="{{author}}"
-                                 width="64"
-                                 height="64"
-                                 class="w-16 h-16 rounded-full object-cover"
-                                 itemprop="image"
-                                 onerror="this.src='/assets/images/logo.png'">
-                        </picture>
-                        <div>
-                            <p class="font-bold text-navy" itemprop="name">{{author}}</p>
-                            <p class="text-sm text-gold" itemprop="jobTitle">Financial Educator & Real Estate Investor</p>
-                            <p class="text-sm text-secondary mt-2" itemprop="description">
-                                Preston has built a $15M+ real estate portfolio and helped 2,000+ students
-                                improve tax decisions, wealth systems, and long-term financial execution.
-                            </p>
-                            <a href="/about" class="text-sm text-gold hover:text-navy mt-2 inline-block" itemprop="url">Learn more about {{author}} →</a>
-                        </div>
-                    </div>
-                </aside>
-
-                <!-- Source notes reinforce YMYL review quality -->
-                {{sourceBlock}}
-
-                <!-- FAQ Section (rendered from frontmatter) -->
-                {{faq}}
-
-                <!-- Related Posts -->
-                {{relatedPosts}}
-            </div>
-        </article>
+        <div class="post-page">
+        {{articleBody}}
+        </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="minimal-footer">
-        <div class="container-custom">
-            <div class="minimal-footer-content">
-                <div class="footer-brand">
-                    <img src="/assets/images/logo.png" alt="Legacy Investing Show" width="32" height="32">
-                    <span>Legacy Investing Show</span>
-                </div>
-                <div class="footer-links">
-                    <a href="/tax-strategies">Tax Strategies</a>
-                    <a href="/compare">Compare</a>
-                    <a href="/tools">Tools</a>
-                    <a href="/worksheets">Worksheets</a>
-                    <a href="/success-stories">Results</a>
-                    <a href="/blog">Blog</a>
-                </div>
-            </div>
-            <div class="footer-copyright">Copyright 2026</div>
-        </div>
-    </footer>
+    {{siteFooter}}
 
-    <script defer src="/assets/js/main.js"></script>
-
-    <!-- Reading Progress Bar Script -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const progressBar = document.querySelector('.reading-progress-bar');
-            const progressContainer = document.querySelector('.reading-progress');
-            const article = document.querySelector('.minimal-article');
-
-            if (!progressBar || !article) return;
-
-            function updateProgress() {
-                const articleRect = article.getBoundingClientRect();
-                const articleTop = articleRect.top + window.scrollY;
-                const articleHeight = article.offsetHeight;
-                const windowHeight = window.innerHeight;
-                const scrolled = window.scrollY - articleTop + windowHeight * 0.3;
-                const total = articleHeight - windowHeight * 0.3;
-
-                // Show progress bar when scrolled into article
-                if (window.scrollY > articleTop - windowHeight) {
-                    progressContainer.classList.add('visible');
-                } else {
-                    progressContainer.classList.remove('visible');
-                }
-
-                // Calculate progress percentage
-                const progress = Math.min(Math.max((scrolled / total) * 100, 0), 100);
-                progressBar.style.width = progress + '%';
-            }
-
-            window.addEventListener('scroll', updateProgress, { passive: true });
-            updateProgress();
-        });
-    </script>
+    <script defer src="/assets/js/main.js?v=5efea1b4"></script>
 </body>
 </html>

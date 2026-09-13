@@ -1,7 +1,7 @@
 ---
 title: "Hernan Zegarra Valencia's 2025-2026 Wealth Optimization Plan: $50,459-$74,626 Year-One Value"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Hernan Zegarra Valencia's comprehensive 2025-2026 wealth optimization plan delivering $50,459-$74,626 in year-one value. Real estate investment focus with tax optimization for 2026."
+description: "Hernan Zegarra Valencia's 2025-2026 wealth optimization plan delivering $50,459-$74,626 in year-one value. Real estate investment focus with tax optimization for 2026."
 date: 2025-11-01
 modifiedDate: 2025-11-01
 author: Preston Seo

@@ -1,7 +1,7 @@
 ---
 title: "Brian's Wealth Plan: High-Income Tax Optimization and $40K/Month Retirement Strategy"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Brian's comprehensive wealth plan for high-income earners: W-2 + 1099 strategies, long-term rental optimization, REIT portfolio management, and legal recovery asset integration for a $40K/month retirement income target."
+description: "Brian's wealth plan for high-income earners: W-2 + 1099 strategies, long-term rental optimization, REIT portfolio management, and legal recovery asset integration for a $40K/month retirement income target."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

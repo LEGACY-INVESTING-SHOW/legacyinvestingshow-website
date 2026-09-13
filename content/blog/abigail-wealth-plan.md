@@ -1,7 +1,7 @@
 ---
 title: "Abigail's Wealth Plan: Eliminating W-2 Tax Liability and Building Early Retirement"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Abigail's personalized wealth strategy for eliminating $52,500+ in annual taxes through STR cost segregation, S-Corp structures, and Bitcoin accumulation — a blueprint for financial independence before 59½."
+description: "Abigail's personalized wealth strategy for eliminating $52,500+ in annual taxes through STR cost segregation, S-Corp structures, and Bitcoin accumulation — a blueprint for financial independence before 59½."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

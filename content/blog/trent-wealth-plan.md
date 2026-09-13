@@ -1,7 +1,7 @@
 ---
 title: "Trent's Wealth Plan: Building a $20K/Month STR Cash Flow Engine"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Trent's aggressive 12-month wealth strategy for building a $20,000/month short-term rental cash-flow engine with tax optimization and Bitcoin stacking."
+description: "Trent's aggressive 12-month wealth strategy for building a $20,000/month short-term rental cash-flow engine with tax optimization and Bitcoin stacking."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

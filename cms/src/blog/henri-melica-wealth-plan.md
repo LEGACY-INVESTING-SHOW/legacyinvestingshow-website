@@ -1,7 +1,7 @@
 ---
 title: "Henri & Melica's Wealth Plan: $50,000+ Annual Tax Reduction Strategy"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Henri and Melica's comprehensive 2026 wealth strategy targeting $50,000+ in tax savings through advanced real estate structures, S-Corp optimization, and strategic retirement planning."
+description: "Henri and Melica's 2026 wealth strategy targeting $50,000+ in tax savings through advanced real estate structures, S-Corp optimization, and strategic retirement planning."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

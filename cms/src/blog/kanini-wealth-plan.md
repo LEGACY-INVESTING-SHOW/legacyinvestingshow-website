@@ -1,7 +1,7 @@
 ---
 title: "Kanini's Wealth Plan: Strategic Debt Management and Staged Wealth Building"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Kanini's comprehensive wealth strategy for managing significant debt, building emergency reserves, and implementing a phased approach to financial recovery and wealth accumulation."
+description: "Kanini's wealth strategy for managing significant debt, building emergency reserves, and implementing a phased approach to financial recovery and wealth accumulation."
 date: 2025-11-01
 modifiedDate: 2025-11-01
 author: Preston Seo

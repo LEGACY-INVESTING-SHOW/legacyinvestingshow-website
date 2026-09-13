@@ -1,7 +1,7 @@
 ---
 title: "Roy's Wealth Plan: Credit Recovery and STR Business Launch"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Roy's comprehensive wealth strategy for recovering from sub-620 credit while building a low-risk cohosting income stream and automated Bitcoin accumulation."
+description: "Roy's wealth strategy for recovering from sub-620 credit while building a low-risk cohosting income stream and automated Bitcoin accumulation."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

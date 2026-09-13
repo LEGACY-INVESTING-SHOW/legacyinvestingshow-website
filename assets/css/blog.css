@@ -1,0 +1,310 @@
+/* ==========================================================================
+   Blog — the only rules that are specific to the blog surface.
+
+   Everything shared comes from styles.css (FIELD GUIDE v3): base type and
+   tokens, .prose, .table-inset, .cap, .num, .toc, .callout, .big,
+   .list-rows, .faq, .pull-quote and the buttons. What is left here is the
+   reading column, the page furniture around the article, and the index.
+   ========================================================================== */
+
+/* --- One column on paper ------------------------------------------------- */
+
+.blog-page,
+.post-page {
+    background: var(--paper);
+}
+
+.blog-wrap,
+.post-wrap {
+    width: 100%;
+    max-width: 68ch;
+    margin: 0 auto;
+    padding: 0 1rem 3.5rem;
+}
+
+@media (min-width: 640px) {
+    .blog-wrap,
+    .post-wrap {
+        padding: 0 1.5rem 4.5rem;
+    }
+}
+
+/* --- Post: breadcrumb, title, meta, photograph --------------------------- */
+
+.post-crumbs {
+    margin: 1.75rem 0 1.5rem;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+}
+
+.post-crumbs-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.25rem 0.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.post-crumbs-item {
+    color: var(--ink-faint);
+}
+
+.post-crumbs-item + .post-crumbs-item::before {
+    content: "/";
+    margin-right: 0.5rem;
+    color: var(--line);
+}
+
+.post-crumbs-item a {
+    color: var(--ink-faint);
+    text-decoration: none;
+}
+
+.post-crumbs-item a:hover {
+    color: var(--emerald);
+    text-decoration: underline;
+}
+
+.post-crumbs-current {
+    max-width: 32ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.post-title {
+    margin: 0;
+}
+
+.post-figure {
+    margin: 2rem 0 0;
+}
+
+.post-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
+/* The contents list is a list, not a disclosure, once there is room for it. */
+@media (min-width: 700px) {
+    .post-toc > .toc__list {
+        display: block;
+    }
+
+    .post-toc::details-content {
+        content-visibility: visible;
+        block-size: auto;
+    }
+}
+
+/* --- Post: the prose ----------------------------------------------------- */
+
+.post-prose {
+    margin-top: 2.25rem;
+}
+
+.post-prose > *:first-child {
+    margin-top: 0;
+}
+
+.post-prose > *:last-child {
+    margin-bottom: 0;
+}
+
+/* Loose markdown lists wrap each item in <p>; keep them from double-spacing. */
+.post-prose li > p {
+    margin: 0;
+}
+
+.post-prose li > p + p {
+    margin-top: 0.5rem;
+}
+
+.post-prose hr {
+    border: 0;
+    border-top: 1px solid var(--line);
+    margin: 2.5rem 0;
+}
+
+/* Markdown embeds carry fixed 560x315 attributes; make them fluid. */
+.post-prose iframe {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    border-radius: 16px;
+    margin: 1.75rem 0;
+}
+
+/* --- Post: quick answer --------------------------------------------------- */
+
+.post-answer {
+    margin: 1.75rem 0 0;
+    padding: 1.25rem 1.5rem;
+    border-left: 3px solid var(--emerald);
+    background: var(--ivory);
+    border-radius: 0 12px 12px 0;
+}
+
+.post-answer-eyebrow {
+    margin: 0 0 0.4rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+}
+
+.post-answer-copy {
+    margin: 0;
+    max-width: 62ch;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--ink);
+}
+
+/* --- Post: sources, questions, more to read ------------------------------ */
+
+.post-sources,
+.post-faq,
+.post-related {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--line);
+}
+
+.post-sources-title,
+.post-faq-title,
+.post-related-title {
+    margin: 0;
+}
+
+.post-sources-note {
+    margin: 0.75rem 0 0;
+    color: var(--ink-soft);
+    max-width: 62ch;
+}
+
+.post-sources-list {
+    list-style: none;
+    margin: 1.25rem 0 0;
+    padding: 0;
+    border-top: 1px solid var(--line);
+}
+
+.post-sources-item {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--line);
+    color: var(--ink-soft);
+    font-size: 0.9375rem;
+    line-height: 1.5;
+}
+
+.post-disclaimer {
+    margin: 1.25rem 0 0;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    color: var(--ink-faint);
+    max-width: 62ch;
+}
+
+.post-related-all {
+    margin: 1.25rem 0 0;
+    font-size: 0.9375rem;
+}
+
+/* --- Index, category and pagination -------------------------------------- */
+
+.blog-title {
+    margin: 2.25rem 0 0;
+}
+
+.blog-cats {
+    margin-top: 2rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--line);
+}
+
+.blog-cat-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9375rem;
+}
+
+.blog-cat-item a {
+    color: var(--emerald);
+    text-decoration: none;
+}
+
+.blog-cat-item a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+    text-underline-offset: 3px;
+}
+
+.blog-cat-item--current a {
+    color: var(--forest);
+    font-weight: 600;
+}
+
+.blog-entries {
+    margin-top: 2rem;
+}
+
+/* A row title is an h2 for the outline only; it carries no section rule. */
+.blog-entries .list-rows__title::after {
+    content: none;
+}
+
+.blog-empty {
+    margin: 2rem 0 0;
+    color: var(--ink-soft);
+}
+
+.blog-pagination {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+}
+
+.blog-page-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    margin: 0;
+    padding: 0;
+    font-variant-numeric: tabular-nums;
+}
+
+.blog-page-num {
+    display: inline-block;
+    min-width: 2.25rem;
+    padding: 0.4rem 0.5rem;
+    text-align: center;
+    font-size: 0.9375rem;
+    line-height: 1.4;
+    color: var(--ink-soft);
+    text-decoration: none;
+    border-radius: 999px;
+}
+
+a.blog-page-num:hover {
+    color: var(--forest);
+    background: var(--ivory);
+}
+
+.blog-page-num--current {
+    color: var(--forest);
+    font-weight: 600;
+}

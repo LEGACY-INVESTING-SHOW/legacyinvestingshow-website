@@ -1,7 +1,7 @@
 ---
 title: "Dustin's Wealth Plan: Short-Term Rental Arbitrage and Scaling Strategy"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Dustin's aggressive wealth strategy for building a $25,000/month short-term rental arbitrage portfolio with systematic scaling and tax optimization."
+description: "Dustin's aggressive wealth strategy for building a $25,000/month short-term rental arbitrage portfolio with systematic scaling and tax optimization."
 date: 2026-04-12
 modifiedDate: 2026-04-12
 author: Preston Seo

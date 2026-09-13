@@ -1,0 +1,389 @@
+/* ==========================================================================
+   GUIDES — the guide-specific layer over the FIELD GUIDE v3 kit
+   --------------------------------------------------------------------------
+   Loaded by /tax-strategies, /retirement, /compare, /topics, /markets and
+   /renters-insurance on top of styles.css. The kit in styles.css owns the
+   tokens, the type scale, buttons, tables, .toc, .callout, .big, .words,
+   .steps, .do, .cta, .list-rows and .faq. This file owns only three things:
+
+     1. the single reading column these pages run in,
+     2. the section names the 41 frozen long-form guides still use,
+     3. the handful of legacy class names left inside their prose.
+
+   Nothing here introduces a card, a panel, a band or a shadow.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Page frame
+   -------------------------------------------------------------------------- */
+
+.guide-page {
+    background: var(--paper);
+    color: var(--ink);
+}
+
+.guide-skip {
+    position: absolute;
+    left: 50%;
+    top: -100%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    padding: 0.875rem 1.75rem;
+    border-radius: 999px;
+    background: var(--forest);
+    color: var(--paper);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.guide-skip:focus {
+    top: 0.75rem;
+    color: var(--paper);
+}
+
+/* --------------------------------------------------------------------------
+   2. The reading column
+   The generated pages wrap their content in .col themselves. The frozen guides
+   keep their own section names, so the column is set on the container instead.
+   -------------------------------------------------------------------------- */
+
+.guide-page > nav.container-custom,
+.guide-opener > .container-custom,
+.content-section > .container-custom,
+.faq-section > .container-custom,
+.guide-close > .container-custom,
+.statistics-section > .container-custom,
+.guide-section > .container-custom {
+    max-width: 46rem;
+}
+
+/* The strategy hub sets six tables side by side with prose, so it runs wider
+   than a prose column. Its tables stay at 44rem, inside that. */
+.guide-catalog {
+    max-width: 54rem;
+}
+
+.guide-page > nav.container-custom {
+    padding-top: 1.75rem;
+}
+
+/* --------------------------------------------------------------------------
+   3. Section rhythm for the frozen guides' own section names
+   -------------------------------------------------------------------------- */
+
+.guide-opener {
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.content-section,
+.faq-section,
+.guide-close,
+.guide-section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.guide-section--tight {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+@media (min-width: 700px) {
+    .content-section,
+    .faq-section,
+    .guide-close,
+    .guide-section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+.guide-opener + .content-section {
+    padding-top: 0;
+}
+
+/* One hairline between the article and the FAQ. The closing block draws no
+   rule of its own: the sources list already opens on one. */
+.faq-section {
+    border-top: 1px solid var(--line);
+}
+
+.guide-close {
+    padding-top: 0;
+}
+
+/* --------------------------------------------------------------------------
+   4. Opener details
+   -------------------------------------------------------------------------- */
+
+.opener .words__label {
+    margin-top: 1.75rem;
+}
+
+.guide-opener__meta,
+.guide-deck + .meta {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--ink-faint);
+    margin: 0.75rem 0 0;
+    max-width: 60ch;
+}
+
+.guide-deck {
+    font-size: 1.125rem;
+    line-height: 1.45;
+    font-weight: 500;
+    color: var(--emerald);
+    margin: 0.75rem 0 0;
+    max-width: 56ch;
+}
+
+.strategy-title {
+    margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   5. Prose additions the kit does not carry
+   -------------------------------------------------------------------------- */
+
+/* The one-line educational note that closes a guide. */
+.guide-note {
+    font-size: 0.8125rem;
+    line-height: 1.6;
+    color: var(--ink-faint);
+    margin: 2rem 0 0;
+    max-width: 68ch;
+}
+
+/* What used to sit in a right-hand rail: who it suits, what to read next. */
+.guide-extras {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    max-width: 44rem;
+}
+
+.guide-extras h3 {
+    margin: 1.5rem 0 0.25rem;
+}
+
+.guide-extras > h3:first-child {
+    margin-top: 0;
+}
+
+.guide-extras ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.guide-extras li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 0.9375rem;
+    color: var(--ink-soft);
+}
+
+/* A worked example's running total: label left, figure right. */
+.ledger {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0.375rem 0;
+    font-size: 0.9375rem;
+    font-variant-numeric: tabular-nums;
+    border-bottom: 1px solid rgba(47, 125, 91, 0.18);
+}
+
+.ledger:last-of-type {
+    border-bottom: 0;
+}
+
+.ledger span:last-child {
+    font-weight: 600;
+    color: var(--forest);
+    white-space: nowrap;
+}
+
+.calculation-line--total,
+.ledger--total {
+    border-bottom: 0;
+    border-top: 2px solid var(--gold);
+    margin-top: 0.25rem;
+    padding-top: 0.625rem;
+}
+
+/* A figure that reads as a line of text rather than a panel. */
+.guide-figure {
+    margin: 0 0 1.125rem;
+    font-variant-numeric: tabular-nums;
+}
+
+/* --------------------------------------------------------------------------
+   6. Legacy class names still inside the frozen prose
+   -------------------------------------------------------------------------- */
+
+.bullet-list,
+.checklist,
+.benefits-list,
+.related-strategies {
+    margin: 0 0 1.125rem;
+    padding-left: 1.25rem;
+    list-style: disc;
+}
+
+.bullet-list li,
+.checklist li,
+.benefits-list li,
+.related-strategies li {
+    margin-bottom: 0.375rem;
+}
+
+.bullet-list li::marker,
+.checklist li::marker,
+.benefits-list li::marker,
+.related-strategies li::marker {
+    color: var(--emerald);
+}
+
+.guide-extras .benefits-list,
+.guide-extras .related-strategies {
+    padding-left: 0;
+    list-style: none;
+}
+
+.internal-link,
+.inline-link {
+    color: var(--emerald);
+    text-decoration: underline;
+    text-decoration-color: var(--line);
+}
+
+.internal-link:hover,
+.inline-link:hover {
+    text-decoration-color: currentColor;
+}
+
+/* Numbered how-to blocks written before the kit existed. */
+.step-number {
+    display: inline-block;
+    margin-right: 0.5rem;
+    font-weight: 600;
+    color: var(--emerald);
+    font-variant-numeric: tabular-nums;
+}
+
+.step-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--forest);
+    margin: 1.5rem 0 0.25rem;
+}
+
+.step-description,
+.timeline-step__content,
+.timezone-step__content {
+    margin: 0 0 1.125rem;
+    color: var(--ink-soft);
+    max-width: 68ch;
+}
+
+/* Two old grids: read them as stacked rows on a hairline. */
+.comparison-grid,
+.tax-states-grid {
+    display: grid;
+    gap: 0;
+    margin: 1.25rem 0;
+    border-top: 1px solid var(--line);
+    max-width: 44rem;
+}
+
+.comparison-grid > *,
+.tax-states-grid > * {
+    padding: 0.875rem 0;
+    border-bottom: 1px solid var(--line);
+}
+
+/* Article furniture at the foot of a few guides. */
+.author-bio,
+.related-topics {
+    display: block;
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    max-width: 44rem;
+    font-size: 0.9375rem;
+    color: var(--ink-soft);
+}
+
+.author-bio img,
+.author-bio picture img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.related-topics a {
+    display: inline-block;
+    margin: 0 1.25rem 0.5rem 0;
+}
+
+.faq-title,
+.faq-section__title {
+    margin-top: 0;
+}
+
+/* Native <details> rows outside a .faq wrapper get the same hairline rows. */
+.prose > details,
+.content-section details:not(.toc) {
+    border-bottom: 1px solid var(--line);
+    max-width: 44rem;
+}
+
+.prose > details > summary,
+.content-section details:not(.toc) > summary {
+    display: block;
+    list-style: none;
+    cursor: pointer;
+    padding: 0.9375rem 1.75rem 0.9375rem 0;
+    font-weight: 600;
+    color: var(--forest);
+}
+
+.prose > details > summary::-webkit-details-marker,
+.content-section details:not(.toc) > summary::-webkit-details-marker {
+    display: none;
+}
+
+.prose > details > summary:hover,
+.content-section details:not(.toc) > summary:hover {
+    color: var(--emerald);
+}
+
+.prose > details > p,
+.content-section details:not(.toc) > p {
+    margin: 0 0 1.125rem;
+    color: var(--ink-soft);
+    max-width: 68ch;
+}
+
+/* --------------------------------------------------------------------------
+   7. Long tables on a phone
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 640px) {
+    .table-inset,
+    .table-inset--wide,
+    .table-scroll {
+        max-width: 100%;
+    }
+
+    .table-inset table,
+    .table-scroll table {
+        min-width: 30rem;
+    }
+}

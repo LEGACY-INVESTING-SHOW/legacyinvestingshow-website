@@ -1,7 +1,7 @@
 ---
 title: "Chris's Wealth Plan: Houston Market Real Estate Strategy"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Explore Chris's comprehensive wealth strategy for real estate investing in Houston, Texas, including tax optimization, property acquisition, and wealth building."
+description: "Chris's wealth strategy for real estate investing in Houston, Texas, including tax optimization, property acquisition, and wealth building."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

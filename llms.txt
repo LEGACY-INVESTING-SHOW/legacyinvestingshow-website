@@ -41,7 +41,6 @@ Secondary focus area:
 - [Taxes & Payroll Calculators](https://www.legacyinvestingshow.com/tools/categories/taxes-payroll): take-home pay, withholding, and tax reserves
 - [Housing & Moving Calculators](https://www.legacyinvestingshow.com/tools/categories/housing-moving): rent, mortgages, equity, and move-in costs
 - [Insurance Calculators](https://www.legacyinvestingshow.com/tools/categories/insurance-protection): renters, auto, pet, health, and income protection
-- [Worksheets](https://www.legacyinvestingshow.com/worksheets/): printable and fillable planning worksheets
 - [Blog](https://www.legacyinvestingshow.com/blog/): strategy articles, case studies, and transcript-based resource posts
 - [Success Stories](https://www.legacyinvestingshow.com/success-stories): curated student results and execution stories
 
@@ -71,7 +70,7 @@ Secondary focus area:
 
 - Airbnb arbitrage is part of the library, not the whole company.
 - The site emphasizes practical execution, not generic inspiration.
-- Decision pages, tools, and worksheets are core assets.
+- Decision pages and tools are core assets.
 
 ## Citation Format
 

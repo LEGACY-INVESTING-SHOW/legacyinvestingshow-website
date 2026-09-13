@@ -1,7 +1,7 @@
 ---
 title: "Piotr's Wealth Plan: European Investment Strategy and International Tax Optimization"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Piotr's personalized wealth strategy navigating international investment opportunities, cross-border tax considerations, and building wealth across multiple jurisdictions."
+description: "Piotr's personalized wealth strategy navigating international investment opportunities, cross-border tax considerations, and building wealth across multiple jurisdictions."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

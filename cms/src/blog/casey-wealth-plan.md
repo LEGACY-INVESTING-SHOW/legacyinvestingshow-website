@@ -1,7 +1,7 @@
 ---
 title: "Casey's Wealth Strategy Snapshot: Efficient Wealth Building Foundation"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Casey's Wealth Strategy Snapshot (WSS) focusing on streamlined wealth building essentials, foundational tax strategies, and efficient investment approaches for rapid implementation."
+description: "Casey's Wealth Strategy Snapshot (WSS) focusing on streamlined wealth building essentials, foundational tax strategies, and efficient investment approaches for rapid implementation."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

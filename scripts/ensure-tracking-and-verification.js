@@ -38,6 +38,14 @@ const SKIP_DIRS = new Set([
   'todos',
 ]);
 
+// --- icon backstop ---
+// The committed logo.png is a corrupt image; icons must point at /favicon.ico.
+function fixIconLinks(html) {
+  return html
+    .replace(/<link rel="icon"[^>]*href="(?:\.\.\/|\/)assets\/images\/logo(?:-240)?\.(?:png|webp)"[^>]*>\s*/g, '<link rel="icon" href="/favicon.ico" sizes="32x32">\n    ')
+    .replace(/\s*<link rel="apple-touch-icon"[^>]*href="(?:\.\.\/|\/)assets\/images\/logo(?:-240)?\.(?:png|webp)"[^>]*>/g, '');
+}
+
 function walkHtmlFiles(dir) {
   const files = [];
   const entries = fs.readdirSync(dir, { withFileTypes: true });
@@ -282,6 +290,75 @@ function injectVerificationMeta(content) {
   return content.replace(robotsTag[0], `${robotsTag[0]}${snippet}`);
 }
 
+// --- Broken-local-asset backstops ---------------------------------------
+// Generators have historically pointed og:image / image preloads at files that
+// were never produced. A 404 social image loses the card entirely, and a
+// high-priority preload of a missing file burns a request on every visit.
+
+const DEFAULT_OG_IMAGE = '/assets/images/og-home.jpg';
+const DEFAULT_BLOG_OG_IMAGE = '/assets/images/og-blog.jpg';
+
+/**
+ * Resolve an asset reference to a path on disk, or null when the reference is
+ * off-site (and therefore not ours to validate).
+ */
+function resolveLocalAsset(reference, relativePath) {
+  let ref = String(reference || '').trim();
+  if (!ref) return null;
+
+  ref = ref.replace(/^https?:\/\/(www\.)?legacyinvestingshow\.com/i, '');
+  if (/^(https?:)?\/\//i.test(ref) || /^(data|mailto|tel):/i.test(ref)) return null;
+
+  ref = ref.split(/[?#]/)[0];
+  if (!ref) return null;
+
+  if (ref.startsWith('/')) return path.join(ROOT_DIR, ref.slice(1));
+  return path.resolve(path.join(ROOT_DIR, path.dirname(relativePath)), ref);
+}
+
+function localAssetExists(reference, relativePath) {
+  const resolved = resolveLocalAsset(reference, relativePath);
+  if (!resolved) return true; // Off-site: assume fine.
+  return fs.existsSync(resolved);
+}
+
+/** Point og:image / twitter:image at a real file when the referenced one is missing. */
+function repairSocialImages(content, relativePath) {
+  const isBlogPost = relativePath.replace(/\\/g, '/').startsWith('blog/');
+  const fallback = `${SITE_URL}${isBlogPost ? DEFAULT_BLOG_OG_IMAGE : DEFAULT_OG_IMAGE}`;
+
+  return content.replace(
+    /(<meta\s+(?:property|name)=["'](?:og:image(?::secure_url)?|twitter:image)["']\s+content=["'])([^"']*)(["'])/gi,
+    (match, open, value, close) => {
+      if (!value || localAssetExists(value, relativePath)) return match;
+      return `${open}${fallback}${close}`;
+    }
+  );
+}
+
+/** Drop `<link rel="preload" as="image">` tags whose target is not on disk. */
+function dropBrokenImagePreloads(content, relativePath) {
+  return content.replace(/[ \t]*<link\b[^>]*>\s*\n?/gi, (match) => {
+    if (!/rel=["']preload["']/i.test(match)) return match;
+    if (!/\bas=["']image["']/i.test(match)) return match;
+
+    const href = (match.match(/\bhref=["']([^"']+)["']/i) || [])[1];
+    if (!href || localAssetExists(href, relativePath)) return match;
+    return '';
+  });
+}
+
+/** Fonts are self-hosted; preconnects to Google Fonts resolve nothing. */
+function dropGoogleFontsPreconnect(content) {
+  // Pages that still load a Google Fonts stylesheet (funnels, the imported
+  // tools export) keep their preconnect hints.
+  if (/fonts\.googleapis\.com\/css/i.test(content)) return content;
+  return content.replace(
+    /[ \t]*<link\b[^>]*\bhref=["']https:\/\/fonts\.(?:googleapis|gstatic)\.com[^"']*["'][^>]*>\s*\n?/gi,
+    (match) => (/rel=["'](?:preconnect|dns-prefetch)["']/i.test(match) ? '' : match)
+  );
+}
+
 function normalizeExtraH1(content) {
   let h1Count = 0;
   return content.replace(/<\/?h1\b[^>]*>/gi, (tag) => {
@@ -369,6 +446,10 @@ function processFile(filePath) {
   next = ensureTitleLength(next);
   next = expandTitleFromOg(next);
   next = normalizeExtraH1(next);
+  next = repairSocialImages(next, relativePath);
+  next = dropBrokenImagePreloads(next, relativePath);
+  next = dropGoogleFontsPreconnect(next);
+  next = fixIconLinks(next);
   next = stripPlaceholderGaScript(next);
   if (!skipTrackingInjection) {
     next = injectGtmScript(next);
@@ -392,4 +473,13 @@ function main() {
   console.log(`Processed ${htmlFiles.length} HTML files; updated ${changed}.`);
 }
 
-main();
+if (require.main === module) main();
+
+module.exports = {
+  resolveLocalAsset,
+  repairSocialImages,
+  dropBrokenImagePreloads,
+  dropGoogleFontsPreconnect,
+  DEFAULT_OG_IMAGE,
+  DEFAULT_BLOG_OG_IMAGE,
+};

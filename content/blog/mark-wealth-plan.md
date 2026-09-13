@@ -1,7 +1,7 @@
 ---
 title: "Mark's Wealth Plan: Entrepreneur Wealth Creation and Business Exit Strategy"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Discover Mark's personalized wealth strategy for entrepreneurs building valuable businesses and planning strategic exits, focusing on value creation, exit timing, and post-liquidity wealth management."
+description: "Mark's personalized wealth strategy for entrepreneurs building valuable businesses and planning strategic exits, focusing on value creation, exit timing, and post-liquidity wealth management."
 date: 2026-04-11
 modifiedDate: 2026-04-11
 author: Preston Seo

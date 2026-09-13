@@ -1,7 +1,7 @@
 ---
 title: "Diana Peninger's Comprehensive Wealth Plan: Age 61 Retirement-Focused Strategy with Bitcoin and Income Planning from Texas"
 titleTemplate: '%s | Legacy Investing Show Wealth Plans'
-description: "Comprehensive wealth plan for Diana Peninger age 61 focusing on retirement income strategy, Bitcoin allocation, and Texas-based tax optimization for late-stage wealth building."
+description: "Wealth plan for Diana Peninger age 61 focusing on retirement income strategy, Bitcoin allocation, and Texas-based tax optimization for late-stage wealth building."
 date: 2025-12-01
 modifiedDate: 2025-12-01
 author: Preston Seo

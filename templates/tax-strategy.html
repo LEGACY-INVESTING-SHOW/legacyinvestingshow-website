@@ -7,8 +7,7 @@
 
     <!-- Primary Meta Tags -->
     <title>{{seoTitle}} | Legacy Investing Show</title>
-    <meta name="title" content="{{seoTitle}}">
-    <meta name="description" content="{{shortDescription}} Learn how {{title}} works, who qualifies, potential savings, and step-by-step implementation.">
+    <meta name="description" content="{{shortDescription}}. How {{title}} works, who qualifies, what it saves, and how to implement it.">
     <meta name="keywords" content="{{keywords}}">
     <meta name="author" content="Preston Seo">
     <meta name="robots" content="index, follow">
@@ -21,7 +20,7 @@
     <meta property="og:url" content="https://www.legacyinvestingshow.com/tax-strategies/{{slug}}">
     <meta property="og:title" content="{{seoTitle}}">
     <meta property="og:description" content="{{shortDescription}}">
-    <meta property="og:image" content="https://www.legacyinvestingshow.com/assets/images/tax-strategies/{{slug}}.jpg">
+    <meta property="og:image" content="https://www.legacyinvestingshow.com/assets/images/og-home.jpg">
     <meta property="og:site_name" content="Legacy Investing Show">
 
     <!-- Twitter Card -->
@@ -29,20 +28,16 @@
     <meta name="twitter:site" content="@thelegacyshow">
     <meta name="twitter:title" content="{{seoTitle}}">
     <meta name="twitter:description" content="{{shortDescription}}">
+    <meta name="twitter:image" content="https://www.legacyinvestingshow.com/assets/images/og-home.jpg">
 
-    <!-- Theme Color -->
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#FBF8F1">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/assets/images/logo.png">
-    <link rel="apple-touch-icon" href="/assets/images/logo.png">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
 
-    <!-- Preconnect -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <!-- Stylesheets -->
+    {{headAssets}}
+    <link rel="stylesheet" href="/assets/css/guides.css?v=62d1d6a9">
 
     <!-- Schema Markup -->
     <script type="application/ld+json">
@@ -61,7 +56,7 @@
             "name": "Legacy Investing Show",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://www.legacyinvestingshow.com/assets/images/logo.png"
+                "url": "https://www.legacyinvestingshow.com/assets/images/og-home.jpg"
             }
         },
         "datePublished": "{{datePublished}}",
@@ -73,297 +68,21 @@
     }
     </script>
 
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.legacyinvestingshow.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Tax Strategies", "item": "https://www.legacyinvestingshow.com/tax-strategies" },
+            { "@type": "ListItem", "position": 3, "name": "{{title}}" }
+        ]
+    }
+    </script>
+
     {{faqSchema}}
 
     {{analyticsHead}}
-
-    <style>
-        .strategy-hero {
-            padding: 8rem 0 4rem;
-            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-        }
-        .strategy-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.5rem 1rem;
-            background: #10b981;
-            color: white;
-            font-size: 0.75rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            border-radius: 9999px;
-            margin-bottom: 1rem;
-        }
-        .strategy-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #111827;
-            margin-bottom: 1rem;
-            line-height: 1.2;
-        }
-        @media (min-width: 768px) {
-            .strategy-title { font-size: 3rem; }
-        }
-        .strategy-subtitle {
-            font-size: 1.25rem;
-            color: #4b5563;
-            max-width: 48rem;
-        }
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
-            margin-top: 2rem;
-        }
-        @media (min-width: 768px) {
-            .stats-grid { grid-template-columns: repeat(4, 1fr); }
-        }
-        .stat-box {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 0.75rem;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-        .stat-box__label {
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: #6b7280;
-            margin-bottom: 0.25rem;
-        }
-        .stat-box__value {
-            font-size: 1.125rem;
-            font-weight: 600;
-            color: #111827;
-        }
-        .stat-box__value--highlight {
-            color: #10b981;
-        }
-        .content-section {
-            padding: 4rem 0;
-        }
-        .content-grid {
-            display: grid;
-            gap: 3rem;
-        }
-        @media (min-width: 1024px) {
-            .content-grid {
-                grid-template-columns: 2fr 1fr;
-            }
-        }
-        .prose-content {
-            color: #374151;
-            line-height: 1.75;
-        }
-        .prose-content h2 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #111827;
-            margin: 2rem 0 1rem;
-        }
-        .prose-content h3 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: #111827;
-            margin: 1.5rem 0 0.75rem;
-        }
-        .prose-content p {
-            margin-bottom: 1rem;
-        }
-        .prose-content ul, .prose-content ol {
-            margin-bottom: 1rem;
-            padding-left: 1.5rem;
-        }
-        .prose-content li {
-            margin-bottom: 0.5rem;
-        }
-        .sidebar {
-            position: sticky;
-            top: 6rem;
-        }
-        .sidebar-card {
-            background: #f9fafb;
-            border-radius: 0.75rem;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-        .sidebar-card__title {
-            font-size: 1rem;
-            font-weight: 600;
-            color: #111827;
-            margin-bottom: 1rem;
-        }
-        .benefits-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .benefits-list li {
-            display: flex;
-            align-items: flex-start;
-            gap: 0.5rem;
-            margin-bottom: 0.75rem;
-            font-size: 0.875rem;
-            color: #4b5563;
-        }
-        .benefits-list svg {
-            flex-shrink: 0;
-            width: 1.25rem;
-            height: 1.25rem;
-            color: #10b981;
-            margin-top: 0.125rem;
-        }
-        .related-strategies {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .related-strategies li {
-            margin-bottom: 0.5rem;
-        }
-        .related-strategies a {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.75rem;
-            background: white;
-            border-radius: 0.5rem;
-            color: #374151;
-            text-decoration: none;
-            font-size: 0.875rem;
-            transition: all 0.2s;
-        }
-        .related-strategies a:hover {
-            background: #f3f4f6;
-            color: #111827;
-        }
-        .related-strategies svg {
-            width: 1rem;
-            height: 1rem;
-            color: #9ca3af;
-        }
-        .faq-section {
-            background: #f9fafb;
-            padding: 4rem 0;
-        }
-        .faq-section__title {
-            font-size: 1.75rem;
-            font-weight: 700;
-            color: #111827;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-        .faq-list {
-            max-width: 48rem;
-            margin: 0 auto;
-        }
-        .faq-item {
-            background: white;
-            border-radius: 0.75rem;
-            margin-bottom: 1rem;
-            overflow: hidden;
-        }
-        .faq-question {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.25rem;
-            background: none;
-            border: none;
-            cursor: pointer;
-            text-align: left;
-            font-size: 1rem;
-            font-weight: 600;
-            color: #111827;
-        }
-        .faq-question:hover {
-            background: #f9fafb;
-        }
-        .faq-chevron {
-            width: 1.25rem;
-            height: 1.25rem;
-            color: #9ca3af;
-            transition: transform 0.2s;
-        }
-        .faq-question[aria-expanded="true"] .faq-chevron {
-            transform: rotate(180deg);
-        }
-        .faq-answer {
-            display: none;
-            padding: 0 1.25rem 1.25rem;
-            color: #4b5563;
-            line-height: 1.6;
-        }
-        .faq-answer--open {
-            display: block;
-        }
-        .cta-section {
-            padding: 4rem 0;
-            text-align: center;
-        }
-        .cta-card {
-            background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
-            border-radius: 1rem;
-            padding: 3rem 2rem;
-            color: white;
-        }
-        .cta-card__title {
-            font-size: 1.75rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-        .cta-card__text {
-            color: #d1d5db;
-            margin-bottom: 1.5rem;
-            max-width: 32rem;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .cta-card__button {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 1rem 2rem;
-            background: #10b981;
-            color: white;
-            font-weight: 600;
-            border-radius: 0.5rem;
-            text-decoration: none;
-            transition: background 0.2s;
-        }
-        .cta-card__button:hover {
-            background: #059669;
-        }
-        .breadcrumb {
-            padding: 1rem 0;
-            font-size: 0.875rem;
-        }
-        .breadcrumb a {
-            color: #6b7280;
-            text-decoration: none;
-        }
-        .breadcrumb a:hover {
-            color: #111827;
-        }
-        .breadcrumb span {
-            color: #9ca3af;
-            margin: 0 0.5rem;
-        }
-        .irs-reference {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.25rem;
-            font-size: 0.75rem;
-            color: #6b7280;
-            background: #f3f4f6;
-            padding: 0.25rem 0.5rem;
-            border-radius: 0.25rem;
-            margin-top: 0.5rem;
-        }
-    </style>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
 
@@ -376,196 +95,135 @@
         gtag('config', 'G-2578PT1WSS');
     </script>
 
-
-    <!-- Twitter Card fallback -->
-    <meta name="twitter:image" content="https://www.legacyinvestingshow.com/assets/images/tax-strategies/{{slug}}.jpg">
 </head>
-<body class="bg-white text-gray-900" data-page-type="tax_strategy" data-page-slug="{{slug}}" data-page-title="{{title}}">
+<body class="guide-page" data-page-type="tax_strategy" data-page-slug="{{slug}}" data-page-title="{{title}}">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     {{tagManagerBody}}
-    <!-- Skip to main content -->
-    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-gray-900 text-white px-4 py-2 z-50">
-        Skip to main content
-    </a>
+    <a href="#main" class="guide-skip">Skip to main content</a>
 
-    <!-- Header -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
-        <nav class="container-custom" aria-label="Main navigation">
-            <div class="flex items-center justify-between h-16">
-                <a href="/" class="flex items-center gap-2 font-medium text-gray-900 hover:text-gray-700 transition-colors">
-                    <img src="/assets/images/logo.png" alt="Legacy Investing Show Logo" width="28" height="28" class="w-7 h-7">
-                    <span>Legacy Investing Show</span>
-                </a>
-
-                <div class="hidden md:flex items-center gap-4">
-                    {{primaryNavLinks}}
-                </div>
-
-                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Open menu">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
-            </div>
-
-            <div id="mobile-menu" class="hidden md:hidden pb-4">
-                <div class="flex flex-col gap-3">
-                    {{primaryNavLinks}}
-                </div>
-            </div>
-        </nav>
-    </header>
+    {{siteHeader}}
 
     <main id="main">
-        <!-- Breadcrumb -->
-        <div class="breadcrumb container-custom" style="padding-top: 5rem;">
-            <a href="/">Home</a>
-            <span>/</span>
-            <a href="/tax-strategies">Tax Strategies</a>
-            <span>/</span>
-            <span class="text-gray-900">{{title}}</span>
-        </div>
-
-        <!-- Hero Section -->
-        <section class="strategy-hero">
+        <section class="opener">
             <div class="container-custom">
-                <span class="strategy-badge">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                    </svg>
-                    Tax Strategy
-                </span>
-                <h1 class="strategy-title">{{title}}</h1>
-                <p class="strategy-subtitle">{{shortDescription}}</p>
-
-                <div class="stats-grid">
-                    <div class="stat-box">
-                        <div class="stat-box__label">Potential Savings</div>
-                        <div class="stat-box__value stat-box__value--highlight">{{potentialSavings}}</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-box__label">Complexity</div>
-                        <div class="stat-box__value">{{complexity}}</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-box__label">Professional Required</div>
-                        <div class="stat-box__value">{{professionalRequired}}</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-box__label">Typical Cost</div>
-                        <div class="stat-box__value">{{typicalCost}}</div>
-                    </div>
-                </div>
-                <div class="irs-reference">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                        <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
-                    </svg>
-                    IRS Reference: {{irsReference}}
+                <div class="col">
+                    <nav aria-label="Breadcrumb">
+                        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                            <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <a href="/" class="breadcrumb__link" itemprop="item"><span itemprop="name">Home</span></a>
+                                <meta itemprop="position" content="1" />
+                            </li>
+                            <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <a href="/tax-strategies" class="breadcrumb__link" itemprop="item"><span itemprop="name">Tax strategies</span></a>
+                                <meta itemprop="position" content="2" />
+                            </li>
+                            <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <span class="breadcrumb__current" itemprop="name">{{title}}</span>
+                                <meta itemprop="position" content="3" />
+                            </li>
+                        </ol>
+                    </nav>
+                    <h1 class="opener__title">{{title}}</h1>
+                    <p class="opener__key">{{shortDescription}}.</p>
+                    <p class="words__label">At a glance</p>
+                    <dl class="words">
+                        <dt>Potential savings</dt>
+                        <dd>{{potentialSavings}}</dd>
+                        <dt>Level</dt>
+                        <dd>{{complexity}}</dd>
+                        <dt>Professional help</dt>
+                        <dd>{{professionalRequired}}</dd>
+                        <dt>Typical cost</dt>
+                        <dd>{{typicalCost}}</dd>{{minimumPropertyValueRow}}
+                        <dt>IRS reference</dt>
+                        <dd>{{irsReference}}</dd>
+                    </dl>
                 </div>
             </div>
         </section>
 
-        <!-- Content Section -->
-        <section class="content-section">
+        <section class="section section--rule">
             <div class="container-custom">
-                <div class="content-grid">
-                    <div class="prose-content">
-                        <h2>What is {{title}}?</h2>
+                <div class="col">
+                    <details class="toc" open>
+                        <summary>On this page</summary>
+                        <ul>
+                            <li><a href="#what-it-is">What {{title}} is</a></li>
+                            <li><a href="#who-it-fits">Who it fits</a></li>
+                            <li><a href="#how-to">How to put it in place</a></li>
+                            <li><a href="#faq">Frequently asked questions</a></li>
+                            <li><a href="#sources">Sources to check</a></li>
+                        </ul>
+                    </details>
+
+                    <div class="prose">
+                        <h2 id="what-it-is">What {{title}} is</h2>
                         <p>{{fullDescription}}</p>
 
-                        <h2>Who Benefits Most from {{title}}?</h2>
-                        <p>This tax strategy is particularly valuable for:</p>
+                        <h2 id="who-it-fits">Who it fits</h2>
+                        <p>{{bestFor}}</p>
+                        <p>It is most often used by:</p>
                         <ul>
                             {{benefitsForList}}
                         </ul>
 
-                        <h2>Best For</h2>
-                        <p>{{bestFor}}</p>
+                        <h2 id="how-to">How to put it in place</h2>
+                    </div>
+                    <ol class="steps">
+                        <li>
+                            <h3 class="steps__title">Check that you qualify</h3>
+                            <p>Confirm the facts of your own situation meet the test before you plan around the deduction.</p>
+                        </li>
+                        <li>
+                            <h3 class="steps__title">Model the numbers</h3>
+                            <p>Work out what the strategy returns at your marginal rate, net of what it costs to run.</p>
+                        </li>
+                        <li>
+                            <h3 class="steps__title">Build the file as you go</h3>
+                            <p>Contemporaneous records defend the position. Reconstructed ones rarely do.</p>
+                        </li>
+                        <li>
+                            <h3 class="steps__title">Review it each year</h3>
+                            <p>Limits, rates and your own facts move. A strategy that fit last year may not fit this one.</p>
+                        </li>
+                    </ol>
 
-                        {{minimumPropertyValueSection}}
+                    <div class="prose">
+                        <h2 id="faq">Frequently asked questions</h2>
+                    </div>
+                    {{faqBlock}}
 
-                        <h2>How to Get Started</h2>
-                        <p>Implementing {{title}} requires careful planning and often professional guidance. Here's a general roadmap:</p>
-                        <ol>
-                            <li><strong>Assess your situation</strong> - Determine if you meet the basic requirements and if the strategy makes sense for your tax situation.</li>
-                            <li><strong>Consult a tax professional</strong> - Work with a CPA or tax attorney who specializes in {{title}} to ensure proper implementation.</li>
-                            <li><strong>Document everything</strong> - Maintain detailed records to support your position in case of an IRS audit.</li>
-                            <li><strong>Review annually</strong> - Tax laws change, so review your strategy each year to ensure continued compliance and optimization.</li>
-                        </ol>
+                    {{sourcesBlock}}
 
-                        <h2>Important Considerations</h2>
-                        <p>While {{title}} can provide significant tax benefits, it's important to understand the rules and requirements fully before implementation. Working with qualified professionals and maintaining proper documentation is essential for success.</p>
+                    <div class="do">
+                        <p class="do__label">Do this next</p>
+                        <ul>
+                            <li>Check the qualification test against your own facts.</li>
+                            <li>Model the saving at your marginal rate, net of the cost to run it.</li>
+                            <li>Start the record file now rather than at year end.</li>
+                            <li>Take the one open question to a CPA.</li>
+                        </ul>
                     </div>
 
-                    <aside class="sidebar">
-                        <div class="sidebar-card">
-                            <h3 class="sidebar-card__title">Who This Strategy Benefits</h3>
-                            <ul class="benefits-list">
-                                {{benefitsForListWithIcons}}
-                            </ul>
-                        </div>
-
-                        <div class="sidebar-card">
-                            <h3 class="sidebar-card__title">Related Strategies</h3>
-                            <ul class="related-strategies">
-                                {{relatedStrategiesList}}
-                            </ul>
-                        </div>
-
-                        <div class="sidebar-card" style="background: #ecfdf5;">
-                            <h3 class="sidebar-card__title">Ready to Save on Taxes?</h3>
-                            <p style="font-size: 0.875rem; color: #4b5563; margin-bottom: 1rem;">Use the tax strategy library, compare guides, and tools to turn this concept into an actual plan.</p>
-                            <a href="/tax-strategies" style="display: inline-block; padding: 0.75rem 1.5rem; background: #10b981; color: white; font-weight: 600; border-radius: 0.5rem; text-decoration: none; font-size: 0.875rem;">Explore Tax Strategies</a>
-                        </div>
-                    </aside>
+                    <div class="cta">
+                        <h2>Where to go next</h2>
+                        <p>Related strategies, and the guides that put two of them side by side.</p>
+                        <ul>
+                            {{relatedStrategiesList}}
+                        </ul>
+                        <p class="cta__actions">
+                            <a href="/tax-strategies" class="btn-primary">Every tax strategy</a>
+                            <a href="/compare" class="btn-secondary">Compare two strategies</a>
+                        </p>
+                    </div>
+                    <p class="guide-note">Educational content only. It is not individual tax, legal, or investment advice.</p>
                 </div>
             </div>
         </section>
-
-        <!-- FAQ Section -->
-        <section class="faq-section">
-            <div class="container-custom">
-                <h2 class="faq-section__title">Frequently Asked Questions</h2>
-                <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
-                    {{faqItems}}
-                </div>
-            </div>
-        </section>
-
     </main>
 
-    <!-- Footer -->
-    <footer class="minimal-footer">
-        <div class="container-custom">
-            <div class="minimal-footer-content">
-                <div class="footer-brand">
-                    <img src="/assets/images/logo.png" alt="Legacy Investing Show" width="32" height="32">
-                    <span>Legacy Investing Show</span>
-                </div>
-                <div class="footer-links">
-                    {{footerLinks}}
-                </div>
-            </div>
-            <div class="footer-copyright">Copyright {{footerYear}}</div>
-        </div>
-    </footer>
+    {{siteFooter}}
 
-    <script defer src="/assets/js/main.js"></script>
-    <script>
-        // FAQ accordion
-        document.querySelectorAll('.faq-question').forEach(button => {
-            button.addEventListener('click', () => {
-                const expanded = button.getAttribute('aria-expanded') === 'true';
-                button.setAttribute('aria-expanded', !expanded);
-                button.nextElementSibling.classList.toggle('faq-answer--open');
-            });
-        });
-
-        // Mobile menu
-        document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-    </script>
+    <script defer src="/assets/js/main.js?v=5efea1b4"></script>
 </body>
 </html>
