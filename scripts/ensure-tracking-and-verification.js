@@ -350,6 +350,9 @@ function dropBrokenImagePreloads(content, relativePath) {
 
 /** Fonts are self-hosted; preconnects to Google Fonts resolve nothing. */
 function dropGoogleFontsPreconnect(content) {
+  // Pages that still load a Google Fonts stylesheet (funnels, the imported
+  // tools export) keep their preconnect hints.
+  if (/fonts\.googleapis\.com\/css/i.test(content)) return content;
   return content.replace(
     /[ \t]*<link\b[^>]*\bhref=["']https:\/\/fonts\.(?:googleapis|gstatic)\.com[^"']*["'][^>]*>\s*\n?/gi,
     (match) => (/rel=["'](?:preconnect|dns-prefetch)["']/i.test(match) ? '' : match)

@@ -29,7 +29,11 @@ test('a long base title drops the brand rather than overflowing', () => {
     `Cost Segregation Study Guide for Short Term Rental Owners in 2026${BRAND}`
   );
   assert.ok(!title.includes(BRAND), `brand should be dropped, got: ${title}`);
-  assert.ok(decodeEntities(title).length <= MAX_TITLE_LENGTH);
+  assert.equal(
+    decodeEntities(title),
+    'Cost Segregation Study Guide for Short Term Rental Owners in 2026',
+    'the base title is kept whole'
+  );
 });
 
 test('trimming never cuts mid-word', () => {

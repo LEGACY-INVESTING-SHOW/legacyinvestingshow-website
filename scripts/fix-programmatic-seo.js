@@ -575,7 +575,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
     <meta name="twitter:image" content="${esc(image)}">
 
     <meta name="theme-color" content="#FAF7F2">
-    <link rel="icon" type="image/png" href="/assets/images/logo.png">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
     ${renderHeadAssets()}
     ${renderStyles()}
     ${renderAnalyticsHead({ gaTrackingId: GA_TRACKING_ID, gtmContainerId: GTM_CONTAINER_ID })}

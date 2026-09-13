@@ -7,9 +7,9 @@
  * - Collapse duplicated `| Legacy Investing Show` suffixes.
  * - Keep the brand suffix only when the base title is short enough that the
  *   whole title still fits in 60 characters (base <= 36).
- * - Otherwise drop the brand and, if the base itself is longer than 60,
- *   trim it at a word boundary. Never cut mid-word and never leave a
- *   dangling colon, dash or open bracket.
+ * - Otherwise drop the brand and keep the base title whole: search engines
+ *   truncate long titles with an ellipsis, which reads better than a title
+ *   cut short in the markup. Only dangling separators are tidied.
  * - `<meta name="title">` mirrors `<title>`.
  * - `og:title` keeps the full, untruncated title (social cards have room);
  *   one is added from the pre-trim title if a page has none.
@@ -177,7 +177,7 @@ function normalizeTitle(raw) {
 
   // Trim first, then decide about the brand, so the decision is made on the
   // title that actually ships. That is what makes a second run a no-op.
-  const base = trimToWidth(baseTitle(title) || title, MAX_TITLE_LENGTH);
+  const base = tidyTail(baseTitle(title) || title);
   if (base.length <= MAX_BASE_WITH_BRAND) {
     return encodeMarkup(`${base}${BRAND_SUFFIX}`);
   }

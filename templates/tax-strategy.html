@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Primary Meta Tags -->
-    <title>{{seoTitle}}</title>
+    <title>{{seoTitle}} | Legacy Investing Show</title>
     <meta name="description" content="{{shortDescription}}. How {{title}} works, who qualifies, what it saves, and how to implement it.">
     <meta name="keywords" content="{{keywords}}">
     <meta name="author" content="Preston Seo">
@@ -20,7 +20,7 @@
     <meta property="og:url" content="https://www.legacyinvestingshow.com/tax-strategies/{{slug}}">
     <meta property="og:title" content="{{seoTitle}}">
     <meta property="og:description" content="{{shortDescription}}">
-    <meta property="og:image" content="https://www.legacyinvestingshow.com/assets/images/og-image.jpg">
+    <meta property="og:image" content="https://www.legacyinvestingshow.com/assets/images/og-home.jpg">
     <meta property="og:site_name" content="Legacy Investing Show">
 
     <!-- Twitter Card -->
@@ -28,17 +28,16 @@
     <meta name="twitter:site" content="@thelegacyshow">
     <meta name="twitter:title" content="{{seoTitle}}">
     <meta name="twitter:description" content="{{shortDescription}}">
-    <meta name="twitter:image" content="https://www.legacyinvestingshow.com/assets/images/og-image.jpg">
+    <meta name="twitter:image" content="https://www.legacyinvestingshow.com/assets/images/og-home.jpg">
 
     <meta name="theme-color" content="#FAF7F2">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/assets/images/logo.png">
-    <link rel="apple-touch-icon" href="/assets/images/logo.png">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
 
     <!-- Stylesheets -->
     {{headAssets}}
-    <link rel="stylesheet" href="/assets/css/guides.css">
+    <link rel="stylesheet" href="/assets/css/guides.css?v=9f8d9de9">
 
     <!-- Schema Markup -->
     <script type="application/ld+json">
@@ -57,7 +56,7 @@
             "name": "Legacy Investing Show",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://www.legacyinvestingshow.com/assets/images/logo.png"
+                "url": "https://www.legacyinvestingshow.com/assets/images/og-home.jpg"
             }
         },
         "datePublished": "{{datePublished}}",
@@ -84,8 +83,21 @@
     {{faqSchema}}
 
     {{analyticsHead}}
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-2578PT1WSS');
+    </script>
+
 </head>
 <body class="guide-page" data-page-type="tax_strategy" data-page-slug="{{slug}}" data-page-title="{{title}}">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     {{tagManagerBody}}
     <a href="#main" class="guide-skip">Skip to main content</a>
 
@@ -230,7 +242,7 @@
 
     {{siteFooter}}
 
-    <script defer src="/assets/js/main.js"></script>
+    <script defer src="/assets/js/main.js?v=5efea1b4"></script>
     <script>
         document.querySelectorAll('.faq-toggle').forEach(function (button) {
             button.addEventListener('click', function () {
