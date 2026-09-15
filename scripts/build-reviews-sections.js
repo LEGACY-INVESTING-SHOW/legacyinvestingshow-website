@@ -497,6 +497,31 @@ function titleRepeatsBody(title, body) {
     return flatten(body).indexOf(head) === 0;
 }
 
+/**
+ * The screenshot of one review on Trustpilot. Screenshots are what people
+ * believe, so they lead each review; the same words follow underneath, so the
+ * page still reads as text. A record with no file on disk simply loses its
+ * picture and keeps its text.
+ */
+function screenshot(review, authorName, rating, dateLabel) {
+    const image = review && review.image;
+    const source = image && (image.path || image.src || image.file);
+    if (!source) return '';
+    const relative = String(source).replace(/^\/+/, '');
+    if (!fs.existsSync(path.join(ROOT, relative))) return '';
+    const width = Number(image.width);
+    const height = Number(image.height);
+    if (!width || !height) return '';
+    /* The body of the review is in the DOM underneath, so the alt text says
+       what the picture is and nothing that is already written below it. */
+    const alt = 'Trustpilot review by ' + authorName
+        + (rating ? ', ' + rating + (Number(rating) === 1 ? ' star' : ' stars') : '')
+        + (dateLabel ? ', ' + dateLabel : '');
+    return '<img class="rv-review__shot" src="/' + esc(relative) + '" alt="' + esc(alt)
+        + '" width="' + width + '" height="' + height + '" loading="lazy" decoding="async"'
+        + ' sizes="(min-width: 700px) 45vw, 92vw">';
+}
+
 function buildTrustpilot() {
     const summary = readJson('data/trustpilot-summary.json');
     const reviews = asArray(readJson('data/trustpilot-reviews.json'));
@@ -521,7 +546,7 @@ function buildTrustpilot() {
             + '\n                            ' + stars(score, 'rv-stars--lg')
             + '\n                            <p class="rv-score__n">' + esc(count) + ' reviews on Trustpilot</p>'
             + '\n                        </div>'
-            + '\n                        <p class="rv-link rv-score__link"><a href="' + esc(profile)
+            + '\n                        <p class="rv-score__link"><a class="btn-secondary" href="' + esc(profile)
             + '" rel="nofollow noopener" target="_blank">See all ' + esc(count) + ' on Trustpilot</a></p>'
             + '\n                    </div>';
         out += '\n                    <p class="rv-tp-summary">Trustpilot rates ' + esc(name) + ' ' + esc(score)
@@ -563,10 +588,14 @@ function buildTrustpilot() {
         const quote = body || title;
         if (!quote) return '';
         const showTitle = title && body && !titleRepeatsBody(title, body);
+        const shot = screenshot(review, authorName, rating, when.label);
         return function (indent) {
             return ''
                 + '\n' + indent + '<article class="rv-review" data-rv="' + K_REVIEW + '">'
-                + (rating ? '\n' + indent + '    <p class="rv-review__rating">' + stars(rating) + '</p>' : '')
+                + (shot ? '\n' + indent + '    ' + shot : '')
+                // The screenshot carries the stars, and says so in its alt text.
+                // Only a review whose picture is missing draws them again.
+                + (rating && !shot ? '\n' + indent + '    <p class="rv-review__rating">' + stars(rating) + '</p>' : '')
                 + (showTitle ? '\n' + indent + '    <h3>' + esc(title.trim()) + '</h3>' : '')
                 + '\n' + indent + '    <blockquote><p>' + esc(quote.trim()) + '</p></blockquote>'
                 + '\n' + indent + '    <p class="rv-review__by"><span class="rv-name">' + esc(authorName) + '</span>'
@@ -581,13 +610,13 @@ function buildTrustpilot() {
     const head = cards.slice(0, REVIEWS_VISIBLE).map(function (card) {
         return card('                        ');
     }).join('');
-    out += '\n                    <div class="rv-cols">' + head + '\n                    </div>';
+    out += '\n                    <div class="rv-tp-grid">' + head + '\n                    </div>';
 
     const rest = cards.slice(REVIEWS_VISIBLE);
     if (rest.length) {
         out += reveal('Show the other ' + rest.length + ' Trustpilot reviews',
             rest.map(function (card) { return card('                                '); }).join(''),
-            'rv-cols');
+            'rv-tp-grid');
     }
 
     return out + '\n                ';

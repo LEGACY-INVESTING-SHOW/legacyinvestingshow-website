@@ -48,9 +48,6 @@ const WRITTEN_INTRO =
     'Posts clients wrote in the Legacy Wealth Blueprint community, with their own names and the month they posted.';
 const AIRBNB_INTRO =
     'Airbnb arbitrage and short-term rental clients, with the figures each of them gives in their own interview.';
-const DISCLAIMER =
-    'Every figure on this page comes from the named client or from the plan written for them, is individual to '
-    + 'that client, and is not a promise of what you will get.';
 
 // SPEC-copy C.4. Each figure, the sentence that explains it, and the post it
 // comes from.
@@ -456,10 +453,6 @@ function buildText() {
     }
 
     /* Closing */
-    lines.push('## Disclaimer');
-    lines.push('');
-    lines.push(DISCLAIMER);
-    lines.push('');
 
     return {
         text: `${lines.join('\n').replace(/\n{3,}/g, '\n\n').trim()}\n`,

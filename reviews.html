@@ -808,17 +808,23 @@
     .rv-note__by .rv-name { font-weight: 600; color: var(--ink); margin-right: 0.5rem; }
 
     /* --- section 3: results by the numbers ---------------------------------- */
-    .rv-numbers { margin-top: 2rem; }
-    .rv-numbers > li { padding: 0.9375rem 0; display: grid; gap: 0.5rem; }
-    @media (min-width: 760px) {
-      .rv-numbers > li { grid-template-columns: minmax(0, 19rem) minmax(0, 1fr); gap: 0 2.5rem; align-items: baseline; }
+    /* Eight client outcomes, two up. Each one is a figure, the sentence that
+       explains it, and the one thing to click. Hairline on top, no box. */
+    .rv-results { list-style: none; margin: 2rem 0 0; padding: 0; display: grid; gap: 2.5rem 3rem; }
+    @media (min-width: 700px) { .rv-results { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    .rv-result {
+      margin: 0; padding: 1.25rem 0 0; border-top: 1px solid var(--line);
+      display: grid; gap: 0.5rem; justify-items: start; align-content: start;
     }
-    .rv-fig {
-      margin: 0; font-size: clamp(1.75rem, 3vw, 2.25rem); line-height: 1.15;
-      font-weight: 700; color: var(--forest); font-variant-numeric: tabular-nums;
-      letter-spacing: -0.025em; text-wrap: balance;
+    .rv-result__fig {
+      margin: 0; font-size: clamp(1.75rem, 2.6vw, 2.125rem); line-height: 1.15;
+      font-weight: 600; color: var(--forest); font-variant-numeric: tabular-nums;
+      letter-spacing: -0.02em; white-space: nowrap;
     }
-    .rv-numbers p:not(.rv-fig):not(.rv-link) { margin: 0; font-size: 1.0625rem; line-height: 1.6; color: var(--ink-soft); max-width: 58ch; }
+    .rv-result__say { margin: 0; font-size: 1.0625rem; line-height: 1.6; color: var(--ink); max-width: 46ch; }
+    .rv-result__go { margin: 0.375rem 0 0; }
+    .rv-result__go .btn-secondary { min-height: 44px; font-size: 0.9375rem; padding: 0.625rem 1.25rem; }
+    .rv-result__go .btn-secondary:focus-visible { outline: 2px solid var(--emerald); outline-offset: 3px; }
 
     /* --- section 4: Trustpilot ----------------------------------------------- */
     .rv-score { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1.75rem; margin: 2rem 0 0; max-width: 40rem; }
@@ -829,6 +835,8 @@
     .rv-score__of { margin: 0; }
     .rv-score__n { margin: 0.5rem 0 0; font-size: 1rem; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
     .rv-score__link { margin: 0; margin-left: auto; }
+    .rv-score__link .btn-secondary { min-height: 44px; font-size: 0.9375rem; padding: 0.625rem 1.25rem; }
+    .rv-score__link .btn-secondary:focus-visible { outline: 2px solid var(--emerald); outline-offset: 3px; }
     .rv-tp-summary { margin: 1.5rem 0 0; font-size: 1.0625rem; line-height: 1.6; color: var(--ink-soft); max-width: 68ch; }
     .rv-bars { list-style: none; margin: 1.75rem 0 0; padding: 0; max-width: 34rem; }
     .rv-bars > li {
@@ -843,11 +851,20 @@
     .rv-bars__n { text-align: right; color: var(--ink); }
     .rv-bars__p { text-align: right; color: var(--ink-soft); }
     .rv-bars__cap { margin: 0.75rem 0 0; font-size: 0.875rem; color: var(--ink-soft); max-width: 34rem; }
-    .rv-review { border-top: 1px solid var(--line); padding-top: 1.25rem; margin-top: 2rem; }
+    /* The reviews run two up, the screenshot first because a screenshot is
+       the believable form, the same words underneath because text is what
+       reads, ranks and can be spoken aloud. */
+    .rv-tp-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2.75rem 3rem; margin: 2rem 0 0; align-items: start; }
+    @media (min-width: 700px) { .rv-tp-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    .rv-review { margin: 0; }
+    .rv-review__shot {
+      display: block; width: 100%; height: auto; margin: 0 0 0.875rem;
+      border-radius: 16px; background: var(--ivory);
+    }
     .rv-review__rating { margin: 0 0 0.625rem; line-height: 1; }
-    .rv-review h3 { margin: 0 0 0.5rem; font-size: 1.125rem; line-height: 1.35; font-weight: 600; }
+    .rv-review h3 { margin: 0 0 0.375rem; font-size: 1rem; line-height: 1.4; font-weight: 600; }
     .rv-review blockquote { margin: 0; padding: 0; border: 0; }
-    .rv-review blockquote p { margin: 0; font-size: 1rem; line-height: 1.6; color: var(--ink-soft); }
+    .rv-review blockquote p { margin: 0; font-size: 0.9375rem; line-height: 1.65; color: var(--ink-soft); }
     .rv-review__by { margin: 0.75rem 0 0; font-size: 0.875rem; color: var(--ink-faint); }
     .rv-review__by .rv-name { font-weight: 600; color: var(--ink); margin-right: 0.5rem; }
     .rv-stars { display: inline-flex; gap: 0.125rem; vertical-align: -0.1em; }
@@ -931,16 +948,6 @@
     .rv-lb__dismiss { display: flex; justify-content: flex-end; padding: 0.5rem 0.5rem 0; margin: 0; }
     .rv-lb__close { font: inherit; font-size: 0.9375rem; font-weight: 600; min-height: 44px; min-width: 44px; padding: 0 0.75rem; background: none; border: 0; color: var(--emerald-deep); cursor: pointer; text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 0.18em; }
     .rv-lb__close:hover { color: var(--forest); }
-
-    /* --- closing ------------------------------------------------------------- */
-    /* The forest CTA answers the forest opener and closes the page. */
-    .rv-col > .cta { margin-top: 0; padding: 2.5rem 2rem; max-width: 46rem; }
-    .rv-col > .cta h2 { font-size: clamp(1.625rem, 2.6vw, 2rem); line-height: 1.2; max-width: 20ch; }
-    @media (max-width: 599px) {
-      .cta__actions { flex-direction: column; align-items: stretch; }
-      .cta__actions > a { text-align: center; }
-    }
-    .rv-disclaimer { margin: 2rem 0 0; font-size: 0.9375rem; line-height: 1.6; color: var(--ink-soft); max-width: 68ch; }
 
     @media (prefers-reduced-motion: reduce) {
       .rv-play__btn { transition: none; }
@@ -1397,62 +1404,46 @@
             <div class="container-custom">
                 <div class="rv-col">
                     <h2>Client results by the numbers</h2>
-                    <ul class="list-rows rv-numbers">
-                        <li data-rv="client result figure">
-                            <p class="rv-fig">Over $20,000</p>
-                            <div>
-                                <p>Stephanie Dailey saved this much in taxes in her first year in the Legacy Wealth Blueprint.</p>
-                                <p class="rv-link"><a href="/blog/stephanie-dailey-legacy-wealth-blueprint-case-study">Read Stephanie&rsquo;s case study</a></p>
-                            </div>
+                    <ul class="rv-results">
+                        <li class="rv-result" data-rv="client result figure">
+                            <p class="rv-result__fig">Over $20,000</p>
+                            <p class="rv-result__say">Stephanie Dailey saved this much in taxes in her first year in the Legacy Wealth Blueprint.</p>
+                            <p class="rv-result__go"><a class="btn-secondary" href="/blog/stephanie-dailey-legacy-wealth-blueprint-case-study">Read Stephanie&rsquo;s case study</a></p>
                         </li>
-                        <li data-rv="client result figure">
-                            <p class="rv-fig">Just under $100,000</p>
-                            <div>
-                                <p>Abigail ran her own first-year ROI on the strategies she implemented and got this number.</p>
-                                <p class="rv-link"><a href="/blog/abigail-legacy-wealth-blueprint-case-study">Read Abigail&rsquo;s case study</a></p>
-                            </div>
+                        <li class="rv-result" data-rv="client result figure">
+                            <p class="rv-result__fig">Just under $100,000</p>
+                            <p class="rv-result__say">Abigail ran her own first-year ROI on the strategies she implemented and got this number.</p>
+                            <p class="rv-result__go"><a class="btn-secondary" href="/blog/abigail-legacy-wealth-blueprint-case-study">Read Abigail&rsquo;s case study</a></p>
                         </li>
-                        <li data-rv="client result figure">
-                            <p class="rv-fig">$88,000</p>
-                            <div>
-                                <p>A $300,000 W-2 earner found this much through entity setup, deductions, withholding and retirement account sequencing after a CPA missed it.</p>
-                                <p class="rv-link"><a href="/blog/88k-tax-savings-cpa-missed-case-study">Read the $88K case study</a></p>
-                            </div>
+                        <li class="rv-result" data-rv="client result figure">
+                            <p class="rv-result__fig">$88,000</p>
+                            <p class="rv-result__say">A $300,000 W-2 earner found this much through entity setup, deductions, withholding and retirement account sequencing after a CPA missed it.</p>
+                            <p class="rv-result__go"><a class="btn-secondary" href="/blog/88k-tax-savings-cpa-missed-case-study">Read the $88K case study</a></p>
                         </li>
-                        <li data-rv="client result figure">
-                            <p class="rv-fig">$90,000</p>
-                            <div>
-                                <p>Chad grossed about this much in his first year running one short-term rental in North Florida, at about $2,500 a month in cash flow.</p>
-                                <p class="rv-link"><a href="/blog/chad-90k-year-one-property">Read Chad&rsquo;s case study</a></p>
-                            </div>
+                        <li class="rv-result" data-rv="client result figure">
+                            <p class="rv-result__fig">$90,000</p>
+                            <p class="rv-result__say">Chad grossed about this much in his first year running one short-term rental in North Florida, at about $2,500 a month in cash flow.</p>
+                            <p class="rv-result__go"><a class="btn-secondary" href="/blog/chad-90k-year-one-property">Read Chad&rsquo;s case study</a></p>
                         </li>
-                        <li data-rv="client result figure">
-                            <p class="rv-fig">$259,700</p>
-                            <div>
-                                <p>Mia and Jay&rsquo;s wealth plan is built to remove $90,000 of annual tax and free this much in year one.</p>
-                                <p class="rv-link"><a href="/blog/mia-jay-wealth-plan">Read Mia and Jay&rsquo;s wealth plan</a></p>
-                            </div>
+                        <li class="rv-result" data-rv="client result figure">
+                            <p class="rv-result__fig">$259,700</p>
+                            <p class="rv-result__say">Mia and Jay&rsquo;s wealth plan is built to remove $90,000 of annual tax and free this much in year one.</p>
+                            <p class="rv-result__go"><a class="btn-secondary" href="/blog/mia-jay-wealth-plan">Read Mia and Jay&rsquo;s wealth plan</a></p>
                         </li>
-                        <li data-rv="client result figure">
-                            <p class="rv-fig">$385,000</p>
-                            <div>
-                                <p>Soojin&rsquo;s 2026 wealth plan runs two scenarios, $101K in the conservative case and this in the aggressive one.</p>
-                                <p class="rv-link"><a href="/blog/soojin-wealth-plan">Read Soojin&rsquo;s wealth plan</a></p>
-                            </div>
+                        <li class="rv-result" data-rv="client result figure">
+                            <p class="rv-result__fig">$385,000</p>
+                            <p class="rv-result__say">Soojin&rsquo;s 2026 wealth plan runs two scenarios, $101K in the conservative case and this in the aggressive one.</p>
+                            <p class="rv-result__go"><a class="btn-secondary" href="/blog/soojin-wealth-plan">Read Soojin&rsquo;s wealth plan</a></p>
                         </li>
-                        <li data-rv="client result figure">
-                            <p class="rv-fig">$118,500 to $339,760</p>
-                            <div>
-                                <p>Andreea&rsquo;s plan covers a $770K severance year, and this is the year-one range on Path A.</p>
-                                <p class="rv-link"><a href="/blog/andreea-wealth-plan">Read Andreea&rsquo;s wealth plan</a></p>
-                            </div>
+                        <li class="rv-result" data-rv="client result figure">
+                            <p class="rv-result__fig">$118,500 to $339,760</p>
+                            <p class="rv-result__say">Andreea&rsquo;s plan covers a $770K severance year, and this is the year-one range on Path A.</p>
+                            <p class="rv-result__go"><a class="btn-secondary" href="/blog/andreea-wealth-plan">Read Andreea&rsquo;s wealth plan</a></p>
                         </li>
-                        <li data-rv="client result figure">
-                            <p class="rv-fig">$78,400</p>
-                            <div>
-                                <p>Josh&rsquo;s plan clears $38K of credit card debt through a HELOC refinance first, then builds this much of year-one ROI.</p>
-                                <p class="rv-link"><a href="/blog/josh-wealth-plan">Read Josh&rsquo;s wealth plan</a></p>
-                            </div>
+                        <li class="rv-result" data-rv="client result figure">
+                            <p class="rv-result__fig">$78,400</p>
+                            <p class="rv-result__say">Josh&rsquo;s plan clears $38K of credit card debt through a HELOC refinance first, then builds this much of year-one ROI.</p>
+                            <p class="rv-result__go"><a class="btn-secondary" href="/blog/josh-wealth-plan">Read Josh&rsquo;s wealth plan</a></p>
                         </li>
                     </ul>
                 </div>
@@ -1471,7 +1462,7 @@
                             <span class="rv-stars rv-stars--lg" role="img" aria-label="4.2 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="part" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span>
                             <p class="rv-score__n">66 reviews on Trustpilot</p>
                         </div>
-                        <p class="rv-link rv-score__link"><a href="https://www.trustpilot.com/review/firstairbnb.com" rel="nofollow noopener" target="_blank">See all 66 on Trustpilot</a></p>
+                        <p class="rv-score__link"><a class="btn-secondary" href="https://www.trustpilot.com/review/firstairbnb.com" rel="nofollow noopener" target="_blank">See all 66 on Trustpilot</a></p>
                     </div>
                     <p class="rv-tp-summary">Trustpilot rates Legacy Investing Show By Preston Seo 4.2 out of 5 across 66 reviews, 77% of them five star and 9% one star. The 58 below are the ones captured on 13 September 2026. Preston Seo does not control that page.</p>
                     <ul class="rv-bars">
@@ -1482,29 +1473,29 @@
                         <li><span class="rv-bars__lab">One star</span><span class="rv-bars__track" aria-hidden="true"><span class="rv-bars__fill" style="width:9%"></span></span><span class="rv-bars__n">6</span><span class="rv-bars__p">9%</span></li>
                     </ul>
                     <p class="rv-bars__cap">The 66 reviews on the Trustpilot profile, by rating.</p>
-                    <div class="rv-cols">
+                    <div class="rv-tp-grid">
                         <article class="rv-review" data-rv="trustpilot review rating star">
-                            <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="4 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="off" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                            <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-01-lauren.webp" alt="Trustpilot review by Lauren, 4 stars, Sep 12, 2026" width="1124" height="640" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                             <h3>Wealth of knowledge - put knowledge into Action</h3>
                             <blockquote><p>The course information is a wealth of knowledge. The thing is putting the information into action. Without that on a student's part, there is no success. The community portion is one of the best pieces of this platform and is most helpful. I would say more one-on-one with each student for the price, would have given it a 5-star review.</p></blockquote>
                             <p class="rv-review__by"><span class="rv-name">Lauren</span><time datetime="2026-09-12">Sep 12, 2026</time></p>
                             <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6aa54752fc993d9933e464e0" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                         </article>
                         <article class="rv-review" data-rv="trustpilot review rating star">
-                            <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                            <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-02-j-t.webp" alt="Trustpilot review by j T, 5 stars, Sep 9, 2026" width="1124" height="550" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                             <h3>Highly recommend!!</h3>
                             <blockquote><p>The thoroughness of this course is amazing!  If I would have tried to launch a short term rental without Preston's direction and advice I would have crashed and burned!  Best return on my investment to date!</p></blockquote>
                             <p class="rv-review__by"><span class="rv-name">j T</span><time datetime="2026-09-09">Sep 9, 2026</time></p>
                             <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6aa1cb08e6e99373a51efd09" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                         </article>
                         <article class="rv-review" data-rv="trustpilot review rating star">
-                            <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                            <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-03-isaac-e.webp" alt="Trustpilot review by Isaac E., 5 stars, Sep 9, 2026" width="1124" height="594" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                             <blockquote><p>Great program, went from a projected 5 figure tax bill to getting a small return just implementing a few simple tax strategies. Highly recommend, Preston and his team are dialed on this stuff and the support is great to have a step by step plan given to you.</p></blockquote>
                             <p class="rv-review__by"><span class="rv-name">Isaac E.</span><time datetime="2026-09-09">Sep 9, 2026</time></p>
                             <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6aa187e08566d062b61d9766" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                         </article>
                         <article class="rv-review" data-rv="trustpilot review rating star">
-                            <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                            <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-04-prestige-estates-properties.webp" alt="Trustpilot review by Prestige Estates Properties, 5 stars, Sep 3, 2026" width="1124" height="954" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                             <h3>A+ experience</h3>
                             <blockquote><p>I’ve had a great experience with Preston and the Legacy Wealth Blueprint team. In my first year, the strategies we implemented helped me identify over $80,000 in tax savings, and I’m currently on track to increase my net worth by roughly $127,000.
 
@@ -1515,14 +1506,14 @@ I’d absolutely recommend Preston and the LWB team to anyone looking to become 
                             <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6a99d1436129ca8fcc9bb2fe" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                         </article>
                         <article class="rv-review" data-rv="trustpilot review rating star">
-                            <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                            <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-05-albert.webp" alt="Trustpilot review by Albert, 5 stars, Apr 23, 2026" width="1124" height="684" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                             <h3>Excellent Financial Course</h3>
                             <blockquote><p>This is an amazing course and I highly recommend it to anyone who are passionate on saving money and maximizing tax saving strategies. I also had the pleasure to speak to Luisa, who is part of the team that assists you with your wealth building. She was extremely helpful and patient with my questions. I consider her a great asset to the program. This is a 10/10 course, but make sure you commit.</p></blockquote>
                             <p class="rv-review__by"><span class="rv-name">Albert</span><time datetime="2026-04-23">Apr 23, 2026</time></p>
                             <p class="rv-link"><a href="https://www.trustpilot.com/reviews/69ea61226b045d305f1ae9f5" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                         </article>
                         <article class="rv-review" data-rv="trustpilot review rating star">
-                            <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                            <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-06-amber-lynn-zuniga.webp" alt="Trustpilot review by Amber Lynn Zuniga, 5 stars, Feb 2, 2026" width="1124" height="550" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                             <blockquote><p>Very informative event that will help anyone save more. I would suggest you go to his next one ASAP! :) Taking action NOW is the best move! #blessings# Galatians 5:22-23#</p></blockquote>
                             <p class="rv-review__by"><span class="rv-name">Amber Lynn Zuniga</span><time datetime="2026-02-02">Feb 2, 2026</time></p>
                             <p class="rv-link"><a href="https://www.trustpilot.com/reviews/697fdec75e7320562762d577" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
@@ -1534,16 +1525,16 @@ I’d absolutely recommend Preston and the LWB team to anyone looking to become 
                             <span class="rv-reveal__hide">Show fewer</span>
                         </summary>
                         <div>
-                            <div class="rv-cols">
+                            <div class="rv-tp-grid">
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-07-ashley-a.webp" alt="Trustpilot review by Ashley A, 5 stars, Feb 2, 2026" width="1124" height="730" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <h3>Take the time to do this!</h3>
                                     <blockquote><p>For a small $50 investment for a 3 day class this is definately worth it. Yes, there will be a small section to pitch other services (which I'm thinking ill move forward with) but the rest were broken out into 1 hour long sessions to maximize how you spend and invest money- all incomes were covered. Not everyone has to be interested in real estate. Again for $50 if all you do is fix your W2 contribution and set up your kids for a better future I would recommend this class.</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Ashley A</span><time datetime="2026-02-02">Feb 2, 2026</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/697fd0366e5e3f08adc8ba27" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-08-andy.webp" alt="Trustpilot review by Andy, 5 stars, Feb 1, 2026" width="1124" height="1402" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <h3>Get the VIP</h3>
                                     <blockquote><p>Participated in the program that was organized between Jan 30 and Feb 1st. 
 
@@ -1558,27 +1549,27 @@ Preston just flies through slides and there is not much time to consume the info
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/697f9004a467f980a8a87532" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-09-emma-faus.webp" alt="Trustpilot review by Emma Faus, 5 stars, Feb 1, 2026" width="1124" height="864" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <h3>Great Course</h3>
                                     <blockquote><p>This three-day course was an excellent introduction into so many different topics- tax strategies, business credit, investment optimization, AirBnB rentals, entity structure, types of debt, etc. I know most people may feel overwhelmed by the amount of information, but I thought it was great because it gave me so much more to study and talk about with my CPA. If he didn't list all of these deductions at all different profit levels, I would have never known about them in the first place. Now at least I know what I can look into. Also, the quarterly plan at the end was so great! Really tied everything together for what to do next. Preston is so knowledgeable. So grateful for his time.</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Emma Faus</span><time datetime="2026-02-01">Feb 1, 2026</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/697f8f186461a74ccd9bf68b" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-10-james-wilde.webp" alt="Trustpilot review by James Wilde, 5 stars, Feb 1, 2026" width="1124" height="640" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <h3>Stop leaving it on the table...</h3>
                                     <blockquote><p>The Legacy Investing Show is an eye-opening experience!  Three days packed with potential tax savings, you might be currently overpaying...  The IRS is not planning to fund the special events in your life, so why pay them like they are?  Invest in yourself and attend Legacy's next Investing Show.</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">James Wilde</span><time datetime="2026-02-01">Feb 1, 2026</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/697f856445932978d38193ae" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="4 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="off" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-11-meredith-mckay-otmishi.webp" alt="Trustpilot review by Meredith McKay Otmishi, 4 stars, Feb 1, 2026" width="1124" height="908" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <blockquote><p>I am currently a W-2 earner who is getting ready to venture into the LLC world with a side hustle. I received a roadmap on how to best structure my new business for the best tax savings. However, I also gained great insight into the steps I need to take to align my risk tolerance to my investment strategy for retirement, how to utilize good debt to build my business, and learned about tax strategies that will hopefully apply to me in the near future.  The only downside to this presentation is that the information was presented super fast, so I recommend purchasing the VIP package to gain access to the recordings. There is also a sales pitch approach that gets a little annoying, but Preston is just selling his own business, of course - cannot discredit him for that.</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Meredith McKay Otmishi</span><time datetime="2026-02-01">Feb 1, 2026</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/697f8310f386ee894f238e16" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="4 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="off" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-12-matt-brower.webp" alt="Trustpilot review by Matt Brower, 4 stars, Feb 1, 2026" width="1124" height="730" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <h3>Worth the time!</h3>
                                     <blockquote><p>The Tax-Free income challenge is a like drinking from a fire hose, but they share a lot of GREAT information that most business owners aren't aware of. There is a sales pitch on day 2 but if you are someone that doesn't have the time to do things or dont know where to start, it's probably worth the investment.
 
@@ -1587,20 +1578,20 @@ Preston just flies through slides and there is not much time to consume the info
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/697f8269a308664f8452327b" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-13-va-vang.webp" alt="Trustpilot review by va vang, 5 stars, Feb 1, 2026" width="1124" height="728" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <h3>Preston and his guest speaker were very knowledgeable and informative.</h3>
                                     <blockquote><p>Preston and his guest speaker were very knowledgeable. There's lots of information to retained, I recommend screen shooting, to keep up. These are great tax and business strategies at a high level because every business is different. Overall, I thought it was worth attending to get an high level of understanding and doing further research to tailor it to your specific need.</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">va vang</span><time datetime="2026-02-01">Feb 1, 2026</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/697f81d09ee58480c1403f30" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-14-ryan-plewe.webp" alt="Trustpilot review by Ryan Plewe, 5 stars, Feb 1, 2026" width="1124" height="640" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <blockquote><p>Preston’s presentation was really helpful for me as a business owner because he brought up so many different tax saving strategies that I’ve only heard bits and pieces about previously, or had never heard about. It gave me real items to discuss with my CPA to be sure I’m saving as much as I can in taxes.</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Ryan Plewe</span><time datetime="2026-02-01">Feb 1, 2026</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/697f81a99b185ee290eba17a" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-15-leah-hudspeth.webp" alt="Trustpilot review by Leah Hudspeth, 5 stars, Feb 1, 2026" width="1124" height="1088" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <h3>BOOM THIS IS REAL</h3>
                                     <blockquote><p>Learned more than I ever thought was possible.
 
@@ -1613,58 +1604,58 @@ I've never been so excited for tax season.</p></blockquote>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/697f819d23193978ea16ff6a" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-16-angi-dimattia-rigby.webp" alt="Trustpilot review by Angi DiMattia Rigby, 5 stars, Feb 1, 2026" width="1124" height="594" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <h3>Worth the invenstment!</h3>
                                     <blockquote><p>Preston and his crew give clear information and examples of how his strategies may be implemented right away. If you are new to managing your taxes, investing, or short-term rentals, the program will open your eyes to opportunities you didn't even know existed.</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Angi DiMattia Rigby</span><time datetime="2026-02-01">Feb 1, 2026</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/697f8191dd897f2d0a9dadba" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-17-alyssa-vasquez.webp" alt="Trustpilot review by Alyssa Vasquez, 5 stars, Feb 1, 2026" width="1124" height="506" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <blockquote><p>Incredible financial strategies, highly recommend! It has fast - track my husband and I financial planning for this year!</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Alyssa Vasquez</span><time datetime="2026-02-01">Feb 1, 2026</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/697f8182a06a7a4a672878c0" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-18-brian-inouye.webp" alt="Trustpilot review by Brian Inouye, 5 stars, Feb 1, 2026" width="1124" height="594" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <blockquote><p>Making the complex strategies understandable through real-world examples helped me to put it into my own context.  Fast-based, but with the VIP access to the session recordings, this allowed for more content delivery.</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Brian Inouye</span><time datetime="2026-02-01">Feb 1, 2026</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/697f8162f1925b582ed5fda2" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-19-s-leal.webp" alt="Trustpilot review by S Leal, 5 stars, Feb 1, 2026" width="1124" height="506" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <blockquote><p>Absolutely incredible.  Best take aways, 529 plan.  QBI   Can't wait to meet with my CPA to see what we can implement.</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">S Leal</span><time datetime="2026-02-01">Feb 1, 2026</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/697f812217d10cdeaf425a7a" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-20-selah.webp" alt="Trustpilot review by Selah, 5 stars, Feb 1, 2026" width="1124" height="506" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <blockquote><p>Very helpful info for the 3-day webinar. Ability to get recordings as well is helpful to look back on and take action. Thank you!</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Selah</span><time datetime="2026-02-01">Feb 1, 2026</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/697f80f33c4d96d5fa0a8cd5" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-21-jeanna-morris.webp" alt="Trustpilot review by Jeanna Morris, 5 stars, Feb 1, 2026" width="1124" height="594" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <blockquote><p>Excellent 3 day session - I attended the Tax Free Wealth Challenge - learned a ton and enjoyed the sessions. I took a ton of notes and will be implementing some of the strategies immediately! Thanks Preston and team for the great information!</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Jeanna Morris</span><time datetime="2026-02-01">Feb 1, 2026</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/697f80ebe507118d442cd257" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-22-teresa.webp" alt="Trustpilot review by Teresa, 5 stars, Nov 10, 2025" width="1124" height="818" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <h3>The real deal of family financial planning.</h3>
                                     <blockquote><p>Very informative, great presentation, great teacher. For the 3 days he covered taxes, finances, big beauty bill, passive income and a few other topics. Preston was very thorough and punctual. I would have liked him to talk about what a person who is already retired should do to help their finances at this time in their life. Just like most Americans, seniors also were not shown these strategies. Therefore, a senior would be in a more serious situation but still need help to plan for future generations and their current situation. This is a class every American could use especially &quot;The Middle Class&quot;. Loved it Teresa</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Teresa</span><time datetime="2025-11-10">Nov 10, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/691177c21b9fcc1795131213" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-23-amy-cochran-westbrook.webp" alt="Trustpilot review by Amy Cochran Westbrook, 5 stars, Nov 9, 2025" width="1124" height="908" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <h3>Good ROI on 3 Day Tax-Free Challenge</h3>
                                     <blockquote><p>I attended Preston's Tax-Free Income challenge over 3 days.  I was glad I paid for the VIP upgrade because he shared a TON of info.  This is for people who are making good income and are looking to save more in taxes through tax loopholes and creating business entities (like LLCs).  His expertise is in AirBnB short-term rentals and he discusses how to use that strategy.  You will walk away with a lot of valuable info and tax savings if you attend and take action on the 3 days of strategies shared.  He does offer an additional paid program if you choose to work with him further.  If you attend, pay for the VIP upgrade and workbook.  It's worth it.  And, plan to attend all 3 days - the info builds on each other (day 3 makes more sense if you watched day 1).</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Amy Cochran Westbrook</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910e144dbf32b7c5cb8758d" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-24-gloria-ybarra.webp" alt="Trustpilot review by Gloria Ybarra, 5 stars, Nov 9, 2025" width="1124" height="730" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <h3>Road to becoming tax free</h3>
                                     <blockquote><p>Enjoyed attending the 3-day tax free challenge, wealth of information on how to become tax-free       or pay less taxes.  Answered questions that I/we 
 had with regards to our W2 Employee, S-Corp, LLC, 529, QBI deduction, PTET, Trusts, Augusta Rule, how to structure, etc. Now, to work on what is needed.  Thank you so much for everything that you discussed!</p></blockquote>
@@ -1672,14 +1663,14 @@ had with regards to our W2 Employee, S-Corp, LLC, 529, QBI deduction, PTET, Trus
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910dd07cecada9209ba9439" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="4 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="off" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-25-tracy-lee.webp" alt="Trustpilot review by Tracy Lee, 4 stars, Nov 9, 2025" width="1124" height="640" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <h3>Amazing Information</h3>
                                     <blockquote><p>Amazing about of info in a short amount of time. It is overload though and hard to retain everything so I am glad I purchased the recorded version. Would highly recommend everyone spend the 3-days to get the basics. Interested in working one-on-one to actually get this implemented. Only giving a 4 as its soooo much info in 3 days.</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Tracy Lee</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d69fabad93f9214237fb" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-26-eva-gaghansa.webp" alt="Trustpilot review by Eva Gaghansa, 5 stars, Nov 9, 2025" width="1124" height="954" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <h3>Let's get it!</h3>
                                     <blockquote><p>These was a great experience because although I have some spread out knowledge about everything Preston talked about; combine knowledge with my husband; only one of us can focus on these. Since my husband work full-time; I've decided to attend the past 3 days.
 Everything makes sense now and are super applicable steps. We owe this to ourselves to fix our financial situations and since I, too recently starting part time in real estate; the dots are connecting. 
@@ -1690,33 +1681,33 @@ Thank you Preston &amp; team!!</p></blockquote>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d5e6821dee0080cbbe80" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-27-loan-dang.webp" alt="Trustpilot review by Loan Dang, 5 stars, Nov 9, 2025" width="1124" height="594" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <h3>A genuinely helpful &amp; eye opening experience.</h3>
                                     <blockquote><p>Preston is very knowledgable and down to Earth. He's done well for himself and his family at such a young age and is now doing more by helping others get the opportunity to do well for themselves too. Bravo! Congrats on your success!</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Loan Dang</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d5a105732d63575a1563" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-28-lea-bush.webp" alt="Trustpilot review by Lea Bush, 5 stars, Nov 9, 2025" width="1124" height="550" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <h3>No gate keeping, here!</h3>
                                     <blockquote><p>What I appreciated the most was what he revealed about the steps he personally has taken to be in a better position. He gave us everything to take action and be better financially today.</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Lea Bush</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d58d184047a12a01203f" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-29-earl.webp" alt="Trustpilot review by Earl, 5 stars, Nov 9, 2025" width="1124" height="640" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <blockquote><p>I didn’t realize how much I didn’t know until I took this class. A lot of the terms were familiar, but I never really understood how everything fit together. These three days helped me connect the dots and figure out where I’m at and what to do next. It was packed with useful info—legal, financial, tax stuff—and how it all works as a system. Super helpful.</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Earl</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d53a9441d71d7d5b3f52" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-30-high-country-construction-of-d.webp" alt="Trustpilot review by High Country Construction of D, 5 stars, Nov 9, 2025" width="1124" height="730" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <blockquote><p>Excellent firehouse of information!  We learned a lot and have a long list of “to dos” and things to speak to our professional team about.  The class is fast and furious and can be overwhelming so the strategy that would work best is get the VIP ticket in order to get the documentation and video replays.  Only take what you can absorb at the moment and then be sure to revisit the videos and notes periodically.  Loved the class and highly recommend to everyone looking to build wealth and keep it!</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">High Country Construction of D</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d4ab53e50c9c87929349" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-31-brady-b.webp" alt="Trustpilot review by Brady B., 5 stars, Nov 9, 2025" width="1124" height="864" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <h3>Tax Strategies</h3>
                                     <blockquote><p>Having a side business is absolutely essential in today’s financial climate. The insights shared in this 3-Day Tax Challenge completely reshaped how I view money, taxes, and long-term wealth building. I learned how W-2 tax savings can open the door to real financial freedom, and it’s motivated me to take action and turn these strategies into reality.
 
@@ -1725,175 +1716,175 @@ This approach might not work for everyone, but it truly can apply to anyone will
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d48110c290ce93c5a19a" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-32-ian-whiteley.webp" alt="Trustpilot review by Ian Whiteley, 5 stars, Nov 9, 2025" width="1124" height="684" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <h3>Well worth the investment</h3>
                                     <blockquote><p>The 3 day session was jam packed full of useful information and strategies that can be implemented right away. I paid for the VIP access and found the extra 1 hour sessions to ask direct questions to Preston incredibly helpful for my personal situation. I highly recommend this course for anyone serious about changing/adding to their financial outlook.</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Ian Whiteley</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d42279330ef69887aeae" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-33-rachel-ramirez.webp" alt="Trustpilot review by Rachel Ramirez, 5 stars, Nov 9, 2025" width="1124" height="550" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <blockquote><p>I learned a lot from attending the 3-day seminar.  I'm a CPA, and I was especially interested about learning about entity structure and the PTET benefits.  Well worth the time!</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Rachel Ramirez</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d41cede6ab4cffda83e9" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-34-lauren.webp" alt="Trustpilot review by Lauren, 5 stars, Nov 9, 2025" width="1124" height="730" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <h3>LWB Members Free Training Opportunity</h3>
                                     <blockquote><p>Preston allowed LWB members to get in on this training. I felt this training outlined tax strategies much more in detail than some of his other videos. This was invaluable to learning and understanding more about business formation and tax strategies in my state. Also, the more I hear this stuff them more familiar I am getting with it- so anything repeated is great review for me. Thank you Preston and team for allowing LWB members in on this training!!</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Lauren</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d4182cb4495ebcab811e" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-35-rigo-vazquez.webp" alt="Trustpilot review by Rigo Vazquez, 5 stars, Nov 9, 2025" width="1124" height="594" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <h3>Really good overview of tax strategies!</h3>
                                     <blockquote><p>Really good overview of all the tax advantage strategies to consider! Some can be implemented immediately and others are for longer term consideration. But the presentation is a fantastic way to examine your situation and kick-off your tax/financial planning.</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Rigo Vazquez</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d3f7111eb0442541509e" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-36-mitch.webp" alt="Trustpilot review by Mitch, 5 stars, Nov 9, 2025" width="1124" height="594" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <h3>Tax Free Income is always good!</h3>
                                     <blockquote><p>I'm on day 3 of Preston's Tax Free Income Challenge. This 3 days seminar has been very informative. Lots of tips for tax deductions on individuals and business owners. This is a must for high earners who wants to cut their tax bills and learn a new business.</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Mitch</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d3f7b2655642f6a7f88d" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-37-ellie.webp" alt="Trustpilot review by Ellie, 5 stars, Nov 9, 2025" width="1124" height="594" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <blockquote><p>It gives you 100+ times the value for what you pay. I followed Preston for quite a few months before I booked his seminar and it’s going to save me thousands of dollars in taxes and give me a fresh perspective for my business. Thank you Preston.</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Ellie</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d3e2d66bc0be3e6888a1" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="4 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="off" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-38-lan-tran.webp" alt="Trustpilot review by Lan Tran, 4 stars, Nov 9, 2025" width="1124" height="684" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <blockquote><p>Good content on taxes. Felt sincere in helping everyone do better with taxes and elevating our knowledge. I thought it could have been more interactive with questions after each session would have been helpful.  Some number crunching could have been more clearer.  Material dispursement could have been better. Lots of people not getting workbooks and links to VIP.. felt could have been better.</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Lan Tran</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d3c5d246c5913ea6cc30" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-39-german-a.webp" alt="Trustpilot review by GERMAN A, 5 stars, Nov 9, 2025" width="1124" height="594" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <blockquote><p>Great value!!
 The way course is structured made it easy to follow. All the information is clearly explained. Really recommend taking the course to structure your planning and tax situation.</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">GERMAN A</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d3abd6032936cfdd7f6c" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-40-susan-stultz.webp" alt="Trustpilot review by Susan Stultz, 5 stars, Nov 9, 2025" width="1124" height="774" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <blockquote><p>Mind Blown!!! I had high expectations for the session with Preston SEO and his team because I am just starting out at 57yrs old trying to change my money perspective from the ways I was taught from generations before.  I was absolutely amazed my the information and volume of content that they were willing to share and the expertise they have. If you don’t have a solid plan for building generational wealth, you should run not walk to Legacy! Thank you Preston and your team for making a life altering shift for the better in my future &amp; my kids etc.</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Susan Stultz</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d39e614a150ef7486e88" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-41-juliem.webp" alt="Trustpilot review by JulieM, 5 stars, Nov 9, 2025" width="1124" height="506" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <blockquote><p>This course was helpful and I learned so much I never knew. I'm excited to take the next steps.</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">JulieM</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d3948f52a0ea7ceecc8a" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-42-david-guevara.webp" alt="Trustpilot review by David Guevara, 5 stars, Nov 9, 2025" width="1124" height="594" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <blockquote><p>I think this is great all the info it’s aplicable worth every penny I dint want to keep paying taxes when you don’t have too thank you PRESTON I feel relief that my life it’s about to change no more pay Check to pay check and creating generational wealth</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">David Guevara</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d38395601df05ae5fee2" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-43-ellen-schooler.webp" alt="Trustpilot review by Ellen Schooler, 5 stars, Nov 9, 2025" width="1124" height="550" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <blockquote><p>Preston was very well prepared and gave real life examples regarding how each tax rule applied. The teaching was excellent and definitely worth the time!</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Ellen Schooler</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d3795b1cc99c3f423184" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-44-micki-sawyer.webp" alt="Trustpilot review by Micki Sawyer, 5 stars, Nov 9, 2025" width="1124" height="594" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <blockquote><p>A LOT of information! This is a new knowledge seek for me so it was a titch overwhelming but, I will implement some simple strategies right away to make a big difference. I have definitely had a shift in thinking about my approach to money!</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Micki Sawyer</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d37075d1e351f266cfa3" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-45-isandel-agosto.webp" alt="Trustpilot review by Isandel Agosto, 5 stars, Nov 9, 2025" width="1124" height="506" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <h3>Great tax return and income boosting learning experience</h3>
                                     <blockquote><p>Great learning experience towards a holistic take on tax planning and income boosting.</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Isandel Agosto</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d36be73afeeb6b067de4" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="4 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="off" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-46-esther-m.webp" alt="Trustpilot review by Esther m, 4 stars, Nov 9, 2025" width="1124" height="774" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <blockquote><p>Preston is very knowledgeable. Lots of good information in the challenge I did not know about. He talks a little fast and frantic. Thank goodness I got the VIP so I could see the replay. I would have liked to have the replays to be available next day or later that day after session. It also would have been nice to have the workbook bundled with VIP. 
 It’s a lot of info to go through but really valuable especially if you are trying to save $ on taxes as W2 employee trying to do a side hustle. Heart 💗 Preston . Thank you.</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Esther m</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d36c965cbb61a83c0925" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="4 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="off" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-47-lulu.webp" alt="Trustpilot review by Lulu, 4 stars, Nov 9, 2025" width="1124" height="594" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <blockquote><p>A comprehensive and detailed 3-day workshop on tax savings, investment growth, income acceleration via LLC/S-corp,  applicable to beginners and advanced financial strategy needs. Definitely worth the investment.</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Lulu</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d3676cd2292c843f6912" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-48-chrys-g.webp" alt="Trustpilot review by Chrys G., 5 stars, Nov 9, 2025" width="1124" height="640" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <blockquote><p>Jam packed with great information, loved the slides with the step by step system to implement what Preston taught during this 3 day online event. 
 Would like to have seen/heard more about Spendthrift Trusts and also about 508 c(1)(a) structures.</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Chrys G.</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d35e34dda2c73d9fa938" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-49-wayne-thompson.webp" alt="Trustpilot review by Wayne Thompson, 5 stars, Nov 9, 2025" width="1124" height="640" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <blockquote><p>A couple of plus ++:  GREAT 3-day sessions; super valuable to a wide cross section of folks, business owners or not this course will definitely pay you back 10X in $$$ savings.  A couple of minus -- Did not appreciate the long sales pitch in the middle of Day 2 class; could have made that optional at the end of Day 3.</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Wayne Thompson</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d356d71ba63b45bbfa09" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-50-barb-sentieri-randell.webp" alt="Trustpilot review by Barb Sentieri-Randell, 5 stars, Nov 9, 2025" width="1124" height="550" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <h3>Highly Recommend</h3>
                                     <blockquote><p>Shared great information, often with step-by-step instruction. Used real examples and addressed participant questions. VERY informative. Provided clarity on complex tax issues. Highly recommend!</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Barb Sentieri-Randell</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d353818e473432c37a3d" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-51-niulka-m-canal-oficial.webp" alt="Trustpilot review by Niulka M. Canal Oficial, 5 stars, Nov 9, 2025" width="1124" height="550" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <blockquote><p>The three days challenge was great!!! I learned many tools to be more successful in my business strategy! and now I have a map where to beginning</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Niulka M. Canal Oficial</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d34905fd3f07057f6917" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-52-aa.webp" alt="Trustpilot review by AA, 5 stars, Nov 9, 2025" width="1124" height="550" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <blockquote><p>Great overview of tax strategies!  Lot of Q&amp;A and resources offered for help with tax planning.  Good information on how to maximize income, wealth and legacy.</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">AA</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d346770ae4daf78cad4b" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-53-gina-carling.webp" alt="Trustpilot review by Gina Carling, 5 stars, Nov 9, 2025" width="1124" height="550" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <h3>Financial Literacy!</h3>
                                     <blockquote><p>Thanks so much for all of the income, estate and tax planning education you provide.  I feel so much more enlightened and am now empowered to take action. I appreciate you sharing your wisdom with me-thank you!</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Gina Carling</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d33e11084f4acea6f718" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-54-carol-vermeer-neel.webp" alt="Trustpilot review by Carol Vermeer Neel, 5 stars, Nov 9, 2025" width="1124" height="684" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <blockquote><p>Preston is very knowledgeable, well prepared, and thorough.  Attending these sessions had vastly increased my knowledge.  I can see how applying what he has taught me is not only going to put money in my pocket this year, but will also set my family and I up for success in the future.  Very well done.  I highly recommend.  This has been worth my time.</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Carol Vermeer Neel</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d3234a81c80d97be7955" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-55-ann-jensen-warren.webp" alt="Trustpilot review by Ann Jensen Warren, 5 stars, Nov 9, 2025" width="1124" height="506" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <h3>Engaging and Applicable!</h3>
                                     <blockquote><p>This was one of the most useful webinars I have ever done.  The content was exactly what I have been looking for and incredibly valuable!</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Ann Jensen Warren</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d318bd1893af051ea637" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-56-libby.webp" alt="Trustpilot review by Libby, 5 stars, Nov 9, 2025" width="1124" height="506" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <blockquote><p>Preston and his team are a wealth of knowledge.  Buckle in - it is a lot to learn but there is a roadmap to achieve it - step by step.  Thank you!</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">Libby</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d3034de19fb58d401d45" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-57-cali-c.webp" alt="Trustpilot review by cali c, 5 stars, Nov 9, 2025" width="1124" height="594" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <h3>Preston has amazing frameworks!</h3>
                                     <blockquote><p>Preston goes in depth into different strategies and puts it in frameworks that are easy to follow along. Got tons of value and relieved to see there's a hold-my-hand option available as well for those of us that need it</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">cali c</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d2cf91fdfc66a3c517a1" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
                                 </article>
                                 <article class="rv-review" data-rv="trustpilot review rating star">
-                                    <p class="rv-review__rating"><span class="rv-stars" role="img" aria-label="5 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span></p>
+                                    <img class="rv-review__shot" src="/assets/images/reviews/trustpilot/tp-58-april-hayes.webp" alt="Trustpilot review by April Hayes, 5 stars, Nov 9, 2025" width="1124" height="506" loading="lazy" decoding="async" sizes="(min-width: 700px) 45vw, 92vw">
                                     <blockquote><p>Great experience and a knowledge of information that one can implement right away.</p></blockquote>
                                     <p class="rv-review__by"><span class="rv-name">April Hayes</span><time datetime="2025-11-09">Nov 9, 2025</time></p>
                                     <p class="rv-link"><a href="https://www.trustpilot.com/reviews/6910d2b1e4259e3b10e9a744" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>
@@ -3442,22 +3433,6 @@ Would like to have seen/heard more about Spendthrift Trusts and also about 508 c
                         <div class="faq__answer"><p>No. Every figure on this page belongs to one named client and comes either from what they said in a recorded interview or from the plan written for them. Income, family size, state, business activity and how much of the plan a client actually implements all change the outcome. Shawn&rsquo;s interview is the clearest example: he states no figures at all, because he is at the start of his plan rather than the end of it.</p></div>
                     </details>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section section--tight">
-            <div class="container-custom">
-                <div class="rv-col">
-                    <div class="cta">
-                        <h2>The prices, the complaints and what to ask before you pay</h2>
-                        <p>Preston Seo&rsquo;s own review post lists what each program costs, from $1,500 for the course to $30,000 for STR Concierge Portfolio. It goes through the four complaints that repeat in the one-star Trustpilot reviews, including refunds and slow replies, and what he says about each one. It ends with five questions to ask a rep before you sign anything.</p>
-                        <div class="cta__actions">
-                            <a href="https://join.managemoney101.com/tax-strategies" class="btn-primary">Take the free tax strategies class</a>
-                            <a href="/blog/preston-seo-review" class="btn-secondary">Read the Preston Seo review</a>
-                        </div>
-                    </div>
-                    <p class="rv-disclaimer">Every figure on this page comes from the named client or from the plan written for them, is individual to that client, and is not a promise of what you will get.</p>
                 </div>
             </div>
         </section>
