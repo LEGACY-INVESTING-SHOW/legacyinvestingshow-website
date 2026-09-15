@@ -146,9 +146,17 @@ test('generated operator pages exist with canonical URLs, a form, and live resul
         assert.ok(html.includes(`<h1 class="text-[28px] font-semibold tracking-tight text-ink sm:text-[32px]">${tool.title}</h1>`));
         assert.ok(!html.includes('{{'));
     }
+    const embed = fs.readFileSync(path.join(ROOT, 'assets', 'js', 'operator-catalog-embed.js'), 'utf8');
+    assert.ok(embed.includes('No calculators match'));
+    assert.ok(embed.includes('catalog-heading'));
+    assert.ok(embed.includes('cap-rate'));
     const index = fs.readFileSync(path.join(ROOT, 'tools', 'index.html'), 'utf8');
     assert.ok(index.includes('id="operator-calculators"'));
     assert.ok(index.includes('operator-catalog-embed.js'));
     assert.ok(index.includes('/tools/cap-rate'));
     assert.ok(index.includes('/tools/cost-segregation-savings'));
+    const headingAt = index.indexOf('id="catalog-heading"');
+    const operatorAt = index.indexOf('id="operator-calculators"');
+    const reactListAt = index.indexOf('class="space-y-10"');
+    assert.ok(headingAt !== -1 && operatorAt > headingAt && operatorAt < reactListAt);
 });

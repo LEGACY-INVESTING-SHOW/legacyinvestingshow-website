@@ -189,7 +189,7 @@ function listingCard(tool) {
 
 function sectionHtml(tools, heading) {
     const cards = tools.map(listingCard).join('');
-    return `<section id="${SECTION_ID}" class="scroll-mt-24" aria-labelledby="cat-operator-calculators"><div class="mb-2 flex items-baseline justify-between gap-4"><h2 id="cat-operator-calculators" class="text-[18px] font-semibold tracking-tight text-ink">${escapeHtml(heading)}<span class="ml-2 text-[13px] font-normal text-ink-faint">${tools.length}</span></h2></div><p class="mb-3 text-[13px] text-ink-muted">Tax, investing, debt, short-term rental, and real-estate calculators mapped to Legacy Investing Show topics.</p><div class="border-t border-line">${cards}</div></section>`;
+    return `<section id="${SECTION_ID}" class="scroll-mt-24 mb-10" aria-labelledby="cat-operator-calculators"><div class="mb-2 flex items-baseline justify-between gap-4"><h2 id="cat-operator-calculators" class="text-[18px] font-semibold tracking-tight text-ink">${escapeHtml(heading)}<span class="ml-2 text-[13px] font-normal text-ink-faint">${tools.length}</span></h2></div><p class="mb-3 text-[13px] text-ink-muted">Tax, investing, debt, short-term rental, and real-estate calculators mapped to Legacy Investing Show topics.</p><div class="border-t border-line">${cards}</div></section>`;
 }
 
 function writeEmbedScript(catalog) {
@@ -199,7 +199,121 @@ function writeEmbedScript(catalog) {
         question: tool.question,
         category: tool.category
     }));
-    const source = `/*! operator catalog embed */\n(function(){\n  var tools = ${JSON.stringify(payload)};\n  var SECTION_ID = ${JSON.stringify(SECTION_ID)};\n  function card(tool){\n    return '<a data-operator-tool="'+tool.slug+'" class="flex items-start justify-between gap-4 border-b border-line px-1 py-3.5 transition-colors hover:bg-accent-soft/50" href="/tools/'+tool.slug+'"><div class="min-w-0"><span class="text-[15px] font-medium text-ink">'+tool.title+'</span><p class="mt-0.5 text-[13px] text-ink-muted">'+tool.question+'</p></div><span aria-hidden="true" class="text-ink-faint">→</span></a>';\n  }\n  function section(list, heading){\n    return '<section id="'+SECTION_ID+'" class="scroll-mt-24" aria-labelledby="cat-operator-calculators"><div class="mb-2 flex items-baseline justify-between gap-4"><h2 id="cat-operator-calculators" class="text-[18px] font-semibold tracking-tight text-ink">'+heading+'<span class="ml-2 text-[13px] font-normal text-ink-faint">'+list.length+'</span></h2></div><p class="mb-3 text-[13px] text-ink-muted">Tax, investing, debt, short-term rental, and real-estate calculators mapped to Legacy Investing Show topics.</p><div class="border-t border-line">'+list.map(card).join('')+'</div></section>';\n  }\n  function applySearch(){\n    var search = document.getElementById('catalog-search');\n    if (!search) return;\n    var q = search.value.toLowerCase();\n    document.querySelectorAll('[data-operator-tool]').forEach(function(row){\n      row.hidden = Boolean(q) && row.textContent.toLowerCase().indexOf(q) === -1;\n    });\n  }\n  function inject(){\n    var path = window.location.pathname.replace(/\\/+$/, '') || '/tools';\n    var host = document.querySelector('[aria-labelledby="catalog-heading"] .space-y-10') || document.querySelector('.space-y-10');\n    if (!host) return;\n    if (path === '/tools' || path === '/tools/index.html') {\n      if (!document.getElementById(SECTION_ID)) host.insertAdjacentHTML('afterbegin', section(tools, 'Tax, STR, debt & investing'));\n    } else {\n      var match = path.match(/\\/tools\\/categories\\/([a-z0-9-]+)/);\n      if (!match) return;\n      var list = tools.filter(function(tool){ return tool.category === match[1]; });\n      if (!list.length) return;\n      var existing = host.querySelector('.border-t.border-line');\n      if (existing) {\n        list.forEach(function(tool){\n          if (!existing.querySelector('[href="/tools/'+tool.slug+'"]')) existing.insertAdjacentHTML('beforeend', card(tool));\n        });\n      }\n    }\n    var search = document.getElementById('catalog-search');\n    if (search && !search.dataset.operatorBound) {\n      search.dataset.operatorBound = '1';\n      search.addEventListener('input', applySearch);\n    }\n    applySearch();\n  }\n  inject();\n  setTimeout(inject, 50);\n  setTimeout(inject, 400);\n  var observer = new MutationObserver(inject);\n  observer.observe(document.body, { childList: true, subtree: true });\n})();\n`;
+    const source = `/*! operator catalog embed */
+(function () {
+  var tools = ${JSON.stringify(payload)};
+  var SECTION_ID = ${JSON.stringify(SECTION_ID)};
+
+  function card(tool) {
+    return '<a data-operator-tool="' + tool.slug + '" class="flex items-start justify-between gap-4 border-b border-line px-1 py-3.5 transition-colors hover:bg-accent-soft/50" href="/tools/' + tool.slug + '"><div class="min-w-0"><span class="text-[15px] font-medium text-ink">' + tool.title + '</span><p class="mt-0.5 text-[13px] text-ink-muted">' + tool.question + '</p></div><span aria-hidden="true" class="text-ink-faint">→</span></a>';
+  }
+
+  function section(list, heading) {
+    return '<section id="' + SECTION_ID + '" class="scroll-mt-24 mb-10" aria-labelledby="cat-operator-calculators"><div class="mb-2 flex items-baseline justify-between gap-4"><h2 id="cat-operator-calculators" class="text-[18px] font-semibold tracking-tight text-ink">' + heading + '<span class="ml-2 text-[13px] font-normal text-ink-faint">' + list.length + '</span></h2></div><p class="mb-3 text-[13px] text-ink-muted">Tax, investing, debt, short-term rental, and real-estate calculators mapped to Legacy Investing Show topics.</p><div class="border-t border-line">' + list.map(card).join('') + '</div></section>';
+  }
+
+  function toolMatches(tool, q) {
+    if (!q) return true;
+    return (tool.title + ' ' + tool.question).toLowerCase().indexOf(q) !== -1;
+  }
+
+  function findEmptyState() {
+    var nodes = document.querySelectorAll('p');
+    for (var i = 0; i < nodes.length; i++) {
+      if (nodes[i].textContent.indexOf('No calculators match') !== -1) return nodes[i];
+    }
+    return null;
+  }
+
+  function query() {
+    var search = document.getElementById('catalog-search');
+    return search ? search.value.toLowerCase() : '';
+  }
+
+  function applySearch() {
+    var q = query();
+    var visible = 0;
+    document.querySelectorAll('#' + SECTION_ID + ' [data-operator-tool]').forEach(function (row) {
+      var hide = Boolean(q) && row.textContent.toLowerCase().indexOf(q) === -1;
+      row.hidden = hide;
+      if (!hide) visible += 1;
+    });
+    document.querySelectorAll('.space-y-10 [data-operator-tool]').forEach(function (row) {
+      row.hidden = Boolean(q) && row.textContent.toLowerCase().indexOf(q) === -1;
+    });
+    var sectionEl = document.getElementById(SECTION_ID);
+    if (sectionEl) {
+      sectionEl.hidden = Boolean(q) && visible === 0;
+      var countSpan = sectionEl.querySelector('#cat-operator-calculators span');
+      if (countSpan) {
+        countSpan.textContent = String(q ? visible : sectionEl.querySelectorAll('[data-operator-tool]').length);
+      }
+    }
+    var empty = findEmptyState();
+    if (empty) empty.style.display = (q && visible > 0) ? 'none' : '';
+  }
+
+  function ensureIndexSection() {
+    if (document.getElementById(SECTION_ID)) return;
+    var heading = document.getElementById('catalog-heading');
+    if (heading) heading.insertAdjacentHTML('afterend', section(tools, 'Tax, STR, debt & investing'));
+  }
+
+  function inject() {
+    var path = window.location.pathname.replace(/\\/+$/, '') || '/tools';
+    var search = document.getElementById('catalog-search');
+    if (search && !search.dataset.operatorBound) {
+      search.dataset.operatorBound = '1';
+      search.addEventListener('input', applySearch);
+    }
+    if (path === '/tools' || path === '/tools/index.html') {
+      ensureIndexSection();
+      applySearch();
+      return;
+    }
+    var match = path.match(/\\/tools\\/categories\\/([a-z0-9-]+)/);
+    if (!match) return;
+    var list = tools.filter(function (tool) { return tool.category === match[1]; });
+    if (!list.length) return;
+    var q = query();
+    var host = document.querySelector('.space-y-10');
+    var native = host && host.querySelector('.border-t.border-line');
+    if (native) {
+      list.forEach(function (tool) {
+        if (!native.querySelector('[href="/tools/' + tool.slug + '"]')) {
+          native.insertAdjacentHTML('beforeend', card(tool));
+        }
+      });
+      var leftover = document.getElementById(SECTION_ID);
+      if (leftover && !q) leftover.remove();
+    } else if (q) {
+      var matched = list.filter(function (tool) { return toolMatches(tool, q); });
+      var empty = findEmptyState();
+      var existing = document.getElementById(SECTION_ID);
+      if (matched.length) {
+        if (empty) empty.style.display = 'none';
+        if (!existing) {
+          var html = section(matched, 'Tax, STR, debt & investing');
+          if (empty) empty.insertAdjacentHTML('afterend', html);
+          else {
+            var heading = document.getElementById('catalog-heading');
+            if (heading) heading.insertAdjacentHTML('afterend', html);
+          }
+        }
+      } else if (existing) {
+        existing.remove();
+      }
+    }
+    applySearch();
+  }
+
+  inject();
+  setTimeout(inject, 50);
+  setTimeout(inject, 400);
+  var observer = new MutationObserver(inject);
+  observer.observe(document.body, { childList: true, subtree: true });
+})();
+`;
     const dest = path.join(ROOT_DIR, 'assets', 'js', 'operator-catalog-embed.js');
     fs.writeFileSync(dest, source);
     return '/assets/js/operator-catalog-embed.js';
@@ -218,15 +332,15 @@ function attachEmbed(filePath, scriptSrc) {
 function injectStaticSection(indexPath, tools) {
     if (!fs.existsSync(indexPath)) return;
     let html = fs.readFileSync(indexPath, 'utf8');
-    if (html.includes(`id="${SECTION_ID}"`)) return;
+    html = html.replace(/<section id="operator-calculators"[\s\S]*?<\/section>/, '');
     const section = sectionHtml(tools, 'Tax, STR, debt & investing');
-    if (html.includes('class="space-y-10"')) {
-        html = html.replace('class="space-y-10">', `class="space-y-10">${section}`);
-    } else if (html.includes('id="insurance-protection"')) {
+    if (html.includes('id="catalog-heading"')) {
         html = html.replace(
-            /(<section id="insurance-protection"[\s\S]*?<\/section>)/,
+            /(<h2 id="catalog-heading"[^>]*>[\s\S]*?<\/h2>)/,
             `$1${section}`
         );
+    } else if (html.includes('class="space-y-10"')) {
+        html = html.replace('class="space-y-10">', `class="space-y-10">${section}`);
     }
     fs.writeFileSync(indexPath, html);
 }
