@@ -547,6 +547,66 @@
       "permanent": true
     },
     {
+      "source": "/blog/preston-seo-review",
+      "destination": "/reviews",
+      "permanent": true
+    },
+    {
+      "source": "/blog/preston-seo-review.html",
+      "destination": "/reviews",
+      "permanent": true
+    },
+    {
+      "source": "/blog/legacy-investing-show-review",
+      "destination": "/reviews",
+      "permanent": true
+    },
+    {
+      "source": "/blog/legacy-investing-show-review.html",
+      "destination": "/reviews",
+      "permanent": true
+    },
+    {
+      "source": "/blog/legacy-investing-show-reviews",
+      "destination": "/reviews",
+      "permanent": true
+    },
+    {
+      "source": "/blog/legacy-investing-show-reviews.html",
+      "destination": "/reviews",
+      "permanent": true
+    },
+    {
+      "source": "/blog/legacy-investing-show-reviews-complaints",
+      "destination": "/reviews",
+      "permanent": true
+    },
+    {
+      "source": "/blog/legacy-investing-show-reviews-complaints.html",
+      "destination": "/reviews",
+      "permanent": true
+    },
+    {
+      "source": "/blog/is-legacy-investing-show-legit",
+      "destination": "/reviews",
+      "permanent": true
+    },
+    {
+      "source": "/blog/is-legacy-investing-show-legit.html",
+      "destination": "/reviews",
+      "permanent": true
+    },
+    {
+      "source": "/blog/faq-review",
+      "destination": "/reviews",
+      "permanent": true
+    },
+    {
+      "source": "/blog/faq-review.html",
+      "destination": "/reviews",
+      "permanent": true
+    },
+    {
       "source": "/renters-insurance",
       "destination": "/tools/renters-insurance-cost",
       "permanent": true

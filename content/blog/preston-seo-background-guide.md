@@ -31,8 +31,6 @@ tags:
 image: /assets/images/og-blog.jpg
 featured: false
 relatedPosts:
-  - slug: preston-seo-review
-    title: 'Preston Seo Review'
   - slug: preston-seo-latest
     title: 'Preston Seo Latest'
   - slug: preston-seo-legacy-investing-show
@@ -55,8 +53,7 @@ A useful review path is:
 
 1. background and founder page
 2. latest/current content context
-3. program review
-4. student-result pages
+3. the [reviews page](/reviews)
 
 That sequence is more useful than bouncing between random clips and mentions.
 
@@ -76,13 +73,12 @@ Entity searches often appear before someone decides whether to trust a brand, jo
 Once the background question is answered, the next pages should usually be:
 
 - latest/current context
-- program review
-- student reviews
+- [reviews and student results](/reviews)
 
 That gives the searcher a fuller picture of both the founder and the offer.
 
-## Why this page exists alongside the review pages
-The founder-background query is not exactly the same as a review query. Background searchers are often earlier in the trust process. They want to know whether the founder is identifiable and relevant before they spend time on the deeper review material.
+## Why this page exists alongside the reviews page
+The founder-background query is not exactly the same as a review query. Background searchers are often earlier in the trust process. They want to know whether the founder is identifiable and relevant before they spend time on the [reviews page](/reviews).
 
 ## FAQ
 ## What is the first thing people usually want to know about Preston Seo?
@@ -92,4 +88,4 @@ Usually who he is, what he teaches, and how he connects to Legacy Investing Show
 No. Founder background and program review answer different questions.
 
 ## Final takeaway
-If you are searching `preston seo`, you are usually still building context. The right next step is to review founder background first, then current content, then the offer and student-result material.
+If you are searching `preston seo`, you are usually still building context. The right next step is to review founder background first, then current content, then the [reviews page](/reviews).
