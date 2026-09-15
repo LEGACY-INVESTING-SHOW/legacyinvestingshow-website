@@ -1,0 +1,153 @@
+{
+  "type": "vs",
+  "slug": "biggerpockets-vs-rich-dad",
+  "title": "BiggerPockets vs Rich Dad",
+  "h1": "BiggerPockets vs Rich Dad",
+  "keyLine": "One is a toolbox. One is a story. Buy the one that matches the week you are in.",
+  "description": "A side-by-side of BiggerPockets and Rich Dad: format, public prices, who each fits, and what to do after the book. Written by Legacy Investing Show.",
+  "query": "BiggerPockets vs Rich Dad",
+  "answer": "BiggerPockets is a real estate community with free podcasts and a paid Pro plan for tools. Rich Dad is a brand around Robert Kiyosaki's book and later classes. Use Rich Dad when you still think a paycheck is the only path. Use BiggerPockets when you are ready to study a real listing. Most people need the book once, then a how-to. You rarely need to pay both at once.",
+  "criteriaIntro": "We compared what each brand publishes about itself, plus public prices we could copy. We did not sit in a paid coaching call for either brand.",
+  "criteria": [
+    "Format, audience, and public price from pages we opened.",
+    "No star ratings and no fake 'winner' badge.",
+    "We say where our own program sits, which is neither a forum nor a parable."
+  ],
+  "blocks": [
+    {
+      "type": "table",
+      "id": "side-by-side",
+      "heading": "Side by side",
+      "intro": "Read across one row. The 'edge' is the job, not a score.",
+      "caption": "BiggerPockets vs Rich Dad on jobs a buyer actually has.",
+      "wide": true,
+      "headers": ["Question", "BiggerPockets", "Rich Dad", "Who it fits"],
+      "rows": [
+        ["Main product", "Forums, podcasts, tools, optional Pro and classes", "A famous book, then digital offers and coaching funnels", "Book first if you need a mindset jolt"],
+        ["Cost to start", "Free forums and podcasts", "Price of the book, then $17 to $27 public digital offers", "Both have a cheap start"],
+        ["Paid tier we could copy", "Pro at $39 a month or $32.50 a month billed yearly", "Wealth Experts $17 a month after a trial; $27 video; coaching not listed", "Pro is a tool pass. Rich Dad coaching is a question mark"],
+        ["Teaches deal math", "Yes, calculators and analysis content", "Light. The book is not a spreadsheet class", "BiggerPockets for numbers"],
+        ["Teaches tax in depth", "Some guides and guests", "Tax-Free Wealth sits next door through Wheelwright", "Neither replaces your CPA"],
+        ["Community", "Large public forums", "Readers, then paid groups", "Forums if you want peer stories"]
+      ]
+    },
+    {
+      "type": "prose",
+      "id": "how-to-pick",
+      "heading": "How to pick this month",
+      "paragraphs": [
+        "If you still believe your salary is the only asset you will ever have, read the book. Then stop. Do not buy a stack of Rich Dad sequels until you can explain one local rental in numbers.",
+        "If you can already explain cap rate in a sentence (that is yearly net rent divided by price), skip the parable and go to BiggerPockets or a calculator. Try our [rental cash flow tool](/tools/rental-property-cash-flow).",
+        "If your problem is a W-2 tax bill, neither brand is the center. Use [tax strategies for high-income earners](/tax-strategies/for/high-income-earners)."
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "gold",
+      "label": "We sell a third thing",
+      "paragraphs": [
+        "Legacy Wealth Blueprint is not a BiggerPockets killer and not a Rich Dad sequel. It is a written plan plus a year of coaching. Use it only if you want tax, debt, and investing in one order. See [Legacy Wealth Blueprint](/legacy-wealth-blueprint)."
+      ]
+    }
+  ],
+  "whoFits": [
+    "You are choosing between a mindset book and an investor community.",
+    "You want a clean answer in one screen before you spend."
+  ],
+  "whoSkips": [
+    "You already use BiggerPockets weekly and finished the book years ago. You need a different comparison, such as [coaching vs a course](/compare/real-estate-coaching-vs-course).",
+    "You want us to declare a moral winner. We will not."
+  ],
+  "costIntro": "Copied from public pages. Coaching tuition for Rich Dad was not on the homepages we opened.",
+  "costCaption": "Public starting prices.",
+  "costRows": [
+    {
+      "name": "BiggerPockets free layer",
+      "price": "Free",
+      "asOf": "2026-09-15",
+      "sourceLabel": "BiggerPockets podcast on Apple",
+      "sourceUrl": "https://podcasts.apple.com/us/podcast/biggerpockets-real-estate-podcast/id594419649"
+    },
+    {
+      "name": "BiggerPockets Pro",
+      "price": "$39 a month or $32.50 a month billed yearly",
+      "asOf": "2026-09-15",
+      "sourceLabel": "BiggerPockets staff post, March 3, 2026",
+      "sourceUrl": "https://www.biggerpockets.com/forums/48/topics/1280018-new-to-biggerpockets-pro-insurance-and-loan-discounts"
+    },
+    {
+      "name": "Rich Dad Wealth Experts",
+      "price": "14-day trial, then $17 a month",
+      "asOf": "2026-09-15",
+      "sourceLabel": "Wealth Experts offer",
+      "sourceUrl": "https://study.richdad.com/we-offer?oid=741&source_id=website_investing_RDWE"
+    },
+    {
+      "name": "Rich Dad beginner real estate course",
+      "price": "$27 on the offer page",
+      "asOf": "2026-09-15",
+      "sourceLabel": "Beginner course offer",
+      "sourceUrl": "https://study.richdad.com/re-course-offer"
+    }
+  ],
+  "questionsBeforeBuying": [
+    "Am I still stuck on mindset, or do I need a spreadsheet?",
+    "Have I used the free layer of both brands?",
+    "If a sales call starts, what is the full price in writing?"
+  ],
+  "nextSteps": [
+    "Read [what to know before BiggerPockets Pro](/compare/biggerpockets-what-to-know) if you are about to pay for tools.",
+    "Read [Rich Dad alternatives](/compare/rich-dad-alternatives) if the book is done.",
+    "Run one listing through the [rental cash flow calculator](/tools/rental-property-cash-flow)."
+  ],
+  "faqs": [
+    {
+      "q": "Which one is better for beginners?",
+      "a": "The book is the easier first night. BiggerPockets is the better second month. Paying either brand before you use the free layer is usually a waste."
+    },
+    {
+      "q": "Can I use both?",
+      "a": "Yes. Read the book once. Then use BiggerPockets for models and math. You do not need two paid memberships to do that."
+    },
+    {
+      "q": "Does either one file my taxes?",
+      "a": "No. See [tax course vs a CPA](/compare/tax-course-vs-cpa)."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Rich Dad homepage",
+      "url": "https://www.richdad.com/",
+      "asOf": "2026-09-15"
+    },
+    {
+      "label": "BiggerPockets staff Pro pricing post",
+      "url": "https://www.biggerpockets.com/forums/48/topics/1280018-new-to-biggerpockets-pro-insurance-and-loan-discounts",
+      "asOf": "2026-09-15"
+    },
+    {
+      "label": "BiggerPockets article on Rich Dad principles",
+      "url": "https://www.biggerpockets.com/blog/rich-dad-poor-dad-investing-principles-good-or-bad",
+      "asOf": "2026-09-15"
+    },
+    {
+      "label": "Rich Dad Wealth Experts offer",
+      "url": "https://study.richdad.com/we-offer?oid=741&source_id=website_investing_RDWE",
+      "asOf": "2026-09-15"
+    }
+  ],
+  "related": [
+    { "href": "/compare/biggerpockets-alternatives", "label": "BiggerPockets alternatives" },
+    { "href": "/compare/rich-dad-alternatives", "label": "Rich Dad alternatives" },
+    { "href": "/compare/biggerpockets-what-to-know", "label": "What to know before BiggerPockets Pro" },
+    { "href": "/topics/airbnb-arbitrage", "label": "Airbnb arbitrage topic hub" }
+  ],
+  "cta": {
+    "title": "Need math, not another origin story?",
+    "body": "Use a calculator on one real listing this week. Then decide if you need a community, a coach, or a tax map.",
+    "primaryHref": "/tools/rental-property-cash-flow",
+    "primaryLabel": "Rental cash flow calculator",
+    "secondaryHref": "/compare/biggerpockets-alternatives",
+    "secondaryLabel": "See alternatives"
+  }
+}

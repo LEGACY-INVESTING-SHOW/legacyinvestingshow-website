@@ -156,6 +156,22 @@
     max-width: 68ch;
 }
 
+.guide-page .opener .label {
+    margin: 0 0 0.75rem;
+}
+
+.guide-byline {
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    color: var(--ink-faint);
+    margin: 1.25rem 0 0;
+    max-width: 58ch;
+}
+
+.guide-byline a {
+    color: var(--emerald);
+}
+
 /* What used to sit in a right-hand rail: who it suits, what to read next. */
 .guide-extras {
     margin-top: 2.5rem;

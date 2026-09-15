@@ -1,0 +1,155 @@
+{
+  "type": "vs",
+  "slug": "401k-vs-rental-property",
+  "title": "401(k) vs Rental Property",
+  "h1": "401(k) vs rental property",
+  "keyLine": "A 401(k) is part of your pay. A rental is a small business with a roof. Use both with eyes open. Do not raid the match to buy a house.",
+  "description": "401(k) vs a rental for W-2 professionals: 2026 IRS limits, match, time, tax, and liquidity. No invented returns. Education, not advice.",
+  "query": "401k vs rental property",
+  "answer": "A 401(k) is a retirement account at work. In 2026 you can defer $24,500 of pay, more if you are 50 or older, per the IRS. Many employers add a match. That match is part of your pay. A rental is a house or apartment you lease to someone else. It can throw off rent, it takes time, and it can use a loan. They are not twins. Fill the match first in almost every case we can describe. Then compare extra 401(k) dollars to a rental using time, cash, and risk, not a podcast slogan.",
+  "criteriaIntro": "We compare account rules from the IRS to the work of being a landlord. We do not forecast investment returns.",
+  "criteria": [
+    "2026 401(k) limits from IRS IR-2025-111.",
+    "No made-up cap rates or stock-market averages.",
+    "W-2 job hours vs landlord hours, in plain words."
+  ],
+  "blocks": [
+    {
+      "type": "table",
+      "id": "compare",
+      "heading": "Different tools",
+      "caption": "A 401(k) and a rental fail different ways.",
+      "wide": true,
+      "headers": ["Topic", "401(k)", "Rental property", "Plain read"],
+      "rows": [
+        ["What it is", "A work account for retirement savings", "A dwelling you lease", "Account vs operating business"],
+        ["2026 employee deferral", "$24,500, plus $8,000 at 50, or $11,250 at 60-63", "No IRS 'deferral limit.' You need a down payment and a loan or cash", "The 401(k) has a hard cap"],
+        ["Match", "Often 3% to 6% of pay, if the plan offers it", "None. Tenants pay rent. You pay the bills", "Do not skip a match"],
+        ["Time", "A few elections a year", "Tenants, repairs, vacancies, or a manager fee", "Rentals need hours"],
+        ["Access to cash", "Tax and plan rules if you withdraw early", "You may refinance or sell, with costs and tax", "Neither is an ATM"],
+        ["Tax", "Traditional deferral or Roth, per plan", "Rent is income. Depreciation may offset some of it, with recapture later", "CPA, not a slogan"]
+      ]
+    },
+    {
+      "type": "prose",
+      "id": "match-first",
+      "heading": "Why the match usually wins the first dollars",
+      "paragraphs": [
+        "If your employer puts 50 cents or a dollar next to yours, that is an immediate return you cannot get from a random house. We will not pick a typical match rate. Open your plan SPD (summary plan description) and read it.",
+        "After the match, extra 401(k) money is a judgment call. Some people still max the $24,500 because payroll is automatic. Some stop at the match and build cash for a house. That second path only works if you will not spend the cash. Automatic payroll is a feature, not a flaw."
+      ]
+    },
+    {
+      "type": "prose",
+      "id": "when-rental",
+      "heading": "When a rental can make sense anyway",
+      "paragraphs": [
+        "You already max the match. You have cash reserves. You can do the work or pay a manager. You underwrote the deal with conservative rent, taxes, insurance, and vacancies. You read [short-term vs long-term](/compare/short-term-rental-vs-long-term-rental) if you were sold an STR tax story.",
+        "A rental is a poor '401(k) replacement' if you would borrow from the 401(k) or skip the match to fund the down payment. For a narrow loan comparison see [solo 401(k) loan vs HELOC](/compare/solo-401k-loan-vs-heloc-down-payment)."
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "gold",
+      "label": "HSA sits next to both",
+      "paragraphs": [
+        "If you have a high-deductible health plan, a 2026 HSA can take $4,400 self-only or $8,750 family ([Rev. Proc. 2025-19](https://www.irs.gov/irb/2025-21_IRB)). That account is often a better next dollar than a speculative rental. See [HSA strategy](/tax-strategies/hsa-strategy)."
+      ]
+    }
+  ],
+  "whoFits": [
+    "You have a 401(k) at work and you keep hearing you should buy rentals instead.",
+    "You want the order of dollars, not a return forecast."
+  ],
+  "whoSkips": [
+    "You are self-employed with no 401(k). Look at [solo 401(k)](/tax-strategies/solo-401k) and SEP coverage instead.",
+    "You want us to say rentals always beat index funds. We will not. We did not run your numbers."
+  ],
+  "costIntro": "IRS limits are not prices. They are the room in the account. Rental down payments are local and we will not fake one.",
+  "costCaption": "2026 IRS figures and free tools.",
+  "costRows": [
+    {
+      "name": "2026 401(k) employee deferral",
+      "price": "$24,500 ($32,500 with age-50 catch-up, $35,750 with ages 60-63 catch-up)",
+      "asOf": "2026-09-15",
+      "sourceLabel": "IRS IR-2025-111",
+      "sourceUrl": "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500"
+    },
+    {
+      "name": "2026 HSA limit",
+      "price": "$4,400 self-only, $8,750 family",
+      "asOf": "2026-09-15",
+      "sourceLabel": "IRB 2025-21",
+      "sourceUrl": "https://www.irs.gov/irb/2025-21_IRB"
+    },
+    {
+      "name": "Rental underwriting on this site",
+      "price": "Free calculator",
+      "asOf": "2026-09-15",
+      "sourceLabel": "Rental cash flow",
+      "sourceUrl": "https://www.legacyinvestingshow.com/tools/rental-property-cash-flow"
+    }
+  ],
+  "questionsBeforeBuying": [
+    "What is my match formula, in writing from the plan?",
+    "If I buy a rental, which hours come from my evenings?",
+    "What cash buffer remains after closing costs?",
+    "Am I mixing STR tax claims into a long-term lease idea?",
+    "Would I still buy this house if there were no tax story?"
+  ],
+  "nextSteps": [
+    "Read [401(k) contribution strategies](/retirement/401k-contribution-strategies) and [traditional vs Roth 401(k)](/retirement/traditional-vs-roth-401k).",
+    "Underwrite a sample property in the [rental cash flow calculator](/tools/rental-property-cash-flow).",
+    "If the next fight is extra cash vs extra mortgage principal, use [mortgage payoff vs investing](/compare/mortgage-payoff-vs-investing)."
+  ],
+  "faqs": [
+    {
+      "q": "Should I stop my 401(k) to buy a rental?",
+      "a": "Do not stop enough to lose a match. After the match, it depends on cash, time, and risk. We will not give a personal yes."
+    },
+    {
+      "q": "Which has better returns?",
+      "a": "We will not invent a return. A 401(k) holds funds you pick. A rental's result is rent minus all costs, including your time. Compare with your numbers."
+    },
+    {
+      "q": "Can rental losses wipe my W-2 tax?",
+      "a": "Often not. Passive-loss rules in Publication 925 limit that. STR treatment is a different test. Read [short-term vs long-term](/compare/short-term-rental-vs-long-term-rental) and ask a CPA."
+    }
+  ],
+  "sources": [
+    {
+      "label": "IRS IR-2025-111, 2026 401(k) and IRA limits",
+      "url": "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500",
+      "asOf": "2026-09-15"
+    },
+    {
+      "label": "IRS 401(k) contribution limit topic page",
+      "url": "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits",
+      "asOf": "2026-09-15"
+    },
+    {
+      "label": "Rev. Proc. 2025-19, 2026 HSA amounts",
+      "url": "https://www.irs.gov/irb/2025-21_IRB",
+      "asOf": "2026-09-15"
+    },
+    {
+      "label": "Publication 925",
+      "url": "https://www.irs.gov/publications/p925",
+      "asOf": "2026-09-15"
+    }
+  ],
+  "related": [
+    { "href": "/retirement/401k-contribution-strategies", "label": "401(k) contribution strategies" },
+    { "href": "/compare/backdoor-roth-vs-taxable-brokerage-high-income-earners", "label": "Backdoor Roth vs taxable brokerage" },
+    { "href": "/compare/wealth-plan-checklist-high-earners", "label": "Wealth plan checklist" },
+    { "href": "/blog/rental-property-investing-for-w2-professionals", "label": "Rental property investing for W-2 professionals" }
+  ],
+  "cta": {
+    "title": "Protect the match",
+    "body": "Then decide if a rental is a business you want. The tax library explains what a W-2 earner can actually do. The calculator tests a house.",
+    "primaryHref": "/tax-strategies/for/w2-employees",
+    "primaryLabel": "W-2 tax strategies",
+    "secondaryHref": "/tools/rental-property-cash-flow",
+    "secondaryLabel": "Rental calculator"
+  }
+}

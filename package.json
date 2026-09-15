@@ -4,7 +4,7 @@
   "description": "Legacy Investing Show - Build Wealth That Lasts Beyond A Paycheck",
   "scripts": {
     "dev": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/styles.css --watch",
-    "lint": "node --check scripts/generate-seo-blog-markdown.js && node --check tests/generate-seo-blog-markdown.test.js",
+    "lint": "node --check scripts/generate-seo-blog-markdown.js && node --check tests/generate-seo-blog-markdown.test.js && node --check scripts/lib/load-education-guides.js && node --check scripts/lib/render-education-guide.js && node --check scripts/build-compare-pages.js && node --check tests/education-guides.test.js",
     "test": "node --test tests/*.test.js",
     "batch:opencode:example": "node scripts/run-opencode-blog-batch.js --write-example",
     "batch:opencode": "node scripts/run-opencode-blog-batch.js",

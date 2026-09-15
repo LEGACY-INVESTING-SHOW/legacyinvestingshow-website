@@ -83,6 +83,7 @@ Primary route:
 Purpose:
 - answer decision-stage queries
 - compare strategy A vs strategy B
+- compare education programs and money teachers with public prices
 - make tradeoffs explicit
 - help buyers and planners choose under real-world constraints
 
@@ -91,6 +92,10 @@ Representative examples:
 - https://www.legacyinvestingshow.com/compare/mfj-vs-mfs-high-income-student-loans
 - https://www.legacyinvestingshow.com/compare/safe-harbor-vs-annualized-income-1099
 - https://www.legacyinvestingshow.com/compare/backdoor-roth-vs-taxable-brokerage-high-income-earners
+- https://www.legacyinvestingshow.com/compare/biggerpockets-alternatives
+- https://www.legacyinvestingshow.com/compare/subto-alternatives
+- https://www.legacyinvestingshow.com/compare/401k-vs-rental-property
+- https://www.legacyinvestingshow.com/compare/wealth-plan-checklist-high-earners
 
 ### 3. Free Tools
 Primary route:

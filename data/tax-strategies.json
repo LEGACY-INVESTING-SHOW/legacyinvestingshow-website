@@ -597,6 +597,14 @@
         {
           "url": "/tools/payroll-withholding-estimate",
           "title": "Payroll withholding estimator"
+        },
+        {
+          "url": "/compare/401k-vs-rental-property",
+          "title": "401(k) vs a rental property"
+        },
+        {
+          "url": "/compare/wealth-plan-checklist-high-earners",
+          "title": "Wealth plan checklist for high earners"
         }
       ],
       "faqs": [
@@ -649,6 +657,20 @@
         "real-estate-professional-status",
         "bonus-depreciation"
       ],
+      "readNext": [
+        {
+          "url": "/compare/biggerpockets-alternatives",
+          "title": "BiggerPockets alternatives by job"
+        },
+        {
+          "url": "/compare/short-term-rental-vs-long-term-rental",
+          "title": "Short-term vs long-term rental"
+        },
+        {
+          "url": "/compare/real-estate-coaching-vs-course",
+          "title": "Real estate coaching vs a course"
+        }
+      ],
       "linkLabel": "Real estate investors"
     },
     {
@@ -661,6 +683,16 @@
         "bonus-depreciation",
         "section-179"
       ],
+      "readNext": [
+        {
+          "url": "/compare/short-term-rental-vs-long-term-rental",
+          "title": "Short-term vs long-term rental"
+        },
+        {
+          "url": "/compare/real-estate-coaching-vs-course",
+          "title": "Real estate coaching vs a course"
+        }
+      ],
       "linkLabel": "Airbnb and short-term rental hosts"
     },
     {
@@ -672,6 +704,20 @@
         "opportunity-zones",
         "cost-segregation",
         "mega-backdoor-roth"
+      ],
+      "readNext": [
+        {
+          "url": "/compare/best-wealth-education-high-earners",
+          "title": "Best wealth education for high earners"
+        },
+        {
+          "url": "/compare/401k-vs-rental-property",
+          "title": "401(k) vs a rental property"
+        },
+        {
+          "url": "/compare/wealth-plan-checklist-high-earners",
+          "title": "Wealth plan checklist for high earners"
+        }
       ],
       "linkLabel": "High-income earners"
     },

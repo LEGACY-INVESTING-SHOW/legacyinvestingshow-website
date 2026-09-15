@@ -1,0 +1,158 @@
+{
+  "type": "review",
+  "slug": "biggerpockets-what-to-know",
+  "title": "BiggerPockets Pro: What to Know",
+  "h1": "What to know before you join BiggerPockets Pro",
+  "keyLine": "Start free. Pay for Pro when the calculators or forms would save you hours.",
+  "description": "A Legacy Investing Show briefing on BiggerPockets: free vs Pro, public 2026 prices, who it fits, and questions to ask. Not a customer review and not a star rating.",
+  "query": "BiggerPockets review",
+  "answer": "This is not a shopper review. We did not join Pro for this page. BiggerPockets is a real estate media site. Forums and podcasts are free. Pro is the paid tier for more calculator use, forms, and extra content. A March 3, 2026 staff post said Pro is $32.50 a month billed yearly. A membership table also lists $39 a month. Use Pro if you are already looking at deals. Skip it if you have not picked a model yet.",
+  "criteriaIntro": "We used BiggerPockets' own pages and a dated staff post. We did not scrape private member areas. We do not assign stars.",
+  "criteria": [
+    "What is free vs paid, from public pages.",
+    "Price only where BiggerPockets published one.",
+    "Who should wait, based on the job, not on hype."
+  ],
+  "blocks": [
+    {
+      "type": "prose",
+      "id": "free-vs-pro",
+      "heading": "Free vs Pro",
+      "paragraphs": [
+        "Free: forums, many articles, and the main podcasts. That is enough to learn BRRRR (buy, rehab, rent, refinance, repeat), house hacking, and why a deal dies.",
+        "Pro: a membership comparison page lists extra calculator reports, state lease packages, webinar replays, and bootcamps. The same table shows some reports capped on cheaper tiers. We could not re-check a live logged-in dashboard, so treat feature lists as 'what they advertise,' then confirm at checkout.",
+        "The [bootcamps URL](https://www.biggerpockets.com/bootcamps) on September 15, 2026 was a free resource library plus a Pro upgrade prompt. If you were quoted $199 for a bootcamp, that figure appears on an older membership table. Ask them to show the live offer."
+      ]
+    },
+    {
+      "type": "prose",
+      "id": "who-should-pay",
+      "heading": "Who should pay, who should wait",
+      "paragraphs": [
+        "Pay when you are underwriting real listings most weeks and you want their calculators or forms in one login. Wait if you are still choosing between a rental, a short-term rental, and doing nothing. That choice is a [short-term vs long-term rental](/compare/short-term-rental-vs-long-term-rental) problem, not a membership problem.",
+        "Pro will not build you a tax plan. If that is the pain, use [tax strategies for real estate investors](/tax-strategies/for/real-estate-investors) or a CPA."
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "gold",
+      "label": "How this page is not a review",
+      "paragraphs": [
+        "Google may show 'BiggerPockets review' for this URL. We are not a customer. We are a competing education brand. We tell you the public facts, then the questions we would ask. For our own proof page, see [reviews](/reviews)."
+      ]
+    },
+    {
+      "type": "check",
+      "id": "before-you-pay",
+      "heading": "A 15-minute checklist",
+      "items": [
+        "I can name the model I want (long-term, short-term, flip, or none).",
+        "I have used the free forums or podcasts for at least two weeks.",
+        "I know whether I need calculators, forms, or a class.",
+        "I have written down the monthly and yearly Pro prices from their live page, not from memory.",
+        "I am not paying with high-interest debt."
+      ]
+    }
+  ],
+  "whoFits": [
+    "You are close to buying Pro and want a briefing from a named author, not a star widget.",
+    "You already like the free content and you need a go or no-go."
+  ],
+  "whoSkips": [
+    "You want an independent consumer-lab test. We are not that.",
+    "You have never visited the free forums."
+  ],
+  "costIntro": "Two BiggerPockets sources disagree slightly on monthly vs yearly framing. We show both.",
+  "costCaption": "Public BiggerPockets prices we could copy.",
+  "costRows": [
+    {
+      "name": "Free forums and podcasts",
+      "price": "Free",
+      "asOf": "2026-09-15",
+      "sourceLabel": "Apple Podcasts",
+      "sourceUrl": "https://podcasts.apple.com/us/podcast/biggerpockets-real-estate-podcast/id594419649"
+    },
+    {
+      "name": "Pro, yearly billing",
+      "price": "$32.50 a month, $390 a year, per a March 3, 2026 staff post",
+      "asOf": "2026-09-15",
+      "sourceLabel": "BiggerPockets staff post",
+      "sourceUrl": "https://www.biggerpockets.com/forums/48/topics/1280018-new-to-biggerpockets-pro-insurance-and-loan-discounts"
+    },
+    {
+      "name": "Pro, monthly billing",
+      "price": "$39 a month on a membership comparison page",
+      "asOf": "2026-09-15",
+      "sourceLabel": "Membership plans page",
+      "sourceUrl": "https://blogdev.biggerpockets.com/membership-types"
+    },
+    {
+      "name": "Online bootcamps",
+      "price": "$199 a la carte on that membership table. Live /bootcamps page did not show checkout.",
+      "asOf": "2026-09-15",
+      "sourceLabel": "Membership plans page",
+      "sourceUrl": "https://blogdev.biggerpockets.com/membership-types"
+    }
+  ],
+  "questionsBeforeBuying": [
+    "What exact feature am I paying for in month one?",
+    "Is there a trial, and what is the cancel path?",
+    "Do I need state lease forms, or will an attorney do that cheaper on one property?",
+    "Will I still need Pro if I only buy one house this year?"
+  ],
+  "nextSteps": [
+    "Use free content for two weeks and keep a note of blocked features.",
+    "Underwrite one listing with our [rental cash flow calculator](/tools/rental-property-cash-flow) even if you later pay for theirs.",
+    "If you want a human to review a wealth plan, that is not Pro. See [Legacy Wealth Blueprint](/legacy-wealth-blueprint)."
+  ],
+  "faqs": [
+    {
+      "q": "Is BiggerPockets legit?",
+      "a": "It is a long-running real estate media company with a large public forum. That is not a promise that every post is good advice. Treat forum tips as leads, then check numbers and local law."
+    },
+    {
+      "q": "Do I need Pro to start?",
+      "a": "No. Start free. Pay when a listed Pro feature is in your way every week."
+    },
+    {
+      "q": "Is this a BiggerPockets review?",
+      "a": "It is a briefing written by Legacy Investing Show. It is not a customer review and it has no star rating."
+    }
+  ],
+  "sources": [
+    {
+      "label": "BiggerPockets staff post on Pro pricing, March 3, 2026",
+      "url": "https://www.biggerpockets.com/forums/48/topics/1280018-new-to-biggerpockets-pro-insurance-and-loan-discounts",
+      "asOf": "2026-09-15"
+    },
+    {
+      "label": "Membership comparison page",
+      "url": "https://blogdev.biggerpockets.com/membership-types",
+      "asOf": "2026-09-15"
+    },
+    {
+      "label": "Bootcamps URL as opened",
+      "url": "https://www.biggerpockets.com/bootcamps",
+      "asOf": "2026-09-15"
+    },
+    {
+      "label": "FTC coaching and seminar guidance",
+      "url": "https://consumer.ftc.gov/articles/when-business-offer-or-coaching-program-scam",
+      "asOf": "2026-09-15"
+    }
+  ],
+  "related": [
+    { "href": "/compare/biggerpockets-alternatives", "label": "BiggerPockets alternatives" },
+    { "href": "/compare/biggerpockets-vs-rich-dad", "label": "BiggerPockets vs Rich Dad" },
+    { "href": "/blog/best-real-estate-investing-courses-full-time-job", "label": "Courses if you have a full-time job" },
+    { "href": "/reviews", "label": "Our own reviews and client results" }
+  ],
+  "cta": {
+    "title": "Pro is a tool pass",
+    "body": "If you need a plan that covers tax and debt too, that is a different product. If you only need deal math, stay with calculators.",
+    "primaryHref": "/tools",
+    "primaryLabel": "Free calculators",
+    "secondaryHref": "/compare/biggerpockets-alternatives",
+    "secondaryLabel": "See alternatives"
+  }
+}

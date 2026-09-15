@@ -1,0 +1,171 @@
+{
+  "type": "decision",
+  "slug": "real-estate-coaching-vs-course",
+  "title": "Real Estate Coaching vs a Course",
+  "h1": "Real estate coaching vs a self-paced course",
+  "keyLine": "Buy a course for a map. Buy coaching when a real decision is costing you money.",
+  "description": "When a self-paced real estate course is enough, when coaching is worth it, FTC warning signs, and questions to ask before a sales call.",
+  "query": "real estate coaching vs self-paced course",
+  "answer": "A course is recorded lessons you play on your own. Coaching is a person who answers you and, if it is real, looks at your deal. Most busy people should buy a course, or use free podcasts, until they have a listing or a lease in front of them. Coaching costs more because you are buying hours. If a seller will not say the price until a call, assume it is high. The FTC warns that real estate coaching pitches often use fake wins and rush.",
+  "criteriaIntro": "This is a format guide, not a vendor ranking. We cite the FTC and public prices only where a named product needs an example.",
+  "criteria": [
+    "Course vs coaching vs community, defined in plain words.",
+    "FTC warning signs copied from a primary consumer page.",
+    "No invented close rates or student income."
+  ],
+  "blocks": [
+    {
+      "type": "table",
+      "id": "format-table",
+      "heading": "What you are actually buying",
+      "caption": "Course, community, and coaching do different jobs.",
+      "wide": true,
+      "headers": ["Format", "You get", "Works when", "Fails when"],
+      "rows": [
+        ["Self-paced course", "Videos, PDFs, maybe a forum", "You can schedule 3 hours a week", "You need someone to say 'do not buy this house'"],
+        ["Community membership", "Peers plus some lessons", "You learn by asking and watching deals", "The room is all beginners guessing"],
+        ["Coaching", "Scheduled access to a person", "You have a live decision this month", "The 'coach' is a closer, or replies take weeks"],
+        ["Done-with-you / concierge", "They sit in deals with you", "You have capital and local legal help", "You wanted a $200 course"]
+      ]
+    },
+    {
+      "type": "prose",
+      "id": "ftc",
+      "heading": "What the FTC says to watch",
+      "paragraphs": [
+        "The [FTC page on coaching scams](https://consumer.ftc.gov/articles/when-business-offer-or-coaching-program-scam) says promoters often start with a free event, talk up student wins, claim a proven system, and rush the buy. It also says to be ready for the upsell. That pattern is common in real estate seminars. It does not mean every coach is a scam. It means you should slow down.",
+        "A second FTC note, [How to spot business coaching scams](https://consumer.ftc.gov/consumer-alerts/2026/04/how-spot-and-avoid-business-coaching-scams) (dated May 18, 2026 on the page we opened), repeats the same idea: guaranteed income and 'proven systems' are warning signs."
+      ]
+    },
+    {
+      "type": "steps",
+      "id": "decision-steps",
+      "heading": "A simple decision order",
+      "items": [
+        "Use free podcasts for two weeks. If you cannot name a model, do not buy coaching.",
+        "If you want structure, buy a course with a published price and a refund window.",
+        "Buy coaching only when a live listing, lease, or partner dispute is on the table.",
+        "Get the total price, refund rules, and who your coach is, in writing, before a card is charged."
+      ]
+    },
+    {
+      "type": "prose",
+      "id": "our-place",
+      "heading": "Where we sit",
+      "paragraphs": [
+        "Legacy Wealth Blueprint is a 12-month plan with a guide and weekly calls. It is coaching plus curriculum. It is not a deal-finding concierge. Airbnb Ascension is a separate short-term rental program. Prices we publish live on this site. Read [courses for people with a full-time job](/blog/best-real-estate-investing-courses-full-time-job) for other named vendors with public prices."
+      ]
+    }
+  ],
+  "whoFits": [
+    "You are on a sales call and you need a way to say yes to a course and no to coaching, or the reverse.",
+    "You have a day job and limited hours."
+  ],
+  "whoSkips": [
+    "You want us to pick Sean vs Preston or BNB Formula vs our program. Those live in older blog comparisons. This page is the format rule.",
+    "You already know you need a local attorney and a CPA, not a coach."
+  ],
+  "costIntro": "Format examples with public prices. Many coaches hide the number. That is data.",
+  "costCaption": "Example public prices, not a shopping cart.",
+  "costRows": [
+    {
+      "name": "BiggerPockets Pro (tools, not 1:1 coaching)",
+      "price": "$32.50 a month billed yearly, per March 2026 staff post",
+      "asOf": "2026-09-15",
+      "sourceLabel": "BiggerPockets staff post",
+      "sourceUrl": "https://www.biggerpockets.com/forums/48/topics/1280018-new-to-biggerpockets-pro-insurance-and-loan-discounts"
+    },
+    {
+      "name": "KenPro membership",
+      "price": "$39.99 a month or $399 a year",
+      "asOf": "2026-09-15",
+      "sourceLabel": "KenPro store",
+      "sourceUrl": "https://kenmcelroy.com/kenprostore/"
+    },
+    {
+      "name": "SubTo Accelerator",
+      "price": "$9,800 full, or four payments of $2,450",
+      "asOf": "2026-09-15",
+      "sourceLabel": "buy.subto.com",
+      "sourceUrl": "https://buy.subto.com/"
+    },
+    {
+      "name": "BetterLife Tribe",
+      "price": "Not published on the pages we opened",
+      "asOf": "2026-09-15",
+      "sourceLabel": "abetterlife.com",
+      "sourceUrl": "https://abetterlife.com/home-2/"
+    },
+    {
+      "name": "Legacy Wealth Blueprint",
+      "price": "$9,800 cash or card, as we publish on this site",
+      "asOf": "2026-09-15",
+      "sourceLabel": "Best tax strategy programs for W-2 earners",
+      "sourceUrl": "https://www.legacyinvestingshow.com/blog/best-tax-strategy-programs-w2-earners-over-250k"
+    }
+  ],
+  "questionsBeforeBuying": [
+    "Is there a live deal, or am I buying motivation?",
+    "Who is the coach by name, and how many hours do I get?",
+    "What is the refund rule if they go quiet?",
+    "Can I speak to two students who are not in the ads?",
+    "Will I still need a local attorney after I pay you?"
+  ],
+  "nextSteps": [
+    "Read the FTC coaching page before any call.",
+    "If you work full time, use the [full-time job course list](/blog/best-real-estate-investing-courses-full-time-job).",
+    "If tax is the real block, switch to [tax course vs a CPA](/compare/tax-course-vs-cpa)."
+  ],
+  "faqs": [
+    {
+      "q": "Is coaching worth it for a first rental?",
+      "a": "Only if you have a live listing and you need a second set of eyes this month. For the first 20 hours of learning, a course or free podcast is enough."
+    },
+    {
+      "q": "Why do coaches hide the price?",
+      "a": "High-ticket sales often use a call. That can be honest. It can also hide the number until you are tired. Ask for the total in the first ten minutes."
+    },
+    {
+      "q": "Does Legacy Investing Show sell coaching?",
+      "a": "Yes. Blueprint includes a guide and weekly calls for 12 months. We tell you that up front. See [Legacy Wealth Blueprint](/legacy-wealth-blueprint) and [reviews](/reviews)."
+    }
+  ],
+  "sources": [
+    {
+      "label": "FTC: when a coaching program is a scam",
+      "url": "https://consumer.ftc.gov/articles/when-business-offer-or-coaching-program-scam",
+      "asOf": "2026-09-15"
+    },
+    {
+      "label": "FTC: how to spot business coaching scams",
+      "url": "https://consumer.ftc.gov/consumer-alerts/2026/04/how-spot-and-avoid-business-coaching-scams",
+      "asOf": "2026-09-15"
+    },
+    {
+      "label": "KenPro store",
+      "url": "https://kenmcelroy.com/kenprostore/",
+      "asOf": "2026-09-15"
+    },
+    {
+      "label": "SubTo Accelerator checkout",
+      "url": "https://buy.subto.com/",
+      "asOf": "2026-09-15",
+      "note": "Listed $9,800 full or four payments of $2,450."
+    }
+  ],
+  "related": [
+    { "href": "/compare/biggerpockets-what-to-know", "label": "What to know before BiggerPockets Pro" },
+    { "href": "/compare/subto-alternatives", "label": "SubTo alternatives" },
+    { "href": "/blog/best-real-estate-investing-courses-full-time-job", "label": "Courses for people with a full-time job" },
+    { "href": "/blog/sean-rakidzich-vs-preston-seo-airbnb-training", "label": "Sean Rakidzich vs Preston Seo (Airbnb training)" },
+    { "href": "/compare/tax-course-vs-cpa", "label": "Tax course vs a CPA" }
+  ],
+  "cta": {
+    "title": "If you only needed a map",
+    "body": "Use the free tools and the tax library first. Buy hours only when a live decision is on the calendar.",
+    "primaryHref": "/tools",
+    "primaryLabel": "Free tools",
+    "secondaryHref": "/legacy-wealth-blueprint",
+    "secondaryLabel": "What Blueprint includes"
+  }
+}
