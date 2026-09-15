@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full antialiased">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cash-on-cash return calculator · Legacy Investing Calculators</title>
+  <meta name="description" content="Turn monthly rent, vacancy, ops, and debt service into annual cash flow divided by cash invested.">
+  <meta name="keywords" content="Cash-on-cash return, Housing &amp; moving, calculator, Legacy Investing Show">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.legacyinvestingshow.com/tools/cash-on-cash-return">
+  <meta property="og:title" content="Cash-on-cash return calculator · Legacy Investing Calculators">
+  <meta property="og:description" content="Turn monthly rent, vacancy, ops, and debt service into annual cash flow divided by cash invested.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.legacyinvestingshow.com/tools/cash-on-cash-return">
+  <meta property="og:image" content="https://www.legacyinvestingshow.com/assets/images/og-blog.jpg">
+  <meta property="og:site_name" content="Legacy Investing Calculators">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cash-on-cash return calculator · Legacy Investing Calculators">
+  <meta name="twitter:description" content="Turn monthly rent, vacancy, ops, and debt service into annual cash flow divided by cash invested.">
+  <meta name="twitter:image" content="https://www.legacyinvestingshow.com/assets/images/og-blog.jpg">
+  <meta name="twitter:site" content="@thelegacyshow">
+  <link rel="icon" href="/favicon.ico" sizes="256x256" type="image/x-icon">
+  <link rel="preload" href="/tools/_next/static/media/83afe278b6a6bb3c-s.p.2bn3s6zvc0dyp.woff2" as="font" crossorigin="" type="font/woff2">
+  <link rel="stylesheet" href="/tools/_next/static/chunks/2tdy5h_g9hs2_.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","@id":"https://www.legacyinvestingshow.com/tools/cash-on-cash-return#app","name":"Cash-on-cash return calculator","url":"https://www.legacyinvestingshow.com/tools/cash-on-cash-return","applicationCategory":"FinanceApplication","operatingSystem":"Any","description":"Turn monthly rent, vacancy, ops, and debt service into annual cash flow divided by cash invested.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},{"@type":"FAQPage","@id":"https://www.legacyinvestingshow.com/tools/cash-on-cash-return#faq","mainEntity":[{"@type":"Question","name":"Why is CoC higher than cap rate?","acceptedAnswer":{"@type":"Answer","text":"Leverage. It can also go negative faster when rates rise."}},{"@type":"Question","name":"Is 12% CoC good?","acceptedAnswer":{"@type":"Answer","text":"Only if the cash flow survives a vacancy and a repair year. Percentage without a stress test is a slogan."}},{"@type":"Question","name":"Does this work for arbitrage?","acceptedAnswer":{"@type":"Answer","text":"Yes if cash in is deposits and furnishings. The Airbnb ROI tool is the fuller version."}}]},{"@type":"BreadcrumbList","@id":"https://www.legacyinvestingshow.com/tools/cash-on-cash-return#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"All calculators","item":"https://www.legacyinvestingshow.com/tools"},{"@type":"ListItem","position":2,"name":"Housing & moving","item":"https://www.legacyinvestingshow.com/tools/categories/housing-moving"},{"@type":"ListItem","position":3,"name":"Cash-on-cash return","item":"https://www.legacyinvestingshow.com/tools/cash-on-cash-return"}]}]}</script>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2578PT1WSS');
+  </script>
+</head>
+<body class="flex min-h-full flex-col font-sans">
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <header class="sticky top-0 z-40 border-b border-line bg-paper-raised/95 backdrop-blur-sm">
+    <div class="mx-auto flex max-w-5xl items-center justify-between gap-4 px-5 py-3">
+      <a class="min-w-0" href="/tools"><span class="block truncate text-[15px] font-semibold tracking-tight text-ink">Legacy Investing Calculators</span></a>
+      <nav aria-label="Primary" class="hidden items-center gap-0.5 md:flex">
+        <a class="rounded-[6px] px-2.5 py-1.5 text-[13px] text-ink-muted hover:bg-accent-soft hover:text-ink" href="/tools/categories/money">Money</a>
+        <a class="rounded-[6px] px-2.5 py-1.5 text-[13px] text-ink-muted hover:bg-accent-soft hover:text-ink" href="/tools/categories/banking-borrowing">Banking</a>
+        <a class="rounded-[6px] px-2.5 py-1.5 text-[13px] text-ink-muted hover:bg-accent-soft hover:text-ink" href="/tools/categories/taxes-payroll">Taxes</a>
+        <a class="rounded-[6px] px-2.5 py-1.5 text-[13px] text-ink-muted hover:bg-accent-soft hover:text-ink" href="/tools/categories/housing-moving">Housing</a>
+        <a href="https://www.legacyinvestingshow.com" target="_blank" rel="noopener noreferrer" class="ml-2 rounded-[6px] bg-accent px-3 py-1.5 text-[13px] font-medium text-paper-raised hover:bg-accent-hover">Show</a>
+      </nav>
+      <a href="https://www.legacyinvestingshow.com" target="_blank" rel="noopener noreferrer" class="rounded-[6px] bg-accent px-3 py-1.5 text-[13px] font-medium text-paper-raised hover:bg-accent-hover md:hidden">Show</a>
+    </div>
+  </header>
+  <main class="flex-1">
+    <div class="mx-auto max-w-5xl px-5 py-8 sm:py-12">
+      <nav aria-label="Breadcrumb" class="text-[13px] text-ink-faint">
+        <a class="rounded-[4px] hover:text-ink-muted" href="/tools">All calculators</a>
+        <span aria-hidden="true" class="mx-2">/</span>
+        <a class="rounded-[4px] hover:text-ink-muted" href="/tools/categories/housing-moving">Housing & moving</a>
+        <span aria-hidden="true" class="mx-2">/</span>
+        <span class="text-ink-muted">Cash-on-cash return</span>
+      </nav>
+      <div class="mt-5 space-y-14">
+        <article>
+          <h1 class="text-[28px] font-semibold tracking-tight text-ink sm:text-[32px]">Cash-on-cash return</h1>
+          <p class="mt-2 max-w-2xl text-[16px] text-ink-muted">What cash-on-cash return remains after vacancy, operating costs, and debt service?</p>
+          <div class="mt-8">
+            <div class="grid gap-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:items-start">
+              <form id="operator-form" class="space-y-4 rounded-[8px] border border-line bg-paper-raised p-4 sm:p-5" novalidate>
+                <div class="flex items-baseline justify-between gap-3">
+                  <p class="text-[12px] font-medium uppercase tracking-[0.06em] text-ink-faint">Your numbers</p>
+                  <button type="button" id="operator-reset" class="rounded-[4px] text-[12px] font-medium text-ink-muted hover:text-accent">Reset</button>
+                </div>
+                <div class="space-y-1.5">
+      <label for="cash-on-cash-return-rent" class="block text-[13px] font-medium text-ink">Gross monthly rent</label>
+      <div class="relative"><span class="pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint">$</span><input id="cash-on-cash-return-rent" name="rent" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="3200" min="0" step="any" /></div>
+    </div>
+<div class="space-y-1.5">
+      <label for="cash-on-cash-return-vacancy" class="block text-[13px] font-medium text-ink">Vacancy / credit loss</label>
+      <div class="relative"><input id="cash-on-cash-return-vacancy" name="vacancy" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3 pr-12" inputmode="decimal" value="6" min="0" step="any" /><span class="pointer-events-none absolute inset-y-0 right-3 flex items-center text-[13px] text-ink-faint">%</span></div>
+    </div>
+<div class="space-y-1.5">
+      <label for="cash-on-cash-return-ops" class="block text-[13px] font-medium text-ink">Monthly operating costs</label>
+      <div class="relative"><span class="pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint">$</span><input id="cash-on-cash-return-ops" name="ops" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="900" min="0" step="any" /></div>
+    </div>
+<div class="space-y-1.5">
+      <label for="cash-on-cash-return-debt" class="block text-[13px] font-medium text-ink">Monthly debt service</label>
+      <div class="relative"><span class="pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint">$</span><input id="cash-on-cash-return-debt" name="debt" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="1650" min="0" step="any" /></div>
+    </div>
+<div class="space-y-1.5">
+      <label for="cash-on-cash-return-cashIn" class="block text-[13px] font-medium text-ink">Cash invested</label>
+      <div class="relative"><span class="pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint">$</span><input id="cash-on-cash-return-cashIn" name="cashIn" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="90000" min="0" step="any" /></div>
+    </div>
+              </form>
+              <div class="lg:sticky lg:top-20 space-y-4">
+                <div class="rounded-[8px] bg-accent-soft px-5 py-5 sm:px-6">
+                  <div id="operator-result" role="status" aria-live="polite" aria-atomic="true"><p class="text-[13px] font-medium text-ink-muted">Cash-on-cash return</p><p class="mt-1 text-[32px] font-semibold tracking-tight tabular text-ink">6.1%</p><div class="mt-4 space-y-2"><div class="flex items-baseline justify-between gap-4 border-t border-line/80 pt-2 text-[14px]"><span class="text-ink-muted">Monthly cash flow</span><span class="tabular font-medium text-ink">$458</span></div><div class="flex items-baseline justify-between gap-4 border-t border-line/80 pt-2 text-[14px]"><span class="text-ink-muted">Annual cash flow</span><span class="tabular font-medium text-ink">$5,496</span></div></div></div>
+                </div>
+                <p class="rounded-[8px] border border-line bg-paper-raised px-4 py-3 text-[13px] leading-5 text-ink-muted"><span class="font-medium text-ink">Tip. </span>Educational estimate with the assumptions listed on this page. Not tax, legal, or investment advice.</p>
+                <div>
+                  <p class="text-[13px] font-medium text-ink">Assumptions</p>
+                  <ul class="mt-2 list-disc space-y-1 pl-5 text-[13px] text-ink-muted"><li>Operating costs exclude the mortgage, which has its own field.</li><li>Capex reserves belong in ops if you want an honest CoC.</li><li>Tax effects are excluded.</li></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <section aria-labelledby="examples-heading" class="space-y-5">
+          <div>
+            <p class="text-[11px] font-medium uppercase tracking-[0.08em] text-ink-faint">Explore the numbers</p>
+            <h2 id="examples-heading" class="mt-1 text-[18px] font-semibold tracking-tight text-ink">Examples</h2>
+            <p class="mt-1 text-[14px] text-ink-muted">Load a scenario, then change one input at a time.</p>
+          </div>
+          <div id="operator-examples" class="grid gap-0 overflow-hidden rounded-[8px] border border-line sm:grid-cols-3"><div class="flex flex-col p-4 sm:p-5 bg-accent-soft">
+      <p class="text-[11px] font-medium uppercase tracking-[0.06em] text-ink-faint">Example 1</p>
+      <h3 class="mt-2 text-[14px] font-semibold text-ink">Standard buy</h3>
+      <p class="mt-1 flex-1 text-[13px] leading-5 text-ink-muted">$90k in, modest cash flow.</p>
+      <p class="mt-4 text-[12px] text-ink-muted">Cash-on-cash return</p>
+      <p class="text-[22px] font-semibold tracking-tight tabular text-ink">6.1%</p>
+      <button type="button" data-example-index="0" aria-pressed="true" class="mt-4 self-start rounded-[6px] px-3 py-1.5 text-[13px] font-medium bg-accent text-paper-raised">Selected</button>
+    </div><div class="flex flex-col p-4 sm:p-5 border-t border-line sm:border-t-0 sm:border-l bg-paper-raised">
+      <p class="text-[11px] font-medium uppercase tracking-[0.06em] text-ink-faint">Example 2</p>
+      <h3 class="mt-2 text-[14px] font-semibold text-ink">Thin deal</h3>
+      <p class="mt-1 flex-1 text-[13px] leading-5 text-ink-muted">Higher debt service.</p>
+      <p class="mt-4 text-[12px] text-ink-muted">Cash-on-cash return</p>
+      <p class="text-[22px] font-semibold tracking-tight tabular text-ink">-1.4%</p>
+      <button type="button" data-example-index="1" aria-pressed="false" class="mt-4 self-start rounded-[6px] px-3 py-1.5 text-[13px] font-medium border border-line text-ink hover:border-accent hover:bg-accent-soft">Use this example</button>
+    </div><div class="flex flex-col p-4 sm:p-5 border-t border-line sm:border-t-0 sm:border-l bg-paper-raised">
+      <p class="text-[11px] font-medium uppercase tracking-[0.06em] text-ink-faint">Example 3</p>
+      <h3 class="mt-2 text-[14px] font-semibold text-ink">Arbitrage-style cash in</h3>
+      <p class="mt-1 flex-1 text-[13px] leading-5 text-ink-muted">Smaller denominator.</p>
+      <p class="mt-4 text-[12px] text-ink-muted">Cash-on-cash return</p>
+      <p class="text-[22px] font-semibold tracking-tight tabular text-ink">98.7%</p>
+      <button type="button" data-example-index="2" aria-pressed="false" class="mt-4 self-start rounded-[6px] px-3 py-1.5 text-[13px] font-medium border border-line text-ink hover:border-accent hover:bg-accent-soft">Use this example</button>
+    </div></div>
+        </section>
+        <section aria-labelledby="about-heading" class="grid gap-10 border-t border-line pt-10 lg:grid-cols-2">
+          <div class="space-y-6">
+            <div>
+              <h2 id="about-heading" class="text-[18px] font-semibold tracking-tight text-ink">What this calculates</h2>
+              <p class="mt-2 text-[15px] leading-7 text-ink-muted">Turn monthly rent, vacancy, ops, and debt service into annual cash flow divided by cash invested.</p>
+            </div>
+            <div>
+              <h3 class="text-[15px] font-semibold text-ink">How to use it</h3>
+              <ol class="mt-2 list-decimal space-y-1.5 pl-5 text-[14px] leading-6 text-ink-muted"><li>Cash invested is down payment plus closing plus initial capex.</li><li>If CoC looks spectacular, the denominator is probably too small or ops are incomplete.</li><li>Compare with cap rate to see how much of the return is leverage.</li></ol>
+            </div>
+            <div>
+              <h3 class="text-[15px] font-semibold text-ink">Common mistakes</h3>
+              <ul class="mt-2 list-disc space-y-1.5 pl-5 text-[14px] leading-6 text-ink-muted"><li>Using purchase price instead of cash in.</li><li>Zero vacancy forever.</li><li>Leaving management out because you will self-manage.</li></ul>
+            </div>
+          </div>
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-[15px] font-semibold text-ink">Formula</h3>
+              <p class="mt-2 rounded-[8px] border border-line bg-paper-raised px-4 py-3 font-mono text-[13px] leading-6 text-ink">Annual CF = (rent × (1 − vacancy%) − ops − debt) × 12. CoC = annual CF ÷ cash invested.</p>
+            </div>
+          </div>
+        </section>
+        <section aria-labelledby="faq-heading" class="border-t border-line pt-10">
+          <h2 id="faq-heading" class="text-[18px] font-semibold tracking-tight text-ink">FAQ</h2>
+          <div class="mt-3"><details class="group border-b border-line py-3"><summary class="cursor-pointer list-none rounded-[4px] text-[15px] font-medium text-ink marker:content-none [&::-webkit-details-marker]:hidden"><span class="flex items-start justify-between gap-4">Why is CoC higher than cap rate?<span aria-hidden="true" class="text-ink-faint transition group-open:rotate-45">+</span></span></summary><p class="mt-2 max-w-3xl text-[14px] leading-6 text-ink-muted">Leverage. It can also go negative faster when rates rise.</p></details><details class="group border-b border-line py-3"><summary class="cursor-pointer list-none rounded-[4px] text-[15px] font-medium text-ink marker:content-none [&::-webkit-details-marker]:hidden"><span class="flex items-start justify-between gap-4">Is 12% CoC good?<span aria-hidden="true" class="text-ink-faint transition group-open:rotate-45">+</span></span></summary><p class="mt-2 max-w-3xl text-[14px] leading-6 text-ink-muted">Only if the cash flow survives a vacancy and a repair year. Percentage without a stress test is a slogan.</p></details><details class="group border-b border-line py-3"><summary class="cursor-pointer list-none rounded-[4px] text-[15px] font-medium text-ink marker:content-none [&::-webkit-details-marker]:hidden"><span class="flex items-start justify-between gap-4">Does this work for arbitrage?<span aria-hidden="true" class="text-ink-faint transition group-open:rotate-45">+</span></span></summary><p class="mt-2 max-w-3xl text-[14px] leading-6 text-ink-muted">Yes if cash in is deposits and furnishings. The Airbnb ROI tool is the fuller version.</p></details></div>
+        </section>
+        <section aria-labelledby="related-heading" class="border-t border-line pt-10">
+          <h2 id="related-heading" class="text-[18px] font-semibold tracking-tight text-ink">Related calculators</h2>
+          <p class="mt-1 text-[14px] text-ink-muted">The questions people usually ask next.</p>
+          <ul class="mt-4 divide-y divide-line border-t border-line"><li><a class="flex items-start justify-between gap-4 px-1 py-3.5 hover:bg-accent-soft/40" href="/tools/cap-rate"><span><span class="block text-[15px] font-medium text-ink">Cap rate</span><span class="mt-0.5 block text-[13px] text-ink-muted">Unlevered cousin.</span></span><span aria-hidden="true" class="text-ink-faint">→</span></a></li><li><a class="flex items-start justify-between gap-4 px-1 py-3.5 hover:bg-accent-soft/40" href="/tools/airbnb-arbitrage-roi"><span><span class="block text-[15px] font-medium text-ink">Airbnb arbitrage ROI</span><span class="mt-0.5 block text-[13px] text-ink-muted">STR CoC with setup costs.</span></span><span aria-hidden="true" class="text-ink-faint">→</span></a></li><li><a class="flex items-start justify-between gap-4 px-1 py-3.5 hover:bg-accent-soft/40" href="/tools/rental-property-cash-flow"><span><span class="block text-[15px] font-medium text-ink">Rental property cash flow</span><span class="mt-0.5 block text-[13px] text-ink-muted">Monthly dollars.</span></span><span aria-hidden="true" class="text-ink-faint">→</span></a></li></ul>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="mt-auto border-t border-line">
+    <div class="mx-auto max-w-5xl px-5 py-10">
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+        <div class="max-w-xl">
+          <p class="text-[13px] font-medium text-ink">From Legacy Investing Show</p>
+          <p class="mt-1 text-[14px] text-ink-muted">Educational estimates with visible assumptions. Continue with the show when you want the bigger picture.</p>
+        </div>
+        <a href="https://www.legacyinvestingshow.com" target="_blank" rel="noopener noreferrer" class="inline-flex shrink-0 rounded-[6px] bg-accent px-4 py-2.5 text-[14px] font-medium text-paper-raised hover:bg-accent-hover">Visit the show</a>
+      </div>
+      <p class="mt-8 text-[12px] text-ink-faint">© 2026 Legacy Investing Calculators. Not financial advice.</p>
+    </div>
+  </footer>
+  <script type="application/json" id="operator-spec">{"slug":"cash-on-cash-return","inputs":[{"id":"rent","label":"Gross monthly rent","type":"currency","default":3200},{"id":"vacancy","label":"Vacancy / credit loss","type":"percent","default":6},{"id":"ops","label":"Monthly operating costs","type":"currency","default":900},{"id":"debt","label":"Monthly debt service","type":"currency","default":1650},{"id":"cashIn","label":"Cash invested","type":"currency","default":90000}],"examples":[{"name":"Standard buy","description":"$90k in, modest cash flow.","inputs":{"rent":3200,"vacancy":6,"ops":900,"debt":1650,"cashIn":90000}},{"name":"Thin deal","description":"Higher debt service.","inputs":{"rent":3200,"vacancy":8,"ops":950,"debt":2100,"cashIn":90000}},{"name":"Arbitrage-style cash in","description":"Smaller denominator.","inputs":{"rent":3200,"vacancy":10,"ops":1400,"debt":0,"cashIn":18000}}]}</script>
+  <script src="/assets/js/operator-calculator-models.js"></script>
+  <script src="/assets/js/operator-calculator.js"></script>
+</body>
+</html>

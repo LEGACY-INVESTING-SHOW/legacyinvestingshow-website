@@ -1,0 +1,1145 @@
+{
+  "source": "First-party calculators for tax, investing, debt, STR, and real estate. Inspired by calculator/research workflows in https://github.com/Jera-Value/awesome-investing-tools-and-software-directory, filtered to Legacy Investing Show topics. External brokers, options-flow terminals, and crypto tools were excluded.",
+  "categories": {
+    "taxes-payroll": { "name": "Taxes & payroll", "blurb": "Estimates, entity choice, and real-estate tax acceleration." },
+    "money": { "name": "Personal money", "blurb": "Portfolio sizing, compounding, and retirement withdrawal math." },
+    "banking-borrowing": { "name": "Banking & borrowing", "blurb": "HELOC, PMI, utilization, and extra-payment tradeoffs." },
+    "housing-moving": { "name": "Housing & moving", "blurb": "Rental underwriting, STR operations, and house hacking." }
+  },
+  "tools": [
+    {
+      "slug": "cost-segregation-savings",
+      "title": "Cost segregation savings",
+      "question": "How much extra year-one depreciation tax savings could a study produce?",
+      "description": "Estimate first-year tax savings from reclassifying rental basis into short-life property, bonus depreciation, and a study fee.",
+      "category": "taxes-payroll",
+      "headlineLabel": "Year-one tax savings after study cost",
+      "formula": "Extra dep ≈ bonus on reclassified basis + remaining short-life dep − 27.5-year straight line. Savings = extra dep × tax rate − study cost.",
+      "inputs": [
+        { "id": "basis", "label": "Depreciable purchase basis", "type": "currency", "default": 450000 },
+        { "id": "landPercent", "label": "Land share", "type": "percent", "default": 20 },
+        { "id": "reclassPercent", "label": "Share moved to 5/7/15-year property", "type": "percent", "default": 25 },
+        { "id": "bonusPercent", "label": "Bonus depreciation", "type": "percent", "default": 100 },
+        { "id": "taxRate", "label": "Combined marginal tax rate", "type": "percent", "default": 37 },
+        { "id": "studyCost", "label": "Study and filing cost", "type": "currency", "default": 5000 }
+      ],
+      "assumptions": [
+        "Building recovery is 27.5-year straight line with no mid-month convention.",
+        "Reclassified property uses a 5-year remainder after bonus.",
+        "This does not test passive-activity, at-risk, or taxable-income limits."
+      ],
+      "howTo": [
+        "Start with purchase basis and a conservative land percentage.",
+        "Enter the share a study would likely move into personal property or land improvements.",
+        "Stress the tax rate. If a few points of rate flip the net, get a real quote."
+      ],
+      "mistakes": [
+        "Modeling bonus you cannot use because of passive or taxable-income limits.",
+        "Ignoring recapture when you sell.",
+        "Treating the study cost as optional documentation."
+      ],
+      "faqs": [
+        { "q": "Is this a cost segregation study?", "a": "No. It is a planning screen so you can decide whether to price a study. The study creates the allocations your CPA files." },
+        { "q": "What bonus rate should I use in 2026?", "a": "Qualifying property acquired after January 19, 2025 can use 100% bonus. Confirm placed-in-service dates with your advisor." },
+        { "q": "Do I need to be a real estate professional?", "a": "Not always. Short-term rental material participation can matter more for W-2 owners. This calculator does not test those hours." }
+      ],
+      "related": [
+        { "href": "/tax-strategies/cost-segregation", "label": "Cost segregation guide", "question": "How the study actually works." },
+        { "href": "/tools/bonus-depreciation-estimate", "label": "Bonus depreciation estimate", "question": "Isolates the bonus percentage." },
+        { "href": "/tools/depreciation-recapture", "label": "Depreciation recapture", "question": "What you may give back on sale." },
+        { "href": "/tools/tax-structure-calculator", "label": "Tax structure calculator", "question": "Wages vs rental paper losses." }
+      ],
+      "examples": [
+        { "name": "Small STR", "description": "A $450k basis with 25% reclass and 100% bonus.", "inputs": { "basis": 450000, "landPercent": 20, "reclassPercent": 25, "bonusPercent": 100, "taxRate": 37, "studyCost": 5000 } },
+        { "name": "Conservative reclass", "description": "Same property, 15% reclass and a 32% rate.", "inputs": { "basis": 450000, "landPercent": 20, "reclassPercent": 15, "bonusPercent": 100, "taxRate": 32, "studyCost": 6500 } },
+        { "name": "No bonus", "description": "Older placed-in-service assumption at 40% bonus.", "inputs": { "basis": 800000, "landPercent": 20, "reclassPercent": 30, "bonusPercent": 40, "taxRate": 37, "studyCost": 8000 } }
+      ]
+    },
+    {
+      "slug": "1031-exchange-deferred-gain",
+      "title": "1031 exchange deferred gain",
+      "question": "How much gain is deferred if you replace a rental and how much boot is taxed now?",
+      "description": "Estimate realized gain, boot, and deferred gain on a like-kind rental exchange using sale price, basis, and replacement price.",
+      "category": "taxes-payroll",
+      "headlineLabel": "Gain deferred",
+      "formula": "Realized gain = sale price − selling costs − adjusted basis. Recognized gain = min(realized gain, boot). Deferred = realized − recognized.",
+      "inputs": [
+        { "id": "salePrice", "label": "Sale price", "type": "currency", "default": 650000 },
+        { "id": "sellingCosts", "label": "Selling costs", "type": "currency", "default": 39000 },
+        { "id": "adjustedBasis", "label": "Adjusted basis", "type": "currency", "default": 280000 },
+        { "id": "replacementPrice", "label": "Replacement property price", "type": "currency", "default": 700000 },
+        { "id": "cashBoot", "label": "Cash kept (boot)", "type": "currency", "default": 0 }
+      ],
+      "assumptions": [
+        "Both properties are like-kind investment real estate.",
+        "Boot is the greater of cash kept and equity not rolled into the replacement.",
+        "Identification and closing deadlines are not modeled."
+      ],
+      "howTo": [
+        "Use the actual sale price and a realistic cost of sale.",
+        "Enter adjusted basis after depreciation, not original purchase price.",
+        "If you keep cash or buy down, put it in boot."
+      ],
+      "mistakes": [
+        "Using original purchase price as basis.",
+        "Forgetting selling costs, which reduce realized gain.",
+        "Treating a vacation home as automatically like-kind."
+      ],
+      "faqs": [
+        { "q": "What is boot?", "a": "Value you take out of the exchange: cash, debt relief you do not replace, or a cheaper replacement. Boot can make part of the gain taxable now." },
+        { "q": "Does deferred gain disappear?", "a": "No. It usually reduces basis in the replacement property and shows up later on sale unless you exchange again." },
+        { "q": "Can I 1031 a short-term rental?", "a": "It depends on use, holding, and whether it is investment property. Confirm with a QI and a CPA before you list." }
+      ],
+      "related": [
+        { "href": "/tax-strategies/1031-exchange", "label": "1031 exchange guide", "question": "Deadlines and replacement rules." },
+        { "href": "/tools/depreciation-recapture", "label": "Depreciation recapture", "question": "What a taxable sale can trigger." },
+        { "href": "/tools/capital-gains-tax-estimate", "label": "Capital gains tax estimate", "question": "If you sell without exchanging." },
+        { "href": "/tools/rental-property-cash-flow", "label": "Rental property cash flow", "question": "Underwrite the replacement." }
+      ],
+      "examples": [
+        { "name": "Full rollover", "description": "Replacement is larger and no cash is kept.", "inputs": { "salePrice": 650000, "sellingCosts": 39000, "adjustedBasis": 280000, "replacementPrice": 700000, "cashBoot": 0 } },
+        { "name": "Cash-out boot", "description": "Same sale, $40k kept.", "inputs": { "salePrice": 650000, "sellingCosts": 39000, "adjustedBasis": 280000, "replacementPrice": 700000, "cashBoot": 40000 } },
+        { "name": "Trade down", "description": "Replacement is cheaper than net equity.", "inputs": { "salePrice": 650000, "sellingCosts": 39000, "adjustedBasis": 280000, "replacementPrice": 500000, "cashBoot": 0 } }
+      ]
+    },
+    {
+      "slug": "bonus-depreciation-estimate",
+      "title": "Bonus depreciation estimate",
+      "question": "What year-one deduction does a bonus percentage create on qualifying basis?",
+      "description": "Turn qualifying short-life rental or business basis into an estimated bonus depreciation deduction and tax savings.",
+      "category": "taxes-payroll",
+      "headlineLabel": "Estimated year-one tax savings",
+      "formula": "Bonus = qualifying basis × bonus%. Tax savings = bonus × tax rate.",
+      "inputs": [
+        { "id": "qualifyingBasis", "label": "Qualifying basis", "type": "currency", "default": 80000 },
+        { "id": "bonusPercent", "label": "Bonus depreciation", "type": "percent", "default": 100 },
+        { "id": "taxRate", "label": "Combined marginal tax rate", "type": "percent", "default": 37 }
+      ],
+      "assumptions": [
+        "The basis is already eligible (typically 5, 7, or 15-year property).",
+        "No taxable-income or passive-loss limitation is applied.",
+        "2026 planning default is 100% for qualifying post-January 19, 2025 property."
+      ],
+      "howTo": [
+        "Use the personal-property or improvement basis, not the whole building.",
+        "Set bonus to the rate that applies to the placed-in-service year.",
+        "If you cannot use the loss this year, lower the tax-rate assumption."
+      ],
+      "mistakes": [
+        "Applying bonus to land or 27.5-year residential rental structure.",
+        "Ignoring that unused losses may be suspended.",
+        "Forgetting recapture on sale or conversion."
+      ],
+      "faqs": [
+        { "q": "Is furniture for an Airbnb bonus property?", "a": "Often yes if it is personal property used in the business and placed in service. Keep invoices." },
+        { "q": "Does bonus replace a cost-seg study?", "a": "No. Bonus needs a qualifying asset class. The study is how you support moving building costs into those classes." },
+        { "q": "What if my bonus year is not 100%?", "a": "Enter the percentage that applies to your placed-in-service date." }
+      ],
+      "related": [
+        { "href": "/tax-strategies/bonus-depreciation", "label": "Bonus depreciation guide", "question": "2026 100% rules." },
+        { "href": "/tools/cost-segregation-savings", "label": "Cost segregation savings", "question": "Pairs bonus with a study." },
+        { "href": "/tools/str-purchase-analysis", "label": "STR purchase analysis", "question": "Deal-level return." }
+      ],
+      "examples": [
+        { "name": "Furnish an STR", "description": "$80k of furniture and equipment at 100%.", "inputs": { "qualifyingBasis": 80000, "bonusPercent": 100, "taxRate": 37 } },
+        { "name": "Land improvements", "description": "$40k of 15-year property at 100%.", "inputs": { "qualifyingBasis": 40000, "bonusPercent": 100, "taxRate": 32 } },
+        { "name": "Partial bonus", "description": "Older 60% bonus year on $120k.", "inputs": { "qualifyingBasis": 120000, "bonusPercent": 60, "taxRate": 37 } }
+      ]
+    },
+    {
+      "slug": "depreciation-recapture",
+      "title": "Depreciation recapture",
+      "question": "How much of a rental sale is recapture versus long-term capital gain?",
+      "description": "Split a rental sale into depreciation recapture and leftover long-term gain using basis, accumulated depreciation, and your rates.",
+      "category": "taxes-payroll",
+      "headlineLabel": "Estimated federal tax on the sale",
+      "formula": "Gain = amount realized − (original basis − accumulated depreciation). Recapture = min(gain, accumulated depreciation).",
+      "inputs": [
+        { "id": "originalBasis", "label": "Original depreciable basis", "type": "currency", "default": 400000 },
+        { "id": "accumulatedDepreciation", "label": "Accumulated depreciation", "type": "currency", "default": 90000 },
+        { "id": "salePrice", "label": "Sale price", "type": "currency", "default": 550000 },
+        { "id": "sellingCosts", "label": "Selling costs", "type": "currency", "default": 33000 },
+        { "id": "recaptureRate", "label": "Unrecaptured 1250 / recapture rate", "type": "percent", "default": 25 },
+        { "id": "ltcgRate", "label": "Long-term capital gains rate", "type": "percent", "default": 15 }
+      ],
+      "assumptions": [
+        "Residential rental recapture is modeled at the rate you enter, default 25% unrecaptured 1250.",
+        "State tax, NIIT, and 1245 personal-property recapture at ordinary rates are not auto-split.",
+        "Installment sales and 1031 exchanges are excluded."
+      ],
+      "howTo": [
+        "Pull accumulated depreciation from prior returns or depreciation schedules.",
+        "Use 25% unless your CPA tells you a different mix of 1245 and 1250.",
+        "Compare this result to a 1031 if you are not done owning rentals."
+      ],
+      "mistakes": [
+        "Reporting the whole gain at 15%.",
+        "Forgetting selling costs.",
+        "Ignoring NIIT on high MAGI years."
+      ],
+      "faqs": [
+        { "q": "Is recapture ordinary income?", "a": "Unrecaptured 1250 on real property is generally capped at 25%. Personal property (1245) can be ordinary. This tool uses the rate you enter for the recapture slice." },
+        { "q": "Does a 1031 avoid recapture now?", "a": "A valid exchange can defer it. Recapture can still matter later." },
+        { "q": "Where is NIIT?", "a": "Not included. Add 3.8% mentally if MAGI is over the NIIT threshold." }
+      ],
+      "related": [
+        { "href": "/tax-strategies/depreciation-recapture-str", "label": "STR recapture guide", "question": "1250 vs 1245 on an STR." },
+        { "href": "/tools/1031-exchange-deferred-gain", "label": "1031 deferred gain", "question": "Defer instead of selling taxable." },
+        { "href": "/tools/capital-gains-tax-estimate", "label": "Capital gains tax estimate", "question": "Simple gain × rate." }
+      ],
+      "examples": [
+        { "name": "Held 7 years", "description": "$90k of depreciation on a $550k sale.", "inputs": { "originalBasis": 400000, "accumulatedDepreciation": 90000, "salePrice": 550000, "sellingCosts": 33000, "recaptureRate": 25, "ltcgRate": 15 } },
+        { "name": "Heavy cost seg", "description": "More recapture after acceleration.", "inputs": { "originalBasis": 400000, "accumulatedDepreciation": 180000, "salePrice": 550000, "sellingCosts": 33000, "recaptureRate": 25, "ltcgRate": 15 } },
+        { "name": "High bracket leftover gain", "description": "Leftover gain at 20%.", "inputs": { "originalBasis": 400000, "accumulatedDepreciation": 90000, "salePrice": 800000, "sellingCosts": 48000, "recaptureRate": 25, "ltcgRate": 20 } }
+      ]
+    },
+    {
+      "slug": "quarterly-estimated-tax",
+      "title": "Quarterly estimated tax",
+      "question": "What should each remaining estimated payment be, and what does safe harbor require?",
+      "description": "Split remaining federal tax across the payments you still have to make, and compare that plan to last year's safe-harbor target.",
+      "category": "taxes-payroll",
+      "headlineLabel": "Next payment on current-year estimate",
+      "formula": "Remaining tax = annual estimate − already paid. Payment = remaining tax ÷ remaining payments. Safe harbor = last year × 100% or 110%.",
+      "inputs": [
+        { "id": "annualTax", "label": "Current-year tax estimate", "type": "currency", "default": 48000 },
+        { "id": "alreadyPaid", "label": "Withholding and estimates already paid", "type": "currency", "default": 12000 },
+        { "id": "lastYearTax", "label": "Last year's total tax", "type": "currency", "default": 40000 },
+        { "id": "remainingPayments", "label": "Remaining payments this year", "type": "number", "default": 3, "min": 1, "max": 4, "step": 1 },
+        { "id": "highIncome", "label": "Use 110% high-income safe harbor (1 = yes)", "type": "number", "default": 1, "min": 0, "max": 1, "step": 1 }
+      ],
+      "assumptions": [
+        "This is a cash plan, not Form 2210 annualization.",
+        "High-income safe harbor is modeled as 110% of last year's tax when the toggle is 1.",
+        "Penalties, state estimates, and household employment tax are excluded."
+      ],
+      "howTo": [
+        "Update the annual estimate whenever profit or withholding changes.",
+        "Count only payments still ahead of you, including the next due date.",
+        "If income is lumpy, compare this with a CPA annualized method."
+      ],
+      "mistakes": [
+        "Ignoring withholding, which is treated as paid evenly.",
+        "Using four payments when Q1 already passed.",
+        "Assuming safe harbor equals what you will actually owe."
+      ],
+      "faqs": [
+        { "q": "Should I use safe harbor or the current-year number?", "a": "Safe harbor is the simpler penalty floor. Pay the higher of a realistic current-year remainder and the safe-harbor remainder if you want margin." },
+        { "q": "Who uses 110%?", "a": "Higher AGI filers often must use 110% of last year's tax. Set the toggle to 1 if that is you." },
+        { "q": "Does this include SE tax?", "a": "Only if you put it in the annual estimate. Pair with the self-employment tax reserve tool." }
+      ],
+      "related": [
+        { "href": "/tools/self-employment-tax-reserve", "label": "Self-employment tax reserve", "question": "Build the annual number." },
+        { "href": "/tools/tax-withholding-reconciliation", "label": "Tax withholding reconciliation", "question": "W-2 catch-up view." },
+        { "href": "/compare/safe-harbor-vs-annualized-income-1099", "label": "Safe harbor vs annualized", "question": "When lumpy income changes the method." }
+      ],
+      "examples": [
+        { "name": "Behind after Q1", "description": "$12k in, three payments left.", "inputs": { "annualTax": 48000, "alreadyPaid": 12000, "lastYearTax": 40000, "remainingPayments": 3, "highIncome": 1 } },
+        { "name": "Caught up", "description": "Withholding already covers most of it.", "inputs": { "annualTax": 36000, "alreadyPaid": 30000, "lastYearTax": 34000, "remainingPayments": 2, "highIncome": 0 } },
+        { "name": "New 1099 year", "description": "Last year was small; current year is not.", "inputs": { "annualTax": 60000, "alreadyPaid": 0, "lastYearTax": 8000, "remainingPayments": 4, "highIncome": 0 } }
+      ]
+    },
+    {
+      "slug": "qbi-deduction-estimate",
+      "title": "QBI deduction estimate",
+      "question": "What 20% qualified business income deduction survives a simple wage limitation?",
+      "description": "Estimate Section 199A QBI as the lesser of 20% of QBI, 20% of taxable income, and optionally 50% of W-2 wages.",
+      "category": "taxes-payroll",
+      "headlineLabel": "Estimated QBI deduction",
+      "formula": "QBI deduction ≈ min(20% × QBI, 20% × taxable income, and if toggled 50% × W-2 wages).",
+      "inputs": [
+        { "id": "qbi", "label": "Qualified business income", "type": "currency", "default": 140000 },
+        { "id": "taxableIncome", "label": "Taxable income before QBI", "type": "currency", "default": 180000 },
+        { "id": "w2Wages", "label": "W-2 wages of the business", "type": "currency", "default": 60000 },
+        { "id": "applyWageLimit", "label": "Apply 50% wage limit (1 = yes)", "type": "number", "default": 0, "min": 0, "max": 1, "step": 1 }
+      ],
+      "assumptions": [
+        "Specified-service trade or business phaseouts are not modeled.",
+        "The UBIA 2.5% property test is not modeled.",
+        "Turn on the wage limit if you are over the taxable-income threshold."
+      ],
+      "howTo": [
+        "Use profit after ordinary business deductions, not gross receipts.",
+        "If you are well under the threshold, leave the wage limit off.",
+        "If you are over it, turn the limit on and see whether wages or QBI binds."
+      ],
+      "mistakes": [
+        "Treating W-2 wages paid to yourself in an S corp as increasing QBI. They reduce QBI.",
+        "Ignoring SSTB phaseouts for consultants and similar fields.",
+        "Using AGI instead of taxable income."
+      ],
+      "faqs": [
+        { "q": "Does an S corp help QBI?", "a": "Sometimes. Reasonable salary creates wages that can support the limitation, but salary itself is not QBI. Model both." },
+        { "q": "Are rental STRs QBI?", "a": "They can be if they rise to a trade or business. That is facts-and-circumstances. Do not assume it." },
+        { "q": "Is 20% automatic?", "a": "No. Taxable income and wage/property tests can cut it. This is the simple screen." }
+      ],
+      "related": [
+        { "href": "/tax-strategies/qualified-business-income-deduction", "label": "QBI deduction guide", "question": "Thresholds and SSTB rules." },
+        { "href": "/tools/scorp-vs-sole-prop", "label": "S corp vs sole prop", "question": "Salary versus SE tax." },
+        { "href": "/compare/s-corp-vs-qbi-deduction", "label": "S corp vs QBI", "question": "When the two strategies fight." }
+      ],
+      "examples": [
+        { "name": "Under threshold", "description": "Wage limit off.", "inputs": { "qbi": 140000, "taxableIncome": 180000, "w2Wages": 0, "applyWageLimit": 0 } },
+        { "name": "Over threshold", "description": "Wage limit on with $60k payroll.", "inputs": { "qbi": 220000, "taxableIncome": 280000, "w2Wages": 60000, "applyWageLimit": 1 } },
+        { "name": "Thin payroll", "description": "High QBI, little W-2.", "inputs": { "qbi": 300000, "taxableIncome": 320000, "w2Wages": 20000, "applyWageLimit": 1 } }
+      ]
+    },
+    {
+      "slug": "scorp-vs-sole-prop",
+      "title": "S corp vs sole prop tax",
+      "question": "How much self-employment tax might an S corp salary split save versus Schedule C?",
+      "description": "Compare sole-proprietor SE tax with employer-plus-employee FICA on a reasonable S corp salary using 2026 Social Security wage-base math.",
+      "category": "taxes-payroll",
+      "headlineLabel": "Payroll / SE tax saved with an S corp",
+      "formula": "Sole-prop SE ≈ 15.3% of 92.35% of profit (SS capped). S corp FICA ≈ 15.3% of salary (SS capped). Savings = SE − FICA.",
+      "inputs": [
+        { "id": "profit", "label": "Net profit before owner pay", "type": "currency", "default": 180000 },
+        { "id": "salary", "label": "Reasonable S corp salary", "type": "currency", "default": 90000 }
+      ],
+      "assumptions": [
+        "2026 Social Security wage base is $184,500.",
+        "Additional Medicare uses the $200,000 single threshold.",
+        "Income tax, QBI, reasonable-salary risk, and payroll service costs are excluded."
+      ],
+      "howTo": [
+        "Use profit after ordinary expenses, before owner draws.",
+        "Set salary to something you can defend with role, hours, and comps.",
+        "If savings are smaller than payroll friction, stay on Schedule C."
+      ],
+      "mistakes": [
+        "Setting salary near zero.",
+        "Forgetting employer FICA is a real check you write.",
+        "Ignoring QBI wage effects."
+      ],
+      "faqs": [
+        { "q": "Is this the full S corp analysis?", "a": "No. It isolates payroll tax. Income tax, QBI, state unemployment, and administration can erase a thin savings number." },
+        { "q": "What is reasonable salary?", "a": "What you would pay someone else to do the owner work. Document it." },
+        { "q": "Does this include the 20% QBI deduction?", "a": "No. Pair it with the QBI estimate." }
+      ],
+      "related": [
+        { "href": "/tax-strategies/s-corp-strategy", "label": "S corp strategy", "question": "When the election is worth the friction." },
+        { "href": "/tools/qbi-deduction-estimate", "label": "QBI deduction estimate", "question": "Salary reduces QBI." },
+        { "href": "/tools/self-employment-tax-reserve", "label": "Self-employment tax reserve", "question": "Schedule C reserve." }
+      ],
+      "examples": [
+        { "name": "Consultant", "description": "$180k profit, $90k salary.", "inputs": { "profit": 180000, "salary": 90000 } },
+        { "name": "Thin savings", "description": "Salary close to profit.", "inputs": { "profit": 120000, "salary": 110000 } },
+        { "name": "High profit", "description": "$300k profit, $150k salary.", "inputs": { "profit": 300000, "salary": 150000 } }
+      ]
+    },
+    {
+      "slug": "fire-number",
+      "title": "FIRE number",
+      "question": "What portfolio would cover your spending at the withdrawal rate you choose?",
+      "description": "Translate annual spending into a FIRE / Coast-style portfolio target using a sustainable withdrawal rate, then show the gap versus what you have.",
+      "category": "money",
+      "headlineLabel": "Portfolio needed",
+      "formula": "Target = annual spending ÷ (withdrawal rate ÷ 100). 4% implies 25× spending.",
+      "inputs": [
+        { "id": "annualSpend", "label": "Annual spending", "type": "currency", "default": 80000 },
+        { "id": "swr", "label": "Withdrawal rate", "type": "percent", "default": 4 },
+        { "id": "currentPortfolio", "label": "Current invested assets", "type": "currency", "default": 220000 }
+      ],
+      "assumptions": [
+        "Spending is real, after-tax lifestyle cost, not gross income.",
+        "The withdrawal rate is a planning lever, not a guarantee.",
+        "Pensions, Social Security, and rental cash flow are not subtracted unless you lower spending."
+      ],
+      "howTo": [
+        "Use a year of actual spending, not a hopeful budget.",
+        "If rentals will keep running, reduce spending by the cash you trust.",
+        "Compare 3.5%, 4%, and 5% before you treat the target as a date."
+      ],
+      "mistakes": [
+        "Using gross income instead of spending.",
+        "Ignoring sequence-of-returns risk in the first decade.",
+        "Counting the house you live in as the whole portfolio."
+      ],
+      "faqs": [
+        { "q": "Why 25×?", "a": "Because 4% of 25× spending is one year of spending. Lower rates need a larger multiple." },
+        { "q": "Should I include rental properties?", "a": "Include the equity only if you would sell or refinance them. Otherwise subtract trusted cash flow from spending." },
+        { "q": "Is 4% still valid?", "a": "It is a research starting point, not a promise. Fees, taxes, and a bad first decade all matter." }
+      ],
+      "related": [
+        { "href": "/tools/four-percent-rule", "label": "4% rule withdrawal", "question": "The inverse of this tool." },
+        { "href": "/tools/retirement-income-runway", "label": "Retirement income runway", "question": "How long current savings last." },
+        { "href": "/blog/fire-movement-guide", "label": "FIRE movement guide", "question": "Context for the number." }
+      ],
+      "examples": [
+        { "name": "Classic 4%", "description": "$80k lifestyle.", "inputs": { "annualSpend": 80000, "swr": 4, "currentPortfolio": 220000 } },
+        { "name": "Lean 3.5%", "description": "More conservative rate.", "inputs": { "annualSpend": 80000, "swr": 3.5, "currentPortfolio": 220000 } },
+        { "name": "House-hacked spend", "description": "Lower spending after rent offset.", "inputs": { "annualSpend": 48000, "swr": 4, "currentPortfolio": 150000 } }
+      ]
+    },
+    {
+      "slug": "four-percent-rule",
+      "title": "4% rule withdrawal",
+      "question": "What first-year withdrawal does your portfolio support at the rate you choose?",
+      "description": "Apply a withdrawal rate to invested assets to estimate a first-year retirement paycheck and the implied portfolio multiple.",
+      "category": "money",
+      "headlineLabel": "First-year withdrawal",
+      "formula": "Withdrawal = portfolio × rate. Multiple = 100 ÷ rate.",
+      "inputs": [
+        { "id": "portfolio", "label": "Invested portfolio", "type": "currency", "default": 1200000 },
+        { "id": "swr", "label": "Withdrawal rate", "type": "percent", "default": 4 }
+      ],
+      "assumptions": [
+        "This is year-one spending, not an inflation-adjusted path.",
+        "Taxes and fees are not subtracted.",
+        "Sequence risk is not simulated."
+      ],
+      "howTo": [
+        "Use investable assets, not home equity you will not sell.",
+        "Try 3.5% if you retire early with a long horizon.",
+        "If rentals cover part of spending, you can take less from the portfolio."
+      ],
+      "mistakes": [
+        "Withdrawing 4% of a peak balance after a crash.",
+        "Forgetting taxes on pretax accounts.",
+        "Treating the rule as a legal guarantee."
+      ],
+      "faqs": [
+        { "q": "Is the 4% rule the same as FIRE?", "a": "FIRE uses it as a target. This tool is the spending side of that coin." },
+        { "q": "Do I raise it with inflation?", "a": "Many research versions inflate the first-year amount. This page shows year one only." },
+        { "q": "What about Social Security?", "a": "Add it outside the portfolio. It can let you draw less." }
+      ],
+      "related": [
+        { "href": "/tools/fire-number", "label": "FIRE number", "question": "Spending to portfolio." },
+        { "href": "/tools/retirement-income-runway", "label": "Retirement income runway", "question": "Years of runway." },
+        { "href": "/blog/4-percent-rule", "label": "4% rule article", "question": "Where the research came from." }
+      ],
+      "examples": [
+        { "name": "Paid-off $1.2M", "description": "Classic 4%.", "inputs": { "portfolio": 1200000, "swr": 4 } },
+        { "name": "Early retiree", "description": "3.25% on $1.8M.", "inputs": { "portfolio": 1800000, "swr": 3.25 } },
+        { "name": "Bridge years", "description": "5% for a short bridge.", "inputs": { "portfolio": 400000, "swr": 5 } }
+      ]
+    },
+    {
+      "slug": "rule-of-72",
+      "title": "Rule of 72",
+      "question": "How long until this return doubles the money, and what is the exact compound time?",
+      "description": "Estimate doubling time with the Rule of 72 and show the exact compound-interest years next to it.",
+      "category": "money",
+      "headlineLabel": "Years to double",
+      "formula": "Rule of 72 years = 72 ÷ annual percent return. Exact years = ln(2) ÷ ln(1 + r).",
+      "inputs": [
+        { "id": "rate", "label": "Annual return", "type": "percent", "default": 8 },
+        { "id": "startingAmount", "label": "Starting amount", "type": "currency", "default": 10000 }
+      ],
+      "assumptions": [
+        "Return is constant and compounds annually.",
+        "Taxes, fees, and contributions are ignored.",
+        "The Rule of 72 is an approximation; the exact line is also shown."
+      ],
+      "howTo": [
+        "Use a net-of-fee expected return, not a best year.",
+        "Compare 6%, 8%, and 10% so you do not treat one rate as fate.",
+        "If you add money monthly, use compound savings growth instead."
+      ],
+      "mistakes": [
+        "Using a 20% year as if it repeats.",
+        "Ignoring fees, which are a direct cut to the rate.",
+        "Applying it to a leveraged deal with principal risk."
+      ],
+      "faqs": [
+        { "q": "Why 72?", "a": "It is a mental-math approximation that stays close for common rates around 6% to 10%." },
+        { "q": "Does inflation change this?", "a": "Use a real return if you want doubling of purchasing power." },
+        { "q": "How do investment fees change doubling?", "a": "A 1% fee on an 8% return is a 7% return. Plug the net number." }
+      ],
+      "related": [
+        { "href": "/tools/compound-savings-growth", "label": "Compound savings growth", "question": "Adds contributions." },
+        { "href": "/tools/investment-fee-drag", "label": "Investment fee drag", "question": "What a 1% fee costs." },
+        { "href": "/tools/dividend-reinvestment", "label": "Dividend reinvestment", "question": "Yield-driven compounding." }
+      ],
+      "examples": [
+        { "name": "Index-like 8%", "description": "Default.", "inputs": { "rate": 8, "startingAmount": 10000 } },
+        { "name": "After fees 7%", "description": "Same capital, 1% fee.", "inputs": { "rate": 7, "startingAmount": 10000 } },
+        { "name": "High-yield 12%", "description": "Optimistic private deal rate.", "inputs": { "rate": 12, "startingAmount": 25000 } }
+      ]
+    },
+    {
+      "slug": "dividend-reinvestment",
+      "title": "Dividend reinvestment",
+      "question": "What could reinvested dividends and monthly adds grow to at a constant yield?",
+      "description": "Project a dividend or yield portfolio with DRIP and optional monthly contributions at a constant annual yield.",
+      "category": "money",
+      "headlineLabel": "Ending value with DRIP",
+      "formula": "FV = principal × (1+r)^n + annual adds × ((1+r)^n − 1) / r, with r as yield.",
+      "inputs": [
+        { "id": "principal", "label": "Starting principal", "type": "currency", "default": 50000 },
+        { "id": "yieldPct", "label": "Annual yield", "type": "percent", "default": 4 },
+        { "id": "years", "label": "Years", "type": "years", "default": 20 },
+        { "id": "monthlyAdd", "label": "Monthly addition", "type": "currency", "default": 500 }
+      ],
+      "assumptions": [
+        "Yield is constant and fully reinvested.",
+        "Price changes, dividend cuts, and taxes are ignored.",
+        "Monthly additions are treated as an annual end-of-year contribution equal to 12 months."
+      ],
+      "howTo": [
+        "Use a net yield after foreign tax and fund expense if you want a conservative line.",
+        "If you spend the dividends, set monthly add to 0 and treat yield as income instead.",
+        "Compare with compound savings growth if total return matters more than yield."
+      ],
+      "mistakes": [
+        "Assuming a 8% stock yield with no cut risk.",
+        "Ignoring that reinvested dividends are often taxable in a brokerage account.",
+        "Counting yield and price growth twice."
+      ],
+      "faqs": [
+        { "q": "Is this total return?", "a": "It compounds the yield you enter. If you want price growth too, raise the rate or use the compound savings tool." },
+        { "q": "Roth vs taxable?", "a": "In a Roth, the projection is closer to spendable. In taxable, haircut the yield." },
+        { "q": "What yield should a diversified investor use?", "a": "Broad equity indexes are often in the 1% to 2% range. Higher yields usually mean more concentration or more risk." }
+      ],
+      "related": [
+        { "href": "/tools/compound-savings-growth", "label": "Compound savings growth", "question": "Total-return version." },
+        { "href": "/tools/investment-fee-drag", "label": "Investment fee drag", "question": "Fees vs yield." },
+        { "href": "/tools/rule-of-72", "label": "Rule of 72", "question": "Doubling time." }
+      ],
+      "examples": [
+        { "name": "Builder", "description": "$50k plus $500 a month at 4%.", "inputs": { "principal": 50000, "yieldPct": 4, "years": 20, "monthlyAdd": 500 } },
+        { "name": "No adds", "description": "DRIP only.", "inputs": { "principal": 50000, "yieldPct": 4, "years": 20, "monthlyAdd": 0 } },
+        { "name": "Higher yield", "description": "6% with the same cash.", "inputs": { "principal": 50000, "yieldPct": 6, "years": 20, "monthlyAdd": 500 } }
+      ]
+    },
+    {
+      "slug": "roth-vs-traditional",
+      "title": "Roth vs Traditional",
+      "question": "Which account wins after tax if rates today and in retirement are different?",
+      "description": "Compare Roth and Traditional future after-tax values for the same contribution and for the same paycheck cost.",
+      "category": "money",
+      "headlineLabel": "Roth advantage on the same paycheck",
+      "formula": "Traditional after-tax FV = FV × (1 − retirement rate). Same-paycheck Roth invests contribution × (1 − current rate).",
+      "inputs": [
+        { "id": "contribution", "label": "Pretax contribution", "type": "currency", "default": 23000 },
+        { "id": "currentRate", "label": "Current marginal rate", "type": "percent", "default": 32 },
+        { "id": "retireRate", "label": "Retirement marginal rate", "type": "percent", "default": 22 },
+        { "id": "years", "label": "Years invested", "type": "years", "default": 25 },
+        { "id": "growth", "label": "Annual growth", "type": "percent", "default": 7 }
+      ],
+      "assumptions": [
+        "One lump contribution compounds annually. No employer match.",
+        "Retirement withdrawals are taxed at a single marginal rate.",
+        "NIIT, IRMAA, and pro-rata Roth conversion rules are excluded."
+      ],
+      "howTo": [
+        "Use current marginal rate, not effective rate.",
+        "If you expect lower brackets in retirement, Traditional often wins on the same dollar.",
+        "Read the same-paycheck row if Roth contributions come from after-tax cash."
+      ],
+      "mistakes": [
+        "Comparing a $23k Roth with a $23k Traditional as equal paycheck cost.",
+        "Ignoring a match, which is usually pretax.",
+        "Using average tax rate in retirement for a large conversion year."
+      ],
+      "faqs": [
+        { "q": "When is Roth obviously better?", "a": "When you expect a higher rate later, or you want tax-free flexibility and are paying tax from cash you would not have invested anyway." },
+        { "q": "What about backdoor Roth?", "a": "This is the growth comparison, not the pro-rata test." },
+        { "q": "Should high-income W-2s always pick Traditional?", "a": "Often for the deduction, then convert in lower-income years. It is a sequence, not a forever choice." }
+      ],
+      "related": [
+        { "href": "/tools/fire-number", "label": "FIRE number", "question": "After-tax spending still has to be funded." },
+        { "href": "/retirement/traditional-vs-roth-401k", "label": "Traditional vs Roth 401(k)", "question": "Account-level guide." },
+        { "href": "/tools/capital-gains-tax-estimate", "label": "Capital gains tax estimate", "question": "Taxable brokerage comparison." }
+      ],
+      "examples": [
+        { "name": "Peak earner", "description": "32% now, 22% later.", "inputs": { "contribution": 23000, "currentRate": 32, "retireRate": 22, "years": 25, "growth": 7 } },
+        { "name": "Same bracket", "description": "24% both sides.", "inputs": { "contribution": 23000, "currentRate": 24, "retireRate": 24, "years": 25, "growth": 7 } },
+        { "name": "Rising rate", "description": "22% now, 32% later.", "inputs": { "contribution": 7000, "currentRate": 22, "retireRate": 32, "years": 30, "growth": 7 } }
+      ]
+    },
+    {
+      "slug": "heloc-payment",
+      "title": "HELOC payment",
+      "question": "What is the interest-only cost of a drawn HELOC versus a fully amortizing payment?",
+      "description": "Compare interest-only and amortizing payments on a drawn home-equity line, plus total interest if you amortize the draw.",
+      "category": "banking-borrowing",
+      "headlineLabel": "Amortizing monthly payment",
+      "formula": "Interest-only = draw × rate ÷ 12. Amortizing = standard mortgage payment on the draw.",
+      "inputs": [
+        { "id": "drawn", "label": "Amount drawn", "type": "currency", "default": 80000 },
+        { "id": "rate", "label": "APR", "type": "percent", "default": 8.5 },
+        { "id": "years", "label": "Amortizing term", "type": "years", "default": 20 }
+      ],
+      "assumptions": [
+        "Rate is fixed for the comparison. Real HELOCs often adjust.",
+        "Draw period vs repayment period is not staged.",
+        "Tax deductibility is not assumed."
+      ],
+      "howTo": [
+        "Use the amount you would actually draw, not the full limit.",
+        "Stress a higher rate. HELOC risk is the reset.",
+        "If this is a down-payment bridge, pair it with a written payoff date."
+      ],
+      "mistakes": [
+        "Comparing interest-only to a mortgage without noticing principal is not being paid.",
+        "Ignoring closing costs on a cash-out refinance alternative.",
+        "Using teaser rate as the life rate."
+      ],
+      "faqs": [
+        { "q": "Is HELOC interest deductible?", "a": "Only in some cases, usually when the funds buy or improve the secured home. Ask a CPA; this page is cash flow." },
+        { "q": "HELOC vs cash-out refinance?", "a": "Refi resets the first mortgage. A HELOC stacks a second lien. Payment shape is not the only risk." },
+        { "q": "What about a Solo 401(k) loan instead?", "a": "Different collateral and opportunity cost. See the related comparison page." }
+      ],
+      "related": [
+        { "href": "/tools/line-of-credit-cost", "label": "Line of credit cost", "question": "Days-drawn cost." },
+        { "href": "/tools/home-equity-estimate", "label": "Home equity estimate", "question": "How much equity exists." },
+        { "href": "/compare/solo-401k-loan-vs-heloc-down-payment", "label": "Solo 401(k) loan vs HELOC", "question": "Down-payment funding." }
+      ],
+      "examples": [
+        { "name": "Furnish an STR", "description": "$80k draw at 8.5%.", "inputs": { "drawn": 80000, "rate": 8.5, "years": 20 } },
+        { "name": "Rate shock", "description": "Same draw at 11%.", "inputs": { "drawn": 80000, "rate": 11, "years": 20 } },
+        { "name": "Smaller bridge", "description": "$25k over 10 years.", "inputs": { "drawn": 25000, "rate": 8.5, "years": 10 } }
+      ]
+    },
+    {
+      "slug": "pmi-removal",
+      "title": "PMI removal",
+      "question": "How many months until the loan reaches 80% LTV so PMI can drop?",
+      "description": "Amortize a mortgage with optional extra principal to estimate when LTV hits 80% and how much PMI you still pay before then.",
+      "category": "banking-borrowing",
+      "headlineLabel": "Months until 80% LTV",
+      "formula": "Each month: balance -= scheduled principal + extra. Stop when balance ÷ value ≤ 80%.",
+      "inputs": [
+        { "id": "loan", "label": "Current loan balance", "type": "currency", "default": 384000 },
+        { "id": "value", "label": "Current home value", "type": "currency", "default": 420000 },
+        { "id": "rate", "label": "Interest rate", "type": "percent", "default": 6.5 },
+        { "id": "years", "label": "Remaining term", "type": "years", "default": 28 },
+        { "id": "extra", "label": "Extra monthly principal", "type": "currency", "default": 200 },
+        { "id": "pmiMonthly", "label": "Monthly PMI", "type": "currency", "default": 140 }
+      ],
+      "assumptions": [
+        "Value is held constant. Appreciation is not modeled.",
+        "80% LTV is the borrower-requested removal target, not automatic 78% termination.",
+        "Lender seasoning, appraisal, and automatic termination rules vary."
+      ],
+      "howTo": [
+        "Use today's balance and a conservative value, not list price.",
+        "If extra principal is zero, you are waiting on scheduled amortization only.",
+        "Ask the servicer whether they need an appraisal at 80%."
+      ],
+      "mistakes": [
+        "Using original purchase price after a price drop.",
+        "Forgetting PMI does not automatically vanish at 80% on all loans.",
+        "Counting a cash-out refinance as removal without modeling the new loan."
+      ],
+      "faqs": [
+        { "q": "Is 80% or 78% the rule?", "a": "Borrowers can often request cancellation at 80% LTV. Automatic termination is commonly 78% of original value. Confirm with the servicer." },
+        { "q": "Does extra payment always win vs investing?", "a": "Only if the after-tax PMI plus mortgage rate beats expected invested return. Pair with the mortgage vs index tool." },
+        { "q": "What if value rose a lot?", "a": "Raise the value input. That can hit 80% without extra payments." }
+      ],
+      "related": [
+        { "href": "/tools/loan-to-value-ratio", "label": "Loan-to-value ratio", "question": "Today's LTV." },
+        { "href": "/tools/mortgage-extra-payment", "label": "Mortgage extra payment", "question": "Interest saved in general." },
+        { "href": "/tools/home-equity-estimate", "label": "Home equity estimate", "question": "Equity dollars." }
+      ],
+      "examples": [
+        { "name": "New purchase", "description": "High LTV with $200 extra.", "inputs": { "loan": 384000, "value": 420000, "rate": 6.5, "years": 28, "extra": 200, "pmiMonthly": 140 } },
+        { "name": "No extra", "description": "Scheduled amortization only.", "inputs": { "loan": 384000, "value": 420000, "rate": 6.5, "years": 28, "extra": 0, "pmiMonthly": 140 } },
+        { "name": "After appreciation", "description": "Value already close to 80%.", "inputs": { "loan": 360000, "value": 470000, "rate": 6.5, "years": 26, "extra": 0, "pmiMonthly": 110 } }
+      ]
+    },
+    {
+      "slug": "extra-payment-priority",
+      "title": "Extra payment priority",
+      "question": "Should extra cash hit the mortgage or higher-rate consumer debt first?",
+      "description": "Compare lifetime interest saved if the same extra monthly payment goes to the mortgage versus a consumer loan or card.",
+      "category": "banking-borrowing",
+      "headlineLabel": "Higher-leverage extra payment",
+      "formula": "Amortize each balance with and without the extra payment. Interest saved = baseline interest − accelerated interest.",
+      "inputs": [
+        { "id": "mortgageBalance", "label": "Mortgage balance", "type": "currency", "default": 320000 },
+        { "id": "mortgageRate", "label": "Mortgage rate", "type": "percent", "default": 6.25 },
+        { "id": "mortgageYears", "label": "Mortgage remaining years", "type": "years", "default": 27 },
+        { "id": "consumerBalance", "label": "Consumer / card balance", "type": "currency", "default": 14000 },
+        { "id": "consumerRate", "label": "Consumer rate", "type": "percent", "default": 21 },
+        { "id": "consumerYears", "label": "Consumer remaining years", "type": "years", "default": 4 },
+        { "id": "extra", "label": "Extra monthly payment", "type": "currency", "default": 400 }
+      ],
+      "assumptions": [
+        "Each path applies the entire extra payment to one balance.",
+        "Rates stay fixed.",
+        "Tax deductibility of mortgage interest is ignored, which favors the consumer-debt path if you itemize."
+      ],
+      "howTo": [
+        "If the card rate is double-digit, it almost always wins.",
+        "If consumer debt is already small, check months saved, not just dollars.",
+        "After the expensive balance is gone, rerun with investing vs extra mortgage."
+      ],
+      "mistakes": [
+        "Paying 6% mortgage extra while carrying 21% cards.",
+        "Counting expected market returns as guaranteed.",
+        "Ignoring the emergency fund before extra principal."
+      ],
+      "faqs": [
+        { "q": "What if the consumer loan is 0% promo?", "a": "Set the consumer rate to 0 and the mortgage will win on interest. Watch the promo end date." },
+        { "q": "Should I still invest?", "a": "After high-rate debt is gone, compare extra mortgage to index investing." },
+        { "q": "Does this include the snowball method?", "a": "This is avalanche math: rate first. Use snowball vs avalanche for multiple cards." }
+      ],
+      "related": [
+        { "href": "/tools/debt-snowball-vs-avalanche", "label": "Snowball vs avalanche", "question": "Multiple debts." },
+        { "href": "/tools/credit-card-payoff", "label": "Credit card payoff", "question": "Single card schedule." },
+        { "href": "/tools/mortgage-overpayment-vs-index-investing", "label": "Mortgage vs index investing", "question": "After high-rate debt." }
+      ],
+      "examples": [
+        { "name": "Card vs mortgage", "description": "21% card, 6.25% mortgage.", "inputs": { "mortgageBalance": 320000, "mortgageRate": 6.25, "mortgageYears": 27, "consumerBalance": 14000, "consumerRate": 21, "consumerYears": 4, "extra": 400 } },
+        { "name": "Student loan", "description": "7% student vs 6.25% mortgage.", "inputs": { "mortgageBalance": 320000, "mortgageRate": 6.25, "mortgageYears": 27, "consumerBalance": 45000, "consumerRate": 7, "consumerYears": 10, "extra": 400 } },
+        { "name": "Cheap car loan", "description": "3% auto vs 6.25% mortgage.", "inputs": { "mortgageBalance": 320000, "mortgageRate": 6.25, "mortgageYears": 27, "consumerBalance": 18000, "consumerRate": 3, "consumerYears": 4, "extra": 400 } }
+      ]
+    },
+    {
+      "slug": "credit-utilization",
+      "title": "Credit utilization",
+      "question": "What percent of revolving limits is used, and how much paydown reaches 30% or 10%?",
+      "description": "Calculate revolving utilization and the paydown needed to reach common 30% and 10% scoring guardrails.",
+      "category": "banking-borrowing",
+      "headlineLabel": "Utilization",
+      "formula": "Utilization = balances ÷ limits. Paydown to 30% = max(0, balances − 0.3 × limits).",
+      "inputs": [
+        { "id": "balances", "label": "Statement revolving balances", "type": "currency", "default": 8200 },
+        { "id": "limits", "label": "Total revolving limits", "type": "currency", "default": 24000 }
+      ],
+      "assumptions": [
+        "Installment loans are excluded. This is revolving utilization.",
+        "Scoring models differ; 30% and 10% are planning guardrails, not official cutoffs.",
+        "Authorized-user and business-card treatment varies."
+      ],
+      "howTo": [
+        "Use statement balances the bureaus are likely to see, not today's app balance if it has not reported.",
+        "If you are applying for a mortgage, 10% is a cleaner target than 30%.",
+        "Paying before the statement date often helps more than paying after."
+      ],
+      "mistakes": [
+        "Closing old cards and shrinking limits.",
+        "Maxing a store card while overall utilization looks fine.",
+        "Carrying a balance to 'build credit' at 20%+ APR."
+      ],
+      "faqs": [
+        { "q": "Is 0% utilization best?", "a": "Very low is good. Some people keep a small reported balance so the file shows activity. Do not pay interest for that." },
+        { "q": "Do mortgages count?", "a": "Not in this revolving ratio. They hit DTI instead." },
+        { "q": "Will this raise my score by X points?", "a": "No model here can promise points. It shows the ratio lenders still quote." }
+      ],
+      "related": [
+        { "href": "/tools/debt-to-income-ratio", "label": "Debt-to-income ratio", "question": "The other underwriting ratio." },
+        { "href": "/tools/credit-card-payoff", "label": "Credit card payoff", "question": "How long the paydown takes." },
+        { "href": "/tools/extra-payment-priority", "label": "Extra payment priority", "question": "Where extra cash goes." }
+      ],
+      "examples": [
+        { "name": "Typical", "description": "$8,200 on $24k limits.", "inputs": { "balances": 8200, "limits": 24000 } },
+        { "name": "Mortgage shopper", "description": "Need to get under 10%.", "inputs": { "balances": 6000, "limits": 20000 } },
+        { "name": "High util", "description": "One maxed card in the mix.", "inputs": { "balances": 18000, "limits": 22000 } }
+      ]
+    },
+    {
+      "slug": "str-break-even-occupancy",
+      "title": "STR break-even occupancy",
+      "question": "What occupancy keeps a short-term rental from losing money at this nightly rate?",
+      "description": "Convert monthly STR costs and ADR into the occupancy rate that covers the operation after platform fees.",
+      "category": "housing-moving",
+      "headlineLabel": "Break-even occupancy",
+      "formula": "Nights needed = monthly costs ÷ (ADR × (1 − fee%)). Occupancy = nights needed ÷ (365/12).",
+      "inputs": [
+        { "id": "monthlyCosts", "label": "Fixed monthly costs (rent or PITI + ops)", "type": "currency", "default": 4200 },
+        { "id": "adr", "label": "Average nightly rate", "type": "currency", "default": 285 },
+        { "id": "feePercent", "label": "Platform / merchant fees", "type": "percent", "default": 3 }
+      ],
+      "assumptions": [
+        "Guest-paid cleaning is assumed to offset cleaners and is not in ADR.",
+        "Costs include the lease or mortgage plus utilities, software, and supplies you actually pay.",
+        "No seasonality curve: one ADR all year."
+      ],
+      "howTo": [
+        "Put every cost that does not vanish on a vacant night into monthly costs.",
+        "Use trailing ADR, not a peak-weekend screenshot.",
+        "If break-even occupancy is above realistic market occupancy, the deal is too tight."
+      ],
+      "mistakes": [
+        "Leaving rent out of costs on an arbitrage deal.",
+        "Using 100% occupancy as the plan.",
+        "Adding cleaning fees into ADR."
+      ],
+      "faqs": [
+        { "q": "Is this the same as the Airbnb ROI calculator?", "a": "That tool is a full cash-on-cash model. This one answers the single occupancy question operators actually argue about." },
+        { "q": "What occupancy is realistic?", "a": "It is market-specific. If you cannot defend it with comps, do not underwrite it." },
+        { "q": "Should I include capex?", "a": "If furniture and appliances will be replaced, add a monthly reserve to costs." }
+      ],
+      "related": [
+        { "href": "/tools/airbnb-arbitrage-roi", "label": "Airbnb arbitrage ROI", "question": "Full lease-arbitrage model." },
+        { "href": "/tools/str-adr-needed", "label": "STR ADR needed", "question": "The inverse question." },
+        { "href": "/tools/str-purchase-analysis", "label": "STR purchase analysis", "question": "If you are buying." }
+      ],
+      "examples": [
+        { "name": "Arbitrage", "description": "$4,200 costs, $285 ADR.", "inputs": { "monthlyCosts": 4200, "adr": 285, "feePercent": 3 } },
+        { "name": "Soft market", "description": "Same costs, $210 ADR.", "inputs": { "monthlyCosts": 4200, "adr": 210, "feePercent": 3 } },
+        { "name": "Owned STR", "description": "Lower PITI, higher ADR.", "inputs": { "monthlyCosts": 3100, "adr": 340, "feePercent": 3 } }
+      ]
+    },
+    {
+      "slug": "str-adr-needed",
+      "title": "STR ADR needed",
+      "question": "What nightly rate covers costs and your target profit at this occupancy?",
+      "description": "Solve for the average daily rate an STR needs after platform fees, given occupancy, monthly costs, and a profit target.",
+      "category": "housing-moving",
+      "headlineLabel": "Nightly rate needed",
+      "formula": "ADR = ((monthly costs + target profit) ÷ occupied nights) ÷ (1 − fee%).",
+      "inputs": [
+        { "id": "monthlyCosts", "label": "Fixed monthly costs", "type": "currency", "default": 4200 },
+        { "id": "occupancy", "label": "Occupancy", "type": "percent", "default": 68 },
+        { "id": "feePercent", "label": "Platform / merchant fees", "type": "percent", "default": 3 },
+        { "id": "targetProfit", "label": "Target monthly profit", "type": "currency", "default": 2000 }
+      ],
+      "assumptions": [
+        "Occupied nights = occupancy × 365/12.",
+        "Profit is cash after the costs you entered, not after tax.",
+        "Dynamic pricing is collapsed into one ADR."
+      ],
+      "howTo": [
+        "Set target profit to 0 to see pure break-even ADR.",
+        "If comps cannot print this ADR, cut costs or skip the lease.",
+        "Run a winter occupancy, not just summer."
+      ],
+      "mistakes": [
+        "Using 80% occupancy in a market that prints 55%.",
+        "Forgetting owner stays, which are occupancy without ADR.",
+        "Treating a listing's 'similar listings' map as a comp set."
+      ],
+      "faqs": [
+        { "q": "ADR or RevPAR?", "a": "This solves ADR. Revenue per available night is ADR × occupancy." },
+        { "q": "Where do cleaning fees go?", "a": "Keep guest-paid cleaning out of ADR if it only offsets the cleaner." },
+        { "q": "Can I hit this with weekly discounts?", "a": "Then your true ADR is lower. Enter the blended number." }
+      ],
+      "related": [
+        { "href": "/tools/str-break-even-occupancy", "label": "STR break-even occupancy", "question": "Occupancy instead of rate." },
+        { "href": "/tools/airbnb-arbitrage-roi", "label": "Airbnb arbitrage ROI", "question": "Full model." },
+        { "href": "/tools/midterm-vs-str", "label": "Midterm vs STR", "question": "If ADR is unreachable." }
+      ],
+      "examples": [
+        { "name": "Need $2k profit", "description": "68% occupancy.", "inputs": { "monthlyCosts": 4200, "occupancy": 68, "feePercent": 3, "targetProfit": 2000 } },
+        { "name": "Break-even ADR", "description": "Profit set to 0.", "inputs": { "monthlyCosts": 4200, "occupancy": 68, "feePercent": 3, "targetProfit": 0 } },
+        { "name": "Winter occupancy", "description": "48% occupancy.", "inputs": { "monthlyCosts": 4200, "occupancy": 48, "feePercent": 3, "targetProfit": 1500 } }
+      ]
+    },
+    {
+      "slug": "str-cleaning-turnover-cost",
+      "title": "STR cleaning & turnover",
+      "question": "What do turnovers really cost each month once cleaner, supplies, and laundry are included?",
+      "description": "Multiply monthly turnovers by cleaner, supplies, and laundry to see the operating cost most STR spreadsheets understate.",
+      "category": "housing-moving",
+      "headlineLabel": "Monthly turnover cost",
+      "formula": "Monthly cost = turnovers × (cleaner + supplies + laundry).",
+      "inputs": [
+        { "id": "turnovers", "label": "Turnovers per month", "type": "number", "default": 10, "step": 1 },
+        { "id": "cost", "label": "Cleaner per turnover", "type": "currency", "default": 180 },
+        { "id": "supplies", "label": "Consumables per turnover", "type": "currency", "default": 25 },
+        { "id": "laundry", "label": "Laundry / linen per turnover", "type": "currency", "default": 35 }
+      ],
+      "assumptions": [
+        "Guest-paid cleaning fees may offset the cleaner line. If they do, set cleaner to your net.",
+        "Owner-hours are not priced unless you put a dollar amount in cleaner.",
+        "Damage and deep cleans are extra."
+      ],
+      "howTo": [
+        "Count actual turnovers from the last 90 days, not a hope.",
+        "If you self-clean, still enter a wage you would pay someone else.",
+        "High turnover with thin ADR is how arbitrage dies."
+      ],
+      "mistakes": [
+        "Assuming the cleaning fee is profit.",
+        "Ignoring laundry on back-to-back nights.",
+        "Underwriting 15 turnovers at a 2-hour self-clean."
+      ],
+      "faqs": [
+        { "q": "Should the guest cleaning fee be income?", "a": "Usually it is an offset to this cost, not extra profit." },
+        { "q": "How do I estimate turnovers?", "a": "Booked nights ÷ average stay length. A 2-night average stay at 60% occupancy is a lot of cleans." },
+        { "q": "Midterm stays help this number?", "a": "Yes. Fewer turnovers is the whole point of the midterm comparison." }
+      ],
+      "related": [
+        { "href": "/tools/midterm-vs-str", "label": "Midterm vs STR", "question": "Fewer turnovers." },
+        { "href": "/tools/airbnb-arbitrage-roi", "label": "Airbnb arbitrage ROI", "question": "Put this cost in ops." },
+        { "href": "/blog/airbnb-furniture-budget-checklist", "label": "Furniture budget checklist", "question": "Setup cash next to ops." }
+      ],
+      "examples": [
+        { "name": "Busy 2-bedroom", "description": "10 turns at $240 fully loaded.", "inputs": { "turnovers": 10, "cost": 180, "supplies": 25, "laundry": 35 } },
+        { "name": "Self-clean priced", "description": "Owner labor at $40/hour equivalent.", "inputs": { "turnovers": 8, "cost": 120, "supplies": 20, "laundry": 20 } },
+        { "name": "Midterm", "description": "One turnover a month.", "inputs": { "turnovers": 1, "cost": 220, "supplies": 40, "laundry": 40 } }
+      ]
+    },
+    {
+      "slug": "midterm-vs-str",
+      "title": "Midterm vs STR",
+      "question": "Does nightly STR net more than a furnished midterm lease after fees and ops?",
+      "description": "Compare monthly net from a short-term rental versus a midterm furnished rental using occupancy, fees, vacancy, and operating costs.",
+      "category": "housing-moving",
+      "headlineLabel": "Monthly edge for STR vs midterm",
+      "formula": "STR net = ADR × occupancy × days × (1 − fees) − STR ops. Midterm net = rent × (1 − vacancy) − midterm ops.",
+      "inputs": [
+        { "id": "strNightly", "label": "STR average nightly rate", "type": "currency", "default": 250 },
+        { "id": "strOccupancy", "label": "STR occupancy", "type": "percent", "default": 65 },
+        { "id": "strFees", "label": "STR platform fees", "type": "percent", "default": 3 },
+        { "id": "strOps", "label": "STR monthly ops (ex-rent/PITI)", "type": "currency", "default": 1800 },
+        { "id": "mtrRent", "label": "Midterm monthly rent", "type": "currency", "default": 4200 },
+        { "id": "mtrVacancy", "label": "Midterm vacancy / turnover void", "type": "percent", "default": 8 },
+        { "id": "mtrOps", "label": "Midterm monthly ops (ex-rent/PITI)", "type": "currency", "default": 700 }
+      ],
+      "assumptions": [
+        "Rent or PITI is excluded from both ops so the comparison is operating style, not financing.",
+        "Add the same housing cost to both sides mentally, or include it in both ops if you prefer.",
+        "Regulation risk is not priced."
+      ],
+      "howTo": [
+        "Use winter STR occupancy, not July.",
+        "Put cleaning and software in STR ops.",
+        "If STR wins by $200, that is not a mandate. It is a fragile edge."
+      ],
+      "mistakes": [
+        "Comparing STR gross to midterm net.",
+        "Leaving utilities out of STR ops.",
+        "Ignoring 30-day minimum laws."
+      ],
+      "faqs": [
+        { "q": "Why exclude the lease?", "a": "It is the same property either way. The difference is revenue quality and ops." },
+        { "q": "What occupancy voids an STR win?", "a": "Drop occupancy in this form until the edge flips. That is your risk number." },
+        { "q": "Are midterms easier to run?", "a": "Usually fewer turns, more credit risk, different insurance. This page is only the cash comparison." }
+      ],
+      "related": [
+        { "href": "/tools/str-cleaning-turnover-cost", "label": "STR cleaning & turnover", "question": "The ops line STR forgets." },
+        { "href": "/tools/airbnb-arbitrage-roi", "label": "Airbnb arbitrage ROI", "question": "STR with the lease included." },
+        { "href": "/tools/rental-property-cash-flow", "label": "Rental property cash flow", "question": "Unfurnished long-term." }
+      ],
+      "examples": [
+        { "name": "Default", "description": "65% STR vs $4,200 midterm.", "inputs": { "strNightly": 250, "strOccupancy": 65, "strFees": 3, "strOps": 1800, "mtrRent": 4200, "mtrVacancy": 8, "mtrOps": 700 } },
+        { "name": "STR winter", "description": "48% occupancy.", "inputs": { "strNightly": 250, "strOccupancy": 48, "strFees": 3, "strOps": 1800, "mtrRent": 4200, "mtrVacancy": 8, "mtrOps": 700 } },
+        { "name": "High ADR market", "description": "$380 nights.", "inputs": { "strNightly": 380, "strOccupancy": 62, "strFees": 3, "strOps": 2100, "mtrRent": 4800, "mtrVacancy": 8, "mtrOps": 750 } }
+      ]
+    },
+    {
+      "slug": "cap-rate",
+      "title": "Cap rate",
+      "question": "What capitalization rate does this rental's NOI produce at the price you would pay?",
+      "description": "Divide annual net operating income by purchase price to get cap rate and the years of NOI needed to recover price.",
+      "category": "housing-moving",
+      "headlineLabel": "Cap rate",
+      "formula": "Cap rate = NOI ÷ purchase price.",
+      "inputs": [
+        { "id": "noi", "label": "Annual NOI", "type": "currency", "default": 24000 },
+        { "id": "price", "label": "Purchase price", "type": "currency", "default": 400000 }
+      ],
+      "assumptions": [
+        "NOI is rent minus operating expenses and vacancy, before debt service.",
+        "Cap rate is not cash-on-cash and ignores financing.",
+        "Appreciation is excluded."
+      ],
+      "howTo": [
+        "Build NOI from trailing rent and real expenses, not the listing's pro forma.",
+        "If the seller quotes a cap, rebuild NOI yourself.",
+        "Compare cap to local debt cost. A 5% cap with 7% money is a leverage warning."
+      ],
+      "mistakes": [
+        "Using net cash flow after the mortgage as NOI.",
+        "Leaving out taxes, insurance, and management.",
+        "Comparing cap rates across markets with different risk."
+      ],
+      "faqs": [
+        { "q": "Is a higher cap always better?", "a": "It usually means more risk, more deferred maintenance, or a cheaper market. Read the NOI quality." },
+        { "q": "Does cap rate include the loan?", "a": "No. That is cash-on-cash and DSCR." },
+        { "q": "What about STR income?", "a": "Use a conservative net, not a peak-season annualization." }
+      ],
+      "related": [
+        { "href": "/tools/cash-on-cash-return", "label": "Cash-on-cash return", "question": "After financing." },
+        { "href": "/tools/dscr", "label": "DSCR", "question": "NOI versus debt." },
+        { "href": "/tools/rental-property-cash-flow", "label": "Rental property cash flow", "question": "Monthly view." }
+      ],
+      "examples": [
+        { "name": "6% cap", "description": "$24k NOI on $400k.", "inputs": { "noi": 24000, "price": 400000 } },
+        { "name": "Tight 4.5%", "description": "Same NOI, higher price.", "inputs": { "noi": 24000, "price": 533333 } },
+        { "name": "Value-add", "description": "NOI after a rent bump.", "inputs": { "noi": 32000, "price": 400000 } }
+      ]
+    },
+    {
+      "slug": "cash-on-cash-return",
+      "title": "Cash-on-cash return",
+      "question": "What cash-on-cash return remains after vacancy, operating costs, and debt service?",
+      "description": "Turn monthly rent, vacancy, ops, and debt service into annual cash flow divided by cash invested.",
+      "category": "housing-moving",
+      "headlineLabel": "Cash-on-cash return",
+      "formula": "Annual CF = (rent × (1 − vacancy%) − ops − debt) × 12. CoC = annual CF ÷ cash invested.",
+      "inputs": [
+        { "id": "rent", "label": "Gross monthly rent", "type": "currency", "default": 3200 },
+        { "id": "vacancy", "label": "Vacancy / credit loss", "type": "percent", "default": 6 },
+        { "id": "ops", "label": "Monthly operating costs", "type": "currency", "default": 900 },
+        { "id": "debt", "label": "Monthly debt service", "type": "currency", "default": 1650 },
+        { "id": "cashIn", "label": "Cash invested", "type": "currency", "default": 90000 }
+      ],
+      "assumptions": [
+        "Operating costs exclude the mortgage, which has its own field.",
+        "Capex reserves belong in ops if you want an honest CoC.",
+        "Tax effects are excluded."
+      ],
+      "howTo": [
+        "Cash invested is down payment plus closing plus initial capex.",
+        "If CoC looks spectacular, the denominator is probably too small or ops are incomplete.",
+        "Compare with cap rate to see how much of the return is leverage."
+      ],
+      "mistakes": [
+        "Using purchase price instead of cash in.",
+        "Zero vacancy forever.",
+        "Leaving management out because you will self-manage."
+      ],
+      "faqs": [
+        { "q": "Why is CoC higher than cap rate?", "a": "Leverage. It can also go negative faster when rates rise." },
+        { "q": "Is 12% CoC good?", "a": "Only if the cash flow survives a vacancy and a repair year. Percentage without a stress test is a slogan." },
+        { "q": "Does this work for arbitrage?", "a": "Yes if cash in is deposits and furnishings. The Airbnb ROI tool is the fuller version." }
+      ],
+      "related": [
+        { "href": "/tools/cap-rate", "label": "Cap rate", "question": "Unlevered cousin." },
+        { "href": "/tools/airbnb-arbitrage-roi", "label": "Airbnb arbitrage ROI", "question": "STR CoC with setup costs." },
+        { "href": "/tools/rental-property-cash-flow", "label": "Rental property cash flow", "question": "Monthly dollars." }
+      ],
+      "examples": [
+        { "name": "Standard buy", "description": "$90k in, modest cash flow.", "inputs": { "rent": 3200, "vacancy": 6, "ops": 900, "debt": 1650, "cashIn": 90000 } },
+        { "name": "Thin deal", "description": "Higher debt service.", "inputs": { "rent": 3200, "vacancy": 8, "ops": 950, "debt": 2100, "cashIn": 90000 } },
+        { "name": "Arbitrage-style cash in", "description": "Smaller denominator.", "inputs": { "rent": 3200, "vacancy": 10, "ops": 1400, "debt": 0, "cashIn": 18000 } }
+      ]
+    },
+    {
+      "slug": "dscr",
+      "title": "DSCR",
+      "question": "Does net operating income cover the annual mortgage by the ratio a DSCR lender wants?",
+      "description": "Estimate debt-service coverage ratio from annual NOI and an amortizing loan's principal-and-interest payment.",
+      "category": "housing-moving",
+      "headlineLabel": "DSCR",
+      "formula": "DSCR = annual NOI ÷ (monthly P&I × 12).",
+      "inputs": [
+        { "id": "noi", "label": "Annual NOI", "type": "currency", "default": 36000 },
+        { "id": "loan", "label": "Loan amount", "type": "currency", "default": 320000 },
+        { "id": "rate", "label": "Interest rate", "type": "percent", "default": 6.75 },
+        { "id": "years", "label": "Amortizing term", "type": "years", "default": 30 }
+      ],
+      "assumptions": [
+        "Payment is P&I only. Taxes and insurance in NOI should already be expensed.",
+        "Interest-only DSCR loans would show a higher ratio; this uses full amortization.",
+        "Lender haircuts to income are not applied."
+      ],
+      "howTo": [
+        "Many DSCR programs want 1.0 to 1.25. If you are at 0.95, the file is fragile.",
+        "Rebuild NOI from leases, not the broker OM.",
+        "Raise rate 100 bps and see if the ratio still clears."
+      ],
+      "mistakes": [
+        "Using gross rent instead of NOI.",
+        "Comparing to a 1.25 requirement with an interest-only quote you will not keep.",
+        "Ignoring impounds that do not sit in NOI."
+      ],
+      "faqs": [
+        { "q": "What DSCR do lenders want?", "a": "It varies. 1.0 is a common floor; 1.25 is a healthier file. Ask the actual program." },
+        { "q": "Does this include taxes and insurance?", "a": "They should already be in NOI as expenses. Do not subtract them again from debt service unless your lender uses PITIA in the denominator." },
+        { "q": "STR income?", "a": "Lenders often haircut it. Use a lower NOI." }
+      ],
+      "related": [
+        { "href": "/tools/cap-rate", "label": "Cap rate", "question": "NOI versus price." },
+        { "href": "/tools/mortgage-payment", "label": "Mortgage payment", "question": "P&I detail." },
+        { "href": "/tools/str-purchase-analysis", "label": "STR purchase analysis", "question": "Purchase underwriting." }
+      ],
+      "examples": [
+        { "name": "Clears 1.20", "description": "$36k NOI on $320k at 6.75%.", "inputs": { "noi": 36000, "loan": 320000, "rate": 6.75, "years": 30 } },
+        { "name": "Fails", "description": "Same loan, weaker NOI.", "inputs": { "noi": 24000, "loan": 320000, "rate": 6.75, "years": 30 } },
+        { "name": "Rate shock", "description": "7.75% money.", "inputs": { "noi": 36000, "loan": 320000, "rate": 7.75, "years": 30 } }
+      ]
+    },
+    {
+      "slug": "brrrr-analysis",
+      "title": "BRRRR analysis",
+      "question": "How much cash stays in a buy-rehab-rent-refinance deal, and what cash flow is left?",
+      "description": "Estimate cash left in after an ARV refinance, then monthly cash flow and cash-on-cash on the remaining cash.",
+      "category": "housing-moving",
+      "headlineLabel": "Cash left in after refinance",
+      "formula": "Cash left in = purchase + rehab − ARV × refi LTV. Cash flow uses the new amortizing payment.",
+      "inputs": [
+        { "id": "purchase", "label": "Purchase price", "type": "currency", "default": 180000 },
+        { "id": "rehab", "label": "Rehab and holding", "type": "currency", "default": 45000 },
+        { "id": "arv", "label": "After-repair value", "type": "currency", "default": 280000 },
+        { "id": "ltv", "label": "Refinance LTV", "type": "percent", "default": 75 },
+        { "id": "rent", "label": "Monthly rent", "type": "currency", "default": 2100 },
+        { "id": "vacancy", "label": "Vacancy", "type": "percent", "default": 6 },
+        { "id": "ops", "label": "Monthly ops", "type": "currency", "default": 550 },
+        { "id": "rate", "label": "Refinance rate", "type": "percent", "default": 7 },
+        { "id": "years", "label": "Refinance term", "type": "years", "default": 30 }
+      ],
+      "assumptions": [
+        "Refinance closes at the ARV and LTV you enter. Appraisal risk is not simulated.",
+        "Purchase closing costs live inside rehab/holding if you put them there.",
+        "Seasoning rules and cash-out limits vary by lender."
+      ],
+      "howTo": [
+        "If cash left in is negative, the deal cash-out refinances. Confirm the lender allows it.",
+        "ARV is the number that makes or breaks BRRRR. Be boring.",
+        "Rerun at 70% LTV if 75% feels like a brochure."
+      ],
+      "mistakes": [
+        "Using retail ARV on a house that will still look like a rehab.",
+        "Forgetting holding costs during rehab.",
+        "Underwriting rent from Zillow without comps."
+      ],
+      "faqs": [
+        { "q": "What if cash left in is negative?", "a": "You pulled money out. CoC is not a useful percentage then; look at cash flow and risk." },
+        { "q": "Is 75% LTV realistic?", "a": "Sometimes. Many investors underwrite 70% so the refinance still closes." },
+        { "q": "Does this include the original hard-money loan?", "a": "No. It assumes you get to the long-term refinance. Bridge costs belong in rehab/holding." }
+      ],
+      "related": [
+        { "href": "/tools/cash-on-cash-return", "label": "Cash-on-cash return", "question": "After the refi payment exists." },
+        { "href": "/tools/renovation-contingency-budget", "label": "Renovation contingency", "question": "Rehab overrun." },
+        { "href": "/tools/dscr", "label": "DSCR", "question": "Will the refi file clear?" }
+      ],
+      "examples": [
+        { "name": "Textbook", "description": "Buy 180, rehab 45, ARV 280.", "inputs": { "purchase": 180000, "rehab": 45000, "arv": 280000, "ltv": 75, "rent": 2100, "vacancy": 6, "ops": 550, "rate": 7, "years": 30 } },
+        { "name": "Over-rehab", "description": "Rehab $80k.", "inputs": { "purchase": 180000, "rehab": 80000, "arv": 280000, "ltv": 75, "rent": 2100, "vacancy": 6, "ops": 550, "rate": 7, "years": 30 } },
+        { "name": "70% LTV", "description": "More conservative refinance.", "inputs": { "purchase": 180000, "rehab": 45000, "arv": 280000, "ltv": 70, "rent": 2100, "vacancy": 6, "ops": 550, "rate": 7, "years": 30 } }
+      ]
+    },
+    {
+      "slug": "house-hack-cash-flow",
+      "title": "House hack cash flow",
+      "question": "What is your net housing cost after rent from other units or rooms?",
+      "description": "Subtract effective rent from housemates or extra units from PITI and owner-occupied operating costs to see what housing actually costs.",
+      "category": "housing-moving",
+      "headlineLabel": "Net monthly housing cost",
+      "formula": "Net housing = PITI + owner ops − rent × (1 − vacancy%).",
+      "inputs": [
+        { "id": "piti", "label": "Monthly PITI", "type": "currency", "default": 3200 },
+        { "id": "rent", "label": "Rent from other units / rooms", "type": "currency", "default": 1800 },
+        { "id": "vacancy", "label": "Vacancy on that rent", "type": "percent", "default": 8 },
+        { "id": "ops", "label": "Extra owner costs (utilities, wear)", "type": "currency", "default": 250 }
+      ],
+      "assumptions": [
+        "You still live in the property. This is housing cost, not a pure investment CoC.",
+        "Vacancy applies only to the rented portion.",
+        "Tax benefits of owner-occupied vs rental allocation are excluded."
+      ],
+      "howTo": [
+        "Use PITI from the mortgage tool, not a round number from memory.",
+        "If you rent rooms, vacancy is roommate turnover.",
+        "A negative net housing cost means the property pays you to live there — until a void month."
+      ],
+      "mistakes": [
+        "Ignoring that you still need a bedroom when the tenant leaves.",
+        "Underwriting 100% occupancy on three rooms in a house you also occupy.",
+        "Forgetting utilities you agreed to cover."
+      ],
+      "faqs": [
+        { "q": "Is house hacking the same as a duplex rental?", "a": "You occupy part of it. Financing and tax treatment differ from a pure rental." },
+        { "q": "Can this be an STR on the other unit?", "a": "Yes, but then use STR occupancy and ops, not a simple vacancy percent." },
+        { "q": "Does this help with DTI?", "a": "Some lenders count a fraction of rental income. Do not assume 100% of this rent lands on the application." }
+      ],
+      "related": [
+        { "href": "/blog/house-hacking-guide", "label": "House hacking guide", "question": "How the strategy is run." },
+        { "href": "/tools/mortgage-payment", "label": "Mortgage payment", "question": "Build PITI." },
+        { "href": "/tools/rent-affordability", "label": "Rent affordability", "question": "If you stayed a renter." }
+      ],
+      "examples": [
+        { "name": "Duplex", "description": "You live in one side.", "inputs": { "piti": 3200, "rent": 1800, "vacancy": 8, "ops": 250 } },
+        { "name": "Roommates", "description": "Two rooms at $900.", "inputs": { "piti": 2800, "rent": 1800, "vacancy": 12, "ops": 200 } },
+        { "name": "House pays you", "description": "Triplex with strong rents.", "inputs": { "piti": 3400, "rent": 4200, "vacancy": 6, "ops": 400 } }
+      ]
+    }
+  ]
+}

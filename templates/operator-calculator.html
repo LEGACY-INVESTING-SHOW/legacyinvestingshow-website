@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full antialiased">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{TITLE}}</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <meta name="keywords" content="{{KEYWORDS}}">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="{{CANONICAL}}">
+  <meta property="og:title" content="{{OG_TITLE}}">
+  <meta property="og:description" content="{{DESCRIPTION}}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{CANONICAL}}">
+  <meta property="og:image" content="https://www.legacyinvestingshow.com/assets/images/og-blog.jpg">
+  <meta property="og:site_name" content="Legacy Investing Calculators">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{OG_TITLE}}">
+  <meta name="twitter:description" content="{{DESCRIPTION}}">
+  <meta name="twitter:image" content="https://www.legacyinvestingshow.com/assets/images/og-blog.jpg">
+  <meta name="twitter:site" content="@thelegacyshow">
+  <link rel="icon" href="/favicon.ico" sizes="256x256" type="image/x-icon">
+  <link rel="preload" href="{{FONT_HREF}}" as="font" crossorigin="" type="font/woff2">
+  <link rel="stylesheet" href="{{CSS_HREF}}">
+  <script type="application/ld+json">{{SCHEMA}}</script>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2578PT1WSS');
+  </script>
+</head>
+<body class="flex min-h-full flex-col font-sans">
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <header class="sticky top-0 z-40 border-b border-line bg-paper-raised/95 backdrop-blur-sm">
+    <div class="mx-auto flex max-w-5xl items-center justify-between gap-4 px-5 py-3">
+      <a class="min-w-0" href="/tools"><span class="block truncate text-[15px] font-semibold tracking-tight text-ink">Legacy Investing Calculators</span></a>
+      <nav aria-label="Primary" class="hidden items-center gap-0.5 md:flex">
+        <a class="rounded-[6px] px-2.5 py-1.5 text-[13px] text-ink-muted hover:bg-accent-soft hover:text-ink" href="/tools/categories/money">Money</a>
+        <a class="rounded-[6px] px-2.5 py-1.5 text-[13px] text-ink-muted hover:bg-accent-soft hover:text-ink" href="/tools/categories/banking-borrowing">Banking</a>
+        <a class="rounded-[6px] px-2.5 py-1.5 text-[13px] text-ink-muted hover:bg-accent-soft hover:text-ink" href="/tools/categories/taxes-payroll">Taxes</a>
+        <a class="rounded-[6px] px-2.5 py-1.5 text-[13px] text-ink-muted hover:bg-accent-soft hover:text-ink" href="/tools/categories/housing-moving">Housing</a>
+        <a href="https://www.legacyinvestingshow.com" target="_blank" rel="noopener noreferrer" class="ml-2 rounded-[6px] bg-accent px-3 py-1.5 text-[13px] font-medium text-paper-raised hover:bg-accent-hover">Show</a>
+      </nav>
+      <a href="https://www.legacyinvestingshow.com" target="_blank" rel="noopener noreferrer" class="rounded-[6px] bg-accent px-3 py-1.5 text-[13px] font-medium text-paper-raised hover:bg-accent-hover md:hidden">Show</a>
+    </div>
+  </header>
+  <main class="flex-1">
+    <div class="mx-auto max-w-5xl px-5 py-8 sm:py-12">
+      <nav aria-label="Breadcrumb" class="text-[13px] text-ink-faint">
+        <a class="rounded-[4px] hover:text-ink-muted" href="/tools">All calculators</a>
+        <span aria-hidden="true" class="mx-2">/</span>
+        <a class="rounded-[4px] hover:text-ink-muted" href="{{CATEGORY_HREF}}">{{CATEGORY_NAME}}</a>
+        <span aria-hidden="true" class="mx-2">/</span>
+        <span class="text-ink-muted">{{SHORT_TITLE}}</span>
+      </nav>
+      <div class="mt-5 space-y-14">
+        <article>
+          <h1 class="text-[28px] font-semibold tracking-tight text-ink sm:text-[32px]">{{SHORT_TITLE}}</h1>
+          <p class="mt-2 max-w-2xl text-[16px] text-ink-muted">{{QUESTION}}</p>
+          <div class="mt-8">
+            <div class="grid gap-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:items-start">
+              <form id="operator-form" class="space-y-4 rounded-[8px] border border-line bg-paper-raised p-4 sm:p-5" novalidate>
+                <div class="flex items-baseline justify-between gap-3">
+                  <p class="text-[12px] font-medium uppercase tracking-[0.06em] text-ink-faint">Your numbers</p>
+                  <button type="button" id="operator-reset" class="rounded-[4px] text-[12px] font-medium text-ink-muted hover:text-accent">Reset</button>
+                </div>
+                {{FORM_FIELDS}}
+              </form>
+              <div class="lg:sticky lg:top-20 space-y-4">
+                <div class="rounded-[8px] bg-accent-soft px-5 py-5 sm:px-6">
+                  <div id="operator-result" role="status" aria-live="polite" aria-atomic="true">{{RESULT_HTML}}</div>
+                </div>
+                <p class="rounded-[8px] border border-line bg-paper-raised px-4 py-3 text-[13px] leading-5 text-ink-muted"><span class="font-medium text-ink">Tip. </span>Educational estimate with the assumptions listed on this page. Not tax, legal, or investment advice.</p>
+                <div>
+                  <p class="text-[13px] font-medium text-ink">Assumptions</p>
+                  <ul class="mt-2 list-disc space-y-1 pl-5 text-[13px] text-ink-muted">{{ASSUMPTIONS}}</ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <section aria-labelledby="examples-heading" class="space-y-5">
+          <div>
+            <p class="text-[11px] font-medium uppercase tracking-[0.08em] text-ink-faint">Explore the numbers</p>
+            <h2 id="examples-heading" class="mt-1 text-[18px] font-semibold tracking-tight text-ink">Examples</h2>
+            <p class="mt-1 text-[14px] text-ink-muted">Load a scenario, then change one input at a time.</p>
+          </div>
+          <div id="operator-examples" class="grid gap-0 overflow-hidden rounded-[8px] border border-line sm:grid-cols-3">{{EXAMPLES}}</div>
+        </section>
+        <section aria-labelledby="about-heading" class="grid gap-10 border-t border-line pt-10 lg:grid-cols-2">
+          <div class="space-y-6">
+            <div>
+              <h2 id="about-heading" class="text-[18px] font-semibold tracking-tight text-ink">What this calculates</h2>
+              <p class="mt-2 text-[15px] leading-7 text-ink-muted">{{ABOUT}}</p>
+            </div>
+            <div>
+              <h3 class="text-[15px] font-semibold text-ink">How to use it</h3>
+              <ol class="mt-2 list-decimal space-y-1.5 pl-5 text-[14px] leading-6 text-ink-muted">{{HOWTO}}</ol>
+            </div>
+            <div>
+              <h3 class="text-[15px] font-semibold text-ink">Common mistakes</h3>
+              <ul class="mt-2 list-disc space-y-1.5 pl-5 text-[14px] leading-6 text-ink-muted">{{MISTAKES}}</ul>
+            </div>
+          </div>
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-[15px] font-semibold text-ink">Formula</h3>
+              <p class="mt-2 rounded-[8px] border border-line bg-paper-raised px-4 py-3 font-mono text-[13px] leading-6 text-ink">{{FORMULA}}</p>
+            </div>
+          </div>
+        </section>
+        <section aria-labelledby="faq-heading" class="border-t border-line pt-10">
+          <h2 id="faq-heading" class="text-[18px] font-semibold tracking-tight text-ink">FAQ</h2>
+          <div class="mt-3">{{FAQ_HTML}}</div>
+        </section>
+        <section aria-labelledby="related-heading" class="border-t border-line pt-10">
+          <h2 id="related-heading" class="text-[18px] font-semibold tracking-tight text-ink">Related calculators</h2>
+          <p class="mt-1 text-[14px] text-ink-muted">The questions people usually ask next.</p>
+          <ul class="mt-4 divide-y divide-line border-t border-line">{{RELATED_HTML}}</ul>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="mt-auto border-t border-line">
+    <div class="mx-auto max-w-5xl px-5 py-10">
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+        <div class="max-w-xl">
+          <p class="text-[13px] font-medium text-ink">From Legacy Investing Show</p>
+          <p class="mt-1 text-[14px] text-ink-muted">Educational estimates with visible assumptions. Continue with the show when you want the bigger picture.</p>
+        </div>
+        <a href="https://www.legacyinvestingshow.com" target="_blank" rel="noopener noreferrer" class="inline-flex shrink-0 rounded-[6px] bg-accent px-4 py-2.5 text-[14px] font-medium text-paper-raised hover:bg-accent-hover">Visit the show</a>
+      </div>
+      <p class="mt-8 text-[12px] text-ink-faint">© 2026 Legacy Investing Calculators. Not financial advice.</p>
+    </div>
+  </footer>
+  <script type="application/json" id="operator-spec">{{SPEC_JSON}}</script>
+  <script src="/assets/js/operator-calculator-models.js"></script>
+  <script src="/assets/js/operator-calculator.js"></script>
+</body>
+</html>
