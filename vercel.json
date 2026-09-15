@@ -547,6 +547,21 @@
       "permanent": true
     },
     {
+      "source": "/success-stories",
+      "destination": "/reviews",
+      "permanent": true
+    },
+    {
+      "source": "/success-stories/",
+      "destination": "/reviews",
+      "permanent": true
+    },
+    {
+      "source": "/success-stories.html",
+      "destination": "/reviews",
+      "permanent": true
+    },
+    {
       "source": "/renters-insurance",
       "destination": "/tools/renters-insurance-cost",
       "permanent": true
@@ -933,17 +948,17 @@
     },
     {
       "source": "/blog/dustin-case-study",
-      "destination": "/success-stories",
+      "destination": "/reviews",
       "permanent": true
     },
     {
       "source": "/blog/kirk-case-study",
-      "destination": "/success-stories",
+      "destination": "/reviews",
       "permanent": true
     },
     {
       "source": "/blog/kirk-case-study.html",
-      "destination": "/success-stories",
+      "destination": "/reviews",
       "permanent": true
     },
     {

@@ -74,6 +74,38 @@ test('duplicate and removed URLs redirect permanently to their canonical page', 
   );
 });
 
+test('the old proof page folds into /reviews with no redirect chains', () => {
+  // /success-stories and /reviews were two near-duplicate proof pages, which
+  // split the signal for "Legacy Investing Show reviews". /reviews is the
+  // canonical one now and every path that used to land on /success-stories
+  // goes straight there.
+  for (const source of ['/success-stories', '/success-stories/', '/success-stories.html']) {
+    const rule = config.redirects.find(r => r.source === source);
+    assert.ok(rule, `missing redirect for ${source}`);
+    assert.equal(rule.destination, '/reviews');
+    assert.equal(rule.permanent, true, `${source} must be a 301`);
+  }
+
+  assert.ok(
+    !config.redirects.some(r => r.destination === '/success-stories'),
+    'nothing may redirect to a page that itself redirects'
+  );
+
+  // The same rule for the whole config: a destination must not be a source.
+  const sources = new Set(config.redirects.map(r => String(r.source).replace(/\/$/, '')));
+  const chained = config.redirects.filter(
+    r => sources.has(String(r.destination).replace(/\/$/, ''))
+  );
+  assert.deepEqual(
+    chained.map(r => `${r.source} -> ${r.destination}`),
+    [],
+    'redirect chains cost a hop and leak PageRank'
+  );
+
+  // The file stays on disk: the indexation policy and other tests read it.
+  assert.ok(fs.existsSync(path.join(ROOT, 'success-stories.html')));
+});
+
 test('redirect destinations resolve to a page on disk', () => {
   const resolvable = url => {
     const clean = url.replace(/\/$/, '');

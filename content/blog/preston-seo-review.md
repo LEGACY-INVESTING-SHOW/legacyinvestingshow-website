@@ -33,6 +33,8 @@ No hype. Just facts.
 
 Yes. It is a real registered company that sells paid courses and coaching. It is not a free service, and it is not cheap. Here is what you can check yourself, plus the complaints people make and what I say about each one.
 
+If you want the proof instead of the summary, the [Legacy Investing Show reviews and client results](/reviews) page carries the client case studies, the written client results and the Trustpilot score in one place.
+
 ### What the company is
 
 Legacy Investing Show, LLC is based in Herriman, Utah. The [Better Business Bureau profile](https://www.bbb.org/us/ut/herriman/profile/real-estate-school/legacy-investing-show-llc-1166-90045660) lists it under Real Estate School. The company is not BBB accredited.

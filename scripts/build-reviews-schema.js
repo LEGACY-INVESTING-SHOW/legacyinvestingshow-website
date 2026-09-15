@@ -40,12 +40,21 @@ const WEBPAGE_ID = PAGE_URL + '#webpage';
 
 /* -------------------------------------------------------------- page copy */
 
-// SPEC-copy C.0 and C.1. The schema name is the h1 and the og:title, which are
-// the same string; the description is the meta description.
-const PAGE_NAME = 'Legacy Investing Show reviews and client results';
+// SPEC-copy C.0 and C.1. The schema name is the <title> and the og:title,
+// which are the same string; the description is the meta description. The h1
+// is a second phrasing of the same thing and is not repeated here.
+const PAGE_NAME = 'Preston Seo reviews and Legacy Investing Show client results';
 const PAGE_DESCRIPTION =
-    'Preston Seo and Legacy Investing Show reviews: Legacy Wealth Blueprint client case studies, '
-    + 'written client results, Trustpilot reviews and wealth plan pages.';
+    'Preston Seo reviews for Legacy Investing Show: Legacy Wealth Blueprint client case studies, '
+    + 'written client results, and 4.2 on Trustpilot across 66 reviews.';
+
+// The day reviews.html was first committed:
+//   git log --diff-filter=A --format=%cs -- reviews.html | tail -1
+const PAGE_PUBLISHED = '2026-09-14';
+
+// The opener line and every FAQ answer, which is the part of the page an
+// assistant should read aloud when it answers a question about the brand.
+const SPEAKABLE_SELECTORS = ['.opener__key', '.faq__answer'];
 
 /* ------------------------------------------------------------------ input */
 
@@ -146,7 +155,13 @@ function buildVideoNodes(videos) {
         const duration = isoDuration(record.durationSeconds);
         if (duration) node.duration = duration;
         if (record.uploadDate) node.uploadDate = record.uploadDate;
-        if (record.transcript) node.transcript = record.transcript;
+        // transcript takes Text, so an array of paragraphs is joined rather
+        // than passed through as a list.
+        if (record.transcript) {
+            node.transcript = Array.isArray(record.transcript)
+                ? record.transcript.join('\n\n')
+                : String(record.transcript);
+        }
         if (record.program === 'Legacy Wealth Blueprint') node.about = { '@id': COURSE_ID };
 
         return node;
@@ -237,6 +252,14 @@ function buildFaq(summary, reviewCount) {
             + 'reviews are on Trustpilot and the link to them is next to the score.',
         ],
         [
+            // The page prints this one too; the markup has to cover every
+            // question the section shows, in the order it shows them.
+            'What do the programs cost?',
+            'The Legacy Wealth Blueprint is $9,800 paid by cash or card and $10,800 through Splitit financing. '
+            + 'LWB Course + AI is $1,500. Airbnb Ascension is $9,800, Airbnb Ascension Scale $18,000, STR '
+            + 'Concierge $16,000 and STR Concierge Portfolio $30,000. Bundles run from $17,000 to $34,000.',
+        ],
+        [
             'How much did clients save with the Legacy Wealth Blueprint?',
             'The figures clients state in their own interviews are over $20,000 in first-year tax savings for '
             + 'Stephanie Dailey, just under $100,000 in first-year ROI calculated by Abigail, and 25% net worth growth '
@@ -320,10 +343,17 @@ function buildGraph() {
         name: PAGE_NAME,
         description: PAGE_DESCRIPTION,
         isPartOf: { '@id': SITE_URL + '/#website' },
-        about: { '@id': COURSE_ID },
+        // The three entities the page is about: the company, the person and
+        // the program every client result on it comes from.
+        about: [{ '@id': ORG_ID }, { '@id': PERSON_ID }, { '@id': COURSE_ID }],
         mentions: [{ '@id': ORG_ID }, { '@id': PERSON_ID }],
         hasPart: [{ '@id': caseStudies['@id'] }, { '@id': faq['@id'] }],
         primaryImageOfPage: { '@id': videoNodes[0]['@id'] },
+        speakable: {
+            '@type': 'SpeakableSpecification',
+            cssSelector: SPEAKABLE_SELECTORS,
+        },
+        datePublished: PAGE_PUBLISHED,
         dateModified: pageLastModified(),
     };
 
@@ -359,6 +389,14 @@ function buildGraph() {
         jobTitle: 'Founder',
         worksFor: { '@id': ORG_ID },
         knowsAbout: ['tax strategy', 'short-term rentals', 'wealth planning', 'business structure'],
+        // Only profiles the repo already links to, from about.html and
+        // about/preston-seo.html. Nothing here is guessed.
+        sameAs: [
+            'https://www.youtube.com/@LegacyInvestingShow',
+            'https://www.instagram.com/thelegacyinvestingshow/',
+            'https://www.tiktok.com/@thelegacyinvestingshow',
+            'https://www.linkedin.com/in/preston-seo/',
+        ],
     };
 
     const course = {
@@ -416,6 +454,7 @@ const ALLOWED_HOSTS = [
     'www.trustpilot.com',
     'www.instagram.com',
     'www.tiktok.com',
+    'www.linkedin.com',
 ];
 
 function validate(graph) {

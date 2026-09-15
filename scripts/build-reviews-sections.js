@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 /**
- * Writes the two generated blocks of reviews.html:
+ * Writes the generated blocks of reviews.html:
  *
  *   <!-- reviews:wealth-plans:start --> ... <!-- reviews:wealth-plans:end -->
  *   <!-- reviews:trustpilot:start -->   ... <!-- reviews:trustpilot:end -->
+ *   <!-- reviews:transcript:<id>:start --> ... one per video item
  *
  * Wealth plan pages come from data/lwb-proof-images.json (image, caption and
  * the figures that are legible on it) and data/lwb-proof-images-text.json (the
@@ -14,7 +15,12 @@
  * data/trustpilot-summary.json, rendered as real text. If either Trustpilot
  * file is missing the block is written empty and the section renders nothing.
  *
- * Both blocks are deterministic: running this twice produces the same file.
+ * A transcript block is filled only where data/reviews-videos.json holds a
+ * real transcript for that video id. Every transcript there is null today, so
+ * every one of those blocks renders empty and the page keeps saying "Summary".
+ * scripts/fetch-video-transcripts.js is what fills the data file.
+ *
+ * Every block is deterministic: running this twice produces the same file.
  * Everything outside the markers is hand-written source and is left alone.
  */
 
@@ -435,6 +441,85 @@ function buildWealthPlans() {
     return out + '\n                ';
 }
 
+/* ------------------------------------------------------- video transcripts */
+
+/**
+ * A video's transcript as paragraphs. The data file holds plain text with a
+ * blank line between paragraphs, or an array of paragraphs; anything else is
+ * treated as one paragraph. Nothing is reworded here.
+ * @param {string|string[]|null} transcript
+ * @returns {string[]}
+ */
+function transcriptParagraphs(transcript) {
+    if (!transcript) return [];
+    const parts = Array.isArray(transcript) ? transcript : String(transcript).split(/\n\s*\n/);
+    return parts.map(function (part) {
+        return String(part).replace(/\s+/g, ' ').trim();
+    }).filter(Boolean);
+}
+
+/**
+ * The disclosure that holds one video's transcript. Closed by default, so it
+ * costs no height, and in the HTML at load, so every crawler reads it.
+ * @param {string|string[]|null} transcript
+ * @param {string} indent
+ * @returns {string} the empty string when there is no transcript
+ */
+function videoTranscriptBlock(transcript, indent) {
+    const paragraphs = transcriptParagraphs(transcript);
+    if (!paragraphs.length) return '';
+    return ''
+        + '\n' + indent + '<details class="rv-text">'
+        + '\n' + indent + '    <summary>Transcript</summary>'
+        + '\n' + indent + '    <div class="rv-text__body">'
+        + paragraphs.map(function (paragraph) {
+            return '\n' + indent + '        <p>' + esc(paragraph) + '</p>';
+        }).join('')
+        + '\n' + indent + '    </div>'
+        + '\n' + indent + '</details>';
+}
+
+/**
+ * Fill every <!-- reviews:transcript:<id>:start/end --> pair on the page. An
+ * id with no record, or a record with no transcript, leaves its block empty.
+ * @param {string} html
+ * @param {object[]} videos
+ * @returns {{html: string, filled: number, markers: number}}
+ */
+function fillTranscripts(html, videos) {
+    const byId = {};
+    videos.forEach(function (record) {
+        if (record && record.id) byId[record.id] = record;
+    });
+
+    const seen = {};
+    let filled = 0;
+    let markers = 0;
+
+    const pattern = /([ \t]*)<!-- reviews:transcript:([A-Za-z0-9_-]+):start -->[\s\S]*?<!-- reviews:transcript:\2:end -->/g;
+    const out = html.replace(pattern, function (whole, indent, id) {
+        markers += 1;
+        seen[id] = true;
+        const record = byId[id];
+        if (!record) {
+            console.warn('build-reviews-sections: no video record for transcript marker ' + id);
+        }
+        const body = record ? videoTranscriptBlock(record.transcript, indent) : '';
+        if (body) filled += 1;
+        return indent + '<!-- reviews:transcript:' + id + ':start -->'
+            + body
+            + '\n' + indent + '<!-- reviews:transcript:' + id + ':end -->';
+    });
+
+    videos.forEach(function (record) {
+        if (record.transcript && !seen[record.id]) {
+            console.warn('build-reviews-sections: ' + record.id + ' has a transcript but no marker on the page');
+        }
+    });
+
+    return { html: out, filled: filled, markers: markers };
+}
+
 /* ------------------------------------------------------------- trustpilot */
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -634,15 +719,25 @@ function main() {
     const trustpilot = buildTrustpilot();
     html = replaceBlock(html, 'wealth-plans', wealthPlans);
     html = replaceBlock(html, 'trustpilot', trustpilot);
+    const transcripts = fillTranscripts(html, readJson('data/reviews-videos.json') || []);
+    html = transcripts.html;
     fs.writeFileSync(PAGE, html);
 
     const planCount = (wealthPlans.match(/class="rv-plan[ "]/g) || []).length;
     const textCount = (wealthPlans.match(/class="rv-text"/g) || []).length;
     const reviewCount = (trustpilot.match(/class="rv-review"/g) || []).length;
     console.log('build-reviews-sections: ' + planCount + ' wealth plan pages ('
-        + textCount + ' with their text), ' + reviewCount + ' Trustpilot reviews');
+        + textCount + ' with their text), ' + reviewCount + ' Trustpilot reviews, '
+        + transcripts.filled + ' of ' + transcripts.markers + ' video transcripts');
 }
 
-main();
+if (require.main === module) main();
 
-module.exports = { normalizeCaption, markFigures, titleRepeatsBody };
+module.exports = {
+    normalizeCaption,
+    markFigures,
+    titleRepeatsBody,
+    transcriptParagraphs,
+    videoTranscriptBlock,
+    fillTranscripts
+};
