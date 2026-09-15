@@ -66,7 +66,7 @@
       "heading": "What we left out, on purpose",
       "paragraphs": [
         "We left out brands whose only public door is a webinar funnel with no curriculum list we could verify. SubTo and some masterminds may be real. They did not publish a price on the homepages we opened, and their model is narrow. They belong on a creative-finance list, not a 'best wealth education' list for a physician or engineer.",
-        "We also left out Dave Ramsey as a 'best for high earners' crown. FPU at $99.99 can still be the right class if lifestyle debt is the leak. It is not the best tax school. See [Dave Ramsey alternatives](/compare/dave-ramsey-alternatives)."
+        "We also left out Dave Ramsey as a 'best for high earners' crown. FPU at $99.99 can still be the right class if lifestyle debt is the leak. It is not the best tax school. See [Dave Ramsey alternatives](/compare/dave-ramsey-alternatives) and [FOO vs Baby Steps](/compare/money-guy-foo-vs-ramsey-baby-steps)."
       ]
     },
     {
@@ -121,8 +121,8 @@
       "name": "Legacy Wealth Blueprint",
       "price": "$9,800 cash or card, as we publish on this site",
       "asOf": "2026-09-15",
-      "sourceLabel": "Best tax strategy programs for W-2 earners",
-      "sourceUrl": "https://www.legacyinvestingshow.com/blog/best-tax-strategy-programs-w2-earners-over-250k"
+      "sourceLabel": "Legacy Wealth Blueprint cost",
+      "sourceUrl": "https://www.legacyinvestingshow.com/compare/legacy-wealth-blueprint-cost"
     }
   ],
   "questionsBeforeBuying": [
@@ -174,8 +174,8 @@
   ],
   "related": [
     { "href": "/compare/wealth-plan-checklist-high-earners", "label": "Wealth plan checklist for high earners" },
-    { "href": "/tax-strategies/for/high-income-earners", "label": "Tax strategies for high-income earners" },
-    { "href": "/blog/best-tax-strategy-programs-w2-earners-over-250k", "label": "Tax programs for W-2 earners over $250k" },
+    { "href": "/compare/money-guy-foo-vs-ramsey-baby-steps", "label": "Money Guy FOO vs Ramsey Baby Steps" },
+    { "href": "/compare/legacy-wealth-blueprint-cost", "label": "Legacy Wealth Blueprint cost" },
     { "href": "/compare/tax-course-vs-cpa", "label": "Tax course vs a CPA" }
   ],
   "cta": {

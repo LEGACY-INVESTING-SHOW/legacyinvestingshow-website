@@ -33,7 +33,7 @@
       "items": [
         {
           "name": "The Money Guy Show (FOO)",
-          "summary": "Brian Preston and Bo Hanson publish a nine-step [Financial Order of Operations](https://moneyguy.com/guide/foo/). The guide we opened was marked last updated July 29, 2026. The order is: cover insurance deductibles, take the employer 401(k) match, kill high-interest debt, build cash, then Roth and HSA, then max work plans. They also sell a FOO course. The product page we saw did not show a public checkout price.",
+          "summary": "Brian Preston and Bo Hanson publish a nine-step [Financial Order of Operations](https://moneyguy.com/guide/foo/). The guide we opened was marked last updated July 29, 2026. The order is: cover insurance deductibles, take the employer 401(k) match, kill high-interest debt, build cash, then Roth and HSA, then max work plans. The guide and [learn page](https://learn.moneyguy.com/financial-order-of-operations-course) listed the FOO course at $49 (the learn page called it a sale from $249). Full split: [FOO vs Baby Steps](/compare/money-guy-foo-vs-ramsey-baby-steps).",
           "meta": "Job: a dollar order that invests earlier than Ramsey"
         },
         {
@@ -102,8 +102,8 @@
       "sourceUrl": "https://www.ramseysolutions.com/money/financial-peace/class"
     },
     {
-      "name": "Money Guy FOO guide",
-      "price": "Free article. Course price not shown on the product page we opened",
+      "name": "Money Guy FOO guide and course",
+      "price": "Guide is free. Course listed at $49 on the guide and learn pages (sale copy from $249). Product page we opened did not reprint the number.",
       "asOf": "2026-09-15",
       "sourceLabel": "Money Guy FOO guide",
       "sourceUrl": "https://moneyguy.com/guide/foo/"
@@ -119,8 +119,8 @@
       "name": "Legacy Wealth Blueprint",
       "price": "$9,800 cash or card, as we publish on this site",
       "asOf": "2026-09-15",
-      "sourceLabel": "Best tax strategy programs for W-2 earners",
-      "sourceUrl": "https://www.legacyinvestingshow.com/blog/best-tax-strategy-programs-w2-earners-over-250k"
+      "sourceLabel": "Legacy Wealth Blueprint cost",
+      "sourceUrl": "https://www.legacyinvestingshow.com/compare/legacy-wealth-blueprint-cost"
     }
   ],
   "questionsBeforeBuying": [
@@ -142,7 +142,7 @@
     },
     {
       "q": "What is a fair Ramsey alternative for investing?",
-      "a": "The Money Guy FOO is the closest free map that still puts high-interest debt early, then invests in Roth, HSA, and work plans. It is not anti-Ramsey. It just invests sooner than 'all debt including the house.'"
+      "a": "The Money Guy FOO is the closest free map that still puts high-interest debt early, then invests in Roth, HSA, and work plans. It is not anti-Ramsey. It just invests sooner than 'all debt including the house.' See [FOO vs Baby Steps](/compare/money-guy-foo-vs-ramsey-baby-steps)."
     },
     {
       "q": "Should a high earner skip Ramsey?",
@@ -173,10 +173,10 @@
     }
   ],
   "related": [
-    { "href": "/compare/wealth-plan-checklist-high-earners", "label": "Wealth plan checklist for high earners" },
+    { "href": "/compare/money-guy-foo-vs-ramsey-baby-steps", "label": "Money Guy FOO vs Ramsey Baby Steps" },
     { "href": "/compare/401k-vs-rental-property", "label": "401(k) vs rental property" },
     { "href": "/compare/mortgage-payoff-vs-investing", "label": "Pay off the mortgage vs invest" },
-    { "href": "/topics/debt-management", "label": "Debt management hub" }
+    { "href": "/compare/legacy-wealth-blueprint-cost", "label": "Legacy Wealth Blueprint cost" }
   ],
   "cta": {
     "title": "Past the Baby Steps?",

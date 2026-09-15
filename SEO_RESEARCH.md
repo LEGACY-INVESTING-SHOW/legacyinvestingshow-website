@@ -41,24 +41,30 @@ Portfolio claims: prefer the current homepage/about figure. Do not invent $15M v
 
 ## Inventory of this ship (2026-09-15)
 
-Twelve `/compare` education pages. Source JSON in `data/education-guides/`. Hub: `/compare` (two groups).
+Sixteen `/compare` education pages. Source JSON in `data/education-guides/`. Hub: `/compare` (two groups). First twelve shipped as the education-compare set. Four more shipped the same day from the unused research-priority list.
 
 | Slug | Type | Query | Job | Proof used |
 | --- | --- | --- | --- | --- |
 | `biggerpockets-alternatives` | alternatives | BiggerPockets alternatives | Group education by job, not skip-tracing software | BP staff post 2026-03-03; membership table; KenPro store; WealthAbility Live; buy.subto.com; FTC coaching |
 | `subto-alternatives` | alternatives | SubTo alternatives | Creative-finance school vs cheaper rental study vs a wealth plan | buy.subto.com $9,800 / 4x $2,450; subto.com disclaimer; KenPro; FTC |
-| `dave-ramsey-alternatives` | alternatives | Dave Ramsey alternatives | After Baby Steps: FOO, CPA, rentals, LWB | FPU class page $99.99; Money Guy FOO guide updated 2026-07-29 |
-| `rich-dad-alternatives` | alternatives | Rich Dad alternatives | Book vs process: BP, WealthAbility, LWB | BP essay on Rich Dad; WealthAbility $197 / $497 |
+| `dave-ramsey-alternatives` | alternatives | Dave Ramsey alternatives | After Baby Steps: FOO, CPA, rentals, LWB | FPU class page $99.99; Money Guy FOO guide updated 2026-07-29; FOO course $49 on guide + learn.moneyguy.com |
+| `rich-dad-alternatives` | alternatives | Rich Dad alternatives | Book vs process: BP, WealthAbility, LWB | BP essay on Rich Dad; WealthAbility Live $197; Formula checkout not on the page we opened |
 | `biggerpockets-vs-rich-dad` | vs | BiggerPockets vs Rich Dad | Community tools vs a novel | Same BP and Rich Dad public pages |
 | `biggerpockets-what-to-know` | review | BiggerPockets review | Briefing, not a star review | Free vs Pro; dated prices; no Review schema |
 | `best-wealth-education-high-earners` | best-for | best wealth education for high-income professionals | Path by leak (tax, debt, rental), not a trophy rank | IRS IR-2025-111; Rev. Proc. 2025-19; public class prices |
 | `real-estate-coaching-vs-course` | decision | real estate coaching vs self-paced course | Format guide + FTC signs | FTC coaching pages; KenPro; SubTo checkout |
-| `tax-course-vs-cpa` | vs | tax course vs CPA | Class vs a licensed filer | WealthAbility prices; we do not file returns |
+| `tax-course-vs-cpa` | vs | tax course vs CPA | Class vs a licensed filer | WealthAbility Live $197; Formula price not printed; we do not file returns |
 | `short-term-rental-vs-long-term-rental` | vs | short-term rental vs long-term rental | Ops + IRS 7-day test, no fake occupancy | Publication 925; calculators on this site |
 | `401k-vs-rental-property` | vs | 401k vs rental property | Match first; then time and liquidity | IRS 2026 401(k) limits |
 | `wealth-plan-checklist-high-earners` | checklist | wealth plan checklist for high earners | Export facts before buying a class | Same IRS figures; site calculators |
+| `money-guy-foo-vs-ramsey-baby-steps` | vs | Money Guy FOO vs Dave Ramsey Baby Steps | Method order after consumer debt; not mortgage math | FOO guide 2026-07-29; learn.moneyguy.com $49 sale copy; ramseysolutions.com/dave-ramsey-7-baby-steps; FPU $99.99 |
+| `wealthability-alternatives` | alternatives | WealthAbility alternatives | Tax class vs CPA vs attorney membership vs LWB | Live $197; Formula checkout not printed 2026-09-15; Anderson $3,495+$75 |
+| `legacy-wealth-blueprint-cost` | review | Legacy Wealth Blueprint cost | Canonical current sticker + coaching buyer scorecard | `/reviews` FAQ; `llms.txt`; homepage/about $15M+; $2,497 flagged as a student quote |
+| `anderson-platinum-vs-tax-course` | vs | Anderson Platinum vs a tax course | Attorney membership vs education-only | andersonadvisors.com/platinum-membership $3,495+$75; FAQ: tax packages not included |
 
 SaaS patterns we skipped: MCP, "export your data," "software for [role]." Those do not map to a coaching/media business.
+
+Skipped on purpose this pass: a second "debt payoff vs investing" URL (use FOO vs Ramsey for method, `/compare/mortgage-payoff-vs-investing` for mortgage math); a dedicated W-2 tax checklist (buyer scorecard lives on the LWB cost page); a SubTo review URL (would cannibalize `subto-alternatives`); another Preston Seo review.
 
 ## Competitor table (public pages we opened)
 
@@ -71,10 +77,10 @@ Facts dated 2026-09-15 unless noted. Re-check before editing a price.
 | KenPro (Ken McElroy) | Rental/apartment membership | $39.99/mo or $399/yr | [kenmcelroy.com/kenprostore](https://kenmcelroy.com/kenprostore/) | Older pages still show $29.99 |
 | BetterLife (Brandon Turner) | Coaching / Tribe | Not on the pages we opened | [abetterlife.com](https://abetterlife.com/home-2/) | Tribe is for people who already did a deal |
 | Ramsey Solutions / FPU | Debt class + Baby Steps | Class finder "$99.99 to start FPU" | [FPU class page](https://www.ramseysolutions.com/money/financial-peace/class) | Main FPU page also uses $100 / $80 in ads |
-| Money Guy Show | FOO (Financial Order of Operations) | Guide is free. Course checkout not on the product page we saw | [FOO guide](https://moneyguy.com/guide/foo/) last updated 2026-07-29 | Good vs-Ramsey candidate; do not invent the course price |
-| WealthAbility (Tom Wheelwright) | Tax class / Tax-Free Wealth adjacent | Live $197/mo; Tax-Free Formula digital $497 | [Live](https://www.wealthability.com/wealthability-live/); [Formula](https://www.wealthability.com/new-tax-free-formula/) | Mentorship pages hid price |
-| Anderson Advisors Platinum | Legal/tax membership | Use the figure on [andersonadvisors.com/platinum-membership](https://andersonadvisors.com/platinum-membership/) after a fresh open | Already listed in Sep 14 tax-program blogs | Next `/compare` page only if the job is "education-only vs attorney membership," not another vendor table |
-| Legacy Wealth Blueprint | Our 12-month wealth plan | $9,800 cash or card; $10,800 Splitit | `/legacy-wealth-blueprint`, `/reviews`, `llms.txt` | Always disclose we sell it |
+| Money Guy Show | FOO (Financial Order of Operations) | Guide is free. Course listed at $49 on the guide and on learn.moneyguy.com (sale copy from $249). Product page did not reprint the number. | [FOO guide](https://moneyguy.com/guide/foo/) last updated 2026-07-29; [learn course page](https://learn.moneyguy.com/financial-order-of-operations-course) | Vs-Ramsey page shipped. Confirm $49 at checkout. |
+| WealthAbility (Tom Wheelwright) | Tax class / Tax-Free Wealth adjacent | Live $197/mo. Tax-Free Formula checkout **not printed** on the sales page we opened 2026-09-15. | [Live](https://www.wealthability.com/wealthability-live/); [Formula](https://www.wealthability.com/new-tax-free-formula/) | Do not reuse an old $497 screenshot. Mentorship pages hid price. |
+| Anderson Advisors Platinum | Legal/tax/asset protection membership | $3,495 enrollment + $75/mo. FAQ: tax packages not included. | [andersonadvisors.com/platinum-membership](https://andersonadvisors.com/platinum-membership/) | Vs education-only page shipped. Do not clone Sep 14 vendor tables. |
+| Legacy Wealth Blueprint | Our 12-month wealth plan | $9,800 cash or card; $10,800 Splitit; Course + AI $1,500 | Canonical: `/compare/legacy-wealth-blueprint-cost`. Also `/reviews` FAQ and `llms.txt` | `/legacy-wealth-blueprint` HTML does not print the sticker. Always disclose we sell it. $2,497 is a student quote, not list price. Homepage/about use $15M+. |
 | IRS | Rules, not a competitor | 2026 401(k) deferral $24,500; 50+ $8,000; 60-63 $11,250; HSA $4,400 / $8,750 | [IR-2025-111](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500); [Rev. Proc. 2025-19](https://www.irs.gov/irb/2025-21_IRB) | Cite, do not paraphrase into advice |
 | FTC | Coaching scam patterns | n/a | [Coaching scam article](https://consumer.ftc.gov/articles/when-business-offer-or-coaching-program-scam) | Use as warning signs, not as a verdict on a named living brand |
 
@@ -103,21 +109,21 @@ Track after launch. Do not write a starting rank or traffic number you did not e
 
 ## Next 20 pages
 
-Skip any row if a live URL already owns that query.
+Skip any row if a live URL already owns that query. Struck rows below already shipped under `/compare`.
 
 | # | Slug | Query | Intent | Angle | Proof to gather | Internal links | Cannibalization risk |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | `money-guy-foo-vs-ramsey-baby-steps` | Money Guy FOO vs Dave Ramsey | vs | Dollar order after consumer debt | FOO guide date; FPU price; no invented returns | `/compare/dave-ramsey-alternatives`, `/compare/mortgage-payoff-vs-investing` | Medium: Ramsey alternatives page already names FOO |
-| 2 | `wealthability-alternatives` | WealthAbility alternatives / Tax-Free Wealth alternatives | alternatives | Tax class vs CPA vs LWB | Live $197; Formula $497; mentorship hidden | `/compare/tax-course-vs-cpa`, `/blog/best-tax-strategy-programs-w2-earners-over-250k` | Medium: tax program blog and Rich Dad alts |
-| 3 | `anderson-platinum-vs-tax-course` | Anderson Platinum vs a tax course | vs | Attorney membership vs education-only | Fresh Platinum page; our tax-course-vs-cpa | `/blog/taxfreeceo-alternatives`, `/compare/tax-course-vs-cpa` | High: already in Sep 14 blogs |
-| 4 | `w2-tax-checklist` | tax checklist for W-2 high earners | checklist | Accounts before a coach | IRS 401(k)/HSA; `/tools` | `/compare/wealth-plan-checklist-high-earners`, persona W-2 | Medium: overlap with wealth-plan checklist; only ship if the job is tax-only |
-| 5 | `lis-program-cost` | Legacy Wealth Blueprint cost | commercial | Canonical current sticker | `/legacy-wealth-blueprint`, `/reviews` FAQ | `/reviews` | High if it becomes a Preston review. Keep it a cost/canonical page |
+| 1 | ~~`money-guy-foo-vs-ramsey-baby-steps`~~ | shipped | vs | Dollar order after consumer debt | FOO $49; FPU $99.99; Baby Steps page | `/compare/dave-ramsey-alternatives`, `/compare/mortgage-payoff-vs-investing` | Shipped. Do not add a third debt-vs-invest URL. |
+| 2 | ~~`wealthability-alternatives`~~ | shipped | alternatives | Tax class vs CPA vs LWB | Live $197; Formula not printed | `/compare/tax-course-vs-cpa` | Shipped |
+| 3 | ~~`anderson-platinum-vs-tax-course`~~ | shipped | vs | Attorney membership vs education-only | Platinum $3,495+$75 | `/blog/taxfreeceo-alternatives` | Shipped. Do not clone vendor tables. |
+| 4 | `w2-tax-checklist` | tax checklist for W-2 high earners | checklist | Accounts before a coach | IRS 401(k)/HSA; `/tools` | `/compare/wealth-plan-checklist-high-earners`, persona W-2 | Medium: buyer scorecard already on LWB cost page. Only ship if the job is tax-only. |
+| 5 | ~~`legacy-wealth-blueprint-cost`~~ | shipped | commercial | Canonical current sticker | `/reviews` FAQ | `/reviews` | Shipped. Do not add a Preston review. |
 | 6 | `betterlife-what-to-know` | BetterLife review / Brandon Turner coaching | review | Briefing when price is hidden | Tribe page; FTC | `/compare/real-estate-coaching-vs-course` | Low if we still cannot find a price |
 | 7 | `kenpro-vs-biggerpockets-pro` | KenPro vs BiggerPockets Pro | vs | $40 class vs $33 tools | Both public prices | BP what-to-know | Low |
 | 8 | `house-hacking-vs-short-term-rental` | house hacking vs Airbnb | vs | Live-in vs guest stays | Pub 925; local rules, no occupancy claims | STR vs LTR | Medium with STR vs LTR |
 | 9 | `backdoor-roth-vs-mega-backdoor` | backdoor Roth vs mega backdoor | vs | Plan features, not slogans | IRS IRA limits; plan SPD language | existing tax compare + strategy pages | High: tax library already covers both |
 | 10 | `fee-only-planner-vs-coaching` | fee-only advisor vs wealth coach | vs | Fiduciary vs education | CFP Board / NAPFA definitions; FTC | tax-course-vs-cpa | Low |
-| 11 | `ramsey-baby-steps-vs-investing-with-debt` | should I invest while in debt | decision | Interest rate vs behavior | FPU; FOO; mortgage-payoff compare | `/compare/dave-ramsey-alternatives` | Medium with mortgage-payoff page |
+| 11 | `ramsey-baby-steps-vs-investing-with-debt` | should I invest while in debt | decision | Interest rate vs behavior | FPU; FOO page already shipped | `/compare/money-guy-foo-vs-ramsey-baby-steps` | High with the FOO vs Ramsey page |
 | 12 | `subto-what-to-know` | SubTo review | review | Checklist before $9,800 | buy.subto.com; disclaimer; FTC | `/compare/subto-alternatives` | Medium with alternatives page; only if SERP wants a review URL |
 | 13 | `creative-finance-vs-conventional-loan` | subject to vs new mortgage | vs | Due-on-sale in plain words | CFPB/FTC if any; attorney caveat | SubTo alts | Low |
 | 14 | `solo-401k-vs-mega-backdoor-roth` | solo 401k vs mega backdoor | vs | Side business vs W-2 plan | IRS; existing strategy pages | tax compare set | High |

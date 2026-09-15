@@ -63,7 +63,7 @@
         },
         {
           "name": "Legacy Wealth Blueprint",
-          "summary": "Our program. It is a 12-month wealth plan covering tax, debt, income, investing, and protection, not a deal-finding bootcamp. We publish the price as $9,800 cash or card in [our tax program comparison](/blog/best-tax-strategy-programs-w2-earners-over-250k). Confirm it in writing on the call. Skip it if you only want to underwrite rentals.",
+          "summary": "Our program. It is a 12-month wealth plan covering tax, debt, income, investing, and protection, not a deal-finding bootcamp. We publish the price as $9,800 cash or card on [Legacy Wealth Blueprint cost](/compare/legacy-wealth-blueprint-cost). Confirm it in writing on the call. Skip it if you only want to underwrite rentals.",
           "meta": "Job: one written plan for tax, debt, and investing. We sell this."
         }
       ]
@@ -147,8 +147,8 @@
       "name": "Legacy Wealth Blueprint",
       "price": "$9,800 cash or card, as we publish on this site",
       "asOf": "2026-09-15",
-      "sourceLabel": "Best tax strategy programs for W-2 earners",
-      "sourceUrl": "https://www.legacyinvestingshow.com/blog/best-tax-strategy-programs-w2-earners-over-250k"
+      "sourceLabel": "Legacy Wealth Blueprint cost",
+      "sourceUrl": "https://www.legacyinvestingshow.com/compare/legacy-wealth-blueprint-cost"
     }
   ],
   "questionsBeforeBuying": [

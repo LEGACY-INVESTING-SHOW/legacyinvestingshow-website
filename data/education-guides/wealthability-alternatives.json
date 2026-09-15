@@ -1,0 +1,195 @@
+{
+  "type": "alternatives",
+  "slug": "wealthability-alternatives",
+  "title": "WealthAbility Alternatives",
+  "h1": "WealthAbility and Tax-Free Wealth alternatives",
+  "keyLine": "A CPA class teaches the map. It does not sign your return.",
+  "description": "Tax-Free Wealth and WealthAbility alternatives: a $197 a month class, a CPA, Anderson Platinum, or our plan. Formula checkout was not on the page we opened.",
+  "query": "WealthAbility alternatives",
+  "answer": "WealthAbility is Tom Wheelwright's tax education company. He also wrote Tax-Free Wealth, the book many Rich Dad readers buy next. WealthAbility Live listed $197 a month on September 15, 2026. The Tax-Free Formula sales page we opened that day did not print a checkout price. If you want a class, that can be enough. If you want a signed return, hire a CPA. If you want documents and attorneys on tap, that is a membership like Anderson Platinum, not a video. We sell Legacy Wealth Blueprint. It is a written plan plus coaching. We do not file your return.",
+  "criteriaIntro": "We grouped options by job: class, licensed filer, attorney membership, or a written wealth plan. We skipped lookalikes whose only door was a webinar with no public price.",
+  "criteria": [
+    "The option teaches tax, files tax, or sells legal support we could describe from a live page.",
+    "Price is copied from a public page, or we say it was not printed.",
+    "We do not reuse Wheelwright's marketing averages as our facts.",
+    "We include our own program and say so."
+  ],
+  "blocks": [
+    {
+      "type": "prose",
+      "id": "what-wealthability-is",
+      "heading": "What WealthAbility sells",
+      "paragraphs": [
+        "[WealthAbility Live](https://www.wealthability.com/wealthability-live/) is a monthly subscription. The page we opened listed $197 a month, two live sessions a month, a forum, and archives. It is hosted by Tom Wheelwright, CPA. Treat the lesson list as seller copy. We did not sit in the sessions.",
+        "The [Tax-Free Formula](https://www.wealthability.com/new-tax-free-formula/) page describes a digital course with modules on deductions, conversion, brackets, credits, and deferral. On September 15, 2026 that page did not print a checkout price in the text we could copy. If you saw $497 on an older screenshot, confirm the live offer. We will not invent it.",
+        "Tax-Free Wealth is the book. A book is not a filing position. Mentorship and done-for-you pages we opened did not publish a price. If someone quotes a five-figure WealthAbility coaching fee, ask for the live invoice."
+      ]
+    },
+    {
+      "type": "options",
+      "id": "by-job",
+      "heading": "Pick the next tool by the next job",
+      "intro": "These are not 'better WealthAbility.' They do different work.",
+      "items": [
+        {
+          "name": "Stay with WealthAbility Live",
+          "summary": "Use it if you already own a business or property and you want CPA-led class time at a printed monthly price. Skip it if you only have wages and no rental. A class cannot invent a deduction you do not have. See [tax strategies for W-2 employees](/tax-strategies/for/w2-employees).",
+          "meta": "Job: tax school with a published $197 a month sticker"
+        },
+        {
+          "name": "A CPA or enrolled agent",
+          "summary": "A certified public accountant or an enrolled agent (EA) can prepare and sign Form 1040. An EA is a tax pro licensed by the IRS to represent taxpayers. A course cannot. See [tax course vs hiring a CPA](/compare/tax-course-vs-cpa).",
+          "meta": "Job: the actual tax return"
+        },
+        {
+          "name": "Anderson Platinum",
+          "summary": "Attorney and document membership, not a video class. Public price on September 15, 2026: $3,495 to enroll plus $75 a month. Their FAQ said tax filing packages are not included. Full split: [Anderson Platinum vs a tax course](/compare/anderson-platinum-vs-tax-course).",
+          "meta": "Job: legal and entity questions on tap"
+        },
+        {
+          "name": "Named tax programs we already compared",
+          "summary": "If you want a vendor table with other public class prices, use [best tax strategy programs for W-2 earners over $250k](/blog/best-tax-strategy-programs-w2-earners-over-250k). This page will not clone that table.",
+          "meta": "Job: shop tax classes by published price"
+        },
+        {
+          "name": "Legacy Wealth Blueprint",
+          "summary": "Our 12-month plan for tax, debt, income, investing, and protection. We publish $9,800 cash or card. We still tell you to keep a CPA. Cost briefing: [Legacy Wealth Blueprint cost](/compare/legacy-wealth-blueprint-cost).",
+          "meta": "Job: one written plan plus coaching. We sell this."
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "gold",
+      "label": "W-2 limit in one line",
+      "paragraphs": [
+        "After the 401(k) and HSA, most large tax ideas need a business or a rental. A $197 class that talks about entities will not lower a pure wage bill by itself. Fill the IRS buckets first. 2026 employee 401(k) deferral is $24,500 ([IRS IR-2025-111](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500))."
+      ]
+    },
+    {
+      "type": "prose",
+      "id": "after-the-book",
+      "heading": "If you only read Tax-Free Wealth",
+      "paragraphs": [
+        "The book is a companion to Rich Dad, not a substitute for a preparer. Next mechanical steps: [Rich Dad alternatives](/compare/rich-dad-alternatives) if you still need a how-to, or a CPA meeting with last year's return in hand.",
+        "If a sales page promises you will cut tax by a round percent with no look at your file, walk. The [FTC coaching page](https://consumer.ftc.gov/articles/when-business-offer-or-coaching-program-scam) flags easy-profit pitches. We do not call WealthAbility a scam. We also do not repeat their student stories as our proof."
+      ]
+    }
+  ],
+  "whoFits": [
+    "You finished Tax-Free Wealth or a WealthAbility webinar and you want the next tool by job.",
+    "You can tell a class from a signed return."
+  ],
+  "whoSkips": [
+    "You need someone to file this month. Call a licensed pro today. Do not start module one.",
+    "You want an eight-vendor bake-off. Use the [W-2 tax program roundup](/blog/best-tax-strategy-programs-w2-earners-over-250k)."
+  ],
+  "costIntro": "Public figures we could copy on September 15, 2026. Mentorship tuition was not on the pages we opened.",
+  "costCaption": "Published prices for WealthAbility and nearby jobs.",
+  "costRows": [
+    {
+      "name": "WealthAbility Live",
+      "price": "$197 a month",
+      "asOf": "2026-09-15",
+      "sourceLabel": "WealthAbility Live",
+      "sourceUrl": "https://www.wealthability.com/wealthability-live/"
+    },
+    {
+      "name": "WealthAbility Tax-Free Formula digital",
+      "price": "Not published on the sales page we opened",
+      "asOf": "2026-09-15",
+      "sourceLabel": "Tax-Free Formula",
+      "sourceUrl": "https://www.wealthability.com/new-tax-free-formula/"
+    },
+    {
+      "name": "Typical CPA or EA engagement",
+      "price": "Not a single public national price. Ask for a written engagement letter.",
+      "asOf": "2026-09-15",
+      "sourceLabel": "IRS Directory of Federal Tax Return Preparers",
+      "sourceUrl": "https://irs.treasury.gov/rpo/rpo.jsf"
+    },
+    {
+      "name": "Anderson Platinum",
+      "price": "$3,495 enrollment plus $75 a month",
+      "asOf": "2026-09-15",
+      "sourceLabel": "Anderson Platinum membership",
+      "sourceUrl": "https://andersonadvisors.com/platinum-membership/"
+    },
+    {
+      "name": "Legacy Wealth Blueprint",
+      "price": "$9,800 cash or card. We do not file your return.",
+      "asOf": "2026-09-15",
+      "sourceLabel": "Legacy Wealth Blueprint cost",
+      "sourceUrl": "https://www.legacyinvestingshow.com/compare/legacy-wealth-blueprint-cost"
+    }
+  ],
+  "questionsBeforeBuying": [
+    "Will this purchase file my return, or only teach me?",
+    "Do I already have a business or a rental, or only wages?",
+    "Is the live Formula checkout printed, or am I guessing from an old screenshot?",
+    "If I keep my CPA, what artifact do I hand them?",
+    "Have I already maxed the 401(k) and HSA the IRS already allows?"
+  ],
+  "nextSteps": [
+    "Name the job: class, signed return, or legal documents. Then pick one row above.",
+    "Open [tax course vs a CPA](/compare/tax-course-vs-cpa) if that is still fuzzy.",
+    "If you want our written brief format, read [Legacy Wealth Blueprint cost](/compare/legacy-wealth-blueprint-cost)."
+  ],
+  "faqs": [
+    {
+      "q": "Is WealthAbility the same as Tax-Free Wealth?",
+      "a": "Tax-Free Wealth is the book. WealthAbility is the company that sells classes and related offers around that teaching. A book is not a CPA engagement."
+    },
+    {
+      "q": "How much is the Tax-Free Formula course?",
+      "a": "The sales page we opened on September 15, 2026 did not print a price we could copy. Confirm at checkout. Do not trust an old screenshot."
+    },
+    {
+      "q": "Can a $197 a month class replace Anderson Platinum?",
+      "a": "No. One is education. The other is an attorney membership. Different job, different bill."
+    }
+  ],
+  "sources": [
+    {
+      "label": "WealthAbility Live",
+      "url": "https://www.wealthability.com/wealthability-live/",
+      "asOf": "2026-09-15",
+      "note": "Listed $197 a month."
+    },
+    {
+      "label": "Tax-Free Formula sales page",
+      "url": "https://www.wealthability.com/new-tax-free-formula/",
+      "asOf": "2026-09-15",
+      "note": "No checkout price in the text we could copy."
+    },
+    {
+      "label": "Anderson Platinum membership",
+      "url": "https://andersonadvisors.com/platinum-membership/",
+      "asOf": "2026-09-15"
+    },
+    {
+      "label": "IRS 2026 401(k) limits",
+      "url": "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500",
+      "asOf": "2026-09-15"
+    },
+    {
+      "label": "FTC coaching scam guidance",
+      "url": "https://consumer.ftc.gov/articles/when-business-offer-or-coaching-program-scam",
+      "asOf": "2026-09-15"
+    }
+  ],
+  "related": [
+    { "href": "/compare/tax-course-vs-cpa", "label": "Tax course vs a CPA" },
+    { "href": "/compare/anderson-platinum-vs-tax-course", "label": "Anderson Platinum vs a tax course" },
+    { "href": "/blog/best-tax-strategy-programs-w2-earners-over-250k", "label": "Tax programs for W-2 earners over $250k" },
+    { "href": "/compare/rich-dad-alternatives", "label": "Rich Dad alternatives" }
+  ],
+  "cta": {
+    "title": "Keep the preparer",
+    "body": "Use a class to walk in with better questions. Then let a licensed person file. If you want our written brief format, that is Blueprint, and you still keep your CPA.",
+    "primaryHref": "/compare/tax-course-vs-cpa",
+    "primaryLabel": "Course vs a CPA",
+    "secondaryHref": "https://join.managemoney101.com/tax-strategies",
+    "secondaryLabel": "Free tax strategy class"
+  }
+}

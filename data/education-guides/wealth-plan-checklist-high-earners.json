@@ -99,8 +99,8 @@
       "name": "Legacy Wealth Blueprint (optional)",
       "price": "$9,800 cash or card, as we publish on this site",
       "asOf": "2026-09-15",
-      "sourceLabel": "Best tax strategy programs for W-2 earners",
-      "sourceUrl": "https://www.legacyinvestingshow.com/blog/best-tax-strategy-programs-w2-earners-over-250k"
+      "sourceLabel": "Legacy Wealth Blueprint cost",
+      "sourceUrl": "https://www.legacyinvestingshow.com/compare/legacy-wealth-blueprint-cost"
     }
   ],
   "questionsBeforeBuying": [
@@ -146,7 +146,7 @@
     }
   ],
   "related": [
-    { "href": "/compare/best-wealth-education-high-earners", "label": "Wealth education paths for high earners" },
+    { "href": "/compare/legacy-wealth-blueprint-cost", "label": "Legacy Wealth Blueprint cost" },
     { "href": "/compare/tax-course-vs-cpa", "label": "Tax course vs a CPA" },
     { "href": "/compare/401k-vs-rental-property", "label": "401(k) vs rental property" },
     { "href": "/tax-strategies/for/high-income-earners", "label": "Tax strategies for high-income earners" }

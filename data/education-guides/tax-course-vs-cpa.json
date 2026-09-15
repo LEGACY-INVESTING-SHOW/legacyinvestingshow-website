@@ -77,7 +77,7 @@
     },
     {
       "name": "WealthAbility Tax-Free Formula digital",
-      "price": "$497 lifetime on that page",
+      "price": "Not published on the sales page we opened",
       "asOf": "2026-09-15",
       "sourceLabel": "Tax-Free Formula",
       "sourceUrl": "https://www.wealthability.com/new-tax-free-formula/"
@@ -93,8 +93,8 @@
       "name": "Legacy Wealth Blueprint",
       "price": "$9,800 cash or card. We do not file your return.",
       "asOf": "2026-09-15",
-      "sourceLabel": "Best tax strategy programs for W-2 earners",
-      "sourceUrl": "https://www.legacyinvestingshow.com/blog/best-tax-strategy-programs-w2-earners-over-250k"
+      "sourceLabel": "Legacy Wealth Blueprint cost",
+      "sourceUrl": "https://www.legacyinvestingshow.com/compare/legacy-wealth-blueprint-cost"
     }
   ],
   "questionsBeforeBuying": [
@@ -146,10 +146,10 @@
     }
   ],
   "related": [
-    { "href": "/tax-strategies/for/w2-employees", "label": "Tax strategies for W-2 employees" },
+    { "href": "/compare/wealthability-alternatives", "label": "WealthAbility alternatives" },
+    { "href": "/compare/anderson-platinum-vs-tax-course", "label": "Anderson Platinum vs a tax course" },
     { "href": "/blog/best-tax-strategy-programs-w2-earners-over-250k", "label": "Tax programs for W-2 earners over $250k" },
-    { "href": "/blog/karlton-dennis-vs-mark-kohler-vs-legacy-wealth-blueprint", "label": "Karlton Dennis vs Mark Kohler vs Blueprint" },
-    { "href": "/compare/best-wealth-education-high-earners", "label": "Wealth education paths for high earners" }
+    { "href": "/compare/legacy-wealth-blueprint-cost", "label": "Legacy Wealth Blueprint cost" }
   ],
   "cta": {
     "title": "Keep the preparer",

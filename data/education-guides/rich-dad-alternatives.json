@@ -37,7 +37,7 @@
         },
         {
           "name": "Tax-Free Wealth / WealthAbility",
-          "summary": "Wheelwright's book is the tax companion many Rich Dad readers buy next. [WealthAbility Live](https://www.wealthability.com/wealthability-live/) lists $197 a month. A [Tax-Free Formula digital page](https://www.wealthability.com/new-tax-free-formula/) lists $497 lifetime access. Mentorship pages we opened did not publish a price.",
+          "summary": "Wheelwright's book is the tax companion many Rich Dad readers buy next. [WealthAbility Live](https://www.wealthability.com/wealthability-live/) lists $197 a month. The [Tax-Free Formula](https://www.wealthability.com/new-tax-free-formula/) page we opened on September 15, 2026 did not print a checkout price. Mentorship pages we opened did not publish a price. Map: [WealthAbility alternatives](/compare/wealthability-alternatives).",
           "meta": "Job: tax education from a CPA brand"
         },
         {
@@ -107,7 +107,7 @@
     },
     {
       "name": "WealthAbility Tax-Free Formula digital",
-      "price": "$497 lifetime access on that page",
+      "price": "Not published on the sales page we opened",
       "asOf": "2026-09-15",
       "sourceLabel": "Tax-Free Formula digital program",
       "sourceUrl": "https://www.wealthability.com/new-tax-free-formula/"
@@ -116,8 +116,8 @@
       "name": "Legacy Wealth Blueprint",
       "price": "$9,800 cash or card, as we publish on this site",
       "asOf": "2026-09-15",
-      "sourceLabel": "Best tax strategy programs for W-2 earners",
-      "sourceUrl": "https://www.legacyinvestingshow.com/blog/best-tax-strategy-programs-w2-earners-over-250k"
+      "sourceLabel": "Legacy Wealth Blueprint cost",
+      "sourceUrl": "https://www.legacyinvestingshow.com/compare/legacy-wealth-blueprint-cost"
     }
   ],
   "questionsBeforeBuying": [
@@ -179,7 +179,7 @@
   ],
   "related": [
     { "href": "/compare/biggerpockets-vs-rich-dad", "label": "BiggerPockets vs Rich Dad" },
-    { "href": "/compare/biggerpockets-alternatives", "label": "BiggerPockets alternatives" },
+    { "href": "/compare/wealthability-alternatives", "label": "WealthAbility alternatives" },
     { "href": "/compare/tax-course-vs-cpa", "label": "Tax course vs a CPA" },
     { "href": "/blog/best-tax-strategy-books", "label": "Tax strategy books we have reviewed on the blog" }
   ],

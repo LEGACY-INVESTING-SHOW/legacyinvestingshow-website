@@ -61,7 +61,7 @@ test('education guide data loads with unique metadata and required types', () =>
 
     assert.equal(meta.author, 'Preston Seo');
     assert.match(meta.disclosure, /Legacy Wealth Blueprint/);
-    assert.ok(pages.length >= 8 && pages.length <= 12, `expected 8-12 pages, got ${pages.length}`);
+    assert.ok(pages.length >= 8 && pages.length <= 16, `expected 8-16 pages, got ${pages.length}`);
 
     const types = new Set(pages.map((page) => page.type));
     for (const required of ['alternatives', 'vs', 'best-for', 'review', 'checklist', 'decision']) {
@@ -113,6 +113,10 @@ test('education guide data loads with unique metadata and required types', () =>
     assert.ok(pages.some((page) => page.slug === 'subto-alternatives'));
     assert.ok(pages.some((page) => page.slug === 'best-wealth-education-high-earners'));
     assert.ok(pages.some((page) => page.slug === 'wealth-plan-checklist-high-earners'));
+    assert.ok(pages.some((page) => page.slug === 'money-guy-foo-vs-ramsey-baby-steps'));
+    assert.ok(pages.some((page) => page.slug === 'wealthability-alternatives'));
+    assert.ok(pages.some((page) => page.slug === 'legacy-wealth-blueprint-cost'));
+    assert.ok(pages.some((page) => page.slug === 'anderson-platinum-vs-tax-course'));
 });
 
 test('education guide HTML carries Article schema, not Review schema', () => {
@@ -174,8 +178,11 @@ test('rich text turns markdown links into safe anchors', () => {
 test('persona pages point at matching education compare guides', () => {
     const checks = [
         ['tax-strategies/for/w2-employees.html', '/compare/401k-vs-rental-property'],
+        ['tax-strategies/for/w2-employees.html', '/compare/money-guy-foo-vs-ramsey-baby-steps'],
         ['tax-strategies/for/high-income-earners.html', '/compare/best-wealth-education-high-earners'],
+        ['tax-strategies/for/high-income-earners.html', '/compare/legacy-wealth-blueprint-cost'],
         ['tax-strategies/for/real-estate-investors.html', '/compare/biggerpockets-alternatives'],
+        ['tax-strategies/for/real-estate-investors.html', '/compare/anderson-platinum-vs-tax-course'],
         ['tax-strategies/for/airbnb-hosts.html', '/compare/short-term-rental-vs-long-term-rental'],
     ];
     for (const [rel, href] of checks) {
