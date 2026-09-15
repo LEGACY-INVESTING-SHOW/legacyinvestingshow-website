@@ -72,6 +72,18 @@ function rewriteToolsBrand(html, relativePath) {
             /name="twitter:title" content="Legacy Investing Show"/,
             'name="twitter:title" content="Free calculators | Legacy Investing Show"'
         );
+        next = next.replace(
+            '\\"title\\",\\"0\\",{\\"children\\":\\"Legacy Investing Show\\"}',
+            '\\"title\\",\\"0\\",{\\"children\\":\\"Free calculators | Legacy Investing Show\\"}'
+        );
+        next = next.replace(
+            '\\"og:title\\",\\"content\\":\\"Legacy Investing Show\\"}',
+            '\\"og:title\\",\\"content\\":\\"Free calculators | Legacy Investing Show\\"}'
+        );
+        next = next.replace(
+            '\\"twitter:title\\",\\"content\\":\\"Legacy Investing Show\\"}',
+            '\\"twitter:title\\",\\"content\\":\\"Free calculators | Legacy Investing Show\\"}'
+        );
     }
     return next;
 }

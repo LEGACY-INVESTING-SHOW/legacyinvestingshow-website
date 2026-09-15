@@ -44,7 +44,7 @@ test('restyle is idempotent', () => {
 });
 
 test('catalog home title becomes Free calculators, not a doubled brand', () => {
-    const source = '<title>Legacy Investing Calculators | Legacy Investing Show</title><meta property="og:title" content="Legacy Investing Calculators"/>';
+    const source = '<title>Legacy Investing Calculators | Legacy Investing Show</title><meta property="og:title" content="Legacy Investing Calculators"/><script>self.__next_f.push([1,"15:[[\\"$\\",\\"title\\",\\"0\\",{\\"children\\":\\"Legacy Investing Calculators\\"}]]"])</script>';
     const html = rewriteToolsBrand(source, 'tools/index.html');
     assert.equal(
         html.includes('<title>Free calculators | Legacy Investing Show</title>'),
@@ -52,6 +52,7 @@ test('catalog home title becomes Free calculators, not a doubled brand', () => {
     );
     assert.doesNotMatch(html, /Legacy Investing Show \| Legacy Investing Show/);
     assert.match(html, /og:title" content="Free calculators \| Legacy Investing Show"/);
+    assert.match(html, /children\\":\\"Free calculators \| Legacy Investing Show\\"/);
 });
 
 test('runtime shell script re-injects the shared chrome after hydration', () => {
