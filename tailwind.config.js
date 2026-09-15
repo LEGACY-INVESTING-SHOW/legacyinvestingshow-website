@@ -11,6 +11,7 @@ module.exports = {
     "./tax-strategies/**/*.html",
     "./retirement/**/*.html",
     "./topics/**/*.html",
+    "./tools/**/*.html",
     "./404.html"
   ],
   theme: {
