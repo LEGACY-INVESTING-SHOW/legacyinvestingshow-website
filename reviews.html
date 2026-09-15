@@ -660,23 +660,9 @@
     .rv-aside a:hover { color: var(--forest); text-decoration-color: var(--forest); }
     ::selection { background: var(--gold-tint); color: var(--forest); }
 
-    /* --- the forest opener and its proof strip --------------------------- */
+    /* --- the forest opener --------------------------- */
     .opener--forest { padding-bottom: 3.25rem; }
     .opener--forest .opener__key { color: var(--on-forest); max-width: 52ch; }
-    .rv-proof {
-      list-style: none; margin: 2.5rem 0 0; padding: 0;
-      display: grid; gap: 1.5rem 2rem; grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
-    }
-    .rv-proof > li { padding: 0; border: 0; }
-    .rv-proof__fig {
-      display: block; font-size: clamp(1.375rem, 2.1vw, 1.75rem); line-height: 1.15; font-weight: 600;
-      color: var(--on-forest-strong); font-variant-numeric: tabular-nums; letter-spacing: -0.02em;
-      text-wrap: balance;
-    }
-    .rv-proof__lab {
-      display: block; margin-top: 0.5rem; font-size: 0.875rem; line-height: 1.4;
-      color: var(--gold); max-width: 18ch;
-    }
 
     /* --- the jump band, on paper, under the opener ------------------------ */
     .rv-bar { background: var(--paper); }
@@ -685,15 +671,9 @@
       gap: 0.75rem 2rem; padding: 1.125rem 0 1.25rem; border-bottom: 1px solid var(--line);
     }
     .rv-jump { flex: 1 1 32rem; }
-    .rv-jump .toc { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 1.375rem; margin: 0; max-width: none; }
-    .rv-jump .toc__title {
-      font-size: 0.875rem; text-transform: none; letter-spacing: 0; font-weight: 400;
-      color: var(--ink-soft); margin: 0; cursor: default;
-    }
     .rv-jump__list { display: flex; flex-wrap: wrap; gap: 0.25rem 1.375rem; }
     .rv-jump__list li { padding: 0.25rem 0; }
     .rv-jump__list a { font-size: 0.9375rem; }
-    .rv-jump__n { color: var(--ink-faint); font-variant-numeric: tabular-nums; margin-left: 0.3rem; }
     .rv-find-slot { flex: 0 1 18rem; display: flex; align-items: center; }
     .rv-find { display: flex; align-items: center; gap: 0.5rem; margin: 0; width: 100%; }
     .rv-find__input {
@@ -1015,14 +995,7 @@
             <div class="container-custom">
                 <div class="rv-col">
                     <h1 class="opener__title">Legacy Investing Show reviews and client results</h1>
-                    <p class="opener__key">Preston Seo records these interviews himself, and links the Trustpilot and BBB pages he does not control.</p>
-                    <ul class="rv-proof">
-                        <li><span class="rv-proof__fig">4.2 of 5</span><span class="rv-proof__lab">66 Trustpilot reviews</span></li>
-                        <li><span class="rv-proof__fig">4</span><span class="rv-proof__lab">Legacy Wealth Blueprint interviews</span></li>
-                        <li><span class="rv-proof__fig">44</span><span class="rv-proof__lab">written client results</span></li>
-                        <li><span class="rv-proof__fig">76</span><span class="rv-proof__lab">wealth plan pages</span></li>
-                        <li><span class="rv-proof__fig">Over $20,000</span><span class="rv-proof__lab">saved in year one by Stephanie Dailey</span></li>
-                    </ul>
+                    <p class="opener__key">Rated 4.2 on Trustpilot across 66 reviews. Everything below comes from the clients themselves: their interviews, their posts, and the plans written for them.</p>
                 </div>
             </div>
         </section>
@@ -1031,18 +1004,15 @@
             <div class="container-custom">
                 <div class="rv-col">
                     <div class="rv-bar__inner">
-                        <nav class="rv-jump" aria-labelledby="rv-jump-t">
-                            <details class="toc" open>
-                                <summary class="toc__title" id="rv-jump-t">On this page</summary>
-                                <ul class="toc__list rv-jump__list">
-                                    <li><a href="#case-studies">Client case studies <span class="rv-jump__n">4</span></a></li>
-                                    <li><a href="#written">Written client results <span class="rv-jump__n">44</span></a></li>
-                                    <li><a href="#numbers">Results by the numbers <span class="rv-jump__n">8</span></a></li>
-                                    <li><a href="#trustpilot">Trustpilot reviews <span class="rv-jump__n">58</span></a></li>
-                                    <li><a href="#airbnb">Airbnb client case studies <span class="rv-jump__n">18</span></a></li>
-                                    <li><a href="#wealth-plans">Wealth plan pages <span class="rv-jump__n">76</span></a></li>
-                                </ul>
-                            </details>
+                        <nav class="rv-jump" aria-label="Sections of this page">
+                            <ul class="rv-jump__list">
+                                <li><a href="#case-studies">Client case studies</a></li>
+                                <li><a href="#written">Written client results</a></li>
+                                <li><a href="#numbers">Results by the numbers</a></li>
+                                <li><a href="#trustpilot">Trustpilot reviews</a></li>
+                                <li><a href="#airbnb">Airbnb client case studies</a></li>
+                                <li><a href="#wealth-plans">Wealth plan pages</a></li>
+                            </ul>
                         </nav>
                         <div class="rv-find-slot">
                             <form class="rv-find" id="rv-find" role="search" onsubmit="return false" hidden>

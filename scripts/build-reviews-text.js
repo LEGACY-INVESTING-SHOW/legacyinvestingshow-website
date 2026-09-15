@@ -43,7 +43,7 @@ const PAGE_DESCRIPTION =
     'Preston Seo and Legacy Investing Show reviews: Legacy Wealth Blueprint client case studies, '
     + 'written client results, Trustpilot reviews and wealth plan pages.';
 const OPENER_LINE =
-    'Preston Seo records these interviews himself, and links the Trustpilot and BBB pages he does not control.';
+    'Rated 4.2 on Trustpilot across 66 reviews. Everything below comes from the clients themselves: their interviews, their posts, and the plans written for them.';
 const WRITTEN_INTRO =
     'Posts clients wrote in the Legacy Wealth Blueprint community, with their own names and the month they posted.';
 const AIRBNB_INTRO =
