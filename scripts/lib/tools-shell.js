@@ -8,6 +8,7 @@ const TOOLS_CATEGORIES = [
     { href: '/tools/categories/banking-borrowing', label: 'Banking' },
     { href: '/tools/categories/taxes-payroll', label: 'Taxes' },
     { href: '/tools/categories/housing-moving', label: 'Housing' },
+    { href: '/tools/categories/insurance-protection', label: 'Insurance' },
 ];
 
 const BRIDGE_HREF = '/assets/css/tools-bridge.css';
@@ -124,6 +125,14 @@ function ensureHeadAssets(html) {
     return next;
 }
 
+function replaceToolsSubnav(html, activeHref) {
+    const nextNav = renderToolsSubnav(activeHref);
+    if (/<nav class="tools-subnav"[\s\S]*?<\/nav>/.test(html)) {
+        return html.replace(/<nav class="tools-subnav"[\s\S]*?<\/nav>/, nextNav);
+    }
+    return html;
+}
+
 function ensureChrome(html, activeHref) {
     let next = html;
     if (!next.includes('class="site-header"')) {
@@ -135,6 +144,7 @@ function ensureChrome(html, activeHref) {
             `$1\n    ${renderToolsSubnav(activeHref)}`
         );
     }
+    next = replaceToolsSubnav(next, activeHref);
     if (!next.includes('class="guide-skip"')) {
         next = next.replace(/<body\b[^>]*>/i, (open) => `${open}\n    ${renderSkipLink()}`);
     }
@@ -227,6 +237,21 @@ function renderShellRuntimeScript() {
     while (tmp.firstChild) body.appendChild(tmp.firstChild);
   }
 
+  function syncSubnav() {
+    var path = (window.location.pathname || '').replace(/\\/$/, '') || '/tools';
+    var nav = document.querySelector('.tools-subnav');
+    if (!nav) return;
+    var links = nav.querySelectorAll('a[href]');
+    for (var k = 0; k < links.length; k++) {
+      var href = (links[k].getAttribute('href') || '').replace(/\\/$/, '');
+      var current = href === '/tools'
+        ? path === '/tools'
+        : path === href || path.indexOf(href + '/') === 0;
+      if (current) links[k].setAttribute('aria-current', 'page');
+      else links[k].removeAttribute('aria-current');
+    }
+  }
+
   function ensure() {
     hideCalcs2();
     if (!document.querySelector('.site-header')) insertHtml(HEADER, true);
@@ -235,6 +260,7 @@ function renderShellRuntimeScript() {
     if (main && !main.id) main.id = 'main';
     document.body.classList.add('tools-surface');
     bindMobile();
+    syncSubnav();
   }
 
   ensure();

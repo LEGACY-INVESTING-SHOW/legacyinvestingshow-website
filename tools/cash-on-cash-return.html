@@ -64,11 +64,12 @@
     </header>
   <nav class="tools-subnav" aria-label="Calculator categories">
         <div class="container-custom tools-subnav-inner">
-            <a href="/tools">All</a>
+            <a href="/tools" aria-current="page">All</a>
             <a href="/tools/categories/money">Money</a>
             <a href="/tools/categories/banking-borrowing">Banking</a>
             <a href="/tools/categories/taxes-payroll">Taxes</a>
-            <a href="/tools/categories/housing-moving" aria-current="page">Housing</a>
+            <a href="/tools/categories/housing-moving">Housing</a>
+            <a href="/tools/categories/insurance-protection">Insurance</a>
         </div>
     </nav>
   <main id="main" class="flex-1">
@@ -93,23 +94,23 @@
                 </div>
                 <div class="space-y-1.5">
       <label for="cash-on-cash-return-rent" class="block text-[13px] font-medium text-ink">Gross monthly rent</label>
-      <div class="relative"><span class="pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint">$</span><input id="cash-on-cash-return-rent" name="rent" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="3200" min="0" step="any" /></div>
+      <div class="relative"><span class="tools-affix tools-affix--prefix pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint" aria-hidden="true">$</span><input id="cash-on-cash-return-rent" name="rent" class="tools-control tools-control--prefix w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="3200" min="0" step="any" /></div>
     </div>
 <div class="space-y-1.5">
       <label for="cash-on-cash-return-vacancy" class="block text-[13px] font-medium text-ink">Vacancy / credit loss</label>
-      <div class="relative"><input id="cash-on-cash-return-vacancy" name="vacancy" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3 pr-12" inputmode="decimal" value="6" min="0" step="any" /><span class="pointer-events-none absolute inset-y-0 right-3 flex items-center text-[13px] text-ink-faint">%</span></div>
+      <div class="relative"><input id="cash-on-cash-return-vacancy" name="vacancy" class="tools-control tools-control--suffix w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3 pr-12" inputmode="decimal" value="6" min="0" step="any" /><span class="tools-affix tools-affix--suffix pointer-events-none absolute inset-y-0 right-3 flex items-center text-[13px] text-ink-faint" aria-hidden="true">%</span></div>
     </div>
 <div class="space-y-1.5">
       <label for="cash-on-cash-return-ops" class="block text-[13px] font-medium text-ink">Monthly operating costs</label>
-      <div class="relative"><span class="pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint">$</span><input id="cash-on-cash-return-ops" name="ops" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="900" min="0" step="any" /></div>
+      <div class="relative"><span class="tools-affix tools-affix--prefix pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint" aria-hidden="true">$</span><input id="cash-on-cash-return-ops" name="ops" class="tools-control tools-control--prefix w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="900" min="0" step="any" /></div>
     </div>
 <div class="space-y-1.5">
       <label for="cash-on-cash-return-debt" class="block text-[13px] font-medium text-ink">Monthly debt service</label>
-      <div class="relative"><span class="pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint">$</span><input id="cash-on-cash-return-debt" name="debt" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="1650" min="0" step="any" /></div>
+      <div class="relative"><span class="tools-affix tools-affix--prefix pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint" aria-hidden="true">$</span><input id="cash-on-cash-return-debt" name="debt" class="tools-control tools-control--prefix w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="1650" min="0" step="any" /></div>
     </div>
 <div class="space-y-1.5">
       <label for="cash-on-cash-return-cashIn" class="block text-[13px] font-medium text-ink">Cash invested</label>
-      <div class="relative"><span class="pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint">$</span><input id="cash-on-cash-return-cashIn" name="cashIn" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="90000" min="0" step="any" /></div>
+      <div class="relative"><span class="tools-affix tools-affix--prefix pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint" aria-hidden="true">$</span><input id="cash-on-cash-return-cashIn" name="cashIn" class="tools-control tools-control--prefix w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="90000" min="0" step="any" /></div>
     </div>
               </form>
               <div class="lg:sticky lg:top-20 space-y-4">

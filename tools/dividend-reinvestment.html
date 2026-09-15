@@ -64,11 +64,12 @@
     </header>
   <nav class="tools-subnav" aria-label="Calculator categories">
         <div class="container-custom tools-subnav-inner">
-            <a href="/tools">All</a>
-            <a href="/tools/categories/money" aria-current="page">Money</a>
+            <a href="/tools" aria-current="page">All</a>
+            <a href="/tools/categories/money">Money</a>
             <a href="/tools/categories/banking-borrowing">Banking</a>
             <a href="/tools/categories/taxes-payroll">Taxes</a>
             <a href="/tools/categories/housing-moving">Housing</a>
+            <a href="/tools/categories/insurance-protection">Insurance</a>
         </div>
     </nav>
   <main id="main" class="flex-1">
@@ -93,19 +94,19 @@
                 </div>
                 <div class="space-y-1.5">
       <label for="dividend-reinvestment-principal" class="block text-[13px] font-medium text-ink">Starting principal</label>
-      <div class="relative"><span class="pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint">$</span><input id="dividend-reinvestment-principal" name="principal" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="50000" min="0" step="any" /></div>
+      <div class="relative"><span class="tools-affix tools-affix--prefix pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint" aria-hidden="true">$</span><input id="dividend-reinvestment-principal" name="principal" class="tools-control tools-control--prefix w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="50000" min="0" step="any" /></div>
     </div>
 <div class="space-y-1.5">
       <label for="dividend-reinvestment-yieldPct" class="block text-[13px] font-medium text-ink">Annual yield</label>
-      <div class="relative"><input id="dividend-reinvestment-yieldPct" name="yieldPct" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3 pr-12" inputmode="decimal" value="4" min="0" step="any" /><span class="pointer-events-none absolute inset-y-0 right-3 flex items-center text-[13px] text-ink-faint">%</span></div>
+      <div class="relative"><input id="dividend-reinvestment-yieldPct" name="yieldPct" class="tools-control tools-control--suffix w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3 pr-12" inputmode="decimal" value="4" min="0" step="any" /><span class="tools-affix tools-affix--suffix pointer-events-none absolute inset-y-0 right-3 flex items-center text-[13px] text-ink-faint" aria-hidden="true">%</span></div>
     </div>
 <div class="space-y-1.5">
       <label for="dividend-reinvestment-years" class="block text-[13px] font-medium text-ink">Years</label>
-      <div class="relative"><input id="dividend-reinvestment-years" name="years" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3" inputmode="decimal" value="20" min="0" step="any" /></div>
+      <div class="relative"><input id="dividend-reinvestment-years" name="years" class="tools-control w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3" inputmode="decimal" value="20" min="0" step="any" /></div>
     </div>
 <div class="space-y-1.5">
       <label for="dividend-reinvestment-monthlyAdd" class="block text-[13px] font-medium text-ink">Monthly addition</label>
-      <div class="relative"><span class="pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint">$</span><input id="dividend-reinvestment-monthlyAdd" name="monthlyAdd" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="500" min="0" step="any" /></div>
+      <div class="relative"><span class="tools-affix tools-affix--prefix pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint" aria-hidden="true">$</span><input id="dividend-reinvestment-monthlyAdd" name="monthlyAdd" class="tools-control tools-control--prefix w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="500" min="0" step="any" /></div>
     </div>
               </form>
               <div class="lg:sticky lg:top-20 space-y-4">

@@ -64,11 +64,12 @@
     </header>
   <nav class="tools-subnav" aria-label="Calculator categories">
         <div class="container-custom tools-subnav-inner">
-            <a href="/tools">All</a>
-            <a href="/tools/categories/money" aria-current="page">Money</a>
+            <a href="/tools" aria-current="page">All</a>
+            <a href="/tools/categories/money">Money</a>
             <a href="/tools/categories/banking-borrowing">Banking</a>
             <a href="/tools/categories/taxes-payroll">Taxes</a>
             <a href="/tools/categories/housing-moving">Housing</a>
+            <a href="/tools/categories/insurance-protection">Insurance</a>
         </div>
     </nav>
   <main id="main" class="flex-1">
@@ -93,23 +94,23 @@
                 </div>
                 <div class="space-y-1.5">
       <label for="roth-vs-traditional-contribution" class="block text-[13px] font-medium text-ink">Pretax contribution</label>
-      <div class="relative"><span class="pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint">$</span><input id="roth-vs-traditional-contribution" name="contribution" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="23000" min="0" step="any" /></div>
+      <div class="relative"><span class="tools-affix tools-affix--prefix pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint" aria-hidden="true">$</span><input id="roth-vs-traditional-contribution" name="contribution" class="tools-control tools-control--prefix w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="23000" min="0" step="any" /></div>
     </div>
 <div class="space-y-1.5">
       <label for="roth-vs-traditional-currentRate" class="block text-[13px] font-medium text-ink">Current marginal rate</label>
-      <div class="relative"><input id="roth-vs-traditional-currentRate" name="currentRate" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3 pr-12" inputmode="decimal" value="32" min="0" step="any" /><span class="pointer-events-none absolute inset-y-0 right-3 flex items-center text-[13px] text-ink-faint">%</span></div>
+      <div class="relative"><input id="roth-vs-traditional-currentRate" name="currentRate" class="tools-control tools-control--suffix w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3 pr-12" inputmode="decimal" value="32" min="0" step="any" /><span class="tools-affix tools-affix--suffix pointer-events-none absolute inset-y-0 right-3 flex items-center text-[13px] text-ink-faint" aria-hidden="true">%</span></div>
     </div>
 <div class="space-y-1.5">
       <label for="roth-vs-traditional-retireRate" class="block text-[13px] font-medium text-ink">Retirement marginal rate</label>
-      <div class="relative"><input id="roth-vs-traditional-retireRate" name="retireRate" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3 pr-12" inputmode="decimal" value="22" min="0" step="any" /><span class="pointer-events-none absolute inset-y-0 right-3 flex items-center text-[13px] text-ink-faint">%</span></div>
+      <div class="relative"><input id="roth-vs-traditional-retireRate" name="retireRate" class="tools-control tools-control--suffix w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3 pr-12" inputmode="decimal" value="22" min="0" step="any" /><span class="tools-affix tools-affix--suffix pointer-events-none absolute inset-y-0 right-3 flex items-center text-[13px] text-ink-faint" aria-hidden="true">%</span></div>
     </div>
 <div class="space-y-1.5">
       <label for="roth-vs-traditional-years" class="block text-[13px] font-medium text-ink">Years invested</label>
-      <div class="relative"><input id="roth-vs-traditional-years" name="years" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3" inputmode="decimal" value="25" min="0" step="any" /></div>
+      <div class="relative"><input id="roth-vs-traditional-years" name="years" class="tools-control w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3" inputmode="decimal" value="25" min="0" step="any" /></div>
     </div>
 <div class="space-y-1.5">
       <label for="roth-vs-traditional-growth" class="block text-[13px] font-medium text-ink">Annual growth</label>
-      <div class="relative"><input id="roth-vs-traditional-growth" name="growth" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3 pr-12" inputmode="decimal" value="7" min="0" step="any" /><span class="pointer-events-none absolute inset-y-0 right-3 flex items-center text-[13px] text-ink-faint">%</span></div>
+      <div class="relative"><input id="roth-vs-traditional-growth" name="growth" class="tools-control tools-control--suffix w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3 pr-12" inputmode="decimal" value="7" min="0" step="any" /><span class="tools-affix tools-affix--suffix pointer-events-none absolute inset-y-0 right-3 flex items-center text-[13px] text-ink-faint" aria-hidden="true">%</span></div>
     </div>
               </form>
               <div class="lg:sticky lg:top-20 space-y-4">
