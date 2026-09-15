@@ -128,11 +128,53 @@ function collectFailures() {
             failures.push(`vercel.json is missing the ${required} redirect`);
         }
     }
+
+    const retiredReviewBlogPaths = [
+        '/blog/preston-seo-review',
+        '/blog/legacy-investing-show-review',
+        '/blog/legacy-investing-show-reviews',
+        '/blog/legacy-investing-show-reviews-complaints',
+        '/blog/is-legacy-investing-show-legit',
+        '/blog/faq-review',
+    ];
+    const redirectsBySource = new Map(
+        (vercel.redirects || []).map((rule) => [rule.source, rule])
+    );
+    for (const source of retiredReviewBlogPaths) {
+        const rule = redirectsBySource.get(source);
+        if (!rule || rule.destination !== '/reviews' || rule.permanent !== true) {
+            failures.push(`vercel.json must 301 ${source} to /reviews`);
+        }
+        const htmlPath = path.join(ROOT_DIR, `${source.slice(1)}.html`);
+        if (fs.existsSync(htmlPath)) {
+            failures.push(`${path.relative(ROOT_DIR, htmlPath)} still exists; retired review pages should be deleted`);
+        }
+        const markdownPath = path.join(ROOT_DIR, 'content', 'blog', `${source.replace('/blog/', '')}.md`);
+        if (fs.existsSync(markdownPath)) {
+            failures.push(`${path.relative(ROOT_DIR, markdownPath)} still exists; retired review pages should be deleted`);
+        }
+    }
     const chained = (vercel.redirects || []).filter((rule) => (
         /^\/(renters-insurance|markets)(\/|$)/.test(rule.destination || '')
     ));
     if (chained.length > 0) {
         failures.push('vercel.json still redirects into retired renters-insurance/markets URLs');
+    }
+
+    const seoSurfaces = ['sitemap.xml', 'sitemap-blog.xml', 'sitemap-pages.xml', 'feed.xml', 'llms.txt', 'llms-full.txt'];
+    for (const relative of seoSurfaces) {
+        const filePath = path.join(ROOT_DIR, relative);
+        if (!fs.existsSync(filePath)) {
+            continue;
+        }
+        const content = fs.readFileSync(filePath, 'utf8');
+        for (const source of retiredReviewBlogPaths) {
+            const escaped = source.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            const listed = new RegExp(`https://www\\.legacyinvestingshow\\.com${escaped}(?![\\w-])`);
+            if (listed.test(content)) {
+                failures.push(`${relative} still lists retired ${source}`);
+            }
+        }
     }
 
     return failures;

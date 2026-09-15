@@ -320,9 +320,7 @@ But only if you take action.
 ---
 
 **Related Articles:**
-- [Legacy Investing Show Review: Complete Breakdown](/blog/legacy-investing-show-review)
-- [Legacy Investing Show Reviews: 12 Detailed Case Studies](/blog/legacy-investing-show-reviews)
+- [Client reviews and results](/reviews)
 - [Before and After: Student Transformations](/blog/before-and-after-transformations)
-- [Preston Seo Review: Founder Background](/blog/preston-seo-review)
 
 *Individual results will vary. Success requires execution. These are exceptional results, not guarantees.*
