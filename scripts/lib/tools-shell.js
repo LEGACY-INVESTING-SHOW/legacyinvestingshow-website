@@ -167,6 +167,19 @@ function activeHrefFromRelativePath(relativePath) {
     return '/tools';
 }
 
+function categoryFromBreadcrumb(html) {
+    const block = String(html || '').match(/aria-label="Breadcrumb"[\s\S]{0,1500}/i);
+    if (!block) return null;
+    const href = block[0].match(/href="(\/tools\/categories\/[a-z0-9-]+)"/i);
+    return href ? href[1] : null;
+}
+
+function activeHrefFromDocument(html, relativePath) {
+    const fromPath = activeHrefFromRelativePath(relativePath);
+    if (fromPath !== '/tools') return fromPath;
+    return categoryFromBreadcrumb(html) || fromPath;
+}
+
 /**
  * Wrap a tools HTML document in the shared site shell. Idempotent.
  * @param {string} html
@@ -179,7 +192,7 @@ function restyleToolsHtml(html, relativePath) {
     next = ensureBodyClass(next);
     next = ensureMainId(next);
     next = ensureHeadAssets(next);
-    next = ensureChrome(next, activeHrefFromRelativePath(relativePath));
+    next = ensureChrome(next, activeHrefFromDocument(next, relativePath));
     next = ensureShellScript(next);
     return next;
 }
@@ -241,12 +254,14 @@ function renderShellRuntimeScript() {
     var path = (window.location.pathname || '').replace(/\\/$/, '') || '/tools';
     var nav = document.querySelector('.tools-subnav');
     if (!nav) return;
+    var crumb = document.querySelector('nav[aria-label="Breadcrumb"] a[href^="/tools/categories/"]');
+    var category = crumb ? (crumb.getAttribute('href') || '').replace(/\\/$/, '') : '';
     var links = nav.querySelectorAll('a[href]');
     for (var k = 0; k < links.length; k++) {
       var href = (links[k].getAttribute('href') || '').replace(/\\/$/, '');
       var current = href === '/tools'
         ? path === '/tools'
-        : path === href || path.indexOf(href + '/') === 0;
+        : path === href || path.indexOf(href + '/') === 0 || (category && href === category);
       if (current) links[k].setAttribute('aria-current', 'page');
       else links[k].removeAttribute('aria-current');
     }
@@ -292,4 +307,6 @@ module.exports = {
     renderShellRuntimeScript,
     restyleToolsHtml,
     rewriteToolsBrand,
+    activeHrefFromDocument,
+    categoryFromBreadcrumb,
 };

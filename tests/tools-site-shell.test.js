@@ -95,10 +95,18 @@ test('tools bridge restores left padding so $ prefixes do not cover digits', () 
     assert.doesNotMatch(css, /\.money input[\s\S]{0,80}!important/);
 });
 
+test('restyle marks the tool category current from the breadcrumb', () => {
+    const source = `${FIXTURE.replace('<h1>Mortgage payment</h1>', '<nav aria-label="Breadcrumb"><a href="/tools">All calculators</a><a href="/tools/categories/banking-borrowing">Banking</a></nav><h1>Mortgage payment</h1>')}`;
+    const html = restyleToolsHtml(source, 'tools/mortgage-payment.html');
+    assert.match(html, /aria-current="page">Banking/);
+    assert.doesNotMatch(html, /href="\/tools" aria-current="page">All/);
+});
+
 test('runtime shell script syncs the tools subnav to the current path', () => {
     const script = renderShellRuntimeScript();
     assert.match(script, /function syncSubnav/);
     assert.match(script, /Insurance/);
+    assert.match(script, /aria-label="Breadcrumb"/);
 });
 
 test('operator and tax-structure templates no longer ship calcs2 chrome', () => {

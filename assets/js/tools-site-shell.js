@@ -52,12 +52,14 @@
     var path = (window.location.pathname || '').replace(/\/$/, '') || '/tools';
     var nav = document.querySelector('.tools-subnav');
     if (!nav) return;
+    var crumb = document.querySelector('nav[aria-label="Breadcrumb"] a[href^="/tools/categories/"]');
+    var category = crumb ? (crumb.getAttribute('href') || '').replace(/\/$/, '') : '';
     var links = nav.querySelectorAll('a[href]');
     for (var k = 0; k < links.length; k++) {
       var href = (links[k].getAttribute('href') || '').replace(/\/$/, '');
       var current = href === '/tools'
         ? path === '/tools'
-        : path === href || path.indexOf(href + '/') === 0;
+        : path === href || path.indexOf(href + '/') === 0 || (category && href === category);
       if (current) links[k].setAttribute('aria-current', 'page');
       else links[k].removeAttribute('aria-current');
     }
