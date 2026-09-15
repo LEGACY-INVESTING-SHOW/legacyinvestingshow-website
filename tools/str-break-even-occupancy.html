@@ -69,6 +69,7 @@
             <a href="/tools/categories/banking-borrowing">Banking</a>
             <a href="/tools/categories/taxes-payroll">Taxes</a>
             <a href="/tools/categories/housing-moving" aria-current="page">Housing</a>
+            <a href="/tools/categories/insurance-protection">Insurance</a>
         </div>
     </nav>
   <main id="main" class="flex-1">
@@ -93,15 +94,15 @@
                 </div>
                 <div class="space-y-1.5">
       <label for="str-break-even-occupancy-monthlyCosts" class="block text-[13px] font-medium text-ink">Fixed monthly costs (rent or PITI + ops)</label>
-      <div class="relative"><span class="pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint">$</span><input id="str-break-even-occupancy-monthlyCosts" name="monthlyCosts" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="4200" min="0" step="any" /></div>
+      <div class="relative"><span class="tools-affix tools-affix--prefix pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint" aria-hidden="true">$</span><input id="str-break-even-occupancy-monthlyCosts" name="monthlyCosts" class="tools-control tools-control--prefix w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="4200" min="0" step="any" /></div>
     </div>
 <div class="space-y-1.5">
       <label for="str-break-even-occupancy-adr" class="block text-[13px] font-medium text-ink">Average nightly rate</label>
-      <div class="relative"><span class="pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint">$</span><input id="str-break-even-occupancy-adr" name="adr" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="285" min="0" step="any" /></div>
+      <div class="relative"><span class="tools-affix tools-affix--prefix pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint" aria-hidden="true">$</span><input id="str-break-even-occupancy-adr" name="adr" class="tools-control tools-control--prefix w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="285" min="0" step="any" /></div>
     </div>
 <div class="space-y-1.5">
       <label for="str-break-even-occupancy-feePercent" class="block text-[13px] font-medium text-ink">Platform / merchant fees</label>
-      <div class="relative"><input id="str-break-even-occupancy-feePercent" name="feePercent" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3 pr-12" inputmode="decimal" value="3" min="0" step="any" /><span class="pointer-events-none absolute inset-y-0 right-3 flex items-center text-[13px] text-ink-faint">%</span></div>
+      <div class="relative"><input id="str-break-even-occupancy-feePercent" name="feePercent" class="tools-control tools-control--suffix w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3 pr-12" inputmode="decimal" value="3" min="0" step="any" /><span class="tools-affix tools-affix--suffix pointer-events-none absolute inset-y-0 right-3 flex items-center text-[13px] text-ink-faint" aria-hidden="true">%</span></div>
     </div>
               </form>
               <div class="lg:sticky lg:top-20 space-y-4">

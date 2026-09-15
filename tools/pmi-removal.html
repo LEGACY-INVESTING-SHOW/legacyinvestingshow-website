@@ -69,6 +69,7 @@
             <a href="/tools/categories/banking-borrowing" aria-current="page">Banking</a>
             <a href="/tools/categories/taxes-payroll">Taxes</a>
             <a href="/tools/categories/housing-moving">Housing</a>
+            <a href="/tools/categories/insurance-protection">Insurance</a>
         </div>
     </nav>
   <main id="main" class="flex-1">
@@ -93,27 +94,27 @@
                 </div>
                 <div class="space-y-1.5">
       <label for="pmi-removal-loan" class="block text-[13px] font-medium text-ink">Current loan balance</label>
-      <div class="relative"><span class="pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint">$</span><input id="pmi-removal-loan" name="loan" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="384000" min="0" step="any" /></div>
+      <div class="relative"><span class="tools-affix tools-affix--prefix pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint" aria-hidden="true">$</span><input id="pmi-removal-loan" name="loan" class="tools-control tools-control--prefix w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="384000" min="0" step="any" /></div>
     </div>
 <div class="space-y-1.5">
       <label for="pmi-removal-value" class="block text-[13px] font-medium text-ink">Current home value</label>
-      <div class="relative"><span class="pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint">$</span><input id="pmi-removal-value" name="value" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="420000" min="0" step="any" /></div>
+      <div class="relative"><span class="tools-affix tools-affix--prefix pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint" aria-hidden="true">$</span><input id="pmi-removal-value" name="value" class="tools-control tools-control--prefix w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="420000" min="0" step="any" /></div>
     </div>
 <div class="space-y-1.5">
       <label for="pmi-removal-rate" class="block text-[13px] font-medium text-ink">Interest rate</label>
-      <div class="relative"><input id="pmi-removal-rate" name="rate" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3 pr-12" inputmode="decimal" value="6.5" min="0" step="any" /><span class="pointer-events-none absolute inset-y-0 right-3 flex items-center text-[13px] text-ink-faint">%</span></div>
+      <div class="relative"><input id="pmi-removal-rate" name="rate" class="tools-control tools-control--suffix w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3 pr-12" inputmode="decimal" value="6.5" min="0" step="any" /><span class="tools-affix tools-affix--suffix pointer-events-none absolute inset-y-0 right-3 flex items-center text-[13px] text-ink-faint" aria-hidden="true">%</span></div>
     </div>
 <div class="space-y-1.5">
       <label for="pmi-removal-years" class="block text-[13px] font-medium text-ink">Remaining term</label>
-      <div class="relative"><input id="pmi-removal-years" name="years" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3" inputmode="decimal" value="28" min="0" step="any" /></div>
+      <div class="relative"><input id="pmi-removal-years" name="years" class="tools-control w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3" inputmode="decimal" value="28" min="0" step="any" /></div>
     </div>
 <div class="space-y-1.5">
       <label for="pmi-removal-extra" class="block text-[13px] font-medium text-ink">Extra monthly principal</label>
-      <div class="relative"><span class="pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint">$</span><input id="pmi-removal-extra" name="extra" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="200" min="0" step="any" /></div>
+      <div class="relative"><span class="tools-affix tools-affix--prefix pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint" aria-hidden="true">$</span><input id="pmi-removal-extra" name="extra" class="tools-control tools-control--prefix w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="200" min="0" step="any" /></div>
     </div>
 <div class="space-y-1.5">
       <label for="pmi-removal-pmiMonthly" class="block text-[13px] font-medium text-ink">Monthly PMI</label>
-      <div class="relative"><span class="pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint">$</span><input id="pmi-removal-pmiMonthly" name="pmiMonthly" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="140" min="0" step="any" /></div>
+      <div class="relative"><span class="tools-affix tools-affix--prefix pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint" aria-hidden="true">$</span><input id="pmi-removal-pmiMonthly" name="pmiMonthly" class="tools-control tools-control--prefix w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="140" min="0" step="any" /></div>
     </div>
               </form>
               <div class="lg:sticky lg:top-20 space-y-4">

@@ -69,6 +69,7 @@
             <a href="/tools/categories/banking-borrowing">Banking</a>
             <a href="/tools/categories/taxes-payroll">Taxes</a>
             <a href="/tools/categories/housing-moving" aria-current="page">Housing</a>
+            <a href="/tools/categories/insurance-protection">Insurance</a>
         </div>
     </nav>
   <main id="main" class="flex-1">
@@ -93,19 +94,19 @@
                 </div>
                 <div class="space-y-1.5">
       <label for="dscr-noi" class="block text-[13px] font-medium text-ink">Annual NOI</label>
-      <div class="relative"><span class="pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint">$</span><input id="dscr-noi" name="noi" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="36000" min="0" step="any" /></div>
+      <div class="relative"><span class="tools-affix tools-affix--prefix pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint" aria-hidden="true">$</span><input id="dscr-noi" name="noi" class="tools-control tools-control--prefix w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="36000" min="0" step="any" /></div>
     </div>
 <div class="space-y-1.5">
       <label for="dscr-loan" class="block text-[13px] font-medium text-ink">Loan amount</label>
-      <div class="relative"><span class="pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint">$</span><input id="dscr-loan" name="loan" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="320000" min="0" step="any" /></div>
+      <div class="relative"><span class="tools-affix tools-affix--prefix pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint" aria-hidden="true">$</span><input id="dscr-loan" name="loan" class="tools-control tools-control--prefix w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="320000" min="0" step="any" /></div>
     </div>
 <div class="space-y-1.5">
       <label for="dscr-rate" class="block text-[13px] font-medium text-ink">Interest rate</label>
-      <div class="relative"><input id="dscr-rate" name="rate" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3 pr-12" inputmode="decimal" value="6.75" min="0" step="any" /><span class="pointer-events-none absolute inset-y-0 right-3 flex items-center text-[13px] text-ink-faint">%</span></div>
+      <div class="relative"><input id="dscr-rate" name="rate" class="tools-control tools-control--suffix w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3 pr-12" inputmode="decimal" value="6.75" min="0" step="any" /><span class="tools-affix tools-affix--suffix pointer-events-none absolute inset-y-0 right-3 flex items-center text-[13px] text-ink-faint" aria-hidden="true">%</span></div>
     </div>
 <div class="space-y-1.5">
       <label for="dscr-years" class="block text-[13px] font-medium text-ink">Amortizing term</label>
-      <div class="relative"><input id="dscr-years" name="years" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3" inputmode="decimal" value="30" min="0" step="any" /></div>
+      <div class="relative"><input id="dscr-years" name="years" class="tools-control w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3" inputmode="decimal" value="30" min="0" step="any" /></div>
     </div>
               </form>
               <div class="lg:sticky lg:top-20 space-y-4">

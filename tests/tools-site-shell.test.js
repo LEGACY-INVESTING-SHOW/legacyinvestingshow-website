@@ -70,8 +70,43 @@ test('tools chrome includes the site nav, not a Show escape hatch', () => {
     assert.match(chrome, /site-brand">Legacy Investing Show/);
     assert.match(chrome, /nav-link-active">Tools/);
     assert.match(chrome, /aria-current="page">Housing/);
+    assert.match(chrome, /href="\/tools\/categories\/insurance-protection">Insurance/);
     assert.doesNotMatch(chrome, />Show</);
     assert.doesNotMatch(chrome, /target="_blank"/);
+});
+
+test('restyle refreshes an existing tools subnav with current categories', () => {
+    const stale = restyleToolsHtml(FIXTURE, 'tools/categories/housing-moving.html')
+        .replace(/<nav class="tools-subnav"[\s\S]*?<\/nav>/, '<nav class="tools-subnav"><a href="/tools">All</a></nav>');
+    const html = restyleToolsHtml(stale, 'tools/categories/housing-moving.html');
+    assert.match(html, /aria-current="page">Housing/);
+    assert.match(html, />Insurance<\/a>/);
+    assert.equal(html.split('class="tools-subnav"').length - 1, 1);
+});
+
+test('tools bridge restores left padding so $ prefixes do not cover digits', () => {
+    const css = fs.readFileSync(path.join(ROOT, 'assets/css/tools-bridge.css'), 'utf8');
+    assert.match(css, /input\.pl-7/);
+    assert.match(css, /:has\(> \.left-3\)/);
+    assert.match(css, /padding-left:\s*1\.75rem/);
+    assert.match(css, /tools-control--prefix/);
+    assert.match(css, /input\.pr-12/);
+    assert.match(css, /padding-right:\s*3rem/);
+    assert.doesNotMatch(css, /\.money input[\s\S]{0,80}!important/);
+});
+
+test('restyle marks the tool category current from the breadcrumb', () => {
+    const source = `${FIXTURE.replace('<h1>Mortgage payment</h1>', '<nav aria-label="Breadcrumb"><a href="/tools">All calculators</a><a href="/tools/categories/banking-borrowing">Banking</a></nav><h1>Mortgage payment</h1>')}`;
+    const html = restyleToolsHtml(source, 'tools/mortgage-payment.html');
+    assert.match(html, /aria-current="page">Banking/);
+    assert.doesNotMatch(html, /href="\/tools" aria-current="page">All/);
+});
+
+test('runtime shell script syncs the tools subnav to the current path', () => {
+    const script = renderShellRuntimeScript();
+    assert.match(script, /function syncSubnav/);
+    assert.match(script, /Insurance/);
+    assert.match(script, /aria-label="Breadcrumb"/);
 });
 
 test('operator and tax-structure templates no longer ship calcs2 chrome', () => {

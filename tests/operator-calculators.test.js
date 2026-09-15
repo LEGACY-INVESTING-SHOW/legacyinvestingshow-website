@@ -148,6 +148,13 @@ test('generated operator pages exist with canonical URLs, a form, and live resul
         assert.ok(html.includes('class="site-header"'), tool.slug);
         assert.ok(html.includes('class="site-footer"'), tool.slug);
         assert.ok(html.includes('/assets/css/tools-bridge.css'), tool.slug);
+        if (tool.inputs.some((input) => input.type === 'currency')) {
+            assert.ok(html.includes('tools-control--prefix'), `${tool.slug} currency field`);
+            assert.ok(html.includes('tools-affix--prefix'), `${tool.slug} currency affix`);
+        }
+        if (tool.inputs.some((input) => input.type === 'percent')) {
+            assert.ok(html.includes('tools-control--suffix'), `${tool.slug} percent field`);
+        }
         assert.ok(html.includes('Legacy Investing Show'));
         assert.ok(!html.includes('Legacy Investing Calculators'));
         assert.ok(!html.includes('Visit the show'));
