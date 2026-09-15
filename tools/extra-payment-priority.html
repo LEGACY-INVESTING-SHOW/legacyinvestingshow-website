@@ -64,11 +64,12 @@
     </header>
   <nav class="tools-subnav" aria-label="Calculator categories">
         <div class="container-custom tools-subnav-inner">
-            <a href="/tools">All</a>
+            <a href="/tools" aria-current="page">All</a>
             <a href="/tools/categories/money">Money</a>
-            <a href="/tools/categories/banking-borrowing" aria-current="page">Banking</a>
+            <a href="/tools/categories/banking-borrowing">Banking</a>
             <a href="/tools/categories/taxes-payroll">Taxes</a>
             <a href="/tools/categories/housing-moving">Housing</a>
+            <a href="/tools/categories/insurance-protection">Insurance</a>
         </div>
     </nav>
   <main id="main" class="flex-1">
@@ -93,31 +94,31 @@
                 </div>
                 <div class="space-y-1.5">
       <label for="extra-payment-priority-mortgageBalance" class="block text-[13px] font-medium text-ink">Mortgage balance</label>
-      <div class="relative"><span class="pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint">$</span><input id="extra-payment-priority-mortgageBalance" name="mortgageBalance" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="320000" min="0" step="any" /></div>
+      <div class="relative"><span class="tools-affix tools-affix--prefix pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint" aria-hidden="true">$</span><input id="extra-payment-priority-mortgageBalance" name="mortgageBalance" class="tools-control tools-control--prefix w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="320000" min="0" step="any" /></div>
     </div>
 <div class="space-y-1.5">
       <label for="extra-payment-priority-mortgageRate" class="block text-[13px] font-medium text-ink">Mortgage rate</label>
-      <div class="relative"><input id="extra-payment-priority-mortgageRate" name="mortgageRate" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3 pr-12" inputmode="decimal" value="6.25" min="0" step="any" /><span class="pointer-events-none absolute inset-y-0 right-3 flex items-center text-[13px] text-ink-faint">%</span></div>
+      <div class="relative"><input id="extra-payment-priority-mortgageRate" name="mortgageRate" class="tools-control tools-control--suffix w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3 pr-12" inputmode="decimal" value="6.25" min="0" step="any" /><span class="tools-affix tools-affix--suffix pointer-events-none absolute inset-y-0 right-3 flex items-center text-[13px] text-ink-faint" aria-hidden="true">%</span></div>
     </div>
 <div class="space-y-1.5">
       <label for="extra-payment-priority-mortgageYears" class="block text-[13px] font-medium text-ink">Mortgage remaining years</label>
-      <div class="relative"><input id="extra-payment-priority-mortgageYears" name="mortgageYears" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3" inputmode="decimal" value="27" min="0" step="any" /></div>
+      <div class="relative"><input id="extra-payment-priority-mortgageYears" name="mortgageYears" class="tools-control w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3" inputmode="decimal" value="27" min="0" step="any" /></div>
     </div>
 <div class="space-y-1.5">
       <label for="extra-payment-priority-consumerBalance" class="block text-[13px] font-medium text-ink">Consumer / card balance</label>
-      <div class="relative"><span class="pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint">$</span><input id="extra-payment-priority-consumerBalance" name="consumerBalance" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="14000" min="0" step="any" /></div>
+      <div class="relative"><span class="tools-affix tools-affix--prefix pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint" aria-hidden="true">$</span><input id="extra-payment-priority-consumerBalance" name="consumerBalance" class="tools-control tools-control--prefix w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="14000" min="0" step="any" /></div>
     </div>
 <div class="space-y-1.5">
       <label for="extra-payment-priority-consumerRate" class="block text-[13px] font-medium text-ink">Consumer rate</label>
-      <div class="relative"><input id="extra-payment-priority-consumerRate" name="consumerRate" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3 pr-12" inputmode="decimal" value="21" min="0" step="any" /><span class="pointer-events-none absolute inset-y-0 right-3 flex items-center text-[13px] text-ink-faint">%</span></div>
+      <div class="relative"><input id="extra-payment-priority-consumerRate" name="consumerRate" class="tools-control tools-control--suffix w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3 pr-12" inputmode="decimal" value="21" min="0" step="any" /><span class="tools-affix tools-affix--suffix pointer-events-none absolute inset-y-0 right-3 flex items-center text-[13px] text-ink-faint" aria-hidden="true">%</span></div>
     </div>
 <div class="space-y-1.5">
       <label for="extra-payment-priority-consumerYears" class="block text-[13px] font-medium text-ink">Consumer remaining years</label>
-      <div class="relative"><input id="extra-payment-priority-consumerYears" name="consumerYears" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3" inputmode="decimal" value="4" min="0" step="any" /></div>
+      <div class="relative"><input id="extra-payment-priority-consumerYears" name="consumerYears" class="tools-control w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line px-3" inputmode="decimal" value="4" min="0" step="any" /></div>
     </div>
 <div class="space-y-1.5">
       <label for="extra-payment-priority-extra" class="block text-[13px] font-medium text-ink">Extra monthly payment</label>
-      <div class="relative"><span class="pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint">$</span><input id="extra-payment-priority-extra" name="extra" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="400" min="0" step="any" /></div>
+      <div class="relative"><span class="tools-affix tools-affix--prefix pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint" aria-hidden="true">$</span><input id="extra-payment-priority-extra" name="extra" class="tools-control tools-control--prefix w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line pl-7 pr-3" inputmode="decimal" value="400" min="0" step="any" /></div>
     </div>
               </form>
               <div class="lg:sticky lg:top-20 space-y-4">

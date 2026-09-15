@@ -40,15 +40,16 @@ function fieldHtml(tool, input) {
     const min = input.min !== undefined ? input.min : 0;
     const step = input.step !== undefined ? input.step : (isPercent || isCurrency ? 'any' : 'any');
     const prefix = isCurrency
-        ? '<span class="pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint">$</span>'
+        ? '<span class="tools-affix tools-affix--prefix pointer-events-none absolute inset-y-0 left-3 flex items-center text-[13px] text-ink-faint" aria-hidden="true">$</span>'
         : '';
     const suffix = isPercent
-        ? '<span class="pointer-events-none absolute inset-y-0 right-3 flex items-center text-[13px] text-ink-faint">%</span>'
+        ? '<span class="tools-affix tools-affix--suffix pointer-events-none absolute inset-y-0 right-3 flex items-center text-[13px] text-ink-faint" aria-hidden="true">%</span>'
         : '';
     const pad = isCurrency ? 'pl-7 pr-3' : (isPercent ? 'px-3 pr-12' : 'px-3');
+    const kind = isCurrency ? ' tools-control--prefix' : (isPercent ? ' tools-control--suffix' : '');
     return `<div class="space-y-1.5">
       <label for="${escapeHtml(id)}" class="block text-[13px] font-medium text-ink">${escapeHtml(input.label)}</label>
-      <div class="relative">${prefix}<input id="${escapeHtml(id)}" name="${escapeHtml(input.id)}" class="w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line ${pad}" inputmode="decimal" value="${escapeHtml(input.default)}" min="${min}" step="${step}" />${suffix}</div>
+      <div class="relative">${prefix}<input id="${escapeHtml(id)}" name="${escapeHtml(input.id)}" class="tools-control${kind} w-full rounded-[6px] border bg-paper-raised py-2.5 text-[15px] tabular text-ink placeholder:text-ink-faint border-line ${pad}" inputmode="decimal" value="${escapeHtml(input.default)}" min="${min}" step="${step}" />${suffix}</div>
     </div>`;
 }
 
