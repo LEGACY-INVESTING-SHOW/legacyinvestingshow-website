@@ -1,0 +1,116 @@
+/* ============================================================
+   Tools bridge — map the imported calculator UI onto the
+   Legacy Investing Show field guide without changing the
+   compact form + live-result layout.
+
+   Load after /assets/css/styles.css and the calcs2 stylesheet.
+   ============================================================ */
+
+:root {
+    --ink: #1f2a24;
+    --ink-muted: #4a5850;
+    --ink-faint: #626e66;
+    --paper: #fbf8f1;
+    --paper-raised: #fbf8f1;
+    --line: #ddd4be;
+    --accent: #16352a;
+    --accent-hover: #0f2419;
+    --accent-soft: #e4efe5;
+    --danger: #b0503c;
+    --danger-soft: #f6e4dd;
+    --font-inter: 'Public Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --font-sans: 'Public Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+html,
+body,
+.font-sans,
+[class*='inter_'] {
+    font-family: var(--font-sans) !important;
+}
+
+body.tools-surface {
+    background: var(--paper);
+    color: var(--ink);
+}
+
+body.tools-surface main h1 {
+    color: var(--forest);
+}
+
+body.tools-surface main h1,
+body.tools-surface main h2,
+body.tools-surface main h3,
+body.tools-surface main h4 {
+    margin-top: 0;
+}
+
+body.tools-surface main h2::after {
+    content: none !important;
+    display: none !important;
+}
+
+body.tools-surface main p {
+    margin-bottom: 0;
+}
+
+body.tools-surface > header:not(.site-header),
+body.tools-surface header.sticky.top-0.z-40:not(.site-header) {
+    display: none !important;
+}
+
+body.tools-surface > footer:not(.site-footer),
+body.tools-surface footer.mt-auto.border-t:not(.site-footer) {
+    display: none !important;
+}
+
+.guide-skip {
+    position: absolute;
+    left: 50%;
+    top: -100%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    padding: 0.875rem 1.75rem;
+    border-radius: 999px;
+    background: var(--forest);
+    color: var(--paper);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.guide-skip:focus {
+    top: 0.75rem;
+    color: var(--paper);
+}
+
+.tools-subnav {
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
+}
+
+.tools-subnav-inner {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    min-height: 2.75rem;
+    overflow-x: auto;
+}
+
+.tools-subnav a {
+    flex: 0 0 auto;
+    padding: 0.5rem 0;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--ink-soft);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.tools-subnav a:hover,
+.tools-subnav a[aria-current='page'] {
+    color: var(--emerald);
+}
+
+body.tools-surface .site-footer {
+    margin-top: auto;
+}

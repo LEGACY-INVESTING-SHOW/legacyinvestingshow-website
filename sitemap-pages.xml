@@ -343,7 +343,11 @@
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tools</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.legacyinvestingshow.com/tools/1031-exchange-deferred-gain</loc>
+    <lastmod>2026-09-15</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tools/airbnb-arbitrage-roi</loc>
@@ -358,32 +362,56 @@
     <lastmod>2026-09-13</lastmod>
   </url>
   <url>
+    <loc>https://www.legacyinvestingshow.com/tools/bonus-depreciation-estimate</loc>
+    <lastmod>2026-09-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.legacyinvestingshow.com/tools/brrrr-analysis</loc>
+    <lastmod>2026-09-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.legacyinvestingshow.com/tools/cap-rate</loc>
+    <lastmod>2026-09-15</lastmod>
+  </url>
+  <url>
     <loc>https://www.legacyinvestingshow.com/tools/capital-gains-tax-estimate</loc>
     <lastmod>2026-09-13</lastmod>
   </url>
   <url>
+    <loc>https://www.legacyinvestingshow.com/tools/cash-on-cash-return</loc>
+    <lastmod>2026-09-15</lastmod>
+  </url>
+  <url>
     <loc>https://www.legacyinvestingshow.com/tools/categories/banking-borrowing</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-15</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tools/categories/housing-moving</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-15</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tools/categories/money</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-15</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tools/categories/taxes-payroll</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-15</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tools/compound-savings-growth</loc>
     <lastmod>2026-09-13</lastmod>
   </url>
   <url>
+    <loc>https://www.legacyinvestingshow.com/tools/cost-segregation-savings</loc>
+    <lastmod>2026-09-15</lastmod>
+  </url>
+  <url>
     <loc>https://www.legacyinvestingshow.com/tools/credit-card-payoff</loc>
     <lastmod>2026-09-13</lastmod>
+  </url>
+  <url>
+    <loc>https://www.legacyinvestingshow.com/tools/credit-utilization</loc>
+    <lastmod>2026-09-15</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tools/debt-consolidation-comparison</loc>
@@ -398,6 +426,18 @@
     <lastmod>2026-09-13</lastmod>
   </url>
   <url>
+    <loc>https://www.legacyinvestingshow.com/tools/depreciation-recapture</loc>
+    <lastmod>2026-09-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.legacyinvestingshow.com/tools/dividend-reinvestment</loc>
+    <lastmod>2026-09-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.legacyinvestingshow.com/tools/dscr</loc>
+    <lastmod>2026-09-15</lastmod>
+  </url>
+  <url>
     <loc>https://www.legacyinvestingshow.com/tools/early-loan-payoff</loc>
     <lastmod>2026-09-13</lastmod>
   </url>
@@ -410,12 +450,28 @@
     <lastmod>2026-09-13</lastmod>
   </url>
   <url>
+    <loc>https://www.legacyinvestingshow.com/tools/extra-payment-priority</loc>
+    <lastmod>2026-09-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.legacyinvestingshow.com/tools/fire-number</loc>
+    <lastmod>2026-09-15</lastmod>
+  </url>
+  <url>
     <loc>https://www.legacyinvestingshow.com/tools/fixed-term-deposit-growth</loc>
     <lastmod>2026-09-13</lastmod>
   </url>
   <url>
+    <loc>https://www.legacyinvestingshow.com/tools/four-percent-rule</loc>
+    <lastmod>2026-09-15</lastmod>
+  </url>
+  <url>
     <loc>https://www.legacyinvestingshow.com/tools/gross-to-net-pay-estimate</loc>
     <lastmod>2026-09-13</lastmod>
+  </url>
+  <url>
+    <loc>https://www.legacyinvestingshow.com/tools/heloc-payment</loc>
+    <lastmod>2026-09-15</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tools/home-equity-estimate</loc>
@@ -432,6 +488,10 @@
   <url>
     <loc>https://www.legacyinvestingshow.com/tools/home-purchase-cash-to-close</loc>
     <lastmod>2026-09-13</lastmod>
+  </url>
+  <url>
+    <loc>https://www.legacyinvestingshow.com/tools/house-hack-cash-flow</loc>
+    <lastmod>2026-09-15</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tools/hsa-setup-checklist</loc>
@@ -472,6 +532,10 @@
   <url>
     <loc>https://www.legacyinvestingshow.com/tools/marginal-vs-effective-tax-rate</loc>
     <lastmod>2026-09-13</lastmod>
+  </url>
+  <url>
+    <loc>https://www.legacyinvestingshow.com/tools/midterm-vs-str</loc>
+    <lastmod>2026-09-15</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tools/mileage-reimbursement</loc>
@@ -530,6 +594,18 @@
     <lastmod>2026-09-13</lastmod>
   </url>
   <url>
+    <loc>https://www.legacyinvestingshow.com/tools/pmi-removal</loc>
+    <lastmod>2026-09-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.legacyinvestingshow.com/tools/qbi-deduction-estimate</loc>
+    <lastmod>2026-09-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.legacyinvestingshow.com/tools/quarterly-estimated-tax</loc>
+    <lastmod>2026-09-15</lastmod>
+  </url>
+  <url>
     <loc>https://www.legacyinvestingshow.com/tools/raise-or-pay-cut-impact</loc>
     <lastmod>2026-09-13</lastmod>
   </url>
@@ -566,6 +642,14 @@
     <lastmod>2026-09-13</lastmod>
   </url>
   <url>
+    <loc>https://www.legacyinvestingshow.com/tools/roth-vs-traditional</loc>
+    <lastmod>2026-09-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.legacyinvestingshow.com/tools/rule-of-72</loc>
+    <lastmod>2026-09-15</lastmod>
+  </url>
+  <url>
     <loc>https://www.legacyinvestingshow.com/tools/savings-bonus-break-even</loc>
     <lastmod>2026-09-13</lastmod>
   </url>
@@ -574,12 +658,28 @@
     <lastmod>2026-09-13</lastmod>
   </url>
   <url>
+    <loc>https://www.legacyinvestingshow.com/tools/scorp-vs-sole-prop</loc>
+    <lastmod>2026-09-15</lastmod>
+  </url>
+  <url>
     <loc>https://www.legacyinvestingshow.com/tools/self-employment-tax-reserve</loc>
     <lastmod>2026-09-13</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tools/sinking-fund-contribution</loc>
     <lastmod>2026-09-13</lastmod>
+  </url>
+  <url>
+    <loc>https://www.legacyinvestingshow.com/tools/str-adr-needed</loc>
+    <lastmod>2026-09-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.legacyinvestingshow.com/tools/str-break-even-occupancy</loc>
+    <lastmod>2026-09-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.legacyinvestingshow.com/tools/str-cleaning-turnover-cost</loc>
+    <lastmod>2026-09-15</lastmod>
   </url>
   <url>
     <loc>https://www.legacyinvestingshow.com/tools/str-purchase-analysis</loc>
