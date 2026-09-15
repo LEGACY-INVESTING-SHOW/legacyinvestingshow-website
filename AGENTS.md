@@ -40,9 +40,21 @@ npm run build:css        # Minify Tailwind CSS (NODE_ENV=production)
 npm run build:blog       # Generate blog HTML from markdown in content/blog/
 npm run build:tax-strategies  # Generate tax strategy pages from data
 npm run build:sitemap    # Generate sitemap.xml
+npm run build:video-sitemap  # Generate sitemap-video.xml from data/reviews-videos.json
+npm run build:reviews-schema # Write the /reviews JSON-LD graph into reviews.html
+npm run build:reviews-text   # Write llms/reviews.txt, the plain-text mirror of /reviews
 npm run build:rss        # Generate RSS feed (feed.xml)
 npm run build:images     # Optimize images with Sharp
 ```
+
+**The /reviews proof layer.** `data/reviews-videos.json` holds one record per published client interview
+(19: 4 Vimeo, 15 YouTube) and is the single source for the `VideoObject` nodes in `reviews.html`,
+`sitemap-video.xml`, `llms/reviews.txt` and the client results block in `llms-full.txt`. Durations and upload
+dates are emitted only where the repo holds a real value, never derived from a blog post date, and
+`transcript` stays `null` until a verbatim transcript exists, so the page says "Summary" and the schema omits
+the property. `scripts/fetch-video-metadata.js` is the one-off that fills the missing `durationSeconds` and
+`uploadDate` values from the YouTube Data API (needs `YOUTUBE_API_KEY`) and the Vimeo oEmbed endpoint; it
+needs network access, it fills null fields only, and after it runs the three builders above must be run again.
 
 **Important Notes:**
 - There is no formal test suite. Test changes manually by running `npm run start` and visiting `http://localhost:3000`
