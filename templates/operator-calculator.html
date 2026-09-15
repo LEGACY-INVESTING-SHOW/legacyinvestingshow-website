@@ -13,15 +13,16 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{CANONICAL}}">
   <meta property="og:image" content="https://www.legacyinvestingshow.com/assets/images/og-blog.jpg">
-  <meta property="og:site_name" content="Legacy Investing Calculators">
+  <meta property="og:site_name" content="Legacy Investing Show">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{OG_TITLE}}">
   <meta name="twitter:description" content="{{DESCRIPTION}}">
   <meta name="twitter:image" content="https://www.legacyinvestingshow.com/assets/images/og-blog.jpg">
   <meta name="twitter:site" content="@thelegacyshow">
   <link rel="icon" href="/favicon.ico" sizes="256x256" type="image/x-icon">
-  <link rel="preload" href="{{FONT_HREF}}" as="font" crossorigin="" type="font/woff2">
+  {{HEAD_ASSETS}}
   <link rel="stylesheet" href="{{CSS_HREF}}">
+  <link rel="stylesheet" href="/assets/css/tools-bridge.css">
   <script type="application/ld+json">{{SCHEMA}}</script>
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
@@ -32,22 +33,12 @@
     gtag('config', 'G-2578PT1WSS');
   </script>
 </head>
-<body class="flex min-h-full flex-col font-sans">
+<body class="flex min-h-full flex-col font-sans tools-surface">
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <header class="sticky top-0 z-40 border-b border-line bg-paper-raised/95 backdrop-blur-sm">
-    <div class="mx-auto flex max-w-5xl items-center justify-between gap-4 px-5 py-3">
-      <a class="min-w-0" href="/tools"><span class="block truncate text-[15px] font-semibold tracking-tight text-ink">Legacy Investing Calculators</span></a>
-      <nav aria-label="Primary" class="hidden items-center gap-0.5 md:flex">
-        <a class="rounded-[6px] px-2.5 py-1.5 text-[13px] text-ink-muted hover:bg-accent-soft hover:text-ink" href="/tools/categories/money">Money</a>
-        <a class="rounded-[6px] px-2.5 py-1.5 text-[13px] text-ink-muted hover:bg-accent-soft hover:text-ink" href="/tools/categories/banking-borrowing">Banking</a>
-        <a class="rounded-[6px] px-2.5 py-1.5 text-[13px] text-ink-muted hover:bg-accent-soft hover:text-ink" href="/tools/categories/taxes-payroll">Taxes</a>
-        <a class="rounded-[6px] px-2.5 py-1.5 text-[13px] text-ink-muted hover:bg-accent-soft hover:text-ink" href="/tools/categories/housing-moving">Housing</a>
-        <a href="https://www.legacyinvestingshow.com" target="_blank" rel="noopener noreferrer" class="ml-2 rounded-[6px] bg-accent px-3 py-1.5 text-[13px] font-medium text-paper-raised hover:bg-accent-hover">Show</a>
-      </nav>
-      <a href="https://www.legacyinvestingshow.com" target="_blank" rel="noopener noreferrer" class="rounded-[6px] bg-accent px-3 py-1.5 text-[13px] font-medium text-paper-raised hover:bg-accent-hover md:hidden">Show</a>
-    </div>
-  </header>
-  <main class="flex-1">
+  {{SITE_SKIP}}
+  {{SITE_HEADER}}
+  {{TOOLS_SUBNAV}}
+  <main id="main" class="flex-1">
     <div class="mx-auto max-w-5xl px-5 py-8 sm:py-12">
       <nav aria-label="Breadcrumb" class="text-[13px] text-ink-faint">
         <a class="rounded-[4px] hover:text-ink-muted" href="/tools">All calculators</a>
@@ -124,20 +115,10 @@
       </div>
     </div>
   </main>
-  <footer class="mt-auto border-t border-line">
-    <div class="mx-auto max-w-5xl px-5 py-10">
-      <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-        <div class="max-w-xl">
-          <p class="text-[13px] font-medium text-ink">From Legacy Investing Show</p>
-          <p class="mt-1 text-[14px] text-ink-muted">Educational estimates with visible assumptions. Continue with the show when you want the bigger picture.</p>
-        </div>
-        <a href="https://www.legacyinvestingshow.com" target="_blank" rel="noopener noreferrer" class="inline-flex shrink-0 rounded-[6px] bg-accent px-4 py-2.5 text-[14px] font-medium text-paper-raised hover:bg-accent-hover">Visit the show</a>
-      </div>
-      <p class="mt-8 text-[12px] text-ink-faint">© 2026 Legacy Investing Calculators. Not financial advice.</p>
-    </div>
-  </footer>
+  {{SITE_FOOTER}}
   <script type="application/json" id="operator-spec">{{SPEC_JSON}}</script>
   <script src="/assets/js/operator-calculator-models.js"></script>
   <script src="/assets/js/operator-calculator.js"></script>
+  <script src="/assets/js/tools-site-shell.js" defer></script>
 </body>
 </html>

@@ -9,6 +9,8 @@
 const fs = require('fs');
 const path = require('path');
 const models = require('../assets/js/operator-calculator-models');
+const { renderSiteHeader, renderSiteFooter } = require('./lib/site-shell');
+const { renderSkipLink, renderToolsHeadLinks, renderToolsSubnav } = require('./lib/tools-shell');
 
 const ROOT_DIR = path.join(__dirname, '..');
 const TOOLS_DIR = path.join(ROOT_DIR, 'tools');
@@ -147,8 +149,8 @@ function renderPage(tool, template, categories, assets) {
     const result = models.compute(tool.slug, defaults);
     const category = categories[tool.category];
     const replacements = {
-        TITLE: `${tool.title} calculator · Legacy Investing Calculators`,
-        OG_TITLE: `${tool.title} calculator · Legacy Investing Calculators`,
+        TITLE: `${tool.title} calculator | Legacy Investing Show`,
+        OG_TITLE: `${tool.title} calculator | Legacy Investing Show`,
         DESCRIPTION: tool.description,
         KEYWORDS: escapeHtml(`${tool.title}, ${category.name}, calculator, Legacy Investing Show`),
         CANONICAL: `${SITE_URL}/tools/${tool.slug}`,
@@ -157,7 +159,11 @@ function renderPage(tool, template, categories, assets) {
         CATEGORY_HREF: `/tools/categories/${tool.category}`,
         CATEGORY_NAME: category.name,
         CSS_HREF: assets.css,
-        FONT_HREF: assets.font,
+        HEAD_ASSETS: renderToolsHeadLinks(),
+        SITE_HEADER: renderSiteHeader('/tools'),
+        SITE_SKIP: renderSkipLink(),
+        TOOLS_SUBNAV: renderToolsSubnav(`/tools/categories/${tool.category}`),
+        SITE_FOOTER: renderSiteFooter(),
         SCHEMA: JSON.stringify(schemaJson(tool, category)).replace(/</g, '\\u003c'),
         FORM_FIELDS: tool.inputs.map((input) => fieldHtml(tool, input)).join('\n'),
         RESULT_HTML: resultHtml(result),

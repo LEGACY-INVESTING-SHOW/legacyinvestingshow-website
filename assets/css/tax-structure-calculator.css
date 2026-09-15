@@ -1,16 +1,16 @@
-/* Tax Structure Calculator. One chart on top, a statement ledger below. Cream paper, navy ink. */
+/* Tax Structure Calculator. One chart on top, a statement ledger below. */
 :root {
-    --ink: #0f172a;
-    --soft: #475569;
-    --mute: #64748b;
-    --paper: #faf7f2;
-    --rule: #d9d3c7;
-    --hair: #e8e4dc;
-    --track: #ece7dd;
-    --green: #0f5132;
-    --red: #b8341f;
-    --serif: 'DM Serif Display', Georgia, 'Times New Roman', serif;
-    --sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --ink: #1f2a24;
+    --soft: #4a5850;
+    --mute: #626e66;
+    --paper: #fbf8f1;
+    --rule: #ddd4be;
+    --hair: #ebe4d4;
+    --track: #f3eddf;
+    --green: #16352a;
+    --red: #b0503c;
+    --serif: 'Public Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --sans: 'Public Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
 }
 * {
     box-sizing: border-box;
@@ -19,10 +19,9 @@ body {
     margin: 0;
     background: var(--paper);
     color: var(--ink);
-    font: 400 15px/1.45 var(--sans);
     -webkit-font-smoothing: antialiased;
 }
-a {
+main a {
     color: inherit;
 }
 button,
@@ -30,10 +29,10 @@ input,
 select {
     font: inherit;
 }
-h1,
-p,
-fieldset,
-table {
+main h1,
+main p,
+main fieldset,
+main table {
     margin: 0;
 }
 fieldset {
@@ -91,11 +90,25 @@ main {
     max-width: 640px;
     margin: 0 auto;
     padding: 26px 20px 40px;
+    font: 400 15px/1.45 var(--sans);
 }
 h1 {
-    font: 400 clamp(24px, 6vw, 30px) / 1.2 var(--serif);
-    letter-spacing: -0.005em;
+    font: 600 clamp(24px, 6vw, 30px) / 1.2 var(--sans);
+    letter-spacing: -0.015em;
     text-wrap: balance;
+    color: var(--green);
+}
+.sub-meta {
+    margin: 0 0 18px;
+    font-size: 13px;
+    color: var(--mute);
+}
+.sub-meta a {
+    color: var(--green);
+    text-decoration: none;
+}
+.sub-meta a:hover {
+    text-decoration: underline;
 }
 .sub {
     margin-top: 4px;
@@ -131,7 +144,7 @@ legend,
     border-bottom: 1.5px solid var(--ink);
 }
 .money > span {
-    font: 400 22px/1 var(--serif);
+    font: 600 22px/1 var(--sans);
     color: var(--mute);
 }
 .money input {
@@ -141,7 +154,7 @@ legend,
     background: transparent;
     padding: 4px 0 8px;
     color: var(--ink);
-    font: 400 38px/1 var(--serif);
+    font: 600 38px/1 var(--sans);
     letter-spacing: -0.01em;
     font-variant-numeric: tabular-nums;
     -moz-appearance: textfield;
@@ -303,7 +316,7 @@ input[type='range']::-moz-range-thumb {
     margin-top: 18px;
     padding: 10px 12px;
     border-radius: 6px;
-    background: #f7ebe9;
+    background: #f6e4dd;
     color: var(--red);
     font-size: 13px;
 }
@@ -432,7 +445,7 @@ input[type='range']::-moz-range-thumb {
 }
 .tagline {
     margin-top: 26px;
-    font: 400 17px/1.3 var(--serif);
+    font: 500 17px/1.3 var(--sans);
     color: var(--ink);
 }
 
@@ -604,22 +617,22 @@ details[open] > summary .edit {
 .reset:hover {
     color: var(--ink);
 }
-footer {
+.calc-notes {
     border-top: 1px solid var(--hair);
     padding-top: 12px;
     font-size: 11px;
     color: var(--mute);
     line-height: 1.5;
 }
-footer p {
+.calc-notes p {
     margin: 6px 0;
 }
-footer summary {
+.calc-notes summary {
     padding: 6px 0;
     font-size: 11px;
     justify-content: flex-start;
 }
-footer a {
+.calc-notes a {
     text-decoration: underline;
     text-underline-offset: 3px;
 }

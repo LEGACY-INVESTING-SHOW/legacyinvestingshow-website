@@ -145,6 +145,12 @@ test('generated operator pages exist with canonical URLs, a form, and live resul
         assert.ok(html.includes('/assets/js/operator-calculator-models.js'));
         assert.ok(html.includes(`<h1 class="text-[28px] font-semibold tracking-tight text-ink sm:text-[32px]">${tool.title}</h1>`));
         assert.ok(!html.includes('{{'));
+        assert.ok(html.includes('class="site-header"'), tool.slug);
+        assert.ok(html.includes('class="site-footer"'), tool.slug);
+        assert.ok(html.includes('/assets/css/tools-bridge.css'), tool.slug);
+        assert.ok(html.includes('Legacy Investing Show'));
+        assert.ok(!html.includes('Legacy Investing Calculators'));
+        assert.ok(!html.includes('Visit the show'));
     }
     const embed = fs.readFileSync(path.join(ROOT, 'assets', 'js', 'operator-catalog-embed.js'), 'utf8');
     assert.ok(embed.includes('No calculators match'));
@@ -156,6 +162,9 @@ test('generated operator pages exist with canonical URLs, a form, and live resul
     assert.ok(index.includes('operator-catalog-embed.js'));
     assert.ok(index.includes('/tools/cap-rate'));
     assert.ok(index.includes('/tools/cost-segregation-savings'));
+    assert.ok(index.includes('class="site-header"'));
+    assert.ok(index.includes('class="site-footer"'));
+    assert.ok(index.includes('id="catalog-search"'));
     const headingAt = index.indexOf('id="catalog-heading"');
     const operatorAt = index.indexOf('id="operator-calculators"');
     const reactListAt = index.indexOf('class="space-y-10"');

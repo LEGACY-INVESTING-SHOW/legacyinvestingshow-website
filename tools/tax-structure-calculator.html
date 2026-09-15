@@ -20,11 +20,11 @@
   <meta name="twitter:image" content="https://www.legacyinvestingshow.com/assets/images/og-home.jpg">
   <meta name="keywords" content="tax structure calculator, W-2 tax, capital gains, rental depreciation">
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":"Tax Structure Calculator","url":"https://www.legacyinvestingshow.com/tools/tax-structure-calculator","applicationCategory":"FinanceApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},{"@type":"Organization","@id":"https://www.legacyinvestingshow.com/#organization","name":"Legacy Investing Show","url":"https://www.legacyinvestingshow.com/","description":"Legacy Investing Show teaches tax strategy, wealth-building systems, decision frameworks, and practical execution for professionals, business owners, and investors.","logo":{"@type":"ImageObject","url":"https://www.legacyinvestingshow.com/assets/images/logo.png","width":2836,"height":1290},"image":"https://www.legacyinvestingshow.com/assets/images/logo.png","founder":{"@id":"https://www.legacyinvestingshow.com/about/preston-seo#person"},"sameAs":["https://www.youtube.com/@LegacyInvestingShow","https://www.instagram.com/thelegacyinvestingshow/","https://www.facebook.com/thelegacyinvestingshow","https://www.facebook.com/share/19LQhE6gmh/","https://www.tiktok.com/@thelegacyinvestingshow","https://www.linkedin.com/company/legacy-investing-show","https://www.trustpilot.com/review/legacyinvestingshow.com"]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.legacyinvestingshow.com"},{"@type":"ListItem","position":2,"name":"Tax Structure Calculator","item":"https://www.legacyinvestingshow.com/tools/tax-structure-calculator"}]}]}</script>
-  <meta name="theme-color" content="#faf7f2">
-  <link rel="preload" href="/assets/fonts/plus-jakarta-sans-400-700-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/assets/fonts/dm-serif-display-400-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/assets/css/fonts.css?v=227e2fbf">
-  <link rel="stylesheet" href="/assets/css/tax-structure-calculator.css?v=c8dc02d5">
+  <meta name="theme-color" content="#FBF8F1">
+  <link rel="preload" href="/assets/fonts/public-sans-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/tools-bridge.css">
+  <link rel="stylesheet" href="/assets/css/tax-structure-calculator.css">
   <script id="tax-tables" type="application/json">{"year":2026,"standardDeduction":{"single":16100,"joint":32200},"ordinaryThresholds":{"single":[12400,50400,105700,201775,256225,640600],"joint":[24800,100800,211400,403550,512450,768700]},"rates":[0.1,0.12,0.22,0.24,0.32,0.35,0.37],"capitalGainsThresholds":{"single":[49450,545500],"joint":[98900,613700]},"niitThreshold":{"single":200000,"joint":250000},"socialSecurityWageBase":184500,"defaultAmount":150000,"rental":{"expensePercent":70.33333333333333,"propertyValue":1000000,"landPercent":20,"recoveryYears":27.5,"accelerated":60000}}</script>
   <script src="/assets/js/tax-structure-model.js?v=76935ffa" defer></script>
   <script src="/assets/js/tax-structure-calculator.js?v=aaa2f8f2" defer></script>
@@ -47,13 +47,44 @@
     </script>
 
 </head>
-<body>
+<body class="tools-surface">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <header class="top">
-    <a class="brand" href="https://www.legacyinvestingshow.com/tools">Tax Structure Calculator</a>
-    <span class="meta">2026 · Federal · <a href="https://www.legacyinvestingshow.com/tools">All calculators</a></span>
-  </header>
-  <main>
+  <a href="#main" class="guide-skip">Skip to main content</a>
+  <header class="site-header">
+        <nav class="container-custom site-nav" aria-label="Main navigation">
+            <a href="/" class="site-brand">Legacy Investing Show</a>
+            <div class="site-nav-links">
+                <a href="/" class="nav-link">Home</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/tax-strategies" class="nav-link">Tax Strategies</a>
+                    <a href="/compare" class="nav-link">Compare</a>
+                    <a href="/tools" class="nav-link nav-link-active">Tools</a>
+                    <a href="/blog" class="nav-link">Blog</a>
+            </div>
+            <button id="mobile-menu-btn" class="site-nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            </button>
+            <div id="mobile-menu" class="site-nav-mobile hidden">
+                <a href="/" class="nav-link">Home</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/tax-strategies" class="nav-link">Tax Strategies</a>
+                    <a href="/compare" class="nav-link">Compare</a>
+                    <a href="/tools" class="nav-link nav-link-active">Tools</a>
+                    <a href="/blog" class="nav-link">Blog</a>
+            </div>
+        </nav>
+    </header>
+  <nav class="tools-subnav" aria-label="Calculator categories">
+        <div class="container-custom tools-subnav-inner">
+            <a href="/tools" aria-current="page">All</a>
+            <a href="/tools/categories/money">Money</a>
+            <a href="/tools/categories/banking-borrowing">Banking</a>
+            <a href="/tools/categories/taxes-payroll">Taxes</a>
+            <a href="/tools/categories/housing-moving">Housing</a>
+        </div>
+    </nav>
+  <main id="main">
+    <p class="sub-meta">2026 · Federal · <a href="/tools">All calculators</a></p>
     <h1>What the IRS keeps from <span class="n" data-value="amountLabel">$150,000</span></h1>
     <p class="sub">Drag to your income. Dark is what the IRS keeps.</p>
 
@@ -164,7 +195,7 @@
       <button id="reset" type="button" class="reset">Reset to the carousel example</button>
     </section>
 
-    <footer>
+    <section class="calc-notes">
       <p>Standard deduction <span data-value="standardDeduction">$16,100</span> · No other income · Federal only · 2026 tables</p>
       <details>
         <summary><span>How the math works</span><span class="edit">Show</span></summary>
@@ -173,8 +204,45 @@
         <p>Tables: <a href="https://www.irs.gov/irb/2025-45_IRB">IRS 2026</a> · <a href="https://www.ssa.gov/oact/cola/cbb.html">SSA</a> · <a href="https://www.irs.gov/publications/p527">Rental rules</a></p>
       </details>
       <p>Illustrative educational model. Not a cost-seg study, not tax advice. Work with a CPA or EA for real numbers.</p>
-    </footer>
+    </section>
     <noscript>Enable JavaScript to calculate your results.</noscript>
   </main>
+  <footer class="site-footer" role="contentinfo">
+        <div class="container-custom">
+            <div class="site-footer-grid">
+                <div class="site-footer-brand">
+                    <a href="/" class="site-brand">Legacy Investing Show</a>
+                    <p>Tax strategy, wealth systems, and practical decision tools for professionals, investors, and founders.</p>
+                </div>
+                <div class="site-footer-group">
+                    <p class="site-footer-title">Guides</p>
+                    <ul>
+                        <li><a href="/tax-strategies">Tax strategies</a></li>
+                        <li><a href="/compare">Compare guides</a></li>
+                        <li><a href="/topics">Topics</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer-group">
+                    <p class="site-footer-title">Tools</p>
+                    <ul>
+                        <li><a href="/tools">Free calculators</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer-group">
+                    <p class="site-footer-title">Company</p>
+                    <ul>
+                        <li><a href="/about">About Preston Seo</a></li>
+                        <li><a href="/success-stories">Student results</a></li>
+                        <li><a href="/reviews">Reviews</a></li>
+                        <li><a href="/privacy">Privacy</a></li>
+                        <li><a href="/terms">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="site-footer-legal">&copy; 2026 Legacy Investing Show. Educational content, not individual tax, legal, or investment advice.</p>
+        </div>
+    </footer>
+  <script src="/assets/js/tools-site-shell.js" defer></script>
 </body>
 </html>
