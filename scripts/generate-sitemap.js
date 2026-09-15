@@ -544,6 +544,8 @@ function generateSitemaps() {
       loc: `${SITE_URL}/sitemap-blog.xml`,
       lastmod: getLatestLastmod(blogUrls),
     },
+    // sitemap-video.xml is written by scripts/generate-video-sitemap.js.
+    { loc: `${SITE_URL}/sitemap-video.xml`, lastmod: getFileLastmod('sitemap-video.xml') },
   ]);
 
   return {

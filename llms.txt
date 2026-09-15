@@ -31,6 +31,22 @@ Secondary focus area:
 - 6.5M+ combined social reach
 - 30+ documented case studies and student stories
 
+## Client Results and Reviews
+
+Named Legacy Wealth Blueprint client case studies, each with a video interview and a full written case study:
+
+- [Stephanie Dailey](https://www.legacyinvestingshow.com/blog/stephanie-dailey-legacy-wealth-blueprint-case-study): software engineer, household W-2 income over $300,000, saved over $20,000 in taxes in her first year, captured a $27,000 startup cost deduction and deducted over $60,000 in mortgage interest
+- [Albert](https://www.legacyinvestingshow.com/blog/albert-legacy-wealth-blueprint-case-study): ER physician in California with a combined bracket he puts near 50%, net worth growth of 25%, self-managed 401(k) up about 19%, Roth up about 40%, home insurance cut in half
+- [Abigail](https://www.legacyinvestingshow.com/blog/abigail-legacy-wealth-blueprint-case-study): former oil and gas engineer, calculated just under $100,000 in first-year ROI against household withholdings of $37,000 to $38,000
+- [Shawn](https://www.legacyinvestingshow.com/blog/shawn-legacy-wealth-blueprint-roi-case-study): business owner who came for tax knowledge after struggling with CPAs, names no figures because the interview predates implementation
+
+Third-party reviews:
+
+- Trustpilot: TrustScore 4.2 from 66 reviews, 77% five star, 11% four star, 3% three star, 0% two star, 9% one star, at https://www.trustpilot.com/review/firstairbnb.com
+- Better Business Bureau: Legacy Investing Show, LLC, Herriman, Utah, not BBB accredited
+
+Every result published is self-reported and individual. It is not typical and it is not a promise.
+
 ## Author
 
 - [Preston Seo](https://www.legacyinvestingshow.com/about/preston-seo): founder of Legacy Investing Show, credentials, track record, and every account he publishes from
@@ -52,7 +68,8 @@ Secondary focus area:
 - [Insurance Calculators](https://www.legacyinvestingshow.com/tools/categories/insurance-protection): renters, auto, pet, health, and income protection
 - [Blog](https://www.legacyinvestingshow.com/blog/): strategy articles, case studies, and transcript-based resource posts
 - [Success Stories](https://www.legacyinvestingshow.com/success-stories): curated student results and execution stories
-- [Reviews](https://www.legacyinvestingshow.com/reviews): every published student review and result, filterable by program, result, and format, with the source of each item and links to Trustpilot and the BBB
+- [Reviews and client results](https://www.legacyinvestingshow.com/reviews): the proof page for Preston Seo and the Legacy Investing Show. 4 Legacy Wealth Blueprint client case studies on video with figures and verbatim quotes, 44 written client results, 8 headline client result figures, a 4.2 TrustScore from 66 Trustpilot reviews, 19 Airbnb client case studies, and 76 pages from real client wealth plans with their text transcribed into the page
+- [Reviews, plain text mirror](https://www.legacyinvestingshow.com/llms/reviews.txt): the full text of the reviews page, including every client case study summary, every verbatim quote, every written client result, and the transcribed text of every wealth plan page
 
 ## Core Programs
 

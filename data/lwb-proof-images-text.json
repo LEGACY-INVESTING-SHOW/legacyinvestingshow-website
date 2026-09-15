@@ -1391,6 +1391,79 @@
    "figures": [],
    "issues": "",
    "visual": "A video thumbnail of Preston, wearing a backwards black cap, speaking with eyes closed against a plain light-colored wall, with an on-screen caption reading 'you know, what kind of ROI'."
+  },
+  {
+   "file": "section-executive-summary.webp",
+   "path": "/assets/images/wealth-plan-samples/section-executive-summary.webp",
+   "kind": "wealth-plan-sample",
+   "heading": "Executive Summary: Your Path to $50K+ Annual Tax Savings",
+   "paragraphs": [
+    "This plan delivers $40,400 to $53,800 in first-year tax savings through eight strategic implementations, with an additional $7,200 in immediate cash flow improvement. By restructuring your business entities and employing family members strategically, you'll transform current family support expenses into legitimate business deductions while building systematic wealth through Bitcoin accumulation and real estate optimization.",
+    "Core Opportunity: Your IT consulting and AI business generates approximately $175K W-2 plus $20K side income, but you're currently operating without S-Corporation election and missing foundational strategies. The single highest-value action is filing Form 2553 for S-Corp election by March 15, 2026, saving $8,900-$11,900 annually in self-employment tax alone.",
+    "Three-Year Trajectory: With systematic implementation of this plan, you'll accumulate 0.85-1.2 BTC over three years, eliminate $5-19K in non-mortgage debt, maximize retirement contributions exceeding $90K annually per household, and structure your business to support retirement within your 3-year goal."
+   ],
+   "figures": [
+    "$50K+",
+    "$40,400 to $53,800",
+    "$7,200",
+    "$175K",
+    "$20K",
+    "$8,900-$11,900",
+    "0.85-1.2 BTC",
+    "$5-19K",
+    "$90K"
+   ],
+   "issues": ""
+  },
+  {
+   "file": "section-year-one-results.webp",
+   "path": "/assets/images/wealth-plan-samples/section-year-one-results.webp",
+   "kind": "wealth-plan-sample",
+   "heading": "",
+   "paragraphs": [
+    "Year-one tax savings: $47,600",
+    "Cash flow boost: $7,200",
+    "Bitcoin target (3yr): 1.0 BTC"
+   ],
+   "figures": [
+    "$47,600",
+    "$7,200",
+    "1.0 BTC"
+   ],
+   "issues": ""
+  },
+  {
+   "file": "section-solo-401k.webp",
+   "path": "/assets/images/wealth-plan-samples/section-solo-401k.webp",
+   "kind": "wealth-plan-sample",
+   "heading": "Strategy #2: Solo 401(k) Maximum Contribution",
+   "paragraphs": [
+    "Estimated Annual Value: $20,500 - $24,500",
+    "How It Works: As a self-employed individual with side business income, you qualify for Solo 401(k) allowing employee deferrals up to $23,500 plus employer profit-sharing contributions up to 25% of compensation. Total contributions can reach $70,000 (or $77,500 if 50+), creating immediate tax deductions while building tax-deferred retirement wealth."
+   ],
+   "figures": [
+    "$20,500 - $24,500",
+    "$23,500",
+    "25%",
+    "$70,000",
+    "$77,500"
+   ],
+   "issues": ""
+  },
+  {
+   "file": "section-backdoor-roth.webp",
+   "path": "/assets/images/wealth-plan-samples/section-backdoor-roth.webp",
+   "kind": "wealth-plan-sample",
+   "heading": "Strategy #7: Backdoor Roth IRA (Both Spouses)",
+   "paragraphs": [
+    "Estimated Annual Value: $14,000 in contributions (tax-free growth for decades)",
+    "How It Works: Your household income exceeds Roth IRA direct contribution limits ($236K-246K phase-out for 2025). Backdoor Roth allows making non-deductible Traditional IRA contributions and immediately converting to Roth, bypassing income limits. This creates a tax-free growth vehicle for long-term wealth accumulation."
+   ],
+   "figures": [
+    "$14,000",
+    "$236K-246K"
+   ],
+   "issues": ""
   }
  ]
 }
