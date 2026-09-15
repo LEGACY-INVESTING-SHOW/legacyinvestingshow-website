@@ -109,6 +109,23 @@
   inject();
   setTimeout(inject, 50);
   setTimeout(inject, 400);
-  var observer = new MutationObserver(inject);
+  var queued = null;
+  var observer = new MutationObserver(function () {
+    if (queued) return;
+    queued = setTimeout(function () {
+      queued = null;
+      observer.disconnect();
+      inject();
+      var path = window.location.pathname.replace(/\/+$/, '') || '/tools';
+      if (path === '/tools' || path === '/tools/index.html') {
+        if (document.getElementById(SECTION_ID) && document.getElementById('catalog-search')) return;
+      }
+      observer.observe(document.body, { childList: true, subtree: true });
+    }, 80);
+  });
   observer.observe(document.body, { childList: true, subtree: true });
+  setTimeout(function () {
+    var path = window.location.pathname.replace(/\/+$/, '') || '/tools';
+    if (path === '/tools' || path === '/tools/index.html') observer.disconnect();
+  }, 1500);
 })();

@@ -150,6 +150,7 @@ test('generated operator pages exist with canonical URLs, a form, and live resul
     assert.ok(embed.includes('No calculators match'));
     assert.ok(embed.includes('catalog-heading'));
     assert.ok(embed.includes('cap-rate'));
+    assert.ok(embed.includes('replace(/\\/+$/'), 'embed path regex must keep its backslashes');
     const index = fs.readFileSync(path.join(ROOT, 'tools', 'index.html'), 'utf8');
     assert.ok(index.includes('id="operator-calculators"'));
     assert.ok(index.includes('operator-catalog-embed.js'));
