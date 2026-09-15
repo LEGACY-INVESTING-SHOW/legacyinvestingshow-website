@@ -1,0 +1,162 @@
+{
+  "type": "decision",
+  "slug": "tax-course-vs-cpa",
+  "title": "Tax Strategy Course vs a CPA",
+  "h1": "Tax strategy course vs hiring a CPA",
+  "keyLine": "A course teaches the map. A CPA signs the return. Most high earners eventually need both.",
+  "description": "When a tax class is enough, when you need a CPA, what each can and cannot do, and public example prices. Education, not advice.",
+  "query": "tax strategy course vs hiring a CPA",
+  "answer": "A tax strategy course sells lessons. A CPA, a certified public accountant, is a licensed pro who can prepare and sign a return. A course cannot file for you and cannot see your facts unless a person is attached. A CPA without a plan can miss ideas a class would have shown you. If you have a simple W-2 and no rental, a class is optional. If you own a business or a short-term rental, budget for a CPA even if you buy a class.",
+  "criteriaIntro": "We compared jobs, not brands. Named prices are examples from public pages, including our own.",
+  "criteria": [
+    "Course vs licensed preparer, defined in plain words.",
+    "IRS pages for the accounts a W-2 earner should fill first.",
+    "No promise that a class cuts your tax bill."
+  ],
+  "blocks": [
+    {
+      "type": "table",
+      "id": "jobs",
+      "heading": "Who does which job",
+      "caption": "A class and a CPA are not substitutes.",
+      "wide": true,
+      "headers": ["Job", "Course", "CPA / EA", "Notes"],
+      "rows": [
+        ["Teaches ideas", "Yes", "Sometimes, if they like teaching", "Classes scale. Pros bill hours."],
+        ["Looks at your return", "Only if coaching is included", "Yes, that is the point", "Ask what 'review' means in a class."],
+        ["Signs Form 1040", "No", "Yes, if they prepare it", "An enrolled agent (EA) can also represent you at the IRS."],
+        ["Sells a product", "Usually", "Sometimes also sells planning", "Fee-only is cleaner. Ask how they are paid."],
+        ["Works if you only have wages", "Limited. Most 'advanced' ideas need a business or property", "Still useful for basis, stock, and state issues", "See W-2 tax hub."]
+      ]
+    },
+    {
+      "type": "prose",
+      "id": "when-course",
+      "heading": "When a course is enough",
+      "paragraphs": [
+        "You want vocabulary before a CPA meeting. You will still pay someone to file. You can do homework. You will not treat a module as a filing position.",
+        "Cheap examples we could copy: [WealthAbility Live](https://www.wealthability.com/wealthability-live/) at $197 a month. Our [tax program roundup](/blog/best-tax-strategy-programs-w2-earners-over-250k) lists other public prices, including classes that hide the number."
+      ]
+    },
+    {
+      "type": "prose",
+      "id": "when-cpa",
+      "heading": "When you need a CPA or EA this year",
+      "paragraphs": [
+        "You own a rental, a partnership, an S corp, or you sold a business. You got a notice from the IRS. You want someone who can represent you.",
+        "A CPA's fee is often not on a homepage. That does not make a $50,000 'done for you' firm the default. Ask for an engagement letter: what they will file, what they will not, and whether planning hours are extra.",
+        "If a class says you can skip your CPA, treat that as a warning. Our Blueprint page says you keep your CPA and get a brief to hand them. That is the honest split."
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "gold",
+      "label": "W-2 limit in one line",
+      "paragraphs": [
+        "A course cannot invent a deduction you do not have. After the 401(k) and HSA, most large ideas need a business or a rental. Read [tax strategies for W-2 employees](/tax-strategies/for/w2-employees)."
+      ]
+    }
+  ],
+  "whoFits": [
+    "You are deciding whether to buy tax school or to pay a preparer more hours.",
+    "You already have a CPA and you wonder if a class is redundant."
+  ],
+  "whoSkips": [
+    "You want a three-vendor bake-off. Use [Karlton Dennis vs Mark Kohler vs Blueprint](/blog/karlton-dennis-vs-mark-kohler-vs-legacy-wealth-blueprint).",
+    "You need representation on an audit this month. Call a licensed pro today, do not start module one."
+  ],
+  "costIntro": "Example public figures. CPA retainers vary by city and by how messy the file is. We will not invent an average fee.",
+  "costCaption": "Public education prices vs professional work.",
+  "costRows": [
+    {
+      "name": "WealthAbility Live (class)",
+      "price": "$197 a month",
+      "asOf": "2026-09-15",
+      "sourceLabel": "WealthAbility Live",
+      "sourceUrl": "https://www.wealthability.com/wealthability-live/"
+    },
+    {
+      "name": "WealthAbility Tax-Free Formula digital",
+      "price": "$497 lifetime on that page",
+      "asOf": "2026-09-15",
+      "sourceLabel": "Tax-Free Formula",
+      "sourceUrl": "https://www.wealthability.com/new-tax-free-formula/"
+    },
+    {
+      "name": "Typical CPA or EA engagement",
+      "price": "Not a single public national price. Ask for a written engagement letter.",
+      "asOf": "2026-09-15",
+      "sourceLabel": "IRS Directory of Federal Tax Return Preparers",
+      "sourceUrl": "https://irs.treasury.gov/rpo/rpo.jsf"
+    },
+    {
+      "name": "Legacy Wealth Blueprint",
+      "price": "$9,800 cash or card. We do not file your return.",
+      "asOf": "2026-09-15",
+      "sourceLabel": "Best tax strategy programs for W-2 earners",
+      "sourceUrl": "https://www.legacyinvestingshow.com/blog/best-tax-strategy-programs-w2-earners-over-250k"
+    }
+  ],
+  "questionsBeforeBuying": [
+    "Will this purchase file my return, or only teach me?",
+    "If I keep my CPA, what artifact do I hand them?",
+    "Is the teacher a CPA, EA, or neither?",
+    "What happens if the IRS sends a letter?",
+    "Have I already maxed the 401(k) and HSA the IRS already allows?"
+  ],
+  "nextSteps": [
+    "List what you own: wages only, rental, or a business. That list decides the buyer.",
+    "Open [tax strategies for W-2 employees](/tax-strategies/for/w2-employees) or [for business owners](/tax-strategies/for/business-owners).",
+    "If you want a written plan plus a CPA brief, read [Legacy Wealth Blueprint](/legacy-wealth-blueprint)."
+  ],
+  "faqs": [
+    {
+      "q": "Can a tax course replace my CPA?",
+      "a": "No. A course does not sign your return. Some firms sell both class and prep. Ask which hat they are wearing on your file."
+    },
+    {
+      "q": "Is a cheaper class always worse?",
+      "a": "No. A $197 a month series can be enough if you only need ideas. It is worse if you thought they would file."
+    },
+    {
+      "q": "What is an enrolled agent?",
+      "a": "An EA is a tax pro licensed by the IRS to represent taxpayers. A CPA is licensed by a state. Either can be the right preparer. Ask about real estate or S corp experience if that is your fact pattern."
+    }
+  ],
+  "sources": [
+    {
+      "label": "IRS 2026 401(k) limits",
+      "url": "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500",
+      "asOf": "2026-09-15"
+    },
+    {
+      "label": "IRS Directory of Federal Tax Return Preparers",
+      "url": "https://irs.treasury.gov/rpo/rpo.jsf",
+      "asOf": "2026-09-15"
+    },
+    {
+      "label": "WealthAbility Live",
+      "url": "https://www.wealthability.com/wealthability-live/",
+      "asOf": "2026-09-15"
+    },
+    {
+      "label": "Publication 925, passive activity rules",
+      "url": "https://www.irs.gov/publications/p925",
+      "asOf": "2026-09-15"
+    }
+  ],
+  "related": [
+    { "href": "/tax-strategies/for/w2-employees", "label": "Tax strategies for W-2 employees" },
+    { "href": "/blog/best-tax-strategy-programs-w2-earners-over-250k", "label": "Tax programs for W-2 earners over $250k" },
+    { "href": "/blog/karlton-dennis-vs-mark-kohler-vs-legacy-wealth-blueprint", "label": "Karlton Dennis vs Mark Kohler vs Blueprint" },
+    { "href": "/compare/best-wealth-education-high-earners", "label": "Wealth education paths for high earners" }
+  ],
+  "cta": {
+    "title": "Keep the preparer",
+    "body": "Use the library to walk in with better questions. Then let a licensed person file. If you want our written brief format, that is Blueprint, and you still keep your CPA.",
+    "primaryHref": "/tax-strategies",
+    "primaryLabel": "Tax strategy library",
+    "secondaryHref": "https://join.managemoney101.com/tax-strategies",
+    "secondaryLabel": "Free tax strategy class"
+  }
+}

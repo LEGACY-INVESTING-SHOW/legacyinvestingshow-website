@@ -1,0 +1,162 @@
+{
+  "type": "checklist",
+  "slug": "wealth-plan-checklist-high-earners",
+  "title": "Wealth Plan Checklist for High Earners",
+  "h1": "Wealth plan checklist for high earners",
+  "keyLine": "Export your own facts first. Then pick a class. Do not buy a plan you cannot describe on one page.",
+  "description": "A practical wealth-plan checklist for high earners: accounts, debt, tax, insurance, and rentals. Printable steps, IRS 2026 figures, and free calculators.",
+  "query": "wealth plan checklist for high earners",
+  "answer": "A wealth plan is a written order for your next dollar. It is not a vibe. High earners skip this and buy a course. Do the opposite. Pull statements. List debts. Note the 401(k) match. Then decide if you need a class, a CPA, or a rental. This page is the worksheet. 2026 IRS 401(k) and HSA numbers are included so you can see empty room. Nothing here is a filing position.",
+  "criteriaIntro": "Items are things you can finish in a week with statements you already get. We only cite IRS figures we opened.",
+  "criteria": [
+    "Each step produces a number or a document.",
+    "Links go to a calculator or a guide on this site when one exists.",
+    "No invented net-worth targets."
+  ],
+  "blocks": [
+    {
+      "type": "check",
+      "id": "week-one",
+      "heading": "Week one: export the facts",
+      "intro": "Put these in one folder. That folder is the plan's raw material.",
+      "items": [
+        "Last two pay stubs, with 401(k), HSA, and match lines highlighted.",
+        "Last year's federal return, or a transcript from IRS.gov if you cannot find it.",
+        "A list of debts: balance, rate, and minimum, from each statement.",
+        "Cash accounts: checking, savings, money market. Note any emergency fund in months of spend. Use the [emergency fund tool](/tools/emergency-fund-target) if you need a target.",
+        "Investment accounts: 401(k), IRA, brokerage. Write the balance only. Do not hunt for last year's return yet.",
+        "Insurance: health plan type (HSA-eligible or not), term life, disability if you have it."
+      ]
+    },
+    {
+      "type": "prose",
+      "id": "score-the-leaks",
+      "heading": "Score the leaks",
+      "paragraphs": [
+        "Circle the largest leak. For many W-2 households it is tax plus lifestyle debt. For others it is cash sitting idle after accounts are full. Do not start a rental module to fix a 22% card.",
+        "2026 room you can measure: employee 401(k) deferral $24,500, extra $8,000 at age 50, extra $11,250 instead at ages 60 to 63 ([IRS IR-2025-111](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500)). HSA $4,400 or $8,750 ([Rev. Proc. 2025-19](https://www.irs.gov/irb/2025-21_IRB))."
+      ]
+    },
+    {
+      "type": "steps",
+      "id": "order",
+      "heading": "A default order (change it with a CPA)",
+      "items": [
+        "High-interest consumer debt and a basic cash buffer. Budget: [monthly budget planner](/tools/monthly-budget-planner).",
+        "401(k) at least to the match. Then HSA if you qualify.",
+        "Remaining 401(k) room vs taxable investing vs a rental. See [401(k) vs rental](/compare/401k-vs-rental-property).",
+        "Tax ideas that need a business or property only after the above is in writing. Start at [W-2 tax strategies](/tax-strategies/for/w2-employees).",
+        "Estate and insurance questions last, with the right licensed person. A course is not a will."
+      ]
+    },
+    {
+      "type": "check",
+      "id": "before-a-sales-call",
+      "heading": "Before any sales call",
+      "items": [
+        "I can say my top leak in one sentence.",
+        "I know whether I still have 401(k) or HSA room.",
+        "I have a written price, refund rule, and who I will talk to.",
+        "I will not pay the fee with a card I cannot clear.",
+        "I read the [FTC coaching page](https://consumer.ftc.gov/articles/when-business-offer-or-coaching-program-scam)."
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "gold",
+      "label": "If you want our format",
+      "paragraphs": [
+        "Legacy Wealth Blueprint builds a written Wealth Strategy Snapshot from your numbers, then a year of coaching. We publish $9,800 cash or card. It is optional. This checklist still works if you never buy it. See [how Blueprint works](/legacy-wealth-blueprint) and [reviews](/reviews)."
+      ]
+    }
+  ],
+  "whoFits": [
+    "You earn well and your money lives in five apps with no one page that orders it.",
+    "You are about to buy a class and you want a homework sheet first."
+  ],
+  "whoSkips": [
+    "You need crisis debt help this week. Call a nonprofit credit counselor and use the [debt hub](/topics/debt-management).",
+    "You want a downloadable XLS with macros. Use the linked calculators. We are not shipping a spreadsheet farm."
+  ],
+  "costIntro": "The checklist is free. Nearby paid options are listed so you do not mix them up with IRS limits.",
+  "costCaption": "Free tools vs optional paid plan.",
+  "costRows": [
+    {
+      "name": "This checklist and the linked calculators",
+      "price": "Free",
+      "asOf": "2026-09-15",
+      "sourceLabel": "Tools hub",
+      "sourceUrl": "https://www.legacyinvestingshow.com/tools"
+    },
+    {
+      "name": "2026 401(k) employee deferral",
+      "price": "$24,500 plus published catch-up",
+      "asOf": "2026-09-15",
+      "sourceLabel": "IRS IR-2025-111",
+      "sourceUrl": "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500"
+    },
+    {
+      "name": "Legacy Wealth Blueprint (optional)",
+      "price": "$9,800 cash or card, as we publish on this site",
+      "asOf": "2026-09-15",
+      "sourceLabel": "Best tax strategy programs for W-2 earners",
+      "sourceUrl": "https://www.legacyinvestingshow.com/blog/best-tax-strategy-programs-w2-earners-over-250k"
+    }
+  ],
+  "questionsBeforeBuying": [
+    "Can I describe my plan on one page without a seller in the room?",
+    "Which checklist box is still empty?",
+    "If I buy help, is it for tax filing, coaching, or deal review?",
+    "Have I already used the free calculators?"
+  ],
+  "nextSteps": [
+    "Fill the week-one folder today.",
+    "Open [best wealth education for high earners](/compare/best-wealth-education-high-earners) only after the folder exists.",
+    "Bring the folder to a CPA if your facts include a business or a rental."
+  ],
+  "faqs": [
+    {
+      "q": "Is this a substitute for a financial planner?",
+      "a": "No. It is a packet so a planner or CPA does not start from zero. You can stop after the packet."
+    },
+    {
+      "q": "How long should this take?",
+      "a": "Most of week one is gathering PDFs. The order in 'default order' can take an evening to draft and a year to live."
+    },
+    {
+      "q": "Do I need Legacy Wealth Blueprint to finish this?",
+      "a": "No. Blueprint is one way to get a written snapshot and a guide. The checklist stands alone."
+    }
+  ],
+  "sources": [
+    {
+      "label": "IRS IR-2025-111",
+      "url": "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500",
+      "asOf": "2026-09-15"
+    },
+    {
+      "label": "Rev. Proc. 2025-19 / IRB 2025-21",
+      "url": "https://www.irs.gov/irb/2025-21_IRB",
+      "asOf": "2026-09-15"
+    },
+    {
+      "label": "FTC coaching guidance",
+      "url": "https://consumer.ftc.gov/articles/when-business-offer-or-coaching-program-scam",
+      "asOf": "2026-09-15"
+    }
+  ],
+  "related": [
+    { "href": "/compare/best-wealth-education-high-earners", "label": "Wealth education paths for high earners" },
+    { "href": "/compare/tax-course-vs-cpa", "label": "Tax course vs a CPA" },
+    { "href": "/compare/401k-vs-rental-property", "label": "401(k) vs rental property" },
+    { "href": "/tax-strategies/for/high-income-earners", "label": "Tax strategies for high-income earners" }
+  ],
+  "cta": {
+    "title": "Do the folder first",
+    "body": "If you want a coach to turn the folder into a 12-month snapshot, read Blueprint. If you only needed the order, stop here and use the tax hub.",
+    "primaryHref": "/tools/monthly-budget-planner",
+    "primaryLabel": "Budget planner",
+    "secondaryHref": "/legacy-wealth-blueprint",
+    "secondaryLabel": "Legacy Wealth Blueprint"
+  }
+}

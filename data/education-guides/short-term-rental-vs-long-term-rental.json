@@ -1,0 +1,151 @@
+{
+  "type": "vs",
+  "slug": "short-term-rental-vs-long-term-rental",
+  "title": "Short-Term vs Long-Term Rental",
+  "h1": "Short-term rental vs long-term rental",
+  "keyLine": "One is a small hotel. One is a lease. Tax rules follow the stay length and your hours, not the brand of the app.",
+  "description": "STR vs long-term rental in plain words: work, cash, and the IRS 7-day average stay test. No invented occupancy. Calculators and W-2 notes included.",
+  "query": "short-term rental vs long-term rental",
+  "answer": "A long-term rental is a home you lease for months at a time, often a year. A short-term rental (STR) is a stay measured in nights, often listed on Airbnb or Vrbo. STR usually means more guest work, more furniture, and more local rules. Long-term usually means a steadier lease and fewer turnovers. Tax is a separate test. IRS Publication 925 says an activity is not a 'rental activity' for passive-loss rules if the average stay is 7 days or less. You still have to materially participate. This page does not promise a tax save.",
+  "criteriaIntro": "We compare operations and the IRS tests we can cite. We do not invent nightly rates or occupancy.",
+  "criteria": [
+    "Plain definitions of STR and long-term.",
+    "Publication 925 for the 7-day average period of customer use.",
+    "Links to calculators instead of fake pro formas."
+  ],
+  "blocks": [
+    {
+      "type": "table",
+      "id": "ops",
+      "heading": "Work and cash, without fake numbers",
+      "caption": "Operational differences. Your market will change the dollars.",
+      "wide": true,
+      "headers": ["Topic", "Short-term", "Long-term", "What to check"],
+      "rows": [
+        ["Customer", "Guests by the night", "A tenant on a lease", "Who you want to serve"],
+        ["Turnover", "Cleaning between stays", "Often once a year", "Your time or a cleaner"],
+        ["Furniture", "Usually furnished", "Often not", "Capital you must spend"],
+        ["Rules", "City STR permits, HOA, hotel tax", "Landlord-tenant law", "Local law first"],
+        ["Income shape", "Season and occupancy swing", "Monthly rent, vacancy between leases", "Run both in a calculator"],
+        ["Tax hook people cite", "7-day average stay test, then material participation", "Usually passive unless you qualify as a real estate professional", "Publication 925, then a CPA"]
+      ]
+    },
+    {
+      "type": "prose",
+      "id": "seven-day",
+      "heading": "The 7-day test, in plain words",
+      "paragraphs": [
+        "[IRS Publication 925](https://www.irs.gov/publications/p925) says an activity is not treated as a rental activity if the average period of customer use is 7 days or less. You figure that average by dividing total days in all rental periods by the number of rentals for the year.",
+        "Clearing 7 days does not make losses deductible. You still need material participation, which is a separate hour-and-facts test in the same publication. A full-time W-2 job makes some of those tests hard. A spouse's hours can matter on a joint return. That is facts, not a loophole slogan.",
+        "Long-term residential leases usually stay in the rental-activity bucket. Losses are often passive unless you qualify as a real estate professional. That status needs more than 750 hours and more than half of your working time in real property trades. A full-time job usually blocks the second half. Details: [REPS vs STR loophole](/compare/real-estate-professional-vs-str-loophole)."
+      ]
+    },
+    {
+      "type": "prose",
+      "id": "how-to-run-numbers",
+      "heading": "How to compare dollars without a fantasy spreadsheet",
+      "paragraphs": [
+        "Use two tools on the same property idea. [Rental cash flow](/tools/rental-property-cash-flow) for a yearly lease. [STR break-even occupancy](/tools/str-break-even-occupancy) for a nightly model. Do not copy someone else's occupancy. Use a conservative number you can defend.",
+        "Add cleaning, supplies, furniture replacement, and permit fees to the STR side. Add vacancy and repairs to both. Then ask whether you will do the work. A prettier STR net that needs you every weekend is not passive."
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "warn",
+      "label": "W-2 readers",
+      "paragraphs": [
+        "Do not buy an STR because a class said it 'unlocks depreciation on wages.' Read [the short-term rental loophole guide](/tax-strategies/short-term-rental-loophole) and talk to a CPA. Depreciation can reverse when you sell. See our recapture guide if you go that far."
+      ]
+    }
+  ],
+  "whoFits": [
+    "You can buy or lease a dwelling and you are choosing stay length.",
+    "You keep a W-2 and you keep hearing that STR is a tax cheat code."
+  ],
+  "whoSkips": [
+    "You do not want to be a host or a landlord. Stop here.",
+    "You need a city-by-city permit encyclopedia. Check your city site. We retired generic city pages on purpose."
+  ],
+  "costIntro": "Education and tool costs, not a sample cap rate. We will not invent rents.",
+  "costCaption": "Related public costs and IRS items.",
+  "costRows": [
+    {
+      "name": "IRS Publication 925",
+      "price": "Free",
+      "asOf": "2026-09-15",
+      "sourceLabel": "Publication 925",
+      "sourceUrl": "https://www.irs.gov/publications/p925"
+    },
+    {
+      "name": "IRS Publication 527 (residential rental)",
+      "price": "Free",
+      "asOf": "2026-09-15",
+      "sourceLabel": "Publication 527",
+      "sourceUrl": "https://www.irs.gov/publications/p527"
+    },
+    {
+      "name": "This site's STR and rental calculators",
+      "price": "Free",
+      "asOf": "2026-09-15",
+      "sourceLabel": "STR break-even occupancy",
+      "sourceUrl": "https://www.legacyinvestingshow.com/tools/str-break-even-occupancy"
+    }
+  ],
+  "questionsBeforeBuying": [
+    "Is STR even legal on this property?",
+    "Who cleans, and what does that cost on a slow month?",
+    "What occupancy do I need to break even, written down?",
+    "If I am buying this for tax, have I read the 7-day test and material participation with a CPA?",
+    "What happens to my numbers if I have to switch to a 12-month lease?"
+  ],
+  "nextSteps": [
+    "Run [STR break-even occupancy](/tools/str-break-even-occupancy) and [rental cash flow](/tools/rental-property-cash-flow) on the same address.",
+    "Read [the short-term rental loophole](/tax-strategies/short-term-rental-loophole).",
+    "If you operate Airbnbs, use [tax strategies for Airbnb hosts](/tax-strategies/for/airbnb-hosts)."
+  ],
+  "faqs": [
+    {
+      "q": "Is short-term always more profit?",
+      "a": "No. Higher nightly rates can lose after cleaning, vacancy, and furniture. Run both models. We will not quote a typical occupancy because we do not have your city data."
+    },
+    {
+      "q": "Does a 7-day average stay cut my W-2 tax?",
+      "a": "Not by itself. It can change whether the activity is a rental for passive-loss rules. You still need material participation and a real property. Ask a CPA."
+    },
+    {
+      "q": "Can I switch from STR to long-term mid year?",
+      "a": "Operations yes, if the law allows. The average-stay math for that tax year can get messy if long stays mix with short stays. Publication 925 is the starting text. Then a CPA."
+    }
+  ],
+  "sources": [
+    {
+      "label": "IRS Publication 925, average period of customer use",
+      "url": "https://www.irs.gov/publications/p925",
+      "asOf": "2026-09-15"
+    },
+    {
+      "label": "IRS Publication 527, residential rental property",
+      "url": "https://www.irs.gov/publications/p527",
+      "asOf": "2026-09-15"
+    },
+    {
+      "label": "Our STR loophole guide",
+      "url": "https://www.legacyinvestingshow.com/tax-strategies/short-term-rental-loophole",
+      "asOf": "2026-09-15"
+    }
+  ],
+  "related": [
+    { "href": "/tax-strategies/short-term-rental-loophole", "label": "Short-term rental loophole guide" },
+    { "href": "/compare/real-estate-professional-vs-str-loophole", "label": "REPS vs STR loophole" },
+    { "href": "/compare/cost-segregation-vs-str-loophole-w2-passive-loss", "label": "Cost segregation vs STR loophole for W-2 owners" },
+    { "href": "/tools/str-break-even-occupancy", "label": "STR break-even occupancy calculator" }
+  ],
+  "cta": {
+    "title": "Run the two models",
+    "body": "Do not pick a stay length from a podcast. Use the calculators, then read the IRS test if tax is part of the pitch.",
+    "primaryHref": "/tools/str-break-even-occupancy",
+    "primaryLabel": "STR break-even tool",
+    "secondaryHref": "/tools/rental-property-cash-flow",
+    "secondaryLabel": "Long-term cash flow tool"
+  }
+}

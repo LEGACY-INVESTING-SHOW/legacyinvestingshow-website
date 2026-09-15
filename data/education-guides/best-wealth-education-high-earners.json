@@ -1,0 +1,189 @@
+{
+  "type": "best-for",
+  "slug": "best-wealth-education-high-earners",
+  "title": "Best Wealth Education for High Earners",
+  "h1": "Best wealth education for high-income professionals",
+  "keyLine": "Best means the next class that matches your income type, not a trophy ranking.",
+  "description": "How high earners should pick wealth education: inclusion rules, public prices, tax vs debt vs rentals, and when a CPA beats a course. Written by Legacy Investing Show.",
+  "query": "best wealth building education for high-income professionals",
+  "answer": "If you earn a high W-2 wage, the best next class depends on the leak. Tax, debt, or a rental are different leaks. A good path uses IRS limits first, then a teacher who publishes a price or admits they will not. We do not crown one winner. We show four paths and the rules we used to include them. Our own program is in the list, marked as ours.",
+  "criteriaIntro": "Inclusion rules for this page. An option appears only if it meets all of them.",
+  "criteria": [
+    "It teaches a money system (tax, debt, investing, or real estate), not a single stock pick.",
+    "It is usable by someone with a full-time job.",
+    "We can cite a public page for what it is.",
+    "We can cite a public price, or we say the price is hidden.",
+    "It is not a duplicate of our [tax program roundup for W-2 earners over $250k](/blog/best-tax-strategy-programs-w2-earners-over-250k). That post covers tax vendors. This page covers the learning path."
+  ],
+  "blocks": [
+    {
+      "type": "prose",
+      "id": "start-with-accounts",
+      "heading": "Start with accounts, not a guru",
+      "paragraphs": [
+        "For 2026 the IRS set the employee 401(k) deferral at $24,500. Age 50 catch-up is $8,000. Ages 60 to 63 can use $11,250 instead. Source: [IRS IR-2025-111](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500).",
+        "For 2026 HSA limits are $4,400 self-only and $8,750 family. Source: [Rev. Proc. 2025-19](https://www.irs.gov/irb/2025-21_IRB). An HSA is a health savings account you can use with a high-deductible health plan.",
+        "If those are empty, a $9,800 class is the wrong first buy. Fill the cheap, legal buckets. Then pick education for what is left."
+      ]
+    },
+    {
+      "type": "table",
+      "id": "four-paths",
+      "heading": "Four paths we will stand behind",
+      "caption": "Learning paths for high earners, not a ranked product trophy.",
+      "wide": true,
+      "headers": ["Path", "Use it when", "Public cost we could copy", "Skip it when"],
+      "rows": [
+        [
+          "Self-study: IRS pages, our tax hub, Money Guy FOO",
+          "You can follow a checklist and you do not want a coach",
+          "Free",
+          "You will not do homework without a date on a calendar"
+        ],
+        [
+          "Cheap membership: BiggerPockets Pro or KenPro",
+          "You picked rentals and need tools or short lessons",
+          "Pro about $32.50 to $39 a month. KenPro $39.99 a month or $399 a year",
+          "You do not want to own property"
+        ],
+        [
+          "Tax class: WealthAbility Live or a similar CPA-led series",
+          "You own a business or property and want tax school",
+          "WealthAbility Live $197 a month. Other firms hide price",
+          "You only have wages and no rental or business"
+        ],
+        [
+          "Written plan plus coaching: Legacy Wealth Blueprint",
+          "You want tax, debt, and investing in one 12-month order",
+          "$9,800 cash or card, as we publish on this site",
+          "You would finance the fee on a card, or you only want deal-finding"
+        ]
+      ]
+    },
+    {
+      "type": "prose",
+      "id": "what-we-left-out",
+      "heading": "What we left out, on purpose",
+      "paragraphs": [
+        "We left out brands whose only public door is a webinar funnel with no curriculum list we could verify. SubTo and some masterminds may be real. They did not publish a price on the homepages we opened, and their model is narrow. They belong on a creative-finance list, not a 'best wealth education' list for a physician or engineer.",
+        "We also left out Dave Ramsey as a 'best for high earners' crown. FPU at $99.99 can still be the right class if lifestyle debt is the leak. It is not the best tax school. See [Dave Ramsey alternatives](/compare/dave-ramsey-alternatives)."
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "warn",
+      "label": "FTC bar",
+      "paragraphs": [
+        "The [FTC](https://consumer.ftc.gov/articles/when-business-offer-or-coaching-program-scam) says a coaching pitch that promises easy real estate or business profits is a warning sign. Anyone who guarantees a return is selling a story. Walk."
+      ]
+    }
+  ],
+  "whoFits": [
+    "You earn well on a W-2 or as an owner and you are choosing a learning path, not a stock.",
+    "You want inclusion rules you can reuse on the next sales page."
+  ],
+  "whoSkips": [
+    "You want a ranked list of eight tax vendors. Use [best tax strategy programs for W-2 earners over $250k](/blog/best-tax-strategy-programs-w2-earners-over-250k).",
+    "You want real estate courses for a side hustle. Use [courses for people with a full-time job](/blog/best-real-estate-investing-courses-full-time-job)."
+  ],
+  "costIntro": "Path costs, not a promise of savings. High earners overpay when they buy a class to skip the 401(k).",
+  "costCaption": "Public costs for the four paths.",
+  "costRows": [
+    {
+      "name": "IRS 2026 401(k) employee deferral",
+      "price": "$24,500, plus published catch-up amounts",
+      "asOf": "2026-09-15",
+      "sourceLabel": "IRS IR-2025-111",
+      "sourceUrl": "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500"
+    },
+    {
+      "name": "IRS 2026 HSA limit",
+      "price": "$4,400 self-only, $8,750 family",
+      "asOf": "2026-09-15",
+      "sourceLabel": "Rev. Proc. 2025-19 / IRB 2025-21",
+      "sourceUrl": "https://www.irs.gov/irb/2025-21_IRB"
+    },
+    {
+      "name": "Financial Peace University",
+      "price": "$99.99 per household on the class page",
+      "asOf": "2026-09-15",
+      "sourceLabel": "FPU class finder",
+      "sourceUrl": "https://www.ramseysolutions.com/money/financial-peace/class"
+    },
+    {
+      "name": "WealthAbility Live",
+      "price": "$197 a month",
+      "asOf": "2026-09-15",
+      "sourceLabel": "WealthAbility Live",
+      "sourceUrl": "https://www.wealthability.com/wealthability-live/"
+    },
+    {
+      "name": "Legacy Wealth Blueprint",
+      "price": "$9,800 cash or card, as we publish on this site",
+      "asOf": "2026-09-15",
+      "sourceLabel": "Best tax strategy programs for W-2 earners",
+      "sourceUrl": "https://www.legacyinvestingshow.com/blog/best-tax-strategy-programs-w2-earners-over-250k"
+    }
+  ],
+  "questionsBeforeBuying": [
+    "Which leak is largest this year: tax, debt, or idle cash?",
+    "Have I maxed the 401(k) and HSA I already have?",
+    "Does this teacher publish a price before a call?",
+    "Will a CPA still have to file, and did I budget for that fee too?"
+  ],
+  "nextSteps": [
+    "Work the [wealth plan checklist](/compare/wealth-plan-checklist-high-earners).",
+    "Read [401(k) vs rental property](/compare/401k-vs-rental-property) before you quit your match to buy a house.",
+    "If you want a person on your file, read [tax course vs a CPA](/compare/tax-course-vs-cpa)."
+  ],
+  "faqs": [
+    {
+      "q": "What is the best wealth program for high earners?",
+      "a": "There is no single best. Fill IRS accounts first. Then buy the class that matches the leftover leak. We sell Blueprint at $9,800. It is not the right buy if you still have unpaid credit cards or empty 401(k) space."
+    },
+    {
+      "q": "Is a $97 a month tax class better than a $9,800 plan?",
+      "a": "They are different products. A cheap class is content. A plan with a coach is time and a written order. Compare hours, access, and whether anyone looks at your return. See our [Karlton Dennis vs Mark Kohler vs Blueprint](/blog/karlton-dennis-vs-mark-kohler-vs-legacy-wealth-blueprint) post for three named vendors."
+    },
+    {
+      "q": "Can education replace a 401(k) match?",
+      "a": "No. A match is part of pay. Do not drop it to afford a course."
+    }
+  ],
+  "sources": [
+    {
+      "label": "IRS 2026 401(k) and IRA limits",
+      "url": "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500",
+      "asOf": "2026-09-15"
+    },
+    {
+      "label": "IRS 2026 HSA amounts, Rev. Proc. 2025-19",
+      "url": "https://www.irs.gov/irb/2025-21_IRB",
+      "asOf": "2026-09-15"
+    },
+    {
+      "label": "FTC coaching scam guidance",
+      "url": "https://consumer.ftc.gov/articles/when-business-offer-or-coaching-program-scam",
+      "asOf": "2026-09-15"
+    },
+    {
+      "label": "Money Guy FOO",
+      "url": "https://moneyguy.com/guide/foo/",
+      "asOf": "2026-09-15"
+    }
+  ],
+  "related": [
+    { "href": "/compare/wealth-plan-checklist-high-earners", "label": "Wealth plan checklist for high earners" },
+    { "href": "/tax-strategies/for/high-income-earners", "label": "Tax strategies for high-income earners" },
+    { "href": "/blog/best-tax-strategy-programs-w2-earners-over-250k", "label": "Tax programs for W-2 earners over $250k" },
+    { "href": "/compare/tax-course-vs-cpa", "label": "Tax course vs a CPA" }
+  ],
+  "cta": {
+    "title": "Pick the leak first",
+    "body": "If you want the W-2 tax map, open it next. If you want to see how our plan is built, read the Blueprint page. Client results live on the reviews page, not here.",
+    "primaryHref": "/tax-strategies/for/high-income-earners",
+    "primaryLabel": "High-income tax strategies",
+    "secondaryHref": "/reviews",
+    "secondaryLabel": "Reviews and client results"
+  }
+}

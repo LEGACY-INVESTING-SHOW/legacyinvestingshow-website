@@ -10,6 +10,8 @@ const {
   renderSiteHeader,
   renderSourceBlock,
 } = require('./lib/site-shell');
+const { loadEducationGuides } = require('./lib/load-education-guides');
+const { renderEducationPage } = require('./lib/render-education-guide');
 
 const ROOT_DIR = path.join(__dirname, '..');
 const DATA_PATH = path.join(ROOT_DIR, 'data', 'edge-comparison-pages.json');
@@ -610,16 +612,28 @@ ${steps.map((item) => `                        <li><p>${esc(item)}</p></li>`).jo
 }
 
 
-function renderIndex(pages) {
+function renderIndex(taxPages, educationPages = []) {
   const canonical = `${SITE_URL}/compare`;
   const isoDate = new Date().toISOString().split('T')[0];
-  const description = 'Head-to-head guides for tax and wealth decisions where two options both look reasonable: a scored comparison, a worked example, the failure modes, and a 90-day plan.';
+  const description = 'Head-to-head guides for tax decisions and for education or program choices. Tax pages use a scorecard. Education pages list public prices, who wrote them, and who should skip.';
+  const schemaPages = [
+    ...taxPages.map((page) => ({ slug: page.slug, title: page.title })),
+    ...educationPages.map((page) => ({ slug: page.slug, title: page.title })),
+  ];
 
-  const rows = pages
+  const taxRows = taxPages
     .map((page) => `                        <li>
                             <p class="list-rows__title"><a href="/compare/${esc(page.slug)}">${esc(page.title)}</a></p>
                             <p class="list-rows__desc">${esc(page.description)}</p>
                             <p class="list-rows__meta">Verdict: ${esc(page.quickVerdict || bestText(page))}</p>
+                        </li>`)
+    .join('\n');
+
+  const educationRows = educationPages
+    .map((page) => `                        <li>
+                            <p class="list-rows__title"><a href="/compare/${esc(page.slug)}">${esc(page.title)}</a></p>
+                            <p class="list-rows__desc">${esc(page.description)}</p>
+                            <p class="list-rows__meta">${esc(page.keyLine || page.query || '')}</p>
                         </li>`)
     .join('\n');
 
@@ -633,8 +647,8 @@ function renderIndex(pages) {
       datePublished: isoDate,
       mainEntity: {
         '@type': 'ItemList',
-        numberOfItems: pages.length,
-        itemListElement: pages.map((page, index) => ({
+        numberOfItems: schemaPages.length,
+        itemListElement: schemaPages.map((page, index) => ({
           '@type': 'ListItem',
           position: index + 1,
           url: `${SITE_URL}/compare/${page.slug}`,
@@ -703,7 +717,7 @@ ${schema.map((entry) => `    <script type="application/ld+json">${JSON.stringify
                     </nav>
                     <h1 class="opener__title">Comparison guides</h1>
                     <p class="opener__key">Pick one objective first. The two options rarely win on the same axis.</p>
-                    <p class="opener__lede">Decisions where both options look reasonable. Each guide scores the tradeoffs, works an example, names the failure modes, and sets out a 90-day plan.</p>
+                    <p class="opener__lede">Two libraries sit here. Tax pages score two strategies that both look reasonable. Education pages compare programs and money teachers with public prices, named criteria, and a clear skip rule. We wrote the education pages. We sell our own programs. That is disclosed on each one.</p>
                 </div>
             </div>
         </section>
@@ -713,14 +727,23 @@ ${schema.map((entry) => `    <script type="application/ld+json">${JSON.stringify
                 <div class="col">
                     <div class="prose">
                         <h2 id="how-to-use">How to use them</h2>
-                        <p>Run both paths through the scorecard and the scenario model with conservative assumptions. Then pressure-test the likely winner against the edge cases. Set the documentation standard before you execute, not at year end.</p>
-                        <p>Re-score the decision each year. Income, law, and circumstances change, and the option that lost last year is often the one that fits now.</p>
+                        <p>On a tax scorecard, run both paths with conservative numbers, then pressure-test the likely winner against the edge cases. Set the documentation standard before you execute, not at year end.</p>
+                        <p>On an education page, match the job first (debt, tax, rentals, or a written plan). Then check the dated price table. If a seller hides the number, assume it is high until they put it in writing.</p>
+                        <p>Re-score the decision each year. Income, law, and the live offer change.</p>
 
-                        <h2 id="the-guides">The guides</h2>
+                        <h2 id="education-guides">Education and program choices</h2>
+                        <p>Alternatives, side-by-side, best-for, what-to-know, and checklists. Each page says who wrote it and how we chose the list.</p>
+                    </div>
+                    <ul class="list-rows">
+${educationRows}
+                    </ul>
+
+                    <div class="prose">
+                        <h2 id="the-guides">Tax strategy scorecards</h2>
                         <p>Each one names the verdict up front, then shows the facts that would change it.</p>
                     </div>
                     <ul class="list-rows">
-${rows}
+${taxRows}
                     </ul>
 
                     <div class="cta">
@@ -728,13 +751,14 @@ ${rows}
                         <ul>
                             <li><a href="/tax-strategies">Tax strategies</a>. Every strategy guide in one table, grouped by the income or asset it applies to.</li>
                             <li><a href="/topics">Topics</a>. Reading paths through the article archive.</li>
+                            <li><a href="/reviews">Reviews</a>. Client interviews and written results for our programs.</li>
                         </ul>
                         <p class="cta__actions">
                             <a href="/tax-strategies" class="btn-primary">Open the strategy library</a>
                             <a href="/topics" class="btn-secondary">Browse topics</a>
                         </p>
                     </div>
-                    <p class="guide-note">Educational content only. Results vary with your facts. Confirm the decision with a qualified tax professional.</p>
+                    <p class="guide-note">Educational content only. Results vary with your facts. Confirm the decision with a qualified tax professional. Education pages are not independent reviews.</p>
                 </div>
             </div>
         </section>
@@ -750,15 +774,22 @@ ${rows}
 
 function main() {
   ensureDir(OUTPUT_DIR);
-  const pages = readData();
+  const taxPages = readData();
+  const { meta, pages: educationPages } = loadEducationGuides();
 
-  pages.forEach((page) => {
+  taxPages.forEach((page) => {
     const html = renderPage(page);
     fs.writeFileSync(path.join(OUTPUT_DIR, `${page.slug}.html`), html, 'utf8');
     console.log(`Built compare/${page.slug}.html`);
   });
 
-  fs.writeFileSync(path.join(OUTPUT_DIR, 'index.html'), renderIndex(pages), 'utf8');
+  educationPages.forEach((page) => {
+    const html = renderEducationPage(page, meta);
+    fs.writeFileSync(path.join(OUTPUT_DIR, `${page.slug}.html`), html, 'utf8');
+    console.log(`Built compare/${page.slug}.html`);
+  });
+
+  fs.writeFileSync(path.join(OUTPUT_DIR, 'index.html'), renderIndex(taxPages, educationPages), 'utf8');
   console.log('Built compare/index.html');
 }
 
