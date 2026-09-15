@@ -6,6 +6,7 @@
 # intentionally not part of the public SEO surface.
 User-agent: *
 Allow: /
+Allow: /llms/
 Disallow: /api/
 Disallow: /admin/
 Disallow: /private/
@@ -41,3 +42,4 @@ Sitemap: https://www.legacyinvestingshow.com/sitemap.xml
 
 # AI agents: See /llms.txt for structured site context
 # Full expanded context: /llms-full.txt
+# Plain text mirror of the reviews page: /llms/reviews.txt

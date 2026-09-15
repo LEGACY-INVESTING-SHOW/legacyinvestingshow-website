@@ -40,9 +40,21 @@ npm run build:css        # Minify Tailwind CSS (NODE_ENV=production)
 npm run build:blog       # Generate blog HTML from markdown in content/blog/
 npm run build:tax-strategies  # Generate tax strategy pages from data
 npm run build:sitemap    # Generate sitemap.xml
+npm run build:video-sitemap  # Generate sitemap-video.xml from data/reviews-videos.json
+npm run build:reviews-schema # Write the /reviews JSON-LD graph into reviews.html
+npm run build:reviews-text   # Write llms/reviews.txt, the plain-text mirror of /reviews
 npm run build:rss        # Generate RSS feed (feed.xml)
 npm run build:images     # Optimize images with Sharp
 ```
+
+**The /reviews proof layer.** `data/reviews-videos.json` holds one record per published client interview
+(19: 4 Vimeo, 15 YouTube) and is the single source for the `VideoObject` nodes in `reviews.html`,
+`sitemap-video.xml`, `llms/reviews.txt` and the client results block in `llms-full.txt`. Durations and upload
+dates are emitted only where the repo holds a real value, never derived from a blog post date, and
+`transcript` stays `null` until a verbatim transcript exists, so the page says "Summary" and the schema omits
+the property. `scripts/fetch-video-metadata.js` is the one-off that fills the missing `durationSeconds` and
+`uploadDate` values from the YouTube Data API (needs `YOUTUBE_API_KEY`) and the Vimeo oEmbed endpoint; it
+needs network access, it fills null fields only, and after it runs the three builders above must be run again.
 
 **Important Notes:**
 - There is no formal test suite. Test changes manually by running `npm run start` and visiting `http://localhost:3000`
@@ -738,3 +750,15 @@ For this website, replace `<project>` with `legacyinvestingshow`.
 - Generated page URL is:
   `https://www.legacyinvestingshow.com/blog/<slug>`
 - The site uses clean URLs. Do not hand out `.html` blog URLs unless specifically needed for filesystem debugging.
+
+## Cursor Cloud specific instructions
+
+This is a static site (HTML + Tailwind CSS v3 + Node CommonJS build scripts) plus an Eleventy CMS workspace in `cms/`. There is no application server or database. The startup update script runs `npm install` at the repo root and `npm install --prefix cms`; both are required because `cms/` has its own `package.json` and the full build depends on Eleventy.
+
+Standard commands live in `package.json` scripts and the `## Build & Development Commands` section above. Non-obvious caveats for future agents:
+
+- **Run the site in dev:** start `npm run dev` (Tailwind watch, rebuilds `assets/css/styles.css`) and `npm run start` (`npx serve .`, serves the repo root at `http://localhost:3000`) in two separate long-running terminals. `npm run start` serves whatever static HTML already exists — it does not build; run the relevant `build:*` step first if you changed source.
+- **Lint/test are lightweight:** `npm run lint` is just `node --check` syntax checks on a couple of scripts, and `npm run test` runs `node --test tests/*.test.js` (a few unit tests). Neither covers the generated HTML.
+- **`npm run build` runs the entire SEO pipeline** (CSS, blog, full `cms:verify` Eleventy chain, tax strategies, programmatic pages, sitemap, RSS, etc.) and rewrites hundreds of generated HTML files plus `sitemap*.xml` and `feed.xml`. Expect a very large `git diff` after a build; only commit generated files intentionally, never as a side effect of unrelated work.
+- **Harmless build warning:** `build:tools` (`import-calculators.js`) logs `calculator app not found at /Users/deveshdhardubey/calcs2; keeping committed tools/ artifacts.` This is expected in cloud/CI — that path only exists on the original author's machine. The step keeps the committed `tools/` artifacts and does not fail the build.
+- **CMS build wipes and regenerates** `cms/_site/blog` and republishes into `blog/*.html`; `cms:verify` enforces byte-level parity between `content/blog/*.md` (canonical) and `cms/src/blog/*.md`. Edit canonical markdown in `content/blog/`, not the CMS copies.

@@ -269,7 +269,7 @@ const FOOTER_GROUPS = [
     title: 'Company',
     items: [
       { href: '/about', label: 'About Preston Seo' },
-      { href: '/success-stories', label: 'Student results' },
+      { href: '/success-stories', label: 'Client results' },
       { href: '/reviews', label: 'Reviews' },
           { href: '/privacy', label: 'Privacy' },
       { href: '/terms', label: 'Terms' },
