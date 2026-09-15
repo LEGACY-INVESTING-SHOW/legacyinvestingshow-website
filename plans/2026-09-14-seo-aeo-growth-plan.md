@@ -164,7 +164,7 @@ Done:
 
 Not done, needs a person:
 - Google Tag Manager: container GTM-KQ4R2LKP is not owned by any signed-in account (preston@legacyinvestingshow.com only owns GTM-54LMWX6L and GTM-5FVTTJ7T, which are not on the site). Not needed now, since the site sends its own events. Worth finding the owner later.
-- Bing Webmaster Tools: sign-in opens a popup the browser tool cannot reach. Sign in by hand, add the site with "Import from Google Search Console", and submit the sitemap. This also feeds ChatGPT and Copilot.
+- Bing Webmaster Tools: done Sep 15. Signed in with Google as preston@legacyinvestingshow.com, imported legacyinvestingshow.com from Search Console (devesh@influetize.com granted read-only access), submitted https://www.legacyinvestingshow.com/sitemap.xml (status Processing). Reports fill in within 48 hours. IndexNow is not set up (needs a key file on the site).
 - Google signals is off in GA4. Turn on only if you want demographics and cross-device reports.
 
 ## 6. KPIs (review weekly)
