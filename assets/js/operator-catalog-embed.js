@@ -54,8 +54,8 @@
 
   function ensureIndexSection() {
     if (document.getElementById(SECTION_ID)) return;
-    var heading = document.getElementById('catalog-heading');
-    if (heading) heading.insertAdjacentHTML('afterend', section(tools, 'Tax, STR, debt & investing'));
+    var catalog = document.querySelector('[aria-labelledby="catalog-heading"]');
+    if (catalog) catalog.insertAdjacentHTML('beforeend', section(tools, 'Tax, STR, debt & investing'));
   }
 
   function inject() {

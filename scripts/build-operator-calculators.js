@@ -255,8 +255,8 @@ function writeEmbedScript(catalog) {
 
   function ensureIndexSection() {
     if (document.getElementById(SECTION_ID)) return;
-    var heading = document.getElementById('catalog-heading');
-    if (heading) heading.insertAdjacentHTML('afterend', section(tools, 'Tax, STR, debt & investing'));
+    var catalog = document.querySelector('[aria-labelledby="catalog-heading"]');
+    if (catalog) catalog.insertAdjacentHTML('beforeend', section(tools, 'Tax, STR, debt & investing'));
   }
 
   function inject() {
@@ -346,16 +346,38 @@ function attachEmbed(filePath, scriptSrc) {
     return true;
 }
 
+function insertBeforeMatchingSectionClose(html, marker, insertion) {
+    const start = html.indexOf(marker);
+    if (start === -1) return html;
+    const open = html.lastIndexOf('<section', start);
+    if (open === -1) return html;
+    let depth = 0;
+    let i = open;
+    while (i < html.length) {
+        const nextOpen = html.indexOf('<section', i);
+        const nextClose = html.indexOf('</section>', i);
+        if (nextClose === -1) return html;
+        if (nextOpen !== -1 && nextOpen < nextClose) {
+            depth += 1;
+            i = nextOpen + 8;
+            continue;
+        }
+        depth -= 1;
+        if (depth === 0) {
+            return html.slice(0, nextClose) + insertion + html.slice(nextClose);
+        }
+        i = nextClose + 10;
+    }
+    return html;
+}
+
 function injectStaticSection(indexPath, tools) {
     if (!fs.existsSync(indexPath)) return;
     let html = fs.readFileSync(indexPath, 'utf8');
     html = html.replace(/<section id="operator-calculators"[\s\S]*?<\/section>/, '');
     const section = sectionHtml(tools, 'Tax, STR, debt & investing');
-    if (html.includes('id="catalog-heading"')) {
-        html = html.replace(
-            /(<h2 id="catalog-heading"[^>]*>[\s\S]*?<\/h2>)/,
-            `$1${section}`
-        );
+    if (html.includes('aria-labelledby="catalog-heading"')) {
+        html = insertBeforeMatchingSectionClose(html, 'aria-labelledby="catalog-heading"', section);
     } else if (html.includes('class="space-y-10"')) {
         html = html.replace('class="space-y-10">', `class="space-y-10">${section}`);
     }

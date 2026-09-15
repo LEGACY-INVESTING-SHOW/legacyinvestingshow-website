@@ -159,5 +159,6 @@ test('generated operator pages exist with canonical URLs, a form, and live resul
     const headingAt = index.indexOf('id="catalog-heading"');
     const operatorAt = index.indexOf('id="operator-calculators"');
     const reactListAt = index.indexOf('class="space-y-10"');
-    assert.ok(headingAt !== -1 && operatorAt > headingAt && operatorAt < reactListAt);
+    assert.ok(headingAt !== -1 && operatorAt > headingAt);
+    assert.ok(reactListAt !== -1 && operatorAt > reactListAt);
 });
