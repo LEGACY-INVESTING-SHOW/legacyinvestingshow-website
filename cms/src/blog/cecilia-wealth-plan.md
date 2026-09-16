@@ -42,7 +42,7 @@ statistics:
       value: "$150K - $199K"
       icon: "dollar-sign"
     - label: "12-Month Tax Reduction"
-      value: "$50,200"
+      value: "$65,200"
       icon: "trending-down"
     - label: "Cash Flow Improvement"
       value: "$5,400"
@@ -54,12 +54,12 @@ statistics:
       value: "STR Launch"
       icon: "home"
 faq:
-  - question: "How does Cecilia's plan achieve $50,200 in tax reduction?"
-    answer: "The $50,200 tax reduction comes from seven integrated strategies: W-4 withholding optimization ($6,800), LLC entity formation enabling business deductions ($4,200), home office deduction ($1,440), vehicle expense deduction ($2,200), Augusta Rule utilization ($2,800), retirement account maximization including Backdoor Roth IRA ($6,800), and most significantly the Short-Term Rental Tax Loophole with cost segregation ($26,000). Each strategy builds on the LLC foundation and creates compounding tax benefits."
+  - question: "How does Cecilia's plan achieve $65,200 in tax reduction?"
+    answer: "The $65,200 tax reduction comes from seven integrated strategies: W-4 withholding optimization ($6,800), LLC entity formation enabling business deductions ($4,200), home office deduction ($1,440), vehicle expense deduction ($2,200), Augusta Rule utilization ($2,800), retirement account maximization including Backdoor Roth IRA ($6,800), and most significantly the Short-Term Rental Tax Loophole with cost segregation ($41,000). Each strategy builds on the LLC foundation and creates compounding tax benefits."
   - question: "What is the Short-Term Rental Tax Loophole and why is it central to this plan?"
     answer: "The Short-Term Rental Tax Loophole (IRS Section 469) allows STR properties with average guest stays under 7 days to be classified as non-passive business activities. This means losses can offset W-2 income if material participation standards are met (100+ hours annually). Combined with cost segregation studies that accelerate depreciation, this strategy can generate $25,000-$35,000 in year-one tax deductions for a typical STR property, directly reducing taxable W-2 income."
   - question: "Can Cecilia really replace W-2 income within 12 months?"
-    answer: "Complete W-2 income replacement in 12 months is aggressive but possible with focused execution. The plan targets: (1) Immediate tax savings of $50,200 improving cash flow, (2) STR business generating $3,000-$5,000 monthly net profit by month 8-12, (3) Building toward $8,000-$12,000 monthly total income from STR operations by month 18-24. The 12-month milestone is STR launch and positive cash flow; full income replacement typically requires 18-36 months depending on market conditions and scaling speed."
+    answer: "Complete W-2 income replacement in 12 months is aggressive but possible with focused execution. The plan targets: (1) Immediate tax savings of $65,200 improving cash flow, (2) STR business generating $3,000-$5,000 monthly net profit by month 8-12, (3) Building toward $8,000-$12,000 monthly total income from STR operations by month 18-24. The 12-month milestone is STR launch and positive cash flow; full income replacement typically requires 18-36 months depending on market conditions and scaling speed."
   - question: "How does the $500K+ retirement asset position factor into the strategy?"
     answer: "The $500K+ retirement position provides financial stability and optionality. Rather than accessing these funds (which would trigger taxes and penalties), the plan uses this as evidence of financial sophistication and stability for lenders when securing business financing. The retirement accounts continue compounding while the STR business generates current income and tax benefits. This separation protects long-term wealth while building current income streams."
   - question: "What makes this a 'strategic' path versus just starting a side business?"
@@ -72,7 +72,7 @@ faq:
 
 Cecilia's wealth plan represents a focused 12-month implementation strategy designed to transition from W-2 employment dependency toward financial independence through systematic tax optimization and strategic short-term rental business development.
 
-With household income in the $150,000-$199,000 range, $500,000+ in retirement assets, and a primary goal of launching a Short-Term Rental business to replace W-2 income, Cecilia's plan targets $50,200 in year-one tax reduction combined with $5,400 in cash flow improvement — creating both immediate financial benefit and long-term income replacement potential.
+With household income in the $150,000-$199,000 range, $500,000+ in retirement assets, and a primary goal of launching a Short-Term Rental business to replace W-2 income, Cecilia's plan targets $65,200 in year-one tax reduction combined with $5,400 in cash flow improvement — creating both immediate financial benefit and long-term income replacement potential.
 
 The December 2025 plan date suggests year-end tax planning urgency, with the strategy designed to capture current-year deductions while positioning for aggressive 2026 implementation. This is the optimal timing for W-4 adjustments, entity formation, and setting the foundation for January STR launch.
 
@@ -94,7 +94,7 @@ Cecilia represents a classic "high-earner W-2 employee" profile — substantial 
 
 | Category | Amount | Source |
 |----------|--------|--------|
-| Tax Reduction (7 strategies) | $50,200 | W-4, LLC, STR loophole, cost segregation, home office, vehicle, Augusta Rule |
+| Tax Reduction (7 strategies) | $65,200 | W-4, LLC, STR loophole, cost segregation, home office, vehicle, Augusta Rule |
 | Cash Flow Improvement | $5,400 | Recaptured over-withholding + business optimization |
 | **Total Year-One Value** | **$55,600** | Immediate financial benefit |
 
@@ -221,9 +221,9 @@ The $4,200 tax value comes from enabled deductions that would be unavailable wit
 
 **Total LLC-enabled value**: $4,200+
 
-## Strategy 3: Short-Term Rental Tax Loophole ($26,000 Value)
+## Strategy 3: Short-Term Rental Tax Loophole ($41,000 Value)
 
-### The $26,000 Centerpiece Strategy
+### The $41,000 Centerpiece Strategy
 
 This is the dominant strategy in Cecilia's plan, representing nearly 50% of total year-one tax value. The [Short-Term Rental Tax Loophole](/tax-strategies/short-term-rental-loophole.html) allows active participants in short-term rental businesses to treat losses as non-passive, enabling offset against W-2 income.
 
@@ -263,25 +263,25 @@ A study that reclassifies property components for accelerated depreciation:
 
 ### Bonus Depreciation Enhancement
 
-**2025 Bonus Depreciation Rules:**
-- 40% bonus depreciation for qualified property placed in service in 2025
-- 20% for 2026 (sunset looming)
+**2025–2026 Bonus Depreciation Rules:**
+- 100% bonus depreciation for qualified property acquired after January 19, 2025 and placed in service in the deduction year
+- Binding contracts on or before January 19, 2025 stay on the old phase-down (20% in 2026)
 
 **Impact on Cost Segregation:**
-The 5-year and 15-year property portions identified through cost segregation qualify for bonus depreciation. On a $400,000 property with $120,000 in 5/15-year components:
-- 40% bonus on $120,000 = $48,000 additional year-one depreciation
-- Plus regular depreciation on remaining basis
-- **Total potential year-one deduction**: $50,000-$70,000
+The 5-year and 15-year property portions identified through cost segregation qualify for bonus depreciation. On a $400,000 property with $120,000 in 5/15-year components, acquired after January 19, 2025:
+- 100% bonus on $120,000 = $120,000 year-one depreciation
+- No remaining 5/15-year basis to depreciate later
+- **Total potential year-one deduction** on those components: $120,000, plus regular 27.5-year depreciation on the building shell
 
-### The $26,000 Value Breakdown
+### The $41,000 Value Breakdown
 
 | Component | Amount |
 |-----------|--------|
 | Cost segregation (5-year property accelerated) | $12,000 |
-| Bonus depreciation (40% of qualified property) | $10,000 |
+| Bonus depreciation (100% of qualified property acquired after January 19, 2025) | $25,000 |
 | Startup cost deduction | $2,500 |
 | Organizational expense deduction | $1,500 |
-| **Total STR tax value** | **$26,000** |
+| **Total STR tax value** | **$41,000** |
 
 ## Strategy 4: Home Office Deduction ($1,440 Value)
 
@@ -603,9 +603,9 @@ Cecilia's plan requires 100+ hours annually of material participation — this i
 
 ## Frequently Asked Questions
 
-### How does Cecilia's plan achieve $50,200 in tax reduction?
+### How does Cecilia's plan achieve $65,200 in tax reduction?
 
-The $50,200 tax reduction comes from seven integrated strategies: W-4 withholding optimization ($6,800), LLC entity formation enabling business deductions ($4,200), home office deduction ($1,440), vehicle expense deduction ($2,200), [Augusta Rule](/tax-strategies/augusta-rule.html) utilization ($2,800), retirement account maximization including Backdoor Roth IRA ($6,800), and most significantly the [Short-Term Rental Tax Loophole](/tax-strategies/short-term-rental-loophole.html) with [cost segregation](/tax-strategies/cost-segregation.html) ($26,000). Each strategy builds on the LLC foundation and creates compounding tax benefits.
+The $65,200 tax reduction comes from seven integrated strategies: W-4 withholding optimization ($6,800), LLC entity formation enabling business deductions ($4,200), home office deduction ($1,440), vehicle expense deduction ($2,200), [Augusta Rule](/tax-strategies/augusta-rule.html) utilization ($2,800), retirement account maximization including Backdoor Roth IRA ($6,800), and most significantly the [Short-Term Rental Tax Loophole](/tax-strategies/short-term-rental-loophole.html) with [cost segregation](/tax-strategies/cost-segregation.html) ($41,000). Each strategy builds on the LLC foundation and creates compounding tax benefits.
 
 ### What is the Short-Term Rental Tax Loophole and why is it central to this plan?
 
@@ -613,7 +613,7 @@ The Short-Term Rental Tax Loophole (IRS Section 469) allows STR properties with 
 
 ### Can Cecilia really replace W-2 income within 12 months?
 
-Complete W-2 income replacement in 12 months is aggressive but possible with focused execution. The plan targets: (1) Immediate tax savings of $50,200 improving cash flow, (2) STR business generating $3,000-$5,000 monthly net profit by month 8-12, (3) Building toward $8,000-$12,000 monthly total income from STR operations by month 18-24. The 12-month milestone is STR launch and positive cash flow; full income replacement typically requires 18-36 months depending on market conditions and scaling speed.
+Complete W-2 income replacement in 12 months is aggressive but possible with focused execution. The plan targets: (1) Immediate tax savings of $65,200 improving cash flow, (2) STR business generating $3,000-$5,000 monthly net profit by month 8-12, (3) Building toward $8,000-$12,000 monthly total income from STR operations by month 18-24. The 12-month milestone is STR launch and positive cash flow; full income replacement typically requires 18-36 months depending on market conditions and scaling speed.
 
 ### How does the $500K+ retirement asset position factor into the strategy?
 

@@ -118,7 +118,7 @@ Traditional rental property depreciation spans 27.5 years — a slow tax benefit
 - **5-year property**: Decorative fixtures, specialty electrical, carpeting
 - **7-year property**: Furniture, appliances, equipment
 - **15-year property**: Land improvements, landscaping, paving
-- **Bonus depreciation** (80% in 2025, phasing down) applies to these shorter schedules
+- **Bonus depreciation** (100% for property acquired after January 19, 2025; 20% in 2026 only on pre-January 20, 2025 binding contracts) applies to these shorter schedules
 
 **For Henri and Melica's Portfolio:**
 | Property Value | Cost Seg Allocation | Year 1 Deduction | Tax Savings (35%) |

@@ -42,7 +42,7 @@ statistics:
       value: "$770,000"
       icon: "dollar-sign"
     - label: "Path A Year-One Value"
-      value: "$118,500 - $339,760"
+      value: "$131,860 - $398,280"
       icon: "trending-up"
     - label: "Tax Year"
       value: "2025 High"
@@ -58,10 +58,10 @@ faq:
     answer: "A severance year creates a one-time spike in taxable income that likely pushes Andreea into the 37% federal tax bracket (plus state taxes and 3.8% NIIT). Without aggressive planning, $770,000 income could generate $285,000+ in federal taxes alone. This creates urgency because: (1) The high bracket is temporary — future income likely lower, (2) Large tax liabilities reduce net severance value significantly, (3) Strategic deductions at 37% are worth nearly 4x more than deductions at 12%, (4) Equipment and property must be placed in service by December 31 to capture 2025 deductions. Missing this window costs $100,000+ in lost tax savings."
   - question: "What is the difference between Path A (STR with cost segregation) and the equipment-heavy asset purchase option?"
     answer: "Path A involves acquiring a short-term rental property and executing a cost segregation study to accelerate depreciation. A $500K property with cost segregation might generate $100K-$150K in year-one deductions (including bonus depreciation). The equipment-heavy alternative involves purchasing business equipment (Section 179 eligible) to create immediate deductions. Equipment purchases depreciate faster (often 100% in year one via Section 179) but don't build equity or generate ongoing income. Path A creates both tax deductions AND cash-flowing assets; equipment purchases create deductions but limited ongoing value. The decision depends on: capital available, time for property acquisition, operational capacity for STR management, and long-term wealth goals."
-  - question: "How can cost segregation generate $118,500 to $339,760 in year-one value?"
-    answer: "These figures represent the combined impact of multiple strategies at high tax rates. Path A calculation: (1) Cost segregation on $500K-$800K property creates $100K-$200K in accelerated depreciation, (2) 40% bonus depreciation (2025 rate) on qualified property adds $40K-$80K, (3) STR operational losses (startup costs, first-year operations) add $15K-$30K, (4) Augusta Rule utilization adds $2K-$3K, (5) Other deductions (vehicle, home office, etc.) add $5K-$10K. Total deductions: $162K-$323K. At 37% federal + state + NIIT (potentially 45%+ combined), this creates $73K-$145K in federal tax savings alone. The $118K-$339K range includes federal, state, and potential NIIT savings across conservative to aggressive scenarios with different property values and deduction capture rates."
+  - question: "How can cost segregation generate $131,860 to $398,280 in year-one value?"
+    answer: "These figures represent the combined impact of multiple strategies at high tax rates, assuming the property is acquired after January 19, 2025 so 100% bonus depreciation applies. Path A calculation: (1) Cost segregation on $500K-$800K property creates $100K-$200K in accelerated depreciation, (2) 100% bonus depreciation on qualified property acquired after January 19, 2025 adds $100K-$200K, (3) STR operational losses (startup costs, first-year operations) add $15K-$30K, (4) Augusta Rule utilization adds $2K-$3K, (5) Other deductions (vehicle, home office, etc.) add $5K-$10K. Total deductions: $222K-$443K. At 37% federal + state + NIIT (potentially 45%+ combined), this creates $100K-$200K in federal tax savings alone. The $131,860-$398,280 range includes federal, state, and potential NIIT savings across conservative to aggressive scenarios with different property values and deduction capture rates. Property under a binding contract on or before January 19, 2025 stays on the old 20% 2026 phase-down."
   - question: "What is the 100% bonus depreciation focus and how does it apply to 2025?"
-    answer: "Bonus depreciation allows immediate expensing of qualified property in the year placed in service. The Tax Cuts and Jobs Act created 100% bonus depreciation through 2022, but it's phasing down: 80% in 2023, 60% in 2024, 40% in 2025, 20% in 2026, and 0% in 2027+. Despite the phase-down, 40% bonus depreciation in 2025 remains powerful for high earners. On $200K of 5-year property identified through cost segregation, 40% bonus = $80K immediate deduction plus regular depreciation on remaining basis. Combined with Section 179 (separate $1.25M limit), strategic asset purchases in a $770K income year can generate $200K-$400K in total first-year deductions."
+    answer: "Bonus depreciation allows immediate expensing of qualified property in the year placed in service. For property acquired after January 19, 2025 the rate is 100 percent, made permanent in Section 168(k). Property under a written binding contract on or before January 19, 2025 stays on the old phase-down and gets 20 percent in 2026. On $200K of 5-year property identified through cost segregation, 100% bonus = $200K immediate deduction. Combined with Section 179 (separate $1.25M limit), strategic asset purchases in a $770K income year can generate $200K-$400K in total first-year deductions. Acquisition date and placed-in-service date are both required: acquire after January 19, 2025, then place in service in the year you want the deduction."
   - question: "Should Andreea prioritize the STR acquisition or equipment-heavy purchase for maximum tax benefit?"
     answer: "For a severance year, Path A (STR with cost segregation) is generally superior because: (1) Creates ongoing income stream post-severance, (2) Builds equity for long-term wealth, (3) Qualifies for both cost segregation AND bonus depreciation, (4) Provides material participation opportunity for active loss offset, (5) Scales for future income replacement. Equipment-heavy purchases create immediate deductions but: (1) Limited ongoing utility, (2) No equity building, (3) May not fully utilize Section 179 if income drops post-severance, (4) Requires actual business use to sustain deductions. The equipment strategy works better as supplement to STR (operational equipment for the property) rather than standalone alternative. Exception: If Andreea has an existing business with immediate equipment needs, strategic Section 179 purchases make sense."
 ---
@@ -96,36 +96,38 @@ The October plan date creates a narrow 60-90 day window for 2025 tax year action
 - Cost segregation provider selection (studies take 2-4 weeks)
 - Property acquisition timeline (30-45 day closings typical)
 
-## Executive Summary: The $339,760 Tax Optimization Ceiling
+## Executive Summary: The $398,280 Tax Optimization Ceiling
 
 ### Path A: STR Acquisition with Cost Segregation
 
-**Scenario Range: $118,500 - $339,760 Year-One Value**
+**Scenario Range: $131,860 - $398,280 Year-One Value**
 
-This extraordinary range reflects different property values, acquisition timing, and deduction capture rates. The components:
+Figures below assume the property is **acquired after January 19, 2025**, so qualified 5-year and 15-year components take **100% bonus depreciation**. Property under a written binding contract on or before that date stays on the old phase-down (20% in 2026). See the [bonus depreciation](/tax-strategies/bonus-depreciation) guide.
 
-**Conservative Path A ($118,500):**
+This range reflects different property values, acquisition timing, and deduction capture rates. The components:
+
+**Conservative Path A ($131,860):**
 - Property acquisition: $400,000 (late November, limited 2025 depreciation)
 - Cost segregation benefit: $80,000 accelerated depreciation
-- Bonus depreciation (40%): $32,000
+- Bonus depreciation (100% of qualified property acquired after January 19, 2025): $80,000
 - STR startup/operational losses: $15,000
 - Other deductions (vehicle, home office, Augusta): $8,000
-- Total deductions: $135,000
-- Tax value at 37% federal + 5% state: $56,700 federal + $6,750 state = $63,450
+- Total deductions: $183,000
+- Tax value at 37% federal + 5% state: $67,710 federal + $9,150 state = $76,860
 - Plus operational cash flow value: $55,000
-- **Total year-one value: $118,500**
+- **Total year-one value: $131,860**
 
-**Aggressive Path A ($339,760):**
+**Aggressive Path A ($398,280):**
 - Property acquisition: $800,000 (early October, full 2025 depreciation)
 - Cost segregation benefit: $200,000 accelerated depreciation
-- Bonus depreciation (40%): $80,000
+- Bonus depreciation (100% of qualified property acquired after January 19, 2025): $200,000
 - Equipment purchases (Section 179): $50,000
 - STR startup/operational losses: $25,000
 - Augusta Rule and other deductions: $12,000
-- Total deductions: $367,000
-- Tax value at 37% federal + 8% state + 3.8% NIIT: $135,830 federal + $29,360 state + $13,946 NIIT = $179,136
+- Total deductions: $487,000
+- Tax value at 37% federal + 8% state + 3.8% NIIT: $180,190 federal + $38,960 state + $18,506 NIIT = $237,656
 - Plus operational cash flow value: $160,624
-- **Total year-one value: $339,760**
+- **Total year-one value: $398,280**
 
 ### The STR vs Equipment Decision Matrix
 
@@ -225,27 +227,29 @@ Even at $10,000 study cost for an $800,000 property, the tax savings from accele
 
 ### Bonus Depreciation Calculation (2025)
 
-**40% Bonus Depreciation on Qualified Property:**
+**100% Bonus Depreciation on Qualified Property Acquired After January 19, 2025:**
+
+Stamp: placed-in-service still matters for the year of the deduction, but the **rate** is 100% only if the property was acquired after January 19, 2025. A binding contract on or before that date stays on the old phase-down (20% in 2026).
 
 **Example: $500,000 Property with Cost Segregation**
 - Total 5-year property identified: $100,000 (20%)
 - Total 15-year property identified: $50,000 (10%)
 - Total 27.5-year property: $350,000 (70%)
 
-**Bonus Depreciation (40% of 5/15-year property):**
-- 5-year property bonus: $100,000 × 40% = $40,000
-- 15-year property bonus: $50,000 × 40% = $20,000
-- **Total bonus depreciation**: $60,000
+**Bonus Depreciation (100% of 5/15-year property):**
+- 5-year property bonus: $100,000 × 100% = $100,000
+- 15-year property bonus: $50,000 × 100% = $50,000
+- **Total bonus depreciation**: $150,000
 
 **Regular First-Year Depreciation:**
-- 5-year property remaining: $60,000 × 20% = $12,000
-- 15-year property remaining: $30,000 × 6.67% = $2,000
+- 5-year property remaining: $0 (fully expensed under 100% bonus)
+- 15-year property remaining: $0 (fully expensed under 100% bonus)
 - 27.5-year property: $350,000 ÷ 27.5 × 0.5 month = $6,364
-- **Total regular depreciation**: $20,364
+- **Total regular depreciation**: $6,364
 
-**2025 Total Depreciation Deduction: $80,364**
+**2025 Total Depreciation Deduction: $156,364**
 
-**Tax Value at 45% Combined Rate: $36,164**
+**Tax Value at 45% Combined Rate: $70,364**
 
 ## Strategy 3: Equipment and Section 179 Analysis
 
@@ -278,7 +282,8 @@ Rather than an "equipment-heavy asset purchase" as an alternative to STR, Andree
 - Applies to new and used equipment
 
 **Bonus Depreciation (Percentage Write-off):**
-- 2025 rate: 40%
+- Rate: 100% for qualified property acquired after January 19, 2025
+- Binding contracts on or before January 19, 2025: 20% in 2026
 - No dollar limit
 - Automatic (no election needed)
 - Applies to new and used property (with limitations)
@@ -505,13 +510,13 @@ A severance year creates a one-time spike in taxable income that likely pushes A
 
 Path A involves acquiring a short-term rental property and executing a [cost segregation study](/tax-strategies/cost-segregation.html) to accelerate depreciation. A $500K property with cost segregation might generate $100K-$150K in year-one deductions (including [bonus depreciation](/tax-strategies/bonus-depreciation.html)). The equipment-heavy alternative involves purchasing business equipment (Section 179 eligible) to create immediate deductions. Equipment purchases depreciate faster (often 100% in year one via Section 179) but don't build equity or generate ongoing income. Path A creates both tax deductions AND cash-flowing assets; equipment purchases create deductions but limited ongoing value. The decision depends on: capital available, time for property acquisition, operational capacity for STR management, and long-term wealth goals.
 
-### How can cost segregation generate $118,500 to $339,760 in year-one value?
+### How can cost segregation generate $131,860 to $398,280 in year-one value?
 
-These figures represent the combined impact of multiple strategies at high tax rates. Path A calculation: (1) Cost segregation on $500K-$800K property creates $100K-$200K in accelerated depreciation, (2) 40% [bonus depreciation](/tax-strategies/bonus-depreciation.html) (2025 rate) on qualified property adds $40K-$80K, (3) STR operational losses (startup costs, first-year operations) add $15K-$30K, (4) [Augusta Rule](/tax-strategies/augusta-rule.html) utilization adds $2K-$3K, (5) Other deductions (vehicle, home office, etc.) add $5K-$10K. Total deductions: $162K-$323K. At 37% federal + state + NIIT (potentially 45%+ combined), this creates $73K-$145K in federal tax savings alone. The $118K-$339K range includes federal, state, and potential NIIT savings across conservative to aggressive scenarios with different property values and deduction capture rates.
+These figures represent the combined impact of multiple strategies at high tax rates, assuming the property is acquired after January 19, 2025 so 100% [bonus depreciation](/tax-strategies/bonus-depreciation) applies. Path A calculation: (1) Cost segregation on $500K-$800K property creates $100K-$200K in accelerated depreciation, (2) 100% bonus depreciation on qualified property acquired after January 19, 2025 adds $100K-$200K, (3) STR operational losses (startup costs, first-year operations) add $15K-$30K, (4) [Augusta Rule](/tax-strategies/augusta-rule) utilization adds $2K-$3K, (5) Other deductions (vehicle, home office, etc.) add $5K-$10K. Total deductions: $222K-$443K. At 37% federal + state + NIIT (potentially 45%+ combined), this creates $100K-$200K in federal tax savings alone. The $131,860-$398,280 range includes federal, state, and potential NIIT savings across conservative to aggressive scenarios with different property values and deduction capture rates. Property under a binding contract on or before January 19, 2025 stays on the old 20% 2026 phase-down.
 
 ### What is the 100% bonus depreciation focus and how does it apply to 2025?
 
-Bonus depreciation allows immediate expensing of qualified property in the year placed in service. The Tax Cuts and Jobs Act created 100% bonus depreciation through 2022, but it's phasing down: 80% in 2023, 60% in 2024, 40% in 2025, 20% in 2026, and 0% in 2027+. Despite the phase-down, 40% bonus depreciation in 2025 remains powerful for high earners. On $200K of 5-year property identified through cost segregation, 40% bonus = $80K immediate deduction plus regular depreciation on remaining basis. Combined with Section 179 (separate $1.25M limit), strategic asset purchases in a $770K income year can generate $200K-$400K in total first-year deductions.
+Bonus depreciation allows immediate expensing of qualified property in the year placed in service. For property acquired after January 19, 2025 the rate is 100 percent, made permanent in Section 168(k). Property under a written binding contract on or before January 19, 2025 stays on the old phase-down and gets 20 percent in 2026. On $200K of 5-year property identified through cost segregation, 100% bonus = $200K immediate deduction. Combined with Section 179 (separate $1.25M limit), strategic asset purchases in a $770K income year can generate $200K-$400K in total first-year deductions. Acquisition date and placed-in-service date are both required: acquire after January 19, 2025, then place in service in the year you want the deduction.
 
 ### Should Andreea prioritize the STR acquisition or equipment-heavy purchase for maximum tax benefit?
 
@@ -519,7 +524,7 @@ For a severance year, Path A (STR with cost segregation) is generally superior b
 
 ## Ready to Execute Your High-Income Severance Year Strategy?
 
-Andreea's October 2025 plan demonstrates that severance years — despite their tax challenges — offer extraordinary optimization opportunities. The combination of temporary high income, available capital, and strategic tax code provisions can generate $118,000-$339,000 in year-one value through Path A execution.
+Andreea's October 2025 plan demonstrates that severance years — despite their tax challenges — offer extraordinary optimization opportunities. The combination of temporary high income, available capital, and 100% bonus depreciation for property acquired after January 19, 2025 can generate $131,860-$398,280 in year-one value through Path A execution.
 
 The key constraint is time. October planning leaves 60-90 days for implementation. Property acquisition, cost segregation studies, and equipment placement must align before December 31. Every week of delay costs $5,000-$10,000 in lost tax savings at this income level.
 

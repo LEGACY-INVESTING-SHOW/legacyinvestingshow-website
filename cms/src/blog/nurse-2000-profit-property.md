@@ -1,14 +1,13 @@
 ---
 title: >-
-  How This Nurse Locked Up a $2,000/Month Profit Property While Working
-  Full-Time (2026)
+  How This Nurse Hit $5,500/Month Cash Flow While Working Full-Time (2026)
 titleTemplate: '%s | Legacy Investing Show Success Stories'
 description: >-
   Kirk went from full-time nurse with no business experience to $5,500/month
   cash flow with Airbnb arbitrage in California. Learn how he overcame fear of
   landlord outreach and achieved 87% occupancy.
 date: 2025-11-11T00:00:00.000Z
-modifiedDate: 2026-01-23T00:00:00.000Z
+modifiedDate: 2026-09-16T00:00:00.000Z
 author: Preston Seo
 authorTitle: 'Founder, Legacy Investing Show'
 authorCredentials: '2,000+ students trained, $10M+ student revenue generated'
@@ -30,8 +29,8 @@ tags:
   - short-term rental
 image: /assets/images/blog/success-stories/kirk-nurse-airbnb.jpg
 imageAlt: >-
-  How This Nurse Locked Up a $2,000/Month Profit Property While Working
-  Full-Time (2026) - Legacy Investing Show
+  How This Nurse Hit $5,500/Month Cash Flow While Working Full-Time (2026) -
+  Legacy Investing Show
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
@@ -40,14 +39,13 @@ youtubeId: DvTfbzphZjo
 schema:
   - type: Article
     headline: >-
-      How This Nurse Locked Up a $2,000/Month Profit Property While Working
-      Full-Time (2026)
+      How This Nurse Hit $5,500/Month Cash Flow While Working Full-Time (2026)
     datePublished: '2026-04-11T00:00:00Z'
-    dateModified: '2026-01-23T00:00:00Z'
+    dateModified: '2026-09-16T00:00:00Z'
   - type: VideoObject
     name: >-
-      How This Nurse Locked Up a $2,000/Month Profit Property While Working
-      Full-Time (2026) - Full Interview
+      How This Nurse Hit $5,500/Month Cash Flow While Working Full-Time (2026) -
+      Full Interview
     thumbnailUrl: 'https://img.youtube.com/vi/DvTfbzphZjo/maxresdefault.jpg'
     embedUrl: 'https://www.youtube.com/embed/DvTfbzphZjo'
   - type: HowTo

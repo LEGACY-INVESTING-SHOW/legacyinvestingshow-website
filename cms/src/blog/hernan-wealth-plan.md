@@ -368,26 +368,26 @@ The foundation phase focuses on maximizing cash flow and building liquid capital
 
 **1. Bonus Depreciation Maximization (2025-2026):**
 
-The Tax Cuts and Jobs Act provides bonus depreciation for qualifying property, though the percentage phases down:
+Qualified property acquired after January 19, 2025 takes 100% bonus depreciation in the year it is placed in service (Section 168(k)). Property under a written binding contract on or before that date stays on the old phase-down (20% in 2026).
 
-- 2025: 40% bonus depreciation
-- 2026: 20% bonus depreciation
-- 2027+: 0% (unless legislation extends)
+- Acquired after January 19, 2025: 100% bonus depreciation
+- Binding contract on or before January 19, 2025: 20% in 2026
 
-*Application to Investment Property:*
+*Application to Investment Property (acquired after January 19, 2025):*
 - Property purchase price: $275,000
 - Building value (excluding land): $220,000
 - Cost segregation identifies short-life property: $55,000 (25%)
-- Bonus depreciation (40%): $22,000 immediate deduction
-- Remaining $33,000: 5-year depreciation schedule
-- Total Year 1 depreciation: $28,600 ($22,000 bonus + $6,600 regular)
+- Bonus depreciation (100%): $55,000 immediate deduction
+- Remaining short-life basis: $0
+- Regular 27.5-year depreciation on remaining building: $165,000 ÷ 27.5 = $6,000
+- Total Year 1 depreciation: $61,000 ($55,000 bonus + $6,000 regular)
 
 *Tax Savings Calculation:*
-- Total Year 1 deductions: $28,600
+- Total Year 1 deductions: $61,000
 - Marginal tax rate: 24%
-- Federal tax savings: $6,864
+- Federal tax savings: $14,640
 - State tax savings: $1,800-$2,400
-- **Total Year 1 tax benefit: $8,664-$9,264**
+- **Total Year 1 tax benefit: $16,440-$17,040**
 
 **2. Cost Segregation Study Implementation:**
 

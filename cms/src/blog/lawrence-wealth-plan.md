@@ -324,15 +324,16 @@ Using HELOC funds as down payment on investment properties while maintaining liq
 **2. Bonus Depreciation Maximization:**
 
 *2025-2026 Bonus Depreciation:*
-- 40% bonus depreciation available
+- 100% bonus depreciation for qualified property acquired after January 19, 2025
+- Binding contracts on or before January 19, 2025: 20% in 2026
 - Applies to furniture, fixtures, equipment in STR
 - Also applies to cost segregation components
 
-*Example:*
+*Example (acquired after January 19, 2025):*
 - STR furniture package: $15,000
-- 40% bonus depreciation: $6,000 immediate deduction
-- Remaining $9,000: 5-year depreciation schedule
-- Tax savings at 24%: $1,440 first year
+- 100% bonus depreciation: $15,000 immediate deduction
+- Remaining basis: $0
+- Tax savings at 24%: $3,600 first year
 
 **3. Cost Segregation Study:**
 
@@ -345,8 +346,8 @@ Using HELOC funds as down payment on investment properties while maintaining liq
 *Example:*
 - $325,000 STR property
 - Cost segregation identifies 20% short-life property: $65,000
-- 40% bonus on $65,000: $26,000 immediate deduction
-- Remaining depreciation benefits over 5-15 years
+- 100% bonus on $65,000 (acquired after January 19, 2025): $65,000 immediate deduction
+- Remaining 27.5-year building basis depreciates on the regular schedule
 
 **4. Augusta Rule Application (Section 280A(g)):**
 

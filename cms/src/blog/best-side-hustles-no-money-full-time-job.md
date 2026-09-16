@@ -12,7 +12,7 @@ date: 2026-01-24T00:00:00.000Z
 modifiedDate: 2026-01-24T00:00:00.000Z
 author: Preston Seo
 authorTitle: 'Founder, Legacy Investing Show'
-authorCredentials: '50+ rental units, assisted living facility owner, 2,000+ students trained'
+authorCredentials: '47 rental units across 12 properties, $15M+ portfolio as of 2026, 2,000+ students trained'
 category: Side Hustles
 canonical: >-
   https://www.legacyinvestingshow.com/blog/best-side-hustles-no-money-full-time-job
@@ -192,7 +192,7 @@ wordCount: '4677'
 ---
 **The average millionaire has seven income streams.** If you're reading this, you're likely not in the 99% content with a single paycheck - you're in the top 1% actively seeking financial freedom. Today, we're breaking down the four best side hustles you can start with absolutely no money while keeping your full-time job.
 
-These aren't theoretical ideas. These are proven strategies that we're currently doing at Legacy Investing Show or that people in our network are actively using to generate real income. Our portfolio includes 50+ rental units, flips, wholesales, and an assisted living facility - and several of these side hustles are how we got started.
+These aren't theoretical ideas. These are proven strategies that we're currently doing at Legacy Investing Show or that people in our network are actively using to generate real income. Our portfolio includes 47 rental units across 12 properties as of 2026 ($15M+), plus flips, wholesales, and an assisted living facility - and several of these side hustles are how we got started.
 
 **In this article:**
 - [Why Start a Side Hustle](#why-start-side-hustle)
@@ -844,7 +844,7 @@ The strategies in this guide work - we know because we're using them and our com
 
 **Legacy Investing Show** is Preston Seo's comprehensive training platform for building wealth through real estate and entrepreneurship. Our portfolio includes:
 
-- **50+ rental units** across multiple markets
+- **47 rental units across 12 properties** as of 2026 ($15M+ portfolio)
 - **Flips and wholesale deals** generating active income
 - **Assisted living facility** for diversified cash flow
 - **2,000+ students** trained in our programs
