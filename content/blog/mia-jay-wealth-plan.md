@@ -67,7 +67,7 @@ faq:
   - question: "What happens to the $169,700 in excess deductions?"
     answer: "Excess deductions create Net Operating Losses (NOLs) that carry forward indefinitely to offset future taxable income. This creates a 'tax shield' that protects future income — whether from salary increases, business profits, or investment gains. The $169,700 excess from year one provides years of future tax protection, making this a multi-year wealth acceleration strategy."
   - question: "How does cost segregation on multiple properties compound the benefit?"
-    answer: "Each property's cost segregation study identifies 20-30% of value as eligible for accelerated depreciation. With bonus depreciation at 80% in 2025, each $500K property generates $100K in year-one write-offs. Three properties = $300K in deductions. Combined with operating expense losses, this creates the $259,700 total tax shelter. The key is timing acquisitions within the same tax year for maximum impact."
+    answer: "Each property's cost segregation study identifies 20-30% of value as eligible for accelerated depreciation. With 100% bonus depreciation for qualified property acquired after January 19, 2025, each $500K property generates $125K in year-one write-offs on a 25% short-life allocation. Three properties = $375K in deductions. Combined with operating expense losses, this creates the $259,700 total tax shelter. The key is timing acquisitions within the same tax year for maximum impact."
   - question: "Why is Massachusetts specifically mentioned in this tax strategy?"
     answer: "Massachusetts state tax laws interact with federal strategies. With a flat 5% state income tax (9% on short-term capital gains), state tax savings add $13,500+ annually to the federal benefit. Additionally, Massachusetts has specific rules around short-term rentals, pass-through entity taxes, and estate planning that require local expertise to optimize fully within this wealth plan."
 ---
@@ -222,11 +222,11 @@ For STR properties, Mia and Jay must meet **material participation standards** (
 - $500,000 property ÷ 27.5 years = $18,182/year
 - Boring, slow, minimal annual impact
 
-**Cost Segregation + Bonus Depreciation:**
-- **5-year property** (25% of value): $125,000 × 80% bonus = $100,000 year one
-- **7-year property** (5% of value): $25,000 × 80% bonus = $20,000 year one
+**Cost Segregation + Bonus Depreciation (acquired after January 19, 2025):**
+- **5-year property** (25% of value): $125,000 × 100% bonus = $125,000 year one
+- **7-year property** (5% of value): $25,000 × 100% bonus = $25,000 year one
 - **Remaining 27.5-year**: $350,000 ÷ 27.5 = $12,727/year
-- **Total Year One**: $132,727 vs. $18,182 (7.3× acceleration)
+- **Total Year One**: $162,727 vs. $18,182 (8.9× acceleration)
 
 ### Cost Segregation Study Process
 
@@ -573,22 +573,19 @@ The $169,700 NOL isn't "wasted" — it's a **tax shield asset** protecting futur
 
 **Reality**: Well-documented returns with reasonable positions face minimal audit risk. IRS focuses on clearly fraudulent schemes, not sophisticated legal optimization.
 
-### What happens when bonus depreciation phases down?
+### What happens if bonus depreciation changes again?
 
-**Bonus depreciation schedule:**
-- 2025: 80%
-- 2026: 60%
-- 2027: 40%
-- 2028: 20%
-- 2029+: 0%
+**Current law (Section 168(k)):**
+- 100% for qualified property acquired after January 19, 2025
+- Binding contracts on or before January 19, 2025 stay on the old phase-down (20% in 2026)
 
 **Strategy response:**
-- Front-load acquisitions in high-bonus years (2025-2026)
+- Confirm acquisition date vs. binding-contract date with a CPA before modeling
 - Cost segregation still valuable (5, 7, 15-year schedules remain accelerated)
-- Section 179 expensing ($1.16M annual limit) for qualified property
-- Different depreciation methods (150% declining balance vs. straight-line)
+- Section 179 expensing for qualified property remains a parallel tool
+- Different depreciation methods (150% declining balance vs. straight-line) still apply if bonus does not
 
-**Post-2029**: Cost segregation still creates 3-4× depreciation acceleration vs. straight-line. Strategy remains viable, just less aggressive.
+Cost segregation still creates 3-4× depreciation acceleration vs. straight-line even without bonus. The strategy remains viable.
 
 ### Can I do this with existing properties, or only new acquisitions?
 
@@ -600,7 +597,7 @@ The $169,700 NOL isn't "wasted" — it's a **tax shield asset** protecting futur
 **Example**: Property owned 3 years with no cost segregation:
 - Current basis: $400,000 remaining
 - Cost segregation identifies $100,000 in 5-year property
-- Form 3115 allows $80,000 (80% bonus) + prior year missed deductions
+- Form 3115 allows $100,000 (100% bonus on qualified property acquired after January 19, 2025) + prior year missed deductions
 - **Catch-up deduction: $100,000+ in current year**
 
 ### How does this affect my ability to sell properties?

@@ -1,15 +1,15 @@
 ---
 title: >-
-  How Lindsay and Her Husband Secured $17,500 in Bookings in One Week (2025 Case
+  How Lindsay Fischer Secured $17,500 in Bookings in Two Weeks (2025 Case
   Study)
 titleTemplate: '%s | Legacy Investing Show Success Stories'
 description: >-
-  Lindsay and her husband went from 9-to-5 workers to $17,500 in Airbnb bookings
-  within 7 days of going live. Learn their exact strategies for finding
+  Lindsay Fischer and her husband went from 9-to-5 workers to $17,500 in Airbnb
+  bookings within 14 days of going live. Learn their exact strategies for finding
   properties, negotiating with landlords, and creating a standout cabin rental
   in the Western North Carolina mountains.
 date: 2025-10-18T00:00:00.000Z
-modifiedDate: 2026-01-23T00:00:00.000Z
+modifiedDate: 2026-09-16T00:00:00.000Z
 author: Preston Seo
 authorTitle: 'Founder, Legacy Investing Show'
 authorCredentials: '2,000+ students trained, $10M+ student revenue generated'
@@ -32,7 +32,7 @@ tags:
   - short-term rental
 image: /assets/images/blog/success-stories/lindsay-couple-cabin.jpg
 imageAlt: >-
-  How Lindsay and Her Husband Secured $17,500 in Bookings in One Week (2025 Case
+  How Lindsay Fischer Secured $17,500 in Bookings in Two Weeks (2025 Case
   Study) - Legacy Investing Show
 imageWidth: 1200
 imageHeight: 630
@@ -42,13 +42,13 @@ youtubeId: '-A4Pe5M0iUU'
 schema:
   - type: Article
     headline: >-
-      How Lindsay and Her Husband Secured $17,500 in Bookings in One Week (2025
+      How Lindsay Fischer Secured $17,500 in Bookings in Two Weeks (2025
       Case Study)
-    datePublished: '2026-03-18T00:00:00Z'
-    dateModified: '2026-01-23T00:00:00Z'
+    datePublished: '2025-10-18T00:00:00Z'
+    dateModified: '2026-09-16T00:00:00Z'
   - type: VideoObject
     name: >-
-      How Lindsay and Her Husband Secured $17,500 in Bookings in One Week (2025
+      How Lindsay Fischer Secured $17,500 in Bookings in Two Weeks (2025
       Case Study) - Full Interview
     thumbnailUrl: 'https://img.youtube.com/vi/-A4Pe5M0iUU/maxresdefault.jpg'
     embedUrl: 'https://www.youtube.com/embed/-A4Pe5M0iUU'
@@ -63,7 +63,7 @@ breadcrumbs:
     url: /blog/category/success-stories
 statistics:
   - value: '$17,500'
-    label: Bookings in Week One
+    label: Bookings in first 14 days
     icon: dollar
     context: 14 reservations through New Year's Eve
     source: 'Student Interview, September 2023'
@@ -90,7 +90,7 @@ statistics:
 faq:
   - question: How much money can you make with Airbnb arbitrage?
     answer: >-
-      Lindsay and her husband secured $17,500 in bookings within just one week
+      Lindsay Fischer and her husband secured $17,500 in bookings within 14 days
       of going live. They project $2,500-$3,000 monthly cash flow during peak
       season (fall through January in Western NC) after all expenses including
       rent and utilities.
@@ -152,7 +152,7 @@ tocDepth: 3
 readingTime: 25 min read
 wordCount: '4897'
 ---
-**Lindsay and her husband secured $17,500 in Airbnb bookings within one week of going live.** Starting with no real estate experience—Lindsay from nonprofit work overseas and her husband from sales—they joined Legacy Investing Show and hit the ground running. Within a month and a half, they had their first property secured on just their fourth landlord call, and the bookings started flooding in immediately.
+**Lindsay Fischer and her husband secured $17,500 in Airbnb bookings within 14 days of going live.** Starting with no real estate experience—Lindsay from nonprofit work overseas and her husband from sales—they joined Legacy Investing Show and hit the ground running. Within a month and a half, they had their first property secured on just their fourth landlord call, and the bookings started flooding in immediately.
 
 This case study breaks down exactly how Lindsay and her husband built their Airbnb arbitrage business in the Western North Carolina mountains, including their strategies for finding properties, negotiating with landlords, and creating a standout cabin that guests can't resist booking.
 
@@ -313,7 +313,7 @@ This is exactly why data matters. Gut feelings and assumptions can lead you astr
 
 ## Airbnb Arbitrage Strategies That Actually Work: Lindsay's Playbook
 
-**The difference between profitable and unprofitable Airbnb arbitrage comes down to strategy.** Lindsay attributes her $17,500 in first-week bookings to four core strategies that helped her stand out immediately.
+**The difference between profitable and unprofitable Airbnb arbitrage comes down to strategy.** Lindsay attributes her $17,500 in the first 14 days of bookings to four core strategies that helped her stand out immediately.
 
 ### Strategy 1: The Hot Tub Requirement
 
@@ -395,7 +395,7 @@ Lindsay specifically noted that when she travels with kids, she looks for pack-a
 
 ## Lindsay's Airbnb Arbitrage Results: The Numbers
 
-**Lindsay and her husband secured $17,500 in bookings within their first week live.** Here's the complete financial breakdown of their Airbnb arbitrage launch.
+**Lindsay Fischer and her husband secured $17,500 in bookings within their first 14 days live.** Here's the complete financial breakdown of their Airbnb arbitrage launch.
 
 ### Before vs. After Airbnb Arbitrage
 
@@ -411,7 +411,7 @@ Lindsay specifically noted that when she travels with kids, she looks for pack-a
 
 | Category | Details | Notes |
 |------|------|------|
-| **First Week Bookings** | $17,500 | 14 reservations through New Year's Eve |
+| **First 14 Days Bookings** | $17,500 | 14 reservations through New Year's Eve |
 | **Monthly Cash Flow (Peak)** | $2,500-$3,000 | After rent, utilities, and expenses |
 | **Setup Savings** | ~75% furniture included | Landlord left leather couches, major items |
 | **Hot Tub Financing** | 0% for 24 months | Used promotional credit offer |
@@ -435,7 +435,7 @@ Lindsay and her husband transformed the property strategically, maximizing impac
 
 - ✅ **First property secured in 21 days**: From initial landlord contact to signed contract
 
-- ✅ **$17,500 booked in first week**: 14 reservations through New Year's Eve
+- ✅ **$17,500 booked in first 14 days**: 14 reservations through New Year's Eve
 
 - ✅ **Built reliable local team**: Cleaner (also serves as property manager) and handyman
 
@@ -611,7 +611,7 @@ Lindsay and her husband aren't stopping at one property. Their goal: add a new p
 
 ### How much money can you really make with Airbnb arbitrage?
 
-Lindsay and her husband secured $17,500 in bookings within their first week live—14 reservations stretching through New Year's Eve. They project $2,500-$3,000 in monthly cash flow during peak season (fall through January in Western NC) after paying rent, utilities, cleaning, and all other expenses.
+Lindsay Fischer and her husband secured $17,500 in bookings within 14 days of going live—14 reservations stretching through New Year's Eve. They project $2,500-$3,000 in monthly cash flow during peak season (fall through January in Western NC) after paying rent, utilities, cleaning, and all other expenses.
 
 Results vary by market, property type, and amenities. Lindsay's success came from strategic differentiation: hot tub (only 20% of competitors had one), professional photography, family-friendly amenities, and timing their launch for peak fall foliage season.
 

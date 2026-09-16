@@ -519,8 +519,8 @@ For a $100,000 property furnishing package:
 - Additional first-year deduction: ~$16,400
 - At 32% combined tax rate: $5,250 in tax savings
 
-**Bonus Depreciation (2024):**
-60% bonus depreciation allows immediate expensing of qualifying property in year one, further accelerating deductions.
+**Bonus Depreciation (current law):**
+100% bonus depreciation allows immediate expensing of qualifying property acquired after January 19, 2025 in year one, further accelerating deductions. Property under a binding contract on or before that date stays on the old phase-down.
 
 ## Building a California-Compliant Wealth System
 
