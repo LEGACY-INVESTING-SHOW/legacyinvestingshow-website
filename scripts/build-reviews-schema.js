@@ -287,7 +287,7 @@ function buildFaq(summary, reviewCount) {
             'Where are the Trustpilot and BBB pages?',
             'The main Trustpilot profile is ' + summary.businessDisplayName + ' at trustpilot.com/review/'
             + summary.identifyingName + ', with ' + summary.totalReviews + ' reviews and a ' + summary.trustScore
-            + ' score. There is a second, nearly empty profile for legacyinvestingshow.com with one review. The Better '
+            + ' score. The Better '
             + 'Business Bureau profile is for Legacy Investing Show, LLC in Herriman, Utah, listed under Real Estate '
             + 'School. Preston Seo does not control either page.',
         ],

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full antialiased">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{TITLE}} | Legacy Investing Show</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <meta name="keywords" content="{{KEYWORDS}}">
+  <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="Kec6RfGhFL-qG_8zKxCqt7yxjgy65WeDAftCBm90G2s">
+    <meta name="google-site-verification" content="92MoCnkdQOj_ey1lEafT5Mz-znCcCQ3UABZlI-JG_nM">
+  <link rel="canonical" href="{{CANONICAL}}">
+  <meta property="og:title" content="{{OG_TITLE}}">
+  <meta property="og:description" content="{{DESCRIPTION}}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{CANONICAL}}">
+  <meta property="og:image" content="https://www.legacyinvestingshow.com/assets/images/og-blog.jpg">
+  <meta property="og:site_name" content="Legacy Investing Show">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{OG_TITLE}}">
+  <meta name="twitter:description" content="{{DESCRIPTION}}">
+  <meta name="twitter:image" content="https://www.legacyinvestingshow.com/assets/images/og-blog.jpg">
+  <meta name="twitter:site" content="@thelegacyshow">
+  <link rel="icon" href="/favicon.ico" sizes="256x256" type="image/x-icon">
+  {{HEAD_ASSETS}}
+  <link rel="stylesheet" href="{{CSS_HREF}}">
+  <link rel="stylesheet" href="/assets/css/tools-bridge.css?v=16d4eea2">
+  <script type="application/ld+json">{{SCHEMA}}</script>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2578PT1WSS');
+  </script>
+</head>
+<body class="flex min-h-full flex-col font-sans tools-surface">
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4R2LKP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  {{SITE_SKIP}}
+  {{SITE_HEADER}}
+  {{TOOLS_SUBNAV}}
+  <main id="main" class="flex-1">
+    <div class="mx-auto max-w-5xl px-5 py-8 sm:py-12">
+      <nav aria-label="Breadcrumb" class="text-[13px] text-ink-faint">
+        <a class="rounded-[4px] hover:text-ink-muted" href="/tools">All calculators</a>
+        <span aria-hidden="true" class="mx-2">/</span>
+        <a class="rounded-[4px] hover:text-ink-muted" href="{{CATEGORY_HREF}}">{{CATEGORY_NAME}}</a>
+        <span aria-hidden="true" class="mx-2">/</span>
+        <span class="text-ink-muted">{{SHORT_TITLE}}</span>
+      </nav>
+      <div class="mt-5 space-y-14">
+        <article>
+          <h1 class="text-[28px] font-semibold tracking-tight text-ink sm:text-[32px]">{{SHORT_TITLE}}</h1>
+          <p class="mt-2 max-w-2xl text-[16px] text-ink-muted">{{QUESTION}}</p>
+          <div class="mt-8">
+            <div class="grid gap-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:items-start">
+              <form id="operator-form" class="space-y-4 rounded-[8px] border border-line bg-paper-raised p-4 sm:p-5" novalidate>
+                <div class="flex items-baseline justify-between gap-3">
+                  <p class="text-[12px] font-medium uppercase tracking-[0.06em] text-ink-faint">Your numbers</p>
+                  <button type="button" id="operator-reset" class="rounded-[4px] text-[12px] font-medium text-ink-muted hover:text-accent">Reset</button>
+                </div>
+                {{FORM_FIELDS}}
+              </form>
+              <div class="lg:sticky lg:top-20 space-y-4">
+                <div class="rounded-[8px] bg-accent-soft px-5 py-5 sm:px-6">
+                  <div id="operator-result" role="status" aria-live="polite" aria-atomic="true">{{RESULT_HTML}}</div>
+                </div>
+                <p class="rounded-[8px] border border-line bg-paper-raised px-4 py-3 text-[13px] leading-5 text-ink-muted"><span class="font-medium text-ink">Tip. </span>Educational estimate with the assumptions listed on this page. Not tax, legal, or investment advice.</p>
+                <div>
+                  <p class="text-[13px] font-medium text-ink">Assumptions</p>
+                  <ul class="mt-2 list-disc space-y-1 pl-5 text-[13px] text-ink-muted">{{ASSUMPTIONS}}</ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <section aria-labelledby="examples-heading" class="space-y-5">
+          <div>
+            <p class="text-[11px] font-medium uppercase tracking-[0.08em] text-ink-faint">Explore the numbers</p>
+            <h2 id="examples-heading" class="mt-1 text-[18px] font-semibold tracking-tight text-ink">Examples</h2>
+            <p class="mt-1 text-[14px] text-ink-muted">Load a scenario, then change one input at a time.</p>
+          </div>
+          <div id="operator-examples" class="grid gap-0 overflow-hidden rounded-[8px] border border-line sm:grid-cols-3">{{EXAMPLES}}</div>
+        </section>
+        <section aria-labelledby="about-heading" class="grid gap-10 border-t border-line pt-10 lg:grid-cols-2">
+          <div class="space-y-6">
+            <div>
+              <h2 id="about-heading" class="text-[18px] font-semibold tracking-tight text-ink">What this calculates</h2>
+              <p class="mt-2 text-[15px] leading-7 text-ink-muted">{{ABOUT}}</p>
+            </div>
+            <div>
+              <h3 class="text-[15px] font-semibold text-ink">How to use it</h3>
+              <ol class="mt-2 list-decimal space-y-1.5 pl-5 text-[14px] leading-6 text-ink-muted">{{HOWTO}}</ol>
+            </div>
+            <div>
+              <h3 class="text-[15px] font-semibold text-ink">Common mistakes</h3>
+              <ul class="mt-2 list-disc space-y-1.5 pl-5 text-[14px] leading-6 text-ink-muted">{{MISTAKES}}</ul>
+            </div>
+          </div>
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-[15px] font-semibold text-ink">Formula</h3>
+              <p class="mt-2 rounded-[8px] border border-line bg-paper-raised px-4 py-3 font-mono text-[13px] leading-6 text-ink">{{FORMULA}}</p>
+            </div>
+          </div>
+        </section>
+        <section aria-labelledby="faq-heading" class="border-t border-line pt-10">
+          <h2 id="faq-heading" class="text-[18px] font-semibold tracking-tight text-ink">FAQ</h2>
+          <div class="mt-3">{{FAQ_HTML}}</div>
+        </section>
+        <section aria-labelledby="related-heading" class="border-t border-line pt-10">
+          <h2 id="related-heading" class="text-[18px] font-semibold tracking-tight text-ink">Related calculators</h2>
+          <p class="mt-1 text-[14px] text-ink-muted">The questions people usually ask next.</p>
+          <ul class="mt-4 divide-y divide-line border-t border-line">{{RELATED_HTML}}</ul>
+        </section>
+      </div>
+    </div>
+  </main>
+  {{SITE_FOOTER}}
+  <script type="application/json" id="operator-spec">{{SPEC_JSON}}</script>
+  <script src="/assets/js/operator-calculator-models.js?v=32732902"></script>
+  <script src="/assets/js/operator-calculator.js?v=02e1bd07"></script>
+  <script src="/assets/js/tools-site-shell.js?v=eeee162d" defer></script>
+</body>
+</html>

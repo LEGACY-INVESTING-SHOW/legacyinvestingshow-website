@@ -59,6 +59,13 @@ test('duplicate and removed URLs redirect permanently to their canonical page', 
       '/compare/1031-exchange-vs-opportunity-zones',
     '/tax-strategies/health-savings-account-strategy': '/tax-strategies/hsa-strategy',
     '/worksheets': '/tools',
+    '/pricing': '/reviews',
+    '/blog/preston-seo-review': '/reviews',
+    '/blog/legacy-investing-show-review': '/reviews',
+    '/blog/legacy-investing-show-reviews': '/reviews',
+    '/blog/legacy-investing-show-reviews-complaints': '/reviews',
+    '/blog/is-legacy-investing-show-legit': '/reviews',
+    '/blog/faq-review': '/reviews',
   };
 
   for (const [source, destination] of Object.entries(expected)) {

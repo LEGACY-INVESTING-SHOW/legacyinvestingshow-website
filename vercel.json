@@ -547,17 +547,62 @@
       "permanent": true
     },
     {
-      "source": "/success-stories",
+      "source": "/blog/preston-seo-review",
       "destination": "/reviews",
       "permanent": true
     },
     {
-      "source": "/success-stories/",
+      "source": "/blog/preston-seo-review.html",
       "destination": "/reviews",
       "permanent": true
     },
     {
-      "source": "/success-stories.html",
+      "source": "/blog/legacy-investing-show-review",
+      "destination": "/reviews",
+      "permanent": true
+    },
+    {
+      "source": "/blog/legacy-investing-show-review.html",
+      "destination": "/reviews",
+      "permanent": true
+    },
+    {
+      "source": "/blog/legacy-investing-show-reviews",
+      "destination": "/reviews",
+      "permanent": true
+    },
+    {
+      "source": "/blog/legacy-investing-show-reviews.html",
+      "destination": "/reviews",
+      "permanent": true
+    },
+    {
+      "source": "/blog/legacy-investing-show-reviews-complaints",
+      "destination": "/reviews",
+      "permanent": true
+    },
+    {
+      "source": "/blog/legacy-investing-show-reviews-complaints.html",
+      "destination": "/reviews",
+      "permanent": true
+    },
+    {
+      "source": "/blog/is-legacy-investing-show-legit",
+      "destination": "/reviews",
+      "permanent": true
+    },
+    {
+      "source": "/blog/is-legacy-investing-show-legit.html",
+      "destination": "/reviews",
+      "permanent": true
+    },
+    {
+      "source": "/blog/faq-review",
+      "destination": "/reviews",
+      "permanent": true
+    },
+    {
+      "source": "/blog/faq-review.html",
       "destination": "/reviews",
       "permanent": true
     },
@@ -1244,6 +1289,21 @@
     {
       "source": "/blog/how-a-250k-w-2-salary-can-leave-you-poorer-than-a-120k-busin",
       "destination": "/blog/tax-planning-for-high-earners",
+      "permanent": true
+    },
+    {
+      "source": "/success-stories",
+      "destination": "/reviews",
+      "permanent": true
+    },
+    {
+      "source": "/success-stories/",
+      "destination": "/reviews",
+      "permanent": true
+    },
+    {
+      "source": "/success-stories.html",
+      "destination": "/reviews",
       "permanent": true
     }
   ],

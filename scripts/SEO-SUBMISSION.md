@@ -15,7 +15,7 @@ Property: `https://www.legacyinvestingshow.com` (the domain property, not a URL-
 2. URL inspection, top bar. Paste `https://www.legacyinvestingshow.com/reviews`.
    Read "Page changed?" and confirm the rendered HTML holds the FAQ answers and the Trustpilot
    review text. Then click **Request indexing**. The daily quota is about 10 URLs, so spend it on:
-   `/reviews`, `/blog/preston-seo-review`, and the four Legacy Wealth Blueprint case studies.
+   `/reviews` and the four Legacy Wealth Blueprint case studies.
 3. Enhancements, after 3 to 7 days. In the Videos report, "no valid uploadDate" is expected for 18
    of the 19: run `scripts/fetch-video-metadata.js` with `YOUTUBE_API_KEY` set to fix that.
 4. `/success-stories` now 301s to `/reviews` and will fall out of the index. Do not submit it.
@@ -29,11 +29,12 @@ Property: `https://www.legacyinvestingshow.com` (the domain property, not a URL-
 
 ## 3. IndexNow (Bing, Yandex, Seznam, Naver; not Google)
 
-    INDEXNOW_KEY=<your key> node scripts/submit-indexnow.js --dry-run   # prints the 10 URLs
-    INDEXNOW_KEY=<your key> npm run seo:indexnow                        # sends the ping
+The key file `ff64e7a1822f2fe13777b7f30f04b8f7.txt` is committed at the repo root and the script reads it, so no env var is needed:
 
-The first run with the key set writes `<key>.txt` at the repo root. Commit and deploy that file,
-confirm `https://www.legacyinvestingshow.com/<key>.txt` returns the key, then run it again to ping.
+    node scripts/submit-indexnow.js --dry-run   # prints the URLs
+    npm run seo:indexnow                        # sends the ping
+
+Confirm `https://www.legacyinvestingshow.com/ff64e7a1822f2fe13777b7f30f04b8f7.txt` returns the key on the live site first.
 Keep the key forever; changing it throws away the verification.
 
 ## 4. Video transcripts
@@ -50,10 +51,8 @@ committing, then rebuild the page:
     npm run build:reviews-text
     npm run build:sitemap && npm run build:video-sitemap && npm run build:image-sitemap
 
-## 5. Trustpilot: merge the second profile
+## 5. Trustpilot
 
-There are two Trustpilot profiles for one brand: `trustpilot.com/review/firstairbnb.com`
-(66 reviews, 4.2) and `trustpilot.com/review/legacyinvestingshow.com` (1 review). A split profile
-costs the brand the star organic result on "Legacy Investing Show reviews" and confuses every
-entity-resolution system that looks. Claim the second profile and ask Trustpilot support to merge
-it into `firstairbnb.com`. Until then `/reviews` names both, which is honest but not strong.
+Only the `firstairbnb.com` profile matters (66 reviews, 4.2). The one-review `legacyinvestingshow.com`
+profile is ignored on purpose. Add https://www.legacyinvestingshow.com/reviews as the website on the main
+profile.

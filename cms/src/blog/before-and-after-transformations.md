@@ -532,8 +532,6 @@ The question is: Will you be transformation #9?
 ---
 
 **Related Articles:**
-- [Legacy Investing Show Reviews: 12 Student Case Studies](/blog/legacy-investing-show-reviews)
-- [Legacy Investing Show Review: Complete Breakdown](/blog/legacy-investing-show-review)
-- [Preston Seo Review: Founder Story](/blog/preston-seo-review)
+- [Client reviews and results](/reviews)
 
 *Individual results will vary. These are exceptional student results, not guarantees.*

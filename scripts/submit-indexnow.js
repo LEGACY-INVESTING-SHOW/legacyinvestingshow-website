@@ -42,8 +42,18 @@ const PATHS = [
     '/blog/albert-legacy-wealth-blueprint-case-study',
     '/blog/abigail-legacy-wealth-blueprint-case-study',
     '/blog/shawn-legacy-wealth-blueprint-roi-case-study',
-    '/blog/preston-seo-review',
 ];
+
+/** The key file committed at the repo root, if there is exactly one. */
+function committedKey() {
+    const fs = require('fs');
+    const path = require('path');
+    const root = path.join(__dirname, '..');
+    const files = fs.readdirSync(root).filter((name) => /^[0-9a-f]{32}\.txt$/.test(name));
+    if (files.length !== 1) return '';
+    const key = files[0].slice(0, -4);
+    return fs.readFileSync(path.join(root, files[0]), 'utf8').trim() === key ? key : '';
+}
 
 function urlList() {
     return PATHS.map((entry) => SITE_URL + entry);
@@ -110,7 +120,7 @@ async function submit(key) {
 
 async function main() {
     const dryRun = process.argv.slice(2).includes('--dry-run');
-    const key = process.env.INDEXNOW_KEY || '';
+    const key = process.env.INDEXNOW_KEY || committedKey();
 
     if (!key) {
         console.log(instructions());

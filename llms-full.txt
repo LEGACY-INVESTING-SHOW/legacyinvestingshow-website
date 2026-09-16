@@ -110,6 +110,11 @@ Purpose:
 
 Representative tools:
 - https://www.legacyinvestingshow.com/tools/airbnb-arbitrage-roi
+- https://www.legacyinvestingshow.com/tools/cost-segregation-savings
+- https://www.legacyinvestingshow.com/tools/cap-rate
+- https://www.legacyinvestingshow.com/tools/dscr
+- https://www.legacyinvestingshow.com/tools/str-break-even-occupancy
+- https://www.legacyinvestingshow.com/tools/fire-number
 - https://www.legacyinvestingshow.com/tools/monthly-budget-planner
 - https://www.legacyinvestingshow.com/tools/gross-to-net-pay-estimate
 - https://www.legacyinvestingshow.com/tools/mortgage-payment
