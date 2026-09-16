@@ -351,7 +351,7 @@ Every major crash (2008, 2020, 2022) has been followed by recovery and new highs
 Students in the Legacy Investing Show program have used both methods to build significant income:
 - Dustin built to $56,000/month revenue
 - Rob generates $10,000/month cash flow
-- Kirk made $200,000 in his first 6 months
+- Kirk, a full-time nurse, hit $5,500 cash flow in March on his first California property after projecting $2,000
 
 **Why real estate beats stocks for income**: A $500,000 stock portfolio generating 2% dividends gives you $10,000/year or $833/month. A single Airbnb property can generate $3,000-$10,000/month. Real estate provides income today, not in 30 years.
 
@@ -581,16 +581,16 @@ Dustin started with zero real estate experience and built a portfolio generating
 
 Rob built to $10,000/month in actual cash flow—money in his pocket after all expenses. This represents income replacement for most professional jobs, achieved through real estate rather than decades of climbing corporate ladders.
 
-### Kirk: $200,000 in 6 Months
+### Kirk: $5,500 in March on One Property
 
 | Metric | Value |
 |--------|-------|
-| Revenue | $200,000 |
-| Time Frame | 6 months |
-| Method | Aggressive property scaling |
-| Background | Healthcare professional |
+| March cash flow | $5,500 |
+| April cash flow | $4,400+ |
+| Method | Airbnb arbitrage, one California property |
+| Background | Full-time nurse, no prior business |
 
-Kirk compressed what usually takes years into months by applying proven systems aggressively. His healthcare background meant starting without real estate experience, proving domain expertise isn't required.
+Kirk is a full-time nurse in California. He projected $2,000 a month conservatively. The listing ran ahead of that: $5,500 in March on 87% occupancy and over $4,400 in April on 70%. His healthcare background meant starting without real estate experience. Domain expertise was not required.
 
 ### What These Stories Have in Common
 
