@@ -2,10 +2,10 @@
 title: 'Best Airbnb Arbitrage Courses and Mentorships (2026)'
 titleTemplate: '%s | Legacy Investing Show'
 description: >-
-  Six Airbnb arbitrage programs compared with published prices, formats, and
+  Six Airbnb arbitrage programs compared on format, coaching, and
   guarantees, plus sourced 2026 market data on whether arbitrage still works.
 date: '2026-09-14'
-modifiedDate: '2026-09-14'
+modifiedDate: '2026-09-16'
 author: Preston Seo
 authorTitle: 'Founder, Legacy Investing Show'
 authorCredentials: Personal finance educator and strategy coach
@@ -26,8 +26,8 @@ seo:
     In 2026 the cheapest credible Airbnb arbitrage training is a self-paced
     course from $180 to $800 with a published refund window. Coached programs run
     from about $3,500 into five figures, and most do not publish a price at all.
-    Airbnb Ascension is $9,800 for 6 months and one property. Check your local
-    rules before you buy anything.
+    Airbnb Ascension is our coached program, matched to your situation with
+    payment plans and financing. Check your local rules before you buy anything.
 tags:
   - airbnb arbitrage
   - rental arbitrage
@@ -43,7 +43,7 @@ schema:
   - type: Article
     headline: 'Best Airbnb Arbitrage Courses and Mentorships (2026)'
     datePublished: '2026-09-14T00:00:00Z'
-    dateModified: '2026-09-14T00:00:00Z'
+    dateModified: '2026-09-16T00:00:00Z'
   - type: FAQPage
     mainEntity:
       - question: Is Airbnb arbitrage still profitable in 2026?
@@ -78,11 +78,12 @@ schema:
           Plan for the deposit, furniture, and a few months of rent in reserve.
           Our guidance for Airbnb Ascension clients is $10,000 to $25,000 of
           working capital, separate from any program fee.
-      - question: Is a $9,800 program worth it?
+      - question: Is a coached Airbnb program worth it?
         answer: >-
-          Only if the fee buys people rather than videos. At that price you
-          should get deal review before you sign a lease, same-day access to a
-          coach, and setup help. If it is only a video library, it is overpriced.
+          Only if the fee buys people rather than videos. A coached program
+          should give you deal review before you sign a lease, same-day access
+          to a coach, and setup help. If it is only a video library, it is
+          overpriced.
 breadcrumbs:
   - name: Home
     url: /
@@ -149,11 +150,11 @@ faq:
       Plan for the deposit, furniture, and a few months of rent in reserve. Our
       guidance for Airbnb Ascension clients is $10,000 to $25,000 of working
       capital, separate from any program fee.
-  - question: Is a $9,800 program worth it?
+  - question: Is a coached Airbnb program worth it?
     answer: >-
-      Only if the fee buys people rather than videos. At that price you should
-      get deal review before you sign a lease, same-day access to a coach, and
-      setup help. If it is only a video library, it is overpriced.
+      Only if the fee buys people rather than videos. A coached program should
+      give you deal review before you sign a lease, same-day access to a coach,
+      and setup help. If it is only a video library, it is overpriced.
 toc: true
 tocDepth: 3
 relatedPosts:
@@ -165,7 +166,7 @@ relatedPosts:
     title: 'Best Real Estate Investing Courses if You Have a Full-Time Job (2026)'
 ---
 
-The cheapest credible way into Airbnb arbitrage in 2026 is a self-paced course between $180 and $800 that publishes a refund window. Coached programs start around $3,500 and run into five figures, and most of them will not tell you the price until you are on a call. Airbnb Ascension is $9,800 for 6 months and one property. Before you buy any of them, check whether short-term rentals are legal in the zones you can afford.
+The cheapest credible way into Airbnb arbitrage in 2026 is a self-paced course between $180 and $800 that publishes a refund window. Coached programs start around $3,500 and run into five figures, and most of them will not tell you the price until you are on a call. Airbnb Ascension is our coached program: 1-on-1 deal review, custom options, payment plans, and financing so the starting investment is not what keeps you from changing cash flow. Before you buy any of them, check whether short-term rentals are legal in the zones you can afford.
 
 Below are six options with what is publicly published, then the market data on whether this model still works.
 
@@ -178,11 +179,11 @@ Below are six options with what is publicly published, then the market data on w
 | 10XBNB (Shaun Ghavami, Ari Rahmanian) | Arbitrage, bed flipping, and co-listing in one program | Self-paced modules, an active Facebook group, live coaching calls | **Price on application.** Checked the program, FAQ, and reviews pages | Buyers who want arbitrage and co-hosting taught side by side | [learn.10xbnb.com](https://learn.10xbnb.com/program-details/) |
 | Calvin Tran (High Performance Hosts) | Arbitrage program aimed at controlling units without owning them | Free live webinar leading to a free consultation. Structure not published | **Price on application.** No figure anywhere on the public funnel | Buyers who want a free session before committing to anything | [highperformancehost.com](https://highperformancehost.com/register) |
 | Chi Ta (The BNB University) | Arbitrage and corporate housing education | Not currently published | **Not available.** The bnb.university page states the school is offline and not accepting new enrollments | Nobody right now. Confirm status before paying | [bnb.university](https://bnb.university/) |
-| Airbnb Ascension (Preston Seo) | Arbitrage with a 1-on-1 coach and done-with-you setup | 7+ hours of curriculum, weekly live Zoom calls, dedicated coach, deal reports, listing and pricing setup | **$9,800**, 6 months, one property. Scale **$18,000**, 12 months, no property cap | Buyers who want a person to check the lease and the numbers first | [legacyinvestingshow.com](https://www.legacyinvestingshow.com/airbnbascension) |
+| Airbnb Ascension (Preston Seo) | Arbitrage with a 1-on-1 coach and done-with-you setup | 7+ hours of curriculum, weekly live Zoom calls, dedicated coach, deal reports, listing and pricing setup | Custom. Payment plans and financing available; term set around your goals | Buyers who want a person to check the lease and the numbers first | [legacyinvestingshow.com](https://www.legacyinvestingshow.com/airbnbascension) |
 
 Prices checked 14 September 2026. Sellers change prices. Confirm on their own page before you buy.
 
-Notice the pattern. Four of the six do not publish a price. That is a normal high-ticket sales choice, not proof of anything bad, but it does mean you cannot compare on cost without booking calls. You are allowed to ask for the number by email first.
+Notice the pattern. Only Sean Rakidzich publishes checkout prices on this list. The rest, including us, match the program to your situation on a call. That is a normal high-ticket sales choice, not proof of anything bad, but it does mean you cannot compare on cost from a spreadsheet. You are allowed to ask how the investment is structured by email first.
 
 ## Is Airbnb arbitrage still profitable in 2026?
 
@@ -218,7 +219,7 @@ One caveat on a number you will see quoted. AirDNA's Best Places to Invest 2026 
 
 ## Airbnb Ascension: the honest version
 
-Airbnb Ascension is $9,800 for 6 months and one property. Ascension Scale is $18,000 for 12 months with no contractual property cap, which is not a promise of any particular number of properties. You get a dedicated coach with same-day messaging, an onboarding call, profitability reports on deals before you sign, coaches who act as a reference with landlords, a ranked market list, about 7 hours of curriculum with lifetime access, weekly live Zoom calls, outreach and closing scripts, sublease templates, a furnishing playbook, listing and pricing setup, and an entity and business credit session.
+Airbnb Ascension is a coached program matched to your situation and goals, with custom options, payment plans, and financing so the first check is not what keeps you from changing cash flow. Term and scope (including whether you are working one property or building further) are set on the call, not off a public menu. You get a dedicated coach with same-day messaging, an onboarding call, profitability reports on deals before you sign, coaches who act as a reference with landlords, a ranked market list, about 7 hours of curriculum with lifetime access, weekly live Zoom calls, outreach and closing scripts, sublease templates, a furnishing playbook, listing and pricing setup, and an entity and business credit session.
 
 There is no published money-back guarantee.
 

@@ -6,7 +6,7 @@ description: >-
   Kohler's programs, and Legacy Wealth Blueprint on price, format, who teaches,
   community, and fit.
 date: '2026-09-14'
-modifiedDate: '2026-09-14'
+modifiedDate: '2026-09-16'
 author: Preston Seo
 authorTitle: 'Founder, Legacy Investing Show'
 authorCredentials: Personal finance educator and strategy coach
@@ -27,8 +27,8 @@ seo:
   targetSnippet: >-
     Karlton Dennis sells Tax Strategy Accelerator at $97 a month. Mark J. Kohler
     sells Business Owner HQ at $995 plus $99 a month. Legacy Wealth Blueprint is
-    $9,800 with weekly live coaching and a written plan. Pick by what you own: a
-    business, a rental, or only a W-2.
+    a coached wealth program with a written plan, custom options, and
+    financing. Pick by what you own: a business, a rental, or only a W-2.
 tags:
   - karlton dennis vs mark kohler
   - tax strategies
@@ -44,7 +44,7 @@ schema:
   - type: Article
     headline: 'Karlton Dennis vs Mark Kohler vs Legacy Wealth Blueprint (2026)'
     datePublished: '2026-09-14T00:00:00Z'
-    dateModified: '2026-09-14T00:00:00Z'
+    dateModified: '2026-09-16T00:00:00Z'
   - type: FAQPage
     mainEntity:
       - question: Which is cheaper, Karlton Dennis or Mark Kohler?
@@ -80,9 +80,11 @@ schema:
           Blueprint does not file returns.
       - question: What does Legacy Wealth Blueprint cost?
         answer: >-
-          $9,800 by cash or card, or $10,800 financed through Splitit. A smaller
-          option, LWB Course plus AI, is $1,500 for applicants earning under
-          $75,000.
+          Custom. It depends on your situation and whether you pay outright, on
+          a plan, or with financing. Different programs exist for different
+          goals, and the starting investment should never be why you stay stuck
+          on taxes, cash flow, or the rest of your money picture. We cover the
+          fit on the call.
 breadcrumbs:
   - name: Home
     url: /
@@ -101,10 +103,10 @@ statistics:
     label: Business Owner HQ published price
     icon: dollar
     context: Shown as a cut from $2,995. Includes a 7 day money-back guarantee.
-  - value: '$9,800'
-    label: Legacy Wealth Blueprint price, cash or card
+  - value: Custom
+    label: Legacy Wealth Blueprint investment
     icon: dollar
-    context: '$10,800 through Splitit. Course plus AI option is $1,500.'
+    context: Matched to your situation, with payment plans and financing.
   - value: '3'
     label: Buyer types this page separates
     icon: chart
@@ -143,9 +145,10 @@ faq:
       Blueprint does not file returns.
   - question: What does Legacy Wealth Blueprint cost?
     answer: >-
-      $9,800 by cash or card, or $10,800 financed through Splitit. A smaller
-      option, LWB Course plus AI, is $1,500 for applicants earning under
-      $75,000.
+      Custom. It depends on your situation and whether you pay outright, on a
+      plan, or with financing. Different programs exist for different goals, and
+      the starting investment should never be why you stay stuck on taxes, cash
+      flow, or the rest of your money picture. We cover the fit on the call.
 toc: true
 tocDepth: 3
 relatedPosts:
@@ -158,7 +161,7 @@ relatedPosts:
 readingTime: 7 min read
 wordCount: '1384'
 ---
-Karlton Dennis sells Tax Strategy Accelerator at $97 a month. Mark J. Kohler sells Business Owner HQ at $995 plus $99 a month. Legacy Wealth Blueprint is $9,800 with weekly live coaching and a written plan. Pick by what you own: a business, a rental, or only a W-2.
+Karlton Dennis sells Tax Strategy Accelerator at $97 a month. Mark J. Kohler sells Business Owner HQ at $995 plus $99 a month. Legacy Wealth Blueprint is a coached wealth program with weekly live coaching, a written plan, custom options, and financing. Pick by what you own: a business, a rental, or only a W-2.
 
 Prices below were read on each seller's own page on September 14, 2026. Legacy Wealth Blueprint is our program. We have said so in every section that mentions it.
 
@@ -170,7 +173,7 @@ Prices below were read on each seller's own page on September 14, 2026. Legacy W
 | Tax Alchemy (Karlton Dennis) | Done-for-you planning firm | 1-to-1 advisory, entity structuring, cost segregation, 1031 work, prep for advisory clients | Flat fee "from as little as $32k up to $50k" | Handing the whole job to a firm | [taxalchemy.com](https://taxalchemy.com/) |
 | Business Owner HQ (Mark J. Kohler) | Business owner education membership | App, on-demand videos, biweekly live masterminds with Kohler, AI assistant, forum, resource library | Listed at $995 (shown as a cut from $2,995) plus $99 per month, 7 day money back | Small business owners with entity and tax questions | [mainstreetpros.com](https://mainstreetpros.com/business-owners) |
 | Tax Advisor Certification (Mark J. Kohler) | Training for advisors and serious DIYers | 80+ classes, 40+ hours, 13 modules | Not published | People who want to advise others, not only themselves | [markjkohler.com](https://markjkohler.com/education) |
-| Legacy Wealth Blueprint | Wealth and tax education with coaching and a written plan | 100+ videos across five pillars, 12 months community, weekly live coaching calls, custom wealth plan, 1-on-1 guide, AI advisor | $9,800 cash or card, $10,800 through Splitit. Course plus AI option $1,500 | $100K to $200K+ earners who want one plan across tax, debt, income, investing, and protection | [legacyinvestingshow.com](/legacy-wealth-blueprint.html) |
+| Legacy Wealth Blueprint | Wealth and tax education with coaching and a written plan | 100+ videos across five pillars, 12 months community, weekly live coaching calls, custom wealth plan, 1-on-1 guide, AI advisor | Custom. Payment plans and financing available; set around your situation | $100K to $200K+ earners who want one plan across tax, debt, income, investing, and protection | [legacyinvestingshow.com](/legacy-wealth-blueprint.html) |
 
 ## Who teaches, and what that means
 
@@ -192,7 +195,7 @@ None of these three facts is a scoreboard. A licensed CPA who teaches is not aut
 | Written personal plan | No | No | Custom 12-month wealth plan |
 | Trial or guarantee | 14 days risk-free | 7 day money back | Check current terms before you buy |
 
-The pattern is simple. As you move right, you pay more and you get more personal attention. A $97 membership does not know your name. A $9,800 program should.
+The pattern is simple. As you move right, you pay more and you get more personal attention. A $97 membership does not know your name. A coached program should.
 
 ## Best for W-2 earners
 
@@ -224,13 +227,13 @@ One warning that applies to everyone selling this category. Cost segregation and
 
 ## Where Legacy Wealth Blueprint fits, honestly
 
-Our price is $9,800 by cash or card, or $10,800 through Splitit. The smaller option, LWB Course plus AI, is $1,500 for applicants earning under $75,000.
+What you invest depends on your situation and how you choose to pay. Custom options, payment plans, and financing exist so the first check is not what keeps you from changing taxes, cash flow, or the rest of your finances. A lighter curriculum-only path exists for applicants earning under $75,000.
 
 **Who it is not for.**
 
 - Not for you if you want a return filed. You get a written brief near year end for your own CPA. We do not contact your CPA.
-- Not for you if the money would come out of an emergency fund or a card you cannot clear.
-- Not for you if you earn under about $75,000. Take the $1,500 option instead.
+- Not for you if paying would come out of an emergency fund or a card you cannot clear.
+- Not for you if you earn under about $75,000. Take the lighter curriculum-only path instead.
 - Not for you if you want a cheap video library. Tax Strategy Accelerator is $97 a month.
 - Not for you if you want legal work done. Kohler's firms and Anderson do that. We do not.
 

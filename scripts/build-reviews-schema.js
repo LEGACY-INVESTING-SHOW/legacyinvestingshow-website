@@ -255,9 +255,10 @@ function buildFaq(summary, reviewCount) {
             // The page prints this one too; the markup has to cover every
             // question the section shows, in the order it shows them.
             'What do the programs cost?',
-            'The Legacy Wealth Blueprint is $9,800 paid by cash or card and $10,800 through Splitit financing. '
-            + 'LWB Course + AI is $1,500. Airbnb Ascension is $9,800, Airbnb Ascension Scale $18,000, STR '
-            + 'Concierge $16,000 and STR Concierge Portfolio $30,000. Bundles run from $17,000 to $34,000.',
+            'Programs are matched to different situations and goals, not sold off a single published menu. '
+            + 'Custom options, payment plans, and financing are on the table so the starting investment does not '
+            + 'have to block a change in your taxes, cash flow, business, or personal finance. We map the right '
+            + 'path on the call.',
         ],
         [
             'How much did clients save with the Legacy Wealth Blueprint?',

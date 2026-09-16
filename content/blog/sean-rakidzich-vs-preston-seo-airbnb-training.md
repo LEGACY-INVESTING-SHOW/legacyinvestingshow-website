@@ -3,10 +3,9 @@ title: 'Sean Rakidzich vs Preston Seo: Two Different Airbnb Training Models'
 titleTemplate: '%s | Legacy Investing Show'
 description: >-
   A fair, sourced comparison of Sean Rakidzich and Preston Seo Airbnb training,
-  with published prices, formats, guarantees, and where Calvin Tran and Chi Ta
-  fit.
+  with formats, guarantees, and where Calvin Tran and Chi Ta fit.
 date: '2026-09-14'
-modifiedDate: '2026-09-14'
+modifiedDate: '2026-09-16'
 author: Preston Seo
 authorTitle: 'Founder, Legacy Investing Show'
 authorCredentials: Personal finance educator and strategy coach
@@ -26,8 +25,9 @@ seo:
   targetSnippet: >-
     Sean Rakidzich sells self-paced courses from $180 to $800 with a published
     30-day refund, plus application-only coaching listed at $3,500 to $20,000.
-    Preston Seo sells Airbnb Ascension at $9,800 for 6 months and one property,
-    built around a 1-on-1 coach and deal review. Pick on format, not on brand.
+    Preston Seo sells Airbnb Ascension as a coached program with 1-on-1 deal
+    review, custom options, payment plans, and financing. Pick on format, not
+    on brand.
 tags:
   - airbnb arbitrage
   - course comparison
@@ -43,7 +43,7 @@ schema:
   - type: Article
     headline: 'Sean Rakidzich vs Preston Seo: Two Different Airbnb Training Models'
     datePublished: '2026-09-14T00:00:00Z'
-    dateModified: '2026-09-14T00:00:00Z'
+    dateModified: '2026-09-16T00:00:00Z'
   - type: FAQPage
     mainEntity:
       - question: What does Sean Rakidzich teach?
@@ -60,8 +60,9 @@ schema:
         answer: >-
           Rakidzich publishes $180 to $800 for self-paced courses and lists
           Cracking Superhost coaching at $3,500 to $20,000. Airbnb Ascension is
-          $9,800 for 6 months and one property. Ascension Scale is $18,000 for 12
-          months.
+          a coached program matched to your situation, with custom options,
+          payment plans, and financing so the starting investment is not the
+          obstacle. Term and scope are set on the call.
       - question: Which one publishes a refund policy?
         answer: >-
           Rakidzich publishes a 30-day money-back guarantee on his compare page.
@@ -71,8 +72,9 @@ schema:
         answer: >-
           Its main argument is sound: local short-term rental law and written
           landlord permission decide the outcome, and no course controls either.
-          Its price figure of about $2,500 does not match our published prices,
-          which are $9,800 for Airbnb Ascension and $18,000 for Ascension Scale.
+          Its price figure of about $2,500 is not our pricing. We do not publish
+          a checkout menu. The Airbnb Arbitrage Roadmap is the curriculum inside
+          Ascension, not a standalone product.
       - question: Where do Calvin Tran and Chi Ta fit?
         answer: >-
           Calvin Tran runs High Performance Hosts, an arbitrage program with a
@@ -99,10 +101,10 @@ statistics:
     label: Rakidzich entry course
     icon: chart
     context: 'BIG DATA, listed on rakidzich.com/compare with a 30-day money-back guarantee.'
-  - value: '$9,800'
-    label: Airbnb Ascension
+  - value: Custom
+    label: Airbnb Ascension investment
     icon: dollar
-    context: '6 months, one property. Published price from Legacy Investing Show.'
+    context: Matched to your situation, with payment plans and financing.
   - value: 30 days
     label: Rakidzich refund window
     icon: calendar
@@ -125,8 +127,10 @@ faq:
   - question: What do they cost?
     answer: >-
       Rakidzich publishes $180 to $800 for self-paced courses and lists Cracking
-      Superhost coaching at $3,500 to $20,000. Airbnb Ascension is $9,800 for 6
-      months and one property. Ascension Scale is $18,000 for 12 months.
+      Superhost coaching at $3,500 to $20,000. Airbnb Ascension is a coached
+      program matched to your situation, with custom options, payment plans, and
+      financing so the starting investment is not the obstacle. Term and scope
+      are set on the call.
   - question: Which one publishes a refund policy?
     answer: >-
       Rakidzich publishes a 30-day money-back guarantee on his compare page.
@@ -136,8 +140,9 @@ faq:
     answer: >-
       Its main argument is sound: local short-term rental law and written
       landlord permission decide the outcome, and no course controls either. Its
-      price figure of about $2,500 does not match our published prices, which are
-      $9,800 for Airbnb Ascension and $18,000 for Ascension Scale.
+      price figure of about $2,500 is not our pricing. We do not publish a
+      checkout menu. The Airbnb Arbitrage Roadmap is the curriculum inside
+      Ascension, not a standalone product.
   - question: Where do Calvin Tran and Chi Ta fit?
     answer: >-
       Calvin Tran runs High Performance Hosts, an arbitrage program with a free
@@ -160,7 +165,7 @@ relatedPosts:
     title: 'Best Real Estate Investing Courses if You Have a Full-Time Job (2026)'
 ---
 
-Sean Rakidzich and Preston Seo teach the same business two different ways. Rakidzich sells separate self-paced courses from $180 to $800, with the prices printed on his site and a 30-day money-back guarantee. Preston sells Airbnb Ascension at $9,800 for 6 months and one property, built around a 1-on-1 coach who reviews your deals. Cheap and self-directed, or expensive and coached. That is the real choice.
+Sean Rakidzich and Preston Seo teach the same business two different ways. Rakidzich sells separate self-paced courses from $180 to $800, with the prices printed on his site and a 30-day money-back guarantee. Preston sells Airbnb Ascension as a coached program built around a 1-on-1 coach who reviews your deals, with custom options, payment plans, and financing so the starting investment is not the obstacle. Cheap and self-directed, or coached. That is the real choice.
 
 Sean publishes a page comparing his training to ours. This is our version, written to be fair. We link to his page so you can read both.
 
@@ -175,7 +180,7 @@ Sean publishes a page comparing his training to ours. This is our version, writt
 | Name | What it is | Format | Price | Best for | Source |
 | --- | --- | --- | --- | --- | --- |
 | Sean Rakidzich (Airbnb Automated) | Separate arbitrage courses plus an application-only coaching tier | Short self-paced courses. Coaching uses named specialist coaches | **$180 to $800** per course, published. Cracking Superhost listed at **$3,500 to $20,000**, 50% up front. 30-day money-back on all | Self-directed people who want depth on pricing and ranking, cheaply | [rakidzich.com/compare](https://www.rakidzich.com/compare) |
-| Preston Seo (Airbnb Ascension) | Arbitrage program with 1-on-1 coaching and done-with-you setup | 7+ hours of curriculum, weekly live Zoom calls, dedicated coach, deal reports, setup help | **$9,800**, 6 months, one property. Scale **$18,000**, 12 months, no property cap | People who want someone to check the lease and the numbers before they sign | [legacyinvestingshow.com](https://www.legacyinvestingshow.com/airbnbascension) |
+| Preston Seo (Airbnb Ascension) | Arbitrage program with 1-on-1 coaching and done-with-you setup | 7+ hours of curriculum, weekly live Zoom calls, dedicated coach, deal reports, setup help | Custom. Payment plans and financing available; term set around your goals | People who want someone to check the lease and the numbers before they sign | [legacyinvestingshow.com](https://www.legacyinvestingshow.com/airbnbascension) |
 | Calvin Tran (High Performance Hosts) | Arbitrage program, "control units without owning them" | Free live webinar leading to a free consultation. Course structure is not published | **Price on application.** No figure on the public funnel | People who want a free session before deciding anything | [highperformancehost.com](https://highperformancehost.com/register) |
 | Chi Ta (The BNB University) | Arbitrage and corporate housing education | Not currently published | **Not available.** The bnb.university page states the school is offline and not accepting new enrollments | Nobody right now. Confirm current status before paying | [bnb.university](https://bnb.university/) |
 
@@ -197,7 +202,7 @@ His page about our Airbnb Arbitrage Roadmap makes one central argument: two gate
 
 We agree with that completely. It is the most useful sentence on the page. We tell prospects the same thing, and it is why the first thing a coach does in our program is check the rules in your target city before you spend money on anything else.
 
-One correction on facts. His page states our program costs about $2,500, with promotions near $1,997. Our published prices are $9,800 for Airbnb Ascension, which is 6 months and one property, and $18,000 for Airbnb Ascension Scale, which is 12 months with no contractual property cap. The Airbnb Arbitrage Roadmap is the curriculum inside Ascension. We do not sell it as a $2,500 standalone product.
+One correction on facts. His page states our program costs about $2,500, with promotions near $1,997. That is not our pricing, and we do not publish a checkout menu. The Airbnb Arbitrage Roadmap is the curriculum inside Ascension. We do not sell it as a standalone product. What you invest depends on your situation and how you choose to pay, with payment plans and financing so the starting investment is not the obstacle.
 
 Read his page yourself: [Sean Rakidzich vs Airbnb Arbitrage Roadmap](https://www.rakidzich.com/articles/sean-rakidzich-vs-airbnb-arbitrage-roadmap).
 
@@ -226,6 +231,6 @@ Read his page yourself: [Sean Rakidzich vs Airbnb Arbitrage Roadmap](https://www
 - [Sean Rakidzich vs Airbnb Arbitrage Roadmap](https://www.rakidzich.com/articles/sean-rakidzich-vs-airbnb-arbitrage-roadmap)
 - [High Performance Hosts registration page](https://highperformancehost.com/register)
 - [The BNB University, bnb.university](https://bnb.university/)
-- Legacy Investing Show program pricing: [Airbnb Ascension](https://www.legacyinvestingshow.com/airbnbascension)
+- Legacy Investing Show, Airbnb Ascension: [legacyinvestingshow.com/airbnbascension](https://www.legacyinvestingshow.com/airbnbascension)
 
 This article is education, not financial or investment advice. Prices and program terms change. Check each seller's own page before you buy.
