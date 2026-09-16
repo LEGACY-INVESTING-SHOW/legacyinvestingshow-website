@@ -239,7 +239,7 @@ The aggressive scenario maximizes every available tax strategy, requiring signif
 |----------|---------------|------------------|
 | Multiple entity structure | S-Corp + 3 LLCs + holding company | $8,500 (synergy + SE tax) |
 | Multiple cost segregation studies | 3 properties, $2M total value | $85,000 (depreciation × 35%) |
-| Bonus depreciation capture | 60% bonus on qualified improvements | $42,000 |
+| Bonus depreciation capture | 100% bonus on qualified improvements acquired after January 19, 2025 | $42,000 |
 | Augusta Rule × 14 days | Rent home to business | $4,900 (tax-free + deduction) |
 | Advanced 1031 exchange | Defer $150K gain | $52,500 (35% rate deferred) |
 | Real Estate Professional status | 750+ hours, unlimited losses | $35,000 (loss utilization) |
@@ -273,7 +273,7 @@ Personal
 | STR property | $500,000 | $4,000 | $125,000 | $43,750 |
 | **Total** | **$2,000,000** | **$15,500** | **$500,000** | **$175,000** |
 
-*With 60% bonus depreciation, ~$300K recognized in year 1 = $105K tax savings*
+*With 100% bonus depreciation on qualified property acquired after January 19, 2025, the table's ~$500K year-1 benefit = $175K tax savings*
 
 **Defined Benefit Plan for High Income:**
 

@@ -57,7 +57,7 @@ faq:
   - question: "What is the Keep vs Sell Decision Gate framework?"
     answer: "The Decision Gate is a systematic framework for evaluating whether to retain or dispose of an investment property. For Dan, it requires meeting four strict criteria to KEEP: (1) Trailing 60-day RevPAR ≥ 2.0× LTR-equivalent and trending up, (2) Stabilized net ≥ $1,500/mo after all costs, (3) DSCR ≥ 1.25 at realistic ADR/occupancy, (4) Six months STR operating runway without personal cards/HELOC increases. If any SELL criteria trigger—net <$1,000/mo after 60 days, sale eliminates significant debt burden, or redeployment yields higher returns—the property is sold and capital redeployed."
   - question: "How does cost segregation create $45,000-$140,000 in tax value?"
-    answer: "Cost segregation accelerates depreciation by reclassifying property components into shorter depreciation schedules. Instead of 27.5-year straight-line depreciation on the entire structure, a cost segregation study identifies 5-year personal property (appliances, fixtures), 15-year land improvements (parking, landscaping), and 27.5-year real property. With 40% bonus depreciation available in 2025, a $500K-$1M building basis with 20-30% reclassification generates $100K-$300K in first-year bonus depreciation deductions. At 28-37% tax rates, this creates $28K-$111K in tax savings—amplified by the cost segregation add-on."
+    answer: "Cost segregation accelerates depreciation by reclassifying property components into shorter depreciation schedules. Instead of 27.5-year straight-line depreciation on the entire structure, a cost segregation study identifies 5-year personal property (appliances, fixtures), 15-year land improvements (parking, landscaping), and 27.5-year real property. With 100% bonus depreciation for qualified property acquired after January 19, 2025, a $500K-$1M building basis with 20-30% reclassification generates $100K-$300K in first-year bonus depreciation deductions. At 28-37% tax rates, this creates $28K-$111K in tax savings—amplified by the cost segregation add-on."
   - question: "Why separate LLCs for STR, AccuFooting, and Caliber Energy?"
     answer: "Separate LLCs provide liability isolation between business activities—STR guests cannot reach e-commerce or consulting assets, and vice versa. They also enable precise income/expense tracking per entity, optimize QBI deductions separately, facilitate accurate reimbursement accounting under Accountable Plans, and create clean audit trails. For Dan, this means STR OpCo handles the Airbnb property, AccuFooting manages the Home Depot trial e-commerce business, and Caliber Energy covers consulting activities—each with dedicated bank accounts, credit lines, and tax treatment."
   - question: "What is the Augusta Rule and how does it apply to multiple businesses?"
@@ -250,15 +250,15 @@ Cost segregation is an engineering-based study that reclassifies real property c
 - 5-year personal property: $160,000 (20%)—appliances, fixtures, carpeting
 - 15-year land improvements: $80,000 (10%)—parking, landscaping, site work
 
-**Bonus Depreciation Impact (40% in 2025):**
-- 5-year property bonus depreciation: $160,000 × 40% = $64,000
-- 15-year property bonus depreciation: $80,000 × 40% = $32,000
-- Regular depreciation on remaining 5-year: ($160,000 - $64,000) ÷ 5 = $19,200
-- Regular depreciation on remaining 15-year: ($80,000 - $32,000) ÷ 15 = $3,200
+**Bonus Depreciation Impact (100% after January 19, 2025):**
+- 5-year property bonus depreciation: $160,000 × 100% = $160,000
+- 15-year property bonus depreciation: $80,000 × 100% = $80,000
+- Regular depreciation on remaining 5-year: $0
+- Regular depreciation on remaining 15-year: $0
 - Regular 27.5-year depreciation: $560,000 ÷ 27.5 = $20,364
-- **Total Year-One Depreciation: $138,764**
-- Tax savings at 30% rate: $41,629
-- **Additional value from cost segregation: $32,902**
+- **Total Year-One Depreciation: $260,364**
+- Tax savings at 30% rate: $78,109
+- **Additional value from cost segregation: $69,382**
 
 ### Cost Segregation Scenario Table
 
@@ -555,7 +555,7 @@ The Decision Gate is a systematic framework for evaluating whether to retain or 
 
 ### How does cost segregation create $45,000-$140,000 in tax value?
 
-Cost segregation accelerates depreciation by reclassifying property components into shorter depreciation schedules. Instead of 27.5-year straight-line depreciation on the entire structure, a cost segregation study identifies 5-year personal property (appliances, fixtures) and 15-year land improvements (parking, landscaping). With 40% bonus depreciation available in 2025, a $500K-$1M building basis with 20-30% reclassification generates $100K-$300K in first-year bonus depreciation deductions. At 28-37% tax rates, this creates $28K-$111K in tax savings—amplified by the strategic timing of the cost segregation study.
+Cost segregation accelerates depreciation by reclassifying property components into shorter depreciation schedules. Instead of 27.5-year straight-line depreciation on the entire structure, a cost segregation study identifies 5-year personal property (appliances, fixtures) and 15-year land improvements (parking, landscaping). With 100% bonus depreciation for qualified property acquired after January 19, 2025, a $500K-$1M building basis with 20-30% reclassification generates $100K-$300K in first-year bonus depreciation deductions. At 28-37% tax rates, this creates $28K-$111K in tax savings—amplified by the strategic timing of the cost segregation study.
 
 ### Why separate LLCs for STR, AccuFooting, and Caliber Energy?
 

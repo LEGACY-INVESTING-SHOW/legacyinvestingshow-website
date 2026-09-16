@@ -283,15 +283,15 @@ The foundation phase focuses on maximizing cash flow and building liquid capital
 *Cost Segregation Study:*
 - Property value: $275,000 (building only)
 - Short-life property identified: 25% ($68,750)
-- Bonus depreciation (40%): $27,500 immediate deduction
-- **Year 1 total depreciation: $35,000-$40,000**
+- Bonus depreciation (100% after January 19, 2025): $68,750 immediate deduction
+- **Year 1 total depreciation: $68,750+** (plus regular depreciation on remaining building basis)
 
 *Tax Savings:*
-- Depreciation deduction: $40,000
+- Depreciation deduction: $68,750
 - Marginal tax rate: 24%
-- **Tax savings Year 1: $9,600**
+- **Tax savings Year 1: $16,500**
 - Plus state tax savings: $2,000-$4,000
-- **Total Year 1 tax benefit: $11,600-$13,600**
+- **Total Year 1 tax benefit: $18,500-$20,500**
 
 ## Phase 3: Year-One Value Calculation
 
@@ -368,26 +368,25 @@ The foundation phase focuses on maximizing cash flow and building liquid capital
 
 **1. Bonus Depreciation Maximization (2025-2026):**
 
-The Tax Cuts and Jobs Act provides bonus depreciation for qualifying property, though the percentage phases down:
+The 2025 tax law restored 100% bonus depreciation for qualified property acquired after January 19, 2025. Property under a binding contract on or before that date stays on the old phase-down (20% in 2026).
 
-- 2025: 40% bonus depreciation
-- 2026: 20% bonus depreciation
-- 2027+: 0% (unless legislation extends)
+- Acquired after January 19, 2025: 100% bonus depreciation
+- Binding contract on or before January 19, 2025: old phase-down (20% in 2026)
 
-*Application to Investment Property:*
+*Application to Investment Property (acquired after January 19, 2025):*
 - Property purchase price: $275,000
 - Building value (excluding land): $220,000
 - Cost segregation identifies short-life property: $55,000 (25%)
-- Bonus depreciation (40%): $22,000 immediate deduction
-- Remaining $33,000: 5-year depreciation schedule
-- Total Year 1 depreciation: $28,600 ($22,000 bonus + $6,600 regular)
+- Bonus depreciation (100%): $55,000 immediate deduction
+- Remaining short-life basis: $0
+- Total Year 1 depreciation: $55,000 bonus, plus regular 27.5-year depreciation on the remaining building
 
 *Tax Savings Calculation:*
-- Total Year 1 deductions: $28,600
+- Total Year 1 short-life deductions: $55,000
 - Marginal tax rate: 24%
-- Federal tax savings: $6,864
+- Federal tax savings: $13,200
 - State tax savings: $1,800-$2,400
-- **Total Year 1 tax benefit: $8,664-$9,264**
+- **Total Year 1 tax benefit: $15,000-$15,600**
 
 **2. Cost Segregation Study Implementation:**
 

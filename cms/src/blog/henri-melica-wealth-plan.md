@@ -118,14 +118,14 @@ Traditional rental property depreciation spans 27.5 years — a slow tax benefit
 - **5-year property**: Decorative fixtures, specialty electrical, carpeting
 - **7-year property**: Furniture, appliances, equipment
 - **15-year property**: Land improvements, landscaping, paving
-- **Bonus depreciation** (80% in 2025, phasing down) applies to these shorter schedules
+- **Bonus depreciation** (100% for qualified property acquired after January 19, 2025; old phase-down only for earlier binding contracts) applies to these shorter schedules
 
 **For Henri and Melica's Portfolio:**
 | Property Value | Cost Seg Allocation | Year 1 Deduction | Tax Savings (35%) |
 |---------------|-------------------|------------------|-------------------|
-| $500,000 | $125,000 (25%) | $100,000 (80% bonus) | $35,000 |
-| $750,000 | $187,500 (25%) | $150,000 (80% bonus) | $52,500 |
-| $1,000,000 | $250,000 (25%) | $200,000 (80% bonus) | $70,000 |
+| $500,000 | $125,000 (25%) | $125,000 (100% bonus) | $43,750 |
+| $750,000 | $187,500 (25%) | $187,500 (100% bonus) | $65,625 |
+| $1,000,000 | $250,000 (25%) | $250,000 (100% bonus) | $87,500 |
 
 ### Individual LLC Structure for Liability Protection
 
