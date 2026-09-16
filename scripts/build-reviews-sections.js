@@ -625,14 +625,16 @@ function buildTrustpilot() {
         /* The score, read as one mark: the number, the stars it earns, and the
            way out to the profile Preston Seo does not control. */
         out += '\n                    ' + partStop(score)
+            + '\n                    <div class="rv-score-panel">'
             + '\n                    <div class="rv-score">'
             + '\n                        <p class="rv-score__val">' + esc(score) + '</p>'
             + '\n                        <div class="rv-score__of">'
             + '\n                            ' + stars(score, 'rv-stars--lg')
             + '\n                            <p class="rv-score__n">' + esc(count) + ' reviews on Trustpilot</p>'
             + '\n                        </div>'
-            + '\n                        <p class="rv-score__link"><a class="btn-secondary" href="' + esc(profile)
+            + '\n                        <p class="rv-score__link"><a class="btn-primary" href="' + esc(profile)
             + '" rel="nofollow noopener" target="_blank">See all ' + esc(count) + ' on Trustpilot</a></p>'
+            + '\n                    </div>'
             + '\n                    </div>';
         out += '\n                    <p class="rv-tp-summary">Trustpilot rates ' + esc(name) + ' ' + esc(score)
             + ' out of 5 across ' + esc(count) + ' reviews, ' + esc((split.five || {}).percentDisplayed)

@@ -139,7 +139,7 @@
                 "speakable": {
                     "@type": "SpeakableSpecification",
                     "cssSelector": [
-                        ".opener__key",
+                        ".opener__lede",
                         ".faq__answer"
                     ]
                 },
@@ -708,54 +708,206 @@
     </script>
 
     <style>
-/* Reviews page. Field guide tokens from styles.css: cream paper, forest ink,
-   one gold accent. Forest at both ends, hairlines and whitespace between,
-   no cards and no second tint. */
+/* Reviews page only. LIS tokens: cream paper, forest ink, gold accent.
+   Cards, tinted bands, and a sticky jump bar so the page is scannable.
+   Not a site-wide restyle. */
 
     /* --- frame ----------------------------------------------------------- */
-    /* .rv-col: the page's single left edge. Every section starts here. */
-    .rv-col { max-width: 68rem; margin: 0; }
-    .rv-col > h2:first-child { margin-top: 0; }
-    /* One interval for the whole page, wider than the site default because the
-       sections are long and each one needs room to read as its own piece. */
-    #rv-scope .section, .section--rule { padding-top: 0; padding-bottom: 1.25rem; }
-    .section--rule > .container-custom > .rv-col { border-top: 1px solid var(--line); padding-top: 2rem; }
-    @media (min-width: 700px) {
-      #rv-scope .section, .section--rule { padding-bottom: 1.75rem; }
-      .section--rule > .container-custom > .rv-col { padding-top: 2.75rem; }
-    }
-    main section[id] { scroll-margin-top: 5.5rem; }
+    .rv-col { max-width: 72rem; margin: 0; }
+    .rv-col > h2:first-child,
+    .rv-col > .rv-kicker:first-child { margin-top: 0; }
     #rv-scope [hidden] { display: none !important; }
     .rv-vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-    .rv-intro { margin: 0.875rem 0 0; font-size: 1.0625rem; line-height: 1.6; color: var(--ink-soft); max-width: 68ch; }
-    .rv-aside { margin: 2rem 0 0; font-size: 1.0625rem; line-height: 1.6; color: var(--ink-soft); max-width: 68ch; }
-    .rv-aside a { color: var(--emerald-deep); text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 0.18em; }
-    .rv-aside a:hover { color: var(--forest); text-decoration-color: var(--forest); }
     ::selection { background: var(--gold-tint); color: var(--forest); }
 
-    /* --- the forest opener --------------------------- */
-    .opener--forest { padding-bottom: 3.25rem; }
-    .opener--forest .opener__key { color: var(--on-forest); max-width: 52ch; }
-
-    /* --- the jump band, on paper, under the opener ------------------------ */
-    .rv-bar { background: var(--paper); }
-    .rv-bar__inner {
-      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
-      gap: 0.75rem 2rem; padding: 1.125rem 0 1.25rem; border-bottom: 1px solid var(--line);
+    /* Section rhythm: real padding and alternating surfaces, not hairline stacks. */
+    .rv-sec {
+      padding-top: 3.25rem;
+      padding-bottom: 3.25rem;
     }
-    .rv-jump { flex: 1 1 32rem; }
-    .rv-jump__list { display: flex; flex-wrap: wrap; gap: 0.25rem 1.375rem; }
-    .rv-jump__list li { padding: 0.25rem 0; }
-    .rv-jump__list a { font-size: 0.9375rem; }
+    .rv-sec--tint { background: var(--ivory); }
+    .rv-sec--forest {
+      background: var(--forest);
+      color: var(--on-forest);
+    }
+    @media (min-width: 700px) {
+      .rv-sec { padding-top: 4.25rem; padding-bottom: 4.25rem; }
+    }
+    @media (min-width: 1100px) {
+      .rv-sec { padding-top: 4.75rem; padding-bottom: 4.75rem; }
+    }
+    main section[id] { scroll-margin-top: 8.5rem; }
+
+    .rv-kicker {
+      margin: 0 0 0.625rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--emerald);
+    }
+    .rv-sec--forest .rv-kicker { color: var(--gold); }
+    .rv-sec h2 {
+      margin: 0;
+      font-size: clamp(1.75rem, 3vw, 2.25rem);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: var(--forest);
+      max-width: 28ch;
+      text-wrap: balance;
+    }
+    .rv-sec h2::after {
+      content: "";
+      display: block;
+      width: 3rem;
+      height: 2px;
+      margin-top: 0.875rem;
+      background: var(--gold);
+    }
+    .rv-intro {
+      margin: 1rem 0 0;
+      font-size: 1.125rem;
+      line-height: 1.65;
+      color: var(--ink-soft);
+      max-width: 62ch;
+    }
+    .rv-aside {
+      margin: 2.5rem 0 0;
+      font-size: 1.0625rem;
+      line-height: 1.65;
+      color: var(--ink-soft);
+      max-width: 62ch;
+    }
+    .rv-aside a,
+    .rv-intro a {
+      color: var(--emerald-deep);
+      text-decoration: underline;
+      text-decoration-color: var(--gold);
+      text-underline-offset: 0.18em;
+    }
+    .rv-aside a:hover,
+    .rv-intro a:hover { color: var(--forest); text-decoration-color: var(--forest); }
+
+    /* --- forest opener --------------------------------------------------- */
+    .opener--forest.rv-opener {
+      padding-top: 3rem;
+      padding-bottom: 3.5rem;
+    }
+    .rv-opener .opener__title {
+      font-size: clamp(2rem, 4.6vw, 3.25rem);
+      line-height: 1.12;
+      letter-spacing: -0.03em;
+      max-width: 18ch;
+      text-wrap: balance;
+    }
+    .rv-opener .opener__lede {
+      margin-top: 1.25rem;
+      font-size: 1.1875rem;
+      line-height: 1.55;
+      color: var(--on-forest);
+      max-width: 46ch;
+    }
+    .rv-proof {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.625rem;
+      margin: 1.75rem 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .rv-proof li {
+      margin: 0;
+      padding: 0.5rem 0.875rem;
+      border: 1px solid rgba(234, 240, 234, 0.28);
+      border-radius: 999px;
+      background: rgba(10, 28, 22, 0.22);
+      color: var(--on-forest-strong);
+      font-size: 0.875rem;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+    .rv-proof a {
+      color: inherit;
+      text-decoration: underline;
+      text-decoration-color: var(--gold);
+      text-underline-offset: 0.16em;
+    }
+    .rv-proof a:hover { color: var(--gold); }
+    .rv-opener .opener__actions { margin-top: 1.75rem; }
+    @media (min-width: 900px) {
+      .opener--forest.rv-opener { padding-top: 4.25rem; padding-bottom: 4.5rem; }
+    }
+
+    /* --- sticky jump bar ------------------------------------------------- */
+    .rv-bar {
+      position: sticky;
+      top: 3.75rem;
+      z-index: 40;
+      background: rgba(250, 247, 242, 0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+      box-shadow: 0 10px 28px rgba(22, 53, 42, 0.06);
+    }
+    .rv-bar__inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.875rem 1.5rem;
+      padding: 0.75rem 0;
+    }
+    .rv-jump { flex: 1 1 28rem; }
+    @media (max-width: 699px) {
+      .rv-jump { flex: 1 1 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 0.25rem; }
+      .rv-jump__list { flex-wrap: nowrap; width: max-content; }
+      .rv-jump__list a { white-space: nowrap; }
+    }
+    .rv-jump__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .rv-jump__list li { margin: 0; padding: 0; }
+    .rv-jump__list a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 40px;
+      padding: 0.4rem 0.9rem;
+      border: 1.5px solid var(--forest);
+      border-radius: 999px;
+      background: var(--paper);
+      color: var(--forest);
+      font-size: 0.875rem;
+      font-weight: 650;
+      line-height: 1.2;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.18s var(--ease-out), color 0.18s var(--ease-out), border-color 0.18s var(--ease-out);
+    }
+    .rv-jump__list a:hover,
+    .rv-jump__list a:focus-visible {
+      background: var(--forest);
+      color: var(--paper);
+      border-color: var(--forest);
+    }
+    .rv-jump__list a:focus-visible { outline: 2px solid var(--emerald); outline-offset: 3px; }
+    .rv-jump__list a.is-active {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: var(--forest);
+    }
     .rv-find-slot { flex: 0 1 18rem; display: flex; align-items: center; }
     .rv-find { display: flex; align-items: center; gap: 0.5rem; margin: 0; width: 100%; }
     .rv-find__input {
       font: inherit; font-size: 1rem; flex: 1 1 auto; min-width: 0; min-height: 44px;
-      padding: 0.5rem 1rem; border: 1px solid var(--line); border-radius: 999px;
+      padding: 0.5rem 1rem; border: 1.5px solid var(--line); border-radius: 999px;
       background: var(--paper); color: var(--ink); caret-color: var(--emerald-deep);
     }
     .rv-find__input::placeholder { color: var(--ink-faint); }
-    .rv-find__input:focus-visible { outline: 2px solid var(--emerald); outline-offset: 2px; }
+    .rv-find__input:focus-visible { outline: 2px solid var(--emerald); outline-offset: 2px; border-color: var(--emerald); }
     .rv-find__clear {
       font: inherit; font-size: 0.9375rem; min-height: 44px; padding: 0 0.5rem;
       background: none; border: 0; color: var(--emerald-deep); cursor: pointer;
@@ -766,160 +918,265 @@
     .rv-empty { margin: 1.5rem 0 0; font-size: 1rem; color: var(--ink-soft); }
 
     /* --- grids ------------------------------------------------------------ */
-    .rv-grid { display: grid; gap: 2.25rem 2rem; align-items: start; margin: 2rem 0 0; }
-    /* .rv-cols: two packed columns for the short written entries and the
-       Trustpilot reviews, so a long one beside a short one leaves no hole. */
+    .rv-grid { display: grid; gap: 1.75rem 1.5rem; align-items: stretch; margin: 2rem 0 0; }
     .rv-cols { display: block; margin: 2rem 0 0; }
     .rv-cols > * { break-inside: avoid; }
     @media (min-width: 760px) {
-      .rv-cols { column-count: 2; column-gap: 3rem; }
+      .rv-cols { column-count: 2; column-gap: 1.5rem; }
       .rv-cols > :first-child { margin-top: 0; }
     }
-    .rv-grid--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem 1.5rem; }
+    .rv-grid--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem 1.25rem; }
     @media (min-width: 760px) {
-      .rv-grid--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.25rem 3rem; }
+      .rv-grid--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.75rem 1.5rem; }
       .rv-grid--3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .rv-grid--4 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     }
+    .rv-grid--2 { grid-template-columns: minmax(0, 1fr); }
     @media (min-width: 1040px) {
       .rv-grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-      .rv-grid--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2.25rem 1.75rem; }
+      .rv-grid--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.5rem 1.25rem; }
     }
 
-    /* --- the one link treatment on this page ------------------------------ */
-    .rv-link { margin: 0.75rem 0 0; font-size: 1rem; font-weight: 600; }
+    /* --- links ------------------------------------------------------------ */
+    .rv-link { margin: 1rem 0 0; font-size: 1rem; font-weight: 650; }
     .rv-link a {
       color: var(--emerald-deep); text-decoration: underline;
-      text-decoration-color: var(--gold); text-decoration-thickness: 1px; text-underline-offset: 0.18em;
+      text-decoration-color: var(--gold); text-decoration-thickness: 1.5px; text-underline-offset: 0.2em;
     }
     .rv-link a::after { content: ' \203A'; font-weight: 400; }
     .rv-link a:hover { color: var(--forest); text-decoration-color: var(--forest); }
     .rv-link a:focus-visible { outline: 2px solid var(--emerald); outline-offset: 3px; }
+    .rv-feature__cta { margin: 1.25rem 0 0; }
+    .rv-feature__cta .btn-primary { min-height: 44px; }
 
-    /* --- the figure mark --------------------------------------------------- */
-    /* mark.fig: forest on a gold tint. The emphasis mark for a stated figure. */
     mark.fig {
-      background: var(--gold-tint); color: var(--forest); font-weight: 600;
+      background: var(--gold-tint); color: var(--forest); font-weight: 650;
       font-variant-numeric: tabular-nums; padding: 0.04em 0.22em; border-radius: 3px;
       box-decoration-break: clone; -webkit-box-decoration-break: clone;
     }
 
-    /* --- video player, kept ------------------------------------------------ */
-    .rv-player { position: relative; aspect-ratio: 16 / 9; background: var(--ivory); border-radius: 16px; overflow: hidden; }
+    /* --- video player ---------------------------------------------------- */
+    .rv-player {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      background: var(--ivory);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 16px 40px rgba(22, 53, 42, 0.12);
+    }
     .rv-play { display: block; width: 100%; height: 100%; position: relative; padding: 0; border: 0; background: none; cursor: pointer; }
     .rv-play img { width: 100%; height: 100%; object-fit: cover; object-position: center 35%; display: block; color: var(--ink-faint); font-size: 0.875rem; line-height: 1.4; text-align: center; }
-    .rv-play__btn { position: absolute; inset: 0; margin: auto; width: 3.25rem; height: 3.25rem; border-radius: 999px; background: rgba(22, 53, 42, 0.86); transition: transform 220ms var(--ease-out), background 220ms var(--ease-out); }
-    .rv-play__btn::after { content: ""; position: absolute; inset: 0; margin: auto; width: 0; height: 0; border-style: solid; border-width: 0.5rem 0 0.5rem 0.85rem; border-color: transparent transparent transparent var(--on-forest-strong); transform: translateX(2px); }
-    .rv-play:hover .rv-play__btn, .rv-play:focus-visible .rv-play__btn { background: var(--forest); transform: scale(1.08); }
+    .rv-play::before {
+      content: "";
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(22, 53, 42, 0.05) 30%, rgba(22, 53, 42, 0.42) 100%);
+      pointer-events: none;
+    }
+    .rv-play__btn {
+      position: absolute; inset: auto auto 1.15rem 1.15rem;
+      margin: 0; width: 3.75rem; height: 3.75rem; border-radius: 999px;
+      background: var(--gold);
+      box-shadow: 0 8px 22px rgba(22, 53, 42, 0.28);
+      transition: transform 220ms var(--ease-out), background 220ms var(--ease-out);
+    }
+    .rv-play__btn::after {
+      content: ""; position: absolute; inset: 0; margin: auto;
+      width: 0; height: 0;
+      border-style: solid; border-width: 0.55rem 0 0.55rem 0.9rem;
+      border-color: transparent transparent transparent var(--forest);
+      transform: translateX(2px);
+    }
+    .rv-play:hover .rv-play__btn, .rv-play:focus-visible .rv-play__btn { background: var(--gold-hover); transform: scale(1.08); }
     .rv-play:focus-visible { outline: 2px solid var(--emerald); outline-offset: 3px; }
     .rv-player iframe { width: 100%; height: 100%; border: 0; display: block; }
 
-    /* --- section 1: the four client case studies, as feature rows ---------- */
-    .rv-features { margin: 1.5rem 0 0; }
-    .rv-feature { display: grid; gap: 1rem; }
-    .rv-feature + .rv-feature { margin-top: 2.5rem; padding-top: 2.5rem; border-top: 1px solid var(--line); }
+    /* --- LWB video case studies ------------------------------------------ */
+    .rv-features { margin: 2rem 0 0; display: grid; gap: 2rem; }
+    .rv-feature {
+      display: grid;
+      gap: 1.25rem;
+      padding: 1.25rem;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: 0 12px 32px rgba(22, 53, 42, 0.05);
+    }
+    .rv-feature + .rv-feature { margin-top: 0; }
+    .rv-sec--tint .rv-feature { background: var(--paper); }
     .rv-feature__media { margin: 0; display: grid; gap: 0.875rem; align-content: start; }
     .rv-feature__body > :first-child { margin-top: 0; }
     @media (min-width: 860px) {
-      /* The outcome runs the full width, then the interview and the detail sit
-         beside the three facts that carry it. Rows 2 and 4 swap sides. */
-      .rv-feature { grid-template-columns: 53fr 47fr; gap: 1.125rem 2.75rem; align-items: start; }
-      .rv-feature--lead { grid-template-columns: 57fr 43fr; }
+      .rv-feature {
+        grid-template-columns: 53fr 47fr;
+        gap: 1.25rem 2rem;
+        padding: 1.5rem;
+        align-items: start;
+      }
+      .rv-feature--lead { grid-template-columns: 56fr 44fr; }
+      .rv-feature__kicker,
       .rv-feature__head { grid-column: 1 / -1; }
-      .rv-feature__media { grid-column: 1; grid-row: 2; }
-      .rv-feature__body { grid-column: 2; grid-row: 2; }
+      .rv-feature__media { grid-column: 1; grid-row: 3; }
+      .rv-feature__body { grid-column: 2; grid-row: 3; }
       .rv-feature--flip .rv-feature__media { grid-column: 2; }
       .rv-feature--flip .rv-feature__body { grid-column: 1; }
-      .rv-feature + .rv-feature { margin-top: 2.25rem; padding-top: 2.25rem; }
+      .rv-feature + .rv-feature { margin-top: 0; }
+    }
+    .rv-feature__kicker {
+      margin: 0;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--emerald);
     }
     .rv-feature__head {
-      margin: 0; font-size: clamp(1.375rem, 2vw, 1.625rem); line-height: 1.25;
-      font-weight: 600; color: var(--forest); letter-spacing: -0.01em; text-wrap: balance;
-      max-width: 34ch;
+      margin: 0;
+      font-size: clamp(1.375rem, 2.1vw, 1.75rem);
+      line-height: 1.22;
+      font-weight: 650;
+      color: var(--forest);
+      letter-spacing: -0.015em;
+      text-wrap: balance;
+      max-width: 36ch;
     }
-    .rv-feature--lead .rv-feature__head { font-size: clamp(1.5rem, 2.4vw, 1.875rem); }
-    /* The one tinted block between the two forest ends: the three facts of the
-       case, drawn out of the summary underneath it. */
-    .rv-short { margin: 0; padding: 1.125rem 1.25rem; max-width: none; list-style: none; }
+    .rv-feature--lead .rv-feature__head { font-size: clamp(1.5rem, 2.5vw, 2rem); }
+    .rv-short {
+      margin: 0;
+      padding: 1.15rem 1.2rem;
+      max-width: none;
+      list-style: none;
+      background: var(--ivory);
+      border-radius: 14px;
+      border-left: 3px solid var(--gold);
+    }
     .rv-short > li { padding: 0; border: 0; font-size: 1rem; line-height: 1.5; color: var(--ink); }
-    .rv-short > li + li { margin-top: 0.5rem; }
-    .rv-short strong { font-weight: 600; color: var(--forest); font-variant-numeric: tabular-nums; }
-    .rv-feature__sum { margin: 0; font-size: 1rem; line-height: 1.55; color: var(--ink-soft); }
+    .rv-short > li + li { margin-top: 0.55rem; }
+    .rv-short strong { font-weight: 650; color: var(--forest); font-variant-numeric: tabular-nums; }
+    .rv-feature__sum { margin: 0; font-size: 1rem; line-height: 1.6; color: var(--ink-soft); }
     .rv-feature .pull-quote {
-      margin: 1.25rem 0 0; padding: 1.125rem 0 0; border-left: 0;
-      border-top: 1px solid var(--line); max-width: none;
+      margin: 1.25rem 0 0;
+      padding: 0 0 0 1rem;
+      border-left: 3px solid var(--gold);
+      border-top: 0;
+      max-width: none;
     }
     .rv-feature .pull-quote p { font-size: 1.125rem; line-height: 1.5; color: var(--ink); max-width: none; }
-    .rv-feature .pull-quote p + p { margin-top: 0.625rem; }
+    .rv-feature .pull-quote p + p { margin-top: 0.5rem; }
 
-    /* --- section 2: written client results, as a ledger --------------------- */
-    .rv-note { border-top: 1px solid var(--line); padding-top: 1.25rem; margin-top: 2rem; }
-    .rv-note h3 { margin: 0 0 0.625rem; font-size: 1.25rem; line-height: 1.3; font-weight: 600; text-wrap: balance; }
+    /* --- written client results ------------------------------------------ */
+    .rv-note {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 1.15rem 1.2rem 1.2rem;
+      margin-top: 1.15rem;
+      background: var(--paper);
+      break-inside: avoid;
+    }
+    .rv-sec--tint .rv-note { background: var(--paper); }
+    .rv-note h3 { margin: 0 0 0.625rem; font-size: 1.125rem; line-height: 1.3; font-weight: 650; text-wrap: balance; color: var(--forest); }
     .rv-note blockquote { margin: 0; padding: 0; border: 0; }
     .rv-note blockquote p { margin: 0; font-size: 1rem; line-height: 1.6; color: var(--ink-soft); }
-    .rv-note__by { margin: 0.75rem 0 0; font-size: 0.875rem; color: var(--ink-faint); }
-    .rv-note__by .rv-name { font-weight: 600; color: var(--ink); margin-right: 0.5rem; }
+    .rv-note__by { margin: 0.85rem 0 0; font-size: 0.8125rem; color: var(--ink-faint); }
+    .rv-note__by .rv-name { font-weight: 650; color: var(--ink); margin-right: 0.5rem; }
 
-    /* --- section 3: results by the numbers ---------------------------------- */
-    /* Eight client outcomes, two up. Each one is a figure, the sentence that
-       explains it, and the one thing to click. Hairline on top, no box. */
-    .rv-results { list-style: none; margin: 2rem 0 0; padding: 0; display: grid; gap: 2.5rem 3rem; }
-    @media (min-width: 700px) { .rv-results { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    /* --- results by the numbers ------------------------------------------ */
+    .rv-results {
+      list-style: none;
+      margin: 2rem 0 0;
+      padding: 0;
+      display: grid;
+      gap: 1.15rem;
+    }
+    @media (min-width: 700px) { .rv-results { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; } }
     .rv-result {
-      margin: 0; padding: 1.25rem 0 0; border-top: 1px solid var(--line);
-      display: grid; gap: 0.5rem; justify-items: start; align-content: start;
+      margin: 0;
+      padding: 1.35rem 1.35rem 1.4rem;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--paper);
+      display: grid;
+      gap: 0.55rem;
+      justify-items: start;
+      align-content: start;
+      box-shadow: 0 10px 28px rgba(22, 53, 42, 0.04);
     }
     .rv-result__fig {
-      margin: 0; font-size: clamp(1.75rem, 2.6vw, 2.125rem); line-height: 1.15;
-      font-weight: 600; color: var(--forest); font-variant-numeric: tabular-nums;
-      letter-spacing: -0.02em; white-space: nowrap;
+      margin: 0;
+      font-size: clamp(1.35rem, 2.1vw, 1.7rem);
+      line-height: 1.2;
+      font-weight: 700;
+      color: var(--forest);
+      font-variant-numeric: tabular-nums;
+      letter-spacing: -0.02em;
+      text-wrap: balance;
+      max-width: 16ch;
     }
-    .rv-result__say { margin: 0; font-size: 1.0625rem; line-height: 1.6; color: var(--ink); max-width: 46ch; }
-    .rv-result__go { margin: 0.375rem 0 0; }
-    .rv-result__go .btn-secondary { min-height: 44px; font-size: 0.9375rem; padding: 0.625rem 1.25rem; }
+    .rv-result__say { margin: 0; font-size: 1rem; line-height: 1.55; color: var(--ink-soft); max-width: 46ch; }
+    .rv-result__go { margin: 0.5rem 0 0; }
+    .rv-result__go .btn-secondary { min-height: 44px; font-size: 0.9375rem; padding: 0.625rem 1.15rem; }
     .rv-result__go .btn-secondary:focus-visible { outline: 2px solid var(--emerald); outline-offset: 3px; }
 
-    /* --- section 4: Trustpilot ----------------------------------------------- */
-    .rv-score { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1.75rem; margin: 2rem 0 0; max-width: 40rem; }
+    /* --- Trustpilot ------------------------------------------------------ */
+    .rv-score-panel,
+    .rv-score {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.85rem 1.75rem;
+      margin: 2rem 0 0;
+      padding: 1.35rem 1.5rem;
+      max-width: 48rem;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: 0 12px 32px rgba(22, 53, 42, 0.05);
+    }
+    .rv-score { padding: 0; border: 0; background: transparent; box-shadow: none; margin: 0; }
+    .rv-score-panel { display: block; }
+    .rv-score-panel .rv-score { margin: 0; padding: 0; }
     .rv-score__val {
-      margin: 0; font-size: 3.5rem; line-height: 1; font-weight: 700; color: var(--forest);
-      font-variant-numeric: tabular-nums; letter-spacing: -0.03em;
+      margin: 0; font-size: 4rem; line-height: 0.9; font-weight: 750; color: var(--forest);
+      font-variant-numeric: tabular-nums; letter-spacing: -0.04em;
     }
     .rv-score__of { margin: 0; }
-    .rv-score__n { margin: 0.5rem 0 0; font-size: 1rem; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+    .rv-score__n { margin: 0.45rem 0 0; font-size: 1rem; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
     .rv-score__link { margin: 0; margin-left: auto; }
-    .rv-score__link .btn-secondary { min-height: 44px; font-size: 0.9375rem; padding: 0.625rem 1.25rem; }
+    .rv-score__link .btn-secondary,
+    .rv-score__link .btn-primary { min-height: 44px; font-size: 0.9375rem; padding: 0.625rem 1.25rem; }
     .rv-score__link .btn-secondary:focus-visible { outline: 2px solid var(--emerald); outline-offset: 3px; }
-    .rv-tp-summary { margin: 1.5rem 0 0; font-size: 1.0625rem; line-height: 1.6; color: var(--ink-soft); max-width: 68ch; }
-    .rv-bars { list-style: none; margin: 1.75rem 0 0; padding: 0; max-width: 34rem; }
+    .rv-tp-summary { margin: 1.5rem 0 0; font-size: 1.0625rem; line-height: 1.65; color: var(--ink-soft); max-width: 68ch; }
+    .rv-bars { list-style: none; margin: 1.75rem 0 0; padding: 1.15rem 1.25rem; max-width: 36rem; background: var(--paper); border: 1px solid var(--line); border-radius: 16px; }
     .rv-bars > li {
       display: grid; grid-template-columns: 5.5rem minmax(0, 1fr) 2rem 2.75rem;
-      align-items: center; gap: 0 1rem; padding: 0.4375rem 0; border: 0;
+      align-items: center; gap: 0 1rem; padding: 0.5rem 0; border: 0;
       font-size: 0.9375rem; color: var(--ink); font-variant-numeric: tabular-nums;
     }
     .rv-bars__lab { color: var(--ink); }
-    .rv-bars__track { position: relative; height: 7px; }
-    .rv-bars__track::before { content: ''; position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: var(--line); }
-    .rv-bars__fill { position: absolute; left: 0; top: 0; height: 7px; border-radius: 999px; background: var(--gold); }
+    .rv-bars__track { position: relative; height: 8px; background: var(--ivory); border-radius: 999px; overflow: hidden; }
+    .rv-bars__track::before { display: none; }
+    .rv-bars__fill { position: absolute; left: 0; top: 0; height: 8px; border-radius: 999px; background: var(--gold); }
     .rv-bars__n { text-align: right; color: var(--ink); }
     .rv-bars__p { text-align: right; color: var(--ink-soft); }
     .rv-bars__cap { margin: 0.75rem 0 0; font-size: 0.875rem; color: var(--ink-soft); max-width: 34rem; }
-    /* The reviews run two up, the screenshot first because a screenshot is
-       the believable form, the same words underneath because text is what
-       reads, ranks and can be spoken aloud. */
-    .rv-tp-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2.75rem 3rem; margin: 2rem 0 0; align-items: start; }
+    .rv-tp-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.25rem; margin: 2rem 0 0; align-items: stretch; }
     @media (min-width: 700px) { .rv-tp-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-    .rv-review { margin: 0; }
+    .rv-review {
+      margin: 0;
+      padding: 1rem;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+    }
     .rv-review__shot {
       display: block; width: 100%; height: auto; margin: 0 0 0.875rem;
-      border-radius: 16px; background: var(--ivory);
+      border-radius: 12px; background: var(--ivory);
     }
     .rv-review__rating { margin: 0 0 0.625rem; line-height: 1; }
-    .rv-review h3 { margin: 0 0 0.375rem; font-size: 1rem; line-height: 1.4; font-weight: 600; }
+    .rv-review h3 { margin: 0 0 0.375rem; font-size: 1rem; line-height: 1.4; font-weight: 650; color: var(--forest); }
     .rv-review blockquote { margin: 0; padding: 0; border: 0; }
     .rv-review blockquote p { margin: 0; font-size: 0.9375rem; line-height: 1.65; color: var(--ink-soft); }
     .rv-review__by { margin: 0.75rem 0 0; font-size: 0.875rem; color: var(--ink-faint); }
-    .rv-review__by .rv-name { font-weight: 600; color: var(--ink); margin-right: 0.5rem; }
+    .rv-review__by .rv-name { font-weight: 650; color: var(--ink); margin-right: 0.5rem; }
     .rv-stars { display: inline-flex; gap: 0.125rem; vertical-align: -0.1em; }
     .rv-stars svg { width: 1rem; height: 1rem; display: block; }
     .rv-stars--lg svg { width: 1.5rem; height: 1.5rem; gap: 0.1875rem; }
@@ -927,32 +1184,62 @@
     .rv-stars .off { fill: var(--line); }
     .rv-stars .part { fill: url(#rv-star-part); }
 
-    /* --- section 5: Airbnb client case studies ------------------------------- */
-    .rv-case { display: grid; gap: 0.75rem; }
-    .rv-case h3 { margin: 0.25rem 0 0; font-size: 1.25rem; line-height: 1.3; font-weight: 600; text-wrap: balance; }
+    /* --- Airbnb client case studies -------------------------------------- */
+    .rv-case {
+      display: grid;
+      gap: 0.75rem;
+      padding: 1rem;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 10px 28px rgba(22, 53, 42, 0.04);
+    }
+    .rv-case h3 { margin: 0.15rem 0 0; font-size: 1.1875rem; line-height: 1.3; font-weight: 650; text-wrap: balance; color: var(--forest); }
     .rv-case__sum { margin: 0; font-size: 1rem; line-height: 1.6; color: var(--ink-soft); }
-    .rv-case .rv-link { margin-top: 0.25rem; }
+    .rv-case .rv-link { margin-top: 0.15rem; }
+    .rv-case .rv-player { box-shadow: none; }
 
-    /* --- section 6: wealth plan pages ---------------------------------------- */
-    .rv-plan { margin: 0; display: grid; gap: 0.75rem; }
+    /* --- wealth plan pages ----------------------------------------------- */
+    .rv-plan {
+      margin: 0;
+      display: grid;
+      gap: 0.75rem;
+      padding: 0.85rem;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+    }
     .rv-plan__open {
-      display: block; width: 100%; padding: 0; margin: 0; border: 0; background: var(--ivory);
-      border-radius: 16px; overflow: hidden; cursor: zoom-in;
+      display: block; width: 100%; padding: 0; margin: 0; border: 0;
+      background: var(--ivory); border-radius: 14px; overflow: hidden; cursor: zoom-in;
+      position: relative;
     }
     .rv-plan__open img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: top left; }
     .rv-plan--wide .rv-plan__open img { object-fit: contain; object-position: center; }
+    .rv-plan__open::after {
+      content: "Enlarge";
+      position: absolute;
+      right: 0.75rem;
+      bottom: 0.75rem;
+      padding: 0.35rem 0.7rem;
+      border-radius: 999px;
+      background: rgba(22, 53, 42, 0.88);
+      color: var(--on-forest-strong);
+      font-size: 0.75rem;
+      font-weight: 650;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      pointer-events: none;
+    }
     .rv-plan__cap { font-size: 0.9375rem; line-height: 1.6; color: var(--ink-soft); }
-    /* The four sample pages run two up, large enough to read. */
     .rv-plans__lead .rv-plan__open img { aspect-ratio: 16 / 9; }
-    /* A wide strip is shown at its own height rather than padded out to a
-       landscape box, so the ivory ground never becomes empty space. */
     .rv-plans__lead .rv-plan--wide .rv-plan__open img { aspect-ratio: auto; }
     .rv-plans__lead .rv-plan__cap { font-size: 0.9375rem; }
     .rv-text { border-top: 1px solid var(--line); }
     .rv-text > summary {
       display: block; list-style: none; cursor: pointer; position: relative;
       padding: 0.8125rem 1.5rem 0.8125rem 0; min-height: 44px;
-      font-size: 0.875rem; font-weight: 600; color: var(--emerald-deep);
+      font-size: 0.875rem; font-weight: 650; color: var(--emerald-deep);
     }
     .rv-text > summary::-webkit-details-marker { display: none; }
     .rv-text > summary::after {
@@ -969,48 +1256,87 @@
     .rv-text__body p { margin: 0 0 0.75rem; font-size: 0.9375rem; line-height: 1.65; color: var(--ink-soft); }
     .rv-text__body p:last-child { margin-bottom: 0; }
 
-    /* --- the reveal, one pattern for four sections --------------------------- */
-    .rv-reveal { margin: 2rem 0 0; border-top: 1px solid var(--line); }
+    /* --- reveal ---------------------------------------------------------- */
+    .rv-reveal {
+      margin: 1.75rem 0 0;
+      border: 1.5px solid var(--forest);
+      border-radius: 999px;
+      background: var(--paper);
+      max-width: 36rem;
+    }
     .rv-reveal > summary {
       display: block; list-style: none; cursor: pointer;
-      padding: 0.875rem 1.75rem 0.875rem 0; position: relative;
-      font-size: 1rem; font-weight: 600; color: var(--emerald-deep); min-height: 44px;
+      padding: 0.8rem 2.5rem 0.8rem 1.25rem; position: relative;
+      font-size: 1rem; font-weight: 650; color: var(--forest); min-height: 44px;
     }
     .rv-reveal > summary::-webkit-details-marker { display: none; }
     .rv-reveal > summary::after {
-      content: ''; position: absolute; right: 0.25rem; top: 1.3rem;
-      width: 0.55rem; height: 0.55rem;
-      border-right: 2px solid var(--emerald); border-bottom: 2px solid var(--emerald);
+      content: ''; position: absolute; right: 1.1rem; top: 1.2rem;
+      width: 0.5rem; height: 0.5rem;
+      border-right: 2px solid var(--forest); border-bottom: 2px solid var(--forest);
       transform: rotate(45deg); transition: transform 0.25s var(--ease-out);
     }
+    .rv-reveal[open] {
+      border-radius: 18px;
+      max-width: none;
+    }
     .rv-reveal[open] > summary::after { transform: rotate(-135deg); }
-    .rv-reveal > summary:hover { color: var(--forest); }
+    .rv-reveal > summary:hover { color: var(--emerald-deep); }
     .rv-reveal > summary:focus-visible { outline: 2px solid var(--emerald); outline-offset: 3px; }
     .rv-reveal__hide { display: none; }
     .rv-reveal[open] .rv-reveal__show { display: none; }
     .rv-reveal[open] .rv-reveal__hide { display: inline; }
-    .rv-reveal > div { padding-top: 0.25rem; }
-    .rv-reveal .rv-grid { margin-top: 1.5rem; }
+    .rv-reveal > div { padding: 0.25rem 1rem 1.15rem; }
+    .rv-reveal .rv-grid { margin-top: 1.25rem; }
 
-    /* --- lightbox ------------------------------------------------------------ */
+    /* --- FAQ and closing CTA --------------------------------------------- */
+    #questions .faq details {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--paper);
+      padding: 0 1.15rem;
+      margin: 0.75rem 0 0;
+    }
+    #questions .faq details:first-child { margin-top: 1.75rem; }
+    #questions .faq summary {
+      cursor: pointer;
+      font-weight: 650;
+      color: var(--forest);
+      padding: 1rem 0;
+    }
+    .rv-close {
+      padding-top: 3.25rem;
+      padding-bottom: 3.5rem;
+    }
+    .rv-close h2 {
+      color: var(--on-forest-strong);
+      max-width: 20ch;
+    }
+    .rv-close h2::after { background: var(--gold); }
+    .rv-close .rv-intro { color: var(--on-forest); }
+    .rv-close .opener__actions { margin-top: 1.75rem; }
+
+    /* --- lightbox -------------------------------------------------------- */
     .rv-lb { border: 0; border-radius: 16px; padding: 0; background: var(--paper); max-width: min(96vw, 60rem); width: 100%; }
     .rv-lb::backdrop { background: rgba(22, 53, 42, 0.72); }
     .rv-lb__inner { padding: 1.25rem; }
     .rv-lb img { display: block; width: 100%; height: auto; border-radius: 12px; }
     .rv-lb__cap { margin: 0.875rem 0 0; font-size: 0.9375rem; line-height: 1.6; color: var(--ink-soft); }
     .rv-lb__dismiss { display: flex; justify-content: flex-end; padding: 0.5rem 0.5rem 0; margin: 0; }
-    .rv-lb__close { font: inherit; font-size: 0.9375rem; font-weight: 600; min-height: 44px; min-width: 44px; padding: 0 0.75rem; background: none; border: 0; color: var(--emerald-deep); cursor: pointer; text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 0.18em; }
+    .rv-lb__close { font: inherit; font-size: 0.9375rem; font-weight: 650; min-height: 44px; min-width: 44px; padding: 0 0.75rem; background: none; border: 0; color: var(--emerald-deep); cursor: pointer; text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 0.18em; }
     .rv-lb__close:hover { color: var(--forest); }
 
     @media (prefers-reduced-motion: reduce) {
       .rv-play__btn { transition: none; }
       .rv-play:hover .rv-play__btn { transform: none; }
       .rv-reveal > summary::after, .rv-text > summary::after { transition: none; }
+      .rv-bar { backdrop-filter: none; }
     }
     @media print {
       .rv-reveal > div, .rv-text > .rv-text__body { display: block !important; }
       mark.fig { background: transparent; font-weight: 700; text-decoration: underline; }
-      .rv-bar { display: none; }
+      .rv-bar, .rv-close { display: none; }
+      .rv-feature, .rv-note, .rv-result, .rv-case, .rv-plan, .rv-review { box-shadow: none; }
     }
     </style>
 
@@ -1066,11 +1392,22 @@
             </div>
         </div>
 
-        <section class="opener opener--forest">
+        <section class="opener opener--forest rv-opener">
             <div class="container-custom">
                 <div class="rv-col">
+                    <span class="label">Client results</span>
                     <h1 class="opener__title">Legacy Investing Show reviews and Preston Seo client results</h1>
-                    <p class="opener__key">Rated 4.2 on Trustpilot across 66 reviews. Everything below comes from the clients themselves: their interviews, their posts, and the plans written for them.</p>
+                    <hr class="opener__rule">
+                    <p class="opener__lede">Everything below comes from the clients themselves: their interviews, their posts, and the plans written for them.</p>
+                    <ul class="rv-proof">
+                        <li>19 recorded client interviews</li>
+                        <li>Named dollar results, not composites</li>
+                        <li><a href="#trustpilot">Trustpilot profile, 66 reviews</a></li>
+                    </ul>
+                    <div class="opener__actions">
+                        <a class="btn-primary" href="#case-studies">Watch client case studies</a>
+                        <a class="btn-secondary" href="#trustpilot">See Trustpilot reviews</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1082,11 +1419,12 @@
                         <nav class="rv-jump" aria-label="Sections of this page">
                             <ul class="rv-jump__list">
                                 <li><a href="#case-studies">Client case studies</a></li>
-                                <li><a href="#written">Written client results</a></li>
-                                <li><a href="#numbers">Results by the numbers</a></li>
-                                <li><a href="#trustpilot">Trustpilot reviews</a></li>
-                                <li><a href="#airbnb">Airbnb client case studies</a></li>
-                                <li><a href="#wealth-plans">Wealth plan pages</a></li>
+                                <li><a href="#written">Written results</a></li>
+                                <li><a href="#numbers">By the numbers</a></li>
+                                <li><a href="#trustpilot">Trustpilot</a></li>
+                                <li><a href="#airbnb">Airbnb cases</a></li>
+                                <li><a href="#wealth-plans">Wealth plans</a></li>
+                                <li><a href="#questions">Questions</a></li>
                             </ul>
                         </nav>
                         <div class="rv-find-slot">
@@ -1109,12 +1447,15 @@
             </div>
         </div>
 
-        <section class="section section--tight" id="case-studies" data-rv-sec>
+        <section class="rv-sec" id="case-studies" data-rv-sec>
             <div class="container-custom">
                 <div class="rv-col">
+                    <p class="rv-kicker">Video interviews</p>
                     <h2>Legacy Wealth Blueprint client case studies</h2>
+                    <p class="rv-intro">Four Legacy Wealth Blueprint clients, on camera, with the figures they give themselves. Watch the interview, then read the written case study.</p>
                     <div class="rv-features">
                         <article class="rv-feature rv-feature--lead" data-rv="lwb legacy wealth blueprint client case study video interview">
+                            <p class="rv-feature__kicker">Video interview</p>
                             <h3 class="rv-feature__head">Stephanie Dailey saved over <mark class="fig">$20,000</mark> in taxes in her first year</h3>
                             <div class="rv-feature__media">
                                 <div class="rv-player" data-vimeo="1207907513" data-title="Stephanie Dailey">
@@ -1132,12 +1473,13 @@
                                     <li>Over <strong>$20,000</strong> saved in year one, and <strong>$40,000 to $50,000</strong> expected over the next twelve months.</li>
                                 </ul>
                                 <figure class="pull-quote"><blockquote><p>&ldquo;we were just really blown away by how quickly it paid off&rdquo;</p><p>&ldquo;it might have otherwise taken me years to get where we got in six months&rdquo;</p></blockquote></figure>
-                                <p class="rv-link"><a href="/blog/stephanie-dailey-legacy-wealth-blueprint-case-study">Read Stephanie&rsquo;s case study</a></p>
+                                <p class="rv-feature__cta"><a class="btn-primary" href="/blog/stephanie-dailey-legacy-wealth-blueprint-case-study">Read Stephanie&rsquo;s case study</a></p>
                                 <!-- reviews:transcript:1207907513:start -->
                                 <!-- reviews:transcript:1207907513:end -->
                             </div>
                         </article>
                         <article class="rv-feature rv-feature--flip" data-rv="lwb legacy wealth blueprint client case study video interview">
+                            <p class="rv-feature__kicker">Video interview</p>
                             <h3 class="rv-feature__head">Albert put his net worth growth at <mark class="fig">25%</mark> and cut his home insurance in half</h3>
                             <div class="rv-feature__media">
                                 <div class="rv-player" data-vimeo="1207906800" data-title="Albert">
@@ -1155,12 +1497,13 @@
                                     <li>Net worth growth at <strong>25%</strong>, the self-managed 401(k) up about <strong>19%</strong> year to date and the Roth about <strong>40%</strong>.</li>
                                 </ul>
                                 <figure class="pull-quote"><blockquote><p>&ldquo;Before Legacy Wealth Blueprint, I would say the amount of financial knowledge I had was super slim.&rdquo;</p><p>&ldquo;I had no idea about tax loss harvesting.&rdquo;</p></blockquote></figure>
-                                <p class="rv-link"><a href="/blog/albert-legacy-wealth-blueprint-case-study">Read Albert&rsquo;s case study</a></p>
+                                <p class="rv-feature__cta"><a class="btn-primary" href="/blog/albert-legacy-wealth-blueprint-case-study">Read Albert&rsquo;s case study</a></p>
                                 <!-- reviews:transcript:1207906800:start -->
                                 <!-- reviews:transcript:1207906800:end -->
                             </div>
                         </article>
                         <article class="rv-feature" data-rv="lwb legacy wealth blueprint client case study video interview">
+                            <p class="rv-feature__kicker">Video interview</p>
                             <h3 class="rv-feature__head">Abigail calculated just under <mark class="fig">$100,000</mark> in first-year ROI</h3>
                             <div class="rv-feature__media">
                                 <div class="rv-player" data-vimeo="1124934002" data-title="Abigail">
@@ -1178,12 +1521,13 @@
                                     <li>Just under <strong>$100,000</strong> in first-year ROI, her own calculation, run twice.</li>
                                 </ul>
                                 <figure class="pull-quote"><blockquote><p>&ldquo;I&rsquo;m coming in at just under a hundred thousand dollars ROI for just this year.&rdquo;</p><p>&ldquo;don&rsquo;t be afraid to be the person in the room who knows the least&rdquo;</p></blockquote></figure>
-                                <p class="rv-link"><a href="/blog/abigail-legacy-wealth-blueprint-case-study">Read Abigail&rsquo;s case study</a></p>
+                                <p class="rv-feature__cta"><a class="btn-primary" href="/blog/abigail-legacy-wealth-blueprint-case-study">Read Abigail&rsquo;s case study</a></p>
                                 <!-- reviews:transcript:1124934002:start -->
                                 <!-- reviews:transcript:1124934002:end -->
                             </div>
                         </article>
                         <article class="rv-feature rv-feature--flip" data-rv="lwb legacy wealth blueprint client case study video interview">
+                            <p class="rv-feature__kicker">Video interview</p>
                             <h3 class="rv-feature__head">Shawn came for the tax knowledge his CPAs were not giving him</h3>
                             <div class="rv-feature__media">
                                 <div class="rv-player" data-vimeo="1210332705" data-title="Shawn">
@@ -1201,7 +1545,7 @@
                                     <li>No dollar figures yet: he is at the start of his plan rather than the end of it.</li>
                                 </ul>
                                 <figure class="pull-quote"><blockquote><p>&ldquo;The bigger picture was getting the knowledge from you, the professional, in the taxes, because I&rsquo;m struggling right now with CPAs.&rdquo;</p><p>&ldquo;If I truly play the game with you and I&rsquo;m a good student and I follow the steps, oh yeah, for me, this is life-changing for sure.&rdquo;</p></blockquote></figure>
-                                <p class="rv-link"><a href="/blog/shawn-legacy-wealth-blueprint-roi-case-study">Read Shawn&rsquo;s case study</a></p>
+                                <p class="rv-feature__cta"><a class="btn-primary" href="/blog/shawn-legacy-wealth-blueprint-roi-case-study">Read Shawn&rsquo;s case study</a></p>
                                 <!-- reviews:transcript:1210332705:start -->
                                 <!-- reviews:transcript:1210332705:end -->
                             </div>
@@ -1212,9 +1556,10 @@
             </div>
         </section>
 
-        <section class="section section--rule" id="written" data-rv-sec>
+        <section class="rv-sec rv-sec--tint" id="written" data-rv-sec>
             <div class="container-custom">
                 <div class="rv-col">
+                    <p class="rv-kicker">Community posts</p>
                     <h2>Written Legacy Wealth Blueprint client results</h2>
                     <p class="rv-intro">Posts clients wrote in the Legacy Wealth Blueprint community, with their own names and the month they posted.</p>
                     <div class="rv-cols rv-ledger">
@@ -1453,48 +1798,50 @@
             </div>
         </section>
 
-        <section class="section section--rule" id="numbers" data-rv-sec>
+        <section class="rv-sec" id="numbers" data-rv-sec>
             <div class="container-custom">
                 <div class="rv-col">
+                    <p class="rv-kicker">Named outcomes</p>
                     <h2>Client results by the numbers</h2>
+                    <p class="rv-intro">Each figure belongs to one named client and one source. Nothing here is a typical result or an average.</p>
                     <ul class="rv-results">
                         <li class="rv-result" data-rv="client result figure">
-                            <p class="rv-result__fig">Over $20,000</p>
+                            <h3 class="rv-result__fig">$20,000 in taxes saved</h3>
                             <p class="rv-result__say">Stephanie Dailey saved this much in taxes in her first year in the Legacy Wealth Blueprint.</p>
                             <p class="rv-result__go"><a class="btn-secondary" href="/blog/stephanie-dailey-legacy-wealth-blueprint-case-study">Read Stephanie&rsquo;s case study</a></p>
                         </li>
                         <li class="rv-result" data-rv="client result figure">
-                            <p class="rv-result__fig">Just under $100,000</p>
+                            <h3 class="rv-result__fig">Just under $100,000 in first-year ROI</h3>
                             <p class="rv-result__say">Abigail ran her own first-year ROI on the strategies she implemented and got this number.</p>
                             <p class="rv-result__go"><a class="btn-secondary" href="/blog/abigail-legacy-wealth-blueprint-case-study">Read Abigail&rsquo;s case study</a></p>
                         </li>
                         <li class="rv-result" data-rv="client result figure">
-                            <p class="rv-result__fig">$88,000</p>
+                            <h3 class="rv-result__fig">$88,000 in taxes a CPA missed</h3>
                             <p class="rv-result__say">A $300,000 W-2 earner found this much through entity setup, deductions, withholding and retirement account sequencing after a CPA missed it.</p>
                             <p class="rv-result__go"><a class="btn-secondary" href="/blog/88k-tax-savings-cpa-missed-case-study">Read the $88K case study</a></p>
                         </li>
                         <li class="rv-result" data-rv="client result figure">
-                            <p class="rv-result__fig">$90,000</p>
+                            <h3 class="rv-result__fig">$90,000 in cash flow</h3>
                             <p class="rv-result__say">Chad grossed about this much in his first year running one short-term rental in North Florida, at about $2,500 a month in cash flow.</p>
                             <p class="rv-result__go"><a class="btn-secondary" href="/blog/chad-90k-year-one-property">Read Chad&rsquo;s case study</a></p>
                         </li>
                         <li class="rv-result" data-rv="client result figure">
-                            <p class="rv-result__fig">$259,700</p>
+                            <h3 class="rv-result__fig">$259,700 in year-one cash freed</h3>
                             <p class="rv-result__say">Mia and Jay&rsquo;s wealth plan is built to remove $90,000 of annual tax and free this much in year one.</p>
                             <p class="rv-result__go"><a class="btn-secondary" href="/blog/mia-jay-wealth-plan">Read Mia and Jay&rsquo;s wealth plan</a></p>
                         </li>
                         <li class="rv-result" data-rv="client result figure">
-                            <p class="rv-result__fig">$385,000</p>
+                            <h3 class="rv-result__fig">$385,000 in year-one plan value</h3>
                             <p class="rv-result__say">Soojin&rsquo;s 2026 wealth plan runs two scenarios, $101K in the conservative case and this in the aggressive one.</p>
                             <p class="rv-result__go"><a class="btn-secondary" href="/blog/soojin-wealth-plan">Read Soojin&rsquo;s wealth plan</a></p>
                         </li>
                         <li class="rv-result" data-rv="client result figure">
-                            <p class="rv-result__fig">$118,500 to $339,760</p>
+                            <h3 class="rv-result__fig">$118,500 to $339,760 in year-one range</h3>
                             <p class="rv-result__say">Andreea&rsquo;s plan covers a $770K severance year, and this is the year-one range on Path A.</p>
                             <p class="rv-result__go"><a class="btn-secondary" href="/blog/andreea-wealth-plan">Read Andreea&rsquo;s wealth plan</a></p>
                         </li>
                         <li class="rv-result" data-rv="client result figure">
-                            <p class="rv-result__fig">$78,400</p>
+                            <h3 class="rv-result__fig">$78,400 in year-one ROI</h3>
                             <p class="rv-result__say">Josh&rsquo;s plan clears $38K of credit card debt through a HELOC refinance first, then builds this much of year-one ROI.</p>
                             <p class="rv-result__go"><a class="btn-secondary" href="/blog/josh-wealth-plan">Read Josh&rsquo;s wealth plan</a></p>
                         </li>
@@ -1503,19 +1850,22 @@
             </div>
         </section>
 
-        <section class="section section--rule" id="trustpilot" data-rv-sec>
+        <section class="rv-sec rv-sec--tint" id="trustpilot" data-rv-sec>
             <div class="container-custom">
                 <div class="rv-col">
+                    <p class="rv-kicker">Independent profile</p>
                     <h2>Trustpilot reviews of Legacy Investing Show</h2>
                     <!-- reviews:trustpilot:start -->
                     <svg aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0"><defs><linearGradient id="rv-star-part" x1="0" y1="0" x2="1" y2="0"><stop offset="20%" style="stop-color:var(--gold)"></stop><stop offset="20%" style="stop-color:var(--line)"></stop></linearGradient></defs></svg>
+                    <div class="rv-score-panel">
                     <div class="rv-score">
                         <p class="rv-score__val">4.2</p>
                         <div class="rv-score__of">
                             <span class="rv-stars rv-stars--lg" role="img" aria-label="4.2 out of 5 stars"><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="on" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg><svg class="part" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg></span>
                             <p class="rv-score__n">66 reviews on Trustpilot</p>
                         </div>
-                        <p class="rv-score__link"><a class="btn-secondary" href="https://www.trustpilot.com/review/firstairbnb.com" rel="nofollow noopener" target="_blank">See all 66 on Trustpilot</a></p>
+                        <p class="rv-score__link"><a class="btn-primary" href="https://www.trustpilot.com/review/firstairbnb.com" rel="nofollow noopener" target="_blank">See all 66 on Trustpilot</a></p>
+                    </div>
                     </div>
                     <p class="rv-tp-summary">Trustpilot rates Legacy Investing Show By Preston Seo 4.2 out of 5 across 66 reviews, 77% of them five star and 9% one star. The 58 below are the ones captured on 13 September 2026. Preston Seo does not control that page.</p>
                     <ul class="rv-bars">
@@ -1950,9 +2300,10 @@ Would like to have seen/heard more about Spendthrift Trusts and also about 508 c
             </div>
         </section>
 
-        <section class="section section--rule" id="airbnb" data-rv-sec>
+        <section class="rv-sec" id="airbnb" data-rv-sec>
             <div class="container-custom">
                 <div class="rv-col">
+                    <p class="rv-kicker">Short-term rentals</p>
                     <h2>Airbnb client case studies</h2>
                     <p class="rv-intro">Airbnb arbitrage and short-term rental clients, with the figures each of them gives in their own interview.</p>
                     <div class="rv-grid rv-grid--2">
@@ -2945,9 +3296,10 @@ Would like to have seen/heard more about Spendthrift Trusts and also about 508 c
             </div>
         </section>
 
-        <section class="section section--rule" id="wealth-plans" data-rv-sec>
+        <section class="rv-sec rv-sec--tint" id="wealth-plans" data-rv-sec>
             <div class="container-custom">
                 <div class="rv-col">
+                    <p class="rv-kicker">Client documents</p>
                     <h2>Inside real Legacy Wealth Blueprint wealth plans</h2>
                     <p class="rv-intro">A wealth plan is a document Preston Seo&rsquo;s team writes for one Legacy Wealth Blueprint client. It opens with an executive summary, then works through the strategies chosen for that household one at a time, each with the dollars it is worth and the order to do it in. A full plan runs to about 31 pages and covers a twelve month window. The pages below are real client plans with names, addresses and identifying details blacked out. The dollar figures on them are the targets the plan sets for that client&rsquo;s first year.</p>
                     <!-- reviews:wealth-plans:start -->
@@ -4222,9 +4574,10 @@ Would like to have seen/heard more about Spendthrift Trusts and also about 508 c
         </section>
         </div>
 
-        <section class="section section--rule" id="questions">
+        <section class="rv-sec" id="questions">
             <div class="container-custom">
                 <div class="rv-col">
+                    <p class="rv-kicker">FAQ</p>
                     <h2>Legacy Investing Show reviews: common questions</h2>
                     <div class="faq">
                     <details>
@@ -4285,6 +4638,20 @@ Would like to have seen/heard more about Spendthrift Trusts and also about 508 c
                         <summary>Are these results typical?</summary>
                         <div class="faq__answer"><p>No. Every figure on this page belongs to one named client and comes either from what they said in a recorded interview or from the plan written for them. Income, family size, state, business activity and how much of the plan a client actually implements all change the outcome. Shawn&rsquo;s interview is the clearest example: he states no figures at all, because he is at the start of his plan rather than the end of it.</p></div>
                     </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rv-sec rv-sec--forest rv-close" aria-labelledby="rv-close-title">
+            <div class="container-custom">
+                <div class="rv-col">
+                    <p class="rv-kicker">Next step</p>
+                    <h2 id="rv-close-title">The program behind these client results</h2>
+                    <p class="rv-intro">The interviews, posts, and wealth-plan pages on this page come from Legacy Wealth Blueprint clients. The tax strategies they walk through are the ones taught in the free class.</p>
+                    <div class="opener__actions">
+                        <a class="btn-primary" href="/legacy-wealth-blueprint">See the Legacy Wealth Blueprint</a>
+                        <a class="btn-secondary" href="https://join.managemoney101.com/tax-strategies">Join the free tax class</a>
                     </div>
                 </div>
             </div>
@@ -4463,6 +4830,31 @@ Would like to have seen/heard more about Spendthrift Trusts and also about 508 c
             lightbox.addEventListener('close', function () {
                 document.getElementById('rv-lb-inner').replaceChildren();
             });
+        }
+
+        var jumpLinks = Array.prototype.slice.call(document.querySelectorAll('.rv-jump__list a'));
+        if (jumpLinks.length && 'IntersectionObserver' in window) {
+            var byId = {};
+            jumpLinks.forEach(function (link) {
+                var href = link.getAttribute('href') || '';
+                if (href.charAt(0) === '#') byId[href.slice(1)] = link;
+            });
+            var observed = [];
+            Object.keys(byId).forEach(function (id) {
+                var node = document.getElementById(id);
+                if (node) observed.push(node);
+            });
+            if (observed.length) {
+                var io = new IntersectionObserver(function (entries) {
+                    var visible = entries.filter(function (entry) { return entry.isIntersecting; });
+                    if (!visible.length) return;
+                    visible.sort(function (a, b) { return b.intersectionRatio - a.intersectionRatio; });
+                    jumpLinks.forEach(function (link) { link.classList.remove('is-active'); });
+                    var current = byId[visible[0].target.id];
+                    if (current) current.classList.add('is-active');
+                }, { rootMargin: '-28% 0px -58% 0px', threshold: [0.15, 0.35, 0.6] });
+                observed.forEach(function (node) { io.observe(node); });
+            }
         }
 
         apply();
