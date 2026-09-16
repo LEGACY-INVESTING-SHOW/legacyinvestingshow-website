@@ -317,6 +317,8 @@ test('the reviews page keeps one H1, named proof, and contextual number headline
     assert.match(page, /class="opener__lede"/);
     assert.ok(!page.includes('class="rv-proof"'), 'opener chips are gone');
     assert.ok(!page.includes('Watch client case studies'), 'opener CTAs are gone');
+    assert.ok(!page.includes('The program behind these client results'), 'end closer is gone');
+    assert.ok(!page.includes('See the Legacy Wealth Blueprint'), 'closer LWB button is gone');
     assert.match(page, /<ul class="rv-jump__list">/);
     assert.match(page, /\$20,000 in taxes saved/);
     assert.match(page, /\$90,000 in cash flow/);

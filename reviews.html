@@ -726,10 +726,6 @@
       padding-bottom: 3.25rem;
     }
     .rv-sec--tint { background: var(--ivory); }
-    .rv-sec--forest {
-      background: var(--forest);
-      color: var(--on-forest);
-    }
     @media (min-width: 700px) {
       .rv-sec { padding-top: 4.25rem; padding-bottom: 4.25rem; }
     }
@@ -749,7 +745,6 @@
       text-transform: uppercase;
       color: var(--emerald);
     }
-    .rv-sec--forest .rv-kicker { color: var(--gold); }
     .rv-sec h2 {
       margin: 0;
       font-size: clamp(1.75rem, 3vw, 2.25rem);
@@ -1264,7 +1259,7 @@
     .rv-reveal > div { padding: 0.25rem 1rem 1.15rem; }
     .rv-reveal .rv-grid { margin-top: 1.25rem; }
 
-    /* --- FAQ and closing CTA --------------------------------------------- */
+    /* --- FAQ ------------------------------------------------------------- */
     #questions .faq details {
       border: 1px solid var(--line);
       border-radius: 14px;
@@ -1279,17 +1274,6 @@
       color: var(--forest);
       padding: 1rem 0;
     }
-    .rv-close {
-      padding-top: 3.25rem;
-      padding-bottom: 3.5rem;
-    }
-    .rv-close h2 {
-      color: var(--on-forest-strong);
-      max-width: 20ch;
-    }
-    .rv-close h2::after { background: var(--gold); }
-    .rv-close .rv-intro { color: var(--on-forest); }
-    .rv-close .opener__actions { margin-top: 1.75rem; }
 
     /* --- lightbox -------------------------------------------------------- */
     .rv-lb { border: 0; border-radius: 16px; padding: 0; background: var(--paper); max-width: min(96vw, 60rem); width: 100%; }
@@ -1310,7 +1294,7 @@
     @media print {
       .rv-reveal > div, .rv-text > .rv-text__body { display: block !important; }
       mark.fig { background: transparent; font-weight: 700; text-decoration: underline; }
-      .rv-bar, .rv-close { display: none; }
+      .rv-bar { display: none; }
       .rv-feature, .rv-note, .rv-result, .rv-case, .rv-plan, .rv-review { box-shadow: none; }
     }
     </style>
@@ -4604,20 +4588,6 @@ Would like to have seen/heard more about Spendthrift Trusts and also about 508 c
                         <summary>Are these results typical?</summary>
                         <div class="faq__answer"><p>No. Every figure on this page belongs to one named client and comes either from what they said in a recorded interview or from the plan written for them. Income, family size, state, business activity and how much of the plan a client actually implements all change the outcome. Shawn&rsquo;s interview is the clearest example: he states no figures at all, because he is at the start of his plan rather than the end of it.</p></div>
                     </details>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="rv-sec rv-sec--forest rv-close" aria-labelledby="rv-close-title">
-            <div class="container-custom">
-                <div class="rv-col">
-                    <p class="rv-kicker">Next step</p>
-                    <h2 id="rv-close-title">The program behind these client results</h2>
-                    <p class="rv-intro">The interviews, posts, and wealth-plan pages on this page come from Legacy Wealth Blueprint clients. The tax strategies they walk through are the ones taught in the free class.</p>
-                    <div class="opener__actions">
-                        <a class="btn-primary" href="/legacy-wealth-blueprint">See the Legacy Wealth Blueprint</a>
-                        <a class="btn-secondary" href="https://join.managemoney101.com/tax-strategies">Join the free tax class</a>
                     </div>
                 </div>
             </div>
