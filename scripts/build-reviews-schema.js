@@ -52,9 +52,9 @@ const PAGE_DESCRIPTION =
 //   git log --diff-filter=A --format=%cs -- reviews.html | tail -1
 const PAGE_PUBLISHED = '2026-09-14';
 
-// The opener line and every FAQ answer, which is the part of the page an
-// assistant should read aloud when it answers a question about the brand.
-const SPEAKABLE_SELECTORS = ['.opener__key', '.faq__answer'];
+// FAQ answers are the part of the page an assistant should read aloud when
+// it answers a question about the brand.
+const SPEAKABLE_SELECTORS = ['.faq__answer'];
 
 /* ------------------------------------------------------------------ input */
 

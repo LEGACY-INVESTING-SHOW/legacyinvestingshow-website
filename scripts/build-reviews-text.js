@@ -44,8 +44,6 @@ const PAGE_TITLE = 'Preston Seo reviews and Legacy Investing Show client results
 const PAGE_DESCRIPTION =
     'Preston Seo reviews for Legacy Investing Show: Legacy Wealth Blueprint client case studies, '
     + 'written client results, and 4.2 on Trustpilot across 66 reviews.';
-const OPENER_LINE =
-    'Rated 4.2 on Trustpilot across 66 reviews. Everything below comes from the clients themselves: their interviews, their posts, and the plans written for them.';
 const WRITTEN_INTRO =
     'Posts clients wrote in the Legacy Wealth Blueprint community, with their own names and the month they posted.';
 const AIRBNB_INTRO =
@@ -55,45 +53,45 @@ const AIRBNB_INTRO =
 // comes from.
 const BY_THE_NUMBERS = [
     {
-        figure: 'Over $20,000',
+        figure: 'Over $20,000 in taxes saved',
         sentence: 'Stephanie Dailey saved this much in taxes in her first year in the Legacy Wealth Blueprint.',
         url: `${SITE_URL}/blog/stephanie-dailey-legacy-wealth-blueprint-case-study`,
     },
     {
-        figure: 'Just under $100,000',
+        figure: 'Just under $100,000 in first-year ROI',
         sentence: 'Abigail ran her own first-year ROI on the strategies she implemented and got this number.',
         url: `${SITE_URL}/blog/abigail-legacy-wealth-blueprint-case-study`,
     },
     {
-        figure: '$88,000',
+        figure: '$88,000 in savings',
         sentence: 'A $300,000 W-2 earner found this much through entity setup, deductions, withholding and '
             + 'retirement account sequencing after a CPA missed it.',
         url: `${SITE_URL}/blog/88k-tax-savings-cpa-missed-case-study`,
     },
     {
-        figure: '$90,000',
+        figure: '$90,000 in cash flow',
         sentence: 'Chad grossed about this much in his first year running one short-term rental in North Florida, '
             + 'at about $2,500 a month in cash flow.',
         url: `${SITE_URL}/blog/chad-90k-year-one-property`,
     },
     {
-        figure: '$259,700',
+        figure: '$259,700 freed in year one',
         sentence: "Mia and Jay's wealth plan is built to remove $90,000 of annual tax and free this much in year one.",
         url: `${SITE_URL}/blog/mia-jay-wealth-plan`,
     },
     {
-        figure: '$385,000',
+        figure: '$385,000 in the aggressive case',
         sentence: "Soojin's 2026 wealth plan runs two scenarios, $101K in the conservative case and this in the "
             + 'aggressive one.',
         url: `${SITE_URL}/blog/soojin-wealth-plan`,
     },
     {
-        figure: '$118,500 to $339,760',
+        figure: '$118,500 to $339,760 year-one range',
         sentence: "Andreea's plan covers a $770K severance year, and this is the year-one range on Path A.",
         url: `${SITE_URL}/blog/andreea-wealth-plan`,
     },
     {
-        figure: '$78,400',
+        figure: '$78,400 in year-one ROI',
         sentence: "Josh's plan clears $38K of credit card debt through a HELOC refinance first, then builds this "
             + 'much of year-one ROI.',
         url: `${SITE_URL}/blog/josh-wealth-plan`,
@@ -347,7 +345,6 @@ function buildText() {
     lines.push(PAGE_DESCRIPTION);
     lines.push('');
     lines.push(`Source page: ${PAGE_URL}`);
-    lines.push(OPENER_LINE);
     lines.push('');
 
     /* 1. Legacy Wealth Blueprint client case studies */
