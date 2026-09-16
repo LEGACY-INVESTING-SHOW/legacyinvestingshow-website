@@ -5,6 +5,7 @@ const CURRENT_YEAR = new Date().getFullYear();
 const PRIMARY_NAV_ITEMS = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
+  { href: '/reviews', label: 'Reviews' },
   { href: '/tax-strategies', label: 'Tax Strategies' },
   { href: '/compare', label: 'Compare' },
   { href: '/tools', label: 'Tools' },
@@ -15,7 +16,6 @@ const FOOTER_NAV_ITEMS = [
   { href: '/tax-strategies', label: 'Tax Strategies' },
   { href: '/compare', label: 'Compare' },
   { href: '/tools', label: 'Tools' },
-  { href: '/success-stories', label: 'Results' },
   { href: '/reviews', label: 'Reviews' },
   { href: '/blog', label: 'Blog' },
 ];
@@ -269,9 +269,10 @@ const FOOTER_GROUPS = [
     title: 'Company',
     items: [
       { href: '/about', label: 'About Preston Seo' },
-      { href: '/success-stories', label: 'Client results' },
-      { href: '/reviews', label: 'Reviews' },
-          { href: '/privacy', label: 'Privacy' },
+      // /reviews is the canonical proof page; /success-stories 301s to it, so
+      // it must not appear here as a second link.
+      { href: '/reviews', label: 'Client results' },
+      { href: '/privacy', label: 'Privacy' },
       { href: '/terms', label: 'Terms' },
     ],
   },

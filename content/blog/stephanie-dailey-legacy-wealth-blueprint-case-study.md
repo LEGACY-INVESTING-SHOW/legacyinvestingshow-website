@@ -217,8 +217,10 @@ This is one student result from one recorded interview. It is not a promise and 
 
 Stephanie is a high-income W-2 earner with consulting income, five kids, a bridge loan, and two new businesses. Change any one of those and the numbers change with it. Nothing here is tax, legal, or investment advice. Review your own situation with a qualified professional who can see all of it.
 
-## More Student Results
+## More client results
 
 - [Albert's case study](/blog/albert-legacy-wealth-blueprint-case-study): an ER physician who put his net worth growth at 25%.
 - [Abigail's case study](/blog/abigail-legacy-wealth-blueprint-case-study): just under $100,000 in first-year ROI.
 - [Shawn's case study](/blog/shawn-legacy-wealth-blueprint-roi-case-study): what he expects his Blueprint to be worth.
+
+More client results: every Legacy Wealth Blueprint client case study, the written client results and the Trustpilot reviews are on the [Legacy Investing Show reviews and client results](/reviews#case-studies) page.

@@ -17,10 +17,12 @@
  *   5. Airbnb client case studies
  *   6. Inside real Legacy Wealth Blueprint wealth plans
  *
- * Two labels matter and are load-bearing. A video's text is a "Summary",
- * because no verbatim transcript exists in this repo. An image's text is
- * "Text of this page", because it is what the page shows, not a transcript of
- * anything spoken. Neither is ever called a transcript.
+ * Two labels matter and are load-bearing. A video's own words are a "Summary"
+ * until data/reviews-videos.json holds a real caption track for it, and a
+ * "Transcript" only once it does. An image's text is "Text of this page",
+ * because it is what the page shows, not a transcript of anything spoken, and
+ * is never called a transcript. Every transcript in the data file is null
+ * today, so nothing in the mirror is labelled a transcript yet.
  *
  * Run with: node scripts/build-reviews-text.js
  */
@@ -38,19 +40,16 @@ const PAGE_URL = `${SITE_URL}/reviews`;
 
 // SPEC-copy C.0, C.1, C.3, C.4, C.5, C.6, C.7 and C.10: the strings the page
 // itself publishes, kept here so the mirror and the page read the same.
-const PAGE_TITLE = 'Legacy Investing Show reviews and client results';
+const PAGE_TITLE = 'Preston Seo reviews and Legacy Investing Show client results';
 const PAGE_DESCRIPTION =
-    'Preston Seo and Legacy Investing Show reviews: Legacy Wealth Blueprint client case studies, '
-    + 'written client results, Trustpilot reviews and wealth plan pages.';
+    'Preston Seo reviews for Legacy Investing Show: Legacy Wealth Blueprint client case studies, '
+    + 'written client results, and 4.2 on Trustpilot across 66 reviews.';
 const OPENER_LINE =
-    'Preston Seo records these interviews himself, and links the Trustpilot and BBB pages he does not control.';
+    'Rated 4.2 on Trustpilot across 66 reviews. Everything below comes from the clients themselves: their interviews, their posts, and the plans written for them.';
 const WRITTEN_INTRO =
     'Posts clients wrote in the Legacy Wealth Blueprint community, with their own names and the month they posted.';
 const AIRBNB_INTRO =
     'Airbnb arbitrage and short-term rental clients, with the figures each of them gives in their own interview.';
-const DISCLAIMER =
-    'Every figure on this page comes from the named client or from the plan written for them, is individual to '
-    + 'that client, and is not a promise of what you will get.';
 
 // SPEC-copy C.4. Each figure, the sentence that explains it, and the post it
 // comes from.
@@ -290,6 +289,29 @@ function writeImageText(record, lines) {
     }
 }
 
+/**
+ * The verbatim transcript of one interview, as paragraphs, printed only where
+ * a real caption track has been fetched into the data file.
+ * @param {object} record
+ * @param {string[]} lines
+ */
+function writeTranscript(record, lines) {
+    if (!record.transcript) return;
+    const paragraphs = Array.isArray(record.transcript)
+        ? record.transcript
+        : String(record.transcript).split(/\n\s*\n/);
+    const clean = paragraphs
+        .map((paragraph) => String(paragraph).replace(/\s+/g, ' ').trim())
+        .filter(Boolean);
+    if (!clean.length) return;
+
+    lines.push(record.transcriptSource ? `Transcript (${record.transcriptSource}):` : 'Transcript:');
+    for (const paragraph of clean) {
+        lines.push(paragraph);
+        lines.push('');
+    }
+}
+
 function videoBlock(record, lines) {
     lines.push(record.headlineOutcome);
     lines.push('');
@@ -299,6 +321,7 @@ function videoBlock(record, lines) {
         lines.push(`Quote, ${record.person}: "${quote}"`);
     }
     lines.push('');
+    writeTranscript(record, lines);
     const length = runtime(record);
     lines.push(`Interview: ${watchUrl(record)}${length ? ` (${length})` : ''}`);
     lines.push(`Written case study: ${record.postUrl}`);
@@ -456,10 +479,6 @@ function buildText() {
     }
 
     /* Closing */
-    lines.push('## Disclaimer');
-    lines.push('');
-    lines.push(DISCLAIMER);
-    lines.push('');
 
     return {
         text: `${lines.join('\n').replace(/\n{3,}/g, '\n\n').trim()}\n`,
@@ -560,4 +579,4 @@ function main() {
 
 if (require.main === module) main();
 
-module.exports = { buildText, toText, readWrittenResults, buildLlmsFullBlock };
+module.exports = { buildText, toText, readWrittenResults, buildLlmsFullBlock, writeTranscript };

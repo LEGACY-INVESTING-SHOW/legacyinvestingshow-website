@@ -214,3 +214,5 @@ The same program's longer interviews are recorded later, after people have imple
 This is one student result from one short recorded interview. It is not an average and it is not a promise.
 
 Shawn was already a business owner with rentals, short-term rentals, crypto, and stocks before he joined. He names no figures and had not finished implementing. Your income, business, state, and follow-through will produce different outcomes. Nothing here is tax, legal, or investment advice. Review your own situation with a qualified professional.
+
+More client results: every Legacy Wealth Blueprint client case study, the written client results and the Trustpilot reviews are on the [Legacy Investing Show reviews and client results](/reviews#case-studies) page.

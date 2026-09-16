@@ -21,13 +21,17 @@ const BLOG_CONTENT_DIR = path.join(ROOT_DIR, 'content', 'blog');
 
 // Static pages
 // Note: Removed duplicate entries (/index.html and /blog/index) to prevent crawler confusion
-// Note: changefreq and priority are ignored by Google, so we only use lastmod
+// Note: changefreq is ignored by Google, so we only use lastmod and, on the
+// two pages that carry one, priority. Priority is a hint about relative
+// importance within this site, nothing more: the homepage is 1.0 and /reviews,
+// the proof page the brand queries have to land on, is 0.9. Every other page
+// is left without one and takes the 0.5 default.
 const staticPages = [
-  { url: '/', file: 'index.html' },
+  { url: '/', file: 'index.html', priority: '1.0' },
   { url: '/about', file: 'about.html' },
   { url: '/about/preston-seo', file: 'about/preston-seo.html' },
   { url: '/success-stories', file: 'success-stories.html' },
-  { url: '/reviews', file: 'reviews.html' },
+  { url: '/reviews', file: 'reviews.html', priority: '0.9' },
   { url: '/blog/', file: 'blog/index.html' },
   { url: '/tax-strategies-101', file: 'tax-strategies-101.html' },
 ];
@@ -443,6 +447,9 @@ function buildSitemapUrlSet(urls) {
     xml += '  <url>\n';
     xml += `    <loc>${url.loc}</loc>\n`;
     xml += `    <lastmod>${url.lastmod}</lastmod>\n`;
+    if (url.priority) {
+      xml += `    <priority>${url.priority}</priority>\n`;
+    }
     // Add image element if available
     if (url.image) {
       xml += '    <image:image>\n';
@@ -498,6 +505,7 @@ function generateSitemaps() {
     pageUrls.push({
       loc: `${SITE_URL}${normalizePath(page.url)}`,
       lastmod: getFileLastmod(page.file),
+      priority: page.priority,
     });
   }
 
@@ -546,6 +554,8 @@ function generateSitemaps() {
     },
     // sitemap-video.xml is written by scripts/generate-video-sitemap.js.
     { loc: `${SITE_URL}/sitemap-video.xml`, lastmod: getFileLastmod('sitemap-video.xml') },
+    // sitemap-images.xml is written by scripts/generate-image-sitemap.js.
+    { loc: `${SITE_URL}/sitemap-images.xml`, lastmod: getFileLastmod('sitemap-images.xml') },
   ]);
 
   return {

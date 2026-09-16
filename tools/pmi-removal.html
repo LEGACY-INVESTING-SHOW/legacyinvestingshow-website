@@ -7,6 +7,8 @@
   <meta name="description" content="Amortize a mortgage with optional extra principal to estimate when LTV hits 80% and how much PMI you still pay before then.">
   <meta name="keywords" content="PMI removal, Banking &amp; borrowing, calculator, Legacy Investing Show">
   <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="Kec6RfGhFL-qG_8zKxCqt7yxjgy65WeDAftCBm90G2s">
+    <meta name="google-site-verification" content="92MoCnkdQOj_ey1lEafT5Mz-znCcCQ3UABZlI-JG_nM">
   <link rel="canonical" href="https://www.legacyinvestingshow.com/tools/pmi-removal">
   <meta property="og:title" content="PMI removal calculator | Legacy Investing Show">
   <meta property="og:description" content="Amortize a mortgage with optional extra principal to estimate when LTV hits 80% and how much PMI you still pay before then.">
@@ -21,10 +23,10 @@
   <meta name="twitter:site" content="@thelegacyshow">
   <link rel="icon" href="/favicon.ico" sizes="256x256" type="image/x-icon">
   <link rel="preload" href="/assets/fonts/public-sans-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css?v=96672e7d">
     <meta name="theme-color" content="#FBF8F1">
   <link rel="stylesheet" href="/tools/_next/static/chunks/2tdy5h_g9hs2_.css">
-  <link rel="stylesheet" href="/assets/css/tools-bridge.css">
+  <link rel="stylesheet" href="/assets/css/tools-bridge.css?v=16d4eea2">
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","@id":"https://www.legacyinvestingshow.com/tools/pmi-removal#app","name":"PMI removal calculator","url":"https://www.legacyinvestingshow.com/tools/pmi-removal","applicationCategory":"FinanceApplication","operatingSystem":"Any","description":"Amortize a mortgage with optional extra principal to estimate when LTV hits 80% and how much PMI you still pay before then.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},{"@type":"FAQPage","@id":"https://www.legacyinvestingshow.com/tools/pmi-removal#faq","mainEntity":[{"@type":"Question","name":"Is 80% or 78% the rule?","acceptedAnswer":{"@type":"Answer","text":"Borrowers can often request cancellation at 80% LTV. Automatic termination is commonly 78% of original value. Confirm with the servicer."}},{"@type":"Question","name":"Does extra payment always win vs investing?","acceptedAnswer":{"@type":"Answer","text":"Only if the after-tax PMI plus mortgage rate beats expected invested return. Pair with the mortgage vs index tool."}},{"@type":"Question","name":"What if value rose a lot?","acceptedAnswer":{"@type":"Answer","text":"Raise the value input. That can hit 80% without extra payments."}}]},{"@type":"BreadcrumbList","@id":"https://www.legacyinvestingshow.com/tools/pmi-removal#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"All calculators","item":"https://www.legacyinvestingshow.com/tools"},{"@type":"ListItem","position":2,"name":"Banking & borrowing","item":"https://www.legacyinvestingshow.com/tools/categories/banking-borrowing"},{"@type":"ListItem","position":3,"name":"PMI removal","item":"https://www.legacyinvestingshow.com/tools/pmi-removal"}]}]}</script>
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
@@ -44,6 +46,7 @@
             <div class="site-nav-links">
                 <a href="/" class="nav-link">Home</a>
                     <a href="/about" class="nav-link">About</a>
+                    <a href="/reviews" class="nav-link">Reviews</a>
                     <a href="/tax-strategies" class="nav-link">Tax Strategies</a>
                     <a href="/compare" class="nav-link">Compare</a>
                     <a href="/tools" class="nav-link nav-link-active">Tools</a>
@@ -55,6 +58,7 @@
             <div id="mobile-menu" class="site-nav-mobile hidden">
                 <a href="/" class="nav-link">Home</a>
                     <a href="/about" class="nav-link">About</a>
+                    <a href="/reviews" class="nav-link">Reviews</a>
                     <a href="/tax-strategies" class="nav-link">Tax Strategies</a>
                     <a href="/compare" class="nav-link">Compare</a>
                     <a href="/tools" class="nav-link nav-link-active">Tools</a>
@@ -219,8 +223,7 @@
                     <p class="site-footer-title">Company</p>
                     <ul>
                         <li><a href="/about">About Preston Seo</a></li>
-                        <li><a href="/success-stories">Student results</a></li>
-                        <li><a href="/reviews">Reviews</a></li>
+                        <li><a href="/reviews">Client results</a></li>
                         <li><a href="/privacy">Privacy</a></li>
                         <li><a href="/terms">Terms</a></li>
                     </ul>
@@ -230,8 +233,8 @@
         </div>
     </footer>
   <script type="application/json" id="operator-spec">{"slug":"pmi-removal","inputs":[{"id":"loan","label":"Current loan balance","type":"currency","default":384000},{"id":"value","label":"Current home value","type":"currency","default":420000},{"id":"rate","label":"Interest rate","type":"percent","default":6.5},{"id":"years","label":"Remaining term","type":"years","default":28},{"id":"extra","label":"Extra monthly principal","type":"currency","default":200},{"id":"pmiMonthly","label":"Monthly PMI","type":"currency","default":140}],"examples":[{"name":"New purchase","description":"High LTV with $200 extra.","inputs":{"loan":384000,"value":420000,"rate":6.5,"years":28,"extra":200,"pmiMonthly":140}},{"name":"No extra","description":"Scheduled amortization only.","inputs":{"loan":384000,"value":420000,"rate":6.5,"years":28,"extra":0,"pmiMonthly":140}},{"name":"After appreciation","description":"Value already close to 80%.","inputs":{"loan":360000,"value":470000,"rate":6.5,"years":26,"extra":0,"pmiMonthly":110}}]}</script>
-  <script src="/assets/js/operator-calculator-models.js"></script>
-  <script src="/assets/js/operator-calculator.js"></script>
-  <script src="/assets/js/tools-site-shell.js" defer></script>
+  <script src="/assets/js/operator-calculator-models.js?v=32732902"></script>
+  <script src="/assets/js/operator-calculator.js?v=02e1bd07"></script>
+  <script src="/assets/js/tools-site-shell.js?v=eeee162d" defer></script>
 </body>
 </html>

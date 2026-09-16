@@ -221,8 +221,10 @@ This is one student result from one recorded interview. It is not an average and
 
 Abigail has an engineering background, a spouse with a high W-2 income, and the time to run the plan herself because she works from home. The ROI she names is her own forecast for one year. Change the income, the state, the property, or the timeline and the numbers change. Nothing here is tax, legal, or investment advice. Review your own situation with a qualified professional.
 
-## More Student Results
+## More client results
 
 - [Stephanie Dailey's case study](/blog/stephanie-dailey-legacy-wealth-blueprint-case-study): over $20,000 saved in taxes in year one.
 - [Albert's case study](/blog/albert-legacy-wealth-blueprint-case-study): an ER physician who put his net worth growth at 25%.
 - [Shawn's case study](/blog/shawn-legacy-wealth-blueprint-roi-case-study): what he expects his Blueprint to be worth.
+
+More client results: every Legacy Wealth Blueprint client case study, the written client results and the Trustpilot reviews are on the [Legacy Investing Show reviews and client results](/reviews#case-studies) page.
