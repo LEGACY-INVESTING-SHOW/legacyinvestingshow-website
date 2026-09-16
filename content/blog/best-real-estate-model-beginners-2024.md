@@ -11,7 +11,7 @@ date: 2026-01-24T00:00:00.000Z
 modifiedDate: 2026-01-24T00:00:00.000Z
 author: Preston Seo
 authorTitle: 'Founder, Legacy Investing Show'
-authorCredentials: '46+ rental properties owned, $10M+ student revenue generated'
+authorCredentials: '47 rental units across 12 properties, $15M+ portfolio as of 2026'
 category: Real Estate Strategy
 canonical: 'https://www.legacyinvestingshow.com/blog/best-real-estate-model-beginners-2024'
 seo:
@@ -193,7 +193,7 @@ wordCount: '2857'
 ---
 **In 2024, you need to earn at least $126,000 per year just to afford the average house.** With interest rates at 8% and fewer properties hitting the market, traditional real estate investing has become increasingly difficult for beginners. But there's a strategy that bypasses all these barriers entirely.
 
-As someone who has purchased 46 rental properties across Utah, Arizona, Tennessee, Virginia, and Florida, I've experienced both the good times (buying at 4-5% rates) and today's challenging market. In this guide, I'm breaking down the 6 most popular real estate investment strategies and revealing which one gives beginners the best chance of success in 2024.
+As someone who holds 47 rental units across 12 properties as of 2026 — a $15M+ portfolio spanning Utah, Arizona, Tennessee, Virginia, and Florida — I've experienced both the good times (buying at 4-5% rates) and today's challenging market. In this guide, I'm breaking down the 6 most popular real estate investment strategies and revealing which one gives beginners the best chance of success in 2024.
 
 **In this article:**
 - [The 2024 Market Reality](#market-reality)

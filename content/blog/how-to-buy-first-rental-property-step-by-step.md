@@ -4,13 +4,13 @@ titleTemplate: '%s | Legacy Investing Show'
 description: >-
   Learn exactly how to buy your first rental property step by step. From credit
   score requirements (740+ FICO) to house hacking strategies, the 1% rule, and
-  post-close management. Complete guide for beginners from investors with 50+
-  rental units.
+  post-close management. Complete guide for beginners from an investor with 47
+  rental units across 12 properties.
 date: 2026-01-24T00:00:00.000Z
 modifiedDate: 2026-01-24T00:00:00.000Z
 author: Preston Seo
 authorTitle: 'Founder, Legacy Investing Show'
-authorCredentials: '50+ rental units, assisted living facility owner, 2,000+ students trained'
+authorCredentials: '47 rental units across 12 properties, $15M+ portfolio as of 2026, 2,000+ students trained'
 category: Real Estate Investing
 canonical: >-
   https://www.legacyinvestingshow.com/blog/how-to-buy-first-rental-property-step-by-step
@@ -184,7 +184,7 @@ relatedPosts:
 readingTime: 17 min read
 wordCount: '3301'
 ---
-**Buying your first rental property can seem intimidating, but with the right preparation, anyone can do it.** This step-by-step guide breaks down exactly how to purchase your first buy-and-hold rental property, from preparing your finances to managing tenants after closing. I've used these exact strategies to build a portfolio of 50+ rental units, and I'm sharing everything so you can achieve financial freedom too.
+**Buying your first rental property can seem intimidating, but with the right preparation, anyone can do it.** This step-by-step guide breaks down exactly how to purchase your first buy-and-hold rental property, from preparing your finances to managing tenants after closing. I've used these exact strategies to build a $15M+ portfolio of 47 rental units across 12 properties as of 2026, and I'm sharing everything so you can achieve financial freedom too.
 
 This guide is specifically designed for beginners, but includes advanced tips that benefit investors at any level. We're focusing on house hacking—the strategy I recommend for everyone starting out, and exactly what I did to get started in real estate investing.
 
@@ -657,7 +657,7 @@ Knowledge without action is worthless. Pick one step from this guide and complet
 
 ## About the Author
 
-**Preston Seo** is the founder of Legacy Investing Show and a real estate investor with a portfolio of 50+ rental units, plus experience in flips, wholesales, and an assisted living facility. The Legacy Investing Show mission is to provide maximum value so others can achieve financial freedom through real estate and entrepreneurship.
+**Preston Seo** is the founder of Legacy Investing Show and a real estate investor with a $15M+ portfolio of 47 rental units across 12 properties as of 2026, plus experience in flips, wholesales, and an assisted living facility. The Legacy Investing Show mission is to provide maximum value so others can achieve financial freedom through real estate and entrepreneurship.
 
 [blog resources](/blog/) | [Watch free training →](/tax-strategies-101)
 

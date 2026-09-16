@@ -272,7 +272,7 @@ function buildFaq(summary, reviewCount) {
             'Preston Seo is the founder of Legacy Investing Show and the author of the Legacy Wealth Blueprint. He is '
             + '34, a first-generation Korean-American, and he started investing at 24 with a house-hacked duplex while '
             + 'working a corporate sales job. He left that job at 28 and now holds 47 rental units across 12 '
-            + 'properties. He started publishing on YouTube in 2019.',
+            + 'properties, a $15M+ portfolio as of 2026. He started publishing on YouTube in 2019.',
         ],
         [
             'What is in a Legacy Wealth Blueprint wealth plan?',

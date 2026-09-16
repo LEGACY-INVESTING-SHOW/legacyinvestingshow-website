@@ -34,6 +34,7 @@ const staticPages = [
   { url: '/reviews', file: 'reviews.html', priority: '0.9' },
   { url: '/blog/', file: 'blog/index.html' },
   { url: '/tax-strategies-101', file: 'tax-strategies-101.html' },
+  { url: '/legacy-wealth-blueprint', file: 'legacy-wealth-blueprint.html' },
 ];
 
 const resourceDirs = [

@@ -12,7 +12,7 @@ date: 2026-01-24T00:00:00.000Z
 modifiedDate: 2026-01-24T00:00:00.000Z
 author: Preston Seo
 authorTitle: 'Founder, Legacy Investing Show'
-authorCredentials: '50+ rental units, assisted living facility owner, 2,000+ students trained'
+authorCredentials: '47 rental units across 12 properties, $15M+ portfolio as of 2026, 2,000+ students trained'
 category: Real Estate Investing
 canonical: >-
   https://www.legacyinvestingshow.com/blog/brrrr-strategy-get-paid-buy-rental-property
@@ -198,7 +198,7 @@ wordCount: '3148'
 
 This guide breaks down exactly how we did it, including the complete deal numbers, how to find these opportunities, and how you can replicate this strategy even if you don't have money for a down payment.
 
-If you're new here, welcome to the Legacy Investing Show where we discuss all things related to real estate investing, personal finance, and entrepreneurship. We hold a portfolio of 50+ rental units, do flips, wholesales, and own an assisted living facility.
+If you're new here, welcome to the Legacy Investing Show where we discuss all things related to real estate investing, personal finance, and entrepreneurship. We hold a $15M+ portfolio of 47 rental units across 12 properties as of 2026, do flips, wholesales, and own an assisted living facility.
 
 **In this article:**
 - [What is the BRRRR Strategy?](#what-is-brrrr)
@@ -705,7 +705,7 @@ The key is finding the right deals and executing the renovation and refinance co
 - Built an active community of real estate investors
 - Helped students build portfolios of rental properties
 
-Preston Seo built a portfolio of 50+ rental units using strategies like BRRRR, along with flips, wholesales, and an assisted living facility. Legacy Investing Show teaches these exact systems so you can achieve financial freedom through real estate.
+Preston Seo built a $15M+ portfolio of 47 rental units across 12 properties as of 2026 using strategies like BRRRR, along with flips, wholesales, and an assisted living facility. Legacy Investing Show teaches these exact systems so you can achieve financial freedom through real estate.
 
 [blog resources](/blog/) | [Watch free training →](/tax-strategies-101)
 

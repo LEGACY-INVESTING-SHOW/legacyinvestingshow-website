@@ -13,6 +13,10 @@
     { "source": "/programmatic-pages/personas/retirement-savers", "destination": "/retirement/traditional-vs-roth-401k" },
     { "source": "/programmatic-pages/personas/:slug", "destination": "/tax-strategies/for/:slug" },
     { "source": "/programmatic-pages", "destination": "/tax-strategies" },
-    { "source": "/programmatic-pages/:path*", "destination": "/tax-strategies" }
+    { "source": "/programmatic-pages/:path*", "destination": "/tax-strategies" },
+    { "source": "/lwbprogram", "destination": "/legacy-wealth-blueprint" },
+    { "source": "/lwbprogram/", "destination": "/legacy-wealth-blueprint" },
+    { "source": "/funnels/lwbprogram", "destination": "/legacy-wealth-blueprint" },
+    { "source": "/funnels/lwbprogram/", "destination": "/legacy-wealth-blueprint" }
   ]
 }

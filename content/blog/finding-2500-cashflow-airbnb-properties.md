@@ -10,7 +10,7 @@ date: 2026-01-24T00:00:00.000Z
 modifiedDate: 2026-01-24T00:00:00.000Z
 author: Preston Seo
 authorTitle: 'Founder, Legacy Investing Show'
-authorCredentials: '40+ rental properties, $1.5M portfolio, 2,000+ students trained'
+authorCredentials: '47 rental units across 12 properties, $15M+ portfolio as of 2026, 2,000+ students trained'
 category: How-To Guide
 canonical: >-
   https://www.legacyinvestingshow.com/blog/finding-2500-cashflow-airbnb-properties
@@ -194,7 +194,7 @@ relatedPosts:
 readingTime: 17 min read
 wordCount: '3382'
 ---
-**We generate $5,000 per month in cash flow from every property we launch on Airbnb.** After buying over 40 rental properties worth $1.5 million in the past few years and running multiple Airbnbs across the country, I've helped hundreds of people find properties, launch them on Airbnb, and make an average of $2,500 per month in profit—without having to own the property.
+**We generate $5,000 per month in cash flow from every property we launch on Airbnb.** After building a $15M+ portfolio of 47 rental units across 12 properties as of 2026 and running multiple Airbnbs across the country, I've helped hundreds of people find properties, launch them on Airbnb, and make an average of $2,500 per month in profit—without having to own the property.
 
 Today, I'm going to teach you the exact step-by-step process to find a property that can generate this kind of cash flow using the Airbnb arbitrage method.
 
@@ -718,7 +718,7 @@ The process I've outlined works in markets across the country. The key is discip
 - Built an active community of short-term rental investors
 - Produced numerous students earning $10K+/month
 
-Preston has personally bought over 40 rental properties worth $1.5 million and runs multiple Airbnbs across the country. Legacy Investing Show teaches the exact systems that built this portfolio.
+Preston holds a $15M+ portfolio of 47 rental units across 12 properties as of 2026 and runs multiple Airbnbs across the country. Legacy Investing Show teaches the exact systems that built this portfolio.
 
 [blog resources](/blog/) | [Watch free training →](/tax-strategies-101)
 

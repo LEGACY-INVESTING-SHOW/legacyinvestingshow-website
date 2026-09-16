@@ -773,12 +773,27 @@
     },
     {
       "source": "/funnels/lwbprogram",
-      "destination": "/lwbprogram",
+      "destination": "/legacy-wealth-blueprint",
       "permanent": true
     },
     {
       "source": "/funnels/lwbprogram/",
-      "destination": "/lwbprogram",
+      "destination": "/legacy-wealth-blueprint",
+      "permanent": true
+    },
+    {
+      "source": "/lwbprogram",
+      "destination": "/legacy-wealth-blueprint",
+      "permanent": true
+    },
+    {
+      "source": "/lwbprogram/",
+      "destination": "/legacy-wealth-blueprint",
+      "permanent": true
+    },
+    {
+      "source": "/lwbprogram.html",
+      "destination": "/legacy-wealth-blueprint",
       "permanent": true
     },
     {
