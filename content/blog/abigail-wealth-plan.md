@@ -99,7 +99,7 @@ Cost segregation is an IRS-recognized engineering-based study that reclassifies 
 - **15-year property**: Landscaping, paving, exterior improvements
 - **27.5-year property**: Structural building components
 
-For a **$500,000-$600,000 short-term rental property**, a comprehensive cost segregation study typically identifies 20-30% of the property's value as eligible for accelerated depreciation. This means **$100,000-$180,000 in first-year write-offs** through a combination of bonus depreciation (80% in 2025) and accelerated schedules.
+For a **$500,000-$600,000 short-term rental property**, a comprehensive cost segregation study typically identifies 20-30% of the property's value as eligible for accelerated depreciation. This means **$100,000-$180,000 in first-year write-offs** through a combination of bonus depreciation (100% for qualified property acquired after January 19, 2025) and accelerated schedules.
 
 The plan targets a $150,000 first-year loss — conservative for this price point. At Abigail's **35% federal tax bracket**, this creates a **$52,500 cash tax refund** while simultaneously building equity in an income-producing asset.
 

@@ -60,13 +60,13 @@ statistics:
       icon: "briefcase"
 faq:
   - question: "What tax reduction strategies are most effective for Raleigh NC real estate investors?"
-    answer: "Jeremiah's plan leverages several NC-specific and federal strategies: North Carolina's flat 4.5% state income tax rate (lower than many neighboring states), cost segregation studies for accelerated depreciation on investment properties (capturing 20-40% of property basis in year one), bonus depreciation opportunities for qualifying property improvements (60% bonus in 2025, phasing down), the short-term rental loophole for material participation properties, real estate professional status qualification for full deduction of passive losses against active income, and 1031 exchanges for tax-deferred property exchanges. North Carolina also offers no local income tax in most jurisdictions, making Raleigh particularly attractive for high-income real estate investors."
+    answer: "Jeremiah's plan leverages several NC-specific and federal strategies: North Carolina's flat 4.5% state income tax rate (lower than many neighboring states), cost segregation studies for accelerated depreciation on investment properties (capturing 20-40% of property basis in year one), bonus depreciation opportunities for qualifying property improvements (100% for property acquired after January 19, 2025; old phase-down only for earlier binding contracts), the short-term rental loophole for material participation properties, real estate professional status qualification for full deduction of passive losses against active income, and 1031 exchanges for tax-deferred property exchanges. North Carolina also offers no local income tax in most jurisdictions, making Raleigh particularly attractive for high-income real estate investors."
   - question: "How does business cash flow optimization integrate with real estate investing?"
     answer: "Jeremiah's comprehensive approach coordinates business and real estate strategies for maximum efficiency: using S-Corporation structures to reduce self-employment taxes on business income (saving 15.3% on distributions), establishing separate LLCs for each property for liability protection, implementing cost segregation on commercial properties to generate paper losses that offset business income, utilizing Section 179 and bonus depreciation on business equipment and qualified improvement property, timing business income and real estate deductions to optimize annual tax brackets, creating a DAF (donor-advised fund) for bunching charitable contributions, and leveraging the Augusta Rule for renting home to business for meetings (up to $14,000 annual income tax-free). The key is treating business and real estate as complementary rather than separate tax optimization opportunities."
   - question: "What entity structures work best for NC real estate investors?"
     answer: "Jeremiah's entity strategy for North Carolina real estate: LLCs formed in North Carolina or Delaware/Wyoming for each property (liability protection, charging order protection), Series LLC consideration for multiple properties (one filing, multiple protected cells), S-Corporation election for active real estate businesses (flipping, management, development) to reduce payroll taxes, holding LLC for ownership of property LLCs (additional liability layer), and land trusts for privacy and estate planning. North Carolina charges $125 annual report fee per LLC and has relatively low franchise taxes. The optimal structure depends on number of properties, activity level (passive vs. active), and estate planning goals."
   - question: "How can real estate investors maximize depreciation deductions?"
-    answer: "Jeremiah's depreciation maximization strategy includes: cost segregation studies for all commercial properties and residential rentals over $500K (reclassifying 20-40% of building basis to 5, 7, and 15-year property), bonus depreciation capture for qualified improvement property (60% in 2025, 40% in 2026, 20% in 2027, then normal depreciation), component depreciation for significant improvements (separating out appliances, flooring, fixtures), Section 179 expensing for qualifying equipment and improvements ($1.25M limit for 2025), energy-efficient commercial building deductions (Section 179D, up to $5.00/sq ft), and qualified business income (QBI) deduction of 20% on qualified rental income. These strategies can generate $50K-$200K+ in first-year paper losses on significant properties."
+    answer: "Jeremiah's depreciation maximization strategy includes: cost segregation studies for all commercial properties and residential rentals over $500K (reclassifying 20-40% of building basis to 5, 7, and 15-year property), bonus depreciation capture for qualified improvement property (100% for property acquired after January 19, 2025; binding contracts on or before that date stay on the old phase-down), component depreciation for significant improvements (separating out appliances, flooring, fixtures), Section 179 expensing for qualifying equipment and improvements ($1.25M limit for 2025), energy-efficient commercial building deductions (Section 179D, up to $5.00/sq ft), and qualified business income (QBI) deduction of 20% on qualified rental income. These strategies can generate $50K-$200K+ in first-year paper losses on significant properties."
   - question: "What is the short-term rental loophole and how does it work?"
     answer: "The short-term rental (STR) loophole allows real estate investors to deduct up to $25,000 in rental losses against active income (W-2 or business) if they actively participate in the rental and meet material participation tests. For 2025-2026, the strategy involves: renting properties for average stays of 7 days or fewer (Airbnb/VRBO model), personally providing substantial services (concierge, cleaning coordination, guest communication), meeting one of seven material participation tests (500+ hours annually, 100+ hours and more than anyone else, etc.), and staying under the $100K-$150K income phase-out for full $25K deduction. This transforms passive rental losses into active deductions that can offset business or W-2 income, potentially worth $6,000-$10,000 in annual tax savings."
   - question: "How does real estate professional status benefit high-income earners?"
@@ -151,18 +151,16 @@ Cost segregation studies reclassify building components from 39-year (commercial
 | Apartment Complex | $2,000,000 | $72,727 | $450,000 | +$377,273 |
 | Retail Center | $800,000 | $20,513 | $180,000 | +$159,487 |
 
-**Bonus Depreciation Synergy (2025-2027 Phase-Down):**
+**Bonus Depreciation Synergy (current law):**
 
-| Year | Bonus Rate | Cost Seg + Bonus Impact |
+| Acquisition timing | Bonus Rate | Cost Seg + Bonus Impact |
 |------|-----------|------------------------|
-| 2025 | 60% | Maximum accelerated deductions |
-| 2026 | 40% | Significant acceleration |
-| 2027 | 20% | Limited acceleration |
-| 2028+ | 0% | Normal depreciation only |
+| After January 19, 2025 | 100% | Full immediate deduction on qualified short-life property |
+| Binding contract on or before January 19, 2025 | Old phase-down (20% in 2026) | Partial acceleration only |
 
 **Jeremiah's 2025-2026 Implementation:**
 - Cost segregation studies on all eligible properties
-- 60% bonus depreciation capture before phase-down
+- 100% bonus depreciation on qualified property acquired after January 19, 2025
 - Component depreciation for future improvements
 - 1031 exchange planning for property swaps without tax recognition
 

@@ -263,22 +263,21 @@ A study that reclassifies property components for accelerated depreciation:
 
 ### Bonus Depreciation Enhancement
 
-**2025 Bonus Depreciation Rules:**
-- 40% bonus depreciation for qualified property placed in service in 2025
-- 20% for 2026 (sunset looming)
+**2025-2026 Bonus Depreciation Rules:**
+- 100% bonus depreciation for qualified property acquired after January 19, 2025
+- Binding contracts on or before that date stay on the old phase-down (20% in 2026)
 
 **Impact on Cost Segregation:**
-The 5-year and 15-year property portions identified through cost segregation qualify for bonus depreciation. On a $400,000 property with $120,000 in 5/15-year components:
-- 40% bonus on $120,000 = $48,000 additional year-one depreciation
-- Plus regular depreciation on remaining basis
-- **Total potential year-one deduction**: $50,000-$70,000
+The 5-year and 15-year property portions identified through cost segregation qualify for bonus depreciation. On a $400,000 property with $120,000 in 5/15-year components acquired after January 19, 2025:
+- 100% bonus on $120,000 = $120,000 year-one depreciation
+- **Total potential year-one deduction**: $120,000 plus regular depreciation on remaining building basis
 
 ### The $26,000 Value Breakdown
 
 | Component | Amount |
 |-----------|--------|
 | Cost segregation (5-year property accelerated) | $12,000 |
-| Bonus depreciation (40% of qualified property) | $10,000 |
+| Bonus depreciation (100% of qualified furnishings/equipment acquired after January 19, 2025) | $10,000 |
 | Startup cost deduction | $2,500 |
 | Organizational expense deduction | $1,500 |
 | **Total STR tax value** | **$26,000** |

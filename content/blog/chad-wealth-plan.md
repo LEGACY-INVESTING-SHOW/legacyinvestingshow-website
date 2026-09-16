@@ -59,7 +59,7 @@ faq:
   - question: "Why focus on STR arbitrage as a 'proof of concept' rather than immediate ownership?"
     answer: "Arbitrage serves as proof of concept because it validates: (1) Market demand — do guests actually book in this location at these rates? (2) Operational capacity — can Chad manage guest communication, cleaning coordination, and pricing optimization? (3) Profitability modeling — do actual revenues match projections? (4) Personal fit — does STR hosting align with lifestyle and preferences? This validation costs $15K-$25K and 60-90 days versus ownership's $50K-$100K and 3-6 months. Successful arbitrage justifies ownership capital deployment; unsuccessful arbitrage limits loss and pivots strategy."
   - question: "How does cost segregation planning create immediate tax value?"
-    answer: "Cost segregation studies accelerate depreciation by reclassifying property components. Instead of 27.5-year straight-line depreciation on the entire property, components are classified as 5-year personal property (furniture, fixtures, appliances), 15-year land improvements (parking, landscaping), and 27.5-year real property. With bonus depreciation at 40% for 2025, a $400K property with $100K in 5-year components generates $40K in year-one bonus depreciation plus $12K in regular 5-year depreciation — total $52K deduction vs. $14,545 traditional depreciation. At 24% tax rate, that's $9,000 in tax savings from one strategy."
+    answer: "Cost segregation studies accelerate depreciation by reclassifying property components. Instead of 27.5-year straight-line depreciation on the entire property, components are classified as 5-year personal property (furniture, fixtures, appliances), 15-year land improvements (parking, landscaping), and 27.5-year real property. With [bonus depreciation](/tax-strategies/bonus-depreciation.html) at 100% for qualified property acquired after January 19, 2025, a $400K property with $100K in 5-year components generates $100K in year-one bonus depreciation — total $100K deduction vs. $14,545 traditional depreciation. At 24% tax rate, that's $24,000 in tax savings from one strategy."
   - question: "What role does Eileen play in the LLC formation strategy?"
     answer: "Eileen appears to be a service provider or consultant facilitating LLC formation and entity structuring. This could be a registered agent service, an attorney, a CPA, or a business formation specialist. Professional assistance ensures proper Wyoming (or appropriate state) LLC filing, EIN acquisition, operating agreement customization, and ongoing compliance. The cost is typically $500-$2,000 versus DIY $100-$200, but provides audit-defensible documentation and professional guidance through complex entity decisions."
   - question: "Can immediate cash flow needs be met while still optimizing taxes?"
@@ -339,9 +339,9 @@ While November 2025 is too late for property acquisition and cost segregation in
 **Projected Benefits:**
 - Property value: $350,000-$450,000
 - Cost segregation benefit: $25,000-$50,000 additional year-one depreciation
-- Bonus depreciation (40% in 2026): Additional $10,000-$20,000
-- **Total 2026 depreciation**: $40,000-$70,000
-- **Tax value at 24% federal**: $9,600-$16,800
+- Bonus depreciation (100% after January 19, 2025): Additional $25,000-$50,000
+- **Total 2026 depreciation**: $50,000-$100,000
+- **Tax value at 24% federal**: $12,000-$24,000
 - Plus state tax savings
 
 ## Strategy 5: Equipment and Section 179 Strategy ($4,000-$6,000 Value)
@@ -353,7 +353,7 @@ For immediate cash flow needs combined with tax optimization, strategic equipmen
 **2025 Section 179 Limits:**
 - Maximum deduction: $1,250,000
 - Phase-out begins: $3,130,000 total equipment purchases
-- Bonus depreciation: 40% for 2025 (phases down 20% annually)
+- Bonus depreciation: 100% for qualified property acquired after January 19, 2025 (old phase-down only for earlier binding contracts)
 
 **Strategic Equipment for STR Business:**
 
@@ -367,8 +367,8 @@ For immediate cash flow needs combined with tax optimization, strategic equipmen
 
 **Furnishing Strategy (if placed in service 2025):**
 - Furniture for initial property: $10,000-$15,000
-- Bonus depreciation (40%): $4,000-$6,000 immediate deduction
-- Remaining depreciated over 5 years
+- Bonus depreciation (100%): $10,000-$15,000 immediate deduction
+- Remaining short-life basis: $0
 
 ### 2025 Year-End Timing
 
@@ -505,7 +505,7 @@ Arbitrage serves as proof of concept because it validates: (1) Market demand —
 
 ### How does cost segregation planning create immediate tax value?
 
-[Cost segregation studies](/tax-strategies/cost-segregation.html) accelerate depreciation by reclassifying property components. Instead of 27.5-year straight-line depreciation on the entire property, components are classified as 5-year personal property (furniture, fixtures, appliances), 15-year land improvements (parking, landscaping), and 27.5-year real property. With [bonus depreciation](/tax-strategies/bonus-depreciation.html) at 40% for 2025, a $400K property with $100K in 5-year components generates $40K in year-one bonus depreciation plus $12K in regular 5-year depreciation — total $52K deduction vs. $14,545 traditional depreciation. At 24% tax rate, that's $9,000 in tax savings from one strategy.
+[Cost segregation studies](/tax-strategies/cost-segregation.html) accelerate depreciation by reclassifying property components. Instead of 27.5-year straight-line depreciation on the entire property, components are classified as 5-year personal property (furniture, fixtures, appliances), 15-year land improvements (parking, landscaping), and 27.5-year real property. With [bonus depreciation](/tax-strategies/bonus-depreciation.html) at 100% for qualified property acquired after January 19, 2025, a $400K property with $100K in 5-year components generates $100K in year-one bonus depreciation — total $100K deduction vs. $14,545 traditional depreciation. At 24% tax rate, that's $24,000 in tax savings from one strategy.
 
 ### What role does Eileen play in the LLC formation strategy?
 

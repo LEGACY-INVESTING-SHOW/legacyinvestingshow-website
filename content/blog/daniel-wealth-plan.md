@@ -59,7 +59,7 @@ faq:
   - question: "How does the STR strategy scale from $55K year-one to $210K annually?"
     answer: "The scaling pathway involves: Year 1 (establish first unit, prove model, generate $55K-$68K value through tax savings + cash flow), Year 2 (add second unit using profits and optimized entity structure), Year 3 (add third unit, consider property acquisition vs arbitrage based on equity position). Each additional unit compounds tax benefits through cost segregation, depreciation, and business deductions while building operational systems that reduce per-unit management time."
   - question: "What tax strategies are most effective for Colorado STR operators?"
-    answer: "Key strategies include: cost segregation studies unlocking 20-30% of property value in year-one depreciation, bonus depreciation (100% through 2022, 80% 2023, 60% 2024, 40% 2025, 20% 2026), the Augusta Rule (Section 280A) for 14 days of tax-free rental income, LLC entity structuring for liability protection and deduction capture, and strategic W-4 adjustments to recapture over-withholding. Combined, these can generate $30K-$60K+ in year-one tax value."
+    answer: "Key strategies include: cost segregation studies unlocking 20-30% of property value in year-one depreciation, bonus depreciation (100% for qualified property acquired after January 19, 2025; old phase-down only for earlier binding contracts), the Augusta Rule (Section 280A) for 14 days of tax-free rental income, LLC entity structuring for liability protection and deduction capture, and strategic W-4 adjustments to recapture over-withholding. Combined, these can generate $30K-$60K+ in year-one tax value."
   - question: "Should Daniel pursue STR arbitrage or property ownership in Pagosa Springs?"
     answer: "The decision depends on capital position and risk tolerance. Arbitrage requires $15K-$25K per unit (lease deposits + furnishing), launches in 30-60 days, generates $1,500-$3,000 monthly profit per unit, but builds no equity. Ownership requires $50K-$100K down payment per property, takes 60-90 days to close, generates similar cash flow PLUS equity appreciation (3-8% annually in Colorado mountain markets) and maximum tax benefits. Daniel's plan likely evaluates both paths with arbitrage for speed and ownership for long-term wealth."
   - question: "How does Colorado's 4.4% state tax rate impact overall strategy?"
@@ -142,7 +142,7 @@ STRs with average guest stays under 7 days are classified as non-passive busines
 For STR properties (whether owned or via arbitrage with capital improvements), cost segregation studies accelerate depreciation. Typical allocations:
 - 20-30% of property value eligible for 5-year depreciation
 - Personal property (furniture, fixtures) eligible for bonus depreciation
-- 100% bonus depreciation (phasing down: 60% in 2024, 40% in 2025, 20% in 2026)
+- 100% bonus depreciation for qualified property acquired after January 19, 2025 (old phase-down only for earlier binding contracts)
 
 On a $300,000 property with $50,000 in furnishings, cost segregation + bonus depreciation can unlock $70,000-$90,000 in first-year deductions.
 
@@ -421,7 +421,7 @@ The scaling pathway involves: Year 1 (establish first unit, prove model, generat
 
 ### What tax strategies are most effective for Colorado STR operators?
 
-Key strategies include: [cost segregation studies](/tax-strategies/cost-segregation.html) unlocking 20-30% of property value in year-one depreciation, [bonus depreciation](/tax-strategies/bonus-depreciation.html) (100% through 2022, phasing down 20% annually), the [Augusta Rule](/tax-strategies/augusta-rule.html) (Section 280A) for 14 days of tax-free rental income, LLC entity structuring for liability protection and deduction capture, and strategic W-4 adjustments to recapture over-withholding. Combined, these can generate $30K-$60K+ in year-one tax value.
+Key strategies include: [cost segregation studies](/tax-strategies/cost-segregation.html) unlocking 20-30% of property value in year-one depreciation, [bonus depreciation](/tax-strategies/bonus-depreciation.html) (100% for qualified property acquired after January 19, 2025; old phase-down only for earlier binding contracts), the [Augusta Rule](/tax-strategies/augusta-rule.html) (Section 280A) for 14 days of tax-free rental income, LLC entity structuring for liability protection and deduction capture, and strategic W-4 adjustments to recapture over-withholding. Combined, these can generate $30K-$60K+ in year-one tax value.
 
 ### Should Daniel pursue STR arbitrage or property ownership in Pagosa Springs?
 
