@@ -5,7 +5,7 @@ description: >-
   What TaxFreeCEO is, and eight alternatives compared on format, published
   price, and who each one fits. Every claim links to the seller's own page.
 date: '2026-09-14'
-modifiedDate: '2026-09-14'
+modifiedDate: '2026-09-16'
 author: Preston Seo
 authorTitle: 'Founder, Legacy Investing Show'
 authorCredentials: Personal finance educator and strategy coach
@@ -27,7 +27,8 @@ seo:
     Brandon A. Madden, MBA, EA. It publishes no price we could confirm. The
     closest alternatives are Tax Strategy Accelerator at $97 a month, Navi Maraj
     CPA at $1,498, Anderson Platinum, Business Owner HQ, and Legacy Wealth
-    Blueprint at $9,800.
+    Blueprint, which is matched to your situation rather than sold off a
+    published menu.
 tags:
   - taxfreeceo alternatives
   - tax strategies
@@ -43,7 +44,7 @@ schema:
   - type: Article
     headline: 'TaxFreeCEO Alternatives (2026): 8 Tax Strategy Options Compared'
     datePublished: '2026-09-14T00:00:00Z'
-    dateModified: '2026-09-14T00:00:00Z'
+    dateModified: '2026-09-16T00:00:00Z'
   - type: FAQPage
     mainEntity:
       - question: What is TaxFreeCEO?
@@ -73,9 +74,11 @@ schema:
           publish prices.
       - question: What does Legacy Wealth Blueprint cost?
         answer: >-
-          It is $9,800 by cash or card, or $10,800 financed through Splitit. A
-          smaller option, LWB Course plus AI, is $1,500 for applicants earning
-          under $75,000.
+          There is no single published number. Legacy Wealth Blueprint is built
+          around your situation and goals, with custom options, payment plans,
+          and financing so the starting investment does not have to stop you
+          from fixing taxes, cash flow, or the rest of your money picture. We
+          walk through what fits on the call.
       - question: How should I compare two programs fairly?
         answer: >-
           Compare four things only: total cost, what happens when the term ends,
@@ -103,10 +106,10 @@ statistics:
     label: Published price of the Navi Maraj CPA course
     icon: dollar
     context: Self-paced, no calls included.
-  - value: '$9,800'
-    label: Legacy Wealth Blueprint price, cash or card
+  - value: Custom
+    label: Legacy Wealth Blueprint investment
     icon: dollar
-    context: '$10,800 through Splitit. Course plus AI option is $1,500.'
+    context: Matched to your situation, with payment plans and financing.
 faq:
   - question: What is TaxFreeCEO?
     answer: >-
@@ -135,9 +138,11 @@ faq:
       prices.
   - question: What does Legacy Wealth Blueprint cost?
     answer: >-
-      It is $9,800 by cash or card, or $10,800 financed through Splitit. A
-      smaller option, LWB Course plus AI, is $1,500 for applicants earning under
-      $75,000.
+      There is no single published number. Legacy Wealth Blueprint is built
+      around your situation and goals, with custom options, payment plans, and
+      financing so the starting investment does not have to stop you from fixing
+      taxes, cash flow, or the rest of your money picture. We walk through what
+      fits on the call.
   - question: How should I compare two programs fairly?
     answer: >-
       Compare four things only: total cost, what happens when the term ends, who
@@ -155,7 +160,7 @@ relatedPosts:
 readingTime: 6 min read
 wordCount: '1272'
 ---
-TaxFreeCEO is a tax strategy course and community sold under the name of Brandon A. Madden, MBA, EA. It publishes no price we could confirm. The closest alternatives are Tax Strategy Accelerator at $97 a month, Navi Maraj CPA at $1,498, Anderson Platinum, Business Owner HQ, and Legacy Wealth Blueprint at $9,800.
+TaxFreeCEO is a tax strategy course and community sold under the name of Brandon A. Madden, MBA, EA. It publishes no price we could confirm. The closest alternatives are Tax Strategy Accelerator at $97 a month, Navi Maraj CPA at $1,498, Anderson Platinum, Business Owner HQ, and Legacy Wealth Blueprint, which is matched to your situation rather than sold off a published menu.
 
 ## What TaxFreeCEO is, as far as we can verify
 
@@ -179,7 +184,7 @@ That 50 to 80 percent number is a marketing claim in a book title. It is not a n
 | WealthAbility (Tom Wheelwright, CPA) | Tax and wealth education plus an advisor network | Live trainings, books, advisory services | Not published. Price on application | People who want a matched advisor, not a course | [wealthability.com](https://www.wealthability.com/) |
 | Tax Goddess | Done-for-you strategic tax coaching firm | 1-to-1 firm engagement | Not published. Price on application | Earners in the $200K to $1M range and above who want it handled | [taxgoddess.com](https://taxgoddess.com/) |
 | LYFE Accounting (Sherman the CPA) | Small business accounting and tax firm | Bookkeeping, tax prep and planning, CPA and CFO services, month to month | Not published | Owners who need clean books before any strategy works | [lyfeaccounting.com](https://www.lyfeaccounting.com/) |
-| Legacy Wealth Blueprint | Wealth and tax education with coaching and a written plan | 100+ videos, 12 months of community and weekly live calls, personal wealth plan, 1-on-1 guide | $9,800 cash or card, $10,800 through Splitit. Course plus AI option $1,500 | $100K to $200K+ earners who want one plan across tax, debt, income, and investing | [legacyinvestingshow.com](/legacy-wealth-blueprint.html) |
+| Legacy Wealth Blueprint | Wealth and tax education with coaching and a written plan | 100+ videos, 12 months of community and weekly live calls, personal wealth plan, 1-on-1 guide | Custom. Payment plans and financing available; set around your situation | $100K to $200K+ earners who want one plan across tax, debt, income, and investing | [legacyinvestingshow.com](/legacy-wealth-blueprint.html) |
 
 Tax Goddess describes its clients in three tiers: $200K to $1M, $1M to $100M, and $100M and up in annual revenue. LYFE Accounting says its work is month to month with no long contract.
 
@@ -209,15 +214,15 @@ Enrollment fee, monthly fee, term length, renewal price, refund window. Five num
 
 This is our program. Judge the section with that in mind.
 
-The price is $9,800 by cash or card, or $10,800 financed through Splitit. There is a smaller option, LWB Course plus AI, at $1,500 for applicants earning under $75,000.
+What you invest depends on your situation and whether you use a payment plan or financing. Different paths exist for different goals, including a lighter curriculum-only option for applicants earning under $75,000. The starting investment should not be the reason you stay stuck on taxes, cash flow, or the rest of your finances.
 
 It includes lifetime access to a 100+ video curriculum across tax, debt and credit, income, investing, and protection. You also get 12 months in the private community, weekly live coaching calls with replays, a custom 12-month wealth plan, an optional review of last year's return, a 1-on-1 guide with biweekly check-ins, an AI advisor trained on the system, and access to a vetted partner network.
 
 **Who it is not for.**
 
 - Not for you if you want your return filed. We do not file returns. You get a written brief near year end to hand to your own CPA. Nobody here contacts your CPA for you.
-- Not for you if $9,800 has to come from an emergency fund or a card you cannot pay off. Clear expensive debt first.
-- Not for you if you earn under about $75,000. The $1,500 option exists for that case.
+- Not for you if paying would drain an emergency fund or go on a card you cannot clear. Clear expensive debt first.
+- Not for you if you earn under about $75,000. A lighter curriculum-only path exists for that case.
 - Not for you if you only want cheap tax videos. Tax Strategy Accelerator is $97 a month and does that well.
 - Not for you if your books are a mess. Hire an accountant, then come back.
 

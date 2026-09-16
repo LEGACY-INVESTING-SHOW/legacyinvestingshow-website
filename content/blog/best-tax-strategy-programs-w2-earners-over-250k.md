@@ -5,7 +5,7 @@ description: >-
   What is actually left after you max a 401(k) and an HSA, plus eight tax
   strategy programs and services compared on format, published price, and fit.
 date: '2026-09-14'
-modifiedDate: '2026-09-14'
+modifiedDate: '2026-09-16'
 author: Preston Seo
 authorTitle: 'Founder, Legacy Investing Show'
 authorCredentials: Personal finance educator and strategy coach
@@ -43,7 +43,7 @@ schema:
   - type: Article
     headline: 'Best Tax Strategy Programs for W-2 Earners Over $250K (2026)'
     datePublished: '2026-09-14T00:00:00Z'
-    dateModified: '2026-09-14T00:00:00Z'
+    dateModified: '2026-09-16T00:00:00Z'
   - type: FAQPage
     mainEntity:
       - question: What is left after I max my 401(k) and HSA?
@@ -64,9 +64,12 @@ schema:
           system to many people at once. Many high earners end up using both.
       - question: How much do these programs cost?
         answer: >-
-          Published prices range from $97 per month for Tax Strategy Accelerator
-          to a flat fee of $32,000 to $50,000 at Tax Alchemy. Legacy Wealth
-          Blueprint is $9,800. Several firms publish no price at all.
+          Published prices among other firms range from $97 per month for Tax
+          Strategy Accelerator to a flat fee of $32,000 to $50,000 at Tax
+          Alchemy. Legacy Wealth Blueprint is custom: it depends on your
+          situation and how you pay, with payment plans and financing so the
+          starting investment is not the obstacle. Several firms publish no
+          price at all.
       - question: What are the 2026 401(k) and HSA limits?
         answer: >-
           The IRS set the 2026 employee 401(k) limit at $24,500, with an $8,000
@@ -79,9 +82,12 @@ schema:
           depreciation recapture at sale before you buy the plan.
       - question: What does Legacy Wealth Blueprint cost and who is it not for?
         answer: >-
-          It is $9,800 by cash or card, or $10,800 through Splitit. It is not for
-          you if you want a return filed, if the money comes from an emergency
-          fund, or if you earn under about $75,000.
+          It depends on your situation, the program that fits, and whether you
+          use a payment plan or financing. We will not let the starting
+          investment be the obstacle to changing your taxes, cash flow, or the
+          rest of your finances. It is not for you if you want a return filed,
+          if the money would come from an emergency fund, or if you earn under
+          about $75,000.
 breadcrumbs:
   - name: Home
     url: /
@@ -127,9 +133,11 @@ faq:
       to many people at once. Many high earners end up using both.
   - question: How much do these programs cost?
     answer: >-
-      Published prices range from $97 per month for Tax Strategy Accelerator to
-      a flat fee of $32,000 to $50,000 at Tax Alchemy. Legacy Wealth Blueprint
-      is $9,800. Several firms publish no price at all.
+      Published prices among other firms range from $97 per month for Tax
+      Strategy Accelerator to a flat fee of $32,000 to $50,000 at Tax Alchemy.
+      Legacy Wealth Blueprint is custom: it depends on your situation and how
+      you pay, with payment plans and financing so the starting investment is
+      not the obstacle. Several firms publish no price at all.
   - question: What are the 2026 401(k) and HSA limits?
     answer: >-
       The IRS set the 2026 employee 401(k) limit at $24,500, with an $8,000
@@ -142,9 +150,11 @@ faq:
       recapture at sale before you buy the plan.
   - question: What does Legacy Wealth Blueprint cost and who is it not for?
     answer: >-
-      It is $9,800 by cash or card, or $10,800 through Splitit. It is not for you
-      if you want a return filed, if the money comes from an emergency fund, or
-      if you earn under about $75,000.
+      It depends on your situation, the program that fits, and whether you use a
+      payment plan or financing. We will not let the starting investment be the
+      obstacle to changing your taxes, cash flow, or the rest of your finances.
+      It is not for you if you want a return filed, if the money would come from
+      an emergency fund, or if you earn under about $75,000.
 toc: true
 tocDepth: 3
 relatedPosts:
@@ -197,7 +207,7 @@ That is the whole fork in the road. If a seller tells you they can cut a large W
 | WealthAbility (Tom Wheelwright, CPA) | Education plus an advisor network | Live trainings, books, advisory services | Not published. Price on application | People who want a matched advisor | [wealthability.com](https://www.wealthability.com/) |
 | Tax Goddess | Done-for-you strategic tax coaching firm | 1-to-1 firm engagement | Not published. Price on application | Earners who want it handled and have the budget | [taxgoddess.com](https://taxgoddess.com/) |
 | Tax Alchemy (Karlton Dennis) | Done-for-you planning firm | 1-to-1 advisory, entity work, cost segregation, 1031 | Flat fee "from as little as $32k up to $50k" | Large bills where a five-figure fee still pays back | [taxalchemy.com](https://taxalchemy.com/) |
-| Legacy Wealth Blueprint | Wealth and tax education with coaching and a written plan | 100+ videos, 12 months community, weekly live calls, custom plan, 1-on-1 guide | $9,800 cash or card, $10,800 through Splitit. Course plus AI option $1,500 | $100K to $200K+ earners who want one plan across tax, debt, income, and investing | [legacyinvestingshow.com](/legacy-wealth-blueprint.html) |
+| Legacy Wealth Blueprint | Wealth and tax education with coaching and a written plan | 100+ videos, 12 months community, weekly live calls, custom plan, 1-on-1 guide | Custom. Payment plans and financing available; set around your situation | $100K to $200K+ earners who want one plan across tax, debt, income, and investing | [legacyinvestingshow.com](/legacy-wealth-blueprint.html) |
 
 ## How to choose
 
@@ -219,7 +229,7 @@ That is the whole fork in the road. If a seller tells you they can cut a large W
 
 This is our program, so weigh the section accordingly.
 
-The price is $9,800 by cash or card, or $10,800 financed through Splitit. There is a smaller option, LWB Course plus AI, at $1,500 for applicants earning under $75,000.
+What you invest depends on your situation and how you choose to pay: outright, on a plan, or with financing. A lighter curriculum-only path exists for applicants earning under $75,000. The starting investment should not be the reason a $250K W-2 household stays stuck on taxes and cash flow.
 
 It includes lifetime access to a 100+ video curriculum across five pillars: tax, debt and credit, income, investing, and protection. You also get 12 months in the private community, weekly live coaching calls with replays, a custom 12-month wealth plan, an optional review of your prior year return, a 1-on-1 guide with biweekly check-ins, an AI advisor trained on the system, and access to a partner network with a tax strategist, an estate attorney, a credit advisor, and an entity partner.
 
@@ -229,8 +239,8 @@ The target client is someone earning $100K to $200K or more who wants to optimiz
 
 - Not for you if you want your return filed. We do not file. Near year end you get a written brief to hand to your own CPA. Nobody here talks to your CPA for you.
 - Not for you if you want a licensed professional's opinion on your specific filing position. That is a CPA's job, not ours.
-- Not for you if $9,800 comes from an emergency fund or a card you cannot clear.
-- Not for you if you earn under about $75,000. Take the $1,500 option.
+- Not for you if paying would come from an emergency fund or a card you cannot clear.
+- Not for you if you earn under about $75,000. Take the lighter curriculum-only path.
 - Not for you if you only want a cheap tax video library. $97 a month buys that.
 - Not for you if you want legal documents drafted. Anderson and KKOS do that work.
 

@@ -222,6 +222,9 @@ Role:
 - primary CTA for tax/wealth-focused traffic
 - used on decision pages, tools, and strategy hubs
 
+### Paid programs
+Different programs for different situations and goals. Custom options, payment plans, and financing are available. What someone invests depends on their picture and how they choose to pay. The starting investment should not be the obstacle to changing taxes, cash flow, business, or personal finance. No public price menu; fit is covered on the intro call.
+
 ## Representative Content
 
 ### Tax / High-Income / Wealth Content

@@ -5,7 +5,7 @@ description: >-
   A sourced comparison of eight real estate investing programs for people with a
   day job, with published prices, formats, free options, and who each one fits.
 date: '2026-09-14'
-modifiedDate: '2026-09-14'
+modifiedDate: '2026-09-16'
 author: Preston Seo
 authorTitle: 'Founder, Legacy Investing Show'
 authorCredentials: Personal finance educator and strategy coach
@@ -27,7 +27,7 @@ seo:
     podcasts. Pay for a program only after you know your model and your market.
     Published prices in 2026 run from $399 a year for a membership to $1,000 a
     month for coaching to $10,000 for a recorded masterclass. Legacy Wealth
-    Blueprint is $9,800.
+    Blueprint is custom, with payment plans and financing.
 tags:
   - real estate investing courses
   - real estate coaching
@@ -43,7 +43,7 @@ schema:
   - type: Article
     headline: 'Best Real Estate Investing Courses if You Have a Full-Time Job (2026)'
     datePublished: '2026-09-14T00:00:00Z'
-    dateModified: '2026-09-14T00:00:00Z'
+    dateModified: '2026-09-16T00:00:00Z'
   - type: FAQPage
     mainEntity:
       - question: Do I need a paid course to start investing in real estate?
@@ -77,10 +77,12 @@ schema:
           ends.
       - question: How much does Legacy Wealth Blueprint cost?
         answer: >-
-          Legacy Wealth Blueprint is $9,800. It covers lifetime access to the
-          curriculum plus 12 months of community and live support. There is a
-          $1,500 course and AI version for applicants earning under $75,000, and
-          it does not include calls.
+          There is no published menu price. Legacy Wealth Blueprint is a
+          whole-picture wealth program with custom options, payment plans, and
+          financing. What you invest depends on your situation and how you
+          choose to pay. A lighter curriculum-only path exists for applicants
+          earning under $75,000, without the live calls. The intro call is where
+          we make sure the starting investment is not the obstacle.
       - question: Who should not buy a real estate coaching program?
         answer: >-
           Anyone who would need debt to pay for it, anyone who has not read a
@@ -149,10 +151,12 @@ faq:
       the full price and the payment terms in writing before the call ends.
   - question: How much does Legacy Wealth Blueprint cost?
     answer: >-
-      Legacy Wealth Blueprint is $9,800. It covers lifetime access to the
-      curriculum plus 12 months of community and live support. There is a $1,500
-      course and AI version for applicants earning under $75,000, and it does not
-      include calls.
+      There is no published menu price. Legacy Wealth Blueprint is a
+      whole-picture wealth program with custom options, payment plans, and
+      financing. What you invest depends on your situation and how you choose to
+      pay. A lighter curriculum-only path exists for applicants earning under
+      $75,000, without the live calls. The intro call is where we make sure the
+      starting investment is not the obstacle.
   - question: Who should not buy a real estate coaching program?
     answer: >-
       Anyone who would need debt to pay for it, anyone who has not read a single
@@ -197,7 +201,7 @@ Give this 30 to 60 days. If you still cannot say which model you want and which 
 | KenPro (Ken McElroy) | Membership with self-paced courses | Video courses, monthly live webinars, a weekly live question session | $39.99 a month or $399 a year | Learners on a small budget who want depth without a sales call | [kenmcelroy.com/kenpro](https://kenmcelroy.com/kenpro/) |
 | Grant Cardone Real Estate Master Class | Recorded two-day workshop sold as a course | Online video access, templates, deal examples | $10,000, shown as reduced from $15,000 | Buyers focused on large multifamily who want his specific method | [store.grantcardone.com](https://store.grantcardone.com/products/real-estate-master-class) |
 | Infinity Investing (Toby Mathis) | Investing education membership from Anderson Advisors | Free workshops, paid membership, live summit | Price on application. The pricing page shows no figure | People who want entities, asset protection, and investing in one place | [infinityinvesting.com/pricing](https://infinityinvesting.com/pricing/) |
-| Legacy Wealth Blueprint | Whole-picture wealth program, not a deal-finding course | Curriculum, weekly live calls, a 1-on-1 guide, a custom 12-month plan | $9,800 | High earners who want tax, debt, income, and investing handled together | [legacyinvestingshow.com](https://www.legacyinvestingshow.com/) |
+| Legacy Wealth Blueprint | Whole-picture wealth program, not a deal-finding course | Curriculum, weekly live calls, a 1-on-1 guide, a custom 12-month plan | Custom. Payment plans and financing available | High earners who want tax, debt, income, and investing handled together | [legacyinvestingshow.com](https://www.legacyinvestingshow.com/) |
 
 Prices checked 14 September 2026. Sellers change prices. Confirm before you buy.
 
@@ -209,22 +213,22 @@ Money is not your tightest limit. Hours are. Use these four filters in order.
 
 **2. Match the format to how you actually learn.** Live weekly calls only help if you attend. If your job runs late, a self-paced library with an active chat beats a call you keep missing. Wealthy Investor's value is the call volume. KenPro's value is that you can watch at 11pm.
 
-**3. Decide what you are buying: information or review.** A $399 membership gives you information. A high-ticket program should give you someone who reads your actual lease, your actual numbers, and tells you no. If a $9,800 program does not include that, you are paying course prices for a course.
+**3. Decide what you are buying: information or review.** A $399 membership gives you information. A high-ticket program should give you someone who reads your actual lease, your actual numbers, and tells you no. If it does not include that, you are paying course prices for a course.
 
 **4. Ask what happens when you stall.** Everyone with a job stalls. Ask the seller what the program does in month three when you have not made an offer. If the answer is "watch module 4 again," keep looking.
 
 ## Legacy Wealth Blueprint: the honest version
 
-Legacy Wealth Blueprint is $9,800. That covers lifetime access to the curriculum and 12 months of community and live support. You get weekly live coaching calls with replays, a custom 12-month Wealth Strategy Snapshot, a review of your prior year tax return, a CPA implementation brief near tax season, and a 1-on-1 guide with bi-weekly check-ins. There is a smaller version at $1,500 for applicants earning under $75,000. That one is the video curriculum plus the AI advisor, with no calls.
+What you invest depends on your situation and how you choose to pay, with payment plans and financing so the starting check is not what keeps a busy W-2 earner stuck. That covers lifetime access to the curriculum and 12 months of community and live support. You get weekly live coaching calls with replays, a custom 12-month Wealth Strategy Snapshot, a review of your prior year tax return, a CPA implementation brief near tax season, and a 1-on-1 guide with bi-weekly check-ins. A lighter curriculum-only path exists for applicants earning under $75,000, with the video curriculum plus the AI advisor and no calls.
 
 There is no published money-back guarantee. If that matters to you, ask for the refund terms in writing before you pay.
 
 **Who Legacy Wealth Blueprint is not for:**
 
 - **People who want a deal-finding course.** It is a wealth program covering taxes, debt and credit, income, investing, and protection. If you only want to learn how to find and underwrite rentals, a BiggerPockets bootcamp or KenPro is a better fit and far cheaper.
-- **People earning under about $75,000.** The math on tax strategy does not carry a $9,800 fee at that income. The $1,500 version exists for this reason.
+- **People earning under about $75,000.** The math on tax strategy at that income usually calls for a lighter path, not the full coaching program.
 - **People who would borrow to pay for it.** If the fee needs a card you cannot clear, the program is not the problem you should be solving first.
-- **People who want short-term rental operations.** That is a different program. Airbnb Ascension is $9,800 for 6 months and one property, and it is about acquiring and running the property, not about your whole balance sheet.
+- **People who want short-term rental operations.** That is a different program. Airbnb Ascension is about acquiring and running the property, not about your whole balance sheet, and it is also matched to your situation rather than sold off a public menu.
 
 ## Before you pay anyone
 

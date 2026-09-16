@@ -5,7 +5,7 @@ description: >-
   A neutral 2026 comparison of Tax Alchemy and seven alternatives, with format,
   published price, who each one fits, and a source link for every claim.
 date: '2026-09-14'
-modifiedDate: '2026-09-14'
+modifiedDate: '2026-09-16'
 author: Preston Seo
 authorTitle: 'Founder, Legacy Investing Show'
 authorCredentials: Personal finance educator and strategy coach
@@ -27,7 +27,7 @@ seo:
     about $32,000 to $50,000. If that is more than you want to spend, the main
     alternatives are Tax Strategy Accelerator at $97 a month, Anderson Platinum,
     Main Street Business Owner HQ, WealthAbility, Tax Goddess, and Legacy Wealth
-    Blueprint at $9,800.
+    Blueprint, matched to your situation with payment plans and financing.
 tags:
   - tax alchemy alternatives
   - tax strategies
@@ -43,7 +43,7 @@ schema:
   - type: Article
     headline: 'Tax Alchemy Alternatives (2026): 7 Tax Strategy Programs Compared'
     datePublished: '2026-09-14T00:00:00Z'
-    dateModified: '2026-09-14T00:00:00Z'
+    dateModified: '2026-09-16T00:00:00Z'
   - type: FAQPage
     mainEntity:
       - question: How much does Tax Alchemy cost?
@@ -69,9 +69,11 @@ schema:
           earner with neither has a much shorter list of moves.
       - question: What does Legacy Wealth Blueprint cost?
         answer: >-
-          Legacy Wealth Blueprint is $9,800 paid by cash or card, or $10,800 if
-          you finance it through Splitit. A smaller option, LWB Course plus AI,
-          is $1,500 for applicants earning under $75,000.
+          Price depends on your situation and how you pay. We offer custom
+          options, payment plans, and financing because the first investment
+          should not be the thing that keeps you stuck on taxes, business
+          structure, or cash flow. Ask on the call and we will match the path,
+          not a menu.
       - question: Does any program in this list file my tax return?
         answer: >-
           Tax Alchemy offers tax preparation to its advisory clients. Tax
@@ -100,10 +102,10 @@ statistics:
     label: Published price of Tax Strategy Accelerator
     icon: dollar
     context: The education membership run by the same founder, Karlton Dennis.
-  - value: '$9,800'
-    label: Legacy Wealth Blueprint price, cash or card
+  - value: Custom
+    label: Legacy Wealth Blueprint investment
     icon: dollar
-    context: '$10,800 when financed through Splitit. Course plus AI option is $1,500.'
+    context: Set around your situation, with payment plans and financing.
   - value: '8'
     label: Programs and services compared in the table below
     icon: chart
@@ -132,9 +134,10 @@ faq:
       with neither has a much shorter list of moves.
   - question: What does Legacy Wealth Blueprint cost?
     answer: >-
-      Legacy Wealth Blueprint is $9,800 paid by cash or card, or $10,800 if you
-      finance it through Splitit. A smaller option, LWB Course plus AI, is
-      $1,500 for applicants earning under $75,000.
+      Price depends on your situation and how you pay. We offer custom options,
+      payment plans, and financing because the first investment should not be
+      the thing that keeps you stuck on taxes, business structure, or cash flow.
+      Ask on the call and we will match the path, not a menu.
   - question: Does any program in this list file my tax return?
     answer: >-
       Tax Alchemy offers tax preparation to its advisory clients. Tax Goddess
@@ -157,7 +160,7 @@ relatedPosts:
 readingTime: 7 min read
 wordCount: '1386'
 ---
-Tax Alchemy is a done-for-you tax planning firm that quotes flat fees from about $32,000 to $50,000. If that is more than you want to spend, the main alternatives are Tax Strategy Accelerator at $97 a month, Anderson Platinum, Main Street Business Owner HQ, WealthAbility, Tax Goddess, and Legacy Wealth Blueprint at $9,800.
+Tax Alchemy is a done-for-you tax planning firm that quotes flat fees from about $32,000 to $50,000. If that is more than you want to spend, the main alternatives are Tax Strategy Accelerator at $97 a month, Anderson Platinum, Main Street Business Owner HQ, WealthAbility, Tax Goddess, and Legacy Wealth Blueprint, matched to your situation with payment plans and financing.
 
 All prices below were read on the seller's own page on September 14, 2026. Prices in this category change often, so check the link before you decide.
 
@@ -182,7 +185,7 @@ So if you saw a $32,000 quote and went looking for options, you may only need th
 | WealthAbility (Tom Wheelwright, CPA) | Tax and wealth education plus an advisor network | Live trainings, books, advisory services | Not published. Price on application | People who want a vetted advisor rather than a course | [wealthability.com](https://www.wealthability.com/) |
 | Tax Goddess | Done-for-you strategic tax coaching firm | 1-to-1 firm engagement | Not published. Price on application | High earners who want a firm, not a classroom | [taxgoddess.com](https://taxgoddess.com/) |
 | Navi Maraj CPA course | Self-paced small business tax course | Online course with modules and software walkthroughs | $1,498, or from $72 per month with Klarna | Owners who want the S-corp and deduction basics cheaply | [navimarajcpa.teachable.com](https://navimarajcpa.teachable.com/p/smallbusinesstaxessale) |
-| Legacy Wealth Blueprint | Wealth and tax education with coaching and a written plan | 100+ videos, 12 months of community and weekly live calls, personal wealth plan, 1-on-1 guide | $9,800 cash or card, $10,800 through Splitit. Course plus AI option $1,500 | $100K to $200K+ earners who want a full plan and people to ask | [legacyinvestingshow.com](/legacy-wealth-blueprint.html) |
+| Legacy Wealth Blueprint | Wealth and tax education with coaching and a written plan | 100+ videos, 12 months of community and weekly live calls, personal wealth plan, 1-on-1 guide | Custom. Payment plans and financing available; set around your situation | $100K to $200K+ earners who want a full plan and people to ask | [legacyinvestingshow.com](/legacy-wealth-blueprint.html) |
 
 Tax Goddess lists its client tiers as $200K to $1M, $1M to $100M, and $100M and up in annual revenue. WealthAbility lists live trainings and advisory services but shows no prices. For both, treat the cost as price on application.
 
@@ -214,15 +217,15 @@ Every seller in this category sells on a call. Ask for the full price, the payme
 
 Legacy Wealth Blueprint is our program, so read this section with that in mind.
 
-The price is $9,800 paid by cash or card. It is $10,800 if you finance through Splitit. There is a smaller option, LWB Course plus AI, at $1,500 for applicants earning under $75,000.
+What you invest depends on your situation and whether you pay outright, on a plan, or with financing. A lighter curriculum-only path exists for applicants earning under $75,000. Do not let the first check be the reason you stay stuck on taxes, cash flow, or the business you already run.
 
 What you get: lifetime access to a 100+ video curriculum across five pillars (tax, debt and credit, income, investing, protection), 12 months in the private community, weekly live coaching calls with replays, a custom 12-month wealth plan, an optional review of your prior year return, a 1-on-1 guide with biweekly check-ins, an AI advisor trained on the system, and access to a partner network of tax, estate, credit, and entity specialists.
 
 **Who it is not for.** Be blunt with yourself here.
 
 - It is not for you if you want someone to file your return. We do not file. Near the end of the year you get a CPA implementation brief that you forward to your own CPA. Nobody on the team talks to your CPA directly.
-- It is not for you if $9,800 comes out of your emergency fund or goes onto a card you cannot clear. Pay off expensive debt first.
-- It is not for you if you earn under about $75,000. The $1,500 course option exists for that reason. The full program assumes enough income for the strategies to move real money.
+- It is not for you if paying would come out of an emergency fund or go onto a card you cannot clear. Pay off expensive debt first.
+- It is not for you if you earn under about $75,000. The lighter curriculum-only path exists for that reason. The full program assumes enough income for the strategies to move real money.
 - It is not for you if all you want is a cheap library of tax videos. Tax Strategy Accelerator is $97 a month and it is good at that job.
 - It is not for you if you only want real estate deal coaching. That is a different program.
 
