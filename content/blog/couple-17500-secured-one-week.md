@@ -184,7 +184,7 @@ This case study breaks down exactly how Lindsay and her husband built their Airb
 
 | Metric | Value | Context |
 |------|------|------|
-| **Bookings in First Week** | $17,500 | 14 reservations through New Year's Eve |
+| **Bookings in First 14 Days** | $17,500 | 14 reservations through New Year's Eve |
 | **Time to First Property** | 21 days | From first landlord contact to signed contract |
 | **Landlord Calls Made** | 4 total | Secured property on fourth call |
 | **Monthly Cash Flow (Peak)** | $2,500-$3,000 | Fall through January season |
