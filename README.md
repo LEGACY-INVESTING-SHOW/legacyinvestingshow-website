@@ -71,7 +71,7 @@ npm run build:images   # Optimize images with Sharp
 | `npm run cms:build` | Build Eleventy CMS site from `cms/` |
 | `npm run cms:smoke` | Run CMS smoke checks on built Eleventy output |
 | `npm run cms:publish:posts` | Publish CMS-rendered posts into `blog/*.html` |
-| `npm run cms:verify` | Run full CMS sync + parity + build + smoke chain |
+| `npm run cms:verify` | Optional local CMS sync + parity + Eleventy smoke (not part of Vercel `npm run build`) |
 | `npm run start` | Start local development server |
 
 ## Deployment

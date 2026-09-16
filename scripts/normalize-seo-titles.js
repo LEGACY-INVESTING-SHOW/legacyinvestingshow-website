@@ -48,6 +48,8 @@ const SKIP_DIRS = new Set([
   'templates',
   'tests',
   'todos',
+  // build:blog already emits normalized <title> tags.
+  'blog',
   // Frozen: sales funnels, unlisted client libraries, imported Next export.
   'lx',
   'funnels',

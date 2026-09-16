@@ -63,7 +63,7 @@ test('blog post template and Eleventy layout emit the same class sequence', () =
     assert.deepStrictEqual(
         classSequence(rendered),
         classSequence(published),
-        `Class sequence drifted for ${post.slug}. Re-run: npm run build:blog && npm run cms:verify && npm run cms:publish:posts`
+        `Class sequence drifted for ${post.slug}. Re-run: npm run build:blog`
     );
 });
 

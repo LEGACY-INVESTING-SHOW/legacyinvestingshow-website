@@ -2,17 +2,16 @@
 module.exports = {
   content: [
     "./*.html",
-    "./blog/**/*.html",
-    "./blog/page/*.html",
-    "./compare/**/*.html",
+    "./about/**/*.html",
     "./cms/_includes/**/*.njk",
     "./templates/**/*.html",
+    "./scripts/**/*.js",
     "./assets/js/**/*.js",
     "./tax-strategies/**/*.html",
     "./retirement/**/*.html",
     "./topics/**/*.html",
     "./tools/**/*.html",
-    "./404.html"
+    "./compare/**/*.html"
   ],
   theme: {
     extend: {

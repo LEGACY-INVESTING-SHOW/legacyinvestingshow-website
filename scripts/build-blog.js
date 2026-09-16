@@ -10,8 +10,8 @@
  *   blog/category/<s>.html  one archive per category
  *
  * The post DOM comes from scripts/lib/blog-render.js, which the Eleventy layout
- * also uses, so the two renderers cannot drift. Eleventy output overwrites
- * blog/<slug>.html later in the build chain (npm run cms:publish:posts).
+ * also uses, so the two renderers cannot drift. `npm run build` ships this
+ * generator's HTML. `npm run cms:verify` remains an optional local check.
  */
 
 const fs = require('fs');
@@ -27,6 +27,7 @@ const {
 } = require('./lib/site-shell');
 const blogRender = require('./lib/blog-render');
 const schemaOrg = require('./lib/schema-org');
+const { normalizeTitle } = require('./normalize-seo-titles');
 
 const {
     POSTS_PER_PAGE,
@@ -67,12 +68,7 @@ function ensureDir(dirPath) {
 }
 
 function buildSEOTitle(rawTitle) {
-    const title = (rawTitle || 'Legacy Investing Show')
-        .replace(/\s+/g, ' ')
-        .replace(/\s+\([^)]*\)\s*$/g, '')
-        .trim() || 'Legacy Investing Show';
-    const suffix = ' | Legacy Investing Show';
-    return title.endsWith(suffix) ? title : `${title}${suffix}`;
+    return normalizeTitle(rawTitle || 'Legacy Investing Show') || 'Legacy Investing Show';
 }
 
 const DEFAULT_KEYWORDS = ['wealth building', 'investing', 'financial freedom'];
@@ -148,7 +144,7 @@ function applyTemplate(template, post, allPosts) {
     const modifiedDate = fm.modifiedDate || fm.updatedAt || fm.date;
 
     return template
-        .replace(/\{\{seoTitle\}\}/g, esc(buildSEOTitle(fm.title)))
+        .replace(/\{\{seoTitle\}\}/g, buildSEOTitle(fm.title))
         .replace(/\{\{title\}\}/g, esc(fm.title || 'Untitled'))
         .replace(/\{\{description\}\}/g, esc(fm.description || ''))
         .replace(/\{\{keywords\}\}/g, esc(buildKeywords(fm)))
@@ -284,8 +280,8 @@ function listingDocument({
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>${esc(metaTitle)}</title>
-    <meta name="title" content="${esc(metaTitle)}">
+    <title>${buildSEOTitle(metaTitle)}</title>
+    <meta name="title" content="${buildSEOTitle(metaTitle)}">
     <meta name="description" content="${esc(description)}">
     <meta name="author" content="Preston Seo">
     <meta name="robots" content="${esc(robots)}">

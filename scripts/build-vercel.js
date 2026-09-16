@@ -5,7 +5,33 @@ const path = require('node:path');
 const crypto = require('node:crypto');
 const { execFileSync } = require('node:child_process');
 const ROOT = path.resolve(__dirname, '..');
-const SKIP = new Set(['.git', '.vercel', '.codegraph', 'node_modules', '.cache', '.DS_Store']);
+const SKIP = new Set([
+    '.git',
+    '.vercel',
+    '.codegraph',
+    'node_modules',
+    '.cache',
+    '.DS_Store',
+    // Not production inputs. Hashing them made every Vercel deploy reread
+    // backups, screenshots, CMS copies, and agent scratch.
+    'backups',
+    'analysis',
+    'screenshots',
+    'todos',
+    'docs',
+    'plans',
+    'pipeline',
+    'tests',
+    'cms',
+    '.claude',
+    '.agents',
+    '.factory',
+    '.opencode',
+    '.playwright-mcp',
+    '.audit',
+    'Airbnb wins',
+    'design-explorations',
+]);
 const digest = data => crypto.createHash('sha256').update(data).digest('hex');
 function funnel(file) {
   return file === 'str-opportunity.html' || /^str-opportunity\/assets\/member-stories\/[^/]+\.(png|jpe?g|webp|gif|svg|json)$/.test(file);

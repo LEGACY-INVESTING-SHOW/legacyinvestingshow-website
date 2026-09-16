@@ -284,9 +284,6 @@ pages were deleted because they were generic programmatic pages Google would not
 - Integrate transcript service (youtube-transcript-api, AssemblyAI, or Whisper)
 - Configure cron job to run weekly
 
-### `scripts/build-missing-posts.js`
-**Purpose:** One-off script to generate HTML for markdown files missing HTML versions
-
 ## YouTube Video Content System
 
 ### Video-to-Blog Workflow
@@ -512,8 +509,7 @@ legacyinvestingshow-website/
 │
 ├── templates/                    # HTML templates
 │   ├── blog-post.html           # Blog post template
-│   ├── tax-strategy.html        # Tax strategy template
-│   └── picture-element.html     # Responsive image template
+│   └── tax-strategy.html        # Tax strategy template
 │
 ├── scripts/                      # Build scripts
 │   ├── build-blog.js            # Main blog generator
@@ -521,7 +517,6 @@ legacyinvestingshow-website/
 │   ├── generate-sitemap.js      # Sitemap generator
 │   ├── generate-rss.js          # RSS feed generator
 │   ├── youtube-to-blog.js       # YouTube automation
-│   └── build-missing-posts.js   # One-off blog generator
 │
 ├── assets/
 │   ├── css/
@@ -651,7 +646,6 @@ npm run start
 
 ### Missing Blog Posts
 - Check `content/blog/` for markdown files
-- Run `node scripts/build-missing-posts.js` to find gaps
 - Verify frontmatter is valid YAML
 
 ### Styling Issues
@@ -753,12 +747,12 @@ For this website, replace `<project>` with `legacyinvestingshow`.
 
 ## Cursor Cloud specific instructions
 
-This is a static site (HTML + Tailwind CSS v3 + Node CommonJS build scripts) plus an Eleventy CMS workspace in `cms/`. There is no application server or database. The startup update script runs `npm install` at the repo root and `npm install --prefix cms`; both are required because `cms/` has its own `package.json` and the full build depends on Eleventy.
+This is a static site (HTML + Tailwind CSS v3 + Node CommonJS build scripts) plus an Eleventy CMS workspace in `cms/`. There is no application server or database. The startup update script runs `npm install` at the repo root and `npm install --prefix cms`. CMS install is only required for the optional `npm run cms:verify` check, not for `npm run build`.
 
 Standard commands live in `package.json` scripts and the `## Build & Development Commands` section above. Non-obvious caveats for future agents:
 
 - **Run the site in dev:** start `npm run dev` (Tailwind watch, rebuilds `assets/css/styles.css`) and `npm run start` (`npx serve .`, serves the repo root at `http://localhost:3000`) in two separate long-running terminals. `npm run start` serves whatever static HTML already exists — it does not build; run the relevant `build:*` step first if you changed source.
 - **Lint/test are lightweight:** `npm run lint` is just `node --check` syntax checks on a couple of scripts, and `npm run test` runs `node --test tests/*.test.js` (a few unit tests). Neither covers the generated HTML.
-- **`npm run build` runs the entire SEO pipeline** (CSS, blog, full `cms:verify` Eleventy chain, tax strategies, programmatic pages, sitemap, RSS, etc.) and rewrites hundreds of generated HTML files plus `sitemap*.xml` and `feed.xml`. Expect a very large `git diff` after a build; only commit generated files intentionally, never as a side effect of unrelated work.
+- **`npm run build` is the Vercel production chain** (CSS, blog generator, tax strategies, sitemap, RSS, asset hashing). It does **not** run the Eleventy `cms:verify` / `cms:publish:posts` republish. Use `npm run cms:verify` locally when you need markdown parity and the Eleventy smoke check. Expect a large `git diff` after a build; only commit generated files intentionally.
 - **Harmless build warning:** `build:tools` (`import-calculators.js`) logs `calculator app not found at /Users/deveshdhardubey/calcs2; keeping committed tools/ artifacts.` This is expected in cloud/CI — that path only exists on the original author's machine. The step keeps the committed `tools/` artifacts and does not fail the build.
-- **CMS build wipes and regenerates** `cms/_site/blog` and republishes into `blog/*.html`; `cms:verify` enforces byte-level parity between `content/blog/*.md` (canonical) and `cms/src/blog/*.md`. Edit canonical markdown in `content/blog/`, not the CMS copies.
+- **Canonical blog markdown** is `content/blog/*.md`. `cms:sync:blog` copies those files into `cms/src/blog/` for the optional Eleventy check; do not edit the CMS copies.

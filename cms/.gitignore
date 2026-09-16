@@ -1,5 +1,6 @@
 node_modules/
 _site/
+src/blog/*.md
 .cache/
 .DS_Store
 npm-debug.log*

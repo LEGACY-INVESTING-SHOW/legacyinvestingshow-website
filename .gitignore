@@ -45,6 +45,7 @@ pipeline/runs/*
 .worktrees/
 cms/node_modules/
 cms/_site/
+cms/src/blog/*.md
 
 # Package lock files (optional - uncomment if not using)
 # package-lock.json

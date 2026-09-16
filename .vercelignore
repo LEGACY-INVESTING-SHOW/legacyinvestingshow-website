@@ -1,0 +1,29 @@
+# Source, agent scratch, and backups are not public site files.
+# The build still reads them from the git checkout; this only
+# keeps them out of the Vercel output upload.
+
+backups
+screenshots
+analysis
+todos
+docs
+plans
+pipeline
+content
+scripts
+templates
+cms
+tests
+data
+.claude
+.agents
+.factory
+.opencode
+.playwright-mcp
+.audit
+.github
+design-explorations
+Airbnb wins
+
+*.md
+!lx/**/*.md
