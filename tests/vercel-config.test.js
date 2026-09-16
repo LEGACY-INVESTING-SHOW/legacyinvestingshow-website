@@ -66,6 +66,8 @@ test('duplicate and removed URLs redirect permanently to their canonical page', 
     '/blog/legacy-investing-show-reviews-complaints': '/reviews',
     '/blog/is-legacy-investing-show-legit': '/reviews',
     '/blog/faq-review': '/reviews',
+    '/lwbprogram': '/legacy-wealth-blueprint',
+    '/funnels/lwbprogram': '/legacy-wealth-blueprint',
   };
 
   for (const [source, destination] of Object.entries(expected)) {
