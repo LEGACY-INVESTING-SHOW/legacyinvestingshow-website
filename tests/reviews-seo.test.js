@@ -306,3 +306,23 @@ test('every JSON-LD block parses and every sitemap URL resolves', () => {
     assert.ok(result.blocks > 0, 'there is JSON-LD to check');
     assert.ok(result.urls > 100, 'the sitemaps are populated');
 });
+
+test('the reviews page keeps one H1, named proof, and contextual number headlines', () => {
+    const page = read('reviews.html');
+
+    assert.equal((page.match(/<h1\b/g) || []).length, 1, 'one H1');
+    assert.ok(!page.includes('class="opener__key"'), 'the Trustpilot opener line is gone');
+    assert.ok(!page.includes('Rated 4.2 on Trustpilot across 66 reviews. Everything below'),
+        'the rating sentence is not the opener');
+    assert.match(page, /class="opener__lede"/);
+    assert.ok(!page.includes('class="rv-proof"'), 'opener chips are gone');
+    assert.ok(!page.includes('Watch client case studies'), 'opener CTAs are gone');
+    assert.match(page, /<ul class="rv-jump__list">/);
+    assert.match(page, /\$20,000 in taxes saved/);
+    assert.match(page, /\$90,000 in cash flow/);
+    assert.match(page, /Stephanie Dailey/);
+    assert.match(page, /66 reviews on Trustpilot/);
+    assert.match(page, /application\/ld\+json/);
+    assert.match(page, /"@type": "FAQPage"/);
+    assert.match(page, /cssSelector": \[\s*"\.opener__lede"/);
+});
