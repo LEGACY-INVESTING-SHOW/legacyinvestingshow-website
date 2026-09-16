@@ -29,7 +29,7 @@
     transform: translateX(-50%);
     z-index: 9999;
     padding: 0.875rem 1.75rem;
-    border-radius: 999px;
+    border-radius: 6px;
     background: var(--forest);
     color: var(--paper);
     font-weight: 600;
@@ -211,7 +211,7 @@
 .calculation-line--total,
 .ledger--total {
     border-bottom: 0;
-    border-top: 2px solid var(--gold);
+    border-top: 1px solid var(--ink);
     margin-top: 0.25rem;
     padding-top: 0.625rem;
 }

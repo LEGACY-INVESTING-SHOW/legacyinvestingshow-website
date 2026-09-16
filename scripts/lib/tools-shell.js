@@ -50,7 +50,7 @@ function renderToolsChrome(activeHref = '/tools') {
 function renderToolsHeadLinks() {
     return [
         renderHeadAssets(),
-        '<meta name="theme-color" content="#FBF8F1">',
+        '<meta name="theme-color" content="#F6F5F0">',
     ].join('\n    ');
 }
 
@@ -120,7 +120,7 @@ function ensureHeadAssets(html) {
         next = next.replace(/<\/head>/i, `    <link rel="stylesheet" href="${BRIDGE_HREF}">\n</head>`);
     }
     if (!next.includes('name="theme-color"')) {
-        next = next.replace(/<\/head>/i, '    <meta name="theme-color" content="#FBF8F1">\n</head>');
+        next = next.replace(/<\/head>/i, '    <meta name="theme-color" content="#F6F5F0">\n</head>');
     }
     return next;
 }

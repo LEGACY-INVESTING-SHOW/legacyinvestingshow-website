@@ -248,7 +248,7 @@
 
 .blog-cat-item a:hover {
     text-decoration: underline;
-    text-decoration-color: var(--gold);
+    text-decoration-color: currentColor;
     text-underline-offset: 3px;
 }
 
@@ -296,7 +296,7 @@
     line-height: 1.4;
     color: var(--ink-soft);
     text-decoration: none;
-    border-radius: 999px;
+    border-radius: 6px;
 }
 
 a.blog-page-num:hover {

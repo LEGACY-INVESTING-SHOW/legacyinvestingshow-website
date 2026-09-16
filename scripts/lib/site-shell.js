@@ -3,7 +3,6 @@ const DEFAULT_GTM_CONTAINER_ID = 'GTM-KQ4R2LKP';
 const CURRENT_YEAR = new Date().getFullYear();
 
 const PRIMARY_NAV_ITEMS = [
-  { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/tax-strategies', label: 'Tax Strategies' },
   { href: '/compare', label: 'Compare' },
