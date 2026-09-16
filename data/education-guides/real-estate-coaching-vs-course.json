@@ -3,29 +3,39 @@
   "slug": "real-estate-coaching-vs-course",
   "title": "Real Estate Coaching vs a Course",
   "h1": "Real estate coaching vs a self-paced course",
-  "keyLine": "Buy a course for a map. Buy coaching when a real decision is costing you money.",
-  "description": "When a self-paced real estate course is enough, when coaching is worth it, FTC warning signs, and questions to ask before a sales call.",
+  "keyLine": "Buy a course for a map. Buy coaching when a real decision is costing you money. Our plan is both, for 12 months.",
+  "description": "When a real estate course is enough, when coaching is worth it, and how Legacy Wealth Blueprint sits as Preston Seo's 12-month plan. No public tuition.",
   "query": "real estate coaching vs self-paced course",
-  "answer": "A course is recorded lessons you play on your own. Coaching is a person who answers you and, if it is real, looks at your deal. Most busy people should buy a course, or use free podcasts, until they have a listing or a lease in front of them. Coaching costs more because you are buying hours. If a seller will not say the price until a call, assume it is high. The FTC warns that real estate coaching pitches often use fake wins and rush.",
-  "criteriaIntro": "This is a format guide, not a vendor ranking. We cite the FTC and public prices only where a named product needs an example.",
+  "answer": "A course is recorded lessons you play on your own. Coaching is a person who answers you and, if it is real, looks at your deal. Most busy people should buy a course, or use free podcasts, until they have a listing or a lease in front of them. Legacy Wealth Blueprint is Preston Seo's 12-month wealth plan: curriculum plus a dedicated guide and weekly calls, built from a corporate job, a house-hacked duplex, and a $15M+ portfolio with his wife. It is coaching plus a written order for tax, debt, and investing, not a deal-finding concierge. We do not publish our tuition here. If a seller will not say their price until a call, assume it is high. The FTC warns that real estate coaching pitches often use fake wins and rush.",
+  "criteriaIntro": "This is a format guide with our wealth plan as the coaching example, not a vendor ranking.",
   "criteria": [
     "Course vs coaching vs community, defined in plain words.",
     "FTC warning signs copied from a primary consumer page.",
-    "No invented close rates or student income."
+    "Blueprint described from our membership page. No invented close rates.",
+    "We do not publish our fee here."
   ],
   "blocks": [
     {
       "type": "table",
       "id": "format-table",
       "heading": "What you are actually buying",
-      "caption": "Course, community, and coaching do different jobs.",
+      "caption": "Course, community, and coaching do different jobs. Blueprint is coaching plus curriculum.",
       "wide": true,
       "headers": ["Format", "You get", "Works when", "Fails when"],
       "rows": [
         ["Self-paced course", "Videos, PDFs, maybe a forum", "You can schedule 3 hours a week", "You need someone to say 'do not buy this house'"],
         ["Community membership", "Peers plus some lessons", "You learn by asking and watching deals", "The room is all beginners guessing"],
         ["Coaching", "Scheduled access to a person", "You have a live decision this month", "The 'coach' is a closer, or replies take weeks"],
-        ["Done-with-you / concierge", "They sit in deals with you", "You have capital and local legal help", "You wanted a $200 course"]
+        ["Written wealth plan (our Blueprint)", "A 12-month snapshot, a dedicated guide, weekly calls, a CPA brief", "Tax, debt, and investing need one order", "You only wanted a $200 rental video"]
+      ]
+    },
+    {
+      "type": "prose",
+      "id": "our-place",
+      "heading": "Where Preston and Blueprint sit",
+      "paragraphs": [
+        "[Preston Seo](/about) founded Legacy Investing Show after leaving a corporate job, house-hacking a duplex, and building a $15M+ portfolio with his wife. [Legacy Wealth Blueprint](/legacy-wealth-blueprint) is a 12-month plan with a Wealth Strategy Snapshot, a dedicated guide, weekly live coaching with replays, the Wealth Circle, an optional prior-year return review, a CPA Implementation Brief, 100+ lessons, and a spouse seat. You keep your CPA. It is not a deal-finding concierge. Airbnb training is a separate offer, not Blueprint.",
+        "Read [what's in Blueprint](/compare/legacy-wealth-blueprint-what-to-know) and [reviews](/reviews) before a call. Read [courses for people with a full-time job](/blog/best-real-estate-investing-courses-full-time-job) for other named vendors with public prices."
       ]
     },
     {
@@ -44,28 +54,20 @@
       "items": [
         "Use free podcasts for two weeks. If you cannot name a model, do not buy coaching.",
         "If you want structure, buy a course with a published price and a refund window.",
-        "Buy coaching only when a live listing, lease, or partner dispute is on the table.",
+        "Buy coaching only when a live listing, lease, or partner dispute is on the table, or when you want a 12-month written wealth order.",
         "Get the total price, refund rules, and who your coach is, in writing, before a card is charged."
-      ]
-    },
-    {
-      "type": "prose",
-      "id": "our-place",
-      "heading": "Where we sit",
-      "paragraphs": [
-        "Legacy Wealth Blueprint is a 12-month plan with a guide and weekly calls. It is coaching plus curriculum. It is not a deal-finding concierge. Airbnb Ascension is a separate short-term rental program. Prices we publish live on this site. Read [courses for people with a full-time job](/blog/best-real-estate-investing-courses-full-time-job) for other named vendors with public prices."
       ]
     }
   ],
   "whoFits": [
     "You are on a sales call and you need a way to say yes to a course and no to coaching, or the reverse.",
-    "You have a day job and limited hours."
+    "You have a day job and limited hours and you are comparing that with our 12-month plan."
   ],
   "whoSkips": [
     "You want us to pick Sean vs Preston or BNB Formula vs our program. Those live in older blog comparisons. This page is the format rule.",
     "You already know you need a local attorney and a CPA, not a coach."
   ],
-  "costIntro": "Format examples with public prices. Many coaches hide the number. That is data.",
+  "costIntro": "Format examples with public competitor prices. Our tuition stays off this table.",
   "costCaption": "Example public prices, not a shopping cart.",
   "costRows": [
     {
@@ -90,30 +92,23 @@
       "sourceUrl": "https://buy.subto.com/"
     },
     {
-      "name": "BetterLife Tribe",
-      "price": "Not published on the pages we opened",
-      "asOf": "2026-09-15",
-      "sourceLabel": "abetterlife.com",
-      "sourceUrl": "https://abetterlife.com/home-2/"
-    },
-    {
       "name": "Legacy Wealth Blueprint",
-      "price": "$9,800 cash or card, as we publish on this site",
-      "asOf": "2026-09-15",
-      "sourceLabel": "Legacy Wealth Blueprint cost",
-      "sourceUrl": "https://www.legacyinvestingshow.com/compare/legacy-wealth-blueprint-cost"
+      "price": "Not published here. Ask on a strategy call.",
+      "asOf": "2026-09-16",
+      "sourceLabel": "Legacy Wealth Blueprint",
+      "sourceUrl": "https://www.legacyinvestingshow.com/legacy-wealth-blueprint"
     }
   ],
   "questionsBeforeBuying": [
     "Is there a live deal, or am I buying motivation?",
+    "Do I need deal coaching, or a 12-month wealth order?",
     "Who is the coach by name, and how many hours do I get?",
     "What is the refund rule if they go quiet?",
-    "Can I speak to two students who are not in the ads?",
     "Will I still need a local attorney after I pay you?"
   ],
   "nextSteps": [
     "Read the FTC coaching page before any call.",
-    "If you work full time, use the [full-time job course list](/blog/best-real-estate-investing-courses-full-time-job).",
+    "Read [what's in Blueprint](/compare/legacy-wealth-blueprint-what-to-know) if the job is a written plan.",
     "If tax is the real block, switch to [tax course vs a CPA](/compare/tax-course-vs-cpa)."
   ],
   "faqs": [
@@ -123,11 +118,11 @@
     },
     {
       "q": "Why do coaches hide the price?",
-      "a": "High-ticket sales often use a call. That can be honest. It can also hide the number until you are tired. Ask for the total in the first ten minutes."
+      "a": "High-ticket sales often use a call. That can be honest. It can also hide the number until you are tired. Ask for the total in the first ten minutes. We do the same: confirm Blueprint on a strategy call."
     },
     {
       "q": "Does Legacy Investing Show sell coaching?",
-      "a": "Yes. Blueprint includes a guide and weekly calls for 12 months. We tell you that up front. See [Legacy Wealth Blueprint](/legacy-wealth-blueprint) and [reviews](/reviews)."
+      "a": "Yes. Blueprint includes a dedicated guide and weekly calls for 12 months. See [what's in Blueprint](/compare/legacy-wealth-blueprint-what-to-know) and [reviews](/reviews)."
     }
   ],
   "sources": [
@@ -142,9 +137,14 @@
       "asOf": "2026-09-15"
     },
     {
-      "label": "KenPro store",
-      "url": "https://kenmcelroy.com/kenprostore/",
-      "asOf": "2026-09-15"
+      "label": "About Preston Seo",
+      "url": "https://www.legacyinvestingshow.com/about",
+      "asOf": "2026-09-16"
+    },
+    {
+      "label": "Legacy Wealth Blueprint",
+      "url": "https://www.legacyinvestingshow.com/legacy-wealth-blueprint",
+      "asOf": "2026-09-16"
     },
     {
       "label": "SubTo Accelerator checkout",
@@ -154,18 +154,17 @@
     }
   ],
   "related": [
-    { "href": "/compare/biggerpockets-what-to-know", "label": "What to know before BiggerPockets Pro" },
-    { "href": "/compare/subto-alternatives", "label": "SubTo alternatives" },
+    { "href": "/compare/legacy-wealth-blueprint-what-to-know", "label": "What's in Legacy Wealth Blueprint" },
+    { "href": "/compare/subto-alternatives", "label": "SubTo vs our wealth plan" },
     { "href": "/blog/best-real-estate-investing-courses-full-time-job", "label": "Courses for people with a full-time job" },
-    { "href": "/blog/sean-rakidzich-vs-preston-seo-airbnb-training", "label": "Sean Rakidzich vs Preston Seo (Airbnb training)" },
-    { "href": "/compare/tax-course-vs-cpa", "label": "Tax course vs a CPA" }
+    { "href": "/about", "label": "Preston Seo's story" }
   ],
   "cta": {
     "title": "If you only needed a map",
-    "body": "Use the free tools and the tax library first. Buy hours only when a live decision is on the calendar.",
-    "primaryHref": "/tools",
-    "primaryLabel": "Free tools",
-    "secondaryHref": "/legacy-wealth-blueprint",
-    "secondaryLabel": "What Blueprint includes"
+    "body": "Use the free tools and the tax library first. Buy hours only when a live decision is on the calendar, or when you want Preston's 12-month order.",
+    "primaryHref": "/legacy-wealth-blueprint",
+    "primaryLabel": "What Blueprint includes",
+    "secondaryHref": "/tools",
+    "secondaryLabel": "Free tools"
   }
 }

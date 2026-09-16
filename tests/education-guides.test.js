@@ -115,8 +115,9 @@ test('education guide data loads with unique metadata and required types', () =>
     assert.ok(pages.some((page) => page.slug === 'wealth-plan-checklist-high-earners'));
     assert.ok(pages.some((page) => page.slug === 'money-guy-foo-vs-ramsey-baby-steps'));
     assert.ok(pages.some((page) => page.slug === 'wealthability-alternatives'));
-    assert.ok(pages.some((page) => page.slug === 'legacy-wealth-blueprint-cost'));
+    assert.ok(pages.some((page) => page.slug === 'legacy-wealth-blueprint-what-to-know'));
     assert.ok(pages.some((page) => page.slug === 'anderson-platinum-vs-tax-course'));
+    assert.ok(!pages.some((page) => page.slug === 'legacy-wealth-blueprint-cost'));
 });
 
 test('education guide HTML carries Article schema, not Review schema', () => {
@@ -180,7 +181,7 @@ test('persona pages point at matching education compare guides', () => {
         ['tax-strategies/for/w2-employees.html', '/compare/401k-vs-rental-property'],
         ['tax-strategies/for/w2-employees.html', '/compare/money-guy-foo-vs-ramsey-baby-steps'],
         ['tax-strategies/for/high-income-earners.html', '/compare/best-wealth-education-high-earners'],
-        ['tax-strategies/for/high-income-earners.html', '/compare/legacy-wealth-blueprint-cost'],
+        ['tax-strategies/for/high-income-earners.html', '/compare/legacy-wealth-blueprint-what-to-know'],
         ['tax-strategies/for/real-estate-investors.html', '/compare/biggerpockets-alternatives'],
         ['tax-strategies/for/real-estate-investors.html', '/compare/anderson-platinum-vs-tax-course'],
         ['tax-strategies/for/airbnb-hosts.html', '/compare/short-term-rental-vs-long-term-rental'],
@@ -207,6 +208,8 @@ test('generated education pages and hub are on disk after a compare build', () =
     assert.match(hub, /id="the-guides"/);
     assert.match(hub, /biggerpockets-alternatives/);
     assert.match(hub, /subto-alternatives/);
+    assert.match(hub, /legacy-wealth-blueprint-what-to-know/);
+    assert.doesNotMatch(hub, /legacy-wealth-blueprint-cost/);
     assert.match(hub, /cost-segregation-vs-bonus-depreciation/);
     assert.match(hub, /"@type":"CollectionPage"/);
     assert.doesNotMatch(hub, /\/lx\//);
@@ -216,4 +219,32 @@ test('generated education pages and hub are on disk after a compare build', () =
     for (const page of pages) {
         assert.ok(itemUrls.includes(page.slug), `hub schema missing ${page.slug}`);
     }
+});
+
+test('education guides do not publish Legacy Wealth Blueprint tuition', () => {
+    const { pages } = loadEducationGuides();
+    const leak = /Splitit|\$10,800|Course plus AI|\$2,497|we publish \$9,800|Blueprint at \$9,800|cash or card, as we publish|legacy-wealth-blueprint-cost/i;
+
+    for (const page of pages) {
+        const blob = collectText(page).join('\n');
+        assert.doesNotMatch(blob, leak, `LIS tuition leak in ${page.slug}`);
+
+        page.costRows.forEach((row) => {
+            if (/legacy wealth blueprint/i.test(row.name)) {
+                assert.doesNotMatch(
+                    row.price,
+                    /\$[\d,]+/,
+                    `Blueprint cost row on ${page.slug} still has a dollar figure: ${row.price}`
+                );
+                assert.match(
+                    row.price,
+                    /not published/i,
+                    `Blueprint cost row on ${page.slug} should say tuition is not published`
+                );
+            }
+        });
+    }
+
+    const costHtml = path.join(ROOT, 'compare', 'legacy-wealth-blueprint-cost.html');
+    assert.ok(!fs.existsSync(costHtml), 'old Blueprint cost HTML should be deleted');
 });

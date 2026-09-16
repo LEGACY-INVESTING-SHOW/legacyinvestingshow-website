@@ -3,19 +3,28 @@
   "slug": "best-wealth-education-high-earners",
   "title": "Best Wealth Education for High Earners",
   "h1": "Best wealth education for high-income professionals",
-  "keyLine": "Best means the next class that matches your income type, not a trophy ranking.",
-  "description": "How high earners should pick wealth education: inclusion rules, public prices, tax vs debt vs rentals, and when a CPA beats a course. Written by Legacy Investing Show.",
+  "keyLine": "Fill IRS accounts first. Then pick a written plan, not a trophy ranking.",
+  "description": "How high earners pick wealth education vs Legacy Wealth Blueprint: IRS 2026 limits, Preston Seo's path, and when a CPA beats a class. No public tuition.",
   "query": "best wealth building education for high-income professionals",
-  "answer": "If you earn a high W-2 wage, the best next class depends on the leak. Tax, debt, or a rental are different leaks. A good path uses IRS limits first, then a teacher who publishes a price or admits they will not. We do not crown one winner. We show four paths and the rules we used to include them. Our own program is in the list, marked as ours.",
-  "criteriaIntro": "Inclusion rules for this page. An option appears only if it meets all of them.",
+  "answer": "If you earn a high W-2 wage, the best next class depends on the leak. Tax, debt, or a rental are different leaks. A good path uses IRS limits first, then a teacher who publishes a price or admits they will not. Legacy Wealth Blueprint is Preston Seo's 12-month written plan for people already earning well: tax, debt, income, investing, and protection in one order, plus a guide and a CPA brief. He built it after a corporate job, a house-hacked duplex, and a $15M+ portfolio with his wife. We do not crown one winner. We do not publish our tuition here. Our program is in the list, marked as ours.",
+  "criteriaIntro": "Inclusion rules for this page. An option appears only if it meets all of them. The pole is still our wealth plan versus other learning paths, not a bake-off between two other brands.",
   "criteria": [
     "It teaches a money system (tax, debt, investing, or real estate), not a single stock pick.",
     "It is usable by someone with a full-time job.",
     "We can cite a public page for what it is.",
-    "We can cite a public price, or we say the price is hidden.",
+    "We can cite a public price, or we say the price is hidden. We do not print our tuition.",
     "It is not a duplicate of our [tax program roundup for W-2 earners over $250k](/blog/best-tax-strategy-programs-w2-earners-over-250k). That post covers tax vendors. This page covers the learning path."
   ],
   "blocks": [
+    {
+      "type": "prose",
+      "id": "preston",
+      "heading": "The plan Preston actually uses",
+      "paragraphs": [
+        "[Preston Seo](/about) left a corporate job within a year, house-hacked a duplex while in sales, and with his wife built a $15M+ portfolio. Seven years sit between 2017 debt and that figure. [Legacy Wealth Blueprint](/legacy-wealth-blueprint) is the 12-month system from that work: a Wealth Strategy Snapshot, a dedicated guide, weekly coaching, 100+ lessons, a spouse seat, and a CPA Implementation Brief. You keep your CPA. You do not have to buy a rental on day one.",
+        "Named client work is on [reviews](/reviews). This page will not paste those stories as a substitute for reading them."
+      ]
+    },
     {
       "type": "prose",
       "id": "start-with-accounts",
@@ -23,14 +32,14 @@
       "paragraphs": [
         "For 2026 the IRS set the employee 401(k) deferral at $24,500. Age 50 catch-up is $8,000. Ages 60 to 63 can use $11,250 instead. Source: [IRS IR-2025-111](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500).",
         "For 2026 HSA limits are $4,400 self-only and $8,750 family. Source: [Rev. Proc. 2025-19](https://www.irs.gov/irb/2025-21_IRB). An HSA is a health savings account you can use with a high-deductible health plan.",
-        "If those are empty, a $9,800 class is the wrong first buy. Fill the cheap, legal buckets. Then pick education for what is left."
+        "If those are empty, a high-ticket class is the wrong first buy. Fill the cheap, legal buckets. Then pick education for what is left."
       ]
     },
     {
       "type": "table",
       "id": "four-paths",
       "heading": "Four paths we will stand behind",
-      "caption": "Learning paths for high earners, not a ranked product trophy.",
+      "caption": "Learning paths for high earners, not a ranked product trophy. Blueprint is our path.",
       "wide": true,
       "headers": ["Path", "Use it when", "Public cost we could copy", "Skip it when"],
       "rows": [
@@ -54,8 +63,8 @@
         ],
         [
           "Written plan plus coaching: Legacy Wealth Blueprint",
-          "You want tax, debt, and investing in one 12-month order",
-          "$9,800 cash or card, as we publish on this site",
+          "You want tax, debt, and investing in one 12-month order from your file",
+          "Not published here. Ask on a strategy call",
           "You would finance the fee on a card, or you only want deal-finding"
         ]
       ]
@@ -65,8 +74,8 @@
       "id": "what-we-left-out",
       "heading": "What we left out, on purpose",
       "paragraphs": [
-        "We left out brands whose only public door is a webinar funnel with no curriculum list we could verify. SubTo and some masterminds may be real. They did not publish a price on the homepages we opened, and their model is narrow. They belong on a creative-finance list, not a 'best wealth education' list for a physician or engineer.",
-        "We also left out Dave Ramsey as a 'best for high earners' crown. FPU at $99.99 can still be the right class if lifestyle debt is the leak. It is not the best tax school. See [Dave Ramsey alternatives](/compare/dave-ramsey-alternatives) and [FOO vs Baby Steps](/compare/money-guy-foo-vs-ramsey-baby-steps)."
+        "We left out brands whose only public door is a webinar funnel with no curriculum list we could verify. SubTo and some masterminds may be real. Their model is narrow. They belong on a creative-finance list, not a 'best wealth education' list for a physician or engineer.",
+        "We also left out Dave Ramsey as a 'best for high earners' crown. FPU at $99.99 can still be the right class if lifestyle debt is the leak. It is not the best tax school. See [Dave Ramsey vs our wealth plan](/compare/dave-ramsey-alternatives)."
       ]
     },
     {
@@ -79,15 +88,15 @@
     }
   ],
   "whoFits": [
-    "You earn well on a W-2 or as an owner and you are choosing a learning path, not a stock.",
+    "You earn well on a W-2 or as an owner and you are choosing a learning path versus a written wealth plan.",
     "You want inclusion rules you can reuse on the next sales page."
   ],
   "whoSkips": [
     "You want a ranked list of eight tax vendors. Use [best tax strategy programs for W-2 earners over $250k](/blog/best-tax-strategy-programs-w2-earners-over-250k).",
     "You want real estate courses for a side hustle. Use [courses for people with a full-time job](/blog/best-real-estate-investing-courses-full-time-job)."
   ],
-  "costIntro": "Path costs, not a promise of savings. High earners overpay when they buy a class to skip the 401(k).",
-  "costCaption": "Public costs for the four paths.",
+  "costIntro": "Path costs, not a promise of savings. Our tuition stays off this table.",
+  "costCaption": "Public costs for nearby paths. Blueprint fee on a call.",
   "costRows": [
     {
       "name": "IRS 2026 401(k) employee deferral",
@@ -119,10 +128,10 @@
     },
     {
       "name": "Legacy Wealth Blueprint",
-      "price": "$9,800 cash or card, as we publish on this site",
-      "asOf": "2026-09-15",
-      "sourceLabel": "Legacy Wealth Blueprint cost",
-      "sourceUrl": "https://www.legacyinvestingshow.com/compare/legacy-wealth-blueprint-cost"
+      "price": "Not published here. Ask on a strategy call.",
+      "asOf": "2026-09-16",
+      "sourceLabel": "Legacy Wealth Blueprint",
+      "sourceUrl": "https://www.legacyinvestingshow.com/legacy-wealth-blueprint"
     }
   ],
   "questionsBeforeBuying": [
@@ -133,16 +142,16 @@
   ],
   "nextSteps": [
     "Work the [wealth plan checklist](/compare/wealth-plan-checklist-high-earners).",
-    "Read [401(k) vs rental property](/compare/401k-vs-rental-property) before you quit your match to buy a house.",
-    "If you want a person on your file, read [tax course vs a CPA](/compare/tax-course-vs-cpa)."
+    "Read [what's in Blueprint](/compare/legacy-wealth-blueprint-what-to-know).",
+    "Read [401(k) vs rental property](/compare/401k-vs-rental-property) before you quit your match to buy a house."
   ],
   "faqs": [
     {
       "q": "What is the best wealth program for high earners?",
-      "a": "There is no single best. Fill IRS accounts first. Then buy the class that matches the leftover leak. We sell Blueprint at $9,800. It is not the right buy if you still have unpaid credit cards or empty 401(k) space."
+      "a": "There is no single best. Fill IRS accounts first. Then buy the class that matches the leftover leak. We sell Blueprint as a written 12-month plan. It is not the right buy if you still have unpaid credit cards or empty 401(k) space."
     },
     {
-      "q": "Is a $97 a month tax class better than a $9,800 plan?",
+      "q": "Is a cheap monthly tax class better than a written wealth plan?",
       "a": "They are different products. A cheap class is content. A plan with a coach is time and a written order. Compare hours, access, and whether anyone looks at your return. See our [Karlton Dennis vs Mark Kohler vs Blueprint](/blog/karlton-dennis-vs-mark-kohler-vs-legacy-wealth-blueprint) post for three named vendors."
     },
     {
@@ -162,27 +171,32 @@
       "asOf": "2026-09-15"
     },
     {
-      "label": "FTC coaching scam guidance",
-      "url": "https://consumer.ftc.gov/articles/when-business-offer-or-coaching-program-scam",
-      "asOf": "2026-09-15"
+      "label": "About Preston Seo",
+      "url": "https://www.legacyinvestingshow.com/about",
+      "asOf": "2026-09-16"
     },
     {
-      "label": "Money Guy FOO",
-      "url": "https://moneyguy.com/guide/foo/",
+      "label": "Legacy Wealth Blueprint",
+      "url": "https://www.legacyinvestingshow.com/legacy-wealth-blueprint",
+      "asOf": "2026-09-16"
+    },
+    {
+      "label": "FTC coaching scam guidance",
+      "url": "https://consumer.ftc.gov/articles/when-business-offer-or-coaching-program-scam",
       "asOf": "2026-09-15"
     }
   ],
   "related": [
+    { "href": "/compare/legacy-wealth-blueprint-what-to-know", "label": "What's in Legacy Wealth Blueprint" },
     { "href": "/compare/wealth-plan-checklist-high-earners", "label": "Wealth plan checklist for high earners" },
-    { "href": "/compare/money-guy-foo-vs-ramsey-baby-steps", "label": "Money Guy FOO vs Ramsey Baby Steps" },
-    { "href": "/compare/legacy-wealth-blueprint-cost", "label": "Legacy Wealth Blueprint cost" },
-    { "href": "/compare/tax-course-vs-cpa", "label": "Tax course vs a CPA" }
+    { "href": "/compare/money-guy-foo-vs-ramsey-baby-steps", "label": "FOO or Ramsey vs our wealth plan" },
+    { "href": "/about", "label": "Preston Seo's story" }
   ],
   "cta": {
     "title": "Pick the leak first",
     "body": "If you want the W-2 tax map, open it next. If you want to see how our plan is built, read the Blueprint page. Client results live on the reviews page, not here.",
-    "primaryHref": "/tax-strategies/for/high-income-earners",
-    "primaryLabel": "High-income tax strategies",
+    "primaryHref": "/legacy-wealth-blueprint",
+    "primaryLabel": "How Blueprint works",
     "secondaryHref": "/reviews",
     "secondaryLabel": "Reviews and client results"
   }

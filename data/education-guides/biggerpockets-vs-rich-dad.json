@@ -1,34 +1,44 @@
 {
   "type": "vs",
   "slug": "biggerpockets-vs-rich-dad",
-  "title": "BiggerPockets vs Rich Dad",
-  "h1": "BiggerPockets vs Rich Dad",
-  "keyLine": "One is a toolbox. One is a story. Buy the one that matches the week you are in.",
-  "description": "A side-by-side of BiggerPockets and Rich Dad: format, public prices, who each fits, and what to do after the book. Written by Legacy Investing Show.",
-  "query": "BiggerPockets vs Rich Dad",
-  "answer": "BiggerPockets is a real estate community with free podcasts and a paid Pro plan for tools. Rich Dad is a brand around Robert Kiyosaki's book and later classes. Use Rich Dad when you still think a paycheck is the only path. Use BiggerPockets when you are ready to study a real listing. Most people need the book once, then a how-to. You rarely need to pay both at once.",
-  "criteriaIntro": "We compared what each brand publishes about itself, plus public prices we could copy. We did not sit in a paid coaching call for either brand.",
+  "title": "BiggerPockets or Rich Dad vs Our Wealth Plan",
+  "h1": "BiggerPockets or Rich Dad vs a written wealth plan",
+  "keyLine": "A forum and a book are starting tools. Our plan is a 12-month order for your file.",
+  "description": "BiggerPockets and Rich Dad compared with Legacy Wealth Blueprint: jobs, public competitor prices, and Preston Seo's wealth plan. We do not print our tuition.",
+  "query": "BiggerPockets vs a wealth plan",
+  "answer": "BiggerPockets is a real estate community with free podcasts and a paid Pro plan for tools. Rich Dad is a brand around Robert Kiyosaki's book. Both can start you. Neither writes a 12-month plan from your tax return. Legacy Wealth Blueprint is the plan Preston Seo teaches: tax, debt, income, investing, and protection in one order, plus a coach and a CPA brief. He built that after a corporate job, a house-hacked duplex, and a $15M+ portfolio with his wife. Use the book or the forum first. Use us when you want one written order, not another story.",
+  "criteriaIntro": "The comparison pole is our wealth plan, not a trophy between two other brands. Competitor prices come from pages we opened. Our tuition is not on this page.",
   "criteria": [
-    "Format, audience, and public price from pages we opened.",
-    "No star ratings and no fake 'winner' badge.",
-    "We say where our own program sits, which is neither a forum nor a parable."
+    "We describe BiggerPockets and Rich Dad from their public pages.",
+    "We describe Blueprint from our live membership page.",
+    "No star ratings. No fake winner badge.",
+    "We do not publish our fee here."
   ],
   "blocks": [
     {
+      "type": "prose",
+      "id": "preston",
+      "heading": "Where this comparison sits",
+      "paragraphs": [
+        "[Preston Seo](/about/preston-seo) did not build Legacy Investing Show as a BiggerPockets clone or a Rich Dad sequel. The [about page](/about) says he left a corporate job, studied taxes and cash flow, and with his wife built a $15M+ real estate portfolio. The system underneath that is what Blueprint sells: a written Wealth Strategy Snapshot, a dedicated guide, weekly coaching, and a brief you hand to your own CPA.",
+        "BiggerPockets helps you study deals. The Rich Dad book jogs how you see a paycheck. Those are useful. They are not the same job as a 12-month wealth plan."
+      ]
+    },
+    {
       "type": "table",
       "id": "side-by-side",
-      "heading": "Side by side",
-      "intro": "Read across one row. The 'edge' is the job, not a score.",
-      "caption": "BiggerPockets vs Rich Dad on jobs a buyer actually has.",
+      "heading": "Those brands vs our plan",
+      "intro": "Read across one row. The edge is the job, not a score.",
+      "caption": "Community or book on the left. Written wealth plan on the right.",
       "wide": true,
-      "headers": ["Question", "BiggerPockets", "Rich Dad", "Who it fits"],
+      "headers": ["Question", "BiggerPockets or Rich Dad", "Legacy Wealth Blueprint"],
       "rows": [
-        ["Main product", "Forums, podcasts, tools, optional Pro and classes", "A famous book, then digital offers and coaching funnels", "Book first if you need a mindset jolt"],
-        ["Cost to start", "Free forums and podcasts", "Price of the book, then $17 to $27 public digital offers", "Both have a cheap start"],
-        ["Paid tier we could copy", "Pro at $39 a month or $32.50 a month billed yearly", "Wealth Experts $17 a month after a trial; $27 video; coaching not listed", "Pro is a tool pass. Rich Dad coaching is a question mark"],
-        ["Teaches deal math", "Yes, calculators and analysis content", "Light. The book is not a spreadsheet class", "BiggerPockets for numbers"],
-        ["Teaches tax in depth", "Some guides and guests", "Tax-Free Wealth sits next door through Wheelwright", "Neither replaces your CPA"],
-        ["Community", "Large public forums", "Readers, then paid groups", "Forums if you want peer stories"]
+        ["Main product", "Forums, podcasts, and Pro tools, or a famous book plus later digital offers", "A written 12-month plan plus a coach, built from your numbers"],
+        ["Cost to start", "Free forums and the price of a book. Pro and $17 to $27 digital offers are public", "Tuition is not published here. Ask on a strategy call"],
+        ["Deal math", "BiggerPockets is strong. The book is not a spreadsheet class", "We use your file. Calculators on this site stay free either way"],
+        ["Tax in depth", "Some guides, or Tax-Free Wealth next door through Wheelwright", "A tax return review and a CPA Implementation Brief. You keep your CPA"],
+        ["Debt and payroll", "Not the center of either brand", "Part of the same 12-month order as investing"],
+        ["Who it is for", "People learning rentals, or people who still think a paycheck is the only path", "People who already earn well and want one order, not another forum"]
       ]
     },
     {
@@ -36,30 +46,30 @@
       "id": "how-to-pick",
       "heading": "How to pick this month",
       "paragraphs": [
-        "If you still believe your salary is the only asset you will ever have, read the book. Then stop. Do not buy a stack of Rich Dad sequels until you can explain one local rental in numbers.",
-        "If you can already explain cap rate in a sentence (that is yearly net rent divided by price), skip the parable and go to BiggerPockets or a calculator. Try our [rental cash flow tool](/tools/rental-property-cash-flow).",
-        "If your problem is a W-2 tax bill, neither brand is the center. Use [tax strategies for high-income earners](/tax-strategies/for/high-income-earners)."
+        "If you still believe your salary is the only asset you will ever have, read Rich Dad Poor Dad once. Then stop. Do not buy a stack of sequels until you can explain one local rental in numbers.",
+        "If you can already explain cap rate in a sentence (yearly net rent divided by price), use free BiggerPockets content or our [rental cash flow tool](/tools/rental-property-cash-flow). Pay for Pro only when a calculator or form is in your way every week. See [what to know before Pro](/compare/biggerpockets-what-to-know).",
+        "If the leak is a W-2 tax bill, debt, and investing at once, that is our lane. Read [what's in Blueprint](/compare/legacy-wealth-blueprint-what-to-know)."
       ]
     },
     {
       "type": "callout",
       "variant": "gold",
-      "label": "We sell a third thing",
+      "label": "We sell the third job",
       "paragraphs": [
-        "Legacy Wealth Blueprint is not a BiggerPockets killer and not a Rich Dad sequel. It is a written plan plus a year of coaching. Use it only if you want tax, debt, and investing in one order. See [Legacy Wealth Blueprint](/legacy-wealth-blueprint)."
+        "We are not a BiggerPockets killer. We are not a Rich Dad sequel. If you only need deal math, stay free. If you want Preston's 12-month order, that is Blueprint."
       ]
     }
   ],
   "whoFits": [
-    "You are choosing between a mindset book and an investor community.",
-    "You want a clean answer in one screen before you spend."
+    "You used the book or the forums and you are deciding whether a wealth plan is a different product.",
+    "You want the comparison to be those brands vs us, not a fan war between them."
   ],
   "whoSkips": [
-    "You already use BiggerPockets weekly and finished the book years ago. You need a different comparison, such as [coaching vs a course](/compare/real-estate-coaching-vs-course).",
-    "You want us to declare a moral winner. We will not."
+    "You already know you only need a spreadsheet. Use a calculator.",
+    "You want us to dunk on Kiyosaki or on BiggerPockets. We will not."
   ],
-  "costIntro": "Copied from public pages. Coaching tuition for Rich Dad was not on the homepages we opened.",
-  "costCaption": "Public starting prices.",
+  "costIntro": "Competitor dollars only. Our tuition stays off this table.",
+  "costCaption": "Public starting prices for the other brands. Blueprint fee on a call.",
   "costRows": [
     {
       "name": "BiggerPockets free layer",
@@ -83,35 +93,35 @@
       "sourceUrl": "https://study.richdad.com/we-offer?oid=741&source_id=website_investing_RDWE"
     },
     {
-      "name": "Rich Dad beginner real estate course",
-      "price": "$27 on the offer page",
-      "asOf": "2026-09-15",
-      "sourceLabel": "Beginner course offer",
-      "sourceUrl": "https://study.richdad.com/re-course-offer"
+      "name": "Legacy Wealth Blueprint",
+      "price": "Not published here. Ask on a strategy call.",
+      "asOf": "2026-09-16",
+      "sourceLabel": "Legacy Wealth Blueprint",
+      "sourceUrl": "https://www.legacyinvestingshow.com/legacy-wealth-blueprint"
     }
   ],
   "questionsBeforeBuying": [
-    "Am I still stuck on mindset, or do I need a spreadsheet?",
-    "Have I used the free layer of both brands?",
+    "Do I need a story, a forum, or a written plan from my return?",
+    "Have I used the free layer of BiggerPockets yet?",
     "If a sales call starts, what is the full price in writing?"
   ],
   "nextSteps": [
-    "Read [what to know before BiggerPockets Pro](/compare/biggerpockets-what-to-know) if you are about to pay for tools.",
-    "Read [Rich Dad alternatives](/compare/rich-dad-alternatives) if the book is done.",
+    "Read [what's in Blueprint](/compare/legacy-wealth-blueprint-what-to-know) if the job is a 12-month order.",
+    "Read [BiggerPockets alternatives](/compare/biggerpockets-alternatives) if you still want other rental teachers.",
     "Run one listing through the [rental cash flow calculator](/tools/rental-property-cash-flow)."
   ],
   "faqs": [
     {
-      "q": "Which one is better for beginners?",
-      "a": "The book is the easier first night. BiggerPockets is the better second month. Paying either brand before you use the free layer is usually a waste."
+      "q": "Should I pick BiggerPockets or Rich Dad?",
+      "a": "Use the book once if you need a mindset jolt. Use BiggerPockets for models and math. That choice is not the same as choosing a wealth plan."
     },
     {
-      "q": "Can I use both?",
-      "a": "Yes. Read the book once. Then use BiggerPockets for models and math. You do not need two paid memberships to do that."
+      "q": "Is Blueprint a BiggerPockets alternative?",
+      "a": "Only if your next job is tax, debt, and investing in one order. It will not replace forums for underwriting listings."
     },
     {
-      "q": "Does either one file my taxes?",
-      "a": "No. See [tax course vs a CPA](/compare/tax-course-vs-cpa)."
+      "q": "Does any of this file my taxes?",
+      "a": "No. See [tax course vs a CPA](/compare/tax-course-vs-cpa). Blueprint still sends you back to your CPA."
     }
   ],
   "sources": [
@@ -126,28 +136,28 @@
       "asOf": "2026-09-15"
     },
     {
-      "label": "BiggerPockets article on Rich Dad principles",
-      "url": "https://www.biggerpockets.com/blog/rich-dad-poor-dad-investing-principles-good-or-bad",
-      "asOf": "2026-09-15"
+      "label": "About Preston Seo",
+      "url": "https://www.legacyinvestingshow.com/about",
+      "asOf": "2026-09-16"
     },
     {
-      "label": "Rich Dad Wealth Experts offer",
-      "url": "https://study.richdad.com/we-offer?oid=741&source_id=website_investing_RDWE",
-      "asOf": "2026-09-15"
+      "label": "Legacy Wealth Blueprint",
+      "url": "https://www.legacyinvestingshow.com/legacy-wealth-blueprint",
+      "asOf": "2026-09-16"
     }
   ],
   "related": [
+    { "href": "/compare/legacy-wealth-blueprint-what-to-know", "label": "What's in Legacy Wealth Blueprint" },
     { "href": "/compare/biggerpockets-alternatives", "label": "BiggerPockets alternatives" },
     { "href": "/compare/rich-dad-alternatives", "label": "Rich Dad alternatives" },
-    { "href": "/compare/biggerpockets-what-to-know", "label": "What to know before BiggerPockets Pro" },
-    { "href": "/topics/airbnb-arbitrage", "label": "Airbnb arbitrage topic hub" }
+    { "href": "/about", "label": "Preston Seo's story" }
   ],
   "cta": {
-    "title": "Need math, not another origin story?",
-    "body": "Use a calculator on one real listing this week. Then decide if you need a community, a coach, or a tax map.",
-    "primaryHref": "/tools/rental-property-cash-flow",
-    "primaryLabel": "Rental cash flow calculator",
-    "secondaryHref": "/compare/biggerpockets-alternatives",
-    "secondaryLabel": "See alternatives"
+    "title": "Need a plan, not another origin story?",
+    "body": "If the leak is tax and debt together, read how Blueprint is built. If you only needed deal math, stay with a calculator.",
+    "primaryHref": "/legacy-wealth-blueprint",
+    "primaryLabel": "How Blueprint works",
+    "secondaryHref": "/tools/rental-property-cash-flow",
+    "secondaryLabel": "Rental cash flow calculator"
   }
 }

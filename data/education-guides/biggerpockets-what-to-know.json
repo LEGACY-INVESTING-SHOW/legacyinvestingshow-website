@@ -4,9 +4,9 @@
   "title": "BiggerPockets Pro: What to Know",
   "h1": "What to know before you join BiggerPockets Pro",
   "keyLine": "Start free. Pay for Pro when the calculators or forms would save you hours.",
-  "description": "A Legacy Investing Show briefing on BiggerPockets: free vs Pro, public 2026 prices, who it fits, and questions to ask. Not a customer review and not a star rating.",
+  "description": "BiggerPockets Pro compared with Legacy Wealth Blueprint: free vs Pro prices, Preston Seo's wealth plan, and who should wait. Not a star review. No public tuition.",
   "query": "BiggerPockets review",
-  "answer": "This is not a shopper review. We did not join Pro for this page. BiggerPockets is a real estate media site. Forums and podcasts are free. Pro is the paid tier for more calculator use, forms, and extra content. A March 3, 2026 staff post said Pro is $32.50 a month billed yearly. A membership table also lists $39 a month. Use Pro if you are already looking at deals. Skip it if you have not picked a model yet.",
+  "answer": "This is not a shopper review. We did not join Pro for this page. BiggerPockets is a real estate media site. Forums and podcasts are free. Pro is the paid tier for more calculator use, forms, and extra content. A March 3, 2026 staff post said Pro is $32.50 a month billed yearly. A membership table also lists $39 a month. Legacy Wealth Blueprint is Preston Seo's 12-month wealth plan: a written order for tax, debt, and investing, plus a guide and a CPA brief, built after a corporate job, a house-hacked duplex, and a $15M+ portfolio with his wife. Use Pro if you are already looking at deals. Use us if you want one written order. Skip both if you have not picked a model yet. We do not publish our tuition here.",
   "criteriaIntro": "We used BiggerPockets' own pages and a dated staff post. We did not scrape private member areas. We do not assign stars.",
   "criteria": [
     "What is free vs paid, from public pages.",
@@ -30,7 +30,15 @@
       "heading": "Who should pay, who should wait",
       "paragraphs": [
         "Pay when you are underwriting real listings most weeks and you want their calculators or forms in one login. Wait if you are still choosing between a rental, a short-term rental, and doing nothing. That choice is a [short-term vs long-term rental](/compare/short-term-rental-vs-long-term-rental) problem, not a membership problem.",
-        "Pro will not build you a tax plan. If that is the pain, use [tax strategies for real estate investors](/tax-strategies/for/real-estate-investors) or a CPA."
+        "Pro will not build you a tax plan. If that is the pain, that is our lane. Read [what's in Blueprint](/compare/legacy-wealth-blueprint-what-to-know) or [tax strategies for real estate investors](/tax-strategies/for/real-estate-investors)."
+      ]
+    },
+    {
+      "type": "prose",
+      "id": "vs-us",
+      "heading": "Pro vs our wealth plan",
+      "paragraphs": [
+        "[Preston Seo](/about) did not build Legacy Investing Show as a BiggerPockets clone. He left a corporate job, house-hacked a duplex, and with his wife built a $15M+ portfolio. [Legacy Wealth Blueprint](/legacy-wealth-blueprint) is a Wealth Strategy Snapshot, a dedicated guide, weekly coaching, and a CPA brief. Pro is a tool pass for deal math. Blueprint is a 12-month order for the rest of the file. You can use both. You should not confuse them."
       ]
     },
     {
@@ -92,6 +100,13 @@
       "asOf": "2026-09-15",
       "sourceLabel": "Membership plans page",
       "sourceUrl": "https://blogdev.biggerpockets.com/membership-types"
+    },
+    {
+      "name": "Legacy Wealth Blueprint",
+      "price": "Not published here. Ask on a strategy call.",
+      "asOf": "2026-09-16",
+      "sourceLabel": "Legacy Wealth Blueprint",
+      "sourceUrl": "https://www.legacyinvestingshow.com/legacy-wealth-blueprint"
     }
   ],
   "questionsBeforeBuying": [
@@ -139,20 +154,26 @@
       "label": "FTC coaching and seminar guidance",
       "url": "https://consumer.ftc.gov/articles/when-business-offer-or-coaching-program-scam",
       "asOf": "2026-09-15"
+    },
+    {
+      "label": "About Preston Seo",
+      "url": "https://www.legacyinvestingshow.com/about",
+      "asOf": "2026-09-16"
     }
   ],
   "related": [
-    { "href": "/compare/biggerpockets-alternatives", "label": "BiggerPockets alternatives" },
-    { "href": "/compare/biggerpockets-vs-rich-dad", "label": "BiggerPockets vs Rich Dad" },
+    { "href": "/compare/legacy-wealth-blueprint-what-to-know", "label": "What's in Legacy Wealth Blueprint" },
+    { "href": "/compare/biggerpockets-alternatives", "label": "BiggerPockets vs our wealth plan" },
+    { "href": "/compare/biggerpockets-vs-rich-dad", "label": "BiggerPockets or Rich Dad vs our wealth plan" },
     { "href": "/blog/best-real-estate-investing-courses-full-time-job", "label": "Courses if you have a full-time job" },
     { "href": "/reviews", "label": "Our own reviews and client results" }
   ],
   "cta": {
     "title": "Pro is a tool pass",
     "body": "If you need a plan that covers tax and debt too, that is a different product. If you only need deal math, stay with calculators.",
-    "primaryHref": "/tools",
-    "primaryLabel": "Free calculators",
-    "secondaryHref": "/compare/biggerpockets-alternatives",
-    "secondaryLabel": "See alternatives"
+    "primaryHref": "/legacy-wealth-blueprint",
+    "primaryLabel": "How Blueprint works",
+    "secondaryHref": "/tools",
+    "secondaryLabel": "Free calculators"
   }
 }

@@ -3,30 +3,39 @@
   "slug": "tax-course-vs-cpa",
   "title": "Tax Strategy Course vs a CPA",
   "h1": "Tax strategy course vs hiring a CPA",
-  "keyLine": "A course teaches the map. A CPA signs the return. Most high earners eventually need both.",
-  "description": "When a tax class is enough, when you need a CPA, what each can and cannot do, and public example prices. Education, not advice.",
+  "keyLine": "A course teaches the map. A CPA signs the return. Our plan writes the order you hand them.",
+  "description": "When a tax class is enough, when you need a CPA, and how Legacy Wealth Blueprint sits as Preston Seo's written plan. We do not print our tuition. Education, not advice.",
   "query": "tax strategy course vs hiring a CPA",
-  "answer": "A tax strategy course sells lessons. A CPA, a certified public accountant, is a licensed pro who can prepare and sign a return. A course cannot file for you and cannot see your facts unless a person is attached. A CPA without a plan can miss ideas a class would have shown you. If you have a simple W-2 and no rental, a class is optional. If you own a business or a short-term rental, budget for a CPA even if you buy a class.",
-  "criteriaIntro": "We compared jobs, not brands. Named prices are examples from public pages, including our own.",
+  "answer": "A tax strategy course sells lessons. A CPA, a certified public accountant, is a licensed pro who can prepare and sign a return. A course cannot file for you. Legacy Wealth Blueprint is Preston Seo's 12-month wealth plan: a written snapshot from your numbers, a dedicated guide, weekly coaching, and a CPA Implementation Brief you hand to your own preparer. He built that after a corporate job, a house-hacked duplex, and a $15M+ portfolio with his wife. We do not file. We do not publish our tuition here. If you have a simple W-2 and no rental, a class is optional. If you own a business or a short-term rental, budget for a CPA even if you buy a class or a plan.",
+  "criteriaIntro": "We compared jobs, not brands. Named class prices are examples. The pole is a course or a CPA versus our written plan, which still sends you back to a CPA.",
   "criteria": [
-    "Course vs licensed preparer, defined in plain words.",
+    "Course vs licensed preparer vs our plan, defined in plain words.",
     "IRS pages for the accounts a W-2 earner should fill first.",
-    "No promise that a class cuts your tax bill."
+    "No promise that a class cuts your tax bill.",
+    "We do not publish our fee here."
   ],
   "blocks": [
     {
       "type": "table",
       "id": "jobs",
       "heading": "Who does which job",
-      "caption": "A class and a CPA are not substitutes.",
+      "caption": "A class, a CPA, and our plan are not substitutes.",
       "wide": true,
-      "headers": ["Job", "Course", "CPA / EA", "Notes"],
+      "headers": ["Job", "Course", "CPA / EA", "Legacy Wealth Blueprint"],
       "rows": [
-        ["Teaches ideas", "Yes", "Sometimes, if they like teaching", "Classes scale. Pros bill hours."],
-        ["Looks at your return", "Only if coaching is included", "Yes, that is the point", "Ask what 'review' means in a class."],
-        ["Signs Form 1040", "No", "Yes, if they prepare it", "An enrolled agent (EA) can also represent you at the IRS."],
-        ["Sells a product", "Usually", "Sometimes also sells planning", "Fee-only is cleaner. Ask how they are paid."],
-        ["Works if you only have wages", "Limited. Most 'advanced' ideas need a business or property", "Still useful for basis, stock, and state issues", "See W-2 tax hub."]
+        ["Teaches ideas", "Yes", "Sometimes, if they like teaching", "Yes, plus a written 12-month order"],
+        ["Looks at your return", "Only if coaching is included", "Yes, that is the point", "Optional prior-year review, then a brief for your CPA"],
+        ["Signs Form 1040", "No", "Yes, if they prepare it", "No. You keep your CPA"],
+        ["Debt and investing in the same plan", "Rarely", "Only if you hired planning hours", "Yes. That is the product"],
+        ["Price we can copy", "Example: WealthAbility Live $197 a month", "Not a single public national price", "Not published here. Ask on a strategy call"]
+      ]
+    },
+    {
+      "type": "prose",
+      "id": "preston",
+      "heading": "What we actually sell",
+      "paragraphs": [
+        "[Preston Seo](/about) built Legacy Investing Show after leaving a corporate job and building a $15M+ portfolio with his wife. [Blueprint](/legacy-wealth-blueprint) is education and coaching from that work. The Blueprint page says you keep your CPA and get a brief to hand them. That is the honest split. If a class says you can skip your CPA, treat that as a warning."
       ]
     },
     {
@@ -44,8 +53,7 @@
       "heading": "When you need a CPA or EA this year",
       "paragraphs": [
         "You own a rental, a partnership, an S corp, or you sold a business. You got a notice from the IRS. You want someone who can represent you.",
-        "A CPA's fee is often not on a homepage. That does not make a $50,000 'done for you' firm the default. Ask for an engagement letter: what they will file, what they will not, and whether planning hours are extra.",
-        "If a class says you can skip your CPA, treat that as a warning. Our Blueprint page says you keep your CPA and get a brief to hand them. That is the honest split."
+        "A CPA's fee is often not on a homepage. That does not make a $50,000 'done for you' firm the default. Ask for an engagement letter: what they will file, what they will not, and whether planning hours are extra."
       ]
     },
     {
@@ -58,15 +66,15 @@
     }
   ],
   "whoFits": [
-    "You are deciding whether to buy tax school or to pay a preparer more hours.",
+    "You are deciding whether to buy tax school, pay a preparer more hours, or get a written wealth plan that still uses a CPA.",
     "You already have a CPA and you wonder if a class is redundant."
   ],
   "whoSkips": [
     "You want a three-vendor bake-off. Use [Karlton Dennis vs Mark Kohler vs Blueprint](/blog/karlton-dennis-vs-mark-kohler-vs-legacy-wealth-blueprint).",
     "You need representation on an audit this month. Call a licensed pro today, do not start module one."
   ],
-  "costIntro": "Example public figures. CPA retainers vary by city and by how messy the file is. We will not invent an average fee.",
-  "costCaption": "Public education prices vs professional work.",
+  "costIntro": "Example public class figures. Our tuition stays off this table. We will not invent an average CPA fee.",
+  "costCaption": "Public education prices vs professional work vs our unpublished fee.",
   "costRows": [
     {
       "name": "WealthAbility Live (class)",
@@ -91,23 +99,22 @@
     },
     {
       "name": "Legacy Wealth Blueprint",
-      "price": "$9,800 cash or card. We do not file your return.",
-      "asOf": "2026-09-15",
-      "sourceLabel": "Legacy Wealth Blueprint cost",
-      "sourceUrl": "https://www.legacyinvestingshow.com/compare/legacy-wealth-blueprint-cost"
+      "price": "Not published here. We do not file your return. Ask on a strategy call.",
+      "asOf": "2026-09-16",
+      "sourceLabel": "Legacy Wealth Blueprint",
+      "sourceUrl": "https://www.legacyinvestingshow.com/legacy-wealth-blueprint"
     }
   ],
   "questionsBeforeBuying": [
     "Will this purchase file my return, or only teach me?",
     "If I keep my CPA, what artifact do I hand them?",
     "Is the teacher a CPA, EA, or neither?",
-    "What happens if the IRS sends a letter?",
     "Have I already maxed the 401(k) and HSA the IRS already allows?"
   ],
   "nextSteps": [
     "List what you own: wages only, rental, or a business. That list decides the buyer.",
-    "Open [tax strategies for W-2 employees](/tax-strategies/for/w2-employees) or [for business owners](/tax-strategies/for/business-owners).",
-    "If you want a written plan plus a CPA brief, read [Legacy Wealth Blueprint](/legacy-wealth-blueprint)."
+    "If you want a written plan plus a CPA brief, read [what's in Blueprint](/compare/legacy-wealth-blueprint-what-to-know).",
+    "Open [tax strategies for W-2 employees](/tax-strategies/for/w2-employees) or [for business owners](/tax-strategies/for/business-owners)."
   ],
   "faqs": [
     {
@@ -115,8 +122,8 @@
       "a": "No. A course does not sign your return. Some firms sell both class and prep. Ask which hat they are wearing on your file."
     },
     {
-      "q": "Is a cheaper class always worse?",
-      "a": "No. A $197 a month series can be enough if you only need ideas. It is worse if you thought they would file."
+      "q": "Does Blueprint replace a CPA?",
+      "a": "No. We write a plan and a brief. They sign Form 1040. Read [what's in Blueprint](/compare/legacy-wealth-blueprint-what-to-know)."
     },
     {
       "q": "What is an enrolled agent?",
@@ -140,22 +147,27 @@
       "asOf": "2026-09-15"
     },
     {
-      "label": "Publication 925, passive activity rules",
-      "url": "https://www.irs.gov/publications/p925",
-      "asOf": "2026-09-15"
+      "label": "About Preston Seo",
+      "url": "https://www.legacyinvestingshow.com/about",
+      "asOf": "2026-09-16"
+    },
+    {
+      "label": "Legacy Wealth Blueprint",
+      "url": "https://www.legacyinvestingshow.com/legacy-wealth-blueprint",
+      "asOf": "2026-09-16"
     }
   ],
   "related": [
-    { "href": "/compare/wealthability-alternatives", "label": "WealthAbility alternatives" },
-    { "href": "/compare/anderson-platinum-vs-tax-course", "label": "Anderson Platinum vs a tax course" },
-    { "href": "/blog/best-tax-strategy-programs-w2-earners-over-250k", "label": "Tax programs for W-2 earners over $250k" },
-    { "href": "/compare/legacy-wealth-blueprint-cost", "label": "Legacy Wealth Blueprint cost" }
+    { "href": "/compare/legacy-wealth-blueprint-what-to-know", "label": "What's in Legacy Wealth Blueprint" },
+    { "href": "/compare/wealthability-alternatives", "label": "WealthAbility vs our wealth plan" },
+    { "href": "/compare/anderson-platinum-vs-tax-course", "label": "Anderson Platinum vs our wealth plan" },
+    { "href": "/about", "label": "Preston Seo's story" }
   ],
   "cta": {
     "title": "Keep the preparer",
     "body": "Use the library to walk in with better questions. Then let a licensed person file. If you want our written brief format, that is Blueprint, and you still keep your CPA.",
-    "primaryHref": "/tax-strategies",
-    "primaryLabel": "Tax strategy library",
+    "primaryHref": "/legacy-wealth-blueprint",
+    "primaryLabel": "How Blueprint works",
     "secondaryHref": "https://join.managemoney101.com/tax-strategies",
     "secondaryLabel": "Free tax strategy class"
   }

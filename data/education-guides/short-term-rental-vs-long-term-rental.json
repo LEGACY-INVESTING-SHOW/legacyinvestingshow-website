@@ -4,9 +4,9 @@
   "title": "Short-Term vs Long-Term Rental",
   "h1": "Short-term rental vs long-term rental",
   "keyLine": "One is a small hotel. One is a lease. Tax rules follow the stay length and your hours, not the brand of the app.",
-  "description": "STR vs long-term rental in plain words: work, cash, and the IRS 7-day average stay test. No invented occupancy. Calculators and W-2 notes included.",
+  "description": "STR vs long-term rental in plain words, then how Legacy Wealth Blueprint treats stay length as one tool. IRS 7-day test. Preston Seo's path. We do not print our tuition.",
   "query": "short-term rental vs long-term rental",
-  "answer": "A long-term rental is a home you lease for months at a time, often a year. A short-term rental (STR) is a stay measured in nights, often listed on Airbnb or Vrbo. STR usually means more guest work, more furniture, and more local rules. Long-term usually means a steadier lease and fewer turnovers. Tax is a separate test. IRS Publication 925 says an activity is not a 'rental activity' for passive-loss rules if the average stay is 7 days or less. You still have to materially participate. This page does not promise a tax save.",
+  "answer": "A long-term rental is a home you lease for months at a time, often a year. A short-term rental (STR) is a stay measured in nights, often listed on Airbnb or Vrbo. STR usually means more guest work, more furniture, and more local rules. Tax is a separate test. IRS Publication 925 says an activity is not a 'rental activity' for passive-loss rules if the average stay is 7 days or less. You still have to materially participate. Legacy Wealth Blueprint is Preston Seo's 12-month wealth plan: stay length is one tool in a written order for tax, debt, and investing, not the whole plan. He built that after a corporate job, a house-hacked duplex, and a $15M+ portfolio with his wife. This page does not promise a tax save. We do not publish our tuition here.",
   "criteriaIntro": "We compare operations and the IRS tests we can cite. We do not invent nightly rates or occupancy.",
   "criteria": [
     "Plain definitions of STR and long-term.",
@@ -56,6 +56,15 @@
       "paragraphs": [
         "Do not buy an STR because a class said it 'unlocks depreciation on wages.' Read [the short-term rental loophole guide](/tax-strategies/short-term-rental-loophole) and talk to a CPA. Depreciation can reverse when you sell. See our recapture guide if you go that far."
       ]
+    },
+    {
+      "type": "prose",
+      "id": "preston",
+      "heading": "Where this sits in our wealth plan",
+      "paragraphs": [
+        "[Preston Seo](/about) house-hacked a duplex while in sales, then with his wife built a $15M+ portfolio. Stay length was never the whole system. [Legacy Wealth Blueprint](/legacy-wealth-blueprint) writes tax, debt, income, investing, and protection in one 12-month order. An STR is one possible tool after the file says it belongs. You keep your CPA.",
+        "Airbnb training is a different offer. If you only wanted host school, this page is the ops split, not a course catalog. If you wanted the written plan, read [what's in Blueprint](/compare/legacy-wealth-blueprint-what-to-know)."
+      ]
     }
   ],
   "whoFits": [
@@ -89,6 +98,13 @@
       "asOf": "2026-09-15",
       "sourceLabel": "STR break-even occupancy",
       "sourceUrl": "https://www.legacyinvestingshow.com/tools/str-break-even-occupancy"
+    },
+    {
+      "name": "Legacy Wealth Blueprint",
+      "price": "Not published here. Ask on a strategy call.",
+      "asOf": "2026-09-16",
+      "sourceLabel": "Legacy Wealth Blueprint",
+      "sourceUrl": "https://www.legacyinvestingshow.com/legacy-wealth-blueprint"
     }
   ],
   "questionsBeforeBuying": [
@@ -101,7 +117,8 @@
   "nextSteps": [
     "Run [STR break-even occupancy](/tools/str-break-even-occupancy) and [rental cash flow](/tools/rental-property-cash-flow) on the same address.",
     "Read [the short-term rental loophole](/tax-strategies/short-term-rental-loophole).",
-    "If you operate Airbnbs, use [tax strategies for Airbnb hosts](/tax-strategies/for/airbnb-hosts)."
+    "If you operate Airbnbs, use [tax strategies for Airbnb hosts](/tax-strategies/for/airbnb-hosts).",
+    "If stay length is only one piece of the money order, read [what's in Blueprint](/compare/legacy-wealth-blueprint-what-to-know)."
   ],
   "faqs": [
     {
@@ -132,9 +149,15 @@
       "label": "Our STR loophole guide",
       "url": "https://www.legacyinvestingshow.com/tax-strategies/short-term-rental-loophole",
       "asOf": "2026-09-15"
+    },
+    {
+      "label": "About Preston Seo",
+      "url": "https://www.legacyinvestingshow.com/about",
+      "asOf": "2026-09-16"
     }
   ],
   "related": [
+    { "href": "/compare/legacy-wealth-blueprint-what-to-know", "label": "What's in Legacy Wealth Blueprint" },
     { "href": "/tax-strategies/short-term-rental-loophole", "label": "Short-term rental loophole guide" },
     { "href": "/compare/real-estate-professional-vs-str-loophole", "label": "REPS vs STR loophole" },
     { "href": "/compare/cost-segregation-vs-str-loophole-w2-passive-loss", "label": "Cost segregation vs STR loophole for W-2 owners" },
@@ -143,9 +166,9 @@
   "cta": {
     "title": "Run the two models",
     "body": "Do not pick a stay length from a podcast. Use the calculators, then read the IRS test if tax is part of the pitch.",
-    "primaryHref": "/tools/str-break-even-occupancy",
-    "primaryLabel": "STR break-even tool",
-    "secondaryHref": "/tools/rental-property-cash-flow",
-    "secondaryLabel": "Long-term cash flow tool"
+    "primaryHref": "/legacy-wealth-blueprint",
+    "primaryLabel": "How Blueprint works",
+    "secondaryHref": "/tools/str-break-even-occupancy",
+    "secondaryLabel": "STR break-even tool"
   }
 }

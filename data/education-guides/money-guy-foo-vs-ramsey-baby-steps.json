@@ -1,74 +1,52 @@
 {
   "type": "vs",
   "slug": "money-guy-foo-vs-ramsey-baby-steps",
-  "title": "Money Guy FOO vs Ramsey Baby Steps",
-  "h1": "Money Guy FOO vs Dave Ramsey Baby Steps",
-  "keyLine": "Same homework: what to do with the next dollar. Different pause on investing.",
-  "description": "Money Guy FOO vs Dave Ramsey Baby Steps: where each plan invests, how they treat debt, dated public prices, and who should stay with which order.",
-  "query": "Money Guy FOO vs Dave Ramsey Baby Steps",
-  "answer": "The Money Guy Financial Order of Operations, or FOO, is a nine-step order for your next dollar. Dave Ramsey's Baby Steps are a seven-step order that pauses investing until consumer debt is gone. FOO takes the employer 401(k) match before high-interest debt, then builds cash, then Roth and HSA, then work plans, and pays the mortgage last. Ramsey wants a $1,000 starter fund, then a debt snowball on everything but the house, then three to six months of cash, then 15 percent to retirement. Neither is a tax plan. Pick the order that matches the fire in your house.",
-  "criteriaIntro": "We compared the two published orders, not the hosts. Prices come from pages we opened on September 15, 2026. We do not treat Ramsey class-average claims as our facts.",
+  "title": "FOO or Ramsey vs Our Wealth Plan",
+  "h1": "FOO or Ramsey vs a written wealth plan",
+  "keyLine": "Those maps tell the next dollar where to go. Our plan writes 12 months from your return.",
+  "description": "Dave Ramsey Baby Steps and Money Guy FOO compared with Legacy Wealth Blueprint. Dated public class prices. We do not print our tuition. Written by Preston Seo.",
+  "query": "Dave Ramsey vs a wealth plan",
+  "answer": "Dave Ramsey's Baby Steps and the Money Guy Financial Order of Operations, or FOO, are free maps for the next dollar. Ramsey pauses extra investing until consumer debt is gone. FOO takes the employer 401(k) match earlier. Both are useful. Neither is a 12-month wealth plan. Legacy Wealth Blueprint is what Preston Seo built after a corporate job, a house-hacked duplex, and a $15M+ portfolio with his wife: one written order for tax, debt, income, investing, and protection, plus a coach and a CPA brief. Use Ramsey or FOO if cards are the fire. Use us when the leftover leak is a high W-2 bill and a full file.",
+  "criteriaIntro": "The comparison pole is our wealth plan. FOO and Ramsey are two dollar-order maps, not two winners we rank against each other.",
   "criteria": [
-    "Both methods are written on a live public page.",
-    "We copy the step names from those pages, not from memory.",
-    "Price only where a checkout or class page prints one.",
-    "Mortgage math lives on a different URL. This page is the method fight."
+    "Step names come from the live FOO guide and the Baby Steps page.",
+    "Class prices come from public pages we opened.",
+    "Blueprint facts come from our membership page and about page.",
+    "We do not publish our fee here."
   ],
   "blocks": [
     {
+      "type": "prose",
+      "id": "preston",
+      "heading": "Why we are in this comparison",
+      "paragraphs": [
+        "[Preston Seo](/about) started in debt in 2017, left a corporate path, and built a $15M+ portfolio with his wife. He did not get there by picking Ramsey or FOO as a personality. He got there by putting tax, cash flow, and ownership in one system. That system is [Legacy Wealth Blueprint](/legacy-wealth-blueprint).",
+        "FOO and the Baby Steps still matter. They are the cheap maps. Blueprint is the written plan plus a person on your calendar."
+      ]
+    },
+    {
       "type": "table",
       "id": "the-orders",
-      "heading": "The two orders, in plain words",
-      "caption": "FOO has nine steps. Baby Steps has seven. The split is when you invest.",
+      "heading": "Dollar-order maps vs our plan",
+      "caption": "FOO and Baby Steps are one family of next-dollar scripts. Blueprint is a different product.",
       "wide": true,
-      "headers": ["Topic", "Money Guy FOO", "Ramsey Baby Steps", "Plain read"],
+      "headers": ["Topic", "FOO or Ramsey Baby Steps", "Legacy Wealth Blueprint"],
       "rows": [
-        [
-          "Starter cash",
-          "Cover your highest insurance deductible first",
-          "Save $1,000",
-          "Both want a small buffer before a big payoff push."
-        ],
-        [
-          "Work 401(k) match",
-          "Take it in step two, before high-interest debt",
-          "Pause investing until consumer debt is gone (Baby Step 4 is 15 percent later)",
-          "This is the main split for a W-2 earner."
-        ],
-        [
-          "Expensive debt",
-          "High-interest debt is step three (rate first)",
-          "All debt except the house, smallest balance first (debt snowball)",
-          "Snowball is behavior. FOO is interest rate."
-        ],
-        [
-          "Full emergency fund",
-          "Step four, after high-interest debt",
-          "Baby Step 3: three to six months of expenses",
-          "Same idea, different place in line."
-        ],
-        [
-          "Investing",
-          "Roth IRA and HSA, then max work plans, then extra investing",
-          "15 percent of household income after the big cash fund",
-          "FOO invests earlier. Ramsey waits until consumer debt is gone."
-        ],
-        [
-          "The house",
-          "Prepay low-interest debt last, including a cheap mortgage",
-          "Baby Step 6: pay the home off early",
-          "For mortgage dollars vs investing, use the scorecard linked below."
-        ]
+        ["What it is", "A published order for the next paycheck. FOO has nine steps. Baby Steps has seven.", "A 12-month written Wealth Strategy Snapshot from your numbers, plus a guide and weekly coaching"],
+        ["When you invest", "Ramsey waits until consumer debt is gone, then 15 percent. FOO takes the 401(k) match earlier, then Roth and HSA.", "Match and high-interest debt still come first. Then we write tax, entities, and investing against your actual return"],
+        ["The house", "Ramsey wants the home paid off early. FOO prepays cheap mortgages last.", "Mortgage math is a separate scorecard. We do not make you pick a slogan"],
+        ["Tax", "Not a tax class", "Prior-year return review and a CPA Implementation Brief. You keep your CPA"],
+        ["Price we can copy", "Baby Steps are free. FPU listed $99.99. FOO course listed $49 on the guide and learn pages.", "Not published here. Ask on a strategy call"]
       ]
     },
     {
       "type": "prose",
       "id": "what-each-is",
-      "heading": "What each product actually is",
+      "heading": "What those two maps actually are",
       "paragraphs": [
-        "The [FOO guide](https://moneyguy.com/guide/foo/) we opened was marked last updated July 29, 2026. The nine steps on that page are: deductibles, employer match, high-interest debt, emergency fund, Roth IRA and HSA, max employer plans, hyperaccumulation, prepay future expenses, then prepay low-interest debt. Hyperaccumulation here means saving a large share of pay after the tax-favored accounts are full. An HSA is a health savings account you can use with a high-deductible health plan.",
-        "The [Baby Steps page](https://www.ramseysolutions.com/dave-ramsey-7-baby-steps) lists: $1,000 starter fund; pay off all debt except the house with the debt snowball; three to six months of expenses; invest 15 percent for retirement; kids' college; pay the home off early; then build wealth and give. A debt snowball means you list debts from smallest balance to largest and attack the small one first while making minimums on the rest.",
-        "[Financial Peace University](https://www.ramseysolutions.com/money/financial-peace/class) is the nine-week class that teaches that order. The class page said $99.99 per household, spouse included, on September 15, 2026. The Baby Steps themselves are free to read."
+        "The [FOO guide](https://moneyguy.com/guide/foo/) we opened was marked last updated July 29, 2026. The nine steps are: deductibles, employer match, high-interest debt, emergency fund, Roth IRA and HSA, max employer plans, hyperaccumulation, prepay future expenses, then prepay low-interest debt. An HSA is a health savings account you can use with a high-deductible health plan.",
+        "The [Baby Steps page](https://www.ramseysolutions.com/dave-ramsey-7-baby-steps) lists: $1,000 starter fund; pay off all debt except the house with the debt snowball; three to six months of expenses; invest 15 percent for retirement; kids' college; pay the home off early; then build wealth and give. A debt snowball means you list debts from smallest balance to largest.",
+        "[Financial Peace University](https://www.ramseysolutions.com/money/financial-peace/class) is the nine-week class that teaches Ramsey's order. The class page said $99.99 per household, spouse included, on September 15, 2026. We are not ranking FPU against the FOO course. We are saying both are maps, and Blueprint is a plan."
       ]
     },
     {
@@ -76,9 +54,8 @@
       "id": "high-earner-split",
       "heading": "If you already earn a lot",
       "paragraphs": [
-        "A high W-2 wage does not cancel 22 percent credit cards. If those are still on, Ramsey's pause on extra investing is often the cheaper lesson. FOO still wants the employer match first because a match is part of pay.",
-        "If cards are gone and the leftover fight is a cheap mortgage versus a 401(k), that is not this page. Use [pay off the mortgage vs invest](/compare/mortgage-payoff-vs-investing) and [401(k) vs a rental](/compare/401k-vs-rental-property). FOO vs Ramsey is the habit order. Those pages are the dollar math.",
-        "Neither order is a tax strategy class. After the accounts are full, the leak is often tax. See [tax strategies for W-2 employees](/tax-strategies/for/w2-employees)."
+        "A high W-2 wage does not cancel 22 percent credit cards. If those are still on, stay with Ramsey or FOO until the expensive debt is gone. Do not buy a wealth plan to skip that work.",
+        "If cards are gone and the leftover fight is a cheap mortgage versus a 401(k), that is [pay off the mortgage vs invest](/compare/mortgage-payoff-vs-investing), not a guru fight. If the leftover fight is tax on wages, that is [W-2 tax strategies](/tax-strategies/for/w2-employees) and, if you want a written order, [what's in Blueprint](/compare/legacy-wealth-blueprint-what-to-know)."
       ]
     },
     {
@@ -86,22 +63,20 @@
       "variant": "gold",
       "label": "How to read seller claims",
       "paragraphs": [
-        "Ramsey Solutions advertises average class results, such as debt paid in 90 days. Those are their marketing lines. We did not audit them. Money Guy's learn page called $49 a sale from $249. Confirm the live checkout. We do not promise either plan will make you rich."
+        "Ramsey Solutions advertises average class results, such as debt paid in 90 days. Those are their marketing lines. We did not audit them. Money Guy's learn page called $49 a sale from $249. Confirm the live checkout. We do not promise any plan will make you rich."
       ]
     }
   ],
   "whoFits": [
-    "You finished, or almost finished, consumer debt and you are choosing which published order to follow next.",
-    "You like Ramsey on spending but you do not want to skip a 401(k) match.",
-    "You want a method comparison, not another mortgage calculator."
+    "You finished, or almost finished, consumer debt and you are choosing a cheap map vs a written wealth plan.",
+    "You like Ramsey or FOO on spending and you need tax and investing in one order next."
   ],
   "whoSkips": [
     "You still have high-interest credit-card debt and no budget. Start with the free Baby Steps page or FPU, not a wealth plan.",
-    "You want us to pick a winner trophy. The fit depends on whether the match or the card is the bigger leak.",
-    "You need tax filing help. Hire a CPA. See [tax course vs a CPA](/compare/tax-course-vs-cpa)."
+    "You want us to crown FOO over Ramsey. We will not. Both are maps."
   ],
-  "costIntro": "Public prices only. The FOO product page we opened did not reprint the dollar figure. We cite the guide and the learn page that did.",
-  "costCaption": "Published prices for FOO, FPU, and nearby next steps.",
+  "costIntro": "Public prices for the maps. Our tuition stays off this table.",
+  "costCaption": "Published prices for FOO and FPU. Blueprint fee on a call.",
   "costRows": [
     {
       "name": "Money Guy FOO guide",
@@ -133,36 +108,35 @@
     },
     {
       "name": "Legacy Wealth Blueprint",
-      "price": "$9,800 cash or card, as we publish on this site. Poor fit if cards are still running.",
-      "asOf": "2026-09-15",
-      "sourceLabel": "Legacy Wealth Blueprint cost",
-      "sourceUrl": "https://www.legacyinvestingshow.com/compare/legacy-wealth-blueprint-cost"
+      "price": "Not published here. Ask on a strategy call. Poor fit if cards are still running.",
+      "asOf": "2026-09-16",
+      "sourceLabel": "Legacy Wealth Blueprint",
+      "sourceUrl": "https://www.legacyinvestingshow.com/legacy-wealth-blueprint"
     }
   ],
   "questionsBeforeBuying": [
     "Is my next leak a credit card, a skipped 401(k) match, or tax?",
     "Have I read the free FOO guide and the free Baby Steps page yet?",
     "If I buy FPU, is my spouse in the room?",
-    "If I buy the $49 FOO course, is the live checkout still $49?",
-    "Am I about to finance a $9,800 plan while cards are still open?"
+    "Am I buying a map, or a 12-month written plan?"
   ],
   "nextSteps": [
     "If debt is the fire, open the [debt topic hub](/topics/debt-management) and the [monthly budget planner](/tools/monthly-budget-planner).",
-    "If the house payment is the leftover fight, read [pay off the mortgage vs invest](/compare/mortgage-payoff-vs-investing).",
-    "If you want other teachers after Ramsey, read [Dave Ramsey alternatives](/compare/dave-ramsey-alternatives)."
+    "If you want the plan Preston teaches, read [what's in Blueprint](/compare/legacy-wealth-blueprint-what-to-know).",
+    "If the house payment is the leftover fight, read [pay off the mortgage vs invest](/compare/mortgage-payoff-vs-investing)."
   ],
   "faqs": [
     {
       "q": "Should a high earner follow Ramsey or FOO?",
-      "a": "Follow Ramsey's pause if lifestyle debt is still the fire. Follow FOO's match-first step if you would otherwise skip free 401(k) money. After cards are gone, neither order replaces a tax pro."
+      "a": "Follow Ramsey's pause if lifestyle debt is still the fire. Take the 401(k) match either way. After cards are gone, neither map replaces a tax pro or a written wealth plan."
     },
     {
-      "q": "Does FOO say to invest while in credit-card debt?",
-      "a": "FOO puts the employer match before high-interest debt, then attacks that debt in step three. It is not 'invest in everything while cards compound.' Read the live nine steps."
+      "q": "Is Blueprint a Ramsey alternative?",
+      "a": "Only after expensive debt is gone. Blueprint is a 12-month plan for tax, debt, and investing together. It is not a $99.99 spending class."
     },
     {
       "q": "Is this the same as pay off the mortgage vs invest?",
-      "a": "No. That scorecard is mortgage math. This page is which published order you follow for the next paycheck."
+      "a": "No. That scorecard is mortgage math. This page is a cheap dollar-order map vs our written plan."
     }
   ],
   "sources": [
@@ -188,23 +162,23 @@
       "asOf": "2026-09-15"
     },
     {
-      "label": "FTC coaching scam guidance",
-      "url": "https://consumer.ftc.gov/articles/when-business-offer-or-coaching-program-scam",
-      "asOf": "2026-09-15"
+      "label": "About Preston Seo",
+      "url": "https://www.legacyinvestingshow.com/about",
+      "asOf": "2026-09-16"
     }
   ],
   "related": [
+    { "href": "/compare/legacy-wealth-blueprint-what-to-know", "label": "What's in Legacy Wealth Blueprint" },
     { "href": "/compare/dave-ramsey-alternatives", "label": "Dave Ramsey alternatives" },
     { "href": "/compare/mortgage-payoff-vs-investing", "label": "Pay off the mortgage vs invest" },
-    { "href": "/compare/401k-vs-rental-property", "label": "401(k) vs rental property" },
-    { "href": "/compare/legacy-wealth-blueprint-cost", "label": "Legacy Wealth Blueprint cost" }
+    { "href": "/about", "label": "Preston Seo's story" }
   ],
   "cta": {
-    "title": "Order first, class second",
-    "body": "If expensive debt is gone and the tax bill is the leak, use the W-2 tax map next. Do not buy a rental class to fix a payroll problem.",
-    "primaryHref": "/tax-strategies/for/w2-employees",
-    "primaryLabel": "W-2 tax strategies",
-    "secondaryHref": "/compare/dave-ramsey-alternatives",
-    "secondaryLabel": "After the Baby Steps"
+    "title": "Map first, plan second",
+    "body": "If expensive debt is gone and the tax bill is the leak, read how Blueprint is built. Do not buy a rental class to fix a payroll problem.",
+    "primaryHref": "/legacy-wealth-blueprint",
+    "primaryLabel": "How Blueprint works",
+    "secondaryHref": "/tax-strategies/for/w2-employees",
+    "secondaryLabel": "W-2 tax strategies"
   }
 }

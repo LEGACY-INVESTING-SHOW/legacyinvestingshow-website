@@ -4,9 +4,9 @@
   "title": "401(k) vs Rental Property",
   "h1": "401(k) vs rental property",
   "keyLine": "A 401(k) is part of your pay. A rental is a small business with a roof. Use both with eyes open. Do not raid the match to buy a house.",
-  "description": "401(k) vs a rental for W-2 professionals: 2026 IRS limits, match, time, tax, and liquidity. No invented returns. Education, not advice.",
+  "description": "401(k) vs a rental for W-2 professionals, then how Legacy Wealth Blueprint orders the leftover dollars. 2026 IRS limits. Preston Seo's path. We do not print our tuition.",
   "query": "401k vs rental property",
-  "answer": "A 401(k) is a retirement account at work. In 2026 you can defer $24,500 of pay, more if you are 50 or older, per the IRS. Many employers add a match. That match is part of your pay. A rental is a house or apartment you lease to someone else. It can throw off rent, it takes time, and it can use a loan. They are not twins. Fill the match first in almost every case we can describe. Then compare extra 401(k) dollars to a rental using time, cash, and risk, not a podcast slogan.",
+  "answer": "A 401(k) is a retirement account at work. In 2026 you can defer $24,500 of pay, more if you are 50 or older, per the IRS. Many employers add a match. That match is part of your pay. A rental is a house or apartment you lease to someone else. They are not twins. Fill the match first in almost every case we can describe. Then compare extra 401(k) dollars to a rental using time, cash, and risk. Legacy Wealth Blueprint is Preston Seo's 12-month written plan for that leftover fight: tax, debt, income, investing, and protection in one order, after a corporate job, a house-hacked duplex, and a $15M+ portfolio with his wife. We do not publish our tuition here.",
   "criteriaIntro": "We compare account rules from the IRS to the work of being a landlord. We do not forecast investment returns.",
   "criteria": [
     "2026 401(k) limits from IRS IR-2025-111.",
@@ -55,6 +55,15 @@
       "paragraphs": [
         "If you have a high-deductible health plan, a 2026 HSA can take $4,400 self-only or $8,750 family ([Rev. Proc. 2025-19](https://www.irs.gov/irb/2025-21_IRB)). That account is often a better next dollar than a speculative rental. See [HSA strategy](/tax-strategies/hsa-strategy)."
       ]
+    },
+    {
+      "type": "prose",
+      "id": "preston",
+      "heading": "If both tools still leave a mess",
+      "paragraphs": [
+        "[Preston Seo](/about) did not pick a slogan between a 401(k) and a house. He left a corporate job, house-hacked a duplex while in sales, and with his wife built a $15M+ portfolio. [Legacy Wealth Blueprint](/legacy-wealth-blueprint) is the 12-month order from that work: a Wealth Strategy Snapshot, a dedicated guide, weekly coaching, and a CPA brief. You keep your CPA. A rental is one tool in the plan, not the whole plan.",
+        "Read [what's in Blueprint](/compare/legacy-wealth-blueprint-what-to-know) if the leftover fight is tax, debt, and investing at once."
+      ]
     }
   ],
   "whoFits": [
@@ -88,6 +97,13 @@
       "asOf": "2026-09-15",
       "sourceLabel": "Rental cash flow",
       "sourceUrl": "https://www.legacyinvestingshow.com/tools/rental-property-cash-flow"
+    },
+    {
+      "name": "Legacy Wealth Blueprint",
+      "price": "Not published here. Ask on a strategy call.",
+      "asOf": "2026-09-16",
+      "sourceLabel": "Legacy Wealth Blueprint",
+      "sourceUrl": "https://www.legacyinvestingshow.com/legacy-wealth-blueprint"
     }
   ],
   "questionsBeforeBuying": [
@@ -100,7 +116,7 @@
   "nextSteps": [
     "Read [401(k) contribution strategies](/retirement/401k-contribution-strategies) and [traditional vs Roth 401(k)](/retirement/traditional-vs-roth-401k).",
     "Underwrite a sample property in the [rental cash flow calculator](/tools/rental-property-cash-flow).",
-    "If the next fight is extra cash vs extra mortgage principal, use [mortgage payoff vs investing](/compare/mortgage-payoff-vs-investing)."
+    "If the leftover fight is a written 12-month order, read [what's in Blueprint](/compare/legacy-wealth-blueprint-what-to-know)."
   ],
   "faqs": [
     {
@@ -114,6 +130,10 @@
     {
       "q": "Can rental losses wipe my W-2 tax?",
       "a": "Often not. Passive-loss rules in Publication 925 limit that. STR treatment is a different test. Read [short-term vs long-term](/compare/short-term-rental-vs-long-term-rental) and ask a CPA."
+    },
+    {
+      "q": "Does Blueprint tell me to skip my 401(k)?",
+      "a": "No. Match first. Blueprint is a written order for what is left, including whether a rental even belongs in the year."
     }
   ],
   "sources": [
@@ -136,19 +156,25 @@
       "label": "Publication 925",
       "url": "https://www.irs.gov/publications/p925",
       "asOf": "2026-09-15"
+    },
+    {
+      "label": "About Preston Seo",
+      "url": "https://www.legacyinvestingshow.com/about",
+      "asOf": "2026-09-16"
     }
   ],
   "related": [
     { "href": "/retirement/401k-contribution-strategies", "label": "401(k) contribution strategies" },
     { "href": "/compare/backdoor-roth-vs-taxable-brokerage-high-income-earners", "label": "Backdoor Roth vs taxable brokerage" },
+    { "href": "/compare/legacy-wealth-blueprint-what-to-know", "label": "What's in Legacy Wealth Blueprint" },
     { "href": "/compare/wealth-plan-checklist-high-earners", "label": "Wealth plan checklist" },
     { "href": "/blog/rental-property-investing-for-w2-professionals", "label": "Rental property investing for W-2 professionals" }
   ],
   "cta": {
     "title": "Protect the match",
     "body": "Then decide if a rental is a business you want. The tax library explains what a W-2 earner can actually do. The calculator tests a house.",
-    "primaryHref": "/tax-strategies/for/w2-employees",
-    "primaryLabel": "W-2 tax strategies",
+    "primaryHref": "/legacy-wealth-blueprint",
+    "primaryLabel": "How Blueprint works",
     "secondaryHref": "/tools/rental-property-cash-flow",
     "secondaryLabel": "Rental calculator"
   }

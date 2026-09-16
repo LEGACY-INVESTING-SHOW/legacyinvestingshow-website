@@ -83,7 +83,7 @@ Primary route:
 Purpose:
 - answer decision-stage queries
 - compare strategy A vs strategy B
-- compare education programs and money teachers with public prices
+- compare education programs with our wealth plan; competitor prices are public; we do not print our tuition on compare pages
 - make tradeoffs explicit
 - help buyers and planners choose under real-world constraints
 
@@ -96,7 +96,7 @@ Representative examples:
 - https://www.legacyinvestingshow.com/compare/subto-alternatives
 - https://www.legacyinvestingshow.com/compare/money-guy-foo-vs-ramsey-baby-steps
 - https://www.legacyinvestingshow.com/compare/wealthability-alternatives
-- https://www.legacyinvestingshow.com/compare/legacy-wealth-blueprint-cost
+- https://www.legacyinvestingshow.com/compare/legacy-wealth-blueprint-what-to-know
 - https://www.legacyinvestingshow.com/compare/anderson-platinum-vs-tax-course
 - https://www.legacyinvestingshow.com/compare/401k-vs-rental-property
 - https://www.legacyinvestingshow.com/compare/wealth-plan-checklist-high-earners

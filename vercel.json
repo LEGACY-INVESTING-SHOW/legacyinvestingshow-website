@@ -547,6 +547,21 @@
       "permanent": true
     },
     {
+      "source": "/compare/legacy-wealth-blueprint-cost",
+      "destination": "/compare/legacy-wealth-blueprint-what-to-know",
+      "permanent": true
+    },
+    {
+      "source": "/compare/legacy-wealth-blueprint-cost/",
+      "destination": "/compare/legacy-wealth-blueprint-what-to-know",
+      "permanent": true
+    },
+    {
+      "source": "/compare/legacy-wealth-blueprint-cost.html",
+      "destination": "/compare/legacy-wealth-blueprint-what-to-know",
+      "permanent": true
+    },
+    {
       "source": "/blog/preston-seo-review",
       "destination": "/reviews",
       "permanent": true

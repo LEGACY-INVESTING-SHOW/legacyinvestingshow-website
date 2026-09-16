@@ -1,58 +1,43 @@
 {
   "type": "vs",
   "slug": "anderson-platinum-vs-tax-course",
-  "title": "Anderson Platinum vs a Tax Course",
-  "h1": "Anderson Platinum vs a tax course",
-  "keyLine": "One is attorney access. The other is lessons. Tax filing is a third bill.",
-  "description": "Anderson Platinum vs a tax course: $3,495 plus $75 a month attorney membership compared with education-only classes. Jobs differ. We sell a plan.",
-  "query": "Anderson Platinum vs a tax course",
-  "answer": "Anderson Platinum is a legal, tax, and asset protection membership. Their Platinum page listed $3,495 to enroll plus $75 a month on September 15, 2026. It sells attorney access, document review, and a Q and A room. Their own FAQ said tax filing packages are not included. A tax course sells lessons. It does not replace an attorney, and it does not sign your return. Use Platinum when you already have entities and constant legal questions. Use a course when you need vocabulary. Use a CPA when you need a signed Form 1040.",
-  "criteriaIntro": "This is a job split, not another vendor trophy. Named class prices are examples. For a longer tax-program table, use the September 2026 blog we already published.",
+  "title": "Anderson Platinum vs Our Wealth Plan",
+  "h1": "Anderson Platinum vs our wealth plan",
+  "keyLine": "One is attorney access. Ours is a 12-month written order. Tax filing is a third bill.",
+  "description": "Anderson Platinum compared with Legacy Wealth Blueprint: attorney membership vs a written wealth plan. Public Platinum price. We do not print our tuition.",
+  "query": "Anderson Platinum vs Legacy Wealth Blueprint",
+  "answer": "Anderson Platinum is a legal, tax, and asset protection membership. Their page listed $3,495 to enroll plus $75 a month on September 15, 2026. It sells attorney access and document review. Their FAQ said tax filing packages are not included. Legacy Wealth Blueprint is Preston Seo's 12-month wealth plan: a written snapshot from your numbers, a guide, weekly coaching, and a CPA brief. You keep your CPA. We do not publish our tuition here. Use Platinum when you already have entities and constant legal questions. Use us when you want tax, debt, and investing in one order. Hire a CPA when you need a signed Form 1040.",
+  "criteriaIntro": "The comparison pole is our wealth plan, not a generic tax course bake-off. Named class prices are examples only.",
   "criteria": [
     "Anderson facts come from the live Platinum page we opened.",
-    "A 'tax course' means education-only: videos, calls, or a written plan that does not file.",
+    "Blueprint facts come from our membership page and about page.",
     "We do not clone the TaxFreeCEO or tax-program roundup tables.",
-    "We include our own plan and say we sell it."
+    "We do not publish our fee here."
   ],
   "blocks": [
     {
+      "type": "prose",
+      "id": "preston",
+      "heading": "What we actually sell",
+      "paragraphs": [
+        "[Preston Seo](/about) built Legacy Investing Show after a corporate job and a $15M+ portfolio with his wife. [Blueprint](/legacy-wealth-blueprint) is the 12-month plan from that work: tax, debt, income, investing, and protection in one written order. It is education and coaching. It is not a law firm.",
+        "Anderson Platinum is a different job: attorneys and documents on tap. A cheap tax video is a third job. Do not buy all three unless you can name why."
+      ]
+    },
+    {
       "type": "table",
       "id": "jobs",
-      "heading": "Who does which job",
-      "caption": "Membership, class, and preparer are three bills.",
+      "heading": "Attorney membership vs our plan",
+      "caption": "Membership, wealth plan, and preparer are three bills.",
       "wide": true,
-      "headers": ["Job", "Anderson Platinum", "Tax course", "CPA / EA"],
+      "headers": ["Job", "Anderson Platinum", "Legacy Wealth Blueprint"],
       "rows": [
-        [
-          "Teaches ideas",
-          "Yes, they advertise training and office hours",
-          "Yes, that is the product",
-          "Sometimes, if they like teaching"
-        ],
-        [
-          "Attorney on tap",
-          "Yes, that is the offer they publish",
-          "No",
-          "Only if your CPA firm also has attorneys, billed as legal work"
-        ],
-        [
-          "Reviews contracts",
-          "They advertise attorney-reviewed documents and a template library",
-          "No",
-          "Not a standard 1040 engagement"
-        ],
-        [
-          "Signs Form 1040",
-          "No. Their FAQ said tax packages are extra",
-          "No",
-          "Yes, if they prepare it"
-        ],
-        [
-          "Written wealth order (tax plus debt plus investing)",
-          "Not the product they describe",
-          "Only if the course is built that way",
-          "Only if you pay planning hours"
-        ]
+        ["Teaches a money order", "They advertise training and office hours", "Yes. A written 12-month Wealth Strategy Snapshot"],
+        ["Attorney on tap", "Yes, that is the offer they publish", "No. We are not a law firm"],
+        ["Reviews contracts", "They advertise attorney-reviewed documents and a template library", "No. That is legal work"],
+        ["Signs Form 1040", "No. Their FAQ said tax packages are extra", "No. You keep your CPA. We write a brief"],
+        ["Debt, payroll, investing in one plan", "Not the product they describe", "Yes. That is the product"],
+        ["Price we can copy", "$3,495 to enroll plus $75 a month, as of 2026-09-15", "Not published here. Ask on a strategy call"]
       ]
     },
     {
@@ -60,17 +45,17 @@
       "id": "what-platinum-is",
       "heading": "What Anderson Platinum is",
       "paragraphs": [
-        "The [Platinum membership page](https://andersonadvisors.com/platinum-membership/) we opened on September 15, 2026 listed $3,495 enrollment plus $75 a month. It advertises unlimited strategy sessions, attorney-reviewed documents (they say up to two contracts a month on that page), a template library, and a live Q and A room. Treat feature lists as seller copy. We are not members for this briefing.",
-        "Their FAQ on that same page said tax packages are not included in Platinum. You can still ask tax questions in office hours. Filing is a separate product. That is the line people miss."
+        "The [Platinum membership page](https://andersonadvisors.com/platinum-membership/) we opened on September 15, 2026 listed $3,495 enrollment plus $75 a month. It advertises unlimited strategy sessions, attorney-reviewed documents, a template library, and a live Q and A room. Treat feature lists as seller copy. We are not members for this briefing.",
+        "Their FAQ on that same page said tax packages are not included in Platinum. You can still ask tax questions in office hours. Filing is a separate product."
       ]
     },
     {
       "type": "prose",
       "id": "what-a-course-is",
-      "heading": "What a tax course is",
+      "heading": "Where a tax class sits",
       "paragraphs": [
-        "A tax course is lessons. Cheap public examples: [WealthAbility Live](https://www.wealthability.com/wealthability-live/) at $197 a month. Our own Blueprint at $9,800 is a written plan plus coaching, still education. We do not file. See [Legacy Wealth Blueprint cost](/compare/legacy-wealth-blueprint-cost).",
-        "If you want a named list of other classes, use [best tax strategy programs for W-2 earners over $250k](/blog/best-tax-strategy-programs-w2-earners-over-250k) and [TaxFreeCEO alternatives](/blog/taxfreeceo-alternatives). Those posts already include Platinum as a row. This URL will not paste that table again."
+        "A tax course is lessons. [WealthAbility Live](https://www.wealthability.com/wealthability-live/) is a public example at $197 a month. That is still not Blueprint, and it is not Platinum. If you want a named list of other classes, use [best tax strategy programs for W-2 earners over $250k](/blog/best-tax-strategy-programs-w2-earners-over-250k). This URL will not paste that table.",
+        "If the job is class vs filer, read [tax course vs a CPA](/compare/tax-course-vs-cpa)."
       ]
     },
     {
@@ -78,20 +63,20 @@
       "variant": "gold",
       "label": "Three bills, not one",
       "paragraphs": [
-        "People buy Platinum and think the return is filed. People buy a class and think an attorney will review the lease. Budget the membership, the class, and the preparer as separate lines, then drop the ones you do not need."
+        "People buy Platinum and think the return is filed. People buy a class and think an attorney will review the lease. People buy Blueprint and think we sign Form 1040. Budget membership, plan, and preparer as separate lines, then drop the ones you do not need."
       ]
     }
   ],
   "whoFits": [
-    "You are choosing attorney membership versus education-only, not shopping eight tax brands.",
+    "You are choosing attorney membership versus a written wealth plan.",
     "You already have, or you are about to form, entities and you keep asking legal questions."
   ],
   "whoSkips": [
     "You want a ranked list of tax vendors. Use the [W-2 tax program roundup](/blog/best-tax-strategy-programs-w2-earners-over-250k).",
-    "You need a return filed this month. Hire a CPA or EA today. See [tax course vs a CPA](/compare/tax-course-vs-cpa)."
+    "You need a return filed this month. Hire a CPA or EA today."
   ],
-  "costIntro": "Anderson's printed membership price plus example education prices. CPA fees are not a national sticker.",
-  "costCaption": "Public prices for membership vs education-only.",
+  "costIntro": "Anderson's printed membership price. Our tuition is not in this table.",
+  "costCaption": "Public Platinum price vs our unpublished fee.",
   "costRows": [
     {
       "name": "Anderson Platinum",
@@ -108,11 +93,11 @@
       "sourceUrl": "https://www.wealthability.com/wealthability-live/"
     },
     {
-      "name": "Legacy Wealth Blueprint (education plus coaching)",
-      "price": "$9,800 cash or card. We do not file your return.",
-      "asOf": "2026-09-15",
-      "sourceLabel": "Legacy Wealth Blueprint cost",
-      "sourceUrl": "https://www.legacyinvestingshow.com/compare/legacy-wealth-blueprint-cost"
+      "name": "Legacy Wealth Blueprint",
+      "price": "Not published here. We do not file your return. Ask on a strategy call.",
+      "asOf": "2026-09-16",
+      "sourceLabel": "Legacy Wealth Blueprint",
+      "sourceUrl": "https://www.legacyinvestingshow.com/legacy-wealth-blueprint"
     },
     {
       "name": "Tax filing",
@@ -123,15 +108,14 @@
     }
   ],
   "questionsBeforeBuying": [
-    "Do I need an attorney this quarter, or do I need vocabulary?",
+    "Do I need an attorney this quarter, or a written money order?",
     "Who will sign Form 1040, and is that fee extra?",
     "How many entities and contracts do I actually have?",
-    "If I buy Platinum, what tax package is still extra?",
     "Am I duplicating a class I already own?"
   ],
   "nextSteps": [
+    "If the job is our plan, read [what's in Blueprint](/compare/legacy-wealth-blueprint-what-to-know).",
     "If the job is class vs filer, read [tax course vs a CPA](/compare/tax-course-vs-cpa).",
-    "If the job is WealthAbility-style school, read [WealthAbility alternatives](/compare/wealthability-alternatives).",
     "If you invest in property, keep [tax strategies for real estate investors](/tax-strategies/for/real-estate-investors) next to any membership."
   ],
   "faqs": [
@@ -140,8 +124,8 @@
       "a": "The Platinum page FAQ we opened said tax packages are not included. Confirm on their live page before you pay."
     },
     {
-      "q": "Is Platinum cheaper than a $9,800 plan?",
-      "a": "Year one at their printed numbers is $3,495 plus twelve times $75, which is $4,395 if the monthly fee runs the whole year. That is still a different product from a wealth plan. Cheaper is not the same job."
+      "q": "Is Blueprint cheaper than Platinum?",
+      "a": "We do not publish our tuition here, so we will not run that math. They are different jobs. Ask both for a written fee, then pick the job you actually need."
     },
     {
       "q": "Can a tax course replace Platinum?",
@@ -161,28 +145,28 @@
       "asOf": "2026-09-15"
     },
     {
-      "label": "Tax programs for W-2 earners over $250k",
-      "url": "https://www.legacyinvestingshow.com/blog/best-tax-strategy-programs-w2-earners-over-250k",
-      "asOf": "2026-09-15"
+      "label": "Legacy Wealth Blueprint",
+      "url": "https://www.legacyinvestingshow.com/legacy-wealth-blueprint",
+      "asOf": "2026-09-16"
     },
     {
-      "label": "FTC coaching scam guidance",
-      "url": "https://consumer.ftc.gov/articles/when-business-offer-or-coaching-program-scam",
-      "asOf": "2026-09-15"
+      "label": "About Preston Seo",
+      "url": "https://www.legacyinvestingshow.com/about",
+      "asOf": "2026-09-16"
     }
   ],
   "related": [
+    { "href": "/compare/legacy-wealth-blueprint-what-to-know", "label": "What's in Legacy Wealth Blueprint" },
     { "href": "/compare/tax-course-vs-cpa", "label": "Tax course vs a CPA" },
     { "href": "/compare/wealthability-alternatives", "label": "WealthAbility alternatives" },
-    { "href": "/blog/taxfreeceo-alternatives", "label": "TaxFreeCEO alternatives" },
-    { "href": "/tax-strategies/for/real-estate-investors", "label": "Tax strategies for real estate investors" }
+    { "href": "/about", "label": "Preston Seo's story" }
   ],
   "cta": {
     "title": "Name the bill",
-    "body": "If you need an attorney, that is a membership conversation. If you need ideas, take a class. If you need a signed return, hire a preparer. Our plan is the written-order option, and you still keep the CPA.",
-    "primaryHref": "/compare/tax-course-vs-cpa",
-    "primaryLabel": "Course vs a CPA",
-    "secondaryHref": "/compare/legacy-wealth-blueprint-cost",
-    "secondaryLabel": "Blueprint cost"
+    "body": "If you need an attorney, that is a membership conversation. If you need a written 12-month order, that is Blueprint, and you still keep the CPA.",
+    "primaryHref": "/legacy-wealth-blueprint",
+    "primaryLabel": "How Blueprint works",
+    "secondaryHref": "/compare/tax-course-vs-cpa",
+    "secondaryLabel": "Course vs a CPA"
   }
 }

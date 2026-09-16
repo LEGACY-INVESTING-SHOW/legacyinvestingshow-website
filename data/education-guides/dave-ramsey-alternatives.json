@@ -2,19 +2,28 @@
   "type": "alternatives",
   "slug": "dave-ramsey-alternatives",
   "title": "Dave Ramsey Alternatives",
-  "h1": "Dave Ramsey alternatives after the Baby Steps",
-  "keyLine": "Ramsey is strong on consumer debt. It is not the last word on tax or rentals.",
-  "description": "What to use after Dave Ramsey or Financial Peace University: free Baby Steps, Money Guy FOO, fee-only help, tax class, or real estate school. Dated public prices.",
+  "h1": "Dave Ramsey vs our wealth plan",
+  "keyLine": "Ramsey is strong on consumer debt. Our plan is a 12-month order after that fire is out.",
+  "description": "Dave Ramsey and Financial Peace University compared with Legacy Wealth Blueprint. Public FPU price. Preston Seo's path. We do not print our tuition.",
   "query": "Dave Ramsey alternatives",
-  "answer": "Dave Ramsey's company, Ramsey Solutions, teaches a simple order: get out of consumer debt, then save, then invest. Financial Peace University is their nine-week class. Their class page listed $99.99 for a household on September 15, 2026, and a spouse is included. If you already live that plan, you may want a next step: a different dollar order, a tax class, or real estate school. Those are not 'better Ramsey.' They do a different job.",
-  "criteriaIntro": "We compared Ramsey to other live education brands that high earners actually search after they finish the Baby Steps. We did not treat church budget classes as competitors unless they publish a national offer we could open.",
+  "answer": "Dave Ramsey's company, Ramsey Solutions, teaches a simple order: get out of consumer debt, then save, then invest. Financial Peace University is their nine-week class. Their class page listed $99.99 for a household on September 15, 2026, and a spouse is included. Legacy Wealth Blueprint is Preston Seo's 12-month wealth plan for people who already earn well: a written snapshot from your numbers, a dedicated guide, weekly coaching, and a CPA brief. He built that after 2017 debt, a corporate job he left, a house-hacked duplex, and a $15M+ portfolio with his wife. Stay with Ramsey if cards are the fire. Use us when expensive debt is gone and tax, investing, and protection need one order. We do not publish our tuition here.",
+  "criteriaIntro": "The comparison pole is Ramsey versus our wealth plan. FOO is named as a cheap map, not as a third winner we crown.",
   "criteria": [
-    "The option is a money education brand or a licensed professional service, not a random app.",
-    "We can describe the method in plain words from a public page.",
+    "Ramsey facts come from the live FPU and Baby Steps pages.",
+    "Blueprint facts come from our membership page and about page.",
     "We do not repeat Ramsey marketing averages as our own facts.",
-    "We include our own program and say so."
+    "We do not publish our fee here."
   ],
   "blocks": [
+    {
+      "type": "prose",
+      "id": "preston",
+      "heading": "Where Preston sits after the Baby Steps",
+      "paragraphs": [
+        "[Preston Seo](/about) started in debt in 2017. He left a corporate job, house-hacked a duplex while in sales, and with his wife built a $15M+ portfolio. He did not stay in a spending class as the whole plan. He put tax, cash flow, and ownership in one system. That system is [Legacy Wealth Blueprint](/legacy-wealth-blueprint).",
+        "Ramsey still matters. If credit cards are the fire, finish that work first. Blueprint is a poor fit while lifestyle debt is running."
+      ]
+    },
     {
       "type": "prose",
       "id": "what-ramsey-is",
@@ -22,40 +31,30 @@
       "paragraphs": [
         "[Financial Peace University](https://www.ramseysolutions.com/money/financial-peace) is nine video lessons, a workbook, and three months of the EveryDollar budget app. You can take it in a group or on your own. The [class finder](https://www.ramseysolutions.com/money/financial-peace/class) said 'Only $99.99 to start FPU' when we opened it on September 15, 2026. The main FPU page also uses '$100' and '$80' in ads, so treat $99.99 as the class-page figure and confirm at checkout.",
         "Ramsey Solutions also publishes the Baby Steps, a free order for debt and saving. The Ramsey Show is free to hear. You do not need to pay to learn the basic plan.",
-        "Ramsey is clear that almost all debt is bad, including most mortgages you could invest around. That view helps people who are drowning in credit cards. It clashes with people who already have a paid-off emergency fund and want a rental or a tax plan. Neither view is a moral test. It is a job fit."
+        "Ramsey is clear that almost all debt is bad, including most mortgages you could invest around. That view helps people who are drowning in credit cards. It clashes with people who already have a paid-off emergency fund and want a tax plan. Neither view is a moral test. It is a job fit."
       ]
     },
     {
-      "type": "options",
-      "id": "after-baby-steps",
-      "heading": "If you already did the hard debt work",
-      "intro": "Pick the next teacher by the next problem.",
-      "items": [
-        {
-          "name": "The Money Guy Show (FOO)",
-          "summary": "Brian Preston and Bo Hanson publish a nine-step [Financial Order of Operations](https://moneyguy.com/guide/foo/). The guide we opened was marked last updated July 29, 2026. The order is: cover insurance deductibles, take the employer 401(k) match, kill high-interest debt, build cash, then Roth and HSA, then max work plans. The guide and [learn page](https://learn.moneyguy.com/financial-order-of-operations-course) listed the FOO course at $49 (the learn page called it a sale from $249). Full split: [FOO vs Baby Steps](/compare/money-guy-foo-vs-ramsey-baby-steps).",
-          "meta": "Job: a dollar order that invests earlier than Ramsey"
-        },
-        {
-          "name": "A fee-only planner",
-          "summary": "Pay a person who is paid only by you. Ask if they are a fiduciary, which means they must put your interest first. This is advice on your file, not a class. Fees vary and are often not on a homepage.",
-          "meta": "Job: a plan for your household"
-        },
-        {
-          "name": "A CPA for tax",
-          "summary": "A certified public accountant is a licensed tax pro. If your pain is a six-figure W-2 bill, a class about envelopes will not change the return. See [tax course vs hiring a CPA](/compare/tax-course-vs-cpa).",
-          "meta": "Job: the actual tax return"
-        },
-        {
-          "name": "BiggerPockets",
-          "summary": "Use this only if you want to study rentals. Free podcasts first. Paid Pro is for calculators and forms. See [what to know before BiggerPockets Pro](/compare/biggerpockets-what-to-know).",
-          "meta": "Job: rental education, not debt payoff"
-        },
-        {
-          "name": "Legacy Wealth Blueprint",
-          "summary": "Our 12-month plan for tax, debt, income, investing, and protection. We publish $9,800 cash or card. It is a poor fit if you still carry credit-card balances you cannot pay. Finish expensive debt first. Details: [Legacy Wealth Blueprint](/legacy-wealth-blueprint).",
-          "meta": "Job: one written plan after the basics. We sell this."
-        }
+      "type": "table",
+      "id": "vs-us",
+      "heading": "Ramsey vs Legacy Wealth Blueprint",
+      "caption": "Spending class on the left. Written wealth plan on the right.",
+      "wide": true,
+      "headers": ["Question", "Ramsey / FPU", "Legacy Wealth Blueprint"],
+      "rows": [
+        ["Main product", "Baby Steps plus a nine-week class on spending and debt", "A 12-month written Wealth Strategy Snapshot plus a coach"],
+        ["When you invest", "After consumer debt is gone, then 15 percent", "Match and high-interest debt still come first. Then tax and investing from your return"],
+        ["Tax in depth", "Not a tax class", "Prior-year return review and a CPA Implementation Brief. You keep your CPA"],
+        ["Who it is for", "Households still fighting credit cards and chaos", "People earning $100K or more who need one order after the basics"],
+        ["Price we can copy", "Baby Steps are free. FPU listed $99.99 per household", "Not published here. Ask on a strategy call"]
+      ]
+    },
+    {
+      "type": "prose",
+      "id": "cheap-map",
+      "heading": "A cheap map if you are not buying either yet",
+      "paragraphs": [
+        "The Money Guy [Financial Order of Operations](https://moneyguy.com/guide/foo/) is a free nine-step map. The guide we opened was marked last updated July 29, 2026. It takes the employer 401(k) match earlier than Ramsey. We are not ranking FOO over Ramsey here. That split lives on [FOO or Ramsey vs our wealth plan](/compare/money-guy-foo-vs-ramsey-baby-steps). Use either map until expensive debt is gone."
       ]
     },
     {
@@ -65,27 +64,18 @@
       "paragraphs": [
         "Ramsey Solutions advertises average class results, such as debt paid in 90 days. Those are their marketing claims. We did not audit them. Use them as a seller's statement, not as a promise to you."
       ]
-    },
-    {
-      "type": "prose",
-      "id": "when-to-stay",
-      "heading": "When to stay with Ramsey",
-      "paragraphs": [
-        "Stay if credit cards, car loans, or chaos around spending are still the main fire. A $99.99 class that makes two spouses talk once a week can be cheaper than a $9,800 plan you will not use.",
-        "Leave the Ramsey lane when the debt is gone, the 401(k) match is on, and the next question is tax, equity, or a business. That is a different library. Our [wealth plan checklist](/compare/wealth-plan-checklist-high-earners) is built for that stage."
-      ]
     }
   ],
   "whoFits": [
-    "You finished, or almost finished, consumer debt payoff and you want a next teacher.",
-    "You like Ramsey on spending, but you need tax or rental help he does not teach in depth."
+    "You finished, or almost finished, consumer debt and you are choosing Ramsey versus a written wealth plan.",
+    "You like Ramsey on spending, but you need tax and investing in one order next."
   ],
   "whoSkips": [
     "You still have high-interest credit-card debt and no budget. Start with Ramsey's free show or FPU.",
-    "You want us to dunk on Dave. We will not. The method works for a lot of households in debt."
+    "You want us to dunk on Dave. We will not."
   ],
-  "costIntro": "Public prices only. Ramsey's ads on one page use more than one dollar figure, so we cite the class finder.",
-  "costCaption": "Published prices for Ramsey and nearby education options.",
+  "costIntro": "Public Ramsey prices. Our tuition stays off this table.",
+  "costCaption": "Published FPU price vs our unpublished fee.",
   "costRows": [
     {
       "name": "Ramsey Show and Baby Steps content",
@@ -102,47 +92,39 @@
       "sourceUrl": "https://www.ramseysolutions.com/money/financial-peace/class"
     },
     {
-      "name": "Money Guy FOO guide and course",
-      "price": "Guide is free. Course listed at $49 on the guide and learn pages (sale copy from $249). Product page we opened did not reprint the number.",
+      "name": "Money Guy FOO guide",
+      "price": "Free article, last updated July 29, 2026",
       "asOf": "2026-09-15",
       "sourceLabel": "Money Guy FOO guide",
       "sourceUrl": "https://moneyguy.com/guide/foo/"
     },
     {
-      "name": "BiggerPockets Pro",
-      "price": "$32.50 a month billed yearly, per a March 2026 staff post",
-      "asOf": "2026-09-15",
-      "sourceLabel": "BiggerPockets staff post",
-      "sourceUrl": "https://www.biggerpockets.com/forums/48/topics/1280018-new-to-biggerpockets-pro-insurance-and-loan-discounts"
-    },
-    {
       "name": "Legacy Wealth Blueprint",
-      "price": "$9,800 cash or card, as we publish on this site",
-      "asOf": "2026-09-15",
-      "sourceLabel": "Legacy Wealth Blueprint cost",
-      "sourceUrl": "https://www.legacyinvestingshow.com/compare/legacy-wealth-blueprint-cost"
+      "price": "Not published here. Ask on a strategy call. Poor fit if cards are still running.",
+      "asOf": "2026-09-16",
+      "sourceLabel": "Legacy Wealth Blueprint",
+      "sourceUrl": "https://www.legacyinvestingshow.com/legacy-wealth-blueprint"
     }
   ],
   "questionsBeforeBuying": [
-    "Is my next problem debt behavior, tax math, or a rental?",
+    "Is my next problem debt behavior, or tax and investing in one order?",
     "Have I used the free Ramsey Show for 30 days yet?",
     "If I buy FPU, is my spouse in the room?",
-    "If I buy a wealth plan, can I pay without new credit-card debt?",
-    "Who will look at my actual tax return?"
+    "If I want Blueprint, can I pay without new credit-card debt?"
   ],
   "nextSteps": [
     "If debt is the fire, open the [debt topic hub](/topics/debt-management) and the [monthly budget planner](/tools/monthly-budget-planner).",
-    "If the 401(k) is the next dollar fight, read [401(k) vs a rental](/compare/401k-vs-rental-property).",
+    "If you want the plan Preston teaches, read [what's in Blueprint](/compare/legacy-wealth-blueprint-what-to-know).",
     "If tax is the next fight, read [tax strategies for W-2 employees](/tax-strategies/for/w2-employees)."
   ],
   "faqs": [
     {
       "q": "Is Financial Peace University worth $99.99?",
-      "a": "It can be if you need a nine-week group to change spending. It will not lower a high W-2 tax bill by itself. Confirm the live checkout price. The main marketing page uses more than one number."
+      "a": "It can be if you need a nine-week group to change spending. It will not lower a high W-2 tax bill by itself. Confirm the live checkout price."
     },
     {
-      "q": "What is a fair Ramsey alternative for investing?",
-      "a": "The Money Guy FOO is the closest free map that still puts high-interest debt early, then invests in Roth, HSA, and work plans. It is not anti-Ramsey. It just invests sooner than 'all debt including the house.' See [FOO vs Baby Steps](/compare/money-guy-foo-vs-ramsey-baby-steps)."
+      "q": "Is Blueprint a Ramsey alternative?",
+      "a": "Only after expensive debt is gone. Blueprint is a 12-month plan for tax, debt, and investing together. It is not a $99.99 spending class."
     },
     {
       "q": "Should a high earner skip Ramsey?",
@@ -167,23 +149,28 @@
       "note": "Page listed last updated July 29, 2026."
     },
     {
+      "label": "About Preston Seo",
+      "url": "https://www.legacyinvestingshow.com/about",
+      "asOf": "2026-09-16"
+    },
+    {
       "label": "FTC coaching scam guidance",
       "url": "https://consumer.ftc.gov/articles/when-business-offer-or-coaching-program-scam",
       "asOf": "2026-09-15"
     }
   ],
   "related": [
-    { "href": "/compare/money-guy-foo-vs-ramsey-baby-steps", "label": "Money Guy FOO vs Ramsey Baby Steps" },
+    { "href": "/compare/legacy-wealth-blueprint-what-to-know", "label": "What's in Legacy Wealth Blueprint" },
+    { "href": "/compare/money-guy-foo-vs-ramsey-baby-steps", "label": "FOO or Ramsey vs our wealth plan" },
     { "href": "/compare/401k-vs-rental-property", "label": "401(k) vs rental property" },
-    { "href": "/compare/mortgage-payoff-vs-investing", "label": "Pay off the mortgage vs invest" },
-    { "href": "/compare/legacy-wealth-blueprint-cost", "label": "Legacy Wealth Blueprint cost" }
+    { "href": "/about", "label": "Preston Seo's story" }
   ],
   "cta": {
     "title": "Past the Baby Steps?",
-    "body": "If expensive debt is gone and the tax bill is the leak, use the W-2 tax map next. Do not buy a rental class to fix a payroll problem.",
-    "primaryHref": "/tax-strategies/for/w2-employees",
-    "primaryLabel": "W-2 tax strategies",
-    "secondaryHref": "/legacy-wealth-blueprint",
-    "secondaryLabel": "How our wealth plan works"
+    "body": "If expensive debt is gone and the tax bill is the leak, read how Blueprint is built. Do not buy a rental class to fix a payroll problem.",
+    "primaryHref": "/legacy-wealth-blueprint",
+    "primaryLabel": "How Blueprint works",
+    "secondaryHref": "/tax-strategies/for/w2-employees",
+    "secondaryLabel": "W-2 tax strategies"
   }
 }

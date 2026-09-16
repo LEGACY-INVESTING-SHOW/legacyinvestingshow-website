@@ -3,17 +3,27 @@
   "slug": "wealth-plan-checklist-high-earners",
   "title": "Wealth Plan Checklist for High Earners",
   "h1": "Wealth plan checklist for high earners",
-  "keyLine": "Export your own facts first. Then pick a class. Do not buy a plan you cannot describe on one page.",
-  "description": "A practical wealth-plan checklist for high earners: accounts, debt, tax, insurance, and rentals. Printable steps, IRS 2026 figures, and free calculators.",
+  "keyLine": "Export your own facts first. Then look at Preston's 12-month plan. Do not buy a plan you cannot describe on one page.",
+  "description": "A wealth-plan checklist for high earners plus what Legacy Wealth Blueprint adds: Preston Seo's path, IRS 2026 figures, and free tools. No public tuition.",
   "query": "wealth plan checklist for high earners",
-  "answer": "A wealth plan is a written order for your next dollar. It is not a vibe. High earners skip this and buy a course. Do the opposite. Pull statements. List debts. Note the 401(k) match. Then decide if you need a class, a CPA, or a rental. This page is the worksheet. 2026 IRS 401(k) and HSA numbers are included so you can see empty room. Nothing here is a filing position.",
-  "criteriaIntro": "Items are things you can finish in a week with statements you already get. We only cite IRS figures we opened.",
+  "answer": "A wealth plan is a written order for your next dollar. It is not a vibe. High earners skip this and buy a course. Do the opposite. Pull statements. List debts. Note the 401(k) match. Legacy Wealth Blueprint is the 12-month format Preston Seo uses after a corporate job, a house-hacked duplex, and a $15M+ portfolio with his wife: a Wealth Strategy Snapshot, a dedicated guide, weekly coaching, and a CPA brief. This page is the worksheet you can finish without buying anything. We do not publish our tuition here. 2026 IRS 401(k) and HSA numbers are included so you can see empty room.",
+  "criteriaIntro": "Items are things you can finish in a week with statements you already get. We only cite IRS figures we opened. Blueprint is optional.",
   "criteria": [
     "Each step produces a number or a document.",
     "Links go to a calculator or a guide on this site when one exists.",
-    "No invented net-worth targets."
+    "No invented net-worth targets.",
+    "We do not publish our fee here."
   ],
   "blocks": [
+    {
+      "type": "prose",
+      "id": "preston",
+      "heading": "What a finished plan looks like here",
+      "paragraphs": [
+        "[Preston Seo](/about) started in debt in 2017, left a corporate path, and with his wife built a $15M+ portfolio. [Legacy Wealth Blueprint](/legacy-wealth-blueprint) turns a folder like this into a written Wealth Strategy Snapshot, then a year of a dedicated guide, weekly coaching, and a CPA Implementation Brief. You keep your CPA. You do not have to buy a rental on day one.",
+        "The checklist still works if you never buy Blueprint. Named client work is on [reviews](/reviews)."
+      ]
+    },
     {
       "type": "check",
       "id": "week-one",
@@ -58,7 +68,8 @@
         "I know whether I still have 401(k) or HSA room.",
         "I have a written price, refund rule, and who I will talk to.",
         "I will not pay the fee with a card I cannot clear.",
-        "I read the [FTC coaching page](https://consumer.ftc.gov/articles/when-business-offer-or-coaching-program-scam)."
+        "I read the [FTC coaching page](https://consumer.ftc.gov/articles/when-business-offer-or-coaching-program-scam).",
+        "I read [what's in Blueprint](/compare/legacy-wealth-blueprint-what-to-know) if that is the call."
       ]
     },
     {
@@ -66,7 +77,7 @@
       "variant": "gold",
       "label": "If you want our format",
       "paragraphs": [
-        "Legacy Wealth Blueprint builds a written Wealth Strategy Snapshot from your numbers, then a year of coaching. We publish $9,800 cash or card. It is optional. This checklist still works if you never buy it. See [how Blueprint works](/legacy-wealth-blueprint) and [reviews](/reviews)."
+        "Blueprint builds a written Wealth Strategy Snapshot from your numbers, then a year of coaching. Tuition is confirmed on a strategy call, not on this page. This checklist still works if you never buy it."
       ]
     }
   ],
@@ -76,9 +87,9 @@
   ],
   "whoSkips": [
     "You need crisis debt help this week. Call a nonprofit credit counselor and use the [debt hub](/topics/debt-management).",
-    "You want a downloadable XLS with macros. Use the linked calculators. We are not shipping a spreadsheet farm."
+    "You want a downloadable XLS with macros. Use the linked calculators."
   ],
-  "costIntro": "The checklist is free. Nearby paid options are listed so you do not mix them up with IRS limits.",
+  "costIntro": "The checklist is free. Our tuition stays off this table.",
   "costCaption": "Free tools vs optional paid plan.",
   "costRows": [
     {
@@ -97,10 +108,10 @@
     },
     {
       "name": "Legacy Wealth Blueprint (optional)",
-      "price": "$9,800 cash or card, as we publish on this site",
-      "asOf": "2026-09-15",
-      "sourceLabel": "Legacy Wealth Blueprint cost",
-      "sourceUrl": "https://www.legacyinvestingshow.com/compare/legacy-wealth-blueprint-cost"
+      "price": "Not published here. Ask on a strategy call.",
+      "asOf": "2026-09-16",
+      "sourceLabel": "Legacy Wealth Blueprint",
+      "sourceUrl": "https://www.legacyinvestingshow.com/legacy-wealth-blueprint"
     }
   ],
   "questionsBeforeBuying": [
@@ -111,7 +122,7 @@
   ],
   "nextSteps": [
     "Fill the week-one folder today.",
-    "Open [best wealth education for high earners](/compare/best-wealth-education-high-earners) only after the folder exists.",
+    "Read [what's in Blueprint](/compare/legacy-wealth-blueprint-what-to-know) only after the folder exists.",
     "Bring the folder to a CPA if your facts include a business or a rental."
   ],
   "faqs": [
@@ -140,23 +151,33 @@
       "asOf": "2026-09-15"
     },
     {
+      "label": "About Preston Seo",
+      "url": "https://www.legacyinvestingshow.com/about",
+      "asOf": "2026-09-16"
+    },
+    {
+      "label": "Legacy Wealth Blueprint",
+      "url": "https://www.legacyinvestingshow.com/legacy-wealth-blueprint",
+      "asOf": "2026-09-16"
+    },
+    {
       "label": "FTC coaching guidance",
       "url": "https://consumer.ftc.gov/articles/when-business-offer-or-coaching-program-scam",
       "asOf": "2026-09-15"
     }
   ],
   "related": [
-    { "href": "/compare/legacy-wealth-blueprint-cost", "label": "Legacy Wealth Blueprint cost" },
+    { "href": "/compare/legacy-wealth-blueprint-what-to-know", "label": "What's in Legacy Wealth Blueprint" },
     { "href": "/compare/tax-course-vs-cpa", "label": "Tax course vs a CPA" },
     { "href": "/compare/401k-vs-rental-property", "label": "401(k) vs rental property" },
-    { "href": "/tax-strategies/for/high-income-earners", "label": "Tax strategies for high-income earners" }
+    { "href": "/about", "label": "Preston Seo's story" }
   ],
   "cta": {
     "title": "Do the folder first",
     "body": "If you want a coach to turn the folder into a 12-month snapshot, read Blueprint. If you only needed the order, stop here and use the tax hub.",
-    "primaryHref": "/tools/monthly-budget-planner",
-    "primaryLabel": "Budget planner",
-    "secondaryHref": "/legacy-wealth-blueprint",
-    "secondaryLabel": "Legacy Wealth Blueprint"
+    "primaryHref": "/legacy-wealth-blueprint",
+    "primaryLabel": "How Blueprint works",
+    "secondaryHref": "/tools/monthly-budget-planner",
+    "secondaryLabel": "Budget planner"
   }
 }

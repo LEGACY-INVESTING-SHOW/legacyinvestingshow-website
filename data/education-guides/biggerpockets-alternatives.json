@@ -2,19 +2,28 @@
   "type": "alternatives",
   "slug": "biggerpockets-alternatives",
   "title": "BiggerPockets Alternatives",
-  "h1": "BiggerPockets alternatives, by the job you need done",
-  "keyLine": "Match the next site or class to the job, not to a brand.",
-  "description": "Honest BiggerPockets alternatives by job: free community, deal math, coaching, tax class, or a written wealth plan. Public prices, dated sources.",
+  "h1": "BiggerPockets vs our wealth plan",
+  "keyLine": "Forums teach deals. Our plan writes 12 months from your tax file.",
+  "description": "BiggerPockets compared with Legacy Wealth Blueprint: free forums vs a written wealth plan, Preston Seo's path, and public competitor prices. We do not print our tuition.",
   "query": "BiggerPockets alternatives",
-  "answer": "BiggerPockets is a real estate site with free forums, free podcasts, and a paid Pro membership. It helps you study deals. It is not a full money plan. If you want something else, pick by the job: a cheap community, a deal calculator, a coach, a tax class, or a written plan. Free BiggerPockets content is enough to start. Pay only when a tool or a person would save you time.",
-  "criteriaIntro": "This list is not a software bake-off. Other sites already rank lead tools against BiggerPockets Pro. We grouped live education and coaching options by the job a normal investor actually has.",
+  "answer": "BiggerPockets is a real estate site with free forums, free podcasts, and a paid Pro membership. It helps you study deals. It is not a full money plan. Legacy Wealth Blueprint is what Preston Seo teaches after a corporate job, a house-hacked duplex, and a $15M+ portfolio with his wife: a written 12-month order for tax, debt, income, investing, and protection, plus a guide and a CPA brief. Stay on BiggerPockets if the job is listings. Use us if the job is one written order. Cheap rental memberships exist if you need neither. We do not publish our tuition here.",
+  "criteriaIntro": "The comparison pole is BiggerPockets versus our wealth plan. Other cheap tools sit below so you are not forced into either product. We do not rank KenPro against SubTo.",
   "criteria": [
-    "The option teaches real estate or a wider money plan, and we opened a public page for it.",
-    "We say the format: free community, paid membership, course, coaching, or a tax firm class.",
-    "Price comes from a public page, or we say it is not published.",
-    "We include Legacy Wealth Blueprint and say we sell it."
+    "BiggerPockets facts come from their public pages and a dated staff post.",
+    "Blueprint facts come from our membership page and about page.",
+    "Other options appear only as cheaper doors if you need neither product.",
+    "We do not publish our fee here."
   ],
   "blocks": [
+    {
+      "type": "prose",
+      "id": "preston",
+      "heading": "Who is on our side of this page",
+      "paragraphs": [
+        "[Preston Seo](/about/preston-seo) founded Legacy Investing Show in 2020. His parents were first-generation immigrants. After college he took a corporate job and left within a year. The [about page](/about) says he then studied taxes, cash flow, investing, and ownership. He started with a house-hacked duplex while working sales. With his wife he built a $15M+ real estate portfolio. Seven years sit between debt in 2017 and that figure.",
+        "The portfolio is the result. The system is [Legacy Wealth Blueprint](/legacy-wealth-blueprint): a Wealth Strategy Snapshot from your numbers, a dedicated guide, weekly coaching, and a CPA Implementation Brief you hand to your own preparer. You keep your CPA. You do not have to buy a rental on day one."
+      ]
+    },
     {
       "type": "prose",
       "id": "what-biggerpockets-is",
@@ -22,18 +31,35 @@
       "paragraphs": [
         "BiggerPockets is a real estate media and community company. You can read forums, listen to podcasts, and use deal tools. A [staff post on March 3, 2026](https://www.biggerpockets.com/forums/48/topics/1280018-new-to-biggerpockets-pro-insurance-and-loan-discounts) said Pro costs $32.50 a month when billed once a year. A [membership comparison page](https://blogdev.biggerpockets.com/membership-types) also lists Pro at $39 a month, or $32.50 a month billed yearly.",
         "The [bootcamps URL](https://www.biggerpockets.com/bootcamps) we opened on September 15, 2026 showed free guides and a prompt to upgrade to Pro. It did not show a live checkout price. An older membership table lists online bootcamps at $199 each. Confirm the current class on their site.",
-        "You do not need an alternative if the free forums and podcasts already answer your questions. You need a different product when you want a coach, a tax plan, or help with debt and payroll, not just rentals."
+        "You do not need us if the free forums already answer your questions. You need a different product when you want a written plan for tax, debt, and investing, not just rentals."
+      ]
+    },
+    {
+      "type": "table",
+      "id": "vs-us",
+      "heading": "BiggerPockets vs Legacy Wealth Blueprint",
+      "intro": "Read across one row. The edge is the job, not a score.",
+      "caption": "Forum and tools on the left. Written wealth plan on the right.",
+      "wide": true,
+      "headers": ["Question", "BiggerPockets", "Legacy Wealth Blueprint"],
+      "rows": [
+        ["Main product", "Forums, podcasts, and Pro calculators", "A written 12-month Wealth Strategy Snapshot plus a coach"],
+        ["Who built it", "A real estate media company", "Preston Seo, from a W-2 path to a $15M+ portfolio with his wife"],
+        ["Deal math", "Strong. That is the point of Pro", "We use your file. Site calculators stay free either way"],
+        ["Tax, debt, payroll in one order", "Some guides. Not the center", "Yes. That is the product, including a CPA brief"],
+        ["Who files the return", "Not them", "Not us either. You keep your CPA"],
+        ["Cost we can copy", "Free layer, then Pro at $32.50 to $39 a month", "Not published here. Ask on a strategy call"]
       ]
     },
     {
       "type": "options",
-      "id": "alternatives-by-job",
-      "heading": "Alternatives by job",
-      "intro": "Start with the job. Then look at price.",
+      "id": "if-you-need-neither",
+      "heading": "If you need neither product",
+      "intro": "These are cheaper doors, not a bake-off between other brands.",
       "items": [
         {
           "name": "Stay free: forums and podcasts",
-          "summary": "Keep using BiggerPockets forums plus the [BiggerPockets Real Estate Podcast](https://podcasts.apple.com/us/podcast/biggerpockets-real-estate-podcast/id594419649) and [Real Estate Rookie](https://podcasts.apple.com/us/podcast/real-estate-rookie/id1499646507). Reddit real estate threads are free too, but quality varies.",
+          "summary": "Keep using BiggerPockets forums plus the [BiggerPockets Real Estate Podcast](https://podcasts.apple.com/us/podcast/biggerpockets-real-estate-podcast/id594419649). Reddit threads are free too, but quality varies.",
           "meta": "Job: learn the basics at $0"
         },
         {
@@ -42,29 +68,9 @@
           "meta": "Job: cheap paid lessons without a high-ticket call"
         },
         {
-          "name": "BetterLife (Brandon Turner)",
-          "summary": "Brandon Turner used to host BiggerPockets shows. [BetterLife](https://abetterlife.com/home-2/) now sells the Tribe and other coaching. The public pages we opened do not list a checkout price. The Tribe page says it is for people who already did at least one rental, flip, or passive deal this year.",
-          "meta": "Job: coaching after you already own a deal. Price on request."
-        },
-        {
-          "name": "SubTo (Pace Morby)",
-          "summary": "[SubTo](https://subto.com/) teaches creative finance, including buying a home 'subject to' the seller's loan. That is an advanced tactic with legal and loan risk. The homepage does not print a price. The [join page](https://buy.subto.com/) we opened listed $9,800, or four payments of $2,450. Their own disclaimer says results are not typical. Full map: [SubTo alternatives](/compare/subto-alternatives).",
-          "meta": "Job: creative finance community. $9,800 on the checkout page we opened."
-        },
-        {
-          "name": "WealthAbility Live (Tom Wheelwright, CPA)",
-          "summary": "Tom Wheelwright wrote Tax-Free Wealth and is a Rich Dad advisor. [WealthAbility Live](https://www.wealthability.com/wealthability-live/) lists $197 a month for live tax sessions and a community. It is tax education, not a BiggerPockets clone.",
-          "meta": "Job: tax class for owners and investors"
-        },
-        {
           "name": "A fee-only planner or CPA",
-          "summary": "If you need advice on your file, buy hours from a licensed person, not a forum. The [FTC](https://consumer.ftc.gov/articles/when-business-offer-or-coaching-program-scam) warns that coaching programs which promise easy real estate profits are often a scam. A CPA files returns. A coach does not.",
+          "summary": "If you need advice on your file, buy hours from a licensed person, not a forum. The [FTC](https://consumer.ftc.gov/articles/when-business-offer-or-coaching-program-scam) warns that coaching programs which promise easy real estate profits are often a scam.",
           "meta": "Job: advice on your numbers. Fee varies."
-        },
-        {
-          "name": "Legacy Wealth Blueprint",
-          "summary": "Our program. It is a 12-month wealth plan covering tax, debt, income, investing, and protection, not a deal-finding bootcamp. We publish the price as $9,800 cash or card on [Legacy Wealth Blueprint cost](/compare/legacy-wealth-blueprint-cost). Confirm it in writing on the call. Skip it if you only want to underwrite rentals.",
-          "meta": "Job: one written plan for tax, debt, and investing. We sell this."
         }
       ]
     },
@@ -73,33 +79,20 @@
       "variant": "warn",
       "label": "Watch for this",
       "paragraphs": [
-        "Many 'BiggerPockets alternatives' articles are ranking software: PropStream, DealMachine, Roofstock. Those help you find or buy a property. They do not replace education. If a page ranks 11 tools and never says who wrote it, treat it as a lead list, not a guide."
-      ]
-    },
-    {
-      "type": "prose",
-      "id": "how-to-choose",
-      "heading": "How to choose in 20 minutes",
-      "paragraphs": [
-        "Write one sentence: 'I need help with ___ this quarter.' If the blank is 'my first rental numbers,' stay free or buy Pro for the calculators. If the blank is 'my tax bill after a W-2 raise,' a tax class or a CPA fits better than a landlord forum. If the blank is 'someone to review my deal,' that is coaching, and you should read [real estate coaching vs a course](/compare/real-estate-coaching-vs-course) first."
-      ],
-      "bullets": [
-        "Do not buy a high-ticket program to learn what a free podcast already teaches.",
-        "Do not buy coaching with a credit card you cannot pay off. The [FTC](https://consumer.ftc.gov/articles/when-business-offer-or-coaching-program-scam) says that pattern shows up in coaching scams.",
-        "If you work full time, see our sourced list of [real estate courses for people with a day job](/blog/best-real-estate-investing-courses-full-time-job)."
+        "Many 'BiggerPockets alternatives' articles rank software: PropStream, DealMachine, Roofstock. Those help you find a property. They do not replace education, and they are not our wealth plan. If a page ranks 11 tools and never says who wrote it, treat it as a lead list."
       ]
     }
   ],
   "whoFits": [
-    "You already used free BiggerPockets content and you can name the next job: community, math, coaching, or tax.",
-    "You want a fair map of other live brands, including ones we do not sell."
+    "You already used free BiggerPockets content and you are deciding whether a written wealth plan is a different job.",
+    "You want the comparison to be BiggerPockets versus us, not a software bake-off."
   ],
   "whoSkips": [
     "You have not listened to a single episode or read a forum thread yet. Start free.",
     "You want a ranked list of skip-tracing apps. That is a different search."
   ],
-  "costIntro": "These are the public numbers we could copy. They are not what you should pay. They are what the seller showed on the date we checked.",
-  "costCaption": "Public prices for BiggerPockets and the alternatives we could verify.",
+  "costIntro": "Public BiggerPockets and nearby class prices. Our tuition stays off this table.",
+  "costCaption": "Competitor dollars we could copy. Blueprint fee on a call.",
   "costRows": [
     {
       "name": "BiggerPockets forums and podcasts",
@@ -123,50 +116,28 @@
       "sourceUrl": "https://kenmcelroy.com/kenprostore/"
     },
     {
-      "name": "WealthAbility Live",
-      "price": "$197 a month",
-      "asOf": "2026-09-15",
-      "sourceLabel": "WealthAbility Live",
-      "sourceUrl": "https://www.wealthability.com/wealthability-live/"
-    },
-    {
-      "name": "SubTo Accelerator",
-      "price": "$9,800 full, or four payments of $2,450",
-      "asOf": "2026-09-15",
-      "sourceLabel": "buy.subto.com",
-      "sourceUrl": "https://buy.subto.com/"
-    },
-    {
-      "name": "BetterLife Tribe",
-      "price": "Not published on the pages we opened",
-      "asOf": "2026-09-15",
-      "sourceLabel": "abetterlife.com",
-      "sourceUrl": "https://abetterlife.com/home-2/"
-    },
-    {
       "name": "Legacy Wealth Blueprint",
-      "price": "$9,800 cash or card, as we publish on this site",
-      "asOf": "2026-09-15",
-      "sourceLabel": "Legacy Wealth Blueprint cost",
-      "sourceUrl": "https://www.legacyinvestingshow.com/compare/legacy-wealth-blueprint-cost"
+      "price": "Not published here. Ask on a strategy call.",
+      "asOf": "2026-09-16",
+      "sourceLabel": "Legacy Wealth Blueprint",
+      "sourceUrl": "https://www.legacyinvestingshow.com/legacy-wealth-blueprint"
     }
   ],
   "questionsBeforeBuying": [
-    "What job will this purchase do in the next 90 days that free content will not?",
-    "What is the full price, including a second payment or upsell?",
-    "Can I use the forums and podcasts for 30 days and still have the same need?",
-    "Who reviews my actual deal or tax file, and how fast do they reply?",
-    "Send me the refund terms in writing."
+    "Is my next job deal math, or a written order for tax and debt?",
+    "Have I used the free forums for 30 days yet?",
+    "If I want Blueprint, did I read [what's in it](/compare/legacy-wealth-blueprint-what-to-know) first?",
+    "Send me any refund terms in writing."
   ],
   "nextSteps": [
-    "Listen to one BiggerPockets episode and write the model you want: long-term rental, short-term rental, or none.",
+    "Read [what's in Blueprint](/compare/legacy-wealth-blueprint-what-to-know) if the job is a 12-month order.",
     "Run a sample deal in the [rental cash flow calculator](/tools/rental-property-cash-flow).",
     "If tax is the real pain, open [tax strategies for W-2 employees](/tax-strategies/for/w2-employees) before you buy any real estate class."
   ],
   "faqs": [
     {
       "q": "Is there a free BiggerPockets alternative?",
-      "a": "Yes. The free BiggerPockets forums and podcasts are the first alternative to paying. Reddit is also free. Paid options start when you want structure, a calculator pack, or a person."
+      "a": "Yes. The free BiggerPockets forums and podcasts are the first alternative to paying. Paid options start when you want structure, a calculator pack, or a written wealth plan."
     },
     {
       "q": "How much is BiggerPockets Pro?",
@@ -174,7 +145,7 @@
     },
     {
       "q": "Is Legacy Wealth Blueprint a BiggerPockets alternative?",
-      "a": "Only if your job is a full money plan. It is not a deal marketplace or a landlord forum. If you only want to find rentals, a BiggerPockets bootcamp or KenPro is a closer match and often cheaper."
+      "a": "Only if your job is a full money plan. It is not a deal marketplace or a landlord forum. Read [what's in Blueprint](/compare/legacy-wealth-blueprint-what-to-know)."
     },
     {
       "q": "Should I buy PropStream instead?",
@@ -205,25 +176,14 @@
       "asOf": "2026-09-15"
     },
     {
-      "label": "WealthAbility Live pricing",
-      "url": "https://www.wealthability.com/wealthability-live/",
-      "asOf": "2026-09-15"
+      "label": "About Preston Seo",
+      "url": "https://www.legacyinvestingshow.com/about",
+      "asOf": "2026-09-16"
     },
     {
-      "label": "SubTo homepage",
-      "url": "https://subto.com/",
-      "asOf": "2026-09-15"
-    },
-    {
-      "label": "SubTo Accelerator checkout",
-      "url": "https://buy.subto.com/",
-      "asOf": "2026-09-15",
-      "note": "Listed $9,800 full or four payments of $2,450."
-    },
-    {
-      "label": "BetterLife Tribe description",
-      "url": "https://abetterlife.com/home-2/",
-      "asOf": "2026-09-15"
+      "label": "Legacy Wealth Blueprint",
+      "url": "https://www.legacyinvestingshow.com/legacy-wealth-blueprint",
+      "asOf": "2026-09-16"
     },
     {
       "label": "FTC: when a coaching program is a scam",
@@ -232,18 +192,18 @@
     }
   ],
   "related": [
+    { "href": "/compare/legacy-wealth-blueprint-what-to-know", "label": "What's in Legacy Wealth Blueprint" },
     { "href": "/compare/biggerpockets-what-to-know", "label": "What to know before you pay for BiggerPockets Pro" },
-    { "href": "/compare/subto-alternatives", "label": "SubTo alternatives" },
-    { "href": "/compare/biggerpockets-vs-rich-dad", "label": "BiggerPockets vs Rich Dad" },
-    { "href": "/blog/best-real-estate-investing-courses-full-time-job", "label": "Real estate courses if you have a full-time job" },
-    { "href": "/compare/real-estate-coaching-vs-course", "label": "Coaching vs a self-paced course" }
+    { "href": "/compare/biggerpockets-vs-rich-dad", "label": "BiggerPockets or Rich Dad vs our wealth plan" },
+    { "href": "/about", "label": "Preston Seo's story" },
+    { "href": "/blog/best-real-estate-investing-courses-full-time-job", "label": "Real estate courses if you have a full-time job" }
   ],
   "cta": {
-    "title": "Need the tax side, not another forum?",
-    "body": "If the real problem is a W-2 tax bill or a messy money plan, start with the strategy library. Buy real estate school only after you know the model.",
-    "primaryHref": "/tax-strategies/for/real-estate-investors",
-    "primaryLabel": "Tax strategies for investors",
-    "secondaryHref": "/compare",
-    "secondaryLabel": "All compare guides"
+    "title": "Need a plan, not another forum?",
+    "body": "If the real problem is a W-2 tax bill or a messy money order, read how Blueprint is built. Buy real estate school only after you know the model.",
+    "primaryHref": "/legacy-wealth-blueprint",
+    "primaryLabel": "How Blueprint works",
+    "secondaryHref": "/about",
+    "secondaryLabel": "Preston's story"
   }
 }

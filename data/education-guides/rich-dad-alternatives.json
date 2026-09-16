@@ -2,59 +2,58 @@
   "type": "alternatives",
   "slug": "rich-dad-alternatives",
   "title": "Rich Dad Alternatives",
-  "h1": "Rich Dad alternatives after you finish the book",
-  "keyLine": "The book changes how you see a job. It does not teach you to buy a house.",
-  "description": "What to read or buy after Rich Dad Poor Dad: BiggerPockets, Tax-Free Wealth, Money Guy, a CPA class, or a written plan. Public prices, no invented results.",
+  "h1": "Rich Dad vs our wealth plan",
+  "keyLine": "The book changes how you see a job. Our plan writes 12 months from your file.",
+  "description": "Rich Dad Poor Dad compared with Legacy Wealth Blueprint: mindset book vs a written wealth plan, Preston Seo's path, and public digital prices. No public tuition.",
   "query": "Rich Dad Poor Dad alternatives",
-  "answer": "Rich Dad Poor Dad is a mindset book by Robert Kiyosaki. The [Rich Dad site](https://www.richdad.com/) still sells that view: your house can be a liability, some debt can buy assets, school trains workers. That is a story, not a how-to. After the book, most people need mechanics: how to read a lease, how to run rental math, how tax works. Those live in other products. Some are cheap. Some hide the price on a sales call.",
-  "criteriaIntro": "We looked at what Rich Dad's own company sells today, then at teachers people actually use next. We did not guess old seminar prices from years ago.",
+  "answer": "Rich Dad Poor Dad is a mindset book by Robert Kiyosaki. The [Rich Dad site](https://www.richdad.com/) still sells that view: your house can be a liability, some debt can buy assets, school trains workers. That is a story, not a how-to. Legacy Wealth Blueprint is what Preston Seo built after a corporate job, a house-hacked duplex, and a $15M+ portfolio with his wife: a written 12-month order for tax, debt, income, investing, and protection, plus a dedicated guide and a CPA brief. Read the book once if you need a jolt. Use us when you want one written order, not another parable. We do not publish our tuition here.",
+  "criteriaIntro": "The comparison pole is Rich Dad versus our wealth plan. Other cheap how-tos sit below if you need neither.",
   "criteria": [
-    "The option is a book, a cheap class, a community, or a licensed tax teacher we could verify.",
     "We opened a Rich Dad URL for any Rich Dad price we quote.",
     "We separate the book from later coaching funnels.",
-    "We include our program and say we sell it."
+    "Blueprint facts come from our membership page and about page.",
+    "We do not publish our fee here."
   ],
   "blocks": [
+    {
+      "type": "prose",
+      "id": "preston",
+      "heading": "What Preston teaches instead of another origin story",
+      "paragraphs": [
+        "[Preston Seo](/about) is a first-generation immigrant's son. He took a corporate job after college and left within a year. He house-hacked a duplex while in sales. With his wife he built a $15M+ real estate portfolio. Seven years sit between 2017 debt and that figure. He founded Legacy Investing Show in 2020.",
+        "[Legacy Wealth Blueprint](/legacy-wealth-blueprint) is the 12-month plan from that work: a Wealth Strategy Snapshot, a dedicated guide, weekly coaching, 100+ lessons, a spouse seat, and a CPA Implementation Brief. You keep your CPA. You do not have to buy a rental on day one. Named client work is on [reviews](/reviews)."
+      ]
+    },
     {
       "type": "prose",
       "id": "what-rich-dad-sells",
       "heading": "What Rich Dad sells now",
       "paragraphs": [
         "The book is the core product. People still argue about it. [BiggerPockets has published posts](https://www.biggerpockets.com/blog/rich-dad-poor-dad-investing-principles-good-or-bad) saying the book is motivation, not a manual. That matches how we use it: a start, not a process.",
-        "Rich Dad also sells small digital offers. A [Wealth Experts membership page](https://study.richdad.com/we-offer?oid=741&source_id=website_investing_RDWE) listed a 14-day trial, then $17 a month, cancel any time. A [beginner real estate course offer](https://study.richdad.com/re-course-offer) listed $27 for a five-part video. Coaching and live events are marketed on other Rich Dad URLs without a clear public tuition on the pages we opened. If someone quotes a five-figure 'Rich Dad seminar' price, ask for the live invoice. We will not invent it.",
-        "Tom Wheelwright, CPA, is a named Rich Dad advisor and sells tax education at WealthAbility. That is adjacent, not a clone of the novel."
+        "Rich Dad also sells small digital offers. A [Wealth Experts membership page](https://study.richdad.com/we-offer?oid=741&source_id=website_investing_RDWE) listed a 14-day trial, then $17 a month, cancel any time. A [beginner real estate course offer](https://study.richdad.com/re-course-offer) listed $27 for a five-part video. Coaching and live events are marketed on other Rich Dad URLs without a clear public tuition on the pages we opened. If someone quotes a five-figure 'Rich Dad seminar' price, ask for the live invoice. We will not invent it."
       ]
     },
     {
-      "type": "options",
-      "id": "after-the-book",
-      "heading": "Better next steps than another mindset book",
-      "items": [
-        {
-          "name": "BiggerPockets free content",
-          "summary": "Forums and podcasts teach models: house hacking, long-term rentals, short-term rentals. See [BiggerPockets vs Rich Dad](/compare/biggerpockets-vs-rich-dad).",
-          "meta": "Job: how-to after the why"
-        },
-        {
-          "name": "Tax-Free Wealth / WealthAbility",
-          "summary": "Wheelwright's book is the tax companion many Rich Dad readers buy next. [WealthAbility Live](https://www.wealthability.com/wealthability-live/) lists $197 a month. The [Tax-Free Formula](https://www.wealthability.com/new-tax-free-formula/) page we opened on September 15, 2026 did not print a checkout price. Mentorship pages we opened did not publish a price. Map: [WealthAbility alternatives](/compare/wealthability-alternatives).",
-          "meta": "Job: tax education from a CPA brand"
-        },
-        {
-          "name": "The Money Guy FOO",
-          "summary": "If the book made you hate saving, you still need an order for the next paycheck. The [FOO guide](https://moneyguy.com/guide/foo/) is free and updated in 2026.",
-          "meta": "Job: what to do with this month's dollar"
-        },
-        {
-          "name": "Brandon Turner's rental books and BetterLife",
-          "summary": "Turner's rental books are often the mechanical sequel people name. BetterLife coaching did not publish a price on the pages we opened. Read the book before any call.",
-          "meta": "Job: rental mechanics"
-        },
-        {
-          "name": "Legacy Wealth Blueprint",
-          "summary": "Our plan for people who already earn well and need tax, debt, and investing in one order. Price we publish: $9,800. Not a replacement for reading Rich Dad. A replacement for stacking random courses.",
-          "meta": "Job: one written plan. We sell this."
-        }
+      "type": "table",
+      "id": "vs-us",
+      "heading": "Rich Dad vs Legacy Wealth Blueprint",
+      "caption": "Mindset book on the left. Written wealth plan on the right.",
+      "wide": true,
+      "headers": ["Question", "Rich Dad", "Legacy Wealth Blueprint"],
+      "rows": [
+        ["Main product", "A famous book plus later digital offers", "A 12-month written plan plus a coach, built from your numbers"],
+        ["Teaches deal math", "The book is not a spreadsheet class", "We use your file. Calculators on this site stay free"],
+        ["Tax in depth", "Tax-Free Wealth sits next door through Wheelwright", "A tax return review and a CPA Implementation Brief. You keep your CPA"],
+        ["Who it is for", "People who still think a paycheck is the only path", "People who already earn well and want one order"],
+        ["Price we can copy", "Book in stores. Digital offers at $17 a month and $27", "Not published here. Ask on a strategy call"]
+      ]
+    },
+    {
+      "type": "prose",
+      "id": "if-you-need-neither",
+      "heading": "If you only needed mechanics",
+      "paragraphs": [
+        "Free BiggerPockets forums teach models after the why. The [FOO guide](https://moneyguy.com/guide/foo/) is a free order for this month's dollar. Those are starting tools, not a third trophy. See [BiggerPockets or Rich Dad vs our wealth plan](/compare/biggerpockets-vs-rich-dad) if you are still sorting the book from the forum."
       ]
     },
     {
@@ -67,15 +66,15 @@
     }
   ],
   "whoFits": [
-    "You finished Rich Dad Poor Dad and you want a how-to, not another parable.",
-    "You can tell the difference between a $27 video and a coaching call."
+    "You finished Rich Dad Poor Dad and you want a written plan, not another parable.",
+    "You want the comparison to be the book versus us."
   ],
   "whoSkips": [
     "You have not read the book yet and you want us to review it as if we were a shopper. Read the book. It is short.",
-    "You want us to claim Kiyosaki's personal net worth. We will not. We cannot verify it from a primary filing we opened."
+    "You want us to claim Kiyosaki's personal net worth. We will not."
   ],
-  "costIntro": "Rich Dad's public digital prices are low. Coaching tuition was not on the homepages we opened.",
-  "costCaption": "Public Rich Dad and next-step prices.",
+  "costIntro": "Rich Dad's public digital prices. Our tuition stays off this table.",
+  "costCaption": "Public Rich Dad prices vs our unpublished fee.",
   "costRows": [
     {
       "name": "Rich Dad Poor Dad (book)",
@@ -99,37 +98,23 @@
       "sourceUrl": "https://study.richdad.com/re-course-offer"
     },
     {
-      "name": "WealthAbility Live",
-      "price": "$197 a month",
-      "asOf": "2026-09-15",
-      "sourceLabel": "WealthAbility Live",
-      "sourceUrl": "https://www.wealthability.com/wealthability-live/"
-    },
-    {
-      "name": "WealthAbility Tax-Free Formula digital",
-      "price": "Not published on the sales page we opened",
-      "asOf": "2026-09-15",
-      "sourceLabel": "Tax-Free Formula digital program",
-      "sourceUrl": "https://www.wealthability.com/new-tax-free-formula/"
-    },
-    {
       "name": "Legacy Wealth Blueprint",
-      "price": "$9,800 cash or card, as we publish on this site",
-      "asOf": "2026-09-15",
-      "sourceLabel": "Legacy Wealth Blueprint cost",
-      "sourceUrl": "https://www.legacyinvestingshow.com/compare/legacy-wealth-blueprint-cost"
+      "price": "Not published here. Ask on a strategy call.",
+      "asOf": "2026-09-16",
+      "sourceLabel": "Legacy Wealth Blueprint",
+      "sourceUrl": "https://www.legacyinvestingshow.com/legacy-wealth-blueprint"
     }
   ],
   "questionsBeforeBuying": [
-    "Did the book already change my view, and do I now need mechanics?",
+    "Did the book already change my view, and do I now need a written plan?",
     "Is this $17 or $27 offer the whole product, or a door to a call?",
-    "If I want tax help, am I buying a CPA's class or a story about taxes?",
-    "Can I name one property or one tax form I will work on this month?"
+    "If I want tax help, am I buying a story about taxes or a brief for my CPA?",
+    "Can I name one leak I will work on this month?"
   ],
   "nextSteps": [
-    "If you want rental mechanics, use [BiggerPockets alternatives](/compare/biggerpockets-alternatives) and the [rental cash flow calculator](/tools/rental-property-cash-flow).",
-    "If you want tax mechanics, open the [short-term rental loophole guide](/tax-strategies/short-term-rental-loophole) only if you will own a short-stay property. Otherwise start with [HSA strategy](/tax-strategies/hsa-strategy).",
-    "Read [BiggerPockets vs Rich Dad](/compare/biggerpockets-vs-rich-dad) before you buy both."
+    "Read [what's in Blueprint](/compare/legacy-wealth-blueprint-what-to-know) if the job is a 12-month order.",
+    "If you want rental mechanics first, use the [rental cash flow calculator](/tools/rental-property-cash-flow).",
+    "Read Preston's [about page](/about) before a call."
   ],
   "faqs": [
     {
@@ -141,8 +126,8 @@
       "a": "We could not copy a public coaching tuition from the homepages we opened. Digital offers showed $17 a month and $27. Ask for the full price in writing if a call starts."
     },
     {
-      "q": "Is Tax-Free Wealth a Rich Dad alternative or part of the same world?",
-      "a": "Both. Wheelwright is a Rich Dad advisor, and WealthAbility is his company. Use it as tax school, not as a second novel."
+      "q": "Is Blueprint a Rich Dad alternative?",
+      "a": "Only if you want a written 12-month order instead of another story. It is not a sequel to the novel."
     }
   ],
   "sources": [
@@ -167,9 +152,9 @@
       "asOf": "2026-09-15"
     },
     {
-      "label": "WealthAbility Live",
-      "url": "https://www.wealthability.com/wealthability-live/",
-      "asOf": "2026-09-15"
+      "label": "About Preston Seo",
+      "url": "https://www.legacyinvestingshow.com/about",
+      "asOf": "2026-09-16"
     },
     {
       "label": "FTC coaching scam guidance",
@@ -178,17 +163,17 @@
     }
   ],
   "related": [
-    { "href": "/compare/biggerpockets-vs-rich-dad", "label": "BiggerPockets vs Rich Dad" },
-    { "href": "/compare/wealthability-alternatives", "label": "WealthAbility alternatives" },
-    { "href": "/compare/tax-course-vs-cpa", "label": "Tax course vs a CPA" },
-    { "href": "/blog/best-tax-strategy-books", "label": "Tax strategy books we have reviewed on the blog" }
+    { "href": "/compare/legacy-wealth-blueprint-what-to-know", "label": "What's in Legacy Wealth Blueprint" },
+    { "href": "/compare/biggerpockets-vs-rich-dad", "label": "BiggerPockets or Rich Dad vs our wealth plan" },
+    { "href": "/compare/wealthability-alternatives", "label": "WealthAbility vs our wealth plan" },
+    { "href": "/about", "label": "Preston Seo's story" }
   ],
   "cta": {
     "title": "Done with the parable?",
-    "body": "If you want mechanics for tax and cash flow, use the strategy library. If you want one written plan, read how Blueprint works. Neither one replaces a licensed tax pro.",
-    "primaryHref": "/tax-strategies",
-    "primaryLabel": "Open the tax library",
-    "secondaryHref": "/legacy-wealth-blueprint",
-    "secondaryLabel": "Legacy Wealth Blueprint"
+    "body": "If you want one written plan for tax and cash flow, read how Blueprint is built. Neither a book nor a plan replaces a licensed tax pro.",
+    "primaryHref": "/legacy-wealth-blueprint",
+    "primaryLabel": "How Blueprint works",
+    "secondaryHref": "/reviews",
+    "secondaryLabel": "Reviews and client results"
   }
 }

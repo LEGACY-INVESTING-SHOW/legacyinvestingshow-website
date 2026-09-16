@@ -615,7 +615,7 @@ ${steps.map((item) => `                        <li><p>${esc(item)}</p></li>`).jo
 function renderIndex(taxPages, educationPages = []) {
   const canonical = `${SITE_URL}/compare`;
   const isoDate = new Date().toISOString().split('T')[0];
-  const description = 'Head-to-head guides for tax decisions and for education or program choices. Tax pages use a scorecard. Education pages list public prices, who wrote them, and who should skip.';
+  const description = 'Head-to-head guides for tax decisions and for education or program choices. Tax pages use a scorecard. Education pages compare other brands with our wealth plan. Competitor prices are dated. We do not print our tuition here.';
   const schemaPages = [
     ...taxPages.map((page) => ({ slug: page.slug, title: page.title })),
     ...educationPages.map((page) => ({ slug: page.slug, title: page.title })),
@@ -717,7 +717,7 @@ ${schema.map((entry) => `    <script type="application/ld+json">${JSON.stringify
                     </nav>
                     <h1 class="opener__title">Comparison guides</h1>
                     <p class="opener__key">Pick one objective first. The two options rarely win on the same axis.</p>
-                    <p class="opener__lede">Two libraries sit here. Tax pages score two strategies that both look reasonable. Education pages compare programs and money teachers with public prices, named criteria, and a clear skip rule. We wrote the education pages. We sell our own programs. That is disclosed on each one.</p>
+                    <p class="opener__lede">Two libraries sit here. Tax pages score two strategies that both look reasonable. Education pages compare other brands with our wealth plan. Competitor prices are public and dated. We do not print our tuition here. We wrote the education pages. We sell our own programs. That is disclosed on each one.</p>
                 </div>
             </div>
         </section>
@@ -728,7 +728,7 @@ ${schema.map((entry) => `    <script type="application/ld+json">${JSON.stringify
                     <div class="prose">
                         <h2 id="how-to-use">How to use them</h2>
                         <p>On a tax scorecard, run both paths with conservative numbers, then pressure-test the likely winner against the edge cases. Set the documentation standard before you execute, not at year end.</p>
-                        <p>On an education page, match the job first (debt, tax, rentals, or a written plan). Then check the dated price table. If a seller hides the number, assume it is high until they put it in writing.</p>
+                        <p>On an education page, match the job first. Then read the dated competitor price table. We do not print our tuition on these pages. Confirm it on a strategy call.</p>
                         <p>Re-score the decision each year. Income, law, and the live offer change.</p>
 
                         <h2 id="education-guides">Education and program choices</h2>
