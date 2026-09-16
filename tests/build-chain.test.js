@@ -35,3 +35,19 @@ test('Tailwind does not scan generated blog HTML', () => {
     assert.ok(!content.includes('./blog/**/*.html'));
     assert.ok(!content.includes('./blog/page/*.html'));
 });
+
+test('vercelignore does not strip files the production build reads', () => {
+    const ignorePath = path.join(ROOT, '.vercelignore');
+    assert.ok(fs.existsSync(ignorePath), '.vercelignore should exist');
+    const lines = fs
+        .readFileSync(ignorePath, 'utf8')
+        .split('\n')
+        .map((line) => line.trim())
+        .filter((line) => line && !line.startsWith('#'));
+    for (const required of ['scripts', 'content', 'data', 'templates', '*.md']) {
+        assert.ok(
+            !lines.includes(required),
+            `.vercelignore must not ignore ${required}; Vercel omits ignored paths from the build file set`
+        );
+    }
+});

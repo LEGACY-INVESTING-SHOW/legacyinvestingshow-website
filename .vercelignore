@@ -1,6 +1,6 @@
-# Source, agent scratch, and backups are not public site files.
-# The build still reads them from the git checkout; this only
-# keeps them out of the Vercel output upload.
+# Files matching this list are omitted from the Vercel file set,
+# including during `npm run build`. Do not ignore scripts/, content/,
+# data/, templates/, or *.md — the generators need those.
 
 backups
 screenshots
@@ -9,12 +9,8 @@ todos
 docs
 plans
 pipeline
-content
-scripts
-templates
-cms
 tests
-data
+cms
 .claude
 .agents
 .factory
@@ -23,7 +19,3 @@ data
 .audit
 .github
 design-explorations
-Airbnb wins
-
-*.md
-!lx/**/*.md
