@@ -993,17 +993,17 @@
     },
     {
       "source": "/blog/dustin-case-study",
-      "destination": "/success-stories",
+      "destination": "/reviews",
       "permanent": true
     },
     {
       "source": "/blog/kirk-case-study",
-      "destination": "/success-stories",
+      "destination": "/reviews",
       "permanent": true
     },
     {
       "source": "/blog/kirk-case-study.html",
-      "destination": "/success-stories",
+      "destination": "/reviews",
       "permanent": true
     },
     {
@@ -1289,6 +1289,21 @@
     {
       "source": "/blog/how-a-250k-w-2-salary-can-leave-you-poorer-than-a-120k-busin",
       "destination": "/blog/tax-planning-for-high-earners",
+      "permanent": true
+    },
+    {
+      "source": "/success-stories",
+      "destination": "/reviews",
+      "permanent": true
+    },
+    {
+      "source": "/success-stories/",
+      "destination": "/reviews",
+      "permanent": true
+    },
+    {
+      "source": "/success-stories.html",
+      "destination": "/reviews",
       "permanent": true
     }
   ],

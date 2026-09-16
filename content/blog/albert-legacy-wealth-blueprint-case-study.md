@@ -226,8 +226,10 @@ This is one student result from one recorded interview. It is not an average and
 
 Albert is a physician with a high income in a high-tax state, and he says himself that starting work in 2021 is part of why his numbers moved. Your income, state, timeline, and risk tolerance will produce different math. Nothing here is tax, legal, or investment advice. Talk to a qualified professional about your own situation.
 
-## More Student Results
+## More client results
 
 - [Stephanie Dailey's case study](/blog/stephanie-dailey-legacy-wealth-blueprint-case-study): over $20,000 saved in taxes in year one.
 - [Abigail's case study](/blog/abigail-legacy-wealth-blueprint-case-study): just under $100,000 in first-year ROI.
 - [Shawn's case study](/blog/shawn-legacy-wealth-blueprint-roi-case-study): what he expects his Blueprint to be worth.
+
+More client results: every Legacy Wealth Blueprint client case study, the written client results and the Trustpilot reviews are on the [Legacy Investing Show reviews and client results](/reviews#case-studies) page.

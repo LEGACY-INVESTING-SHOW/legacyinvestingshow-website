@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 /**
- * Writes the two generated blocks of reviews.html:
+ * Writes the generated blocks of reviews.html:
  *
  *   <!-- reviews:wealth-plans:start --> ... <!-- reviews:wealth-plans:end -->
  *   <!-- reviews:trustpilot:start -->   ... <!-- reviews:trustpilot:end -->
+ *   <!-- reviews:transcript:<id>:start --> ... one per video item
  *
  * Wealth plan pages come from data/lwb-proof-images.json (image, caption and
  * the figures that are legible on it) and data/lwb-proof-images-text.json (the
@@ -14,7 +15,12 @@
  * data/trustpilot-summary.json, rendered as real text. If either Trustpilot
  * file is missing the block is written empty and the section renders nothing.
  *
- * Both blocks are deterministic: running this twice produces the same file.
+ * A transcript block is filled only where data/reviews-videos.json holds a
+ * real transcript for that video id. Every transcript there is null today, so
+ * every one of those blocks renders empty and the page keeps saying "Summary".
+ * scripts/fetch-video-transcripts.js is what fills the data file.
+ *
+ * Every block is deterministic: running this twice produces the same file.
  * Everything outside the markers is hand-written source and is left alone.
  */
 
@@ -26,7 +32,7 @@ const PAGE = path.join(ROOT, 'reviews.html');
 const TRUSTPILOT_URL = 'https://www.trustpilot.com/review/firstairbnb.com';
 
 /* How many items each section shows before the reveal. */
-const PLANS_VISIBLE = 9;
+const PLANS_VISIBLE = 8;
 const REVIEWS_VISIBLE = 6;
 
 function readJson(relative) {
@@ -83,7 +89,7 @@ function asArray(data) {
 }
 
 /* One reveal, used by both sections. `body` is already indented HTML. */
-function reveal(showLabel, body) {
+function reveal(showLabel, body, gridClass) {
     return ''
         + '\n                    <details class="rv-reveal">'
         + '\n                        <summary>'
@@ -91,7 +97,7 @@ function reveal(showLabel, body) {
         + '\n                            <span class="rv-reveal__hide">Show fewer</span>'
         + '\n                        </summary>'
         + '\n                        <div>'
-        + '\n                            <div class="rv-grid rv-grid--3">' + body + '\n                            </div>'
+        + '\n                            <div class="' + (gridClass || 'rv-grid rv-grid--3') + '">' + body + '\n                            </div>'
         + '\n                        </div>'
         + '\n                    </details>';
 }
@@ -274,9 +280,12 @@ function transcriptIndex() {
  * the HTML at load inside a closed <details>, so it costs no height and every
  * crawler and screen reader can reach it.
  */
-function transcriptBlock(record, indent) {
+function transcriptBlock(record, indent, lead) {
     if (!record) return '';
     const parts = [];
+    /* The tail of the caption, so the gallery can show one sentence under the
+       image without any of the caption being lost. */
+    if (lead) parts.push('\n' + indent + '        <p>' + lead + '</p>');
     if (record.heading) {
         parts.push('\n' + indent + '        <p class="rv-text__h">' + esc(record.heading) + '</p>');
     }
@@ -314,6 +323,19 @@ const SAMPLE_CAPTIONS = {
     }
 };
 
+/* The four sample pages run two up and carry their whole caption. The 72
+   crops run four up: the caption's first sentence sits under the image and the
+   rest of it opens with the page's own text, so nothing is cut. */
+const LEAD_SIZES = '(min-width: 1040px) 33rem, (min-width: 760px) 45vw, 92vw';
+const GALLERY_SIZES = '(min-width: 1040px) 16rem, (min-width: 760px) 30vw, 45vw';
+
+/** Everything up to and including the first full stop, and what is left. */
+function splitCaption(caption) {
+    const at = String(caption).search(/\.\s+/);
+    if (at === -1) return { head: caption, tail: '' };
+    return { head: caption.slice(0, at + 1), tail: caption.slice(at + 1).trim() };
+}
+
 function planFigure(options) {
     const indent = options.indent;
     const caption = options.caption;
@@ -323,17 +345,21 @@ function planFigure(options) {
     // A page cropped into a wide strip loses its heading under a cover crop, so
     // anything wider than 2:1 is shown whole on the ivory ground instead.
     const wide = Number(options.width) / Number(options.height) > 2;
+    const gallery = options.gallery === true;
+    const cut = gallery && options.transcript ? splitCaption(caption) : { head: caption, tail: '' };
     return ''
         + '\n' + indent + '<figure class="rv-plan' + (wide ? ' rv-plan--wide' : '') + '" data-rv="' + K_PLAN + '">'
         + '\n' + indent + '    <button type="button" class="rv-plan__open" data-full="' + esc(options.path)
         + '" data-caption="' + esc(caption) + '" data-w="' + esc(options.width) + '" data-h="' + esc(options.height) + '">'
         + '\n' + indent + '        <img src="' + esc(options.path) + '" alt="' + esc(alt) + '" width="' + esc(options.width)
-        + '" height="' + esc(options.height) + '" loading="lazy" decoding="async" sizes="(min-width: 1040px) 21rem, (min-width: 760px) 45vw, 92vw">'
+        + '" height="' + esc(options.height) + '" loading="lazy" decoding="async" sizes="'
+        + (gallery ? GALLERY_SIZES : LEAD_SIZES) + '">'
         + '\n' + indent + '        <span class="rv-vh">Enlarge this page</span>'
         + '\n' + indent + '    </button>'
-        + '\n' + indent + '    <figcaption class="rv-plan__cap">' + markFigures(caption, figures) + '</figcaption>'
+        + '\n' + indent + '    <figcaption class="rv-plan__cap">' + markFigures(cut.head, figures) + '</figcaption>'
         + (options.link || '')
-        + transcriptBlock(options.transcript, indent + '    ')
+        + transcriptBlock(options.transcript, indent + '    ',
+            cut.tail ? markFigures(cut.tail, figures) : '')
         + '\n' + indent + '</figure>';
 }
 
@@ -377,10 +403,9 @@ function buildWealthPlans() {
         };
     });
 
-    const all = samples.concat(pages);
-    if (!all.length) return '\n';
+    if (!samples.length && !pages.length) return '\n';
 
-    function render(list, indent) {
+    function render(list, indent, gallery) {
         return list.map(function (item) {
             return planFigure({
                 indent: indent,
@@ -390,19 +415,109 @@ function buildWealthPlans() {
                 caption: item.caption,
                 figures: item.figures,
                 transcript: item.transcript,
-                link: item.link
+                link: item.link,
+                gallery: gallery
             });
         }).join('');
     }
 
-    const head = render(all.slice(0, PLANS_VISIBLE), '                        ');
-    const rest = all.slice(PLANS_VISIBLE);
-    let out = '\n                    <div class="rv-grid rv-grid--3">' + head + '\n                    </div>';
+    /* The four sample pages lead, two up, because they are 1210px wide and
+       legible at that size. The 72 crops follow in a compact four-up gallery. */
+    let out = '';
+    if (samples.length) {
+        out += '\n                    <div class="rv-grid rv-grid--2 rv-plans__lead">'
+            + render(samples, '                        ', false)
+            + '\n                    </div>';
+    }
+    const head = render(pages.slice(0, PLANS_VISIBLE), '                        ', true);
+    const rest = pages.slice(PLANS_VISIBLE);
+    if (head) {
+        out += '\n                    <div class="rv-grid rv-grid--4">' + head + '\n                    </div>';
+    }
     if (rest.length) {
         out += reveal('Show the other ' + rest.length + ' wealth plan pages',
-            render(rest, '                                '));
+            render(rest, '                                ', true), 'rv-grid rv-grid--4');
     }
     return out + '\n                ';
+}
+
+/* ------------------------------------------------------- video transcripts */
+
+/**
+ * A video's transcript as paragraphs. The data file holds plain text with a
+ * blank line between paragraphs, or an array of paragraphs; anything else is
+ * treated as one paragraph. Nothing is reworded here.
+ * @param {string|string[]|null} transcript
+ * @returns {string[]}
+ */
+function transcriptParagraphs(transcript) {
+    if (!transcript) return [];
+    const parts = Array.isArray(transcript) ? transcript : String(transcript).split(/\n\s*\n/);
+    return parts.map(function (part) {
+        return String(part).replace(/\s+/g, ' ').trim();
+    }).filter(Boolean);
+}
+
+/**
+ * The disclosure that holds one video's transcript. Closed by default, so it
+ * costs no height, and in the HTML at load, so every crawler reads it.
+ * @param {string|string[]|null} transcript
+ * @param {string} indent
+ * @returns {string} the empty string when there is no transcript
+ */
+function videoTranscriptBlock(transcript, indent) {
+    const paragraphs = transcriptParagraphs(transcript);
+    if (!paragraphs.length) return '';
+    return ''
+        + '\n' + indent + '<details class="rv-text">'
+        + '\n' + indent + '    <summary>Transcript</summary>'
+        + '\n' + indent + '    <div class="rv-text__body">'
+        + paragraphs.map(function (paragraph) {
+            return '\n' + indent + '        <p>' + esc(paragraph) + '</p>';
+        }).join('')
+        + '\n' + indent + '    </div>'
+        + '\n' + indent + '</details>';
+}
+
+/**
+ * Fill every <!-- reviews:transcript:<id>:start/end --> pair on the page. An
+ * id with no record, or a record with no transcript, leaves its block empty.
+ * @param {string} html
+ * @param {object[]} videos
+ * @returns {{html: string, filled: number, markers: number}}
+ */
+function fillTranscripts(html, videos) {
+    const byId = {};
+    videos.forEach(function (record) {
+        if (record && record.id) byId[record.id] = record;
+    });
+
+    const seen = {};
+    let filled = 0;
+    let markers = 0;
+
+    const pattern = /([ \t]*)<!-- reviews:transcript:([A-Za-z0-9_-]+):start -->[\s\S]*?<!-- reviews:transcript:\2:end -->/g;
+    const out = html.replace(pattern, function (whole, indent, id) {
+        markers += 1;
+        seen[id] = true;
+        const record = byId[id];
+        if (!record) {
+            console.warn('build-reviews-sections: no video record for transcript marker ' + id);
+        }
+        const body = record ? videoTranscriptBlock(record.transcript, indent) : '';
+        if (body) filled += 1;
+        return indent + '<!-- reviews:transcript:' + id + ':start -->'
+            + body
+            + '\n' + indent + '<!-- reviews:transcript:' + id + ':end -->';
+    });
+
+    videos.forEach(function (record) {
+        if (record.transcript && !seen[record.id]) {
+            console.warn('build-reviews-sections: ' + record.id + ' has a transcript but no marker on the page');
+        }
+    });
+
+    return { html: out, filled: filled, markers: markers };
 }
 
 /* ------------------------------------------------------------- trustpilot */
@@ -427,14 +542,34 @@ function longDate(value) {
 }
 
 /** Five authored stars, filled to the rating. No brand green, no glyphs. */
-function stars(rating) {
+function stars(rating, extraClass) {
     const value = Number(rating);
     if (!value) return '';
+    const whole = Math.floor(value);
+    const part = value - whole;
     let svg = '';
     for (let i = 1; i <= 5; i += 1) {
-        svg += '<svg class="' + (i <= value ? 'on' : 'off') + '" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg>';
+        let cls = 'off';
+        if (i <= whole) cls = 'on';
+        else if (i === whole + 1 && part > 0.02) cls = 'part';
+        svg += '<svg class="' + cls + '" aria-hidden="true" focusable="false"><use href="#rv-star"></use></svg>';
     }
-    return '<span class="rv-stars" role="img" aria-label="' + value + ' out of 5 stars">' + svg + '</span>';
+    return '<span class="rv-stars' + (extraClass ? ' ' + extraClass : '')
+        + '" role="img" aria-label="' + value + ' out of 5 stars">' + svg + '</span>';
+}
+
+/**
+ * The gradient that fills the last star to the fraction of the score. It has
+ * to sit in the document, so it is written with the block that uses it.
+ */
+function partStop(rating) {
+    const value = Number(rating);
+    const at = Math.round((value - Math.floor(value)) * 100) + '%';
+    return '<svg aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0">'
+        + '<defs><linearGradient id="rv-star-part" x1="0" y1="0" x2="1" y2="0">'
+        + '<stop offset="' + at + '" style="stop-color:var(--gold)"></stop>'
+        + '<stop offset="' + at + '" style="stop-color:var(--line)"></stop>'
+        + '</linearGradient></defs></svg>';
 }
 
 /** True when the review title is only the opening words of the review body. */
@@ -445,6 +580,31 @@ function titleRepeatsBody(title, body) {
     const head = flatten(title);
     if (!head) return true;
     return flatten(body).indexOf(head) === 0;
+}
+
+/**
+ * The screenshot of one review on Trustpilot. Screenshots are what people
+ * believe, so they lead each review; the same words follow underneath, so the
+ * page still reads as text. A record with no file on disk simply loses its
+ * picture and keeps its text.
+ */
+function screenshot(review, authorName, rating, dateLabel) {
+    const image = review && review.image;
+    const source = image && (image.path || image.src || image.file);
+    if (!source) return '';
+    const relative = String(source).replace(/^\/+/, '');
+    if (!fs.existsSync(path.join(ROOT, relative))) return '';
+    const width = Number(image.width);
+    const height = Number(image.height);
+    if (!width || !height) return '';
+    /* The body of the review is in the DOM underneath, so the alt text says
+       what the picture is and nothing that is already written below it. */
+    const alt = 'Trustpilot review by ' + authorName
+        + (rating ? ', ' + rating + (Number(rating) === 1 ? ' star' : ' stars') : '')
+        + (dateLabel ? ', ' + dateLabel : '');
+    return '<img class="rv-review__shot" src="/' + esc(relative) + '" alt="' + esc(alt)
+        + '" width="' + width + '" height="' + height + '" loading="lazy" decoding="async"'
+        + ' sizes="(min-width: 700px) 45vw, 92vw">';
 }
 
 function buildTrustpilot() {
@@ -462,12 +622,23 @@ function buildTrustpilot() {
     let out = '';
 
     if (score && count) {
+        /* The score, read as one mark: the number, the stars it earns, and the
+           way out to the profile Preston Seo does not control. */
+        out += '\n                    ' + partStop(score)
+            + '\n                    <div class="rv-score">'
+            + '\n                        <p class="rv-score__val">' + esc(score) + '</p>'
+            + '\n                        <div class="rv-score__of">'
+            + '\n                            ' + stars(score, 'rv-stars--lg')
+            + '\n                            <p class="rv-score__n">' + esc(count) + ' reviews on Trustpilot</p>'
+            + '\n                        </div>'
+            + '\n                        <p class="rv-score__link"><a class="btn-secondary" href="' + esc(profile)
+            + '" rel="nofollow noopener" target="_blank">See all ' + esc(count) + ' on Trustpilot</a></p>'
+            + '\n                    </div>';
         out += '\n                    <p class="rv-tp-summary">Trustpilot rates ' + esc(name) + ' ' + esc(score)
             + ' out of 5 across ' + esc(count) + ' reviews, ' + esc((split.five || {}).percentDisplayed)
             + '% of them five star and ' + esc((split.one || {}).percentDisplayed) + '% one star. The '
             + reviews.length + ' below are the ones captured on ' + esc(captured)
-            + '. Preston Seo does not control that page. <a href="' + esc(profile)
-            + '" rel="nofollow noopener" target="_blank">See all ' + esc(count) + ' on Trustpilot</a>.</p>';
+            + '. Preston Seo does not control that page.</p>';
     }
 
     const order = [['five', 'Five star'], ['four', 'Four star'], ['three', 'Three star'],
@@ -475,17 +646,20 @@ function buildTrustpilot() {
     const rows = order.map(function (pair) {
         const bucket = split[pair[0]];
         if (!bucket) return '';
-        return '\n                            <tr><td>' + pair[1] + '</td><td class="num">'
-            + esc(bucket.count) + '</td><td class="num">' + esc(bucket.percentDisplayed) + '%</td></tr>';
+        const share = Number(bucket.percentDisplayed) || 0;
+        return '\n                        <li>'
+            + '<span class="rv-bars__lab">' + pair[1] + '</span>'
+            + '<span class="rv-bars__track" aria-hidden="true">'
+            + (share > 0 ? '<span class="rv-bars__fill" style="width:' + share + '%"></span>' : '')
+            + '</span>'
+            + '<span class="rv-bars__n">' + esc(bucket.count) + '</span>'
+            + '<span class="rv-bars__p">' + esc(bucket.percentDisplayed) + '%</span>'
+            + '</li>';
     }).join('');
     if (rows) {
-        out += '\n                    <div class="table-inset">'
-            + '\n                        <table>'
-            + '\n                            <caption>The ' + esc(count) + ' reviews on the Trustpilot profile, by rating.</caption>'
-            + '\n                            <thead><tr><th scope="col">Rating</th><th scope="col" class="num">Reviews</th><th scope="col" class="num">Share</th></tr></thead>'
-            + '\n                            <tbody>' + rows + '\n                            </tbody>'
-            + '\n                        </table>'
-            + '\n                    </div>';
+        out += '\n                    <ul class="rv-bars">' + rows + '\n                    </ul>'
+            + '\n                    <p class="rv-bars__cap">The ' + esc(count)
+            + ' reviews on the Trustpilot profile, by rating.</p>';
     }
 
     const cards = reviews.map(function (review) {
@@ -499,10 +673,14 @@ function buildTrustpilot() {
         const quote = body || title;
         if (!quote) return '';
         const showTitle = title && body && !titleRepeatsBody(title, body);
+        const shot = screenshot(review, authorName, rating, when.label);
         return function (indent) {
             return ''
                 + '\n' + indent + '<article class="rv-review" data-rv="' + K_REVIEW + '">'
-                + (rating ? '\n' + indent + '    <p class="rv-review__rating">' + stars(rating) + '</p>' : '')
+                + (shot ? '\n' + indent + '    ' + shot : '')
+                // The screenshot carries the stars, and says so in its alt text.
+                // Only a review whose picture is missing draws them again.
+                + (rating && !shot ? '\n' + indent + '    <p class="rv-review__rating">' + stars(rating) + '</p>' : '')
                 + (showTitle ? '\n' + indent + '    <h3>' + esc(title.trim()) + '</h3>' : '')
                 + '\n' + indent + '    <blockquote><p>' + esc(quote.trim()) + '</p></blockquote>'
                 + '\n' + indent + '    <p class="rv-review__by"><span class="rv-name">' + esc(authorName) + '</span>'
@@ -517,12 +695,13 @@ function buildTrustpilot() {
     const head = cards.slice(0, REVIEWS_VISIBLE).map(function (card) {
         return card('                        ');
     }).join('');
-    out += '\n                    <div class="rv-grid rv-grid--2">' + head + '\n                    </div>';
+    out += '\n                    <div class="rv-tp-grid">' + head + '\n                    </div>';
 
     const rest = cards.slice(REVIEWS_VISIBLE);
     if (rest.length) {
         out += reveal('Show the other ' + rest.length + ' Trustpilot reviews',
-            rest.map(function (card) { return card('                                '); }).join(''));
+            rest.map(function (card) { return card('                                '); }).join(''),
+            'rv-tp-grid');
     }
 
     return out + '\n                ';
@@ -540,15 +719,25 @@ function main() {
     const trustpilot = buildTrustpilot();
     html = replaceBlock(html, 'wealth-plans', wealthPlans);
     html = replaceBlock(html, 'trustpilot', trustpilot);
+    const transcripts = fillTranscripts(html, readJson('data/reviews-videos.json') || []);
+    html = transcripts.html;
     fs.writeFileSync(PAGE, html);
 
     const planCount = (wealthPlans.match(/class="rv-plan[ "]/g) || []).length;
     const textCount = (wealthPlans.match(/class="rv-text"/g) || []).length;
     const reviewCount = (trustpilot.match(/class="rv-review"/g) || []).length;
     console.log('build-reviews-sections: ' + planCount + ' wealth plan pages ('
-        + textCount + ' with their text), ' + reviewCount + ' Trustpilot reviews');
+        + textCount + ' with their text), ' + reviewCount + ' Trustpilot reviews, '
+        + transcripts.filled + ' of ' + transcripts.markers + ' video transcripts');
 }
 
-main();
+if (require.main === module) main();
 
-module.exports = { normalizeCaption, markFigures, titleRepeatsBody };
+module.exports = {
+    normalizeCaption,
+    markFigures,
+    titleRepeatsBody,
+    transcriptParagraphs,
+    videoTranscriptBlock,
+    fillTranscripts
+};

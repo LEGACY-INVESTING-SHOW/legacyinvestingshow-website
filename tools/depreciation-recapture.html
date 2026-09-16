@@ -7,6 +7,8 @@
   <meta name="description" content="Split a rental sale into depreciation recapture and leftover long-term gain using basis, accumulated depreciation, and your rates.">
   <meta name="keywords" content="Depreciation recapture, Taxes &amp; payroll, calculator, Legacy Investing Show">
   <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="Kec6RfGhFL-qG_8zKxCqt7yxjgy65WeDAftCBm90G2s">
+    <meta name="google-site-verification" content="92MoCnkdQOj_ey1lEafT5Mz-znCcCQ3UABZlI-JG_nM">
   <link rel="canonical" href="https://www.legacyinvestingshow.com/tools/depreciation-recapture">
   <meta property="og:title" content="Depreciation recapture calculator | Legacy Investing Show">
   <meta property="og:description" content="Split a rental sale into depreciation recapture and leftover long-term gain using basis, accumulated depreciation, and your rates.">
@@ -21,10 +23,10 @@
   <meta name="twitter:site" content="@thelegacyshow">
   <link rel="icon" href="/favicon.ico" sizes="256x256" type="image/x-icon">
   <link rel="preload" href="/assets/fonts/public-sans-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css?v=96672e7d">
     <meta name="theme-color" content="#FBF8F1">
   <link rel="stylesheet" href="/tools/_next/static/chunks/2tdy5h_g9hs2_.css">
-  <link rel="stylesheet" href="/assets/css/tools-bridge.css">
+  <link rel="stylesheet" href="/assets/css/tools-bridge.css?v=16d4eea2">
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","@id":"https://www.legacyinvestingshow.com/tools/depreciation-recapture#app","name":"Depreciation recapture calculator","url":"https://www.legacyinvestingshow.com/tools/depreciation-recapture","applicationCategory":"FinanceApplication","operatingSystem":"Any","description":"Split a rental sale into depreciation recapture and leftover long-term gain using basis, accumulated depreciation, and your rates.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},{"@type":"FAQPage","@id":"https://www.legacyinvestingshow.com/tools/depreciation-recapture#faq","mainEntity":[{"@type":"Question","name":"Is recapture ordinary income?","acceptedAnswer":{"@type":"Answer","text":"Unrecaptured 1250 on real property is generally capped at 25%. Personal property (1245) can be ordinary. This tool uses the rate you enter for the recapture slice."}},{"@type":"Question","name":"Does a 1031 avoid recapture now?","acceptedAnswer":{"@type":"Answer","text":"A valid exchange can defer it. Recapture can still matter later."}},{"@type":"Question","name":"Where is NIIT?","acceptedAnswer":{"@type":"Answer","text":"Not included. Add 3.8% mentally if MAGI is over the NIIT threshold."}}]},{"@type":"BreadcrumbList","@id":"https://www.legacyinvestingshow.com/tools/depreciation-recapture#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"All calculators","item":"https://www.legacyinvestingshow.com/tools"},{"@type":"ListItem","position":2,"name":"Taxes & payroll","item":"https://www.legacyinvestingshow.com/tools/categories/taxes-payroll"},{"@type":"ListItem","position":3,"name":"Depreciation recapture","item":"https://www.legacyinvestingshow.com/tools/depreciation-recapture"}]}]}</script>
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
@@ -44,6 +46,7 @@
             <div class="site-nav-links">
                 <a href="/" class="nav-link">Home</a>
                     <a href="/about" class="nav-link">About</a>
+                    <a href="/reviews" class="nav-link">Reviews</a>
                     <a href="/tax-strategies" class="nav-link">Tax Strategies</a>
                     <a href="/compare" class="nav-link">Compare</a>
                     <a href="/tools" class="nav-link nav-link-active">Tools</a>
@@ -55,6 +58,7 @@
             <div id="mobile-menu" class="site-nav-mobile hidden">
                 <a href="/" class="nav-link">Home</a>
                     <a href="/about" class="nav-link">About</a>
+                    <a href="/reviews" class="nav-link">Reviews</a>
                     <a href="/tax-strategies" class="nav-link">Tax Strategies</a>
                     <a href="/compare" class="nav-link">Compare</a>
                     <a href="/tools" class="nav-link nav-link-active">Tools</a>
@@ -219,8 +223,7 @@
                     <p class="site-footer-title">Company</p>
                     <ul>
                         <li><a href="/about">About Preston Seo</a></li>
-                        <li><a href="/success-stories">Student results</a></li>
-                        <li><a href="/reviews">Reviews</a></li>
+                        <li><a href="/reviews">Client results</a></li>
                         <li><a href="/privacy">Privacy</a></li>
                         <li><a href="/terms">Terms</a></li>
                     </ul>
@@ -230,8 +233,8 @@
         </div>
     </footer>
   <script type="application/json" id="operator-spec">{"slug":"depreciation-recapture","inputs":[{"id":"originalBasis","label":"Original depreciable basis","type":"currency","default":400000},{"id":"accumulatedDepreciation","label":"Accumulated depreciation","type":"currency","default":90000},{"id":"salePrice","label":"Sale price","type":"currency","default":550000},{"id":"sellingCosts","label":"Selling costs","type":"currency","default":33000},{"id":"recaptureRate","label":"Unrecaptured 1250 / recapture rate","type":"percent","default":25},{"id":"ltcgRate","label":"Long-term capital gains rate","type":"percent","default":15}],"examples":[{"name":"Held 7 years","description":"$90k of depreciation on a $550k sale.","inputs":{"originalBasis":400000,"accumulatedDepreciation":90000,"salePrice":550000,"sellingCosts":33000,"recaptureRate":25,"ltcgRate":15}},{"name":"Heavy cost seg","description":"More recapture after acceleration.","inputs":{"originalBasis":400000,"accumulatedDepreciation":180000,"salePrice":550000,"sellingCosts":33000,"recaptureRate":25,"ltcgRate":15}},{"name":"High bracket leftover gain","description":"Leftover gain at 20%.","inputs":{"originalBasis":400000,"accumulatedDepreciation":90000,"salePrice":800000,"sellingCosts":48000,"recaptureRate":25,"ltcgRate":20}}]}</script>
-  <script src="/assets/js/operator-calculator-models.js"></script>
-  <script src="/assets/js/operator-calculator.js"></script>
-  <script src="/assets/js/tools-site-shell.js" defer></script>
+  <script src="/assets/js/operator-calculator-models.js?v=32732902"></script>
+  <script src="/assets/js/operator-calculator.js?v=02e1bd07"></script>
+  <script src="/assets/js/tools-site-shell.js?v=eeee162d" defer></script>
 </body>
 </html>

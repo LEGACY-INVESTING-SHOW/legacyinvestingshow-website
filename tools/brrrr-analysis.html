@@ -7,6 +7,8 @@
   <meta name="description" content="Estimate cash left in after an ARV refinance, then monthly cash flow and cash-on-cash on the remaining cash.">
   <meta name="keywords" content="BRRRR analysis, Housing &amp; moving, calculator, Legacy Investing Show">
   <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="Kec6RfGhFL-qG_8zKxCqt7yxjgy65WeDAftCBm90G2s">
+    <meta name="google-site-verification" content="92MoCnkdQOj_ey1lEafT5Mz-znCcCQ3UABZlI-JG_nM">
   <link rel="canonical" href="https://www.legacyinvestingshow.com/tools/brrrr-analysis">
   <meta property="og:title" content="BRRRR analysis calculator | Legacy Investing Show">
   <meta property="og:description" content="Estimate cash left in after an ARV refinance, then monthly cash flow and cash-on-cash on the remaining cash.">
@@ -21,10 +23,10 @@
   <meta name="twitter:site" content="@thelegacyshow">
   <link rel="icon" href="/favicon.ico" sizes="256x256" type="image/x-icon">
   <link rel="preload" href="/assets/fonts/public-sans-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css?v=96672e7d">
     <meta name="theme-color" content="#FBF8F1">
   <link rel="stylesheet" href="/tools/_next/static/chunks/2tdy5h_g9hs2_.css">
-  <link rel="stylesheet" href="/assets/css/tools-bridge.css">
+  <link rel="stylesheet" href="/assets/css/tools-bridge.css?v=16d4eea2">
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","@id":"https://www.legacyinvestingshow.com/tools/brrrr-analysis#app","name":"BRRRR analysis calculator","url":"https://www.legacyinvestingshow.com/tools/brrrr-analysis","applicationCategory":"FinanceApplication","operatingSystem":"Any","description":"Estimate cash left in after an ARV refinance, then monthly cash flow and cash-on-cash on the remaining cash.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},{"@type":"FAQPage","@id":"https://www.legacyinvestingshow.com/tools/brrrr-analysis#faq","mainEntity":[{"@type":"Question","name":"What if cash left in is negative?","acceptedAnswer":{"@type":"Answer","text":"You pulled money out. CoC is not a useful percentage then; look at cash flow and risk."}},{"@type":"Question","name":"Is 75% LTV realistic?","acceptedAnswer":{"@type":"Answer","text":"Sometimes. Many investors underwrite 70% so the refinance still closes."}},{"@type":"Question","name":"Does this include the original hard-money loan?","acceptedAnswer":{"@type":"Answer","text":"No. It assumes you get to the long-term refinance. Bridge costs belong in rehab/holding."}}]},{"@type":"BreadcrumbList","@id":"https://www.legacyinvestingshow.com/tools/brrrr-analysis#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"All calculators","item":"https://www.legacyinvestingshow.com/tools"},{"@type":"ListItem","position":2,"name":"Housing & moving","item":"https://www.legacyinvestingshow.com/tools/categories/housing-moving"},{"@type":"ListItem","position":3,"name":"BRRRR analysis","item":"https://www.legacyinvestingshow.com/tools/brrrr-analysis"}]}]}</script>
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2578PT1WSS"></script>
@@ -44,6 +46,7 @@
             <div class="site-nav-links">
                 <a href="/" class="nav-link">Home</a>
                     <a href="/about" class="nav-link">About</a>
+                    <a href="/reviews" class="nav-link">Reviews</a>
                     <a href="/tax-strategies" class="nav-link">Tax Strategies</a>
                     <a href="/compare" class="nav-link">Compare</a>
                     <a href="/tools" class="nav-link nav-link-active">Tools</a>
@@ -55,6 +58,7 @@
             <div id="mobile-menu" class="site-nav-mobile hidden">
                 <a href="/" class="nav-link">Home</a>
                     <a href="/about" class="nav-link">About</a>
+                    <a href="/reviews" class="nav-link">Reviews</a>
                     <a href="/tax-strategies" class="nav-link">Tax Strategies</a>
                     <a href="/compare" class="nav-link">Compare</a>
                     <a href="/tools" class="nav-link nav-link-active">Tools</a>
@@ -231,8 +235,7 @@
                     <p class="site-footer-title">Company</p>
                     <ul>
                         <li><a href="/about">About Preston Seo</a></li>
-                        <li><a href="/success-stories">Student results</a></li>
-                        <li><a href="/reviews">Reviews</a></li>
+                        <li><a href="/reviews">Client results</a></li>
                         <li><a href="/privacy">Privacy</a></li>
                         <li><a href="/terms">Terms</a></li>
                     </ul>
@@ -242,8 +245,8 @@
         </div>
     </footer>
   <script type="application/json" id="operator-spec">{"slug":"brrrr-analysis","inputs":[{"id":"purchase","label":"Purchase price","type":"currency","default":180000},{"id":"rehab","label":"Rehab and holding","type":"currency","default":45000},{"id":"arv","label":"After-repair value","type":"currency","default":280000},{"id":"ltv","label":"Refinance LTV","type":"percent","default":75},{"id":"rent","label":"Monthly rent","type":"currency","default":2100},{"id":"vacancy","label":"Vacancy","type":"percent","default":6},{"id":"ops","label":"Monthly ops","type":"currency","default":550},{"id":"rate","label":"Refinance rate","type":"percent","default":7},{"id":"years","label":"Refinance term","type":"years","default":30}],"examples":[{"name":"Textbook","description":"Buy 180, rehab 45, ARV 280.","inputs":{"purchase":180000,"rehab":45000,"arv":280000,"ltv":75,"rent":2100,"vacancy":6,"ops":550,"rate":7,"years":30}},{"name":"Over-rehab","description":"Rehab $80k.","inputs":{"purchase":180000,"rehab":80000,"arv":280000,"ltv":75,"rent":2100,"vacancy":6,"ops":550,"rate":7,"years":30}},{"name":"70% LTV","description":"More conservative refinance.","inputs":{"purchase":180000,"rehab":45000,"arv":280000,"ltv":70,"rent":2100,"vacancy":6,"ops":550,"rate":7,"years":30}}]}</script>
-  <script src="/assets/js/operator-calculator-models.js"></script>
-  <script src="/assets/js/operator-calculator.js"></script>
-  <script src="/assets/js/tools-site-shell.js" defer></script>
+  <script src="/assets/js/operator-calculator-models.js?v=32732902"></script>
+  <script src="/assets/js/operator-calculator.js?v=02e1bd07"></script>
+  <script src="/assets/js/tools-site-shell.js?v=eeee162d" defer></script>
 </body>
 </html>

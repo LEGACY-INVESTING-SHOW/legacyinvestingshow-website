@@ -9,6 +9,7 @@ const tailwind = require('../tailwind.config.js');
 
 test('production build ships blog HTML from the markdown generator, not Eleventy', () => {
     assert.match(pkg.scripts.build, /build:blog/);
+    assert.match(pkg.scripts.build, /build:image-sitemap/);
     assert.doesNotMatch(pkg.scripts.build, /cms:verify/);
     assert.doesNotMatch(pkg.scripts.build, /cms:publish/);
     assert.ok(pkg.scripts['cms:verify'], 'cms:verify stays available as an optional check');
