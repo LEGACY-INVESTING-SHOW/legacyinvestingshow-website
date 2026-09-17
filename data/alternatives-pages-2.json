@@ -13,7 +13,7 @@
     ],
     "competitorProfile": {
       "what": "An Airbnb coaching brand from Shaun Ghavami and Ari Rahmanian that teaches three ways to earn without owning: rental arbitrage (lease, furnish, sublet nightly), bed flipping (rent by the room), and co-listing, its term for co-hosting someone else's listing for a share of revenue.",
-      "format": "Self-paced modules, an active private Facebook group and live group coaching calls. No price on the program, FAQ or reviews pages we checked; the FAQ routes you to a contact page. Verify the current offering on its site before buying, because inclusions change.",
+      "format": "Self-paced modules, an active private Facebook group and live group coaching calls. No price on the program, FAQ or reviews pages we checked; the FAQ routes you to a contact page. Verify the current offering on its site before buying.",
       "knownFor": [
         "Arbitrage and co-hosting in one program",
         "A large social footprint and a busy student community",
@@ -34,7 +34,6 @@
       "No price on the site, so you cannot compare it without booking a call.",
       "Group coaching: your question competes with everyone else's, and nobody is accountable for your progress.",
       "No landlord reference. Written sublet permission is the hardest step in arbitrage, and a group cannot vouch for you.",
-      "Co-hosting and arbitrage are different jobs; people who want one end up paying for both.",
       "No published money-back guarantee on the pages we checked."
     ],
     "alternatives": [
@@ -43,21 +42,21 @@
         "type": "coaching",
         "bestFor": "One property, one dedicated coach, done-with-you setup from signed lease to first guest",
         "strengths": [
-          "Dedicated 1-on-1 coach: a 30 to 45 minute onboarding call, day-to-day messaging for deal reviews, ad-hoc calls and weekly progress reports on a 6-month plan",
-          "Property Profitability Reports (market analysis, cash flow, ROI, tax impact) before you sign, a Market Matrix ranking the top 500 U.S. markets, and coaches who vouch for you with landlords",
-          "Done-for-you listing design, furnishing guidance, messaging automation and dynamic pricing setup, a 45 to 60 minute entity, credit and tax concierge session, and 7+ hours of Airbnb Arbitrage Roadmap curriculum with lifetime access"
+          "Dedicated 1-on-1 coach: onboarding call, day-to-day messaging for deal reviews, ad-hoc calls, weekly progress reports on a 6-month plan",
+          "Property Profitability Reports (market, cash flow, ROI, tax impact) before you sign, a Market Matrix of the top 500 U.S. markets, and coaches who vouch for you with landlords",
+          "Done-for-you listing, furnishing guidance, messaging automation and pricing setup, a 45 to 60 minute entity, credit and tax session, and 7+ hours of Airbnb Arbitrage Roadmap curriculum for life"
         ],
         "tradeoffs": [
           "Standard term is 6 months and one property; the 12-month Scale version covers more, with no count guaranteed",
-          "No published price or money-back guarantee, and you still make the landlord calls yourself, with scripts and roleplay",
-          "Bring roughly $10,000 to $25,000 of your own working capital for deposits and furniture, per the program's own guidance"
+          "No published price or money-back guarantee; you still make the landlord calls, with scripts and roleplay",
+          "Bring roughly $10,000 to $25,000 of your own working capital for deposits and furniture, per the program's guidance"
         ],
         "url": "/airbnbascension"
       },
       {
         "name": "BNB Formula (Brian Page)",
         "type": "coaching",
-        "bestFor": "The largest, longest-running arbitrage brand, if you are happy to ask for the price on a call",
+        "bestFor": "The largest, longest-running arbitrage brand, if you will ask for the price on a call",
         "strengths": [
           "His page claims 25,000+ students in 47 countries; a free book is the entry offer",
           "Arbitrage-only, so nothing is wasted if that is all you want"
@@ -66,7 +65,7 @@
           "Price not published; coaching format is thin on the public pages",
           "No guarantee on the pages we could open; verify the current offering"
         ],
-        "url": "/blog/bnb-formula-vs-10xbnb-vs-airbnb-ascension"
+        "url": "/alternatives/bnb-formula"
       },
       {
         "name": "Sean Rakidzich's courses (Airbnb Automated)",
@@ -126,77 +125,16 @@
       }
     ],
     "comparisonTable": {
-      "columns": [
-        "Criteria",
-        "10XBNB",
-        "Airbnb Ascension",
-        "Rakidzich courses",
-        "Free YouTube"
-      ],
+      "columns": ["Criteria", "10XBNB", "Airbnb Ascension", "Rakidzich courses", "Free YouTube"],
       "rows": [
-        [
-          "Primary focus",
-          "Arbitrage, bed flipping, co-listing",
-          "Arbitrage, one property, done-with-you",
-          "Pricing, market data, search ranking",
-          "Whatever the creator covers"
-        ],
-        [
-          "Format",
-          "Self-paced modules, Facebook group, live group calls",
-          "1-on-1 coach, weekly live Zoom, 7+ hours self-paced",
-          "Short self-paced courses",
-          "Videos"
-        ],
-        [
-          "Who reviews your deal",
-          "You, with group feedback",
-          "Your coach, with a Property Profitability Report",
-          "You",
-          "You"
-        ],
-        [
-          "Landlord reference",
-          "Not offered on pages checked",
-          "Coaches vouch for students",
-          "No",
-          "No"
-        ],
-        [
-          "Entity and tax setup",
-          "Not listed on pages checked",
-          "45 to 60 minute concierge session",
-          "No",
-          "No"
-        ],
-        [
-          "Term",
-          "Verify current offering",
-          "6 months, one property; 12-month Scale version",
-          "Course access; verify",
-          "Not applicable"
-        ],
-        [
-          "Price on the website",
-          "No, contact page",
-          "No, discussed on the call",
-          "Yes, published",
-          "Free"
-        ],
-        [
-          "Published money-back guarantee",
-          "None found",
-          "None published",
-          "30 days",
-          "Not applicable"
-        ],
-        [
-          "Best for",
-          "Co-hosting plus arbitrage in one library",
-          "One coach, one property",
-          "Refundable first step",
-          "Deciding whether to start"
-        ]
+        ["Primary focus", "Arbitrage, bed flipping, co-listing", "Arbitrage, one property, done-with-you", "Pricing, market data, search ranking", "Whatever the creator covers"],
+        ["Format", "Self-paced modules, Facebook group, live group calls", "1-on-1 coach, weekly live Zoom, 7+ hours self-paced", "Short self-paced courses", "Videos"],
+        ["Who reviews your deal", "You, with group feedback", "Your coach, with a Property Profitability Report", "You", "You"],
+        ["Landlord reference", "Not offered on pages checked", "Coaches vouch for students", "No", "No"],
+        ["Entity and tax setup", "Not listed on pages checked", "45 to 60 minute session included", "No", "No"],
+        ["Price on the website", "No, contact page", "No, discussed on the call", "Yes, published", "Free"],
+        ["Published money-back guarantee", "None found", "None published", "30 days", "Not applicable"],
+        ["Best for", "Co-hosting plus arbitrage in one library", "One coach, one property", "Refundable first step", "Deciding whether to start"]
       ]
     },
     "scenarios": [
@@ -224,25 +162,19 @@
         "situation": "You want three or more units in year one",
         "pick": "Ascension Scale version, or 10XBNB",
         "why": "Standard Ascension is one property in six months. Scale runs 12 months with no cap and no guaranteed count. 10XBNB covers scaling but reviews no individual deal."
-      },
-      {
-        "situation": "You learn by reading and posting in forums",
-        "pick": "BiggerPockets plus YouTube",
-        "why": "Both are free. Pay for coaching later, only for the step you are stuck on."
       }
     ],
     "whereLisFits": [
-      "Airbnb Ascension is the pick when you want one person accountable to you and one property finished. You get a dedicated coach, a Market Matrix to choose the city, a Property Profitability Report before you sign, landlord scripts with roleplay, a coach who vouches for you, and done-for-you listing, furnishing, automation and pricing setup once the lease is in hand. The Airbnb Arbitrage Roadmap curriculum underneath is about 7 hours of video with lifetime access; the rest is people and process.",
-      "The results we cite are on our [reviews page](/reviews). [Tom](/blog/tom-zero-to-25k-two-weeks), after a corporate layoff, booked $25,000 in reservations in his first two weeks and reports $5,000 to $6,000 a month in cash flow from his Chesapeake Bay unit. [Kiana](/blog/kiana-replaced-finance-job-airbnb) left a ten-year finance career, runs two Scottsdale arbitrage units at about $3,200 a month, and quit her job three months in. Individual outcomes, not a promise. Our Trustpilot profile shows a 4.2 TrustScore from 66 reviews as of September 2026, one-star reviews included."
+      "Airbnb Ascension is the pick when you want one person accountable to you and one property finished: a dedicated coach, a Market Matrix to choose the city, a Property Profitability Report before you sign, landlord scripts with roleplay and a coach who vouches for you, then done-for-you listing, furnishing, automation and pricing setup. The Airbnb Arbitrage Roadmap curriculum underneath is about 7 hours of video with lifetime access; the rest is people and process.",
+      "The results we cite are on our [reviews page](/reviews). [Tom](/blog/tom-zero-to-25k-two-weeks), after a corporate layoff, booked $25,000 in reservations in his first two weeks and reports $5,000 to $6,000 a month from his Chesapeake Bay unit. [Kiana](/blog/kiana-replaced-finance-job-airbnb) left a ten-year finance career, runs two Scottsdale units at about $3,200 a month, and quit her job three months in. Individual outcomes, not a promise. Our Trustpilot profile shows a 4.2 TrustScore from 66 reviews as of September 2026."
     ],
     "whereLisDoesNotFit": [
-      "Ascension is the wrong first step if you want to test the idea cheaply: pricing is not published, there is no published money-back guarantee, and you bring your own working capital for deposits and furniture. It is also wrong if you want more than one property in six months on the standard term, or if co-hosting is your starting point rather than a later add-on.",
-      "It is not for buyers. Our student [Jeff](/blog/jeff-8k-month-texas-airbnb) chose to buy his Galveston property after 28 years in banking and reports $7,000 to $8,000 a month after his mortgage. That is a different model and a different tax picture from leasing. If ownership is your goal, read the [short-term rental loophole](/tax-strategies/short-term-rental-loophole) page before talking to us or to 10XBNB."
+      "Ascension is the wrong first step if you want to test the idea cheaply: pricing is not published, there is no published money-back guarantee, and you bring your own capital for deposits and furniture. It is also wrong if you want more than one property in six months on the standard term, or if co-hosting is your starting point.",
+      "It is not for buyers. Our student [Jeff](/blog/jeff-8k-month-texas-airbnb) chose to buy his Galveston property after 28 years in banking and reports $7,000 to $8,000 a month after his mortgage. Different model, different tax picture. If ownership is your goal, read the [short-term rental loophole](/tax-strategies/short-term-rental-loophole) page before talking to us or to 10XBNB."
     ],
     "howToDecide": [
       "Check your target city's short-term rental rules. If stays under 30 days are banned where you can afford to lease, no program helps.",
-      "Decide lease or buy. Arbitrage gives cash flow without equity; ownership gives equity and the STR tax rules but needs a down payment.",
-      "Decide co-hosting first or arbitrage first. Co-hosting points to 10XBNB; arbitrage with a coach points to Ascension; arbitrage alone points to Rakidzich.",
+      "Decide lease or buy, then co-hosting or arbitrage. Buying points to an acquisition course; co-hosting to 10XBNB; arbitrage with a coach to Ascension; arbitrage alone to Rakidzich.",
       "Count your reserve. If a program fee would eat the money you need for deposits and furniture, buy the cheap course and keep the cash.",
       "Ask every seller the same four things in writing: the price, the refund policy, who coaches you, and whether they review your specific lease before you sign.",
       "Run one deal through our [arbitrage ROI](/tools/airbnb-arbitrage-roi) and [break-even occupancy](/tools/str-break-even-occupancy) calculators. If it fails in a spreadsheet, no program fixes it."
@@ -254,7 +186,7 @@
       },
       {
         "q": "How much does 10XBNB cost?",
-        "a": "10XBNB does not publish a price; its FAQ sends you to a contact page, so the number comes on a call. Airbnb Ascension does not publish a price either; it is discussed on the strategy call. Sean Rakidzich's courses are the option here with a published price."
+        "a": "10XBNB does not publish a price; its FAQ sends you to a contact page. Airbnb Ascension does not publish one either; it is discussed on the strategy call. Sean Rakidzich's courses are the option here with a published price."
       },
       {
         "q": "What is the difference between 10XBNB and Airbnb Ascension?",
@@ -274,38 +206,14 @@
       }
     ],
     "related": [
-      {
-        "label": "BNB Formula vs 10XBNB vs Airbnb Ascension: the full comparison",
-        "href": "/blog/bnb-formula-vs-10xbnb-vs-airbnb-ascension"
-      },
-      {
-        "label": "Best Airbnb arbitrage courses and mentorships (2026)",
-        "href": "/blog/best-airbnb-arbitrage-courses-2026"
-      },
-      {
-        "label": "Sean Rakidzich vs Preston Seo: two training models",
-        "href": "/blog/sean-rakidzich-vs-preston-seo-airbnb-training"
-      },
-      {
-        "label": "How to evaluate an Airbnb market before you lease",
-        "href": "/blog/best-airbnb-markets-2026-how-to-evaluate-a-city"
-      },
-      {
-        "label": "Airbnb arbitrage ROI calculator",
-        "href": "/tools/airbnb-arbitrage-roi"
-      },
-      {
-        "label": "Break-even occupancy calculator",
-        "href": "/tools/str-break-even-occupancy"
-      },
-      {
-        "label": "Client reviews and Airbnb case studies",
-        "href": "/reviews"
-      },
-      {
-        "label": "Tax strategies for Airbnb hosts",
-        "href": "/tax-strategies/for/airbnb-hosts"
-      }
+      { "label": "BNB Formula vs 10XBNB vs Airbnb Ascension: the full comparison", "href": "/blog/bnb-formula-vs-10xbnb-vs-airbnb-ascension" },
+      { "label": "Best Airbnb arbitrage courses and mentorships (2026)", "href": "/blog/best-airbnb-arbitrage-courses-2026" },
+      { "label": "Sean Rakidzich vs Preston Seo: two training models", "href": "/blog/sean-rakidzich-vs-preston-seo-airbnb-training" },
+      { "label": "How to evaluate an Airbnb market before you lease", "href": "/blog/best-airbnb-markets-2026-how-to-evaluate-a-city" },
+      { "label": "Airbnb arbitrage ROI calculator", "href": "/tools/airbnb-arbitrage-roi" },
+      { "label": "Break-even occupancy calculator", "href": "/tools/str-break-even-occupancy" },
+      { "label": "Client reviews and Airbnb case studies", "href": "/reviews" },
+      { "label": "Tax strategies for Airbnb hosts", "href": "/tax-strategies/for/airbnb-hosts" }
     ]
   },
   {
@@ -313,16 +221,16 @@
     "slug": "bnb-formula",
     "competitor": "BNB Formula",
     "title": "BNB Formula Alternatives: Arbitrage Programs Compared (2026)",
-    "metaDescription": "BNB Formula alternatives for Airbnb arbitrage, compared on coaching, deal review, landlord support and tax treatment, with who each fits and student results.",
+    "metaDescription": "BNB Formula alternatives for Airbnb arbitrage, compared on coaching, deal review, landlord support and tax treatment, with who each fits and real results.",
     "h1": "BNB Formula Alternatives: Six Airbnb Arbitrage Programs Compared",
     "updated": "2026-09-17",
     "verdict": [
-      "BNB Formula is the safe, well-known choice if you want a big, long-running arbitrage brand and are happy to learn the price and coaching details on a call. It is a weaker fit if you want one coach who reviews your specific lease, if you need a published price and refund policy before committing, or if you have realised you want to own the property rather than lease it.",
-      "Airbnb Ascension is ours and we flag it throughout. It suits the buyer who wants one property finished with one coach and done-for-you setup. If cost transparency is your reason for leaving, Sean Rakidzich's published, refundable courses solve that better than we do. If taxes are your reason, read the tax section: arbitrage and ownership are taxed very differently, and the [short-term rental loophole](/tax-strategies/short-term-rental-loophole) belongs to owners, not tenants."
+      "BNB Formula is the safe, well-known choice if you want a big, long-running arbitrage brand and are happy to learn the price and coaching details on a call. It is a weaker fit if you want one coach who reviews your specific lease, if you need a published price and refund policy first, or if you have realised you want to own the property rather than lease it.",
+      "Airbnb Ascension is ours and we flag it throughout. It suits the buyer who wants one property finished with one coach and done-for-you setup. If cost transparency is why you are leaving, Sean Rakidzich's published, refundable courses solve that better than we do. If taxes are why, read the tax section: the [short-term rental loophole](/tax-strategies/short-term-rental-loophole) belongs to owners, not tenants."
     ],
     "competitorProfile": {
       "what": "Brian Page's Airbnb rental arbitrage coaching program: lease a property long-term, get written permission to sublet, furnish it and rent it by the night. His page claims more than 25,000 students in 47 countries, which makes it one of the most established brands in the category.",
-      "format": "The public entry offer is a free book that routes you to a call. Price is not published on the pages we could open, and format details (how much is video, how much is live, who coaches) are thin. Treat this as general public knowledge and verify the current offering with his team before buying.",
+      "format": "The public entry offer is a free book that routes you to a call. Price is not published on the pages we could open, and format details (how much is video, how much is live, who coaches) are thin. Verify the current offering with his team before buying.",
       "knownFor": [
         "One of the earliest and most heavily marketed arbitrage brands",
         "Large student numbers and wide international reach",
@@ -341,8 +249,7 @@
     },
     "whyPeopleLook": [
       "No price on the site; the entry path is a free book, then a call, so comparison shopping is slow.",
-      "Public pages say little about who coaches you and how often.",
-      "No landlord reference. A brand cannot vouch for you; a coach who knows you can.",
+      "Public pages say little about who coaches you and how often, and nothing about a landlord reference.",
       "No guarantee published on the pages we could open.",
       "They want to know what arbitrage does to their taxes, or they have a down payment and want to buy, and an arbitrage-only program covers neither."
     ],
@@ -352,14 +259,14 @@
         "type": "coaching",
         "bestFor": "One property, one dedicated coach, done-for-you setup, and a tax and entity session built in",
         "strengths": [
-          "Dedicated 1-on-1 coach with a 30 to 45 minute onboarding call, day-to-day messaging for deal reviews, ad-hoc calls and weekly progress reports on a 6-month plan",
-          "Property Profitability Reports (market analysis, cash flow, ROI, tax impact) before you sign, a Market Matrix of the top 500 U.S. markets, landlord scripts and sublease templates, and coaches who act as your reference",
-          "Done-for-you listing design, furnishing guidance, messaging automation and pricing setup, a 45 to 60 minute entity, credit and tax concierge session, and 7+ hours of Airbnb Arbitrage Roadmap curriculum with lifetime access"
+          "Dedicated 1-on-1 coach: onboarding call, day-to-day messaging for deal reviews, ad-hoc calls, weekly progress reports on a 6-month plan",
+          "Property Profitability Reports (market, cash flow, ROI, tax impact) before you sign, a Market Matrix of the top 500 U.S. markets, landlord scripts and sublease templates, and coaches who act as your reference",
+          "Done-for-you listing, furnishing guidance, messaging automation and pricing setup, a 45 to 60 minute entity, credit and tax session, and 7+ hours of Airbnb Arbitrage Roadmap curriculum for life"
         ],
         "tradeoffs": [
           "Standard 6-month term is one property; the 12-month Scale version covers more with no count guaranteed",
           "No published price or money-back guarantee, so it does not solve the transparency complaint; you still make the landlord calls",
-          "Bring roughly $10,000 to $25,000 of your own working capital for deposits and furniture, per the program's own guidance"
+          "Bring roughly $10,000 to $25,000 of your own working capital for deposits and furniture, per the program's guidance"
         ],
         "url": "/airbnbascension"
       },
@@ -435,77 +342,16 @@
       }
     ],
     "comparisonTable": {
-      "columns": [
-        "Criteria",
-        "BNB Formula",
-        "Airbnb Ascension",
-        "10XBNB",
-        "Rakidzich courses"
-      ],
+      "columns": ["Criteria", "BNB Formula", "Airbnb Ascension", "10XBNB", "Rakidzich courses"],
       "rows": [
-        [
-          "Primary focus",
-          "Arbitrage only",
-          "Arbitrage, one property, done-with-you",
-          "Arbitrage, bed flipping, co-listing",
-          "Pricing, market data, search ranking"
-        ],
-        [
-          "Format",
-          "Free book, then a call; details not published",
-          "1-on-1 coach, weekly live Zoom, 7+ hours self-paced",
-          "Self-paced modules, Facebook group, live group calls",
-          "Short self-paced courses"
-        ],
-        [
-          "Who reviews your deal",
-          "Not stated publicly",
-          "Your coach, with a Property Profitability Report",
-          "You, with group feedback",
-          "You"
-        ],
-        [
-          "Landlord reference",
-          "Not stated publicly",
-          "Coaches vouch for students",
-          "Not offered on pages checked",
-          "No"
-        ],
-        [
-          "Entity and tax setup",
-          "Not stated publicly",
-          "45 to 60 minute concierge session",
-          "Not listed on pages checked",
-          "No"
-        ],
-        [
-          "Term",
-          "Verify current offering",
-          "6 months, one property; 12-month Scale version",
-          "Verify current offering",
-          "Course access; verify"
-        ],
-        [
-          "Price on the website",
-          "No, free book then a call",
-          "No, discussed on the call",
-          "No, contact page",
-          "Yes, published"
-        ],
-        [
-          "Published money-back guarantee",
-          "None found",
-          "None published",
-          "None found",
-          "30 days"
-        ],
-        [
-          "Best for",
-          "Big established brand, arbitrage only",
-          "One coach, one property",
-          "Co-hosting plus arbitrage",
-          "Refundable first step"
-        ]
+        ["Primary focus", "Arbitrage only", "Arbitrage, one property, done-with-you", "Arbitrage, bed flipping, co-listing", "Pricing, market data, search ranking"],
+        ["Format", "Free book, then a call; details not published", "1-on-1 coach, weekly live Zoom, 7+ hours self-paced", "Self-paced modules, Facebook group, live group calls", "Short self-paced courses"],
+        ["Who reviews your deal", "Not stated publicly", "Your coach, with a Property Profitability Report", "You, with group feedback", "You"],
+        ["Landlord reference", "Not stated publicly", "Coaches vouch for students", "Not offered on pages checked", "No"],
+        ["Entity and tax setup", "Not stated publicly", "45 to 60 minute session included", "Not listed on pages checked", "No"],
+        ["Price on the website", "No, free book then a call", "No, discussed on the call", "No, contact page", "Yes, published"],
+        ["Published money-back guarantee", "None found", "None published", "None found", "30 days"],
+        ["Best for", "Big established brand, arbitrage only", "One coach, one property", "Co-hosting plus arbitrage", "Refundable first step"]
       ]
     },
     "scenarios": [
@@ -533,26 +379,20 @@
         "situation": "No deposit money; you want to start by managing someone else's listing",
         "pick": "10XBNB",
         "why": "Co-listing is a core path in its curriculum. BNB Formula and Ascension are both built around leasing a unit yourself."
-      },
-      {
-        "situation": "You are undecided and want to spend nothing yet",
-        "pick": "Free YouTube plus BiggerPockets",
-        "why": "Watch three operators, call ten landlords, and buy coaching only if you get stuck at a specific step."
       }
     ],
     "whereLisFits": [
-      "Airbnb Ascension fits when your problem is execution, not information. The 6-month program is scoped to one property: a dedicated coach, a Market Matrix to pick the city, a Property Profitability Report on each deal, landlord scripts with roleplay and a coach as your reference, and done-for-you listing, furnishing, automation and pricing setup once the lease is signed. It also includes a 45 to 60 minute entity, credit and tax concierge session, because arbitrage is a business and should be set up as one from month one.",
-      "The results we cite are on our [reviews page](/reviews). [Tom](/blog/tom-zero-to-25k-two-weeks) booked $25,000 in reservations in his first two weeks after a corporate layoff and reports $5,000 to $6,000 a month from his Chesapeake Bay unit. [Kiana](/blog/kiana-replaced-finance-job-airbnb) replaced a ten-year finance career with two Scottsdale arbitrage units at about $3,200 a month and quit three months in. Two people's outcomes, not a forecast for yours. Our Trustpilot profile shows a 4.2 TrustScore from 66 reviews as of September 2026, critical reviews included."
+      "Airbnb Ascension fits when your problem is execution, not information. The 6-month program is scoped to one property: a dedicated coach, a Market Matrix to pick the city, a Property Profitability Report on each deal, landlord scripts with roleplay and a coach as your reference, then done-for-you listing, furnishing, automation and pricing setup. It includes a 45 to 60 minute entity, credit and tax session, because arbitrage is a business and should be set up as one from month one.",
+      "The results we cite are on our [reviews page](/reviews). [Tom](/blog/tom-zero-to-25k-two-weeks) booked $25,000 in reservations in his first two weeks after a corporate layoff and reports $5,000 to $6,000 a month from his Chesapeake Bay unit. [Kiana](/blog/kiana-replaced-finance-job-airbnb) replaced a ten-year finance career with two Scottsdale units at about $3,200 a month and quit three months in. Two people's outcomes, not a forecast. Our Trustpilot profile shows a 4.2 TrustScore from 66 reviews as of September 2026."
     ],
     "whereLisDoesNotFit": [
-      "If you left BNB Formula for price transparency or a refund guarantee, we do not fix that: Ascension pricing is discussed on the call and there is no published money-back guarantee. If you want more than one property inside six months, the standard scope is wrong; ask about the 12-month Scale version and understand it guarantees no count. If your reserve for deposits and furniture is thin, wait.",
-      "If your real goal is the tax side, arbitrage may be the wrong vehicle. Our student [Jeff](/blog/jeff-8k-month-texas-airbnb) chose to buy his Galveston property after 28 years in banking and reports $7,000 to $8,000 a month after his mortgage. Owning gives him depreciation and access to the STR rules; a tenant in an arbitrage unit gets neither. Read the [short-term rental loophole](/tax-strategies/short-term-rental-loophole) page before deciding which model you want."
+      "If you left BNB Formula for price transparency or a refund guarantee, we do not fix that: Ascension pricing is discussed on the call and there is no published money-back guarantee. If you want more than one property inside six months, ask about the 12-month Scale version and understand it guarantees no count. If your reserve for deposits and furniture is thin, wait.",
+      "If your real goal is the tax side, arbitrage may be the wrong vehicle. Our student [Jeff](/blog/jeff-8k-month-texas-airbnb) chose to buy his Galveston property after 28 years in banking and reports $7,000 to $8,000 a month after his mortgage. Owning gives him depreciation and the STR rules; a tenant in an arbitrage unit gets neither. Read the [short-term rental loophole](/tax-strategies/short-term-rental-loophole) page before choosing a model."
     ],
     "howToDecide": [
       "Confirm short-term rentals are legal in the zone you can afford in your target city. If not, no program helps.",
       "Decide lease or buy. Arbitrage starts faster and cheaper and produces ordinary business income. Owning needs a down payment and is the only model that gets depreciation and the STR loophole.",
       "If you lease, decide coach or library. Ascension is a coach; BNB Formula and 10XBNB lean library plus group; Rakidzich is library only.",
-      "Count your reserve. Deposits, furniture and a slow first quarter come first; a program fee that consumes them is a bad trade.",
       "Ask every seller in writing: the price, the refund policy, who coaches you and how often, and whether they review your specific lease.",
       "Set up the entity and the books before the first booking. The tax outcome depends on records you keep from month one. Our [Airbnb host tax page](/tax-strategies/for/airbnb-hosts) lists what to track."
     ],
@@ -563,7 +403,7 @@
       },
       {
         "q": "How much does BNB Formula cost?",
-        "a": "Brian Page does not publish a price on the pages we could open. The entry offer is a free book, and the site routes you to a call for the number. Airbnb Ascension does not publish a price either; it is discussed on the strategy call. The only option here with a published price is Sean Rakidzich's courses."
+        "a": "Brian Page does not publish a price on the pages we could open; the entry offer is a free book and the site routes you to a call. Airbnb Ascension does not publish a price either; it is discussed on the strategy call. The only option here with a published price is Sean Rakidzich's courses."
       },
       {
         "q": "What is the best alternative to BNB Formula?",
@@ -571,50 +411,26 @@
       },
       {
         "q": "How is Airbnb arbitrage income taxed?",
-        "a": "Arbitrage is a business you operate, not a property you own. Nightly revenue is business income; rent, furniture, supplies, cleaning, software and platform fees are business expenses. Because you do not own the building, there is nothing to depreciate and no cost segregation to run. Most planning that applies is entity choice, deductions and records. This is education; confirm your facts with a tax professional."
+        "a": "Arbitrage is a business you operate, not a property you own. Nightly revenue is business income; rent, furniture, supplies, cleaning, software and platform fees are business expenses. Because you do not own the building, there is nothing to depreciate and no cost segregation to run. This is education; confirm your facts with a tax professional."
       },
       {
         "q": "Does the short-term rental loophole apply to Airbnb arbitrage?",
-        "a": "Generally no. The loophole lets an owner who materially participates treat rental losses, usually created by depreciation, as non-passive so they can offset other income such as W-2 wages. An arbitrage operator does not own the property, so there is no depreciation to create that loss. If that outcome is your main goal, study ownership, not arbitrage."
+        "a": "Generally no. The loophole lets an owner who materially participates treat rental losses, usually created by depreciation, as non-passive so they can offset income such as W-2 wages. An arbitrage operator does not own the property, so there is no depreciation to create that loss. If that outcome is your goal, study ownership, not arbitrage."
       },
       {
         "q": "Should I lease or buy my first short-term rental?",
-        "a": "Lease if you want cash flow quickly with less capital and can stomach owing rent in a slow month. Buy if you have a down payment, want equity, and want the depreciation and STR tax rules that only owners get. Our students have done each: Tom and Kiana leased, Jeff bought. Run both through a calculator before choosing a program."
+        "a": "Lease if you want cash flow quickly with less capital and can stomach owing rent in a slow month. Buy if you have a down payment, want equity, and want the depreciation and STR tax rules that only owners get. Our students have done each: Tom and Kiana leased, Jeff bought."
       }
     ],
     "related": [
-      {
-        "label": "BNB Formula vs 10XBNB vs Airbnb Ascension: the full comparison",
-        "href": "/blog/bnb-formula-vs-10xbnb-vs-airbnb-ascension"
-      },
-      {
-        "label": "The short-term rental loophole, explained",
-        "href": "/tax-strategies/short-term-rental-loophole"
-      },
-      {
-        "label": "Real estate professional status vs the STR loophole",
-        "href": "/compare/real-estate-professional-vs-str-loophole"
-      },
-      {
-        "label": "Airbnb taxes vs co-hosting: how each is treated",
-        "href": "/blog/airbnb-taxes-vs-co-hosting"
-      },
-      {
-        "label": "Best Airbnb arbitrage courses and mentorships (2026)",
-        "href": "/blog/best-airbnb-arbitrage-courses-2026"
-      },
-      {
-        "label": "Airbnb arbitrage ROI calculator",
-        "href": "/tools/airbnb-arbitrage-roi"
-      },
-      {
-        "label": "Tax strategies for Airbnb hosts",
-        "href": "/tax-strategies/for/airbnb-hosts"
-      },
-      {
-        "label": "Client reviews and Airbnb case studies",
-        "href": "/reviews"
-      }
+      { "label": "BNB Formula vs 10XBNB vs Airbnb Ascension: the full comparison", "href": "/blog/bnb-formula-vs-10xbnb-vs-airbnb-ascension" },
+      { "label": "The short-term rental loophole, explained", "href": "/tax-strategies/short-term-rental-loophole" },
+      { "label": "Real estate professional status vs the STR loophole", "href": "/compare/real-estate-professional-vs-str-loophole" },
+      { "label": "Airbnb taxes vs co-hosting: how each is treated", "href": "/blog/airbnb-taxes-vs-co-hosting" },
+      { "label": "Best Airbnb arbitrage courses and mentorships (2026)", "href": "/blog/best-airbnb-arbitrage-courses-2026" },
+      { "label": "Airbnb arbitrage ROI calculator", "href": "/tools/airbnb-arbitrage-roi" },
+      { "label": "Tax strategies for Airbnb hosts", "href": "/tax-strategies/for/airbnb-hosts" },
+      { "label": "Client reviews and Airbnb case studies", "href": "/reviews" }
     ]
   },
   {
@@ -622,16 +438,16 @@
     "slug": "wealthability",
     "competitor": "WealthAbility",
     "title": "Legacy Wealth Blueprint vs WealthAbility (2026)",
-    "metaDescription": "Legacy Wealth Blueprint vs WealthAbility (Tom Wheelwright): who does the work, education vs a CPA network, real estate emphasis, W-2 vs owner fit, what to ask.",
+    "metaDescription": "Legacy Wealth Blueprint vs WealthAbility (Tom Wheelwright): who does the work, education vs a CPA network, real estate focus, W-2 vs owner fit, and what to ask.",
     "h1": "Legacy Wealth Blueprint vs WealthAbility (Tom Wheelwright)",
     "updated": "2026-09-17",
     "verdict": [
       "These two solve different problems. WealthAbility is built around Tom Wheelwright's Tax-Free Wealth framework, and its main product is a match with a CPA firm in its network that plans and, in most engagements, files. Legacy Wealth Blueprint is a 12-month coached education program: you learn the strategies across five pillars, get a written plan and a 1-on-1 guide, and hand a CPA Implementation Brief to your own CPA, who decides what applies and files.",
-      "Pick WealthAbility if you want a vetted CPA to own the tax work and you already run a business or hold investments that give a planner real levers. Pick Legacy Wealth Blueprint if you want to understand your own money well enough to direct your CPA, if you are a W-2 earner whose problem is wider than taxes, or if you want to keep the CPA you have. Many people should do both, in that order: learn first, then hire."
+      "Pick WealthAbility if you want a vetted CPA to own the tax work and you already run a business or hold investments that give a planner real levers. Pick Legacy Wealth Blueprint if you want to understand your own money well enough to direct your CPA, if you are a W-2 earner whose problem is wider than taxes, or if you want to keep the CPA you have. Many people should do both, in that order."
     ],
     "competitorProfile": {
-      "what": "The education and advisory business founded by Tom Wheelwright, CPA, author of Tax-Free Wealth and a long-time Rich Dad Advisor. Its central idea is that the tax code is a set of incentives for business owners and investors, and its main offer is matching clients with network CPA firms trained to plan around those incentives.",
-      "format": "Books, live trainings and events on the education side; a consultation, then a match with a network CPA firm on the advisory side. Advisory pricing is not published; it is quoted after the consultation and varies by firm and scope. Verify the current offering on its site, because the network and intake process change.",
+      "what": "The education and advisory business founded by Tom Wheelwright, CPA, author of Tax-Free Wealth and a long-time Rich Dad Advisor. Its central idea is that the tax code is a set of incentives for business owners and investors, and its main offer is matching clients with network CPA firms trained to plan around them.",
+      "format": "Books, live trainings and events on the education side; a consultation, then a match with a network CPA firm on the advisory side. Advisory pricing is not published; it is quoted after the consultation and varies by firm and scope. Verify the current offering on its site.",
       "knownFor": [
         "Tax-Free Wealth and the Rich Dad lineage, with a strong business and real estate emphasis",
         "A network of CPA firms trained in one consistent planning method",
@@ -677,8 +493,8 @@
         "type": "coaching",
         "bestFor": "Learning your whole picture with a 1-on-1 guide, a written plan and a brief for the CPA you already have",
         "strengths": [
-          "A custom 12-month Wealth Strategy Snapshot built from your income, accounts, debt and goals, plus an optional Prior Year Tax Return Diagnostic",
-          "A dedicated Legacy Wealth Guide with an onboarding call and check-ins every two weeks, weekly live coaching with replays, and 100+ lessons across five pillars with lifetime access",
+          "A custom 12-month Wealth Strategy Snapshot built from your numbers, plus an optional Prior Year Tax Return Diagnostic",
+          "A dedicated Legacy Wealth Guide with check-ins every two weeks, weekly live coaching with replays, and 100+ lessons across five pillars for life",
           "A CPA Implementation Brief for your own CPA before filing season, a partner network at client pricing (tax strategist, estate attorney, credit advisor, entity setup), and a free second seat for a spouse"
         ],
         "tradeoffs": [
@@ -718,67 +534,17 @@
       }
     ],
     "comparisonTable": {
-      "columns": [
-        "Criteria",
-        "WealthAbility",
-        "Legacy Wealth Blueprint"
-      ],
+      "columns": ["Criteria", "WealthAbility", "Legacy Wealth Blueprint"],
       "rows": [
-        [
-          "Primary focus",
-          "Tax strategy through a matched CPA firm, in the Tax-Free Wealth method",
-          "A 12-month plan for taxes, debt, income, investments and protection, coached"
-        ],
-        [
-          "Who does the work",
-          "The network CPA firm plans and, in most engagements, files",
-          "You, with a 1-on-1 guide, weekly coaching and a brief for your own CPA"
-        ],
-        [
-          "Model",
-          "CPA network plus education products",
-          "Education plus done-with-you coaching"
-        ],
-        [
-          "Your existing CPA",
-          "Usually replaced by a network firm",
-          "Kept; you hand over a CPA Implementation Brief"
-        ],
-        [
-          "Real estate emphasis",
-          "Strong; central to the framework",
-          "One pillar of five, plus a separate Airbnb lane"
-        ],
-        [
-          "W-2-only earners",
-          "Fewer levers; verify fit",
-          "Built for W-2 earners from about $100,000; no business required"
-        ],
-        [
-          "Business owners",
-          "Strong",
-          "Entity, deductions, S-corp and QBI decisions, with a tax strategist in the partner network"
-        ],
-        [
-          "What you hold at the end",
-          "Filed returns and a planning relationship",
-          "A written plan, a CPA brief, lifetime curriculum"
-        ],
-        [
-          "Term",
-          "Ongoing engagement; verify",
-          "Lifetime curriculum; 12 months of guide, coaching and community"
-        ],
-        [
-          "Pricing",
-          "Not published; quoted after consultation",
-          "Not published; discussed on the strategy call"
-        ],
-        [
-          "Guarantee",
-          "Verify with the firm",
-          "Ask about the No Client Left Behind Guarantee and get its written terms"
-        ]
+        ["Primary focus", "Tax strategy through a matched CPA firm, in the Tax-Free Wealth method", "A 12-month plan for taxes, debt, income, investments and protection, coached"],
+        ["Who does the work", "The network CPA firm plans and, in most engagements, files", "You, with a 1-on-1 guide, weekly coaching and a brief for your own CPA"],
+        ["Your existing CPA", "Usually replaced by a network firm", "Kept; you hand over a CPA Implementation Brief"],
+        ["Real estate emphasis", "Strong; central to the framework", "One pillar of five, plus a separate Airbnb lane"],
+        ["W-2-only earners", "Fewer levers; verify fit", "Built for W-2 earners from about $100,000; no business required"],
+        ["Business owners", "Strong", "Entity, deductions, S-corp and QBI decisions, with a tax strategist in the partner network"],
+        ["Term", "Ongoing engagement; verify", "Lifetime curriculum; 12 months of guide, coaching and community"],
+        ["Pricing", "Not published; quoted after consultation", "Not published; discussed on the strategy call"],
+        ["Guarantee", "Verify with the firm", "Ask about the No Client Left Behind Guarantee and get its written terms"]
       ]
     },
     "scenarios": [
@@ -806,15 +572,10 @@
         "situation": "You are starting a side business this year and also carry consumer debt",
         "pick": "Legacy Wealth Blueprint first, a planning CPA later",
         "why": "Entity choice, business credit, debt order and records need to be set up together. Once there is real income, a firm has something to work with."
-      },
-      {
-        "situation": "You want the tax work owned by a professional and you want to understand it",
-        "pick": "Both, education first",
-        "why": "Learn the strategies, get the plan, then take the brief to a planning CPA. You will get more from the engagement because you can ask precise questions."
       }
     ],
     "whereLisFits": [
-      "Legacy Wealth Blueprint fits when you want to understand your own money and run the plan with support rather than delegate it. You get a custom 12-month Wealth Strategy Snapshot, a 1-on-1 Legacy Wealth Guide who checks in every two weeks, weekly live coaching with every replay, 100+ lessons across tax, debt and credit, income, investments and protection, and a partner network that includes a tax strategist and an estate attorney at client pricing. Near year end you receive a CPA Implementation Brief for the CPA you already use. Details are on the [program page](/legacy-wealth-blueprint).",
+      "Legacy Wealth Blueprint fits when you want to understand your own money and run the plan with support rather than delegate it. You get a custom 12-month Wealth Strategy Snapshot, a 1-on-1 guide who checks in every two weeks, weekly live coaching with every replay, 100+ lessons across tax, debt and credit, income, investments and protection, and a partner network with a tax strategist and an estate attorney at client pricing. Near year end you receive a CPA Implementation Brief for the CPA you already use. Details are on the [program page](/legacy-wealth-blueprint).",
       "Published client results are on our [reviews page](/reviews). [Stephanie Dailey](/blog/stephanie-dailey-legacy-wealth-blueprint-case-study), a software engineer with W-2 income and a consulting business, saved over $20,000 in taxes in her first year. [Albert](/blog/albert-legacy-wealth-blueprint-case-study), an ER physician, put his net worth growth at 25% and cut his home insurance in half. [Abigail](/blog/abigail-legacy-wealth-blueprint-case-study) calculated just under $100,000 in first-year ROI by her own count. Three people's numbers, not a forecast. Our Trustpilot profile shows a 4.2 TrustScore from 66 reviews as of September 2026."
     ],
     "whereLisDoesNotFit": [
@@ -826,13 +587,12 @@
       "Decide learn or delegate. If you never want to understand the strategy, hire a firm. If you want to direct your CPA, join a program.",
       "Decide whether you will change CPAs. WealthAbility generally means moving the work to a network firm; Legacy Wealth Blueprint means keeping yours.",
       "List your non-tax problems. Debt, retirement accounts, insurance or a first side income are untouched by a tax-only engagement.",
-      "Ask WealthAbility on the consultation: which firm would I be matched with, who there does my work, is filing included, what is the fee structure, and what is the guarantee.",
-      "Ask Legacy Wealth Blueprint on the strategy call: what the Wealth Strategy Snapshot contains, who my guide is, how the CPA Implementation Brief works with my CPA, what the No Client Left Behind Guarantee requires in writing, and what the partner network charges separately."
+      "Ask WealthAbility: which firm would I be matched with, who there does my work, is filing included, what is the fee structure, and what is the guarantee. Ask Legacy Wealth Blueprint: what the Wealth Strategy Snapshot contains, who my guide is, how the CPA brief works with my CPA, and what the No Client Left Behind Guarantee requires in writing."
     ],
     "faqs": [
       {
         "q": "Is WealthAbility worth it?",
-        "a": "For a business owner or investor who wants a CPA firm trained in one planning method and is willing to move their tax work there, it can be. For a W-2 earner with no business or property, a planner has fewer levers, and a broader education program may return more. Ask on the consultation exactly what the matched firm does, whether filing is included, and what it costs."
+        "a": "For a business owner or investor who wants a CPA firm trained in one planning method and is willing to move their tax work there, it can be. For a W-2 earner with no business or property, a planner has fewer levers, and a broader education program may return more. Ask on the consultation exactly what the matched firm does and whether filing is included."
       },
       {
         "q": "Does WealthAbility do your taxes?",
@@ -856,38 +616,14 @@
       }
     ],
     "related": [
-      {
-        "label": "What is included in Legacy Wealth Blueprint",
-        "href": "/legacy-wealth-blueprint"
-      },
-      {
-        "label": "Client reviews and Legacy Wealth Blueprint case studies",
-        "href": "/reviews"
-      },
-      {
-        "label": "Karlton Dennis vs Mark Kohler vs Legacy Wealth Blueprint",
-        "href": "/blog/karlton-dennis-vs-mark-kohler-vs-legacy-wealth-blueprint"
-      },
-      {
-        "label": "Best tax strategy programs for high earners",
-        "href": "/best-tax-strategy-programs-for-high-earners"
-      },
-      {
-        "label": "Tax strategies for W-2 employees",
-        "href": "/tax-strategies/for/w2-employees"
-      },
-      {
-        "label": "Tax strategies for real estate investors",
-        "href": "/tax-strategies/for/real-estate-investors"
-      },
-      {
-        "label": "The $88K in tax savings a CPA missed: case study",
-        "href": "/blog/88k-tax-savings-cpa-missed-case-study"
-      },
-      {
-        "label": "Legacy Wealth Blueprint vs WCG CPAs",
-        "href": "/vs/wcg"
-      }
+      { "label": "What is included in Legacy Wealth Blueprint", "href": "/legacy-wealth-blueprint" },
+      { "label": "Client reviews and Legacy Wealth Blueprint case studies", "href": "/reviews" },
+      { "label": "Karlton Dennis vs Mark Kohler vs Legacy Wealth Blueprint", "href": "/blog/karlton-dennis-vs-mark-kohler-vs-legacy-wealth-blueprint" },
+      { "label": "Best tax strategy programs for W-2 earners over $250K", "href": "/blog/best-tax-strategy-programs-w2-earners-over-250k" },
+      { "label": "Tax strategies for W-2 employees", "href": "/tax-strategies/for/w2-employees" },
+      { "label": "Tax strategies for real estate investors", "href": "/tax-strategies/for/real-estate-investors" },
+      { "label": "The $88K in tax savings a CPA missed: case study", "href": "/blog/88k-tax-savings-cpa-missed-case-study" },
+      { "label": "Legacy Wealth Blueprint vs WCG CPAs", "href": "/vs/wcg" }
     ]
   },
   {
@@ -895,16 +631,16 @@
     "slug": "wcg",
     "competitor": "WCG CPAs",
     "title": "Legacy Wealth Blueprint vs WCG CPAs (2026)",
-    "metaDescription": "Legacy Wealth Blueprint vs WCG CPAs: hiring a CPA firm for S-corp planning and compliance versus learning to run the strategy with coaching, and when you need both",
+    "metaDescription": "Legacy Wealth Blueprint vs WCG CPAs: hire a CPA firm for S-corp planning and compliance, or learn to run the strategy with coaching? Plus when you need both.",
     "h1": "Legacy Wealth Blueprint vs WCG CPAs: Firm, Program, or Both?",
     "updated": "2026-09-17",
     "verdict": [
-      "This is not a like-for-like comparison, and pretending otherwise would waste your time. WCG CPAs is a Colorado-based CPA firm: you hire it and it does recurring work, tax planning, return preparation, and for small-business owners the S-corp payroll and bookkeeping that keep an entity compliant. Legacy Wealth Blueprint is a 12-month coached education program: you learn the strategies, get a written plan and a 1-on-1 guide, and hand a CPA Implementation Brief to whichever CPA files for you, which could be WCG.",
-      "If you already run an S-corp, or are about to, and want someone else to own payroll, reasonable-salary support and the filings, hire a firm like WCG and read its knowledge base; it is genuinely good. If your problem is that you do not understand your own money well enough to direct a CPA, or your issues run wider than one entity, join a program. If you are a six-figure business owner who wants to understand the strategy and have it executed, do both, in that order."
+      "This is not a like-for-like comparison. WCG CPAs is a Colorado-based CPA firm: you hire it and it does recurring work, tax planning, return preparation, and for small-business owners the S-corp payroll and bookkeeping that keep an entity compliant. Legacy Wealth Blueprint is a 12-month coached education program: you learn the strategies, get a written plan and a 1-on-1 guide, and hand a CPA Implementation Brief to whichever CPA files for you, which could be WCG.",
+      "If you already run an S-corp, or are about to, and want someone else to own payroll, reasonable-salary support and the filings, hire a firm like WCG and read its knowledge base; it is genuinely good. If your problem is that you do not understand your own money well enough to direct a CPA, or your issues run wider than one entity, join a program. If you are a six-figure owner who wants both understanding and execution, do both, in that order."
     ],
     "competitorProfile": {
-      "what": "A Colorado-based CPA firm best known for small-business and S-corporation tax planning. It has an unusually detailed public knowledge base on LLCs, S-corp elections, reasonable salary, accountable plans and multi-state issues, and its team has published a widely read guide on LLCs and S corps. Much of what people know about S-corp mechanics online traces back to material like this.",
-      "format": "A CPA firm engagement: typically packaged annual services bundling tax planning, business and personal return preparation, and often payroll and bookkeeping for S-corp owners, plus one-off consultations. Fees vary by scope. Verify the current packages, what is bundled, and which states and entity types it serves before engaging.",
+      "what": "A Colorado-based CPA firm best known for small-business and S-corporation tax planning. It has an unusually detailed public knowledge base on LLCs, S-corp elections, reasonable salary, accountable plans and multi-state issues, and its team has published a widely read guide on LLCs and S corps.",
+      "format": "A CPA firm engagement: typically packaged annual services bundling tax planning, business and personal return preparation, and often payroll and bookkeeping for S-corp owners, plus one-off consultations. Fees vary by scope. Verify the current packages, what is bundled, and which states and entity types it serves.",
       "knownFor": [
         "S-corp election, reasonable-salary and payroll planning for owners and consultants",
         "A deep, free public knowledge base and a well-known book on LLCs and S corps",
@@ -925,8 +661,7 @@
       "They found WCG's knowledge base, learned a lot, and are deciding whether to hire a firm or run it themselves with support.",
       "They do not yet have a business, so an S-corp specialist has nothing to work with.",
       "Their CPA files on time but never brings a strategy, and they want to know what to ask for.",
-      "Their questions are wider than one entity: debt, retirement accounts, insurance, a rental, a spouse's income.",
-      "They want a written plan they own and understand, not only a filed return."
+      "Their questions are wider than one entity: debt, retirement accounts, insurance, a rental, a spouse's income."
     ],
     "alternatives": [
       {
@@ -950,9 +685,9 @@
         "type": "coaching",
         "bestFor": "Learning your whole picture with a written plan and a 1-on-1 guide, then briefing your own CPA",
         "strengths": [
-          "A custom 12-month Wealth Strategy Snapshot, an optional Prior Year Tax Return Diagnostic in the first weeks, and a CPA Implementation Brief near filing season for the CPA you already use",
-          "A dedicated Legacy Wealth Guide with check-ins every two weeks, weekly live coaching with replays, and 100+ lessons across tax (LLC and S-corp structure, deductions, W-2 and business strategies), debt and credit, income, investments and protection",
-          "A partner network at client pricing including a tax strategist and entity setup partner, a 45 to 60 minute private strategy session, and a free second seat for a spouse"
+          "A custom 12-month Wealth Strategy Snapshot, an optional Prior Year Tax Return Diagnostic, and a CPA Implementation Brief near filing season for the CPA you already use",
+          "A dedicated Legacy Wealth Guide with check-ins every two weeks, weekly live coaching with replays, and 100+ lessons covering LLC and S-corp structure, deductions, debt and credit, income, investments and protection",
+          "A partner network at client pricing including a tax strategist and entity setup partner, and a free second seat for a spouse"
         ],
         "tradeoffs": [
           "Not a CPA firm: nobody files, runs payroll or gives legal advice, and the team does not contact your CPA",
@@ -991,79 +726,17 @@
       }
     ],
     "comparisonTable": {
-      "columns": [
-        "Criteria",
-        "WCG CPAs (hire a firm)",
-        "Legacy Wealth Blueprint (join a program)",
-        "Both together"
-      ],
+      "columns": ["Criteria", "WCG CPAs (hire a firm)", "Legacy Wealth Blueprint (join a program)", "Both together"],
       "rows": [
-        [
-          "Primary focus",
-          "S-corp and small-business tax planning and compliance",
-          "A 12-month plan across tax, debt, income, investments and protection",
-          "Plan the whole picture, then execute the entity work"
-        ],
-        [
-          "Who does the work",
-          "The firm: planning, returns, often payroll and books",
-          "You, with a guide, weekly coaching and a brief for your CPA",
-          "You learn and decide; the firm files and runs payroll"
-        ],
-        [
-          "What you hold at the end",
-          "Filed returns, payroll records, a planning relationship",
-          "A written plan, a CPA brief, lifetime curriculum",
-          "All of the above"
-        ],
-        [
-          "Term",
-          "Recurring annual engagement",
-          "Lifetime curriculum; 12 months of guide, coaching and community",
-          "Program for a year; firm ongoing"
-        ],
-        [
-          "S-corp depth",
-          "Very deep, including reasonable salary and multi-state",
-          "Covered in the tax pillar; execution is your CPA's",
-          "Deep, and understood"
-        ],
-        [
-          "Non-tax coverage",
-          "Limited to the engagement scope",
-          "Debt, credit, income, investments, protection are core pillars",
-          "Full"
-        ],
-        [
-          "W-2 only, no business",
-          "Little to do; verify fit",
-          "Built for this profile",
-          "Program alone is usually enough"
-        ],
-        [
-          "Pricing",
-          "Firm fees; verify current packages",
-          "Not published; discussed on the strategy call",
-          "Two costs"
-        ],
-        [
-          "You need a return filed this year",
-          "Yes",
-          "No; the brief goes to your own CPA",
-          "Yes, by the firm"
-        ],
-        [
-          "You want to understand the strategy",
-          "Read the knowledge base yourself",
-          "Yes, that is the product",
-          "Yes"
-        ],
-        [
-          "You are launching a business this year",
-          "Useful once income exists",
-          "Entity choice, credit, records and the rest of the plan from day one",
-          "Program now, firm at first real income"
-        ]
+        ["Primary focus", "S-corp and small-business tax planning and compliance", "A 12-month plan across tax, debt, income, investments and protection", "Plan the whole picture, then execute the entity work"],
+        ["Who does the work", "The firm: planning, returns, often payroll and books", "You, with a guide, weekly coaching and a brief for your CPA", "You learn and decide; the firm files and runs payroll"],
+        ["Term", "Recurring annual engagement", "Lifetime curriculum; 12 months of guide, coaching and community", "Program for a year; firm ongoing"],
+        ["S-corp depth", "Very deep, including reasonable salary and multi-state", "Covered in the tax pillar; execution is your CPA's", "Deep, and understood"],
+        ["Non-tax coverage", "Limited to the engagement scope", "Debt, credit, income, investments, protection are core pillars", "Full"],
+        ["W-2 only, no business", "Little to do; verify fit", "Built for this profile", "Program alone is usually enough"],
+        ["Pricing", "Firm fees; verify current packages", "Not published; discussed on the strategy call", "Two costs"],
+        ["You need a return filed this year", "Yes", "No; the brief goes to your own CPA", "Yes, by the firm"],
+        ["You are launching a business this year", "Useful once income exists", "Entity choice, credit, records and the rest of the plan from day one", "Program now, firm at first real income"]
       ]
     },
     "scenarios": [
@@ -1091,28 +764,22 @@
         "situation": "You have an S-corp, rentals and a spouse's W-2, and the pieces do not talk to each other",
         "pick": "Both",
         "why": "The firm keeps the entity compliant; the program builds the plan that connects the entity to the rentals, accounts, debt and protection."
-      },
-      {
-        "situation": "Your business is small and simple and you like reading",
-        "pick": "Do it yourself with the free knowledge base and our calculators",
-        "why": "Below a certain size an S-corp is not worth its payroll cost. Size it with the estimator, keep clean books, revisit when income grows."
       }
     ],
     "whereLisFits": [
-      "Legacy Wealth Blueprint fits when you want to understand and direct your own plan and your questions go beyond one entity. The tax pillar covers LLC and S-corp structure, deductions, tax-advantaged accounts and W-2 and business strategies; the other four cover debt and credit, income, investments and protection. You get a written 12-month Wealth Strategy Snapshot, a 1-on-1 guide who checks in every two weeks, weekly live coaching with every replay, an optional Prior Year Tax Return Diagnostic, and a CPA Implementation Brief you hand to your CPA, whether that is WCG or the preparer you already have.",
+      "Legacy Wealth Blueprint fits when you want to understand and direct your own plan and your questions go beyond one entity. The tax pillar covers LLC and S-corp structure, deductions, tax-advantaged accounts and W-2 and business strategies; the other four cover debt and credit, income, investments and protection. You get a written 12-month Wealth Strategy Snapshot, a 1-on-1 guide, weekly live coaching, an optional Prior Year Tax Return Diagnostic, and a CPA Implementation Brief you hand to your CPA, whether that is WCG or the preparer you already have.",
       "Published client results are on our [reviews page](/reviews). [Stephanie Dailey](/blog/stephanie-dailey-legacy-wealth-blueprint-case-study), with W-2 income and a consulting business, saved over $20,000 in taxes in her first year after opening separate business accounts, keeping real books and putting her kids on payroll. [Abigail](/blog/abigail-legacy-wealth-blueprint-case-study) rebuilt entity and estate work she had set up badly years earlier and calculated just under $100,000 in first-year ROI by her own count. [Shawn](/blog/shawn-legacy-wealth-blueprint-roi-case-study), a business owner with Airbnbs and rentals, came for the tax knowledge he said his CPAs were not giving him. Individual outcomes. Our Trustpilot profile shows a 4.2 TrustScore from 66 reviews as of September 2026."
     ],
     "whereLisDoesNotFit": [
-      "Legacy Wealth Blueprint does not replace a CPA firm and does not try to. Nobody on the team files returns, runs S-corp payroll, handles state notices or gives legal advice, and the team does not contact your CPA; you hand over the brief. If your need is compliance and execution for an entity you already have, a firm like WCG is the right buy and a program is the wrong one.",
-      "It is also the wrong fit if you earn well under six figures, if paying would come out of an emergency fund, or if you only want the S-corp question answered. For that single question, WCG's knowledge base, our [S-corp strategy page](/tax-strategies/s-corp-strategy) and our [S-corp vs sole proprietorship estimator](/tools/scorp-vs-sole-prop) get you most of the way without paying either of us."
+      "Legacy Wealth Blueprint does not replace a CPA firm. Nobody on the team files returns, runs S-corp payroll, handles state notices or gives legal advice, and the team does not contact your CPA; you hand over the brief. If your need is compliance and execution for an entity you already have, a firm like WCG is the right buy and a program is the wrong one.",
+      "It is also the wrong fit if you earn well under six figures, if paying would come out of an emergency fund, or if you only want the S-corp question answered. For that one question, WCG's knowledge base, our [S-corp strategy page](/tax-strategies/s-corp-strategy) and our [S-corp vs sole proprietorship estimator](/tools/scorp-vs-sole-prop) get you most of the way without paying either of us."
     ],
     "howToDecide": [
       "Answer one question first: do I need a return filed and an entity kept compliant this year? If yes, you need a firm regardless of anything else.",
       "Answer a second: do I want to understand the strategy or delegate it? Delegate means firm. Understand means program. Both means program first.",
       "List what you own. W-2 only points to a program. An S-corp with payroll points to a firm. Business plus rentals plus household finance points to both.",
       "Size the S-corp decision before either call with our estimator and the S-corp vs QBI comparison. If the election is not worth it yet, a firm has less to do.",
-      "Ask a firm like WCG: what is bundled, who does my work, how reasonable salary is set and documented, which states are covered, how often we talk outside filing season, and whether they will execute a strategy brief from outside.",
-      "Ask Legacy Wealth Blueprint on the strategy call: what the Wealth Strategy Snapshot contains, who my guide is, how the Prior Year Tax Return Diagnostic and the CPA Implementation Brief work, what the No Client Left Behind Guarantee requires in writing, and what the partner network charges separately."
+      "Ask the firm the questions in the FAQ below. Ask Legacy Wealth Blueprint on the strategy call: what the Wealth Strategy Snapshot contains, who my guide is, how the Prior Year Tax Return Diagnostic and the CPA Implementation Brief work, what the No Client Left Behind Guarantee requires in writing, and what the partner network charges separately."
     ],
     "faqs": [
       {
@@ -1125,7 +792,7 @@
       },
       {
         "q": "Can Legacy Wealth Blueprint replace my CPA?",
-        "a": "No. It is education plus coaching with a written plan. It does not file returns, run payroll or give legal advice. It gives you a CPA Implementation Brief for your own CPA before filing season, and your CPA decides what applies. If you have no CPA, the partner network includes a tax strategist at client pricing; confirm scope and fees before engaging."
+        "a": "No. It is education plus coaching with a written plan. It does not file returns, run payroll or give legal advice. It gives you a CPA Implementation Brief for your own CPA before filing season, and your CPA decides what applies. If you have no CPA, the partner network includes a tax strategist at client pricing; confirm scope and fees first."
       },
       {
         "q": "What should I ask a CPA firm before hiring them for S-corp work?",
@@ -1137,42 +804,18 @@
       },
       {
         "q": "How much does WCG CPAs cost, and how much is Legacy Wealth Blueprint?",
-        "a": "WCG's fees vary by package and scope; check its site for current tiers. Legacy Wealth Blueprint does not publish a price; it is discussed on the strategy call with what is included. Neither figure should be your first question. Decide firm, program or both, then price the one you need."
+        "a": "WCG's fees vary by package and scope; check its site for current tiers. Legacy Wealth Blueprint does not publish a price; it is discussed on the strategy call with what is included. Decide firm, program or both first, then price the one you need."
       }
     ],
     "related": [
-      {
-        "label": "S-corp strategy: election, reasonable salary and payroll",
-        "href": "/tax-strategies/s-corp-strategy"
-      },
-      {
-        "label": "S-corp vs the QBI deduction: which saves more",
-        "href": "/compare/s-corp-vs-qbi-deduction"
-      },
-      {
-        "label": "Tax strategies for business owners",
-        "href": "/tax-strategies/for/business-owners"
-      },
-      {
-        "label": "S-corp vs sole proprietorship estimator",
-        "href": "/tools/scorp-vs-sole-prop"
-      },
-      {
-        "label": "QBI deduction estimator",
-        "href": "/tools/qbi-deduction-estimate"
-      },
-      {
-        "label": "What is included in Legacy Wealth Blueprint",
-        "href": "/legacy-wealth-blueprint"
-      },
-      {
-        "label": "Client reviews and Legacy Wealth Blueprint case studies",
-        "href": "/reviews"
-      },
-      {
-        "label": "Legacy Wealth Blueprint vs WealthAbility",
-        "href": "/vs/wealthability"
-      }
+      { "label": "S-corp strategy: election, reasonable salary and payroll", "href": "/tax-strategies/s-corp-strategy" },
+      { "label": "S-corp vs the QBI deduction: which saves more", "href": "/compare/s-corp-vs-qbi-deduction" },
+      { "label": "Tax strategies for business owners", "href": "/tax-strategies/for/business-owners" },
+      { "label": "S-corp vs sole proprietorship estimator", "href": "/tools/scorp-vs-sole-prop" },
+      { "label": "QBI deduction estimator", "href": "/tools/qbi-deduction-estimate" },
+      { "label": "What is included in Legacy Wealth Blueprint", "href": "/legacy-wealth-blueprint" },
+      { "label": "Client reviews and Legacy Wealth Blueprint case studies", "href": "/reviews" },
+      { "label": "Legacy Wealth Blueprint vs WealthAbility", "href": "/vs/wealthability" }
     ]
   }
 ]

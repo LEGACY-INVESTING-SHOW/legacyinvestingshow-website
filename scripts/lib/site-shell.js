@@ -255,6 +255,7 @@ const FOOTER_GROUPS = [
     items: [
       { href: '/tax-strategies', label: 'Tax strategies' },
       { href: '/compare', label: 'Compare guides' },
+      { href: '/alternatives', label: 'Alternatives' },
       { href: '/topics', label: 'Topics' },
     ],
   },
@@ -272,6 +273,8 @@ const FOOTER_GROUPS = [
       // /reviews is the canonical proof page; /success-stories 301s to it, so
       // it must not appear here as a second link.
       { href: '/reviews', label: 'Client results' },
+      { href: '/case-studies', label: 'Case studies' },
+      { href: '/preston-seo-reviews', label: 'Preston Seo reviews' },
       { href: '/privacy', label: 'Privacy' },
       { href: '/terms', label: 'Terms' },
     ],
