@@ -501,7 +501,7 @@
           { "label": "Breadth 50, implementation support 50 (the plan-and-people weighting)", "weights": { "breadth": 50, "implementation": 50 } }
         ],
         "outro": [
-          "Two honest readings of that table. First, our program wins when breadth and support are weighted heavily, which is what it is built for, and drops when transparency and licensed professionals inside the offer are weighted heavily, which is where it is weakest. Second, a fee-only planner is near the top under every weighting, which is why it is the safe first purchase for almost everyone on this page."
+          "Two honest readings of that table. First, our program wins when breadth and support are weighted heavily, which is what it is built for, and falls to seventh of nine when transparency and licensed professionals inside the offer are weighted heavily, which is where it is weakest. Second, a fee-only planner finishes first, second or fourth under three of the four weightings and only drops down the table under the self-learner's weighting, because it has no curriculum. That is why it is the safe first purchase for almost everyone on this page."
         ]
       },
       {
@@ -718,7 +718,7 @@
         "id": "our-fit",
         "heading": "Where Legacy Wealth Blueprint fits, and where it does not",
         "paragraphs": [
-          "It scores first on our rubric because the rubric weights breadth and implementation support heavily, and those two things are what the program is: five pillars, one written plan, a guide who checks in every two weeks. That is also the honest limit of the result. Under a weighting that favours published terms and licensed professionals inside the offer, it drops to the middle of the table, and the re-weighting rows above show exactly where."
+          "It scores first on our rubric because the rubric weights breadth and implementation support heavily, and those two things are what the program is: five pillars, one written plan, a guide who checks in every two weeks. That is also the honest limit of the result. Under a weighting that favours published terms and licensed professionals inside the offer, it drops to seventh of nine, and the re-weighting rows above show exactly where."
         ],
         "fits": [
           "Professionals who want one plan across taxes, debt, income, investing and protection and a person to work it with",
@@ -801,7 +801,7 @@
     "h1": "The best short-term rental coaching programs, by model and by fit",
     "breadcrumbLabel": "Best short-term rental coaching programs",
     "itemListName": "Short-term rental coaching programs, ranked",
-    "description": "STR coaching compared by model: acquisition, arbitrage, co-hosting and the tax angle. Eight named programs, a fit table, red flags and documented client results",
+    "description": "STR coaching compared by model: acquisition, arbitrage, co-hosting and the tax angle. Eight named programs, a fit table, red flags and documented results.",
     "verdict": "Pick the model before the coach. Arbitrage, ownership and co-hosting are three different businesses, and most bad purchases come from buying a program for the wrong one.",
     "lede": "What STR coaching actually teaches, eight named options with who they fit, a fit table, the red flags to check in any program, the STR tax angle and who it applies to, and the documented results from our own clients, with the caveats.",
     "lastUpdated": "2026-09-17",
