@@ -121,6 +121,11 @@
 }
         </script>
         <link rel="icon" href="/favicon.ico" />
+        <!-- Open the TLS connection to the tag server while the fonts/CSS are still
+             downloading, so the async GTM/gtag requests below do not pay for DNS +
+             TLS on the critical path. -->
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="preload" href="/assets/fonts/hanken-grotesk-400-700-latin.woff2" as="font" type="font/woff2" crossorigin />
         <link rel="preload" href="/assets/fonts/literata-400-700-latin.woff2" as="font" type="font/woff2" crossorigin />
         <link rel="stylesheet" href="/assets/css/fonts.css?v=227e2fbf" />

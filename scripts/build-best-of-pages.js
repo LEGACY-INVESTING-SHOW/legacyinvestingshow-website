@@ -633,13 +633,16 @@ ${tocEntries.map(([id, label]) => `                            <li><a href="#${e
 
 // ---- Guards --------------------------------------------------------------
 
-function resolvesOnDisk(href) {
+function resolvesOnDisk(href, builtSlugs) {
   const clean = href.replace(/[#?].*$/, '').replace(/^\/+/, '').replace(/\/+$/, '');
+  // The four guides link to one another, so a sibling slug from this data
+  // file counts as resolvable even on the first build.
+  if (builtSlugs.has(clean)) return true;
   const candidates = clean ? [clean, `${clean}.html`, path.join(clean, 'index.html')] : ['index.html'];
   return candidates.some((c) => fs.existsSync(path.join(ROOT_DIR, c)));
 }
 
-function validate(page, html) {
+function validate(page, html, builtSlugs) {
   const problems = [];
 
   const hrefs = [...html.matchAll(/href="([^"]+)"/g)].map((m) => m[1]);
@@ -648,7 +651,7 @@ function validate(page, html) {
       if (/\.html(\?|#|$)/.test(href)) problems.push(`.html href: ${href}`);
       const bare = href.replace(/[#?].*$/, '').replace(/\/$/, '');
       if (REDIRECTED_PATHS.includes(bare)) problems.push(`redirected href: ${href}`);
-      if (!href.startsWith('/assets/') && href !== '/favicon.ico' && !resolvesOnDisk(href)) {
+      if (!href.startsWith('/assets/') && href !== '/favicon.ico' && !resolvesOnDisk(href, builtSlugs)) {
         problems.push(`unresolved href: ${href}`);
       }
     }
@@ -685,11 +688,12 @@ function validate(page, html) {
 
 function main() {
   const pages = readData();
+  const builtSlugs = new Set(pages.map((page) => page.slug));
   let failed = false;
 
   pages.forEach((page) => {
     const html = renderPage(page);
-    const problems = validate(page, html);
+    const problems = validate(page, html, builtSlugs);
     if (problems.length) {
       failed = true;
       console.error(`\n${page.slug}.html has ${problems.length} problem(s):`);

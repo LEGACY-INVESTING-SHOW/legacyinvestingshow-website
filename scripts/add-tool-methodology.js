@@ -17,8 +17,16 @@
  * (assets/js/tool-methodology.js) re-inserts it if it goes missing, mirroring
  * how tools-site-shell.js keeps the shared header and footer in place.
  *
- * FAQPage JSON-LD is emitted only when the page does not already carry an
- * FAQPage node, so a page never ends up with two competing FAQ schemas.
+ * FAQPage JSON-LD: every imported and operator calculator already declares a
+ * FAQPage node (in <head> for operator pages, inside <main> for the Next.js
+ * export), so the entry's FAQs are merged into that node, replacing questions
+ * with the same name (including ones this script injected on a previous run).
+ * A standalone FAQPage is emitted only when the page has none, so a page never
+ * ends up with two competing FAQ schemas.
+ *
+ * Optional `related` entries ({ label, href, note? }) render as a list of
+ * internal guide and calculator links; hrefs that resolve to no file in the
+ * repo are dropped with a warning.
  */
 
 const fs = require('fs');
@@ -82,6 +90,33 @@ function sourcesHtml(sources) {
     return `<div><h3 class="text-[15px] font-semibold text-ink">Sources</h3><ul class="mt-2 space-y-1 text-[14px] leading-6 text-ink-muted">${items}</ul></div>`;
 }
 
+/** Clean URLs are on, so /foo resolves to foo.html or foo/index.html. External links are not checked. */
+function internalHrefResolves(href) {
+    const value = String(href || '');
+    if (!value.startsWith('/')) return true;
+    const clean = value.split('#')[0].split('?')[0].replace(/\/$/, '');
+    if (!clean) return true;
+    const rel = clean.slice(1);
+    return fs.existsSync(path.join(ROOT_DIR, `${rel}.html`)) || fs.existsSync(path.join(ROOT_DIR, rel, 'index.html'));
+}
+
+function relatedHtml(related, slug) {
+    if (!Array.isArray(related) || related.length === 0) return '';
+    const items = related.filter((item) => {
+        if (!item || !item.href || !item.label) return false;
+        if (!internalHrefResolves(item.href)) {
+            console.warn(`add-tool-methodology: ${slug} related link ${item.href} has no matching file; dropped.`);
+            return false;
+        }
+        return true;
+    }).map((item) => {
+        const note = item.note ? ` <span class="text-ink-muted">${escapeHtml(item.note)}</span>` : '';
+        return `<li><a class="font-medium text-accent underline-offset-2 hover:underline" href="${escapeHtml(item.href)}">${escapeHtml(item.label)}</a>${note}</li>`;
+    }).join('');
+    if (!items) return '';
+    return `<div><h3 class="text-[15px] font-semibold text-ink">Related guides and calculators</h3><ul class="mt-2 space-y-1.5 text-[14px] leading-6 text-ink">${items}</ul></div>`;
+}
+
 function renderSection(slug, entry, updated) {
     const heading = entry.heading || 'How this calculator works';
     const faqHeading = entry.faqHeading || 'Frequently asked questions';
@@ -96,6 +131,7 @@ function renderSection(slug, entry, updated) {
         + '<div class="space-y-6">'
         + `<div><h3 class="text-[15px] font-semibold text-ink">Limitations</h3>${listHtml(entry.limitations || [])}</div>`
         + sourcesHtml(entry.sources)
+        + relatedHtml(entry.related, slug)
         + '</div>'
         + '</div>'
         + `<div class="mt-8"><h3 id="${SECTION_ID}-faq-heading" class="text-[15px] font-semibold text-ink">${escapeHtml(faqHeading)}</h3><div class="mt-3">${faqHtml(entry.faqs || [])}</div></div>`
@@ -125,6 +161,56 @@ function stripBlocks(html) {
 
 function hasExistingFaqSchema(html) {
     return /"@type"\s*:\s*"FAQPage"/.test(html);
+}
+
+// Real <script type="application/ld+json"> tags only. The Next.js RSC payload
+// also contains the string "application/ld+json", but never as a tag attribute.
+const LD_SCRIPT = /<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g;
+
+/** FAQ question names this script merged on a previous run, read from its own payload. */
+function previousFaqNames(html) {
+    const match = html.match(/<script type="application\/json" id="tool-methodology-data">([\s\S]*?)<\/script>/);
+    if (!match) return [];
+    try {
+        const payload = JSON.parse(match[1]);
+        return Array.isArray(payload.faqNames) ? payload.faqNames : [];
+    } catch (error) {
+        return [];
+    }
+}
+
+/**
+ * Merge FAQs into the FAQPage node the page already declares so the visible
+ * questions are in schema without a second FAQPage. Questions whose name is in
+ * dropNames are removed first, which keeps re-runs from duplicating or leaving
+ * stale copies. Returns null when the page has no parseable FAQPage node.
+ */
+function mergeFaqSchema(html, faqs, dropNames) {
+    const drop = new Set(dropNames);
+    let merged = false;
+    const next = html.replace(LD_SCRIPT, (whole, body) => {
+        if (merged) return whole;
+        let json;
+        try {
+            json = JSON.parse(body);
+        } catch (error) {
+            return whole;
+        }
+        const nodes = Array.isArray(json) ? json : (Array.isArray(json['@graph']) ? json['@graph'] : [json]);
+        const faqNode = nodes.find((node) => node && node['@type'] === 'FAQPage');
+        if (!faqNode) return whole;
+        const kept = (Array.isArray(faqNode.mainEntity) ? faqNode.mainEntity : [])
+            .filter((item) => item && !drop.has(String(item.name || '')));
+        faqNode.mainEntity = kept.concat(faqs.map((faq) => ({
+            '@type': 'Question',
+            name: faq.q,
+            acceptedAnswer: { '@type': 'Answer', text: faq.a },
+        })));
+        merged = true;
+        // Function replacer: the JSON may contain "$1"-style sequences.
+        return whole.replace(body, () => scriptJson(json));
+    });
+    return merged ? next : null;
 }
 
 function insertSection(html, block) {
@@ -205,20 +291,39 @@ function applyToPage(slug, entry, updated) {
         return false;
     }
 
+    const faqs = Array.isArray(entry.faqs) ? entry.faqs.filter((faq) => faq && faq.q && faq.a) : [];
+    const faqNames = faqs.map((faq) => String(faq.q));
+    let pageHtml = inserted.html;
+    let schemaNote = 'no FAQs in data; no FAQPage JSON-LD';
+    if (faqs.length > 0) {
+        // Names from the previous run are dropped too, so a renamed question does not linger.
+        const merged = mergeFaqSchema(pageHtml, faqs, previousFaqNames(original).concat(faqNames));
+        if (merged !== null) {
+            pageHtml = merged;
+            schemaNote = 'FAQs merged into the existing FAQPage JSON-LD';
+        } else if (hasExistingFaqSchema(base)) {
+            schemaNote = 'page already has FAQPage JSON-LD; not adding a second one';
+        } else {
+            schemaNote = 'FAQPage JSON-LD added';
+        }
+    }
+
     const scripts = [
-        `<script type="application/json" id="tool-methodology-data">${scriptJson({ slug, html: section })}</script>`,
+        `<script type="application/json" id="tool-methodology-data">${scriptJson({ slug, html: section, faqNames })}</script>`,
     ];
-    let schemaNote = 'FAQPage JSON-LD added';
-    if (hasExistingFaqSchema(base)) {
-        schemaNote = 'page already has FAQPage JSON-LD; not adding a second one';
-    } else if (Array.isArray(entry.faqs) && entry.faqs.length > 0) {
-        scripts.push(`<script type="application/ld+json" id="tool-methodology-faq">${scriptJson(faqSchema(slug, entry.faqs))}</script>`);
-    } else {
-        schemaNote = 'no FAQs in data; no FAQPage JSON-LD';
+    if (schemaNote === 'FAQPage JSON-LD added') {
+        scripts.push(`<script type="application/ld+json" id="tool-methodology-faq">${scriptJson(faqSchema(slug, faqs))}</script>`);
     }
     scripts.push(`<script src="${RUNTIME_SRC}" defer></script>`);
 
-    const next = insertScripts(inserted.html, `${MARK.scriptsStart}${scripts.join('')}${MARK.scriptsEnd}`);
+    const next = insertScripts(pageHtml, `${MARK.scriptsStart}${scripts.join('')}${MARK.scriptsEnd}`);
+    for (const match of next.matchAll(LD_SCRIPT)) {
+        try {
+            JSON.parse(match[1]);
+        } catch (error) {
+            throw new Error(`${slug}: JSON-LD no longer parses after injection (${error.message})`);
+        }
+    }
     const changed = next !== original;
     if (changed) fs.writeFileSync(filePath, next, 'utf8');
     console.log(`add-tool-methodology: ${slug} -> section ${inserted.where}; ${schemaNote}; ${changed ? 'written' : 'unchanged'}.`);
@@ -257,4 +362,4 @@ if (require.main === module) {
     }
 }
 
-module.exports = { main, renderSection, faqSchema, stripBlocks };
+module.exports = { main, renderSection, faqSchema, stripBlocks, mergeFaqSchema, relatedHtml };

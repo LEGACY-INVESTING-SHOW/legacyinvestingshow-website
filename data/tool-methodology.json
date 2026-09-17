@@ -61,8 +61,14 @@
         "Rules were reviewed for 2026. Contribution limits, deadlines, and enrollment dates can change, so recheck them before relying on the 2027 calendar."
       ],
       "sources": [
-        { "label": "IRS: IRA year-end reminders", "href": "https://www.irs.gov/retirement-plans/ira-year-end-reminders" },
-        { "label": "IRS Publication 969: Health Savings Accounts", "href": "https://www.irs.gov/publications/p969" }
+        {
+          "label": "IRS: IRA year-end reminders",
+          "href": "https://www.irs.gov/retirement-plans/ira-year-end-reminders"
+        },
+        {
+          "label": "IRS Publication 969: Health Savings Accounts",
+          "href": "https://www.irs.gov/publications/p969"
+        }
       ],
       "faqs": [
         {
@@ -80,6 +86,1361 @@
         {
           "q": "Which months matter most for taxes?",
           "a": "February for gathering income forms and receipts, March for checking prior-year IRA and HSA room before the April deadline, April for using the filed return to adjust withholding or estimates, September for forecasting full-year income and payments, and December for year-end contributions, payroll cutoffs, and realized gains and losses."
+        }
+      ]
+    },
+    "cost-segregation-savings": {
+      "heading": "How the cost segregation savings calculator works",
+      "intro": "A planning screen for whether a cost segregation study is worth pricing on one rental. It compares year-one depreciation with a study against plain 27.5-year straight line, then subtracts the study fee.",
+      "method": [
+        "Depreciable building basis = purchase basis × (1 − land share). Land is never depreciated.",
+        "Basis moved to short-life property = building basis × the share you expect a study to reclassify into 5-, 7-, and 15-year property.",
+        "Bonus depreciation = reclassified basis × the bonus percentage. 100% is the 2026 default for qualifying property acquired after January 19, 2025.",
+        "Year-one depreciation with a study = bonus + (building basis − reclassified basis) ÷ 27.5 + (reclassified basis − bonus) ÷ 5.",
+        "Extra year-one depreciation = that figure minus plain straight line (building basis ÷ 27.5), floored at zero.",
+        "Year-one tax savings = extra depreciation × your combined marginal rate, minus the study and filing cost. That net figure is the headline."
+      ],
+      "assumptions": [
+        "Tax year 2026 planning defaults: 100% bonus on qualifying property acquired after January 19, 2025. Property under a binding contract on or before that date stays on the old phase-down (20% in 2026), so change the bonus input if that is you.",
+        "The building is residential rental on 27.5-year straight line with no mid-month convention. Commercial 39-year property would show a smaller straight-line baseline.",
+        "Everything reclassified that bonus does not cover is treated as 5-year property. A real study spreads it across 5-, 7-, and 15-year classes.",
+        "Combined marginal rate is whatever you enter. The tool adds no state tax and no net investment income tax on its own.",
+        "Savings are year one only. It does not show the smaller deductions you give up in later years."
+      ],
+      "limitations": [
+        "It does not test whether you can use the loss. Rental losses are passive unless you qualify as a real estate professional or the property is a short-term rental you materially participate in. Suspended losses carry forward instead of cutting this year's tax.",
+        "The excess business loss cap in Section 461(l) and the at-risk rules can also limit how much of a large depreciation loss offsets W-2 or other income in the same year.",
+        "Depreciation recapture on sale is ignored. Reclassified components come back mostly as Section 1245 recapture at ordinary rates, and the building share as unrecaptured Section 1250 gain at up to 25%.",
+        "The reclassification share is your guess, not an engineering result. Only a study by a qualified provider produces allocations a CPA can file.",
+        "Not tax advice. Federal rules only."
+      ],
+      "faqs": [
+        {
+          "q": "Does cost segregation work for an Airbnb?",
+          "a": "Yes. A short-term rental is depreciable real estate, so a study can move furniture-grade components, land improvements, and similar assets into 5-, 7-, and 15-year classes that qualify for bonus depreciation. Whether the resulting loss offsets your W-2 income depends on the passive loss rules, not on the study."
+        },
+        {
+          "q": "Can cost segregation reduce my W-2 taxes?",
+          "a": "Only if the loss is non-passive. The two common routes are real estate professional status (more than 750 hours and more than half of your working time in real property trades, plus material participation) or a short-term rental with an average guest stay of seven days or less where you materially participate. Otherwise the loss is suspended and carries forward."
+        },
+        {
+          "q": "Does bonus depreciation apply in 2026?",
+          "a": "Yes. Qualified property acquired after January 19, 2025 gets 100% bonus depreciation, made permanent by the 2025 tax law in Section 168(k). Property under a binding contract on or before January 19, 2025 stays on the old phase-down and gets 20% in 2026. The building shell never qualifies; only the short-life components a study identifies do."
+        },
+        {
+          "q": "Why does the result go negative on smaller properties?",
+          "a": "Because the study fee is fixed while the extra depreciation scales with basis and tax rate. If the net is negative or thin, a study may still make sense across a portfolio or on a higher-basis property, but on this property the tool is telling you to get a real quote before committing."
+        },
+        {
+          "q": "What happens when I sell the property?",
+          "a": "Accelerated depreciation lowers your basis, so more of the sale is taxable gain. The building share is unrecaptured Section 1250 gain at up to 25%; the reclassified components are mostly Section 1245 recapture at ordinary rates. A 1031 exchange can defer it. Run the depreciation recapture calculator with your expected exit numbers."
+        }
+      ],
+      "related": [
+        {
+          "label": "Cost segregation strategy guide",
+          "href": "/tax-strategies/cost-segregation",
+          "note": "How a study works and who it fits."
+        },
+        {
+          "label": "Cost segregation vs bonus depreciation",
+          "href": "/compare/cost-segregation-vs-bonus-depreciation",
+          "note": "Why the two are paired, not swapped."
+        },
+        {
+          "label": "Cost segregation vs the STR loophole for W-2 earners",
+          "href": "/compare/cost-segregation-vs-str-loophole-w2-passive-loss",
+          "note": "The passive-loss problem this tool does not test."
+        },
+        {
+          "label": "Short-term rental loophole",
+          "href": "/tax-strategies/short-term-rental-loophole",
+          "note": "The seven-day and material participation rules."
+        },
+        {
+          "label": "Depreciation recapture calculator",
+          "href": "/tools/depreciation-recapture",
+          "note": "What comes back on sale."
+        },
+        {
+          "label": "How cost segregation helps with taxes",
+          "href": "/blog/how-does-cost-segregation-help-with-taxes",
+          "note": "Plain-English walkthrough."
+        }
+      ]
+    },
+    "bonus-depreciation-estimate": {
+      "heading": "How the bonus depreciation estimate works",
+      "intro": "Isolates one line of a depreciation plan: what a bonus percentage does to basis that already qualifies, and what that deduction is worth at your marginal rate.",
+      "method": [
+        "Bonus depreciation taken = qualifying basis × bonus percentage.",
+        "Estimated year-one tax savings = bonus depreciation × your combined marginal tax rate. This is the headline.",
+        "Remaining basis after bonus = qualifying basis − bonus depreciation. That remainder keeps depreciating over the asset's normal recovery period, which the tool does not schedule."
+      ],
+      "assumptions": [
+        "The basis you enter already qualifies: tangible property with a recovery period of 20 years or less (5-, 7-, or 15-year classes), qualified improvement property, or off-the-shelf software. The 27.5- or 39-year building shell and land do not qualify.",
+        "Tax year 2026 default is 100% bonus for qualified property acquired after January 19, 2025 and placed in service in 2026. Property under a written binding contract on or before January 19, 2025 stays on the old phase-down and gets 20% in 2026.",
+        "Marginal rate is whatever you enter. No state tax and no net investment income tax are added.",
+        "The property is placed in service in the year you are modeling. Bought but not yet in service means no deduction yet."
+      ],
+      "limitations": [
+        "No taxable-income, passive-activity, at-risk, or Section 461(l) excess business loss limits are applied. A big bonus deduction can create a loss you cannot use this year.",
+        "It does not compare bonus against Section 179 expensing, which has its own dollar limits and a business-income cap, or against electing out of bonus.",
+        "Recapture on sale or on conversion to personal use is ignored. Bonus on 5-, 7-, and 15-year property is mostly Section 1245 recapture at ordinary rates.",
+        "Not tax advice. Federal rules only."
+      ],
+      "faqs": [
+        {
+          "q": "Does bonus depreciation apply in 2026?",
+          "a": "Yes, at 100% for qualified property acquired after January 19, 2025, which the 2025 tax law made permanent in Section 168(k). If your purchase was under a binding contract on or before January 19, 2025 it stays on the old phase-down at 20% for 2026, so enter 20 instead of 100."
+        },
+        {
+          "q": "Can I take bonus depreciation on a whole rental property?",
+          "a": "No. Residential rental buildings depreciate over 27.5 years and do not qualify. Bonus applies to the short-life components, which is why investors pair it with a cost segregation study that separates those components from the shell."
+        },
+        {
+          "q": "Is Airbnb furniture eligible for bonus depreciation?",
+          "a": "Generally yes. Furniture, appliances, and similar personal property used in the rental business are 5- or 7-year assets, so they qualify once placed in service. Keep invoices and the in-service date."
+        },
+        {
+          "q": "Can bonus depreciation offset W-2 income?",
+          "a": "Only when the loss is non-passive. For a long-term rental that usually means real estate professional status. For a short-term rental with an average guest stay of seven days or less, material participation (commonly more than 100 hours and more than anyone else) makes the loss non-passive without REPS. Otherwise the loss is suspended and carries forward."
+        },
+        {
+          "q": "What is the catch with a 100% deduction?",
+          "a": "You are pulling deductions forward, not creating them. Later years have less depreciation, and the deducted basis is recaptured when you sell, largely at ordinary rates for Section 1245 property. The benefit is timing and rate arbitrage, so model the exit too."
+        }
+      ],
+      "related": [
+        {
+          "label": "Bonus depreciation strategy guide",
+          "href": "/tax-strategies/bonus-depreciation",
+          "note": "2026 rate, binding-contract rule, what qualifies."
+        },
+        {
+          "label": "Section 179 expensing",
+          "href": "/tax-strategies/section-179",
+          "note": "The alternative with dollar limits."
+        },
+        {
+          "label": "Cost segregation vs bonus depreciation",
+          "href": "/compare/cost-segregation-vs-bonus-depreciation",
+          "note": "How the study feeds the deduction."
+        },
+        {
+          "label": "Cost segregation savings calculator",
+          "href": "/tools/cost-segregation-savings",
+          "note": "Adds the study, the shell, and the fee."
+        },
+        {
+          "label": "Bonus depreciation on residential rental property",
+          "href": "/blog/bonus-depreciation-residential-rental-property",
+          "note": "Worked examples."
+        }
+      ]
+    },
+    "depreciation-recapture": {
+      "heading": "How the depreciation recapture calculator works",
+      "intro": "Splits a rental sale into the slice taxed as depreciation recapture and the slice taxed as long-term capital gain, using the two rates you enter.",
+      "method": [
+        "Adjusted basis at sale = original depreciable basis − accumulated depreciation, floored at zero.",
+        "Amount realized = sale price − selling costs. Total gain = amount realized − adjusted basis.",
+        "Depreciation recapture amount = the smaller of total gain and accumulated depreciation, never below zero.",
+        "Remaining gain at the long-term rate = total gain − recapture amount.",
+        "Estimated federal tax = recapture amount × your recapture rate + remaining gain × your long-term capital gains rate. This is the headline."
+      ],
+      "assumptions": [
+        "Default recapture rate is 25%, the maximum rate on unrecaptured Section 1250 gain from the building. Personal-property components from a cost segregation study are Section 1245 property recaptured at ordinary rates; blend your rate up if that describes you.",
+        "Default long-term rate is 15%. Depending on taxable income the federal long-term rate is 0%, 15%, or 20%; enter yours.",
+        "Federal only. No state tax and no 3.8% net investment income tax. Add NIIT mentally if your modified AGI is over the threshold in the sale year.",
+        "The property was held more than one year and sold outright: no installment sale, no 1031 exchange, no primary-residence exclusion."
+      ],
+      "limitations": [
+        "The tool uses one flat recapture rate. A property with both building depreciation and cost-segregated components has two recapture regimes, and it does not split them for you.",
+        "Suspended passive losses released on a fully taxable sale are not netted against the gain here. They can materially cut the real bill.",
+        "Original basis should include capitalized improvements and purchase costs; entering the bare purchase price overstates gain.",
+        "Not tax advice."
+      ],
+      "faqs": [
+        {
+          "q": "Is depreciation recapture taxed as ordinary income?",
+          "a": "It depends on the asset. Depreciation on the building itself is unrecaptured Section 1250 gain, capped at 25%. Depreciation on 5-, 7-, and 15-year components from a cost segregation study is Section 1245 recapture, taxed at ordinary rates. This tool applies one rate you choose to the whole recapture slice."
+        },
+        {
+          "q": "Do I pay recapture on an Airbnb I ran under the short-term rental loophole?",
+          "a": "Yes. The depreciation that offset your W-2 income reduced your basis, and it comes back as gain on sale. The building share comes back at up to 25% and cost-seg components mostly at ordinary rates. The loophole changes when you get the deduction, not whether it is recaptured."
+        },
+        {
+          "q": "Can a 1031 exchange avoid depreciation recapture?",
+          "a": "A valid exchange defers it along with the rest of the gain. The deferred amount reduces your basis in the replacement property, so recapture resurfaces on a later taxable sale unless you exchange again or hold the property until death."
+        },
+        {
+          "q": "Does depreciation recapture apply if I never claimed depreciation?",
+          "a": "Generally yes. Recapture is based on depreciation allowed or allowable, so skipping the deduction does not avoid it. If you missed depreciation, ask a CPA about a Form 3115 accounting-method change to catch up before you sell."
+        },
+        {
+          "q": "Why is my total gain higher than the price appreciation?",
+          "a": "Because depreciation lowered your adjusted basis. Selling for exactly what you paid still produces gain equal to the depreciation you took, and that gain is the recapture slice."
+        }
+      ],
+      "related": [
+        {
+          "label": "Depreciation recapture on short-term rentals",
+          "href": "/tax-strategies/depreciation-recapture-str",
+          "note": "The exit side of the STR loophole."
+        },
+        {
+          "label": "1031 exchange deferred gain calculator",
+          "href": "/tools/1031-exchange-deferred-gain",
+          "note": "Deferring the whole gain."
+        },
+        {
+          "label": "1031 exchange strategy guide",
+          "href": "/tax-strategies/1031-exchange",
+          "note": "Deadlines and like-kind rules."
+        },
+        {
+          "label": "Capital gains tax estimate",
+          "href": "/tools/capital-gains-tax-estimate",
+          "note": "The non-recapture slice."
+        },
+        {
+          "label": "Cost segregation and Form 3115",
+          "href": "/blog/cost-segregation-form-3115-guide",
+          "note": "Catching up missed depreciation."
+        }
+      ]
+    },
+    "1031-exchange-deferred-gain": {
+      "heading": "How the 1031 exchange deferred gain calculator works",
+      "intro": "Estimates how much gain a like-kind exchange defers and how much is taxed now as boot, from sale price, basis, replacement price, and cash you keep.",
+      "method": [
+        "Realized gain = sale price − selling costs − adjusted basis.",
+        "Net equity = sale price − selling costs. Buy-down = net equity − replacement property price, floored at zero. That is the value you did not reinvest.",
+        "Boot = the larger of the cash you keep and that buy-down.",
+        "Gain recognized now = the smaller of realized gain and boot, floored at zero.",
+        "Gain deferred = realized gain − recognized gain. That is the headline and also the amount by which your replacement property's basis is reduced."
+      ],
+      "assumptions": [
+        "Both properties are held for investment or business use, so they are like-kind under Section 1031. Personal residences and property held primarily for sale do not qualify.",
+        "Adjusted basis is your purchase price plus capitalized improvements minus all depreciation taken, not the original price.",
+        "Debt relief is folded into the buy-down test: buying a cheaper replacement is treated as taking value out. Separate mortgage-boot netting is not modeled.",
+        "The deferred gain reduces replacement basis dollar for dollar; no tax is computed on the recognized slice."
+      ],
+      "limitations": [
+        "The 45-day identification window and 180-day closing deadline are not modeled, and a qualified intermediary must hold the proceeds. Miss either and the whole gain is taxable.",
+        "It does not split recognized gain between depreciation recapture and capital gain, and it computes no tax. Pair it with the depreciation recapture calculator.",
+        "Reverse exchanges, improvement exchanges, related-party rules, and state clawback rules are out of scope.",
+        "Not tax advice."
+      ],
+      "faqs": [
+        {
+          "q": "What is boot in a 1031 exchange?",
+          "a": "Value you take out of the exchange: cash kept, debt paid off that you do not replace, or a replacement that costs less than what you sold for. Boot is taxable up to the amount of your realized gain. This tool uses the larger of cash kept and the price shortfall."
+        },
+        {
+          "q": "Does a 1031 exchange eliminate the tax?",
+          "a": "No. It defers it. The deferred gain reduces your basis in the replacement property, so it shows up on a later taxable sale unless you exchange again or hold until death, when heirs generally receive a stepped-up basis under current law."
+        },
+        {
+          "q": "Can I 1031 exchange a short-term rental?",
+          "a": "It depends on whether the property is held for investment or business use rather than personal use. An Airbnb you also stay in heavily is at risk. Confirm the use history with a CPA and a qualified intermediary before you list it."
+        },
+        {
+          "q": "What are the 45-day and 180-day rules?",
+          "a": "You must identify replacement property in writing within 45 days of closing the sale and close on it within 180 days, or by your return due date including extensions if that comes first. The tool assumes you meet both."
+        },
+        {
+          "q": "Does an exchange defer depreciation recapture too?",
+          "a": "Yes, a valid exchange defers the recapture along with the rest of the gain. Because the replacement property takes a reduced basis, the recapture resurfaces when you eventually sell without exchanging."
+        }
+      ],
+      "related": [
+        {
+          "label": "1031 exchange strategy guide",
+          "href": "/tax-strategies/1031-exchange",
+          "note": "Rules, deadlines, and who it fits."
+        },
+        {
+          "label": "1031 exchange vs opportunity zones",
+          "href": "/compare/1031-exchange-vs-opportunity-zones",
+          "note": "Two ways to defer the same gain."
+        },
+        {
+          "label": "Depreciation recapture calculator",
+          "href": "/tools/depreciation-recapture",
+          "note": "Tax on a fully taxable sale instead."
+        },
+        {
+          "label": "Capital gains tax estimate",
+          "href": "/tools/capital-gains-tax-estimate",
+          "note": "Quick rate check on the recognized slice."
+        }
+      ]
+    },
+    "capital-gains-tax-estimate": {
+      "heading": "How the capital gains tax estimate works",
+      "intro": "A single-rate estimate: gain is proceeds minus cost basis, and tax is that gain times the rate you choose.",
+      "method": [
+        "Taxable gain = sale proceeds − cost basis, floored at zero. A sale below basis shows zero tax.",
+        "Estimated tax = taxable gain × the capital gains rate you enter.",
+        "Net after tax = sale proceeds − estimated tax."
+      ],
+      "assumptions": [
+        "One flat rate covers the whole gain. Enter the rate that matches your holding period: long-term federal rates are 0%, 15%, or 20% depending on taxable income; gains on assets held one year or less are taxed at ordinary income rates.",
+        "Federal only unless you blend a state rate into the rate field. The 3.8% net investment income tax is not added automatically.",
+        "Cost basis is what you paid plus commissions, capitalized improvements, and, for funds, reinvested dividends you already paid tax on.",
+        "Tax year 2026 brackets are not looked up; the tool uses your rate, not a filing engine."
+      ],
+      "limitations": [
+        "It does not stack the gain on top of your other income, so it cannot tell you whether part of the gain falls into a higher bracket.",
+        "Depreciation recapture on a rental sale is not separated. Use the depreciation recapture calculator for investment property.",
+        "The primary-residence exclusion, installment sales, 1031 exchanges, opportunity zone deferral, and loss carryforwards are not modeled.",
+        "Not tax advice."
+      ],
+      "faqs": [
+        {
+          "q": "How do I estimate capital gains tax on a rental property sale?",
+          "a": "Start here for the capital gain slice, but a rental has two layers: depreciation you took is recaptured (the building share at up to 25%, cost-seg components at ordinary rates) and only the remaining gain gets the long-term rate. The depreciation recapture calculator splits the two."
+        },
+        {
+          "q": "Which capital gains rate should I enter for 2026?",
+          "a": "Long-term federal rates are 0%, 15%, or 20% based on your taxable income and filing status; short-term gains use your ordinary bracket. High earners may owe an extra 3.8% net investment income tax, which you can add to the rate field. Check the current thresholds before relying on a number."
+        },
+        {
+          "q": "Can I avoid capital gains tax on real estate?",
+          "a": "Deferral is more realistic than avoidance: a 1031 exchange rolls the gain into replacement property, and a primary residence can exclude part of the gain if you meet the ownership and use tests. Holding until death currently gives heirs a stepped-up basis. Each has conditions this tool does not check."
+        },
+        {
+          "q": "Does the calculator include state capital gains tax?",
+          "a": "No. Several states tax gains as ordinary income and a few have none. Add your state rate to the rate field for an all-in figure or run it separately."
+        }
+      ],
+      "related": [
+        {
+          "label": "Capital gains exclusion on a home sale",
+          "href": "/tax-strategies/capital-gains-exclusion",
+          "note": "The primary-residence rules."
+        },
+        {
+          "label": "Depreciation recapture calculator",
+          "href": "/tools/depreciation-recapture",
+          "note": "Rental sales have two rates."
+        },
+        {
+          "label": "1031 exchange deferred gain calculator",
+          "href": "/tools/1031-exchange-deferred-gain",
+          "note": "Deferring instead of paying."
+        },
+        {
+          "label": "Tax-gain harvesting",
+          "href": "/tax-strategies/tax-gain-harvesting",
+          "note": "Using the 0% bracket on purpose."
+        },
+        {
+          "label": "Capital gains tax for real estate investors",
+          "href": "/blog/capital-gains-tax-for-real-estate-investors",
+          "note": "Investor-specific walkthrough."
+        }
+      ]
+    },
+    "home-office-deduction-estimate": {
+      "heading": "How the home office deduction estimate works",
+      "intro": "Regular-method arithmetic only: the share of your home used for business, applied to eligible whole-home costs.",
+      "method": [
+        "Business use % = office square footage ÷ home square footage.",
+        "Estimated deduction = eligible annual home costs × business use %. This is the headline.",
+        "Costs that apply only to the office, such as a repair inside that room, are normally deductible in full and are not part of this apportionment."
+      ],
+      "assumptions": [
+        "The space passes the regular and exclusive use test and is your principal place of business or where you meet clients. The tool does not test eligibility.",
+        "Eligible costs are whole-home costs: rent or mortgage interest, property tax, utilities, insurance, and general repairs. Mortgage principal is not a cost.",
+        "Regular (actual-expense) method only. The simplified square-footage method is not modeled.",
+        "Federal rules for tax year 2026; state conformity varies."
+      ],
+      "limitations": [
+        "Under current federal rules W-2 employees generally cannot claim the deduction; it is for self-employed taxpayers and owners with business income. The tool does not check your status.",
+        "The deduction is limited to the net income of the business it supports; the excess carries forward. That cap is not applied here.",
+        "Depreciation on the business share of an owned home, and its later recapture when you sell, are left out.",
+        "Not tax advice."
+      ],
+      "faqs": [
+        {
+          "q": "Can a W-2 employee take the home office deduction?",
+          "a": "Generally no under current federal law, even if you work from home full time. It is available to the self-employed and to owners running a business from home. If you have a side business or an active rental operation, the office used for that business may qualify."
+        },
+        {
+          "q": "Is the simplified method better than the regular method?",
+          "a": "The simplified method is a flat rate per square foot on a capped area with no expense tracking; the regular method this tool models apportions actual costs. Larger offices in higher-cost homes usually do better with actual costs. Run both before you file."
+        },
+        {
+          "q": "Can an Airbnb host or rental investor claim a home office?",
+          "a": "Possibly, if you run the rental activity as a business from a dedicated space and the activity rises to a trade or business. The room must be used regularly and exclusively for it. Discuss the facts with a CPA before claiming."
+        },
+        {
+          "q": "Does a home office deduction increase audit risk?",
+          "a": "Claiming a share the space cannot justify is the usual problem, not the deduction itself. Measure the room, photograph it, keep the cost records, and keep the space exclusive."
+        },
+        {
+          "q": "What if my business had little income this year?",
+          "a": "The deduction cannot create or increase a business loss. The unused portion carries forward to a year with enough income."
+        }
+      ],
+      "related": [
+        {
+          "label": "Home office deduction strategy guide",
+          "href": "/tax-strategies/home-office-deduction",
+          "note": "Eligibility tests and documentation."
+        },
+        {
+          "label": "Augusta rule vs home office for S corp owners",
+          "href": "/compare/augusta-rule-vs-home-office-deduction-s-corp",
+          "note": "When renting your home to your business fits better."
+        },
+        {
+          "label": "Augusta rule",
+          "href": "/tax-strategies/augusta-rule",
+          "note": "The 14-day rental alternative."
+        },
+        {
+          "label": "Actual vs simplified home office method",
+          "href": "/blog/actual-vs-simplified-home-office-deduction",
+          "note": "Side-by-side math."
+        },
+        {
+          "label": "Home office deduction 2026 guide",
+          "href": "/blog/home-office-deduction-2026-guide",
+          "note": "Full walkthrough."
+        }
+      ]
+    },
+    "qbi-deduction-estimate": {
+      "heading": "How the QBI deduction estimate works",
+      "intro": "A simple Section 199A screen: the 20% deduction capped by taxable income and, if you turn it on, by 50% of W-2 wages.",
+      "method": [
+        "Compute three figures: 20% of qualified business income, 20% of taxable income before the QBI deduction, and 50% of the W-2 wages the business pays.",
+        "Deduction = the smaller of 20% of QBI and 20% of taxable income.",
+        "If the wage limit is switched on (enter 1), the deduction is further capped at 50% of W-2 wages.",
+        "The rows show each of the three figures so you can see which one is binding."
+      ],
+      "assumptions": [
+        "The income is qualified business income from a domestic trade or business, and the W-2 wages are wages that business paid, including reasonable salary paid to an owner of an S corporation.",
+        "Taxable income means taxable income before the QBI deduction, not AGI.",
+        "The wage limit applies only above the taxable-income threshold; the tool leaves it to you to turn it on.",
+        "Federal only, tax year 2026 rules; the 20% rate is used as written in Section 199A."
+      ],
+      "limitations": [
+        "Specified service trade or business (SSTB) phase-outs for consultants, health, law, financial services, and similar fields are not modeled; above the threshold those taxpayers can lose the deduction entirely.",
+        "The alternative wage-and-property test (25% of wages plus 2.5% of the unadjusted basis of qualified property) is not modeled; it can rescue wage-light real estate businesses.",
+        "Losses from other businesses, REIT dividends, and publicly traded partnership income are ignored.",
+        "Not tax advice."
+      ],
+      "faqs": [
+        {
+          "q": "Does rental income qualify for the QBI deduction?",
+          "a": "It can when the rental activity rises to a trade or business or meets the IRS safe harbor for rental real estate enterprises. Triple-net leases and casual rentals often do not. Short-term rentals run like a hospitality business are stronger candidates. Do not assume it."
+        },
+        {
+          "q": "Does an S corp help or hurt QBI?",
+          "a": "Both. Reasonable salary paid to you counts as W-2 wages that support the limitation above the threshold, but that salary reduces QBI. Run this screen with and without the wage limit and compare against the S corp payroll tax savings."
+        },
+        {
+          "q": "Is the QBI deduction 20% of my profit?",
+          "a": "Only when 20% of taxable income is higher and no wage or SSTB limit bites. Taxable income is usually the binding figure for households with modest other income and large deductions."
+        },
+        {
+          "q": "Do W-2 wages I earn from an employer count?",
+          "a": "No. Only wages paid by the qualified business count for the wage limit, and your employer wages are not QBI. This tool asks for the business's wages."
+        }
+      ],
+      "related": [
+        {
+          "label": "QBI deduction strategy guide",
+          "href": "/tax-strategies/qualified-business-income-deduction",
+          "note": "Thresholds, SSTB rules, safe harbor."
+        },
+        {
+          "label": "S corp vs QBI deduction",
+          "href": "/compare/s-corp-vs-qbi-deduction",
+          "note": "How salary changes the deduction."
+        },
+        {
+          "label": "S corp vs sole prop payroll tax calculator",
+          "href": "/tools/scorp-vs-sole-prop",
+          "note": "The other half of the S corp decision."
+        },
+        {
+          "label": "How the QBI deduction is calculated",
+          "href": "/blog/how-is-qbi-deduction-calculated",
+          "note": "Worked examples."
+        }
+      ]
+    },
+    "scorp-vs-sole-prop": {
+      "heading": "How the S corp vs sole prop calculator works",
+      "intro": "Isolates payroll tax: self-employment tax on Schedule C profit versus employer-plus-employee FICA on an S corporation salary, using 2026 wage-base math.",
+      "method": [
+        "Sole-proprietor self-employment tax: SE base = net profit × 92.35%. Social Security = 12.4% of the base up to the 2026 wage base of $184,500. Medicare = 2.9% of the base. Additional Medicare = 0.9% of the base above $200,000.",
+        "S corp payroll tax on salary: Social Security = 12.4% of salary up to $184,500, Medicare = 2.9% of salary, Additional Medicare = 0.9% of salary above $200,000. Employer and employee halves are added together because you pay both.",
+        "Distributions = profit − salary. They are shown but not subjected to payroll tax.",
+        "Payroll and SE tax saved = sole-prop SE tax − S corp FICA. This is the headline."
+      ],
+      "assumptions": [
+        "Tax year 2026 Social Security wage base of $184,500 and the $200,000 single-filer Additional Medicare threshold. Married thresholds differ.",
+        "Salary cannot exceed profit, and the salary you enter is reasonable compensation for the work you actually do.",
+        "The whole profit is subject to SE tax as a sole proprietor; no wages from a separate W-2 job are using up the wage base.",
+        "Federal payroll taxes only."
+      ],
+      "limitations": [
+        "Income tax is excluded. The deduction for half of SE tax, the QBI deduction (which salary reduces), and the health-insurance deduction interaction can all shrink a thin savings number.",
+        "State unemployment insurance, payroll service fees, a separate 1120-S return, and state entity taxes are real costs the tool does not subtract.",
+        "Setting salary too low invites reclassification of distributions as wages. The tool does not judge what is reasonable.",
+        "Not tax advice."
+      ],
+      "faqs": [
+        {
+          "q": "How much does an S corp save on self-employment tax?",
+          "a": "Roughly the payroll tax on the portion of profit you take as distributions instead of salary, after accounting for the Social Security wage base. The tool shows that number for your profit and salary. Subtract payroll, filing, and state costs before deciding."
+        },
+        {
+          "q": "What is a reasonable salary for an S corp owner?",
+          "a": "What you would have to pay someone else to do the work you do, considering hours, skills, and local market rates. Document how you arrived at it. Paying yourself a token salary is the most common way S corp savings unravel."
+        },
+        {
+          "q": "Should a rental property owner elect S corp status?",
+          "a": "Usually not for holding rentals. Rental income is generally not subject to self-employment tax in the first place, so there is nothing to save, and moving appreciated property out of a corporation later is a taxable event. S corps fit operating businesses, including an active short-term rental management or arbitrage business."
+        },
+        {
+          "q": "Does this include the QBI deduction?",
+          "a": "No. Salary lowers qualified business income but also creates W-2 wages that can support the deduction above the threshold. Run the QBI estimate with both structures to see the net."
+        },
+        {
+          "q": "Is there a profit level where an S corp starts to make sense?",
+          "a": "There is no fixed number in the law. The election starts to pay when the payroll tax saved on distributions clearly exceeds the added payroll, compliance, and state costs. Put your own cost estimates against this tool's headline."
+        }
+      ],
+      "related": [
+        {
+          "label": "S corp strategy guide",
+          "href": "/tax-strategies/s-corp-strategy",
+          "note": "Salary split, reasonable compensation, when it fits."
+        },
+        {
+          "label": "S corp election vs sole proprietorship for consultants",
+          "href": "/compare/s-corp-election-vs-sole-proprietorship-high-income-consultants",
+          "note": "A full decision, not just payroll tax."
+        },
+        {
+          "label": "S corp vs QBI deduction",
+          "href": "/compare/s-corp-vs-qbi-deduction",
+          "note": "How salary changes the 20% deduction."
+        },
+        {
+          "label": "QBI deduction estimate",
+          "href": "/tools/qbi-deduction-estimate",
+          "note": "The other half of the S corp math."
+        },
+        {
+          "label": "Reasonable salary for an S corp",
+          "href": "/blog/reasonable-salary-s-corp",
+          "note": "How to set and document it."
+        }
+      ]
+    },
+    "marginal-vs-effective-tax-rate": {
+      "heading": "How the marginal vs effective tax rate calculator works",
+      "intro": "Two rates that answer different questions: the rate on your next dollar and the rate you actually paid overall.",
+      "method": [
+        "Effective tax rate = total tax paid ÷ taxable income. This is the headline.",
+        "Marginal rate is the bracket rate you enter; it is displayed alongside for comparison.",
+        "Gap = marginal rate − effective rate. A wide gap means most of your income was taxed in lower brackets or offset by deductions."
+      ],
+      "assumptions": [
+        "Taxable income is income after deductions, and total tax is the tax on that income. Mixing AGI with income tax, or taxable income with tax that includes payroll tax, changes the answer.",
+        "The marginal rate you enter is the federal bracket that applies to your last dollar for tax year 2026; the tool does not look it up.",
+        "Federal only unless you enter combined figures."
+      ],
+      "limitations": [
+        "It does not compute your tax from brackets; it measures what you enter.",
+        "Phase-outs of credits and deductions can make the true rate on an extra dollar higher than the statutory bracket. The tool cannot see those cliffs.",
+        "Not tax advice."
+      ],
+      "faqs": [
+        {
+          "q": "Which rate tells me what a tax deduction is worth?",
+          "a": "The marginal rate. A deduction removes income from the top of the stack, so a $10,000 deduction at a 32% marginal rate saves about $3,200 of federal tax, while the same deduction at a 24% rate saves $2,400. That is why depreciation strategies are worth more to high earners."
+        },
+        {
+          "q": "Why is my effective rate so much lower than my bracket?",
+          "a": "Because the brackets are progressive. Income fills the lower brackets before any of it reaches your top bracket, and deductions come off before any tax is computed."
+        },
+        {
+          "q": "Can earning more push all my income into a higher bracket?",
+          "a": "No. Only the dollars above the threshold are taxed at the higher rate. You can be worse off from benefit cliffs or phase-outs, which are separate from bracket math."
+        },
+        {
+          "q": "How do W-2 earners use this when planning real estate losses?",
+          "a": "A non-passive rental loss, for example from a short-term rental you materially participate in, offsets income at your marginal rate first. Use the marginal rate here to price the value of a depreciation deduction before paying for a cost segregation study."
+        }
+      ],
+      "related": [
+        {
+          "label": "Marginal vs effective tax rate guide",
+          "href": "/blog/marginal-vs-effective-tax-rate",
+          "note": "Worked examples by income level."
+        },
+        {
+          "label": "Cost segregation savings calculator",
+          "href": "/tools/cost-segregation-savings",
+          "note": "Where the marginal rate gets used."
+        },
+        {
+          "label": "Capital gains tax estimate",
+          "href": "/tools/capital-gains-tax-estimate",
+          "note": "Gains use different rates."
+        },
+        {
+          "label": "Cutting taxes on a $300k W-2 without starting a business",
+          "href": "/blog/cut-taxes-w2-300k-without-starting-a-business",
+          "note": "What high earners can still do."
+        }
+      ]
+    },
+    "payroll-withholding-estimate": {
+      "heading": "How the payroll withholding estimate works",
+      "intro": "A flat-rate paycheck screen: what comes out of each pay period at the withholding rate you choose plus any extra flat amount.",
+      "method": [
+        "Withholding per period = gross pay per period × withholding rate + extra flat withholding. This is the headline.",
+        "Net before other deductions = gross pay − withholding per period. Benefits, retirement contributions, and state tax are not subtracted."
+      ],
+      "assumptions": [
+        "One flat rate stands in for the IRS wage-bracket tables. A good starting point is last year's effective federal rate, adjusted for changes.",
+        "The extra flat amount is the additional per-period withholding you can request on Form W-4.",
+        "Federal income tax only. Social Security and Medicare withholding, state tax, and pre-tax deductions are outside the estimate.",
+        "Tax year 2026 planning; no bracket lookup."
+      ],
+      "limitations": [
+        "It does not compute your annual tax liability, so it cannot tell you whether the withholding is enough. Pair it with the tax withholding reconciliation calculator.",
+        "Bonuses withheld at the flat supplemental rate, multiple jobs, and a working spouse all change the picture and are not modeled.",
+        "Underpayment penalties and safe-harbor tests are not checked.",
+        "Not tax advice."
+      ],
+      "faqs": [
+        {
+          "q": "How do I reduce W-2 tax withholding after buying a rental?",
+          "a": "First confirm the rental loss is actually usable this year. A short-term rental you materially participate in, or real estate professional status, can make a depreciation loss non-passive; a long-term rental loss is usually suspended. If the loss is usable, you can lower withholding on Form W-4 to reflect the lower expected liability rather than waiting for a refund."
+        },
+        {
+          "q": "Should I withhold more for a side business or Airbnb income?",
+          "a": "Yes, if that income has no withholding of its own. Adding an extra flat amount here is often simpler than making quarterly estimated payments, and withholding counts as paid evenly through the year."
+        },
+        {
+          "q": "What withholding rate should I use?",
+          "a": "Start with last year's total federal tax divided by taxable income, then adjust for a raise, a new rental, or a change in filing status. The marginal versus effective calculator shows why the bracket rate is the wrong number to use."
+        },
+        {
+          "q": "What happens if I under-withhold?",
+          "a": "You owe the balance at filing and may owe an underpayment penalty unless you meet a safe harbor based on this year's or last year's tax. Check the reconciliation calculator mid-year so you can fix it with a new W-4 rather than a lump sum in April."
+        }
+      ],
+      "related": [
+        {
+          "label": "Tax withholding reconciliation calculator",
+          "href": "/tools/tax-withholding-reconciliation",
+          "note": "Is the year's total enough?"
+        },
+        {
+          "label": "How to fix W-2 withholding mid-year",
+          "href": "/blog/how-to-fix-w2-withholding-mid-year",
+          "note": "The W-4 steps."
+        },
+        {
+          "label": "Estimated tax payments",
+          "href": "/tax-strategies/estimated-tax-payments",
+          "note": "The alternative for income with no withholding."
+        },
+        {
+          "label": "Marginal vs effective tax rate",
+          "href": "/tools/marginal-vs-effective-tax-rate",
+          "note": "Which rate to enter."
+        },
+        {
+          "label": "Best tax deductions for W-2 employees",
+          "href": "/blog/best-tax-deductions-for-w2-employees",
+          "note": "What actually lowers the liability."
+        }
+      ]
+    },
+    "airbnb-arbitrage-roi": {
+      "heading": "How the Airbnb arbitrage ROI calculator works",
+      "intro": "A lease-arbitrage model: you rent a property long-term, furnish it, list it nightly, and measure return on the cash you put in, not on a purchase price.",
+      "method": [
+        "Total initial investment = rental startup costs (first and last month's rent, security deposit, application and other fees) + furnishing (cost per bedroom × bedrooms + cost per common space × common spaces) + rehab (repairs plus holding costs).",
+        "Gross annual income = average nightly rate × occupancy rate × 365. Gross monthly income = that ÷ 12.",
+        "Total expenses = fixed monthly costs (rent, insurance, HOA, utilities, internet, pest control, software, other) + percentage-based costs (repairs, property management, and the Airbnb service fee, each as a share of gross income).",
+        "Net operating income and annual cash flow = gross annual income − total annual expenses. In an arbitrage deal the lease payment sits inside operating expenses, so these two figures are the same.",
+        "Cash-on-cash return = annual cash flow ÷ total initial investment. Months to recoup = total initial investment ÷ monthly cash flow.",
+        "Break-even occupancy is the occupancy at which income equals expenses at your nightly rate; break-even nightly rate is the rate that covers expenses at your occupancy. The 10-year table grows income and expenses by the rates you set and tracks cumulative cash flow and ROI."
+      ],
+      "assumptions": [
+        "One blended nightly rate and one occupancy for the whole year. Seasonality, minimum-stay rules, and owner blocks are collapsed into those two numbers.",
+        "Guest-paid cleaning fees are assumed to pass through to the cleaner and are not counted as income or expense.",
+        "Percentage-based expenses are applied to gross income before any fees.",
+        "The deal score is a heuristic ranking on a 0 to 100 scale for quick comparison; it is not a financial metric.",
+        "Pre-tax. No depreciation, income tax, or self-employment tax is modeled."
+      ],
+      "limitations": [
+        "The landlord's consent to sublet and local short-term rental rules are not checked. A denied renewal or a new ordinance ends the deal regardless of the numbers.",
+        "Because the cash invested is small, cash-on-cash percentages run high. A soft month or a deposit you do not get back changes the answer quickly; stress-test occupancy and nightly rate before relying on it.",
+        "Furniture bought for the business is depreciable and can qualify for bonus depreciation, and arbitrage income is generally active business income rather than passive rental income. None of that tax treatment is shown here.",
+        "Not investment or tax advice."
+      ],
+      "faqs": [
+        {
+          "q": "What is rental arbitrage and how is it different from buying an Airbnb?",
+          "a": "Rental arbitrage means leasing a property long-term with the landlord's written permission, furnishing it, and re-renting it nightly. Your capital is deposits, first and last month's rent, and furniture instead of a down payment, so the return is measured on that smaller cash outlay. The STR purchase analysis calculator is the ownership version."
+        },
+        {
+          "q": "What cash-on-cash return is realistic for Airbnb arbitrage?",
+          "a": "The tool will show large percentages because the denominator is small. Instead of anchoring on a target, drop occupancy to the break-even figure the dashboard shows and ask whether your market's comparable listings clear it in the slow season."
+        },
+        {
+          "q": "Is Airbnb arbitrage legal?",
+          "a": "It is legal where the lease allows subletting and the city permits short-term rentals, and it is a lease violation or an ordinance problem where they do not. Get sublet permission in writing and check local registration rules before signing."
+        },
+        {
+          "q": "How is rental arbitrage income taxed?",
+          "a": "Because you do not own the property, the income is generally treated as business income on Schedule C rather than rental income, which can mean self-employment tax but also lets you deduct the lease, furniture depreciation, and operating costs against it. This calculator is pre-tax; confirm treatment with a CPA."
+        },
+        {
+          "q": "Does the calculator include the landlord's rent?",
+          "a": "Yes. Monthly rent is a fixed operating expense, which is why the net operating income here already reflects the lease. Leaving rent out is the most common way an arbitrage model gets talked into."
+        }
+      ],
+      "related": [
+        {
+          "label": "Getting started with Airbnb arbitrage",
+          "href": "/blog/getting-started-airbnb-arbitrage",
+          "note": "The sequence from lease to first booking."
+        },
+        {
+          "label": "Airbnb arbitrage tax implications",
+          "href": "/blog/airbnb-arbitrage-tax-implications",
+          "note": "Schedule C, furniture depreciation, SE tax."
+        },
+        {
+          "label": "Is Airbnb arbitrage legal?",
+          "href": "/blog/is-airbnb-arbitrage-legal-what-hosts-need-to-check",
+          "note": "Lease and ordinance checks."
+        },
+        {
+          "label": "Arbitrage mistakes that kill profit",
+          "href": "/blog/airbnb-arbitrage-mistakes-that-kill-profit",
+          "note": "Where the model goes wrong in practice."
+        },
+        {
+          "label": "STR break-even occupancy calculator",
+          "href": "/tools/str-break-even-occupancy",
+          "note": "The single number to stress-test."
+        },
+        {
+          "label": "STR purchase analysis calculator",
+          "href": "/tools/str-purchase-analysis",
+          "note": "The same deal if you bought instead."
+        }
+      ]
+    },
+    "cash-on-cash-return": {
+      "heading": "How the cash-on-cash return calculator works",
+      "intro": "Annual pre-tax cash flow after vacancy, operating costs, and debt service, divided by the cash you actually invested.",
+      "method": [
+        "Effective monthly rent = gross monthly rent × (1 − vacancy and credit loss %).",
+        "Monthly cash flow = effective rent − monthly operating costs − monthly debt service.",
+        "Annual cash flow = monthly cash flow × 12.",
+        "Cash-on-cash return = annual cash flow ÷ cash invested. This is the headline."
+      ],
+      "assumptions": [
+        "Cash invested is down payment, closing costs, and any rehab or furnishing you paid for, not the purchase price.",
+        "Operating costs exclude the mortgage, which has its own field, and should include taxes, insurance, management, maintenance, and a capital reserve if you want an honest number.",
+        "Pre-tax. Depreciation, income tax, and appreciation are excluded."
+      ],
+      "limitations": [
+        "A single year at a single vacancy rate. It does not model a turnover year, a roof, or rent growth.",
+        "Leverage inflates the percentage in both directions: the same property with a bigger loan shows a higher return and a thinner cushion.",
+        "Tax effects that matter to high earners, such as depreciation losses offsetting W-2 income under the short-term rental rules or real estate professional status, are outside this metric.",
+        "Not investment advice."
+      ],
+      "faqs": [
+        {
+          "q": "What is a good cash-on-cash return on a rental property?",
+          "a": "There is no universal number; it depends on financing, market, and how much risk you are taking. A return that only exists at zero vacancy and no repairs is a slogan. Re-run it with a realistic vacancy and a maintenance reserve and judge the survivable version."
+        },
+        {
+          "q": "Cash-on-cash vs cap rate: which one should I use?",
+          "a": "Cap rate measures the property without financing (NOI ÷ price) and is for comparing deals; cash-on-cash measures your financed return on the cash you put in. Use both: a decent cap rate with a bad loan produces a bad cash-on-cash."
+        },
+        {
+          "q": "Does cash-on-cash return include tax savings?",
+          "a": "No. It is pre-tax cash flow. Depreciation and bonus depreciation can change the after-tax result significantly, especially for a short-term rental where a material participant can use the loss against W-2 income. Model taxes separately."
+        },
+        {
+          "q": "Can I use this for an Airbnb or arbitrage deal?",
+          "a": "Yes. Enter expected monthly revenue after platform fees as rent, a realistic occupancy shortfall as vacancy, and deposits plus furnishing as cash invested. The Airbnb arbitrage ROI calculator does the fuller version."
+        }
+      ],
+      "related": [
+        {
+          "label": "Cap rate calculator",
+          "href": "/tools/cap-rate",
+          "note": "The unleveraged view."
+        },
+        {
+          "label": "DSCR calculator",
+          "href": "/tools/dscr",
+          "note": "Whether the loan is covered."
+        },
+        {
+          "label": "Rental property cash flow calculator",
+          "href": "/tools/rental-property-cash-flow",
+          "note": "The monthly numbers behind this ratio."
+        },
+        {
+          "label": "Airbnb arbitrage ROI calculator",
+          "href": "/tools/airbnb-arbitrage-roi",
+          "note": "Cash-on-cash for a leased STR."
+        },
+        {
+          "label": "Rental property investing guide",
+          "href": "/blog/rental-property-investing",
+          "note": "How the metrics fit together."
+        }
+      ]
+    },
+    "cap-rate": {
+      "heading": "How the cap rate calculator works",
+      "intro": "The unleveraged yield on a rental: annual net operating income divided by the price you would pay.",
+      "method": [
+        "Cap rate = annual net operating income ÷ purchase price. This is the headline.",
+        "Years of NOI to recover price = purchase price ÷ NOI.",
+        "NOI per $100,000 of price = NOI ÷ price × 100,000, a way to compare properties of different sizes."
+      ],
+      "assumptions": [
+        "NOI is annual rent minus vacancy and operating expenses (taxes, insurance, management, maintenance, utilities you pay), before any mortgage payment.",
+        "Price is the all-in purchase price, or the value you are testing an offer against.",
+        "Pre-tax and pre-financing; appreciation and depreciation are ignored."
+      ],
+      "limitations": [
+        "Cap rate says nothing about your loan. A property can have a solid cap rate and negative cash flow at today's interest rates. Check DSCR and cash-on-cash.",
+        "It is only as honest as the NOI. Seller pro formas often omit management, reserves, and realistic vacancy.",
+        "Comparing cap rates across markets or property types ignores differences in risk, rent growth, and regulation.",
+        "Not investment advice."
+      ],
+      "faqs": [
+        {
+          "q": "What is a good cap rate for a rental property?",
+          "a": "It depends on the market and the risk. A higher cap rate usually reflects a cheaper market, more deferred maintenance, or weaker tenants rather than a better deal. Compare against recent sales of similar properties in the same area, not a national rule of thumb."
+        },
+        {
+          "q": "How do I calculate cap rate for a short-term rental?",
+          "a": "Use a conservative annual net: nightly rate × a defensible occupancy × 365, minus platform fees, cleaning you pay, utilities, supplies, management, and reserves. Do not annualize a peak month. Lenders and appraisers often haircut STR income for the same reason."
+        },
+        {
+          "q": "Does cap rate include the mortgage?",
+          "a": "No. Cap rate is unleveraged. Debt service shows up in cash-on-cash return and DSCR."
+        },
+        {
+          "q": "Why does a lower cap rate mean a higher price?",
+          "a": "Because price = NOI ÷ cap rate. If buyers accept a 5% return they will pay 20 times NOI; at 8% they pay 12.5 times. Small cap-rate moves swing values a lot."
+        }
+      ],
+      "related": [
+        {
+          "label": "Cash-on-cash return calculator",
+          "href": "/tools/cash-on-cash-return",
+          "note": "Adds the loan and your cash in."
+        },
+        {
+          "label": "DSCR calculator",
+          "href": "/tools/dscr",
+          "note": "NOI against the mortgage."
+        },
+        {
+          "label": "Rental property cash flow calculator",
+          "href": "/tools/rental-property-cash-flow",
+          "note": "Building the NOI honestly."
+        },
+        {
+          "label": "STR purchase analysis calculator",
+          "href": "/tools/str-purchase-analysis",
+          "note": "Cap rate for a short-term rental purchase."
+        }
+      ]
+    },
+    "dscr": {
+      "heading": "How the DSCR calculator works",
+      "intro": "Debt-service coverage ratio: how many times annual net operating income covers the annual principal-and-interest payment on an amortizing loan.",
+      "method": [
+        "Monthly P&I is computed from loan amount, interest rate, and amortizing term using the standard mortgage payment formula.",
+        "Annual debt service = monthly P&I × 12.",
+        "DSCR = annual NOI ÷ annual debt service. This is the headline.",
+        "NOI cushion above debt = NOI − annual debt service, the dollars of room before the property stops covering its loan."
+      ],
+      "assumptions": [
+        "NOI already has taxes, insurance, management, maintenance, and vacancy expensed out of it. Do not subtract them again.",
+        "Fully amortizing loan. An interest-only quote would show a higher ratio the tool does not model.",
+        "No lender haircut to income; DSCR lenders often discount projected rent or short-term rental revenue."
+      ],
+      "limitations": [
+        "Lender programs differ on the denominator: some use PITIA (principal, interest, taxes, insurance, association dues) rather than P&I alone, which produces a lower ratio.",
+        "Rate and term at closing may differ from the quote you enter, and a rate cap or balloon changes the picture.",
+        "It does not test whether the NOI is realistic; it only divides.",
+        "Not lending or investment advice."
+      ],
+      "faqs": [
+        {
+          "q": "What DSCR do lenders require for a rental property loan?",
+          "a": "It varies by program. Many use 1.0 as a floor and treat 1.25 as a healthier file, but the exact threshold, the rent source they accept, and whether they use P&I or full PITIA differ. Ask the specific lender and match this tool's denominator to theirs."
+        },
+        {
+          "q": "Can I qualify for a DSCR loan with Airbnb income?",
+          "a": "Some lenders accept short-term rental income, usually with a history of receipts or a third-party projection, and often with a haircut. Run this tool with a discounted NOI to see whether the ratio still clears their floor."
+        },
+        {
+          "q": "Is a DSCR loan the same as a conventional investor loan?",
+          "a": "No. DSCR loans qualify the property on its own income rather than your personal debt-to-income ratio, which is why W-2 earners with high personal debt or self-employed borrowers use them. They typically cost more in rate and points."
+        },
+        {
+          "q": "What DSCR should I target as an investor, not just for the lender?",
+          "a": "Higher than the floor. A ratio near 1.0 means one vacancy or repair pushes the property into a deficit. The NOI cushion row shows how many dollars of bad news you can absorb in a year."
+        }
+      ],
+      "related": [
+        {
+          "label": "Cap rate calculator",
+          "href": "/tools/cap-rate",
+          "note": "The same NOI without the loan."
+        },
+        {
+          "label": "Cash-on-cash return calculator",
+          "href": "/tools/cash-on-cash-return",
+          "note": "Return on the cash you put in."
+        },
+        {
+          "label": "Mortgage payment calculator",
+          "href": "/tools/mortgage-payment",
+          "note": "The P&I figure in the denominator."
+        },
+        {
+          "label": "STR purchase analysis calculator",
+          "href": "/tools/str-purchase-analysis",
+          "note": "Full underwriting with financing."
+        },
+        {
+          "label": "Rental property cash flow calculator",
+          "href": "/tools/rental-property-cash-flow",
+          "note": "Monthly view after the mortgage."
+        }
+      ]
+    },
+    "brrrr-analysis": {
+      "heading": "How the BRRRR analysis calculator works",
+      "intro": "Buy, rehab, rent, refinance, repeat: how much of your cash a refinance at the after-repair value returns, and what cash flow the new loan leaves.",
+      "method": [
+        "All-in cost = purchase price + rehab and holding costs.",
+        "Refinance proceeds = after-repair value × refinance LTV.",
+        "Cash left in = all-in cost − refinance proceeds. This is the headline; a negative number means the refinance returned more than you put in.",
+        "The new monthly payment is computed on the refinance loan at the rate and term you enter.",
+        "Monthly cash flow after refinance = rent × (1 − vacancy %) − monthly operating costs − new payment.",
+        "Cash-on-cash on remaining cash = annual cash flow ÷ cash left in, shown only when cash left in is positive."
+      ],
+      "assumptions": [
+        "The refinance appraises at your ARV and the lender lends the LTV you enter. Appraisal risk is not simulated.",
+        "Purchase closing costs, bridge or hard-money interest, and refinance closing costs are inside rehab and holding if you put them there.",
+        "Rent and operating costs are stabilized post-rehab figures.",
+        "Pre-tax; no depreciation or income tax."
+      ],
+      "limitations": [
+        "Seasoning requirements, cash-out caps, and lender limits on how many financed properties you can hold are not modeled and often decide whether the refinance happens at all.",
+        "A negative cash left in does not mean free money: the loan is bigger and the cushion thinner. Judge the deal on cash flow and DSCR after the refinance.",
+        "Rehab overruns and holding-period delays are the usual failure mode and are only captured if you pad the rehab input.",
+        "Not investment advice."
+      ],
+      "faqs": [
+        {
+          "q": "What LTV should I assume for a BRRRR refinance?",
+          "a": "Many investors underwrite 70% to 75% of ARV for a cash-out refinance on a single-family rental, with the exact number depending on the lender, property type, and your credit. Run the tool at the lower figure too; if the deal only works at the higher LTV, it is fragile."
+        },
+        {
+          "q": "How much cash should be left in a BRRRR deal?",
+          "a": "Getting all of it back is the goal, not the rule. A deal that leaves some cash in but cash-flows well after the new loan can beat one that returns every dollar and runs at break-even."
+        },
+        {
+          "q": "Does BRRRR create tax savings?",
+          "a": "The rehab that becomes part of the building depreciates over 27.5 years, while components a cost segregation study classifies as 5-, 7-, or 15-year property can qualify for bonus depreciation. Refinance proceeds themselves are not taxable income. Whether depreciation losses offset your W-2 income depends on the passive loss rules."
+        },
+        {
+          "q": "How do I estimate ARV honestly?",
+          "a": "Use closed sales of renovated comparable homes from the last few months in the same submarket, and discount if your finish level is lower. A retail ARV on a rental-grade rehab is the most common way a BRRRR gets stuck with cash trapped in the deal."
+        }
+      ],
+      "related": [
+        {
+          "label": "BRRRR method guide",
+          "href": "/blog/brrrr-method",
+          "note": "The full cycle, step by step."
+        },
+        {
+          "label": "Cash-on-cash return calculator",
+          "href": "/tools/cash-on-cash-return",
+          "note": "Return on the cash still in the deal."
+        },
+        {
+          "label": "DSCR calculator",
+          "href": "/tools/dscr",
+          "note": "Will the refinance loan qualify?"
+        },
+        {
+          "label": "Renovation contingency budget calculator",
+          "href": "/tools/renovation-contingency-budget",
+          "note": "Padding the rehab number."
+        },
+        {
+          "label": "Cost segregation strategy guide",
+          "href": "/tax-strategies/cost-segregation",
+          "note": "Depreciating the rehab faster."
+        }
+      ]
+    },
+    "rental-property-cash-flow": {
+      "heading": "How the rental property cash flow calculator works",
+      "intro": "The landlord's monthly reality check: rent after vacancy, minus the mortgage, minus everything else.",
+      "method": [
+        "Effective rent = gross monthly rent × (1 − vacancy and credit loss %).",
+        "Monthly cash flow = effective rent − mortgage payment − taxes, insurance, maintenance, and management. This is the headline.",
+        "Annual cash flow = monthly cash flow × 12."
+      ],
+      "assumptions": [
+        "The mortgage field is the full monthly payment you write, including escrowed taxes and insurance if your lender collects them. Do not also put those in the operating-cost field.",
+        "Operating costs should include a maintenance reserve and management even if you self-manage.",
+        "Pre-tax and before capital expenditures like roofs and systems unless you fold a reserve into costs."
+      ],
+      "limitations": [
+        "One month at one vacancy rate. A turnover month with a make-ready and a vacancy blows through a low allowance immediately.",
+        "Depreciation, income tax, and appreciation are excluded, so it cannot show after-tax return or equity growth.",
+        "Rent growth and expense inflation are not projected.",
+        "Not investment advice."
+      ],
+      "faqs": [
+        {
+          "q": "How much cash flow per month is good on a rental property?",
+          "a": "Enough to cover a bad year, not a target number. Stress-test the model with a longer vacancy and higher repairs, as the bad-year example on this page does, and treat the result that survives as your real cash flow."
+        },
+        {
+          "q": "Does depreciation change rental cash flow?",
+          "a": "Not the cash, but it can change the tax on it. Depreciation is a paper deduction that often makes a cash-flow-positive rental show a tax loss. For most W-2 landlords that loss is passive and suspended; it becomes usable with real estate professional status or under the short-term rental material participation rules."
+        },
+        {
+          "q": "What vacancy rate should I use?",
+          "a": "Something you can defend from local data. A common planning range is 5% to 8%, roughly two to four weeks a year. Underwriting at zero is how optimistic deals get approved."
+        },
+        {
+          "q": "Should I include property management if I self-manage?",
+          "a": "Yes. Leaving it out prices your unpaid labor at zero and makes the property look better than it will if you ever stop managing it or sell to someone who will not."
+        }
+      ],
+      "related": [
+        {
+          "label": "Rental property cash flow guide",
+          "href": "/blog/rental-property-cash-flow-guide",
+          "note": "Line-by-line underwriting."
+        },
+        {
+          "label": "Cash-on-cash return calculator",
+          "href": "/tools/cash-on-cash-return",
+          "note": "Turning cash flow into a return."
+        },
+        {
+          "label": "Cap rate calculator",
+          "href": "/tools/cap-rate",
+          "note": "The unleveraged yield."
+        },
+        {
+          "label": "DSCR calculator",
+          "href": "/tools/dscr",
+          "note": "Lender's view of the same numbers."
+        },
+        {
+          "label": "Rental property depreciation",
+          "href": "/tax-strategies/rental-property-depreciation",
+          "note": "The tax side this tool leaves out."
+        }
+      ]
+    },
+    "str-purchase-analysis": {
+      "heading": "How the STR purchase analysis works",
+      "intro": "Underwrites buying a short-term rental with a mortgage: cash to close, furnishing, nightly income, operating costs, debt service, and a first-pass sketch of the tax and equity side.",
+      "method": [
+        "Financing: down payment = price × down payment %; mortgage = price − down payment; monthly P&I from rate and term; closing cost = price × closing %; total cash to close = down payment + closing cost. Total initial investment adds furnishing (per bedroom and per common space) and rehab.",
+        "Income: gross annual income = average nightly rate × occupancy × 365; monthly = ÷ 12.",
+        "Operating expenses = fixed monthly items (property tax, insurance, HOA, utilities, internet, pest control, software, other) + percentage-based items (repairs, management, Airbnb service fee as shares of gross). NOI = gross income − operating expenses, before debt.",
+        "Cap rate = NOI ÷ purchase price. Cash flow = NOI − mortgage P&I − PMI. Cash-on-cash = annual cash flow ÷ total initial investment. Months to recoup = total initial investment ÷ monthly cash flow. Break-even occupancy and nightly rate solve for income = all expenses including debt service.",
+        "Tax sketch: cost-seg eligible basis = price × cost segregation share; year-one deduction = that × bonus depreciation %; year-one tax savings = deduction × your tax bracket. Later years in the ten-year table use a smaller ongoing figure the calculator derives from the remaining depreciable basis and your bracket.",
+        "Equity: property value grows at the appreciation rate; equity gain = appreciation + mortgage principal paid down. Total ten-year return = cumulative cash flow + tax savings + equity gain, and ROI divides that by total initial investment."
+      ],
+      "assumptions": [
+        "One nightly rate and one occupancy for the year; guest-paid cleaning fees pass through and are excluded.",
+        "Default tax inputs: 30% of price as cost-seg eligible, 100% bonus depreciation (the 2026 rate for qualifying property acquired after January 19, 2025), and a 24% bracket. Change all three to your situation.",
+        "Tax savings assume the depreciation loss is fully usable in the year taken.",
+        "Appreciation, income growth, and expense growth are flat annual percentages you set.",
+        "The deal score is a heuristic ranking, not a financial metric."
+      ],
+      "limitations": [
+        "The tax savings figure is a sketch. A real cost segregation study sets the allocation, and whether the loss offsets W-2 income depends on the short-term rental rules: an average guest stay of seven days or less and material participation (commonly more than 100 hours and more than anyone else). Without that, or real estate professional status, the loss is passive and suspended.",
+        "Depreciation recapture on sale is not modeled, and the Section 461(l) excess business loss cap can limit a very large first-year loss.",
+        "Lenders, insurers, and cities treat short-term rentals differently from long-term rentals; financing terms, insurance cost, and permit rules are not checked.",
+        "Not tax or investment advice."
+      ],
+      "faqs": [
+        {
+          "q": "What is the short term rental loophole and does this calculator model it?",
+          "a": "A rental whose average guest stay is seven days or less is not a rental activity under the passive loss regulations, so if you materially participate its loss is non-passive and can offset W-2 income in the same year without real estate professional status. The calculator's tax-savings sketch assumes that outcome; it does not test the average stay or your hours."
+        },
+        {
+          "q": "Does bonus depreciation apply to a short-term rental bought in 2026?",
+          "a": "Yes, at 100% for qualifying property acquired after January 19, 2025 under the 2025 tax law. It applies to the 5-, 7-, and 15-year components a cost segregation study identifies and to furniture, not to the building shell. Property under a binding contract on or before January 19, 2025 is on the old phase-down at 20% in 2026."
+        },
+        {
+          "q": "How much of a purchase price does cost segregation usually reclassify?",
+          "a": "It depends on the property; the default here is 30% and the input is yours to change. Land is never depreciable, so a high land value lowers the eligible share. Only a study gives you a number a CPA can file."
+        },
+        {
+          "q": "Why is cash-on-cash lower when I put more money down?",
+          "a": "You invest more cash for a smaller reduction in the payment, so the return on cash falls even though the property is safer. Watch DSCR and the NOI cushion alongside cash-on-cash."
+        },
+        {
+          "q": "What occupancy should I underwrite for a short-term rental?",
+          "a": "A number you can defend from comparable listings in your market across the slow season, not a peak month. Then use the break-even occupancy the dashboard shows as your risk line: the gap between the two is your margin for error."
+        }
+      ],
+      "related": [
+        {
+          "label": "Short-term rental loophole",
+          "href": "/tax-strategies/short-term-rental-loophole",
+          "note": "Seven-day rule and material participation."
+        },
+        {
+          "label": "Real estate professional status vs the STR loophole",
+          "href": "/compare/real-estate-professional-vs-str-loophole",
+          "note": "Which route makes the loss usable."
+        },
+        {
+          "label": "Cost segregation vs the STR loophole for W-2 earners",
+          "href": "/compare/cost-segregation-vs-str-loophole-w2-passive-loss",
+          "note": "Why a study alone is not enough."
+        },
+        {
+          "label": "Cost segregation savings calculator",
+          "href": "/tools/cost-segregation-savings",
+          "note": "The tax sketch with a study fee and the shell."
+        },
+        {
+          "label": "STR break-even occupancy calculator",
+          "href": "/tools/str-break-even-occupancy",
+          "note": "The risk line on its own."
+        },
+        {
+          "label": "Short-term rental investing tax implications",
+          "href": "/blog/short-term-rental-investing-tax-implications",
+          "note": "Full walkthrough of the tax side."
+        }
+      ]
+    },
+    "str-break-even-occupancy": {
+      "heading": "How the STR break-even occupancy calculator works",
+      "intro": "Solves for the single number STR operators argue about: the occupancy at which a listing stops losing money at your nightly rate.",
+      "method": [
+        "Net per occupied night = average nightly rate × (1 − platform and merchant fee %).",
+        "Occupied nights needed per month = fixed monthly costs ÷ net per occupied night.",
+        "Break-even occupancy = nights needed ÷ average days in a month (365 ÷ 12). This is the headline."
+      ],
+      "assumptions": [
+        "Fixed monthly costs include the lease or mortgage payment plus utilities, software, insurance, supplies, and any reserve you actually pay each month.",
+        "Guest-paid cleaning fees pass straight through to the cleaner and are excluded from both nightly rate and costs.",
+        "One nightly rate all year; no seasonality curve."
+      ],
+      "limitations": [
+        "It does not include variable costs that scale with bookings (extra utilities, consumables, per-booking management fees), so true break-even is slightly higher than shown.",
+        "Owner stays and blocked dates reduce available nights without changing the answer here.",
+        "Not investment advice."
+      ],
+      "faqs": [
+        {
+          "q": "What is a realistic Airbnb occupancy rate?",
+          "a": "It is market and season specific. Pull comparable listings' trailing occupancy for your bedroom count and neighborhood, then compare that to this break-even figure. If comps run close to your break-even, the deal has no margin."
+        },
+        {
+          "q": "Should I count the mortgage or lease in fixed costs?",
+          "a": "Yes. For arbitrage the lease is the biggest cost; for an owned STR use the full mortgage payment including escrow. Leaving it out turns break-even into a fantasy."
+        },
+        {
+          "q": "Where do cleaning fees go?",
+          "a": "If guests pay a cleaning fee that covers the cleaner, leave both out. If you charge less than the cleaner costs, put the shortfall per turnover into monthly costs."
+        },
+        {
+          "q": "How does this relate to the short term rental loophole?",
+          "a": "It does not. Break-even is an operating metric. The tax side, where a short-term rental with an average stay of seven days or less and material participation can offset W-2 income with depreciation losses, is covered in the STR purchase analysis and the strategy guide."
+        }
+      ],
+      "related": [
+        {
+          "label": "STR ADR needed calculator",
+          "href": "/tools/str-adr-needed",
+          "note": "Solve for the rate instead."
+        },
+        {
+          "label": "Airbnb arbitrage ROI calculator",
+          "href": "/tools/airbnb-arbitrage-roi",
+          "note": "The full leased-STR model."
+        },
+        {
+          "label": "STR purchase analysis calculator",
+          "href": "/tools/str-purchase-analysis",
+          "note": "The full owned-STR model."
+        },
+        {
+          "label": "Midterm vs STR calculator",
+          "href": "/tools/midterm-vs-str",
+          "note": "If occupancy is the problem."
+        },
+        {
+          "label": "Short-term rental loophole",
+          "href": "/tax-strategies/short-term-rental-loophole",
+          "note": "The tax rules, separately."
+        }
+      ]
+    },
+    "str-adr-needed": {
+      "heading": "How the STR ADR needed calculator works",
+      "intro": "Works backwards from what you must clear each month to the nightly rate the listing has to average at a given occupancy.",
+      "method": [
+        "Occupied nights per month = occupancy % × (365 ÷ 12).",
+        "Net needed per night = (fixed monthly costs + target monthly profit) ÷ occupied nights.",
+        "Nightly rate needed = net needed per night ÷ (1 − platform and merchant fee %). This is the headline."
+      ],
+      "assumptions": [
+        "Target profit is cash after the costs you entered, before income tax.",
+        "Occupancy is a full-year average; dynamic pricing, weekly discounts, and seasonality collapse into one blended rate.",
+        "Guest-paid cleaning is excluded from the rate."
+      ],
+      "limitations": [
+        "The answer is only useful if you compare it to what comparable listings actually average. The tool does not know your market.",
+        "Variable per-booking costs are not separated out.",
+        "Not investment advice."
+      ],
+      "faqs": [
+        {
+          "q": "What nightly rate should I charge on Airbnb?",
+          "a": "This tool gives you the floor: the average rate your costs and profit target require at a realistic occupancy. Price against the market from there. If the required rate sits above what comparable listings achieve, the fix is lower costs or a different property, not a higher price."
+        },
+        {
+          "q": "Is ADR the same as my listed price?",
+          "a": "No. ADR is the average of what guests actually paid per booked night after discounts and before cleaning fees. Enter the blended number, not the headline price."
+        },
+        {
+          "q": "How do occupancy and rate trade off?",
+          "a": "Lowering the occupancy input raises the rate needed. Run it at your market's slow-season occupancy to see the rate you would need to survive on, and at peak to see your margin."
+        },
+        {
+          "q": "Does higher profit change my taxes?",
+          "a": "Cash profit and taxable profit differ. Depreciation on the property and furnishings can leave a profitable STR with a tax loss on paper, which under the short-term rental rules a material participant can use against other income. The tax side is not in this tool."
+        }
+      ],
+      "related": [
+        {
+          "label": "STR break-even occupancy calculator",
+          "href": "/tools/str-break-even-occupancy",
+          "note": "Solve for occupancy instead."
+        },
+        {
+          "label": "Airbnb arbitrage ROI calculator",
+          "href": "/tools/airbnb-arbitrage-roi",
+          "note": "Rate and occupancy inside a full model."
+        },
+        {
+          "label": "Midterm vs STR calculator",
+          "href": "/tools/midterm-vs-str",
+          "note": "When the required rate is not there."
+        },
+        {
+          "label": "STR purchase analysis calculator",
+          "href": "/tools/str-purchase-analysis",
+          "note": "Owned-STR underwriting."
+        }
+      ]
+    },
+    "midterm-vs-str": {
+      "heading": "How the midterm vs STR calculator works",
+      "intro": "Same property, two operating models: nightly short-term rental against a furnished 30-day-plus midterm lease, compared on monthly net.",
+      "method": [
+        "STR gross after platform fees = nightly rate × occupancy % × (365 ÷ 12) × (1 − platform fee %).",
+        "STR monthly net = STR gross after fees − STR monthly operating costs.",
+        "Midterm monthly net = midterm rent × (1 − vacancy and turnover void %) − midterm operating costs.",
+        "Monthly edge for STR = STR net − midterm net. This is the headline; negative means the midterm lease nets more."
+      ],
+      "assumptions": [
+        "Rent or PITI is excluded from both sides because the housing cost is the same property either way. Include it in both operating-cost fields if you prefer whole numbers.",
+        "STR operating costs include utilities, supplies, software, cleaning you pay, and management; midterm costs include utilities if you cover them, turnover, and management.",
+        "Pre-tax."
+      ],
+      "limitations": [
+        "Regulatory risk is not priced: cities that restrict short stays often leave 30-day-plus rentals untouched, which is a reason to accept a smaller midterm edge.",
+        "It does not compare tenant credit risk, insurance cost, wear, or your time.",
+        "Tax treatment differs. A short-term rental with an average stay of seven days or less can be a non-passive activity for a material participant; a midterm rental with 30-day stays is a rental activity subject to the passive loss rules unless you qualify as a real estate professional. That is not in this comparison.",
+        "Not investment advice."
+      ],
+      "faqs": [
+        {
+          "q": "Is a midterm rental more profitable than Airbnb?",
+          "a": "Sometimes. STR usually wins on gross and loses on costs and turnover. Enter your market's real numbers here and lower STR occupancy until the edge flips; that occupancy is the risk you are taking for the extra income."
+        },
+        {
+          "q": "Does switching to 30-day stays lose the short term rental loophole?",
+          "a": "Yes. The loophole depends on an average guest stay of seven days or less. Stays of 30 days and longer make it a rental activity, so depreciation losses become passive unless you meet real estate professional status. Weigh that against the operating comparison."
+        },
+        {
+          "q": "What vacancy should I assume for a midterm rental?",
+          "a": "A void between tenants is normal because 30-day-plus stays turn over less often but leave gaps. The input covers vacancy and turnover void together; a few weeks a year is a reasonable planning starting point, adjusted to your market."
+        },
+        {
+          "q": "Can I run both models on the same property?",
+          "a": "Many operators do: short stays in peak season and midterm tenants in the off-season. Model each season separately here and blend the results, and keep the average-stay math in mind for tax purposes."
+        }
+      ],
+      "related": [
+        {
+          "label": "STR ADR needed calculator",
+          "href": "/tools/str-adr-needed",
+          "note": "The rate the STR side needs."
+        },
+        {
+          "label": "STR break-even occupancy calculator",
+          "href": "/tools/str-break-even-occupancy",
+          "note": "The occupancy that flips the edge."
+        },
+        {
+          "label": "Airbnb arbitrage ROI calculator",
+          "href": "/tools/airbnb-arbitrage-roi",
+          "note": "Full STR model on a lease."
+        },
+        {
+          "label": "Airbnb pricing strategy vs mid-term rentals",
+          "href": "/blog/airbnb-pricing-strategy-vs-mid-term-rentals",
+          "note": "Operating differences in detail."
+        },
+        {
+          "label": "Real estate professional status vs the STR loophole",
+          "href": "/compare/real-estate-professional-vs-str-loophole",
+          "note": "The tax consequence of longer stays."
         }
       ]
     }

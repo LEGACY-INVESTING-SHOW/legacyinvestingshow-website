@@ -15,6 +15,11 @@ const BRIDGE_HREF = '/assets/css/tools-bridge.css';
 const SHELL_SCRIPT_SRC = '/assets/js/tools-site-shell.js';
 const PUBLIC_SANS_PRELOAD =
     '<link rel="preload" href="/assets/fonts/public-sans-variable-latin.woff2" as="font" type="font/woff2" crossorigin>';
+// Opens DNS + TLS to the tag server while the CSS/font are still downloading, so
+// the async GTM/gtag requests do not pay for connection setup on the critical path.
+const ANALYTICS_PRECONNECT =
+    '<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>\n'
+    + '    <link rel="dns-prefetch" href="https://www.google-analytics.com">';
 
 function renderSkipLink() {
     return '<a href="#main" class="guide-skip">Skip to main content</a>';
@@ -110,6 +115,9 @@ function ensureHeadAssets(html) {
         /<link rel="preload" href="\/tools\/_next\/static\/media\/[^"]+\.woff2"[^>]*>/g,
         ''
     );
+    if (!next.includes('rel="preconnect" href="https://www.googletagmanager.com"')) {
+        next = next.replace(/<\/head>/i, `    ${ANALYTICS_PRECONNECT}\n</head>`);
+    }
     if (!next.includes('/assets/fonts/public-sans-variable-latin.woff2')) {
         next = next.replace(/<\/head>/i, `    ${PUBLIC_SANS_PRELOAD}\n</head>`);
     }
