@@ -686,6 +686,294 @@
         "solo-401k"
       ],
       "linkLabel": "Business owners"
+    },
+    {
+      "slug": "physicians",
+      "title": "Physicians",
+      "description": "Tax strategies for employed and moonlighting physicians, grouped by whether the move needs only payroll, a 1099 income stream, or a spouse with time",
+      "metaDescription": "What a physician can do about a top-bracket W-2: 403(b), 457(b), HSA and backdoor Roth first, then solo 401(k) or S-corp on 1099 pay, then rentals via a spouse.",
+      "answer": "For most physicians the best tax strategy is the plain one: fill every pre-tax account the employer offers, including a 457(b) if the hospital is a nonprofit, add an HSA and a backdoor Roth, and stop there unless there is other income. Moonlighting or locums pay unlocks a solo 401(k) and possibly an S-corp. Rental losses that offset physician wages usually need a spouse who can meet the participation tests, not the physician.",
+      "lede": "A physician’s income is mostly W-2, mostly taxed at the top rates, and the specified service rules take away the deductions a business owner would lean on. So the moves below are grouped by the facts that unlock them: payroll alone, a 1099 income stream, a spouse with time, or a single high-income year.",
+      "topStrategies": [
+        "hsa-strategy",
+        "backdoor-roth-ira",
+        "solo-401k",
+        "short-term-rental-loophole"
+      ],
+      "groups": [
+        {
+          "heading": "Employed W-2 physician",
+          "intro": "Hospital and health-system physicians get the same short list as any W-2 earner, with one addition. Many nonprofit employers offer a 457(b) next to the 403(b), and the two have separate deferral limits, so both can be filled in the same year. Read the plan document first if it is a non-governmental 457(b): the balance stays an asset of the employer until it is paid out, and the payout schedule is fixed when you separate. If the plan accepts after-tax contributions and allows in-plan conversion, the mega backdoor Roth is the largest remaining account move. Pre-tax deferrals also lower the adjusted gross income that sets an income-driven student loan payment, which matters if you are counting on PSLF, and a Roth conversion or a joint return does the reverse.",
+          "strategies": [
+            "hsa-strategy",
+            "mega-backdoor-roth",
+            "backdoor-roth-ira",
+            "dependent-care-fsa",
+            "tax-loss-harvesting"
+          ]
+        },
+        {
+          "heading": "1099 moonlighting or locums income",
+          "intro": "Any self-employment income opens a second set of moves. A solo 401(k) takes both an employee deferral and an employer contribution, but the employee deferral limit is shared across every plan you contribute to in the year, so a physician already deferring the maximum through a hospital 403(b) mostly gets the employer side. An S-corp is a payroll-tax question: if hospital wages already exceed the Social Security wage base, the 1099 income only owes the Medicare portion of self-employment tax, so the S-corp saves a few percent of the distribution share and has to beat its own payroll, filing, and state costs. Medicine is a specified service trade or business, so the qualified business income deduction phases out above the income thresholds, and most full-time attendings are above them. A home office deduction is available for the administrative side of a 1099 practice if the space is used exclusively for it, and quarterly estimates keep the 1099 income from producing a penalty in April.",
+          "strategies": [
+            "solo-401k",
+            "s-corp-strategy",
+            "qualified-business-income-deduction",
+            "home-office-deduction",
+            "estimated-tax-payments"
+          ]
+        },
+        {
+          "heading": "Physician household with a spouse who has time",
+          "intro": "The largest deductions on this page are rental losses used against physician wages, and a full-time physician almost never qualifies for them alone. Real estate professional status needs more than 750 hours and more than half of working time in real property trades, which a clinical schedule rules out; on a joint return, a spouse who is not working full time elsewhere can meet the test for the household. The short-term rental loophole has a lower bar, material participation without the 750-hour test, and either spouse’s hours count toward it. Cost segregation and bonus depreciation are what make the loss large enough to matter in the first year. Depreciation recapture on sale and the hour log are the price.",
+          "strategies": [
+            "real-estate-professional-status",
+            "short-term-rental-loophole",
+            "cost-segregation",
+            "bonus-depreciation"
+          ]
+        },
+        {
+          "heading": "A high-income year: charitable and timing moves",
+          "intro": "A signing bonus, a partnership buy-in year, or a large Roth conversion pushes taxable income deeper into the top bracket, and that is the year a deduction is worth the most. A donor-advised fund takes the full deduction now and grants the money out over years. Bunching two or three years of gifts into one return clears the standard deduction that a single year’s gifts may not. Appreciated stock given directly, rather than sold and then donated, skips the capital gain as well as earning the deduction.",
+          "strategies": [
+            "donor-advised-fund",
+            "bunching-deductions"
+          ]
+        }
+      ],
+      "readNext": [
+        {
+          "url": "/blog/albert-legacy-wealth-blueprint-case-study",
+          "title": "Albert, an ER physician in California: 25% net worth growth and home insurance cut in half after the Legacy Wealth Blueprint"
+        },
+        {
+          "url": "/blog/hsa-strategy-for-physicians",
+          "title": "HSA strategy for physicians"
+        },
+        {
+          "url": "/compare/s-corp-vs-qbi-deduction",
+          "title": "S-corp vs the QBI deduction on 1099 income"
+        },
+        {
+          "url": "/compare/real-estate-professional-vs-str-loophole",
+          "title": "Real estate professional status vs the STR loophole"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the best tax strategy for physicians?",
+          "answer": "Fill every pre-tax account the employer offers, including a 457(b) where a nonprofit hospital has one, then add an HSA and a backdoor Roth IRA. That list is fully under your control and needs no business. Moonlighting or locums income adds a solo 401(k) and an S-corp analysis. Rental losses against physician wages, the largest numbers, usually need a spouse who can meet the participation tests."
+        },
+        {
+          "question": "Do physicians qualify for the QBI deduction?",
+          "answer": "Only on self-employment or practice income, and only when taxable income is below the thresholds. Medicine is a specified service trade or business, so the qualified business income deduction phases out above the income thresholds and then disappears. An employed physician with no 1099 income has no qualified business income at all."
+        },
+        {
+          "question": "Can a physician with a full-time hospital job use the short-term rental loophole?",
+          "answer": "Yes, if you or your spouse materially participate in the rental and the average guest stay is seven days or less. The loophole does not need the 750-hour real estate professional test, which is what makes it reachable on a clinical schedule. Material participation still has its own hour requirements, usually 100 hours and more than anyone else, and it needs a contemporaneous log."
+        },
+        {
+          "question": "Should a moonlighting physician form an S-corp?",
+          "answer": "Only after modeling it. If hospital wages already exceed the Social Security wage base, the 1099 income owes only the Medicare portion of self-employment tax, so the S-corp saves a few percent of the distribution share and must cover its own payroll, filing, and state costs. It usually starts to make sense when the 1099 income is large and steady, not in the first year of occasional shifts."
+        },
+        {
+          "question": "Is a 457(b) separate from a 403(b) limit?",
+          "answer": "Yes. A 457(b) has its own deferral limit, separate from the shared 401(k) and 403(b) limit, so a physician at a nonprofit hospital that offers both can defer into both in the same year. The caveat is that a non-governmental 457(b) stays an unsecured asset of the employer until it is paid out, and the distribution schedule is set when you leave, so read the plan document before relying on it."
+        }
+      ],
+      "linkLabel": "Physicians"
+    },
+    {
+      "slug": "dentists",
+      "title": "Dentists",
+      "description": "Tax strategies for associate dentists and practice owners, from payroll accounts through the practice entity, the building, and the sale",
+      "metaDescription": "Tax strategies for dentists at each stage: associate payroll and 1099 moves, owner S-corp salary and cash balance plans, the building, and the practice sale.",
+      "answer": "For an associate, the best tax strategy is the account list: the practice 401(k), an HSA, a backdoor Roth, and a solo 401(k) if the pay is 1099. For a practice owner, the two largest levers are a reasonable S-corp salary paired with a cash balance or defined benefit plan, and depreciation on equipment and the building. At exit, how the sale is structured decides the tax more than any deduction in the years before it.",
+      "lede": "Dentistry is a specified service business with heavy equipment, often a building, and usually a sale at the end. That makes the tax picture different from a physician’s: less can be done inside payroll and far more inside the practice entity. The moves below follow the career, from associate to owner to seller.",
+      "topStrategies": [
+        "s-corp-strategy",
+        "section-179",
+        "cost-segregation",
+        "installment-sale"
+      ],
+      "groups": [
+        {
+          "heading": "Associate dentist (W-2 or 1099)",
+          "intro": "A W-2 associate has the same list as any employee: fill the practice’s 401(k) if there is one, an HSA if the health plan qualifies, and a backdoor Roth IRA above the income limits. A 1099 associate is self-employed, which opens a solo 401(k) with both employee and employer contributions, plus quarterly estimated payments and the home office and vehicle deductions for the administrative side of the work. The S-corp question at this stage depends on the size of the 1099 income and the state; in the first year it is often premature.",
+          "strategies": [
+            "hsa-strategy",
+            "backdoor-roth-ira",
+            "solo-401k",
+            "estimated-tax-payments"
+          ]
+        },
+        {
+          "heading": "Practice owner",
+          "intro": "Once you own the practice, the entity and the retirement plan do most of the work. An S-corp splits pay into a reasonable salary and distributions, and reasonable for a producing dentist is benchmarked against what an associate would be paid for the same clinical work, so the distribution share is smaller than owners hope. A cash balance or defined benefit plan layered on top of the 401(k) allows the largest deductible contributions available to a stable, high-income owner, at the cost of required contributions for eligible staff. That staff point is also the catch with a solo 401(k): once the practice has employees, it stops being solo and the plan has to cover them. Section 179 and bonus depreciation cover chairs, imaging, milling units, and other equipment in the year it is placed in service. The Augusta rule rents your home to the practice for up to 14 days of real meetings. Hiring your children for real work moves income into their bracket. The qualified business income deduction phases out for specified service businesses above the income thresholds, so most owners cannot count on it, and a pass-through entity tax election can rescue part of the state tax deduction where the state offers one.",
+          "strategies": [
+            "s-corp-strategy",
+            "section-179",
+            "bonus-depreciation",
+            "augusta-rule",
+            "family-employment-tax-strategy",
+            "qualified-business-income-deduction",
+            "pass-through-entity-tax"
+          ]
+        },
+        {
+          "heading": "Practice real estate",
+          "intro": "Many owners buy the building. Holding it in a separate entity and leasing it to the practice is the standard way to keep the building apart from the practice’s liabilities, and it lets the building be sold or kept independently of the practice at exit. Cost segregation on a dental build-out is productive because so much of the cost sits in finishes, plumbing, and equipment-specific systems with short recovery lives. The catch is the self-rental rule: net rental income from a property leased to a business in which you materially participate is treated as non-passive, so it cannot absorb passive losses from other rentals, while a net loss from the building stays passive. The depreciation still lowers the rent that is taxed; it does not create a loss you can use against practice income.",
+          "strategies": [
+            "cost-segregation",
+            "bonus-depreciation",
+            "rental-property-depreciation"
+          ]
+        },
+        {
+          "heading": "Selling the practice",
+          "intro": "The exit is usually the largest taxable event of a dental career, and the structure decides the rate. Purchase price allocation splits the sale among goodwill, equipment, and covenants, and each piece is taxed differently: goodwill at capital gains rates, equipment depreciation at ordinary recapture rates. An installment sale spreads the gain across the years payments are received, which can keep part of it under the top bracket and the net investment income tax threshold, at the cost of collection risk on the buyer. A charitable remainder trust converts part of an appreciated practice or building into lifetime income with a current deduction. If the building is sold separately, a 1031 exchange can defer that gain into another property.",
+          "strategies": [
+            "installment-sale",
+            "charitable-remainder-trust",
+            "1031-exchange"
+          ]
+        }
+      ],
+      "readNext": [
+        {
+          "url": "/retirement/defined-benefit-plan",
+          "title": "Defined benefit plan: the largest deductible contributions for a stable, high-income owner"
+        },
+        {
+          "url": "/compare/installment-sale-vs-deferred-sales-trust-small-business-exit",
+          "title": "Installment sale vs deferred sales trust for a practice exit"
+        },
+        {
+          "url": "/compare/augusta-rule-vs-home-office-deduction-s-corp",
+          "title": "Augusta rule vs home office deduction for S-corp owners"
+        },
+        {
+          "url": "/tools/cost-segregation-savings",
+          "title": "Cost segregation savings calculator"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the best tax strategy for dentists?",
+          "answer": "It depends on the stage. An associate should fill the practice 401(k), an HSA, and a backdoor Roth, and open a solo 401(k) if paid on a 1099. A practice owner gets the most from an S-corp with a defensible salary, a cash balance plan stacked on the 401(k), and Section 179 or bonus depreciation on equipment. An owner who also holds the building adds cost segregation. At exit, the sale structure matters more than any single deduction."
+        },
+        {
+          "question": "Do dentists qualify for QBI?",
+          "answer": "Sometimes. Dentistry is a specified service trade or business, so the qualified business income deduction is full below the income thresholds, phases out through a range above them, and is gone past it. An associate with modest 1099 income may qualify; a producing owner usually does not. Because the test is on taxable income, a large retirement plan contribution can pull some owners back under the thresholds in a given year."
+        },
+        {
+          "question": "How much salary does a dentist S-corp have to pay?",
+          "answer": "Enough to be reasonable for the clinical work you do, which is benchmarked against what an associate would be paid to produce the same dentistry. A producing owner therefore has a high reasonable salary and a smaller distribution share than a non-producing owner would. The saving is the payroll tax on distributions, and above the Social Security wage base only the Medicare portion of that tax remains."
+        },
+        {
+          "question": "Can a dentist deduct the practice building?",
+          "answer": "Through depreciation, and often faster through a cost segregation study, because a dental build-out is heavy in short-life components. If you own the building in a separate entity and lease it to your practice, the self-rental rule treats the net rental income as non-passive, so the building’s depreciation lowers the taxed rent but a net loss cannot offset practice income or absorb other passive losses."
+        },
+        {
+          "question": "Is a cash balance plan worth it for a dental practice?",
+          "answer": "It is the largest deductible contribution available to a stable, high-income owner, and it stacks on top of a 401(k). The trade is that it is a defined benefit plan: contributions are required each year, eligible staff must be covered, and it needs an actuary. It fits an owner with several years of consistent profit who wants to shelter a large amount before an exit, and it does not fit a practice with volatile income."
+        }
+      ],
+      "linkLabel": "Dentists"
+    },
+    {
+      "slug": "w2-executives",
+      "title": "W-2 Executives",
+      "description": "Tax strategies for executives and senior employees in the 37% bracket with equity compensation and no business to route pay through",
+      "metaDescription": "What a 37%-bracket executive can do: 401(k) and after-tax room, backdoor Roth, HSA, equity and deferred comp timing, and what does not work for pure W-2 pay.",
+      "answer": "For an executive in the 37% bracket, the best tax strategy is to fill every account the employer offers, including after-tax 401(k) room converted to Roth, add a backdoor Roth and an HSA, then manage the timing of equity compensation and charitable gifts. Deferred compensation can move income to a lower-bracket year but ties it to the employer’s solvency. The large deductions, rental losses used against wages, need a spouse who can meet the participation tests or hours you probably do not have.",
+      "lede": "At $300,000 or more of W-2 pay, most of the advice written for business owners does not apply. There is no entity to route salary through, unreimbursed employee expenses are not deductible, and a good share of the income arrives as equity you did not choose the timing of. The moves below are grouped by what each one asks of you, ending with what does not work.",
+      "topStrategies": [
+        "mega-backdoor-roth",
+        "backdoor-roth-ira",
+        "hsa-strategy",
+        "short-term-rental-loophole"
+      ],
+      "groups": [
+        {
+          "heading": "Payroll and account moves",
+          "intro": "Start with what the plan document allows. Beyond the pre-tax deferral, some employer plans accept after-tax contributions and permit in-plan Roth conversion, which is the mega backdoor Roth and the largest remaining account move for a high earner. A backdoor Roth IRA works above the income limits as long as you hold no pre-tax IRA balances that trigger the pro-rata rule. An HSA needs a qualifying high-deductible plan and is the only account that escapes tax on the way in, during growth, and on the way out for medical costs. A dependent care FSA is small but costs nothing. If the 401(k) holds appreciated employer stock, net unrealized appreciation can move that growth to capital gains rates at separation.",
+          "strategies": [
+            "mega-backdoor-roth",
+            "backdoor-roth-ira",
+            "hsa-strategy",
+            "dependent-care-fsa",
+            "net-unrealized-appreciation"
+          ]
+        },
+        {
+          "heading": "Equity compensation and deferred pay",
+          "intro": "RSUs are taxed as wages when they vest, and the default withholding on a vest is often below the 37% rate, so the first job is to fix the underpayment before it becomes a penalty. Selling at vest costs nothing extra in tax and removes the concentration; holding starts the clock on long-term capital gains for the growth after vest. NSOs are wages at exercise on the spread. ISOs are not, but the spread is an alternative minimum tax preference item, so a large exercise needs an AMT projection first, and the holding periods for a qualifying disposition decide whether the gain is capital or ordinary. ESPP discounts are ordinary income, and the holding period changes how much of the rest is capital gain. Non-qualified deferred compensation pushes salary or bonus into later years, which helps if those years are lower-bracket; the trade is that the deferred amount is an unsecured claim on the employer, the election is made before the year the pay is earned, and the payout schedule is locked when you elect. A concentrated position in a taxable account is also where tax-loss harvesting and direct gifts of appreciated shares do the most work, and if the employer was a qualifying small C corporation when the shares were issued, Section 1202 may exclude part of the gain after five years.",
+          "strategies": [
+            "tax-loss-harvesting",
+            "donor-advised-fund",
+            "bunching-deductions",
+            "qualified-small-business-stock"
+          ]
+        },
+        {
+          "heading": "Rental losses against wages",
+          "intro": "This is where the large numbers are and where most executives are disqualified. Rental losses are passive, and passive losses cannot offset wages unless one of two exceptions applies. Real estate professional status needs more than 750 hours and more than half of your working time in real property trades, which a full-time role rules out; on a joint return a spouse who is not employed full time elsewhere can meet it. The short-term rental loophole drops the 750-hour test and asks only for material participation in a rental with average stays of seven days or less, usually 100 hours and more than anyone else, and either spouse’s hours count. Cost segregation and bonus depreciation are what make the first-year loss large. Recapture when you sell, and the log, are the cost.",
+          "strategies": [
+            "short-term-rental-loophole",
+            "real-estate-professional-status",
+            "cost-segregation",
+            "bonus-depreciation"
+          ]
+        },
+        {
+          "heading": "What does not work for a pure W-2",
+          "intro": "Forming an LLC does not change how wages are taxed; entity choice starts to matter only when there is self-employment or rental income to run through it. Unreimbursed employee expenses, a home office for a remote role, and professional dues are not deductible on a federal return for an employee, even when the employer requires the expense; an accountable-plan reimbursement from the employer is the fix. The qualified business income deduction is for pass-through business income, not salary. Section 179, the Augusta rule, and hiring your children all need a business with real activity, not a title. Changing state residency is a real move only if you actually move, with the day counts and domicile evidence to prove it; a second home in a no-tax state does not do it on its own. Everything that does work for a pure W-2 earner is in the first group.",
+          "strategies": []
+        }
+      ],
+      "readNext": [
+        {
+          "url": "/blog/stephanie-dailey-legacy-wealth-blueprint-case-study",
+          "title": "Stephanie Dailey, a software engineer with household W-2 income over $300,000: over $20,000 saved in taxes in her first year"
+        },
+        {
+          "url": "/blog/cut-taxes-w2-300k-without-starting-a-business",
+          "title": "Cut taxes on a $300K W-2 without starting a business"
+        },
+        {
+          "url": "/compare/cost-segregation-vs-str-loophole-w2-passive-loss",
+          "title": "Cost segregation vs the STR loophole for W-2 professionals with passive loss limits"
+        },
+        {
+          "url": "/tools/capital-gains-tax-estimate",
+          "title": "Capital gains tax estimate calculator"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the best tax strategy for a W-2 executive in the 37% bracket?",
+          "answer": "Fill every account the employer offers: the pre-tax 401(k), any after-tax 401(k) room converted to Roth, an HSA, and a backdoor Roth IRA. Then manage what you control about equity: withholding at vest, when to sell, and giving appreciated shares instead of cash. Deferred compensation and rental losses against wages are the two larger moves, and each has a condition most executives cannot meet without a spouse or a real change in circumstances."
+        },
+        {
+          "question": "Can a W-2 executive use the short-term rental loophole?",
+          "answer": "Yes, if you or your spouse materially participate in a rental with an average guest stay of seven days or less. There is no 750-hour test, which is what makes it reachable next to a full-time role, but material participation still means roughly 100 hours and more than anyone else, with a log to prove it. If a manager does more of the work than you do, you fail the test."
+        },
+        {
+          "question": "How are RSUs taxed, and can I reduce the tax?",
+          "answer": "RSUs are ordinary wages at vest, taxed at your marginal rate, and there is no election that changes that. What you control is withholding, so the vest does not create an underpayment penalty, and what happens after vest: sell at once to remove the concentration at no extra tax cost, or hold to start the long-term capital gains clock on the growth. Shares held over a year can be given to a donor-advised fund for a deduction at fair value with no gain recognized."
+        },
+        {
+          "question": "Is deferred compensation worth it for an executive?",
+          "answer": "It depends on the bracket you expect in the payout years and on the employer. Deferring bonus from a 37% year into retirement years taxed lower is a real saving. The deferred amount is an unsecured claim on the company until it is paid, the election has to be made before the year the pay is earned, and the payout schedule cannot easily be changed, so size it to what you could afford to lose if the employer failed."
+        },
+        {
+          "question": "Can I deduct a home office or work expenses as an employee?",
+          "answer": "Not on a federal return. Unreimbursed employee business expenses, including a home office for a remote role, are not deductible for employees. Ask the employer for an accountable-plan reimbursement instead, which is tax-free to you and deductible to them. A home office deduction only exists for self-employment income."
+        }
+      ],
+      "linkLabel": "W-2 executives"
     }
   ],
   "catalog": [

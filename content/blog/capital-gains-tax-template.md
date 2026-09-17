@@ -4,11 +4,11 @@ title: >-
   Decisions
 titleTemplate: '%s | Legacy Investing Show'
 description: >-
-  Use a practical capital gains tax template to model stock, real estate, and
-  business-sale tax outcomes with real numbers, tradeoffs, checklists, and
-  CPA-ready planning questions.
+  Use a capital gains tax template to model stock, real estate, and
+  business-sale taxes with NIIT, state tax, and depreciation recapture before
+  deciding to sell.
 date: '2026-02-16'
-modifiedDate: '2026-02-16'
+modifiedDate: '2026-09-17'
 author: Preston Seo
 authorTitle: 'Founder, Legacy Investing Show'
 authorCredentials: Personal finance educator and strategy coach
@@ -111,28 +111,31 @@ statistics:
       The IRS uses Form 8949 detail and Schedule D summary for most capital
       asset sales and exchanges.
 faq:
-  - question: What is capital gains tax template?
+  - question: What inputs does a capital gains tax template need?
     answer: >-
-      capital gains tax template is a practical strategy framework with clear
-      rules, milestones, and risk controls.
-  - question: Who benefits from capital gains tax template?
+      For securities: acquisition and sale dates, lot-level cost basis,
+      holding period, expected proceeds and fees, loss carryforwards, and
+      gains already realized this year. For real estate: purchase price, land
+      vs building split, improvements by year, depreciation claimed, selling
+      costs, and state jurisdiction. Then add assumptions for federal rates,
+      NIIT, and state tax.
+  - question: Why can a rental sale be taxed more than a stock sale with the same gain?
     answer: >-
-      People with defined goals and consistent review habits usually benefit
-      most.
-  - question: How fast can I implement capital gains tax template?
-    answer: A workable first version is often possible in 2 to 6 weeks.
-  - question: What mistakes are common with capital gains tax template?
+      Depreciation recapture. In the worked example, a $180,000 stock gain
+      modeled at about 23.2% effective tax, while the same gain on a rental
+      with $60,000 of unrecaptured Section 1250 gain taxed at up to 25% came
+      to about 26.5%.
+  - question: How does tax-loss harvesting change the template result?
     answer: >-
-      Common mistakes include poor measurement, weak risk limits, and no review
-      cadence.
-  - question: Should I involve an advisor?
-    answer: 'For legal or tax-sensitive moves, use a qualified professional.'
-  - question: How often should I review progress?
-    answer: Monthly and quarterly reviews are common for disciplined execution.
-  - question: What should I track?
-    answer: 'Track outcomes, downside risk, and execution quality metrics.'
-  - question: Can beginners use this?
-    answer: Yes. Start simple and add complexity only after consistency.
+      Realizing $30,000 of long-term losses in the same year cut the modeled
+      tax in the stock example from $41,700 to $34,560, because it lowered
+      both the gain and the NIIT base. The tradeoff is portfolio drift and
+      wash-sale discipline.
+  - question: Where does the template map to my tax return?
+    answer: >-
+      Sales are reported on Form 8949 and summarized on Schedule D. Structure
+      the template around those categories, keep lot records, and pre-fund
+      estimated payments so the sale does not create a cash-flow surprise.
 toc: true
 tocDepth: 3
 relatedPosts:

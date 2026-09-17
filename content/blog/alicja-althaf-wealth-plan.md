@@ -349,7 +349,7 @@ Once debt is eliminated and emergency fund established, real estate becomes a vi
 **Phase 3: Portfolio Building**
 - BRRRR strategy (Buy, Rehab, Rent, Refinance, Repeat) to scale
 - Consider house hacking additional properties
-- Evaluate [short-term rental strategies](/tax-strategies/short-term-rental-loophole.html) in appropriate areas
+- Evaluate [short-term rental strategies](/tax-strategies/short-term-rental-loophole) in appropriate areas
 
 ### NYC Metro Real Estate Tax Strategies
 
@@ -409,7 +409,7 @@ Alicja and Althaf's wealth plan maps a realistic trajectory from their current p
 - Investment portfolio $100,000+ (combination retirement and taxable)
 - Real estate investment potentially underway
 - Significant annual investment contributions ($50,000+ combined)
-- Consider advanced strategies: [Real Estate Professional Status](/tax-strategies/real-estate-professional-status.html), [backdoor Roth](/tax-strategies/backdoor-roth-ira.html)
+- Consider advanced strategies: [Real Estate Professional Status](/tax-strategies/real-estate-professional-status), [backdoor Roth](/tax-strategies/backdoor-roth-ira)
 
 **Years 6-7: Compounding and Financial Flexibility**
 - Investment portfolio $200,000+ depending on returns
@@ -483,7 +483,7 @@ Alicja and Althaf's wealth plan maps a realistic trajectory from their current p
 **Wealth Building Phase:**
 - Significant investment account balances
 - Real estate potentially acquired
-- Advanced tax strategies: REPS, [cost segregation](/tax-strategies/cost-segregation.html), entity structuring
+- Advanced tax strategies: REPS, [cost segregation](/tax-strategies/cost-segregation), entity structuring
 - Path to financial independence mapped
 
 ## Frequently Asked Questions

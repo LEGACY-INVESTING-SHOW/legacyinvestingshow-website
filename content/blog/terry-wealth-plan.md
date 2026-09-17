@@ -608,7 +608,7 @@ Explore these specific strategies mentioned in Terry's tax planning scenarios:
 
 - [Retirement Account Optimization](/tax-strategies/) - 401(k), IRA, HSA maximization
 - [S-Corporation Strategy](/tax-strategies/s-corp-strategy/) - Entity structuring for business income
-- [Charitable Bunching](/tax-strategies/charitable-bunching/) - Strategic deduction timing
+- [Charitable Bunching](/tax-strategies/bunching-deductions) - Strategic deduction timing
 - [Tax Loss Harvesting](/tax-strategies/tax-loss-harvesting/) - Offset gains and reduce liability
 - [Roth Conversion Strategy](/tax-strategies/roth-conversion-ladder) - Timing conversions for optimal brackets
 

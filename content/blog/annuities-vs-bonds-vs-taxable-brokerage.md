@@ -1,12 +1,12 @@
 ---
-title: 'annuities vs bonds vs taxable brokerage: Which Strategy Works Better in 2026?'
+title: 'Annuities vs Bonds vs Taxable Brokerage: Which Strategy Works Better in 2026?'
 titleTemplate: '%s | Legacy Investing Show'
 description: >-
-  Compare annuities, bond ladders, and taxable brokerage accounts for 2026
-  retirement income using practical tax math, allocation frameworks, and a
-  30-day action checklist.
+  Annuities vs bonds vs taxable brokerage for retirement income in 2026: give
+  each a job, close your income floor gap, and compare after-tax cash flow
+  each year.
 date: '2026-02-16'
-modifiedDate: '2026-02-16'
+modifiedDate: '2026-09-17'
 author: Preston Seo
 authorTitle: 'Founder, Legacy Investing Show'
 authorCredentials: Personal finance educator and strategy coach
@@ -36,8 +36,8 @@ tags:
   - financial planning
 image: /assets/images/blog/annuities-vs-bonds-vs-taxable-brokerage.jpg
 imageAlt: >-
-  annuities vs bonds vs taxable brokerage: Which Strategy Works Better in 2026?
-  guide
+  Annuities vs Bonds vs Taxable Brokerage: Which Strategy Works Better in
+  2026? | Legacy Investing Show
 imageWidth: 1200
 imageHeight: 630
 twitterCard: summary_large_image
@@ -106,28 +106,31 @@ statistics:
     icon: calendar
     context: Many retirees use this range for laddered spending reserves.
 faq:
-  - question: What is annuities vs bonds vs taxable brokerage?
+  - question: 'Should I choose annuities, bonds, or a taxable brokerage account for retirement income?'
     answer: >-
-      annuities vs bonds vs taxable brokerage is a practical strategy framework
-      with clear rules, milestones, and risk controls.
-  - question: Who benefits from annuities vs bonds vs taxable brokerage?
+      Usually a mix. Annuities transfer longevity risk and can fund essential
+      spending, bond ladders cover known cash needs in the next 1 to 10 years,
+      and taxable brokerage provides liquidity and lower long-term capital
+      gains rates. Many retirees land in a 20% to 40% annuity, 20% to 40%
+      bonds, 30% to 60% brokerage range.
+  - question: How do I decide how much to put in an annuity?
     answer: >-
-      People with defined goals and consistent review habits usually benefit
-      most.
-  - question: How fast can I implement annuities vs bonds vs taxable brokerage?
-    answer: A workable first version is often possible in 2 to 6 weeks.
-  - question: What mistakes are common with annuities vs bonds vs taxable brokerage?
+      Calculate your income floor gap: essential spending minus guaranteed
+      income such as Social Security and pensions. A large gap plus longevity
+      concern argues for a bigger annuity sleeve, but most households still
+      cap annuities at 20% to 40% of investable assets to preserve liquidity.
+  - question: 'How are annuities, bonds, and brokerage assets taxed differently?'
     answer: >-
-      Common mistakes include poor measurement, weak risk limits, and no review
-      cadence.
-  - question: Should I involve an advisor?
-    answer: 'For legal or tax-sensitive moves, use a qualified professional.'
-  - question: How often should I review progress?
-    answer: Monthly and quarterly reviews are common for disciplined execution.
-  - question: What should I track?
-    answer: 'Track outcomes, downside risk, and execution quality metrics.'
-  - question: Can beginners use this?
-    answer: Yes. Start simple and add complexity only after consistency.
+      Bond interest and pre-tax annuity payouts are ordinary income, Treasury
+      interest is usually exempt from state tax, nonqualified annuity payments
+      may be partly a return of principal, and qualified dividends and
+      long-term gains in a brokerage account are taxed at lower rates.
+  - question: What did the worked example show?
+    answer: >-
+      A couple with a $42,000 income floor gap projected about $46,898 of
+      after-tax cash flow from a $350,000 annuity, a $250,000 bond ladder, and
+      $600,000 in taxable brokerage, versus about $41,952 from an all-bond
+      approach, with more liquidity than an all-annuity plan.
 toc: true
 tocDepth: 3
 relatedPosts:

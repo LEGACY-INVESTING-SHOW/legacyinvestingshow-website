@@ -643,7 +643,7 @@ Isaac proved that with the right partner, a willingness to take action, and stra
 
 - [Cold Calling Scripts for Landlords](/blog/how-to-convince-landlords-for-airbnb-arbitrage)
 
-- [How to Furnish an Airbnb on a Budget](/blog/airbnb-furnishing-budget-guide)
+- [How to Furnish an Airbnb on a Budget](/blog/airbnb-furniture-budget-checklist)
 
 ---
 

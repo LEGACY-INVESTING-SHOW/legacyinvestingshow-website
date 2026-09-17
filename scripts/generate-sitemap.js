@@ -34,6 +34,19 @@ const staticPages = [
   { url: '/reviews', file: 'reviews.html', priority: '0.9' },
   { url: '/blog/', file: 'blog/index.html' },
   { url: '/tax-strategies-101', file: 'tax-strategies-101.html' },
+  { url: '/legacy-wealth-blueprint', file: 'legacy-wealth-blueprint.html', priority: '0.8' },
+  // Brand-intent "convert" pages (2026-09-17).
+  { url: '/preston-seo-reviews', file: 'preston-seo-reviews.html', priority: '0.8' },
+  { url: '/is-preston-seo-legit', file: 'is-preston-seo-legit.html', priority: '0.8' },
+  { url: '/legacy-wealth-blueprint-reviews', file: 'legacy-wealth-blueprint-reviews.html', priority: '0.8' },
+  { url: '/legacy-wealth-blueprint-cost', file: 'legacy-wealth-blueprint-cost.html' },
+  { url: '/manage-money-101-reviews', file: 'manage-money-101-reviews.html' },
+  { url: '/case-studies', file: 'case-studies.html', priority: '0.8' },
+  // Commercial "best of" pages (2026-09-17).
+  { url: '/best-tax-strategy-programs-for-high-earners', file: 'best-tax-strategy-programs-for-high-earners.html' },
+  { url: '/best-financial-education-programs-for-high-income-professionals', file: 'best-financial-education-programs-for-high-income-professionals.html' },
+  { url: '/short-term-rental-coaching', file: 'short-term-rental-coaching.html' },
+  { url: '/airbnb-arbitrage-training', file: 'airbnb-arbitrage-training.html' },
 ];
 
 const resourceDirs = [
@@ -42,6 +55,8 @@ const resourceDirs = [
   'compare',
   'topics',
   'tools',
+  'alternatives',
+  'vs',
 ];
 
 /**
@@ -501,6 +516,14 @@ function generateSitemaps() {
   for (const page of staticPages) {
     // Skip duplicate index entries
     if (page.url === '/index.html') continue;
+
+    // Skip pages whose file is not present in this checkout, and pages that
+    // carry a noindex robots meta, so the sitemap never lists a URL Google
+    // is told not to index.
+    if (page.file) {
+      const filePath = path.join(ROOT_DIR, page.file);
+      if (!fs.existsSync(filePath) || !isIndexableHtml(filePath)) continue;
+    }
 
     pageUrls.push({
       loc: `${SITE_URL}${normalizePath(page.url)}`,

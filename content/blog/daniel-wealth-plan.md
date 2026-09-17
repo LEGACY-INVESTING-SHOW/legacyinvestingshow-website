@@ -86,7 +86,7 @@ The Colorado market offers distinct advantages: year-round tourism demand (ski s
 - State Tax Environment: Colorado (4.4% flat rate)
 
 **Strategic Foundation:**
-Daniel's high income provides the cash flow foundation for aggressive business investment, while substantial home equity offers low-cost capital access through HELOC or cash-out refinance. The 6-10 hour weekly commitment satisfies IRS material participation requirements (100+ hours annually) for the [Short-Term Rental Tax Loophole](/tax-strategies/short-term-rental-loophole.html).
+Daniel's high income provides the cash flow foundation for aggressive business investment, while substantial home equity offers low-cost capital access through HELOC or cash-out refinance. The 6-10 hour weekly commitment satisfies IRS material participation requirements (100+ hours annually) for the [Short-Term Rental Tax Loophole](/tax-strategies/short-term-rental-loophole).
 
 ## The Pagosa Springs Market Opportunity
 
@@ -398,7 +398,7 @@ Mountain markets experience significant seasonal variation. Mitigation:
 Pagosa Springs and similar Colorado mountain towns provide higher revenue per unit than urban markets due to limited hotel supply, year-round tourism appeal, and premium pricing. The trade-off is seasonal volatility and geographic distance from major metropolitan areas.
 
 ### 2. Tax Optimization Amplifies Returns
-The combination of [cost segregation](/tax-strategies/cost-segregation.html), [bonus depreciation](/tax-strategies/bonus-depreciation.html), [STR tax loophole](/tax-strategies/short-term-rental-loophole.html), and strategic entity structuring can generate $55,000-$68,000 in year-one value — often exceeding cash flow from operations. This tax value accelerates capital recycling for scaling.
+The combination of [cost segregation](/tax-strategies/cost-segregation), [bonus depreciation](/tax-strategies/bonus-depreciation), [STR tax loophole](/tax-strategies/short-term-rental-loophole), and strategic entity structuring can generate $55,000-$68,000 in year-one value — often exceeding cash flow from operations. This tax value accelerates capital recycling for scaling.
 
 ### 3. Hybrid Arbitrage-to-Ownership Strategy Balances Risk
 Starting with arbitrage validates the market and generates cash flow within 60 days, while transitioning to ownership captures equity appreciation and maximum tax benefits. This hybrid approach minimizes initial capital at risk while building toward long-term wealth.
@@ -417,11 +417,11 @@ Pagosa Springs offers year-round tourism appeal with hot springs, skiing at Wolf
 
 ### How does the STR strategy scale from $55K year-one to $210K annually?
 
-The scaling pathway involves: Year 1 (establish first unit, prove model, generate $55K-$68K value through tax savings + cash flow), Year 2 (add second unit using profits and optimized entity structure), Year 3 (add third unit, consider property acquisition vs arbitrage based on equity position). Each additional unit compounds tax benefits through [cost segregation](/tax-strategies/cost-segregation.html), depreciation, and business deductions while building operational systems that reduce per-unit management time.
+The scaling pathway involves: Year 1 (establish first unit, prove model, generate $55K-$68K value through tax savings + cash flow), Year 2 (add second unit using profits and optimized entity structure), Year 3 (add third unit, consider property acquisition vs arbitrage based on equity position). Each additional unit compounds tax benefits through [cost segregation](/tax-strategies/cost-segregation), depreciation, and business deductions while building operational systems that reduce per-unit management time.
 
 ### What tax strategies are most effective for Colorado STR operators?
 
-Key strategies include: [cost segregation studies](/tax-strategies/cost-segregation.html) unlocking 20-30% of property value in year-one depreciation, [bonus depreciation](/tax-strategies/bonus-depreciation.html) (100% for qualified property acquired after January 19, 2025; old phase-down only for earlier binding contracts), the [Augusta Rule](/tax-strategies/augusta-rule.html) (Section 280A) for 14 days of tax-free rental income, LLC entity structuring for liability protection and deduction capture, and strategic W-4 adjustments to recapture over-withholding. Combined, these can generate $30K-$60K+ in year-one tax value.
+Key strategies include: [cost segregation studies](/tax-strategies/cost-segregation) unlocking 20-30% of property value in year-one depreciation, [bonus depreciation](/tax-strategies/bonus-depreciation) (100% for qualified property acquired after January 19, 2025; old phase-down only for earlier binding contracts), the [Augusta Rule](/tax-strategies/augusta-rule) (Section 280A) for 14 days of tax-free rental income, LLC entity structuring for liability protection and deduction capture, and strategic W-4 adjustments to recapture over-withholding. Combined, these can generate $30K-$60K+ in year-one tax value.
 
 ### Should Daniel pursue STR arbitrage or property ownership in Pagosa Springs?
 

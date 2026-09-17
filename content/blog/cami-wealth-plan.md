@@ -139,7 +139,7 @@ Rather than betting on specific outcomes, Cami's plan develops response strategi
 **Scenario B: Prioritize Roth Options**
 - Roth 401(k) contributions if plan permits
 - Roth IRA (if income under phase-out: $150,000-$165,000 single, $236,000-$246,000 MFJ)
-- [Backdoor Roth IRA](/tax-strategies/backdoor-roth-ira.html) if income exceeds limits
+- [Backdoor Roth IRA](/tax-strategies/backdoor-roth-ira) if income exceeds limits
 - Mega backdoor Roth if plan allows after-tax contributions with in-service rollovers
 - Tax treatment: No immediate deduction, tax-free growth and withdrawals
 - Best for: Lower current bracket, expected higher taxes in retirement, estate planning
@@ -269,7 +269,7 @@ Cami's plan provides a systematic framework for analyzing investment concepts be
 **Category A: Real Estate Strategies**
 
 **Short-Term Rental (Airbnb/VRBO) Analysis:**
-- [STR Loophole](/tax-strategies/short-term-rental-loophole.html) benefits: Material participation + 7-day average stay = non-passive activity
+- [STR Loophole](/tax-strategies/short-term-rental-loophole) benefits: Material participation + 7-day average stay = non-passive activity
 - Time requirement: 5-15 hours/week for self-management, less with cohosting
 - Capital requirement: $5,000-$50,000+ (furnishings, deposits, startup costs)
 - Revenue potential: 1-3% of property value monthly (market dependent)
@@ -281,7 +281,7 @@ Cami's plan provides a systematic framework for analyzing investment concepts be
 - Tenant quality and property management key determinants of returns
 - Capital requirement: 20-25% down payment + reserves
 - Time requirement: Minimal if property manager engaged (8-12% of gross)
-- Tax benefits: Depreciation, 1031 exchanges, [cost segregation](/tax-strategies/cost-segregation.html)
+- Tax benefits: Depreciation, 1031 exchanges, [cost segregation](/tax-strategies/cost-segregation)
 - Professional needs: Real estate agent, property manager, CPA, attorney for entity structuring
 
 **Category B: Business Investment**
@@ -387,7 +387,7 @@ Cami's plan emphasizes that complex wealth building requires professional guidan
 
 **Engage CPA Immediately If:**
 - You have business income (Schedule C, Partnership, S-Corp)
-- You're considering [Real Estate Professional Status](/tax-strategies/real-estate-professional-status.html) election
+- You're considering [Real Estate Professional Status](/tax-strategies/real-estate-professional-status) election
 - You have multi-state tax obligations
 - You have significant investment income with complex K-1s
 - You're planning transactions exceeding $50,000 with tax implications

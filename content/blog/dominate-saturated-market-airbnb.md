@@ -697,7 +697,7 @@ Sunny's approach actually minimizes several common risks:
 
 ### Related Success Stories
 
-- [How Micah Made $5,000 His First Month with One Facebook Message](/blog/micah-facebook-message-5k-month-houston)
+- [How Micah Made $5,000 His First Month with One Facebook Message](/blog/micah-facebook-message-airbnb)
 
 - [How James Built a $7,000/Month Airbnb Business in 57 Days While Working Full-Time](/blog/james-7k-month-3-properties-remote)
 

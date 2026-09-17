@@ -510,8 +510,8 @@ If you're ready to implement your chosen wealth strategy scenario—whether cons
 ## Related Resources
 
 - [Tax Optimization Fundamentals](/tax-strategies/) - Core tax reduction strategies
-- [Retirement Planning Guide](/retirement/) - Maximizing retirement contributions
-- [Real Estate Tax Strategies](/tax-strategies/real-estate/) - Property investment optimization
-- [Business Entity Structures](/tax-strategies/business-entities/) - S-Corp and LLC strategies
+- [Retirement Planning Guide](/topics/retirement) - Maximizing retirement contributions
+- [Real Estate Tax Strategies](/topics/investing) - Property investment optimization
+- [Business Entity Structures](/topics/business-structures) - S-Corp and LLC strategies
 - [Cost Segregation Deep Dive](/tax-strategies/cost-segregation/) - Accelerated depreciation
-- [Wealth Building Fundamentals](/blog/wealth-building-basics/) - Core wealth principles
+- [Wealth Building Fundamentals](/topics/wealth-building) - Core wealth principles

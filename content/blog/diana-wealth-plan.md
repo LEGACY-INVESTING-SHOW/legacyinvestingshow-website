@@ -603,9 +603,9 @@ If you're in your late 50s or early 60s and ready to optimize your pre-retiremen
 
 ## Related Resources
 
-- [Social Security Optimization](/retirement/social-security/) - Claiming strategy analysis
+- [Social Security Optimization](/blog/social-security-optimization) - Claiming strategy analysis
 - [Roth Conversion Strategy](/tax-strategies/roth-conversion-ladder) - Pre-RMD conversion planning
-- [Medicare and IRMAA Planning](/retirement/medicare/) - Healthcare cost optimization
-- [RMD Planning Guide](/retirement/required-minimum-distributions/) - Distribution requirements
-- [Bitcoin in Retirement Portfolios](/blog/crypto-retirement/) - Cryptocurrency allocation
-- [Texas Tax Advantages](/tax-strategies/state/texas/) - State-specific benefits
+- [Medicare and IRMAA Planning](/blog/retirement-healthcare-planning) - Healthcare cost optimization
+- [RMD Planning Guide](/blog/best-tax-strategy-for-retirement) - Distribution requirements
+- [Bitcoin in Retirement Portfolios](/topics/retirement) - Cryptocurrency allocation
+- [Texas Tax Advantages](/topics/tax-strategies) - State-specific benefits

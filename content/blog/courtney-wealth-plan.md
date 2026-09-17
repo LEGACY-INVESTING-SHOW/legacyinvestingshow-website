@@ -453,12 +453,12 @@ If you're ready to implement an educational modeling approach to your 2026 tax y
 
 ## Related Resources
 
-- [Tax Optimization Calculator](/tools/tax-calculator/) - Interactive modeling tool
-- [Retirement Projection Tool](/tools/retirement/) - Long-term wealth modeling
-- [Roth vs. Traditional Analyzer](/tools/roth-analyzer/) - Contribution type comparison
-- [Compounding Calculator](/tools/compounding/) - Time value of money tool
-- [Financial Modeling Basics](/blog/financial-modeling/) - Getting started with modeling
-- [Monte Carlo Simulation Guide](/blog/monte-carlo/) - Advanced probability modeling
+- [Tax Optimization Calculator](/tools/capital-gains-tax-estimate) - Interactive modeling tool
+- [Retirement Projection Tool](/tools) - Long-term wealth modeling
+- [Roth vs. Traditional Analyzer](/tools) - Contribution type comparison
+- [Compounding Calculator](/tools) - Time value of money tool
+- [Financial Modeling Basics](/tools) - Getting started with modeling
+- [Monte Carlo Simulation Guide](/tools) - Advanced probability modeling
 
 ### Additional Educational Resources
 
@@ -489,4 +489,4 @@ Explore these tax optimization strategies to complement your financial modeling 
 - [Tax Loss Harvesting](/tax-strategies/tax-loss-harvesting/) - Offset capital gains and reduce taxable income
 - [Roth Conversion Strategy](/tax-strategies/roth-conversion-ladder) - Strategic timing for Roth conversions
 - [HSA Strategy Guide](/tax-strategies/hsa-strategy/) - Triple tax advantage health savings
-- [Charitable Bunching Strategy](/tax-strategies/charitable-bunching/) - Maximize charitable deductions
+- [Charitable Bunching Strategy](/tax-strategies/bunching-deductions) - Maximize charitable deductions

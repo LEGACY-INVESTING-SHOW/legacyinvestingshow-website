@@ -226,7 +226,7 @@ def generate_blog_markdown(
         "\n## Ready to Build Your Own Wealth Plan?\n\n"
         "Every financial journey is unique. If you want a personalized wealth strategy "
         "tailored to your specific situation, explore the programs at "
-        "[Legacy Investing Show](https://www.legacyinvestingshow.com/programs) "
+        "[Legacy Investing Show](https://www.legacyinvestingshow.com/) "
         "and start building your legacy today.\n"
     )
 

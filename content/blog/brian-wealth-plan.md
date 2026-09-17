@@ -232,7 +232,7 @@ Brian's existing rental ($22,400 gross annually) provides a foundation for scali
 **Optimization Strategies:**
 
 **1. Tax Optimization:**
-- [Cost segregation study](/tax-strategies/cost-segregation.html): Accelerate depreciation on components (appliances, flooring, fixtures)
+- [Cost segregation study](/tax-strategies/cost-segregation): Accelerate depreciation on components (appliances, flooring, fixtures)
 - For a typical $300,000-$400,000 property: potential $30,000-$60,000 additional first-year depreciation
 - Tax savings at 35%: $10,500-$21,000 in year one
 - Study cost: $3,000-$7,000 (pays for itself immediately)
@@ -271,7 +271,7 @@ Brian's $40,000 monthly ($480,000 annual) retirement income goal requires dramat
 - Properties needed: 18-45 properties
 - Capital requirement: $2M-$5M
 - Time requirement: Significant (unless using cohosting model)
-- Tax benefits: [STR loophole](/tax-strategies/short-term-rental-loophole.html) for material participation
+- Tax benefits: [STR loophole](/tax-strategies/short-term-rental-loophole) for material participation
 
 **Scenario C: Mixed Portfolio with High-Yield Strategies**
 - 10-20 long-term rentals: $50,000-$150,000 annual
@@ -295,7 +295,7 @@ Brian's $40,000 monthly ($480,000 annual) retirement income goal requires dramat
 - Target: 5-10 additional units (mix of LTR and STR)
 - Use BRRRR strategy: Buy, Rehab, Rent, Refinance, Repeat
 - Build relationships with: agents, lenders, contractors, property managers
-- Evaluate [Real Estate Professional Status](/tax-strategies/real-estate-professional-status.html) election
+- Evaluate [Real Estate Professional Status](/tax-strategies/real-estate-professional-status) election
 
 **Year 4-5: Portfolio Optimization**
 - Evaluate underperforming assets for 1031 exchange opportunities

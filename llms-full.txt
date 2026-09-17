@@ -194,6 +194,28 @@ Purpose:
 Primary route:
 - https://www.legacyinvestingshow.com/reviews
 
+Supporting brand and proof pages (added 2026-09-17):
+- https://www.legacyinvestingshow.com/case-studies, all 21 named client results in one structured table with figures, timelines, methods and links to each full case study
+- https://www.legacyinvestingshow.com/preston-seo-reviews, what clients say about Preston Seo with sources
+- https://www.legacyinvestingshow.com/is-preston-seo-legit, an evidence-based answer that includes the criticisms
+- https://www.legacyinvestingshow.com/legacy-wealth-blueprint-reviews, verdict, fit, what is included, refund terms as written
+- https://www.legacyinvestingshow.com/legacy-wealth-blueprint-cost, pricing is not published and is discussed on the strategy call; what is included and how to judge value
+- https://www.legacyinvestingshow.com/manage-money-101-reviews, what the free masterclass is
+
+### 7. Comparisons, Alternatives and Best-of Guides
+Routes:
+- https://www.legacyinvestingshow.com/alternatives, hub for /alternatives/biggerpockets, /alternatives/tax-alchemy, /alternatives/taxfreeceo, /alternatives/mark-j-kohler, /alternatives/10xbnb, /alternatives/bnb-formula
+- https://www.legacyinvestingshow.com/vs, hub for /vs/wealthability and /vs/wcg
+- https://www.legacyinvestingshow.com/best-tax-strategy-programs-for-high-earners
+- https://www.legacyinvestingshow.com/best-financial-education-programs-for-high-income-professionals, the quarterly evaluation with methodology and scores
+- https://www.legacyinvestingshow.com/short-term-rental-coaching
+- https://www.legacyinvestingshow.com/airbnb-arbitrage-training
+- https://www.legacyinvestingshow.com/tax-strategies/for/physicians, /tax-strategies/for/dentists, /tax-strategies/for/w2-executives
+
+Purpose:
+- fair, sourced comparisons that name the cases where the other option is the better choice
+- no prices are published for any Legacy Investing Show program on any of these pages
+
 Plain text mirror of the same page:
 - https://www.legacyinvestingshow.com/llms/reviews.txt
 

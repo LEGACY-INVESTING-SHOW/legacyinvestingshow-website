@@ -1,13 +1,39 @@
 ---
 title: Short-Term vs Long-Term Rental ROI for New Investors
 description: >-
-  Compare short-term vs long-term rental ROI with a decision framework that
-  weighs cash flow upside, volatility, regulation, and operator workload.
+  Short-term vs long-term rental ROI for new investors: compare cash flow,
+  income volatility, workload, and control with beach-town and college-town
+  scenarios.
 date: '2026-03-06'
 author: Preston Seo
 category: Airbnb Arbitrage
 image: /assets/images/blog/airbnb-arbitrage-guide.jpg
 featured: false
+faq:
+  - question: Do short-term rentals make more money than long-term rentals?
+    answer: >-
+      Only in the right market. A Florida beach condo at $250 a night and 70%
+      peak occupancy can gross about $5,250 a month in season but fall to
+      $2,000 or less off-season, while a 12-month lease at $2,200 is flat and
+      predictable. Near a college campus, the $1,800-a-month lease usually
+      wins on risk-adjusted return.
+  - question: How many hours a month does each rental strategy take?
+    answer: >-
+      A well-run long-term rental takes roughly 5 to 10 hours a month after
+      setup. A short-term rental takes 15 to 25 hours a month per property, or
+      more if you handle every cleaning, message, and review yourself.
+  - question: What makes short-term rental income volatile?
+    answer: >-
+      Economic downturns, new city regulations, platform fee or policy
+      changes, disasters or pandemics, and rate compression as more investors
+      enter the market. A long-term lease locks in rent for the term.
+  - question: Can a new investor combine both strategies?
+    answer: >-
+      Yes. Some owners rent short-term in peak season and sign leases in slow
+      months, or use a mid-term model with 3 to 6 month business-traveler
+      stays for a mix of stability and higher rates. Hybrids add complexity,
+      so build about six months of expense reserves first.
+modifiedDate: '2026-09-17'
 ---
 Choosing between a short-term rental (think Airbnb or VRBO) and a traditional long-term lease is one of the first big decisions new real estate investors face. Both can build wealth. Both have tradeoffs. But the "right" choice depends entirely on your goals, your market, and how much hands-on involvement you want.
 
@@ -35,7 +61,7 @@ Imagine you own a condo in a popular beach town in Florida. During peak season (
 
 But here's the catch: off-season occupancy drops. In slower months, you might only hit 30% occupancy. Your monthly revenue might fall to $2,000 or less after expenses.
 
-**Long-term rental?** You might secure a 12-month lease at $2,200 per month. No波动. No gaps. Your cash flow is predictable, though lower than the short-term peak.
+**Long-term rental?** You might secure a 12-month lease at $2,200 per month. No fluctuation. No gaps. Your cash flow is predictable, though lower than the short-term peak.
 
 In this scenario, the short-term rental wins on total annual revenue—but only if you're willing to manage the seasonality.
 
@@ -162,4 +188,4 @@ Before you commit to either path, talk to local property managers, research your
 
 If you're serious about building wealth through rental properties, the Legacy Investing Show has you covered. Our programs break down exactly how to evaluate properties, structure deals, and scale your portfolio—whether you choose short-term, long-term, or both.
 
-Explore our [investing programs](/tax-strategies-101) or browse [Airbnb arbitrage success stories](/success-stories.html) to see how other investors are putting these strategies to work.
+Explore our [Airbnb Ascension program](/airbnbascension) or browse [Airbnb arbitrage success stories](/reviews) to see how other investors are putting these strategies to work.

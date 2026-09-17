@@ -654,8 +654,8 @@ The key differentiator is integration—combining Bitcoin's asymmetric upside po
 For more information on Bitcoin and tax strategies, explore these related resources:
 
 - Learn about the [Short-Term Rental Tax Strategy](https://www.legacyinvestingshow.com/tax-strategies/short-term-rental-loophole) for additional tax optimization
-- Discover [Solo 401(k) Strategies](https://www.legacyinvestingshow.com/retirement/solo-401k) for retirement account maximization
-- Understand [Business Structure Tax Benefits](https://www.legacyinvestingshow.com/tax-strategies/business-structures) including LLC partnerships
+- Discover [Solo 401(k) Strategies](https://www.legacyinvestingshow.com/tax-strategies/solo-401k) for retirement account maximization
+- Understand [Business Structure Tax Benefits](https://www.legacyinvestingshow.com/topics/business-structures) including LLC partnerships
 - Explore [Augusta Rule Benefits](https://www.legacyinvestingshow.com/tax-strategies/augusta-rule) for tax-free rental income
 
 *Ready to build your own Bitcoin-focused wealth plan? [Explore Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) and learn how to create a personalized strategy for digital asset accumulation and tax optimization.*

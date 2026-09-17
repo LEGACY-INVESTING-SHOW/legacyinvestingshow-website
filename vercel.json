@@ -538,9 +538,46 @@
           "value": "noindex"
         }
       ]
+    },
+    {
+      "source": "/tools/_next/static/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }
+      ]
+    },
+    {
+      "source": "/assets/wealth-plan-loops/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }
+      ]
     }
   ],
   "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "legacyinvestingshow.com"
+        }
+      ],
+      "destination": "https://www.legacyinvestingshow.com/:path*",
+      "permanent": true
+    },
     {
       "source": "/pricing",
       "destination": "/reviews",
@@ -888,37 +925,37 @@
     },
     {
       "source": "/tools/real-estate-professional-status-hours-tracker",
-      "destination": "/tools",
+      "destination": "/tax-strategies/real-estate-professional-status",
       "permanent": true
     },
     {
       "source": "/tools/cost-segregation-payback-calculator",
-      "destination": "/tools",
+      "destination": "/tools/cost-segregation-savings",
       "permanent": true
     },
     {
       "source": "/tools/irmaa-headroom-roth-conversion-planner",
-      "destination": "/tools",
+      "destination": "/compare/qcd-first-vs-roth-conversion-first-irmaa",
       "permanent": true
     },
     {
       "source": "/tools/qcd-vs-roth-conversion-planner",
-      "destination": "/tools",
+      "destination": "/compare/qcd-first-vs-roth-conversion-first-irmaa",
       "permanent": true
     },
     {
       "source": "/tools/solo-401k-loan-vs-heloc-calculator",
-      "destination": "/tools",
+      "destination": "/compare/solo-401k-loan-vs-heloc-down-payment",
       "permanent": true
     },
     {
       "source": "/tools/installment-sale-tax-cashflow-planner",
-      "destination": "/tools",
+      "destination": "/tax-strategies/installment-sale",
       "permanent": true
     },
     {
       "source": "/tools/backdoor-roth-pro-rata-calculator",
-      "destination": "/tools",
+      "destination": "/tax-strategies/backdoor-roth-ira",
       "permanent": true
     },
     {
@@ -993,7 +1030,7 @@
     },
     {
       "source": "/blog/dustin-case-study",
-      "destination": "/reviews",
+      "destination": "/blog/dustin-wealth-plan",
       "permanent": true
     },
     {
@@ -1304,6 +1341,36 @@
     {
       "source": "/success-stories.html",
       "destination": "/reviews",
+      "permanent": true
+    },
+    {
+      "source": "/retirement/solo-401k",
+      "destination": "/tax-strategies/solo-401k",
+      "permanent": true
+    },
+    {
+      "source": "/tax-strategies/business-structures",
+      "destination": "/topics/business-structures",
+      "permanent": true
+    },
+    {
+      "source": "/blog/casey-wealth-strategy-snapshot",
+      "destination": "/blog/casey-wealth-plan",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tax-alchemy-alternatives",
+      "destination": "/alternatives/tax-alchemy",
+      "permanent": true
+    },
+    {
+      "source": "/blog/taxfreeceo-alternatives",
+      "destination": "/alternatives/taxfreeceo",
+      "permanent": true
+    },
+    {
+      "source": "/blog/best-tax-strategy-programs-w2-earners-over-250k",
+      "destination": "/best-tax-strategy-programs-for-high-earners",
       "permanent": true
     }
   ],

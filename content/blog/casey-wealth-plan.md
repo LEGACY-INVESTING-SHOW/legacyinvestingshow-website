@@ -8,8 +8,8 @@ author: Preston Seo
 authorTitle: 'Founder, Legacy Investing Show'
 authorCredentials: '2,000+ students trained, $10M+ student revenue generated'
 category: Wealth Plan
-slug: casey-wealth-strategy-snapshot
-canonical: https://www.legacyinvestingshow.com/blog/casey-wealth-strategy-snapshot
+slug: casey-wealth-plan
+canonical: https://www.legacyinvestingshow.com/blog/casey-wealth-plan
 seo:
   primaryKeyword: wealth strategy snapshot
   secondaryKeywords:

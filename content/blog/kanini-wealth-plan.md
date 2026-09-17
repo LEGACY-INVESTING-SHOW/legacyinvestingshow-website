@@ -434,4 +434,4 @@ As Kanini progresses to wealth building, these tax strategies will accelerate th
 - [Student Loan Interest Deduction](/tax-strategies/) - Maximize education tax benefits
 - [HSA Strategy Guide](/tax-strategies/hsa-strategy/) - Triple tax advantage for healthcare
 - [Retirement Contribution Tax Benefits](/tax-strategies/) - Reduce taxable income while saving
-- [Side Income Tax Optimization](/tax-strategies/self-employed/) - Business deductions for extra income
+- [Side Income Tax Optimization](/tax-strategies/for/self-employed) - Business deductions for extra income

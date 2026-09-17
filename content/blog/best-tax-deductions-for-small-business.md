@@ -446,7 +446,7 @@ In those cases, simplify to a cleaner baseline and defer aggressive moves until 
 - How should this sync with my retirement and distribution strategy?
 - Which items should be postponed until records are cleaner to avoid backtracking?
 
-This article is educational and practical, designed for owners making money decisions. For execution support, many owners also review the [blog resources](/blog/) and then move into operational tax planning with their tax team. If you already publish in related areas, compare your current decisions with the broader [individual and retirement topics](/blog/best-tax-deduction-vs-retirement-contributions) to avoid category overlap.
+This article is educational and practical, designed for owners making money decisions. For execution support, many owners also review the [blog resources](/blog/) and then move into operational tax planning with their tax team. If you already publish in related areas, compare your current decisions with the broader [individual and retirement topics](/blog/tax-deduction-vs-retirement-contributions) to avoid category overlap.
 
 ## Related Resources
 - [Tax Strategies Hub](/topics/tax-strategies)

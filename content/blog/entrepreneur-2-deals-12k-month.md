@@ -128,8 +128,8 @@ faq:
   - question: Is Legacy Investing Show worth it?
     answer: >-
       Michael, a successful entrepreneur who sold 5 companies, said he would
-      have paid $25,000 for the program because the blueprint saved him hundreds
-      of thousands in trial-and-error costs. He praised Preston's authenticity
+      have paid far more for the program because the blueprint saved him
+      hundreds of thousands in trial-and-error costs. He praised Preston's authenticity
       and the ability to re-watch training videos to catch details.
   - question: What's the difference between Airbnb arbitrage and buying property?
     answer: >-
@@ -448,7 +448,7 @@ Each call improves your pitch. Like AI that learns faster with more data, salesp
 
 **What Michael Learned**: Michael has done Tony Robbins events and various self-help programs. His conclusion? There's no better self-help than actually helping yourself through action and proper training. The Legacy Investing Show program cost a nominal amount compared to what trial-and-error learning would have cost.
 
-> "How much would I ever have to pay or learn or go through trial and error to get to that point? For me to do what you gave me for your nominal amount would have cost me hundreds of thousands of dollars in headaches and mistakes. I would have paid twenty-five thousand dollars for it."
+> "How much would I ever have to pay or learn or go through trial and error to get to that point? For me to do what you gave me for your nominal amount would have cost me hundreds of thousands of dollars in headaches and mistakes. I would have paid far more for it."
 
 **Why This Matters**: Even with substantial resources, Michael recognized that buying a blueprint beats building one from scratch. The program provides scripts, systems, and community support that accelerate results. For someone without Michael's resources, this shortcut is even more valuable.
 
@@ -570,7 +570,7 @@ The arbitrage model allows testing markets with limited capital before committin
 
 **Ready to build your own Airbnb arbitrage business like Michael?**
 
-[Learn more about Legacy Investing Show](/blog/)
+[Learn more about Legacy Investing Show](/blog)
 
 ### Related Success Stories
 
@@ -600,7 +600,7 @@ The arbitrage model allows testing markets with limited capital before committin
 
 Preston Seo created Legacy Investing Show to teach the exact systems that scaled his business, providing the mentorship, scripts, and community that accelerate success.
 
-[blog resources](/blog/) | [Watch free training](/tax-strategies-101)
+[blog resources](/blog) | [Watch free training](/tax-strategies-101)
 
 ---
 
