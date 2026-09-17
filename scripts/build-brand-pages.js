@@ -672,7 +672,7 @@ ${GOOGLE_SITE_VERIFICATIONS.map((code) => `    <meta name="google-site-verificat
                         </ol>
                     </nav>
                     <h1 class="opener__title">${esc(h1)}</h1>
-                    <p class="opener__key">${inline(fill(page.verdict[0], ph))}</p>
+                    <p class="opener__key">${inline(fill(page.key || page.verdict[0], ph))}</p>
                     <p class="opener__lede">${inline(fill(page.lede, ph))}</p>
                     <p class="guide-opener__meta">Published by Legacy Investing Show. Last updated ${esc(ph.lastUpdated)}. Trustpilot figures captured ${esc(ph.capturedDate)}. ${esc(shared.resultsDisclaimer)}</p>
                 </div>

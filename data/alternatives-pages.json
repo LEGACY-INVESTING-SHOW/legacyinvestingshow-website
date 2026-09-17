@@ -5,7 +5,7 @@
     "competitor": "BiggerPockets",
     "competitorUrl": "https://www.biggerpockets.com/",
     "title": "BiggerPockets Alternatives for Tax-First Investors (2026)",
-    "metaDescription": "BiggerPockets alternatives for real estate investors who want tax-first planning, STR coaching, or a CPA relationship. Who each option fits, and when to stay put.",
+    "metaDescription": "BiggerPockets alternatives for investors who want tax-first planning, STR coaching, or a CPA who works with landlords. Who each fits, and when to stay put.",
     "h1": "BiggerPockets alternatives for investors who want tax strategy, not only deal talk",
     "summary": "For investors who have outgrown forum answers and want tax-first planning, STR coaching, or a CPA who works with landlords.",
     "updated": "2026-09-17",
@@ -151,17 +151,77 @@
     ],
     "comparisonIntro": "The columns are the things people actually ask about: who answers you, whether anyone files, whether real estate is the whole program or one piece, and what the platform expects you to do yourself.",
     "comparisonTable": {
-      "columns": ["Criteria", "BiggerPockets", "Legacy Wealth Blueprint", "Real estate CPA firm", "STR coaching (Airbnb Ascension)"],
+      "columns": [
+        "Criteria",
+        "BiggerPockets",
+        "Legacy Wealth Blueprint",
+        "Real estate CPA firm",
+        "STR coaching (Airbnb Ascension)"
+      ],
       "rows": [
-        ["Primary focus", "Real estate investing community and education", "Tax, debt, income, investing, and protection in one plan", "Tax preparation and planning for investors", "Setting up and running one short-term rental"],
-        ["Who answers your questions", "Other members on the forums; hosts on the podcasts", "A dedicated 1-on-1 guide, weekly live calls, and a community", "The CPA or their staff, by appointment", "A dedicated 1-on-1 STR coach, plus weekly calls"],
-        ["Personalised written plan", "No", "Yes: a 12-month Wealth Strategy Snapshot", "Sometimes, as a separate planning engagement", "Yes: a property-specific profitability report and a 6-month plan"],
-        ["Files your tax return", "No", "No: you get a CPA Implementation Brief for your own CPA", "Yes", "No"],
-        ["Real estate role", "The whole platform", "One pillar of five", "The whole practice", "One property model (arbitrage)"],
-        ["Tax strategy depth", "Books and forum threads", "Entity structure, deductions, tax-advantaged accounts, W-2 and business strategies", "Deep, specific to your return", "Business setup, credit, and deductions session; no depreciation because you lease"],
-        ["Accountability", "None built in", "Bi-weekly check-ins with your guide", "Deadline-driven", "Weekly progress tracking"],
-        ["Format", "Forums, podcasts, books, calculators, bootcamps", "100+ videos, live calls, community, 1-on-1 guide, AI advisor", "Engagement letter and meetings", "Curriculum, coach, community, templates"],
-        ["Best when", "You are learning the models or want deal feedback", "You want the whole money picture coordinated", "You own property and want it filed right", "You want cash flow from one STR without buying"]
+        [
+          "Primary focus",
+          "Real estate investing community and education",
+          "Tax, debt, income, investing, and protection in one plan",
+          "Tax preparation and planning for investors",
+          "Setting up and running one short-term rental"
+        ],
+        [
+          "Who answers your questions",
+          "Other members on the forums; hosts on the podcasts",
+          "A dedicated 1-on-1 guide, weekly live calls, and a community",
+          "The CPA or their staff, by appointment",
+          "A dedicated 1-on-1 STR coach, plus weekly calls"
+        ],
+        [
+          "Personalised written plan",
+          "No",
+          "Yes: a 12-month Wealth Strategy Snapshot",
+          "Sometimes, as a separate planning engagement",
+          "Yes: a property-specific profitability report and a 6-month plan"
+        ],
+        [
+          "Files your tax return",
+          "No",
+          "No: you get a CPA Implementation Brief for your own CPA",
+          "Yes",
+          "No"
+        ],
+        [
+          "Real estate role",
+          "The whole platform",
+          "One pillar of five",
+          "The whole practice",
+          "One property model (arbitrage)"
+        ],
+        [
+          "Tax strategy depth",
+          "Books and forum threads",
+          "Entity structure, deductions, tax-advantaged accounts, W-2 and business strategies",
+          "Deep, specific to your return",
+          "Business setup, credit, and deductions session; no depreciation because you lease"
+        ],
+        [
+          "Accountability",
+          "None built in",
+          "Bi-weekly check-ins with your guide",
+          "Deadline-driven",
+          "Weekly progress tracking"
+        ],
+        [
+          "Format",
+          "Forums, podcasts, books, calculators, bootcamps",
+          "100+ videos, live calls, community, 1-on-1 guide, AI advisor",
+          "Engagement letter and meetings",
+          "Curriculum, coach, community, templates"
+        ],
+        [
+          "Best when",
+          "You are learning the models or want deal feedback",
+          "You want the whole money picture coordinated",
+          "You own property and want it filed right",
+          "You want cash flow from one STR without buying"
+        ]
       ]
     },
     "scenariosIntro": "These are the situations that come up most often on our strategy calls when someone mentions BiggerPockets. The pick is a starting point, not a verdict on your facts.",
@@ -235,12 +295,30 @@
       }
     ],
     "related": [
-      { "label": "Short-Term Rental Loophole", "href": "/tax-strategies/short-term-rental-loophole" },
-      { "label": "Cost Segregation", "href": "/tax-strategies/cost-segregation" },
-      { "label": "Real Estate Professional Status (REPS)", "href": "/tax-strategies/real-estate-professional-status" },
-      { "label": "REPS vs the STR Loophole", "href": "/tax-strategies/reps-vs-str-loophole" },
-      { "label": "Best Real Estate Investing Courses for People With a Full-Time Job", "href": "/blog/best-real-estate-investing-courses-full-time-job" },
-      { "label": "Free calculators", "href": "/tools" }
+      {
+        "label": "Short-Term Rental Loophole",
+        "href": "/tax-strategies/short-term-rental-loophole"
+      },
+      {
+        "label": "Cost Segregation",
+        "href": "/tax-strategies/cost-segregation"
+      },
+      {
+        "label": "Real Estate Professional Status (REPS)",
+        "href": "/tax-strategies/real-estate-professional-status"
+      },
+      {
+        "label": "REPS vs the STR Loophole",
+        "href": "/tax-strategies/reps-vs-str-loophole"
+      },
+      {
+        "label": "Best Real Estate Investing Courses for People With a Full-Time Job",
+        "href": "/blog/best-real-estate-investing-courses-full-time-job"
+      },
+      {
+        "label": "Free calculators",
+        "href": "/tools"
+      }
     ]
   },
   {
@@ -248,14 +326,14 @@
     "slug": "tax-alchemy",
     "competitor": "Tax Alchemy",
     "competitorUrl": "https://taxalchemy.com/",
-    "title": "Tax Alchemy Alternatives: 6 Options Compared (2026)",
-    "metaDescription": "Tax Alchemy alternatives for business owners and investors: Legacy Wealth Blueprint, WealthAbility, Mark J. Kohler, a fee-only planner, AE Tax, and DIY. Who fits what.",
-    "h1": "Tax Alchemy alternatives: who fits each option, and when Karlton Dennis is the right call",
-    "summary": "Six options for people who priced a done-for-you tax firm and want to know what else exists, from coached plans to fee-only planners to doing it yourself.",
+    "title": "Tax Alchemy Alternatives: 10 Options Compared (2026)",
+    "metaDescription": "Tax Alchemy alternatives for owners and investors: Legacy Wealth Blueprint, Tax Strategy Accelerator, WealthAbility, Mark J. Kohler, Anderson, fee-only planner.",
+    "h1": "Tax Alchemy alternatives: ten options, who fits each, and when Karlton Dennis is the right call",
+    "summary": "Ten options for people who priced a done-for-you tax firm and want to know what else exists, from memberships and coached plans to fee-only planners and doing it yourself.",
     "updated": "2026-09-17",
     "verdict": [
       "Tax Alchemy is a done-for-you tax planning firm. If you want a team to build the plan, set up the entities, run the cost segregation, and prepare the return, and you are comfortable being quoted on a call, it is a legitimate way to hand the whole job off. Most people searching for an alternative are not rejecting the firm; they are discovering that they wanted something cheaper, more educational, more licensed, or more focused on the W-2 side of their life.",
-      "Sort by what you want to hand off. Want the labour done: compare Tax Alchemy with a fee-only planner and a firm like AE Tax, and ask each who holds the licence. Want to learn and be coached through a plan that covers more than tax: [Legacy Wealth Blueprint](/legacy-wealth-blueprint) or Mark J. Kohler's business-owner membership. Want a vetted advisor matched to you: WealthAbility. We publish this page and offer the Blueprint, and our earlier three-way comparison, [Karlton Dennis vs Mark Kohler vs Legacy Wealth Blueprint](/blog/karlton-dennis-vs-mark-kohler-vs-legacy-wealth-blueprint), reaches the same conclusions."
+      "Sort by what you want to hand off. Want the labour done: compare Tax Alchemy with Tax Goddess, a fee-only planner, and a firm like AE Tax, and ask each who holds the licence. Want to learn first: Tax Strategy Accelerator from the same founder, or a fixed-scope course. Want ongoing answers for a multi-entity setup: Anderson Platinum. Want a licensed CPA and attorney teaching: Mark J. Kohler. Want a vetted advisor matched to you: WealthAbility. Want to learn and be coached through a written plan that covers more than tax: [Legacy Wealth Blueprint](/legacy-wealth-blueprint). We publish this page and offer the Blueprint, and our earlier three-way comparison, [Karlton Dennis vs Mark Kohler vs Legacy Wealth Blueprint](/blog/karlton-dennis-vs-mark-kohler-vs-legacy-wealth-blueprint), reaches the same conclusions."
     ],
     "competitorProfile": {
       "what": "Two things share the Karlton Dennis name, and people mix them up. Tax Alchemy is the firm: its site lists Karlton Dennis as CEO and describes tax strategy analysis, entity structuring, implementation help, real estate tax planning, cost segregation, and 1031 exchange work, with tax preparation offered to advisory clients. Tax Strategy Accelerator is the education membership from the same founder: video courses, a private community, recordings of weekly client calls, and AMA sessions with tax advisors. Karlton Dennis built the audience on YouTube, and his public bio describes him as a tax strategist without listing a CPA or EA licence; Tax Alchemy describes its team as licensed tax strategists.",
@@ -284,7 +362,8 @@
       "They are W-2 earners, and every strategy in the videos assumes a business or a rental they do not yet have.",
       "They want coaching on the whole money picture, not only the tax return: debt, accounts, protection, and the order to do things in.",
       "They want a CPA and an attorney in the room, and would rather buy from a licensed professional directly.",
-      "They tried to hire a firm and wanted the plan explained to them well enough to run it with their own CPA next year."
+      "They tried to hire a firm and wanted the plan explained to them well enough to run it with their own CPA next year.",
+      "They already own several entities and want ongoing legal and tax answers on demand, which is a membership job rather than a firm job."
     ],
     "alternatives": [
       {
@@ -305,6 +384,22 @@
           "Pricing is not published and is discussed on the strategy call; that is a tradeoff for anyone who wants a number up front"
         ],
         "url": "/legacy-wealth-blueprint"
+      },
+      {
+        "name": "Tax Strategy Accelerator (Karlton Dennis)",
+        "type": "course",
+        "bestFor": "Self-starters who want a large video library and a community before they hire anyone.",
+        "strengths": [
+          "Video courses, a private community, recordings of the weekly calls with the firm's private client group, and AMA sessions with tax advisors",
+          "The same founder and the same thinking as Tax Alchemy, at a membership commitment rather than a firm engagement",
+          "A fair way to learn what a business or a rental would actually change on your return before you commit to either"
+        ],
+        "tradeoffs": [
+          "A membership does not know your name; nobody checks whether you implemented anything",
+          "It teaches; it does not file, structure entities, or run cost segregation for you",
+          "If you have only a W-2 and no plans to change that, the library will be mostly aspirational"
+        ],
+        "url": "https://www.taxstrategyaccelerator.com/"
       },
       {
         "name": "WealthAbility (Tom Wheelwright, CPA)",
@@ -339,6 +434,37 @@
         "url": "https://markjkohler.com/"
       },
       {
+        "name": "Anderson Business Advisors Platinum",
+        "type": "community",
+        "bestFor": "Investors with several entities who want ongoing legal and tax answers on demand rather than a course or a one-off plan.",
+        "strengths": [
+          "A membership built around questions: strategy sessions, document review, a forms library, and a weekday Q&A room",
+          "Legal, tax, and asset protection under one brand, which suits people with multiple LLCs and rentals",
+          "A published support schedule, so you know when a person is available"
+        ],
+        "tradeoffs": [
+          "Answers, not a plan; you bring the situation and get a response, which only works if you already know your direction",
+          "Heavier on entity and asset protection than most W-2 earners need",
+          "An enrollment plus ongoing membership model; confirm the current terms and what stops when you leave"
+        ],
+        "url": "https://andersonadvisors.com/platinum-membership/"
+      },
+      {
+        "name": "Tax Goddess",
+        "type": "firm",
+        "bestFor": "High-revenue business owners who want a firm to run strategic tax planning as an ongoing engagement.",
+        "strengths": [
+          "A done-for-you firm model with 1-to-1 engagement, aimed at owners who would rather pay for labour than a classroom",
+          "Describes its clients in revenue tiers, which tells you quickly whether you are the intended buyer"
+        ],
+        "tradeoffs": [
+          "Priced on application, so expect a call before you know the cost",
+          "Built for businesses with meaningful revenue; a W-2 earner or a new side business is not the target",
+          "A firm, not a coaching program: nothing on debt, income, or protection outside the tax engagement"
+        ],
+        "url": "https://taxgoddess.com/"
+      },
+      {
         "name": "A fee-only tax planner (CPA, EA, or CFP)",
         "type": "firm",
         "bestFor": "Someone with a clear question who wants a licensed professional paid a flat fee for a planning engagement, without a program wrapped around it.",
@@ -369,6 +495,22 @@
         "url": ""
       },
       {
+        "name": "Navi Maraj CPA small business tax course",
+        "type": "course",
+        "bestFor": "Owners who want the S-corp and deduction basics as a fixed-scope, self-paced course with no calls.",
+        "strengths": [
+          "A self-paced course with modules and software walkthroughs, taught by a CPA",
+          "Fixed scope, so you know exactly what you are buying before you buy it",
+          "Covers the questions new owners actually have: entity choice, reasonable salary, bookkeeping basics"
+        ],
+        "tradeoffs": [
+          "No live support and no community to speak of; it is a course",
+          "Small-business focus; real estate and W-2 strategies are not the point",
+          "You still need a CPA to file and a plan to know what to do after the course ends"
+        ],
+        "url": "https://navimarajcpa.teachable.com/p/smallbusinesstaxessale"
+      },
+      {
         "name": "Do it yourself with free content and your current CPA",
         "type": "free",
         "bestFor": "W-2 earners with no business or property yet, and owners whose books are not clean enough for strategy to matter.",
@@ -387,16 +529,79 @@
     ],
     "comparisonIntro": "Read across the row that matters most to you. The rows people argue about most are who teaches, who files, and what is delivered in writing.",
     "comparisonTable": {
-      "columns": ["Criteria", "Tax Alchemy", "Legacy Wealth Blueprint", "WealthAbility", "Mark J. Kohler", "Fee-only planner"],
+      "columns": [
+        "Criteria",
+        "Tax Alchemy",
+        "Legacy Wealth Blueprint",
+        "WealthAbility",
+        "Mark J. Kohler",
+        "Fee-only planner"
+      ],
       "rows": [
-        ["What it is", "Done-for-you tax planning firm", "Coached wealth program with a written plan", "Tax education plus a matched advisor network", "Business-owner membership plus law and IRA firms", "One-off planning engagement"],
-        ["Who teaches or advises", "The firm's team; founder is the public face", "Preston Seo's team, plus a partner network", "Advisors trained in Tom Wheelwright's method", "Mark J. Kohler, CPA and attorney, on live calls", "The professional you hire"],
-        ["Licensed professional included", "Ask which team member and which state", "Through the partner network, not the coaches", "Yes, via the matched advisor firm", "Yes", "Yes"],
-        ["Files your return", "For advisory clients", "No; CPA Implementation Brief for your own CPA", "Through the advisor firm", "Through his firms, quoted separately", "Sometimes"],
-        ["Scope beyond tax", "Limited", "Debt, income, investing, protection", "Wealth strategy", "Entity, legal, self-directed IRA", "Whatever you engage for"],
-        ["Personal contact", "1-to-1 advisory", "1-on-1 guide, bi-weekly check-ins, weekly calls", "Advisor meetings", "Biweekly group masterminds, forum", "Meetings by appointment"],
-        ["Written deliverable", "Tax plan", "12-month Wealth Strategy Snapshot, prior-year diagnostic, CPA brief", "Depends on advisor", "Not listed", "Planning memo"],
-        ["Best for", "Handing the whole job off", "One plan across the whole money picture", "Finding a proactive advisor", "Business owners who want law and tax together", "A specific question answered by a licensed pro"]
+        [
+          "What it is",
+          "Done-for-you tax planning firm",
+          "Coached wealth program with a written plan",
+          "Tax education plus a matched advisor network",
+          "Business-owner membership plus law and IRA firms",
+          "One-off planning engagement"
+        ],
+        [
+          "Who teaches or advises",
+          "The firm's team; founder is the public face",
+          "Preston Seo's team, plus a partner network",
+          "Advisors trained in Tom Wheelwright's method",
+          "Mark J. Kohler, CPA and attorney, on live calls",
+          "The professional you hire"
+        ],
+        [
+          "Licensed professional included",
+          "Ask which team member and which state",
+          "Through the partner network, not the coaches",
+          "Yes, via the matched advisor firm",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "Files your return",
+          "For advisory clients",
+          "No; CPA Implementation Brief for your own CPA",
+          "Through the advisor firm",
+          "Through his firms, quoted separately",
+          "Sometimes"
+        ],
+        [
+          "Scope beyond tax",
+          "Limited",
+          "Debt, income, investing, protection",
+          "Wealth strategy",
+          "Entity, legal, self-directed IRA",
+          "Whatever you engage for"
+        ],
+        [
+          "Personal contact",
+          "1-to-1 advisory",
+          "1-on-1 guide, bi-weekly check-ins, weekly calls",
+          "Advisor meetings",
+          "Biweekly group masterminds, forum",
+          "Meetings by appointment"
+        ],
+        [
+          "Written deliverable",
+          "Tax plan",
+          "12-month Wealth Strategy Snapshot, prior-year diagnostic, CPA brief",
+          "Depends on advisor",
+          "Not listed",
+          "Planning memo"
+        ],
+        [
+          "Best for",
+          "Handing the whole job off",
+          "One plan across the whole money picture",
+          "Finding a proactive advisor",
+          "Business owners who want law and tax together",
+          "A specific question answered by a licensed pro"
+        ]
       ]
     },
     "scenarios": [
@@ -434,11 +639,11 @@
       "If you want the work done for you, the Blueprint is the wrong buy and Tax Alchemy or a fee-only planner is the right one. If your business is large enough that entity restructuring, cost segregation, and 1031 work are the whole agenda, a real estate tax specialist or a firm will go deeper on those specific moves. If you want a cheap video library and nothing else, Tax Strategy Accelerator does that job well. If paying would come from an emergency fund or a card you cannot clear, clear the debt first. And if you want a number before a call, we do not publish one; pricing is discussed on the strategy call."
     ],
     "howToDecide": [
-      "Decide whether you are buying knowledge, labour, or a plan with coaching. Tax Alchemy sells labour. Tax Strategy Accelerator sells knowledge. Legacy Wealth Blueprint and Business Owner HQ sell a coached plan.",
-      "Check what you own. Entity strategies need a business. Depreciation needs property. If you have only a W-2, start with the accounts and read the [best tax deductions for high earners](/blog/best-tax-deductions-for-high-income-earners) before you pay anyone.",
+      "Decide whether you are buying knowledge, labour, or a coached plan. Tax Alchemy, Tax Goddess, and AE Tax sell labour. Tax Strategy Accelerator and the Navi Maraj course sell knowledge. Legacy Wealth Blueprint and Business Owner HQ sell a coached plan. Anderson Platinum sells answers on demand.",
+      "Check what you own. Entity strategies need a business. Depreciation needs property. If you have only a W-2, a program cannot invent deductions for you; it can only help you build the thing that creates them. Start with the accounts and the [high-earner deductions guide](/blog/best-tax-deductions-for-high-income-earners).",
+      "Decide whether you need answers or a plan. Anderson Platinum and Business Owner HQ are built for questions: bring a situation, get an answer. A written plan is someone looking at the whole picture once and telling you the order of operations.",
       "Ask every seller who holds the licence, in which state, and whether that person will work on your file. Write the answer down.",
-      "Ask what is delivered in writing and what happens when the term ends. A plan you can hand to your CPA outlives the engagement; a call does not.",
-      "Get two quotes for any firm engagement. A second quote is the only reliable way to know whether the first was fair."
+      "Get the total in writing before the call: full price, payment terms, refund window, and what happens when the term ends. If the number only appears after a long pitch, that is information too. Then get a second quote for any firm engagement."
     ],
     "faqs": [
       {
@@ -450,8 +655,20 @@
         "a": "His public bio describes him as a tax strategist and does not list a CPA or EA licence. Tax Alchemy describes its team as licensed tax strategists. If licensure matters to you, ask which person on the team holds the licence and in which state, and whether that person works on your file."
       },
       {
+        "q": "Do I need a business or rental property for these programs to help?",
+        "a": "For most of the strategies they teach, yes. Entity planning needs a business and depreciation needs property. A W-2 earner with neither should max the retirement accounts and the HSA first, then decide whether to build a business or buy property. Legacy Wealth Blueprint treats that decision as part of a wider plan; a firm engagement assumes you already made it."
+      },
+      {
         "q": "What is the best Tax Alchemy alternative for a W-2 earner?",
         "a": "None of the firms can create deductions for someone with no business and no property. Start with retirement accounts and an HSA, then decide whether to build a business or buy property. Legacy Wealth Blueprint is built for optimising the income you already have and treats that decision as part of a wider plan, which is why it tends to fit W-2 earners better than a firm engagement."
+      },
+      {
+        "q": "What is the cheapest real alternative to Tax Alchemy?",
+        "a": "Free content and your current CPA, then the education membership from the same founder, then a fixed-scope self-paced course such as Navi Maraj's. None of those does the work for you; they are cheap because you do the work. We do not quote prices on this page because they change; check each seller's own site."
+      },
+      {
+        "q": "Does any program on this list file my tax return?",
+        "a": "Tax Alchemy prepares returns for its advisory clients. Tax Goddess and a fee-only planner may, depending on the engagement. Mark J. Kohler's firms provide professional services, quoted separately. Anderson Platinum is a membership, not a preparer. Legacy Wealth Blueprint does not file; you get a CPA Implementation Brief for your own CPA."
       },
       {
         "q": "Which alternative includes a licensed CPA or attorney?",
@@ -462,34 +679,52 @@
         "a": "No. It teaches when those strategies apply and how to prepare for them, and the partner network includes a tax strategist, but the studies and the exchange work are done by the specialists you hire. Tax Alchemy lists that work as part of its firm offering, which is a real advantage if that is your main need."
       },
       {
-        "q": "How much does Legacy Wealth Blueprint cost compared with Tax Alchemy?",
-        "a": "We do not publish pricing for the Blueprint; it depends on your situation and is discussed on the strategy call. Tax Alchemy quotes on a call as well. Compare what is delivered rather than the headline number: who answers you, whether anyone files, and what you hold in writing when the term ends."
+        "q": "How do I check the real cost before I buy?",
+        "a": "Find the price on the seller's own page, not on a review site. Ask what happens at the end of the term, who answers your questions, whether filing is included, and what the refund policy is. Ask for all of it in one email before the call. For Legacy Wealth Blueprint, pricing is discussed on the strategy call rather than published, so ask the same questions there."
       }
     ],
     "related": [
-      { "label": "Karlton Dennis vs Mark Kohler vs Legacy Wealth Blueprint", "href": "/blog/karlton-dennis-vs-mark-kohler-vs-legacy-wealth-blueprint" },
-      { "label": "Tax Alchemy Alternatives: 7 Programs Compared (blog)", "href": "/blog/tax-alchemy-alternatives" },
-      { "label": "Best Tax Strategy Programs for W-2 Earners Over 250K", "href": "/blog/best-tax-strategy-programs-w2-earners-over-250k" },
-      { "label": "S-Corp Tax Strategy", "href": "/tax-strategies/s-corp-strategy" },
-      { "label": "Cost Segregation", "href": "/tax-strategies/cost-segregation" },
-      { "label": "Mark J. Kohler alternatives", "href": "/alternatives/mark-j-kohler" }
+      {
+        "label": "Karlton Dennis vs Mark Kohler vs Legacy Wealth Blueprint",
+        "href": "/blog/karlton-dennis-vs-mark-kohler-vs-legacy-wealth-blueprint"
+      },
+      {
+        "label": "Best tax strategy programs for high earners",
+        "href": "/best-tax-strategy-programs-for-high-earners"
+      },
+      {
+        "label": "S-Corp Tax Strategy",
+        "href": "/tax-strategies/s-corp-strategy"
+      },
+      {
+        "label": "Cost Segregation",
+        "href": "/tax-strategies/cost-segregation"
+      },
+      {
+        "label": "Best Tax Deductions for High Income Earners",
+        "href": "/blog/best-tax-deductions-for-high-income-earners"
+      },
+      {
+        "label": "Mark J. Kohler alternatives",
+        "href": "/alternatives/mark-j-kohler"
+      }
     ]
   },
   {
     "kind": "alternatives",
     "slug": "taxfreeceo",
     "competitor": "TaxFreeCEO",
-    "title": "TaxFreeCEO Alternatives: 5 Options Compared (2026)",
-    "metaDescription": "TaxFreeCEO alternatives for business owners and high earners: Legacy Wealth Blueprint, Tax Alchemy, WealthAbility, WCG, or a proactive local CPA. Which fits which situation.",
-    "h1": "TaxFreeCEO alternatives: five options for business owners and high earners who want a real tax plan",
-    "summary": "Five options for people who found TaxFreeCEO and want to compare it with coached plans, done-for-you firms, and a proactive CPA before buying anything.",
+    "title": "TaxFreeCEO Alternatives: 11 Options Compared (2026)",
+    "metaDescription": "TaxFreeCEO alternatives for business owners and high earners: Legacy Wealth Blueprint, Tax Alchemy, WealthAbility, WCG, Anderson, Kohler, or a proactive CPA.",
+    "h1": "TaxFreeCEO alternatives: eleven options for business owners and high earners who want a real tax plan",
+    "summary": "Eleven options for people who found TaxFreeCEO and want to compare it with coached plans, memberships, done-for-you firms, and a proactive CPA before buying anything.",
     "updated": "2026-09-17",
     "verdict": [
       "TaxFreeCEO is a tax-planning education brand aimed at business owners. We can describe it only in general terms: when we last checked, the site did not load for us, and the public footprint is a book of the same name and social content. If you are considering it, verify the current offering, the format, who teaches, and the terms directly before you pay. That is not a criticism; it is the same check we would tell you to run on any program, including ours.",
-      "The alternatives split by what you want. A coached plan that covers W-2 income and real estate as well as business: [Legacy Wealth Blueprint](/legacy-wealth-blueprint), which we publish and offer. A firm to build and implement the plan: Tax Alchemy. A matched, proactive advisor: WealthAbility. A CPA firm with deep public writing on S corporations and rentals: WCG. And the option people skip because it is not exciting: a local CPA who actually does proactive planning."
+      "The alternatives split by what you want. A coached plan that covers W-2 income and real estate as well as business: [Legacy Wealth Blueprint](/legacy-wealth-blueprint), which we publish and offer. A cheap library to learn from first: Tax Strategy Accelerator, or a fixed-scope course. Live time with a licensed CPA and attorney: Mark J. Kohler's Business Owner HQ. Ongoing answers for a multi-entity setup: Anderson Platinum. A firm to build and implement the plan: Tax Alchemy or Tax Goddess. A matched, proactive advisor: WealthAbility. A CPA firm with deep public writing on S corporations and rentals: WCG. Clean books before any of it: LYFE Accounting. And the option people skip because it is not exciting: a local CPA who actually does proactive planning."
     ],
     "competitorProfile": {
-      "what": "TaxFreeCEO markets tax-planning education and coaching to business owners and high earners. The brand is sold under the name of Brandon A. Madden, MBA, EA, and shares its name with his book. Beyond that, we will not describe pages we could not read: when we tried to open the site in September 2026 it did not load, so treat every detail about current format, community, and support as something to confirm with them directly.",
+      "what": "TaxFreeCEO markets tax-planning education and coaching to business owners and high earners. The brand is sold under the name of Brandon A. Madden, MBA, EA, and shares its name with his book. Beyond that, we will not describe pages we could not read: when we tried to open the site in September 2026 it did not load, so treat every detail about current format, community, and support as something to confirm with them directly. The book's title promises a large percentage cut in your tax bill. Treat that as a marketing claim, not a planning number: what you can actually cut depends on whether you have a business, whether you own property, and which state you live in.",
       "format": "As far as public listings show, a course and community built around the founder's system. Ask for the current syllabus, the live-call schedule, who answers questions, and whether any licensed professional works on your file.",
       "knownFor": [
         "A book and social content on reducing tax for business owners by building the business around the tax code",
@@ -512,7 +747,7 @@
       "They own or want to own real estate and want the [STR loophole](/tax-strategies/short-term-rental-loophole), [cost segregation](/tax-strategies/cost-segregation), and REPS covered properly, not as an afterthought.",
       "They want a licensed professional accountable for the advice, or a firm that files.",
       "They want someone to check in with them, not only a library and a group.",
-      "They have already read the [TaxFreeCEO alternatives post](/blog/taxfreeceo-alternatives) and want the shorter decision version."
+      "Their books are a mess and they suspect, correctly, that no strategy program works on top of bad records."
     ],
     "alternatives": [
       {
@@ -534,6 +769,70 @@
         "url": "/legacy-wealth-blueprint"
       },
       {
+        "name": "Tax Strategy Accelerator (Karlton Dennis)",
+        "type": "course",
+        "bestFor": "Self-starters who want a large video library and a community before they hire anyone.",
+        "strengths": [
+          "Video courses, a private community, recordings of the weekly calls with the firm's private client group, and AMA sessions with tax advisors",
+          "The same founder and the same thinking as Tax Alchemy, at a membership commitment rather than a firm engagement",
+          "A fair way to learn what a business or a rental would actually change on your return before you commit to either"
+        ],
+        "tradeoffs": [
+          "A membership does not know your name; nobody checks whether you implemented anything",
+          "It teaches; it does not file, structure entities, or run cost segregation for you",
+          "If you have only a W-2 and no plans to change that, the library will be mostly aspirational"
+        ],
+        "url": "https://www.taxstrategyaccelerator.com/"
+      },
+      {
+        "name": "Navi Maraj CPA small business tax course",
+        "type": "course",
+        "bestFor": "Owners who want the S-corp and deduction basics as a fixed-scope, self-paced course with no calls.",
+        "strengths": [
+          "A self-paced course with modules and software walkthroughs, taught by a CPA",
+          "Fixed scope, so you know exactly what you are buying before you buy it",
+          "Covers the questions new owners actually have: entity choice, reasonable salary, bookkeeping basics"
+        ],
+        "tradeoffs": [
+          "No live support and no community to speak of; it is a course",
+          "Small-business focus; real estate and W-2 strategies are not the point",
+          "You still need a CPA to file and a plan to know what to do after the course ends"
+        ],
+        "url": "https://navimarajcpa.teachable.com/p/smallbusinesstaxessale"
+      },
+      {
+        "name": "Business Owner HQ (Mark J. Kohler)",
+        "type": "coaching",
+        "bestFor": "Small business owners who want live time with a licensed CPA and attorney on a schedule, with legal services available from his firms.",
+        "strengths": [
+          "Mark J. Kohler is a licensed attorney and CPA; the membership includes biweekly live masterminds with him, an app, on-demand videos, an AI assistant, and a forum",
+          "KKOS Lawyers and Directed IRA sit in the same group, so entity setup, legal work, and self-directed accounts can be done in one place",
+          "The trifecta structure is a clear framework for owners with assets to protect"
+        ],
+        "tradeoffs": [
+          "Built for owners; a W-2 earner with no entity gets less from it",
+          "Group calls and a forum, not a dedicated 1-on-1 guide",
+          "The education points toward his firms; get legal quotes separately. See the [Mark J. Kohler alternatives guide](/alternatives/mark-j-kohler)"
+        ],
+        "url": "https://mainstreetpros.com/business-owners"
+      },
+      {
+        "name": "Anderson Business Advisors Platinum",
+        "type": "community",
+        "bestFor": "Investors with several entities who want ongoing legal and tax answers on demand rather than a course or a one-off plan.",
+        "strengths": [
+          "A membership built around questions: strategy sessions, document review, a forms library, and a weekday Q&A room",
+          "Legal, tax, and asset protection under one brand, which suits people with multiple LLCs and rentals",
+          "A published support schedule, so you know when a person is available"
+        ],
+        "tradeoffs": [
+          "Answers, not a plan; you bring the situation and get a response, which only works if you already know your direction",
+          "Heavier on entity and asset protection than most W-2 earners need",
+          "An enrollment plus ongoing membership model; confirm the current terms and what stops when you leave"
+        ],
+        "url": "https://andersonadvisors.com/platinum-membership/"
+      },
+      {
         "name": "Tax Alchemy (Karlton Dennis)",
         "type": "firm",
         "bestFor": "Business owners and investors who want the plan built and implemented by a firm, with preparation for advisory clients.",
@@ -548,6 +847,21 @@
           "Tax only; nothing on debt, accounts, or protection. See our [Tax Alchemy alternatives guide](/alternatives/tax-alchemy)"
         ],
         "url": "https://taxalchemy.com/"
+      },
+      {
+        "name": "Tax Goddess",
+        "type": "firm",
+        "bestFor": "High-revenue business owners who want a firm to run strategic tax planning as an ongoing engagement.",
+        "strengths": [
+          "A done-for-you firm model with 1-to-1 engagement, aimed at owners who would rather pay for labour than a classroom",
+          "Describes its clients in revenue tiers, which tells you quickly whether you are the intended buyer"
+        ],
+        "tradeoffs": [
+          "Priced on application, so expect a call before you know the cost",
+          "Built for businesses with meaningful revenue; a W-2 earner or a new side business is not the target",
+          "A firm, not a coaching program: nothing on debt, income, or protection outside the tax engagement"
+        ],
+        "url": "https://taxgoddess.com/"
       },
       {
         "name": "WealthAbility (Tom Wheelwright, CPA)",
@@ -582,6 +896,22 @@
         "url": "https://wcginc.com/"
       },
       {
+        "name": "LYFE Accounting (Sherman the CPA)",
+        "type": "firm",
+        "bestFor": "Owners whose books are not clean enough for any strategy to work yet, and who want accounting, preparation, and planning from one month-to-month firm.",
+        "strengths": [
+          "Bookkeeping, tax preparation and planning, and CPA and CFO services under one roof",
+          "Described as month to month with no long contract, which lowers the risk of trying it",
+          "Solves the problem that stops most strategy programs from working: bad records"
+        ],
+        "tradeoffs": [
+          "An accounting firm first; strategy depth depends on the engagement you choose",
+          "Not a coaching program and not built for W-2 earners",
+          "Verify current services and intake rules directly"
+        ],
+        "url": "https://www.lyfeaccounting.com/"
+      },
+      {
         "name": "A local CPA who does proactive planning",
         "type": "firm",
         "bestFor": "Anyone whose current CPA is a preparer and who wants a planner in the same city, without a program wrapped around it.",
@@ -600,16 +930,79 @@
     ],
     "comparisonIntro": "TaxFreeCEO is left out of the table on purpose: we could not verify its current format and will not fill cells with guesses. Use the columns as the questions to ask them.",
     "comparisonTable": {
-      "columns": ["Criteria", "Legacy Wealth Blueprint", "Tax Alchemy", "WealthAbility", "WCG CPAs & Advisors", "Local proactive CPA"],
+      "columns": [
+        "Criteria",
+        "Legacy Wealth Blueprint",
+        "Tax Alchemy",
+        "WealthAbility",
+        "WCG CPAs & Advisors",
+        "Local proactive CPA"
+      ],
       "rows": [
-        ["What it is", "Coached wealth program with a written plan", "Done-for-you tax planning firm", "Education plus matched advisor network", "CPA firm with planning and preparation", "Individual CPA engagement"],
-        ["W-2 income covered", "Yes, as its own set of strategies", "Secondary to business and property", "Yes, through the advisor", "Yes", "Yes"],
-        ["Real estate depth", "One pillar, taught step by step", "Cost segregation and 1031 work listed", "Depends on advisor", "Rental taxation is a specialty", "Depends on the CPA"],
-        ["Licensed professional on your file", "Through the partner network", "Ask which team member", "Yes, the matched firm", "Yes", "Yes"],
-        ["Files your return", "No; CPA Implementation Brief for your own CPA", "For advisory clients", "Through the advisor firm", "Yes", "Yes"],
-        ["Personal contact", "1-on-1 guide, bi-weekly check-ins, weekly live calls", "1-to-1 advisory", "Advisor meetings", "Meetings by appointment", "Meetings by appointment"],
-        ["Beyond tax", "Debt, income, investing, protection", "No", "Wealth strategy", "Small-business services", "Rarely"],
-        ["Best for", "One plan across the whole picture", "Handing the job off", "Finding a proactive advisor", "S-corp and rental owners", "A planner in your own city"]
+        [
+          "What it is",
+          "Coached wealth program with a written plan",
+          "Done-for-you tax planning firm",
+          "Education plus matched advisor network",
+          "CPA firm with planning and preparation",
+          "Individual CPA engagement"
+        ],
+        [
+          "W-2 income covered",
+          "Yes, as its own set of strategies",
+          "Secondary to business and property",
+          "Yes, through the advisor",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "Real estate depth",
+          "One pillar, taught step by step",
+          "Cost segregation and 1031 work listed",
+          "Depends on advisor",
+          "Rental taxation is a specialty",
+          "Depends on the CPA"
+        ],
+        [
+          "Licensed professional on your file",
+          "Through the partner network",
+          "Ask which team member",
+          "Yes, the matched firm",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "Files your return",
+          "No; CPA Implementation Brief for your own CPA",
+          "For advisory clients",
+          "Through the advisor firm",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "Personal contact",
+          "1-on-1 guide, bi-weekly check-ins, weekly live calls",
+          "1-to-1 advisory",
+          "Advisor meetings",
+          "Meetings by appointment",
+          "Meetings by appointment"
+        ],
+        [
+          "Beyond tax",
+          "Debt, income, investing, protection",
+          "No",
+          "Wealth strategy",
+          "Small-business services",
+          "Rarely"
+        ],
+        [
+          "Best for",
+          "One plan across the whole picture",
+          "Handing the job off",
+          "Finding a proactive advisor",
+          "S-corp and rental owners",
+          "A planner in your own city"
+        ]
       ]
     },
     "scenarios": [
@@ -648,9 +1041,10 @@
     ],
     "howToDecide": [
       "Verify before you compare. For TaxFreeCEO, and for every program on this page, get the current syllabus, the support model, the term, and the refund policy in an email.",
-      "Sort your income. Mostly W-2: choose something that covers W-2 strategies, not only entity strategies. Mostly business: a firm or an owner-focused program goes deeper.",
-      "Decide whether you want knowledge, labour, or a coached plan. A course is knowledge. A firm is labour. A program with a guide and a written plan is coaching.",
-      "Ask who is licensed and whether that person works on your file. Educators can teach; only licensed professionals sign returns.",
+      "Decide whether you are buying knowledge or labour. A course gives you knowledge; a firm gives you labour. If you are busy and the money is there, labour is often the better buy. If you want to understand your own return, buy knowledge first.",
+      "Check what you own. Most of these strategies need a business or a rental. With neither, the honest list is short: max the 401(k) and HSA, use a taxable account well, then decide whether to build a business or buy property.",
+      "Fix the books before you buy strategy. If you own a business and the bookkeeping is a mess, an accounting firm solves that first. Strategy on top of bad records is guesswork.",
+      "Ask who actually answers you. A published call schedule or a dedicated guide is not the same as a forum. Then ask for five numbers in writing: enrollment fee, monthly fee, term length, renewal price, and refund window. A seller who will not put them in an email has told you something.",
       "Run the [S-corp](/tax-strategies/s-corp-strategy) and [W-2 employee](/tax-strategies/for/w2-employees) guides against your own numbers before any call, so you know which strategies are even on the table."
     ],
     "faqs": [
@@ -663,12 +1057,24 @@
         "a": "Most business-owner programs assume an entity. Legacy Wealth Blueprint covers W-2 strategies, tax-advantaged accounts, and real estate inside one plan, which is why it fits salaried earners better. If you own nothing yet, start with the free W-2 guides and max your accounts first."
       },
       {
+        "q": "Which options do the work for me instead of teaching me?",
+        "a": "Tax Alchemy, Tax Goddess, WCG, LYFE Accounting, and a local CPA do the work. WealthAbility matches you with a firm that does. Tax Strategy Accelerator, the Navi Maraj course, Business Owner HQ, Anderson Platinum, and Legacy Wealth Blueprint teach or coach; the Blueprint adds a written plan and a brief for your own CPA, but you still carry it to them."
+      },
+      {
         "q": "Which alternative actually files my tax return?",
         "a": "WCG and a local CPA file. Tax Alchemy offers preparation to advisory clients. WealthAbility's matched advisor firms file. Legacy Wealth Blueprint does not; it gives you a CPA Implementation Brief for your own CPA."
       },
       {
+        "q": "What is the cheapest alternative to TaxFreeCEO?",
+        "a": "Free content and the retirement accounts you already have access to. After that, an education membership such as Tax Strategy Accelerator, then a fixed-scope self-paced course. We do not quote prices here because they change; read each seller's own page."
+      },
+      {
         "q": "Is a local CPA a real alternative to a tax program?",
         "a": "Yes, if they plan rather than only prepare. Ask what strategies they proposed to clients last year, how many S-corp and rental returns they handle, and whether they will meet mid-year. A proactive local CPA plus free education beats an expensive program you never open."
+      },
+      {
+        "q": "How should I compare two programs fairly?",
+        "a": "Same five numbers from each, in writing: enrollment fee, monthly fee, term length, renewal price, refund window. Then the same three questions: who answers me, do you file, and what do I hold in writing when the term ends. Compare deliverables before headline cost."
       },
       {
         "q": "Does Legacy Wealth Blueprint cover real estate tax strategies?",
@@ -680,12 +1086,30 @@
       }
     ],
     "related": [
-      { "label": "TaxFreeCEO Alternatives: 8 Options Compared (blog)", "href": "/blog/taxfreeceo-alternatives" },
-      { "label": "Tax strategies for business owners", "href": "/tax-strategies/for/business-owners" },
-      { "label": "Tax strategies for W-2 employees", "href": "/tax-strategies/for/w2-employees" },
-      { "label": "S-Corp Tax Strategy", "href": "/tax-strategies/s-corp-strategy" },
-      { "label": "Tax Alchemy alternatives", "href": "/alternatives/tax-alchemy" },
-      { "label": "Tax Planning for Beginners", "href": "/blog/tax-planning-for-beginners" }
+      {
+        "label": "Best tax strategy programs for high earners",
+        "href": "/best-tax-strategy-programs-for-high-earners"
+      },
+      {
+        "label": "Tax strategies for business owners",
+        "href": "/tax-strategies/for/business-owners"
+      },
+      {
+        "label": "Tax strategies for W-2 employees",
+        "href": "/tax-strategies/for/w2-employees"
+      },
+      {
+        "label": "S-Corp Tax Strategy",
+        "href": "/tax-strategies/s-corp-strategy"
+      },
+      {
+        "label": "Tax Alchemy alternatives",
+        "href": "/alternatives/tax-alchemy"
+      },
+      {
+        "label": "Tax Planning for Beginners",
+        "href": "/blog/tax-planning-for-beginners"
+      }
     ]
   },
   {
@@ -694,7 +1118,7 @@
     "competitor": "Mark J. Kohler",
     "competitorUrl": "https://markjkohler.com/",
     "title": "Mark J. Kohler Alternatives: 5 Options Compared (2026)",
-    "metaDescription": "Mark J. Kohler alternatives for business owners and W-2 earners: Legacy Wealth Blueprint, Tax Alchemy, WealthAbility, a CPA plus attorney pairing, or DIY with his books.",
+    "metaDescription": "Mark J. Kohler alternatives for owners and W-2 earners: Legacy Wealth Blueprint, Tax Alchemy, WealthAbility, a CPA plus attorney pairing, or DIY with his books.",
     "h1": "Mark J. Kohler alternatives: five options, and the cases where Kohler is still the right pick",
     "summary": "Five options for people weighing Business Owner HQ, KKOS Lawyers, and the trifecta structure against coached plans, firms, and doing it themselves.",
     "updated": "2026-09-17",
@@ -819,17 +1243,87 @@
     ],
     "comparisonIntro": "The rows that separate these options are who is licensed, whether legal work is available, whether anyone checks in with you personally, and how much of your finances beyond tax is covered.",
     "comparisonTable": {
-      "columns": ["Criteria", "Mark J. Kohler", "Legacy Wealth Blueprint", "Tax Alchemy", "WealthAbility", "Local CPA + attorney"],
+      "columns": [
+        "Criteria",
+        "Mark J. Kohler",
+        "Legacy Wealth Blueprint",
+        "Tax Alchemy",
+        "WealthAbility",
+        "Local CPA + attorney"
+      ],
       "rows": [
-        ["What it is", "Business-owner membership plus law and IRA firms", "Coached wealth program with a written plan", "Done-for-you tax planning firm", "Education plus matched advisor network", "Two separate professional engagements"],
-        ["Licensed teacher or advisor", "Yes: CPA and attorney", "Educators; licensed pros via partner network", "Ask which team member", "Yes, via matched firm", "Yes, both"],
-        ["Legal and entity work", "Yes, through KKOS Lawyers", "Entity setup partner; no legal advice", "Entity structuring listed", "No", "Yes"],
-        ["Self-directed IRA support", "Yes, through Directed IRA", "Retirement accounts taught, including lesser-known ones", "Not the focus", "Depends on advisor", "Depends on the CPA"],
-        ["W-2 income covered", "Secondary", "Yes, as its own set of strategies", "Secondary", "Yes", "Yes"],
-        ["Personal contact", "Biweekly group masterminds, forum", "1-on-1 guide, bi-weekly check-ins, weekly live calls", "1-to-1 advisory", "Advisor meetings", "Meetings by appointment"],
-        ["Written plan", "Not listed", "12-month Wealth Strategy Snapshot, prior-year diagnostic, CPA brief", "Tax plan", "Depends on advisor", "If you ask for one"],
-        ["Beyond tax", "Legal, entity, retirement accounts", "Debt, income, investing, protection", "No", "Wealth strategy", "Whatever you engage for"],
-        ["Best for", "Owners who want law and tax together", "One plan across the whole picture", "Handing the tax job off", "Finding a proactive advisor", "Independence from any educator"]
+        [
+          "What it is",
+          "Business-owner membership plus law and IRA firms",
+          "Coached wealth program with a written plan",
+          "Done-for-you tax planning firm",
+          "Education plus matched advisor network",
+          "Two separate professional engagements"
+        ],
+        [
+          "Licensed teacher or advisor",
+          "Yes: CPA and attorney",
+          "Educators; licensed pros via partner network",
+          "Ask which team member",
+          "Yes, via matched firm",
+          "Yes, both"
+        ],
+        [
+          "Legal and entity work",
+          "Yes, through KKOS Lawyers",
+          "Entity setup partner; no legal advice",
+          "Entity structuring listed",
+          "No",
+          "Yes"
+        ],
+        [
+          "Self-directed IRA support",
+          "Yes, through Directed IRA",
+          "Retirement accounts taught, including lesser-known ones",
+          "Not the focus",
+          "Depends on advisor",
+          "Depends on the CPA"
+        ],
+        [
+          "W-2 income covered",
+          "Secondary",
+          "Yes, as its own set of strategies",
+          "Secondary",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "Personal contact",
+          "Biweekly group masterminds, forum",
+          "1-on-1 guide, bi-weekly check-ins, weekly live calls",
+          "1-to-1 advisory",
+          "Advisor meetings",
+          "Meetings by appointment"
+        ],
+        [
+          "Written plan",
+          "Not listed",
+          "12-month Wealth Strategy Snapshot, prior-year diagnostic, CPA brief",
+          "Tax plan",
+          "Depends on advisor",
+          "If you ask for one"
+        ],
+        [
+          "Beyond tax",
+          "Legal, entity, retirement accounts",
+          "Debt, income, investing, protection",
+          "No",
+          "Wealth strategy",
+          "Whatever you engage for"
+        ],
+        [
+          "Best for",
+          "Owners who want law and tax together",
+          "One plan across the whole picture",
+          "Handing the tax job off",
+          "Finding a proactive advisor",
+          "Independence from any educator"
+        ]
       ]
     },
     "scenarios": [
@@ -900,12 +1394,30 @@
       }
     ],
     "related": [
-      { "label": "Karlton Dennis vs Mark Kohler vs Legacy Wealth Blueprint", "href": "/blog/karlton-dennis-vs-mark-kohler-vs-legacy-wealth-blueprint" },
-      { "label": "S-Corp Tax Strategy", "href": "/tax-strategies/s-corp-strategy" },
-      { "label": "Solo 401(k)", "href": "/tax-strategies/solo-401k" },
-      { "label": "S-Corp vs the QBI Deduction", "href": "/compare/s-corp-vs-qbi-deduction" },
-      { "label": "LLC vs S-Corp", "href": "/blog/llc-vs-s-corp" },
-      { "label": "Tax Alchemy alternatives", "href": "/alternatives/tax-alchemy" }
+      {
+        "label": "Karlton Dennis vs Mark Kohler vs Legacy Wealth Blueprint",
+        "href": "/blog/karlton-dennis-vs-mark-kohler-vs-legacy-wealth-blueprint"
+      },
+      {
+        "label": "S-Corp Tax Strategy",
+        "href": "/tax-strategies/s-corp-strategy"
+      },
+      {
+        "label": "Solo 401(k)",
+        "href": "/tax-strategies/solo-401k"
+      },
+      {
+        "label": "S-Corp vs the QBI Deduction",
+        "href": "/compare/s-corp-vs-qbi-deduction"
+      },
+      {
+        "label": "LLC vs S-Corp",
+        "href": "/blog/llc-vs-s-corp"
+      },
+      {
+        "label": "Tax Alchemy alternatives",
+        "href": "/alternatives/tax-alchemy"
+      }
     ]
   }
 ]

@@ -50,7 +50,7 @@ const KINDS = {
         hubH1: 'Alternatives guides',
         hubKey: 'Name what you actually need first. Most programs are good at one job and quietly weak at the rest.',
         hubLede: 'Honest alternatives to the tax, wealth, and real estate programs people compare us with. Each guide profiles the competitor, lists the realistic options, and says plainly when the other program is the better pick.',
-        hubDescription: 'Alternatives to popular tax strategy, wealth, and real estate education programs, with a profile of each competitor, the realistic options, and who should pick what.',
+        hubDescription: 'Alternatives to popular tax strategy, wealth, and real estate programs: a profile of each competitor, the realistic options, and who should pick what.',
         pageLabel: 'Alternatives guide',
     },
     vs: {
@@ -60,7 +60,7 @@ const KINDS = {
         hubH1: 'Program comparisons',
         hubKey: 'Two programs rarely win on the same axis. Decide which axis matters before you compare.',
         hubLede: 'Head-to-head comparisons between programs people weigh against Legacy Wealth Blueprint. Each one covers format, who teaches, what is delivered, and the situations where each side is the better choice.',
-        hubDescription: 'Head-to-head comparisons of tax strategy and wealth programs against Legacy Wealth Blueprint: format, deliverables, who teaches, and which one fits which situation.',
+        hubDescription: 'Head-to-head comparisons of tax and wealth programs against Legacy Wealth Blueprint: format, deliverables, who teaches, and which fits which situation.',
         pageLabel: 'Comparison',
     },
 };

@@ -393,13 +393,14 @@
           "href": "/blog/88k-tax-savings-cpa-missed-case-study",
           "label": "$88K tax savings case study: what a CPA missed for a $300K W-2 earner"
         }
-      ]
+      ],
+      "key": "Mostly positive, not unanimous: {{trustScore}} from {{totalReviews}} Trustpilot reviews, {{caseStudyCount}} named clients on video, and one-star complaints worth reading in full."
     },
     {
       "slug": "is-preston-seo-legit",
       "title": "Is Preston Seo Legit? An Evidence-Based Answer",
       "h1": "Is Preston Seo Legit? An Evidence-Based Answer",
-      "description": "Is Preston Seo legit? The registered company, Trustpilot score, BBB listing, named clients on video, and the caveats: unpublished pricing and self-reported results.",
+      "description": "Is Preston Seo legit? The registered company, Trustpilot score, BBB listing, named clients on video, and caveats: unpublished pricing, self-reported results.",
       "query": "is preston seo legit",
       "verdict": [
         "Yes, on the evidence available. Legacy Investing Show, LLC is a registered company in Herriman, Utah, with a claimed Trustpilot profile ({{trustScore}} from {{totalReviews}} reviews), a Better Business Bureau listing (not accredited), {{caseStudyCount}} named clients on video with written case studies, and a founder who publishes under his own name on YouTube, Instagram, Facebook, TikTok, and LinkedIn.",
@@ -549,7 +550,8 @@
           "href": "/blog/shawn-legacy-wealth-blueprint-roi-case-study",
           "label": "Shawn case study: the tax knowledge his CPAs were not giving him"
         }
-      ]
+      ],
+      "key": "Yes, on the public record. Whether the program is right for you is a separate question, and this page keeps the two apart."
     },
     {
       "slug": "legacy-wealth-blueprint-reviews",
@@ -687,7 +689,8 @@
           "href": "/tax-strategies",
           "label": "Tax strategy library: every strategy the case studies mention, on its own page"
         }
-      ]
+      ],
+      "key": "{{caseStudyCount}} named clients with their own figures, {{writtenClientResults}} written results, a company-wide {{trustScore}} Trustpilot score, and the criticisms alongside."
     },
     {
       "slug": "legacy-wealth-blueprint-cost",
@@ -833,7 +836,8 @@
           "href": "/compare",
           "label": "Compare guides"
         }
-      ]
+      ],
+      "key": "The price is not published. It is discussed on the strategy call. Here is what you get and how to set your own threshold before you hear a number."
     },
     {
       "slug": "manage-money-101-reviews",
@@ -845,7 +849,7 @@
         "Manage Money 101 is not a separate paid program, so there is no separate set of Manage Money 101 reviews. It is the free masterclass and registration funnel Legacy Investing Show runs at join.managemoney101.com: the tax-strategy training that introduces the material and leads to a strategy call about the paid programs.",
         "The Trustpilot profile for Legacy Investing Show By Preston Seo lists managemoney101.com as the business website, so the reviews you are looking for are the company's reviews: a {{trustScore}} TrustScore from {{totalReviews}} reviews, plus the Legacy Wealth Blueprint case studies on the reviews page."
       ],
-      "lede": "A short page, because the repo of facts is short: what the name refers to, how it connects to the Legacy Wealth Blueprint, and where the actual reviews live.",
+      "lede": "A short page, because the public record is short: what the name refers to, how it connects to the Legacy Wealth Blueprint, and where the actual reviews live.",
       "sections": {
         "evidence": true,
         "fit": false,
@@ -947,7 +951,8 @@
           "href": "/blog/abigail-legacy-wealth-blueprint-case-study",
           "label": "Abigail case study: just under $100,000 in first-year ROI by her own calculation"
         }
-      ]
+      ],
+      "key": "There is no separate product called Manage Money 101. It is the free masterclass funnel, so its reviews are the company's reviews."
     }
   ]
 }

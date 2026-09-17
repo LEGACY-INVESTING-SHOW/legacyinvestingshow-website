@@ -276,6 +276,27 @@ function renderToc(data) {
                     </details>`;
 }
 
+/**
+ * VideoObject for a client interview, using only what data/reviews-videos.json
+ * records: no upload date is invented when the source has none.
+ */
+function videoObjectFor(client, video) {
+    const thumbnail = video.thumbnail || '';
+    const embedUrl = video.provider === 'vimeo'
+        ? `https://player.vimeo.com/video/${video.id}`
+        : `https://www.youtube.com/embed/${video.id}`;
+    return {
+        '@type': 'VideoObject',
+        name: `${client.name} client interview`,
+        description: client.result,
+        thumbnailUrl: /^https?:\/\//.test(thumbnail) ? thumbnail : `${SITE_URL}${thumbnail || '/assets/images/og-image.jpg'}`,
+        embedUrl,
+        url: `${SITE_URL}${reviewsAnchorFor(client)}`,
+        ...(video.uploadDate ? { uploadDate: video.uploadDate } : {}),
+        ...(video.durationSeconds ? { duration: `PT${video.durationSeconds}S` } : {}),
+    };
+}
+
 function buildSchemaGraph(data, videoIndex) {
     const canonical = `${SITE_URL}/${data.slug}`;
     const orgId = `${SITE_URL}/#organization`;
@@ -347,20 +368,7 @@ function buildSchemaGraph(data, videoIndex) {
                         about: client.program,
                         author: { '@id': personId },
                         publisher: { '@id': orgId },
-                        ...(videoIndex.has(client.slug)
-                            ? {
-                                video: {
-                                    '@type': 'VideoObject',
-                                    name: `${client.name} client interview`,
-                                    description: client.result,
-                                    thumbnailUrl: videoIndex.get(client.slug).thumbnail
-                                        ? `${SITE_URL}${videoIndex.get(client.slug).thumbnail}`
-                                        : OG_IMAGE,
-                                    uploadDate: videoIndex.get(client.slug).uploadDate || data.lastUpdated,
-                                    url: `${SITE_URL}${reviewsAnchorFor(client)}`,
-                                },
-                            }
-                            : {}),
+                        ...(videoIndex.has(client.slug) ? { video: videoObjectFor(client, videoIndex.get(client.slug)) } : {}),
                     },
                 })),
             },

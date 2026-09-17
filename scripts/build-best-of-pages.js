@@ -250,6 +250,7 @@ function renderScorecard(section) {
   const notes = ranked
     .map((p) => `<li><strong>${inline(p.name)} (${p.total}).</strong> ${inline(p.notes)}</li>`)
     .join('\n');
+  const alternatives = renderAlternatives(section);
   return `<div class="prose">
                         <h2 id="${esc(section.id)}">${inline(section.heading)}</h2>
                         ${paragraphs(section.intro)}
@@ -280,7 +281,54 @@ ${rows}
                     <div class="prose">
                         <h3>Why each program scored the way it did</h3>
                         <ul>${notes}</ul>
+                    </div>
+                    ${alternatives}
+                    <div class="prose">
                         ${paragraphs(section.outro)}
+                    </div>`;
+}
+
+/**
+ * Re-score the same programs under alternative weightings so the page can
+ * show, with computed numbers, how much the order depends on the weights.
+ */
+function renderAlternatives(section) {
+  const alternatives = section.alternatives || [];
+  if (!alternatives.length) return '';
+  const criteria = section.criteria || [];
+  const rows = alternatives
+    .map((alt) => {
+      const weightSum = Object.values(alt.weights).reduce((s, w) => s + w, 0);
+      if (weightSum !== 100) throw new Error(`Alternative weighting "${alt.label}" must sum to 100`);
+      Object.keys(alt.weights).forEach((key) => {
+        if (!criteria.some((c) => c.key === key)) throw new Error(`Unknown criterion "${key}" in alternative weighting`);
+      });
+      const scored = (section.programs || [])
+        .map((p) => ({
+          name: p.name,
+          total: Math.round(
+            Object.entries(alt.weights).reduce((sum, [key, weight]) => sum + (weight * p.scores[key]) / 5, 0)
+          ),
+        }))
+        .sort((a, b) => b.total - a.total || a.name.localeCompare(b.name));
+      const top = scored.slice(0, 3).map((p) => `${plain(p.name)} (${p.total})`).join(', ');
+      const highlightIndex = scored.findIndex((p) => p.name === section.highlight);
+      const highlight = highlightIndex >= 0 ? `${highlightIndex + 1} of ${scored.length} (${scored[highlightIndex].total})` : 'n/a';
+      return `<tr><td>${inline(alt.label)}</td><td>${esc(top)}</td><td>${esc(highlight)}</td></tr>`;
+    })
+    .join('\n');
+  return `<div class="prose">
+                        <h3 id="${esc(section.id)}-reweighted">${esc(section.alternativesHeading || 'The same scores under different weights')}</h3>
+                        ${paragraphs(section.alternativesIntro)}
+                    </div>
+                    <div class="table-inset table-inset--wide">
+                        <table class="table--zebra">
+                            <caption>Computed from the scores above; only the weights change.</caption>
+                            <thead><tr><th scope="col">Weighting</th><th scope="col">Top three</th><th scope="col">${esc(plain(section.highlight || ''))} position</th></tr></thead>
+                            <tbody>
+${rows}
+                            </tbody>
+                        </table>
                     </div>`;
 }
 
