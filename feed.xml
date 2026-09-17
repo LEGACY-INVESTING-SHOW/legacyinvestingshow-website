@@ -8,7 +8,7 @@
     <category>Business/Investing</category>
     <managingEditor>info@legacyinvestingshow.com (Preston Seo)</managingEditor>
     <webMaster>info@legacyinvestingshow.com (Legacy Investing Show)</webMaster>
-    <lastBuildDate>Wed, 16 Sep 2026 12:10:24 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2026 12:12:29 GMT</lastBuildDate>
     <generator>Legacy Investing Show RSS Generator</generator>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <atom:link href="https://www.legacyinvestingshow.com/feed.xml" rel="self" type="application/rss+xml"/>
@@ -44,18 +44,10 @@
     <item>
       <title>Best Real Estate Investing Courses if You Have a Full-Time Job (2026)</title>
       <link>https://www.legacyinvestingshow.com/blog/best-real-estate-investing-courses-full-time-job</link>
-      <description>A sourced comparison of eight real estate investing programs for people with a day job, with formats, free options, and who each one fits.</description>
+      <description>A sourced comparison of eight real estate investing programs for people with a day job, with published prices, formats, free options, and who each one fits.</description>
       <author>Preston Seo</author>
       <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/best-real-estate-investing-courses-full-time-job</guid>
-    </item>
-    <item>
-      <title>Best Tax Strategy Programs for W-2 Earners Over $250K (2026)</title>
-      <link>https://www.legacyinvestingshow.com/blog/best-tax-strategy-programs-w2-earners-over-250k</link>
-      <description>What is actually left after you max a 401(k) and an HSA, plus eight tax strategy programs and services compared on format, published price, and fit.</description>
-      <author>Preston Seo</author>
-      <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/best-tax-strategy-programs-w2-earners-over-250k</guid>
     </item>
     <item>
       <title>BNB Formula vs 10XBNB vs Airbnb Ascension: An Honest 2026 Comparison</title>
@@ -104,22 +96,6 @@
       <author>Preston Seo</author>
       <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/stephanie-dailey-legacy-wealth-blueprint-case-study</guid>
-    </item>
-    <item>
-      <title>Tax Alchemy Alternatives (2026): 7 Tax Strategy Programs Compared</title>
-      <link>https://www.legacyinvestingshow.com/blog/tax-alchemy-alternatives</link>
-      <description>A neutral 2026 comparison of Tax Alchemy and seven alternatives, with format, published price, who each one fits, and a source link for every claim.</description>
-      <author>Preston Seo</author>
-      <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/tax-alchemy-alternatives</guid>
-    </item>
-    <item>
-      <title>TaxFreeCEO Alternatives (2026): 8 Tax Strategy Options Compared</title>
-      <link>https://www.legacyinvestingshow.com/blog/taxfreeceo-alternatives</link>
-      <description>What TaxFreeCEO is, and eight alternatives compared on format, published price, and who each one fits. Every claim links to the seller&amp;#39;s own page.</description>
-      <author>Preston Seo</author>
-      <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/taxfreeceo-alternatives</guid>
     </item>
     <item>
       <title>You Maxed Your 401k and HSA. Here Is What Is Actually Left for W-2 Earners at $300K+ (2026)</title>
@@ -1162,6 +1138,14 @@
       <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/airbnb-guest-message-templates-that-reduce-friction</guid>
     </item>
     <item>
+      <title>Airbnb vs VRBO for Hosts: Which Platform Fits Your Strategy in 2026?</title>
+      <link>https://www.legacyinvestingshow.com/blog/airbnb-vs-vrbo-for-hosts-which-platform-fits-your-strategy</link>
+      <description>Airbnb vs VRBO for hosts: compare guest profiles, host fees, cancellation control, listing style, and revenue by market so you can pick one platform or both.</description>
+      <author>Preston Seo</author>
+      <pubDate>Fri, 06 Mar 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/airbnb-vs-vrbo-for-hosts-which-platform-fits-your-strategy</guid>
+    </item>
+    <item>
       <title>Best Airbnb Automation Tools for Small Operators Who Want to Scale Cleanly</title>
       <link>https://www.legacyinvestingshow.com/blog/best-airbnb-automation-tools-for-small-operators</link>
       <description>Compare the best Airbnb automation tools for small operators and learn how to build a lean software stack that saves time without overcomplicating operations.</description>
@@ -1200,6 +1184,14 @@
       <author>Preston Seo</author>
       <pubDate>Fri, 06 Mar 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/is-airbnb-arbitrage-legal-what-hosts-need-to-check</guid>
+    </item>
+    <item>
+      <title>Short-Term vs Long-Term Rental ROI for New Investors</title>
+      <link>https://www.legacyinvestingshow.com/blog/short-term-vs-long-term-rental-roi-for-new-investors</link>
+      <description>Short-term vs long-term rental ROI for new investors: compare cash flow, income volatility, workload, and control with beach-town and college-town scenarios.</description>
+      <author>Preston Seo</author>
+      <pubDate>Fri, 06 Mar 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/short-term-vs-long-term-rental-roi-for-new-investors</guid>
     </item>
     <item>
       <title>2026 Tax Changes You Need to Know: 7 Updates That Matter</title>
@@ -1322,12 +1314,52 @@
       <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/dentist-airbnb-7-days-first-pitch</guid>
     </item>
     <item>
+      <title>Airbnb Occupancy Strategy for Hosts: Complete 2026 Guide to Higher Bookings and Better Margins</title>
+      <link>https://www.legacyinvestingshow.com/blog/airbnb-occupancy-strategy-for-hosts</link>
+      <description>An Airbnb occupancy strategy for hosts: pick an occupancy lane, fix conversion before discounting, price by season and stay length, and track net RevPAR weekly.</description>
+      <author>Preston Seo</author>
+      <pubDate>Mon, 16 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/airbnb-occupancy-strategy-for-hosts</guid>
+    </item>
+    <item>
+      <title>Airbnb Pricing Strategy for Beginners: Complete 2026 Guide to Occupancy, ADR, and Profit</title>
+      <link>https://www.legacyinvestingshow.com/blog/airbnb-pricing-strategy-for-beginners</link>
+      <description>Build an Airbnb pricing strategy for beginners with break-even ADR math, floor and ceiling rate bands, a worked 2-bedroom example, and a 30-day checklist.</description>
+      <author>Preston Seo</author>
+      <pubDate>Mon, 16 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/airbnb-pricing-strategy-for-beginners</guid>
+    </item>
+    <item>
+      <title>Airbnb Pricing Strategy for Real Estate Investors: Complete 2026 Guide to Occupancy, Cash Flow, and Tax-Aware Growth</title>
+      <link>https://www.legacyinvestingshow.com/blog/airbnb-pricing-strategy-for-real-estate-investors</link>
+      <description>An Airbnb pricing strategy for real estate investors: ADR and occupancy floors, booking-window ladders, a three-strategy worked example, and a 30-day checklist.</description>
+      <author>Preston Seo</author>
+      <pubDate>Mon, 16 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/airbnb-pricing-strategy-for-real-estate-investors</guid>
+    </item>
+    <item>
       <title>airbnb startup cost tax deductible: Complete 2026 Guide for US Hosts</title>
       <link>https://www.legacyinvestingshow.com/blog/airbnb-startup-cost-tax-deductible</link>
       <description>Learn which Airbnb arbitrage startup costs you can deduct now, capitalize, or amortize, with practical IRS-based frameworks, examples, and a 30-day action plan.</description>
       <author>Preston Seo</author>
       <pubDate>Mon, 16 Feb 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/airbnb-startup-cost-tax-deductible</guid>
+    </item>
+    <item>
+      <title>Annuities vs Bonds vs Taxable Brokerage: Which Strategy Works Better in 2026?</title>
+      <link>https://www.legacyinvestingshow.com/blog/annuities-vs-bonds-vs-taxable-brokerage</link>
+      <description>Annuities vs bonds vs taxable brokerage for retirement income in 2026: give each a job, close your income floor gap, and compare after-tax cash flow each year.</description>
+      <author>Preston Seo</author>
+      <pubDate>Mon, 16 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/annuities-vs-bonds-vs-taxable-brokerage</guid>
+    </item>
+    <item>
+      <title>Asset Allocation for Busy Professionals: Complete 2026 Guide</title>
+      <link>https://www.legacyinvestingshow.com/blog/asset-allocation-for-busy-professionals</link>
+      <description>Practical 2026 guide to asset allocation for busy professionals: portfolio mixes, tax-aware account placement, rebalancing rules, and a 30-day action checklist.</description>
+      <author>Preston Seo</author>
+      <pubDate>Mon, 16 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/asset-allocation-for-busy-professionals</guid>
     </item>
     <item>
       <title>Asset Allocation for Entrepreneurs: Complete 2026 Guide to Balancing Business Risk and Personal Wealth</title>
@@ -1442,6 +1474,30 @@
       <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/best-tax-planning-books</guid>
     </item>
     <item>
+      <title>Best Tax Planning Software for CPAs: Complete 2026 Guide for Firm Owners</title>
+      <link>https://www.legacyinvestingshow.com/blog/best-tax-planning-software-for-cpas</link>
+      <description>Choose the best tax planning software for CPAs in 2026 with a practical framework covering features, ROI math, rollout steps, and common decision mistakes.</description>
+      <author>Preston Seo</author>
+      <pubDate>Mon, 16 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/best-tax-planning-software-for-cpas</guid>
+    </item>
+    <item>
+      <title>Best Tax Planning Software for Financial Advisors: Complete 2026 Buyer Framework</title>
+      <link>https://www.legacyinvestingshow.com/blog/best-tax-planning-software-for-financial-advisors</link>
+      <description>A 2026 buyer framework for the best tax planning software for financial advisors: weighted scoring, a 200-household ROI example, and a 30-day pilot plan.</description>
+      <author>Preston Seo</author>
+      <pubDate>Mon, 16 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/best-tax-planning-software-for-financial-advisors</guid>
+    </item>
+    <item>
+      <title>Best Tax Planning Software for Retirees: Complete 2026 Guide to Choosing the Right Tool</title>
+      <link>https://www.legacyinvestingshow.com/blog/best-tax-planning-software-for-retirees</link>
+      <description>Choose the best tax planning software for retirees in 2026 with a weighted scorecard, a worked IRA withdrawal vs Roth conversion example, and a 30-day plan.</description>
+      <author>Preston Seo</author>
+      <pubDate>Mon, 16 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/best-tax-planning-software-for-retirees</guid>
+    </item>
+    <item>
       <title>Best Tax Planning Strategies: Complete 2026 Guide for US Households and Business Owners</title>
       <link>https://www.legacyinvestingshow.com/blog/best-tax-planning-strategies</link>
       <description>Actionable 2026 guide to best tax planning strategies with decision frameworks, numeric examples, scenario table, 30-day checklist, and CPA questions for US readers.</description>
@@ -1482,6 +1538,14 @@
       <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/capital-gains-tax-rate-2026</guid>
     </item>
     <item>
+      <title>Capital Gains Tax Template: Practical Guide + Examples for Better Sell Decisions</title>
+      <link>https://www.legacyinvestingshow.com/blog/capital-gains-tax-template</link>
+      <description>Use a capital gains tax template to model stock, real estate, and business-sale taxes with NIIT, state tax, and depreciation recapture before deciding to sell.</description>
+      <author>Preston Seo</author>
+      <pubDate>Mon, 16 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/capital-gains-tax-template</guid>
+    </item>
+    <item>
       <title>Debt Consolidation for Bad Credit: Complete 2026 Guide to Lower Payments and Rebuild Momentum</title>
       <link>https://www.legacyinvestingshow.com/blog/debt-consolidation-for-bad-credit</link>
       <description>Learn how debt consolidation for bad credit works in 2026 with real numbers, option comparisons, risks, and a 30-day action plan.</description>
@@ -1504,6 +1568,14 @@
       <author>Preston Seo</author>
       <pubDate>Mon, 16 Feb 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/debt-to-income-ratio-calculator-for-mortgage</guid>
+    </item>
+    <item>
+      <title>Debt To Income Ratio vs Cash Flow Budgeting: Which Strategy Works Better in 2026?</title>
+      <link>https://www.legacyinvestingshow.com/blog/debt-to-income-ratio-vs-cash-flow-budgeting</link>
+      <description>Compare debt-to-income and cash flow budgeting using real numbers, decision rules, and a 30-day plan to reduce debt while protecting borrowing options.</description>
+      <author>Preston Seo</author>
+      <pubDate>Mon, 16 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/debt-to-income-ratio-vs-cash-flow-budgeting</guid>
     </item>
     <item>
       <title>Do I Qualify for QBI Deduction: Complete 2026 Guide for US Business Owners</title>
@@ -1986,12 +2058,28 @@
       <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/tax-deduction-car-loan-interest</guid>
     </item>
     <item>
+      <title>Tax Loss Harvesting Checklist: Practical Guide, Numbers, and a 30-Day Action Plan</title>
+      <link>https://www.legacyinvestingshow.com/blog/tax-loss-harvesting-checklist</link>
+      <description>A tax loss harvesting checklist with a go or no-go screen, wash-sale guardrails, a worked $15,000 loss example, and a 30-day plan for US taxable investors.</description>
+      <author>Preston Seo</author>
+      <pubDate>Mon, 16 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/tax-loss-harvesting-checklist</guid>
+    </item>
+    <item>
       <title>Tax Planning for Beginners: Complete 2026 Guide to Reducing Your Tax Bill</title>
       <link>https://www.legacyinvestingshow.com/blog/tax-planning-for-beginners</link>
       <description>Learn tax planning for beginners in 2026 with practical frameworks, numeric examples, a 30-day checklist, and CPA questions to lower taxes with less stress.</description>
       <author>Preston Seo</author>
       <pubDate>Mon, 16 Feb 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/tax-planning-for-beginners</guid>
+    </item>
+    <item>
+      <title>Tax Planning for High Earners: Complete 2026 Guide to Lower Taxes and Build After-Tax Wealth</title>
+      <link>https://www.legacyinvestingshow.com/blog/tax-planning-for-high-earners</link>
+      <description>A practical 2026 guide to tax planning for high earners with decision frameworks, scenario modeling, numeric examples, and a 30-day implementation checklist.</description>
+      <author>Preston Seo</author>
+      <pubDate>Mon, 16 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/tax-planning-for-high-earners</guid>
     </item>
     <item>
       <title>Tax Strategy 365 Reviews: Complete 2026 Guide for High-Income Tax Planning Decisions</title>
@@ -2112,6 +2200,14 @@
       <author>Preston Seo</author>
       <pubDate>Sun, 15 Feb 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/best-tax-deductions-for-w2-employees</guid>
+    </item>
+    <item>
+      <title>Best Tax Strategy for IRA Withdrawals: Complete 2026 Guide to Tax-Efficient Retirement Income</title>
+      <link>https://www.legacyinvestingshow.com/blog/best-tax-strategy-for-ira-withdrawals</link>
+      <description>Best tax strategy for IRA withdrawals in 2026: sequence traditional, Roth, and taxable accounts, target a bracket, model state tax, and time Roth conversions.</description>
+      <author>Preston Seo</author>
+      <pubDate>Sun, 15 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/best-tax-strategy-for-ira-withdrawals</guid>
     </item>
     <item>
       <title>BRRRR Method: 2026 Guide to Buy, Rehab, Rent, Refinance, Repeat Without Bad Math</title>
@@ -2618,6 +2714,14 @@
       <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/tax-deductions-for-seniors-2025</guid>
     </item>
     <item>
+      <title>Tax Strategy for Consultants: Complete 2026 Guide to Maximizing After-Tax Profit</title>
+      <link>https://www.legacyinvestingshow.com/blog/tax-strategy-for-consultants</link>
+      <description>A decision-first 2026 tax strategy for US consultants: entity choice, S-corp break-even, protected deductions, payroll sequencing, and a 30-day setup sprint.</description>
+      <author>Preston Seo</author>
+      <pubDate>Sun, 15 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/tax-strategy-for-consultants</guid>
+    </item>
+    <item>
       <title>Treasury Bonds Strategy: Safe Income in Any Market</title>
       <link>https://www.legacyinvestingshow.com/blog/treasury-bonds-strategy</link>
       <description>Learn treasury bonds with practical steps, examples, mistakes to avoid, and an execution checklist.</description>
@@ -2906,7 +3010,7 @@
       <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/entrepreneur-2-deals-12k-month</guid>
     </item>
     <item>
-      <title>How This Nurse Locked Up a $2,000/Month Profit Property While Working Full-Time (2026)</title>
+      <title>How Kirk, a Full-Time Nurse, Hit $5,500/Month on His First Airbnb (2026)</title>
       <link>https://www.legacyinvestingshow.com/blog/nurse-2000-profit-property</link>
       <description>Kirk went from full-time nurse with no business experience to $5,500/month cash flow with Airbnb arbitrage in California. Learn how he overcame fear of landlord outreach and achieved 87% occupancy.</description>
       <author>Preston Seo</author>
@@ -3002,9 +3106,9 @@
       <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/tom-zero-to-25k-two-weeks</guid>
     </item>
     <item>
-      <title>How Lindsay and Her Husband Secured $17,500 in Bookings in One Week (2025 Case Study)</title>
+      <title>How Lindsay Fischer Secured $17,500 in Bookings in Two Weeks (2025 Case Study)</title>
       <link>https://www.legacyinvestingshow.com/blog/couple-17500-secured-one-week</link>
-      <description>Lindsay and her husband went from 9-to-5 workers to $17,500 in Airbnb bookings within 7 days of going live. Learn their exact strategies for finding properties, negotiating with landlords, and creating a standout cabin rental in the Western North Carolina mountains.</description>
+      <description>Lindsay Fischer and her husband went from 9-to-5 workers to $17,500 in Airbnb bookings within 14 days of going live. Learn their exact strategies for finding properties, negotiating with landlords, and creating a standout cabin rental in the Western North Carolina mountains.</description>
       <author>Preston Seo</author>
       <pubDate>Sat, 18 Oct 2025 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://www.legacyinvestingshow.com/blog/couple-17500-secured-one-week</guid>

@@ -54,7 +54,7 @@
           "Weekly live coaching calls with replays, a 1-on-1 Legacy Wealth Guide with bi-weekly check-ins, and a private community for 12 months",
           "A CPA Implementation Brief near filing season that you hand to your own CPA, so the strategies actually make it onto the return",
           "Real estate is taught step by step inside the Investment Vehicles pillar, alongside retirement accounts and the tax rules that decide whether a rental helps your return",
-          "Access to a partner network (tax strategist, estate attorney, credit advisor, entity setup) at client pricing"
+          "Access to a partner network (tax strategist, estate attorney, credit advisor, entity setup)"
         ],
         "tradeoffs": [
           "It is not a deal-finding program. You will not get a market list, a deal pipeline, or an agent referral network the way you do on BiggerPockets",
@@ -319,7 +319,8 @@
         "label": "Free calculators",
         "href": "/tools"
       }
-    ]
+    ],
+    "keyLine": "Stay on BiggerPockets for deals and community. Look elsewhere only when you can name the gap: a tax plan for your return, a coach for one property, or a CPA who works with landlords."
   },
   {
     "kind": "alternatives",
@@ -708,7 +709,8 @@
         "label": "Mark J. Kohler alternatives",
         "href": "/alternatives/mark-j-kohler"
       }
-    ]
+    ],
+    "keyLine": "Tax Alchemy sells labour. Decide first whether you want the work done, the material taught, or a coached plan that covers more than tax; that choice removes most of the list."
   },
   {
     "kind": "alternatives",
@@ -1110,7 +1112,8 @@
         "label": "Tax Planning for Beginners",
         "href": "/blog/tax-planning-for-beginners"
       }
-    ]
+    ],
+    "keyLine": "Verify the current TaxFreeCEO offering before you compare anything. Then sort the options by whether they teach, coach, or do the work, and by whether they cover W-2 income."
   },
   {
     "kind": "alternatives",
@@ -1418,6 +1421,7 @@
         "label": "Tax Alchemy alternatives",
         "href": "/alternatives/tax-alchemy"
       }
-    ]
+    ],
+    "keyLine": "For a business owner who wants a licensed CPA and attorney teaching, with legal work under one roof, Kohler is often the right pick. W-2 earners and people who want a written plan with a dedicated guide are the ones who look elsewhere."
   }
 ]
