@@ -155,13 +155,9 @@ function buildVideoNodes(videos) {
         const duration = isoDuration(record.durationSeconds);
         if (duration) node.duration = duration;
         if (record.uploadDate) node.uploadDate = record.uploadDate;
-        // transcript takes Text, so an array of paragraphs is joined rather
-        // than passed through as a list.
-        if (record.transcript) {
-            node.transcript = Array.isArray(record.transcript)
-                ? record.transcript.join('\n\n')
-                : String(record.transcript);
-        }
+        // The full transcript is already on the page inside the <details>
+        // disclosure, so it is not duplicated into the schema: it added
+        // ~480 KB to /reviews and Google does not use it for rich results.
         if (record.program === 'Legacy Wealth Blueprint') node.about = { '@id': COURSE_ID };
 
         return node;

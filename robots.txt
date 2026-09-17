@@ -34,6 +34,8 @@ Disallow: /*.csv$
 Disallow: /*.tsv$
 Disallow: /*.log$
 Disallow: /lx/
+Disallow: /Wealth%20Plans
+Disallow: /Wealth Plans
 
 # AI and answer-engine crawlers.
 #
@@ -74,6 +76,8 @@ Disallow: /*.csv$
 Disallow: /*.tsv$
 Disallow: /*.log$
 Disallow: /lx/
+Disallow: /Wealth%20Plans
+Disallow: /Wealth Plans
 
 # OpenAI, the ChatGPT search index
 User-agent: OAI-SearchBot
@@ -106,6 +110,8 @@ Disallow: /*.csv$
 Disallow: /*.tsv$
 Disallow: /*.log$
 Disallow: /lx/
+Disallow: /Wealth%20Plans
+Disallow: /Wealth Plans
 
 # Anthropic, Claude
 User-agent: ClaudeBot
@@ -138,6 +144,8 @@ Disallow: /*.csv$
 Disallow: /*.tsv$
 Disallow: /*.log$
 Disallow: /lx/
+Disallow: /Wealth%20Plans
+Disallow: /Wealth Plans
 
 # Anthropic, Claude browsing
 User-agent: Claude-Web
@@ -170,6 +178,8 @@ Disallow: /*.csv$
 Disallow: /*.tsv$
 Disallow: /*.log$
 Disallow: /lx/
+Disallow: /Wealth%20Plans
+Disallow: /Wealth Plans
 
 # Anthropic, older user agent
 User-agent: anthropic-ai
@@ -202,6 +212,8 @@ Disallow: /*.csv$
 Disallow: /*.tsv$
 Disallow: /*.log$
 Disallow: /lx/
+Disallow: /Wealth%20Plans
+Disallow: /Wealth Plans
 
 # Perplexity
 User-agent: PerplexityBot
@@ -234,6 +246,8 @@ Disallow: /*.csv$
 Disallow: /*.tsv$
 Disallow: /*.log$
 Disallow: /lx/
+Disallow: /Wealth%20Plans
+Disallow: /Wealth Plans
 
 # Google, Gemini and AI Overviews grounding
 User-agent: Google-Extended
@@ -266,6 +280,8 @@ Disallow: /*.csv$
 Disallow: /*.tsv$
 Disallow: /*.log$
 Disallow: /lx/
+Disallow: /Wealth%20Plans
+Disallow: /Wealth Plans
 
 # Apple Intelligence
 User-agent: Applebot-Extended
@@ -298,6 +314,8 @@ Disallow: /*.csv$
 Disallow: /*.tsv$
 Disallow: /*.log$
 Disallow: /lx/
+Disallow: /Wealth%20Plans
+Disallow: /Wealth Plans
 
 # Common Crawl, the corpus most answer engines start from
 User-agent: CCBot
@@ -330,6 +348,8 @@ Disallow: /*.csv$
 Disallow: /*.tsv$
 Disallow: /*.log$
 Disallow: /lx/
+Disallow: /Wealth%20Plans
+Disallow: /Wealth Plans
 
 # ByteDance
 User-agent: Bytespider
@@ -362,6 +382,8 @@ Disallow: /*.csv$
 Disallow: /*.tsv$
 Disallow: /*.log$
 Disallow: /lx/
+Disallow: /Wealth%20Plans
+Disallow: /Wealth Plans
 
 # Amazon, Alexa and Rufus
 User-agent: Amazonbot
@@ -394,6 +416,8 @@ Disallow: /*.csv$
 Disallow: /*.tsv$
 Disallow: /*.log$
 Disallow: /lx/
+Disallow: /Wealth%20Plans
+Disallow: /Wealth Plans
 
 # Meta AI
 User-agent: meta-externalagent
@@ -426,6 +450,8 @@ Disallow: /*.csv$
 Disallow: /*.tsv$
 Disallow: /*.log$
 Disallow: /lx/
+Disallow: /Wealth%20Plans
+Disallow: /Wealth Plans
 
 
 # Paid client libraries at /lx/* are unlisted. Do not add them to nav,

@@ -1,3 +1,6 @@
+const crypto = require('crypto');
+const fs = require('fs');
+const path = require('path');
 const DEFAULT_GA_TRACKING_ID = 'G-2578PT1WSS';
 const DEFAULT_GTM_CONTAINER_ID = 'GTM-KQ4R2LKP';
 const CURRENT_YEAR = new Date().getFullYear();
@@ -281,10 +284,29 @@ const FOOTER_GROUPS = [
   },
 ];
 
+function assetVersion(relPath) {
+  try {
+    const abs = path.join(__dirname, '..', '..', relPath.replace(/^\//, ''));
+    return crypto.createHash('sha256').update(fs.readFileSync(abs)).digest('hex').slice(0, 8);
+  } catch {
+    return null;
+  }
+}
+
+function versionedAsset(relPath) {
+  const v = assetVersion(relPath);
+  return v ? `${relPath}?v=${v}` : relPath;
+}
+
 function renderHeadAssets() {
+  // The stylesheet is served with a one-year immutable cache header, so the
+  // reference must carry a content hash even when a generator runs after
+  // version-assets.js.
   return [
+    '<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>',
+    '<link rel="dns-prefetch" href="https://www.google-analytics.com">',
     '<link rel="preload" href="/assets/fonts/public-sans-variable-latin.woff2" as="font" type="font/woff2" crossorigin>',
-    '<link rel="stylesheet" href="/assets/css/styles.css">',
+    `<link rel="stylesheet" href="${versionedAsset('/assets/css/styles.css')}">`,
   ].join('\n    ');
 }
 

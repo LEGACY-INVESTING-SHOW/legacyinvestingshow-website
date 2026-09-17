@@ -19,3 +19,5 @@ cms
 .audit
 .github
 design-explorations
+# Private client wealth plans; never deploy (directory name has a trailing space).
+Wealth Plans*

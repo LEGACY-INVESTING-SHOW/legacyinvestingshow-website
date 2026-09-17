@@ -11,8 +11,13 @@ module.exports = {
     "./retirement/**/*.html",
     "./topics/**/*.html",
     "./tools/**/*.html",
-    "./compare/**/*.html"
+    "./compare/**/*.html",
+    "./alternatives/**/*.html",
+    "./vs/**/*.html"
   ],
+  // Utilities used inside blog markdown bodies, which Tailwind does not scan
+  // (tests/build-chain.test.js keeps ./blog out of `content` on purpose).
+  safelist: ["my-8", "invisible", "top-10", "isolate", "ring"],
   theme: {
     extend: {
       colors: {
