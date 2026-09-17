@@ -228,7 +228,7 @@ function buildBrief(research) {
             '/blog/',
             '/topics/airbnb-arbitrage',
             '/topics/tax-strategies',
-            '/programs'
+            '/tax-strategies-101'
         ],
         cta: 'Explore the strategy library and apply the framework with guided support.',
         sourceResearch: research

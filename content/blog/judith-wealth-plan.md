@@ -507,8 +507,8 @@ If you're ready to optimize your 2026 tax year strategy, maximize tax-advantaged
 ## Related Resources
 
 - [Tax Strategies Overview](/tax-strategies/) - Comprehensive tax reduction strategies
-- [Retirement Planning Guide](/retirement/) - Long-term retirement account optimization
-- [Wealth Building Fundamentals](/blog/wealth-building-basics/) - Core principles for sustainable wealth
-- [2026 Tax Law Updates](/blog/2026-tax-changes/) - Latest legislative changes and implications
+- [Retirement Planning Guide](/topics/retirement) - Long-term retirement account optimization
+- [Wealth Building Fundamentals](/topics/wealth-building) - Core principles for sustainable wealth
+- [2026 Tax Law Updates](/blog/2026-tax-changes-you-need-to-know) - Latest legislative changes and implications
 - [HSA Strategy Deep Dive](/tax-strategies/hsa-strategy/) - Maximizing Health Savings Accounts
-- [Roth vs Traditional Analysis](/tax-strategies/roth-vs-traditional/) - Contribution type optimization
+- [Roth vs Traditional Analysis](/retirement/traditional-vs-roth-401k) - Contribution type optimization

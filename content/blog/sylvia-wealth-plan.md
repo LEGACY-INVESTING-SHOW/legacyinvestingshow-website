@@ -515,9 +515,9 @@ If you and your spouse are ready to implement a coordinated wealth-building stra
 
 ## Related Resources
 
-- [Tax Strategies for Married Couples](/tax-strategies/for/married-couples/) - Comprehensive tax reduction strategies for spouses
-- [Retirement Planning Guide](/retirement/) - Long-term retirement account optimization
-- [Spousal IRA Strategy](/tax-strategies/spousal-ira/) - Maximizing IRA contributions as a couple
-- [Social Security Optimization](/retirement/social-security/) - Spousal benefit coordination
+- [Tax Strategies for Married Couples](/topics/tax-strategies) - Comprehensive tax reduction strategies for spouses
+- [Retirement Planning Guide](/topics/retirement) - Long-term retirement account optimization
+- [Spousal IRA Strategy](/blog/spousal-ira) - Maximizing IRA contributions as a couple
+- [Social Security Optimization](/blog/social-security-optimization) - Spousal benefit coordination
 - [Estate Planning Basics](/blog/estate-tax-planning-guide) - Joint asset transfer strategies
 - [HSA Strategy Guide](/tax-strategies/hsa-strategy/) - Health savings optimization for families

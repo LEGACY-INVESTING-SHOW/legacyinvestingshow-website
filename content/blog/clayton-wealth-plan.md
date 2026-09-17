@@ -524,5 +524,5 @@ Deepen your understanding with these specific tax optimization strategies:
 
 - [Retirement Contribution Strategies](/tax-strategies/) - Maximize pre-tax and Roth options
 - [S-Corporation Election](/tax-strategies/s-corp-strategy/) - Business entity tax optimization
-- [Charitable Bunching Strategy](/tax-strategies/charitable-bunching/) - Optimize charitable deductions
+- [Charitable Bunching Strategy](/tax-strategies/bunching-deductions) - Optimize charitable deductions
 - [Tax Loss Harvesting](/tax-strategies/tax-loss-harvesting/) - Offset gains and income

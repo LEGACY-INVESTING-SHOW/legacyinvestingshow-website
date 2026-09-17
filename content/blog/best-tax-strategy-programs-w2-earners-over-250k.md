@@ -207,7 +207,7 @@ That is the whole fork in the road. If a seller tells you they can cut a large W
 | WealthAbility (Tom Wheelwright, CPA) | Education plus an advisor network | Live trainings, books, advisory services | Not published. Price on application | People who want a matched advisor | [wealthability.com](https://www.wealthability.com/) |
 | Tax Goddess | Done-for-you strategic tax coaching firm | 1-to-1 firm engagement | Not published. Price on application | Earners who want it handled and have the budget | [taxgoddess.com](https://taxgoddess.com/) |
 | Tax Alchemy (Karlton Dennis) | Done-for-you planning firm | 1-to-1 advisory, entity work, cost segregation, 1031 | Flat fee "from as little as $32k up to $50k" | Large bills where a five-figure fee still pays back | [taxalchemy.com](https://taxalchemy.com/) |
-| Legacy Wealth Blueprint | Wealth and tax education with coaching and a written plan | 100+ videos, 12 months community, weekly live calls, custom plan, 1-on-1 guide | Custom. Payment plans and financing available; set around your situation | $100K to $200K+ earners who want one plan across tax, debt, income, and investing | [legacyinvestingshow.com](/legacy-wealth-blueprint.html) |
+| Legacy Wealth Blueprint | Wealth and tax education with coaching and a written plan | 100+ videos, 12 months community, weekly live calls, custom plan, 1-on-1 guide | Custom. Payment plans and financing available; set around your situation | $100K to $200K+ earners who want one plan across tax, debt, income, and investing | [legacyinvestingshow.com](/legacy-wealth-blueprint) |
 
 ## How to choose
 

@@ -580,8 +580,8 @@ Success requires discipline, patience, and systematic execution. But the rewardâ
 For more information on debt elimination and wealth building, explore these related resources:
 
 - Learn about the [Short-Term Rental Tax Strategy](https://www.legacyinvestingshow.com/tax-strategies/short-term-rental-loophole) for future arbitrage operations
-- Discover [Business Structure Optimization](https://www.legacyinvestingshow.com/tax-strategies/business-structures) for side hustle taxation
+- Discover [Business Structure Optimization](https://www.legacyinvestingshow.com/topics/business-structures) for side hustle taxation
 - Understand [Augusta Rule Benefits](https://www.legacyinvestingshow.com/tax-strategies/augusta-rule) for 14 days of tax-free income
-- Explore [Solo 401(k) Strategies](https://www.legacyinvestingshow.com/retirement/solo-401k) for retirement savings once debt is cleared
+- Explore [Solo 401(k) Strategies](https://www.legacyinvestingshow.com/tax-strategies/solo-401k) for retirement savings once debt is cleared
 
 *Ready to tackle your debt and build wealth? [Explore Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) and learn how to create a personalized strategy for financial freedom.*

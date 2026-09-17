@@ -499,12 +499,12 @@ If you're ready to implement a systematic pathway to $1 million—combining inco
 
 ## Related Resources
 
-- [Compound Interest Calculator](/tools/compounding/) - Model your path to $1M
-- [FIRE Number Calculator](/tools/fire/) - Determine your financial independence number
-- [Savings Rate Guide](/blog/savings-rate/) - Optimize your wealth building rate
-- [House Hacking Strategy](/blog/house-hacking/) - Live for free while building equity
+- [Compound Interest Calculator](/tools) - Model your path to $1M
+- [FIRE Number Calculator](/tools) - Determine your financial independence number
+- [Savings Rate Guide](/topics/wealth-building) - Optimize your wealth building rate
+- [House Hacking Strategy](/blog/house-hacking-guide) - Live for free while building equity
 - [Low-Cost Investing Guide](/blog/index-fund-investing/) - Build wealth with minimal fees
-- [Side Income Ideas](/blog/side-income/) - Accelerate your timeline
+- [Side Income Ideas](/topics/wealth-building) - Accelerate your timeline
 
 ## Related Tax Strategies
 

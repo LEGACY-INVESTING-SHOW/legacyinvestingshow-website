@@ -246,7 +246,7 @@
       ],
       "related": [
         {
-          "href": "/tools/estimated-tax-safe-harbor-planner",
+          "href": "/tools/self-employment-tax-reserve",
           "label": "Estimated Tax Safe Harbor Planner"
         },
         {
@@ -441,7 +441,7 @@
           "label": "QCD First vs Roth Conversion First (IRMAA edge cases)"
         },
         {
-          "href": "/tools/qcd-vs-roth-conversion-planner",
+          "href": "/compare/qcd-first-vs-roth-conversion-first-irmaa",
           "label": "QCD vs Roth Conversion Planner (RMD + IRMAA)"
         }
       ]
@@ -501,7 +501,7 @@
       ],
       "related": [
         {
-          "href": "/tools/irmaa-headroom-roth-conversion-planner",
+          "href": "/compare/qcd-first-vs-roth-conversion-first-irmaa",
           "label": "IRMAA Headroom + Roth Conversion Room Planner"
         },
         {
@@ -676,7 +676,7 @@
       ],
       "related": [
         {
-          "href": "/tools/irmaa-headroom-roth-conversion-planner",
+          "href": "/compare/qcd-first-vs-roth-conversion-first-irmaa",
           "label": "IRMAA Headroom + Roth Conversion Room Planner"
         }
       ]
@@ -726,11 +726,11 @@
       ],
       "related": [
         {
-          "href": "/tools/estimated-tax-safe-harbor-planner",
+          "href": "/tools/self-employment-tax-reserve",
           "label": "Estimated Tax Safe Harbor Planner"
         },
         {
-          "href": "/tools/annualized-income-estimated-tax-calculator",
+          "href": "/tools/self-employment-tax-reserve",
           "label": "Annualized Income Estimated Tax Calculator"
         }
       ]
@@ -781,7 +781,7 @@
       ],
       "related": [
         {
-          "href": "/tools/irmaa-headroom-roth-conversion-planner",
+          "href": "/compare/qcd-first-vs-roth-conversion-first-irmaa",
           "label": "IRMAA Headroom + Roth Conversion Room Planner (guardrails mindset)"
         }
       ]

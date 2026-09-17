@@ -689,7 +689,7 @@ Rob identifies several risks he actively manages:
 
 - [How James Built $7,000/Month in 57 Days While Working Full-Time](/blog/james-7k-month-3-properties-remote)
 
-- [How Micah Made $5,000 His First Month with One Facebook Message](/blog/micah-facebook-message-5k-month-houston)
+- [How Micah Made $5,000 His First Month with One Facebook Message](/blog/micah-facebook-message-airbnb)
 
 ### Helpful Resources
 

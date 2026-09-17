@@ -72,9 +72,9 @@ schema:
         answer: >-
           Its main argument is sound: local short-term rental law and written
           landlord permission decide the outcome, and no course controls either.
-          Its price figure of about $2,500 is not our pricing. We do not publish
-          a checkout menu. The Airbnb Arbitrage Roadmap is the curriculum inside
-          Ascension, not a standalone product.
+          The price figure it states for our program is not our pricing. We do
+          not publish a checkout menu. The Airbnb Arbitrage Roadmap is the
+          curriculum inside Ascension, not a standalone product.
       - question: Where do Calvin Tran and Chi Ta fit?
         answer: >-
           Calvin Tran runs High Performance Hosts, an arbitrage program with a
@@ -139,10 +139,10 @@ faq:
   - question: Sean Rakidzich publishes a page about Preston Seo. Is it accurate?
     answer: >-
       Its main argument is sound: local short-term rental law and written
-      landlord permission decide the outcome, and no course controls either. Its
-      price figure of about $2,500 is not our pricing. We do not publish a
-      checkout menu. The Airbnb Arbitrage Roadmap is the curriculum inside
-      Ascension, not a standalone product.
+      landlord permission decide the outcome, and no course controls either. The
+      price figure it states for our program is not our pricing. We do not
+      publish a checkout menu. The Airbnb Arbitrage Roadmap is the curriculum
+      inside Ascension, not a standalone product.
   - question: Where do Calvin Tran and Chi Ta fit?
     answer: >-
       Calvin Tran runs High Performance Hosts, an arbitrage program with a free
@@ -202,7 +202,7 @@ His page about our Airbnb Arbitrage Roadmap makes one central argument: two gate
 
 We agree with that completely. It is the most useful sentence on the page. We tell prospects the same thing, and it is why the first thing a coach does in our program is check the rules in your target city before you spend money on anything else.
 
-One correction on facts. His page states our program costs about $2,500, with promotions near $1,997. That is not our pricing, and we do not publish a checkout menu. The Airbnb Arbitrage Roadmap is the curriculum inside Ascension. We do not sell it as a standalone product. What you invest depends on your situation and how you choose to pay, with payment plans and financing so the starting investment is not the obstacle.
+One correction on facts. His page states a price for our program. That figure is not our pricing, and we do not publish a checkout menu. The Airbnb Arbitrage Roadmap is the curriculum inside Ascension. We do not sell it as a standalone product. What you invest depends on your situation and how you choose to pay, with payment plans and financing so the starting investment is not the obstacle.
 
 Read his page yourself: [Sean Rakidzich vs Airbnb Arbitrage Roadmap](https://www.rakidzich.com/articles/sean-rakidzich-vs-airbnb-arbitrage-roadmap).
 

@@ -1510,8 +1510,8 @@
     ],
     "related": [
       {
-        "href": "/tools/backdoor-roth-pro-rata-calculator",
-        "label": "Backdoor Roth Pro-Rata Calculator"
+        "href": "/tax-strategies/backdoor-roth-ira",
+        "label": "Backdoor Roth IRA Guide"
       },
       {
         "href": "/blog/roth-ira-vs-taxable-brokerage",
@@ -1637,12 +1637,12 @@
     ],
     "related": [
       {
-        "href": "/tools/capital-gains-headroom-calculator",
-        "label": "Capital Gains Headroom Calculator"
+        "href": "/tools/capital-gains-tax-estimate",
+        "label": "Capital Gains Tax Estimate"
       },
       {
-        "href": "/tools/irmaa-headroom-roth-conversion-planner",
-        "label": "IRMAA Headroom + Roth Conversion Planner"
+        "href": "/compare/qcd-first-vs-roth-conversion-first-irmaa",
+        "label": "QCD First vs Roth Conversion First to Manage IRMAA"
       },
       {
         "href": "/blog/retirement-withdrawal-strategy-calculator-with-taxes",

@@ -599,4 +599,4 @@ If you're ready to implement a comprehensive wealth plan that integrates busines
 - [Real Estate Professional Status](/tax-strategies/real-estate-professional-status/) - Unlimited loss deductions
 - [S-Corporation Strategy](/tax-strategies/s-corp-strategy/) - Business entity optimization
 - [1031 Exchange Guide](/tax-strategies/1031-exchange/) - Tax-deferred property exchanges
-- [North Carolina Tax Planning](/tax-strategies/state/north-carolina/) - State-specific strategies
+- [North Carolina Tax Planning](/topics/tax-strategies) - State-specific strategies

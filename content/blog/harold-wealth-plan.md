@@ -472,9 +472,9 @@ If you're ready to implement an educational, analytical approach to your 2026 we
 
 ## Related Resources
 
-- [2026 Tax Planning Guide](/blog/2026-tax-changes/) - Latest tax law updates
-- [Tax Optimization Calculator](/tools/tax-calculator/) - Interactive modeling
-- [Retirement Contribution Guide](/retirement/contribution-limits/) - 2026 limits and strategies
+- [2026 Tax Planning Guide](/blog/2026-tax-changes-you-need-to-know) - Latest tax law updates
+- [Tax Optimization Calculator](/tools/capital-gains-tax-estimate) - Interactive modeling
+- [Retirement Contribution Guide](/blog/401k-strategy-for-small-business-owners) - 2026 limits and strategies
 - [HSA Strategy Guide](/tax-strategies/hsa-strategy/) - Triple tax advantage
 - [Tax Loss Harvesting Guide](/tax-strategies/tax-loss-harvesting/) - Annual optimization
 - [Roth Conversion Strategy](/tax-strategies/roth-conversion-ladder) - Bracket management

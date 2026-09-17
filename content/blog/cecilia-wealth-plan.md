@@ -86,7 +86,7 @@ The December 2025 plan date suggests year-end tax planning urgency, with the str
 - Primary Goal: Launch STR business to replace W-2 income
 
 **Strategic Profile:**
-Cecilia represents a classic "high-earner W-2 employee" profile — substantial income but limited tax optimization, interested in entrepreneurship but needing structured approach, with financial stability from retirement assets enabling calculated risk-taking. The plan leverages the [Short-Term Rental Tax Loophole](/tax-strategies/short-term-rental-loophole.html) as the primary vehicle for income replacement.
+Cecilia represents a classic "high-earner W-2 employee" profile — substantial income but limited tax optimization, interested in entrepreneurship but needing structured approach, with financial stability from retirement assets enabling calculated risk-taking. The plan leverages the [Short-Term Rental Tax Loophole](/tax-strategies/short-term-rental-loophole) as the primary vehicle for income replacement.
 
 ## Executive Summary: The $55,600 Year-One Value Proposition
 
@@ -225,7 +225,7 @@ The $4,200 tax value comes from enabled deductions that would be unavailable wit
 
 ### The $26,000 Centerpiece Strategy
 
-This is the dominant strategy in Cecilia's plan, representing nearly 50% of total year-one tax value. The [Short-Term Rental Tax Loophole](/tax-strategies/short-term-rental-loophole.html) allows active participants in short-term rental businesses to treat losses as non-passive, enabling offset against W-2 income.
+This is the dominant strategy in Cecilia's plan, representing nearly 50% of total year-one tax value. The [Short-Term Rental Tax Loophole](/tax-strategies/short-term-rental-loophole) allows active participants in short-term rental businesses to treat losses as non-passive, enabling offset against W-2 income.
 
 ### How the Loophole Works
 
@@ -589,7 +589,7 @@ Many employers now offer Roth 401(k). Unlike Roth IRA, no income limits apply to
 Cecilia's plan demonstrates that $50,000+ in tax savings can be achieved before the first guest checks in. This isn't "tax evasion" — it's strategic use of tax code provisions designed to encourage business formation and real estate investment. The tax savings provide capital for business growth, creating a virtuous cycle.
 
 ### 2. The STR Loophole Is a Legitimate Wealth Building Tool
-The [Short-Term Rental Tax Loophole](/tax-strategies/short-term-rental-loophole.html) isn't a gray area — it's a specific exclusion in IRC Section 469. Combined with cost segregation, it allows W-2 employees to access depreciation benefits traditionally reserved for full-time real estate professionals. This levels the playing field for side-business wealth building.
+The [Short-Term Rental Tax Loophole](/tax-strategies/short-term-rental-loophole) isn't a gray area — it's a specific exclusion in IRC Section 469. Combined with cost segregation, it allows W-2 employees to access depreciation benefits traditionally reserved for full-time real estate professionals. This levels the playing field for side-business wealth building.
 
 ### 3. Systematic Implementation Outperforms Ad-Hoc Efforts
 The 12-month quarterly roadmap transforms vague "start a side business" intentions into executable weekly tasks. Each quarter has clear milestones: Foundation (entity, research), Launch (property live), Optimization (cash flow positive), Maximization (scaling). This structure maintains momentum and enables measurement.
@@ -604,11 +604,11 @@ Cecilia's plan requires 100+ hours annually of material participation — this i
 
 ### How does Cecilia's plan achieve $50,200 in tax reduction?
 
-The $50,200 tax reduction comes from seven integrated strategies: W-4 withholding optimization ($6,800), LLC entity formation enabling business deductions ($4,200), home office deduction ($1,440), vehicle expense deduction ($2,200), [Augusta Rule](/tax-strategies/augusta-rule.html) utilization ($2,800), retirement account maximization including Backdoor Roth IRA ($6,800), and most significantly the [Short-Term Rental Tax Loophole](/tax-strategies/short-term-rental-loophole.html) with [cost segregation](/tax-strategies/cost-segregation.html) ($26,000). Each strategy builds on the LLC foundation and creates compounding tax benefits.
+The $50,200 tax reduction comes from seven integrated strategies: W-4 withholding optimization ($6,800), LLC entity formation enabling business deductions ($4,200), home office deduction ($1,440), vehicle expense deduction ($2,200), [Augusta Rule](/tax-strategies/augusta-rule) utilization ($2,800), retirement account maximization including Backdoor Roth IRA ($6,800), and most significantly the [Short-Term Rental Tax Loophole](/tax-strategies/short-term-rental-loophole) with [cost segregation](/tax-strategies/cost-segregation) ($26,000). Each strategy builds on the LLC foundation and creates compounding tax benefits.
 
 ### What is the Short-Term Rental Tax Loophole and why is it central to this plan?
 
-The Short-Term Rental Tax Loophole (IRS Section 469) allows STR properties with average guest stays under 7 days to be classified as non-passive business activities. This means losses can offset W-2 income if material participation standards are met (100+ hours annually). Combined with [cost segregation studies](/tax-strategies/cost-segregation.html) that accelerate depreciation, this strategy can generate $25,000-$35,000 in year-one tax deductions for a typical STR property, directly reducing taxable W-2 income.
+The Short-Term Rental Tax Loophole (IRS Section 469) allows STR properties with average guest stays under 7 days to be classified as non-passive business activities. This means losses can offset W-2 income if material participation standards are met (100+ hours annually). Combined with [cost segregation studies](/tax-strategies/cost-segregation) that accelerate depreciation, this strategy can generate $25,000-$35,000 in year-one tax deductions for a typical STR property, directly reducing taxable W-2 income.
 
 ### Can Cecilia really replace W-2 income within 12 months?
 

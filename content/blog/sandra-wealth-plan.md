@@ -515,8 +515,8 @@ If you're ready to explore self-storage investing, strategic Bitcoin allocation,
 ## Related Resources
 
 - [Self-Storage Investing Guide](/blog/self-storage-investing/) - Comprehensive asset class analysis
-- [Bitcoin Tax Strategy](/tax-strategies/bitcoin/) - Cryptocurrency optimization
+- [Bitcoin Tax Strategy](/topics/tax-strategies) - Cryptocurrency optimization
 - [Cost Segregation Deep Dive](/tax-strategies/cost-segregation/) - Accelerated depreciation
-- [Virginia Tax Planning](/tax-strategies/state/virginia/) - State-specific strategies
+- [Virginia Tax Planning](/topics/tax-strategies) - State-specific strategies
 - [Real Estate Professional Status](/tax-strategies/real-estate-professional-status/) - Unlimited loss deductions
 - [High-Income Tax Optimization](/tax-strategies/for/high-income-earners/) - Advanced strategies

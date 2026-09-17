@@ -800,8 +800,8 @@ Your journey from educational awareness to optimized implementation requires com
 For more information on tax optimization strategies, explore these related resources:
 
 - Learn about [Tax Strategies for High-Income Earners](https://www.legacyinvestingshow.com/tax-strategies/for/high-income-earners) to maximize deductions and credits
-- Explore [Business Structure Tax Optimization](https://www.legacyinvestingshow.com/tax-strategies/business-structures) for entity-level advantages
-- Discover [Retirement Account Strategies](https://www.legacyinvestingshow.com/retirement) for long-term tax-advantaged growth
+- Explore [Business Structure Tax Optimization](https://www.legacyinvestingshow.com/topics/business-structures) for entity-level advantages
+- Discover [Retirement Account Strategies](https://www.legacyinvestingshow.com/topics/retirement) for long-term tax-advantaged growth
 - Understand [Real Estate Tax Benefits](https://www.legacyinvestingshow.com/tax-strategies/cost-segregation) including depreciation and 1031 exchanges
 
 *Ready to develop your personalized wealth strategy? [Explore Legacy Investing Show programs](https://www.legacyinvestingshow.com/tax-strategies-101) and learn how to create a comprehensive plan for financial optimization.*

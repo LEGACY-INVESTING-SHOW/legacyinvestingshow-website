@@ -12,6 +12,10 @@ const path = require('path');
 
 const ROOT_DIR = path.join(__dirname, '..');
 const VERCEL_CONFIG = path.join(ROOT_DIR, 'vercel.json');
+const SITE_ORIGIN = 'https://www.legacyinvestingshow.com';
+// href="/path", href="https://www.legacyinvestingshow.com/path", href="https://legacyinvestingshow.com/path"
+const HREF_PATTERN = /href=(["'])(https?:\/\/(?:www\.)?legacyinvestingshow\.com)?(\/[^"']*)\1/g;
+const JSON_LD_URL_PATTERN = /"(item|url|@id)":\s*"https?:\/\/(?:www\.)?legacyinvestingshow\.com(\/[^"]*)"/g;
 const SKIP_DIRS = new Set(['.git', 'node_modules', 'backups', 'cms', 'analysis', 'lx', 'pipeline', 'screenshots', 'todos', 'docs', 'plans']);
 const CANONICAL_ALIASES = {
     '/blog/2026-tax-changes': '/blog/2026-tax-changes-you-need-to-know',
@@ -121,6 +125,7 @@ function buildRedirectMap() {
         if (!redirect.permanent) continue;
         if (!redirect.source || !redirect.destination) continue;
         if (!redirect.source.startsWith('/') || !redirect.destination.startsWith('/')) continue;
+        if (redirect.has) continue;
         if (redirect.source.includes(':') || redirect.source.includes('*')) continue;
 
         const source = normalizePathname(redirect.source);
@@ -135,19 +140,44 @@ function buildRedirectMap() {
     return map;
 }
 
-function rewriteHref(match, quote, rawHref, redirectMap) {
-    const urlMatch = rawHref.match(/^([^?#]+)([?#].*)?$/);
-    if (!urlMatch) return match;
+/**
+ * Catch-all redirects such as `/markets/:path*` -> `/tax-strategies`. Only
+ * rules whose destination has no parameters are usable as a prefix map.
+ */
+function buildPrefixRedirects() {
+    const config = JSON.parse(fs.readFileSync(VERCEL_CONFIG, 'utf8'));
+    const prefixes = [];
 
-    const pathname = urlMatch[1];
-    const suffix = urlMatch[2] || '';
+    for (const redirect of config.redirects || []) {
+        if (!redirect.permanent || redirect.has) continue;
+        if (!redirect.source || !redirect.destination) continue;
+        const match = redirect.source.match(/^(\/[^:*]+?)\/:[a-z]+\*$/);
+        if (!match) continue;
+        if (!redirect.destination.startsWith('/') || redirect.destination.includes(':')) continue;
+        prefixes.push({ prefix: match[1], destination: normalizePathname(redirect.destination) });
+    }
+
+    return prefixes;
+}
+
+function resolveDestination(pathname, redirectMap, prefixRedirects) {
     const normalized = normalizePathname(pathname);
     let destination = redirectMap.get(pathname) || redirectMap.get(normalized);
 
-    if (!destination && pathname.endsWith('/')) {
+    if (!destination) {
+        const prefixed = prefixRedirects.find(({ prefix }) => (
+            normalized === prefix || normalized.startsWith(`${prefix}/`)
+        ));
+        if (prefixed) destination = prefixed.destination;
+    }
+
+    if (!destination && pathname.endsWith('/') && pathname !== '/') {
+        // trailingSlash:false makes `/blog/` a 308 to `/blog`, so link the clean path.
         const cleanPath = pathname.replace(/\/+$/, '');
-        const htmlTarget = path.join(ROOT_DIR, `${cleanPath.replace(/^\//, '')}.html`);
-        if (fs.existsSync(htmlTarget)) {
+        const relative = cleanPath.replace(/^\//, '');
+        const htmlTarget = path.join(ROOT_DIR, `${relative}.html`);
+        const indexTarget = path.join(ROOT_DIR, relative, 'index.html');
+        if (fs.existsSync(htmlTarget) || fs.existsSync(indexTarget)) {
             destination = cleanPath;
         }
     }
@@ -159,24 +189,54 @@ function rewriteHref(match, quote, rawHref, redirectMap) {
         }
     }
 
+    return destination || null;
+}
+
+function rewriteHref(match, quote, host, rawHref, redirectMap, prefixRedirects) {
+    const urlMatch = rawHref.match(/^([^?#]+)([?#].*)?$/);
+    if (!urlMatch) return match;
+
+    const pathname = urlMatch[1];
+    const suffix = urlMatch[2] || '';
+    const destination = resolveDestination(pathname, redirectMap, prefixRedirects);
+
     if (!destination) return match;
-    return `href=${quote}${destination}${suffix}${quote}`;
+    const prefix = host ? SITE_ORIGIN : '';
+    return `href=${quote}${prefix}${destination}${suffix}${quote}`;
+}
+
+/** JSON-LD `item` / `url` / `@id` values that point at a redirect source. */
+function rewriteStructuredData(html, ownPath, redirectMap, prefixRedirects) {
+    return html.replace(JSON_LD_URL_PATTERN, (match, key, pathname) => {
+        if (normalizePathname(pathname) === ownPath) return match;
+        const destination = resolveDestination(pathname, redirectMap, prefixRedirects);
+        if (!destination) return match;
+        return `"${key}": "${SITE_ORIGIN}${destination}"`;
+    });
 }
 
 function main() {
     const redirectMap = buildRedirectMap();
+    const prefixRedirects = buildPrefixRedirects();
     const htmlFiles = walkHtmlFiles(ROOT_DIR);
     let updatedFiles = 0;
     let replacements = 0;
 
     for (const filePath of htmlFiles) {
         const original = fs.readFileSync(filePath, 'utf8');
+        const ownPath = normalizePathname(
+            `/${path.relative(ROOT_DIR, filePath).split(path.sep).join('/')}`
+                .replace(/\/index\.html$/, '')
+                .replace(/\.html$/, '')
+        ) || '/';
         let fileReplacements = 0;
-        const updated = original.replace(/href=(["'])(\/[^"']+)\1/g, (match, quote, href) => {
-            const rewritten = rewriteHref(match, quote, href, redirectMap);
+        let updated = original.replace(HREF_PATTERN, (match, quote, host, href) => {
+            const rewritten = rewriteHref(match, quote, host, href, redirectMap, prefixRedirects);
             if (rewritten !== match) fileReplacements += 1;
             return rewritten;
         });
+        updated = rewriteStructuredData(updated, ownPath, redirectMap, prefixRedirects);
+        if (updated !== original && fileReplacements === 0) fileReplacements += 1;
 
         if (updated !== original) {
             fs.writeFileSync(filePath, updated, 'utf8');
