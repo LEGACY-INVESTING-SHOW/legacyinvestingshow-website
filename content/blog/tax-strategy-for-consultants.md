@@ -4,11 +4,11 @@ title: >-
   Profit
 titleTemplate: '%s | Legacy Investing Show'
 description: >-
-  A practical, decision-first guide for US consultants on business structure,
-  deductions, payroll optimization, and retirement sequencing to protect cash
-  flow in 2026.
+  A decision-first 2026 tax strategy for US consultants: entity choice, S-corp
+  break-even, protected deductions, payroll sequencing, and a 30-day setup
+  sprint.
 date: '2026-02-15'
-modifiedDate: '2026-02-15'
+modifiedDate: '2026-09-17'
 author: Preston Seo
 authorTitle: 'Founder, Legacy Investing Show'
 authorCredentials: Personal finance educator and strategy coach
@@ -125,39 +125,30 @@ statistics:
       Consultants with monthly categorization and recurring entries reduce
       back-office scramble and late adjustments.
 faq:
-  - question: How much can tax strategy for consultants save in taxes each year?
+  - question: At what profit should a consultant consider an S-corp election?
     answer: >-
-      Most households model three ranges: $2,000-$6,000 for basic optimization,
-      $7,000-$20,000 for coordinated deduction and withdrawal planning, and
-      $20,000+ for complex cases with entity, real-estate, or equity
-      compensation layers.
-  - question: >-
-      What income level usually makes tax strategy for consultants worth
-      implementing?
+      As a planning heuristic, evaluate it once net profit is above roughly
+      $90,000 to $110,000 and the business is stable. Below that, a clean
+      sole-owner process usually costs less than payroll and filing overhead.
+      Confirm with a CPA who knows your state.
+  - question: How much can an S-corp save a solo consultant?
     answer: >-
-      A practical threshold is around $90,000 of household taxable income. Above
-      that level, bracket management and deduction timing usually create enough
-      tax spread to justify quarterly planning.
-  - question: How long does implementation take for tax strategy for consultants?
+      In the worked example with $200,000 of net profit, a $120,000 salary and
+      $80,000 of distributions reduced estimated taxes by about $5,513, or
+      about $3,013 after $2,500 of payroll and compliance costs. Lower
+      salaries save more but raise reasonable-compensation risk.
+  - question: Which deductions should consultants track first?
     answer: >-
-      Most people can complete the first version in 14-30 days: week 1 data
-      cleanup, week 2 scenario modeling, and weeks 3-4 filing-position decisions
-      with advisor review.
-  - question: What records should I keep for tax strategy for consultants?
+      Software and tools used for delivery, training that improves billable
+      capacity, client travel and mileage with a daily log, a home office with
+      exclusive use, and business-connected health and liability coverage.
+      Split mixed-use spending in writing at month-end.
+  - question: What should I set up before optimizing anything?
     answer: >-
-      Keep 7 core records: prior return, year-to-date income report, deduction
-      log, account statements, basis records, estimated-payment confirmations,
-      and an annual strategy memo signed off before filing.
-  - question: What is the most common costly mistake with tax strategy for consultants?
-    answer: >-
-      The highest-cost error is making decisions in Q4 without modeling April
-      cash taxes. In practice, that mistake can create a 10%-25% miss between
-      expected and actual after-tax cash flow.
-  - question: How often should tax strategy for consultants be reviewed?
-    answer: >-
-      Use a monthly 30-minute KPI check and a quarterly 90-minute planning
-      review. If taxable income moves by more than 15%, rerun the tax model
-      immediately.
+      Separate business bank and card accounts, tag expenses into a handful of
+      categories, set a quarterly tax reserve transfer, and schedule estimated
+      payments. If bookkeeping is not current, fix that before any structure
+      change.
 toc: true
 tocDepth: 3
 relatedPosts:

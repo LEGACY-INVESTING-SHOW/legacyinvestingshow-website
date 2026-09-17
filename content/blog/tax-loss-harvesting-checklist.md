@@ -4,11 +4,11 @@ title: >-
   Plan
 titleTemplate: '%s | Legacy Investing Show'
 description: >-
-  A practical tax loss harvesting checklist with decision rules, wash-sale
-  guardrails, numeric examples, and a 30-day implementation plan for US taxable
+  A tax loss harvesting checklist with a go or no-go screen, wash-sale
+  guardrails, a worked $15,000 loss example, and a 30-day plan for US taxable
   investors.
 date: '2026-02-16'
-modifiedDate: '2026-02-16'
+modifiedDate: '2026-09-17'
 author: Preston Seo
 authorTitle: 'Founder, Legacy Investing Show'
 authorCredentials: Personal finance educator and strategy coach
@@ -110,28 +110,31 @@ statistics:
       Unused net capital losses can typically carry forward to future years
       until used, subject to annual ordering rules.
 faq:
-  - question: What is tax loss harvesting checklist?
+  - question: When is tax-loss harvesting worth doing?
     answer: >-
-      tax loss harvesting checklist is a practical strategy framework with clear
-      rules, milestones, and risk controls.
-  - question: Who benefits from tax loss harvesting checklist?
+      When you have realized gains this year or expect them soon, hold taxable
+      positions with meaningful unrealized losses, can buy a similar but not
+      substantially identical replacement, and can avoid wash sales across
+      every household account. Score the five factors 0 to 2 each; 8 to 10 is
+      a strong candidate.
+  - question: How much tax can harvesting a loss save?
     answer: >-
-      People with defined goals and consistent review habits usually benefit
-      most.
-  - question: How fast can I implement tax loss harvesting checklist?
-    answer: A workable first version is often possible in 2 to 6 weeks.
-  - question: What mistakes are common with tax loss harvesting checklist?
+      In the worked example, a $15,000 harvested loss offset $12,000 of
+      long-term gains at 15% ($1,800) and $3,000 of ordinary income at 24%
+      ($720), for $2,520 of federal tax saved against about $120 of trading
+      friction.
+  - question: What triggers a wash sale?
     answer: >-
-      Common mistakes include poor measurement, weak risk limits, and no review
-      cadence.
-  - question: Should I involve an advisor?
-    answer: 'For legal or tax-sensitive moves, use a qualified professional.'
-  - question: How often should I review progress?
-    answer: Monthly and quarterly reviews are common for disciplined execution.
-  - question: What should I track?
-    answer: 'Track outcomes, downside risk, and execution quality metrics.'
-  - question: Can beginners use this?
-    answer: Yes. Start simple and add complexity only after consistency.
+      Buying a substantially identical security within 30 days before or after
+      the loss sale, a 61-day window. Spouse accounts, IRAs, and automatic
+      dividend reinvestment can all trigger it, so pause reinvestment and
+      check recurring purchases first.
+  - question: When should I skip harvesting?
+    answer: >-
+      When most assets are in tax-deferred or Roth accounts, you are in a
+      temporarily low bracket, you already carry large carryforwards with no
+      near-term gains, replacements would cause major style drift, or you
+      cannot monitor all accounts for accidental repurchases.
 toc: true
 tocDepth: 3
 relatedPosts:

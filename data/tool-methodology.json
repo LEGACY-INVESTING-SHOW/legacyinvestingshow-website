@@ -1,1 +1,87 @@
-{}
+{
+  "description": "Per-tool methodology blocks injected into vendored /tools pages by scripts/add-tool-methodology.js. Each entry renders a 'How this works' section (method, assumptions, limitations), an optional sources list, and a short FAQ. FAQPage JSON-LD is emitted only when the page does not already carry one. Keyed by tool slug (tools/<slug>.html).",
+  "updated": "2026-09-17",
+  "tools": {
+    "claim-out-of-pocket-cost": {
+      "heading": "How this calculator works",
+      "intro": "The calculator applies your deductible and coverage limit to a single covered loss and shows how the bill splits between you and the insurer.",
+      "method": [
+        "The insurer's share is the loss minus your deductible, floored at zero and capped at the coverage limit: insurer pays min(max(0, loss − deductible), limit).",
+        "Your out-of-pocket cost is the loss minus the insurer payment. Below the deductible you pay everything; between the deductible and the limit you pay the deductible; once the loss passes the deductible plus the limit you pay the deductible plus every dollar over the limit.",
+        "The response curve sweeps the loss amount while holding your deductible and limit fixed, so you can see both turning points: the deductible, where the insurer starts paying, and the limit, where the insurer stops."
+      ],
+      "assumptions": [
+        "One covered loss with one flat-dollar deductible applied once per claim.",
+        "The coverage limit you enter is the limit that applies to this loss, including any category sub-limit for items such as jewelry, electronics, or water damage.",
+        "The loss amount is the payable loss your adjuster would use, after any depreciation on an actual cash value policy.",
+        "The claim is covered. Exclusions, claim denials, and appraisal disputes sit outside the calculation."
+      ],
+      "limitations": [
+        "Coinsurance percentages and health-plan out-of-pocket maximums are not modeled, so for medical claims it ignores cost-sharing splits and overstates what you pay once the maximum is reached.",
+        "Percentage deductibles, common for wind, hail, and hurricane coverage, must be converted to dollars first (for example 2% of the dwelling limit).",
+        "It does not estimate how filing a claim changes your renewal premium or claim-free discount, which can cost more than a small payout.",
+        "It handles one loss at a time. Aggregate annual limits, multiple claims in a policy year, and per-occurrence versus per-item deductibles are not combined."
+      ],
+      "faqs": [
+        {
+          "q": "What inputs does the claim out-of-pocket calculator need?",
+          "a": "Three numbers from your policy and the loss: the loss amount, your deductible, and the coverage limit that applies. Use the sub-limit rather than the headline limit when the damaged item has its own cap."
+        },
+        {
+          "q": "How do I read the response curve?",
+          "a": "The horizontal axis is the loss amount and the vertical axis is what you pay. The line rises one-for-one until the deductible, stays flat while the insurer pays, then rises one-for-one again once the loss passes the deductible plus the coverage limit. That second bend is the point to check against today's rebuild or replacement cost."
+        },
+        {
+          "q": "Why is my out-of-pocket cost higher than my deductible?",
+          "a": "Because the loss exceeded the coverage limit. Above the limit the insurer's payment stays fixed and every additional dollar of loss is yours, so your cost is the deductible plus the amount over the limit."
+        },
+        {
+          "q": "Can I use this for a health insurance claim?",
+          "a": "Only as a rough first pass. The calculator applies a deductible and a cap, but health plans add coinsurance percentages and an out-of-pocket maximum that stops your spending. For medical bills, treat the result as an estimate before the maximum applies and check your plan's summary of benefits."
+        }
+      ]
+    },
+    "money-calendar": {
+      "heading": "How this money calendar works",
+      "intro": "The calendar turns a year of money admin into twelve short monthly reviews with saved progress and optional calendar reminders.",
+      "method": [
+        "Each month has one review task with two prompts, ordered around the U.S. tax and benefits year: reset automatic investing in January, gather tax documents in February, check prior-year IRA and HSA contribution room in March, use the filed return to adjust withholding in April, then work through your cash cushion, midyear progress, debt and recurring costs, beneficiaries and insurance, income and tax forecasting, holiday budgeting, employer benefits, and a year-end review.",
+        "You choose a planning year (2026 or 2027) and a monthly review day from 1 to 28. The .ics download adds twelve all-day reminders on that day to Apple, Google, or Outlook Calendar, including past months so the file is complete.",
+        "Marking a month Done updates the completed count for that year. Progress is stored in your browser on this device and can be reset per year."
+      ],
+      "assumptions": [
+        "You are a U.S. taxpayer following the federal calendar. The dates listed (the usual April 15 filing and payment deadline, the quarterly estimated-payment dates, and December 31 year-end cutoffs) are general federal dates from IRS guidance as of September 2026.",
+        "Review days stop at 28 so the same day exists in every month.",
+        "The monthly prompts are a general routine, not a personalized plan, and assume a typical household with employer benefits, retirement accounts, and some taxable income."
+      ],
+      "limitations": [
+        "The reminders are planning prompts, not official deadlines. State tax dates, disaster-relief extensions, employer enrollment windows, and provider cutoffs are not included and must be confirmed separately.",
+        "It does not calculate whether you owe estimated tax installments, whether you are eligible to contribute to an IRA or HSA, or whether a contribution is deductible.",
+        "Progress lives in browser storage, so it does not sync across devices or browsers, and clearing site data removes it.",
+        "Rules were reviewed for 2026. Contribution limits, deadlines, and enrollment dates can change, so recheck them before relying on the 2027 calendar."
+      ],
+      "sources": [
+        { "label": "IRS: IRA year-end reminders", "href": "https://www.irs.gov/retirement-plans/ira-year-end-reminders" },
+        { "label": "IRS Publication 969: Health Savings Accounts", "href": "https://www.irs.gov/publications/p969" }
+      ],
+      "faqs": [
+        {
+          "q": "Does the money calendar send me reminders?",
+          "a": "Not by itself. Download the .ics file and import it into your calendar app, then set alerts there. The file contains twelve all-day events on your chosen review day."
+        },
+        {
+          "q": "Will my progress carry over to another device?",
+          "a": "No. Completed months are saved in this browser on this device only. If you switch devices or clear browsing data, the checklist starts empty for that year."
+        },
+        {
+          "q": "Are the dates on this page official tax deadlines?",
+          "a": "They are general federal dates, such as the usual April 15 individual filing deadline and the quarterly estimated-payment dates, taken from IRS guidance when the page was reviewed in September 2026. They are not a determination that you owe an installment, and exceptions or disaster relief can change them, so confirm with the IRS or your tax professional."
+        },
+        {
+          "q": "Which months matter most for taxes?",
+          "a": "February for gathering income forms and receipts, March for checking prior-year IRA and HSA room before the April deadline, April for using the filed return to adjust withholding or estimates, September for forecasting full-year income and payments, and December for year-end contributions, payroll cutoffs, and realized gains and losses."
+        }
+      ]
+    }
+  }
+}

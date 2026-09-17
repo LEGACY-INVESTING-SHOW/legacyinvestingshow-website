@@ -6,7 +6,7 @@ description: >-
   mixes, tax-aware account placement, rebalancing rules, and a 30-day action
   checklist.
 date: '2026-02-16'
-modifiedDate: '2026-02-16'
+modifiedDate: '2026-09-17'
 author: Preston Seo
 authorTitle: 'Founder, Legacy Investing Show'
 authorCredentials: Personal finance educator and strategy coach
@@ -104,28 +104,30 @@ statistics:
       Quarterly drift checks plus one deeper annual review can keep a plan on
       track with low maintenance.
 faq:
-  - question: What is asset allocation for busy professionals?
+  - question: What is a good asset allocation for a busy professional?
     answer: >-
-      asset allocation for busy professionals is a practical strategy framework
-      with clear rules, milestones, and risk controls.
-  - question: Who benefits from asset allocation for busy professionals?
+      Start from your timeline and risk capacity, not age alone. Sample mixes
+      in the guide range from 80/15/5 stocks, bonds, and cash for early-career
+      savers with stable W-2 income to 55% to 65% stocks for people within 10
+      years of retirement. If torn between two mixes, start with the more
+      conservative one.
+  - question: How often should I rebalance?
     answer: >-
-      People with defined goals and consistent review habits usually benefit
-      most.
-  - question: How fast can I implement asset allocation for busy professionals?
-    answer: A workable first version is often possible in 2 to 6 weeks.
-  - question: What mistakes are common with asset allocation for busy professionals?
+      By rule, not by headline. Set drift bands such as 5 percentage points or
+      25% of a sleeve's target weight, check quarterly, and do a deeper annual
+      review after bonus season or tax filing. Direct new contributions to
+      underweight sleeves to avoid forced selling.
+  - question: Which accounts should hold bonds vs stocks?
     answer: >-
-      Common mistakes include poor measurement, weak risk limits, and no review
-      cadence.
-  - question: Should I involve an advisor?
-    answer: 'For legal or tax-sensitive moves, use a qualified professional.'
-  - question: How often should I review progress?
-    answer: Monthly and quarterly reviews are common for disciplined execution.
-  - question: What should I track?
-    answer: 'Track outcomes, downside risk, and execution quality metrics.'
-  - question: Can beginners use this?
-    answer: Yes. Start simple and add complexity only after consistency.
+      Tax-inefficient assets such as taxable bond funds and REITs usually
+      belong in tax-advantaged accounts, while broad equity index funds are
+      often better in taxable accounts thanks to qualified dividends and low
+      turnover. Keep the total allocation consistent across all accounts.
+  - question: How much cash should I hold before investing the rest?
+    answer: >-
+      About 3 to 6 months of core expenses with stable W-2 income, or 6 to 12
+      months if pay depends on commissions, bonuses, or self-employment. Money
+      needed within three years generally should not be in volatile assets.
 toc: true
 tocDepth: 3
 relatedPosts:

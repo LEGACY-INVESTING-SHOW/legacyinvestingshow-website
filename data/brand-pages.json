@@ -1,0 +1,953 @@
+{
+  "_notes": [
+    "Source data for scripts/build-brand-pages.js. Output: five root-level brand-intent pages (<slug>.html).",
+    "Numbers wrapped in {{placeholders}} are filled by the builder from data/trustpilot-summary.json, data/reviews-videos.json and data/case-study-manifest.json so they stay in sync with /reviews.",
+    "HARD RULE: no program price, range, or hint anywhere in this file. Pricing is not published; it is discussed on the strategy call.",
+    "Inline links use [text](href) syntax. The builder renders them in HTML and strips them to plain text in JSON-LD."
+  ],
+  "shared": {
+    "lastUpdated": "2026-09-17",
+    "ctaHref": "https://join.managemoney101.com/tax-strategies",
+    "ctaLabel": "Join the free tax masterclass",
+    "programHref": "/legacy-wealth-blueprint",
+    "resultsDisclaimer": "Every result published is self-reported and individual. It is not typical and it is not a promise.",
+    "educationalDisclaimer": "Educational content, not individual tax, legal, or investment advice. Confirm any strategy with a qualified professional before you act on it.",
+    "bbb": {
+      "text": "Legacy Investing Show, LLC, based in Herriman, Utah. The Better Business Bureau lists it under Real Estate School. The company is not BBB accredited.",
+      "sourceLabel": "BBB status as stated on the reviews page and in the site's llms.txt",
+      "sourceHref": "/reviews"
+    },
+    "reviewsPageCounts": {
+      "writtenClientResults": 44,
+      "trustpilotReviewsReproduced": 58,
+      "wealthPlanPages": 76,
+      "headlineFigures": 8
+    },
+    "bio": {
+      "facts": [
+        "Founded Legacy Investing Show in 2020 to teach frameworks rather than single tactics.",
+        "Paid off $80,000 of his own debt between 2017 and 2019 while employed full time.",
+        "Built a $15M+ real estate portfolio with his wife; his first property was a four-plex house hack bought in September 2018.",
+        "Parents immigrated from Korea; he was raised in Utah and came from a corporate software sales background.",
+        "2,000+ students guided and 6.5M+ followers across social channels.",
+        "Teaches tax strategy, investment planning, business structures, retirement accounts, debt management, and alternative income. Airbnb arbitrage is about 20% of the work."
+      ],
+      "sourceLabel": "About Preston Seo",
+      "sourceHref": "/about/preston-seo",
+      "secondSourceLabel": "the longer story",
+      "secondSourceHref": "/about"
+    },
+    "personSameAs": [
+      "https://www.youtube.com/@LegacyInvestingShow",
+      "https://www.instagram.com/thelegacyinvestingshow/",
+      "https://www.facebook.com/thelegacyinvestingshow",
+      "https://www.tiktok.com/@thelegacyinvestingshow",
+      "https://www.linkedin.com/in/preston-seo/"
+    ],
+    "organizationSameAs": [
+      "https://www.youtube.com/@LegacyInvestingShow",
+      "https://www.instagram.com/thelegacyinvestingshow/",
+      "https://www.facebook.com/thelegacyinvestingshow",
+      "https://www.tiktok.com/@thelegacyinvestingshow",
+      "https://www.linkedin.com/company/legacy-investing-show",
+      "https://www.trustpilot.com/review/firstairbnb.com"
+    ],
+    "caseStudySituations": {
+      "stephanie-dailey-legacy-wealth-blueprint-case-study": "Software engineer; household W-2 income over $300,000 plus a consulting business",
+      "albert-legacy-wealth-blueprint-case-study": "ER physician in California with a combined bracket he puts near 50%",
+      "abigail-legacy-wealth-blueprint-case-study": "Former oil and gas engineer; household withholdings of $37,000 to $38,000",
+      "shawn-legacy-wealth-blueprint-roi-case-study": "Business owner with Airbnbs, rentals, crypto, and stocks who came for the tax side"
+    },
+    "caseStudyNote": "Shawn's interview carries no figures because it was recorded at the start of his plan, not the end. The site publishes it anyway.",
+    "includedTerm": "Lifetime access to the video curriculum. Twelve months of live coaching, community, and a dedicated guide.",
+    "included": [
+      "A custom 12-month Wealth Strategy Snapshot: a written financial action plan built from your income, accounts, debt, and goals, which says what to do first.",
+      "100+ video lessons across five pillars, with lifetime access: tax optimisation, debt and credit leverage, income diversification, investment vehicles, and protection.",
+      "Weekly live coaching calls with replays. Every past recording is included.",
+      "A dedicated Legacy Wealth Guide: an onboarding call, one direct point of contact, and an accountability check-in every two weeks.",
+      "The Wealth Circle private community for twelve months.",
+      "An optional Prior Year Tax Return Diagnostic: a short review of previous returns that identifies missed strategies, delivered in weeks two to three.",
+      "A CPA Implementation Brief, delivered around months ten to eleven, that you hand to your own tax professional before filing season. The team does not contact your CPA directly.",
+      "The Legacy Wealth AI Advisor, plus SOPs, templates, and checklists: a CPA vetting checklist, a tax planning timeline, a debt settlement guide, and a financial freedom calculator.",
+      "A partner network at client pricing (tax strategist, estate attorney, credit advisor, entity setup partner), including a 45 to 60 minute private strategy session. Confirm scope and any separate fees before you engage one.",
+      "A second membership for a spouse or direct family member at no extra charge."
+    ],
+    "pillars": [
+      "Tax optimisation: entity structures (LLC, S-Corp), deductions and write-offs, common mistakes, tax-advantaged accounts, W-2 and business tax strategies.",
+      "Debt and credit leverage: debt elimination systems, negotiating, refinancing and balance transfers, credit repair, business credit.",
+      "Income diversification: side business frameworks, passive income, income stacking, funding strategies.",
+      "Investment vehicles: stock market basics, real estate step by step, retirement accounts (401(k), Roth, HSA, and lesser-known accounts).",
+      "Protection: asset protection, insurance optimisation, estate planning and trusts, hiring the right advisors, portfolio automation."
+    ],
+    "pricing": [
+      "Legacy Investing Show does not publish a price for the Legacy Wealth Blueprint, and this page does not either. The site's stated position is that programs are matched to different situations and goals rather than sold off a single published menu, that custom options, payment plans, and financing exist, and that what someone invests depends on their picture and how they choose to pay.",
+      "The number is discussed on the strategy call. Before that call, decide what a written plan, twelve months of coaching, a dedicated guide, and a CPA brief would need to be worth to you, and read the documented client results with the disclaimer attached. Then compare what you hear against that, not against the sales pitch."
+    ],
+    "refund": [
+      "The site's terms of service say this and only this: access to paid products and services is governed by the offer terms shown at checkout, including any refund or review policies presented there.",
+      "The program page adds one instruction: ask on the call about the No Client Left Behind Guarantee and get its current written terms, including what actions it requires, how a return on your program investment is measured, and when continued support applies.",
+      "No other refund terms are published on this site. Do not rely on anything you have not seen in writing at checkout."
+    ],
+    "fitFor": [
+      "You earn roughly $100K to $200K or more from a salary, self-employment, or a business, and you suspect your return is leaving strategies on the table.",
+      "You want one written plan that covers taxes, debt, income, investments, and protection, in the order to do them, rather than tactics collected from videos.",
+      "You keep your CPA and want a brief to hand them before filing season, not a new preparer.",
+      "You will show up to weekly calls and bi-weekly check-ins and do the implementation between them.",
+      "You are a business owner deciding how to structure and pay yourself, or a high earner paying more tax than you expected to."
+    ],
+    "fitNot": [
+      "You want tax preparation or filing. The program does not file returns and does not contact your CPA.",
+      "You want passive, index-fund-only advice with no changes to entities, accounts, debt, or income.",
+      "You will not implement. The plan is written for you; the actions are yours.",
+      "You need a published price before any conversation. Pricing is only discussed on the strategy call.",
+      "You want a done-for-you property purchase or a side business first. Those are different programs (STR Concierge and Airbnb Ascension); ask on the call which one fits.",
+      "You expect the case-study numbers. They are individual and self-reported, and one of the four named clients reports no figure at all."
+    ],
+    "criticisms": [
+      {
+        "c": "It is high-ticket coaching, and high-ticket coaching has a bad reputation.",
+        "a": "Fair. The price is not published, so treat the strategy call as a two-way interview. Ask for the written offer terms, ask how the guarantee is measured, and ask which strategies apply to your last return before you decide. Judge the offer on the deliverables (a written plan, weekly coaching, a dedicated guide, a CPA brief) and on the documented client results, not on how the call feels."
+      },
+      {
+        "c": "The results are self-reported and not typical.",
+        "a": "Correct, and the site says so on every results page: every result published is self-reported and individual; it is not typical and it is not a promise. The four named case studies give the figures the clients state themselves, and one of them, Shawn, gives no figure at all because his interview predates implementation."
+      },
+      {
+        "c": "Most video testimonials are interviews Preston Seo records himself.",
+        "a": "True. The {{videoCount}} client interviews on the reviews page are conversations with Preston. The independent signal is Trustpilot, which he does not control: a {{trustScore}} TrustScore from {{totalReviews}} reviews, {{onePct}}% of them one star. Read both, and read the one-star reviews on Trustpilot directly."
+      },
+      {
+        "c": "One-star reviews mention refunds, slow replies, and a price that moved during the sales call.",
+        "a": "They do, and the reviews page lists those complaints rather than hiding them. The practical response: get the offer terms, including any refund or review policy, in writing at checkout; ask for the guarantee's current written terms on the call; and if the number you hear changes during the conversation, ask why before you sign anything."
+      },
+      {
+        "c": "You still have to implement.",
+        "a": "Yes. Stephanie Dailey opened separate business bank accounts, started keeping real books, and put her kids on payroll. Abigail recategorised every transaction and rebuilt entity and estate work she had set up badly years earlier. The program plans and coaches; it does not file your return or run your business."
+      },
+      {
+        "c": "It is not for people who want passive, index-fund-only advice.",
+        "a": "Right. If your plan is to max a 401(k), hold index funds, and never touch entities, real estate, or debt structure, most of the curriculum is not for you. The investment pillar covers stock market basics and retirement accounts, but the program's weight sits in tax, entity, debt, and protection decisions."
+      },
+      {
+        "c": "Legacy Investing Show is not BBB accredited.",
+        "a": "Correct. The BBB lists Legacy Investing Show, LLC in Herriman, Utah under Real Estate School, and the company is not accredited. Accreditation is something a business applies for; not having it is not the same as a complaint record. Check the BBB profile directly for any complaints and how they were handled."
+      }
+    ],
+    "comparison": {
+      "caption": "Three ways to get tax and wealth decisions made. The right column depends on what you need done and who you want doing it.",
+      "columns": [
+        "Factor",
+        "Legacy Wealth Blueprint",
+        "A CPA",
+        "Do it yourself"
+      ],
+      "rows": [
+        {
+          "factor": "What you get",
+          "lwb": "A written 12-month plan built from your numbers, 100+ lessons across five pillars, weekly live coaching, a dedicated guide, a community, and a CPA Implementation Brief for your own tax professional.",
+          "cpa": "Tax preparation and filing. Advice on request. Planning if you ask for it and the firm offers it.",
+          "diy": "Whatever you read, watch, and work out on your own."
+        },
+        {
+          "factor": "Who does the work",
+          "lwb": "You implement. The program educates, plans, and holds you accountable. The partner network and your CPA handle their parts.",
+          "cpa": "The CPA prepares and files. Changes to your income, entities, and accounts still land on you.",
+          "diy": "You, start to finish."
+        },
+        {
+          "factor": "Tax filing",
+          "lwb": "Not included. You keep your CPA. The program does not file returns or contact your CPA.",
+          "cpa": "Included. This is the core service.",
+          "diy": "Your own filing or tax software."
+        },
+        {
+          "factor": "Scope",
+          "lwb": "Taxes, debt, income, investments, and protection in one plan, with an order to do them in.",
+          "cpa": "Usually taxes. Some firms add planning, retirement, or bookkeeping.",
+          "diy": "As wide as your time and reading allow."
+        },
+        {
+          "factor": "Ongoing support",
+          "lwb": "Twelve months of weekly calls, bi-weekly check-ins, and a community. Lifetime access to the curriculum.",
+          "cpa": "Annual or quarterly touchpoints in most engagements.",
+          "diy": "None, unless you build it."
+        },
+        {
+          "factor": "Best for",
+          "lwb": "Someone earning roughly $100K to $200K or more who wants to change how taxes, debt, and accounts work together, and will do the work.",
+          "cpa": "Someone who mainly needs accurate filing and answers to specific questions, or who already has a plan to execute.",
+          "diy": "Someone with time, discipline, and a simple financial picture."
+        },
+        {
+          "factor": "Weak spot",
+          "lwb": "Requires implementation. Results are individual. The price is not published, so you need a call to know the number.",
+          "cpa": "Many CPAs are compliance-focused; strategy is not automatic. Case studies on this site describe strategies clients say their CPAs missed.",
+          "diy": "No one checks your work, so blind spots persist."
+        }
+      ]
+    },
+    "trustpilotQuotes": [
+      {
+        "reviewId": "6aa54752fc993d9933e464e0",
+        "maxChars": 400
+      },
+      {
+        "reviewId": "6aa187e08566d062b61d9766",
+        "maxChars": 400
+      },
+      {
+        "reviewId": "6910d3c5d246c5913ea6cc30",
+        "maxChars": 262
+      },
+      {
+        "reviewId": "697f81a99b185ee290eba17a",
+        "maxChars": 400
+      }
+    ],
+    "trustpilotQuotesNote": "A large share of the four and five star reviews describe Preston's three-day tax challenge rather than the twelve-month Legacy Wealth Blueprint itself. Read each review for which one it is about.",
+    "lwbPageQuotes": [
+      {
+        "text": "$20k tax refund after implementing the tax strategies and advice here. That was not solely because of this course but the course helped a lot. It helped me get off my rear and get more organized.",
+        "name": "Stephanie Dailey",
+        "date": "March 2026"
+      },
+      {
+        "text": "Before I got to Module 2, I used to wait for the statement balance and then pay it off in full. But after learning more, I started paying it down before the statement closes to lower my credit utilization - and it boosted my score by 50 points!",
+        "name": "Ivanka Sangria",
+        "date": "June 2025"
+      },
+      {
+        "text": "Went over customized wealth blueprint with Jeff. Much kudos to Jeff! He was very thorough and provided lots of helpful information. Going to view rental properties tomorrow.",
+        "name": "Nim Shahid",
+        "date": "February 2026"
+      },
+      {
+        "text": "I have set up recurrent automatic investments for DCA, rebalanced my 401K portfolio, frozen my credit with the 3 credit bureaus, and asked about the back door Roth IRA option. My next step is to establish a 2-3 year cash reserve fund.",
+        "name": "Valerie Ann Hopkins",
+        "date": "March 2026"
+      }
+    ],
+    "lwbPageQuotesSource": {
+      "label": "the Legacy Wealth Blueprint program page",
+      "href": "/legacy-wealth-blueprint"
+    },
+    "clusterLinks": [
+      {
+        "href": "/preston-seo-reviews",
+        "label": "Preston Seo reviews"
+      },
+      {
+        "href": "/is-preston-seo-legit",
+        "label": "Is Preston Seo legit?"
+      },
+      {
+        "href": "/legacy-wealth-blueprint-reviews",
+        "label": "Legacy Wealth Blueprint reviews"
+      },
+      {
+        "href": "/legacy-wealth-blueprint-cost",
+        "label": "Legacy Wealth Blueprint cost"
+      },
+      {
+        "href": "/manage-money-101-reviews",
+        "label": "Manage Money 101 reviews"
+      }
+    ],
+    "siteLinks": [
+      {
+        "href": "/reviews",
+        "label": "Reviews and client results: the full proof page, with every interview, quote, and wealth-plan page"
+      },
+      {
+        "href": "/legacy-wealth-blueprint",
+        "label": "Legacy Wealth Blueprint: the program page, with the 11-minute walkthrough"
+      },
+      {
+        "href": "/about",
+        "label": "About Preston Seo: the story from $80K in debt to the portfolio"
+      },
+      {
+        "href": "/about/preston-seo",
+        "label": "Preston Seo: credentials, track record, and every account he publishes from"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "slug": "preston-seo-reviews",
+      "title": "Preston Seo Reviews: What Clients Say, With Sources",
+      "h1": "Preston Seo Reviews: What Clients Say, With Sources",
+      "description": "Preston Seo reviews with sources: the Trustpilot score and star split, BBB status, four named Legacy Wealth Blueprint case studies, and the one-star complaints.",
+      "query": "preston seo reviews",
+      "verdict": [
+        "Reviews of Preston Seo and Legacy Investing Show are mostly positive and not unanimous. On Trustpilot the company holds a {{trustScore}} TrustScore from {{totalReviews}} reviews: {{fivePct}}% five star, {{onePct}}% one star. {{caseStudyCount}} named Legacy Wealth Blueprint clients give their own figures on video, and {{videoCount}} client interviews are published in full.",
+        "The one-star reviews name four things: refunds, slow replies, a price that moved during the sales call, and the fact that most video testimonials are interviews Preston records himself. This page lays out both sides with a source you can open for every claim."
+      ],
+      "lede": "Every number here comes from a page you can open: the Trustpilot profile, the reviews page, the program page, or a named case study.",
+      "sections": {
+        "evidence": true,
+        "fit": true,
+        "included": true,
+        "pricing": true,
+        "refund": true,
+        "criticisms": true,
+        "comparison": true
+      },
+      "customSections": [
+        {
+          "id": "positive-and-negative",
+          "position": "afterEvidence",
+          "heading": "What the positive and negative reviews say",
+          "paragraphs": [
+            "The reviews page summarises the split plainly. The positive reviews name three things: the tax strategies, the community, and the step-by-step plan. The one-star reviews repeat four: refunds, slow replies, a price that moved during the sales call, and the fact that most video testimonials are interviews Preston Seo records himself.",
+            "The {{trustpilotReviewsReproduced}} four and five star reviews are reproduced as text on [the reviews page](/reviews). The one and three star reviews are not; they are on [Trustpilot]({{trustpilotUrl}}), and you should read them there before any call."
+          ],
+          "quotes": "trustpilot"
+        },
+        {
+          "id": "in-their-own-words",
+          "position": "afterEvidence",
+          "heading": "Legacy Wealth Blueprint clients in their own words",
+          "paragraphs": [
+            "These four quotes are published on the program page with the client's name and the month. They describe actions as much as outcomes: getting organised, paying cards down before the statement closes, rebalancing a 401(k), freezing credit, viewing rental properties."
+          ],
+          "quotes": "lwbPage"
+        },
+        {
+          "id": "how-to-read-reviews",
+          "position": "beforeFaq",
+          "heading": "How to read reviews of a coaching program",
+          "steps": [
+            "Separate the free events from the paid program. Many Trustpilot reviews describe the three-day tax challenge; the Legacy Wealth Blueprint is a twelve-month membership. Read each review for which one it covers.",
+            "Weight independent sources over first-party ones. Trustpilot and the BBB are outside Preston's control. The video interviews are his recordings, so treat them as detailed, named, and first-party.",
+            "Look for actions, not just outcomes. Stephanie Dailey's case study lists what she did: business bank accounts, real books, a startup cost deduction, kids on payroll. A review that names actions is easier to test against your own situation.",
+            "Read the worst reviews last, and in full. The four complaints they raise (refunds, replies, a moving price, first-party testimonials) are the questions to bring to the call.",
+            "Apply the disclaimer literally. Every published result is self-reported and individual. If a figure would only be worth it to you at the top of the range, assume you will not get the top of the range."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Are Preston Seo reviews real?",
+          "a": "The Trustpilot profile for Legacy Investing Show By Preston Seo is claimed, Trustpilot records no incentivised reviews collected for it, and Preston Seo does not control that page. The {{videoCount}} video interviews on the reviews page are conversations he records himself, so treat them as first-party. The {{caseStudyCount}} Legacy Wealth Blueprint case studies name the client and give the figures in the client's own words."
+        },
+        {
+          "q": "What do Preston Seo reviews say?",
+          "a": "On Trustpilot, {{fivePct}}% of the {{totalReviews}} reviews are five star, {{fourPct}}% four star, {{threePct}}% three star, and {{onePct}}% one star. Positive reviews name the tax strategies, the community, and the step-by-step plan. One-star reviews repeat refunds, slow replies, a price that moved during the sales call, and testimonials being interviews Preston records himself."
+        },
+        {
+          "q": "Is Preston Seo legit?",
+          "a": "On the evidence, yes: a registered company (Legacy Investing Show, LLC, Herriman, Utah), a claimed Trustpilot profile with a {{trustScore}} score, a BBB listing, named clients on video, and a founder who publishes under his own name. Legit does not mean right for you; the full evidence-based answer is at /is-preston-seo-legit."
+        },
+        {
+          "q": "Where can I read Legacy Wealth Blueprint reviews?",
+          "a": "The four named case studies, {{writtenClientResults}} written client results, and the Trustpilot figures are collected at /legacy-wealth-blueprint-reviews, and the full proof page with every interview and wealth-plan page is at /reviews."
+        },
+        {
+          "q": "Why are there one-star reviews?",
+          "a": "{{onePct}}% of the {{totalReviews}} Trustpilot reviews are one star. The reviews page says they repeat four complaints: refunds, slow replies, a price that moved during the sales call, and the fact that most video testimonials are recorded by Preston himself. Read them on Trustpilot before you book a call."
+        },
+        {
+          "q": "Are the results in Preston Seo reviews typical?",
+          "a": "No. Every result published is self-reported and individual. It is not typical and it is not a promise. Income, family size, state, business activity, and how much of the plan a client implements all change the outcome."
+        },
+        {
+          "q": "How much does Legacy Wealth Blueprint cost?",
+          "a": "The price is not published. Pricing is discussed on the strategy call, where the program is matched to your situation. What is published is what the membership includes and who it is built for; see /legacy-wealth-blueprint-cost."
+        },
+        {
+          "q": "What is Manage Money 101?",
+          "a": "Manage Money 101 is the free tax masterclass and registration funnel at join.managemoney101.com that introduces the tax-strategy material and leads to a strategy call. It is not a separate paid program, so its reviews are the company's reviews; see /manage-money-101-reviews."
+        }
+      ],
+      "pageLinks": [
+        {
+          "href": "/blog/preston-seo-background-guide",
+          "label": "Preston Seo background guide: founder context and how to review his public material"
+        },
+        {
+          "href": "/blog/preston-seo-legacy-investing-show",
+          "label": "Preston Seo and Legacy Investing Show: how the founder and the brand connect"
+        },
+        {
+          "href": "/blog/preston-seo-latest",
+          "label": "Preston Seo latest: current focus and platforms"
+        },
+        {
+          "href": "/blog/stephanie-dailey-legacy-wealth-blueprint-case-study",
+          "label": "Stephanie Dailey case study: over $20,000 saved in taxes in year one"
+        },
+        {
+          "href": "/blog/albert-legacy-wealth-blueprint-case-study",
+          "label": "Albert case study: 25% net worth growth and home insurance cut in half"
+        },
+        {
+          "href": "/blog/abigail-legacy-wealth-blueprint-case-study",
+          "label": "Abigail case study: just under $100,000 in first-year ROI by her own calculation"
+        },
+        {
+          "href": "/blog/shawn-legacy-wealth-blueprint-roi-case-study",
+          "label": "Shawn case study: the tax knowledge his CPAs were not giving him"
+        },
+        {
+          "href": "/blog/88k-tax-savings-cpa-missed-case-study",
+          "label": "$88K tax savings case study: what a CPA missed for a $300K W-2 earner"
+        }
+      ]
+    },
+    {
+      "slug": "is-preston-seo-legit",
+      "title": "Is Preston Seo Legit? An Evidence-Based Answer",
+      "h1": "Is Preston Seo Legit? An Evidence-Based Answer",
+      "description": "Is Preston Seo legit? The registered company, Trustpilot score, BBB listing, named clients on video, and the caveats: unpublished pricing, self-reported results.",
+      "query": "is preston seo legit",
+      "verdict": [
+        "Yes, on the evidence available. Legacy Investing Show, LLC is a registered company in Herriman, Utah, with a claimed Trustpilot profile ({{trustScore}} from {{totalReviews}} reviews), a Better Business Bureau listing (not accredited), {{caseStudyCount}} named clients on video with written case studies, and a founder who publishes under his own name on YouTube, Instagram, Facebook, TikTok, and LinkedIn.",
+        "Legit is not the same as right for you. The programs are high-ticket coaching, the price is not published, results are self-reported, and {{onePct}}% of Trustpilot reviews are one star. The tests below show where the record is strong and where it is only partial."
+      ],
+      "lede": "Eight tests a sceptical buyer should run on any financial educator, applied to Preston Seo with the source for each answer.",
+      "sections": {
+        "evidence": true,
+        "fit": true,
+        "included": true,
+        "pricing": true,
+        "refund": true,
+        "criticisms": true,
+        "comparison": true
+      },
+      "customSections": [
+        {
+          "id": "legitimacy-tests",
+          "position": "afterVerdict",
+          "heading": "Eight legitimacy tests, scored",
+          "paragraphs": [
+            "Legit is a vague word, so here it is broken into questions with checkable answers. Pass means the public record supports it. Partial means the record exists but is incomplete or first-party. The point is not the score; it is knowing which questions still need an answer on the call."
+          ],
+          "table": {
+            "columns": [
+              "Test",
+              "What the record shows",
+              "Read"
+            ],
+            "rows": [
+              [
+                "A real, findable company",
+                "Legacy Investing Show, LLC, Herriman, Utah. Listed by the BBB under Real Estate School. Trustpilot profile claimed.",
+                "Pass"
+              ],
+              [
+                "A founder with a public track record",
+                "Preston Seo founded the company in 2020, publishes under his own name on five platforms, paid off $80,000 of debt between 2017 and 2019, and built a $15M+ real estate portfolio with his wife.",
+                "Pass"
+              ],
+              [
+                "Independent reviews you can read",
+                "{{totalReviews}} Trustpilot reviews, {{trustScore}} TrustScore, one-star reviews visible on the profile. Preston does not control the page.",
+                "Pass"
+              ],
+              [
+                "Named clients, not anonymous quotes",
+                "{{caseStudyCount}} Legacy Wealth Blueprint clients on video with written case studies; {{videoCount}} interviews in total. The interviews are recorded by Preston himself.",
+                "Pass, first-party"
+              ],
+              [
+                "Published pricing",
+                "Not published. Discussed on the strategy call.",
+                "Partial"
+              ],
+              [
+                "Published refund terms",
+                "The terms say offer terms, including any refund or review policies, are shown at checkout. Nothing more is published.",
+                "Partial"
+              ],
+              [
+                "Third-party accreditation",
+                "Not BBB accredited.",
+                "No"
+              ],
+              [
+                "Results you can verify",
+                "Self-reported by clients, published with the disclaimer that they are individual, not typical, and not a promise.",
+                "Partial"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "what-to-check-yourself",
+          "position": "afterEvidence",
+          "heading": "What to check for yourself before any call",
+          "steps": [
+            "Open the Trustpilot profile and filter to one star. Read all of them. The complaints repeat, which tells you what to ask about.",
+            "Open one full case study, for example [Stephanie Dailey's](/blog/stephanie-dailey-legacy-wealth-blueprint-case-study), and list the actions she took. Decide whether you would take them.",
+            "Watch the 11-minute walkthrough on the [program page](/legacy-wealth-blueprint). It explains the five pillars and what happens on the call.",
+            "Write down three questions the site does not answer: the price, the refund terms, and how the guarantee is measured. Those are the call.",
+            "Decide your own threshold before you hear a number. What would a written plan, weekly coaching, and a CPA brief need to be worth to you?"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is Preston Seo legit?",
+          "a": "Yes, on the public record: Legacy Investing Show, LLC is a registered company in Herriman, Utah, its Trustpilot profile is claimed and scores {{trustScore}} from {{totalReviews}} reviews, the BBB lists it, {{caseStudyCount}} named clients appear on video with written case studies, and Preston Seo publishes under his own name. The open questions are price, refund terms, and whether the program fits you."
+        },
+        {
+          "q": "Is Legacy Investing Show a registered company?",
+          "a": "Yes. The reviews page describes Legacy Investing Show, LLC as a registered company based in Herriman, Utah that sells paid courses and coaching, and the Better Business Bureau lists it under Real Estate School."
+        },
+        {
+          "q": "Is Legacy Investing Show BBB accredited?",
+          "a": "No. The BBB lists Legacy Investing Show, LLC in Herriman, Utah under Real Estate School, and the company is not BBB accredited. Accreditation is something a business applies for; check the BBB profile directly for any complaints."
+        },
+        {
+          "q": "Are Preston Seo reviews real?",
+          "a": "The Trustpilot profile is claimed and Trustpilot records no incentivised reviews collected for it. The {{videoCount}} client interviews are recorded by Preston, so they are first-party; the {{caseStudyCount}} Legacy Wealth Blueprint case studies name the client and quote them directly. Read the full breakdown at /preston-seo-reviews."
+        },
+        {
+          "q": "Are the testimonials independent?",
+          "a": "The video interviews are not; Preston records them himself, and the reviews page says so. Trustpilot and the BBB are independent. Weight them accordingly."
+        },
+        {
+          "q": "Does Legacy Wealth Blueprint have a refund policy?",
+          "a": "The site's terms say only that access to paid products and services is governed by the offer terms shown at checkout, including any refund or review policies presented there. The program page says to ask on the call about the No Client Left Behind Guarantee and get its written terms. Nothing else is published."
+        },
+        {
+          "q": "How much does Legacy Wealth Blueprint cost?",
+          "a": "The price is not published. It is discussed on the strategy call, where the program is matched to your situation. See /legacy-wealth-blueprint-cost for what is included and how to evaluate value before the call."
+        },
+        {
+          "q": "Is Legacy Wealth Blueprint legit?",
+          "a": "It is a real twelve-month program with published deliverables (a written plan, 100+ lessons, weekly coaching, a dedicated guide, a CPA brief), {{caseStudyCount}} named clients on video, and {{writtenClientResults}} written client results on the reviews page. Whether it is worth it depends on your income, your willingness to implement, and the number you hear on the call."
+        }
+      ],
+      "pageLinks": [
+        {
+          "href": "/blog/preston-seo-background-guide",
+          "label": "Preston Seo background guide: founder context and how to review his public material"
+        },
+        {
+          "href": "/blog/preston-seo-legacy-investing-show",
+          "label": "Preston Seo and Legacy Investing Show: how the founder and the brand connect"
+        },
+        {
+          "href": "/blog/preston-seo-latest",
+          "label": "Preston Seo latest: current focus and platforms"
+        },
+        {
+          "href": "/blog/stephanie-dailey-legacy-wealth-blueprint-case-study",
+          "label": "Stephanie Dailey case study: over $20,000 saved in taxes in year one"
+        },
+        {
+          "href": "/blog/albert-legacy-wealth-blueprint-case-study",
+          "label": "Albert case study: 25% net worth growth and home insurance cut in half"
+        },
+        {
+          "href": "/blog/abigail-legacy-wealth-blueprint-case-study",
+          "label": "Abigail case study: just under $100,000 in first-year ROI by her own calculation"
+        },
+        {
+          "href": "/blog/shawn-legacy-wealth-blueprint-roi-case-study",
+          "label": "Shawn case study: the tax knowledge his CPAs were not giving him"
+        }
+      ]
+    },
+    {
+      "slug": "legacy-wealth-blueprint-reviews",
+      "title": "Legacy Wealth Blueprint Reviews: Case Studies and Ratings",
+      "h1": "Legacy Wealth Blueprint Reviews: Case Studies, Ratings, and Criticisms",
+      "description": "Legacy Wealth Blueprint reviews: four named case studies with the figures clients state, 44 written client results, the Trustpilot score, and honest criticisms.",
+      "query": "preston seo legacy wealth blueprint reviews",
+      "verdict": [
+        "Legacy Wealth Blueprint reviews come from three places: {{caseStudyCount}} named clients interviewed on video with written case studies, {{writtenClientResults}} written client results from the program community, and the company-wide Trustpilot profile ({{trustScore}} from {{totalReviews}} reviews).",
+        "The named clients report over $20,000 in first-year tax savings (Stephanie Dailey), just under $100,000 in first-year ROI by her own calculation (Abigail), and 25% net worth growth (Albert). Those figures are individual and self-reported. The criticisms are the ones any coaching program earns: the price is not published, results vary, and you have to implement."
+      ],
+      "lede": "What the four named clients did, what they say it was worth, what the Trustpilot profile shows, and the objections a careful buyer should raise.",
+      "sections": {
+        "evidence": true,
+        "fit": true,
+        "included": true,
+        "pricing": true,
+        "refund": true,
+        "criticisms": true,
+        "comparison": true
+      },
+      "customSections": [
+        {
+          "id": "what-clients-did",
+          "position": "afterEvidence",
+          "heading": "What the case studies actually describe",
+          "paragraphs": [
+            "The headline figures get quoted. The actions underneath them are more useful, because they show what the program asks of you."
+          ],
+          "table": {
+            "columns": [
+              "Client",
+              "Actions described in the case study",
+              "Result they state"
+            ],
+            "rows": [
+              [
+                "[Stephanie Dailey](/blog/stephanie-dailey-legacy-wealth-blueprint-case-study)",
+                "Opened separate business bank accounts, started keeping real books, captured a $27,000 startup cost deduction, deducted over $60,000 of bridge loan mortgage interest, put her kids on payroll.",
+                "Over $20,000 in taxes saved in year one; expects more over the following twelve months; house payoff plan moved from about ten years to seven or eight."
+              ],
+              [
+                "[Albert](/blog/albert-legacy-wealth-blueprint-case-study)",
+                "Started tax loss harvesting, changed how he uses his HSA, opened a backdoor Roth IRA, took his portfolio off professional management, formed the entity for a telemedicine clinic.",
+                "Net worth growth of 25%; self-managed 401(k) up about 19%; Roth up about 40%; home insurance cut in half."
+              ],
+              [
+                "[Abigail](/blog/abigail-legacy-wealth-blueprint-case-study)",
+                "Finished the modules inside the first month, rebuilt entity and estate work set up badly eight years earlier, took weekly coaching calls, recategorised every transaction, went under contract on her first property.",
+                "Just under $100,000 in first-year ROI, by her own calculation, run twice."
+              ],
+              [
+                "[Shawn](/blog/shawn-legacy-wealth-blueprint-roi-case-study)",
+                "Came for the tax side after struggling to get useful help from CPAs; already held Airbnbs, rentals, crypto, and stocks.",
+                "No figures. The interview was recorded at the start of his plan."
+              ]
+            ]
+          }
+        },
+        {
+          "id": "in-their-own-words",
+          "position": "afterEvidence",
+          "heading": "Written client results, in their own words",
+          "paragraphs": [
+            "The program page publishes four short written results with the client's name and month. The reviews page holds {{writtenClientResults}} of them. Notice how many describe a process change rather than a dollar figure."
+          ],
+          "quotes": "lwbPage"
+        },
+        {
+          "id": "trustpilot-context",
+          "position": "afterEvidence",
+          "heading": "What the Trustpilot reviews add",
+          "paragraphs": [
+            "The Trustpilot profile covers the company as a whole, not the Blueprint alone. Four excerpts, chosen to include the reservations as well as the praise:"
+          ],
+          "quotes": "trustpilot"
+        }
+      ],
+      "faq": [
+        {
+          "q": "What do Legacy Wealth Blueprint reviews say?",
+          "a": "The four named case studies report over $20,000 in first-year tax savings (Stephanie Dailey), just under $100,000 in first-year ROI by her own calculation (Abigail), 25% net worth growth (Albert), and no figure yet (Shawn). Written client results on the program page describe getting organised, paying cards down before the statement closes, rebalancing a 401(k), and viewing rental properties. Trustpilot, which covers the whole company, sits at {{trustScore}} from {{totalReviews}} reviews."
+        },
+        {
+          "q": "Is Legacy Wealth Blueprint worth it?",
+          "a": "It depends on three things: whether you earn enough for the tax, entity, and account strategies to matter (the program is built for roughly $100K to $200K or more), whether you will implement, and the number you hear on the call. Decide what a written plan, weekly coaching, and a CPA brief would need to be worth to you before the call, then compare."
+        },
+        {
+          "q": "Is Legacy Wealth Blueprint legit?",
+          "a": "It is a real twelve-month program from a registered company with published deliverables, {{caseStudyCount}} named clients on video, {{writtenClientResults}} written client results, and a {{trustScore}} Trustpilot score across {{totalReviews}} reviews. The evidence-based answer for the founder is at /is-preston-seo-legit."
+        },
+        {
+          "q": "How much did clients save with the Legacy Wealth Blueprint?",
+          "a": "The figures clients state in their own interviews are over $20,000 in first-year tax savings for Stephanie Dailey, just under $100,000 in first-year ROI calculated by Abigail, and 25% net worth growth for Albert. One published case study covers $88,000 found for a $300,000 W-2 earner after a CPA missed it. These are individual results, not averages."
+        },
+        {
+          "q": "Are Legacy Wealth Blueprint results typical?",
+          "a": "No. Every result published is self-reported and individual. It is not typical and it is not a promise. Shawn's interview is the clearest example: he states no figures because he is at the start of his plan."
+        },
+        {
+          "q": "Does Legacy Wealth Blueprint have a refund policy?",
+          "a": "The site's terms say only that access to paid products and services is governed by the offer terms shown at checkout, including any refund or review policies presented there. The program page says to ask on the call about the No Client Left Behind Guarantee and get its current written terms."
+        },
+        {
+          "q": "How much does Legacy Wealth Blueprint cost?",
+          "a": "The price is not published on the site or on this page. It is discussed on the strategy call. What is published is the full list of deliverables and who the program is built for; see /legacy-wealth-blueprint-cost."
+        },
+        {
+          "q": "Do I have to buy property or start a business for the plan to work?",
+          "a": "No. The program page says you can focus on your current income, debt, and accounts. The curriculum also covers other income and investment options, so you can look at them when they fit your plan."
+        }
+      ],
+      "pageLinks": [
+        {
+          "href": "/blog/stephanie-dailey-legacy-wealth-blueprint-case-study",
+          "label": "Stephanie Dailey case study: over $20,000 saved in taxes in year one"
+        },
+        {
+          "href": "/blog/albert-legacy-wealth-blueprint-case-study",
+          "label": "Albert case study: 25% net worth growth and home insurance cut in half"
+        },
+        {
+          "href": "/blog/abigail-legacy-wealth-blueprint-case-study",
+          "label": "Abigail case study: just under $100,000 in first-year ROI by her own calculation"
+        },
+        {
+          "href": "/blog/shawn-legacy-wealth-blueprint-roi-case-study",
+          "label": "Shawn case study: the tax knowledge his CPAs were not giving him"
+        },
+        {
+          "href": "/blog/88k-tax-savings-cpa-missed-case-study",
+          "label": "$88K tax savings case study: what a CPA missed for a $300K W-2 earner"
+        },
+        {
+          "href": "/tax-strategies",
+          "label": "Tax strategy library: every strategy the case studies mention, on its own page"
+        }
+      ]
+    },
+    {
+      "slug": "legacy-wealth-blueprint-cost",
+      "title": "Legacy Wealth Blueprint Cost: How Pricing Works",
+      "h1": "Legacy Wealth Blueprint Cost: How Pricing Works and What Is Included",
+      "description": "Legacy Wealth Blueprint cost: the price is not published and is discussed on the strategy call. What the membership includes, who it fits, and how to judge value.",
+      "query": "legacy wealth blueprint cost",
+      "verdict": [
+        "Legacy Investing Show does not publish a price for the Legacy Wealth Blueprint, and you will not find one on this page. Pricing is discussed on the strategy call, where the team matches the program to your situation. The site says custom options, payment plans, and financing exist, and that what you invest depends on your picture and how you choose to pay.",
+        "What is published is everything else: what the membership includes, who it is built for, what the documented clients report, and what happens on the call. Use those to decide whether the call is worth an hour of your time before you hear a number."
+      ],
+      "lede": "No price on this page, by design. Instead: what you get, what determines fit, how to set your own value threshold, and what to ask on the call.",
+      "sections": {
+        "evidence": true,
+        "fit": true,
+        "included": true,
+        "pricing": true,
+        "refund": true,
+        "criticisms": true,
+        "comparison": true
+      },
+      "customSections": [
+        {
+          "id": "why-not-published",
+          "position": "afterVerdict",
+          "heading": "Why the price is not on the site",
+          "paragraphs": [
+            "The site's own explanation is that programs are matched to different situations and goals rather than sold off a single published menu. Someone optimising a W-2 salary, a business owner deciding how to pay themselves, and a couple aligning taxes, debt, and investing are not buying the same thing, and the options, payment plans, and financing differ.",
+            "That is also the weak spot. One-star Trustpilot reviews mention a price that moved during the sales call. So go in with the written terms as your goal: ask what the number is, what it includes, what the payment options are, and what the guarantee's written terms say, and get it in writing at checkout before you commit."
+          ]
+        },
+        {
+          "id": "what-determines-fit",
+          "position": "afterVerdict",
+          "heading": "What determines whether it fits",
+          "bullets": [
+            "Income level. The program is built for people earning roughly $100K to $200K or more. Below that, fewer of the entity, account, and deduction strategies move the needle.",
+            "Income type. W-2 salary, self-employment, and business income each open different strategies. The plan is built from which ones you have.",
+            "Your CPA. You keep them. The program hands you a CPA Implementation Brief before filing season; it does not replace filing.",
+            "Willingness to implement. The plan says what to do first. Weekly calls and bi-weekly check-ins exist to make sure you do it.",
+            "What you want next. If your first goal is buying a short-term rental or starting a side business, the site points to different programs (STR Concierge and Airbnb Ascension). The Blueprint is for optimising what you already have."
+          ]
+        },
+        {
+          "id": "how-to-evaluate",
+          "position": "afterEvidence",
+          "heading": "How to decide whether it is worth it before you hear a number",
+          "paragraphs": [
+            "You can set your own threshold before the call. The documented client results are the reference points, with the disclaimer attached: every result published is self-reported and individual, not typical, not a promise."
+          ],
+          "steps": [
+            "Pull your last return and your current withholding. Note your income type, your entities, your retirement accounts, and your debt.",
+            "List the strategies you are not using. The [tax strategy library](/tax-strategies) has one page per strategy with who it fits, and the [free calculators](/tools) let you run rough numbers on the ones that look relevant.",
+            "Compare against the documented cases as reference points, not expectations. Stephanie Dailey, a software engineer with household W-2 income over $300,000, reports over $20,000 in first-year tax savings. Abigail calculated just under $100,000 in first-year ROI. A separate [case study](/blog/88k-tax-savings-cpa-missed-case-study) covers $88,000 found for a $300,000 W-2 earner after a CPA missed it. Wealth-plan figures published on the reviews page are projections, not verified savings.",
+            "Price your alternatives honestly. A CPA planning engagement, a fee-only planner, or your own time all have a cost. The comparison table below sets out what each one covers.",
+            "Write down the number at which a written plan, twelve months of weekly coaching, a dedicated guide, and a CPA brief would be worth it to you. Take the call. Compare what you hear against that number, not against the pitch."
+          ]
+        },
+        {
+          "id": "what-happens-on-the-call",
+          "position": "beforeFaq",
+          "heading": "What happens on the strategy call",
+          "paragraphs": [
+            "The program page asks you to watch the 11-minute walkthrough first; it explains the five pillars and what happens on the call, and most questions get answered there. Then write down your main financial goal, the decisions you are weighing right now, and your questions. Your confirmation email has the details for joining."
+          ],
+          "bullets": [
+            "The team covers fit: your income, accounts, debt, and goals, and which program matches.",
+            "Pricing is discussed here, including the custom options, payment plans, and financing the site refers to.",
+            "Ask for the No Client Left Behind Guarantee's current written terms: what actions it requires, how a return on your program investment is measured, and when continued support applies.",
+            "Ask what the offer terms at checkout say about refunds and review policies. Those terms, not the call, govern access.",
+            "If a number changes during the conversation, ask why. Then decide against the threshold you wrote down."
+          ]
+        },
+        {
+          "id": "alternatives",
+          "position": "beforeFaq",
+          "heading": "Alternatives if it is not a fit",
+          "bullets": [
+            "[The free tax masterclass]({{ctaHref}}): the tax-strategy training the site uses as its starting point, taught live with a Q&A.",
+            "[The tax strategy library](/tax-strategies) and the [compare guides](/compare): every strategy on its own page, and head-to-head decision briefs.",
+            "[The free calculators](/tools): run your own numbers on cost segregation, take-home pay, capital gains, and more.",
+            "A CPA who does planning, not just filing. Bring the strategy pages that look relevant and ask which apply to your return.",
+            "Airbnb Ascension, if you want cash flow from a side business without buying property, or STR Concierge, if you have the capital to buy a short-term rental and want it done for you. Ask on the call which one fits."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "How much does Legacy Wealth Blueprint cost?",
+          "a": "The price is not published, on the site or on this page. Pricing is discussed on the strategy call, where the program is matched to your situation. The site says custom options, payment plans, and financing exist and that what you invest depends on your picture and how you choose to pay."
+        },
+        {
+          "q": "Why is the Legacy Wealth Blueprint price not published?",
+          "a": "The site's explanation is that programs are matched to different situations and goals rather than sold off a single published menu, with custom options, payment plans, and financing that differ by person. Fit and price are covered on the call."
+        },
+        {
+          "q": "Are there payment plans for the Legacy Wealth Blueprint?",
+          "a": "The site says custom options, payment plans, and financing are available and that the starting investment should not be the obstacle. Amounts and terms are not published; ask for them in writing on the call."
+        },
+        {
+          "q": "What is included in the Legacy Wealth Blueprint?",
+          "a": "A custom 12-month Wealth Strategy Snapshot, 100+ video lessons across five pillars with lifetime access, weekly live coaching with replays, a dedicated Legacy Wealth Guide with bi-weekly check-ins, the Wealth Circle community for twelve months, an optional prior-year tax return diagnostic, a CPA Implementation Brief, the Legacy Wealth AI Advisor with templates and checklists, a partner network, and a second membership for a spouse or direct family member."
+        },
+        {
+          "q": "Is Legacy Wealth Blueprint worth it?",
+          "a": "Decide before the call. Set the number at which a written plan, twelve months of coaching, a guide, and a CPA brief would be worth it to you, using your own return and the documented client results as reference points. Then compare what you hear against that number. Results are individual and self-reported."
+        },
+        {
+          "q": "Does Legacy Wealth Blueprint have a refund policy?",
+          "a": "The site's terms say only that access to paid products and services is governed by the offer terms shown at checkout, including any refund or review policies presented there. Nothing else is published, so get the terms in writing at checkout."
+        },
+        {
+          "q": "Is there a guarantee?",
+          "a": "The program page says to ask on the call about the No Client Left Behind Guarantee and get its current written terms. Confirm what actions it requires, how a return on your program investment is measured, and when continued support applies before you enrol."
+        },
+        {
+          "q": "What happens on the strategy call?",
+          "a": "Watch the 11-minute walkthrough on the program page first, then bring your main financial goal, the decisions you are weighing, and your questions. The call covers fit, which program matches, pricing and payment options, and the guarantee's written terms."
+        }
+      ],
+      "pageLinks": [
+        {
+          "href": "/blog/stephanie-dailey-legacy-wealth-blueprint-case-study",
+          "label": "Stephanie Dailey case study: over $20,000 saved in taxes in year one"
+        },
+        {
+          "href": "/blog/abigail-legacy-wealth-blueprint-case-study",
+          "label": "Abigail case study: just under $100,000 in first-year ROI by her own calculation"
+        },
+        {
+          "href": "/blog/88k-tax-savings-cpa-missed-case-study",
+          "label": "$88K tax savings case study: what a CPA missed for a $300K W-2 earner"
+        },
+        {
+          "href": "/tax-strategies",
+          "label": "Tax strategy library"
+        },
+        {
+          "href": "/tools",
+          "label": "Free calculators"
+        },
+        {
+          "href": "/compare",
+          "label": "Compare guides"
+        }
+      ]
+    },
+    {
+      "slug": "manage-money-101-reviews",
+      "title": "Manage Money 101 Reviews: What It Is, Where Reviews Are",
+      "h1": "Manage Money 101 Reviews: What It Is and Where the Reviews Are",
+      "description": "Manage Money 101 reviews: it is the free tax masterclass funnel behind Legacy Investing Show, not a separate program. Where the reviews live and what it leads to.",
+      "query": "manage money 101 reviews",
+      "verdict": [
+        "Manage Money 101 is not a separate paid program, so there is no separate set of Manage Money 101 reviews. It is the free masterclass and registration funnel Legacy Investing Show runs at join.managemoney101.com: the tax-strategy training that introduces the material and leads to a strategy call about the paid programs.",
+        "The Trustpilot profile for Legacy Investing Show By Preston Seo lists managemoney101.com as the business website, so the reviews you are looking for are the company's reviews: a {{trustScore}} TrustScore from {{totalReviews}} reviews, plus the Legacy Wealth Blueprint case studies on the reviews page."
+      ],
+      "lede": "A short page, because the repo of facts is short: what the name refers to, how it connects to the Legacy Wealth Blueprint, and where the actual reviews live.",
+      "sections": {
+        "evidence": true,
+        "fit": false,
+        "included": false,
+        "pricing": true,
+        "refund": true,
+        "criticisms": false,
+        "comparison": false
+      },
+      "pricingLead": "The masterclass itself is free. The paid programs it leads to are a different matter:",
+      "customSections": [
+        {
+          "id": "what-it-is",
+          "position": "afterVerdict",
+          "heading": "What Manage Money 101 actually is",
+          "bullets": [
+            "The domain. managemoney101.com is where Legacy Investing Show hosts registration for its free Tax Strategy Masterclass, at [join.managemoney101.com/tax-strategies]({{ctaHref}}). Every masterclass button on this site points there.",
+            "The masterclass. Tax-focused training for high earners, business owners, and investors, taught live by Preston Seo with a Q&A at the end. It introduces the material and leads to a strategy call.",
+            "The Trustpilot listing. The profile Legacy Investing Show By Preston Seo, at [trustpilot.com/review/firstairbnb.com]({{trustpilotUrl}}), lists managemoney101.com as the business website. Reviews left there are reviews of the company.",
+            "The slides. Presentation slides transcribed on the reviews page carry the banner GO TO MANAGEMONEY101.COM, which is how attendees are sent to register.",
+            "What it is not. The site publishes no separate product page, curriculum, or price under the Manage Money 101 name. If someone described a paid program to you under that name, ask on the call which program it maps to."
+          ]
+        },
+        {
+          "id": "how-it-relates",
+          "position": "afterVerdict",
+          "heading": "How it relates to the Legacy Wealth Blueprint",
+          "paragraphs": [
+            "The sequence is: masterclass, then strategy call, then a program matched to your situation. The site's own decision tree has three branches."
+          ],
+          "bullets": [
+            "You want to optimise what you already have (taxes, debt, accounts, protection): the [Legacy Wealth Blueprint](/legacy-wealth-blueprint), a twelve-month program with a written plan, weekly coaching, and a dedicated guide.",
+            "You want monthly cash flow from a side business without buying property: Airbnb Ascension, built on the Airbnb Arbitrage Roadmap curriculum.",
+            "You have the capital to buy a short-term rental and want it done for you: STR Concierge."
+          ],
+          "callout": {
+            "label": "Where the reviews are",
+            "text": "Reviews of the Legacy Wealth Blueprint, with named clients and the figures they state, are at [/legacy-wealth-blueprint-reviews](/legacy-wealth-blueprint-reviews). The full proof page, with every interview, written result, and wealth-plan page, is at [/reviews](/reviews)."
+          }
+        },
+        {
+          "id": "who-the-masterclass-is-for",
+          "position": "afterEvidence",
+          "heading": "Who the masterclass is for, and who it is not for",
+          "paragraphs": [
+            "The site describes the masterclass as tax-focused training for high earners, business owners, and investors. The people the brand serves typically earn $75K or more and fall into four groups: high earners paying more tax than they expected, business owners deciding how to structure and pay themselves, real estate investors sizing up depreciation and entity choices, and professionals building a first wealth system."
+          ],
+          "bullets": [
+            "Not for you if you want a review of a product called Manage Money 101. There is none; the reviews are of Legacy Investing Show.",
+            "Not for you if you want a published price for the paid programs before any conversation. Pricing is only discussed on the strategy call.",
+            "Not for you if you want passive, index-fund-only advice. The material is about tax, entity, debt, and account decisions that require implementation."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is Manage Money 101?",
+          "a": "Manage Money 101 is the free tax masterclass and registration funnel Legacy Investing Show runs at join.managemoney101.com. It introduces the tax-strategy material and leads to a strategy call about the paid programs. It is not a separate paid program."
+        },
+        {
+          "q": "Are Manage Money 101 reviews the same as Legacy Investing Show reviews?",
+          "a": "Yes. The Trustpilot profile Legacy Investing Show By Preston Seo lists managemoney101.com as the business website, so reviews of one are reviews of the other: a {{trustScore}} TrustScore from {{totalReviews}} reviews, {{fivePct}}% five star and {{onePct}}% one star."
+        },
+        {
+          "q": "Is Manage Money 101 legit?",
+          "a": "It is the registration funnel of a registered company, Legacy Investing Show, LLC in Herriman, Utah, whose founder publishes under his own name and whose Trustpilot profile is claimed. The evidence-based answer on the founder is at /is-preston-seo-legit."
+        },
+        {
+          "q": "Is the Manage Money 101 masterclass free?",
+          "a": "Yes. The site describes it as the Free Tax Strategy Masterclass, taught live with a Q&A. The paid programs it leads to are priced on the strategy call, and no program price is published."
+        },
+        {
+          "q": "What is the difference between Manage Money 101 and the Legacy Wealth Blueprint?",
+          "a": "Manage Money 101 is the free masterclass and the domain it runs on. The Legacy Wealth Blueprint is the paid twelve-month program the strategy call may lead to, with a written plan, 100+ lessons, weekly coaching, a dedicated guide, and a CPA brief. Reviews of the Blueprint are at /legacy-wealth-blueprint-reviews."
+        },
+        {
+          "q": "Who is Preston Seo?",
+          "a": "Preston Seo founded Legacy Investing Show in 2020. He paid off $80,000 of his own debt between 2017 and 2019, built a $15M+ real estate portfolio with his wife, has guided 2,000+ students, and teaches tax strategy, investment planning, business structures, and retirement accounts. His profile is at /about/preston-seo."
+        }
+      ],
+      "pageLinks": [
+        {
+          "href": "/blog/preston-seo-background-guide",
+          "label": "Preston Seo background guide: founder context and how to review his public material"
+        },
+        {
+          "href": "/blog/preston-seo-legacy-investing-show",
+          "label": "Preston Seo and Legacy Investing Show: how the founder and the brand connect"
+        },
+        {
+          "href": "/blog/preston-seo-latest",
+          "label": "Preston Seo latest: current focus and platforms"
+        },
+        {
+          "href": "/blog/stephanie-dailey-legacy-wealth-blueprint-case-study",
+          "label": "Stephanie Dailey case study: over $20,000 saved in taxes in year one"
+        },
+        {
+          "href": "/blog/abigail-legacy-wealth-blueprint-case-study",
+          "label": "Abigail case study: just under $100,000 in first-year ROI by her own calculation"
+        }
+      ]
+    }
+  ]
+}

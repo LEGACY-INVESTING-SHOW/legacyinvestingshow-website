@@ -29,6 +29,21 @@
       "source": "/blog/micah-facebook-message-5k-month-houston",
       "destination": "/blog/micah-facebook-message-airbnb",
       "reason": "Near-duplicate success story; keep the fuller 2026 case-study URL as canonical."
+    },
+    {
+      "source": "/blog/tax-alchemy-alternatives",
+      "destination": "/alternatives/tax-alchemy",
+      "reason": "Consolidated into the dedicated 2026-09-17 page that targets the same intent."
+    },
+    {
+      "source": "/blog/taxfreeceo-alternatives",
+      "destination": "/alternatives/taxfreeceo",
+      "reason": "Consolidated into the dedicated 2026-09-17 page that targets the same intent."
+    },
+    {
+      "source": "/blog/best-tax-strategy-programs-w2-earners-over-250k",
+      "destination": "/best-tax-strategy-programs-for-high-earners",
+      "reason": "Consolidated into the dedicated 2026-09-17 page that targets the same intent."
     }
   ],
   "forceIndexBlogSlugs": [

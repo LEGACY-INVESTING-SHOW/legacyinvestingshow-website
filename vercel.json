@@ -1326,6 +1326,26 @@
       "source": "/tax-strategies/business-structures",
       "destination": "/topics/business-structures",
       "permanent": true
+    },
+    {
+      "source": "/blog/casey-wealth-strategy-snapshot",
+      "destination": "/blog/casey-wealth-plan",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tax-alchemy-alternatives",
+      "destination": "/alternatives/tax-alchemy",
+      "permanent": true
+    },
+    {
+      "source": "/blog/taxfreeceo-alternatives",
+      "destination": "/alternatives/taxfreeceo",
+      "permanent": true
+    },
+    {
+      "source": "/blog/best-tax-strategy-programs-w2-earners-over-250k",
+      "destination": "/best-tax-strategy-programs-for-high-earners",
+      "permanent": true
     }
   ],
   "rewrites": [

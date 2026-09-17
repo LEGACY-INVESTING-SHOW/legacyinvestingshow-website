@@ -23,6 +23,17 @@ const FORBIDDEN = [
     'Course plus AI option $1,500',
     'publishes $9,800',
     'at $9,800 for 6 months',
+    // Renewal offer amounts that used to print on /renewals and /renewalsSuper.
+    '<div class="pricing-amount">$1,000',
+    '<div class="pricing-amount">$2,000',
+    // Third-party price figures quoted for our program, and a testimonial that
+    // implied a ceiling on what the program costs.
+    'our program costs about $2,500',
+    'price figure of about $2,500',
+    'promotions near $1,997',
+    'would have paid $25,000 for the program',
+    'twenty-five thousand dollars for it',
+    'twenty five thousand dollars for it',
 ];
 
 const PUBLIC_FILES = [
@@ -30,7 +41,21 @@ const PUBLIC_FILES = [
     'reviews.html',
     'llms.txt',
     'llms-full.txt',
+    'llms/reviews.txt',
     'scripts/build-reviews-schema.js',
+    'data/reviews-videos.json',
+    'renewals.html',
+    'renewalsSuper.html',
+    'renewals/index.html',
+    'renewalsSuper/index.html',
+    'legacy-wealth-blueprint.html',
+    'legacy-wealth-blueprint-ascension.html',
+    'legacy-wealth-blueprint-concierge.html',
+    'lwbprogram.html',
+    'airbnbascension.html',
+    'strconcierge.html',
+    'programroi.html',
+    'templates/legacy-wealth-blueprint.html',
 ];
 
 function walk(dir, acc) {
