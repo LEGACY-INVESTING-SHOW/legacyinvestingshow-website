@@ -2,7 +2,7 @@
   "description": "Controls which generated pages should be treated as indexable. The goal is to keep the public site useful while sending Google a smaller, stronger canonical URL set.",
   "blogCategoryArchivesRobots": "noindex, follow",
   "noindexToolSlugs": {
-    "reason": "General insurance, pay-admin, and bill-splitting calculators sit outside the tax, real estate, and wealth-building topics this site is trying to rank for. They are kept live for existing users but removed from the index so the crawl budget goes to on-topic pages.",
+    "reason": "General insurance, pay-admin, and bill-splitting calculators sit outside the tax, real estate, and wealth-building topics this site is trying to rank for. They are kept live for existing users but removed from the index so the crawl budget goes to on-topic pages. Exception: claim-out-of-pocket-cost and money-calendar were re-indexed on 2026-09-17 because Search Console flagged them as \"Excluded by noindex tag\"; both now carry a methodology section and FAQ and are listed again on the tools hub and their category pages.",
     "robots": "noindex, follow",
     "minIndexableToolsPerCategoryHub": 3,
     "slugs": [
@@ -10,7 +10,6 @@
       "pet-insurance-comparison",
       "health-insurance-plan-comparison",
       "business-insurance-budget",
-      "claim-out-of-pocket-cost",
       "coverage-gap",
       "deductible-premium-break-even",
       "insurance-payment-frequency",
@@ -22,8 +21,7 @@
       "holiday-pay-accrual",
       "pay-period-converter",
       "salary-to-hourly-pay",
-      "subscription-annual-cost",
-      "money-calendar"
+      "subscription-annual-cost"
     ]
   },
   "blogRedirects": [
@@ -37,19 +35,31 @@
     "4-percent-rule",
     "401k-rollover-guide",
     "457b-plan-guide",
-    "apy-vs-interest-rate-guide",
     "airbnb-arbitrage-mistakes-that-kill-profit",
     "airbnb-furniture-budget-checklist",
     "airbnb-guest-message-templates-that-reduce-friction",
+    "airbnb-occupancy-strategy-for-hosts",
+    "airbnb-pricing-strategy-for-beginners",
+    "airbnb-pricing-strategy-for-real-estate-investors",
+    "airbnb-vs-vrbo-for-hosts-which-platform-fits-your-strategy",
     "annuities-vs-bonds-comparison-2026",
+    "annuities-vs-bonds-vs-taxable-brokerage",
+    "apy-vs-interest-rate-guide",
+    "asset-allocation-for-busy-professionals",
     "best-tax-deductions-for-high-income-earners",
     "best-tax-deductions-for-self-employed",
     "best-tax-deductions-for-small-business",
+    "best-tax-planning-software-for-cpas",
+    "best-tax-planning-software-for-financial-advisors",
+    "best-tax-planning-software-for-retirees",
+    "best-tax-strategy-for-ira-withdrawals",
     "bnb-formula-vs-10xbnb-vs-airbnb-ascension",
     "capital-gains-tax-for-beginners",
-    "debt-snowball-vs-avalanche",
+    "capital-gains-tax-template",
     "debt-consolidation-guide",
+    "debt-snowball-vs-avalanche",
     "debt-to-income-ratio",
+    "debt-to-income-ratio-vs-cash-flow-budgeting",
     "etf-vs-mutual-fund",
     "fire-movement-guide",
     "high-deductible-vs-low-deductible-insurance",
@@ -70,9 +80,13 @@
     "schedule-c-vs-s-corp-tax-guide",
     "sean-rakidzich-vs-preston-seo-airbnb-training",
     "sequence-of-returns-risk",
+    "short-term-vs-long-term-rental-roi-for-new-investors",
     "student-loan-payoff-negotiation",
     "tax-deduction-for-beginners",
-    "tax-planning-for-beginners"
+    "tax-loss-harvesting-checklist",
+    "tax-planning-for-beginners",
+    "tax-planning-for-high-earners",
+    "tax-strategy-for-consultants"
   ],
   "noindexBlogSlugPatterns": [
     {
