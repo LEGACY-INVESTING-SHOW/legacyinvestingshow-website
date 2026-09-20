@@ -105,7 +105,7 @@ test('every built post keeps the field guide shell and drops the retired chrome'
 test('a post is one 68ch column: plain meta line, no CTA block', () => {
     for (const name of builtPosts().slice(0, 40)) {
         const html = fs.readFileSync(path.join(BLOG_DIR, name), 'utf8');
-        assert.match(html, /<div class="post-wrap">/, `${name} lost the reading column`);
+        assert.match(html, /<div class="post-wrap/, `${name} lost the reading column`);
         assert.match(html, /<h1 class="post-title">/, `${name} lost .post-title`);
         assert.match(html, /<p class="meta post-meta">/, `${name} lost the plain meta line`);
         assert.match(html, /<div class="prose post-prose">/, `${name} lost .post-prose`);

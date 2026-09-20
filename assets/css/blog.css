@@ -22,6 +22,12 @@
     padding: 0 1rem 3.5rem;
 }
 
+/* Wealth-plan case studies: still one column, but wide enough for the
+   number strip, comparison chart and tables. Prose stays inside this wrap. */
+.post-wrap--plan {
+    max-width: 54rem;
+}
+
 @media (min-width: 640px) {
     .blog-wrap,
     .post-wrap {
@@ -374,4 +380,129 @@ a.blog-page-num:hover {
 .yt-facade-btn:hover .yt-facade-play,
 .yt-facade-btn:focus-visible .yt-facade-play {
     background: #c00;
+}
+
+/* --- Wealth-plan snapshot, chart, listing hits --------------------------- */
+
+.plan-score {
+    margin: 1.75rem 0 0;
+    padding: 1.25rem 0 0.25rem;
+    border-top: 1px solid var(--line);
+}
+
+.plan-score__kicker,
+.plan-chart__kicker {
+    margin: 0;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--emerald);
+}
+
+.plan-score__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.15rem 1.25rem;
+    margin: 1rem 0 0;
+}
+
+@media (min-width: 700px) {
+    .plan-score__grid {
+        grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+    }
+}
+
+.plan-score__item {
+    margin: 0;
+    padding: 0;
+}
+
+.plan-score__item dt {
+    margin: 0;
+    font-size: 0.8125rem;
+    line-height: 1.35;
+    font-weight: 500;
+    color: var(--ink-soft);
+}
+
+.plan-score__item dd {
+    margin: 0.2rem 0 0;
+    font-size: 1.375rem;
+    line-height: 1.15;
+    font-weight: 650;
+    color: var(--forest);
+    font-variant-numeric: tabular-nums;
+}
+
+.plan-chart {
+    margin: 1.5rem 0 0;
+}
+
+.plan-chart__list {
+    list-style: none;
+    margin: 0.85rem 0 0;
+    padding: 0;
+}
+
+.plan-chart__row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+        "label value"
+        "track track";
+    gap: 0.2rem 0.75rem;
+    margin: 0 0 0.85rem;
+}
+
+.plan-chart__label {
+    grid-area: label;
+    font-size: 0.875rem;
+    color: var(--ink-soft);
+}
+
+.plan-chart__value {
+    grid-area: value;
+    font-size: 0.875rem;
+    font-weight: 650;
+    color: var(--forest);
+    font-variant-numeric: tabular-nums;
+}
+
+.plan-chart__track {
+    grid-area: track;
+    display: block;
+    height: 0.45rem;
+    border-radius: 999px;
+    background: var(--ivory);
+    overflow: hidden;
+}
+
+.plan-chart__fill {
+    display: block;
+    height: 100%;
+    border-radius: 999px;
+    background: var(--forest);
+}
+
+.post-wrap--plan .table-inset,
+.post-wrap--plan .table-inset--wide {
+    max-width: none;
+}
+
+.list-rows__hit {
+    margin: 0.35rem 0 0;
+    font-size: 0.9375rem;
+    color: var(--ink-soft);
+}
+
+.list-rows__hit-value {
+    font-weight: 650;
+    color: var(--forest);
+    font-variant-numeric: tabular-nums;
+    margin-right: 0.35rem;
+}
+
+.list-rows__body {
+    min-width: 0;
 }
