@@ -471,3 +471,11 @@ a.blog-page-num:hover {
 .list-rows__body {
     min-width: 0;
 }
+
+/* Crop listing thumbs to the number at the top of the share card. */
+.list-rows--thumbs .list-rows__thumb img {
+    aspect-ratio: 16 / 10;
+    height: auto;
+    object-fit: cover;
+    object-position: top left;
+}

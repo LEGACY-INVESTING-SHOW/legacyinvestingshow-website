@@ -80,17 +80,17 @@ function coverSvg(post) {
     const valueLen = String(value).length;
     const valueSize = valueLen > 16 ? 52 : valueLen > 10 ? 68 : 88;
 
+    const valueY = 210;
+    const labelY = valueY + 42;
+    const ruleY = labelY + 28;
+    const nameY = ruleY + 58;
+
     const nameText = nameLines
         .map(
             (line, index) =>
-                `<text x="80" y="${168 + index * 54}" fill="${FOREST}" font-size="48" font-family="${FONT}" font-weight="700">${xml(line)}</text>`
+                `<text x="80" y="${nameY + index * 48}" fill="${FOREST}" font-size="40" font-family="${FONT}" font-weight="700">${xml(line)}</text>`
         )
         .join('\n  ');
-
-    const nameBottom = 168 + (nameLines.length - 1) * 54;
-    const ruleY = nameBottom + 28;
-    const valueY = ruleY + 86;
-    const labelY = valueY + 38;
 
     const factRows = rest
         .map((stat, index) => {
@@ -106,11 +106,11 @@ function coverSvg(post) {
 
     return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
   <rect width="1200" height="630" fill="${PAPER}"/>
-  <text x="80" y="88" fill="${EMERALD}" font-size="16" font-family="${FONT}" font-weight="700" letter-spacing="4">WEALTH PLAN</text>
-  ${nameText}
-  <rect x="80" y="${ruleY}" width="36" height="2" fill="${GOLD}"/>
+  <text x="80" y="92" fill="${EMERALD}" font-size="16" font-family="${FONT}" font-weight="700" letter-spacing="4">WEALTH PLAN</text>
   <text x="80" y="${valueY}" fill="${FOREST}" font-size="${valueSize}" font-family="${FONT}" font-weight="700">${xml(value)}</text>
   <text x="80" y="${labelY}" fill="${INK_SOFT}" font-size="22" font-family="${FONT}">${xml(label)}</text>
+  <rect x="80" y="${ruleY}" width="36" height="2" fill="${GOLD}"/>
+  ${nameText}
   ${factsRule}
   ${factRows}
 </svg>`;
