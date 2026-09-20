@@ -66,7 +66,8 @@ function sideStats(post, lead) {
 }
 
 function coverSvg(post) {
-    const lead = headlineStat(post);
+    const stats = planStatistics(post);
+    const lead = headlineStat(post) || stats[0] || { value: '', label: 'Personalized plan' };
     const subject = planSubject(post);
     const nameLines = wrapLine(subject, 22);
     const chips = sideStats(post, lead);

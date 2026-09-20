@@ -27,6 +27,7 @@ test('isPlanPost matches wealth-plan slugs and the Wealth Plan category', () => 
     const { post } = planPost('blake-elisa-wealth-plan');
     assert.strictEqual(blogRender.isPlanPost(post), true);
     assert.ok(blogRender.headlineStat(post));
+    assert.match(blogRender.headlineStat(post).value, /\$/);
     assert.ok(blogRender.planStatistics(post).length >= 3);
     assert.match(blogRender.planSubject(post), /Blake/);
 

@@ -225,10 +225,9 @@ const OUTCOME_LABEL = /savings|roi|value|year.?one|tax|cash flow|impact|projecte
 
 function headlineStat(post) {
     const stats = planStatistics(post);
-    if (stats.length === 0) return null;
     const dollar = stats.filter((stat) => /\$/.test(stat.value));
     const outcome = dollar.find((stat) => OUTCOME_LABEL.test(stat.label));
-    return outcome || dollar[0] || stats[0];
+    return outcome || dollar[0] || null;
 }
 
 /** Highest dollar figure in a cell like "$15K-$25K" or "$78,400+". */
