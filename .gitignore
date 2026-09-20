@@ -29,6 +29,7 @@ yarn-error.log*
 # Generated/optimized images
 assets/images/optimized/
 assets/images/backup/
+assets/images/blog/plan-covers/
 
 # Editor directories and files
 .idea/

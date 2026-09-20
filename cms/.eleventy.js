@@ -6,6 +6,7 @@ const {
   renderAnalyticsHead,
 } = require("../scripts/lib/site-shell");
 const blogRender = require("../scripts/lib/blog-render");
+const { ensurePlanCovers } = require("../scripts/lib/plan-covers");
 const schemaOrg = require("../scripts/lib/schema-org");
 
 module.exports = function(eleventyConfig) {
@@ -42,6 +43,11 @@ module.exports = function(eleventyConfig) {
       gtmContainerId: process.env.GTM_CONTAINER_ID || "GTM-KQ4R2LKP",
     }),
   }));
+
+  // Generated plan covers must exist before blogHero/articleBody run.
+  eleventyConfig.on("eleventy.before", async () => {
+    await ensurePlanCovers(blogRender.loadAllPosts());
+  });
 
   // ---- Shared post markup ------------------------------------------------
   // scripts/lib/blog-render.js owns the <article> DOM for both renderers, so

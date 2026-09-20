@@ -26,6 +26,7 @@ const {
     renderSiteHeader,
 } = require('./lib/site-shell');
 const blogRender = require('./lib/blog-render');
+const { ensurePlanCovers } = require('./lib/plan-covers');
 const schemaOrg = require('./lib/schema-org');
 const { normalizeTitle } = require('./normalize-seo-titles');
 
@@ -36,7 +37,9 @@ const {
     formatDate,
     formatISODate,
     getBlogIndexation,
+    headlineStat,
     isIndexableBlogPost,
+    isPlanPost,
     loadAllPosts,
     normalizeCategoryForArchives,
     normalizeReadTime,
@@ -137,7 +140,7 @@ function applyTemplate(template, post, allPosts) {
     const indexation = getBlogIndexation(post);
     const category = normalizeCategoryForArchives(fm.category || 'Investing');
 
-    const heroPreload = hero.exists
+    const heroPreload = hero.exists && hero.figure !== false
         ? `<link rel="preload" as="image" href="${esc(hero.webp || hero.src)}"${hero.webp ? ' type="image/webp"' : ''} fetchpriority="high">`
         : '';
 
@@ -211,24 +214,48 @@ function renderCategoryNav(categories, currentSlug) {
                 </nav>`;
 }
 
+function renderEntryHit(post) {
+    if (!isPlanPost(post)) return '';
+    const stat = headlineStat(post);
+    if (!stat) return '';
+    return `\n                            <p class="list-rows__hit"><span class="list-rows__hit-value">${esc(stat.value)}</span> ${esc(stat.label)}</p>`;
+}
+
+function renderEntryThumb(post) {
+    const hero = resolveHero(post);
+    if (!hero.exists) return '';
+    const img = `<img src="${esc(hero.webp || hero.src)}" alt="" width="${hero.width || 1200}" height="${hero.height || 630}" loading="lazy" decoding="async">`;
+    return `\n                            <p class="list-rows__thumb">${img}</p>`;
+}
+
 /** Posts as editorial list rows: title, one line, date and read time. */
-function renderEntries(posts) {
+function renderEntries(posts, options = {}) {
     if (posts.length === 0) {
         return '<p class="blog-empty">No posts yet.</p>';
     }
+    const thumbs = Boolean(options.thumbs);
     const items = posts
         .map((post) => {
             const fm = post.frontmatter;
             const description = fm.description
                 ? `\n                            <p class="list-rows__desc">${esc(fm.description)}</p>`
                 : '';
+            const body = `<h2 class="list-rows__title"><a href="/blog/${post.slug}">${esc(fm.title || post.slug)}</a></h2>${renderEntryHit(post)}${description}
+                            <p class="list-rows__meta"><time datetime="${formatISODate(fm.date)}">${esc(formatDate(fm.date))}</time>, ${normalizeReadTime(post)} min read</p>`;
+            if (thumbs) {
+                return `<li class="list-rows__item">${renderEntryThumb(post)}
+                            <div class="list-rows__body">
+                            ${body}
+                            </div>
+                        </li>`;
+            }
             return `<li class="list-rows__item">
-                            <h2 class="list-rows__title"><a href="/blog/${post.slug}">${esc(fm.title || post.slug)}</a></h2>${description}
-                            <p class="list-rows__meta"><time datetime="${formatISODate(fm.date)}">${esc(formatDate(fm.date))}</time>, ${normalizeReadTime(post)} min read</p>
+                            ${body}
                         </li>`;
         })
         .join('\n                        ');
-    return `<ul class="list-rows blog-entries">
+    const listClass = thumbs ? 'list-rows list-rows--thumbs blog-entries' : 'list-rows blog-entries';
+    return `<ul class="${listClass}">
                         ${items}
                     </ul>`;
 }
@@ -475,7 +502,7 @@ function generateCategoryArchives(posts) {
             heading: categoryLinkLabel(category),
             intro: description,
             categoriesNav: renderCategoryNav(categories, slug),
-            entriesHTML: renderEntries(categoryPosts),
+            entriesHTML: renderEntries(categoryPosts, { thumbs: category === 'Wealth Plan' }),
             paginationHTML: '',
             schema: listSchema(
                 `${category} articles`,
@@ -493,7 +520,7 @@ function generateCategoryArchives(posts) {
 
 // --------------------------------------------------------------------- build
 
-function build() {
+async function build() {
     console.log('Starting blog build...\n');
     ensureDir(OUTPUT_DIR);
 
@@ -507,6 +534,12 @@ function build() {
 
     const posts = loadAllPosts();
     console.log(`Found ${posts.length} markdown file(s)\n`);
+
+    const planPosts = posts.filter(isPlanPost);
+    const covers = await ensurePlanCovers(planPosts);
+    if (planPosts.length) {
+        console.log(`Plan covers: ${covers} written, ${planPosts.length} wealth-plan post(s)\n`);
+    }
 
     let successCount = 0;
     let errorCount = 0;
@@ -536,7 +569,10 @@ function build() {
 }
 
 if (require.main === module) {
-    build();
+    build().catch((error) => {
+        console.error(error);
+        process.exit(1);
+    });
 }
 
 module.exports = {

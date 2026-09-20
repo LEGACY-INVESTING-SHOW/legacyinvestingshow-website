@@ -22,6 +22,12 @@
     padding: 0 1rem 3.5rem;
 }
 
+/* Wealth-plan case studies: still one column, but wide enough for the
+   number strip, comparison chart and tables. Prose stays inside this wrap. */
+.post-wrap--plan {
+    max-width: 54rem;
+}
+
 @media (min-width: 640px) {
     .blog-wrap,
     .post-wrap {
@@ -374,4 +380,102 @@ a.blog-page-num:hover {
 .yt-facade-btn:hover .yt-facade-play,
 .yt-facade-btn:focus-visible .yt-facade-play {
     background: #c00;
+}
+
+/* --- Wealth-plan lead + glossary ----------------------------------------- */
+/* Field guide: one number wins. No cards, no dashboard grid, no pill bars.
+   The generated cover is OG/listing only; in-page type carries the figure. */
+
+.plan-lead {
+    margin: 2rem 0 0;
+    max-width: 44rem;
+}
+
+.plan-lead__kicker {
+    margin: 0;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--emerald);
+}
+
+.plan-lead__who {
+    margin: 0.5rem 0 0;
+    font-size: clamp(1.5rem, 2.6vw, 1.875rem);
+    font-weight: 600;
+    line-height: 1.15;
+    color: var(--forest);
+}
+
+.plan-lead__rule {
+    display: block;
+    width: 2.25rem;
+    height: 2px;
+    background: var(--gold);
+    border: 0;
+    margin: 1.25rem 0 1rem;
+}
+
+.plan-lead__value {
+    margin: 0;
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    color: var(--forest);
+    font-variant-numeric: tabular-nums;
+}
+
+.plan-lead__label {
+    margin: 0.5rem 0 0;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--ink-soft);
+}
+
+.plan-facts {
+    margin: 2rem 0 0;
+    max-width: 44rem;
+}
+
+.plan-facts__list dt {
+    font-weight: 500;
+    color: var(--ink-soft);
+}
+
+.plan-facts__list dd {
+    color: var(--forest);
+    font-weight: 600;
+}
+
+.post-wrap--plan .table-inset,
+.post-wrap--plan .table-inset--wide {
+    max-width: none;
+}
+
+.list-rows__hit {
+    margin: 0.35rem 0 0;
+    font-size: 0.9375rem;
+    color: var(--ink-soft);
+}
+
+.list-rows__hit-value {
+    font-weight: 650;
+    color: var(--forest);
+    font-variant-numeric: tabular-nums;
+    margin-right: 0.35rem;
+}
+
+.list-rows__body {
+    min-width: 0;
+}
+
+/* Crop listing thumbs to the number at the top of the share card. */
+.list-rows--thumbs .list-rows__thumb img {
+    aspect-ratio: 16 / 10;
+    height: auto;
+    object-fit: cover;
+    object-position: top left;
 }

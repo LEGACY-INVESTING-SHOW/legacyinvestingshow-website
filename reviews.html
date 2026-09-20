@@ -1184,8 +1184,21 @@
       background: var(--ivory); border-radius: 14px; overflow: hidden; cursor: zoom-in;
       position: relative;
     }
-    .rv-plan__open img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: top left; }
-    .rv-plan--wide .rv-plan__open img { object-fit: contain; object-position: center; }
+    .rv-plan__open img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 32rem;
+      aspect-ratio: auto;
+      object-fit: contain;
+      object-position: top center;
+      background: var(--ivory);
+    }
+    .rv-plan--wide .rv-plan__open img {
+      object-fit: contain;
+      object-position: center;
+      max-height: 18rem;
+    }
     .rv-plan__open::after {
       content: "Enlarge";
       position: absolute;
@@ -1202,7 +1215,7 @@
       pointer-events: none;
     }
     .rv-plan__cap { font-size: 0.9375rem; line-height: 1.6; color: var(--ink-soft); }
-    .rv-plans__lead .rv-plan__open img { aspect-ratio: 16 / 9; }
+    .rv-plans__lead .rv-plan__open img { aspect-ratio: auto; max-height: 22rem; }
     .rv-plans__lead .rv-plan--wide .rv-plan__open img { aspect-ratio: auto; }
     .rv-plans__lead .rv-plan__cap { font-size: 0.9375rem; }
     .rv-text { border-top: 1px solid var(--line); }
@@ -1276,7 +1289,7 @@
     }
 
     /* --- lightbox -------------------------------------------------------- */
-    .rv-lb { border: 0; border-radius: 16px; padding: 0; background: var(--paper); max-width: min(96vw, 60rem); width: 100%; }
+    .rv-lb { border: 0; border-radius: 16px; padding: 0; background: var(--paper); max-width: min(96vw, 72rem); width: 100%; }
     .rv-lb::backdrop { background: rgba(22, 53, 42, 0.72); }
     .rv-lb__inner { padding: 1.25rem; }
     .rv-lb img { display: block; width: 100%; height: auto; border-radius: 12px; }

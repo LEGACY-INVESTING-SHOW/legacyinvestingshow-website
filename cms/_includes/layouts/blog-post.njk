@@ -39,7 +39,7 @@
 
     <meta name="theme-color" content="#FBF8F1">
     <link rel="icon" href="/favicon.ico" sizes="32x32">
-    {% if hero.exists %}{% if hero.webp %}<link rel="preload" as="image" href="{{ hero.webp }}" type="image/webp" fetchpriority="high">{% else %}<link rel="preload" as="image" href="{{ hero.src }}" fetchpriority="high">{% endif %}{% endif %}
+    {% if hero.exists and hero.figure != false %}{% if hero.webp %}<link rel="preload" as="image" href="{{ hero.webp }}" type="image/webp" fetchpriority="high">{% else %}<link rel="preload" as="image" href="{{ hero.src }}" fetchpriority="high">{% endif %}{% endif %}
 
     {{ siteShell.headAssets | safe }}
     <link rel="stylesheet" href="/assets/css/blog.css">

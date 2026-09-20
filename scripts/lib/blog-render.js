@@ -21,6 +21,7 @@ const INDEXATION_POLICY_PATH = path.join(ROOT_DIR, 'data', 'indexation-policy.js
 
 const SITE_DOMAIN = 'https://www.legacyinvestingshow.com';
 const FALLBACK_OG_IMAGE = '/assets/images/og-blog.jpg';
+const PLAN_COVER_DIR = '/assets/images/blog/plan-covers';
 const TOC_MIN_WORDS = 1200;
 const RELATED_LIMIT = 6;
 const CURATED_RELATED_LIMIT = 4;
@@ -189,6 +190,67 @@ function fileExistsInRepo(relativePath) {
 }
 
 /**
+ * Wealth-plan case studies (and the older "wealth strategy snapshot" slugs)
+ * keep the field-guide reading column for prose, but they get a wider wrap,
+ * a number strip, a comparison chart and a generated cover so the designed
+ * plan graphics are not lost to the speed/SEO pass.
+ */
+function isPlanPost(post) {
+    const category = String((post && post.frontmatter && post.frontmatter.category) || '');
+    const slug = String((post && post.slug) || '');
+    return /wealth\s*plan/i.test(category) || /-(wealth-plan|wealth-strategy-snapshot)$/i.test(slug);
+}
+
+function planStatistics(post) {
+    const raw = (post && post.frontmatter && (post.frontmatter.statistics || post.frontmatter.stats)) || [];
+    if (!Array.isArray(raw)) return [];
+    return raw
+        .map((stat) => ({
+            label: String((stat && stat.label) || '').trim(),
+            value: String((stat && stat.value) || '').trim(),
+        }))
+        .filter((stat) => stat.label && stat.value)
+        .slice(0, 8);
+}
+
+function planSubject(post) {
+    const title = String((post && post.frontmatter && post.frontmatter.title) || '');
+    const named = title.match(/^(.*?)\s*'s\s+(?:Wealth Plan|Wealth Strategy Snapshot)\b/i);
+    if (named) return named[1].trim();
+    const beforeColon = title.split(':')[0].replace(/\bWealth Plan\b/i, '').trim();
+    return beforeColon || 'Wealth Plan';
+}
+
+const OUTCOME_LABEL = /savings|roi|value|year.?one|tax|cash flow|impact|projected/i;
+
+function headlineStat(post) {
+    const stats = planStatistics(post);
+    const dollar = stats.filter((stat) => /\$/.test(stat.value));
+    const outcome = dollar.find((stat) => OUTCOME_LABEL.test(stat.label));
+    return outcome || dollar[0] || null;
+}
+
+/** Highest dollar figure in a cell like "$15K-$25K" or "$78,400+". */
+function parseMoneyAmount(value) {
+    if (!/\$/.test(String(value || ''))) return null;
+    const chunks = String(value)
+        .replace(/,/g, '')
+        .split(/[-–—]|to/i);
+    let max = null;
+    for (const chunk of chunks) {
+        const match = chunk.match(/(\d+(?:\.\d+)?)\s*([KMB])?/i);
+        if (!match) continue;
+        const amount = Number(match[1]);
+        if (!Number.isFinite(amount)) continue;
+        const suffix = (match[2] || '').toUpperCase();
+        const scale = suffix === 'K' ? 1e3 : suffix === 'M' ? 1e6 : suffix === 'B' ? 1e9 : 1;
+        const next = amount * scale;
+        if (max === null || next > max) max = next;
+    }
+    return max;
+}
+
+/**
  * Intrinsic pixel size straight out of the file header (JPEG, PNG, WebP, GIF).
  * The frontmatter's imageWidth/imageHeight are wrong on a good number of posts,
  * and a wrong width/height pair is worse than none: it reserves the wrong box
@@ -292,6 +354,8 @@ function resolveHero(post) {
         };
     }
     if (!fileExistsInRepo(raw)) {
+        const cover = planCoverHero(post);
+        if (cover) return cover;
         return { exists: false, src: '', webp: '', alt: '', width: 0, height: 0, ogImage: SITE_DOMAIN + FALLBACK_OG_IMAGE };
     }
     // 54 posts name the shared social card as their image. It is a share
@@ -310,7 +374,28 @@ function resolveHero(post) {
         alt: post.frontmatter.imageAlt || post.frontmatter.title || '',
         width: size.width,
         height: size.height,
-        ogImage: SITE_DOMAIN + raw,
+            ogImage: SITE_DOMAIN + raw,
+    };
+}
+
+function planCoverHero(post) {
+    if (!isPlanPost(post) || !post.slug) return null;
+    const jpg = `${PLAN_COVER_DIR}/${post.slug}.jpg`;
+    if (!fileExistsInRepo(jpg)) return null;
+    const webp = `${PLAN_COVER_DIR}/${post.slug}.webp`;
+    const size = readImageSize(path.join(ROOT_DIR, jpg.replace(/^\//, ''))) || { width: 1200, height: 630 };
+    const alt =
+        (post.frontmatter && post.frontmatter.imageAlt) ||
+        `${planSubject(post)} wealth plan snapshot`;
+    return {
+        exists: true,
+        figure: false,
+        src: jpg,
+        webp: fileExistsInRepo(webp) ? webp : '',
+        alt,
+        width: size.width,
+        height: size.height,
+        ogImage: SITE_DOMAIN + jpg,
     };
 }
 
@@ -385,13 +470,56 @@ function renderQuickAnswer(post) {
 
 /** The hero photograph, rounded, no frame. Only when the file is really there. */
 function renderFigure(hero) {
-    if (!hero.exists) return '';
+    if (!hero.exists || hero.figure === false) return '';
     const dims = hero.width && hero.height ? ` width="${hero.width}" height="${hero.height}"` : '';
     const img = `<img src="${esc(hero.src)}" alt="${esc(hero.alt)}"${dims} loading="eager" fetchpriority="high" decoding="async">`;
     const picture = hero.webp
         ? `<picture><source srcset="${esc(hero.webp)}" type="image/webp">${img}</picture>`
         : img;
     return `<figure class="post-figure">${picture}</figure>`;
+}
+
+function sameStat(a, b) {
+    return a && b && a.label === b.label && a.value === b.value;
+}
+
+/**
+ * One number wins. Field guide: gold rule, forest type, no card, no dashboard.
+ */
+function renderPlanLead(post) {
+    if (!isPlanPost(post)) return '';
+    const who = planSubject(post);
+    const lead = headlineStat(post);
+    if (!who && !lead) return '';
+
+    const value = lead
+        ? `\n            <hr class="plan-lead__rule">
+            <p class="plan-lead__value">${esc(lead.value)}</p>
+            <p class="plan-lead__label">${esc(lead.label)}</p>`
+        : '';
+
+    return `<section class="plan-lead" aria-label="Plan snapshot">
+            <p class="plan-lead__kicker">Wealth plan</p>
+            <p class="plan-lead__who">${esc(who)}</p>${value}
+        </section>`;
+}
+
+/** Supporting figures as a glossary, not a grid of equal chips. */
+function renderPlanFacts(post) {
+    if (!isPlanPost(post)) return '';
+    const lead = headlineStat(post);
+    const rest = planStatistics(post).filter((stat) => !sameStat(stat, lead));
+    if (rest.length === 0) return '';
+
+    const items = rest
+        .map((stat) => `\n            <dt>${esc(stat.label)}</dt>\n            <dd>${esc(stat.value)}</dd>`)
+        .join('');
+
+    return `<div class="plan-facts">
+            <p class="words__label">The numbers</p>
+            <dl class="words plan-facts__list">${items}
+            </dl>
+        </div>`;
 }
 
 /**
@@ -405,7 +533,7 @@ function buildTOC(contentHtml, wordCount) {
     let content = String(contentHtml).replace(headingRegex, (match, level, attrs, inner) => {
         const slug = slugifyHeading(inner);
         if (!slug) return match;
-        headings.push({ level: Number(level), slug, label: stripTags(inner).trim() });
+        headings.push({ level: Number(level), slug, label: decodeEntities(stripTags(inner)).trim() });
         if (attrs && /\sid=/.test(attrs)) return match;
         return `<h${level}${attrs || ''} id="${slug}">${inner}</h${level}>`;
     });
@@ -487,7 +615,8 @@ const TABLE_PATTERN =
  * Every table is inset: it sits in its own column, narrower than the text, and
  * keeps its source line with it as a caption.
  */
-function wrapTables(contentHtml) {
+function wrapTables(contentHtml, options = {}) {
+    const wideClass = options.wide ? ' table-inset--wide' : '';
     return String(contentHtml).replace(TABLE_PATTERN, (match) => {
         const end = match.toLowerCase().lastIndexOf('</table>') + '</table>'.length;
         const table = annotateTable(match.slice(0, end));
@@ -500,7 +629,7 @@ function wrapTables(contentHtml) {
                   .replace(/<\/em>$/i, '')
                   .trim()}</p>`
             : '';
-        return `<div class="table-inset">${table}${caption}</div>`;
+        return `<div class="table-inset${wideClass}">${table}${caption}</div>`;
     });
 }
 
@@ -808,11 +937,15 @@ function renderRelated(post, allPosts, limit = RELATED_LIMIT) {
  */
 function renderArticleBody({ post, contentHtml, allPosts }) {
     const fm = post.frontmatter;
+    const plan = isPlanPost(post);
     const wordCount = fm.wordCount ? Number(fm.wordCount) : countWords(post.content || '');
     const { toc, content } = buildTOC(contentHtml, wordCount);
     const prose = vimeoFacades(
         youtubeFacades(
-            promoteBigStatements(stylePullQuotes(wrapTables(content)), fm.statistics || fm.stats)
+            promoteBigStatements(
+                stylePullQuotes(wrapTables(content, { wide: plan })),
+                fm.statistics || fm.stats
+            )
         )
     );
 
@@ -821,6 +954,8 @@ function renderArticleBody({ post, contentHtml, allPosts }) {
         renderPostHeader(post),
         renderQuickAnswer(post),
         renderFigure(resolveHero(post)),
+        renderPlanLead(post),
+        renderPlanFacts(post),
         toc,
         `<div class="prose post-prose">\n${prose}\n        </div>`,
         renderSources(post),
@@ -829,8 +964,10 @@ function renderArticleBody({ post, contentHtml, allPosts }) {
         renderVideoSchema(post),
     ].filter(Boolean);
 
+    const wrapClass = plan ? 'post-wrap post-wrap--plan' : 'post-wrap';
+
     return `<article class="post">
-        <div class="post-wrap">
+        <div class="${wrapClass}">
         ${parts.join('\n\n        ')}
         </div>
     </article>`;
@@ -842,6 +979,7 @@ module.exports = {
     CONTENT_DIR,
     DISCLAIMER,
     FALLBACK_OG_IMAGE,
+    PLAN_COVER_DIR,
     POSTS_PER_PAGE,
     ROOT_DIR,
     SITE_DOMAIN,
@@ -854,15 +992,22 @@ module.exports = {
     formatDate,
     formatISODate,
     getBlogIndexation,
+    headlineStat,
     isIndexableBlogPost,
+    isPlanPost,
     loadAllPosts,
     normalizeCategoryForArchives,
     normalizeReadTime,
     parseMarkdownFile,
+    parseMoneyAmount,
+    planStatistics,
+    planSubject,
     promoteBigStatements,
     readImageSize,
     renderArticleBody,
     renderFAQ,
+    renderPlanFacts,
+    renderPlanLead,
     renderQuickAnswer,
     renderRelated,
     renderSources,
