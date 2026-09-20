@@ -140,7 +140,7 @@ function applyTemplate(template, post, allPosts) {
     const indexation = getBlogIndexation(post);
     const category = normalizeCategoryForArchives(fm.category || 'Investing');
 
-    const heroPreload = hero.exists
+    const heroPreload = hero.exists && hero.figure !== false
         ? `<link rel="preload" as="image" href="${esc(hero.webp || hero.src)}"${hero.webp ? ' type="image/webp"' : ''} fetchpriority="high">`
         : '';
 

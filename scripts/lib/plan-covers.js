@@ -4,8 +4,11 @@
  * The markdown still points at /assets/images/blog/wealth-plan-<slug>.jpg
  * files that were never created. This writer fills
  * /assets/images/blog/plan-covers/<slug>.jpg (and .webp) from the same
- * statistics the post already publishes, so OG cards and in-page figures
+ * statistics the post already publishes, so OG cards and listing thumbs
  * are real files without dumping client PDF pages.
+ *
+ * In-page, the post does not print this image (DESIGN.md: no cards). The
+ * HTML lead + glossary carry the numbers. This file is the share card.
  *
  * Called from build:blog (and Eleventy before-build) before resolveHero runs.
  */
@@ -29,7 +32,8 @@ const FOREST = '#16352A';
 const EMERALD = '#2F7D5B';
 const GOLD = '#D9A93D';
 const INK_SOFT = '#4A5850';
-const IVORY = '#F3EDDF';
+const LINE = '#DDD4BE';
+const FONT = 'DejaVu Sans, Liberation Sans, sans-serif';
 
 function xml(value) {
     return String(value || '')
@@ -62,42 +66,53 @@ function wrapLine(text, maxChars) {
 function sideStats(post, lead) {
     return planStatistics(post)
         .filter((stat) => !lead || stat.label !== lead.label || stat.value !== lead.value)
-        .slice(0, 4);
+        .slice(0, 3);
 }
 
 function coverSvg(post) {
     const stats = planStatistics(post);
     const lead = headlineStat(post) || stats[0] || { value: '', label: 'Personalized plan' };
     const subject = planSubject(post);
-    const nameLines = wrapLine(subject, 22);
-    const chips = sideStats(post, lead);
+    const nameLines = wrapLine(subject, 26);
+    const rest = sideStats(post, lead);
     const value = lead ? lead.value : '';
     const label = lead ? lead.label : '';
+    const valueLen = String(value).length;
+    const valueSize = valueLen > 16 ? 52 : valueLen > 10 ? 68 : 88;
 
     const nameText = nameLines
         .map(
             (line, index) =>
-                `<text x="72" y="${210 + index * 58}" fill="${FOREST}" font-size="46" font-family="DejaVu Sans, Liberation Sans, sans-serif" font-weight="700">${xml(line)}</text>`
+                `<text x="80" y="${168 + index * 54}" fill="${FOREST}" font-size="48" font-family="${FONT}" font-weight="700">${xml(line)}</text>`
         )
         .join('\n  ');
 
-    const chipBlock = chips
+    const nameBottom = 168 + (nameLines.length - 1) * 54;
+    const ruleY = nameBottom + 28;
+    const valueY = ruleY + 86;
+    const labelY = valueY + 38;
+
+    const factRows = rest
         .map((stat, index) => {
-            const top = 150 + index * 100;
-            return `<rect x="720" y="${top}" width="408" height="84" rx="16" fill="${IVORY}"/>
-  <text x="744" y="${top + 34}" fill="${INK_SOFT}" font-size="16" font-family="DejaVu Sans, Liberation Sans, sans-serif">${xml(stat.label)}</text>
-  <text x="744" y="${top + 66}" fill="${FOREST}" font-size="26" font-family="DejaVu Sans, Liberation Sans, sans-serif" font-weight="700">${xml(stat.value)}</text>`;
+            const y = 508 + index * 34;
+            return `<text x="80" y="${y}" fill="${INK_SOFT}" font-size="18" font-family="${FONT}">${xml(stat.label)}</text>
+  <text x="1120" y="${y}" fill="${FOREST}" font-size="18" font-family="${FONT}" font-weight="700" text-anchor="end">${xml(stat.value)}</text>`;
         })
         .join('\n  ');
 
+    const factsRule = rest.length
+        ? `<line x1="80" y1="482" x2="1120" y2="482" stroke="${LINE}" stroke-width="1"/>`
+        : '';
+
     return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
   <rect width="1200" height="630" fill="${PAPER}"/>
-  <rect width="1200" height="14" fill="${GOLD}"/>
-  <text x="72" y="86" fill="${EMERALD}" font-size="18" font-family="DejaVu Sans, Liberation Sans, sans-serif" font-weight="700" letter-spacing="3.2">WEALTH PLAN</text>
+  <text x="80" y="88" fill="${EMERALD}" font-size="16" font-family="${FONT}" font-weight="700" letter-spacing="4">WEALTH PLAN</text>
   ${nameText}
-  <text x="72" y="430" fill="${FOREST}" font-size="${value.length > 14 ? 52 : 68}" font-family="DejaVu Sans, Liberation Sans, sans-serif" font-weight="700">${xml(value)}</text>
-  <text x="72" y="478" fill="${INK_SOFT}" font-size="22" font-family="DejaVu Sans, Liberation Sans, sans-serif">${xml(label)}</text>
-  ${chipBlock}
+  <rect x="80" y="${ruleY}" width="36" height="2" fill="${GOLD}"/>
+  <text x="80" y="${valueY}" fill="${FOREST}" font-size="${valueSize}" font-family="${FONT}" font-weight="700">${xml(value)}</text>
+  <text x="80" y="${labelY}" fill="${INK_SOFT}" font-size="22" font-family="${FONT}">${xml(label)}</text>
+  ${factsRule}
+  ${factRows}
 </svg>`;
 }
 

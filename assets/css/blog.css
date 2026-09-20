@@ -95,12 +95,6 @@
     border-radius: 16px;
 }
 
-/* Plan covers are cream-on-paper illustrations, not photographs. A hairline
-   keeps the card from dissolving into the page. */
-.post-wrap--plan .post-figure img {
-    border: 1px solid var(--line);
-}
-
 /* The contents list is a list, not a disclosure, once there is room for it. */
 @media (min-width: 700px) {
     .post-toc > .toc__list {
@@ -388,16 +382,16 @@ a.blog-page-num:hover {
     background: #c00;
 }
 
-/* --- Wealth-plan snapshot, chart, listing hits --------------------------- */
+/* --- Wealth-plan lead + glossary ----------------------------------------- */
+/* Field guide: one number wins. No cards, no dashboard grid, no pill bars.
+   The generated cover is OG/listing only; in-page type carries the figure. */
 
-.plan-score {
-    margin: 1.75rem 0 0;
-    padding: 1.25rem 0 0.25rem;
-    border-top: 1px solid var(--line);
+.plan-lead {
+    margin: 2rem 0 0;
+    max-width: 44rem;
 }
 
-.plan-score__kicker,
-.plan-chart__kicker {
+.plan-lead__kicker {
     margin: 0;
     font-size: 0.75rem;
     font-weight: 700;
@@ -406,89 +400,54 @@ a.blog-page-num:hover {
     color: var(--emerald);
 }
 
-.plan-score__grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.15rem 1.25rem;
-    margin: 1rem 0 0;
+.plan-lead__who {
+    margin: 0.5rem 0 0;
+    font-size: clamp(1.5rem, 2.6vw, 1.875rem);
+    font-weight: 600;
+    line-height: 1.15;
+    color: var(--forest);
 }
 
-@media (min-width: 700px) {
-    .plan-score__grid {
-        grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
-    }
+.plan-lead__rule {
+    display: block;
+    width: 2.25rem;
+    height: 2px;
+    background: var(--gold);
+    border: 0;
+    margin: 1.25rem 0 1rem;
 }
 
-.plan-score__item {
+.plan-lead__value {
     margin: 0;
-    padding: 0;
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    color: var(--forest);
+    font-variant-numeric: tabular-nums;
 }
 
-.plan-score__item dt {
-    margin: 0;
-    font-size: 0.8125rem;
-    line-height: 1.35;
+.plan-lead__label {
+    margin: 0.5rem 0 0;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--ink-soft);
+}
+
+.plan-facts {
+    margin: 2rem 0 0;
+    max-width: 44rem;
+}
+
+.plan-facts__list dt {
     font-weight: 500;
     color: var(--ink-soft);
 }
 
-.plan-score__item dd {
-    margin: 0.2rem 0 0;
-    font-size: 1.375rem;
-    line-height: 1.15;
-    font-weight: 650;
+.plan-facts__list dd {
     color: var(--forest);
-    font-variant-numeric: tabular-nums;
-}
-
-.plan-chart {
-    margin: 1.5rem 0 0;
-}
-
-.plan-chart__list {
-    list-style: none;
-    margin: 0.85rem 0 0;
-    padding: 0;
-}
-
-.plan-chart__row {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    grid-template-areas:
-        "label value"
-        "track track";
-    gap: 0.2rem 0.75rem;
-    margin: 0 0 0.85rem;
-}
-
-.plan-chart__label {
-    grid-area: label;
-    font-size: 0.875rem;
-    color: var(--ink-soft);
-}
-
-.plan-chart__value {
-    grid-area: value;
-    font-size: 0.875rem;
-    font-weight: 650;
-    color: var(--forest);
-    font-variant-numeric: tabular-nums;
-}
-
-.plan-chart__track {
-    grid-area: track;
-    display: block;
-    height: 0.45rem;
-    border-radius: 999px;
-    background: var(--ivory);
-    overflow: hidden;
-}
-
-.plan-chart__fill {
-    display: block;
-    height: 100%;
-    border-radius: 999px;
-    background: var(--forest);
+    font-weight: 600;
 }
 
 .post-wrap--plan .table-inset,

@@ -389,6 +389,7 @@ function planCoverHero(post) {
         `${planSubject(post)} wealth plan snapshot`;
     return {
         exists: true,
+        figure: false,
         src: jpg,
         webp: fileExistsInRepo(webp) ? webp : '',
         alt,
@@ -469,7 +470,7 @@ function renderQuickAnswer(post) {
 
 /** The hero photograph, rounded, no frame. Only when the file is really there. */
 function renderFigure(hero) {
-    if (!hero.exists) return '';
+    if (!hero.exists || hero.figure === false) return '';
     const dims = hero.width && hero.height ? ` width="${hero.width}" height="${hero.height}"` : '';
     const img = `<img src="${esc(hero.src)}" alt="${esc(hero.alt)}"${dims} loading="eager" fetchpriority="high" decoding="async">`;
     const picture = hero.webp
@@ -478,50 +479,47 @@ function renderFigure(hero) {
     return `<figure class="post-figure">${picture}</figure>`;
 }
 
-function renderPlanScore(post) {
-    const stats = planStatistics(post);
-    if (!isPlanPost(post) || stats.length === 0) return '';
+function sameStat(a, b) {
+    return a && b && a.label === b.label && a.value === b.value;
+}
 
-    const items = stats
-        .map(
-            (stat) =>
-                `\n            <div class="plan-score__item">\n                <dt>${esc(stat.label)}</dt>\n                <dd>${esc(stat.value)}</dd>\n            </div>`
-        )
-        .join('');
+/**
+ * One number wins. Field guide: gold rule, forest type, no card, no dashboard.
+ */
+function renderPlanLead(post) {
+    if (!isPlanPost(post)) return '';
+    const who = planSubject(post);
+    const lead = headlineStat(post);
+    if (!who && !lead) return '';
 
-    return `<section class="plan-score" aria-label="Plan snapshot">
-            <p class="plan-score__kicker">Plan snapshot</p>
-            <dl class="plan-score__grid">${items}
-            </dl>
+    const value = lead
+        ? `\n            <hr class="plan-lead__rule">
+            <p class="plan-lead__value">${esc(lead.value)}</p>
+            <p class="plan-lead__label">${esc(lead.label)}</p>`
+        : '';
+
+    return `<section class="plan-lead" aria-label="Plan snapshot">
+            <p class="plan-lead__kicker">Wealth plan</p>
+            <p class="plan-lead__who">${esc(who)}</p>${value}
         </section>`;
 }
 
-function renderPlanChart(post) {
+/** Supporting figures as a glossary, not a grid of equal chips. */
+function renderPlanFacts(post) {
     if (!isPlanPost(post)) return '';
-    const rows = planStatistics(post)
-        .map((stat) => ({ ...stat, amount: parseMoneyAmount(stat.value) }))
-        .filter((stat) => stat.amount && stat.amount > 0);
-    if (rows.length < 2) return '';
+    const lead = headlineStat(post);
+    const rest = planStatistics(post).filter((stat) => !sameStat(stat, lead));
+    if (rest.length === 0) return '';
 
-    const max = Math.max(...rows.map((row) => row.amount));
-    const items = rows
-        .sort((a, b) => b.amount - a.amount)
-        .slice(0, 6)
-        .map((row) => {
-            const width = Math.max(8, Math.round((row.amount / max) * 100));
-            return `\n            <li class="plan-chart__row">
-                <span class="plan-chart__label">${esc(row.label)}</span>
-                <span class="plan-chart__value">${esc(row.value)}</span>
-                <span class="plan-chart__track" aria-hidden="true"><span class="plan-chart__fill" style="width:${width}%"></span></span>
-            </li>`;
-        })
+    const items = rest
+        .map((stat) => `\n            <dt>${esc(stat.label)}</dt>\n            <dd>${esc(stat.value)}</dd>`)
         .join('');
 
-    return `<section class="plan-chart" aria-label="How the numbers compare">
-            <p class="plan-chart__kicker">How the numbers compare</p>
-            <ul class="plan-chart__list">${items}
-            </ul>
-        </section>`;
+    return `<div class="plan-facts">
+            <p class="words__label">The numbers</p>
+            <dl class="words plan-facts__list">${items}
+            </dl>
+        </div>`;
 }
 
 /**
@@ -956,8 +954,8 @@ function renderArticleBody({ post, contentHtml, allPosts }) {
         renderPostHeader(post),
         renderQuickAnswer(post),
         renderFigure(resolveHero(post)),
-        renderPlanScore(post),
-        renderPlanChart(post),
+        renderPlanLead(post),
+        renderPlanFacts(post),
         toc,
         `<div class="prose post-prose">\n${prose}\n        </div>`,
         renderSources(post),
@@ -1008,8 +1006,8 @@ module.exports = {
     readImageSize,
     renderArticleBody,
     renderFAQ,
-    renderPlanChart,
-    renderPlanScore,
+    renderPlanFacts,
+    renderPlanLead,
     renderQuickAnswer,
     renderRelated,
     renderSources,

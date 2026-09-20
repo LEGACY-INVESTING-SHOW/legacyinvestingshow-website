@@ -177,7 +177,10 @@ test('a hero figure is only emitted for a real photograph, at its real size', ()
         assert.match(hero.ogImage, /og-blog\.jpg$/);
     }
 
-    const withHero = posts.find((post) => blogRender.resolveHero(post).exists);
+    const withHero = posts.find((post) => {
+        const candidate = blogRender.resolveHero(post);
+        return candidate.exists && candidate.figure !== false;
+    });
     assert.ok(withHero, 'expected at least one post with a hero photograph');
     const hero = blogRender.resolveHero(withHero);
     assert.ok(hero.width > 0 && hero.height > 0, 'hero dimensions must be measured');

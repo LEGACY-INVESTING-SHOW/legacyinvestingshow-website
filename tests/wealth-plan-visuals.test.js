@@ -1,6 +1,7 @@
 /**
- * Wealth-plan posts keep the field-guide shell (no retired chrome) but they
- * get the snapshot strip, comparison chart, wider wrap and a real cover card.
+ * Wealth-plan posts keep the field-guide shell (no retired chrome). One
+ * number leads, supporting figures sit in a glossary, covers are OG/listing
+ * only, and there is no dashboard card.
  */
 
 const test = require('node:test');
@@ -42,7 +43,7 @@ test('parseMoneyAmount reads ranges, K suffixes and plus signs', () => {
     assert.strictEqual(blogRender.parseMoneyAmount('Maxed 401(k)'), null);
 });
 
-test('wealth-plan article body has snapshot, chart, wider wrap and no retired chrome', () => {
+test('wealth-plan article body has a lead number, glossary, wider wrap and no retired chrome', () => {
     const { post } = planPost('blake-elisa-wealth-plan');
     const html = blogRender.renderArticleBody({
         post,
@@ -51,15 +52,14 @@ test('wealth-plan article body has snapshot, chart, wider wrap and no retired ch
     });
 
     assert.match(html, /class="post-wrap post-wrap--plan"/);
-    assert.match(html, /class="post-figure"/);
-    assert.match(html, /class="plan-score"/);
-    assert.ok(
-        html.indexOf('class="post-figure"') < html.indexOf('class="plan-score"'),
-        'cover figure should lead the snapshot'
-    );
-    assert.match(html, /Plan snapshot/);
+    assert.match(html, /class="plan-lead"/);
+    assert.match(html, /class="plan-lead__value"/);
+    assert.match(html, /Blake/);
+    assert.match(html, /class="words plan-facts__list"/);
     assert.match(html, /\$15K-\$25K|\$15K–\$25K/);
-    assert.match(html, /class="plan-chart"/);
+    assert.doesNotMatch(html, /class="post-figure"/);
+    assert.doesNotMatch(html, /plan-score/);
+    assert.doesNotMatch(html, /plan-chart/);
     assert.doesNotMatch(html, /stat-card/);
     assert.doesNotMatch(html, /article-intro-card/);
     assert.doesNotMatch(html, /article-rail/);
@@ -101,19 +101,21 @@ test('wealth-plan listing rows print the headline figure without thumbnails on t
     assert.doesNotMatch(index, /list-rows--thumbs/);
 });
 
-test('generated plan covers become the hero and og:image', async () => {
+test('generated plan covers feed og:image but not an in-page figure', async () => {
     const { post, posts } = planPost('blake-elisa-wealth-plan');
     await ensurePlanCovers([post]);
 
     const hero = blogRender.resolveHero(post);
     assert.strictEqual(hero.exists, true);
+    assert.strictEqual(hero.figure, false);
     assert.match(hero.src, /plan-covers\/blake-elisa-wealth-plan\.jpg$/);
     assert.ok(fs.existsSync(path.join(ROOT, hero.src.replace(/^\//, ''))));
     assert.ok(hero.width > 0 && hero.height > 0);
 
     const template = fs.readFileSync(TEMPLATE_PATH, 'utf8');
     const page = applyTemplate(template, post, posts);
-    assert.match(page, /<figure class="post-figure">/);
+    assert.doesNotMatch(page, /<figure class="post-figure">/);
+    assert.doesNotMatch(page, /rel="preload" as="image"/);
     assert.match(page, /property="og:image" content="https:\/\/www\.legacyinvestingshow\.com\/assets\/images\/blog\/plan-covers\/blake-elisa-wealth-plan\.jpg"/);
-    assert.match(page, /class="plan-score"/);
+    assert.match(page, /class="plan-lead"/);
 });
