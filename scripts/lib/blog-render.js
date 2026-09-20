@@ -535,7 +535,7 @@ function buildTOC(contentHtml, wordCount) {
     let content = String(contentHtml).replace(headingRegex, (match, level, attrs, inner) => {
         const slug = slugifyHeading(inner);
         if (!slug) return match;
-        headings.push({ level: Number(level), slug, label: stripTags(inner).trim() });
+        headings.push({ level: Number(level), slug, label: decodeEntities(stripTags(inner)).trim() });
         if (attrs && /\sid=/.test(attrs)) return match;
         return `<h${level}${attrs || ''} id="${slug}">${inner}</h${level}>`;
     });
@@ -955,9 +955,9 @@ function renderArticleBody({ post, contentHtml, allPosts }) {
         renderCrumbs(fm.title || 'Untitled'),
         renderPostHeader(post),
         renderQuickAnswer(post),
+        renderFigure(resolveHero(post)),
         renderPlanScore(post),
         renderPlanChart(post),
-        renderFigure(resolveHero(post)),
         toc,
         `<div class="prose post-prose">\n${prose}\n        </div>`,
         renderSources(post),

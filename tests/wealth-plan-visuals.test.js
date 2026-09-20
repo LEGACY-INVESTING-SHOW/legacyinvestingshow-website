@@ -51,13 +51,27 @@ test('wealth-plan article body has snapshot, chart, wider wrap and no retired ch
     });
 
     assert.match(html, /class="post-wrap post-wrap--plan"/);
+    assert.match(html, /class="post-figure"/);
     assert.match(html, /class="plan-score"/);
+    assert.ok(
+        html.indexOf('class="post-figure"') < html.indexOf('class="plan-score"'),
+        'cover figure should lead the snapshot'
+    );
     assert.match(html, /Plan snapshot/);
     assert.match(html, /\$15K-\$25K|\$15K–\$25K/);
     assert.match(html, /class="plan-chart"/);
     assert.doesNotMatch(html, /stat-card/);
     assert.doesNotMatch(html, /article-intro-card/);
     assert.doesNotMatch(html, /article-rail/);
+});
+
+test('TOC labels decode heading entities once', () => {
+    const { toc } = blogRender.buildTOC(
+        '<h2>Blake &amp; Elisa&#39;s Plan</h2><h2>Second Section</h2><h2>Third Section</h2>',
+        2000
+    );
+    assert.match(toc, /Blake &amp; Elisa&#39;s Plan/);
+    assert.doesNotMatch(toc, /&amp;amp;/);
 });
 
 test('plan tables use the wide inset', () => {

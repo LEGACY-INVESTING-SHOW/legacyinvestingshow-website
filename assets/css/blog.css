@@ -95,6 +95,12 @@
     border-radius: 16px;
 }
 
+/* Plan covers are cream-on-paper illustrations, not photographs. A hairline
+   keeps the card from dissolving into the page. */
+.post-wrap--plan .post-figure img {
+    border: 1px solid var(--line);
+}
+
 /* The contents list is a list, not a disclosure, once there is room for it. */
 @media (min-width: 700px) {
     .post-toc > .toc__list {
