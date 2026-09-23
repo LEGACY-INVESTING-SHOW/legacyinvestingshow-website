@@ -2,7 +2,7 @@
 /**
  * Writes the structured data block of reviews.html:
  *
- *   <!-- reviews:schema:start --> ... <!-- reviews:schema:end -->
+ *   <!-- reviews:schema:start --> ... <!-- reviews:schema:end -->   (end of <body> on reviews.html)
  *
  * One <script type="application/ld+json"> holding a single @graph:
  * Organization, Person, Course, CollectionPage, BreadcrumbList, one
@@ -505,10 +505,11 @@ function replaceBlock(html, body) {
 }
 
 /**
- * The block is the page's machine-readable head: the JSON-LD graph, and the
- * link to the plain-text mirror scripts/build-reviews-text.js writes. Both
- * belong in <head> and both are generated, so they live between the same
- * markers.
+ * The block is the JSON-LD graph. On reviews.html its markers sit at the end
+ * of <body>: the graph carries every video transcript (about half a megabyte),
+ * so in <head> it would hold back the first paint on a phone. Search engines
+ * read JSON-LD anywhere in the document. The link to the plain-text mirror
+ * scripts/build-reviews-text.js writes is static markup in <head>.
  */
 function renderBlock(graph) {
     const json = JSON.stringify(graph, null, 4)
@@ -516,9 +517,7 @@ function renderBlock(graph) {
         .map(function (line) { return line ? '    ' + line : line; })
         .join('\n');
 
-    return '\n    <link rel="alternate" type="text/plain" href="' + SITE_URL + '/llms/reviews.txt"'
-        + ' title="Plain text version of this page">\n'
-        + '\n    <script type="application/ld+json">\n' + json + '\n    </script>\n    ';
+    return '\n    <script type="application/ld+json">\n' + json + '\n    </script>\n    ';
 }
 
 function parseArgs(argv) {

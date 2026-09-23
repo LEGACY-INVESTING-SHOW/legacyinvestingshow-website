@@ -29,7 +29,8 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
-const PAGE = path.join(ROOT, 'reviews.html');
+/* REVIEWS_PAGE builds a variant of the page, such as reviews-watch.html. */
+const PAGE = path.join(ROOT, process.env.REVIEWS_PAGE || 'reviews.html');
 const TRUSTPILOT_URL = 'https://www.trustpilot.com/review/firstairbnb.com';
 
 /* How many items each section shows before the reveal. */
@@ -442,13 +443,14 @@ function buildWealthPlans() {
     return out + '\n                ';
 }
 
-/* ------------------------------------- cherry-picked, average and bottom */
+/* ------------------------------------------ best, typical and lowest */
 
 /**
- * The same three cuts across three kinds of proof: the best, the middle and the
- * lowest. Wealth plans come from the inventory, so the cut moves when a plan is
- * added. Interviews and Trustpilot are picked by hand below; the Trustpilot
- * words are checked against the data so they stay verbatim.
+ * The scorecard at the top of the page: the Trustpilot rating with its star
+ * split, the best, typical and lowest first-year target across the client
+ * wealth plans, and the best, typical and lowest Trustpilot review. Plans come
+ * from the inventory, so the cut moves when a plan is added. The review words
+ * are checked against the data so they stay verbatim.
  */
 
 /* A goal (a retirement income, a net worth) is not a first-year value. */
@@ -462,31 +464,10 @@ const RANGE_OVERRIDES = {
     'mia-jay-wealth-plan': { value: '$90,000', label: 'Year-one tax removed with $259,700 of deductions' }
 };
 
-const TIERS = [
-    ['top', 'Cherry-picked'],
-    ['middle', 'Average'],
-    ['bottom', 'Bottom']
-];
-
-const INTERVIEW_TIERS = {
-    top: {
-        name: 'Abigail', figure: 'Just under $100,000', what: 'First-year ROI, her own calculation',
-        href: '/blog/abigail-legacy-wealth-blueprint-case-study', go: 'Read Abigail’s case study'
-    },
-    middle: {
-        name: 'Stephanie Dailey', figure: 'Over $20,000', what: 'Taxes saved in her first year',
-        href: '/blog/stephanie-dailey-legacy-wealth-blueprint-case-study', go: 'Read Stephanie’s case study'
-    },
-    bottom: {
-        name: 'Shawn', figure: 'No figures yet', what: 'He is at the start of his plan',
-        href: '/blog/shawn-legacy-wealth-blueprint-roi-case-study', go: 'Read Shawn’s case study'
-    }
-};
-
 /* The reviewer, and the words from their review the cell quotes. */
 const REVIEW_TIERS = {
-    top: { name: 'Prestige Estates Properties', quote: 'helped me identify over $80,000 in tax savings' },
-    middle: { name: 'Lauren', quote: 'more one-on-one with each student for the price, would have given it a 5-star review' }
+    best: { name: 'Prestige Estates Properties', quote: 'the strategies we implemented helped me identify over $80,000 in tax savings' },
+    typical: { name: 'Lauren', quote: 'more one-on-one with each student for the price, would have given it a 5-star review' }
 };
 
 /* The one-star reviews are not captured, so this cell describes them and links
@@ -545,135 +526,118 @@ function median(sorted) {
     return n % 2 ? sorted[(n - 1) / 2].low : (sorted[n / 2 - 1].low + sorted[n / 2].low) / 2;
 }
 
-/* The chart runs on a log scale, so $10K to $20K takes the same room as $100K
-   to $200K and the cluster in the middle does not crush into a line. */
-const AXIS_MIN = 6000;
-const AXIS_MAX = 450000;
-const AXIS_TICKS = [[10000, '$10K'], [25000, '$25K'], [50000, '$50K'], [100000, '$100K'], [250000, '$250K']];
-
-function axisAt(amount) {
-    const at = (Math.log(amount) - Math.log(AXIS_MIN)) / (Math.log(AXIS_MAX) - Math.log(AXIS_MIN));
-    return Math.max(0, Math.min(1, at)) * 100;
-}
-
-function pct(value) {
-    return value.toFixed(2).replace(/\.?0+$/, '') + '%';
-}
-
-/**
- * One dot per plan, stacked into rows so no two dots or ranges overlap. Plans
- * are placed lowest first into the first row whose last dot ends far enough
- * to the left.
- */
-function stripRows(list) {
-    const GAP = 2.4;
-    const ends = [];
-    return list.map(function (plan) {
-        const x = axisAt(plan.low);
-        const x2 = axisAt(plan.high);
-        let row = ends.findIndex(function (end) { return end + GAP <= x; });
-        if (row === -1) { row = ends.length; ends.push(0); }
-        ends[row] = Math.max(x, x2);
-        return { plan: plan, x: x, x2: x2, row: row };
-    });
-}
-
 function planLink(plan) {
     return '/blog/' + esc(plan.slug);
+}
+
+/* The plan closest to the median, so "typical" is a real client's plan. */
+function typicalPlan(sorted) {
+    const mid = median(sorted);
+    return sorted.reduce(function (best, plan) {
+        return Math.abs(plan.low - mid) < Math.abs(best.low - mid) ? plan : best;
+    }, sorted[0]);
+}
+
+function starBars(split) {
+    const order = [['five', 'Five star'], ['four', 'Four star'], ['three', 'Three star'],
+        ['two', 'Two star'], ['one', 'One star']];
+    return order.map(function (pair) {
+        const bucket = split[pair[0]];
+        if (!bucket) return '';
+        const share = Number(bucket.percentDisplayed) || 0;
+        return '\n                            <li>'
+            + '<span class="rv-bars__lab">' + pair[1] + '</span>'
+            + '<span class="rv-bars__track" aria-hidden="true">'
+            + (share > 0 ? '<span class="rv-bars__fill" style="width:' + share + '%"></span>' : '')
+            + '</span>'
+            + '<span class="rv-bars__n">' + esc(bucket.count) + '</span>'
+            + '</li>';
+    }).join('');
 }
 
 function buildRange() {
     const inventory = readJson('data/wealth-plan-inventory.json');
     const plans = (inventory && inventory.wealthPlans) || [];
     const ranged = rangedPlans(plans);
-    if (ranged.length < 9) return '\n';
-
-    const n = ranged.length;
-    const start = Math.floor((n - 3) / 2);
-    const cut = {
-        top: ranged.slice(-3).reverse(),
-        middle: ranged.slice(start, start + 3),
-        bottom: ranged.slice(0, 3)
-    };
-    const tierOf = {};
-    Object.keys(cut).forEach(function (tier) {
-        cut[tier].forEach(function (plan) { tierOf[plan.slug] = tier; });
-    });
-    const mid = median(ranged);
-    const unstated = plans.length - n;
-
-    /* The chart. It is drawn for the eye only: the tier lists and the full
-       list under it say the same things as text. */
-    const placed = stripRows(ranged);
-    const rows = placed.reduce(function (max, dot) { return Math.max(max, dot.row + 1); }, 0);
-    const dots = placed.map(function (dot, i) {
-        const tier = tierOf[dot.plan.slug];
-        const span = dot.x2 - dot.x > 0.5 ? ';--w:' + pct(dot.x2 - dot.x) : '';
-        // A label near either end opens inward, so it never runs off the page.
-        const edge = dot.x < 14 ? ' rv-dot--start' : (dot.x > 86 ? ' rv-dot--end' : '');
-        return '\n                        <a class="rv-dot' + (tier ? ' rv-dot--' + tier : '') + edge + '" href="' + planLink(dot.plan)
-            + '" tabindex="-1" style="--x:' + pct(dot.x) + span + ';--r:' + dot.row + ';--i:' + i + '"'
-            + ' data-tip="' + esc(dot.plan.name + ': ' + dot.plan.value) + '"></a>';
-    }).join('');
-    const ticks = AXIS_TICKS.map(function (tick) {
-        return '<span style="--x:' + pct(axisAt(tick[0])) + '">' + tick[1] + '</span>';
-    }).join('');
-
-    let out = ''
-        + '\n                    <figure class="rv-strip">'
-        + '\n                        <div class="rv-strip__plot" style="--rows:' + rows + '" aria-hidden="true">'
-        + '\n                        <span class="rv-strip__median" style="--x:' + pct(axisAt(mid)) + '"><span>Median ' + money(mid) + '</span></span>'
-        + dots
-        + '\n                        </div>'
-        + '\n                        <p class="rv-strip__axis" aria-hidden="true">' + ticks + '</p>'
-        + '\n                        <figcaption>The ' + n + ' wealth plans that state a first-year dollar figure, each placed at the low end of its range. '
-        + 'The other ' + unstated + ' plans state no figure. These are targets written into each plan, not results.</figcaption>'
-        + '\n                    </figure>';
-
-    /* The three columns. Each one reads top to bottom on a phone, and the rows
-       line up across the columns on a wide screen. */
+    if (ranged.length < 3) return '\n';
     const reviews = asArray(readJson('data/trustpilot-reviews.json'));
     const summary = readJson('data/trustpilot-summary.json') || {};
     const profile = pick(summary, ['sourceUrl', 'url', 'profileUrl', 'link']) || TRUSTPILOT_URL;
-    const oneStar = ((summary.starDistribution || {}).one || {}).count;
+    const score = pick(summary, ['trustScore', 'ratingValue', 'rating', 'score']);
+    const count = pick(summary, ['totalReviews', 'reviewCount', 'count', 'total']);
+    const split = summary.starDistribution || {};
+    const oneStar = (split.one || {}).count;
 
-    function planCell(tier) {
-        return ''
-            + '\n                            <div class="rv-tier__cell" data-rv="wealth plan target lwb">'
-            + '\n                                <p class="rv-tier__row">Wealth plan targets</p>'
-            + '\n                                <ol class="rv-tier__plans">'
-            + cut[tier].map(function (plan) {
-                return '\n                                    <li><a href="' + planLink(plan) + '">'
-                    + '<span class="rv-tier__fig">' + esc(plan.value) + '</span>'
-                    + '<span class="rv-tier__who">' + esc(plan.name) + '</span></a>'
-                    + '<span class="rv-tier__what">' + esc(plan.label) + '</span></li>';
-            }).join('')
-            + '\n                                </ol>'
-            + '\n                            </div>';
+    let out = '\n                    <div class="rv-scorecard">';
+
+    /* The rating, and both ways out to the profile Preston Seo does not control. */
+    if (score && count) {
+        out += ''
+            + '\n                        <div class="rv-sc rv-sc--tp">'
+            + '\n                            <h3 class="rv-sc__title">Trustpilot rating</h3>'
+            + '\n                            <p class="rv-sc__score"><span class="rv-sc__num">' + esc(score) + '</span> out of 5</p>'
+            + '\n                            <p class="rv-sc__stars">' + stars(score, 'rv-stars--lg') + '</p>'
+            + '\n                            <p class="rv-sc__count">From ' + esc(count) + ' reviews</p>'
+            + '\n                            <ul class="rv-bars">' + starBars(split) + '\n                            </ul>'
+            + '\n                            <p class="rv-sc__links"><a class="btn-secondary" href="' + esc(profile)
+            + '" rel="nofollow noopener" target="_blank">See all ' + esc(count) + ' on Trustpilot</a>'
+            + (oneStar ? '<a class="rv-sc__low" href="' + esc(profile) + '?stars=1" rel="nofollow noopener" target="_blank">Read the '
+                + esc(oneStar) + ' one-star reviews</a>' : '')
+            + '</p>'
+            + '\n                        </div>';
     }
 
-    function interviewCell(tier) {
-        const item = INTERVIEW_TIERS[tier];
-        return ''
-            + '\n                            <div class="rv-tier__cell" data-rv="client interview case study video">'
-            + '\n                                <p class="rv-tier__row">Client interviews</p>'
-            + '\n                                <p class="rv-tier__fig">' + esc(item.figure) + '</p>'
-            + '\n                                <p class="rv-tier__what"><span class="rv-name">' + esc(item.name) + '</span> ' + esc(item.what) + '</p>'
-            + '\n                                <p class="rv-link"><a href="' + esc(item.href) + '">' + esc(item.go) + '</a></p>'
-            + '\n                            </div>';
-    }
+    /* Best, typical and lowest plan target, drawn as three bars on one scale. */
+    const best = ranged[ranged.length - 1];
+    const typical = typicalPlan(ranged);
+    const lowest = ranged[0];
+    const rows = [['best', 'Best', best], ['typical', 'Typical', typical], ['lowest', 'Lowest', lowest]];
+    out += ''
+        + '\n                        <div class="rv-sc rv-sc--plans">'
+        + '\n                            <h3 class="rv-sc__title">What client wealth plans aim for in year one</h3>'
+        + '\n                            <ol class="rv-aim">'
+        + rows.map(function (row) {
+            const plan = row[2];
+            const width = Math.max(4, Math.round(plan.low / best.low * 100));
+            return ''
+                + '\n                                <li class="rv-aim__row rv-aim__row--' + row[0] + '" data-rv="wealth plan target lwb">'
+                + '\n                                    <p class="rv-aim__head"><span class="rv-aim__tag">' + row[1] + '</span>'
+                + '<span class="rv-aim__fig">' + esc(plan.value) + '</span></p>'
+                + '\n                                    <span class="rv-aim__bar" aria-hidden="true"><span style="width:' + width + '%"></span></span>'
+                + '\n                                    <p class="rv-aim__who"><a href="' + planLink(plan) + '">' + esc(plan.name)
+                + '&rsquo;s plan</a> &middot; ' + esc(plan.label) + '</p>'
+                + '\n                                </li>';
+        }).join('')
+        + '\n                            </ol>'
+        + '\n                            <p class="rv-sc__note">Out of ' + ranged.length + ' plans that list a dollar figure. These are targets written into each plan, not results. '
+        + (plans.length - ranged.length) + ' more plans list no dollar figure.</p>';
 
-    function reviewCell(tier) {
-        const head = '\n                            <div class="rv-tier__cell" data-rv="' + K_REVIEW + '">'
-            + '\n                                <p class="rv-tier__row">Trustpilot reviews</p>';
+    const all = ranged.slice().reverse().map(function (plan) {
+        return '\n                                    <li><a href="' + planLink(plan) + '">' + esc(plan.name) + '</a>'
+            + '<span class="rv-all__fig">' + esc(plan.value) + '</span>'
+            + '<span class="rv-all__what">' + esc(plan.label) + '</span></li>';
+    }).join('');
+    out += ''
+        + '\n                            <details class="rv-all">'
+        + '\n                                <summary>See all ' + ranged.length + ' plans, highest to lowest</summary>'
+        + '\n                                <ol class="rv-all__list" data-rv="wealth plan target lwb">' + all
+        + '\n                                </ol>'
+        + '\n                            </details>'
+        + '\n                        </div>'
+        + '\n                    </div>';
+
+    /* Best, typical and lowest review. */
+    function reviewCard(tier, tag) {
         const want = REVIEW_TIERS[tier];
         if (!want) {
             if (!oneStar) return '';
-            return head
-                + '\n                                <p class="rv-tier__stars">' + stars(1) + '</p>'
-                + '\n                                <p class="rv-tier__what"><span class="rv-name">' + esc(oneStar) + ' one-star reviews.</span> ' + esc(ONE_STAR_THEMES) + '</p>'
-                + '\n                                <p class="rv-link"><a href="' + esc(profile) + '?stars=1" rel="nofollow noopener" target="_blank">Read the one-star reviews on Trustpilot</a></p>'
-                + '\n                            </div>';
+            return ''
+                + '\n                        <figure class="rv-say rv-say--lowest" data-rv="' + K_REVIEW + '">'
+                + '\n                            <p class="rv-say__tag">' + tag + '</p>'
+                + '\n                            <p class="rv-say__stars">' + stars(1) + '</p>'
+                + '\n                            <blockquote><p>' + esc(oneStar) + ' people gave one star. ' + esc(ONE_STAR_THEMES) + '</p></blockquote>'
+                + '\n                            <figcaption><a href="' + esc(profile) + '?stars=1" rel="nofollow noopener" target="_blank">Read the one-star reviews</a></figcaption>'
+                + '\n                        </figure>';
         }
         const review = reviews.find(function (item) { return item.name === want.name; });
         const text = review ? String(pick(review, ['text', 'body']) || '') : '';
@@ -681,42 +645,20 @@ function buildRange() {
             console.warn('build-reviews-sections: the ' + tier + ' Trustpilot quote is not in the data');
             return '';
         }
-        return head
-            + '\n                                <p class="rv-tier__stars">' + stars(review.rating) + '</p>'
-            + '\n                                <blockquote class="rv-tier__quote"><p>&ldquo;&hellip;' + esc(want.quote) + '&rdquo;</p></blockquote>'
-            + '\n                                <p class="rv-tier__what"><span class="rv-name">' + esc(review.name) + '</span></p>'
-            + '\n                                <p class="rv-link"><a href="' + esc(pick(review, ['reviewUrl', 'url']) || profile)
-            + '" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>'
-            + '\n                            </div>';
+        return ''
+            + '\n                        <figure class="rv-say rv-say--' + tier + '" data-rv="' + K_REVIEW + '">'
+            + '\n                            <p class="rv-say__tag">' + tag + '</p>'
+            + '\n                            <p class="rv-say__stars">' + stars(review.rating) + '</p>'
+            + '\n                            <blockquote><p>&ldquo;&hellip;' + esc(want.quote) + '&rdquo;</p></blockquote>'
+            + '\n                            <figcaption><span class="rv-name">' + esc(review.name) + '</span>'
+            + '<a href="' + esc(pick(review, ['reviewUrl', 'url']) || profile) + '" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></figcaption>'
+            + '\n                        </figure>';
     }
-
-    out += '\n                    <div class="rv-tiers">'
-        + '\n                        <p class="rv-tiers__rows" aria-hidden="true"><span>Wealth plan targets</span><span>Client interviews</span><span>Trustpilot reviews</span></p>'
-        + TIERS.map(function (pair) {
-            return ''
-                + '\n                        <div class="rv-tier rv-tier--' + pair[0] + '">'
-                + '\n                            <h3 class="rv-tier__name">' + pair[1] + '</h3>'
-                + planCell(pair[0]) + interviewCell(pair[0]) + reviewCell(pair[0])
-                + '\n                        </div>';
-        }).join('')
+    out += ''
+        + '\n                    <h3 class="rv-says__title">What reviewers say, best to lowest</h3>'
+        + '\n                    <div class="rv-says">'
+        + reviewCard('best', 'Best') + reviewCard('typical', 'Typical') + reviewCard('lowest', 'Lowest')
         + '\n                    </div>';
-
-    /* Every plan on the chart, as text, lowest first. */
-    const all = ranged.map(function (plan) {
-        return '\n                                <li><a href="' + planLink(plan) + '">' + esc(plan.name) + '</a>'
-            + '<span class="rv-all__fig">' + esc(plan.value) + '</span>'
-            + '<span class="rv-all__what">' + esc(plan.label) + '</span></li>';
-    }).join('');
-    out += '\n                    <details class="rv-reveal rv-all">'
-        + '\n                        <summary>'
-        + '\n                            <span class="rv-reveal__show">All ' + n + ' plans on the chart, lowest first</span>'
-        + '\n                            <span class="rv-reveal__hide">Hide the list</span>'
-        + '\n                        </summary>'
-        + '\n                        <div>'
-        + '\n                            <ol class="rv-all__list" data-rv="wealth plan target lwb">' + all
-        + '\n                            </ol>'
-        + '\n                        </div>'
-        + '\n                    </details>';
 
     return out + '\n                ';
 }
@@ -957,19 +899,25 @@ function buildTrustpilot() {
         const showTitle = title && body && !titleRepeatsBody(title, body);
         const shot = screenshot(review, authorName, rating, when.label);
         return function (indent) {
+            /* The words lead as text anyone can read on a phone. The
+               screenshot backs them up one tap away, still in the HTML. */
             return ''
                 + '\n' + indent + '<article class="rv-review" data-rv="' + K_REVIEW + '">'
-                + (shot ? '\n' + indent + '    ' + shot : '')
-                // The screenshot carries the stars, and says so in its alt text.
-                // Only a review whose picture is missing draws them again.
-                + (rating && !shot ? '\n' + indent + '    <p class="rv-review__rating">' + stars(rating) + '</p>' : '')
+                + (rating ? '\n' + indent + '    <p class="rv-review__rating">' + stars(rating) + '</p>' : '')
                 + (showTitle ? '\n' + indent + '    <h3>' + esc(title.trim()) + '</h3>' : '')
                 + '\n' + indent + '    <blockquote><p>' + esc(quote.trim()) + '</p></blockquote>'
                 + '\n' + indent + '    <p class="rv-review__by"><span class="rv-name">' + esc(authorName) + '</span>'
                 + (when.label ? '<time datetime="' + esc(when.iso) + '">' + esc(when.label) + '</time>' : '')
                 + '</p>'
                 + '\n' + indent + '    <p class="rv-link"><a href="' + esc(permalink)
-                + '" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>'
+                + '" rel="nofollow noopener" target="_blank" aria-label="Read ' + esc(authorName)
+                + '&rsquo;s review on Trustpilot">Read on Trustpilot</a></p>'
+                + (shot ? '\n' + indent + '    <details class="rv-text rv-review__orig"><summary>See the original review</summary>'
+                    + '\n' + indent + '        <figure>' + shot
+                    // The image sitemap reads a picture's caption from its figure.
+                    + (showTitle ? '<figcaption class="rv-vh">' + esc(title.trim()) + '</figcaption>' : '')
+                    + '</figure>'
+                    + '\n' + indent + '    </details>' : '')
                 + '\n' + indent + '</article>';
         };
     }).filter(Boolean);

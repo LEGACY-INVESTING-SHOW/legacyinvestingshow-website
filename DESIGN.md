@@ -42,6 +42,8 @@ One family: **Public Sans** (variable 400–700, self-hosted in `assets/fonts/`)
 
 Buttons are pills. Photos have 16px corners and no frame. The only filled blocks are the homepage opener, the "Do this week" block, the closing CTA block, and the three callout tints, all with 16px corners and no border. Everything else is separated by whitespace and hairlines. No cards, sheets, panels, side stripes, or nested boxes.
 
+Exception: `/reviews` puts each piece of proof in a white card (`#FFFDF8`, 1px `--line` border, 14px corners, no shadow) on cream, never a card inside a card. The owner approved this on Sep 24, 2026, so a regular reader on a phone can tell one review, video, or result from the next.
+
 ## Components (`assets/css/input.css`, block marked `/* FIELD GUIDE v3 */`)
 
 `.opener` (+ `--forest` on the homepage) · `.do` · `.words` · `.callout` (+ `--gold`, `--warn`) · `.big` · `.table-inset` + table rules (+ `.table--zebra`, `.cap`) · `.steps` · `.check` · `.toc` · `.cta` · `.list-rows` · `.faq` · `.pull-quote` · `.btn-primary` / `.btn-secondary`.
