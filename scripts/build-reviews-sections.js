@@ -2,6 +2,7 @@
 /**
  * Writes the generated blocks of reviews.html:
  *
+ *   <!-- reviews:range:start -->        ... <!-- reviews:range:end -->
  *   <!-- reviews:wealth-plans:start --> ... <!-- reviews:wealth-plans:end -->
  *   <!-- reviews:trustpilot:start -->   ... <!-- reviews:trustpilot:end -->
  *   <!-- reviews:transcript:<id>:start --> ... one per video item
@@ -441,6 +442,285 @@ function buildWealthPlans() {
     return out + '\n                ';
 }
 
+/* ------------------------------------- cherry-picked, average and bottom */
+
+/**
+ * The same three cuts across three kinds of proof: the best, the middle and the
+ * lowest. Wealth plans come from the inventory, so the cut moves when a plan is
+ * added. Interviews and Trustpilot are picked by hand below; the Trustpilot
+ * words are checked against the data so they stay verbatim.
+ */
+
+/* A goal (a retirement income, a net worth) is not a first-year value. */
+const NOT_FIRST_YEAR = /goal/i;
+
+/* Where the inventory's headline figure would overstate the plan, the page
+   uses the plan's own lower figure. Every other plan is placed at the low end
+   of its range, so these two are too. */
+const RANGE_OVERRIDES = {
+    'soojin-wealth-plan': { value: '$101K to $385K', label: 'First-year value, conservative to aggressive' },
+    'mia-jay-wealth-plan': { value: '$90,000', label: 'Year-one tax removed with $259,700 of deductions' }
+};
+
+const TIERS = [
+    ['top', 'Cherry-picked'],
+    ['middle', 'Average'],
+    ['bottom', 'Bottom']
+];
+
+const INTERVIEW_TIERS = {
+    top: {
+        name: 'Abigail', figure: 'Just under $100,000', what: 'First-year ROI, her own calculation',
+        href: '/blog/abigail-legacy-wealth-blueprint-case-study', go: 'Read Abigail’s case study'
+    },
+    middle: {
+        name: 'Stephanie Dailey', figure: 'Over $20,000', what: 'Taxes saved in her first year',
+        href: '/blog/stephanie-dailey-legacy-wealth-blueprint-case-study', go: 'Read Stephanie’s case study'
+    },
+    bottom: {
+        name: 'Shawn', figure: 'No figures yet', what: 'He is at the start of his plan',
+        href: '/blog/shawn-legacy-wealth-blueprint-roi-case-study', go: 'Read Shawn’s case study'
+    }
+};
+
+/* The reviewer, and the words from their review the cell quotes. */
+const REVIEW_TIERS = {
+    top: { name: 'Prestige Estates Properties', quote: 'helped me identify over $80,000 in tax savings' },
+    middle: { name: 'Lauren', quote: 'more one-on-one with each student for the price, would have given it a 5-star review' }
+};
+
+/* The one-star reviews are not captured, so this cell describes them and links
+   to them. The four complaints are the ones the FAQ on this page names. */
+const ONE_STAR_THEMES = 'They name refunds, slow replies, a price that moved during the sales call, '
+    + 'and testimonials Preston Seo records himself.';
+
+/* Every dollar figure in a headline value, in dollars: "$8K-15K" is [8000, 15000]. */
+function dollars(value) {
+    const out = [];
+    String(value || '').replace(/\$?(\d[\d,]*(?:\.\d+)?)\s*([KkMm])?/g, function (whole, number, unit) {
+        let amount = Number(number.replace(/,/g, ''));
+        if (/k/i.test(unit || '')) amount *= 1000;
+        if (/m/i.test(unit || '')) amount *= 1000000;
+        if (amount >= 1000) out.push(amount);
+        return whole;
+    });
+    return out;
+}
+
+function money(amount) {
+    return '$' + Math.round(amount).toLocaleString('en-US');
+}
+
+/* The plans that state a first-year figure, lowest first. */
+function rangedPlans(plans) {
+    return plans.filter(function (plan) {
+        return plan.headlineAmount && plan.headlineFigure && !NOT_FIRST_YEAR.test(plan.headlineFigure.label || '');
+    }).map(function (plan) {
+        const override = RANGE_OVERRIDES[plan.slug] || {};
+        const value = override.value || plan.headlineFigure.value;
+        const found = dollars(value);
+        const low = found.length ? Math.min.apply(null, found) : plan.headlineAmount;
+        const high = found.length ? Math.max.apply(null, found) : low;
+        const label = override.label || plan.headlineFigure.label;
+        return {
+            slug: plan.slug,
+            name: plan.name,
+            // "$8K-15K" reads "$8K to $15K": a range, and a dollar sign on both ends.
+            value: value.replace(/\s*-\s*/g, ' to ').replace(/ to (\d)/g, ' to $$$1'),
+            // Title Case comes down to sentence case; "Path A", "STR" and "1" stay.
+            label: label.replace(/\b([A-Z])([a-z]+)/g, function (whole, first, rest) {
+                return first.toLowerCase() + rest;
+            }).replace(/^./, function (first) { return first.toUpperCase(); }),
+            low: low,
+            high: high
+        };
+    }).sort(function (a, b) {
+        return a.low - b.low || a.name.localeCompare(b.name);
+    });
+}
+
+function median(sorted) {
+    const n = sorted.length;
+    if (!n) return 0;
+    return n % 2 ? sorted[(n - 1) / 2].low : (sorted[n / 2 - 1].low + sorted[n / 2].low) / 2;
+}
+
+/* The chart runs on a log scale, so $10K to $20K takes the same room as $100K
+   to $200K and the cluster in the middle does not crush into a line. */
+const AXIS_MIN = 6000;
+const AXIS_MAX = 450000;
+const AXIS_TICKS = [[10000, '$10K'], [25000, '$25K'], [50000, '$50K'], [100000, '$100K'], [250000, '$250K']];
+
+function axisAt(amount) {
+    const at = (Math.log(amount) - Math.log(AXIS_MIN)) / (Math.log(AXIS_MAX) - Math.log(AXIS_MIN));
+    return Math.max(0, Math.min(1, at)) * 100;
+}
+
+function pct(value) {
+    return value.toFixed(2).replace(/\.?0+$/, '') + '%';
+}
+
+/**
+ * One dot per plan, stacked into rows so no two dots or ranges overlap. Plans
+ * are placed lowest first into the first row whose last dot ends far enough
+ * to the left.
+ */
+function stripRows(list) {
+    const GAP = 2.4;
+    const ends = [];
+    return list.map(function (plan) {
+        const x = axisAt(plan.low);
+        const x2 = axisAt(plan.high);
+        let row = ends.findIndex(function (end) { return end + GAP <= x; });
+        if (row === -1) { row = ends.length; ends.push(0); }
+        ends[row] = Math.max(x, x2);
+        return { plan: plan, x: x, x2: x2, row: row };
+    });
+}
+
+function planLink(plan) {
+    return '/blog/' + esc(plan.slug);
+}
+
+function buildRange() {
+    const inventory = readJson('data/wealth-plan-inventory.json');
+    const plans = (inventory && inventory.wealthPlans) || [];
+    const ranged = rangedPlans(plans);
+    if (ranged.length < 9) return '\n';
+
+    const n = ranged.length;
+    const start = Math.floor((n - 3) / 2);
+    const cut = {
+        top: ranged.slice(-3).reverse(),
+        middle: ranged.slice(start, start + 3),
+        bottom: ranged.slice(0, 3)
+    };
+    const tierOf = {};
+    Object.keys(cut).forEach(function (tier) {
+        cut[tier].forEach(function (plan) { tierOf[plan.slug] = tier; });
+    });
+    const mid = median(ranged);
+    const unstated = plans.length - n;
+
+    /* The chart. It is drawn for the eye only: the tier lists and the full
+       list under it say the same things as text. */
+    const placed = stripRows(ranged);
+    const rows = placed.reduce(function (max, dot) { return Math.max(max, dot.row + 1); }, 0);
+    const dots = placed.map(function (dot, i) {
+        const tier = tierOf[dot.plan.slug];
+        const span = dot.x2 - dot.x > 0.5 ? ';--w:' + pct(dot.x2 - dot.x) : '';
+        // A label near either end opens inward, so it never runs off the page.
+        const edge = dot.x < 14 ? ' rv-dot--start' : (dot.x > 86 ? ' rv-dot--end' : '');
+        return '\n                        <a class="rv-dot' + (tier ? ' rv-dot--' + tier : '') + edge + '" href="' + planLink(dot.plan)
+            + '" tabindex="-1" style="--x:' + pct(dot.x) + span + ';--r:' + dot.row + ';--i:' + i + '"'
+            + ' data-tip="' + esc(dot.plan.name + ': ' + dot.plan.value) + '"></a>';
+    }).join('');
+    const ticks = AXIS_TICKS.map(function (tick) {
+        return '<span style="--x:' + pct(axisAt(tick[0])) + '">' + tick[1] + '</span>';
+    }).join('');
+
+    let out = ''
+        + '\n                    <figure class="rv-strip">'
+        + '\n                        <div class="rv-strip__plot" style="--rows:' + rows + '" aria-hidden="true">'
+        + '\n                        <span class="rv-strip__median" style="--x:' + pct(axisAt(mid)) + '"><span>Median ' + money(mid) + '</span></span>'
+        + dots
+        + '\n                        </div>'
+        + '\n                        <p class="rv-strip__axis" aria-hidden="true">' + ticks + '</p>'
+        + '\n                        <figcaption>The ' + n + ' wealth plans that state a first-year dollar figure, each placed at the low end of its range. '
+        + 'The other ' + unstated + ' plans state no figure. These are targets written into each plan, not results.</figcaption>'
+        + '\n                    </figure>';
+
+    /* The three columns. Each one reads top to bottom on a phone, and the rows
+       line up across the columns on a wide screen. */
+    const reviews = asArray(readJson('data/trustpilot-reviews.json'));
+    const summary = readJson('data/trustpilot-summary.json') || {};
+    const profile = pick(summary, ['sourceUrl', 'url', 'profileUrl', 'link']) || TRUSTPILOT_URL;
+    const oneStar = ((summary.starDistribution || {}).one || {}).count;
+
+    function planCell(tier) {
+        return ''
+            + '\n                            <div class="rv-tier__cell" data-rv="wealth plan target lwb">'
+            + '\n                                <p class="rv-tier__row">Wealth plan targets</p>'
+            + '\n                                <ol class="rv-tier__plans">'
+            + cut[tier].map(function (plan) {
+                return '\n                                    <li><a href="' + planLink(plan) + '">'
+                    + '<span class="rv-tier__fig">' + esc(plan.value) + '</span>'
+                    + '<span class="rv-tier__who">' + esc(plan.name) + '</span></a>'
+                    + '<span class="rv-tier__what">' + esc(plan.label) + '</span></li>';
+            }).join('')
+            + '\n                                </ol>'
+            + '\n                            </div>';
+    }
+
+    function interviewCell(tier) {
+        const item = INTERVIEW_TIERS[tier];
+        return ''
+            + '\n                            <div class="rv-tier__cell" data-rv="client interview case study video">'
+            + '\n                                <p class="rv-tier__row">Client interviews</p>'
+            + '\n                                <p class="rv-tier__fig">' + esc(item.figure) + '</p>'
+            + '\n                                <p class="rv-tier__what"><span class="rv-name">' + esc(item.name) + '</span> ' + esc(item.what) + '</p>'
+            + '\n                                <p class="rv-link"><a href="' + esc(item.href) + '">' + esc(item.go) + '</a></p>'
+            + '\n                            </div>';
+    }
+
+    function reviewCell(tier) {
+        const head = '\n                            <div class="rv-tier__cell" data-rv="' + K_REVIEW + '">'
+            + '\n                                <p class="rv-tier__row">Trustpilot reviews</p>';
+        const want = REVIEW_TIERS[tier];
+        if (!want) {
+            if (!oneStar) return '';
+            return head
+                + '\n                                <p class="rv-tier__stars">' + stars(1) + '</p>'
+                + '\n                                <p class="rv-tier__what"><span class="rv-name">' + esc(oneStar) + ' one-star reviews.</span> ' + esc(ONE_STAR_THEMES) + '</p>'
+                + '\n                                <p class="rv-link"><a href="' + esc(profile) + '?stars=1" rel="nofollow noopener" target="_blank">Read the one-star reviews on Trustpilot</a></p>'
+                + '\n                            </div>';
+        }
+        const review = reviews.find(function (item) { return item.name === want.name; });
+        const text = review ? String(pick(review, ['text', 'body']) || '') : '';
+        if (!review || text.indexOf(want.quote) === -1) {
+            console.warn('build-reviews-sections: the ' + tier + ' Trustpilot quote is not in the data');
+            return '';
+        }
+        return head
+            + '\n                                <p class="rv-tier__stars">' + stars(review.rating) + '</p>'
+            + '\n                                <blockquote class="rv-tier__quote"><p>&ldquo;&hellip;' + esc(want.quote) + '&rdquo;</p></blockquote>'
+            + '\n                                <p class="rv-tier__what"><span class="rv-name">' + esc(review.name) + '</span></p>'
+            + '\n                                <p class="rv-link"><a href="' + esc(pick(review, ['reviewUrl', 'url']) || profile)
+            + '" rel="nofollow noopener" target="_blank">Read on Trustpilot</a></p>'
+            + '\n                            </div>';
+    }
+
+    out += '\n                    <div class="rv-tiers">'
+        + '\n                        <p class="rv-tiers__rows" aria-hidden="true"><span>Wealth plan targets</span><span>Client interviews</span><span>Trustpilot reviews</span></p>'
+        + TIERS.map(function (pair) {
+            return ''
+                + '\n                        <div class="rv-tier rv-tier--' + pair[0] + '">'
+                + '\n                            <h3 class="rv-tier__name">' + pair[1] + '</h3>'
+                + planCell(pair[0]) + interviewCell(pair[0]) + reviewCell(pair[0])
+                + '\n                        </div>';
+        }).join('')
+        + '\n                    </div>';
+
+    /* Every plan on the chart, as text, lowest first. */
+    const all = ranged.map(function (plan) {
+        return '\n                                <li><a href="' + planLink(plan) + '">' + esc(plan.name) + '</a>'
+            + '<span class="rv-all__fig">' + esc(plan.value) + '</span>'
+            + '<span class="rv-all__what">' + esc(plan.label) + '</span></li>';
+    }).join('');
+    out += '\n                    <details class="rv-reveal rv-all">'
+        + '\n                        <summary>'
+        + '\n                            <span class="rv-reveal__show">All ' + n + ' plans on the chart, lowest first</span>'
+        + '\n                            <span class="rv-reveal__hide">Hide the list</span>'
+        + '\n                        </summary>'
+        + '\n                        <div>'
+        + '\n                            <ol class="rv-all__list" data-rv="wealth plan target lwb">' + all
+        + '\n                            </ol>'
+        + '\n                        </div>'
+        + '\n                    </details>';
+
+    return out + '\n                ';
+}
+
 /* ------------------------------------------------------- video transcripts */
 
 /**
@@ -719,6 +999,7 @@ function main() {
     let html = fs.readFileSync(PAGE, 'utf8');
     const wealthPlans = buildWealthPlans();
     const trustpilot = buildTrustpilot();
+    html = replaceBlock(html, 'range', buildRange());
     html = replaceBlock(html, 'wealth-plans', wealthPlans);
     html = replaceBlock(html, 'trustpilot', trustpilot);
     const transcripts = fillTranscripts(html, readJson('data/reviews-videos.json') || []);
