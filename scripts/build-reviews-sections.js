@@ -570,7 +570,7 @@ function buildRange() {
 
     let out = '\n                    <div class="rv-scorecard">';
 
-    /* The rating, and both ways out to the profile Preston Seo does not control. */
+    /* The rating, and the way out to the profile Preston Seo does not control. */
     if (score && count) {
         out += ''
             + '\n                        <div class="rv-sc rv-sc--tp">'
@@ -580,10 +580,7 @@ function buildRange() {
             + '\n                            <p class="rv-sc__count">From ' + esc(count) + ' reviews</p>'
             + '\n                            <ul class="rv-bars">' + starBars(split) + '\n                            </ul>'
             + '\n                            <p class="rv-sc__links"><a class="btn-secondary" href="' + esc(profile)
-            + '" rel="nofollow noopener" target="_blank">See all ' + esc(count) + ' on Trustpilot</a>'
-            + (oneStar ? '<a class="rv-sc__low" href="' + esc(profile) + '?stars=1" rel="nofollow noopener" target="_blank">Read the '
-                + esc(oneStar) + ' one-star reviews</a>' : '')
-            + '</p>'
+            + '" rel="nofollow noopener" target="_blank">See all ' + esc(count) + ' on Trustpilot</a></p>'
             + '\n                        </div>';
     }
 
